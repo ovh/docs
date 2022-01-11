@@ -38,13 +38,13 @@ Aqui tem um breve léxico dos termos utilizados neste tutorial:
 
 ### Obter as informações de rede
 
-Aceda à Área de Cliente, selecione o menu `Instâncias`{.action} e clique em `Detalhes da instância`{.action}.
+Aceda à Área de Cliente, clique no menu da secção `Public Cloud`{.action}, selecione o seu projeto Public Cloud e clique em `Instances`{.action} no menu à esquerda. Depois clique no `...`{.action} ao lado da instância correspendente e clique em `Detalhes da instância`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
 Todas as informações necessárias serão visíveis na secção **Redes**.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Exemplos de configurações persistentes
 

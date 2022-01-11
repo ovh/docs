@@ -119,7 +119,7 @@ This way we can help prevent intrusive connection attempts.
 
 Click to authorize a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
 
-![Add an IP](images/ip_whitelist.png){.thumbnail}
+![Add an IP](images/ip_authorize.png){.thumbnail}
 
 > [!primary]
 >

@@ -64,4 +64,4 @@ OVH ofrece una aplicación web que tiene [funciones colaborativas](https://www.o
 
 [Configurar una cuenta Email Pro en la aplicación Correo de Windows 10](https://docs.ovh.com/es/emails-pro/configuracion-correo-windows-10/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

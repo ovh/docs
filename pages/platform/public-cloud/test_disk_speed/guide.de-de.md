@@ -6,55 +6,62 @@ section: 'Storage'
 legacy_guide_number: g1956
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## 
+**Letzte Aktualisierung am 04.01.2022**
+
+## Ziel
+
 Es kann aus verschiedenen Gründen vorkommen, dass Sie die Geschwindigkeit Ihrer Festplatten testen möchten: zum Beispiel um die Performance verschiedener Festplattentypen zu vergleichen, oder um zu überprüfen, dass die Leistung den Angebotsbedingungen entspricht.
 
-In dieser Hilfe wird die Vorgehensweise für den Test der Anzahl an Ein- und Ausgabeoperationen pro Sekunde (IOPS) beschrieben, die die Festplatten Ihrer Instanzen oder die zusätzlichen Festplatten bewältigen können.
+**In dieser Hilfe wird die Vorgehensweise für den Test der Anzahl an Ein- und Ausgabeoperationen pro Sekunde (IOPS) beschrieben, die die Festplatten Ihrer Instanzen oder die zusätzlichen Festplatten bewältigen können.**
 
 
 ## Voraussetzungen
 
-- Eine Instanz
-- Eine zusätzliche Festplatte
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external}.
+- Administrativer (Root) Zugriff auf diese Instanz über SSH (nur für Linux).
 
 
+## In der praktischen Anwendung
 
+### Installation der benötigten Software
 
-## Installation der benötigten Software
-Die benötigte Software fio ist nicht standardmäßig vorhanden, diese muss deshalb zuerst installiert werden:
+Der Befehl, den Sie benötigen, um die Geschwindigkeit Ihres Laufwerks zu überprüfen, heißt `fio`. Er ist auf Ihrem Server nicht standardmäßig vorhanden.
+
+Um `fio` zu installieren, stellen Sie eine SSH-Verbindung zu Ihrer Instanz her und führen Sie dann den folgenden Befehl aus:
 
 
 ```
 root@server:~$ apt-get install fio
 ```
 
-
-
-
 ## Durchführung des Tests
-Verwenden Sie folgenden Befehl für den Test Ihrer Festplatten:
 
+Verwenden Sie folgenden Befehl für den Test Ihrer Festplatten:
 
 ```
 root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 
-Achtung
-Das Argument --numjobs muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
-Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO).
-Um die Performance einer zusätzlichen Festplatte zu testen, begeben Sie sich in einen der Ordner des Mountpunkts.
+> [!primary]
+> 
+> Das Argument --numjobs muss abhängig von der Anzahl der CPUs angepasst werden, über die Ihre Instanz verfügt.
+>
+> Sie finden eine vollständige Liste der verfügbaren Argumente und Funktionen im [fio Manual](https://github.com/axboe/fio/blob/master/HOWTO).
+>
 
+Um die Performance einer zusätzlichen Festplatte zu testen, begeben Sie sich in einen der Ordner des Mountpunkts.
 
 ```
 root@server:~$ cd /mnt/disk
 ```
 
+### Analyse der Daten
 
-
-
-## Analyse
 Sie erhalten dann als Ergebnis des Befehls eine mit dieser vergleichbare Ausgabe:
 
 
@@ -92,7 +99,6 @@ Disk stats (read/write):
 vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 ```
 
-
 Die für uns interessante Information zu den IOPS befindet sich in Zeile 6:
 
 
@@ -100,10 +106,10 @@ Die für uns interessante Information zu den IOPS befindet sich in Zeile 6:
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-
 In diesem Beispiel liefert die getestete Festplatte also etwa 891 IOPS.
 
+## Weiterführende Informationen
 
-## 
-[Zurück zum Index der Cloud Hilfen]({legacy}1785)
-
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/)
+ 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

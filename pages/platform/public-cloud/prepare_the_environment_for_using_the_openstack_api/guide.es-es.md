@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a tr
 section: OpenStack
 ---
 
-**Última actualización: 25/02/2019**
+**Última actualización: 22/12/2021**
 
 ## Objetivo
 
@@ -150,6 +150,39 @@ En el símbolo del sistema puede comprobar la versión instalada introduciendo `
 
 ![Verificación](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
+### En MacOS
+
+Puede utilizar [HomeBrew](https://brew.sh), un gestor de paquetes para MacOS.
+
+Abra el terminal e ejecute el siguiente comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilice los siguientes comandos para instalar los clientes Nova (aplicación de cálculo) y Swift:
+
+Para Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Para Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Para acceder a las herramientas de ayuda, ejecute el siguiente comando:
+
+```sh
+openstack —-help
+nova help
+```
+
 ## Más información
 
-Únase a nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

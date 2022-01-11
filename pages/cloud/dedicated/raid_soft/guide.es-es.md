@@ -267,4 +267,4 @@ mount /dev/md2 /home
 
 [RAID por hardware](https://docs.ovh.com/es/dedicated/raid-hardware/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -38,13 +38,13 @@ Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en l
 
 ### Obtener la la información relativa a la red
 
-Conéctese al área de cliente de OVHcloud en la sección `Public Cloud`{.action}. En la columna izquierda, seleccione el menú `Instances`{.action} y haga clic en `Detalles de la instancia`{.action}.
+Conéctese al área de cliente de OVHcloud en la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. En la columna izquierda, seleccione el menú `Instances`{.action} y haga clic en el botón `...`{.action} junto a la instancia correspondiente y haga clic en `Detalles de la instancia`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
 Puede consultar la información en la columna `Redes`{.action}.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Ejemplos de configuraciones persistentes
 

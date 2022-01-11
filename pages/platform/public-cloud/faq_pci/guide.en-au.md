@@ -63,7 +63,7 @@ No. You must detach a volume before resizing it.
 
 ### How many additional volumes can I attach to each instance?
 
-You can attach up to 26 additional volumes per instance.
+You can attach up to 25 additional volumes per instance.
 
 ### How are my servers secured?
 

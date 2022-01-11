@@ -6,7 +6,7 @@ section: Gestione via OpenStack
 legacy_guide_number: g1851
 ---
 
-**Ultimo aggiornamento: 15/12/2021**
+**Ultimo aggiornamento: 22/12/2021**
 
 ## Obiettivo
 
@@ -149,6 +149,39 @@ Per verificare la versione d’installazione nella finestra CMD, digita `python 
 
 ![Verifica](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
+### Con MacOS
+
+È possibile utilizzare [HomeBrew](https://brew.sh), un gestore di pacchetti per MacOS.
+
+Apri il terminale e inserisci questo comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilizza i comandi seguenti per installare i client Nova (applicazione di calcolo) e Swift:
+
+Per Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Per Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Per accedere ai tool di aiuto, esegui questo comando:
+
+```sh
+openstack --help
+nova help
+```
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: Erste Schritte
 order: 2
 ---
 
-**Stand 25.06.2020**
+**Stand 28.12.2021**
 
 ## Einleitung
 
@@ -14,9 +14,8 @@ order: 2
 
 ## Voraussetzungen
 
-- Sie sind der Administrator-Kontakt der Private Cloud und erhalten als solcher die Kennungen der Verbindung.
-- Sie haben einen aktiven Nutzer im Kundencenter erstellt.
-
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## Praktische Anwendung
 
@@ -40,15 +39,7 @@ Sie gelangen dann zu diesem Interface:
 
 ![Verbindung mit dem Interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters. Sie können verschiedene Aktionen durchführen, zum Beispiel:
-
-- Eine virtuelle Maschine einsetzen, indem Sie in `Hosts and Clusters`{.action} gehen;
-- Ihre Datenspeicher durchsuchen.
-
-> [!warning]
->
-> Die Verwaltung der Anwendungen *NSX Edge* ist in diesem Webclient noch nicht möglich.
->
+Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters.
 
 ### Verwendung von Webclient Flash 
 
@@ -62,12 +53,7 @@ Sie gelangen dann zu diesem Interface:
 
 ![Verbindung mit dem vSphere Interface ](images/connection_interface_w.png){.thumbnail}
 
-Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters. Sie können verschiedene Aktionen durchführen, zum Beispiel:
-
-- Eine virtuelle Maschine einsetzen, indem Sie in `Hosts and Clusters`{.action} gehen;
-- Wenn Sie diese Option nutzen, verwenden Sie NSX. Gehen Sie dazu zu `Network & Security`{.action};
-- Ihre Datenspeicher durchsuchen.
-
+Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters.
 
 ## Weiterführende Informationen
 

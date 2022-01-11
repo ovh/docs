@@ -98,4 +98,4 @@ OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo e
 
 [Configurar una cuenta Exchange en Android utilizando la aplicación Gmail](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-android/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -16,7 +16,7 @@ Wenn Sie große Dateien auf Ihren Object Storage hochladen möchten (etwa Videos
 
 ## Voraussetzungen
 
-- [Umgebung für die Verwendung der OpenStack-API vorbereiten](vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api) mit Swift Client;
+- [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) mit Swift Client;
 - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
 
 ## In der praktischen Anwendung

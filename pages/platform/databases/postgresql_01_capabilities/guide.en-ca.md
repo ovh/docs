@@ -2,7 +2,7 @@
 title: PostgreSQL - Capabilities and Limitations
 slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-section: PostgreSQL
+section: PostgreSQL - Guides
 order: 1
 ---
 

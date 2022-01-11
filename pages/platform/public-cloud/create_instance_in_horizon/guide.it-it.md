@@ -6,7 +6,11 @@ section: Gestione da Horizon
 legacy_guide_number: g1772
 ---
 
-**Ultimo aggiornamento: 21/08/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 31/12/2021**
 
 ## Obiettivo
 
@@ -16,7 +20,7 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 
 ## Prerequisiti
 
-- Disporre di un progetto [Public Cloud OVH](https://www.ovh.it/public-cloud/){.external}
+- Disporre di un progetto [Public Cloud OVHcloud](https://www.ovh.it/public-cloud/){.external}
 - [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external} 
 
 ## Procedura
@@ -47,9 +51,14 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 |Networks|Seleziona dalla lista la rete o le reti tra quelle disponibili|
 |Configuration|Indica la sorgente inserendo direttamente lo script o caricando un file|
 |Customization Script|Inserisci il codice dello script (massimo 16 KB)|
-|Load Customization Script from a fi|Seleziona lo script di post-installazione|
+|Load Customization Script from a file|Seleziona lo script di post-installazione|
 |Disk Partition|Scegli tra “Automatica” o “Manuale”|
 |Configuration Drive|Configura OpenStack per scrivere i metadati su un disco di configurazione specifico che all’avvio sarà associato all’istanza.|
+
+> [!warning] 
+>
+> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato.
+>
 
 Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.
 
@@ -57,4 +66,4 @@ Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le ista
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

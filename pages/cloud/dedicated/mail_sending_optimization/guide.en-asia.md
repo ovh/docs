@@ -100,7 +100,7 @@ To do this, please open a [support request](https://support.microsoft.com/en-us/
 
 If your recipients are with Gmail, adding specific records (e.g. a DMARC record) may ensure that emails reach them. Here is a Google article that can help you with this: [Add a DMARC record](https://support.google.com/a/answer/2466563?hl=en){.external}.
 
-### Check your information.
+### Check your information
 
 You may want to use a website like [Mail Tester](http://www.mail-tester.com/){.external} to check that all of your settings are correct.
 

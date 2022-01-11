@@ -316,8 +316,8 @@ NAME                                    READY   STATUS    RESTARTS   AGE
 pod/nginx-deployment-54f57cf6bf-2qhbd   1/1     Running   0          4m19s
 pod/nginx-deployment-54f57cf6bf-twrkm   1/1     Running   0          4m19s
 
-NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)        AGE
-service/my-nginx   LoadBalancer   10.3.19.133   xyzxyz.lb.c1.gra.k8s.ovh.net   80:30942/TCP   4m21s
+NAME               TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+service/my-nginx   LoadBalancer   10.3.19.133   XY.XY.XY.XY   80:30942/TCP   4m21s
 
 NAME                               READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/nginx-deployment   2/2     2            2           4m21s

@@ -115,4 +115,4 @@ Por último, haga clic en `Aceptar`{.action} para guardar los cambios y reinicie
 
 [Configurar varios servidores dedicados en el vRack](https://docs.ovh.com/es/dedicated/configurar-vrack-en-servidor-dedicado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

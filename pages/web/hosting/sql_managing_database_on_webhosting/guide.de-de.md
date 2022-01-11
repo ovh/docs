@@ -167,7 +167,7 @@ Wenn die Fehlermeldung " **Too many connections**" erscheint, wenn Sie sich mit 
 ### Eine Sicherung (Dump) importieren
 Wie importiere ich das Backup meiner MySQL-Datenbank? Welche Möglichkeiten habe ich?
 
-Eine Hilfe zum Import von MySql-Datenbanken finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/guides/g1393.mutualise_guide_importation_dune_base_de_donnees_mysql){.external} .
+Eine Hilfe zum Import von MySql-Datenbanken finden Sie [hier](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/){.external} .
 
 
 ### Eine Datenbank exportieren

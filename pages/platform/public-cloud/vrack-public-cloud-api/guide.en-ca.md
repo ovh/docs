@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} us a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-ca/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
+The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} is a private network that allows you to configure addressing between two or more compatible OVHcloud services. It also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-ca/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
 
 **This guide provides some basic information on creating and configuring the vRack on Public Cloud using the OVHcloud API.**
 
@@ -26,7 +26,7 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} us a private 
 
 ### Step 1: Activate and manage a vRack
 
-Connect to the OVhcloud API using the following guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api).
+Connect to the OVHcloud API using the following guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api).
 
 Once logged in, follow the steps described below:
 
@@ -117,7 +117,7 @@ Once the free order has been validated, it may take a few minutes for the vRack 
 
 Once the vRack is active, you will need to assign your Public Cloud projects to the vRack.
 
-Connect to the OVHcloud API using the following guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api){.external}
+Connect to the OVHcloud API using the following guide [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api){.external}.
 
 If you do not know your Public Cloud project ID, the following calls will allow you to obtain it.
 
@@ -273,7 +273,7 @@ By default, if you do not specify a subnet, the IP range used is the following:
 10.0.0.0/16
 ```
 
-If you wan to manage the IP assignments yourself, you will need to create a subnet.
+If you want to manage the IP assignments yourself, you will need to create a subnet.
 
 To do this, once the VLAN is created, you will need to create the subnet for each affected area using the following API call:
 
@@ -311,7 +311,7 @@ You can fill our the fields like the following:
 ### Step 4 : Adding an instance to the vRack
 
 
-Two situations may exist::
+Two situations may exist:
 
 - The instance does not exist yet.
 - The instance already exists and you must add it to the vRack.
@@ -322,14 +322,14 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 
 ##### **Retrieving required information**
 
-####### Retrieving project ID:
+###### Retrieving project ID:
 
 > [!api]
 >
 > @api {GET} /cloud/project
 >
 
-####### Retrieving the public networkID (EXT-NET)
+###### Retrieving the public networkID (EXT-NET)
 
 > [!api]
 >
@@ -367,7 +367,7 @@ Once connected to the [API](https://ca.api.ovh.com/), execute the following comm
 > [!primary]
 > You can limit the list by specifying the creation zone of your instance
 
-####### Retrieving your OpenStack SSH Key ID (sshKeyId)
+###### Retrieving your OpenStack SSH Key ID (sshKeyId)
 
 > [!api]
 >
@@ -381,7 +381,7 @@ If you haven't added an SSH key to your client space yet, you can do so through 
 > @api {POST} /cloud/project/{serviceName}/sshkey
 >
 
-###### **Instance Deployment***
+###### **Instance Deployment**
 
 Once all the elements necessary for the deployment are gathered, you can use the following call
 
@@ -430,7 +430,7 @@ So, for example, if you have a eth0 public interface, you will also have an eth1
 
 ##### **Retrieving required information**
 
-####### Retrieving project ID:
+###### Retrieving project ID:
 
 > [!api]
 >
@@ -444,7 +444,7 @@ So, for example, if you have a eth0 public interface, you will also have an eth1
 > @api {GET} /cloud/project/{serviceName}/instance
 >
 
-####### Retrieving the public networkID (EXT-NET):
+###### Retrieving the public networkID (EXT-NET):
 
 > [!api]
 >

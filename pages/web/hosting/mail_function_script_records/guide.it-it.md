@@ -78,4 +78,4 @@ Per effettuare una di queste azioni, clicca sul pulsante corrispondente e `Confe
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

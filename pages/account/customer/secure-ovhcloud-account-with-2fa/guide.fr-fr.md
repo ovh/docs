@@ -133,7 +133,9 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 
 Une fois vos justificatifs réunis, contactez le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
 
-Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud.
+Après vérification de vos documents, un conseiller pourra désactiver manuellement la double authentification sur votre compte OVHcloud et reviendra vers vous une fois cette action effectuée.
+
+A des fins de sécurité, une fois l'accès à votre compte rétabli, nous vous recommandons de réactiver la double authentification dès que possible.
 
 ## Aller plus loin
 

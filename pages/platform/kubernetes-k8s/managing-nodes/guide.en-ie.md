@@ -71,7 +71,7 @@ In the *Node pools* tab, click on the button `Add a node pool`{.action}.
 The subsequent node pool configuration steps are described in [Creating a cluster](../creating-a-cluster/).
 
 > [!primary]
-> To learn more about the flavors of the current OVHcloud range, [refer to this guide](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
+> To learn more about the flavors of the current OVHcloud range, [refer to this page](https://www.ovhcloud.com/en-ie/public-cloud/prices/).
 
 
 ### Deleting a node pool
