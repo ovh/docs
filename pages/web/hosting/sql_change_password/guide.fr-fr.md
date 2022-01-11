@@ -33,38 +33,40 @@ Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, vo
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) et/ou d'un offre [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/).
-- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Être en possession des identifiants FTP permettant de se connecter à l'espace de stockage de votre hébergement.
 
 ## En pratique
 
 ### Étape 1 : trouver le dossier contenant votre site
 
-Rendez-vous dans l'onglet `Multisite`{.action}, dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédié à votre `Hébergement`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
+Rendez-vous dans l'onglet `Multisite`{.action}, dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédié à votre `Hébergement`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers et fichiers de votre site.
 
 ### Étape 2 : accéder à l'espace de stockage de votre hébergement
 
-Pour accéder à l'espace contenant les fichiers et dossiers de votre site, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Pour accéder à l'espace contenant ces fichiers et dossiers, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
-Ouvrez ensuite le `Dossier racine` de votre site.
+Ouvrez ensuite le `Dossier racine` identifié à l'étape précédente.
 
 ### Étape 3 : identifier le fichier de configuration de votre site
-
-Recherchez le fichier de configuration de votre module dans l'espace FTP :
-
-- Pour un site WORDPRESS, il s'agit de **« wp-config.php »** ;
-- Pour un site JOOMLA, il s'agit de **« configuration.php »** ;
-- Pour un site DRUPAL, cliquez sur le dossier **« sites »** puis **« default »**, le fichier de configuration est **« settings.php »** ;
-- Pour un site PRESTASHOP, cliquez sur le dossier **« app »** puis **« config »**, le fichier de configuration est **« parameters.php »**.
 
 > [!primary]
 >
 > Si vous ne parvenez pas à retrouver le fichier de configuration de votre site ou si vous n'êtes pas certain des manipulations à réaliser, contactez votre Webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous souhaitez obtenir de l'aide.
 >
 
-### Étape 4 : déterminer la base de données de votre site <a name="step4"></a>
+Recherchez le fichier de configuration de votre site à l'intérieur de votre `Dossier racine` :
 
-Cette information est nécessaire si vous disposez de plusieurs bases de données ou offres de bases de données. Vous devrez en effet être certain de celle dont dépend votre site, avant d'en modifier le mot de passe.
+- Pour un site WORDPRESS, il s'agit de **« wp-config.php »** ;
+- Pour un site JOOMLA, il s'agit de **« configuration.php »** ;
+- Pour un site DRUPAL, cliquez sur le dossier **« sites »** puis **« default »**, le fichier de configuration est **« settings.php »** ;
+- Pour un site PRESTASHOP, cliquez sur le dossier **« app »** puis **« config »**, le fichier de configuration est **« parameters.php »**.
+
+### Étape 4 : identifier la base de données de votre site <a name="step4"></a>
+
+Cette information est nécessaire si vous disposez de plusieurs bases de données ou offres de bases de données. Vous devrez en effet être certain d'effectuer le changement de mot de passe sur la base de données de votre site.
 
 Toujours dans le fichier de configuration de votre site, notez le nom de sa base de données :
 
@@ -73,18 +75,32 @@ Toujours dans le fichier de configuration de votre site, notez le nom de sa base
 - Pour DRUPAL : sous **« database »** ;
 - Pour PRESTASHOP : sous **« database_name »**.
 
-Dans la partie `Web Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur la partie `Bases de données`{.action} sur la partie gauche de votre écran.
+Dans la partie `Web Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} à droite de votre écran. Vérifiez que la base de données de votre site se trouve dans cette partie.
 
-Si un ou plusieurs services SQL privé ou CloudDB apparaissent dans cette partie, notez, dans le fichier de configuration de votre site, le **nom d'utilisateur** de votre base de données : 
+Si tel n'est pas le cas, retrouvez, à nouveau dans le fichier de configuration de votre site, le nom du serveur de base de données :
+
+- Pour WORDPRESS : il apparaît sous la mention **« DB_HOST »** ;
+- Pour JOOMLA : sous **« public $host »** ;
+- Pour DRUPAL : sous **« host »** ;
+- Pour PRESTASHOP : sous **« database_host »**.
+
+Ainsi que le nom d'utilisateur (Dans cette situation, vous devrez modifier le mot de passe de **l'utilisateur** de votre base de données) :
 
 - Pour WORDPRESS : il apparaît sous la mention **« DB_USER »** ;
-- Pour JOOMLA : sous **«  »** ;
-- Pour DRUPAL : sous **«  »** ;
-- Pour PRESTASHOP : sous **«  »**.
+- Pour JOOMLA : sous **« public $user »** ;
+- Pour DRUPAL : sous **« username »** ;
+- Pour PRESTASHOP : sous **« database_user »**.
+
+Cliquez ensuite, dans la partie **gauche** de votre écran, sur `Bases de données`{.action}. Recherchez le `Nom d'hôte`{.action} de votre serveur dans l'onglet `Informations générales`{.action}. Identifiez également le nom d'utilisateur de votre base de données dans l'onglet `Utilisateur et droits`{.action}
 
 ### Étape 5 : choisir le nouveau mot de passe de votre base de données
 
-Déterminez le nouveau mot de passe de votre base de données et notez-le. Il devra respecter les conditions suivantes :
+> [!primary]
+>
+> Pour plus d'informations sur les bonnes pratiques en matière de mots de passe, suivez les instructions de ce [guide](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+>
+
+Choisissez le nouveau mot de passe de votre base de données et notez-le. Il devra respecter les conditions suivantes :
 
 - Minimum 8 caractères ;
 - Maximum 30 caractères ;
@@ -93,18 +109,7 @@ Déterminez le nouveau mot de passe de votre base de données et notez-le. Il de
 - Au moins un chiffre ;
 - Être composé uniquement de chiffres et de lettres.
 
-> [!primary]
->
-> Pour des raisons de sécurité, nous vous recommandons également :
->
-> - de ne pas utiliser deux fois le même mot de passe ;
-> - de choisir un mot de passe qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à votre nom, prénom ou date de naissance, par exemple) ;
-> - de renouveler régulièrement vos mots de passe ;
-> - de ne pas noter sur un papier ou de vous envoyer vos mots de passe sur votre adresse e-mail ;
-> - de ne pas enregistrer vos mots de passe dans votre navigateur internet, même si ce dernier vous le propose.
->
-
-### Étape 6 : modifier le mot de passe de votre base de données
+### Étape 6 : modifier le mot de passe de votre base de données <a name="step6"></a>
 
 Ouvrez en édition le fichier de configuration de votre base de données.
 
@@ -116,15 +121,15 @@ Remplacez manuellement le mot de passe de votre base de données **en évitant d
 
 ![wordpress_config](images/wordpress_config.png){.thumbnail}
 
-- Pour un site JOOMLA, modifiez la variable **«  »**:
+- Pour un site JOOMLA, modifiez la variable **« public $password »**:
 
 ![joomla_config](images/joomla_config.png){.thumbnail}
 
-- Pour un site DRUPAL, modifiez la variable **«  »** :
+- Pour un site DRUPAL, modifiez la variable **« password »** :
 
 ![drupal_config](images/drupal_config.png){.thumbnail}
 
-- Pour un site PRESTASHOP, modifiez la variable **«  »** :
+- Pour un site PRESTASHOP, modifiez la variable **« database_password »** :
 
 ![prestashop_config](images/prestashop_config.png){.thumbnail}
 
@@ -136,49 +141,55 @@ La modification du mot de passe de votre base de données s'effectuera dans deux
 
 Vous devrez donc [identifier de façon certaine](#step4) la base de données de votre site, avant toute modification.
 
-Dans la partie `Web Cloud`{.action} de votre espace client, cliquez sur la partie `Bases de données`{.action} sur la partie gauche de votre écran.
+#### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
 
-Si un ou plusieurs services SQL privé ou CloudDB apparaissent dans cette partie, recherchez la base de données notée dans le fichier de configuration de votre site dans l'onglet `Bases de données`{.action}.
+Si la base de données de votre site se trouve dans la partie `Hébergements`{.action} de votre espace client, cliquez sur l'onglet `Bases de données`{.action}. Le tableau qui s'affiche contient la ou les bases de données créée(s) sur votre hébergement web :
 
-Une fois certain du service où se trouve cette base, 
+![database-password-step1](images/database-password-step1.png){.thumbnail}
 
-Toujours dans votre , partie `Hébergements`{.action} et dans l'hébergement concerné, cliquez sur l'onglet `Bases de données`{.action}.
+#### Cas n°2 : la base de votre site fait partie d'une offre Private SQL ou CloudDB
 
-Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web.
+Si la base de données de votre site se trouve dans la partie `Bases de données`{.action} de votre espace client (menu de gauche), cliquez sur l'onglet `Utilisateurs et droits`{.action} :
 
-![databasepassword](images/database-password-step1.png){.thumbnail}
+![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 
- modifier le mot de passe de la base de données
+### Étape 7 : modifier le mot de passe de la base de données
 
-Pour modifier le mot de passe, cliquez sur les trois points à droite de la base de données concernée, puis sur `Changer le mot de passe`{.action}.
-
-![databasepassword](images/database-password-step2.png){.thumbnail}
-
-Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe, confirmez-le, puis cliquez sur le bouton `Valider`{.action}.
-
-**Le changement nécessite quelques minutes avant d'être effectif.**
-
-
-
-![databasepassword](images/database-password-step3.png){.thumbnail}
-
-### Étape 4 : rétablir le lien entre la base et le site
+Après avoir accédé à la gestion de la base de données de votre site dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), modifiez son mot de passe ou celui de son utilisateur.
 
 > [!primary]
 >
-> Cette partie peut être facultative si votre site internet n'est pas relié à une base de données.
+> Cette opération nécessitera quelques minutes avant d'être effective. Après l'avoir lancée, pensez à vérifier son état depuis l'onglet `Tâches en cours`{.action} dans votre espace client.
 >
 
-Si votre site internet affiche un message indiquant que la connexion vers la base de données ne peut être effectuée, cela signifie que vous n'avez pas répercuté le changement de mot de passe dans le fichier assurant le lien entre votre site et la base de données.
+#### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
 
-En effet, pour que votre site internet soit en mesure de s'y connecter, un fichier se trouvant sur votre espace de stockage comporte des informations permettant de se connecter à la base : un nom d'utilisateur et de son mot de passe, le nom de la base de données ainsi que de l'adresse du serveur. Du fait de la modification du mot de passe de la base depuis l'espace client OVH, ce lien est à présent brisé.
+Pour modifier le mot de passe, cliquez sur les trois points à droite de la base de données identifié à [l'étape 4][#step4] puis sur `Changer le mot de passe`{.action}.
 
-Pour le rétablir, vous devez renseigner le nouveau mot de passe dans le fichier comportant les informations de la base de données. Ce paramétrage étant inhérent à la configuration de votre site et non à OVH, nous vous recommandons de vous rapprocher de l'éditeur du site internet ou de faire appel à un professionnel tel qu'un prestataire spécialisé si vous souhaitez obtenir de l'aide pour réaliser cette manipulation.
+![database-password-step2](images/database-password-step2.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, renseignez le mot de passe inscrit dans le fichier de configuration de votre site à [l'étape 6](#step6), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
+
+![database-password-step3](images/database-password-step3.png){.thumbnail}
+
+#### Cas n°2 : la base de votre site fait partie d'une offre Private SQL ou CloudDB
+
+Pour modifier le mot de passe, cliquez sur les trois points à droite de l'utilisateur identifié à [l'étape 4][#step4] puis sur `Changer le mot de passe`{.action}.
+
+![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, renseignez le mot de passe inscrit dans le fichier de configuration de votre site à [l'étape 6](#step6), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
+
+![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
 ## Aller plus loin
 
-[En apprendre plus sur la sécurité des mots de passe grâce à l'ANSSI](http://www.ssi.gouv.fr/guide/mot-de-passe/){.external}.
+[Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
+
+[Utilisation logiciel FileZilla avec votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+
+[Modifier le mot de passe d’un utilisateur FTP](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
