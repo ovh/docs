@@ -69,7 +69,7 @@ Back in the Edit Settings, make sure the Connect box is checked and click `OK`{.
 ![CONNECT](images/en08connect.png){.thumbnail}
 
 
-The ISO image is now connected to your VM and can be accessed as if it were a physical media.
+The ISO image is now connected to your VM and can be accessed as if it were an attached physical media.
 
 
 ## Go further
