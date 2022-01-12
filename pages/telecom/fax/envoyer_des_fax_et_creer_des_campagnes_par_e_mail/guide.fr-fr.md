@@ -92,7 +92,7 @@ Cette option se définit dans le corps du mail sous cette forme : **date:21-06-2
 
 -   **Modifier le numéro de l'expéditeur:** permet de choisir le numéro de l'expéditeur qui sera affiché pour l'envoi du FAX aux destinataires.
 
-Cette option se définit dans le corps du mail sous cette forme : **cnum:00XXXXXXX**.
+Cette option se définit dans le corps du mail sous cette forme : **cnum:XXXXXXXXX**. Remplacer les "XX" par le numéro à afficher, ce numéro devra se situer dans le même groupe téléphonie que la ligne FAX émettrice.
 
 ------------------------------------------------------------------------
 
