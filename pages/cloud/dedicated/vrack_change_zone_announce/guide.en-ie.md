@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’ 
+In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.' 
 
 ## Go further
 
