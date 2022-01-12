@@ -115,23 +115,55 @@ Ouvrez en édition le fichier de configuration de votre base de données.
 
 **Avant toute modification**, copiez-collez son contenu dans un éditeur de texte, afin de le sauvegarder localement.
 
-Remplacez manuellement le mot de passe de votre base de données **en évitant de modifier ou supprimer tout autre élément du fichier** :
+Remplacez manuellement le mot de passe de votre base de données **en évitant de modifier ou supprimer tout autre élément du fichier** (Dans les exemples ci dessous, seul « *ABCabc123* » doit être remplacé):
 
 - Pour un site WORDPRESS, modifiez la variable **« DB_PASSWORD »** :
 
-![wordpress_config](images/wordpress_config.png){.thumbnail}
+```php
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'dbname123');
+ 
+/** MySQL database username */
+define('DB_USER', 'dbname123');
+ 
+/** MySQL database password */
+define('DB_PASSWORD', 'ABCabc123');
+ 
+/** MySQL hostname */
+define('DB_HOST', 'dbname123.mysql.db:3306');
+```
 
-- Pour un site JOOMLA, modifiez la variable **« public $password »**:
+- Pour un site JOOMLA, modifiez la variable **« public $password »** (Tout à la fin du fichier de configuration):
 
-![joomla_config](images/joomla_config.png){.thumbnail}
+```php
+	public $host = 'dbname123.mysql.db:3306';
+	public $user = 'dbname123';
+	public $password = 'ABCabc123';
+	public $db = 'dbname123';
+```
 
 - Pour un site DRUPAL, modifiez la variable **« password »** :
 
-![drupal_config](images/drupal_config.png){.thumbnail}
+```php
+$databases['default']['default'] = array (
+  'database' => 'dbname123',
+  'username' => 'dbname123',
+  'password' => 'ABCabc123',
+  'prefix' => 'prefix123_',
+  'host' => 'dbname123.mysql.db',
+  'port' => '3306',
+```
 
 - Pour un site PRESTASHOP, modifiez la variable **« database_password »** :
 
-![prestashop_config](images/prestashop_config.png){.thumbnail}
+```php
+    'database_host' => 'dbname123.mysql.db',
+    'database_port' => '3306',
+    'database_name' => 'dbname123',
+    'database_user' => 'dbname123',
+    'database_password' => 'ABCabc123',
+```
 
 Sauvegardez cette modification.
 
