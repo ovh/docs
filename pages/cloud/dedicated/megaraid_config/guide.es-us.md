@@ -72,7 +72,7 @@ A continuación, seleccione `Arrancar en modo rescue`{.action} luego seleccione 
 En el campo **Recibir las claves del modo seleccionado en la siguiente dirección de correo electrónico:**, especifique otra dirección de correo electrónico si no desea que se envíen las claves de acceso a la dirección principal de su cuenta de OVHcloud.
 
 
-![megaraid](images/rescue_mode_raid0_02.png){.thumbnail}
+![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
 
 Haga clic en `Siguiente`{.action} y luego haga clic en `Confirmar`{.action} en la siguiente pantalla.
 

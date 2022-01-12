@@ -73,7 +73,7 @@ Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue64-
 
 Dans le champ "Recevoir les identifiants du mode sur l'adresse e-mail :", spécifiez une autre adresse de messagerie si vous ne souhaitez pas que les identifiants de connexion soient envoyées à l’adresse principale de votre compte OVHcloud.
 
-![MegaRAID](images/rescue_mode_raid0_02.png){.thumbnail}
+![MegaRAID](images/rescue_mode_raid0_2.png){.thumbnail}
 
 Cliquez sur `Suivant`{.action} puis sur `Confirmer`{.action} dans l'écran qui s’affiche.
 

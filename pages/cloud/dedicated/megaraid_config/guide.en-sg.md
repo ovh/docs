@@ -73,7 +73,7 @@ Next, select `Boot in rescue mode`{.action} then select `rescue64-pro`{.action} 
 
 In the field "Send new login details to the following email address:", specify an alternative email address if you do not want the login credentials sent to your customer account’s primary address.
 
-![megaraid](images/rescue_mode_raid0_02.png){.thumbnail}
+![megaraid](images/rescue_mode_raid0_2.png){.thumbnail}
 
 Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
 
