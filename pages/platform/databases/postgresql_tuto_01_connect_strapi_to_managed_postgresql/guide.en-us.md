@@ -28,11 +28,11 @@ order: 01
  }
 </style>
 
-**Last updated 31st December 2021.**
+**Last updated 11th January 2021.**
 
 ## Objective
 
-In this tutorial, we are going to show you how to build a <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external} application using the OVHcloud managed <img src="images/postgre-logo.png" alt="postgre logo" width="12px"> [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/en/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to build a [Strapi](https://strapi.io/){.external} application using the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/en/public-cloud/postgresql/).
 
 ## Before you begin
 
@@ -128,7 +128,7 @@ A quick and easy way to test the connection is to use the Postgre Command Line I
 >
 > Examples :
 >
-> ```sh
+> ```
 > kubectl run postgres-client --image=postgres:latest -it --rm --restart=Never -- /bin/bash
 > ```
 >
@@ -171,7 +171,7 @@ Type "help" for help.
 defaultdb=> 
 </code></pre>
 
-Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with <img src="images/strapi-logo-monogram-purple.png" alt="strapi logo" width="12px"> [Strapi](https://strapi.io/){.external}.
+Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with [Strapi](https://strapi.io/){.external}.
 
 ### Before you begin, prepare your environment
 

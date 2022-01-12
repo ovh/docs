@@ -20,7 +20,7 @@ Sie können eine Zwei-Faktor-Authentifizierung aktivieren (2FA). Diese ergänzt 
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben ein Mobiltelefon (für die Methode per SMS), ein Smartphone oder Tablet (für die Methode über mobile Applikation) oder einen „Universal Second Factor (U2F)“ Sicherheitsschlüssel.
 - Sie haben die [Empfehlungen zur Verwaltung des Zugangspassworts für Ihren Kunden-Account](https://docs.ovh.com/de/customer/Passwort-verwalten) zur Kenntnis genommen.
 
@@ -100,7 +100,7 @@ Klicken Sie danach auf `Sicherheit`{.action} (Schritt 1 auf dem Bild unten), dan
 
 ### Die Zwei-Faktor-Authentifizierung vollständig deaktivieren <a name="disable-2fa"></a>
 
-#### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kunden-Account haben
+#### Wenn Sie noch Zugriff auf Ihr OVHcloud Kundencenter haben
 
 Um die Zwei-Faktor-Authentifizierung für Ihren OVHcloud Kunden-Account vollständig zu deaktivieren, müssen **alle** hierfür registrierten Geräte gelöscht **und die Notfall-Codes deaktiviert werden**.
 
@@ -112,23 +112,23 @@ Wenn alle Ihre Geräte gelöscht sind, deaktivieren Sie die Notfall-Codes, indem
 
 #### Wenn Sie keinen Zugriff mehr auf Ihr OVHcloud Kundencenter haben
 
-Wenn sie nicht mehr über gültige Geräte Zugang haben oder keine gültigen Notfall-Codes erinnern, können Sie der Zwei-Faktor-Authentifizierung entfernen. In diesem Fall können Sie unsere Support-Teams kontaktieren.
+Wenn keinen Zugriff auf validierte Geräte und auch keine gültigen Notfall-Codes mehr haben, können Sie die Zwei-Faktor-Authentifizierung deaktivieren, indem Sie unsere Support-Teams kontaktieren.
 
-Bevor Sie uns wenden, bereiten Sie bitte folgende Unterlagen vor:
+Bevor Sie uns kontaktieren, bereiten Sie bitte folgende Unterlagen vor:
 
 |OVHcloud Account-Typ|Vorzulegende Nachweise|
 |---|---|
 |Privatperson|- Beidseitige Kopie eines Identitätsnachweises (Personalausweis, Führerschein, Reisepass), ausgestellt auf den Inhaber des OVHcloud Kunden-Accounts|
-|Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) des Unternehmens berechtigten Person (sensible Daten können versteckt werden, nur der vollständige Name und das Ablaufdatum sichtbar sein müssen)<br><br>- Handelsregisterauszug des Unternehmens|
+|Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) der zur Vetretung des Unternehmens berechtigten Person (sensible Daten können unkenntlich gemacht werden, nur der vollständige Name und das Ablaufdatum müssen sichtbar sein)<br><br>- Handelsregisterauszug des Unternehmens|
 
-Kontaktieren Sie den OVHcloud Support unter +49 681 906730 Uhr, sobald Ihre Unterlagen vorberaiten. Die genannten Unterlagen müssen uns über eine E-Mail-Adresse zugesandt werden, die in Ihrem OVHcloud-Account gespeichert ist. 
+Kontaktieren Sie den OVHcloud Support unter +49 681 906730 Uhr, sobald Ihre entsprechenden Nachweise vollständig vorliegen.
 
 > [!warning]
 >
->  Ihre Dokumente müssen Sie uns schicken aus eine E-Mail-Adresse welche mit Ihrem OVHcloud Kunden-Account verbunden ist.
+>  Die Dokumente müssen uns von einer E-Mail-Adresse aus übermittelt werden, die in Ihrem OVHcloud Kunden-Account hinterlegt ist.
 
-Nach Überprüfung Ihrer Dokumente kann ein Support-Agent die Zwei-Faktor-Authentifizierung manuell aus Ihre OVHcloud-Account deaktivieren.
+Nach Überprüfung Ihrer Unterlagen kann ein Support-Mitarbeiter die Zwei-Faktor-Authentifizierung manuell aus Ihrem OVHcloud Kunden-Account entfernen.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com).
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
