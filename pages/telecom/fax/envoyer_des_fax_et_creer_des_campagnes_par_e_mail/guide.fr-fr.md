@@ -24,7 +24,7 @@ Niveau : Intermédiaire
 
 ------------------------------------------------------------------------
 
-### Envoyer un fax par mail {#envoyer-un-fax-par-mail}
+### **Envoyer un fax par mail** {#envoyer-un-fax-par-mail}
 
 Pour envoyer un fax par e-mail, il faut :
 
@@ -36,7 +36,7 @@ Pour envoyer un fax par e-mail, il faut :
 L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
 
 -   -   Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
-    -   **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307****
+    -   **L'**objet de l'e-mail** est le numéro de la ligne de **fax émettrice** : dans notre exemple, la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307****
     -   Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](#Envoyerdesfaxetcréerdescampagnespare-mail-MotdepassFax))
     -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 
@@ -96,14 +96,12 @@ Cette option se définit dans le corps du mail sous cette forme : **cnum:XXXXXXX
 
 ------------------------------------------------------------------------
 
-****
-
-### Les erreurs que vous pouvez rencontrer {#les-erreurs-que-vous-pouvez-rencontrer}
+### **Les erreurs que vous pouvez rencontrer** {#les-erreurs-que-vous-pouvez-rencontrer}
 
 Différentes erreurs peuvent êtres rencontrées lors de l'envoi d'un fax par e-mail. L'explication est donnée dans le corps de l'e-mail. Voici les erreurs les plus courantes :
 
 -   **Télécopie : Erreur de traitement:** Généralement, le mot de passe de la ligne fax est incorrect. Ce message peut être indiqué également lorsqu'il n'y a pas eu de numéro de fax valide détecté. Dans tous les cas, le détail de l'erreur est indiqué dans le corps de l'e-mail.
--   **Télécopie de 'fax.pdf' : Numéro dupliqué:**ce message est un avertissement pour informer qu'il y a eu un doublon de numéros dans le fichier **numbers.txt**. Le fax ne sera pas envoyé plusieurs fois au même numéro.
+-   **Télécopie de 'fax.pdf' : Numéro dupliqué:** ce message est un avertissement pour informer qu'il y a eu un doublon de numéros dans le fichier **numbers.txt**. Le fax ne sera pas envoyé plusieurs fois au même numéro.
 -   **Télécopie de '' : Numéros restreints :** ce message indique qu'il y a un numéro non autorisé dans les destinataires. Il suffit d'ajouter l'option **qualite:best** pour autoriser l'envoi.
 
     ------------------------------------------------------------------------
