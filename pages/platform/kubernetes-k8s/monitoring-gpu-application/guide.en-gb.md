@@ -58,7 +58,7 @@ In this guide you will:
 NVIDIA Data Center GPU Manager (DCGM) is a set of tools for managing and monitoring NVIDIA GPUs in cluster environments. It's a low overhead tool suite that performs a variety of functions on each host system including active health monitoring, diagnostics, system validation, policies, power and clock management, group configuration and accounting.
 
 To gather GPU telemetry in Kubernetes, the NVIDIA GPU Operator deploys the `dcgm-exporter`, based on DCGM exposes GPU metrics for `Prometheus` and can be visualized using `Grafana`. 
-`dcgm-exporter` is architected to take advantage of `KubeletPodResources API` and exposes GPU metrics in a format that can be scraped by `Prometheus`. A `ServiceMonitor` is also included to expose endpoints.
+`dcgm-exporter` is architected to take advantage of `KubeletPodResources API` and exposes GPU metrics in a format that can be scraped by `Prometheus`.
 
 As you have already followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should already have `dcgm-exporter` running in your cluster.
 
@@ -74,7 +74,7 @@ The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-oper
 
 ![Prometheus Architecture](images/prometheus-architecture.png)
 
-The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometehus operator also deploys a Grafana dashboard, to viasualize our metrics in a friendly user way.
+The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana dashboard, to visualize our metrics in a friendly user way.
 
 If you are interested about the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator).
 
@@ -137,7 +137,7 @@ After:
 
 Don't close this file before retrieving or modifying `adminPassword` key.
 
-by default, Grafana password should be like this:
+By default, Grafana password should be like this:
 
 ```yaml
   adminPassword: prom-operator
@@ -239,7 +239,7 @@ Grafana URL: http://51.178.69.167
 
 Open your browser and go to the Prometheus interface.
 
-As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already started publishing the metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar and click on `Execute` button to determine if the GPU metrics are visible:
+As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already started publishing the metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar and click on `Execute`{.action} button to determine if the GPU metrics are visible:
 
 ![Prometheus](images/prometheus.png)
 
@@ -257,15 +257,15 @@ You can also go to the Grafana interface. Open your browser and point to `http:/
 You have a running Prometheus and Grafana, no you need to add a dashboard for `DCGM`.
 To do that, you can use a standard dashboard that NVIDIA released, which can also be customized.
 
-To add the dashboard, in the Grafana sidebar, click on `+` button -> `Import`:
+To add the dashboard, in the Grafana sidebar, click on `+`{.action} button -> `Import`{.action}:
 
 ![Grafana Import menu](images/grafana-import.png)
 
-Import the NVIDIA dashboard from https://grafana.com/grafana/dashboards/12239, click on `Load` button:
+Import the NVIDIA dashboard from https://grafana.com/grafana/dashboards/12239, click on `Load`{.action} button:
 
 ![Grafana Import menu](images/grafana-import-dashboard.png)
 
-Then choose `Prometheus` as the data source in the drop down menu and click on `Import` button:
+Then choose `Prometheus`{.action} as the data source in the drop down menu and click on `Import`{.action} button:
 
 ![Grafana Import menu](images/grafana-import-dashboard-2.png)
 
@@ -275,7 +275,7 @@ You should now see your new dashboard:
 
 If you followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should see metrics like in our example.
 
-You can click on `instance` drop down menu in order to visualize GPU metrics for another Node for example:
+You can click on `instance`{.action} drop down menu in order to visualize GPU metrics for another Node for example:
 
 ![Grafana NVIDIA DCGM Exporter Dashboard other node](images/grafana-dcgm-exporter-dashboard-2.png)
 
@@ -361,7 +361,7 @@ Open the application URL in your browser:
 
 ![GPU Demo](images/gpu-demo.png)
 
-Click on the `play` button (the button with a triangle) to start the application:
+Click on the `play`{.action} button (the button with a triangle) to start the application:
 
 ![GPU Demo Started](images/gpu-demo-started.png)
 
