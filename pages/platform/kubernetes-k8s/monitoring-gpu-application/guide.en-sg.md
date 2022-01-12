@@ -245,6 +245,15 @@ As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already start
 
 ![Prometheus](images/prometheus.png)
 
+You can check the GPU usage with several metrics in Prometheus:
+
+- `DCGM_FI_DEV_GPU_UTIL`: GPU utilization.
+- `DCGM_FI_DEV_SM_CLOCK`: SM clock frequency (in MHz).
+- `DCGM_FI_DEV_MEM_CLOCK`: Memory clock frequency (in MHz).
+- `DCGM_FI_DEV_MEMORY_TEMP`: Memory temperature (in C).
+
+You can find the full list of metrics exported by DCGM-exporter in the [NVIDIA website](https://docs.nvidia.com/datacenter/dcgm/1.6/dcgm-api/group__dcgmFieldIdentifiers.html).
+
 You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials bellow:
 
 - Login: `admin`
