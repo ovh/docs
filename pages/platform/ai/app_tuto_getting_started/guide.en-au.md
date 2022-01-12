@@ -16,14 +16,14 @@ This guide explains how to get started with OVHcloud AI Apps by deploying your f
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
 ### Subscribe to AI Apps
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `AI Apps`{.action} in the left-hand navigation bar under **AI & Machine Learning**.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `AI Apps`{.action} in the left-hand navigation bar under **AI & Machine Learning**.
 
 Click on the `Deploy an AI App`{.action} button and accept terms and conditions if any.
 
@@ -37,7 +37,7 @@ Select where your AI App will be hosted, meaning the physical location.
 
 > [!primary]
 >
-> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/gb/en/publiccloud/ai/apps/capabilities/).
+> OVHcloud provides multiple datacenters. You can find the capabilities for AI Apps in the guide [AI Apps capabilities](https://docs.ovh.com/au/en/publiccloud/ai/apps/capabilities/).
 >
 
 #### Step 2: Select the application to deploy
@@ -55,7 +55,7 @@ These AI models will work to detect the positive or negative feelings in English
 
 > [!primary]
 >
-> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](https://docs.ovh.com/gb/en/ai-training/build-use-custom-image/) guide.
+> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](https://docs.ovh.com/au/en/ai-training/build-use-custom-image/) guide.
 >
 
 #### Step 3: Assign compute resources
