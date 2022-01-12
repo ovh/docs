@@ -32,7 +32,7 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 
 ### Activar el Backup Storage
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Barra Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. En la pestaña `Backup Storage`{.action}, haga clic en el botón `Activar el Backup Storage`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Bare Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. En la pestaña `Backup Storage`{.action}, haga clic en el botón `Activar el Backup Storage`{.action}.
 
 ![Activar el Backup Storage](images/backup-storage01.png){.thumbnail}
 
@@ -48,7 +48,7 @@ El acceso a su espacio de almacenamiento está restringido por direcciones IP me
 
 #### Añadir la regla de acceso
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Barra Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Añadir acceso`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Bare Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Añadir acceso`{.action}.
 
 ![Añadir la regla de acceso](images/backup-storage03.png){.thumbnail}
 
@@ -114,19 +114,19 @@ Para comprobar que su dirección IP está autorizada, utilice la siguiente llama
 
 ### Restaurar la contraseña
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Barra Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón ¿Ha olvidado `la contraseña?`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Bare Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón ¿Ha olvidado `la contraseña?`{.action}.
 
 Al hacer clic en `Confirmar`{.action} en la ventana que aparece, se enviará un mensaje de correo electrónico con la contraseña a la dirección de correo electrónico que haya guardado en su cuenta de administrador. Siga las instrucciones que contiene para restaurar la contraseña.
 
 ### Eliminar el Backup Storage
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Barra Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Eliminar el Backup Storage`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Bare Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Eliminar el Backup Storage`{.action}.
 
 Haga clic en `Confirmar`{.action} el mensaje de aviso para proceder a la eliminación. El Backup Storage se eliminará en unos minutos. Todos los datos del espacio de almacenamiento se eliminarán.
 
 ### Contratar espacio en disco adicional
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Barra Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Contratar espacio en disco`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, Seleccione el servidor accediendo a la sección `Bare Metal Cloud`{.action} y seleccionando el servidor `en la columna izquierda`{.action}. A continuación, abra la pestaña `Backup Storage`{.action} y haga clic en el botón `Contratar espacio en disco`{.action}.
 
 ![Contratar espacio en disco adicional](images/backup-storage06.png){.thumbnail}
 
