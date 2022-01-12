@@ -41,14 +41,14 @@ En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede v
 
 ### 2. Modificar el anuncio del bloque de IP
 
-Conéctese a la [API de OVH](https://api.ovh.com/console/){.external} con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
+Conéctese a la [API de OVHcloud](https://api.ovh.com/console/){.external} con su ID de cliente y contraseña. Utilice las siguientes llamadas a la API para modificar el anuncio del bloque de IP:
 
 > [!api]
 >
 > @api {GET} /vrack
 > 
 
-Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
+Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Bare Metal Cloud`{.action}. Haga clic en `Network`{.action} y seleccione `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
 
 > [!api]
 >

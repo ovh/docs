@@ -41,14 +41,14 @@ O exemplo acima mostra que o endereço IP testado está atualmente anunciado em 
 
 ### 2 - Alterar o anúncio do bloco IP
 
-Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de cliente OVH. A seguir, utilize as API abaixo para alterar o anúncio do bloco IP.
+Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de cliente OVHcloud. A seguir, utilize as API abaixo para alterar o anúncio do bloco IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para o consultar. Para isso, aceda à secção “Cloud” e selecione “vRack”.
+Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action},  depois `Network`{.action} e selecione “vRack”. 
 
 > [!api]
 >
