@@ -69,7 +69,7 @@ La composition de la campagne se déroule de cette manière :
 
     0972101010 0972101927 0366720307
 
-Pour éditer le fichier numbers.txt, il est recommandé d'utiliser un éditeur de fichier texte basique. Sous Windows, **Notepad**, sous Mac OS, **TextEdit**et pour Linux, **VI**.
+Pour éditer le fichier numbers.txt, il est recommandé d'utiliser un éditeur de fichier texte basique. Sous Windows, **Notepad**, sous Mac OS, **TextEdit** et pour Linux, **VI**.
 
 Le **déroulement** de la **campagne** se fait par **mail** : un e-mail est envoyé.
 
