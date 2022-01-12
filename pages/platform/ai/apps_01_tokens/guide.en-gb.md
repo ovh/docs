@@ -97,11 +97,11 @@ Additional information about the use of a token to manage an AI Training resourc
 
 With the token we generated in the previous step we will now query the AI App. For this demonstration, we deployed a simple Hello World app that always responds `Hello, World!`.
 
-In the details of our AI App above the Tags you can get the access URL of your AI App.
+You can get the access URL of your AI App in the details of the AI App, above the **Tags**.
 
 #### Browser
 
-If access the AI App access URL from your browser you reach a Login page:
+When accessing the AI App via its URL in your browser, you will reach a Login page:
 
 ![app access login](images/11-app-access-credentials.png){.thumbnail}
 
