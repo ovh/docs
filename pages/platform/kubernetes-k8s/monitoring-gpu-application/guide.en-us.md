@@ -252,7 +252,7 @@ You can check the GPU usage with several metrics in Prometheus:
 - `DCGM_FI_DEV_MEM_CLOCK`: Memory clock frequency (in MHz).
 - `DCGM_FI_DEV_MEMORY_TEMP`: Memory temperature (in C).
 
-You can find the full list of metrics exported by DCGM-exporter in the [NVIDIA website](https://docs.nvidia.com/datacenter/dcgm/1.6/dcgm-api/group__dcgmFieldIdentifiers.html).
+You can find the full list of metrics exported by DCGM-exporter in the [NVIDIA website](https://docs.nvidia.com/datacenter/dcgm/1.6/dcgm-api/group__dcgmFieldIdentifiers.html){.external}.
 
 You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials bellow:
 
