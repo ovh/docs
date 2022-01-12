@@ -194,7 +194,7 @@ Review and click `Finish`{.action}.
 The cloning to template process will go through.<br>
 No VM is directly visible but when deploying new VM, the clone will show in the Deploy from Template option.
 
-![TEMPLATE](images/en1çdeploy.png){.thumbnail}
+![TEMPLATE](images/en19deploy.png){.thumbnail}
 
 
 ## Go further
