@@ -17,7 +17,7 @@ VMWare offers the ability to manually take snapshots or clone VMs.
 
 - Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
 - Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-- 
+
 
 ## Instructions
 
@@ -103,6 +103,55 @@ You can click `Done`{.action} as your snapshot was cleared.
 > [!primary]
 >
 > If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
+
+
+### Clone a VM
+
+Cloning allows for quick and efficient deployment of similar VMs.<br>
+You can clone a VM into another one or clone it into a template.
+
+#### Clone to VM
+
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Clone`{.action} menu, select `Clone to Virtual Machine`{.action}.
+
+![CLONE](images/en08clonevm.png){.thumbnail}
+
+
+Name the clone VM and select its datacenter location.<br>
+Click `Next`{.action}.
+
+![CLONE](images/en09clonename.png){.thumbnail}
+
+
+Select the clone VM compute location.<br>
+Click `Next`{.action}.
+
+![CLONE](images/en10clonecomp.png){.thumbnail}
+
+
+Select the clone VM storage location.<br>
+Click `Next`{.action}.
+
+![CLONE](images/en11clonestor.png){.thumbnail}
+
+
+Select the options for your clone VM.
+- Customize the operating system will trigger sysprep on first use of the VM
+- Customize this virtual machine's hardware allows for modification of VM capabilities (HDD size, network elements...)
+- Power on virtual machine after creation is not recommended as you may have to apply changes before startup to prevent issues (network conflicts most notably if you use fixed IPs)<br>
+Click `Next`{.action}.
+
+![CLONE](images/en12clonecustom.png){.thumbnail}
+
+
+Review and click `Finish`{.action}.
+
+![CLONE](images/en13clonefinish.png){.thumbnail}
+
+
+The cloning process will go through and the new VM is ready for you.
+
 
 
 ## Go further
