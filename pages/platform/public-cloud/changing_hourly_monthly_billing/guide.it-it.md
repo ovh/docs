@@ -5,7 +5,7 @@ slug: cambiare-tipo-fatturazione-public-cloud
 section: 'Gestione del progetto'
 ---
 
-**Ultimo aggiornamento 06/12/2019**
+**Ultimo aggiornamento 21/09/2021**
 
 ## Obiettivo
 
