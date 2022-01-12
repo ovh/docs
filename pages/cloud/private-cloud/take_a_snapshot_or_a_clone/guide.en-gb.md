@@ -71,7 +71,7 @@ Confirm by clicking `OK`{.action}.
 ![CONFIRM](images/en05confirm.png){.thumbnail}
 
 
-You can click `Done`{.action} as your VM has been recerted to the point chosen.
+You can click `Done`{.action} as your VM has been reverted to the point chosen.
 
 > [!primary]
 >
@@ -156,7 +156,7 @@ The cloning process will go through and the new VM is ready for you.
 
 > [!primary]
 >
-> If you cloned without any custumization, make sure it is safe to boot the new VM. If it is cloned from a fixed IP VM, you should disable the Network Card to avoid IP conflicts for example.
+> If you cloned without any customization, make sure it is safe to boot the new VM. If it is cloned from a fixed IP VM, you should disable the Network Card to avoid IP conflicts for example.
 
 
 
