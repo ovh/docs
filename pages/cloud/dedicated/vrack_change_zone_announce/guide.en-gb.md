@@ -48,7 +48,7 @@ Go to <https://api.ovh.com/console/>, then sign in with your OVHcloud customer I
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. o do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >
