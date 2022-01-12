@@ -33,6 +33,8 @@ section: Tutorials
 
 In this tutorial we will show you how to monitor a GPU application on an OVHcloud Managed Kubernetes cluster.
 
+![GPU Metrics Visualization](images/gpu-metrics-visualization.png)
+
 GPUs provide compute power to drive AI/ML & Deep Learning tasks with intensive calculations such as image/object recognition, natural language processing (NLP), as well as other compute-intensive tasks such as video transcoding and image processing. Using GPUs with Kubernetes allows you to extend the scalability of Kubernetes to AI/ML applications.
 But, the cost of GPUs is high. If each application uses a dedicated GPU in model prediction scenarios, computing resources can be wasted. It is therefore important to monitor GPU usage in order to be responsive and to be able to make the right decisions and optimize usage.
 
