@@ -120,7 +120,7 @@ Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Cloner`{.ac
 ![CLONE](images/en08clonevm.png){.thumbnail}
 
 
-Nommez le clone et selectionner son datacenter.<br>
+Nommez le clone et selectionnez son datacenter.<br>
 Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en09clonename.png){.thumbnail}
@@ -147,7 +147,7 @@ Cliquez sur `Suivant`{.action}.
 ![CLONE](images/en12clonecustom.png){.thumbnail}
 
 
-Vérifier puis cliquez sur `Terminer`{.action}.
+Vérifiez puis cliquez sur `Terminer`{.action}.
 
 ![CLONE](images/en13clonefinish.png){.thumbnail}
 
@@ -156,47 +156,47 @@ Le processus de clonage s'enclenche et la nouvelle VM sera disponible une fois t
 
 > [!primary]
 >
-> If you cloned without any custumization, make sure it is safe to boot the new VM. If it is cloned from a fixed IP VM, you should disable the Network Card to avoid IP conflicts for example.
+> Si le clone a été effectué sans personalisation, assurez-vous que vous pouvez démarrer la VM sans danger. Par exemple, si la VM d'origine a une IP fixe, désactivez la carte réseau du clone pour éviter un conflit d'addresse IP.
 
 
 
-#### Clone to Template
+#### Cloner vers un modèle
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Clone`{.action} menu, select `Clone to Template`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Cloner`{.action}, selectionner `Cloner vers un modèle`{.action}.
 
 ![TEMPLATE](images/en14clonetemp.png){.thumbnail}
 
 
-Name the template VM and select its datacenter location.<br>
-Click `Next`{.action}.
+Nommez le modèle et selectionnez son datacenter.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![TEMPLATE](images/en15clonename.png){.thumbnail}
 
 
-Select the template VM compute location.<br>
-Click `Next`{.action}.
+Selectionnez une resource de calcul.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![TEMPLATE](images/en16clonecomp.png){.thumbnail}
 
 
-Select the template VM storage location.<br>
-Click `Next`{.action}.
+Selectionnez le lieu de stockage.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![TEMPLATE](images/en17clonestor.png){.thumbnail}
 
 
-Review and click `Finish`{.action}.
+Vérifiez puis cliquez sur `Terminer`{.action}.
 
 ![TEMPLATE](images/en18clonefinish.png){.thumbnail}
 
 
-The cloning to template process will go through.<br>
-No VM is directly visible but when deploying new VM, the clone will show in the Deploy from Template option.
+Le processus de clonage va s'exécuter.<br>
+Aucune VM n'est directement visible mais le nouveau modèle est utilisable dans l'option Deployer depuis un modèle.
 
 ![TEMPLATE](images/en19deploy.png){.thumbnail}
 
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
