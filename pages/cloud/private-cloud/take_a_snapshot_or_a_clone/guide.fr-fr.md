@@ -5,154 +5,154 @@ slug: take_a_snapshot_or_a_clone
 section: Maintenance and monitoring
 ---
 
-**Last Updated on 01/12/2022**
+**Dernière mise à jour le 12/01/2022**
 
-## Objective
+## Objectif
 
-VMWare offers the ability to manually take snapshots or clone VMs.
+VMWare offre la possibilité de créer manuellement des snapshots ou des clones de VM.
 
-**This guide explains how to execute those tasks**
+**Ce guide explique comment exécuter ces tâches**
 
-## Requirements
+## Prérequis
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 
-## Instructions
+## En pratique
 
-### Take a Snapshot
+### Prendre un Snapshot
 
-A snapshot allows you to capture a VM state.<br>
-It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
+Un snapshot capture l'etat d'une VM.<br>
+Cela ajoute une couche de protection pour votre VM avant de procéder à des changement en permettant de revenir à cet état si besoin.
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Snapshots`{.action} menu, selectionnez `Prendre un snapshot`{.action}.
 
 ![TAKE](images/en01take.png){.thumbnail}
 
-By default, the snapshot will be named after the current date and time. You may edit it to your preference.<br>
-A description may also be added for reference.<br>
-If your VM is running, the snapshot process offers two options:
-- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash resistant. meaning it can be reverted to without powering off the VM.
-- Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br>
-If your VM is not running, those options are greyed out.<br>
-*We recommend taking snapshots of a turned off VM and if it is not possible, preferably use the Quiesce option over the memory snapshot for added security.*<br>
-Click `OK`{.action} when ready.
+Par défaut, le nom du snapshot est la date et l'heure courante. Vous pouvez le changer à votre convenance.<br>
+Vous pouvez également ajouter une description.<br>
+Si la VM est en marche, le processus de snapshot offre deux options:
+- Prendre un snapshot de la mémoire de la machine virtuelle. Cela sauvegarde l'état de la RAM sur la VM pour aider les applications qui n'ont pas encore ecrit leurs données sur disque. Cela doit rendre le snapshot résistant au crash et ouvre la possibilité de récupération à chaud.
+- Mettre au repos le système fichiers invité (VMware Tools doit être installé). La VM sera paramétrée comme si le sytème allait être sauvegardée : buffers nettoyés, changement enregistés sur disque...<br>
+Si la VM est éteinte, ces options sont grisées.<br>
+*Nous recommendons de prendre des snapshots de VM à froid. Si ce n'est pas possible, préférez la lise au repos à un simple snapshot de mémoire pour plus de sécurité.*<br>
+Cliquez sur `OK`{.action}.
 
 ![SNAP](images/en02snap.png){.thumbnail}
 
 
-Your snapshot is done.
+Votre snapshot est pris.
 
 
-### Manage Snapshots
+### Gérer les Snapshots
 
-You can take multiple snapshots of a single VM repeating the process explained above.<br>
-With time, snapshots will consume resources, especially storage, to be maintained and possibly will affect VM performance.<br>
-Below is how to revert to or clear snapshots.
+Vous pouvez prendre de multiples snapshots d'une seule VM en répétant le processus vu ci-dessus.<br>
+Cependant, avec le temps, les snapshots consomment beaucoup de resources pour se maintenir et finissent par affecter les performances des VMs.<br>
+Voici comment restaurer ou supprimer les snapshots.
 
-#### Revert to Snapshot
+#### Restaurer un Snapshot
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Snapshots`{.action} menu, selectionnez `Gérer les snapshots`{.action}.
 
 ![MANAGE](images/en03manage.png){.thumbnail}
 
 
-Check the snapshot tree and select the one you wish to go back to.<br>
-Click on `Revert To`{.action}.
+Vérifier l'arborescence des snapshots et selectionnez celui auquel vous souhaitez revenir.<br>
+Cliquez sur `Restaurer`{.action}.
 
 ![REVERT](images/en04revert.png){.thumbnail}
 
 
-Confirm by clicking `OK`{.action}.
+Confirmer en cliquant `OK`{.action}.
 
 ![CONFIRM](images/en05confirm.png){.thumbnail}
 
 
-You can click `Done`{.action} as your VM has been recerted to the point chosen.
+Vous pouvez cliquer `Terminé`{.action}, votre VM est revenu à l'état choisi.
 
 > [!primary]
 >
-> If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing `Revert to Latest Snapshot`{.action} in the `Snapshots`{.action} menu.
+> Si vous n'avez qu'un unique snapshot ou souhaitez revenir au dernier snapshot pris, vous pouvez accélérer le processus en choisissant `Restaurer le dernier snapshot`{.action} dans le menu `Snapshots`{.action}.
 
 
-#### Clear Snapshot
+#### Supprimer un Snapshot
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Snapshots`{.action} menu, selectionnez `Gérer les snapshots`{.action}.
 
 ![MANAGE](images/en03manage.png){.thumbnail}
 
 
-Check the snapshot tree and select the one you wish to delete.<br>
-Click on `Delete`{.action}.<br>
-*You can also clear all snapshots by clicking `Delete All`{.action}.*
+Vérifier l'arborescence des snapshots et selectionnez celui auquel vous souhaitez revenir.<br>
+Cliquez sur `Supprimer`{.action}.<br>
+*Vous pouvez aussi supprimer tous les snapshots existants en cliquant `Supprimer tout`{.action}.*
 
 ![Delete](images/en06delete.png){.thumbnail}
 
 
-Confirm by clicking `OK`{.action}.
+Confirmer en cliquant `OK`{.action}.
 
 ![CONFIRM](images/en07confirm.png){.thumbnail}
 
 
-You can click `Done`{.action} as your snapshot was cleared.
+Vous pouvez cliquer `Terminé`{.action}, le snapshot a été supprimé.
 
 > [!primary]
 >
-> If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
+> Pour supprimer tous les snapshots, vous pouvez accélérer le processus en choisissant `Supprimer tous les snapshots`{.action} dans le menu `Snapshots`{.action}.
 
 
-### Clone a VM
+### Cloner une VM
 
-Cloning allows for quick and efficient deployment of similar VMs.<br>
-You can clone a VM into another one or clone it into a template.<br>
-Cloning to a VM is a quick way to copy a full VM and its settings.<br>
-Cloning to a template is a preferred way to create a master copy that will be used to deploy many VMs.
+Cloner permet un déploiement rapide et facile de VMs similaires.<br>
+Vous pouvez cloner une VM vers une autre VM ou vers un modèle.<br>
+Cloner vers une VM est un moyen rapide de dupliquer une VM et ses paramètres.<br>
+Cloner vers un modèle est un meilleur moyen pour créer une copie originale qui servira à déployer de miltiples VMS.
 
-#### Clone to VM
+#### Cloner vers une VM
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Clone`{.action} menu, select `Clone to Virtual Machine`{.action}.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, effectuez un clic droit et dans le menu `Cloner`{.action}, selectionner `Cloner vers une machine virtuelle`{.action}.
 
 ![CLONE](images/en08clonevm.png){.thumbnail}
 
 
-Name the clone VM and select its datacenter location.<br>
-Click `Next`{.action}.
+Nommez le clone et selectionner son datacenter.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en09clonename.png){.thumbnail}
 
 
-Select the clone VM compute location.<br>
-Click `Next`{.action}.
+Selectionnez une resource de calcul.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en10clonecomp.png){.thumbnail}
 
 
-Select the clone VM storage location.<br>
-Click `Next`{.action}.
+Selectionnez le lieu de stockage.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en11clonestor.png){.thumbnail}
 
 
-Select the options for your clone VM.
-- Customize the operating system will trigger sysprep on first use of the VM
-- Customize this virtual machine's hardware allows for modification of VM capabilities (HDD size, network elements...)
-- Power on virtual machine after creation is not recommended as you may have to apply changes before startup to prevent issues (network conflicts most notably if you use fixed IPs)<br>
-Click `Next`{.action}.
+Selectionnez les options nécessaire pour le clone.
+- Personnaliser le système d'exploitation lancera sysprep lors de la première utilisation de la VM
+- Personnaliser le matériel de cette machine virtuelle permet de modifier les charactéristiques techniques de la VM (taille de disque, RAM, éléments réseau...)
+- Mettre sous tension la machine virtuelle après la création n'est pas recommandé. Certains changements à froid peuvent être necessaires avant de lancer la VM pour éviter des conflits.<br>
+Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en12clonecustom.png){.thumbnail}
 
 
-Review and click `Finish`{.action}.
+Vérifier puis cliquez sur `Terminer`{.action}.
 
 ![CLONE](images/en13clonefinish.png){.thumbnail}
 
 
-The cloning process will go through and the new VM is ready for you.
+Le processus de clonage s'enclenche et la nouvelle VM sera disponible une fois terminé.
 
 > [!primary]
 >
