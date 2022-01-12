@@ -1,7 +1,7 @@
 ---
 title: Créer un snapshot ou un clone
 excerpt: ''
-slug: take_a_snapshot_or_a_clone
+slug: snapshot_and_clone
 section: Maintenance and monitoring
 ---
 
