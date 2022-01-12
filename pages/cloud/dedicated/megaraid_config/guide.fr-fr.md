@@ -71,7 +71,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 
 Ensuite, sélectionnez `Booter en mode rescue`{.action} et choisissez `rescue64-pro`{.action} dans la liste déroulante.
 
-Dans le champ "Recevoir les identifiants du mode sur l'adresse e-mail :", spécifiez une autre adresse de messagerie si vous ne souhaitez pas que les identifiants de connexion soient envoyées à l’adresse principale de votre compte OVHcloud.
+Dans le champ "Recevoir les identifiants du mode sur l'adresse e-mail :", spécifiez une autre adresse e-mail si vous ne souhaitez pas que les identifiants de connexion soient envoyées à l’adresse principale de votre compte OVHcloud.
 
 ![MegaRAID](images/rescue_mode_raid0_2.png){.thumbnail}
 
