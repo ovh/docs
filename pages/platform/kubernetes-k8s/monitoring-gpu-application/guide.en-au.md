@@ -42,7 +42,7 @@ But, the cost of GPUs is high. If each application uses a dedicated GPU in model
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/) installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 And you also need to follow [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial to install NVIDIA GPU operator and configure your cluster correctly with needed components for this guide.
 
@@ -50,8 +50,8 @@ And you also need to follow [Deploying a GPU application on OVHcloud Managed Kub
 
 In this guide you will:
 
-- install Prometheus operator (it will install [Prometheus](https://prometheus.io/) & [Grafana](https://grafana.com/))
-- use [NVIDIA’s Data Center GPU Manager (DCGM)](https://developer.nvidia.com/dcgm) to expose GPU metrics for Prometheus
+- install Prometheus operator (it will install [Prometheus](https://prometheus.io/){.external} & [Grafana](https://grafana.com/){.external})
+- use [NVIDIA’s Data Center GPU Manager (DCGM)](https://developer.nvidia.com/dcgm){.external} to expose GPU metrics for Prometheus
 - deploy an application to demonstrate GPU accelerated Inference and generate traffic
 - visualize metrics
 
@@ -72,17 +72,17 @@ nvidia-dcgm-exporter-rcq6t   1/1     Running   0          18d
 
 ### Prometheus operator
 
-The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator) provides Kubernetes native deployment and management of Prometheus and related monitoring components.
+The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator){.external} provides Kubernetes native deployment and management of Prometheus and related monitoring components.
 
 ![Prometheus Architecture](images/prometheus-architecture.png)
 
 The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana dashboard, to visualize our metrics in a friendly user way.
 
-If you are interested about the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator).
+If you are interested about the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
 
 ### Installing the Prometheus operator
 
-For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack){.external} found on [Prometheus Community repository](https://github.com/prometheus-community).
+For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack){.external} found on [Prometheus Community repository](https://github.com/prometheus-community){.external}.
 
 Add the Prometheus Helm repository:
 
@@ -110,7 +110,7 @@ You need to modify some settings. To do this, you will inspect the chart to retr
 helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prometheus-stack.values
 ```
 
-Open the `/tmp/kube-prometheus-stack.values` in your favorite editor.
+Open the `/tmp/kube-prometheus-stack.values` file in your favorite editor.
 
 Then, into it, search for `additionalScrapeConfigs` (the value should be empty `[]` by default). You will add a `ConfigMap` to this section.
 
@@ -285,7 +285,7 @@ You can click on `instance`{.action} drop down menu in order to visualize GPU me
 
 Now we have a monitoring working stack and a dashboard for visualize our data, it's time to run an application in order to retrieve GPU metrics and viualize interesting data.
 
-As a complex and interesting application using GPU, you can use the standard [DeepStream Intelligent Video Analytics Demo](https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/video-analytics-demo) available on the [NVIDIA NGC registry](https://catalog.ngc.nvidia.com/). 
+As a complex and interesting application using GPU, you can use the standard [DeepStream Intelligent Video Analytics Demo](https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/video-analytics-demo){.external} available on the [NVIDIA NGC registry](https://catalog.ngc.nvidia.com/){.external}. 
 
 This is an easy to deploy video analytics demo that allows you to demo GPU accelerated video analytics. The container is based on the NVIDIA DeepStream container and leverages it's built-in SEnet with resnet18 backend.
 
