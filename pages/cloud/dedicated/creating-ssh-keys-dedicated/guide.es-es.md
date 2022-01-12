@@ -152,13 +152,13 @@ Elimine la clave del usuario al que se le va a revocar el acceso en el archivo �
 
 El panel de control de OVHcloud le permite almacenar las claves públicas creadas utilizando uno de los tipos de cifrado admitidos (actualmente RSA, ECDSA y ED25519). 
 
-Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `«Productos y servicios»`{.action}.
+Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Gestión de servicios`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-En «Mis servicios», cambie a la pestaña `«Claves SSH»`{.action} y haga clic en `«Añadir una clave SSH»`{.action}.
+En «Mis servicios», cambie a la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Seleccione «Dedicada» en el menú desplegable.
 
@@ -166,7 +166,7 @@ En la nueva ventana, introduzca un id. (un nombre de su elección) para la clave
 
 ![SSH key control panel](images/SSH_keys_panel_3.png){.thumbnail}
 
-Si ha copiado el resultado completo, ya debería estar incluido el identificador después de la clave. Tenga en cuenta que, para almacenar la clave, siempre deberá especificar el identificador después de la clave pegada. Se trata de un requisito del panel de control de OVHcloud (véase el formato de ejemplo anterior). Haga clic en `«Confirmar»`{.action} para almacenar su clave pública.
+Si ha copiado el resultado completo, ya debería estar incluido el identificador después de la clave. Tenga en cuenta que, para almacenar la clave, siempre deberá especificar el identificador después de la clave pegada. Se trata de un requisito del panel de control de OVHcloud (véase el formato de ejemplo anterior). Haga clic en `Confirmar`{.action} para almacenar su clave pública.
 
 > [!primary]
 >

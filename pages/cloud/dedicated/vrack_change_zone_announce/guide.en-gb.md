@@ -9,7 +9,7 @@ section: vRack
 
 ## Objective
 
-The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVH dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
+The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
@@ -41,14 +41,14 @@ In this example, the tested IP address is currently announced to **Roubaix**. Th
 
 ### Step 2: Change the announcement zone of the IP block
 
-Go to <https://api.ovh.com/console/>, then sign in with your OVH customer ID. Use the API below to change the announcement of the IP block.
+Go to <https://api.ovh.com/console/>, then sign in with your OVHcloud customer ID. Use the API below to change the announcement of the IP block.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the “Cloud” section, then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >
