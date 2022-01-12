@@ -55,7 +55,7 @@ Below is how to revert to or clear snapshots.
 #### Revert to Snapshot
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Snapshot`{.action} menu, select `Manage Snapshots`{.action}.
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
 
 ![MANAGE](images/en03manage.png){.thumbnail}
 
@@ -80,11 +80,29 @@ You can click `Done`{.action} as your VM has been recerted to the point chosen.
 
 #### Clear Snapshot
 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+
+![MANAGE](images/en03manage.png){.thumbnail}
 
 
+Check the snapshot tree and select the one you wish to delete.<br>
+Click on `Delete`{.action}.<br>
+*You can also clear all snapshots by clicking `Delete All`{.action}.*
+
+![Delete](images/en06delete.png){.thumbnail}
 
 
+Confirm by clicking `OK`{.action}.
 
+![CONFIRM](images/en07confirm.png){.thumbnail}
+
+
+You can click `Done`{.action} as your snapshot was cleared.
+
+> [!primary]
+>
+> If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
 
 
 ## Go further
