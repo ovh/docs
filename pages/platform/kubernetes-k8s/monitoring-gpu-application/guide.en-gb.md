@@ -50,8 +50,8 @@ And you also need to follow [Deploying a GPU application on OVHcloud Managed Kub
 
 In this guide you will:
 
-- install Prometheus operator (it will install Prometheus & Grafana)
-- use NVIDIA’s Data Center GPU Manager (DCGM) to expose GPU metrics for Prometheus
+- install Prometheus operator (it will install [Prometheus](https://prometheus.io/) & [Grafana](https://grafana.com/))
+- use [NVIDIA’s Data Center GPU Manager (DCGM)](https://developer.nvidia.com/dcgm) to expose GPU metrics for Prometheus
 - deploy an application to demonstrate GPU accelerated Inference and generate traffic
 - visualize metrics
 
