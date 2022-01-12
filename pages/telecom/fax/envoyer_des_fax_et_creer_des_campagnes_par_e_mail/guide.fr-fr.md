@@ -77,7 +77,7 @@ Le **déroulement** de la **campagne** se fait par **mail** : un e-mail est envo
 
 ### **Les options supplémentaires** {#les-options-supplémentaires}
 
-Deux options sont proposées pour l'envoi par mail :
+Trois options sont proposées pour l'envoi par mail :
 
 -   **La qualité:**il y a le choix entre plusieurs qualités d'envoi :
     -   -   **normal** : utilisée pour les lignes Ecofax Perso ;
@@ -89,6 +89,10 @@ Cette option se définit dans le corps du mail sous cette forme : **qualite:best
 -   **L'envoi différé:** permet de programmer à l'avance l'envoi d'un fax.
 
 Cette option se définit dans le corps du mail sous cette forme : **date:21-06-2015 15:15:00**.
+
+-   **Modifier le numéro de l'expéditeur:** permet de choisir le numéro de l'expéditeur qui sera affiché pour l'envoi du FAX aux destinataires.
+
+Cette option se définit dans le corps du mail sous cette forme : **cnum:00XXXXXXX**.
 
 ------------------------------------------------------------------------
 
