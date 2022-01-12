@@ -73,6 +73,10 @@ Confirm by clicking `OK`{.action}.
 
 You can click `Done`{.action} as your VM has been recerted to the point chosen.
 
+> [!primary]
+>
+> If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing `Revert to Latest Snapshot`{.action} in the `Snapshots`{.action} menu.
+
 
 #### Clear Snapshot
 
