@@ -1,12 +1,12 @@
 ---
-title: How to manage your 1-click module?
+title: How to manage your 1-click module
 excerpt: Find out how to manage your 1-click module in the OVHcloud Control Panel
 slug: 1-click-module-management
 section: CMS
 order: 2
 ---
 
-**Last updated 21th December 2021**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -22,9 +22,9 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ## Requirements
 
-- a [Web Cloud hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) that allows you to install a 1-click module
-- a 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](https://docs.ovh.com/sg/en/hosting/web_hosting_web_hosting_modules/))
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/) that allows you to install a 1-click module
+- A 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](https://docs.ovh.com/sg/en/hosting/web_hosting_web_hosting_modules/))
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
@@ -58,7 +58,7 @@ In both cases, you will receive an email containing a link to reset your passwor
 
 > [!primary]
 >
-> **What can you do if you did not receive the email to reset the admin password of your website ?**
+> **What can you do if you did not receive the email to reset the admin password of your website?**
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
@@ -78,7 +78,7 @@ Then, click on the `...`{.action} button to the right of the line related to you
 
 > [!warning]
 >
-> Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/sg/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB key or external hard drive, following the instructions in this [guide](https://docs.ovh.com/sg/en/hosting/export-a-website/).
+> Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/sg/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/sg/en/hosting/export-a-website/).
 >
 
 #### Step 1: identify the database linked to your module <a name="step1"></a>
@@ -118,7 +118,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-sg/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
+To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
 
 Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 
@@ -126,9 +126,9 @@ Before attempting to install a new module again, verify that the previously requ
 
 Secure your website by following the instructions in this [guide](https://docs.ovh.com/sg/en/hosting/secure-website/).
 
-Add CAPTCHA-type testing tools to the forms on your website.
+Add CAPTCHA-type verification tools to the forms on your website.
 
-Do not install plugins or templates that have not been recommended by the official website or community of your CMS:
+Do not install plugins or templates that have not been recommended by the official website or the community of your CMS:
 
 - [WordPress](https://wordpress.org/){.external}
 - [Joomla](https://community.joomla.org/){.external}
@@ -141,4 +141,4 @@ Do not install plugins or templates that have not been recommended by the offici
 
 For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 
-Join our community on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.
