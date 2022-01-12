@@ -169,7 +169,7 @@ Sauvegardez cette modification.
 
 La modification du mot de passe de votre base de données s'effectuera dans deux endroits différents de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), selon que votre base est associée à un [hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) ou à une offre [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/).
 
-Vous devrez donc [identifier de façon certaine](#step3) la base de données de votre site, avant toute modification.
+Vous devrez donc [identifier de façon certaine](#step3) la base de données de votre site avant toute modification.
 
 #### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
 
