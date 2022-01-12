@@ -1,7 +1,7 @@
 ---
 title: Take a snapshot or a clone
 excerpt: ''
-slug: take_a_snapshot_or_a_clone
+slug: snapshot_and_clone
 section: Maintenance and monitoring
 ---
 
