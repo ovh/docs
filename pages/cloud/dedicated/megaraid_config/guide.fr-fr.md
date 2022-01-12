@@ -65,7 +65,7 @@ df -h
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
-Recherchez « Boot (OS) » dans la zone `Informations générales`{.action} et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
+Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
 
 ![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
 

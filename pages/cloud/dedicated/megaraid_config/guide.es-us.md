@@ -27,7 +27,7 @@ El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es 
 
 ### Usando el panel de control de OVHcloud
 
-En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) .external}, haga clic en el menú `Dedicado` {.action} y seleccione su servidor.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) .external}, seleccione el servidor en la sección `Bare Metal Cloud`{.action} y, seguidamente, `Servidores dedicados`{.action}.
 
 A continuación, en la pestaña `Información general`{.action}, haga clic en el botón `Reinstalar` {.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
 
@@ -61,15 +61,16 @@ df -h
 
 ### Usando el modo de rescate
 
-En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en el menú `Dedicado`{.action} y seleccione su servidor.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, seleccione el servidor en la sección `Bare Metal Cloud`{.action} y, seguidamente, `Servidores dedicados`{.action}.
 
-En la pestaña `Información general` {.action}, haga clic en el botón `Modificar` {.action} para cambiar el sistema de boot.
+Busque « Boot » en la zona **Información general** y haga clic en `...`{.action} y luego seleccione `Editar`{.action} para cambiar el sistema de arranque.
 
 ![megaraid](images/rescue_mode_raid0_1.png){.thumbnail}
 
-A continuación, seleccione `Boot en modo de rescate` {.action} luego seleccione `rescue64-pro` {.action} de la lista desplegable.
+A continuación, seleccione `Arrancar en modo rescue`{.action} luego seleccione `rescue64-pro`{.action} de la lista desplegable.
 
-Ahora, escriba su dirección de correo electrónico en el campo `Obtener su nombre de usuario actualizado` {.action}.
+En el campo **Recibir las claves del modo seleccionado en la siguiente dirección de correo electrónico:**, especifique otra dirección de correo electrónico si no desea que se envíen las claves de acceso a la dirección principal de su cuenta de OVHcloud.
+
 
 ![megaraid](images/rescue_mode_raid0_02.png){.thumbnail}
 
@@ -77,7 +78,10 @@ Haga clic en `Siguiente`{.action} y luego haga clic en `Confirmar`{.action} en l
 
 ![megaraid](images/rescue_mode_raid0_3.png){.thumbnail}
 
-Haga clic en el botón `Reboot`{.action} en el [Panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. 
+Una vez finalizada la edición, haga clic en `...`{.action} a la derecha de "Estado" en la zona titulada **Estado de los servicios.**
+
+Haga clic en el botón `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos.
+ 
 
 ![megaraid](images/server_installation_raid0_6.png){.thumbnail}
 

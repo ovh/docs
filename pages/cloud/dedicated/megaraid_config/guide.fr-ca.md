@@ -31,7 +31,7 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
-Recherchez « Système (OS) » dans la zone `Informations générales`{.action} et cliquez sur `...`{.action} puis sur `Installer`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
+Recherchez « Système (OS) » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Installer`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
 
 Sélectionnez **Installer à partir d'un template OVH** puis cliquez sur `Suivant`{.action}.
 
@@ -65,7 +65,7 @@ df -h
 
 Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}.
 
-Recherchez « Boot (OS) » dans la zone `Informations générales`{.action} et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
+Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action} pour changer le système de démarrage.
 
 ![MegaRAID](images/rescue_mode_raid0_1.png){.thumbnail}
 
