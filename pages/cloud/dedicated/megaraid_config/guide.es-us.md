@@ -29,9 +29,9 @@ El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es 
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) .external}, seleccione el servidor en la sección `Bare Metal Cloud`{.action} y, seguidamente, `Servidores dedicados`{.action}.
 
-A continuación, en la pestaña `Información general`{.action}, haga clic en el botón `Reinstalar` {.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
+A continuación, en la pestaña **Información general**, haga clic en el botón `Reinstalar`{.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
 
-Ahora seleccione  **Instalar desde una plantilla de OVHcloud** y luego haga clic en Siguiente {.action}. 
+Ahora seleccione  **Instalar desde una plantilla de OVHcloud** y luego haga clic en `Siguiente`{.action}. 
 
 ![megaraid](images/server_installation_raid0_1.png){.thumbnail}
 
