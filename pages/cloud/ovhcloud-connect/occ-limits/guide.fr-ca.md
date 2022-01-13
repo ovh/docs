@@ -6,7 +6,7 @@ section: Ressources techniques
 order: 1
 ---
 
-**Dernière mise à jour 07/092020**
+**Dernière mise à jour 13/01/2022**
 
 ## Objectif
 
@@ -20,6 +20,18 @@ order: 1
 * 10GBase-LR pour 10Gb
 * Jumbo Frame: jusqu'à 9000 bytes
 * Auto-négociation non supportée
+
+### Limitations techniques
+
+#### Mode Layer 2
+
+* Le nombre d'adresses MAC coté client est limité à 512 par port
+
+#### Mode Layer-3
+
+* Chaque EntryPoint/POP ne prend en charge qu’une seule session BGP (pas de Multihop eBGP)
+* Chaque EndPoint/DC prend en charge jusqu’à 4 peers BGP
+* Jusqu’à 100 préfixes peuvent être annoncés par session BGP
 
 ### Fonctionnalités non supportées
 
@@ -42,10 +54,6 @@ order: 1
 * eBGP Multi-Hop
 * iBGP
 * Routage statique sur EntryPoint/POP
-
-### Fonctionnalités prochainement disponibles
-
-* IPv6
 
 ### Problèmes connus
 
