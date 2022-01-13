@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated January 12, 2021.**
+**Last updated January 13, 2021.**
 
 ## Objective
 
@@ -36,7 +36,7 @@ In this tutorial we will show you how to monitor a GPU application on an OVHclou
 ![GPU Metrics Visualization](images/gpu-metrics-visualization.png)
 
 GPUs provide compute power to drive AI/ML & Deep Learning tasks with intensive calculations such as image/object recognition, natural language processing (NLP), as well as other compute-intensive tasks such as video transcoding and image processing. Using GPUs with Kubernetes allows you to extend the scalability of Kubernetes to AI/ML applications.
-But, the cost of GPUs is high. If each application uses a dedicated GPU in model prediction scenarios, computing resources can be wasted. It is therefore important to monitor GPU usage in order to be responsive and to be able to make the right decisions and optimize usage.
+It is however always important to keep the costs of GPU in mind. If each application uses a dedicated GPU in model prediction scenarios, computing resources can be wasted. It is therefore important to monitor GPU usage in order to be responsive and to be able to make the right decisions and optimize usage.
 
 ## Before you begin
 
@@ -74,7 +74,7 @@ nvidia-dcgm-exporter-rcq6t   1/1     Running   0          18d
 
 The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator){.external} provides Kubernetes native deployment and management of Prometheus and related monitoring components.
 
-![Prometheus Architecture](images/prometheus-architecture.png)
+![Prometheus Architecture](images/prometheus-scraping-schema.png)
 
 The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana dashboard, to visualize our metrics in a friendly user way.
 
@@ -241,7 +241,7 @@ Grafana URL: http://51.178.69.167
 
 Open your browser and go to the Prometheus interface.
 
-As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already started publishing the metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar and click on `Execute`{.action} button to determine if the GPU metrics are visible:
+As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already have started publishing metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar and click on `Execute`{.action} button to determine if the GPU metrics are visible:
 
 ![Prometheus](images/prometheus.png)
 
