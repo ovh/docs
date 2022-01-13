@@ -23,6 +23,10 @@ Ce guide vous explique comment basculer une IP Failover d'une instance à une au
 
 ## En pratique 
 
+> [!primary]
+> Une IP Fail Over ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
+>
+
 ### Migration de l'IP Fail Over
 
 Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le service Public Cloud concerné. Sélectionnez ensuite Failover IP dans la partie **Network** .

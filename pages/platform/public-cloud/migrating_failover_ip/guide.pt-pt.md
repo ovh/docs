@@ -27,6 +27,10 @@ Este guia explica como poderá migrar um IP Failover de uma instância para outr
 
 ## Instruções
 
+> [!primary]
+> Um IP Failover não pode ser migrado de uma zona para outra. Por exemplo, um IP situado no datacenter SBG poderá ser migrado para GRA ou RBX mas não poderá ser migrado para BHS.
+>
+
 ### Migração do IP Failover
 
 Em primeiro lugar, aceda ao [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Public Cloud`{.action} e selecione o serviço Public Cloud em causa. De seguida, selecione o Failover IP na secção **Network**.
