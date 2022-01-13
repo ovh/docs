@@ -24,13 +24,17 @@ We will demonstrate how to use vSphere and OS management tools to add space to y
 
 ## Instructions
 
-Before proceeding with this type of change, we recommend a full backup or a clone of the virtual machine.
+> [!warning]
+>
+> Before proceeding with this type of change, we recommend a full backup or a clone of the virtual machine.
+>
+
 
 ### Windows VM
 
 In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
 
-![Menu](images/en01dash.png){.thumbnail}
+![MENU](images/en01dash.png){.thumbnail}
 
 
 On the left side, navigate to the VM you wish to modify, right click on it and select `Edit Settings`{.action}.
@@ -38,12 +42,96 @@ On the left side, navigate to the VM you wish to modify, right click on it and s
 ![EDIT](images/en02vm.png){.thumbnail}
 
 
+Find the disk you are expanding and modify the size value as needed (in our case, changed the value from 80 to 100 Gb).<br>
+Click `OK`{.action}.
+
+![EDIT](images/en03hdd.png){.thumbnail}
 
 
+You can verify the change was applied in your recent tasks view.
+
+![EDIT](images/en04task.png){.thumbnail}
 
 
+Log on the VM and go to the Disk Management console.<br>
+One simple way to do it is to right click on Start and select `Disk Management`{.action}.
+
+![WIN](images/en05start.png){.thumbnail}
 
 
+In the management console, you can see there is 20GB of unallocated space, corresponding to the space added to the virtual disk previously.
+
+![WIN](images/en06unallocated.png){.thumbnail}
+
+
+Right click on the existing logical disk and select `Extend Volume`{.action}.
+
+![WIN](images/en07extend.png){.thumbnail}
+
+
+Click `Next`{.action} in the first wizard window.<br>
+In the second window, the whole available space will be selected by default. It can be modified if needed. Click `Next`{.action}.<br>
+Click `Finish`{.action} in the last window.
+
+![WIN](images/en08wiz.png){.thumbnail}
+
+
+You can now see your disk expanded and available.
+
+![WIN](images/en09done.png){.thumbnail}
+
+
+### Linux VM
+
+For Linux VMs, we'll use a repartitionning utility.
+
+In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
+
+![MENU](images/en01dash.png){.thumbnail}
+
+
+On the left side, navigate to the VM you wish to modify, right click on it and select `Edit Settings`{.action}.
+
+![EDIT](images/en02vm.png){.thumbnail}
+
+
+Find the disk you are expanding and modify the size value as needed (in our case, changed the value from 80 to 100 Gb).<br>
+Click `OK`{.action}.
+
+![EDIT](images/en03hdd.png){.thumbnail}
+
+
+You can verify the change was applied in your recent tasks view.
+
+![EDIT](images/en04task.png){.thumbnail}
+
+
+Log on the VM and go to the Disk Management console.<br>
+One simple way to do it is to right click on Start and select `Disk Management`{.action}.
+
+![WIN](images/en05start.png){.thumbnail}
+
+
+In the management console, you can see there is 20GB of unallocated space, corresponding to the space added to the virtual disk previously.
+
+![WIN](images/en06unallocated.png){.thumbnail}
+
+
+Right click on the existing logical disk and select `Extend Volume`{.action}.
+
+![WIN](images/en07extend.png){.thumbnail}
+
+
+Click `Next`{.action} in the first wizard window.<br>
+In the second window, the whole available space will be selected by default. It can be modified if needed. Click `Next`{.action}.<br>
+Click `Finish`{.action} in the last window.
+
+![WIN](images/en08wiz.png){.thumbnail}
+
+
+You can now see your disk expanded and available.
+
+![WIN](images/en09done.png){.thumbnail}
 
 
 
