@@ -5,7 +5,7 @@ section: Tutorials
 order: 9
 ---
 
-**Last updated 11th May 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
@@ -39,14 +39,14 @@ The CLI provides a useful `mount` command for accessing mount data.
 webpaas mount:list
 ```
 
-Downloading a mount is then as simple as running the following:
+Download a mount by running the following:
 
 ```bash
 webpaas mount:download
 ```
 
 ### Using rsync
-To use `rsync` to download each directory, we can use the following commands.  The `webpaas ssh --pipe` command will return the SSH URL for the current environment as an inline string that `rsync` can recognize. To use a non-default environment, use the `-e` switch after `--pipe`.  Note that the trailing slash on the remote path means `rsync` will copy just the files inside the specified directory, not the directory itself.
+To use `rsync` to download each directory, we can use the following commands. The `webpaas ssh --pipe` command will return the SSH URL for the current environment as an inline string that `rsync` can recognize. To use a non-default environment, use the `-e` flag with an environment name after `--pipe`. Note that the trailing slash on the remote path means `rsync` will copy just the files inside the specified directory, not the directory itself.
 
 ```bash
 rsync -az `webpaas ssh --pipe`:/app/private/ ./private/
@@ -82,7 +82,7 @@ You can access the content of the environment variable through the management co
 
 In that case, you can run:
 `webpaas ssh -p <project id> -e <environment>`
-To access all the environment variables's values
+to access all the environment variables's values
 
 and `webpaas ssh -p <project id> -e <environment> "echo \$PLATFORM_VARIABLES | base64 -d | jq"` to access the `PLATFORM_VARIABLES`'s values.
 

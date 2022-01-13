@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 31st March 2021**
+**Last updated 13th January 2022**
 
 
 ## Clone submodules during deployment
@@ -50,7 +50,7 @@ E: Error validating submodules in tree:
     - git@github.com:orocommerce/orocommerce.git: HangupException: The remote server unexpectedly closed the connection.
 ```
 
-Since the Web PaaS Git server cannot connect to Github via SSH without being granted an SSH key to do so, you should not be using an SSH URL: ``git@github.com:...``, but you should use an HTTPS URL instead: ``https://github.com/...``.
+Since the Web PaaS Git server cannot connect to GitHub via SSH without being granted an SSH key to do so, you should not use an SSH URL: ``git@github.com:...``, but you should use an HTTPS URL instead: ``https://github.com/...``.
 
 ## Use of private git repositories
 
@@ -62,7 +62,7 @@ GitProtocolError: unexpected http resp 401 for https://bitbucket.org/myusername/
 
 To fix this, you need to:
 
-1\. Change your `.gitmodules` file from the HTTPS syntax to the SSH syntax, e.g.
+1\. Change your `.gitmodules` file from HTTPS syntax to SSH syntax, e.g.
 
 
     from:
@@ -81,7 +81,7 @@ To fix this, you need to:
     url=git@bitbucket.org:myusername/mymodule.git
 ```
 
-2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](../development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
+2\. Add the public key for the project from the project settings **Deploy Key** tab in the Web PaaS management console (see more about [private repositories](../development-private-repository)), which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html), [GitHub documentation](https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys), or [GitLab documentation](https://docs.gitlab.com/ee/user/project/deploy_keys/).
 
 
 

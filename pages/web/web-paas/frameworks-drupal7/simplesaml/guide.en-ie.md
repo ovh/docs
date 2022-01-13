@@ -4,7 +4,7 @@ slug: simplesaml
 section: Drupal7
 ---
 
-**Last updated 11th May 2021**
+**Last updated 13th January 2022**
 
 
 
@@ -29,8 +29,8 @@ The SimpleSAML client uses additional cookies besides the Drupal session cookie 
     type: upstream
     upstream: "app:http"
     cache:
-      enabled: true
-      cookies: ['/^SS?ESS/', '/^Drupal.visitor/', 'SimpleSAMLSessionID', 'SimpleSAMLAuthToken']
+        enabled: true
+        cookies: ['/^SS?ESS/', '/^Drupal.visitor/', 'SimpleSAMLSessionID', 'SimpleSAMLAuthToken']
 ```
 
 Commit this change to the Git repository.
@@ -156,7 +156,7 @@ If SimpleSAML is misconfigured it is possible to find yourself locked out of the
 webpaas ssh "cd public && drush vset simplesamlphp_auth_activate 0"
 ```
 
-Alternatively you could log into the server and run the drush command there yourself.
+Alternatively you could log into the server and run the Drush command there yourself.
 
 If that doesn't work it is likely that the configuration is "pinned" using Features or via `settings.php`.  Instead disable the module entirely, then remove the "pin" and re-enable it.
 

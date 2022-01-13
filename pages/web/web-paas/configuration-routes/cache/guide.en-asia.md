@@ -4,7 +4,7 @@ slug: cache
 section: Routes
 ---
 
-**Last updated 31st March 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
@@ -13,7 +13,7 @@ Web PaaS supports HTTP caching at the server level. Caching is enabled by defaul
 
 The cache can be controlled using the `cache` key in your `.platform/routes.yaml` file.
 
-If a request is cacheable, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
+If a request is can be cached, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
 
 When caching is on...
 
@@ -58,7 +58,7 @@ https://{default}/:
 
 ### The cache key
 
-If a request is cacheable, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
+If a request can be cached, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
 
 There are two parameters that let you control this key: `headers` and `cookies`.
 
@@ -87,7 +87,7 @@ If the `If-None-Match` header is sent in the conditional request when `Etag` hea
 
 ### Flushing
 
-The HTTP cache does not support a complete cache flush, however, you can invalidate the cache by setting `cache: false`.
+The HTTP cache does not support a complete cache flush, however, you can invalidate the cache by setting `cache: false`. Alternatively, the cache clears on a rebuild, so triggering a rebuild (pushing a new commit) will effectively cause a complete cache flush.
 
 ## Cache configuration properties
 
@@ -113,8 +113,8 @@ For example, if the `headers` key is the following, Web PaaS will cache a differ
 
 ```yaml
 cache:
-  enabled: true
-  headers: ["Accept"]
+    enabled: true
+    headers: ["Accept"]
 ```
 
 > [!primary]  
@@ -131,7 +131,7 @@ The cache is only applied to `GET` and `HEAD` requests. Some headers trigger spe
 Header field | Cache behavior
 -------------|----------------
 `Cache-Control`|Responses with the `Cache-Control` header set to `Private`, `No-Cache`, or `No-Store` are not cached. All other values override `default_ttl`.
-`Vary`|A list of header fields to be taken into account when constructing the cache key. Multiple header fields can be listed, separted by commas. The Cache key is the union of the values of the Header fields listed in Vary header, and whatever's listed in the `routes.yaml` file.
+`Vary`|A list of header fields to be taken into account when constructing the cache key. Multiple header fields can be listed, separated by commas. The Cache key is the union of the values of the Header fields listed in Vary header, and whatever's listed in the `routes.yaml` file.
 `Set-Cookie`|Not cached
 `Accept-Encoding`, `Connection`, `Proxy-Authorization`, `TE`, `Upgrade`|Not allowed, and will throw an error
 `Cookie`|Not allowed, and will throw an error. Use the `cookies` value, instead.
@@ -145,12 +145,13 @@ A list of allowed cookie names to include values for in the cache key.
 
 All cookies will bypass the cache when using the default (`['*']`) or if the `Set-Cookie` header is present.
 
-For example, for the cache key to depend on the value of the `foo` cookie in the request.  Other cookies will be ignored.
+For example, for the cache key to depend on the value of the `foo` cookie in the request.
+Other cookies will be ignored.
 
 ```yaml
 cache:
-  enabled: true
-  cookies: ["foo"]
+    enabled: true
+    cookies: ["foo"]
 ```
 
 > [!primary]  
@@ -162,15 +163,20 @@ cache:
 > * `['cookie_1','cookie_2']`: A list of allowed cookies to include in the cache key. All other cookies are ignored.
 > 
 
-A cookie value may also be a regular expression.  An entry that begins and ends with a `/` will be interpreted as a PCRE regular expression to match the cookie name.  For example:
+A cookie value may also be a regular expression.
+An entry that begins and ends with a `/` will be interpreted as a PCRE regular expression to match the cookie name.
+For example:
 
 ```yaml
 cache:
-  enabled: true
-  cookies: ['/^SS?ESS/']
+    enabled: true
+    cookies: ['/^SS?ESS/']
 ```
 
-Will cause all cookies beginning with `SESS` or `SSESS` to be part of the cache key, as a single value.  Other cookies will be ignored for caching.  If your site uses a session cookie as well as 3rd party cookies, say from an analytics service, this is the recommended approach.
+Will cause all cookies beginning with `SESS` or `SSESS` to be part of the cache key, as a single value.
+Other cookies will be ignored for caching.
+If your site uses a session cookie as well as 3rd party cookies, say from an analytics service,
+this is the recommended approach.
 
 ### `default_ttl`
 
@@ -180,7 +186,8 @@ The cache duration is decided based on the `Cache-Control` response header value
 
 The `default_ttl` only applies to **non-static responses**, that is, those generated by your application.
 
-To set a cache lifetime for static resources configure that in your [.platform.app.yaml](../../configuration-app/web#locations) file. All static assets will have a Cache-Control header with a max age defaulting to 0 (which is the default for `expires` in the `.platform.app.yaml`).
+To set a cache lifetime for static resources configure that in your [app configuration](../../configuration-app/app-reference#locations).
+All static assets have a Cache-Control header with a max age defaulting to 0 (which is the default for `expires`).
 
 > [!primary]  
 > **Type:** integer
@@ -203,22 +210,22 @@ If you need fine-grained caching, you can set up caching rules for several route
 
 ```yaml
 https://{default}/:
-  type: upstream
-  upstream: app:http
-  cache:
-    enabled: true
+    type: upstream
+    upstream: app:http
+    cache:
+        enabled: true
 
 https://{default}/foo/:
-  type: upstream
-  upstream: app:http
-  cache:
-    enabled: false
+    type: upstream
+    upstream: app:http
+    cache:
+        enabled: false
 
 https://{default}/foo/bar/:
-  type: upstream
-  upstream: app:http
-  cache:
-    enabled: true
+    type: upstream
+    upstream: app:http
+    cache:
+        enabled: true
 ```
 
 With this configuration, the following routes are cached:
@@ -243,12 +250,13 @@ And the following routes are **not** cached:
 
 ### Allowing only specific cookies
 
-Some applications use cookies to invalidate cache responses, but expect other cookies to be ignored. This is a simple case of allowing only a subset of cookies to invalidate the cache.
+Some applications use cookies to invalidate cache responses, but expect other cookies to be ignored.
+This is a case of allowing only a subset of cookies to invalidate the cache.
 
 ```yaml
 cache:
-  enabled: true
-  cookies: ["MYCOOKIE"]
+    enabled: true
+    cookies: ["MYCOOKIE"]
 ```
 
 ### Cache HTTP and HTTPS separately using the `Vary` header

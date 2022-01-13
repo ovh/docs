@@ -1,83 +1,130 @@
 ---
-title: Your application
+title: Create apps
 slug: configuration-app
 section: Configuration
 order: 3
 ---
 
-**Last updated 26th March 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
 
-You control your application and the way it will be built and deployed on Web PaaS via a single configuration file, `.platform.app.yaml`, located at the root of your application folder inside your Git repository.
+Control your apps and how they're built and deployed on Web PaaS with YAML configuration.
 
 
 ![Applications](images/applications.png "0.50")
 
-The `.platform.app.yaml` file is extremely flexible.  Depending on your needs it could be less than 10 lines long or over 100.  The only required keys are `name`, `type`, `disk`, and at least one "instance definition", either a `web` or `worker` block.  All others are optional.
+Within a single project, you can have one or more app and each app can have multiple instances.
+Instances are where the same code can be run with different configurations,
+such as one for external communication and one for background processes.
+All of the apps and instances are configured with the same syntax.
+You can find a [complete reference](./app-reference.md) of all possible settings.
 
-Your application code can generate one or more application instances. Web instances can be accessed from the outside world, while workers cannot and just run a persistent background process. Otherwise they are very similar.
+## A minimal application
 
-Different configuration properties can be applied to individual web and worker instances, or globally to all of them.  In the most typical case, with one web instance and no workers, it's common to just list each of the configuration directives below as a top-level property.  However, they can also be specified within the `web` or `worker` blocks to apply to just those instances.
+To create a very basic app, you need a few things:
 
-The following properties apply only at the global level, and cannot be replicated inside an instance definition.
+* A unique `name` not shared by any other app in the project.
+* The runtime `type` defining what language it uses.
+* A `disk` size for your deployed files.
+* A definition of how to handle requests from the outside `web`.
 
-* [`name`](name) *(required)* - Sets the unique name of the application container.
-* [`type`](type) *(required)* - Sets the container base image to use, including application language.
-* [`timezone`](timezone) - Sets the timezone of cron tasks in application container.
-* [`build`, `dependencies`, and `hooks`](build) - Control how the application gets compiled.  Note that this compilation happens before the application is copied into different instances, so any steps here will apply to all web and worker instances.
-* [`cron`](cron) - Defines scheduled tasks for the application.  Cron tasks will, technically, run as part of the web instance regardless of how many workers are defined.
-* [`source.root`](multi-app) - This nested value specifies the path where all code for the application lives.  It defaults to the directory where the `.platform.app.yaml` file is defined.  It is rarely needed except in advanced configurations.
+The following example shows such a basic setup for PHP:
 
-The following properties can be set at the top level of the `.platform.app.yaml` file and apply to all application instances, or set within a given instance definition and apply just to that one.  If set in both places then the instance-specific one will take precedence, and completely replace the global one.  That is, if you want to make a change to just one sub-property of one of the following keys you need to replicate the entire block.
+```yaml {location=".platform.app.yaml"}
+# The name of this application, which must be unique within the project.
+name: 'app'
 
-* [`size`](size) - Sets an explicit sizing hint for the application.
-* [`relationships`](relationships) - Defines connections to other services and applications.
-* [`access`](access) - Restricts SSH access with more granularity than the management console.
-* [`disk` and `mounts`](storage) *(required)* - Defines writable file directories for the application.
-* [`variables`](variables) - Sets environment variables that control application behavior.
-* [`firewall`](firewall) - Defines outbound firewall rules for the application.
+# The language and version for your app.
+type: 'php:8.0'
 
-The `.platform.app.yaml` file needs at least one of the following to define an instance, but may define both.
+# The size of the app's persistent disk (in MB).
+disk: 2048
 
-* [`web`](web) - Controls how the web application is served.
-* [`worker`](workers) - Defines alternate copies of the application to run as background processes.
+# The app's configuration when it's exposed to the web.
+web:
+    locations:
+        '/':
+            # The public directory relative to the app root.
+            root: 'web'
+            # The front-controller script which determines where to send non-static requests.
+            passthru: '/app.php'
+```
 
-## Available resources
+## Use multiple apps
 
-Each web or worker instance is its own running container, which takes its own resources.  The `size` key allows some control over how many resources each container gets and if omitted the system will select one of a few fixed sizes for each container automatically.  All application and service containers are given resources out of a common pool defined by your plan size.  That means the more containers you define, the fewer resources each one will get and you may need to increase your plan size.
+You might have multiple apps you want to run from a single Git repository,
+such as a RESTful web service and a front-end or a main website and a blog.
+In such cases, you configure each app separately and define the relationships among them.
+See the various ways to set up a [multi-app project](./multi-app.md).
 
-## Compression
+## Connect to services
 
-Web PaaS does not compress any dynamic responses generated by your application due to a [well known security issue](https://en.wikipedia.org/wiki/BREACH_%28security_exploit%29).  While your application can compress its own response, doing so when the response includes any user-specific information, including a session cookie, opens up an attack vector over SSL/TLS connections.  For that reason we recommend against compressing any generated responses.
+If you want to use one of the [databases or other services Web PaaS provides](../services/_index.md),
+set it up by following these steps:
 
-Requests for static files that are served directly by Web PaaS are compressed automatically using either gzip or brotli compression if:
+1\. Configure the service based on the documentation for that service.
 
-* The request headers for the file support gzip or brotli.
-* The file is served directly from disk by Web PaaS, not passed through your application.
+1\. Use the information from that service inside your app's [`relationships` definition](./app-reference.md#relationships)
+
+   to configure how your app communicates with the service.
+
+## Control the build and deploy process
+
+Your app generally needs to undergo some steps to be turned from the code in your Git repository into a running app.
+If you're running a PHP or Node.js app, this starts with the [build flavor](./app-reference.md#build),
+which runs a default set of tasks.
+Then any [global dependencies](./app-reference.md#dependencies) can be installed.
+
+Once these optional tasks are done, you can run [hooks](./hooks.md) at various points in the process.
+Hooks are places for your custom scripts to control how your app is built and deployed.
+
+## Configure what's served
+
+Once your app is built, it needs a defined way to communicate with the outside world.
+Define its behavior with a [`web` instance](./app-reference.md#web).
+There you can set what command runs every time your app is restarted,
+how dynamic requests are handled, and how to respond with static files.
+
+## Response compression
+
+Response compression reduces payload sizes and generally increases your app's response times.
+Dynamic responses generated by your app aren't compressed because of a [general security issue](https://en.wikipedia.org/wiki/BREACH).
+While your app can compress its own response,
+doing so when the response includes any user-specific information, including a session cookie,
+opens up an attack vector over SSL/TLS connections.
+For that reason, you generally shouldn't compress generated responses.
+
+Requests for static files that are served directly by Web PaaS are compressed automatically
+using either gzip or Brotli compression if:
+
+* The request headers for the file support gzip or Brotli compression.
+* The file is served directly from disk by Web PaaS and not passed through your application.
 * The file would be served with a cache expiration time in the future.
-* The file type is one of: html, javascript, json, pdf, postscript, svg, css, csv, plain text, or XML.
+* The file type is one of: HTML, JavaScript, JSON, PDF, PostScript, SVG, CSS, CSV, plain text, or XML.
 
-Additionally, if a file with a ".gz" or ".br" extension exists that will be served instead for the appropriate compression type regardless of the file type.  That is, a request for `styles.css` that accepts a gzipped file (according to the request headers) will automatically return the contents of `styles.css.gz` if it exists.  This approach supports any file type and offers some CPU optimization, especially if the cache lifetime is short.
+Also, if there is a request for a file and another file exists with the same name plus a `.gz` or `.br` extension,
+the compressed file is served regardless of the original file type.
+So a request for `styles.css` that accepts a gzipped file (according to the request headers)
+automatically returns a `styles.css.gz` file if it exists.
+This approach supports any file type and offers some CPU optimization, especially if the cache lifetime is short.
 
-## Example configuration
+## Comprehensive example
 
-An example of a minimalist `.platform.app.yaml` file for PHP, heavily commented, is below:
+The following example shows a setup for a PHP app with comments to explain the settings.
 
-```yaml
-# .platform.app.yaml
-
+```yaml {location=".platform.app.yaml"}
 # The name of this application, which must be unique within a project.
 name: 'app'
 
 # The type key specifies the language and version for your application.
-type: 'php:7.0'
+type: 'php:8.0'
 
-# On PHP, there are multiple build flavors available. Pretty much everyone
-# except Drupal 7 users will want the composer flavor.
-build:
-    flavor: composer
+# By default, composer 1 will be used. Specify composer 2 in the dependencies to get the latest version
+dependencies:
+    php:
+        composer/composer: '^2'
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -90,17 +137,17 @@ relationships:
 hooks:
     # Build hooks can modify the application files on disk but not access any services like databases.
     build: |
-        rm web/app_dev.php
+                rm web/app_dev.php
     # Deploy hooks can access services but the file system is now read-only.
     deploy: |
-        app/console --env=prod cache:clear
+                app/console --env=prod cache:clear
 
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
 # The 'mounts' describe writable, persistent filesystem mounts in the application.
-# The keys are directory paths relative to the application root. The values are a
+# The keys are directory paths relative to the application root. The values are a
 # mount definition. In this case, `web-files` is just a unique name for the mount.
 mounts:
     'web/files':
@@ -124,9 +171,3 @@ web:
             allow: true
             passthru: '/app.php'
 ```
-
-> [!primary]  
-> This configuration file is specific to one application. If you have multiple applications inside your Git repository (such as a RESTful web service and a front-end, or a main web site and a blog), you need `.platform.app.yaml` at the root of each application. See the [Multi-app](multi-app) documentation.
-> 
-
-

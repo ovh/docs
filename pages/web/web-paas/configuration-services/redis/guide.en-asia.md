@@ -4,7 +4,7 @@ slug: redis
 section: Services
 ---
 
-**Last updated 12th February 2021**
+**Last updated 13th January 2022**
 
 
 
@@ -14,11 +14,11 @@ Redis is a high-performance in-memory object store, well-suited for application 
 
 See the [Redis documentation](https://redis.io/documentation) for more information.
 
-Web PaaS supports two different Redis configurations: One persistent (useful for key-value application data) and one ephemeral (in-memory only, useful for application caching).  Aside from that distinction they are identical.
+Web PaaS supports two different Redis configurations: One persistent (useful for key-value application data) and one ephemeral (in-memory only, useful for application caching). Aside from that distinction they are identical.
 
 ## Supported versions
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  3.2 |  
 |  4.0 |  
@@ -29,11 +29,10 @@ Web PaaS supports two different Redis configurations: One persistent (useful for
 
 The following versions are available but are not receiving security updates from upstream, so their use is not recommended. They will be removed at some point in the future.
 
-| **Grid** | 
+| **Grid** |  **Dedicated Generation 3** |
 |----------------------------------|  
 |  2.8 |  
 |  3.0 |  
-
 
 > [!primary]  
 > Versions 3.0 and higher support up to 64 different databases per instance of the service, but Redis 2.8 is configured to support only a single database.
@@ -43,7 +42,7 @@ The following versions are available but are not receiving security updates from
 
 The `redis` service type is configured to serve as an LRU cache; its storage is not persistent.  It is not suitable for use except as a disposable cache.
 
-To add an Ephemeral Redis service, specify it in your `.platform/services.yaml` file like so:
+To add an ephemeral Redis service, specify it in your `.platform/services.yaml` file like so:
 
 
 ```yaml   
@@ -52,7 +51,11 @@ cacheredis:
 ```  
 
 
-Data in an Ephemeral Redis instance is stored only in memory, and thus requires no disk space.  When the service hits its memory limit it will automatically evict old cache items according to the [configured eviction rule](#eviction-policy) to make room for new ones.
+Data in an Ephemeral Redis instance is stored only in memory and thus requires no disk space. When the service hits its memory limit it will automatically evict old cache items according to the [configured eviction rule](#eviction-policy) to make room for new ones.
+
+Your app must not treat ephemeral Redis as permanent. Instead, the cache needs to be regenerated as necessary. For example, if a container is moved for a reason such as region maintenance, the `deploy` and `post_depoly` hooks won't be run and an app that treats the cache as permanent will show errors. The cache should be cleared each time the app is restarted, in the `start` key in [your web configuration](../../configuration-app/app-reference#commands).
+
+If your app needs to treat the cache as permanent, use [persistent Redis](#persistent-redis), which will save data to its volume even when the container is shut down.
 
 ## Persistent Redis
 
@@ -84,7 +87,7 @@ The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](../
     "scheme": "redis",
     "service": "redis6",
     "fragment": null,
-    "ip": "169.254.25.97",
+    "ip": "169.254.107.132",
     "hostname": "7mnenhdiz7ecraovljrba6pmiy.redis6.service._.eu-3.platformsh.site",
     "public": false,
     "cluster": "rjify4yjcwxaa-master-7rqtwti",
@@ -162,7 +165,7 @@ On the Ephemeral `redis` service it is also possible to select the key eviction 
 cache:
     type: redis:5.0
     configuration:
-      maxmemory_policy: allkeys-lru
+        maxmemory_policy: allkeys-lru
 ```
 
 The default value if not specified is `allkeys-lru`, which will simply remove the oldest cache item first.  Legal values are:
@@ -196,7 +199,7 @@ data:
 
 ```yaml
 relationships:
-  sessionstorage: "data:redis"
+    sessionstorage: "data:redis"
 
 variables:
     php:

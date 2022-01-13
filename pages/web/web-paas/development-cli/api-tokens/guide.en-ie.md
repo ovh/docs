@@ -1,59 +1,112 @@
 ---
-title: API tokens
+title: Authenticating with API tokens
 slug: api-tokens
 section: Cli
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 13th January 2022**
 
 
-## Obtaining a token
 
-The Web PaaS CLI can also be used from CI services or other automation tools, and supports an API Token authentication option for that purpose.
+## Objective  
 
-An API token can be created through the management console. Go to the "User" page from your account drop-down, then select the "Account Settings" tab, then "API Tokens".
+When setting up CI services and other automation tools,
+you may want to allow them to use the Web PaaS CLI to carry out certain tasks.
+Logging in via a browser is not an option in these cases.
 
-Click the "Create an API Token" link.
+To run the CLI from such a tool or on an app container, such as via a cron hook, set up an API token to authenticate.
 
-![API Token list](images/api-tokens-new.png "0.6")
+## Create a machine user
 
-Enter a name to easily identify your token in the future, in case of multiple tokens ("CLI automated" is one example).
-
-![API Token name field](images/api-tokens-name.png "0.6")
-
-Once done, the newly created token will be displayed at the top of the page, and can be copied to the clipboard using the Copy button. After this, you will not be able to view the API token again.
-
-![After creating an API token](images/api-tokens-view.png "0.6")
-
-Now set that token in an environment variable named `PLATFORMSH_CLI_TOKEN` on the system where the CLI will run.  Consult the documentation for your CI system to see how to do that.
-
-> [!primary]  
-> If running CLI commands from any automated system, including a Web PaaS cron task, we urge you to use the `--no-wait` flag on any commands that may take more than a second or two to avoid blocking the process.
-> 
-
-## Machine users
-
-For security reasons we recommend creating a dedicated machine user to run automation tasks such as taking backups, renewing SSL certificates or triggering source operations. We also strongly recommend creating a unique machine user for each project to be automated.
+For security reasons, we recommend creating a dedicated machine user to run automation tasks,
+such as taking backups and triggering source operations.
+We also strongly recommend creating a unique machine user for each project to be automated.
 
 Like human users, every machine user account needs its own unique email address.
 
-The machine user can be given a very restrictive set of permissions limited to just its needed tasks. Backups, for instance, require `Admin` access but no SSH key, while checking out code from a CI server to run tests on it would require an SSH key but only `Reader` access.
+The machine user can be given a very restrictive set of [access permissions](../../administration-users) limited to just its needed tasks.
+For example, backups require `Admin` access but no SSH key,
+while checking out code from a CI server to run tests on it would require an SSH key but only `Viewer` access.
 
 It will also show up in logs and activity streams as a separate entry from human users.
 
+To add the user:
 
-## Install the CLI on a Web PaaS environment
+1\. In a terminal, run `webpaas user:add email@example.com`, replacing the email with the one for your machine user.
 
-A common use case for an API token is to allow the Web PaaS CLI to be run on an app container, often via a cron hook.  An API token is necessary for authentication, but the CLI will be able to auto-detect the current project and environment.
+1\. (If not within a specific project) choose a project to add the user to.
 
-First, create a machine user (see above) that you invite to your project. Then, log in as that machine user to obtain an API token. Set this token as the [top-level](../../development-variables#top-level-environment-variables) environment variable `env:PLATFORMSH_CLI_TOKEN` either through the management console or via the CLI, like so:
+1\. Press `enter` to make the user a viewer of the entire project.
+
+1\. Assign the user the correct permissions for each environment type.
+
+   (See the [users documentation](../../administration-users) for more on access levels.)
+1\. Press `enter` to send the invitation.
+
+1\. In your email, click the link in the invitation to accept and then follow the steps to create an account.
+
+
+## Get a token
+
+Once you have a machine user in place, you want to assign an API token to it.
+
+To get an API token:
+
+1\. As the machine user, open the management console.
+
+1\. Click your username to open a menu and select **Account**. 
+
+1\. Go to the **API Tokens** tab.
+
+1\. Click **Create API Token**.
+
+
+   ![The Create API Token button in the console](images/api-tokens-new.png "0.6")
+
+1\. Enter a name to identify your token in the future if you have multiple tokens ("CLI automated" is one example).
+
+
+   ![Creating an API token with the name 'CI tests'](images/api-tokens-name.png "0.6")
+
+1\. Click **Copy** to copy the token to your clipboard.
+
+   Make sure to store the key safely as you can't view the API token again.
+
+   ![Viewing the API token after it's created](images/api-tokens-view.png "0.6")
+
+## Use the API token to authenticate the CLI
+
+Once you have the API token copied, you can use it for your automation tools.
+
+### In another CI system
+
+Set the token in an environment variable named `PLATFORMSH_CLI_TOKEN` on the system where the CLI will run.
+Consult the documentation for your CI system to see how to do that.
+
+> [!primary]  
+> 
+> If running CLI commands from any automated system,
+> we urge you to use the `--no-wait` flag on any commands that may take more than a second or two to avoid blocking the process.
+> 
+> 
+
+## On a Web PaaS environment
+
+To allow the Web PaaS CLI to be run on an app container, such as via a cron hook, use the API token.
+The CLI is able to auto-detect the current project and environment.
+
+Set the token as the [top-level](../../development-variables#top-level-environment-variables) environment variable `env:PLATFORMSH_CLI_TOKEN`
+either [through the management console](../../administration-web/configure-environment#variables) or via the CLI, like so:
 
 ```bash
-webpaas variable:create -e master --level environment --name env:PLATFORMSH_CLI_TOKEN --sensitive true --value 'your API token'
+webpaas variable:create -e <BRANCH_NAME> --level environment --name env:PLATFORMSH_CLI_TOKEN --sensitive true --value '<YOUR_API_TOKEN>'
 ```
 
 > [!primary]  
-> It is important to include the `env:` so as to expose `$PLATFORMSH_CLI_TOKEN` on its own as a top level Unix environment variable, rather than as a part of `$PLATFORM_VARIABLES` like normal environment variables.
+> 
+> It's important to include the `env:` so as to expose `$PLATFORMSH_CLI_TOKEN` on its own as a top level Unix environment variable,
+> rather than as a part of `$PLATFORM_VARIABLES` like normal environment variables.
+> 
 > 
 
 Second, add a build hook to your `.platform.app.yaml` file to download the CLI as part of the build process.
@@ -64,22 +117,29 @@ hooks:
         curl -fsS https://platform.sh/cli/installer | php
 ```
 
-This will download the CLI to a known directory, `.platformsh/bin`, which will be added to the PATH at runtime (via the .environment file). Because the API token is available, the CLI will now be able to run authenticated commands, acting as the user who created the token.
+This will download the CLI to a known directory, `.platformsh/bin`,
+which will be added to the PATH at runtime (via the .environment file).
+Because the API token is available, the CLI will now be able to run authenticated commands,
+acting as the user who created the token.
 
-You can now call the CLI from within the shell on the app container, or via a cron hook.  Note that if you want a cron to run only on the production environment you will need to wrap it in an if-check on the `$PLATFORM_BRANCH` variable, like so:
+You can now call the CLI from within the shell on the app container or via a cron hook.
+
+To run a cron only on the production environment, wrap it in an if-check on the `$PLATFORM_BRANCH` variable, like so:
 
 ```yaml
 crons:
     backup:
         spec: '0 5 * * *'
         cmd: |
-            if [ "$PLATFORM_BRANCH" = master ]; then
+            if [ "$PLATFORM_ENVIRONMENT_TYPE" = production ]; then
                 webpaas backup:create --yes --no-wait
             fi
 ```
 
-(If you have renamed the default branch from `master` to something else, modify the above example accordingly.)
-
 > [!primary]  
-> Seriously, please use `--no-wait` for all CLI commands placed in a cron hook. Failure to do so may result in long deploy times and site downtime.
+> 
+> If running CLI commands from any automated system, including a Web PaaS cron task,
+> we urge you to use the `--no-wait` flag on any commands that may take more than a second or two to avoid blocking the process.
+> Failure to do so may result in long deploy times and site downtime.
+> 
 > 

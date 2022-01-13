@@ -5,7 +5,7 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 2nd June 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
@@ -23,12 +23,12 @@ Here is an example of a `.platform/services.yaml` file:
 
 ```yaml
 database1:
-  type: mysql:10.1
-  disk: 2048
+    type: mysql:10.1
+    disk: 2048
 
 database2:
-  type: postgresql:9.6
-  disk: 1024
+    type: postgresql:9.6
+    disk: 1024
 ```
 
 ## Configuration
@@ -54,21 +54,26 @@ E: Error parsing configuration files:
 ```
 
 Service types and their supported versions include:
-
+<!--
+To update the versions in this table, use docs/data/registry.json
+-->
 | **Service** | **`type`** | **Supported `version`** |
 |----------------------------------|---------------|-------------------------|
-| [Headless Chrome](headless-chrome) | `chrome-headless` | 73 |
+| [Headless Chrome](headless-chrome) | `chrome-headless` | 73, 80, 81, 83, 84, 86, 91 |
+| [Elasticsearch](elasticsearch) | `elasticsearch` | 7.9, 7.10 |
 | [InfluxDB](influxdb) | `influxdb` | 1.2, 1.3, 1.7, 1.8 |
 | [Kafka](kafka) | `kafka` | 2.1, 2.2, 2.3, 2.4, 2.5 |
-| [MariaDB](mysql) | `mariadb` | 10.0, 10.1, 10.2, 10.3, 10.4, 10.5 |
+| [MariaDB/MySQL](mysql) | `mariadb` | 10.0, 10.1, 10.2, 10.3, 10.4, 10.5 |
 | [Memcached](memcached) | `memcached` | 1.4, 1.5, 1.6 |
+| [MongoDB](mongodb) | `mongodb` |  |
 | [Network Storage](network-storage) | `network-storage` | 1.0 |
 | [Oracle MySQL](mysql) | `oracle-mysql` | 5.7, 8.0 |
 | [PostgreSQL](postgresql) | `postgresql` | 9.6, 10, 11, 12, 13 |
 | [RabbitMQ](rabbitmq) | `rabbitmq` | 3.5, 3.6, 3.7, 3.8 |
 | [Redis](redis) | `redis` | 3.2, 4.0, 5.0, 6.0 |
 | [Solr](solr) | `solr` | 7.7, 8.0, 8.4, 8.6 |
-| [Varnish](varnish) | `varnish` | 5.6, 6.0 |
+| [Varnish](varnish) | `varnish` | 5.1, 5.2, 6.0, 6.3 |
+| [Vault KMS](vault) | `vault-kms` | 1.6 |
 
 ### Disk
 
@@ -77,12 +82,31 @@ The `disk` attribute is the size of the persistent disk (in MB) allocated to the
 For example, the current default storage amount per project is 5GB (meaning 5120MB) which you can distribute between your application (as defined in `.platform.app.yaml`) and each of its services.  For memory-resident-only services such as `memcache` or `redis`, the `disk` key is not available and will generate an error if present.
 
 > [!primary]  
-> Currently we do not support downsizing the persistent disk of a service.
+> 
+> Downsizing a service's persistent disk isn't currently supported
+> in the [`eu.platform.sh`](../guides-general/region-migration)
+> and [`us.platform.sh`](../guides-general/region-migration) regions.
+> 
 > 
 
 ### Size
 
-By default, Web PaaS will allocate CPU and memory resources to each container automatically.  Some services are optimized for high CPU load, some for high memory load.  By default, Web PaaS will try to allocate the largest "fair" size possible to all services, given the available resources on the plan.  That is not always optimal, however, and you can customize that behavior on any service or on any application container.  
+By default, Web PaaS allocates CPU and memory resources to each service container automatically.
+Some services are optimized for high CPU load, some for high memory load.
+The largest "fair" size possible is allocated to all services given the available resources on the plan.
+You can customize the size for a specific service in production environments.
+
+To do so, set `size` to one of the following values:
+* `S`
+* `M`
+* `L`
+* `XL`
+* `2XL`
+* `4XL`
+
+The total resources allocated across all apps and services can't exceed what's in [your plan](../../overview/pricing/_index.md).
+
+Note that service containers in development environments are always set to size `S`.
 
 ## Service timezones
 
@@ -93,7 +117,9 @@ All services have their system timezone set to UTC by default.  In most cases th
 
 ## Using the services
 
-In order for a service to be available to an application in your project (Web PaaS supports not only multiple backends but also multiple applications in each project) you will need to refer to it in the [.platform.app.yaml](../configuration-app) file which configures the *relationships* between applications and services.
+In order for a service to be available to an application in your project
+(Web PaaS supports not only multiple backends but also multiple applications in each project),
+you need to refer to it in [your app configuration for relationships](../app/app-reference.md#relationships).
 
 ## Endpoints
 
@@ -183,6 +209,6 @@ To get the values to use, the easiest way is to run `webpaas ssh --pipe`.  That 
 
 `jyu7waly36ncj-master-7rqtwti--app@ssh.us.platform.sh`
 
-In this case, the username is `jyu7waly36ncj-master-7rqtwti--app` and the host is `ssh.us.platform.sh`.  Note that the host will vary per region, and the username will vary per-*environment*.
+In this case, the username is `jyu7waly36ncj-master-7rqtwti--app` and the host is `ssh.us.platform.sh`.  Note that the host will vary per region, and the username will vary per *environment*.
 
-In this example, we would configure our database application to setup a tunnel to `ssh.us.platform.sh` as user `jyu7waly36ncj-master-7rqtwti--app`, and then connect to the database on host `database.internal`, username `user`, empty password, and database name `main`.
+In this example, we would configure our database application to set up a tunnel to `ssh.us.platform.sh` as user `jyu7waly36ncj-master-7rqtwti--app`, and then connect to the database on host `database.internal`, username `user`, empty password, and database name `main`.

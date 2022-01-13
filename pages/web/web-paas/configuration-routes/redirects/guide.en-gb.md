@@ -4,7 +4,7 @@ slug: redirects
 section: Routes
 ---
 
-**Last updated 26th March 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
@@ -29,15 +29,15 @@ In the [`.platform/routes.yaml`](../) file you can also add partial redirect rul
 
 ```yaml
 https://{default}/:
-  # ...
-  redirects:
-    expires: 1d
-    paths:
-      '/from':
-        to: 'https://example.com/'
-      '^/foo/(.*)/bar':
-        to: 'https://example.com/$1'
-        regexp: true
+    # ...
+    redirects:
+        expires: 1d
+        paths:
+            '/from':
+                to: 'https://example.com/'
+            '^/foo/(.*)/bar':
+                to: 'https://example.com/$1'
+                regexp: true
 ```
 
 This format is more rich and works with any type of route, including routes served directly by the application.
@@ -54,13 +54,13 @@ Each rule under `paths` is defined by its key describing the expression to match
 
 ```yaml
 https://{default}/:
-  type: upstream
-  # ...
-  redirects:
-    paths:
-      '^/foo/(.*)/bar':
-         to: 'https://example.com/$1'
-         regexp: true
+    type: upstream
+    # ...
+    redirects:
+        paths:
+            '^/foo/(.*)/bar':
+                to: 'https://example.com/$1'
+                regexp: true
 ```
    Note that special arguments in the `to` statement are also valid when `regexp` is set to `true`:
     * `$is_args` will evaluate to `?` or empty string
@@ -71,13 +71,13 @@ https://{default}/:
 
 ```yaml
 https://{default}/:
-  type: upstream
-  # ...
-  redirects:
-    paths:
-      '/from':
-         to: 'https://{default}/to'
-         prefix: true
+    type: upstream
+    # ...
+    redirects:
+        paths:
+            '/from':
+                 to: 'https://{default}/to'
+                 prefix: true
 ```
    with `prefix` set to `true`, `/from` will redirect to `/to` and `/from/another/path` will redirect to `/to/another/path`.
    If `prefix` is set to `false` then `/from` will trigger a redirect, but `/from/another/path` will not.
@@ -87,13 +87,13 @@ https://{default}/:
 
 ```yaml
 https://{default}/:
-  type: upstream
-  # ...
-  redirects:
-    paths:
-      '/from':
-         to: 'https://{default}/to'
-         append_suffix: false
+    type: upstream
+    # ...
+    redirects:
+        paths:
+            '/from':
+                 to: 'https://{default}/to'
+                 append_suffix: false
 ```
    would result in `/from/path/suffix` redirecting to just `/to`. If `append_suffix` was left on its default value of `true`, then `/from/path/suffix` would have redirected to `/to/path/suffix`.
 
@@ -101,15 +101,15 @@ https://{default}/:
 
 ```yaml
 https://{default}/:
-  type: upstream
-  # ...
-  redirects:
-    paths:
-      '/from':
-        to: 'https://example.com/'
-        code: 308
-      '/here':
-        to: 'https://example.com/there'
+    type: upstream
+    # ...
+    redirects:
+        paths:
+            '/from':
+                to: 'https://example.com/'
+                code: 308
+            '/here':
+                to: 'https://example.com/there'
 ```
    In this example, redirects from `/from` would use a `308` HTTP status code, but redirects from `/here` would default to `302`.
 
@@ -117,16 +117,16 @@ https://{default}/:
 
 ```yaml
 https://{default}/:
-  type: upstream
-  # ...
-  redirects:
-    expires: 1d
-    paths:
-      '/from':
-        to: 'https://example.com/'
-      '/here':
-        to: 'https://example.com/there'
-        expires: 2w
+    type: upstream
+    # ...
+    redirects:
+        expires: 1d
+        paths:
+            '/from':
+                to: 'https://example.com/'
+            '/here':
+                to: 'https://example.com/there'
+                expires: 2w
 ```
    In this example, redirects from `/from` would be set to expire in one day, but redirects from `/here` would expire in two weeks.
 

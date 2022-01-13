@@ -19,7 +19,6 @@ try {
     $conn = new \PDO($dsn, $credentials['username'], $credentials['password'], [
         // Always use Exception error mode with PDO, as it's more reliable.
         \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION,
-        // So we don't have to mess around with cursors and unbuffered queries by default.
     ]);
 
     $conn->query("DROP TABLE IF EXISTS People");

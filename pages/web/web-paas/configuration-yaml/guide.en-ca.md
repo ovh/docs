@@ -5,7 +5,7 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 31st March 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
@@ -78,8 +78,8 @@ hooks:
 ```yaml
 hooks:
     build: !include
-      type: string
-      path: build.sh
+        type: string
+        path: build.sh
 ```
 
 That is primarily useful for breaking longer build scripts or inlined configuration files out to a separate file for easier maintenance.

@@ -4,12 +4,12 @@ slug: ssi
 section: Routes
 ---
 
-**Last updated 26th March 2021**
+**Last updated 13th January 2022**
 
 
 ## Objective  
 
-Server side includes is a powerful mechanism by which you can at the same time leverage caching and serve dynamic content.
+Server side includes is a powerful mechanism by which you can at the same time make use of caching and serve dynamic content.
 
 You can activate or deactivate SSI on a per-route basis in your `.platform/routes.yaml` for example:
 
@@ -18,14 +18,14 @@ You can activate or deactivate SSI on a per-route basis in your `.platform/route
     type: upstream
     upstream: "app:http"
     cache:
-      enabled: false
+        enabled: false
     ssi:
         enabled: true
 "https://{default}/time.php":
     type: upstream
     upstream: "app:http"
     cache:
-      enabled: true
+        enabled: true
 ```
 
 It allows you to include in your HTML response directives that will make the server "fill-in" parts of the HTML respecting the caching you setup.
