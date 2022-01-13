@@ -25,13 +25,13 @@ order: 1
 
 #### Layer 2 mode
 
-* The number of client-side MAC addresses is limited to 512 per port
+- The number of client-side MAC addresses is limited to 512 per port
 
 #### Layer 3 mode
 
-* Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
-* Each EndPoint/DC supports up to 4 BGP peers
-* Up to 100 prefixes can be announced per BGP session
+- Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
+- Each EndPoint/DC supports up to 4 BGP peers
+- Up to 100 prefixes can be announced per BGP session
 
 ### Unsupported features
 
@@ -47,6 +47,7 @@ order: 1
 
 #### Layer 3 mode
 
+- IPv6
 - Any QoS mechanism
 - 802.1q tag
 - Multi-VRF

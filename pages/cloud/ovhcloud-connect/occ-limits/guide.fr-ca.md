@@ -48,6 +48,7 @@ order: 1
 
 #### Mode Layer-3
 
+* IPv6
 * Tout mécanisme de qualité de service
 * Tag 802.1q
 * Multi-VRF
