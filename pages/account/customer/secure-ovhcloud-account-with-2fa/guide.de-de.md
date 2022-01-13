@@ -121,7 +121,7 @@ Bevor Sie uns kontaktieren, bereiten Sie bitte folgende Unterlagen vor:
 |Privatperson|- Beidseitige Kopie eines Identitätsnachweises (Personalausweis, Führerschein, Reisepass), ausgestellt auf den Inhaber des OVHcloud Kunden-Accounts|
 |Unternehmen|- Identitätsnachweis (Personalausweis, Führerschein, Reisepass) der zur Vetretung des Unternehmens berechtigten Person (sensible Daten können unkenntlich gemacht werden, nur der vollständige Name und das Ablaufdatum müssen sichtbar sein)<br><br>- Handelsregisterauszug des Unternehmens|
 
-Kontaktieren Sie den OVHcloud Support unter +49 681 906730 Uhr, sobald Ihre entsprechenden Nachweise vollständig vorliegen.
+Kontaktieren Sie den OVHcloud Support unter +49 681 906730, sobald Ihre entsprechenden Nachweise vollständig vorliegen.
 
 > [!warning]
 >
