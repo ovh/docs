@@ -83,7 +83,11 @@ You can now see your disk expanded and available.
 
 ### Linux VM
 
-For Linux VMs, we'll use a repartitionning utility.
+> [!primary]
+>
+> For Linux VMs, we'll use a partition utility. There are many available products and we do not recommend any over the others. Our use of [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) is in no way an endorsement.
+> For creating an ISO library and mounting an ISO to a VM, refer to 
+
 
 In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
 
