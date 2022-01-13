@@ -24,6 +24,7 @@ We will demonstrate how to use vSphere and OS management tools to add space to y
 
 ## Instructions
 
+Before proceeding with this type of change, we recommend a full backup or a clone of the virtual machine.
 
 ### Windows VM
 
@@ -31,9 +32,12 @@ In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
-On the left side, navigate to the `NSX Edges`{.action} section then click on the appliance you're setting up.
 
-![NSX](images/en02nsx.png){.thumbnail}
+On the left side, navigate to the VM you wish to modify, right click on it and select `Edit Settings`{.action}.
+
+![EDIT](images/en02vm.png){.thumbnail}
+
+
 
 
 
