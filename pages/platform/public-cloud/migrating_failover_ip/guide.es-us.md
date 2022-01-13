@@ -26,6 +26,10 @@ Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. 
 
 ## Procedimiento
 
+> [!primary]
+> Una IP failover no puede moverse de una zona a otra. Por ejemplo, una IP situada en el datacenter SBG podrá migrarse a GRA o RBX, pero no podrá migrarse a BHS.
+>
+
 ### Migración de la IP failover
 
 En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el servicio Public Cloud correspondiente. A continuación, seleccione Failover IP en el apartado **Network** .

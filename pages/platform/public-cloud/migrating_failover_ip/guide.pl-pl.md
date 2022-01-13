@@ -27,6 +27,10 @@ W tym przewodniku wyjaśniono, jak przenieść adres IP Failover (używany w prz
 
 ## W praktyce
 
+> [!primary]
+> IP Failover nie może być przenoszone między strefami. Na przykład adres IP zlokalizowany w centrum danych SBG może zostać przeniesiony do GRA lub RBX, ale nie może zostać przeniesiony do BHS.
+>
+
 ### Migracja IP Failover
 
 Po pierwsze zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiednią usługę Public Cloud. Następnie wybierz Failover IP w części **Network**.
