@@ -40,7 +40,7 @@ Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic d
 ![EDIT](images/en02vm.png){.thumbnail}
 
 
-Trouvez le disque à étendre et modifier la valeur de la taille (dans notre exemple, changement de 80 à 100 GB).<br>
+Trouvez le disque à étendre et modifier la valeur de sa taille (dans notre exemple, changement de 80 à 100 GB).<br>
 Cliquez `OK`{.action}.
 
 ![EDIT](images/en03hdd.png){.thumbnail}
@@ -83,108 +83,108 @@ Le disque est maintenant étendu et prêt à l'usage.
 
 > [!primary]
 >
-> For Linux VMs, we'll use a partition utility. There are many available products and we do not recommend any over the others. Our use of [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) is in no way an endorsement.
+> Pour les VM sous Linux, nous utilisons un utilitaire de partition. Il existe de multiples produits et nous n'en avons aucun à recommender en particulier. L'utilisation de [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) n'est pas un appui de notre part.
 > 
-> For creating an ISO library and mounting an ISO to a VM, refer to [How to connect an ISO image to a VM](https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/)
+> Pour créer une librairie d'ISOs et monter un ISO sur une VM, rendez-vous sur [Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/)
 
 
-In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
+Dans l'interface vSphere, allez dans le tableau de bord `Hôtes et clusters`{.action}.
 
 ![MENU](images/en01dash.png){.thumbnail}
 
 
-On the left side, navigate to the VM you wish to modify, right click on it and select `Edit Settings`{.action}.
+Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic droit et selectionnez `Modifier les paramètres`{.action}.
 
 ![EDIT](images/en10vm.png){.thumbnail}
 
 
-Connect the utility ISO to your VM ([How to connect an ISO image to a VM](https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/)).<br> 
-Find the disk you are expanding and modify the size value as needed (in our case, changed the value from 20 to 70 GB).<br>
+Connecter l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/)).<br> 
+Trouvez le disque à étendre et modifier la valeur de sa taille (dans notre exemple, changement de 20 à 70 GB).<br>
 
 ![EDIT](images/en11hdd.png){.thumbnail}
 
 
-In the `VM Options`{.action} tab, check the During the next boot, force entry into the BIOS setup screen box so you can boot on the partition utility.<br>
-Click `OK`{.action}.
+Dans l'onglet `Options VM`{.action}, cochez la case Lors du démarrage suivant, forcez l'entrée dans l'écran de configuration BIOS  pour pouvoir booter depuis l'utilitaire de partition.<br>
+Cliquez `OK`{.action}.
 
 ![EDIT](images/en12bios.png){.thumbnail}
 
 
-You can verify the change was applied in your recent tasks view.
+Vous pouvez vérifier que le changement a été appliqué dans la vue des tâches récentes.
 
 ![EDIT](images/en13task.png){.thumbnail}
 
 
-Boot (or reboot) the VM and start the partition utiliy.<br>
-*Refer to the software developer documentation to boot and get to the management console.*<br>
-In the management console, you can see there is 50GB of unallocated space, corresponding to the space added to the virtual disk previously.
+Démarrez (ou redémarrez) la VM et lancer l'utilitaire de partition.<br>
+*Veuillez vous référer à la documentation du développeur pour le boot et l'accès à la console de management.*<br>
+Dans la console de management, vous constatez la présence de 50GB d'espace non alloué, soit l'espace précédement ajouté au disque virtuel.
 
 ![LIN](images/en14unallocated.png){.thumbnail}
 
 
-Right click on the existing logical volume and select `Resize/Move`{.action}.
+Faites un clic droit sur le volume existant et selectionnez `Redimensionner/Déplacer`{.action}.
 
 ![LIN](images/en15extend.png){.thumbnail}
 
 
-Drag the right arrow to select the whole available space or type 0 in the Free Space Following field.<br>
-Click `Resize/Move`{.action}.
+Déplacer la flèche droite pour selectionner tout l'espace disponible ou taper 0 dans le champ Espace libre suivant.<br>
+Cliquez `Redimensionner/Déplacer`{.action}.
 
 ![LIN](images/en16wiz.png){.thumbnail}
 
 
-Click the green checkmark to apply all operations.
+Cliquez sur la coche verte pour appliquer toutes les opérations.
 
 ![LIN](images/en17apply.png){.thumbnail}
 
 
-Click `Apply`{.action} to confirm.
+Cliquez `Appliquer`{.action} pour confirmer.
 
 ![LIN](images/en18confirm.png){.thumbnail}
 
 
-Click `Close`{.action} when done.
+Cliquez `Fermer`{.action} une fois fini.
 
 ![LIN](images/en19close.png){.thumbnail}
 
 
-You can now see your volume contains the unallocated space.<br>
-We still need to apply the space to the disk.
+Vous constatez que le volume contient maintenant l'espace libre.<br>
+Il nous faut cependant encore alloué l'espace au disque.
 
 ![LIN](images/en20disk.png){.thumbnail}
 
 
-Right click on the existing disk and select `Resize/Move`{.action}.
+Faites un clic droit sur le disque existant et selectionnez `Redimensionner/Déplacer`{.action}.
 
 ![LIN](images/en21extend.png){.thumbnail}
 
 
-Drag the right arrow to select the whole available space or type 0 in the Free Space Following field.<br>
-Click `Resize`{.action}.
+Déplacer la flèche droite pour selectionner tout l'espace disponible ou taper 0 dans le champ Espace libre suivant.<br>
+Cliquez `Redimensionner`{.action}.
 
 ![LIN](images/en22wiz.png){.thumbnail}
 
 
-Click the green checkmark to apply all operations.
+Cliquez sur la coche verte pour appliquer toutes les opérations.
 
 ![LIN](images/en23apply.png){.thumbnail}
 
 
-Click `Apply`{.action} to confirm.
+Cliquez `Appliquer`{.action} pour confirmer.
 
 ![LIN](images/en18confirm.png){.thumbnail}
 
 
-Click `Close`{.action} when done.
+Cliquez `Fermer`{.action} une fois fini.
 
 ![LIN](images/en19close.png){.thumbnail}
 
 
-You can now see your vitual disk is extended and ready for use.<br>
+Le disque est maintenant étendu et prêt à l'usage.<br>
 
 ![LIN](images/en24done.png){.thumbnail}
 
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
