@@ -33,7 +33,7 @@ section: Tutorials
 
 In this tutorial we will show you how to monitor a GPU application on an OVHcloud Managed Kubernetes cluster.
 
-![GPU Metrics Visualization](images/gpu-metrics-visualization.png)
+![GPU Metrics Visualization](images/gpu-metrics-visualization.png){.thumbnail}
 
 GPUs provide compute power to drive AI/ML & Deep Learning tasks with intensive calculations such as image/object recognition, natural language processing (NLP), as well as other compute-intensive tasks such as video transcoding and image processing. Using GPUs with Kubernetes allows you to extend the scalability of Kubernetes to AI/ML applications.
 It is however always important to keep the costs of GPU in mind. If each application uses a dedicated GPU in model prediction scenarios, computing resources can be wasted. It is therefore important to monitor GPU usage in order to be responsive and to be able to make the right decisions and optimize usage.
@@ -74,9 +74,9 @@ nvidia-dcgm-exporter-rcq6t   1/1     Running   0          18d
 
 The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator){.external} provides Kubernetes native deployment and management of Prometheus and related monitoring components.
 
-![Prometheus Architecture](images/prometheus-scraping-schema.png)
+![Prometheus Architecture](images/prometheus-scraping-schema.png){.thumbnail}
 
-The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana dashboard, to visualize our metrics in a friendly user way.
+The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana dashboard, to visualize our metrics in a user-friendly way.
 
 If you are interested about the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
 
@@ -91,7 +91,7 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo update
 ```
 
-This will add you the Prometheus repository and update all of your repositories: 
+This will add the Prometheus repository and update all of your repositories: 
 
 <pre class="console"><code>$ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 "prometheus-community" has been added to your repositories
@@ -210,7 +210,7 @@ kube-prometheus-stack-1641827066-prometheus-node-exporter   ClusterIP      10.3.
 prometheus-operated                                         ClusterIP      None           <none>            9090/TCP                     6m22s
 </code></pre>
 
-If it's not the case, please wait until the Load Balancer are correctly created.
+If it's not the case, please wait until the Load Balancers are correctly created.
 
 ### Visualize the metrics
 
@@ -241,9 +241,9 @@ Grafana URL: http://51.178.69.167
 
 Open your browser and go to the Prometheus interface.
 
-As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already have started publishing metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar and click on `Execute`{.action} button to determine if the GPU metrics are visible:
+As you already deployed DCGM with NVIDIA GPU Operator, DCGM should already have started publishing metrics to Prometheus. The metrics availability can be verified by typing `DCGM_FI_DEV_GPU_UTIL` in the search bar. Click on the `Execute`{.action} button to determine if the GPU metrics are visible:
 
-![Prometheus](images/prometheus.png)
+![Prometheus](images/prometheus.png){.thumbnail}
 
 You can check the GPU usage with several metrics in Prometheus:
 
@@ -259,49 +259,49 @@ You can also go to the Grafana interface. Open your browser and point to `http:/
 - Login: `admin`
 - Password: `prom-operator` (by default)
 
-![Grafana](images/grafana.png)
+![Grafana](images/grafana.png){.thumbnail}
 
-![Grafana Home Page](images/grafana-home-page.png)
+![Grafana Home Page](images/grafana-home-page.png){.thumbnail}
 
 ### DCGM Dashboard in Grafana
 
-You have a running Prometheus and Grafana, no you need to add a dashboard for `DCGM`.
+You have a running Prometheus and Grafana, now you need to add a dashboard for `DCGM`.
 To do that, you can use a standard dashboard that NVIDIA released, which can also be customized.
 
-To add the dashboard, in the Grafana sidebar, click on `+`{.action} button -> `Import`{.action}:
+To add the dashboard, in the Grafana sidebar, click on `+`{.action} -> `Import`{.action}:
 
-![Grafana Import menu](images/grafana-import.png)
+![Grafana Import menu](images/grafana-import.png){.thumbnail}
 
-Import the NVIDIA dashboard from https://grafana.com/grafana/dashboards/12239, click on `Load`{.action} button:
+Import the NVIDIA dashboard from https://grafana.com/grafana/dashboards/12239, click on the `Load`{.action} button:
 
-![Grafana Import menu](images/grafana-import-dashboard.png)
+![Grafana Import menu](images/grafana-import-dashboard.png){.thumbnail}
 
-Then choose `Prometheus`{.action} as the data source in the drop down menu and click on `Import`{.action} button:
+Then choose `Prometheus`{.action} as the data source in the drop down menu and click on the `Import`{.action} button:
 
-![Grafana Import menu](images/grafana-import-dashboard-2.png)
+![Grafana Import menu](images/grafana-import-dashboard-2.png){.thumbnail}
 
 You should now see your new dashboard:
 
-![Grafana NVIDIA DCGM Exporter Dashboard](images/grafana-dcgm-exporter-dashboard.png)
+![Grafana NVIDIA DCGM Exporter Dashboard](images/grafana-dcgm-exporter-dashboard.png){.thumbnail}
 
 If you followed the [Deploying a GPU application on OVHcloud Managed Kubernetes](../deploying-gpu-application) tutorial, you should see metrics like in our example.
 
-You can click on `instance`{.action} drop down menu in order to visualize GPU metrics for another Node for example:
+You can click on the `instance`{.action} drop down menu in order to visualize GPU metrics for another Node for example:
 
-![Grafana NVIDIA DCGM Exporter Dashboard other node](images/grafana-dcgm-exporter-dashboard-2.png)
+![Grafana NVIDIA DCGM Exporter Dashboard other node](images/grafana-dcgm-exporter-dashboard-2.png){.thumbnail}
 
 ### Visualize metrics for running applications
 
-Now we have a monitoring working stack and a dashboard for visualize our data, it's time to run an application in order to retrieve GPU metrics and viualize interesting data.
+Now we have a monitoring working stack and a dashboard to visualize our data, it's time to run an application in order to retrieve GPU metrics and viualize interesting data.
 
 As a complex and interesting application using GPU, you can use the standard [DeepStream Intelligent Video Analytics Demo](https://catalog.ngc.nvidia.com/orgs/nvidia/helm-charts/video-analytics-demo){.external} available on the [NVIDIA NGC registry](https://catalog.ngc.nvidia.com/){.external}. 
 
-This is an easy to deploy video analytics demo that allows you to demo GPU accelerated video analytics. The container is based on the NVIDIA DeepStream container and leverages it's built-in SEnet with resnet18 backend.
+This is an easy to deploy video analytics demo that allows you to demo GPU accelerated video analytics. The container is based on the NVIDIA DeepStream container and leverages its built-in SEnet with resnet18 backend.
 
-The `Intelligent Video Analytics` demo is:
+The `Intelligent Video Analytics` demo:
 
-- an easy to use demo to demonstrate GPU accelerated Inference
-- based on the `NGC Deepstream Container`
+- is an easy to use demo to demonstrate GPU accelerated Inference
+- is based on the `NGC Deepstream Container`
 - leverages `Kubernetes`, `Helm`, `NGC` & `DeepStream`
 - does not require a `Video Management System (VMS)`
 
@@ -348,7 +348,7 @@ video-analytics-demo-0-1641911286-webui-7fb477cbbf-jcz9p   1/1     Running     0
 
 `video-analytics-demo-*` and `video-analytics-demo-*-webui-*` Pods are running.
 
-The demo can be viewed in the browser by pointing to the address following the following instructions:
+The demo can be viewed in the browser by pointing to the address given in the following instructions:
 
 ```bash
 export ANT_NODE_PORT=$(kubectl get --namespace default -o jsonpath="{.spec.ports[0].nodePort}" services video-analytics-demo-0-1641911286-webui)
@@ -370,19 +370,19 @@ Video Demo: http://51.83.111.178:31115/WebRTCApp/play.html?name=videoanalytics~
 
 Open the application URL in your browser:
 
-![GPU Demo](images/gpu-demo.png)
+![GPU Demo](images/gpu-demo.png){.thumbnail}
 
 Click on the `play`{.action} button (the button with a triangle) to start the application:
 
-![GPU Demo Started](images/gpu-demo-started.png)
+![GPU Demo Started](images/gpu-demo-started.png){.thumbnail}
 
-As you can see, the application, that can be used for smart cities use cases, use the power of GPU in order to detect objects like persons and cars.
+As you can see, the application, that can be used for smart cities use cases, uses the power of GPU in order to detect objects like persons and cars.
 
 Now you can check the metrics in Grafana and watch the evolution of the charts:
 
-![Grafana Demo GPU metrics](images/grafana-gpu-metrics.png)
-![Grafana Demo GPU metrics](images/grafana-gpu-metrics-2.png)
-![Grafana Demo GPU metrics](images/grafana-gpu-metrics-3.png)
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics.png){.thumbnail}
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics-2.png){.thumbnail}
+![Grafana Demo GPU metrics](images/grafana-gpu-metrics-3.png){.thumbnail}
 
 The screenshots are showing GPU utilization and memory allocation on the GPU as long as the application is running.
 
@@ -420,6 +420,6 @@ release "video-analytics-demo-0-1641911286" uninstalled
 
 Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in order to create alerts for example.
 
-To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
 Join our [community of users](https://community.ovh.com/en/).
