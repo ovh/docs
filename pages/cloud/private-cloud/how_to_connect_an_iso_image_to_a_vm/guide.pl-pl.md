@@ -5,7 +5,7 @@ slug: connect_iso_to_vm
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/'
 legacy_guide_number: g1438
-section: Getting started
+section: Pierwsze kroki
 ---
 
 **Last Updated on 11th January 2022**
