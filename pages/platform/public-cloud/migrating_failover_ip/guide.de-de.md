@@ -26,6 +26,10 @@ IP-Adressen migrieren zu können bedeutet, die Möglichkeit eines Dienstausfalls
 
 ## In der praktischen Anwendung
 
+> [!primary]
+> Eine Failover-IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
+>
+
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken im linken Menü auf `Failover IP`{.action} unter **Network**.
 In diesem Beispiel soll die auf “Instance_A“ geroutete Failover-IP zu “Instance_B“ migriert werden.
 

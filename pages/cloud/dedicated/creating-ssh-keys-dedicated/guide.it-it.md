@@ -152,13 +152,13 @@ Dal tuo file “authorized_keys” elimina la chiave corrispondente all’utente
 
 Lo Spazio Cliente OVHcloud consente di salvare le chiavi pubbliche usando uno dei tipi di crittografia supportati (attualmente RSA, ECDSA, ED25519). 
 
-Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida`Prodotti e servizi`{.action}.
+Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida`Gestione dei servizi`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 Nel menu “I tuoi servizi”, seleziona la scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Seleziona “Dedicato” dal menu a tendina.
 

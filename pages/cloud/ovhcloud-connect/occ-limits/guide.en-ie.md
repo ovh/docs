@@ -6,7 +6,7 @@ section: Technical resources
 order: 1
 ---
 
-**Last updated 14th September 2020**
+**Last updated 13th January 2022**
 
 ## Objective
 
@@ -20,6 +20,18 @@ order: 1
 - 10GBase-LR for 10Gb
 - Jumbo frame up to 9000 bytes
 - Autonegotiation not supported
+
+### Technical limitationss
+
+#### Layer 2 mode
+
+- The number of client-side MAC addresses is limited to 512 per port
+
+#### Layer 3 mode
+
+- Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
+- Each EndPoint/DC supports up to 4 BGP peers
+- Up to 100 prefixes can be announced per BGP session
 
 ### Unsupported features
 
@@ -35,16 +47,13 @@ order: 1
 
 #### Layer 3 mode
 
+- IPv6
 - Any QoS mechanism
 - 802.1q tag
 - Multi-VRF
 - eBGP Multi-Hop
 - iBGP
 - Static routing in EntryPoint/PoP
-
-### Features on roadmap
-
-- IPv6
 
 ### Known issues
 
