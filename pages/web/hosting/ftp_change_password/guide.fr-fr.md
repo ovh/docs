@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 2
 ---
 
-**Dernière mise à jour le 04/01/2022**
+**Dernière mise à jour le 14/01/2022**
 
 ## Objectif
 
@@ -36,9 +36,9 @@ Un tableau affiche les utilisateurs FTP créés sur votre hébergement. Ces util
 
 ### Étape 2 : modifier le mot de passe d'un utilisateur FTP
 
-> [!warning]
+> [!primary]
 >
-> Avant d'aller plus loin et si vous ne l'avez pas déjà fait, nous vous recommandons de consulter ce [guide](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#en-pratique) afin d'apprendre à gérer et à choisir vos mots de passe.
+> Pour plus d'informations sur les bonnes pratiques en matière de mots de passe, suivez les instructions de ce [guide](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
 >
 
 Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), la modification du mot de passe de votre utilisateur FTP via l'onglet `FTP-SSH`{.action} se fera par deux chemins différents :
@@ -51,7 +51,16 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-
 
 ![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
-Consultez l'onglet `Tâches en cours`{.action} et rafraîchissez la page régulièrement. Le changement ne nécessite que quelques minutes pour être effectif.
+Choisissez le nouveau mot de passe de votre base de données et notez-le. Il devra, dans les deux cas, respecter les conditions suivantes :
+
+- Minimum 8 caractères ;
+- Maximum 30 caractères ;
+- Au moins une lettre majuscule ;
+- Au moins une lettre minuscule ;
+- Au moins un chiffre ;
+- Être composé uniquement de chiffres et de lettres.
+
+Consultez enfin l'onglet `Tâches en cours`{.action} et rafraîchissez la page régulièrement. Le changement ne nécessite que quelques minutes pour être effectif.
 
 ### Étape 3 : accéder à votre espace de stockage
 
