@@ -4,6 +4,7 @@ slug: high-level-documentation
 excerpt: Technical details of the Nutanix infrastructure at OVHcloud
 section: Getting started
 order: 01
+hidden: true
 ---
 
 **Last updated 11th January 2022**

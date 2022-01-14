@@ -2,7 +2,7 @@
 title: VMware DRS (Distributed Ressource Scheduler)
 slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Gestire la ripartizione del carico con la funzione DRS
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 03
 ---
 

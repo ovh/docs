@@ -140,7 +140,7 @@ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace
 
 You should have a GPU operator installed and running:
 
-<pre clas="console"><code>$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
+<pre class="console"><code>$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
 NAME: gpu-operator
 LAST DEPLOYED: Thu Dec 23 15:27:25 2021
 NAMESPACE: gpu-operator

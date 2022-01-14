@@ -4,6 +4,7 @@ slug: nutanix-change-vrack
 excerpt: Find out how to change the Nutanix Cluster vRack
 section: Networking & Security
 order: 02
+hidden: true
 ---
 
 **Last updated 11th January 2022**

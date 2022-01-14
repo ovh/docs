@@ -3,7 +3,7 @@ title: VMware Fault Tolerance
 slug: vmware-fault-tolerance
 excerpt: Come garantire la disponibilità continua delle VM con il servizio Fault Tolerance
 legacy_guide_number: '2163251'
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 06
 ---
 

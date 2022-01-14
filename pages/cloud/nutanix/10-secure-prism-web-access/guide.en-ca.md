@@ -4,6 +4,7 @@ slug: nutanix-prism-web-ui-security
 excerpt: Find out how to restrict Prism Central Web access
 section: Networking & Security
 order: 01
+hidden: true
 ---
 
 **Last updated 11th January 2022**

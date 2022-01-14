@@ -2,7 +2,7 @@
 title: Kompatybilność usługi vRack z usługą Hosted Private Cloud
 slug: zarzadzanie-vrack-hosted-private-cloud
 excerpt: Przewodnik na temat kompatybilności między produktami vRack i Hosted Private Cloud
-section: Funkcje OVHcloud
+section: Funkcjonalności OVHcloud
 order: 01
 ---
 

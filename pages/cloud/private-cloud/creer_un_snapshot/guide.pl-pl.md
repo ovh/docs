@@ -3,7 +3,7 @@ title: Tworzenie migawki
 slug: tworzenie-migawki
 excerpt: Przywróć maszyny wirtualne do wcześniejszego stanu za pomocą migawek
 legacy_guide_number: '7766547'
-section: Zarządzanie maszynami wirtualnymi
+section: Zarządzanie wirtualnymi maszynami
 order: 08
 ---
 
