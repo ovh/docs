@@ -2,7 +2,7 @@
 title: Connecter une image ISO à une VM
 excerpt: Comment connecter une image ISO à une machine virtuelle ?
 slug: connect_iso_to_vm
-section: Getting started
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 11/01/2022**
@@ -16,7 +16,7 @@ Vous pouvez créer une librairie de fichiers ISO à utiliser pour vos déploieme
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Avoir un identifiant utilisateur actif.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 

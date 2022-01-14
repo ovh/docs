@@ -2,7 +2,7 @@
 title: Implementação da Zerto Virtual Replication para o seu DRP
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres entre dois serviços Private Cloud.
-section: Serviços e opções OVH
+section: Serviços e opções OVHcloud
 ---
 
 **Última atualização: 28/08/2020**

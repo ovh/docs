@@ -2,7 +2,7 @@
 title: 'Gestión de dominios vSAN'
 slug: vmware-vsan-fault-domain
 excerpt: 'Cómo gestionar los dominios de fallo vSAN'
-section: 'Funcionalidades VMware vSphere'
+section: 'Funcionalidades de VMware vSphere'
 ---
 
 > [!primary]
