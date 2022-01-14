@@ -8,3 +8,4 @@ data
 .idea
 
 .DS_Store
+pages/platform/kubernetes-k8s/monitoring-gpu-application/images/gpu-app-demo-video.mov
