@@ -3,6 +3,7 @@ title: Informazioni sulla fatturazione Dedicated Cloud
 excerpt: Dettagli sul funzionamento della fatturazione del Dedicated Cloud
 slug: informazioni_sulla_fatturazione_dedicated_cloud
 legacy_guide_number: g677
+section: Per iniziare
 ---
 
 

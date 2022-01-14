@@ -2,7 +2,7 @@
 title: Zmiana zasobów przypisanych do maszyny wirtualnej
 slug: zmiana_konfiguracji_sprzetowej_wirtualnej_maszyny
 excerpt: Dowiedz się, jak wprowadzić zmiany w maszynie wirtualnej
-section: Zarządzanie maszynami wirtualnymi
+section: Zarządzanie wirtualnymi maszynami
 order: 03
 ---
 

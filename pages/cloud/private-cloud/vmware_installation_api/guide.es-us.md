@@ -2,7 +2,7 @@
 title: Usar el conjunto de librerías vSphere SDK
 slug: usar-vsphere-sdk
 excerpt: Instrumentación y uso del conjunto de librerías vSphere SDK
-section: Funcionalidades de la plataforma VMware vSphere
+section: Funcionalidades de VMware vSphere
 order: 10
 ---
 

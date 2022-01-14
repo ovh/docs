@@ -2,7 +2,7 @@
 title: Korzystanie z SDK vSphere
 slug: korzystanie-z-sdk-vsphere
 excerpt: Dowiedz się, jak uruchomić SDK vSphere i jak z niego korzystać
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 10
 ---
 
