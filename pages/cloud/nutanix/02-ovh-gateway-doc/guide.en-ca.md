@@ -4,6 +4,7 @@ slug: ovh-gateway-documentation
 excerpt: Find out how the OVHGateway works
 section: Getting started
 order: 02
+hidden: true
 ---
 
 **Last updated 11th January 2022**
