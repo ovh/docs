@@ -96,7 +96,7 @@ Select the `General Information`{.action} tab. In the **Login Information** sect
 It should be similar to this:
 
 ```bash
-rediss://<username>:<password>@<hostname>:<port>
+redis://<username>:<password>@<hostname>:<port>
 ```
 
 A bit of information to know:
@@ -107,12 +107,12 @@ A bit of information to know:
 
 We will now follow the official Redis documentation to perform our first connection.
 
-In your terminal, type `redis-cli -u rediss://<username>:<password>@<hostname>:<port> ping`.
+In your terminal, type `redis-cli -u redis://<username>:<password>@<hostname>:<port> ping`.
 
 The result should look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
+laptop$ redis-cli -u redis://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 PONG
 ```
@@ -120,10 +120,10 @@ PONG
 It means that the Redis instance is running and responding to your command.
 
 To be in interactive mode, do not use any particular command : 
-`redis-cli -u rediss://<username>:<password>@<hostname>:<port>`.<br>
+`redis-cli -u redis://<username>:<password>@<hostname>:<port>`.<br>
 
 If you want to avoid to type username and password in your shell session, type:
-`redis-cli -u rediss://<username>:<password>@<hostname>:<port>` 
+`redis-cli -u redis://<username>:<password>@<hostname>:<port>` 
 to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum priviledges to run other commands. 
 
 Don't forget you need to modify the username, password, hostname and port.
@@ -131,7 +131,7 @@ Don't forget you need to modify the username, password, hostname and port.
 In our example, it will look like this :
 
 ```bash
-laptop$ redis-cli -u rediss://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
+laptop$ redis-cli -u redis://redisUser:3FAKExSW6Rez9Xw0admB@redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185    
 Warning: Using a password with '-a' or '-u' option on the command line interface may not be safe.
 redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> PING
 PONG
@@ -166,7 +166,7 @@ Please follow the official Redis [redis-cli documentation](https://redis.io/topi
 In case you don't use a defined user in your command line or not enough privileges, etc., you will get a *NOAUTH* or *AUTH failed* response like below.
 
 ```bash
-redis-cli -u rediss://redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
+redis-cli -u redis://redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185 ping
 (error) NOAUTH Authentication required.
 ```
 
