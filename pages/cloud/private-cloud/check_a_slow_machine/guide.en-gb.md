@@ -32,7 +32,7 @@ In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard
 Navigate to your VM and select it.<br>
 The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
 You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
-You may also change the view to dif on more specific subjects.
+You may also change the view to dig on more specific subjects.
 
 ![](images/en01vm.png){.thumbnail}
 
@@ -44,7 +44,7 @@ In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard
 Navigate to your Cluster and select it.<br>
 The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
 You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
-You may also change the view to dif on more specific subjects.
+You may also change the view to dig on more specific subjects.
 
 ![](images/en02cluster.png){.thumbnail}
 
@@ -61,7 +61,7 @@ In the vSphere interface menu, go to the `Storage`{.action} dashboard.<br>
 Navigate to your datastore and select it.<br>
 The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
 You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
-You may also change the view to dif on more specific subjects.
+You may also change the view to dig on more specific subjects.
 
 ![](images/en03storage.png){.thumbnail}
 
