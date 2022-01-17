@@ -1,7 +1,7 @@
 ---
 title: Cloner une VM
 slug: cloner-une-vm
-excerpt: Les deux manières de cloner une VM existante dans vSphere
+excerpt: Découvrez deux manières de cloner une VM existante dans vSphere
 section: Gestion des machines virtuelles
 order: 07
 ---
