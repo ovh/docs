@@ -109,6 +109,11 @@ Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, sel
 
 ![CONSOLIDATE](images/en08consolidate.png){.thumbnail}
 
+Confirm by clicking `YES`{.action}.
+
+![CONFIRM](images/en09confirm.png){.thumbnail}
+
+
 You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 
 ## Go further
