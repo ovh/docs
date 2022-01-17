@@ -24,7 +24,7 @@ Within a project, each user has a role that controls their access and permission
 
 These control who has access to projects.
 Users can still see projects that they can't access if they're a member of an organization.
-See more on access control for [organizations](./organizations.md).
+
 
 To see all projects you have a role in, from the main console page
 click **All projects&nbsp;<span aria-label="and then">></span> All projects**.
@@ -61,7 +61,7 @@ To customize who can use SSH, [set the access key](../configuration-app/app-refe
 
 ### Add a user to a project
 
-If you are an organization owner, or an organization user with [manage plan](../administration-organizations#organization-permissions) or [manage users](../administration-organizations#organization-permissions) permissions wanting to add a user to a project or an environment, follow these steps:
+If you are an organization owner, or an organization user with manage plan or manage users permissions wanting to add a user to a project or an environment, follow these steps:
 
 > [!tabs]      
 > In the console     
@@ -154,12 +154,12 @@ To change user permissions, follow these steps:
 
 ### Transfer project ownership
 
-You can transfer your plan ownership to a different [organization](../administration-organizations) anytime.
-You have to be an organization owner or an organization user with [manage plan](../administration-organizations#organization-permissions) permissions.
+You can transfer your plan ownership to a different organization anytime.
+You have to be an organization owner or an organization user with manage plan permissions.
 
 1\. Make the new organization owner a Project Admin for the project you want to transfer.
 
-2\. Submit a [support ticket](https://console.platform.sh/-/users/~/tickets) from your organization account to ask for the transfer.
+2\. Submit a support ticket from your organization account to ask for the transfer.
 
 
 Once the transfer is completed, the new organization can administer all project settings and billing and receives future invoices.
