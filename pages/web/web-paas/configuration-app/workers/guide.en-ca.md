@@ -12,7 +12,7 @@ section: App
 
 Workers are instances of your code that can't interact with the outside world.
 They're good for handling background tasks.
-See how to [configure a worker](./app-reference.md#workers) for your app.
+See how to configure a worker for your app.
 
 ## Accessing the Worker Container
 
@@ -89,13 +89,13 @@ The `start` key specifies the command to use to launch your worker application.
 It may be any valid shell command, although most often it will run a command in your application in the language of your application.
 If the command specified by the `start` key terminates it will be restarted automatically.
 
-Note that [`deploy` and `post_deploy` hooks](../hooks) as well as [`cron` commands](./app-reference.md#crons)
-run only on the [`web`](../app-reference#web) container, not on workers.
+Note that [`deploy` and `post_deploy` hooks](../hooks) as well as `cron` commands
+run only on the `web` container, not on workers.
 
 ## Inheritance
 
-Any top-level definitions for [`size`](./app-reference.md#sizes), [`relationships`](./app-reference.md#relationships),
-[`access`](../app-reference#access), [`disk`](../app-reference), [`mount`](../app-reference#mounts), and [`variables`](/configuration/app/app-reference.m#variables)
+Any top-level definitions for `size`, `relationships`,
+`access`, `disk`, `mount`, and `variables`
 are inherited by every worker, unless overridden explicitly.
 
 That means, for example, that the following two `.platform.app.yaml` definitions produce identical workers.

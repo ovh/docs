@@ -9,7 +9,7 @@ section: App
 
 ## Exceeding plan storage limit
 
-Professional plans come with a default amount of storage that you can [change with your plan](../../overview/pricing/_index.md).
+Professional plans come with a default amount of storage that you can change with your plan.
 The storage is allocated among your services and applications using the `disk` parameter in their configuration files.
 
 You might accidentally set the sum of all `disk` parameters in the files to exceed your plans storage limit.
@@ -26,11 +26,11 @@ To fix the error, do one of the following:
 
 * Lower the `disk` parameters to a value within your plan's storage limits.
 * Increase your plan's storage limits.
-  This can only be done by people with the [manage plan](../../administration/organizations.md#organization-permissions) permission.
+  This can only be done by people with the manage plan permission.
 
 ## Low disk space
 
-If you have set up [health notifications](../../integrations/notifications.md),
+If you have set up health notifications,
 you may receive a notification of low disk space.
 
 To solve this issue:
@@ -65,7 +65,7 @@ use the `disk` keys in your `.platform.app.yaml` and `.platform/services.yaml` f
 The sum of all `disk` keys can't exceed the available storage in your plan.
 
 If you need more storage to fit the sum of all `disk` keys, increase your plan's storage limits.
-This can only be done by people with the [manage plan](../../administration/organizations.md#organization-permissions) permission.
+This can only be done by people with the manage plan permission.
 
 ## No space left on device
 
@@ -80,7 +80,7 @@ Application images are restricted to 4&nbsp;GB during build, no matter how much 
 
 Some build tools (yarn/npm) store cache for different versions of their modules.
 This can cause the build cache to grow over time beyond the maximum.
-Try [clearing the build cache](../../development/troubleshoot.md#clear-the-build-cache) and redeploying.
+Try clearing the build cache and redeploying.
 
 If for some reason your application absolutely requires more than 4&nbsp;GB during build,
 you can open a support ticket to have this limit increased.
