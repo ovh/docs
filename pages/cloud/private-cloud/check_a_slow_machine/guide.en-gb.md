@@ -21,45 +21,53 @@ Use the vSphere monitoring tools to troubleshoot a slow VM.
 
 ## Instructions
 
+You have three levels of monitoring accessible in vSphere to troubleshoot issues.
+- VM
+- Cluster
+- Storage
+
 ### VM Monitoring
 
-Initially, we will select the problematic VM then we go to tab "performance". Here we find the summary graphs using our VM for CPU, RAM, etc.. 
-If we find an important use in this window, certainly from the irregularities of the VM.
-In this case, you can increase the resources allocated to your VM, after making sure there are no limitations on the resources tab of the VM settings (Right click the VM => Edit Settings => resources).
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dif on more specific subjects.
+
+![](images/en01vm.png){.thumbnail}
+
+You may also use the `Utilization`{.action} section to help your investigations.
+
+### Cluster monitoring
+
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your Cluster and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dif on more specific subjects.
+
+![](images/en02cluster.png){.thumbnail}
+
+You may also use the `Resource Allocation`{.action} and `Utilization`{.action} sections to help your investigations.
+
+> [!primary]
+>
+> Resource Pools can be accessed and monitored in the same way clusters are.
+> 
+
+### Storage monitoring
+
+In the vSphere interface menu, go to the `Storage`{.action} dashboard.<br>
+Navigate to your datastore and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dif on more specific subjects.
+
+![](images/en03storage.png){.thumbnail}
 
 
-### Verification of the Cluster / Resource Pool
-On the cluster or resource pool, let's go to the Performance tab, this will allow you to see the graphics performance and resource utilization:
+## Go further
 
-![](images/img_95.jpg){.thumbnail}
-In the section «Resource allocation», you will see figures in the overall consumption of your VMs on the resources available:
-
-![](images/img_96.jpg){.thumbnail}
-There are two cases:
-
-- If a host is overloaded, you can manually migrate your VM to another host, or a live migration using VMotion.
-
-
-If you have the Enterprise license, you can use the DRS which allows you to handle this automatically, depending on resource utilization of your hosts.
-
-
-- If all your hosts present a heavy load, it will add a tab with Private Cloud or storage.
-
-
-
-
-### Checking storage
-Beyond the system resources to your VMs, you can also monitor your storage. When you are on the Datastore view, select your NAS, then the tab « Performance »:
-
-![](images/img_97.jpg){.thumbnail}
-
-
-### Checking the network
-Finally, you can check the status of the network.
-In your Manager, you can see the flow rate used and the limitations you set up on your VLANs:
-
-
-- Manager v5 -> Private Cloud -> Summary / Home
-
+Join our community of users on <https://community.ovh.com/en/>.
 
 
