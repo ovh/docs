@@ -11,7 +11,7 @@ section: Routes
 
 All environments on Web PaaS support both HTTP and HTTPS automatically.
 Production TLS certificates are provided by [Let's Encrypt](https://letsencrypt.org/).
-You may alternatively [provide your own TLS certificate from a third-party issuer](../../domains/steps/tls.md) of your choice at no charge from us.
+You may alternatively provide your own TLS certificate from a third-party issuer of your choice at no charge from us.
 
 The Let’s Encrypt TLS Certificates are:
 
@@ -246,7 +246,7 @@ more background information can be found in the [Let's Encrypt Documentation](ht
 By default, Web PaaS checks that both the `some-example.platform.sh` and `www.some-example.platform.sh` domains are pointing to your project.
 The certificate also encompasses both these domains.
 Make sure that both your apex domain and it's `www` subdomain are pointing to your project,
-more information can be found in out go live [step-by-step guide](../../(gettingstarted-next-steps/going-live/configure-dns).
+more information can be found in out go live step-by-step guide.
 
 Sometimes, that verification fails which will result in the following error-message:
 `Couldn't complete challenge [HTTP01: pending | DNS01: pending | TLSALPN01: pending]`

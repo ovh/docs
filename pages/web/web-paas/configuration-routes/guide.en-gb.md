@@ -104,7 +104,7 @@ Here is an example of a basic `.platform/routes.yaml` file:
     to: "https://{default}/"
 ```
 
-In this example, we will route both the apex domain and the `www` subdomain to an [application called "app"](../app/app-reference.md),
+In this example, we will route both the apex domain and the `www` subdomain to an application called "app",
 the `www` subdomain being redirected to the apex domain using an HTTP 301 `Moved Permanently` response.
 
 In the following example, we are not redirecting from the `www` subdomain to the apex domain but serving from both:
@@ -310,15 +310,7 @@ However, requests to `http://*.add-theme-def123-vmwklxcpbi6zq.ovhcloud-fr-1.webp
 Be aware, however, that we do not support Let's Encrypt wildcard certificates (they would need DNS validation).
 That means if you want to use a wildcard route and protect it with HTTPS you will need to provide a [custom TLS certificate](../domains-steps/tls).
 
-> [!primary]  
-> 
-> In projects created before November 2017 the `.` in subdomains was replaced with a triple dash (`---`).
-> It was switched to preserve `.` to simplify SSL handling and improve support for longer domains.
-> If your project was created before November 2017 then it will still use `---` to the left of the environment name.
-> If you wish to switch to dotted-domains please file a support ticket and we can do that for you.
-> Be aware that doing so may change the domain name that your production domain name should CNAME to.
-> 
-> 
+
 
 ## WebSocket routes
 
