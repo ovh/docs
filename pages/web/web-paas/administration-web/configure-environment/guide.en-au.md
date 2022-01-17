@@ -49,7 +49,6 @@ git push origin :BRANCH-NAME
 > Your default environment is protected.
 > It can't be deleted through the management console or the CLI
 > and shouldn't be deleted through the API unless you are planning on configuring another branch to become the `default_branch` to replace it.
-> To do so, see [renaming the default branch](../../guides-general/default-branch).
 > 
 > 
 
