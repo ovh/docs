@@ -42,7 +42,6 @@ and can be mapped to a domain name and a custom SSL certificate.
 > [!primary]  
 > 
 > Your project must have a default branch, but you can configure it to have whatever name you want.
-> See how to [renaming the default branch](../../guides-general/default-branch).
 > 
 > 
 
