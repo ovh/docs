@@ -81,13 +81,6 @@ The `disk` attribute is the size of the persistent disk (in MB) allocated to the
 
 For example, the current default storage amount per project is 5GB (meaning 5120MB) which you can distribute between your application (as defined in `.platform.app.yaml`) and each of its services.  For memory-resident-only services such as `memcache` or `redis`, the `disk` key is not available and will generate an error if present.
 
-> [!primary]  
-> 
-> Downsizing a service's persistent disk isn't currently supported
-> in the [`eu.platform.sh`](../guides-general/region-migration)
-> and [`us.platform.sh`](../guides-general/region-migration) regions.
-> 
-> 
 
 ### Size
 
@@ -104,7 +97,6 @@ To do so, set `size` to one of the following values:
 * `2XL`
 * `4XL`
 
-The total resources allocated across all apps and services can't exceed what's in [your plan](../../overview/pricing/_index.md).
 
 Note that service containers in development environments are always set to size `S`.
 
@@ -119,7 +111,7 @@ All services have their system timezone set to UTC by default.  In most cases th
 
 In order for a service to be available to an application in your project
 (Web PaaS supports not only multiple backends but also multiple applications in each project),
-you need to refer to it in [your app configuration for relationships](../app/app-reference.md#relationships).
+you need to refer to it in your app configuration for relationships.
 
 ## Endpoints
 
