@@ -384,4 +384,4 @@ webpaas sql --relationship database -e <BRANCH_NAME> < my_database_backup.sql
 
 ## Troubleshoot
 
-If you run into issues, [troubleshoot MySQL](./troubleshoot.md).
+If you run into issues, troubleshoot MySQL.
