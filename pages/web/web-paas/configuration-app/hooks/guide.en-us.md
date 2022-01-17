@@ -11,7 +11,7 @@ section: App
 ## Objective  
 
 Web PaaS supports three "hooks", or points in the deployment of a new version of an application that you can inject a custom script into.
-Each runs at a different stage of the [build and deploy process](../../overview/build-deploy.md).
+Each runs at a different stage of the build and deploy process.
 
 Each hook is executed as a single script, so they're considered to have failed only if the final command in them fails.
 To cause them to fail on the first failed command, add `set -e` to the beginning of the hook.
@@ -70,20 +70,20 @@ build environments (the application plus the cache directory) and therefore appl
 If you exceed this limit, you receive a `No space left on device` error.
 It's possible to increase this limit in certain situations,
 but it's necessary to open a support ticket to do so.
-Consult the [disk space troubleshooting guide](./troubleshoot-disks.md#no-space-left-on-device) for more information on this topic.
+Consult the disk space troubleshooting guide for more information on this topic.
 
 ### Deploy hook
 
 The `deploy` hook is run after the application container has been started, but before it has started accepting requests.
 You can access other services at this stage (such as MySQL, Solr, Redis).
 The disk where the application lives is read-only at this point.
-Note that the deploy hook only runs on a [`web` instance](./app-reference.md#web),
-not a [`worker` instance](./app-reference.md#workers).
+Note that the deploy hook only runs on a `web` instance,
+not a `worker` instance.
 
 This hook should be used when something needs to run once for all instances of an app when deploying new code.
 It isn't run when a host is restarted (such as during region maintenance),
 so anything that needs to run each time an app starts (regardless of whether there's new code)
-should go in the `start` key in [your web configuration](./app-reference.md#commands).
+should go in the `start` key in your web configuration.
 
 Be aware: The deploy hook blocks the site accepting new requests.
 If your deploy hook is only a few seconds then incoming requests in that time are paused and continues when the hook completes,
