@@ -307,7 +307,7 @@ In the JSON object that's returned, you can notice that the `ciphertext` is diff
 
 ## Relationship
 
-The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](../../development-variables#platformsh-provided-variables):
+The format exposed in the `$PLATFORM_RELATIONSHIPS` environment variable:
 
 ```json  
 {

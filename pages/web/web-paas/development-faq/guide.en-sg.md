@@ -74,8 +74,8 @@ Increasing your plan size increases the pool of CPU and RAM that gets split amon
 
 All containers on development plans are "small" containers.
 
-See configuration options for [apps](../configuration/app/app-reference.md#sizes)
-and [services](../configuration/services/_index.md#sizes).
+See configuration options for apps
+and services.
 
 ## What exactly am I SSHing into?
 
