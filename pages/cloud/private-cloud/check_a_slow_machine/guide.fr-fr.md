@@ -1,6 +1,6 @@
 ---
 title: Vérifier une VM trop lente
-excerpt: 'Résoudre les problèmes de performance d'une VM'
+excerpt: Résoudre les problèmes de performance d'une VM
 slug: check_a_slow_machine
 section: Maintenance and monitoring
 ---
