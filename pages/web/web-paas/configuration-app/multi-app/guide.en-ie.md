@@ -12,7 +12,7 @@ section: App
 
 Web PaaS supports building multiple applications per project
 (for example RESTful web services with a front-end, or a main website and a blog).
-For resource allocation reasons, however, that is not supported on Standard plan.
+For resource allocation reasons, however, that is not supported on Start plan.
 
 > [!primary]  
 > 

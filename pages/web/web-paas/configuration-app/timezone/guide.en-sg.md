@@ -11,7 +11,7 @@ section: App
 ## Objective  
 
 All Web PaaS containers default to running in UTC time.
-You can set a different timezone for crons to run in the [app configuration](./app-reference.md).
+You can set a different timezone for crons to run in the app configuration.
 In most cases, it's best to leave all timezones in UTC and store user data with an associated timezone instead.
 But it's possible to set different timezones for specific app runtimes.
 
