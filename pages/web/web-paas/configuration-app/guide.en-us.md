@@ -19,7 +19,7 @@ Within a single project, you can have one or more app and each app can have mult
 Instances are where the same code can be run with different configurations,
 such as one for external communication and one for background processes.
 All of the apps and instances are configured with the same syntax.
-You can find a [complete reference](./app-reference.md) of all possible settings.
+
 
 ## A minimal application
 
@@ -57,33 +57,33 @@ web:
 You might have multiple apps you want to run from a single Git repository,
 such as a RESTful web service and a front-end or a main website and a blog.
 In such cases, you configure each app separately and define the relationships among them.
-See the various ways to set up a [multi-app project](./multi-app.md).
+See the various ways to set up a multi-app project.
 
 ## Connect to services
 
-If you want to use one of the [databases or other services Web PaaS provides](../services/_index.md),
+If you want to use one of the databases or other services Web PaaS provides,
 set it up by following these steps:
 
 1\. Configure the service based on the documentation for that service.
 
-1\. Use the information from that service inside your app's [`relationships` definition](./app-reference.md#relationships)
+1\. Use the information from that service inside your app's `relationships` definition
 
    to configure how your app communicates with the service.
 
 ## Control the build and deploy process
 
 Your app generally needs to undergo some steps to be turned from the code in your Git repository into a running app.
-If you're running a PHP or Node.js app, this starts with the [build flavor](./app-reference.md#build),
+If you're running a PHP or Node.js app, this starts with the build flavor,
 which runs a default set of tasks.
-Then any [global dependencies](./app-reference.md#dependencies) can be installed.
+Then any global dependencies can be installed.
 
-Once these optional tasks are done, you can run [hooks](./hooks.md) at various points in the process.
+Once these optional tasks are done, you can run hooks at various points in the process.
 Hooks are places for your custom scripts to control how your app is built and deployed.
 
 ## Configure what's served
 
 Once your app is built, it needs a defined way to communicate with the outside world.
-Define its behavior with a [`web` instance](./app-reference.md#web).
+Define its behavior with a `web` instance.
 There you can set what command runs every time your app is restarted,
 how dynamic requests are handled, and how to respond with static files.
 
