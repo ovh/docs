@@ -1,6 +1,6 @@
 ---
 title: Check a slow machine
-excerpt: ''
+excerpt: 'Troubleshoot performance issues on a VM'
 slug: check_a_slow_machine
 section: Maintenance and monitoring
 ---
