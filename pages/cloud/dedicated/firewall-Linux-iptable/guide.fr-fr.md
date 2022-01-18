@@ -1,7 +1,7 @@
 ---
 title: Configuer le firewall software sous Linux avec IPtables
 excerpt: Découvrez comment sécuriser un serveur avec iptables
-slug: firewall-software-Linux-IPtables
+slug: firewall-IPtables
 section: Premiers pas
 order: 7
 ---
