@@ -3,7 +3,7 @@ title: Creating a volume from a backup
 slug: create-volume-from-backup
 excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
 section: Storage
-order: 2
+order: 3
 ---
 
 **Last updated 6th April 2021**
