@@ -5,140 +5,163 @@ section: Administration
 order: 11
 ---
 
-**Last updated 1st September 2021**
+**Last updated 13th January 2022**
+
 
 
 ## Objective  
 
-Every Web PaaS user has a role that controls their access and permission levels. Different roles allow different levels of access to your applications, environments and projects. You can manage how users interact with your project and environments at Web PaaS
-
-Any user added to a project or an environment type on Web PaaS will need to [register for an account](https://www.ovh.com/auth/) before they can contribute. 
+Learn about user roles and environment types, how to add and delete users, and how to assign user permissions per environment type.
 
 ## Instructions
+
 ### User roles
 
-Grant user permissions to the entire project:
-* **Project Viewer** - A project viewer can view all environments of the project.
-* **Project Administrator** - A project administrator can change settings, push code and execute actions on all environments of the project.
+Within a project, each user has a role that controls their access and permission levels.
 
-You can also define user access per environment type (Production, Staging, Development). Each permission level progressively increases access to the environments part of a given environment type:
+* Project Admin: Users who can configure project settings, add and remove users, administer environment permissions, push code, and execute actions on all project environments.
+* Project Viewer: Any user with access to environment types automatically gets this role.
 
-* **Viewer** - Viewer can view all environments of this type.
-* **Contributor** - Contributor can push code and branch all environments of this type.
-* **Administrator** - Administrator can change settings and execute actions on all environments of this type.
-
-> [!primary]  
-> After you add or remove a user from a project or an environment type, you will need to trigger a redeploy to propagate the access changes to each environment.
-> You can redeploy by using the CLI command `webpaas redeploy` or the `Redeploy` button in the management console. 
-> 
-
-If you want your contributors to be able to see everything, but only commit to environments of a certain type, set their permission as **Project Viewer** for the whole project and update their permission on that environment type to **Contributor**.
-
-> [!primary]  
-> The project owner - the person licensed to use Web PaaS - has the project administrator role. The project owner is the only user that can make changes to the project plan. 
-> 
-
-### SSH Access
-
-By default, everyone with access equal or greater than **Contributor** can access the project through SSH. 
-
-You can customize who can SSH, by setting the `access` key in your `.platform.app.yaml` file. [See SSH Access restrictions](../configuration-app/access).
-
-### Manage user permissions with Console
-
-From your list of projects, select the project where you want to view or edit user permissions. Click the Settings tab at the top of the page, then click the `Access` tab on the left to show the project-level users and their roles.
-
-![Project user management screenshot](images/settings-project-access.png)
-
-The `Access` tab shows project-level users and their roles.
-
-Selecting a user will allow you either to edit that user's permissions or delete the user's access to the project entirely.
-
-To add a new user, log in to your OVHcloud Control Panel and switch to `Web Cloud`{.action} in the top navigation bar. Select `Web PaaS`{.action} in the services bar on the left-hand side. Then choose your project. In the project details page, select the `Users`{.action} tab and click on `Invite user`{.action}.
-
-You can either grant the `Project admin` role to the user, which will give them `Admin` access to every environment in the project, or grant specific permissions on each environment type.
+These control who has access to projects.
+Users can still see projects that they can't access if they're a member of an organization.
 
 
+To see all projects you have a role in, from the main console page
+click **All projects&nbsp;<span aria-label="and then">></span> All projects**.
 
-In order to push and pull code (or to SSH to one of the project's environments) the user will need to add an SSH key or use the WebPaas CLI.
+## Environment types
+
+Each environment type groups one or more environments together so that you can manage access for all environments of a certain type.
+This allows you to set permissions for multiple environments at once based on their purpose.
+
+Web PaaS offers three environment types: Production, Staging, and Development.
+You can assign user permissions for each environment type.
+Any permissions you assign to an environment type apply to all environments of that type.
+
+For example, if you assign User1 **Admin** permissions for Development environments,
+User1 has **Admin** permissions for all environments of that type.
+
+A few things to consider:
+
+* Only one environment per project can be the Production type. It's set automatically as the default branch and can't be overridden separately.
+* You can change an environment's type (if it's not Production).
+* You can have multiple Staging and Development environments.
+
+The following table shows the available roles for environment types.
+
+| Role | View environment | Push code | Branch environment | SSH access | Change settings | Execute actions |
+| ---- | ---------------- | --------- | ------------------ | ---------- | --------------- | --------------- |
+| Viewer | Yes | No |  No |  No |  No |  No |
+| Contributor | Yes | Yes | Yes | Yes | No | No |
+| Admin| Yes | Yes | Yes | Yes | Yes | Yes |
+
+To customize who can use SSH, [set the access key](../configuration-app/app-reference#access) in your `platform.app.yaml` file.
+
+## Manage users
+
+### Add a user to a project
+
+If you are an organization owner, or an organization user with manage plan or manage users permissions wanting to add a user to a project or an environment, follow these steps:
+
+> [!tabs]      
+> In the console     
+>> ``` false     
+>> 
+>> 
+>> 1. In the console, select the project where you want to add a new user.
+>> 2. Under **Settings**, click **Access**.
+>> 3. Click **+ Add**.
+>> 4. Add the user's details and choose their permissions.
+>> 5. Click **Save**.
+>> 
+>> 
+>> ```     
+> Using the CLI     
+>> ``` false     
+>> 
+>> 
+>> Say you want to add `user1@example.com` to the project with a Project Admin role:
+>> 
+>> ```bash
+>> webpaas user:add user1@example.com -r admin
+>> ```
+>> 
+>> ```     
+
+The user has to create an account before they can contribute to the project.
+Once you add a user to a project, they receive an email with instructions.
+For SSH access changes to apply after you add a user to a project, you have to redeploy each environment by either clicking **Redeploy** in the console or running `webpaas redeploy`.
+
+### Delete a user from a project
+
+To delete a user from a project, follow these steps:
+
+> [!tabs]      
+> In the console     
+>> ``` false     
+>> 
+>> 
+>> 1. In the console, select the project where you want to delete a user.
+>> 2. Under **Settings**, click **Access**.
+>> 3. Select the user you want to delete and click **Delete**.
+>> 4. Click **Save**.
+>> 
+>> 
+>> ```     
+> Using the CLI     
+>> ``` false     
+>> 
+>> To delete existing users:
+>> 
+>> ```bash
+>> webpaas user:delete user1@example.com
+>> ```
+>> ```     
+
+Once you delete a user, they can no longer access the project.
+After you delete a user from a project or an environment type, you must trigger a redeploy to propagate SSH access changes to each environment.
+You can redeploy by clicking **Redeploy** in the console or  using the CLI command `webpaas redeploy`.
+
+### Change existing permissions for environment types
+
+To change user permissions, follow these steps:
+
+> [!tabs]      
+> In the console     
+>> ``` false     
+>> 
+>> 
+>> 1. In the console, select the project where you want to change the user permissions.
+>> 2. Under **Settings**, click **Access**.
+>> 3. Select a user and change the permissions.
+>> 4. Click **Save**.
+>> 
+>> 
+>> ```     
+> Using the CLI     
+>> ``` false     
+>> 
+>> Say you want `user1@example.com` to have the Viewer role for Production environments
+>> and the Contributor role for Development environments:
+>> 
+>> ```bash
+>> webpaas user:update user1@example.com -r production:v,development:c
+>> ```
+>> 
+>> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
+>> 
+>> ```     
+
+### Transfer project ownership
+
+You can transfer your plan ownership to a different organization anytime.
+You have to be an organization owner or an organization user with manage plan permissions.
+
+1\. Make the new organization owner a Project Admin for the project you want to transfer.
+
+2\. Submit a support ticket from your organization account to ask for the transfer.
 
 
-
-### Manage users permissions with the CLI
-
-You can use the [Web PaaS CLI (Command Line Interface)](../development-cli). to fully manage your users and integrate with any automated system.
-
-Available commands:
-
-
-
-* `webpaas user:delete`
-    * Delete a user
-* `webpaas user:list` (`users`)
-    * List project users
-* `webpaas user:role`
-    * View or change a user's role
-
-
-
-```bash
-
-```
-
-
-
-To give Bob different levels of access depending on the environment type, in the current project:
- 
--  **Viewer** role to the **Production environment**
-
--  **Contributor** role to **all Staging type environments**
-
--  **Admin** role to **all Development type environments**
-
-
-You would run:
-
-```bash
-webpaas user:role bob@example.com -r production:viewer -r staging:contributor -r development:admin
-```
-
-Use `webpaas list` to get the full list of commands.
-
-### User access and integrations
-
-If you have setup an [external integration](../integrations-source) to GitHub, GitLab, or Bitbucket, this adds an additional layer of access control to the project that you will need to be aware of.
-
-For example, if you invite a user with **Project Admin** role to a project on Web PaaS, but you haven't invited them to the remote repository on GitHub / GitLab, they might be [unable to clone the project](../administration-web#git) locally.
-
-In this example, using either `webpaas get` with the CLI:
-
-```bash
-$ webpaas get <projectID>
-
-```
-
-or the `git clone` command visible from the "Git" dropdown in the management console
-
-```bash
-$ git clone git@github.com:user/github-repo.git Project Name
-```
-
-both would error with
-
-```bash
-Failed to connect to the Git repository: git@github.com:user/github-repo.git
-
-Please make sure you have the correct access rights and the repository exists.
-```
-
-despite their **Project Admin** access to the project.
-
-This enhaces consistency over your source code, as the Web PaaS project functions as a read-only mirror of your remote repository. Otherwise, changes pushed directly to the project would be overwritten or deleted when commits are pushed via the integration. Web PaaS considers your integrated remote repository to be the "source of truth" as soon as it has been configured, and this caveat ensures that all commits go through the integration.
-
-The best course of action is to have your access updated on the integrated repository. If for some reason that is not a quick change, you can still clone through the project using the legacy pattern (which will set the *project* as its remote), but again, it is not recommended that you commit to the project once you have done so:
-
-```bash
-$ git clone <project>@git.<region>.platform.sh:<project>.git
-```
+Once the transfer is completed, the new organization can administer all project settings and billing and receives future invoices.
 
 
