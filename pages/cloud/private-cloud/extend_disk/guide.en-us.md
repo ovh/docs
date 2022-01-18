@@ -15,8 +15,8 @@ We will demonstrate how to use vSphere and OS management tools to add space to y
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
 
 ## Instructions
 
@@ -72,7 +72,7 @@ You can now see your disk fully extended and available.
 > [!primary]
 >
 > For Linux VMs, we'll use a partition utility. There are many available products and we do not recommend any over the others. Our use of [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) is in no way an endorsement.
-> For creating an ISO library and mounting an ISO to a VM, refer to [How to connect an ISO image to a VM](https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/).
+> For creating an ISO library and mounting an ISO to a VM, refer to [How to connect an ISO image to a VM](https://docs.ovh.com/us/en/private-cloud/connect_iso_to_vm/).
 
 In the vSphere interface menu, go to the `Hosts & Clusters`{.action} dashboard.
 
@@ -82,7 +82,7 @@ On the left side, navigate to the VM you wish to modify, right-click it and sele
 
 ![EDIT](images/en10vm.png){.thumbnail}
 
-Connect the utility ISO to your VM ([How to connect an ISO image to a VM](https://docs.ovh.com/gb/en/private-cloud/connect_iso_to_vm/)).<br> 
+Connect the utility ISO to your VM ([How to connect an ISO image to a VM](https://docs.ovh.com/us/en/private-cloud/connect_iso_to_vm/)).<br> 
 Find the disk you are expanding and modify the size value as needed (in our case, we changed the value from 20 to 70 GB).<br>
 
 ![EDIT](images/en11hdd.png){.thumbnail}

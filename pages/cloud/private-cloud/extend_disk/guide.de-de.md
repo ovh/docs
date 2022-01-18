@@ -1,8 +1,10 @@
 ---
-title: Extend Volume in vSphere and in OS
+title: Volume in vSphere und einem Betriebssystem erweitern (EN)
 slug: extend-disk
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/extend-disk/'
 excerpt: How to add space to your virtual disk and integrate it in your VM
-section: Maintenance and monitoring
+section: Verwaltung virtueller Maschinen
 ---
 
 **Last Updated on 13th January 2022**
@@ -15,8 +17,8 @@ We will demonstrate how to use vSphere and OS management tools to add space to y
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
 
 ## Instructions
 

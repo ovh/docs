@@ -15,8 +15,8 @@ Nous allons vous montrer comment utiliser vSphere et les outils de gestion d'OS 
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
-- Disposer d'un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Disposer d'un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 
@@ -73,7 +73,7 @@ Le disque est maintenant étendu et prêt à l'usage.
 >
 > Pour les VM sous Linux, nous utilisons un utilitaire de partition. Il existe de multiples produits et nous n'en avons aucun à recommander en particulier. L'utilisation de [GParted LiveCD](http://gparted.sourceforge.net/livecd.php) ne signifie pas que nous recommandons son utilisation.
 > 
-> Pour créer une librairie d'ISOs et monter un ISO sur une VM, consultez notre guide pour [Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/).
+> Pour créer une librairie d'ISOs et monter un ISO sur une VM, consultez notre guide pour [Connecter une image ISO à une VM](https://docs.ovh.com/ca/fr/private-cloud/connect_iso_to_vm/).
 
 
 Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.
@@ -84,7 +84,7 @@ Sur la gauche de votre écran, naviguez vers la VM à modifier, faites un clic-d
 
 ![EDIT](images/en10vm.png){.thumbnail}
 
-Connectez l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](https://docs.ovh.com/fr/private-cloud/connect_iso_to_vm/)).<br> 
+Connectez l'image ISO de l'utilitaire à la VM ([Connecter une image ISO à une VM](https://docs.ovh.com/ca/fr/private-cloud/connect_iso_to_vm/)).<br> 
 Trouvez le disque à étendre et modifiez la valeur de sa taille (dans notre exemple, changement de 20 à 70 GB).<br>
 
 ![EDIT](images/en11hdd.png){.thumbnail}
