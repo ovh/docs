@@ -1,7 +1,7 @@
 ---
 title: Configuer le firewall software sous Windows
 excerpt: Découvrez comment configurer votre pare-feu sous Windows
-slug: Configurer-firewall-software-windows
+slug: firewall-Windows
 section: Premiers pas
 order: 6
 ---
