@@ -725,6 +725,40 @@ With the API, ask for the vDC deletion:
 > @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
+## FAQ
+
+Please find below a list of Frequently Asked Questions, do not hesitate to submit your own via github.
+
+> [!faq]
+>
+> Are there any constraints or impact when sharing a datastore across my vDCs ?
+>> No, there is no impact on current workload or on billing, or on ZFS snapshots. However, currently you are unable to unshare a datastore. we will change this later. 
+> Will the VMs (with public IPs) be accesibles from the exterior if they are in the new vDC when the PFSENSE are in the old vDC?
+>> Yes, VM network is on the VMware infrastructure level and so on the 2 vDC.
+> Can I implement a PFSENSE in the old vDC and another one in the new vDC?
+>> Yes, it’s even required to have 2 different PFSENSEs to avoid IP conflicts
+> Are vxlans available on both vDC?
+>> vxlan are available on Premier only, and not on Essentials (as there is no NSX deployed)
+> What licenses MS are available in SPLA mode ?
+>> Windows licences (standard and datacenter) and SQL server licences (standard and web) are available on 2020 offers in SPLA mode
+> I have to upgrade 2 VMware infrastructure that are currently used for DR purposes with data replication done by Zerto. Should I firstly upgrade my secondary infrastructure or my primary infrastructure ?
+>> There is no right or wrong, we recommand upgrading the secondary infrastructure first to master the upgrade process before upgrading the primary one.
+> Will the historical pricing cap on houlry ressource still be deployed?
+>> No, the capping system has been disable on 2020 offers (Premier&Essentials). All previous ranges will continue to run with the capping in place. 
+> Will my old offer pricing change ?
+>> No repricing of old offers is planned
+> In what language are OVHcloud's Professional Services available ?
+>> OVHcoud's Professionnal Services are available both in French and English
+> Can OVHcloud's Professsional Services recreate his user accounts & NSX configurations for me ?
+>> Our Professional Services will not run any operations on the customer's infrastructure. We are here to help, guide and provide advice. In this case, we will direct our customer to a partners, who can run operations in customer infrastructure. 
+> How long does the Pack of Technical Advice Services credits last?
+>> This service lasts for 3 months from date of order
+> How do I know how many hours of Credits have been used, and are remaining ?
+>> Your OVHcloud Sales contact or Technical Lead contact are able to give this information
+> What happens if the Advice Service session takes less time than planned ?
+>> A session is scheduled and accounted in blocks of 1 hour. For example, a session scheduled for 2 hours but taking 1.5 hours would be billed at 2 hours. A session scheduled for 3 hours but only took 1.5 would be charged at 2 hours
+
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

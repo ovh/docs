@@ -751,6 +751,40 @@ Avec l'API, demandez la suppression du vDC :
 > @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
+## FAQ
+
+Please find below a list of Frequently Asked Questions, do not hesitate to submit your own via github.
+
+> [!faq]
+>
+> Quels sont les impacts lors du partage de mes datastores entre mes vDCs ?
+>> Non, il n'y a aucun impact sur votre production, sur la facturation ou sur les snapshots ZFS. Cependant, actuellement il n'est pas possible d'annuler le partage d'un datastore. nous modifierons cela plus tard
+> Est-ce que les VMs (avec IP publiques) seront accessibles depuis l’extérieur si elles sont dans le nouveau vDC quand les PFSENSE sont dans l’ancien vDC ?
+>> Oui, le VM network est au niveau de l'infrastructure VMware et donc sur les 2 vDCs
+> Est-il possible de mettre en place un PFSENSE dans l'ancien vDC et un autre dans le nouveau vDC ?
+>> Oui, il est même nécessaire d'avoir 2 PFSENSE différents pour éviter les conflits d'IP
+> Les vxlan sont-ils disponibles sur les deux vDC ?
+>>  vxlan sont disponibles uniquement sur Premier et non sur Essentials
+> Quelles sont les licences Microsoft disponibles en mode SPLA ?
+>> Les licences Windows (standard et datacentre) et SQL Server (standard et web) sont disponibles sur les offres 2020 en mode SPLA
+> Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
+>> Il n'y a pas d'obligation, nous vous recommandons d'upgrader d'abord l'infrastructure secondaire pour maîtriser le processus avant d'upgrader l'infrastructure principale
+> Le plafond historique sur les ressources horaires sera-t-il toujours déployé ?
+>> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier&Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place
+> Le prix des anciennes offres va-t-il évoluer?
+>> Non, il n'y a pas de modification tarifaires des anciennes offres prévues
+>  Dans quelle langue les Services Professionnels d’OVHcloud sont-ils disponibles ?
+>> Les Services professionnels OVHcloud sont disponibles en français et en anglais
+> Est-ce que les Services Professionnels d’OVHcloud peuvent recréer mes comptes utilisateurs & configurations NSX pour moi ?
+>> Nos Services Professionnels n’effectuent aucune opération sur l’infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client. 
+> Quelle est la durée de vie des crédits du Pack of Technical Advice Services ?
+>> Le pack est valide pour une durée de 3 mois à compter de la commande
+> Comment savoir combien d'heures de Crédits ont été utilisées et sont restantes ?
+>> Votre interlocuteur commercial ou référent technique OVHcloud est en mesure de fournir ces informations
+> Que se passe-t-il si la session du service de conseil prend moins de temps que prévu ?
+>> Une session est planifiée et comptabilisée en bloc de 1 heure. Par exemple, une session programmée sur 2 heures et prenant 1,5 heure serait facturée sur 2 heures. Une session prévue pour 3 heures mais seulement prise 1,5 serait facturé à 2 heures
+
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
