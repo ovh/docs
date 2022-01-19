@@ -69,13 +69,10 @@ Si vous utilisez une base de données **SQL privé** pour votre site Web, consul
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`{.action} puis sur`Statistiques et logs`{.action}.
+Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 
-Cliquez ensuite sur le lien sous la mention **Logs** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
 
