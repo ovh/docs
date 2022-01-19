@@ -1,13 +1,13 @@
 ---
 title: Créer un snapshot
 slug: creer-un-snapshot
-excerpt: Retournez à un état précédent de vos VMs à l'aide des snapshots
+excerpt: "Retournez à un état précédent de vos VMs à l'aide des snapshots"
 legacy_guide_number: '7766547'
 section: Gestion des machines virtuelles
 order: 08
 ---
 
-**Dernière mise à jour le 12/01/2022**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ VMWare offre la possibilité de créer des snapshots pour permettre le retour à
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
 - Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
@@ -25,10 +25,10 @@ VMWare offre la possibilité de créer des snapshots pour permettre le retour à
 ### Prendre un Snapshot
 
 Un snapshot capture l'etat d'une VM.<br>
-Cela ajoute une couche de protection pour votre VM avant de procéder à des changement, en permettant de revenir à cet état si besoin.
+Cela ajoute une couche de protection pour votre VM avant de procéder à des changements, en permettant de revenir à cet état si besoin.
 
-Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Prendre un snapshot`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Prendre un snapshot`{.action}.
 
 ![TAKE](images/en01take.png){.thumbnail}
 
@@ -56,8 +56,8 @@ Voici comment restaurer ou supprimer les snapshots.
 
 #### Restaurer un Snapshot
 
-Dans l'interface vSphere, rendez-vous dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Gérer les snapshots`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Gérer les snapshots`{.action}.
 
 ![MANAGE](images/en03manage.png){.thumbnail}
 
@@ -78,8 +78,8 @@ Vous pouvez alors cliquer sur `Terminé`{.action}, votre VM est revenue à l'ét
 
 #### Supprimer un Snapshot
 
-Dans l'interface vSphere, rendez-vous dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Gérer les snapshots`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Gérer les snapshots`{.action}.
 
 ![MANAGE](images/en03manage.png){.thumbnail}
 
@@ -103,8 +103,8 @@ Vous pouvez cliquer sur `Terminé`{.action}, le snapshot est alors supprimé.
 
 La consolidation des snapshots est utile lorsque les disques de snapshots ne parviennent pas à se compresser après une opération de suppression. Après la consolidation, les disques redondants sont supprimés, ce qui améliore les performances des machines virtuelles et permet d'économiser de l'espace de stockage.
 
-Dans l'interface vSphere, rendez-vous dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Consolider`{.action}
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Snapshots`{.action}, sélectionnez `Consolider`{.action}
 
 ![CONSOLIDATE](images/en08consolidate.png){.thumbnail}
 

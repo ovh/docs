@@ -7,8 +7,7 @@ section: Maintenance and monitoring
 order: 08
 ---
 
-**Last updated 28th July 2020**
-
+**Last updated 19th January 2022**
 
 ## Objective
 
@@ -29,7 +28,7 @@ A snapshot allows you to capture a VM state.<br>
 It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
+Navigate to your VM, right-click it and, in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
 
 ![TAKE](images/en01take.png){.thumbnail}
 
@@ -37,7 +36,7 @@ By default, the snapshot will be named after the current date and time. You may 
 A description may also be added for reference.<br>
 If your VM is running, the snapshot process offers two options:
 
-- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash resistant, meaning it can be reverted to without powering off the VM.
+- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash-resistant, meaning it can be reverted to without powering off the VM.
 - Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br>
 
 If your VM is not running, those options are greyed out.<br>
@@ -112,7 +111,6 @@ Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, sel
 Confirm by clicking `YES`{.action}.
 
 ![CONFIRM](images/en09confirm.png){.thumbnail}
-
 
 You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 

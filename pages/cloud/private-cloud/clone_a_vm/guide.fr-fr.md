@@ -30,8 +30,8 @@ Cloner vers un modèle est un meilleur moyen pour créer une copie originale qui
 
 #### Cloner vers une VM
 
-Dans l'interface vSphere, rendez-vous dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers une machine virtuelle`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers une machine virtuelle`{.action}.
 
 ![CLONE](images/en08clonevm.png){.thumbnail}
 
@@ -49,7 +49,6 @@ Sélectionnez le lieu de stockage.<br>
 Cliquez sur `Suivant`{.action}.
 
 ![CLONE](images/en11clonestor.png){.thumbnail}
-
 
 Sélectionnez les options nécessaire pour le clone.
 
@@ -73,8 +72,8 @@ Le processus de clonage s'enclenche et, à l'issue de celui-ci, la nouvelle VM s
 
 #### Cloner vers un modèle
 
-Dans l'interface vSphere, rendez-vous dans le Tableau de bord `Hôtes et clusters`{.action}.<br>
-Naviguez jusqu'à votre VM, faites un clic droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers un modèle`{.action}.
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers un modèle`{.action}.
 
 ![TEMPLATE](images/en14clonetemp.png){.thumbnail}
 
@@ -101,7 +100,6 @@ Le processus de clonage va s'exécuter.<br>
 Aucune VM n'est directement visible mais le nouveau modèle est utilisable dans l'option "Déployer depuis un modèle".
 
 ![TEMPLATE](images/en19deploy.png){.thumbnail}
-
 
 ## Aller plus loin
 

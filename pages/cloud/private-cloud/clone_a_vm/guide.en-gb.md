@@ -12,7 +12,7 @@ order: 07
 
 VMWare offers the ability to clone a VM to create another one or a template.
 
-**This guide explains how to execute those tasks**
+**This guide explains how to execute those tasks.**
 
 ## Requirements
 
@@ -73,7 +73,7 @@ The cloning process will go through and the new VM is ready for you.
 #### Clone to Template
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
-Navigate to your VM, right click on it and in the `Clone`{.action} menu, select `Clone to Template`{.action}.
+Navigate to your VM, right click it and, in the `Clone`{.action} menu, select `Clone to Template`{.action}.
 
 ![TEMPLATE](images/en14clonetemp.png){.thumbnail}
 
@@ -100,7 +100,6 @@ The cloning to template process will go through.<br>
 No VM is directly visible but when deploying new VM, the clone will show in the "Deploy from Template" option.
 
 ![TEMPLATE](images/en19deploy.png){.thumbnail}
-
 
 ## Go further
 
