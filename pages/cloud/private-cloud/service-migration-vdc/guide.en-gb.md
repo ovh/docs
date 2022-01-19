@@ -11,7 +11,7 @@ hidden: true
 
 **Last updated 19th January 2022**
 
-**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC)  to a new destination vDC (Essentials or Premier).**
+**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
 > [!warning]
 >
@@ -20,12 +20,12 @@ hidden: true
 
 ## Objective
 
-In 2020, OVHcloud has launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
+In 2020, OVHcloud has launched 2 new ranges: Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
-There are two aspects involved in this process
+There are two aspects involved in this process:
 
 - The OVHcloud infrastructure itself which includes the customer's side of administrating an infrastructure.
-- The VMware infrastructure, which includes the entire VMware eco-system.
+- The VMware infrastructure, which includes the entire VMware ecosystem.
 
 ## Requirements
 
@@ -737,26 +737,26 @@ Please find below a list of Frequently Asked Questions, do not hesitate to submi
 >> Yes, VM network is on the VMware infrastructure level and so on the 2 vDC.
 > Can I implement a PFSENSE in the old vDC and another one in the new vDC?
 >> Yes, it’s even required to have 2 different PFSENSEs to avoid IP conflicts.
-> Are vxlans available on both vDC?
->> The vxlan are available on Premier only, and not on Essentials (as there is no NSX deployed).
-> What Microsoft licenses are available in SPLA mode ?
+> Are vxLANs available on both vDC?
+>> The vxLANs are available on Premier only, and not on Essentials (as there is no NSX deployed).
+> What Microsoft licenses are available in SPLA mode?
 >> Windows licences (standard and datacenter) and SQL server licences (standard and web) are available on 2020 offers in SPLA mode.
-> I have to upgrade 2 VMware infrastructures that are currently used for DR purposes with data replication done by Zerto. Should I first upgrade my secondary infrastructure or my primary infrastructure ?
+> I have to upgrade 2 VMware infrastructures that are currently used for DR purposes with data replication done by Zerto. Should I first upgrade my secondary infrastructure or my primary infrastructure?
 >> There is no right or wrong, we recommend upgrading the secondary infrastructure first to master the upgrade process before upgrading the primary one.
 > Will the historical pricing cap on hourly resources still be deployed?
 >> No, the capping system has been disabled on 2020 offers (Premier & Essentials). All previous ranges will continue to run with the capping in place. 
-> Will my old offer pricing change ?
+> Will my old offer pricing change?
 >> No repricing of old offers is planned.
-> In what language are OVHcloud's Professional Services available ?
+> In what language are OVHcloud's Professional Services available?
 >> OVHcloud's Professional Services are available both in French and English.
-> Can OVHcloud's Professional Services recreate my user accounts & NSX configurations for me ?
->> Our Professional Services will not run any operations on the customer's infrastructure. We are here to help, guide and provide advice. In this case, we will redirect our customers to partners, who can run operations in customer infrastructure. 
+> Can OVHcloud's Professional Services recreate my user accounts & NSX configurations for me?
+>> Our Professional Services will not run any operations on the customer's infrastructure. We are here to help, guide and provide advice. In this case, we will redirect our customers to partners, who can run operations in customer infrastructures. 
 > How long does the Pack of Technical Advice Services credits last?
 >> This service lasts for 3 months from date of order.
-> How do I know how many hours of Credits have been used, and are remaining ?
->> Your OVHcloud Sales contact or Technical Lead contact are able to give you this information
-> What happens if the Advice Service session takes less time than planned ?
->> A session is scheduled and accounted in blocks of 1 hour. For example, a session scheduled for 2 hours but taking 1.5 hours would be billed at 2 hours. A session scheduled for 3 hours but only took 1.5 would be charged at 2 hours.
+> How do I know how many hours of credits have been used, and are remaining?
+>> Your OVHcloud Sales contact or Technical Lead contact are able to give you this information.
+> What happens if the Advice Service session takes less time than planned?
+>> A session is scheduled and accounted in blocks of 1 hour. For example, a session scheduled for 2 hours but taking 1.5 hours would be billed at 2 hours. A session scheduled for 3 hours which only took 1.5 hours would be charged at 2 hours.
 
 ## Go further
 
