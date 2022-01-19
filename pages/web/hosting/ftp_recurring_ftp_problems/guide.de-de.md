@@ -86,7 +86,7 @@ Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud inst
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Wenn Sie die Funktion “[1-Klick-Modul](https://docs.ovh.com/fr/hosting/modules-en-1-clic/)“ nicht für Ihre Website verwendet haben, müssen Sie das über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugängliche [Net2FTP-Programm](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/#1-via-ftp-explorer-verbinden) verwenden, um die Seite “Site under construction“ manuell zu löschen.
+Wenn Sie die Funktion “[1-Klick-Modul](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/)“ nicht für Ihre Website verwendet haben, müssen Sie das über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugängliche [Net2FTP-Programm](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/#1-via-ftp-explorer-verbinden) verwenden, um die Seite “Site under construction“ manuell zu löschen.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
