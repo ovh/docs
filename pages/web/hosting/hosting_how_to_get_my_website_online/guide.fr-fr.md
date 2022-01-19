@@ -31,7 +31,7 @@ Avoir une vision claire de votre objectif est primordial pour mener à bien votr
 
 - **Utiliser un site clés en main à installer manuellement** : cette solution permet de bénéficier d’une structure de site prête à l’emploi à personnaliser (thème, textes, etc.) que vous devrez installer vous-même sur votre hébergement web OVHcloud.
 
-- **Créer vous même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
+- **Créer vous-même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
 - **Migrer un site internet déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}.
 
@@ -138,13 +138,13 @@ Créer ce lien dépend du site internet que vous êtes en train de mettre en lig
 
 Une fois les fichiers téléchargés sur votre espace de stockage et la base de données liée à ce dernier (si votre site en utilise une), vous pouvez à présent accéder à votre site internet. Celui-ci devrait ainsi s'afficher correctement par le biais de votre navigateur.
 
-Si vous constatez que celui-ci ne s'affiche pas correctement, nous vous conseillons de :
+Si vous constatez que celui-ci ne s'affiche pas correctement:
 
 - **vérifier la configuration du nom de domaine** : il se peut que la configuration DNS du nom de domaine ne permette pas à celui-ci d'afficher le site que vous venez de télécharger sur votre hébergement web OVHcloud. Assurez-vous que l'enregistrement A paramétré actuellement dans la zone DNS de votre domaine correspond bien à l'adresse IP de votre hébergement web OVHcloud ;
 
 - **vous assurer qu'aucun fichier n'est manquant** : il se peut que lors du téléchargement des fichiers vers votre hébergement web OVHcloud, vous ayez oublié des fichiers ou qu'une erreur se soit produite. Soyez tout de même vigilant lors de vos manipulations afin de ne pas briser le lien entre les fichiers du site et la base de données (si ce dernier en utilise une) ;
 
-- **vérifier que le code du site ne comporte pas d'erreur** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site internet.
+- **vérifier que le code du site ne comporte pas d'erreurs** : cette vérification est sûrement la plus technique, mais il se peut que les fichiers que vous avez téléchargés comportent des erreurs et ne permettent pas au serveur d'afficher correctement, voir pas du tout, votre site internet.
 
 Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de votre site internet, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service (du CMS installé par exemple).
 

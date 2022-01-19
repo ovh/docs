@@ -67,7 +67,7 @@ Après l'envoi de la commande, vous serez invité à renseigner le mot de passe 
 
 #### 3.2 Depuis un logiciel
 
-Une fois le logiciel (PuTTY par exemple) ouvert, renseignez les informations de connexion SSH. Cette manipulation étant inhérente à celui-ci, nous ne pouvons pas la détailler dans cette documentation. Si besoin, voici un rappel des informations que vous devrez y renseigner :
+Une fois le logiciel (PuTTY par exemple) ouvert, renseignez les informations de connexion SSH. Cette manipulation étant inhérente à celui-ci, nous ne pouvons pas la détailler dans cette documentation. Voici un rappel des informations que vous devrez y renseigner :
 
 
 - **Serveur SSH**: Indiquez l'adresse de serveur SSH récupérée [lors de l'étape 2](#sshlogin). Selon le logiciel utilisé, la dénomination peut ressembler à : « Adresse de serveur », « Nom d'hôte », ou encore « Host Name ».
@@ -86,7 +86,7 @@ Pour interagir avec votre espace de stockage, vous devez utiliser des commandes.
 |pwd|Print working directory|Affiche le répertoire de travail dans lequel vous vous situez.| 
 |cd `arg`|Change directory|Permet de changer de répertoire de travail pour celui renseigné à la place de `arg`.|
 |cd `..`|Change directory|Permet de changer de répertoire de travail en remontant d’un niveau dans l’arborescence de vos répertoires.|
-|cd|Change directory|En ne spécifiant pas d'argument, permet de se repositionner à la racine de votre espace de stockage (home).|
+|cd|Change directory|En ne spécifiant pas d'argument,elle permet de se repositionner à la racine de votre espace de stockage (home).|
 |ls|List|Liste le contenu du répertoire de travail. Ajoutez des attributs pour modifier l'affichage du résultat de la commande (comme `ls -ulhG`).| 
 |chmod `droit` `arg`|Change mode|Change les droits du fichier ou du répertoire mentionné en tant qu'argument `arg`.| 
 |mkdir `arg`|Make directory|Permet de créer un repertoire portant le nom de l'argument `arg`.| 
@@ -95,7 +95,7 @@ Pour interagir avec votre espace de stockage, vous devez utiliser des commandes.
 |rm -r `arg`|Remove|Supprime le répertoire mentionné en tant qu'argument `arg`, ainsi que tout son contenu de manière récursive.| 
 |mv `arg1` `arg2`|Move|Renomme ou déplace un élément (spécifié en tant que `arg1`) vers un nouvel endroit (spécifié en tant que `arg2`).| 
 
-Via une commande, vous pouvez également lancer un script en utilisant une version spécifique de PHP. Par exemple, pour la version de PHP 7.1, utilisez la commande suivante. Adaptez-en ses éléments à votre situation personnelle.
+Vous pouvez également lancer un script en utilisant une version spécifique de PHP. Par exemple, pour la version de PHP 7.1, utilisez la commande suivante. Adaptez-en ses éléments à votre situation personnelle.
 
 ```sh
 /usr/local/php7.1/bin/php myscript.php
