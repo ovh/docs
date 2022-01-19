@@ -106,7 +106,7 @@ Complete and write down the configuration for `awscli` into `~/.aws/config`:
 [plugins]
 endpoint = awscli_plugin_endpoint
 
-[profile default]
+[default]
 aws_access_key_id = <access fetched in previous step>
 aws_secret_access_key = <secret fetched in previous step>
 region = <public cloud region in lower case without digit>
