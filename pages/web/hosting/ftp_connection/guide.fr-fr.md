@@ -5,7 +5,7 @@ excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hé
 section: 'FTP et SSH'
 order: 1
 ---
-**Dernière mise à jour le 13/01/2022**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 

@@ -5,7 +5,7 @@ excerpt: "Apprenez à vous connecter et utiliser l'accès SSH de votre hébergem
 section: 'FTP et SSH'
 ---
 
-**Dernière mise à jour le 04/08/2020**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
