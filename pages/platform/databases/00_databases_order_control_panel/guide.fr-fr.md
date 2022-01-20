@@ -5,7 +5,7 @@ slug: getting-started
 section: General information
 order: 1
 routes:
-	canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started'
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
 ---
 
 **Last updated 11th October 2021**
