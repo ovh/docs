@@ -19,24 +19,23 @@ Pour l'utiliser, nous vous recommandons de prendre connaissance de la partie « 
 
 **Découvrez comment interrompre vos abonnements OVHcloud.**
 
-> [!primary]
->
-> Avoir votre retour en tant que client d'OVHcloud est essentiel pour nous. Cela nous permet de faire évoluer nos produits, afin qu'ils soient réellement adaptés à vos besoins.
->
-> N'hésitez donc vraiment pas à préciser les raisons de votre décision lors de la [résiliation](#resilisation) de votre service.
->
-
 ## Que se passe-t-il lorsqu'un service OVHcloud est résilié ? <a name="consequences"></a>
 
 La « *résiliation* » concernant l'un de vos services OVHcloud signifie qu'à la fin de l'abonnement en cours, il sera interrompu de façon définitive. 
 
-S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées, **sans possibilité de récupération**.
+Elle sera effective lorsque la période de validité de votre abonnement sera terminée. Vous pouvez résilier un service ou annuler une résiliation jusqu'à 24 heures avant cette date.
 
-S'il s'agit d'un nom de domaine ou d'un numéro de téléphone, ils seront remis en circulation sous un certain délai et pourront être **rachetés par d'autres clients**.
+S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées **sans possibilité de récupération**.
 
-Ceci implique que vous devez être **certain** avant toute résiliation (et même si celle-ci peut être [annulée](#annulation) avant que l'abonnement concerné n'arrive à échéance) que l'opération va concerner un service que vous ne souhaitez plus utiliser, que vous possédez, si nécessaire, une solution fonctionnelle pour le remplacer et que vous avez sauvegardé l'ensemble des données concernées.
+S'il s'agit d'un nom de domaine ou d'un numéro de téléphone, ils seront remis en circulation et pourront être **commandés par d'autres clients**.
 
-## Comment résilier votre abonnement ? <a name="resilisation"></a>
+Ceci implique que vous devez être **certain** avant toute résiliation :
+
+- que l'opération va concerner un service que vous ne souhaitez plus utiliser ;
+- que vous possédez, si nécessaire, une solution *fonctionnelle* pour le remplacer ;
+- que vous avez sauvegardé l'ensemble des données concernées.
+
+## Comment résilier votre abonnement ?
 
 ### Serveurs dédiés
 
@@ -45,6 +44,8 @@ Ceci implique que vous devez être **certain** avant toute résiliation (et mêm
 ### Hosted Private Cloud
 
 ### Web Cloud (Offres mutualisées)
+
+#### Domaines
 
 #### Hébergement Web
 
@@ -56,7 +57,19 @@ Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résili
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
+> [!primary]
+>
+> Avoir votre retour est essentiel pour nous. Cela nous permet de faire évoluer nos services, afin qu'ils répondent au mieux à vos besoins et à vos attentes.
+>
+> N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud (via le formulaire en fin de page). Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
+>
+
+Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
+
+![main_reason_why](images/main_reason_why.png){.thumbnail}
+
 #### Certificat SSL
+
 #### Service E-mail MX Plan
 #### Service E-mail Pro
 #### Service E-mail Exchange
