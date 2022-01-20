@@ -53,7 +53,7 @@ N'oubliez pas de déployer la configuration.
 Pour ce faire, dans le bandeau de rappel du Manager vous précisant que la configuration n'est pas appliquée,
 cliquez sur `Appliquer la configuration`{.action}.
 
-![Application d'une Configuration d'un Load Balancer](images/apply_configuration.png){.thumbnail}
+![Application d'une Configuration d'un Load Balancer](apply_configuration.PNG){.thumbnail}
 
 
 #### Utiliser plusieurs zones
