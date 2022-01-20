@@ -1,8 +1,8 @@
 ---
-title: Comment commander et gérer une base de données via API (EN)
+title: Commander et gérer une base de données via API (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 slug: order-api
-section: General information
+section: Informations générales
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-api/'
@@ -18,7 +18,7 @@ Public Cloud managed databases allow you to focus on building and deploying clou
 
 ## Requirements
 
-- access to the [OVHcloud API](https://api.ovh.com/console/){.external} (create your credentials by consulting [this guide](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/))
+- access to the [OVHcloud API](https://api.ovh.com/console/){.external} (create your credentials by consulting [this guide](https://docs.ovh.com/ca/fr/api/api-premiers-pas/))
 - a [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
 
 ## Instructions
@@ -131,4 +131,4 @@ You’ll find the cluster connection information in your Control Panel; you can 
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

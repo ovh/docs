@@ -70,7 +70,7 @@ Please note that attaching to a private network is a feature we are currently wo
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/creation_opensearch06.png){.thumbnail}
 

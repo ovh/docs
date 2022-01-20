@@ -78,7 +78,7 @@ Please note that attaching a private network is a feature not yet available at t
 
 #### Step 6: Review and confirm
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/kafka_configuration.png){.thumbnail}
 

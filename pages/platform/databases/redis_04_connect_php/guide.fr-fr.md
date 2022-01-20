@@ -1,5 +1,5 @@
 ---
-title: Redis - Connectez-vous avec PHP (EN)
+title: Redis - Se connecter avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for Redis using the PHP programming language
 slug: redis/connect-php
 section: Redis
@@ -155,4 +155,4 @@ Congratulations! Everything is working properly.
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

@@ -1,5 +1,5 @@
 ---
-title: Kafka - Capacités et limites (EN)
+title: Kafka - Capacités et limitations (EN)
 slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 section: Kafka

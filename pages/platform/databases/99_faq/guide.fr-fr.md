@@ -2,7 +2,7 @@
 title: FAQ (EN)
 excerpt: 'Frequently Asked Questions on Public Cloud Databases'
 slug: faq
-section: General information
+section: Informations générales
 order: 3
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/faq/'
@@ -457,6 +457,6 @@ If your data is corrupted, you have 2 options:
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

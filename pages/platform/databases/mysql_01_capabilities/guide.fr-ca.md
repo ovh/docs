@@ -1,5 +1,5 @@
 ---
-title: MySQL - Capacités et limites (EN)
+title: MySQL - Capacités et limitations (EN)
 slug: mysql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for MySQL
 section: MySQL - Guides

@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Sauvegardes et restaurations avec la CLI (EN)
+title: MongoDB - Sauvegardes et restaurations avec CLI (EN)
 slug: mongodb/backups-and-restores-cli
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
 section: MongoDB
@@ -90,6 +90,6 @@ Again, depending on the volume of data and your network connection, this operati
 
 ## We want your feedback!
 
-We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/en/>.
+We would love to help answer questions and appreciate any feedback you may have. Join our community of users on <https://community.ovh.com/>.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

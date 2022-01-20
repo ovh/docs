@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Capacités et limites (EN)
+title: PostgreSQL - Capacités et limitations (EN)
 slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 section: PostgreSQL - Guides

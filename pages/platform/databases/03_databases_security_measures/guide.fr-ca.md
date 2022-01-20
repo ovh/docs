@@ -2,7 +2,7 @@
 title: Concepts - Présentation de la sécurité (EN)
 excerpt: Public Cloud Databases security overview
 slug: concepts-security-overview
-section: General information
+section: Informations générales
 order: 90
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/concepts-security-overview/'

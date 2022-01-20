@@ -1,5 +1,5 @@
 ---
-title: MongoDB - Gestion d'un service de base de données depuis l'espace client OVHcloud (EN)
+title: "MongoDB - Gérer un service de base de données depuis l’espace client OVHcloud (EN)"
 excerpt: Find out how to manage your databases in the OVHcloud Control Panel
 slug: mongodb/managing-service
 section: MongoDB
@@ -93,4 +93,4 @@ You can edit and retract database access via the `...`{.action} button in the IP
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

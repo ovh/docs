@@ -38,9 +38,9 @@ In this tutorial, we are going to show you how to connect your OVHcloud Managed 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://docs.ovh.com/us/es/kubernetes/deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](https://docs.ovh.com/us/es/kubernetes/installing-helm/) tutorial.
+You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](https://docs.ovh.com/gb/en/kubernetes/installing-helm/) tutorial.
 
 Finally, you need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/) guide.
 
@@ -96,7 +96,7 @@ You can name your database in this step.
 
 #### Step 6: Summary and confirmation
 
-The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 
@@ -182,7 +182,7 @@ For this tutorial we are using the [Wordpress Helm chart](https://github.com/bit
 
 #### Pre-requisites
 
-As described in the [Installing WordPress on OVHcloud Managed Kubernetes](https://docs.ovh.com/us/es/kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
+As described in the [Installing WordPress on OVHcloud Managed Kubernetes](https://docs.ovh.com/gb/en/kubernetes/installing-wordpress/#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
 
 ```sh
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed

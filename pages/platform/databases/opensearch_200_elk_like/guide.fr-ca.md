@@ -255,7 +255,7 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 [OpenSearch Dashboard Official documentation](https://opensearch.org/docs/latest){.external}
 
-[OpenSearch Project GitHub](https://https://github.com/opensearch-project){.external}
+[OpenSearch Project GitHub](https://github.com/opensearch-project){.external}
 
 [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/){.external}
 

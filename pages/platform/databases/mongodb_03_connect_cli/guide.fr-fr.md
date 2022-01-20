@@ -159,6 +159,7 @@ Once connected, you can manage your MongoDB instance with built-in MongoDB Shell
 Please follow the official MongoDB documentation.
 
 To verify:
+
 - *db* : will indicate on which database you are
 - *use myNewDatabase* will switch to another database (will create one if not existing)
 - *db.myCollection.insertOne( ... )* will insert data in your collection
@@ -192,4 +193,4 @@ replicaset [direct: primary]>
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

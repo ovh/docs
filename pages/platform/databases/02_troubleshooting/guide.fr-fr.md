@@ -2,7 +2,7 @@
 title: Dépannage (EN)
 excerpt: Troubleshooting tips for Public Cloud Databases
 slug: troubleshooting
-section: General information
+section: Informations générales
 order: 90
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/troubleshooting/'

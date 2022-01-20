@@ -1,5 +1,5 @@
 ---
-title: Redis - Capacités et limites (EN)
+title: Redis - Capacités et limitations (EN)
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
 section: Redis

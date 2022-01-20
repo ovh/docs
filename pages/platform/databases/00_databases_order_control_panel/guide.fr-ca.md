@@ -1,8 +1,8 @@
 ---
-title: Premiers pas avec les bases de données de cloud public (EN)
+title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to set up your managed MongoDB service in the OVHcloud Control Panel
 slug: getting-started
-section: General information
+section: Informations générales
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
@@ -81,7 +81,7 @@ Please follow [this guide](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-
 
 #### Step 6: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/fr/api/api-premiers-pas/).
 
 ![Confirm order](images/creation_mongo07.png){.thumbnail}
 
@@ -100,4 +100,4 @@ Please continue with the [Database Management guide](https://docs.ovh.com/ca/fr/
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.
