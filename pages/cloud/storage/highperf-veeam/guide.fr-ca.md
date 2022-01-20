@@ -11,6 +11,13 @@ order: 140
 
 Ce guide a pour objectif de vous montrer comment configurer Veeam pour utiliser votre espace de stockage Object Storage S3 High Performance.
 
+> [!warning]
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du logiciel si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+>
+
 ## Prérequis
 
 - Avoir créé un bucket
@@ -74,8 +81,6 @@ Si vous choisissez de ne pas utiliser un serveur passerelle, assurez-vous que to
 Pour sélectionner un dossier, cliquez sur `Parcourir`{.action} et sélectionnez un dossier existant ou créez-en un nouveau en cliquant sur `Nouveau dossier`{.action}.
 
 Pour définir une limite souple qui peut être dépassée temporairement pour votre consommation de stockage d'objets, cochez la case **Limiter la consommation de stockage d'objets à** et fournissez la valeur en TB ou PB.
-
-Pour interdire la suppression de blocs de données du stockage d'objets, cochez la case **Make recent backups immutable for** et indiquez la période d'immuabilité.
 
 ![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
 

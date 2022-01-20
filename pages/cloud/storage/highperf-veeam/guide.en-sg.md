@@ -11,6 +11,13 @@ order: 140
 
 This guide is intended to show you how to configure Veeam to use your Object Storage S3 High Performance storage space
 
+> [!warning]
+>
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
+
 ## Requirements
 
 - A bucket
@@ -72,8 +79,6 @@ At the **Bucket** step of the wizard, specify the bucket and folder that will be
 To select a folder, click `Browse`{.action} and either select an existing folder or create a new one by clicking `New Folder`{.action}.
 
 To define a soft limit that can be exceeded temporarily for your object storage consumption, select the **Limit object storage consumption to** check box and provide the value in TB or PB.
-
-To prohibit deletion of blocks of data from object storage, select the **Make recent backups immutable for** check box and specify the immutability period.
 
 ![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
 
