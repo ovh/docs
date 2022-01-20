@@ -46,7 +46,7 @@ créez un nouveau Frontend, ou éditez en un existants.
 
 Dans `Datacenter`{.action}, vous pourrez choisir la zone vous souhaitez associer à votre Frontend.
 
-![Choix de la zone](images/Select-Datacenter.PNG){.thumbnail}
+![Choix de la zone](images/Select-Datacenter.png){.thumbnail}
 
 Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Modifier`{.action} selon que vous configuriez un nouveau frontend, ou un frontend existant.
 N'oubliez pas de déployer la configuration.
