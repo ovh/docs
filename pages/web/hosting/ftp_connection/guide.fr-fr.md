@@ -92,7 +92,7 @@ Voici un rappel des informations que vous devrez y renseigner :
 
 - **Serveur FTP et SFTP**: Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage. Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».
 - **Login principal**: Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage. Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».
-- **Mot de passe de l'utilisateur FTP**: Il s'agit du mot de passe associé au login FTP.< Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
+- **Mot de passe de l'utilisateur FTP**: Il s'agit du mot de passe associé au login FTP. Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
 - **Port de connexion** : Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :
     - utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;
     - utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).
