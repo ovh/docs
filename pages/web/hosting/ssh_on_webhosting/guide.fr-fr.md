@@ -32,7 +32,7 @@ Si l'accès SSH n'est pas actif, cliquez sur le bouton `...`{.action} à droite 
 
 ### Étape 2 : récupérer les informations nécessaires pour se connecter <a name="sshlogin"></a>
 
-Pour vous connecter en SSH à votre espace de stockage, retrouver les éléments nécessaires depuis l'onglet `FTP - SSH`{.action}:
+Pour vous connecter en SSH à votre espace de stockage, retrouvez les éléments nécessaires depuis l'onglet `FTP - SSH`{.action}:
 
 - **Utilisateur SSH actif**: Repérez-le dans la colonne « **Login** » du tableau. Pour rappel, cet utilisateur doit [disposer d'un accès SSH actif](./#etape-1-sassurer-que-lacces-ssh-est-actif).
 - **Mot de passe de l'utilisateur SSH**: Si vous avez oublié ce mot de passe, vous avez la possibilité de le modifier en cliquant sur le bouton `...`{.action}, puis sur `Changer le mot de passe`{.action}.
@@ -86,7 +86,7 @@ Pour interagir avec votre espace de stockage, vous devez utiliser des commandes.
 |pwd|Print working directory|Affiche le répertoire de travail dans lequel vous vous situez.| 
 |cd `arg`|Change directory|Permet de changer de répertoire de travail pour celui renseigné à la place de `arg`.|
 |cd `..`|Change directory|Permet de changer de répertoire de travail en remontant d’un niveau dans l’arborescence de vos répertoires.|
-|cd|Change directory|En ne spécifiant pas d'argument,elle permet de se repositionner à la racine de votre espace de stockage (home).|
+|cd|Change directory|En ne spécifiant pas d'argument, elle permet de se repositionner à la racine de votre espace de stockage (home).|
 |ls|List|Liste le contenu du répertoire de travail. Ajoutez des attributs pour modifier l'affichage du résultat de la commande (comme `ls -ulhG`).| 
 |chmod `droit` `arg`|Change mode|Change les droits du fichier ou du répertoire mentionné en tant qu'argument `arg`.| 
 |mkdir `arg`|Make directory|Permet de créer un repertoire portant le nom de l'argument `arg`.| 
@@ -101,7 +101,7 @@ Vous pouvez également lancer un script en utilisant une version spécifique de 
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution doive être modifié pour une question de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/) » pour en apprendre plus. 
+Selon la version de PHP que vous souhaitez utiliser, il se peut que l'environnement d'exécution nécessite d'être modifié pour des raisons de compatibilité. Reportez-vous à notre documentation « [Modifier la configuration de son hébergement web](https://docs.ovh.com/fr/hosting/modifier-lenvironnement-dexecution-de-mon-hebergement-web/) » pour en apprendre plus. 
 
 ## Aller plus loin
 
