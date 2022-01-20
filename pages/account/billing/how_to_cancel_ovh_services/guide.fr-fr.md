@@ -23,7 +23,7 @@ Pour l'utiliser, nous vous recommandons tout d'abord de prendre connaissance de 
 
 La « *résiliation* » concernant l'un de vos services OVHcloud signifie qu'à la fin de l'abonnement en cours, il sera interrompu de façon définitive. 
 
-Elle sera effective lorsque la période de validité de votre abonnement sera terminée. Vous pouvez résilier un service ou annuler une résiliation jusqu'à 24 heures avant cette date.
+Elle sera effective lorsque la période de validité de votre abonnement sera terminée. Vous pouvez résilier un service ou [annuler une résiliation](#annuler) jusqu'à 24 heures avant cette date.
 
 S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées **sans possibilité de récupération**.
 
@@ -43,117 +43,144 @@ Après avoir effectué ces vérifications, choisissez votre produit dans la part
 >
 > Avoir votre retour est essentiel pour nous. Cela nous permet de faire évoluer nos services, afin qu'ils répondent au mieux à vos besoins et à vos attentes.
 >
-> N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud (via le formulaire proposé lors de la résilitation). Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
+> N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud (via le formulaire proposé lors de la résiliation). Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
 >
 
-(Table des matières)
+Cliquez sur votre produit dans la liste suivante : 
 
-### Serveurs dédiés
+[Univers 1 : Bare Metal Cloud](#baremetalcloud)<br />
+&emsp;&emsp;[](#)<br />
+&emsp;&emsp;[](#)<br />
+&emsp;&emsp;[](#)<br />
+[Univers 2 : Hosted Private Cloud](#privatecloud)<br />
+[Univers 3 : Public Cloud](#publiccloud)<br />
+[Univers 4 : Web Cloud](#webcloud)<br />
+[Univers 5 : Télécom](#telecom)<br />
 
-Pour résilier votre [serveur dédié](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
-![right_menu](images/right_menu.png){.thumbnail}
 
-Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+### Bare Metal Cloud
 
-![manage_services](images/manage_services.png){.thumbnail}
+#### Serveurs dédiés
 
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
-
-![main_reason_why](images/main_reason_why.png){.thumbnail}
-
-### VPS (Virtual Private Servers)
-
-Pour résilier votre [VPS (Virtual Private Servers)](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
-
-![right_menu](images/right_menu.png){.thumbnail}
+Pour résilier votre [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action} :
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-![main_reason_why](images/main_reason_why.png){.thumbnail}
+#### VPS (Virtual Private Servers)
+
+Pour résilier votre [VPS (Virtual Private Servers)](https://www.ovhcloud.com/fr/vps/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+#### Manage bare metal
+
+Pour résilier votre offre [Manage bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/managed-bare-metal/comment-resilier-le-managed-bare-metal/).
 
 ### Hosted Private Cloud
 
-### Web Cloud (Offres mutualisées)
+Pour résilier votre offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/private-cloud/comment-resilier-le-private-cloud/).
+
+### Public Cloud
+
+Pour résilier votre [offre Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/public-cloud/supprimer-un-projet/).
+
+### Web Cloud
 
 #### Domaines
 
-Pour résilier votre [nom de domaine](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
-
-![right_menu](images/right_menu.png){.thumbnail}
+Pour résilier votre [nom de domaine](https://www.ovhcloud.com/fr/domains/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
-
-![main_reason_why](images/main_reason_why.png){.thumbnail}
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### Hébergement Web
 
-Pour résilier votre [service d'hébergement Web mutualisé](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
-
-![right_menu](images/right_menu.png){.thumbnail}
+Pour résilier votre [hébergement Web](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
-
-![main_reason_why](images/main_reason_why.png){.thumbnail}
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### Certificat SSL Sectigo
 
 #### CloudDB
 
-Pour résilier votre [serveur de bases de données CloudDB](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
-
-![right_menu](images/right_menu.png){.thumbnail}
+Pour résilier votre [serveur de bases de données CloudDB](https://www.ovh.com/fr/cloud-databases/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-![main_reason_why](images/main_reason_why.png){.thumbnail}
+#### Hébergement Plesk
 
-#### Service E-mail MX Plan
+#### Web Pass
 
-Pour résilier votre [offre E-mail MX Plan](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+#### E-mail MX Plan
 
-![right_menu](images/right_menu.png){.thumbnail}
+Pour résilier votre offre **MX Plan** depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-![main_reason_why](images/main_reason_why.png){.thumbnail}
+#### E-mail Pro
 
-#### Service E-mail Pro
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
-#### Service E-mail Exchange
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
-### Public Cloud
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+#### E-mail Exchange
 
 ### Telecom
 
-## Comment annuler la résiliation de votre abonnement ? <a name="annulation"></a>
+#### xDSL
 
+#### VoIP
 
+#### OTB
+
+Pour résilier votre [service d'hébergement Web mutualisé](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+#### SMS
+
+## Comment annuler la résiliation de votre abonnement ? <a name="annuler"></a>
+
+Pour annuler votre demande de résiliation depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![cancel_termination](images/cancel_termination.png){.thumbnail}
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
-
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+[Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
