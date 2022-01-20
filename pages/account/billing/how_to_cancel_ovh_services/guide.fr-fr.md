@@ -10,7 +10,7 @@ order: 3
 
 Vous souhaitez résilier un ou plusieurs services OVHcloud. Nous sommes sincèrement désolé qu'ils ne vous aient pas donnés satisfaction. Ce guide vous indiquera comment interrompre votre abonnement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Pour l'utiliser, nous vous recommandons de prendre connaissance de la partie « [Que se passe-t-il lorsqu'un service OVHcloud est résilié ?](#consequences) » puis de cliquer dans le menu de gauche sur le type de produit que vous souhaitez résilier.
+Pour l'utiliser, nous vous recommandons tout d'abord de prendre connaissance de la partie « [Que se passe-t-il lorsqu'un service OVHcloud est résilié ?](#consequences) ». Choisissez ensuite sur le produit concerné dans la partie « [Comment résilier votre abonnement ?](#resilier) ».
 
 > [!warning]
 >
@@ -35,7 +35,9 @@ Ceci implique que vous devez être **certain** avant toute résiliation :
 - que vous possédez, si nécessaire, une solution *fonctionnelle* pour le remplacer ;
 - que vous avez sauvegardé l'ensemble des données concernées.
 
-## Comment résilier votre abonnement ?
+Après avoir effectué ces vérifications, choisissez votre produit dans la partie suivante.
+
+## Comment résilier votre abonnement ? <a name="resilier"></a>
 
 ### Serveurs dédiés
 
@@ -57,16 +59,16 @@ Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résili
 
 ![manage_services](images/manage_services.png){.thumbnail}
 
+Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
+
+![main_reason_why](images/main_reason_why.png){.thumbnail}
+
 > [!primary]
 >
 > Avoir votre retour est essentiel pour nous. Cela nous permet de faire évoluer nos services, afin qu'ils répondent au mieux à vos besoins et à vos attentes.
 >
 > N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud (via le formulaire en fin de page). Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
 >
-
-Indiquez la raison principale de votre volonté de résiliser votre abonnement, ainsi que ce que vous prévoyez de faire ensuite puis cliquez sur `Valider`{.action} :
-
-![main_reason_why](images/main_reason_why.png){.thumbnail}
 
 #### Certificat SSL
 
