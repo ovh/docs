@@ -157,6 +157,7 @@ Once connected, you can manage your MongoDB instance with built-in MongoDB Shell
 Please follow the official MongoDB documentation.
 
 To verify:
+
 - *db* : will indicate on which database you are
 - *use myNewDatabase* will switch to another database (will create one if not existing)
 - *db.myCollection.insertOne( ... )* will insert data in your collection
