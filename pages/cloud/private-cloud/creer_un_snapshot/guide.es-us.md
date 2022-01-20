@@ -1,9 +1,10 @@
 ---
-title: Taking a snapshot
-slug: create-a-snapshot
+title: Crear un snapshot (EN)
+slug: crear-un-snapshot
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-a-snapshot/'
 excerpt: Return to a previous VM state using snapshots
-legacy_guide_number: '7766547'
-section: Maintenance and monitoring
+section: Gestión de las máquinas virtuales
 order: 08
 ---
 
@@ -17,8 +18,8 @@ VMWare offers the ability to take snapshots so you can save and possibly go back
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 
 ## Instructions
 

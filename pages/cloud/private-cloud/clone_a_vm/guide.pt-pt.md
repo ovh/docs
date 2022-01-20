@@ -1,76 +1,108 @@
 ---
-title: Clonar uma VM
+title: Clonar uma VM (EN)
 slug: clonar-uma-vm
-excerpt: Saiba como clonar uma VM existente através de vSphere
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/clone-a-vm/'
+excerpt: Learn two ways to clone an existing virtual machine in vSphere
 section: Gestão das máquinas virtuais
 order: 07
 ---
 
-**Última atualização: 26/08/2020**
+**Last updated 12th January 2022**
 
-## Objetivo
+## Objective
 
-A clonagem de uma VM permite criar uma cópia da VM de origem.
+VMWare offers the ability to clone a VM to create another one or a template.
 
-**Este manual explica como realizar esta operação**
+**This guide explains how to execute those tasks.**
 
-## Requisitos
+## Requirements
 
-- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
-- Dispor de, pelo menos, uma VM no seu cluster.
-- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
-## Instruções
+## Instructions
 
-### Clonar a VM
+### Clone a VM
 
-Na sua [interface vSphere](../instalar_o_vsphere_client/), aceda à vista `Hosts and Clusters`.
+Cloning allows for quick and efficient deployment of similar VMs.<br>
+You can clone a VM into another one or clone it into a template.<br>
+Cloning to a VM is a quick way to copy a full VM and its settings.<br>
+Cloning to a template is a preferred way to create a master copy that will be used to deploy many VMs.
 
-Clique com o botão direito do rato na VM que quer clonar e clique em `Clone`{.action} > `Clone to virtual machine...`{.action}. 
+#### Clone to VM
 
-![Clonar uma VM](images/clonevm01.png){.thumbnail}
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Clone`{.action} menu, select `Clone to Virtual Machine`{.action}.
 
-Dê um nome a esta nova VM e defina a sua localização na sua arborescência.
+![CLONE](images/en08clonevm.png){.thumbnail}
 
-![Dar nome a VM](images/clonevm02.png){.thumbnail}
+Name the clone VM and select its datacenter location.<br>
+Click `Next`{.action}.
 
-### Selecionar o recurso
+![CLONE](images/en09clonename.png){.thumbnail}
 
-Especifique o cluster, o host, a vApp ou a pool de recursos desta VM.
+Select the clone VM compute location.<br>
+Click `Next`{.action}.
 
-![Recursos da VM](images/clonevm03.png){.thumbnail}
+![CLONE](images/en10clonecomp.png){.thumbnail}
 
-### Escolha do armazenamento
+Select the clone VM storage location.<br>
+Click `Next`{.action}.
 
-Defina a localização do armazenamento (espaço em disco) desta VM. 
+![CLONE](images/en11clonestor.png){.thumbnail}
 
-O formato do disco virtual é de tipo “Thin Provision”, ou seja um disco virtual será criado mas só utilizará o espaço em disco realmente utilizado no armazenamento, independentemente do espaço em disco anteriormente utilizado na VM de origem.
+Select the options for your clone VM.
 
-Pode consultar mais informações sobre os formatos de disco [neste manual](../escolher-o-formato-do-disco/){.external-link}.
+- Customize the operating system will trigger sysprep on first use of the VM
+- Customize this virtual machine's hardware allows for modification of VM capabilities (HDD size, network elements...)
+- Power on virtual machine after creation is not recommended as you may have to apply changes before startup to prevent issues (network conflicts most notably if you use fixed IPs)
 
-Poderá escolher, através da linha `VM Storage Policy`, a política de armazenamento predefinida se tiver datastores, ou uma política personalizada se tiver hosts [vSAN](../vmware-vsan/){.external-link}, ou ainda a opção [VM encryption](../vm-encrypt/){.external-link}.
+Click `Next`{.action}.
 
-![armazenamento vm](images/clonevm04.png){.thumbnail}
+![CLONE](images/en12clonecustom.png){.thumbnail}
 
-### Configuração do sistema
+Review and click `Finish`{.action}.
 
-Este passo permite definir a configuração de rede que quer aplicar a esta VM. Tem duas possibilidades:
+![CLONE](images/en13clonefinish.png){.thumbnail}
 
-- Se não selecionar nada, não haverá qualquer modificação da configuração de rede da nova VM em comparação à VM de origem;
+The cloning process will go through and the new VM is ready for you.
 
-- `Personalizar o hardware desta VM (experimental)`{.action}: esta opção permitir-lhe-á especificar as novas configurações que pretende implementar nesta nova VM.
-
-![rede vm](images/clonevm05.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Se não efetuou qualquer personalização da VM, é necessário modificar a configuração do clone antes de a iniciar, para evitar um conflito de IP/MAC. 
->
->Neste caso, só precisa de desselecionar a placa de rede nos parâmetros da VM depois de a clonar, logo antes de a iniciar.
->
->![desconectar](images/clonevm06.png){.thumbnail}
->
+> If you cloned without any customization, make sure it is safe to boot the new VM. If it is cloned from a fixed IP VM, you should disable the Network Card to avoid IP conflicts for example.
 
-## Quer saber mais?
+#### Clone to Template
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click it and, in the `Clone`{.action} menu, select `Clone to Template`{.action}.
+
+![TEMPLATE](images/en14clonetemp.png){.thumbnail}
+
+Name the template VM and select its datacenter location.<br>
+Click `Next`{.action}.
+
+![TEMPLATE](images/en15clonename.png){.thumbnail}
+
+Select the template VM compute location.<br>
+Click `Next`{.action}.
+
+![TEMPLATE](images/en16clonecomp.png){.thumbnail}
+
+Select the template VM storage location.<br>
+Click `Next`{.action}.
+
+![TEMPLATE](images/en17clonestor.png){.thumbnail}
+
+Review and click `Finish`{.action}.
+
+![TEMPLATE](images/en18clonefinish.png){.thumbnail}
+
+The cloning to template process will go through.<br>
+No VM is directly visible but when deploying new VM, the clone will show in the "Deploy from Template" option.
+
+![TEMPLATE](images/en19deploy.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
