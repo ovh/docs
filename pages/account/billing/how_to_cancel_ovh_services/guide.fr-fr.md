@@ -63,6 +63,7 @@ Cliquez sur votre produit dans la liste suivante :
 &emsp;&emsp;[Certificat SSL Sectigo](#ssl)<br />
 &emsp;&emsp;[Hébergement Plesk](#plesk)<br />
 &emsp;&emsp;[Web Paas](#webpaas)<br />
+&emsp;&emsp;[CloudDB](#clouddb)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[E-mail Exchange](#exchange)<br />
@@ -75,7 +76,7 @@ Cliquez sur votre produit dans la liste suivante :
 
 ### Univers « Bare Metal Cloud » <a name="baremetalcloud"></a>
 
-#### Serveur dédié <a name="dedies"></a>
+#### Serveur dédié <a name="dedicated"></a>
 
 Pour résilier votre [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
@@ -97,7 +98,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Managed bare metal <a name="managedbaremetal"></a>
 
-Pour résilier votre offre [Manage bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/managed-bare-metal/comment-resilier-le-managed-bare-metal/).
+Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/managed-bare-metal/comment-resilier-le-managed-bare-metal/).
 
 ### Univers « Hosted Private Cloud » <a name="privatecloud"></a>
 
@@ -105,7 +106,7 @@ Pour résilier votre offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/ho
 
 ### Univers « Public Cloud » <a name="publiccloud"></a>
 
-Pour résilier votre [offre Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/public-cloud/supprimer-un-projet/).
+Pour résilier votre offre [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/public-cloud/supprimer-un-projet/).
 
 ### Univers « Web Cloud » <a name="webcloud"></a>
 
@@ -134,6 +135,8 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 #### Hébergement Plesk <a name="plesk"></a>
 
 #### Web Paas <a name="webpaas"></a>
+
+#### CloudDB <a name="clouddb"></a>
 
 #### E-mail MX Plan <a name="mxplan"></a>
 
