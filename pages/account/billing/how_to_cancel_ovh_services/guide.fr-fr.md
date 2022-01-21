@@ -154,6 +154,14 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Hébergement Plesk <a name="plesk"></a>
 
+Pour résilier votre [hébergement Plesk](https://www.ovhcloud.com/fr/plesk-web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} à droite de l'écran, correspondant au service à résilier puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
 #### Web Paas <a name="webpaas"></a>
 
 Pour résilier votre offre [Web Paas](https://www.ovhcloud.com/fr/web-paas/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
