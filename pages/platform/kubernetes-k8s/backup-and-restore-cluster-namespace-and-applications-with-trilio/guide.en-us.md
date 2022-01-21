@@ -141,16 +141,53 @@ To complete this tutorial, you need the following:
 2. A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.
 3. [Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.
 4. [Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
+5. [krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/), for installation of preflight checks plugin.
 
 **Important note:**
 
-In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Managed Kubernetes Cluster` needs to be configured to support the `Container Storage Interface` (or `CSI`, for short). By default it comes with the driver already installed and configured. You can check using below command:
+In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Managed Kubernetes Cluster` needs to be configured to support the `Container Storage Interface` (or `CSI`, for short) and Volumesnapshot CustomResourceDefinitions should be deployed.
+
+User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
+
+```shell
+kubectl get crd | grep volumesnapshot
+```
+
+The output should look similar to below:
+
+```text
+volumesnapshotclasses.snapshot.storage.k8s.io    2022-01-20T07:58:05Z
+volumesnapshotcontents.snapshot.storage.k8s.io   2022-01-20T07:58:05Z
+volumesnapshots.snapshot.storage.k8s.io          2022-01-20T07:58:06Z
+```
+
+Also make sure that the CRD support both v1beta1 and v1 API version. You can run below command to check the API version:
+
+```shell
+kubectl get crd volumesnapshots.snapshot.storage.k8s.io -o yaml
+```
+
+At the end of the CRD yaml, you should output similar to below showing `storedVersions` as `v1beta1` and `v1`:
+
+```text
+...
+- lastTransitionTime: "2022-01-20T07:58:06Z"
+    message: approved in https://github.com/kubernetes-csi/external-snapshotter/pull/419
+    reason: ApprovedAnnotation
+    status: "True"
+    type: KubernetesAPIApprovalPolicyConformant
+  storedVersions:
+  - v1beta1
+  - v1
+```
+
+User can follow install the [Hostpath CSI driver](https://docs.trilio.io/kubernetes/appendix/csi-drivers#hostpath-csi-driver) and create a storageclass, volumesnapshotclass. You can check the existing storage class using below command:
 
 ```shell
 kubectl get storageclass
 ```
 
-The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path)):
+The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path) if you have installed hostpath CSI driver):
 
 ```text
 NAME                        PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
@@ -161,13 +198,11 @@ csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate
 
 ## Step 1 - Installing TrilioVault for Kubernetes
 
-In this step, you will learn how to deploy `TrilioVault` for `OVH Managed Kubernetes Cluster`, and manage `TVK` installations via `Helm`. Backups data will be stored in the `OVH Object Storage` bucket created earlier in the [Prerequisites](#prerequisites) section.
+In this step, you will learn how to deploy `TrilioVault for Kubernetes` for `OVH Managed Kubernetes Cluster`, and manage `TVK` installations via `Helm`. Backups data will be stored in the `OVH Object Storage` bucket created earlier in the [Prerequisites](#prerequisites) section.
 
-`TrilioVault` application can be installed as below:
+`TrilioVault for Kubernetes` consists of TVK Operator and TVM application.
 
-- The `TrilioVault Operator` (installable via `Helm`). You define a `TrilioVaultManager` CRD, which tells `TrilioVault` operator how to handle the `installation`, `post-configuration` steps, and future `upgrades` of the `Trilio` application components.
-- The `TrilioVault Manager` via the [k8s-triliovault] yaml definition (https://docs.trilio.io/kubernetes/use-triliovault/installing-triliovault#upstream-kubernetes)
-	
+- The `TrilioVault Operator` (installable via `Helm`) which also install the `TrilioVaultManager` CRD and creates and `tvm` custom resource. TVK Operator handles the `installation`, `post-configuration` steps, and future `upgrades` of the `Trilio` application components.
 
 ### Installing TrilioVault Operator and Manager Using Helm
 
@@ -176,16 +211,16 @@ In this step, you will learn how to deploy `TrilioVault` for `OVH Managed Kubern
 `OVH Docs` tutorial is using the `Cluster` installation type for the `TVK` application (`applicationScope` Helm value is set to `"Cluster"`). All examples from this tutorial rely on this type of installation to function properly.
 
 Please follow the steps below, to install `TrilioVault` via `Helm`:
-
-1. First, clone the `OVH Docs` Git repository and change directory to your local copy:
+<ol>
+  <li>First, clone the `OVH Docs` Git repository and change directory to your local copy:
 
     ```shell
     git clone https://github.com/ovh/docs.git
-
     cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     ```
+  </li>
 
-2. Next, add the `TrilioVault` Helm repository, and list the available charts:
+  <li>Next, add the `TrilioVault` Helm repository, and list the available charts:
 
     ```shell
     helm repo add triliovault-operator http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
@@ -197,99 +232,88 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
     ```text
     NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-    triliovault-operator/k8s-triliovault-operator   2.6.4           2.6.4           K8s-TrilioVault-Operator is an operator designe...
+    triliovault-operator/k8s-triliovault-operator   2.6.6           2.6.6           K8s-TrilioVault-Operator is an operator designe...
     triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
     ```
-    
-3. The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator. Install `TrilioVault for Kubernetes Operator` using `Helm`:
+  </li>
+  
+  <li>The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator which will also install the `Triliovault Manager` CRD. Install `TrilioVault for Kubernetes Operator` using `Helm`:
+
+  TVK allows user to alter the values to be used by TVK Operator installation using `--set` option. Check the detailed instructions in [One-click Installation](https://docs.trilio.io/kubernetes/use-triliovault/installing-triliovault#upstream-kubernetes) page.
 
     ```shell
-    TRILIOVAULT_CHART_VERSION="2.6.4"
-
-    helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --version "${TRILIOVAULT_CHART_VERSION}" --namespace tvk --create-namespace
+    helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --namespace tvk --create-namespace
     ```
 
-    **Note:**
+  Now, please check your `TVK` deployment:
 
-    A `specific` version for the `TrilioVault-Operator` Helm chart is used. In this case `2.6.4` is picked, which maps to the `2.6.4` version of the application (see the output from `Step 2.`). It’s good practice in general, to lock on a specific version. This helps to have predictable results, and allows versioning control via `Git`.
+	```shell
+	helm ls -n tvk
+	```
 
-Now, please check your `TVK` deployment:
+  The output looks similar to the following (`STATUS` column should display `deployed`):
 
-```shell
-helm ls -n tvk
-```
+	```text
+	NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
+	triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.6.6           2.6.6
+	triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.6.6  2.6.6
+	```
 
-The output looks similar to the following (`STATUS` column should display `deployed`):
+  Next, verify that `TrilioVault-Operator` and `Triliovault-Manager` application is up and running:
 
-```text
-NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-triliovault-operator    tvk             1               2021-12-21 08:13:41.644264863 +0000 UTC deployed        k8s-triliovault-operator-2.6.4  2.6.4
-```
+	```shell
+	kubectl get deployments -n tvk
+	```
 
-Next, verify that `TrilioVault-Operator` is up and running:
+  The output looks similar to the following (deployment pods must be in the `Ready` state):
 
-```shell
-kubectl get deployments -n tvk
-```
+	```text
+	NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE
+	k8s-triliovault-admission-webhook               1/1     1            1           2m45s
+	k8s-triliovault-control-plane                   1/1     1            1           2m45s
+	k8s-triliovault-exporter                        1/1     1            1           2m45s
+	k8s-triliovault-ingress-gateway                 1/1     1            1           2m45s
+	k8s-triliovault-web                             1/1     1            1           2m45s
+	k8s-triliovault-web-backend                     1/1     1            1           2m45s
+	triliovault-operator-k8s-triliovault-operator   1/1     1            1           4m35s
+	```
 
-The output looks similar to the following (deployment pods must be in the `Ready` state):
+  Now, please check your `triliovaultmanagers` CRDs, `tvm` CR as well:
 
-```text
-NAME                                		READY   UP-TO-DATE   AVAILABLE   AGE
-triliovault-operator-k8s-triliovault-operator   1/1     1            1           3d
-```
+	```shell
+	kubectl get crd | grep trilio
+	```
 
-Now, you can install `TrilioVault Manager Application` using yaml definition (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/assets/manifests/triliovault-manager-v2.6.4.yaml)
+  The output looks similar to the following:
 
-Run the `kubectl` command to install the `Triliovault Manager` using the yaml
+	```text
+	backupplans.triliovault.trilio.io                2022-01-20T09:15:59Z
+	backups.triliovault.trilio.io                    2022-01-20T09:15:59Z
+	clusterbackupplans.triliovault.trilio.io         2022-01-20T09:15:59Z
+	clusterbackups.triliovault.trilio.io             2022-01-20T09:16:00Z
+	clusterrestores.triliovault.trilio.io            2022-01-20T09:16:01Z
+	hooks.triliovault.trilio.io                      2022-01-20T09:16:01Z
+	licenses.triliovault.trilio.io                   2022-01-20T09:16:01Z
+	policies.triliovault.trilio.io                   2022-01-20T09:16:02Z
+	restores.triliovault.trilio.io                   2022-01-20T09:16:02Z
+	targets.triliovault.trilio.io                    2022-01-20T09:16:03Z
+	triliovaultmanagers.triliovault.trilio.io        2022-01-20T09:14:39Z
+	```
 
-```shell
-kubectl apply -f assets/manifests/triliovault-manager-v2.6.4.yaml -n tvk
-```
-
-Now, please check your `TVK` deployment: 
-
-```shell
-helm ls -n tvk
-```
-
-The output looks similar to the following (`STATUS` column should display `deployed`):
-
-```text
-NAME		NAMESPACE	REVISION	UPDATED                                 STATUS		CHART			APP VERSION
-tvk-tvk         tvk             1               2021-12-21 08:18:06.817766759 +0000 UTC deployed        k8s-triliovault-2.6.4   2.6.4
-```
-
-Next, verify that `TrilioVault` is up and running:
-
-```shell
-kubectl get deployments -n tvk
-```
-
-The output looks similar to the following (all deployments pods must be in the `Ready` state):
-
-```text
-NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE
-k8s-triliovault-admission-webhook               1/1     1            1           3d
-k8s-triliovault-control-plane                   1/1     1            1           3d
-k8s-triliovault-exporter                        1/1     1            1           3d
-k8s-triliovault-ingress-gateway                 1/1     1            1           3d
-k8s-triliovault-web                             1/1     1            1           3d
-k8s-triliovault-web-backend                     1/1     1            1           3d
-```
-
-You can also check if the TVM Custom Resource is created.
-
-```shell
-kubectl get tvm -n tvk
-```
-
-The output should look similar to below
-
-```text
-NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-triliovault-manager   2.6.4                 Cluster   Deployed
-```
+  You can also check if the `TVM` Custom Resource is created.
+	
+	```shell
+	kubectl get triliovaultmanagers -n tvk 
+	```
+	
+  The output looks similar to the following:
+	
+	```text
+	NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
+	triliovault-manager   2.6.6                 Cluster   Deployed
+	```
+	</li>
+</ol>
 
 If the output looks like above, you installed `TVK` successfully. Next, you will learn how to check license type and validity, as well as how to renew.
 
@@ -385,36 +409,6 @@ Next is to create an `Access Key` and `Secret Key` to access the `S3 Object Stor
 Save the `Access key` and `Secret key` used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
 Take a note of the S3 endpoint URL `s3.endpoint_url` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
 
-Typical `Target` definition looks like below:
-
-```yaml
-apiVersion: triliovault.trilio.io/v1
-kind: Target
-metadata:
-  name: trilio-ovh-s3-target
-  namespace: tvk
-spec:
-  type: ObjectStore
-  vendor: Other								# e.g. `AWS` for AWS S3 Storage and `Other` for OVH Obejct Storage
-  enableBrowsing: true
-  objectStoreCredentials:
-    bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
-    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    		# e.g.: `bhs` region for OVH Object Storage or `us-est-1` etc for AWS S3
-    url: "https://<YOUR_OVH_OBJECT_STORAGE_BUCKET_ENDPOINT_HERE>"  	# e.g.: `https://s3.bhs.cloud.ovh.net` for S3 Object Storage Container in `bhs` region
-    credentialSecret:
-      name: trilio-ovh-s3-target-secret
-      namespace: tvk
-  thresholdCapacity: 10Gi
-```
-
-Explanation for the above configuration:
-
-- `spec.type`: Type of target for backup storage (S3 is an object store).
-- `spec.vendor`: Third party storage vendor hosting the target (for `OVH Object Storage` you need to use `Other` instead of `AWS`).
-- `spec.enableBrowsing`: Enable browsing for the target to brose through the backups stored on it.
-- `spec.objectStoreCredentials`: Defines required `credentials` (via `credentialSecret`) to access the `S3` storage, as well as other parameters such as bucket region and name.
-- `spec.thresholdCapacity`: Maximum threshold capacity to store backup data.
-
 To access `S3` storage, each target needs to know bucket credentials. A `Kubernetes Secret` must be created as well:
 
 ```yaml
@@ -429,7 +423,38 @@ stringData:
   secretKey: <YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>    	# value must be base64 encoded
 ```
 
-Notice that the secret name is `trilio-ovh-s3-target-secret`, and it's referenced by the `spec.objectStoreCredentials.credentialSecret` field of the `Target` CRD explained earlier. The `secret` can be in the same `namespace` where `TrilioVault` was installed (defaults to `tvk`), or in another namespace of your choice. Just make sure that you reference the namespace correctly. On the other hand, please make sure to `protect` the `namespace` where you store `TrilioVault` secrets via `RBAC`, for `security` reasons.
+Notice that the secret name is `trilio-ovh-s3-target-secret`, and it's referenced by the `spec.objectStoreCredentials.credentialSecret` field of the `Target` CRD explained below. The `secret` can be in the same `namespace` where `TrilioVault` was installed (defaults to `tvk`), or in another namespace of your choice. Just make sure that you reference the namespace correctly. On the other hand, please make sure to `protect` the `namespace` where you store `TrilioVault` secrets via `RBAC`, for `security` reasons.
+
+Typical `Target` definition looks like below:
+
+```yaml
+apiVersion: triliovault.trilio.io/v1
+kind: Target
+metadata:
+  name: trilio-ovh-s3-target
+  namespace: tvk
+spec:
+  type: ObjectStore
+  vendor: Other								# e.g. `AWS` for AWS S3 Storage and `Other` for OVH Obejct Storage
+  enableBrowsing: true
+  objectStoreCredentials:
+    bucketName: <YOUR_OVH_OBJECT_STORAGE_BUCKET_NAME_HERE>
+    region: <YOUR_OVH_OBJECT_STORAGE_BUCKET_REGION_HERE>    # e.g.: `bhs` region for OVH Object Storage or `us-est-1` etc for AWS S3
+    url: "https://s3.<REGION_NAME_HERE>.cloud.ovh.net"  	# e.g.: `https://s3.bhs.cloud.ovh.net` for S3 Object Storage Container in `bhs` region
+    credentialSecret:
+      name: trilio-ovh-s3-target-secret
+      namespace: tvk
+  thresholdCapacity: 10Gi
+```
+
+Explanation for the above configuration:
+
+- `spec.type`: Type of target for backup storage (S3 is an object store).
+- `spec.vendor`: Third party storage vendor hosting the target (for `OVH Object Storage` you need to use `Other` instead of `AWS`).
+- `spec.enableBrowsing`: Enable browsing for the target to brose through the backups stored on it.
+- `spec.objectStoreCredentials`: Defines required `credentials` (via `credentialSecret`) to access the `S3` storage, as well as other parameters such as bucket region and name.
+- `spec.thresholdCapacity`: Maximum threshold capacity to store backup data.
+
 
 Steps to create a `Target` for `TrilioVault`:
 
@@ -1015,9 +1040,9 @@ You can also open the web console main dashboard and inspect the `multi-namespac
 
 An important aspect to keep in mind is that whenever you destroy a `OVH Managed Kubernetes Cluster` and then restore it, a new `Load Balancer` with a new external `IP` is created as well when `TVK` restores your `ingress` controller. So, please make sure to update your OVH Managed DNS `A records` accordingly.
 
-Now, delete the whole `OVH Managed Kubernetes Cluster` using the OVH Cloud Web Console (https://ca.ovh.com/manager/public-cloud)
+Now, delete the whole `OVH Managed Kubernetes Cluster` using the [OVH Cloud Web Console](https://ca.ovh.com/manager/public-cloud)
 
-Next, re-create the cluster as described in [Creating a OVH Managed Kubernetes Cluster] (https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/#instructions).
+Next, re-create the cluster as described in [Creating a OVH Managed Kubernetes Cluster](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/#instructions).
 
 To perform the restore operation, you need to install the `TVK` application as described in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes). Please make sure to use the `same Helm Chart version` - this is important!
 
