@@ -91,7 +91,6 @@ Whenever you want to `backup` an application, you start by creating a `BackupPla
 
 Similarly whenever you create a `Restore` object, the `Restore Controller` is notified to restore from a `Backup` object. Then, Trilio `Restore Controller` spawns worker nodes (`Metamover`, `Datamover`), responsible with moving backup data out of the `OVH Object Storage` (Kubernetes metadata, PVs data). Finally, the restore process is initiated from the particular backup object.
 
-
 `Trilio` is ideal for the `disaster` recovery use case, as well as for `snapshotting` your application state, prior to performing `system operations` on your `cluster`, like `upgrades`. For more details on this topic, please visit the [Trilio Features](https://docs.trilio.io/kubernetes/overview/features-and-use-cases) and [Trilio Use Case](https://docs.trilio.io/kubernetes/overview/use-cases) official page.
 
 After finishing this tutorial, you should be able to:
@@ -145,13 +144,11 @@ To complete this tutorial, you need the following:
 </ol>
 
 **Important note:**
-
 In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Managed Kubernetes Cluster` needs to be configured to support the `Container Storage Interface` (or `CSI`, for short) and `volumesnapshot` CustomResourceDefinitions should be deployed.
 
 ```shell
 kubectl get crd | grep volumesnapshot
 ```
-
 The output should look similar to below:
 
 ```text
@@ -159,13 +156,11 @@ volumesnapshotclasses.snapshot.storage.k8s.io    2022-01-20T07:58:05Z
 volumesnapshotcontents.snapshot.storage.k8s.io   2022-01-20T07:58:05Z
 volumesnapshots.snapshot.storage.k8s.io          2022-01-20T07:58:06Z
 ```
-
 Also make sure that the CRD support both `v1beta1` and `v1` API version. You can run below command to check the API version:
 
 ```shell
 kubectl get crd volumesnapshots.snapshot.storage.k8s.io -o yaml
 ```
-
 At the end of the CRD yaml, you should output similar to below showing `storedVersions` as `v1beta1` and `v1`:
 
 ```text
@@ -179,13 +174,11 @@ At the end of the CRD yaml, you should output similar to below showing `storedVe
   - v1beta1
   - v1
 ```
-
 User can follow install the [Hostpath CSI driver](https://docs.trilio.io/kubernetes/appendix/csi-drivers#hostpath-csi-driver) and create a storageclass, volumesnapshotclass. You can check the existing storage class using below command:
 
 ```shell
 kubectl get storageclass
 ```
-
 The output should look similar to (notice the provisioner is [hostpath.csi.k8s.io](https://github.com/kubernetes-csi/csi-driver-host-path) if you have installed hostpath CSI driver):
 
 ```text
@@ -194,7 +187,6 @@ csi-cinder-classic          cinder.csi.openstack.org   Delete          Immediate
 csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
-
 User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
 ## Step 1 - Installing TrilioVault for Kubernetes
@@ -208,7 +200,6 @@ In this step, you will learn how to deploy `TrilioVault for Kubernetes` for `OVH
 ### Installing TrilioVault Operator and Manager Using Helm
 
 **Important note**:
-
 `OVH Docs` tutorial is using the `Cluster` installation type for the `TVK` application (`applicationScope` Helm value is set to `"Cluster"`). All examples from this tutorial rely on this type of installation to function properly.
 
 Please follow the steps below, to install `TrilioVault` via `Helm`:
@@ -220,7 +211,6 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
   ```
   </li>
-
   <li>Next, add the `TrilioVault` Helm repository, and list the available charts:
 
   ```shell
@@ -228,7 +218,6 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   helm repo add triliovault http://charts.k8strilio.net/trilio-stable/k8s-triliovault
   helm search repo triliovault-operator
   ```
-
   The output looks similar to the following:
 
   ```text
@@ -237,7 +226,6 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
   ```
   </li>
-  
   <li>The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator which will also install the `Triliovault Manager` CRD. Install `TrilioVault for Kubernetes Operator` using `Helm`:
 
   TVK allows user to alter the values to be used by TVK Operator installation using `--set` option. Check the detailed instructions in [One-click Installation](https://docs.trilio.io/kubernetes/use-triliovault/installing-triliovault#upstream-kubernetes) page.
@@ -245,13 +233,11 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   ```shell
   helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --namespace tvk --create-namespace
   ```
-
   Now, please check your `TVK` deployment:
 
   ```shell
   helm ls -n tvk
   ```
-
   The output looks similar to the following (`STATUS` column should display `deployed`):
 
   ```text
@@ -259,13 +245,11 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.6.6           2.6.6
   triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.6.6  2.6.6
   ```
-
   Next, verify that `TrilioVault-Operator` and `Triliovault-Manager` application is up and running:
 
   ```shell
   kubectl get deployments -n tvk
   ```
-
   The output looks similar to the following (deployment pods must be in the `Ready` state):
 
   ```text
@@ -278,13 +262,11 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   k8s-triliovault-web-backend                     1/1     1            1           2m45s
   triliovault-operator-k8s-triliovault-operator   1/1     1            1           4m35s
   ```
-
   Now, please check your `triliovaultmanagers` CRDs, `tvm` CR as well:
 
   ```shell
   kubectl get crd | grep trilio
   ```
-
   The output looks similar to the following:
 
   ```text
@@ -300,13 +282,11 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   targets.triliovault.trilio.io                    2022-01-20T09:16:03Z
   triliovaultmanagers.triliovault.trilio.io        2022-01-20T09:14:39Z
   ```
-
   You can also check if the `TVM` Custom Resource is created.
 	
   ```shell
   kubectl get triliovaultmanagers -n tvk 
   ```
-	
   The output looks similar to the following:
 	
   ```text
@@ -315,34 +295,28 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   ```
   </li>
 </ol>
-
 If the output looks like above, you installed `TVK` successfully. Next, you will learn how to check license type and validity, as well as how to renew.
 
 ### TrilioVault Application Licensing
-
 By default, when installing `TVK` via `Helm`, there is no `Free Trial` license is generated. But if you download a `Free Trial` license and apply, it lets you run `TVK` for `one month` on `unlimited` cluster nodes. You can always go to the `Trilio` website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs (for example, you can pick the `basic license` type that lets you run `TrilioVault` indefinetly if your `cluster capacity` doesn't exceed `50 nodes` or 100 vCPUs).
 
 ### Checking TVK Application Licensing
-
 Please run below command to see what license is available for your cluster (it is managed via the `License` CRD):
 
 ```shell
 kubectl get license -n tvk
 ```
-
 The output looks similar to (notice the `STATUS` which should be `Active`, as well as the license type in the `EDITION` column and `EXPIRATION TIME`):
 
 ```text
 NAMESPACE   NAME             STATUS   MESSAGE                                   CURRENT NODE COUNT   GRACE PERIOD END TIME   EDITION   CAPACITY   EXPIRATION TIME        MAX NODES
 tvk         test-license-1   Active   Cluster License Activated successfully.   3                                            Basic     50         2022-12-22T00:00:00Z   3
 ```
-
 The license is managed via a special `CRD`, namely the `License` object. You can inspect it by running below command:
 
 ```shell
 kubectl describe license test-license-1 -n tvk 
 ```
-
 The output looks similar to (notice the `Message` and `Capacity` fields, as well as the `Edition`):
 
 ```yaml
@@ -377,7 +351,6 @@ Metadata:
     Scope:                         Cluster
 ...
 ```
-
 The above output will also tell you when the license is going to expire in the `Expiration Timestamp` field, and the `Scope` (`Cluster` based in this case). You can opt for a `cluster` wide license type, or for a `namespace` based license. More details can be found on the [Trilio Licensing](https://docs.trilio.io/kubernetes/overview/licensing) documentation page.
 
 ### Creating/Renewing TVK Application License
@@ -387,7 +360,6 @@ To create or renew the license, you will have to request a new one from the `Tri
 ```shell
 kubectl apply -f <YOUR_LICENSE_FILE_NAME>.yaml -n tvk
 ```
-
 Then, you can check the new license status as you already learned via:
 
 ```shell
@@ -397,7 +369,6 @@ kubectl get license -n tvk
 # Get information about a specific license from the `tvk` namespace
 kubectl describe license <YOUR_LICENSE_NAME_HERE> -n tvk 
 ```
-
 In the next step, you will learn how to define the storage backend for `TrilioVault` to store backups, called a `target`.
 
 ## Step 2 - Creating a TrilioVault Target to Store Backups
@@ -423,7 +394,6 @@ stringData:
   accessKey: <YOUR_OVH_OBJECT_STORAGE_BUCKET_ACCESS_KEY_ID_HERE>	# value must be base64 encoded
   secretKey: <YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>    	# value must be base64 encoded
 ```
-
 Notice that the secret name is `trilio-ovh-s3-target-secret`, and it's referenced by the `spec.objectStoreCredentials.credentialSecret` field of the `Target` CRD explained below. The `secret` can be in the same `namespace` where `TrilioVault` was installed (defaults to `tvk`), or in another namespace of your choice. Just make sure that you reference the namespace correctly. On the other hand, please make sure to `protect` the `namespace` where you store `TrilioVault` secrets via `RBAC`, for `security` reasons.
 
 Typical `Target` definition looks like below:
@@ -447,7 +417,6 @@ spec:
       namespace: tvk
   thresholdCapacity: 10Gi
 ```
-
 Explanation for the above configuration:
 
 - `spec.type`: Type of target for backup storage (S3 is an object store).
@@ -456,43 +425,37 @@ Explanation for the above configuration:
 - `spec.objectStoreCredentials`: Defines required `credentials` (via `credentialSecret`) to access the `S3` storage, as well as other parameters such as bucket region and name.
 - `spec.thresholdCapacity`: Maximum threshold capacity to store backup data.
 
-
 Steps to create a `Target` for `TrilioVault`:
 <ol>
   <li>First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
-    ```shell
-    cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
-    ```
+  ```shell
+  cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
+  ```
   </li>
-
   <li>Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the `<>` placeholders accordingly):
 
-    ```shell
-    kubectl create secret generic trilio-ovh-s3-target-secret \
-      --namespace=tvk \
-      --from-literal=accessKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_ACCESS_KEY_HERE>" \
-      --from-literal=secretKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>"
-    ```
+  ```shell
+  kubectl create secret generic trilio-ovh-s3-target-secret \
+    --namespace=tvk \
+    --from-literal=accessKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_ACCESS_KEY_HERE>" \
+    --from-literal=secretKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>"
+  ```
   </li>
-
   <li>Then, open and inspect the `Target` manifest file provided in the `docs` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
-    ```shell
-    cat assets/manifests/triliovault-ovh-s3-target.yaml
-    ```
+  ```shell
+  cat assets/manifests/triliovault-ovh-s3-target.yaml
+  ```
   </li>
-
   <li>Now, please replace the `<>` placeholders accordingly for your OVH Object Storage `Trilio` bucket, like: `bucketName`, `region`,  `url` and `credentialSecret`.</li>
-
   <li>Finally, save the manifest file and create the `Target` object using `kubectl`:
 
-	```shell
-    kubectl apply -f assets/manifests/triliovault-ovh-s3-target.yaml
-    ```
+  ```shell
+  kubectl apply -f assets/manifests/triliovault-ovh-s3-target.yaml
+  ```
   </li>
 </ol>
-
 What happens next is, `TrilioVault` will spawn a `worker job` named `trilio-ovh-s3-target-validator` responsible with validating your S3 bucket (like availability, permissions, etc.). If the job finishes successfully, the bucket is considered to be healthy or available and the `trilio-ovh-s3-target-validator` job resource is deleted afterwards. If something bad happens, the S3 target validator job is left up and running so that you can inspect the logs and find the possible issue.
 
 Now, please go ahead and check if the `Target` resource created earlier is `healthy`:
@@ -500,38 +463,32 @@ Now, please go ahead and check if the `Target` resource created earlier is `heal
 ```shell
 kubectl get target trilio-ovh-s3-target -n tvk
 ```
-
 The output looks similar to (notice the `STATUS` column value - should be `Available`, meaning it's in a `healthy` state):
 
 ```text
 NAME                   TYPE          THRESHOLD CAPACITY   VENDOR   STATUS      BROWSING ENABLED
 trilio-ovh-s3-target   ObjectStore   10Gi                 Other    Available   Enabled
 ```
-
 If the output looks like above, then you configured the S3 target object successfully.
 
 **Hint:**
-
 In case the target object fails to become healthy, you can inspect the logs from the `trilio-ovh-s3-target-validator` Pod to find the issue:
 
 First, you need to find the target validator
 
-	```shell
-	kubectl get pods -n tvk | grep trilio-ovh-s3-target-validator
-	```
-
+```shell
+kubectl get pods -n tvk | grep trilio-ovh-s3-target-validator
+```
 The output looks similar to:
 
-	```text
-	trilio-ovh-s3-target-validator-tio99a-6lz4q	1/1     Running     0          104s
-	```
-
+```text
+trilio-ovh-s3-target-validator-tio99a-6lz4q	1/1     Running     0          104s
+```
 Now, fetch logs data
 
-	```shell
-	kubectl logs pod/trilio-ovh-s3-target-validator-tio99a-6lz4q -n tvk
-	```
-
+```shell
+kubectl logs pod/trilio-ovh-s3-target-validator-tio99a-6lz4q -n tvk
+```
 The output looks similar to (notice the exception as an example):
 
 ```text
@@ -552,7 +509,6 @@ Traceback (most recent call last):
 Exception: /triliodata is not a mountpoint. We can't proceed further.
 ...
 ```
-
 Next, you will discover the TVK web console which is a really nice and useful addition to help you manage backup and restore operations very easy, among many others.
 
 ## Step 3 - Getting to Know the TVK Web Management Console
@@ -570,7 +526,6 @@ First, you need to identify the `ingress-gateway` service from the `tvk` namespa
 ```shell
 kubectl get svc -n tvk
 ```
-
 The output looks similar to (search for the `k8s-triliovault-ingress-gateway` line, and notice that it listens on port `80` in the `PORT(S)` column):
 
 ```text
@@ -581,7 +536,6 @@ k8s-triliovault-web                 ClusterIP   10.245.62.14     <none>        8
 k8s-triliovault-web-backend         ClusterIP   10.245.69.118    <none>        80/TCP                       22m
 trilio-s3-target-browser-u8wf5f     ClusterIP   10.245.7.116     <none>        80/TCP                       38s
 ```
-
 If you are using LoadBalancer for the `k8s-triliovault-ingress-gateway` then the output would look like:
 
 ```text
@@ -592,7 +546,6 @@ k8s-triliovault-web                                             ClusterIP      1
 k8s-triliovault-web-backend                                     ClusterIP      10.3.249.53    <none>          80/TCP                       24h
 triliovault-operator-k8s-triliovault-operator-webhook-service   ClusterIP      10.3.59.49     <none>          443/TCP                      24h
 ```
-
 `TVK` is using an `Nginx Ingress Controller` to route traffic to the management web console services. Routing is host based, and the host name is `ovh-k8s-tvk.demo.trilio.io` as defined in the `Helm` values file from the `ovh/docs`:
 
 ```yaml
@@ -600,19 +553,16 @@ triliovault-operator-k8s-triliovault-operator-webhook-service   ClusterIP      1
 ingressConfig:
   host: "ovh-k8s-tvk.demo.trilio.io"
 ```
-
 Having the above information at hand, please go ahead and edit the `/etc/hosts` file, and add this entry:
 
 ```text
 127.0.0.1 ovh-k8s-tvk.demo.trilio.io
 ```
-
 Next, create the port forward for the TVK ingress gateway service:
 
 ```shell
 kubectl port-forward svc/k8s-triliovault-ingress-gateway 8080:80 -n tvk
 ```
-
 Finally download the `kubeconfig` file for your OVH Managed Kubernetes Cluster present under `Service` tab as `Kubeconfig file`. This step is required so that the web console can authenticate you using kubeconfig file:
 
 After following the above presented steps, you can access the console in your web browser by navigating to: http://ovh-k8s-tvk.demo.trilio.io. When asked for the `kubeconfig` file, please select the one that you created in the last command from above.
@@ -660,42 +610,36 @@ Next, you will perform the following tasks:
 
 ### Creating mysql-qa helm release
 
-	```shell
-	helm repo add stable https://charts.helm.sh/stable
-	helm repo update
-	helm install mysql-qa --set mysqlRootPassword=triliopass stable/mysql -n demo-backup-ns
-	```
-
+```shell
+helm repo add stable https://charts.helm.sh/stable
+helm repo update
+helm install mysql-qa --set mysqlRootPassword=triliopass stable/mysql -n demo-backup-ns
+```
 To verify if the helm release is deployed correctly, run below command:
 
-	```shell
-	helm ls -n demo-backup-ns
-	```
-
+```shell
+helm ls -n demo-backup-ns
+```
 The output looks similar to below:
 
-	```text
-	NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-	mysql-qa        demo-backup-ns  1               2021-12-23 08:23:01.849247691 +0000 UTC deployed        mysql-1.6.9     5.7.30
-	```
-
+```text
+NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
+mysql-qa        demo-backup-ns  1               2021-12-23 08:23:01.849247691 +0000 UTC deployed        mysql-1.6.9     5.7.30
+```
 Next, verify that `mysql-qa` deployment is up and running:
 
-	```shell
-	kubectl get deployments -n demo-backup-ns
-	```
-	
+```shell
+kubectl get deployments -n demo-backup-ns
+```	
 The output looks similar to below:
 
-	```text
-	NAME       READY   UP-TO-DATE   AVAILABLE   AGE
-	mysql-qa   1/1     1            1           2m5s
-	```
-
+```text
+NAME       READY   UP-TO-DATE   AVAILABLE   AGE
+mysql-qa   1/1     1            1           2m5s
+```
 This shows that the mysql-qa helm release is `ready` state to be backedup.
 
 ### Creating mysql-qa Helm Release Backup
-
 To perform backups for a single application at the namespace level (or Helm release), a `BackupPlan` followed by a `Backup` CRD is required. A `BackupPlan` allows you to:
 
 - Specify a `target` where backups should be `stored`.
@@ -723,7 +667,6 @@ spec:
     helmReleases:
       - mysql-qa
 ```
-
 Explanation for the above configuration:
 
 - `spec.backupConfig.target.name`: Tells `TVK` what target `name` to use for storing backups.
@@ -744,112 +687,96 @@ spec:
     name: mysql-qa-helm-release-backup-plan
     namespace: demo-backup-ns
 ```
-
 Explanation for the above configuration:
 
 - `spec.type`: Specifies backup type (e.g. `Full` or `Incremental`).
 - `spec.backupPlan`: Specifies the `BackupPlan` which this `Backup` should use.
 
 Steps to initiate the `mysql-qa` Helm release one time backup:
-
 <ol>
   <li>First, make sure that the `mysql-qa` is deployed in your cluster by following steps  from (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md#step-4---Creating the mysql-qa Helm Release Backup) section.</li>
-  </li>
-  
+  </li>  
   <li>Next, change directory where the `docs` Git repository was cloned on your local machine:
 
-    	```shell
-    	cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
-    	```
-  </li>
-  
+  ```shell
+  cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
+  ```
+  </li>  
   <li>Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
-    	```shell
-    	cat assets/manifests/mysql-qa-helm-release-backup-plan.yaml
-	cat assets/manifests/mysql-qa-helm-release-backup.yaml
-    	```
-  </li>
-  
+  ```shell
+  cat assets/manifests/mysql-qa-helm-release-backup-plan.yaml
+  cat assets/manifests/mysql-qa-helm-release-backup.yaml
+  ```
+  </li>  
   <li>Create the `BackupPlan` resource, using `kubectl`:
 
-    	```shell
-	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml -n demo-backup-ns
-    	```
+  ```shell
+  kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml -n demo-backup-ns
+  ```
+  Now, inspect the `BackupPlan` status (targeting the `mysql-qa` Helm release), using `kubectl`:
 
-Now, inspect the `BackupPlan` status (targeting the `mysql-qa` Helm release), using `kubectl`:
+  ```shell
+  kubectl get backupplan mysql-qa-helm-release-backup-plan -n demo-backup-ns
+  ```
+  The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
 
-	```shell
-	kubectl get backupplan mysql-qa-helm-release-backup-plan -n demo-backup-ns
-	```
-
-The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
-
-	```text
-	NAME                                  TARGET			...   STATUS
-	mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
-	```
-  </li>
-  
+  ```text
+  NAME                                  TARGET			...   STATUS
+  mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
+  ```
+  </li>  
   <li>Finally, create a `Backup` resource, using `kubectl`:
 
-	```shell
-	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml -n demo-backup-ns
-	```
-	
-Now, inspect the `Backup` status (targeting the `mysql-qa` Helm release), using `kubectl`:
+  ```shell
+  kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml -n demo-backup-ns
+  ```
+  Now, inspect the `Backup` status (targeting the `mysql-qa` Helm release), using `kubectl`:
 
-	```shell
-	kubect get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
-	```
-Next, check the `Backup` object status, using `kubectl`:
+  ```shell
+  kubect get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+  ```
+  Next, check the `Backup` object status, using `kubectl`:
 
-	```shell
-	kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
-	```
+  ```shell
+  kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+  ```
+  The output looks similar to (notice the `STATUS` column value which should be set to `InProgress`, as well as the `BACKUP TYPE` set to `Full`):
 
-The output looks similar to (notice the `STATUS` column value which should be set to `InProgress`, as well as the `BACKUP TYPE` set to `Full`):
+  ```text
+  NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS       ...
+  mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          InProgress   ...                                  
+  ```
+  After all the `mysql-qa` Helm release components finish uploading to the `S3` target, you should get below results:
 
-	```text
-	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS       ...
-	mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          InProgress   ...                                  
-	```
+  ```shell
+  kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
+  ```
+  The output looks similar to (notice that the `STATUS` changed to `Available`, and `PERCENTAGE` is `100`)
 
-After all the `mysql-qa` Helm release components finish uploading to the `S3` target, you should get below results:
-
-	```shell
-	kubectl get backup mysql-qa-helm-release-full-backup -n demo-backup-ns
-	```
-
-The output looks similar to (notice that the `STATUS` changed to `Available`, and `PERCENTAGE` is `100`)
-
-	```text
-	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS      ...   PERCENTAGE
-	mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          Available   ...   100
-	```
+  ```text
+  NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS      ...   PERCENTAGE
+  mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          Available   ...   100
+  ```
   </li>
 </ol>
-
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
 
 Finally, you can check that the backup is available in the web console as well, by navigating to `Resource Management -> demo-backup-ns -> Backup Plans` (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
 
 ### Deleting mysql-qa Helm Release and Resources
-
 Now, go ahead and simulate a disaster, by intentionally deleting the `mysql-qa` Helm release:
 
-	```shell
-	helm delete mysql-qa -n demo-backup-ns
-	```
-
+```shell
+helm delete mysql-qa -n demo-backup-ns
+```
 Next, check that the namespace resources were deleted (listing should be empty):
 
-	```shell
-	kubectl get all -n demo-backup-ns
-	```
+```shell
+kubectl get all -n demo-backup-ns
+```
 
 ### Restoring mysql-qa Helm Release Backup
-
 **Important notes:**
 
 - If restoring into the same namespace, ensure that the original application components have been removed. Especially the PVC of application are deleted.
@@ -872,7 +799,6 @@ spec:
       namespace: demo-backup-ns
   skipIfAlreadyExists: true
 ```
-
 Explanation for the above configuration:
 
 - `spec.source.type`: Specifies what backup type to restore from.
@@ -883,70 +809,62 @@ Explanation for the above configuration:
 
 First, inspect the `Restore` CRD example from the `ovh/docs` Git repository:
 
-	```shell
-	cat assets/manifests/mysql-qa-helm-release-restore.yaml
-	```
-
+```shell
+cat assets/manifests/mysql-qa-helm-release-restore.yaml
+```
 Then, create the `Restore` resource using `kubectl`:
 
-	```shell
-	kubectl apply -f assets/manifests/mysql-qa-helm-release-restore.yaml
-	```
-
+```shell
+kubectl apply -f assets/manifests/mysql-qa-helm-release-restore.yaml
+```
 Finally, inspect the `Restore` object status:
 
-	```shell
-	kubectl get restore mysql-qa-helm-release-restore -n demo-restore-ns
-	```
-
+```shell
+kubectl get restore mysql-qa-helm-release-restore -n demo-restore-ns
+```
 The output looks similar to (notice the STATUS column set to `Completed`, as well as the `PERCENTAGE COMPLETED` set to `100`):
 
-	```text
-	NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
-	mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
-	```
-
+```text
+NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
+mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
+```
 If the output looks like above, then the `mysql-qa` Helm release `restoration` process completed successfully.
 
 ### Verifying Applications Integrity after Restoration
-
 Check that all the `demo-restore-ns` namespace `resources` are in place and running:
 
-	```shell
-	kubectl get all -n demo-restore-ns
-	```
-
+```shell
+kubectl get all -n demo-restore-ns
+```
 The output looks similar to:
 
-	```text
-	NAME                                                           READY   STATUS      RESTARTS   AGE
-	pod/mysql-qa-665f6fb548-m8tnd                                  1/1     Running     0          91m
-	pod/mysql-qa-helm-release-full-backup-metamover-9w7s0y-x8867   0/1     Completed   0          9m2s
+```text
+NAME                                                           READY   STATUS      RESTARTS   AGE
+pod/mysql-qa-665f6fb548-m8tnd                                  1/1     Running     0          91m
+pod/mysql-qa-helm-release-full-backup-metamover-9w7s0y-x8867   0/1     Completed   0          9m2s
 
-	NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
-	service/mysql-qa   ClusterIP   10.3.227.118   <none>        3306/TCP   91m
+NAME               TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
+service/mysql-qa   ClusterIP   10.3.227.118   <none>        3306/TCP   91m
 
-	NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
-	deployment.apps/mysql-qa   1/1     1            1           91m
+NAME                       READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/mysql-qa   1/1     1            1           91m
 
-	NAME                                  DESIRED   CURRENT   READY   AGE
-	replicaset.apps/mysql-qa-665f6fb548   1         1         1       91m
+NAME                                  DESIRED   CURRENT   READY   AGE
+replicaset.apps/mysql-qa-665f6fb548   1         1         1       91m
 
-	NAME                                                           COMPLETIONS   DURATION   AGE
-	job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
-	```
-
+NAME                                                           COMPLETIONS   DURATION   AGE
+job.batch/mysql-qa-helm-release-full-backup-metamover-9w7s0y   1/1           28s        9m2s
+```
 Next step deals with whole cluster backup and restore, thus covering a disaster recovery scenario.
 
 ## Step 5 - Backup and Restore Whole Cluster Example
-
 In this step, you will simulate a `disaster recovery` scenario. The whole `OVH Managed Kubernetes Cluster` will be deleted, and then the important applications restored from a previous backup.
 
 Next, you will perform the following tasks:
 
 - `Create` the `multi-namespace backup`, using a `ClusterBackupPlan` CRD that targets `all important namespaces` from your `OVH Managed Kubernetes Cluster`.
 - `Delete` the `OVH Managed Kubernetes Cluster`, using `OVH Cloud Web Console`.
-- Create a new `OVH Managed Kubernetes Cluster`, using `OVH Cloud Web Console`.
+- `Create` a new `OVH Managed Kubernetes Cluster`, using `OVH Cloud Web Console`.
 - `Re-install` TVK and configure the OVH Object Staorge bucket as S3 target (you're going to use the same S3 bucket, where your important backups are stored)
 - `Restore` all the important applications by using the TVK web console.
 - `Check` the `OVH Managed Kubernetes Cluster` applications integrity.
@@ -974,7 +892,6 @@ spec:
     - namespace: backend
     - namespace: monitoring
 ```
-
 Notice that `kube-system` (or other OVH Managed Kubernetes Cluster related namespaces) is not included in the list. Usually, those are not required, unless there is a special case requiring some settings to be persisted at that level.
 
 Typical `ClusterBackup` manifest targeting multiple namespaces looks like below:
@@ -991,67 +908,57 @@ spec:
     name: ovh-multi-ns-backup-plan
     namespace: default
 ```
-
 Steps to initiate a backup for all important namespaces in your OVH Managed Kubernetes Cluster:
 <ol>
   <li>First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
-    ```shell
-	cd docs
-	```
+  ```shell
+  cd docs
+  ```
   </li>
-  
   <li>Then, open and inspect the `ClusterBackupPlan` and `ClusterBackup` manifest files provided in the `docs` repository.
 
-	```shell
-    cat assets/manifests/multi-ns-backup-plan.yaml
-    cat assets/manifests/multi-ns-backup.yaml
-    ```
+  ```shell
+  cat assets/manifests/multi-ns-backup-plan.yaml
+  cat assets/manifests/multi-ns-backup.yaml
+  ```
   </li>
-  
   <li>Create the `ClusterBackupPlan` resource, using `kubectl`:
 
-    ```shell
-    kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
-    ```
-
+  ```shell
+  kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
+  ```
   Now, inspect the `ClusterBackupPlan` status, using `kubectl`:
 
-	```shell
-	kubectl get clusterbackupplan multi-ns-backup-plan -n default
-	```
-
+  ```shell
+  kubectl get clusterbackupplan multi-ns-backup-plan -n default
+  ```
   The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
 
-	```text
-	NAME                            TARGET                 ...		STATUS
-	ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
-	```
+  ```text
+  NAME                            TARGET                 ...		STATUS
+  ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
+  ```
   </li>
-  
   <li>Finally, create the `ClusterBackup` resource, using `kubectl`:
 	
-	```shell
-	kubectl apply -f assets/manifests/multi-ns-cluster-backup.yaml
-	```
-
+  ```shell
+  kubectl apply -f assets/manifests/multi-ns-cluster-backup.yaml
+  ```
   Next, check the `ClusterBackup` status, using `kubectl`:
 
-	```shell
-	kubectl get clusterbackup multi-ns-cluster-backup -n default
-	```
-
+  ```shell
+  kubectl get clusterbackup multi-ns-cluster-backup -n default
+  ```
   The output looks similar to (notice the `STATUS` column value which should be set to `Available`, as well as the `PERCENTAGE COMPLETE` set to `100`):
 
-	```text
-	NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
-	multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
-	```
-
+  ```text
+  NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
+  multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
+  ```
   If the output looks like above then all your important application namespaces were backed up successfully.
   </li>
 <ol>
-
 **Note:**  Please bear in mind that it may take a while for the full cluster backup to finish, depending on how many namespaces and associated resources are involved in the process.
 
 You can also open the web console main dashboard and inspect the `multi-namespace` backup (notice how all the important namespaces that were backed up are highlighted in green color, in a honeycomb structure)
@@ -1086,10 +993,9 @@ After a while, if the progress window looks like below, then the `multi-namespac
 
 First, verify all cluster `Kubernetes` resources (you should have everything in place):
 
-	```shell
-	kubectl get all --all-namespaces
-	```
-
+```shell
+kubectl get all --all-namespaces
+```
 In the next step, you will learn how to perform scheduled (or automatic) backups for your `OVH Managed Kubernetes Cluster` applications.
 
 ## Step 6 - Scheduled Backups
@@ -1110,7 +1016,6 @@ spec:
     schedule:
       - "*/15 * * * *" # trigger every 15 minutes
 ```
-
 Next, you can apply the schedule policy to a `ClusterBackupPlan` CRD for example, as seen below:
 
 ```yaml
@@ -1133,70 +1038,60 @@ spec:
     - namespace: demo-backup-ns
     - namespace: backend
 ```
-
 Looking at the above, you can notice that it's a basic `ClusterBackupPlan` CRD, referencing the `Policy` CRD defined earlier via the `spec.backupConfig.schedulePolicy` field. You can have separate policies created for `full` or `incremental` backups, hence the `fullBackupPolicy` or `incrementalBackupPolicy` can be specified in the spec.
 
 Now, please go ahead and create the schedule `Policy`, using the sample manifest provided by the `ovh/docs` tutorial (make sure to change directory first, where the ovh/docs Git repository was cloned on your local machine):
 
-	```shell
-	kubectl apply -f assets/manifests/triliovault-scheduling-policy-every-15min.yaml
-	```
-
+```shell
+kubectl apply -f assets/manifests/triliovault-scheduling-policy-every-15min.yaml
+```
 Check that the policy resource was created:
 
-	```shell
-	kubectl get policies -n default
-	```
-
+```shell
+kubectl get policies -n default
+```
 The output looks similar to (notice the `POLICY` type set to `Schedule`):
 
-	```text
-	NAMESPACE   NAME                           POLICY     DEFAULT
-	default     scheduled-backup-every-15min   Schedule   false
-	```
-
+```text
+NAMESPACE   NAME                           POLICY     DEFAULT
+default     scheduled-backup-every-15min   Schedule   false
+```
 Finally, create the `backupplan` resource for the `default` namespace scheduled backups:
 
 # Create the backup plan first for default namespace
 
-	```shell
-	kubectl apply -f assets/manifests/triliovault-multi-ns-backup-plan-every-15min.yaml
-	```
-
+```shell
+kubectl apply -f assets/manifests/triliovault-multi-ns-backup-plan-every-15min.yaml
+```
 Check the scheduled backup plan status for `default`:
 
-	```shell
-	kubectl get clusterbackupplan triliovault-multi-ns-backup-plan-every-15min.yaml -n default
-	```
-
+```shell
+kubectl get clusterbackupplan triliovault-multi-ns-backup-plan-every-15min.yaml -n default
+```
 The output looks similar to (notice the `FULL BACKUP POLICY` value set to the previously created `scheduled-backup-every-5min` policy resource, as well as the `STATUS` which should be `Available`):
 
-	```text
-	NAME                                  TARGET                 ...   FULL BACKUP POLICY             STATUS
-	multi-ns-backup-plan-15min-schedule   trilio-ovh-s3-target   ...   scheduled-backup-every-15min   Available
-	```
-
+```text
+NAME                                  TARGET                 ...   FULL BACKUP POLICY             STATUS
+multi-ns-backup-plan-15min-schedule   trilio-ovh-s3-target   ...   scheduled-backup-every-15min   Available
+```
 Create a `clusterbackup` resource using scheduled policy for every 15 min:
 
 # Create and trigger the scheduled backup for deafult namespace
 
-	```shell
-	kubectl apply -f assets/manifests/triliovault-multi-ns-backup-every-15min.yaml.yaml
-	```
-
+```shell
+kubectl apply -f assets/manifests/triliovault-multi-ns-backup-every-15min.yaml.yaml
+```
 Check the scheduled backup status for `default`:
 
-	```shell
-	kubectl get clusterbackup multi-ns-backup-15min-schedule -n default
-	```
-
+```shell
+kubectl get clusterbackup multi-ns-backup-15min-schedule -n default
+```
 The output looks similar to (notice the `BACKUPPLAN` value set to the previously created backup plan resource, as well as the `STATUS` which should be `Available`):
 
-	```text
-	NAME                             BACKUPPLAN                            BACKUP TYPE   STATUS      ...
-	multi-ns-backup-15min-schedule   multi-ns-backup-plan-15min-schedule   Full          Available   ...
-	```
-
+```text
+NAME                             BACKUPPLAN                            BACKUP TYPE   STATUS      ...
+multi-ns-backup-15min-schedule   multi-ns-backup-plan-15min-schedule   Full          Available   ...
+```
 Now, you can check that backups are performed on a regular interval (15 minutes), by querying the cluster backup resource and inspect the `START TIME` column (`kubectl get clusterbackup -n default`). It should reflect the 15 minute delta.
 
 In the next step, you will learn how to set up a retention policy for your backups.
@@ -1225,7 +1120,6 @@ spec:
     monthOfYear: March
     yearly: 1
 ```
-
 Explanation for the above configuration:
 
 - `spec.type`: Defines policy type. Can be: `Retention` or `Schedule`.
@@ -1267,20 +1161,17 @@ spec:
     - namespace: default
     - namespace: backend
 ```
-
 Once you apply the `ClusterBackupplan`, you can check it using:
 
-	```shell
-	kubect get clusterbackupplan -n default
-	```
-
+```shell
+kubect get clusterbackupplan -n default
+```
 Output would look similar to below:
 
-	```text
-	NAME                                            TARGET                 RETENTION POLICY    ...		STATUS
-	multi-ns-backup-plan-15min-schedule-retention   trilio-ovh-s3-target   sample-ret-policy   ...		Available  
-	```
-
+```text
+NAME                                            TARGET                 RETENTION POLICY    ...		STATUS
+multi-ns-backup-plan-15min-schedule-retention   trilio-ovh-s3-target   sample-ret-policy   ...		Available  
+```
 Notice that it uses a `retentionPolicy` field to reference the policy in question. Of course, you can have a backup plan that has both types of policies set, so that it is able to perform scheduled backups, as well as to deal with retention strategies.
 
 ### Using Cleanup Policies
@@ -1300,7 +1191,6 @@ spec:
   cleanupConfig:
     backupDays: 5
 ```
-
 The above cleanup policy must be defined in the `TVK` install namespace. Then, a `cron job` is created automatically for you that runs `every 30 mins`, and `deletes failed backups` based on the value specified for `backupdays` within the spec field.
 
 This is a very neat feature that TVK provides to help you deal with this kind of situation.
@@ -1320,4 +1210,3 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
 - [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes).
-
