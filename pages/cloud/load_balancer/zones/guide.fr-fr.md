@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les zones
+title: Configuration d'un service OVHCloud Load Balancer avec les Zones
 slug: zones
 excerpt: Utilisation de zones afin d'augmenter la disponibilité et diminuer la latence
 section: Configuration
