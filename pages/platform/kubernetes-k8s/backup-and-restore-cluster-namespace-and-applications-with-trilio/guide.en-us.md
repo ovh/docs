@@ -215,105 +215,105 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 <ol>
   <li>First, clone the `OVH Docs` Git repository and change directory to your local copy:
 
-    ```shell
-    git clone https://github.com/ovh/docs.git
-    cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
-    ```
+  ```shell
+  git clone https://github.com/ovh/docs.git
+  cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
+  ```
   </li>
 
   <li>Next, add the `TrilioVault` Helm repository, and list the available charts:
 
-    ```shell
-    helm repo add triliovault-operator http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
-    helm repo add triliovault http://charts.k8strilio.net/trilio-stable/k8s-triliovault
-    helm search repo triliovault-operator
-    ```
+  ```shell
+  helm repo add triliovault-operator http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
+  helm repo add triliovault http://charts.k8strilio.net/trilio-stable/k8s-triliovault
+  helm search repo triliovault-operator
+  ```
 
-    The output looks similar to the following:
+  The output looks similar to the following:
 
-    ```text
-    NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-    triliovault-operator/k8s-triliovault-operator   2.6.6           2.6.6           K8s-TrilioVault-Operator is an operator designe...
-    triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
-    ```
+  ```text
+  NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
+  triliovault-operator/k8s-triliovault-operator   2.6.6           2.6.6           K8s-TrilioVault-Operator is an operator designe...
+  triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
+  ```
   </li>
   
   <li>The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator which will also install the `Triliovault Manager` CRD. Install `TrilioVault for Kubernetes Operator` using `Helm`:
 
   TVK allows user to alter the values to be used by TVK Operator installation using `--set` option. Check the detailed instructions in [One-click Installation](https://docs.trilio.io/kubernetes/use-triliovault/installing-triliovault#upstream-kubernetes) page.
 
-    ```shell
-    helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --namespace tvk --create-namespace
-    ```
+  ```shell
+  helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --namespace tvk --create-namespace
+  ```
 
   Now, please check your `TVK` deployment:
 
-	```shell
-	helm ls -n tvk
-	```
+  ```shell
+  helm ls -n tvk
+  ```
 
   The output looks similar to the following (`STATUS` column should display `deployed`):
 
-	```text
-	NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-	triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.6.6           2.6.6
-	triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.6.6  2.6.6
-	```
+  ```text
+  NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
+  triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.6.6           2.6.6
+  triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.6.6  2.6.6
+  ```
 
   Next, verify that `TrilioVault-Operator` and `Triliovault-Manager` application is up and running:
 
-	```shell
-	kubectl get deployments -n tvk
-	```
+  ```shell
+  kubectl get deployments -n tvk
+  ```
 
   The output looks similar to the following (deployment pods must be in the `Ready` state):
 
-	```text
-	NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE
-	k8s-triliovault-admission-webhook               1/1     1            1           2m45s
-	k8s-triliovault-control-plane                   1/1     1            1           2m45s
-	k8s-triliovault-exporter                        1/1     1            1           2m45s
-	k8s-triliovault-ingress-gateway                 1/1     1            1           2m45s
-	k8s-triliovault-web                             1/1     1            1           2m45s
-	k8s-triliovault-web-backend                     1/1     1            1           2m45s
-	triliovault-operator-k8s-triliovault-operator   1/1     1            1           4m35s
-	```
+  ```text
+  NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE
+  k8s-triliovault-admission-webhook               1/1     1            1           2m45s
+  k8s-triliovault-control-plane                   1/1     1            1           2m45s
+  k8s-triliovault-exporter                        1/1     1            1           2m45s
+  k8s-triliovault-ingress-gateway                 1/1     1            1           2m45s
+  k8s-triliovault-web                             1/1     1            1           2m45s
+  k8s-triliovault-web-backend                     1/1     1            1           2m45s
+  triliovault-operator-k8s-triliovault-operator   1/1     1            1           4m35s
+  ```
 
   Now, please check your `triliovaultmanagers` CRDs, `tvm` CR as well:
 
-	```shell
-	kubectl get crd | grep trilio
-	```
+  ```shell
+  kubectl get crd | grep trilio
+  ```
 
   The output looks similar to the following:
 
-	```text
-	backupplans.triliovault.trilio.io                2022-01-20T09:15:59Z
-	backups.triliovault.trilio.io                    2022-01-20T09:15:59Z
-	clusterbackupplans.triliovault.trilio.io         2022-01-20T09:15:59Z
-	clusterbackups.triliovault.trilio.io             2022-01-20T09:16:00Z
-	clusterrestores.triliovault.trilio.io            2022-01-20T09:16:01Z
-	hooks.triliovault.trilio.io                      2022-01-20T09:16:01Z
-	licenses.triliovault.trilio.io                   2022-01-20T09:16:01Z
-	policies.triliovault.trilio.io                   2022-01-20T09:16:02Z
-	restores.triliovault.trilio.io                   2022-01-20T09:16:02Z
-	targets.triliovault.trilio.io                    2022-01-20T09:16:03Z
-	triliovaultmanagers.triliovault.trilio.io        2022-01-20T09:14:39Z
-	```
+  ```text
+  backupplans.triliovault.trilio.io                2022-01-20T09:15:59Z
+  backups.triliovault.trilio.io                    2022-01-20T09:15:59Z
+  clusterbackupplans.triliovault.trilio.io         2022-01-20T09:15:59Z
+  clusterbackups.triliovault.trilio.io             2022-01-20T09:16:00Z
+  clusterrestores.triliovault.trilio.io            2022-01-20T09:16:01Z
+  hooks.triliovault.trilio.io                      2022-01-20T09:16:01Z
+  licenses.triliovault.trilio.io                   2022-01-20T09:16:01Z
+  policies.triliovault.trilio.io                   2022-01-20T09:16:02Z
+  restores.triliovault.trilio.io                   2022-01-20T09:16:02Z
+  targets.triliovault.trilio.io                    2022-01-20T09:16:03Z
+  triliovaultmanagers.triliovault.trilio.io        2022-01-20T09:14:39Z
+  ```
 
   You can also check if the `TVM` Custom Resource is created.
 	
-	```shell
-	kubectl get triliovaultmanagers -n tvk 
-	```
+  ```shell
+  kubectl get triliovaultmanagers -n tvk 
+  ```
 	
   The output looks similar to the following:
 	
-	```text
-	NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-	triliovault-manager   2.6.6                 Cluster   Deployed
-	```
-	</li>
+  ```text
+  NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
+  triliovault-manager   2.6.6                 Cluster   Deployed
+  ```
+  </li>
 </ol>
 
 If the output looks like above, you installed `TVK` successfully. Next, you will learn how to check license type and validity, as well as how to renew.
