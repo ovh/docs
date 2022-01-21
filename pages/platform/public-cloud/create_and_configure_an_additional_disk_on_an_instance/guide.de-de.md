@@ -1,7 +1,7 @@
 ---
 title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
 slug: erstellen_zustzliche_festplatte_public_cloud
-excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrerr Public Cloud Instanz hinzufügen'
+excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
 legacy_guide_number: 1863
 section: 'Storage'
 order: 1
@@ -15,13 +15,13 @@ order: 1
 
 ## Ziel
 
-Es ist möglich, zusätzliche Festplatten für Ihre OVHcloud Public Cloud Instanzen zu erstellen. Das kann in folgenden Fällen hilfreich sein:
+Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen zu erstellen. Das kann in folgenden Fällen hilfreich sein:
 
 - Sie möchten Ihre Speicherkapazität erhöhen, ohne das Instanzmodell zu verändern.
 - Sie benötigen hochverfügbaren und leistungsfähigen Speicherplatz.
 - Sie möchten sowohl Ihren Storage als auch Ihre Daten zu einer anderen Instanz verschieben.
 
-**Hier erfahren Sie, wie Sie eine zusätzliche Festplatte erstellen und auf Ihrer Instanz konfigurieren.**
+**Diese Anleitung erklärt, wie Sie eine zusätzliche Disk erstellen und auf Ihrer Instanz konfigurieren.**
 
 ## Voraussetzungen
 
