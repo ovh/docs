@@ -23,7 +23,7 @@ Pour l'utiliser, nous vous recommandons tout d'abord de prendre connaissance de 
 
 ## Que se passe-t-il lorsqu'un service OVHcloud est résilié ? <a name="consequences"></a>
 
-La « *résiliation* » concernant l'un de vos services OVHcloud signifie qu'à la fin de l'abonnement en cours, il sera interrompu de façon définitive. 
+La « *résiliation* » d'un service OVHcloud implique qu'il sera interrompu **de façon définitive** à la fin de l'abonnement en cours. 
 
 Elle sera effective lorsque la période de validité de votre abonnement sera terminée. Vous pouvez résilier un service ou [annuler une résiliation](#cancel) jusqu'à 24 heures avant cette date.
 
@@ -116,6 +116,11 @@ Pour résilier votre offre [Public Cloud](https://www.ovhcloud.com/fr/public-clo
 
 #### Nom de domaine <a name="domain"></a>
 
+> [!primary]
+>
+> Suite à votre résiliation et à la fin de l'abonnement en cours, votre nom de domaine générique (.com, .org. net, etc.) vous reste "réservé" pendant la période dite « de « *grâce* » (5 jours) puis pendant celle de « *rédemption* » (35 à 40 jours supplémentaire), ce qui signifie que vous seul serait en mesure de le renouveler pendant ces périodes.
+>
+
 Pour résilier votre [nom de domaine](https://www.ovhcloud.com/fr/domains/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
@@ -134,7 +139,17 @@ Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résili
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-#### Certificat SSL Sectigo <a name="ssl"></a>
+#### Certificat SSL Sectigo <a name="ssl_sectigo"></a>
+
+#### SSL Gateway <a name="ssl_gateway"></a>
+
+Pour résilier votre offre [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### Hébergement Plesk <a name="plesk"></a>
 
