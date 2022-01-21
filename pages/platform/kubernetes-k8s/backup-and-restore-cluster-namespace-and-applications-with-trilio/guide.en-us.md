@@ -27,7 +27,7 @@ sections: 'Tutorials'
  }
 </style>
 
-**Last updated December 27<sup>th</sup>, 2021.**
+**Last updated January 28<sup>th</sup>, 2022.**
 
 ## Introduction
 
@@ -136,18 +136,17 @@ After finishing this tutorial, you should be able to:
 ## Prerequisites
 
 To complete this tutorial, you need the following:
-
-1. A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel) and create a `S3 User` which will have permission to access the Object Storage Container.
-2. A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.
-3. [Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.
-4. [Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.
-5. [krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/), for installation of preflight checks plugin.
+<ol>
+  <li>A [OVH S3 Object Storage Container/Bucket](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel) and create a `S3 User` which will have permission to access the Object Storage Container.</li>
+  <li>A [Git](https://git-scm.com/downloads) client, to clone the `OVH Docs` repository.</li>
+  <li>[Helm](https://www.helms.sh), for managing `TrilioVault Operator` releases and upgrades.</li>
+  <li>[Kubectl](https://kubernetes.io/docs/tasks/tools), for `Kubernetes` interaction.</li>
+  <li>[krew](https://krew.sigs.k8s.io/docs/user-guide/setup/install/), for installation of preflight checks plugin.</li>
+</ol>
 
 **Important note:**
 
-In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Managed Kubernetes Cluster` needs to be configured to support the `Container Storage Interface` (or `CSI`, for short) and Volumesnapshot CustomResourceDefinitions should be deployed.
-
-User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
+In order for `TrilioVault` to work correctly and to backup your `PVCs`, `OVH Managed Kubernetes Cluster` needs to be configured to support the `Container Storage Interface` (or `CSI`, for short) and `volumesnapshot` CustomResourceDefinitions should be deployed.
 
 ```shell
 kubectl get crd | grep volumesnapshot
@@ -161,7 +160,7 @@ volumesnapshotcontents.snapshot.storage.k8s.io   2022-01-20T07:58:05Z
 volumesnapshots.snapshot.storage.k8s.io          2022-01-20T07:58:06Z
 ```
 
-Also make sure that the CRD support both v1beta1 and v1 API version. You can run below command to check the API version:
+Also make sure that the CRD support both `v1beta1` and `v1` API version. You can run below command to check the API version:
 
 ```shell
 kubectl get crd volumesnapshots.snapshot.storage.k8s.io -o yaml
@@ -195,6 +194,8 @@ csi-cinder-classic          cinder.csi.openstack.org   Delete          Immediate
 csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
+
+User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
 ## Step 1 - Installing TrilioVault for Kubernetes
 
@@ -457,14 +458,15 @@ Explanation for the above configuration:
 
 
 Steps to create a `Target` for `TrilioVault`:
-
-1. First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
+<ol>
+  <li>First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
     ```shell
     cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     ```
+  </li>
 
-2. Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the `<>` placeholders accordingly):
+  <li>Next, create the Kubernetes secret containing your target S3 bucket credentials (please replace the `<>` placeholders accordingly):
 
     ```shell
     kubectl create secret generic trilio-ovh-s3-target-secret \
@@ -472,19 +474,24 @@ Steps to create a `Target` for `TrilioVault`:
       --from-literal=accessKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_ACCESS_KEY_HERE>" \
       --from-literal=secretKey="<YOUR_OVH_OBJECT_STORAGE_BUCKET_SECRET_KEY_HERE>"
     ```
+  </li>
 
-3. Then, open and inspect the `Target` manifest file provided in the `docs` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
+  <li>Then, open and inspect the `Target` manifest file provided in the `docs` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
     ```shell
     cat assets/manifests/triliovault-ovh-s3-target.yaml
     ```
+  </li>
 
-4. Now, please replace the `<>` placeholders accordingly for your OVH Object Storage `Trilio` bucket, like: `bucketName`, `region`,  `url` and `credentialSecret`.
-5. Finally, save the manifest file and create the `Target` object using `kubectl`:
+  <li>Now, please replace the `<>` placeholders accordingly for your OVH Object Storage `Trilio` bucket, like: `bucketName`, `region`,  `url` and `credentialSecret`.</li>
 
-    ```shell
+  <li>Finally, save the manifest file and create the `Target` object using `kubectl`:
+
+	```shell
     kubectl apply -f assets/manifests/triliovault-ovh-s3-target.yaml
     ```
+  </li>
+</ol>
 
 What happens next is, `TrilioVault` will spawn a `worker job` named `trilio-ovh-s3-target-validator` responsible with validating your S3 bucket (like availability, permissions, etc.). If the job finishes successfully, the bucket is considered to be healthy or available and the `trilio-ovh-s3-target-validator` job resource is deleted afterwards. If something bad happens, the S3 target validator job is left up and running so that you can inspect the logs and find the possible issue.
 
@@ -745,21 +752,26 @@ Explanation for the above configuration:
 
 Steps to initiate the `mysql-qa` Helm release one time backup:
 
-1. First, make sure that the `mysql-qa` is deployed in your cluster by following steps  from (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md#step-4---Creating the mysql-qa Helm Release Backup) section.
-2. Next, change directory where the `docs` Git repository was cloned on your local machine:
+<ol>
+  <li>First, make sure that the `mysql-qa` is deployed in your cluster by following steps  from (pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md#step-4---Creating the mysql-qa Helm Release Backup) section.</li>
+  </li>
+  
+  <li>Next, change directory where the `docs` Git repository was cloned on your local machine:
 
     	```shell
     	cd docs/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/
     	```
-
-3. Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
+  </li>
+  
+  <li>Then, open and inspect the mysql-qa helm release `BackupPlan` and `Backup` manifest files provided in the `pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/guide.en-us.md` repository, using an editor of your choice (preferably with `YAML` lint support). You can use [VS Code](https://code.visualstudio.com) for example:
 
     	```shell
     	cat assets/manifests/mysql-qa-helm-release-backup-plan.yaml
 	cat assets/manifests/mysql-qa-helm-release-backup.yaml
     	```
-
-4. Create the `BackupPlan` resource, using `kubectl`:
+  </li>
+  
+  <li>Create the `BackupPlan` resource, using `kubectl`:
 
     	```shell
 	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup-plan.yaml -n demo-backup-ns
@@ -777,8 +789,9 @@ The output looks similar to (notice the `STATUS` column value which should be se
 	NAME                                  TARGET			...   STATUS
 	mysql-qa-helm-release-backup-plan   trilio-ovh-s3-target	...   Available
 	```
-
-5. Finally, create a `Backup` resource, using `kubectl`:
+  </li>
+  
+  <li>Finally, create a `Backup` resource, using `kubectl`:
 
 	```shell
 	kubectl apply -f assets/manifests/mysql-qa-helm-release-backup.yaml -n demo-backup-ns
@@ -814,6 +827,8 @@ The output looks similar to (notice that the `STATUS` changed to `Available`, an
 	NAME                                BACKUPPLAN                          BACKUP TYPE   STATUS      ...   PERCENTAGE
 	mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full          Available   ...   100
 	```
+  </li>
+</ol>
 
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
 
@@ -978,59 +993,64 @@ spec:
 ```
 
 Steps to initiate a backup for all important namespaces in your OVH Managed Kubernetes Cluster:
+<ol>
+  <li>First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
 
-1. First, change directory where the `ovh/docs` Git repository was cloned on your local machine:
-
-    	```shell
+    ```shell
 	cd docs
 	```
-
-2. Then, open and inspect the `ClusterBackupPlan` and `ClusterBackup` manifest files provided in the `docs` repository.
+  </li>
+  
+  <li>Then, open and inspect the `ClusterBackupPlan` and `ClusterBackup` manifest files provided in the `docs` repository.
 
 	```shell
-    	cat assets/manifests/multi-ns-backup-plan.yaml
-    	cat assets/manifests/multi-ns-backup.yaml
-    	```
+    cat assets/manifests/multi-ns-backup-plan.yaml
+    cat assets/manifests/multi-ns-backup.yaml
+    ```
+  </li>
+  
+  <li>Create the `ClusterBackupPlan` resource, using `kubectl`:
 
-3. Create the `ClusterBackupPlan` resource, using `kubectl`:
+    ```shell
+    kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
+    ```
 
-    	```shell
-    	kubectl apply -f assets/manifests/multi-ns-backup-plan.yaml
-    	```
-
-Now, inspect the `ClusterBackupPlan` status, using `kubectl`:
+  Now, inspect the `ClusterBackupPlan` status, using `kubectl`:
 
 	```shell
 	kubectl get clusterbackupplan multi-ns-backup-plan -n default
 	```
 
-The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
+  The output looks similar to (notice the `STATUS` column value which should be set to `Available`):
 
 	```text
 	NAME                            TARGET                 ...		STATUS
 	ovh-multi-ns-backup-plan		trilio-ovh-s3-target   ...		Available
 	```
-
-4. Finally, create the `ClusterBackup` resource, using `kubectl`:
+  </li>
+  
+  <li>Finally, create the `ClusterBackup` resource, using `kubectl`:
 	
 	```shell
 	kubectl apply -f assets/manifests/multi-ns-cluster-backup.yaml
 	```
 
-Next, check the `ClusterBackup` status, using `kubectl`:
+  Next, check the `ClusterBackup` status, using `kubectl`:
 
 	```shell
 	kubectl get clusterbackup multi-ns-cluster-backup -n default
 	```
 
-The output looks similar to (notice the `STATUS` column value which should be set to `Available`, as well as the `PERCENTAGE COMPLETE` set to `100`):
+  The output looks similar to (notice the `STATUS` column value which should be set to `Available`, as well as the `PERCENTAGE COMPLETE` set to `100`):
 
 	```text
 	NAME           		BACKUPPLAN             		BACKUP TYPE   STATUS		...		COMPLETE
 	multi-ns-backup   	ovh-multi-ns-backup-plan	Full          Avilable		...		100                               
 	```
 
-If the output looks like above then all your important application namespaces were backed up successfully.
+  If the output looks like above then all your important application namespaces were backed up successfully.
+  </li>
+<ol>
 
 **Note:**  Please bear in mind that it may take a while for the full cluster backup to finish, depending on how many namespaces and associated resources are involved in the process.
 
