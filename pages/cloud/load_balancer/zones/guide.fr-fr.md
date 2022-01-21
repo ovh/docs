@@ -62,7 +62,7 @@ cliquez sur `Appliquer la configuration`{.action}.
 
 Si vous voulez utiliser plusieurs zones afin d'obtenir une haute disponibilité, vous pouvez utiliser la zone spéciale `all` lorsque vous déclarez un `frontend` et une `farm`.
 
-![Choix de la zone](images/Select-Datacenter-all.png){.thumbnail}
+![](images/Edit-frontend-All-iplb.png){.thumbnail}
 
 Cette zone spéciale `all` va permettre de déployer la même configuration sur toutes les zones souscrites sur votre service Load Balancer, et vous évite de dupliquer la configuration pour toutes les zones.
 
