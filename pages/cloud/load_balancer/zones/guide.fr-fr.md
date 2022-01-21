@@ -1,7 +1,7 @@
 ---
 title: Travailler avec les zones
 slug: zones
-excerpt: Utilisation les zones afin d'augmenter la disponibilité et diminuer la latence
+excerpt: Utilisation de zones afin d'augmenter la disponibilité et diminuer la latence
 section: Configuration
 ---
 **Dernière mise à jour le 20/01/2021**
@@ -37,14 +37,14 @@ Dans la suite de ce document, nous allons voir 2 cas d’usages distincts.
 
 ####  ajouter une zone
 
-Il est possible de commande des zones supplémentaires depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
+Il est possible de commande une zone supplémentaire depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
 
 ![Configurer le load balancer depuis le manager](images/Manager-ipLBalancer.PNG){.thumbnail}
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.
 
-Dans `Datacenter`{.action}, vous pourrez choisir la zone vous souhaitez associer à votre Frontend.
+Dans `Datacenter`{.action}, vous pourrez choisir la zone que vous souhaitez associer à votre Frontend.
 
 ![Choix de la zone](images/Select-Datacenter.png){.thumbnail}
 
@@ -121,4 +121,7 @@ Enfin, vous pouvez valider votre panier ("cart") via
 N'oubliez pas de payer le bon de commande ainsi généré.
 
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
