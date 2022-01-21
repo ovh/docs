@@ -16,8 +16,8 @@ Considering best practices, OVHcloud Public Cloud instances require a different 
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 
 ## Instructions

@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated December 21 2021.**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -16,9 +16,9 @@ The [vRack](https://www.ovh.com/ca/en/solutions/vrack/) is a private network tha
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
-- an [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
+- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
 - Basic networking knowledge
 
 ## Understanding interfaces

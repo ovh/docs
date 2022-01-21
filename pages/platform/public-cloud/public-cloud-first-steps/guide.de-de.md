@@ -16,7 +16,7 @@ OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedi
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Account.
+- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
