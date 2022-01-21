@@ -270,9 +270,9 @@ Il n'existe pas de procédure de résiliation concernant les [offres SMS](https:
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
-Pour annuler votre demande de résiliation depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu puis sur le bouton `Gestion des services`{.action}.
+Pour annuler votre demande de résiliation depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu contextuel puis sur le bouton `Gestion des services`{.action}.
 
-Cliquez ensuite sur le bouton `...`{.action} à droite de l'écran, correspondant au service à résilier, sur `Annuler la résiliation du service`{.action} 
+Cliquez ensuite sur le bouton `...`{.action} à droite de l'écran, correspondant au service à résilier, puis sur `Annuler la résiliation du service`{.action} 
 
 ![cancel_termination](images/cancel_termination.png){.thumbnail}
 
