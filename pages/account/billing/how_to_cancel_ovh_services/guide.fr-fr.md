@@ -66,7 +66,9 @@ Cliquez sur votre produit dans la liste suivante :
 &emsp;&emsp;[CloudDB](#clouddb)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
-&emsp;&emsp;[E-mail Exchange](#exchange)<br />
+&emsp;&emsp;[Hosted Exchange](#hosted)<br />
+&emsp;&emsp;[Private Exchange](#private)<br />
+
 &emsp;&emsp;[Office 365](#office)<br />
 &emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
@@ -138,6 +140,14 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Web Paas <a name="webpaas"></a>
 
+Pour résilier votre offre [Web Paas](https://www.ovhcloud.com/fr/web-paas/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
 #### CloudDB <a name="clouddb"></a>
 
 Pour résilier votre offre [CloudDB](https://www.ovh.com/fr/cloud-databases/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
@@ -168,7 +178,25 @@ Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résili
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-#### E-mail Exchange <a name="exchange"></a>
+#### Hosted Exchange <a name="hosted"></a>
+
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Microsoft`{.action} et `Exchange`{.action}.
+
+Toujours dans le menu de gauche, sélectionnez l'offre Hosted Exchange que vous souhaitez résilier puis, en haut à droite de votre écran, cliquez sur `Actions`{.action} puis sur `Résilier`{.action}.
+
+![cancel_exchange](images/cancel_exchange.png){.thumbnail}
+
+Vérifiez les informations indiquées. Cliquez sur `Suivant`{.action} puis sur `Résilier`{.action}
+
+#### Private Exchange <a name="private"></a>
+
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Microsoft`{.action} et `Exchange`{.action}.
+
+Toujours dans le menu de gauche, sélectionnez l'offre Private Exchange que vous souhaitez résilier puis, en haut à droite de votre écran, cliquez sur `Actions`{.action} puis sur `Résilier`{.action}.
+
+![cancel_exchange](images/cancel_exchange.png){.thumbnail}
+
+Vérifiez les informations indiquées. Cliquez sur `Suivant`{.action} puis sur `Résilier`{.action}
 
 #### Licence Office 365 <a name="office"></a>
 
