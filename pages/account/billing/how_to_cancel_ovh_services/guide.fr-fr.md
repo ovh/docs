@@ -67,6 +67,8 @@ Cliquez sur votre produit dans la liste suivante :
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[E-mail Pro](#emailpro)<br />
 &emsp;&emsp;[E-mail Exchange](#exchange)<br />
+&emsp;&emsp;[Office 365](#office)<br />
+&emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
 [Univers « Telecom »](#telecom)<br />
 &emsp;&emsp;[xDSL](#xdsl)<br />
@@ -138,6 +140,14 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### CloudDB <a name="clouddb"></a>
 
+Pour résilier votre offre [CloudDB](https://www.ovh.com/fr/cloud-databases/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
 #### E-mail MX Plan <a name="mxplan"></a>
 
 Pour résilier votre offre [MX Plan](https://docs.ovh.com/fr/emails/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
@@ -160,15 +170,34 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### E-mail Exchange <a name="exchange"></a>
 
+#### Licence Office 365 <a name="office"></a>
+
+Pour résilier votre offre [Office 365](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+
+Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
+
+![manage_services](images/manage_services.png){.thumbnail}
+
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
 ### Univers « Telecom » <a name="telecom"></a>
 
 #### xDSL <a name="xdsl"></a>
 
+Pour résilier votre offre [xDSL](https://www.ovhtelecom.fr/offre-internet/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/xdsl/comment-resilier-mon-acces-xdsl/).
+
+> [!warning]
+>
+> **Cas particulier** : le [Pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/)
+>
+
 #### VoIP <a name="voip"></a>
+
+Pour résilier votre offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/#supprimer-un-groupe-de-telephonie).
 
 #### OTB (Out of The Box) <a name="otb"></a>
 
-Pour résilier votre service [OTB](https://www.ovhcloud.com/fr/web-hosting/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
+Pour résilier votre service [OTB](https://www.ovhtelecom.fr/overthebox/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran afin de faire apparaître le menu de droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résilier à droite de l'écran puis sur `Résilier`{.action}.
 
@@ -177,6 +206,8 @@ Cliquez ensuite sur le bouton `...`{.action} correspondant au service à résili
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 #### SMS <a name="sms"></a>
+
+Il n'existe pas de procédure de résiliation concernant les [offres SMS](https://www.ovhtelecom.fr/sms/). Avoir un compte SMS actif ne vous coûte rien.
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
