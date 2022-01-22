@@ -29,7 +29,7 @@ If variables have the same names at different levels, the [variables are given p
 
 ### Use application-provided variables
 
-Set variables [in code](../configuration/app/app-reference.md#variables) using the `.platform.app.yaml` file.
+Set variables [in code](../configuration-app/variables) using the `.platform.app.yaml` file.
 These values are the same across all environments and present in the Git repository,
 which makes them a poor fit for API keys and other such secrets.
 
@@ -147,7 +147,7 @@ and whether they're available during builds and at runtime.
 | PLATFORM_TREE_ID          | Yes   | Yes     | The ID of the tree the application was built from, essentially the SHA hash of the tree in Git. Use when you need a unique ID for each build |
 | PLATFORM_PROJECT_ENTROPY  | Yes   | Yes     | A random, 56-character value created when the project is created and then stable throughout the project's life. Can be used for Drupal hash salts, Symfony secrets, and other similar values. |
 | PLATFORM_APP_DIR          | Yes   | Yes     | The absolute path to the application directory. |
-| PLATFORM_SOURCE_DIR       | No    | No      | Equivalent to `PLATFORM_APP_DIR` in the context of a running [source operation](../configuration/app/source-operations.md). The directory contains a writable copy of your repository that you can commit to during the operation. |
+| PLATFORM_SOURCE_DIR       | No    | No      | Equivalent to `PLATFORM_APP_DIR` in the context of a running source operation. The directory contains a writable copy of your repository that you can commit to during the operation. |
 | PLATFORM_APPLICATION_NAME | Yes   | Yes     | The application name as set in the `.platform.app.yaml` file. |
 | PLATFORM_APPLICATION      | Yes   | Yes     | A base64-encoded JSON object that describes the application. It maps certain attributes from your `.platform.app.yaml` file, some with more structure. See [notes](#platform_application). |
 | PLATFORM_BRANCH           | No    | Yes     | The name of the Git branch. |
@@ -166,10 +166,7 @@ Dedicated instances also have the following variables available:
 | PLATFORM_CLUSTER | No    | Yes     | The cluster ID. |
 | PLATFORM_PROJECT | No    | Yes     | The document root. Typically the same as your cluster name for the production environment, while staging environments have `_stg` or similar appended. |
 
-> [!primary]  
-> The `PLATFORM_CLUSTER`, and `PLATFORM_PROJECT` environment variables aren't yet available on [Dedicated Generation 3](../dedicated-gen-3-overview).
-> If your application contains logic that depends on whether it is running on a Dedicated Generation 3 host, use `PLATFORM_MODE`.
-> 
+
 
 #### `PLATFORM_APPLICATION`
 
@@ -343,7 +340,7 @@ To access environment variables in your app, check the documentation page for yo
 ### Accessing complex values
 
 Variable values can have nested structures. 
-The following example shows nested structures introduced in an [app configuration](../configuration/app/app-reference.md#variables):
+The following example shows nested structures introduced in an [app configuration](../configuration-app/variables):
 
 ```yaml
 variables:
