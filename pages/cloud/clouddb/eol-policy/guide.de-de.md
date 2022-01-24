@@ -20,10 +20,10 @@ Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene
 
 Sie verfügen über einen oder mehrere der folgenden Dienste:
 
-- Ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit Datenbanken.
-- Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
-- Ein [Private SQL Server](https://www.ovhcloud.com/de/web-hosting/options/).
-- Ein [Cloud Databases Server](https://www.ovh.de/cloud/cloud-databases/).
+- Ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit Datenbanken
+- Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)
+- Ein [Private SQL Server](https://www.ovhcloud.com/de/web-hosting/options/)
+- Ein [Cloud Databases Server](https://www.ovh.de/cloud/cloud-databases/)
 
 ## In der praktischen Anwendung
 
