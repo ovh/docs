@@ -16,10 +16,10 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 You must have one or more of the following options:
 
-- A [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes databases
-- A [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) database pack
-- A [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/) server
-- A [Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server
+- A [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that includes databases
+- A [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database pack
+- A [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/) server
+- A [Cloud Databases](https://www.ovh.ie/cloud/cloud-databases/) server
 
 ## Instructions
 
