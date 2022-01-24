@@ -84,7 +84,7 @@ Huomioitavaa: kun .ovhconfig on käytössä, käytettävä PHP-versio on se, mik
 
 
 ## Tiedosto .ovhconfig on luotu ja nyt palvelin palauttaa virheilmoituksen ”Not Implemented”
-Tämä virhe tarkoittaa sitä, että .ovhconfig-tiedostossa määritelty engine-versio ei ole olemassa. Tarkasta sivustosi virhelogit osoitteesta https://logs.ovh.net/sivusto.fi saadaksesi lisätietoa virheestä.
+Tämä virhe tarkoittaa sitä, että .ovhconfig-tiedostossa määritelty engine-versio ei ole olemassa. Tarkasta sivustosi virhelogit osoitteesta https://logs.your_cluster_ID.hosting.ovh.net saadaksesi lisätietoa virheestä.
 
 
 ## Mikä on asetus ”environment”?

@@ -41,7 +41,7 @@ Ensiksi on saatava tietää, milloin tietomurto on tapahtunut, jotta voidaan pä
 Ennen datan palautusta on tärkeä varmistaa webtiedostojen (FTP) viimeinen muutoshetki haavoittuvuuden etsimiseksi ja korjaamiseksi.
 On mahdotonta antaa tarkkoja ohjeita, miten tietomurto on päästy toteuttamaan, mutta yleisesti voidaan lähteä siitä, että hyökkäys on toteutettu käyttäen skriptihaavoittuvuutta ja että tietomurto on tehty HTTP-pyynnön avulla.
 
-Kaikki HTTP-pyynnöt ovat nähtävissä lokitapahtumissa (https://logs.ovh.net/oma_domain).
+Kaikki HTTP-pyynnöt ovat nähtävissä lokitapahtumissa (https://logs.your_cluster_ID.hosting.ovh.net/oma_domain).
 Korvaa "oma_domain" omalla verkkotunnuksella ja sen päätteellä, esimerkiksi ovh-hosting.fi.
 1. Ota muistiin sähköpostissa* annettu aikaleima (päivä ja kellonaika)
 2. Tutki lokitapahtumia sähköpostissa annetusta ajankohdasta lähtien ja jatkaen ajassa taaksepäin kunnes löytyy merkintä, joka vaikuttaa omituiselta tai erilaiselta kuin muut. Tähän voi tarvita hieman harjoitusta tai pyyntötyyppien tuntemusta. Kannattaa kuitenkin keskittyä erityisesti POST-tyyppisiin pyyntöihin, jotka usein ovat tietomurron lähteitä

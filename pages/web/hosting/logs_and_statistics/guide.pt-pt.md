@@ -22,7 +22,7 @@ No menu à esquerda selecione o seu nome de domínio por baixo da categoria "Alo
 Pode aceder às estatísticas do seu site ao aceder ao seguinte link:
 
 
-- https://logs.ovh.net/seudominio
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Deve introduzir o seu NIC-Handle e a palavra-passe associada.

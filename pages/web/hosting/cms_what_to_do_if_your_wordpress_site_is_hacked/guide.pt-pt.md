@@ -44,7 +44,7 @@ No seguimento deste guia iremos localizar a intrusão, e abordaremos 2 casos pos
 Antes de qualquer restauro é importante verificar a data das últimas modificações dos seus ficheiros web (FTP) para efetuar a procura e a correção das falhas de segurança.
 Não nos é possível efetuar um procedimento detalhado quer permita localizar a origem de todas as intrusões, mas veja como poderá proceder de forma geral, ao termos em conta que o ataque teve origem numa falha num script e que o ataque foi efetuado por intermédio de um pedido HTTP.
 
-Todos os pedidos HTTP estão disponíveis nos seus logs (https://logs.ovh.net/seu_dominio).
+Todos os pedidos HTTP estão disponíveis nos seus logs (https://logs.your_cluster_ID.hosting.ovh.net/seu_dominio).
 Substitua "seu_dominio" pelo seu nome de domínio e a respetiva extensão. ex: ovh.com.
 
 - 1 Recupere a data e a hora que lhe aparece no e-mail que recebeu*

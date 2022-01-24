@@ -23,7 +23,7 @@ Bendroje santraukoje spragtelėkite prieigos nuorodą: Statistika ir žurnalai.
 Svetainės statistiką matysite prisijungę adresu:
 
 
-- https://logs.ovh.net/jusu_domenas
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Prisijungimui naudokite savo OVH kliento ID ir slaptažodį.

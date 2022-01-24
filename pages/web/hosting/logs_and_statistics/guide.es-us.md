@@ -23,7 +23,7 @@ A continuación, haga clic en la pestaña «Más +» y seleccione «Estadística
 Puede acceder directamente a las estadísticas de su sitio web desde la página: 
 
 
-- https://logs.ovh.net/sudominio
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Deberá identificarse con su ID de cliente y contraseña.

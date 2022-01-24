@@ -22,7 +22,7 @@ Klikkaa webhotellin yhteenvedossa "Tilastot ja lokitiedostot".
 
 
 ## Pääsy tilasto- ja lokitiedostosivustolle
-Vaihtoehtoinen kirjautumistapa on kirjoittaa selaimeen osoite https://logs.ovh.net/omaverkkotunnuksesi ja kirjaudu käyttäen OVH:n asiakastunnusta ja salasanaa.
+Vaihtoehtoinen kirjautumistapa on kirjoittaa selaimeen osoite https://logs.your_cluster_ID.hosting.ovh.net ja kirjaudu käyttäen OVH:n asiakastunnusta ja salasanaa.
 
 Tietojen tarkastelu on helppoa. Pystyt analysoimaan sivustosi tilastotietoja muutamalla klikkauksella.
 

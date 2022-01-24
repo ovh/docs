@@ -57,7 +57,7 @@ Dès que vous vous rendez compte du piratage de votre site, il faut agir de suit
 
 Il n'est pas possible de faire une procédure détaillée permettant de localiser à coup sûr l'origine de toute intrusion, mais voici comment procéder de façon générale, en s'appuyant sur le fait que l'attaque a pour origine une faille de script et donc que le pirate est passé par une requête HTTP.
 
-Toutes les requêtes HTTP sont disponibles dans vos logs ([https://logs.ovh.net/votre_domaine](https://logs.ovh.net/){.external}). Remplacez "votre_domaine" par votre nom de domaine et son extension. ex: ovh.com.
+Toutes les requêtes HTTP sont disponibles dans vos logs ([https://logs.your_cluster_ID.hosting.ovh.net/votre_domaine](https://logs.your_cluster_ID.hosting.ovh.net/){.external}). Remplacez "votre_domaine" par votre nom de domaine et son extension. ex: ovh.com.
 
 - 1 Relevez la date et l'heure apparaissant dans l'horodatage (contenu du mail que vous avez reçu)*
 - 2 Consultez vos logs en partant de cet horaire et en élargissant progressivement le champ de recherche sur des horaires antérieurs jusqu'à repérer une entrée incorrecte (étrange, différente des autres, etc.). Cela peut demander un peu de pratique ou de connaissance du format des requêtes suivant les cas. Prêtez plutôt attention aux requêtes de type POST, qui sont la principale source de hack ;

@@ -42,7 +42,7 @@ Si descubre que su sitio web ha sido pirateado, debe actuar de inmediato. En pri
 Antes de realizar cualquier restauración, debemos conocer la fecha de las últimas modificaciones de sus archivos web (FTP).
 No es posible establecer un procedimiento detallado para localizar sin ninguna duda el origen preciso de una intrusión, pero a continuación explicamos cómo proceder de manera general, basándonos en la hipótesis de que el origen del ataque sea un fallo de seguridad de un script y que, por tanto, el hacker haya realizado una petición HTTP.
 
-Todas las peticiones HTTP pueden consultarse en los logs (https://logs.ovh.net/su_dominio). Sustituya «su_dominio» por su nombre de dominio y extensión: p. ej., «ovh.es».
+Todas las peticiones HTTP pueden consultarse en los logs (https://logs.your_cluster_ID.hosting.ovh.net/su_dominio). Sustituya «su_dominio» por su nombre de dominio y extensión: p. ej., «ovh.es».
 1. Busque la fecha y la hora que aparecen en el registro de tiempo (contenido del correo que ha recibido)*. 
 2. Partiendo de esa hora, vaya revisando sus logs ampliando progresivamente el campo de búsqueda a los horarios anteriores hasta que identifique una entrada incorrecta (una entrada extraña, diferente a las demás, etc.). Según el caso, este procedimiento puede requerir algo de práctica o de conocimiento sobre el formato de las peticiones. 
 3. Identifique el script atacado por esta petición. 

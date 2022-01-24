@@ -21,7 +21,7 @@ Nella scheda ricapitolativa, clicca sul link di accesso "Statistiche e log".
 Visualizza le statistiche del tuo sito accedendo alla pagina:
 
 
-- https://logs.ovh.net/tuodominio
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Sono semplici da utilizzare e visualizzare. In pochi click analizzi il tuo sito senza dover fornire altri calcoli statistici.

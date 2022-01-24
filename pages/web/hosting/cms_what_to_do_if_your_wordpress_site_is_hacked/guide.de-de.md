@@ -42,7 +42,7 @@ Sobald Sie merken, dass Ihre Seite gehackt wurde, müssen Sie entsprechende Maß
 Es ist wichtig, vor der Restaurierung das Datum der letzten Änderung Ihrer Web-Dateien (FTP) zu überprüfen, um dann die Sicherheitslücken zu erkennen und zu schließen.
 Es gibt kein spezifisches Vorgehen, um die genaue Quelle des Eindringens zu ermitteln, aber normalerweise nutzen Hacker Fehler im Skript aus, um eine HTTP-Anfrage zu starten.
 
-Alle HTTP-Anfragen finden Sie in Ihren Logs (https://logs.ovh.net/ihre_domain).
+Alle HTTP-Anfragen finden Sie in Ihren Logs (https://logs.your_cluster_ID.hosting.ovh.net/ihre_domain).
 Ersetzen Sie "ihre_domain" einfach durch den Namen Ihrer Domain mitsamt Domainendung, z. B. ovh.com.
 
 - 1 Ermitteln Sie Datum und Uhrzeit (anhand der E-Mail, die Sie erhalten haben)*

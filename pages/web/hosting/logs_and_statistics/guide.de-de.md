@@ -21,7 +21,7 @@ Klicken Sie dann auf der Übersichtsseite auf den Link neben "Besucherstatistike
 Sie können auf die Statistiken Ihrer Webseite zugreifen, indem Sie einfach folgenden Link Ihrem Domainnamen entsprechend anpassen:
 
 
-- https://logs.ovh.net/ihredomain.tld
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Die Statistiken sind einfach zu verwenden. Sie können Ihre Webseite mit einigen Klicks analysieren, ohne zusätzliche statistische Berechnungen durchführen zu müssen.

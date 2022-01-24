@@ -22,7 +22,7 @@ Kliknij na: "Statystyki i logi".
 Aby sprawdzić statystyki, należy wejść na stronę:
 
 
-- https://logs.ovh.net/nazwadomeny
+- https://logs.your_cluster_ID.hosting.ovh.net
 
 
 Zaloguj się podając identyfikator klienta i przypisane do niego hasło.
