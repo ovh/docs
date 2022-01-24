@@ -48,11 +48,11 @@ Selon votre offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
-- **pour les offres permettant de créer plusieurs utilisateurs FTP** (offres Pro et Performance) : cliquez sur le pictogramme en forme de roue dentée à droite de l'utilisateur FTP concerné puis sur `Changer le mot de passe`{.action}. Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe souhaité, confirmez en le tapant une seconde fois puis cliquez sur le bouton `Valider`{.action}.
+- **pour les offres permettant de créer plusieurs utilisateurs FTP** (offres Pro et Performance) : cliquez sur les trois points à droite de l'utilisateur FTP concerné puis sur `Changer le mot de passe`{.action}. Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe souhaité, confirmez en le tapant une seconde fois puis cliquez sur le bouton `Valider`{.action}.
 
 ![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
-Choisissez le nouveau mot de passe de votre base de données et notez-le. Il devra, dans les deux cas, respecter les conditions suivantes :
+Choisissez le nouveau mot de passe de votre base de données. Il devra, dans les deux cas, respecter les conditions suivantes :
 
 - Minimum 8 caractères ;
 - Maximum 30 caractères ;
