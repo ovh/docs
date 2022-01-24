@@ -57,7 +57,7 @@ A data até à qual o cliente pode beneficiar de assistência para o produto, de
 Após essa data, o produto deixou de ser objeto de serviços de assistência e é considerado obsoleto.
 Aplicável no mínimo seis meses após o anúncio do fim da vida.
 
-#### **Período de obsolescência**
+#### Período de obsolescência
 
 Ocorre após o fim do suporte.
 

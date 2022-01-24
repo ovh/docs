@@ -57,7 +57,7 @@ Data, do której klient może otrzymać pomoc w odniesieniu do produktu zgodnie 
 Po tym terminie produkt nie jest już przedmiotem usług wsparcia i jest uważany za przestarzały.
 Stosuje się co najmniej 6 miesięcy po ogłoszeniu wycofania z eksploatacji.
 
-#### **Okres przestarzałości**
+#### Okres przestarzałości
 
 Występuje po zakończeniu obsługi.
 

@@ -57,7 +57,7 @@ La fecha hasta la que el cliente puede beneficiarse de una asistencia para el pr
 Después de esa fecha, el producto ya no es objeto de servicios de asistencia y se considera obsoleto.
 Se aplicará al menos 6 meses después del anuncio de fin de vida.
 
-#### **Período de obsolescencia**
+#### Período de obsolescencia
 
 Se produce después de finalizar el soporte.
 

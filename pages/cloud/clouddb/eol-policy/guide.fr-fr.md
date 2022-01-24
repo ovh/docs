@@ -53,7 +53,7 @@ La date jusqu'à laquelle le client peut bénéficier d’une assistance pour le
 Après cette date, le produit ne fait plus l'objet de services d'assistance et est considéré comme obsolète.
 S'applique au minimum 6 mois après l'annonce de fin de vie.
 
-#### **Période d'obsolescence**
+#### Période d'obsolescence
 
 Elle survient après la fin de support.
 

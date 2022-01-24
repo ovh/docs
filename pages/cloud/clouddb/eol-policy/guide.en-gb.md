@@ -53,7 +53,7 @@ The date until which the customer can receive support for the product under the 
 After this date, the product is no longer supported and is considered obsolete.
 It applies at least 6 months after end of life announcement.
 
-#### **Period of obsolescence**
+#### Period of obsolescence
 
 It occurs after the end of support.
 
