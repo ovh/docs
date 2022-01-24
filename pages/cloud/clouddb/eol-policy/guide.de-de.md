@@ -1,5 +1,5 @@
 ---
-title: Policy for end of life in managed database
+title: EOL Policy für Managed Databases
 slug: managed-db-life-cycle-policy
 section: 'Technische Ressourcen'
 ---
@@ -12,66 +12,66 @@ section: 'Technische Ressourcen'
 
 ## Ziel
 
-OVHcloud gemanagte Datenbanken bieten mehrere Datenbankmanagementsysteme (DBMS) wie MySQL oder PostgreSQL an. Jede Version dieser Software erreicht irgendwann das Ende des Verkaufs und dann das Ende des Supports. Sie kann dann von unseren Diensten aktualisiert oder eingestellt werden ("Lebensende"). Wir möchten Ihnen dabei helfen, den Lebenszyklus der von OVHcloud verwalteten Datenbanken zu verstehen, um deren Weiterentwicklung besser vorherzusehen und vorzubereiten.
+Von OVHcloud verwaltete Datenbanken (*Managed Databases*) verwenden verschiedene Datenbankmanagementsysteme (DBMS) wie MySQL oder PostgreSQL. Jede Version dieser Software erreicht irgendwann das Ende des Verkaufs (EOS) und dann das Ende des Supports. Die Version kann dann jeweils aktualisiert oder eingestellt werden ("Lebensende"). Wir möchten Ihnen dabei helfen, den Lebenszyklus der von OVHcloud verwalteten Datenbanken zu verstehen, um deren Weiterentwicklung besser vorherzusehen und vorzubereiten.
 
-**Hier erfahren Sie, wie Datenbanken, die von OVHcloud verwaltet werden, am Ende ihrer Lebensdauer erstellt werden.**
+**Erfahren Sie hier die EOL-Richtlinien für von OVHcloud verwaltete Datenbanken.**
 
 ## Voraussetzungen
 
-über eines oder mehrere der folgenden Angebote verfügen:
+Sie verfügen über einen oder mehrere der folgenden Dienste:
 
 - Ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit Datenbanken.
 - Ein [Start SQL Datenbank-Paket](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
-- Ein [SQL Private Server](https://www.ovhcloud.com/de/web-hosting/options/).
+- Ein [Private SQL Server](https://www.ovhcloud.com/de/web-hosting/options/).
 - Ein [Cloud Databases Server](https://www.ovh.de/cloud/cloud-databases/).
 
 ## In der praktischen Anwendung
 
-### Erfasste Produkte
+### Erfasste Dienste
 
-Die Endhaltbarkeitsstrategie umfasst:
+Die von der EOL Policy betroffenen Dienste sind:
 
 - Public Cloud Databases, dedizierte DBMS Instanzen, die über das öffentliche Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/clouddb/clouddb-eos-eol/)).
 
-- Cloud Databases Web Hosting (auch als SQLPrivé Dienste bekannt), dedizierte DBMS Instanzen, die über das Hosting Web Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- Webhosting Cloud Databases (auch Private SQL Dienste genannt), dedizierte DBMS Instanzen, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
-- SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Hosting Web-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
+- SharedSQL Web Hosting Dienste, MySQL Datenbanken, die über das Webhosting-Netzwerk erreichbar sind ([siehe Ankündigungen](https://docs.ovh.com/gb/en/hosting/sql_eos_eol)).
 
-### Definitionen und Leitlinien für die Politik zum Ende der Lebensdauer
+### Definitionen und Leitlinien für EOL-Richtlinien
 
 ![Timeline](images/ovh.eol.policy.timeline.png)
 
 EOL = End of Life
 
-#### "End of Life"- EOL
+#### EOL-Ankündigung
 
-Dies ist die Veröffentlichung der Daten zum Ende des Verkaufs und zum Ende des Supports. OVHcloud wird in der Regel 90 Tage nach der Bekanntgabe eines Endes der Lebensdauer und seiner Anwendung einhalten.
+Dies ist die Ankündigung zum Verkaus- und Supportende. OVHcloud wird in der Regel 90 Tage zwischen Ankündigung und Anwendung von EOL einhalten.
 
 #### Verkaufsende ("End of Sale")
 
-Die betroffene Ware kann nach diesem Datum nicht mehr bestellt werden. Wie bereits angekündigt gilt diese Regel mindestens 90 Tage nach der Bekanntgabe des Endes der Nutzungsdauer.
+Der betroffene Dienst kann nach diesem Datum nicht mehr bestellt werden. Diese Regel greift frühestens 90 Tage nach der EOL-Ankündigung.
 
 #### Ende des Supports ("End of Support")
 
-das Datum, bis zu dem der Kunde gemäß den Vertragsbedingungen der Dienstleistung oder den allgemeinen Vertragsbedingungen der Sicherheit Anspruch auf Produktunterstützung hat.
-Nach diesem Zeitpunkt ist das Produkt nicht mehr Gegenstand von Hilfsdiensten und gilt als veraltet.
-Gilt mindestens 6 Monate nach der Bekanntgabe des Endes der Lebensdauer.
+Bis zu diesem Datum hat der Kunde gemäß den Vertragsbedingungen der Dienstleistung oder den allgemeinen Garantiebedingungen Anspruch auf Produktunterstützung.
+Nach diesem Zeitpunkt wird der Dienst nicht mehr unterstützt und gilt als veraltet.
+Diese Phase tritt frühestens 6 Monate nach der EOL-Ankündigung ein.
 
-#### **Veraltet**
+#### Obsoleszenzphase
 
-Sie kommt nach dem Ende der Unterstützung.
+Sie folgt auf das Supportende.
 
-Wenn ein Dienst mit verwalteten Datenbanken von OVHcloud überholt wird, kann er in die beiden folgenden Fälle eintreten.
-Da Ihre Dienstleistung Auswirkungen haben kann, erhalten Sie mindestens einen Monat vor der Veralterung eine E-Mail-Benachrichtigung.
+Wenn ein Datenbankdienst obsolet wird, können die beiden nachfolgenden Fälle eintreten.
+Da dies auf Ihre Dienstleistungen Auswirkungen haben kann, erhalten Sie mindestens einen Monat vor der Obsoleszenzphase eine E-Mail-Benachrichtigung.
 
-**Größere Aktualisierung der Dienstleistung**
+**Großes Versionsupdate**
 
-Ihre Dienstleistung bleibt aktiv und wir aktualisieren das DBMS auf eine neue größere Version.
-Diese Art von Updates kann zu unerwünschten Verhaltensweisen Ihrer Anwendungen führen. Deshalb empfehlen wir den Kunden, Änderungen der Versionen ihrer Datenbanken vorauszusehen und nicht bis zum Ende des Supports zu warten.
+Die Dienstleistung bleibt aktiv und wir aktualisieren das DBMS auf eine Hauptversion.
+Diese Art von Update kann zu unerwünschten Verhaltensweisen Ihrer Anwendungen führen. Deshalb empfehlen wir Kunden, Änderungen bei Datenbankenversionen im Blick zu behalten und nicht bis zum Supportende zu warten.
 
 **Diensteinstellung**
 
-Anstatt das DBMS Ihrer Dienstleistung auf die nächste verfügbare Hauptversion zu aktualisieren, können wir aus mehreren Gründen den Dienst einstellen:
+Anstatt das DBMS der betroffenen Dienstleistung auf die nächste verfügbare Hauptversion zu aktualisieren, können wir aus mehreren Gründen den Dienst einstellen:
 
 - Das Update wird vom Herausgeber des DBMS nicht empfohlen.
 
@@ -79,9 +79,9 @@ Anstatt das DBMS Ihrer Dienstleistung auf die nächste verfügbare Hauptversion 
 
 Die Einstellung kann je nach Fall auf zwei Arten erfolgen:
 
-- Wir beenden die Verlängerung des Dienstes. In diesem Fall wird der Dienst am Ende des Vertragszeitraums eingestellt.
+- Wir stoppen die Verlängerung des Dienstes. In diesem Fall wird der Dienst am Ende des Vertragszeitraums eingestellt.
 
-- Wir stellen den Service auf und schreiben Ihnen Überschüsse.
+- Wir stellen den Service ein und schreiben Ihnen die Restlaufzeit gut.
 
 ## Weiterführende Informationen
  
