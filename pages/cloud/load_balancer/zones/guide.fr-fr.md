@@ -19,11 +19,6 @@ Il est également possible, si configuré de façon appropriée, d'utiliser plus
 
 ## Prérequis
 
-
-> [!warning]
-> Pour assurer un fonctionnement correct de ce service, vous devez prendre connaissance des [capacités et limites techniques de l'offre OVHcloud Load Balancer](../..../) et configurer vos équipements réseau en accord avec celles-ci.
->
-
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
