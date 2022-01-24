@@ -201,33 +201,15 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Microsoft`{.action} et `Exchange`{.action}.
-
-Toujours dans le menu de gauche, sélectionnez l'offre Hosted Exchange que vous souhaitez résilier puis, en haut à droite de votre écran, cliquez sur `Actions`{.action} puis sur `Résilier`{.action}.
-
-![cancel_exchange](images/cancel_exchange.png){.thumbnail}
-
-Vérifiez les informations indiquées. Cliquez sur `Suivant`{.action} puis sur `Résilier`{.action}
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes).
 
 #### Private Exchange <a name="private"></a>
 
-Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu de gauche, sur `Microsoft`{.action} et `Exchange`{.action}.
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes_1).
 
-Toujours dans le menu de gauche, sélectionnez l'offre Private Exchange que vous souhaitez résilier puis, en haut à droite de votre écran, cliquez sur `Actions`{.action} puis sur `Résilier`{.action}.
+#### Office 365 csp 2 <a name="office"></a>
 
-![cancel_exchange](images/cancel_exchange.png){.thumbnail}
-
-Vérifiez les informations indiquées. Cliquez sur `Suivant`{.action} puis sur `Résilier`{.action}
-
-#### Licence Office 365 <a name="office"></a>
-
-Pour résilier votre offre [Office 365](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite de votre écran, afin de faire apparaître le menu contextuel, puis sur le bouton `Gestion des services`{.action}.
-
-Cliquez ensuite sur le bouton `...`{.action} à droite de l'écran, correspondant au service à résilier, puis sur `Résilier`{.action}.
-
-![manage_services](images/manage_services.png){.thumbnail}
-
-Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh/#gerer-vos-abonnements).
 
 #### Sharepoint <a name="sharepoint"></a>
 
