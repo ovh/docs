@@ -1,8 +1,11 @@
 ---
-title: Checking a slow machine
+title: Comprobar una máquina en caso de lentitud (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-slug: check_a_slow_machine
-section: Maintenance and monitoring
+slug: comprobar_una_maquina_en_caso_de_lentitud
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
+legacy_guide_number: g601
+section: Gestión de las máquinas virtuales
 ---
 
 **Last updated on 17th January 2022**
@@ -15,8 +18,8 @@ Use the vSphere monitoring tools to troubleshoot a slow VM.
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 
 ## Instructions
 
