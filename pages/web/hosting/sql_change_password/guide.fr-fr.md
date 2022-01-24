@@ -66,7 +66,7 @@ Recherchez et ouvrez le fichier de configuration de votre site à l'intérieur d
 
 ### Étape 3 : identifier la base de données de votre site <a name="step3"></a>
 
-#### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
+#### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement
 
 Cette information est nécessaire si vous disposez de plusieurs bases de données. Vous devrez en effet être certain d'effectuer le changement de mot de passe sur la base dont dépend votre site.
 
@@ -79,7 +79,7 @@ Toujours dans le fichier de configuration, notez le nom de la base de données :
 
 Dans la partie `Web Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} à droite de votre écran. Vérifiez que la base de données de votre site se trouve dans cette partie.
 
-#### Cas n°2 : la base de votre site fait partie d'une offre Private SQL ou CloudDB
+#### Cas n°2 : la base de données de votre site fait partie d'une offre Private SQL ou CloudDB
 
 Si vous n'avez pas retrouvé la base de données de votre site dans la partie `Hébergements`{.action} de votre espace client, il est probable qu'elle soit inclue dans une offre [CloudDB](https://www.ovh.com/fr/cloud-databases/) ou [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/). Recherchez donc, à nouveau dans le fichier de configuration de votre site, le *nom du serveur de base de données* :
 
@@ -97,7 +97,7 @@ Ainsi que le nom d'utilisateur (Dans cette situation, vous devrez modifier le mo
 
 Cliquez ensuite, dans la partie **gauche** de votre écran, sur `Bases de données`{.action}. Recherchez le `Nom d'hôte`{.action} de votre serveur dans l'onglet `Informations générales`{.action}. Identifiez également le nom d'utilisateur de votre base de données dans l'onglet `Utilisateur et droits`{.action}
 
-### Étape 4 : modifier le mot de passe de votre base dans le fichier de configuration <a name="step4"></a>
+### Étape 4 : modifier le mot de passe de votre base de données dans le fichier de configuration <a name="step4"></a>
 
 > [!primary]
 >
@@ -175,13 +175,13 @@ La modification du mot de passe de votre base de données s'effectuera dans deux
 
 Vous devrez donc [identifier de façon certaine](#step3) la base de données de votre site avant toute modification.
 
-#### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
+#### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement
 
 Si la base de données de votre site se trouve dans la partie `Hébergements`{.action} de votre espace client, cliquez sur l'onglet `Bases de données`{.action}. Le tableau qui s'affiche contient la ou les bases de données créée(s) sur votre hébergement web :
 
 ![database-password-step1](images/database-password-step1.png){.thumbnail}
 
-#### Cas n°2 : la base de votre site fait partie d'une offre Private SQL ou CloudDB
+#### Cas n°2 : la base de données de votre site fait partie d'une offre Private SQL ou CloudDB
 
 Si la base de données de votre site se trouve dans la partie `Bases de données`{.action} de votre espace client (menu de gauche), cliquez sur l'onglet `Utilisateurs et droits`{.action} :
 
@@ -194,7 +194,7 @@ Si la base de données de votre site se trouve dans la partie `Bases de données
 > Cette opération nécessitera quelques minutes avant d'être effective. Après l'avoir lancée, vérifiez l'onglet `Tâches en cours`{.action}.
 >
 
-#### Cas n°1 : la base de votre site fait partie de votre offre d'hébergement
+#### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement
 
 Pour modifier le mot de passe, cliquez sur les trois points à droite de la base de données identifiée à [l'étape 3](#step3) puis sur `Changer le mot de passe`{.action}.
 
@@ -204,7 +204,7 @@ Dans la fenêtre qui s'affiche, renseignez le mot de passe inscrit dans le fichi
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Cas n°2 : la base de votre site fait partie d'une offre Private SQL ou CloudDB
+#### Cas n°2 : la base de données de votre site fait partie d'une offre Private SQL ou CloudDB
 
 Pour modifier le mot de passe, cliquez sur les trois points à droite de l'utilisateur identifié à [l'étape 3](#step3) puis sur `Changer le mot de passe`{.action}.
 
