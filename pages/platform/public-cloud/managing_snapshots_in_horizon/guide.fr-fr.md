@@ -6,14 +6,22 @@ section: Gestion depuis Horizon
 order: 14
 ---
 
+**Dernière mise à jour le 25/01/2022**
 
-## Preambule
+## Objectif
+
 Lors de votre activité, vous serez probablement amené à effectuer une sauvegarde de vos données, de vos configurations, et même de vos instances au complet. Pour cela, il est possible de créer des snapshots de vos instances, ceux ci pourront être utilisés pour restaurer une configuration ultérieure sur votre instance, ou encore de créer une copie exacte d'une instance.
 
-Ce guide vous explique  comment gérer ces snapshots depuis l'interface OpenStack Horizon.
+**Ce guide vous explique comment gérer ces snapshots depuis l'interface OpenStack Horizon.**
 
+## Prérequis
 
-## Création du snapshot
+- 
+  
+## En pratique
+
+### Création du snapshot
+
 Pour créer un snapshot d'une instance il faut :
 
 - Se connecter à Horizon
@@ -27,7 +35,7 @@ Nom du snapshot : Indiquer le nom du snapshot souhaité. Le snapshot sera listé
 ![public-cloud](images/2617.png){.thumbnail}
 
 
-## Supression d'un snapshot
+### Supression d'un snapshot
 Pour supprimer un snapshot d'une instance il faut :
 
 - Se connecter à Horizon.
