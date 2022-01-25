@@ -1,6 +1,6 @@
 ---
-title: 'Die Größe einer zusätzlichen Festplatte erweitern'
-excerpt: 'Erfahren Sie, wie Sie die Kapazität einer zusätzlichen Festplatte erhöhen und deren Hauptpartition vergrößern können'
+title: 'Die Größe einer zusätzlichen Disk erweitern'
+excerpt: 'Erfahren Sie, wie Sie die Kapazität eines zusätzlichen Volumes erhöhen und dessen Hauptpartition vergrößern können'
 slug: ihre_zusatzliche_festplatte_vergroern
 section: 'Storage'
 legacy_guide_number: g1865
@@ -10,14 +10,14 @@ legacy_guide_number: g1865
 
 ## Ziel
 
-Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Festplatte erreicht haben, können Sie diese trotzdem noch vergrößern.
+Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Disk erreicht haben, können Sie diese trotzdem noch vergrößern.
 
-**In dieser Anleitung erfahren Sie, wie Sie die Größe einer zusätzlichen Festplatte erweitern und deren Hauptpartition vergrößern können.**
+**Diese Anleitung erklärt, wie Sie die Größe einer zusätzlichen Disk erweitern und die Hauptpartition vergrößern können.**
 
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben eine [zusätzliche Festplatte](https://www.ovhcloud.com/de/public-cloud/block-storage) mit Ihrer Instanz verbunden.
+- Sie haben eine [zusätzliche Disk](https://www.ovhcloud.com/de/public-cloud/block-storage) mit Ihrer Instanz verbunden.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugang (Root) zu Ihrer Instanz über SSH (nur Linux).
 - Sie haben Administratorzugriff auf Ihre Instanz über RDP (nur Windows).
@@ -26,15 +26,15 @@ Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Festplatte erre
 
 ### Vorgehensweise im OVHcloud Kundencenter
 
-Um eine Public Cloud Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, in dem Sie die Größe der zusätzlichen Festplatte bearbeiten möchten.
+Um eine Public Cloud Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, in dem Sie die Größe der zusätzlichen Disk bearbeiten möchten.
 
 ![control panel](images/select_project.png){.thumbnail}
 
-Suchen Sie Ihre _Block Storage_-Festplatte im Abschnitt "Storage" auf der linken Seitenleiste.
+Suchen Sie Ihr _Block Storage_-Volume im Abschnitt **Storage** auf der linken Seitenleiste.
 
 ![control panel](images/increase-disk-02.png){.thumbnail}
 
-Klicken Sie anschließend auf `...`{.action} rechts von der Festplatte und danach auf `Bearbeiten`{.action}. Sie werden auf diese Seite weitergeleitet, auf der Sie die Volume-Kapazität ändern können:
+Klicken Sie anschließend auf `...`{.action} rechts vom Volume und danach auf `Bearbeiten`{.action}. Sie werden auf diese Seite weitergeleitet, auf der Sie die Kapazität ändern können:
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
 
@@ -43,7 +43,7 @@ Sobald der Vorgang abgeschlossen ist, klicken Sie auf die Schaltfläche `Volume 
 
 ### Vorgehensweise über Linux
 
-Entfernen Sie zuerst die Festplatte mithilfe dieses Befehls:
+Entfernen Sie zuerst die Disk mithilfe dieses Befehls:
 
 ```
 admin@server-1:~$ sudo umount /mnt/disk
@@ -110,7 +110,7 @@ Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
 The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
 ```
 
-Zum Schluss mounten und überprüfen Sie die Festplatte:
+Zum Schluss mounten und überprüfen Sie die Disk:
 
 ```
 #admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
@@ -135,24 +135,24 @@ Stellen Sie eine RDP-Verbindung zu Ihrer Instanz her. Wenn Sie sich angemeldet h
 
 ![windows](images/increase-disk-04.png){.thumbnail}
 
-Im Datenträgerverwaltungstool wird Ihre neue Festplatte wie im Bild zu sehen als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
+Im Datenträgerverwaltungstool wird Ihr neues Volume wie im Bild zu sehen als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
 
 ![windows](images/increase-disk-05.png){.thumbnail}
 
-Wenn die Festplatte als "Offline" angezeigt wird, liegt das wahrscheinlich an einer die Instanz betreffenden Richtlinie. In diesem Fall klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie "Online".
+Wenn die Disk als "Offline" angezeigt wird, liegt das wahrscheinlich an einer die Instanz betreffenden Richtlinie. In diesem Fall klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie "Online".
 
 ![windows](images/increase-disk-06.png){.thumbnail}
 
 > [!primary]
 >
-In Abhängigkeit von Ihrer Windows-Version müssen Sie möglicherweise Ihre zusätzliche Festplatte initialisieren, bevor Sie sie verwenden können. Um Ihre Festplatte zu initialisieren, klicken Sie sie erneut mit der rechten Maustaste an und wählen Sie diesmal `Datenträgerinitialisierung`{.action}.
+In Abhängigkeit von Ihrer Windows-Version müssen Sie möglicherweise Ihre zusätzliche Disk initialisieren, bevor Sie sie verwenden können. Klicken Sie dazu erneut mit der rechten Maustaste und wählen Sie diesmal `Datenträgerinitialisierung`{.action}.
 >
 
-Wenn das Hauptvolume auf Ihrer Festplatte kleiner als die gesamte Festplattenkapazität ist, öffnen Sie mit der rechten Maustaste dessen Kontextmenü und klicken dann auf `Volume erweitern`{.action}.
+Wenn das Hauptvolume auf Ihrer Disk kleiner als die gesamte Festplattenkapazität ist, öffnen Sie mit der rechten Maustaste dessen Kontextmenü und klicken dann auf `Volume erweitern`{.action}.
 
 ![windows](images/increase-disk-07.png){.thumbnail}
 
-Der Assistent zum Erweitern des Volumes wird nun angezeigt. Klicken Sie auf`Weiter`{.action}, um den Assistenten zu starten.
+Der Assistent zum Erweitern des Volumes wird nun angezeigt. Klicken Sie auf `Weiter`{.action}, um den Assistenten zu starten.
 
 ![windows](images/increase-disk-08.png){.thumbnail}
 
@@ -167,6 +167,6 @@ Klicken Sie auf `Fertig stellen`{.action}, um den Vorgang abzuschließen.
 
 ## Weiterführende Informationen
 
-[Eine zusätzliche Festplatte auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
 
 Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.
