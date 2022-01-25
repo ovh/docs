@@ -202,7 +202,7 @@ cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.netwo
 Vous pouvez désormais ajouter dans le fichier source votre IP fail-over comme suit :
 
 ```sh
-éditeur /etc/systemd/network/50-default.network
+editor /etc/systemd/network/50-default.network
 ```
 ```sh
 [Address]
@@ -249,7 +249,7 @@ network:
         INTERFACE_NAME :
             dhcp4: true
             match:
-                macadresse : MAC_ADDRESS
+                macaddress : MAC_ADDRESS
             set-name : INTERFACE_NAME
             addresses:
             - FAILOVER_IP/32
@@ -348,7 +348,7 @@ Le fichier `/etc/conf.d/net` doit contenir ce qui suit :
 # please review /etc/conf.d/net.example and save your configuration
 # in /etc/conf.d/net (this file :]!).
 config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"FAILOVER_IP masque réseau 255.255.255.255.255.255.255 brd FAILOVER_IP" )
+"FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 routes_eth0=( "default gw SERVER_IP.254" )
 ```
 
