@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-python/'
 ---
 
-**Last updated January 14th 2022**
+**Last updated January 25th 2022**
 
 ## Objective
 
@@ -39,12 +39,10 @@ In order to do so, we will need to set up our Python environment with MySQL driv
 
 To interact with your MySQL instance using Python, your development environment needs to be configured with:
 
-- A compatible version of Python.
-- Mysql connector.
-
+- A compatible version of Python
+- Mysql connector
 
 Please follow the official [MySQL Connector/Python](https://dev.mysql.com/doc/connector-python/en/){.external}. to get the latest information.
-
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below :
 
@@ -53,7 +51,7 @@ laptop$ python3 --version
 Python 3.9.7
 ```
 
-In the same console, by typing a **pip list** check if **mysql-connector-python** is correctly installed :
+In the same console, by typing a **pip list**, check if **mysql-connector-python** is correctly installed :
 
 ```python
 laptop$  pip list           
@@ -92,17 +90,15 @@ GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
 ```
 
 We rely on official MySQL grants and privileges. You can manage them yourself via CLI or code.
-So far, **user grants and privileges management is not supported via OVHcloud Control Panel neither OVHcloud API**.
+So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
 Please read the [official MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html){.external} to select the right grants and privileges for your use-case.
-
 
 In our example, we will simply reset the **avnadmin** password.
 
 Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
 
 ![User ready](images/user_enabled.png){.thumbnail}
-
 
 #### Step 2: Authorize incoming connections from the MySQL client
 
@@ -123,9 +119,9 @@ Click to authorize a new IP, and enter the previously found IP of your Python en
 
 #### Collect required informations
 
-Select the `General information`{.action} tab to find the required login information
+Select the `General information`{.action} tab to find the required login information.
 
-![Login information tab](images/mysql_04_connect_php-20220124153927876.png)
+![Login information tab](images/mysql_04_connect_php-20220124153927876.png){.thumbnail}
 
 #### Using MySQL Connector
 
@@ -166,7 +162,7 @@ If not, your CLI should give you more details about the issue, for example :
 
 - *Authentication failed* : could be an error with your user login or password;
 - *nodename nor servname provided, or not known* : could be a wrongly typed hostname;
-- *Connection reset by peer* : usually due to connection without secure TLS mode. use *tls=true* parameter.
+- *Connection reset by peer* : usually due to connection without secure TLS mode. Use *tls=true* parameter.
 
 ## Go further
 
