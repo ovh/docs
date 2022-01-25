@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Connectez-vous avec PHP (EN)
+title: PostgreSQL - Se connecter avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the PHP programming language
 slug: postgresql/connect-php
 section: PostgreSQL - Guides
