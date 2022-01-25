@@ -6,7 +6,7 @@ section: MySQL - Guides
 order: 301
 ---
 
-**Last updated 14th January 2022**
+**Last updated 25th January 2022**
 
 ## Objective
 

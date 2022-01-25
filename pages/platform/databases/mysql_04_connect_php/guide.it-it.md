@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-php/'
 ---
 
-**Last updated 14th January 2022**
+**Last updated 25th January 2022**
 
 ## Objective
 
