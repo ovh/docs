@@ -1,5 +1,5 @@
 ---
-title: MySQL - Connectez-vous avec PHP (EN)
+title: MySQL - Se connecter avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for MySQL using the PHP programming language
 slug: mysql/connect-php
 section: MySQL - Guides
