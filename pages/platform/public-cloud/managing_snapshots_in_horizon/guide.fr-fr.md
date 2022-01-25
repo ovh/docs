@@ -43,7 +43,7 @@ Le snapshot sera listé ensuite dans la section `Images`{.action}. Il est donc c
 
 Dans l'inteface horizon, cliquez sur le menu `Compute`{.action} à gauche puis sur `Images`{.action}.
 
-Cliquez ensuite sur la flèche déroulante à côté du snapshot à supprimer et cliquez sur `Delete Image`{.action}. Procéder en confirmant la suppression de l'image
+Cliquez ensuite sur la flèche déroulante à côté du snapshot à supprimer et cliquez sur `Delete Image`{.action}. Confirmez la suppréssion du snapshot.
 
 ![public-cloud](images/deletesnapshot.png){.thumbnail}
 
