@@ -1,6 +1,6 @@
 ---
-title: PostegreSQL - Connect with Python
-excerpt: Connect to your Public Cloud Databases for PostegreSQL using the Python programming language
+title: PostgreSQL - Connect with Python
+excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python programming language
 slug: postgresql/connect-python
 section: PostgreSQL - Guides
 order: 302
@@ -8,42 +8,41 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-python/'
 ---
 
-**Last updated January 14th 2022**
+**Last updated January 25th 2022**
 
 ## Objective
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a PostegreSQL database instance with one of the world's most famous programming language: Python.**
+**This guide explains how to connect to a PostgreSQL database instance with one of the world's most famous programming language: Python.**
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for PostegreSQL.
+- An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 ## Concept
 
-A PostegreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostegreSQL with CLI](https://docs.ovh.com/it/publiccloud/databases/postgresql/connect-cli).
+A PostgreSQL instance can be managed through multiple ways.
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](https://docs.ovh.com/it/publiccloud/databases/postgresql/connect-cli).
 
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.
 
-In order to do so, we will need to set up our Python environment with PostegreSQL drivers, then configure our Public Cloud Databases for PostegreSQL instances to accept incoming connections, and finally code in Python to perform a few example actions.
+In order to do so, we will need to set up our Python environment with PostgreSQL drivers, then configure our Public Cloud Databases for PostgreSQL instances to accept incoming connections, and finally code in Python to perform a few example actions.
 
 ## Instructions
 
 ### Set up your Python environment
 
-To interact with your PostegreSQL instance using Python, your development environment needs to be configured with:
+To interact with your PostgreSQL instance using Python, your development environment needs to be configured with:
 
-- A compatible version of Python.
+- A compatible version of Python
 - Psycopg2
 
 Please follow the official [Psycopg - PostgreSQL database adapter for Pytho](https://www.psycopg.org/docs/){.external}. to get the latest information.
-
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below :
 
@@ -74,13 +73,13 @@ Finally, copy the IP address of your Python environment and save it for later.
 If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
 In our example, we will use the (fake) IP 109.190.200.59.
 
-We are now ready to learn how to connect to our PostegreSQL instance !
+We are now ready to learn how to connect to our PostgreSQL instance!
 
-### Configure your PostegreSQL instance to accept incoming connections
+### Configure your PostgreSQL instance to accept incoming connections
 
-Before making a connection, we need to verify that our PostegreSQL instance is correctly configured.
+Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostegreSQL instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -98,7 +97,7 @@ This first user **avnadmin** comes with the following privileges:
 ```
 
 We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
-So far, **user roles and privileges management is not supported via OVHcloud Control Panel neither OVHcloud API**.
+So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
 Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use-case.
 
@@ -109,7 +108,7 @@ Once created or updated, the user has to be ready and have the status "Enabled" 
 
 ![User ready](images/user_enabled.png){.thumbnail}
 
-#### Step 2: Authorize incoming connections from the PostegreSQL client
+#### Step 2: Authorize incoming connections from the PostgreSQL client
 
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
