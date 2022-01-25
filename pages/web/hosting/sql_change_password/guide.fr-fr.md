@@ -12,7 +12,7 @@ order: 2
 
 La majeure partie des sites Web utilisent une **base de données** pour y stocker leurs articles, les commentaires ou encore les adresses e-mail de leurs utilisateurs.
 
-La connexion à cette base de données est rendue possible par un **fichier de configuration** contenu dans [l'espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Il contient les informations permettant à votre site de « s'identifier » auprès du serveur de votre base de données.
+La connexion à cette base de données est rendue possible par un **fichier de configuration** contenu dans [l'espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement. Il contient les informations permettant à votre site de « s'identifier » auprès d'un serveur contenant sa base de données.
 
 Le changement de mot de passe d'une base de données doit donc toujours être effectué :
 
@@ -21,6 +21,11 @@ Le changement de mot de passe d'une base de données doit donc toujours être ef
 - **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une [Erreur de connexion à la base de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees).
+
+Ce guide vous permettra de modifier le mot de passe de la base de données de votre site en deux étapes :
+
+- 1 : Identifier le fichier de configuration et la base de données de votre site ;
+- 2 : Modifier le mot de passe de votre base de données dans ces deux endroits.
 
 **Apprenez à changer le mot de passe d'une base de données de façon sécurisée.**
 
@@ -40,24 +45,24 @@ Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, vo
 
 ## En pratique
 
-### Étape 1 : trouver le dossier contenant votre site
+### Étape 1 : identifier au fichier de configuration de votre site
 
-Rendez-vous dans l'onglet `Multisite`{.action}, dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre `Hébergement`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers et fichiers de votre site.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu à gauche de votre écran, sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}, afin de retrouver le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
-### Étape 2 : accéder au fichier de configuration de votre site
+### Étape 2 : 
 
 Accédez à l'espace contenant ces fichiers et dossiers en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
-Ouvrez ensuite le `Dossier racine` identifié à l'étape précédente.
+Ouvrez le `Dossier racine` identifié à l'étape précédente.
 
 > [!primary]
 >
 > Si vous ne parvenez pas à retrouver le fichier de configuration de votre site ou si vous n'êtes pas certain des manipulations à réaliser, contactez votre Webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 >
 
-Recherchez et ouvrez le fichier de configuration de votre site à l'intérieur de votre `Dossier racine` :
+Recherchez et ouvrez le fichier de configuration de votre site :
 
 - Pour un site WORDPRESS, il s'agit de **« wp-config.php »** ;
 - Pour un site JOOMLA, il s'agit de **« configuration.php »** ;
@@ -66,18 +71,28 @@ Recherchez et ouvrez le fichier de configuration de votre site à l'intérieur d
 
 ### Étape 3 : identifier la base de données de votre site <a name="step3"></a>
 
+L'objectif de cette étape est d'identifier de façon certaine la base de données dont dépend votre site, afin de changer son mot de passe dans son fichier de configuration puis dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+Concernant le changement de mot de passe de votre base par votre espace client, deux cas sont possibles :
+
+- Cas n°1 : la base de données fait partie de votre offre d'hébergement ;
+- Cas n°2 : elle fait partie d'une offre SQL Privé ou CloudDB, auquel cas vous devrez retrouver le nom du serveur et le nom d'utilisateur de votre base de données, afin de l'identifier sans risque d'erreur.
+
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement
 
-Cette information est nécessaire si vous disposez de plusieurs bases de données. Vous devrez en effet être certain d'effectuer le changement de mot de passe sur la base dont dépend votre site.
-
-Toujours dans le fichier de configuration, notez le nom de la base de données :
+Toujours dans le fichier de configuration, notez le nom de la base de données de votre site :
 
 - Pour WORDPRESS : il apparaît sous la mention **« DB_NAME »** ;
 - Pour JOOMLA : sous **« public $db »** ;
 - Pour DRUPAL : sous **« database »** ;
 - Pour PRESTASHOP : sous **« database_name »**.
 
-Dans la partie `Web Cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action} à droite de votre écran. Vérifiez que la base de données de votre site se trouve dans cette partie.
+Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) toujours dans la partie `Web Cloud`{.action} :
+
+- Rendez-vous dans la partie `Hébergements`{.action} puis dans l'hébergement concerné ;
+- Cliquez sur l'onglet `Bases de données`{.action} à droite de votre écran ;
+- Retrouvez le nom de la base de données de votre site dans la colonne `Nom de la base` ;
+- Passez à l'étape 4 : 
 
 #### Cas n°2 : la base de données de votre site fait partie d'une offre Private SQL ou CloudDB
 
