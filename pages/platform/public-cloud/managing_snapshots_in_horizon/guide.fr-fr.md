@@ -16,32 +16,37 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 
 ## Prérequis
 
-- 
+- Avoir [créé une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) dans votre compte OVHcloud
+- [Accéder à l'interface Horizon](../creer-un-acces-a-horizon/)
   
 ## En pratique
 
 ### Création du snapshot
 
-Pour créer un snapshot d'une instance il faut :
+Connectez-vous à l'interface Horizon et et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
 
-- Se connecter à Horizon
-- Cliquer sur Instances dans le menu à gauche.
-- Cliquer sur Créer un instantané sur la ligne de l'instance.
-- Remplir le Formulaire :
+![Sélection de région](images/region2021.png){.thumbnail}
 
-Nom du snapshot : Indiquer le nom du snapshot souhaité. Le snapshot sera listé ensuite dans les images. Il est donc conseillé de mettre un nom explicite.
+Cliquez sur le menu `Compute`{.action} à gauche puis sur `Instances`{.action}. Cliquez sur `Create Snapshot`{.action} sur la ligne de l'instance correspondante.
 
+![Create snapshot](images/createsnapshot.png){.thumbnail}
 
-![public-cloud](images/2617.png){.thumbnail}
+Dans la fenêtre qui s'affiche, saisissez les informations requises :
 
+Nom du snapshot (*Snapshot Name*): indiquer le nom du snapshot souhaité et cliquez sur `Create Snapshot`{.action}.
+
+Le snapshot sera listé ensuite dans la section `Images`{.action}. Il est donc conseillé de mettre un nom explicite. 
+
+![Create snapshot](images/createsnapshot.png){.thumbnail}
 
 ### Supression d'un snapshot
-Pour supprimer un snapshot d'une instance il faut :
 
-- Se connecter à Horizon.
-- Cliquer sur Images .
-- Sélectionner l'image (snapshot) à supprimer.
-- Cliquer sur Supprimer les images .
+Dans l'inteface horizon, cliquez sur le menu `Compute`{.action} à gauche puis sur `Images`{.action}.
 
+Cliquez ensuite sur la flèche déroulante à côté du snapshot à supprimer et cliquez sur `Delete Image`{.action}. Procéder en confirmant la suppression de l'image
 
-![public-cloud](images/2618.png){.thumbnail}
+![public-cloud](images/deletesnapshot.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
