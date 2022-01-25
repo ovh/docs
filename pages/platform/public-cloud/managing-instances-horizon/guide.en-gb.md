@@ -1,6 +1,6 @@
 ---
 title: 'Managing your Public Cloud Instances'
-slug: get-started-with-a-public-cloud-instance
+slug: managing-public-cloud-instance
 excerpt: 'Find out how to manage your Public Cloud projects via the Horizon interface'
 section: Horizon
 order: 4
