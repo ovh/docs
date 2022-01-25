@@ -6,7 +6,6 @@ section: Configuration
 ---
 **Dernière mise à jour le 20/01/2021**
 
-
 ## Objectif
 
 Le service OVHCloud Load Balancer est localisé dans une ou plusieurs zone(s) de disponibilité,
