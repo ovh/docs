@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-php/'
 ---
 
-**Last updated 14th January 2022**
+**Last updated 25th January 2022**
 
 ## Objective
 
@@ -45,9 +45,9 @@ To interact with your PostgreSQL instance with PHP, your development environment
 
 Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql.php){.external} to get the latest information.
 
-If you can edit your PHP environment on your own, install extensions and libraries as detailed in this documentation page linked above.
+If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/es/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/es/hosting/cambiar-version-php-en-alojamiento-web/).
 
 Finally, copy the IP address of your PHP environment or Web Hosting plan, and keep it for later.
 In our example, we will use the (fake) IP 109.190.200.59.
@@ -76,10 +76,9 @@ This first user **avnadmin** comes with the following privileges:
 ```
 
 We rely on official PostgreSQL roles and privileges. You can manage them yourself via CLI or code.
-So far, **user roles and privileges management is not supported via OVHcloud Control Panel neither OVHcloud API**.
+So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
 
 Please read the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/database-roles.html){.external} to select the right roles for your use-case.
-
 
 In our example, we will simply reset the **avnadmin** password.
 
@@ -106,13 +105,13 @@ Click to authorize a new IP, and enter the previously found IP of your PHP envir
 
 #### Collect required informations
 
-Select the `General information`{.action} tab to find the required login information
+Select the `General information`{.action} tab to find the required login information.
 
-![Login information tab](images/mysql_04_connect_php-20220124153927876.png)
+![Login information tab](images/mysql_04_connect_php-20220124153927876.png){.thumbnail}
 
-Select the `Databases`{.action} tab to get the database name
+Select the `Databases`{.action} tab to get the database name.
 
-![Databases tab](images/mysql_04_connect_php-20220124154604558.png)
+![Databases tab](images/mysql_04_connect_php-20220124154604558.png){.thumbnail}
 
 #### Using pg_connect
 
