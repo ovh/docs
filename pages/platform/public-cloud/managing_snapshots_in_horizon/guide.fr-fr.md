@@ -35,9 +35,9 @@ Dans la fenêtre qui s'affiche, saisissez les informations requises :
 
 Nom du snapshot (*Snapshot Name*): indiquer le nom du snapshot souhaité et cliquez sur `Create Snapshot`{.action}.
 
-Le snapshot sera listé ensuite dans la section `Images`{.action}. Il est donc conseillé de mettre un nom explicite. 
+![Create snapshot](images/createsnapshot2.png){.thumbnail}
 
-![Create snapshot](images/createsnapshot.png){.thumbnail}
+Le snapshot sera listé ensuite dans la section `Images`{.action}. Il est donc conseillé de mettre un nom explicite. 
 
 ### Supression d'un snapshot
 
