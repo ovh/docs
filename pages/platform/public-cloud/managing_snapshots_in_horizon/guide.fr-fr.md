@@ -23,11 +23,11 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 
 ### Création du snapshot
 
-Connectez-vous à l'interface Horizon et et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
+Connectez-vous à l'interface Horizon et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
 
 ![Sélection de région](images/region2021.png){.thumbnail}
 
-Cliquez sur le menu `Compute`{.action} à gauche puis sur `Instances`{.action}. Cliquez sur `Create Snapshot`{.action} sur la ligne de l'instance correspondante.
+Cliquez sur le menu `Compute`{.action} à gauche puis sur `Instances`{.action}. Cliquez ensuite sur `Create Snapshot`{.action} sur la ligne de l'instance correspondante.
 
 ![Create snapshot](images/createsnapshot.png){.thumbnail}
 

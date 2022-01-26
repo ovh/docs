@@ -23,7 +23,7 @@ Lors de votre activité, vous serez probablement amené à effectuer une sauvega
 
 ### Création du snapshot
 
-Connectez-vous à l'interface Horizon et et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
+Connectez-vous à l'interface Horizon et assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche. 
 
 ![Sélection de région](images/region2021.png){.thumbnail}
 
