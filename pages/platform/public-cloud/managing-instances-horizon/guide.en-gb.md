@@ -28,14 +28,14 @@ Unlike the OVHcloud Control Panel, Horizon separates your services according to 
 
 ![public-cloud](images/region2021.png){.thumbnail}
 
-Click the `Compute`{.action} menu on the left-hand side, then select `Instances`{.action}. On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
+Click the `Compute`{.action} menu on the left-hand side, then select `Instances`{.action}. On that page you will see a summary of all your instances. There will be several pieces of information displayed here:
 
-  * The model of your instance (Flavor)
-  * Its name, power state, and time since created
-  * Your instance’s IPv4 and IPV6 address
-  * Its associated private network and private IPv4 address
-  * Its status
-  * The image used to install the instance (if applicable)
+- The model of your instance (Flavor)
+- Its name, power state, and time since created
+- Your instance’s IPv4 and IPV6 address
+- Its associated private network and private IPv4 address
+- Its status
+- The image used to install the instance (if applicable)
 
 ![public-cloud](images/options2022.png){.thumbnail}
 
@@ -181,7 +181,7 @@ From the drop-down list for the instance, select `Console`{.action}.
 
 ![public-cloud](images/accessconsole.png){.thumbnail}
 
-- the instance console will appear.
+- The instance console will appear.
 
 > [!success]
 >
