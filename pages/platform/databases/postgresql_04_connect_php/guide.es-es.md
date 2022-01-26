@@ -116,6 +116,7 @@ Select the `Databases`{.action} tab to get the database name.
 #### Using pg_connect
 
 ```php
+<?php
 $host = "postgresql-11xxxx20-o2xxxx53.database.cloud.ovh.net";
 $user = "avnadmin";
 $password = "K93xxxxxxxxxxxxxaBp";
@@ -131,6 +132,7 @@ if($stat === PGSQL_CONNECTION_OK){
 } else {
   echo 'An error occurred';
 }
+?>
 ```
 If you are connected, result should be like this:
 
@@ -141,6 +143,7 @@ Connection OK
 #### Using PDO
 
 ```php
+<?php
 $host = "postgresql-11xxxx20-o2xxxx53.database.cloud.ovh.net";
 $user = "avnadmin";
 $password = "K93xxxxxxxxxxxxxaBp";
@@ -149,6 +152,7 @@ $port = "20184";
 
 $conn = new PDO("pgsql:host=$host; port=$port; dbname=$dbname; sslmode=require; user=$user; password=$password");
 var_dump($conn->query("select datname from pg_database;")->fetchAll());
+?>
 ```
 
 If you are connected, result should be like this:
