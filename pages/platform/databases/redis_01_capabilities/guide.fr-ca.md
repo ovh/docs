@@ -8,22 +8,12 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
 ---
 
-**Last updated October 08<sup>th</sup>, 2021**
+**Last updated January 26<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Redis offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
-
-## BETA phase
-
-Please note that the Public Cloud Databases for Redis offer is currently in BETA Phase, meaning:
-
-- The service is free during BETA phase.
-- The service is not ready for production.
-- There is no official support.
-- There are no contractual agreements (SLA).
-- Some features are under development. You can check out our BETA vs General Availability here: <https://github.com/ovh/public-cloud-roadmap/issues/121>.
 
 ## Capabilities and limitations
 
