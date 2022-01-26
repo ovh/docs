@@ -6,22 +6,12 @@ section: PostgreSQL - Guides
 order: 1
 ---
 
-**Last updated October 05<sup>th</sup>, 2021**
+**Last updated January 26<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for PostgreSQL offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
-
-## BETA phase
-
-Please note that the Public Cloud Databases for PostgreSQL offer is currently in BETA Phase, meaning:
-
-- the service is free during BETA phase;
-- the service is not ready for production;
-- there is no official support;
-- there are no contractual agreements (SLA);
-- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/120>.
 
 ## Capabilities and limitations
 
