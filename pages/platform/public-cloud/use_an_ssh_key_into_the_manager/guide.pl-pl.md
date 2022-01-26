@@ -20,6 +20,10 @@ Klucz SSH można dodać w interfejsie Public Cloud na dwa sposoby:
 
 - [klucz SSH](../tworzenie-kluczy-ssh/){.external}
 
+> [!primary]
+>
+Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
+>
 
 ## Tworzenie instancji
 Aby utworzyć instancję, w interfejsie klienta Public Cloud kliknij pozycję `Utwórz instancję`{.action} w menu Instancje w sekcji `Środowisko obliczeniowe`{.action} (po lewej stronie).

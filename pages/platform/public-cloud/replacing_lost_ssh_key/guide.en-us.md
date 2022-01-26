@@ -19,9 +19,15 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 
 ## Requirements
 
-* root access to your server via SSH
+- A [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- Access to your instance via SSH
 
 ## Instructions
+
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+>
 
 After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/){.external}, you will be able to access all your files. The file containing your SSH keys is shown below:
 

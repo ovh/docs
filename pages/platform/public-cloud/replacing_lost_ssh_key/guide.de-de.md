@@ -26,6 +26,11 @@ Um wieder Zugriff zu erhalten, stellen wir Ihnen den Rescue Modus zur Verfügung
 
 ## In der praktischen Anwendung
 
+> [!primary]
+>
+Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
+>
+
 Nachdem Sie die Festplatte Ihrer Instanz im Rescue Modus gemountet haben, können Sie auf sämtliche darauf befindlichen Daten zugreifen.
 
 Ihre SSH-Schlüssel befinden sich in der Datei:

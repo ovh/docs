@@ -20,6 +20,11 @@ Per aggiungere una chiave SSH dall’interfaccia Public Cloud esistono due modi:
 - [Aver creato una chiave SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/){.ref}
 
 
+> [!primary]
+>
+Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
+>
+
 ## Creazione di un’istanza
 Per creare un’istanza Cloud, accedi all’interfaccia Public Cloud e clicca su `Crea un’istanza`{.action} dal menu “Istanze” situato nella sezione `Compute`{.action} del menu a sinistra.
 
