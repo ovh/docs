@@ -20,8 +20,8 @@ This guide will show you how to do this.
 
 ### Requirements
 
-- two OVHcloud accounts
-- a Public Cloud project
+- Two OVHcloud customer accounts
+- A Public Cloud project
 
 
 ## Instructions 

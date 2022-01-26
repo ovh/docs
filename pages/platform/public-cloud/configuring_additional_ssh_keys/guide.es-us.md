@@ -17,6 +17,11 @@ Esta guía explica cómo configurar llaves SSH adicionales en la instancia para 
 Es necesario disponer de una instancia.
 
 
+> [!primary]
+>
+Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
+>
+
 ## Creación de la llave SSH
 
 - Crear llaves SSH

@@ -18,7 +18,10 @@ Este guia explica-lhe como poderá configurar chaves SSH suplementares da sua in
 
 - Uma instância
 
-
+> [!primary]
+>
+Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
+>
 
 
 ## Criação da chave SSH

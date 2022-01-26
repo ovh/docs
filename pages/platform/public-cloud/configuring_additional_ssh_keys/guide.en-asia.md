@@ -11,7 +11,7 @@ order: 1
 
 ## Objective
  
-When creating an instance, it isn't possible to configure only one SSH key. However, you can still grant access to  other users who have SSH keys for your instance by configuring the authorized_keys file.
+When creating an instance, it isn't possible to configure only one SSH key. However, you can still grant access to other users who have SSH keys for your instance by configuring the authorized_keys file.
 
 **This guide will explain how to configure additional SSH keys for your instance in order to grant access to other people.**
 
@@ -22,6 +22,11 @@ When creating an instance, it isn't possible to configure only one SSH key. Howe
 - Root access to your instance via SSH
 
 ## Instructions
+
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+>
 
 ### Creating the SSH key
 
