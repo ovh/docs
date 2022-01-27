@@ -101,7 +101,7 @@ Seleziona `Resize Instance`{.action} nel menu a tendina dell'istanza pertinente.
 * Limiti del Progetto (*Project Limits*). Visualizza qui le risorse occupate rispetto alle risorse totali assegnate al progetto.
 
 > [!warning]
-> Ti ricordiamo che è possibile ridimensionare un'istanza solo da un modello Linux a un altro modello Linux e da un modello Windows a un altro modello Windows.
+> Ti ricordiamo che è possibile ridimensionare un'istanza da un modello Linux a un altro modello Linux e da un modello Windows a un altro modello Windows.
 >
 
 * Opzioni avanzate (*Advanced Options*). Questa sezione permette di gestire il partizionamento del disco (*Disk Partition*) e del gruppo di server (*Server Group*).
