@@ -1,21 +1,26 @@
 ---
-title: Gestion du service Load Balancer via l'espace client
+title: Gestion du service OVHcloud Load Balancer via l'espace client
 slug: utilisation-iplb
 excerpt: Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client
 section: Premiers pas
 ---
+**Dernière mise à jour le 20/01/2021**
 
 ## Objectif
+
 Ce guide a pour but de vous aider lors de la première prise en main de votre Load Balancer en vous présentant les fonctionnalités principales de l'offre.
 
 ## Prérequis
-- Avoir accès à votre espace client
-- Avoir commandé un [Load Balancer](https://www.ovh.com/fr/solutions/load-balancer)
+
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+
 
 ## En pratique
 
 ### Gérer son Load Balancer via l'espace client
-Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie `Cloud`{.action} (1) puis dans la partie `Load Balancer`{.action} (2) du menu de gauche. La page principale du service apparaîtra ensuite :
+
+Pour gérer votre Load Balancer via l'espace client, rendez-vous dans la partie ` Bare metal Cloud`{.action} (1) puis dans la partie `Load Balancer`{.action} (2) du menu de gauche. La page principale du service apparaîtra ensuite :
 
 ![Load Balancer](images/lb_main_page.png){.thumbnail}
 
