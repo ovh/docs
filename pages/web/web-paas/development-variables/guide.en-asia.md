@@ -158,13 +158,6 @@ and whether they're available during builds and at runtime.
 | PLATFORM_RELATIONSHIPS    | No    | Yes     | A base64-encoded JSON object of relationships. The keys are the relationship name and the values are arrays of relationship endpoint definitions. The exact format is defined for each [service](../configuration-services). |
 | PLATFORM_ROUTES           | No    | Yes     | A base64-encoded JSON object that describes the routes for the environment. It maps the content of the `.platform/routes.yaml` file. |
 
-Dedicated instances also have the following variables available:
-
-| Variable name    | Build | Runtime | Description |
-| ---------------- | ----- | ------- | ----------- |
-| PLATFORM_MODE    | No    | Yes     | `enterprise` in all production and staging Dedicated environments. Note that an Enterprise support plan doesn't always imply a Dedicated environment, but a Dedicated environment always implies an Enterprise support plan. |
-| PLATFORM_CLUSTER | No    | Yes     | The cluster ID. |
-| PLATFORM_PROJECT | No    | Yes     | The document root. Typically the same as your cluster name for the production environment, while staging environments have `_stg` or similar appended. |
 
 
 
