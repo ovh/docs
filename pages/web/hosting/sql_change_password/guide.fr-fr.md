@@ -22,7 +22,7 @@ Le changement de mot de passe d'une base de données doit donc toujours être ef
 
 Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
 
-Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre Webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
+Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 
 La modification du mot de passe de la base de données de votre site se fait en quatre étapes :
 
@@ -89,13 +89,15 @@ Afin de déterminer quel cas s'applique à votre site, dans le fichier de config
 
 Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) toujours dans la partie `Web Cloud`{.action} :
 
-- Rendez-vous dans la partie `Hébergements`{.action} puis dans l'hébergement concerné ;
-- Cliquez sur l'onglet `Bases de données`{.action} **à droite** de votre écran ;
-- Recherchez le nom de la base de données trouvé précédemment dans la colonne `Nom de la base` ;
+- Rendez-vous dans la partie `Hébergements`{.action} puis dans l'hébergement concerné;
+- Cliquez sur l'onglet `Bases de données`{.action} **à droite** de votre écran;
+- Recherchez le nom de la base de données trouvé précédemment dans la colonne `Nom de la base`;
 
-Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration de votre site, passez à [l'étape 3](#step3).
+Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration, passez à [l'étape 3](#step3).
 
-Dans le cas contraire, retournez dans le fichier de configuration identifié à [l'étape 1](#step1), afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
+Dans le cas contraire, la base de données de votre site est liée à une offre [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+
+Vous devez donc retourner dans le fichier de configuration de votre site, afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
 
 - Pour WORDPRESS : le *nom du serveur* apparaît sous la mention **« DB_HOST »** et le *nom d'utilisateur* sous la mention **« DB_USER »**;
 - Pour JOOMLA : le *nom du serveur* apparaît sous **« public $host »** et le *nom d'utilisateur* sous la mention **« public $user »**;
@@ -117,11 +119,11 @@ Toujours dans cette partie de votre espace client, rendez-vous dans l'onglet `Ut
 
 Choisissez le nouveau mot de passe de votre base de données et notez-le. Il devra respecter les conditions suivantes :
 
-- Minimum 8 caractères ;
-- Maximum 30 caractères ;
-- Au moins une lettre majuscule ;
-- Au moins une lettre minuscule ;
-- Au moins un chiffre ;
+- Minimum 8 caractères;
+- Maximum 30 caractères;
+- Au moins une lettre majuscule;
+- Au moins une lettre minuscule;
+- Au moins un chiffre;
 - Être composé uniquement de chiffres et de lettres.
 
 De la même manière qu'à [l'étape 1](#step1), retournez dans l'espace de stockage de fichiers de votre hébergement puis ouvrez en édition le fichier de configuration de votre site.
@@ -203,7 +205,7 @@ Cliquez ensuite sur les trois points à droite de la base de données de votre s
 
 ![database-password-step2](images/database-password-step2.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données ([étape 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
+Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini à [l'étape 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
@@ -217,7 +219,7 @@ Pour modifier le mot de passe de votre base de données sur le serveur, cliquez 
 
 ![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données ([étape 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
+Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base de données (défini à [l'étape 3](#step3)), confirmez-le puis cliquez sur le bouton `Valider`{.action}.
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
@@ -225,7 +227,7 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 [Utilisation logiciel FileZilla avec votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-[Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
+[Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
 
 [Résoudre les erreurs les plus fréquentes liées aux bases de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 
