@@ -1,46 +1,100 @@
 ---
-title: 'Hosting condiviso: problemi FTP ricorrenti'
-slug: hosting_condiviso_problemi_ftp_ricorrenti
-excerpt: 'Hosting condiviso: problemi FTP ricorrenti'
-id: '1996'
-legacy_guide_number: g1996
+title: Risolvere gli errori ricorrenti nell'utilizzo di un software FTP
+excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
+slug: condividili-problemi-ftp-ricorrenti
+legacy_guide_number: 1996
 section: FTP e SSH
+order: 3
 ---
 
-## Hai trasferito i tuoi file via FTP, ma non riesci a visualizzare il tuo sito
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-- Verifica di aver salvato i file del tuo sito nella directory /www del tuo hosting.
-- Se hai apportato modifiche alla tua zona DNS, la propagazione potrebbe richiedere da 4 a 24 ore.
+**Ultimo aggiornamento: 05/01/2022**
 
+## Obiettivo
 
-## Le tue credenziali FTP non funzionano
-Verifica di aver copiato correttamenete la tua password e non aver confuso "l" (L) con "1" (uno) e "O" (la lettera) con "0" (zero).
-In caso di errore, è possibile che le credenziali inserite non siano corrette. Se necessario consulta [questa guida](https://www.ovh.it/g1374.metti-online-tuo-sito#trasferisci_i_tuoi_file_in_ftp_recupera_le_credenziali_ftp).
+L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) può causare diverse anomalie. Questa guida ti mostra come risolvere il problema più comune.
 
+**Questa guida ti mostra come risolvere gli errori associati ai software FTP.**
 
-## Quanto spazio è ancora disponibile sul tuo sito?
-Se lo spazio disponibile sul tuo hosting condiviso non è sifficiente, si potrebbero verificare malfunzionamenti quando tenti di mettere online nuovi contenuti.
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+>
 
-- Per verificare lo spazio a tua disposizione, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la tua piattaforma di hosting.
+## Prerequisiti
 
+- Disporre di una [soluzione di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) OVH
+- Avere accesso allo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+## Procedura
 
-![](images/img_3298.jpg){.thumbnail}
-Compare un riepilogo con la quota utilizzata dal tuo spazio FTP.
+### "Questo server non supporta FTP su TLS" (FileZilla)
 
-![](images/img_3299.jpg){.thumbnail}
+![filezilla_error](images/filezilla_error.png){.thumbnail}
 
+Questo messaggio sul software [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) indica che non hai attivato l'opzione SFTP o SSH dal tuo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In questo modo, le informazioni scambiate tra il tuo server di hosting OVHcloud e il tuo computer non saranno cifrate.
 
-## Non riesci a inviare i tuoi file sul tuo server FTP?
-Accedi in modalità passiva (modalità di configurazione che permette al server FTP di definire la porta di accesso) con il tuo client FTP. Ad esempio, con Filezilla clicca su Modifica -> Impostazioni -> Connessione -> FTP -> Modalità passiva.
+Se i dati che vuoi scambiare tramite questo canale non sono riservati, clicca su `OK`{.action}.
 
+In caso contrario, accedi alla sezione Web del tuo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona la sezione `Web Cloud`{.action} e poi `Hosting`{.action}. Seleziona l'hosting interessato e clicca sulla scheda `FTP-SSH`{.action}.
 
-## A cosa serve la cartella cgi-bin?
-La cartella cgi-bin è una directory parallela di "www" non leggibile direttamente dal server Web e che presenta queste caratteristiche:
+Clicca sui tre puntini `...`{.action} in corrispondenza dell'utente FTP interessato e seleziona `Modifica`{.action}.<br>
+Scegli SFTP o SSH (se hai un [hosting Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) o [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml)), clicca su `Seguente`{.action} e poi su `Conferma`{.action}.
 
-- i file salvati al suo interno non possono essere letti ma solo eseguiti. Non è quindi possibile salvare immagini gif o jpeg perché la loro lettura provoca errori
-- dal momento che nessun file della cartella può essere letto, puoi utilizzarla, ad esempio, per salvare in formato testo i file dei database che vuoi proteggere 
-- l'esecuzione degli script cgi direttamente dalla cartella cgi-bin avviene tramite un alias del tuo sito ed è quindi possibile solo dal tuo dominio.
+> [!primary]
+>
+> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting Web](../).
+>
 
+### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.
 
+Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#3-telecharger-les-fichiers-sur-lespace-de-stockage) del tuo hosting.
 
+Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
+
+### Le credenziali FTP non funzionano
+
+Se non riesci ad autenticarti, modifica la password FTP seguendo le indicazioni di questa [guida](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
+
+### Incontro errori casuali sul mio sito.
+
+La mancanza di spazio sul tuo hosting condiviso può causare problemi al tuo sito quando provi a modificarlo o ad aggiornarlo.
+
+Per verificare lo spazio di storage rimasto sul tuo hosting, accedi allo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Web Cloud`{.action} e poi su `Hosting`{.action}. Seleziona l'hosting interessato.
+
+La quantità di dati registrata sul tuo server di hosting (database esclusi) compare nella sezione `Informazioni generali` > `Spazio disco`.
+
+![disk_space](images/disk_space.png){.thumbnail}
+
+### Non riesco a trasferire i miei file verso il server FTP.
+
+Verifica che il tuo client FTP sia collegato in "Modalità Passivo" (Modalità di configurazione di un server FTP in cui il server determina la porta di connessione).
+
+Per esempio, per [Filezilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/), clicca su `Modifica`{.action}, poi `Impostazioni`{.action}, `Connessione`{.action}, `FTP`{.action} ` `{.action} e seleziona "Passivo" (consigliato)saldo.
+
+Limita anche la dimensione dei tuoi trasferimenti di dati (non puoi inviare più di **5.000 file e cartelle** sui server condivisi OVHcloud in un solo trasferimento). Effettua le tue importazioni in più volte, se necessario, utilizzando cartelle compresse.
+
+Se disponi di una [formula Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), utilizza preferibilmente il [protocollo SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) per effettuare l'importazione di file sullo spazio di archiviazione dei file del tuo hosting.
+
+### Non riesco a eliminare il link simbolico "index.html" sul mio spazio FTP
+
+Questo collegamento è installato di default sugli hosting condivisi OVHcloud. Dà questa visualizzazione:
+
+![site_under_construction](images/site_under_construction.png){.thumbnail}
+
+Se non hai utilizzato la funzionalità "[Modulo in 1 click](https://docs.ovh.com/fr/hosting/modules-en-1-clic/)" per creare il tuo sito, è necessario utilizzare il software [Net2FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/#1-connexion-via-le-ftp-explorer) accessibile tramite lo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per eliminare manualmente la pagina "Sito in costruzione".
+
+## Spingiti oltre <a name="gofurther"></a>
+
+[Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/fr/support-levels/).
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
