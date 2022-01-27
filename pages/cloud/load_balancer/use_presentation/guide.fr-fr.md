@@ -1,30 +1,31 @@
 ---
-title: Présentation de l'OVH Load Balancer
+title: Présentation du service OVHCloud Load Balancer
 slug: iplb-presentation
-excerpt: Découvrez la nouvelle offre OVH Load Balancer
+excerpt: Découvrez le service OVHCloud Load Balancer
 section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 01/12/2017**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
-La nouvelle offre [OVH Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/){.external} est un répartiteur de charge (load balancer) qui allie souplesse de configuration et fiabilité. Vous n'avez qu'à configurer vos produits avec l'OVH Load Balancer et nous nous occupons du reste !
+L'OVHCloud Load Balancer répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
+En savoir plus sur [OVHCloud Load Balancing](https://www.ovh.com/fr/solutions/load-balancer/){.external}
 
-**Découvrez vite la nouvelle offre OVH Load Balancer.**
 
 ## Prérequis
 
-- Pas de prérequis spécifique.
+- Pas de prérequis spécifique
 
 
 ## En pratique
 
  
-Cette nouvelle offre est basée sur de robustes solutions open source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
+Le service OVHCloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
 
-Plus de limitations ! La nouvelle offre [OVH Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/){.external} peut être utilisée pour fonctionner avec différents protocoles :
+il peut être utilisé pour fonctionner avec différents protocoles :
 
 |Type|Description|Avantages|Technologie|
 |---|---|---|---|
@@ -32,9 +33,8 @@ Plus de limitations ! La nouvelle offre [OVH Load Balancer](https://www.ovh.com/
 |TCP|Pour tout service réseau qui n'est pas HTTP|Peut supporter toutes les applications TCP|Haproxy|
 |UDP|Pour tout type de flux UDP|Peut supporter toutes les applications UDP|Nginx|
 
-Ce qui est inclus avec ce nouveau service :
-
-- une protection Anti-DDoS OVH ;
+l'ajout du service ovhcloud load-balancer présente de nombreux fontionnalités :
+ - une protection Anti-DDoS OVH ;
  - un support de zones multiples (Anycast) ;
  - un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
  - un service compatible avec une IP Fail-over ;
@@ -43,36 +43,36 @@ Ce qui est inclus avec ce nouveau service :
 
 ### Parties élémentaires
 
-- La nouvelle offre OVH Load Balancer se compose de trois parties élémentaires :
+- Le service OVHCloud Load Balancer se compose de trois parties élémentaires :
 
 ![Général](images/diag_gen.png){.thumbnail}
 
 |Parties Élémentaires|Fonction|
 |---|---|
-|Frontend|Le front end définit le type de protocole (HTTP/TCP/UDP) du service OVH Load Balancer. C'est également la partie qui expose le port d'écoute du service|
+|Frontend|Le front end définit le type de protocole (HTTP/TCP/UDP) du service OVHCloud Load Balancer. C'est également la partie qui expose le port d'écoute du service|
 |Farm|La ferme reçoit le trafic provenant du front end, c'est la partie qui s'occupe de faire la répartition de charge|
 |Server|Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application|
 
 Avec ces trois parties élémentaires qui composent le Load Balancer, il est possible de configurer à peu près tous les types de load-balancing possibles.
 
 
-### Pourquoi utiliser l'OVH Load Balancer ?
+### Pourquoi utiliser l'OVHCloud Load Balancer ?
 
 #### Répartir la charge
 
-C'est la fonction élémentaire d'un répartiteur de charge, mais l'OVH Load Balancer OVH est capable de bien plus.
+C'est la fonction élémentaire d'un répartiteur de charge, mais l'OVHCloud Load Balancer est capable de bien plus.
 
 ![Distribute load](images/distribute_load.png){.thumbnail}
 
 #### Supprimer le downtime
 
-Le service OVH Load Balancer est capable de détecter automatiquement l'absence de réponse d'un serveur. Dans ce cas de figure, il redirige le trafic à destination de ce serveur vers un autre, si c'est possible. Cela permet de résoudre le problème sans affecter votre production.
+Le service OVHCloud Load Balancer est capable de détecter automatiquement l'absence de réponse d'un serveur. Dans ce cas de figure, il redirige le trafic à destination de ce serveur vers un autre, si c'est possible. Cela permet de résoudre le problème sans affecter votre production.
 
 ![Eliminate downtimes](images/eliminate_downtimes.png){.thumbnail}
 
 #### Faire évoluer facilement votre infrastructure
 
-Il est possible d'ajouter ou retirer une ferme, un front end ou un serveur du service OVH Load Balancer sans interruption de service.
+Il est possible d'ajouter ou retirer une ferme, un front end ou un serveur du service OVHCloud Load Balancer sans interruption de service.
 
 ![Scale your infra easily](images/facilitate_maintenance.png){.thumbnail}
 
@@ -86,7 +86,7 @@ En cas de maintenance planifiée sur votre infrastructure, il est désormais fac
 
 #### Varier les services
 
-Vous pouvez désormais mixer différents services d'OVH dans le Load Balancer, comme par exemple :
+Vous pouvez désormais mixer différents services d'OVHCloud dans le Load Balancer, comme par exemple :
 
 - les instances Public Cloud avec IP fail-over ;
 - les VPS avec IP fail-over ;
@@ -104,7 +104,7 @@ Vous pouvez répartir votre charge sur différentes zones géographiques :
 
 #### Répartir n'importe quel type de trafic
 
-L'OVH Load Balancer n'est plus limité au trafic HTTP ! Vous pouvez maintenant l'utiliser avec toutes sortes de trafics TCP ou UDP.
+L'OVHCloud Load Balancer peut également utilisé avec toutes sortes de trafics HTTP, TCP ou UDP.
 
 
 #### Serveur e-mail
