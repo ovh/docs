@@ -1,7 +1,7 @@
 ---
 title: Quel format de disque choisir
 slug: quel-format-de-disque-choisir
-excerpt: Découvrez les différents types de formats de disque 
+excerpt: Découvrez les différents types de disque 
 legacy_guide_number: '1441955'
 section: Gestion des machines virtuelles
 order: 04
@@ -19,7 +19,7 @@ VMware propose 3 formats de disque pour les machines virtuelles.
 
 ### Thin provisioning
 
-Le *Thin provisioning* est un type de format de disque, faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandissant au fur et à mesure.
+Le *Thin provisioning* est un type de format de disque faisant consommer uniquement l'espace dont il a besoin sur le datastore et grandissant au fur et à mesure.
 
 On peut alors allouer un disque de 1To qui sera reconnu comme 1To par le système d'exploitation de la VM, mais n'occupera sur le datastore que l'espace occupé par le *guest OS* (par exemple 20Go). 
 
@@ -65,9 +65,9 @@ Exemple pour des VMs de 100Go avec un *Guest OS* de 40Go :
 
 ### Format de disque chez OVHcloud
 
-Sur le stockage de type datastore d'une infrastructure Private Cloud, seul le *Thin provisioning* est disponible.
+Dans une infrastructure Hosted Private Cloud, seul le *Thin provisioning* est possible en standard.
 
-Sur le stockage vSan, les 3 types de formats sont possibles.
+Les 3 types de formats sont cependant disponibles sur les stockage vSAN.
 
 ## Aller plus loin
 
