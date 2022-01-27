@@ -13,7 +13,7 @@ order: 4
 
 VMware offers 3 types of disks for virtual machines.
 
-**This guide explains the differences between the availale disk types.**
+**This guide explains the differences between the available disk types.**
 
 ## Instructions
 
@@ -65,9 +65,9 @@ Example summary for 100GB VMs with 40GB *guest OS*:
 
 ### OVHcloud disk types
 
-On the datastore storage of a Hosted Private Cloud infrastructure, only *Thin provisioning* is available.
+In a standard storage Hosted Private Cloud infrastructure, only *Thin provisioning* is possible.
 
-On the vSan storage, all 3 types of disk are possible.
+All 3 types of disk are available on vSAN storage.
 
 ## Go further
 
