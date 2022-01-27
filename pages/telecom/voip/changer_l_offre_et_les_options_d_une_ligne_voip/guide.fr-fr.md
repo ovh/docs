@@ -18,7 +18,7 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 
 ## Prérequis
 
-- Disposer d'une [ligne VoIP](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
+- Disposer de [services VoIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
