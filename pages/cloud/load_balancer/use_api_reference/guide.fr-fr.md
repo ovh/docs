@@ -4,19 +4,19 @@ slug: iplb-api-reference
 excerpt: Description rapide des différentes fonctions de l’API servant à gérer le Load Balancer
 section: Premiers pas
 ---
-
+**Dernière mise à jour le 19/01/2022**
 
 ## Liste des fonctions API
-Cette section décrit brièvement les principales fonctions de l'API pour l'OVH Load Balancer sous /ipLoadbalancing
+Cette section décrit brièvement les principales fonctions de l'API pour l'OVHCloud Load Balancer sous /ipLoadbalancing
 
 
 
 > [!warning]
 >
-> Attention, pour des raisons de compatibilité le point d'entrée de l'ancien système OVH Load Balancer est toujours présent dans l'API /ip/loadBalancing , à ne pas confondre avec le nouveau /ipLoadbalancing.
+> Attention, pour des raisons de compatibilité le point d'entrée de l'ancien système OVHCloud Load Balancer est toujours présent dans l'API /ip/loadBalancing , à ne pas confondre avec le nouveau /ipLoadbalancing.
 > 
 
-Pour une référence complète aux fonctions de l'API du service OVH Load Balancer, [cliquez ici](../api-details/){.ref}
+Pour une référence complète aux fonctions de l'API du service OVHCloud Load Balancer, [cliquez ici](../api-details/){.ref}
 
 
 > [!primary]
