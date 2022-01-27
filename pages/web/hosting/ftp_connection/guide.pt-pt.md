@@ -1,23 +1,23 @@
 ---
 title: 'Aceder ao espaço de armazenamento do alojamento web'
 slug: aceder-espaco-de-armazenamento-ftp-alojamento-web
-excerpt: 'Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVH'
+excerpt: 'Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVHcloud'
 section: 'FTP e SSH'
 order: 1
 ---
 
-**Última atualização: 09/04/2019**
+**Última atualização: 19/01/2022**
 
 ## Sumário
 
-Os planos de alojamento web da OVH dão-lhe acesso a um espaço de armazenamento que permite publicar ficheiros nos seus websites ou aplicações. O acesso a este espaço é possível através de um utilizador FTP ou SSH e das respetivas palavras-passe.
+Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazenamento que permite publicar ficheiros nos seus websites ou aplicações. O acesso a este espaço é possível através de um utilizador FTP ou SSH e das respetivas palavras-passe.
 
-**Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVH.**
+**Saiba como aceder ao espaço de armazenamento do seu alojamento web da OVHcloud.**
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -32,25 +32,25 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 
 > [!primary]
 >
-> Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web e estão acessíveis através da Área de Cliente OVH.
+> Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web e estão acessíveis através da Área de Cliente OVHcloud.
 >
 > **Se já possuir estas informações**, passe diretamente para o passo “[2 - Aceder ao espaço de armazenamento](./#2-aceder-ao-espaco-de-armazenamento)”.
 > 
 
-Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
 Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
 
 ![ftpconnect](images/connect-ftp-step1.png){.thumbnail}
 
-Graças a estas informações, terá a possibilidade de encontrar os elementos necessários para aceder ao seu espaço de armazenamento. Caso seja necessário, consulte a tabela abaixo para saber como identificá-los. Lembre-se de que algumas informações podem não aparecer, dependendo do plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} que possuir.
+Graças a estas informações, terá a possibilidade de encontrar os elementos necessários para aceder ao seu espaço de armazenamento. Caso seja necessário, consulte a tabela abaixo para saber como identificá-los. Lembre-se de que algumas informações podem não aparecer, dependendo do plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} que possuir.
 
-|Informação|Descrição|
-|---|---|
-|Servidor FTP|Trata-se do endereço do servidor que permite aceder ao seu espaço de armazenamento. Utilize-o para aceder ao servidor através de um software FTP.<br><br> A porta clássica de acesso é a 21. Utilize a porta 22 para se ligar através do protocolo SFTP (caso este esteja ativo).|
-|Acesso SSH ao cluster|Poderá consultar os seguintes dados: <br>**- o endereço do servidor**: começa depois de “ssh://” e acaba antes de “:”;<br> **- a porta de ligação**: o número é referido depois de “:”. <br><br>Por exemplo: em ssh://`ssh.cluster023.hosting.ovh.net`:`22`/, “ssh.cluster023.hosting.ovh.net” será o endereço do servidor e “22” a porta de ligação.|
-|Login FTP principal|Trata-se do nome de utilizador FTP principal criado no seu alojamento. Pode consultar todos os utilizadores FTP do seu alojamento na coluna “Login FTP” da tabela.|
-|Login SSH principal|Trata-se do nome de utilizador SSH principal criado no seu alojamento. Pode consultar todos os utilizadores SSH do seu alojamento na coluna “Login SSH” da tabela.|
+- **Servidor FTP e SFTP**: Trata-se do endereço do servidor que permite aceder ao seu espaço de armazenamento utilizando um software FTP através do protocolo FTP ou SFTP.
+
+>A porta clássica de ligação é a porta 21. Utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativado)
+
+- **Servidor SSH**: Trata-se do endereço do servidor que permite aceder ao seu espaço de armazenamento utilizando um terminal através do protocolo SSH.
+- **Login principal**: Trata-se do identificador (S)FTP principal criado no seu alojamento. Pode consultar todos os utilizadores (S)FTP do seu alojamento na coluna "Login" da tabela.
 
 Se não souber qual é a palavra-passe de um utilizador FTP ou SSH, pode, em função do seu alojamento, utilizar o ícone em forma de lápis ou o ícone `...`{.action} e selecionar a opção `Alterar palavra-passe`{.action}. Se precisar de ajuda no processo, consulte o nosso manual "[Alterar a palavra-passe de um utilizador FTP](../alterar-palavra-passe-utilizador-ftp/)".
 
@@ -62,15 +62,15 @@ Depois de completar estes passos, deverá ter à sua disposição os dados neces
 
 A ligação ao espaço de armazenamento pode ser realizada de várias formas. Consulte este manual em função da operação que pretende realizar.
 
-[1. Ligação através de FTP Explorer](./#1-ligacao-atraves-de-ftp-explorer): permite-lhe aceder ao espaço de armazenamento a partir do navegador.
+[1. Ligação através de FTP Explorer](#ftpexplorer): permite-lhe aceder ao espaço de armazenamento a partir do navegador.
 
-[2. Ligação através de um software FTP](./#2-ligacao-atraves-de-um-software-ftp): permite-lhe aceder ao espaço de armazenamento através de um software (tal como FileZilla ou Cyberduck). Deverá instalar com antecedência o software no seu computador.
+[2. Ligação através de um software FTP](#ftpsoftware): permite-lhe aceder ao espaço de armazenamento através de um software (tal como FileZilla ou Cyberduck). Deverá instalar com antecedência o software no seu computador.
 
-[3. Ligação através de um acesso SSH](./#3-ligacao-atraves-de-um-acesso-ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} específico.
+[3. Ligação através de um acesso SSH](#ssh): permite-lhe aceder ao espaço de armazenamento através de um acesso SSH. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específico.
 
-#### 1. Ligação através de FTP Explorer
+#### 1. Ligação através de FTP Explorer <a name="ftpexplorer"></a>
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. 
 
 Aceda ao separador `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}. 
 
@@ -80,7 +80,7 @@ Na nova janela que aparecer, indique o utilizador FTP e a respetiva palavra-pass
 
 ![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
 
-#### 2. Ligação através de um software FTP
+#### 2. Ligação através de um software FTP <a name="ftpsoftware"></a>
 
 Depois de instalar o software FTP à sua escolha (FileZilla ou Cyberduck), inicie-o. 
 
@@ -88,16 +88,16 @@ Indique as credenciais de acesso quando forem solicitadas. Isto dependerá do ti
 
 A seguir, apresentamos a informação que lhe será solicitada:
 
-|Informação solicitada|Detalhes|
-|---|---|
-|Servidor FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “servidor”, “endereço de servidor”, “host”, “nome do host”, etc.|
-|Login FTP|Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento.<br><br> Em função do tipo de software, pode denominar-se “utilizador”, “nome de utilizador”, “identificador”, “login” ou “username”.|
-|Palavra-passe do utilizador FTP|Trata-se da palavra-passe associada ao login FTP.<br><br> Em função do tipo de software, pode denominar-se “palavra-passe” ou “password”.|
-|Porta de ligação|Este campo é preenchido de forma automática pelo software. Se tiver de preencher alguma informação:<br><br>\- utilize a porta 21 para uma ligação através do protocolo FTP;<br>\- utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativo).|
+- **Servidor FTP e SFTP**: Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento. Em função do tipo de software, pode denominar-se “servidor”, “endereço de servidor”, “host”, “nome do host”, etc.
+- **Login principal**: Trata-se do endereço do servidor que lhe permite aceder ao seu espaço de armazenamento. Em função do tipo de software, pode denominar-se “utilizador”, “nome de utilizador”, “identificador”, “login” ou “username”.
+- **Password do utilizador FTP**: Trata-se da palavra-passe associada ao login FTP. Em função do tipo de software, pode denominar-se “palavra-passe” ou “password”.
+- **Porta de ligação**: Este campo é preenchido de forma automática pelo software. Se tiver de preencher alguma informação:
+    - utilize a porta 21 para uma ligação através do protocolo FTP;
+    - utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativado).
 
 Se os dados indicados estiverem corretos, o software deverá mostrar o conteúdo do seu espaço de armazenamento. É possível que apareça uma mensagem (também chamado “status”) a confirmar que o software mostrou o conteúdo.
 
-#### 3. Ligação através de um acesso SSH
+#### 3. Ligação através de um acesso SSH <a name="ssh"></a>
 
 Para estabelecer uma ligação em SSH, utilize um terminal para interagir diretamente com o espaço de armazenamento através de linhas de comando. 
 
