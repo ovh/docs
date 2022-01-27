@@ -84,7 +84,7 @@ Afin d'ajouter une ferme de serveurs il vous suffit de vous rendre dans la parti
 
 
 ### Gérer ses serveurs
-Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs. Ci-essous le détail des options ainsi que des options avancées :
+Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs. Ci-dessous le détail des options ainsi que des options avancées :
 
 
 ![Ajout serveur](images/add_server.png){.thumbnail}
@@ -105,12 +105,12 @@ Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs
 
 
 ### Gérer ses certificats SSL
-Il est possible d'ajouter un SSL au Load Balancer dans la section `Certificat SSL`{.action}. Vous aurez alors deux possibilités : commander un certificat SSL via OVH ou ajouter un certificat externe.
+Il est possible d'ajouter un SSL au Load Balancer dans la section `Certificat SSL`{.action}. Vous aurez alors deux possibilités : commander un certificat SSL via OVHCloud ou ajouter un certificat externe.
 
-#### Certificat SSL OVH
+#### Certificat SSL OVHCloud
 Pour commander un certificat SSL il suffit d'aller dans la section `Certificat SSL`{.action} puis de cliquer sur `Commander un certificat SSL`{.action} et de vous laisser guider :
 
-
+![Commande d'un certificat SSL](images/ordering_ssl-00.png){.thumbnail}
 ![Commande d'un certificat SSL](images/ordering_ssl.png){.thumbnail}
 
 
