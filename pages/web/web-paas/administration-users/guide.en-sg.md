@@ -151,17 +151,3 @@ To change user permissions, follow these steps:
 >> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
 >> 
 >> ```     
-
-### Transfer project ownership
-
-You can transfer your plan ownership to a different organization anytime.
-You have to be an organization owner or an organization user with manage plan permissions.
-
-1\. Make the new organization owner a Project Admin for the project you want to transfer.
-
-2\. Submit a support ticket from your organization account to ask for the transfer.
-
-
-Once the transfer is completed, the new organization can administer all project settings and billing and receives future invoices.
-
-
