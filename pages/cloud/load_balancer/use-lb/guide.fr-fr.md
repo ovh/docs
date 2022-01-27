@@ -110,7 +110,6 @@ Il est possible d'ajouter un SSL au Load Balancer dans la section `Certificat SS
 #### Certificat SSL OVHCloud
 Pour commander un certificat SSL il suffit d'aller dans la section `Certificat SSL`{.action} puis de cliquer sur `Commander un certificat SSL`{.action} et de vous laisser guider :
 
-![Commande d'un certificat SSL](images/ordering_ssl-00.png){.thumbnail}
 ![Commande d'un certificat SSL](images/ordering_ssl.png){.thumbnail}
 
 
@@ -123,7 +122,7 @@ Pour commander un certificat SSL il suffit d'aller dans la section `Certificat S
 #### Ajout d'un certificat SSL externe
 Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'ajouter directement :
 
-
+![Ajout d'un certificat SSL](images/external_ssl-00.png){.thumbnail}
 ![Ajout d'un certificat SSL](images/external_ssl.png){.thumbnail}
 
 
