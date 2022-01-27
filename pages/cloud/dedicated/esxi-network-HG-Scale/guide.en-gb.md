@@ -21,7 +21,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ## Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses
+- a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 - your chosen private IP address range
 - a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
 - a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
@@ -34,7 +34,16 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 > On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
 >
 
+> [!warning]
+>
+> There's currently a known bug with the ESXi graphical user interface and performing these steps in the interface will result in a non-working configuration. It absolutely necessary to apply this configuration using the command line interface in SSH.
+>
+
 ### Failover IP via vRack
+
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `vRack`{.action} menu in the left-hand sidebar.
+
+Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
 #### Original configuration
 
