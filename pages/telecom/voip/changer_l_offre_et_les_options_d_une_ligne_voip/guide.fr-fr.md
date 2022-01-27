@@ -96,7 +96,7 @@ Pour convertir une ligne SIP en numéro alias, sélectionnez la ligne dans votre
 
 ![conversion sip-alias](images/convert-sip-alias.png){.thumbnail}
 
-Prenez connaissances des informations liées à cette conversion et cliquez sur confirmez-la.
+Prenez connaissance des informations liées à cette conversion et confirmez-la.
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
@@ -124,7 +124,8 @@ Vous devez alors:
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez alors y [associer un téléphone Plug & Phone OVHcloud](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel. Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).
+Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
+Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).
 
 ### Résilier une ligne SIP
 
