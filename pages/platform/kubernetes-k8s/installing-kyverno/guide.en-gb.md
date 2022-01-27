@@ -248,8 +248,8 @@ Kyverno is running on your OVHcloud Managed Kubernetes cluster so now you can si
 In this guide we will show you how to create several policies that will:
 
 - deny to deploy resources in the `default` namespace
-- create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno`
-- TODO: une modify policy: sets the **imagePullPolicy** to **IfNotPresent** if the image tag is equals to `latest`
+- create automatically a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno`
+- add automatically a label to Pods, Services, ConfigMaps, and Secrets in a given namespace
 
 ### Policy 1: Disallow deploying deployments in the `default` namespace
 
@@ -260,7 +260,7 @@ So imagine if several diferents teams deploy different applications in the `defa
 
 The policy will validate or not if new resources  can be deployed, so we will create a `validate` policy.
 
-Create a new policy in a `disallow-default-namespace.yaml` file:
+Create a new policy in a `policy-disallow-default-namespace.yaml` file:
 
 ```yaml
 apiVersion: kyverno.io/v1
@@ -323,15 +323,15 @@ spec:
 > The **validationFailureAction** policy attribute controls admission is set to **enforce** to block **resource creation or updates** when the resource are non-compliant. Using the default value **audit** will report violations (in a **PolicyReport** or **ClusterPolicyReport**) but not block requests.
 >
 
-To deploy the Kyverno policy in the cluster, execute the following to apply the YAML file:
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
 
 ```yaml
-kubectl apply -f disallow-default-namespace.yaml
+kubectl apply -f policy-disallow-default-namespace.yaml
 ```
 
 After applying the policy, check if the policy have been correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f disallow-default-namespace.yaml
+<pre class="console"><code>$ kubectl apply -f policy-disallow-default-namespace.yaml
 clusterpolicy.kyverno.io/disallow-default-namespace created
 
 $ kubectl get clusterpolicy
@@ -382,7 +382,7 @@ Perfect, you no longer have the abbility to deploy a Pod/Deployment/ReplicaSet/J
 
 For our second example we want to create a `generate` policy that will create a new ConfigMap called `zk-kafka-address` in all new namespaces excepted `kube-system`, `kube-public` and `kyverno`.
 
-Create a new policy in a `zk-kafka-address.yaml` file:
+Create a new policy in a `policy-generate-cm.yaml` file:
 
 ```yaml
 apiVersion: kyverno.io/v1
@@ -418,15 +418,20 @@ spec:
           KAFKA_ADDRESS: "192.168.10.13:9092,192.168.10.14:9092,192.168.10.15:9092"
 ```
 
-To deploy the Kyverno policy in the cluster, execute the following to apply the YAML file:
+> [!info]
+>
+> When the `synchronize` attribute is set to `true`, modifications will be synchronized to the generated resources. So in our case, if you change the values of `ZK_ADDRESS` and `KAFKA_ADDRESS` for example, all the created ConfigMap will be updated.
+>
+
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
 
 ```yaml
-kubectl apply -f zk-kafka-address.yaml
+kubectl apply -f policy-generate-cm.yaml
 ```
 
 After applying the policy, check if the policy have been correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f zk-kafka-address.yaml
+<pre class="console"><code>$ kubectl apply -f policy-generate-cm.yaml
 clusterpolicy.kyverno.io/zk-kafka-address created
 
 $ kubectl get cpol -A
@@ -473,17 +478,70 @@ test2             kube-root-ca.crt                     1      2m28s
 test2             zk-kafka-address                     2      2m27s
 </code></pre>
 
+As you can see the ConfigMap `zk-kafka-address` have been created in the new `test2` namespace.
 
-### Policy 3: Sets the **imagePullPolicy** to **IfNotPresent** if the image tag is equals to `latest`
+### Policy 3: Add a label `app: my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in a given namespace
 
-The aim of this policy is to modify our resources at the creation in order to add **imagePullPolicy** key with **IfNotPresent** value for all containers of a resource if image tag is equals to `latest`.
+The aim of this policy is to automatically adds a label `app=my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in the namespaces `team-a`.
+
+Create a new policy in a `policy-add-label.yaml` file:
+
+```yaml
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: add-label    
+spec:
+  rules:
+  - name: add-label
+    match:
+      resources:
+        kinds:
+        - Pod
+        - Service
+        - ConfigMap
+        - Secret
+        namespaces:
+        - team-a
+    mutate:
+      patchStrategicMerge:
+        metadata:
+          labels:
+            app: my-awesome-app
+``` 
+
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
+
+```yaml
+kubectl apply -f policy-add-label.yaml
+```
+
+TODO: xxxx
+A continuer !
+
+$ kubectl create ns team-a
+namespace/team-a created
+
+$ kubectl get pod my-pod -n team-a --show-labels
+NAME     READY   STATUS    RESTARTS   AGE   LABELS
+my-pod   1/1     Running   0          29s   app=my-awesome-app
+
+
+TODO: bug??? pas l'impression que ça ait fonctionné ...
+
+$ kubectl apply -f policy-set-image-pull-policy.yaml
+clusterpolicy.kyverno.io/image-pull-policy created
+
+> [!info]
+>
+> Resource `mutation` occurs before `validation`, so the validation rules should not contradict the changes performed by the mutation section.
+>
+
 
 TODO: xxx
 
 
 xx
-
-
 
 
 ### Debugging / validating
@@ -499,7 +557,7 @@ xxxx
 xxxx
 
 <pre class="console"><code>
-$ kyverno validate disallow-default-namespace.yaml
+$ kyverno validate policy-disallow-default-namespace.yaml
 ----------------------------------------------------------------------
 Policy disallow-default-namespace is valid.
 </code></pre>
