@@ -109,4 +109,3 @@ Depending on the PHP version you want to use, the runtime environment may need t
 [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/au/en/hosting/configuring-file-ovhconfig/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-
