@@ -39,11 +39,11 @@ Si les données que vous souhaitez échanger par ce biais ne sont pas confidenti
 
 Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné puis choisissez l'onglet `FTP-SSH`{.action}.
 
-Si vous disposez d'un hébergement [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), cochez la case `Désactivé`{.action} dans la colonne `SFTP`{.action} puis patienter quelques minutes.
+Si vous disposez d'un hébergement [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), cochez la case `Désactivé`{.action} dans la colonne `SFTP`{.action} puis patientez quelques minutes.
 
 Si vous disposez d'un hébergement [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.
 
-Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH sur votre hébergement), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}. Patienter quelques minutes.
+Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH sur votre hébergement), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}. Patientez quelques minutes.
 
 > [!primary]
 >
