@@ -17,10 +17,20 @@ Votre solution CloudDB est liée par défaut au réseau d'hébergements web OVHc
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}(incluse dans une l'offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
+
+### Activation de votre serveur CloudDB inclus avec votre offre d'hébergement web
+
+Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section  `Web Cloud`{.action}, cliquez sur  `Hébergements`{.action} dans la colonne de gauche.
+
+Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
+
+![Informations générales](images/db-activation.png){.thumbnail}
+
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur CloudDB. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
 
 ### Visionner les informations générales de l'instance
 
