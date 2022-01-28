@@ -5,7 +5,7 @@ excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting 
 section: 'FTP and SSH'
 ---
 
-**Last updated 19/01/2022**
+**Last updated 19th January 2022**
 
 ## Objective
 
