@@ -40,13 +40,13 @@ Diese Nachricht im [FileZilla-Programm](https://docs.ovh.com/de/hosting/webhosti
 
 Wenn die Daten, die Sie über diese Verbindung austauschen möchten, nicht vertraulich sind, klicken Sie auf `OK`{.action}.
 
-Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), dann auf `Web Cloud`{.action} und `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und wählen Sie den Tab `FTP-SSH`{.action}.
+Ist das nicht der Fall, gehen Sie in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), dann auf `Web Cloud`{.action} und `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und öffnen Sie den Tab `FTP-SSH`{.action}.
 
-Wenn Sie über ein Hosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen, setzen Sie in der Spalte `SFTP`{.action} den Haken bei der Feld `Deaktiviert`{.action} und warten Sie einige Minuten.
+Wenn Sie über ein Webhosting [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) verfügen, setzen Sie in der Spalte `SFTP`{.action} den Haken bei der Feld `Deaktiviert`{.action} und warten Sie einige Minuten.
 
-Wenn Sie über ein Hosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
+Wenn Sie über ein Webhosting [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) oder [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verfügen, klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem betreffenden FTP-Benutzer und dann auf `Ändern`{.action}.
 
-Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Warten Sie auch ein paar Minuten.
+Wählen Sie `SFTP`{.action} oder `Aktiviert`{.action} aus (um das SSH-Protokoll auf Ihrem Hosting zu aktivieren), klicken Sie auf `Weiter`{.action}, dann auf `Bestätigen`{.action}. Die Umstellung dauert einige Minuten.
 
 > [!primary]
 >
