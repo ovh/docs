@@ -68,7 +68,7 @@ You can also download, import and restore backups in this section.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click `Hosting`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
+Click `Hosting plans`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 
