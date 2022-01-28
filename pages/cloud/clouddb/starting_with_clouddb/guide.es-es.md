@@ -5,7 +5,7 @@ excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 03/07/2018**
+**Última actualización: 28/01/2022**
 
 ## Objetivo
 

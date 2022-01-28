@@ -5,7 +5,7 @@ legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 ---
 
-**Ultimo aggiornamento: 12/07/2018**
+**Ultimo aggiornamento: 28/01/2022**
 
 ## Obiettivo
 

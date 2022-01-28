@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja dnia 2018-05-15**
+**Ostatnia aktualizacja dnia 2022-01-28**
 
 ## Wprowadzenie
 

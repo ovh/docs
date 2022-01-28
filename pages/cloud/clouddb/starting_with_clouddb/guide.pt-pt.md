@@ -6,7 +6,7 @@ legacy_guide_number: 2216
 section: 'Primeiros passos'
 ---
 
-**Última atualização: 28/06/2018**
+**Última atualização: 28/01/2022**
 
 ## Sumário
 

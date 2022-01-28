@@ -9,7 +9,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die CloudDB Lösung verwende
 section: 'Erste Schritte'
 ---
 
-**Stand 07.12.2018**
+**Stand 28.01.2022**
 
 ## Einleitung
 

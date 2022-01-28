@@ -6,7 +6,7 @@ excerpt: 'Ontdek hoe u een goed begin kunt maken met CloudDB'
 section: 'Aan de slag'
 ---
 
-**Laatste update 22-05-2018**
+**Laatste update 28-01-2022**
 
 ## Introductie
 
