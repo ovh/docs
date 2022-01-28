@@ -54,7 +54,6 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 
 Pour créer votre première base de données sur votre instance CloudDB, cliquez sur l'onglet `Bases de données`{.action} puis sur le bouton `Ajouter une base de données`{.action}.
 
-
 ![clouddb](images/clouddb-add-database.png){.thumbnail}
 
 Sur la fenêtre qui s'affiche, et conjointement à la création de la base de données, vous pouvez choisir de créer un utilisateur, ce dernier pourra effectuer des requêtes sur votre base de données (comme la lecture, l'insertion ou la suppression de données).
@@ -142,11 +141,11 @@ Choisissez finalement d'appliquer ou non les options additionnelles décrites ci
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autoriser une adresse IP publique
+### Autoriser une adresse IP 
 
 Afin que l’accès à votre instance CloudDB fonctionne, il est obligatoire d'indiquer les IP ou plages d'IP pouvant se connecter à vos bases de données. Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Ajouter une adresse IP/masque`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous désirez autoriser dans `IP/masque`{.action} puis ajoutez une description si vous le souhaitez. Décidez ensuite si vous voulez donner accès uniquement aux bases de données ou au SFTP. Enfin, cliquez sur `Valider`{.action}.
 
@@ -156,13 +155,13 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 Par défaut, votre solution CloudDB est automatiquement lié aux hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès des hébergements web OVHcloud à votre base de données CloudDB.
 
-Pour cela, cliquez sur l'onglet `IPs autorisées`{.action} puis sur le bouton `Autoriser les hébergements Web OVHcloud à accéder à la base de données`{.action}.
+Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Accès aux hébergements web OVHcloud`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Lier votre site à la base de données
 
-Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP publique ou que les hébergements web OVHcloud on été autorisés sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
+Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP ou que les hébergements web OVHcloud on été autorisés sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
 
 Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive être en possession de ces cinq informations :
 
