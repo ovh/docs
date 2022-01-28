@@ -6,7 +6,7 @@ section: Administratif
 order: 01
 ---
 
-**Dernière mise à jour le 24/01/2022**
+**Dernière mise à jour le 28/01/2022**
 
 ## Objectif
 
@@ -71,10 +71,10 @@ La procédure pour les clients français est à renvoyer par **voie postale** ob
 
 #### Les variantes selon le pays
 
-Les clients OVHcloud belges et suisses peuvent également commander des services VoIP. La procédure et les justificatifs demandés peuvent, pour ces pays, être envoyés par **e-mail** à l'adresse :
+Les clients OVHcloud en Belgique et en Suisse peuvent également commander des services VoIP. La procédure et les justificatifs demandés peuvent, pour ces pays, être envoyés par **e-mail** à l'adresse :
 
--   **procedure-be@ovh.com** pour les procédures belges.
--   **procedure-ch@ovh.com** pour les procédures suisses.
+-   **procedure-be@ovh.com** pour nos clients en Belgique.
+-   **procedure-ch@ovh.com** pour nos clients en Suisse.
 
 Les justificatifs à fournir sont :
 
