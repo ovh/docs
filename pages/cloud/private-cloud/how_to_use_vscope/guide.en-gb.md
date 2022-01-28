@@ -38,29 +38,29 @@ You are now connected to **vScope** an can monitor your resources. For example, 
 
 ![](images/vScope.png){.thumbnail}
 
-Nous allons détailler chaque élément de cette page.
+Here are details on the different elements.
 
-En cas de différents **data-centres** dans un même **Private Cloud**, vous pouvez le choisir dans le menu déroulant. Concernant le **Last refresh** il correspond au dernier rafraîchissement de la **page Web** et non du **vScope** qui lui est mise à jour toutes les **2 à 5 minutes**.
+In cases of multiples **datacenters** inside a single **Private Cloud**, you can select them in the scrolling menu. **Last refresh** is the last **web page** refresh, not the **vScope** on. vScope refreshes every **2 to 5 minutes**.
 
 ![](images/vScope1.png){.thumbnail}
 
-Le menu **Filer** renseigne sur l'utilisation de vos data-stores que ce soit au niveau du nombre de machine virtuelle ainsi que l'espace consommé.
+The **Filer** menu gives an insight on datastore usage in terms of VMs and storage space.
 
 ![](images/vScope2.png){.thumbnail}
 
-En cliquant sur l'icone **Graphs**, vous pouvez obtenir des données **précises** concernant la ressource.
+Clicking on the **Graphs** icon, you can see more details on the chosen resource.
 
 ![](images/vScope7.png){.thumbnail}
 
-Le menu pour les hosts affiche en détail les caractéristiques de chaque host dans votre data-centre (**Cores, vCPUs, VM**) ainsi que leurs pourcentages d'utilisation et enfin la connectivité réseau et le nombre de carte réseau physique (**VMNic**).
+The Hosts menu offers all the characteristics for each host in your datacenter (**Cores, vCPUs, VM**) and the usage percentage as well as network connectivity on all physical network cards (**VMNic**).
 
 ![](images/vScope4.png){.thumbnail}
 
-Voici la page qui détaille précisément la ressource. Vous avez également accès à un historique d’utilisation sur un jour, une semaine, un mois ou même un an.
+The detailed view also shows historical data over a day, week, month or year as needed.
 
 ![](images/vScope8.png){.thumbnail}
 
-Voici la dernière catégorie qui détaille l'utilisation de chaque **machine virtuelle** dans votre data-centre avec en partie les informations suivantes :
+The last Voici la dernière catégorie qui détaille l'utilisation de chaque **machine virtuelle** dans votre data-centre avec en partie les informations suivantes :
 
 - Etat des VMtools
 - Trafic réseau
