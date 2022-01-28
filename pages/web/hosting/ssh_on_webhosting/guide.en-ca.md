@@ -5,7 +5,7 @@ excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting 
 section: 'FTP and SSH'
 ---
 
-**Last updated 19/01/2022**
+**Last updated 19th January 2022**
 
 ## Objective
 
@@ -109,4 +109,3 @@ Depending on the PHP version you want to use, the runtime environment may need t
 [Configuring the .ovhconfig file of your Web Hosting plan](https://docs.ovh.com/ca/en/hosting/configuring-file-ovhconfig/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-
