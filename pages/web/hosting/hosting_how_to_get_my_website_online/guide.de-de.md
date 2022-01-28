@@ -9,7 +9,7 @@ order: 2
 
 **Letzte Aktualisierung am 19.01.2022**
 
-## Einleitung
+## Ziel
 
 Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
 
@@ -22,7 +22,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Ihr Projekt definieren
 
@@ -112,7 +112,7 @@ Wenn Sie eine bereits bestehende Website migrieren, erhalten Sie die Datenbankda
 
 Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot oder einer [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/){.external} oder [Cloud DB](https://www.ovh.de/cloud/cloud-databases/){.external} Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
 
-Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, loggen Sie sich im [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Wenn Sie eine neue Datenbank bei OVHcloud erstellen möchten, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie nun auf den Button `Datenbank erstellen`{.action} oder, wenn der Button nicht angezeigt wird, auf `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}. Folgen Sie nun den angezeigten Informationen.
 
