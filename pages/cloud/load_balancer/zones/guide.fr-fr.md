@@ -29,11 +29,24 @@ Dans la suite de ce document, nous allons voir 2 cas d’usages distincts.
 
 ### Depuis le manager
 
-####  ajouter une zone
+####  Commander une zone supplémentaire 
 
 Il est possible de commande une zone supplémentaire depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
 
 ![Configurer le load balancer depuis le manager](images/Manager-ipLBalancer.PNG){.thumbnail}
+
+Sélectionnez votre Load Balancer, dans `Accueil`{.action} puis dans la partie `Configuration`{.action}, cliquez sur `Ajouter`{.action}
+
+![Ajouter une zone load balancer depuis le manager](images/add_Zone_IPLB){.thumbnail}
+
+ Vous aurez alors accès à la fénétre suivante pour choisir le(s) zonne(s) que souhaitez commander.
+ 
+ ![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB){.thumbnail}
+
+
+####  ajouter une zone
+
+Une fois que votre Zone commander vous pouvez l'jouter depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.
