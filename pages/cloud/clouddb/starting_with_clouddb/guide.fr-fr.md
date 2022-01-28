@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 13/12/2021**
+**Dernière mise à jour le 28/01/2022**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Votre solution CloudDB est liée par défaut au réseau d'hébergements web OVHc
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}(incluse dans une l'offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/).
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une l'offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
