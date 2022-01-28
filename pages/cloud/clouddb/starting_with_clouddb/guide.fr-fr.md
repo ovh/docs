@@ -10,8 +10,8 @@ order: 1
 
 ## Objectif
 
-La solution CloudDB permet de bénéficier d’une instance de bases de données, dont les ressources sont dédiées et garanties vous offrant performances et de flexibilité.
-Votre solution CloudDB est liée par défaut au réseau d'hébergements web OVHcloud. Il est possible de lier celle-ci sur n'importe quel autre réseau, à travers une liste d'adresses IP autorisées.
+La solution CloudDB permet de bénéficier d’une instance de bases de données dont les ressources sont dédiées et garanties, vous offrant performances et flexibilité.
+Par défaut, votre solution CloudDB est liée au réseau d'hébergements web OVHcloud. Vous pouvez aussi la lier à n'importe quel autre réseau, via une liste d'adresses IP autorisées.
 
 **Découvrez comment bien débuter avec la solution CloudDB.**
 
