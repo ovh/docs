@@ -70,7 +70,7 @@ Existen varias formas de conectarse al espacio de almacenamiento. Continúe leye
 
 #### 2.1. Conexión mediante un explorador FTP <a name="ftpexplorer"></a>
 
-Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
+Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
 
 Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}. 
 
