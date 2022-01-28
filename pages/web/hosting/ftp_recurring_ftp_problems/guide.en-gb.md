@@ -42,7 +42,7 @@ If you have a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-off
 
 If you have a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) Web hosting plan, click on the `...`{.action} to the right of the FTP user concerned, then on `Edit`{.action}.
 
-Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click `Confirm`{.action}. Wait a few minutes.
+Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click on `Confirm`{.action}. Wait a few minutes.
 
 > [!primary]
 >
