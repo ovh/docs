@@ -40,9 +40,9 @@ Visualizzi le informazioni associate allo spazio di storage. le informazioni di 
 
 Una volta recuperati tutti gli elementi, il recupero dei tuoi file sullo spazio di storage può essere effettuato in due modi diversi:
 
-- **utilizzare un software compatibile con il protocollo FTP o SFTP**\: dovrai installare sul tuo computer un software compatibile, come [FileZilla ](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
+- **utilizzare un software compatibile con il protocollo FTP o SFTP**: dovrai installare sul tuo computer un software compatibile, come [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/). Se hai bisogno di aiuto per utilizzarlo, contatta il produttore del software installato:
 
-- **accesso SSH**\: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/){.external}. 
+- **accesso SSH**: questa opzione prevede l’utilizzo di comandi da un terminale per interagire con lo spazio di storage.  Per utilizzare questo tipo di accesso sono necessarie conoscenze avanzate e un'[offerta di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica. Per maggiori informazioni, consulta la guida ["Utilizzare l'accesso SSH di un hosting Web"](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/){.external}. 
 
 #### 1.2 Scarica i file dal tuo spazio di storage.
 
