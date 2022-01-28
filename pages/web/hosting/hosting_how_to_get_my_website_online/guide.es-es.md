@@ -19,7 +19,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
