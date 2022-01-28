@@ -36,7 +36,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 > [!warning]
 >
-> There's currently a known bug with the ESXi graphical user interface and performing these steps in the interface will result in a non-working configuration. It absolutely necessary to apply this configuration using the command line interface in SSH.
+> There's currently a known issue with the ESXi graphical user interface and performing these steps in the interface will result in a non-working configuration. It is absolutely necessary to apply this configuration using the command line interface in SSH.
 >
 
 ### Failover IP via vRack
