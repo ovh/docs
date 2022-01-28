@@ -3,7 +3,8 @@ title: 'Crear, lanzar y eliminar imágenes en Horizon'
 excerpt: 'Crear, lanzar y eliminar imágenes en Horizon'
 slug: crear_lanzar_y_eliminar_imagenes_en_horizon
 legacy_guide_number: g1784
-section: Horizon
+section: Gestión desde Horizon
+order: 7
 ---
 
 > [!primary]
