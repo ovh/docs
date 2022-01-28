@@ -60,18 +60,18 @@ The detailed view also shows historical data over a day, week, month or year as 
 
 ![](images/vScope8.png){.thumbnail}
 
-The last Voici la dernière catégorie qui détaille l'utilisation de chaque **machine virtuelle** dans votre data-centre avec en partie les informations suivantes :
+The last section details each VM's usage with the following data :
 
-- Etat des VMtools
-- Trafic réseau
-- Taille de la VM
-- Activation FT (Fault Tolerance)
+- VMtools state
+- Network traffic
+- VM size
+- FT (Fault Tolerance) activation state
 - CPU Ready Time
 - Disk IO
 - Disk Latency
 
 ![](images/vScope6.png){.thumbnail}
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
