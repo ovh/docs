@@ -50,7 +50,7 @@ Per prima cosa verifica la sicurezza della tua postazione Windows, Mac o Linux:
 
 ### Step 2: proteggi il tuo Spazio Cliente OVHcloud
 
-Per rendere sicuro il tuo account cliente, [attiva la doppia autenticazione](../../customer/proteggi_il_tuo_account_con_2FA/) e segui le istruzioni di questa [guida](.../../customer/tutto_sullidentificativo_cliente_ovh/).
+Per rendere sicuro il tuo account cliente, [attiva la doppia autenticazione](../../customer/proteggi_il_tuo_account_con_2FA/) e segui le istruzioni di questa [guida](../../customer/tutto_sullidentificativo_cliente_ovh/).
 
 In particolare, aggiorna le [informazioni del tuo account cliente](../../customer/tutto_sullidentificativo_cliente_ovh/#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
 In caso di perdita delle credenziali e/o indisponibilità dell'indirizzo email principale dell'account cliente OVHcloud, per aiutarti a trovare il tuo servizio è necessario un'email di recupero o informazioni personali aggiornate.
@@ -71,7 +71,7 @@ Consulta i forum ufficiali del tuo CMS preferito o contatta la [community OVHclo
 
 ### Step 4: come riconoscere le email fraudolente
 
-Le email di phishing rappresentano una minaccia per la sicurezza del tuo sito, in quanto possono contenere o far funzionare software malevoli. Per saperne di più su come riconoscerli e prevenirli, consulta questa [guida](../customer/truffe-frode-phishing/).
+Le email di phishing rappresentano una minaccia per la sicurezza del tuo sito, in quanto possono contenere o far funzionare software malevoli. Per saperne di più su come riconoscerli e prevenirli, consulta questa [guida](../../customer/truffe-frode-phishing/).
 
 ### Step 5: attiva il rinnovo automatico
 

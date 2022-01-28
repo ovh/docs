@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 slug: vrack-pci-ds
-excerpt: 'This guide will show you how to configure private networking between a Public Cloud instance and a Dedicated Server.'
+excerpt: 'Find out how to configure private networking between a Public Cloud instance and a Dedicated Server'
 section: 'Network Management'
 ---
 
@@ -11,16 +11,16 @@ section: 'Network Management'
 
 The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-au/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-au/public-cloud/) to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/au/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance/) and a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/).**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) and a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/).**
 
 
 ## Requirements
 
-* an [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
-* a [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
-* a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-* a private IP address range of your choice
+- An [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
+- A [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
+- A [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A private IP address range of your choice
 
 
 ## Instructions

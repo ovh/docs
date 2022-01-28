@@ -85,4 +85,4 @@ Per verificare che la configurazione del record CNAME sia stata eseguita corrett
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

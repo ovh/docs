@@ -16,8 +16,8 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with Windows installed in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with Windows installed in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions

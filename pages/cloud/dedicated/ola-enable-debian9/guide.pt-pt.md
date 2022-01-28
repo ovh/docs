@@ -2,7 +2,7 @@
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9'
 slug: ola-debian9
 excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Debian 9'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 order: 2
 ---
 
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

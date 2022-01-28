@@ -28,7 +28,7 @@ You want to migrate your email addresses on an Exchange platform to another Exch
 
 - a "**source**" platform with configured [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} accounts
 - a "**destination**" platform with [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} or MX Plan accounts (via the MX Plan solution or included in [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external}). This platform must have unconfigured accounts or be available to host the email accounts that need to be migrated.
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -72,7 +72,19 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 
 #### Step 3: Migrate
 
-Migrate the source email account to your new platform's account using our [OMM tool](https://omm.ovh.net/) (OVH Mail Migrator).
+> [!warning]
+>
+> Only the data of your email accounts will be migrated (emails, contacts, calendars, inbox rules, etc.). The features linked to your platform will need to be recreated on the new platform:
+>
+> - [Alias](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/email-alias/)
+> - [Delegated rights](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_2013_how_to_grant_full_access_permissions_for_an_account/)
+> - [Groups](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists/)
+> - External contacts
+> - [Footer](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange_20132016_how_to_create_an_automatic_signature/)
+
+Migrate the source email account to your new platform account using our [OMM](https://omm.ovh.net/) tool (OVH Mail Migrator).
+
+> If you need to migrate several email accounts, we recommend using the [Project](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/#carrying-out-and-tracking-a-multiple-migration-project-mode) mode via [OMM](https://omm.ovh.net/Project/Create). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
 For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/).
 
@@ -94,7 +106,7 @@ To do this, select the Exchange service concerned in the services bar on the lef
 
 > [!primary]
 >
-> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> If you have just migrated or modified a DNS record for your domain, it may take a few hours to be updated when you go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 >
 
 To modify the configuration, click on the red box and carry out the requested operation. It can take between 4 and a maximum of 24 hours for DNS changes to propagate fully.

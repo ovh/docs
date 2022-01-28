@@ -22,6 +22,11 @@ Lors de la création d’une instance, il n’est pas possible de configurer une
 
 ## Instructions
 
+> [!primary]
+>
+Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+>
+
 ### Créer la clé SSH
 
 Suivez d’abord notre guide « [Créer votre première clé SSH](../creation-des-cles-ssh/){.external} ».

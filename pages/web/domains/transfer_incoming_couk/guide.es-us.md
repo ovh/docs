@@ -1,28 +1,39 @@
 ---
-title: 'Web hosting: Transferencia de un dominio .CO.UK'
-excerpt: 'Web hosting: Transferencia de un dominio .CO.UK'
+title: 'Transferir un dominio .uk a OVHcloud'
+legacy_guide_number: 2026
 slug: web_hosting_transferencia_de_un_dominio_couk
-legacy_guide_number: g2026
+excerpt: 'En esta guía encontrará información relativa a la transferencia de un dominio .uk o asociado a OVHcloud'
 section: Operaciones en los dominios
+order: 4
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 22/06/2020**
+
+## Objetivo
+
+La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento específico.
+
+**Cómo transferir un dominio .uk (o asimilado) a OVHcloud**
+
+> [!warning]
+>
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
+>
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+>
 
 ## Requisitos
-Para transferir un dominio con la extensión .CO.UK o similar a OVHcloud, asegúrese de que cumple con los siguientes requisitos obligatorios: 
 
-
-- El dominio no debe estar en periodo de redención o de eliminación. 
-- Su dominio no debe estar bloqueado en su agente registrador. 
-- La información de contacto debe estar actualizada en el [Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl) del dominio. 
-
-
-Si no sabe o no recuerda cuál es su actual agente registrador, consulte el [Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl) del dominio.
-
-![transfer-couk](images/img_3485.jpg){.thumbnail}
-
+- El dominio no debe estar en período de redención o de eliminación.
+- El dominio no debe ser bloqueado en su registrador.
+- Los datos del propietario deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/){.external} del dominio.
+- Deberá obtener el código de autorización que se enviará a la dirección de correo electrónico del propietario.
 
 ## Extensiones afectadas
-
 - .co.uk
 - .me.uk
 - .org.uk
@@ -30,63 +41,49 @@ Si no sabe o no recuerda cuál es su actual agente registrador, consulte el [Who
 - .plc.uk
 - .uk.
 
+## Procedimiento
 
+### Procedimiento de transferencia
 
+#### Etapa 1: Modificación del TAG del dominio
 
-## 1. Modificación del TAG de su dominio
-Para poder transferir su dominio a OVHcloud, no necesita generar ninguna orden de pedido, ya que la transferencia es gratis y se gestiona mediante un sistema de TAG. 
+Para poder transferir su dominio a OVHcloud, es necesario indicar previamente el TAG de OVHcloud a su registrador actual. El TAG de OVHcloud es "OVH-FR". La lista de TAGS de los diferentes registradores está disponible en el sitio oficial del Registro [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
+> [!primary]
+>
+> Si no consigue cambiar el Tag del dominio a través de
+> su actual agente registrador, puede enviar una solicitud al Registro.
+> Nombre para que este último realice los cambios.
+> Por favor, vuelva a esta página del sitio web del Registro: "Manage your domain - Change registrar".
+> Atención: Esta operación es facturada por Nominet.
+>
 
-- Indique, en primer lugar, el TAG de OVHcloud en su agente registrador actual. El TAG de OVHcloud es «OVH-FR». 
+#### Etapa 2: Obtener el código de autorización de transferencia
 
+Una vez que haya modificado el TAG, el propietario del dominio recibirá al cabo de unos minutos un código de autorización (código auténtico) por correo electrónico. Dicho registro, válido durante 5 días, permitirá realizar el pedido (gratuito) del dominio en OVHcloud.
 
-Puede acceder a la lista de los diferentes agentes registradores en la página oficial del Registro [Nominet](http://www.nominet.uk/registrar-list).
-Si no puede modificar el TAG de su dominio en su agente registrador actual, puede realizar una solicitud en el Registro Nominet para que este último realice el cambio en su lugar. 
+#### Etapa 3: Solicitar la transferencia gratuita
 
-Acceda a la siguiente página del Registro: [Manage your domain - Change registrar](http://www.nominet.org.uk/uk-domain-names/manage-your-domain/change-registrar).
+Una vez que disponga del código de autorización, puede consultar e iniciar el pedido de transferencia del dominio en el sitio web de OVHcloud. El pedido es similar al de cualquier otro dominio genérico.
 
-Atención: Nominet le aplicará la tarifa correspondiente por realizar esta operación.
+El dominio aparecerá en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en unas horas.
 
+### Información útil
 
-## 2. Transferencia del dominio a OVHcloud
-Una vez modificado el TAG, el dominio se transferirá automáticamente a OVHcloud en las próximas horas.
+#### Transferencia de un dominio en .uk (o asimilado)
 
+El traslado es gratuito.
 
-## 3. Validación de los contactos
-A continuación, el propietario del dominio recibirá un correo electrónico en la dirección indicada en el Whois de este. 
+#### Validez del código de autorización
 
-Recibirá un formulario en el que deberá indicar los contactos que desea para este dominio en modo normal o experto. 
+El código de autorización se genera automáticamente al modificar el TAG. Si el pedido no se realiza en un plazo de 5 días, la transferencia se anulará ante el Registro.
 
-Modo normal:
+#### Renovación del dominio tras una transferencia
 
-- Indique el NIC Handle que será el contacto administrador, técnico y de facturación de este dominio. 
-- Marque las casillas para autorizar la transferencia y valide la operación.
+La transferencia es gratuita, por lo que la fecha de expiración del dominio tras su transferencia será la misma que antes de su transferencia. Para renovarlo tras la transferencia, acceda a la [web de OVHcloud](https://www.ovh.co.uk/cgi-bin/order/renew.cgi).
 
+## Más información <a name="gofurther"></a>
 
+[Transferir un dominio a OVHcloud](https://docs.ovh.com/us/es/domains/transferir-un-dominio-generico/)
 
-![](images/img_3487.jpg){.thumbnail}
-Modo experto:
-
-- Indique los distintos NIC Handle que serán el contacto administrador, técnico y de facturación de este dominio. 
-- Marque las casillas para autorizar la transferencia y valide la operación.
-
-
-
-![](images/img_3486.jpg){.thumbnail}
-
-
-## 4. Fin de la operación
-En unas horas, podrá acceder a su dominio directamente en su área de cliente.
-
-
-## Coste de la transferencia de un dominio en .CO.UK o similar
-La transferencia es gratis.
-
-
-## Duración de la transferencia de un dominio en CO.UK o similar
-Si acepta el correo electrónico que recibe el propietario, la transferencia se realizará en menos de 24 horas.
-
-
-## Renovación del dominio tras una transferencia
-La transferencia es una operación gratuita. Así pues, la fecha de caducidad del dominio tras su transferencia será la misma que antes de la transferencia.
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.

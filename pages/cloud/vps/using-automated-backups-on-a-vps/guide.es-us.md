@@ -104,6 +104,10 @@ $ mount /dev/sdb1 /mnt/restore
 
 Ahora, puede cambiar a esta carpeta y acceder a los datos de su copia de seguridad.
 
+> [!warning]
+> Tenga en cuenta que se reiniciará el servidor al desmontar la copia de seguridad.
+>
+
 ### Buenas prácticas para utilizar la copia de seguridad automática
 
 La función de backup automático está basada en los snapshots VPS. Le recomendamos que siga los pasos que se indican a continuación para evitar cualquier anomalía antes de utilizar esta opción.

@@ -18,9 +18,9 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- administrative access (root) via SSH or remote desktop (Windows) to your server
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
 ## Instructions

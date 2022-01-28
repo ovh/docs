@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 1st July 2019**
+**Last updated 22nd December 2021**
 
 ## Objective
 
@@ -24,7 +24,7 @@ With the OpenStack API, you can automate your management by generating scripts. 
 
 ### On Debian
 
-Open the terminal, and connect to the environment you want to prepare via SSH.
+Open the terminal and connect to the environment you want to prepare via SSH.
 
 Update the packet cache using the `apt-get update` command:
 
@@ -32,10 +32,16 @@ Update the packet cache using the `apt-get update` command:
 apt-get update
 ```
 
-Use the command below to install the Nova client (compute application), Glance (image service) and Swift:
+Use the command below to install the Nova client (compute application) and Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Version
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -54,7 +60,7 @@ nova help
 
 ### On CentOS
 
-Open the terminal, and connect to the environment you want to prepare via SSH.
+Open the terminal and connect to the environment you want to prepare via SSH.
 
 Update the packet cache using the following command:
 
@@ -144,6 +150,39 @@ If the operation is completed properly, you will see a summary:
 You can check the installation version in the CMD (command line) window that has just opened, by entering ‘python-V’ from any system location.
 
 ![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### On MacOS
+
+You can use [HomeBrew](https://brew.sh), a package manager for MacOS.
+
+Open the terminal and execute the following command:
+
+```bash
+brew install openstackclient
+```
+
+Use the command below to install the Nova client (compute application) and Swift:
+
+For Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+For Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+To access the help tools, run the following command:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Go further
 

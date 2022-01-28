@@ -2,7 +2,7 @@
 title: 'Atualizar a firewall CISCO ASA'
 excerpt: 'Saiba como atualizar a firewall CISCO ASA'
 slug: atualizar-firewall-cisco-asa
-section: 'Uso avançado'
+section: 'Utilização avançada'
 ---
 
 > [!primary]

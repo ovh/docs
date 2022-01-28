@@ -343,4 +343,4 @@ Si su SMS tiene carácter publicitario, solo puede enviarlo de 8:00 a 20:00 de l
 
 En la consola de la API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) podrá descubrir otras llamadas que le permitirán integrar servicios SMS, tales como permitir la respuesta a los SMS (solo para las cuentas de OVHcloud Francia), envío masivo con un archivo CSV, envío de publicidad, seguimiento de los acuses de recibo...
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://community.ovh.com).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

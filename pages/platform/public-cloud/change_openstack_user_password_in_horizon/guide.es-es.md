@@ -2,7 +2,8 @@
 title: 'Cambiar la contraseña de un usuario de OpenStack en Horizon'
 slug: cambiar-la-contrasena-de-usuario-openstack
 excerpt: 'Cómo cambiar una contraseña de usuario en Horizon'
-section: Horizon
+section: Gestión desde Horizon
+order: 3
 ---
 
 **Última actualización: 13/06/2018**
@@ -55,4 +56,4 @@ Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se canc
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

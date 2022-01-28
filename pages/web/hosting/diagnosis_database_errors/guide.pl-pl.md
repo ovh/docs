@@ -126,7 +126,7 @@ Jeśli korzystasz z oferty **Performance**, sprawdź [metoda 2](#methode2).
 Możesz również przenieść dane na nową bazę:
 
 - Zamów w razie potrzeby [bazę danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) o wyższej wielkości, a następnie uruchom [kreacja](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/);
-- Wykonaj [eksport swoich danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), następnie [je importować](https://docs.ovh.com/pl/hosting/hosting-guide-import-bazy-danych-mysql/) w nowej bazie;
+- Wykonaj [eksport swoich danych](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/), następnie [je importować](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/) w nowej bazie;
 - Wprowadź dane dostępowe nowej bazy danych do [pliku konfiguracyjnego](#config_file) swojej strony.
 
 > [!primary]

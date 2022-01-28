@@ -163,13 +163,13 @@ Delete the key which corresponds to the user having their access revoked from yo
 
 The OVHcloud Control Panel allows you to store public keys created using one of the supported encryption types (currently RSA, ECDSA, ED25519). 
 
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Select "Dedicated" from the drop-down menu.
 

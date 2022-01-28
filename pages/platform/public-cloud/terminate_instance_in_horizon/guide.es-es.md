@@ -3,7 +3,7 @@ title: Terminar una instancia
 excerpt: Cómo terminar una instancia en Horizon.
 slug: terminar_una_instancia
 legacy_guide_number: g1783
-section: Gestión de las instancias en Horizon
+section: Gestión desde Horizon
 ---
 
 

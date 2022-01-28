@@ -3,14 +3,19 @@ title: 'Activating Windows Machines using Hyper-V on an OVHcloud licensed Window
 excerpt: 'Find out how to create and activate a VM using Hyper-V on a Windows Server licensed by OVHcloud'
 slug: activate-windows-vm-hyperv
 section: 'Tutorial'
-hidden: true
 ---
 
-**Last updated 22nd August 2021**
+**Last updated 6th January 2022**
 
 ## Objective
 
-**This guide provides some basic information on creating virtual machines within Hyper-V on a Windows Server licensed with OVHcloud.**
+**This tutorial provides some basic information on creating virtual machines within Hyper-V on a Windows Server licensed with OVHcloud.**
+
+> [!warning]
+> This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. You may need to adapt the instructions according to your situation.
+>
+> If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community. You can find more information in the [Go further](#gofurther) section of this tutorial.
+>
 
 ## Requirements
 
@@ -20,13 +25,12 @@ hidden: true
 
 ## Instructions
 
-This guide assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
+This tutorial assumes that you have already installed the Hyper-V role and have access to the Hyper-V Manager. If you have not done this, you can refer to Microsoft's guide to installing the Hyper-V role [here](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server){.external}
 
 
-### Creating a NAT Network: 
+### Creating a NAT Network
 
-First of all, Windows Server will request the activation of the guest OS through NAT (unless you had a SPLA license to be attached with a specific
-KMS). Open up a PowerShell session as an administrator. We will create it with the following command:
+First of all, Windows Server will request the activation of the guest OS through NAT (unless you had a SPLA license to be attached with a specific KMS). Open up a PowerShell session as an administrator. We will create it with the following command:
 
 ```sh
 PS C:\Windows\system32> New-VMSwitch -SwitchName "NAT" -SwitchType Internal
@@ -34,6 +38,7 @@ Name SwitchType NetAdapterInterfaceDescription
 ---- ---------- ------------------------------
 NAT Internal
 ```
+
 After that, confirm the adaptor has been successfully created with:
 
 ```sh
@@ -70,7 +75,7 @@ D0-50-99-D7-2C-8A      10 Gbps
 In our case, we see our "NAT" adapter ID is 24.
 
 
-Next, Let's create a NAT network that will allow our VM to connect the internet; we will be able to see the information of it once it's been executed:
+Next, Let's create a NAT network that will allow our VM to connect to the internet; we will be able to see the information of it once it's been executed:
 
 ```sh
 PS C:\Windows\system32> New-NetIPAddress -IPAddress 192.168.0.1 -PrefixLength 24 -InterfaceIndex 24
@@ -102,6 +107,7 @@ PreferredLifetime : Infinite ([TimeSpan]::MaxValue)
 SkipAsSource : False
 PolicyStore : PersistentStore
 ```
+
 > [!primary]
 > 
 > Note: The IPAddress value will be the internal gateway IP for our VM to be configured; it will connect the WinNAT service inside the host to
@@ -129,17 +135,16 @@ Active : True
 
 > [!primary]
 > 
-> The Name parameter will define the name of this network, aswell as the InternalIPInterfaceAddressPrefix parameter will connect to the network desired; in our case, the network is the one created before:
+> The Name parameter will define the name of this network, as well as the InternalIPInterfaceAddressPrefix parameter will connect to the network desired; in our case, the network is the one created before:
+>
 > - 192.168.0.0 is the network IP
 > - 192.168.0.1 is the gateway for your virtual machines
-> - 192.168.0.1 - 192.168.0.254 will be used as IPs for your virtual machines
+> - 192.168.0.2 - 192.168.0.254 will be used as IPs for your virtual machines
 >
 
-### Activating the VM:
+### Activating the VM
 
-At this point, the network will be correctly set for this validation. Create a new Windows Server 2019 Standard VM (We have used the evaluation .
-ISO downloadable from the official Microsoft website). Once installed, configure your virtual machine with an IP of the range configured on the
-virtual switch (for example: 192.168.0.2/24):
+At this point, the network will be correctly set for this validation. Create a new Windows Server 2019 Standard VM (We have used the evaluation ISO downloadable from the official Microsoft website). Once installed, configure your virtual machine with an IP of the range configured on the virtual switch (for example: 192.168.0.2/24):
 
 ![VM Configuration](images/vm-conf.png){.thumbnail}
 
@@ -152,13 +157,24 @@ C:\Users\Administrator> DISM.exe /Online /Set-Edition:ServerStandard /ProductKey
 
 > [!primary]
 > 
-> This license (N69G4-B89J2-4G8F4-WWYCC-J464C) belongs to our current KMS validation license repository for Windows Server 2019 Standard. You can grab each of our current license keys from the following guide: [Changing a Windows
-Server product key](../windows-key)
+> This license (N69G4-B89J2-4G8F4-WWYCC-J464C) belongs to our current KMS validation license repository for Windows Server 2019 Standard. You can grab each of our current license keys from the following guide: [Changing a Windows Server product key](../windows-key)
 >
 
-Reboot your VM, and then just update your KMS and launch its activation; your guest Windows OS will be activated.
+Reboot your VM, then do the following to set the KMS server and activate Windows.
 
+Setting the KMS server
 
+```sh
+cscript.exe c:\windows\system32\slmgr.vbs -skms kms.ovh.net 
+```
+
+Activating Windows
+
+```sh
+cscript.exe c:\windows\system32\slmgr.vbs -ato
+```
+
+Your VM should now be activated.
 
 ## Go further
 

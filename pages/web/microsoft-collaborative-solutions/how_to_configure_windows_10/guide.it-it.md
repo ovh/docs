@@ -70,4 +70,4 @@ OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](
 
 [Configurare un account Email Pro con l’applicazione Posta per Windows 10](https://docs.ovh.com/gb/en/emails-pro/mail-configuration-windows-10//){.external} (in inglese)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

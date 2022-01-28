@@ -134,4 +134,4 @@ Reinicie el servidor para que se apliquen los cambios realizados.
 
 [Configurar el vRack entre la solución Public Cloud y un servidor dedicado](https://docs.ovh.com/es/dedicated/configurar-vrack-entre-public-cloud-servidor-dedicado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -6,11 +6,12 @@ section: 'Réseau & IP'
 order: 7
 ---
 
-**Dernière mise à jour le 07/10/2021**
+**Dernière mise à jour le 09/12/2021**
 
 ## Objectif
 
 Les IP fail-over peuvent être déplacées entres les services que vous utilisez. L'intérêt est de ne pas perdre votre réputation, votre référencement et d'améliorer la continuité de service de vos applications et systèmes.
+
 Cette technologie vous permet d’échanger les adresses IP d'une solution à l'autre en moins d'une minute, pratiquement sans aucune interruption pour vos utilisateurs. Elle peut être utilisée lors des migrations de services (déplacement des projets de l'environnement de développement à celui de production, par exemple) ou lors du basculement vers un serveur de secours en cas de défaillance.
 
 > [!primary]
@@ -25,6 +26,12 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
 - Disposer d'une [adresse IP Fail Over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/).
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+
+> [!warning]
+> Si l'adresse IP Fail Over, ou une des adresses IP du bloc, a une MAC virtuelle affectée, le serveur cible doit supporter la fonctionnalité des MAC virtuelles.
+> Consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/network-support-virtual-mac/) afin de le déterminer.
+>
+> Dans le cas contraire, les MAC virtuelles doivent être supprimées des IP Fail Over avant le déplacement.
 
 ## En pratique
 

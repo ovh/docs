@@ -145,4 +145,4 @@ Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es-es/web-h
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

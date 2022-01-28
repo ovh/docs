@@ -2,10 +2,10 @@
 title: 'Przygotowanie środowiska do korzystania z API OpenStack'
 excerpt: 'Zainstaluj środowisko OpenStack, aby monitorować Twoje instancje za pośrednictwem API'
 slug: przygotowanie_srodowiska_dla_api_openstack
-section: "Zarządzanie w OpenStack\_CLI"
+section: Zarządzanie w OpenStack CLI
 ---
 
-**Ostatnia aktualizacja z dnia 08-02-2019**
+**Ostatnia aktualizacja z dnia 22/12/2021**
 
 ## Wprowadzenie
 
@@ -31,10 +31,16 @@ Zaktualizuj cache pakietów, używając polecenia `apt-get update`:
 apt-get update
 ```
 
-Użyj poniższego polecenia do instalacji klientów Nova (aplikacja obliczeniowa), Glance (usługa obrazów) i Swift:
+Użyj poniższego polecenia do instalacji klientów Nova (aplikacja obliczeniowa) i Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Wersja
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Po zakończeniu tego etapu zalecamy utworzenie oddzielnego użytkownika zamiast korzystania z użytkownika root.
@@ -143,6 +149,39 @@ Jeśli operacja została przeprowadzona poprawnie, wyświetli się podsumowanie
 Możesz sprawdzić wersję instalacyjną w nowo otwartym oknie CMD (wiersz poleceń), wprowadzając „python-V” z dowolnego miejsca w systemie.
 
 ![Weryfikacja](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### MacOS
+
+Możesz użyć [HomeBrew](https://brew.sh), menedżera pakietów dla MacOS.
+
+Otwórz terminal i wpisz następujące polecenie:
+
+```bash
+brew install openstackclient
+```
+
+Użyj poniższych poleceń, aby zainstalować klienta Nova (aplikacja obliczeniowa) i Swift:
+
+Python2 :
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Python3 :
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Aby uzyskać dostęp do narzędzi pomocowych, wprowadź następującą komendę:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Sprawdź również
 

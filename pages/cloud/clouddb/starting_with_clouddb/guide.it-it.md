@@ -7,6 +7,10 @@ excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 
 **Ultimo aggiornamento: 28/01/2022**
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 ## Obiettivo
 
 La soluzione CloudDB permette di usufruire di un'istanza di database, le cui risorse sono dedicate e garantite che ti offrono prestazioni e flessibilità.
@@ -154,7 +158,7 @@ A questo punto scegli se applicare o meno le seguenti opzioni aggiuntive, poi cl
 
 ![Clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autorizza un indirizzo IP
+### Autorizza un indirizzo IP <a name="trustip"></a>
 
 Affinché l’accesso alla tua istanza CloudDB funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
 
@@ -193,6 +197,30 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 
 ![Clouddb](images/clouddb-login-information.png){.thumbnail}
 
+### Recupera i log del tuo server CloudDB
+
+Per verificare gli ultimi log del tuo database, accedi alla scheda `Logs`{.action} del tuo server CloudDB. Questa scheda mostra in tempo reale gli alert e gli errori.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Per recuperare tutti i log del tuo server CloudDB, accedi via SFTP a quest'ultimo.
+
+> [!warning]
+>
+> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server CloudDB, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
+
+Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server CloudDB. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Accedi tramite un client FTP (FileZilla, Cyberduck, WinSCP, ecc...).
+
+Per FileZilla, nel menu `File`{.action}, vai al `Gestionale di siti`{.action}. Clicca su `Nuovo sito`{.action} e inserisci le impostazioni rilevate precedentemente.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+Il file di log, chiamato `stdout.log`, si trova alla radice.
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

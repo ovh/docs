@@ -113,4 +113,4 @@ Dopo aver modificato la password, potrai effettuare la connessione al tuo accoun
 
 Per saperne di più sulle misure di sicurezza delle password, consulta [questa pagina](https://www.commissariatodips.it/area-riservata/scelta-password.html){.external}. 
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

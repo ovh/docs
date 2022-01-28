@@ -33,7 +33,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 - Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die [Login-Daten](../verbindung-ftp-speicher-webhosting/#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
-- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
+- Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
 
 ## In der praktischen Anwendung
 
@@ -51,9 +51,9 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 
 ### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
 
-Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](.../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
+Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](../../customer/Account-mit-2FA-absichern/) und folgen Sie den Anweisungen in dieser [Anleitung](../../customer/alles_uber_ihre_ovh_kundenkennung/).
 
-Denken Sie daran, [Ihre Account-Informationen](../../customer/customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
+Denken Sie daran, [Ihre Account-Informationen](../../customer/alles_uber_ihre_ovh_kundenkennung/#personliche-daten-im-account-verwalten_1) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
 ### Schritt 3: Führen Sie regelmäßig Sicherungen Ihrer Seite durch <a name="backup"></a>

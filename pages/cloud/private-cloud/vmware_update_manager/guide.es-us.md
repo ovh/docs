@@ -10,7 +10,7 @@ order: 09
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 23/11/2021**
+**Última actualización: 09/12/2021**
 
 ## Objetivo
 
@@ -86,7 +86,19 @@ El resumen de conformidad se actualizará a continuación.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Vuelva a la sección `Attached Baselines`, seleccione todas las líneas de base y haga clic en `Remediate`{.action}.
+Vuelva a la sección `Attached Baselines`, seleccione todas las líneas de base y haga clic en `Stage`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Seleccione el host y vuelva a hacer clic en `Stage`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+La transferencia se inicia y durará en función del número y el tamaño de los parches.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+En la sección `Attached Baselines`, seleccione todas las líneas de base asignadas y haga clic en `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 

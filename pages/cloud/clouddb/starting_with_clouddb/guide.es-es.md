@@ -7,6 +7,10 @@ section: 'Primeros pasos'
 
 **Última actualización: 28/01/2022**
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 La solución Cloud Databases permite disfrutar de una instancia de bases de datos, con recursos dedicados y garantizados que ofrecen rendimiento y flexibilidad.
@@ -153,7 +157,7 @@ Por último, seleccione las opciones adicionales que quiera que se apliquen y ha
 
 ![Cloud Databases](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autorizar una dirección IP
+### Autorizar una dirección IP <a name="trustip"></a>
 
 Para que sea posible acceder a la instancia Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos. Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
@@ -192,6 +196,30 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
 ![Cloud Databases](images/clouddb-login-information.png){.thumbnail}
 
+### Obtener los logs de su servidor CloudDB
+
+Para comprobar los últimos logs de la base de datos, acceda a la pestaña `Logs`{.action} del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
+
+![clouddb](images/clouddb-log01.png) {.thumbnail}
+
+Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP a este último.
+
+> [!warning]
+>
+> Antes de conectarse, compruebe que la dirección IP del equipo que utilice esté autorizada en su servidor Cloud Databases, con la opción `SFTP` marcada. Para más información, consulte la sección [Autorizar la conexión a un alojamiento web de OVHcloud](#trustip) de esta guía.
+
+Puede consultar la información de conexión SFTP en la pestaña `Información general`{.action} de su servidor Cloud Databases. Si no conoce la `Contraseña del servidor`, haga clic en el botón `...`{.action} a la derecha para modificarlo.
+
+![clouddb](images/clouddb-log02.png) {.thumbnail}
+
+Conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+En FileZilla, acceda al menú `Archivo`{.action} y acceda al menú `Gestor de sitios`{.action}". Haga clic en `Nuevo sitio`{.action} e introduzca los parámetros anteriores.
+
+![clouddb](images/clouddb-log03.png) {.thumbnail}
+
+El archivo de logs, llamado `stdout.log`, se encuentra en la raíz.
+
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

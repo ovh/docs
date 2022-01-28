@@ -70,4 +70,4 @@ Para los amantes de la tecnología, lamentamos informarles de que en los último
 
 [Configurar el archivo .ovhconfig de un alojamiento web](https://docs.ovh.com/es/hosting/configurar-archivo-ovhconfig/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

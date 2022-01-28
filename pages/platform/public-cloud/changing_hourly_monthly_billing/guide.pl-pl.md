@@ -5,7 +5,7 @@ slug: zmiana-typu-rozliczenia
 section: 'Zarządzanie projektami'
 ---
 
-**Ostatnia aktualizacja: 06-12-2019**
+**Ostatnia aktualizacja: 21-09-2021**
 
 ## Wprowadzenie
 

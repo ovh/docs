@@ -156,4 +156,4 @@ In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consig
 
 [Modificare la password di un utente FTP ](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

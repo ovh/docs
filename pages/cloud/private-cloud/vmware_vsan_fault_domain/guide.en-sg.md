@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage vSAN fault domains'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 18th January 2021**
+**Last updated 23rd December 2021**
 
 ## Objective
 
@@ -13,9 +13,9 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 
 ## Requirements
 
-- a [Hosted Private Cloud solution](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/)
-- access to your vSphere [HTML client](../login-vsphere-interface/)
-- a vSAN cluster with at least 3 hosts
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
+- A deployed [vSan Datastore](https://docs.ovh.com/sg/en/private-cloud/vmware-vsan/)
 
 ## Instructions
 

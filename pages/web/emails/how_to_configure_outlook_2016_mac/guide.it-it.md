@@ -86,4 +86,4 @@ OVH propone un’applicazione Web con [funzionalità collaborative](https://www.
 
 [Configurare un account Exchange su Outlook 2016 per Mac](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-exchange-outlook-2016-mac/){.external}.
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

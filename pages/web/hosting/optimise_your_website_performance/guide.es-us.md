@@ -45,7 +45,7 @@ El uso de un sistema de gestión de contenidos (CMS) como WordPress, PrestaShop,
 Los navegadores de internet deben cargar y leer todos esos elementos.
 Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](https://www.ovhcloud.com/es/web-hosting/){.external}.
 
-Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovhcloud.com/es/web-hosting/que_hosting_elegir.xml){.external}.
+Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovhcloud.com/es/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Paso 2: comprobar la versión del lenguaje PHP

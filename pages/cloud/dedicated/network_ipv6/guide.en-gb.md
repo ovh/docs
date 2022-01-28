@@ -29,6 +29,7 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 
 If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
 
+If you want to have more than one IPv6 configured on your server (or want to use it on a VM) you will need to have a failover IP configured with a vMAC. Otherwise, the IPv6 cannot be routed by our routers/switches.
 
 > [!primary]
 >

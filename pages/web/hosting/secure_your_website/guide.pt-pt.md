@@ -71,7 +71,7 @@ Consulte os fóruns oficiais do seu CMS preferido ou contacte a [comunidade OVHc
 
 ### Etapa 4: saiba como reconhecer os e-mails fraudulentos
 
-Os e-mails de phishing também constituem uma ameaça para a segurança do seu site, pois podem conter ou levar à instalação de softwares maliciosos. Para saber como reconhecê-los e protegê-los, consulte este [guia](../customer/fraudes-online-phishing/).
+Os e-mails de phishing também constituem uma ameaça para a segurança do seu site, pois podem conter ou levar à instalação de softwares maliciosos. Para saber como reconhecê-los e protegê-los, consulte este [guia](../../customer/fraudes-online-phishing/).
 
 ### Etapa 5: implementar a renovação automática
 

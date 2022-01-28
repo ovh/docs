@@ -31,7 +31,7 @@ Dans ce tutoriel, nous allons installer ownCloud sur une nouvelle installation d
 Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 * [Guide pour la création d'une Instance de Public Cloud](../create_an_instance_in_your_ovh_customer_account)
-* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](https://docs.ovh.com/fr/storage/pcs/create-container/)
+* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](https://docs.ovh.com/ca/fr/storage/pcs/creation-de-conteneur/)
 * [Guide de création et de configuration d'un disque supplémentaire sur une Instance de Public Cloud ](../configurer-un-volume-additionnel/)
 
 
@@ -221,7 +221,7 @@ En savoir plus sur [les disques supplémentaires du Public Cloud](https://www.ov
 >
 
 #### Étape 1: Créer et connecter le disque à votre instance Public Cloud
-Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Créez un disque supplémentaire sur Public Cloud](../creer-disque-supplementaire-attacher-instance){.external}.
+Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Créez un disque supplémentaire sur Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/){.external}.
 
 #### Étape 2: Configurer le disque supplémentaire
 Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Configurez un disque supplémentaire sur Public Cloud](../configurer-un-volume-additionnel/#depuis-une-instance-sous-linux){.external}.

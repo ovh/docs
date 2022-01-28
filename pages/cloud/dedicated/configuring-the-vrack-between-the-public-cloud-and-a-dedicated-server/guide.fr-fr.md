@@ -59,7 +59,7 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d’une nouvelle instance
 
-Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-3-creer-une-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
 
 #### Cas d’une instance déjà existante
 

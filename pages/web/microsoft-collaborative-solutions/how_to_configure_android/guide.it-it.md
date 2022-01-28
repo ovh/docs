@@ -74,4 +74,4 @@ OVH ti propone un'applicazione Web che dispone di [funzionalità collaborative](
 
 [Configurare un indirizzo email su Android tramite l’applicazione Gmail](https://docs.ovh.com/it/emails/configurazione-android-6/){.external}.
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

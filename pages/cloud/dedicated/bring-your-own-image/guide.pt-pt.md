@@ -2,7 +2,7 @@
 title: Como usar a funcionalidade Bring Your Own Image
 excerpt: Saiba como implementar imagens graças à funcionalidade Bring Your Own Image
 slug: bringyourownimage
-section: Uso avançado
+section: Utilização avançada
 ---
 
 **Última atualização: 29/03/2021**
