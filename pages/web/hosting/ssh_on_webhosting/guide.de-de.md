@@ -38,10 +38,10 @@ Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutz
 
 Um sich via SSH mit Ihrem Speicherplatz zu verbinden, finden Sie die notwendigen Elemente im Tab `FTP - SSH`{.action}:
 
-- **SSH-Benutzer aktiv**: Bitte überprüfen Sie dies in der Spalte "**Login**"der Tabelle. Denken Sie daran, dass dieser Benutzer [über einen aktiven SSH-Zugang verfügen](#sshcheck) muss.
+- **SSH-Benutzer aktiv**: Überprüfen Sie dies in der Spalte "**Login**"der Tabelle. Denken Sie daran, dass dieser Benutzer [über einen aktiven SSH-Zugang verfügen](#sshcheck) muss.
 - **SSH-Benutzerpasswort**: Wenn Sie dieses Passwort vergessen haben, können Sie es ändern, indem Sie auf den Button `...`{.action} und dann auf `Passwort ändern`{.action} klicken.
-- **SSH-Server**: Bitte überprüfen Sie den Vermerk "**SSH-Server**".
-- **Verbindungsport zum SSH Server**: Die Angabe "**SSH Port**"
+- **SSH-Server**: Sie finden diese Angabe unter "**SSH-Server**".
+- **Verbindungsport des SSH-Servers**: Sie finden diese Angabe unter "**SSH Port**"
 
 ### Schritt 3: Via SSH in den Speicherplatz einloggen
 
@@ -74,7 +74,7 @@ Wenn Sie die Anwendung (zum Beispiel PuTTY) geöffnet haben, geben Sie die SSH-V
 
 - **SSH-Server**: Geben Sie die [in Schritt 2](#sshlogin) erhaltene SSH-Serveradresse ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Serveradresse“, „Host“. „Hostname“ etc.
 - **Verbindungsport**: Geben Sie den [in Schritt 2](#sshlogin) erhaltenen Verbindungsport ein.
-- **Login SSH**: Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.
+- **SSH-Login**: Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.
 - **SSH-Benutzerpasswort**: Geben Sie das Passwort des SSH-Benutzers ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen wie „Passwort“ oder „Kennwort“ möglich.
 
 Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt übergehen.
