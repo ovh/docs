@@ -159,7 +159,7 @@ Escolha aplicar ou não as opções adicionais descritas abaixo e clique em `Con
 
 De modo que o acesso à sua instância CloudDB funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados. Para isso, clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![clouddb](clouddb-add-ip-2022.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 

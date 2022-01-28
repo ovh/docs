@@ -162,7 +162,7 @@ Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. 
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-![clouddb](clouddb-add-ip-2022.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 

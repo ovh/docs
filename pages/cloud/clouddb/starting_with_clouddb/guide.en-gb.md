@@ -157,7 +157,7 @@ Finally, choose whether or not the additional options set out below should apply
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
-![clouddb](clouddb-add-ip-2022.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 In the window that pops up, enter the IP address or mask that you wish to authorise in `IP/mask`{.action} together with a description if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
@@ -167,7 +167,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 By default, your CloudDB solution is automatically linked to OVHcloud web hosting plans. However, you can disable access to your CloudDB database for OVHcloud web hosting plans if you wish.
 
-To do this, click on the tab `authorised IPs`{.action} then on the button `Access to OVHcloud web hosting plans`{.action}.
+To do this, click on the `authorised IPs`{.action} tab then on the `Access to OVHcloud web hosting plans`{.action} button.
 
 ![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 

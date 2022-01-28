@@ -157,7 +157,7 @@ Por último, seleccione las opciones adicionales que quiera que se apliquen y ha
 
 Para que sea posible acceder a la instancia Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos. Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
-![Cloud Databases](clouddb-add-ip-2022.png){.thumbnail}
+![Cloud Databases](images/clouddb-add-ip-2022.png){.thumbnail}
 
 En la nueva ventana, indique en **IP/máscara** la dirección IP o la máscara de red que quiera autorizar y, si lo desea, añada una descripción. Indique si quiere autorizar el acceso únicamente a las bases de datos o también al SFTP. Para terminar, haga clic en `Aceptar`{.action}.
 

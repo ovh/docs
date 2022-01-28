@@ -17,14 +17,14 @@ Par défaut, votre solution CloudDB est liée au réseau d'hébergements web OVH
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une l'offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 ### Activation de votre serveur CloudDB inclus avec votre offre d'hébergement web
 
-Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section  `Web Cloud`{.action}, cliquez sur  `Hébergements`{.action} dans la colonne de gauche.
+Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche.
 
 Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
 
@@ -163,7 +163,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 ### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
 
-Par défaut, votre solution CloudDB est automatiquement lié aux hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès des hébergements web OVHcloud à votre base de données CloudDB.
+Par défaut, votre solution CloudDB est automatiquement liée aux hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès des hébergements web OVHcloud à votre base de données CloudDB.
 
 Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Accès aux hébergements web OVHcloud`{.action}.
 

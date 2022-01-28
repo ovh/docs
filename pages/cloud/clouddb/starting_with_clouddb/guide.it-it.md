@@ -158,7 +158,7 @@ A questo punto scegli se applicare o meno le seguenti opzioni aggiuntive, poi cl
 
 Affinché l’accesso alla tua istanza CloudDB funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
 
-![Clouddb](clouddb-add-ip-2022.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `IP/mask`{.action} e poi, se vuoi, aggiungi una descrizione. Decidi se vuoi fornire un accesso soltanto ai database o anche via SFTP. Infine clicca su `Conferma`{.action}.
 
