@@ -21,14 +21,14 @@ Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification 
 
 ## Prérequis
 
-* Un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} créé dans votre compte OVHcloudcloud.
-* Être connecté à votre [espace client OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+* Un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} créé dans votre compte OVHcloud.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-Si vous souhaitez stocker une clé SSH dans l'espace client OVHcloudcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+Si vous souhaitez stocker une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
 >
 
 ### Création d'une clé SSH sous Linux et Mac
@@ -110,9 +110,9 @@ Lorsque vous déplacez votre souris, la barre de progression commence à se remp
 
 ![Générer la clé](images/puttygen-03.png){.thumbnail}
 
-### Importez votre clé SSH dans l’Espace client OVHcloudcloud
+### Importez votre clé SSH dans l’Espace client OVHcloud
 
-Tout d’abord, sélectionnez et copiez le texte de votre clé publique, puis connectez-vous à votre [Espace client d’OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+Tout d’abord, sélectionnez et copiez le texte de votre clé publique, puis connectez-vous à votre [Espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 Cliquez ensuite sur le menu `Public Cloud`{.action}.
 
@@ -126,7 +126,7 @@ Maintenant, sélectionnez l'onglet `Clés SSH`{.action}. Ensuite, collez la clé
 
 ![enregistrer la clé SSH](images/save-key.png){.thumbnail}
 
-Votre clé va maintenant être enregistrée dans l’Espace client OVHcloudcloud pour l'authentification.
+Votre clé va maintenant être enregistrée dans l’Espace client OVHcloud pour l'authentification.
 
 ## Aller plus loin
 

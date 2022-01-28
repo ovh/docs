@@ -1,7 +1,7 @@
 ---
 title: 'Conectarse al espacio de almacenamiento de un alojamiento web'
 slug: conexion-espacio-almacenamiento-ftp-alojamiento-web
-excerpt: 'Cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloudcloud'
+excerpt: 'Cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud'
 section: 'FTP y SSH'
 order: 1
 ---
@@ -10,14 +10,14 @@ order: 1
 
 ## Objetivo
 
-Los planes de hosting de OVHcloudcloud permiten disponer de un espacio de almacenamiento en el que publicar los archivos de sus sitios web o aplicaciones. Para acceder a este espacio de almacenamiento, es necesario tener un usuario FTP o SSH y las contraseñas asociadas.
+Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamiento en el que publicar los archivos de sus sitios web o aplicaciones. Para acceder a este espacio de almacenamiento, es necesario tener un usuario FTP o SSH y las contraseñas asociadas.
 
-**Esta guía explica cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloudcloud.**
+**Esta guía explica cómo conectarse al espacio de almacenamiento de un alojamiento web de OVHcloud.**
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloudcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
-- Estar conectado al [área de cliente de OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
@@ -32,18 +32,18 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 
 > [!primary]
 >
-> Estos datos se indican en el mensaje de correo electrónico que se envía para notificar la instalación del alojamiento, y puede consultarlos desde el área de cliente de OVHcloudcloud.
+> Estos datos se indican en el mensaje de correo electrónico que se envía para notificar la instalación del alojamiento, y puede consultarlos desde el área de cliente de OVHcloud.
 >
 > Si ya dispone de ellos, vaya directamente al apartado [Acceder al espacio de almacenamiento](./#2-acceder-al-espacio-de-almacenamiento).
 > 
 
-Si no dispone de esta información, conéctese al [área de cliente de OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
 ![Conexión FTP](images/connect-ftp-step1.png){.thumbnail}
 
-Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloudcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado.
+Entre esa información se encuentran los datos necesarios para conectarse a su espacio de almacenamiento. Si necesita ayuda para identificarlos, consulte la tabla de abajo. Tenga en cuenta que algunos datos podrían no aparecer en función del [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} contratado.
 
 - **Servidor FTP y SFTP**: Es la dirección del servidor que permite acceder al espacio de almacenamiento utilizando un programa FTP a través del protocolo FTP o SFTP.
 
@@ -66,11 +66,11 @@ Existen varias formas de conectarse al espacio de almacenamiento. Continúe leye
 
 [2.2. Conexión mediante un cliente FTP](#ftpsoftware): Le permite acceder al espacio de almacenamiento mediante un programa como FileZilla o Cyberduck. Debe tener el programa previamente instalado en su ordenador.
 
-[2.3. Conexión mediante un acceso SSH](#ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloudcloud](https://www.ovhcloud.com/es/web-hosting/){.external} son compatibles.
+[2.3. Conexión mediante un acceso SSH](#ssh): Le permite acceder al espacio de almacenamiento mediante un acceso SSH. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} son compatibles.
 
 #### 2.1. Conexión mediante un explorador FTP <a name="ftpexplorer"></a>
 
-Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
+Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
 
 Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}. 
 
