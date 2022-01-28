@@ -4,6 +4,7 @@ slug: iplb-balancing
 excerpt: Découvrez les différents modes de répartition de charge de l'OVHCloud Load Balancer
 section: Configuration
 ---
+**Dernière mise à jour le 20/01/2021**
 
 ## Objectif
 
@@ -13,7 +14,8 @@ Le service OVHCloud Load Balancer offre différents types de répartition de cha
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Posséder une ferme de serveurs créée.
 
 
