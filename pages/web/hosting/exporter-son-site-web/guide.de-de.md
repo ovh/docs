@@ -65,7 +65,7 @@ Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer An
 
 Wenn Sie den Protokollverlauf Ihrer Webseite aufbewahren möchten, haben Sie die Möglichkeit, die Logs im OVHcloud Kundencenter herunterzuladen.
 
-Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie das entsprechende Produkt aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Klicken Sie anschließend auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
+Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 
