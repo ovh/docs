@@ -6,7 +6,7 @@ section: 'FTP et SSH'
 order: 1
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
@@ -37,7 +37,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 > **Si vous êtes déjà en possession de ces derniers**, poursuivez directement vers l'étape 2 « [Accéder à votre espace de stockage](./#etape-2-acceder-a-votre-espace-de-stockage) ».
 > 
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 Les informations liées à votre espace de stockage apparaissent alors, ainsi qu'un tableau listant les utilisateurs FTP et SSH créés sur votre hébergement.
 
@@ -62,13 +62,13 @@ Si vous ne connaissez plus le mot de passe d'un utilisateur FTP ou SSH, selon vo
 
 La connexion à l’espace de stockage peut s’effectuer de plusieurs manières. Poursuivez la lecture de cette documentation selon celle que vous souhaitez utiliser.
 
-[1. Connexion via le FTP Explorer](./#1-connexion-via-le-ftp-explorer) : vous permet d’accéder à votre espace de stockage depuis votre navigateur internet.
+- [1. Connexion via le FTP Explorer](#ftpexplorer) : vous permet d’accéder à votre espace de stockage depuis votre navigateur internet.
 
-[2. Connexion via un logiciel FTP](./#2-connexion-via-un-logiciel-ftp) : vous permet d'accéder à votre espace de stockage via un logiciel (comme FileZilla ou Cyberduck). Vous devrez au préalable installer le logiciel choisi sur votre ordinateur.
+- [2. Connexion via un logiciel FTP](#ftpsoftware): vous permet d'accéder à votre espace de stockage via un logiciel (comme FileZilla ou Cyberduck). Vous devrez au préalable installer le logiciel choisi sur votre ordinateur.
 
-[3. Connexion via un accès SSH](./#3-connexion-en-ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- [3. Connexion via un accès SSH](#ssh) : vous permet d'accéder à votre espace de stockage via un accès SSH. Des connaissances plus avancées, ainsi qu'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
-#### 1. Connexion via le FTP Explorer
+#### 1. Connexion via le FTP Explorer <a name="ftpexplorer"></a>
 
 Pour vous connecter à votre espace de stockage via le FTP Explorer, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie « Web », cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. 
 
@@ -80,7 +80,7 @@ Sur la nouvelle page qui apparaît, renseignez l'identifiant FTP ainsi que son m
 
 ![ftpconnect](images/connect-ftp-step4.png){.thumbnail}
 
-#### 2. Connexion via un logiciel FTP
+#### 2. Connexion via un logiciel FTP <a name="ftpsoftware"></a>
 
 Après avoir installé au préalable le logiciel FTP de votre choix sur votre ordinateur (comme FileZilla ou Cyberduck), démarrez-le. 
 
@@ -88,16 +88,16 @@ Vous devriez trouver un endroit où renseigner les informations de connexion. Ce
 
 Si besoin, voici un rappel des informations que vous devrez y renseigner :
 
-|Information à renseigner|Détails|
-|---|---|
-|Serveur FTP|Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».|
-|Login FTP|Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».|
-|Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
-|Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
+- **Serveur FTP et SFTP**: Il s'agit de l'adresse de serveur vous permettant d'accéder à votre espace de stockage. Selon le logiciel utilisé, la dénomination peut ressembler à : « Serveur », « Adresse de serveur », « Hôte », « Nom d'hôte », ou encore « Host ».
+- **Login principal**: Il s'agit de l'identifiant vous permettant d'accéder à votre espace de stockage. Selon le logiciel utilisé, la dénomination peut ressembler à : « Utilisateur », « Nom d'utilisateur », « Identifiant », « Login », ou encore « Username ».
+- **Mot de passe de l'utilisateur FTP**: Il s'agit du mot de passe associé au login FTP. Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».
+- **Port de connexion** : Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :
+    - utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;
+    - utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).
 
 Si les informations sont correctes, le logiciel que vous utilisez devrait afficher le contenu de votre espace de stockage. Un message (appelé aussi « status ») peut apparaître afin de confirmer que le contenu a bien été listé avec succès par votre logiciel.
 
-#### 3. Connexion en SSH
+#### 3. Connexion en SSH <a name="ssh"></a>
 
 Pour vous connecter en SSH, utilisez un terminal afin d’interagir directement avec votre espace de stockage via des lignes de commande. 
 

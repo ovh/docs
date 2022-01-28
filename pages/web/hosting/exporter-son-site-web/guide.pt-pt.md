@@ -6,7 +6,7 @@ section: Introdução
 order: 2
 ---
 
-**Última atualização: 14/01/2020**
+**Última atualização: 19/01/2022**
 
 ## Sumário
 
@@ -69,13 +69,9 @@ Se utiliza uma base de dados **SQL privado** para o seu website, consulte a sec�
 
 Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
 
-Depois, clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique no separador `Mais +`{.action} e em `Estatísticas e logs`{.action}.
+Depois, clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}. A seguir, clique na ligação sob a menção `Ver logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-A seguir, clique na ligação debaixo da menção **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classificados por mês:
 

@@ -17,7 +17,7 @@ Los servidores de bases de datos SQL Privado y Cloud Databases le ofrecen la pos
 ## Requisitos
 
 - Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
@@ -57,7 +57,7 @@ En la nueva ventana, indique en `IP/máscara`{.action} la dirección IP o la má
 
 Para un alojamiento web de OVHcloud, debe autorizar la dirección IP "puerta de enlace" (gateway) de este último. 
 
-Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
+Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
 
 Encontrará la mención **"Servidor FTP"**, que le indicará el número de cluster en el que está, como se indica a continuación.
 
@@ -73,7 +73,7 @@ Una vez que haya obtenido el número del cluster en el que está situado el aloj
 
 ### Cambiar la oferta del servidor de bases de datos
 
-Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
+Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
 En la pestaña **"Información general"** que se muestra por defecto, haga clic en `...`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}

@@ -8,7 +8,7 @@ legacy_guide_number: g1962
 ---
 
 
-**Ultimo aggiornamento: 04/08/2020**
+**Ultimo aggiornamento: 19/01/2022**
 
 ## Obiettivo
 
@@ -24,36 +24,32 @@ Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storag
 
 ## Procedura
 
-### Step 1: verifica che l’accesso SSH sia attivo
+### Step 1: verifica che l’accesso SSH sia attivo <a name="sshcheck"></a>
 
 Per prima cosa, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}, quindi clicca su `hosting`{.action} nella barra delle applicazioni a sinistra. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. Visualizzi le informazioni associate allo spazio di storage. 
 
-Nella tabella, individua la colonna “SSH” e verifica che l’utente SSH (o “Login SSH”) interessato, disponga di un accesso SSH attivo. In caso contrario visualizzi la voce ”Disattivato”.
+Nella tabella, individua la colonna “SSH” e verifica che l’utente SSH (o “Login”) interessato, disponga di un accesso SSH attivo. In caso contrario visualizzi la voce ”Disattivato”.
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
 Se l’accesso SSH non è attivo, clicca sul pulsante `(...)`{.action} in corrispondenza dell’account interessato e seleziona `Modifica`{.action}. Quindi, nella nuova finestra, attiva l’accesso SSH e poi conferma la modifica. Se non hai la possibilità di attivarlo, assicurati che la tua [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) disponga di un accesso SSH.
 
-### Step 2: recupera i dati necessari a effettuare l’accesso
+### Step 2: recupera i dati necessari a effettuare l’accesso <a name="sshlogin"></a>
 
-Per accedere in SSH allo spazio di storage sono necessarie le seguenti informazioni, disponibili nella scheda `FTP - SSH`{.action}.
+Per connetterti in SSH al tuo spazio di storage, ritrova gli elementi necessari nella scheda `FTP - SSH`{.action}:
 
-|Elemento|Dove trovarlo?|
-|---|---|
-|Utente SSH attivo|Puoi visualizzarlo nella colonna “Login SSH” della tabella. Ricorda: questo utente deve [disporre di un accesso SSH attivo](./#step-1-verifica-che-laccesso-ssh-sia-attivo).|
-|Password dell’utente SSH|Se hai dimenticato la password, è possibile modificarla cliccando sul pulsante `(...)`{.action}, e poi su `Modifica la password`{.action}.|
-|Indirizzo del server SSH|Individua la voce “Accesso SSH al cluster”. L’indirizzo del server SSH comincia dopo “ssh://” e termina prima dei due punti  (”:”).|
-|Porta di connessione al server SSH|Individua la voce “Accesso SSH al cluster”. Il numero della porta è indicato dopo i due punti (“:”).|
-
-Ad esempio :`ssh://ssh.cluster023.hosting.ovh.net:22/` Quindi “ssh.cluster023.hosting.ovh.net” come indirizzo del server SSH e “22” per la porta di connessione SSH.
-
-![usessh](images/use-ssh-step2.png){.thumbnail}
+- **Utente SSH attivo**: Lo trovi nella colonna "**Login**" della tabella. Ricorda: questo utente deve [disporre di un accesso SSH attivo](#sshcheck).
+- **Password dell'utente SSH**: Se hai dimenticato la password, è possibile modificarla cliccando sul pulsante `(...)`{.action}, e poi su `Modifica la password`{.action}.
+- **Indirizzo del server SSH**: Clicca sulla voce "**Server SSH**".
+- **Porta di connessione al server SSH**: contrassegna la voce "**Porta SSH**"
 
 ### Step 3: accedi in SSH allo spazio di storage
 
 Per connetterti in SSH, utilizza un terminale per interagire con lo spazio di storage direttamente da riga di comando. 
 
-Su macOS, Linux et Windows 10 questo tool è installato di default. Sugli ambienti Windows meno recenti è invece necessario installare un software come PuTTY o aggiungere la funzionalità “OpenSSH”. La procedura da seguire varia in base al sistema operativo installato e non è quindi possibile fornirne i dettagli in questa guida.
+> [!primary]
+>
+> Su macOS, Linux et Windows 10 questo tool è installato di default. Sugli ambienti Windows meno recenti è invece necessario installare un software come PuTTY o aggiungere la funzionalità “OpenSSH”.
 
 A seconda del metodo che utilizzi, hai due possibilità per accedere:
 
@@ -62,10 +58,10 @@ A seconda del metodo che utilizzi, hai due possibilità per accedere:
 > [!warning]
 > Le nostre soluzioni condivise non dispongono dell’accesso “super utente” (o “root”) in SSH.
 
-Una volta aperto il terminale, utilizza il comando seguente sostituendo gli elementi “sshlogin”,”sshsrver” e “connectionport” con le tue credenziali SSH. 
+Una volta avviato il terminale, esegui questo comando sostituendo gli elementi "yourlogin", "ssh.cluster00.hosting.ovh.net" e "22" con quelli corrispondenti ai tuoi identificativi SSH. 
 
 ```ssh
-ssh sshlogin@sshserver -p connectionport
+ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
 Una volta eseguito il comando, il sistema chiederà di inserire la password dell’utente SSH. Una volta connesso, passa allo step successivo “[Interagire in SSH con lo spazio di storage](./#step-4-interagire-in-ssh-con-lo-spazio-di-storage_1)”.
@@ -76,12 +72,10 @@ Una volta eseguito il comando, il sistema chiederà di inserire la password dell
 
 Una volta aperto il client (PuTTY ad esempio), inserisci le informazioni di connessione SSH. Questa operazione varia in base al client che utilizzi, pertanto non possiamo entrare in ulteriori dettagli in questa guida. Ti ricordiamo le informazioni da inserire:
 
-|Informazione|Descrizione|
-|---|---|
-|Server SSH|Indica l’indirizzo del server SSH recuperato [allo Step 2](./#step-2-recupera-i-dati-necessari-a-effettuare-laccesso). In base al client utilizzato, potrebbe chiamarsi “Indirizzo del server”, “Host” o “Hostname”.|
-|Porta di connessione|Inserisci la porta di connessione SSH recuperata [allo Step 2](./#step-2-recupera-i-dati-necessari-a-effettuare-laccesso).|
-|Login SSH|Inserisci il nome utente SSH In base al client utilizzato, potrebbe chiamarsi “Nome utente”, “Identificativo”, “Login” oppure “Username”.|
-|Password dell’utente SSH|Indica la password associata al login SSH.<br><br> In base al client utilizzato, potrebbe chiamarsi: “Password”.|
+- **Server SSH**: Indica l’indirizzo del server SSH recuperato [allo Step 2](#sshlogin). In base al client utilizzato, potrebbe chiamarsi “Indirizzo del server”, “Host” o “Hostname”.
+- **Porta di connessione**: Inserisci la porta di connessione SSH recuperata [allo Step 2](#sshlogin).
+- **Login SSH**: Inserisci il nome utente SSH In base al client utilizzato, potrebbe chiamarsi “Nome utente”, “Identificativo”, “Login” oppure “Username”.
+- **Password dell'utente SSH**: Indica la password associata al login SSH. In base al client utilizzato, potrebbe chiamarsi: “Password”.
 
 Una volta effettuato l’accesso, passa allo step successivo.
 
@@ -113,8 +107,8 @@ A seconda della versione di PHP che vuoi utilizzare, potrebbe essere necessario 
 
 ## Per saperne di più
 
-[Modificare la configurazione di un hosting Web](../modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
+[Modificare la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
 
-[Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)
+[Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

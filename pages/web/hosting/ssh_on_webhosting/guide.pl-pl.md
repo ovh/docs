@@ -6,7 +6,7 @@ excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego 
 section: 'FTP i SSH'
 ---
 
-**Ostatnia aktualizacja z dnia 04-08-2020**
+**Ostatnia aktualizacja z dnia 19/01/2022**
 
 ## Wprowadzenie
 
@@ -22,36 +22,32 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 ## W praktyce
 
-### Etap 1: upewnij się, że dostęp przez SSH jest aktywny
+### Etap 1: upewnij się, że dostęp przez SSH jest aktywny <a name="sshcheck"></a>
 
 Rozpocznij od zalogowania się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action} i kliknij `Hostingi`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. 
 
-Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login SSH”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
+Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
 Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) posiada dostęp przez protokół SSH.
 
-### Etap 2: pobranie informacji niezbędnych do logowania
+### Etap 2: pobranie informacji niezbędnych do logowania <a name="sshlogin"></a>
 
-Aby zalogować się do przestrzeni dyskowej przez SSH, należy posiadać następujące dane. Jeżeli ich nie posiadasz, znajdziesz je w zakładce `FTP - SSH`{.action}.
+Aby zalogować się przez SSH do Twojej przestrzeni dyskowej, przejdź do sekcji `FTP - SSH`{.action}:
 
-|Element|Gdzie go znaleźć?|
-|---|---|
-|Aktywny użytkownik SSH|Odnajdziesz go w kolumnie „Login SSH” tabeli. Przypominamy, że użytkownik ten musi [posiadać aktywny dostęp przez SSH](./#etap-1-upewnij-sie-ze-dostep-przez-ssh-jest-aktywny).|
-|Hasło użytkownika SSH|Jeżeli nie pamiętasz hasła, możesz je zmienić klikając przycisk `...`{.action}, a następnie `Zmień hasło`{.action}.|
-|Adres serwera SSH|Wyszukaj opcję „Dostęp do klastra przez SSH”. W elemencie, który wtedy się pojawi, adres serwera SSH rozpoczyna się po „ssh://” i kończy przed znakiem „:”.|
-|Port połączenia z serwerem SSH|Wyszukaj opcję „Dostęp do klastra przez SSH”. W elemencie, który się wtedy pojawi, numer portu podany jest po znaku „:”.|
-
-Oto przykład tego, jak może on wyglądać: `ssh://ssh.cluster023.hosting.ovh.net:22/`. Adres serwera SSH to „ssh.cluster023.hosting.ovh.net”, a „22” - numer portu łączenia SSH.
-
-![usessh](images/use-ssh-step2.png){.thumbnail}
+- **Aktywny** użytkownik SSH: Znajdź go w kolumnie "**Login**" w tabeli. Przypominamy, że użytkownik ten musi [posiadać aktywny dostęp przez SSH](#sshcheck).
+- **Hasło użytkownika SSH**: Jeżeli nie pamiętasz hasła, możesz je zmienić klikając przycisk `...`{.action}, a następnie `Zmień hasło`{.action}.
+- **Adres serwera SSH**: Znajdź opcję "**Serwer SSH**".
+- **Port połączenia z serwerem SSH**: Znajdź opcję "**Port SSH**"
 
 ### Etap 3: zaloguj się do przestrzeni dyskowej przez protokół SSH
 
 Aby zalogować się przez SSH, użyj terminala, dzięki któremu będziesz mógł(mogła) działać bezpośrednio na Twojej przestrzeni dyskowej za pomocą wierszy poleceń.  
 
-Narzędzie to jest zainstalowane domyślnie na MacOS, Linuxie i Windows 10. Starsza wersja środowiska Windows wymagać będzie instalacji programu, takiego jak PuTTY lub dodania funkcji OpenSSH. Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji. 
+> [!primary]
+>
+> Narzędzie to jest zainstalowane domyślnie na MacOS, Linuxie i Windows 10. Starsza wersja środowiska Windows wymagać będzie instalacji programu, takiego jak PuTTY lub dodania funkcji OpenSSH.
 
 Masz teraz dwie możliwości zalogowania się, w zależności od używanej przez Ciebie metody:
 
@@ -60,10 +56,10 @@ Masz teraz dwie możliwości zalogowania się, w zależności od używanej przez
 > [!warning]
 > Nasza oferta hostingowa na posiada dostępu „super użytkownik” (lub „root”) przez protokół SSH.
 
-Po otworzeniu terminala, zastosuj poniższe polecenie, zastępując elementy „sshlogin”, „sshserver” oraz „connectionport” przez Twoje dane identyfikacyjne SSH. 
+Po otworzeniu terminala użyj następującego polecenia, zastępując elementy "yourlogin", "ssh.cluster000.hosting.ovh.net" i "22" elementami odpowiadającymi Twojemu identyfikatorowi SSH. 
 
 ```ssh
-ssh sshlogin@sshserver -p connectionport
+ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
 Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh_1)”.
@@ -74,12 +70,10 @@ Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika 
 
 Po otwarciu danego oprogramowania (np. PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. W ramach przypomnienia zamieszczamy poniżej informacje, które należy wprowadzić:
 
-|Dane do uzupełnienia|Szczegóły|
-|---|---|
-|Serwer SSH|Podaj adres serwera SSH otrzymany [w trakcie realizacji etapu 2](./#etap-2-pobranie-informacji-niezbednych-do-logowania). W zależności od użytego oprogramowania, jego nazwa może być określona jako: „Adres serwera”, „Nazwa hosta” lub „Host name”.|
-|Port połączenia|Wpisz port połączenia SSH otrzymany [w trakcie realizacji etapu 2](./#etap-2-pobranie-informacji-niezbednych-do-logowania).|
-|Login SSH|Podaj użytkownika SSH. W zależności od użytego oprogramowania, może być on nazwany „Nazwa użytkownika”, „Identyfikator”, „Login” albo „Username”.|
-|Hasło użytkownika SSH|Wpisz hasło powiązane z loginem SSH.<br><br> W zależności od użytego oprogramowania, jego nazwa może również przybrać formę angielskiego „Password”.|
+- **Serwer SSH**: Podaj adres serwera SSH otrzymany [w trakcie realizacji etapu 2](#sshlogin). W zależności od użytego oprogramowania, jego nazwa może być określona jako: „Adres serwera”, „Nazwa hosta” lub „Host name”.
+- **Port połączenia**: Wpisz port połączenia SSH otrzymany [w trakcie realizacji etapu 2](#sshlogin).
+- **Login SSH**: Podaj użytkownika SSH. W zależności od użytego oprogramowania, może być on nazwany „Nazwa użytkownika”, „Identyfikator”, „Login” albo „Username”.
+- **Hasło użytkownika SSH**: Wpisz hasło powiązane z loginem SSH. W zależności od użytego oprogramowania, jego nazwa może również przybrać formę angielskiego „Password”.
 
 Po zalogowaniu, przejdź do następnego etapu.
 
@@ -111,8 +105,8 @@ W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniow
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu](../zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/).
+[Zmiana konfiguracji hostingu](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/).
 
-[Konfiguracja pliku .ovhconfig w hostingu](../konfiguracja-pliku-ovhconfig/).
+[Konfiguracja pliku .ovhconfig w hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-pliku-ovhconfig/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

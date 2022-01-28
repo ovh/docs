@@ -6,20 +6,31 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 01/12/2021**
+**Dernière mise à jour le 28/01/2022**
 
 ## Objectif
 
-La solution CloudDB permet de bénéficier d’une instance de bases de données, dont les ressources sont dédiées et garanties. Ce service offre davantage de performances et de flexibilité ; il s’adresse généralement à des clients ayant des besoins spécifiques.
+La solution CloudDB permet de bénéficier d’une instance de bases de données dont les ressources sont dédiées et garanties, vous offrant performances et flexibilité.
+Par défaut, votre solution CloudDB est liée au réseau d'hébergements web OVHcloud. Vous pouvez aussi la lier à n'importe quel autre réseau, via une liste d'adresses IP autorisées.
 
 **Découvrez comment bien débuter avec la solution CloudDB.**
 
 ## Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
+
+### Activation de votre serveur CloudDB inclus avec votre offre d'hébergement web
+
+Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche.
+
+Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
+
+![Informations générales](images/db-activation.png){.thumbnail}
+
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur CloudDB. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
 
 ### Visionner les informations générales de l'instance
 
@@ -52,7 +63,6 @@ Vous pouvez y consulter les informations importantes concernant votre instance. 
 >
 
 Pour créer votre première base de données sur votre instance CloudDB, cliquez sur l'onglet `Bases de données`{.action} puis sur le bouton `Ajouter une base de données`{.action}.
-
 
 ![clouddb](images/clouddb-add-database.png){.thumbnail}
 
@@ -141,36 +151,27 @@ Choisissez finalement d'appliquer ou non les options additionnelles décrites ci
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autoriser une adresse IP
+### Autoriser une adresse IP 
 
 Afin que l’accès à votre instance CloudDB fonctionne, il est obligatoire d'indiquer les IP ou plages d'IP pouvant se connecter à vos bases de données. Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Ajouter une adresse IP/masque`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous désirez autoriser dans `IP/masque`{.action} puis ajoutez une description si vous le souhaitez. Décidez ensuite si vous voulez donner accès uniquement aux bases de données ou au SFTP. Enfin, cliquez sur `Valider`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
+### Autoriser la connexion à un hébergement web OVHcloud <a name="trustip"></a>
 
-Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
+Par défaut, votre solution CloudDB est automatiquement liée aux hébergements web OVHcloud. Si vous le souhaitez, vous pouvez néanmoins désactiver l'accès des hébergements web OVHcloud à votre base de données CloudDB.
 
-Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
+Pour cela, cliquez sur l'onglet `IP autorisées`{.action} puis sur le bouton `Accès aux hébergements web OVHcloud`{.action}.
 
-Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro de cluster sur lequel vous êtes, comme ci-dessous.
-
-![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
-
-Après avoir récupéré le numéro du cluster sur lequel est situé votre hébergement, consultez la page [« Liste des adresses IP des clusters et hebergements web »](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}. Vous y trouverez l'adresse IP « passerelle de sortie » de chaque cluster.
-
-> [!warning]
->
-> **L'adresse IP** du cluster ne fonctionnera pas pour autoriser la connexion au serveur Cloud DB, il faut bien ajouter **l'adresse IP « passerelle de sortie »**.
->
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Lier votre site à la base de données
 
-Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP a été autorisée sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
+Maintenant que votre base de données est créée, qu'un ou plusieurs utilisateurs disposent de droits sur cette dernière et qu'au minimum une adresse IP ou que les hébergements web OVHcloud on été autorisés sur votre instance CloudDB, il ne reste plus qu'à lier votre site à votre base de données. Cette étape peut s'effectuer de plusieurs manières, en fonction du site ou du CMS (WordPress, Joomla!, etc.) utilisé, ainsi que de l'étape à laquelle vous vous trouvez si vous installez un site web.
 
 Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive être en possession de ces cinq informations :
 

@@ -6,6 +6,7 @@ section: Gestion depuis Horizon
 order: 13
 ---
 
+**Dernière mise à jour le 30/12/2021**
 
 ## Preambule
 L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon. Cela peut vous permettre par exemple d'importer les images de vos anciennes machines virtuelles vers le Public Cloud, à condition que leur format soit compatible.
