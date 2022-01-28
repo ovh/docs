@@ -10,7 +10,7 @@ order: 01
 
 ## Objective
 
-OVH puts an infrastructure **supervision** and **monitoring** tool at your disposal called **vScope**.
+OVHcloud puts an infrastructure **supervision** and **monitoring** tool at your disposal called **vScope**.
 
 It's a web based utility gathering and presenting all the **useful** information on your resources.
 
