@@ -93,7 +93,7 @@ As a reminder, you will need to enter the following information:
 > The standard connection port is port 21. Use port "22" for a connection via SFTP (if it is enabled)
 
 - **SSH** server: This is the server address that allows you to access your storage space using a terminal via the SSH protocol.
-- **Main** login: This is the primary FTP username (S)created on your hosting. You can find all of your web hosting plan’s FTP users in the "Login" column of the table.
+- **Main** login: This is the primary FTP username created on your hosting. You can find all of your web hosting plan’s FTP users in the "Login" column of the table.
 
 If the information is correct, the program you are using should display the contents of your storage space. A message (also called "status") may appear to confirm that the content has been successfully listed by your program.
 
