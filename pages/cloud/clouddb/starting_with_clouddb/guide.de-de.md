@@ -13,16 +13,27 @@ section: 'Erste Schritte'
 
 ## Einleitung
 
-Mit der CloudDB Lösung erhalten Sie Zugriff auf eine Datenbankinstanz mit dedizierten und garantierten Ressourcen. Dieser Dienst bietet mehr Leistung und Flexibilität und ist vor allem für Kunden mit spezifischen Anforderungen entwickelt.
+Mit der CloudDB Lösung profitieren Sie von einer Datenbank-Instanz mit dedizierten und garantierten Ressourcen für Leistung und Flexibilität.
+Ihre CloudDB Lösung ist standardmäßig an das Webhosting-Netzwerk von OVHcloud gebunden. Sie können diese über eine Liste autorisierter IP-Adressen mit jedem anderen Netzwerk verbinden.
 
 **Hier erfahren Sie, wie Sie Cloud Databases verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external}.
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Angebot Performance](https://www.ovhcloud.com/de/web-hosting/)).
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
+
+### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen CloudDB Servers
+
+Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete.`{.action}
+
+Klicken Sie im Tab `Allgemeine Informationen`im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
+
+![Informations générales](images/db-activation.png){.thumbnail}
+
+Folgen Sie den Anweisungen, um Typ und Version Ihres CloudDB Servers zu bestimmen. Nach Abschluss des Vorgangs kann der CloudDB Dienst über die linke Menüspalte unter `Datenbanken`{.action} eingesehen werden.
 
 ### Allgemeine Informationen der Instanz einsehen
 
@@ -151,15 +162,23 @@ Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. 
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](clouddb-add-ip-2022.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+#### Die Verbindung zu einem OVHcloud Webhosting erlauben<a name="trustip"></a> 
+
+Ihre CloudDB Lösung wird standardmäßig automatisch an die Webhostings von OVHcloud gebunden. Wenn Sie möchten, können Sie dennoch den Zugang zu Ihren CloudDB-Datenbanken für OVHcloud-Webhostings deaktivieren.
+
+Klicken Sie hierzu auf den Tab `autorisierte IP`{.action} und dann auf den Button `Zugang zu OVHcloud Webhostings`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png) {.thumbnail}
+
 ### Ihre Website mit der Datenbank verbinden
 
-Nun, da Ihre Datenbank angelegt wurde, einer oder mehrere Benutzer über Zugriffsrechte verfügen und mindestens eine autorisierte IP-Adresse für Ihre CloudDB Instanz angegeben wurde, muss Ihre Website nur noch mit Ihrer Datenbank verknüpft werden. Für diesen Schritt stehen Ihnen verschiedene Optionen zur Verfügung − je nach Art Ihrer Website, dem verwendeten CMS (WordPress, Joomla! usw.) oder je nachdem, bei welchem Schritt der Website-Erstellung Sie sich befinden.
+Nun, da Ihre Datenbank erstellt wurde, einer oder mehrere Benutzer über Zugriffsrechte verfügen und mindestens eine IP-Adresse oder OVHcloud-Webhosting auf Ihrer CloudDB-Instanz eingerichtet wurde, müssen Sie Ihre Website nur noch mit Ihrer Datenbank verbinden. Dieser Schritt kann auf mehrere Arten durchgeführt werden, je nach Art der verwendeten Website oder des verwendeten CMS (WordPress, Joomla! usw.) sowie je nachdem, in welchem Schritt Sie sich befinden, wenn Sie eine Website installieren.
 
 Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden können, benötigen Sie die folgenden fünf Informationen:
 
