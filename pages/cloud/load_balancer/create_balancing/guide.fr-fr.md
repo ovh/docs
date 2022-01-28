@@ -1,13 +1,13 @@
 ---
 title: Mode de répartition
 slug: iplb-balancing
-excerpt: Découvrez les différents modes de répartition de charge de l'OVH Load Balancer
+excerpt: Découvrez les différents modes de répartition de charge de l'OVHCloud Load Balancer
 section: Configuration
 ---
 
 ## Objectif
 
-Le nouveau service OVH Load Balancer offre différents types de répartition de charge pour vos services. Ce processus détermine la manière dont l'OVH Load Balancer va répartir les requêtes reçues vers vos serveurs.
+Le service OVHCloud Load Balancer offre différents types de répartition de charge pour vos services. Ce processus détermine la manière dont l'OVHCloud Load Balancer va répartir les requêtes reçues vers vos serveurs.
 
 **Ce guide vous présente les différents types de répartition de charge et vous explique comment les modifier.**
 
@@ -23,7 +23,7 @@ Le nouveau service OVH Load Balancer offre différents types de répartition de 
 
 La répartition de charge est utilisée dans les fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour connaître les différentes parties élémentaires du service OVH Load Balancer, voir [Présentation Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
+Pour connaître les différentes parties élémentaires du service OVHCloud Load Balancer, voir [Présentation Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
 
 |Algorithme|Fonctionnalités|
 |---|---|
