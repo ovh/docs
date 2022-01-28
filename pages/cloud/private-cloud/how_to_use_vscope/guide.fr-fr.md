@@ -7,7 +7,7 @@ section: Services et options OVHcloud
 order: 01
 ---
 
-**Dernière mise à jour le 26/02/2019**
+**Dernière mise à jour le 28/01/2022**
 
 ## Objectif
 
@@ -16,6 +16,12 @@ OVH vous met à disposition un outil de **supervision** et **monitoring** de vos
 Il s’agit d’une page web où sont rassemblées toutes les informations **utiles** sur vos ressources.
 
 **Ce guide décrit la lecture de cette interface**
+
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
 
 ## En pratique
 
