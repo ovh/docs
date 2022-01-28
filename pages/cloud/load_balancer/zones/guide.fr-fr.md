@@ -50,7 +50,7 @@ N'oubliez pas de payer le bon de commande ainsi généré.
 
 ####  ajouter une zone
 
-Une fois que votre Zone commander vous pouvez l'jouter depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
+Une fois que votre zone est commandée vous pouvez l'jouter depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.
