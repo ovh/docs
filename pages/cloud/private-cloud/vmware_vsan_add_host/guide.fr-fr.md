@@ -5,47 +5,65 @@ excerpt: 'Découvrez comment ajouter un serveur ESXi dans un cluster vSAN exista
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 15/04/2019**
+**Dernière mise à jour le 22/12/2021**
 
 ## Objectif
 
-Ce guide a pour objectif d’expliquer comment ajouter un serveur ESXi dans un cluster vSAN existant. L'ajout d'un hôte peut avoir lieu dans le cas de la commande d'un nouveau serveur ou bien du remplacement d'un serveur défectueux.
+Ce guide explique comment ajouter le stockage d'un nouveau serveur ESXi dans un cluster vSAN existant.
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external},
-* Pouvoir accéder à l’interface de gestion vSphere via le client Flex (Flash),
-* Avoir un serveur ESXi à disposition et intégré dans un cluster vSAN.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployé un [datastore vSan](https://docs.ovh.com/fr/private-cloud/vmware-vsan/)
 
 ## En pratique
 
-Les serveurs OVH étant automatiquement préconfigurés à la livraison, l'ajout d'un hôte dans un cluster vSAN consiste uniquement à préciser quels disques seront intégrés au datastore.
+### Commander un nouvel hôte vSan
 
-Une fois connecté au vCenter, se rendre sur le menu `Hosts and Clusters`, sélectionner le cluster concerné, cliquer sur l'onglet `Configure` et choisir le menu `vSAN` puis `Disk Management`.
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec un compte administrateur.
 
-Dans le tableau `Disk Groups` sélectionner le nouveau serveur ESXi et s'assurer qu'aucun disque n'est affecté au datastore vSAN (la colonne `Disks in Use` doit indiquer 0 sur X).
+Dans la section `Hosted Private Cloud`{.action}, sélectionnez votre datacentre et allez dans l'onglet `Hosts`{.action}.<br>
+Cliquez le bouton `Commander un Host`{.action}.
 
-![](images/01.png){.thumbnail}
+![ORDER](images/en02order.png){.thumbnail}
 
-Cliquer sur l'icône avec un plus vert. Dans la fenêtre `Create Disk Group` sélectionner le disque de cache et le ou les disques capacitifs puis cliquer sur `OK`.
+Choisissez l'hôte vSAN qui vous convient puis cliquez sur `Confirmer la commande`{.action}
 
-> [!primary]
->
-> Se reporter à la configuration matériel du serveur pour savoir quels sont les disques de cache et capacitif.
+![ORDER](images/en03hosttype.png){.thumbnail}
 
-![](images/02.png){.thumbnail}
+Verifiez le récapitulatif avant de cliquer `Suivant`{.action}
 
-Il est possible de suivre l'avancement de la tâche de création du groupe de disque dans la fenêtre `Recent Tasks`.
+Cochez les cases pour accepter les termes et conditions et payez le bon de commande via le moyen de paiement de votre choix.
 
-![](images/03.png){.thumbnail}
+Vous obtiendrez une confirmation de commande et un numéro de commande.
 
-Une fois la tâche terminée, la colonne `Disks in Use` doit indiquer que tous les disques du serveur sont intégrés au cluster.
+Le nouvel hôte sera intégré automatiquement à votre infrastructure. Vous recevrez un email de confirmation quand il sera prêt à l'usage dans vSphere.
 
-![](images/04.png){.thumbnail}
+### Ajouter l'espace de stockage du nouvel hôte vSAN au datastore
 
-Le serveur ESXi est maintenant complètement intégré au cluster vSAN et ses disques sont utilisables par le datastore.
+Dans l'interface vSphere, allez dans le Tableau de bord `Hôtes et clusters`{.action}.
+
+![Menu](images/en07hosts.png){.thumbnail}
+
+Le nouvel hôte est visible dans le cluster.<br>
+Sur la gauche de l'écran, sélectionnez le cluster, allez dans l'onglet `Configurer`{.action} puis `vSAN`{.action} / `Gestion de disques`{.action}.<br>
+Cliquez sur `Réclamer des disques inutilisés`{.action}.
+
+![vSAN](images/en08cluster.png){.thumbnail}
+
+Les disques disponibles sont attribués automatiquement au cache ou au stockage (voir la [page officielle VMware VSAN](https://docs.vmware.com/fr/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} pour plus de détails) en fonction de leur type et de leur taille. Vous pouvez personnaliser les paramètres.
+
+Cliquez sur `Créer`{.action}.
+
+![vSAN](images/en09claim.png){.thumbnail}
+
+Le nouveau groupe de disques prend un peu de temps pour être créé et ajouté au datastore vSAN.
+
+![vSAN](images/en10progress.png){.thumbnail}
+
+Le datastore est ensuite prêt à être utilisé avec l'espace de stockage supplémentaire.
 
 ## Aller plus loin
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
-

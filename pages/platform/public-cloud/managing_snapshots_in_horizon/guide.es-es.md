@@ -3,7 +3,7 @@ title: Gestionar las instantáneas de una instancia
 excerpt: Cómo gestionar una instantánea de una instancia en Horizon.
 slug: gestionar_las_instantaneas_de_una_instancia
 legacy_guide_number: g1770
-section: Gestión de las instancias desde el área de cliente
+section: Gestión desde Horizon
 ---
 
 

@@ -44,7 +44,7 @@ The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many li
 Internet browsers must load and read all of these elements.
 We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en-ca/web-hosting/){.external}.
 
-You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-ca/web-hosting/what_web_hosting_choice.xml){.external}.
+You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-ca/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Step 2: Checking the PHP version

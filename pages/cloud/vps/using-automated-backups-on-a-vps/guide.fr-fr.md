@@ -103,6 +103,10 @@ $ mount /dev/sdb1 /mnt/restore
 
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
 
+> [!warning]
+> Veuillez noter qu'un redémarrage du serveur se produira lors du démontage de la sauvegarde.
+>
+
 ### Bonnes pratiques pour l'utilisation de la sauvegarde automatique
 
 La fonctionnalité de sauvegarde automatique est basée sur les snapshots VPS. Nous vous recommandons de suivre les étapes ci-dessous pour éviter toute anomalie avant d'utiliser cette option.

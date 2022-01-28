@@ -1,53 +1,73 @@
 ---
-title: Verificar uma máquina virtual em caso de lentidão
-excerpt: ''
+title: Verificar uma máquina virtual em caso de lentidão (EN)
+excerpt: 'Troubleshoot performance issues on a VM'
 slug: verificar_uma_maquina_virtual_em_caso_de_lentidao
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
 legacy_guide_number: g601
+section: Gestão das máquinas virtuais
 ---
 
+**Last updated on 17th January 2022**
 
-## 
-Aqui ficam os passos para efetuar um diagnóstico em caso de grande lentidão numa VM.
+## Objective
 
-Deverá utilizar o cliente vSphere, quer seja ao aceder pelo seu próprio cliente local, quer seja ao utilizar a ligação RDP fornecida aquando da ativação do seu Private Cloud
+Use the vSphere monitoring tools to troubleshoot a slow VM.
 
+**This guide offers a step by step study case to troubleshoot performance issues on a VM.**
 
-## Verificação das VMs:
-Num primeiro tempo, selecione a VM que apresenta um problema ao ir ao separador «performance». Obtém o resumo dos gráficos de utilização da nossa VM para o CPU, RAM, etc. Se constatamos uma utilização "importante" nesta janela, existem irregularidades certamente provenientes desta VM.
-Nesse caso, deverá proceder ao aumento dos recursos da sua VM, após verificar que não existem limitações no separador "Recursos" dos parâmetros da VM (Clique direito na VM => Edit Settings => Ressources).
+## Requirements
 
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
-## Verificação Cluster/Pool de recursos
-No cluster ou na pool de recursos, deverá ir ao separador Performances, e permitir-nos-á de ver os gráficos de performance e utilização dos recursos:
+## Instructions
 
-![](images/img_95.jpg){.thumbnail}
-Na secção « Allocation de ressources », poderá ver em números o consumo global das suas VMs nos recursos disponíveis:
+You have three levels of monitoring accessible in vSphere to troubleshoot issues:
 
-![](images/img_96.jpg){.thumbnail}
-Poderá ocorrer dois casos:
+- VM
+- Cluster
+- Storage
 
-- Se um host está muito sobrecarregado, poderá efetuar uma migração manual da sua VM para outro host ou efetuar uma migração a quente ao utilizar vMotion.
+### VM Monitoring
 
-Se beneficia da licença Enterprise, poderá utilizar a função DRS que permite gerir automaticamente essa operação, mediante os recursos dos seus hosts.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![VM monitoring](images/en01vm.png){.thumbnail}
 
-- No caso do conjunto dos seus hosts apresentar uma carga importante, deverá adicionar um graças ao separador Private Cloud OVH, ou Armazenamento OVH.
+You may also use the `Utilization`{.action} section to help your investigations.
 
+### Cluster monitoring
 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your Cluster and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![cluster mmonitoring](images/en02cluster.png){.thumbnail}
 
-## Verificação dos armazenamentos
-Além dos recursos para as suas VMs, poderá igualmente vigiar os seus armazenamentos. Quando está na vista Datastore, selecione o seu NAS e depois o separador «Performance»:
+You may also use the `Resource Allocation`{.action} and `Utilization`{.action} sections to help your investigations.
 
-![](images/img_97.jpg){.thumbnail}
+> [!primary]
+>
+> Resource Pools can be accessed and monitored in the same way clusters are.
+> 
 
+### Storage monitoring
 
-## Verificação da Rede
-Em último lugar, deverá verificar o estado da rede.
-No seu Manager, poderá ver o débito utilizado, assim como as limitações que terá implementado na sua VLAN:
+In the vSphere interface menu, go to the `Storage`{.action} dashboard.<br>
+Navigate to your datastore and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![storage monitoring](images/en03storage.png){.thumbnail}
 
-- Manager v5 -> Private Cloud -> Resumo
+## Go further
 
-
-
+Join our community of users on <https://community.ovh.com/en/>.

@@ -2,7 +2,7 @@
 title: Vmware Storage VMotion
 excerpt: Come trasferire a caldo una macchina virtuale su un datastore differente
 slug: vmware_storage_vmotion
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 05
 ---
 

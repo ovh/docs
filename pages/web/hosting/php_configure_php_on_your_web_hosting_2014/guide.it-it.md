@@ -71,4 +71,4 @@ Per gli utenti avanzati, ricordiamo che sugli [hosting Web OVH](https://www.ovhc
 
 [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

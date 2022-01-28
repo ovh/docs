@@ -126,4 +126,4 @@ Nel caso in cui la password risulti compromessa, consigliamo di [modificarla imm
 
 [Gestionale di password KeePass](https://keepass.info/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

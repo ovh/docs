@@ -67,7 +67,7 @@ Nie, przed zwiększeniem rozmiaru wolumenu, należy odłączyć dysk.
 
 ### Ile dodatkowych wolumenów mogę przypisać do każdej instancji?
 
-Możesz przypisać do 26 dodatkowych wolumenów do każdej instancji.
+Możesz przypisać do 25 dodatkowych wolumenów do każdej instancji.
 
 ### W jaki sposób moje serwery są zabezpieczone?
 

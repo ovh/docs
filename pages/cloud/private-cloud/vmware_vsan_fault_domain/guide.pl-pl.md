@@ -9,7 +9,7 @@ section: 'Funkcje VMware vSphere'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 18-01-2021**
+**Ostatnia aktualizacja z dnia 23-12-2021**
 
 ## Wprowadzenie
 
@@ -17,9 +17,9 @@ Niniejszy przewodnik wyjaśnia, jak działają i jak wdrażać obszary awarii vS
 
 ## Wymagania początkowe
 
-- Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
-- Dostęp do [klienta vSphere HTML](../polaczenie-interfejs-vsphere/)
-- Posiadanie klastra vSAN z co najmniej 3 hostami
+- Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika z uprawnieniami dla NSX [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Wdrożenie [datastore vSan](https://docs.ovh.com/pl/private-cloud/vmware-vsan/)
 
 ## W praktyce
 

@@ -64,4 +64,4 @@ En la [documentación oficial de Rclone](https://Rclone.org/swift/){.external} e
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

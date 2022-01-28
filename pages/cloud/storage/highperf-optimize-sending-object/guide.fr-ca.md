@@ -14,7 +14,7 @@ Découvrez comment optimiser l'envoi de vos fichiers vers votre bucket.
 
 ## Prérequis
 
-- [Avoir installé awscli](https://docs.ovh.com/ca/fr/storage/highperf/debuter-avec-s3-high-performance)
+- [Avoir installé awscli](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/)
 
 ## En pratique
 

@@ -31,7 +31,7 @@ Dans ce tutoriel, nous allons installer ownCloud sur une nouvelle installation d
 Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 * [Guide pour la création d'une Instance de Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-instance-espace-client/)
-* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](https://docs.ovh.com/fr/storage/pcs/create-container/)
+* [Guide de création du stockage d'objets sur la plate-forme de Public Cloud](https://docs.ovh.com/fr/storage/pcs/creation-de-conteneur/)
 * [Guide de création et de configuration d'un disque supplémentaire sur une Instance de Public Cloud ](https://docs.ovh.com/fr/public-cloud/configurer-un-volume-additionnel/)
 
 

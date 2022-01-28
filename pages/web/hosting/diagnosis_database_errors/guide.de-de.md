@@ -248,7 +248,7 @@ Diese Zahl erhöht sich auf **200** für Datenbanken auf [SQL Private](https://d
 
 Diese Nachricht erscheint bei der [Verbindung über phpMyAdmin](https://docs.ovh.com/de/hosting/datenbank-erstellen/#auf-das-phpmyadmin-interface-zugreifen), wenn diese maximale Anzahl an Verbindungen überschritten wird.
 
-In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.com/de/hosting/konfigurieren-optimieren-ihres-datenbank-servers/#optimieren-ihrer-datenbanken_1), um die Anzahl der aktiven Verbindungen zu reduzieren.
+In dieser Situation müssen Sie [Ihre Datenbanken optimieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#ihre-datenbanken-optimieren_1), um die Anzahl der aktiven Verbindungen zu reduzieren.
 
 > [!warning]
 >

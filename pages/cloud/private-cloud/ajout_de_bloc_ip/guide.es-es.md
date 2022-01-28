@@ -7,7 +7,7 @@ section: Funcionalidades de OVHcloud
 order: 01
 ---
 
-**Última actualización: 25/06/2020**
+**Última actualización: 30/12/2021**
 
 ## Objetivo
 
@@ -17,8 +17,8 @@ Los bloques de IP permiten que sus servicios estén accesibles online.
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
+- Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -57,7 +57,7 @@ Deberá rellenar diferentes campos para crear su bloque de IP.
 
 > [!success]
 >
-> El coste de activación del bloque es de 2 € por IP (IVA no incl.). Así pues, para un bloque en `/28` con 16 IP, deberá abonar una orden de pedido de 32 € (IVA incl.) a la hora de realizar su pedido. 
+> Deberá abonar los gastos de activación de su bloque de IP antes de la entrega.
 >  
 > La renovación de las IP es gratuita.
 >

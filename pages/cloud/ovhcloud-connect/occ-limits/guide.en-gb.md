@@ -6,7 +6,7 @@ section: Technical resources
 order: 1
 ---
 
-**Last updated 14th September 2020**
+**Last updated 13th January 2022**
 
 ## Objective
 
@@ -20,6 +20,18 @@ order: 1
 - 10GBase-LR for 10Gb
 - Jumbo frame up to 9000 bytes
 - Autonegotiation not supported
+
+### Technical limitationss
+
+#### Layer 2 mode
+
+- The number of client-side MAC addresses is limited to 512 per port
+
+#### Layer 3 mode
+
+- Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
+- Each EndPoint/DC supports up to 4 BGP peers
+- Up to 100 prefixes can be announced per BGP session
 
 ### Unsupported features
 
@@ -35,6 +47,7 @@ order: 1
 
 #### Layer 3 mode
 
+- IPv6
 - Any QoS mechanism
 - 802.1q tag
 - Multi-VRF
@@ -42,17 +55,13 @@ order: 1
 - iBGP
 - Static routing in EntryPoint/PoP
 
-### Features on roadmap
-
-- IPv6
-
 ### Known issues
 
 | Description | Detail | Cause | Workaround | Affected sites |
 |:-----:|:------:|:-----:|:----------:|:--------------:|
-| DC routes not propagated to POP | When using AS65501, routes announced using BGP in vRack are not propagated to POP | OVHcloud internal configuration | Do not use AS65501 | ALL |
-| ECMP not working | When ECMP is configured on a single POP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL POP |
-| Light received but port is down | Device fail to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL POP |
+| DC routes not propagated to PoP | When using AS65501, routes announced using BGP in vRack are not propagated to PoP | OVHcloud internal configuration | Do not use AS65501 | ALL |
+| ECMP not working | When ECMP is configured on a single PoP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL PoPs |
+| Light received but port is down | Device fails to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL PoPs |
 
 ## Go further
 

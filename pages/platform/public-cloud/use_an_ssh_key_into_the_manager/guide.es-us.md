@@ -19,6 +19,11 @@ Existen dos formas de añadir una clave SSH desde la interfaz de Public Cloud:
 ### Requisitos:
 - Una [clave SSH](../crear-llave-ssh/){.ref}
 
+> [!primary]
+>
+Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
+>
+
 
 ## Creación de una instancia
 Para crear una instancia en la nube desde la interfaz de cliente de Public Cloud, haga clic en `Crear una instancia`{.action} en el menú «Instancias» situado en la sección `Proceso`{.action} del menú de la izquierda.

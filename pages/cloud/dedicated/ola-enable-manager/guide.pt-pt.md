@@ -2,7 +2,7 @@
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud'
 slug: ola-manager
 excerpt: 'Ative o OVHcloud Link Aggregation na sua Área de Cliente'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 order: 1
 ---
 

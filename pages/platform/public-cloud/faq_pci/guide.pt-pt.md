@@ -67,7 +67,7 @@ Não, um volume tem de ser desassociado antes de o poder aumentar.
 
 ### Existe um número máximo de volumes adicionais que podemos associar a cada instância?
 
-Sim, o limite é de 26 volumes adicionais por instância.
+Sim, o limite é de 25 volumes adicionais por instância.
 
 ### De que forma é que os meus servidores são protegidos?
 

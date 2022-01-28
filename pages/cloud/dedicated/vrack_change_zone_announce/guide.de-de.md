@@ -5,11 +5,11 @@ excerpt: 'So ändern Sie die IP-Block-Ankündigung im vRack'
 section: vRack
 ---
 
-**Stand 22.07.2019**
+**Letzte Aktualisierung am 22.07.2019**
 
 ## Einleitung
 
-Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVH [Dedicated Servern](https://www.ovhcloud.com/de/bare-metal/){.external} einrichten können.
+Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVHcloud [Dedicated Servern](https://www.ovhcloud.com/de/bare-metal/){.external} einrichten können.
 
 **In dieser Anleitung erfahren Sie, wie Sie die IP-Block-Ankündigung im vRack ändern.**
 
@@ -23,7 +23,7 @@ Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Net
 
 ### Schritt 1: Aktuelle Ankündigungszone ermitteln
 
-Ermitteln Sie zunächst die aktuelle Ankündigungszone des betreffenden IP-Blocks. Führen Sie hierzu „traceroute“ auf einer von Ihnen gewählten IP-Adresse des Blocks aus. 
+Ermitteln Sie zunächst die aktuelle Ankündigungszone des betreffenden IP-Blocks. Führen Sie hierzu "traceroute" auf einer von Ihnen gewählten IP-Adresse des Blocks aus. 
 
 ```sh
 traceroute to 1.2.3.4, 30 hops max, 60 byte packets
@@ -37,18 +37,18 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Roubaix** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms“.
+Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Roubaix** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: "vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms".
 
 ### Schritt 2: IP-Block-Ankündigung ändern
 
-Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ihrer OVH Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
+Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ihrer OVHcloud Kundenkennung ein. Verwenden Sie die nachstehenden API-Aufrufe, um die IP-Block-Ankündigung zu bearbeiten.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie hierzu in den Bereich „Server“ (früher „Cloud“) und dann zu „vRack“.
+So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action}, dann in den Bereich `Network`{.action} und dann "vRack". 
 
 > [!api]
 >
@@ -67,7 +67,7 @@ Führen Sie nun den API-Aufruf aus, um die Ankündigung zu ändern.
 
 ### Schritt 3: Die neue Ankündigungszone testen
 
-Nun, da die Ankündigungszone geändert wurde, führen Sie erneut „traceroute“ auf der in Schritt 1 verwendeten IP-Adresse aus.
+Nun, da die Ankündigungszone geändert wurde, führen Sie erneut "traceroute" auf der in Schritt 1 verwendeten IP-Adresse aus.
 
 ```sh
 traceroute to 1.2.3.4, 30 hops max, 60 byte packets

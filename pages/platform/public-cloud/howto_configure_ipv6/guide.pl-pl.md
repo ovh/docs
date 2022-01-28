@@ -38,13 +38,13 @@ Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 
 ### Pobranie danych sieciowych
 
-Zaloguj się do panelu klienta, wybierz menu`Instancje`{.action}, a następnie kliknij `Szczegóły instancji`{.action}.
+Zaloguj się do panelu klienta, kliknij menu sekcji `Public Cloud`{.action}, wybierz projekt Public Cloud i kliknij pozycję `Instances`{.action} w menu bocznym po lewej stronie. Następnie kliknij na `...`{.action} obok odpowiadającej instancji i kliknij na `Szczegóły instancji`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
 Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Przykłady konfiguracji stałych
 

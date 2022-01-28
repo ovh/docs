@@ -114,4 +114,4 @@ Dal sito OVH è inoltre possibile acquistare licenze Outlook, direttamente nello
 
 [Creare un record CNAME per aggiungere un dominio associato](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

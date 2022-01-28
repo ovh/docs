@@ -3,7 +3,7 @@ title: Reconstruir una instancia
 excerpt: Cómo reconstruir una instancia en Horizon.
 slug: reconstruir_una_instancia
 legacy_guide_number: g1779
-section: Gestión de las instancias en Horizon
+section: Gestión desde Horizon
 ---
 
 

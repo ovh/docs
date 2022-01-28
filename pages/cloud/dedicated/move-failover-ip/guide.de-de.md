@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 19.10.2021**
+**Letzte Aktualisierung am 09.12.2021**
 
 ## Ziel
 
@@ -30,6 +30,12 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+> [!warning]
+> Wenn die Failover-IP oder eine der IP-Adressen des Blocks eine virtuelle MAC-Adresse hat, muss der Zielserver die vMAC-Funktionalität unterstützen.
+> Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
+>
+> Andernfalls müssen die vMACs vor dem Transfer von den Failover-IPs entfernt werden.
 
 ## In der praktischen Anwendung
 

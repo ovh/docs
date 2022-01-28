@@ -17,7 +17,7 @@ Learn how to manage your identity and access to your High Performance resources.
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- a [S3 user](https://docs.ovh.com/it/storage/highperf/getting-started-with-s3-high-performance)
+- a [S3 user](https://docs.ovh.com/it/storage/s3/getting-started-with-s3/)
 
 ## Instructions
 

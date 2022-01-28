@@ -120,5 +120,5 @@ cat /root/.ssh/authorized_keys2
 
 [Introducción al SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/)
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

@@ -1,68 +1,77 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
-excerpt: 'Crear y configurar un disco adicional en una instancia'
+excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
 slug: crear_y_configurar_un_disco_adicional_en_una_instancia
 legacy_guide_number: g1863
 section: Almacenamiento
+order: 1
 ---
 
-**Última actualización: 14 de noviembre de 2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 08/12/2021**
 
 ## Objetivo
 
-Es posible crear discos adicionales para sus instancias de Public Cloud.
+Puede crear discos adicionales para sus instancias de Public Cloud.
 Esto puede ser útil en los siguientes casos:
 
-* Si quiere aumentar la capacidad de almacenamiento sin cambiar de modelo de instancia.
-* Si quiere disponer de un almacenamiento de alta disponibilidad y alto rendimiento.
-* Si quiere trasladar su espacio de almacenamiento y sus datos a otra instancia.
+- Si quiere aumentar su capacidad de almacenamiento sin tener que cambiar el modelo de instancia.
+- Si quiere disponer de un espacio de almacenamiento de alta disponibilidad y buen rendimiento.
+- Si desea transferir su almacenamiento y sus datos a otra instancia.
 
-**Esta guía explica cómo crear y configurar un disco adicional en una de sus instancias.**
+**Esta guía explica cómo crear un disco adicional y configurarlo en una instancia.**
 
 ## Requisitos
 
-* Tener acceso al [área de cliente de OVHcloud](https://ca..ovh.com/auth/?action=gotomanager){.external}
-* Tener una [instancia Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external} en su cuenta de OVHcloud.
-* Tener acceso a su instancia por SSH como administrador (root).
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Disponer de una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud.
+- Tener acceso de administrador (root) a su instancia a través de SSH.
 
 ## Procedimiento
 
-Primero, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y haga clic en el menú `Public Cloud`{.action}. Haga clic en el `Proyecto`{.action} en el que quiere crear la instancia.
+### Asociar un nuevo volumen
 
-Ahora, haga clic en el botón `Acciones`{.action} y seleccione `Crear un volumen`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. A continuación, abra `Block Storage`{.action} en el menú de la izquierda.
 
-![select project](images/attach-disk-01.png){.thumbnail}
+En esta sección, haga clic en el botón `Crear un volumen`{.action}.
 
-En el siguiente paso, configure el disco: seleccione tipo de disco, tamaño y ubicación. Cuando haya terminado, haga clic en el botón `Añadir`{.action}.
+![Seleccionar el proyecto Public Cloud](images/avolume01.png){.thumbnail}
 
-![create disk](images/attach-disk-02.png){.thumbnail}
+Siga los pasos de configuración para seleccionar las opciones de ubicación, tipo de disco y capacidad de disco. Introduzca un nombre para el volumen y haga clic en `Crear el volumen`{.action}.
 
-El nuevo disco aparecerá en su área de cliente.
+![create disk](images/avolume02.png){.thumbnail}
 
-![configure disk](images/attach-disk-03.png){.thumbnail}
+El nuevo disco se mostrará en el área de cliente.
 
-Para asociar el disco a una instancia, haga clic en los tres puntos de la derecha y seleccione `Asociar a una instancia`{.action}.
+![configure disk](images/avolume03.png){.thumbnail}
 
-![attach disk 01](images/attach-disk-04.png){.thumbnail}
+A la derecha del volumen, haga clic en el botón `...`{.action} y seleccione `Asociar a la instancia`{.action}.
 
-Seleccione ahora la instancia y haga clic en `Confirmar`{.action} para asociar el disco.
+![attach disk 01](images/avolume04.png){.thumbnail}
 
-![attach disk 02](images/attach-disk-05.png){.thumbnail}
+En la nueva ventana, seleccione una instancia de la lista y haga clic en `Confirmar`{.action} para asociar el disco.
 
-El proceso para asociar el disco a su instancia dará comienzo y podría tardar unos minutos en completarse.
+![attach disk 02](images/avolume05.png){.thumbnail}
 
-![attach disk 03](images/attach-disk-06.png){.thumbnail}
+A continuación comenzará el proceso de vinculación del disco a su instancia. La operación puede tardar unos minutos.
 
 > [!warning]
-Evite salir de la pestaña Infrastructure mientras se realiza la vinculación del disco. De lo contrario, el proceso podría verse interrumpido.
+> No abandone la página actual del área de cliente de OVHcloud cuando se esté conectando el disco. Esto podría interrumpir el proceso.
 >
 
-### Con Linux
+### Configuración del nuevo disco
 
-En primer lugar, conéctese por SSH a su instancia y utilice el siguiente comando para mostrar la lista de discos de la instancia.
+Los siguientes ejemplos implican que está conectado como usuario con los permisos suficientes.
 
-```
-# admin@serveur-1:~$ lsblk
+#### En Linux
+
+Abra una [conexión SSH a su instancia](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#connect-to-instance) y utilice el siguiente comando para mostrar los discos asociados.
+
+```bash
+~$ admin@server-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -72,13 +81,13 @@ vdb 254:16 0 10G 0 disk
 
 > [!primary]
 >
-Por lo general, VDA hace referencia al disco principal de la instancia. Por lo tanto, VDB hace referencia al disco adicional.
+> En este ejemplo, `vda` hace referencia al disco por defecto de la instancia. El disco adicional se llamará `vdb`.
 >
 
-A continuación, cree una partición en el disco adicional utilizando el siguiente comando:
+Cree una partición en el disco adicional con los siguientes comandos.
 
-```
-# admin@serveur-1:~$ sudo fdisk /dev/vdb
+```bash
+~$ admin@server-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -88,9 +97,7 @@ Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
 ```
 
-
-
-```
+```bash
 Command (m for help): n
 
 Partition type
@@ -105,9 +112,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
 ```
 
-
-
-```
+```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -115,10 +120,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Después, formatee la partición utilizando el siguiente comando:
+A continuación, forme la nueva partición `vdb1` con el siguiente comando:
 
-```
-# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+```bash
+~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -131,18 +136,17 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-Monte la partición con este comando:
+monte la partición con los siguientes comandos:
 
+```bash
+admin@server-1:~$ sudo mkdir /mnt/disk
+admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
-admin@serveur-1:~$ sudo mkdir /mnt/disk
-admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
-```
 
+Por último, compruebe el punto de montaje utilizando el siguiente comando:
 
-Finalmente, compruebe el punto de montaje con este comando:
-
-```
-admin@serveur-1:~$ df -h
+```bash
+~$ admin@server-1:~$ df -h
 
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
@@ -154,72 +158,81 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-Si quiere crear un punto de montaje persistente, tendrá que cambiar el /etc/fstab. Primero, recupere el identificador del bloque (block ID) con el comando siguiente:
+> [!primary]
+>
+> El montaje no es persistente, ya que el disco se desvinculará al reiniciar la instancia. Para automatizar el montaje, es necesario editar el archivo `fstab`.
+>
 
-```
-admin@serveur-1:~$ sudo blkid
+En primer lugar, consulte el UUID (block ID) del nuevo volumen:
+
+```bash
+~$ admin@server-1:~$ sudo blkid
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-Ahora puede utilizar el block ID para cambiar el archivo /etc/fstab.
+Abra `/etc/fstab` con un editor de texto:
 
 ```
-admin@serveur-1:~$ vim /etc/fstab
+~$ sudo nano /etc/fstab
+```
 
-/etc/fstab: static file system information.
+Añada la siguiente línea al archivo y sustituya el UUID por el suyo:
 
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system> <mount point> <type> <options> <dump> <pass>
-UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
+```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
-### Con Windows
+Guarde y salga del editor. El disco debe montarse automáticamente cada vez que se reinicie.
 
-Primero, haga clic derecho en el `Menú Inicio`{.action} y después en `Administración de discos`{.action}.
+#### En Windows
 
-![](images/start-menu.png){.thumbnail}
+Establezca una conexión RDP (Remote Desktop) con su instancia Windows.
 
-Cuando se abra la herramienta de administración de discos, aparecerá su nuevo disco como volumen desconocido con espacio sin asignar, como se muestra a continuación.
+Una vez que se haya conectado, haga clic derecho en el botón `Iniciar`{.action} y abra `Gestión de discos`{.action}.
 
-![disk management](images/disk-management-01.png){.thumbnail}
+![disk management](images/start-menu.png){.thumbnail}
 
-#### Inicializar el disco con la herramienta de administración de discos
+El nuevo disco se mostrará como volumen desconocido con espacio no asignado.
 
-Si el disco está desconectado, puede que se deba a alguna política aplicada a la instancia. Para solucionarlo, haga clic derecho sobre el disco y seleccione `En línea`{.action}.
+![volumen desconocido](images/disk-management-01.png){.thumbnail}
+
+Si el disco está marcado como desconectado, deberá inicializarlo primero. Para ello, puede utilizar la [interfaz de usuario Windows](#initDiskManagement) o la [utilidad DISKPART](#initDiskpart). De lo contrario, realice el [formateo del disco en Gestión de discos](#formatDiskManagement).
+
+##### **Iniciar el disco en Gestión de discos** <a name="initDiskManagement"></a>
+
+Haga clic derecho en el disco y seleccione `En línea`{.action}. 
+
+Si el disco está indicado aquí como desconectado, probablemente se deba a una política en la instancia. Para solucionar el problema, haga clic derecho en el disco y seleccione `On-line`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-A continuación, haga clic derecho de nuevo sobre el disco y seleccione esta vez `Inicializar Disco`{.action}.
+Haga clic derecho de nuevo y seleccione `Inicializar disco`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Seleccione `MBR`{.action} y haga clic en `OK`{.action}.
+A continuación, seleccione `MBR`{.action} y haga clic en `Aceptar`{.action}.
 
 ![initialise disk](images/initialise-disk.png){.thumbnail}
 
-#### Inicializar el disco con DISKPART
+##### **Iniciar el disco con DISKPART** <a name="initDiskpart"></a>
 
-Primero haga clic derecho en el `Menú Inicio`{.action} y después en `Ejecutar`{.action}.
+Haga clic derecho en el botón `Iniciar`{.action} y abra `Ejecutar`{.action}.
 
 ![initialise disk](images/diskpart.png){.thumbnail}
 
-Después, escriba `cmd` en la línea de comando y haga clic en `OK`{.action}.
+Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de línea de órdenes.
 
-![run prompt](images/run-prompt.png){.thumbnail}
+![run rápido](images/run-prompt.png){.thumbnail}
 
-Escriba el siguiente comando para abrir la herramienta DISKPART.
+En el pedido, abra DISKPART:
 
 ```
 C:\> diskpart
 ```
 
-A continuación, cambie la política del disco con los siguientes comandos:
+Utilice la siguiente serie de comandos DISKPART para poner el disco `en línea`:
 
 ```
 DISKPART> san
@@ -230,7 +243,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system.
+DiskPart successfully changed the SAN policy for the current operating system .
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk
@@ -241,7 +254,7 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-```
+``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
@@ -271,33 +284,29 @@ DISKPART> online disk
 DiskPart successfully onlined the selected disk.
 ```
 
-#### Formatear el disco
+##### **Formateado del disco** <a name="formatDiskManagement"></a>
 
-Abra de nuevo la herramienta de administración de discos, haga clic derecho en el volumen, y después haga clic en `Nuevo volumen simple...`{.action}
+En la herramienta de `gestión de discos`{.action}, haga clic derecho en el nuevo disco y seleccione `Nuevo volumen simple...`{.action}.
 
-![format disk](images/format-disk-01.png){.thumbnail}
+![formato disk](images/format-disk-01.png){.thumbnail}
 
-Haga clic en `Siguiente`{.action}.
+En el asistente, haga clic en `Siguiente`{.action} para especificar el tamaño del volumen. Por defecto, debe estar al máximo. Haga clic en `Siguiente`{.action} para continuar.
 
-![format disk](images/format-disk-02.png){.thumbnail}
+![formato disk](images/format-disk-03.png){.thumbnail}
 
-Ahora especifique el tamaño de disco que desea. Por lo general, querremos utilizar el 100% del espacio disponible. Una vez hecho esto, haga clic en `Siguiente`{.action}.
+Deje la nueva letra predeterminada o seleccione otra y haga clic en `Siguiente`{.action}.
 
-![format disk](images/format-disk-03.png){.thumbnail}
+![formato disk](images/format-disk-04.png){.thumbnail}
 
-Seleccione de la lista desplegable una letra de unidad para identificar el volumen, y haga clic en `Siguiente`{.action}.
+Asigne un nombre al volumen (opcional) y confirme las opciones de formato haciendo clic en `Siguiente`{.action}.
 
-![format disk](images/format-disk-04.png){.thumbnail}
+![formato disk](images/format-disk-05.png){.thumbnail}
 
-Seleccione las opciones que desee para el volumen y haga clic en `Siguiente`{.action} para llevar a cabo la operación de formateo.
+En la última ventana, haga clic en `Finalizar`{.action} para dar formato al disco.
 
-![format disk](images/format-disk-05.png){.thumbnail}
+![formato disk](images/format-disk-06.png){.thumbnail}
 
-Por último, haga clic en `Finalizar`{.action} para terminar la operación.
-
-![format disk](images/format-disk-06.png){.thumbnail}
-
-Una vez formateado el disco, podrá acceder a él fácilmente desde el explorador de archivos.
+El disco estará disponible como lector en el explorador de archivos.
 
 ## Más información
 

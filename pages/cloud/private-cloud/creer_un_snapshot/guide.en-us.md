@@ -1,87 +1,116 @@
 ---
-title: Creating a snapshot
+title: Taking a snapshot
 slug: create-a-snapshot
-excerpt: Find out how to return to a previous status of your VM using snapshots
+excerpt: Return to a previous VM state using snapshots
 legacy_guide_number: '7766547'
 section: Maintenance and monitoring
 order: 08
 ---
 
-**Last updated 28th July 2020**
+**Last updated 19th January 2022**
 
 ## Objective
 
-You can take a snapshot of a virtual machine. Once you have taken the snapshot, you can restore all virtual machines to the most recent snapshot or delete the snapshot.
+VMWare offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
 
-**This guide explains how snapshots work.**
+**This guide explains how to execute these tasks**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we))
 
 ## Instructions
 
-Snapshots are useful when you need to return to the same state multiple times, without creating multiple virtual machines. With snapshots, you create restore positions.
+### Take a Snapshot
 
-This allows you to preserve the basic state of a VM before migrating it to another type of operation.
+A snapshot allows you to capture a VM state.<br>
+It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
 
-While snapshots provide a "snapshot" image of the disk, regular erasure of the snapshots made is recommended. If you have a large number of snapshots, they will take up a lot of disk space and penalise the VM in terms of performance.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right-click it and, in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
+
+![TAKE](images/en01take.png){.thumbnail}
+
+By default, the snapshot will be named after the current date and time. You may edit it to your preference.<br>
+A description may also be added for reference.<br>
+If your VM is running, the snapshot process offers two options:
+
+- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash-resistant, meaning it can be reverted to without powering off the VM.
+- Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br>
+
+If your VM is not running, those options are greyed out.<br>
+*We recommend taking snapshots of a turned off VM and if it is not possible, preferably use the Quiesce option over the memory snapshot for added security.*
+
+Click `OK`{.action} when ready.
+
+![SNAP](images/en02snap.png){.thumbnail}
+
+Your snapshot is done.
+
+### Manage Snapshots
+
+You can take multiple snapshots of a single VM repeating the process explained above.<br>
+With time, snapshots will consume resources, especially storage, to be maintained and possibly will affect VM performance.<br>
+Below is how to revert, clear or consolidate snapshots.
+
+#### Revert to Snapshot
+
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+
+![MANAGE](images/en03manage.png){.thumbnail}
+
+Check the snapshot tree and select the one you wish to go back to.<br>
+Click on `Revert To`{.action}.
+
+![REVERT](images/en04revert.png){.thumbnail}
+
+Confirm by clicking `OK`{.action}.
+
+![CONFIRM](images/en05confirm.png){.thumbnail}
+
+You can click `Done`{.action} as your VM has been reverted to the point chosen.
 
 > [!primary]
-> 
-> It is not advisable to use snapshots as a method of virtual machine backups.
-> 
+>
+> If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing `Revert to Latest Snapshot`{.action} in the `Snapshots`{.action} menu.
 
-The snapshot allows you to capture the status of your VM when you launch it. This snapshot includes (as you choose):
+#### Clear Snapshot
 
-- The status of all disks in the virtual machine.
-- The contents of the virtual machine's memory.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
 
-> [!warning]
-> 
-> It is not possible to change the size of a disk when a snapshot is taken on a VM.
-> 
+![MANAGE](images/en03manage.png){.thumbnail}
 
-### Snapshot capture
+Check the snapshot tree and select the one you wish to delete.<br>
+Click on `Delete`{.action}.<br>
+*You can also clear all snapshots by clicking `Delete All`{.action}.*
 
-Right-click on your VM then choose `Snapshots`{.action} and finally `Take Snapshot...`{.action}:
+![DELETE](images/en06delete.png){.thumbnail}
 
-![Take snapshot](images/snapshot01.png){.thumbnail}
+Confirm by clicking `OK`{.action}.
 
-You must now specify the name you want to assign to this snapshot, its description, and if you want the VM memory to be included in the snapshot as well.
+![CONFIRM](images/en07confirm.png){.thumbnail}
 
-Here you can make a snapshot with or without the RAM used by the VM. If you integrate the RAM into the snapshot, this will increase the time it takes to complete the task, but it will prevent an otherwise necessary reboot when restoring the snapshot.
+You can click `Done`{.action} as your snapshot was cleared.
 
-Without having to backup the RAM, the task will be faster, but rebooting the VM will be necessary in case of a recovery.
+> [!primary]
+>
+> If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
 
-![Configure snapshot](images/snapshot02.png){.thumbnail}
-
-### Snapshot management
-
-You can find all snapshots of your VM in the snapshot manager. To do this, right-click on the VM, then choose `Snapshots`{.action} and finally `Manage Snapshots`{.action}:
-
-![Create snapshots](images/snapshot03.png){.thumbnail}
-
-### Deleting a Snapshot
-
-In the snapshot manager, select the snapshot you want to delete and click `Delete`{.action}.
-
-All VM snapshots can be removed in one operation by clicking `Delete All`{.action}.
-
-### Restoring a snapshot
-
-In the snapshot manager, select the snapshot to restore and click `Restore`{.action}.
-
-### Consolidate snapshots
-
-The presence of redundant disks can affect the performance of virtual machines.
+#### Consolidate snapshots
 
 Snapshot consolidation is useful when snapshot disks fail to compress after a delete operation. After consolidation, redundant disks are removed, improving virtual machine performance and saving storage space.
 
-To perform a consolidation, right-click on the VM, then choose `Snapshots`{.action} and finally `Consolidate`{.action}
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Consolidate`{.action}.
 
-![snapshots](images/consolidate.png){.thumbnail}
+![CONSOLIDATE](images/en08consolidate.png){.thumbnail}
+
+Confirm by clicking `YES`{.action}.
+
+![CONFIRM](images/en09confirm.png){.thumbnail}
 
 You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 

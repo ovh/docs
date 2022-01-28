@@ -1,328 +1,133 @@
 ---
-title: 'Implementar a hiperconvergência VMware com o vSAN'
+title: 'Implementar a hiperconvergência VMware com o vSAN (EN)'
 slug: vmware-vsan
-excerpt: 'Saiba como aproveitar a potência da hiperconvergência nas máquinas virtuais com vSAN'
-section: 'Funcionalidades VMware vSphere'
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/'
+excerpt: Use the power of Hyperconvergence with vSAN
+section: Funcionalidades VMware vSphere
 ---
 
-**Última atualização: 10/01/2019**
+**Last updated 21st December 2021**
 
-## Sumário
+## Objective
 
-Este manual explica os conceitos e os pormenores da implementação do VMware vSAN no Private Cloud.
+Find out how to use the power of Hyperconvergence for your virtual machines with vSAN.
 
-**Saiba como aproveitar a potência da hiperconvergência nas máquinas virtuais com vSAN.**
+**This guide explains how to set up VMware vSAN on OVHcloud Hosted Private Cloud.**
 
-## Requisitos
+## Requirements
 
-* Dispor do serviço [Private Cloud](https://www.ovh.com/pt/private-cloud/){.external}.
-* Ter adicionado, pelo menos, três hosts vSAN.
-* Ter acesso à interface de gestão vSphere.
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- At least three vSAN hosts
 
-## Instruções
+## Instructions
 
-### vSAN: conceitos essenciais
+### What is vSAN?
 
-#### O que é o vSAN?
+vSAN is an object storage solution offered by VMware. It gathers a set of disks situated directly on your VMware hosts, and presents them as a single datastore. This is known as Software-Defined Storage or SDS. One of the advantages of vSAN is that it is fully integrated into vSphere, and can be managed directly from vCenter.
 
-O vSAN é uma solução de armazenamento de objetos disponibilizada pelo VMware. Permite agregar um conjunto de discos situados diretamente nos hosts VMware e apresentá-los como um datastore único. Este tipo de arquitetura, que utiliza conjuntamente as capacidades de processamento e de armazenamento num conjunto de hosts físicos, também é conhecido como **arquitetura hiperconvergente**. Como este datastore é uma construção virtual gerida pelo programa vSAN, também se aplica o termo “Software Defined Storage”, ou SDS. Uma das vantagens do vSAN é o facto de estar completamente integrado no vSphere e de ser gerido diretamente a partir do vCenter.
+For full concept review and technical specifications, check out the [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external}
 
-#### O que é o armazenamento de objetos?
+### Setting up vSAN
 
-Um dos pontos mais importantes a compreender é o de que o datastore do vSAN é um sistema de armazenamento de objetos. As máquinas virtuais alojadas neste datastore são compostas por diferentes objetos, ao passo que num armazenamento “tradicional” as VM são constituídas por ficheiros alojados num LUN. A proteção destes objetos é simples: através da sua replicação em vários hosts do cluster (sendo que, habitualmente, é o nível de RAID dos discos que assegura este tipo de proteção).
+#### Turn off vSphere HA
 
-Uma VM é constituída pelos seguintes objetos:
-* Os ficheiros básicos da VM (VMX, nvram, logs, snapshots da memória, etc.), também chamados VM Home;
-* Os discos virtuais (VMDK);
-* O Swap,
-* Os snapshots dos discos.
+vSAN relies on the cluster’s high-availability features. Before you start any operation, you have to ensure that you have turned it off.
 
-Os elementos que constituem um objeto chamam-se componentes. Por exemplo, se o objeto for replicado em dois hosts, é constituído por dois componentes. O número de componentes associados a um objeto vai permitir definir o nível de resiliência dos dados.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-#### Proteção de dados
+![Menu](images/en01hosts.png){.thumbnail}
 
-De modo a assegurar a proteção dos dados em caso de falha material (hosts, discos, etc.), é necessário definir os níveis de redundância esperados. Para isso, o vSAN oferece dois mecanismos complementares.
+On the left side, select your cluster, go in the `Configure`{.action} tab then `vSphere Availability`{.action}.<br>
+Click the `Edit`{.action} button.
 
-##### Failure To Tolerate (FTT)
+![Menu](images/en02cluster.png){.thumbnail}
 
-O primeiro nível de redundância refere-se ao número de falhas que o cluster vSAN deve poder suportar, quer seja a perda de um disco, de um host ou da rede. Este valor é chamado *Failure To Tolerate*, ou FTT, e pode ir de 0 (nenhuma redundância) a 3 (o nível máximo). De acordo com o nível “n” esperado, o vSAN irá criar vários componentes e distribuí-los por cada um dos hosts. Assim, em caso de erro, as máquinas virtuais continuam a estar acessíveis. Quanto mais elevado for o nível de redundância, mais aumenta o número de hosts necessários:
+Turn off vSphere HA and click `OK`{.action}.
 
-* FTT=1:  mínimo de 3 hosts
-* FTT=2:  mínimo de 5 hosts
-* FTT=3:  mínimo de 7 hosts
+![HA](images/en03ha.png){.thumbnail}
 
-> [!warning]
->
-> Se configurar um nível de FTT para 0, os dados em causa não terão nenhuma redundância. Isto implica um risco de indisponibilidade das VM correspondentes.
->
+#### Turn on vSAN Service
 
-##### Failure Tolerance Method (FTM)
+In the Cluster configuration menu, go down to `vSAN`{.action} / `Services`{.action} and click on `Configure`{.action}.
 
-Além do número de falhas toleradas, o vSAN oferece a escolha entre dois métodos de proteção de dados: o mirroring e o erasure coding. Estes mecanismos funcionam de forma análoga à dos clusters RAID utilizados pelos controladores dos discos rígidos, mas aplicam-se diretamente aos objetos e, portanto, aos componentes.
+![VSAN](images/en04vsan.png){.thumbnail}
 
-* Mirroring (RAID 1): trata-se do nível padrão, cada objeto é escrito simultaneamente em dois hosts diferentes (em espelho).
-* Erasure Coding + FTT=1 (RAID 5): cada objeto se divide em três componentes e é calculado um quarto componente de paridade. Permite encontrar os dados em falta no caso de se perder um dos componentes. Assim, para se escrever quatro componentes, são precisos quatro hosts.
-* Erasure Coding + FTT=2 (RAID 6): cada objeto se divide em quatro componentes de dados e dois componentes de paridade, que permitem recalcular dois fragmentos perdidos. Neste caso, para se escrever seis componentes em locais diferentes e assegurar a redundância, são precisos seis hosts.
+This guide is based on vSAN’s essential features so we will be using the default options.<br>
+All of our hosts are on the same site. We'll select `Single site cluster` and click `Next`{.action}.
 
-Estes diferentes parâmetros vão definir o número de componentes que constituem um objeto e, consequentemente, o número mínimo de hosts e o número de falhas (hosts, discos, etc.) toleradas sem que ocorra perda de acesso aos dados.
+![VSAN](images/en05vsantype.png){.thumbnail}
 
-|         | | Configuração dos objetos em função de FTT e FTM| | |
-|------------------------|----------------------------------|------------------------|------------------------|------------------------|
-| Failure Tolerance Method (FTM)   | Failure To Tolerate (FTT) | RAID equivalente  | Número mínimo de hosts | Número de falhas tolerado |
-| Mirroring | 1 | RAID 1 | 3 | 1 |
-| Mirroring | 2 | RAID 1 | 5 | 2 |
-| Mirroring | 3 | RAID 1 | 7 | 3 |
-| Mirroring | 1 | RAID 5 | 4 | 1 |
-| Mirroring | 2 | RAID 6 | 6 | 2 |
+We recommend using Deduplication and Compression to optimize storage.<br>
+Click `Next`{.action}.
 
-> [!primary]
->
-> No caso do erasure coding, os níveis de proteção RAID 5 e 6 impõem, respetivamente, um FTT de 1 ou 2\. Os outros valores (0 ou 3) não são compatíveis.
->
+![VSAN](images/en06vsanservices.png){.thumbnail}
 
-#### Consumo de espaço em disco
 
-A utilização dos mecanismos de redundância induz logicamente um consumo de espaço acrescido, pelo que é necessário encontrar um equilíbrio. O ponto forte do vSAN é o facto de permitir a escolha das políticas de redundância por VM, e não globalmente, ao nível do datastore. Desta forma, podemos dispor de políticas diferenciadas em função dos tipos de ambiente.
+The Claim disks window assigns avalaible disks to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.<br>
+Click `Next`{.action}.
 
-|         | Excesso de consumo devido à redundância | | |
-|------------------------|----------------------------------|------------------------|------------------------|
-| Nível de proteção   | RAID 1 | RAID 5 | RAID 6 |
-| 3 hosts FTT=1          | x 2    | - | - |
-| 4 hosts FTT=1          | x 2    | x 1,33 | - |
-| 5 hosts FTT=1          | x 2    | x 1,33 | - |
-| 6 hosts FTT=2          | x 2    | - | x 1,5 |
+![VSAN](images/en07vsanclaim.png){.thumbnail}
+
+With three hosts, fault domain is set up automatically and a single failure will be tolerated.<br>
+Click `Next`{.action}.
+
+![VSAN](images/en08vsanfault.png){.thumbnail}
+
+Verify the settings in the summary window then click `Finish`{.action}.
+
+![VSAN](images/en09vsanready.png){.thumbnail}
+
+Go back to the cluster configuration and turn vSphere HA back on.<br>
+Your datastore is visible in the storage section and available to use.
+
+![VSAN](images/en10vsandata.png){.thumbnail}
 
 > [!warning]
 >
-> Por razões de desempenho e resiliência, o VMware recomenda que não se ultrapasse os 70% de capacidade de um datastore vSAN.
+> For performance and resilience reasons, VMware recommends not using more than 70% of the volume of a vSAN datastore.
 >
 
-#### Espaço líquido útil para os dados do utilizador
+### Turn off vSAN
 
-Para ilustrar o ponto anterior, apresentamos de seguida uma estimativa conservadora do espaço disponível para os dados em diferentes configurações PCC vSAN 256 ou 512, tendo em conta o limite de 70% recomendado pela VMware.
+Before turning off vSAN, make sure to evacuate all of the virtual machines hosted on the datastore, or delete the machines you are no longer using.
+Click on the ‘Datastore’ tab, and check that there are no virtual machines set up on the vSAN datastore.
 
-| Nº de hosts vSAN 256  | FTT  | Capacidade do host (TB)  | Espaço total  | 	Espaço útil com política RAID 1 (TB)  | Espaço útil com política RAID 5 (TB)  | Espaço útil com política RAID 6 (TB)  |
-|---|---|---|---|---|---|---|
-| 3  | 1  | 4  | 12  | 4,2  | n/a  | n/a  |
-| 4  | 1  | 4  | 16  | 5,6  | 8,4  | n/a  |
-| 5  | 1  | 4  | 20  | 7,0  | 10,5  | n/a  |
-| 6  | 1  | 4  | 24  | 8,4  | 12,6  | n/a  |
-| 6  | 2  | 4  | 24  | n/a  | n/a  | 11,1  |
+![VSAN](images/en11vsanvm.png){.thumbnail}
 
-| Nº de hosts vSAN 512  | FTT  | Capacidade do host (TB)  | Espaço total  | 	Espaço útil com política RAID 1 (TB)  | Espaço útil com política RAID 5 (TB)  | Espaço útil com política RAID 6 (TB)  |
-|---|---|---|---|---|---|---|
-| 3  | 1  | 8  | 24  | 8,4  | n/a  | n/a  |
-| 4  | 1  | 8  | 32  | 11,2  | 16,8  | n/a  |
-| 5  | 1  | 8  | 40  | 14,0  | 21,0  | n/a  |
-| 6  | 1  | 8  | 48  | 16,8  | 25,2  | n/a  |
-| 6  | 2  | 8  | 48  | n/a  | n/a  | 22,2  |
+#### Delete disk groups.
 
-> [!primary]
->
-> Estes números baseiam-se na premissa de que **100% das VM** utilizam a mesma política de armazenamento.
-> Não têm em conta os aumentos ligados a uma desduplicação ou a uma compressão (que flutuam muitíssimo em função da natureza dos dados armazenados).
-> Portanto, trata-se de uma estimativa extremamente conservadora da volumetria.
->
+To delete all of the vSAN configuration details for your disks, you need to delete the group of disks created by vSAN when you turned it on.<br>
+In the Cluster configuration menu, go down to `vSAN`{.action} / `Disk Management`{.action}.<br>
+For each disk group, click on `...`{.action} then `Remove`{.action}.<br>
 
-#### Os grupos de discos (ou *disk groups*)
+![VSAN](images/en12vsanremove.png){.thumbnail}
 
-Os discos físicos presentes nos hosts são agrupados no seio de um grupo de discos. Este constitui a unidade básica de gestão por vSAN e é composto por um disco de cache SSD (obrigatório) e por até sete discos de armazenamento (as configurações da OVH utilizam apenas discos SSD NVMe, de modo a oferecer o melhor desempenho). Cada host que participa no vSAN deve dispor, no mínimo, de um grupo de discos e de um máximo de cinco.
+You are given the option to migrate data. With an empty datastore, there is No data migration necessary.<br>
+Click on `Remove`{.action}.
 
-Ao criar-se um *disk group*, juntam-se discos de cache à pool de armazenamento, o que permite aumentar o espaço de cache e o desempenho global.
+![VSAN](images/en13vsanmig.png){.thumbnail}
 
-Em contrapartida, uma vez que tudo é escrito no volume de cache, um problema no disco de cache de um host invalida automaticamente os discos de armazenamento do *disk group* em questão. Se o host dispõe de um único *disk group*, este deixa de estar disponível para o vSAN até à substituição do disco com problemas.
+Repeat for each of the nodes in the cluster, until the entire disk group has been cleared.<br>
+You can safely ignore  error messages regarding the health of the disk group.
 
-A operação de atribuição dos discos de cache e de armazenamento a um *disk group* chama-se **reclamação** ou **claiming** e ocorre durante a inicialização do vSAN.
+#### Turn off Services.
 
-##### O *witness*
+The same way you turned off the high-availability feature to set up vSAN, you will need to turn it off before you stop vSAN.
 
-Existe um objeto particular chamado *witness*. A sua função é permitir resolver um problema de partição no cluster. Uma partição ocorre quando certos membros do cluster deixam de poder comunicar ou quando um host está isolado.
+![HA](images/en03ha.png){.thumbnail}
 
-No caso de uma política RAID 1 em que as duas cópias de um objeto se encontram numa partição diferente e são modificadas em simultâneo, já não é possível saber onde estão os dados de referência. É aqui que o *witness *entra em ação: trata-se de um ficheiro de pequena dimensão (2 MB) com apenas metadados e que permite decidir que cópia serve de referência. No caso de um cluster de três hosts e de uma política RAID 1, dois hosts receberão uma cópia dos dados e o terceiro receberá o *witness *que contém informações acerca dos objetos de dados. Num cenário de partição ou de isolamento, o host que continuar a ter acesso ao *witness *vai prosseguir a sua atividade em modo degradado. Quando o problema for resolvido, o host isolado é ressincronizado com os dados mais recentes.
+Once high-availability has been turned off, you can stop the vSAN service in the cluster properties by clicking `Turn Off vSAN`{.action}
 
-O *witness *só é utilizado na política RAID 1, visto que em RAID 5 ou 6 os dados e a sua
-paridade são distribuídos por todos os hosts, pois o seu número é suficiente para evitar qualquer ambiguidade num cenário de isolamento de um host.
+![SERVICE](images/en14vsanoff.png){.thumbnail}
 
-##### Visualização dos objetos
+Confirm by clicking ‘Turn Off’ in the next window.
 
-Para visualizar o estado dos objetos, consulte as propriedades do cluster. Para isso, clique no separador “Monitor” e na rubrica “vSAN”.
+![SERVICE](images/en15vsanconfirm.png){.thumbnail}
 
-A seguir, clique em “Virtual Objects”.
+vSan is now off.
 
-![](images/vsan_21.png){.thumbnail}
+## Go further
 
-Poderá ver três tipos de objetos vSAN:
-
-* VM home
-* Disco rígido 
-* Ficheiro de swap RAM (ficheiro vswp)
-
-Se clicar num objeto, poderá ver como está armazenado no cluster. Também poderá ver os diferentes componentes que constituem o objeto.
-
-![](images/vsan_22.png){.thumbnail}
-
-Para ilustrar os outros tipos de objetos, vamos criar um snapshot da VM:
-
-![](images/vsan_23.png){.thumbnail}
-
-Vemos que foi adicionado um novo objeto snapshot a cada um dos objetos “hard disk”.
-
-#### Máximos de vSAN
-
-##### vSAN 6.6
-
-* 5 *disk groups* por host
-* 9000 componentes por host vSAN
-* 35 discos de armazenamento por host
-* 64 hosts por cluster vSAN
-* 1 único datastore vSAN por cluster
-* 6000 máquinas virtuais por cluster
-* 12 *stripes *por objeto
-* Tolerância de perda de host: 3
-* Dimensão máxima do disco virtual: 62 TB
-
-#### Limitações do vSAN
-
-##### vSAN 6.6
-
-Não são compatíveis as seguintes funções do vSphere:
-  * RDM, VMFS, partição de diagnóstico
-  * Raw Device Mapping (RDM)
-  * Storage I/O control
-  * Reserva de volume SCSI
-
-### Ativar o vSAN
-
-> [!warning]
->
-> No vSphere 6.5, as operações relativas ao vSAN só estão disponíveis na versão Flash (Flex) do vSphere Web Client, e não na interface HMTL 5.
->
-
-#### Desativação do modo de alta disponibilidade (vSphere HA)
-
-O vSAN baseia-se nas funcionalidades de alta disponibilidade do cluster. Mas, antes de qualquer operação, é preciso que este modo seja desativado.
-
-Para isso, consulte as propriedades do cluster no qual o vSAN deve ser ativado, na rubrica “vSphere Availability”, e desmarque a caixa correspondente.
-
-![](images/vsan_01.png){.thumbnail}
-
-#### Configuração do vSAN
-
-Este manual refere-se às funcionalidades essenciais do vSAN. Assim, utilizaremos as opções padrão, perfeitamente adaptadas a este tipo de utilização:
-
-![](images/vsan_03.png){.thumbnail}
-
-As únicas opções que iremos ativar são a desduplicação e a compressão. Estas vão permitir otimizar o armazenamento dos dados, limitando-se a armazenar uma única vez os dados que se repetem.
-
-O processo só é possível graças ao uso de discos flash de elevado desempenho, em substituição dos discos mecânicos tradicionais.
-
-![](images/vsan_04.png){.thumbnail}
-
-As placas de rede relativas ao tráfego vSAN são sugeridas de forma automática.
-
-A seguir, clique em  `Next`{.action} para selecionar os discos a utilizar para o armazenamento do vSAN. Se se tratar de uma primeira ativação, os discos são detetados automaticamente.
-
-![](images/vsan_05.png){.thumbnail}
-
-> [!primary]
->
-> Se já executou o vSAN anteriormente e os discos já foram inicializados, não precisa de os selecionar outra vez.  O ecrã de seleção aparecerá vazio, mas vai permitir-lhe passar à etapa seguinte.
->
-> ![](images/vsan_06.png){.thumbnail}
->
-
-O último ecrã permite-lhe verificar se os parâmetros estão corretos antes de lançar a inicialização do processo.
-
-![](images/vsan_07.png){.thumbnail}
-
-A ativação do vSAN pode levar alguns minutos. Quando esta for concluída, pode consultar as informações de configuração clicando no separador “vSAN”.
-
-![](images/vsan_08.png){.thumbnail}
-
-> [!warning]
->
-> É importante que reative a função de alta disponibilidade do cluster.
->
-
-### Desativar o VSAN
-
-> [!warning]
->
-> No vSphere 6.5, as operações relativas ao vSAN só estão disponíveis na versão Flash do vSphere Web Client, e não na interface HMTL 5.
->
-
-#### Evacuar o datastore
-
-Com a ajuda de um Storage vMotion, deve evacuar todas as máquinas virtuais existentes no datastore vSAN, ou suprimir aquelas que já não sirvam.
-
-Clique no separador “Datastore” e verifique se não há nenhuma máquina virtual no datastore vSAN.
-
-![](images/vsan_09.png){.thumbnail}
-
-#### Eliminação dos grupos de discos
-
-Se deseja eliminar todas as informações de configuração vSAN dos seus discos, pode apagar o grupo de discos criado pelo vSAN durante a ativação.
-
-Basta clicar no separador “vSAN” nas propriedades do cluster, na rubrica “Disk Management”.
-
-![](images/vsan_11.png){.thumbnail}
-
-Para cada um dos hosts, selecione o grupo de discos em causa e clique no ícone de eliminação que se encontra logo por cima.
-
-A seguir é-lhe solicitada uma confirmação.
-
-![](images/vsan_12.png){.thumbnail}
-
-As duas primeiras opções são úteis se deseja retirar um host do cluster sem afetar o funcionamento do datastore vSAN.
-
-Uma vez que vai eliminar a totalidade do datastore, não é necessário migrar os dados. Assim, pode selecionar a última opção “No data evacuation”.
-
-A eliminação vai levar alguns instantes.
-
-Por fim, basta repetir a operação em cada um dos nós do cluster, até à eliminação total do grupo de discos.
-
-![](images/vsan_13.png){.thumbnail}
-
-Se aparecerem mensagens de erro relativamente à integridade do grupo de discos, pode ignorá-las.
-
-#### Desativação da alta disponibilidade
-
-Tal como para a ativação, tem de desativar a alta disponibilidade ao nível do cluster antes de parar o vSAN. Para isso, aceda às propriedades do cluster, rubrica “vSphere Availability”, e desmarque a caixa “Turn ON vSphere HA”.
-
-![](images/vsan_14.png){.thumbnail}
-
-#### Desativação do vSAN
-
-Quando a alta disponibilidade estiver desativada, já pode parar o vSAN.
-
-Ainda nas propriedades do cluster, clique no botão “Edit”.
-
-![](images/vsan_16.png){.thumbnail}
-
-A seguir, desmarque a caixa “Turn ON vSAN”.
-
-![](images/vsan_17.png){.thumbnail}
-
-Por fim, confirme o pedido que vai aparecer.
-
-![](images/vsan_18.png){.thumbnail}
-
-> [!primary]
->
-> Se a alta disponibilidade não foi corretamente desativada, uma mensagem de erro vai assinalá-lo:
->
-> ![](images/vsan_19_FR.png){.thumbnail}
->
-
-Quando a operação for concluída, aparecerá uma mensagem de confirmação:
-
-![](images/vsan_20.png){.thumbnail}
-
-> [!warning]
->
-> Caso seja necessário, é preciso reativar as funções de alta disponibilidade após esta manipulação se o cluster continuar a alojar máquinas virtuais armazenadas em datastores externos.
->
-
-## Quer saber mais?
-
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

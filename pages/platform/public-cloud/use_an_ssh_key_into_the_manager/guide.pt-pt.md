@@ -20,6 +20,10 @@ Existem duas formas de adicionar uma chave SSH a partir da sua interface Public 
 ### Pré-requisitos
 - uma [chave SSH](../criacao-de-chaves-ssh/){.ref}
 
+> [!primary]
+>
+Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
+>
 
 ## Criar uma instância
 Para criar uma instância a partir da interface de cliente Public Cloud, clique em `Criar uma instância`{.action} no menu Instâncias situado na secção `Compute`{.action} à esquerda do ecrã.

@@ -122,7 +122,7 @@ Si vous utilisez une offre **Performance**, reportez-vous à la [méthode 2](#me
 Vous pouvez également migrer vos données sur une nouvelle base :
 
 - Commandez, si nécessaire, une [base de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) de taille supérieure puis lancez sa [création](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/);
-- Effectuez un [export de vos données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/), puis [importez-les](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/) dans la nouvelle base;
+- Effectuez un [export de vos données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/), puis [importez-les](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/) dans la nouvelle base;
 - Intégrez les identifiants de la nouvelle base de données dans le [fichier de configuration](#config_file) de votre site.
 
 > [!primary]
@@ -247,7 +247,7 @@ Ce nombre est de **200** pour les bases des serveurs [SQL privé](https://docs.o
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
-Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#optymalizacja-bazy-danych_1) afin de réduire le nombre de connexions actives.
+Dans cette situation, vous devrez [optimiser vos bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#optimiser-vos-bases-de-donnees_1) afin de réduire le nombre de connexions actives.
 
 > [!warning]
 >

@@ -15,7 +15,7 @@ Ce guide a pour objectif de vous montrer la gestion de vos identités et accès 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/highperf/debuter-avec-s3-high-performance).
+- Avoir créé un [utilisateur S3](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/).
 
 ## En pratique
 

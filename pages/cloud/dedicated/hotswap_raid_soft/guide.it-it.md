@@ -296,4 +296,4 @@ A questo punto il disco malfunzionante è pronto per essere sostituito da un tec
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

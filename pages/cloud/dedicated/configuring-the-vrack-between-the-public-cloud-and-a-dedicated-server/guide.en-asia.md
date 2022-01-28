@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 slug: vrack-pci-ds
-excerpt: 'This guide will show you how to configure private networking between a Public Cloud instance and a Dedicated Server.'
+excerpt: 'Find out how to configure private networking between a Public Cloud instance and a Dedicated Server'
 section: 'Network Management'
 ---
 
@@ -16,11 +16,11 @@ The OVHcloud [vRack](https://www.ovh.com/asia/solutions/vrack) allows you to con
 
 ## Requirements
 
-* an [OVHcloud Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/)
-* a [vRack](https://www.ovh.com/asia/solutions/vrack) service activated in your account
-* a [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external} compatible with the vRack
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-* a private IP address range of your choice
+- An [OVHcloud Public Cloud instance](https://docs.ovh.com/asia/en/public-cloud/public-cloud-first-steps/)
+- A [vRack](https://www.ovh.com/asia/solutions/vrack) service activated in your account
+- A [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external} compatible with the vRack
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A private IP address range of your choice
 
 
 ## Instructions

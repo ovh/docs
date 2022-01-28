@@ -64,7 +64,7 @@ Possono presentarsi due situazioni:
 
 #### Caso di una nuova istanza
 
-Se hai bisogno di aiuto, consulta la guida: [Creare un'istanza Public Cloud](../primi-passi-public-cloud/#step-3-crea-unistanza){.external}. Durante la creazione di un'istanza, potrai specificare, nello Step 4, una rete privata nella quale integrare la tua istanza. Nel menu a tendina presentato seleziona la tua vRack creata precedentemente.
+Se hai bisogno di aiuto, consulta la guida: [Creare un'istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza){.external}. Durante la creazione di un'istanza, potrai specificare, nello Step 4, una rete privata nella quale integrare la tua istanza. Nel menu a tendina presentato seleziona la tua vRack creata precedentemente.
 
 #### Caso di un'istanza già esistente
 

@@ -32,7 +32,7 @@ Si quiere migrar sus direcciones de correo electrónico a una plataforma Exchang
 
 - Tener una plataforma **"source"** con cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external}  configuradas.
 - Disponer de una plataforma de **"destino"** con cuentas [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/){.external} o MX Plan (a través de la solución MX Plan o incluida en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}). Esta plataforma debe disponer de cuentas no configuradas o disponibles para recibir las direcciones de correo que deban migrarse.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/es/&ovhSubsidiary=es){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
@@ -76,7 +76,19 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el bo
 
 #### Migrar
 
+> [!warning]
+>
+> Solo se migrarán los datos de sus cuentas de correo (correo electrónico, contactos, calendarios, reglas de la bandeja de entrada, etc.). Las funcionalidades asociadas a su plataforma deberán crearse en la nueva plataforma:
+>
+> - [Alias](https://docs.ovh.com/es/microsoft-collaborative-solutions/email-alias/)
+> - [Delegación de derechos](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+> - [Grupos](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_20132016_uso_de_los_grupos_listas_de_correo/)
+> - Contactos externos
+> - [Pie de página](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange_20132016_firma_automatica_disclaimer/)
+
 Migre la cuenta de correo de origen a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
+
+> Si debe migrar varias cuentas de correo, le recomendamos que utilice el modo [Proyecto](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/#realizar-una-migracion-por-lotes-modo-proyecto-y-consultar-su-estado) a través de [OMM](https://omm.ovh.net/Project/Create), para importar una tabla en formato CSV con la información de las cuentas de correo que vaya a migrar.
 
 Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/).
 
@@ -98,7 +110,7 @@ Para ello, seleccione el servicio Exchange correspondiente en la columna izquier
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/es/&ovhSubsidiary=es){.external}.
+> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.

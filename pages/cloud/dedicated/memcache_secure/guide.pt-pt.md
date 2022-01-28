@@ -2,7 +2,7 @@
 title: Como proteger um servidor com o serviço Memcached
 slug: proteger-servidor-com-memcached
 excerpt: Saiba como garantir a segurança do sistema Memcached
-section: Uso avançado
+section: Utilização avançada
 ---
 
 **Última atualização: 02/03/2018**
