@@ -43,6 +43,8 @@ Sélectionnez votre Load Balancer, dans `Accueil`{.action} puis dans la partie `
  
  ![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB.png){.thumbnail}
 
+N'oubliez pas de payer le bon de commande ainsi généré.
+
 
 ####  ajouter une zone
 
