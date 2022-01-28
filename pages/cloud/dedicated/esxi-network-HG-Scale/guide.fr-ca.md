@@ -21,7 +21,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 
 ## Prérequis
 
-* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
+* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
 * Disposer d'un [serveur dédié compatible vRack](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}.
 * Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
@@ -34,7 +34,16 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 > Sur ces gammes de serveurs, il y a 4 cartes réseaux. Deux pour le public, deux pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
 >
 
+> [!warning]
+>
+> Il y a actuellement un défaut connu avec l'interface utilisateur graphique ESXi et l'exécution de ces étapes dans l'interface entraînera une configuration non fonctionnelle. Il est absolument nécessaire d'appliquer cette configuration en utilisant l'interface de ligne de commande en SSH.
+>
+
 ### IP fail-over via le vRack
+
+Premièrement, ajoutez votre bloc public d'adresses IP au vRack. Pour ce faire, allez dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et ouvrez le menu `vRack`{.action} dans le menu de gauche.
+
+Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc public d'adresses IP que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 #### Configuration d'origine
 
