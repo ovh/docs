@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 14-01-2020**
+**Ostatnia aktualizacja z dnia 19-01-2022**
 
 ## Wprowadzenie
 
@@ -69,13 +69,9 @@ Jeśli korzystasz z **Prywatnego serwera SQL** w Twojej witrynie, zapoznaj się 
 
 Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
 
-Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij przycisk`Plus +`{.action}, a następnie `Statystyki i logi`{.action}.
+Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}. Następnie kliknij link pod napisem `Zobacz logi`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Następnie kliknij link pod napisem**Logi** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone według miesięcy:
 
