@@ -37,11 +37,11 @@ Il est possible de commande une zone supplémentaire depuis l'[espace client](ht
 
 Sélectionnez votre Load Balancer, dans `Accueil`{.action} puis dans la partie `Configuration`{.action}, cliquez sur `Ajouter`{.action}
 
-![Ajouter une zone load balancer depuis le manager](images/add_Zone_IPLB){.thumbnail}
+![Ajouter une zone load balancer depuis le manager](images/add_Zone_IPLB.png){.thumbnail}
 
  Vous aurez alors accès à la fénétre suivante pour choisir le(s) zonne(s) que souhaitez commander.
  
- ![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB){.thumbnail}
+ ![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB.png){.thumbnail}
 
 
 ####  ajouter une zone
