@@ -45,6 +45,8 @@ Sélectionnez votre Load Balancer, dans `Accueil`{.action} puis dans la partie `
 
 N'oubliez pas de payer le bon de commande ainsi généré.
 
+ ![Payer la commande zone load balancer depuis le manager](images/Paybill_Zone_IPLB.png){.thumbnail}
+
 
 ####  ajouter une zone
 
