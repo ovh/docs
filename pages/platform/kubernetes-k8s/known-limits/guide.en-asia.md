@@ -56,7 +56,8 @@ This limit can be exceptionally raised upon request through our support team.
 There is also a limit of __10 open ports__ on every Load Balancer, and these ports must be in a range between __6 and 65535__.
 (Additionally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
 
-A Load Balancer has the following non-configurable timeouts:
+A Public Cloud Load Balancer has the following non-configurable timeouts:
+
 - 20 seconds for the backend connection to be established
 - 180 seconds for the client & server connections
 
