@@ -57,10 +57,14 @@ Pour **importer** il est nécessaire de connaitre le data-store de destination "
 
 ![](images/ovftool11.png){.thumbnail}
 
-La machine virtuelle est **déployée** dans votre infrastructure.
-
-![](images/ovftool12.png){.thumbnail}
+La machine virtuelle est maintenant **déployée** dans votre infrastructure.
 
 Enfin la **migration** à froid de la machine virtuelle "SQL3" vers une autre infrastructure Dedicated Cloud. (le transfert est réalisé sans machine tierce)
 
 ![](images/ovftool14.png){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
+
