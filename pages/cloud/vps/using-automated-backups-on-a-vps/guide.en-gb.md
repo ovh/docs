@@ -99,12 +99,7 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.
-                                       
-
-> [!warning]
-> Please note that a server reboot will occur when the backup is unmounted.
->                   
-
+                                        
 #### Using Windows
 
 Establish an RDP connection to your server. When you’ve logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
@@ -115,13 +110,17 @@ When the disk management tool opens, you’ll see your mounted backup as a basic
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
-If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
+The disk will appear as `Offline`,= right-click on the disk and select `Online`{.action}.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
 Once done, your mounted backup will now appear in your `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
+
+> [!warning]
+> Please note that a server reboot will occur when the backup is unmounted.
+>  
 
 ### Best practice for using auto-backups
 
