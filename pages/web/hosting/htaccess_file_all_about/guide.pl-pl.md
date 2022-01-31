@@ -4,6 +4,7 @@ excerpt: 'Na stronie tej przedstawiamy przewodniki dotyczące pliku .htaccess.'
 id: '1967'
 slug: hosting_www_plik_htaccess
 section: 'Przekierowania i uprawnienia dostępu'
+hidden: true
 ---
 
 ## Jak zabezpieczyć dostęp do katalogu za pomocą hasła?
