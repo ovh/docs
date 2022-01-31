@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 19<sup>th</sup> October 2021.**
+**Last updated 31<sup>st</sup> January 2021.**
 
 <style>
  pre {
@@ -58,7 +58,7 @@ There is also a limit of __10 open ports__ on every `LoadBalancer`, and these po
 
 ## OpenStack
 
-Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the `Compute` > `Instances` section of [OVH Public Cloud Manager](https://www.ovh.com/manager/public-cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances.
+Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the `Compute` > `Instances` section of [OVH Public Cloud Manager](https://www.ovh.com/manager/public-cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances.  
 
 The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
 Please refrain from manipulating them from the *OVH Public Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
@@ -67,7 +67,7 @@ There is also a limit of __20__ Managed Kubernetes Services by Openstack project
 
 ### Node naming
 
-Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.
+Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
 
 The usage of the __period (`.`)__ character is forbidden in node name. Please, prefer the __dash__ (`-`) character instead.
 
@@ -84,6 +84,9 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### Ports to open from instances to public network (OUTPUT)
 
+- TCP Port 443 (*kubelet*): needed for communication between the kubelets and the Kubernetes API server
+- TCP Port 80 IP 169.254.169.254/32 (*init service*): needed for OpenStack metadata service
+- TCP Ports from 25000 to 31999 (*TLS tunnel*): needed to tunnel traffic between pods and the Kubernetes API server
 - TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
@@ -96,7 +99,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ## Private Networks
 
-The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.
+The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
 
 To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
 

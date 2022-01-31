@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 19<sup>th</sup> October 2021.**
+**Last updated 31<sup>st</sup> January 2021.**
 
 <style>
  pre {
@@ -84,6 +84,9 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### Ports to open from instances to public network (OUTPUT)
 
+- TCP Port 443 (*kubelet*): needed for communication between the kubelets and the Kubernetes API server
+- TCP Port 80 IP 169.254.169.254/32 (*init service*): needed for OpenStack metadata service
+- TCP Ports from 25000 to 31999 (*TLS tunnel*): needed to tunnel traffic between pods and the Kubernetes API server
 - TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
