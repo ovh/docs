@@ -1,16 +1,16 @@
 ---
-title: Configuer le firewall software sous Windows
+title: Configurer le pare-feu sous Windows
 excerpt: Découvrez comment configurer votre pare-feu sous Windows
-slug: firewall-Windows
-section: Premiers pas
-order: 6
+slug: firewall-windows
+section: Sécurité
+order: 02
 ---
 
 **Dernière mise à jour le 31/01/2022**
 
 ## Objectif
 
-Pour protéger de manière optimale votre système, votre serveur Windows Server, dispose de son propre pare-feu intégré, ce paramétrage donnera la possibilité d’augmenter les niveaux de sécurité et de garantir ainsi la disponibilité et l’intégrité de tous les éléments hébergés sur le serveur, tels que les rôles, les services, les dossiers partagés.
+Pour protéger de manière optimale votre système, votre serveur sous Windows Server dispose de son propre pare-feu intégré. Son paramétrage vous permet  d’augmenter les niveaux de sécurité et de garantir ainsi la disponibilité et l’intégrité de tous les éléments hébergés sur le serveur, tels que les rôles, les services, les dossiers partagés.
 
 **Ce guide vous explique comment appliquer les règles du pare-feu sous Windows.**
 
@@ -23,91 +23,86 @@ Pour protéger de manière optimale votre système, votre serveur Windows Server
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} dans votre espace client OVHcloud.
-- Être connecté à votre serveur à un bureau distant sous Windows. 
-
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/)
+- Être connecté à votre serveur via un bureau distant sous Windows. 
 
 ## En pratique
 
-### Étape 1 :  Accéder au pare-feu Windows
-Afin d’accéder au pare-feu Windows, vous devez passer par l’itinéraire suivant :
+### Etape 1 : accéder au pare-feu Windows
 
-- Démarrer
-- Cliquer sur Rechercher
-- Rechercher Pare-feu Windows sur la barre de recherche
-- Puis cliquer sur Pare-feu Windows.
-Il vous faudra ensuite vous rendre sur la ligne `Configuration avancée `{.action}.
+Afin d’accéder au pare-feu Windows, vous pouvez suivre cet ordre :
+
+- cliquez sur `Démarrer`{.action};
+- cliquez sur `Rechercher`{.action};
+- recherchez « Pare-feu Windows » via la barre de recherche;
+- cliquez sur `Pare-feu Windows`{.action}.
+
+Cliquez ensuite sur la ligne `Configuration avancée`{.action}.
 
 ![Step1](images/step1.PNG){.thumbnail}
 
-### Etape 2 : Activer une règle de trafic entrant
+### Etape 2 : activer une règle de trafic entrant
+
 Dans la fenêtre affichée, vous trouverez des paramètres tels que:
 
 - Règles d’entrée et de sortie
 - Règles de sécurité de la connexion
 - Options de surveillance du pare-feu du serveur
 
-En sélectionnant la section`Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic droit à propos de la règle et sélectionnez l’option `Activer la règle `{.action}.
+En sélectionnant les `Règles de trafic entrant `{.action}, toutes les règles préconfigurées de Windows Server associées aux connexions réseau et aux paquets entrants s’affichent. Certaines de ces règles ne sont pas activées par défaut. Si vous souhaitez les activer, faites un clic-droit sur la règle et sélectionnez l’option `Activer la règle `{.action}.
 
 ![Step1](images/step2.PNG){.thumbnail}
 
-### Etape 3 : Créer une nouvelle règle 
-Pour créer une nouvelle règle.
-Allez dans le menu `Action `{.action} et sélectionnez `Nouvelle règle `{.action}.
-Cliquez sur l’option`Nouvelle règle `{.action} située dans le panneau de droite.
+### Etape 3 : créer une nouvelle règle 
+
+Pour créer une nouvelle règle, allez dans le menu `Action`{.action} et sélectionnez `Nouvelle règle`{.action}.
+Cliquez sur l’option `Nouvelle règle`{.action} située dans le panneau de droite.
 
 ![Step3](images/step3.PNG){.thumbnail}
 
-### Etape 4 : Définir le type de règle à activer
+### Etape 4 : définir le type de règle à activer
 
-En sélectionnant cette option, l’assistant suivant s’affiche pour définir le type de règle à créer.
-Dans ce cas, vous selectionner la case `Port `{.action}.
+L’assistant s’affiche pour définir le type de règle à créer. Sélectionnez la case `Port`{.action}.
 
 ![Step4](images/step4.PNG){.thumbnail}
 
-### Etape 5 : Définir le type port à activer
-Dans la fenêtre suivante, définissez le type de port à activer:
+### Etape 5 : définir le type de port à activer
+
+A l'étape suivante, définissez le type de port à activer :
 
 ![Step5](images/step5.PNG){.thumbnail}
 
 > [!primary]
 >
 >- TCP (protocole de contrôle de transmission)
->C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données, ce protocole >garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées.
+>C’est un protocole orienté connexion, c’est-à-dire qu’avec TCP, il sera possible de créer des connexions entre elles afin d’envoyer des flux de données. Ce protocole garantit que les données sont livrées au destinataire sans erreur et dans le même ordre dans lequel elles ont été envoyées.
 >
 >- UDP (User Datagram Protocol – Protocole de datagramme utilisateur)
->C’est un protocole non orienté vers la connexion, son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau qu’il est nécessaire d’avoir préalablement établi une connexion avec la destination.
+>C’est un protocole non orienté vers la connexion. Son développement repose sur l’échange de datagrammes et facilite l’envoi de datagrammes à travers le réseau. Il est nécessaire d’avoir préalablement établi une connexion avec la destination.
 >
->Nous pouvons également sélectionner la case `Tous les ports locaux `{.action} pour activer tous les ports TCP ou UDP sur le serveur qui n’est pas sécurisé, ou activer la case à cocher `Ports locaux spécifiques `{.action} pour déterminer quel port doit être autorisé sur la base de vos exigences. 
+>Vous pouvez également sélectionner la case `Tous les ports locaux`{.action} pour activer tous les ports TCP ou UDP sur un serveur non-sécurisé. Vous pouvez aussi cocher la case `Ports locaux spécifiques`{.action} pour déterminer quel port doit être autorisé. 
 >
 
+### Etape 6 : autoriser ou bloquer la connexion
 
-### Etape 6 : Autoriser ou bloquer la connexion
+Pour définir l’action que cette règle va déclencher, les options suivantes sont disponibles. Sélectionnez celle qui vous convient.
 
-Pour définir l’action que cette règle va avoir, les options suivantes sont disponibles, sélectionnez celle qui vous convient :
-- Autoriser la connexion
-Cette option permet une communication complète via ce port.
+- **Autoriser la connexion**. Cette option permet une communication complète via ce port.
+- **Autoriser la connexion si elle est sécurisée**. Cette option permet aux données d’être transmises uniquement si la connexion est authentifiée via Ipsec.
+- **Bloquer la connexion**. Cette option empêche les données d’être acheminées via ce port.
 
-- Autoriser la connexion si elle est sécurisée
-Cette option permet aux données d’être transmises uniquement si la connexion est authentifiée via Ipsec.
-
-- Bloquer la connexion
-Cette option empêche les données d’être acheminées via ce port.
-
-Sélectionnez l’option`Autoriser la connexion `{.action} et cliquez sur `Suivant `{.action}. 
+Sélectionnez l’option `Autoriser la connexion`{.action} et cliquez sur `Suivant `{.action}. 
 
 ![Step6](images/step6.PNG){.thumbnail}
 
-### Etape 7 : Définir le profil et le nom du pare-feu à appliquer
+### Etape 7 : définir le profil et le nom du pare-feu à appliquer
 
-- Définir le profil
-
-Vous pouvez l'utiliser dans les profils public, de domaine ou privé.
-Vous pouvez tous les activer si vous le souhaiter.
+Vous devez enfin choisir sur quels profils la règle doit s'appliquer, parmi les profils public, de domaine ou privé.
+Vous pouvez tous les activer si vous le souhaitez.
 
 ![Step7](images/step7.PNG){.thumbnail}
 
-- Enfin, attribuez un nom et une description à la nouvelle règle (optionnel) afin de faciliter son utilisation:
+Attribuez un nom et une description à la nouvelle règle (optionnel) afin de faciliter son utilisation :
 
 ![Step7_01](images/step7-01.PNG){.thumbnail}
 
@@ -115,9 +110,7 @@ Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer 
 
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 
-Vous pouvez apporter des modifications au niveau de sécurité de la nouvelle règle créée. 
-Vous pouvez utiliser ce processus pour créer et configurer des règles dans le pare-feu Windows Server et améliorer sa sécurité.
-
+Par la suite, vous pouvez apporter des modifications au niveau de la sécurité de la nouvelle règle créée.
 
 ## Aller plus loin
 
