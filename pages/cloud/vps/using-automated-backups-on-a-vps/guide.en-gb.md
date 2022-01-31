@@ -66,7 +66,7 @@ Click on `...`{.action} next to the backup you need to access and select `Mounti
 
 After the process is completed, you will receive an email. You can now connect to your VPS and add the partition where your backup is located.
 
-#### Using secure Shell
+#### Using Secure Shell
 
 First, connect to your VPS via SSH.
 
