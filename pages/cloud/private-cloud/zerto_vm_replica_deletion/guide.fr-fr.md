@@ -1,6 +1,6 @@
 ---
 title: "Supprimer la copie d'une VM du site de récupération Zerto"
-slug: suprimmer-copie-vm-zerto
+slug: supprimer-copie-vm-zerto
 excerpt: Découvez comment supprimer une VM du site de récupération quand elle est effacée du site source
 section: Services et options OVHcloud
 ---

@@ -70,4 +70,4 @@ En función del [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-host
 
 [SSH en alojamiento compartido](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

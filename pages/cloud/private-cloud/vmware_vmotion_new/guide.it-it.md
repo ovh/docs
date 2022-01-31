@@ -2,7 +2,7 @@
 title: VMware vMotion
 slug: vmware-vmotion-new
 excerpt: Come trasferire a caldo una macchina virtuale su un host differente
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 04
 ---
 

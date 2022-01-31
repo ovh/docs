@@ -6,7 +6,7 @@ section: Per iniziare
 order: 2
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Ultimo aggiornamento: 28/12/2021**
 
 ## Obiettivo
 
@@ -14,9 +14,8 @@ order: 2
 
 ## Prerequisiti
 
-- Essere contatto amministratore per il servizio Private Cloud (per ricevere le credenziali di accesso)
-- Disporre di un utente attivo creato nello Spazio Cliente
-
+- Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
+- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -40,15 +39,7 @@ Si apre questa interfaccia:
 
 ![Connessione all'interfaccia vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter, che consentono di eseguire diverse azioni, tra cui:
-
-- eseguire il deploy di una macchina virtuale dal menu `Hosts and Clusters`{.action}
-- navigare nei datastore
-
-> [!warning]
->
-> La gestione di *NSX Edge* al momento non è ancora disponibile nel client Web.
->
+La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter.
 
 ### Utilizza il client Web Flash
 
@@ -62,12 +53,7 @@ Si apre questa interfaccia:
 
 ![Connessione all'interfaccia vSphere](images/connection_interface_w.png){.thumbnail}
 
-La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter, che consentono di eseguire diverse azioni, tra cui:
-
-- eseguire il deploy di una macchina virtuale dal menu `Hosts and Clusters`{.action}
-- se l’opzione è attiva, utilizzare NSX dalla sezione `Network & Security`{.action}
-- navigare nei datastore
-
+La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter.
 
 ## Per saperne di più
 

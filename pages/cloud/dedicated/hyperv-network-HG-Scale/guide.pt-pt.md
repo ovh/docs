@@ -2,7 +2,7 @@
 title: 'Configurar a rede em Windows Server com Hyper-V nas gamas High Grade & SCALE'
 slug: hyperv-network-hg-scale
 excerpt: 'Descubra como configurar a rede no Windows Server com Hyper-V nas gamas High Grade & SCALE'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 order: 5
 ---
 

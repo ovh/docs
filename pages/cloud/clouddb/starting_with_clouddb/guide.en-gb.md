@@ -5,20 +5,31 @@ excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
 ---
 
-**Last updated 24th April 2020**
+**Last updated 28th January 2022**
 
 ## Objective
 
-The CloudDB solution gives you access to a database instance offering dedicated, guaranteed resources. This service offers better performance and greater flexibility. It is generally intended for customers with specific requirements.
+With the CloudDB solution, you get a database instance with dedicated, guaranteed resources that gives you performance and flexibility.
+Your CloudDB solution is linked to the OVHcloud web hosting network by default. You can link it to any other network, via a list of authorised IP addresses.
 
 **Find out how to get started with a CloudDB service.**
 
 ## Requirements
 
-- a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/) (included in [web hosting plans Performance](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
+
+### CloudDB server activation included with your Web Hosting plan
+
+If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
+
+In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Private database**. Then click `Enable`{.action} to start the activation process.
+
+![Informations générales](images/db-activation.png){.thumbnail}
+
+To complete the activation, follow the instructions to determine the type and version of your CloudDB server. It will then be accessible from the left column in `Database`{.action}.
 
 ### View general information about the instance
 
@@ -142,36 +153,27 @@ Finally, choose whether or not the additional options set out below should apply
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Authorise an IP address
+### Authorise an IP address <a name="trustip"></a>
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database. To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 In the window that pops up, enter the IP address or mask that you wish to authorise in `IP/mask`{.action} together with a description if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
-#### Authorise the connection for an OVHcloud Web Hosting plan
+#### Authorise the connection for an OVHcloud Web Hosting plan <a name="trustip"></a>
 
-To access the database from an OVHcloud Web Hosting, the outgoing IP address (gateway) of the hosting cluster has to be authorised.
+By default, your CloudDB solution is automatically linked to OVHcloud web hosting plans. However, you can disable access to your CloudDB database for OVHcloud web hosting plans if you wish.
 
-To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To do this, click on the `authorised IPs`{.action} tab then on the `Access to OVHcloud web hosting plans`{.action} button.
 
-You can verify the cluster number of the Web Hosting on this page under **FTP server**:
-
-![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
-
-Once you have ascertained the cluster number of your Web Hosting, consult [this page](https://docs.ovh.com/gb/en/hosting/list-of-ip-addresses-of-web-hosting-clusters) where you can verify the gateway IP address for each cluster.
-
-> [!warning]
->
-> The **IP address** of the cluster cannot be used to authorise a connection to the Cloud DB server; the **gateway IP address** must be added to the ACL.
->
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Link your website to the database
 
-Now that you have created your database, one or several users with access, and authorised a minimum of one IP address in your CloudDB instance, you simply need to link your website to the database. You can use several methods, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at, if you are setting up a website.
+Now that you have created your database, created one or more users with access to it, and authorised at least one IP address or OVHcloud web hosting plans on your CloudDB instance, you just need to link your website to your database. You can use several methods to do this, depending on your website, the CMS you are using (WordPress, Joomla! etc.), or the stage you are at if you are setting up a website.
 
 No matter which method you choose to follow, you must have the following five pieces of information to hand, to ensure that you do this successfully:
 
@@ -189,6 +191,30 @@ No matter which method you choose to follow, you must have the following five pi
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+### Retrieve your CloudDB server logs
+
+To check your database’s latest logs, go to the `Logs`{.action} tab of your CloudDB server. This tab displays alerts and errors in real time.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+To retrieve all logs for your CloudDB server, log in via SFTP on it.
+
+> [!warning]
+>
+> Before logging in, check that the IP address of the workstation you are using is authorised on your CloudDB server, with the `SFTP` option ticked. Use the [Authorise connection to an OVHcloud web hosting plan](#trustip) section of this guide.
+
+You can find the SFTP login details in the `General information`{.action} tab of your CloudDB server. If you do not know the `Server password`, click the `...`{.action} button on the right to modify it.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Log in via an FTP client (FileZilla, Cyberduck, WinSCP, etc.).
+
+For FileZilla, in the `File`{.action} menu, go to the `Site Manager`{.action}. Click `New Site`{.action}, and enter the settings you have listed.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+The log file, named `stdout.log`, is located at the root.
 
 ## Go further
 

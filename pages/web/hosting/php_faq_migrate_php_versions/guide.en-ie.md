@@ -20,6 +20,7 @@ OVH also offers free PHP-FPM optimisation (from version 5.3) to boost your websi
 Which versions will no longer be supported?
 
 |Version|Date of end-of-life|Not been supported for [years] + [months] |
+|---|---|---|
 |4.X|7 August 2008|6 years and 8 months|
 |5.2|6 January 2011|4 years and 3 months|
 |5.3|14 August 2014|8 months|

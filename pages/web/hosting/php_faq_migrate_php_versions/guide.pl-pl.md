@@ -21,6 +21,7 @@ Które wersje i kiedy zostaną wyłączone?
 Oto wersje, które zostaną wyłączone:
 
 |Wersja|Koniec oficjalnego obsługiwania|Obsługa zakończona od ponad...|
+|---|---|---|
 |4.X|7 sierpnia 2008|6 lat i 8 miesięcy|
 |5.2|6 stycznia 2011|4 lat i 3 miesięcy|
 |5.3|14 sierpnia 2014|8 miesięcy|

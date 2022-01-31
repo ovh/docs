@@ -5,7 +5,7 @@ excerpt: 'Eine OVHcloud Webseite exportieren'
 section: 'Erste Schritte'
 ---
 
-**Letzte Aktualisierung am 14.01.2020**
+**Letzte Aktualisierung am 19.01.2022**
 
 ## Ziel
 
@@ -41,7 +41,6 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 - **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
 
-
 - **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
@@ -66,13 +65,9 @@ Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer An
 
 Wenn Sie den Protokollverlauf Ihrer Webseite aufbewahren möchten, haben Sie die Möglichkeit, die Logs im OVHcloud Kundencenter herunterzuladen.
 
-Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den gewünschten Dienst aus. Klicken Sie auf den Tab `Mehr +`{.action}, danach auf `Statistiken und Logs`{.action}.
+Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Klicken Sie dann auf den Link unter **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Ein Fenster mit den verschiedenen verfügbaren Logtypen wird angezeigt. Sie sind nach Monaten unterteilt:
 

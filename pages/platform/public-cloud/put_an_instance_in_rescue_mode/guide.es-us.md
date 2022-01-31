@@ -18,7 +18,7 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 
 ## Requisitos
 
-* Tener una [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external} en su cuenta de OVHcloud
+* Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
 * Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 * Tener acceso a la instancia por SSH como administrador (usuario raíz).
 
@@ -30,11 +30,11 @@ En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://ca.
 
 A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
 
-![control panel](images/compute.png){.thumbnail}
+![control panel](images/compute2022.png){.thumbnail}
 
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
 
-![control panel](images/rescue1.png){.thumbnail}
+![](images/rescue2022.png){.thumbnail}
 
 Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
 
@@ -73,7 +73,7 @@ Podrá acceder a sus datos desde la carpeta /mnt.
 
 Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `«Salir del modo de rescate»`{.action}.
 
-![control panel](images/rescueexit.png){.thumbnail}
+![control panel](images/rescueexit2022.png){.thumbnail}
 
 ### Activar el modo rescate utilizando la API de OpenStack
 

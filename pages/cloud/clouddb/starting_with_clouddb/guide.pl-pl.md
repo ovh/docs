@@ -5,20 +5,35 @@ excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja dnia 2018-05-15**
+**Ostatnia aktualizacja dnia 2022-01-28**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
 ## Wprowadzenie
 
-Rozwiązanie Cloud Databases (w skrócie CloudDB) umożliwia korzystanie z baz danych zainstalowanych na instancji, której zasoby są dedykowane i gwarantowane. Usługa ta oferuje więcej wydajności i elastyczności. Przeznaczona jest dla klientów o specyficznych potrzebach.
+Rozwiązanie CloudDB pozwala na korzystanie z instancji baz danych, której zasoby są dedykowane i gwarantowane, które zapewniają wysoką wydajność i elastyczność.
+Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHcloud. Można ją połączyć z dowolną inną siecią za pomocą listy uprawnionych adresów IP.
 
 **Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB.**
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
+- Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](https://www.ovhcloud.com/pl/web-hosting/))
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
+
+### Włączenie prywatnego CloudDB zawartego w ofercie hostingu
+
+Jeśli Twój hosting zawiera opcję prywatnego CloudDB, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+
+W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
+
+![Informacje ogólne](images/db-activation.png){.thumbnail}
+
+Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego CloudDB. Będzie on dostępny w kolumnie po lewej stronie w `bazie danych`{.action}.
 
 ### Wyświetlanie informacji ogólnych o instancji
 
@@ -142,19 +157,27 @@ Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwie
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autoryzacja adresu IP
+### Autoryzacja adresu IP <a name="trustip"></a>
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
 
-![cloud databases - bazy danych na instancji](images/clouddb-add-ip.png){.thumbnail}
+![cloud databases - bazy danych na instancji](clouddb-add-ip-2022.png){.thumbnail}
 
 W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}. Możesz również dodać opis. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych czy również do SFTP. Następnie kliknij `Zatwierdź`{.action}.
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-ip-step2.png){.thumbnail}
 
+### Zezwalaj na logowanie do hostingu OVHcloud <a name="trustip"></a>
+
+Domyślnie Twoje rozwiązanie CloudDB jest automatycznie powiązane z hostingiem OVHcloud. Jeśli chcesz, możesz wyłączyć dostęp do Twojej bazy danych CloudDB z hostingu OVHcloud.
+
+W tym celu kliknij zakładkę `dozwolone IP`{.action}, następnie przycisk `Dostęp do hostingu WWW OVHcloud`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+
 ### Powiązanie strony WWW z bazą danych
 
-Teraz, gdy Twoja baza danych została utworzona, jeden lub więcej użytkowników mają uprawnienia do wykonywania w niej operacji, przynajmniej jeden adres IP ma prawo dostępu do Twojej instancji CloudDB, pozostaje połączyć bazę danych ze stroną WWW. Możesz to zrobić na wiele sposobów, w zależności od Twojej strony WWW lub CMS (WordPress, Joomla!, etc...) czy też od bieżącego etapu tworzenia strony WWW.
+Po utworzeniu bazy danych, przyznaniu praw co najmniej jednemu użytkownikowi, jednocześnie mając co najmniej jeden adres IP lub autoryzację hostingu OVHcloud na instancji CloudDB, pozostaje połączyć Twoją stronę WWW z bazą danych. Etap ten może zostać zrealizowany na kilka sposobów, w zależności od używanej strony WWW lub CMS (WordPress, Joomla!, etc.), a także od etapu, na którym się znajdujesz, jeśli instalujesz stronę WWW.
 
 Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące informacje:
 
@@ -172,6 +195,30 @@ Aby pomyślnie zakończyć tę operację, potrzebne Ci będą następujące info
 >
 
 ![cloud databases - bazy danych na instancji](images/clouddb-login-information.png){.thumbnail}
+
+### Pobierz logi Twojego serwera CloudDB
+
+Aby sprawdzić najnowsze logi bazy danych, przejdź do zakładki `Logs`{.action} Twojego serwera CloudDB. W zakładce wyświetlają się alerty i błędy w czasie rzeczywistym.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Aby pobrać wszystkie logi Twojego serwera CloudDB, zaloguj się przez SFTP do tego serwera.
+
+> [!warning]
+>
+> Przed zalogowaniem upewnij się, że adres IP poczty, której używasz jest poprawnie autoryzowany na serwerze CloudDB z opcją `SFTP` zaznaczoną. Skorzystaj z sekcji [Zezwalaj na logowanie do hostingu OVHcloud](#trustip) w tym przewodniku.
+
+Dane do logowania SFTP znajdziesz w zakładce `Informacje ogólne`{.action} Twojego serwera CloudDB. Jeśli nie znasz `hasła do serwera`, kliknij przycisk `...`{.action} po prawej stronie, aby go zmienić.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Zaloguj się za pośrednictwem klienta FTP (FileZilla, Cyberduck, WinSCP, itp.).
+
+W przypadku FileZilla w menu `Plik`{.action} przejdź do `Zarządzanie stronami`{.action}. Kliknij przycisk `Nowa strona`{.action}, po czym wprowadź wcześniej ustawienia.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+Plik logów zatytułowany `stdout.log` znajduje się w katalogu głównym.
 
 ## Sprawdź również
 

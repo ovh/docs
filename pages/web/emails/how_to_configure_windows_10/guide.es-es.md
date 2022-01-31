@@ -92,4 +92,4 @@ OVH ofrece una aplicación web con la que podrá acceder a su cuenta de correo e
 
 [Configurar una cuenta Exchange en la aplicación Correo de Windows](https://docs.ovh.com/es/microsoft-collaborative-solutions/configuracion-correo-windows-10/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

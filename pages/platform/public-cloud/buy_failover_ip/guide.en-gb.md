@@ -7,7 +7,7 @@ section: Networking
 order: 1
 ---
 
-**Last updated 02nd January 2020**
+**Last updated 20th December 2021**
 
 ## Objective
 
@@ -24,17 +24,21 @@ These failover IP addresses can only be migrated to instances in the same projec
 
 ## Requirements
 
-- A [Public Cloud instance](../public-cloud-first-steps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
+- A [Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/public-cloud-first-steps/) in your OVHcloud account.
 
 ## Instructions
 
-First of all, click on the `Failover IP`{.action} menu in the OVHcloud Public Cloud Control Panel, then click `Buy failover IPs`{.action} in the actions list:
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section, and select the Public Cloud project of your choice.<br>
+In the left-hand menu, click on `IP Failover`{.action} in the 'Network' section.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Then click on the `Actions`{.action} button and choose `Buy Cloud failover IPs`{.action}.
 
-The following page will then open:
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+A new menu will then appear:
+
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 Enter the following information:
 
@@ -44,13 +48,15 @@ Enter the following information:
 
 You will also need to accept the General Terms and Conditions of Service.
 
+Each failover IP will cost you €2 ex. VAT. They will then be renewed automatically and free of charge every month.
+
 They are available in the following locations in Europe:
 
-|          |          |          |           |                    |
-|:--------:|:--------:|:--------:|:---------:|:------------------:|
-| Belgium | Finland |  France  | Germany | Czech Republic |
-|  Ireland |  Italy  | Lithuania |  Netherlands |     United Kingdom    |
-| Portugal |  Spain |  Poland |  Lithuania |                    |
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgium  | Finland  | France   | Germany   | Czech Republic |
+| Ireland  |  Italy   | Lithuania | Netherlands | United Kingdom    |
+| Portugal |  Spain   |  Poland |  Lithuania |                    |
 
 
 > [!primary] **Availability**
@@ -67,12 +73,14 @@ They are available in the following locations in Europe:
 >
 > If you need to check this for other organisations, please contact them directly. OVHcloud cannot be involved in this regard.
 
-A purchase order is then generated. Please allow pop-ups in order to be redirected automatically to the purchase order.
+Click on `Generate purchase order`{.action} to be automatically redirected to it (pop-ups must be authorised on your browser).
 
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+You can also find the purchase order in your customer area, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
 
-You will also find the purchase order in the OVHcloud Control Panel: Open the `Dashboard`{.action} section, then click on `View my orders`{.action}.
+See our guide on [managing OVHcloud orders](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) for more details.
 
 ## Go further
+
+[Configuring a failover IP](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip/)
 
 Join our community of users on <https://community.ovh.com/en/>.

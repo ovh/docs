@@ -1,6 +1,6 @@
 ---
 title: Optimise the sending of your files to High Performance
-slug: highperf/optimise-the-sending-of-your-files-to-high-performance
+slug: s3/optimise-the-sending-of-your-files
 excerpt:
 section: Object Storage S3 High Performance
 order: 040
@@ -14,7 +14,7 @@ Learn how to optimise the sending of your files to your bucket.
 
 ## Requirements
 
-- [awscli](https://docs.ovh.com/gb/en/storage/highperf/getting-started-with-s3-high-performance) installed
+- [awscli](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/) installed
 
 ## Instructions
 

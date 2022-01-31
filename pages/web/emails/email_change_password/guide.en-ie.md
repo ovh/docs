@@ -33,9 +33,9 @@ To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?act
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box.|
-|Continue to [MX Plan legacy version](./#mx-plan-legacy-version).|Continue to [MX Plan new version](./#mx-plan-new-version).|
+|Continue to [MX Plan legacy version](#mx-legacy).|Continue to [MX Plan new version](#mx-new).|
 
-### MX Plan new version
+### MX Plan new version <a name="mx-new"></a>
 
 If you are using the new version of the MX Plan solution, this is what you should see. If not, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions).  
 
@@ -87,7 +87,7 @@ Once you have changed your password, you can access your email address. There ar
 
 - **Using compatible email software:** you will need to enter the new password on all of the devices your email address is linked to. To do this, a window may appear automatically, prompting you to enter your password. Otherwise, you can [refer to our configuration guides](../) or contact the publisher of the software or application you are using, as the process may be specific to the tool.
 
-### MX Plan legacy version
+### MX Plan legacy version <a name="mx-legacy"></a>
 
 If you are using the legacy version of the MX Plan solution, this is what you should see. If not, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions). 
 

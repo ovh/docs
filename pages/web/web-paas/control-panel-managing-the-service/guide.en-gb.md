@@ -16,8 +16,8 @@ The subscription details and attributes of your Web PaaS projects can be managed
 
 ## Requirements
 
-- a [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/) in your OVHcloud account (find the details in [this guide](../web-paas-manager-setup/))
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/) in your OVHcloud account (find the details in [this guide](../web-paas-manager-setup/))
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 

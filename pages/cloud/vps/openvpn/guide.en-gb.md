@@ -6,18 +6,24 @@ section: 'Advanced usage'
 hidden: true
 ---
 
-**Last updated 24th June 2021**
+**Last updated 20th January 2022**
 
 ## Objective
 
-OpenVPN is a software giving you the possibility to create a Virtual Private Network (VPN). Using the OVHcloud VPS template for an OpenVPN server, you will be able to install and use your personal VPN service within a few steps.
+OpenVPN is a protocol allowing you to create a Virtual Private Network (VPN). Using the OVHcloud VPS template for an OpenVPN server, you will be able to install and use your personal VPN service within a few steps.
 
 **This guide explains how to create your own VPN service with a VPS and OpenVPN.**
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an OVHcloud [VPS service](https://www.ovhcloud.com/en-gb/vps/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps) with a GNU/Linux OS installed in your OVHcloud account
+
+> [!warning]
+>This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
+>
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with [our community](https://community.ovh.com/en/). OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Instructions
 

@@ -211,4 +211,4 @@ Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dis
 [Rescue Mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
 
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

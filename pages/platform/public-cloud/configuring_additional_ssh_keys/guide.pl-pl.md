@@ -18,7 +18,10 @@ Przewodnik ten wyjaśnia, jak skonfigurować dla instancji dodatkowe klucze SSH,
 
 - Instancja
 
-
+> [!primary]
+>
+Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
+>
 
 
 ## Utworzenie klucza SSH

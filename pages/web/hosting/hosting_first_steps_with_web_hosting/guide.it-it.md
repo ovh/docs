@@ -167,4 +167,4 @@ Per maggiori informazioni su questo servizio, consulta la nostra [guida all’ut
 
 [Certificati SSL sugli hosting Web](https://docs.ovh.com/it/hosting/i_certificati_ssl_sugli_hosting_web_ovh/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

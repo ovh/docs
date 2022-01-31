@@ -33,9 +33,9 @@ Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?actio
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
 |![E-Mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Ihr Angebot steht in der Box „Abo“|![E-Mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Die „Server-Referenz“ steht in der Box „Zusammenfassung“.|
-|Weiter zur [historischen MX Plan Version](./#historische-mx-plan-version_2)|Weiter zur [neuen MX Plan Version](./#neue-mx-plan-version)|
+|Weiter zur [historischen MX Plan Version](./#historische-mx-plan-version_2)|Weiter zur [neuen MX Plan Version](#mx-new)|
 
-### Neue MX Plan Version
+### Neue MX Plan Version <a name="mx-new"></a>
 
 Sie verfügen über die neue MX Plan Version und sollten die nachfolgende Anzeige sehen. Ist das nicht der Fall, überprüfen Sie [mithilfe der oben stehenden Informationen](./#beschreibung), dass Sie den richtigen Schritten folgen.  
 
@@ -87,7 +87,7 @@ Nachdem Sie das Passwort geändert haben, können Sie auf Ihre E-Mail-Adresse zu
 
 - **Kompatiblen E-Mail-Client verwenden**: Das neue Passwort muss auf allen Geräten verwendet werden, auf denen die E-Mail-Adresse eingerichtet ist. Es kann sein, dass automatisch ein Fenster angezeigt wird, in dem Sie das neue Passwort eingeben sollen. Ist das nicht der Fall, [nutzen Sie unsere Konfigurationsanleitungen](../) oder wenden Sie sich an den Herausgeber der verwendeten Software oder Anwendung, falls der Vorgang von dieser abhängig ist.
 
-### Historische MX Plan Version
+### Historische MX Plan Version <a name="mx-legacy"></a>
 
 Sie verfügen über die historische MX Plan Version und sollten die nachfolgende Anzeige sehen. Ist das nicht der Fall, überprüfen Sie [mithilfe der oben stehenden Informationen](./#beschreibung), dass Sie den richtigen Schritten folgen. 
 

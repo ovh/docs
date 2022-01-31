@@ -75,7 +75,7 @@ By changing the runtime environment, you can edit certain technical values for y
 |Environment|Legacy|Stable|Stable64|
 |---|---|---|---|
 |architecture|32 bits|32 bits|64 bits|
-|Minimum PHP version|5.6|7.3|7.4|
+|Maximum PHP version|5.6|7.3|7.4|
 |Openssl|1.0.1t|1.0.1t|1.1.1d|
 |Python|2.7 and 3.4|2.7 and 3.7|2.7 and 3.7|
 |Ruby|2.1|2.1|2.5|
@@ -96,7 +96,7 @@ Once you have chosen your runtime environment, you can change it in two differen
 
 #### PHP version
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovhcloud.com/en-ca/web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovhcloud.com/en-ca/web-hosting/uc-programming-language/>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 

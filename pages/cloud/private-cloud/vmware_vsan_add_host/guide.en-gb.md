@@ -5,46 +5,62 @@ excerpt: 'Find out how to add an ESXi server to an existing vSAN cluster'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 18/09/2020**
+**Last updated 22nd December 2021**
 
 ## Objective
 
-This guide explains how to add an ESXi server to an existing vSAN cluster. You can add a host when you order a new server, or when you replace a faulty server.
+This guide explains how to add a new ESXi server storage to an existing vSAN cluster.
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the vSphere management interface
-- an ESXi server available and integrated into a vSAN cluster
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- A deployed [vSan Datastore](https://docs.ovh.com/gb/en/private-cloud/vmware-vsan/)
 
 ## Instructions
 
-Since OVHcloud servers are automatically preconfigured on delivery, adding a host to a vSAN cluster simply specifies which disks will be integrated into the datastore.
+### Order a new vSan host
 
-Once connected to vCenter, go to the `Hosts and Clusters`{.action} menu, select the concerned cluster, click on the `Configure`{.action} tab and select the `vSAN`{.action} menu and then `Disk Management`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with your administrative credentials.
 
-In the `Disk Groups`{.action} table, select the new ESXi server and ensure that no disk is assigned to the vSAN datastore (the `Disks in Use` column should be 0 of X).
+In the `Hosted Private Cloud`{.action} section, select your datacenter and go to the `Hosts`{.action} tab.<br>
+Click on the `Order a Host`{.action} button.
 
-![disk management](images/01.png){.thumbnail}
+![ORDER](images/en02order.png){.thumbnail}
 
-Click on the icon with a green `+`{.action}. In the `Create Disk Group` window, select the cache disk and capacity disk(s) and click `OK`{.action}.
+Select the fitting vSAN host for your need and click `Confirm Order`{.action}
 
-> [!primary]
->
-> Please refer to the server hardware configuration to determine which disks are for cache or capacity.
->
+![ORDER](images/en03hosttype.png){.thumbnail}
 
-![disk group](images/02.png){.thumbnail}
+Verify the recap of your order and click `Next`{.action}
 
-You can track the progress of the disk group creation task in the `Recent Tasks` window.
+Check the boxes to accept the terms and conditions and go on to the payment. You will get an order confirmation.
 
-![recent tasks](images/03.png){.thumbnail}
+The new host will be automatically integrated to your infrastructure and you will receive a confirmation email when it is ready for use in vSphere.
 
-Once the task is complete, the `Disks in Use` column should indicate that all disks on the server are integrated into the cluster.
+### Add new vSan host storage to your datastore
 
-![disk cluster](images/04.png){.thumbnail}
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-The ESXi server is now fully integrated into the vSAN cluster, and its disks are usable by the datastore.
+![Menu](images/en07hosts.png){.thumbnail}
+
+You should see your new host in the cluster.<br>
+On the left side, select your cluster, go in the `Configure`{.action} tab then `vSAN`{.action} / `Disk Management`{.action}.<br>
+Click on `Claim Unused Disks`{.action}.
+
+![vSAN](images/en08cluster.png){.thumbnail}
+
+Available disks are assigned to cache or capacity (see [Official VMware VSAN page](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vsan-planning.doc/GUID-18F531E9-FF08-49F5-9879-8E46583D4C70.html){.external} for explanation) depending on types and sizes. You can customize it to your need.
+
+Click on `Create`{.action} when ready.
+
+![vSAN](images/en09claim.png){.thumbnail}
+
+The new disk group will take some time to be created and added to the vSAN datastore.
+
+![vSAN](images/en10progress.png){.thumbnail}
+
+Once done, the datastore is ready for use with the added storage.
 
 ## Go further
 

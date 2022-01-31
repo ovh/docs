@@ -152,13 +152,13 @@ Usuń z pliku „authorized_keys” klucz odpowiadający użytkownikowi, któreg
 
 Panel klienta OVHcloud umożliwia przechowywanie kluczy publicznych utworzonych przy użyciu jednego z obsługiwanych typów szyfrowania (obecnie RSA, ECDSA, ED25519). 
 
-Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Produkty i usługi`{.action}.
+Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Zarządzanie usługami`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 W obszarze „Moje usługi” przełącz się na kartę `Klucze SSH`{.action} i kliknij pozycję `Dodaj klucz SSH`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Z menu rozwijanego wybierz pozycję „Dedykowane”.
 

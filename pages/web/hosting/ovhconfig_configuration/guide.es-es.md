@@ -164,4 +164,4 @@ En ese caso, debe crear un archivo .ovhconfig específico para el sitio web corr
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

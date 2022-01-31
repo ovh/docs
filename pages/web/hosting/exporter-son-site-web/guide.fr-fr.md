@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 14/01/2020**
+**Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
@@ -42,7 +42,7 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [ FileZilla ](../mutualise-guide-utilisation-filezilla/). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 
 #### 1.2 Télécharger les fichiers depuis votre espace de stockage.
 
@@ -69,13 +69,10 @@ Si vous utilisez une base de données **SQL privé** pour votre site Web, consul
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`{.action} puis sur`Statistiques et logs`{.action}.
+Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 
-Cliquez ensuite sur le lien sous la mention **Logs** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
 
@@ -101,7 +98,7 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-[Utilisation logiciel FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
 
 [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 

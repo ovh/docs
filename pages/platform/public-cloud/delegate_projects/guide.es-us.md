@@ -1,6 +1,6 @@
 ---
 title: 'Delegar proyectos'
-excerpt: 'Cómo delegar permisos técnicos a otras cuentas OVHcloudcloud para un proyecto Public Cloud'
+excerpt: 'Cómo delegar permisos técnicos a otras cuentas OVHcloud para un proyecto Public Cloud'
 slug: delegar_proyectos
 legacy_guide_number: g1914
 section: 'Gestión del proyecto'
@@ -12,7 +12,7 @@ section: 'Gestión del proyecto'
 
 Si necesita dar acceso a algunos de sus proyectos a otros usuarios, puede hacerlo, pero, por una cuestión de seguridad, no tendrán la posibilidad de interactuar en todos sus servicios. 
 
-En este caso, es totalmente factible delegar uno o varios proyectos a otras cuentas OVHcloudcloud, tanto en modo lectura como en lectura-escritura.
+En este caso, es totalmente factible delegar uno o varios proyectos a otras cuentas OVHcloud, tanto en modo lectura como en lectura-escritura.
 
 En esta guía, explicaremos cómo hacerlo.
 
@@ -32,14 +32,14 @@ Conéctese a su [área de cliente](https://ca.ovh.com) y seleccione `Public Clou
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
 
-En este menú, podrá dDelegar sus proyectos a otras cuentas OVHcloudcloud.
+En este menú, podrá dDelegar sus proyectos a otras cuentas OVHcloud.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects2.png){.thumbnail}
 
 ### Configuración de la delegación
 
-Haga clic en el botón`Añadir,`{.action}luego ingrese el usuario (con el formato xx000000-ovh) de la cuenta OVHcloudcloud que desea añadir y el tipo de permiso que le asociará.
+Haga clic en el botón`Añadir,`{.action}luego ingrese el usuario (con el formato xx000000-ovh) de la cuenta OVHcloud que desea añadir y el tipo de permiso que le asociará.
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects3.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Una vez que la adición fue validada y la página se recargó, podrá controlar 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects4.png){.thumbnail}
 
-Las cuentas OVHcloudcloud que se añadieron de este modo podrán encontrar el proyecto en su propia área de cliente Public Cloud.
+Las cuentas OVHcloud que se añadieron de este modo podrán encontrar el proyecto en su propia área de cliente Public Cloud.
 
 ## Más información
 

@@ -2,7 +2,7 @@
 title: Używanie weryfikacji dwuetapowej (2FA) w infrastrukturze Private Cloud
 slug: uzywanie-2FA
 excerpt: Dowiedz się, jak wdrożyć weryfikację dwuetapową, aby chronić Twoją infrastrukturę
-section: Funkcje OVH
+section: Funkcjonalności OVHcloud
 order: 05
 ---
 

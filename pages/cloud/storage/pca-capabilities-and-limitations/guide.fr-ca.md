@@ -268,7 +268,7 @@ Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <https://public-cloud.status-ovhcloud.com/incidents/gwqhdkprm136>
 
 ## Aller plus loin
 

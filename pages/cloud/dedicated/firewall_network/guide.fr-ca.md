@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Firewall Network'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 14/06/2019**
+**Dernière mise à jour le 23/12/2021**
 
 ## Objectif
 
@@ -37,17 +37,17 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-`{.action}Connectez-vous à[ l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
+Connectez-vous à[ l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
 
-![Activation du Firewall Network](images/firewall_creation_2020.png){.thumbnail}
+![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
 
 Vous serez alors invité à confirmer votre action.
 
-![Confirmation](images/creationvalid_2020.png){.thumbnail}
+![Confirmation](images/creationvalid.png){.thumbnail}
 
 Cliquez ensuite sur ` Activer le firewall`{.action} (1), puis sur ` Configurer le firewall`{.action} (2) pour commencer le paramétrage.
 
-![Activation de la configuration](images/activationconfig_2020.png){.thumbnail}
+![Activation de la configuration](images/activationconfig.png){.thumbnail}
 
 Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
@@ -62,7 +62,7 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 > [!primary]
 >
 > - La fragmentation UDP est bloquée (DROP) par défaut. Lorsque vous activez le Firewall Network, n'oubliez pas de configurer correctement votre unité de transmission maximale (<i>Maximum Transmission Unit</i> ou MTU) si vous utilisez un VPN. Par exemple, sur OpenVPN, vous pouvez cocher `MTU test`{.action} .
-> - Le Firewall Network n'est pas pris en compte au sein du réseau OVH. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
+> - Le Firewall Network n'est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
 >
 
 
@@ -70,7 +70,7 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
 
-![Ajouter une règle](images/ajoutregle1_2020.png){.thumbnail}
+![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
 - une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
@@ -81,7 +81,7 @@ Pour chaque règle, vous devez choisir :
 - le port de destination (TCP uniquement) ;
 - les options TCP (TCP uniquement).
 
-![Détails sur l'ajout d'une règle](images/ajoutregle4_2020.png){.thumbnail}
+![Détails sur l'ajout d'une règle](images/ajoutregle4.png){.thumbnail}
 
 
 > [!primary]
@@ -94,7 +94,7 @@ Pour chaque règle, vous devez choisir :
 
 Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (10 000) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
 
-![Exemple de configuration](images/exemple_2020.png){.thumbnail}
+![Exemple de configuration](images/exemple.png){.thumbnail}
 
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet reçu.
 
@@ -104,6 +104,23 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 >
 > Si notre solution anti-DDoS limite une attaque, votre Firewall Network sera activé, même si vous l'avez désactivé par défaut. Si vous souhaitez le désactiver, n'oubliez pas de supprimer vos règles.
 > 
+
+### Configurer le pare-feu Armor (Firewall Game)
+
+> [!primary]
+> Par défaut, le pare-feu Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
+>
+
+Afin de configurer les règles de vos ports sur Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
+Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la section `IP`{.action} dans la barre latérale de gauche. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
+
+![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. Le pare-feu Armor a maintenant été configuré avec succès.
 
 ## Aller plus loin
 

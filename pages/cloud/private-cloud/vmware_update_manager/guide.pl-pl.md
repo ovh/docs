@@ -11,7 +11,7 @@ order: 09
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 23-11-2021**
+**Ostatnia aktualizacja z dnia 09-12-2021**
 
 ## Wprowadzenie
 
@@ -87,7 +87,19 @@ Streszczenie zgodności zostaje zaktualizowane.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Wróć do sekcji `Attached Baselines`, wybierz wszystkie przydzielone linie bazowe i kliknij `Remediate`{.action}.
+Wróć do sekcji `Attached Baselines`, wybierz wszystkie przydzielone linie bazowe i kliknij `Stage`{.action} pośrednie.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Wybierz host i kliknij ponownie `Stage`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+Proces transferu rozpoczyna się i będzie trwał w zależności od liczby i rozmiaru poprawek.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+Zawsze w sekcji `Attached Baselines`, wybierz wszystkie przydzielone linie bazowe i kliknij `Remediate`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 

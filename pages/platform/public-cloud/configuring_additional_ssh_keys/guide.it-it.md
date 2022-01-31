@@ -18,7 +18,10 @@ Questa guida ti mostra come configurare sulla tua istanza le chiavi SSH aggiunti
 
 - Un'istanza
 
-
+> [!primary]
+>
+Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
+>
 
 
 ## Crea la chiave SSH

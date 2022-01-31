@@ -21,6 +21,11 @@ SSH ist ein Protokoll, das den authentifizierten und verschlüsselten Zugriff au
 
 ## In der praktischen Anwendung
 
+> [!primary]
+>
+Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
+>
+
 Es gibt zwei Möglichkeiten, einen SSH-Schlüssel über das Public Cloud Interface hinzuzufügen:
 
 - Die erste und direktere Methode erfolgt zum Zeitpunkt der Erstellung einer Instanz.

@@ -2,7 +2,7 @@
 title: Configurare una VPN per il Piano di Disaster Recovery Zerto OVHcloud
 slug: zerto-virtual-replication-customer-to-ovhcloud
 excerpt: Come configurare un tunnel VPN per connettere una piattaforma Zerto locale al Private Cloud OVHcloud
-section: Servizi e opzioni OVH
+section: Servizi e opzioni OVHcloud
 ---
 
 **Ultimo aggiornamento: 30/06/2020**
