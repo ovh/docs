@@ -56,6 +56,8 @@ Policy enforcement is captured using Kubernetes events. Kyverno also reports pol
 
 Concretely, when you apply a resource on the Kubernetes cluster, the manifest you sent to Kubernetes API must pass many stages before they get created as a resource you desire. Two stages in which we are interesting are **Mutating Admission** and **Validating admission**.
 
+![Kyverno, the cop in a Kubernetes cluster](images/kyverno-cop.png)
+
 Kyverno have many features includes:
 
 - validate and mutate using overlays (like Kustomize!)
