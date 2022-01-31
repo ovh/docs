@@ -6,7 +6,7 @@ section: Sécurité
 order: 01
 ---
 
-**Dernière mise à jour le 28/01/2022**
+**Dernière mise à jour le 31/01/2022**
 
 ## Objectif
 
@@ -129,6 +129,12 @@ Les options fonctionnent ainsi :
 - -p : Vérifie le protocole spécifié (tcp).
 - --dport : Spécifie le port de destination.
 - -j jump : Effectue l'action 
+
+> [!warning]
+> En cas de perte d'accès à votre serveur, vous pouvez toujours utiliser l'outil KVM/IPMI pour y accéder à nouveau et modifier votre configuration ou supprimer vos règles.
+>
+> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/).  
+> 
 
 ### Etape 6 : contrôler le trafic par adresse IP
 
