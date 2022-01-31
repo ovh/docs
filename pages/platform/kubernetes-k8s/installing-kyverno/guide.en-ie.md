@@ -5,7 +5,7 @@ excerpt: Find out how to secure your OVHcloud Managed Kubernetes and deploy Kyve
 section: Tutorials
 ---
 
-**Last updated 19th January, 2021.**
+**Last updated 31th January, 2021.**
 
 <style>
  pre {
@@ -33,10 +33,15 @@ section: Tutorials
 
 [Kyverno](https://kyverno.io) (Greek for “govern”) is a policy engine designed specifically for Kubernetes. 
 
-With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper)). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. Kyverno policies can **validate**, **mutate**, and **generate** Kubernetes resources. 
-The `kyverno` CLI can be used to test policies and validate resources as part of a CI/CD pipeline.
+![Kyverno](images/kyverno-logo.png)
 
-![Kyverno](images/kyverno.png)
+With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which use Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
+
+Kyverno policies can 
+- **validate**
+- **mutate**
+- and **generate** 
+Kubernetes resources.
 
 Kyverno runs as a [dynamic admission controller](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in a Kubernetes cluster. 
 Kyverno receives validating and mutating admission webhook HTTP callbacks from the Kubernetes API-Server and applies matching policies to return results that enforce admission policies or reject requests.
@@ -51,36 +56,33 @@ Policy enforcement is captured using Kubernetes events. Kyverno also reports pol
 
 Concretely, when you apply a resource on the Kubernetes cluster, the manifest you sent to Kubernetes API must pass many stages before they get created as a resource you desire. Two stages in which we are interesting are **Mutating Admission** and **Validating admission**.
 
-TODO: faire une illustration pour expliquer
-//1. mutating admission stage modifies the manifest you sent to the Kubernetes API
-//your manifest is going to be validated based on their object schema (i.e. The fields are the right data type? Do required fields are filled? etc.)
-//3. validation admission stage which will judge if your manifest meet the policy existing the cluster. If there’s no problem, congratulations! Your resource is going to be created. But if not, validating admission will either log the error or reject the creation of that resource depending on your configuration.
-
-TODO: Concretely, you can imagine kyvero like a cop that will check when you apply a manifest if the resource you want you ask kubernetes to create meat/match with the rules you have defined.
-
 Kyverno have many features includes:
 
-- policies as Kubernetes resources (no new language to learn!)
-- validate, mutate, or generate any resource
-- match resources using label selectors and wildcards
 - validate and mutate using overlays (like Kustomize!)
 - synchronize configurations across namespaces
+- scan existing workloads and generate audit reports
 - block non-conformant resources using admission controls, or report policy violations
-- test policies and validate resources using the Kyverno CLI, in your CI/CD pipeline, before applying to your cluster
-- manage policies as code using familiar tools like git and kustomize
-
-Kyverno allows cluster administrators to manage environment specific configurations independently of workload configurations and enforce configuration best practices for their clusters. Kyverno can be used to scan existing workloads for best practices, or can be used to enforce best practices by blocking or mutating API requests.
+- test policies and validate resources using the `kyverno` CLI, in your CI/CD pipeline, before applying to your cluster
 
 Read more about [Kyverno](https://kyverno.io/docs/introduction/).
 
-As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you discover Kyverno which will help you secure your OVHcloud Managed Kubernetes with policy management .
+Securize a Kubernetes cluster is important so thanks to Kyverno you can check several security best practices, for example:
+
+- configure Readiness & Liveness probes
+- configure resource quotas
+- do not use mutable (latest) image tags
+- restrict image registries
+- configure pod security
+- fine-grained RBAC
+
+As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you discover Kyverno which will help you secure your OVHcloud Managed Kubernetes with policy management.
 
 In this guide you will:
 - install Knative
 - write and deploy several policies
 - test the behavior
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -89,9 +91,6 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 ## Instructions
 
 ### Installing Kyverno CLI
-
-The Kyverno Command Line Interface (CLI) is designed to **validate** and **test** policies behavior prior to adding them to a cluster.
-So the best practice is to use the `kyverno` CLI in your CI/CD pipelines to assist with the resource authoring process to ensure they conform to standards prior to them being deployed.
 
 You can install the CLI [using Krew](https://kyverno.io/docs/kyverno-cli/#install-via-krew) or [building the CLI from source](https://kyverno.io/docs/kyverno-cli/#building-the-cli-from-source) by example.
 
@@ -151,7 +150,7 @@ $ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
 </code></pre>
 
 > [!warning]
->The `kyverno` CLI installation using Krew is not working for the moment [for MacBook Air M1 device](https://github.com/kyverno/kyverno/issues/3020).
+>The `kyverno` CLI installation using Krew is not working for the moment [for MacBook Air M1 device](https://github.com/kyverno/kyverno/issues/3020). The fix is planned for Kyverno v1.6 release.
 >
 
 After the installation, check that the `kyverno` CLI is working:
@@ -166,8 +165,10 @@ You should have a behavior like this:
 Version: v1.5.0-rc1-223-gf0359f82
 Time: 2022-01-19_12:10:05
 Git commit ID: main/f0359f8272a181923db0704696803d44a43f69f8
-
 </code></pre>
+
+The Kyverno Command Line Interface (CLI) is designed to **validate** and **test** policies behavior prior to adding them to a cluster.
+So the best practice is to use the `kyverno` CLI in your CI/CD pipelines to assist with the resource authoring process to ensure they conform to standards prior to them being deployed.
 
 ### Installing Kyverno
 
@@ -213,6 +214,12 @@ Thank you for installing kyverno v2.1.6 😀
 Your release is named kyverno, app version v1.5.4
 </code></pre>
 
+> [!info]
+>
+> You can also [install Kyverno in HA (High Availability) mode](https://kyverno.io/docs/high-availability/) with the following command:
+> `helm install kyverno kyverno/kyverno -n kyverno --create-namespace --set=replicaCount=3`
+>
+
 You can check if the Kyverno pod is correctly running:
 
 <pre class="console"></code>$ kubectl get pods -n kyverno
@@ -220,42 +227,45 @@ NAME                       READY   STATUS    RESTARTS   AGE
 kyverno-554ffb4c96-f2lvs   1/1     Running   0          50s
 </code></pre>
 
-## Create and deploy policies
+And you can check that Kyverno installed several webhooks on your cluster:
 
-Kyverno is running on your OVHcloud Managed Kubernetes cluster so now you can simply create and deploy policies with the rules you want to put in place in our cluster.
+<pre class="console"><code>$ kubectl get validatingwebhookconfigurations,mutatingwebhookconfigurations
+NAME                                                                                                  WEBHOOKS   AGE
+validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-validating-webhook-cfg     1          52s
+validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-validating-webhook-cfg   2          52s
+
+NAME                                                                                              WEBHOOKS   AGE
+mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-mutating-webhook-cfg     1          52s
+mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-mutating-webhook-cfg   2          52s
+mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-verify-mutating-webhook-cfg     1          52s
+</code></pre>
+
+### Create and deploy policies
+
+Kyverno is running on your OVHcloud Managed Kubernetes cluster so now you can simply create and deploy policies with the rules you want to put in place in your cluster.
 
 In this guide we will show you how to create several policies that will:
 
 - deny to deploy resources in the `default` namespace
-- deny to deploy resources if the image tag is equals to `latest`
-- sets the **imagePullPolicy** to **IfNotPresent** if the image tag is equals to `latest`
+- create automatically a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno`
+- add automatically a label to Pods, Services, ConfigMaps, and Secrets in a given namespace
 
-### Policy 1: Forbid to deploy deployments in the `default` namespace
+#### Policy 1: Disallow deploying deployments in the `default` namespace
 
 For our first example we want to deny to deploy resources in the `default` namespace.
 
 Why? Because it's a good practice to isolate workloads/applications with Namespaces. One namespace per project/team/...
 So imagine if several diferents teams deploy different applications in the `default` namespace, they will not be isolated.
 
-Create a new policy in a `disallow-default-namespace.yaml` file:
+The policy will validate or not if new resources  can be deployed, so we will create a `validate` policy.
+
+Create a new policy in a `policy-disallow-default-namespace.yaml` file:
 
 ```yaml
 apiVersion: kyverno.io/v1
 kind: ClusterPolicy
 metadata:
   name: disallow-default-namespace
-  annotations:
-    pod-policies.kyverno.io/autogen-controllers: none
-    policies.kyverno.io/title: Disallow Default Namespace
-    policies.kyverno.io/category: Multi-Tenancy
-    policies.kyverno.io/severity: medium
-    policies.kyverno.io/subject: Pod
-    policies.kyverno.io/description: >-
-      Kubernetes Namespaces are an optional feature that provide a way to segment and
-      isolate cluster resources across multiple applications and users. As a best
-      practice, workloads should be isolated with Namespaces. Namespaces should be required
-      and the default (empty) Namespace should not be used. This policy validates that Pods
-      specify a Namespace name other than `default`.
 spec:
   validationFailureAction: enforce
   rules:
@@ -265,7 +275,7 @@ spec:
         kinds:
         - Pod
     validate:
-      message: "Using 'default' namespace is not allowed."
+      message: "Using \"default\" namespace is not allowed."
       pattern:
         metadata:
           namespace: "!default"
@@ -288,7 +298,7 @@ spec:
         - Job
         - StatefulSet
     validate:
-      message: "Using 'default' namespace is not allowed for pod controllers."
+      message: "Using \"default\" namespace is not allowed for pod controllers."
       pattern:
         metadata:
           namespace: "!default"
@@ -309,18 +319,18 @@ spec:
 
 > [!info]
 >
-> The **validationFailureAction** policy attribute controls admission is set to **enforce** to block **resource creation or updates** when the resource are non-compliant. Using the default value **audit** will report violations (in a **PolicyReport** or **ClusterPolicyReport**) but not block requests.
+> The **validationFailureAction** policy attribute that controls admission is set to **enforce** to block **resource creation or updates** when the resource is non-compliant. Using the default value **audit** will report violations (in a **PolicyReport** or **ClusterPolicyReport**) but will not block requests.
 >
 
-To deploy the Kyverno policy in the cluster, just copy/paste the following command to apply the YAML file:
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
 
 ```yaml
-kubectl apply -f disallow-default-namespace.yaml
+kubectl apply -f policy-disallow-default-namespace.yaml
 ```
 
 After applying the policy, check if the policy have been correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f disallow-default-namespace.yaml
+<pre class="console"><code>$ kubectl apply -f policy-disallow-default-namespace.yaml
 clusterpolicy.kyverno.io/disallow-default-namespace created
 
 $ kubectl get clusterpolicy
@@ -330,7 +340,7 @@ disallow-default-namespace   true         enforce    true
 
 > [!info]
 >
-> With Kyverno installation, [new CRDs](https://kyverno.io/docs/crds/) have been added. The one who interested us is the new resource type `ClusterPolicy`. So in order to list, display, edit and remove Kyverno policies, you can execute `kubectl` command with `ClusterPolicy` resource object type.
+> With Kyverno installation, [new CRDs](https://kyverno.io/docs/crds/) have been added. The one who interested us is the new resource type `ClusterPolicy`. So in order to list, display, edit and remove Kyverno policies, you can execute `kubectl` command with `ClusterPolicy` resource object type. Ex: `kubectl get clusterpolicy` or `kubectl get cpol` with the short name.
 >
 
 Now you will try to deploy a simple application in the `default` namespace.
@@ -361,71 +371,221 @@ Error from server: error when creating "my-pod.yaml": admission webhook "validat
 resource Pod/default/my-pod was blocked due to the following policies
 
 disallow-default-namespace:
-  validate-namespace: 'validation error: Using ''default'' namespace is not allowed.
+  validate-namespace: 'validation error: Using "default" namespace is not allowed.
     Rule validate-namespace faisled at path /metadata/namespace/'
 </code></pre>
 
 Perfect, you no longer have the abbility to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
 
-### xx
+#### Policy 2: Create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno` 
 
-xxx
+For our second example we want to create a `generate` policy that will create a new ConfigMap called `zk-kafka-address` in all new namespaces excepted `kube-system`, `kube-public` and `kyverno`.
 
-
-xx
-
-
-
-
-### Debugging / validating
-
-TODO: xxx utiliation de la cli, parfait dans une chaine de ci cd notamment, ou en debug en local sur votre machine de dev/test avant d deployer votre policy sur le cluster distant
-
-xxxx
+Create a new policy in a `policy-generate-cm.yaml` file:
 
 ```yaml
-xxxx
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: zk-kafka-address
+spec:
+  rules:
+  - name: k-kafka-address
+    match:
+      resources:
+        kinds:
+        - Namespace
+    exclude:
+      resources:
+        namespaces:
+        - kube-system
+        - kube-public
+        - kyverno
+    generate:
+      synchronize: true
+      kind: ConfigMap
+      name: zk-kafka-address
+      # generate the resource in the new namespace
+      namespace: "{{request.object.metadata.name}}"
+      data:
+        kind: ConfigMap
+        metadata:
+          labels:
+            somekey: somevalue
+        data:
+          ZK_ADDRESS: "192.168.10.10:2181,192.168.10.11:2181,192.168.10.12:2181"
+          KAFKA_ADDRESS: "192.168.10.13:9092,192.168.10.14:9092,192.168.10.15:9092"
 ```
 
-xxxx
+> [!info]
+>
+> When the `synchronize` attribute is set to `true`, modifications will be synchronized to the generated resources. So in our case, if you change the values of `ZK_ADDRESS` and `KAFKA_ADDRESS` for example, all the created ConfigMap will be updated.
+>
 
-<pre class="console"><code>
-$ kyverno validate disallow-default-namespace.yaml
-----------------------------------------------------------------------
-Policy disallow-default-namespace is valid.
-</code></pre>
-
-xxx
-
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
 
 ```bash
-kyverno test xxx
+kubectl apply -f policy-generate-cm.yaml
 ```
 
-xx
+After applying the policy, check if the policy have been correctly applied on the cluster:
 
-TODO: avec un vrai exemple a moi ...
+<pre class="console"><code>$ kubectl apply -f policy-generate-cm.yaml
+clusterpolicy.kyverno.io/zk-kafka-address created
 
-<pre class="console"><code>
-kyverno test https://github.com/kyverno/policies/pod-security --git-branch main
-    <snip>
-
-    Executing require-non-root-groups...
-    applying 1 policy to 2 resources...
-
-    │───│─────────────────────────│──────────────────────────│──────────────────────────────────│────────│
-    │ # │ POLICY                  │ RULE                     │ RESOURCE                         │ RESULT │
-    │───│─────────────────────────│──────────────────────────│──────────────────────────────────│────────│
-    │ 1 │ require-non-root-groups │ check-runasgroup         │ default/Pod/fs-group0            │ Pass   │
-    │ 2 │ require-non-root-groups │ check-supplementalGroups │ default/Pod/fs-group0            │ Pass   │
-    │ 3 │ require-non-root-groups │ check-fsGroup            │ default/Pod/fs-group0            │ Pass   │
-    │ 4 │ require-non-root-groups │ check-supplementalGroups │ default/Pod/supplemental-groups0 │ Pass   │
-    │ 5 │ require-non-root-groups │ check-fsGroup            │ default/Pod/supplemental-groups0 │ Pass   │
-    │ 6 │ require-non-root-groups │ check-runasgroup         │ default/Pod/supplemental-groups0 │ Pass   │
-    │───│─────────────────────────│──────────────────────────│──────────────────────────────────│────────│
-    <snip>
+$ kubectl get cpol -A
+NAME                         BACKGROUND   ACTION    READY
+disallow-default-namespace   true         enforce   true
+zk-kafka-address             true         audit     true
 </code></pre>
 
+The `generate` rule is triggered during the API CREATE operation, so for this policy when a new namespace is created.
+
+In order to test the behavior of this policy, you will create a new namespace `test2`:
+
+```bash
+kubectl create ns test2
+```
+
+And then check if the new ConfigMap appear in the new `test2` namespace:
+
+```bash
+kubectl get cm -A
+```
+
+You should have results like these:
+
+<pre class="console"><code>$ kubectl create ns test2
+namespace/test2 created
+
+$ kubectl get cm -A
+NAMESPACE         NAME                                 DATA   AGE
+default           kube-root-ca.crt                     1      7d20h
+kube-node-lease   kube-root-ca.crt                     1      7d20h
+kube-public       kube-root-ca.crt                     1      7d20h
+kube-system       canal-config                         5      7d20h
+kube-system       coredns                              1      7d20h
+kube-system       extension-apiserver-authentication   6      7d20h
+kube-system       kube-dns-autoscaler                  1      7d20h
+kube-system       kube-proxy                           1      7d20h
+kube-system       kube-root-ca.crt                     1      7d20h
+kyverno           kube-root-ca.crt                     1      7d19h
+kyverno           kyverno                              2      7d19h
+kyverno           kyverno-metrics                      1      7d19h
+test              kube-root-ca.crt                     1      7d16h
+test2             kube-root-ca.crt                     1      2m28s
+test2             zk-kafka-address                     2      2m27s
+</code></pre>
+
+As you can see the ConfigMap `zk-kafka-address` have been created in the new `test2` namespace.
+
+#### Policy 3: Add a label `app: my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in a given namespace
+
+The aim of this policy is to automatically adds a label `app=my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in the namespaces `team-a`.
+
+In order to do that, we will show you how to deploy a `mutate` policy.
+
+> [!info]
+>
+> Resource `mutation` occurs before `validation`, so the validation rules should not contradict the changes performed by the mutation section.
+>
+
+Create a new policy in a `policy-add-label.yaml` file:
+
+```yaml
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+metadata:
+  name: add-label    
+spec:
+  rules:
+  - name: add-label
+    match:
+      resources:
+        kinds:
+        - Pod
+        - Service
+        - ConfigMap
+        - Secret
+        namespaces:
+        - team-a
+    mutate:
+      patchStrategicMerge:
+        metadata:
+          labels:
+            app: my-awesome-app
+``` 
+
+To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
+
+```yaml
+kubectl apply -f policy-add-label.yaml
+```
+
+After applying the policy, check if the policy have been correctly applied on the cluster:
+
+<pre class="console"><code>$ kubectl apply -f policy-add-label.yaml
+clusterpolicy.kyverno.io/add-label created
+
+$ kubectl get cpol -A
+NAME                         BACKGROUND   ACTION    READY
+add-label                    true         audit
+disallow-default-namespace   true         enforce   true
+zk-kafka-address             true         audit     true
+</code></pre>
+
+Now you can create a new namespace `team-a`, deploy a new Pod into it and check if the new label have been correctly added automatically:
+
+```bash
+kubectl create ns team-a
+
+kubectl apply -f my-pod.yaml -n team-a
+
+kubectl get pod my-pod -n team-a --show-labels
+```
+
+> [!info]
+>
+> Previously in this guide we show you the creation of a Pod in a file named `my-pod.yaml`, so in this step you can reuse it.
+>
+
+You should obtain the following results:
+
+<pre class="console"><code>$ kubectl create ns team-a
+namespace/team-a created
+
+$ kubectl apply -f my-pod.yaml -n team-a
+pod/my-pod created
+
+$ kubectl get pod my-pod -n team-a --show-labels
+NAME     READY   STATUS    RESTARTS   AGE   LABELS
+my-pod   1/1     Running   0          29s   app=my-awesome-app
+</code></pre>
+
+### Debugging/validating
+
+Previously in this guide we show you how to install the `kyverno` CLI. With this CLI you can [apply](https://kyverno.io/docs/kyverno-cli/#apply), [test](https://kyverno.io/docs/kyverno-cli/#test) and [validate](https://kyverno.io/docs/kyverno-cli/#validate) policies.
+
+In this tutorial we want to show you that the CLI is perfect for a usage on your local machine (for dev/test usages) and in your CI/CD pipelines in order to test & validate the policies you want to deploy in production are correct.
+
+You can for example check if policies we created are validated with the `kyverno validate` command:
+
+```bash
+kyverno validate *.yaml
+```
+
+You should obtain results like these:
+
+<pre class="console"><code>$ kyverno validate *.yaml
+----------------------------------------------------------------------
+Policy disallow-default-namespace is valid.
+
+----------------------------------------------------------------------
+Policy add-label is valid.
+
+----------------------------------------------------------------------
+Policy zk-kafka-address is valid.
+</code></pre>
 
 ### Troubleshooting
 
@@ -440,38 +600,18 @@ If you have any questions or troubles about Kyverno, you can also go to [Kyverno
 
 Having a policy management is a good practice to follow. It will help you to keep your cluster clean and secure. Next time we will see another tutorial that will help you to secure your OVHcloud Managed Kubernetes clusters.
 
-### Cleanup
+## Cleanup
 
-TODO: xxx
+First, remove the `ClusterPolicies` you deployed in this guide:
 
-
-If you want, you can uninstall Knative apps, serving and core components.
-
-First, delete our Hello World app:
-
-```
-kubectl delete -f service.yaml -n knative-apps
+```bash
+kubectl delete cpol --all
 ```
 
-Then, delete Knative CRDs:
+To uninstall Kyverno, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Kyverno Helm installed chart:
 
-```
-kubectl api-resources -o name | grep knative | xargs kubectl delete crd
-```
-
-Then, delete Knative resources:
-
-```
-kubectl -n knative-serving delete po,svc,daemonsets,replicasets,deployments,rc,secrets --all
-kubectl -n kourier-system delete po,svc,daemonsets,replicasets,deployments,rc,secrets --all
-```
-
-Finally, delete namespaces:
-
-```
-kubectl delete namespace knative-serving
-kubectl delete namespace kourier-system
-kubectl delete namespace knative-apps
+```bash
+helm uninstall kyverno kyverno/kyverno --namespace kyverno
 ```
 
 ## Go further
