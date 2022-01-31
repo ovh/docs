@@ -4,6 +4,7 @@ excerpt: Encontrará nesta página os diferentes guias relativos ao ficheiro .ht
 id: '1967'
 slug: partilhado_tudo_sobre_o_ficheiro_htaccess
 legacy_guide_number: g1967
+hidden: true
 ---
 
 

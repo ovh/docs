@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 19<sup>th</sup> October 2021.**
+**Last updated 31<sup>st</sup> January 2021.**
 
 <style>
  pre {
@@ -53,21 +53,26 @@ The lifespan of the external Load Balancer (and thus the associated IP address) 
 There is a default quota of 200 external Load Balancers per Openstack project (also named Openstack tenant).
 This limit can be exceptionally raised upon request through our support team.
 
-There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
+There is also a limit of __10 open ports__ on every Load Balancer, and these ports must be in a range between __6 and 65535__.
 (Additionally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
+
+A Public Cloud Load Balancer has the following non-configurable timeouts:
+
+- 20 seconds for the backend connection to be established
+- 180 seconds for the client & server connections
 
 ## OpenStack
 
-Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVH Public Cloud. As such, you can see them in the `Compute` > `Instances` section of [OVH Public Cloud Manager](https://www.ovh.com/manager/public-cloud/). It doesn't mean that you can deal directly with these nodes and persistent volumes as other cloud instances.
+Our Managed Kubernetes service is based on OpenStack, and your nodes and persistent volumes are built on it, using OVHcloud Public Cloud. As such, you can see them in the `Compute` > `Instances` section of your [OVHcloud Public Cloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Though it doesn't mean that you can deal directly with these nodes and persistent volumes the same way you can do it for other Public Cloud instances.
 
 The *managed* part of OVHcloud Managed Kubernetes Service means that we have configured those nodes and volumes to be part of our Managed Kubernetes.  
-Please refrain from manipulating them from the *OVH Public Cloud Manager* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
+Please refrain from manipulating them from the *OVHcloud Public Cloud Control Panel* (modifying ports left opened, renaming, resizing volumes...), as you could break them.
 
 There is also a limit of __20__ Managed Kubernetes Services by Openstack project (also named Openstack tenant).
 
 ### Node naming
 
-Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.
+Due to known limitations currently present in the `Kubelet` service, be careful to set __a unique name__ to all your Openstack instances running in your tenant __including__ your "Managed Kubernetes Service" nodes and the instances that your start directly on Openstack through manager or API.  
 
 The usage of the __period (`.`)__ character is forbidden in node name. Please, prefer the __dash__ (`-`) character instead.
 
@@ -84,6 +89,9 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### Ports to open from instances to public network (OUTPUT)
 
+- TCP Port 443 (*kubelet*): needed for communication between the kubelets and the Kubernetes API server
+- TCP Port 80 IP 169.254.169.254/32 (*init service*): needed for OpenStack metadata service
+- TCP Ports from 25000 to 31999 (*TLS tunnel*): needed to tunnel traffic between pods and the Kubernetes API server
 - TCP Port 8090 (*internal service*): needed for nodes management by OVHcloud
 - UDP Port 123 (*systemd-timesync*): needed to allow NTP servers synchronization
 - TCP/UDP Port 53 (*systemd-resolve*): needed to allow domain name resolution
@@ -96,7 +104,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ## Private Networks
 
-The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.
+The `vRack` feature is currently available and compliant with our Managed Kubernetes Service.  
 
 To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
 

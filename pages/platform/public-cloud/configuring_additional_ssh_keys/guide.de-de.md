@@ -1,6 +1,6 @@
 ---
 title: 'Zusätzliche SSH-Schlüssel konfigurieren'
-slug: ssh-zusätzliche-schlüssel konfigurieren
+slug: zusaetzliche-ssh-schluessel-konfigurieren
 excerpt: Erfahren Sie hier, wie Sie zusätzliche SSH-Schlüssel auf Ihrer Instanz konfigurieren
 legacy_guide_number: 1924
 section: 'Tutorials'
