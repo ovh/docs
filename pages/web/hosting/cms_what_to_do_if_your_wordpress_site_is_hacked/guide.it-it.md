@@ -44,7 +44,7 @@ Individuiamo la fonte dell'intrusione e analizziamo i 2 casi possibili.
 Prima di effettuare qualsiasi ripristino, è importante verificare la data delle ultime modifiche dei tuoi file Web (FTP)  per trovare e correggere le falle di sicurezza.
 Non è possibile descrivere dettagliatamente la procedura che permette di identificare a colpo sicuro l'origine di qualsiasi intrusione, ma in generale un attacco è possibile a causa di una falla in uno script che l'hacker sfrutta per effettuare una richiesta HTTP.
 
-Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.ovh.net/tuo_dominio).
+Tutte le richieste HTTP sono disponibili nei tuoi log (https://logs.cluster0XX.hosting.ovh.net/tuo_dominio).
 Sostituisci "tuo_dominio" con il tuo dominio e la sua estensione, ad esempio "ovh.com".
 
 - Individua la data e l'ora contenute nell'email che hai ricevuto*
