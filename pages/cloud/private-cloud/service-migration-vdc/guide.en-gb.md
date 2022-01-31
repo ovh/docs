@@ -739,6 +739,10 @@ Please find below a list of Frequently Asked Questions, do not hesitate to submi
 >> Yes, it’s even required to have 2 different PFSENSEs to avoid IP conflicts.
 > Are vxLANs available on both vDC?
 >> The vxLANs are available on Premier only, and not on Essentials (as there is no NSX deployed).
+> What are the differences between upgrading to Essentials or Premier ? 
+>> There are no major differences, only the NSX steps are mandatory when upgrading to Premier and not relevant if you have selected Essentials
+> How much time do we need to plan to upgrade (depending on the number of VMs?)
+>> We have measured transfer speed from 0.5 to 1TB per hour for the Storage Motion Step. Regarding the vMotion, it depends on the size of the VMs, normally less than a minute ; it can take up to 3 minutes.
 > What Microsoft licenses are available in SPLA mode?
 >> Windows licences (standard and datacenter) and SQL server licences (standard and web) are available on 2020 offers in SPLA mode.
 > I have to upgrade 2 VMware infrastructures that are currently used for DR purposes with data replication done by Zerto. Should I first upgrade my secondary infrastructure or my primary infrastructure?

@@ -765,6 +765,10 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Oui, il est même nécessaire d'avoir 2 PFSENSE différents pour éviter les conflits d'IP.
 > Les vxlan sont-ils disponibles sur les deux vDC ?
 >> Les vxlan sont disponibles uniquement sur Premier et non sur Essentials.
+> Quelles sont les limitations/différences au niveau de la migration selon la gamme choisie (Essential et Premier)?
+>> Ils n'y a pas de différences entre un upgrade vers Essentials ou vers Premier, l'unique différence sera sur les étapes liés au composant NSX qui sont nécessaires vers Premier et non pertinente pour un passage vers Essentials
+> Combien de temps faut-il prévoir pour cette migration (en fonction du nombre de VM)?
+>> Les vitesses constatés pour l'étape de Storage Motion sont entre 0.5 et 1To par heure. Concernant le vMotion, cela dépends fortement de la taille de la VM, en moyenne moins d'une minute ; cela peut prendre jusqu'à 3 minutes pour les VM de plusieurs To.
 > Quelles sont les licences Microsoft disponibles en mode SPLA ?
 >> Les licences Windows (standard et datacentre) et SQL Server (standard et web) sont disponibles sur les offres 2020 en mode SPLA.
 > Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
