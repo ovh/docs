@@ -35,9 +35,7 @@ Avant **export**, la machine virtuelle doit être éteinte pour cela nous utilis
 
 ![](images/ovftool5.png){.thumbnail}
 
-Sur le **vCenter** dans les tâches récentes nous voyons l'arrêt de la machine virtuelle concernée en l'occurrence SQL3.
-
-![](images/ovftool4.png){.thumbnail}
+Sur le **vCenter** dans les tâches récentes nous voyons l'arrêt de la machine virtuelle concernée.
 
 Maintenant nous pouvons exporter la machine virtuelle avec la commande suivante
 
