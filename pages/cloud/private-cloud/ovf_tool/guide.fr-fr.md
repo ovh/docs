@@ -5,16 +5,23 @@ legacy_guide_number: '2163202'
 section: Outils de migration des Machines Virtuelles
 ---
 
+**Dernière mise à jour le 31/01/2022**
 
-
-
-
-
-
+## Objectif
 
 [OVFTOOL](https://www.vmware.com/support/developer/ovf/){.external-link} est un outil qui permet d'**exporter/importer** des machines virtuelles au format .OVF (compatible Windows, Linux et Mac).
 
-Dans ce guide nous utilisons l'application OVFTOOL en version 4.0 sous **Linux Debian**.
+**Ce guide est un cas d'étude de l'utilisation de cet outil**
+
+## Prérequis
+
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+
+
+## En pratique
+
+Nous utilisons l'application OVFTOOL en version 4.0 sous **Linux Debian**.
 
 ![](images/ovftool.png){.thumbnail}
 
