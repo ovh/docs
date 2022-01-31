@@ -29,9 +29,7 @@ Pour afficher de l'aide supplémentaire par rapport à cette application utilise
 
 ![](images/ovftool2.png){.thumbnail}
 
-Voici un exemple d'**export** de la machine virtuelle SQL3 provenant du Dedicated Cloud pcc-37-187-228-180.ovh.com au format **.ovf**.
-
-![](images/ovftool3.png){.thumbnail}
+Voici un exemple d'**export** d'une machine virtuelle SQL3 provenant du pcc-37-187-228-180.ovh.com au format **.ovf**.
 
 Avant **export**, la machine virtuelle doit être éteinte pour cela nous utilisons la commande "**ovftool powerOffSource**" comme indiqué dans le **screenshot** ci-dessous.
 
