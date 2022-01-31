@@ -1,31 +1,24 @@
 ---
-title: Présentation du service OVHCloud Load Balancer
+title: Présentation du service OVHcloud Load Balancer
 slug: iplb-presentation
-excerpt: Découvrez le service OVHCloud Load Balancer
+excerpt: Découvrez le service OVHcloud Load Balancer
 section: Premiers pas
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 19/01/2022**
 
 ## Objectif
 
-L'OVHCloud Load Balancer répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+L'offre [OVHcloud Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+
 Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
-En savoir plus sur [OVHCloud Load Balancing](https://www.ovh.com/fr/solutions/load-balancer/){.external}
-
-
-## Prérequis
-
-- Pas de prérequis spécifique
-
 
 ## En pratique
-
  
-Le service OVHCloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
+Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
 
-il peut être utilisé pour fonctionner avec différents protocoles :
+Il peut être utilisé pour fonctionner avec différents protocoles :
 
 |Type|Description|Avantages|Technologie|
 |---|---|---|---|
@@ -33,8 +26,9 @@ il peut être utilisé pour fonctionner avec différents protocoles :
 |TCP|Pour tout service réseau qui n'est pas HTTP|Peut supporter toutes les applications TCP|Haproxy|
 |UDP|Pour tout type de flux UDP|Peut supporter toutes les applications UDP|Nginx|
 
-l'ajout du service ovhcloud load-balancer présente de nombreux fontionnalités :
- - une protection Anti-DDoS OVH ;
+Le service OVHcloud Load Balancer contient de nombreuses fontionnalités :
+
+ - une protection Anti-DDoS OVHcloud ;
  - un support de zones multiples (Anycast) ;
  - un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
  - un service compatible avec une IP Fail-over ;
@@ -43,39 +37,37 @@ l'ajout du service ovhcloud load-balancer présente de nombreux fontionnalités 
 
 ### Parties élémentaires
 
-- Le service OVHCloud Load Balancer se compose de trois parties élémentaires :
+- Le service OVHcloud Load Balancer se compose de trois parties élémentaires :
 
 ![Général](images/diag_gen.png){.thumbnail}
 
 |Parties Élémentaires|Fonction|
 |---|---|
-|Frontend|Le front end définit le type de protocole (HTTP/TCP/UDP) du service OVHCloud Load Balancer. C'est également la partie qui expose le port d'écoute du service|
+|Frontend|Le frontend définit le type de protocole (HTTP/TCP/UDP) du service OVHcloud Load Balancer. C'est également la partie qui expose le port d'écoute du service|
 |Farm|La ferme reçoit le trafic provenant du front end, c'est la partie qui s'occupe de faire la répartition de charge|
 |Server|Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application|
 
 Avec ces trois parties élémentaires qui composent le Load Balancer, il est possible de configurer à peu près tous les types de load-balancing possibles.
 
-
-### Pourquoi utiliser l'OVHCloud Load Balancer ?
+### Pourquoi utiliser le Load Balancer OVHcloud ?
 
 #### Répartir la charge
 
-C'est la fonction élémentaire d'un répartiteur de charge, mais l'OVHCloud Load Balancer est capable de bien plus.
+C'est la fonction élémentaire d'un répartiteur de charge, mais le Load Balancer OVHcloud est capable de bien plus.
 
 ![Distribute load](images/distribute_load.png){.thumbnail}
 
 #### Supprimer le downtime
 
-Le service OVHCloud Load Balancer est capable de détecter automatiquement l'absence de réponse d'un serveur. Dans ce cas de figure, il redirige le trafic à destination de ce serveur vers un autre, si c'est possible. Cela permet de résoudre le problème sans affecter votre production.
+Le service OVHcloud Load Balancer est capable de détecter automatiquement l'absence de réponse d'un serveur. Dans ce cas de figure, il redirige le trafic à destination de ce serveur vers un autre, si c'est possible. Cela permet de résoudre le problème sans affecter votre production.
 
 ![Eliminate downtimes](images/eliminate_downtimes.png){.thumbnail}
 
 #### Faire évoluer facilement votre infrastructure
 
-Il est possible d'ajouter ou retirer une ferme, un front end ou un serveur du service OVHCloud Load Balancer sans interruption de service.
+Il est possible d'ajouter ou retirer une ferme, un front end ou un serveur du service OVHcloud Load Balancer sans interruption de service.
 
 ![Scale your infra easily](images/facilitate_maintenance.png){.thumbnail}
-
 
 #### Faciliter les maintenances
 
@@ -83,10 +75,9 @@ En cas de maintenance planifiée sur votre infrastructure, il est désormais fac
 
 ![Facilitates maintenance](images/scale_easily.png){.thumbnail}
 
-
 #### Varier les services
 
-Vous pouvez désormais mixer différents services d'OVHCloud dans le Load Balancer, comme par exemple :
+Vous pouvez désormais mixer différents services d'OVHcloud dans le Load Balancer, comme par exemple :
 
 - les instances Public Cloud avec IP fail-over ;
 - les VPS avec IP fail-over ;
@@ -101,11 +92,9 @@ Vous pouvez répartir votre charge sur différentes zones géographiques :
 
 ![Anycast](images/anycast.png){.thumbnail}
 
-
 #### Répartir n'importe quel type de trafic
 
-L'OVHCloud Load Balancer peut également utilisé avec toutes sortes de trafics HTTP, TCP ou UDP.
-
+L'OVHcloud Load Balancer peut également être utilisé avec toutes sortes de trafics HTTP, TCP ou UDP.
 
 #### Serveur e-mail
 
@@ -113,13 +102,11 @@ Répartissez la charge entre vos serveurs de messagerie :
 
 ![Mail](images/mail.png){.thumbnail}
 
-
 #### Base de données
 
 Équilibrez et redondez vos bases de données :
 
 ![Database](images/database.png){.thumbnail}
-
 
 ## Aller plus loin
 

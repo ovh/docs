@@ -1,14 +1,15 @@
 ---
 title: Mode de répartition
 slug: iplb-balancing
-excerpt: Découvrez les différents modes de répartition de charge de l'OVHCloud Load Balancer
+excerpt: Découvrez les différents modes de répartition de charge du Load Balancer OVHcloud
 section: Configuration
 ---
+
 **Dernière mise à jour le 20/01/2021**
 
 ## Objectif
 
-Le service OVHCloud Load Balancer offre différents types de répartition de charge pour vos services. Ce processus détermine la manière dont l'OVHCloud Load Balancer va répartir les requêtes reçues vers vos serveurs.
+Le service OVHcloud Load Balancer offre différents types de répartition de charge pour vos services. Ce processus détermine la manière dont le Load Balancer OVHcloud va répartir les requêtes reçues vers vos serveurs.
 
 **Ce guide vous présente les différents types de répartition de charge et vous explique comment les modifier.**
 
@@ -18,14 +19,13 @@ Le service OVHCloud Load Balancer offre différents types de répartition de cha
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Posséder une ferme de serveurs créée.
 
-
 ## En pratique
 
 ### Les différents types de répartition de charge
 
 La répartition de charge est utilisée dans les fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour connaître les différentes parties élémentaires du service OVHCloud Load Balancer, voir [Présentation Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
+Pour connaître les différentes parties élémentaires du service OVHcloud Load Balancer, consultez la [présentation du Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
 
 |Algorithme|Fonctionnalités|
 |---|---|
@@ -34,7 +34,6 @@ Pour connaître les différentes parties élémentaires du service OVHCloud Load
 |RoundRobin|Sélectionne les serveurs les uns après les autres pour chaque connexion, **c'est l'algorithme par défaut.**|
 |Source|Cet algorithme effectue une fonction de *hashage* (hash) sur l'adresse IP source, puis divise le résultat par le nombre de serveurs actuellement actifs. La même adresse IP source sera alors toujours redirigée vers le même serveur, tant que celui-ci reste actif.|
 |URI|Cet algorithme effectue une fonction de *hashage* (hash) sur une partie, ou sur l'URI entière, puis divise le résultat par le nombre de serveurs actuellement actifs. Le même URI sera alors toujours redirigée vers le même serveur tant, que celui-ci reste actif.|
-
 
 ### Modifier le mode de répartition de charge d'une ferme via l'espace client
 
@@ -50,12 +49,11 @@ Une fois le mode de répartition souhaité sélectionné, cliquez sur `Mettre à
 
 ![Appliquer la configuration](images/apply_config.png){.thumbnail}
 
-
 ### Modifier le mode de répartition de charge d'une ferme via l'API
 
 La modification des paramètres de mode de répartition s'effectue en éditant ceux de la ferme de serveurs.
 
-- Voir le détail d'une ferme
+#### Voir le détail d'une ferme
 
 Cet appel permet de consulter le détail d'une ferme en connaissant son identifiant. Dans cet exemple, nous allons travailler sur une ferme HTTP :
 
@@ -79,7 +77,7 @@ Cet appel permet de consulter le détail d'une ferme en connaissant son identifi
 |displayName|Nom donné à cette ferme|
 |stickiness|Mode de suivi de connexion actuellement configuré sur la ferme|
 
-- Modifier le mode de répartition d'une ferme
+#### Modifier le mode de répartition d'une ferme
 
 Cet appel permet de modifier la configuration d'une ferme en connaissant son identifiant. Dans cet exemple, nous allons travailler sur une ferme HTTP. Pour modifier le mode de répartition, le champ `BackendHttp.balance` doit être mis à jour avec un mode de répartition disponible :
 
@@ -94,7 +92,7 @@ Cet appel permet de modifier la configuration d'une ferme en connaissant son ide
 |farmId\*|Identifiant numérique de la ferme|
 |BackendHttp.balance|Type de répartition souhaité pour cette ferme|
 
-- Appliquer les modifications
+#### Appliquer les modifications
 
 > [!api]
 >

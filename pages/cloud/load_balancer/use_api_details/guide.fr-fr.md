@@ -1,59 +1,53 @@
 ---
-title: Détails des fonctions API
+title: Détails des fonctionnalités API
 slug: api-details
-excerpt: Détails des fonctionnalités de l’API
+excerpt: "Détails des fonctionnalités de l’API OVHcloud pour l’offre OVHcloud Load Balancer"
 section: Premiers pas
+order: 03
 ---
 
 **Dernière mise à jour le 20/01/2021**
 
 ## Objectif
 
-Description des différents points d'entrées dans l'API pour le Load Balancer OVHCloud.
+Retrouvez ici la description des différents points d'entrées dans l'API pour le Load Balancer OVHcloud.
 
 ## Prérequis
 
-- Pas de prérequis spécifique
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 
-### Gérer son service OVHCloud Load Balancer  via l'API
+### Gérer son service OVHcloud Load Balancer via l'API
 
-Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer 
-
-- Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing){.external}.
-
+Tous les appels API se font dans la section */ipLoadbalancing* disponible ici : [https://api.ovh.com/console/#/ipLoadbalancing](https://api.ovh.com/console/#/ipLoadbalancing){.external}.
 
 > [!warning]
 >
 > Attention, pour des raisons de compatibilité, le point d'entrée de l'ancien
-> système Load Balancer OVHCloud est toujours présent dans l'API /ip/loadBalancing,
+> système Load Balancer OVHcloud est toujours présent dans l'API /ip/loadBalancing,
 > à ne pas confondre avec le nouveau /ipLoadbalancing.
 > 
 
-
 > [!primary]
 >
-> Dans les appels ci-dessous tous les champs marqués d'une astérisque *
+> Dans les appels ci-dessous, tous les champs marqués d'une astérisque *
 > sont obligatoires.
 > 
-
-
 
 > [!primary]
 >
 > Les Frontend, Ferme et Serveur sont spécifiques au
-> protocole (parmis HTTP, TCP ou UDP) dans lequel ils sont définis.
+> protocole (parmi HTTP, TCP ou UDP) dans lequel ils sont définis.
 > Bien qu'ils puissent être "combinés" entre eux, ce n'est possible qu'au sein
 > d'un même protocole. Ainsi, il n'est pas possible d'utiliser un Frontend
 > UDP avec une Ferme HTTP. Mais il est possible (en l'absence d'autre
 > limitation) d'utiliser un Frontend HTTP avec une Ferme HTTP.
 > 
 
-
 ## Services et zones
 
-### Load Balancer OVHCloud
+### Load Balancer OVHcloud
 
 #### Lister les services actifs
 
@@ -62,14 +56,14 @@ Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer
 > @api {GET} /ipLoadbalancing
 > 
 
-#### Lister les zones disponibles pour le Load Balancer OVHCloud
+#### Lister les zones disponibles pour le Load Balancer OVHcloud
 
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/availableZones
 > 
 
-#### Retourner les détails d'un service Load Balancer OVHCloud
+#### Retourner les détails d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -85,7 +79,7 @@ Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer
 >> >> L'identifiant de votre Load Balancer, ex: IP-1.2.3.4 (Chaîne de caractères)
 >
 
-#### Modifier un service Load Balancer OVHCloud
+#### Modifier un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -114,7 +108,7 @@ Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer
 >> >> > La configuration SSL que vous souhaitez attribuer au service (Valeur)
 >
 
-#### Lister les services attachés au Load Balancer OVHCloud
+#### Lister les services attachés au Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -156,7 +150,7 @@ Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer
 >> >> Permet de filtrer selon le réseau vrack
 >
 
-#### Lister les zones pouvant être attachées à un service Load Balancer OVHCloud
+#### Lister les zones pouvant être attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -330,7 +324,7 @@ Détails des fonctionnalités de l'API pour le OVHCloud Load Balancer
 
 ### Zones
 
-#### Lister les zones actives pour un service Load Balancer OVHCloud
+#### Lister les zones actives pour un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -428,7 +422,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 ### Fermes HTTP
 
 
-#### Lister les fermes HTTP attachées à un service Load Balancer OVHCloud
+#### Lister les fermes HTTP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -451,7 +445,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >> Le nom de la zone (Chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme HTTP à un service Load Balancer OVHCloud
+#### Ajouter une nouvelle ferme HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -852,7 +846,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 
 ### Frontends HTTP
 
-#### Lister les frontends HTTP attachés à un service Load Balancer OVHCloud
+#### Lister les frontends HTTP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -883,7 +877,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >> Le nom de votre zone, ex: all (Chaîne de caractères)
 >
 
-#### Ajouter un frontend HTTP à un service Load Balancer OVHCloud
+#### Ajouter un frontend HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1084,7 +1078,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >> L'identifiant d'un frontend HTTP (Nombre)
 >
 
-#### Ajouter une nouvelle route HTTP à un service Load Balancer OVHCloud
+#### Ajouter une nouvelle route HTTP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1407,7 +1401,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 
 ### Fermes TCP
 
-#### Lister les fermes TCP attachées à un service Load Balancer OVHCloud
+#### Lister les fermes TCP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1430,7 +1424,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >> Le nom de votre zone, ex: all (Chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme TCP à un service Load Balancer OVHCloud
+#### Ajouter une nouvelle ferme TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1823,7 +1817,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 
 ### Frontends TCP
 
-#### Lister les frontends TCP attachés à un service Load Balancer OVHCloud
+#### Lister les frontends TCP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -1854,7 +1848,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >> Le nom de votre zone, ex: all (Chaîne de caractères)
 >
 
-#### Ajouter un frontend TCP à un service Load Balancer OVHCloud
+#### Ajouter un frontend TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2008,7 +2002,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 Les routes sont évaluées une par une, en testant leurs règles de routage. La première route validant toutes ses règles voit son action exécutée, et arrête l'évaluation des routes restantes. L'ordre d'exécution est défini par le type et le poids de la route.
 
 
-#### Lister les routes TCP attachées à un service Load Balancer OVHCloud
+#### Lister les routes TCP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2031,7 +2025,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >> >> L'identifiant d'un frontend TCP (Nombre)
 >
 
-#### Ajouter une nouvelle route TCP à un service Load Balancer OVHCloud
+#### Ajouter une nouvelle route TCP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2346,7 +2340,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### Fermes UDP
 
-#### Lister les fermes UDP attachées à un service Load Balancer OVHCloud
+#### Lister les fermes UDP attachées à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2369,7 +2363,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >> Le nom de votre zone, ex: all (Chaîne de caractères)
 >
 
-#### Ajouter une nouvelle ferme UDP à un service Load Balancer OVHCloud
+#### Ajouter une nouvelle ferme UDP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2648,7 +2642,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### Frontends UDP
 
-#### Lister les frontends UDP attachés à un service Load Balancer OVHCloud
+#### Lister les frontends UDP attachés à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2679,7 +2673,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >> Le nom de votre zone, ex: all (Chaîne de caractères)
 >
 
-#### Ajouter un frontend UDP à un service Load Balancer OVHCloud
+#### Ajouter un frontend UDP à un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2809,7 +2803,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### IP Failover
 
-#### Lister les IP Failovers routées sur un service Load Balancer OVHCloud
+#### Lister les IP Failovers routées sur un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2830,7 +2824,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### État du service
 
-#### Obtenir l'état des instances d'un service Load Balancer OVHCloud
+#### Obtenir l'état des instances d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2868,7 +2862,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >> L'identifiant de votre Load Balancer, par exemple : "loadbalancer-abcdef0123456789" (Chaîne de caractères)
 >
 
-#### Appliquer les modifications d'un service Load Balancer OVHCloud
+#### Appliquer les modifications d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2889,7 +2883,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### Certificats SSL
 
-#### Lister les certificats SSL d'un service Load Balancer OVHCloud
+#### Lister les certificats SSL d'un service Load Balancer OVHcloud
 
 > [!faq]
 >
@@ -2999,7 +2993,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 
 ### Tâches
 
-#### Lister les tâches en cours pour un service Load Balancer OVHCloud
+#### Lister les tâches en cours pour un service Load Balancer OVHcloud
 
 > [!faq]
 >
