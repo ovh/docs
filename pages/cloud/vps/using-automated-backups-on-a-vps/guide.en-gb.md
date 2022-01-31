@@ -66,7 +66,7 @@ Click on `...`{.action} next to the backup you need to access and select `Mounti
 
 After the process is completed, you will receive an email. You can now connect to your VPS and add the partition where your backup is located.
 
-#### Step 2: Secure Shell
+#### Using secure Shell
 
 First, connect to your VPS via SSH.
 
@@ -104,7 +104,25 @@ You can now switch to this folder and access your backup data.
 > [!warning]
 > Please note that a server reboot will occur when the backup is unmounted.
 >                   
-                                                                                
+
+#### Using Windows
+
+Establish an RDP connection to your server. When you’ve logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+When the disk management tool opens, you’ll see your mounted backup as a basic disk with the same storage space as your main disk as shown below.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+Once done, your mounted backup will now appear in your `File Explorer`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
+
 ### Best practice for using auto-backups
 
 The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.
