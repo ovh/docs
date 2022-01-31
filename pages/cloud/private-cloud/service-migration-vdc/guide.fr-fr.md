@@ -768,7 +768,7 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 > Quelles sont les limitations/différences au niveau de la migration selon la gamme choisie (Essentials ou Premier)?
 >> Il n'y a pas de différences entre un upgrade vers Essentials ou vers Premier. L'unique différence est présente sur les étapes liées au composant NSX. Ces étapes sont nécessaires pour un upgrade vers Premier et non pertinentes pour un upgrade vers Essentials.
 > Combien de temps faut-il prévoir pour cette migration (en fonction du nombre de VM)?
->> Les vitesses constatés pour l'étape de Storage Motion sont entre 0.5 et 1To par heure. Concernant le vMotion, cela dépend fortement de la taille de la VM, en moyenne moins d'une minute; cela peut prendre jusqu'à 3 minutes pour les VM de plusieurs To.
+>> Les vitesses constatées pour l'étape de Storage Motion sont entre 0.5 et 1To par heure. Concernant le vMotion, cela dépend fortement de la taille de la VM, en moyenne moins d'une minute; cela peut prendre jusqu'à 3 minutes pour les VM de plusieurs To.
 > Quelles sont les licences Microsoft disponibles en mode SPLA ?
 >> Les licences Windows (standard et datacentre) et SQL Server (standard et web) sont disponibles sur les offres 2020 en mode SPLA.
 > Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
