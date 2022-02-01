@@ -6,13 +6,13 @@ section: Gestão das máquinas virtuais
 order: 04
 ---
 
-**Última atualização: 31/07/2020**
+**Última atualização: 01/02/2022**
 
 ## Objetivo
 
 VMware propõe três formatos de disco para as máquinas virtuais.
 
-** Este manual explica as diferenças entre esses formatos **
+**Este manual explica as diferenças entre esses formatos.**
 
 ## Instruções
 
@@ -34,7 +34,6 @@ Não é possível liberar o espaço ocupado.
 
 Exemplo: se forem ocupados 40 GB num thin disk de 100 GB e que forem eliminados 20 GB de dados na VM, o espaço ocupado no datastore será sempre de 40 GB e o espaço alocado de 100 GB.
 
-
 ### Thick provisioning Eager zero
 
 O *Thick provisioning Eager zero* é um tipo de formato de disco que ocupa todo o espaço alocado no datastore. 
@@ -55,7 +54,6 @@ O espaço alocado é reservado ao disco da VM, mas os zeros são escritos no mom
 
 Exemplo para as VM de 100 GB com um *Guest OS* de 40 GB:
 
-
 |Tipo de disco|Espaço alocado|Block zeroed|Espaço ocupado|
 |---|---|---|---|
 |Eager Zero|Criação de VM|Criação de VM|100 GB|
@@ -64,9 +62,9 @@ Exemplo para as VM de 100 GB com um *Guest OS* de 40 GB:
 
 ### Formato do disco na OVHcloud
 
-No armazenamento de tipo datastore de uma infraestrutura Hosted Private Cloud, apenas está disponível o *Thin provisioning*.
+Numa infraestrutura Hosted Private Cloud, apenas o *Thin provisioning* é possível de forma standard.
 
-No armazenamento vSan, estão disponíveis os 3 tipo de formato.
+No entanto, os 3 tipos de formatos estão disponíveis nos armazenamentos vSAN.
 
 ## Quer saber mais?
 

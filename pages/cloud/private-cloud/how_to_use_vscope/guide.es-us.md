@@ -5,7 +5,6 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_use_vscope/'
 excerpt: The vScope interface allows you to monitor your infrastructure
 section: Servicios y opciones de OVHcloud
-legacy_guide_number: g718
 order: 01
 ---
 
@@ -21,8 +20,8 @@ It's a web based utility gathering and presenting all the **useful** information
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 
 ## Instructions
 

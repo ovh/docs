@@ -7,13 +7,13 @@ section: Gestion des machines virtuelles
 order: 04
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 01/02/2022**
 
 ## Objectif
 
 VMware propose 3 formats de disque pour les machines virtuelles.
 
-** Ce guide explique les différences entre ces formats **
+**Ce guide explique les différences entre ces formats.**
 
 ## En pratique
 
@@ -35,7 +35,6 @@ On ne peut pas réclamer l'espace qui a été occupé.
 
 Exemple : si on occupe 40 Go sur un disk thin de 100Go et que l'on supprime 20Go de données dans la VM, l'espace occupé sur le datastore sera toujours de 40Go et l'espace alloué de 100Go.
 
-
 ### Thick provisioning Eager zero
 
 Le *Thick provisioning Eager zero* est un type de format de disque occupant tout l'espace alloué sur le datastore. 
@@ -55,7 +54,6 @@ L'espace alloué est réservé au disque de la VM, mais les zéro sont écris au
 ### Exemple
 
 Exemple pour des VMs de 100Go avec un *Guest OS* de 40Go :
-
 
 |Type de disk|Espace alloué|Block zeroed|Espace occupé|
 |---|---|---|---|

@@ -6,7 +6,7 @@ section: 'Gestion des machines virtuelles'
 order: 6
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 01/02/2022**
 
 ## Objectif
 
@@ -32,7 +32,6 @@ Cela permet de maintenir à jour les VMware Tools de la même manière que les a
 
 Si la distribution que vous utilisez le propose, vous pourrez trouver les *Open VM Tools* sous le nom de paquet suivant : *open-vm-tools*
 
-
 Cette méthode d'installation est valide à minima pour les versions de GNU/Linux suivantes :
 
 - Fedora 19 et supérieur
@@ -45,7 +44,7 @@ Cette méthode d'installation est valide à minima pour les versions de GNU/Linu
 - SUSE Linux Enterprise 11 SP4 et supérieur
 
 
-#### Anciennes Versions
+#### Anciennes versions
 
 Afin de monter le disque des VMware tools depuis le web client Vsphere, faites un clic droit sur la VM, puis cliquez sur `Guest OS`{.action} et enfin sur `Install VMware Tools`{.action}. 
 

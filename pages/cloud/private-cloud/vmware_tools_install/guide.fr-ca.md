@@ -6,7 +6,7 @@ section: 'Gestion des machines virtuelles'
 order: 6
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 01/02/2022**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Les VMware Tools améliorent les performances d'une machine virtuelle et permett
 
 ## Prérequis
 
-- Avoir accès au client Web (HTML5)
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 
@@ -32,7 +32,6 @@ Cela permet de maintenir à jour les VMware Tools de la même manière que les a
 
 Si la distribution que vous utilisez le propose, vous pourrez trouver les *Open VM Tools* sous le nom de paquet suivant : *open-vm-tools*
 
-
 Cette méthode d'installation est valide à minima pour les versions de GNU/Linux suivantes :
 
 - Fedora 19 et supérieur
@@ -44,8 +43,7 @@ Cette méthode d'installation est valide à minima pour les versions de GNU/Linu
 - Oracle Linux 7.0 et supérieur
 - SUSE Linux Enterprise 11 SP4 et supérieur
 
-
-#### Anciennes Versions
+#### Anciennes versions
 
 Afin de monter le disque des VMware tools depuis le web client Vsphere, faites un clic droit sur la VM, puis cliquez sur `Guest OS`{.action} et enfin sur `Install VMware Tools`{.action}. 
 

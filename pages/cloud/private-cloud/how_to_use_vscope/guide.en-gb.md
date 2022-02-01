@@ -1,64 +1,67 @@
 ---
 title: Understanding vScope
-slug: vscope
+slug: how_to_use_vscope
 excerpt: The vScope interface allows you to monitor your infrastructure
-section: Services et options OVHcloud
+section: OVHcloud services and options
 order: 01
 ---
 
-**Last Updated on 28/01/2022**
+**Last updated 28th January 2022**
 
 ## Objective
 
-OVHcloud puts an infrastructure **supervision** and **monitoring** tool at your disposal called **vScope**.
+OVHcloud puts an infrastructure **supervision** and **monitoring** tool called **vScope** at your disposal.
 
 It's a web based utility gathering and presenting all the **useful** information on your resources.
 
-**This guide describes the functionalities of the interface**
+**This guide describes the functionalities of the vScope interface.**
+
+## Requirements
+
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
-To access the vScope interface, clic on the vScope icon in the login window of your Hosted Private Cloud.
+To access the vScope interface, click the vScope icon in the login window of your Hosted Private Cloud.
 
-![](images/gatewayPCC.png){.thumbnail}
+![vscope access](images/gatewayPCC.png){.thumbnail}
 
-A **vScope** access link is also available in your manager utility.
+A **vScope** access link is also available in your OVHcloud Control Panel.
 
-![](images/managerLink.png){.thumbnail}
+![vscope access](images/managerLink.png){.thumbnail}
 
 In both cases, you'll be directed to a new browser tab with this URL.
 
-![](images/vScope12.png){.thumbnail}
+![vscope](images/vScope12.png){.thumbnail}
 
-Use your vSphere**username** and **password** to log on the interface.
+Use your vSphere **username** and **password** to log on the interface.
 
-![](images/vScope11.png){.thumbnail}
+![vscope](images/vScope11.png){.thumbnail}
 
-You are now connected to **vScope** an can monitor your resources. For example, you can see in the main window the number of Cores and VMs on each host as well as CPU and RAM consumption or network traffic.
+You are now connected to **vScope** and can monitor your resources. For example, you can see in the main window the number of Cores and VMs on each host as well as CPU and RAM consumption or network traffic.
 
-![](images/vScope.png){.thumbnail}
+![vscope](images/vScope.png){.thumbnail}
 
-Here are details on the different elements.
+In case of multiple **datacenters** inside a single **Hosted Private Cloud**, you can select them in the scrolling menu. **Last refresh** is the last **web page** refresh, not the **vScope** one. vScope refreshes every **2 to 5 minutes**.
 
-In cases of multiples **datacenters** inside a single **Private Cloud**, you can select them in the scrolling menu. **Last refresh** is the last **web page** refresh, not the **vScope** on. vScope refreshes every **2 to 5 minutes**.
-
-![](images/vScope1.png){.thumbnail}
+![vscope](images/vScope1.png){.thumbnail}
 
 The **Filer** menu gives an insight on datastore usage in terms of VMs and storage space.
 
-![](images/vScope2.png){.thumbnail}
+![vscope](images/vScope2.png){.thumbnail}
 
 Clicking on the **Graphs** icon, you can see more details on the chosen resource.
 
-![](images/vScope7.png){.thumbnail}
+![vscope](images/vScope7.png){.thumbnail}
 
 The Hosts menu offers all the characteristics for each host in your datacenter (**Cores, vCPUs, VM**) and the usage percentage as well as network connectivity on all physical network cards (**VMNic**).
 
-![](images/vScope4.png){.thumbnail}
+![vscope](images/vScope4.png){.thumbnail}
 
 The detailed view also shows historical data over a day, week, month or year as needed.
 
-![](images/vScope8.png){.thumbnail}
+![vscope](images/vScope8.png){.thumbnail}
 
 The last section details each VM's usage with the following data :
 
@@ -70,7 +73,7 @@ The last section details each VM's usage with the following data :
 - Disk IO
 - Disk Latency
 
-![](images/vScope6.png){.thumbnail}
+![vscope](images/vScope6.png){.thumbnail}
 
 ## Go further
 
