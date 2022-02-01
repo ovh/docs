@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/'
 ---
 
-**Last updated June 14<sup>th</sup>, 2021**
+**Last updated 1st Febuary 2022**
 
 ## Objective
 
@@ -18,12 +18,15 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Requirements
 
-- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/))
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- A MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/))
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+
+> [!primary]
+> Note that the configuration options might be different for other database types.
 
 ### Databases overview
 
