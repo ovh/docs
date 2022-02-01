@@ -1,5 +1,5 @@
 ---
-title: Configuer le pare-feu sous Linux avec Iptables
+title: Configurer le pare-feu sous Linux avec Iptables
 excerpt: Découvrez comment sécuriser un serveur avec Iptables
 slug: firewall-iptables
 section: Sécurité
