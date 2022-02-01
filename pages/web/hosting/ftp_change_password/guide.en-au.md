@@ -11,7 +11,7 @@ order: 2
 ## Objective
 
 OVHcloud Web Hosting plans provide you with access to an online file storage space, which you can use via the **FTP** protocol.<br>You can access this space with a FTP user account and the password associated with it.
-<br>This access will allow you to [put your website online](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/).
+<br>This access will allow you to [put your website online](https://docs.ovh.com/au/en/hosting/web_hosting_how_to_get_my_website_online/).
 
 **Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan.**
 
@@ -23,14 +23,14 @@ OVHcloud Web Hosting plans provide you with access to an online file storage spa
 
 ## Requirements
 
-- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
 
 ### Step 1: Access the FTP user management interface
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the service concerned. Click on the `FTP-SSH`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the service concerned. Click on the `FTP-SSH`{.action} tab.
 
 A table will display the FTP users created on your Web Hosting plan. These users allow you to access your FTP storage space to put your website files online. When you set up your Web Hosting plan, a user account will be created automatically.
 
@@ -38,10 +38,10 @@ A table will display the FTP users created on your Web Hosting plan. These users
 
 > [!primary]
 >
-> For more information on password management best practices, follow the instructions in this [guide](https://docs.ovh.com/gb/en/customer/manage-password/).
+> For more information on password management best practices, follow the instructions in this [guide](https://docs.ovh.com/au/en/customer/manage-password/).
 >
 
-Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
+Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
 - **For Web Hosting plans that do not allow you to create a second FTP user** (Start 10M, Kimsufi Web and Personal hosting): Click on the pencil icon in the `Password`{.action} column, enter the new password, then confirm the change by clicking on the green button.
 
@@ -66,27 +66,27 @@ Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your 
 
 There are several ways you can log in to your hosting space to access the files:
 
-- **FTP Explorer**: You can access this software via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To use it, click on the `FTP Explorer`{.action} button in the `FTP-SSH`{.action} tab.
+- **FTP Explorer**: You can access this software via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). To use it, click on the `FTP Explorer`{.action} button in the `FTP-SSH`{.action} tab.
 
-- **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)).
+- **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/)).
 
-- **SSH access** (only on Professional and Performance plans): Please read our guide on [Using SSH access to your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to use this connection protocol.
+- **SSH access** (only on Professional and Performance plans): Please read our guide on [Using SSH access to your Web Hosting plan](https://docs.ovh.com/au/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to use this connection protocol.
 
 > [!primary]
 >
-> For more information, please refer to our guide on [logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> For more information, please refer to our guide on [logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/au/en/hosting/log-in-to-storage-ftp-web-hosting/).
 >
 
 ## Go further <a name="gofurther"></a>
 
 [Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/){.external}
 
-[Using FileZilla software with your hosting](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)
+[Using FileZilla software with your hosting](https://docs.ovh.com/au/en/hosting/web_hosting_filezilla_user_guide/)
 
-[SSH on Web Hosting](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/)
+[SSH on Web Hosting](https://docs.ovh.com/au/en/hosting/web_hosting_ssh_on_web_hosting_packages/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-au/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
