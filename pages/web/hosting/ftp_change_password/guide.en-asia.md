@@ -1,77 +1,92 @@
 ---
-title: Modifying a FTP user password
+title: Changing a FTP user password
 slug: modify-ftp-user-password
 excerpt: Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan
 section: FTP and SSH
-order: 1
+order: 2
 ---
 
-**Last updated 5th May 2020**
+**Last updated 14th January 2022**
 
 ## Objective
 
-OVHcloud Web Hosting plans provide you with access to a storage space you can use to put your website’s files online. You can access this storage space using a FTP user account, and the password associated with it.
+OVHcloud Web Hosting plans provide you with access to an online file storage space, which you can use via the **FTP** protocol.<br>You can access this space with a FTP user account and the password associated with it.
+<br>This access will allow you to [put your website online](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/).
 
 **Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan.**
 
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
+
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
+- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Step 1: Access the FTP user management interface
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the appropriate Web Hosting plan. Go to the `FTP - SSH`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Web Cloud`{.action} section, click on `Hosting plans`{.action}, then select the service concerned. Click on the `FTP-SSH`{.action} tab.
 
-The table will provide you with a list of FTP user accounts created on your Web Hosting plan. You can use these user accounts to access your storage space and put your website’s files online. A user account will be created automatically when you set up your Web Hosting plan.
-
-![ftppassword](images/change-ftp-password-step1.png){.thumbnail}
+A table will display the FTP users created on your Web Hosting plan. These users allow you to access your FTP storage space to put your website files online. When you set up your Web Hosting plan, a user account will be created automatically.
 
 ### Step 2: Modify the FTP user password
 
-There are two ways you can modify an FTP user's password, depending on which [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/) you are using:
-
-- **For Web Hosting plans that can only have one FTP user** (Start 10M and Personal): Click on the pencil icon in the `Password`{.action} column of the table, enter the new password in the field, and confirm the change.
-
-- **For Web Hosting plans that can have several FTP users** (Professional and Performance): click on the cogwheel icon to the right of the user you have selected, then click `Change password`{.action}. Enter your new password in the window that opens, and click `Confirm`{.action}.
-
-The password change will require a few minutes to take effect.
-
 > [!primary]
 >
-> For security reasons, please follow the required conditions when you choose a new password. We also recommend:
+> For more information on password management best practices, follow the instructions in this [guide](https://docs.ovh.com/gb/en/customer/manage-password/).
 >
-> - Not using the same password twice.
->
-> - Setting a password that does not contain any personal information (don’t include your surname, first name, or date of birth, for example).
->
-> - Renewing your password regularly.
->
-> - Not keeping any written records of your password, and not sending passwords to other people via email.
->
-> - Not saving your passwords in your browser, even if your browser offers to do so.
->
+
+Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
+
+- **For Web Hosting plans that do not allow you to create a second FTP user** (Start 10M, Kimsufi Web and Personal hosting): Click on the pencil icon in the `Password`{.action} column, enter the new password, then confirm the change by clicking on the green button.
+
+![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
+
+- **For plans that allow you to create multiple FTP users** (Professional and Performance): Click on the three dots to the right of the concerned FTP user, then on `Change password`{.action}. Enter your new password in the window that pops up, enter it again and click on `Confirm`{.action}.
+
+![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
+
+Choose the new password for your database. In both cases, they must meet the following conditions:
+
+- Minimum 8 characters
+- Maximum 30 characters
+- At least one capital letter
+- At least one lower-case letter
+- At least one number
+- Be composed only of numbers and letters
+
+Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your change will be effective within a few minutes.
 
 ### Step 3: Access your storage space
 
-Once you have modified the FTP user password, you can then access your storage space.
+There are several ways you can log in to your hosting space to access the files:
 
-There are several ways of doing this, depending on which [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/) you are using:
+- **FTP Explorer**: You can access this software via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To use it, click on the `FTP Explorer`{.action} button in the `FTP-SSH`{.action} tab.
 
-- **Using FTP Explorer:** Enables you to access your storage space via your browser. To use it, stay in the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}.
+- **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)).
 
-- **Using FTP-compatible software:** You will need to install an FTP-compatible program on your computer (e.g. FileZilla).
+- **SSH access** (only on Professional and Performance plans): Please read our guide on [Using SSH access to your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to use this connection protocol.
 
-- **Using SSH access:** You will need to use commands from a terminal to interact with your storage space. This access type will require more advanced technical knowledge.
+> [!primary]
+>
+> For more information, please refer to our guide on [logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
+>
 
-## Go further
+## Go further <a name="gofurther"></a>
 
-[To find out more about password security, refer to this comprehensive advice page published by Get Safe Online](https://www.getsafeonline.org/protecting-yourself/passwords/)
+[Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/){.external}
 
-[FileZilla user guide](../web_hosting_filezilla_user_guide/)
+[Using FileZilla software with your hosting](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/)
 
-[SSH on web hosting packages](../web_hosting_ssh_on_web_hosting_packages/)
+[SSH on Web Hosting](https://docs.ovh.com/gb/en/hosting/web_hosting_ssh_on_web_hosting_packages/)
+
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
