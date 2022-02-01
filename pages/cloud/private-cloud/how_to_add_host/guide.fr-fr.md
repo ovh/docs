@@ -35,7 +35,7 @@ Dans le menu `Ajout d'un host`{.action}, choisissez le type d'hôte qui vous con
 
 ![Choose](images/en02choose.png){.thumbnail}
 
-Verifier votre commande et confirmez par un clic sur `Next`{.action}.
+Verifiez votre commande et confirmez par un clic sur `Next`{.action}.
 
 ![Confirm](images/en03validate.png){.thumbnail}
 
