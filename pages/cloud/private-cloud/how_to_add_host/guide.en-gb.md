@@ -1,6 +1,6 @@
 ---
 title: How do you add a host?
-excerpt: ''
+excerpt: Learn how to add compute capabilities to your infrastructure
 slug: how_do_you_add_a_host
 section: Resource management
 ---
