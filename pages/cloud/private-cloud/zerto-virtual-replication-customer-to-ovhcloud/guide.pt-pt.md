@@ -2,7 +2,7 @@
 title: 'Configuração de uma VPN para o Zerto DRP OVHcloud'
 slug: zerto-replicacao-virtual-cliente-para-ovhcloud
 excerpt: 'Saiba como configurar uma VPN de modo a ligar uma plataforma Zerto local a uma Private Cloud OVHcloud.'
-section: 'Serviços e opções OVH'
+section: 'Serviços e opções OVHcloud'
 ---
 
 **Última atualização: 28/08/2020**
