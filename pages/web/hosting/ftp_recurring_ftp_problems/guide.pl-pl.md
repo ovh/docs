@@ -51,7 +51,7 @@ Wybierz `SFTP`{.action} lub `Aktywny`{.action} (aby aktywować protokół SSH na
 
 > [!primary]
 >
-> W przypadku innych wiadomości o błędzie sprawdź sekcję `Diagnostyka` naszych przewodników dotyczących [hostingu www](../).
+> W przypadku innych wiadomości o błędzie sprawdź sekcję `Diagnostyka` naszych przewodników dotyczących [Hosting](../).
 >
 
 ### Przeniosłem pliki za pomocą programu FTP, ale moja strona nie wyświetla się.
@@ -70,7 +70,7 @@ Brak przestrzeni dyskowej na hostingu może spowodować usterki na Twojej stroni
 
 Aby sprawdzić pozostałą przestrzeń dyskową Twojego hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. Wybierz odpowiedni hosting.
 
-Ilość danych zapisanych na serwerze hostingowym (poza bazami danych) wyświetla się w części `Informacje ogólne` > `Przestrzeń dyskowa`.
+Ilość danych zapisanych na serwerze hostingowym (poza bazami danych) wyświetla się w części `Informacje ogólne`{.action} > `Przestrzeń dyskowa`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 

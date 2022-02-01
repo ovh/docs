@@ -1,6 +1,6 @@
 ---
-title: 'Resolver los errores recurrentes durante el uso de un programa FTP'
-excerpt: 'Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP'
+title: Resolver los errores recurrentes durante el uso de un programa FTP
+excerpt: Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP
 slug: agrupe-los-problemes-ftp-recurrents
 legacy_guide_number: 1996
 section: FTP y SSH
@@ -43,8 +43,11 @@ Si los datos que desea intercambiar por este medio no son confidenciales, haga c
 
 En caso contrario, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action} y, seguidamente, `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP-SSH`{.action}.
 
-Haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y, seguidamente, en `Editar`{.action}.<br>
-Seleccione SFTP o SSH (si dispone de un hosting [Profesional](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/)), haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.
+Si dispone de un alojamiento [Perso](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), marque la casilla `Desactivado`{.action} en la columna `SFTP`{.action} y espere unos minutos.
+
+Si dispone de un alojamiento [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/), haga clic en el botón `...`{.action} a la derecha del usuario FTP correspondiente y seleccione `Editar`{.action}.
+
+Seleccione `SFTP`{.action} o `Activado`{.action} (para activar el protocolo SSH en su alojamiento), haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}. Espere unos minutos.
 
 > [!primary]
 >
@@ -67,15 +70,15 @@ La falta de espacio en su alojamiento compartido puede provocar fallos de funcio
 
 Para comprobar el espacio de almacenamiento restante del alojamiento, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en `Web Cloud`{.action} y, seguidamente, en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente.
 
-La cantidad de datos almacenados en el servidor de alojamiento (excluyendo las bases de datos) se muestra en la sección `Información general` > `Espacio en disco`.
+La cantidad de datos almacenados en el servidor de alojamiento (excluyendo las bases de datos) se muestra en la sección `Información general`{.action} > `Espacio en disco`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 
 ### No puedo transferir mis archivos al servidor FTP.
 
-Compruebe que su programa FTP esté conectado en modo "Pasivo" (Modo de configuración de un servidor FTP en el que el servidor determina el puerto de conexión).
+Compruebe que su programa FTP esté conectado en "Modo Pasivo" (Modo de configuración de un servidor FTP en el que el servidor determina el puerto de conexión).
 
-Por ejemplo, en [Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/), haga clic en `Editar`{.action} ` `{.action} ` `{.action} ` `{.action} ` `{.action} y seleccione Pasivo (recomendado).
+Por ejemplo, en [Filezilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/), haga clic en `Edición`{.action}, `Opciones`{.action}, `FTP`{.action} y seleccione `Pasivo (recomendado)`{.action}.
 
 Limite también el tamaño de sus transferencias de datos (no podrá enviar más de **5.000 archivos y carpetas** a los servidores compartidos de OVHcloud en una sola transferencia). Realice sus importaciones varias veces si es necesario utilizando carpetas comprimidas.
 

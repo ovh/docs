@@ -1,5 +1,5 @@
 ---
-title: Risolvere gli errori ricorrenti nell'utilizzo di un software FTP
+title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
 excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
 slug: condividili-problemi-ftp-ricorrenti
 legacy_guide_number: 1996
@@ -51,7 +51,7 @@ Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul t
 
 > [!primary]
 >
-> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting Web](../).
+> Per ulteriori messaggi di errore, consulta la sezione `Diagnostica` delle nostre guide [Hosting](../).
 >
 
 ### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.
@@ -70,7 +70,7 @@ La mancanza di spazio sul tuo hosting condiviso può causare problemi al tuo sit
 
 Per verificare lo spazio di storage rimasto sul tuo hosting, accedi allo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Web Cloud`{.action} e poi su `Hosting`{.action}. Seleziona l'hosting interessato.
 
-La quantità di dati registrata sul tuo server di hosting (database esclusi) compare nella sezione `Informazioni generali` > `Spazio disco`.
+La quantità di dati registrata sul tuo server di hosting (database esclusi) compare nella sezione `Informazioni generali`{.action} > `Spazio disco`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 

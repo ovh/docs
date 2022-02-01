@@ -51,7 +51,7 @@ Escolha `SFTP` {.action} ou `Ativado`{.action} (para ativar o protocolo SSH no s
 
 > [!primary]
 >
-> Para qualquer outra mensagem de erro, consulte a secção `Diagnóstico` dos nossos guias de [Alojamento Web](../).
+> Para qualquer outra mensagem de erro, consulte a secção `Diagnóstico` dos nossos guias de [Hosting](../).
 >
 
 ### Transferi os meus ficheiros com um software FTP, mas o meu site não aparece.
@@ -70,7 +70,7 @@ A falta de espaço no seu alojamento partilhado pode provocar disfunções no se
 
 Para verificar o espaço de armazenamento restante no alojamento, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action} e depois em `Alojamentos`{.action}. Selecione o alojamento em causa.
 
-A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais` > `Espaço de disco`.
+A quantidade de dados registada no seu servidor de alojamento (exceto bases de dados) aparece na secção `Informações gerais`{.action} > `Espaço de disco`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 
@@ -78,7 +78,7 @@ A quantidade de dados registada no seu servidor de alojamento (exceto bases de d
 
 Verifique que o seu software FTP está ligado ao "Modo Passivo" (Modo de configuração de um servidor FTP no qual o servidor determina a porta de ligação).
 
-Por exemplo, para o [Filezilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/), clique em `Edition`{.action} e, a seguir, `Parâmetros`{.action}, `Ligação`{.action}, `FTP`{.action} ` `{.action} e selecione o Passivo (recomendado).
+Por exemplo, para o [Filezilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/), clique em `Editar`{.action} e, a seguir, `Configurações`{.action}, `Ligação`{.action}, `FTP`{.action} e selecione o `Passivo (recomendado)`{.action}.
 
 Limite igualmente o tamanho das suas transferências de dados (não poderá enviar mais de **5000 ficheiros e pastas** para os servidores partilhados OVHcloud numa única transferência). Se necessário, realize as suas importações várias vezes com base em pastas comprimidas.
 
