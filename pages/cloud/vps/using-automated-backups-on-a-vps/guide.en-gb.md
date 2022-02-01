@@ -106,15 +106,15 @@ Establish an RDP connection to your server. When you’ve logged in, right-click
 
 ![disk management](images/windowsbackup1.png){.thumbnail}
 
-When the disk management tool opens, you’ll see your mounted backup as a basic disk with the same storage space as your main disk as shown below.
+When the disk management tool opens, your mounted backup will appear as a basic disk with the same storage space as your main disk.
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
-The disk will appear as `Offline`,= right-click on the disk and select `Online`{.action}.
+The disk will appear as `Offline`, right-click on the disk and select `Online`{.action}.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
-Once done, your mounted backup will now appear in your `File Explorer`.
+Once done, your mounted backup will be accessible in your `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
