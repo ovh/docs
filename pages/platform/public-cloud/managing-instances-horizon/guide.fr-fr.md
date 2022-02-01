@@ -10,7 +10,7 @@ order: 4
 
 ## Objectif
 
-Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
+Outre l'espace client OVHcloud, vous pouvez également gérer vos projets Public Cloud OVHcloud depuis l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Dans cette interface, vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
 
 **Ce guide vous détaille comment gérer vos instances Public Cloud via l'interface Horizon.**
 

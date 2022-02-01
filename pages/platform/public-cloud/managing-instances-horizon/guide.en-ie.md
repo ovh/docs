@@ -10,9 +10,9 @@ order: 4
 
 ## Objective
 
-You can manage your Public Cloud projects easily via the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/). You will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
+Beside the OVHcloud Control Panel, you can also manage your Public Cloud projects via the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/). In this interface, you will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
 
-**This guide explains the first steps with a Public Cloud Instance.**
+**This guide details how to manage your Public Cloud instances via the Horizon interface.**
 
 ## Requirements
 

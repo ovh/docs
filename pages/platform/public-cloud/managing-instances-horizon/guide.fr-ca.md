@@ -10,7 +10,7 @@ order: 4
 
 ## Objectif
 
-Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
+Outre l'espace client OVHcloud, vous pouvez également gérer vos projets Public Cloud OVHcloud depuis l'[interface Horizon](https://horizon.cloud.ovh.net/auth/login/). Dans cette interface, vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
 
 **Ce guide vous détaille comment gérer vos instances Public Cloud via l'interface Horizon.**
 
@@ -56,7 +56,7 @@ Ce menu vous permet d'exécuter les actions suivantes sur une ou plusieurs insta
 - Shut Off Instances : cette option permet de suspendre une ou plusieurs instances.
 - Soft Reboot Instances : cette option vous permet de faire un rédemarrage logiciel sur une ou plusieurs instances.
 
-**Create Snapshot** : Cette option permet de créé un snapshot (instantané) de votre instance. Consultez [ce guide](https://docs.ovh.com/fr/public-cloud/gestion-des-snapshots-dune-instance-dans-horizon/#creation-du-snapshot) pour plus d'informations.
+**Create Snapshot** : Cette option permet de créé un snapshot (instantané) de votre instance. Consultez [ce guide](https://docs.ovh.com/ca/fr/public-cloud/gestion-des-snapshots-dune-instance-dans-horizon/) pour plus d'informations.
 
 ### Modifier une instance
 
@@ -64,8 +64,8 @@ Dans l’interface de gestion de l’instance, sélectionnez l'option souhaitée
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#ajout-dune-interface-privee) du guide correspondant.
-- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#suppression-dune-interface-privee) du guide correspondant.
+- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#ajout-dune-interface-privee) du guide correspondant.
+- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#suppression-dune-interface-privee) du guide correspondant.
 - Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](https://docs.ovh.com/ca/fr/public-cloud/configurer-un-groupe-de-securite/).
 
 > [!warning]
