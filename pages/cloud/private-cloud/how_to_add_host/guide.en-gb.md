@@ -26,20 +26,23 @@ Within your OVHcloud environment, you can add a new dedicated host in just a few
 > For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/)
 > 
 
-In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard and open the tree-view on the left-hand side. You can then access the plugin menus via the `Configure`{.action} tab for the datacentre or the cluster.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
-![Menu](images/en01dash.png){.thumbnail}, 
-The `Add Host`{.action} menu is dedicated to host servers. You can view their technical details and order new host servers here.
+![Menu](images/en01dash.png){.thumbnail}
 
-![OVHcloud plugin - add host](images/Plugin01.jpg){.thumbnail}
+The `Configure`{.action} tab  give you access to the OVHcloud plugin.<br>
+in the `Add Host`{.action} menu, choose the type of host you would like to add and click `Next`{.action}.
 
-You can also order additional data stores from the `Add Storage`{.action} menu.
+![Choose](images/en02choose.png){.thumbnail}
 
-![OVHcloud plugin - add storage](images/Plugin02.jpg){.thumbnail}
+Verify your order and confirm by clicking `Next`{.action}.
 
-There is also another way to access these menus. You can right-click on the infrastructure’s datacentre or cluster, then choose `OVHcloud`{.action}.
+![Confirm](images/en03validate.png){.thumbnail}
 
-![OVHcloud Dedicated Cloud Option](images/Plugin03.jpg){.thumbnail}
+Your order is confirmed. The progression of the delivery is showing with an estimated time of availability.
+
+![Delivery](images/en04deliver.png){.thumbnail}
+
 
 ## Go further
 
