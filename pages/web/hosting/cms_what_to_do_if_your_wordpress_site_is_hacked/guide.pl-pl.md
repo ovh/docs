@@ -39,7 +39,7 @@ W dalszej części przewodnika będziemy lokalizować włamanie i sprawdzać 2 m
 Przed przywróceniem danych trzeba sprawdzić datę ostatnich zmian na plikach www (FTP). Pozwoli to na odszukanie i naprawienie luk w bezpieczeństwie.
 Nie ma szczegółowej procedury pozwalającej na zlokalizowanie przyczyny włamania. Przedstawiamy natomiast ogólną procedurę opierającą się na fakcie, że przyczyną włamania jest luka w skrypcie i że włamywacz dokonał włamania przy użyciu zapytania HTTP. 
 
-Wszystkie zapytania HTTP są widoczne w logach (https://logs.ovh.net/nazwa_domeny). Zastąp "nazwa_domeny" swoją domeną wraz z rozszerzeniem, na przykład: ovh.com.
+Wszystkie zapytania HTTP są widoczne w logach (https://logs.cluster0XX.hosting.ovh.net/nazwa_domeny). Zastąp "nazwa_domeny" swoją domeną wraz z rozszerzeniem, na przykład: ovh.com.
 
 - 1 Sprawdź datę i godzinę pojawiającą się w treści wiadomości, którą otrzymałeś*.
 - 2 Sprawdź logi z tej godziny poszerzając stopniowo pole poszukiwań na wcześniejsze godziny aż do odnalezienia nieprawidłowego wpisu (wpis dziwny, różniący się od pozostałych, itp.). W zależności od przypadku może to wymagać trochę praktyki lub znajomości formatu zapytań. Zwróć uwagę na zapytania typu POST, które są głównym źródłem włamań.
