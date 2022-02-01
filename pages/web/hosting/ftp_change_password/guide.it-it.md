@@ -1,78 +1,91 @@
 ---
-title: 'Modificare la password di un utente FTP'
-slug: modificare-la-password-utente-ftp
-excerpt: 'Scopri come cambiare la password di un utente FTP creata sul tuo hosting Web OVH'
+title: Modificare la password di un utente FTP
+slug: modificare-password-utente-ftp
+excerpt: Come impostare una nuova password per un utente FTP creato sul tuo hosting Web OVHcloud
 section: FTP e SSH
-order: 1
+order: 2
 ---
 
-**Ultimo aggiornamento: 23/08/2018**
+**Ultimo aggiornamento: 14/01/2022**
 
 ## Obiettivo
 
-Le offerte di hosting Web di OVH danno accesso a uno spazio di archiviazione che consente di mettere on line i file del tuo sito Internet. È possibile accedere a questo spazio tramite un utente FTP e la password associata. 
+Le soluzioni di hosting Web OVHcloud consentono l'accesso a uno spazio di archiviazione online dei file utilizzabile tramite il protocollo **FTP**.<br>L'accesso a questo spazio è possibile tramite un utente FTP e la password ad esso associata.
+<br>Questo accesso ti permetterà in particolare di [pubblicare online il tuo sito](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).
 
-**Questa guida ti mostra come cambiare la password di un utente FTP creata sul tuo hosting Web OVH.**
+**Questa guida ti mostra come modificare la password di un utente FTP creata sul tuo hosting Web OVHcloud.**
+
+> [!warning]
+>
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#aller-plus-loin) su questa guida.
+>
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) attivo
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Procedura
 
-### Step 1: accedi alla gestione utenti FTP
+### Step : accedere alla gestione utenti FTP
 
-Connettiti al tuo Spazio Clienti OVH, clicca su `Hosting`{.action} nella barra del menu a sinistra, poi seleziona il nome dell’hosting interessato. Infine, seleziona la scheda `FTP - SSH`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca sulla sezione `Web Cloud`{.action}, seleziona il tuo `hosting`{.action} e scegli il nome dell'hosting. Seleziona la scheda `FTP-SSH`{.action}.
 
-La tabella mostra gli utenti FTP creati sul tuo hosting, i quali ti permettono di accedere al tuo spazio di archiviazione per mettere online i file del tuo sito iIternet. Durante l’installazione del tuo hosting, la creazione di un utente avviene di default.
+Una tabella mostra gli utenti FTP creati sul tuo hosting. Questi utenti ti permettono di accedere al tuo spazio di archiviazione FTP per mettere online i file del tuo sito Internet. Un utente è creato automaticamente durante l’installazione del tuo hosting. 
 
-![ftppassword](images/change-ftp-password-step1.png){.thumbnail}
-
-### Step 2: modifica la password di un utente FTP
-
-La modifica della password di un utente FTP creata sul tuo hosting si effettua in due modi diversi a seconda del piano di hosting:
-
-- **per le offerte che non permettono di creare molteplici utenti FTP** (offerte Start 10M, Kimsufi Web e Perso): clicca sull’icona a forma di matita nella colonna `Password`{.action} della tabella, inserisci la nuova password nella casella di testo e infine confermala;
-
-- **per le offerte che permettono di creare molteplici utenti FTP** (offerte Pro e Performance): nella tabella, clicca sull’icona a forma di ingranaggio a destra dell’utente scelto e infine su `Cambiare la password`{.action}. Nella finestra che appare, inserisci la nuova password, confermala e infine clicca sul pulsante `Conferma`{.action}.
-
-La nuova password sarà attiva dopo alcuni minuti. 
+### Step 2 : modificare la password di un utente FTP
 
 > [!primary]
 >
-> Per motivi di sicurezza, durante l’inserimento dei dati ti invitiamo a rispettare i requisiti richiesti. Inoltre ti consigliamo di: 
->
-> - non utilizzare due volte la stessa password
->
-> - scegliere una password che non contenga le tue informazioni personali (ad esempio evita di inserire il tuo cognome, nome o data di nascita)
->
-> - cambiare regolarmente la password
->
-> - non scrivere la tua password su un pezzo di carta né inviarla al tuo indirizzo email
->
-> - non salvare la password sul tuo browser, anche se ti viene proposto
+> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
 >
 
-### Step 3: accedi al tuo spazio di archiviazione
+In base al piano di [hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), la modifica della password dell'utente FTP tramite la scheda `FTP-SSH`{.action} sarà effettuata su due sentieri diversi:
 
-Una volta modificata la password dell’utente FTP, puoi accedere al tuo spazio di archiviazione.
+- **per le offerte che non permettono di creare un secondo utente FTP** (offerte Start 10M, Kimsufi Web e Personale): clicca sull'icona a forma di matita nella colonna `Password`{.action}, inserisci la nuova password e confermala cliccando sul pulsante verde.
 
-Per compiere questa operazione, e a seconda della tuo piano di hosting, hai a disposizione diversi modi:
+![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
-- **utilizzare l’FTP Explorer**: ti consente di accedere al tuo spazio di archiviazione dal tuo browser. Per utilizzarlo, clicca sul pulsante `FTP Explorer`{.action} dalla scheda `FTP - SSH`{.action};
+- **per le offerte che permettono di creare diversi utenti FTP** (offerte Pro e Performance): clicca sui tre puntini in corrispondenza dell'utente FTP interessato e poi su `Modifica la password`{.action}. Nella nuova finestra, inserisci la nuova password, confermala digitandone una seconda e clicca su `Conferma`{.action}.
 
-- **utilizzare un software compatibile con il protocollo FTP**: in questo caso è necessario installare un software compatibile sul tuo computer (come ad esempio FileZilla);
+![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
-- **utilizzare un accesso SSH**: per interagire con il tuo spazio di archiviazione dovrai utilizzare alcuni comandi da un terminale. Per l’utilizzo di questo tipo di accesso sono necessarie conoscenze più avanzate.
+Scegli la nuova password del tuo database e annotiamolo. In entrambi i casi esso dovrà soddisfare le seguenti condizioni:
 
-## Per saperne di più
+- Minimo 8 caratteri
+- Massimo 30 caratteri
+- Almeno una lettera maiuscola;
+- Almeno una lettera minuscola
+- Almeno una cifra
+- Essere composto esclusivamente da cifre e lettere.
 
-[Per saperne di più sulla sicurezza delle password con l’aiuto dell’ANSSI](https://www.getsafeonline.org/protecting-yourself/passwords/){.external}.
+Consulta la scheda Operazioni in corso` `{.action} e aggiorna regolarmente la pagina. La modifica richiede solo pochi minuti per essere effettiva.
 
-[SSH sugli hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/){.external}.
+### Step 3: accedere al tuo spazio di archiviazione
 
-[Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/){.external}.
+La connessione allo spazio di hosting dei tuoi file può essere effettuata in diversi modi:
 
+- **FTP Explorer**\: questo software è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Per utilizzarlo, dalla scheda `FTP-SSH`{.action}, clicca sul pulsante `FTP Explorer`{.action};
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+- **un software FTP**\: dovrai installare sul tuo computer un software compatibile con il protocollo FTP (ad esempio, [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/));
+
+- **un accesso SSH** (solo sulle offerte Pro e Performance): per utilizzare questo protocollo di connessione, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
+
+> [!primary]
+>
+> Per maggiori informazioni, consulta la guida ["Connettersi allo spazio di storage di un hosting Web"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+>
+
+## Spingiti oltre <a name="aller-plus-loin"></a>
+
+[“Pillole di Sicurezza” di Clusit, l’Associazione Italiana per la Sicurezza Informatica](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
+
+[Utilizzo del software FileZilla con il tuo hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+
+[SSH sugli hosting Web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/fr/support-levels/).
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
