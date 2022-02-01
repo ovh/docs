@@ -43,6 +43,7 @@ Your order is confirmed. The progression of the delivery is showing with an esti
 
 ![Delivery](images/en04deliver.png){.thumbnail}
 
+Once done, a new host is showing in your datacenter and is ready for use.
 
 ## Go further
 
