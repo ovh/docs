@@ -2,7 +2,7 @@
 title: 'Ativar a certificação PCI DSS no Private Cloud da OVH'
 slug: ativar-certificacao-pci-dss-no-private-cloud-ovh
 excerpt: 'Saiba como ativar a certificação PCI DSS no serviço Private Cloud da OVH'
-section: 'Serviços e opções OVH'
+section: 'Serviços e opções OVHcloud'
 ---
 
 **Última atualização: 10/05/2019**

@@ -3,15 +3,20 @@ title: 'Instalação das VMware Tools'
 excerpt: 'Saiba como instalar as VMware Tools em Linux ou Windows'
 slug: instalar_o_pacote_vmware_tools
 legacy_guide_number: g621
+section: Gestão das máquinas virtuais
 ---
 
-**Última atualização: 24/07/2019**
+**Última atualização: 01/02/2022**
 
 ## Sumário
 
 As VMware Tools melhoram os desempenhos de uma máquina virtual e permitem utilizar um grande número das suas funcionalidades de utilização simples nos produtos VMware.
 
 **Este manual explica-lhe as diferentes etapas que deve seguir para proceder à sua instalação.**
+
+## Requisitos
+
+- Ter um identificador de utilizador ativo (criado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
 ## Instruções
 
@@ -27,7 +32,6 @@ Isto permite manter as VMware Tools atualizadas da mesma forma que os outros com
 
 Se a distribuição que utilizar inclui esta ferramenta, poderá encontrar as *Open VM Tools* com o seguinte nome de pacote: *open-vm-tools*
 
-
 Este método de instalação é válido para as seguintes versões de GNU/Linux:
 
 - Fedora 19 e superior
@@ -39,12 +43,11 @@ Este método de instalação é válido para as seguintes versões de GNU/Linux:
 - Oracle Linux 7.0 e superior
 - SUSE Linux Enterprise 11 SP4 e superior
 
-
 ### Versões anteriores
 
 Em primeiro lugar, deve montar os discos das VMware Tools a partir do web client vSphere. Para isso, faça clique direito na VM e selecione “Guest OS” validando a opção “Install VMware Tools”:
 
-![](images/tools.png){.thumbnail}
+![Linux](images/tools.png){.thumbnail}
 
 A seguir, deve montar o volume ativo com o seguinte comando:
 
@@ -61,7 +64,7 @@ Descomprima o arquivo das VMwareTools. Neste exemplo, em /tmp.
 > ./vmware-install.pl default
 ```
 
-> [!success]
+> [!primary]
 >
 > Pequena dica: se quiser responder por predefinição às respostas propostas e não ser avisado, adicione "default" como argumento na linha de instalação
 > 
@@ -72,7 +75,7 @@ Uma vez completada a instalação, o disco será automaticamente eliminado do si
 
 Depois de montar o volume através da opção “Install/Upgrade VMware Tools”, pode aceder ao disco a partir da equipa de trabalho da sua máquina virtual. Clique duas vezes no mesmo para lançar a instalação das Tools:
 
-![](images/windows.jpg){.thumbnail}
+![windows](images/windows.jpg){.thumbnail}
 
 O assistente de instalação solicitará que aceite as licenças e que escolha o tipo de instalação (recomendamos a instalação completa).
 

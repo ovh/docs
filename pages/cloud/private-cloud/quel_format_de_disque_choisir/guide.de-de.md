@@ -6,7 +6,7 @@ section: Verwaltung virtueller Maschinen
 order: 04
 ---
 
-**Stand 25.06.2020**
+**Stand 01.02.2022**
 
 ## Einleitung
 
@@ -33,7 +33,6 @@ Das bedeutet also: Man kann auf einem Datastore von 1,2TB die Kapazität von 50T
 Belegter Platz kann nicht anderweitig beansprucht werden. 
 
 Beispiel: Belegt man 40GB auf einer „Thin Disk“ von 100GB und löscht man Daten im Umfang von 20GB in der VM, beträgt der verwendete Speicherplatz auf dem Datastore immer noch 40GB und der zugewiesene Speicherplatz 100GB.
-
 
 ### Thick Provisioning Eager Zero
 
@@ -64,9 +63,9 @@ Beispiel für VMs von 100GB mit einem *Gastbetriebssystem* von 40GB:
 
 ### Festplattenformat bei OVHcloud
 
-Auf dem Storage vom Typ Datastore einer Private Cloud Infrastruktur ist nur *Thin Provisioning* verfügbar.
+In einer Hosted Private Cloud Infrastruktur ist standardmäßig nur *Thin Provisioning* möglich.
 
-Auf dem vSan-Storage sind die 3 Formate möglich.
+Die 3 Formattypen sind jedoch auf vSAN-Storage verfügbar.
 
 ## Weiterführende Informationen
 
