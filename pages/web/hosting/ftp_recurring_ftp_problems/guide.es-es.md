@@ -29,7 +29,7 @@ El uso de software FTP durante la conexión a su [hosting Cloud](https://www.ovh
 ## Requisitos
 
 - Tener contratado un plan de [hosting Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -90,7 +90,7 @@ Este enlace se instala por defecto en los alojamientos compartidos de OVHcloud. 
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si no ha utilizado la funcionalidad "[Módulo en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/)" para crear su sitio web, deberá utilizar el programa [Net2FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para eliminar manualmente la página "Sitio en construcción".
+Si no ha utilizado la funcionalidad "[Módulo en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/)" para crear su sitio web, deberá utilizar el programa [Net2FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para eliminar manualmente la página "Sitio en construcción".
 
 ## Más información <a name="gofurther"></a>
 
