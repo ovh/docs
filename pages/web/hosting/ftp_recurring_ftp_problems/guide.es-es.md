@@ -15,7 +15,7 @@ order: 3
 
 ## Objetivo
 
-El uso de software FTP durante la conexión a su [hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/) puede provocar diferentes anomalías. Esta guía explica cómo solucionar los problemas más comunes.
+El uso de software FTP durante la conexión a su [hosting Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/) puede provocar diferentes anomalías. Esta guía explica cómo solucionar los problemas más comunes.
 
 **Esta guía explica cómo solucionar los errores relacionados con el software FTP.**
 
