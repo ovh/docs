@@ -5,7 +5,7 @@ excerpt: "Utilisez les zones afin d'augmenter la disponibilité et diminuer la l
 section: Configuration
 ---
 
-**Dernière mise à jour le 20/01/2021**
+**Dernière mise à jour le 01/02/2022**
 
 ## Objectif
 
