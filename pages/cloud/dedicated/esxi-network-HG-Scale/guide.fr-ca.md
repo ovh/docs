@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 6
 ---
 
-**Dernière mise à jour le 07/10/2021**
+**Dernière mise à jour le 28/01/2022**
 
 ## Objectif
 
@@ -36,7 +36,7 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 
 > [!warning]
 >
-> Il y a actuellement un défaut connu avec l'interface utilisateur graphique ESXi et l'exécution de ces étapes dans l'interface entraînera une configuration non fonctionnelle. Il est absolument nécessaire d'appliquer cette configuration en utilisant l'interface de ligne de commande en SSH.
+> Un défaut connu est actuellement présent dans l'interface utilisateur graphique ESXi. Aussi l'exécution de ces étapes dans cette interface entraînerait une configuration non fonctionnelle. Il est absolument nécessaire d'appliquer cette configuration en utilisant l'interface de ligne de commande en SSH.
 >
 
 ### IP fail-over via le vRack
