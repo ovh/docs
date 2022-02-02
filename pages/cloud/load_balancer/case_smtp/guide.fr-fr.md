@@ -68,12 +68,13 @@ Dans l'onglet `Fermes`{.action} de serveurs, cliquez sur le bouton `+TCP/TLS`{.a
 
 Remplissez les différents champs. Les champs obligatoires pour une configuration simple sont le *Port* et la *Zone*. Dans notre cas, pour SMTP, le port utilisé est le port 25. Si aucun port n'est spécifié, votre OVHcloud Load Balancer utilisera automatiquement le même port que le Frontend correspondant.
 
-Vous pouvez optionnelement ajouter une sonde de type smtp sur votre Ferme.
-
-
 ![Ajout d'une ferme de serveurs via le Manager](images/add_farm.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
+
+Vous pouvez optionnelement ajouter une sonde de type smtp sur votre Ferme.
+
+![Ajout d'une ferme de serveurs via le Manager](images/add_farm_Probe.png){.thumbnail}
 
 Votre Ferme de serveurs devrait apparaître dans la liste, sous l'onglet `Fermes`{.action}.
 
@@ -144,6 +145,7 @@ Seuls les champs *Adresse IPv4*,  *État* et *Version du ProxyProtocol* sont obl
 
 
 ![Ajour d'un serveur dans une Ferme.](images/add_server.png){.thumbnail}
+![Ajour d'un serveur dans une Ferme.](images/add_server_advance.png){.thumbnail}
 
 Cliquez sur le bouton `Ajouter`{.action} une fois les champs remplis.
 
