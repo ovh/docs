@@ -739,6 +739,12 @@ Please find below a list of Frequently Asked Questions, do not hesitate to submi
 >> Yes, it’s even required to have 2 different PFSENSEs to avoid IP conflicts.
 > Are vxLANs available on both vDC?
 >> The vxLANs are available on Premier only, and not on Essentials (as there is no NSX deployed).
+> We don't use NSX. The migration procedure indicates that the source/destination DVS must be at the same version. On the source, our only DVS is in 6.0.0 so I imagine it needs to be updated. The doc / video / and the interface indicates that we can do it ourselves without cutting if it's vRack. I thought it was vRack but we can't update (menu grayed out). Does that mean it's vxlan? How do you tell the difference between vRack and vxlan?
+>> If it's greyed out, it's probably the public DVS (vmnetwork) /vxlan. The bulk DVS is a second DVS with the word "vrack" at the end. Do not hesitate to open a support ticket so that we can confirm this with you and do the DVS upgrade if necessary.
+> Can a DRS pool be created for global datastores? I believe I have already tried without success between 2 vDC 2014 / 2016.
+>> There are indeed limitations for global datastores, we advise to use them only to migrate between the two vDCs and then to have "standard" datastores on the new vDC and to make the global datastores at the end of migration.
+> We have a 2016 SDDC with 6 x 6 TB Acceleraded SSD (ordered in 2021) with "convert to global" available in the manager. Can we convert them to global and keep them as is in the new vDC (to avoid the vMotion storage phase)? Note: the 6 DS are in a storage cluster.
+>> Yes, if the VMs point to these DS there will be no storage motion steps 
 > What Microsoft licenses are available in SPLA mode?
 >> Windows licences (standard and datacenter) and SQL server licences (standard and web) are available on 2020 offers in SPLA mode.
 > I have to upgrade 2 VMware infrastructures that are currently used for DR purposes with data replication done by Zerto. Should I first upgrade my secondary infrastructure or my primary infrastructure?

@@ -765,6 +765,12 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Oui, il est même nécessaire d'avoir 2 PFSENSE différents pour éviter les conflits d'IP.
 > Les vxlan sont-ils disponibles sur les deux vDC ?
 >> Les vxlan sont disponibles uniquement sur Premier et non sur Essentials.
+> Nous n'utilisons pas NSX. La procédure de migration indique que les vDS source/destination doivent être en même version. Sur la source, notre unique vDS est en 6.0.0 donc j'imagine qu'il faut mettre à jour. La doc / la video / et l'interface indique qu'on peut le faire nous même sans coupure si c'est du vRack. Je pensais que c'était du vRack mais nous ne pouvons pas mettre à jour (menu grisé). Est-ce que ça signifie que c'est du vxlan ? Comment fait-on la différence entre vRack et vxlan ?
+>> s'il est grisé, c'est sans doute qu'il s'agit du DVS publique (vmnetwork) /vxlan. Le DVS vrack est un second DVS avec le mot "vrack" a la fin. N'hésitez pas a ouvrir un ticket support que nous puissions confirmer cela avec vous et faire l'upgrade DVS si nécéssaire.
+> Est-ce qu'on peut créer un pool DRS pour les datastores globaux ? Je crois avoir déjà essayé sans succès entre 2 vdc 2014 / 2016.
+>> Il y a effectivement des limitations pour les datastores globaux, nous conseillons de les utiliser que pour faire la migration entre les deux vDC et d'avoir ensuite des datastores "standard" sur le nouveau vDC et de rendre les datastores globaux a la fin de la migration.
+> Nous avons un SDDC 2016 avec 6 x 6 To SSD Acceleraded (commandés en 2021) avec "convert to global" disponible dans le manager. Peut-on les convertir en global et les garder en l'état dans le nouveau vDC (pour éviter la phase de storage vMotion) ? Note: les 6 DS sont dans un cluster de stockage.
+>> Oui, si les VMs pointent sur ces DS il n'y aura pas d'étapes de storage motion
 > Quelles sont les licences Microsoft disponibles en mode SPLA ?
 >> Les licences Windows (standard et datacentre) et SQL Server (standard et web) sont disponibles sur les offres 2020 en mode SPLA.
 > Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
