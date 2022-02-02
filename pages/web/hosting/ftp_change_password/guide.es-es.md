@@ -1,17 +1,17 @@
 ---
 title: Cambiar la contraseña de un usuario FTP
-slug: cambiar-contraseña-usuario-ftp
+slug: cambiar-contrasena-usuario-ftp
 excerpt: Cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud
 section: FTP y SSH
 order: 2
 ---
 
-**Última actualización: 14/01/2022**
+**Última actualización: 24/01/2022**
 
 ## Objetivo
 
 Los planes de hosting de OVHcloud permiten acceder a un espacio de almacenamiento de archivos en la nube que puede utilizarse a través del protocolo **FTP**.<br>Es posible acceder a este espacio a través de un usuario FTP y la contraseña asociada.
-<br>Este acceso le permitirá [publicar su sitio web](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).
+<br>Este acceso le permitirá [publicar su sitio web](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/#23-cargar-los-archivos-en-el-espacio-de-almacenamiento).
 
 **Esta guía explica cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud.**
 
@@ -19,32 +19,32 @@ Los planes de hosting de OVHcloud permiten acceder a un espacio de almacenamient
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#aller-plus-loin) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-### 1\. Acceder a la gestión de los usuarios FTP
+### Etapa 1: Acceder a la gestión de los usuarios FTP
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Seleccione la pestaña `FTP-SSH`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Seleccione la pestaña `FTP-SSH`{.action}.
 
 Se mostrará una tabla con los usuarios FTP creados en su alojamiento. Estos usuarios le permiten acceder a su espacio de almacenamiento FTP para publicar los archivos de su sitio web. Al instalar el alojamiento, se crea un usuario automáticamente.
 
-### 2\. Cambiar la contraseña de un usuario FTP
+### Etapa 2: Cambiar la contraseña de un usuario FTP
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
 >
 
-Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
+Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), la modificación de la contraseña del usuario FTP a través de la pestaña `FTP-SSH`{.action} se realizará por dos caminos diferentes:
 
-- **productos que no permiten crear un segundo usuario FTP** (productos Start 10M, Kimsufi Web y Personal): haga clic en el icono con forma de lápiz situado en la columna `Contraseña`{.action}, introduzca la nueva contraseña y confirme el cambio haciendo clic en el botón verde.
+- **productos que no permiten crear un segundo usuario FTP** (productos Start 10M y Personal): haga clic en el icono con forma de lápiz situado en la columna `Contraseña`{.action}, introduzca la nueva contraseña y confirme el cambio haciendo clic en el botón verde.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
@@ -63,29 +63,25 @@ Seleccione la nueva contraseña de la base de datos y nócelo. En ambos casos de
 
 Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar la página periódicamente. El cambio de contraseña tarda unos minutos en aplicarse.
 
-### 3\. Acceder al espacio de almacenamiento
+### Etapa 3: Acceder al espacio de almacenamiento
 
 Existen diversas formas de conectar los archivos al espacio de alojamiento:
 
-- **Explorador** FTP: puede acceder a este programa desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Para utilizarlo, abra la pestaña `FTP-SSH`{.action} y haga clic en el botón Explorador `FTP`{.action}.
+- **Explorador FTP**: puede acceder a este programa desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Para utilizarlo, abra la pestaña `FTP-SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
-- **un programa FTP**\: Si lo desea, deberá instalar en su ordenador un programa compatible con el protocolo FTP (por ejemplo, [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)).
+- **Programa FTP**: Si lo desea, deberá instalar en su ordenador un programa compatible con el protocolo FTP (por ejemplo, [FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)).
 
-- **acceso SSH** (solo en los planes Profesional y Performance): consulte la guía "[Utilizar el acceso SSH de un alojamiento web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)" para utilizar este protocolo de conexión.
+- **Acceso SSH** (solo en los planes Profesional y Performance): consulte la guía "[Utilizar SSH en un web hosting](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/)" para utilizar este protocolo de conexión.
 
 > [!primary]
 >
-> Para más información, consulte la guía ["Conectarse al espacio de almacenamiento de un alojamiento web"](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Para más información, consulte la guía "[Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/)".
 >
 
-## Más información <a name="aller-plus-loin"></a>
+## Más información <a name="gofurther"></a>
 
-[Consejos del sitio web cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
+[Oficina de Seguridad del Internauta (OSI)](https://www.osi.es){.external}
 
-[Uso de FileZilla con el alojamiento](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
-[SSH en alojamiento web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
-
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/fr/support-levels/).
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

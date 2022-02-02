@@ -6,14 +6,14 @@ section: FTP and SSH
 order: 2
 ---
 
-**Last updated 14th January 2022**
+**Last updated 24th January 2022**
 
 ## Objective
 
 OVHcloud Web Hosting plans provide you with access to an online file storage space, which you can use via the **FTP** protocol.<br>You can access this space with a FTP user account and the password associated with it.
 <br>This access will allow you to [put your website online](https://docs.ovh.com/sg/en/hosting/web_hosting_how_to_get_my_website_online/).
 
-**Find out how to change the password for a FTP user created on your OVHcloud Web Hosting plan.**
+**This guide explains how to change the password for a FTP user created on your OVHcloud Web Hosting plan.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -70,20 +70,16 @@ There are several ways you can log in to your hosting space to access the files:
 
 - **FTP software**: You will need to install FTP-compatible software on your computer (for example, [FileZilla](https://docs.ovh.com/sg/en/hosting/web_hosting_filezilla_user_guide/)).
 
-- **SSH access** (only on Professional and Performance plans): Please read our guide on [Using SSH access to your Web Hosting plan](https://docs.ovh.com/sg/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to use this connection protocol.
+- **SSH access** (only on Professional and Performance plans): Please read our guide on "[Accessing a web hosting plan via SSH](https://docs.ovh.com/sg/en/hosting/web_hosting_ssh_on_web_hosting_packages/)" to use this connection protocol.
 
 > [!primary]
 >
-> For more information, please refer to our guide on [logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/).
+> For more information, please refer to our guide on "[Logging in to your Web Hosting plan’s storage space](https://docs.ovh.com/sg/en/hosting/log-in-to-storage-ftp-web-hosting/)".
 >
 
 ## Go further <a name="gofurther"></a>
 
 [Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/){.external}
-
-[Using FileZilla software with your hosting](https://docs.ovh.com/sg/en/hosting/web_hosting_filezilla_user_guide/)
-
-[SSH on Web Hosting](https://docs.ovh.com/sg/en/hosting/web_hosting_ssh_on_web_hosting_packages/)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 

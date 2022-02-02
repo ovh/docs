@@ -7,7 +7,7 @@ order: 2
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 24.01.2022**
@@ -47,7 +47,7 @@ Eine Tabelle zeigt die auf Ihrem Hosting erstellten FTP-Benutzer an. Mit diesen 
 
 Je nach Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erfolgt die Änderung des Passworts Ihres FTP-Benutzers im Tab `FTP-SSH`{.action} über zwei verschiedene Wege:
 
-- **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (Start 10M, Basic Hosting): Klicken Sie in der Spalte `Passwort`{.action} auf das Bleistift-Symbol, geben Sie das neue Passwort ein und bestätigen Sie die Änderung, indem Sie auf den grünen Button klicken.
+- **Für Hosting-Pakete, die keinen zweiten FTP-Benutzer erstellen können** (Start 10M und Basic Hosting): Klicken Sie in der Spalte `Passwort`{.action} auf das Bleistift-Symbol, geben Sie das neue Passwort ein und bestätigen Sie die Änderung, indem Sie auf den grünen Button klicken.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
@@ -84,10 +84,6 @@ Das Hochladen Ihrer Dateien in den Hosting-Bereich kann auf mehrere Arten erfolg
 ## Weiterführende Informationen <a name="gofurther"></a>
 
 [Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html){.external}
-
-[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
-
-[SSH auf Webhostings verwenden](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
