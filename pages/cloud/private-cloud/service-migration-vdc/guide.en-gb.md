@@ -741,6 +741,10 @@ Please find below a list of Frequently Asked Questions, do not hesitate to submi
 >> The vxLANs are available on Premier only, and not on Essentials (as there is no NSX deployed).
 > We don't use NSX. The migration procedure indicates that the source/destination DVS must be at the same version. On the source, our only DVS is in 6.0.0 so I imagine it needs to be updated. The doc / video / and the interface indicates that we can do it ourselves without cutting if it's vRack. I thought it was vRack but we can't update (menu grayed out). Does that mean it's vxlan? How do you tell the difference between vRack and vxlan?
 >> If it's greyed out, it's probably the public DVS (vmnetwork) /vxlan. The bulk DVS is a second DVS with the word "vrack" at the end. Do not hesitate to open a support ticket so that we can confirm this with you and do the DVS upgrade if necessary.
+> How do I know if my network adapters are VLAN or VxLAN and Essential compatible? In vSphere, I see for example and without more detail: vxw-dvs-74-virtualwire-20-sid-....
+>> Anything %-virtualwire-% is vxlan.
+> If I have several VMs that go through the same NSX Edge, it will be necessary to migrate all the VMs and the Edge at the same time at the risk of no longer having an internet connection on certain VMs otherwise?
+>> Yes, either the EDGE would have to be moved with a redeployment before moving the VMs. Depending on the case, with extended networks or not, the 2 actions can be separated. 
 > Can a DRS pool be created for global datastores? I believe I have already tried without success between 2 vDC 2014 / 2016.
 >> There are indeed limitations for global datastores, we advise to use them only to migrate between the two vDCs and then to have "standard" datastores on the new vDC and to make the global datastores at the end of migration.
 > We have a 2016 SDDC with 6 x 6 TB Acceleraded SSD (ordered in 2021) with "convert to global" available in the manager. Can we convert them to global and keep them as is in the new vDC (to avoid the vMotion storage phase)? Note: the 6 DS are in a storage cluster.
