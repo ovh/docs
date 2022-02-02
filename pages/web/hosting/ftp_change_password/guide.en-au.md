@@ -18,7 +18,7 @@ OVHcloud Web Hosting plans provide you with access to an online file storage spa
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -43,7 +43,7 @@ A table will display the FTP users created on your Web Hosting plan. These users
 
 Depending on which OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) you have, there are two different paths for changing your FTP user password user via the `FTP-SSH`{.action} tab:
 
-- **For Web Hosting plans that do not allow you to create a second FTP user** (Start 10M, Kimsufi Web and Personal hosting): Click on the pencil icon in the `Password`{.action} column, enter the new password, then confirm the change by clicking on the green button.
+- **For Web Hosting plans that do not allow you to create a second FTP user** (Start 10M and Personal hosting): Click on the pencil icon in the `Password`{.action} column, enter the new password, then confirm the change by clicking on the green button.
 
 ![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
