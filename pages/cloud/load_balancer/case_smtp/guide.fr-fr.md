@@ -1,31 +1,26 @@
 ---
-title: 'Configurer SMTP sur un service Load Balancer'
+title: 'Configuration SMTP sur un service Load Balancer'
 slug: case-smtp
 excerpt: 'Cas pratique SMTP'
 section: "Cas d'usage"
 ---
+**Dernière mise à jour le à 01/02/2022**
 
-## Introduction
-Ce guide a pour but de vous aider à configurer un service OVH Load Balancer OVH pour répartir la charge sur plusieurs serveurs répondant convenablement en SMTP.
+## Objectif
+Ce guide a pour but de vous aider à configurer un service OVHcloud Load Balancer pour répartir la charge sur plusieurs serveurs répondant convenablement en SMTP.
 
+## Prérequis
 
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Posséder un service SMTP de type postfix installé et configuré sur vos serveurs
+
+## En pratique
 
 > [!warning]
 >
 > Les questions de ce qu'est un service SMTP, et son fonctionnement, ne seront pas abordées ici.
 > Il est considéré que ces informations sont raisonnablement comprises et/ou maîtrisées.
-> 
-
-
-
-> [!warning]
->
-> Nous considérons que vous avez déjà un service SMTP de type postfix installé et configuré sur vos serveurs.
-> 
-
-
-
-> [!warning]
 >
 > Nous allons vous guider au travers des différentes étapes.
 > Dépendant de vos choix d'architecture, certaines configurations peuvent différer.
@@ -34,7 +29,7 @@ Ce guide a pour but de vous aider à configurer un service OVH Load Balancer OVH
 
 Dans ce guide, nous allons configurer un service simple de Load Balancing TCP, pour un (ou plusieurs) serveur(s) SMTP. Un Frontend TCP écoutera le trafic TCP sur le port 25. Il sera configuré pour diriger le trafic sur une Ferme TCP, avec un ou plusieurs Serveurs TCP, selon votre configuration.
 
-Pour rappel, chaque protocole (HTTP, TCP et UDP) dans le service OVH Load Balancer dispose de ses propres Frontends, Fermes et Serveurs associés.
+Pour rappel, chaque protocole (HTTP, TCP et UDP) dans le service OVHcloud Load Balancer dispose de ses propres Frontends, Fermes et Serveurs associés.
 
 
 
@@ -47,11 +42,11 @@ Pour rappel, chaque protocole (HTTP, TCP et UDP) dans le service OVH Load Balanc
 Dans le Manager nous allons retrouver les fonctionnalités détaillées ci-dessous :
 
 
-![Service OVH Load Balancer](images/iplb_service.png){.thumbnail}
+![Service OVHcloud Load Balancer](images/iplb_service.png){.thumbnail}
 
 
 
-Via l'API OVH, dans la section
+Depuis l'API OVHcloud, dans la section
 
 
 > [!api]
@@ -67,11 +62,11 @@ Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [D
 Nous allons ajouter une Ferme de serveurs TCP à notre service, la partie en charge de répartir le trafic sur les serveurs.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
 
 Dans l'onglet `Fermes`{.action} de serveurs, cliquez sur le bouton `+TCP/TLS`{.action}.
 
-Remplissez les différents champs. Les champs obligatoires pour une configuration simple sont le *Port* et la *Zone*. Dans notre cas, pour SMTP, le port utilisé est le port 25. Si aucun port n'est spécifié, votre OVH Load Balancer utilisera automatiquement le même port que le Frontend correspondant.
+Remplissez les différents champs. Les champs obligatoires pour une configuration simple sont le *Port* et la *Zone*. Dans notre cas, pour SMTP, le port utilisé est le port 25. Si aucun port n'est spécifié, votre OVHcloud Load Balancer utilisera automatiquement le même port que le Frontend correspondant.
 
 Vous pouvez optionnelement ajouter une sonde de type smtp sur votre Ferme.
 
@@ -86,7 +81,7 @@ Votre Ferme de serveurs devrait apparaître dans la liste, sous l'onglet `Fermes
 ![Détails de la ferme de serveurs créée](images/resume_farm.png){.thumbnail}
 
 
-### Via l'API
+### Depuis l'API OVHcloud 
 
 - Liste des Fermes de serveurs TCP :
 
@@ -132,7 +127,7 @@ Votre Ferme de serveurs devrait apparaître dans la liste, sous l'onglet `Fermes
 Nous allons maintenant ajouter un serveur à notre Ferme de serveurs.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
 
 Toujours dans l'onglet `Ferme`{.action}, sélectionnez la Ferme dans laquelle vous souhaitez ajouter un serveur en cliquant sur la ligne correspondante. La liste des Serveurs déjà configurés dans la Ferme apparaît en dessous de la liste des Fermes, ainsi qu'un bouton `+Server`{.action}. Cliquez sur ce bouton pour ajouter un nouveau serveur.
 
@@ -158,7 +153,7 @@ Votre Serveur devrait apparaître dans la liste des Serveurs l'onglet `Fermes`{.
 ![Détails du serveur créé.](images/resume_server.png){.thumbnail}
 
 
-### Via l'API
+### Depuis l'API OVHcloud
 
 - Liste des Serveurs de la Ferme :
 
@@ -201,16 +196,16 @@ Votre Serveur devrait apparaître dans la liste des Serveurs l'onglet `Fermes`{.
 
 ## Ajouter un `Frontend`{.action}
 
-Nous allons maintenant ajouter un `Frontend`{.action} à notre service et le connecter à notre Ferme de serveurs. Le Frontend est la partie de votre OVH Load Balancer qui sert à exposer votre service sur Internet.
+Nous allons maintenant ajouter un `Frontend`{.action} à notre service et le connecter à notre Ferme de serveurs. Le Frontend est la partie de votre OVHcloud Load Balancer qui sert à exposer votre service sur Internet.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
 
 Dans l'onglet `+Frontends`{.action}, cliquez sur le bouton `+TCP/TLS`{.action}.
 
 Remplissez les différents champs. Les seuls champs obligatoires pour une configuration simple sont le *Port* (25 pour un service SMTP standard), la *Zone* et la *Sonde* si vous en avez configuré un dans votre Ferme. Si vous souhaitez que votre service soit disponible sur plusieurs ports en même temps, vous pouvez spécifier une liste de ports séparés par des virgules ou une plage de ports de la forme "<port_de_départ>-<port_de_fin>".
 
-Si vous avez routé des IP Failovers vers votre service OVH Load Balancer, vous pouvez également attacher un Frontend à une ou plusieurs IP Failovers spécifiques.
+Si vous avez routé des IP Failovers vers votre service OVHcloud Load Balancer, vous pouvez également attacher un Frontend à une ou plusieurs IP Failovers spécifiques.
 
 N'oubliez pas de spécifier comme «Ferme par défaut» la Ferme créée précédemment.
 
@@ -225,7 +220,7 @@ Votre Frontend devrait apparaître dans la liste, sous l'onglet `Frontends`{.act
 ![Détails du frontend créé](images/resume_frontend.png){.thumbnail}
 
 
-### Via l'API
+### Depuis l'API OVHcloud
 
 - Liste des Frontends TCP :
 
@@ -269,17 +264,17 @@ Votre Frontend devrait apparaître dans la liste, sous l'onglet `Frontends`{.act
 
 ## Appliquer les modifications
 
-Les modifications apportées à votre service OVH Load Balancer doivent être *appliquées explicitement* dans chacune des zones configurées pour votre service OVH Load Balancer. C'est seulement à ce moment qu'elles seront visibles pour vos visiteurs. Cela permet de faire un changement complexe de configuration en plusieurs fois, et de ne l'appliquer que lorsque la configuration est prête.
+Les modifications apportées à votre service OVHcloud Load Balancer doivent être *appliquées explicitement* dans chacune des zones configurées pour votre service OVHcloud Load Balancer. C'est seulement à ce moment qu'elles seront visibles pour vos visiteurs. Cela permet de faire un changement complexe de configuration en plusieurs fois, et de ne l'appliquer que lorsque la configuration est prête.
 
 Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour chacune de vos zones.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
 
-Rendez-vous sur la page principale de votre service OVH Load Balancer et cliquez sur les boutons `Appliquer:Zone`{.action} pour chacune des zones concernées.
+Rendez-vous sur la page principale de votre service OVHcloud Load Balancer et cliquez sur les boutons `Appliquer:Zone`{.action} pour chacune des zones concernées.
 
 
-### Via l'API
+### Depuis l'API OVHcloud
 
 - Rafraîchir une zone :
 
