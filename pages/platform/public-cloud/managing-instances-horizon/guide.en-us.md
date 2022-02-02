@@ -56,7 +56,7 @@ Use this menu to perform the following actions on one or more instances. First, 
 - Soft Reboot Instances: This option allows you to perform a software reboot on one or more instances.
 
 
-**Create snapshot**: This option allows you to create a snapshot of your instance. Consult [this guide](https://docs.ovh.com/fr/public-cloud/gestion-des-snapshots-dune-instance-dans-horizon/#creation-du-snapshot) for more information.
+**Create snapshot**: This option allows you to create a snapshot of your instance. Consult [this guide](https://docs.ovh.com/ie/en/public-cloud/manage-snapshots-of-instances-in-horizon/) for more information.
 
 
 ### Modify an instance
