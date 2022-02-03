@@ -25,7 +25,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failo
 
 ## Requisitos
 
-* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
+* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones. El bloque debe apuntarse al vRack.
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor dedicado compatible con el vRack](https://www.ovhcloud.com/es/bare-metal/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
@@ -38,7 +38,16 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failo
 > En estas gamas de servidores, hay 4 tarjetas de red. Dos para el público, dos para el privado. Para disfrutar del conjunto del ancho de banda, es necesario crear agregados.
 >
 
+> [!warning]
+>
+> Actualmente hay un fallo conocido en la interfaz gráfica ESXi de usuario. Por lo tanto, la ejecución de estos pasos en esta interfaz conllevaría una configuración no funcional. Es absolutamente necesario aplicar esta configuración utilizando la interfaz de la línea de comandos por SSH.
+>
+
 ### IP Failover a través del vRack
+
+En primer lugar, añada su bloque público de direcciones IP al vRack. Para ello, acceda a la sección `Bare Metal Cloud`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y abra el menú `vRack`{.action} en la columna izquierda.
+
+Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque público de direcciones IP que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
 #### Configuración original
 
