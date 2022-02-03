@@ -1,78 +1,91 @@
 ---
-title: 'Alterar a palavra-passe de um utilizador FTP'
+title: Alterar a palavra-passe de um utilizador FTP
 slug: alterar-palavra-passe-utilizador-ftp
-excerpt: 'Saiba como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVH'
-section: 'FTP e SSH'
-order: 1
+excerpt: Saiba como alterar a palavra-passe de um utilizador FTP criado num alojamento web da OVH
+section: FTP e SSH
+order: 2
 ---
 
-**Última atualização: 06/02/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 24/01/2022**
 
-Os planos de alojamento web da OVH dão acesso a um espaço de armazenamento que permite publicar ficheiros num site. O acesso a este espaço é possível através de um utilizador FTP e da respetiva palavra-passe.
+## Objetivo
 
-**Saiba como alterar a palavra-passe de um utilizador FTP criado no seu alojamento web da OVH.**
+As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamento de ficheiros online utilizável através do protocolo **FTP**.<br>O acesso a este espaço é possível através de um utilizador FTP e da respetiva palavra-passe.
+<br>Este acesso permitir-lhe-á [publicar o seu site](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/#23-carregar-os-ficheiros-para-o-espaco-de-armazenamento).
+
+**Descubra como alterar a palavra-passe de um utilizador FTP criado no seu alojamento web da OVHcloud.**
+
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+>
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
-
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-### 1 - Aceder à gestão dos utilizadores FTP
+### Etapa 1: Aceder à gestão dos utilizadores FTP
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. De seguida, clique no separador `FTP - SSH`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `FTP-SSH`{.action}.
 
-Aparecerá uma tabela com os utilizadores FTP criados no seu alojamento. Estes utilizadores permitem-lhe aceder ao seu espaço de armazenamento e publicar ficheiros no seu site. Um utilizador será automaticamente criado durante a instalação do alojamento.
+Um quadro mostra os utilizadores FTP criados no seu alojamento. Estes utilizadores permitem-lhe aceder ao seu espaço de armazenamento FTP para que possa publicar os ficheiros do seu website. Um utilizador será automaticamente criado durante a instalação do alojamento.
 
-![ftppassword](images/change-ftp-password-step1.png){.thumbnail}
-
-### 2 - Alterar a palavra-passe de um utilizador FTP
-
-Para alterar a palavra-passe de um utilizador FTP criado no seu alojamento, pode fazê-lo de duas formas consoante o seu plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}:
-
-- **Para os planos onde não é possível criar vários utilizadores FTP** (plano Start 10M, Kimsufi Web e Perso): clique no ícone em forma de lápis na coluna `Palavra-passe`{.action} da tabela, introduza a nova palavra-passe no campo de texto e valide a alteração.
-
-- **Para os planos onde é possível criar vários utilizadores FTP** (planos Pro e Performance): clique no ícone dos três pontos à direita do utilizador correspondente e selecione a opção `Alterar palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe, confirme que está correta e clique em **Validar**.
-
-A alteração demorará alguns minutos até ficar efetiva.
+### Etapa 2: Alterar a palavra-passe de um utilizador FTP
 
 > [!primary]
 >
-> Por razões de segurança, introduza a nova palavra-passe de acordo com as indicações apresentadas. Além disso, recomendamos que:
->
-> - não utilize duas vezes a mesma palavra-passe;
->
-> - selecione uma palavra-passe sem qualquer relação com as suas informações pessoais (apelido, nome ou data de nascimento, por exemplo);
->
-> - renove as suas palavras-passe de forma regular;
->
-> - não anote nem envie as suas palavras-passe para o seu endereço de e-mail;
->
-> - não guarde as suas palavras-passe no seu browser, mesmo que lhe seja sugerido.
+> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
 >
 
-### 3 - Aceder ao espaço de armazenamento
+Dependendo do seu plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/), a alteração da palavra-passe do utilizador FTP através do separador `FTP-SSH`{.action} poderá ser efetuada de duas formas:
 
-Depois de alterar a palavra-passe do utilizador FTP, poderá aceder ao seu espaço de armazenamento.
+- **para as ofertas que não permitem criar um segundo utilizador FTP** (ofertas Start 10M e Perso): clique no ícone em forma de lápis na coluna `Palavra-passe`{.action}, introduza a nova palavra-passe e confirme a alteração clicando no botão verde.
 
-Para isso, e dependendo do seu plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}, existem várias formas de o fazer:
+![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
 
-- **Utilizar o Explorador FTP**: permite-lhe aceder ao espaço de armazenamento a partir do navegador. Para o utilizar, ainda no separador `FTP - SSH`{.action}, clique no botão `Explorador FTP`{.action}.
+- **para as ofertas que permitem criar vários utilizadores FTP** (ofertas Pro e Performance): clique nos três pontos à direita do utilizador FTP em causa e, a seguir, em `Alterar palavra-passe`{.action}. Na nova janela, introduza a nova palavra-passe pretendida, confirme introduzindo-a uma segunda vez e clique no botão `Validar`{.action}.
 
-- **Utilizar um programa compatível com o protocolo FTP**: terá de instalar no seu computador um programa compatível (como o FileZilla, por exemplo).
+![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
 
-- **Utilizar um acesso SSH**: terá de executar comandos a partir de um terminal para interagir com o seu espaço de armazenamento. Este tipo de acesso requer conhecimento técnicos mais avançados.
+Escolha a nova palavra-passe da sua base de dados e anote-a. Deverá, em ambos os casos, respeitar as seguintes condições:
 
-## Quer saber mais?
+- Mínimo de 8 caracteres;
+- Máximo de 30 caracteres;
+- Pelo menos uma letra maiúscula;
+- Pelo menos uma letra minúscula;
+- Pelo menos um número;
+- Ser composto unicamente por números e letras.
 
-[Saber mais sobre a segurança das palavras-passe graças à ANSSI](http://www.ssi.gouv.fr/en/){.external}.
+Por fim, consulte o separador `Operações em curso`{.action} e atualize a página regularmente. A alteração demorará alguns minutos até ficar efetiva.
 
-[Guia de utilização do FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/){.external}.
+### Etapa 3: Aceder ao espaço de armazenamento
 
-[O SSH nos alojamentos partilhados](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/){.external}.
+A ligação ao espaço de alojamento dos seus ficheiros pode ser realizada de várias formas:
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+- **FTP Explorer**: este programa está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para o utilizar, no separador `FTP-SSH`{.action}, clique no botão `Explorador FTP`{.action};
+
+- **Software FTP**: terá de instalar no seu computador um programa compatível com o protocolo FTP (por exemplo, [FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/));
+
+- **Acesso SSH** (apenas nas ofertas Pro e Performance): consulte o guia "[Utilizar o acesso SSH do seu alojamento web](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/)" para utilizar este protocolo de ligação.
+
+> [!primary]
+>
+> Para mais informações, consulte o guia "[Aceder ao espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/)".
+>
+
+## Quer saber mais? <a name="gofurther"></a>
+
+[O gestor de palavras-passe Keepass](https://keepass.info/){.external}
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
