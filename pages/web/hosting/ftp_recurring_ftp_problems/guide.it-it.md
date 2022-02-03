@@ -37,7 +37,7 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](htt
 
 ![filezilla_error](images/filezilla_error.png){.thumbnail}
 
-Questo messaggio sul software [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/) indica che non hai attivato l'opzione SFTP o SSH dal tuo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In questo modo, le informazioni scambiate tra il tuo server di hosting OVHcloud e il tuo computer non saranno cifrate.
+Questo messaggio sul software [FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/) indica che non hai attivato l'opzione SFTP o SSH dal tuo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In questo modo, le informazioni scambiate tra il tuo server di hosting OVHcloud e il tuo computer non saranno cifrate.
 
 Se i dati che vuoi scambiare tramite questo canale non sono riservati, clicca su `OK`{.action}.
 
