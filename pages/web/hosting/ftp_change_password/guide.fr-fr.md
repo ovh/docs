@@ -2,11 +2,11 @@
 title: "Modifier le mot de passe d'un utilisateur FTP"
 slug: modifier-mot-de-passe-utilisateur-ftp
 excerpt: "Apprenez à changer le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud"
-section: 'FTP et SSH'
+section: FTP et SSH
 order: 2
 ---
 
-**Dernière mise à jour le 14/01/2022**
+**Dernière mise à jour le 24/01/2022**
 
 ## Objectif
 
@@ -69,9 +69,9 @@ La connexion à l'espace d'hébergement de vos fichiers peut s’effectuer de pl
 
 - **FTP Explorer** : ce logiciel est accessible depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour l'utiliser, depuis l'onglet `FTP-SSH`{.action}, cliquez sur le bouton `FTP Explorer`{.action} ;
 
-- **un logiciel FTP** : vous devrez installer un logiciel compatible avec le protocole FTP sur votre ordinateur (par exemple, [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)) ;
+- **Logiciel FTP** : vous devrez installer un logiciel compatible avec le protocole FTP sur votre ordinateur (par exemple, [FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)) ;
 
-- **un accès SSH** (uniquement sur les offres Pro et Performance) : consultez le guide « [Utiliser l’accès SSH de son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) » afin d'utiliser ce protocole de connexion.
+- **Accès SSH** (uniquement sur les offres Pro et Performance) : consultez le guide « [Utiliser l’accès SSH de son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/) » afin d'utiliser ce protocole de connexion.
 
 > [!primary]
 >
@@ -81,10 +81,6 @@ La connexion à l'espace d'hébergement de vos fichiers peut s’effectuer de pl
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
 [Les conseils de cybermalveillance.gouv.fr](https://www.cybermalveillance.gouv.fr/tous-nos-contenus/){.external}
-
-[Utilisation du logiciel FileZilla avec votre hébergement](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
-
-[Le SSH sur les hébergements web](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
