@@ -12,17 +12,17 @@ order: 2
 
 Większość stron internetowych używa **bazy danych** do przechowywania artykułów, komentarzy lub adresów e-mail użytkowników.
 
-Połączenie z tą bazą danych jest możliwe za pomocą **pliku konfiguracyjnego** zawartego [w przestrzeni dyskowej plików](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) Twojego hostingu. Zawiera on informacje umożliwiające Twojej stronie WWW identyfikację z jej **serwerem bazy danych**.
+Połączenie z tą bazą danych jest możliwe za pomocą **pliku konfiguracyjnego** zawartego [w przestrzeni dyskowej plików](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu. Zawiera on informacje umożliwiające Twojej stronie WWW identyfikację z jej **serwerem bazy danych**.
 
 Zmiana hasła do bazy danych musi zatem zawsze być wykonywana:
 
-- W [pliku konfiguracyjnym](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) Twojej strony WWW za [pomocą przestrzeni FTP Twojego hostingu](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/);
+- W [pliku konfiguracyjnym](https://docs.ovh.com/pl/hosting/1-click-module-management/#etap-1-zidentyfikowac-baze-danych-powiazana-z-modulem) Twojej strony WWW za [pomocą przestrzeni FTP Twojego hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/);
 
-- **I** w serwerze zawierającym bazę danych w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- **I** w serwerze zawierającym bazę danych w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees)".
+Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](https://docs.ovh.com/pl/hosting/blad-baz-danych/#blad-podczas-logowania-do-bazy-danych)".
 
-Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](https://partner.ovhcloud.com/fr/directory/) dostawcą usług hostingowych.
+Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług hostingowych.
 
 Zmiana hasła do bazy danych składa się z czterech etapów:
 
@@ -37,21 +37,21 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#aller-plus-loin) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) lub z prywatnym[ ](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)serwerem SQL lub [CloudDB](https://www.ovh.com/fr/cloud-databases/).
-- Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) Twojego hostingu
+- Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu
 
 ## W praktyce
 
 ### Etap 1: zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) kliknij pozycję `Web Cloud`{.action}, a następnie, w menu po lewej stronie ekranu, wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę katalogu `głównego` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij pozycję `Web Cloud`{.action}, a następnie, w menu po lewej stronie ekranu, wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę katalogu `głównego` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -61,7 +61,7 @@ Następnie kliknij kartę `FTP - SSH`{.action}, a następnie przejdź do przestr
 >
 > Jeśli chcesz zmienić hasło do Twojej przestrzeni FTP, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 >
-> Jeśli chcesz zalogować się inną metodą, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Jeśli chcesz zalogować się inną metodą, zapoznaj się z tym [przewodnikiem](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 >
 
 Otwórz `Katalog główny`.
@@ -87,7 +87,7 @@ Aby określić, który przypadek dotyczy Twojej strony WWW, w pliku konfiguracyj
 - Dla DRUPAL: nazwa pojawia się pod **"database"**;
 - W przypadku PRESTASHOP: nazwa wyświetla się pod **"database_name"**.
 
-Następnie wróć do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) w sekcji `Web Cloud`{.action}:
+Następnie wróć do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}:
 
 - Przejdź do sekcji `Hosting`{.action}, a następnie do odpowiedniego hostingu;
 - Kliknij kartę `Bazy danych`{.action} **po prawej stronie** ekranu;
@@ -191,9 +191,9 @@ Zapisz tę zmianę.
 
 Ponownie, możliwe są dwa przypadki: 
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) poświęconej [hostingowi](https://www.ovhcloud.com/fr/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej [hostingowi](https://www.ovhcloud.com/fr/web-hosting/), postępuj zgodnie z tymi [instrukcjami](#case1).
 
-- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) poświęconej ofertom [prywatnego](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) SQL lub [CloudDB](https://docs.ovh.com/fr/clouddb/), postępuj zgodnie z tymi [instrukcjami](#case2).
+- Jeśli Twoja baza danych znajduje się w części [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) poświęconej ofertom [prywatnego](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) SQL lub [CloudDB](https://docs.ovh.com/fr/clouddb/), postępuj zgodnie z tymi [instrukcjami](#case2).
 
 #### Przypadek nr 1: baza danych twojej strony jest częścią twojej oferty hostingowej <a name="case1"></a>
 
@@ -223,7 +223,7 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Sprawdź <a name="aller-plus-loin"></a>
+## Sprawdź <a name="gofurther"></a>
 
 [Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 

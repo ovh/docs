@@ -12,15 +12,15 @@ order: 2
 
 La mayoría de los sitios web utilizan una **base de datos** para almacenar sus artículos, comentarios o direcciones de correo electrónico de sus usuarios.
 
-La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en [el espacio de almacenamiento de archivos](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
+La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en [el espacio de almacenamiento de archivos](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
 
 Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
-- En el [archivo de configuración](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) de su sitio web a través [del espacio FTP de su alojamiento](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/);
+- En el [archivo de configuración](https://docs.ovh.com/es/hosting/1-click-module-management/#etapa-1-identificar-la-base-de-datos-asociada-a-su-modulo) de su sitio web a través [del espacio FTP de su alojamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/);
 
-- **y** en el servidor que contiene la base de datos desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- **y** en el servidor que contiene la base de datos desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
-Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees)".
+Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/#error-al-conectar-a-la-base-de-datos)".
 
 Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/directory/).
 
@@ -37,21 +37,21 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#aller-plus-loin) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [servidor SQL privado](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
-- Disponer de las claves FTP para conectarse al [espacio de almacenamiento](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) del alojamiento.
+- Disponer de las claves FTP para conectarse al [espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento.
 
 ## Procedimiento
 
 ### 1\. identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), haga clic en `Web Cloud`{.action} y, en el menú situado a la izquierda de su pantalla, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y, en el menú situado a la izquierda de su pantalla, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -61,7 +61,7 @@ A continuación, abra la pestaña `FTP - SSH`{.action} y acceda al espacio que c
 >
 > Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 >
-> Si desea conectarse por otro método, consulte esta [guía](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Si desea conectarse por otro método, consulte esta [guía](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 >
 
 Abra la `carpeta raíz` anteriormente indicada.
@@ -87,7 +87,7 @@ Para determinar qué casos se aplican al sitio web, en el archivo de configuraci
 - Para DRUPAL: el nombre aparece en **"database"**;
 - Para PRESTASHOP: el nombre aparece en **"database_name"**.
 
-Vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en la sección `Web Cloud`{.action}:
+Vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}:
 
 - Acceda a la sección `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
@@ -191,9 +191,9 @@ Guarde el cambio.
 
 De nuevo, existen dos posibles situaciones: 
 
-- Si la base de datos se encuentra en la sección Dedicado al [alojamiento web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) del [área de cliente de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), siga estas [instrucciones](#case1).
+- Si la base de datos se encuentra en la sección Dedicado al [alojamiento web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) del [área de cliente de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), siga estas [instrucciones](#case1).
 
-- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dedicada a sus productos de [SQL privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://docs.ovh.com/fr/clouddb/), siga estas [instrucciones](#case2).
+- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) dedicada a sus productos de [SQL privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://docs.ovh.com/fr/clouddb/), siga estas [instrucciones](#case2).
 
 #### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
@@ -223,7 +223,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Más información <a name="aller-plus-loin"></a>
+## Más información <a name="gofurther"></a>
 
 [Guía de uso de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 

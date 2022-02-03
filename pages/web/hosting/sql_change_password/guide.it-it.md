@@ -12,17 +12,17 @@ order: 2
 
 La maggior parte dei siti Web utilizza un **database** per archiviare articoli, commenti e indirizzi email dei propri utenti.
 
-La connessione a questo database è possibile tramite un **file di configurazione** contenuto nello [spazio di archiviazione dei file](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) del tuo hosting. che contiene le informazioni che permettono al tuo sito di "identificarsi" presso il suo **server di database**.
+La connessione a questo database è possibile tramite un **file di configurazione** contenuto nello [spazio di archiviazione dei file](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) del tuo hosting. che contiene le informazioni che permettono al tuo sito di "identificarsi" presso il suo **server di database**.
 
 La modifica della password di un database deve quindi essere sempre effettuata:
 
-- Nel [file di configurazione](https://docs.ovh.com/fr/hosting/1-click-module-management/#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) del tuo sito tramite [lo spazio FTP del tuo hosting](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/);
+- Nel [file di configurazione](https://docs.ovh.com/it/hosting/1-click-module-management/#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite [lo spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/);
 
-- **E** nel server che contiene il suo database attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- **E** nel server che contiene il suo database attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees)".
+Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](https://docs.ovh.com/it/hosting/errori-frequenti-database/#error-establishing-a-database-connection)".
 
-Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/fr/directory/).
+Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 
 La modifica della password del database del tuo sito avviene in quattro step:
 
@@ -37,21 +37,21 @@ La modifica della password del database del tuo sito avviene in quattro step:
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#aller-plus-loin) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [server SQL privato](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
-- Disporre delle credenziali FTP per accedere allo [spazio di storage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) dell'hosting
+- Disporre delle credenziali FTP per accedere allo [spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) dell'hosting
 
 ## Procedura
 
 ### Step 1: identifica il file di configurazione del tuo sito <a name="step1"></a>
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action} e poi sul menu a sinistra dello schermo, su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e poi sul menu a sinistra dello schermo, su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -61,7 +61,7 @@ Clicca sulla scheda `FTP - SSH`{.action} e poi clicca sul pulsante FTP Explorer*
 >
 > Per modificare la password del tuo spazio FTP, consulta questa [guida](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
 >
-> Per connetterti con un altro metodo, consulta questa [guida](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+> Per connetterti con un altro metodo, consulta questa [guida](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
 >
 
 Apri la `Cartella di root` identificata sopra.
@@ -87,7 +87,7 @@ Per verificare quale caso si applica al tuo sito, nel file di configurazione ide
 - Per DRUPAL: il nome appare sotto **"database"**;
 - Per PRESTASHOP: il nome appare sotto **"database_name"**.
 
-Dopodiché torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sezione `Web Cloud`{.action}:
+Dopodiché torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}:
 
 - Accedi alla sezione `Hosting`{.action} e poi all'hosting interessato.
 - Clicca sulla scheda `Database`{.action} **a destra** dello schermo.
@@ -191,9 +191,9 @@ Salva questa modifica.
 
 Di nuovo, sono possibili due casi: 
 
-- Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dedicata al tuo [hosting Web](https://www.ovhcloud.com/fr/web-hosting/), segui queste [istruzioni](#case1).
+- Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/fr/web-hosting/), segui queste [istruzioni](#case1).
 
-- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dedicata alle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://docs.ovh.com/fr/clouddb/), segui queste [istruzioni](#case2).
+- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://docs.ovh.com/fr/clouddb/), segui queste [istruzioni](#case2).
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
@@ -223,7 +223,7 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Spingiti oltre <a name="aller-plus-loin"></a>
+## Spingiti oltre <a name="gofurther"></a>
 
 [Software FileZilla con il tuo hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
