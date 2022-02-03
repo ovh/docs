@@ -114,7 +114,7 @@ The disk will appear as `Offline`, right-click on the disk and select `Online`{.
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
-Once done, your mounted backup will be accessible in your `File Explorer`.
+Once done, your mounted backup will be accessible in the `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
