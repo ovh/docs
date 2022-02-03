@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated December 21 2021.**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -16,9 +16,9 @@ The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) is a private netwo
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
-- an [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
 - Basic networking knowledge
 
 Creating a vRack or adding an instance into the network can be done using the OVHcloud Control Panel, the OVHcloud APIv6, the OpenStack API, or the Horizon interface.

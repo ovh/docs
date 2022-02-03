@@ -22,9 +22,9 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
+- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
 ## Instructions
 

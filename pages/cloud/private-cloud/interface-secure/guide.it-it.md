@@ -2,7 +2,7 @@
 title: 'Utilizzare l’interfaccia sicura'
 slug: interfaccia-sicura
 excerpt: 'Come confermare le operazioni sensibili tramite l’interfaccia sicura su infrastrutture HDS e PCI-DSS'
-section: 'Servizi e opzioni OVH'
+section: 'Servizi e opzioni OVHcloud'
 order: 4
 ---
 

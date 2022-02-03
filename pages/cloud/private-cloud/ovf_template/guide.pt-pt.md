@@ -2,7 +2,7 @@
 title: 'Usar um template OVF Windows e SQL Server'
 slug: usar-template-ovh
 excerpt: 'Saiba como usar um template Windows e SQL Server'
-section: 'Serviços e opções OVH'
+section: 'Serviços e opções OVHcloud'
 ---
 
 **Última atualização: 02/07/2018**

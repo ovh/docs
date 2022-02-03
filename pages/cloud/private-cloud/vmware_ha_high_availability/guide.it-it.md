@@ -5,7 +5,7 @@ excerpt: Gestire la politica di riavvio con la funzione HA
 legacy_guide_number: '2163279'
 space_key: VS
 space_name: vSphere as a Service
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 02
 ---
 

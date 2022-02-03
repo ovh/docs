@@ -1,89 +1,120 @@
 ---
-title: Creare uno Snapshot
+title: Creare uno Snapshot (EN)
 slug: creare-uno-snapshot
-excerpt: Ripristina lo stato precedente delle tue VM tramite gli Snapshot
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-a-snapshot/'
+excerpt: Return to a previous VM state using snapshots
 section: Gestione delle macchine virtuali
 order: 08
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Last updated 19th January 2022**
 
-## Obiettivo 
+## Objective
 
-È possibile effettuare lo Snapshot di una macchina virtuale. Dopodiché, è possibile ripristinare tutte le macchine virtuali sullo Snapshot più recente o eliminare lo Snapshot.
+VMWare offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
 
-**Questa guida ti mostra la procedura per effettuare uno Snapshot.**
+**This guide explains how to execute these tasks**
 
-## Prerequisiti
+## Requirements
 
-- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo.
-- Essere connesso al client vSphere HTML
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
 
-## Procedura
+## Instructions
 
-Gli Snapshot sono utili quando è necessario tornare più volte allo stesso stato, senza creare molteplici macchine virtuali. Con gli Snapshot, è possibile creare posizioni di ripristino. 
+### Take a Snapshot
 
-Inoltre è possibile preservare lo stato di base di una VM prima di farla migrare verso un altro tipo di funzionamento. 
+A snapshot allows you to capture a VM state.<br>
+It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
 
-Nonostante gli Snapshot forniscano un’immagine “istantanea” del disco, ti consigliamo di rimuovere regolarmente gli Snapshot presenti. Infatti, se disponi di un gran numero di Snapshot, questi occuperanno molto spazio su disco, penalizzando la VM in termini di performance.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right-click it and, in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
+
+![TAKE](images/en01take.png){.thumbnail}
+
+By default, the snapshot will be named after the current date and time. You may edit it to your preference.<br>
+A description may also be added for reference.<br>
+If your VM is running, the snapshot process offers two options:
+
+- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash-resistant, meaning it can be reverted to without powering off the VM.
+- Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br>
+
+If your VM is not running, those options are greyed out.<br>
+*We recommend taking snapshots of a turned off VM and if it is not possible, preferably use the Quiesce option over the memory snapshot for added security.*
+
+Click `OK`{.action} when ready.
+
+![SNAP](images/en02snap.png){.thumbnail}
+
+Your snapshot is done.
+
+### Manage Snapshots
+
+You can take multiple snapshots of a single VM repeating the process explained above.<br>
+With time, snapshots will consume resources, especially storage, to be maintained and possibly will affect VM performance.<br>
+Below is how to revert, clear or consolidate snapshots.
+
+#### Revert to Snapshot
+
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+
+![MANAGE](images/en03manage.png){.thumbnail}
+
+Check the snapshot tree and select the one you wish to go back to.<br>
+Click on `Revert To`{.action}.
+
+![REVERT](images/en04revert.png){.thumbnail}
+
+Confirm by clicking `OK`{.action}.
+
+![CONFIRM](images/en05confirm.png){.thumbnail}
+
+You can click `Done`{.action} as your VM has been reverted to the point chosen.
 
 > [!primary]
-> 
-> Ti sconsigliamo di utilizzare gli Snapshot come metodo di salvataggio della macchina virtuale.
-> 
+>
+> If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing `Revert to Latest Snapshot`{.action} in the `Snapshots`{.action} menu.
 
-Lo Snapshot  ti permette di catturare all’istante lo stato della tua VM. Questo Snapshot include (in base alle tue scelte):
+#### Clear Snapshot
 
-- Lo stato di tutti i dischi della macchina virtuale.
-- Il contenuto della memoria della macchina virtuale.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
 
-> [!warning]
-> 
-> Non è possibile modificare la dimensione di un disco nel momento in cui si effettua uno Snapshot su una VM.
-> 
+![MANAGE](images/en03manage.png){.thumbnail}
 
-### Effettua uno Snapshot
+Check the snapshot tree and select the one you wish to delete.<br>
+Click on `Delete`{.action}.<br>
+*You can also clear all snapshots by clicking `Delete All`{.action}.*
 
-Fai clic con il tasto destro sulla tua VM, seleziona `Snapshots e infine `Effettua uno Snapshot`{.action}:
+![DELETE](images/en06delete.png){.thumbnail}
 
-![creare snapshot](images/snapshot01.png){.thumbnail}
+Confirm by clicking `OK`{.action}.
 
-Ora è necessario indicare il nome che intendi attribuire a questo Snapshot, la sua descrizione, e se vuoi che anche la memoria della VM sia inclusa nello Snapshot.
+![CONFIRM](images/en07confirm.png){.thumbnail}
 
-Hai la possibilità di effettuare uno Snapshot con o senza la RAM utilizzata dalla VM. Se vuoi integrare la RAM allo Snapshot, i tempi di esecuzione della procedura si allungheranno, ma questo ti permetterà di non dover effettuare un reboot durante il ripristino dello Snapshot. 
+You can click `Done`{.action} as your snapshot was cleared.
 
-In caso contrario, dato che la RAM non è salvata, l’operazione sarà più rapida, ma sarà necessario effettuare un reboot della VM in caso di ripristino. 
+> [!primary]
+>
+> If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
 
-![configurare snapshot](images/snapshot02.png){.thumbnail}
+#### Consolidate snapshots
 
-### Gestisci gli Snapshot
+Snapshot consolidation is useful when snapshot disks fail to compress after a delete operation. After consolidation, redundant disks are removed, improving virtual machine performance and saving storage space.
 
-Tutti gli Snapshot di una VM sono disponibili nel Gestore di Snapshot. Per farlo, clicca con il tasto destro sulla VM, seleziona`Snapshot`{.action} e infine `Gestire gli Snapshot`{.action}:
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Consolidate`{.action}.
 
-![gestire snapshot](images/snapshot03.png){.thumbnail}
+![CONSOLIDATE](images/en08consolidate.png){.thumbnail}
 
-### Elimina uno Snapshot
+Confirm by clicking `YES`{.action}.
 
-Nel gestore degli Snapshot, seleziona lo Snapshot da eliminare e clicca su `Elimina`{.action}.
+![CONFIRM](images/en09confirm.png){.thumbnail}
 
-È possibile eliminare tutti gli Snapshot della VM in una sola azione, cliccando su `Elimina tutto`{.action}.
+You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 
-### Ripristina uno Snapshot
+## Go further
 
-Nel gestore degli Snapshot, seleziona lo Snapshot da ripristinare e clicca su `Ripristina`{.action}
-
-### Consolida gli Snapshot
-
-La presenza di dischi ridondanti può compromettere le performance della macchine virtuali.
-
-Il consolidamento degli Snapshot è utile quando i dischi degli Snapshot non riescono a comprimersi dopo un’azione di rimozione. Dopo il consolidamento, i dischi ridondanti vengono rimossi e questo migliora le performance delle macchine virtuali e consente di risparmiare spazio di storage.
-
-Per effettuare un consolidamento, clicca con il tasto destro sulla VM, seleziona `Snapshot` e infine clicca su `Consolida`{.action}
-
-![consolidate snapshots](images/consolidate.png){.thumbnail}
-
-Per maggiori informazioni, consulta [la documentazione di VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
-
-## Per saperne di più
-
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

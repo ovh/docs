@@ -9,7 +9,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 06/12/2021**
+**Dernière mise à jour le 02/02/2022**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -750,6 +750,53 @@ Avec l'API, demandez la suppression du vDC :
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
+
+## FAQ
+
+Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la migration vDC.
+
+> [!faq]
+>
+> Quels sont les impacts lors du partage de mes datastores entre mes vDC ?
+>> Il n'y a aucun impact sur votre production, sur la facturation ou sur les snapshots ZFS. Cependant, il n'est actuellement pas possible d'annuler le partage d'un datastore. Nous modifierons cela plus tard.
+> Est-ce que les VMs (avec IP publiques) seront accessibles depuis l’extérieur si elles sont dans le nouveau vDC quand les PFSENSE sont dans l’ancien vDC ?
+>> Oui, le VM network est au niveau de l'infrastructure VMware et donc sur les 2 vDC.
+> Est-il possible de mettre en place un PFSENSE dans l'ancien vDC et un autre dans le nouveau vDC ?
+>> Oui, il est même nécessaire d'avoir 2 PFSENSE différents pour éviter les conflits d'IP.
+> Les vxlan sont-ils disponibles sur les deux vDC ?
+>> Les vxlan sont disponibles uniquement sur Premier et non sur Essentials.
+> Nous n'utilisons pas NSX. La procédure de migration indique que les vDS source/destination doivent avoir la même version. Sur la source, notre unique vDS est en 6.0.0 donc j'imagine qu'il faut le mettre à jour. La documentation / la video / et l'interface indiquent qu'on peut le faire nous-mêmes sans coupure si c'est du vRack. Je pensais que c'était du vRack mais nous ne pouvons pas mettre à jour (le menu est grisé). Est-ce que ça signifie que c'est du vxlan ? Comment fait-on la différence entre vRack et vxlan ?
+>> S'il est grisé, il s'agit sans doute du DVS publique (vmnetwork) /vxlan. Le DVS vrack est un second DVS avec le mot "vrack" a la fin. N'hésitez pas a ouvrir un ticket support afin que nous puissions confirmer cela avec vous et faire l'upgrade DVS si nécéssaire.
+> Comment savoir si mes adaptateurs réseau sont VLAN ou VxLAN et compatibles avec Essentials ? Dans vSphere, je vois par exemple et sans plus de détails : vxw-dvs-74-virtualwire-20-sid-....
+>> Tout ce qui est %-virtualwire-% est du vxlan.
+> Si j'ai plusieurs VM qui passent par le même EDGE NSX, faudra-t-il faire la migration de l'ensemble des VM et du EDGE en même temps, au risque de ne plus avoir de liaison Internet sur certaines VM dans le cas contraire ?
+>> Oui, il faudrait déplacer l'EDGE avec un redéploiement avant de déplacer les VMs. En fonction des cas, avec réseaux étendus ou pas, les 2 actions peuvent être séparées.
+> Est-ce qu'on peut créer un pool DRS pour les datastores globaux ? Je crois avoir déjà essayé sans succès entre 2 vDC 2014 / 2016.
+>> Il y a effectivement des limitations pour les datastores globaux. Nous conseillons de ne les utiliser que pour faire la migration entre les deux vDC,  d'avoir ensuite des datastores "standard" sur le nouveau vDC et de rendre les datastores globaux a la fin de la migration.
+> Nous avons un SDDC 2016 avec 6 x 6 To SSD Acceleraded (commandés en 2021) avec "convert to global" disponible dans l'espace client OVHcloud. Peut-on les convertir en global et les garder en l'état dans le nouveau vDC (pour éviter la phase de storage vMotion) ? Note: les 6 DS sont dans un cluster de stockage.
+>> Oui, si les VMs pointent sur ces DS, il n'y aura pas d'étapes de storage motion.
+> Quelles sont les limitations/différences au niveau de la migration selon la gamme choisie (Essentials ou Premier)?
+>> Il n'y a pas de différences entre un upgrade vers Essentials ou vers Premier. L'unique différence est présente sur les étapes liées au composant NSX. Ces étapes sont nécessaires pour un upgrade vers Premier et non pertinentes pour un upgrade vers Essentials.
+> Combien de temps faut-il prévoir pour cette migration (en fonction du nombre de VM)?
+>> Les vitesses constatées pour l'étape de Storage Motion sont entre 0.5 et 1To par heure. Concernant le vMotion, cela dépend fortement de la taille de la VM, en moyenne moins d'une minute; cela peut prendre jusqu'à 3 minutes pour les VM de plusieurs To.
+> Quelles sont les licences Microsoft disponibles en mode SPLA ?
+>> Les licences Windows (standard et datacentre) et SQL Server (standard et web) sont disponibles sur les offres 2020 en mode SPLA.
+> Je dois upgrader 2 infrastructures VMware, actuellement utilisées dans le cadre d'un PRA zerto avec la réplication des données. Est-il nécessaire de faire d'abord un upgrade de mon infrastructure secondaire ou primaire ?
+>> Il n'y a pas d'obligation, nous vous recommandons d'upgrader d'abord l'infrastructure secondaire pour maîtriser le processus avant d'upgrader l'infrastructure principale.
+> Le plafond historique sur les ressources horaires sera-t-il toujours déployé ?
+>> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier & Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place
+> Le prix des anciennes offres va-t-il évoluer?
+>> Non, il n'y a pas de modification tarifaire des anciennes offres prévue.
+>  Dans quelle langue les Services Professionnels d’OVHcloud sont-ils disponibles ?
+>> Les Services professionnels OVHcloud sont disponibles en français et en anglais.
+> Est-ce que les Services Professionnels d’OVHcloud peuvent recréer mes comptes utilisateurs & configurations NSX pour moi ?
+>> Nos Services Professionnels n’effectuent aucune opération sur l’infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas de figure, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client. 
+> Quelle est la durée de vie des crédits du Pack of Technical Advice Services ?
+>> Le pack est valide pour une durée de 3 mois à compter de la commande.
+> Comment savoir combien d'heures de Crédits ont été utilisées et sont restantes ?
+>> Votre interlocuteur commercial ou référent technique OVHcloud est en mesure de fournir ces informations.
+> Que se passe-t-il si la session du service de conseil prend moins de temps que prévu ?
+>> Une session est planifiée et comptabilisée en blocs de 1 heure. Par exemple, une session programmée sur 2 heures et durant 1,5 heure serait facturée sur 2 heures. Une session prévue pour 3 heures mais durant seulement 1,5 heure serait facturée à 2 heures.
 
 ## Aller plus loin
 

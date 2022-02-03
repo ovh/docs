@@ -3,6 +3,7 @@ title: 'Diagnostiquer des dysfonctionnements matériels sur un serveur dédié'
 slug: diagnostic-dysfonctionnements-materiels-serveur-dedie
 excerpt: 'Découvrez comment diagnostiquer des dysfonctionnements matériels sur votre serveur'
 section: Sécurité
+order: 03
 ---
 
 **Dernière mise à jour le 08/06/2018**

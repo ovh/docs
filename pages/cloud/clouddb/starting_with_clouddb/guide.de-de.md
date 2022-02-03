@@ -5,7 +5,7 @@ links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
 legacy_guide_number: 2216
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie die CloudDB Lösung verwenden.'
+excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die CloudDB Lösung verwenden'
 section: 'Erste Schritte'
 ---
 
@@ -13,28 +13,39 @@ section: 'Erste Schritte'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 30.12.2021**
+**Letzte Aktualisierung am 28.01.2022**
 
-## Einleitung
+## Ziel
 
-Mit der CloudDB Lösung erhalten Sie Zugriff auf eine Datenbankinstanz mit dedizierten und garantierten Ressourcen. Dieser Dienst bietet mehr Leistung und Flexibilität und ist vor allem für Kunden mit spezifischen Anforderungen entwickelt.
+Mit der CloudDB Lösung profitieren Sie von einer Datenbank-Instanz mit dedizierten und garantierten Ressourcen für Leistung und Flexibilität.
+Ihre CloudDB Lösung ist standardmäßig an das Webhosting-Netzwerk von OVHcloud gebunden. Sie können diese über eine Liste autorisierter IP-Adressen mit jedem anderen Netzwerk verbinden.
 
-**Hier erfahren Sie, wie Sie Cloud Databases verwenden.**
+**Diese Anleitung erklärt, wie Sie Cloud Databases verwenden.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external}.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/) (im [Webhosting Performance](https://www.ovhcloud.com/de/web-hosting/)).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-## Beschreibung
+## In der praktischen Anwendung
+
+### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen CloudDB Servers
+
+Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
+
+Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
+
+![Allgemeine Informationen](images/db-activation.png){.thumbnail}
+
+Folgen Sie den Anweisungen, um Typ und Version Ihres CloudDB Servers zu bestimmen. Nach Abschluss des Vorgangs kann der CloudDB Dienst über die linke Menüspalte unter `Datenbanken`{.action} eingesehen werden.
 
 ### Allgemeine Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
 
 > [!primary]
 >
-> Der Name des CloudDB Dienstes in Ihrem OVH Kundencenter enthält einen Teil Ihrer Kundenkennung und endet mit drei Ziffern (001 für den ersten eingerichteten CloudDB Dienst, 002 für den zweiten usw.).
+> Der Name des CloudDB Dienstes in Ihrem OVHcloud Kundencenter enthält einen Teil Ihrer Kundenkennung und endet mit drei Ziffern (001 für den ersten eingerichteten CloudDB Dienst, 002 für den zweiten usw.).
 >
 
 Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
@@ -45,9 +56,9 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 |Typ|Zeigt das vom Server verwendete Datenbanksystem an.|
 |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Der Arbeitsspeicher Ihrer CloudDB Instanz ist eine dedizierte und garantierte Ressource. Falls nötig können Sie diesen skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
-|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVH Infrastruktur.|
-|Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVH Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
-|Host|Zeigt den OVH Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVH Infrastruktur, die im Rahmen unserer Kommunikation zu [OVH Störungen](http://status.ovh.net/){.external} verwendet werden kann.|
+|Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVHcloud Infrastruktur.|
+|Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
+|Host|Zeigt den OVHcloud Server an, auf dem Ihre Instanz angelegt wurde. Hierbei handelt es sich um eine inhärente Information zur OVHcloud Infrastruktur, die im Rahmen unserer Kommunikation zu [OVHcloud Störungen](https://www.status-ovhcloud.com/){.external} verwendet werden kann.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 
@@ -124,9 +135,9 @@ Nachdem Sie einen Benutzer angelegt haben, weisen Sie ihm die entsprechenden Rec
 > Dieser Schritt ist nur erforderlich, wenn Sie ein bereits existierendes Datenbank-Backup importieren möchten. Ist das nicht der Fall, gehen Sie zum nächsten Schritt über.
 >
 
-Es gibt mehrere Möglichkeiten zum Import einer Datenbank. In Ihrem OVH Kundencenter steht Ihnen hierzu ein Tool zur Verfügung. Sie können natürlich auch eine andere Methode verwenden, wenn Sie über die entsprechenden Kenntnisse verfügen.
+Es gibt mehrere Möglichkeiten zum Import einer Datenbank. In Ihrem OVHcloud Kundencenter steht Ihnen hierzu ein Tool zur Verfügung. Sie können natürlich auch eine andere Methode verwenden, wenn Sie über die entsprechenden Kenntnisse verfügen.
 
-In den nachstehenden Schritten beschreiben wir, wie Sie eine Datenbank mithilfe des Tools in Ihrem OVH Kundencenter importieren.
+In den nachstehenden Schritten beschreiben wir, wie Sie eine Datenbank mithilfe des Tools in Ihrem OVHcloud Kundencenter importieren.
 
 - **Schritt 1: Auf das Import-Interface zugreifen**
 
@@ -155,17 +166,25 @@ Wenn Sie möchten, können Sie nun die nachstehenden Zusatzoptionen auswählen. 
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen. Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse oder Maske ein, der Sie den Zugriff erlauben möchten. Legen Sie anschließend fest, ob Sie nur Zugriff auf die Datenbanken oder auch auf den SFTP-Port erlauben möchten. Klicken Sie dann auf `Bestätigen`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+#### Die Verbindung zu einem OVHcloud Webhosting erlauben<a name="trustip"></a> 
+
+Ihre CloudDB Lösung wird automatisch an die Webhostings von OVHcloud angebunden. Wenn Sie möchten, können Sie aber den Zugang zu Ihren CloudDB-Datenbanken für OVHcloud-Webhostings deaktivieren.
+
+Klicken Sie hierzu auf den Tab `Autorisierte IP`{.action} und dann auf den Button `Zugang zu OVHcloud Webhostings`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png) {.thumbnail}
+
 ### Ihre Website mit der Datenbank verbinden
 
-Nun, da Ihre Datenbank angelegt wurde, einer oder mehrere Benutzer über Zugriffsrechte verfügen und mindestens eine autorisierte IP-Adresse für Ihre CloudDB Instanz angegeben wurde, muss Ihre Website nur noch mit Ihrer Datenbank verknüpft werden. Für diesen Schritt stehen Ihnen verschiedene Optionen zur Verfügung − je nach Art Ihrer Website, dem verwendeten CMS (WordPress, Joomla! usw.) oder je nachdem, bei welchem Schritt der Website-Erstellung Sie sich befinden.
+Nun, da Ihre Datenbank erstellt wurde, einer oder mehrere Benutzer über Zugriffsrechte verfügen und mindestens eine IP-Adresse oder OVHcloud-Webhosting auf Ihrer CloudDB-Instanz eingerichtet wurde, müssen Sie Ihre Website nur noch mit Ihrer Datenbank verbinden. Dieser Schritt kann auf mehrere Arten durchgeführt werden, je nach Art der verwendeten Website oder des verwendeten CMS (WordPress, Joomla! usw.) sowie je nachdem, in welchem Schritt Sie sich befinden, wenn Sie eine Website installieren.
 
-Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden können, benötigen Sie die folgenden fünf Informationen:
+Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden können, benötigen Sie die folgenden Informationen:
 
 |Information|Beschreibung|
 |---|---|
@@ -192,7 +211,7 @@ Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diese
 
 > [!warning]
 >
-> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen genutzten Telefons auf Ihrem CloudDB Server mit der angekreuzten Option "SFTP`"erlaubt ist. Lesen Sie die Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#trustip).
+> Bevor Sie sich verbinden, überprüfen Sie, ob die IP-Adresse des von Ihnen verwendeten Geräts auf Ihrem CloudDB Server mit der angekreuzten Option "SFTP" erlaubt ist. Folgen Sie hierzu der Anleitung [Die Verbindung zu einem OVHcloud Webhosting erlauben](#trustip).
 
 Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres CloudDB Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
 
@@ -200,11 +219,11 @@ Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.
 
 Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
 
-Für FileZilla gehen Sie im Menü `Datei`{.action} auf den Bereich `Site Manager`{.action}. Klicken Sie auf `Neue Website`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
+Für FileZilla gehen Sie im Menü `File`{.action} zum Bereich `Site Manager`{.action}. Klicken Sie auf `New Site`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
 
 ![clouddb](images/clouddb-log03.png) {.thumbnail}
 
-Die Log-Datei mit dem Namen stknoten `stdout.log` befindet sich am Wurzelverzeichnis.
+Die Log-Datei mit dem Namen `stdout.log` befindet sich im Wurzelverzeichnis.
 
 ## Weiterführende Informationen
 

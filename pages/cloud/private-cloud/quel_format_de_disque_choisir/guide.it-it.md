@@ -7,7 +7,7 @@ section: Gestione delle macchine virtuali
 order: 04
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Ultimo aggiornamento: 01/02/2022**
 
 ## Obiettivo
 
@@ -35,7 +35,6 @@ Lo spazio occupato non può essere liberato.
 
 Ad esempio, se si occupano 40 GB su un <i>thin disk </i>da 100 GB e si cancellano 20 GB di dati nella VM, lo spazio occupato sul datastore continuerà a essere di 40 GB e lo spazio assegnato di 100 GB.
 
-
 ### Thick provisioning Eager zero
 
 Il *Thick provisioning Eager zero* è un tipo di disco che occupa tutto lo spazio assegnato sul datastore. 
@@ -56,7 +55,6 @@ Lo spazio assegnato è riservato al disco della VM, ma gli zero vengono scritti 
 
 Ecco un esempio di riepilogo per una VM da 100 GB con *guest OS* da 40 GB:
 
-
 |Tipo di disco|Spazio assegnato|Block zeroed|Spazio occupato|
 |---|---|---|---|
 |Eager Zero|Alla creazione della VM|Alla creazione della VM|100 GB|
@@ -65,9 +63,9 @@ Ecco un esempio di riepilogo per una VM da 100 GB con *guest OS* da 40 GB:
 
 ### Formati di disco in OVHcloud
 
-Nello storage di tipo datastore di un’infrastruttura Private Cloud l’unica tipologia disponibile è il *Thin provisioning*.
+In un'infrastruttura Hosted Private Cloud è possibile utilizzare solo la *Thin provisioning*,
 
-Sullo storage vSan è possibile scegliere uno qualsiasi dei 3 formati.
+I 3 tipi di formato sono disponibili sugli storage vSAN.
 
 ## Per saperne di più
 

@@ -1,49 +1,80 @@
 ---
-title: How to use vScope
-excerpt: ''
+title: Understanding vScope
 slug: how_to_use_vscope
-legacy_guide_number: g718
+excerpt: The vScope interface allows you to monitor your infrastructure
+section: OVHcloud services and options
+order: 01
 ---
 
+**Last updated 28th January 2022**
 
-## Access
-You can access vScope via the following url (change according to your private cloud):
+## Objective
 
-https://pcc-178-32-194-8.ovh.com/vScope (please note the capital S)
+OVHcloud puts an infrastructure **supervision** and **monitoring** tool called **vScope** at your disposal.
 
-![](images/img_368.jpg){.thumbnail}
-You will be asked to enter a username and password. Just use the admin login that you use to log in to the vSphere Client.
-Once you are logged in to the interface, you will arrive directly to an overview of your datacentres:
+It's a web based utility gathering and presenting all the **useful** information on your resources.
 
-![](images/img_364.jpg){.thumbnail}
+**This guide describes the functionalities of the vScope interface.**
 
+## Requirements
 
-## Filer
-On the left-hand side, you will find a list of everything you store as well as their usage statistics.
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie))
 
+## Instructions
 
-## Hosts
-On this screen, you will find a list of your hosts with the number of cores, VMs, CPUs and RAM used, as well as the network traffic on the host cards (TX = upload and RX = download).
-If you double click on the host, you will access another tab with graphs depicting resource usage (RAM, CPU, Network, etc.):
+To access the vScope interface, click the vScope icon in the login window of your Hosted Private Cloud.
 
-![](images/img_366.jpg){.thumbnail}
-You can also zoom in on a specific time period on a graph by left clicking on the graph and selecting the area you want to see:
+![vscope access](images/gatewayPCC.png){.thumbnail}
 
-![](images/img_367.jpg){.thumbnail}
-You can choose when you would like to view the graphs (day, week, month, year) at the top of the page in the drop-down menu.
+A **vScope** access link is also available in your OVHcloud Control Panel.
 
+![vscope access](images/managerLink.png){.thumbnail}
 
-## Virtual machine
-In this section, you will find statistics on your virtual machines, including:
+In both cases, you'll be directed to a new browser tab with this URL.
 
-- their names
-- the datastore in which the VMDK is located, and used and allocated space in the datastore
-- the number of snapshots of the machine (taken via the snapshot manager)
-- which host the VM is saved to
-- its status (power on, off, paused)
-- and then CPU and RAM consumption
+![vscope](images/vScope12.png){.thumbnail}
 
-You will also find information on the disks (bandwidth stats, I/O, latency)
+Use your vSphere **username** and **password** to log on the interface.
 
-Like with hosts, you can access the graph of the virtual machine and view its other graphs by double clicking on the VM.
+![vscope](images/vScope11.png){.thumbnail}
 
+You are now connected to **vScope** and can monitor your resources. For example, you can see in the main window the number of Cores and VMs on each host as well as CPU and RAM consumption or network traffic.
+
+![vscope](images/vScope.png){.thumbnail}
+
+In case of multiple **datacenters** inside a single **Hosted Private Cloud**, you can select them in the scrolling menu. **Last refresh** is the last **web page** refresh, not the **vScope** one. vScope refreshes every **2 to 5 minutes**.
+
+![vscope](images/vScope1.png){.thumbnail}
+
+The **Filer** menu gives an insight on datastore usage in terms of VMs and storage space.
+
+![vscope](images/vScope2.png){.thumbnail}
+
+Clicking on the **Graphs** icon, you can see more details on the chosen resource.
+
+![vscope](images/vScope7.png){.thumbnail}
+
+The Hosts menu offers all the characteristics for each host in your datacenter (**Cores, vCPUs, VM**) and the usage percentage as well as network connectivity on all physical network cards (**VMNic**).
+
+![vscope](images/vScope4.png){.thumbnail}
+
+The detailed view also shows historical data over a day, week, month or year as needed.
+
+![vscope](images/vScope8.png){.thumbnail}
+
+The last section details each VM's usage with the following data :
+
+- VMtools state
+- Network traffic
+- VM size
+- FT (Fault Tolerance) activation state
+- CPU Ready Time
+- Disk IO
+- Disk Latency
+
+![vscope](images/vScope6.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

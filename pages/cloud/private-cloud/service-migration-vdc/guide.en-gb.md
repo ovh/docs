@@ -9,9 +9,9 @@ order: 6
 hidden: true
 ---
 
-**Last updated 6th December 2021**
+**Last updated 2nd February 2022**
 
-**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC)  to a new destination vDC (Essentials or Premier).**
+**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
 
 > [!warning]
 >
@@ -20,12 +20,12 @@ hidden: true
 
 ## Objective
 
-In 2020, OVHcloud has launched 2 new ranges Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
+In 2020, OVHcloud has launched 2 new ranges: Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
-There are two aspects involved in this process
+There are two aspects involved in this process:
 
 - The OVHcloud infrastructure itself which includes the customer's side of administrating an infrastructure.
-- The VMware infrastructure, which includes the entire VMware eco-system.
+- The VMware infrastructure, which includes the entire VMware ecosystem.
 
 ## Requirements
 
@@ -724,6 +724,53 @@ With the API, ask for the vDC deletion:
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
+
+## FAQ
+
+Please find below a list of Frequently Asked Questions, do not hesitate to submit your own via github.
+
+> [!faq]
+>
+> Are there any constraints or impact when sharing a datastore across my vDCs ?
+>> No, there is no impact on current workload or on billing, or on ZFS snapshots. However, currently you are unable to unshare a datastore. We will change this later. 
+> Will the VMs (with public IPs) be accessible from the exterior if they are in the new vDC when the PFSENSE are in the old vDC?
+>> Yes, VM network is on the VMware infrastructure level and so on the 2 vDC.
+> Can I implement a PFSENSE in the old vDC and another one in the new vDC?
+>> Yes, it’s even required to have 2 different PFSENSEs to avoid IP conflicts.
+> Are vxLANs available on both vDC?
+>> The vxLANs are available on Premier only, and not on Essentials (as there is no NSX deployed).
+> We don't use NSX. The migration procedure indicates that the source/destination DVS must be at the same version. On the source, our only DVS is in 6.0.0 so I imagine it needs to be updated. The doc / video / and the interface indicate that we can do it ourselves without cutting if it's vRack. I thought it was vRack but we can't update (the menu is greyed out). Does that mean it's vxlan? How do you tell the difference between vRack and vxlan?
+>> If it's greyed out, it's probably the public DVS (vmnetwork) /vxlan. The bulk DVS is a second DVS with the word "vrack" at the end. Do not hesitate to open a support ticket so that we can confirm this with you and do the DVS upgrade if necessary.
+> How do I know if my network adapters are VLAN or VxLAN and Essential compatible? In vSphere, I see for example and without more details: vxw-dvs-74-virtualwire-20-sid-....
+>> Anything %-virtualwire-% is vxlan.
+> If I have several VMs that go through the same NSX Edge, will it be necessary to migrate all the VMs and the Edge at the same time, at the risk of no longer having an Internet connection on certain VMs otherwise ?
+>> Yes, either the EDGE would have to be moved with a redeployment before moving the VMs. Depending on the case, with extended networks or not, the 2 actions can be separated. 
+> Can a DRS pool be created for global datastores? I believe I have already tried without success between 2 vDC 2014 / 2016.
+>> Indeed, there are limitations for global datastores, we advise to use them only to migrate between the two vDCs and then to have "standard" datastores on the new vDC and to make the global datastores at the end of migration.
+> We have a 2016 SDDC with 6 x 6 TB Acceleraded SSD (ordered in 2021) with "convert to global" available in the OVHcloud Control Panel. Can we convert them to global and keep them as is in the new vDC (to avoid the vMotion storage phase)? Note: the 6 DS are in a storage cluster.
+>> Yes, if the VMs point to these DS there will be no storage motion steps.
+> What are the differences between upgrading to Essentials or Premier ? 
+>> There are no major differences, only the NSX steps are mandatory when upgrading to Premier and not relevant if you have selected Essentials.
+> How much time do we need to plan to upgrade (depending on the number of VMs)?
+>> We have measured transfer speed from 0.5 to 1TB per hour for the Storage Motion Step. Regarding the vMotion, it depends on the size of the VMs, normally less than a minute; it can take up to 3 minutes.
+> What Microsoft licenses are available in SPLA mode?
+>> Windows licences (standard and datacenter) and SQL server licences (standard and web) are available on 2020 offers in SPLA mode.
+> I have to upgrade 2 VMware infrastructures that are currently used for DR purposes with data replication done by Zerto. Should I first upgrade my secondary infrastructure or my primary infrastructure?
+>> There is no right or wrong, we recommend upgrading the secondary infrastructure first to master the upgrade process before upgrading the primary one.
+> Will the historical pricing cap on hourly resources still be deployed?
+>> No, the capping system has been disabled on 2020 offers (Premier & Essentials). All previous ranges will continue to run with the capping in place. 
+> Will my old offer pricing change?
+>> No repricing of old offers is planned.
+> In what language are OVHcloud's Professional Services available?
+>> OVHcloud's Professional Services are available both in French and English.
+> Can OVHcloud's Professional Services recreate my user accounts & NSX configurations for me?
+>> Our Professional Services will not run any operations on the customer's infrastructure. We are here to help, guide and provide advice. In this case, we will redirect our customers to partners, who can run operations in customer infrastructures. 
+> How long does the Pack of Technical Advice Services credits last?
+>> This service lasts for 3 months from date of order.
+> How do I know how many hours of credits have been used, and are remaining?
+>> Your OVHcloud Sales contact or Technical Lead contact are able to give you this information.
+> What happens if the Advice Service session takes less time than planned?
+>> A session is scheduled and accounted in blocks of 1 hour. For example, a session scheduled for 2 hours but taking 1.5 hours would be billed at 2 hours. A session scheduled for 3 hours which only took 1.5 hours would be charged at 2 hours.
 
 ## Go further
 

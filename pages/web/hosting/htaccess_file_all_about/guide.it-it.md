@@ -5,6 +5,7 @@ id: '1967'
 slug: hosting_condiviso_tutto_sul_file_htaccess
 legacy_guide_number: g1967
 section: Scrittura e autenticazione
+hidden: true
 ---
 
 

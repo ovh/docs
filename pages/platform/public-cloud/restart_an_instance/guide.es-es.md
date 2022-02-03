@@ -3,7 +3,7 @@ title: Reiniciar una instancia
 excerpt: Cómo reiniciar una instancia en Horizon.
 slug: reiniciar_una_instancia
 legacy_guide_number: g1771
-section: Gestión de las instancias en Horizon
+section: Gestión desde Horizon
 ---
 
 

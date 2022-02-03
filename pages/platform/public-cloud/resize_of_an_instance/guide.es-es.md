@@ -3,7 +3,8 @@ title: Redimensionar una instancia
 excerpt: Cómo redimensionar una instancia en Horizon.
 slug: redimensionar_una_instancia
 legacy_guide_number: g1778
-section: Gestión de las instancias en Horizon
+section: Gestión desde Horizon
+order: 9
 ---
 
 > [!primary]

@@ -3,6 +3,7 @@ title: All about the .htaccess file
 excerpt: This page contains different guides related to the .htaccess file.
 slug: all_about_the_htaccess_file
 legacy_guide_number: g1967
+hidden: true
 ---
 
 

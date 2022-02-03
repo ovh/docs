@@ -1,9 +1,9 @@
 ---
-title: 'Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP'
-excerpt: 'Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP'
+title: "Résoudre les erreurs récurrentes lors de l’utilisation d’un logiciel FTP"
+excerpt: "Retrouvez ici les anomalies les plus fréquentes liées à votre logiciel FTP"
 slug: mutualise-les-problemes-ftp-recurrents
 legacy_guide_number: 1996
-section: 'FTP et SSH'
+section: FTP et SSH
 order: 3
 ---
 
@@ -39,8 +39,11 @@ Si les données que vous souhaitez échanger par ce biais ne sont pas confidenti
 
 Dans le cas contraire, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné puis choisissez l'onglet `FTP-SSH`{.action}.
 
-Cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.<br>
-Choisissez SFTP ou SSH (si vous disposez d'un [hébergement Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml)), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+Si vous disposez d'un hébergement [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), cochez la case `Désactivé`{.action} dans la colonne `SFTP`{.action} puis patientez quelques minutes.
+
+Si vous disposez d'un hébergement [Pro](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) ou [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml), cliquez sur le bouton `...`{.action} à droite de l'utilisateur FTP concerné puis sur `Modifier`{.action}.
+
+Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH sur votre hébergement), cliquez sur `Suivant`{.action} puis sur `Valider`{.action}. Patientez quelques minutes.
 
 > [!primary]
 >
@@ -63,7 +66,7 @@ Le manque d'espace sur votre hébergement mutualisé peut entraîner des dysfonc
 
 Pour vérifier l'espace de stockage restant sur votre hébergement, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action} puis `Hébergements`{.action}. Sélectionnez l'hébergement concerné.
 
-La quantité de données enregistrée sur votre serveur d'hébergement (hors bases de données) apparaît dans la partie `Informations générales` > `Espace disque`.
+La quantité de données enregistrée sur votre serveur d'hébergement (hors bases de données) apparaît dans la partie `Informations générales`{.action} > `Espace disque`.
 
 ![disk_space](images/disk_space.png){.thumbnail}
 

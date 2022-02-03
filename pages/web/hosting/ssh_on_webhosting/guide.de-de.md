@@ -8,7 +8,7 @@ section: 'FTP und SSH'
 order: 4
 ---
 
-**Letzte Aktualisierung am 21.09.2020**
+**Letzte Aktualisierung am 19.01.2022**
 
 ## Ziel
 
@@ -24,36 +24,32 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist
+### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist <a name="sshcheck"></a>
 
 Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Es werden nun die Informationen für Ihren Speicherplatz angezeigt. 
 
-Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „SSH-Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
+Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
 
 ![SSH verwenden](images/use-ssh-step1.png){.thumbnail}
 
 Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} über einen SSH-Zugang verfügt.
 
-### Schritt 2: Erforderliche Verbindungsinformationen abrufen
+### Schritt 2: Erforderliche Verbindungsinformationen abrufen <a name="sshlogin"></a>
 
-Um sich per SSH in Ihren Speicherplatz einzuloggen, benötigen Sie die nachfolgenden Elemente. Sollten Sie diese Informationen nicht zur Hand haben, können Sie sie im Tab `FTP-SSH`{.action} einsehen.
+Um sich via SSH mit Ihrem Speicherplatz zu verbinden, finden Sie die notwendigen Elemente im Tab `FTP - SSH`{.action}:
 
-|Element|Wo finde ich dieses?|
-|---|---|
-|Aktiver SSH-Benutzer|Diesen finden Sie in der Tabelle in der Spalte „SSH-Login“. Denken Sie daran, dass dieser Benutzer [über einen aktiven SSH-Zugang verfügen](./#schritt-1-sicherstellen-dass-der-ssh-zugang-aktiv-ist) muss.|
-|SSH-Benutzerpasswort|Wenn Sie dieses Passwort vergessen haben, können Sie es ändern, indem Sie auf den Button `...`{.action} und dann auf `Passwort ändern`{.action} klicken.|
-|SSH-Serveradresse|Gehen Sie zu „SSH-Zugang zum Cluster“. Die SSH-Serveradresse beginnt hinter „ssh://“ und endet vor dem Doppelpunkt („:“).|
-|SSH-Verbindungsport des Servers|Gehen Sie zu „SSH-Zugang zum Cluster“. Die Port-Nummer steht hinter dem Doppelpunkt („:“).|
-
-Beispiel: In `ssh://ssh.cluster023.hosting.ovh.net:22/`, ist „ssh.cluster023.hosting.ovh.net“ die SSH-Serveradresse und „22“ der SSH-Verbindungsport.
-
-![SSH verwenden](images/use-ssh-step2.png){.thumbnail}
+- **SSH-Benutzer aktiv**: Überprüfen Sie dies in der Spalte "**Login**"der Tabelle. Denken Sie daran, dass dieser Benutzer [über einen aktiven SSH-Zugang verfügen](#sshcheck) muss.
+- **SSH-Benutzerpasswort**: Wenn Sie dieses Passwort vergessen haben, können Sie es ändern, indem Sie auf den Button `...`{.action} und dann auf `Passwort ändern`{.action} klicken.
+- **SSH-Server**: Sie finden diese Angabe unter "**SSH-Server**".
+- **Verbindungsport des SSH-Servers**: Sie finden diese Angabe unter "**SSH Port**"
 
 ### Schritt 3: Via SSH in den Speicherplatz einloggen
 
 Verwenden Sie für den Login via SSH ein Terminal, um direkt über Befehlszeilen mit Ihrem Speicherplatz zu kommunizieren. 
 
-Dieses Tool ist standardmäßig auf macOS, Linux und Windows 10 installiert. Bei einer älteren Windows-Umgebung muss ein Programm wie PuTTY installiert oder die OpenSSH-Funktion hinzugefügt werden. Dieser Vorgang variiert je nach verwendetem Betriebssystem. Wir können die Vorgehensweise daher in dieser Anleitung nicht im Detail beschreiben.
+> [!primary]
+>
+> Dieses Tool ist standardmäßig auf macOS, Linux und Windows 10 installiert. Bei einer älteren Windows-Umgebung muss ein Programm wie PuTTY installiert oder die OpenSSH-Funktion hinzugefügt werden.
 
 Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SSH zu verbinden:
 
@@ -62,10 +58,10 @@ Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SS
 > [!warning]
 > Für unsere Shared Hosting Angebote gibt es keinen „Superuser“- oder „root“-Zugriff via SSH.
 
-Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl und ersetzen Sie die Elemente „sshlogin“, „sshserver“ und „connectionport“ mit den entsprechenden Elementen aus Ihren SSH-Verbindungsinformationen. 
+Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl, indem Sie die Elemente "Yourlogin", "ssh.cluster000.hosting.ovh.net"und "22"durch die Elemente ersetzen, die Ihren SSH-Kennungen entsprechen. 
 
 ```ssh
-ssh sshlogin@sshserver -p connectionport
+ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
 Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren_1)“ übergehen.
@@ -76,12 +72,10 @@ Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benut
 
 Wenn Sie die Anwendung (zum Beispiel PuTTY) geöffnet haben, geben Sie die SSH-Verbindungsinformationen ein. Das die Vorgehensweise vom verwendeten Programm abhängig ist, können wir diese hier nicht im Detail aufführen. Lesen Sie bei Bedarf die nachfolgenden Beschreibungen zu den anzugebenden Informationen:
 
-|Anzugebende Information|Beschreibung|
-|---|---|
-|SSH-Server|Geben Sie die [in Schritt 2](./#schritt-2-erforderliche-verbindungsinformationen-abrufen) erhaltene SSH-Serveradresse ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Serveradresse“, „Host“. „Hostname“ etc.|
-|Verbindungsport|Geben Sie den [in Schritt 2](./#schritt-2-erforderliche-verbindungsinformationen-abrufen) erhaltenen Verbindungsport ein.|
-|SSH-Login|Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.|
-|SSH-Benutzerpasswort|Geben Sie das Passwort des SSH-Benutzers ein.<br><br> Je nach verwendetem Programm sind verschiedene Bezeichnungen wie „Passwort“ oder „Kennwort“ möglich.|
+- **SSH-Server**: Geben Sie die [in Schritt 2](#sshlogin) erhaltene SSH-Serveradresse ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Serveradresse“, „Host“. „Hostname“ etc.
+- **Verbindungsport**: Geben Sie den [in Schritt 2](#sshlogin) erhaltenen Verbindungsport ein.
+- **SSH-Login**: Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.
+- **SSH-Benutzerpasswort**: Geben Sie das Passwort des SSH-Benutzers ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen wie „Passwort“ oder „Kennwort“ möglich.
 
 Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt übergehen.
 
@@ -113,8 +107,8 @@ Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausf
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](../die_laufzeitumgebung_meines_webhostings_andern/)
+[Konfiguration Ihres Webhostings bearbeiten](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/)
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
