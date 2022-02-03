@@ -16,8 +16,8 @@ Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inv
 
 ## Prérequis
 
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
-- Disposer des datastores contenant les fichiers de machines virtuelles.
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
