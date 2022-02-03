@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 16th June 2021**
+**Last updated 01st February 2022**
 
 ## Objective
 
