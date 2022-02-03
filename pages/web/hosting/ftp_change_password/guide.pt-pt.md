@@ -6,6 +6,10 @@ section: FTP e SSH
 order: 2
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 24/01/2022**
 
 ## Objetivo
@@ -31,7 +35,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 ### Etapa 1: Aceder à gestão dos utilizadores FTP
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `FTP-SSH`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Selecione o separador `FTP-SSH`{.action}.
 
 Um quadro mostra os utilizadores FTP criados no seu alojamento. Estes utilizadores permitem-lhe aceder ao seu espaço de armazenamento FTP para que possa publicar os ficheiros do seu website. Um utilizador será automaticamente criado durante a instalação do alojamento.
 
@@ -67,7 +71,7 @@ Por fim, consulte o separador `Operações em curso`{.action} e atualize a pági
 
 A ligação ao espaço de alojamento dos seus ficheiros pode ser realizada de várias formas:
 
-- **FTP Explorer**: este programa está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para o utilizar, no separador `FTP-SSH`{.action}, clique no botão `Explorador FTP`{.action};
+- **FTP Explorer**: este programa está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para o utilizar, no separador `FTP-SSH`{.action}, clique no botão `Explorador FTP`{.action};
 
 - **Software FTP**: terá de instalar no seu computador um programa compatível com o protocolo FTP (por exemplo, [FileZilla](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_filezilla/));
 
