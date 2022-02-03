@@ -4,7 +4,8 @@ slug: http-headers
 excerpt: Intégrez vos services web derrière un Load Balancer avec les en-têtes HTTP
 section: Configuration
 ---
-**Dernière mise à jour le à 01/02/2022**
+
+**Dernière mise à jour le à 03/02/2022**
 
 ## Objectif
 
@@ -29,7 +30,7 @@ Si vous retrouvez dans vos acces_log uniquement des IP privées, ce guide est fa
 
 ```bash
 10.108.0.15 - - [02/Fev/2022:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
-10.108.0.24 - - [02/Fev/2022/:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
+10.108.0.24 - - [22/Fev/2022/:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
 ```
 
 ### Obligations légales
@@ -42,6 +43,7 @@ __A titre d’exemple :__
 
 
 ### En-Tetes par defaut
+
 Par défaut, votre service OVHcloud Load Balancer ajoute à chaque requête HTTP 5 En-Têtes standard permettant de connaitre l'adresse et le port du visiteur de votre site ainsi que le protocole de connexion.
 
 |En-Tête|Description|
@@ -67,7 +69,8 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVHclou
 ![Adresse IPv4 de sortie de votre service OVHcloud Load Balancer](images/iplb_service.png){.thumbnail}
 
 
-#### Via l'API
+#### Depuis l'API OVHcloud
+
 - Liste des IPs utilisées par votre service OVHcloud Load Balancer
 
 
@@ -113,6 +116,7 @@ service apache2 restart
 
 
 #### Nginx
+
 Pour Nginx, c'est un peu plus simple, mais l'idée reste la même que pour Apache en ne prenant en compte le champs X-Forwarded-For que s'il vient de votre service OVHcloud Load Balancer.
 
 Cette configuration peut être effectuée soit - pour l'ensemble des sites en insérant la configuration dans la section http {} - pour un site en particulier en insérant la configuration dans la section server {} correspondante - pour une URL en particulier en insérant la configuration dans la section location {} correspondante
@@ -134,6 +138,7 @@ service nginx reload
 
 
 #### Redirection des visiteurs HTTP vers HTTPS
+
 Pour plus de sécurité, certains contenus tels que les pages de connexion peuvent n'être disponible qu'en HTTPS. Certains site vont même plus loin en redirigeant systématiquement toutes les visites vers la version HTTPS du site. Par défaut, comme les 2 protocoles HTTP et HTTPS passent par des ports différents, respectivement le 80 et le 443, la solution consiste à mettre les règles de redirections directement dans le vhost correspondant au HTTP.
 
 Lorsque la requête passe par un service comme le service OVHcloud Load Balancer, celui-ci s'occupe de recevoir le trafic HTTP, déchiffrer le trafic HTTPS et les fait suivre tous les 2 vers vos serveurs. En fonction de la configuration de vos serveurs, l'ensemble du trafic sera propagé en HTTP ou en HTTPS, sans distinction de protocol d'entré sur le Load Balancer. Votre serveur ne peut plus faire la différence entre les 2, puisque les 2 arrivent au même endroit. On parle de "Terminaison SSL".
@@ -144,6 +149,7 @@ De même que X-Forwarded-For, cet En-Tête peut être forgé par un visiteur mal
 
 
 #### Apache
+
 - Insérez la configuration suivante dans le fichier .hatccess de votre site :
 
 ```apache
