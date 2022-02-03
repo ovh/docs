@@ -162,9 +162,9 @@ This option allows you to reconfigure your instance on a new basis, or simply ch
 - Finally, click on `Rebuild Instance`{.action}, this operation may take a few minutes.
 
 
-### Suspend or pause an instance (Shelve or pause an instance)
+### Shelve or pause an instance 
 
-To find out how to suspend or pause an instance, please refer to [this guide](https://docs.ovh.com/ca/en/public-cloud/shelve-or-pause-an-instance/).
+To find out how to shelve or pause an instance, please refer to [this guide](https://docs.ovh.com/ca/en/public-cloud/shelve-or-pause-an-instance/).
 
 ### Access the instance console
 
