@@ -2,7 +2,7 @@
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 slug: sauvegarder-exporter-une-base-de-donnees
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-section: 'SQL Privé'
+section: 'CloudDB'
 order: 4
 ---
 
@@ -16,14 +16,14 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} et [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci. 
 > <br> Il n'y a pas d'accès super utilisateur « root ». 
 > <br> Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
 > 
@@ -45,13 +45,13 @@ Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre d
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Sauvegarder maintenant`{.action}.
 
-![private-sql](images/private-sql-save01.png){.thumbnail}
+![clouddb](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Exporter une sauvegarde
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Afficher les sauvegardes`{.action}
 
-![private-sql](images/private-sql-dl01.png){.thumbnail}
+![clouddb](images/private-sql-dl01.png){.thumbnail}
 
 La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.action} à droite de la sauvegarde choisie, puis sur `Télécharger la sauvegarde`{.action} pour récupérer cette sauvegarde.
 
@@ -61,7 +61,7 @@ La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.ac
 
  Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external} de cette documentation.
 
-##### 1\.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud (uniquement pour l'offre SQL Privé)
+##### 1\.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud 
 
 Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](../connexion-base-de-donnees-serveur-bdd){.external}
 
@@ -69,23 +69,15 @@ Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que
 
 Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
 
-![private-sql](images/private-sql-export01.png){.thumbnail}
+![clouddb](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
-
-> [!primary]
->
-> Pour un serveur SQL privé, cette action est uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
 
 ```bash
 mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
 ##### 1\.3 Exporter ma base MySQL ou MariaDB depuis un script PHP
-
-> [!primary]
->
-> Pour un serveur SQL privé, l’exécution de ce script ne peut se faire uniquement que depuis un hébergement mutualisé OVHcloud.
 
 
 ```php
@@ -107,9 +99,6 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
  
 ##### 2\.1 Exporter ma base PostgreSQL en ligne de commande
 
-> [!primary]
->
-> Pour un serveur SQL privé, cette action est uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
 
 ```bash
 pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base > nom_de_la_base.sql
@@ -117,9 +106,6 @@ pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de
 
 ##### 2\.2 Exporter ma base PostgreSQL depuis un script PHP
 
-> [!primary]
->
-> Pour un serveur SQL privé, l’exécution de ce script ne peut se faire uniquement que depuis un hébergement mutualisé OVHcloud.
 
 ```php
 1. <?php echo "Votre base est en cours de sauvegarde.......";

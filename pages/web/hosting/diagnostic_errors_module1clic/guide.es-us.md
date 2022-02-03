@@ -55,7 +55,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Hosting Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. Los planes **Hosting Performance** también le permitirán activar gratis un [servidor SQL privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/).
+Los planes [Hosting Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. 
 
 #### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 
@@ -144,25 +144,6 @@ Si no tiene bases de datos adicionales y no desea contratar una solución adicio
 > No podremos asistirle en este asunto.
 >
 
-### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
-
-![cant_connect](images/cant_connect.png){.thumbnail}
-
-Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor SQL privado](../primeros-pasos-con-sql-privado/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el usuario que se registró durante la instalación no tiene suficientes permisos sobre la base de datos o que las claves indicadas son incorrectas.
-
-En ese caso, modifique en primer lugar los [derechos del usuario](../crear-bases-de-datos-y-usuarios/#gestionar-los-derechos-de-los-usuarios) correspondientes para que disponga de los permisos **Administrador** o **Lectura/escritura** sobre la base de datos.
-
-Compruebe también sus claves de acceso [conectando directamente](../coneccion-base-de-datos-servidor-bdd/#procedimiento) a su servidor de bases de datos y reinicie la instalación de su módulo.
-
-### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
-
-![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
-
-Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor SQL privado](../primeros-pasos-con-sql-privado/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el nombre de servidor de bases de datos indicado es incorrecto.
-
-Haga clic en la sección `Web cloud`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, seguidamente, en la pestaña `Bases de datos`{.action}, a la izquierda de su pantalla.
-
-Haga clic en el producto correspondiente: el nombre del servidor que se va a utilizar se indica en la subparte `Nombre del host` de la subparte `SQL` de `Datos de conexión`.
 
 ### Su dominio no se propone al crear el módulo
 

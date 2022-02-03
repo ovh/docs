@@ -62,8 +62,8 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 Para recuperar um backup da sua base de dados, consulte o nosso guia:
 ["Recuperar o backup da base de dados de um alojamento web"](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/){.external}.
 
-Se utiliza uma base de dados **SQL privado** para o seu website, consulte a secção dedicada ao backup no nosso guia:
-["Tudo sobre o SQL privado"](../sql-privado-primeira-utilizacao/).
+Se utiliza uma base de dados **CloudDB** para o seu website, consulte a secção dedicada ao backup no nosso guia:
+[Backup e exportação de uma base de dados no servidor de bases de dados](https://docs.ovh.com/pt/hosting/backup-exportacao-base-de-dados/).
 
 ### Etapa 3: recuperar os logs do seu alojamento OVHcloud
 
@@ -103,6 +103,6 @@ Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são a
 
 [Recuperar o backup da base de dados de um alojamento web](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
 
-[SQL privado](../sql-privado-primeira-utilizacao/)
+[CloudDB - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -84,7 +84,7 @@ Introduzca la información de conexión a la base de datos que utilizará con el
 
 - Si la base de datos ya está creada en el alojamiento, selecciónela e introduzca la información que se le solicita.
 - Si la base de datos todavía no está creada en el alojamiento, deberá seguir los pasos que se indican para crearla y, a continuación, seleccionarla e introducir la información que se le solicita.
-- Si la base de datos ya está creada en un SQL Privado o CloudDB, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El SQL Privado o CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en un CloudDB, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
 - Si la base de datos ya está creada en otro alojamiento web de OVH, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
@@ -140,8 +140,6 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}
 
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
-
-Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
 

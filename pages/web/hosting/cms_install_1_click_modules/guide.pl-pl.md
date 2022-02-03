@@ -84,7 +84,7 @@ Teraz podaj informacje dotyczące logowania do Twojej bazy danych. Istnieje kilk
 
 - baza danych jest już utworzona na Twoim hostingu - wybierz ją z listy i uzupełnij wymagane informacje;
 - baza danych nie została jeszcze utworzona na Twoim hostingu - zastosuj się do wskazówek w celu jej utworzenia, a następnie ponownie dokonaj wyboru;
-- baza danych jest utworzona na instancji Private SQL lub CloudDB – wybierz z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
+- baza danych jest utworzona na instancji CloudDB – wybierz z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
 - baza danych jest utworzona na innym hostingu w OVH – wybierz z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Baza danych oraz hosting muszą być zlokalizowane w tym samym centrum danych;
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}.
@@ -142,8 +142,6 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
-
-Poznaj instancje [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

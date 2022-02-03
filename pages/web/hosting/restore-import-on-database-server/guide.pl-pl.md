@@ -2,7 +2,7 @@
 title: Przywracanie i importowanie bazy danych na serwer baz danych
 slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-section: 'Private SQL'
+section: 'CloudDB'
 order: 5
 ---
 
@@ -20,14 +20,14 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
+- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Pamiętaj, że oferty [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i [Cloud Databases](https://www.ovh.pl/cloud-databases/) nie dają dostępu do Hosta, ale do baz danych hostowanych na Host nie ma dostępu do superużytkownika "root". Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
+> Pamiętaj, że oferty [Cloud Databases](https://www.ovh.pl/cloud-databases/) nie dają dostępu do Hosta, ale do baz danych hostowanych na Host nie ma dostępu do superużytkownika "root". Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
 > 
 
 ### Przywracanie i importowanie bazy danych w Panelu klienta
@@ -42,7 +42,7 @@ Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wy�
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie kliknij `Przywróć kopię zapasową`{.action}.
 
-![private-sql](images/private-sql-restore01.png){.thumbnail}
+![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -54,7 +54,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
 Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
-![private-sql](images/private-sql-import01.png){.thumbnail}
+![clouddb](images/private-sql-import01.png){.thumbnail}
 
 Masz dwie możliwości:
 
@@ -69,7 +69,7 @@ Wpisz nazwę pliku importowanego, kliknij `Przeglądaj`{.action}, aby go wybrać
 > Plik musi mieć format ".gz".
 > 
 
-![private-sql](images/private-sql-import02.png){.thumbnail}
+![clouddb](images/private-sql-import02.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -79,7 +79,7 @@ Jeśli wcześniej zaimportowałeś plik, możesz wybrać opcję **"Import istnie
 
 Wybierz plik w rozwijanym menu i kliknij `Dalej`{.action}.
 
-![private-sql](images/private-sql-import03.png){.thumbnail}
+![clouddb](images/private-sql-import03.png){.thumbnail}
 
 Zaznacz, jeśli chcesz, **"Wyczyść aktualną bazę danych"** przed importem i **"Wyślij e-mail po zakończeniu importu"**, aby otrzymać informacje o zakończeniu operacji na głównym adresie e-mail Twojego konta OVHcloud, po czym kliknij `Zatwierdź`{.action}.
 
@@ -106,7 +106,7 @@ Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action} (uwaga, plik nie 
 
 Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
-![private-sql](images/private-sql-import04.png){.thumbnail}
+![clouddb](images/private-sql-import04.png){.thumbnail}
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 

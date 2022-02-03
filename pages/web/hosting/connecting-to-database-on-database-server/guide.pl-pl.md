@@ -2,7 +2,7 @@
 title: 'Logowanie do bazy danych Twojego serwera baz danych'
 slug: polaczenie-bazy-danych-serwer-bdd
 excerpt: 'Dowiedz się, jak się zalogować do bazy danych'
-section: 'Prywatny SQL'
+section: CloudDB
 order: 3
 ---
 
@@ -16,7 +16,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external} SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
+- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -34,7 +34,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 > Ponieważ MariaDB jest pochodną MySQL, polecenia są dokładnie takie same dla tych 2 typów baz danych.
 > 
 
-####  Przez phpMyAdmin OVHcloud (tylko w przypadku oferty Prywatnego SQL)
+####  Przez phpMyAdmin OVHcloud 
 
 Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych.
 
@@ -49,7 +49,7 @@ Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 - **Serwer:** wprowadź nazwę hosta widocznego w zakładce `Informacje ogólne` w polu **"Zarządzanie bazą danych"** w polu "Nazwa hosta" w części **SQL**.
 - **Użytkownik:** wprowadź nazwę użytkownika utworzoną w karcie `Użytkownicy i uprawnienia` serwera baz danych.
 - **Hasło:** wprowadź hasło przypisane do danego użytkownika.
-- **Port:** wprowadź port podany w karcie `Informacje ogólne` w polu **"Zarządzanie bazą danych"** pod nagłówkiem "Port" w części **SQL**. (pole to wyświetla się tylko dla prywatnych serwerów SQL)
+- **Port:** wprowadź port podany w karcie `Informacje ogólne` w polu **"Zarządzanie bazą danych"** pod nagłówkiem "Port" w części **SQL**.
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona phpMyAdmin.
 
@@ -75,19 +75,11 @@ Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące i
 
 ##### 1. Połączenie z linii poleceń
 
-> [!primary]
->
-> Dla prywatnego serwera SQL operacja ta jest możliwa tylko przez [SSH]( ../hosting_www_ssh_na_hostingu/){.external} z poziomu hostingu OVHcloud.
-
 ```bash
 mysql —host=serwer —user=uzytkownik —port=port —password=password nazwa_bazy
 ```
 
 ##### 2. Logowanie przez skrypt PHP
-
-> [!primary]
->
-> W przypadku prywatnego serwera SQL wykonywanie tego skryptu może odbywać się wyłącznie z poziomu hostingu OVHcloud. 
 
 ```php
 1. <?php
@@ -142,20 +134,11 @@ Aby zalogować się do bazy danych, upewnij się, że pobrałeś następujące i
 
 #### Połączenie z linii poleceń
 
-> [!primary]
->
-> Dla prywatnego serwera SQL operacja ta jest możliwa tylko przez [SSH]( ../hosting_www_ssh_na_hostingu/){.external} z poziomu hostingu OVHcloud.
-
-
 ```bash
 psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base
 ```
 
 #### Logowanie przez skrypt PHP
-
-> [!primary]
->
-> W przypadku prywatnego serwera SQL, wykonywanie tego skryptu może odbywać się wyłącznie z poziomu hostingu OVHcloud.
 
 ```php
 1. <?php

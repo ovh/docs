@@ -233,7 +233,7 @@ Par exemple :
 
 #### SQL privé
 Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre forfait SQL privé pour disposer de plus de ressources.
-Vous trouvez une comparaison de nos offres sur [sur le site du produit](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
+[Consulter notre offre CloudDB sur sur le site](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}.
 
 ## Aller plus loin
 

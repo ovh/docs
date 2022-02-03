@@ -2,7 +2,7 @@
 title: 'Configurar el servidor de bases de datos'
 slug: configurar-optimizar-su-servidor-de-base-de-datos
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-section: SQL Privado
+section: CloudDB
 order: 6
 ---
 
@@ -10,13 +10,13 @@ order: 6
 
 ## Objetivo
 
-Los servidores de bases de datos SQL Privado y Cloud Databases le ofrecen la posibilidad de modificar los parámetros globales de su servidor. También puede ver la actividad del servidor. 
+Los servidores Cloud Databases le ofrecen la posibilidad de modificar los parámetros globales de su servidor. También puede ver la actividad del servidor. 
 
 **Esta guía explica cómo configurar y optimizar el servidor de bases de datos.**
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
+- Tener contratado un plan de [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -76,28 +76,27 @@ Una vez que haya obtenido el número del cluster en el que está situado el aloj
 Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
 En la pestaña **"Información general"** que se muestra por defecto, haga clic en `...`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Elija la cantidad de RAM deseada y haga clic en el botón `Siguiente`{.action}. A continuación, elija la duración deseada.
 
 > [!primary]
 >
 > La parte proporcional se transferirá si solo tiene unos meses antes.
-> Expiración Esta parte se basará en la fecha de expiración del servidor SQL.
-> Privado, no de la orden de pedido.
+> Expiración Esta parte se basará en la fecha de expiración del servidor CloudDB, no de la orden de pedido.
 > 
 
 Tras la validación de los contratos, será redirigido a la orden de pedido, donde deberá abonar los cambios. La eliminación tardará unas horas en aplicarse.
 
 > [!warning]
 >
->  Si actualmente tiene un servidor SQL Privado gratuito con
-> plan de hosting Performance, al cambiar la solución el servicio de SQL Privado pasará a tener un coste aparte.
+>  Si actualmente tiene un servidor CloudDB gratuito con
+> plan de hosting Performance, al cambiar la solución el servicio de CloudDB pasará a tener un coste aparte.
 > 
 
 ### Modificar la configuración de mi servidor de bases de datos
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor SQL privado. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor CloudDB. 
 
 #### Instancia MySQL y MariaDB
 
@@ -105,7 +104,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 En el cuadro **"Configuración general de MySql"** encontrará la configuración actualmente establecida para su base de datos. Puede modificarla directamente y hacer clic en `Aplicar`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir**: Directorio de archivos temporales. **/dev/shm** corresponde a la memoria RAM de la instancia. **/tmp** es el disco duro de la instancia.
 - **MaxAllowedPacket**: Tamaño máximo de los envíos
@@ -113,7 +112,7 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 - **AutoCommit** : Define si las peticiones se validan automáticamente (committed) o no.
 - **Interactive_timeout** : Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
 - **InnodbBufferPoolSize** : Tamaño de la memoria intermedia (en megabytes).
-- **MaxConnexions :** Número de conexiones simultáneas autorizadas en el SQL Privado.
+- **MaxConnexions :** Número de conexiones simultáneas autorizadas en el CloudDB.
 - **Wait_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
 - **Event_scheduler** : Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
 
@@ -142,7 +141,7 @@ No es posible modificar la configuración de una instancia PostgreSQL.
 
 No obstante, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos` y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Cambiar la versión MySQL, PostgreSQL o MariaDB del servidor de bases de datos
 
@@ -152,7 +151,7 @@ La versión actual aparece en la línea **"Versión"**.
 
 Para modificar esta versión, haga clic en `Editar la versión`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **¿Cómo puedo conocer la versión exacta de PostgreSQL que utilizo?**
@@ -192,7 +191,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Acceso a los logs "Slow Query"
 
@@ -206,7 +205,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Para conectarse por **SFTP**, puede hacerlo a través del programa Filezilla, siguiendo la guía Guía de uso de FileZilla
 
@@ -219,7 +218,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico **"Estadísticas de memoria RAM utilizada"**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Número de conexiones por minuto
 
@@ -229,7 +228,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` del área de cliente. Puede consultar el gráfico **"Estadísticas del total de conexiones por minuto"**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Gestionar las bases de datos
 

@@ -225,9 +225,9 @@ Esempio:
 Ad esempio, evita di utilizzare “HAVING” (che appesantisce le tue richieste) e “GROUP BY” se non strettamente necessario.
 
 
-#### SQL Privato
-Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione SQL Privato per avere più risorse disponibili.
-Per consultare le nostre offerte, clicca [qui](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external}.
+#### CloudDB
+Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione CloudDB per avere più risorse disponibili.
+[Consulta l'offerta CloudDB sul nostro sito](https://www.ovh.it/cloud/cloud-databases/){.external}.
 
 ## Per saperne di più 
 
@@ -235,6 +235,6 @@ Per consultare le nostre offerte, clicca [qui](https://www.ovhcloud.com/it/web-h
 
 [Gestisci un database dal tuo hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
-[Iniziare a utilizzare il servizio SQL Privato](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-sql-privato/){.external}
+[Inziare a utilizzare CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

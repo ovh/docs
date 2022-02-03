@@ -217,9 +217,10 @@ Example:
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
 
-#### Private SQL
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
-A comparison of our offers can be found [on the product page](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/).
+#### CloudDB
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our CloudDB offer to have more resources available.
+
+[See the CloudDB offer on our website](https://www.ovh.co.uk/cloud/cloud-databases/).
 
 ## Go further
 
@@ -227,6 +228,6 @@ A comparison of our offers can be found [on the product page](https://www.ovhclo
 
 [Creating and managing a database in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database)
 
-[Getting started with the Private SQL service](https://docs.ovh.com/gb/en/hosting/getting-started-with-private-sql)
+[Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

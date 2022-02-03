@@ -80,7 +80,7 @@ A questo punto, inserisci i dati di accesso al tuo database. Esistono diverse po
 
 - se il database è già creato sul tuo hosting, selezionalo dalla lista e inserisci le informazioni richieste
 - se il database non è ancora stato creato sul tuo hosting, segui le indicazioni per crearlo, poi selezionalo dalla lista e inserisci le informazioni richieste
-- se il database è stato creato sulla tua istanza SQL Privato o CloudDB, seleziona `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato sulla tua istanza CloudDB, seleziona `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
 - se il database è stato creato su un altro hosting Web OVH, seleziona `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
@@ -137,8 +137,6 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
 [Gestire un database da un hosting condiviso]( https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
-
-Scopri la nostra soluzione [SQL Privato]( https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external}
 
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

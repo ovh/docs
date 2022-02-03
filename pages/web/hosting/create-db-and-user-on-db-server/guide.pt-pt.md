@@ -2,7 +2,7 @@
 title: 'Criar bases de dados e utilizadores no servidor de bases de dados'
 slug: criar-bases-de-dados-e-utilizadores
 excerpt: 'Saiba como criar uma base de dados no servidor de bases de dados.'
-section: 'SQL Privado'
+section: CloudDB
 order: 2
 ---
 
@@ -16,7 +16,7 @@ Uma base de dados (*database*, «DB» ou «BDD») permite armazenar elementos co
 
 ## Requisitos
 
-- Dispor de um [serviço de alojamento SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de um [serviço de Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções

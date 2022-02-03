@@ -82,7 +82,7 @@ Agora tem que preencher a informação relativa à base de dados. Existem vária
 
 - a base de dados já está criada no seu alojamento: selecione uma das bases de dados indicadas na lista e introduza as informações solicitadas;
 - a base de dados não está criada no seu alojamento: siga as instruções para a criar uma base de dados. Introduza a informação solicitada atrás;
-- a base de dados foi criada na instância SQL Privé ou CloudDB: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
+- a base de dados foi criada na instância CloudDB: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
 - a base de dados foi criada noutro alojamento Web OVH: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}.
@@ -140,8 +140,6 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 [Como usar o meu alojamento com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} (versão PT disponível em breve).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
-
-Veja a nossa [oferta SQL Privé](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external}
 
 Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 

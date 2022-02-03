@@ -218,9 +218,10 @@ Ejemplo:
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
 
-#### SQL Privado
-Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de SQL Privado para disponer de más recursos.
-Puede encontrar una comparativa de nuestras ofertas [en la página del producto](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
+#### CloudDB
+Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de CloudDB para disponer de más recursos.
+
+[Consultar la solución CloudDB en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
 
 ## Más información
 
@@ -228,6 +229,6 @@ Puede encontrar una comparativa de nuestras ofertas [en la página del producto]
 
 [Gestionar una base de datos en un paquete de hospedaje web](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-[Primeros pasos con el servicio SQL Privado](https://docs.ovh.com/es/hosting/primeros-pasos-con-sql-privado/){.external}
+[Primeros pasos con el servicio Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

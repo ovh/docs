@@ -2,7 +2,7 @@
 title: 'Conectarse a la base de datos de su servidor de bases de datos'
 slug: coneccion-base-de-datos-servidor-bdd
 excerpt: 'Cómo conectarse a la base de datos'
-section: SQL Privado
+section: CloudDB
 order: 3
 ---
 
@@ -16,7 +16,7 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external} o [Cloud Databases](https://www.ovh.es/cloud-databases){.external}.
+- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -34,7 +34,7 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 > Como MariaDB es un derivado de MySQL, los distintos comandos son exactamente los mismos para los dos tipos de bases de datos.
 > 
 
-####  Por phpMyAdmin OVHcloud (solo para SQL Privado)
+####  Por phpMyAdmin OVHcloud
 
 Acceda a su área de cliente. Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
 
@@ -49,7 +49,7 @@ Acceda a la página de conexión de phpMyAdmin.
 - **Servidor**: introduzca el nombre del host del servidor en la pestaña `Información general`, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Nombre del host" del apartado **SQL**.
 - **Usuario**: introduzca el nombre de usuario creado en la pestaña `Usuarios y permisos` del servidor de bases de datos.
 - **Contraseña**: introduzca la contraseña del usuario correspondiente.
-- **Puerto**: introduzca el puerto indicado en la pestaña `Información general`, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Puerto" del apartado **SQL**. (Esta casilla solo se muestra para los servidores SQL Privado)
+- **Puerto**: introduzca el puerto indicado en la pestaña `Información general`, en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Puerto" del apartado **SQL**.
 
 Si la conexión se ha completado, se mostrará la siguiente página de phpMyAdmin.
 
@@ -75,23 +75,17 @@ Para conectarse a la base de datos, asegúrese de que dispone de la siguiente in
 
 ##### 1. Conexión en línea de comandos
 
-> [!primary]
->
-> Para un servidor SQL privado, esta acción solo es posible por [SSH](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/){.external} desde un alojamiento compartido de OVHcloud.
-
 ```bash
 mysql --host=servidor --user=usuario --port=puerto --contraseña nombre_de_la_BD
 ```
 
 ##### 2. Conexión mediante script PHP
 
-> [!primary]
->
-> Para un servidor SQL privado, la ejecución de este script solo puede realizarse desde un alojamiento compartido de OVHcloud. 
-
+```php
 1. <?php
 2. $db = new PDO('mysql:host=host;port=port;dbname=dbname', 'username', 'password');
 3. ?>
+```
 
 ##### 3. Conexión a través de la aplicación SQuirreL SQL
 

@@ -2,7 +2,7 @@
 title: Configura il tuo database server 
 slug: configurare-ottimizzare-il-tuo-database-server
 excerpt: Come configurare e ottimizzare il tuo database server
-section: SQL Privato
+section: CloudDB
 order: 6
 ---
 
@@ -10,13 +10,13 @@ order: 6
 
 ## Obiettivo
 
-I database server SQL Privato e Cloud Database ti danno la possibilità di agire sui parametri globali del tuo server. Inoltre, è possibile visualizzare l'attività del server. 
+I database server Cloud Database ti danno la possibilità di agire sui parametri globali del tuo server. Inoltre, è possibile visualizzare l'attività del server. 
 
 **Questa guida ti mostra come configurare e ottimizzare il tuo database server.**
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di un [Cloud Database](https://www.ovh.it/cloud-databases/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -76,29 +76,28 @@ Dopo aver recuperato il numero del cluster su cui è situato il tuo hosting, con
 Per modificare l'offerta del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
 Nella scheda **"Informazioni generali"**, visualizzata di default, clicca su `...`{.action} a destra della voce "RAM" e poi su `Modifica la quantità di RAM`{.action} per accedere all'ordine di questo passaggio.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Scegli la quantità di RAM desiderata e clicca su `Seguente`{.action}. e scegliere la durata scelta.
 
 > [!primary]
 >
 > Se hai ancora qualche mese prima della scadenza, verrà effettuato un prorata.
-> Questo prorata sarà basato sulla data di scadenza del server SQL
-> Privato e non su quello del buono d'ordine.
+> Questo prorata sarà basato sulla data di scadenza del server CloudDB e non su quello del buono d'ordine.
 > 
 
 Dopo la conferma dei contratti, verrai reindirizzato al buono d'ordine da cui sarà possibile pagare la modifica. L'operazione diventerà effettiva entro qualche ora.
 
 > [!warning]
 >
->  Se disponi attualmente di un server SQL Privato gratuito grazie al tuo
+>  Se disponi attualmente di un server CloudDB gratuito grazie al tuo
 > hosting Performance, la modifica dell'offerta ti farà perdere la sua
 > gratuità.
 > 
 
 ### Modifica la configurazione del tuo database server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo server SQL privato. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo server CloudDB. 
 
 #### Istanza MySQL e MariaDB
 
@@ -106,7 +105,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione attualmente definita per il tuo database. Puoi modificarla direttamente e cliccare su `Applica`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Temp**: Directory dei file temporanei. **/dev/shm** corrisponde alla memoria RAM dell'istanza. **/tmp** corrisponde all'hard disk dell'istanza.
 - **MaxAllowedPacket**: Dimensione massima dei pacchetti
@@ -144,7 +143,7 @@ Non è possibile modificare la configurazione di un'istanza PostgreSQL.
 
 ma è possibile attivare estensioni sui database. Clicca sulla scheda `Database`, poi sull'icona della tabella del tuo database sotto la colonna "**Estensioni"**
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Modifica la versione MySQL, PostgreSQL o MariaDB del database server
 
@@ -154,7 +153,7 @@ La versione attuale compare nella riga **"Versione"**.
 
 Per modificare questa versione, clicca su `Modifica la versione`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **Come conoscere la versione esatta di PostgreSQL che uso?**
@@ -195,7 +194,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Accesso ai log "Slow Query"
 
@@ -209,7 +208,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Per effettuare l'accesso via **SFTP**, è possibile utilizzare Filezilla utilizzando la guida: [ Utilizzo del software FileZilla con il tuo hosting]( ../hosting_condiviso_guida_allutilizzo_di_filezilla/).
 
@@ -222,7 +221,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche della memoria RAM utilizzata"**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Controlla il numero di connessioni al minuto
 
@@ -232,7 +231,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche del totale delle connessioni al minuto"**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Ottimizza i tuoi database
 

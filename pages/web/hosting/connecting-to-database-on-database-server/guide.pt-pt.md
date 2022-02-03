@@ -2,7 +2,7 @@
 title: 'Conexão à base de dados do servidor de bases de dados'
 slug: conexao-base-de-dados-servidor-bdd
 excerpt: 'Saiba como se conectar a uma base de dados'
-section: 'SQL Privado'
+section: CloudDB
 order: 3
 ---
 
@@ -16,15 +16,14 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de um [serviço de alojamento SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de um [serviço de Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 > [!primary]
 >
-> Os serviços SQL Privado e Cloud Databases não dão acesso ao Host, mas às bases de dados nele alojadas.
-Não há um acesso superutilizador «root».
+> Os serviços Cloud Databases não dão acesso ao Host, mas às bases de dados nele alojadas. Não há um acesso superutilizador «root».
 > <br> Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
 > 
 
@@ -35,7 +34,7 @@ Não há um acesso superutilizador «root».
 > Como as MariaDB derivam das MySQL, os diferentes comandos são exatamente iguais para estes dois tipos de bases de dados.
 > 
 
-####  Pelo phpMyAdmin OVHcloud (apenas para o serviço SQL Privado)
+####  Pelo phpMyAdmin OVHcloud 
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
 
@@ -50,7 +49,7 @@ Será conduzido à página de conexão do phpMyAdmin.
 - **Servidor:** indique o host do servidor, visível no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Host» da secção **SQL**.
 - **Utilizador:** indique o utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
 - **Palavra-pase:** indique a palavra-passe associada ao utilizador em causa.
-- **Porta:** indique a porta mencionada no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Porta» da secção **SQL**. (Esta opção só é exibida no caso dos servidores SQL Privado.)
+- **Porta:** indique a porta mencionada no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Porta» da secção **SQL**.
 
 Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
@@ -76,19 +75,11 @@ Para se conectar à base de dados, certifique-se de que tem à mão as seguintes
 
 ##### 1. Conexão através da linha de comandos
 
-> [!primary]
->
-> No caso dos servidores SQL Privados, esta ação só é possível em [SSH](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/){.external} a partir de um alojamento partilhado OVHcloud.
-
 ```bash
 mysql --host=servidor --user=utilizador --port=port --password=password nome_da_base
 ```
 
 ##### 2. Conexão através de um script PHP
-
-> [!primary]
->
-> No caso dos servidores SQL Privados, a execução deste script só é possível a partir de um alojamento partilhado OVHcloud. 
 
 ```php
 1. <?php
@@ -143,20 +134,11 @@ Para se conectar à base de dados, certifique-se de que tem à mão as seguintes
 
 #### Conexão através da linha de comandos
 
-> [!primary]
->
-> No caso dos servidores SQL Privados, esta ação só é possível em [SSH](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external} a partir de um alojamento partilhado OVHcloud.
-
-
 ```bash
 psql --host=servidor --port=port --user=utilizador --password=password nome_da_base
 ```
 
 #### Conexão através de um script PHP
-
-> [!primary]
->
-> No caso dos servidores SQL Privados, a execução deste script só é possível a partir de um alojamento partilhado OVHcloud.
 
 ```php
 1. <?php
