@@ -29,7 +29,7 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](htt
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/) 
-- Avere accesso allo [Spazio Cliente OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
