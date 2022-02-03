@@ -30,7 +30,7 @@ Si vous retrouvez dans vos acces_log uniquement des IP privées, ce guide est fa
 
 ```bash
 10.108.0.15 - - [02/Fev/2022:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
-10.108.0.24 - - [22/Fev/2022/:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
+10.108.0.24 - - [02/Fev/2022/:10:56:47 +0100] "GET / HTTP/1.1" 200 706 "-" "Mozilla/5.0 (Linux[...]"
 ```
 
 ### Obligations légales
