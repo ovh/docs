@@ -6,7 +6,7 @@ section: CMS
 order: 1
 ---
 
-**Dernière mise à jour le 15/12/2017**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 

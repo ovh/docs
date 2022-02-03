@@ -6,7 +6,7 @@ section: Introdução
 legacy_guide_number: g1374
 ---
 
-**Última atualização: 19/01/2022**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 

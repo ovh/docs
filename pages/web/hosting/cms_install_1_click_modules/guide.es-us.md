@@ -5,7 +5,7 @@ excerpt: Cómo instalar un sitio web con los módulos en un clic de OVHcloud
 section: CMS
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 

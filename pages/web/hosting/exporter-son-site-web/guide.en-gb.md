@@ -5,7 +5,7 @@ excerpt: 'Find out how to export an OVHcloud website'
 section: 'Getting started'
 ---
 
-**Last updated 19th January 2022**
+**Last updated 3rd February 2022**
 
 ## Objective
 

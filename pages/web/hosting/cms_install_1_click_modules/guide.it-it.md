@@ -5,7 +5,7 @@ slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
 section: CMS
 ---
 
-**Ultimo aggiornamento: 21/02/2018**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 

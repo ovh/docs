@@ -6,7 +6,7 @@ section: CloudDB
 order: 2
 ---
 
-**Letzte Aktualisierung am 30.10.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 

@@ -6,7 +6,7 @@ section: 'Bases de dados'
 order: 1
 ---
 
-**Última atualização: 01/09/2020**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 

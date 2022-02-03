@@ -5,7 +5,7 @@ slug: webhosting_optimierung_der_performance_ihrer_webseite
 section: 'Webseitenoptimierung'
 ---
 
-**Letzte Aktualisierung am 12.02.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.

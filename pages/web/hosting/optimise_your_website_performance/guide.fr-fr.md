@@ -6,7 +6,7 @@ excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse 
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 5 février 2020**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 

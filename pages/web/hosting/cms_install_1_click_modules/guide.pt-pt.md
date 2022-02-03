@@ -5,7 +5,7 @@ excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVH
 section: CMS
 ---
 
-**Última atualização: 25/01/2018**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 

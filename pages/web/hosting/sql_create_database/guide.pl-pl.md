@@ -6,7 +6,7 @@ section: 'Bazy danych'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 23-06-2020**
+**Ostatnia aktualizacja: 03-02-2022**
 
 ## Wprowadzenie
 

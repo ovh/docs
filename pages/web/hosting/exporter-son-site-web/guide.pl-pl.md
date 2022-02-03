@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 19-01-2022**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 

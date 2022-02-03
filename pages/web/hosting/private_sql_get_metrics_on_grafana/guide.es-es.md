@@ -5,6 +5,7 @@ id: '2057'
 slug: obtener_las_metricas_de_un_sql_privado_en_grafana
 legacy_guide_number: g2057
 section: SQL Privado
+hidden: true
 ---
 
 

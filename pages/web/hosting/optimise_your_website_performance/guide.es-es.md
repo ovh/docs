@@ -6,7 +6,7 @@ legacy_guide_number: g1396
 section: 'Optimización del sitio web'
 ---
 
-**Última actualización: 5/2/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 Esta guía ha sido creada para aquellos clientes que deseen mejorar el rendimiento de su sitio web.

@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 2
 ---
 
-**Última actualización: 19/01/2022**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 

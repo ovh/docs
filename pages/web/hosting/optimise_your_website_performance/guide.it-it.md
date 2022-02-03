@@ -7,7 +7,7 @@ legacy_guide_number: g1396
 section: Ottimizza il tuo sito
 ---
 
-**Ultimo aggiornamento: 05/02/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 Le performance di un sito possono essere influenzate da diversi fattori. 

@@ -7,7 +7,7 @@ section: 'Erste Schritte'
 order: 2
 ---
 
-**Letzte Aktualisierung am 19.01.2022**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 

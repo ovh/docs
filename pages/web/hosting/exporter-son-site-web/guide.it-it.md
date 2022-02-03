@@ -6,7 +6,7 @@ section: 'Per iniziare'
 order: 2
 ---
 
-**Ultimo aggiornamento: 19/01/2022**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 

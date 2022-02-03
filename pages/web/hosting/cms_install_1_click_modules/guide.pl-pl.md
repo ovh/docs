@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów O
 section: CMS
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-31**
+**Ostatnia aktualizacja dnia 03-02-2022**
 
 ## Wprowadzenie
 

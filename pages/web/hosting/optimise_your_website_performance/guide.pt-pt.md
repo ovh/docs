@@ -6,7 +6,7 @@ slug: partilhado_guia_de_otimizacao_das_performances_do_seu_site
 legacy_guide_number: g1396
 ---
 
-**Última atualização em 5 de fevereiro de 2020**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 Este guia destina-se a clientes que pretendem melhorar o desempenho do seu website.

@@ -6,7 +6,7 @@ section: 'Przekierowania i uprawnienia dostępu'
 legacy_guide_number: g1396
 ---
 
-**Ostatnia aktualizacja dnia 2020-02-05**
+**Ostatnia aktualizacja dnia 03-02-2022**
 
 ## Wprowadzenie
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.

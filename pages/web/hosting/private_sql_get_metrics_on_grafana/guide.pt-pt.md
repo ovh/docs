@@ -4,6 +4,7 @@ excerpt: Recuperar as métricas de um SQL Privado com Grafana
 id: '2057'
 slug: recuperar_as_metricas_de_um_sql_privado_com_grafana
 legacy_guide_number: g2057
+hidden: true
 ---
 
 

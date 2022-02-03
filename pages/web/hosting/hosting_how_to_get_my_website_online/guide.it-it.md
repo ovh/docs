@@ -7,7 +7,7 @@ order: 2
 legacy_guide_number: g1374
 ---
 
-**Ultimo aggiornamento: 19/01/2022**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 

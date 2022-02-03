@@ -4,6 +4,7 @@ excerpt: Informacje o metrykach dla Prywatnego serwera SQL w programie Grafana
 id: '2057'
 slug: informacje_o_metrykach_dla_prywatnego_serwera_sql_w_programie_grafana
 section: Private SQL
+hidden: true
 ---
 
 
