@@ -4,7 +4,7 @@ slug: blue-green
 excerpt: Cas pratique
 section: Cas d'usage
 ---
-**Dernière mise à jour le 04/04/2022**
+**Dernière mise à jour le 40/02/2022**
 
 
 ## Objectif
@@ -17,7 +17,8 @@ Un déploiement `Blue-Green`{.action} permet de s'affranchir du temps d'indispon
 ### Prérequis
 Pour mettre en oeuvre un déploiement de type `Blue-Green`{.action} vous devez disposer des éléments suivants :
 
-- un service OVHcloud Load Balancer ;
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - un premier serveur qui porte votre infrastructure de production ;
 - un second serveur qui porte une infrastructure similaire dédiée au développement ;
 
