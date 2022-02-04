@@ -29,7 +29,7 @@ CMS (Content Management System) umożliwiają postawienie strony internetowej za
 OVHcloud oferuje cztery systemy zarządzania treścią do prostej i szybkiej instalacji jako gotowe moduły. Są to najpopularniejsze rozwiązania dostępne na rynku. Jeśli już dokonałeś wyboru jednego spośród CMS-ów, przejdź do kolejnego kroku tego przewodnika. 
 Jeżeli nie wiesz, który CMS jest dla Ciebie, zapoznaj się z naszym [porównaniem systemów CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}.
 
-Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVH, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}).
+Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVHcloud, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}).
 
 ![Dostępne w OVHcloud CMS](images/CMS_logo.png){.thumbnail}
 

@@ -28,7 +28,7 @@ Un CMS (Content Management System) consente di progettare un sito Web tramite un
 
 Con i moduli in 1 click di OVHcloud sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
 
-Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
+Se il CMS che hai scelto non è presente fra le opzioni proposte da OVHcloud, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
 
 ![Logo dei CMS](images/CMS_logo.png){.thumbnail}
 
@@ -81,7 +81,7 @@ A questo punto, inserisci i dati di accesso al tuo database. Esistono diverse po
 - se il database è già creato sul tuo hosting, selezionalo dalla lista e inserisci le informazioni richieste
 - se il database non è ancora stato creato sul tuo hosting, segui le indicazioni per crearlo, poi selezionalo dalla lista e inserisci le informazioni richieste
 - se il database è stato creato sulla tua istanza CloudDB, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
-- se il database è stato creato su un altro hosting Web OVH, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato su un altro hosting Web OVHcloud, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
 

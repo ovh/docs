@@ -31,14 +31,14 @@ Un CMS (pour Content Management System) vous permet de concevoir un site web via
 
 OVHcloud propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/) pourrait vous aider dans votre décision.
 
-Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVH, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovhcloud.com/fr/web-hosting/)).
+Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHcloud, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovhcloud.com/fr/web-hosting/)).
 
 ![Logo des CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Étape 2 : accéder à la gestion des modules 1 clic
 
-Dans la barre de services à gauche de votre espace client OVH, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
+Dans la barre de services à gauche de votre espace client OVHcloud, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
 
 Vous pourrez y consulter les différents modules en 1 clic déjà installés, les gérer et en installer de nouveaux.
 

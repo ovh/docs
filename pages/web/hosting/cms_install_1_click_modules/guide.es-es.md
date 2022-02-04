@@ -30,14 +30,14 @@ Los CMS (del inglés *content management system*) permiten diseñar un sitio web
 
 OVHcloud ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
 
-Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVH, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ![Logotipos de los CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Acceder a la gestión de los módulos en un clic
 
-En la columna izquierda del área de cliente de  OVH, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
+En la columna izquierda del área de cliente de  OVHcloud, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
 
 ![Acceso a la sección «Módulos en un clic»](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
@@ -84,8 +84,8 @@ Introduzca la información de conexión a la base de datos que utilizará con el
 
 - Si la base de datos ya está creada en el alojamiento, selecciónela e introduzca la información que se le solicita.
 - Si la base de datos todavía no está creada en el alojamiento, deberá seguir los pasos que se indican para crearla y, a continuación, seleccionarla e introducir la información que se le solicita.
-- Si la base de datos ya está creada en un CloudDB, selecciónela `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
-- Si la base de datos ya está creada en otro alojamiento web de OVH, selecciónela `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en un CloudDB, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en otro alojamiento web de OVHcloud, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
