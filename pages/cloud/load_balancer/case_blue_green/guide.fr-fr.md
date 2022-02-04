@@ -4,7 +4,7 @@ slug: blue-green
 excerpt: Cas pratique
 section: Cas d'usage
 ---
-**Dernière mise à jour le 40/02/2022**
+**Dernière mise à jour le 04/02/2022**
 
 
 ## Objectif
