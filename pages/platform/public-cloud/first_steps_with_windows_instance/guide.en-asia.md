@@ -5,6 +5,7 @@ excerpt: 'Find out how to install a Windows instance and connect to it for the f
 legacy_guide_number: 1995
 section: Getting started
 order: 6
+hidden: true
 ---
 
 **Last updated 17th December 2019**

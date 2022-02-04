@@ -4,6 +4,7 @@ excerpt: 'Erfahren Sie hier, wie Sie die Installation einer Windows-Instanz absc
 slug: die_ersten_schritte_mit_ihrer_windows_instanz
 legacy_guide_number: g1995
 section: 'Erste Schritte'
+hidden: true
 ---
 
 **Letzte Aktualisierung am 29.09.2020**

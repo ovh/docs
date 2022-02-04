@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 19-01-2022**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 
@@ -62,8 +62,8 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową bazy danych:
 [„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
 
-Jeśli korzystasz z **Prywatnego serwera SQL** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
-[„Wszystko o prywatnym serwerze SQL”](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}.
+Jeśli korzystasz z **serwera CloudDB** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
+[Tworzenie i eksportowanie bazy danych na serwerze baz danych](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/){.external}.
 
 ### Etap 3: pobranie logów z hostingu OVHcloud
 
@@ -103,6 +103,6 @@ Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane d
 
 [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
 
-[Wszystko o prywatnym serwerze SQL](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}.
+[Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}.
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

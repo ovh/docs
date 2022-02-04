@@ -6,7 +6,7 @@ section: 'Przekierowania i uprawnienia dostępu'
 legacy_guide_number: g1396
 ---
 
-**Ostatnia aktualizacja dnia 2020-02-05**
+**Ostatnia aktualizacja dnia 03-02-2022**
 
 ## Wprowadzenie
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.
@@ -216,9 +216,9 @@ Przykład:
 Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używaj też klauzuli „GROUP BY”, o ile nie jest naprawdę niezbędna.
 
 
-#### Prywatna baza SQL
-Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Private SQL. Będziesz mieć do dyspozycji więcej zasobów.
-Porównanie ofert znajdziesz na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}.
+#### CloudDB
+Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — CloudDB. Będziesz mieć do dyspozycji więcej zasobów.
+[Sprawdź ofertę CloudDB na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
 
 ## Sprawdź również
 
@@ -226,6 +226,6 @@ Porównanie ofert znajdziesz na [stronie produktu](https://www.ovhcloud.com/pl/w
 
 [Zarządzanie bazą danych w hostingu WWW](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
 
-[Pierwsze kroki z usługą Private SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/){.external}
+[Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

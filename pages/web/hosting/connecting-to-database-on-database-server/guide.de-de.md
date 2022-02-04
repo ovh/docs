@@ -2,11 +2,11 @@
 title: 'Mit der Datenbank Ihres Datenbankservers verbinden'
 slug: datenbank-verbindung-auf-bdd
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
-section: SQL Private
+section: CloudDB
 order: 3
 ---
 
-**Letzte Aktualisierung am 16.09.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -16,14 +16,14 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein entsprech
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Mit einer MySQL oder MariaDB Datenbank verbinden 
@@ -33,7 +33,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein entsprech
 > Da MariaDB ein Derivat von MySQL ist, sind die verschiedenen Befehle für diese beiden Arten von Datenbanken exakt gleich.
 > 
 
-#### phpMyAdmin von OVHcloud (nur SQL Private)
+#### phpMyAdmin von OVHcloud
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
 
@@ -74,9 +74,6 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie die folgenden Informati
 
 ##### 1\. Verbindung über die Kommandozeile
 
-> [!primary]
->
-> Für einen SQL Private Server ist diese Aktion ausschließlich mit [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) über ein OVHcloud Webhosting möglich.
 
 ```bash
 mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
@@ -84,9 +81,6 @@ mysql --host=server --user=benutzername --port=port --password=passwort datenban
 
 ##### 2\. Verbindung per PHP Skript
 
-> [!primary]
->
-> Für einen SQL Private Server kann dieses Skript nur über ein OVHcloud Webhosting ausgeführt werden. 
 
 ```php
 1. <?php
@@ -138,20 +132,12 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie die folgenden Informati
 
 #### Verbindung über die Kommandozeile
 
-> [!primary]
->
-> Für einen SQL Private Server ist diese Aktion ausschließlich mit [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) über ein OVHcloud Webhosting möglich.
-
-
 ```bash
 psql --host=server --port=port --user=benutzername --password=passwort datenbankname
 ```
 
 #### Verbindung per PHP Skript
 
-> [!primary]
->
-> Für einen SQL Private Server kann dieses Skript nur über ein OVHcloud Webhosting ausgeführt werden. 
 
 ```php
 1. <?php

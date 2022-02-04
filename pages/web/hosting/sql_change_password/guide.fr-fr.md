@@ -44,7 +44,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) de votre hébergement.
 
 ## En pratique
@@ -78,7 +78,7 @@ Recherchez et ouvrez le fichier de configuration de votre site :
 Deux cas sont possibles :
 
 - Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement;
-- Cas n°2 : elle est est incluse dans une offre *SQL Privé* ou *CloudDB*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
+- Cas n°2 : elle est est incluse dans une offre *CloudDB*, auquel cas vous devrez retrouver le **nom du serveur** et le **nom d'utilisateur** de votre base de données, afin d'identifier cette dernière sans risque d'erreur.
 
 Afin de déterminer quel cas s'applique à votre site, dans le fichier de configuration identifié à [l'étape 1](#step1), commencez par noter le nom de sa base de données :
 
@@ -95,7 +95,7 @@ Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?
 
 Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration, passez à [l'étape 3](#step3).
 
-Dans le cas contraire, la base de données de votre site est liée à une offre [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+Dans le cas contraire, la base de données de votre site est liée à une offre [CloudDB](https://www.ovh.com/fr/cloud-databases/).
 
 Vous devez donc retourner dans le fichier de configuration de votre site, afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
 
@@ -106,7 +106,7 @@ Vous devez donc retourner dans le fichier de configuration de votre site, afin d
 
 Cliquez ensuite, dans la partie **gauche** de votre écran, sur `Bases de données`{.action}. 
 
-Dans l'onglet `Informations générales`{.action}, identifiez, dans vos offres [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://www.ovh.com/fr/cloud-databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
+Dans l'onglet `Informations générales`{.action}, identifiez, dans vos offres[CloudDB](https://www.ovh.com/fr/cloud-databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
 
 Toujours dans cette partie de votre espace client, rendez-vous dans l'onglet `Utilisateur et droits`{.action}, afin de repérer également le `Nom d'utilisateur`{.action} de votre base de données.
 
@@ -193,7 +193,7 @@ A nouveau, deux cas sont possibles :
 
 - Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à votre [hébergement web](https://www.ovhcloud.com/fr/web-hosting/), suivez ces [instructions](#case1).
 
-- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à vos offres [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) ou [CloudDB](https://docs.ovh.com/fr/clouddb/), suivez ces [instructions](#case2).
+- Si votre base de données se trouve dans la partie de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dédiée à vos offres [CloudDB](https://docs.ovh.com/fr/clouddb/), suivez ces [instructions](#case2).
 
 #### Cas n°1 : la base de données de votre site fait partie de votre offre d'hébergement <a name="case1"></a>
 
@@ -209,7 +209,7 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Cas n°2 : la base de données de votre site fait partie d'une offre Private SQL ou CloudDB <a name="case2"></a>
+#### Cas n°2 : la base de données de votre site fait partie d'une offre CloudDB <a name="case2"></a>
 
 Rendez-vous dans la partie `Bases de données`{.action} de votre espace client (menu de gauche) et sur le serveur concerné, cliquez sur l'onglet `Utilisateurs et droits`{.action} :
 

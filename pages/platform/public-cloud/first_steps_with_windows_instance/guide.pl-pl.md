@@ -4,6 +4,7 @@ excerpt: 'Odkryj, jak przeprowadzić instalację instancji z systemem Windows i 
 slug: rozpoczecie_pracy_z_instancja_windows
 legacy_guide_number: g1995
 section: Tutoriale
+hidden: true
 ---
 
 **Ostatnia aktualizacja z dnia 25-11-2019**

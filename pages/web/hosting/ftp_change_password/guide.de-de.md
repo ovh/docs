@@ -83,7 +83,7 @@ Das Hochladen Ihrer Dateien in den Hosting-Bereich kann auf mehrere Arten erfolg
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html){.external}
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
