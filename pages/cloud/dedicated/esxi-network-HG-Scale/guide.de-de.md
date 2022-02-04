@@ -41,14 +41,14 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 
 > [!warning]
 >
-> Derzeit ist ein bekannter Fehler in der grafischen Benutzeroberfläche ESXi vorhanden. Die Ausführung dieser Schritte in diesem Interface würde daher zu einer nicht funktionalen Konfiguration führen. Es ist absolut notwendig, diese Konfiguration über das SSH-Kommandozeileninterface anzuwenden.
+> Derzeit ist ein bekannter Fehler in der grafischen Benutzeroberfläche von ESXi vorhanden. Die Ausführung der Schritte in diesem Interface würde daher zu einer nicht funktionalen Konfiguration führen. Es ist absolut notwendig, diese Konfiguration über das SSH-Kommandozeileninterface anzuwenden.
 >
 
-### Failover-IP über das vRack
+### Failover-IP über vRack
 
-Erstens, fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter]https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und öffnen SSie das Menü `vRack`{.action} in der linken Leiste.
+Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie das Menü `vRack`{.action} in der linken Leiste.
 
-Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `hinzufügen`{.action}.
+Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
 
 #### Ursprüngliche Konfiguration
 
@@ -79,7 +79,7 @@ Folgende Schritte sind notwendig:
 
 > [!primary]
 >
-> Die Änderungen sind im *command mode* (shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
+> Die Änderungen sind im *command mode* (Shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
 >
 
 ##### **Erstellung des Aggregats im LACP-Modus auf dem vSwitch, der die öffentlichen Interfaces hat**
