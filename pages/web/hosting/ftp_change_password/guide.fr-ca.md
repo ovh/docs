@@ -80,7 +80,7 @@ La connexion à l'espace d'hébergement de vos fichiers peut s’effectuer de pl
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Modifier le mot de passe de votre compte](https://docs.ovh.com/ca/fr/customer/gerer-son-mot-de-passe/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous invitons à consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
