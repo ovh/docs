@@ -2,7 +2,7 @@
 title: Crea i tuoi database e i tuoi utenti sul tuo database server
 slug: creare-database-e-utente
 excerpt: Come creare un database sul tuo database server
-section: SQL Privato
+section: CloudDB
 order: 2
 ---
 
@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/08/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ Un database («DB») permette di conservare elementi cosiddetti dinamici quali, 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura

@@ -36,19 +36,11 @@ order: 6
 
 ### Connexions simultanées à la base de données
 
-- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec la base de données privée incluse). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
-
-- Vous pouvez également commander des bases de données **Private SQL** supplémentaires, celles-ci disposant d'options de personnalisation :
-
-    - *max_connections*: 100 par défaut, avec possibilité de passer à 200
-
-    - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200
-
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) et [notre guide](../premiers-pas-avec-sql-prive/).
+- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données. Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
 
 #### Connexions depuis un serveur externe
 
-- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud, qu'il s'agisse de bases de données SQL partagées ou privées. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
+- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...

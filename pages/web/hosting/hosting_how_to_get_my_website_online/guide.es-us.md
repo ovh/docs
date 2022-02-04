@@ -113,7 +113,7 @@ Si va a migrar un sitio web que ya existe, descargue la base de datos desde su a
 
 #### 3.2. Crear la base de datos en OVH 
 
-Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, una solución [SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/){.external} o [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
 Si quiere crear una nueva base de datos en OVH, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
 

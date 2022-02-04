@@ -36,19 +36,19 @@ order: 4
 
 ### Conexões simultâneas à base de dados
 
-- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 se for a base de dados privada já incluída). Consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada plano de alojamento web.
+- Nas ofertas de alojamento web (bases de dados partilhadas), há um limite de 30 conexões simultâneas por base de dados (200 com uma base de dados CloudDB). Consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) para conhecer as opções disponíveis em cada plano de alojamento web.
 
-- Também pode encomendar bases de dados **Private SQL** suplementares, que dispõem de opções de personalização:
+- Também pode encomendar bases de dados **CloudDB** suplementares, que dispõem de opções de personalização:
 
     - *max_connections*: 100 de forma padrão, com a possibilidade de passar para 200
 
     - *max_user_connections*: 50 de forma padrão, com a possibilidade de passar para 200
 
-Para saber mais, consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) e este [guia](https://docs.ovh.com/pt/hosting/sql-privado-primeira-utilizacao/).
+Para saber mais, consulte as nossas [ofertas de alojamento](https://www.ovhcloud.com/pt/web-hosting/) e este [guia](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/).
 
 #### Conexões a partir de um servidor externo
 
-- Por razões de segurança, não é possível conectar-se a partir de um servidor externo à base de dados de um alojamento web OVHcloud, mesmo que sejam bases de dados SQL partilhadas ou privadas. Apenas os servidores OVHcloud Web Hosting podem conectar-se aos servidores das bases de dados. Qualquer outra conexão vai provocar o erro seguinte:
+- Por razões de segurança, não é possível conectar-se a partir de um servidor externo à base de dados de um alojamento web OVHcloud, mesmo que sejam bases de dados SQL partilhadas ou CloudDB. Apenas os servidores OVHcloud Web Hosting podem conectar-se aos servidores das bases de dados. Qualquer outra conexão vai provocar o erro seguinte:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect...

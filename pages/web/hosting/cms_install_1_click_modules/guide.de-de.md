@@ -6,7 +6,7 @@ section: 'CMS'
 order: 1
 ---
 
-**Stand 16.03.2018**
+**Stand 03.02.2022**
 
 ## Einleitung
 
@@ -17,7 +17,7 @@ order: 1
 ## Voraussetzungen
 
 - Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
-- Sie sind in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager) eingeloggt.
 - Das Verzeichnis, in dem Ihr Modul installiert wird, enthält keine anderen Dateien.
 - Die Domain (und gegebenenfalls die Subdomain) Ihrer Website ist als Multisite registriert.
 
@@ -27,15 +27,15 @@ order: 1
 
 Ein CMS (Content Management System) ermöglicht es Ihnen, eine Website über ein einfaches Interface einzurichten. Es gibt verschiedene Arten von CMS, die von Ihren individuellen Projekten abhängen. So können Sie auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.).
 
-Bei OVH stehen Ihnen 4 CMS als 1-Klick-Module zur Verfügung. Wenn Sie diese Lösung verwenden möchten, wählen Sie eines dieser CMS. Wenn Sie Ihre Wahl bereits getroffen haben, können Sie den nächsten Abschnitt überspringen und das Tutorial fortsetzen. Sollten Sie noch auf der Suche nach dem richtigen CMS sein, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) bei Ihrer Auswahl helfen.
+Bei OVHcloud stehen Ihnen 4 CMS als 1-Klick-Module zur Verfügung. Wenn Sie diese Lösung verwenden möchten, wählen Sie eines dieser CMS. Wenn Sie Ihre Wahl bereits getroffen haben, können Sie den nächsten Abschnitt überspringen und das Tutorial fortsetzen. Sollten Sie noch auf der Suche nach dem richtigen CMS sein, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/) bei Ihrer Auswahl helfen.
 
-Wenn Sie ein CMS installieren möchten, das nicht als OVH 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem Webhosting Angebot kompatibel ist (die Details zu unseren Angeboten finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/)).
+Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem Webhosting Angebot kompatibel ist (die Details zu unseren Angeboten finden Sie [hier](https://www.ovhcloud.com/de/web-hosting/)).
 
 ![CMS-Logos](images/CMS_logo.png){.thumbnail}
 
 ### Zugang zur Verwaltung der 1-Klick-Module
 
-Gehen Sie in Ihrem OVH Kundencenter im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das jeweilige Webhosting. Klicken Sie dann auf den Tab `1 Klick Module`{.action}.
+Gehen Sie in Ihrem OVHcloud Kundencenter im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das jeweilige Webhosting. Klicken Sie dann auf den Tab `1 Klick Module`{.action}.
 
 Hier können Sie die bereits installierten 1-Klick-Module einsehen und verwalten oder neue Module installieren.
 
@@ -85,8 +85,8 @@ Geben Sie nun die Verbindungsinformationen zu Ihrer Datenbank ein. Hierbei haben
 
 - Die Datenbank ist bereits auf Ihrem Webhosting eingerichtet: Wählen Sie die Datenbank in der Liste aus und geben Sie die erforderlichen Informationen ein.
 - Die Datenbank ist noch nicht auf Ihrem Webhosting eingerichtet: Folgen Sie den Anweisungen, um die Datenbank zu erstellen, und führen Sie den Vorgang anschließend erneut durch.
-- Die Datenbank ist auf Ihrer SQL Private oder CloudDB Instanz eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Instanz und das Webhosting müssen im selben Rechenzentrum gehostet sein.
-- Die Datenbank ist auf einem anderen OVH Webhosting eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Datenbank und das Webhosting müssen im selben Rechenzentrum gehostet sein.
+- Die Datenbank ist auf Ihrer CloudDB Instanz eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Instanz und das Webhosting müssen im selben Rechenzentrum gehostet sein.
+- Die Datenbank ist auf einem anderen OVHcloud Webhosting eingerichtet: Klicken Sie in der Liste auf die Zeile `Datenbank außerhalb Ihres Webhostings`{.action} und geben Sie die erforderlichen Informationen ein. Die Datenbank und das Webhosting müssen im selben Rechenzentrum gehostet sein.
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
 
@@ -143,8 +143,6 @@ Wenn Sie Hilfe zu den Funktionen Ihrer Website benötigen, gehen Sie auf die off
 [Mehrere Websites auf einem Webhosting hosten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external}
-
-Entdecken Sie unsere [SQL Private Angebote](https://www.ovhcloud.com/de/web-hosting/options/start-sql/){.external}
 
 Entdecken Sie unsere [CloudDB Angebote](https://www.ovh.de/cloud/cloud-databases/){.external}
 
