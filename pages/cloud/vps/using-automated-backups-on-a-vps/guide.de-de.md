@@ -104,11 +104,11 @@ Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.
 
 Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrem VPS her.
 
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf den Button `Starten`{.action}und öffnen Sie die `Festplattenverwaltung`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf den Button `Start`{.action}und öffnen Sie die `Datenträgerverwaltung`{.action}.
 
 ![disk management](images/windowsbackup1.png){.thumbnail}
 
-Ihr gemachtes Backup erscheint als Basisfestplatte mit demselben Speicherplatz wie Ihre Hauptfestplatte.
+Ihr gemachtes Backup erscheint als Basis mit demselben Speicherplatz wie Ihre Hauptfestplatte.
 
 ![mounted backup](images/windowsbackup2.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Die Festplatte wird als `Offline` angezeigt, klicken Sie mit der rechten Maustas
 
 ![online backup](images/windowsbackup3.png) {.thumbnail}
 
-Anschließend können Sie Ihr gemoundetes Backup über den Dateiexplorer erstellen.
+Anschließend können Sie Ihr gemoundetes Backup über den `Explorer` erstellen.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
