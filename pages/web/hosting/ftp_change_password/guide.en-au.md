@@ -79,7 +79,7 @@ There are several ways you can log in to your hosting space to access the files:
 
 ## Go further <a name="gofurther"></a>
 
-[Top tips for staying secure online - National Cyber Security Centre](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/){.external}
+[Setting and managing an account password](https://docs.ovh.com/au/en/customer/manage-password/)
 
 For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-au/).
 
