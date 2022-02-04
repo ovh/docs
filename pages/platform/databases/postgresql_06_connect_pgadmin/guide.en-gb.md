@@ -109,11 +109,17 @@ Once logged to pgAdmin, from the main dashboard view select `Add new server`{.ac
 
 ![pgAdmin Dashboard view](images/postgresql_06_connect_pgadmin-2022020413471615.png)
 
-In the **Create - Server** wizard, `General`{.action} tab fill the name field
+In the **Create - Server** dialog, `General`{.action} tab fill the name field
 
 ![Create - Server : General tab](images/postgresql_06_connect_pgadmin-20220204140701739.png)
 
-Then select the `Connection`{.action} tab
+Then select the `Connection`{.action} tab and fill with the collected informations, the following fields :
+
+- Host
+- Port
+- Maintenance database
+- Username
+- Password
 
 ![Create - Server : Connection tab](images/postgresql_06_connect_pgadmin-20220204140939712.png)
 
