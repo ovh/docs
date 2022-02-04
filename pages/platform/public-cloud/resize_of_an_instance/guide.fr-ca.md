@@ -4,7 +4,7 @@ slug: redimensionner-une-instance
 excerpt: "Découvrez comment redimensionner une instance depuis l'interface Horizon"
 legacy_guide_number: 1778
 section: Gestion depuis Horizon
-order: 8
+order: 13
 ---
 
 **Dernière mise à jour le 17/11/2021**
