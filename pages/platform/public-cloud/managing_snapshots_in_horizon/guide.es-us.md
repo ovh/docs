@@ -37,7 +37,7 @@ En el menú `Compute`{.action}, haga clic en el botón `Instances`{.action}. Hag
 
 Se abrirá una ventana en la que deberá introducir la siguiente información:
 
-* Nombre del snapshot (*snapshot Name*): asigne un nombre al snapshot y haga clic en `Create Snapshot`{.action}.
+* Snapshot Name: asigne un nombre al snapshot y haga clic en `Create Snapshot`{.action}.
 
 ![Create snapshot](images/createsnapshot2.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
-title: Zarządzanie zrzutami instancji w interfejsie Horizon
+title: Zarządzanie snapshotami instancji w horizon
 excerpt: Jak zarządzać snapshotami instancji w interfejsie Horizon.
-slug: zarzadzanie_zrzutami_instancji_w_interfejsie_horizon
+slug: zarzadzanie_snapshotami_instancji_w_interfejsie_horizon
 legacy_guide_number: g1770
 section: Zarządzanie w interfejsie Horizon
 ---
@@ -38,7 +38,7 @@ Kliknij menu `Compute`{.action} po lewej stronie, a następnie kliknij `Instance
 
 W oknie, które się wyświetla wprowadź wymagane informacje:
 
-* Nazwa snapshota (*Snapshot Name*): zdefiniuj nazwę snapshota i kliknij `Create Snapshot`{.action}.
+* Snapshot Name: zdefiniuj nazwę snapshota i kliknij `Create Snapshot`{.action}.
 
 ![Tworzenie kopii zapasowej snapshot](images/createsnapshot2.png){.thumbnail}
 
