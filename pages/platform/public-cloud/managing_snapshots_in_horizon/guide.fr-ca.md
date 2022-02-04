@@ -2,7 +2,7 @@
 title: "Gestion des snapshots d’une instance dans horizon"
 slug: gestion-des-snapshots-dune-instance-dans-horizon
 section: Gestion depuis Horizon
-order: 14
+order: 5
 ---
 
 **Dernière mise à jour le 31/01/2022**
