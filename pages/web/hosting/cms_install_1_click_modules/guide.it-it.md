@@ -11,7 +11,7 @@ section: CMS
 
 I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, anche senza possedere competenze tecniche specifiche, grazie all’utilizzo dei CMS più diffusi: WordPress, PrestaShop, Drupal e Joomla!.
 
-**Questa guida ti mostra come utilizzare i moduli in 1 click di OVH per mettere online il tuo sito Web.**
+**Questa guida ti mostra come utilizzare i moduli in 1 click di OVHcloud per mettere online il tuo sito Web.**
 
 ## Prerequisiti
 
@@ -26,7 +26,7 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 Un CMS (Content Management System) consente di progettare un sito Web tramite un'interfaccia intuitiva e di semplice utilizzo. In base al tipo di progetto da realizzare è possibile scegliere tra diverse opzioni, per usufruire di una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...).
 
-Con i moduli in 1 click di OVH sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
+Con i moduli in 1 click di OVHcloud sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
 
 Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
 
@@ -34,7 +34,7 @@ Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai 
 
 ### Accedi alla pagina di gestione dei moduli in 1 click
 
-Accedi allo Spazio Cliente OVH e, nel menu a sinistra, seleziona `Hosting`{.action} e poi il tuo servizio. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
+Accedi allo Spazio Cliente OVHcloud e, nel menu a sinistra, seleziona `Hosting`{.action} e poi il tuo servizio. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
 
 ![Accesso alla sezione Moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
