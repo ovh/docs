@@ -4,23 +4,24 @@ slug: blue-green
 excerpt: Cas pratique
 section: Cas d'usage
 ---
+**Dernière mise à jour le 04/04/2022**
 
 
-## Introduction
-Avec ce guide nous vous proposons d'explorer un cas d'usage particulier de votre service OVH Load Balancer : configurer son service pour gérer facilement une infrastructure production / développement également appelée Blue-Green.
+## Objectif
 
+Ce guide a pour but de vous aider à explorer un cas d'usage particulier de votre service OVHcloud Load Balancer : configurer son service pour gérer facilement une infrastructure production / développement également appelée Blue-Green.
 
-## Déploiement Blue-Green
 Un déploiement `Blue-Green`{.action} permet de s'affranchir du temps d'indisponibilité de votre infrastructure. L'intérêt principal est que ce type de déploiement vous offre la possibilité de préparer vos mises à jour et / ou maintenances dans un environnement isolé de votre environnement de production. Vous pouvez ainsi tester vos modifications avant leur mise en production mais aussi revenir rapidement en arrière en cas de détection d'un dysfonctionnement, tout ceci avec des délais d'indisponibilité quasiment nuls.
 
 
 ### Prérequis
 Pour mettre en oeuvre un déploiement de type `Blue-Green`{.action} vous devez disposer des éléments suivants :
 
-- un service OVH Load Balancer ;
+- un service OVHcloud Load Balancer ;
 - un premier serveur qui porte votre infrastructure de production ;
 - un second serveur qui porte une infrastructure similaire dédiée au développement ;
 
+## En pratique
 
 ### Scénario
 Le scénario que nous vous proposons ici est le suivant : vous disposez d'une infrastructure qui vous permet de mettre en ligne votre site internet.
@@ -48,11 +49,11 @@ Le schéma suivant détail l'architecture générale :
 
 
 ### Infrastructure A
-Cette infrastructure est composée d'une ferme de serveurs qui sera ultérieurement associée à un frontend de votre IPLB. Cette ferme expose au frontend un service de type HTTP, TCP ou UDP. Elle se charge également de la répartition de charge en transmettant aux serveurs le trafic reçu par le frontend. Pour plus de précision sur le rôle des différents éléments du service OVH Load Balancer, vous pouvez vous réferer à cette documentation : [Présentation de l'OVH Load Balancer](../iplb-presentation/).
+Cette infrastructure est composée d'une ferme de serveurs qui sera ultérieurement associée à un frontend de votre IPLB. Cette ferme expose au frontend un service de type HTTP, TCP ou UDP. Elle se charge également de la répartition de charge en transmettant aux serveurs le trafic reçu par le frontend. Pour plus de précision sur le rôle des différents éléments du service OVHcloud Load Balancer, vous pouvez vous réferer à cette documentation : [Présentation de l'OVHcloud Load Balancer](../iplb-presentation/).
 
 Dans le cadre de notre scénario, nous déclarons une ferme de serveurs pour le service HTTP. A noter que vous pouvez créer autant de fermes que de services TCP et / ou UDP nécessaires au bon fonctionnement du service final exposé à vos clients.
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout d'une nouvelle ferme HTTP dédié à l'infrastructure A](images/ferme1.png){.thumbnail}
@@ -60,7 +61,7 @@ Depuis le manager :
 
 ![Renseigner la configuration de la ferme](images/backend1.png){.thumbnail}
 
-Via l'Api :
+Depuis l'Api :
 
 
 > [!api]
@@ -92,7 +93,7 @@ Les appels complémentaires suivants vous permettront respectivement de lister, 
 
 Associer un serveur à votre ferme, il s'agit ici du serveur physique portant votre infrastructure de production. Le service exposé au frontend est fournis par le port 8080 du serveur. A noter que vous pouvez associer à chaque ferme un ou plusieurs serveurs (pour par exemple répartir la charge et / ou offrir une meilleur tolérance aux pannes).
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout d'un nouveau serveur à la ferme HTTP A](images/serveur1.png){.thumbnail}
@@ -100,7 +101,7 @@ Depuis le manager :
 
 ![Renseigner la configuration du serveur HTTP A](images/server1.png){.thumbnail}
 
-Via l'Api :
+Depuis l'Api OVHcloud :
 
 
 > [!api]
@@ -139,7 +140,7 @@ Cette seconde infrastructure est fonctionnellement jumelle de la précédente, e
 
 Déployer la ferme de serveurs pour le service HTTP (et / ou tout autre service TCP ou UDP nécessaire au fonctionnement du service final exposé à vos clients).
 
-Depuis le manager Sunrise :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout d'une nouvelle ferme HTTP dédié à l'infrastructure B](images/ferme2.png){.thumbnail}
@@ -147,7 +148,7 @@ Depuis le manager Sunrise :
 
 ![Création d'une seconde ferme dédiée à l'infrastructure B](images/backend2.png){.thumbnail}
 
-Via l'Api :
+Depuis l'API OVHcloud :
 
 
 > [!api]
@@ -161,7 +162,7 @@ Via l'Api :
 
 Associer un serveur à votre ferme, il s'agit ici du (ou des) serveur(s) physique(s) portant votre infrastructure de développement.
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout d'une nouveau serveur à la ferme HTTP B](images/serveur2.png){.thumbnail}
@@ -169,7 +170,7 @@ Depuis le manager :
 
 ![Renseigner la configuration du serveur HTTP B](images/server2.png){.thumbnail}
 
-Via l'Api :
+Depuis l'API OVHcloud :
 
 
 > [!api]
@@ -208,7 +209,7 @@ Pour cela nous devons déclarer 2 frontends. Le premier permettra d'accéder à 
 ### Frontend Blue
 Ce `frontend`{.action} est dédié aux accès à l'infrastructure de production, les ports exposés à vos clients sont les ports standards d'accès au service. Dans le cas présent nous exposons un service HTTP, nous allons donc utiliser le port 80 (443 si vous souhaitez une terminaison SSL).
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout du frontend dédié à la production, Blue Frontend](images/frontend1.png){.thumbnail}
@@ -216,7 +217,7 @@ Depuis le manager :
 
 ![Renseigner la configuration du frontend Blue](images/fblue.png){.thumbnail}
 
-Via l'Api :
+Depuis l'API OVHcloud :
 
 
 > [!api]
@@ -235,7 +236,7 @@ Via l'Api :
 ### Frontend Green
 Ce `frontend`{.action} est dédié aux accès à l'infrastructure de développement, les ports exposés à vos clients seront des ports non-standards que vous pouvez choisir arbitrairement. Dans le cas présent nous allons exposer le service HTTP de développement sur le port 8888.
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Ajout du frontend dédié au développement, Green Frontend](images/frontend2.png){.thumbnail}
@@ -243,7 +244,7 @@ Depuis le manager :
 
 ![Renseigner la configuration du frontend Green](images/fgreen.png){.thumbnail}
 
-Via l'Api :
+Depuis l'API OVHcloud :
 
 
 > [!api]
@@ -262,14 +263,14 @@ Via l'Api :
 ## Gérer les déploiements
 
 ### Déploiement initial
-Après avoir finalisé la configuration des différents composants de votre service OVH Load Balancer, il ne vous reste plus qu'à appliquer vos changements.
+Après avoir finalisé la configuration des différents composants de votre service OVHcloud Load Balancer, il ne vous reste plus qu'à appliquer vos changements.
 
-Depuis le manager :
+Depuis l'espace client OVHcloud :
 
 
 ![Appliquer vos changements sur la zone](images/deploy.png){.thumbnail}
 
-Via l'Api :
+Depuis l'Api OVHcloud :
 
 
 > [!api]
@@ -304,7 +305,7 @@ Résultat sur le manager Sunrise après mise à jour des frontends et applicatio
 
 ![Résultat après la mise à jour des frontends](images/switch.png){.thumbnail}
 
-Via l'Api : mise à jour des frontends et application des modifications
+Depuis l'Api OVHcloud : mise à jour des frontends et application des modifications
 
 
 > [!api]
@@ -349,3 +350,8 @@ Les développeurs disposent d'un accès à l'infrastructure de développement su
 L'infrastructure présentée ici se limite à l'exposition d'un seul et unique port, elle peut bien entendue être développée en ajoutant d'autres ports. Vous pouvez par exemple vouloir également exposer votre site sur le port HTTPS standard (443). Ceci peut se faire en définissant de nouvelles fermes dédiées à chaque nouveau port que vous souhaitez exposer et en les associant à leurs frontends correspondant (un pour le port standard exposé en production, le second pour le port arbitraire dédié aux développements).
 
 Une autre possibilité pour consolider encore un peu plus votre infrastructure est de multiplier les serveurs attachés à votre (vos) ferme(s). Ceci vous permettra d'ajouter à la simplicité de réalisation de vos déploiements une redondance de vos services (garantissant ainsi leur disponibilité) ainsi qu'une capacité de répartition de charge.
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
