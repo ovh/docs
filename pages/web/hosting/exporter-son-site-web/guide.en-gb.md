@@ -102,6 +102,6 @@ When you have selected the log types and month you want to view, the logs are ar
 
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
 
-[Private SQL](../getting-started-with-private-sql/)
+[Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

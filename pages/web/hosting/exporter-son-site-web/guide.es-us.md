@@ -62,9 +62,6 @@ Para consultar la carpeta en la que está almacenado el sitio web, abra la pesta
 Para obtener una copia de seguridad de la base de datos, consulte nuestra guía:
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external}.
 
-Si utiliza una base de datos **SQL Privado** para su sitio web, consulte la sección relativa al backup de nuestra guía:
-["Todo sobre el SQL Privado"](https://docs.ovh.com/us/es/hosting/guardar-exportar-una-base-de-datos/){.external}.
-
 ### 3. obtener los logs de su alojamiento de OVHcloud
 
 Si desea conservar el historial de los logs de su sitio web, puede acceder a ellos desde el alojamiento.
@@ -103,7 +100,5 @@ Al seleccionar el tipo de logs durante el mes que le interesa, estos se guardan 
 [Utilizar el acceso SSH de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_ssh_en_alojamiento_compartido/){.external}. 
 
 [Exportar una copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/us/es/hosting/web_hosting_exportacion_de_una_base_de_datos/){.external}.
-
-[Todo sobre el SQL Privado](https://docs.ovh.com/us/es/hosting/web_hosting_ssh_en_alojamiento_compartido/){.external}.
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

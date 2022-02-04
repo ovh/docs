@@ -216,8 +216,8 @@ Przykład:
 Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używaj też klauzuli „GROUP BY”, o ile nie jest naprawdę niezbędna.
 
 
-#### Prywatna baza SQL
-Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — Private SQL. Będziesz mieć do dyspozycji więcej zasobów.
+#### CloudDB
+Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, albo jeśli liczba zapytań do bazy danych jest bardzo duża, możesz skorzystać z oferty prywatnej bazy danych SQL — CloudDB. Będziesz mieć do dyspozycji więcej zasobów.
 [Sprawdź ofertę CloudDB na naszej stronie](https://www.ovh.pl/cloud/cloud-databases/){.external}.
 
 ## Sprawdź również

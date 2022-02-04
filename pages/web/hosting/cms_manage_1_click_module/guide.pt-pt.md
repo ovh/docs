@@ -90,7 +90,7 @@ A seguir, clique no botão `...`{.action} à direita da linha relativa ao seu m�
 
 Para eliminar o módulo 1 clique, deve começar por identificar a sua base de dados de forma **segura**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Web Cloud`{.action}, `Alojamentos`{.action}, no alojamento em causa e, a seguir, no separador `Bases de dados`{.action}.
 
-Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/), pode considerar que se trata do seu site.
+Se dispõe de uma única base de dados nesta parte da sua Área de Cliente e não dispõe de soluções [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), pode considerar que se trata do seu site.
 
 Caso contrário, clique no separador `Multisite`{.action}. Tome nota do nome da `Pasta raiz`: trata-se do diretório no qual se encontram os ficheiros que constituem o seu módulo 1 clique no servidor FTP.
 

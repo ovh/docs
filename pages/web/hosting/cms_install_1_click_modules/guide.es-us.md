@@ -140,6 +140,4 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 [Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/){.external}.
-
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

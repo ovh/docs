@@ -82,7 +82,7 @@ Choisissez la quantité de RAM souhaitée puis cliquez sur le bouton `Suivant`{.
 
 > [!primary]
 >
-> Un report au prorata sera effectué s'il vous reste quelques mois avantl'expiration. Ce prorata sera basé sur la date d'expiration du serveur SQL Privé et non sur celle du bon de commande.
+> Un report au prorata sera effectué s'il vous reste quelques mois avant l'expiration. Ce prorata sera basé sur la date d'expiration du serveur CloudDB et non sur celle du bon de commande.
 > 
 
 Après validation des contrats, vous serez redirigé vers le bon de commande afin de régler cette modification. Celle-ci sera effective sous quelques heures.

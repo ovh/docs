@@ -20,7 +20,7 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 There is a guide showing you [how to get your FTP details](../modify-ftp-user-password/).
 
 - You also need to have your SQL database ID and password so you can log on to the database.
-There is a guide showing you [how to get your SQL credentials](../getting-started-with-private-sql/#create-a-database)
+There is a guide showing you [how to get your SQL credentials](../creating-database/)
 
 
 ![](images/img_3125.jpg){.thumbnail}

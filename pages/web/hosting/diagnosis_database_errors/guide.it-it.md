@@ -44,7 +44,7 @@ Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-
 >
 > - Per recuperare la `Datacenter` del tuo hosting e la `Filer` (server di file), seleziona `Hosting`{.action} nel menu di sinistra e poi l'hosting interessato. Queste informazioni sono disponibili nella scheda `Informazioni generali`{.action}.
 > - Per recuperare il **cluster** di server su cui è ospitato il tuo hosting, clicca su `FTP-SSH`{.action}. Questa informazione verrà mostrata nella `Server FTP`
-> - Per recuperare il nome del tuo server **Private SQL** o **Cloud Databases**, clicca su `Database`{.action} nel menu a sinistra e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
+> - Per recuperare il nome del tuo server **Cloud Databases**, clicca su `Database`{.action} nel menu a sinistra e seleziona l'offerta corrispondente. Questa informazione è disponibile nella scheda `Host`{.action}.
 >
 
 #### Verifica le credenziali di connessione al tuo database <a name="config_file"></a>
