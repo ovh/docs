@@ -48,7 +48,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) lub z prywatnym[ ](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)serwerem SQL lub [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+- Korzystanie z [bazy danych powiązanej z hostingiem](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) lub z prywatnym[ ](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)serwerem SQL lub [CloudDB](https://www.ovh.pl/cloud/cloud-databases/).
 - Posiadanie danych dostępowych FTP umożliwiających zalogowanie się do [przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu
 
 ## W praktyce
@@ -99,7 +99,7 @@ Następnie wróć do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=
 
 Jeśli w tej części Twojego Panelu klienta znalazłeś nazwę bazy znajdującej się w pliku konfiguracyjnym, przejdź [do etapu trzeciego](#step3).
 
-W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [prywatnego](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) serwera SQL lub [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+W przeciwnym razie baza danych Twojej strony WWW jest powiązana z ofertą [prywatnego](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) serwera SQL lub [CloudDB](https://www.ovh.pl/cloud/cloud-databases/).
 
 Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *nazwę serwera* oraz *nazwę użytkownika* bazy danych:
 
@@ -110,7 +110,7 @@ Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *
 
 Następnie, w **lewej** części ekranu, kliknij `Bazy danych`{.action}. 
 
-W zakładce `Informacje ogólne`{.action} podaj w ofercie [Private](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) SQL lub [CloudDB](https://www.ovh.com/fr/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `nazwę hosta`{.action}.
+W zakładce `Informacje ogólne`{.action} podaj w ofercie [Private](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) SQL lub [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `nazwę hosta`{.action}.
 
 W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{.action}, aby również znaleźć `Nazwę użytkownika`{.action} Twojej bazy danych.
 

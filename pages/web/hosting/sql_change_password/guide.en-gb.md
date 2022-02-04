@@ -44,7 +44,7 @@ There are four steps to changing your website’s database password:
 
 - an [OVHcloud web hosting plan](https://www.ovhcloud.com/fr/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Use a [database associated with your shared hosting](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) plan or a Private[ SQL ](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)server or [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+- Use a [database associated with your shared hosting](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) plan or a Private[ SQL ](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)server or [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/).
 - You must have FTP login details to log in to your hosting plan’s storage [space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
 ## Instructions
@@ -95,7 +95,7 @@ Then go back to the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=go
 
 If you have found the database name listed in the configuration file in this section of the OVHcloud Control Panel, go to [step 3](#step3).
 
-Otherwise, your website’s database is linked to a Private [SQL or ](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/)CloudDB[ ](https://www.ovh.com/fr/cloud-databases/) solution.
+Otherwise, your website’s database is linked to a Private [SQL or ](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/)CloudDB[ ](https://www.ovh.co.uk/cloud/cloud-databases/) solution.
 
 You will need to go back to your website’s configuration file to note the server *name* and database user *name*:
 
@@ -106,7 +106,7 @@ You will need to go back to your website’s configuration file to note the serv
 
 Next, click **Databases on the **left`-hand side of your screen`{.action}. 
 
-In the `General`{.action} information tab, identify the database server name you previously found in your Private[ ](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/)SQL or [CloudDB](https://www.ovh.com/fr/cloud-databases/) solutions, listed under `Host`{.action} name.
+In the `General`{.action} information tab, identify the database server name you previously found in your Private[ ](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/)SQL or [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) solutions, listed under `Host`{.action} name.
 
 In this section of the OVHcloud Control Panel, go to the `User rights`{.action} tab, and find your database’s `username`{.action}.
 

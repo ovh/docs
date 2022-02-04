@@ -48,7 +48,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 - Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [server SQL privato](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [server SQL privato](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
 - Disporre delle credenziali FTP per accedere allo [spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) dell'hosting
 
 ## Procedura
@@ -99,7 +99,7 @@ Dopodiché torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo Step [3](#step3).
 
-In caso contrario, il database del tuo sito è associato a un'offerta [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+In caso contrario, il database del tuo sito è associato a un'offerta [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
 
 Per registrare il *nome del server* e il *nome utente* del database, è necessario ritornare al file di configurazione del tuo sito:
 
@@ -110,7 +110,7 @@ Per registrare il *nome del server* e il *nome utente* del database, è necessar
 
 Clicca sulla parte **sinistra** dello schermo e poi su `Database`{.action}. 
 
-Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
+Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
 Sempre in questa sezione del tuo Spazio Cliente OVH, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 

@@ -16,7 +16,7 @@ order: 2
 
 La mayoría de los sitios web utilizan una **base de datos** para almacenar sus artículos, comentarios o direcciones de correo electrónico de sus usuarios.
 
-La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en [el espacio de almacenamiento de archivos](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
+La conexión a esta base de datos es posible gracias a un **archivo de configuración** que se encuentra en el [espacio de almacenamiento de archivos](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento. que contiene la información que permite al sitio web "identificarse" con el **servidor de la base de datos**.
 
 Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
@@ -26,14 +26,14 @@ Por lo tanto, siempre debe cambiar la contraseña de una base de datos:
 
 Mientras no se realice el cambio **en estos dos lugares**, el sitio web mostrará un "[error al conectar a la base de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/#error-al-conectar-a-la-base-de-datos)".
 
-Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/fr/directory/).
+Si desea cambiar la contraseña de la base de datos, deberá realizar todas **las operaciones** que se indican en esta guía. En caso de duda sobre las operaciones a realizar, contacte con su webmaster o contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 
 La modificación de la contraseña de la base de datos del sitio web se realiza en cuatro pasos:
 
-- [1\. identificar el archivo de configuración del sitio web](#step1);
-- [2\. identificar la base de datos del sitio web](#step2);
-- [3\. cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
-- [4\. cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
+- [1. identificar el archivo de configuración del sitio web](#step1);
+- [2. identificar la base de datos del sitio web](#step2);
+- [3. cambiar la contraseña de la base de datos del sitio web en el archivo de configuración](#step3);
+- [4. cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos](#step4).
 
 **Esta guía explica cómo cambiar la contraseña de una base de datos de forma segura.**
 
@@ -48,12 +48,12 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [servidor SQL privado](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+- Utilizar una [base de datos asociada a su plan de hosting](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [servidor SQL privado](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
 - Disponer de las claves FTP para conectarse al [espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) del alojamiento.
 
 ## Procedimiento
 
-### 1\. identificar el archivo de configuración del sitio web <a name="step1"></a>
+### 1. identificar el archivo de configuración del sitio web <a name="step1"></a>
 
 En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y, en el menú situado a la izquierda de su pantalla, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
@@ -99,7 +99,7 @@ Vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [paso 3](#step3).
 
-En caso contrario, la base de datos del sitio web está asociada a un servicio [SQL privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/).
+En caso contrario, la base de datos del sitio web está asociada a un servicio [SQL privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
 
 En ese caso, deberá volver al archivo de configuración del sitio web para registrar el *nombre del servidor* y el *nombre de usuario* de la base de datos:
 
@@ -110,7 +110,7 @@ En ese caso, deberá volver al archivo de configuración del sitio web para regi
 
 A continuación, haga clic en la columna **izquierda** de su pantalla en `Bases de datos`{.action}. 
 
-En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [SQL Privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.com/fr/cloud-databases/), con el nombre de host` `{.action}.
+En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [SQL Privado](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.es/cloud/cloud-databases/), con el nombre de host` `{.action}.
 
 En el área de cliente de OVH, abra la pestaña `Usuario y permisos`{.action} para identificar también el `nombre de usuario`{.action} de la base de datos.
 
