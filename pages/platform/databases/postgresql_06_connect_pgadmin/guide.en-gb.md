@@ -103,7 +103,7 @@ Select the `Databases`{.action} tab to get the database name.
 ![Databases tab](images/mysql_04_connect_php-20220124154604558.png){.thumbnail}
 
 
-#### Connect to a PostgreSQL database instance
+#### Configuration
 
 Once logged to pgAdmin, from the main dashboard view select `Add new server`{.action} link
 
