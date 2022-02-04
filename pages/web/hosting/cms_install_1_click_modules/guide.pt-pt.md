@@ -82,8 +82,8 @@ Agora tem que preencher a informação relativa à base de dados. Existem vária
 
 - a base de dados já está criada no seu alojamento: selecione uma das bases de dados indicadas na lista e introduza as informações solicitadas;
 - a base de dados não está criada no seu alojamento: siga as instruções para a criar uma base de dados. Introduza a informação solicitada atrás;
-- a base de dados foi criada na instância CloudDB: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
-- a base de dados foi criada noutro alojamento Web OVH: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
+- a base de dados foi criada na instância CloudDB: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
+- a base de dados foi criada noutro alojamento Web OVH: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}.
 

@@ -86,7 +86,7 @@ Vous devez à présent renseigner les informations de connexion à votre base de
 
 - la base de données est déjà créée sur votre hébergement : sélectionnez-la dans la liste et complétez les informations demandées ;
 - la base de données n'est pas encore créée sur votre hébergement : suivez les indications afin de créer cette dernière, puis effectuez de nouveau la manipulation ;
-- la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
+- la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
 
