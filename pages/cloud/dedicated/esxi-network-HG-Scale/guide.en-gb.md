@@ -21,7 +21,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ## Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.. The block must be pointed to the vRack.
+- a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
 - your chosen private IP address range
 - a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
 - a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
