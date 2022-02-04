@@ -84,7 +84,7 @@ Existen diversas formas de conectar los archivos al espacio de alojamiento:
 
 ## Más información <a name="gofurther"></a>
 
-[Oficina de Seguridad del Internauta (OSI)](https://www.osi.es){.external}
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, consulte nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es/support-levels/).
 

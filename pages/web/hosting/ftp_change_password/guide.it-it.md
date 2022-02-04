@@ -84,7 +84,7 @@ La connessione allo spazio di hosting dei tuoi file può essere effettuata in di
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Raccomandazioni della Polizia Postale per scegliere password efficaci](https://www.commissariatodips.it/notizie/articolo/scegli-password-efficaci/index.html){.external}
+[Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

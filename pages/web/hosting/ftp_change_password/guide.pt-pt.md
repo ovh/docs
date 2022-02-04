@@ -84,7 +84,7 @@ A ligação ao espaço de alojamento dos seus ficheiros pode ser realizada de v�
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[O gestor de palavras-passe Keepass](https://keepass.info/){.external}
+[Definir e gerir a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
