@@ -3,7 +3,7 @@ title: Gérer vos instances Public Cloud via Horizon
 slug: gerer-instances-public-cloud
 excerpt: "Découvrez comment gérer vos instances à travers l'interface Horizon"
 section: Gestion depuis Horizon
-order: 4
+order: 5
 ---
 
 **Dernière mise à jour le 25 Janvier 2022**

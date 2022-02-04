@@ -3,7 +3,7 @@ title: Présentation de Horizon
 slug: presentation-dhorizon
 legacy_guide_number: 1776
 section: Gestion depuis Horizon
-order: 1
+order: 2
 ---
 
 **Dernière mise à jour le 05/11/2021**

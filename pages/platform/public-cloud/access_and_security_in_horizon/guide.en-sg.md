@@ -4,7 +4,7 @@ excerpt: Find out how to manage secure access to your instances
 slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: Horizon
-order: 3
+order: 7
 ---
 
 **Last updated 26th May 2021**

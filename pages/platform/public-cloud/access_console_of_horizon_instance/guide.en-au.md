@@ -3,7 +3,7 @@ title: Access the console for an instance in Horizon
 excerpt: This guide will assist accessing the console via the Horizon interface.
 slug: access_console_horizon
 section: Horizon
-order: 3
+order: 11
 ---
 
 
