@@ -1,6 +1,6 @@
 ---
 title: 'Cloud Guthaben aufladen'
-excerpt: 'Erfahren Sie hier, wie Sie Guthaben für Ihr Public Cloud-Projekt aufladen können'
+excerpt: 'Erfahren Sie hier, wie Sie Guthaben für Ihr Public Cloud Projekt aufladen können'
 slug: cloud_guthaben_aufladen
 legacy_guide_number: g1907
 section: 'Projektverwaltung'
@@ -22,7 +22,7 @@ Das Cloud-Guthaben kann weder übertragen noch erstattet werden. Dieses Guthaben
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Kunden-Account.
+- Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
