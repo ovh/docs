@@ -1,6 +1,6 @@
 ---
-title: Verwaltung der Speicherauszüge (Snapshots) einer Instanz in Horizon
-excerpt: Verwaltung der Speicherauszüge (Snapshots) einer Instanz in Horizon
+title: Verwaltung von Snapshots einer Instanz in Horizon
+excerpt: Verwaltung von Snapshots einer Instanz in Horizon
 slug: verwaltung_der_speicherauszuge_snapshots_einer_instanz_in_horizon
 section: 'Horizon'
 legacy_guide_number: g1770
@@ -14,9 +14,9 @@ legacy_guide_number: g1770
 
 ## Ziel
 
-Während des Betriebs können Sie jederzeit eine Sicherung Ihrer Daten, der Konfigurationen oder auch vollständiger Instanzen durchzuführen. Zu diesem Zweck können Sie Speicherauszüge (Snapshots) Ihrer Instanzen erstellen, die dann verwendet werden können, um eine vorherige Konfiguration Ihrer Instanz wiederherzustellen oder eine exakte Kopie einer Instanz zu erstellen.
+Während des Betriebs können Sie jederzeit eine Sicherung Ihrer Daten, der Konfigurationen oder auch vollständiger Instanzen durchzuführen. Zu diesem Zweck können Sie Snapshots Ihrer Instanzen erstellen. Somit können Sie eine vorherige Konfiguration Ihrer Instanz wiederherstellen oder eine exakte Kopie einer Instanz erzeugen.
 
-**In dieser Anleitung erfahren Sie, wie Sie diese Snapshots über das OpenStack-Horizon-Interface verwalten.**
+**In dieser Anleitung erfahren Sie, wie Sie Snapshots über das OpenStack-Horizon-Interface verwalten.**
 
 
 ## Voraussetzungen
@@ -36,13 +36,15 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 ![Snapshot Create](images/createsnapshot.png){.thumbnail}
 
-* Name des Snapshots (*Snapshot Name*): Legen Sie einen Namen für den Snapshot fest und klicken Sie auf `Create Snapshot`{.action}.
-
 Geben Sie im angezeigten Fenster die erforderlichen Informationen ein:
 
-Der Snapshot wird dann im Bereich `Images`{.action}. Es wird daher empfohlen, jedem Snapshot einen expliziten Namen zuzuweisen. 
+Snapshot Name: Geben Sie einen Namen für den Snapshot ein und klicken Sie auf `Create Snapshot`{.action}.
 
-### Löschung eines Snapshots
+![Create snapshot](images/createsnapshot2.png){.thumbnail}
+
+Der Snapshot wird dann im Bereich `Images`{.action} angezeigt. Es wird daher empfohlen, jedem Snapshot einen expliziten Namen zuzuweisen. 
+
+### Snapshot löschen
 
 Klicken Sie im Horizon-Interface links auf `Compute`{.action} und dann auf `Images`{.action}.
 
@@ -53,4 +55,3 @@ Klicken Sie anschließend auf den Dropdown-Pfeil neben dem zu löschenden Snapsh
 ## Weiterführende Informationen
  
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
-
