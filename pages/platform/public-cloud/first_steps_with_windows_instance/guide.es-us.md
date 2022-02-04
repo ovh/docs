@@ -4,6 +4,7 @@ excerpt: 'Cómo finalizar la instalación de una instancia Windows e iniciar la 
 slug: empezar-con-una-instancia-windows
 legacy_guide_number: 1995
 section: 'Primeros pasos'
+hidden: true
 ---
 
 **Última actualización: 25/11/2019**
