@@ -28,7 +28,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `Serveurs privés virtuels`{.action}.
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 
@@ -103,7 +103,6 @@ $ mount /dev/sdb1 /mnt/restore
 
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
 
-
 #### Sous Windows
 
 Établissez une connexion RDP (Remote Desktop) avec votre VPS.
@@ -120,7 +119,7 @@ Le disque apparaîtra comme `hors ligne`, faites un clic-droit sur le disque et 
 
 ![online backup](images/windowsbackup3.png){.thumbnail}
 
-Une fois fait, votre sauvegarde montée sera accessible dans `Explorateur de fichiers`.
+Par la suite, votre sauvegarde montée sera accessible dans `Explorateur de fichiers`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
