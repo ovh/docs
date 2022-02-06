@@ -1,23 +1,25 @@
 ---
-title: Travailler avec le proxyProtocol
+title: Configuration d'un service OVHcloud Load Balancer  avec le proxyProtocol
 slug: proxyprotocol
 universe: cloud
 excerpt: Intégrez vos services TCP derriere un Load Balancer avec le proxyProtocol
 section: Configuration
 ---
+**Dernière mise à jour le à 06/02/2022**
 
+## Objectif
 
-## Introduction
-Le service OVH Load Balancer agit comme un mandataire ou "Proxy". Comme un mandataire humain, il agit comme un intermédiaire, de telle sorte que le client s'adresse au mandataire et le mandataire au fournisseur de service, au nom du client. Dans cette configuration, seul le mandataire connaît à la fois le véritable client (l'utilisateur de votre service) et le véritable fournisseur de service (l'un de vos serveurs).
+Le service OVHcloud Load Balancer agit comme un mandataire ou "Proxy". Comme un mandataire humain, il agit comme un intermédiaire, de telle sorte que le client s'adresse au mandataire et le mandataire au fournisseur de service, au nom du client. Dans cette configuration, seul le mandataire connaît à la fois le véritable client (l'utilisateur de votre service) et le véritable fournisseur de service (l'un de vos serveurs).
 
-Pour le visiteur, cela ne pose aucun soucis. Il n'a pas besoin de connaître avec précision le serveur qui répond à sa requête. C'est un détail d'implémentation. En revanche, pour des raisons de statistique et de sécurité, il est parfois indispensable que le serveur final ait connaissance de la véritable adresse du client, or, par défaut, il ne voit que le mandataire (en l’occurrence, votre service OVH Load Balancer).
+Pour le visiteur, cela ne pose aucun soucis. Il n'a pas besoin de connaître avec précision le serveur qui répond à sa requête. C'est un détail d'implémentation. En revanche, pour des raisons de statistique et de sécurité, il est parfois indispensable que le serveur final ait connaissance de la véritable adresse du client, or, par défaut, il ne voit que le mandataire (en l’occurrence, votre service OVHcloud Load Balancer).
 
 Si vous utilisez un `Frontend`{.action} HTTP, nous vous recommandons le guide [Travailler avec les en-têtes HTTP](../http-headers/) qui décrit la manière standard d'utiliser les En-Têtes HTTP pour retrouver l'adresse IP, le port ainsi que le protocole source.
 
 Si vous utilisez un `Frontend`{.action} TCP, alors ce guide est pour vous.
 
 
-## Obligations légales
+- Obligations légales
+
 Vous pouvez être tenus de conserver des logs et certaines données relatives au trafic en vertu des lois et règlementations vous étant applicables. Il vous incombe de respecter ces obligations.
 
 __A titre d’exemple :__
@@ -27,31 +29,33 @@ __A titre d’exemple :__
 
 
 ## Prérequis
-Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVH Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide [Configurer un service OVH Load Balancer HTTP/HTTPS](../configure-iplb/). Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
+
+Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](../configure-iplb/). Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
 
 Vous devez disposez de :
 
-- Un service OVH Load Balancer avec un `Frontend`{.action} et une `Ferme`{.action} TCP fonctionnels
-- Nginx ou Apache avec mod_proxyprotocol sur un serveur OVH
+- Un service OVHcloud Load Balancer avec un `Frontend`{.action} et une `Ferme`{.action} TCP fonctionnels
+- Nginx ou Apache avec mod_proxyprotocol sur un serveur OVHcloud
 
 
-## Avertissement
-Les champs ProxyProtocol pouvant être forgés par un client malicieux, ils ne doivent être pris en compte que s’ils viennent d’une source de confiance.
+> [!warning]
+>Les champs ProxyProtocol pouvant être forgés par un client malicieux, ils ne doivent être pris en compte que s’ils viennent d’une source de confiance.
+>
+>Il est donc indispensable de limiter leurs utilisations à des IP de confiance, en l’occurrence, les IPs de sortie de votre service OVHcloud Load Balancer. Les principaux serveurs tels que Nginx et Apache disposent de modules capable de gérer cet aspect de sécurité et de confiance.
 
-Il est donc indispensable de limiter leurs utilisations à des IP de confiance, en l’occurrence, les IPs de sortie de votre service OVH Load Balancer. Les principaux serveurs tels que Nginx et Apache disposent de modules capable de gérer cet aspect de sécurité et de confiance.
+Vous pouvez obtenir la liste de vos IPs de sortie Depuis l'espace client OVHcloud l'API.
 
-Vous pouvez obtenir la liste de vos IPs de sortie via le Manager et via l'API.
+## En pratique
 
-
-### Via le Manager
-La liste des IPv4 de sortie potentiellement utilisées par votre service OVH Load Balancer se trouve sur la page d'accueil de votre service OVH Load Balancer dans le manager sous le nom "IPv4 de sortie".
-
-
-![Adresse IPv4 de sortie de votre service OVH Load Balancer](images/iplb_service.png){.thumbnail}
+### Depuis l'espace client OVHcloud
+La liste des IPv4 de sortie potentiellement utilisées par votre service OVHcloud Load Balancer se trouve sur la page d'accueil de votre service OVHcloud Load Balancer dans le manager sous le nom "IPv4 de sortie".
 
 
-### Via l'API
-- Liste des IPs utilisées par votre service OVH Load Balancer
+![Adresse IPv4 de sortie de votre service OVHcloud Load Balancer](images/iplb_service.png){.thumbnail}
+
+
+### Depuis l'API OVHcloud
+- Liste des IPs utilisées par votre service OVHcloud Load Balancer
 
 
 > [!api]
@@ -66,7 +70,7 @@ Le ProxyProtocol a été développé par l'équipe du Load Balancer [HAPRoxy](ht
 - l'adresse IPv4 ou IPv6 source ;
 - le port source.
 
-Quand le ProxyProtocol est activé pour un de vos serveurs, le service OVH Load Balancer ajoute un préfixe avec le ProxyProtocol avant d'envoyer la suite de la requête. Cette modification étant intrusive, il est indispensable de bien s'assurer que le serveur est bien compatible avec ce protocole, et, le cas échéant, quelles sont les version gérées.
+Quand le ProxyProtocol est activé pour un de vos serveurs, le service OVHcloud Load Balancer ajoute un préfixe avec le ProxyProtocol avant d'envoyer la suite de la requête. Cette modification étant intrusive, il est indispensable de bien s'assurer que le serveur est bien compatible avec ce protocole, et, le cas échéant, quelles sont les version gérées.
 
 En effet, ce protocole existe en 2 versions: - La version 1, au format texte - La version 2, au format binaire optimisé et extensible
 
@@ -78,7 +82,7 @@ Pour en savoir plus sur le ProxyProtocol, nous vous invitons à consulter la [sp
 ## Activation du ProxyProtocol pour un de vos serveurs
 Le ProxyProtocol doit être activé pour chaque serveur enregistré dans dans une Ferme de serveurs. Cette fonctionnalité étant intrusive et ne pouvant être activée de manière transparente, cela permet de la tester sur une machine en particulier puis de déployer progressivement la configuration sur une ferme active.
 
-Votre service OVH Load Balancer gère 4 modes pour le ProxyProtocol:
+Votre service OVHcloud Load Balancer gère 4 modes pour le ProxyProtocol:
 
 |Mode|Description|
 |---|---|
@@ -90,7 +94,8 @@ Votre service OVH Load Balancer gère 4 modes pour le ProxyProtocol:
 Lorsque le ProxyProtocol est activé pour l'un de vos serveurs, les sondes insèrent automatiquement cet entête *sauf* si un port spécifique a été spécifié pour les sondes. Dans ce cas, la sonde se connectera de manière classique sur le port de la sonde.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
+
 Dans la section `Fermes`{.action}, sélectionnez la Ferme contenant le serveur sur lequel activer le ProxyProtocol puis cliquez le bouton d'édition du Serveur concerné.
 
 Le ProxyProtocol se configure via l'option `Version du ProxyProtocol`{.action}. Vous y retrouverez les 4 modes décrits ci-dessus.
@@ -101,7 +106,7 @@ Le ProxyProtocol se configure via l'option `Version du ProxyProtocol`{.action}. 
 Une fois le mode souhaité sélectionné, cliquez sur `Mettre à jour`{.action} puis sur `Déployer la zone: VOTRE ZONE`{.action} pour appliquer vos changements dans la zone concernée.
 
 
-### Via l'API
+### Depuis l'API OVHcloud
 L'activation du ProxyProtocol via l'API se fait de la même manière que via le Manager. Le champs d'API correspondant dans le Serveur est proxyProtocolVersion.
 
 - Modifier un `Serveur`{.action} existant :
@@ -123,7 +128,7 @@ L'activation du ProxyProtocol via l'API se fait de la même manière que via le 
 ## Configuration du ProxyProtocol coté serveur
 
 ### Nginx
-Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les principales informations, à savoir l'adresse IP et le port source du client tels que vu par votre service OVH Load Balancer. Dans Nginx, ces informations sont exposées à travers la variable proxy_protocol_addr. De même que pour son homologue HTTP X-Forwarded-For Nginx se servir de cette variable pour prendre en compte la bonne adresse source dans les logs avec le module ngx_http_realip.
+Nginx gère la version 1 du ProxyProtocol. Il est capable d'en extraire les principales informations, à savoir l'adresse IP et le port source du client tels que vu par votre service OVHcloud Load Balancer. Dans Nginx, ces informations sont exposées à travers la variable proxy_protocol_addr. De même que pour son homologue HTTP X-Forwarded-For Nginx se servir de cette variable pour prendre en compte la bonne adresse source dans les logs avec le module ngx_http_realip.
 
 Pour utiliser le ProxyProtocol avec Nginx, vous pouvez configurer le section server de votre configuration avec :
 
@@ -133,7 +138,7 @@ Pour utiliser le ProxyProtocol avec Nginx, vous pouvez configurer le section ser
 2.     # Enable the Proxy protocol on port 80
 3.     listen 80 proxy_protocol;
 4.
-5.     # Trust the proxy protocol provided informations from your OVH Load Balancer service
+5.     # Trust the proxy protocol provided informations from your OVHcloud Load Balancer service
 6.     # See https://www.ovh.com/manager/cloud/index.html#/network/iplb/ for an up to date list
 7.     set_real_ip_from 10.108.0.0/14;
 8.     real_ip_header proxy_protocol;
@@ -158,7 +163,7 @@ service nginx reload
 
 > [!info]
 >
-> Cet exemple utilise le protocole HTTP pour plus de simplicité. Si vous utilisez du HTTP, nous vous recommandons vivement d'utiliser les En-Têtes HTTP au lieu du ProxyProtocol sauf si votre service OVH Load Balancer est configuré en TCP. Cela peut se produire dans le cas d'une terminaison SSL pour du HTTP/2 par exemple.
+> Cet exemple utilise le protocole HTTP pour plus de simplicité. Si vous utilisez du HTTP, nous vous recommandons vivement d'utiliser les En-Têtes HTTP au lieu du ProxyProtocol sauf si votre service OVHcloud Load Balancer est configuré en TCP. Cela peut se produire dans le cas d'une terminaison SSL pour du HTTP/2 par exemple.
 > 
 
 Pour plus d'informations sur la configuration du ProxyProtocol dans Nginx, nous vous invitons à consulter la documentation officielle du projet: [https://www.nginx.com/resources/admin-guide/proxy-protocol/](https://www.nginx.com/resources/admin-guide/proxy-protocol/){.external}
@@ -171,11 +176,11 @@ mod-proxy-protocol gère les version 1 et 2 du ProxyProtocol. En revanche, il ne
 
 mod_remoteip gère également les version 1 et 2 du ProxyProtocol. Il ajoute également la possibilité de spécifier une liste d'adresses pour lesquelles le ProxyProtocol ne doit pas être activé. Ce qui reste limitant d'une point de vue de la configuration. Ce module est uniquement disponible dans la version expérimentale Apache 2.5 bien que la documentation mentionne une disponibilité à partir de Apache 2.4.26.
 
-Quel que soit l'approche choisie, nous vous recommandons vivement de bien restreindre les connexions à vos serveurs aux adresses de sortie de votre service OVH Load Balancer. Cela peut être aisément configuré avec iptables:
+Quel que soit l'approche choisie, nous vous recommandons vivement de bien restreindre les connexions à vos serveurs aux adresses de sortie de votre service OVHcloud Load Balancer. Cela peut être aisément configuré avec iptables:
 
 
 ```bash
-# Trust connections from your OVH Load Balancer service, ONLY
+# Trust connections from your OVHcloud Load Balancer service, ONLY
 iptables -A INPUT -s 10.108.0.0/14 -p tcp --dport 80 -j ACCEPT
 iptables -A INPUT                  -p tcp --dport 80 -j DROP
 ```
