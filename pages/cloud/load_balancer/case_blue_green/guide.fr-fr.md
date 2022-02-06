@@ -114,7 +114,7 @@ Depuis l'Api OVHcloud :
 |---|---|---|---|
 |serviceName|Requis|L'identifiant de votre service Load Balancer|loadbalancer-abcdef0123456789|
 |farmId|Requis|L'identifiant de votre ferme de serveurs|77212|
-|address|Requis|L'addresse IPv4 de votre serveur|10.10.1.100|
+|address|Requis|L'addresse IPv4 de votre serveur|139.XX.XX.XX|
 |displayName||Le nom du serveur associé à votre ferme|Serveur HTTP A|
 |port||Le port du serveur associé à votre ferme|8080|
 
