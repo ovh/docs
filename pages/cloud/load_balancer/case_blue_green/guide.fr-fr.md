@@ -328,8 +328,8 @@ Depuis l'Api OVHcloud : mise à jour des frontends et application des modificati
 |Paramètre|Signification|Exemple|
 |---|---|---|
 |ServiceName|L'identifiant de votre service Load Balancer|loadbalancer-xxxxxxxxxxx|
-|frontendId|L'identifiant de votre frontend de production|70090|
-|defaultFarmId|L'identifiant de votre ferme de serveurs de développement|77212|
+|frontendId|L'identifiant de votre frontend de production|151917|
+|defaultFarmId|L'identifiant de votre ferme de serveurs de développement|197530|
 
 Pour appliquer vos changements et réaliser effectivement la bascule production / développement.
 
