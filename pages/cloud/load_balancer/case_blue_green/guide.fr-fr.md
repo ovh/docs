@@ -62,7 +62,7 @@ Depuis l'espace client OVHcloud :
 
 ![Renseigner la configuration de la ferme](images/backend1.png){.thumbnail}
 
-Depuis l'Api :
+Depuis l'Api OVHcloud :
 
 
 > [!api]
