@@ -1,17 +1,18 @@
 ---
-title: Travailler avec les sondes
+title: Configuration d'un service OVHcloud Load Balancer avec les sondes
 slug: probes
 excerpt: Découvrez les principes généraux et des cas d'usage pour les sondes
 section: Configuration
 ---
 
+
 ## Objectif
 
-L'OVH Load Balancer permet de répartir le trafic entrant sur un front-end vers un ensemble de serveurs d'une ferme de destination.
+L'OVHcloud Load Balancer permet de répartir le trafic entrant sur un front-end vers un ensemble de serveurs d'une ferme de destination.
 
-Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour différentes raisons, comme une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVH Load Balancer va tenter de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
+Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour différentes raisons, comme une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVHcloud Load Balancer va tenter de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
 
-Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVH Load Balancer, référez-vous à la documentation suivante : <https://docs.ovh.com/fr/load-balancer/blue-green/>.
+Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVHcloud Load Balancer, référez-vous à la documentation suivante : <https://docs.ovh.com/fr/load-balancer/blue-green/>.
 
 Les sondes (probes en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
@@ -21,13 +22,14 @@ Ce service étant encore jeune, l'essentiel de ses fonctionnalités est uniqueme
 
 ## Prérequis
 
-- Disposer d'un OVH Load Balancer correctement configuré, avec un paramétrage des fermes et des serveurs.
+- Disposer d'un OVHcloud Load Balancer correctement configuré, avec un paramétrage des fermes et des serveurs.
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
 ### Présentation de l'API
-
-L'API des sondes de votre OVH Load Balancer a été pensée pour être souple et évolutive.
+L'API des sondes de votre OVHcloud Load Balancer a été pensée pour être souple et évolutive.
 
 Les sondes se configurent directement sur les fermes. Tous les serveurs d'une même ferme appliquent ainsi exactement la même sonde. Cependant, l'activation ou la désactivation d'une sonde est spécifique à chaque serveur : il est donc possible de ne « surveiller » que certains serveurs d'une même ferme.
 
@@ -77,7 +79,7 @@ Dans la pratique, cela donne une sonde :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre OVH Load Balancer|
+|serviceName|Identifiant de votre OVHcloud Load Balancer|
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|"tcp"|
 
@@ -92,7 +94,7 @@ Dans la pratique, si vous voulez configurer la sonde pour envoyer une requête "
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre OVH Load Balancer|
+|serviceName|Identifiant de votre OVHcloud Load Balancer|
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|http|
 |probe.method|GET|
@@ -115,7 +117,7 @@ Par exemple, dans ce scénario, il serait possible d'avoir un serveur HTTP sur l
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre OVH Load Balancer|
+|serviceName|Identifiant de votre OVHcloud Load Balancer|
 |farmId|Identifiant de votre ferme TCP ou HTTP|
 |probe.type|http|
 |probe.port|8080|
@@ -156,7 +158,7 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 >
 >> > **serviceName**
 >> >
->> >> L'identifiant de votre OVH Load Balancer.
+>> >> L'identifiant de votre OVHcloud Load Balancer.
 >> >
 >> > **farmId**
 >> >
@@ -213,7 +215,7 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 >> >> **forceSsl**
 >> >>
 >> >> > Cela définit si la sonde doit fonctionner en SSL/TLS même si la ferme est configurée pour se connecter en TCP classique.
->> >> > Cela peut servir par exemple lorsque votre OVH Load Balancer est configuré pour faire suivre le trafic HTTPS en TCP sans le déchiffrer.
+>> >> > Cela peut servir par exemple lorsque votre OVHcloud Load Balancer est configuré pour faire suivre le trafic HTTPS en TCP sans le déchiffrer.
 >
 
 D'autres paramètres peuvent être édités via cet appel. Dans la mesure où ce guide se concentre sur les sondes, ils ne sont pas documentés ici.
@@ -245,7 +247,7 @@ Pour qu'une sonde soit active, il faut qu'elle ait été configurée sur la ferm
 >
 >> > **serviceName**
 >> >
->> >> L'identifiant de votre OVH Load Balancer.
+>> >> L'identifiant de votre OVHcloud Load Balancer.
 >> >
 >> > **farmId**
 >> >
@@ -424,7 +426,7 @@ Cette sonde tente d'établir une connexion TCP sur le port 79 de votre serveur e
 |URL|Non supporté|
 |matches|`default`|
 
-## Depuis le manager
+## Depuis l'espace client OVHcloud
 
 La configuration des sondes se fait lors de l'ajout (ou modification) d'une ferme de serveurs, dans les paramètres avancés.
 
