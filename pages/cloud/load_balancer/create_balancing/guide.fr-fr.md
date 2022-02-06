@@ -5,7 +5,7 @@ excerpt: Découvrez les différents modes de répartition de charge du Load Bala
 section: Configuration
 ---
 
-**Dernière mise à jour le 20/01/2021**
+**Dernière mise à jour le 06/02/2022**
 
 ## Objectif
 
@@ -49,7 +49,7 @@ Une fois le mode de répartition souhaité sélectionné, cliquez sur `Mettre à
 
 ![Appliquer la configuration](images/apply_config.png){.thumbnail}
 
-### Modifier le mode de répartition de charge d'une ferme via l'API
+### Modifier le mode de répartition de charge d'une ferme deouis l'API OVHcloud
 
 La modification des paramètres de mode de répartition s'effectue en éditant ceux de la ferme de serveurs.
 
