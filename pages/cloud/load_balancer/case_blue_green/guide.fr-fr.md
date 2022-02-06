@@ -112,7 +112,7 @@ Depuis l'Api OVHcloud :
 
 |Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
-|serviceName|Requis|L'identifiant de votre service Load Balancer|loadbalancer-abcdef0123456789|
+|serviceName|Requis|L'identifiant de votre service Load Balancer|loadbalancer-XXXXXXXXXXXXX|
 |farmId|Requis|L'identifiant de votre ferme de serveurs|197529|
 |address|Requis|L'addresse IPv4 de votre serveur|139.XX.XX.XX|
 |displayName||Le nom du serveur associé à votre ferme|Serveur HTTP A|
@@ -182,7 +182,7 @@ Depuis l'API OVHcloud :
 
 |Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
-|serviceName|Requis|L'identifiant de votre service Load Balancer|loadbalancer-abcdef0123456789|
+|serviceName|Requis|L'identifiant de votre service Load Balancer|loadbalancer-XXXXXXXXXXX|
 |farmId|Requis|L'identifiant de votre ferme de serveurs|197530|
 |address|Requis|L'addresse IPv4 de votre serveur|51.XX.XX.XX|
 |displayName||Le nom du serveur associé à votre ferme|Serveur HTTP B|
@@ -228,8 +228,8 @@ Depuis l'API OVHcloud :
 
 |Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
-|serviceName|Requis|L'identifiant de votre Load Balancer|loadbalancer-abcdef0123456789|
-|defaultFarmId||L'identifiant de la ferme de production|77212|
+|serviceName|Requis|L'identifiant de votre Load Balancer|loadbalancer-XXXXXXXXXXX|
+|defaultFarmId||L'identifiant de la ferme de production|151917|
 |displayName||Le nom donné au frontend|Blue Frontend|
 |port|Requis|Le port exposé par votre frontend à vos clients|80|
 |zone|Requis|La zone dans laquelle vous souhaitez déployer votre frontend|all|
