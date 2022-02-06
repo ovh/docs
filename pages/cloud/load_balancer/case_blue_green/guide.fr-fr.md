@@ -290,16 +290,16 @@ De manière assez simple finalement, il suffira désormais de basculer vos front
 
 Reprenons notre scénario :
 
-- l'infrastructure de production (A) est déployée sur la `Ferme HTTP A`{.action} (id 77212) qui est elle même attachée au `Serveur HTTP A`{.action}. L'accès à cette infrastructure se fait par l'intermédiaire du `Frontend Blue`{.action}.
-- l'infrastructure de développement (B) est déployée sur la `Ferme HTTP B`{.action} (id 77213) qui est elle même attachée au `Serveur HTTP B`{.action}. L'accès à cette infrastructure se fait par l'intermédiaire du `Frontend Green`{.action}.
+- l'infrastructure de production (A) est déployée sur la `Ferme HTTP A`{.action} (id 197529) qui est elle même attachée au `Serveur HTTP A`{.action}. L'accès à cette infrastructure se fait par l'intermédiaire du `Frontend Blue`{.action}.
+- l'infrastructure de développement (B) est déployée sur la `Ferme HTTP B`{.action} (id 197530) qui est elle même attachée au `Serveur HTTP B`{.action}. L'accès à cette infrastructure se fait par l'intermédiaire du `Frontend Green`{.action}.
 
 Après avoir réalisé vos modifications / mises à jours sur l'`infrastructure B`{.action} et validé le bon fonctionnement du service, vous décidez de l'assigner à la production.
 
 Pour faire la bascule entre les 2 fermes, il suffira simplement de mettre à jour vos différents frontends en modifiant l'identifiant de la ferme à laquelle ils sont rattachés et d'appliquer la modification.
 
-Le `Frontend Blue`{.action} (id 70089) va donc être associé à la `Ferme B`{.action} (infrastructure B, nouvelle production, id 77213).
+Le `Frontend Blue`{.action} (id 151917) va donc être associé à la `Ferme B`{.action} (infrastructure B, nouvelle production, id 197530).
 
-Le `Frontend Green`{.action} (id 70090) quant à lui sera désormais associé à la `Ferme A`{.action} (infrastructure A, nouvelle développement, id 77212).
+Le `Frontend Green`{.action} (id 151918) quant à lui sera désormais associé à la `Ferme A`{.action} (infrastructure A, nouvelle développement, id 197529).
 
 Résultat sur le manager Sunrise après mise à jour des frontends et application de la nouvelle configuration :
 
