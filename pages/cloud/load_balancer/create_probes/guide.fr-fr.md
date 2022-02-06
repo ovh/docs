@@ -4,6 +4,7 @@ slug: probes
 excerpt: Découvrez les principes généraux et des cas d'usage pour les sondes
 section: Configuration
 ---
+**Dernière mise à jour le à 06/02/2022**
 
 
 ## Objectif
@@ -28,7 +29,7 @@ Ce service étant encore jeune, l'essentiel de ses fonctionnalités est uniqueme
 
 ## En pratique
 
-### Présentation de l'API
+### Présentation de l'API des sondes
 L'API des sondes de votre OVHcloud Load Balancer a été pensée pour être souple et évolutive.
 
 Les sondes se configurent directement sur les fermes. Tous les serveurs d'une même ferme appliquent ainsi exactement la même sonde. Cependant, l'activation ou la désactivation d'une sonde est spécifique à chaque serveur : il est donc possible de ne « surveiller » que certains serveurs d'une même ferme.
@@ -443,3 +444,9 @@ Si le type de sonde séléctionné le permet, vous pouvez configurer les paramè
 Une nouvelle fenêtre de configuration apparaît avec les paramètres de la sonde.
 
 ![Paramètres avancés d'une sonde](images/probe_settings_dialog.png){.thumbnail}
+
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
