@@ -255,8 +255,8 @@ Depuis l'API OVHcloud :
 
 |Paramètre|Requis|Signification|Exemple|
 |---|---|---|---|
-|serviceName|Requis|L'identifiant de votre Load Balancer|loadbalancer-abcdef0123456789|
-|defaultFarmId||L'identifiant de la ferme de production|77213|
+|serviceName|Requis|L'identifiant de votre Load Balancer|loadbalancer-xxxxxxxxxx|
+|defaultFarmId||L'identifiant de la ferme de production|151918|
 |displayName||Le nom donné au frontend|Green Frontend|
 |port|Requis|Le port exposé par votre frontend à vos clients|8888|
 |zone|Requis|La zone dans laquelle vous souhaitez déployer votre frontend|all|
@@ -316,9 +316,9 @@ Depuis l'Api OVHcloud : mise à jour des frontends et application des modificati
 
 |Paramètre|Signification|Exemple|
 |---|---|---|
-|ServiceName|L'identifiant de votre service Load Balancer|loadbalancer-abcdef0123456789|
-|frontendId|L'identifiant de votre frontend de production|70089|
-|defaultFarmId|L'identifiant de votre ferme de serveurs de développement|77213|
+|ServiceName|L'identifiant de votre service Load Balancer|loadbalancer-xxxxxxxxxxx|
+|frontendId|L'identifiant de votre frontend de production|151917|
+|defaultFarmId|L'identifiant de votre ferme de serveurs de développement|151918|
 
 > [!api]
 >
@@ -327,7 +327,7 @@ Depuis l'Api OVHcloud : mise à jour des frontends et application des modificati
 
 |Paramètre|Signification|Exemple|
 |---|---|---|
-|ServiceName|L'identifiant de votre service Load Balancer|loadbalancer-abcdef0123456789|
+|ServiceName|L'identifiant de votre service Load Balancer|loadbalancer-xxxxxxxxxxx|
 |frontendId|L'identifiant de votre frontend de production|70090|
 |defaultFarmId|L'identifiant de votre ferme de serveurs de développement|77212|
 
