@@ -43,20 +43,18 @@ Vous devez disposez de :
 >
 >Il est donc indispensable de limiter leurs utilisations à des IP de confiance, en l’occurrence, les IPs de sortie de votre service OVHcloud Load Balancer. Les principaux serveurs tels que Nginx et Apache disposent de modules capable de gérer cet aspect de sécurité et de confiance.
 
-Vous pouvez obtenir la liste de vos IPs de sortie Depuis l'espace client OVHcloud l'API.
+Vous pouvez obtenir la liste de vos IPs de sortie depuis l'espace client OVHcloud et via l'API.
 
 ## En pratique
 
 ### Depuis l'espace client OVHcloud
 La liste des IPv4 de sortie potentiellement utilisées par votre service OVHcloud Load Balancer se trouve sur la page d'accueil de votre service OVHcloud Load Balancer dans le manager sous le nom "IPv4 de sortie".
 
-
 ![Adresse IPv4 de sortie de votre service OVHcloud Load Balancer](images/iplb_service.png){.thumbnail}
 
 
 ### Depuis l'API OVHcloud
 - Liste des IPs utilisées par votre service OVHcloud Load Balancer
-
 
 > [!api]
 >
@@ -107,7 +105,8 @@ Une fois le mode souhaité sélectionné, cliquez sur `Mettre à jour`{.action} 
 
 
 ### Depuis l'API OVHcloud
-L'activation du ProxyProtocol via l'API se fait de la même manière que via le Manager. Le champs d'API correspondant dans le Serveur est proxyProtocolVersion.
+L'activation du ProxyProtocol via l'API se fait de la même manière que depuis l'espace client OVHcloud.
+Le champs d'API correspondant dans le Serveur est proxyProtocolVersion.
 
 - Modifier un `Serveur`{.action} existant :
 
