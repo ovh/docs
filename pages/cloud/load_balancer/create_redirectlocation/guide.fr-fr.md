@@ -6,6 +6,7 @@ excerpt: Intégrez vos services web derrière un Load Balancer avec les Redirect
 section: Configuration
 ---
 
+**Dernière mise à jour le à 07/02/2022**
 
 ## Objectif
 
@@ -14,10 +15,9 @@ Le service OVH Load Balancer agit par défault comme un mandataire ou "Proxy". I
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
-- Avoir accès :
-    - à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ou bien
-        - à l'[API OVH](https://api.ovh.com/){.external}.
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votreà l'[API OVH](https://api.ovh.com/){.external}.
 
 
 ## En pratique
@@ -38,7 +38,7 @@ Les Redirections personnalisées doivent être de la forme `<scheme>://<net_loc>
 
 Les Redirections personnalisées peuvent être spécifiées via le Manager et via l'API, tant sur un nouveau `Frontend`{.action} qu'un existant.
 
-### Ajouter une redirection personnalisée via le Manager
+### Ajouter une redirection personnalisée depuis l'espace client OVHcloud
 
 Il est possible de définir une redirection personnalisée depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 Cela peut-être effectué tant sur un nouveau Frontend pendant sa création, que sur un Frontend existant.
@@ -81,7 +81,7 @@ cliquez sur `Appliquer la configuration`{.action}.
 ![Application d'une Configuration d'un Load Balancer](images/apply_configuration.png){.thumbnail}
 
 
-### Ajouter une redirection personnalisée via l'API
+### Ajouter une redirection personnalisée depuis l'API OVHcloud
 
 Dans l'[API OVH](https://api.ovh.com/){.external}, les Redirections sont spécifiées dans la chaîne de caractère redirectLocation :
 
