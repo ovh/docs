@@ -883,3 +883,10 @@ Cette règle permet de filtrer les requêtes en fonction de l'existence ou de la
 |hasSubField|oui|
 |matches|`is`, `in`, `contains`, `startswith`, `endswith` ou `matches`|
 |pattern|Chaîne de caractères ou expression régulière|
+
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
