@@ -18,13 +18,13 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for PostgreSQL;
+- An up and running Public Cloud Database for PostgreSQL.
 - A pgAdmin stable version installed and public network connectivity (Internet). This guide was made in pgAdmin 4 version 6.4.
 
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/) or by using programming languages, such as PHP or Python.
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-php/) or [Python](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-python/).
 
 Another way is to interact directly using a management tool for Postgres: pgAdmin
 
