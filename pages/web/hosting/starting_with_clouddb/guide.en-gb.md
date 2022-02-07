@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/'
 excerpt: 'Find out how to get started with the CloudDB service'
 section: 'CloudDB'
+order: 1
 ---
 
 **Last updated 28th January 2022**

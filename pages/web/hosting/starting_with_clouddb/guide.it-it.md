@@ -6,6 +6,7 @@ routes:
 legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 section: 'CloudDB'
+order: 1
 ---
 
 **Ultimo aggiornamento: 28/01/2022**

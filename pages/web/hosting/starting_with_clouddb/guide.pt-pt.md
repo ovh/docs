@@ -6,6 +6,7 @@ routes:
 excerpt: 'Saiba como começar a usar e a gerir o serviço CloudDB'
 legacy_guide_number: 2216
 section: 'CloudDB'
+order: 1
 ---
 
 **Última atualização: 28/01/2022**

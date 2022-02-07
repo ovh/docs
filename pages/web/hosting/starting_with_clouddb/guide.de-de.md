@@ -6,6 +6,7 @@ routes:
 legacy_guide_number: 2216
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die CloudDB Lösung verwenden'
 section: 'CloudDB'
+order: 1
 ---
 
 > [!primary]
