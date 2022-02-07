@@ -1,9 +1,9 @@
 ---
-title: 'Managing your Public Cloud Instances'
+title: 'Managing your Public Cloud Instances in Horizon'
 slug: managing-public-cloud-instance
 excerpt: 'Find out how to manage your Public Cloud projects via the Horizon interface'
 section: Horizon
-order: 4
+order: 04
 ---
 
 **Last updated 25th January 2022**
