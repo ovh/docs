@@ -1,11 +1,11 @@
 ---
-title: 'Configuration d'un service OVHCloud Load Balancer  avec les routes HTTP'
+title: 'Travailler avec les routes HTTP'
 slug: routes
 excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
 ---
 
-**Dernière mise à jour le 07/07/2022**
+**Dernière mise à jour le 09/04/2018**
 
 ## Objectif
 
