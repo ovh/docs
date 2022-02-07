@@ -118,7 +118,7 @@ Ainda nesta parte da sua Área de Cliente, aceda ao separador `Utilizador e perm
 
 > [!primary]
 >
-> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
 >
 
 Escolha a nova palavra-passe da sua base de dados e anote-a. Deverá respeitar as seguintes condições:
@@ -231,7 +231,7 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida [no pa
 
 [Utilização do software FileZilla com o seu alojamento](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-[Alterar a palavra-passe da sua conta](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Alterar a palavra-passe da sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/)
 
 [Resolver os erros mais frequentes associados às bases de dados](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 

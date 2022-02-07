@@ -118,7 +118,7 @@ Sempre in questa sezione del tuo Spazio Cliente OVH, clicca sulla scheda `Utente
 
 > [!primary]
 >
-> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](https://docs.ovh.com/it/customer/gestire-la-password/).
 >
 
 Scegli la nuova password del tuo database e annotiamolo. Esso dovrà rispettare le seguenti condizioni:
@@ -231,7 +231,7 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 [Software FileZilla con il tuo hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-[Modifica la password del tuo account](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Modifica la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
 
 [Risolvi gli errori più frequenti associati ai database](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 

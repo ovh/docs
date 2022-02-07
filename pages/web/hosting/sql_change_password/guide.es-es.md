@@ -118,7 +118,7 @@ En el área de cliente de OVH, abra la pestaña `Usuario y permisos`{.action} pa
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
 >
 
 Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir las siguientes condiciones:
@@ -231,7 +231,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Guía de uso de FileZilla](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-[Cambiar la contraseña de su cuenta](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Cambiar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/)
 
 [Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 

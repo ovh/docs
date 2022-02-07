@@ -118,7 +118,7 @@ W tej części Panelu klienta przejdź do zakładki `Użytkownik i uprawnienia`{
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/).
 >
 
 Wybierz nowe hasło do bazy danych i zapisz je. Musi on spełniać następujące warunki:
@@ -231,7 +231,7 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 [Korzystanie z programu FileZilla na Twoim hostingu](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
 
-[Zmiana hasła do konta](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Zmiana hasła do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
 
 [Rozwiąż najczęstsze błędy związane z bazami danych](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
 

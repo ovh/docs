@@ -1,7 +1,7 @@
 ---
 title: Passwort einer Webhosting-Datenbank ändern
 slug: datenbank-passwort-aendern
-excerpt: So ändern Sie das Passwort einer Datenbank, die im Rahmen eines Webhosting Angebots erstellt wurde.
+excerpt: So ändern Sie das Passwort einer Datenbank, die im Rahmen eines Webhosting Angebots erstellt wurde
 section: Datenbanken
 order: 2
 ---
@@ -117,7 +117,7 @@ Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/customer/passwort-verwalten/).
 >
 
 Wählen Sie das neue Passwort Ihrer Datenbank aus und notieren Sie es. Er muss folgende Bedingungen erfüllen:
@@ -127,9 +127,9 @@ Wählen Sie das neue Passwort Ihrer Datenbank aus und notieren Sie es. Er muss f
 - mindestens ein Großbuchstabe;
 - mindestens ein Kleinbuchstabe;
 - mindestens eine Zahl;
-- Darf ausschließlich aus Ziffern und Buchstaben bestehen.
+- darf ausschließlich aus Ziffern und Buchstaben bestehen.
 
-Gehen Sie wie [in Schritt](#step1) I in den Datei-Speicherplatz Ihres Hostings und bearbeiten Sie die Konfigurationsdatei Ihrer Website.
+Gehen Sie wie in [Schritt 1](#step1) in den Datei-Speicherplatz Ihres Hostings und bearbeiten Sie die Konfigurationsdatei Ihrer Website.
 
 **Speichern** Sie vor jeder Änderung den Inhalt der Datei lokal in einem Textdokument, um eine Kopie im Fall eines Manipulationsfehlers aufzubewahren.
 
@@ -194,13 +194,13 @@ Speichern Sie diese Änderung.
 
 Auch hier sind zwei Fälle möglich: 
 
-- Wenn Ihre Datenbank sich in dem Teil Ihres OVHcloud Kundencenters befindet, der [Ihrem Webhosting](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) gewidmet ist, folgen Sie [bitte](https://www.ovhcloud.com/de/web-hosting/) diesen [Anweisungen](#case1).
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) gewidmet ist, folgen Sie bitte diesen [Anweisungen](#case1).
 
-- Wenn Ihre Datenbank sich in dem Teil Ihres OVHcloud Kundencenters befindet, der [Ihren ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)SQL Private[ oder ](https://www.ovhcloud.com/de/web-hosting/options/private-sql/)CloudDB[ Angeboten gewidmet ist, folgen Sie ](https://docs.ovh.com/fr/clouddb/)diesen Anweisungen[ ](#case2).
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [CloudDB Angeboten](https://docs.ovh.com/de/clouddb/) gewidmet ist, folgen Sie diesen [Anweisungen](#case2).
 
 #### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhosting Angebots <a name="case1"></a>
 
-Gehen Sie im `Bereich`{.action} Hosting Ihres Kundencenters auf den Tab `Datenbanken`{.action} rechts neben Ihrem Bildschirm:
+Gehen Sie im Bereich `Hosting-Pakete`{.action} Ihres Kundencenters auf den Tab `Datenbanken`{.action} am rechts Ihrem Bildschirm:
 
 ![database-password-step1](images/database-password-step1.png){.thumbnail}
 
@@ -208,32 +208,32 @@ Klicken Sie dann rechts neben der Datenbank Ihrer Website auf die drei Punkte un
 
 ![database-password-step2](images/database-password-step2.png){.thumbnail}
 
-Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert [in Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
+Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Fall 2: Die Datenbank Ihrer Website ist Teil eines Private SQL oder CloudDB Angebots <a name="case2"></a>
+#### Fall 2: Die Datenbank Ihrer Website ist Teil eines CloudDB Angebots <a name="case2"></a>
 
 Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters (linkes Menü) und klicken Sie auf den betreffenden Server und gehen Sie auf den Tab `Benutzer und Rechte`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 
-Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf die drei Punkte rechts neben `dem`{.action} im zweiten[ Schritt identifizierten Benutzernamen und ](#step2)anschließend auf Passwort ändern` `{.action}.
+Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf die drei Punkte rechts neben dem identifizierten `Benutzername`{.action} im [zweiten Schritt](#step2) und anschließend auf `Passwort ändern`{.action}.
 
 ![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
 
-Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert [in Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
+Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[FileZilla Softwareverwendung mit Ihrem Hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+[FileZilla Softwareverwendung mit Ihrem Hosting](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
 
-[Passwort Ihres Accounts ändern](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
+[Passwort Ihres Accounts ändern](https://docs.ovh.com/de/customer/passwort-verwalten/)
 
-[Die häufigsten Datenbankfehler beheben](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
+[Die häufigsten Datenbankfehler beheben](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/)
 
-Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/fr/).
+Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
