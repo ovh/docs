@@ -4,7 +4,8 @@ slug: empezar-con-clouddb
 routes:
     canonical: 'https://docs.ovh.com/es/clouddb/empezar-con-clouddb/'
 excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
-section: 'Primeros pasos'
+section: 'CloudDB'
+order: 1
 ---
 
 **Última actualización: 28/01/2022**
