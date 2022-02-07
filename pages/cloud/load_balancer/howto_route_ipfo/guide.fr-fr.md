@@ -5,7 +5,7 @@ excerpt: 'Router une IP failover'
 section: Configuration
 ---
 
-**Dernière mise à jour le 06/04/2018**
+**Dernière mise à jour le 07/02/2022**
 
 ## Objectif
 
@@ -13,16 +13,16 @@ Une IP fail-over (IPFO) est une adresse IP basculable d'un service à l'autre. E
 
 Pour plus d'informations sur l'IP fail-over nous vous recommandons la lecture du [document de présentation](https://www.ovhcloud.com/fr/bare-metal/ip/){.external}.
 
-Le service OVH Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une IP fail-over, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'IP fail-over, donc pas de délai de propagation des DNS.
+Le service OVHcloud Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une IP fail-over, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'IP fail-over, donc pas de délai de propagation des DNS.
 
-Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons de consulter la [présentation générale](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
+Pour plus d'informations sur le service OVHcloud Load Balancer, nous vous conseillons de consulter la [présentation générale](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
 
-**Ce guide vous explique comment utiliser une IP fail-over avec le service OVH Load Balancer.**
+**Ce guide vous explique comment utiliser une IP fail-over avec le service OVHcloud Load Balancer.**
 
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external} correctement configuré.
+- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} correctement configuré.
 - Disposer d'une [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/){.external}.
 
 > [!primary]
@@ -45,12 +45,12 @@ Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons
 
 Dans la suite de ce document, nous allons voir 2 cas d'usages distincts.
 
-- Associer une IP fail-over à votre service OVH Load Balancer.
-- Associer une IP fail-over à un seul et unique frontend de votre service OVH Load Balancer.
+- Associer une IP fail-over à votre service OVHcloud Load Balancer.
+- Associer une IP fail-over à un seul et unique frontend de votre service OVHcloud Load Balancer.
 
 
 ### Ajouter une IP fail-over
-Depuis l'[API OVH](https://api.ovh.com){.external} vous pouvez associer ces IPs avec votre service OVH Load Balancer.
+Depuis l'[API OVHcloud](https://api.ovh.com){.external} vous pouvez associer ces IPs avec votre service OVHcloud Load Balancer.
 Voici l'appel API pour cela :
 
 
@@ -59,7 +59,7 @@ Voici l'appel API pour cela :
 > @api {POST} /ip/{ip}/move
 > 
 
-Vous pouvez ensuite lister les IPs fail-over attachées à votre OVH Load Balancer à l'aide de l'appel suivant :
+Vous pouvez ensuite lister les IPs fail-over attachées à votre OVHcloud Load Balancer à l'aide de l'appel suivant :
 
 
 > [!api]
@@ -81,7 +81,7 @@ Les services de vos autres frontends restent quant à eux accessibles via l'adre
 
 #### Création d'un Frontend
 
-Depuis l'[API OVH](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-overs sur un frontend pendant sa création :
+Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-overs sur un frontend pendant sa création :
 
 
 * protocole HTTP
@@ -108,7 +108,7 @@ Depuis l'[API OVH](https://api.ovh.com){.external}, l'appel suivant vous permett
 
 #### Mise à jour d'un Frontend
 
-Toujours depuis l'[API OVH](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-overs sur un frontend existant :
+Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous permettra de définir une ou plusieurs IPs fail-overs sur un frontend existant :
 
 
 * protocole HTTP
