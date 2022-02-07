@@ -10,7 +10,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.10.2021**
+**Letzte Aktualisierung am 07.02.2022**
 
 ## Ziel
 
@@ -139,6 +139,8 @@ Verwenden Sie folgende Anleitungen, um Informationen zum praktischen Vorgehen zu
 |[Eine zusätzliche Disk mit einer Instanz verbinden](https://docs.ovh.com/de/public-cloud/erstellen_zustzliche_festplatte_public_cloud/)|In dieser Anleitung erfahren Sie, wie Sie zusätzlichen Storage zu Ihrer Instanz hinzufügen.|
 |[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/)|Das OpenStack Horizon Interface erlaubt einige erweiterte Einstellungen. Der Zugriff wird hier erklärt.|
 |[Kubernetes-Cluster erstellen](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN) |Diese Anleitung begleitet Sie bei der Erstellung Ihres ersten Kubernetes-Clusters.|
+|[Eine Failover-IP konfigurieren](https://docs.ovh.com/de/public-cloud/failover-ip-konfigurieren-pci/)|Mit Failover-IPs können Sie den Traffic von einer Instanz auf eine andere umstellen. In dieser Anleitung erfahren Sie, wie Sie diesen konfigurieren.|
+|[OpenStack CLI installieren](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)|OpenStack kann auch über die Kommandozeile verwendet werden. Hier können Sie die Tools installieren.|
 
 Einer der großen Vorteile der Verwendung von Standard- und Open-Source-Technologien wie OpenStack oder Kubernetes besteht darin, dass alle bereits verfügbaren Dokumentationen herangezogen werden können.
 
