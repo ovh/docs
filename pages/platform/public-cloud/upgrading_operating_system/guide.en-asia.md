@@ -48,7 +48,7 @@ $ sudo apt-get full-upgrade
 $ sudo apt-get --purge autoremove
 ```
 
-There may have been some update which may require a reboot and therefore we must reboot first before we start upgrading:
+There may have been some updates which may require a reboot and therefore we must reboot first before we start upgrading:
 
 ```bash
 $ sudo systemctl reboot
