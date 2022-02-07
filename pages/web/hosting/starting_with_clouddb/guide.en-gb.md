@@ -4,7 +4,7 @@ slug: getting-started-with-clouddb
 routes:
     canonical: 'https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/'
 excerpt: 'Find out how to get started with the CloudDB service'
-section: 'Getting started'
+section: 'CloudDB'
 ---
 
 **Last updated 28th January 2022**

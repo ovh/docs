@@ -4,7 +4,7 @@ slug: pierwsze-kroki-z-clouddb
 routes:
     canonical: 'https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
-section: 'Pierwsze kroki'
+section: 'CloudDB'
 ---
 
 **Ostatnia aktualizacja dnia 2022-01-28**

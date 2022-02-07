@@ -4,7 +4,7 @@ slug: debuter-avec-clouddb
 routes:
     canonical: 'https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/'
 excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
-section: 'Premiers pas'
+section: 'CloudDB'
 order: 1
 ---
 
