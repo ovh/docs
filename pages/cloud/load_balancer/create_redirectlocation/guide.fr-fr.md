@@ -1,5 +1,5 @@
 ---
-title: Travailler avec les redirections
+title: Configuration d'un service OVHCloud Load Balancer  avec les redirections
 slug: redirect-location
 universe: cloud
 excerpt: Intégrez vos services web derrière un Load Balancer avec les Redirections
