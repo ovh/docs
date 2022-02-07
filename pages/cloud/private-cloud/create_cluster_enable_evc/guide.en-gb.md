@@ -10,7 +10,7 @@ order: 01
 
 ## Objective
 
-It is possible to set up multiple clusters in your environment to segment your activities.<br>
+You can set up multiple clusters in your environment to segment your activities.<br>
 Learn how to create them and configure their functionalities (DRS, HA & EVC).
 
 **This guide offers a step by step study case to achieve the objective.**
