@@ -15,16 +15,15 @@ To best protect your system, your Windows Server dedicated server has its own bu
 **This guide will show you how to apply firewall rules on Windows.**
 
 > [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> While OVHcloud provides you with the devices, the responsibility for their security rests solely in your hands. Since we have no access to these machines, we are not their administrators. It is your responsibility to manage the software, and apply proper security measures on an ongoing basis. 
-> 
-> This guide is designed to help you with the most common tasks. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of security measures on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with [our community](https://community.ovh.com/en/) if you face difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
-- You must be connected to your server via a remote desktop on Windows. 
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) with Windows installed in your OVHcloud account
+- Administrative access via remote desktop to your server
 
 ## Instructions
 
@@ -32,10 +31,10 @@ To best protect your system, your Windows Server dedicated server has its own bu
 
 To access Windows Firewall, you can follow this order:
 
-- Click `Start`{.action}
-- Click `Search`{.action}
-- Search for "Windows Firewall" in the search bar
-- Click `Windows Firewall`{.action} 
+- Click `Start`{.action}.
+- Click `Search`{.action}.
+- Search for "Windows Firewall" in the search bar.
+- Click `Windows Firewall`{.action} .
 
 Then click `Advanced settings`{.action}.
 
@@ -56,13 +55,13 @@ Selecting `Inbound Rules`{.action} displays all preconfigured Windows Server rul
 ### Step 3: Create a new rule 
 
 To create a new rule, go to the `Action`{.action} menu and select `New Rule`{.action}.
-Click the `New Rule`{.action} option in the right pane.
+Click the `New Rule`{.action} option in the right-hand pane.
 
 ![Step3](images/step3.PNG){.thumbnail}
 
 ### Step 4: Define the type of rule to activate
 
-The wizard appears to define the type of rule to create. Select the `Port`{.action} check box.
+The Rule Wizard provides options to define the type of rule to create. Select the `Port`{.action} check box.
 
 ![Step4](images/step4.PNG){.thumbnail}
 
@@ -88,10 +87,10 @@ In the next step, define the port type to enable:
 To define the action this rule will trigger, the following options are available. Select the one that works for you.
 
 - **Allow the connection**. This option allows full communication through this port.
-- **Allow the connection if it is secure**. This option allows data to be transmitted only if the connection is authenticated via Ipsec.
+- **Allow the connection if it is secure**. This option allows data to be transmitted only if the connection is authenticated via IPsec.
 - **Block the connection**. This option prevents data from being routed through this port.
 
-Select the `Allow Connection`{.action} option and click `Next`{.action}. 
+Select the `Allow Connection`{.action} option and click `Next`{.action}.
 
 ![Step6](images/step6.PNG){.thumbnail}
 
@@ -110,7 +109,7 @@ Click the `Finish`{.action} button to complete the process and create the new ru
 
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 
-You can then make changes to the security of the new rule you have created.
+You can then make changes to the settings of the new rule you have created.
 
 ## Go further
 
