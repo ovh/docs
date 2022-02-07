@@ -1,5 +1,5 @@
 ---
-title: 'Configuration d'un service OVHCloud Load Balancer  avec les routes HTTP'
+title: 'Configuration OVHCloud Load Balancer  avec les routes HTTP'
 slug: routes
 excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
