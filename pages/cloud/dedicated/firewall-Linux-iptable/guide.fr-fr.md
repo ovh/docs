@@ -202,7 +202,7 @@ Recherchez la ligne de la règle de pare-feu que vous souhaitez supprimer et ex�
 ```sh
 sudo iptables -D INPUT <Number>
 ```
-Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprimer.
+Remplacez `Number` par le numéro de ligne de règle que vous souhaitez supprimer.
 
 ### Etape 9 : enregistrer vos modifications
 
