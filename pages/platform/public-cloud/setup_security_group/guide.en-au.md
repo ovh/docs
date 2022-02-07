@@ -3,7 +3,7 @@ title: 'Creating and configuring a security group in Horizon'
 slug: configure-security-group-horizon
 excerpt: 'Find out how to create a security group and configure it on a Public Cloud instance'
 section: Horizon
-order: 8
+order: 08
 ---
 
 **Last updated 24th August 2021**

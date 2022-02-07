@@ -4,7 +4,7 @@ excerpt: 'Scopri come accedere all’interfaccia Horizon'
 slug: crea_un_utente_per_accedere_a_horizon
 legacy_guide_number: g1773
 section: Gestione da Horizon
-order: 1
+order: 01
 ---
 
 **Ultimo aggiornamento: 14/11/2019**

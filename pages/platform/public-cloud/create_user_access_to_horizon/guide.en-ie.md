@@ -4,7 +4,7 @@ slug: configure_user_access_to_horizon
 legacy_guide_number: 1773
 excerpt: Find out how to access the Horizon interface
 section: Horizon
-order: 1
+order: 01
 ---
 
 **Last updated 14th November 2019**
