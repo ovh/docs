@@ -4,24 +4,24 @@ slug: iplb-stickiness
 excerpt: Configuration
 section: Configuration
 ---
-
+**Dernière mise à jour le 07/02/2022**
 
 ## Objectif
 
-Le service [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external} offre différents types de suivi de connexion pour vos services.
+Le service [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} offre différents types de suivi de connexion pour vos services.
 
-Chaque session du service OVH Load Balancer est maintenue par un système de persistence de connexion. Ce dernier est configuré au niveau de la couche applicative du service OVH Load Balancer, c'est elle qui assure la persistence de la connexion vers le serveur.
+Chaque session du service OVHcloud Load Balancer est maintenue par un système de persistence de connexion. Ce dernier est configuré au niveau de la couche applicative du service OVHcloud Load Balancer, c'est elle qui assure la persistence de la connexion vers le serveur.
 
-Cette documentation présente différentes façon de configurer cette options pour le Load Balancer OVH.
+Cette documentation présente différentes façon de configurer cette options pour le Load Balancer OVHcloud.
 
-**Ce guide présente différentes façon de configurer cette option pour le Load Balancer OVH.**
+**Ce guide présente différentes façon de configurer cette option pour le Load Balancer OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
+- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external}.
 - Avoir accès :
-    - à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ou bien
-    - à l'[API OVH](https://api.ovh.com/){.external}.
+    - à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, ou bien
+    - à l'[API OVHcloud](https://api.ovh.com/){.external}.
 
 
 ## En pratique
@@ -33,7 +33,7 @@ Il existe 2 types principaux de suivi de connexion qui peuvent être configurés
 |Suivi de connexion|Détails|
 |---|---|
 |Cookie|Configure un cookie de session qui sera utilisé pour toujours répartir le trafic d'une même session HTTP vers le même serveur dans la ferme|
-|SourceIp|Un algorithme de hash sera appliqué sur l'adresse IP source de la requête reçue par le service OVH Load Balancer.
+|SourceIp|Un algorithme de hash sera appliqué sur l'adresse IP source de la requête reçue par le service OVHcloud Load Balancer.
 
 Les éléments suivants auront un impact sur la redirection de trafic :
 
