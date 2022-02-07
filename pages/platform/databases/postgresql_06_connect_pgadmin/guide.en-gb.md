@@ -38,9 +38,6 @@ To interact with your PostgreSQL instance with pgAdmin 4 you need to install it.
 
 Please follow the official [pgAdmin](https://www.pgadmin.org/download/){.external} to get the latest information.
 
-Finally, copy the IP address of your PHP environment or Web Hosting plan, and keep it for later.
-In our example, we will use the (fake) IP 109.190.200.59.
-
 We are now ready to learn how to connect to our PostgreSQL instance.
 
 ### Configure your PostgreSQL instance to accept incoming connections
@@ -81,7 +78,7 @@ In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
 
-Click to authorize a new IP, and enter the previously found IP of your PHP environment or Web Hosting plan. In our case we will enter 109.190.200.59.
+Click to authorize a new IP, and enter the IP of your pgAdmin environment. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
 
@@ -105,11 +102,11 @@ Select the `Databases`{.action} tab to get the database name.
 
 #### Configuration
 
-Once logged to pgAdmin, from the main dashboard view select `Add new server`{.action} link
+Once logged to pgAdmin, from the Servers dashboard view select `Add new server`{.action} link
 
 ![pgAdmin Dashboard view](images/postgresql_06_connect_pgadmin-2022020413471615.png)
 
-In the **Create - Server** dialog, `General`{.action} tab fill the name field
+In the **Create - Server** dialog, `General`{.action} tab, fill the Name field
 
 ![Create - Server : General tab](images/postgresql_06_connect_pgadmin-20220204140701739.png)
 
@@ -132,13 +129,13 @@ Finally select the `SSL`{.action} tab and set the **SSL Mode** to **Require**
 > if needed you can ajust the connection timeout in the `Advanded`{.action} tab
 >
 
-Once saved, select your server in the server list on left and in the Dashboard view, you can observe that the connection is active :
+Once saved, select your server in the servers list on left and in the Dashboard view, you can observe that the connection is active :
 
 ![Connection Dashboard view](images/postgresql_06_connect_pgadmin-20220204142252902.png)
 
 > [!primary]
 >
-> pgAdmin is not only a query tool, you can, for example:
+> pgAdmin has [usefull functions](https://pgadmin.org/features){.external} such as:
 >
 > - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/6.4/backup_and_restore.html){.external} a single table, a schema, or a complete database.  
 > - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/6.4/role_dialog.html){.external}
