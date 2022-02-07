@@ -1,14 +1,15 @@
 ---
-title: Récupérer l’état de santé des serveurs
+title: Récupéreration de l’état de santé des serveurs
 slug: retrieve-servers-state
 universe: cloud
 excerpt: Recuperer l’etat des serveurs
 section: Visualiser
 ---
+**Dernière mise à jour le 07/02/2022**
 
+## Objectif
 
-## Presentation
-Le service OVH Load Balancer agit par défault comme un mandataire ou "Proxy". C'est à dire qu'il répartit la charge (les requêtes) qu'il reçoit entre tous les serveurs de la ferme voulue.
+Le service OVHcloud Load Balancer agit par défault comme un mandataire ou "Proxy". C'est à dire qu'il répartit la charge (les requêtes) qu'il reçoit entre tous les serveurs de la ferme voulue.
 
 Chaque serveur peut être configuré pour que le répartiteur de charge vérifie son état fréquemment.
 
@@ -18,12 +19,20 @@ Cela peut être pratique dans le cas de la maintenance d'un serveur : on "sort" 
 
 Cependant, quand un serveur est "sorti" de la ferme par le répartiteur de charge indépendamment de notre volonté, il peut être intéressant de le savoir et d'en connaître la raison.
 
-Ce tutoriel explique comment connaître l'état de santé de chaque serveurs pour chaque instance de votre OVH Load Balancer.
+Ce tutoriel explique comment connaître l'état de santé de chaque serveurs pour chaque instance de votre OVHcloud Load Balancer.
 
+## Prérequis
+
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votreà l'[API OVH](https://api.ovh.com/){.external}.
+- Posséder une ferme configurée
+- Posséder un Frontend configuré
 
 ## Recuperer l'etat de sante des serveurs
 
-### Via l'API
+### Depuis l'API OVHcloud
+
 Dans l'API, l'état de santé des serveurs sont disponibles dans le tableau serverState :
 
 
@@ -44,7 +53,8 @@ Dans l'API, l'état de santé des serveurs sont disponibles dans le tableau serv
 Sur l'image ci-dessus, nous avons le résultat de la commande dans l'API.
 
 
-### Via le Manager
+### Depuis l'espace client OVHcloud
+
 Dans la section "Fermes", après avoir sélectionné l'une d'entre elles, l'état de chacun de ses serveurs est affiché dans la ligne correspondant à celui-ci.
 
 
@@ -59,7 +69,7 @@ Afin d'obtenir les détails sur l'état de santé d'un serveur, il suffit de cli
 
 
 ### Explication du detail
-Comme expliqué précédemment, nous avons bien récupéré l'état de santé du serveur pour chaque instance de votre OVH Load Balancer.
+Comme expliqué précédemment, nous avons bien récupéré l'état de santé du serveur pour chaque instance de votre OVHcloud Load Balancer.
 
 Pour chaque instance, nous avons plusieurs informations :
 
@@ -74,9 +84,14 @@ Pour chaque instance, nous avons plusieurs informations :
 
 ## Annexe
 
-### Recuperer la liste des instances de votre OVH Load Balancer
+### Recuperer la liste des instances de votre OVHcloud Load Balancer
 
 > [!api]
 >
 > @api {GET} /ipLoadbalancing/{serviceName}/instancesState
 > 
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
