@@ -1,24 +1,33 @@
 ---
-title: Configurer le vRack sur le load balancer
+title: Configuration d'un Vrack sur le load balancer
 slug: configurer-vrack-sur-load-balancer
 excerpt: Voici comment configurer le vRack sur un Load Balancer
 section: Configuration
 ---
+**Dernière mise à jour le 07/02/2022**
 
-## Introduction
+## Objectif
 
-Ce guide a pour but de vous aider à lier et à configurer votre Load Balancer dans le vRack via l'APIv6 OVH.
+Ce guide a pour but de vous aider à lier et à configurer votre Load Balancer dans le vRack via l'APIv6 OVHcloud.
 
 Le vRack est un réseau privé dédié qui crée un lien entre tous vos produits cloud. Pour plus d'informations n'hésitez pas à consulter la page sur le [vRack](https://www.ovh.com/fr/solutions/vrack/)
 
-Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la présentation générale du service [Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/).
+Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons de consulter la présentation générale du service [Load Balancer](https://docs.OVHcloud.com/fr/load-balancer/iplb-presentation/).
+
+## Prérequis
+
+- Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votreà l'[API OVH](https://api.ovh.com/){.external}.
+- Posséder une ferme configurée
+- Posséder un Frontend configuré
 
 > [!warning]
 >
 > Attention, une fois liées à votre vRack, les fermes de votre Load Balancer seront dans l'incapacité de communiquer avec vos serveurs via leurs adresses IP publiques. Vous serez alors obligé d'utiliser leur adresse IP privée à l'intérieur du vRack.***
 >
 
-## Lister les services Load Balancer éligibles au vRack
+### Lister les services Load Balancer éligibles au vRack
 
 Vous pouvez consulter la liste de vos services Load Balancer pouvant être connectés à un vRack.
 
@@ -96,3 +105,9 @@ Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce fai
 Vous pouvez maintenant utiliser les call API habituels ou même l'espace client pour continuer la configuration du Load Balancer.
 
 Pour rappel, un guide de configuration du Load Balancer est disponible: [https://docs.ovh.com/fr/load-balancer/configure-iplb](https://docs.ovh.com/fr/load-balancer/configure-iplb/).
+
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
