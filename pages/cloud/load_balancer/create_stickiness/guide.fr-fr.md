@@ -73,7 +73,7 @@ cliquez sur `Appliquer la configuration`{.action}.
 ![Application d'une Configuration d'un Load Balancer](images/apply_configuration.png){.thumbnail}
 
 
-### Modifier le mode de suivi de connexion d'une ferme via l'API
+### Modifier le mode de suivi de connexion d'une ferme depuis l'API OVHcloud
 
 #### Voir le détail d'une ferme
 
