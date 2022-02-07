@@ -13,7 +13,7 @@ Le service OVHcloud Load Balancer agit comme un mandataire ou "Proxy". Comme un 
 
 Pour le visiteur, cela ne pose aucun soucis. Il n'a pas besoin de connaître avec précision le serveur qui répond à sa requête. C'est un détail d'implémentation. En revanche, pour des raisons de statistique et de sécurité, il est parfois indispensable que le serveur final ait connaissance de la véritable adresse du client, or, par défaut, il ne voit que le mandataire (en l’occurrence, votre service OVHcloud Load Balancer).
 
-Si vous utilisez un `Frontend`{.action} HTTP, nous vous recommandons le guide [Travailler avec les en-têtes HTTP](../http-headers/) qui décrit la manière standard d'utiliser les En-Têtes HTTP pour retrouver l'adresse IP, le port ainsi que le protocole source.
+Si vous utilisez un `Frontend`{.action} HTTP, nous vous recommandons le guide [Configuration d'un service OVHCloud Load Balancer  en-têtes HTTP](../http-headers/) qui décrit la manière standard d'utiliser les En-Têtes HTTP pour retrouver l'adresse IP, le port ainsi que le protocole source.
 
 Si vous utilisez un `Frontend`{.action} TCP, alors ce guide est pour vous.
 
@@ -281,3 +281,9 @@ sudo apt install haproxy
 ```bash
 service haproxy reload
 ```
+
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
