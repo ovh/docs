@@ -31,20 +31,25 @@ In the vSphere interface menu, go to the `Networking and Security`{.action} dash
 ![Menu](images/en01dash.png){.thumbnail}
 
 Right click on your Datacenter.<br>
-Select New Cluster.
+Select `New Cluster`{.action}.
 
+![New Cluster](images/en02newcluster.png){.thumbnail}
 
-![New Cluster](images/CreateCluster.png){.thumbnail}
+In the pop up window, name your cluster and select the relevant options you want set.
 
-Une nouvelle fenêtre apparaîtra.
-
-Vous pourrez donner un nom à votre cluster et configurer les options de base.
+![Cluster](images/en03cluster.png){.thumbnail}
 
 
 > [!success]
 >
 > Ces options peuvent être modifier par la suite, lorsque le cluster est crée, mais il est préférable de le faire lors de création.
 > 
+
+> [!warning]
+>
+> vSAN requires vSAN compatible hosts. Check out here how to order them if you need.
+> 
+
 
 ### DRS
 
