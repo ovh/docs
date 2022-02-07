@@ -3,9 +3,9 @@ title: 'Erste Schritte mit CloudDB'
 slug: erste-schritte-mit-clouddb
 routes:
     canonical: 'https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/'
-legacy_guide_number: 2216
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die CloudDB Lösung verwenden'
-section: 'Erste Schritte'
+section: 'CloudDB'
+order: 1
 ---
 
 > [!primary]
