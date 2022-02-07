@@ -30,7 +30,7 @@ __A titre d’exemple :__
 
 ## Prérequis
 
-Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](../configure-iplb/). Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
+Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVHcloud Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de consulter le guide [Configurer un service OVHcloud Load Balancer HTTP/HTTPS](../configure-iplb/). Ce guide est plus particulièrement orienté sur les services TCP mais les principes généraux sont les mêmes.
 
 Vous devez disposez de :
 
