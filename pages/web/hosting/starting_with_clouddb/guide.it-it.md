@@ -3,7 +3,6 @@ title: 'Inziare a utilizzare CloudDB'
 slug: iniziare-a-utilizzare-clouddb
 routes:
     canonical: 'https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/'
-legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 section: 'CloudDB'
 order: 1
