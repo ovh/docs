@@ -24,7 +24,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud
 - Disposer d'un accès administrateur (root/sudo) à votre serveur via SSH
 
 ## En pratique
@@ -40,7 +40,7 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 Les développeurs de systèmes de distribution et d'exploitation proposent des mises à jour fréquentes de progiciels, très souvent pour des raisons de sécurité. **Garder votre distribution ou votre système d'exploitation à jour est primordial pour la sécurisation de votre serveur.**
 
-Consultez notre guide sur la [sécurisation d'un serveur dédié](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/) pour plus d'informations.
+Consultez notre guide sur la [sécurisation d'un serveur dédié](https://docs.ovh.com/ca/fr/dedicated/securiser-un-serveur-dedie/) pour plus d'informations.
 
 ### Etape 2 : installer le pare-feu Iptables sous Ubuntu
 
@@ -133,7 +133,7 @@ Les options fonctionnent ainsi :
 > [!warning]
 > En cas de perte d'accès à votre serveur, vous pouvez toujours utiliser l'outil KVM/IPMI pour y accéder à nouveau et modifier votre configuration ou supprimer vos règles.
 >
-> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/).  
+> Pour plus d'informations sur l'accès à cet outil, veuillez consulter [ce guide](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies/).
 > 
 
 ### Etape 6 : contrôler le trafic par adresse IP
