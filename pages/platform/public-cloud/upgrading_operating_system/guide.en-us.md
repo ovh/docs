@@ -14,7 +14,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 > [!alert]
 > Warning: As with any major release upgrade of an operating system there is risk of failure, data loss or broken software configuration. 
-> Therefore, OVHcloud strongly recommends to [backup your instance](../back-up-instance) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
+> Therefore, OVHcloud strongly recommends to [backup your instance](../back-up-instance/) and conduct extensive testing on your applications to make sure they work on the new operating system version prior to following this tutorial.
 >
 
 > [!primary]
@@ -25,7 +25,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 ## Requirements
 
 - [Root access](../become_the_root_user_and_select_a_password/) to the server
-- [Backup](../back-up-instance) must be taken before starting
+- [Backup](../back-up-instance/) must be taken before starting
 
 ## Instructions
 
@@ -33,7 +33,7 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 
 Before starting with the major release upgrade, make sure that you update to the latest versions of all packages installed on the current release:
 
-```sh
+```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get full-upgrade
@@ -44,19 +44,19 @@ $ sudo apt-get full-upgrade
 > However, you must carefully review packages that are no longer needed on the system. Otherwise, the following command might break the system. 
 >
 
-```sh
+```bash
 $ sudo apt-get --purge autoremove
 ```
 
-There may have been some update which may require a reboot and therefore we must reboot first before we start upgrading:
+There may have been some updates which may require a reboot and therefore we must reboot first before we start upgrading:
 
-```sh
+```bash
 $ sudo systemctl reboot
 ```
 
 After the reboot we will update the /etc/apt/sources.list to target the next release (in this case we go from Buster to Bullseye):
 
-```sh
+```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
 $ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
@@ -66,19 +66,19 @@ $ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 Now that we are target the next release, lets to the upgrade and reboot at the end:
 
 > [!primary]
-> You mat have popups asking you about restarting services. Answer them yes.
+> You may have popups asking you about restarting services. Answer them yes.
 >
 
-```sh
+```bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
 $ sudo apt-get full-upgrade
 $ sudo systemctl reboot
 ```
 
-Lets verify the upgrade has worked:
+Verify the upgrade has worked:
 
-```sh
+```bash
 $ uname -r
 $ lsb_release -a
 ```
@@ -87,25 +87,25 @@ $ lsb_release -a
 
 Before starting with the major release upgrade, make sure that you update to the latest versions of all packages installed on the current release:
 
-```sh
+```bash
 $ sudo apt-get update
 ```
 
 Next, you must upgrade your installed packages to their latest versions:
 
-```sh
+```bash
 $ sudo apt-get upgrade -y
 ```
 
 Once it has finished, you are ready to do dist-upgrade which will perform further upgrades that may need to be done:
 
-```sh
+```bash
 $ sudo apt-get dist-upgrade -y
 ```
 
 Finally, you are now ready for the major release upgrade. Ubuntu is now providing a tool called "do-release-upgrade" which makes upgrading safer and easier. Let's start with the upgrade:
 
-```sh
+```bash
 $ sudo do-release-upgrade
 ```
 
@@ -120,7 +120,7 @@ Please note:
 Once the upgrade has completed, the server will reboot itself and you will lose connection until it boots up again.
 Few minutes later you should be able to log in and see a message similar as the following (the version will be the next available version compared to your previous version):
 
-```sh
+```bash
 $ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 ```
 
@@ -134,26 +134,26 @@ Now verify if your applications are working as expected. In case there are issue
 
 Before starting with the major release upgrade, you first need to ensure that you will update to the latest versions of all packages installed on the current release. Enter this command:
 
-```sh
+```bash
 $ sudo dnf upgrade --refresh
 ```
 
 Now reboot the server:
 
-```sh
+```bash
 $ reboot
 ```
 
 Once the server is rebooted, install the upgrade package:
 
-```sh
+```bash
 $ sudo dnf install dnf-plugin-system-upgrade
 ```
 
 Now that you have the required package, you can perform the upgrade. System upgrades are only officially supported and tested over 2 releases at most (e.g. from 32 to 34). 
 In this example we will upgrade from Fedora 32 to 33:
 
-```sh
+```bash
 $ sudo dnf system-upgrade download --releasever=33
 $ sudo dnf system-upgrade reboot
 ```
