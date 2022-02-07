@@ -4,7 +4,7 @@ slug: configurer-des-cles-ssh-supplementaires
 excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
 legacy_guide_number: 1924
 section: 'Tutoriels'
-order: 1
+order: 01
 ---
 
 **Dernière mise à jour le 04/02/2022**
@@ -17,24 +17,24 @@ Lors de la création d’une instance, une seule clé SSH peut être configurée
 
 ## Prérequis
 
-- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
-## Instructions
+## En pratique
 
 > [!primary]
 >
-Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
+Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est pas pris en charge actuellement.
 >
 
 ### Création de la clé SSH
 
-Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes du Public Cloud](../public-cloud-first-steps/).
+Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes avec Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/).
 
 ### Configuration du nouvel utilisateur
 
-[Connectez-vous à votre instance en SSH](../premiers-pas-instance-public-cloud/#connect-to-instance) et créez un nouvel utilisateur à l'aide des commandes ci-dessous :
+[Connectez-vous à votre instance en SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide des commandes ci-dessous :
 
 ```bash
 ~$ sudo adduser user2
@@ -79,17 +79,17 @@ Désormais, vous pouvez vous connecter avec l'utilisateur et la clé privée con
 ```bash
 ~$ ssh user2@instance_IP
 ```
+
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
 
 user2@server:~$
 ```
 
-
 ## Aller plus loin
 
-[Les premiers pas du Public Cloud](../public-cloud-first-steps/)
+[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
 
-[Remplacement de votre paire de clés SSH perdue](../changer-sa-cle-ssh-en-cas-de-perte/)
+[Changer sa clé SSH en cas de perte](https://docs.ovh.com/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
