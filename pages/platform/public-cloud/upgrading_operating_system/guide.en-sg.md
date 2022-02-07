@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 14
 ---
 
-**Last updated 9th July 2021**
+**Last updated 7th February 2022**
 
 ## Objective
 
@@ -28,6 +28,60 @@ This tutorial will provide you with the steps to upgrade an end of life operatin
 - [Backup](../back-up-instance) must be taken before starting
 
 ## Instructions
+
+### Debian
+
+Before starting with the major release upgrade, make sure that you update to the latest versions of all packages installed on the current release:
+
+```sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Warning: The following is an optional step. 
+> However, you must carefully review packages that are no longer needed on the system. Otherwise, the following command might break the system. 
+>
+
+```sh
+$ sudo apt-get --purge autoremove
+```
+
+There may have been some update which may require a reboot and therefore we must reboot first before we start upgrading:
+
+```sh
+$ sudo systemctl reboot
+```
+
+After the reboot we will update the /etc/apt/sources.list to target the next release (in this case we go from Buster to Bullseye):
+
+```sh
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Now that we are target the next release, lets to the upgrade and reboot at the end:
+
+> [!primary]
+> You mat have popups asking you about restarting services. Answer them yes.
+>
+
+```sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Lets verify the upgrade has worked:
+
+```sh
+$ uname -r
+$ lsb_release -a
+```
 
 ### Ubuntu
 
