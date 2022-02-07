@@ -6,19 +6,33 @@ section: Fonctionnalités VMware vSphere
 order: 01
 ---
 
-**Dernière mise à jour le 10 janvier 2019**
+**Dernière mise à jour le 07/02/2022**
 
-## Objectifs
+## Objectif
 
-Il est possible de créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.
+Il est possible de créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.<br>
+Découvrez comment créer et configurer les fonctionaltités de clusters (DRS, HA & EVC).
 
-**Ce guide explique les différentes options.**
+**Ce guide est un cas d'étude avec les étapes d'installation et configuration.**
 
-## Création du cluster
+## Prérequis
 
-Afin de créer un cluster, faites un clic-droit sur votre datacentre vituel.
+- Être contact administrateur du [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
-Cliquez ensuite sur "New Cluster...".
+
+## En pratique
+
+### Accès à l'interface
+
+Dans l'interface vSphere, allez dans le tableau de bord `Hôtes et clusters`{.action}.
+
+![MENU](images/en01dash.png){.thumbnail}
+
+### Création du cluster
+
+Faites un clic-droit sur votre datacentre vituel.<br>
+Cliquez sur Nouveau cluster.
 
 
 ![New Cluster](images/CreateCluster.png){.thumbnail}
