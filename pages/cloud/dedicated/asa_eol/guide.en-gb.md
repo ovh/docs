@@ -6,7 +6,7 @@ section: Cisco ASA Firewall
 order: 01
 ---
 
-**Last updated 17th December 2021**
+**Last updated 7th February 2022**
 
 ## Summary
 
@@ -41,4 +41,4 @@ This end-of-life includes:
 
 OVHcloud recommends using your dedicated server’s OS firewall: Linux iptable or Microsoft Windows Firewall.
 
-OVHcloud will soon make a guide available, accessible from [this page](https://docs.ovh.com/gb/en/dedicated/securing-a-dedicated-server/#configure-the-internal-firewall-iptables), to help configure the Linux iptable firewall and the Microsoft Windows firewall.
+See our guides for [configuring the firewall on Linux with iptables](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/) or [configuring the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/firewall-windows/).
