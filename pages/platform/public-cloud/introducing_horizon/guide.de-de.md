@@ -3,7 +3,7 @@ title: Einführung in das Horizon Interface
 slug: horizon
 excerpt: Erfahren Sie hier, wie Sie das Horizon Interface verwenden
 section: Horizon
-order: 1
+order: 02
 ---
 
 > [!primary]

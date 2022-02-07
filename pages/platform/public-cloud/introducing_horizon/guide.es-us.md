@@ -3,7 +3,7 @@ title: Presentación de Horizon
 excerpt: Descubra las secciones principales de la interfaz de Horizon
 slug: horizon
 section: Gestión desde Horizon
-order: 2
+order: 02
 ---
 
 > [!primary]

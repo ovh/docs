@@ -3,7 +3,7 @@ title: 'Conectarse a Horizon'
 excerpt: 'Cómo conectarse al panel de control Horizon'
 slug: crear_un_acceso_a_horizon
 section: Gestión desde Horizon
-order: 1
+order: 01
 ---
 
 **Última actualización: 14/11/2019**
