@@ -1,22 +1,22 @@
 ---
-title: 'Travailler avec les routes HTTP'
+title: 'Configuration d'un service OVHCloud Load Balancer  avec les routes HTTP'
 slug: routes
 excerpt: 'Dirigez dynamiquement vos requêtes vers une ferme en particulier'
 section: Configuration
 ---
 
-**Dernière mise à jour le 09/04/2018**
+**Dernière mise à jour le 07/07/2022**
 
 ## Objectif
 
-Le service Load Balancer OVH redirige le trafic arrivant sur un Frontend vers les Serveurs de la Ferme par défaut de ce Frontend, ou sa redirection par défaut.
+Le service Load Balancer OVHcloud redirige le trafic arrivant sur un Frontend vers les Serveurs de la Ferme par défaut de ce Frontend, ou sa redirection par défaut.
 
-Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou rejeter le trafic selon divers critères. Par exemple, dans le cas d'un service HTTP(S), il est possible de filtrer le trafic en fonction de la méthode HTTP, de l'URL ou même de la valeur d'un Cookie ou d'un En-Tête ! Dans le service OVH Load Balancer, ce sont les `route`{.action}. Une route est une action particulière à réaliser si une ou plusieurs conditions sont réalisées.
+Dans certains cas, il est possible d'aller plus loin, et de router, rediriger ou rejeter le trafic selon divers critères. Par exemple, dans le cas d'un service HTTP(S), il est possible de filtrer le trafic en fonction de la méthode HTTP, de l'URL ou même de la valeur d'un Cookie ou d'un En-Tête ! Dans le service OVHcloud Load Balancer, ce sont les `route`{.action}. Une route est une action particulière à réaliser si une ou plusieurs conditions sont réalisées.
 
 ## Prérequis
 
-- Disposer d'un [Load Balancer OVH](https://www.ovh.com/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes
-- Avoir accès à l'[API OVH](https://api.ovh.com/){.external}.
+- Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} sur une offre autorisant la création des routes
+- Avoir accès à l'[API OVHcloud](https://api.ovh.com/){.external}.
 
 ## En pratique
 
@@ -43,17 +43,17 @@ Il s'agit d'une action « finale ». C'est à dire que si les règles sont valid
 
 ## Présentation de l'API
 
-La gestion des routes n'est accessible qu'au travers de l'[API OVH](https://api.ovh.com/){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
+La gestion des routes n'est accessible qu'au travers de l'[API OVHcloud](https://api.ovh.com/){.external}. Elle est valide uniquement pour les protocoles `http`{.action} et `tcp`{.action}, le chemin `/ipLoadbalancing/{serviceName}/{protocole}/route/`{.action} expose l'API dédiée aux routes.
 
-L'API des routes de votre service OVH Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de trois sections principales :
+L'API des routes de votre service OVHcloud Load Balancer a été pensée spécialement pour être souple, puissante et évolutive. Elle est organisée autour de trois sections principales :
 
 1. les API listant les règles et actions disponibles.
-2. les API listant les routes configurées sur votre service OVH Load Balancer.
-3. les API de configuration des routes de votre service OVH Load Balancer.
+2. les API listant les routes configurées sur votre service OVHcloud Load Balancer.
+3. les API de configuration des routes de votre service OVHcloud Load Balancer.
 
 > [!primary]
 >
-> Pour n'afficher que les API liées aux routes dans la console d'API OVH, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
+> Pour n'afficher que les API liées aux routes dans la console d'API OVHcloud, vous pouvez utiliser le champ `filter`{.action} avec le mot clé route.
 > 
 
 Lorsque vous souhaitez configurer une route ou des règles, la première chose à faire est de consulter les actions et les règles disponibles. Cela vous donnera les valeurs possibles pour les champs des APIs de configuration des routes et des règles.
@@ -62,7 +62,7 @@ Lorsque vous souhaitez configurer une route ou des règles, la première chose �
 - Une route peut être attachée à un et un seul Frontend.
 - Un Frontend peut avoir plusieurs routes. Dans ce cas, l'ordre d'évaluation dépend de leur type et de leur poids.
 
-Quand une requête arrive sur votre service OVH Load Balancer, les routes sont évaluées successivement en suivant ces principes :
+Quand une requête arrive sur votre service OVHcloud Load Balancer, les routes sont évaluées successivement en suivant ces principes :
 
 1. d'abord les routes de type reject et rewrite puis enfin les routes de type farm ;
 1. à l'intérieur de ces catégories, les routes sont évaluées par poids croissant ;
@@ -70,7 +70,7 @@ Quand une requête arrive sur votre service OVH Load Balancer, les routes sont �
 1. seule la première action dont toutes les règles sont validées est exécutée.
 
 ### Règles et actions disponibles
-Cette première section de l'API contient une liste à jour des actions et règles disponibles pour votre service OVH Load Balancer. Elle contient un appel pour les actions et un autre pour les règles. Ces 2 appels retournent une liste d'objets. Chaque objet indique son nom et s'il s'applique aux routes TCP ou aux routes HTTP ainsi que les valeurs ou types de valeur attendues pour les différents champs de l'API. Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une valeur invalide est fournie, l'API retournera une erreur de validation.
+Cette première section de l'API contient une liste à jour des actions et règles disponibles pour votre service OVHcloud Load Balancer. Elle contient un appel pour les actions et un autre pour les règles. Ces 2 appels retournent une liste d'objets. Chaque objet indique son nom et s'il s'applique aux routes TCP ou aux routes HTTP ainsi que les valeurs ou types de valeur attendues pour les différents champs de l'API. Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une valeur invalide est fournie, l'API retournera une erreur de validation.
 
 
 #### Actions
@@ -112,13 +112,13 @@ Pour plus d'informations sur ces méthodes, vous pouvez consulter la section [Ma
 
 
 ## Exemples
-Si vous n'êtes pas encore convaincu par la puissance des routes, cette section devrait vous convaincre pour de bon. Sans rentrer dans le détail des appels d'APIs, elle a pour vocation de présenter comment réaliser plusieurs cas d'utilisation inspirés de nos besoins internes chez OVH.
+Si vous n'êtes pas encore convaincu par la puissance des routes, cette section devrait vous convaincre pour de bon. Sans rentrer dans le détail des appels d'APIs, elle a pour vocation de présenter comment réaliser plusieurs cas d'utilisation inspirés de nos besoins internes chez OVHcloud.
 
 Vous trouverez le détail des appels d'API dans la section [Manipulation des routes](#manipulation-des-routes){.internal}, en bas de ce guide et les sections suivantes.
 
 
 ### Forcer le HTTPS pour les pages de login Wordpress
-Le HTTPS est devenu la norme. L'objectif est de rendre tous les sites disponibles de manière sécurisée en HTTPS grâce au protocole SSL/TLS. Si vous avez besoin d'un certificat SSL/TLS, vous pouvez utiliser votre service OVH Load Balancer pour en commander un qui sera géré pour vous de manière complètement automatique.
+Le HTTPS est devenu la norme. L'objectif est de rendre tous les sites disponibles de manière sécurisée en HTTPS grâce au protocole SSL/TLS. Si vous avez besoin d'un certificat SSL/TLS, vous pouvez utiliser votre service OVHcloud Load Balancer pour en commander un qui sera géré pour vous de manière complètement automatique.
 
 Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de "[Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external}". Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
 
@@ -131,7 +131,7 @@ Dans la pratique, cela donne une route :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend HTTP|
 |displayName|"Redirection des connexions Wordpress vers HTTPS"|
 |weight|(vide)|
@@ -143,7 +143,7 @@ Et sur cette route, on vient attacher une règle :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |routeId|Identifiant de la Route créée juste au dessus|
 |field|"uri"|
 |subField|(vide)|
@@ -164,7 +164,7 @@ Il ne reste qu'à appliquer la configuration dans la zone concernée et le tour 
 ### Router en fonction d'un domaine (VHost)
 C'est la fonctionnalité qui a rendu possible l'essor du web quand il en était à ses balbutiements, avec la possibilité d'exposer plusieurs sites derrière une même adresse IP grâce au champ "Host" des En-Têtes HTTP.
 
-Par exemple, si votre infrastructure est composée d'un VPS par site Internet et d'un service OVH Load Balancer pour assurer la terminaison SSL/TLS et la redirection vers une page de maintenance avec un serveur de "backup" dans les Farms, il était auparavant nécessaire de disposer d'une IP Failover par site, routée vers votre service OVH Load Balancer et un Frontend par IP.
+Par exemple, si votre infrastructure est composée d'un VPS par site Internet et d'un service OVHcloud Load Balancer pour assurer la terminaison SSL/TLS et la redirection vers une page de maintenance avec un serveur de "backup" dans les Farms, il était auparavant nécessaire de disposer d'une IP Failover par site, routée vers votre service OVHcloud Load Balancer et un Frontend par IP.
 
 Avec les routes, il devient possible de mutualiser le même Frontend et choisir la Farm de serveurs dynamiquement en fonction du champ "Host".
 
@@ -177,7 +177,7 @@ Dans la pratique, pour router le domaine www.example.com, cela donne une route :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend|
 |displayName|"VHost - www.example.com"|
 |weight|(vide)|
@@ -189,7 +189,7 @@ Et sur cette route, on vient attacher une règle :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |routeId|Identifiant de la Route créée juste au dessus|
 |field|"host"|
 |subField|(vide)|
@@ -201,7 +201,7 @@ Il ne reste qu'à appliquer la configuration.
 
 
 ### Réserver une IP Failover à un site en particulier
-Si l'on reste sur le scénario de l'hébergement à base de VPS, on peut souhaiter dédier une adresse IP à un client donné. Rendre l'IP disponible se fait facilement en la routant vers votre service OVH Load Balancer puis en configurant un Frontend dédié attaché à cette adresse IP Failover et ayant comme defaultFarmId le VPS cible de ce client.
+Si l'on reste sur le scénario de l'hébergement à base de VPS, on peut souhaiter dédier une adresse IP à un client donné. Rendre l'IP disponible se fait facilement en la routant vers votre service OVHcloud Load Balancer puis en configurant un Frontend dédié attaché à cette adresse IP Failover et ayant comme defaultFarmId le VPS cible de ce client.
 
 Néanmoins, que se passe-t-il si un autre client détecte cela et configure son domaine pour pointer vers l'adresse IP du client premium ? Par défaut, cela fonctionnera et son site sera routé vers l'autre VPS. S'il y a un certificat SSL/TLS, cela fonctionnera quand même car l'ensemble des certificats sont automatiquement disponibles pour l'ensemble des Frontends.
 
@@ -211,7 +211,7 @@ Dans la pratique, pour réserver un Frontend avec une IP dédiée au domaine www
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend|
 |displayName|"Restrict to www.example.com"|
 |weight|(vide)|
@@ -223,7 +223,7 @@ Et sur cette route, on vient attacher une règle :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |routeId|Identifiant de la Route créée juste au dessus|
 |field|"host"|
 |subField|(vide)|
@@ -248,7 +248,7 @@ Dans la pratique, cela donne une route :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend|
 |displayName|"Route batch analytics to dedicated farm"|
 |weight|(vide)|
@@ -260,7 +260,7 @@ Et sur cette route, on vient attacher 2 règles :
 
 |Champ|Règle 1|Règle 2|
 |---|---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|idem|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|idem|
 |routeId|Identifiant de la Route créée juste au dessus|idem|
 |field|"method"|"uri"|
 |subField|(vide)|(vide)|
@@ -276,7 +276,7 @@ Il ne reste qu'à appliquer la configuration dans la zone concernée.
 ### Router certaines IP et les clients volontaires vers la preproduction
 Quand un site prend de l'ampleur, on peut souhaiter mettre en place un environnement de préproduction permettant de valider les évolutions en cours, sans impacter la majorité des utilisateurs. Généralement, lorsque l'on configure ce type environnement, on cherche à réduire autant que possible l'écart entre la production et la préproduction de manière à détecter les problèmes avec le plus de précision possible. Une source de problème classique et pourtant souvent négligée est le nom de domaine. Il est parfois codé "en dur" dans un fichier ou un article. À ce moment, un lien pourra fonctionner en préproduction mais pas en production. Oups...
 
-Au lieu de mettre en place des règles basées sur le nom de domaine, on pourrait mettre en place des règles basées sur l'adresse IP source (par exemple, un proxy d'entreprise) et, éventuellement un Cookie pour les clients volontaires. Ces configurations peuvent être détectées avec deux routes sur votre service OVH Load Balancer.
+Au lieu de mettre en place des règles basées sur le nom de domaine, on pourrait mettre en place des règles basées sur l'adresse IP source (par exemple, un proxy d'entreprise) et, éventuellement un Cookie pour les clients volontaires. Ces configurations peuvent être détectées avec deux routes sur votre service OVHcloud Load Balancer.
 
 Pour cet exemple, on considérera :
 
@@ -287,7 +287,7 @@ Dans la pratique, vous aurez besoin de deux routes identiques :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend|
 |displayName|"Route Opt-In and internal users to preproduction environment"|
 |weight|(vide)|
@@ -299,7 +299,7 @@ Puis on vient attacher les 2 règles suivantes, chacune sur une des routes (1 r�
 
 |Champ|Règle 1|Règle 2|
 |---|---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|idem|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|idem|
 |routeId|Identifiant de la 1ère Route|Identifiant de la 2ème Route|
 |field|"source"|"cookie"|
 |subField|(vide)|"PreprodOptIn"|
@@ -326,7 +326,7 @@ Dans la pratique, il suffit de détecter le premier En-Tête. Cela peut se faire
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |frontendId|Identifiant de votre Frontend|
 |displayName|"Route WebSockets to a dedicated farm"|
 |weight|(vide)|
@@ -338,7 +338,7 @@ Et sur cette route, on vient attacher une règle :
 
 |Champ|Valeur et description|
 |---|---|
-|serviceName|Identifiant de votre service OVH Load Balancer|
+|serviceName|Identifiant de votre service OVHcloud Load Balancer|
 |routeId|Identifiant de la Route créée juste au dessus|
 |field|"header"|
 |subField|"Upgrade"|
@@ -372,7 +372,7 @@ Cet appel retourne la liste des identifiants numériques des routes définies po
 |frontendId||Identifiant numérique d'un Frontend HTTP auquel les routes sont attachées|
 
 #### Créer une route
-Cet appel permet de créer une route. Seule l'action est obligatoire. Une route peut être attachée et détachée d'un Frontend. Il est possible de créer jusqu'à 50 routes sur un service OVH Load Balancer. Cet appel retourne la route créée en cas de succès. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de créer une route. Seule l'action est obligatoire. Une route peut être attachée et détachée d'un Frontend. Il est possible de créer jusqu'à 50 routes sur un service OVHcloud Load Balancer. Cet appel retourne la route créée en cas de succès. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -435,7 +435,7 @@ Pour plus d'information sur les actions gérées ainsi que le format des paramè
 
 
 #### Modifier une route
-Cet appel permet de modifier une route HTTP, connaissant son identifiant. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de modifier une route HTTP, connaissant son identifiant. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -458,7 +458,7 @@ Pour plus d'information sur les actions gérées ainsi que le format des paramè
 
 
 #### Supprimer une route
-Cet appel permet de supprimer une route HTTP, connaissant son identifiant. Lorsqu'une route est supprimée, l'ensemble des règles associées à cette route sont supprimées également. Il n'est pas nécessaire de les supprimer individuellement. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de supprimer une route HTTP, connaissant son identifiant. Lorsqu'une route est supprimée, l'ensemble des règles associées à cette route sont supprimées également. Il n'est pas nécessaire de les supprimer individuellement. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -488,7 +488,7 @@ Cet appel retourne la liste des identifiants numérique des règles définies po
 |routeId|Requis|Identifiant numérique de la route|
 
 #### Attacher une règle
-Cet appel permet d'attacher une règle à une route. Il est possible d'attacher jusqu'à 5 règles par route sur un service OVH Load Balancer. Cet appel retourne la règle créée en cas de succès. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet d'attacher une règle à une route. Il est possible d'attacher jusqu'à 5 règles par route sur un service OVHcloud Load Balancer. Cet appel retourne la règle créée en cas de succès. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -566,7 +566,7 @@ Pour plus d'information sur les règles gérées ainsi que le format des paramè
 
 
 #### Modifier une règle
-Cet appel permet de modifier une règle attachée à une route HTTP, connaissant son identifiant. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de modifier une règle attachée à une route HTTP, connaissant son identifiant. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -589,7 +589,7 @@ Pour plus d'information sur les règles gérées ainsi que le format des paramè
 
 
 #### Supprimer une règle
-Cet appel permet de supprimer une règle attachée à une route HTTP, connaissant son identifiant. Votre service OVH Load Balancer doit être re-déployé pour appliquer les changements.
+Cet appel permet de supprimer une règle attachée à une route HTTP, connaissant son identifiant. Votre service OVHcloud Load Balancer doit être re-déployé pour appliquer les changements.
 
 
 > [!api]
@@ -610,7 +610,7 @@ Cet appel permet de supprimer une règle attachée à une route HTTP, connaissan
 
 
 #### Lister l'ensemble des routes TCP et HTTP
-Cet appel permet de lister l'ensemble des identifiants, nom d'affichage et type ("http"/"tcp") des routes définies sur un service OVH Load Balancer. Il a été pensé pour simplifier l'implémentation d'auto-complétion.
+Cet appel permet de lister l'ensemble des identifiants, nom d'affichage et type ("http"/"tcp") des routes définies sur un service OVHcloud Load Balancer. Il a été pensé pour simplifier l'implémentation d'auto-complétion.
 
 
 > [!api]
@@ -637,7 +637,7 @@ Cet appel retourne la liste des actions disponibles pour les routes TCP et HTTP 
 
 Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une valeur invalide est fournie, l'API retournera une erreur de validation.
 
-L'ensemble des actions gérées par le service OVH Load Balancer sont finales. C'est à dire que l’exécution d'une action entraîne également la fin de l'évaluation des routes.
+L'ensemble des actions gérées par le service OVHcloud Load Balancer sont finales. C'est à dire que l’exécution d'une action entraîne également la fin de l'évaluation des routes.
 
 
 > [!api]
@@ -797,7 +797,7 @@ Cette règle permet de filtrer les requêtes en fonction de leur protocole. Dans
 
 
 #### Adresse source
-Cette règle permet de filtrer les requêtes en fonction de leur adresse source. En la combinant avec une règle basée sur l'URI ou le nom de domaine, cela permet par exemple de restreindre certaines ressources à un proxy d'entreprise tout en exposant toutes les autres ressources sans restrictions au niveau de votre service OVH Load Balancer.
+Cette règle permet de filtrer les requêtes en fonction de leur adresse source. En la combinant avec une règle basée sur l'URI ou le nom de domaine, cela permet par exemple de restreindre certaines ressources à un proxy d'entreprise tout en exposant toutes les autres ressources sans restrictions au niveau de votre service OVHcloud Load Balancer.
 
 |Champs|Valeur|
 |---|---|
