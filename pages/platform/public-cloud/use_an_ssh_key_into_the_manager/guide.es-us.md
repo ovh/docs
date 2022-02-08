@@ -17,7 +17,7 @@ Existen dos formas de añadir una clave SSH desde la interfaz de Public Cloud:
 
 
 ### Requisitos:
-- Una [clave SSH](../crear-llave-ssh/){.ref}
+- Una [clave SSH](../public-cloud-primeros-pasos/)
 
 > [!primary]
 >

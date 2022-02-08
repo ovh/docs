@@ -31,7 +31,7 @@ Być może będziesz musiał skonfigurować adresy IP Failover na Twoich instanc
 
 ## W praktyce
 
-Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na logowaniu się do Twojej instancji przez SSH lub poprzez sesję logowania do interfejsu graficznego użytkownika (RDP dla instancji Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (administrator/sudo).
+Niniejszy przewodnik zawiera najpopularniejsze konfiguracje dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na logowaniu się do Twojej instancji przez SSH lub poprzez sesję logowania do interfejsu graficznego użytkownika (VNC dla instancji Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (administrator/sudo).
 
 > [!primary]
 >
@@ -167,7 +167,7 @@ sudo netplan apply
 
 Powtórz tę procedurę dla każdego adresu IP Failover.
 
-### Windows Server 2016
+### Windows Server (2016)
 
 #### Etap 1: sprawdź konfigurację sieci
 

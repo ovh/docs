@@ -32,7 +32,7 @@ Poderá ter de configurar endereços IP Failover nas suas instâncias, por exemp
 
 ## Instruções
 
-Este guia contém as configurações das distribuições/sistemas operativos mais frequentemente utilizados. A primeira etapa consiste sempre em ligar-se à sua instância através de SSH ou através de uma sessão de ligação à interface gráfica de utilizador (RDP para uma instância Windows). Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas (administrador/sudo).
+Este guia contém as configurações das distribuições/sistemas operativos mais frequentemente utilizados. A primeira etapa consiste sempre em ligar-se à sua instância através de SSH ou através de uma sessão de ligação à interface gráfica de utilizador (VNC para uma instância Windows). Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas (administrador/sudo).
 
 > [!primary]
 >
@@ -168,7 +168,7 @@ sudo netplan apply
 
 Repita este procedimento para cada endereço IP Failover.
 
-### Windows Server 2016
+### Windows Server (2016)
 
 #### Etapa 1: verificar a configuração de rede
 

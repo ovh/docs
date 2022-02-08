@@ -17,7 +17,7 @@ Per aggiungere una chiave SSH dall’interfaccia Public Cloud esistono due modi:
 
 
 ### Prerequisiti
-- [Aver creato una chiave SSH](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/){.ref}
+- [Aver creato una chiave SSH](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/)
 
 
 > [!primary]
