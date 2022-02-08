@@ -1,5 +1,5 @@
 ---
-title: Configuration d'un service OVHCloud Load Balancer  avec les redirections
+title: Configuration d'un service OVHcloud Load Balancer  avec les redirections
 slug: redirect-location
 universe: cloud
 excerpt: Intégrez vos services web derrière un Load Balancer avec les Redirections
@@ -10,7 +10,7 @@ section: Configuration
 
 ## Objectif
 
-Le service OVH Load Balancer agit par défault comme un mandataire ou "Proxy". Il peut aussi être configuré pour rediriger vos clients vers un site tiers dans le cas d'un changement de nom de domaine ou pour rediriger vos clients en HTTPS par exemple. C'est que l'on appelle la redirection HTTP.
+Le service OVHcloud Load Balancer agit par défault comme un mandataire ou "Proxy". Il peut aussi être configuré pour rediriger vos clients vers un site tiers dans le cas d'un changement de nom de domaine ou pour rediriger vos clients en HTTPS par exemple. C'est que l'on appelle la redirection HTTP.
 
 
 ## Prérequis
