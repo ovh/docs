@@ -4,7 +4,7 @@ excerpt : "Découvrez comment gérer et sécuriser l'accès à vos instances"
 slug: acces-et-securite-dans-horizon
 legacy_guide_number: 1774
 section: Gestion depuis Horizon
-order: 7
+order: 07
 ---
 
 **Dernière mise à jour le 26 mai 2021**

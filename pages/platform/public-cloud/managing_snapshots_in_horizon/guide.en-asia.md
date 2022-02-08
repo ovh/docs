@@ -2,7 +2,7 @@
 title: Managing snapshots of an instance in Horizon
 slug: manage-snapshots-of-instances-in-horizon
 section: Horizon
-order: 5
+order: 05
 ---
 
 **Last updated 31st January 2022**

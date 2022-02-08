@@ -10,7 +10,7 @@ order: 01
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 20-10-2021**
+**Ostatnia aktualizacja z dnia 07-02-2022**
 
 ## Wprowadzenie
 
@@ -135,6 +135,8 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |[Przypisz dodatkowy dysk do instancji](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)|Niniejszy przewodnik wyjaśnia, jak dodać przestrzeń dyskową do Twojej pierwszej instancji.|
 |[Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|
 |[Utwórz klaster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Niniejszy przewodnik ułatwi Ci realizację pierwszego klastra Kubernetes.|
+|[Konfiguracja IP Failover](https://docs.ovh.com/pl/public-cloud/konfiguracja-adresu-ip-failover/)|Adresy IP Failover pozwalają na przełączanie ruchu z jednej instancji na inną. Niniejszy przewodnik wyjaśnia, jak to skonfigurować.|
+|[Instalacja CLI OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)|OpenStack może być również używany w wierszu poleceń. Oto jak zainstalować narzędzia.|
 
 Jedną z największych zalet korzystania ze standardowych i otwartych technologii, takich jak OpenStack lub Kubernetes, jest dostęp do całej dostępnej dokumentacji.
 

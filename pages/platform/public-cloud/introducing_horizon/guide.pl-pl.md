@@ -3,7 +3,7 @@ title: Prezentacja Horizon
 slug: horizon
 excerpt: Poznaj najważniejsze sekcje interfejsu Horizon
 section: Zarządzanie w interfejsie Horizon
-order: 1
+order: 02
 ---
 
 > [!primary]

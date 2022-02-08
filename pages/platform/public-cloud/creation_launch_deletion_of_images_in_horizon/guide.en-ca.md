@@ -3,7 +3,7 @@ title: 'Creating, launching and deleting images in Horizon'
 slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
 section: Horizon
-order: 9
+order: 09
 ---
 
 **Last updated 30th December 2021**
