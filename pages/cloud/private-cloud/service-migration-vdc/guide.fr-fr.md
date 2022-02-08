@@ -688,6 +688,13 @@ Puis pour chaque ID :
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
+Dans le cas d'un datastore global, vous pouvez utiliser l'API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
+>
+
 Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
