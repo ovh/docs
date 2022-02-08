@@ -34,7 +34,7 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 
 Nous allons ajouter une route à notre service.
 
-#### Via l'API
+#### Depuis l'API OVHcloud
 
 > [!api]
 >
@@ -61,7 +61,7 @@ Nous allons ajouter une route à notre service.
 
 Nous allons maintenant ajouter une règle à notre route.
 
-#### Via l'API
+#### Depuis l'API OVHcloud
 
 > [!api]
 >
@@ -85,7 +85,7 @@ Les modifications apportées à votre OVHcloud Load Balancer doivent être *appl
 
 Si vous avez plusieurs zones, vous devrez appliquer la même configuration pour chacune d'elles.
 
-#### Via l'API
+####  Depuis l'API OVHcloud
 
 Rafraîchir une zone :
 
