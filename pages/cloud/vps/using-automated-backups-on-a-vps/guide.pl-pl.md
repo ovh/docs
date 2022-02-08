@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 16-06-2021**
+**Ostatnia aktualizacja: 01-02-2022**
 
 ## Wprowadzenie
 
@@ -31,7 +31,7 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `VPS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `Prywatne serwery wirtualne`{.action}.
 
 ### Krok 1: subskrybowanie opcji automatycznych kopii zapasowych
 
@@ -70,7 +70,7 @@ Kliknij ikonę `...`{.action} obok kopii zapasowej, do której chcesz uzyskać d
 
 Po ukończeniu procesu otrzymasz wiadomość e-mail. Teraz możesz się połączyć z prywatnym serwerem wirtualnym i dodać partycję, na której znajduje się kopia zapasowa.
 
-#### Krok 2: protokół SSH
+#### protokół SSH
 
 Najpierw połącz się z prywatnym serwerem wirtualnym przy użyciu protokołu SSH.
 
@@ -103,6 +103,26 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Teraz możesz się przełączyć do tego folderu i uzyskać dostęp do danych kopii zapasowej.
+
+#### Windows
+
+Utwórz połączenie RDP (Remote Desktop) z Twoim serwerem VPS.
+
+Po zalogowaniu kliknij prawym przyciskiem myszy przycisk `Start`{.action} i otwórz `Zarządzanie dyskami`{.action}.
+
+[disk management](images/windowsbackup1.png){.thumbnail}
+
+Podmontowana kopia zapasowa będzie wyglądać jak dysk podstawowy z tą samą przestrzenią dyskową co główny dysk.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+Dysk pojawi się jako `Offline`, kliknij prawym przyciskiem myszy na dysku i wybierz `Online`{.action}.
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+Następnie zamontowana kopia zapasowa będzie dostępna w `Eksplorator plików`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
 
 > [!warning]
 > Podczas odmontowywania kopii zapasowej nastąpi restart serwera.
