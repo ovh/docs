@@ -1,5 +1,5 @@
 ---
-title: 'Router une IP Failover'
+title: 'Routage d'une IP Failover'
 slug: route-ipfo
 excerpt: 'Router une IP failover'
 section: Configuration
@@ -77,7 +77,7 @@ Quelque soit le type de frontend que vous souhaitez utiliser, il est possible de
 Elle ne permettra donc d'accéder qu'aux services fournis par ce frontend.
 Les services de vos autres frontends restent quant à eux accessibles via l'adresse IP de votre IPLB.
 
-### Via l'API
+### Depuis l'API OVHcloud
 
 #### Création d'un Frontend
 
@@ -134,8 +134,9 @@ Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivan
 
 
 
-### Depuis le Manager
-Il est enfin possible de définir vos IPFOs dédiées depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
+### Depuis l'espace client OVHcloud
+
+Vous pouvez définir vos IPFOs dédiées depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.
