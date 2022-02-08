@@ -35,15 +35,11 @@ Select `New Cluster`{.action}.
 
 ![New Cluster](images/en02newcluster.png){.thumbnail}
 
-In the pop up window, name your cluster and select the relevant options you want set.
+In the pop up window, name your cluster and select the relevant options you want set.<br>
+Click `OK`{.action} when done.
 
 ![Cluster](images/en03cluster.png){.thumbnail}
 
-
-> [!success]
->
-> Ces options peuvent être modifier par la suite, lorsque le cluster est crée, mais il est préférable de le faire lors de création.
-> 
 
 > [!warning]
 >
@@ -66,7 +62,8 @@ Three options are available to you:
 - Partially Automated. DRS automatically places virtual machines onto hosts at VM power-on. Migration recommendations need to be manually applied or ignored.
 - Fully Automated. DRS automatically places virtual machines onto hosts at VM power-on, and virtual machines are automatically migrated from one host to another to optimize resource utilization.
 
-Automated modes also allow to set the sensitivity of the service, from the most conservative to the most aggressive threshold.
+Automated modes also allow to set the sensitivity of the service, from the most conservative to the most aggressive threshold.<br>
+Click `OK`{.action} when done.
 
 ![DRS](images/en05drs.png){.thumbnail}
 
@@ -80,7 +77,8 @@ To modify them, select your cluster. in the `Configure`{.action} tab, select `vS
 
 ![HA](images/en06haedit.png){.thumbnail}
 
-The response types for the different host failure can be custom set to your need.
+The response types for the different host failures can be custom set to your need.<br>
+Click `OK`{.action} when done.
 
 ![HA](images/en07ha.png){.thumbnail}
 
@@ -98,7 +96,8 @@ Select your cluster. in the `Configure`{.action} tab, select `VMware EVC`{.actio
 ![EVC](images/en08EVCedit.png){.thumbnail}
 
 Enable EVC for the type of CPUs your hosts hold.<br>
-Downward compatibility is assured. To help you verify the settings are working, you will see a compatibility validation at the bottom of the window.
+Downward compatibility is assured. To help you verify the settings are working, you will see a compatibility validation at the bottom of the window.<br>
+Click `OK`{.action} when done.
 
 ![EVC](images/en09EVC.png){.thumbnail}
 
