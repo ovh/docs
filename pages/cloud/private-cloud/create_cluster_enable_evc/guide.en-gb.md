@@ -26,7 +26,7 @@ Learn how to create them and configure their functionalities (DRS, HA & EVC).
 
 ### Cluster creation
 
-In the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
 ![Menu](images/en01dash.png){.thumbnail}
 
