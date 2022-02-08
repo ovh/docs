@@ -23,7 +23,7 @@ Access to your Private Cloud can be restricted by allowing only certain IP addre
 
 ## Instructions
 
-If you have set the [vCenter access policy](../modify-vcenter-access-policy) to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
+If you have set the vCenter access policy to "Restricted", you need to add the IP addresses that will be allowed to connect to the service.
 
 In your OVHcloud Control Panel, open the "Hosted Private Cloud" section, then select your service under `Private Cloud`{.action} in the left-hand navigation bar.
 
