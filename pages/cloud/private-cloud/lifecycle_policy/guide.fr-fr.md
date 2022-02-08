@@ -1,9 +1,9 @@
 ---
-titre : Cycle de vie du Hosted Private Cloud VMware
-slug : lifecycle-policy
-extrait : Hosted Private Cloud Powered by VMware
-Rubrique : FAQ
-commande : 3
+title: Cycle de vie du Hosted Private Cloud VMware
+slug: lifecycle-policy
+excerpt: Hosted Private Cloud Powered by VMware
+section: FAQ
+order: 3
 ---
 
 **Dernière mise à jour le 08 février 2022**
