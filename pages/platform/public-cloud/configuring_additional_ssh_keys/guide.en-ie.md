@@ -1,25 +1,25 @@
 ---
 title: 'Configuring additional SSH keys'
 slug: configuring_additional_ssh_keys
-excerpt: 'This guide will explain how to configure additional SSH keys for your instance in order to grant access to other people.'
+excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
 legacy_guide_number: g1924
 section: Tutorials
 order: 1
 ---
 
-**Last updated 13th March 2019**
+**Last updated 4th Febuary 2022**
 
 ## Objective
  
-When creating an instance, it is not possible to configure only one SSH key. However, you can still grant access to other users who have SSH keys for your instance by configuring the *authorized_keys* file.
+When creating an instance, only one SSH key for the initial connection can be configured. In order to grant access to your instance to other users, additional keys can be added by configuring the *authorized_keys* file.
 
-**This guide will explain how to configure additional SSH keys for your instance in order to grant access to other people.**
+**This guide explains how to configure additional SSH keys for connections to your instance.**
 
 ## Requirements
 
-- A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud) in your OVHcloud account
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- Root access to your instance via SSH
+- Administrative access (root) to your instance via SSH
 
 ## Instructions
 
@@ -30,14 +30,14 @@ If you would like to store an SSH key in the OVHcloud Control Panel, we recommen
 
 ### Creating the SSH key
 
-First, follow our guide to [Creating SSH keys](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys/).
+To create a new SSH key, consult the [Public Cloud first steps guide](../public-cloud-first-steps/).
 
 ### Configuring the new user
 
-Next, connect to your instance via SSH and use the commands below to create a new user:
+[Connect to your instance with SSH](../public-cloud-first-steps/#connect-to-instance) and use the commands below to create a new user:
 
-```
-admin@server-1:~$ sudo adduser user2
+```bash
+~$ sudo adduser user2
 
 Adding user `user2' ...
 Adding new group `user2' (1001) ...
@@ -58,42 +58,38 @@ Other []:
 Is the information correct? [Y/n] Y
 ```
 
-Next, save a new public SSH key in the personal folder of the new user, using the command below:
+Open the *authorized_keys* file in the personal folder of the new user with a text editor:
 
-```
-admin@server-1:~$ sudo vim /home/user2/.ssh/authorized_keys
-```
-
-If the .ssh file does not already exist, you can create it with this command:
-
-```
-admin@serveur-1:~$ sudo mkdir /home/user2/.ssh/
+```bash
+~$ sudo nano /home/user2/.ssh/authorized_keys
 ```
 
-From now on, you can connect with this user using the private key linked to the one you have configured.
+Add the public key created in the first step to the file. Save and close the editor.
 
-```
-root@server:~$ ssh user2@149.xxx.xxx.22
+If the .ssh folder does not already exist, you can create it with this command:
 
-Linux server-1 3.2.0-4-amd64 #1 SMP Debian 3.2.68-1+deb7u1 x86_64
-Last login: Fri Oct 16 08:14:24 2015 from proxy-109-190-254-35.ovh.net
-
-user2@server-1:~$
+```bash
+~$ sudo mkdir /home/user2/.ssh/
 ```
 
+You can configure multiple SSH keys by adding them to the *authorized_keys* files of the corresponding user folders.
 
-You can configure another SSH key for the admin user by adding them to the corresponding *authorized_keys* file with this command:
+From now on, you can log in with the user and the private key configured previously:
 
+```bash
+~$ ssh user2@instance_IP
 ```
-admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
+```console
+Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
+
+user2@server:~$
 ```
+
 
 ## Go further
 
-[Creating SSH keys](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys)
+[Public Cloud first steps](../public-cloud-first-steps/)
 
-[Using an SSH key in the Public Cloud interface](https://docs.ovh.com/ie/en/public-cloud/use-of-an-ssh-key-in-the-public-cloud-interface)
-
-[Replacing your lost SSH key pair](https://docs.ovh.com/ie/en/public-cloud/replacing_your_lost_ssh_key_pair/)
+[Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/)
 
 Join our community of users on <https://community.ovh.com/en/>.

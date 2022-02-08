@@ -5,6 +5,7 @@ slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
 section: 'Premiers pas'
 order: 07
+hidden: true
 ---
 
 **Dernière mise à jour le 25/11/2019**

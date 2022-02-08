@@ -36,15 +36,15 @@ order: 6
 
 ### Jednoczesne połączenia z bazą danych
 
-- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 w przypadku prywatnej bazy danych). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
+- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 z bazą danych CloudDB). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
 
-- Możesz również zamówić dodatkowe bazy danych **Private SQL**, które mają opcje personalizacji:
+- Możesz również zamówić dodatkowe bazy danych **CloudDB**, które mają opcje personalizacji:
 
     - *max_connections*: domyślnie 100, z możliwością zwiększenia do 200
 
     - *max_user_connections*: domyślnie 50, z możliwością zwiększenia do 200
 
-Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](../pierwsze-kroki-private-sql/).
+Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 
 #### Połączenia z serwera zewnętrznego
 

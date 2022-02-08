@@ -1,44 +1,37 @@
 ---
 title: 'Getting started with a Windows instance'
 slug: get-started-with-windows-instance
-excerpt: 'Find out how to install a Windows instance and connect to it for the first time'
+excerpt: 'Find out how complete the installation of a Public Cloud instance on Windows'
 legacy_guide_number: 1995
 section: Getting started
 order: 6
+hidden: true
 ---
 
-**Last updated 17th December 2019**
+**Last updated 4th Febuary 2022**
 
 ## Objective
 
-You can use a Public Cloud instance if you would like to host websites using IIS, or if you want to host applications that are only compatible with Windows. Our instances can be installed on [Windows Desktop](https://www.ovhcloud.com/en-gb/public-cloud/prices/){.external} operating systems.
+A Windows Public Cloud instance can be used for hosting applications that are only compatible with Windows or websites running on Microsoft IIS. Unlike other instance types, Windows instances are not created with a pre-configured SSH key. The installation process therefore needs to be completed by connecting to the instance via the OVHcloud VNC console.
 
-Once you have deployed your instance, you will need to complete the installation via the VNC console.
-
-**This guide will outline the procedure to follow in order to access your Windows instance after it is installed.**
+**This guide explains how to set up your Windows instance after it is created.**
 
 ## Requirements
 
-- A Public Cloud project
-- An instance [created via the OVHcloud Control Panel](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/) with a Windows Desktop operating system
+- A newly deployed [Public Cloud Windows instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. After selecting your project, open `Instances`{.action} in in the left-hand menu.
+
+Once your Windows instance is ready (status `Activated`), click on the instance name to open the dashboard.
+
+Switch to the tab `VNC console`{.action}. The initial setup page of the Windows installation should be displayed.
+
 ### Step 1: Configure your password.
 
-Unlike a Linux instance, a Windows instance is not installed with a pre-configured SSH key. 
-
-For this reason, you will need to complete the installation via the VNC console:
-
-- Click on the `...`{.action} to the right of your instance, then `Instance details`{.action}:
-
-![windowsinstance](images/firststepswindows1.png){.thumbnail}
-
-- Go to the `VNC console`{.action} tab:
-
-![windowsinstance](images/firststepswindows2.png){.thumbnail}
-
-- Select your prefferred language and keyboard information, then enter your chosen password:
+- Select your preferred language and keyboard information, then enter your chosen password:
 
 ![windowsinstance](images/firststepswindows3.png){.thumbnail}
 

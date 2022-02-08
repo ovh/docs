@@ -10,7 +10,7 @@ order: 01
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/10/2021**
+**Ultimo aggiornamento: 07/02/2022**
 
 ## Obiettivo
 
@@ -138,6 +138,8 @@ Nella pratica, ecco alcune guide che ti aiuteranno ad avviare:
 |[Associa un disco aggiuntivo a un'istanza](https://docs.ovh.com/it/public-cloud/crea_e_configura_un_disco_aggiuntivo_sulla_tua_istanza/)|Questa guida ti mostra come aggiungere spazio di storage supplementare alla tua prima istanza.|
 |[Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)|L'interfaccia Horizon di OpenStack permette alcune azioni avanzate: ecco come connettersi.|
 |[Crea un cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Questa guida ti mostra come creare il tuo primo cluster Kubernetes.|
+|[Configura un IP Failover](https://docs.ovh.com/it/public-cloud/configura-un-ip-failover/)|Gli IP failover ti permettono di trasferire il traffico da un'istanza all'altra, questa guida ti mostra come configurarlo.|
+|[Installazione della CLI OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)|OpenStack può essere utilizzato anche da riga di comando, come installare gli strumenti.|
 
 Uno dei principali vantaggi dell'utilizzo di tecnologie standard e aperte, come OpenStack o Kubernetes, è di usufruire di tutta la documentazione disponibile.
 

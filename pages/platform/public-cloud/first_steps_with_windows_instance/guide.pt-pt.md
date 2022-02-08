@@ -4,6 +4,7 @@ excerpt: 'Fique a saber como terminar a instalação de uma instância Windows e
 slug: primeiros-passos-com-uma-instancia-windows
 legacy_guide_number: 1995
 section: Introdução
+hidden: true
 ---
 
 **Última atualização: 25/11/2019**

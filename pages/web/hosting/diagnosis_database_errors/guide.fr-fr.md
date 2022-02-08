@@ -6,7 +6,7 @@ section: Diagnostic
 order: 4
 ---
 
-**Dernière mise à jour le 08/10/2021**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Utiliser l'une de nos offres de bases de données [Web Cloud](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Cloud DB](https://www.ovh.com/fr/cloud-databases/).
 
 ## En pratique
 
@@ -33,7 +33,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 #### Vérifier les incidents en cours
 
-Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement, votre serveur SQL privé ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
+Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement, votre serveur CloudDB ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
 
 > [!primary]
 >
@@ -41,7 +41,7 @@ Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-
 >
 > - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action} dans le menu de gauche, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
-> - Pour retrouver le nom de votre serveur **Private SQL**, cliquez sur `Bases de données`{.action} dans le menu de gauche puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
+> - Pour retrouver le nom de votre serveur **Cloud DB**, cliquez sur `Bases de données`{.action} dans le menu de gauche puis sur l'offre concernée. Vous trouverez cette information sous la mention `Nom d'hôte` dans la rubrique `SQL` de `Informations de connexion`.
 >
 
 #### Vérifier les identifiants de connexion à votre base de données <a name="config_file"></a>
@@ -127,7 +127,7 @@ Vous pouvez également migrer vos données sur une nouvelle base :
 
 > [!primary]
 >
-> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur SQL Privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/#activation-de-votre-serveur-sql-prive-inclus-avec-votre-offre-dhebergement-web).
+> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web).
 >
 
 #### Méthode 3 : supprimer les données inutiles
@@ -152,7 +152,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 ### Dépassements de la mémoire RAM
 
-Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indique que votre serveur [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
+Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) indique que votre serveur [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -189,7 +189,7 @@ Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com
 >
 > Quels éléments dans le script d'import de ma base de données peuvent causer une erreur « #1044 - Access denied for user to database » ?
 
-Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+Avoir un **« trigger »** dans votre script n'est, par exemple, pas autorisé sur les serveurs d'hébergement mutualisé OVHcloud. Dans cette situation, importez votre base de données sur un serveur [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
 
 Par ailleurs, la requête suivante n'est pas autorisée :
 
@@ -211,11 +211,11 @@ USE `Database-Name`;
 > **« ERROR 2006 : MySQL server has gone away »**
 >
 
-Ce message d'erreur apparaît lors de [l'import d'une base de données](https://docs.ovh.com/fr/hosting/restaurer-importer-base-de-donnees/#2-importer-une-sauvegarde-locale) sur un serveur [SQL Privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
+Ce message d'erreur apparaît lors de [l'import d'une base de données](https://docs.ovh.com/fr/hosting/restaurer-importer-base-de-donnees/#2-importer-une-sauvegarde-locale) sur un serveur [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
 
 Pour résoudre cette anomalie, vous pouvez :
 
-- Augmenter la [quantité de mémoire vive (RAM)](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
+- Augmenter la [quantité de mémoire vive (RAM)](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
 - Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
@@ -243,7 +243,7 @@ Dans cette situation, [vérifiez les identifiants renseignés](https://docs.ovh.
 
 Le nombre maximal de connexions actives pour les bases de données livrées avec les hébergements mutualisés ([StartSQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/)) est de **30**.
 
-Ce nombre est de **200** pour les bases des serveurs [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
+Ce nombre est de **200** pour les bases des serveurs [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
 Ce message apparaît lors de la [connexion à PhpMyAdmin](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
@@ -270,7 +270,7 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](http
 >
 > Si la base à laquelle vous souhaitez vous connecter apparaît dans l'onglet `Bases de données`{.action} de la partie `Hébergements`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), le nom à renseigner est inscrit dans la colonne `Adresse du serveur`.
 >
-> Si vous souhaitez vous connecter à une base de données sur un serveur [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
+> Si vous souhaitez vous connecter à une base de données sur un serveur [CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/) ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases/), le nom de serveur à renseigner est inscrit dans l'onglet `Informations générales`{.action}, partie `Informations de connexions`{.action}, `SQL`{.action} et dans la rubrique `Nom d'hôte`{.action}.
 >
 
 ### Connexion impossible sur une base de données Cloud Databases
@@ -283,7 +283,7 @@ Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accè
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 
-[Premiers pas avec le service SQL Privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/)
+[Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 [Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 

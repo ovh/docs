@@ -5,6 +5,7 @@ slug: come_utilizzare_unistanza_windows
 legacy_guide_number: g1995
 section: Per iniziare
 order: 6
+hidden: true
 ---
 
 **Ultimo aggiornamento: 11/07/2019**

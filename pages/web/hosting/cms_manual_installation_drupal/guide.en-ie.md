@@ -19,7 +19,7 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 - Get your FTP ID and password so you can log in to your hosting package. 
 
 - You also need to have your SQL database ID and password so you can log in to the database.
-There is a guide showing you [how to get your SQL credentials](../getting-started-with-private-sql/#create-a-database)
+There is a guide showing you [how to get your SQL credentials](../creating-database/)
 
 
 
@@ -113,7 +113,7 @@ Select your chosen language and then click "Save and continue".
 
 
 ## Step 3 - Log on to the database
-Get your database credentials (there is a guide available [here](../getting-started-with-private-sql/#create-a-database).
+Get your database credentials (there is a guide available [here](../creating-database/).
 
 
 Enter the information requested:

@@ -5,7 +5,7 @@ excerpt: Cómo instalar un sitio web con los módulos en un clic de OVHcloud
 section: CMS
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 
@@ -28,7 +28,7 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 Los CMS (del inglés *content management system*) permiten diseñar un sitio web a través de una interfaz fácil de usar. Existen distintos CMS en función del proyecto que desee crear. Estos módulos le permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.).
 
-OVH ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/).
+OVHcloud ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/).
 
 Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 
@@ -84,8 +84,7 @@ Introduzca la información de conexión a la base de datos que utilizará con el
 
 - Si la base de datos ya está creada en el alojamiento, selecciónela e introduzca la información que se le solicita.
 - Si la base de datos todavía no está creada en el alojamiento, deberá seguir los pasos que se indican para crearla y, a continuación, seleccionarla e introducir la información que se le solicita.
-- Si la base de datos ya está creada en un SQL Privado o CloudDB, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El SQL Privado o CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
-- Si la base de datos ya está creada en otro alojamiento web de OVHcloud, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en otro alojamiento web de OVHcloud, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
@@ -140,7 +139,5 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}
 
 [Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
-
-Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/){.external}.
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

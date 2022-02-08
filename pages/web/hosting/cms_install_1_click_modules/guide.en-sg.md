@@ -85,7 +85,6 @@ You must now enter the information required to connect to your database. There a
 
 - **If you have already created a database on your web hosting plan:** select it from the list, and enter the information requested.
 - **If you have not yet created a database on your web hosting plan:** follow the instructions for creating one, then try again.
-- **If you have created a database on your Private SQL or CloudDB instance:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The instance and web hosting plan must be hosted in the same datacentre.
 - **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
 
 Once you have entered this information, click `Next`{.action}.
@@ -143,7 +142,5 @@ Below, we've included some links from these CMS publishers, to help you get star
 [Choosing a CMS for building your website](https://www.ovhcloud.com/en-sg/web-hosting/uc-cms-comparison/){.external}
 
 [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
-
-See our [Private SQL services](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

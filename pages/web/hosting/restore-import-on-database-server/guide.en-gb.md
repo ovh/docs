@@ -2,11 +2,11 @@
 title: 'Restoring and importing a database to your database server'
 slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
-section: Private SQL
+section: CloudDB
 order: 5
 ---
 
-**Last updated 16th September 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -16,14 +16,14 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) and [Cloud Databases](https://www.ovh.co.uk/cloud-databases/) solutions do not give access to the host, but to the databases hosted on it; there is no root user access. Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> Please note that the [Cloud Databases](https://www.ovh.co.uk/cloud-databases/) solutions do not give access to the host, but to the databases hosted on it; there is no root user access. Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Restoring and importing a database from the Control Panel
@@ -38,7 +38,7 @@ Click the `...`{.action} button to the right of the database, then click `Show b
 
 The list of available backups will appear. Click on the `...`{.action} button to the right of the backup you want to restore, then `Restore the backup`{.action}.
 
-![private-sql](images/private-sql-restore01.png){.thumbnail}
+![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -50,7 +50,7 @@ The list of available backups will appear. Click on the `...`{.action} button to
 
 Click on the `...`{.action} button to the right of the database, then click `Import file`{.action}.
 
-![private-sql](images/private-sql-import01.png){.thumbnail}
+![clouddb](images/private-sql-import01.png){.thumbnail}
 
 There are two ways of doing this:
 
@@ -65,7 +65,7 @@ Specify a name for your imported file, click `Browse`{.action} to select it, con
 > The file must be in the .gz format.
 > 
 
-![private-sql](images/private-sql-import02.png){.thumbnail}
+![clouddb](images/private-sql-import02.png){.thumbnail}
 
 If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
 
@@ -75,7 +75,7 @@ If you had already imported a file before, you can choose the **Use an existing 
 
 Then choose the file from the dropdown menu and click `Next`{.action}.
 
-![private-sql](images/private-sql-import03.png){.thumbnail}
+![clouddb](images/private-sql-import03.png){.thumbnail}
 
 If you wish, tick **Empty the current database** before importing, and **Send an email when importing is complete** to be informed of the completion of the operation using the primary email address of your OVHcloud account. Then click `Confirm`{.action}.
 
@@ -100,7 +100,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 
 Keep the default options and click `Run`{.action} to start the import.
 
-![private-sql](images/private-sql-import04.png){.thumbnail}
+![clouddb](images/private-sql-import04.png){.thumbnail}
 
 #### Exporting a MySQL or MariaDB database from the command line
 

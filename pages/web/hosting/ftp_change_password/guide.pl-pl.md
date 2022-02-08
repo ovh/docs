@@ -84,7 +84,7 @@ Możesz łączyć pliki z przestrzenią dyskową na kilka sposobów:
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Zalecenia dotyczące tworzenia bezpiecznych haseł](https://www.gov.pl/web/baza-wiedzy/jak-tworzyc-bezpieczne-hasla){.external}
+[Tworzenie i zarządzanie hasłem do konta](https://docs.ovh.com/pl/customer/zarzadzanie-haslem/)
 
 [Krajowy system cyberbezpieczeństwa](https://www.gov.pl/web/cyfryzacja/krajowy-system-cyberbezpieczenstwa-){.external}
 
