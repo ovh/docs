@@ -5,7 +5,7 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 4th October 2021**
+**Last updated 08/02/2022**
 
 ## Objective
 
@@ -18,11 +18,6 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 - a Veeam Enterprise solution
 - Windows Server 2012 or newer
-
-> [!primary]
->
-> Our Veeam offers are only compatible with the latest version (10) offered by Veeam. Please take this into consideration when configuring Veeam for your services.
->
 
 ## Instructions
 

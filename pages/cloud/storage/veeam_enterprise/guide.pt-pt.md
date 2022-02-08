@@ -5,7 +5,7 @@ excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam E
 section: Veeam
 ---
 
-**Última atualização: 06/10/2021**
+**Última atualização: 08/02/2022**
 
 ## Sumário
 
@@ -18,11 +18,6 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 * Dispor de um serviço Veeam Enterprise.
 * Dispor de uma máquina Windows Server 2012 ou 2016.
-
-> [!primary]
->
-> As nossas ofertas Veeam são unicamente compatíveis com a última versão (10) proposta pela Veeam. Tenha em conta este ponto durante a configuração do Veeam para os seus serviços.
->
 
 ## Instruções
 
