@@ -89,21 +89,19 @@ The response types for the different host failure can be custom set to your need
 
 EVC (Enhanced vMotion Compatibility) allows for migration of live VMs between hosts.
 
-> [!primary]
->
-> OVHcloud hosts do not all have same generation CPUs. You'll have to check the hosts in vSphere to determine the right settings.
-> 
+Prior to activating the functionality, check your hosts summary pages to determine their types.
 
+![EVC](images/en10host.png){.thumbnail}
 
+Select your cluster. in the `Configure`{.action} tab, select `VMware EVC`{.action} and click `Edit`{.action}.
 
+![EVC](images/en08EVCedit.png){.thumbnail}
 
-#### Dedicated Cloud
+Enable EVC for the type of CPUs your hosts hold.<br>
+Downward compatibility is assured. To help you verify the settings are working, you will see a compatibility validation at the bottom of the window.
 
-Si vous disposez d'un Private Cloud de la gamme Dedicated Cloud, vous devrez choisir le mode "AMD Opteron Gen. 3 (no 3DNow!)" visable dans la partie pour les hôtes AMD.
+![EVC](images/en09EVC.png){.thumbnail}
 
-#### SDDC
-
-Si vous disposez d'un Private Cloud de la gamme SDDC, vous devrez choisir le mode "Intel  "Ivy Bridge" Generaton" visible dans la partie pour les hôtes Intel.
 
 #### Avant création
 
