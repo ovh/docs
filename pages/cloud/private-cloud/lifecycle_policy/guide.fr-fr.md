@@ -110,13 +110,13 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 ### Cycle de vie VMware
 
-Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante :
+Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante:
 
 [VMware Lifecycle](https://lifecycle.vmware.com/#/)
 
 ### Cycle de vie Veeam Backup & Replication
 
-Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes :
+Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes:
 
 [Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
 
@@ -124,7 +124,7 @@ Pour connaître la politique de cycle de vie des produits Veeam, merci de vous r
 
 ### Cycle de vie Zerto
 
-Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante:
 
 [Zerto Virtual Replication Product Version Lifecycle Matrix](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf)
 
