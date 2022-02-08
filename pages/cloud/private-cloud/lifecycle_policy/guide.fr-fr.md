@@ -98,8 +98,37 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 
 | Gamme commerciale | Disponibilité générale | End of Sales | End of Growth | End of Life |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-| DC2011 (AMD optéron) | 2011 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2013 (Bouteur AMD) | 2013 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
-| DC2014 (piledriver AMD) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
-| DC2016 (piledriver AMD) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
-| SDDC2014 et SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017
+| DC2011 (AMD Opteron) | 2011 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
+| DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 31/07/2022 |
+| DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
+| DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | 31/08/2023 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
+
+
+## Logiciels intégrés
+
+### Cycle de vie VMware
+
+Pour connaître la politique de cycle de vie des produits VMware, merci de vous référer à la publication de l'éditeur accessible à l'url suivante :
+
+[VMware Lifecycle](https://lifecycle.vmware.com/#/)
+
+### Cycle de vie Veeam Backup & Replication
+
+Pour connaître la politique de cycle de vie des produits Veeam, merci de vous référer aux publications de l'éditeur accessibles aux URL suivantes :
+
+[Veeam Version Release](https://www.veeam.com/releasestatus_rn.pdf)
+
+[Veeam Lifecycle](https://www.veeam.com/product-lifecycle.html)
+
+### Cycle de vie Zerto
+
+Pour connaître la politique de cycle de vie des produits Zerto, merci de vous référer à la publication de l'éditeur accessible à l'URL suivante :
+
+[Zerto Virtual Replication Product Version Lifecycle Matrix](http://s3.amazonaws.com/zertodownload_docs/Latest/Zerto+Virtual+Replication+Product+Version+Lifecycle+Matrix.pdf)
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
