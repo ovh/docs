@@ -688,7 +688,7 @@ Puis pour chaque ID :
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
-Dans le cas d'un datastore global, vous pouvez utiliser l'API suivant :
+Dans le cas d'un datastore global, vous pouvez utiliser l'appel API suivant :
 
 > [!api]
 >
