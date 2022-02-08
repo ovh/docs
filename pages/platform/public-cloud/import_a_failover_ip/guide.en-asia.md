@@ -22,7 +22,7 @@ Instead oy buying additional ones, you can import a failover IP address that is 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 - A [failover IP address](https://www.ovhcloud.com/asia/bare-metal/ip/){.external}
 

@@ -18,7 +18,7 @@ Existem duas formas de adicionar uma chave SSH a partir da sua interface Public 
 
 
 ### Pré-requisitos
-- uma [chave SSH](../criacao-de-chaves-ssh/){.ref}
+- uma [chave SSH](../public-cloud-primeiros-passos/)
 
 > [!primary]
 >
