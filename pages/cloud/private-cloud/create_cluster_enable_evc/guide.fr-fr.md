@@ -6,14 +6,14 @@ section: Fonctionnalités VMware vSphere
 order: 01
 ---
 
-**Dernière mise à jour le 07/02/2022**
+**Dernière mise à jour le 08/02/2022**
 
 ## Objectif
 
 Il est possible de créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.<br>
 Découvrez comment créer et configurer les fonctionaltités de clusters (DRS, HA & EVC).
 
-**Ce guide est un cas d'étude avec les étapes d'installation et configuration.**
+**Ce guide est un cas d'étude avec les étapes d'installation et de configuration.**
 
 ## Prérequis
 
@@ -23,29 +23,95 @@ Découvrez comment créer et configurer les fonctionaltités de clusters (DRS, H
 
 ## En pratique
 
-### Accès à l'interface
+### Création du cluster
 
 Dans l'interface vSphere, allez dans le tableau de bord `Hôtes et clusters`{.action}.
 
 ![MENU](images/en01dash.png){.thumbnail}
 
-### Création du cluster
+### Cluster creation
 
-Faites un clic-droit sur votre datacentre vituel.<br>
-Cliquez sur Nouveau cluster.
+In the vSphere interface menu, go to the `Networking and Security`{.action} dashboard.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+Right click on your Datacenter.<br>
+Select `New Cluster`{.action}.
+
+![New Cluster](images/en02newcluster.png){.thumbnail}
+
+In the pop up window, name your cluster and select the relevant options you want set.<br>
+Click `OK`{.action} when done.
+
+![Cluster](images/en03cluster.png){.thumbnail}
 
 
-![New Cluster](images/CreateCluster.png){.thumbnail}
-
-Une nouvelle fenêtre apparaîtra.
-
-Vous pourrez donner un nom à votre cluster et configurer les options de base.
-
-
-> [!success]
+> [!warning]
 >
-> Ces options peuvent être modifier par la suite, lorsque le cluster est crée, mais il est préférable de le faire lors de création.
+> vSAN requires vSAN compatible hosts. Check out [here](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/) how to order them if you need.
 > 
+
+
+### DRS
+
+DRS spreads the compute load accross your hosts.<br>
+If you activated the option, it is set on "Fully Automated" by default.
+
+Select your cluster. in the `Configure`{.action} tab, select `vSphere DRS`{.action} and click `Edit`{.action}.
+
+![DRS](images/en04drsedit.png){.thumbnail}
+
+Three options are available to you:
+
+- Manual Mode. DRS generates both power-on placement recommendations, and migration recommendations for virtual machines. Recommendations need to be manually applied or ignored.
+- Partially Automated. DRS automatically places virtual machines onto hosts at VM power-on. Migration recommendations need to be manually applied or ignored.
+- Fully Automated. DRS automatically places virtual machines onto hosts at VM power-on, and virtual machines are automatically migrated from one host to another to optimize resource utilization.
+
+Automated modes also allow to set the sensitivity of the service, from the most conservative to the most aggressive threshold.<br>
+Click `OK`{.action} when done.
+
+![DRS](images/en05drs.png){.thumbnail}
+
+
+### HA
+
+High Availability allows for redundancy so a failing host will not impact the services running in your VMs.<br>
+If you activated the option, it is set on its default settings.
+
+To modify them, select your cluster. in the `Configure`{.action} tab, select `vSphere HA`{.action} and click `Edit`{.action}.
+
+![HA](images/en06haedit.png){.thumbnail}
+
+The response types for the different host failures can be custom set to your need.<br>
+Click `OK`{.action} when done.
+
+![HA](images/en07ha.png){.thumbnail}
+
+
+### EVC
+
+EVC (Enhanced vMotion Compatibility) allows for migration of live VMs between hosts.
+
+Prior to activating the functionality, check your hosts summary pages to determine their types.
+
+![EVC](images/en10host.png){.thumbnail}
+
+Select your cluster. in the `Configure`{.action} tab, select `VMware EVC`{.action} and click `Edit`{.action}.
+
+![EVC](images/en08EVCedit.png){.thumbnail}
+
+Enable EVC for the type of CPUs your hosts hold.<br>
+Downward compatibility is assured. To help you verify the settings are working, you will see a compatibility validation at the bottom of the window.<br>
+Click `OK`{.action} when done.
+
+![EVC](images/en09EVC.png){.thumbnail}
+
+
+> [!warning]
+>
+> EVC activation can only happen on a cluster with no active VM running. Make sure to turn off or evacuate all VMs before doing it. 
+>
+
 
 ### DRS
 
