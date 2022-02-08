@@ -29,7 +29,7 @@ Vous devrez peut-être configurer des adresses IP fail-over sur vos instances, p
 
 ## En pratique
 
-Ce guide contient les configurations des distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre instance via SSH ou via une session de connexion à l’interface graphique utilisateur (RDP pour une instance Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu’utilisateur avec des autorisations élevées (administrateur/sudo).
+Ce guide contient les configurations des distributions/systèmes d’exploitation les plus couramment utilisés. La première étape consiste toujours à se connecter à votre instance via SSH ou via une session de connexion à l’interface graphique utilisateur (VNC pour une instance Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu’utilisateur avec des autorisations élevées (administrateur/sudo).
 
 > [!primary]
 >
@@ -165,7 +165,7 @@ sudo netplan apply
 
 Répétez cette procédure pour chaque adresse IP fail-over.
 
-### Windows Server 2016
+### Windows Server (2016)
 
 #### Etape 1 : vérifier la configuration réseau
 
