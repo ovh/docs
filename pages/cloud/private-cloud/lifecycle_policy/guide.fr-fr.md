@@ -1,7 +1,7 @@
 ---
 titre : Cycle de vie du Hosted Private Cloud VMware
 slug : lifecycle-policy
-extrait : Cycle de vie du Hosted Private Cloud Powered by VMware
+extrait : Hosted Private Cloud Powered by VMware
 Rubrique : FAQ
 commande : 3
 ---
