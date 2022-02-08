@@ -1,5 +1,5 @@
 ---
-title: 'Routage d'une IP Failover'
+title: 'Router une IP Failover'
 slug: route-ipfo
 excerpt: 'Router une IP failover'
 section: Configuration
