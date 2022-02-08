@@ -26,7 +26,7 @@ OVHcloud a une politique de cycle de vie du service afin de prendre en compte pl
 * la compatibilité entre composants matériels et/ou logiciels
 * les autres facteurs affectant la qualité du service
 
-Cette politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme.
+Cette politique de cycle de vie est fournie pour aider les clients à comprendre les raisons sous-jacentes des changements de version ou de gamme, à évaluer l'impact de chaque phase du cycle de vie sur le service et à préparer la transition vers une nouvelle version ou gamme.
 
 ### Gamme commerciale concernée
 
@@ -38,7 +38,7 @@ Hosted Private Cloud
 * SDDC2018 (Intel Broadwell, Intel Haswell)
 
 
-## Durée du cycle de vie et définitions
+## Chronologie du cycle de vie et définitions
 
 ### Définitions
 
@@ -70,7 +70,7 @@ Suite à la déclaration de End of Life, les serveurs concernés seront définit
 
 Les clients doivent anticiper le changement de gamme en testant à l'avance et en s'assurant que leurs configurations et leurs logiciels sont compatibles avec la gamme vers laquelle ils migrent.
 
-### Plage de temps
+### Chronologie
 
 ![Cycle de vie typique](images/01_lifecycle_pcc.png){.thumbnail}
 
