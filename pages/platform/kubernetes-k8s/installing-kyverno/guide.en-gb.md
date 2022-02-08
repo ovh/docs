@@ -37,7 +37,7 @@ section: Tutorials
 
 With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which use Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
 
-Kyverno policies can - **validate** - **mutate** - and **generate** Kubernetes resources.
+Kyverno policies can **validate**, **mutate** and **generate** Kubernetes resources.
 
 Kyverno runs as a [dynamic admission controller](https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/) in a Kubernetes cluster. 
 Kyverno receives validating and mutating admission webhook HTTP callbacks from the Kubernetes API-Server and applies matching policies to return results that enforce admission policies or reject requests.
@@ -54,7 +54,7 @@ Concretely, when you apply a resource on the Kubernetes cluster, the manifest yo
 
 ![Kyverno, the cop in a Kubernetes cluster](images/kyverno-cop.png)
 
-Kyverno have many features includes:
+Kyverno many features include:
 
 - Validate and mutate using overlays (like Kustomize!)
 - Synchronize configurations across namespaces
