@@ -2,7 +2,7 @@
 title: 'Configurar la IPv6 en servidores dedicados'
 slug: network-ipv6
 excerpt: 'Aprenda a configurar direcciones IPv6 en nuestra infraestructura'
-section: 'Gestión de redes'
+section: 'Red e IP'
 ---
 
 **Última actualización: 01/12/2021**
