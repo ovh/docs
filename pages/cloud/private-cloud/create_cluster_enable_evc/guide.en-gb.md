@@ -103,39 +103,12 @@ Downward compatibility is assured. To help you verify the settings are working, 
 ![EVC](images/en09EVC.png){.thumbnail}
 
 
-#### Avant création
-
-Il vous suffit de choisir la génération correspondante selon la gamme de l'offre Private Cloud que vous avez.
-
-![Informations User](images/CreateClusterEVC.png){.thumbnail}
-
-
-#### Après création
-
-L'activation de l'EVC après a création du cluster se fait dans les paramètres du cluster.
-
-![Informations User](images/ModifyClusterEVC.png){.thumbnail}
-
-
-
 > [!warning]
 >
-> Attention, l'activation du mode EVC ne peut se faire que sur un cluster n'ayant pas de VM démarré. Sur un cluster en production, deux solutions sont possibles : 
-> 
-> - Extinction de toutes les VMs, et activation du mode EVC sur le cluster.
->
-> - Migration vers un autre cluster en déplaçant les VMs au fur et à mesure :
->
-> A - Création d'un autre cluster avec le mode EVC activé (sur la bonne génération)
-> 
-> B - Mise en maintenance d'un hôte et déplacement de l'hôte sur ce cluster
->
-> C - Extinction d'une VM et déplacement vers le nouveau cluster
->
-> D - Répétez l'opération B et C jusqu’à ce que l'ancien cluster soit vide.
+> EVC activation can only happen on a cluster with no active VM running. Make sure to turn off or evacuate all VMs before doing it. 
 >
 
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
