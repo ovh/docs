@@ -60,45 +60,36 @@ O cabeçalho é composto por vários elementos que indicam o percurso do e-mail.
 Apresentamos a seguir uma lista não exaustiva dos elementos que podem compor um cabeçalho, bem como o seu significado. 
 
 - O campo `Received` está presente no cabeçalho a cada passagem do e-mail num servidor de envio (SMTP). Geralmente, o nome do host do servidor é encontrado com o seu endereço IP e a data. Os campos `Received` são classificados da passagem mais recente à passagem mais antiga num servidor:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &lt;john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
- 
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *Aqui, o e-mail foi enviado do servidor mxplan7.mail.ovh.net para o servidor mo3005.mail-out.ovh.net a 30 de junho de 2021 às 13h12:40 (Fuseau Horaire UTC)*
 
-- O campo `Return-Path` corresponde ao endereço de retorno quando o envio da mensagem falhou. o endereço de retorno é geralmente aquele que realizou o envio. 
-
+- O campo `Return-Path` corresponde ao endereço de retorno quando o envio da mensagem falhou. o endereço de retorno é geralmente aquele que realizou o envio.
 <pre class="console"><code>
-Return-Path: &amp;ltjohn@mydomain.ovh>
-
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - O campo `From` designa o endereço do remetente do e-mail e o seu nome de apresentação.
 <pre class="console"><code>
-From: John &amp;ltjohn@mydomain.ovh>
-
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - O campo `To` designa o endereço do destinatário do e-mail e o seu nome de apresentação.
 <pre class="console"><code>
-To: Robert &amp;ltrobert@hisdomain.ovh> 
-
+To: Robert &lt;robert@hisdomain.ovh&gt; 
 </code></pre>
 
 - O campo `Subject` designa o objeto do e-mail.
 <pre class="console"><code>
 Subject: Hello my friend
-
 </code></pre>
 
 - O campo `Message-ID` designa o identificador único do e-mail e termina com o nome do servidor de envio (depois de "@"). 
 <pre class="console"><code>
-Message-ID: &amp;ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh>
-
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - O campo `Received-SPF` apresenta o resultado do controlo [SPF](https://docs.ovh.com/pt/domains/partilhado_o_campo_spf/) efetuado no nome de domínio do remetente. O argumento `cliente-ip` permite consultar o endereço de IP do servidor que serviu para enviar o e-mail. 
@@ -177,6 +168,9 @@ Para descarregar o ficheiro `.eml`, selecione o e-mail à sua escolha. Clique no
 Selecione o e-mail cujo cabeçalho deseja apresentar. Clique **na seta** à direita de `Responder a todos`{.action} e em `Apresentar os detalhes da mensagem`{.action}. Abre-se uma nova janela com o cabeçalho completo do e-mail, o que lhe permite descarregá-lo.
 
 ![emails](images/owa01.png){.thumbnail}
+
+Also see our video tutorial:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Obter o ficheiro .eml**
 

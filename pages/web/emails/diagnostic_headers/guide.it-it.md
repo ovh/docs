@@ -60,53 +60,44 @@ L'intestazione è composta da diversi elementi che indicano il percorso dell'ema
 Di seguito è riportato un elenco non esaustivo degli elementi che possono essere costituiti da un intestazione e il loro significato. 
 
 - Il campo `Received` è presente nell'intestazione ad ogni passaggio dell'email su un server di invio (SMTP). In genere è possibile trovare l'hostname del server con l'indirizzo IP e la data. I record `Received` sono classificati dal passaggio più recente al passaggio più antico su un server:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &ltjohn@mydomain.ovh&gt ; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *L'email è stata inviata dal server mxplan7.mail.ovh.net al server mo3005.mail-out.ovh.net il 30 giugno 2021 alle 13:12:40 (fuso orario UTC)*
 
 - Il campo `Return-Path` corrisponde all'indirizzo di ritorno quando l'invio del messaggio non è andato a buon fine. l'indirizzo di ritorno è generalmente quello che ha effettuato l'invio. 
-
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Il campo `From` designa l'indirizzo del mittente dell'email e il suo nome di visualizzazione.
-
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&gt
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Il record `To` designa l'indirizzo del destinatario dell'email e il suo nome di visualizzazione.
-
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt 
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - Il record `Subject` designa l'oggetto dell'email.
-
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
 - Il campo `Message-ID` designa l'identificativo univoco dell'email e termina con il nome del server d'invio (dopo "@"). 
-
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - Il record `Received-SPF` mostra il risultato del controllo [SPF](https://docs.ovh.com/it/domains/hosting_condiviso_il_record_spf/) effettuato sul dominio del mittente. L'argomento `client-ip` permette in particolare di rilevare l'indirizzo IP del server che è server utilizzato per spedire l'email. 
-
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
 
 - I record `X-` sono dei campi personalizzati e completano i campi standard. Vengono implementati dai server sui quali transitano le email.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
@@ -174,6 +165,9 @@ Per scaricare il file.`eml`, seleziona l'email che preferisci. Clicca sul pulsan
 Seleziona l'email di cui vuoi visualizzare l'intestazione. Clicca **sulla freccia** a destra di `Rispondi a tutti`{.action} e poi su `Mostra i dettagli del messaggio`{.action}. Si apre una nuova finestra con l'intestazione completa dell'email, che ti permette di scaricarla.
 
 ![email](images/owa01.png){.thumbnail}
+
+Also see our video tutorial:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Recupera il file.eml**
 

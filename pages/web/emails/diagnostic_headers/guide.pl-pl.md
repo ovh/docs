@@ -61,53 +61,44 @@ Nagłówek składa się z kilku elementów wskazujących drogę wiadomości e-ma
 Poniżej znajduje się niewyczerpujący wykaz elementów, które mogą składać się z nagłówka oraz ich znaczenie. 
 
 - Pole `Received` jest widoczne w nagłówku przy każdym przejściu z wiadomości e-mail na serwer poczty wychodzącej (SMTP). Nazwa hosta serwera jest zwykle widoczna wraz z adresem IP i datą. Pola `Received` są klasyfikowane od najświeższego przejścia do najstarszego przejścia na serwer:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &ltjohn@mydomain.ovh&gt ; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *Wiadomość e-mail została wysłana z serwera mxplan7.mail.ovh.net do serwera mo3005.mail-out.ovh.net w dniu 30 czerwca 2021 r. o godz. 13:12:40 (Strefa czasowa UTC)*
 
-- Pole `Return-Path` odpowiada adresowi zwrotu, jeśli wysłanie wiadomości nie powiodło się. adres zwrotny jest zazwyczaj adresem, który wysłał przesyłkę. 
-
+- Pole `Return-Path` odpowiada adresowi zwrotu, jeśli wysłanie wiadomości nie powiodło się. adres zwrotny jest zazwyczaj adresem, który wysłał przesyłkę.
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Pole `From` oznacza adres nadawcy wiadomości e-mail oraz jego nazwę użytkownika.
-
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&gt
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Pole `To` to adres odbiorcy wiadomości e-mail oraz nazwa użytkownika.
-
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt 
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - Pole `Subject` to temat wiadomości e-mail.
-
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
 - Pole `Message-ID` to unikalny identyfikator e-maila i kończy się nazwą serwera wysyłki (po "@"). 
-
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - Pole `Received-SPF` wyświetla wynik kontroli [SPF](https://docs.ovh.com/pl/domains/uslugi_www_pole_spf/) przeprowadzonej na domenie nadawcy. Argument `client-ip` pozwala na wskazanie adresu IP serwera, który użył do wysyłki wiadomości e-mail. 
-
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
 
 - Pola `X-` są niestandardowe, służą jako uzupełnienie pól standardowych. Są one implementowane przez serwery, przez które przechodzą e-maile.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
@@ -175,6 +166,9 @@ Aby pobrać plik `.eml`, wybierz odpowiedni adres e-mail. Kliknij przycisk `... 
 Wybierz e-mail, dla którego chcesz wyświetlić nagłówek. Kliknij **strzałkę** po prawej stronie, aby `Odpowiedzieć wszystkim`{.action}, a następnie `Wyświetl szczegóły wiadomości`{.action}. Otworzy się nowe okno z pełnym nagłówkiem wiadomości e-mail, dzięki czemu możesz je pobrać.
 
 ![emails](images/owa01.png){.thumbnail}
+
+Also see our video tutorial:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Pobierz plik .eml**
 

@@ -105,6 +105,8 @@ To create a new folder, right-click on the name of your email address in the fol
 
 #### Creating inbox rules
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 To manage rules, click on the gear icon at the top, then click on `Options`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -120,6 +122,16 @@ Fill in the requested information depending on the action you want the rule to c
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](../creating-inbox-rules-in-owa).
+
+#### Block a sender
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Click on the cog in the top left-hand corner, then click on "Options". In the left-hand column, follow the "Mail" tree under "Accounts", then "Block or authorise"
+
+In the "**Blocked Senders**" section, type an email address or domain name to block, and then click the `+`{.action} button to add it to the list.
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Managing a contact list
 
@@ -138,6 +150,8 @@ On the new page, you can add a new contact, create a contact list, and remove ex
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Changing the password
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You can change your account password when you are logged in to OWA. To do this, click the gear icon at the top, then click `Options`{.action}.
 

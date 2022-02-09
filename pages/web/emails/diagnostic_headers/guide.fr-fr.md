@@ -57,62 +57,50 @@ L'en-tête est composé de plusieurs éléments indiquant le cheminement de l'e-
 Vous trouverez ci-dessous une liste non-exhaustive des éléments pouvant composer un en-tête, ainsi que leur signification. 
 
 - Le champ `Received` est présent dans l'en-tête à chaque passage de l'e-mail sur un serveur d'envoi (SMTP). On retrouve généralement le nom d'hôte du serveur avec son adresse IP et la date. Les champs `Received` sont classés du passage le plus récent au passage le plus ancien sur un serveur :
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
- 
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *Ici l'e-mail a été transmis du serveur mxplan7.mail.ovh.net vers le serveur mo3005.mail-out.ovh.net le 30 juin 2021 à 13:12:40 (Fuseau horaire UTC)*
 
 - Le champ `Return-Path` correspond à l'adresse de retour lorsque l'envoi du message a échoué. l'adresse de retour est généralement celle qui a réalisé l'envoi. 
-
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
-
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Le champ `From` désigne l'adresse de l'expéditeur de l'e-mail et son nom d'affichage.
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&gt
-
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Le champ `To` désigne l'adresse du destinataire de l'e-mail et son nom d'affichage.
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt 
-
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - Le champ `Subject` désigne l'objet de l'e-mail.
 <pre class="console"><code>
 Subject: Hello my friend
-
 </code></pre>
 
 - Le champ `Message-ID` désigne l'identifiant unique de l'e-mail et se termine par le nom du serveur d'envoi (après le "@"). 
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
-
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - Le champ `Received-SPF` affiche le résultat du contrôle [SPF](https://docs.ovh.com/fr/domains/le-champ-spf/) effectué sur le nom de domaine de l'expéditeur. L'argument `client-ip` permet notamment de relever l'adresse IP du serveur qui a servi à expédier l'e-mail. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
-
 </code></pre>
 
 - Les champs `X-` sont des champs personnalisés, ils servent de compléments aux champs standards. Ils sont implémentés par les serveurs sur lesquels les e-mails transitent.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
 X-VR-SPAMSTATE: OK
 X-VR-SPAMSCORE: 0
 X-VR-SPAMCAUSE: 
-
 </code></pre>
 
 ### Récupérer un en-tête sur un logiciel de messagerie
@@ -174,6 +162,9 @@ Pour télécharger le fichier `.eml`, sélectionnez l'e-mail de votre choix. Cli
 Sélectionnez l'e-mail dont vous souhaitez afficher l'en-tête. Cliquez **sur la flèche** à droite de `Répondre à tous`{.action} puis sur `Afficher les détails du message`{.action}. Une nouvelle fenêtre s'ouvre avec l'en-tête complet de l'e-mail, ce qui vous permet de le télécharger.
 
 ![emails](images/owa01.png){.thumbnail}
+
+Consultez également notre tutoriel vidéo:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Récupérer le fichier .eml**
 

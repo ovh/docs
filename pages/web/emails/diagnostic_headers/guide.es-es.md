@@ -60,53 +60,44 @@ El encabezamiento consta de varios elementos que indican la ruta del correo elec
 A continuación se muestra una lista no exhaustiva de los elementos que pueden componer una cabecera, así como su significado. 
 
 - El campo `Received` aparece en la cabecera cada vez que pasa el email a un servidor de envío (SMTP). Por lo general, el nombre del host del servidor aparece con la dirección IP y la fecha. Los campos `Received` están clasificados desde el paso más reciente hasta el paso más antiguo de un servidor:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for &ltjohn@mydomain.ovh&gt ; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *Aquí el mensaje de correo electrónico se transmitió desde el servidor mxplan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
 
-- El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. La dirección de vuelta es generalmente la que ha realizado el envío. 
-
+- El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. La dirección de vuelta es generalmente la que ha realizado el envío.
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - El campo `From` designa la dirección del remitente del email y su nombre de visualización.
-
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&gt
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - El campo `To` designa la dirección del destinatario del mensaje de correo electrónico y su nombre de visualización.
-
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt 
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - El campo `Subject` designa el objeto del mensaje de correo electrónico.
-
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
 - El campo `Message-ID` designa el identificador único del mensaje y termina por el nombre del servidor de envío (después de "@"). 
-
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - El campo `Received-SPF` muestra el resultado del control [SPF](https://docs.ovh.com/es/domains/web_hosting_el_registro_spf/) realizado sobre el dominio del remitente. El argumento `client-ip` permite, entre otras cosas, encontrar la dirección IP del servidor que ha utilizado para enviar el mensaje de correo. 
-
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
 
 - Los campos `X-` son campos personalizados y se utilizan como complemento de los campos estándar. Estos servicios se implementan en los servidores en los que transitan los mensajes de correo.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
@@ -174,6 +165,9 @@ Para descargar el archivo `.eml`, seleccione el email que desee. Haga clic en el
 Seleccione el email en el que quiera ver la cabecera. Haga clic **en la flecha** a la derecha de `Responder a todos`{.action} y luego en `Mostrar detalles del mensaje`{.action}. Se abrirá una nueva ventana con la cabecera completa del email, lo que le permitirá descargarlo.
 
 ![correo electrónico](images/owa01.png){.thumbnail}
+
+Vea también nuestro tutorial de vídeo:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Obtener el archivo .eml**
 

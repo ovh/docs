@@ -108,6 +108,8 @@ Pour simultanément **déplacer plusieurs e-mails**, sélectionnez les tous grâ
 
 #### Créer des règles de gestion de la messagerie
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Pour créer et gérer des règles, cliquez d’abord sur l'icône d'engrenage en haut, puis sur `Options`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -123,6 +125,16 @@ Renseignez les informations demandées en fonction de la tâche que vous voudrez
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](../regles-boite-de-reception-owa/).
+
+#### Bloquer un expéditeur
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Cliquez sur la roue crantée en haut à gauche, puis sur « Options ». Dans la colonne de gauche, suivez l'arborescence « Courrier », sous « Comptes », puis « Bloquer ou autoriser ».
+
+Dans la section « **Expéditerus bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste. 
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Gérer une liste de contacts
 
@@ -141,6 +153,8 @@ Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à cô
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Modifier le mot de passe
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Vous pouvez modifier le mot de passe de votre compte lorsque vous êtes connecté à OWA. Pour ce faire, cliquez sur l'icône d'engrenage en haut, puis cliquez sur `Options`{.action}.
 

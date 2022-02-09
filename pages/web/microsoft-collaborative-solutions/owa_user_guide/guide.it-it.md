@@ -106,6 +106,8 @@ Per creare una nuova cartella, clicca con il tasto destro sul nome del tuo indir
 
 #### Creare regole di posta in arrivo
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Per gestire regole, clicca sull’icona con l’ingranaggio, in alto, quindi su `Opzioni`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -121,6 +123,16 @@ Compila con le informazioni richieste a seconda dell’azione che desideri venga
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fai riferimento alla nostra guida: [Creare regole di posta in arrivo in OWA](../creare-regole-posta-in-arrivo-in-owa/).
+
+#### Blocca un mittente
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Clicca sull'icona a forma di ingranaggio in alto a sinistra e poi su "Opzioni". Nella colonna di sinistra, clicca su "Posta" > "Account" > "Blocca o autorizza".
+
+Nella sezione "**ExpMéditerranée bloccati**", inserisci un indirizzo email o un dominio da bloccare e clicca sul pulsante `+`{.action} per aggiungerlo nella lista.
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Gestire una lista di contatti
 
@@ -139,6 +151,8 @@ Sulla nuova pagina, puoi aggiungere un nuovo contatto, creare un elenco di conta
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Modificare la password
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puoi modificare la password del tuo account dopo aver effettuato l’accesso a OWA. Per farlo, clicca sull’icona con l’ingranaggio in alto, quindi clicca su `Opzioni`{.action}.
 
