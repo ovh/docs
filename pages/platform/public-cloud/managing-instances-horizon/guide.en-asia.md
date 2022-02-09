@@ -71,7 +71,7 @@ In the management interface for the Instance, select the option you want from th
 
 
 > [!warning]
-> The options in red indicate the possibility of data loss during the process, make sure you always have a backup of your data before making any changes to your instance.
+> The options in red indicate the possibility of data loss during the process, always make sure you have a backup of your data before making any changes to your instance.
 >
 
 ### Resize an instance
@@ -94,45 +94,37 @@ Next, click on the `Compute`{.action} menu on the left side and select `Instance
 
 ![Resize instance](images/resizeinstance2022.png){.thumbnail}
 
-### Template Selection Tab (Flavor Choice)
-
-This section shows the current template (old flavor) and allows you to select a new template (new flavor) for the instance resource.
+* Template Selection Tab (Flavor Choice): this section shows the current template (old flavor) and allows you to select a new template (new flavor) for the instance resource.
 
 ![public-cloud](images/flavorchoice.png){.thumbnail}
 
-#### Flavor Details
+* Flavor Details. In this section, you will see the resources associated with the new template you have chosen. 
 
-In this section, you will see the resources associated with the new template you have chosen. 
-
-#### Project Limits 
-
-Under this section, you can view the occupied resources in relation to the total resources allocated to the project.
+* Project Limits. View here the occupied resources compared to the total resources allocated to the project.
 
 > [!warning]
 > Please note that you cannot switch models when resizing an instance. A resizing can only be done from a Linux model to another Linux model or from a Windows model to another Windows model.
 >
 
-### Advanced Options
-
-Use this section to manage the **Disk Partition** and **Server Group**.
+* Advanced Options. This section allows you to manage the **Disk Partition** and **Server Group**.
 
 ![public-cloud](images/resize_advanced.png){.thumbnail}
 
 Once the configuration is complete, click on `Resize`{.action}.
 
-### Resizing a disk in Windows
+**Resizing a disk in Windows**
 
 When performing a resize for a Windows Instance, please note that the partition size is not automatically updated, so you will have to extend it using the **disk manager**:
 
-- Right-click on the `Start`{.action} menu and launch the disk manager by clicking on `Disk Management`{.action}:
+Right-click on the `Start`{.action} menu and launch the disk manager by clicking on `Disk Management`{.action}:
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-- Right-click on the main partition, then click on `Extend Volume`{.action}.
+Right-click on the main partition, then click on `Extend Volume`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-- In the `Extend Volume Wizard` menu, click on `Next`{.action} to proceed. In the next tab, choose the disk resources to extend and click on `Next`{.action}. 
+In the `Extend Volume Wizard` menu, click on `Next`{.action} to proceed. In the next tab, choose the disk resources to extend and click on `Next`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
@@ -140,7 +132,7 @@ Once done, click on `Finish`{.action} to confirm your choice.
 
 ![public-cloud](images/wizard2021.png){.thumbnail}
 
-- The new disk size will then be displayed in the disk manager.
+The new disk size will then be displayed in the disk manager.
 
 ![public-cloud](images/2979.png){.thumbnail}
 
@@ -193,7 +185,7 @@ From the drop-down list for the instance, select `Console`{.action}.
 
 ![public-cloud](images/console.png){.thumbnail}
 
-### Reboot an instance.
+### Reboot an instance
 
 There are two methods for rebooting an instance:
 
