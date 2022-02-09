@@ -18,7 +18,7 @@ Klucz SSH można dodać w interfejsie Public Cloud na dwa sposoby:
 
 ### Wymagania początkowe
 
-- [klucz SSH](../tworzenie-kluczy-ssh/){.external}
+- [klucz SSH](../public-cloud-pierwsze-kroki/)
 
 > [!primary]
 >

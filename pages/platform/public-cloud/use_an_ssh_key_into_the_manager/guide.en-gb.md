@@ -18,7 +18,7 @@ SSH is a protocol making it possible to access and communicate with a server in 
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVH account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An [SSH key](../create-ssh-keys/)
+- An [SSH key](../public-cloud-first-steps/)
 
 
 ## Instructions

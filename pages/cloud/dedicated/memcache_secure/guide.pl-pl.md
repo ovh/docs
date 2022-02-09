@@ -20,7 +20,7 @@ Memcached nie wymaga domyślnie uwierzytelnienia. Jeśli serwer jest dostępny w
 
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVH nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+> OVHcloud oddaje do Twojej dyspozycji serwery, którymi samodzielnie zarządzasz. OVH nie ma dostępu do Twoich serwerów i nie pełni funkcji administratora. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy  zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 >

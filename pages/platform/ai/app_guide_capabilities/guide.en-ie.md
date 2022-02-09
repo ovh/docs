@@ -126,7 +126,7 @@ AI Apps is compliant with the OVHcloud AI CLI. Discover how to [install the OVHc
 
 ## Going further
 
-Browse the full [AI Apps documentation](https://docs.ovh.com/ie/en/ai/){.external} to further understand the main concepts and get started.
+Browse the full [AI Apps documentation](../) to further understand the main concepts and get started.
 
 ## We want your feedback!
 

@@ -28,7 +28,7 @@ You may need to configure failover IP addresses on your instances, for example i
 
 ## Instructions
 
-The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (RDP for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
@@ -161,7 +161,11 @@ sudo netplan apply
 Repeat this procedure for each failover IP address.
 
 
-### Windows Server 2016
+### Windows Server (2016)
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+
+Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
 
 #### Step 1: Verify the network configuration
 

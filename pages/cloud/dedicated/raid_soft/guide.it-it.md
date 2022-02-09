@@ -11,7 +11,7 @@ section: 'RAID e dischi'
 
 Il RAID (Redundant Array of Independent Disks) consiste in un insieme di tecniche che consentono di limitare la perdita delle informazioni presenti su un server grazie alla replica dei dati su più dischi.
 
-Il livello RAID implementato di default sui server OVH è RAID 1, un sistema che raddoppia lo spazio occupato dai dati dimezzando quindi quello utile.
+Il livello RAID implementato di default sui server OVHcloud è RAID 1, un sistema che raddoppia lo spazio occupato dai dati dimezzando quindi quello utile.
 
 **Questa guida ti mostra come configurare il volume RAID del tuo server nel caso in cui sia necessario ricostruirlo in seguito alla corruzione o guasto del disco.**
 

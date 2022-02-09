@@ -33,7 +33,7 @@ Es posible que necesite configurar direcciones IP failover en sus instancias, po
 
 ## Procedimiento
 
-Esta guía explica las configuraciones de las distribuciones y sistemas operativos más habituales. En primer lugar, conéctese a su instancia por SSH o a través de una sesión de conexión a la interfaz gráfica de usuario (RDP para una instancia Windows). Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes (administrador/sudo).
+Esta guía explica las configuraciones de las distribuciones y sistemas operativos más habituales. En primer lugar, conéctese a su instancia por SSH o a través de una sesión de conexión a la interfaz gráfica de usuario (VNC para una instancia Windows). Los siguientes ejemplos implican que está conectado como usuario con permisos muy exigentes (administrador/sudo).
 
 > [!primary]
 >
@@ -169,7 +169,7 @@ sudo netplan apply
 
 Repita este procedimiento para cada dirección IP failover.
 
-### Windows Server 2016
+### Windows Server (2016)
 
 #### 1\. comprobar la configuración de red
 

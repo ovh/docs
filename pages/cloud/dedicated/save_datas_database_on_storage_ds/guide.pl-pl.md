@@ -2,14 +2,14 @@
 title: 'Tworzenie kopii danych i baz danych na serwerze Storage'
 slug: tworzenie-kopii-danych-i-baz-danych-na-serwerze-storage
 excerpt: 'Zabezpiecz Twoje dane w 5 krokach'
-section: Tutoriale
+section: Tutorial
 ---
 
 ## Wprowadzenie 
 
 Twoje dane są wrażliwe: ich utrata lub uszkodzenie mogłyby szybko doprowadzić do problemów w prowadzeniu Twojej działalności. Ponieważ zawsze istnieje ryzyko utraty danych, zalecamy wykonywanie kopii zapasowych co najmniej raz dziennie, najlepiej przy użyciu serwera czy rozwiązania do wykonywania kopii zapasowych innego niż Twoja infrastruktura produkcyjna.
 
-OVH oferuje gamę serwerów [dedykowanych Storage](https://www.ovhcloud.com/pl/bare-metal/storage/){.external} dostosowanych do przechowywania kopii zapasowych i wyposażonych w minimum cztery dyski twarde. Istnieje możliwość wykorzystania tych zasobów do zapisywania kopii zapasowych infrastruktury hostowanej w OVH lub u innego dostawcy za pośrednictwem sieci publicznej.
+OVHcloud oferuje gamę serwerów [dedykowanych Storage](https://www.ovhcloud.com/pl/bare-metal/storage/){.external} dostosowanych do przechowywania kopii zapasowych i wyposażonych w minimum cztery dyski twarde. Istnieje możliwość wykorzystania tych zasobów do zapisywania kopii zapasowych infrastruktury hostowanej w OVHcloud lub u innego dostawcy za pośrednictwem sieci publicznej.
 
 Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebom serwer kopii zapasowych, jak utworzyć drzewo kopii zapasowych oraz jak zautomatyzować wykonywanie kopii zapasowych danych z dwóch zdalnych serwerów za pośrednictwem protokołu SCP.
 
@@ -26,10 +26,10 @@ Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebo
 
 ### Powinieneś posiadać:
 
-- [Serwer Storage OVH](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}
+- [Serwer Storage OVHcloud](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}
 - Infrastrukturę produkcyjną ([VPS](https://www.ovhcloud.com/pl/vps/){.external}, [serwery dedykowane](https://www.ovhcloud.com/pl/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}…)
 - Połączenie SSH skonfigurowane między serwerem kopii zapasowych a infrastrukturą produkcyjną
-- Zalecane: sieć prywatna między serwerami ([OVH vRack](https://www.ovh.pl/rozwiazania/vrack/){.external})
+- Zalecane: sieć prywatna między serwerami ([OVHcloud vRack](https://www.ovh.pl/rozwiazania/vrack/){.external})
 
 
 
@@ -37,9 +37,9 @@ Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebo
 
 ### Etap 1: wybierz odpowiedni tryb RAID
 
-OVH oferuje gamę [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}, które posiadają kilka dysków twardych. W poniższym przykładzie prezentujemy RAID programowy (_soft RAID_) z czterema dyskami o pojemności 6 TB każdy. 
+OVHcloud oferuje gamę [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}, które posiadają kilka dysków twardych. W poniższym przykładzie prezentujemy RAID programowy (_soft RAID_) z czterema dyskami o pojemności 6 TB każdy. 
 
-OVH umożliwia wybranie konfiguracji przechowywania danych, proponując RAID 0, 1, 5, 6 i 10. Każdy z tych rodzajów macierzy ma swoje zalety i wady w zakresie wydajności i elastyczności. W przypadku czterech dysków możesz przechowywać dane w konfiguracji RAID 5, 6 lub 10 (RAID 0 i 1 nie są w tym przypadku odpowiednie).
+OVHcloud umożliwia wybranie konfiguracji przechowywania danych, proponując RAID 0, 1, 5, 6 i 10. Każdy z tych rodzajów macierzy ma swoje zalety i wady w zakresie wydajności i elastyczności. W przypadku czterech dysków możesz przechowywać dane w konfiguracji RAID 5, 6 lub 10 (RAID 0 i 1 nie są w tym przypadku odpowiednie).
 
 Poniżej kilka wyjaśnień dotyczących tych typów macierzy RAID.
 
@@ -124,7 +124,7 @@ Serwer kopii zapasowych jest teraz gotowy do zapisu kopii.
 
 > [!primary]
 > 
-> Jeśli Twoja infrastruktura produkcyjna hostowana jest w OVH i posiadasz wykupioną usługę wirtualnej szafy vRack, przeprowadź odpowiednią konfigurację. Dzięki temu Twoje kopie zapasowe nie będą przesyłane przez sieć publiczną (Internet).
+> Jeśli Twoja infrastruktura produkcyjna hostowana jest w OVHcloud i posiadasz wykupioną usługę wirtualnej szafy vRack, przeprowadź odpowiednią konfigurację. Dzięki temu Twoje kopie zapasowe nie będą przesyłane przez sieć publiczną (Internet).
 >
 
 Etap ten wymaga połączenia z serwerami produkcyjnymi przez SSH, które z kolei same połączą się z serwerem kopii zapasowych przez protokół SCP. Aby tak się stało, wszystkie zasoby muszą mieć możliwość łączenia się przez SSH.
@@ -189,4 +189,4 @@ Składnia *crontab* jest specyficzna; nie opisujemy jej dokładnie w niniejszym 
 
 Właśnie skonfigurowałeś własny serwer kopii zapasowych i zautomatyzowałeś w sposób podstawowy wykonywanie kopii zapasowych plików. Jest to ważny krok, dzięki któremu unikniesz utraty danych i zapewnisz bezpieczeństwo prowadzonej przez Ciebie działalności.
 
-Jak wspomniano wyżej, istnieją również inne darmowe lub płatne sposoby optymalizacji wykonywania kopii zapasowych. Jeśli Twoje dane są wrażliwe, zalecamy ich zaszyfrowanie i przesyłanie wyłączenie w sieci prywatnej, takiej jak vRack OVH.
+Jak wspomniano wyżej, istnieją również inne darmowe lub płatne sposoby optymalizacji wykonywania kopii zapasowych. Jeśli Twoje dane są wrażliwe, zalecamy ich zaszyfrowanie i przesyłanie wyłączenie w sieci prywatnej, takiej jak vRack OVHcloud.
