@@ -29,6 +29,60 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 ## En pratique
 
+### Debian
+
+Avant de commencer la mise à jour de la version majeure, assurez-vous de mettre à jour les versions les plus récentes de tous les paquets installés sur la version actuelle :
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Warning: L'étape suivante est facultative.
+> Cependant, vous devez examiner attentivement les paquets qui ne sont plus nécessaires sur le système. Sinon, la commande suivante peut casser le système. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Certaines mises à jour pouvant nécessiter un redémarrage, nous devons d'abord redémarrer avant de commencer la mise à jour :
+
+```bash
+$ sudo systemctl reboot
+```
+
+Après le redémarrage, nous mettrons à jour le répertoire /etc/apt/sources.list pour cibler la prochaine version (dans ce cas, nous allons de Buster à Bullseye) :
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Maintenant que nous sommes la cible de la prochaine version, passons à la mise à jour et redémarrons à la fin :
+
+> [!primary]
+> Des fenêtres contextuelles vous invitent peut-être à redémarrer vos services. Réponds oui.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Vérifiez que la mise à niveau a fonctionné :
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Avant de procéder à la mise à jour de la version majeure de votre OS, assurez-vous de mettre à jour les versions les plus récentes de tous les paquets installés sur sa version actuelle :
