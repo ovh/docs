@@ -10,13 +10,13 @@ order: 04
 
 ## Ziel
 
-Sie können Ihre OVHcloud Public Cloud Projekte ganz einfach über das [Horizon](https://horizon.cloud.ovh.net/auth/login/) Interface verwalten. Dort finden Sie Ihre gesamte Infrastruktur (Instanzen, Backups, Festplatten, SSH-Schlüssel usw.) und Storage-Projekte (einschließlich der Liste Ihrer Container).
+Zusätzlich zum OVHcloud Kundencenter können Sie Ihre OVHcloud Public Cloud Projekte auch über das [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) verwalten. In diesem Interface finden Sie alle Ihre Infrastruktur- (Instanzen, Backups, Festplatten, SSH-Schlüssel usw.) und Storage-Projekte (einschließlich der Liste Ihrer Container).
 
 **In dieser Anleitung erfahren Sie, wie Sie Ihre Public Cloud Instanzen über das Horizon-Interface verwalten.**
 
 ## Voraussetzungen
 
-- Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) oder über das Horizon-Interface erstellt](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_in_horizon/).
+- Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/) oder über das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_in_horizon/).
 - [Sie haben einen SSH-Schlüssel erstellt](https://docs.ovh.com/de/public-cloud/create-ssh-keys/).
 
 ## In der praktischen Anwendung
@@ -77,7 +77,6 @@ Wählen Sie im Verwaltungsinterface der Instanz die gewünschte Option aus der D
 Mit der Public Cloud können Sie die Ressourcen Ihrer Instanz mit nur wenigen Klicks erhöhen.
 
 > [!warning]
-> [!warning]
 >
 > Bei klassischen Modellen ist nur die Umstellung auf ein größeres Modell möglich.
 > Beachten Sie weiterhin, dass der Betrieb der Instanz während der Operation unterbrochen wird.
@@ -98,7 +97,7 @@ Mit der Public Cloud können Sie die Ressourcen Ihrer Instanz mit nur wenigen Kl
 Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.</br>
 Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instances`{.action} aus. Wählen Sie `Resize Instance`{.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
-![Resize instance](images/resizeinstance2021.png){.thumbnail}
+![Resize instance](images/resizeinstance2022.png){.thumbnail}
 
 
 * Wahl des Templates (*Flavor Choice*): Dieser Abschnitt zeigt die aktuelle Template (*old flavor*) an und erlaubt es Ihnen, das neue Template (*new flavor*) für die Instanz auszuwählen.
@@ -122,19 +121,19 @@ Wenn die Konfiguration abgeschlossen ist, klicken Sie auf `Resize`{.action}.
 
 Achtung, bei einer Größenanpassung einer Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet. Die Partition muss also über die Datenträgerverwaltung (**Disk Management**) angepasst werden.
 
-Klicken Sie mit der rechten Maustaste auf den Windows `Start`{.action} Button und öffnen Sie die Datenträgerverwaltung, indem Sie auf `Disk Management`{.action} klicken.
+Klicken Sie mit der rechten Maustaste auf den Windows `Start`{.action} Button und öffnen Sie die Datenträgerverwaltung, indem Sie auf `Datenträgerverwaltung`{.action} klicken.
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-Klicken Sie rechts auf die Hauptpartition und klicken Sie dann auf `Extend Volume`{.action}.
+Klicken Sie rechts auf die Hauptpartition und klicken Sie dann auf `Volume erweitern`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-Klicken Sie im `Extend Volume Wizard` auf `Next`{.action}. Wählen Sie dann die Ressourcen der zu erweiternden Disk aus und klicken Sie auf `Next`{.action}. 
+Klicken Sie im `Assistent zum Erweitern von Volumes` auf `Weiter`{.action}. Wählen Sie dann die Ressourcen der zu erweiternden Disk aus und klicken Sie auf `Weiter`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
-Klicken Sie abschließend auf `Finish`{.action}, um die Änderung zu bestätigen.
+Klicken Sie abschließend auf `Fertig stellen`{.action}, um die Änderung zu bestätigen.
 
 ![public-cloud](images/wizard2021.png){.thumbnail}
 

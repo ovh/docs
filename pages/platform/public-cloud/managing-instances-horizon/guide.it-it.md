@@ -114,19 +114,19 @@ Una volta terminata la configurazione, clicca su `Resize`{.action}.
 
 Attenzione: durante un ridimensionamento di un’istanza Windows, la dimensione della partizione non è automaticamente aggiornata, sarà quindi necessario estenderla utilizzando il disk manager:
 
-Fai click con il tasto destro sul menu `Start`{.action} e avvia la gestione del disco cliccando su `Disk Management`{.action}.
+Fai click con il tasto destro sul menu `Start`{.action} e avvia la gestione del disco cliccando su `Gestione disco`{.action}.
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-Clicca con il tasto destro sulla partizione principale e poi su `Extend Volume`{.action}.
+Clicca con il tasto destro sulla partizione principale e poi su `Estendi volume`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-Clicca su `Next`{.action} per accedere al `Extend Volume Wizard`. Scegli le risorse del disco da estendere e clicca su `Next`{.action}. 
+Clicca su `Avanti`{.action} per accedere al `Estensione guidata volume`. Scegli le risorse del disco da estendere e clicca su `Avanti`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
-Clicca su `Finish`{.action} per confermare la tua scelta.
+Clicca su `Fine`{.action} per confermare la tua scelta.
 
 ![public-cloud](images/wizard2021.png){.thumbnail}
 

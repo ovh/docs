@@ -113,19 +113,20 @@ Una vez completada la configuración, haga clic en `Resize`{.action}.
 
 Atención: Al redimensionar una instancia Windows, el tamaño de la partición no se actualiza automáticamente, por lo que deberá ampliarse utilizando el **disk manager**:
 
-Haga clic derecho en el menú `Start`{.action} e inicie el gestor del disco haciendo clic en `Disk Management`{.action}:
+Haga clic derecho en el menú `Inicio`{.action} e inicie el gestor del disco haciendo clic en `Administración de discos`{.action}:
 
 ![public-cloud](images/2980.png){.thumbnail}
 
-Haga clic derecho en la partición principal y seleccione `Extend Volume`{.action}.
+Haga clic derecho en la partición principal y seleccione `Extender volumen`{.action}.
 
 ![public-cloud](images/2981a.png){.thumbnail}
 
-Haga clic en `Next`{.action} para acceder al `Extend Volume Wizard`. Seleccione los recursos del disco que quiera ampliar y haga clic en `Next`{.action}. 
+Haga clic en `Siguiente`{.action} para acceder al `Asistente para extender volúmenes`. Seleccione los recursos del disco que quiera ampliar y haga clic en `Siguiente`{.action}. 
 
 ![public-cloud](images/2978a.png){.thumbnail}
 
-Haga clic en `Finish`{.action} para aceptar la opción que prefiera.
+Haga clic en `Finalizar`{.action} para aceptar la opción que prefiera.
+
 
 ![public-cloud](images/wizard2021.png){.thumbnail}
 
