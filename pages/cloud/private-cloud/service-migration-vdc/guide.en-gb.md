@@ -662,6 +662,13 @@ Then for each id:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
+For global datastores, you can use the following API call :
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
+>
+
 A task is created for each call, you can follow the progress with:
 
 > [!api]
@@ -695,13 +702,6 @@ Then for each id:
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
->
-
-For global datastores, you can use the following API call :
-
-> [!api]
->
-> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
 >
 
 A task is created for each call, you can follow the progress with:
