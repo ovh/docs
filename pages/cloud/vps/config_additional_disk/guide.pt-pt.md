@@ -2,7 +2,7 @@
 title: 'Configurar um disco adicional'
 excerpt: 'Saiba como adicionar e configurar espaço de armazenamento adicional num VPS'
 slug: config-additional-disk-vps
-section: 'Backup'
+section: 'Opções de backup'
 order: 3
 ---
 
