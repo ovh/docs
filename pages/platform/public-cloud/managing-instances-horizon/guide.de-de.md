@@ -29,7 +29,7 @@ Anders als im OVHcloud Kundencenter unterscheidet Horizon Ihre Dienste je nach R
 
 ![public-cloud](images/region2021.png){.thumbnail}
 
-Klicken Sie links im `Menü`{.action} auf Compute und wählen Sie `Instances`{.action} aus. Auf der angezeigten Seite finden Sie eine Zusammenfassung aller Ihrer Instanzen. Hier werden mehrere Informationen angezeigt:
+Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann Instances aus. Auf der angezeigten Seite finden Sie eine Zusammenfassung aller Ihrer Instanzen. Hier werden mehrere Informationen angezeigt:
 
   * das Modell Ihrer Instanz (*Flavor*)
   * seinen Namen, seinen Stromversorgungszustand (Power State) und die seit seiner Gründung verstrichene Zeit (*Time since created*)
@@ -87,13 +87,6 @@ Mit der Public Cloud können Sie die Ressourcen Ihrer Instanz mit nur wenigen Kl
 > *Flex*-Instanzen erlauben die Anpassung auf höhere oder niedrigere Modelle aufgrund einer festen Größe einer einzelnen Disk.
 > 
 
-## Voraussetzungen
-
-- Sie haben eine [Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
-
-## In der praktischen Anwendung
-
 Loggen Sie sich ins [Horizon-Interface](https://horizon.cloud.ovh.net/auth/login/) ein wählen Sie oben links die korrekte Region aus.</br>
 Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instances`{.action} aus. Wählen Sie `Resize Instance`{.action} im Drop-down-Menü rechts neben der betreffenden Instanz aus.
 
@@ -117,7 +110,7 @@ Klicken Sie links im Menü auf `Compute`{.action} und wählen Sie dann `Instance
 
 Wenn die Konfiguration abgeschlossen ist, klicken Sie auf `Resize`{.action}.
 
-### Änderung der Größe einer Disk unter Windows
+**Änderung der Größe einer Disk unter Windows**
 
 Achtung, bei einer Größenanpassung einer Windows-Instanz wird die Größe der Partition nicht automatisch geupdatet. Die Partition muss also über die Datenträgerverwaltung (**Disk Management**) angepasst werden.
 
