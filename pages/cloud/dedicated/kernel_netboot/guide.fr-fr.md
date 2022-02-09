@@ -7,11 +7,11 @@ section: Divers
 
 
 ## Prérequis
-Le Netboot est un service proposé gratuitement par OVH et qui permet de démarrer le serveur dédié que vous louez chez OVH sur un kernel déjà compilé. Une fois configuré de cette façon, votre serveur charge automatiquement le noyau depuis le réseau, vous n'avez rien d'autre à configurer. Cette méthode vous permet également de mettre à jour très simplement votre noyau car OVH compile la dernière version du noyau dès sa disponibilité et la met à disposition sur le Netboot.
+Le Netboot est un service proposé gratuitement par OVHcloud et qui permet de démarrer le serveur dédié que vous louez chez OVHcloud sur un kernel déjà compilé. Une fois configuré de cette façon, votre serveur charge automatiquement le noyau depuis le réseau, vous n'avez rien d'autre à configurer. Cette méthode vous permet également de mettre à jour très simplement votre noyau car OVHcloud compile la dernière version du noyau dès sa disponibilité et la met à disposition sur le Netboot.
 
 Pour pouvoir modifier le netboot, il faut :
 
-- Avoir une machine, telle qu'un serveur dédié, chez OVH.
+- Avoir une machine, telle qu'un serveur dédié, chez OVHcloud.
 - Avoir accès à l'espace client.
 
 

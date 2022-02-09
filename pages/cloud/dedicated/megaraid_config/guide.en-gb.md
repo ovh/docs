@@ -11,7 +11,7 @@ section: 'RAID and disks'
 
 Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
 
-The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
+The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the usable disk space.
 
 **This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks' usable space.**
 
@@ -33,7 +33,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 Next, on the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
-Now select **Install from an OVH template** and then click `Next`{.action}.
+Now select **Install from an OVHcloud template** and then click `Next`{.action}.
 
 ![megaraid](images/server_installation_raid0_1.png){.thumbnail}
 
@@ -63,7 +63,7 @@ df -h
 
 ### Using rescue mode
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the `Bare Metal Cloud`{.action} menu and then select your server by going to `Dedicated Servers`{.action} in the left-hand sidebar. 
 
 On the `Server status`{.action} tab, click the `Edit`{.action} button to change the boot system.
 

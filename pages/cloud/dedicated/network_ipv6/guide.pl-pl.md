@@ -2,7 +2,7 @@
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 slug: siec-ipv6
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-section: 'Zarządzanie siecią'
+section: 'Sieć & IP'
 ---
 
 **Ostatnia aktualizacja: 01/12/2021**

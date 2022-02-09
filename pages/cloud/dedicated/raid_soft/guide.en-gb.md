@@ -11,7 +11,7 @@ section: 'RAID and disks'
 
 Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
 
-The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
+The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
 **This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.**
 

@@ -20,7 +20,7 @@ Tuttavia il servizio Memcached non è protetto di default da un sistema di auten
 
 > [!warning]
 >
-> OVH mette a tua disposizione le macchine di cui sei responsabile. In effetti, non avendo accesso a queste macchine, non siamo noi gli amministratori. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
+> OVHcloud mette a tua disposizione le macchine di cui sei responsabile. In effetti, non avendo accesso a queste macchine, non siamo noi gli amministratori. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
 >
 > Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un provider specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >

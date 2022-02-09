@@ -9,9 +9,9 @@ section: Tutorial
 
 I dati digitali sono informazioni sensibili: la loro perdita o compromissione potrebbe avere impatto sulla tua attività. Dato che la totale eliminazione di questi rischi non esiste, è consigliabile realizzare una copia dei propri dati almeno una volta al giorno e preferibilmente su server o soluzioni di storage diversi dalle infrastrutture di produzione.
 
-OVH offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-metal/storage/){.external} appositamente sviluppata per operazioni di archiviazione. Queste macchine sono dotate di un minimo di 4 hard disk, che possono essere utilizzati per il backup di infrastrutture ospitate in OVH o presso altri provider tramite la rete pubblica.
+OVHcloud offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-metal/storage/){.external} appositamente sviluppata per operazioni di archiviazione. Queste macchine sono dotate di un minimo di 4 hard disk, che possono essere utilizzati per il backup di infrastrutture ospitate in OVHcloud o presso altri provider tramite la rete pubblica.
 
-<b>Questa guida ti mostra come configurare un server di storage OVH per rispondere alle tue esigenze, creare cartelle in cui salvare le copie eseguite e automatizzare i backup dei dati di due server remoti tramite protocollo SCP.</b>
+<b>Questa guida ti mostra come configurare un server di storage OVHcloud per rispondere alle tue esigenze, creare cartelle in cui salvare le copie eseguite e automatizzare i backup dei dati di due server remoti tramite protocollo SCP.</b>
 
 
 ## Prerequisiti
@@ -26,7 +26,7 @@ OVH offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-metal/
 
 ### Hardware e software necessari
 
-- Un [server di storage OVH](https://www.ovhcloud.com/it/bare-metal/storage/){.external}
+- Un [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external}
 - Un’infrastruttura di produzione ([VPS](https://www.ovhcloud.com/it/vps/){.external}, [server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}...)
 - Una connessione SSH configurata tra il server di storage e l’infrastruttura di produzione
 - Una rete privata [vRack](https://www.ovh.it/soluzioni/vrack/){.external} tra i tuoi server (consigliato)
@@ -36,9 +36,9 @@ OVH offre una [gamma di server dedicati](https://www.ovhcloud.com/it/bare-metal/
 
 ### Step 1: scegli il livello di RAID più appropriato
 
-I [server di storage OVH](https://www.ovhcloud.com/it/bare-metal/storage/){.external} dispongono di configurazioni hardware con diversi hard disk. In questa guida, utilizzeremo un server con RAID software (o _softRAID_) di quattro dischi da 6 TB ciascuno.
+I [server di storage OVHcloud](https://www.ovhcloud.com/it/bare-metal/storage/){.external} dispongono di configurazioni hardware con diversi hard disk. In questa guida, utilizzeremo un server con RAID software (o _softRAID_) di quattro dischi da 6 TB ciascuno.
 
-Per configurare lo storage dei dati, OVH propone i livelli di RAID 0, 1, 5, 6 e 10, ognuno dei quali presenta vantaggi e inconvenienti in termini di prestazioni e resilienza. Con quattro dischi, per salvare i nostri dati nel modo più efficace, possiamo scegliere tra RAID 5, 6 o 10 (in questo caso, il RAID 0 e 1 non sono adeguati).
+Per configurare lo storage dei dati, OVHcloud propone i livelli di RAID 0, 1, 5, 6 e 10, ognuno dei quali presenta vantaggi e inconvenienti in termini di prestazioni e resilienza. Con quattro dischi, per salvare i nostri dati nel modo più efficace, possiamo scegliere tra RAID 5, 6 o 10 (in questo caso, il RAID 0 e 1 non sono adeguati).
 
 Ecco alcune informazioni su questi livelli di RAID.
 
@@ -65,7 +65,7 @@ Non esiste un sistema RAID migliore di un altro: ognuno risponde a necessità di
 
 ### Step 2: installa e configura il server
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#installa-o-reinstalla-il-tuo-server-dedicato_1){.external}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e installa il tuo server (come già detto nella parte iniziale di questa guida, utilizzeremo Debian 9.4). Per maggiori informazioni, consulta la nostra guida [Iniziare a utilizzare un server dedicato](https://docs.ovh.com/it/dedicated/iniziare-a-utilizzare-server-dedicato/#installa-o-reinstalla-il-tuo-server-dedicato_1){.external}.
 
 Una volta selezionato il sistema operativo, spunta la casella `Personalizza la configurazione delle partizioni`{.action} e clicca su `Seguente`{.action}.
 
@@ -123,7 +123,7 @@ A questo punto, il server di storage è pronto per ricevere i backup.
 
 > [!primary]
 > 
-> Se le tue infrastrutture di produzione sono ospitate in OVH e dispongono della nostra rete privata vRack, puoi configurarle in modo che i tuoi dati non passino per la rete pubblica (Internet).
+> Se le tue infrastrutture di produzione sono ospitate in OVHcloud e dispongono della nostra rete privata vRack, puoi configurarle in modo che i tuoi dati non passino per la rete pubblica (Internet).
 >
 
 Per effettuare questa operazione è necessario accedere in SSH ai server di produzione, che a loro volta si connetteranno al server di storage tramite il protocollo SCP. Tutte le risorse devono poter comunicare tra loro via SSH.
@@ -186,6 +186,6 @@ Per maggiori informazioni relativamente alla sintassi del *crontab*, consulta un
 
 ## Conclusione
 
-In questa guida abbiamo configurato un server di storage OVH in base a esigenze specifiche e creato una semplice automazione per il backup dei file in esso contenuti. È un’operazione importante per proteggere la tua attività ed evitare eventuali perdite di dati.
+In questa guida abbiamo configurato un server di storage OVHcloud in base a esigenze specifiche e creato una semplice automazione per il backup dei file in esso contenuti. È un’operazione importante per proteggere la tua attività ed evitare eventuali perdite di dati.
 
-Come già affermato, esistono altri metodi, sia gratuiti che a pagamento. per ottimizzare i tuoi backup. Se i tuoi dati sono sensibili, ti consigliamo inoltre di cifrarli e trasmetterli soltanto utilizzando reti private come la vRack OVH.
+Come già affermato, esistono altri metodi, sia gratuiti che a pagamento. per ottimizzare i tuoi backup. Se i tuoi dati sono sensibili, ti consigliamo inoltre di cifrarli e trasmetterli soltanto utilizzando reti private come la vRack OVHcloud.

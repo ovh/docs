@@ -3,6 +3,7 @@ title: 'Proteger um VPS'
 slug: como-proteger-vps
 section: 'Primeiros passos'
 excerpt: 'Descubra os elementos de base que lhe permitem proteger o seu VPS'
+order: 3
 ---
 
 > [!primary]
