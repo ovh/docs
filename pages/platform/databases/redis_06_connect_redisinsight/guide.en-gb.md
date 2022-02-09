@@ -93,7 +93,7 @@ Then on `Connect to a Redis database`
 
 ![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png)
 
-Fill the form with the previous collected informations. Check `Use TLS` checkbox and uncheck `Verify TLS Certificate` checkbox. Then click on `ADD REDIS DATABASE`
+Fill the form with the previous collected informations. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`
 
 ![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png)
 
@@ -101,7 +101,7 @@ Finally select your Redis database
 
 ![Dashboard](images/redis_06_connect_redisinsight-20220209095424435.png)
 
-Congratulations! You are now fully able to interact with your Redis instance!
+Congratulations! You are now connected to your Redis instance!
 
 ![Result](images/redis_06_connect_redisinsight-20220209095533690.png)
 
