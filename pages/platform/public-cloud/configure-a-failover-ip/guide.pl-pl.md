@@ -169,6 +169,10 @@ Powtórz tę procedurę dla każdego adresu IP Failover.
 
 ### Windows Server (2016)
 
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud.
+
+Otwórz `Instances`{.action} w menu po lewej stronie. Kliknij nazwę Twojej instancji. Przejdź do karty `Konsola VNC`{.action}.
+
 #### Etap 1: sprawdź konfigurację sieci
 
 Kliknij prawym przyciskiem myszy przycisk `Menu Start`{.action} i otwórz `Uruchom`{.action}.

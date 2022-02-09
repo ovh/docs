@@ -2,8 +2,8 @@
 title: 'Cloud Guthaben aufladen'
 excerpt: 'Erfahren Sie hier, wie Sie Guthaben für Ihr Public Cloud Projekt aufladen können'
 slug: cloud_guthaben_aufladen
-legacy_guide_number: g1907
 section: 'Projektverwaltung'
+order: 3
 ---
 
 **Letzte Aktualisierung am 22.11.2019**

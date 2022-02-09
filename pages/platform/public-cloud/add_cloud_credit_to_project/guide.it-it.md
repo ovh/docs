@@ -2,7 +2,6 @@
 title: 'Aggiungi credito Cloud al tuo progetto'
 excerpt: 'Aggiungi credito Cloud al tuo progetto'
 slug: aggiungi_credito_cloud_al_tuo_progetto
-legacy_guide_number: g1907
 section: Gestione del progetto
 ---
 

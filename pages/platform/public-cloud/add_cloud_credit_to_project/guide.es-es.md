@@ -2,7 +2,6 @@
 title: 'Añadir crédito Cloud'
 slug: anadir_credito_cloud
 excerpt: 'Cómo añadir crédito en su proyecto Public Cloud'
-legacy_guide_number: 1907
 section: 'Gestión del proyecto'
 ---
 
