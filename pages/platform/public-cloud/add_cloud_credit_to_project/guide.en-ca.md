@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](../information-on-cloud-billing-options/). This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](https://docs.ovh.com/ca/en/billing/) to learn more about this topic.)
+With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](../information-on-cloud-billing-options/).<br> This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](https://docs.ovh.com/ca/en/billing/) to learn more about this topic.)
 
 **This guide explains how to add credit on to your Public Cloud account using a voucher, or by generating a purchase order.**
 
