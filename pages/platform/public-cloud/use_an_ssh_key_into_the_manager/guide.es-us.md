@@ -2,7 +2,8 @@
 title: 'Usar una clave SSH en la interfaz de Public Cloud'
 slug: usar-una-clave-ssh-en-la-interfaz-de-public-cloud
 excerpt: 'Instrucciones paso a paso sobre cómo usar una clave SSH para simplificar el acceso a los servidores en la nube'
-section: 'Base de conocimientos'
+section: 'Gestión de las instancias desde el área de cliente'
+order: 04
 ---
 
 **Última actualización: 4/12/2019**

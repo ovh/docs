@@ -3,7 +3,8 @@ title: Configurar llaves SSH adicionales
 excerpt: Configurar llaves SSH adicionales
 slug: configurar_llaves_ssh_adicionales
 legacy_guide_number: g1924
-section: Gestión de los accesos
+section: Tutorials
+order: 01
 ---
 
 

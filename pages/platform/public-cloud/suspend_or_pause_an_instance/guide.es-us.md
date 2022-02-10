@@ -3,7 +3,7 @@ title: Suspender o poner en pausa una instancia
 slug: suspender_o_poner_en_pausa_una_instancia
 legacy_guide_number: g1781
 section: Gestión del proyecto
-order: 3
+order: 03
 ---
 
 > [!primary]

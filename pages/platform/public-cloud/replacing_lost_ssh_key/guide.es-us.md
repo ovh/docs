@@ -3,7 +3,8 @@ title: Modificar su llave SSH en caso de pérdida
 excerpt: Modificar su llave SSH en caso de pérdida
 slug: modificar_su_llave_ssh_en_caso_de_perdida
 legacy_guide_number: g2069
-section: Seguridad
+section: Gestión de las instancias desde el área de cliente
+order: 05
 ---
 
 > [!primary]

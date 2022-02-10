@@ -4,6 +4,7 @@ excerpt: 'Poner una instancia en modo de rescate'
 slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
+order: 03
 ---
 
 **Última actualización: 26/07/2021**

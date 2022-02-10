@@ -4,6 +4,7 @@ excerpt: 'Cómo delegar permisos técnicos a otras cuentas OVHcloud para un proy
 slug: delegar_proyectos
 legacy_guide_number: g1914
 section: 'Gestión del proyecto'
+order: 07
 ---
 
 **Última actualización: 25/11/2019**
@@ -27,7 +28,7 @@ En esta guía, explicaremos cómo hacerlo.
 
 ### Delegar su proyecto
 
-Conéctese a su [área de cliente](https://ca.ovh.com) y seleccione `Public Cloud`{.action}. Haga clic en `Contactos y permisos`{.action} en la sección **Gestión del proyecto**.
+Conéctese a su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Public Cloud`{.action}. Haga clic en `Contactos y permisos`{.action} en la sección **Gestión del proyecto**.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
