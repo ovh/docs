@@ -53,7 +53,7 @@ Une fois connecté, cliquez sur `Éléments supprimés`{.action} dans la colonne
 
 ![emails](images/3582.png){.thumbnail}
 
-Une fenêtre séparée apparait. Il est possible que votre navigateur internet bloque par défaut l'apparition de fenêtre séparée, assurez-vous qu'il autorise celle-ci.
+Une fenêtre supplémentaire apparait. Il est possible que votre navigateur internet bloque par défaut l'apparition des fenêtres de type *pop-up*, assurez-vous donc qu'il autorise celles-ci.
 
 Vous pouvez sélectionner plusieurs éléments en maintenant la touche `Ctrl`(ou `command`) de votre clavier puis en cliquant sur les éléments souhaités.
 

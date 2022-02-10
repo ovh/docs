@@ -166,7 +166,8 @@ Seleccione el email en el que quiera ver la cabecera. Haga clic **en la flecha**
 
 ![correo electrónico](images/owa01.png){.thumbnail}
 
-Vea también nuestro tutorial de vídeo:
+Vea también nuestro tutorial en vídeo:
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Obtener el archivo .eml**
