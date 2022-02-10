@@ -12,14 +12,14 @@ section: 'Zarządzanie projektami'
 
 Może pojawić się sytuacja, w której będziesz musiał dać innym użytkownikom dostęp do niektórych projektów, bez nadawania dostępu do innych usług ze względów bezpieczeństwa. 
 
-W takiej sytuacji można przypisać jeden lub więcej projektów do innego konta OVH w trybie samego odczytu lub odczytu i zapisu.
+W takiej sytuacji można przypisać jeden lub więcej projektów do innego konta OVHcloud w trybie samego odczytu lub odczytu i zapisu.
 
 Niniejszy przewodnik wyjaśnia, jak to zrobić.
 
 
 ### Wymagania początkowe
 
-- 2 konta OVH
+- 2 konta OVHcloud
 - Projekt Public Cloud
 
 
@@ -27,7 +27,7 @@ Niniejszy przewodnik wyjaśnia, jak to zrobić.
 
 ### Delegowanie swojego projektu
 
-Zaloguj się do swojego [panelu klienta](https://www.ovhtelecom.fr/manager/) i wybierz opcję`Public Cloud`{.action}. Kliknij pozycję`Contacts and Rights`{.action} (Kontakty i uprawnienia) w rubryce **Project Management** (Zarządzanie projektem).
+Zaloguj się do swojego [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję`Public Cloud`{.action}. Kliknij pozycję`Contacts and Rights`{.action} (Kontakty i uprawnienia) w rubryce **Project Management** (Zarządzanie projektem).
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
