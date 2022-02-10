@@ -28,7 +28,7 @@ En esta guía, explicaremos cómo hacerlo.
 
 ### Delegar su proyecto
 
-Conéctese a su [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Public Cloud`{.action}. Haga clic en `Contactos y permisos`{.action} en la sección **Gestión del proyecto**.
+Conéctese a su [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Public Cloud`{.action}. Haga clic en `Contacts and Rights`{.action} (Contactos y permisos) en la sección **Project Management**.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
