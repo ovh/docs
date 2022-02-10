@@ -66,7 +66,7 @@ In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
 
-Click to authorize a new IP, and enter the IP of your pgAdmin environment. In our case we will enter 109.190.200.59.
+Click to authorize a new IP, and enter the IP of your RedisInsight environment. In our case we will enter 109.190.200.59.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
 
