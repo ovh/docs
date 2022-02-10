@@ -10,13 +10,13 @@ order: 2
  
 ## Objectif
 
-Vous avez supprimé par erreur un ou plusieurs éléments (mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours possible de les restaurer jusqu'à 14 jours après la suppression via le webmail OWA (Outlook Web Application).
+Vous avez supprimé par erreur un ou plusieurs éléments (e-mail, contact, rendez-vous du calendrier) et vous avez vidé votre corbeille. Il est toujours possible de les restaurer jusqu'à 14 jours après leur suppression via le webmail OWA (Outlook Web Application).
 
 **Découvrez comment restaurer des éléments supprimés depuis votre compte e-mail via le webmail (OWA)**
  
 ## Prérequis
  
-- Disposer d'une solution e-mail OVHcloud. **MX Plan** ([nouvelle version uniquement](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/).
+- Disposer d'une solution e-mail OVHcloud, **MX Plan** ([nouvelle version uniquement](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/#en-pratique)) proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/).
 - Connaître les identifiants de connexion de l’adresse e-mail concernée.
 
 ## En pratique
@@ -28,28 +28,26 @@ La rétention des éléments supprimés (corbeille vidée) est disponible durant
 - e-mail
 - contact
 - calendrier
-- Taches
+- tâches
 
 La récupération des éléments supprimés peut être réalisée depuis le webmail (OWA) et depuis le logiciel de messagerie Outlook.
 
-
 > [!warning]
 >
-> Certaines suppressions ne sont pas récupérables depuis la rétention. Notamment lors d'un défaut de synchronisation entre un périphérique (client de messagerie, smartphone) et le serveur Exchange. Dans ce cas des éléments peuvent être supprimés définitivement sans être placés dans l'espace de récupération des éléments supprimés.
-> 
-
+> Certaines suppressions ne sont pas récupérables depuis la rétention, notamment lors d'un défaut de synchronisation entre un périphérique (client de messagerie, smartphone) et le serveur Exchange. Dans ce cas, des éléments peuvent être supprimés définitivement sans être placés dans l'espace de récupération des éléments supprimés.
+>
 
 ### Comment restaurer des éléments supprimés ?
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z1D2wc7XWX4?start=117" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Connectez-vous au webmail (OWA) via l'adresse <https://www.ovh.com/fr/mail/> sur l'adresse e-mail concernée.
+Connectez-vous à l'adresse e-mail concernée via le webmail (OWA) : <https://www.ovh.com/fr/mail/>.
 
 > [!primary]
 >
 > Pour les offres de type **Private Exchange**, le lien de connexion au webmail se situe dans le cadre **Connexion** de l'onglet `Information générales`{.action} sur votre plateforme.
 
-Une fois connecté, cliquez sur `Éléments supprimés`{.action} dans la colonne de gauche, puis sur `Récupérer les éléments supprimés`{.action} dans la partie supérieure de la colonne centrale .
+Une fois connecté, cliquez sur `Éléments supprimés`{.action} dans la colonne de gauche, puis sur `Récupérer les éléments supprimés`{.action} dans la partie supérieure de la colonne centrale.
 
 ![emails](images/3582.png){.thumbnail}
 
@@ -59,7 +57,7 @@ Vous pouvez sélectionner plusieurs éléments en maintenant la touche `Ctrl`(ou
 
 ![emails](images/3584.png){.thumbnail}
 
-Validez ensuite votre restauration en cliquant sur `récupérer`{.action}.
+Validez ensuite votre restauration en cliquant sur `Récupérer`{.action}.
 
 > [!primary]
 >
