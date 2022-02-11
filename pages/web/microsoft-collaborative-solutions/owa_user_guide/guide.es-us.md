@@ -106,6 +106,8 @@ Para crear una carpeta nueva, haga clic derecho sobre el nombre de su dirección
 
 #### Crear reglas de la bandeja de entrada
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Para gestionar las reglas, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -121,6 +123,16 @@ Rellene la información solicitada según la acción que quiere que lleve a cabo
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](../crear-reglas-de-bandeja-de-entrada-en-owa/).
+
+#### Bloquear un remitente
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2jia2s1_oIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Haga clic en la rueda dentada situada en la esquina superior derecha y seleccione "Opciones". En la columna de la izquierda, haga clic en Correo y seleccione "Cuentas". A continuación, haga clic en "Bloquear o autorizar".
+
+En la sección "**Remitentes bloqueados**", escriba una dirección de correo electrónico o un nombre de dominio que desea bloquear y haga clic en el botón `+`{.action} para añadirlo a la lista.
+
+![useowa](images/owa_exchange_block.png) {.thumbnail}
 
 ### Gestionar una lista de contactos
 
@@ -139,6 +151,8 @@ En la página que aparece, puede añadir nuevos contactos, crear una lista de co
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Cambiar la contraseña
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnq6wvANUFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Puede cambiar la contraseña de su cuenta cuando haya iniciado sesión en OWA. Para ello, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
