@@ -15,7 +15,7 @@ section: OVHcloud Dienste und Optionen
 
 In dieser Anleitung werden die Konzepte und Details der Umsetzung von Zerto Virtual Replication zwischen zwei OVHcloud Rechenzentren erläutert.
 
-Weitere Anwendungsbeispiele finden Sie in unserer Anleitung zur [Zerto zwischen OVHcloud und einer Drittplattform verwenden](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-customer-to-ovhcloud/).
+Weitere Anwendungsbeispiele finden Sie in unserer Anleitung zu "[Zerto zwischen OVHcloud und einer Drittplattform verwenden](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-customer-to-ovhcloud/)".
 
 **Diese Anleitung erklärt die Funktionsweise und Schritte zur Einrichtung von Zerto Virtual Replication zwischen zwei Hosted Private Cloud Diensten.**
 
