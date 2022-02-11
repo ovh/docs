@@ -36,7 +36,7 @@ The Public Cloud Databases offer supports the following Redis versions:
 
 - Redis 6.2
 
-You can folllow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+You can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
 
 ### Redis clients
 
@@ -136,7 +136,7 @@ For each user you can specify:
 - Username
 - Keys (such as "cached:*")
 - Categories (such as "@set")
-- Commands (such as "-@all +get")
+- Commands (such as "-ping +get")
 - Channels (such as "*")
 
 You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
