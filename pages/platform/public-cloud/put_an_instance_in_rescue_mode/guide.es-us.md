@@ -30,11 +30,9 @@ En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://ca.
 
 A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
 
-![control panel](images/compute2022.png){.thumbnail}
-
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
 
-![](images/rescue2022.png){.thumbnail}
+![control panel](images/rescue2022.png){.thumbnail}
 
 Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
 

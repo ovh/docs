@@ -2,9 +2,8 @@
 title: 'Configuring additional SSH keys'
 slug: configuring_additional_ssh_keys
 excerpt: 'Find out how to configure additional SSH keys for your Public Cloud instance'
-legacy_guide_number: g1924
 section: Tutorials
-order: 1
+order: 01
 ---
 
 **Last updated 4th Febuary 2022**
@@ -34,7 +33,7 @@ To create a new SSH key, consult the [Public Cloud first steps guide](../public-
 
 ### Configuring the new user
 
-[Connect to your instance with SSH](../public-cloud-first-steps/#connect-to-instance) and use the commands below to create a new user:
+[Connect to your instance with SSH](../public-cloud-first-steps/#connect-to-instance) and use the command below to create a new user:
 
 ```bash
 ~$ sudo adduser user2

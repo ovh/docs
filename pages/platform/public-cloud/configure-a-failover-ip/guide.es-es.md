@@ -50,7 +50,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 
 ### Debian 10
 
-#### 1\. desactivar la configuración automática de red
+#### Paso 1: desactivar la configuración automática de red
 
 Abra la ruta al siguiente archivo con un editor de texto:
 
@@ -66,7 +66,7 @@ network: [config: disabled}
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
 
-#### 2\. editar el archivo de configuración de red
+#### Paso 2: editar el archivo de configuración de red
 
 Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 
@@ -89,7 +89,7 @@ address IP_FAILOVER
 netmask 255.255.255.255
 ```
 
-#### 3\. reiniciar la interfaz
+#### Paso 3: reiniciar la interfaz
 
 Aplique los cambios con el siguiente comando:
 
@@ -101,7 +101,7 @@ sudo systemctl restart networking
 
 El archivo de configuración de las direcciones IP failover se encuentra en `/etc/netplan/`. En este ejemplo, se llama "50-cloud-init.yaml". Antes de realizar cualquier cambio, compruebe el nombre del archivo real en esta carpeta. Cada dirección IP failover necesita su propia línea en el archivo.
 
-#### 1\. desactivar la configuración automática de red
+#### Paso 1: desactivar la configuración automática de red
 
 Abra la ruta al siguiente archivo con un editor de texto:
 
@@ -117,7 +117,7 @@ network: {config: disabled}
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
 
-#### 2\. editar el archivo de configuración
+#### Paso 2: editar el archivo de configuración
 
 Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 
@@ -153,7 +153,7 @@ network:
 
 Guarde y cierre el archivo.
 
-#### 3\. aplicar la nueva configuración de red
+#### Paso 3: aplicar la nueva configuración de red
 
 Para probar su configuración, utilice el siguiente comando:
 
@@ -171,7 +171,11 @@ Repita este procedimiento para cada dirección IP failover.
 
 ### Windows Server (2016)
 
-#### 1\. comprobar la configuración de red
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente.
+
+Abra `Instances`{.action} en el menú izquierdo. Haga clic en el nombre de su instancia. Acceda a la pestaña `Consola VNC`{.action}.
+
+#### Paso 1: comprobar la configuración de red
 
 Haga clic derecho en el botón `Menú Iniciar`{.action} y abra `Ejecutar`{.action}.
 
@@ -183,7 +187,7 @@ Para obtener la configuración de IP actual, introduzca `ipconfig` en la consola
 
 ![comprobar la configuración IP principal](images/image1-1.png){.thumbnail}
 
-#### 2\. modificar las propiedades IPv4
+#### Paso 2: modificar las propiedades IPv4
 
 Ahora deberá modificar las propiedades IP en una configuración estática.
 
@@ -193,7 +197,7 @@ Abra la configuración del adaptador en el Panel de control Windows y abra las `
 
 En la ventana Propiedades IPv4, seleccione `Usar la siguiente`{.action} dirección IP. Introduzca la dirección IP que haya obtenido en el primer paso y haga clic en `Avanzado`{.action}.
 
-#### 3\. añadir la dirección IP failover en los Parámetros TCP/IP avanzados
+#### Paso 3: añadir la dirección IP failover en los Parámetros TCP/IP avanzados
 
 En la nueva ventana, haga clic en `Añadir...`{.action} en "Direcciones IP". Introduzca su dirección IP failover y la máscara de subred (255.255.255.255).
 
@@ -203,7 +207,7 @@ Confirme haciendo clic en `Añadir`{.action}.
 
 ![Configuración del cambio de IP](images/image5-5.png){.thumbnail}
 
-#### 4\. reiniciar la interfaz de red
+#### Paso 4: reiniciar la interfaz de red
 
 En el panel de configuración (`Conexiones de red`{.action}), haga clic derecho en la interfaz de red y seleccione `Desactivar`{.action}.
 
@@ -213,7 +217,7 @@ Para reiniciarla, haga clic derecho sobre ella y seleccione `Activar`{.action}.
 
 ![activación de la red](images/image7.png){.thumbnail}
 
-#### 5\. comprobar la nueva configuración de red
+#### Paso 5: comprobar la nueva configuración de red
 
 Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración debe incluir ahora la nueva dirección IP failover.
 
@@ -221,7 +225,7 @@ Abra la consola de comandos (cmd) e introduzca `ipconfig`. La configuración deb
 
 ### cPanel (CentOS 7)/Red Hat
 
-#### 1\. editar el archivo de configuración de red
+#### Paso 1: editar el archivo de configuración de red
 
 Para comprobar el nombre de la interfaz de red, utilice el siguiente comando:
 
@@ -246,7 +250,7 @@ BROADCAST=IP_FAILOVER
 ONBOOT=yes
 ```
 
-#### 2\. reiniciar la interfaz
+#### Paso 2: reiniciar la interfaz
 
 Aplique los cambios con el siguiente comando:
 
@@ -256,7 +260,7 @@ sudo systemctl restart networking
 
 ### Plesk
 
-#### 1\. acceder a la gestión de IP de Plesk
+#### Paso 1: acceder a la gestión de IP de Plesk
 
 En el panel de configuración de Plesk, seleccione `Tools & Settings`{.action} en la columna izquierda.
 
@@ -264,7 +268,7 @@ En el panel de configuración de Plesk, seleccione `Tools & Settings`{.action} e
 
 Haga clic en `IP Addresses`{.action} bajo **Tools & Settings**.
 
-#### 2\. añadir la información IP adicional
+#### Paso 2: añadir la información IP adicional
 
 En esta sección, haga clic en el botón `Add IP Address`{.action}.
 
@@ -274,7 +278,7 @@ Introduzca su dirección IP failover como `xxx.xxx.xxx.xxx/32` en el campo "IP a
 
 ![añadir información IP](images/pleskip3-3.png){.thumbnail}
 
-#### 3\. comprobar la configuración IP actual
+#### Paso 3: comprobar la configuración IP actual
 
 En la sección "Direcciones IP", compruebe que la dirección IP failover se haya añadido correctamente.
 

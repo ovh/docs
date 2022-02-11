@@ -1,45 +1,46 @@
 ---
 title: Configurar as chaves SSH suplementares
-excerpt: Configurar as chaves SSH suplementares
+excerpt: Saiba como configurar chaves SSH adicionais para a sua instância Public Cloud
 slug: configurar_as_chaves_ssh_suplementares
-legacy_guide_number: g1924
 section: Tutoriais
+order: 01
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## 
-Apenas será possível criar uma instância se dispuser de uma chave SSH.
-Poderá autorizar o acesso a outros utilizadores que disponha de uma chave SSH à sua instância ao configurar o ficheiro authorized_keys..
+**Última atualização: 04/02/2022**
 
-Este guia explica-lhe como poderá configurar chaves SSH suplementares da sua instância para que possa dar o acesso a outras pessoas.
+## Objetivo
+ 
+Ao criar uma instância, pode ser configurada uma única chave SSH para a ligação inicial. Para permitir o acesso da sua instância a outros utilizadores, podem ser adicionadas chaves suplementares configurando o ficheiro *authorized_keys*.
 
+**Este guia explica-lhe como configurar chaves SSH suplementares para as ligações à sua instância.**
 
-## Pré-requisitos
+## Requisitos
 
-- Uma instância
+- Ter uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à instância via SSH enquanto administrador (root)
+
+## Instruções
 
 > [!primary]
 >
 Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
 >
 
+### Criação da chave SSH
 
-## Criação da chave SSH
-Para que possa criar a chave SSH sugerimos a consulta do seguinte guia:
+Para criar uma nova chave SSH, consulte o [guia dos primeiros passos com o Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/).
 
-- [Criação das chaves SSH]({legacy}1769)
+### Configuração do novo utilizador
 
+[Ligue-se à sua instância em SSH](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#connect-to-instance) e crie um novo utilizador através dos comandos abaixo:
 
-Não será necessário adicioná-las no seu Espaço Cliente OVH.
-
-
-## Configuração de um novo utilizador
-
-- Ligue-se à sua instância
-- Crie um novo utilizador
-
-```
-admin@serveur-1:~$ sudo adduser user2
+```bash
+~$ sudo adduser user2
 
 Adding user `user2' ...
 Adding new group `user2' (1001) ...
@@ -60,43 +61,37 @@ Other []:
 Is the information correct? [Y/n] Y
 ```
 
+Abra o ficheiro *authorized_keys* na pasta pessoal do novo utilizador com um editor de texto:
 
-- Adicione a chave SSH pública na pasta pessoal do novo utilizador
-
-```
-admin@serveur-1:~$ sudo vim /home/user2/.ssh/authorized_keys
-```
-
-
-
-Caso não existe, poderá criar a pasta .ssh.
-
-```
-admin@serveur-1:~$ sudo mkdir /home/user2/.ssh/
+```bash
+~$ sudo nano /home/user2/.ssh/authorized_keys
 ```
 
+Adicione ao ficheiro a chave pública criada na primeira etapa. Registe e feche o editor.
 
-A partir desse momento já será possível que esse utilizador se ligue com a chave privada associada à chave anteriormente configurada.
+Se a pasta .ssh ainda não existir, pode criá-la com este comando:
 
-```
-root@serveur:~$ ssh user2@149.xxx.xxx.22
-
-Linux serveur-1 3.2.0-4-amd64 #1 SMP Debian 3.2.68-1+deb7u1 x86_64
-Last login: Fri Oct 16 08:14:24 2015 from proxy-109-190-254-35.ovh.net
-
-user2@serveur-1:~$
+```bash
+~$ sudo mkdir /home/user2/.ssh/
 ```
 
+Pode configurar várias chaves SSH adicionando-as aos ficheiros *authorized_keys* das pastas de utilizador correspondentes.
 
-Poderá configurar outras chaves SSH para o utilizador admin ao adicioná-las no ficheiro authorized_keys correspondente.
+A partir de agora, poderá ligar-se ao utilizador e à chave privada configuradas anteriormente:
 
+```bash
+~$ ssh user2@instance_IP
 ```
-admin@serveur-1:~$ sudo vim /home/admin/.ssh/authorized_keys
+```console
+Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
+
+user2@server:~$
 ```
 
+## Quer saber mais?
 
+[Criar uma primeira instância Public Cloud e ligar-se a ela](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/)
 
+[Alterar a chave SSH em caso de perda](https://docs.ovh.com/pt/public-cloud/alterar_a_chave_ssh_em_caso_de_perda/)
 
-## 
-[Voltar à página principal dos guias Cloud]({legacy}1785)
-
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
