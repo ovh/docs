@@ -1,15 +1,16 @@
 ---
-title: Mise en oeuvre de Zerto Virtual Replication pour votre PRA
+title: Zerto Virtual Replication entre deux datacenters OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
 section: Services et options OVHcloud
 ---
 
-**Dernière mise à jour le 30/06/2020**
+**Dernière mise à jour le 11/02/2022**
 
 ## Objectif
 
-Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication sur Private Cloud.
+Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de Zerto Virtual Replication entre deux datacenters OVHcloud.<br>
+Rendez-vous sur [ZVR entre OVHcloud et un tiers](https://docs.ovh.com/fr/private-cloud/zerto-virtual-replication-customer-to-ovhcloud/) pour les autres cas de figure.
 
 **Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité (PRA) entre deux offres Private Cloud.**
 
