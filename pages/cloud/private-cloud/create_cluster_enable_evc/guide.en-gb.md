@@ -2,11 +2,11 @@
 title: Cluster creation and EVC activation
 slug: create-cluster-enable-evc
 excerpt: Learn how to create a cluster and activate EVC mode
-section: Fonctionnalités VMware vSphere
+section: VMware vSphere features
 order: 01
 ---
 
-**Last Updated on 08/02/2022**
+**Last updated 8th February 2022**
 
 ## Objective
 
@@ -15,12 +15,10 @@ Learn how to create them and configure their functionalities (DRS, HA & EVC).
 
 **This guide offers a step by step study case to achieve the objective.**
 
-
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
-
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
@@ -30,29 +28,27 @@ In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard
 
 ![Menu](images/en01dash.png){.thumbnail}
 
-Right click on your Datacenter.<br>
+Right click your Datacenter.<br>
 Select `New Cluster`{.action}.
 
 ![New Cluster](images/en02newcluster.png){.thumbnail}
 
-In the pop up window, name your cluster and select the relevant options you want set.<br>
+In the pop-up window, name your cluster and select the relevant options you want set.<br>
 Click `OK`{.action} when done.
 
 ![Cluster](images/en03cluster.png){.thumbnail}
 
-
 > [!warning]
 >
-> vSAN requires vSAN compatible hosts. Check out [here](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/) how to order them if you need.
+> vSAN requires vSAN compatible hosts. Find more details [here](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/) on how to order them if needed.
 > 
-
 
 ### DRS
 
 DRS spreads the compute load accross your hosts.<br>
 If you activated the option, it is set on "Fully Automated" by default.
 
-Select your cluster. in the `Configure`{.action} tab, select `vSphere DRS`{.action} and click `Edit`{.action}.
+Select your cluster. In the `Configure`{.action} tab, select `vSphere DRS`{.action} and click `Edit`{.action}.
 
 ![DRS](images/en04drsedit.png){.thumbnail}
 
@@ -67,21 +63,19 @@ Click `OK`{.action} when done.
 
 ![DRS](images/en05drs.png){.thumbnail}
 
-
 ### HA
 
 High Availability allows for redundancy so a failing host will not impact the services running in your VMs.<br>
 If you activated the option, it is set on its default settings.
 
-To modify them, select your cluster. in the `Configure`{.action} tab, select `vSphere HA`{.action} and click `Edit`{.action}.
+To modify them, select your cluster. In the `Configure`{.action} tab, select `vSphere HA`{.action} and click `Edit`{.action}.
 
 ![HA](images/en06haedit.png){.thumbnail}
 
-The response types for the different host failures can be custom set to your need.<br>
+The response types for the different host failures can be custom set to your needs.<br>
 Click `OK`{.action} when done.
 
 ![HA](images/en07ha.png){.thumbnail}
-
 
 ### EVC
 
@@ -91,7 +85,7 @@ Prior to activating the functionality, check your hosts summary pages to determi
 
 ![EVC](images/en10host.png){.thumbnail}
 
-Select your cluster. in the `Configure`{.action} tab, select `VMware EVC`{.action} and click `Edit`{.action}.
+Select your cluster. In the `Configure`{.action} tab, select `VMware EVC`{.action} and click `Edit`{.action}.
 
 ![EVC](images/en08EVCedit.png){.thumbnail}
 
@@ -101,12 +95,10 @@ Click `OK`{.action} when done.
 
 ![EVC](images/en09EVC.png){.thumbnail}
 
-
 > [!warning]
 >
 > EVC activation can only happen on a cluster with no active VM running. Make sure to turn off or evacuate all VMs before doing it. 
 >
-
 
 ## Go further
 
