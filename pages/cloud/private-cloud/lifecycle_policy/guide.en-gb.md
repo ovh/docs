@@ -104,9 +104,16 @@ This table presents a summary of the different phases of the lifecycle of the se
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 31/07/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 31/07/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2023 | 31/08/2023 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2024 | 31/08/2024 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2023 | 31/08/2023 |
 
+### Datastores (storage)
 
+| Commercial Range | General Availability | End of Sales | End of Growth  | End of Life |
+|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 300Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 600Gb | 2013 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 900Gb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
+| 1.2Tb | 2016 | 30/11/2021 | 31/03/2022 | 31/10/2022 |
 
 ## Integrated Software
 

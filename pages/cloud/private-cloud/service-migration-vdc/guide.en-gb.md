@@ -76,7 +76,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 4.5 Enable vSAN (if relevant)](#vsan)<br />
 &ensp;&ensp;[Step 4.6 Recreate vSphere networking](#vspherenetwork)<br />
 &ensp;&ensp;[Step 4.7 Check inventory organisation (if relevant)](#inventory)<br />
-&ensp;&ensp;[Step 4.8 Reconfigure NSX](#nsx)<br />
+&ensp;&ensp;[Step 4.8 Reconfigure NSX (if relevant)](#nsx)<br />
 &emsp;&emsp;[Step 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
 &emsp;&emsp;[Step 4.8.2 NSX Edges](#edges)<br />
 &emsp;&emsp;[Step 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
