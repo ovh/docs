@@ -84,7 +84,7 @@ Geben Sie im nächsten Schritt den Typ des zu aktivierenden Ports an:
 >- UDP (User Datagram Protocol)
 >UDP ist ein nicht-verbindungsorientiertes Protokoll, dessen Entwicklung auf dem Austausch von Datagrammen basiert. Es erleichtert den Versand von Datagrammen über das Netzwerk. Es ist notwendig, dass Sie zuvor eine Verbindung zum Ziel hergestellt haben.
 >
->Sie können `Alle lokalen Ports`{.action} auswählen, um alle TCP oder UDP Ports auf einem ungesicherten Server zu aktivieren. Sie können auch die Option `Spezielle lokale Ports`{.action} anhaken, um zu bestimmen, welcher Port zugelassen werden soll. 
+>Sie können `Alle lokalen Ports`{.action} auswählen, um alle TCP oder UDP Ports auf einem ungesicherten Server zu aktivieren. Sie können auch die Option `Spezifische lokale Ports`{.action} anhaken, um zu bestimmen, welcher Port zugelassen werden soll. 
 >
 
 ### Schritt 6: Verbindung erlauben oder blockieren
