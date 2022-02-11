@@ -130,7 +130,7 @@ Per istruzioni più dettagliate sulla creazione di regole di posta in arrivo, fa
 
 Clicca sull'icona a forma di ingranaggio in alto a sinistra e poi su "Opzioni". Nella colonna di sinistra, clicca su "Posta" > "Account" > "Blocca o autorizza".
 
-Nella sezione "**ExpMéditerranée bloccati**", inserisci un indirizzo email o un dominio da bloccare e clicca sul pulsante `+`{.action} per aggiungerlo nella lista.
+Nella sezione "**Mittenti bloccati**", inserisci un indirizzo email o un dominio da bloccare e clicca sul pulsante `+`{.action} per aggiungerlo nella lista.
 
 ![useowa](images/owa_exchange_block.png){.thumbnail}
 

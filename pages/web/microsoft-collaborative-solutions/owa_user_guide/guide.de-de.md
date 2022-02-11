@@ -130,7 +130,7 @@ Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in u
 
 Klicken Sie oben links auf das Zahnrad und dann auf "Optionen". Folgen Sie in der linken Spalte der Ordnerstruktur "E-Mails" unter "Accounts" und "Blockieren oder erlauben"
 
-Geben Sie im Bereich "**Exterus gesperrt**"eine E-Mail-Adresse oder eine zu blockierende Domain ein und klicken Sie auf die Schaltfläche `+`{.action}, um diese in die Liste aufzunehmen.
+Geben Sie im Bereich "**Absender gesperrt**"eine E-Mail-Adresse oder eine zu blockierende Domain ein und klicken Sie auf die Schaltfläche `+`{.action}, um diese in die Liste aufzunehmen.
 
 ![useowa](images/owa_exchange_block.png) {.thumbnail}
 
