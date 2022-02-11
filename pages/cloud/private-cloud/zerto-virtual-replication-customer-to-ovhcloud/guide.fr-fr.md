@@ -1,5 +1,5 @@
 ---
-title: "Mise en œuvre de Zerto entre OVHcloud et une plateforme tierce"
+title: "Zerto entre OVHcloud et une plateforme tierce"
 slug: zerto-virtual-replication-customer-to-ovhcloud
 excerpt: 'Découvrez comment connecter votre Zerto OVHcloud à une autre plateforme.'
 section: 'Services et options OVHcloud'
