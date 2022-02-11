@@ -1,6 +1,6 @@
 ---
 title: Konfiguration der Linux Firewall mit iptables
-excerpt: Hier erfahren Sie, wie Sie einen Server mit iptables sichern.
+excerpt: Erfahren Sie hier, wie Sie einen Server mit iptables sichern
 slug: firewall-iptables
 section: Tutorial
 order: 01
@@ -10,120 +10,119 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 31.01.2022**
+**Letzte Aktualisierung am 31.01.2022**
 
 ## Ziel
 
 Ihr Dedicated Server ist mit einer Firewall ausgestattet. Firewalls schaffen eine Barriere zwischen einem vertrauenswürdigen und einem unzuverlässigen Netzwerk.
-Firewalls funktionieren, indem sie Regeln festlegen, die den erlaubten Traffic und den gesperrten Traffic regeln. Die für Linux-Systeme entwickelte Firewall ist iptables.
+Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten. Die für Linux-Systeme etablierte Firewall ist *iptables*.
 
-**Hier erfahren Sie, wie Sie Ihren dedizierten Server mit iptables sichern.**
+**Diese Anleitung erklärt, wie Sie Ihren dedizierten Server mit *iptables* sichern.**
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, einen spezialisierten Dienstleister zu kontaktieren, wenn Sie Probleme oder Zweifel hinsichtlich der Administration, Nutzung oder Absicherung eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedizierten Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem OVHcloud Account
-- Administrator-Zugang (root/sudo) zu Ihrem Server über SSH
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben administrativen Zugriff (root/sudo) auf Ihren Server über. 
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Diese Anleitung zeigt die Befehle für eine Ubuntu Server Distribution an.
+> Diese Anleitung verwendet die Befehle für eine Ubuntu Server Distribution.
 >
-> Dies ist eine allgemeine Anleitung. Es kann sein, dass aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden müssen. In manchen Tipps wird Ihnen geraten, ein Tool eines Dritten zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
+> Es handelt sich hierbei eine generelle Vorgehensweise. Möglicherweise müssen aufgrund der Distribution und/oder des Betriebssystems, das Sie verwenden, einige Befehle entsprechend angepasst werden. Vereinzelt wird Ihnen geraten, ein Tool eines Drittanbieters zu verwenden. Bei Fragen zur Nutzung eines solchen Tools lesen Sie bitte die offizielle Dokumentation des jeweiligen Herausgebers.  
 >
 
 ### Schritt 1: Ihr System aktualisieren
 
 Die Entwickler von Distributionen und Betriebssystemen bieten häufig Updates der Softwarepakete an, meistens aus Sicherheitsgründen. **Deswegen ist es für die Sicherheit Ihres Servers äußerst wichtig, Ihre Distribution oder Ihr Betriebssystem immer auf dem neuesten Stand zu halten.**
 
-Weitere Informationen finden Sie [in unserer Anleitung](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/) zur Sicherung eines Dedicated Servers.
+Weitere Informationen finden Sie in unserer [Anleitung zur Sicherung eines Dedicated Servers](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/).
 
-### Schritt 2: die iptables Firewall unter Ubuntu installieren
+### Schritt 2: Die iptables Firewall mit Ubuntu installieren
 
 > [!primary]
 >
-> Es gibt zwei verschiedene Versionen von iptables, für IPv4 und IPv6. Die Regeln, die wir in diesem Linux iptables Tutorial beachten, betreffen IPv4.
-> Um iptables für IPv6 zu konfigurieren müssen Sie das iptables6 Dienstprogramm verwenden. Diese beiden Protokolle funktionieren nicht miteinander und müssen unabhängig konfiguriert werden.
+> Es gibt zwei verschiedene Versionen von *iptables*, für IPv4 und IPv6. Die Regeln, die wir in diesem Linux-spezifischen Tutorial erläutern, betreffen IPv4.
+> Um *iptables* für IPv6 zu konfigurieren müssen Sie das Dienstprogramm *iptables6* verwenden. Diese beiden Protokolle funktionieren nicht miteinander und müssen unabhängig konfiguriert werden.
 >
 
-iptables ist standardmäßig für die meisten Linux-Systeme installiert. Um zu bestätigen, dass iptables installiert ist, verwenden Sie folgenden Befehl:
+*iptables* ist standardmäßig für die meisten Linux-Systeme installiert. Um zu bestätigen, dass *iptables* installiert ist, verwenden Sie folgenden Befehl:
 
 ```bash
 sudo apt-get install iptables
 ```
 
-Das Beispiel des Outputs in Ubuntu bestätigt, dass die neueste Version von iptables bereits vorhanden ist:
+Das folgende Beispiel des Outputs in Ubuntu bestätigt, dass die neueste Version von *iptables* bereits vorhanden ist:
 
 ![iptables-version](images/step2-version-iptables.PNG){.thumbnail}
 
-Ein iptables-Befehl ist im Allgemeinen wie folgt:
+Ein *iptables*-Befehl ist im Allgemeinen folgendermaßen aufgebaut:
 
 ```bash
 sudo iptables [option] CHAIN_rule [-j target]
 ```
 
-Hier eine Liste mit einigen gängigen iptables:
+Diese Liste enthält einige der üblichen Optionen:
 
-- -A -—append: Füge eine Regel zu einer Kette hinzu (am Ende).
+- -A -—append: Füge eine Regel zu einer Kette (*Chain*) hinzu (am Ende).
 - -C -—check: Suche nach einer Regel, die den Anforderungen der Kette entspricht.
 - -D —-delete: Die spezifizierten Regeln einer Kette löschen.
 - -F —-flush: Löscht alle Regeln.
-- -I —-insert: Füge eine Regel zu einer bestimmten Position hinzu.
+- -I —-insert: Füge eine Regel an einer bestimmten Position hinzu.
 - -L —-list: Zeigt alle Regeln einer Kette an.
 - -N -new-chain: Erstelle eine neue Kette.
 - -v —-verbose Zeigt bei der Verwendung einer Listenoption mehr Informationen an.
-- -X —-delete-chain: Die gelieferte Kette löschen.
+- -X —-delete-chain: Die gegebene Kette löschen.
 
-### Schritt 3: den aktuellen Zustand von iptables überprüfen
+### Schritt 3: Den aktuellen Zustand von iptables überprüfen
 
-Um alle aktuellen Regeln auf Ihrem Server anzuzeigen, geben Sie folgenden Befehl im Fenster des Endgeräts ein:
+Um alle aktuellen Regeln auf Ihrem Server anzuzeigen, geben Sie folgenden Befehl in der Kommandozeile ein:
 
 ```bash
 sudo iptables -L
 ```
 
-Das System zeigt den Status Ihrer Sender an.<br>
-Der Start wird drei Sender erfassen:
+Das System zeigt den Status Ihrer Tabellen an.<br>
+Die Ausgabe enthält drei Ketten:
 
 ![Check-Current-iptables](images/Check-Current-iptables.PNG){.thumbnail}
 
-### Schritt 4: Traffic auf Localhost erlauben
+### Schritt 4: Traffic auf localhost erlauben
 
-Um den Traffic Ihres eigenen Systems (des Localhosts) zu erlauben, fügen Sie die Eingangskette wie folgt hinzu:
+Um Traffic von Ihrem eigenen System (*localhost*) zu erlauben, fügen Sie die Eingangskette wie folgt hinzu:
 
 ```bash
 sudo iptables -A INPUT -i lo -j ACCEPT
 ```
 
-Mit diesem Befehl wird die Firewall konfiguriert, um den Traffic für das Localhost-Interface (lo) (-i) zu akzeptieren. Von nun an wird alles, was aus Ihrem System kommt, über Ihre Firewall übertragen.
-Sie müssen diese Regel festlegen, damit die Anwendungen mit dem localhost-Interface kommunizieren können.
+Dieser Befehl konfiguriert die Firewall, um den *Input*-Traffic für das Interface (-i) von *localhost* (lo) zu akzeptieren. Damit wird dieser Traffic über Ihre Firewall übertragen.
+Sie müssen diese Regel festlegen, damit Anwendungen mit der Schnittstelle des *localhost* kommunizieren können.
 
 ### Schritt 5: Traffic auf bestimmten Ports erlauben <a name="step5"></a>
 
-Diese Regeln erlauben den Traffic auf den verschiedenen Ports, die Sie mithilfe der unten aufgeführten Befehle angeben.
-Ein Port ist ein spezifizierter Kommunikationsendpunkt für einen bestimmten Datentyp.
+Diese Regeln erlauben den Traffic auf spezifischen Ports, die Sie mithilfe der unten aufgeführten Befehle festlegen.
+Ein Port ist ein Kommunikationsendpunkt für einen bestimmten Datentyp.
 
-Um den HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
+Um HTTP-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 
 ```bash
 sudo iptables -A INPUT -p tcp -—dport 80 -j ACCEPT
 ```
 
-Um nur den eingehenden SSH-Traffic (Secure Shell) zu erlauben geben Sie Folgendes ein:
+Um eingehenden SSH-Traffic (Secure Shell) zu erlauben geben Sie Folgendes ein:
 
 ```bash
 sudo iptables -A INPUT -p tcp -—dport 22 -j ACCEPT
 ```
 
-Um den HTTPS-Internetverkehr zu erlauben geben Sie folgenden Befehl ein:
+Um HTTPS-Web-Traffic zu erlauben geben Sie folgenden Befehl ein:
 
 ```bash
 sudo iptables -A INPUT -p tcp —-dport 443 -j ACCEPT
@@ -131,70 +130,70 @@ sudo iptables -A INPUT -p tcp —-dport 443 -j ACCEPT
 
 Die Optionen funktionieren wie folgt:
 
-- -p: Überprüfen Sie das angegebene Protokoll (tcp).
+- -p: Überprüft das angegebene Protokoll (TCP).
 - -—dport: Gibt den Zielport an.
-- -j jump: Führt die 
+- -j (jump): Führt die Aktion aus.
 
 > [!warning]
-> Wenn Sie den Zugriff auf Ihren Server verlieren, können Sie jederzeit das KVM/IPMI Tool verwenden, um erneut darauf zuzugreifen, Ihre Konfiguration zu ändern oder Ihre Regeln zu löschen.
+> Wenn Sie den Zugriff auf Ihren Server verlieren, können Sie immer noch das KVM/IPMI Tool verwenden, um Ihre Konfiguration zu ändern oder Ihre Regeln zu löschen.
 >
-> Weitere Informationen zum Zugriff auf dieses Tool finden Sie in dieser [Anleitung](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/).
+> Weitere Informationen zum Zugriff auf dieses Tool finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/).
 > 
 
-### Schritt 6: den Traffic nach IP-Adresse kontrollieren
+### Schritt 6: Den Traffic nach IP-Adresse kontrollieren
 
-Verwenden Sie folgenden Befehl, um den Traffic von einer bestimmten IP-Adresse aus zu akzeptieren.
-
-```bash
-sudo iptables -A INPUT -s Ihre_IP_adresse erlauben -j ACCEPT
-```
-
-Ersetzen Sie die IP-Adresse im Befehl mit der IP-Adresse, die Sie autorisieren möchten.
-
-Sie können auch den Traffic von einer IP-Adresse aus sperren 
+Verwenden Sie folgenden Befehl, um den Traffic von einer bestimmten IP-Adresse zu akzeptieren.
 
 ```bash
-sudo iptables -A INPUT -s Ihre_IP_adresse_zu_blockieren -j DROP
+sudo iptables -A INPUT -s IP-Adresse -j ACCEPT
 ```
 
-Ersetzen Sie die IP-Adresse im Befehl mit der IP-Adresse, die Sie blockieren möchten.
+Ersetzen Sie IP_Adresse im Befehl mit der IP-Adresse, die Sie autorisieren möchten.
+
+Sie können auch den Traffic von einer IP-Adresse aus sperren:
+
+```bash
+sudo iptables -A INPUT -s IP_Adresse -j DROP
+```
+
+Ersetzen Sie die IP_Adresse im Befehl mit der IP-Adresse, die Sie blockieren möchten.
 
 Sie können den Traffic aus einem IP-Adressbereich mit folgendem Befehl zurückweisen:
 
 ```bash
-sudo iptables -A INPUT -m iprange —-src-range ihre_IP_adresse_anfang-ihre_end_adresse -j REJECT
+sudo iptables -A INPUT -m iprange —-src-range Start_IP-End_IP -j REJECT
 ```
 
 Die in den Beispielen verwendeten Optionen funktionieren wie folgt:
 
 - -m: Entspricht der angegebenen Option.
-- -iprange: Zeigt dem System an, auf einen IP-Adressbereich zu warten statt auf einen.
-- —-src range: Identifiziert den IP-Adressbereich.
+- -iprange: Teilt dem System mit, einen IP-Adressbereich zu erwarten statt einer einzelnen IP-Adresse.
+- —-src-range: Identifiziert den IP-Adressbereich.
 
-### Schritt 7: unerwünschten Traffic
+### Schritt 7: Unerwünschten Traffic ablehnen
 
-Wenn Sie iptables Firewall-Regeln festlegen, müssen Sie unbefugten Zugriff verhindern, indem Sie Traffic aus anderen Ports löschen:
+Wenn Sie Firewall-Regeln für *iptables* festlegen, müssen Sie unerwünschten Zugriff verhindern, indem Sie Traffic aus anderen Ports ablehnen:
 
 ```bash
 sudo iptables -A INPUT -j DROP
 ```
 
-Die Option -A fügt der Kette eine neue Regel hinzu. Wenn eine Verbindung über andere Ports als die von Ihnen definierten läuft, wird sie aufgegeben.
+Die Option "-A" fügt der Kette eine neue Regel hinzu. Wenn eine Verbindung über andere Ports als die von Ihnen bereits definierten läuft, wird sie abgebrochen.
 
 > [!warning]
 > 
->Achtung, wenn Sie diesen Befehl eingeben, bevor Sie [Schritt 5](#step5) ausführen, blockieren Sie alle Zugänge, auch den laufenden, den SSH-Zugang. Dies ist besonders problematisch bei einer Maschine, auf die Sie aus der Ferne zugreifen. 
+>Wenn Sie diesen Befehl eingeben, bevor Sie [Schritt 5](#step5) ausführen, blockieren Sie alle Zugänge und damit auch die laufende SSH-Verbindung. Dies ist besonders relevant bei einem Server, auf den Sie *remote* zugreifen. 
 >
 
-### Schritt 8: eine Regel löschen
+### Schritt 8: Eine Regel löschen
 
-Eine genauere Methode besteht darin, die Zeilennummer einer Regel zu löschen.
+Eine genauere Methode besteht darin, die Zeilennummer einer Regel zu löschen:
 
 ```bash
 sudo iptables -P INPUT DROP 
 ```
 
-Zuerst zeigen Sie alle Regeln auf und geben Sie folgendes ein:
+Lassen Sie zunächst alle Regeln anzeigen:
 
 ```bash
 sudo iptables -L --line-numbers
@@ -205,26 +204,26 @@ sudo iptables -L --line-numbers
 Suchen Sie die Zeile der Firewall-Regel, die Sie löschen möchten, und führen Sie diesen Befehl aus:
 
 ```bash
-sudo iptables -D INPUT <Number>
+sudo iptables -D INPUT <Nummer>
 ```
 
-Ersetzen Sie `Number` mit der Zeilennummer, die Sie löschen möchten.
+Ersetzen Sie `Nummer` mit der Zeilennummer, die Sie löschen möchten.
 
 ### Schritt 9: Ihre Änderungen speichern
 
-Beim Neustart des Systems behält iptables nicht die Regeln, die Sie erstellt haben.
-Jedes Mal, wenn Sie iptables unter Linux konfigurieren, gelten alle von Ihnen vorgenommenen Änderungen nur bis zum nächsten Neustart.
+Beim Neustart des Systems werden Regeln, die Sie für *iptables* erstellt haben, nicht beibehalten.
+Jedes Mal, wenn Sie *iptables* unter Linux konfigurieren, greifen alle von Ihnen vorgenommenen Änderungen nur bis zum nächsten Neustart.
 
-Um die Regeln in den auf Ubuntu basierenden Systemen zu speichern geben Sie folgenden Eintrag ein:
+Um die Regeln in auf Ubuntu basierenden Systemen zu speichern, geben Sie folgenden Befehl ein:
 
 ```bash
 sudo -s iptables-save -c
 ```
 
-Beim nächsten Start Ihres Systems übernimmt iptables automatisch die Regeln der Firewall.
+Beim nächsten Start Ihres Systems lädt *iptables* automatisch die Firewall-Regeln.
 
-Sie können ab sofort iptables Basis-Firewall-Regeln für Ihren Linux-Server konfigurieren.
-Zögern Sie nicht, zu experimentieren, denn Sie können immer die Regeln löschen, die Sie nicht brauchen, oder alle Regeln leeren und neu starten.
+Sie können nun Firewall-Regeln mit *iptables* für Ihren Linux-Server konfigurieren.
+Zögern Sie nicht, zu experimentieren, denn Sie können nicht mehr benötigte Regeln immer wieder löschen, oder alle Regeln leeren und neu starten.
 
 ## Weiterführende Informationen
 
