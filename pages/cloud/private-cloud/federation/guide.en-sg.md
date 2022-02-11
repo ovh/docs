@@ -15,7 +15,7 @@ This guide aims at explaining the details of implementing an Active Directory se
 
 ## Requirements
 
-- A [Hosted Private Cloud offer](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/){.external}.
+- A [Hosted Private Cloud offer](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/){.external}.
 - An Active Directory service reachable from a public IP address and with a [valid SSL certificate on LDAPS service](https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/enable-ldap-over-ssl-3rd-certification-authority){.external}.
 - A user access on the associated Active Directory with at least read-only access (for LDAPS connection).
 - Access to the Private Cloud vSphere management interface.
@@ -129,7 +129,7 @@ You will have to specify information retreived from the previous steps. Do not c
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) on your Hosted Private Cloud `Operations`{.action} tab.
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) on your Hosted Private Cloud `Operations`{.action} tab.
 
 > [!primary]
 >
@@ -159,7 +159,7 @@ You will have to specify the "pre-Winows 2000" username as it is inside your Act
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) on your Hosted Private Cloud `Operations`{.action} tab.<br>
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) on your Hosted Private Cloud `Operations`{.action} tab.<br>
 If the provided information is invalid, the operation will be canceled and a message will show the returned error.
 
 Once allowed, the user and its permissions will be manageable directly from you OVHcloud Control Panel as any other Hosted Private Cloud user.
@@ -191,7 +191,7 @@ You will have to specify the "pre-Winows 2000" group name as it is inside your A
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
 
-Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) on your Hosted Private Cloud `Operations`{.action} tab.<br>
+Make sure the return operation is successful. You can follow its progress through the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) on your Hosted Private Cloud `Operations`{.action} tab.<br>
 If the provided information is invalid, the operation will be canceled and a message will show the returned error.
 
 Once allowed, the group and its permissions will be manageable directly from your OVHcloud Control Panel as any other Hosted Private Cloud user.
