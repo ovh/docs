@@ -1,11 +1,8 @@
 ---
-title: Wie füge ich einen Host hinzu? (EN)
+title: How to add a host?
 excerpt: Learn how to add compute capabilities to your infrastructure
-slug: wie_fuge_ich_einen_host_hinzu
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_do_you_add_a_host/'
-section: Ressourcen-Management
-legacy_guide_number: g605
+slug: how_do_you_add_a_host
+section: Resource management
 ---
 
 **Last updated 1st February 2022**
@@ -18,15 +15,15 @@ Within your OVHcloud environment, you can add a new dedicated host in just a few
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca))
 
 ## Instructions
 
 > [!warning]
 >
-> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/de/private-cloud/manager-ovh-private-cloud/)
+> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/ca/en/private-cloud/control-panel-ovh-private-cloud/)
 > 
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
