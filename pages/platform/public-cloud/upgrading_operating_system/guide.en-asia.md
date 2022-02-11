@@ -63,7 +63,7 @@ $ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
 $ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
-Now that we are target the next release, lets to the upgrade and reboot at the end:
+Now that the latest release is set as target, perform the upgrade and finally initate a reboot:
 
 > [!primary]
 > You may have popups asking you about restarting services. Answer them yes.

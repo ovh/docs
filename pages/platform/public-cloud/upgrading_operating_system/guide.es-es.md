@@ -32,6 +32,60 @@ Este tutorial explica los pasos a seguir para actualizar un sistema operativo al
 
 ## Procedimiento
 
+### Debian
+
+Antes de actualizar la versión principal del SO, asegúrese de actualizar las versiones más recientes de todos los paquetes instalados en su versión actual:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> El siguiente paso es opcional.
+> No obstante, debe examinar con atención los paquetes que ya no sean necesarios en el sistema. De lo contrario, el siguiente comando puede dañar el sistema. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Es posible que necesite reiniciar algunas actualizaciones, deberá reiniciarlas antes de comenzar la actualización:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Después del reinicio, actualice el directorio /etc/apt/sources.list para dirigirse a la siguiente versión (en este ejemplo, pasamos de Buster a Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Una vez que la próxima versión esté lista, puede actualizarla y reiniciarla definitivamente:
+
+> [!primary]
+> Las ventanas contextuales le invitarán a reiniciar sus servicios. Responda afirmativamente.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Compruebe que la actualización haya funcionado:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Antes de actualizar la versión principal del SO, asegúrese de actualizar las versiones más recientes de todos los paquetes instalados en su versión actual:
