@@ -128,7 +128,7 @@ Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in u
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Klicken Sie oben links auf das Zahnrad und dann auf "Optionen". Folgen Sie in der linken Spalte der Ordnerstruktur "E-Mails" unter "Accounts" und "Blockieren oder erlauben"
+Klicken Sie oben rechts auf das Zahnrad und dann auf "Optionen". Folgen Sie in der linken Spalte der Ordnerstruktur "E-Mail" unter "Accounts" und "Blockieren oder erlauben".
 
 Geben Sie im Bereich "**Absender gesperrt**"eine E-Mail-Adresse oder eine zu blockierende Domain ein und klicken Sie auf die Schaltfläche `+`{.action}, um diese in die Liste aufzunehmen.
 

@@ -130,9 +130,9 @@ Pour des instructions plus détaillées sur la création des règles de gestion 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ivad4FgJ2No" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Cliquez sur la roue crantée en haut à gauche, puis sur « Options ». Dans la colonne de gauche, suivez l'arborescence « Courrier », sous « Comptes », puis « Bloquer ou autoriser ».
+Cliquez sur la roue crantée en haut à droite, puis sur « Options ». Dans la colonne de gauche, suivez l'arborescence « Courrier », sous « Comptes », puis « Bloquer ou autoriser ».
 
-Dans la section « **Expéditerus bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste. 
+Dans la section « **Expéditeurs bloqués** », tapez une adresse e-mail ou un nom de domaine à bloquer, puis cliquez sur le bouton `+`{.action} pour l'ajouter dans la liste. 
 
 ![useowa](images/owa_exchange_block.png){.thumbnail}
 
