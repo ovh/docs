@@ -82,7 +82,7 @@ Graças ao Public Cloud, pode aumentar os recursos de que a sua instância disp�
 > Além disso, esta operação provoca um corte da instância durante o tempo da operação.
 > 
 
-> \[!success
+> [!success]
 >
 > As instâncias do tipo *flex* permitem o redimensionamento para modelos superiores ou inferiores graças a um tamanho de disco único.
 > 
@@ -136,7 +136,7 @@ A nova dimensão do disco será então apresentada no gestor de disco.
 
 Esta opção permite-lhe reconfigurar a sua instância numa nova base, ou simplesmente mudar de sistema operativo.
 
-> \[!alert]
+> [!alert]
 > Esta operação leva à eliminação dos dados da instância.
 > 
 
@@ -169,7 +169,7 @@ Na lista pendente correspondente à instância, selecione a opção `Console`{.a
 
 A consola da instância aparece.
 
-> \[!success
+> [!success]
 >
 > Se a consola deixar de responder às entradas de teclado, clique na barra de estado.
 > Para sair do modo pleno de ecrã, clique no botão de retorno do browser.
@@ -196,7 +196,7 @@ De seguida, confirme o seu pedido na janela que aparece.
 
 Se já não precisa de uma das suas instâncias, pode eliminá-la a qualquer momento.
 
-> \[!alert]
+> [!alert]
 >
 > Os dados presentes na instância serão eliminados.
 > Também pode criar um backup desta instância se deseja conservar os dados e relançar uma instância idêntica mais tarde.
@@ -208,7 +208,7 @@ Na lista pendente correspondente à instância, selecione a `Delete Instance`{.a
 
 A seguir, clique em `Confirm`{.action} para lançar o processo.
 
-> \[!success
+> [!success]
 >
 > Uma vez eliminada, a sua instância não lhe será faturada e não poderá recuperá-la.
 > 
