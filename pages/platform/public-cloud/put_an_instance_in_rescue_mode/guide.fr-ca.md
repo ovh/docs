@@ -7,7 +7,7 @@ section: "Gestion depuis l'espace client"
 order: 3
 ---
 
-**Dernière mise à jour le 26/07/2021**
+**Dernière mise à jour le 11/02/2022**
 
 ## Objectif
 

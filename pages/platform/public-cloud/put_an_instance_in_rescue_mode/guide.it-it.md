@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestione dallo Spazio Cliente OVHcloud
 ---
 
-**Ultimo aggiornamento 26/07/2021**
+**Ultimo aggiornamento 11/02/2022**
 
 ## Obiettivo
 
