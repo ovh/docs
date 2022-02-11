@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 14
 ---
 
-**Dernière mise à jour le 09/07/2021**
+**Dernière mise à jour le 07/02/2022**
 
 ## Objectif
 
@@ -31,7 +31,7 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 
 ### Debian
 
-Avant de commencer la mise à jour de la version majeure, assurez-vous de mettre à jour les versions les plus récentes de tous les paquets installés sur la version actuelle :
+Avant de procéder à la mise à jour de la version majeure de votre OS, assurez-vous de mettre à jour les versions les plus récentes de tous les paquets installés sur sa version actuelle :
 
 ```bash
 $ sudo apt-get update
@@ -40,21 +40,21 @@ $ sudo apt-get full-upgrade
 ```
 
 > [!alert]
-> Warning: L'étape suivante est facultative.
-> Cependant, vous devez examiner attentivement les paquets qui ne sont plus nécessaires sur le système. Sinon, la commande suivante peut casser le système. 
+> L'étape suivante est facultative.
+> Vous devez cependant examiner attentivement les paquets qui ne sont plus nécessaires sur le système. Sinon, la commande suivante peut endommager le système. 
 >
 
 ```bash
 $ sudo apt-get --purge autoremove
 ```
 
-Certaines mises à jour pouvant nécessiter un redémarrage, nous devons d'abord redémarrer avant de commencer la mise à jour :
+Certaines mises à jour pouvant nécessiter un redémarrage, vous devez d'abord redémarrer avant de commencer la mise à jour :
 
 ```bash
 $ sudo systemctl reboot
 ```
 
-Après le redémarrage, nous mettrons à jour le répertoire /etc/apt/sources.list pour cibler la prochaine version (dans ce cas, nous allons de Buster à Bullseye) :
+Après le redémarrage, mettez à jour le répertoire /etc/apt/sources.list pour cibler la prochaine version (dans cet exemple, nous passons de Buster à Bullseye) :
 
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
@@ -63,10 +63,10 @@ $ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
 $ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
-Maintenant que nous sommes la cible de la prochaine version, passons à la mise à jour et redémarrons à la fin :
+Maintenant que la prochaine version est ciblée, vous pouvez procéder à la mise à jour ainsi qu'au redémarrage final :
 
 > [!primary]
-> Des fenêtres contextuelles vous invitent peut-être à redémarrer vos services. Réponds oui.
+> Des fenêtres contextuelles vous inviteront peut-être à redémarrer vos services. Répondez par l'affirmative.
 >
 
 ```bash
@@ -76,7 +76,7 @@ $ sudo apt-get full-upgrade
 $ sudo systemctl reboot
 ```
 
-Vérifiez que la mise à niveau a fonctionné :
+Vérifiez que la mise à jour a fonctionné :
 
 ```bash
 $ uname -r
