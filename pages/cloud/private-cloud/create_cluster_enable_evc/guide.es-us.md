@@ -4,7 +4,7 @@ slug: create-cluster-enable-evc
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-cluster-enable-evc/'
 excerpt: Learn how to create a cluster and activate EVC mode
-section: VMware vSphere features
+section: Funcionalidades de VMware vSphere
 order: 01
 ---
 
