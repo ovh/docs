@@ -76,7 +76,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 4.5 Activer vSAN (si pertinent)](#vsan)<br />
 &ensp;&ensp;[Etape 4.6 Recréer votre configuration réseau vSphere](#vspherenetwork)<br />
 &ensp;&ensp;[Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)](#inventory)<br />
-&ensp;&ensp;[Etape 4.8 Reconfigurer NSX(si pertinent)](#nsx)<br />
+&ensp;&ensp;[Etape 4.8 Reconfigurer NSX (si pertinent)](#nsx)<br />
 &emsp;&emsp;[Etape 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
 &emsp;&emsp;[Etape 4.8.2 NSX Edges](#edges)<br />
 &emsp;&emsp;[Etape 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
@@ -381,7 +381,7 @@ Pour des raisons organisationelles, les VMs, les hosts ou les datastores peuvent
 
 Si cette organisation est toujours nécessaire, il vous faudra la créer à nouveau dans le vDC de destination.
 <a name="nsx"></a>
-#### Etape 4.8 Configurer NSX
+#### Etape 4.8 Configurer NSX (si pertinent)
 <a name="transportzones"></a>
 ##### Etape 4.8.1 v(x)lan Transport Zones
 

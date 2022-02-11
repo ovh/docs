@@ -355,7 +355,7 @@ For organisational reasons, the VMs, hosts or datastores may have been placed in
 
 If you still need this organisation, you will need to create it again in the destination vDC.
 <a name="nsx"></a>
-#### Step 4.8 Configure NSX
+#### Step 4.8 Configure NSX (if relevant)
 <a name="transportzones"></a>
 ##### Step 4.8.1 v(x)lan Transport Zones
 
