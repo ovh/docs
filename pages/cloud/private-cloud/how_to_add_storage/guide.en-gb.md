@@ -1,23 +1,23 @@
 ---
-title: How to add a storage?
-excerpt: Learn how to add storage your infrastructure
+title: How to add storage?
+excerpt: Learn how to add storage to your infrastructure
 slug: how_to_add_a_storage
 legacy_guide_number: g606
 section: Resource management
 ---
 
-**Last Updated on 01/02/2022**
+**Last Updated 1st February 2022**
 
 ## Objective
 
 Within your OVHcloud environment, you can add a new dedicated datastore in just a few minutes.
 
-**This guide offers a step by step study case to achieve the objective**
+**Learn how to add storage to your infrastructure.**
 
 ## Requirements
 
-- Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
@@ -31,7 +31,7 @@ In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard
 
 ![Menu](images/en01dash.png){.thumbnail}
 
-The `Configure`{.action} tab  give you access to the OVHcloud plugin.<br>
+The `Configure`{.action} tab gives you access to the OVHcloud plugin.<br>
 in the `Add Storage`{.action} menu, choose the type of storage you would like to add and click `Next`{.action}.
 
 ![Choose](images/en02choose.png){.thumbnail}

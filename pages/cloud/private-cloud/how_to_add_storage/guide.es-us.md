@@ -1,11 +1,10 @@
 ---
-title: Come aggiungere uno storage? (EN)
+title: ¿Cómo añadir un almacenamiento? (EN)
 excerpt: Learn how to add storage to your infrastructure
-slug: come_aggiungere_uno_storage
+slug: como_anadir_un_almacenamiento
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_add_a_storage/'
-section: Per iniziare
-legacy_guide_number: g606
+section: Primeros pasos
 ---
 
 **Last Updated 1st February 2022**
@@ -18,15 +17,15 @@ Within your OVHcloud environment, you can add a new dedicated datastore in just 
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws))
 
 ## Instructions
 
 > [!warning]
 >
-> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/it/private-cloud/manager-ovh-private-cloud/)
+> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/us/es/private-cloud/manager-ovh-private-cloud/)
 > 
 
 In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
@@ -51,4 +50,5 @@ Once done, a new datastore is showing in your datacenter and is ready for use.
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
+
 
