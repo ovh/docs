@@ -2,6 +2,7 @@
 title: Configurar llaves SSH adicionales
 excerpt: Cómo configurar llaves SSH adicionales para la instancia de Public Cloud
 slug: configurar_llaves_ssh_adicionales
+legacy_guide_number: g1924
 section: Tutoriales
 order: 01
 ---

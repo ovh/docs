@@ -6,7 +6,7 @@ legacy_guide_number: g1865
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja: 14 listopada 2019**
+**Ostatnia aktualizacja z dnia 14/11/2019**
 
 ## Wprowadzenie
 

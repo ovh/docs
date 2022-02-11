@@ -3,6 +3,7 @@ title: 'Cambiar de facturación por horas a mensual'
 excerpt: 'Cómo cambiar la modalidad de facturación de una instancia de Public Cloud'
 slug: cambiar-modalidad-facturacion-public-cloud
 section: 'Gestión del proyecto'
+order: 07
 ---
 
 **Última actualización: 21/09/2021**

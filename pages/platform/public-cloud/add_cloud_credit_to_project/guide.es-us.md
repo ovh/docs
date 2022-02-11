@@ -3,7 +3,7 @@ title: 'Añadir crédito Cloud'
 slug: anadir_credito_cloud
 excerpt: 'Cómo añadir créditos o códigos promocionales a su proyecto de Public Cloud'
 section: 'Gestión del proyecto'
-order: 3
+order: 05
 ---
 
 > [!primary]

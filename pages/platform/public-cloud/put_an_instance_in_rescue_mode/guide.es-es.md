@@ -4,6 +4,7 @@ excerpt: 'Poner una instancia en modo de rescate'
 slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
+order: 03
 ---
 
 **Última actualización: 26/07/2021**
@@ -29,6 +30,8 @@ En esos casos, puede utilizar el modo de rescate para reconfigurar su instancia 
 En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `«Public Cloud»`{.action}.
 
 A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
+
+![control panel](images/compute2022.PNG){.thumbnail}
 
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
 
