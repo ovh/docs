@@ -9,10 +9,11 @@ section: 'OVHcloud services and options'
 
 ## Objective
 
-This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud datacenters.<br>
-Check out [ZVR between OVHcloud and a third party](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-customer-to-ovh/) for instructions for cross platforms set up.
+This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud datacenters.
 
-**Discover how to set up Zerto Virtual Replication between your Private Cloud platforms.**
+For instructions for cross platforms set up, please our guide on [using Zerto between OVHcloud and a third party plateform](https://docs.ovh.com/gb/en/private-cloud/zerto-virtual-replication-customer-to-ovh/).
+
+**Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
 ## Requirements 
 
