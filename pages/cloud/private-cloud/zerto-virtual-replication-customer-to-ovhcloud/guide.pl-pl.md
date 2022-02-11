@@ -1,17 +1,23 @@
 ---
-title: 'Konfiguracja VPN dla DRP Zerto OVHcloud'
+title: "Korzystanie z usługi Zerto między OVHcloud a platformą zewnętrzną"
 slug: zerto-virtual-replication-klient-do-ovhcloud
-excerpt: 'Dowiedz się, jak skonfigurować tunel VPN w celu połączenia lokalnej platformy Zerto z infrastrukturą Private Cloud OVHcloud'
+excerpt: 'Dowiedz się, jak połączyć Zerto OVHcloud z inną platformą'
 section: 'Usługi i opcje OVHcloud'
 ---
 
-**Ostatnia aktualizacja z dnia 30-06-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-## Wprowadzenie:
-Ten przewodnik ma na celu pomóc w skonfigurowaniu wirtualnej sieci prywatnej (VPN) w celu połączenia platformy lokalnej z infrastrukturą Hosted Private Cloud OVHcloud i wdrożeniu rozwiązania do odzyskiwania danych po awarii
-Zerto.
+**Ostatnia aktualizacja z dnia 11-02-2022**
+
+## Wprowadzenie
+
+Niniejszy przewodnik wyjaśnia, jak skonfigurować wirtualną prywatną sieć (VPN) i jak podłączyć zewnętrzną platformę do usługi Hosted Private Cloud OVHcloud oraz jak wdrożyć rozwiązanie Disaster Recovery Zerto.<br>
 Dla zilustrowania realizacji wzajemnego połączenia wykorzystamy funkcje VPN w OPNSense, czyli platformie open source firewall/VPN.
-Dla ułatwienia opiszemy najprostszą konfigurację, w której brama VPN ma połączenie w sieci Zerto Virtual Manager (ZVM). 
+Dla ułatwienia opiszemy najprostszą konfigurację, w której brama VPN ma połączenie w sieci Zerto Virtual Manager (ZVM).
+
+W drugim przypadku zapoznaj się z naszym przewodnikiem "[Zerto między dwoma centrami danych OVHcloud](https://docs.ovh.com/pl/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)"
 
 ## Wymagania początkowe
 

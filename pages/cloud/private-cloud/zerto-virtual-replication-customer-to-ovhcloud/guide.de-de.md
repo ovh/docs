@@ -1,17 +1,23 @@
 ---
-title: 'VPN für Ihren OVHcloud Zerto DRP einrichten'
+title: 'Zerto zwischen OVHcloud und einer Drittplattform verwenden'
 slug: zerto-virtual-replication-customer-to-ovhcloud
-excerpt: 'Erfahren Sie hier, wie Sie einen VPN-Tunnel ein, um Ihre lokale Zerto-Plattform mit Ihrer Private Cloud zu verbinden'
+excerpt: 'Hier erfahren Sie, wie Sie Ihren Zerto OVHcloud mit einer anderen Plattform verbinden.'
 section: OVHcloud Dienste und Optionen
 ---
 
-**Letzte Aktualisierung am 10.08.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 11.02.2022**
 
 ## Ziel
 
-Ziel dieser Anleitung ist, Ihnen bei der Konfiguration Ihres virtuellen privaten Netzwerks (VPN) zu helfen, um Ihre lokale Plattform mit Ihrer OVHcloud Hosted Private Cloud zu verbinden und die Zerto Disaster-Recovery-Lösung einzurichten.
+In dieser Anleitung erfahren Sie, wie Sie das virtuelle private Netzwerk (VPN) konfigurieren, um eine Drittplattform an Ihre OVHcloud Hosted Private Cloud anzuschließen und die Zerto Disaster Recovery Lösung umzusetzen.<br>
+Zur Veranschaulichung der Umsetzung der Verbindung verwenden wir die VPN Funktionen von OPNSense, einer Open Source Firewall/VPN Plattform.<br>
+Um die Erläuterungen zu vereinfachen, beschreiben wir die einfachste Konfiguration, bei der das VPN Gateway über eine Verbindung im Netzwerk des Zerto Virtual Managers (ZVM) verfügt.
 
-Zur Veranschaulichung der Konfiguration verwenden wir die VPN-Funktionen von OPNSense, einer Open-Source-Firewall/VPN-Plattform. Der Einfachheit halber beschreiben wir die einfachste Konfiguration, bei der das VPN-Gateway über eine Verbindung zum Netzwerk des Zerto Virtual Managers (ZVM) verfügt. 
+Lesen Sie hierzu unsere Anleitung "[Zerto zwischen zwei OVHcloud Rechenzentren](https://docs.ovh.com/de/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)".
 
 ## Voraussetzungen
 
