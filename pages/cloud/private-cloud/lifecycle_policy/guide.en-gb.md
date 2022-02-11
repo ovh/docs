@@ -6,7 +6,7 @@ section: FAQ
 order: 3
 ---
 
-**Last updated 02nd November 2021**
+**Last updated 11th February 2022**
 
 > [!warning]
 >
@@ -26,7 +26,6 @@ OVHcloud has a lifecycle policy for the service in order to take into account se
 * the compatibility between hardware and/or software components;
 * any factor affecting the quality of the service.
 
-
 This lifecycle policy is provided to help clients understand the underlying reasons for version or range changes and the impact of each phase of the lifecycle on the service, and anticipate and prepare the transition to a newer version or range.
 
 ### Commercial range concerned
@@ -37,7 +36,6 @@ Hosted Private Cloud
 * DC2014 & DC2016 (AMD PileDriver)
 * SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell)
 * SDDC2018 (Intel Broadwell, Intel Haswell)
-
 
 ## Lifecycle timeframe and definitions
 
@@ -90,8 +88,6 @@ This table presents a summary of the different phases of the lifecycle of the se
 | Hardware support (spares) | X | X |  |
 | Security patches | X | X | X |
 | Knowledge Base | X | X | X |
-
-
 
 ## OVHcloud Commercial Range status
 
