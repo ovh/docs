@@ -32,6 +32,60 @@ Tutorial przedstawia kroki, jakie należy podjąć, aby zaktualizować system op
 
 ## W praktyce
 
+### Debian
+
+Przed aktualizacją głównej wersji systemu operacyjnego, upewnij się, że aktualizujesz najnowsze wersje wszystkich pakietów zainstalowanych w jego aktualnej wersji:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Kolejny etap jest opcjonalny.
+> Należy jednak dokładnie zbadać pakiety, które nie są już potrzebne w systemie. W przeciwnym razie następujące polecenie może uszkodzić system. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Niektóre aktualizacje mogą wymagać restartu, należy najpierw zrestartować przed rozpoczęciem aktualizacji:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Po ponownym uruchomieniu zaktualizuj katalog /etc/apt/sources.list, aby wybrać kolejną wersję (w tym przykładzie przenosimy się z Buster na Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Teraz, kiedy kolejna wersja jest skierowana, możesz przejść do aktualizacji i do restartu końcowego:
+
+> [!primary]
+> Okna kontekstowe mogą zachęcić Cię do ponownego uruchomienia Twoich usług. Proszę odpowiedzieć twierdząco.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Sprawdź, czy aktualizacja działa:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Przed aktualizacją głównej wersji systemu operacyjnego, upewnij się, że aktualizujesz najnowsze wersje wszystkich pakietów zainstalowanych w jego aktualnej wersji:

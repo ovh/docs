@@ -2,8 +2,8 @@
 title: Preguntas frecuentes
 excerpt: FAQ para las instancias Public Cloud de OVHcloud
 slug: public-cloud-faq
-section: Primeros pasos
-order: 11
+section: Información general
+order: 01
 ---
 
 **Última actualización: 06/09/2021**

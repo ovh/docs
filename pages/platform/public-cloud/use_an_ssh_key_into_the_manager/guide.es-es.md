@@ -2,13 +2,31 @@
 title: 'Usar una clave SSH en la interfaz de Public Cloud'
 slug: usar-una-clave-ssh-en-la-interfaz-de-public-cloud
 excerpt: 'Instrucciones paso a paso sobre cómo usar una clave SSH para simplificar el acceso a los servidores en la nube'
-section: 'Base de conocimientos'
+section: 'Gestión de las instancias desde el área de cliente'
+order: 04
 ---
 
-**Última actualización: 4/12/2019**
+**Última actualización: 10/02/2022**
 
-## Introducción
+## Objetivo
+
 SSH es un protocolo que permite acceder a un servidor y comunicarse con él de forma autenticada y cifrada.
+
+**Descubra cómo utilizar las claves SSH con el área de cliente de OVHcloud.**
+
+## Requisitos
+
+- Haber creado un [proyecto de Public Cloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) desde el área de cliente.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener una [clave SSH](../public-cloud-primeros-pasos/).
+
+
+## Procedimiento
+
+> [!primary]
+>
+Si quiere registrar una clave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
+>
 
 Existen dos formas de añadir una clave SSH desde la interfaz de Public Cloud:
 
@@ -16,18 +34,9 @@ Existen dos formas de añadir una clave SSH desde la interfaz de Public Cloud:
 - El segundo método consiste en añadir la clave desde el gestor de claves SSH.
 
 
-### Requisitos:
-- Una [clave SSH](../public-cloud-primeros-pasos/)
+### Creación de una instancia
 
-
-> [!primary]
->
-Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
->
-
-## Creación de una instancia
-
-Para crear una instancia en la nube desde la interfaz de cliente de Public Cloud, haga clic en `Crear una instancia`{.action} en el menú «Instancias» situado en la sección `Proceso`{.action} del menú de la izquierda.
+Para crear una instancia en la nube desde la interfaz de cliente de Public Cloud, haga clic en `Crear una instancia`{.action} en el menú `Instances` situado en la sección **Compute**{.action} del menú de la izquierda.
 
 ![Add a server](images/compute.png){.thumbnail}
 
@@ -41,13 +50,13 @@ Si desea añadir una clave, haga clic en `Añadir una clave`{.action}. Asigne un
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-## En la herramienta de gestión de claves
+### En la herramienta de gestión de claves
 
 Una vez seleccionadas las «claves SSH» en el menú de la izquierda de su proyecto, estará disponible la pestaña «Claves SSH».
 
 ![Add a key](images/addkeymenu.png){.thumbnail}
 
-Haga clic en `Añadir una clave`{.action} y, luego, en `Añadir esta clave`{.action}, después de haber asignado un nombre a la llave y haberla pegado en el campo.
+Haga clic en `Añadir una clave`{.action} y, luego, en `Añadir esta clave`{.action}, después de haber asignado un nombre a la clave y haberla pegado en el campo.
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 

@@ -2,7 +2,6 @@
 title: 'Adding cloud credit'
 slug: add-cloud-credit
 excerpt: 'Find out how to add credit or vouchers to your Public Cloud project'
-legacy_guide_number: 1907
 section: Project management
 order: 3
 ---
@@ -11,7 +10,7 @@ order: 3
 
 ## Objective
 
-With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](../information-on-cloud-billing-options/). This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](https://docs.ovh.com/gb/en/billing/) to learn more about this topic.)
+With the *cloud credit* option you can allocate a specific amount to your Public Cloud project which will serve as the default payment method for the [billing of the project](../information-on-cloud-billing-options/).<br> This means that cloud credit is debited first and any outstanding amount will be then be paid by other available payment methods. (Please consult the [Public Cloud billing guides](https://docs.ovh.com/gb/en/billing/) to learn more about this topic.)
 
 **This guide explains how to add credit on to your Public Cloud account using a voucher, or by generating a purchase order.**
 
@@ -23,7 +22,7 @@ With the *cloud credit* option you can allocate a specific amount to your Public
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Open `Credit and Vouchers`{.action} in in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Open `Credit and Vouchers`{.action} in in the left-hand menu.
 
 > [!warning]
 >

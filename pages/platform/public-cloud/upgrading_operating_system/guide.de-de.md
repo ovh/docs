@@ -34,6 +34,60 @@ In diesem Tutorial werden die notwendigen Schritte beschrieben, um eine nicht me
 
 ## In der praktischen Anwendung
 
+### Debian
+
+Bevor Sie auf die höhere Version Ihres Betriebssystems aktualisieren, überprüfen Sie, dass Sie die neuesten Versionen aller auf der aktuellen Version installierten Pakete aktuell sind:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Der nächste Schritt ist optional.
+> Sie sollten jedoch sorgfältig prüfen, welche Pakete für das System nicht mehr notwendig sind. Andernfalls kann der folgende Befehl das System beschädigen. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Einige Updates können einen Neustart erfordern. Bevor Sie mit dem Update beginnen, führen Sie einen Reboot aus:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Aktualisieren Sie nach dem Neustart das Verzeichnis `/etc/apt/sources.list`, um die höhere Version anzusteuern (in diesem Beispiel wechseln wir von Buster nach Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Nachdem Sie die neueste Version als Ziel festgelegt haben, führen Sie das Upgrade durch und initiieren Sie abschließend einen Neustart:
+
+> [!primary]
+> Sie können während des Prozesses Aufforderungen erhalten, Dienste neu zu starten. Antworten Sie dann mit Ja.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Überprüfen Sie, ob das Update erfolgreich war:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Bevor Sie auf die neuere Version Ihres Betriebssystems aktualisieren, überprüfen Sie, dass die Paketliste auf dem neuesten Stand ist:

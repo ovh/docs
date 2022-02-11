@@ -4,7 +4,7 @@ slug: mode-rescue-vps
 excerpt: 'Découvrez comment redémarrer votre VPS en mode rescue'
 section: 'Diagnostic et mode Rescue'
 ---
-**Dernière mise à jour le 24 novembre 2020**
+**Dernière mise à jour le 11/02/2022**
 
 ## Objectif
 
@@ -69,6 +69,8 @@ Une fois que vous avez lancé le redémarrage, une barre de progression indique 
 >
 
 Vous pouvez maintenant vous connecter via SSH à votre VPS en utilisant les informations d'identification du mode rescue. Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « normal » à partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Aller plus loin
 

@@ -3,6 +3,7 @@ title: 'Guardar una copia de seguridad de una instancia'
 slug: guardar_copia_de_seguridad_de_una_instancia
 excerpt: 'Cómo realizar el backup de una instancia de Public Cloud'
 section: 'Gestión de las instancias desde el área de cliente'
+order: 01
 ---
 
 **Última actualización: 22/11/2019**

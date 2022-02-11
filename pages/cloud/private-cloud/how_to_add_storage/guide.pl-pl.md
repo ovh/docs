@@ -1,26 +1,53 @@
 ---
-title: W jaki sposób dodać przestrzeń dyskową?
-excerpt: ''
+title: W jaki sposób dodać przestrzeń dyskową? (EN)
+excerpt: Learn how to add storage to your infrastructure
 slug: w_jaki_sposob_dodac_przestrzen_dyskowa
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_to_add_a_storage/'
+section: Pierwsze kroki
 legacy_guide_number: g606
 ---
 
+**Last Updated 1st February 2022**
 
-## 
-Należy zalogować się do vSphere (poprzez program lokalny lub za pomocą połączenia RDP dostarczonego podczas aktywacji usługi Private Cloud).
+## Objective
 
+Within your OVHcloud environment, you can add a new dedicated datastore in just a few minutes.
 
-## 
-W panelu vSphere wybierz swoją usługę PCC. Następnie wybierz zakładkę "Private Cloud OVH" lub "Stockage OVH".
-Kliknij na przycisk zamówienia na poziomie wybranej przestrzeni dyskowej:
+**Learn how to add storage to your infrastructure.**
 
-![](images/img_106.jpg){.thumbnail}
-Zatwierdź zamówienie i kliknij na "Zakończ". Przestrzeń dyskowa będzie dostępna po kilku minutach od zatwierdzenia zamówienia. 
-Będziesz mógł tworzyć wirtualne maszyny korzystając z nowej przestrzeni dyskowej.
+## Requirements
 
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
-## 
-Aby usunąć przestrzeń dyskową , należy wybrać zakładkę « Stockage OVH » na klastrze i kliknąć na przycisk « lista przestrzeni dyskowych »:
+## Instructions
 
-![](images/img_107.jpg){.thumbnail}
+> [!warning]
+>
+> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/pl/private-cloud/manager-ovh-private-cloud/)
+> 
 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
+
+![Menu](images/en01dash.png){.thumbnail}
+
+The `Configure`{.action} tab gives you access to the OVHcloud plugin.<br>
+in the `Add Storage`{.action} menu, choose the type of storage you would like to add and click `Next`{.action}.
+
+![Choose](images/en02choose.png){.thumbnail}
+
+Verify your order and confirm by clicking `Next`{.action}.
+
+![Confirm](images/en03validate.png){.thumbnail}
+
+Your order is confirmed. The progression of the delivery is showing with an estimated time of availability.
+
+![Delivery](images/en04deliver.png){.thumbnail}
+
+Once done, a new datastore is showing in your datacenter and is ready for use.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -61,52 +61,44 @@ Der Header setzt sich aus mehreren Elementen zusammen, die den Verlauf der E-Mai
 Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen ein Header bestehen kann, sowie deren Bedeutung. 
 
 - Ein `Received` Eintrag ist im Header für jedem Durchgang der E-Mail auf einen Ausgangsserver (SMTP) enthalten. Der Hostname des Servers wird in der Regel mit seiner IP-Adresse und einem Zeitstempel angegeben. Die Einträge für `Received` sind vom letzten Durchgang zum ältesten Durchgang auf einem Server sortiert:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
 *Hier wurde die E-Mail vom Server mxplan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen.*
 
 - Der Eintrag `Return-Path` entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist im Allgemeinen die Versandadresse. 
-
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Der `From`-Eintrag enthält die Adresse des Absenders der E-Mail und den Anzeigenamen.
-
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&g
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Der `To`-Eintrag enthält die Adresse des E-Mail-Empfängers und den Anzeigenamen.
-
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - `Subject` ist der Betreff der E-Mail.
-
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
 - Der Eintrag `Message-ID` bezeichnet die eindeutige Kennung der E-Mail und endet mit dem Namen des Versendungsservers (nach "@"). 
-
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - Im Feld `Received-SPF` wird das Ergebnis der [SPF](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/) Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
-
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
 
 - Die `X-`Einträge sind individuelle Felder und dienen als Ergänzung zu den Standardfeldern. Sie werden implementiert von den Servern, die E-Mails übertragen.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
@@ -174,6 +166,10 @@ Um die `.eml` Datei herunterzuladen wählen Sie eine E-Mail aus. Klicken Sie auf
 Wählen Sie die E-Mail aus, deren Header Sie anzeigen möchten. Klicken Sie auf den **Pfeil** rechts neben `Allen antworten`{.action} und dann auf `Nachrichtendetails anzeigen`{.action}. Es öffnet sich ein neues Fenster, in dem der vollständige Header der E-Mail abgerufen werden kann.
 
 ![E-Mails](images/owa01.png){.thumbnail}
+
+Siehe auch unser Video-Tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **.eml Datei speichern**
 

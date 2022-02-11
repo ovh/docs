@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 4
 ---
 
-**Last updated 27th September 2018**
+**Last updated 10th February 2022**
 
 ## Objective
 
@@ -20,7 +20,8 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 ## Requirements
 
 - A [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- Access to your instance via SSH
+- Access to your instance via SSH in [rescue mode](https://docs.ovh.com/ie/en/public-cloud/put_an_instance_in_rescue_mode/)
+- Create an SSH key
 
 ## Instructions
 
@@ -82,8 +83,7 @@ root@instance:/home/admin# chroot /mnt/
 Then change the admin password.
 
 ```
-root@instance:/# passwd 
-admin
+root@instance:/# passwd admin
 ```
 
 Once this change has taken place and been backed up, you need to reboot your instance on its disk, so that you can log in with your new SSH key.

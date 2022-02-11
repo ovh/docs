@@ -2,7 +2,6 @@
 title: 'Configurer des clés SSH supplémentaires'
 slug: configurer-des-cles-ssh-supplementaires
 excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
-legacy_guide_number: 1924
 section: 'Tutoriels'
 order: 01
 ---
@@ -34,7 +33,7 @@ Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes av
 
 ### Configuration du nouvel utilisateur
 
-[Connectez-vous à votre instance en SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide des commandes ci-dessous :
+[Connectez-vous à votre instance en SSH](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
 
 ```bash
 ~$ sudo adduser user2
@@ -79,7 +78,6 @@ Désormais, vous pouvez vous connecter avec l'utilisateur et la clé privée con
 ```bash
 ~$ ssh user2@instance_IP
 ```
-
 ```console
 Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
 

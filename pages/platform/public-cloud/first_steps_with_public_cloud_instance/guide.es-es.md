@@ -3,7 +3,7 @@ title: 'Gestionar las instancias de Public Cloud'
 slug: empezar-con-una-instancia-public-cloud
 excerpt: 'Cómo empezar a utilizar una instancia de Public Cloud'
 section: 'Primeros pasos'
-order: 2
+order: 05
 ---
 
 **Última actualización: 4/12/2019**
