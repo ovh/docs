@@ -2,7 +2,6 @@
 title: 'Ajouter du crédit cloud'
 slug: ajouter-du-credit-cloud
 excerpt: 'Découvrez comment ajouter du crédit sur votre projet Public Cloud'
-legacy_guide_number: 1907
 section: 'Gestion de projets'
 order: 4
 ---
