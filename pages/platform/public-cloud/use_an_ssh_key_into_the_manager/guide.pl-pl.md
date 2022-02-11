@@ -17,7 +17,7 @@ SSH to protokół umożliwiający dostęp do serwera oraz uwierzytelnioną i zas
 
 **Dowiedz się, jak korzystać z kluczy SSH w Panelu klienta OVHcloud.**
 
-### Wymagania początkowe
+## Wymagania początkowe
 
 - Utworzenie [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/) w Panelu klienta
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
@@ -34,7 +34,7 @@ Klucz SSH można dodać w interfejsie Public Cloud na dwa sposoby:
 - Pierwsza, bardziej bezpośrednia metoda polega na dodaniu klucza podczas tworzenia instancji.
 - Druga metoda polega na dodaniu klucza z menedżera kluczy SSH.
 
-## Tworzenie instancji
+### Tworzenie instancji
 
 Aby utworzyć instancję, w interfejsie klienta Public Cloud kliknij pozycję `Utwórz instancję`{.action} w menu `Instances`{.action} znajduje się w sekcji **Compute** menu z lewej strony.
 
@@ -50,7 +50,7 @@ Jeśli chcesz dodać klucz, kliknij przycisk `Dodaj klucz`{.action}. W polu „N
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-## Korzystając z narzędzia zarządzania kluczami
+### Korzystając z narzędzia zarządzania kluczami
 
 Po wybraniu pozycji „Klucze SSH” z lewego menu projektu zostanie wyświetlona karta „Klucze SSH”.
 

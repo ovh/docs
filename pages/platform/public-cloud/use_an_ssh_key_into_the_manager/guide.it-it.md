@@ -17,7 +17,7 @@ Il protocollo SSH ti permette di accedere e comunicare con un server in modo aut
 
 **Questa guida ti mostra come utilizzare le chiavi SSH dallo Spazio Cliente OVHcloud.**
 
-### Prerequisiti
+## Prerequisiti
 
 - Aver creato un [progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_primo_progetto_public_cloud/) nello Spazio Cliente OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
@@ -35,7 +35,7 @@ Per aggiungere una chiave SSH dall’interfaccia Public Cloud esistono due modi:
 - Il primo, più diretto, consiste nell’aggiungere la chiave al momento della creazione di un’istanza.
 - Il secondo metodo consiste nell’aggiungere una chiave dall’interfaccia di gestione delle chiavi SSH.
 
-## Creazione di un’istanza
+### Creazione di un’istanza
 
 Per creare un’istanza Cloud, accedi all’interfaccia Public Cloud e clicca su `Crea un’istanza`{.action} dal menu `Instances`{.action} situato nella sezione **Compute** del menu a sinistra.
 
@@ -51,7 +51,7 @@ Per aggiungere una chiave, clicca su `Aggiungi una chiave`{.action}. Attribuisci
 
 ![Aggiungi una chiave](images/addkey.png){.thumbnail}
 
-## Dall’interfaccia di gestione delle chiavi
+### Dall’interfaccia di gestione delle chiavi
 
 Una volta selezionata l’opzione “Chiavi SSH” dal menu a sinistra del tuo progetto, una scheda “Chiave SSH” sarà disponibile.
 

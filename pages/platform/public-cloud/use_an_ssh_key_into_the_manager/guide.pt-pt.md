@@ -36,7 +36,7 @@ Existem duas formas de adicionar uma chave SSH a partir da sua interface Public 
 - O primeiro método, e também o mais direto, é realizado no momento de criação da instância.
 - O segundo método consiste em adicionar uma chave a partir do gestor de chaves SSH.
 
-## Criar uma instância
+### Criar uma instância
 
 Para criar uma instância a partir da interface de cliente Public Cloud, clique em `Criar uma instância`{.action} no menu `Instances`{.action} situado na secção **Compute** à esquerda do ecrã.
 
@@ -52,7 +52,7 @@ Para adicionar uma chave, clique em `Adicionar chave`{.action}. Atribua um nome 
 
 ![Adicionar chave](images/addkey.png){.thumbnail}
 
-## A partir da ferramenta de gestão de chaves
+### A partir da ferramenta de gestão de chaves
 
 Uma vez selecionada a opção “Chaves SSH” no menu situado à esquerda do seu projeto, será disponibilizado um separador com o mesmo nome.
 

@@ -34,7 +34,7 @@ Existen dos formas de añadir una clave SSH desde la interfaz de Public Cloud:
 - El segundo método consiste en añadir la clave desde el gestor de claves SSH.
 
 
-## Creación de una instancia
+### Creación de una instancia
 
 Para crear una instancia en la nube desde la interfaz de cliente de Public Cloud, haga clic en `Crear una instancia`{.action} en el menú `Instances` situado en la sección **Compute**{.action} del menú de la izquierda.
 
@@ -50,7 +50,7 @@ Si desea añadir una clave, haga clic en `Añadir una clave`{.action}. Asigne un
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-## En la herramienta de gestión de claves
+### En la herramienta de gestión de claves
 
 Una vez seleccionadas las «claves SSH» en el menú de la izquierda de su proyecto, estará disponible la pestaña «Claves SSH».
 
