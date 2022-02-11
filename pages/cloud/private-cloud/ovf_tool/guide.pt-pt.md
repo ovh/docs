@@ -1,8 +1,10 @@
 ---
-title: OVF Tool
+title: OVF Tool (EN)
 slug: ovf-tool
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/ovf-tool/'
 excerpt: Find out how to export or import virtual machines using the OVF Tool
-section: Virtual machine management
+section: Gestão das máquinas virtuais
 ---
 
 **Last updated 31/01/2022**
@@ -15,8 +17,8 @@ section: Virtual machine management
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
 ## Instructions
 
