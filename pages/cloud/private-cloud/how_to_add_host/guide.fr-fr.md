@@ -2,7 +2,7 @@
 title: Comment ajouter un hôte ?
 excerpt: Découvrez comment ajouter des capacités de calculs à votre infrastructure
 slug: how_do_you_add_a_host
-section: Resource management
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 01/02/2022**
