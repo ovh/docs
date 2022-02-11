@@ -5,7 +5,7 @@ excerpt: Come riavviare il tuo VPS OVH in modalità Rescue
 section: Diagnostica e modalità Rescue
 ---
 
-**Ultimo aggiornamento: 24 novembre 2020**
+**Ultimo aggiornamento: 11/02/2022**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -74,6 +74,8 @@ Una volta avviato il riavvio, la barra di progressione indica lo stato di avanza
 >
 
 A questo punto puoi accedere al tuo VPS via SSH utilizzando le informazioni di identificazione della modalità Rescue. Una volta terminate le operazioni in modalità Rescue, riavvia il VPS in modalità "normale" dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Per saperne di più
 

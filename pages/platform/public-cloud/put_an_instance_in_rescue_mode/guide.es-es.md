@@ -7,7 +7,7 @@ section: 'Gestión de las instancias desde el área de cliente'
 order: 03
 ---
 
-**Última actualización: 26/07/2021**
+**Última actualización: 11/02/2022**
 
 ## Objetivo
 

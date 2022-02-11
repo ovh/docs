@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
-**Letzte Aktualisierung am 26.07.2021**
+**Letzte Aktualisierung am 11.02.2022**
 
 ## Ziel
 
