@@ -1,6 +1,6 @@
 ---
-title: 'Utiler Plik pour partager des fichiers'
-excerpt: "Découvrez comment utiliser Plik pour envoyer des fichiers à d'autres personnes"
+title: 'Utiliser Plik pour partager des fichiers'
+excerpt: "Découvrez comment utiliser l'outil Plik pour envoyer des fichiers à d'autres personnes"
 slug: plik
 section: Outils
 ---
@@ -9,9 +9,9 @@ section: Outils
 
 ## Objectif
 
-L'outil [Plik](https://plik.ovhcloud.com) permet de partager des fichiers entre différentes personnes, en offrant des options de sécurisation d'accès à ces fichiers.
+L'outil en ligne [Plik](https://plik.ovhcloud.com) permet de partager des fichiers entre différentes personnes, en offrant des options de sécurisation d'accès à ces fichiers.
 
-**Découvrez comment utiliser Plik pour partager des fichiers.**
+**Découvrez comment utiliser l'outil en ligne Plik pour partager des fichiers.**
 
 ## Prérequis
 
