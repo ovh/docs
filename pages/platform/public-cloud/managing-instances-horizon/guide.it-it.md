@@ -6,11 +6,15 @@ section: Gestione da Horizon
 order: 04
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
-I progetti Public Cloud OVHcloud possono essere gestiti facilmente dall'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
+Oltre allo Spazio Cliente OVHcloud, è possibile gestire anche i progetti Public Cloud OVHcloud dall'[interfaccia Horizon](https://horizon.cloud.ovh.net/auth/login/). Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
 
 **Questa guida ti mostra come gestire le tue istanze Public Cloud tramite l'interfaccia Horizon.**
 
