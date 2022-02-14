@@ -6,7 +6,7 @@ section: Gérer mes services et leur renouvellement
 order: 3
 ---
 
-**Dernière mise à jour le 25/01/2022**
+**Dernière mise à jour le 14/02/2022**
 
 Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -14,14 +14,14 @@ Tout d'abord, prenez connaissance de la partie « [Que se passe-t-il lorsqu'un s
 
 > [!primary]
 >
-> Avoir votre retour est essentiel pour nous. Cela nous permet de faire évoluer nos services, afin qu'ils répondent au mieux à vos besoins et à vos attentes.
+> Obtenir votre avis est essentiel pour nous. Cela nous permet de faire évoluer nos services, afin qu'ils répondent au mieux à vos besoins et à vos attentes.
 >
 > N'hésitez donc pas à nous en dire plus sur votre expérience personnelle avec OVHcloud via le formulaire proposé lors de la résiliation. Nous vous remercions par avance de votre contribution à l'amélioration de nos produits.
 >
 
 ## Que se passe-t-il lorsqu'un service OVHcloud est résilié ? <a name="consequences"></a>
 
-La « *résiliation* » d'un service OVHcloud implique qu'il sera interrompu **de façon définitive** à la fin de l'abonnement en cours (avec une exception, toutefois, pour les [noms de domaines](#domain)). Vous pouvez résilier votre service ou [annuler une demande de résiliation](#cancel) jusqu'à 24 heures avant la date de fin d'abonnement.
+La « résiliation » d'un service OVHcloud implique qu'il sera interrompu **de façon définitive** à la fin de l'abonnement en cours (avec une exception, toutefois, pour les [noms de domaines](#domain)). Vous pouvez résilier votre service ou [annuler une demande de résiliation](#cancel) jusqu'à 24 heures avant la date de fin d'abonnement.
 
 S'il s'agit d'une offre de messagerie, d'un serveur ou d'un hébergement Web, l'ensemble des données concernées seront supprimées **sans possibilité de récupération**.
 
@@ -73,6 +73,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante :
 &emsp;&emsp;[VoIP](#voip)<br />
 &emsp;&emsp;[OverTheBox](#otb)<br />
 &emsp;&emsp;[SMS](#sms)<br />
+&emsp;&emsp;[FAX](#fax)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
 
@@ -112,7 +113,13 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Pour résilier un service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/public-cloud/supprimer-un-projet/) afin de supprimer le projet Public Cloud contenant votre service.
+Chaque service Public Cloud peut être supprimé en cliquant sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
+
+![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
+
+Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre pages d'[informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
+
+Vous pouvez également [consulter votre consommation actuelle](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -224,7 +231,7 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 
 #### VoIP <a name="voip"></a>
 
-Pour résilier votre offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/voip/gestion-des-groupes-de-telephonie/#supprimer-un-groupe-de-telephonie).
+Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-une-ligne-sip) ou [résilier un numéro alias](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-un-numero-alias).
 
 #### OverTheBox <a name="otb"></a>
 
@@ -237,6 +244,10 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 #### SMS <a name="sms"></a>
 
 Il n'existe pas de procédure de résiliation concernant les [offres SMS](https://www.ovhtelecom.fr/sms/). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
+
+#### FAX <a name="fax"></a>
+
+Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-une-ligne-fax).
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
