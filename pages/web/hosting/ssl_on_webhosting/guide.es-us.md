@@ -80,7 +80,7 @@ Para activar el certificado, conéctese al [área de cliente de OVHcloud](https:
 > [!primary]
 >
 > Antes de realizar esta configuración, asegúrese de que ha realizado correctamente el paso anterior de [activar un certificado SSL en un sitio multisitio](#multisitio). Al menos un dominio debe tener la opción SSL `Activada` o el estado `A generar` para activar el certificado SSL.<br>
-> Esta información no es pertinente si selecciona `Certificado de pago` {.action} o `Importar su certificado SSL` {.action}.
+> Esta información no es pertinente si selecciona `Certificado de pago`{.action} o `Importar su certificado SSL`{.action}.
 >
 
 Haga clic en el botón `···`{.action} situado junto a **Certificado SSL** y seleccione `Contratar un certificado SSL`{.action}.

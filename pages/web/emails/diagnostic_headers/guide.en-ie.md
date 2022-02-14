@@ -88,7 +88,7 @@ Subject: Hello my friend
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
-- The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/gbie/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
+- The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/ie/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>

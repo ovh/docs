@@ -23,7 +23,7 @@ Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](https://docs.
 ## Requisitos
 
 - Ter uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Ter acesso à sua instância via SSH em [modo rescue](.../passar_uma_instancia_em_modo_de_rescue/)
+- Ter acesso à sua instância via SSH em [modo rescue](../passar_uma_instancia_em_modo_de_rescue/)
 - Criar uma chave SSH
 
 ## Instruções
