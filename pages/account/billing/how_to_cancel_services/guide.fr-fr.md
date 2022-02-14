@@ -37,10 +37,9 @@ Ceci implique que, avant toute résiliation, vous devez être **certain** :
 
 > [!warning]
 >
-> Seul le *contact administrateur* d'un service OVHcloud est en capacité de le résilier. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition).
->
 > La résiliation ne peut être appliquée que si les conditions suivantes sont remplies :
 >
+> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition));
 > * le service n'est pas en renouvellement manuel;
 > * le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture.
 >
