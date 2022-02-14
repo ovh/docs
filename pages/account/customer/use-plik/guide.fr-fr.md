@@ -1,5 +1,5 @@
 ---
-title: 'Utiliser Plik pour partager des fichiers'
+title: "Partager des fichiers avec l'outil Plik"
 excerpt: "Découvrez comment utiliser l'outil Plik pour envoyer des fichiers à d'autres personnes"
 slug: plik
 section: Outils
