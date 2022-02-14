@@ -284,7 +284,7 @@ Your cluster score: 100 -- A
 ...
 </code></pre>
 
-### Export reports on Object Storage
+### Export reports locally
 
 You can generate and save a report with the `--save` command
 
@@ -299,17 +299,202 @@ $ popeye --save
 /var/folders/lq/xp6s4vbn13s5vj_kq3cch50w0000gn/T/popeye/sanitizer_my-test-cluster2_1644586682462302000.txt
 </code></pre>
 
-You can also save the generated report to a S3 bucket.
+### Export reports on Object Storage (S3 compatible
 
-If you don't have already a Object Storage container, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) guide.
+You can also save the generated report to a S3 bucket.
+As OVHcloud Object Storage is compatible with S3 API, you can store the reports inside it.
+
+First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) guide.
+
+For this guide, our Object Storage container is named `popeye` and its region is `GRA`.
+
+![OVHcloud Object Storage container name](images/set-container-name.png)
+TODO: refaire l'image!!!!
+
+
+TODO: The Amazon S3 Application Programming Interface (S3 API) is the most common way in which data is stored, managed, and retrieved by object stores. The S3 API is a frontend API on top of the OpenStack Swift one. To use the S3 API at OVHcloud, you need to get S3 credentials form Keystone (1) which is the authentication module in OpenStack. This will provide you with an Access Key ID and a Secret Key that you can use in your S3 tool (2). Once you have these credentials you will be able to communicate with OVHcloud using the “language” of S3 and use our Object Storage solutions. S3 API will verify your credentials (4) and translate your calls into Swift API (5) in order to execute your requests (6).
 
 TODO: xxxx
 
-![OVHcloud Object Storage container name](images/set-container-name.png)
+#### Get OpenStack RC file 
+
+In order to interact with the Object Storage through S3 API, you need to generate your OpenStack credentials.
+
+If you never retrieve the OpenStack RC file, follow this step, else go to next step.
+
+You need to [get your `openrc.sh` file](https://docs.ovh.com/gb/en/public-cloud/access_and_security_in_horizon/) from your OVHcloud platform. 
+
+At this step, you should have a `<user_name>-openrc.sh` file like this:
+
+```
+cat 4442521083919223-openrc.sh
+```
+
+<pre class="console"><code>$ cat 4442521083919223-openrc.sh
+#!/usr/bin/env bash
+# To use an OpenStack cloud you need to authenticate against the Identity
+# service named keystone, which returns a **Token** and **Service Catalog**.
+# The catalog contains the endpoints for all services the user/tenant has
+# access to - such as Compute, Image Service, Identity, Object Storage, Block
+# Storage, and Networking (code-named nova, glance, keystone, swift,
+# cinder, and neutron).
+#
+# *NOTE*: Using the 3 *Identity API* does not necessarily mean any other
+# OpenStack API is version 3. For example, your cloud provider may implement
+# Image API v1.1, Block Storage API v2, and Compute API v2.0. OS_AUTH_URL is
+# only for the Identity API served through keystone.
+export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
+# With the addition of Keystone we have standardized on the term **project**
+# as the entity that owns the resources.
+export OS_PROJECT_ID=a123b456c789d901
+export OS_PROJECT_NAME="11111111111"
+export OS_USER_DOMAIN_NAME="Default"
+if [ -z "$OS_USER_DOMAIN_NAME" ]; then unset OS_USER_DOMAIN_NAME; fi
+export OS_PROJECT_DOMAIN_ID="default"
+if [ -z "$OS_PROJECT_DOMAIN_ID" ]; then unset OS_PROJECT_DOMAIN_ID; fi
+# unset v2.0 items in case set
+unset OS_TENANT_ID
+unset OS_TENANT_NAME
+# In addition to the owning entity (tenant), OpenStack stores the entity
+# performing the action as the **user**.
+export OS_USERNAME="user-myuser"
+# With Keystone you pass the keystone password.
+echo "Please enter your OpenStack Password for project $OS_PROJECT_NAME as user $OS_USERNAME: "
+read -sr OS_PASSWORD_INPUT
+export OS_PASSWORD=$OS_PASSWORD_INPUT
+# If your configuration has multiple regions, we set that information here.
+# OS_REGION_NAME is optional and only valid in certain environments.
+export OS_REGION_NAME="UK1"
+# Don't leave a blank variable, unset it if it was empty
+if [ -z "$OS_REGION_NAME" ]; then unset OS_REGION_NAME; fi
+export OS_INTERFACE=public
+export OS_IDENTITY_API_VERSION=3%
+```
+
+Source the `<user_name>-openrc.sh` file to set the OpenStack environment variables:
+
+```
+source <user_name>-openrc.sh
+```
+
+You should execute this command and enter your password:
+
+<pre class="console"><code>
+$ source 4442521083919223-openrc.sh
+Please enter your OpenStack Password for project 11111111111 as user user-myuser:
+</code></pre>
+
+#### Install CLI tools
+
+Now, you need to install the CLI tools:
+
+```
+pip install python-openstackclient awscli awscli-plugin-endpoint
+```
+
+The command install `openstack client` to generate your credentials, `aws CLI` and mandatory `endpoint plugin for aws CLI`:
+
+<pre class="console"><code>
+$ pip install python-openstackclient awscli awscli-plugin-endpoint
+DEPRECATION: Configuring installation scheme with distutils config files is deprecated and will no longer work in the near future. If you are using a Homebrew or Linuxbrew Python, please see discussion at https://github.com/Homebrew/homebrew-core/issues/76621
+Collecting python-openstackclient
+  Using cached python_openstackclient-5.7.0-py3-none-any.whl (970 kB)
+Collecting awscli
+  Using cached awscli-1.22.54-py3-none-any.whl (3.8 MB)
+Collecting awscli-plugin-endpoint
+...
+Successfully installed PrettyTable-3.1.0 PyYAML-5.4.1 appdirs-1.4.4 attrs-21.4.0 autopage-0.5.0 awscli-1.22.54 awscli-plugin-endpoint-0.4 botocore-1.23.54 certifi-2021.10.8 cffi-1.15.0 charset-normalizer-2.0.12 cliff-3.10.0 cmd2-2.3.3 colorama-0.4.3 cryptography-36.0.1 debtcollector-2.4.0 decorator-5.1.1 docutils-0.15.2 dogpile.cache-1.1.5 idna-3.3 iso8601-1.0.2 jmespath-0.10.0 jsonpatch-1.32 jsonpointer-2.2 keystoneauth1-4.4.0 msgpack-1.0.3 munch-2.5.0 netaddr-0.8.0 netifaces-0.11.0 openstacksdk-0.61.0 os-service-types-1.7.0 osc-lib-2.4.2 oslo.config-8.7.1 oslo.i18n-5.1.0 oslo.serialization-4.2.0 oslo.utils-4.12.1 packaging-21.3 pbr-5.8.1 pyasn1-0.4.8 pycparser-2.21 pyparsing-3.0.7 pyperclip-1.8.2 python-cinderclient-8.2.0 python-dateutil-2.8.2 python-keystoneclient-4.4.0 python-novaclient-17.6.0 python-openstackclient-5.7.0 pytz-2021.3 requests-2.27.1 requestsexceptions-1.4.0 rfc3986-2.0.0 rsa-4.7.2 s3transfer-0.5.1 simplejson-3.17.6 stevedore-3.5.0 urllib3-1.26.8 wcwidth-0.2.5 wrapt-1.13.3
+</code></pre>
+
+```
+mkdir ~/.aws
+```
+
+Create AWS CLI config file and setup the good endpoint to our Object Storage stored in GRA region:
+
+vi ~/.aws/config
+
+```
+[plugins]
+endpoint = awscli_plugin_endpoint
+
+[profile default]
+region = GRA
+s3 =
+  endpoint_url = https://s3.gra.cloud.ovh.net
+  signature_version = s3v4
+s3api =
+  endpoint_url = https://s3.gra.cloud.ovh.net
+```
+
+Generate AWS credentials:
+
+<pre class="console"><code>
+$ openstack ec2 credentials create
++------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| Field      | Value                                                                                                                                |
++------------+--------------------------------------------------------------------------------------------------------------------------------------+
+| access     | ec975c94081f40ba93465b648a197648                                                                                                     |
+| links      | {'self': 'https://auth.cloud.ovh.net/v3/users/2e91c81469fa458289d52f9927cea7d4/credentials/OS-EC2/ec975c94081f40ba93465b648a197648'} |
+| project_id | 11111111111111111111111111111111                                                                                                     |
+| secret     | 857006040f054ef0b83f15bffe5a01a9                                                                                                     |
+| trust_id   | None                                                                                                                                 |
+| user_id    | 2e91c81469fa458289d52f9927cea7d4                                                                                                     |
++------------+--------------------------------------------------------------------------------------------------------------------------------------+
+</code></pre>
+
+Thanks to these credentials, now you can setup them in your `.aws/credentials` file:
+
+```
+vi ~/.aws/credentials
+
+[default]
+aws_access_key_id = <access_key>
+aws_secret_access_key = <secret_key>
+```
+
+You should have a content like this:
+
+<pre class="console"><code>
+[default]
+aws_access_key_id=ec975c94081f40ba93465b648a197648
+aws_secret_access_key=857006040f054ef0b83f15bffe5a01a9
+</code></pre>
+
+Now you can test to list your existing Object Storage containers through `aws s3` CLI
+
+```bash
+aws s3 ls
+```
+
+You should have `popeye` container/bucket in minimum in the following list:
+
+<pre class="console"><code>$ aws s3 ls
+2009-02-03 17:45:09 popeye
+</code></pre>
+
+#### Store Popeye report in your Object Storage
 
 Thanks to the guide, you should have a running Object Storage
 
+
+TODO: Object Storage S3 Compatible API
 TODO: xxxx
+
+TODO:
+
+```
+$ popeye --s3-bucket storage.gra.cloud.ovh.net/v1/AUTH_a212a1e43b614c4ba27a247b890fcf59/popeye --out=json
+2022/02/11 22:56:09 DEBUG: Validate Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+2022/02/11 22:56:09 DEBUG: Build Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+2022/02/11 22:56:09 DEBUG: Sign Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+
+$ popeye --s3-bucket s3.gra.cloud.ovh.net/v1/AUTH_a212a1e43b614c4ba27a247b890fcf59/popeye --out=json
+2022/02/11 22:56:28 DEBUG: Validate Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+2022/02/11 22:56:28 DEBUG: Build Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+2022/02/11 22:56:28 DEBUG: Sign Request s3/PutObject failed, not retrying, error MissingRegion: could not find region configuration
+```
+
 
 
 https://storage.gra.cloud.ovh.net/v1/AUTH_a212a1e43b614c4ba27a247b890fcf59/popeye-reports
