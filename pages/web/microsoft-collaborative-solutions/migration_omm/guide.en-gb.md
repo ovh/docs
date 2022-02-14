@@ -61,7 +61,7 @@ In the page that opens, you can track the migration progress. Remember to save t
 There are two ways you can track the progress of a single migration:
 
 - From the email received, you will be notified about the migration’s progress.
-- From the page, <https://omm.ovh.net/> in the `Migration` tab {.action}, click `Follow / Synchronise` {.action}. You will need to enter the `Migration ID`{.action} and the `Source account`{.action} concerned.
+- From the page, <https://omm.ovh.net/> in the `Migration` tab {.action}, click `Follow / Synchronise`{.action}. You will need to enter the `Migration ID`{.action} and the `Source account`{.action} concerned.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 

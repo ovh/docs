@@ -35,7 +35,7 @@ section: Migração de uma conta Exchange
 
 #### Iniciar a migração
 
-Na página <https://omm.ovh.net/>, no separador `Migration` {.action}, clique em `Nova migração` {.action}.
+Na página <https://omm.ovh.net/>, no separador `Migration`{.action}, clique em `Nova migração`{.action}.
 
 ![omm](images/omm-migration-create.png){.thumbnail}
 
@@ -64,7 +64,7 @@ A página que aparece então detalha o seguimento da migração. Considere conse
 Existem dois caminhos para aceder ao acompanhamento de uma migração única:
 
 - após o e-mail recebido, notifica-o do progresso da migração;
-- a partir da página <https://omm.ovh.net/>, no separador `Migration` {.action}, clique em `Seguinte / Sincronizar` {.action}. Deverá indicar o `ID de migração` {.ação} e a `Conta source` {.ação} em causa.
+- a partir da página <https://omm.ovh.net/>, no separador `Migration`{.action}, clique em `Seguinte / Sincronizar`{.action}. Deverá indicar o `ID de migração` {.ação} e a `Conta source` {.ação} em causa.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -78,7 +78,7 @@ A página que aparece permite-lhe seguir o progresso da sua migração. Uma mens
 
 #### Iniciar a migração
 
-Na página <https://omm.ovh.net/>, no separador `PST / ICS / VCF` {.action} acima, clique em `Nova migração PST / ICS / VCF`.
+Na página <https://omm.ovh.net/>, no separador `PST / ICS / VCF`{.action} acima, clique em `Nova migração PST / ICS / VCF`.
 
 Aqui, deverá dispor do ficheiro com o conteúdo que pretende migrar para a conta de e-mail.
 
@@ -98,7 +98,7 @@ Existem dois caminhos para aceder ao acompanhamento de uma migração por fichei
 
 - a partir do e-mail recebido após o início da migração;
 
-- a partir da página <https://omm.ovh.net/>, passando o rato no separador `Migration` {.action} na barra de menu por cima da página e clicando em `Seguinte / Sincronizar` {.action}. De seguida, deverá introduzir o `Identificador de migração` {.ação} e a `Conta de destino` {.ação} em causa.
+- a partir da página <https://omm.ovh.net/>, passando o rato no separador `Migration`{.action} na barra de menu por cima da página e clicando em `Seguinte / Sincronizar`{.action}. De seguida, deverá introduzir o `Identificador de migração` {.ação} e a `Conta de destino` {.ação} em causa.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -109,7 +109,7 @@ A página que aparece permite-lhe seguir o progresso da sua migração. Uma mens
 
 ### Realizar e seguir uma migração múltipla (modo projeto) <a name="project"></a>
 
-Na página <https://omm.ovh.net/>, no separador `Projeto` {.action} acima, clique em `Novo projeto de migrações múltiplas` {.action}.
+Na página <https://omm.ovh.net/>, no separador `Projeto`{.action} acima, clique em `Novo projeto de migrações múltiplas`{.action}.
 
 ![omm](images/omm-migration-project.png){.thumbnail}
 
@@ -148,7 +148,7 @@ IMAP;myimap.server.com;mywonderfulmail@myserver.com;My_password;Exchange;https:/
 
 - `Desligar`: Permite que se desligue da página de acompanhamento do projeto, sem consequências sobre o desenrolar da migração.
 
-Para aceder de novo ao seguimento do seu projeto de migração, aceda à página <https://omm.ovh.net/>, no separador `Projeto` {.action} acima, clique em `Seguir um projeto` {.action}. Deverá indicar o `ID do projeto de migração` {.action} e a `palavra-passe` {.action} associada a este último.
+Para aceder de novo ao seguimento do seu projeto de migração, aceda à página <https://omm.ovh.net/>, no separador `Projeto`{.action} acima, clique em `Seguir um projeto`{.action}. Deverá indicar o `ID do projeto de migração`{.action} e a `palavra-passe`{.action} associada a este último.
 
 ## Quer saber mais?
  

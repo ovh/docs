@@ -35,7 +35,7 @@ section: 'Przeniesienie konta'
 
 #### Rozpocznij migrację
 
-Na stronie <https://omm.ovh.net/>w zakładce `Migracja`{.action} na górze kliknij `Nowa migracja` `{.action}.
+Na stronie <https://omm.ovh.net/>w zakładce `Migracja`{.action} na górze kliknij `Nowa migracja`{.action}.
 
 ![omm](images/omm-migration-create.png){.thumbnail}
 
@@ -57,9 +57,9 @@ Na stronie, która się wyświetli uzupełnij wymagane informacje.
 
 Kliknij na `Rozpocznij migrację`{.action} po uzupełnieniu informacji. Jeśli dane są prawidłowe, operacja się rozpocznie.
 
-Strona, która się wyświetla podaje szczegóły dotyczące postępu migracji. Pamiętaj, aby zapisać`Identyfikator migracji`{.action}, który się wyświetli i zaczekaj, aż operacja się zakończy. Czas operacji jest zmienny i zależy od liczby migrowanych elementów. Aby wrócić do strony pokazującej postęp migracji, przejdź do sekcji poniżej "Monitorowanie migracji pojedynczych kont".
+Strona, która się wyświetla podaje szczegóły dotyczące postępu migracji. Pamiętaj, aby zapisać `Identyfikator migracji`{.action}, który się wyświetli i zaczekaj, aż operacja się zakończy. Czas operacji jest zmienny i zależy od liczby migrowanych elementów. Aby wrócić do strony pokazującej postęp migracji, przejdź do sekcji poniżej "Monitorowanie migracji pojedynczych kont".
 
-#### Monitorowanie migracji  
+#### Monitorowanie migracji
 
 Istnieją dwie metody dostępu do strony pokazującej postęp migracji pojedynczych kont:
 

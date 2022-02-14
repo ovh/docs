@@ -78,7 +78,7 @@ Auf der angezeigten Seite können Sie den Migrationsverlauf verfolgen. Sie werde
 
 #### Migration starten
 
-Klicken Sie auf <https://omm.ovh.net/>der Seite im Tab `PST / ICS / VCF` {.action} auf `Neue PST / ICS / VCF Migration`.
+Klicken Sie auf <https://omm.ovh.net/>der Seite im Tab `PST / ICS / VCF`{.action} auf `Neue PST / ICS / VCF Migration`.
 
 Hier müssen Sie über die Datei mit den Inhalten verfügen, die Sie auf den E-Mail-Account migrieren möchten.
 
@@ -98,7 +98,7 @@ Es gibt zwei Wege, um eine Migration per PST, ICS oder VCF-Datei zu verfolgen:
 
 - über die empfangene E-Mail, die Sie über den Start der Migration informiert
 
-- Von der Seite <https://omm.ovh.net/>aus können Sie Ihre Maus über den Tab `Migration` {.action} im Menü oberhalb der Seite bewegen und auf `Weiter / Synchronisieren`{.action} klicken. Geben Sie nun die `Migrations-ID`{.action} und den betreffenden `Ziel-Account`{.action} ein.
+- Von der Seite <https://omm.ovh.net/>aus können Sie Ihre Maus über den Tab `Migration`{.action} im Menü oberhalb der Seite bewegen und auf `Weiter / Synchronisieren`{.action} klicken. Geben Sie nun die `Migrations-ID`{.action} und den betreffenden `Ziel-Account`{.action} ein.
 
 ![omm](images/omm-migration-track.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Es ist besser, es mit einer Tabellensoftware zu öffnen, um es zu vervollständi
 
 - `Trennung`: Hier können Sie sich von der Monitoring-Seite des Projekts abmelden, ohne Auswirkungen auf den Migrationsverlauf.
 
-Um erneut auf Ihr Migrationsprojekt zuzugreifen, loggen Sie sich auf der Seite ein <https://omm.ovh.net/>und klicken Sie oben auf `Projekt` {.action} auf `Projekt verfolgen`{.action} . Geben Sie nun die `Migrations-ID`{.action} und das zugehörige `Passwort`{.action} ein.
+Um erneut auf Ihr Migrationsprojekt zuzugreifen, loggen Sie sich auf der Seite ein <https://omm.ovh.net/>und klicken Sie oben auf `Projekt`{.action} auf `Projekt verfolgen`{.action} . Geben Sie nun die `Migrations-ID`{.action} und das zugehörige `Passwort`{.action} ein.
 
 ## Weiterführende Informationen
  

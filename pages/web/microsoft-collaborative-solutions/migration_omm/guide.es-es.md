@@ -65,7 +65,7 @@ La página mostrará el progreso de la migración. Anote el `ID de migración`{.
 Existen dos formas de consultar el estado de una migración única:
 
 - desde el mensaje de correo electrónico recibido, informándole del progreso de la migración;
-- desde la página <https://omm.ovh.net/>, en la pestaña `Migración` {.action}, haga clic en `Seguimiento / sincronización` {.action}. Una vez en la página, introduzca el `ID de migración` y la `Cuenta de origen`.
+- desde la página <https://omm.ovh.net/>, en la pestaña `Migración`{.action}, haga clic en `Seguimiento / sincronización`{.action}. Una vez en la página, introduzca el `ID de migración` y la `Cuenta de origen`.
 
 ![Consultar el estado de la migración](images/omm-migration-track.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Se mostrará el estado de la migración. También aparecerá un mensaje indicán
 
 #### Iniciar la migración
 
-Desde la página <https://omm.ovh.net/>, en la pestaña `PST/ICS/VCF` {.action}, haga clic en `Nueva migración PST/ICS/VCF`{.action} .
+Desde la página <https://omm.ovh.net/>, en la pestaña `PST/ICS/VCF`{.action}, haga clic en `Nueva migración PST/ICS/VCF`{.action} .
 
 En ese caso, debe tener el archivo con el contenido que quiera migrar a la cuenta de correo.
 
@@ -100,7 +100,7 @@ Existen dos formas de consultar el estado de una migración mediante archivo PST
 
 - desde el mensaje de correo electrónico de notificación del inicio de la migración;
 
-- desde la página <https://omm.ovh.net/>, pasando el ratón sobre la pestaña `Migración` {.action} en el menú situado sobre la página y haciendo clic en `Seguimiento / Sincronización` {.action}. Una vez en la página, introduzca el `ID de migración` y la `Cuenta de destino`.
+- desde la página <https://omm.ovh.net/>, pasando el ratón sobre la pestaña `Migración`{.action} en el menú situado sobre la página y haciendo clic en `Seguimiento / Sincronización`{.action}. Una vez en la página, introduzca el `ID de migración` y la `Cuenta de destino`.
 
 ![Consultar el estado de la migración](images/omm-migration-track.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Se mostrará el estado de la migración. También aparecerá un mensaje indicán
 
 ### Realizar y seguir una migración por lotes (modo proyecto) <a name="project"></a>
 
-Desde la página <https://omm.ovh.net/>, en la pestaña `Proyecto` {.action}, haga clic en `Nuevo proyecto de migración múltiple` {.action}.
+Desde la página <https://omm.ovh.net/>, en la pestaña `Proyecto`{.action}, haga clic en `Nuevo proyecto de migración múltiple`{.action}.
 
 ![omm](images/omm-migration-project.png){.thumbnail}
 
@@ -150,7 +150,7 @@ Es mejor abrirlo con un programa de hojas de cálculo para completarlo.
 
 - `Desconexión`: Permite desconectarse de la página de seguimiento del proyecto, sin que ello afecte al desarrollo de la migración.
 
-Para consultar el estado de su proyecto de migración, conéctese a la página <https://omm.ovh.net/>situada en la pestaña `Proyecto` {.action}. Haga clic en `Consultar el estado de un proyecto` {.action}. Una vez en la página correspondiente, introduzca el `ID del proyecto de migración` y la `Contraseña`.
+Para consultar el estado de su proyecto de migración, conéctese a la página <https://omm.ovh.net/>situada en la pestaña `Proyecto`{.action}. Haga clic en `Consultar el estado de un proyecto`{.action}. Una vez en la página correspondiente, introduzca el `ID del proyecto de migración` y la `Contraseña`.
 
 ## Más información
   
