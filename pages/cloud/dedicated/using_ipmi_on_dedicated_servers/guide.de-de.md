@@ -133,7 +133,7 @@ Um von Ihrer ISO Datei aus zu starten müssen Sie auf das BIOS zugreifen und die
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
 > [!primary]
-> Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media` {.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
+> Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media`{.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
 >
 
 Klicken Sie auf die `ENTF` Taste während des Startvorgangs, um zum BIOS-Interface zu gelangen. Sie können auch die Taste `F11` drücken und auf das BIOS zugreifen, indem Sie die Option `Enter Setup`{.action} auswählen.

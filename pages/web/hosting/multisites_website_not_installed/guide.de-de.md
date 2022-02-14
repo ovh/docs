@@ -53,7 +53,7 @@ Wählen Sie das betreffende Hosting aus der Liste aus und klicken Sie dann auf d
 |Szenario|Erforderliche Maßnahme|
 |---|---|
 |Der Name Ihrer Website erscheint in der Tabelle.|Wenn Sie den Namen Ihrer Website gerade im Multisite-Bereich Ihres Hostings hinzugefügt haben, warten Sie etwa 20 Minuten und leeren Sie den Cache Ihres Browsers. Wenn die Nachricht `Seite nicht installiert` noch besteht, gehen Sie zu [Schritt 2](#checkdomainlink).|
-|Die Domain oder Subdomain Ihrer Website wird nicht in der Tabelle angezeigt.|Fügen Sie Ihre Domain zu `Multisite` {.action} hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen)" folgen.|
+|Die Domain oder Subdomain Ihrer Website wird nicht in der Tabelle angezeigt.|Fügen Sie Ihre Domain zu `Multisite`{.action} hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen)" folgen.|
 |Die Domain wurde ohne Aktion Ihrerseits als Multisite entfernt.|Ihr Domainname oder die DNS-Zone wird wahrscheinlich über einen anderen Account verwaltet. Fügen Sie Ihre Domain als Multisite hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-22-eine-externe-domain-hinzufugen)" folgen.|
 
 ### Schritt 2: Die DNS-Zone Ihrer Domain überprüfen <a name="checkdomainlink"></a>

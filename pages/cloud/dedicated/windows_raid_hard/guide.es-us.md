@@ -28,7 +28,7 @@ Cuando instala Windows en un servidor con una configuración RAID de hardware, l
 
 ### Listar los volúmenes RAID existentes
 
-Primero, debemos enumerar los volúmenes RAID existentes para poder eliminarlos. Para hacer esto, usaremos el siguiente comando: `MegaCli -LDInfo -Lall -aAll` {.action}.
+Primero, debemos enumerar los volúmenes RAID existentes para poder eliminarlos. Para hacer esto, usaremos el siguiente comando: `MegaCli -LDInfo -Lall -aAll`{.action}.
 
 ```sh
 # root@rescue:~# MegaCli -LDInfo -Lall -aAll
@@ -140,7 +140,7 @@ Exit Code: 0x00
 
 Aquí, nuestro primer RAID ha sido creado. Ahora solo tenemos que asignar el resto del espacio disponible.
 
-Por lo tanto, crearemos un segundo RAID mediante el siguiente comando: `MegaCli -CfgLdAdd -rX [EncID: SlotID, EncID: SlotID, ...] -a0` {.action}.
+Por lo tanto, crearemos un segundo RAID mediante el siguiente comando: `MegaCli -CfgLdAdd -rX [EncID: SlotID, EncID: SlotID, ...] -a0`{.action}.
 
 `X` es el nivel RAID deseado (0, 1, 5 o 6).
 

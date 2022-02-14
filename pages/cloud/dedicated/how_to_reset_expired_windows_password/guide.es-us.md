@@ -32,7 +32,7 @@ A continuación, active la función IPMI utilizando el applet de Java o su naveg
 
 ![IPMI](images/ipmi.png){.thumbnail}
 
-Ahora debería recibir un mensaje indicado que su contraseña ha caducado y debe cambiarse. Haga clic en `Aceptar` {.action}.
+Ahora debería recibir un mensaje indicado que su contraseña ha caducado y debe cambiarse. Haga clic en `Aceptar`{.action}.
 
 ![IPMI](images/expiredpassword.png){.thumbnail}
 
@@ -44,26 +44,26 @@ Su contraseña ahora ha sido cambiada. Ahora puede acceder una vez más al servi
 
 ### Usando el modo rescate
 
-Primero, inicie su servidor en [modo de rescate](../modo_de_rescate) {.external} utilizando el entorno de arranque WinRescue. Una vez que el servidor se haya reiniciado, inicie sesión con un visor VNC o seleccione la pestaña `IPMI` {.action} en la página de su servidor en su {Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+Primero, inicie su servidor en [modo de rescate](../modo_de_rescate) {.external} utilizando el entorno de arranque WinRescue. Una vez que el servidor se haya reiniciado, inicie sesión con un visor VNC o seleccione la pestaña `IPMI`{.action} en la página de su servidor en su {Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 A continuación, abra la herramienta NTPWdi. Si no aparece allí, puede descargarlo [aquí](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}.
 
 ![NTPWedit](images/ntpwedit-1.png){.thumbnail}
 
-A continuación, haga clic en el botón `Open` {.action} para mostrar una lista de cuentas de usuario
+A continuación, haga clic en el botón `Open`{.action} para mostrar una lista de cuentas de usuario
 disponibles.
 
 ![NTPWedit](images/ntpwedit-2.png){.thumbnail}
 
-Ahora seleccione la cuenta de administrador de la lista y haga clic en el botón `Change Password` {.action}
+Ahora seleccione la cuenta de administrador de la lista y haga clic en el botón `Change Password`{.action}
 
 ![NTPWedit](images/ntpwedit-3.png){.thumbnail}
 
-Ingrese la nueva contraseña dos veces y haga clic en `OK` {.action}
+Ingrese la nueva contraseña dos veces y haga clic en `OK`{.action}
 
 ![NTPWedit](images/ntpwedit-4.png){.thumbnail}
 
-Finalmente, haga clic en el botón `Unblock` {.action}.
+Finalmente, haga clic en el botón `Unblock`{.action}.
 
 ![NTPWedit](images/ntpwedit-5.png){.thumbnail}
 

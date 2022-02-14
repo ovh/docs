@@ -159,7 +159,7 @@ In this situation, you can increase the [amount of RAM](https://docs.ovh.com/ie/
 
 You can also optimise your database by following the instructions of our guide "[Configuring your database server](https://docs.ovh.com/ie/en/hosting/configure-optimise-database-server/#managing-your-databases_1)".
 
-[!primary]
+> [!primary]
 >
 > If you experience any difficulties in decreasing the use of resources on your database server, please contact our [community of users](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/). We will not be able to assist you with this.
 >
