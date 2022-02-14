@@ -117,7 +117,7 @@ Chaque service Public Cloud peut être supprimé en cliquant sur le bouton `...`
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre pages d'[informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
+Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
 Vous pouvez également [consulter votre consommation actuelle](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
@@ -153,7 +153,6 @@ Il n'y a pas de résiliation possible avant échéance sur les offres [SSL secti
 Pour résilier votre offre [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
-
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
