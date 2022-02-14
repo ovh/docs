@@ -81,8 +81,8 @@ Vous pouvez également supprimer des fichiers un par un en cliquant sur le bouto
 
 ![download file](images/plik-download-EU.png)
 
-Pour permettre à vos utilisateurs finaux de télécharger vos fichiers, donnez-leur le lien vers le fichier individuel situé sous le nom de fichier.<br>
-Vous pouvez également leur donner le lien vers tous les fichiers de la session en leur donnant l'URL située dans la barre d'adresses de votre navigateur.<br>
+Pour permettre à d'autres personnes de télécharger vos fichiers, donnez-leur le lien vers le fichier individuel situé sous le nom du fichier.<br>
+Vous pouvez également leur donner le lien vers tous les fichiers de la session en leur partageant l'URL située dans la barre d'adresses de votre navigateur.<br>
 Vous pouvez aussi partager le QR code situé à gauche. Si vous avez téléversé plusieurs fichiers, le QR code permettra de télécharger chacun des fichiers.
 
 ### Options du compte
@@ -91,7 +91,7 @@ Cliquez sur votre identifiant en haut à droite pour accéder aux options du com
 
 ![download file](images/account-options.png)
 
-Via ce menu, vous pouvez vous déconnecter, générer des tokens pour utiliser l'outil Plik en ligne de commande, supprimer chaque téléversement (via le bouton `Remove`{.action} situé à droite de chaque téléversemeent) ou les supprimer tous (via le bouton `DELETE UPLOADS`{.action}).
+Via ce menu, vous pouvez vous déconnecter, générer des tokens pour utiliser l'outil Plik en ligne de commande, supprimer chaque téléversement (via le bouton `Remove`{.action} situé à droite de chaque téléversement) ou les supprimer tous (via le bouton `DELETE UPLOADS`{.action}).
 
 ## Aller plus loin
 
