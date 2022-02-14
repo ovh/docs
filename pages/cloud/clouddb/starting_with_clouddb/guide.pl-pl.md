@@ -161,7 +161,7 @@ Wybierz, lub nie, dodatkowe opcje opisane poniżej, a następnie kliknij `Zatwie
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.  Aby to zrobić, przejdź do zakładki `Autoryzowane adresy IP`{.action}, następnie kliknij `Dodaj adres IP/maskę`{.action}.
 
-![cloud databases - bazy danych na instancji](clouddb-add-ip-2022.png){.thumbnail}
+![cloud databases - bazy danych na instancji](images/clouddb-add-ip-2022.png){.thumbnail}
 
 W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autoryzować w `IP/maska`{.action}. Możesz również dodać opis. Zdecyduj, czy chcesz udzielić dostępu wyłącznie do baz danych czy również do SFTP. Następnie kliknij `Zatwierdź`{.action}.
 

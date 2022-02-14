@@ -130,7 +130,7 @@ Para instruções mais detalhadas sobre como criar regras inbox, consulte o noss
 
 Clique na roda dentada no canto superior direito e, a seguir, em "Opções". Na coluna da esquerda, siga a secção "Correio", em "Contas", e depois "Bloquear ou autorizar".
 
-Na secção "**Remetentes bloqueados**", introduza um endereço de e-mail ou um domínio a bloquear e clique no botão `+` {.action} para o adicionar na lista.
+Na secção "**Remetentes bloqueados**", introduza um endereço de e-mail ou um domínio a bloquear e clique no botão `+`{.action} para o adicionar na lista.
 
 ![useowa](images/owa_exchange_block.png) {.thumbnail}
 

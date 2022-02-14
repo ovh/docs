@@ -54,7 +54,7 @@ When a chart is installed in a Kubernetes cluster, the running instance is calle
 
 ## Installing Helm
 
-> [!warn]
+> [!warning]
 > This guide supposes you're using Helm 3, the latest major version of Helm.
 > The precedent version, Helm 2, is in *maintenance mode*, and considered deprecated.
 > If you want to use Helm 2, please refer to the [official documentation](https://v2.helm.sh/)
@@ -81,7 +81,7 @@ version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec637357037
 
 ## Initialize a Helm Chart Repository
 
-> [!warn]
+> [!warning]
 > As with Helm 2, the official Helm `stable` repository is currently deprecated. 
 > The Helm community is currently transitioning to a hub model, with a [Helm Hub](https://hub.helm.sh/), where charts can be searched using `helm search hub <keyword>`
 > As most charts from the Helm *stable* repository have been transferred to the [Bitnami repository](https://github.com/bitnami/charts/) we are using it in the tutorial.

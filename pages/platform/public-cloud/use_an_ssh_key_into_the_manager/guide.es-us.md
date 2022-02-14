@@ -60,7 +60,7 @@ Haga clic en `Añadir una clave`{.action} y, luego, en `Añadir esta clave`{.act
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 
-Esta clave estará disponible para usarse en el momento de [crear su próxima instancia en la nube](../empezar-con-una-instancia-public-cloud){.ref}.
+Esta clave estará disponible para usarse en el momento de [crear su próxima instancia en la nube](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/).
 
 ## Más información
 
