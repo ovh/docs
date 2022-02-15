@@ -19,6 +19,39 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 - An up and running Public Cloud Database for MongoDB.
 - A NodeJS environment with a stable version and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
 
+## Configure your MongoDB instance to accept incoming connections
+
+Before making a connection, we need to verify that our MongoDB instance is correctly configured.
+
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
+
+### Step 1: Verify your user roles and password
+
+Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
+
+We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use-case.
+
+In our example, we will simply reset the **admin** password.
+
+Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
+
+![User ready](images/mongodb_tuto_01_connect_nodejs_to_managed_mongodb-20220215135329218.png){.thumbnail}
+
+### Step 2: Authorize incoming connections from the MongoDB client
+
+In this step, select the `Authorised IP's`{.action} tab (Access Control List).
+By default, a Public Cloud Database does not accept any form of connection from the outside world.
+This way we can help prevent intrusive connection attempts.
+
+Click to authorize a new IP, and enter the previously found IP of your PHP environment or Web Hosting plan. In our case we will enter 109.190.200.59.
+
+![Add an IP](images/ip_authorize.png){.thumbnail}
+
+> [!primary]
+>
+> If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
+>
+
 ## Instructions
 
 ### Building a simple Chat Application
