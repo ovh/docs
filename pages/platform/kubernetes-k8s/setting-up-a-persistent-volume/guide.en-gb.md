@@ -117,7 +117,7 @@ spec:
   - name: myfrontend
     image: nginx
     volumeMounts:
-    - mountPath: "/var/www/html"
+    - mountPath: "/usr/share/nginx/html"
       name: test-volume
   volumes:
   - name: test-volume
