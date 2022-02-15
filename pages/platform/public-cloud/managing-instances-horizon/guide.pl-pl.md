@@ -6,6 +6,10 @@ section: Zarządzanie w interfejsie Horizon
 order: 4
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 03/02/2022**
 
 ## Wprowadzenie
@@ -52,9 +56,9 @@ Ta opcja pozwala na usunięcie kilku instancji jednocześnie. Wystarczy zaznaczy
 
 To menu pozwala na wykonywanie następujących operacji na jednej lub kilku instancjach. Najpierw upewnij się, czy zaznaczyłeś kratkę po lewej stronie nazwy instancji:
 
-- Instancje Start: ta opcja pozwala na ponowne uruchomienie jednej lub kilku instancji o statusie *shutoff* lub *off*.
+- Start Instances: ta opcja pozwala na ponowne uruchomienie jednej lub kilku instancji o statusie *shutoff* lub *off*.
 - Shut Off Instances opcja ta pozwala na zawieszenie jednej lub kilku instancji.
-- Soft Reboot Instancje: opcja ta pozwala na uruchomienie oprogramowania na jednej lub kilku instancjach.
+- Soft Reboot Instances: opcja ta pozwala na uruchomienie oprogramowania na jednej lub kilku instancjach.
 
 **Tworzenie kopii zapasowej**: Ta opcja pozwala na utworzenie snapshota instancji. Więcej informacji znajdziesz [w tym przewodniku](https://docs.ovh.com/pl/public-cloud/zarzadzanie_snapshotami_instancji_w_interfejsie_horizon/).
 
