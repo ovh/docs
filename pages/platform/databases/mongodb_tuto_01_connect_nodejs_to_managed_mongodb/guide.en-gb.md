@@ -37,7 +37,7 @@ After this a `package.json` file will be created:
 
 ```json
 {
-  "name": "test",
+  "name": "demo-chat-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
