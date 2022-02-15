@@ -17,7 +17,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for PostgreSQL.
 - A Python environment with a stable version and public network connectivity (Internet). This tutorial was made using Python 3.9.7.
@@ -124,7 +124,7 @@ $ pip install -r requirements.txt
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database
 
-The useful parameters, available in the manager, are:
+The useful parameters, available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);, are:
 
 - The db Host, the db Port
     - Get them from the "General Information tab"
