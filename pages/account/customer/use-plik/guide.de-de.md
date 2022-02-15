@@ -1,7 +1,7 @@
 ---
-title: 'Falk nutzen, um Dateien zu teilen'
-excerpt: Hier erfahren Sie, wie Sie mit dem Plik Tool Dateien an andere Personen senden.
-slug: Plik
+title: 'Plik nutzen, um Dateien zu teilen'
+excerpt: Erfahren Sie hier, wie Sie mit dem Plik Tool Dateien an andere Personen senden
+slug: plik
 section: Tools
 ---
 
@@ -9,42 +9,42 @@ section: Tools
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 14.02.2022**
+**Letzte Aktualisierung am 14.02.2022**
 
 ## Ziel
 
-Das Online-Tool [Plik](https://plik.ovhcloud.com) erlaubt es, Dateien zwischen verschiedenen Personen zu teilen, indem es Optionen zur Absicherung des Zugriffs auf diese Dateien bietet.
+Das Online-Tool [Plik](https://plik.ovhcloud.com) erlaubt es, Dateien mit anderen Personen zu teilen und bietet Optionen zur Absicherung des Zugriffs auf diese Dateien.
 
-**Hier erfahren Sie, wie Sie das Online-Tool Plik verwenden, um Dateien zu teilen.**
+**Diese Anleitung erklärt, wie Sie das Online-Tool Plik verwenden, um Dateien zu teilen.**
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [OVHcloud Account](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/)
+- Sie verfügen über einen [OVHcloud Kunden-Account](https://docs.ovh.com/de/customer/ovhcloud-account-erstellen/).
 
 ## In der praktischen Anwendung
 
 ### API Verbindung
 
-Gehen Sie zuerst zur Seite <https://plik.ovhcloud.com>.
+Öffnen Sie die Seite <https://plik.ovhcloud.com>.
 
 Um Dateien hochzuladen, müssen Sie authentifiziert sein. Klicken Sie auf `Login with OVH`{.action}.
 
 ![login](images/plik-login-EU.png)
 
-Verbinden Sie sich mit Ihrem OVHcloud Account, was der OVHcloud API Zugriff auf das Plik Tool gibt.<br>
+Loggen Sie sich in Ihren OVHcloud Account ein, um der OVHcloud API Zugriff auf das Plik Tool zu erlauben.<br>
 Geben Sie Ihre Login-Daten ein und klicken Sie auf den Button `Log in`{.action}, um fortzufahren.
 
 ![API](images/api-login-EU.png)
 
 > [!primary]
 >
-> Wenn Sie die [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) für Ihren Account aktiviert haben, geben Sie den Code ein, den Sie für die Authentifizierungsmethode angegeben haben. 
+> Wenn Sie die [Zwei-Faktor-Authentifizierung](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern/) für Ihren Account aktiviert haben, geben Sie den Code ein, den die Authentifizierungsmethode ausgibt. 
 
 ### Dateien hochladen
 
-Wenn Sie eingeloggt sind, klicken Sie oben links auf das Wort `Plik`{.action}, um auf das Hinzufügen von Dateien zuzugreifen.
+Wenn Sie eingeloggt sind, klicken Sie oben links auf `Plik`{.action}, um auf das Menü zum Hinzufügen von Dateien zuzugreifen.
 
-Klicken Sie auf `Add Files`{.action} und wählen Sie die Datei aus, die Sie hinzufügen möchten, oder "Drag and Drop" aus Ihren Dateien.
+Klicken Sie auf `Add Files`{.action} und wählen Sie die Datei aus, die Sie hinzufügen möchten, oder verwenden Sie "Drag and Drop" aus Ihrem Dateimanager.
 
 > [!primary]
 >
@@ -55,19 +55,19 @@ Klicken Sie auf `Add Files`{.action} und wählen Sie die Datei aus, die Sie hinz
 
 Für die Konfiguration Ihrer Auszahlungen stehen mehrere Optionen zur Verfügung:
 
-- `Destruct after the first download` - Nach dem ersten Download wird Ihre Datei im Internet gelöscht.
+- `Destruct after the first download` - Nach dem ersten Download wird die Datei gelöscht.
 - `Streaming` - Die Datei wird nicht auf dem Server gespeichert. Stattdessen beginnt die Dateiübertragung, wenn der Remote-Benutzer mit dem Download beginnt.
-- `Removable` - Erlaubt es den Endbenutzern, die Televerse-Datei zu löschen.
-- `Password` - Schützen Sie Ihre Auszahlung, indem Sie eine Kennung und ein Passwort festlegen, die der Remote-Benutzer eingeben muss.
-- `Comments` - Sie Ihrem Download Kommentare hinzu. Sprache *Markdown* wird unterstützt.
-- `Files will be automatically removed in` - Wählen Sie die Anzahl an Tagen (maximal 30), Stunden oder Minuten aus, nach deren Ablauf Sie möchten, dass Ihre Dateien automatisch gelöscht werden.
+- `Removable` - Erlaubt es den Endbenutzern, die Datei zu löschen.
+- `Password` - Schützen Sie Ihre Uploads, indem Sie eine Kennung und ein Passwort festlegen, die der Remote-Benutzer eingeben muss.
+- `Comments` - Fügen Sie Ihrem Download Kommentare hinzu. *Markdown* wird unterstützt.
+- `Files will be automatically removed in` - Wählen Sie die Anzahl an Tagen (maximal 30), Stunden oder Minuten aus, nach deren Ablauf Ihre Dateien automatisch gelöscht werden sollen.
 
 > [!primary]
 >
 > Wenn Sie Ihre Übertragung mit einem Passwort schützen, ist der Standardbenutzername "plik".
 >
 
-Nachdem Sie Ihre Dateien hinzugefügt und die gewünschten Optionen ausgewählt haben, klicken Sie auf der linken Seite auf den grünen `Upload`{.action} button. Dadurch wird eine neue Seite mit Ihren beigefügten Dateien geöffnet.
+Nachdem Sie Ihre Dateien hinzugefügt und die gewünschten Optionen ausgewählt haben, klicken Sie auf der linken Seite auf den grünen `Upload`{.action} button. Es öffnet sich die Übersichtsseite mit Ihren hochgeladenen Dateien.
 
 ![upload File](images/plik-upload-EU.png)
 
@@ -75,27 +75,27 @@ Die Download-Optionen sind dann verfügbar.
 
 ### Dateien herunterladen
 
-Auf der Download-Seite sind neue Optionen verfügbar:
+Auf der Download-Seite haben Sie weitere Optionen:
 
-- `Zip Archive` - Legen Sie alle Dateien, die Sie fernübertragen haben, in einen komprimierten Ordner.
-- `Add Files` - Sie können weitere Dateien hinzufügen.
-- `Delete` - Löschung sämtlicher im Voraus hochgeladener Dateien.
+- `Zip Archive` - Fügt alle hochgeladenen Dateien einem komprimierten Ordner hinzu.
+- `Add Files` - Sie können damit weitere Dateien hinzufügen.
+- `Delete` - Löschung aller bereits hochgeladenen Dateien.
 
-Sie können auch Dateien einzeln löschen, indem Sie rechts neben jeder Datei auf den `X`{.action}-Button klicken.
+Sie können auch Dateien einzeln löschen, indem Sie rechts neben der Datei auf den `X`{.action}-Button klicken.
 
 ![download file](images/plik-download-EU.png)
 
-Damit andere Personen Ihre Dateien herunterladen können, geben Sie ihnen den Link zur Datei unter dem Namen der Datei.<br>
-Sie können ihnen auch den Link zu allen Dateien der Session geben, indem Sie die URL in der Adresszeile Ihres Browsers teilen.<br>
-Sie können auch den QR-Code links teilen. Wenn Sie mehrere Dateien hochgeladen haben, können Sie mit dem QR-Code jede Datei herunterladen.
+Damit andere Personen Ihre Dateien herunterladen können, geben Sie den Link weiter, der unter dem Namen der Datei angezeigt wird.<br>
+Sie können auch den Link zu allen Dateien der Session weitergeben, indem Sie die URL in der Adresszeile Ihres Browsers kopieren.<br>
+Sie können auch den links angezeitgen QR-Code weitergeben. Wenn Sie mehrere Dateien hochgeladen haben, zeigt der QR-Code jede Datei an.
 
-### Kontooptionen
+### Account-Optionen
 
-Klicken Sie auf Ihre Kundenkennung oben rechts, um auf die Kontooptionen zuzugreifen.
+Klicken Sie auf Ihre Kundenkennung oben rechts, um auf die Account-Optionen zuzugreifen.
 
 ![download file](images/account-options.png)
 
-Über dieses Menü können Sie sich trennen, Token generieren, um das Plik-Tool in der Kommandozeile zu verwenden, jede Telezahlung (über den `Remove`{.action}-Button rechts neben jeder Telezahlung) löschen oder alle (über den `DELETE UPLOADS`{.action} Button) löschen.
+Über dieses Menü können Sie sich ausloggen, Token generieren, um das Plik-Tool in der Kommandozeile zu verwenden, einzelne Dateien löschen (über den `Remove`{.action}-Button rechts) oder alle Uploads löschen (über den `DELETE UPLOADS`{.action} Button).
 
 ## Weiterführende Informationen
 
