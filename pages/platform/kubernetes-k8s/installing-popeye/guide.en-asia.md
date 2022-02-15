@@ -53,7 +53,7 @@ In this guide you will:
 - Generate and export reports
 - Fix common issues
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Requirements
