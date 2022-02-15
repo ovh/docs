@@ -1,6 +1,6 @@
 ---
 title: Gerir as suas instâncias Public Cloud através do Horizon
-slug: gerir-instâncias-public-cloud
+slug: gerir-instancias-public-cloud
 excerpt: Saiba como gerir as suas instâncias através da interface Horizon
 section: Gestão a partir do Horizon
 order: 04
