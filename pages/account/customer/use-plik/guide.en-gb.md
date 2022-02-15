@@ -53,10 +53,10 @@ Click `Add files`{.action} and select the file you want to add, or drag and drop
 There are several options for configuring your uploads:
 
 - `Destruct after the first download` - This option will delete your uploaded file after the first download.
-- `Streaming` - The file will not be stored on the server. Instead, the file upload begins when the remote user begins the upload.
+- `Streaming` - The file will not be stored on the server. Instead, the file upload begins when the remote user begins the download.
 - `Removable` - Allows end users to delete the uploaded file.
 - `Password` - Protect your upload by imposing a username and password that the remote user must enter.
-- `Comments` - Add comments to your download. The *markdown* language is supported.
+- `Comments` - Add comments to your download. The *Markdown* language is supported.
 - `Files will be automatically removed in` - Choose the number of days (30 maximum), hours or minutes after which you want your uploaded files to be automatically deleted.
 
 > [!primary]
