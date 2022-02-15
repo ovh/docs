@@ -10,14 +10,18 @@ order: 01
 
 ## Objectif
 
-L'offre [OVHcloud Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+L'[OVHcloud Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
 
 Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
 
 ## En pratique
  
-Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
+ ###  ## Qu’est-ce que le load balancing ? 
+ 
+Le load balancing, ou répartition de charge, est une technologie conçue pour distribuer la charge de travail entre différents serveurs ou applications. Le but : optimiser la performance globale de l’infrastructure, son rendement et sa capacité.
 
+### Les types de trafic gérés par le load balancer
+Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
 Il peut être utilisé pour fonctionner avec différents protocoles :
 
 |Type|Description|Avantages|Technologie|
