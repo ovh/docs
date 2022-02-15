@@ -1,6 +1,7 @@
 ---
 title: 'Gérer vos services VoIP'
 slug: changer-l-offre-et-les-options-d-une-ligne-voip
+excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
 legacy_guide_number: '7536704'
 space_key: CRTEL
 space_name: Téléphonie
@@ -8,7 +9,7 @@ section: Administratif
 order: 1
 ---
 
-**Dernière mise à jour le 27/01/2022**
+**Dernière mise à jour le 15/02/2022**
 
 ## Objectif
 
@@ -127,9 +128,9 @@ Toute demande de conversion sera prise en compte lors de votre prochaine factura
 Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](https://docs.ovh.com/fr/voip/commander-associer-ou-changer-un-telephone/#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
 Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](https://docs.ovh.com/fr/voip/securiser-ligne-sip/).
 
-### Résilier une ligne SIP
+### Résilier une ligne SIP / Trunk <a name="resilier-sip-trunk"></a>
 
-Pour résilier une ligne SIP OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}.
+Pour résilier une ligne **SIP** ou **Trunk** OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation de la ligne`{.action}.
 
 ![résiliation sip](images/resiliation-sip.png){.thumbnail}
 
@@ -142,7 +143,7 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 > Si un téléphone Plug And Phone est attaché à cette ligne, ce dernier ne fonctionnera plus et nous vous proposerons un retour de matériel.
 >
 
-### Résilier un numéro alias
+### Résilier un numéro alias <a name="resilier-alias"></a>
 
 Pour résilier un numéro alias, sélectionnez-le dans votre espace client OVHcloud puis, depuis l'onglet `Mon numéro`{.action}, cliquez sur `Résilier mon numéro`{.action}.
 
@@ -157,7 +158,7 @@ Toute demande de résiliation sera prise en compte lors de votre prochaine factu
 > Si le numéro fait partie d'un pool de numéros, sa résiliation entraînera la résiliation de l'ensemble du pool.
 >
 
-### Résilier une ligne Fax
+### Résilier une ligne Fax <a name="resilier-fax"></a>
 
 Pour résilier une ligne Fax OVHcloud, sélectionnez-la dans votre espace client OVHcloud puis, depuis l'onglet `Gestion`{.action}, cliquez sur `Résiliation du fax`{.action}.
 
