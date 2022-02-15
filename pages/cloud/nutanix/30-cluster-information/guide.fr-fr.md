@@ -6,7 +6,7 @@ section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 10/02/2022**
+**Dernière mise à jour le 15/02/2022**
 
 ## Objectif
 
@@ -113,7 +113,7 @@ Vous pouvez suivre l'exécution des tâches de vérification NCC en cliquant sur
 Une fois les vérifications terminées, le rapport NCC vous sera envoyé par e-mail, vous pourrez alors le transmettre à nos équipes, ainsi que les éléments préalablement récupérés ([version d'AOS](#aos-hypervisor) / [type d'Hyperviseur](#aos-hypervisor) / [numéro de série du Node](#node-sn)).
 
 > [!primary]
-> Vous pouvez utiliser l'interface [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre. Plus d'informations sur l'utilisation de Plik sur [ce guide](https://docs.ovh.com/ca/fr/customer/plik/).
+> Vous pouvez utiliser l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
 >
 
 ## Aller plus loin
