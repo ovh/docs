@@ -157,7 +157,7 @@ public $password = '0VhCloudPa55w0rdDB123';
 public $db = 'dbname123';
 ```
 
-- In the DRUPAL website configuration file, modify "**password**":
+- In the configuration file of a DRUPAL website, modify "**password**":
 
 ```php
 $databases['default']['default'] = array (
@@ -230,6 +230,6 @@ In the window that pops up, enter your database’s new password (defined in [st
 
 [Troubleshoot common database errors](https://docs.ovh.com/gb/en/hosting/database-frequent-errors/)
 
-For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.
