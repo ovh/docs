@@ -6,7 +6,7 @@ section: Gérer mes services et leur renouvellement
 order: 03
 ---
 
-**Dernière mise à jour le 14/02/2022**
+**Dernière mise à jour le 15/02/2022**
 
 Vous souhaitez résilier un ou plusieurs services OVHcloud. Ce guide vous indiquera comment interrompre votre abonnement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -228,13 +228,14 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 
 > [!warning]
 >
-> **Cas particulier** 
-> Si vous souhaitez résilier une offre [Pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/), nous vous invitons à créer une demande d'assistance auprès du support Telecom via votre espace client OVHcloud.
+> **Cas particulier**
+>
+> Si vous souhaitez résilier une offre [Pack SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/), il vous faut **impérativement** créer une demande d'assistance auprès des équipes Support via votre espace client OVHcloud.
 >
 
 #### VoIP <a name="voip"></a>
 
-Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-une-ligne-sip) ou [résilier un numéro alias](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-un-numero-alias).
+Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-sip-trunk) ou [résilier un numéro alias](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-alias).
 
 #### OverTheBox <a name="otb"></a>
 
@@ -248,9 +249,11 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 Il n'existe pas de procédure de résiliation concernant les [offres SMS](https://www.ovhtelecom.fr/sms/). Un compte SMS ne génère aucun abonnement mensuel ni facturation. Les crédits SMS ont une durée de vie illimitée.
 
+Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une demande d'assistance via votre espace client OVHcloud.
+
 #### FAX <a name="fax"></a>
 
-Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-une-ligne-fax).
+Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-fax).
 
 ## Comment annuler la résiliation de votre abonnement ? <a name="cancel"></a>
 
