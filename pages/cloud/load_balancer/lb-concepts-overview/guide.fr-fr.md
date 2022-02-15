@@ -21,7 +21,7 @@ Le load balancer reste particulièrement adapté au e-commerce, où des fluctuat
 
 ### Frontend
 
-Le front end définit le type de protocole (HTTP/TCP/UDP) du service OVH Load Balancer. C'est également la partie qui expose le port d'écoute du service.
+Le frontend définit le type de protocole (HTTP/TCP/UDP) du service OVH Load Balancer. C'est également la partie qui expose le port d'écoute du service.
 
 ### Farm 
 
@@ -30,6 +30,7 @@ La ferme reçoit le trafic provenant du front end, c'est la partie qui s'occupe 
 ### Server
 
 Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application.
+
 
 ## Aller plus loin
 
