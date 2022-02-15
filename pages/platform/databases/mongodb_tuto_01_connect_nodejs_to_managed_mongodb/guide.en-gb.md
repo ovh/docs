@@ -554,3 +554,9 @@ describe('get messages from particular user', () => {
   "random": true
 }
 ```
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
