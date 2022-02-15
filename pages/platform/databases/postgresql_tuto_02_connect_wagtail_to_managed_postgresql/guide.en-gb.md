@@ -153,7 +153,7 @@ DATABASES = {
 }
 ```
 
-The create the database :
+Then create the database :
 
 ```bash
 $ python manage.py migrate
