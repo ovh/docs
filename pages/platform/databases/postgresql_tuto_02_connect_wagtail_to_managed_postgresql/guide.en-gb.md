@@ -27,15 +27,13 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 > Wagtail supports Python 3.7, 3.8, 3.9 and 3.10.
 >  
 
-## Instructions
-
-### Configure your PostgreSQL instance to accept incoming connections
+## Configure your PostgreSQL instance to accept incoming connections
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
 
-#### Step 1: Verify your user roles and password
+### Step 1: Verify your user roles and password
 
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
 
@@ -62,7 +60,7 @@ Once created or updated, the user has to be ready and have the status "Enabled" 
 
 ![User ready](images/user_enabled.png){.thumbnail}
 
-#### Step 2: Authorize incoming connections from the PostgreSQL client
+### Step 2: Authorize incoming connections from the PostgreSQL client
 
 In this step, select the `Authorised IP's`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
@@ -82,6 +80,8 @@ Click to authorize a new IP, and enter the previously found IP of your Python en
 >
 > Before installing Wagtail, it is necessary to install the libjpeg and zlib libraries, which provide support for working with JPEG, PNG and GIF images (via the Python Pillow library).
 >
+
+## Instructions
 
 ### Create and activate a virtual environment
 
@@ -178,6 +178,10 @@ $ python manage.py runserver
 If everything worked, http://127.0.0.1:8000 will show you a welcome page:
 
 ![Wagtail welcome page](images/postgresql_tuto_02_connect_wagtail_to_managed_postgresql-2022021414341293.png){.thumbnail}
+
+You can now access the administrative area at http://127.0.0.1:8000/admin
+
+![Wagtail admin page](images/postgresql_tuto_02_connect_wagtail_to_managed_postgresql-20220215093836579.png)
 
 ### Cleaning up
 
