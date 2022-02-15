@@ -16,7 +16,7 @@ Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui corresponde
 
 ## En pratique
  
- ###  ## Qu’est-ce que le load balancing ? 
+ ### Qu’est-ce que le load balancing ? 
  
 Le load balancing, ou répartition de charge, est une technologie conçue pour distribuer la charge de travail entre différents serveurs ou applications. Le but : optimiser la performance globale de l’infrastructure, son rendement et sa capacité.
 
