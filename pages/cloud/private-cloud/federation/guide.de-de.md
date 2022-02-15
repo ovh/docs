@@ -20,7 +20,7 @@ This guide aims at explaining the details of implementing an Active Directory se
 - A [Hosted Private Cloud offer](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
 - An Active Directory service reachable from a public IP address and with a [valid SSL certificate on LDAPS service](https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/enable-ldap-over-ssl-3rd-certification-authority){.external}.
 - A user access on the associated Active Directory with at least read-only access (for LDAPS connection).
-- Access to the Private Cloud vSphere management interface.
+- Access to the Hosted Private Cloud vSphere management interface.
 
 ## Instructions
 

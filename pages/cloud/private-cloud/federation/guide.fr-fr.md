@@ -67,9 +67,9 @@ Ici, il s'agit de la valeur à droite du signe égal ( = ) :
 > SHA1 Fingerprint=BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
 ```
 
-### Autoriser la connexion au serveur Active Directory depuis votre Private Cloud
+### Autoriser la connexion au serveur Active Directory depuis votre Hosted Private Cloud
 
-Récupérez l'adresse IP de votre Private Cloud par la méthode de votre choix.
+Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre choix.
 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
@@ -95,7 +95,7 @@ Ici, il s'agit de la valeur à la fin de la ligne :
 > pcc-198-51-100-121.ovh.com has address 198.51.100.121
 ```
 
-Utilisez cette adresse IP pour autoriser votre Private Cloud à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
+Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
 
 Cette opération s'effectue dans la configuration du pare-feu de votre Active Directory ou de votre entreprise.
 
