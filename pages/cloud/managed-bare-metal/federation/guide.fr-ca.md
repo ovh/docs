@@ -1,6 +1,8 @@
 ---
 title: "Utilisation d'Active Directory comme source d'authentification (Federation)"
 slug: federation
+routes:
+    canonical: 'https://docs.ovh.com/fr/private-cloud/federation/'
 excerpt: "Découvrez comment utiliser votre serveur Active Directory comme source d'authentification pour vos utilisateurs vSphere"
 section: Fonctionnalités VMware vSphere
 ---
@@ -9,16 +11,16 @@ section: Fonctionnalités VMware vSphere
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en place d'un serveur Active Directory comme source d'authentification sur l'offre Hosted Private Cloud OVHcloud.
+Ce guide a pour objectif d'expliquer les détails de la mise en place d'un serveur Active Directory comme source d'authentification sur l'offre Managed Bare Metal OVHcloud.
 
 **Découvrez comment utiliser votre serveur Active Directory comme source d'authentification pour vos utilisateurs vSphere.**
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Avoir souscrit une offre [Managed Bare Metal](https://www.ovhcloud.com/fr-ca/managed-bare-metal/){.external}.
 - Disposer d'un serveur Active Directory acessible depuis une adresse IP publique et possédant un [certificat SSL valide pour le service LDAPS](https://docs.microsoft.com/fr-fr/troubleshoot/windows-server/identity/enable-ldap-over-ssl-3rd-certification-authority){.external}.
 - Disposer d'un accès utilisateur au domaine Active Directory associé, avec au minimum un accès en lecture seule (pour la connexion LDAPS).
-- Avoir accès à l’interface de gestion vSphere de votre Hosted Private Cloud.
+- Avoir accès à l’interface de gestion vSphere de votre Managed Bare Metal.
 
 ## En pratique
 
@@ -67,9 +69,9 @@ Ici, il s'agit de la valeur à droite du signe égal ( = ) :
 > SHA1 Fingerprint=BB:46:CA:6B:FC:92:4E:96:B4:BB:6E:44:7E:8F:AD:4C:C9:32:AB:AB
 ```
 
-### Autoriser la connexion au serveur Active Directory depuis votre Hosted Private Cloud
+### Autoriser la connexion au serveur Active Directory depuis votre Managed Bare Metal
 
-Récupérez l'adresse IP de votre Hosted Private Cloud par la méthode de votre choix.
+Récupérez l'adresse IP de votre Managed Bare Metal par la méthode de votre choix.
 
 Via cette commande sur le serveur Active Directory ou une machine Windows distante :
 
@@ -95,7 +97,7 @@ Ici, il s'agit de la valeur à la fin de la ligne :
 > pcc-198-51-100-121.ovh.com has address 198.51.100.121
 ```
 
-Utilisez cette adresse IP pour autoriser votre Hosted Private Cloud à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
+Utilisez cette adresse IP pour autoriser votre Managed Bare Metal à accèder à votre serveur LDAPS Active Directory (par défaut sur le port TCP 636).
 
 Cette opération s'effectue dans la configuration du pare-feu de votre Active Directory ou de votre entreprise.
 
@@ -129,7 +131,7 @@ Vous devrez spécifier les informations récupérées précédemment. Ne cochez 
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans l'onglet `Opérations`{.action} de votre Managed Bare Metal.
 
 > [!primary]
 >
@@ -137,9 +139,9 @@ Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la s
 >
 > ![Opération annulée](images/federation_canceled.png){.thumbnail}
 
-### Autoriser un utilisateur Active Directory à accéder à votre Hosted Private Cloud
+### Autoriser un utilisateur Active Directory à accéder à votre Managed Bare Metal
 
-Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Vous avez la possibilité d'autoriser un utilisateur issu de votre serveur Active Directory à accéder à votre Managed Bare Metal, grâce à l'API OVHcloud.
 
 Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
@@ -158,19 +160,19 @@ Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqu
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans l'onglet `Opérations`{.action} de votre Managed Bare Metal.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 
-Une fois autorisé, l'utilisateur et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
+Une fois autorisé, l'utilisateur et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Managed Bare Metal.
 
 > [!primary]
 >
-> Par défaut, l'utilisateur ne possède aucune permission sur votre Hosted Private Cloud. Il pourra se connecter à votre Hosted Private Cloud mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
+> Par défaut, l'utilisateur ne possède aucune permission sur votre Managed Bare Metal. Il pourra se connecter à votre Managed Bare Metal mais n'aura aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
-### Autoriser un groupe Active Directory à accéder à votre Hosted Private Cloud
+### Autoriser un groupe Active Directory à accéder à votre Managed Bare Metal
 
-Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Hosted Private Cloud, grâce à l'API OVHcloud.
+Vous avez la possibilité d'autoriser directement un ensemble d'utilisateurs (groupe) issu de votre serveur Active Directory à accéder à votre Managed Bare Metal, grâce à l'API OVHcloud.
 
 Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
@@ -190,14 +192,14 @@ Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué d
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
 
-Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Opérations`{.action} de votre Hosted Private Cloud.<br>
+Assurez-vous que l'opération renvoyée s'effectue sans erreur. Vous pouvez la suivre depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans l'onglet `Opérations`{.action} de votre Managed Bare Metal.<br>
 Si les informations fournies ne sont pas valides, l'opération concernée sera annulée et un message indiquera l'erreur renvoyée.
 
-Une fois autorisés, le groupe et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Hosted Private Cloud.
+Une fois autorisés, le groupe et ses permissions seront modifiables directement depuis votre espace client OVHcloud comme n'importe quel utilisateur de votre Managed Bare Metal.
 
 > [!primary]
 >
-> Par défaut, le groupe ne possède aucune permission sur votre Hosted Private Cloud. Ses membres pourront se connecter à votre Hosted Private Cloud mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
+> Par défaut, le groupe ne possède aucune permission sur votre Managed Bare Metal. Ses membres pourront se connecter à votre Managed Bare Metal mais n'auront aucun accès. Vous pouvez ajuster les permissions depuis l'espace client.
 >
 
 ## Aller plus loin
