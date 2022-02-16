@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated December 24, 2021.**
+**Last updated February 16, 2022.**
 
 ## Objective
 
@@ -56,6 +56,8 @@ If you already have an OVHcloud Kubernetes cluster with a node pool with `t1` fl
 
 > [!warning]
 >GPU Virtual machines are extremely powerful and significantly more expensive than general purpose nodes. If you are usually using OVHcloud Public Cloud at small scale and/or are a new user, you may need to [raise your Public Cloud quota](https://docs.ovh.com/au/en/public-cloud/increase-public-cloud-quota/) to enable access to those type of machines for your project. Also note that these machines are only available in some of our Public Cloud regions.
+>
+>Also note that while worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, our GPU worker nodes ready status can take up to a bit more than one hour.
 >
 
 ## Instructions
