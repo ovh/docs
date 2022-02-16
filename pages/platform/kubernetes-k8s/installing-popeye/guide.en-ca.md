@@ -31,21 +31,21 @@ section: Tutorials
 
 ## Objective
 
-[Popeye](https://github.com/derailed/popeye) is a tool that scans Kubernetes cluster and reports potential issues with deployed resources and configurations. 
+[Popeye](https://github.com/derailed/popeye) is a tool that scans Kubernetes clusters and reports potential issues with deployed resources and configurations. 
 
 ![Popeye](images/popeye.png)
 
 It sanitizes your cluster based on what is deployed. By scanning your cluster, it detects misconfigurations and helps you to ensure that best practices are in place, thus preventing future headaches. It aims at reducing the cognitive overload one faces when operating a Kubernetes cluster in the wild.
 
-Popeye also reports potential resources over/under allocations and attempts to warn you should your cluster run out of capacity.
+Popeye also reports potential resources over/under allocations and attempts to warn you about your cluster running out of capacity.
 
 Popeye scans your cluster for best practices and potential issues. Currently, Popeye looks at `nodes`, `namespaces`, `pods` and `services`.
 
-For information, Popeye is a read-only tool, it only retrieve informations in order to help you to securize and sanitize your cluster, it does not modify or delete resources on Kubernetes cluster.
+For your information, Popeye is a read-only tool, it only retrieves informations in order to help you to securize and sanitize your cluster, it does not modify or delete resources on a Kubernetes cluster.
 
 Read more about [Popeye](https://github.com/derailed/popeye).
 
-As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you discover Popeye which will help you secure your OVHcloud Managed Kubernetes with helpful reports.
+At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you discover Popeye which will help you secure your OVHcloud Managed Kubernetes with helpful reports.
 
 In this guide you will:
 
@@ -55,14 +55,13 @@ In this guide you will:
 
 You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
 
-
 ## Requirements
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.
 
 Moreover, follow the [deploying a Hello World application](../deploying-an-application/) documentation in order to have an example application running on your cluster.
 
-At this time you should have a running Kubernetes cluster with hello-world depoyment and pod like bellow:
+At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
 
 <pre class="console"><code>$ kubectl get po,deploy
 NAME                                          READY   STATUS    RESTARTS   AGE
@@ -84,7 +83,7 @@ For this tutorial you will install it via HomeBrew:
 brew install derailed/popeye/popeye
 ```
 
-You should have results like this:
+The output should be like this:
 
 <pre class="console"><code>$ brew install derailed/popeye/popeye
 Running `brew update --preinstall`...
@@ -130,11 +129,11 @@ Date:      2021-11-02T21:26:28Z
 Logs:      /var/folders/lq/xp6s4vbn13s5vj_kq3cch50w0000gn/T/popeye.log
 </code></pre>
 
-Popeye is correctly installed on your computer, you can know use it to see if your cluster matches with Kubernetes security best practices or not.
+Popeye is correctly installed on your computer, you can now use it to see if your cluster matches with Kubernetes security best practices.
 
 ### Generate Popeye reports
 
-The `popeye` CLI works like `kubectl` command so when you execute the CLI, it search your cluster configuration.
+The `popeye` CLI works like `kubectl` command. So when you execute the CLI, it searches your cluster configuration.
 
 To generate a report, simply execute the CLI:
 
@@ -146,11 +145,13 @@ This command run tests on all nodes and namespaces by default:
 
 ![Popeye Report](images/popeye-report.png)
 
-As you can see, by default our OVHcloud Managed Kubernetes cluster (and with an hello world application deployed) have a score equals to 83.
+As you can see, by default, our OVHcloud Managed Kubernetes cluster (and with an hello world application deployed) has a 83 score.
 
-It's a good score. Let's take a look on what you should improved or fixed.
+Though it's a good score, let's take a look on what you should be improved or fixed.
 
-The report can be very huge so in order to take  a look on what you should improved or fixed, a good practice is to run `popeye` command only on a specified namespace. It's better in order to improve and fix your cluster resources step by step.
+The report can be very big. So, in order to take  a look at what you should improve or fix, a good practice is to run `popeye` command only on a specified namespace.
+
+This way, you can better improve and fix your cluster resources step by step.
 
 As we deployed an hello world app in the `default` namespace, you can run `popeye` on the default namespace and generate a report only for `deployments`:
 
@@ -181,6 +182,7 @@ Your cluster score: 0 -- F
 </code></pre>
 
 In this report, you can see that the best practices to follow are:
+
 - use a tagged Docker image
 - set resources requests and limits
 - define containers port name
@@ -188,13 +190,13 @@ In this report, you can see that the best practices to follow are:
 There are 3 simple best practices to follow.
 Let's fix them.
 
-Copy the original `hello.yml` file (that you can foud in [deploying a Hello World application](../deploying-an-application/) guide) into a new one:
+Copy the original `hello.yml` file (that you can find in the [deploying a Hello World application](../deploying-an-application/) guide) into a new one:
 
 ```bash
 cp hello.yml hello-fixed.yml
 ```
 
-And then edit the new file `hello-fixed.yml` with the following content:
+Then edit the new file `hello-fixed.yml` with the following content:
 
 ```yaml
 apiVersion: v1
@@ -246,11 +248,11 @@ spec:
 
 In the deployment section of this YAML file, you will:
 
-- set the image tag equals to 1.0 (the specified version of the image you want to run on a container in the cluster)
+- set the image tag to 1.0 (the specified version of the image you want to run on a container in the cluster)
 - set resources requests and limits
-- set the port name equals to "http"
+- set the port name to "http"
 
-Apply the new Kubernetes manifest
+Apply the new Kubernetes manifest:
 
 ```
 kubectl apply -f hello-fixed.yml -n default
@@ -264,7 +266,7 @@ service/hello-world unchanged
 deployment.apps/hello-world-deployment configured
 </code></pre>
 
-You can generate again a report and check if the warning messages disapear and the score increase with `popeye` command:
+You can generate a new report and check if the warning messages disapear and if the score increases with the `popeye` command:
 
 ```bash
 popeye -n default -s deploy
@@ -305,10 +307,6 @@ This will save the report in your working directory:
 $ popeye --save
 /var/folders/lq/xp6s4vbn13s5vj_kq3cch50w0000gn/T/popeye/sanitizer_my-test-cluster2_1644586682462302000.txt
 </code></pre>
-
-### What's next?
-
-In this guide we explained to you how to generate report that help you to find common troubles in your resources in order to sanitize your Kubernetes cluster. The next step on your side will be to fix warning and error messages step by step and to continue to securize your cluster through our tutorials.
 
 ## Go further
 
