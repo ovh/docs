@@ -6,6 +6,8 @@ section: Clients So you Start & Kimsufi
 order: 1
 ---
 
+**Dernière mise à jour le xx/xx/xxxx**
+
 ## Objective
 
 OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi et So you Start dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner durant cette migration, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
