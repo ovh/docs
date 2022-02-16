@@ -48,7 +48,7 @@ Kimsufi             | So you Start | OVHcloud
 
 **Informations générales** : Dans cette section, vous avez toutes les informations concernant votre serveur.
 - Nom : Cliquez sur les `...`{.action} à côté de cette option pour modifier le nom de votre serveur.
-- Boot : Cliquez sur les `...`{.action} à côté de cette option pour changer le netboot de votre serveur en "mode rescue, mode normal ou mode réseau"
+- Boot : Cliquez sur les `...`{.action} à côté de cette option pour changer le netboot de votre serveur en "mode rescue, mode normal ( sur le disque dur) ou mode network"
 - Système (OS) : Cliquez sur les `...`{.action} à côté de cette option pour installer/réinstaller votre serveur.
 
 **Etat des services**
