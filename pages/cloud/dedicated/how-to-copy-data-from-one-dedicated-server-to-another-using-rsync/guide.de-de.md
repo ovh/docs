@@ -11,11 +11,11 @@ Bei einer Migration oder einem Sichern kann es erforderlich werden, Daten von ei
 
 Rsync (für Fernsynchronisierung) wird unter der GNU GPL vertrieben und ist ein freies Programm zur Dateiensynchronisierung. Es ist in der Lage, eine Synchronisierung in eine Richtung vorzunehmen, d.h. Dateien vom Quellserver auf den Zielserver zu kopieren. 
 
-**Diese Anleitung wird Ihnen demonstrieren, wie Dateien mit rsync von einem dedizierten OVH Server auf einen anderen kopiert werden.**
+**Diese Anleitung wird Ihnen demonstrieren, wie Dateien mit rsync von einem dedizierten OVHcloud Server auf einen anderen kopiert werden.**
 
 > [!warning]
 >
-In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVH Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVH Community unter <https://community.ovh.com/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -30,7 +30,7 @@ In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVH Lösu
 
 ### Sie benötigen:
 
-*     Sie haben mindestens zwei dedizierte OVH Server, die mit GNU/Linux laufen.
+*     Sie haben mindestens zwei dedizierte OVHcloud Server, die mit GNU/Linux laufen.
 *     Sie haben Zugang zu*root* auf dem Quellapparat.
 *     Sie haben *SSH* Zugang auf dem Zielapparat.
 
