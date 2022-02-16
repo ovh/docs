@@ -1,14 +1,14 @@
 ---
-title: Se familiariser avec l'espace client OVHcloud en tant que clients Kimsufi et Soyoustart
+title: Se familiariser avec l'espace client OVHcloud en tant que clients Kimsufi et So you start
 excerpt: Apprenez à naviguer à travers l'interface client OVHcloud
-slug: se-familiariser-avec-espace-client-ovhcloud
-section: Soyoustart and Kimsufi clients
+slug: se-familiariser-avec-lespace-client-ovhcloud
+section: Clients So you Start & Kimsufi
 order: 1
 ---
 
 ## Objective
 
-OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi et SoyouStart dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner durant cette migration, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
+OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi et So you Start dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner durant cette migration, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
 
 **Ce guide est destiné à vous aidez à vous familiariser avec l'espace client OVHcloud**
 
@@ -23,7 +23,7 @@ OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi e
 :-------------------------:|:-------------------------:|:---------------------:
 <img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/Ovhclouddashboard.png" width="500"/>
 
-Le tableau de bord OVHcloud présente un récapitulatif de tous vos services. Cette platforme présente des sections qui vous permettent d'accéder instantanément à un service.
+Le tableau de bord OVHcloud présente un récapitulatif de tous vos services. Cette interface présente plusieurs sections, qui vous permettent d'accéder instantanément à un service.
 La colonne de droite vous donne accès à certaines informations personnelles comme votre nom, votre adresse e-mail ainsi que votre identifiant client et votre niveau de support (le cas échéant). Elle propose également un certain nombre de raccourcis et de liens utiles.
 
 
@@ -37,7 +37,7 @@ Kimsufi             | So you Start | OVHcloud
 
 **Accéder au serveurs**
 
-Kimsufi             | Soyoustart | OVHcloud
+Kimsufi             | So you Start | OVHcloud
 :-------------------------:|:-------------------------:|:---------------------:
 <img src="images/listserversKimsufi.png" width="500"/>  | <img src="images/listserversSoyoustart.png" width="500"/> | <img src="images/listserversOVHcloud.png" width="600"/>
 
@@ -78,3 +78,15 @@ Kimsufi             | So you Start | OVHcloud
 :-------------------------:|:-------------------------:|:---------------------:
 Licences are not offered for this range.  | <img src="images/managelicencesSoyoustart.png" width="700"/> | <img src="images/managelicencesOVHcloud.png" width="700"/>
 
+
+## Aller plus loin
+
+Dans la pratique, voici quelques guides qui vous aideront au démarrage :
+
+[Se connecter à l’espace client OVHcloud](https://docs.ovh.com/fr/customer/se-connecter-espace-client-ovhcloud/)<br>
+[Modifier le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).<br>
+[Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).<br>
+[Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/).<br>
+[Utilisation de l’IPMI pour les serveurs dédiés](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/).
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
