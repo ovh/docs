@@ -5,7 +5,7 @@ excerpt: Découvrez comment demander la résiliation de votre accès Internet
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 21/05/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -25,17 +25,18 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 
 ### Demander la résiliation
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`, puis sélectionnez votre pack dans le menu  `Accès Internet`.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Télécom`, puis sélectionnez votre pack dans le menu `Accès Internet`.
 <br>Cliquez alors sur le bouton `Résilier`{.action} dans le cadre « Informations Générales ».
 
-![Resiliation acces](images/Resiliation01-edit.png){.thumbnail}
+![Resiliation acces](images/Resiliation01-edit-2022.png){.thumbnail}
 
 Si vous êtes toujours engagé pour cet accès, le montant des frais de résiliation sera indiqué dans la rubrique « Restant à payer ».
 <br>Choisissez la date souhaitée pour cette résiliation ainsi que la raison de cette dernière.
 
-![Raison resiliation](images/Resiliation02-edit.png){.thumbnail}
+![Raison resiliation](images/Resiliation02-edit-2022.png){.thumbnail}
 
 Il vous sera alors possible de demander à conserver certains services liés à votre pack (s'ils ont été auparavant activés) tels que :
+
 - lignes VoIP/Fax
 - numéro(s) porté(s)
 - compte Exchange (si pack xDSL Entreprise)
@@ -43,7 +44,7 @@ Il vous sera alors possible de demander à conserver certains services liés à 
 
 Pour cela, il vous suffit de cocher les cases correspondants aux services que vous souhaitez conserver.
 
-![Conservation service](images/Resiliation03-edit.png){.thumbnail}
+![Conservation service](images/Resiliation03-edit-2022.png){.thumbnail}
 
 Une fois vos choix effectués, cliquez sur le bouton `Résilier`{.action} en bas de page.
 
@@ -60,11 +61,11 @@ Connectez-vous à votre [Espace Client OVHcloud](https://www.ovh.com/auth/?actio
 
 <br>Dans le cadre « Informations Générales », cliquez sur le bouton `Annuler`{.action} à droite de la date de résiliation.
 
-![Annulation resiliation](images/Resiliation05-edit.png){.thumbnail}
+![Annulation resiliation](images/Resiliation05-edit-2022.png){.thumbnail}
 
 <br>Afin de valider cette annulation, cliquez sur le bouton `Annuler la résiliation en cours`{.action}.
 
-![Annulation resiliation](images/Resiliation06-edit.png){.thumbnail}
+![Annulation resiliation](images/Resiliation06-edit-2022.png){.thumbnail}
 
 Vous recevrez un e-mail vous confirmant la prise en compte de l'annulation de la résiliation.
 
