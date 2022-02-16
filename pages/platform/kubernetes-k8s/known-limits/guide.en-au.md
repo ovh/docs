@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 31<sup>st</sup> January 2021.**
+**Last updated 16<sup>th</sup> February 2022.**
 
 <style>
  pre {
@@ -42,6 +42,8 @@ In general, it is better to have several mid-size Kubernetes clusters than a mon
 
 To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable.  
 Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
+
+Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
