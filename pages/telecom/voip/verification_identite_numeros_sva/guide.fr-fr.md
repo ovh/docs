@@ -84,7 +84,7 @@ Cliquez sur `Sélectionner un fichier`{.action}, sélectionnez le document corre
 > Veillez à bien sélectionner, via le menu déroulant prévu à cet effet, le type de pièce d'identité que vous souhaitez ajouter **avant** de la téléverser.
 >
 
-![ajout des documents](images/sva-documents.png){.thumbnail}
+![ajout des documents](images/sva-documents-v2.png){.thumbnail}
 
 Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`{.action}.
 
