@@ -18,6 +18,7 @@ Currently the service is available in several regions:
 
 - GRA (Western Europe)
 - SBG (Central Europe)
+- DE1 (Central Europe)
 - WAW (Eastern Europe)
 - BHS (North America)
 - SGP (South-East Asia)
