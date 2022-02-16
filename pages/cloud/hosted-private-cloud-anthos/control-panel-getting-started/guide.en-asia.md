@@ -6,7 +6,7 @@ section: Getting started
 order: 2
 ---
 
-**Last updated 8th October 2021**
+**Last updated 16th Febuary 2022**
 
 ## Objective
 
@@ -14,11 +14,11 @@ order: 2
 
 ## Requirements
 
-- a [Hosted Private Cloud powered by Anthos service](https://www.ovhcloud.com/asia/hosted-private-cloud/anthos/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Hosted Private Cloud powered by Anthos service](https://www.ovhcloud.com/asia/hosted-private-cloud/anthos/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 > [!primary]
-> Be sure to consider the capabilities of the service as well as the known limitations during the launch phase, as detailed on [this page](../technical-capabilities/).
+> Be sure to consider the capabilities and known limitations of the service detailed on [this page](../technical-capabilities/).
 >
 
 ## Instructions
@@ -40,12 +40,31 @@ The section `Resources`{.action} shows in brief the number of hosts, the Dedicat
 
 ![Control Panel](images/anthos_cp03.png){.thumbnail}
 
+#### Upgrading the subscription <a name="upgrade"></a>
+
+To upgrade your Hosted Private Cloud powered by Anthos pack, click on `...`{.action} next to **Pack** in the `Resources`{.action} section and select the pack to switch to. This will start the order process for your upgrade.
+
+![Control Panel](images/anthos_upgrade.png){.thumbnail}
+
+#### Software updates
+
+In the `General information`{.action} section, a notification appears under **Software solution** when Anthos on Bare Metal in private mode updates are available. Click on `View available updates`{.action} to open the update page.
+
+![Control Panel](images/anthos_update1.png){.thumbnail}
+
+You can read the release notes for each Anthos software update if you click on the link `View the changelog`{.action}. Select the version to update your service to and confirm by clicking on `Updating`{.action}.
+
+![Control Panel](images/anthos_update2.png){.thumbnail}
+
 ### Creating and managing bare metal nodes (Host) <a name="hosts"></a>
 
 Expand the top table on this page to see the **included hosts** of the Hosted Private Cloud powered by Anthos pack. A second table will contain **additional hosts** that can be ordered separately.
-<br>You can start the order process by clicking on the button `Order a host`{.action}. Additional hosts have a minimum renewal period of one month. A discount will be granted on orders with longer commitments.
 
 ![Control Panel](images/anthos_cp04.png){.thumbnail}
+
+You can start the order process by clicking on the button `Order a host`{.action}. Additional hosts have a minimum renewal period of one month. A discount will be granted on orders with longer commitments.
+
+![Control Panel](images/anthos_add_host.png){.thumbnail}
 
 #### Rebooting a host
 
@@ -86,7 +105,7 @@ In the popup window, take note of the information about the cancellation process
 ### Creating and managing NetApp SVMs (Storage) <a name="netapp"></a>
 
 > [!primary]
-> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/asia/hosted-private-cloud/anthos/). It will be possible to upgrade a Hosted Private Cloud powered by Anthos deployment.
+> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/en-gb/hosted-private-cloud/anthos/). It is possible to upgrade a Hosted Private Cloud powered by Anthos deployment in the [General information tab](#upgrade).
 >
 
 The Dedicated NetApp storage is powered by NetApp ONTAP and features Trident, enabling your applications to efficiently make use of persistent storage via the Kubernetes Container Storage Interface (CSI) standard (creating and modifiying volumes, taking snapshots, etc.).
@@ -107,12 +126,17 @@ On the `IPs`{.action} tab you can define local IPv4 ranges for your service and 
 
 The included range of 50 **public IPv4 addresses** is displayed on the left-hand side. You can order more public IP addresses via the left-hand `Actions`{.action} button. Click on `Order public IPs`{.action} to start the order process.
 
+Choose the number of IP blocks to order and click on `Confirm`{.action}.
+
+![Control Panel](images/anthos_add_ip.png){.thumbnail}
+
 #### Local IP ranges
 
 You can use **private IP addresses** freely but the ranges have to be declared in the OVHcloud Control Panel in order to be available for the service. The right-hand section will list your private IP addresses after adding them. To do this, click on the right-hand `Actions`{.action} button and then on `Assign private IPs`{.action}.
-<br>Afterwards you can assign the IP addresses in the Anthos console.
 
 ![Control Panel](images/anthos_cp11.png){.thumbnail}
+
+Afterwards you can assign the IP addresses in the [Anthos console](#firststeps).
 
 To delete an entry, use the respective `Delete`{.action} button in the table. Only IP addresses that are not assigned in the Anthos console can be removed (status `Disabled` in the table).
 
