@@ -6,7 +6,7 @@ section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 15/02/2022**
+**Dernière mise à jour le 17/02/2022**
 
 ## Objectif
 
@@ -23,33 +23,31 @@ Afin d'optimiser le traitement de vos demandes d'assistance sur l'offre Nutanix,
 
 Nous vous recommandons de récupérer **toutes les informations** détaillées dans ce guide avant de contacter le support OVHcloud.
 
-### Informations sur l'AOS et l'Hyperviseur <a name="aos-hypervisor"></a>
+### Informations sur l'AOS <a name="aos"></a>
 
 Connectez-vous à Prism Central, ouvrez le menu principal en haut à gauche et cliquez sur `Hardware`{.action} puis `Clusters`{.action}.
 
 ![AOS - Hypervisor](images/hardware-clusters.png){.thumbnail}
 
-Cliquez sur l'onglet `List`{.action} et prenez note, pour le cluster concerné, de la version AOS et du type d'Hyperviseur.
+Cliquez sur l'onglet `List`{.action} et prenez note, pour le cluster concerné, de la **version AOS** (*AOS Version*).
 
-![AOS - Hypervisor](images/aos-hypervisor.png){.thumbnail}
+![AOS - Hypervisor](images/aos.png){.thumbnail}
 
-Le type d'Hyperviseur peut être une de ces valeurs :
+### Informations sur l'hyperviseur <a name="hypervisor"></a>
 
-* AHV
-* ESXi
-* Hyper-V
-* KVM
-* Xenserver
-* NA - No Hypervisor provided
+Ouvrez à présent de nouveau le menu principal et cliquez sur `Hardware`{.action} puis `Hosts`{.action}.<br>
+Sélectionnez un hôte dans la liste de ceux appartenant à votre cluster.
+
+![AOS - Hypervisor](images/hypervisor01.png){.thumbnail}
+
+Prenez note du **type d'hyperviseur** (*Hypervisor*) de la **version de l'hyperviseur** (*Hypervisor Version*).<br>
+Dans l'exemple ci-dessous, le type d'hyperviseur est « AHV » et la version de l'hyperviseur est « 20201105.1161 ».
+
+![AOS - Hypervisor](images/hypervisor02.png){.thumbnail}
 
 ### Numéro de série du Node <a name="node-sn"></a>
 
-Connectez-vous à Prism Central, ouvrez le menu en haut à gauche et cliquez sur `Hardware`{.action} puis `Hosts`{.action}.
-
-![Node Serial Number](images/serial01.png){.thumbnail}
-
-La liste de vos hosts apparaît alors, cliquez sur le host concerné pour visualiser ses détails.
-<br>Prenez note du numéro de série du Node (*Node Serial*).
+Depuis le même onglet de résumé de l'hôte, prenez note du numéro de série du Node (*Node Serial*).
 
 ![Node Serial Number](images/serial02.png){.thumbnail}
 
@@ -70,7 +68,43 @@ Sélectionnez le cluster concerné pour accéder à ses détails.
 
 L'interface de gestion de votre cluster, Prism Element, s'ouvre alors.
 
-#### Activer les notifications par e-mail
+#### Générer les vérifications NCC
+
+Depuis l'interface Prism Element, ouvrez le menu déroulant en haut à gauche puis cliquez sur `Health`{.action}.
+
+![Nutanix Cluster Check](images/ncc02.png){.thumbnail}
+
+A droite de la fenêtre, cliquez maintenant sur `Actions`{.action} puis `Run NCC checks`{.action}.
+
+![Nutanix Cluster Check](images/ncc03.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, cochez les cases « All Checks » et « Send the cluster check report in the email » (uniquement si vous souhaitez [recevoir le rapport par e-mail](#email)) puis cliquez sur `Run`{.action}.
+
+![Nutanix Cluster Check](images/ncc04.png){.thumbnail}
+
+Vous pouvez suivre l'exécution des tâches de vérification NCC en cliquant sur `Tasks`{.action} depuis le menu déroulant de l'interface Prism Element, ou en cliquant sur l'icône bleue des tâches en cours puis sur `View all tasks`{.action}.
+
+![Nutanix Cluster Check](images/ncc05.png){.thumbnail}
+
+Une fois la vérification terminée, cliquez sur `Succeeded`{.action} dans la colonne « Status ». 
+
+![Nutanix Cluster Check](images/ncc06.png){.thumbnail}
+
+Vous pouvez alors télécharger le rapport NCC au format .txt en cliquant sur `Download output`{.action}.
+
+![Nutanix Cluster Check](images/ncc07.png){.thumbnail}
+
+Une fois le rapport téléchargé, vous pourrez alors le transmettre à nos équipes, ainsi que les éléments préalablement récupérés :
+
+- [version d'AOS](#aos);
+- [type et version de l'Hyperviseur](#hypervisor);
+- [numéro de série du Node](#node-sn)).
+
+> [!primary]
+> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre sous la forme d'un lien de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
+>
+
+#### Recevoir le rapport NCC par e-mail <a name="email"></a>
 
 Afin de recevoir le rapport NCC par e-mail, il est nécessaire d'avoir renseigné au préalable un serveur SMTP ainsi qu'au moins une adresse e-mail pour qu'elle soit notifiée des alertes et rapports d'activité.
 
@@ -93,28 +127,6 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 ![Nutanix Cluster Check - email](images/email.png){.thumbnail}
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
-
-#### Générer les vérifications NCC
-
-Depuis l'interface Prism Element, ouvrez le menu déroulant en haut à gauche puis cliquez sur `Health`{.action}.
-
-![Nutanix Cluster Check](images/ncc02.png){.thumbnail}
-
-A droite de la fenêtre, cliquez maintenant sur `Actions`{.action} puis `Run NCC checks`{.action}.
-
-![Nutanix Cluster Check](images/ncc03.png){.thumbnail}
-
-Dans la fenêtre qui apparaît, cochez les cases « All Checks » et « Send the cluster check report in the email » puis cliquez sur `Run`{.action}.
-
-![Nutanix Cluster Check](images/ncc04.png){.thumbnail}
-
-Vous pouvez suivre l'exécution des tâches de vérification NCC en cliquant sur `Tasks`{.action} depuis le menu déroulant de l'interface Prism Element.
-
-Une fois les vérifications terminées, le rapport NCC vous sera envoyé par e-mail, vous pourrez alors le transmettre à nos équipes, ainsi que les éléments préalablement récupérés ([version d'AOS](#aos-hypervisor) / [type d'Hyperviseur](#aos-hypervisor) / [numéro de série du Node](#node-sn)).
-
-> [!primary]
-> Vous pouvez utiliser l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser votre rapport et nous le transmettre. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
->
 
 ## Aller plus loin
 
