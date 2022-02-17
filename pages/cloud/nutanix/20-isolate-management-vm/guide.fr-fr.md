@@ -2,7 +2,7 @@
 title: Isoler les machines de gestion de la production
 slug: nutanix-isolate-management-machines
 excerpt: Découvrez comment isoler les machines de gestion de la production
-section: Utilisation avancée
+section: Nouvelle catégorie
 order: 01
 ---
 
