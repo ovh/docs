@@ -1,6 +1,6 @@
 ---
 title: Encrypt your Secret for OVHcloud Managed Kubernetes with Sealed Secrets (Kubeseal)
-slug: encrypt-secret-with-kubeseal
+slug: encrypt-secret-with-sealed-secrets-kubeseal
 excerpt: Find out how to secure your Kubernetes secrets in an OVHcloud Managed Kubernetes, encrypt your Secret with Sealed Secrets (Kubeseal)
 section: Security tutorials
 order: 2
