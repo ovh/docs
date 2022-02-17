@@ -105,7 +105,7 @@ In the popup window, take note of the information about the cancellation process
 ### Creating and managing NetApp SVMs (Storage) <a name="netapp"></a>
 
 > [!primary]
-> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/en-gb/hosted-private-cloud/anthos/). It is possible to upgrade a Hosted Private Cloud powered by Anthos deployment in the [General information tab](#upgrade).
+> Dedicated NetApp storage is only available with the [Stateful Production Pack](https://www.ovhcloud.com/asia/hosted-private-cloud/anthos/). It is possible to upgrade a Hosted Private Cloud powered by Anthos deployment in the [General information tab](#upgrade).
 >
 
 The Dedicated NetApp storage is powered by NetApp ONTAP and features Trident, enabling your applications to efficiently make use of persistent storage via the Kubernetes Container Storage Interface (CSI) standard (creating and modifiying volumes, taking snapshots, etc.).
