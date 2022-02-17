@@ -2,7 +2,7 @@
 title: "Modifier le vRack d'un cluster Nutanix"
 slug: nutanix-change-vrack
 excerpt: "Découvrez comment modifier le vRack d'un cluster Nutanix"
-section: Réseau et sécurité
+section: Une autre catégorie
 order: 02
 ---
 
