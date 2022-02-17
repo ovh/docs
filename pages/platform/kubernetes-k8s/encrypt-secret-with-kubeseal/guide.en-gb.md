@@ -2,10 +2,11 @@
 title: Encrypt and store in Git your Secret for OVHcloud Managed Kubernetes with Sealed Secrets (Kubeseal) 
 slug: encrypt-secret-with-kubeseal
 excerpt: Find out how to secure your Kubernetes secrets in an OVHcloud Managed Kubernetes, encrypt and store in Git your Secret with Sealed Secrets (Kubeseal)
-section: Tutorials
+section: Security tutorials
+order: 2
 ---
 
-**Last updated 16th February 2022.**
+**Last updated 17th February 2022.**
 
 <style>
  pre {
@@ -31,25 +32,27 @@ section: Tutorials
 
 ## Objective
 
-When you want to store your Kubernetes resources, as YAML manifest, the common way is to store/keep them in a Git repository. Thanks to that you can also create, edit and delete automatically with Infrastructure as Code and CI/CD your Kubernetes clusters and resources. In the Kubernetes world when we want to handle sensitive data, the usage is to store it in a Secret in a Kubernetes cluster. But the problem is that you can't store a Secret in a Version Control tool because the Secret is not encrypted, it's a question of security.
+When you want to store your Kubernetes resources, as YAML manifest, the common way is to store/keep them in a Git repository. Thanks to that you can also create, edit and delete automatically with Infrastructure as Code and CI/CD your Kubernetes clusters and resources.
 
-As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you to discover Kubeseal which will help you to encrypt your sensitive informations and deploy them easily in your OVHcloud Managed Kubernetes.
+In the Kubernetes world when we want to handle sensitive data, the usage is to store it in a Secret in a Kubernetes cluster. But the problem is that you can't store a Secret in a Version Control because the Secret is not encrypted, it's a question of security.
+
+As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you to discover Sealed Secrets and `kubeseal` CLI which will help you to encrypt your sensitive informations and deploy them easily in your OVHcloud Managed Kubernetes.
 
 In this guide you will:
 
-- Install Kubeseal
-- TODO: xxx
-- TODO: xxx
+- Install Kubeseal CLI
+- Deploy Sealed Secrets in your OVHcloud Managed Kubernetes
+- Generate and deploy a SealedSecret
 
 You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
 
 ## Kubernetes Secrets
 
-As we said, Secrets in Kubernetes are used to store sensitive data, like password, keys, certificates and token. Secrets are encoded in base64 and automatically decoded when they are attached and read by a Pod.
+[Secrets in Kubernetes](https://kubernetes.io/fr/docs/concepts/configuration/secret/) are used to store sensitive data, like password, keys, certificates and token. Secrets are encoded in base64 and automatically decoded when they are attached and read by a Pod.
 
 A secret in Kubernetes cluster is encoded in base64 but not encrypted!
 
-Theses data are "only" encoded so if a user have access to your secrets, he can simply `base64 decode` to see your sensitive data (`kubectl get secret my-secret -o jsonpath="{.data.password}" | base64 -D` for Mac and `--decode` instead of `-D` for Linux platform).
+Theses data are "only" encoded so if a user have access to your secrets, he can simply execute a `base64 decode` command to see your sensitive data (`kubectl get secret my-secret -o jsonpath="{.data.password}" | base64 --decode`).
 
 As the secrets aren't encrypted, it can be unsecure to commit them to your Git repository.
 
@@ -59,15 +62,19 @@ A solution is to use [Sealed Secrets](https://github.com/bitnami-labs/sealed-sec
 
 TODO: kubeseal logo?
 
-Read more about [Sealed Secrets](https://engineering.bitnami.com/articles/sealed-secrets.html).
-
 How is it working?
 
 ![Kubeseal SealedSecret schema](images/kubeseal-schema.jpeg)
 
-As you can see in the schema, a `sealed-secret-controller` run in the Kubernetes cluster. He listens when a new `SealedSecret` object appears, unsealed it (thanks to known certificates) and create a Kubernetes secret in the same namespace as the SealedSecret.
+As you can see in the schema, a `sealed-secrets-controller` run in the Kubernetes cluster. He listens when a new `SealedSecret` object appears, unsealed it (thanks to known certificates) and create a Kubernetes secret in the same namespace as the SealedSecret.
 
-Note that if you delete the SealedSecret in your cluster, the linked Secret will be deleted too.
+Note that if you delete the SealedSecret in your cluster, the generated Secret will be deleted too.
+
+SealedSecrets are a straightforward application of asymmetric (public key) cryptography. Public key cryptography involves a tightly-linked pair of keys (called "public" and "private"), and anything encrypted with one can only be decrypted by the other.
+
+`SealedSecrets` and the `kubeseal` tool are designed to easily fit into automated workflows. Once converted into a SealedSecret, not even the original user will be able to retrieve the original Secret. `kubeseal` can also be run offline, without access to the cluster - it just needs a copy of the public key available on disk somewhere.
+
+Read more about [Sealed Secrets](https://engineering.bitnami.com/articles/sealed-secrets.html).
 
 ## Requirements
 
@@ -75,11 +82,11 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ## Instructions
 
-### Install Sealed Secret CLI
+### Install kubeseal CLI
 
-The `kubeseal` utility uses asymmetric crypto to encrypt secrets that only the controller can decrypt.
+The `kubeseal` utility uses asymmetric cryptography to encrypt secrets that only the controller can decrypt.
 
-With kubeseal CLI you can also specify a key certificate for sealing secrets.
+With kubeseal CLI you can specify a key certificate for sealing secrets.
 
 In order to install the CLI, [follow the instructions](https://github.com/bitnami-labs/sealed-secrets#installation) depending on your OS.
 
@@ -140,7 +147,7 @@ Update Complete. ⎈Happy Helming!⎈
 Install the latest version of Sealed Secrets with `helm install` command:
 
 ```bash
-helm install sealed-secrets-controller --namespace kube-system sealed-secrets/sealed-secrets
+helm install sealed-secrets-controller sealed-secrets/sealed-secrets --namespace kube-system 
 ```
 
 > [!primary]
@@ -149,7 +156,7 @@ helm install sealed-secrets-controller --namespace kube-system sealed-secrets/se
 
 This command will install the latest version of Sealed Secrets:
 
-<pre class="console"><code>$ helm install sealed-secrets-controller --namespace kube-system sealed-secrets/sealed-secrets
+<pre class="console"><code>$ helm install sealed-secrets-controller sealed-secrets/sealed-secrets --namespace kube-system
 NAME: sealed-secrets-controller
 LAST DEPLOYED: Wed Feb 16 14:59:42 2022
 NAMESPACE: kube-system
@@ -206,14 +213,12 @@ Once you deploy the Hem chart, it will:
 - create a `sealed-secrets-controller` service account into `kube-system` namespace
 - and necessary RBAC roles.
 
-You can check if the Sealed Secrets controller pod is correctly running:
+You can check if the `ealed-secrets-controller` pod is correctly running:
 
 <pre class="console"><code>$ kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets
 NAME                                         READY   STATUS    RESTARTS   AGE
 sealed-secrets-controller-5fb95c87fd-pnvmk   1/1     Running   0          2m43s
 </code></pre>
-
-When the controller starts it will generate a key pair.
 
 ### Retrieves the generated keypair
 
@@ -322,28 +327,67 @@ spec:
       namespace: my-namespace
 </code></pre>
 
-TODO: my-namespace il faut le créer avant ...
+Create the new namespace `my-namespace` and apply the SealedSecret resource inside:
 
-TODO: Deploy SealedSecret in the cluster
+```bash
+kubectl create ns my-namespace
+kubectl apply -f mysealedtoken.yaml -n my-namespace
+```
+
+The output should look like this:
+
+<pre class="console"><code>$ kubectl create ns my-namespace
+kubectl apply -f mycleanedsealedtoken.yaml -n my-namespace
+
 $ kubectl apply -f mysealedtoken.yaml -n my-namespace
+sealedsecret.bitnami.com/my-token created
+</code></pre>
 
-TODO: Check in your cluster
-You can check/verify in your Kubernetes cluster if the SealedSecret and Secret have been correctly deployed:
-$ kubectl get sealedsecret -n my-namespace
-NAME           TYPE       DATA    AGE
-my-token      Opaque       1      4d
+> [!primary]
+>
+> Be careful, the `SealedSecret` and `Secret` resources must have the same namespace and name. This is a feature to prevent other users on the same cluster from re-using your sealed secrets.
+
+After the `SealedSecret` creation, the `sealed-secrets-controller` have created automatically a Kubernetes Secret.
+
+You can check their existance with the following command:
+
+```bash
+kubectl get sealedsecret -n my-namespace
+
+kubectl get secret -n my-namespace
+```
+
+<pre class="console"><code>$ kubectl get sealedsecret -n my-namespace
+NAME       AGE
+my-token   89s
 
 $ kubectl get secret -n my-namespace
-NAME          AGE
-my-token    4d
-Ok, my Secret have been successfully created by the controller! :-)
+NAME                  TYPE                                  DATA   AGE
+my-token              Opaque                                1      93s
+</code></pre>
 
-TODO: primary Be careful, the SealedSecret and Secret resources must have the same namespace and name. This is a feature to prevent other users on the same cluster from re-using your sealed secrets.
+If you already installed `view-secret` kubectl plugin, you can also check if the generated Secret contains the good token you sealed:
 
-TODO: xxx
+```bash
+kubectl view-secret my-token -n my-namespace
+```
 
+You should obtain the following output:
 
+<pre class="console"><code>$ kubectl view-secret my-token -n my-namespace
+Choosing key: my_token
+123456789abc123def456ghi789%
+</code></pre>
 
+### Debugging / Troubleshooting
+
+It may happens some issues can appear, if you don't understand why a Secret is never created after a SealedSecret creation, one of the common issue is you probably sealed the secret with another certificate than the ones the controller know.
+
+In order to debug/troubleshoot the behavior of the `sealed-secrets-controller`, you can watch its logs:
+
+```bash
+kubectl logs sealed-secrets-controller-<podID> -n kube-system
+```
 
 ### What's next?
 
@@ -360,16 +404,16 @@ Next time we will see another tutorial that will help you to secure your OVHclou
 
 ## Cleanup
 
-First, remove the `ClusterPolicies` you deployed in this guide:
+First, remove the namespace `my-namspace` you created in this guide:
 
 ```bash
-kubectl delete cpol --all
+kubectl delete ns my-namespace
 ```
 
-To uninstall Kyverno, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Kyverno Helm installed chart:
+To uninstall Sealed Secrets, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Sealed Secrets Helm installed chart:
 
 ```bash
-helm uninstall kyverno kyverno/kyverno --namespace kyverno
+helm uninstall sealed-secrets-controller sealed-secrets/sealed-secrets --namespace kube-system 
 ```
 
 ## Go further
