@@ -2,7 +2,8 @@
 title: Sanitize your OVHcloud Managed Kubernetes with Popeye
 slug: installing-popeye
 excerpt: Find out how to sanitize your OVHcloud Managed Kubernetes with Popeye
-section: Tutorials
+section: Security Tutorials
+order: 1
 ---
 
 **Last updated 15th February 2022.**
