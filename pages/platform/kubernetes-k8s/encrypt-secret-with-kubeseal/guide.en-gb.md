@@ -322,12 +322,10 @@ spec:
       namespace: my-namespace
 </code></pre>
 
+TODO: my-namespace il faut le créer avant ...
 
-TODO: xxx clean Clean the YAML manifest file with "kubectl neat" command
-$ kubectl neat -f mysealedtoken.yaml > mycleanedsealedtoken.yaml
-
-TODO:  Deploy SealedSecret in the cluster
-$ kubectl apply -f mycleanedsealedtoken.yaml -n my-namespace
+TODO: Deploy SealedSecret in the cluster
+$ kubectl apply -f mysealedtoken.yaml -n my-namespace
 
 TODO: Check in your cluster
 You can check/verify in your Kubernetes cluster if the SealedSecret and Secret have been correctly deployed:
