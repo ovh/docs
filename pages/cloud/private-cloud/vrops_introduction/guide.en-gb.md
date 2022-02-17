@@ -10,16 +10,27 @@ order: 01
 
 ## Objective
 
-DHCP allows automatic assignment of private IPs to VMs behind your NSX Edge Services Gateway.
+what is vROPS
+what we will do today
 
 **This guide offers a step by step study case to achieve the objective**
 
 ## Requirements
 
 - Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have a user account with access to vROPS (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 
 ## Instructions
 
 ### Interface access
+
+
+- log in
+- Datasource
+- dashboard home
+- environment health
+- cluster health check
+- hosts health checks
+- vm health check
+ 
