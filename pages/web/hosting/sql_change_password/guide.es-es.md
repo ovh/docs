@@ -209,7 +209,7 @@ Haga clic en los tres puntos situados al final de la línea correspondiente a la
 
 ![database-password-step2](images/database-password-step2.png){.thumbnail}
 
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [paso 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
@@ -219,11 +219,11 @@ Acceda a la sección `Bases de datos`{.action} del área de cliente (menú de la
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 
-Para cambiar la contraseña de la base de datos en el servidor, haga clic en los tres puntos situados al final de la línea correspondiente al `Nombre de usuario`{.action} que se haya identificado en [el paso 2](#step2) y seleccione `Cambiar la contraseña`{.action}.
+Para cambiar la contraseña de la base de datos en el servidor, haga clic en los tres puntos situados al final de la línea correspondiente al `Nombre de usuario`{.action} que se haya identificado en [el etapa 2](#step2) y seleccione `Cambiar la contraseña`{.action}.
 
 ![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
 
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en [el paso 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en [el etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
@@ -235,6 +235,6 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 [Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

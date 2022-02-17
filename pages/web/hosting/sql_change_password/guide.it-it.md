@@ -20,7 +20,7 @@ La connessione a questo database è possibile tramite un **file di configurazion
 
 La modifica della password di un database deve quindi essere sempre effettuata:
 
-- Nel [file di configurazione](https://docs.ovh.com/it/hosting/1-click-module-management/#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite [lo spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/);
+- Nel [file di configurazione](https://docs.ovh.com/it/hosting/1-click-module-management/#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite lo [spazio FTP del tuo hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/);
 
 - **E** nel server che contiene il suo database attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
@@ -46,10 +46,10 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) o a un [server SQL privato](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
-- Disporre delle credenziali FTP per accedere allo [spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) dell'hosting
+- Utilizza un [database associato alla tua offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+- Disporre delle credenziali FTP per accedere allo [spazio di storage dell'hosting](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) 
 
 ## Procedura
 
@@ -59,11 +59,11 @@ Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
-Clicca sulla scheda `FTP - SSH`{.action} e poi clicca sul pulsante FTP Explorer* per accedere allo spazio contenente i file e le cartelle del tuo sito (*spazio FTP` `{.action}).
+Clicca sulla scheda `FTP-SSH`{.action} e poi clicca sul pulsante `FTP Explorer`{.action} per accedere allo spazio contenente i file e le cartelle del tuo sito (*spazio FTP*).
 
 > [!primary]
 >
-> Per modificare la password del tuo spazio FTP, consulta questa [guida](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
+> Per modificare la password del tuo spazio FTP, consulta questa [guida](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/).
 >
 > Per connetterti con un altro metodo, consulta questa [guida](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
 >
@@ -73,18 +73,18 @@ Apri la `Cartella di root` identificata sopra.
 Ricerca e apri il file di configurazione del tuo sito:
 
 - Per un sito WORDPRESS si tratta di **"wp-config.php"**;
-- Per un sito JOOMLA, si tratta di **"configurazione.php"**;
-- Per un sito DRUPAL, clicca sulla cartella "**siti"** e **"default"**. Il file di configurazione è **"settings.php"**;
-- Per creare il tuo sito, clicca sulla cartella **"app"** e **"config"**. Il file di configurazione è **"parameters.php"**.
+- Per un sito JOOMLA, si tratta di **"configuration.php"**;
+- Per un sito DRUPAL, clicca sulla cartella "**sites"** e **"default"**. Il file di configurazione è **"settings.php"**;
+- Per un sito PRESTASHOP, clicca sulla cartella **"app"** e **"config"**. Il file di configurazione è **"parameters.php"**.
 
 ### Step 2: identificare il database del tuo sito <a name="step2"></a>
 
 Sono possibili due casi:
 
 - Caso 1: il database del tuo sito fa parte della tua offerta di hosting;
-- Caso 2: è inclusa in un'offerta *SQL Privato* o *CloudDB*, nel qual caso dovrai trovare il **nome del server** e il **nome utente** del tuo database per identificarlo senza rischio di errore.
+- Caso 2: è inclusa in un'offerta *CloudDB*, nel qual caso dovrai trovare il **nome del server** e il **nome utente** del tuo database per identificarlo senza rischio di errore.
 
-Per verificare quale caso si applica al tuo sito, nel file di configurazione identificato [allo Step 1](#step1), inserisci il nome del database:
+Per verificare quale caso si applica al tuo sito, nel file di configurazione identificato allo [Step 1](#step1), inserisci il nome del database:
 
 - Per WORDPRESS: il nome appare sotto la dicitura **"DB_NAME"**;
 - Per JOOMLA: il nome appare sotto **"public $db"**;
@@ -97,9 +97,9 @@ Dopodiché torna allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action
 - Clicca sulla scheda `Database`{.action} **a destra** dello schermo.
 - Cerca il nome del database trovato precedentemente nella colonna `Nome del database`;
 
-Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo Step [3](#step3).
+Se hai ritrovato in questa sezione del tuo Spazio Cliente il nome del database indicato nel file di configurazione, passa allo [Step 3](#step3).
 
-In caso contrario, il database del tuo sito è associato a un'offerta [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
+In caso contrario, il database del tuo sito è associato a un'offerta [CloudDB](https://www.ovh.it/cloud/cloud-databases/).
 
 Per registrare il *nome del server* e il *nome utente* del database, è necessario ritornare al file di configurazione del tuo sito:
 
@@ -110,7 +110,7 @@ Per registrare il *nome del server* e il *nome utente* del database, è necessar
 
 Clicca sulla parte **sinistra** dello schermo e poi su `Database`{.action}. 
 
-Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
+Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
 Sempre in questa sezione del tuo Spazio Cliente OVH, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 
@@ -123,14 +123,14 @@ Sempre in questa sezione del tuo Spazio Cliente OVH, clicca sulla scheda `Utente
 
 Scegli la nuova password del tuo database e annotiamolo. Esso dovrà rispettare le seguenti condizioni:
 
-- Minimo 8 caratteri
+- Minimo 8 caratteri;
 - Massimo 30 caratteri;
 - almeno una lettera maiuscola;
 - almeno una lettera minuscola;
 - almeno una cifra;
 - Essere composto esclusivamente da cifre e lettere.
 
-Allo stesso modo del passaggio 1[ ](#step1), torna allo spazio di storage dei file del tuo hosting e modifica il file di configurazione del tuo sito.
+Allo stesso modo del [Step 1](#step1), torna allo spazio di storage dei file del tuo hosting e modifica il file di configurazione del tuo sito.
 
 **Prima di apportare qualsiasi modifica**, registra localmente il contenuto di questo file in un documento di testo per conservarne una copia in caso di errore di manipolazione.
 
@@ -190,14 +190,14 @@ Salva questa modifica.
 
 > [!primary]
 >
-> Questa operazione richiederà alcuni minuti prima di diventare effettiva. Una volta avviata la procedura, controlla lo stato nella scheda `Task in corso`{.action}.
+> Questa operazione richiederà alcuni minuti prima di diventare effettiva. Una volta avviata la procedura, controlla lo stato nella scheda `Operazioni in corso`{.action}.
 >
 
 Di nuovo, sono possibili due casi: 
 
-- Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/fr/web-hosting/), segui queste [istruzioni](#case1).
+- Se il database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata al tuo [hosting Web](https://www.ovhcloud.com/it/web-hosting/), segui queste [istruzioni](#case1).
 
-- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [SQL privato](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) o [CloudDB](https://docs.ovh.com/fr/clouddb/), segui queste [istruzioni](#case2).
+- Se il tuo database si trova nella sezione dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dedicata alle tue offerte [CloudDB](https://docs.ovh.com/it/clouddb/), segui queste [istruzioni](#case2).
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
@@ -213,13 +213,13 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Caso 2: il database del tuo sito fa parte di un'offerta Private SQL o CloudDB <a name="case2"></a>
+#### Caso 2: il database del tuo sito fa parte di un'offerta CloudDB <a name="case2"></a>
 
 Accedi alla sezione `Database`{.action} del tuo Spazio Cliente (menu a sinistra) e clicca sulla scheda `Utenti e diritti`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 
-Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `nome utente`{.action} identificato allo Step 2[ e seleziona ](#step2)Modifica la password` `{.action}.
+Per modificare la password del tuo database sul server, clicca sui tre puntini in corrispondenza del `Nome utente`{.action} identificato allo [Step 2](#step2) e seleziona `Modifica la password`{.action}.
 
 ![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
 
@@ -227,14 +227,14 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Spingiti oltre <a name="gofurther"></a>
+## Per saperne di più <a name="gofurther"></a>
 
-[Software FileZilla con il tuo hosting](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+[Hosting Condiviso: guida all’utilizzo di FileZilla](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_filezilla/)
 
-[Modifica la password del tuo account](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
 
-[Risolvi gli errori più frequenti associati ai database](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/)
+[Risolvi gli errori più frequenti associati ai database](https://docs.ovh.com/it/hosting/errori-frequenti-database/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/fr/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

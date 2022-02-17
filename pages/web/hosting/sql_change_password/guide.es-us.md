@@ -63,7 +63,7 @@ A continuación, abra la pestaña `FTP-SSH`{.action} y acceda al espacio que con
 
 > [!primary]
 >
-> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/).
+> Si desea cambiar la contraseña de su espacio FTP, consulte esta [guía](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-usuario-ftp/).
 >
 > Si desea conectarse por otro método, consulte esta [guía](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 >
@@ -79,12 +79,7 @@ Busque y abra el archivo de configuración de su sitio web:
 
 ### Etapa 2: identificar la base de datos del sitio web <a name="step2"></a>
 
-Existen dos posibilidades:
-
-- Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting;
-- Caso n° 2: está incluida en una solución *CloudDB*, en cuyo caso deberá encontrar el **nombre del servidor** y el **nombre de usuario** de la base de datos para identificarla sin riesgo de error.
-
-Para determinar qué casos se aplican al sitio web, en el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
+En el archivo de configuración indicado en el [Etapa 1](#step1), empiece por anotar el nombre de la base de datos:
 
 - Para WORDPRESS: el nombre aparece con la mención **"DB_NAME"**;
 - Para JOOMLA: el nombre aparece en **"public $db"**;
@@ -97,28 +92,11 @@ Vuelva al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotoman
 - Haga clic en la pestaña `Bases de datos`{.action} **a la derecha** de su pantalla.
 - Busque el nombre de la base de datos encontrada anteriormente en la columna `Nombre de la base` de datos.
 
-Si ha encontrado en esta sección del área de cliente el nombre de la base de datos indicada en el archivo de configuración, vaya al [Etapa 3](#step3).
-
-En caso contrario, la base de datos del sitio web está asociada a un servicio [CloudDB](https://www.ovh.es/cloud/cloud-databases/).
-
-En ese caso, deberá volver al archivo de configuración del sitio web para registrar el *nombre del servidor* y el *nombre de usuario* de la base de datos:
-
-- Para WORDPRESS: el *nombre del servidor* aparece bajo la mención **"DB_HOST"** y el *nombre de usuario* bajo la mención **"DB_USER"**;
-- Para JOOMLA: el *nombre del servidor* aparece en **"public $host"** y el *nombre de usuario* bajo la mención **"public $user"**;
-- Para DRUPAL: el *nombre del servidor* aparece en **"host"** y el *nombre de usuario* bajo la mención **"username"**;
-- Para PRESTASHOP: el *nombre del servidor* aparece en **"database_host"** y el *nombre de usuario* bajo la mención **"database_user"**.
-
-A continuación, haga clic en la columna **izquierda** de su pantalla en `Bases de datos`{.action}. 
-
-En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [CloudDB](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
-
-En el área de cliente de OVH, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
-
 ### Etapa 3: cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte [esta guía](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
 >
 
 Seleccione la nueva contraseña de la base de datos y nócelo. Deberá cumplir las siguientes condiciones:
@@ -153,7 +131,7 @@ define('DB_PASSWORD', '0VhCloudPa55w0rdDB123');
 define('DB_HOST', 'dbname123.mysql.db:3306');
 ```
 
-- En el archivo de configuración de un sitio web JOOMLA, cambie el **"public $password"** (justo al final del archivo de configuración):
+- En el archivo de configuración de un sitio web JOOMLA, modifique el **"public $password"** (justo al final del archivo de configuración):
 
 ```php
 public $host = 'dbname123.mysql.db:3306';
@@ -186,20 +164,12 @@ $databases['default']['default'] = array (
 
 Guarde el cambio.
 
-### Etapa 4: Cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
+### Etapa 4: cambiar la contraseña de la base de datos del sitio web en el servidor de bases de datos <a name="step4"></a>
 
 > [!primary]
 >
 > Esta operación tardará unos minutos en aplicarse. Abra la pestaña `Tareas en curso`{.action} y compruebe su estado.
 >
-
-De nuevo, existen dos posibles situaciones: 
-
-- Si la base de datos se encuentra en la sección dedicado al [alojamiento web](https://www.ovhcloud.com/es/web-hosting/) del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), siga estas [instrucciones](#case1).
-
-- Si su base de datos se encuentra en la sección de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) dedicada a sus productos de [CloudDB](https://docs.ovh.com/es/clouddb/), siga estas [instrucciones](#case2).
-
-#### Caso n° 1: la base de datos de su sitio web forma parte de su plan de hosting <a name="case1"></a>
 
 En la sección `Alojamientos`{.action} del área de cliente, acceda a la pestaña `Bases de datos`{.action} que aparece a la derecha de la pantalla.
 
@@ -209,32 +179,18 @@ Haga clic en los tres puntos situados al final de la línea correspondiente a la
 
 ![database-password-step2](images/database-password-step2.png){.thumbnail}
 
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [paso 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en el [Etapa 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-#### Caso n° 2: la base de datos de su sitio web forma parte de una solución CloudDB. <a name="case2"></a>
-
-Acceda a la sección `Bases de datos`{.action} del área de cliente (menú de la izquierda) y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
-
-![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
-
-Para cambiar la contraseña de la base de datos en el servidor, haga clic en los tres puntos situados al final de la línea correspondiente al `Nombre de usuario`{.action} que se haya identificado en [el paso 2](#step2) y seleccione `Cambiar la contraseña`{.action}.
-
-![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
-
-Se abrirá una ventana en la que deberá introducir la nueva contraseña de la base de datos (definida en [el paso 3](#step3)). Confírmela y haga clic en `Aceptar`{.action}.
-
-![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
-
 ## Más información <a name="gofurther"></a>
 
-[Web hosting: guía de uso de FileZilla](https://docs.ovh.com/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
+[Web hosting: guía de uso de FileZilla](https://docs.ovh.com/us/es/hosting/web_hosting_guia_de_uso_de_filezilla/)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contrase%C3%B1a/)
 
-[Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/es/hosting/error-requentes-base-de-datos/)
+[Resolver los errores más frecuentes asociados a las bases de datos](https://docs.ovh.com/us/es/hosting/error-requentes-base-de-datos/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
