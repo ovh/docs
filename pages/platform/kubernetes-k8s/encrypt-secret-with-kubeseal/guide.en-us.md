@@ -34,9 +34,9 @@ order: 2
 
 When you want to store your Kubernetes resources, as YAML manifest, the common way is to store/keep them in a Git repository. Thanks to that you can also create, edit and delete automatically with Infrastructure as Code and CI/CD your Kubernetes clusters and resources.
 
-In the Kubernetes world when we want to handle sensitive data, the usage is to store it in a Secret in a Kubernetes cluster. But the problem is that you can't store a Secret in a Version Control because the Secret is not encrypted, it's a question of security.
+In the Kubernetes world, when we want to handle sensitive data, the usage is to store it in a Secret in a Kubernetes cluster. But the problem is that you can't store a Secret in a Version Control because the Secret is not encrypted, it's a question of security.
 
-As at OVHcloud, we like to provide you with the best products and services and for us security is important, that's why we wanted to help you to discover Sealed Secrets and `kubeseal` CLI which will help you to encrypt your sensitive informations and deploy them easily in your OVHcloud Managed Kubernetes.
+At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you to discover Sealed Secrets and `kubeseal` CLI which will help you to encrypt your sensitive informations and deploy them easily in your OVHcloud Managed Kubernetes.
 
 In this guide you will:
 
@@ -54,7 +54,7 @@ You can use the *Reset cluster* function on the Public Cloud section of the [OVH
 
 A secret in Kubernetes cluster is encoded in base64 but not encrypted!
 
-Theses data are "only" encoded so if a user have access to your secrets, he can simply execute a `base64 decode` command to see your sensitive data (`kubectl get secret my-secret -o jsonpath="{.data.password}" | base64 --decode`).
+These data are "only" encoded so if a user has access to your secrets, he can simply execute a `base64 decode` command to see your sensitive data (`kubectl get secret my-secret -o jsonpath="{.data.password}" | base64 --decode`).
 
 As the secrets aren't encrypted, it can be unsecure to commit them to your Git repository.
 
@@ -66,7 +66,7 @@ How is it working?
 
 ![Kubeseal SealedSecret schema](images/kubeseal-schema.png)
 
-As you can see in the schema, a `sealed-secrets-controller` run in the Kubernetes cluster. He listens when a new `SealedSecret` object appears, unsealed it (thanks to known certificates) and create a Kubernetes secret in the same namespace as the SealedSecret.
+As you can see in the schema, a `sealed-secrets-controller` runs in the Kubernetes cluster. He listens when a new `SealedSecret` object appears, unseals it (thanks to known certificates) and creates a Kubernetes secret in the same namespace as the SealedSecret.
 
 > [!primary]
 >
@@ -191,7 +191,7 @@ If you would rather not need access to the cluster to generate the sealed secret
       --controller-namespace=kube-system \
       --fetch-cert > mycert.pem
 
-to retrieve the public cert used for encryption and store it locally. You can then run 'kubeseal --cert mycert.pem' instead to use the local cert e.g.
+to retrieve the public cert used for encryption and store it locally. You can then run 'kubeseal --cert mycert.pem' instead of using the local cert e.g.
 
     kubectl create secret generic secret-name --dry-run=client --from-literal=foo=bar -o [json|yaml] | \
     kubeseal \
@@ -215,18 +215,18 @@ Once you deploy the Hem chart, it will:
 - create a `sealed-secrets-controller` service account into `kube-system` namespace
 - and necessary RBAC roles.
 
-You can check if the `ealed-secrets-controller` pod is correctly running:
+You can check if the `sealed-secrets-controller` pod is correctly running:
 
 <pre class="console"><code>$ kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets
 NAME                                         READY   STATUS    RESTARTS   AGE
 sealed-secrets-controller-5fb95c87fd-pnvmk   1/1     Running   0          2m43s
 </code></pre>
 
-### Retrieves the generated keypair
+### Retrieve the generated keypair
 
-At the start of the `sealed-secrets-controller` a certificate keypair is generated. It can be useful to you to store it in a secret management tool like Vault.
+At the start of the `sealed-secrets-controller` a certificate keypair is generated. It can be useful for you to store it in a secret management tool like Vault.
 
-Execute the following command to retreve the content of the secret containing the generated keypair:
+Execute the following command to retrieve the content of the secret containing the generated keypair:
 
 ```bash
 kubectl get secret -l sealedsecrets.bitnami.com/sealed-secrets-key -o yaml -n kube-system
@@ -261,7 +261,7 @@ metadata:
 
 With this information you can now base64 decode the `tls.crt` and `tls.key` and store them locally and in your secret management tool in order to use them later to retrieve the sealed secrets.
 
-You can use [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret) kubectl plugin in order to retrieves the key and the crt easily and store them locally:
+You can use [kubectl view-secret](https://github.com/elsesiy/kubectl-view-secret) kubectl plugin in order to retrieve the key and the crt easily and store them locally:
 
 ```bash
 SEALEDKEY=$(kubectl get secret -l sealedsecrets.bitnami.com/sealed-secrets-key -n kube-system -o name)
@@ -300,7 +300,7 @@ metadata:
   namespace: my-namespace
 </code></pre>
 
-Then, seal the secret, with the retrieved generated certificate you saved and store before:
+Then seal the secret, with the retrieved generated certificate you saved and stored before:
 
 ```bash
 kubeseal --cert tls.crt --format=yaml < my-token.yaml > mysealedtoken.yaml
@@ -348,7 +348,7 @@ sealedsecret.bitnami.com/my-token created
 >
 > Be careful, the `SealedSecret` and `Secret` resources must have the same namespace and name. This is a feature to prevent other users on the same cluster from re-using your sealed secrets.
 
-After the `SealedSecret` creation, the `sealed-secrets-controller` have created automatically a Kubernetes Secret.
+After the `SealedSecret` creation, the `sealed-secrets-controller` has created automatically a Kubernetes Secret.
 
 You can check their existance with the following command:
 
@@ -367,7 +367,7 @@ NAME                  TYPE                                  DATA   AGE
 my-token              Opaque                                1      93s
 </code></pre>
 
-If you already installed `view-secret` kubectl plugin, you can also check if the generated Secret contains the good token you sealed:
+If you already installed the `view-secret` kubectl plugin, you can also check if the generated Secret contains the good token you sealed:
 
 ```bash
 kubectl view-secret my-token -n my-namespace
@@ -382,7 +382,7 @@ Choosing key: my_token
 
 ### Debugging / Troubleshooting
 
-It may happens some issues can appear, if you don't understand why a Secret is never created after a SealedSecret creation, one of the common issue is you probably sealed the secret with another certificate than the ones the controller know.
+Some issues may appear. If you don't understand why a Secret is never created after a SealedSecret creation, one of the common explanation is that you probably sealed the secret with another certificate than the ones the controller knows.
 
 In order to debug/troubleshoot the behavior of the `sealed-secrets-controller`, you can watch its logs:
 
