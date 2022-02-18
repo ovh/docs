@@ -2,7 +2,7 @@
 title: Formating NVMe disks on IOPS nodes
 slug: formating-nvme-disk-on-iops-nodes
 excerpt: 'Find out how to partition and format NVMe disks on OVHcloud Managed Kubernetes IOPS nodes'
-section: Storage tutorials
+section: Storage
 order: 5
 ---
 

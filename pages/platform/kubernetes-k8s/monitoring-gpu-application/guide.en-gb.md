@@ -2,7 +2,8 @@
 title: Monitoring GPU usage on OVHcloud Managed Kubernetes Service
 slug: monitoring-gpu-application
 excerpt: 'Find out how to expose, visualize and monitor GPU metrics on OVHcloud Managed Kubernetes Service'
-section: Tutorials
+section: GPU
+order: 1
 ---
 
 <style>

@@ -2,7 +2,7 @@
 title: Run Serverless containers on OVHcloud Managed Kubernetes with Knative
 slug: installing-knative
 excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and deploy your first serverless containers
-section: Serverless tutorials
+section: Serverless
 order: 1
 ---
 

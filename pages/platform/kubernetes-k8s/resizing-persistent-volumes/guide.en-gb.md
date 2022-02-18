@@ -2,7 +2,7 @@
 title: Resizing Persistent Volumes
 slug: resizing-persistent-volumes
 excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernetes'
-section: Storage tutorials
+section: Storage
 order: 1
 ---
 
