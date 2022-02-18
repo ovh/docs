@@ -26,8 +26,8 @@ Avant de vous lancer, si vous ne l’avez pas encore lue, nous vous conseillons 
 >
 > Attention, une fois liées à votre vRack, les fermes de votre Load Balancer seront dans l'incapacité de communiquer avec vos serveurs via leurs adresses IP publiques. Vous serez alors obligé d'utiliser leur adresse IP privée à l'intérieur du vRack.***
 >
-
-### Lister les services Load Balancer éligibles au vRack
+### Depuis l'API OVHcloud 
+#### Lister les services Load Balancer éligibles au vRack
 
 Vous pouvez consulter la liste de vos services Load Balancer pouvant être connectés à un vRack.
 
@@ -48,7 +48,7 @@ Vous pouvez aussi voir l'éligibilité d'un service Load Balancer particulier gr
 >
 >
 
-## Lier un service Load Balancer à un vRack
+#### Lier un service Load Balancer à un vRack
 
 Pour attacher votre service Load Balancer à votre vRack, voici l'API concernée:
 
@@ -59,7 +59,7 @@ Pour attacher votre service Load Balancer à votre vRack, voici l'API concernée
 
 Comme précédemment le `serviceName` ici est celui de votre vRack, ex: `pn-1234`.
 
-## Configurer un réseau vRack
+#### Configurer un réseau vRack
 
 Pour fonctionner, votre Load Balancer a besoin de connaître la topologie réseau que vous utilisez au sein de votre vRack et avoir une plage d'adresses IP lui étant spécifiquement dédiée au sein de ce réseau. Cette plage d'adresses IP sera utilisée pour contacter vos serveurs dans votre vRack. Aucune autre adresse IP ne sera utilisée pour communiquer avec vos serveurs.
 
@@ -86,7 +86,7 @@ Pour connaître la taille minimale de la plage à attribuer à natIp, un call AP
 > @api {GET} /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
 >
 
-## Configurer une ferme liée à un vRack
+#### Configurer une ferme liée à un vRack
 
 Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce faire, configurez normalement votre ferme TCP ou HTTP et renseignez simplement le `vrackNetworkId` que vous avez précédemment obtenu dans le champ du même nom.
 
@@ -100,12 +100,20 @@ Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce fai
 > @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
-## Suite de la configuration
+#### Suite de la configuration
 
 Vous pouvez maintenant utiliser les call API habituels ou même l'espace client pour continuer la configuration du Load Balancer.
 
 Pour rappel, un guide de configuration du Load Balancer est disponible: [https://docs.ovh.com/fr/load-balancer/configure-iplb](https://docs.ovh.com/fr/load-balancer/configure-iplb/).
+ 
+#### Depuis l'espace client OVHcloud
 
+#### Lister les services Load Balancer éligibles au vRack
+
+Vous pouvez consulter la liste de vos services Load Balancer pouvant être connectés à un vRack depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, puis `Network`{.action}.
+
+Sélectionnez votre vRack puis, 
+![éligiblite_load balancer](images/eligibility_lb.png){.thumbnail}
 
 
 ## Aller plus loin
