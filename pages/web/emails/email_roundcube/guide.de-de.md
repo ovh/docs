@@ -162,7 +162,7 @@ Die weiteren verfügbaren Optionen sehen Sie im nebenstehenden Screenshot.
 
 Sie können dies auf "immer" umstellen, wenn Sie alle E-Mails im HTML-Format versenden möchten.
 
-![](images/img_1288.jpg){.thumbnail}
+![options_rc_en](images/options_rc_en.png){.thumbnail}
 
 
 ### Adressbuch
@@ -332,13 +332,13 @@ Wie Sie die dieser Identität zugewiesene Signatur einfügen wird im Abschnitt [
 
 ### Verfassen einer neuen Nachricht
 
-Um eine neue Nachricht zu verfassen klicken Sie auf Schreiben. Wenn Sie diesen Button nicht sehen, weil Sie zum Beispiel gerade die Einstellungen oder das Adressbuch aufgerufen haben, klicken Sie auf das weiße Briemumschlagssysmbol rechts oben, dann wird der Button eingeblendet.
+Um eine neue Nachricht zu verfassen klicken Sie auf `Schreiben`{.action}. Wenn Sie diesen Button nicht sehen, weil Sie zum Beispiel gerade die Einstellungen oder das Adressbuch aufgerufen haben, klicken Sie auf das weiße Briemumschlagssysmbol rechts oben, dann wird der Button eingeblendet.
 
-![](images/img_1404.jpg){.thumbnail}
+![compose](images/compose.png){.thumbnail}
 
 ### Optionen
 
-Wenn Sie auf "Schreiben" klicken, werden Optionen zum Verfassen Ihrer E-Mail angezeigt, zum Beispiel die Möglichkeit zum Hinzufügen von Kontakten aus dem [Adressbuch](#CARNET), [Anhänge](#ATTACHED) und nachrichtenspezifische [Einstellungen](#SIGNATURE).
+Wenn Sie auf `Schreiben`{.action} klicken, werden Optionen zum Verfassen Ihrer E-Mail angezeigt, zum Beispiel die Möglichkeit zum Hinzufügen von Kontakten aus dem [Adressbuch](#CARNET), [Anhänge](#ATTACHED) und nachrichtenspezifische [Einstellungen](#SIGNATURE).
 
 Sie können Ihre gespeicherten Kommunikationspartner auswählen, indem Sie auf den Typ der Mail bzw. Kopie klicken, die diese erhalten sollen:
 
