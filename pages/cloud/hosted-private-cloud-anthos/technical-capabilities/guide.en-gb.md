@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 8th October 2021**
+**Last updated 16th Febuary 2022**
 
 ## Objective
 
@@ -14,14 +14,11 @@ This page provides an overview of the technical capabilities and limitations of 
 
 ### Limitations at launch
 
-- Additional bare metal nodes and IP addresses are not available to order in the Control Panel yet. Please contact your OVHcloud sales representative if you have further needs during the launch phase.
 - The Dedicated NetApp console is not yet available.
-- Anthos updates will only be available after the launch phase.
-
 
 ### Technical capabilities and known limits
 
-- **Public network**: Each service is delivered with a block of 50 usable IPv4 addresses. Additional IP addresses will be orderable in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (256 maximum per service).
+- **Public network**: Each service is delivered with a block of 50 usable IPv4 addresses. Additional IP addresses can be ordered in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (256 maximum per service).
 
 - **User cluster capacity**: The production packs include 15 bare metal nodes which can be used for your Kubernetes clusters and containers. Additional bare metal nodes can be added in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). The OVHcloud Hosted Private Cloud powered by Anthos solution can handle multiple Kubernetes clusters, with a total of 100 bare metal nodes running 100 pods each. (Please contact your OVHcloud sales representative if your needs exceed these thresholds.)
 

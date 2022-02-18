@@ -6,7 +6,7 @@ section : Premiers pas
 order : 1
 ---
 
-**Dernière mise à jour le 08/10/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -14,13 +14,11 @@ Retrouvez ci-dessous les capacités techniques et les limites de l'offre Hosted 
 
 ### Limitations au lancement
 
-- La commande de noeuds et d'adresses IP supplémentaires n'est pas encore disponible dans l'espace client OVHcloud. Nous vous invitons à contacter votre commercial OVHcloud si vous avez d’autres besoins pendant la phase de lancement.
 - La console Dedicated NetApp n'est pas encore disponible.
-- Les mises à jour d'Anthos ne seront disponibles qu'après la phase de lancement.
 
 ### Capacités techniques et limites connues
 
-- **Réseau public** : Chaque service est livré avec un bloc de 50 adresses IPv4 utilisables. Des adresses IP supplémentaires pourront être commandées dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (256 maximum par service).
+- **Réseau public** : Chaque service est livré avec un bloc de 50 adresses IPv4 utilisables. Des adresses IP supplémentaires peuvent être commandées dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) (256 maximum par service).
 
 - **Capacité du cluster utilisateur** : Les packs de production comprennent 15 noeuds de travail bare metal utilisables pour vos clusters et conteneurs Kubernetes. Des noeuds bare metal supplémentaires pourront être ajoutés dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). La solution Hosted Private Cloud powered by Anthos peut gérer plusieurs clusters Kubernetes, avec un total de 100 noeuds bare metal exécutant 100 pods chacun. Si vos besoins dépassent ces seuils, veuillez contacter votre commercial OVHcloud.
 

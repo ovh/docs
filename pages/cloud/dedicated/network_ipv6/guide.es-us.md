@@ -40,7 +40,7 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > - La dirección IPv6 del servidor es 2607:5300:60:62ac::/64. Por lo tanto, la IPv6_GATEWAY será 2607:5300:60:62FF:FF:FF:FF:FF.
 > - La dirección IPv6 del servidor es 2001:41D0:1:46e::/64. Por lo tanto, la IPv6_GATEWAY será 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+> La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 >
 
 > [!api]
@@ -63,7 +63,7 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 
 #### 1: Conectarse a su servidor por SSH
 
-[Más información en esta guía](../primeros-pasos-servidor-dedicado/)
+[Más información en esta guía](../primeros-pasos-servidor-dedicado/).
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
@@ -119,7 +119,7 @@ Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e 
 
 #### 1: Conectarse a su servidor por SSH
 
-Más información en [esta guía](../primeros-pasos-servidor-dedicado/)
+Más información en [esta guía](../primeros-pasos-servidor-dedicado/).
 
 
 #### 2: Abrir el archivo de configuración de red de su servidor
@@ -216,7 +216,7 @@ Si no consigue hacer ping a esta dirección IPv6, compruebe su configuración e 
 
 #### 1: Conectarse a su servidor por SSH
 
-Más información en [esta guía](../primeros-pasos-servidor-dedicado/)
+Más información en [esta guía](../primeros-pasos-servidor-dedicado/).
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
@@ -272,7 +272,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### 1: Conéctese a su servidor por RDP
 
-Más información en [esta guía](../primeros-pasos-servidor-dedicado/)
+Más información en [esta guía](../primeros-pasos-servidor-dedicado/).
 
 
 #### 2: Abrir la configuración de red de su servidor

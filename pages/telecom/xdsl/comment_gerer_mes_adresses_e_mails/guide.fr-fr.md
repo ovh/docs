@@ -23,7 +23,7 @@ Vous avez la possibilité de bénéficier d'adresses xDSL E-mail avec votre offr
 
 ### Étape 1 : activer son adresse xDSL E-mail
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie Télécom. Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis choisissez l'offre concernée. 
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie Télécom. Cliquez sur `Accès Internet`{.action}, puis choisissez l'offre concernée. 
 
 Sur la page, cliquez sur le bouton `Activer un service`{.action} se trouvant dans la rubrique « xDSL E-mail ». Sur la nouvelle page qui s'affiche, remplissez les informations demandées :
 

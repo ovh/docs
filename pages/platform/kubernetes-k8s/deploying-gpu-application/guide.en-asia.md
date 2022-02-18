@@ -2,7 +2,8 @@
 title: Deploying a GPU application on OVHcloud Managed Kubernetes Service
 slug: deploying-gpu-application
 excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernetes'
-section: Tutorials
+section: GPU
+order: 0
 ---
 
 <style>

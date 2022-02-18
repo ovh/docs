@@ -1,7 +1,7 @@
 ---
-title: Install Grafana on OVHcloud Managed Kubernetes
+title: Installing Grafana on OVHcloud Managed Kubernetes
 slug: installing-grafana
-excerpt: "Find out how to install Grafana on OVHcloud Managed Kubernetes"
+excerpt: "Find out how to Installing Grafana on OVHcloud Managed Kubernetes"
 section: Tutorials
 ---
 
