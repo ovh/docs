@@ -28,7 +28,7 @@ order: 7
  }
 </style>
 
-**Last updated Februar 18<sup>th</sup>, 2022.**
+**Last updated February 18<sup>th</sup>, 2022.**
 
 ## Objective
 
