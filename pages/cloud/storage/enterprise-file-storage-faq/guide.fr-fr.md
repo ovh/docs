@@ -86,9 +86,9 @@ Il est possible de créer jusqu’à 10 volumes maximum par service. La taille m
 
 ### Quel niveau de performance est disponible avec Enterprise File Storage ?
 
-Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par To et de 4000 IOPS par To.
+Enteprise File Storage est fourni avec un débit garanti de 64Mo/s par TiB et de 4000 IOPS par TiB.
 
-Par exemple, lors de la livraison d'un pool de 10 To, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
+Par exemple, lors de la livraison d'un pool de 10 TiB, vous bénéficiez d'une bande passante de 640Mo/s et de 40000 IOPS.
 
 ## Snapshots et sauvegardes
 
@@ -102,7 +102,7 @@ Les utilisateurs sont responsables de la gestion de leurs sauvegardes (outil et 
 
 ### Les snapshots sont-ils compris dans la capacité d’un pool ?
 
-Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, un service de 5To sera accompagné de 250G additionnels réservés pour les snapshots. Au delà de cette capacité, les snapshots occuperont l'espace du service.
+Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, un service de 5TiB sera accompagné de 250GiB additionnels réservés pour les snapshots. Au delà de cette capacité, les snapshots occuperont l'espace du service.
 
 ### Quel est le nombre maximum de snapshots par service ?
 
@@ -132,7 +132,7 @@ Il n’existe pas encore de métriques intégrées pour suivre l’utilisation d
 
 ### Quel type de tarification est lié au service ?
 
-Enterprise File Storage est un service facturé mensuellement au volume (1 à 58 To par palier de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
+Enterprise File Storage est un service facturé mensuellement au volume (1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
 
 ## Aller plus loin
 
