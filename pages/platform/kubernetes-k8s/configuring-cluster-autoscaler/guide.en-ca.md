@@ -28,7 +28,7 @@ order: 7
  }
 </style>
 
-**Last updated November 4<sup>th</sup>, 2021.**
+**Last updated Februar 18<sup>th</sup>, 2022.**
 
 ## Objective
 
@@ -92,7 +92,7 @@ kubectl get nodepools
 You can change several parameters values through kubectl command:
 
 ```bash
-kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}'
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}}'
 ```
 
 In my example cluster:
@@ -111,7 +111,7 @@ In my example cluster:
 }
 </code></pre>
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
+<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 </code></pre>
 
