@@ -11,7 +11,7 @@ section: 'RAID & dyski'
 
 RAID (Redundant Array of Independent Disks) to narzędzie pozwalające zminimalizować ryzyko utraty danych zapisanych na serwerze poprzez ich replikację na wielu dyskach.
 
-Domyślny poziom RAID dla serwerów OVH to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę. 
+Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę. 
 
 **W tym przewodniku wyjaśniamy, jak skonfigurować macierz RAID Twojego serwera w przypadku, gdy musi ona zostać odtworzona z powodu awarii lub uszkodzenia dysku.**
 

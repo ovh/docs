@@ -11,7 +11,7 @@ section: 'RAID e discos'
 
 O RAID (Redundant Array of Independent Disks) é um conjunto de técnicas concebidas para atenuar a perda de dados num servidor através da replicação dos dados em vários discos.
 
-O nível de RAID predefinido nos servidores da OVH é RAID 1, ou seja, o dobro do espaço ocupado pelos dados, reduzindo assim para metade o espaço de disco utilizável.
+O nível de RAID predefinido nos servidores da OVHcloud é RAID 1, ou seja, o dobro do espaço ocupado pelos dados, reduzindo assim para metade o espaço de disco utilizável.
 
 **Este manual explica-lhe como configurar a matriz RAID de um servidor em caso de ter de ser reconstruída por motivos de corrupção ou de avaria de disco.**
 

@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Ve
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 06-10-2021**
+**Ostatnia aktualizacja z dnia 08/02/2022**
 
 ## Wprowadzenie
 
@@ -18,11 +18,6 @@ Veeam Backup & Replication jest oprogramowaniem do ochrony danych. Oferuje wiele
 
 * Posiadanie usługi [Veeam Enterprise](https://www.ovh.pl/storage-solutions/veeam-enterprise.xml){.external}
 * Posiadanie wirtualnej maszyny z Windows Server 2012 lub 201
-
-> [!primary]
->
-> Nasze pakiety Veeam są kompatybilne wyłącznie z najnowszą wersją (10) proponowaną przez Veeam. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
->
 
 ## W praktyce
 

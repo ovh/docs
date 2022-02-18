@@ -24,8 +24,8 @@ Les pare-feux fonctionnent en définissant des règles qui régissent le trafic 
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/)
-- Être connecté à un terminal (accès root ou sudo) sous Linux
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud
+- Disposer d'un accès administrateur (root/sudo) à votre serveur via SSH
 
 ## En pratique
 
@@ -52,7 +52,7 @@ Consultez notre guide sur la [sécurisation d'un serveur dédié](https://docs.o
 
 Iptables est installé par défaut sur la plupart des systèmes Linux. Pour confirmer que Iptables est installé, utilisez la commande suivante :
 
-```sh
+```bash
 sudo apt-get install iptables
 ```
 
@@ -62,7 +62,7 @@ L'exemple de sortie dans Ubuntu confirme que la dernière version de Iptables es
 
 En général, une commande Iptables se présente comme suit :
 
-```sh
+```bash
 sudo iptables [option] CHAIN_rule [-j target]
 ```
 
@@ -82,7 +82,7 @@ Voici une liste de quelques options Iptables courantes :
 
 Pour afficher l'ensemble des règles actuelles sur votre serveur, saisissez la commande suivante dans la fenêtre du terminal :
 
-```sh
+```bash
 sudo iptables -L
 ```
 Le système affiche le statut de vos chaînes.<br>
@@ -94,7 +94,7 @@ La sortie répertoriera trois chaînes :
 
 Pour autoriser le trafic de votre propre système (le localhost), ajoutez la chaîne d'entrée en saisissant ce qui suit :
 
-```sh
+```bash
 sudo iptables -A INPUT -i lo -j ACCEPT
 ```
 
@@ -108,19 +108,19 @@ Un port est un point de terminaison de communication spécifié pour un type sp�
 
 Pour autoriser le trafic Web HTTP, saisissez la commande suivante :
 
-```sh
+```bash
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 ```
 
 Pour autoriser uniquement le trafic SSH (Secure Shell) entrant, saisissez ce qui suit :
 
-```sh
+```bash
 sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 ```
 
 Pour autoriser le trafic Internet HTTPS, saisissez la commande suivante :
 
-```sh
+```bash
 sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
 ```
 
@@ -140,7 +140,7 @@ Les options fonctionnent ainsi :
 
 Utilisez la commande suivante pour accepter le trafic à partir d'une adresse IP spécifique.
 
-```sh
+```bash
 sudo iptables -A INPUT -s votre_adresse_IP_à_autoriser -j ACCEPT
 ```
 
@@ -148,7 +148,7 @@ Remplacez l'adresse IP dans la commande par l'adresse IP que vous souhaitez auto
 
 Vous pouvez également bloquer le trafic à partir d'une adresse IP 
 
-```sh
+```bash
 sudo iptables -A INPUT -s votre_adresse_IP_à_bloquer -j DROP
 ```
 
@@ -156,7 +156,7 @@ Remplacez l'adresse IP dans la commande par l'adresse IP que vous souhaitez bloq
 
 Vous pouvez rejeter le trafic à partir d'une plage d'adresses IP, avec la commande suivante :
 
-```sh
+```bash
 sudo iptables -A INPUT -m iprange --src-range votre_adresse_IP_debut-votre_adresse_IP_fin -j REJECT
 ```
 
@@ -170,7 +170,7 @@ Les options iptables que nous avons utilisées dans les exemples fonctionnent ai
 
 Si vous définissez des règles de pare-feu Iptables, vous devez empêcher les accès non autorisés en supprimant tout trafic provenant d'autres ports :
 
-```sh
+```bash
 sudo iptables -A INPUT -j DROP
 ```
 
@@ -185,13 +185,13 @@ L'option -A ajoute une nouvelle règle à la chaîne. Si une connexion passe par
 
 Une méthode plus précise consiste à supprimer le numéro de ligne d'une règle.
 
-```sh
+```bash
 sudo iptables -P INPUT DROP 
 ```
 
 Tout d'abord, répertoriez toutes les règles en saisissant ce qui suit :
 
-```sh
+```bash
 sudo iptables -L --line-numbers
 ```
 
@@ -199,10 +199,10 @@ sudo iptables -L --line-numbers
 
 Recherchez la ligne de la règle de pare-feu que vous souhaitez supprimer et exécutez cette commande :
 
-```sh
+```bash
 sudo iptables -D INPUT <Number>
 ```
-Remplacez <Number> par le numéro de ligne de règle que vous souhaitez supprimer.
+Remplacez `Number` par le numéro de ligne de règle que vous souhaitez supprimer.
 
 ### Etape 9 : enregistrer vos modifications
 
@@ -211,7 +211,7 @@ Chaque fois que vous configurez Iptables sous Linux, toutes les modifications qu
 
 Pour enregistrer les règles dans les systèmes basés sur Ubuntu, saisissez :
   
-```sh
+```bash
 sudo -s iptables-save -c
 ```
 

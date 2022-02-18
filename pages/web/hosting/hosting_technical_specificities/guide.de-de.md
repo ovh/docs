@@ -34,19 +34,19 @@ section: 'Webhosting-Konfiguration'
 
 ### Simultane Verbindungen mit der Datenbank
 
-- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener Private SQL Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
+- Für Webhosting Angebote (geteilte Datenbanken) gilt ein Limit von 30 simultanen Verbindungen je Datenbank (200 bei enthaltener CloudDB Datenbank). Die verfügbaren Optionen für die einzelnen Webhosting Angebote können Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) nachlesen.
 
-- Darüber hinaus können Sie auch zusätzliche **Private SQL** Datenbanken bestellen und weiter anpassen:
+- Darüber hinaus können Sie auch zusätzliche **CloudDB** Datenbanken bestellen und weiter anpassen:
 
     - *max_connections*: standardmäßig 100, bis zu 200 möglich
 
     - *max_user_connections*: standardmäßig 50, bis zu 200 möglich
 
-Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und in unserer [Anleitung](../erste-schritte-mit-sql-private/).
+Weitere Informationen hierzu finden Sie auf der [Webhosting Produktseite](https://www.ovhcloud.com/de/web-hosting/) und in unserer [Anleitung](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/).
 
 #### Verbindungen über einen externen Server
 
-- Aus Sicherheitsgründen ist es nicht möglich, sich über einen externen Server mit der Datenbank eines OVHcloud Webhostings zu verbinden, unabhängig davon, ob es sich dabei um eine geteilte oder eine Private SQL Datenbank handelt. Nur OVHcloud Webhosting Server können sich mit den Datenbankservern verbinden. Jeder andere Verbindungsversuch führt zu folgendem Fehler:
+- Aus Sicherheitsgründen ist es nicht möglich, sich über einen externen Server mit der Datenbank eines OVHcloud Webhostings zu verbinden, unabhängig davon, ob es sich dabei um eine geteilte oder eine CloudDB Datenbank handelt. Nur OVHcloud Webhosting Server können sich mit den Datenbankservern verbinden. Jeder andere Verbindungsversuch führt zu folgendem Fehler:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...

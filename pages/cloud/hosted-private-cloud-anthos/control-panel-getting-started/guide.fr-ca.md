@@ -6,7 +6,7 @@ section: Premiers pas
 order: 2
 ---
 
-**Dernière mise à jour le 08/10/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -40,12 +40,31 @@ La section `Ressources`{.action} vous donne un résumé du nombre d'hôtes, l'é
 
 ![Espace client](images/anthos_cp03.png){.thumbnail}
 
+#### Upgrade de l'abonnement <a name="upgrade"></a>
+
+Pour modifier votre pack Hosted Private Cloud powered by Anthos, cliquez sur `...`{.action} à côté de **Pack** dans la section `Ressources`{.action} et sélectionnez le pack vers lequel basculer. Ceci lancera le processus de commande de votre upgrade.
+
+![Espace client](images/anthos_upgrade.png){.thumbnail}
+
+#### Mises à jour logicielles
+
+Dans la section 'Informations générales'{.action}, une notification apparaît sous **Solution logicielle** lorsque des mises à jour de *Anthos on Baremetal in private mode* sont disponibles. Cliquez sur `Consulter les mises à jour disponibles`{.action} pour ouvrir la page de mise à jour logicielle.
+
+![Espace client](images/anthos_update1.png){.thumbnail}
+
+Vous pouvez lire les notes de version de chaque mise à jour du logiciel Anthos en cliquant sur le lien `Consulter le changelog`{.action}. Sélectionnez la version vers laquelle mettre à jour votre service et validez en cliquant sur `Mise à jour`{.action}.
+
+![Espace client](images/anthos_update2.png){.thumbnail}
+
 ### Créer et gérer des noeuds bare metal (hôtes) <a name="hosts"></a>
 
 Développez le tableau du haut de cette page pour voir les **hôtes inclus** dans le pack Hosted Private Cloud powered by Anthos. Un second tableau contiendra les **hôtes additionnels** pouvant être commandés séparément.
-<br>Vous pouvez procéder à la commande en cliquant sur le bouton `Commander un hôte`{.action}. Les hôtes additionnels ont une durée de renouvellement d'au moins un mois. Une remise sera accordée sur les commandes soumises à des engagements plus longs.
 
 ![Espace client](images/anthos_cp04.png){.thumbnail}
+
+Vous pouvez procéder à la commande en cliquant sur le bouton `Commander un hôte`{.action}. Les hôtes additionnels ont une durée de renouvellement d'au moins un mois. Une remise sera accordée sur les commandes soumises à des engagements plus longs.
+
+![Espace client](images/anthos_add_host.png){.thumbnail}
 
 #### Redémarrer un hôte
 
@@ -86,7 +105,7 @@ Dans la fenêtre qui apparaît, prenez connaissance des informations concernant 
 ### Créer et gérer des SVM NetApp (Stockage) <a name="netapp"></a>
 
 > [!primary]
-> Le stockage Dedicated NetApp est disponible uniquement avec le [Stateful Production Pack](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/anthos/). Il sera possible ultérieurement de faire évoluer un Hosted Private Cloud powered by Anthos.
+> Le stockage Dedicated NetApp est disponible uniquement avec le [Stateful Production Pack](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/anthos/). Vous pouvez faire évoluer votre pack Hosted Private Cloud powered by Anthos via [l'onglet Informations Générales](#upgrade).
 >
 
 Le stockage Dedicated NetApp s'appuie sur NetApp ONTAP et dispose de la technologie Trident, permettant à vos applications d'utiliser efficacement le stockage persistant via le standard Kubernetes Container Storage Interface (CSI) (création et modification de volumes, prise de snapshots, etc...).
@@ -107,12 +126,17 @@ Depuis l'onglet `IPs`{.action}, vous pouvez définir des plages IPv4 locales pou
 
 La plage incluse de 50 **adresses IPv4 publiques** s'affiche dans le tableau à gauche. Vous pouvez commander plus d'adresses IP publiques via le bouton `Actions`{.action} en haut à gauche. Cliquez sur alors sur `Commander des IPs publiques`{.action} pour procéder à cette commande.
 
+Choisissez le nombre de blocs IP à commander et cliquez sur `Confirmer`{.action}.
+
+![Control Panel](images/anthos_add_ip.png){.thumbnail}
+
 #### Plages d'IPs locales
 
 Les **adresses IP privées** sont librement utilisables mais leurs plages doivent être déclarées dans l’espace client OVHcloud afin d’être disponibles pour votre offre. Le tableau de droite liste vos adresses IP privées une fois que vous les aurez ajoutées. Pour cela, cliquez à droite sur le bouton `Actions`{.action} de droite puis sur `Assigner des IP privées`{.action}.
-<br>Vous pourrez par la suite attribuer les adresses IP dans la console Anthos.
 
 ![Espace client](images/anthos_cp11.png){.thumbnail}
+
+Vous pourrez par la suite attribuer les adresses IP dans la [console Anthos](#firststeps).
 
 Pour supprimer une entrée, utilisez le bouton `Supprimer`{.action} à droite de l'adresse concernée. Seules les adresses IP non assignées dans la console Anthos (leur statut est `Inactif` dans le tableau) peuvent être supprimées.
 

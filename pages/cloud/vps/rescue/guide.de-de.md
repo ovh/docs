@@ -5,7 +5,7 @@ excerpt: Erfahren Sie hier, wie Sie Ihren VPS in den Rescue-Modus versetzen
 section: Diagnose & Rescue Modus
 ---
 
-**Letzte Aktualisierung am 08.01.2021**
+**Letzte Aktualisierung am 11.02.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -24,7 +24,7 @@ Der Rescue-Modus ist allgemein geeignet für diese Aufgaben:
   - Fehlkonfiguration der Firewall korrigieren
   - Leistung der Festplatte testen
 
-Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch, festzustellen, ob ein Problem mit der Software oder Hardware zusammenhängt. Wir empfehlen Ihnen, dies zu tun, bevor Sie unsere Support-Teams kontaktieren.
+Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzustellen, ob ein Problem mit der Software oder Hardware zusammenhängt. Wir empfehlen Ihnen, diese auszuführen, bevor Sie unsere Support-Teams kontaktieren.
 
 > [!warning]
 >
@@ -49,7 +49,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch, festzust
 
 ### Aktivierung des Rescue-Modus
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `VPS`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
 
 #### Mit einem aktuellen VPS Angebot
 
@@ -77,6 +77,8 @@ Sobald Sie den Neustart ausgeführt haben, gibt ein Fortschrittsbalken den Forts
 >
 
 Sie können sich nun via SSH mit Ihrem VPS verbinden, indem Sie die Login-Daten für den Rescue-Modus verwenden. Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im "normalen" Modus noch einmal neu.
+
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Weiterführende Informationen
 

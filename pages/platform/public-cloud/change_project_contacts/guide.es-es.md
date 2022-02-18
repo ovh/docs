@@ -4,6 +4,7 @@ excerpt: 'Cambiar los contactos de un proyecto'
 slug: cambiar_los_contactos_de_un_proyecto
 legacy_guide_number: g2106
 section: 'Gestión del proyecto'
+order: 06
 ---
 
 **Última actualización: 6/12/2019**

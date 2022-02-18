@@ -23,8 +23,8 @@ Pour protéger de manière optimale votre système, votre serveur sous Windows S
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/)
-- Être connecté à votre serveur via un bureau distant sous Windows. 
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) sous Windows dans votre compte OVHcloud
+- Disposer d'un accès administrateur à votre serveur via un bureau distant sous Windows. 
 
 ## En pratique
 
@@ -88,7 +88,7 @@ A l'étape suivante, définissez le type de port à activer :
 Pour définir l’action que cette règle va déclencher, les options suivantes sont disponibles. Sélectionnez celle qui vous convient.
 
 - **Autoriser la connexion**. Cette option permet une communication complète via ce port.
-- **Autoriser la connexion si elle est sécurisée**. Cette option permet aux données d’être transmises uniquement si la connexion est authentifiée via Ipsec.
+- **Autoriser la connexion si elle est sécurisée**. Cette option permet aux données d’être transmises uniquement si la connexion est authentifiée via IPsec.
 - **Bloquer la connexion**. Cette option empêche les données d’être acheminées via ce port.
 
 Sélectionnez l’option `Autoriser la connexion`{.action} et cliquez sur `Suivant `{.action}. 
@@ -106,7 +106,7 @@ Attribuez un nom et une description à la nouvelle règle (optionnel) afin de fa
 
 ![Step7_01](images/step7-01.PNG){.thumbnail}
 
-Cliquez sur le bouton `Terminer `{.action} pour terminer le processus et créer la nouvelle règle.
+Cliquez sur le bouton `Terminer`{.action} pour terminer le processus et créer la nouvelle règle.
 
 ![Step7_02](images/step7_02.PNG){.thumbnail}
 

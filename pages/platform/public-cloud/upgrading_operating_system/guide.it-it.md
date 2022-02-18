@@ -32,6 +32,60 @@ Questa guida descrive gli step da seguire per aggiornare un sistema operativo al
 
 ## Procedura
 
+### Debian
+
+Prima di effettuare l'aggiornamento della versione principale del tuo OS, assicurati di aggiornare le versioni più recenti di tutti i pacchetti installati sulla sua versione attuale:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Il prossimo step è facoltativo.
+> Tuttavia, è necessario esaminare attentamente i pacchetti che non sono più necessari sul sistema. Altrimenti, il comando successivo può danneggiare il sistema. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Alcuni aggiornamenti che potrebbero richiedere un riavvio, è necessario riavviare prima di effettuare l'aggiornamento:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Dopo il riavvio, aggiorna la directory /etc/apt/sources.list per indirizzare la prossima versione (in questo esempio, passiamo da Buster a Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Una volta che la versione successiva è stata adattata, puoi procedere all'aggiornamento e al riavvio finale:
+
+> [!primary]
+> Le finestre contestuali potrebbero invitarti a riavviare i tuoi servizi. Risponda in caso affermativo.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Verifica che l'aggiornamento abbia funzionato:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Prima di effettuare l'aggiornamento della versione principale del tuo OS, assicurati di aggiornare le versioni più recenti di tutti i pacchetti installati sulla sua versione attuale:

@@ -2,7 +2,7 @@
 title: Salvare ed esportare un database sul tuo server di database
 slug: salvare-esportare-un-database
 excerpt: Come salvare ed esportare il tuo database
-section: SQL Privato
+section: CloudDB
 order: 4
 ---
 
@@ -10,7 +10,7 @@ order: 4
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/08/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ Il tuo database può contenere molte informazioni essenziali per il tuo sito. E'
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -48,13 +48,13 @@ Al livello della colonna **Backup**, la cifra corrisponde al numero di backup di
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona `Salva adesso`{.action}.
 
-![private-sql](images/private-sql-save01.png){.thumbnail}
+![clouddb](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Esporta un backup
 
 Clicca sui tre puntini `...`{.action} a destra del database e seleziona `Mostra i backup`{.action}
 
-![private-sql](images/private-sql-dl01.png){.thumbnail}
+![clouddb](images/private-sql-dl01.png){.thumbnail}
 
 Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a destra del backup scelto e poi su `Scarica il backup`{.action} per recuperare questo backup.
 
@@ -64,7 +64,7 @@ Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} a
 
  In alcuni casi, la RAM disponibile sul tuo server di database potrebbe non consentire di effettuare l'esportazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. che permetterà l'utilizzo di risorse esterne alla tua offerta per effettuare questa operazione. Consulta la sezione "[Salva ed esportare un database dallo Spazio Cliente](./#salvare-ed-esportare-un-database-dallo-spazio-cliente)" di questa guida.
 
-##### 1\.1 Esportare il mio database MySQL o MariaDB da phpMyAdmin OVHcloud (solo per l'offerta SQL Privato)
+##### 1\.1 Esportare il mio database MySQL o MariaDB da phpMyAdmin OVHcloud 
 
 Per esportare il tuo database direttamente da phpMyAdmin, è necessario effettuare l'accesso. Per effettuare questa operazione, consulta la guida ["Connettersi a un database"](../connessione-database-server-bdd).
 
@@ -72,24 +72,15 @@ Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi
 
 Avete due possibili modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
 
-![private-sql](images/private-sql-export01.png){.thumbnail}
+![clouddb](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Esporta il tuo database MySQL o MariaDB da riga di comando
-
-> [!primary]
->
-> Per un server SQL privato, questa azione è possibile solo in [SSH](../hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud.
 
 ```bash
 mysqldump —host=server —user=utente —port=port —password=password nome_database > nome_database.sql
 ```
 
 ##### 1\.3 Esportare il mio database MySQL o MariaDB da uno script PHP
-
-> [!primary]
->
-> Per un server SQL privato, l'esecuzione di questo script può essere effettuata solo da un hosting condiviso OVHcloud.
-
 
 ```php
 1. Il backup del tuo database è in corso.......";
@@ -110,19 +101,11 @@ mysqldump —host=server —user=utente —port=port —password=password nome_d
  
 ##### 2\.1 Esporta il tuo database PostgreSQL da riga di comando
 
-> [!primary]
->
-> Per un server SQL privato, questa azione è possibile solo in [SSH](../hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud.
-
 ```bash
 pg_dump —host=server —port=port —user=utente —password=password nome_database > nome_database.sql
 ```
 
 ##### 2\.2 Esporta il tuo database PostgreSQL da uno script PHP
-
-> [!primary]
->
-> Per un server SQL privato, l'esecuzione di questo script può essere effettuata solo da un hosting condiviso OVHcloud.
 
 ```php
 1. Il backup del tuo database è in corso.......";

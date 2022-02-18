@@ -1,15 +1,23 @@
 ---
-title: Implementação da Zerto Virtual Replication para o seu DRP
+title: Utilizar o Zerto Virtual Replication entre dois datacenters da OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres entre dois serviços Private Cloud.
 section: Serviços e opções OVHcloud
 ---
 
-**Última atualização: 28/08/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 11/02/2022**
 
 ## Objetivo
 
 Este guia explica os conceitos e os pormenores da implementação da Zerto Virtual Replication numa Private Cloud.
+
+Este guia tem como objetivo explicar os conceitos e os pormenores da implementação do Zerto Virtual Replication entre dois datacenters da OVHcloud.
+
+Para outros casos, consulte o nosso manual sobre como [utilizar Zerto entre a OVHcloud e uma plataforma de terceiros](https://docs.ovh.com/pt/private-cloud/zerto-replicacao-virtual-cliente-para-ovhcloud/).
 
 **Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres (DRP) entre dois serviços Private Cloud.**
 

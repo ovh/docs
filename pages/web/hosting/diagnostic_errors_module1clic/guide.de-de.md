@@ -55,7 +55,7 @@ Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomana
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) aktivieren.
+Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos [CloudDB](https://www.ovh.de/cloud/cloud-databases/) aktivieren.
 
 #### Lösung Nr. 2: Eine nicht verwendete Datenbank löschen <a name="deleteDB"></a>
 
@@ -143,11 +143,11 @@ Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebo
 > Wir können Ihnen keine weitergehende Unterstützung anbieten.
 >
 
-### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxx-xxx.privatesql'. Fehler: Zugriff verweigert für Benutzer 'xxxx'@'xxxxxxxx' (Passwort verwenden: JA)“
+### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxx-xxx.eu.clouddb.ovh.net'. Fehler: Zugriff verweigert für Benutzer 'xxxx'@'xxxxxxxx' (Passwort verwenden: JA)“
 
 ![cant_connect](images/cant_connect.png) {.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Private SQL Server](../erste-schritte-mit-sql-private/) oder [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [CloudDB Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
 
 Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](../datenbank-und-benutzer-erstellen/#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
 
@@ -157,7 +157,7 @@ Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhostin
 
 ![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Private SQL Server](../erste-schritte-mit-sql-private/) oder [CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [CloudDB Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Bereich `Web Cloud`{.action} und anschließend auf das Menü `Datenbanken`{.action} links in der Auswahl.
 

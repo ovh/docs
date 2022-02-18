@@ -82,11 +82,9 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernant vo
 > La sauvegarde de vos données fait partie des opérations essentielles à la [sécurisation de vos sites](https://docs.ovh.com/ca/fr/hosting/secure-website/). Nous vous conseillons d'importer régulièrement et **avant toute suppression** la sauvegarde de vos données sur un support local, tel qu'une clé USB ou un disque dur externe, en suivant les instructions de ce [guide](https://docs.ovh.com/ca/fr/hosting/exporter-son-site-web/).
 >
 
-#### Étape 1 : identifier la base de données lié à votre module <a name="step1"></a>
+#### Étape 1 : identifier la base de données liée à votre module <a name="step1"></a>
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
-
-Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [SQL privé](https://www.ovhcloud.com/fr-ca/web-hosting/options/private-sql/), vous pouvez considérer qu'il s'agit de celle de votre site.
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 

@@ -6,7 +6,7 @@ section: 'Backup Optionen'
 order: 2
 ---
 
-**Letzte Aktualisierung am 24.09.2020**
+**Letzte Aktualisierung am 01.02.2022**
 
 ## Ziel
 
@@ -27,7 +27,7 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 ### Schritt 1: Die Option „Automatisches Backup“ aktivieren
 
@@ -67,7 +67,7 @@ Klicken Sie auf `...`{.action} neben dem Backup, auf das Sie zugreifen müssen, 
 
 Nach Abschluss des Vorgangs erhalten Sie eine E-Mail. Sie können jetzt eine Verbindung zu Ihrem VPS herstellen und die Partition hinzufügen, auf der sich Ihr Backup befindet.
 
-#### Schritt 2: Secure Shell
+#### Unter Secure Shell
 
 Stellen Sie zunächst über SSH eine Verbindung zu Ihrem VPS her.
 
@@ -100,8 +100,28 @@ $ mount /dev/sdb1 /mnt/restore
 
 Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.
 
+#### Unter Windows
+
+Stellen Sie eine RDP-Verbindung (Remote Desktop) mit Ihrem VPS her.
+
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf den Button `Start`{.action} und öffnen Sie die `Datenträgerverwaltung`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+Ihr Backup erscheint als "Basic" Datenträger mit demselben Speicherplatz wie Ihre Haupt-Disk.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+Die Disk wird als `Offline` angezeigt. Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action} aus.
+
+![online backup](images/windowsbackup3.png) {.thumbnail}
+
+Anschließend können Sie auf Ihr gemountetes Backup als Laufwerk über den `Datei-Explorer` zugreifen.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
+
 > [!warning]
-> Bitte beachten Sie, dass bei der Demontage des Backups ein Neustart des Servers erfolgt.
+> Bitte beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
 >
 
 

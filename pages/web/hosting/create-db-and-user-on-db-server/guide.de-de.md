@@ -2,11 +2,11 @@
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 slug: datenbank-und-benutzer-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-section: SQL Private
+section: CloudDB
 order: 2
 ---
 
-**Letzte Aktualisierung am 30.10.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -16,7 +16,7 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

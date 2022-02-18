@@ -16,9 +16,9 @@ SSH is a protocol making it possible to access and communicate with a server in 
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVH account
+- A [Public Cloud project](https://docs.ovh.com/ie/en/public-cloud/create_a_public_cloud_project/) in your OVH account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- An [SSH key](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys/)
+- An [SSH key](https://docs.ovh.com/ie/en/public-cloud/public-cloud-first-steps/)
 
 
 ## Instructions
@@ -35,7 +35,7 @@ There are two ways to add an SSH key from the Public Cloud interface:
 
 
 ### Creation of an instance
-From the Public Cloud client interface, to create a cloud instance, click on `Create an instance`{.action} in the Instances menu under the `Compute`{.action} section on the left-hand menu.
+From the Public Cloud client interface, to create a cloud instance, click on `Create an instance`{.action} in the `Instances`{.action} menu under the **Compute** section on the left-hand menu.
 
 ![Add a server](images/compute.png){.thumbnail}
 

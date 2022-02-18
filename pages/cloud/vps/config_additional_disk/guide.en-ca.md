@@ -22,7 +22,7 @@ With OVHcloud Virtual Private Servers you have the possibility to add a secure s
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand menu under `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 ### Subscribing to the additional disk option
 
@@ -195,7 +195,7 @@ If the disk is marked as offline here, it needs to be initialised first. You can
 
 ##### **Initialising the disk in Disk Management** <a name="initDiskManagement"></a>
 
- Right-click on the disk and select `Online`{.action}. 
+Right-click on the disk and select `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 

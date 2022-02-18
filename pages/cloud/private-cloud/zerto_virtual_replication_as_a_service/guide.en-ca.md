@@ -1,17 +1,19 @@
 ---
-title: 'Setting up Zerto Virtual Replication for your DRP'
+title: 'Setting up Zerto Virtual Replication between two OVHcloud datacenters'
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: 'Discover how to set up Zerto Virtual Replication between your Private Cloud platforms'
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 25th June 2020**
+**Last updated 11th February 2022**
 
 ## Objective
 
-This guide will present the concepts and steps required to setup Zerto Virtual Replication on the Private Cloud platform
+This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud datacenters.
 
-**Discover how to set up Zerto Virtual Replication between your Private Cloud platforms.**
+For instructions for cross platforms set up, please our guide on [using Zerto between OVHcloud and a third party plateform](https://docs.ovh.com/ca/en/private-cloud/zerto-virtual-replication-customer-to-ovh/).
+
+**Discover how to set up Zerto Virtual Replication between your Hosted Private Cloud platforms.**
 
 ## Requirements 
 

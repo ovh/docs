@@ -5,7 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated January 10, 2021.**
+**Last updated February 16th, 2022.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
@@ -18,6 +18,7 @@ Currently the service is available in several regions:
 
 - GRA (Western Europe)
 - SBG (Central Europe)
+- DE1 (Central Europe)
 - WAW (Eastern Europe)
 - BHS (North America)
 - SGP (South-East Asia)

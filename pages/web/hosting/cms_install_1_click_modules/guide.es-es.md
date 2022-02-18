@@ -5,11 +5,11 @@ excerpt: Cómo instalar un sitio web con los módulos en un clic de OVH
 section: CMS
 ---
 
-**Última actualización: 15/04/2019**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 
-Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida sin necesidad de conocimientos técnicos. OVH tiene módulos en un clic de los CMS más conocidos: WordPress, PrestaShop, Drupal y Joomla.
+Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida sin necesidad de conocimientos técnicos. OVHcloud tiene módulos en un clic de los CMS más conocidos: WordPress, PrestaShop, Drupal y Joomla.
 
 **Esta guía explica cómo instalar un sitio web con nuestros módulos en un clic.**
 
@@ -28,16 +28,16 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 Los CMS (del inglés *content management system*) permiten diseñar un sitio web a través de una interfaz fácil de usar. Existen distintos CMS en función del proyecto que desee crear. Estos módulos le permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.).
 
-OVH ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
+OVHcloud ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
 
-Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVH, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
+Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
 ![Logotipos de los CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Acceder a la gestión de los módulos en un clic
 
-En la columna izquierda del área de cliente de  OVH, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
+En la columna izquierda del área de cliente de  OVHcloud, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
 
 ![Acceso a la sección «Módulos en un clic»](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Si no encuentra el dominio en la lista, abra la pestaña `Multisitio`{.action} p
 
 Una vez seleccionado el módulo, deberá elegir entre el modo de instalación simple o avanzado.
 
-- Si selecciona la instalación simple (opción por defecto), OVH se encargará de instalar el CMS y le enviará las claves para que pueda administrarlo. Es la forma más sencilla y rápida de instalar un módulo.
+- Si selecciona la instalación simple (opción por defecto), OVHcloud se encargará de instalar el CMS y le enviará las claves para que pueda administrarlo. Es la forma más sencilla y rápida de instalar un módulo.
 - Si selecciona la instalación avanzada, podrá personalizar la configuración de la instalación del CMS. Para ello, deberá proporcionar diversos datos necesarios para el funcionamiento del CMS en su base de datos: información de conexión, directorio de instalación, idioma, nombre del administrador, etc.
 
 
@@ -84,8 +84,8 @@ Introduzca la información de conexión a la base de datos que utilizará con el
 
 - Si la base de datos ya está creada en el alojamiento, selecciónela e introduzca la información que se le solicita.
 - Si la base de datos todavía no está creada en el alojamiento, deberá seguir los pasos que se indican para crearla y, a continuación, seleccionarla e introducir la información que se le solicita.
-- Si la base de datos ya está creada en un SQL Privado o CloudDB, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El SQL Privado o CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
-- Si la base de datos ya está creada en otro alojamiento web de OVH, seleccione `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en un CloudDB, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. El CloudDB y el plan de hosting deben estar alojados en el mismo datacenter.
+- Si la base de datos ya está creada en otro alojamiento web de OVHcloud, selecciónela en la lista `Base de datos externa al alojamiento web`{.action} e introduzca la información que se le solicita. La base de datos y el plan de hosting deben estar alojados en el mismo datacenter.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
 
@@ -140,8 +140,6 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 [Elegir un CMS para crear un sitio web](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/){.external}
 
 [Gestionar una base de datos desde un alojamiento compartido](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
-
-Descubra nuestras [opciones de SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
 
 Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
 

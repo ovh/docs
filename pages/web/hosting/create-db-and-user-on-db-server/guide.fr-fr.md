@@ -2,11 +2,11 @@
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 slug: creer-bases-de-donnees-et-utilisateurs
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-section: 'SQL Privé'
+section: CloudDB
 order: 2
 ---
 
-**Dernière mise à jour le 24/08/2020**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -16,7 +16,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

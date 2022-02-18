@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/'
 ---
 
-**Last updated June 14<sup>th</sup>, 2021**
+**Last updated 1st Febuary 2022**
 
 ## Objective
 
@@ -18,12 +18,15 @@ The subscription and configuration details of your MongoDB databases can be mana
 
 ## Requirements
 
-- a MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/))
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- A MongoDB database service in your OVHcloud account (find the details in [this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/))
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+
+> [!primary]
+> Note that the configuration options might be different for other database types.
 
 ### Databases overview
 
@@ -74,9 +77,9 @@ You can restore and delete backups via the `...`{.action} button.
 ### Configuring authorised IPs
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorize the suitable IP addresses in order to successfully access your database.
+> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you authorise the suitable IP addresses in order to successfully access your database.
 
-Switch to the tab `Authorised IPs`{.action}. IP addresses must be authorized here before they can connect to your database.
+Switch to the tab `Authorised IPs`{.action}. IP addresses must be authorised here before they can connect to your database.
 
 ![Authorised IP](images/configure_mongo07.png){.thumbnail}
 

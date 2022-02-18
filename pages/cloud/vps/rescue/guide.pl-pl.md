@@ -5,7 +5,7 @@ excerpt: Sprawdź, jak włączyć serwer VPS w trybie Rescue
 section: Diagnostyka i tryb Rescue
 ---
 
-**Ostatnia aktualizacja z dnia 24 listopada 2020 r**
+**Ostatnia aktualizacja z dnia 11-02-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -74,6 +74,8 @@ Po uruchomieniu restartu pasek postępu wskazuje postęp zadania. Może to potrw
 >
 
 Możesz teraz zalogować się przez SSH do Twojego VPS, używając informacji dotyczących trybu Rescue. Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "normalnym" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Sprawdź również
 

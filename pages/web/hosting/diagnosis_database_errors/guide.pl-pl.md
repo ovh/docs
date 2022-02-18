@@ -10,7 +10,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 08/10/2021**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 
@@ -29,7 +29,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/) OVHcloud
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [SQL prywatny](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/).
+- Korzystanie z jednej z naszych ofert baz danych [Web Cloud](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) lub [CloudDB](https://www.ovh.pl/cloud/cloud-databases/)
 
 ## W praktyce
 
@@ -37,7 +37,7 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 #### Zweryfikuj zdarzenia w trakcie
 
-Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój prywatny serwer SQL lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
+Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój CloudDB lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://we
 >
 > - Aby znaleźć `Datacenter` Twojego hostingu, wraz z `Filer` (serwer plików), w menu po lewej stronie wybierz `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Informacje te można znaleźć w zakładce `Informacje ogólne`{.action}.
 > - Aby odnaleźć **cluster** serwerów, na których hostowany jest Twój hosting, kliknij zakładkę `FTP-SSH`{.action}. Informacja ta pojawi się w nazwie Twojego `Serwer FTP`.
-> - Aby odnaleźć nazwę serwera **Private SQL**, kliknij przycisk `Bazy danych`{.action} w menu po lewej stronie, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
+> - Aby odnaleźć nazwę serwera **CloudDB**, kliknij przycisk `Bazy danych`{.action} w menu po lewej stronie, a następnie wybierz odpowiednią ofertę. Informacja ta znajduje się pod pozycją `Nazwa hosta` w polu `SQL` `Informacje na temat połączenia`.
 >
 
 #### Sprawdź dane do logowania do bazy danych <a name="config_file"></a>
@@ -131,7 +131,7 @@ Możesz również przenieść dane na nową bazę:
 
 > [!primary]
 >
-> Jeśli dysponujesz hostingiem **Performance**, możesz również [włączyć za darmo prywatny serwer SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/#wlaczenie-prywatnego-serwera-sql-zawartego-w-ofercie-hostingu).
+> Jeśli dysponujesz hostingiem **Performance**, możesz również [włączyć za darmo CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu).
 >
 
 #### Metoda 3: usuń niepotrzebne dane
@@ -156,7 +156,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 ### Przekroczenie pojemności pamięci RAM
 
-Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [SQL Prywatny](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
+Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
@@ -189,7 +189,7 @@ Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawie
 >
 > Jakie elementy w skrypcie importu bazy danych mogą spowodować błąd "#1044 - Access denied for user to database"?
 
-Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
+Posiadanie **"trigger"** w skrypcie importu bazy danych nie jest dozwolone na serwerach hostingu www OVHcloud. W takiej sytuacji zaimportuj bazę danych na serwer [CloudDB](https://www.ovh.pl/cloud/cloud-databases/).
 
 Ponadto nie zezwala się na następujące zapytanie:
 
@@ -211,11 +211,11 @@ USE `Database-Name`;
 > **"ERROR MySQL server has gone away"**
 >
 
-Ten komunikat błędu pojawia się podczas [importu bazy danych](https://docs.ovh.com/pl/hosting/przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [Prywatny SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/). Wiąże się to głównie z zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
+Ten komunikat błędu pojawia się podczas [importu bazy danych](https://docs.ovh.com/pl/hosting/przywracanie-importowanie-bazy-danych/#1-przywroc-istniejaca-kopie-zapasowa) na serwerze [CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Wiąże się to głównie z zbyt dużą ilością danych do importu lub z brakiem optymalizacji zapytań SQL w skrypcie importu.
 
 Aby usunąć tę anomalię, możesz:
 
-- Zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [prywatny serwer SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
+- Zwiększyć [ilość pamięci RAM](https://docs.ovh.com/pl/hosting/konfiguracja-optymalizacja-serwera-bazy-danych/#monitoruj-zuzyta-pamiec-ram). W tym celu przejdź do [CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/) w sekcji `Bazy danych`{.action} twojego [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij przycisk `...`{.action} w części `RAM`, a następnie na `Zmień ilość pamięci RAM`{.action}.
 
 - Podziel bazę danych, aby ją importować na kilka operacji zamiast jednej (w przypadku pytań dotyczących operacji, które należy przeprowadzić, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie.)
 
@@ -243,7 +243,7 @@ W takiej sytuacji [sprawdź wpisane dane](https://docs.ovh.com/pl/hosting/polacz
 
 Maksymalna liczba aktywnych połączeń dla baz danych dostarczanych na hostingu ([StartSQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)) wynosi **30**.
 
-Liczba ta wynosi **200** dla baz serwerów [SQL prywatny](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
+Liczba ta wynosi **200** dla baz serwerów [CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/) (Ten parametr można zmienić w części `Konfiguracja`{.action} twojego serwera bazy danych).
 
 Wiadomość ta pojawia się podczas [logowania do phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin), gdy ta maksymalna liczba połączeń jest przekroczona.
 
@@ -270,12 +270,12 @@ Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud
 >
 > Jeśli baza danych, do której chcesz się zalogować, wyświetla się w zakładce `Bazy danych`{.action} w części `Hosting`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), nazwa, którą należy wpisać jest wpisana w kolumnie `Adres serwera`.
 >
-> Jeśli chcesz zalogować się do bazy danych na serwerze [Prywatny SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
+> Jeśli chcesz zalogować się do bazy danych na serwerze [CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/), nazwa serwera, która ma zostać wprowadzona jest w zakładce `Informacje ogólne`{.action}, w części `Informacje na temat połączenia`{.action}, `SQL`{.action} i w sekcji `Nazwa hosta`{.action}.
 >
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Pierwsze kroki z usługą Prywatnego SQL](https://docs.ovh.com/pl/hosting/pierwsze-kroki-private-sql/)
+[Pierwsze kroki z usługą CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

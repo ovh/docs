@@ -3,7 +3,7 @@ title: 'Crear y conectarse a una instancia de Public Cloud'
 slug: public-cloud-primeros-pasos
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
 section: 'Primeros pasos'
-order: 1
+order: 04
 ---
 
 **Última actualización: 30/03/2021**

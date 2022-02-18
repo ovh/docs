@@ -4,7 +4,7 @@ excerpt: 'Cómo aumentar el límite en Public Cloud'
 slug: aumentar_el_limite_de_public_cloud
 legacy_guide_number: g1904
 section: 'Gestión del proyecto'
-order: 6
+order: 04
 ---
 
 > [!primary]

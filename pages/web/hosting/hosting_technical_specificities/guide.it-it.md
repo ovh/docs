@@ -37,19 +37,19 @@ order: 6
 
 ### Connessioni simultanee al database
 
-- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database privato incluso). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
+- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database CloudDB). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
 
-- Inoltre è possibile ordinare database **Private SQL** aggiuntivi, che dispongono di opzioni di personalizzazione.
+- Inoltre è possibile ordinare database **CloudDB** aggiuntivi, che dispongono di opzioni di personalizzazione.
 
     - *max_connections*: 100 di default, con possibilità di passare a 200
 
     - *max_user_connections*: 50 di default, con possibilità di passare a 200
 
-Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](../iniziare-a-utilizzare-sql-privato/).
+Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
 
 #### Connessioni dal server esterno
 
-- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure privati. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
+- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure CloudDB. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...

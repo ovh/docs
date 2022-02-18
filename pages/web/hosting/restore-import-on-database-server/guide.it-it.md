@@ -2,7 +2,7 @@
 title: Ripristinare e importare un database sul tuo server di database
 slug: ripristinare-importare-database
 excerpt: Come ripristinare e importare il database
-section: SQL Privato
+section: CloudDB
 order: 5
 ---
 
@@ -10,7 +10,7 @@ order: 5
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 11/06/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) o [Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -43,7 +43,7 @@ Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona
 
 Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} in corrispondenza del backup scelto e seleziona `Ripristina il backup`{.action}.
 
-![private-sql](images/private-sql-restore01.png){.thumbnail}
+![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} i
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del database e seleziona `Importa un file`{.action}.
 
-![private-sql](images/private-sql-import01.png){.thumbnail}
+![clouddb](images/private-sql-import01.png){.thumbnail}
 
 Hai due possibilità:
 
@@ -70,7 +70,7 @@ Inserisci un nome per il tuo file importato, clicca su `Seleziona`{.action} il n
 > Il file deve essere in formato ".gz".
 > 
 
-![private-sql](images/private-sql-import02.png){.thumbnail}
+![clouddb](images/private-sql-import02.png){.thumbnail}
 
 Seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato della fine dell'operazione sull'indirizzo email di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
 
@@ -80,7 +80,7 @@ Se hai già importato un file in precedenza, puoi scegliere l'opzione **"Importa
 
 Seleziona il file nel menu a tendina e clicca su `Seguente`{.action}.
 
-![private-sql](images/private-sql-import03.png){.thumbnail}
+![clouddb](images/private-sql-import03.png){.thumbnail}
 
 Seleziona **"Svuota il database attuale"** prima dell'importazione e **"Invia un'email alla fine dell'importazione"** per essere informato della fine dell'operazione sull'indirizzo email di riferimento del tuo account OVHcloud, poi clicca su `Conferma`{.action}.
 
@@ -107,7 +107,7 @@ Seleziona il tuo file di backup cliccando `Sfoglia`{.action} (attenzione, il fil
 
 Lascia le opzioni predefinite e clicca su `Esegui`{.action} per avviare l'importazione.
 
-![private-sql](images/private-sql-import04.png){.thumbnail}
+![clouddb](images/private-sql-import04.png){.thumbnail}
 
 #### Importare il tuo database MySQL o MariaDB da riga di comando
 

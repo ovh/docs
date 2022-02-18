@@ -105,7 +105,7 @@ Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) atravé
 De seguida, selecione a norma ISO que deseja utilizar no sistema de ficheiros do seu computador local. Depois de selecionar a sua norma ISO, prima o botão `Ctrl Alt Del`{.action} no canto superior direito do ecrã para reiniciar o servidor. Carregue na tecla `F` para aceder às opções de arranque.
 
 > [!primary]
-> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Keyboard` {.action} na barra de menus no topo da janela. De seguida, selecione `Soft Keyboard` no menu pendente e clique em `Show` {.action}.
+> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Keyboard`{.action} na barra de menus no topo da janela. De seguida, selecione `Soft Keyboard` no menu pendente e clique em `Show`{.action}.
 >
 
 Selecione a opção `UEFI Virtual CDROM 1.00` no menu de arranque (Boot) para iniciar o servidor a partir da ISO previamente associada.
@@ -133,7 +133,7 @@ Para começar a partir do seu ficheiro ISO, deve aceder à BIOS e alterar as op�
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
 > [!primary]
-> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Virtual Media` {.action} na barra de menus no topo da janela. De seguida, selecione `Virtual Keyboard` {.action} no menu pendente.
+> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Virtual Media`{.action} na barra de menus no topo da janela. De seguida, selecione `Virtual Keyboard`{.action} no menu pendente.
 >
 
 Durante o processo de arranque, prima a tecla `SUPR` quando for convidado a aceder à BIOS. Também pode carregar na tecla `F11` e aceder à BIOS selecionando a opção `Enter Setup`{.action}.

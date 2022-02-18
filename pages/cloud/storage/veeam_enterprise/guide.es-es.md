@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar un servidor Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Última actualización: 06/10/2021**
+**Última actualización: 08/02/2022**
 
 ## Objetivo
 
@@ -18,11 +18,6 @@ Veeam Backup & Replication es un programa que permite gestionar la seguridad de 
 
 * Tener contratado Veeam Enterprise.
 * Disponer de una máquina Windows Server 2012 o 2016.
-
-> [!primary]
->
-> Nuestras soluciones Veeam solo son compatibles con la última versión (10) de Veeam. Tenga en cuenta este aspecto a la hora de configurar Veeam para sus servicios.
->
 
 ## Procedimiento
 

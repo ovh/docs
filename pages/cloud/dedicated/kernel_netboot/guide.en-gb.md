@@ -9,18 +9,18 @@ section: 'Server management'
 
 ## Objective
 
-The Netboot feature is a service offered for free by OVH, it allows you to start your OVH dedicated server on a precompiled kernel provided by OVH. Once configured this way, your server automatically loads the kernel from the network, so you do not have to configure anything else. This method also allows you to update your kernel very simply because OVH compiles the latest version of the kernel as soon as it is available and makes it available on Netboot.
+The Netboot feature is a service offered for free by OVHcloud, it allows you to start your OVHcloud dedicated server on a precompiled kernel provided by OVHcloud. Once configured this way, your server automatically loads the kernel from the network, so you do not have to configure anything else. This method also allows you to update your kernel very simply because OVHcloud compiles the latest version of the kernel as soon as it is available and makes it available on Netboot.
 
-**This guide will perform a network boot of your server using an OVH kernel.**
+**This guide will perform a network boot of your server using an OVHcloud kernel.**
 
 ## Requirements
 
 - a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
-The Netboot facility needs to be configured in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+The Netboot facility needs to be configured in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ### Boot your server from the disk
 
