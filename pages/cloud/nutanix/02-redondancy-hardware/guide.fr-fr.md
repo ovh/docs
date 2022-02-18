@@ -34,8 +34,8 @@ La solution NUTANIX d'OVH permet d'avoir jusqu'a 18 noeuds
 
 La redondance des données ne se fait pas sur un noeud comme avec du RAID mais au travers du réseau sur plusieurs noeuds, il y'a plusieurs niveaux de redondances
 
-* RF1: Les données sont disponibles sur 2 noeuds, ce qui permet la défaillance d'un noeud ou d'un disque de données sur un des noeuds
-* RF2: Les données sont disponibles sur 3 noeuds, cette solution n'est possible qu'a partir de 5 noeuds, elle est plus securisée car elle permet la perte de deux noeuds, le revers de la médaille c'est quelle est plus 
+* RF2: Les données sont disponibles sur 2 noeuds, ce qui permet la défaillance d'un noeud ou d'un disque de données sur un des noeuds
+* RF3: Les données sont disponibles sur 3 noeuds, cette solution n'est possible qu'a partir de 5 noeuds, elle est plus securisée car elle permet la perte de deux noeuds, le revers de la médaille c'est quelle est plus 
 
 ### Connexion au cluster
 
