@@ -102,7 +102,7 @@ Les utilisateurs sont responsables de la gestion de leurs sauvegardes (outil et 
 
 ### Les snapshots sont-ils compris dans la capacité d’un pool ?
 
-Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, un service de 5To sera accompagné de 25OG additionnels réservés pour les snapshots. Au delà de cette capacité, les snapshots occuperont l'espace du service.
+Un minimum de 5% de l’espace de stockage est attribué aux snapshots. Par exemple, un service de 5To sera accompagné de 250G additionnels réservés pour les snapshots. Au delà de cette capacité, les snapshots occuperont l'espace du service.
 
 ### Quel est le nombre maximum de snapshots par service ?
 
