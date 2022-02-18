@@ -2,7 +2,6 @@
 title: Cluster autoscaler example
 slug: cluster-autoscaler-example
 section: Tutorials
-order: 8
 ---
 
 <style>

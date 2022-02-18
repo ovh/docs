@@ -2,7 +2,7 @@
 title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
-section: Storage tutorials
+section: Storage
 order: 3
 ---
 

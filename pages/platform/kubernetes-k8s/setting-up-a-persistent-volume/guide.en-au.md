@@ -1,8 +1,8 @@
 ---
-title: Setting-up a Persistent Volume OVHcloud Managed Kubernetes
+title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 slug: setting-up-a-persistent-volume
 excerpt: ''
-section: Storage tutorials
+section: Storage
 order: 0
 ---
 
