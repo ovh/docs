@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Last updated 1<sup>st</sup> July, 2019.**
+**Last updated February 18, 2022.**
 
 Follow this quickstart guide to deploy a containerised *Hello World* application on your OVHcloud Managed Kubernetes Service cluster, using the OVH Control Panel.
 
@@ -21,17 +21,23 @@ In this guide, we are assuming that you're using the [OVHcloud Cloud Manager](ht
 
 ## Getting your cluster information
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [Cloud section of the OVH Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 
-![Access to the administration UI](images/kubernetes-quickstart-01.png){.thumbnail}
+Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Managed Kubernetes Service`{.action} in the left-hand menu.
 
-In this administration UI, you have three tabs:
+![Select your cluster](images/select-cluster.png){.thumbnail}
+
+Click on your cluster to access on its information.
+
+In this administration UI, you have several tabs included:
 
 - **Service:** a global view of your cluster, with important information like the status, API URL, and `kubectl` configuration file.
 
-- **Nodes:** the active nodes of your cluster, with options for adding, modifying or removing them.
+- **Node pools:** the node pools of your cluster, with options for adding, configuring or removing them.
 
-- **Containers and Services:** coming soon...
+- **APIServer access:** TODO: xx
+
+- **Audit Logs:** logs of your Kubernetes cluster’s control-plane.
 
 ## Configuring the default settings for kubectl
 
