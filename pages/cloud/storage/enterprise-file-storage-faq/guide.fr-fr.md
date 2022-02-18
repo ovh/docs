@@ -132,7 +132,7 @@ Il n’existe pas encore de métriques intégrées pour suivre l’utilisation d
 
 ### Quel type de tarification est lié au service ?
 
-Enterprise File Storage est un service facturé mensuellement au volume (1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
+Enterprise File Storage est un service facturé mensuellement au volume (de 1 à 58 To par paliers de 1 To). Il est également possible, optionnellement, de s'engager sur une durée d'utilisation du service (12, 24 ou 36 mois).
 
 ## Aller plus loin
 
