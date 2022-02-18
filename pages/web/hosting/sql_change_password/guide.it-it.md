@@ -112,7 +112,7 @@ Clicca sulla parte **sinistra** dello schermo e poi su `Database`{.action}.
 
 Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
-Sempre in questa sezione del tuo Spazio Cliente OVH, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
+Sempre in questa sezione del tuo Spazio Cliente OVHcloud, clicca sulla scheda `Utente e diritti`{.action}, per visualizzare anche il `Nome utente`{.action} del tuo database.
 
 ### Step 3: Modifica la password del database del tuo sito nel file di configurazione <a name="step3"></a>
 
@@ -201,7 +201,7 @@ Di nuovo, sono possibili due casi:
 
 #### Caso 1: il database del tuo sito fa parte della tua offerta di hosting <a name="case1"></a>
 
-Accedi alla sezione `Hosting`{.action} dello Spazio Cliente OVH, clicca sulla scheda `Database`{.action} in corrispondenza del tuo schermo:
+Accedi alla sezione `Hosting`{.action} dello Spazio Cliente OVHcloud, clicca sulla scheda `Database`{.action} in corrispondenza del tuo schermo:
 
 ![database-password-step1](images/database-password-step1.png){.thumbnail}
 

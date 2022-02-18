@@ -112,7 +112,7 @@ A continuación, haga clic en la columna **izquierda** de su pantalla en `Bases 
 
 En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [CloudDB](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
 
-En el área de cliente de OVH, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
+En el área de cliente de OVHcloud, abra la pestaña `Usuario y permisos`{.action} para identificar también el `Nombre de usuario`{.action} de la base de datos.
 
 ### Etapa 3: Cambiar la contraseña de la base de datos del sitio web en el archivo de configuración <a name="step3"></a>
 
