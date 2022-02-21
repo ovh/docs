@@ -75,7 +75,7 @@ Po pierwsze, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/
 
 W zakładce `Informacje ogólne`{.action}, a następnie w ramce **Stan usług** kliknij przycisk `...`{.action} obok przycisku "Monitoring". Kliknij przycisk `Aktywuj`{.action} lub `Wyłącz`{.action} . Kliknij `Zatwierdź`{.action} w oknie, które się wyświetli, aby potwierdzić zmiany.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Włącz monitoring konkretnych usług
 
@@ -83,7 +83,7 @@ Poza standardowym monitoringiem możesz zezwolić OVHcloud na monitorowanie okre
 
  W tym celu w zakładce `Informacje ogólne`{.action}, a następnie w ramce **Stan usług** kliknij przycisk `...`{.action} obok przycisku "Monitorowane usługi". Kliknij na `Konfiguruj monitoring`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
  Zostaniesz przekierowany na poniższy ekran. Kliknij `Monitoruj usługę`{.action}, a następnie podaj adres IP, protokół, numer portu, odpowiedź serwera i czas pomiędzy weryfikacjami usługi. Kliknij symbol zatwierdzenia (**V**), aby potwierdzić zmiany.
 
