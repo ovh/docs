@@ -49,33 +49,33 @@ Dans cette documentation nous allons nous connecter au travers de PRISM Central
 
 L'accès au cluster se fait au travers d'une adresse publique sur une adresse du type [https://ippubliqueloadbalancer:9440](https://ippubliqueloadbalancer:9440)
 
-![PrismCentralLogin](/Images/PrismCentralLogin.PNG)
+![PrismCentralLogin](images/PrismCentralLogin.PNG)
 
-![PrismCentralLogin](/Images/PrismCentralUsername.PNG)
+![PrismCentralLogin](images/PrismCentralUsername.PNG)
 
 Dans la partie encadrée saisir un nom d'utilateur un mot de passe et cliquer sur la flêche.
 
-![PrismCentralLogin](/Images/PrismCentralUsername.PNG)
+![PrismCentralLogin](images/PrismCentralUsername.PNG)
 
-![PrismCentralDashboard](/Images/PrismCentralDashboard.PNG)
+![PrismCentralDashboard](images/PrismCentralDashboard.PNG)
 
 Sur le tableau de bord de prism central nous allors cliquer sur le nom du cluster dans Cluster Quick Access là ou se trouve l'encadrement.
 
-![PrismCentralDashboard](/Images/PrismCentralDashboard.PNG)
+![PrismCentralDashboard](images/PrismCentralDashboard.PNG)
 
 Sur la sélection à droite apparait le nombre de Disques en totalité , le nombre de VMs ainsi que le le nombre d'hote. Un coeur de couleur verte indique indique que le cluster NUTANIX fonctionne correctement. En bas de cet encadré on peut voir le niveau de tolérance de panne **1 signifie que  nous sommes en RF2 avec la possibilité d'une perte d'un disque sur un noeud ou un noeud entièrement**.
 
 Sur la sélection à gauche nous avons un résumé du stockage , de l'espace disque en cliquant sur view Details nous aurons plus d'information sur le stockage.
 
-![StorageDetail](/Images/StorageDetail.PNG)
+![StorageDetail](images/StorageDetail.PNG)
 
 Dans cette fenêtre on peut voir l'état du stockage par noeud.
 
-![HardwareMenu](/Images/HardwareMenu.PNG)
+![HardwareMenu](images/HardwareMenu.PNG)
 
 En allant dans le menu hardware et en cliquant sur **Hardware** nous aurons le détail par Noeud du stockage avec le nombre de disques allouées par noeud
 
-![HarwareDetail](/Images/HardwareDetail.PNG)
+![HarwareDetail](images/HardwareDetail.PNG)
 
 
 
