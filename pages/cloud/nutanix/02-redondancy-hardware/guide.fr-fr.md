@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Cette documentation rappelle le fonctionnement d'un cluster NUTANIX et des capacités de palier à une défaillance matérielle.
+Cette documentation rappelle le fonctionnement d'un cluster NUTANIX et de ses capacités pour palier à une défaillance matérielle.
 
 ## Présentation des matériels
 
@@ -24,13 +24,13 @@ Une solution nutanix est composée de ce que l'on appelle des noeuds, un noeud e
 * De la mémoire.
 * Parfois une carte graphique.
 
-Dans l'idéal il faut que chaque noeud d'un cluster NUTANIX soit identique 
+Dans l'idéal il faudrait que chaque noeud d'un cluster NUTANIX soit identique mais il peut arriver qu'il y'ai des différences notamment sur la présence de GPU **Graphical Processor Unit**, mais les noeuds qui contiennent des données doivent être identiques.
 
 ### Fonctionnement de la redondance
 
 Un cluster est créé à partir des noeuds du cluster, il faut au minumum 3 noeuds pour faire fonctionner une cluster
 
-La solution NUTANIX d'OVHcloud permet d'avoir jusqu'a 18 noeuds
+Pour rappel la solution NUTANIX d'OVHCloud commence à 3 noeuds et peut aller jusqu'a 18 noeuds
 
 La redondance des données ne se fait pas sur un noeud comme avec du RAID mais au travers du réseau sur plusieurs noeuds, il y'a plusieurs niveaux de redondances
 
@@ -41,13 +41,44 @@ La redondance des données ne se fait pas sur un noeud comme avec du RAID mais a
 
 La connexion au cluster peut se faire de plusieurs manières:
 
-* Sur l'interface WEB Prism ELEMENT **C'est en fait une des C.V.M**
-* A partir de l'interface WEB Prism Central **Machine virtuelle supplémentaire qui possèdes des fonctionnalités que n'a pas PRISM Element et qui permet de se connecter à un plusieurs clusters**
-* En SSH sur le cluster **Dans ce cas là c'est aussi une des C.V.M**
+* Sur l'interface WEB Prism ELEMENT **C'est en fait une des CVM**
+* A partir de l'interface WEB Prism Central **Machine virtuelle supplémentaire qui possèdes des fonctionnalités que n'a pas PRISM Element et qui permet de se connecter à un ou plusieurs clusters**
+* En SSH sur le cluster **Dans ce cas là c'est aussi une des CVM**
 
 Dans cette documentation nous allons nous connecter au travers de PRISM Central
 
-***A finaliser quand j'aurai accès au CLUSTER***
+L'accès au cluster se fait au travers d'une adresse publique sur une adresse du type [https://ippubliqueloadbalancer:9440](https://ippubliqueloadbalancer:9440)
+
+![PrismCentralLogin](/Images/PrismCentralLogin.PNG)
+
+![PrismCentralLogin](/Images/PrismCentralUsername.PNG)
+
+Dans la partie encadrée saisir un nom d'utilateur un mot de passe et cliquer sur la flêche.
+
+![PrismCentralLogin](/Images/PrismCentralUsername.PNG)
+
+![PrismCentralDashboard](/Images/PrismCentralDashboard.PNG)
+
+Sur le tableau de bord de prism central nous allors cliquer sur le nom du cluster dans Cluster Quick Access là ou se trouve l'encadrement.
+
+![PrismCentralDashboard](/Images/PrismCentralDashboard.PNG)
+
+Sur la sélection à droite apparait le nombre de Disques en totalité , le nombre de VMs ainsi que le le nombre d'hote. Un coeur de couleur verte indique indique que le cluster NUTANIX fonctionne correctement. En bas de cet encadré on peut voir le niveau de tolérance de panne **1 signifie que  nous sommes en RF2 avec la possibilité d'une perte d'un disque sur un noeud ou un noeud entièrement**.
+
+Sur la sélection à gauche nous avons un résumé du stockage , de l'espace disque en cliquant sur view Details nous aurons plus d'information sur le stockage.
+
+![StorageDetail](/Images/StorageDetail.PNG)
+
+Dans cette fenêtre on peut voir l'état du stockage par noeud.
+
+![HardwareMenu](/Images/HardwareMenu.PNG)
+
+En allant dans le menu hardware et en cliquant sur **Hardware** nous aurons le détail par Noeud du stockage avec le nombre de disques allouées par noeud
+
+![HarwareDetail](/Images/HardwareDetail.PNG)
+
+
+
 
 ## Aller plus loin
 
