@@ -1,6 +1,6 @@
 ---
-title: Se familiariser avec l'espace client OVHcloud en tant que clients Kimsufi et So you start
-excerpt: Apprenez à naviguer à travers l'interface client OVHcloud
+title: Se familiariser avec l'espace client OVHcloud en tant que clients Kimsufi et So you Start
+excerpt: Apprenez à naviguer dans l'interface client OVHcloud
 slug: se-familiariser-avec-lespace-client-ovhcloud
 section: Clients So you Start & Kimsufi
 order: 1
@@ -15,7 +15,7 @@ OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi e
 **Ce guide est destiné à vous aidez à vous familiariser avec l'espace client OVHcloud**
 
 > [!warning]
-> Veuillez noter que malgré le changement d'interface client, les options disponibles pour votre gamme de serveur resteront les mêmes.
+> Veuillez noter que malgré le changement d'interface client, les options disponibles pour votre gamme de serveur resteront les mêmes. Certaines options ne seront disponibles que pour les serveurs de la gamme OVHcloud.
 >
 
 ### Tableau de bord
@@ -53,14 +53,14 @@ Kimsufi             | So you Start | OVHcloud
 
 **Etat des services**
 -  Statut : Cliquez sur les `...`{.action} à côté de cette option pour redémarrer ou supprimer votre serveur.
-- Monitoring : Cliquez sur les `...`{.action} à côté de cette option pour activer/désactiver le monitoring sur votre serveur. Pour savoir comment installer le Real Time Monitoring (RTM) consulter ce [guide](https://docs.ovh.com/fr/dedicated/installer-rtm/).
+- Monitoring : Cliquez sur les `...`{.action} à côté de cette option pour activer/désactiver le monitoring sur votre serveur. Pour savoir comment installer le Real Time Monitoring (RTM), veuillez consulter ce [guide](https://docs.ovh.com/fr/dedicated/installer-rtm/).
 
 **Réseau**
 
 - IPV4 : Cliquez sur les `...`{.action} à côté de cette option pour gérer votre IP.
 - Reverse : Cliquez sur les `...`{.action} à côté de cette section pour entrer/modifier votre reverse DNS.
 
-**DNS secondaire** : Configurez votre DNS secondaire ici.
+**DNS secondaire** : Configurez votre DNS secondaire ici. Pour plus d'informations, veuillez consulter ce [guide](https://docs.ovh.com/ca/en/dedicated/secondary-dns/)
 
 **Backup Storage** : Commandez et configurez votre backup storage ici. Pour plus d'informations sur la marche à suivre, veuillez consulter ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
 
@@ -75,7 +75,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la section «IP» de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `IP`{.action} située en bas de la colonne à gauche de la page.
+Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `IP`{.action} située en bas de la colonne à gauche de la page.
 
 Kimsufi             | So you Start | OVHcloud
 :-------------------------:|:-------------------------:|:---------------------:
@@ -83,13 +83,13 @@ Kimsufi             | So you Start | OVHcloud
 
 ### Onglet Licences
 
-Pour accéder à l'onglet «Licences» dans l'espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `Licences`{.action} dans colonne à gauche de la page. 
+Pour accéder à l'onglet « Licences » dans l'espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `Licences`{.action} dans colonne à gauche de la page. 
 
 Kimsufi             | So you Start | OVHcloud
 :-------------------------:|:-------------------------:|:---------------------:
 Licences are not offered for this range.  | <img src="images/managelicencesSoyoustart.png" width="700"/> | <img src="images/managelicencesOVHcloud.png" width="700"/>
 
-### Support, Facturation, Gestion de compte
+### Support, Facturation et Gestion de compte
 
 Contrairement à l’espace client Kimsufi et So you Start où ces options sont disponibles en haut à droite sous des onglets individuels, dans l’espace client d’OVHcloud, ces options sont regroupées dans un espace commun. Pour y accéder, cliquez sur votre nom en haut à droite et cliquez sur vos initiales pour accéder à la rubrique `Gérer mon compte`.
 
@@ -97,16 +97,16 @@ Kimsufi             | So you Start | OVHcloud
 :-------------------------:|:-------------------------:|:---------------------:
 <img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/accountOVHcloud.png" width="500"/>
 
-* Informations générales : Dans cette section, vous pouvez visualiser les informations de votre compte, votre dernière facture et accéder à différents raccourcis.
-* Sécurité : Cette section vous permet de gérer les paramètres de sécurité de votre compte. Pour plus d’informations, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).
-* Emails reçus : Dans cette section, vous trouverez l'ensemble des emails qu'OVHcloud vous a envoyé, en dehors des demandes d'assistance.
-* Mon niveau de support (Uniquement disponible pour les services OVHcloud) : Vous trouverez plus d’informations sur le niveau de support proposé par OVHcloud dans cette section.
-* Gestion des utilisateurs : Cette section vous permet de gérer vos utilisateurs. Plus d'informations. veuillez consulter ce [guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
-* Mes factures : Dans cette section, vous pouvez consulter vos factures, suivre les paiements effectués avec votre moyen de paiement par défaut et consulter vos avoirs.
-* Mes services : Cette section vous permet de visualiser l'ensemble de vos services, vos contrats et vos clés SSH.
-* Moyens de paiement : Dans cette section, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/billing/manage-payment-methods/).
+* Informations générales : Dans cette rubrique, vous pouvez visualiser les informations de votre compte, votre dernière facture et accéder à différents raccourcis.
+* Sécurité : Cette rubrique vous permet de gérer les paramètres de sécurité de votre compte. Pour plus d’informations, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).
+* Emails reçus : Dans cette rubrique, vous trouverez l'ensemble des emails qu'OVHcloud vous a envoyé, en dehors des demandes d'assistance.
+* Mon niveau de support (Uniquement disponible pour les services OVHcloud) : Vous trouverez plus d’informations sur le niveau de support proposé par OVHcloud dans cette rubrique.
+* Gestion des utilisateurs : Cette rubrique vous permet de gérer vos utilisateurs. Plus d'informations. veuillez consulter ce [guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
+* Mes factures : Dans cette rubrique, vous pouvez consulter vos factures, suivre les paiements effectués avec votre moyen de paiement par défaut et consulter vos avoirs.
+* Mes services : Cette rubrique vous permet de visualiser l'ensemble de vos services, vos contrats et vos clés SSH.
+* Moyens de paiement : Dans cette rubrique, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/billing/manage-payment-methods/).
 * Mes commandes : Depuis cet espace, vous pouvez consulter vos commandes.
-* Mes demandes d'assistance : Cette section vous permet d’ouvrir/visualiser l’ensemble de vos demandes d’assistance.
+* Mes demandes d'assistance : Cette rubrique vous permet d’ouvrir/visualiser l’ensemble de vos demandes d’assistance.
 
 ## Aller plus loin
 
