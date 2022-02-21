@@ -106,14 +106,6 @@ Vous pouvez maintenant utiliser les call API habituels ou même l'espace client 
 
 Pour rappel, un guide de configuration du Load Balancer est disponible: [https://docs.ovh.com/fr/load-balancer/configure-iplb](https://docs.ovh.com/fr/load-balancer/configure-iplb/).
  
-#### Depuis l'espace client OVHcloud
-
-#### Lister les services Load Balancer éligibles au vRack
-
-Vous pouvez consulter la liste de vos services Load Balancer pouvant être connectés à un vRack depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, puis `Network`{.action}.
-
-Sélectionnez votre vRack puis, 
-![éligiblite_load balancer](images/eligibility_lb.png){.thumbnail}
 
 
 ## Aller plus loin
