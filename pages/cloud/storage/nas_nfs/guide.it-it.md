@@ -5,7 +5,7 @@ excerpt: 'Come effettuare il mount di una cartella condivisa su un NAS utilizzan
 section: NAS
 ---
 
-**Ultimo aggiornamento: 05/08/2019**
+**Ultimo aggiornamento: 21/02/2022**
 
 ## Prerequisiti
 
@@ -13,14 +13,14 @@ Questa guida mostra come utilizzare il protocollo di rete Network File System (N
 
 Per il mount di una cartella condivisa NFS è necessario disporre di:
 
-- un NAS OVH
-- una macchina che utilizza la rete OVH (server dedicato, VPS, istanza...)
-- una distribuzione compatibile con NFS
+- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) **o** un [VPS](https://www.ovhcloud.com/it/vps/) **o** un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
+- Un'offerta [NAS-HA](https://www.ovh.it/nas/).
+- una distribuzione compatibile con NFS.
 
 
 ### Linux
 
-Compatibilità: Debian 6/7/8 e Ubuntu 12/13/14
+Compatibilità: Debian e Ubuntu 
 
 Per il mount di una cartella condivisa NFS su Linux:
 
@@ -69,9 +69,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Compatibilità: CentOS 6
-
-Per il mount di una cartella condivisa NFS su CentOS 6:
+Per il mount di una cartella condivisa NFS su CentOS:
 
 - accedi al server via SSH
 - installa i pacchetti “nfs-utils” e “rpcbind” tramite il comando:
@@ -229,3 +227,7 @@ Si apre un form da completare:
 > [!alert]
 >
 > L’utente NFS è `root`, pertanto eventuali modifiche dei permessi con questo utente potrebbero generare conflitti con permessi CIFS/SMB già esistenti.
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

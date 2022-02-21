@@ -5,21 +5,21 @@ excerpt: 'Dowiedz się, jak zamontować NAS przy użyciu protokołu NFS'
 section: NAS
 ---
 
-**Ostatnia aktualizacja z dnia 12-07-2019**
+**Ostatnia aktualizacja z dnia 21-02-2022**
 
 ## Wymagania początkowe
 
 Przewodnik wyjaśnia, jak zamontować NFS na najpopularniejszych dystrybucjach. Aby zamontować zasób NFS, potrzebne Ci będą następujące elementy:
 
-- Rozwiązanie NAS od OVH
-- Maszyna w sieci OVH (Serwer dedykowany, VPS, Instancja...)
-- Dystrybucja kompatybilna z NFS
+- Posiadanie [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/), **lub**  [VPS](https://www.ovhcloud.com/pl/vps/) **lub** [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
+- Posiadanie usługi [NAS-HA](https://www.ovh.pl/nas/).
+- Dystrybucja kompatybilna z NFS.
 
 ## W praktyce
 
 ### Linux
 
-Kompatybilność: Debian 6/7/8 & Ubuntu 12/13/14
+Kompatybilność: Debian & Ubuntu
 
 Aby zamontować zasób NFS pod Linuxem:
 
@@ -68,9 +68,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Kompatybilność: CentOS 6
-
-Aby zamontować zasób NFS pod CentOS 6:
+Aby zamontować zasób NFS pod CentOS:
 
 - Zaloguj się do serwera przez SSH
 - Zainstaluj pakiety "nfs-utils" i "rpcbind" przy użyciu polecenia:
