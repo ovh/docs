@@ -103,7 +103,15 @@ Conferma la password associata all'indirizzo email sorgente (quello che vuoi mig
 
 #### 3.2 Migrare la nuova versione del MXPlan <a name="NouvelleVersionMxplan"></a>
 
-Se hai appena ordinato il nuovo servizio di posta, prima aggiungi il dominio alla tua piattaforma [Email Pro](../../emails-pro/prima-configurazione/) o [Exchange](../aggiungere-dominio-su-exchange/).
+> [!warning]
+>
+> Se hai appena ordinato il nuovo servizio di posta, aggiungi il dominio alla tua piattaforma di posta prima di iniziare la migrazione. <br> - *Ad esempio, per migrare l'account "myemail@mydomain.ovh", è necessario aggiungere il dominio "mydomain.ovh" alla tua piattaforma.*
+>
+>Seleziona la scheda `Domini associati`{.action} sulla tua piattaforma e clicca su `Aggiungi un dominio`{.action}. Una volta che il dominio è stato aggiunto, assicurati che la voce `OK` figuri nella colonna `Stato`
+>
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
+>
+> Per maggiori dettagli sull'aggiunta di un dominio, segui [la guida Email Pro](https://docs.ovh.com/it/emails-pro/prima-configurazione/#step-2-aggiungi-il-dominio) o [la guida Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/).
 
 La migrazione del tuo MXPlan avverrà in 3 step, **Rinommer**, **Creare** e **Migrare**.
 

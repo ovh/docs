@@ -105,8 +105,15 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 
 #### 3.2 Die neue MXPlan-Version migrieren <a name="NouvelleVersionMxplan"></a>
 
-Wenn Sie Ihr neues E-Mail-Angebot gerade bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro oder](../../emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen)[Exchange](../domain-zu-exchange-hinzufugen/) Plattform hinzu.
-
+> [!warning]
+>
+> Wenn Sie Ihr neues E-Mail Angebot bestellt haben, fügen Sie zunächst den Domainnamen zu Ihrer E-Mail Plattform hinzu, bevor Sie mit der Migration beginnen. <br> - *Um zum Beispiel den Account "myemail@mydomain.ovh" zu migrieren müssen Sie die Domain "mydomain.ovh" zu Ihrer Plattform hinzufügen.*
+>
+>Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Sobald die Domain hinzugefügt wurde, überprüfen Sie bitte, dass der Eintrag `OK` in der Spalte `Status` angezeigt wird.
+>
+>![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>
+> Weitere Informationen zum Hinzufügen einer Domain finden Sie in [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange Hilfe](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/).
 
 Die Migration Ihres MXPlan erfolgt in 3 Schritten: **Umbenennen**, **Erstellen** und **Migrieren**.
 
