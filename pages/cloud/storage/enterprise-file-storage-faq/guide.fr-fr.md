@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 6
 ---
 
-**Dernière mise à jour le 18/02/2022**
+**Dernière mise à jour le 21/02/2022**
 
 ## Objectif
 
@@ -68,7 +68,7 @@ Pas pour le moment, mais cette fonctionnalité sera bientôt disponible (vRack e
 
 Par définition, Enterprise File Storage n’est disponible que sur le réseau OVHcloud.<br>
 Cependant, il est possible de monter une architecture permettant une liaison avec une infrastructure extérieure à ce réseau.<br>
-Nous vous invitons à contacter notre support technique pour concevoir une infrastructure adaptée à votre écosystème et votre solution. 
+Nous vous invitons à joindre notre service commercial ou notre support technique afin de concevoir une infrastructure adaptée à votre écosystème et votre solution. 
 
 ## Capacité et Performances
 
