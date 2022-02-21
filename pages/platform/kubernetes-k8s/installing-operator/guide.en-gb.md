@@ -73,8 +73,12 @@ Our operator will allow us to:
  - change the HTTP port,
  - recreate the service if it is deleted.
 
-We'll develop this operator with the [operator SDK](https://sdk.operatorframework.io) with the Helm option.
-We'll see in other articles how develop operators with other languages (Go for example).
+We'll develop this operator with the [operator SDK](https://sdk.operatorframework.io).  
+The operator SDK provides several tools:
+ - a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator,
+ - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator.  
+In this article we use the [Helm helper](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/).  
+We'll see in other articles how to develop operators with other languages (Go for example).
 
 ### Install the CLI
 
