@@ -122,6 +122,32 @@ Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale clust
 
 Le specifiche tecniche della soluzione di hosting Cloud Web sono disponibili a questo link: <https://cloudweb-infos.hosting.ovh.net/>
 
+### Informazioni sui backup automatici <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud si impegna a fornire un servizio di backup automatico dei dati e la loro messa a disposizione. E' tuttavia sua responsabilità attuare la sua politica di ripristino e individuare i punti di ripristino nei momenti che ritiene opportuni.
+
+##### spazio disco
+
+Tutte le nostre offerte di hosting web condiviso situate:
+
+- a Gravelines (GRA), in Francia, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Roubaix (RBX), in Francia.
+
+- a Beauharnois (BHS), Canada, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Beauharnois (BHS), in Canada.
+
+Questa guida ti mostra come [accedere allo spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) o [ripristinare lo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) nelle nostre guide.
+
+#### Database / SQL
+
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (SQL privato/Cloud Database), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
+
+Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) nella nostra guida.
+
+#### Email
+
+Per gli account email condivisi (inclusi nella tua offerta di hosting Web), viene effettuato un backup automatico giornaliero e copiato in un altro datacenter.
+
 ## Politica di utilizzo dei cookies
 
 **Cookies e tracciatori utilizzati nell’ambito della fornitura del servizio di hosting condiviso.**

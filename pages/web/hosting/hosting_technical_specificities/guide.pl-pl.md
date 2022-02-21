@@ -121,6 +121,32 @@ Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, n
 
 Aby poznać informacje techniczne dotyczące oferty Cloud Web, przejdź bezpośrednio na stronę <https://cloudweb-infos.hosting.ovh.net/>.
 
+### Informacje o automatycznych kopiach zapasowych <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud zobowiązuje się do świadczenia usługi automatycznego tworzenia kopii zapasowych danych oraz udostępniania tych kopii zapasowych. Twoja odpowiedzialność spoczywa jednak na wdrożeniu własnej polityki przywracania i na określeniu punktów przywracania, kiedy uważasz to za stosowne.
+
+#### przestrzeni dyskowej
+
+Wszystkie nasze pakiety hostingowe są zainstalowane:
+
+- w Gravelines (GRA) we Francji dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Roubaix (RBX) we Francji.
+
+- w Beauharnois (BHS) w Kanadzie, dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Beauharnois (BHS) w Kanadzie.
+
+Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) lub [przywrócić przestrzeń dyskową hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) w dokumentacji OVH.
+
+#### Baza danych / SQL
+
+W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (Private SQL / Cloud Databases) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
+
+Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) w naszej dokumentacji.
+
+#### E-mail
+
+Dla kont e-mail na hostingu (zawartych w ofercie hostingu WWW) wykonywana jest codzienna kopia automatyczna do innego centrum danych.
+
 ## Polityka wykorzystywania plików cookie
 
 **Pliki cookie i elementy śledzące wykorzystywane w ramach świadczenia usługi hostingu współdzielonego**
