@@ -1,7 +1,7 @@
 ---
 title: Présentation des possibilités de connection au cluster
 slug: cluster-connectivity
-excerpt: "Présentation des connexions au CLUSTER depuis l'exterieur d'OVHCLOUD"
+excerpt: "Présentation des connexions au CLUSTER depuis l'exterieur d'OVHcloud"
 section: Réseau et sécurité
 order: 01
 ---

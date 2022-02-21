@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Cette page Présente vRACK et explique les interconnexions à l'intérieur d'OVHCLOUD et des possibilités de d'interconnexions entre centres de données et les clients.
+Cette page Présente vRACK et explique les interconnexions à l'intérieur d'OVHcloud et des possibilités de d'interconnexions entre centres de données et les clients.
 
 ***A finaliser quand j'aurai accès au Informations réseaux***
 

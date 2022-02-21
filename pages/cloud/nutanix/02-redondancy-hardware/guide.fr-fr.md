@@ -30,7 +30,7 @@ Dans l'idéal il faut que chaque noeud d'un cluster NUTANIX soit identique
 
 Un cluster est créé à partir des noeuds du cluster, il faut au minumum 3 noeuds pour faire fonctionner une cluster
 
-La solution NUTANIX d'OVH permet d'avoir jusqu'a 18 noeuds
+La solution NUTANIX d'OVHcloud permet d'avoir jusqu'a 18 noeuds
 
 La redondance des données ne se fait pas sur un noeud comme avec du RAID mais au travers du réseau sur plusieurs noeuds, il y'a plusieurs niveaux de redondances
 

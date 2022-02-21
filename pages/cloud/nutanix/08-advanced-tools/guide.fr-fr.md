@@ -1,6 +1,6 @@
 ---
 title: Outils avancés
-slug: node-add
+slug: advanced-tools
 excerpt: "Présentation de divers outils avancés"
 section: Premiers pas
 order: 07
