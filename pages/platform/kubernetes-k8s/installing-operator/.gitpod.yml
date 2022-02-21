@@ -1,0 +1,12 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - name: Init the doc-rendering-engine
+    init: |
+      git clone --recurse-submodules https://github.com/ovh/docs-rendering.git /tmp/docs-rendering/
+      /tmp/docs-rendering/docker/build.sh
+    command: /tmp/docs-rendering/docker/run-container.sh
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 8080
+    onOpen: open-browser
