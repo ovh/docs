@@ -1,5 +1,5 @@
 ---
-title: Deploy an Operator based on Helm on OVHcloud managed Kubernetes
+title: Deploy an Operator based on Helm on OVHcloud managed Kubernetes server
 slug: installing-operator
 excerpt: Learn how to deploy operator on OVHcloud managed Kubernetes with Helm and the Operator SDK
 section: Tutorials
@@ -31,55 +31,55 @@ section: Tutorials
 
 ## Objective
 
-[Operators](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) are a way to extend Kubernetes to automate some actions in the cluster.
+[Operators](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) are one way to extend Kubernetes to automate some actions in the cluster.
 
 ![Operator diagram](images/operator.png)
 
-In few words an operator offers OPS actions programmatically and avoid repetitive human activities that are devoid of lasting value.
+In few words an operator offers OPS actions programmatically and avoid repetitive human activities that are devoid of added value.
 The tasks that an operator can do are various and can be on resources deployed in Kubernetes (like a POD for example) or outside (like a database for example).
 In our examples we focused on resources inside a Kubernetes cluster.
 
-An operator is based on a [Custom Resource](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that allows extend Kubernetes API.
-Thanks to the control loop of Kubernetes the operator maintain the right state of the resources.
-Next the job of the operator is to maintain the state of the internal or external objects that it manages.
+An operator is based on a [Custom Resource](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that allows to extend Kubernetes API.
+Thanks to the control loop of Kubernetes the operator maintains the right state of the resources.
+Then, the operator's job is to monitor the state of the internal or external objects that it manages.
 
-There several capabilities for an operator:
+An operator can have various capabilities:
 
-* basic installation and configuration of an application,
+* basic application setup and configuration,
 * upgrade the application (with rollback if needed),
-* backup and restore if the operator manages a state,
+* backup and recovery if the operator handles a state,
 * auto-remediation of the application if a problem occurs,
 * monitoring and observability for its own metrics,
 * auto scaling, auto tuning, ...  
 
-A good resume of the capabilities of an operator can be found on the [operator framework website](https://operatorframework.io/operator-capabilities/).
+A good summary of the capabilities of an operator can be found on the [operator framework website](https://operatorframework.io/operator-capabilities/).
 
-As an operator is a custom API in Kubernetes you have to develop it, fortunately there are frameworks to help you to develop your own operator.
+As an operator is a custom API in Kubernetes, you need to develop it, thankfully there are frameworks to help you to develop your own operator.
 The most important [framework](https://operatorframework.io/operator-capabilities/) allows you to develop an operator with Ansible, Helm and Go.
-Another kind of frameworks exist to use another languages, like Java for instance with the [Java operator SDK](https://github.com/java-operator-sdk/java-operator-sdk).
+Another kind of frameworks exists to use other languages, like Java for instance with the [Java operator SDK](https://github.com/java-operator-sdk/java-operator-sdk).
 
-As we can see with the below tutorial, the capability of the developed operator depends of the language, for example develop an operator with Helm offers less capabilities (but it's simpler).
+As we can see with the below tutorial, the capability of the developed operator depends on the language, for example develop an operator with Helm offers less capabilities (but it's simpler).
 
 ## Requirements
 
-This tutorial presupposes that you already have a working OVHcloud managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
+This tutorial assumes that you already have a Kubernetes cluster managed by OVHcloud, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](../deploying-hello-world/) documentation.
 
 ## Instructions
 
-In his tutorial, we create a simple operator that manages the installation of an Nginx server and monitors it.  
+In this tutorial, we create a simple operator that manages the installation of an Nginx server and monitors it.  
 Our operator will allow us to:
- - install an Ngnix server with the required number of PODs,
+ - install a Ngnix server with the required number of PODs,
  - upgrade the number of PODs,
  - change the HTTP port,
  - recreate the service if it is deleted.
 
 We'll develop this operator with the [operator SDK](https://sdk.operatorframework.io) with the Helm option.
-We'll see in another articles how develop operators with other languages (Go for example).
+We'll see in other articles how develop operators with other languages (Go for example).
 
 ### Install the CLI
 
-The SDK comes with a [CLI](https://sdk.operatorframework.io/docs/cli/) (**C**ommand **L**ine **I**nterface).
-Let install it !
+The SDK includes a [CLI](https://sdk.operatorframework.io/docs/cli/) (**C**ommand **L**ine **I**nterface).
+Let install it!
 
 In this case we use [homebrew](https://brew.sh/) but a lot of [other ways](https://sdk.operatorframework.io/docs/installation/) are available.
 
@@ -87,25 +87,25 @@ In this case we use [homebrew](https://brew.sh/) but a lot of [other ways](https
 brew install operator-sdk
 ```
 
-Let's test it !
+Let's test it!
 ```bash
 ❯ operator-sdk version
 
 operator-sdk version: "v1.17.0", commit: "704b02a9ba86e85f43edb1b20457859e9eedc6e6", kubernetes version: "v1.21", go version: "go1.17.6", GOOS: "darwin", GOARCH: "arm64"
 ```
 ### Develop an operator with Helm
-For ou first development we'll use [Helm](https://helm.sh/).
-Helm is a package manager and providing templates to deploy applications in Kubernetes.
+For our first development, we'll use [Helm](https://helm.sh/).
+Helm is a package manager and provides templates to deploy applications in Kubernetes.
 
 The CLI offers to scaffold an entire project.
-We don't use the scaffolding for this tutorial because it generates a lot of files.
-This is useful for a comprehensive and professional operator but would make harder the comprehension of our _hello world_.
+We are not using the scaffolding for this tutorial because it generates a lot of files.
+This is useful for a comprehensive and professional operator, but would make harder the comprehension of our _hello world_.
 
-More information on the project layout generated by the CLI is available in the [official documentation](https://sdk.operatorframework.io/docs/overview/project-layout/).
+More information on the project layout generated by the CLI can be found in the [official documentation](https://sdk.operatorframework.io/docs/overview/project-layout/).
 
 #### The helm chart
 An operator based on helm is nothing more a classic helm chart !
-Let's see our simple helm chart to deploy a Nginx server.
+Let's take a look at our simple helm chart used to deploy an Nginx server.
 
 The _deployment.yaml_ template:
 ```yaml
@@ -188,7 +188,7 @@ service:
 > Only fields in values.yaml file can be managed by the operator.
 >
 
-A little helper to simplify the templates (__helper.tpl_):
+A small helper to simplify the templates (__helper.tpl_):
 ```
 {{/*
 Expand the name of the chart.
@@ -258,12 +258,12 @@ tree
 ```
 
 At this point we have only created a classic helm chart.
-We can use it with the helm client to deploy the Nginx server but in the following sections we'll see how to delegate this to an operator.
+We can use it with the helm client to deploy the Nginx server, but in the following sections we'll see how to delegate this to an operator.
 
 ### The custom resource definition
 The [custom resources definition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/) (CRDs) is the main point of the operator.
 It allows us to extend the default API of Kubernertes.
-Let's have a look to our CRD (`tutorials.ovhcloud.com_ovhnginxoperators.yaml`):
+Let's have a look at our CRD (`tutorials.ovhcloud.com_ovhnginxoperators.yaml`):
 ```yaml
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition # The API to declare new API (CRD)
@@ -338,7 +338,7 @@ NAME                               CREATED AT
 ovhnginxs.tutorials.ovhcloud.com   2022-02-18T13:51:14Z
 ```
 
-At this point it is not necessary to deploy the operator in the Kubernetes cluster, you can run it locally on your computer:
+At this point there is not need to deploy the operator in the Kubernetes cluster, you can run it locally on your computer:
 ```bash
 ❯ helm-operator run
 
@@ -365,7 +365,7 @@ spec:
     port: 80
 ```
 
-Before to create the CR, create a namespace. This will be the namespace where the CR will be created and the Nginx server deployed:
+Before creating the CR, create a namespace. This will be the namespace where the CR will be created and the Nginx server deployed:
 ```bash
 ❯ kubectl create ns test-ovh-nginx-operator
 namespace/test-ovh-nginx-operator created
@@ -379,7 +379,7 @@ kube-system               Active   11d
 test-ovh-nginx-operator   Active   8s
 ```
 
-Next create the CR:
+Then create the CR:
 ```bash
 ❯ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample created
@@ -390,8 +390,8 @@ mynginx-sample   79s
 
 ```
 
-What is happening in our operatoor ?
-It's detecting  the new CR and is doing some things !!!
+What about our operator?
+It's detects the new CR and does a few things!!!
 ```bash
 {"level":"info","ts":1645197784.822017,"logger":"controller.ovhnginx-controller","msg":"Starting EventSource","source":"kind source: *unstructured.Unstructured"}
 {"level":"info","ts":1645197784.822165,"logger":"helm.controller","msg":"Watching dependent resource","ownerApiVersion":"tutorials.ovhcloud.com/v1","ownerKind":"OvhNginx","apiVersion":"apps/v1","kind":"Deployment"}
@@ -400,7 +400,7 @@ It's detecting  the new CR and is doing some things !!!
 {"level":"info","ts":1645197784.822422,"logger":"helm.controller","msg":"Installed release","namespace":"test-ovh-nginx-operator","name":"mynginx-sample","apiVersion":"tutorials.ovhcloud.com/v1","kind":"OvhNginx","release":"mynginx-sample"}
 ```
 
-Let's  have a look in our Kubernetes cluster:
+Let's take a look at our Kubernetes cluster:
 ```bash
 ❯ kubectl get pods
 NAME                                        READY   STATUS    RESTARTS   AGE
@@ -411,10 +411,10 @@ NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(
 mynginx-sample-ovh-nginx   LoadBalancer   XXX.XXX.XXX.XXX   YYY.YYY.YYY.YYY   80:30356/TCP   105s
 ```
 
-Ok this seems ok but let's have a look if we visit the `http://yyy.yyy.yyy.yyy/` page:  
+Ok, that sounds okay, but let's have a look at `http://yyy.yyy.yyy.yyy/` page:  
 ![Hello world from Nginx](images/hello-world.png)
 
-You can now delete safely your CR:
+You can now safely delete your CR:
 ```bash
 ❯ kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample
 ovhnginx.tutorials.ovhcloud.com "mynginx-sample" deleted
@@ -447,8 +447,8 @@ At this point of the tutorial your tree structure is like this:
 
 ### Deploy the operator in Kubernetes
 
-Perhaps you think:
-> ok my operator turn on my computer but how can I deploy it on my Kubernetes cluster ?
+Maybe you think:
+> ok my operator turns on my computer, but how can I deploy it on my Kubernetes cluster?
 
 And you're right, the goal of our operator is to be independent and manage automatically all requests !
 
@@ -458,7 +458,7 @@ And you're right, the goal of our operator is to be independent and manage autom
 >
 
 It's quite simple to package and deploy our operator.
-The first thing to do is to create a Dockerfile:
+The first step is to create a Dockerfile:
 ```dockerfile
 FROM quay.io/operator-framework/helm-operator:v1.17.0
 
@@ -473,12 +473,12 @@ Build the image:
 docker build -t ovhplateform/ovh-nginx-operator:1.0.0 . 
 ```
 
-And push it on your prefer registry:
+And push it on your favorite registry:
 ```bash
 docker push ovhplateform/ovh-nginx-operator:1.0.0
 ```
 
-The last step is to deploy your operator thanks a Kubernetes manifest (_ovh-nginx-operator.yaml_) like this one:
+The last step consistes deploying your operator thanks a Kubernetes manifest (_ovh-nginx-operator.yaml_) like this one:
 ```yaml
 # The namespace where the operator is deployed
 apiVersion: v1
@@ -575,7 +575,7 @@ NAME                                  READY   STATUS    RESTARTS   AGE
 ovh-nginx-operator-5487958499-v9q46   1/1     Running   0          70s
 ```
 
-It's time to test the operator, let's play with the custom resource:
+It's time to test the operator, let's play with the customized resource:
 ```bash
 ❯ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample created
@@ -614,7 +614,7 @@ mynginx-sample-ovh-nginx   LoadBalancer   XXX.XXX.XXX.XXX   YYY.YYY.YYY.YYYY   8
 
 You can also play to delete the service and see that the operator recreates it !
 
-Another tutorials on operators will be soon available to discover additional ways to develop an operator.
+Other tutorials on operators will be soon available to discover additional ways to develop an operator.
 
 ## Go further
 
