@@ -132,7 +132,7 @@ As suas snapshots são armazenadas ao mesmo nível que o seu serviço. As snapsh
 
 Não existem ainda métricas integradas para monitorizar a utilização dos pools e dos volumes. 
 
-## Preços e preços
+## Preços
 
 ### Que tipo de preços está associado ao serviço?
 

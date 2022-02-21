@@ -128,7 +128,7 @@ Vos snapshots sont stockés au même niveau que votre service. Les snapshots son
 
 Il n’existe pas encore de métriques intégrées pour suivre l’utilisation des pools et des volumes. 
 
-## Prix et tarification
+## Tarification
 
 ### Quel type de tarification est lié au service ?
 

@@ -132,7 +132,7 @@ I tuoi Snapshot sono salvati allo stesso livello del tuo servizio. Gli Snapshot 
 
 Non sono ancora disponibili metriche integrate per monitorare l'utilizzo di pool e volumi. 
 
-## Tariffe e tariffe
+## Tariffe
 
 ### Che tipo di tariffazione è associata al servizio?
 

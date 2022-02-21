@@ -132,7 +132,7 @@ Twoje snapshoty są przechowywane na tym samym poziomie, co Twoja usługa. Snaps
 
 Nie ma jeszcze zintegrowanych metryk, które mógłbyś monitorować wykorzystanie puli i wolumenów. 
 
-## Ceny i ceny
+## Ceny
 
 ### Jaki rodzaj opłat jest przypisany do usługi?
 

@@ -132,7 +132,7 @@ Los snapshots se almacenan al mismo nivel que el servicio. Los snapshots se repl
 
 Todavía no hay métricas integradas para controlar el uso de pools y volúmenes. 
 
-## Precio y precios
+## Precios
 
 ### ¿Qué tipo de tarificación está asociado al servicio?
 
