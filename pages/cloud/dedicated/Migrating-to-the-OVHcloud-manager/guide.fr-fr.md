@@ -69,7 +69,7 @@ Kimsufi             | So you Start | OVHcloud
 
 **IPMI** (Disponible uniquement sur les serveurs OVHcloud et certains serveurs So you Start) : Accédez ici à l'IPMI ou le KVM IP de votre serveur.
 
-**Tâches** : Visualisez ici les tâches récentes effectuées sur votre serveur, comme un redémarrage.
+**Tâches** : Visualisez ici les tâches récentes effectuées sur votre serveur.
 
 Pour plus d'informations sur la gestion de votre serveur dédié via l'espace client OVHcloud, veuillez consulter [ce guide](https://docs.ovh.com/fr/dedicated/premiers-pas-serveur-dedie/).
 
