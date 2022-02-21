@@ -10,13 +10,13 @@ order: 7
 
 ## Objective
 
-Here are the most frequently asked questions about Public Cloud Databases.
+Here are the most frequently asked questions about OVHcloud Enterprise File Storage.
 
 ## General questions
 
 ### What is OVHcloud Enterprise File Storage?
 
-OVHcloud Enterprise File Storage is a highly available storage volume where you can store your files. This product is based on NetApp&#174; ONTAP Select Software-Defined Sotrage solution and is fully managed by OVHcloud
+OVHcloud Enterprise File Storage is a highly available storage volume where you can store your files. This product is based on NetApp&#174; ONTAP Select Software-Defined Storage solution and is fully managed by OVHcloud.
 
 ### What can I do with Enterprise File Storage?
 
@@ -32,9 +32,9 @@ Yes, you can access this service directly from your [OVHcloud Control Panel](htt
 
 ## Availability
 
-### How reliable and redundant can I achieve with Enterprise File Storage?
+### What level of reliability and redundancy can I achieve with Enterprise File Storage?
 
-Enterprise File Storage is a highly available storage service and is redundant by design. Its active/active architecture secures this redundancy by powering two different file servers in two racks in one datacentre. The service automatically replicates your data on the two servers in the event of a failure. The failover will usually happen in case of failure of the active server or during a planned maintenance.
+Enterprise File Storage is a highly available storage service and is redundant by design. Its active/active architecture secures this redundancy by powering two different file servers in two racks in one data centre. The service automatically replicates your data on the two servers in the event of a failure. The failover will usually happen in case of failure of the active server or during a planned maintenance.
 
 ### Which SLA comes with Enterprise File Storage?
 
@@ -48,7 +48,7 @@ Enterprise File Storage supports file transfer through NFS (NFSv3).
 
 ### Which OVHcloud services can I push data from?
 
-Enterprise File Storage is a service that can receive data from all existing OVHcloud services: Bare-Metal, Public Cloud, Hosted Private Cloud (Dedicated server/VPS/Public Cloud/Hosted Private Cloud/So you Start/Kimsufi/DSL).
+Enterprise File Storage is a service that can receive data from all existing OVHcloud services: Bare Metal, Public Cloud, Hosted Private Cloud (Dedicated server/VPS/Public Cloud/Hosted Private Cloud/So you Start/Kimsufi/DSL).
 
 ### Can the service be connected with a Microsoft Active Directory (AD)?
 
@@ -88,7 +88,7 @@ You can create up to 10 volumes per service. The minimum size is 100GiB and the 
 
 Enterprise File Storage comes with a guaranteed throughput service level objective (SLO) of 64MB/s per TiB and 4000 IOPS per TiB.
 
-For example, when you deliver a 10 TiB pool, you get 640 MB/s bandwidth and 40,000 IOPS.
+For example, when a 10 TiB pool is delivered, you get 640 MB/s bandwidth and 40,000 IOPS.
 
 ## Snapshots and backups
 
@@ -98,7 +98,7 @@ Snapshots are available in a directory designated for this purpose (.snapshots).
 
 ### Which backup policy is associated with Enterprise File Storage?
 
-Customers are responsible for managing their own backup solution and policy. However, for resiliency and security, OVHcloud performs a daily backup of your service to a remote server located in the same datacentre. In case of failure or attack, OVHcloud can restore data from the previous day. If necessary, you can request a restoration as a paid service option.
+Customers are responsible for managing their own backup solution and policy. However, for resiliency and security, OVHcloud performs a daily backup of your service to a remote server located in the same data centre. In case of failure or attack, OVHcloud can restore data from the previous day. If necessary, you can request a restoration as a paid service option.
 
 ### Are snapshots included in the capacity of a pool?
 
@@ -122,13 +122,13 @@ Snapshots are allocated a minimum of 5% of the storage space. For example, a 5Ti
 
 ### Where are snapshots stored?
 
-Your snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks within a datacentre. In parallel, OVHcloud takes a daily snapshot at a remote site.
+Your snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks within a data centre. In parallel, OVHcloud takes a daily snapshot at a remote site.
 
 ### How do I track the usage of pools and volumes?
 
 There are no integrated metrics for monitoring pool and volume usage yet. 
 
-## Price and pricing
+## Pricing
 
 ### What type of pricing is linked to the service?
 
