@@ -40,7 +40,7 @@ Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jes
 
 W części `IPMI`{.action} w Panelu klienta OVHcloud kliknij `Z poziomu apletu java (KVM)`{.action}:
 
-![IPMI Java zainicjowany](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java zainicjowany](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Pobierz plik `kvm.jnlp`, gdy zostaniesz zaproszony, a następnie uruchom go:
 
@@ -70,7 +70,7 @@ Kliknij `Dostęp do konsoli (KVM)`{.action}, aby otworzyć konsolę w przegląda
 
 Nawet jeśli zalecamy zalogowanie się przez aplet Java, możesz również użyć IPMI w Serial over LAN (SoL). W tym celu kliknij `Z poziomu przeglądarki (SoL)`{.action} w części `IPMI`{.action} w Panelu klienta.
 
-![Aktywacja deklaracji integralności IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
+![Aktywacja deklaracji integralności IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,11 +81,11 @@ Nawet jeśli zalecamy zalogowanie się przez aplet Java, możesz również uży�
 
 Możliwe, że IPMI nie odpowiada. Jeśli nie możesz uzyskać do niego dostępu, możesz najpierw wykonać test, klikając `Przetestuj IPMI`{.action} i wyświetlić wynik diagnostyki:
 
-![Test IPMI](images/ipmi_test_2020.png){.thumbnail}
+![Test IPMI](images/ipmi_test_2022.png){.thumbnail}
 
 Jeśli wszystko jest normalne, jak w naszym przykładzie, prawdopodobnie masz do czynienia z lokalnym problemem (połączenie z Internetem, poczta lokalna). Jeśli wystąpił problem z IPMI, możesz uruchomić go ponownie klikając `Zrestartuj IPMI`{.action}.
 
-![Test IPMI](images/ipmi_reboot_2020.png){.thumbnail}
+![Test IPMI](images/ipmi_reboot_2022.png){.thumbnail}
 
 Ponowne uruchomienie IPMI zajmuje kilka minut.
 

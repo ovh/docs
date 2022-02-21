@@ -30,7 +30,7 @@ You will need to ensure that Java is installed on your desktop for the Java appl
 
 In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `From a Java applet (KVM)`{.action}:
 
-![IPMI Java initiated](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java initiated](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Download the file `kvm.jnlp` when you are prompted to do so, and run it:
 
@@ -60,7 +60,7 @@ Then click on `Access the console (KVM)`{.action} to open the console in your we
 
 Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVHcloud Control Panel:
 
-![IPMI SoL activation](images/sol_ipmi_activation_2020.png){.thumbnail}
+![IPMI SoL activation](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -71,11 +71,11 @@ Although we would recommend that you log in via the Java applet, you can also ac
 
 Your IPMI may stop responding. If you cannot access it, you can test it first by clicking on `Test the IPMI`{.action}, and checking the result of the diagnostic:
 
-![IPMI test](images/ipmi_test_2020.png){.thumbnail}
+![IPMI test](images/ipmi_test_2022.png){.thumbnail}
 
 If everything appears to be normal, as per our example, you may be experiencing a local technical issue (internet connection, local desktop). If the IPMI encounters any issues, you can reboot it by clicking `Reboot the IPMI`{.action}.
 
-![IPMI test](images/ipmi_reboot_2020.png){.thumbnail}
+![IPMI test](images/ipmi_reboot_2022.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
 

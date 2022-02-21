@@ -40,7 +40,7 @@ Para que a applet Java funcione, é necessário que o Java esteja instalado no s
 
 Na secção `IPMI`{.action} da Área de Cliente OVHcloud, clique em `A partir de applet Java (KVM)`{.action}:
 
-![IPMI Java iniciado](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java iniciado](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Faça o download do ficheiro `kvm.jnlp` quando for convidado a fazê-lo, e depois lance-o:
 
@@ -70,7 +70,7 @@ A seguir, clique em `Aceder à consola (KVM)`{.action} para abrir a consola no s
 
 Mesmo que o recomendemos para se ligar através da applet Java, também pode utilizar o IPMI através de Serial over LAN (SoL). Para isso, clique em `A partir do seu navegador (SoL)`{.action} na secção `IPMI`{.action} da sua Área de Cliente.
 
-![Ativação da declaração de integridade IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
+![Ativação da declaração de integridade IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,11 +81,11 @@ Mesmo que o recomendemos para se ligar através da applet Java, também pode uti
 
 É possível que o IPMI não responda mais. Se não conseguir aceder, pode efetuar um teste clicando em `Testar o IPMI`{.action} e visualizar o resultado do diagnóstico:
 
-![Teste IPMI](images/ipmi_test_2020.png){.thumbnail}
+![Teste IPMI](images/ipmi_test_2022.png){.thumbnail}
 
 Se tudo é normal, como no nosso exemplo, poderá defrontar-se com um problema local (ligação à Internet, correio local). Se o problema com o IPMI persistir, pode reiniciá-lo clicando em `Reiniciar o IPMI`{.action}.
 
-![Teste IPMI](images/ipmi_reboot_2020.png){.thumbnail}
+![Teste IPMI](images/ipmi_reboot_2022.png){.thumbnail}
 
 A reinicialização do IPMI demora alguns minutos.
 
