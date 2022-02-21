@@ -10,7 +10,7 @@ order: 7
 
 ## Objectif
 
-Here are the most frequently asked questions about Public Cloud Databases.
+Voici les questions les plus fréquemment posées concernant l'offre Enterprise File Storage d'OVHcloud.
 
 ## Questions générales
 
