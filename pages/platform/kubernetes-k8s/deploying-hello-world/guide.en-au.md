@@ -27,7 +27,7 @@ Access the administration UI for your OVHcloud Managed Kubernetes clusters by cl
 
 ![Select your cluster](images/select-cluster.png){.thumbnail}
 
-Click on your cluster to access on its information.
+Click on your cluster to access its information.
 
 ![OVHcloud Managed Kubernetes cluster view](images/cluster-infos.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Please refer to the [Configuring kubectl on an OVHcloud Managed Kubernetes clust
 
 ## Add a node pool
 
-In the `Node pools`{.action} tab of the administration UI, click on `Add a node pool`{.action} button.
+In the `Node pools`{.action} tab of the administration UI, click the `Add a node pool`{.action} button.
 
 Enter a node pool name:
 
