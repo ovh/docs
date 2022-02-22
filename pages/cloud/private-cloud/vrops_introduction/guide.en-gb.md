@@ -38,7 +38,13 @@ You are now on the vROPS Home page with access to all its functionalities.
 
 ![](images/en03home.png){.thumbnail}
 
-### Datasource
+### Data Sources
+
+The Data Sources section
+
+![](images/en04datasources.png){.thumbnail}
+
+
 
 
 - dashboard home
