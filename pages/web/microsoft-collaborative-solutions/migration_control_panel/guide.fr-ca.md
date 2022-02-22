@@ -101,7 +101,7 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [le guide Exchange](../../microsoft-collaborative-solutions/ajouter-domaine-exchange/).
+> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/).
 
 La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
 
