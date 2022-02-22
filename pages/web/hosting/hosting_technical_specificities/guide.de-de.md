@@ -143,7 +143,7 @@ In unserer Anleitung erfahren Sie, wie [Backups der Datenbank eines Webhostings 
 
 #### E-Mail
 
-Für Shared-E-Mail-Accounts (die in Ihrem Webhosting Angebot enthalten sind) wird ein tägliches automatisches Backup erstellt und in ein anderes Rechenzentrum kopiert.
+Für geteilte E-Mail-Dienste (in Ihrem Webhosting enthaltene Accounts) wird ein tägliches automatisches Backup erstellt und in ein anderes Rechenzentrum kopiert.
 
 ## Cookie-Richtlinie
 
