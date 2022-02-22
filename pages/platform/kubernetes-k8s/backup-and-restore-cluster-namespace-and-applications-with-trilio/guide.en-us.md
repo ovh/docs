@@ -27,7 +27,7 @@ sections: 'Tutorials'
  }
 </style>
 
-**Last updated January 28<sup>th</sup>, 2022.**
+**Last updated February 24<sup>th</sup>, 2022.**
 
 ## Introduction
 
@@ -222,7 +222,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
   ```text
   NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-  triliovault-operator/k8s-triliovault-operator   2.6.6           2.6.6           K8s-TrilioVault-Operator is an operator designe...
+  triliovault-operator/k8s-triliovault-operator   2.7.0           2.7.0           K8s-TrilioVault-Operator is an operator designe...
   triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
   ```
   </li>
@@ -242,8 +242,8 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
   ```text
   NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-  triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.6.6           2.6.6
-  triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.6.6  2.6.6
+  triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.7.0           2.7.0
+  triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.7.0  2.7.0
   ```
   Next, verify that `TrilioVault-Operator` and `Triliovault-Manager` application is up and running:
 
@@ -291,7 +291,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 	
   ```text
   NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-  triliovault-manager   2.6.6                 Cluster   Deployed
+  triliovault-manager   2.7.0                 Cluster   Deployed
   ```
   </li>
 </ol>
@@ -375,11 +375,20 @@ In the next step, you will learn how to define the storage backend for `TrilioVa
 
 `TrilioVault` needs to know first where to store your backups. TrilioVault refers to the storage backend by using the `target` term, and it's managed via a special `CRD` named `Target`. The following target types are supported: `S3` and `NFS`. For `OVH Cloud` and the purpose of the `Tuturial`, it makes sense to rely on the `S3` storage type because it's `cheap` and `scalable`. To benefit from an enhanced level of protection you can create multiple target types (for both `S3` and `NFS`), so that your data is kept safe in multiple places, thus achieving backup redundancy.
 
-To create Target at the OVH Object Storage using S3 Swift API, use the [link](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel). Create `S3 user` in the tab next to Object Storage Container. Now, from `Users and Roles` assign the `Administrator` priviledges to the S3 user.
+The OVH Cloud provide two types of S3 compatible Object Storage solutions:
+<ol>
+  <li>To create Target at the `OVH Object Storage using S3 Swift API`, use the [link](https://docs.ovh.com/ca/en/storage/pcs/create-container/#creating-an-object-storage-container-from-the-ovhcloud-control-panel).</li>
+  <li>To create Target at the `OVH Object Storage using High Performance`, use the [link](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/).</li>
+</ol>
+
+Create `S3 user` in the tab next to Object Storage Container. Now, from `Users and Roles` assign the `Administrator` priviledges to the S3 user.
 
 Next is to create an `Access Key` and `Secret Key` to access the `S3 Object Storage Container` using the [Getting Started with the Swift S3 API](https://docs.ovh.com/gb/en/storage/getting_started_with_the_swift_S3_API/) tutorial.
+ 
+ **Note:** If you have created container with High Performance then follow the [Getting started with S3 High Performance](https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+
 Save the `Access key` and `Secret key` used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
-Take a note of the S3 endpoint URL `s3.endpoint_url` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
+Take a note of the S3 endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
 
 To access `S3` storage, each target needs to know bucket credentials. A `Kubernetes Secret` must be created as well:
 
@@ -573,17 +582,34 @@ After following the above presented steps, you can access the console in your we
 
 The home page looks similar to:
 
-![TVK Console Home Dashboard](assets/images/tvk_console_home.png)
+![TVK Home Cluster Dashboard](assets/images/tvk_cluster_dashboard.png)
 
 Go ahead and explore each section from the left, like:
 
-- `Home`: This is the main dashboard which gives you a general overview for whole cluster, like: Kubernetes clusters, discovered namespaces, Backup/Restore operations summary, etc.
-- `Resource Management`: Lists all the available resources from your cluster (e.g. application namespaces), as well as settings for each, like: backup plans, retention policies, etc.
+- `Cluster Management`: This shows the list of primary cluster and other clusters having TVK instances, added to the primary OVH cluster using `Multi-Cluster Management` feature.
+- `Backup & Recovery`: This is the main dashboard which gives you a general overview for whole cluster, like: Discovered namespaces, Applications, Backupplans list, Targets, Hooks, Policies etc.
+  - `Namespaces`:
+  ![TVK Cluster Namespaces](assets/images/tvk_console_home_namespaces.png)
+- `Applications`:
+  ![TVK Auto-discovered Applications](assets/images/tvk_auto_discovered_applications.png)
+  - `Backupplans`:
+  ![TVK Backupplans](assets/images/tvk_backupplans.png)
+  - `Taargets`:
+  ![TVK Target List](assets/images/tvk_target_list.png)
+  - `Scheduling Policy`:
+  ![TVK Default Scheduling Policy](assets/images/tvk_default_scheduling_policies.png)
+  - `Retention Policy`:
+  ![TVK Default Retention Policy](assets/images/tvk_default_retention_policies.png)
+- `Monitoring`: This has two options- `TrilioVault Monitoring` and `Velero Monitoring` if user has Velero configured on their OVH cluster.
+  - `TrilioVault Monitoring`: It shows the backup and restore summary of the kubernetes cluster.
+  ![TVK TrilioVault Monitoring Backups and Restores](assets/images/tvk_triliovault_monitoring.png)
+  ![TVK Velero Monitoring](assets/images/tvk_velero_monitoring.png)
 - `Disaster Recovery`: Allows you to manage and perform disaster recovery operations.
+  ![TVK Disaster Recovery](assets/images/tvk_disaster_recovery.png)
 
-You can also see the S3 Target created earlier, by navigating to `Resource Management -> TVK Namespace -> Targets` (in case of `ovh/docs` the TVK Namespace is `tvk`):
+You can also see the S3 Target created earlier, by navigating to `Backup & Recovery -> Targets -> Select the TVK Namespace from the dropdonw on the top` (in case of `ovh/docs` the TVK Namespace is `tvk`):
 
-![TVK Targets List](assets/images/tvk_target_list.png)
+![TVK Target List](assets/images/tvk_target_list.png)
 
 Going further, you can browse the target and list the available backups by clicking on the `Actions` button from the right, and then select `Launch Browser` option from the pop-up menu (for this to work the target must have the `enableBrowsing` flag set to `true`):
 
@@ -647,6 +673,10 @@ To perform backups for a single application at the namespace level (or Helm rele
 - `Encryption`, if you want to encrypt your backups on the target (this is a very nice feature for securing your backups data).
 - Define `schedules` for `full` or `incremental` type backups.
 - Define `retention` policies for your backups.
+
+**Note:** The `TrilioVault for Kubernetes` has created a few sample scheduling and retention policies for users. Users can create the new policies or utilize the sample policies as well.
+![TVK Default Scheduling Policy](assets/images/tvk_default_scheduling_policies.png)
+![TVK Default Retention Policy](assets/images/tvk_default_retention_policies.png)
 
 In other words a `BackupPlan` is a definition of `'what'`, `'where'`, `'to'` and `'how'` of the backup process, but it doesn't perform the actual backup. The `Backup` CRD is responsible with triggering the actual backup process, as dictated by the `BackupPlan` spec.
 
@@ -1002,6 +1032,9 @@ In the next step, you will learn how to perform scheduled (or automatic) backups
 
 Taking backups automatically based on a schedule, is a really useful feature to have. It allows you to `rewind back time`, and restore the system to a previous working state if something goes wrong. This section provides an example for an automatic backup on a `15 minute` schedule (the `kube-system` namespace was picked).
 
+  **Note:** By default `TrilioVault for Kubernetes` creates the sample `daily`, `weekly`, and `monthly` scheduling policy after installation. Users can use the same scheduling policies is no changes is required. See the default values of the policies in the TVK UI scheduling policy:
+  ![TVK Default Scheduling Policies](assets/images/tvk_default_scheduling_policies.png)
+  
 First, you need to create a `Policy` CRD of type `Schedule` that defines the backup schedule in `cron` format (same as `Linux` cron). Schedule polices can be used for either `BackupPlan` or `ClusterBackupPlan` CRDs. Typical schedule policy CRD looks like below (defines a `15 minute` schedule):
 
 ```yaml
@@ -1099,6 +1132,9 @@ In the next step, you will learn how to set up a retention policy for your backu
 ## Step 7 - Backups Retention Policy
 
 The retention policy allows you to define the `number` of backups to `retain` and the `cadence` to `delete` backups as per compliance requirements. The retention policy `CRD` provides a simple `YAML` specification to define the `number` of backups to retain in terms of `days`, `weeks`, `months`, `years`, latest etc.
+
+**Note:**The `TrilioVault for Kubernetes` has created a few sample retention policies for users. Users can create the new or utilize the sample policies as well.
+![TVK Default Retention Policy](assets/images/tvk_default_retention_policies.png)
 
 ### Using Retention Policies
 
