@@ -5,7 +5,7 @@ section: 'Virtual machine management'
 excerpt: 'This guide will show you how to to implement a bypass solution, using the VMware DRS mechanism'
 ---
 
-**Last updated 21st February 2022**
+**Last updated 22nd February 2022**
 
 ## Objective
 
