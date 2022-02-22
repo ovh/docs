@@ -112,7 +112,7 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 >
 >![exchange](images/account_migration_adddomain.png) {.thumbnail}
 >
-> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](https://docs.ovh.com/es/emails-pro/primera-configuracion/#2-anadir-su-nombre-de-dominio) o [la guía Exchange](.https://docs.ovh.com/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).
+> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](https://docs.ovh.com/es/emails-pro/primera-configuracion/#2-anadir-su-nombre-de-dominio) o [la guía Exchange](https://docs.ovh.com/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).
 
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 
