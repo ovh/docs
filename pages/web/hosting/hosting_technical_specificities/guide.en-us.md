@@ -6,7 +6,7 @@ section: 'Configuring the Web Hosting plan'
 order: 4
 ---
 
-**Last updated 13th May 2020**
+**Last updated 22th February 2022**
 
 
 ## Objective
@@ -115,6 +115,31 @@ You can verify the cluster number of the Web Hosting on this page under **FTP se
 
 For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/>
 
+### Automatic backup information <a name=“backup”></a>
+
+> [!warning]
+>
+> OVHcloud is committed to providing an automatic data backup service, as well as making these backups available. However, it is your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
+
+### Disk space
+
+All of our web hosting plans are located in:
+
+- in Gravelines (GRA), in France, have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are also stored in the Roubaix (RBX) datacentre in France.
+
+- in Beauharnois (BHS), Canada, have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are also stored in the Beauharnois (BHS) datacentre in Canada.
+
+Find out how to [log in to your storage space](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/) or [restore your Web Hosting plan’s storage space](https://docs.ovh.com/us/en/hosting/restoring-ftp-filezilla-control-panel/) in our documentation.
+
+#### Database / SQL
+
+For shared databases (included in your web hosting plan) or database servers (Private SQL/Cloud Databases), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix(RBX), Strasbourg(SBG), and Gravelines(GRA). The backup retention policy is 30 days.
+
+Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.ovh.com/us/en/hosting/web_hosting_database_export_guide/) in our guide.
+
+#### Email
+
+For shared email accounts (included in your Web Hosting plan), a daily automatic backup is created and copied to another datacentre.
 
 ### Cookie Policy
 

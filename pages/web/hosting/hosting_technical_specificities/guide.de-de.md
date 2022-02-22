@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier mehr zum technischen Leistungsvermögen Ihrer Hostin
 section: 'Webhosting-Konfiguration'
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 22.02.2022**
 
 ## Ziel
 
@@ -118,6 +122,32 @@ Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster
 Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im oberen Menü `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
 
 Die technischen Eigenschaften des Cloud Web Angebots können Sie über folgenden Link einsehen: <https://cloudweb-infos.hosting.ovh.net/>.
+
+### Informationen zu den automatischen Backups <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud stellt einen Dienst zur automatischen Datensicherung und zur Wiederherstellung dieser Backups bereit. Es liegt jedoch in Ihrer Verantwortung, eine geeignete Backup-Strategie einzusetzen und Wiederherstellungspunkte zu Zeiten zu bestimmen, die Sie für angebracht halten.
+
+#### Speicherplatz
+
+Alle unsere Webhosting-Angebote
+
+- in Gravelines (GRA), Frankreich verfügen über automatische Backups für D-1 / D-2 / D-3 / D-7 / D-14. Diese Backups werden im Datacenter Roubaix (RBX) in Frankreich gespeichert.
+
+- in Beauharnois (BHS), Kanada verfügen über automatische Backups für D-1 / D-2 / D-3 / D-7 / D-14. Diese Backups werden im Rechenzentrum Beauharnois (BHS) in Kanada gespeichert.
+
+In unseren Dokumentationen erfahren Sie, wie Sie sich [in den Speicherplatz einloggen](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) oder den [Speicherplatz Ihres Webhostings wiederherstellen](https://docs.ovh.com/de/hosting/webhosting-speicherplatz-wiederherstellen/).
+
+#### Datenbank / SQL
+
+Für geteilte Datenbanken ("Shared", inklusive in Ihrem Webhosting Angebot) oder Datenbank-Server (SQL Private / Cloud Databases), lokalisiert in Gravelines (GRA), Frankreich und Beauharnois (BHS), Kanada, erfolgt eine tägliche Sicherung der Datenbanken. Diese Backups sind verfügbar (über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [OVHcloud API](https://api.ovh.com/)). Die Backups werden auch auf einer anderen Infrastruktur gespeichert. Diese Daten werden an 3 verschiedenen Standorten in Frankreich repliziert: Roubaix (RBX), Straßburg (SBG) und Gravelines (GRA). Die Aufbewahrungsdauer für die Backups beträgt 30 Tage.
+
+In unserer Anleitung erfahren Sie, wie [Backups der Datenbank eines Webhostings abrufen](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken/).
+
+#### E-Mail
+
+Für geteilte E-Mail-Dienste (in Ihrem Webhosting enthaltene Accounts) wird ein tägliches automatisches Backup erstellt und in ein anderes Rechenzentrum kopiert.
 
 ## Cookie-Richtlinie
 
