@@ -26,15 +26,15 @@ El NAS (Network Attached Storage) es un servidor de archivos conectado a una red
 
 El NAS-HA se gestiona desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-Una vez que se haya conectado, haga clic en `Bare Metal Cloud`{.action} y, seguidamente, en `NAS y CDN`{.action} en el menú de la izquierda. Haga clic en su servicio para acceder al menú de administración.
+Una vez que se haya conectado, haga clic en `Bare Metal Cloud`{.action} y abra `NAS y CDN`{.action}. Haga clic en su servicio para acceder al menú de administración.
 
-![acceso al NAS](images/nas2021-01.png){.thumbnail}
+![acceso al NAS](images/nas2022-01.png){.thumbnail}
 
 ### Crear una partición
 
 Para añadir una nueva partición, haga clic en `Crear una partición`{.action}.
 
-![crear una partición](images/nas2021-02.png){.thumbnail}
+![crear una partición](images/nas2022-02.png){.thumbnail}
 
 Introduzca el **nombre de la partición**, el **tamaño** de la partición y el **protocolo autorizado** (NFS o CIFS).
 

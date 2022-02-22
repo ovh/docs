@@ -22,15 +22,15 @@ Network Attached Storage (NAS) is a file server connected to a network whose mai
 
 You can manage your HA-NAS via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
-Once you have logged in, click on `Bare Metal Cloud`{.action}, then `NAS and CDN`{.action} in the menu on the left. Click on your service to access the administration menu.
+Once you have logged in, click on `Bare Metal Cloud`{.action}, then open `NAS and CDN`{.action}. Click on your service to access the administration menu.
 
-![NAS access](images/nas2021-01.png){.thumbnail}
+![NAS access](images/nas2022-01.png){.thumbnail}
 
 ### Creating a partition
 
 To add a new partition, click `Create a partition`{.action}.
 
-![create a partition](images/nas2021-02.png){.thumbnail}
+![create a partition](images/nas2022-02.png){.thumbnail}
 
 Simply enter your partition **name**, partition **size**, and authorised **protocol** (NFS or CIFS).
 
