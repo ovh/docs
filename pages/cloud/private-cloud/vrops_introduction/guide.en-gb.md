@@ -28,7 +28,13 @@ what we will do today
 To access vROPS, type in your dedicated cloud address in a browser.<br>
 Click on the vROPS icon.<br>
 
-![](images/en01dash.png){.thumbnail}
+![](images/en01logpage.png){.thumbnail}
+
+Use your vSphere login or the vROPS local user that you own.
+
+![](images/en02log.png){.thumbnail}
+
+
 
 - log in
 - Datasource
