@@ -135,7 +135,7 @@ Wszystkie nasze pakiety hostingowe są zainstalowane:
 
 - w Beauharnois (BHS) w Kanadzie, dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Beauharnois (BHS) w Kanadzie.
 
-Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) lub [przywrócić przestrzeń dyskową hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) w dokumentacji OVH.
+Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) lub [przywrócić przestrzeń dyskową hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) w dokumentacji OVHcloud.
 
 #### Baza danych / SQL
 
