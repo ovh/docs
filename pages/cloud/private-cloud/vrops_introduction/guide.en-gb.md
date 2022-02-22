@@ -44,12 +44,55 @@ The Data Sources section
 
 ![](images/en04datasources.png){.thumbnail}
 
+### Environment
+
+The Environment section
+
+![](images/en05environment.png){.thumbnail}
+
+### Visualize
+
+The Visualize section
+
+![](images/en06dashboards.png){.thumbnail}
+
+### Troubleshoot
+
+The Troubleshoot section
+
+![](images/en07troubleshoot.png){.thumbnail}
+
+### Optimize
+
+The Optimize section
+
+![](images/en08optimize.png){.thumbnail}
+
+### Plan
+
+The Plan section
+
+![](images/en09plan.png){.thumbnail}
+
+### Configure
+
+The Configure section
+
+![](images/en10configure.png){.thumbnail}
+
+### Automation
+
+The Automation section
+
+![](images/en11automation.png){.thumbnail}
+
+### Administration
+
+The Administration section
+
+![](images/en12administration.png){.thumbnail}
 
 
+## Go further
 
-- dashboard home
-- environment health
-- cluster health check
-- hosts health checks
-- vm health check
- 
+Join our community of users on <https://community.ovh.com/en/>.
