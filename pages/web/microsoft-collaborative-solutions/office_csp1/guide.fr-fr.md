@@ -6,7 +6,7 @@ section: Office
 order: 2
 ---
 
-**Dernière mise à jour le 09/09/2021**
+**Dernière mise à jour le 22/02/2022**
 
 ## Objectif
 
@@ -82,7 +82,7 @@ Cliquez sur le bouton `Commander plus de licences`{.action} à droite. Indiquez 
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
 
-### Gérer vos abonnements <a name="managesub"></a>
+### Gérer vos abonnements <a name="managesubscriptions"></a>
 
 #### Supprimer une licence dans un groupe de licences
 
@@ -91,15 +91,15 @@ Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le 
 ![emails](images/Outlook-cps1-06.png){.thumbnail}
 
 > [!primary]
-> Le mois en cours de consommation sera facturé à la fin de ce dernier.
+> Les consommations du mois en cours seront facturées à la fin de ce dernier.
 
-#### Résilier le groupe de licence
+#### Résilier le groupe de licences
 
-Pour résilier votre groupe de licence Microsoft Office 365 CSP1, cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du groupe de licences à résilier, puis sur `Résilier`{.action}.
+Pour résilier votre groupe de licence Microsoft Office 365 CSP1, cliquez sur votre nom en haut à droite de l'espace client OVHcloud puis sur le bouton `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du groupe de licences à résilier, puis sur `Résilier`{.action}.<br>
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
 > [!primary]
-> Le mois en cours de consommation sera facturé à la fin de ce dernier.
+> Les consommations du mois en cours seront facturées à la fin de ce dernier.
 
 ## Aller plus loin
 
