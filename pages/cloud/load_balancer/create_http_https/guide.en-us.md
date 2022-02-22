@@ -7,23 +7,23 @@ section: Configuration
 
 ## Objective
 
-The purpose of this guide is to help you create your first HTTP/HTTPS service with the new OVH Load Balancer solution. Here, we will set up a basic OVH Load Balancer service configuration to balance the HTTP load for a service like a website.
+The purpose of this guide is to help you create your first HTTP/HTTPS service with the new OVHcloud Load Balancer solution. Here, we will set up a basic OVHcloud Load Balancer service configuration to balance the HTTP load for a service like a website.
 
 A front-end will be created to listen on port 80, while another listens on port 443 with an SSL/TLS certificate. These front-ends will be configured to direct their traffic to a common HTTP farm. This farm can have one or more servers, depending on the configuration you have chosen/adapted.
 
-As a reminder, the OVH Load Balancer has four primary components:
+As a reminder, the OVHcloud Load Balancer has four primary components:
 
 - `front-ends`
 - server `farms` and their `servers`
 - the advanced `routes` between the front-ends and server farms (available soon, via the Sunrise Control Panel)
 - `SSL/TLS` connections that can encrypt TCP and/or HTTP connections
 
-**This guide will show you how to configure an OVH Load Balancer Service.**
+**This guide will show you how to configure an OVHcloud Load Balancer Service.**
 
 
 ## Requirements
 
-- an OVH Load Balancer
+- an OVHcloud Load Balancer
 - the ability to add and configure a farm, a server, a front-end and an SSL certificate
 
 
@@ -34,7 +34,7 @@ As a reminder, the OVH Load Balancer has four primary components:
 > This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
 > 
 
-If you have not done so already, we recommend reading a general introduction to the OVH Load Balancer service before you get started: [Introduction to the OVHcloud Load Balancer](https://docs.ovh.com/asia/en/load-balancer/loadbalancer-introduction/){.ref}
+If you have not done so already, we recommend reading a general introduction to the OVHcloud Load Balancer service before you get started: [Introduction to the OVHcloud Load Balancer](https://docs.ovh.com/asia/en/load-balancer/loadbalancer-introduction/){.ref}
 
 
 > [!warning]
@@ -44,11 +44,11 @@ If you have not done so already, we recommend reading a general introduction to 
 
 In the Sunrise Control Panel, you will see the features detailed below:
 
-![OVH Load Balancer service](images/iplb_service.png){.thumbnail}
+![OVHcloud Load Balancer service](images/iplb_service.png){.thumbnail}
 
 For more information on the Sunrise Control Panel’s features, you can consult the following guide: [Managing the Load Balancer from the customer control panel](https://docs.ovh.com/asia/en/load-balancer/usage-loadbalancer/){.ref}
 
-Similarly, this can be done via the OVH API, in the section:
+Similarly, this can be done via the OVHcloud API, in the section:
 
 > [!api]
 >
@@ -67,9 +67,9 @@ We will add a farm of HTTP servers to our service, which is the part that balanc
 
 In the `Server farms`{.action} tab, click on the `Add a server farm`{.action} button.
 
-Fill in the fields. The only mandatory fields for a basic configuration are *Protocol* and *Datacentre*. We recommend explicitly defining a *Port* (generally port 80 for a web service). If no ports are specified, your OVH Load Balancer will automatically use the same port as the corresponding front-end, and the probes will not be able to work as intended.
+Fill in the fields. The only mandatory fields for a basic configuration are *Protocol* and *Datacentre*. We recommend explicitly defining a *Port* (generally port 80 for a web service). If no ports are specified, your OVHcloud Load Balancer will automatically use the same port as the corresponding front-end, and the probes will not be able to work as intended.
 
-If you add several servers to your farm, we advise configuring an HTTP `availability probe`. When a probe is configured, the OVH Load Balancer service can automatically disable a server that is down or under maintenance, so that your web users are not affected.
+If you add several servers to your farm, we advise configuring an HTTP `availability probe`. When a probe is configured, the OVHcloud Load Balancer service can automatically disable a server that is down or under maintenance, so that your web users are not affected.
 
 
 ![Add a server farm via the Control Panel](images/add_backend.png){.thumbnail}
@@ -181,7 +181,7 @@ Your server should appear in the server list, in the `Server farm`{.action} tab,
 
 ## Add a front-end.
 
-We will now add a `front-end` to our service, and connect it to our server farm. The front-end is the part of your OVH Load Balancer that exposes your service on the internet. First, we will only configure it in HTTP, without an SSL/TLS certificate.
+We will now add a `front-end` to our service, and connect it to our server farm. The front-end is the part of your OVHcloud Load Balancer that exposes your service on the internet. First, we will only configure it in HTTP, without an SSL/TLS certificate.
 
 
 ### Via the Sunrise Control Panel.
@@ -190,7 +190,7 @@ Go to the `Front-ends`{.action} tab, and click `Add a front-end`{.action}.
 
 Fill in the fields. The only mandatory fields for a basic configuration are *Protocol*, *Port* (80 for a standard HTTP web service) and *Datacentre*. If you want your service to be available across several ports at once, you can specify a list of ports, separated by commas, or a range of ports, in the format "START_PORT-END_PORT".
 
-If you have routed failover IPs to your OVH Load Balancer service, you can also attach a front-end to one or more specific failover IPs.
+If you have routed failover IPs to your OVHcloud Load Balancer service, you can also attach a front-end to one or more specific failover IPs.
 
 
 ![Add a front-end](images/add_frontend.png){.thumbnail}
@@ -252,22 +252,22 @@ Whether you choose to configure your service via the API or the Sunrise Control 
 - Import an existing SSL/TLS certificate.
 - Order an automatically managed SSL/TLS certificate. DV and EV certificates will be available to order soon.
 
-If you choose to import an SSL/TLS certificate that you have already ordered and managed yourself, you will need to renew it periodically yourself, and update it in your OVH Load Balancer service. Most certificates are valid for one year. Some remain valid for longer periods of time. However, Let's Encrypt certificates need to be renewed every three months. We recommend using your OVH Load Balancer to automatically manage the service for Let’s Encrypt certificates, so that you do not miss the expiry dates.
+If you choose to import an SSL/TLS certificate that you have already ordered and managed yourself, you will need to renew it periodically yourself, and update it in your OVHcloud Load Balancer service. Most certificates are valid for one year. Some remain valid for longer periods of time. However, Let's Encrypt certificates need to be renewed every three months. We recommend using your OVHcloud Load Balancer to automatically manage the service for Let’s Encrypt certificates, so that you do not miss the expiry dates.
 
-If you opt for a certificate managed by the OVH Load Balancer service, it will be automatically ordered, validated, installed and renewed periodically by your OVH Load Balancer. For the validation and renewal operations to work, the domains you are ordering this certificate for need to be routed to your OVH Load Balancer service. This means that your domain’s *A* and *AAAA* DNS records must point to your OVH Load Balancer’s IPv4 and IPv6 fields respectively, or to one of its failover IPs. When you order, you will receive an email that will guide you through the validation steps.
+If you opt for a certificate managed by the OVHcloud Load Balancer service, it will be automatically ordered, validated, installed and renewed periodically by your OVHcloud Load Balancer. For the validation and renewal operations to work, the domains you are ordering this certificate for need to be routed to your OVHcloud Load Balancer service. This means that your domain’s *A* and *AAAA* DNS records must point to your OVHcloud Load Balancer’s IPv4 and IPv6 fields respectively, or to one of its failover IPs. When you order, you will receive an email that will guide you through the validation steps.
 
 >
-> To ensure that your service remains accessible when you switch your domain to your OVH Load Balancer service’s IP address in order to validate your certificate, it is good practice to start by configuring and testing all of the HTTP configuration on port 80. This way, your website will remain accessible without any interruptions.
-> If the website already has a HTTPS connection and you want to switch to certificates managed by your OVH Load Balancer service, you can import your existing certificates, configure and test your HTTPS front-end, and order a new certificate for the same domain.  It will be taken into account automatically when your old certificate expires.
+> To ensure that your service remains accessible when you switch your domain to your OVHcloud Load Balancer service’s IP address in order to validate your certificate, it is good practice to start by configuring and testing all of the HTTP configuration on port 80. This way, your website will remain accessible without any interruptions.
+> If the website already has a HTTPS connection and you want to switch to certificates managed by your OVHcloud Load Balancer service, you can import your existing certificates, configure and test your HTTPS front-end, and order a new certificate for the same domain.  It will be taken into account automatically when your old certificate expires.
 > 
 
 
-The certificates configured on your OVH Load Balancer service are automatically available for all of the front-ends on your service that have *SSL* options enabled.
+The certificates configured on your OVHcloud Load Balancer service are automatically available for all of the front-ends on your service that have *SSL* options enabled.
 
 
 ### Via the Sunrise Control Panel.
 
-The list of SSL/TLS certificates configured on the OVH Load Balancer can be found in the `SSL certificates`{.action} tab. In this interface, you can select one of the two options mentioned further up, i.e. importing an existing certificate certificate (`Add an SSL certificate`{.action}) and (`Order an SSL certificate`{.action}) managed automatically by your OVH Load Balancer.
+The list of SSL/TLS certificates configured on the OVHcloud Load Balancer can be found in the `SSL certificates`{.action} tab. In this interface, you can select one of the two options mentioned further up, i.e. importing an existing certificate (`Add an SSL certificate`{.action}) and (`Order an SSL certificate`{.action}) managed automatically by your OVHcloud Load Balancer.
 
 
 ![Buttons for adding certificates](images/certificat.png){.thumbnail}
@@ -279,7 +279,7 @@ Click `Add`{.action} once you have filled in the fields. Your certificate will a
 
 ![Add an existing SSL certificate](images/add_certificat_custom.png){.thumbnail}
 
-To add a Let's Encrypt certificate, click `Order an SSL certificate`{.action}, enter your domains, ensure that they point to your OVH Load Balancer, and follow the instructions set out in the guides you receive. You will then see it appear in the list of available certificates.
+To add a Let's Encrypt certificate, click `Order an SSL certificate`{.action}, enter your domains, ensure that they point to your OVHcloud Load Balancer, and follow the instructions set out in the guides you receive. You will then see it appear in the list of available certificates.
 
 
 ![Order a Let’s Encrypt certificate](images/add_certificat_letsencrypt.png){.thumbnail}
@@ -332,14 +332,14 @@ Once your certificates have been configured, you can create a HTTPS front-end, o
 
 ## Apply the modifications
 
-The modifications made to your OVH Load Balancer must be *explicitly applied* in each of the zones configured for your OVH Load Balancer service. Only then will they be visible to your website visitors. This way, you can make complex configuration changes in one go.
+The modifications made to your OVHcloud Load Balancer must be *explicitly applied* in each of the zones configured for your OVHcloud Load Balancer service. Only then will they be visible to your website visitors. This way, you can make complex configuration changes in one go.
 
 If you have several zones, you must apply the same configuration for each of them.
 
 
 ### Via the Sunrise Control Panel.
 
-Go to the page for your OVH Load Balancer, and click `Apply configuration`{.action}.
+Go to the page for your OVHcloud Load Balancer, and click `Apply configuration`{.action}.
 
 ![Apply configuration](images/btn_apply_configuration.png){.thumbnail}
 
