@@ -6,7 +6,7 @@ section: 'Exchange account migration'
 order: 1
 ---
 
-**Last updated 22th February 2022**
+**Last updated 22nd February 2022**
 
 ## Objective
 
@@ -105,11 +105,11 @@ Finally, confirm the password for the source email address (the one you want to 
 >
 > If you have just ordered your new email solution, first add the domain name to your email platform, then start your migration. <br> - *For example, to migrate the "myemail@mydomain.ovh" account, you need to add the mydomain.ovh domain name to your platform.*
 >
->Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that the word `OK` is in the `Status` column.
+>Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that the word `OK` appears in the `Status` column.
 >
 >![exchange](images/account_migration_adddomain.png) {.thumbnail}
 >
-> To find out more about adding a domain name, follow [the Email Pro guide](https://docs.ovh.com/gb/en/emails-pro/first-configuration-email-pro/#step-2-add-your-domain-name) or [the Exchange guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+> To find out more about adding a domain name, follow the [Email Pro guide](https://docs.ovh.com/gb/en/emails-pro/first-configuration-email-pro/#step-2-add-your-domain-name) or the [Exchange guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 
