@@ -6,7 +6,7 @@ section: Administratif
 order: 4
 ---
 
-**Dernière mise à jour le 15/02/2022**
+**Dernière mise à jour le 22/02/2022**
 
 ## Objectif
 
@@ -94,18 +94,18 @@ Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`
 > 
 > La liste suivante n'est pas exhaustive. Il s'agit des documents standard exigés à tous les clients dans le cadre de la vérification d'identité par Lemonway&#174;.
 > Des documents supplémentaires peuvent être requis pour effectuer des vérifications complémentaires.
+>
+> Si votre compte OVHcloud correspond à un projet de **financement participatif de type *crowdfunding***, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
+>
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
 
-[Compte individuel](#individuel)<br />
 [Entité juridique](#entitejuridique)<br />
 &ensp;&ensp;[Société non cotée](#societenoncotee)<br />
 &ensp;&ensp;[Société cotée dans un pays de l'UE ou un pays tiers équivalent](#societecotee)<br />
 &ensp;&ensp;[Association/Organisme juridique](#association)<br />
 &ensp;&ensp;[Administration/Autorité ou Agences publiques et autorités régionales](#administration)<br />
 &ensp;&ensp;[Fondation](#fondation)<br />
-&emsp;&emsp;[Fondation simple](#fondationsimple)<br />
-&emsp;&emsp;[Fondation sous l'égide d'une fondation abritante](#fondationssousegide)<br />
 &ensp;&ensp;[Fonds de dotation](#fondsdotation)<br />
 &ensp;&ensp;[Artisan](#artisan)<br />
 &ensp;&ensp;[Exploitation agricole à responsabilité limitée](#exploitationagricole)<br />
@@ -118,13 +118,6 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 [Compagnie d'assurance](#assurance)<br />
 [Paroisse ou église](#eglise)<br />
 
-
-#### Compte individuel <a name="individuel"></a>
-
-- Une première pièce d'identité en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
-- Une seconde pièce d'identité en cours de validité du titulaire du compte : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire (recto et verso), dernier avis d'imposition daté de moins d'un an, livret de famille, récépissé d'enregistrement du pacte civil de solidarité ou carte vitale.
-- Un **Relevé d'Identité Bancaire**
-
 #### Entité juridique <a name="entitejuridique"></a>
 
 ##### **Société non cotée** <a name="societenoncotee"></a>
@@ -134,7 +127,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud.
 - Les statuts de la société, datés et signés.
 - Le registre des bénéficiaires effectifs type DBE-S1 (présentant les personnes physiques détenant directement ou indirectement plus de 25% du capital de la société).
-- Un **Relevé d'Identité Bancaire**
+- Un **Relevé d'Identité Bancaire**.
 
 ##### **Société cotée dans un pays de l'UE ou un pays tiers équivalent** <a name="societecotee"></a>
 
@@ -142,7 +135,7 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 - Un **KBIS de moins de trois mois** de la société titulaire du compte OVHcloud. Si non précisé sur le KBIS, le poste de la personne physique habilitée à représenter la société doit être publiquement vérifiable (par exemple sur LinkedIn) ou une délégation de pouvoir doit être fournie.
 - Preuve de la présence de la société sur ledit Marché (cela peut être la page de la Bourse du pays montrant les détails de la société).
 - Si les actions de la société ne sont pas au moins à 76% des actions publiques, tous les actionnaires détenant ou contrôlant plus de 25% des parts sociales seront soumis à la vérification des bénéficiaires effectifs.
-- Un **Relevé d'Identité Bancaire**
+- Un **Relevé d'Identité Bancaire**.
 
 ##### **Association/Organisme juridique** <a name="association"></a>
 
@@ -160,22 +153,11 @@ Cliquez sur le type d'entité concerné pour accéder à la liste des documents 
 
 ##### **Fondation** <a name="fondation"></a>
 
-###### **Fondation simple** <a name="fondationsimple"></a>
-
 - Une **pièce d'identité** en cours de validité de la personne physique représentant la fondation titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
 - Un **document officiel certifiant** que la personne physique identifiée est bien autorisée à **représenter la fondation** et à gérer le compte OVHcloud.
 - Les **statuts datés et signés** de la fondation titulaire du compte OVHcloud.
 - La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant la fondation titulaire du compte OVHcloud.
 - Un **Relevé d'Identité Bancaire**.
-
-###### **Fondation sous l'égide d'une fondation abritante** <a name="fondationssousegide"></a>
-
-- Une **pièce d'identité** en cours de validité de la personne physique représentant la fondation titulaire du compte OVHcloud : carte d'identité (recto et verso), passeport, titre de séjour (recto et verso), permis de conduire biométrique (recto et verso).
-- La **parution au JOAFE** (Journal officiel des associations et fondations d'entreprise) répertoriant la fondation abritante.
-- Les **statuts datés et signés** de la fondation abritante.
-- **L'accord daté et signé** entre la fondation abritante et la fondation abritée.
-- Une **copie de moins d'un an du procès-verbal de la dernière assemblée générale** ou la liste des membres du conseil d'administration de la fondation abritée titulaire du compte OVHcloud.
-- Un **Relevé d'Identité Bancaire** (au nom de la fondation abritée ou de la fondation abritante).
 
 ##### **Fonds de dotation** <a name="fondsdotation"></a>
 
