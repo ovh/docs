@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Última actualización: 23/07/2021**
+**Última actualización: 22/02/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -91,7 +91,15 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 
 #### 3.2 Migrar la nueva versión del MXPlan <a name="NouvelleVersionMxplan"></a>
 
-Antes de realizar la migración, si acaba de contratar la nueva solución de correo, añada el dominio a su plataforma [Exchange](../anadir-dominio-exchange/).
+> [!warning]
+>
+> Si acaba de contratar un nuevo servicio de correo, añada el dominio a su plataforma de correo antes de realizar la migración. <br> - *Por ejemplo, para migrar la cuenta "myemail@mydomain.ovh", debe añadir el dominio "mydomain.ovh" a su plataforma.*
+>
+>Seleccione la pestaña `Dominios asociados`{.action} en su plataforma y haga clic en `Añadir un dominio`{.action}. Una vez añadido el dominio, asegúrese de que la mención `OK` aparezca en la columna `Estado`.
+>
+>![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>
+> Para más información sobre la adición de un dominio, consulte [la guía Exchange](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/anadir-dominio-exchange/).
 
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 
