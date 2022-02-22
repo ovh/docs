@@ -1,5 +1,5 @@
 ---
-title: Gérer un groupe de licences Microsoft 365 OVHcloud
+title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
 section: Office
@@ -81,6 +81,25 @@ Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences 
 Cliquez sur le bouton `Commander plus de licences`{.action} à droite. Indiquez le nombre et le type de licences que vous souhaitez commander.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
+
+### Gérer vos abonnements <a name="managesub"></a>
+
+#### Supprimer une licence dans un groupe de licences
+
+Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton `...`{.action} à droite de la licence à résilier, puis cliquez sur `Supprimer`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Le mois en cours de consommation sera facturé à la fin de ce dernier.
+
+#### Résilier le groupe de licence
+
+Pour résilier votre groupe de licence Microsoft Office 365 CSP1, cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du groupe de licences à résilier, puis sur `Résilier`{.action}.
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+> [!primary]
+> Le mois en cours de consommation sera facturé à la fin de ce dernier.
 
 ## Aller plus loin
 
