@@ -107,9 +107,9 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 
 > [!warning]
 >
-> Wenn Sie Ihr neues E-Mail Angebot bestellt haben, fügen Sie zunächst den Domainnamen zu Ihrer E-Mail Plattform hinzu, bevor Sie mit der Migration beginnen. <br> - *Um zum Beispiel den Account "myemail@mydomain.ovh" zu migrieren müssen Sie die Domain "mydomain.ovh" zu Ihrer Plattform hinzufügen.*
+> Wenn Sie Ihr neues E-Mail Angebot gerade erst bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrem E-Mail-Dienst hinzu, bevor Sie mit der Migration beginnen. <br> - *Um zum Beispiel den Account "myemail@mydomain.ovh" zu migrieren müssen Sie die Domain "mydomain.ovh" zu Ihrem Dienst hinzufügen.*
 >
->Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Sobald die Domain hinzugefügt wurde, überprüfen Sie bitte, dass der Eintrag `OK` in der Spalte `Status` angezeigt wird.
+>Wählen Sie den Tab `Assoziierte Domains`{.action} Ihres Dienstes aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Sobald die Domain hinzugefügt wurde, überprüfen Sie, dass der Eintrag `OK` in der Spalte `Status` angezeigt wird.
 >
 >![exchange](images/account_migration_adddomain.png) {.thumbnail}
 >
