@@ -34,10 +34,13 @@ Use your vSphere login or the vROPS local user that you own.
 
 ![](images/en02log.png){.thumbnail}
 
+You are now on the vROPS Home page with access to all its functionalities.
+
+![](images/en03home.png){.thumbnail}
+
+### Datasource
 
 
-- log in
-- Datasource
 - dashboard home
 - environment health
 - cluster health check
