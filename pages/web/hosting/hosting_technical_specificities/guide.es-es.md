@@ -6,7 +6,11 @@ legacy_guide_number: g1463
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 14/05/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 22/02/2022**
 
 ## Objetivo
 
@@ -120,6 +124,32 @@ Puede consultar información detallada de su cluster en este enlace: <https://we
 Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
 
 Para conocer las particularidades técnicas del hosting Cloud Web, diríjase directamente al enlace <https://cloudweb-infos.hosting.ovh.net/>.
+
+## Información sobre las copias de seguridad automáticas <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud se compromete a prestar un servicio de copias de seguridad automático de los datos y a ponerlos a disposición de los usuarios. Sin embargo, es su responsabilidad implementar su propia política de restauración, y determinar puntos de restauración en los momentos que juzgue convenientes.
+
+#### Espacio en disco
+
+Todos nuestros planes de hosting situados en:
+
+- en Gravelines (GRA), Francia, disponen de copias de seguridad automáticas en D-1, D-2, D-3, D-7 y D-14. Estas copias de seguridad también se almacenan en el datacenter de Roubaix (RBX), en Francia.
+
+- en Beauharnois (BHS), Canadá, disponen de copias de seguridad automáticas en D-1, D-2, D-3, D-7 y D-14. Estas copias de seguridad también se almacenan en el datacenter de Beauharnois (BHS), en Canadá.
+
+Esta guía explica cómo [conectarse al espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) o [restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
+
+#### Base de datos / SQL
+
+Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (SQL Privado/Cloud Databases) de Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza diariamente. Estas copias de seguridad están disponibles (a través de [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a través de [la API de OVHcloud](https://api.ovh.com/)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en 3 lugares distintos en Francia : Roubaix (RBX), Estrasburgo (SBG) y Gravelines (GRA). La política de retención de las copias de seguridad es de 30 días.
+
+Esta guía explica cómo [Descargar la copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) en nuestra guía.
+
+#### Email
+
+Para las cuentas de correo en alojamiento compartido (incluidas en su plan de web hosting), se realiza y se copia una copia de seguridad automática diaria a otro datacenter.
 
 ## Política de cookies
 

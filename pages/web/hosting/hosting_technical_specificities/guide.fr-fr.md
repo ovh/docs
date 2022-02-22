@@ -144,7 +144,7 @@ Découvrez comment [Récupérer la sauvegarde de la base de données d’un héb
 
 #### E-mail
 
-Pour les comptes e-mails mutualisés (compris dans votre offre d'hébergement Web), une sauvegarde automatique quotidienne est réalisée et copiée dans un autre centre de données.  
+Pour les comptes e-mails mutualisés (compris dans votre offre d'hébergement Web), une sauvegarde automatique quotidienne est réalisée et copiée dans un autre centre de données.
 
 ### Politique d'utilisation des cookies
 
