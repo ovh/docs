@@ -73,11 +73,9 @@ Nous allons nous connecter au travers de PRISM Central qui est le point d'entré
 
 L'accès au cluster se fait au travers d'une adresse publique sur une adresse du type [https://FQDN:9440](https://FQDN:9440) Cette adresse est fournie au client lors de la création d'un CLUSTER NUTANIX chez OVHcloud.
 
-![PrismCentralLogin](images/PrismCentralLogin.PNG)
-
 ![PrismCentralLogin](images/PrismCentralUsername.PNG)
 
-Dans la partie encadrée saisir un nom d'utilateur et un mot de passe et cliquer sur la flêche.
+Dans la partie encadrée saisir un nom d'utiliateur et un mot de passe et cliquer sur la flêche.
 
 ![PrismCentralDashboard](images/PrismCentralDashboard.PNG)
 
@@ -99,9 +97,10 @@ Dans cette fenêtre on peut voir l'état du stockage par nœud.
 
 ![HardwareMenu](images/HardwareMenu.png)
 
-En allant dans le menu hardware et en cliquant sur **Hardware** nous aurons le détail par Nœud du stockage avec le nombre de disques alloués par nœud.
+Aller dans le menu hardware en cliquant sur **Hardware** et nous aurons le détail par Nœud du stockage avec le nombre de disques alloués par nœud.
 
 ![HarwareDetail](images/HardwareDetail.PNG)
+Pour avoir ce résumé dans l'encadré en haut il faut cliquer sur Diagram.
 
 ## Aller plus loin
 
