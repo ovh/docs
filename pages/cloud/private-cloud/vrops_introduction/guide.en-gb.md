@@ -25,6 +25,10 @@ what we will do today
 
 ### Interface access
 
+To access vROPS, type in your dedicated cloud address in a browser.<br>
+Click on the vROPS icon.<br>
+
+![](images/en01dash.png){.thumbnail}
 
 - log in
 - Datasource
