@@ -129,13 +129,13 @@ For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/
 >
 > OVHcloud is committed to providing an automatic data backup service, as well as making these backups available. However, it is your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
 
-### Disk space
+#### Disk space
 
-All of our web hosting plans are located in:
+All of our Web Hosting plans located in:
 
-- in Gravelines (GRA), in France, have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are also stored in the Roubaix (RBX) datacentre in France.
+- Gravelines (GRA), France have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are stored in the Roubaix (RBX) data centre in France.
 
-- in Beauharnois (BHS), Canada, have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are also stored in the Beauharnois (BHS) datacentre in Canada.
+- Beauharnois (BHS), Canada have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are stored in the Beauharnois (BHS) data centre in Canada.
 
 Find out how to [log in to your storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) or [restore your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) in our documentation.
 
@@ -147,7 +147,7 @@ Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.
 
 #### Email
 
-For shared email accounts (included in your Web Hosting plan), a daily automatic backup is created and copied to another datacentre.
+For shared email accounts (included in your Web Hosting plan), a daily automatic backup is created and copied to another data centre.
 
 ### Cookie Policy
 
