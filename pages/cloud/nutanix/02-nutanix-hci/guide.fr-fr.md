@@ -61,7 +61,7 @@ En cas de défaillance d'un nœud les ordinateurs virtuels redémarrent sur un d
 * En SSH sur le cluster **Dans ce cas-là c'est aussi une des CVM**.
 * En SSH sur un des nœuds du cluster pour des opérations de maitenance sur l'hyperviseur.
 
-Au travers de prism Central et de Prism Element il est possible d'utiliser l'interface RESTAPI pour automatiser 
+Au travers de prism Central et de Prism Element il est possible d'utiliser l'interface RESTAPI pour automatiser certaines tâches en ligne de commande.
 
 ## En pratique
 
@@ -79,8 +79,6 @@ L'accès au cluster se fait au travers d'une adresse publique sur une adresse du
 
 Dans la partie encadrée saisir un nom d'utilateur et un mot de passe et cliquer sur la flêche.
 
-![PrismCentralLogin](images/PrismCentralUsername.PNG)
-
 ![PrismCentralDashboard](images/PrismCentralDashboard.PNG)
 
 ### Connexion à Prism Element au travers de PRISM Central
@@ -88,6 +86,8 @@ Dans la partie encadrée saisir un nom d'utilateur et un mot de passe et cliquer
 Sur le tableau de bord de prism central cliquer sur le nom du cluster dans **Cluster Quick Access** là ou se trouve l'encadrement.
 
 ![PrismCentralDashboard](images/PrismCentralDashboard.PNG)
+
+![PrismElementDashBoard](images/PrismElementDashBoard.PNG)
 
 Sur la sélection à droite apparait le nombre de Disques en totalité, le nombre de VMs ainsi que le le nombre d'hote. Un coeur de couleur verte indique que le cluster NUTANIX fonctionne correctement. En bas de cet encadré est affiché le niveau de tolérance de panne **1 signifie que nous sommes en RF2 avec la possibilité d'une perte d'un disque sur un nœud ou un nœud entièrement**.
 
@@ -97,7 +97,7 @@ Sur la sélection à gauche est affiché un résumé du stockage, de l'espace di
 
 Dans cette fenêtre on peut voir l'état du stockage par nœud.
 
-![HardwareMenu](images/HardwareMenu.PNG)
+![HardwareMenu](images/HardwareMenu.png)
 
 En allant dans le menu hardware et en cliquant sur **Hardware** nous aurons le détail par Nœud du stockage avec le nombre de disques alloués par nœud.
 
