@@ -65,7 +65,7 @@ Kimsufi             | So you Start | OVHcloud
 
 **DNS secondaire** : Configurez votre DNS secondaire ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/en/dedicated/secondary-dns/)
 
-**Backup Storage** : Commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
+**Backup Storage** (Disponible uniquement sur les serveurs OVHcloud et So you Start) : Commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
 
 **Interventions** : Retrouvez ici les interventions en cours et passées sur votre serveur.
 
