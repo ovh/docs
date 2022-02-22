@@ -13,7 +13,7 @@ This guide allows you to mount NFS on the most common distributions. To mount an
 
 - a [Dedicated Server](https://www.ovhcloud.com/en-ie/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/en-ie/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/).
 - a [HA-NAS solution](https://www.ovh.ie/nas/).
-- An NFS-compatible distribution.
+- an NFS-compatible distribution.
 
 
 ### Linux

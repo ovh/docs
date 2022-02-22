@@ -15,7 +15,7 @@ Per il mount di una cartella condivisa NFS è necessario disporre di:
 
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) **o** un [VPS](https://www.ovhcloud.com/it/vps/) **o** un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/).
 - Un'offerta [NAS-HA](https://www.ovh.it/nas/).
-- una distribuzione compatibile con NFS.
+- Una distribuzione compatibile con NFS.
 
 
 ### Linux
