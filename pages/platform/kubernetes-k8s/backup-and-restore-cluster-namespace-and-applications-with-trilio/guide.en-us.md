@@ -607,7 +607,7 @@ Go ahead and explore each section from the left, like:
 - `Disaster Recovery`: Allows you to manage and perform disaster recovery operations.
   ![TVK Disaster Recovery](assets/images/tvk_disaster_recovery.png)
 
-You can also see the S3 Target created earlier, by navigating to `Backup & Recovery -> Targets -> Select the TVK Namespace from the dropdonw on the top` (in case of `ovh/docs` the TVK Namespace is `tvk`):
+You can also see the S3 Target created earlier, by navigating to `Backup & Recovery -> Targets -> Select the TVK Namespace from the dropdown on the top` (in case of `ovh/docs` the TVK Namespace is `tvk`):
 
 ![TVK Target List](assets/images/tvk_target_list.png)
 
@@ -674,7 +674,7 @@ To perform backups for a single application at the namespace level (or Helm rele
 - Define `schedules` for `full` or `incremental` type backups.
 - Define `retention` policies for your backups.
 
-**Note:** The `TrilioVault for Kubernetes` has created a few sample scheduling and retention policies for users. Users can create the new policies or utilize the sample policies as well.
+**Note:** The `TrilioVault for Kubernetes` has created a few sample scheduling and retention policies for users. Users can create the new policies or utilize the sample policies.
 ![TVK Default Scheduling Policy](assets/images/tvk_default_scheduling_policies.png)
 ![TVK Default Retention Policy](assets/images/tvk_default_retention_policies.png)
 
@@ -1133,7 +1133,7 @@ In the next step, you will learn how to set up a retention policy for your backu
 
 The retention policy allows you to define the `number` of backups to `retain` and the `cadence` to `delete` backups as per compliance requirements. The retention policy `CRD` provides a simple `YAML` specification to define the `number` of backups to retain in terms of `days`, `weeks`, `months`, `years`, latest etc.
 
-**Note:**The `TrilioVault for Kubernetes` has created a few sample retention policies for users. Users can create the new or utilize the sample policies as well.
+**Note:** By default `TrilioVault for Kubernetes` creates the sample retention policy `sample-ret-policy` after installation. Users can use the same retention policy is no changes is required. See the default values of the policy in the TVK UI Retention policy:
 ![TVK Default Retention Policy](assets/images/tvk_default_retention_policies.png)
 
 ### Using Retention Policies
@@ -1245,4 +1245,4 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/disaster-recovery-plan).
 - [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
-- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes).
+- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes)
