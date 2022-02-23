@@ -95,7 +95,7 @@ Une fois tous vos documents ajoutés, cliquez sur `Retourner au tableau de bord`
 > La liste suivante n'est pas exhaustive. Il s'agit des documents standard exigés à tous les clients dans le cadre de la vérification d'identité par Lemonway&#174;.
 > Des documents supplémentaires peuvent être requis pour effectuer des vérifications complémentaires.
 >
-> Si votre compte OVHcloud correspond à un projet de **financement participatif de type *crowdfunding***, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
+> Si votre compte OVHcloud correspond à **un projet de financement participatif (*crowdfunding*)**, il sera également nécessaire, en plus des documents requis pour le type d'entité concerné, de fournir **un document décrivant le projet en détails**.
 >
 
 Cliquez sur le type d'entité concerné pour accéder à la liste des documents requis :
