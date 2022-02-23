@@ -21,7 +21,7 @@ Enterprise File Storage services can be managed [via the OVHcloud API](../netapp
 
 ## Instructions <a name="instructions"></a>
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Bare Metal Cloud`{.action} in the top navigation bar. Open `Storage and Backup`{.action} and `Enterprise File Storage`{.action} in the left-hand menu, then select your service from the list.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Bare Metal Cloud`{.action} section. Open `Storage and Backup`{.action} and `Enterprise File Storage`{.action}, then select your service from the list.
 
 ![General information](images/manage_enterprise01.png){.thumbnail}
 

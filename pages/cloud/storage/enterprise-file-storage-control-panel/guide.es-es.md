@@ -25,7 +25,7 @@ Los servicios Enterprise File Storage pueden administrarse [a través de la API 
 
 ## Procedimiento <a name="instructions"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Bare Metal Cloud`{.action} en la barra de navegación superior. Abra `Storage y Backup`{.action}, luego `Enterprise File Storage`{.action} en el menú de la izquierda y seleccione su servicio de la lista.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Bare Metal Cloud`{.action}. Abra `Storage y Backup`{.action}, luego `Enterprise File Storage`{.action} y seleccione su servicio de la lista.
 
 ![Información general](images/manage_enterprise01.png){.thumbnail}
 
