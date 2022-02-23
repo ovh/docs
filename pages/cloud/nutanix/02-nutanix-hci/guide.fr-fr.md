@@ -10,7 +10,18 @@ order: 02
 
 ## Objectif
 
-Ce document rappelle le fonctionnement d'une solution d'hyperconvergence NUTANIX et propose une découverte de l'interface Prim Central et PRISM element. Le choix d'OVHcloud est d'utiliser NUTANIX sur un hyperviseur AHV.
+Ce document rappelle le fonctionnement d'une solution d'hyperconvergence NUTANIX et propose une découverte de l'interface Prim Central et PRISM element. 
+
+> [!warning]
+> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+>
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+>
+
+## Prérequis
+
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## Prérequis
 
