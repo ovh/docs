@@ -65,7 +65,7 @@ Nous allons créer un **Storage container** avec 300 Go minimum réservé pour c
 
 ![StorageMenu](images/StorageMenu.png)
 
-Dans le menu choisir la sélection *Storage*
+Dans le menu choisir la sélection **Storage**
 
 ![StorageContainerDashboard](images/StorageContainerDashboard.PNG)
 
@@ -75,13 +75,13 @@ Dans la sélection de droite Cliquer sur le **signe + à gauche de Storage Conta
 
 ![StorageContainerCreation1](images/StorageContainerCreation1.PNG)
 
-Saisir le nom du storage container dans la zone de saisie NAME.
+Saisir le nom du storage container dans la zone de saisie **NAME**.
 
 Cliquer sur **Advanced Settings** pour avoir les paramètres avancés.
 
 ![StorageContainerCreation2](images/StorageContainerCreation2.PNG)
 
-Dans la sélection **reserved capacity** saisir la taille ensuite faire défiler pour voir toutes les options possibles.
+Dans la sélection **RESERVED CAPACITY** saisir la taille ensuite faire défiler pour voir toutes les options possibles.
 
 ![StorageContainerCreation3](images/StorageContainerCreation3.PNG)
 
@@ -118,9 +118,9 @@ Faire défiler pour voir les autres options
 
 ![VolumeGroupCreation4](images/VolumeGroupCreation4.PNG)
 
-Pour valider la création d'un **Volume Group** cliquer sur Save
+Pour valider la création d'un **Volume Group** cliquer sur *Save*
 
-![VolumeGroupDashBoard](image/VolumeGroupDashBoardCreated.PNG)
+![VolumeGroupDashBoardCreated](image/VolumeGroupDashBoardCreated.PNG)
 
 Le **Volume GROUP** apparait dans la liste 
 
