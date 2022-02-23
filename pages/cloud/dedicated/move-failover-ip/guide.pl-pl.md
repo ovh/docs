@@ -47,7 +47,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 
 ### Przenieś IP w Panelu klienta OVHcloud
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, a następnie sekcję `IP`{.action} w dolnej części kolumny po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, następnie otwórz sekcję  `IP`{.action}.
 
 ![Panelu klienta](images/manager01.png){.thumbnail}
 

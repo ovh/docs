@@ -46,9 +46,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 
 ### Migrar um IP a partir da Área de Cliente OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e, a seguir, na secção `IP`{.action} no final da coluna, à esquerda da página.
-
-![Área de Cliente](images/manager01.png){.thumbnail}
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 
 O menu pendente "Service" permite-lhe selecionar apenas os endereços IP Failover.
 
