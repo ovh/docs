@@ -50,15 +50,20 @@ Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple 
 
 ### Environment
 
-The Environment section
+The Environment section inventories your infrastructure and gives you access to monitoring of all your objects. Objects can be Hosts, Network devices, VMs, Applications... 
 
 ![](images/en05environment.png){.thumbnail}
 
 ### Visualize
 
-The Visualize section
+The Visualize section holds dashboards and reports. There are plenty of premade dashboards that will give you quick views on your Infrastructure's health.
 
 ![](images/en06dashboards.png){.thumbnail}
+
+You can still `+ Create`{.action} your own Dashboard to get a more specific view that will cater to your specific needs.<br>
+You can pick and choose widget to be displayed.
+
+![](images/en06dashboardsb.png){.thumbnail}
 
 ### Troubleshoot
 
