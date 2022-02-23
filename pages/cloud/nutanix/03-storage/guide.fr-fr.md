@@ -126,7 +126,7 @@ Le **Volume GROUP** apparait dans la liste
 
 ## Aller plus loin
 
-Documentation NUTANIX concernant le stockage [https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
+Documentation NUTANIX concernant le stockage [https://portal.nutanix.com/](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 
 Lien sur les licences NUTANIX [https://www.nutanix.com/products/software-options](https://www.nutanix.com/products/software-options)
 
