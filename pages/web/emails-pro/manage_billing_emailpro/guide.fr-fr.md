@@ -45,7 +45,7 @@ Une fenêtre apparait, le tableau vous permet de gérer la période de renouvell
 
 Cliquer sur`Suivant`{.action} pour accéder au résumé des changements qui ont été demandés, puis cliquez sur `Valider`{.action} pour confirmer votre choix.
 
-### Supprimer des comptes
+### Supprimer un compte <a name="deletion"></a>
 
 Pour supprimer un compte de votre plateforme E-mail Pro, il faut d'abord le résilier en passant la configuration de son renouvellement sur **Aucune**. Pour cela, consultez l'étape [« modifier la périodicité de vos comptes »](#periodicity){.external}.
 
