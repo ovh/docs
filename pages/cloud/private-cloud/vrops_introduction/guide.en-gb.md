@@ -10,7 +10,7 @@ order: 01
 
 ## Objective
 
-vRealize Operations is an operations management tool that monitors physical, virtual, and cloud infrastructures ans allows automation of maintenance tasks.
+vRealize Operations is an operations management tool that monitors physical, virtual, and cloud infrastructures and allows automation of maintenance tasks.
 
 **This guide offers an introduction to the vROPS interface.**
 
