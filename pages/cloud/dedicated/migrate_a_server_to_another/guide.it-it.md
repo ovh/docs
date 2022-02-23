@@ -28,8 +28,8 @@ Le esigenze e le gamme OVHcloud si evolvono costantemente ed è quindi necessari
 ## Prerequisiti
 
 - Possedere due server dedicati (il vecchio e il nuovo) con il sistema operativo installato
-- accesso amministrativo ai tuoi server
-- competenze in amministrazione sistemica
+- Accesso amministrativo ai tuoi server
+- Competenze in amministrazione sistemica
 
 ## Procedura
 

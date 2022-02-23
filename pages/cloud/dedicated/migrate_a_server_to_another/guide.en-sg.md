@@ -23,9 +23,9 @@ As your needs and OVHcloud ranges are constantly evolving, it is sometimes neces
 
 ## Requirements
 
-- two dedicated servers (the old one and a new one) with the OS installed
-- administrative access to your servers
-- system administration skills
+- Two dedicated servers (the old one and a new one) with the OS installed
+- Administrative access to your servers
+- System administration skills
 
 ## Instructions
 
@@ -89,6 +89,6 @@ For more information, please read our documentation on [domains and Dns](https:/
 
 ## Go further
 
-If you would like assistance migrating your server, please contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
+If you would like assistance migrating your server, please contact our network of [OVHcloud partners](https://partner.ovhcloud.com/en-sg/).
 
 Join our community of users on <https://community.ovh.com/en/>.

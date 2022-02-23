@@ -22,9 +22,9 @@ As part of a migration process, you may find that you need to retrieve data stor
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with a GNU/Linux distribution installed
-- an FTP client that supports SFTP connections (this tutorial uses [FileZilla](https://filezilla-project.org/))
-- administrative access via SSH to your server
+- A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with a GNU/Linux distribution installed
+- An FTP client that supports SFTP connections (this tutorial uses [FileZilla](https://filezilla-project.org/))
+- Administrative access via SSH to your server
 
 ## Instructions
 
@@ -35,7 +35,7 @@ SFTP can be used to transfer files via a secure connection (SSH). There are two 
 By default, a server using a GNU/Linux-based operating system will have SSH access via port 22. However, you might have previously changed this port (for example by following [our guide](../securing-a-dedicated-server/)).
 
 
-#### If you have access to your server
+#### **If you have access to your server**
 
 In the FileZilla GUI, enter your server's IP address into the `Host` field and your username and password into their respective fields. As for the `Port` field, enter "22" or whichever port your SSH service is listening on if you have modified it.
 
@@ -51,7 +51,7 @@ The progress of the data transfer will then be displayed at the bottom of the Fi
 
 ![sftp transfer progress](images/sftp_sd_02.png){.thumbnail}
 
-#### If your server is in rescue mode
+#### **If your server is in rescue mode**
 
 In rescue mode, you first need to mount your partition. To do this, you can follow the instructions set out in [this guide](../ovh-rescue/).
 
@@ -69,7 +69,7 @@ If you have created the mount point according to the guide, the data will be loc
 
 ## Go further
 
-[Rescue Mode](../ovh-rescue/)
+[Activating and using rescue mode](../ovh-rescue/)
 
 [Securing a dedicated server](../securing-a-dedicated-server/)
 

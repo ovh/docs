@@ -75,7 +75,7 @@ Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Monitoring". Klicken Sie dann auf `Aktivieren`{.action} oder `Deaktivieren`{.action}. Klicken Sie im angezeigten Fenster auf `Bestätigen`{.action}, um die Änderungen zu bestätigen.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Das Monitoring bestimmter Dienstleistungen aktivieren
 
@@ -83,7 +83,7 @@ Zusätzlich zum Standard-Monitoring können Sie OVHcloud erlauben, bestimmte Die
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Dienste im Monitoring". Klicken Sie auf `Monitoring meine Dienstleistungen`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
  Sie werden auf den unten stehenden Bildschirm weitergeleitet. Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Validierungssymbol (**V**), um die Änderungen zu bestätigen.
 

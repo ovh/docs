@@ -5,19 +5,20 @@ excerpt: Decouvrez ici comment monter un NAS via un partage NFS.
 section: NAS
 ---
 
+**Dernière mise à jour le 21/02/2022**
 
 ## Prérequis
 
 Ce guide vous permet de réaliser un montage NFS sur les distributions les plus courantes. Pour effectuer le montage d'un partage NFS , il vous faut :
 
-- Un NAS OVH.
-- Une machine sur le réseau OVH (Serveur dédié, VPS, Instance...).
+- Un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) **ou** un [VPS](https://www.ovhcloud.com/fr-ca/vps/) **ou** une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+- Une offre [NAS-HA](https://www.ovh.com/ca/fr/nas/).
 - Une distribution compatible NFS.
 
 
 ### Linux
 
-Compatibilité : Debian 6/7/8 & Ubuntu 12/13/14
+Compatibilité : Debian & Ubuntu 
 
 Pour monter un partage NFS sous Linux, il faut :
 
@@ -66,9 +67,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Compatibilité : CentOS 6
-
-Pour monter un partage NFS sous CentOS 6, il faut :
+Pour monter un partage NFS sous CentOS, il faut :
 
 - Se connecter au serveur en SSH.
 - Installer les paquets "nfs-utils" et "rpcbind" via la commande :
@@ -100,7 +99,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 
 > [!primary]
 >
-> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la la ligne suivante à ajouter dans le fichier /etc/fstab :
+> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
 > 
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
@@ -141,7 +140,7 @@ mount -t nfs IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 
 > [!primary]
 >
-> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la la ligne suivante à ajouter dans le fichier /etc/fstab :
+> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
 > 
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
@@ -182,7 +181,7 @@ Pour monter un partage NFS sous Proxmox, il faut :
 
 > [!primary]
 >
-> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la la ligne suivante à ajouter dans le fichier /etc/fstab :
+> Vous pouvez automatiser le montage du NAS au démarrage de votre distribution via la ligne suivante à ajouter dans le fichier /etc/fstab :
 > 
 > ```
 > IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
@@ -228,3 +227,7 @@ Vous aurez alors accès à un formulaire à complêter :
 >
 > L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
 > 
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -13,8 +13,8 @@ Configure and mount an OVHcloud HA-NAS storage space on your Windows Server usin
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/en-ca/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) with a Windows distribution
-- a [HA-NAS solution](https://www.ovh.com/ca/en/nas/)
+- a [Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/en-gb/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) with a Windows distribution
+- a [HA-NAS solution](https://www.ovh.co.uk/nas/)
 
 ### Settings
 
