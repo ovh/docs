@@ -66,9 +66,7 @@ Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 
 Następnie dodaj rekordu PTR (znany również jako rewers):
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do zakładki `Bare Metal Cloud`{.action}, następnie kliknij sekcję `IP`{.action} na dole po lewej stronie. 
-
-![Rewers IP](images/ipsection.png)
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do zakładki `Bare Metal Cloud`{.action}, a następnie otwórz `IP`{.action}. 
 
 W rozwijanym menu **Usługa** wybierz usługę z adresem IPv4:
 

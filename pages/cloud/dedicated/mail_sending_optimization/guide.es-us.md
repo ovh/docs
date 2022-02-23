@@ -62,7 +62,7 @@ Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máxi
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la parte inferior izquierda. 
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `IP`{.action}. 
 
 ![IP inversa](images/ipsection.png)
 
