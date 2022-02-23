@@ -120,7 +120,7 @@ Faire défiler pour voir les autres options
 
 Pour valider la création d'un **Volume Group** cliquer sur *Save*
 
-![VolumeGroupDashBoardCreated](image/VolumeGroupDashBoardCreated.PNG)
+![VolumeGroupDashBoardCreated](images/VolumeGroupDashBoardCreated.PNG)
 
 Le **Volume GROUP** apparait dans la liste 
 
