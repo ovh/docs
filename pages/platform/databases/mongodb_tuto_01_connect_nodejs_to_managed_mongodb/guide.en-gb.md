@@ -1,6 +1,6 @@
 ---
-title: MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed PostgreSQL service
-slug: mongodb/tutorial-build-nodejs-app-connected-to-managed-postgresql
+title: MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed MongoDB service
+slug: mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
 section: MongoDB - Tutorials
 order: 01
@@ -14,10 +14,10 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - A [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for MongoDB.
-- A NodeJS environment with a stable version and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
+- A [NodeJS working environment](https://nodejs.dev/learn/how-to-install-nodejs) and public network connectivity (Internet). This tutorial was made using NodeJS LTS 16.14.0.
 
 ## Configure your MongoDB instance to accept incoming connections
 
@@ -194,7 +194,7 @@ In order to connect this database to the app, we will use another package called
 
 ### Mongoose
 
-Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.
+[Mongoose](https://mongoosejs.com/docs/guide.html) is a MongoDB object modeling tool designed to work in an asynchronous environment.
 
 Mongoose can be installed with the command:
 
@@ -208,7 +208,23 @@ Inside server.js we will require Mongoose:
 var mongoose = require('mongoose');
 ```
 
-And we will assign a variable, the `Service URI` of our mongodb instance database available in the `General information`{.action} tab:
+From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select the `General Information`{.action} tab. In the `Login Informations` section, copy the `Service URI`.
+
+It should be similar to this when you have a single node (Essential service plan) :
+
+```
+mongodb://<username>:<password>@<hostname>/admin?tls=true
+```
+
+And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
+
+```
+mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+```
+
+Here we will use a MongoDB cluster
+
+And we will assign a variable, the `Service URI` of our mongodb instance database.
 
 ```javascript
 var dbUrl = 'mongodb://<username>:<password>@<host>/admin?replicaSet=replicaset&tls=true'
@@ -377,7 +393,8 @@ socket.on('message', addMessages)
 So each time a message is posted, the server will update the messages in the message div.
 
 ![NodeJS Chat App second user](images/mongodb_tuto_01_connect_nodejs_to_managed_mongodb-20220215104535750.png)
-Great!
+
+Great! You now have a nodeJS chat application up and running, with messages stored on a MongoDB cluster. Reach out [official NodeJS tutorials](https://nodejs.dev/learn) for more use cases
 
 
 ## Attachments

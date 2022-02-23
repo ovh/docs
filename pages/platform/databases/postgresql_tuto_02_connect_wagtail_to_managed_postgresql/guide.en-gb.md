@@ -97,6 +97,10 @@ $ source mysite/env/bin/activate
 
 ### Install Wagtail
 
+Please follow the [official documentation](https://docs.wagtail.org/en/stable/getting_started/tutorial.html) to install wagtail
+
+Below, you find a resume of the installation process
+
 Use pip, which is packaged with Python, to install Wagtail and its dependencies:
 
 ```bash
@@ -121,6 +125,8 @@ $ pip install -r requirements.txt
 ```
 
 ### Create the database
+
+If you let wagtail o default settings, a local SQLlite database will be used inside the project directory. It’s fine for a PoC but not recommended for production, for multiple reasons (performance, security, resiliency, …). Here we will configure Wagtail to use a Public Cloud Database for PostgreSQL as a backend
 
 Before creating the database, let's edit the `mysite/mysite/settings/base.py` file and adapt the connection parameters to the database
 
