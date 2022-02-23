@@ -6,14 +6,13 @@ section: vRops
 order: 01
 ---
 
-**Last Updated on 17/02/2022**
+**Last Updated on 23/02/2022**
 
 ## Objective
 
-what is vROPS
-what we will do today
+vRealize Operations is an operations management tool that monitors physical, virtual, and cloud infrastructures ans allows automation of maintenance tasks.
 
-**This guide offers a step by step study case to achieve the objective**
+**This guide offers an introduction to the vROPS interface.**
 
 ## Requirements
 
