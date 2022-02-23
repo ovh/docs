@@ -84,12 +84,7 @@ network:
             id: 10                      # VLAN ID    
             link: eno2                  # Interface name
             addresses:
-            - 192.168.0.0/16
-        vlan11:
-            id: 11
-            link: eno2
-            addresses:
-            - 192.168.2.14/24
+            - 192.168.0.14/16
 ```
 
 Appliquer les paramètres:
@@ -97,6 +92,12 @@ Appliquer les paramètres:
 sudo netplan try
 sudo netplan apply
 ```
+
+Valider la configuration:
+```sh
+ip a
+```
+
 
 ## Debian
 
