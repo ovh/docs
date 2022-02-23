@@ -39,9 +39,14 @@ You are now on the vROPS Home page with access to all its functionalities.
 
 ### Data Sources
 
-The Data Sources section
+The Data Sources section lists the different spaces monitored by vROPS. By default, your OHVcloud infrastructure is added.
 
 ![](images/en04datasources.png){.thumbnail}
+
+Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple spaces, from VMware to Azure through AWS.
+
+![](images/en04datasourcesb.png){.thumbnail}
+
 
 ### Environment
 
