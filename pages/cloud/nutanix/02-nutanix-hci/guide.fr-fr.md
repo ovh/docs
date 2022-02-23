@@ -111,7 +111,7 @@ Dans cette fenêtre on peut voir l'état du stockage par nœud.
 Aller dans le menu hardware en cliquant sur **Hardware** et nous aurons le détail par Nœud du stockage avec le nombre de disques alloués par nœud.
 
 ![HarwareDetail](images/HardwareDetail.PNG)
-Pour avoir ce résumé dans l'encadré en haut il faut cliquer sur Diagram.
+Pour avoir ce résumé dans l'encadré en haut il faut cliquer sur **Diagram**.
 
 ## Aller plus loin
 
