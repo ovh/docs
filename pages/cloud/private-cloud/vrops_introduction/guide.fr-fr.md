@@ -86,26 +86,26 @@ Des outils d'analyse de coût sont aussi intégrés pour vous aider à budgeter.
 
 ### Configure
 
-La section Configure section defines your metrics and threshold reactions through policies and alerts.<br>
-You will be able to set up groups, profile, policies and/or alerts and appropriate response to tailor your infrastructure needs.
+La section Configure définit les différentes mesures et les plafonds de réponse au travers d'alertes et de règles.<br>
+Vous pouvez paramétrer des groupes, profiles, règles et/ou alertes et les réponses appropriées en fonction des besoins de votre infrastructure.
 
 ![](images/en10configure.png){.thumbnail}
 
 ### Automation
 
-La section Automation section schedules one time or scheduled maintenance jobs.<br>
-Those jobs can be assigned to single or multiple objects over multiple spaces.
+La section Automation vous laisse planifier des tâches de maintenance uniques ou récurrentes.<br>
+Ces tâches peuvent être assignées à un ou plusieurs objets répartis sur de multiples espaces.
 
 ![](images/en11automation.png){.thumbnail}
 
 ### Administration
 
-La section Administration section pilots vROPS access and data clollection.<br>
-This is where you can create specific vROPS accounts to be used. 
+La section Administration pilote l'accès à vROPS et la récupération de données.<br>
+C'est par exemple ici que vous pouvez créer des comptes utilisateur vROPS. 
 
 ![](images/en12administration.png){.thumbnail}
 
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
