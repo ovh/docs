@@ -24,83 +24,83 @@ vRealize Operations est un outil de management de vos opérations. Il contrôle 
 
 ### Accès à l'interface
 
-To access vROPS, type in your dedicated cloud address in a browser.<br>
-Click on the vROPS icon.<br>
+Pour accéder à vROPS, tapez l'adresse de votre dedicated cloud dans un navigateur.<br>
+Cliquez sur l'icone vROPS.<br>
 
 ![](images/en01logpage.png){.thumbnail}
 
-Use your vSphere login or the vROPS local user that you own.
+Utilisez votre identifiant vSphere ou l'utilisateur vROPS local que vous possédez.
 
 ![](images/en02log.png){.thumbnail}
 
-You are now on the vROPS Home page with access to all its functionalities.
+Vous êtes sur la page d'accueil vROPS avec l'accès à toutes les fonctionnalités.
 
 ![](images/en03home.png){.thumbnail}
 
 ### Data Sources
 
-The Data Sources section lists the different spaces monitored by vROPS. By default, your OHVcloud infrastructure is added.
+La section Data Sources liste les différents espaces monitorés by vROPS. Par défaut, seule votre infrastructure OHVcloud est intégrée.
 
 ![](images/en04datasources.png){.thumbnail}
 
-Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple spaces, from VMware to Azure through AWS.
+Cliquer sur `ADD ACCOUNT`{.action} vous donne la possibilité de centraliser de multiples espaces, de VMware à Azure en passant par AWS.
 
 ![](images/en04datasourcesb.png){.thumbnail}
 
 
 ### Environment
 
-The Environment section inventories your infrastructure and gives you access to monitoring of all your objects. Objects can be Hosts, Network devices, VMs, Applications... 
+La section Environment inventorie votre infrastructure et vous donne accès au monitoring de tous vos objets. Un objets peut être un hôte, un dispositif réseau, une VM , une application... 
 
 ![](images/en05environment.png){.thumbnail}
 
 ### Visualize
 
-The Visualize section holds dashboards and reports. There are plenty of premade dashboards that will give you quick views on your Infrastructure's health.
+La section Visualize contient les dashboards et rapports. Il existe une multitude de dashboards prédéfinis pour vous renseigner sur la santé de votre infrastructure.
 
 ![](images/en06dashboards.png){.thumbnail}
 
-You can still `+ Create`{.action} your own Dashboard to get a more specific view that will cater to your specific needs.<br>
-You can pick and choose widget to be displayed.
+Vous pouvez cependant créer votre propre dashboard personalisé en cliquant sur `+ Create`{.action}.<br>
+Choisissez et organisez les widgets à votre convenance.
 
 ![](images/en06dashboardsb.png){.thumbnail}
 
 ### Troubleshoot
 
-The Troubleshoot section is your alert and log repository. There, you will be able to see and dig into the problems you're experiencing. Contextual links to documentation and fixes are also provided.
+La section Troubleshoot vous présente les alertes et logs. Vous pourrez voir et creuser les disfonctionnements existant. Des liens vers les documentations vous seront proposés en fonction de votre contexte.
 
 ![](images/en07troubleshoot.png){.thumbnail}
 
 ### Optimize
 
-The Optimize section gives you an insight and recommandations on the Capacity of your infrastructure. The monitoring analysis performed by vROPS displays usage and right-sizing info to enable you to scale your environment.
+La section Optimize vous donne un aperçu et des recommandation sur la capacité de votre infrastructure. L'analyse des données de monitoring de vROPS vous montre les infos pour dimentionner l'environnement au plus près de votre utilisation.
 
 ![](images/en08optimize.png){.thumbnail}
 
 ### Plan
 
-The Plan section gives you trend and capacity management tools so you can future proof your infrastructure.<br>
-Cost analysis and planning is also helpful for budgeting purposes.
+La section Plan contient les outils de tendance et de management de capacité pour prévoir l'évolution de votre infrastructure.<br>
+Des outils d'analyse de coût sont aussi intégrés pour vous aider à budgeter.
 
 ![](images/en09plan.png){.thumbnail}
 
 ### Configure
 
-The Configure section defines your metrics and threshold reactions through policies and alerts.<br>
+La section Configure section defines your metrics and threshold reactions through policies and alerts.<br>
 You will be able to set up groups, profile, policies and/or alerts and appropriate response to tailor your infrastructure needs.
 
 ![](images/en10configure.png){.thumbnail}
 
 ### Automation
 
-The Automation section schedules one time or scheduled maintenance jobs.<br>
+La section Automation section schedules one time or scheduled maintenance jobs.<br>
 Those jobs can be assigned to single or multiple objects over multiple spaces.
 
 ![](images/en11automation.png){.thumbnail}
 
 ### Administration
 
-The Administration section pilots vROPS access and data clollection.<br>
+La section Administration section pilots vROPS access and data clollection.<br>
 This is where you can create specific vROPS accounts to be used. 
 
 ![](images/en12administration.png){.thumbnail}
