@@ -18,8 +18,8 @@ This shared model can help relieve the customer’s operational burden.
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: The reason for the successful completion of the process |
-| C: Controls the results of the process |
+| A: Guarantees the successful completion of the process |
+| C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
 For your information, a **Service** is considered a Public Cloud Databases service such as a MySQL, PostgreSQL, MongoDB, Redis, Kafka, Cassandra, or M3 cluster.

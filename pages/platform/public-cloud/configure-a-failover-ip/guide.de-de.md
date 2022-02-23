@@ -33,7 +33,7 @@ Es kann nowendig werden, Failover-IPs auf Ihren Instanzen konfigurieren, zum Bei
 
 ## In der praktischen Anwendung
 
-Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung auf Ihrer Instanz über SSH oder einen GUI-Login (RDP für eine Windows-Instanz). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
+Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung auf Ihrer Instanz über SSH oder einen GUI-Login (VNC für eine Windows-Instanz). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
 
 > [!primary]
 >
@@ -169,7 +169,11 @@ sudo netplan apply
 
 Wiederholen Sie diesen Vorgang für jede Failover-IP.
 
-### Windows Server 2016
+### Windows Server (2016)
+
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie zum Bereich  `Public Cloud`{.action} und wählen Sie Ihr Projekt aus.
+
+Öffnen Sie im linken Menü `Instances`{.action} und klicken Sie dann auf den Namen der betreffenden Instanz. Wechseln Sie zum Tab `VNC Konsole`{.action}.
 
 #### Schritt 1: Netzwerkkonfiguration überprüfen
 

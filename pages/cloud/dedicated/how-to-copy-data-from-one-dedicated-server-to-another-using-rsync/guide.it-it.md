@@ -15,7 +15,7 @@ Distribuito sotto licenza GNU GPL, rsync (da “remote synchronization”) è un
 
 > [!warning]
 >
-Questa guida contiene informazioni relative all’utilizzo di una o più soluzioni OVHcloud con tool esterni in un contesto ben preciso: adatta le indicazioni fornite alla tua situazione e, in caso di difficoltà o dubbi, rivolgiti a un esperto del settore o alla nostra Community di utenti, disponibile all’indirizzo <https://www.ovh.it/community/>. OVHcloud non potrà fornirti assistenza.
+Questa guida contiene informazioni relative all’utilizzo di una o più soluzioni OVHcloud con tool esterni in un contesto ben preciso: adatta le indicazioni fornite alla tua situazione e, in caso di difficoltà o dubbi, rivolgiti a un esperto del settore o alla nostra Community di utenti, disponibile all’indirizzo <https://community.ovh.com/en/>. OVHcloud non potrà fornirti assistenza.
 >
 
 ## Prerequisiti
@@ -112,4 +112,4 @@ A questo punto, dovresti essere in grado di copiare i dati del tuo server dedica
 
 ## Per saperne di più 
 
-Contatta la nostra community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -2,7 +2,7 @@
 title: 'Correggere la Product Key di Windows Server'
 excerpt: 'Scopri come modificare il codice Product Key di Windows Server'
 slug: windows-key
-section: Altro
+section: Utilizzo avanzato
 ---
 
 **Ultimo aggiornamento: 07/03/2018**
@@ -98,4 +98,4 @@ cscript.exe c:\windows\system32\slmgr.vbs -ato
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -22,9 +22,9 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
+- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
 ## Instructions
 
@@ -50,7 +50,7 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) for free.
+With the [Professional](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 

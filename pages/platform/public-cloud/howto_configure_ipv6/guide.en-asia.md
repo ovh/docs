@@ -40,13 +40,13 @@ Here is a short glossary of the terms used in this tutorial:
 
 ### Retrieve your network information.
 
-Log in to the OVHcloud Control Panel, and go to the `Instances`{.action} menu. Then click on `Instance details`{.action}.
+Log in to the OVHcloud Control Panel and open your `Public Cloud`{.action} project. Click on `Instances`{.action} in the left side menu. Then, click on `...`{.action} next to the correspending instance and click on `Instance details`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
-All the information you need is in the **Network** section.
+All the information you need is in the **Networks** section.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Examples of persistent configuration.
 
@@ -126,7 +126,7 @@ Lastly, enter your IPv6 details.
 
 ### Diagnostic
 
-Have you configured your IPv6, but found that not nothing is working? 
+Have you configured your IPv6, but found that nothing works? 
 
 There is a simple operation to determine whether the error is in your configuration, or on the OVHcloud network.
 
@@ -147,7 +147,7 @@ ping6 ipv6.google.com
 ```
 If your instance responds, it is likely that there is an error in one of the steps taken for your initial configuration.
 
-In any case, please feel free to reach out to our support ream with the elements tested above, and we can perform an analysis on our end.
+In any case, please feel free to reach out to our support team with the elements tested above, and we can perform an analysis on our end.
 
 ## Go further
 

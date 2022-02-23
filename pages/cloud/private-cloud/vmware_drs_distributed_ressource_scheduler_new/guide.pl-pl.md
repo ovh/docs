@@ -2,7 +2,7 @@
 title: VMware DRS (Distributed Ressource Scheduler)
 slug: vmware-drs-distributed-ressource-scheduler-new
 excerpt: Dowiedz się, jak kontrolować równoważenie obciążenia dzięki funkcji DRS
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 03
 ---
 

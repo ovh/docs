@@ -6,7 +6,7 @@ section: 'Migração de uma conta Exchange'
 order: 1
 ---
 
-**Última atualização: 23/07/2021**
+**Última atualização: 22/02/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -103,7 +103,15 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 
 #### 3.2 Migrar a nova versão do MXPlan <a name="NouvelleVersionMxplan"></a>
 
-Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](../../emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+> [!warning]
+>
+> Se acabou de encomendar a sua nova oferta de e-mail, adicione o domínio à sua plataforma de e-mail antes de começar a migração. <br> - *Por exemplo, para migrar a conta "myemail@mydomain.ovh", deve adicionar o nome de domínio "mydomain.ovh" à sua plataforma.*
+>
+>Selecione o separador `Domínios associados`{.action} na sua plataforma, e clique em `Adicionar um domínio`{.action}. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está na coluna `Estatuto`.
+>
+>![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>
+> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](https://docs.ovh.com/pt/emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [o guia Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 
 A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 

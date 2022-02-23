@@ -3,8 +3,10 @@ title: 'Creating, launching and deleting images in Horizon'
 slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
 section: Horizon
-order: 6
+order: 09
 ---
+
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -15,8 +17,8 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ## Requirements
 
-- access to the Horizon interface
-- access to the Images menu in the OpenStack Horizon interface 
+- [Access to the Horizon interface](https://docs.ovh.com/us/en/public-cloud/configure_user_access_to_horizon/)
+- Access to the Images menu in the OpenStack Horizon interface 
 
 
 ![public-cloud](images/horizon_menu.png){.thumbnail}
@@ -31,7 +33,7 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ![public-cloud](images/horizon_images.png){.thumbnail}
 
-- You can then launch an image from a URL, or create a custom image by clicking the Create Image button, which opens the following menu:
+- You can then launch an image from a URL, or create a custom image by clicking the `Create Image`{.action} button, which opens the following menu:
 
 
 ![public-cloud](images/horizon_create_image.png){.thumbnail}
@@ -41,7 +43,8 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 - Image file (Send from your local desktop)
 - Image format (\*):
 
-|—|—|
+|||
+|---|---|
 |AKI|Amazon Kernel Image|
 |AMI|Amazon Machine Image|
 |ARI|Amazon Ramdisk Image|

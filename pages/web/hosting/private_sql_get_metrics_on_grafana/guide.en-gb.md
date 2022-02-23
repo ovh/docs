@@ -4,6 +4,7 @@ excerpt: How to get Private SQL metrics on Grafana
 slug: get_private_sql_metrics_on_grafana
 legacy_guide_number: g2057
 section: 'Private SQL'
+hidden: true
 ---
 
 

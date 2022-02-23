@@ -6,7 +6,11 @@ legacy_guide_number: 2030
 section: 'Red e IP'
 ---
 
-**Última actualización: 21/11/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 21/12/2021**
 
 ## Objetivo
 
@@ -19,25 +23,30 @@ Para satisfacer estas necesidades, puede comprar una dirección IP failover para
 
 Estas direcciones IP failover solo pueden migrar a las instancias de un mismo proyecto.
 
-Esta guía explica cómo comprar una IP failover para su proyecto Public Cloud OVHcloud.
+**Esta guía explica cómo comprar una IP failover para su proyecto Public Cloud OVHcloud.**
 
 
 ## Requisitos
+
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
 
 ## Procedimiento
 
-En primer lugar, seleccione el menú `«IP failover»`{.action} de su área Public Cloud y, seguidamente, elija `«Comprar IP failover»`{.action} entre las acciones propuestas:
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. 
+En el menú de la izquierda, haga clic en `Failover IP`{.action} en la sección `Network`.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Haga clic en el botón `Acciones`{.action} y seleccione `Comprar direcciones IP Failover`{.action}.
+
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
 Se abrirá esta página:
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 Introduzca la siguiente información:
 
-* El número de direcciones IP failvover (IPFO) deseadas (los bloques de IP no están disponibles por el momento).
+* El número de direcciones IP failover (IPFO) deseadas (los bloques de IP no están disponibles por el momento).
 * La instancia en la que se enrutarán las IP.
 * La geolocalización de las IP.
 
@@ -68,12 +77,14 @@ Geolocalizaciones disponibles en Europa:
 >
 > En caso de verificar en otras bases, comuníquese directamente con los organismos correspondientes. OVHcloud no mediará entre las partes.
 
-Se generará un recibo de pedido. Asegúrese de autorizar la visualización de las ventanas emergentes para posibilitar la redirección automáticamente al recibo de pedido.
+Haga clic en `Generar la orden de pedido`{.action} para redirigirla automáticamente al recibo de pedido (es necesario autorizar la visualización de los pop-ups en su navegador).
 
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+También podrá consultar la orden de pedido en el área de cliente, accediendo al `Panel de control`{.action} y haciendo clic en `Ver mis pedidos`{.action}.
 
-También podrá encontrar el recibo de pedido en el área de cliente seleccionando `«Panel de control»,`{.action} y, seguidamente, `«Ver mis pedidos»`{.action}.
+Para más información, consulte nuestra guía sobre [gestión de pedidos de OVHcloud](https://docs.ovh.com/us/es/billing/gestionar-los-pedidos-en-ovh/).
 
 ## Más información
+
+[Configurar una IP Failover](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

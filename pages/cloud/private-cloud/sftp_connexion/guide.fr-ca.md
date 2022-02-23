@@ -6,7 +6,7 @@ section: Premiers pas
 order: 3
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 28/12/2021**
 
 ## Objectif
 
@@ -18,7 +18,8 @@ Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » d
 
 ## Prérequis
 
-- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 

@@ -2,7 +2,8 @@
 title: Installing a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
 slug: installing-openfaas
 excerpt: Find out how to install a FaaS platform on OVHcloud Managed Kubernetes using OpenFaaS
-section: Tutorials
+section: Serverless
+order: 0
 ---
 
 **Last updated May 12<sup>th</sup>, 2020.**
@@ -207,15 +208,15 @@ In my own deployment (URLs and IP changed), the precedent operations gave:
 
 
 <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
-NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE     SELECTOR
-gateway-external   LoadBalancer   10.3.xxx.yyy   xxxrt657xx.lb.c1.gra.k8s.ovh.net   8080:30012/TCP   9m10s   app=gateway
+NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE     SELECTOR
+gateway-external   LoadBalancer   10.3.xxx.yyy   xy.xy.xy.xy   8080:30012/TCP   9m10s   app=gateway
 
-$ export OPENFAAS_URL=xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+$ export OPENFAAS_URL=xy.xy.xy.xy:8080
 
 $ echo -n $PASSWORD | ./faas-cli login -g $OPENFAAS_URL -u admin --password-stdin
 Calling the OpenFaaS server to validate the credentials...
 WARNING! Communication is not secure, please consider using HTTPS. Letsencrypt.org offers free SSL/TLS certificates.
-credentials saved for admin http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+credentials saved for admin http://xy.xy.xy.xy:8080
  
 $ ./faas-cli version
   ___                   _____           ____
@@ -230,7 +231,7 @@ CLI:
  version: 0.12.4
 
 Gateway
- uri:     http://xxxrt657xx.lb.c1.gra.k8s.ovh.net:8080
+ uri:     http://xy.xy.xy.xy:8080
  version: 0.18.17
  sha:     18f6c720b50db7da5f9c410f9fd3369ed7aff379
  commit:  Extract a caching function_query type

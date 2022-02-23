@@ -2,7 +2,7 @@
 title: 'Configurar IPv6 em servidores dedicados'
 slug: rede-ipv6
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-section: 'Gestão de Rede'
+section: 'Redes & IP'
 ---
 
 **Última atualização: 01/12/2021**
@@ -29,6 +29,7 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 Se está a usar um template Linux fornecido pela OVHcloud para instalar o servidor, vai verificar que o primeiro IPv6 (principal) já se encontra configurado.
 
+Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um IP fail-over configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
 
 > [!primary]
 >
@@ -39,7 +40,7 @@ Se está a usar um template Linux fornecido pela OVHcloud para instalar o servid
 > - O endereço IPv6 do servidor é 2607:5300:60:62ac::/64. Logo, o IPv6_GATEWAY vai ser 2607:5300:60:62FF:FF:FF:FF:FF.
 > - O endereço IPv6 do servidor é 2001:41D0:1:46e::/64. Logo, o IPv6_GATEWAY vai ser 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
 >
 
 > [!api]
@@ -270,7 +271,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 #### Passo 1: Usar o RDP para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor).
 
 
 #### Passo 2: Abrir a configuração da rede do servidor

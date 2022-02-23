@@ -4,7 +4,7 @@ excerpt: Pierwsze kroki z API Swift
 slug: pierwsze_kroki_z_api_swift
 legacy_guide_number: g1916
 section: Object Storage Standard (Swift)
-order: 10
+order: 010
 ---
 
 > [!primary]

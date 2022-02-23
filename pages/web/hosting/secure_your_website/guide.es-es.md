@@ -50,7 +50,7 @@ Compruebe en primer lugar la seguridad de su equipo Windows, Mac o Linux:
 
 ### Etapa 2: proteja su área de cliente de OVHcloud
 
-Para proteger su cuenta de cliente, siga las indicaciones de esta [guía](../../customer/todo-sobre-el-id-de-cliente/).
+Para proteger su cuenta de cliente, [active la doble autenticación](../../customer/proteger-su-cuenta-con-una-2FA/) y siga las instrucciones de este [guía](../../customer/todo-sobre-el-id-de-cliente/).
 
 Actualice la [información de su cuenta de cliente](../../customer/todo-sobre-el-id-de-cliente/#editar-mis-datos-personales) y añada un **email de seguridad**.<br>
 Si pierde sus claves de acceso o no está disponible la dirección de correo electrónico principal de su cuenta de cliente de OVHcloud, necesitaremos un correo electrónico alternativo o información personal actualizada para ayudarle a recuperar el acceso a sus soluciones.
@@ -78,8 +78,8 @@ Los mensajes de phishing constituyen también una amenaza para la seguridad de s
 En caso de no renovar sus servicios, OVHcloud tiene la obligación legal, una vez haya expirado su suscripción, de eliminar íntegramente los datos asociados a su plan de hosting, así como todas sus copias de seguridad. Enviamos mensajes de recordatorio a nuestros clientes para recordarles sus fechas de renovación.<br>
 No obstante, estos mensajes de correo electrónico pueden aparecer en su spam, o la dirección de correo electrónico asociada a su cuenta de OVHcloud puede ser errónea o no estar disponible.
 
-Especialmente si no tiene la posibilidad de realizar copias de seguridad regulares y su sitio web tiene un lugar destacado en su actividad profesional, [active la renovación automática](../../billing/renovacion-automatica-ovh/#acceder-a-la-configuracion-de-los-servicios) en todos sus servicios de OVHcloud.<br>
-Le recomendamos que compruebe regularmente la validez de las formas de pago que haya registrado.
+Si su sitio web tiene un lugar preponderante en su actividad profesional, [active la renovación automática](../../billing/renovacion-automatica-ovh/#acceder-a-la-configuracion-de-los-servicios) en el conjunto de sus servicios OVHcloud.<br>
+También le recomendamos que compruebe regularmente la **validez de las formas de pago** que haya registrado.
 
 ### Etapa 6: compruebe que el sitio web esté actualizado
 
@@ -89,7 +89,7 @@ No olvide utilizar una versión reciente del [lenguaje PHP](../cambiar-version-p
 
 ### Etapa 7: active el https
 
-Establezca la conexión encriptada a su sitio web a través del protocolo **HTTPS** siguiendo esta [guía](../activar-https-en-un-sitio-web-con-ssl/).
+Establezca la conexión encriptada a su sitio web a través del protocolo **HTTPS** siguiendo este [guía](../activar-https-en-un-sitio-web-con-ssl/). La activación de este protocolo permitirá cifrar toda la información que transita por su sitio web (especialmente las entradas efectuadas por los usuarios en sus formularios).
 
 ### Etapa 8: proteja sus formularios
 

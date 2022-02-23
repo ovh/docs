@@ -71,4 +71,4 @@ A continuación, **edite los servidores DNS de su dominio en la interfaz del pro
 
 [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
-IntInteractúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+IntInteractúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

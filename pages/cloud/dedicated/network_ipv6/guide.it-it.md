@@ -2,7 +2,7 @@
 title: 'Configurare IPv6 su server dedicati'
 slug: network-ipv6
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-section: 'Gestione della rete'
+section: 'Rete e IP'
 ---
 
 **Ultimo aggiornamento: 01/12/2021**
@@ -29,6 +29,7 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 Se per installare il tuo server utilizzi un template per il SO Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
 
+Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un IP Failover configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
 
 > [!primary]
 >
@@ -39,7 +40,7 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 > - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
 > - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 >
 
 > [!api]
@@ -62,7 +63,7 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -118,7 +119,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
@@ -168,7 +169,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
@@ -215,7 +216,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -271,7 +272,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Utilizza l’RDP per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri la configurazione di rete del tuo server

@@ -3,6 +3,7 @@ title: 'Récuperer les métriques d’un SQL privé sur Grafana'
 slug: recuperer-les-metriques-dun-sql-prive-sur-grafana
 excerpt: "Ce guide va vous permettre de recuperer les metriques d'un SQL privé sur Grafana"
 section: 'SQL Privé'
+hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**

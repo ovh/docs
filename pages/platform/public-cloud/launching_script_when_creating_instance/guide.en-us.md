@@ -13,7 +13,8 @@ In some situations, you will need to launch a script when you create an instance
 
 
 ## Requirements
-- an environment that is ready to use the OpenStack API
+
+- An environment that is ready to use the OpenStack API
 - OpenStack environment variables set
 
 ## Instructions

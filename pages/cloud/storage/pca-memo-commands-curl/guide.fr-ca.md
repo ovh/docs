@@ -3,7 +3,7 @@ title: Mémo de commandes Curl
 slug: pca/curl-commands-memo
 excerpt: Retrouvez ici les principales commandes curl pour gérer vos conteneurs d'objets Public Cloud Archive
 section: Public Cloud Archive
-order: 60
+order: 060
 ---
 
 **Dernière mise à jour le 27/10/2021**

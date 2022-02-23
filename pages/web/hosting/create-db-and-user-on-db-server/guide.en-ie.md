@@ -2,11 +2,11 @@
 title: 'Creating databases and users on your database server'
 slug: create-databases-and-users
 excerpt: 'Find out how to create a database on your database server'
-section: Private SQL
+section: CloudDB
 order: 2
 ---
 
-**Last updated 30th October 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- a [Cloud Database](https://www.ovh.ie/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions

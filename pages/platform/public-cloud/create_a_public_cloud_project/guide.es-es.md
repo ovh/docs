@@ -3,7 +3,7 @@ title: 'Creando tu primer proyecto de Public Cloud de OVHcloud'
 slug: crear_tu_primer_proyecto_de_public_cloud
 excerpt: 'Cómo crear su primer proyecto de Public Cloud a través del área de cliente de OVHcloud'
 section: Primeros pasos
-order: 1
+order: 03
 ---
 
 **Última actualización 12/10/2021**
@@ -26,8 +26,6 @@ Crear un proyecto es el primer paso para implementar [instancias Public Cloud](h
 ## Procedimiento
 
 Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección`Public Cloud`{.action} y haga clic en `Crear su primer proyecto de Public Cloud de OVH`{.action} de nube pública OVH.
-
-![first connection](images/firstconnection.png){.thumbnail}
 
 Ahora puede agregar un vale si tiene uno. Sólo se puede usar un vale proporcionado para su rama OVHcloud.
 

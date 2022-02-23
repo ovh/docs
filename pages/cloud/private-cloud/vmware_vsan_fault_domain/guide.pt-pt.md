@@ -9,7 +9,7 @@ section: 'Funcionalidades VMware vSphere'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/01/2021**
+**Última atualização: 23/12/2021**
 
 ## Objetivo
 
@@ -17,9 +17,9 @@ Este guia tem como objetivo explicar o funcionamento e a implementação de dom�
 
 ## Requisitos
 
-- Dispor de um serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/)
-- Ter acesso ao [vSphere HTML](../instalar_o_vsphere_client/)
-- Dispor de um cluster vSAN com pelo menos 3 hosts
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a fim de receber os identificadores de ligação.
+- Ter um identificador de utilizador ativo com os direitos específicos para o NSX [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter implementado um [datastore vSan](https://docs.ovh.com/pl/private-cloud/vmware-vsan/)
 
 ## Instruções
 

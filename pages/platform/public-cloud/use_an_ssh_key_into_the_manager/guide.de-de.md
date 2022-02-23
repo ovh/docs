@@ -15,11 +15,16 @@ SSH ist ein Protokoll, das den authentifizierten und verschlüsselten Zugriff au
 
 ### Voraussetzungen
 
-- Sie haben bereits ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) erstellt.
-- Sie verfügen über einen [SSH-Schlüssel](https://docs.ovh.com/de/public-cloud/create-ssh-keys/).
+- Sie haben bereits ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) erstellt.
+- Sie verfügen über einen [SSH-Schlüssel](https://docs.ovh.com/de/public-cloud/public-cloud-erste-schritte/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
+>
 
 Es gibt zwei Möglichkeiten, einen SSH-Schlüssel über das Public Cloud Interface hinzuzufügen:
 
@@ -28,7 +33,7 @@ Es gibt zwei Möglichkeiten, einen SSH-Schlüssel über das Public Cloud Interfa
 
 ### Bei Erstellung einer Instanz
 
-Klicken Sie im Public Cloud Interface des OVHcloud Kundencenters im Menü `Instances`{.action} unter dem Abschnitt „Compute“ auf `Instanz erstellen`{.action}.
+Klicken Sie im Public Cloud Interface des OVHcloud Kundencenters im Menü `Instances`{.action} unter dem Abschnitt **Compute** auf `Instanz erstellen`{.action}.
 
 ![Einen Server hinzufügen](images/compute.png){.thumbnail}
 

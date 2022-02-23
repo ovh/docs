@@ -20,7 +20,7 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/solucione
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor compatible con el vRack](https://www.ovh.es/servidores_dedicados/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
-* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+* Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
 ## Procedimiento
@@ -134,4 +134,4 @@ Reinicie el servidor para que se apliquen los cambios realizados.
 
 [Configurar el vRack entre la solución Public Cloud y un servidor dedicado](https://docs.ovh.com/es/dedicated/configurar-vrack-entre-public-cloud-servidor-dedicado/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

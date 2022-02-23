@@ -36,13 +36,13 @@ Ecco una lista di termini impiegati in questa guida:
 
 ### Recupera le informazioni di rete
 
-Accedi al tuo Spazio Cliente, seleziona il menu `Istanze`{.action} e clicca su `Dettagli dell’istanza`{.action}.
+Accedi al tuo Spazio Cliente, vai alla sezione `Public Cloud`{.action}, seleziona il tuo progetto Public Cloud e clicca su `Instances`{.action} nella barra di navigazione a sinistra. Poi clicca su `...`{.action} accanto all'istanza corrispondente e clicca su `Dettagli dell’istanza`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
 Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Esempi di configurazioni persistenti
 

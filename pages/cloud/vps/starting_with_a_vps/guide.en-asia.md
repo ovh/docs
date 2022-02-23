@@ -22,13 +22,13 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- login credentials received via email after the installation
+- A [Virtual Private Server](https://www.ovhcloud.com/asia/vps/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Login credentials received via email after the installation
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution.
 
 - If you have recently ordered a VPS, its reference name will look like this: *vps-XXXXXXX.vps.ovh.net* (where *X* can be a number or a letter).
 
@@ -96,8 +96,8 @@ You can carry out any reinstallations directly in your Control Panel. From the `
 
 In the popup window, you will be asked to choose:
 
-- an operating system from the drop-down list
-- [an SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- An operating system from the drop-down list
+- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
 
 
 ![VPSnewreinstallation](images/2020panel_01.png){.thumbnail}
@@ -153,16 +153,16 @@ You can carry out any reinstallations directly in your Control Panel. Simply cli
 
 A window will open, and you will be asked to choose:
 
-- your operating system from the drop-down list
-- the language
-- [an SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- Your operating system from the drop-down list
+- The language
+- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
 
 
 ![Reinstallation menu](images/reinstall_menu.png){.thumbnail}
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Bare Metal Cloud`{.action} section, then click on `Licences`{.action} in the left-hand navigation.
+> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Bare Metal Cloud`{.action} section, then open `Licences`{.action}.
 >
 In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >

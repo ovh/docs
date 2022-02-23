@@ -17,7 +17,7 @@ You can manage your Public Cloud projects easily via the [OVHcloud Control Panel
 ## Requirements
 
 - A [Public Cloud instance in your Control Panel](../public-cloud-first-steps/)
-- An [SSH key](../create-ssh-keys/).
+- An [SSH key](../create-ssh-keys/)
 
 ## Instructions
 
@@ -27,11 +27,11 @@ First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=g
 
 On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
 
-- the model of your instance
-- its name and region
-- hard disks
-- your instance’s IP address
-- its state
+- The model of your instance
+- Its name and region
+- Hard disks
+- Your instance’s IP address
+- Its state
 
 ![public-cloud](images/compute.png){.thumbnail}
 
@@ -43,10 +43,10 @@ In the management interface for the instance, click on the 3 dots on the right o
 
 In the window that opens, you can:
 
-- rename the instance
-- change the instance model 
-- reinstall the instance on another operating system (**please note that if you choose to do this, the data currently stored on the instance will be deleted**)
-- switch from hourly billing to a fixed monthly rate (bills will then be sent on a pro rata basis, based on the day of the month that you switch)
+- Rename the instance.
+- Change the instance model .
+- Reinstall the instance on another operating system (**please note that if you choose to do this, the data currently stored on the instance will be deleted**).
+- Switch from hourly billing to a fixed monthly rate (bills will then be sent on a pro rata basis, based on the day of the month that you switch).
 
 ![public-cloud](images/edit1.png){.thumbnail}
 ![public-cloud](images/edit2.png){.thumbnail}

@@ -6,20 +6,20 @@ section: vRack
 order: 1
 ---
 
-**Last updated 4th October 2021**
+**Last updated 21st December 2021**
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
+The OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
 
 **This guide explains how to configure Public Cloud instances within your vRack.**
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an OpenStack user (optional)
-- basic networking knowledge
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
+- Basic networking knowledge
 
 ## Interfaces
 
@@ -101,11 +101,9 @@ Once the service is active, you will find it in your Control Panel in the `Bare 
 
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project.
 
-![project selection](images/vrack2021-05.png){.thumbnail}
-
-Click on `Private network`{.action} in left-hand navigation bar.
+Click on `Private Network`{.action} in left-hand navigation bar.
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
@@ -188,7 +186,7 @@ If you need assistance, follow this guide first: [Creating an instance in the OV
 ![attach new instance](images/vrack6.png){.thumbnail}
 
 > [!warning]
-> You will be able to connect your instance to *only one* vRack from the OVHcloud Control Panel.
+> You will be able to connect your instance to **only one** vRack from the OVHcloud Control Panel.
 > To add multiple interfaces, you will need to go through the OpenStack or Horizon APIs.
 >
 
@@ -212,9 +210,9 @@ openstack network list
 +--------------------------------------+------------+-------------------------------------+
 | ID                                   | Name       | Subnets                             |
 +--------------------------------------+------------+-------------------------------------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
 
@@ -226,9 +224,9 @@ nova net-list
 +--------------------------------------+------------+------+
 | ID                                   | Label      | CIDR |
 +--------------------------------------+------------+------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | None |
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | None |
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0   | None |
 +--------------------------------------+------------+------+
 ```
 
@@ -273,9 +271,9 @@ nova boot --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx --im
 | hostId                               |                                                      |
 | id                                   | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                   |
 | image                                | [Image type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)    |
-| key_name                             | [Name of key]                                      |
+| key_name                             | [Name of key]                                        |
 | metadata                             | {}                                                   |
-| name                                 | [Name of instance]                                  |
+| name                                 | [Name of instance]                                   |
 | os-extended-volumes:volumes_attached | []                                                   |
 | progress                             | 0                                                    |
 | security_groups                      | default                                              |
@@ -312,9 +310,9 @@ openstack server create --key-name my-ssh-key --flavor xxxxxx-xxxx-xxxx-xxxx-xxx
 | hostId                               |                                                      |
 | id                                   | xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx                   |
 | image                                | [Image type] (xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)    |
-| key_name                             | [Name of key]                                      |
+| key_name                             | [Name of key]                                        |
 | metadata                             | {}                                                   |
-| name                                 | [Name of instance]                                  |
+| name                                 | [Name of instance]                                   |
 | os-extended-volumes:volumes_attached | []                                                   |
 | progress                             | 0                                                    |
 | security_groups                      | default                                              |
@@ -477,9 +475,9 @@ openstack network list
 +--------------------------------------+------------+-------------------------------------+
 | ID                                   | Name       | Subnets                             |
 +--------------------------------------+------------+-------------------------------------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0   | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
 
@@ -491,9 +489,9 @@ nova net-list
 +--------------------------------------+------------+------+
 | ID                                   | Label      | CIDR |
 +--------------------------------------+------------+------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | None |
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42  | None |
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0  | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN-0   | None |
 +--------------------------------------+------------+------+
 ```
 
@@ -526,7 +524,7 @@ nova show <ID-instance>
 | Property                             | Value                                                    |
 +--------------------------------------+----------------------------------------------------------+
 | Ext-Net network                      | xx.xx.xx.xx, 2001:41d0:xxx:xxxx::xxxx                    | => your public IP
-| MyVLAN-42 network                   | 192.168.0.x                                              | => your private IP
+| MyVLAN-42 network                    | 192.168.0.x                                              | => your private IP
 [...]
 ```
 

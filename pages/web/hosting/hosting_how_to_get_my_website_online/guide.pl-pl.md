@@ -1,54 +1,54 @@
 ---
 title: 'Uruchomienie strony WWW na hostingu'
 slug: hosting_www_umieszczenie_strony_w_internecie
-description: 'Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVH'
+description: 'Dowiedz się, jak uruchomić stronę WWW na Twoim hostingu OVHcloud'
 section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 10-06-2019**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 
 W sieci istnieje bardzo wiele rodzajów stron WWW. 
 
-Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVH**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVH](https://webhosting-infos.hosting.ovh.net){.external}.
+Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prezentującą Twoją działalność) na **hostingu OVHcloud**, o ile jest ona kompatybilna z [konfiguracją infrastruktury OVHcloud](https://webhosting-infos.hosting.ovh.net){.external}.
 
-**Dowiedz się, jak zainstalować stronę WWW na Twoim hostingu OVH.**
+**Dowiedz się, jak zainstalować stronę WWW na Twoim hostingu OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
 ### Etap 1: określenie ram projektu
 
-Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVH daje Ci kilka możliwości.
+Jasno określony cel jest kluczowy dla realizacji Twojego projektu. Do czego zamierzasz wykorzystać Twoją stronę WWW? Jak ją uruchomić online? Hosting OVHcloud daje Ci kilka możliwości.
 
-- **Użycie gotowego modułu OVH**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVH proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie [Twoja strona WWW dzięki modułom CMS](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+- **Użycie gotowego modułu OVHcloud**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.). Firma OVHcloud proponuje cztery moduły CMS kompatybilne z jej infrastrukturą, o których możesz dowiedzieć się więcej na stronie [Twoja strona WWW dzięki modułom CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
 
-- **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVH.
+- **Ręczna instalacja gotowego systemu CMS**: w tej opcji wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.) i samodzielnie instalujesz na Twoim hostingu OVHcloud.
 
 - **Samodzielna budowa strony WWW**: ta opcja wymaga kompetencji w zakresie programowania, ale daje możliwość stworzenia projektu na miarę.
 
-- **Przeniesienie istniejącej strony WWW do OVH**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW.  W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVH](../przeniesienie-strony-www-do-ovh/){.external}
+- **Przeniesienie istniejącej strony WWW do OVHcloud**: operacja ta może mieć krytyczne znaczenie, jeśli niewskazana jest przerwa w dostępie do strony WWW.  W przypadku wyboru tej opcji zachęcamy do zapoznania się z przewodnikiem: [Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
 
 Po przeanalizowaniu powyższych opcji, masz dwie możliwości:
 
-- **chcesz użyć gotowego modułu OVH**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external};
+- **chcesz użyć gotowego modułu OVHcloud**: zapoznaj się z instrukcjami w przewodniku [Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external};
 
-- **nie chcesz użyć gotowego modułu OVH**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVH. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
+- **nie chcesz użyć gotowego modułu OVHcloud**: przeprowadź ręczną instalację Twojej strony WWW na hostingu OVHcloud. Informacje zawarte w przewodniku pomogą Ci w przeprowadzeniu operacji, nie zastąpią jednak wsparcia wyspecjalizowanego webmastera.
  
 > [!warning]
 >
-> OVH świadczy usługi, za których konfigurację i  zarządzanie odpowiada użytkownik. W związku z tym na Tobie spoczywa odpowiedzialność za zapewnienie prawidłowego funkcjonowania stron i aplikacji WWW.
+> OVHcloud świadczy usługi, za których konfigurację i  zarządzanie odpowiada użytkownik. W związku z tym na Tobie spoczywa odpowiedzialność za zapewnienie prawidłowego funkcjonowania stron i aplikacji WWW.
 > 
-> W tym przewodniku znajdziesz pomoc w zakresie podstawowych zadań związanych z uruchomieniem strony WWW. Zalecamy jednak skorzystanie z usług wyspecjalizowanego webmastera i/lub skontaktowanie się z nim w przypadku jakichkolwiek trudności. OVH nie będzie w stanie w tym zakresie zapewnić dodatkowego wsparcia. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> W tym przewodniku znajdziesz pomoc w zakresie podstawowych zadań związanych z uruchomieniem strony WWW. Zalecamy jednak skorzystanie z usług wyspecjalizowanego webmastera i/lub skontaktowanie się z nim w przypadku jakichkolwiek trudności. OVHcloud nie będzie w stanie w tym zakresie zapewnić dodatkowego wsparcia. Więcej informacji znajduje się w sekcji „Sprawdź również”.
 
 >
 
@@ -60,7 +60,7 @@ Proces uruchomienia strony dzieli się na kilka etapów.
 
 #### 1. Pobranie plików strony WWW
 
-Upewnij się, czy posiadasz pliki, które chcesz umieścić online.  Jeśli przenosisz istniejącą stronę WWW do OVH, pobierz pliki od poprzedniego dostawcy hostingu.
+Upewnij się, czy posiadasz pliki, które chcesz umieścić online.  Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz pliki od poprzedniego dostawcy hostingu.
 
 #### 2. Zaloguj się do przestrzeni dyskowej
 
@@ -75,7 +75,7 @@ Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Je
 
 ![instalacja strony www](images/get-website-online-step1.png){.thumbnail}
 
-Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [Logowanie do przestrzeni dyskowej hostingu](../logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}. Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](../zmiana-hasla-konto-ftp/){.external}.
+Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. Dzięki nim będziesz mógł odnaleźć dane potrzebne do zalogowania się do przestrzeni dyskowej. Jeśli potrzebujesz więcej informacji, zapoznaj się z przewodnikiem: [Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}. Jeśli nie posiadasz hasła, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
 
 Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać dostęp do przestrzeni dyskowej trzema różnymi metodami:
 
@@ -83,7 +83,7 @@ Gdy będziesz posiadał już wszystkie potrzebne informacje, możesz uzyskać do
 
 - **program kompatybilny z protokołem FTP lub SFTP**: zainstaluj na Twoim komputerze odpowiedni program, np. FileZilla. Jeśli chcesz uzyskać pomoc w zakresie korzystania z tego programu, skontaktuj się z jego producentem.
 
-- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
+- **dostęp przez SSH**: wpisz odpowiednie komendy w terminalu, aby połączyć się z przestrzenią dyskową.  W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} z dostępem SSH.
 
 #### 3. Zapisanie plików na przestrzeni dyskowej
 
@@ -91,7 +91,11 @@ Po zalogowaniu się do przestrzeni dyskowej, wgraj pliki strony WWW na Twój hos
 
 Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, przejdź do zakładki `MultiSite`{.action} w Panelu klienta. W tabeli, która się wyświetla dla wybranej domeny znajdź `Katalog główny`{.action}. Następnie opublikuj w nim pliki strony WWW.
 
-Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytułowany „index.html”. Plik ten mógł zostać utworzony przez OVH w trakcie instalacji hostingu w celu wyświetlenia domyślnej strony internetowej. W takim przypadku pamiętaj, aby go usunąć podczas uruchomienia Twojej strony.
+Istnieje możliwość, że na Twojej przestrzeni dyskowej znajdziesz plik zatytułowany „index.html”. Plik ten mógł zostać utworzony przez OVHcloud podczas instalacji hostingu, aby wyświetlić domyślną stronę na Twojej stronie WWW. W takim przypadku pamiętaj, aby go usunąć podczas uruchomienia Twojej strony.
+
+> [!primary]
+>
+> Plik "index.php" zawsze przejdzie przez plik "index.html". W związku z tym, gdy oba są obecne, wywoływany jest tylko "index.php".
 
 ![instalacja strony www](images/get-website-online-step2.png){.thumbnail}
 
@@ -106,34 +110,33 @@ Obecnie niemal wszystkie systemy zarządzania treścią (WordPress, Joomla!, etc
 
 W zależności od typu używanej strony WWW połączenie to musi zostać przeprowadzone ręcznie lub przez interfejs wygenerowany przez CMS. Połączenie realizowane jest w kilku etapach. Niektóre z nich mogą być opcjonalne.
 
-#### 1. Pobranie istniejącej bazy danych (opcjonalnie).
+#### 1. Pobranie istniejącej bazy danych 
 
-Jeśli przenosisz istniejącą stronę WWW do OVH, pobierz bazę danych od poprzedniego dostawcy hostingu. W przypadku nowej strony, przejdź do kolejnego etapu.
+Jeśli przenosisz istniejącą stronę WWW do OVHcloud, pobierz bazę danych od poprzedniego dostawcy hostingu. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-#### 2. Utworzenie bazy danych w OVH (opcjonalnie).
+#### 2. Utworzenie bazy danych w OVHcloud 
 
-Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}, rozwiązania [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external} lub [Cloud DB](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
+Jeśli dysponujesz już bazą danych (zawartą w ofercie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external},[Cloud DB](https://www.ovh.pl/cloud-databases/){.external}), przygotuj nazwę użytkownika i hasło, nazwę bazy oraz adres serwera. Następnie przejdź do kolejnego etapu.
 
-Jeśli chcesz utworzyć nową bazę danych w OVH, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
+Jeśli chcesz utworzyć nową bazę danych w OVHcloud, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Zaznacz nazwę odpowiedniego hostingu i przejdź do zakładki `Baza danych`{.action}.
 
 Następnie kliknij przycisk `Utwórz bazę danych`{.action} lub, jeśli przycisk się nie wyświetla, kliknij przycisk `Operacje`{.action}, po czym przycisk `Utwórz bazę danych`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
 
 ![instalacja strony www](images/get-website-online-step3.png){.thumbnail}
 
 
-#### 3. Import istniejącej bazy danych (opcjonalnie)
+#### 3. Import istniejącej bazy danych
 
-Jeśli przenosisz stronę WWW do OVH, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
+Jeśli przenosisz stronę WWW do OVHcloud, zaimportuj istniejącą bazę danych do nowo utworzonej bazy. W przypadku nowej strony, przejdź do kolejnego etapu.
 
-Istnieje kilka metod importu. OVH udostępnia jedną z tych metod w Panelu klienta.  Przejdź do listy baz danych utworzonych w ramach usługi w Panelu klienta, kliknij trzy kropki po prawej stronie nowo utworzonej bazy danych, a następnie kliknij `Importuj plik`{.action}. Teraz postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlą.
+Istnieje kilka metod importu. OVHcloud oferuje jedną z nich w Panelu klienta. Po kliknięciu na listę baz danych utworzonych w Twojej usłudze w Panelu klienta OVHcloud kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, a następnie kliknij `Importuj plik`{.action}.
 
-![instalacja strony www](images/get-website-online-step4.png){.thumbnail}
 
-#### 4. Połączenie strony WWW z bazą danych.
+#### 4. Połączenie strony WWW z bazą danych
 
 Kiedy baza danych jest już dostępna, a pliki zapisane na Twojej przestrzeni dyskowej możesz połączyć stronę z bazą. Przygotuj informacje potrzebne do zalogowania się do bazy danych: nazwa użytkownika, hasło, nazwa bazy danych oraz adres serwera. 
 
-Sposób połączenia strony z bazą zależy od typu strony (np. rodzaju CMS’a), którą chcesz uruchomić. Operacja ta wymaga konfiguracji Twojej strony WWW, a nie samego rozwiązania OVH. Zalecamy zatem skontaktowanie się z administratorem strony lub wyspecjalizowanym w tym zakresie webmasterem.
+Sposób połączenia strony z bazą zależy od typu strony (np. rodzaju CMS’a), którą chcesz uruchomić. Operacja ta wymaga konfiguracji Twojej strony WWW, a nie samego rozwiązania OVHcloud. Zalecamy zatem skontaktowanie się z administratorem strony lub wyspecjalizowanym w tym zakresie webmasterem.
 
 ### Etap 4: dostęp do Twojej strony WWW
 
@@ -143,7 +146,7 @@ Jeśli nie wyświetla się, zalecamy następujące kroki:
 
 - **sprawdź konfigurację domeny**: możliwe, że konfiguracja DNS domeny nie pozwala poprawnie wyświetlać strony, którą właśnie zainstalowałeś na Twoim hostingu.  Upewnij się, że rekord A skonfigurowany aktualnie w strefie DNS Twojej domeny odpowiada adresowi IP Twojego hostingu;
 
-- **upewnij się, że nie brakuje żadnego pliku**: możliwe, że podczas zapisywania plików na Twoim hostingu OVH pominąłeś jakieś pliki lub wystąpił błąd. Zalecamy ostrożność podczas wykonywania operacji, aby nie nastąpiło zerwanie połączenia pomiędzy stroną WWW a bazą danych (jeśli strona używa bazy).
+- **upewnij się, że nie brakuje żadnego pliku**: możliwe, że podczas zapisywania plików na Twoim hostingu OVHcloud pominąłeś jakieś pliki lub wystąpił błąd. Zalecamy ostrożność podczas wykonywania operacji, aby nie nastąpiło zerwanie połączenia pomiędzy stroną WWW a bazą danych (jeśli strona używa bazy).
 
 - **sprawdź, czy kod strony nie zawiera błędu**: istnieje możliwość, że pobrane pliki zawierają błędy i nie pozwalają serwerowi wyświetlać poprawnie części lub całej zawartości Twojej strony.
 
@@ -151,12 +154,12 @@ Przypominamy, że w przypadku trudności podczas uruchamiania Twojej strony na h
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW i kont e-mail do OVH](../przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
-[Automatyczna instalacja strony WWW za pomocą modułu CMS](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
 
-[Logowanie do przestrzeni dyskowej hostingu](../logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
+[Logowanie do przestrzeni dyskowej hostingu](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/){.external}
 
-[Zmiana hasła do konta FTP](../zmiana-hasla-konto-ftp/){.external}
+[Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

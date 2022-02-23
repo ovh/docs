@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie für Ihre Instanzen Failover-IP-Adressen be
 section: 'Netzwerk und IP'
 ---
 
-**Letzte Aktualisierung am 21.11.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 21.12.2021**
 
 ## Ziel
 
@@ -28,13 +32,16 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
 ## In der praktischen Anwendung
 
-Wählen Sie zuerst links `Failover IP`{.action} in Ihrem OVHcloud Kundencenter aus und dann `Failovers-IPs kaufen`{.action} im Menü `Aktionen`{.action}:
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
+Klicken Sie im Menü auf der linken Seite im Abschnitt `Network` auf `Failover IP`{.action}.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Klicken Sie dann auf die Schaltfläche `Aktionen`{.action} und wählen Sie `Failover-IPs kaufen`{.action}.
+
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
 Es erscheint diese Seite:
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 Geben Sie die folgenden Informationen an:
 
@@ -68,12 +75,11 @@ Die in Europa verfügbaren Lokalisierungen sind:
 >
 > Bezüglich der Überprüfung anderer Datenbanken wenden Sie sich bitte direkt an die betreffenden Organisationen. OVHcloud wird diesen gegenüber nicht intervenieren.
 
-Anschließend wird ein Bestellschein erstellt. Erlauben Sie die Anzeige von Pop-Ups im Browser, um automatisch zum Bestellschein geleitet zu werden.
-
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+Klicken Sie auf `Bestellschein erstellen`{.action}. Erlauben Sie die Anzeige von Pop-Ups im Browser, um automatisch zum Bestellschein geleitet zu werden.
 
 Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) finden, indem Sie den Bereich `Dashboard`{.action} öffnen und dann auf `Meine Bestellungen anzeigen`{.action} klicken.
 
+Weitere Informationen finden Sie in unserer Anleitung zur [Verwaltung der OVHcloud Bestellungen](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/).
 
 ## Weiterführende Informationen
 

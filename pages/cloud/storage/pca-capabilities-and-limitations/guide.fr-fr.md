@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
 section: Public Cloud Archive
-order: 50
+order: 050
 ---
 
 **Dernière mise à jour le 23/09/2021**
@@ -266,7 +266,7 @@ Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <https://public-cloud.status-ovhcloud.com/incidents/gwqhdkprm136>
 
 ## Aller plus loin
 

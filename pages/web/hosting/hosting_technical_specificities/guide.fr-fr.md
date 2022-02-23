@@ -6,7 +6,7 @@ section: "Configuration de l'hébergement"
 order: 6
 ---
 
-**Dernière mise à jour le 14/05/2020**
+**Dernière mise à jour le 06/01/2021**
 
 ## Objectif
 
@@ -34,26 +34,25 @@ order: 6
 
 ### Base de données / SQL
 
-### Connexions simultanées à la base de données
+#### Connexions simultanées à la base de données
 
-- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec la base de données privée incluse). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
+- Sur les offres d'hébergement Web (bases de données partagées), il y a une limite de 30 connexions simultanées par base de données (200 avec une base de données CloudDB). Veuillez consulter le [détail de nos offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
 
-- Vous pouvez également commander des bases de données **Private SQL** supplémentaires, celles-ci disposant d'options de personnalisation :
+- Vous pouvez également commander des bases de données **CloudDB** supplémentaires, celles-ci disposant d'options de personnalisation :
 
     - *max_connections*: 100 par défaut, avec possibilité de passer à 200
 
     - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200
 
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) et [notre guide](../premiers-pas-avec-sql-prive/).
+Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) et [notre guide](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/).
 
 #### Connexions depuis un serveur externe
 
-- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud, qu'il s'agisse de bases de données SQL partagées ou privées. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
+- Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à la base de données d'un hébergement Web OVHcloud, qu'il s'agisse de bases de données SQL partagées ou CloudDB. Seuls les serveurs OVHcloud Web Hosting peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
-
 
 #### Variables serveur SQL mutualisé
 
@@ -111,7 +110,7 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 >
 
 
-#### Informations techniques de votre hébergement Web
+### Informations techniques de votre hébergement Web
 
 Veuillez consulter les pages d'informations respectives pour vérifier les librairies disponibles pour votre offre d'hébergement web.
 
@@ -121,7 +120,33 @@ Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel clu
 
 Pour connaitre les spécificités technique de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
 
-## Politique d'utilisation des cookies
+### Informations sur les sauvegardes automatiques <a name=“backup”></a>
+
+> [!warning]
+>
+> OVHcloud s'engage à fournir un service de sauvegarde automatique des données ainsi que la mise à disposition de ces sauvegardes. Il est toutefois de votre responsabilité de mettre en place votre propre politique de restauration, et de déterminer des points de restaurations aux moments que vous jugez opportuns.
+
+#### Espace disque
+
+Toutes nos offres d'hébergement web mutualisé situées:
+
+- à Gravelines (GRA), en France, disposent de sauvegardes automatiques à J-1 / J-2 / J-3 / J-7 / J-14. Ces sauvegardes sont également stockées sur le datacentre de Roubaix (RBX),en France.
+
+- à Beauharnois (BHS), au Canada, disposent de sauvegardes automatiques à J-1 / J-2 / J-3 / J-7 / J-14. Ces sauvegardes sont également stockées sur le datacenter de Beauharnois (BHS), au Canada.
+
+Découvrez comment [se connecter à l’espace de stockage](../connexion-espace-stockage-ftp-hebergement-web/) ou [restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) sur nos documentations.
+
+#### Base de données / SQL
+
+Pour les bases de données mutualisées (comprises dans votre offre d'hébergement Web) ou les serveurs de base de données (SQL privé / Cloud Databases), proposés sur Gravelines (GRA), en France et Beauharnois (BHS), au Canada, la sauvegarde des bases est faite tous les jours. Ces sauvegardes sont accessibles (via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou via les [API OVHcloud](https://api.ovh.com/)). Les sauvegardes sont également stockées sur une autre infrastructure. Ces données sont répliquées à 3 endroits distincts en France : Roubaix(RBX), Strasbourg(SBG), et Gravelines(GRA). La politique de rétention des sauvegardes est de 30 jours.
+
+Découvrez comment [Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/) sur notre documentation.
+
+#### E-mail
+
+Pour les comptes e-mails mutualisés (compris dans votre offre d'hébergement Web), une sauvegarde automatique quotidienne est réalisée et copiée dans un autre centre de données.
+
+### Politique d'utilisation des cookies
 
 **Cookies et traceurs utilisés dans le cadre de la fourniture du service hébergement mutualisé.**
 
@@ -133,7 +158,7 @@ Le cookie « SERVER ID » est placé sur le terminal de l’utilisateur pour une
 
 S'agissant d'un cookie nécessaire au fonctionnement du service d’hébergement mutualisé et anonyme, il n'est pas concerné par le recueil préalable du consentement du visiteur du site internet au sens de la Réglementation Générale de Protection des données (RGPD). 
 
-## Informations sur les outils de statistiques
+### Informations sur les outils de statistiques
 
 **OVHcloud Web Statistics**
 
@@ -150,5 +175,9 @@ Afin d’être utilisées dans le cadre d’OVHcloud Web Statistics, les donnée
 [Passer son site internet en HTTPS grâce au SSL](../passer-site-internet-https-ssl/)
 
 [Optimisation des performances de votre site](../optimisation-performances-site/)
+
+[Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/)
+
+[Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

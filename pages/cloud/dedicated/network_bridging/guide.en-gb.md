@@ -17,9 +17,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Requirements
 
-- a dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- at least one [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) attached to the server
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+- At least one [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) attached to the server
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 

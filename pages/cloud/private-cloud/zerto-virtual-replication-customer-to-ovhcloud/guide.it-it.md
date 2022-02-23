@@ -1,17 +1,23 @@
 ---
-title: Configurare una VPN per il Piano di Disaster Recovery Zerto OVHcloud
+title: 'Utilizza Zerto tra OVHcloud e una piattaforma terza'
 slug: zerto-virtual-replication-customer-to-ovhcloud
-excerpt: Come configurare un tunnel VPN per connettere una piattaforma Zerto locale al Private Cloud OVHcloud
-section: Servizi e opzioni OVH
+excerpt: "Come connettere il tuo Zerto OVHcloud a un'altra piattaforma"
+section: Servizi e opzioni OVHcloud
 ---
 
-**Ultimo aggiornamento: 30/06/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 11/02/2022**
 
 ## Obiettivo
-Questa guida ti mostra come configurare la rete virtuale privata (VPN) per collegare la tua piattaforma locale al tuo servizio Hosted Private Cloud OVHcloud e attuare la soluzione di Disaster Recovery.
-Zerto
+
+Questa guida ti mostra come configurare la rete privata virtuale (VPN) per collegare una piattaforma terza al tuo Hosted Private Cloud OVHcloud e implementare la soluzione Disaster Recovery Zerto.<br>
 Per illustrare la procedura di interconnessione utilizzeremo le funzionalità VPN di OPNSense, una piattaforma firewall/VPN open source.
-Per facilitare la spiegazione, descriveremo il modo più semplice per stabilire un tunnel VPN con la rete dell’interfaccia Zerto Virtual Manager (ZVM). 
+Per facilitare la spiegazione, descriveremo il modo più semplice per stabilire un tunnel VPN con la rete dell’interfaccia Zerto Virtual Manager (ZVM).
+
+Per il secondo caso, consulta la nostra guida "[Zerto tra due datacenter OVHcloud](https://docs.ovh.com/it/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)".
 
 ## Prerequisiti
 

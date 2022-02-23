@@ -18,8 +18,8 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- visiting the [product page](https://www.ovhcloud.com/en-gb/web-paas/) to decide which plan is suitable for your project's requirements
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Visiting the [product page](https://www.ovhcloud.com/en-gb/web-paas/) to decide which plan is suitable for your project's requirements
 
 ## Instructions
 

@@ -71,4 +71,4 @@ Una volta completata l’operazione attendi il tempo necessario alla sua elabora
 
 [Modificare i server DNS di un dominio OVH](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

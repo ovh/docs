@@ -6,7 +6,7 @@ section: 'SSH e chave SSH'
 order: 3
 ---
 
-**Última atualização: 15 de abril de 2020**
+**Última atualização: 15/04/2020**
 
 ## Sumário
 
@@ -152,13 +152,13 @@ Apague do seu ficheiro "authorized_keys" a chave que corresponde ao utilizador q
 
 A Área de Cliente OVHcloud permite-lhe guardar chaves públicas criadas utilizando um dos seguintes tipos de encriptação suportados atualmente (RSA, ECDSA, ED25519). 
 
-Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
+Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Gestão dos serviços`{.action}.
 
-![Painel de gestão de chaves SSH](images/SSH_keys_panel_1.png){.thumbnail}
+![Painel de gestão de chaves SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-Em “Os meus serviços” passe para o separador `Chaves SSH`{.action} e clique em `Adicionar uma chave SSH`{.action}.
+Em “Os meus serviços” passe para o separador `Chaves SSH`{.action} e clique em `Adicionar chave SSH`{.action}.
 
-![Painel de gestão de chaves SSH](images/SSH_keys_panel_2.png){.thumbnail}
+![Painel de gestão de chaves SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Selecione "Dedicadas" no menu suspenso.
 

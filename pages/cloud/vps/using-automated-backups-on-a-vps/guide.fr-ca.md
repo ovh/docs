@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 2
 ---
 
-**Dernière mise à jour le 16/06/2021**
+**Dernière mise à jour le 01/02/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `Serveurs privés virtuels`{.action}.
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 
@@ -69,7 +69,7 @@ Cliquez sur `...`{.action} à droite de la sauvegarde souhaitée et sélectionne
 
 Une fois le processus terminé, vous recevrez un e-mail. Vous pourrez alors vous connecter à votre VPS et ajouter la partition où se trouve votre sauvegarde.
 
-#### Étape 2 : en SSH
+#### Sous Linux
 
 Connectez-vous à votre VPS en SSH.
 
@@ -102,6 +102,30 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
+
+#### Sous Windows
+
+Établissez une connexion RDP (Remote Desktop) avec votre VPS.
+
+Une fois connecté, faites un clic-droit sur le bouton `Démarrer`{.action} et ouvrez `Gestion des disques`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+Votre sauvegarde montée apparaîtra comme un disque de base avec le même espace de stockage que votre disque principal.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+Le disque apparaîtra comme `hors ligne`, faites un clic-droit sur le disque et sélectionnez `En ligne`(action).
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+Par la suite, votre sauvegarde montée sera accessible dans `Explorateur de fichiers`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
+
+> [!warning]
+> Veuillez noter qu'un redémarrage du serveur se produira lors du démontage de la sauvegarde.
+>
 
 ### Bonnes pratiques pour l'utilisation de la sauvegarde automatique
 

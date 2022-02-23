@@ -2,7 +2,7 @@
 title: 'Intel SGX num servidor Infraestrutura'
 slug: ativar-e-usar-intel-sgx
 excerpt: 'Ative o SGX no seu servidor Infraestrutura e instale a pilha de software Linux SGX'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 ---
 
 **Última atualização a 16 de dezembro de 2020**

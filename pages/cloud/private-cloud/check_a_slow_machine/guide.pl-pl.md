@@ -1,51 +1,73 @@
 ---
-title: Weryfikacja maszyny w przypadku spowolnienia w działaniu
-excerpt: ''
+title: Weryfikacja maszyny w przypadku spowolnienia w działaniu (EN)
+excerpt: 'Troubleshoot performance issues on a VM'
 slug: weryfikacja_maszyny_w_przypadku_spowolnienia_w_dzialaniu
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
 legacy_guide_number: g601
+section: Zarządzanie wirtualnymi maszynami
 ---
 
+**Last updated on 17th January 2022**
 
-## 
-Poniżej przedstawiamy sposób diagnozowania spowolnień na wirtualnej maszynie. 
+## Objective
 
-Należy zalogować się do vSphere (poprzez program lokalny lub za pomocą połączenia RDP dostarczonego podczas aktywacji usługi Private Cloud).
+Use the vSphere monitoring tools to troubleshoot a slow VM.
 
+**This guide offers a step by step study case to troubleshoot performance issues on a VM.**
 
-## Weryfikacja wirtualnych maszyn:
-Najpierw należy wybrać wirtualna maszynę, która sprawia problemy i wybrać zakładkę « Performance ». W zakładce tej będą widoczne wykresy wykorzystania zasobów procesora, pamięci RAM, itp. Jeśli w tej części zauważymy podwyższone zużycie zasobów, problem z pewnością jest związany z wirtualną maszyną. 
-W takim przypadku możesz zwiększyć zasoby przypisane do VM (po sprawdzeniu, czy nie ma ograniczeń w zakładce Edit Settings => Ressources).
+## Requirements
 
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
-## Weryfikacja klastra / zasobów
-W przypadku klastra i zasobów należy wybrać zakładkę Performances. Wyświetlą się wykresy wykorzystanych zasobów:
+## Instructions
 
-![](images/img_95.jpg){.thumbnail}
-W sekcji dotyczącej przyznawania zasobów możesz sprawdzić całkowite wykorzystanie zasobów przez wirtualne maszyny:
+You have three levels of monitoring accessible in vSphere to troubleshoot issues:
 
-![](images/img_96.jpg){.thumbnail}
-Mogą wystąpić dwie sytuacje: 
+- VM
+- Cluster
+- Storage
 
-- Jeśli dany host jest zbyt obciążony, możesz ręcznie przenieść swoją wirtualną maszynę na inny host lub wykonać migrację za pomocą vMotion.
+### VM Monitoring
 
-Jeśli korzystasz z licencji Enterprise, możesz skorzystać z funkcji DRS, która pozwala na automatyczne zarządzanie takimi operacjami, w zależności o wykorzystania zasobów przez hosty. 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
-- Jeśli wszystkie hosty są przeciążone, można dodać kolejne w zakładce Private Cloud OVH lub Stockage OVH.
+![VM monitoring](images/en01vm.png){.thumbnail}
 
+You may also use the `Utilization`{.action} section to help your investigations.
 
+### Cluster monitoring
 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your Cluster and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
-## Weryfikacja przestrzeni dyskowej
-Możesz również monitorować przestrzeń dyskową. Jeśli korzystasz z widoku Datastore, wybierz swój NAS i zakładkę « Performance »:
+![cluster mmonitoring](images/en02cluster.png){.thumbnail}
 
-![](images/img_97.jpg){.thumbnail}
+You may also use the `Resource Allocation`{.action} and `Utilization`{.action} sections to help your investigations.
 
+> [!primary]
+>
+> Resource Pools can be accessed and monitored in the same way clusters are.
+> 
 
-## Weryfikacja sieci
-Możesz także sprawdzić stan sieci. Panelu klienta Manager możesz sprawdzić wykorzystywane łącze oraz ograniczenia, które wprowadziłeś w swojej sieci VLAN:
+### Storage monitoring
 
+In the vSphere interface menu, go to the `Storage`{.action} dashboard.<br>
+Navigate to your datastore and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
-- Manager v5 -> Private Cloud -> Podsumowanie
+![storage monitoring](images/en03storage.png){.thumbnail}
 
+## Go further
 
-
+Join our community of users on <https://community.ovh.com/en/>.

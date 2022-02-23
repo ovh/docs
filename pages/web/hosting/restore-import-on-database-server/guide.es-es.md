@@ -2,7 +2,7 @@
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
 slug: restaurar-importar-base-de-datos
 excerpt: 'Cómo restaurar e importar la base de datos'
-section: 'SQL Privado'
+section: 'CloudDB'
 order: 5
 ---
 
@@ -10,7 +10,7 @@ order: 5
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 11/06/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 
@@ -20,14 +20,14 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
+- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que los productos [SQL Privado](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) y [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
+> Tenga en cuenta que los productos [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
 > 
 
 ### Restaurar e importar una base de datos desde el área de clientes
@@ -42,7 +42,7 @@ Haga clic en el botón `...`{.action} a la derecha de la base de datos y, seguid
 
 Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el botón `...`{.action} a la derecha de la copia de seguridad seleccionada y, seguidamente, en `Restaurar la copia de seguridad`{.action}.
 
-![private-sql](images/private-sql-restore01.png){.thumbnail}
+![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -54,7 +54,7 @@ Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el b
 
 Haga clic en el botón `...`{.action} a la derecha de la base de datos y seleccione `Importar archivo`{.action}.
 
-![private-sql](images/private-sql-import01.png){.thumbnail}
+![clouddb](images/private-sql-import01.png){.thumbnail}
 
 Tiene dos posibilidades:
 
@@ -69,7 +69,7 @@ Escriba un nombre para el archivo importado, haga clic en `Navegar`{.action} par
 > El archivo debe tener el formato ".gz".
 > 
 
-![private-sql](images/private-sql-import02.png){.thumbnail}
+![clouddb](images/private-sql-import02.png){.thumbnail}
 
 Marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud y haga clic en `Aceptar`{.action}.
 
@@ -79,7 +79,7 @@ Si ya había importado un archivo antes, puede seleccionar la opción **"Importa
 
 Seleccione el archivo en el menú desplegable y haga clic en `Siguiente`{.action}.
 
-![private-sql](images/private-sql-import03.png){.thumbnail}
+![clouddb](images/private-sql-import03.png){.thumbnail}
 
 Marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar un email al final de la importación"** para estar informado del fin de la operación en la dirección de correo electrónico de referencia de su cuenta de OVHcloud y haga clic en `Aceptar`{.action}.
 
@@ -106,7 +106,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (atención: 
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
 
-![private-sql](images/private-sql-import04.png){.thumbnail}
+![clouddb](images/private-sql-import04.png){.thumbnail}
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 

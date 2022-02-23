@@ -6,7 +6,7 @@ legacy_guide_number: g1851
 section: Gestão via OpenStack
 ---
 
-**Última atualização: 23/04/2019**
+**Última atualização: 22/12/2021**
 
 ## Sumário
 
@@ -32,10 +32,16 @@ Atualize a cache dos pacotes através do comando `apt-get update`:
 apt-get update
 ```
 
-Utilize o comando abaixo para instalar os clientes Nova (aplicação de cálculo), Glance (imagem do serviço) e Swift:
+Utilize o comando abaixo para instalar os clientes Nova (aplicação de cálculo) e Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Versão
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
@@ -144,6 +150,39 @@ Se a operação se realizar corretamente, aparecerá um resumo:
 No símbolo do sistema, pode verificar a versão instalada introduzindo “python-V” (não é relevante em que diretório se encontra).
 
 ![Verificação](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### Em MacOS
+
+Pode utilizar [HomeBrew](https://brew.sh), um gestor de pacotes para MacOS.
+
+Abra o terminal e execute o seguinte comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilize os comandos abaixo para instalar os clientes Nova (aplicação de cálculo) e Swift:
+
+Para Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Para Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Para aceder às ferramentas de ajuda, execute o seguinte comando:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Quer saber mais?
 

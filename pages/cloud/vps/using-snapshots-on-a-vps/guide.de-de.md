@@ -32,7 +32,7 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 ### Schritt 1: Snapshot-Option aktivieren
 

@@ -3,7 +3,7 @@ title: 'Getting started with the Swift S3 API'
 excerpt: 'Getting started with the Swift S3 API'
 slug: getting_started_with_the_swift_S3_API
 section: Object Storage Standard (Swift)
-order: 20
+order: 020
 ---
 **Last updated 27th October 2021**
 

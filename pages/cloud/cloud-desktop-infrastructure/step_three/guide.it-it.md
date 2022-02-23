@@ -123,4 +123,4 @@ Adesso che hai creato il <i>pool</i>, vedremo come [assegnare i desktop virtuali
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

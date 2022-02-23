@@ -3,7 +3,7 @@ title: 'Syncing object containers'
 slug: sync-object-containers
 legacy_guide_number: 1919
 section: Object Storage Standard (Swift)
-order: 60
+order: 060
 ---
 
 **Last updated 27th October 2021**

@@ -2,7 +2,7 @@
 title: Interface segura
 slug: interface-segura
 excerpt: Utilização da interface segura em infraestruturas HDS ou PCI-DSS
-section: Serviços e opções OVH
+section: Serviços e opções OVHcloud
 order: 04
 ---
 

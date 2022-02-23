@@ -10,13 +10,13 @@ order: 2
 
 ## Obiettivo
 
-Di default, i server dedicati non includono alcun protocollo di sicurezza. Pertanto, sarai tu ad occuparti di come proteggere il tuo server. Infatti, OVH non potrà essere considerata responsabile di un problema di sicurezza della tua macchina.
+Di default, i server dedicati non includono alcun protocollo di sicurezza. Pertanto, sarai tu ad occuparti di come proteggere il tuo server. Infatti, OVHcloud non potrà essere considerata responsabile di un problema di sicurezza della tua macchina.
 
 **Scopri come mettere in sicurezza un server dedicato.**
 
 > [!warning]
 >
-> OVH mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
+> OVHcloud mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
 >
 > Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 >
@@ -197,16 +197,16 @@ iptables -L
 Ti consigliamo di creare e adattare le regole di questo firewall in base alle tue necessità. Per maggiori informazioni sulla configurazione di iptables, consulta la documentazione ufficiale della tua distribuzione Linux.
 
 
-### Configura il Firewall Network OVH
+### Configura il Firewall Network OVHcloud
 
-I server dedicati di OVH includono un firewall all’ingresso dell’infrastruttura, il Firewall Network. Attivandolo e configurandolo, è possibile bloccare i protocolli prima che arrivino al tuo server.
+I server dedicati di OVHcloud includono un firewall all’ingresso dell’infrastruttura, il Firewall Network. Attivandolo e configurandolo, è possibile bloccare i protocolli prima che arrivino al tuo server.
 
 Per maggiori informazioni, consulta la nostra guida su come [configurare il Firewall Network](https://docs.ovh.com/it/dedicated/firewall-network/){.external}.
 
 
 ### Proteggi il tuo sistema e i tuoi dati
 
-Il concetto di sicurezza non si limita esclusivamente alla protezione di un sistema dagli attacchi. La messa in sicurezza dei tuoi dati è un elemento fondamentale ed è per questo che OVH ti offre uno spazio di backup di 500 GB incluso con il tuo server, che puoi attivare direttamente dal tuo Spazio Cliente ed eseguire l’accesso utilizzando i seguenti protocolli:
+Il concetto di sicurezza non si limita esclusivamente alla protezione di un sistema dagli attacchi. La messa in sicurezza dei tuoi dati è un elemento fondamentale ed è per questo che OVHcloud ti offre uno spazio di backup di 500 GB incluso con il tuo server, che puoi attivare direttamente dal tuo Spazio Cliente ed eseguire l’accesso utilizzando i seguenti protocolli:
 
 * FTP
 * FTPS
@@ -219,4 +219,4 @@ Per ulteriori informazioni sulle nostre soluzioni di backup, consulta la guida [
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

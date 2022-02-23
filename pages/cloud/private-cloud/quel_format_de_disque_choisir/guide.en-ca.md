@@ -7,13 +7,13 @@ section: Virtual machine management
 order: 4
 ---
 
-**Last updated 9th July 2020**
+**Last updated 2nd February 2022**
 
 ## Objective
 
 VMware offers 3 types of disks for virtual machines.
 
-**This guide explains the differences between the availale disk types.**
+**This guide explains the differences between the available disk types.**
 
 ## Instructions
 
@@ -35,7 +35,6 @@ It is not possible to reclaim the occupied space.
 
 Example: If you occupy 40GB on a 100GB thin disk and delete 20GB of data in the VM, the space on the datastore will still be 40GB and the allocated space still 100GB.
 
-
 ### Thick Provision Eager Zeroed
 
 This type of disk will occupy all the allocated space on the datastore.
@@ -56,7 +55,6 @@ The allocated space is reserved for the VM disk, but the zeros are written when 
 
 Example summary for 100GB VMs with 40GB *guest OS*:
 
-
 |Disk type|Space allocated|Block zeroed|Space occupied|
 |---|---|---|---|
 |Eager Zero|At VM creation|At VM creation|100GB|
@@ -65,9 +63,9 @@ Example summary for 100GB VMs with 40GB *guest OS*:
 
 ### OVHcloud disk types
 
-On the datastore storage of a Hosted Private Cloud infrastructure, only *Thin provisioning* is available.
+In a standard storage Hosted Private Cloud infrastructure, only *Thin provisioning* is possible.
 
-On the vSan storage, all 3 types of disk are possible.
+All 3 types of disk are available on vSAN storage.
 
 ## Go further
 

@@ -330,7 +330,7 @@ Se surgir uma mensagem relativa a certificados, clique em `Sim`{.action}. De seg
 ![linux remote](images/linux-connect-03.png){.thumbnail}
 
 
-## Saiba mais
+## Quer saber mais?
 
 [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/)
 

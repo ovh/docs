@@ -20,15 +20,15 @@ This guide will show you how to do this.
 
 ### Requirements
 
-- two OVHcloud accounts
-- a Public Cloud project
+- Two OVHcloud customer accounts
+- A Public Cloud project
 
 
 ## Instructions 
 
 ### Delegate the project.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then select `Public Cloud`{.action}. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project. Next, click `Contacts and Rights`{.action} in the **Project Management** section.
 
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}

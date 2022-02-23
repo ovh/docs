@@ -24,8 +24,8 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](https://www.ovh.com/world/public-cloud/instances/){.external}
-- [root access](../first-login/){.external} (via SSH) to the instance
+- An [OVHcloud Public Cloud instance](https://www.ovh.com/world/public-cloud/instances/){.external}
+- [Root access](../first-login/){.external} (via SSH) to the instance
 
 
 ## Instructions

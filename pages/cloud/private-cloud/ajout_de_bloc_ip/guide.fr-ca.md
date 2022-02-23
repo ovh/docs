@@ -7,7 +7,7 @@ section: Fonctionnalités OVHcloud
 order: 01
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 30/12/2021**
 
 ## Objectif
 
@@ -17,8 +17,8 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-* Posséder une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 
@@ -57,7 +57,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!success]
 >
-> Les frais d'activation d'un bloc sont de 2€ HT/IP. Ainsi, pour un bloc en `/28` comprenant 16 IPs, vous aurez un bon de commande de 32€HT à payer avant livraison.
+> Vous devrez vous acquitter des frais d'activation de votre bloc IP avant livraison.
 >  
 > Les frais de renouvellement des IPs sont gratuits.
 >

@@ -75,7 +75,7 @@ Agora deve personalizar a adição do domínio ou subdomínio. Dependendo do seu
 |Ativar o CDN|Permite ativar o CDN (implementação de cache dos elementos estáticos do seu site, como as imagens) no nome de domínio selecionado. Saiba mais na [nossa página sobre CDN](https://www.ovhcloud.com/pt/web-hosting/options/cdn/){.external}. Ao ativar o SSL e o CDN, poderá também beneficiar do protocolo **HTTP2** (este é ativado por predefinição no nosso datacenter de Gravelines).|
 |IP do país|Permite beneficiar de um endereço de IP geolocalizado (a partir de uma lista de países) para o nome de domínio selecionado. Obtenha mais informações na [nossa página sobre IP](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
 |Ativar a firewall|Permite ativar uma firewall (análise de pedidos) no nome de domínio selecionado. Saiba mais na [nossa página sobre Mod Security](https://www.ovhcloud.com/pt/web-hosting/options/){.external}.|
-|Logs separados|Permite ativar um novo espaço de logs no domínio selecionado. Terá de escolher um nome de domínio a partir de uma lista que determinará o nome de acesso a esse novo espaço. Saiba mais na [nossa página sobre estatísticas detalhadas](https://www.ovhcloud.com/pt/web-hosting/website_statistics.xml){.external}.|
+|Logs separados|Permite ativar um novo espaço de logs no domínio selecionado. Terá de escolher um nome de domínio a partir de uma lista que determinará o nome de acesso a esse novo espaço. Saiba mais na [nossa página sobre estatísticas detalhadas](https://www.ovhcloud.com/pt/web-hosting/uc-website-traffic-analysis/){.external}.|
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifique o resumo que aparece.
 

@@ -5,7 +5,7 @@ excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Ultimo aggiornamento: 06/10/2021**
+**Ultimo aggiornamento: 08/02/2022**
 
 ## Obiettivo
 
@@ -18,11 +18,6 @@ Veeam Backup & Replication è un software di protezione dei dati che offre diver
 
 * Disporre dell’opzione Veeam Enterprise
 * Disporre di una macchina Windows Server 2012 o 2016
-
-> [!primary]
->
-> Le soluzioni Veeam sono compatibili solo con l'ultima versione (10) proposta da Veeam. Tieni conto di questo punto durante la configurazione di Veeam per i tuoi servizi.
->
 
 ## Procedura
 
@@ -184,4 +179,4 @@ Verifica le informazioni per assicurarti che si tratti della tua licenza OVH.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

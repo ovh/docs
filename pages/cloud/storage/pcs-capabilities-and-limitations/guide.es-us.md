@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/pcs/capabilities-and-limitations'
 excerpt: Find here the main capacities and limitations for the management of your containers
 section: Object Storage Standard (Swift)
-order: 80
+order: 080
 ---
 
 **Last updated 23rd September 2021**
@@ -260,7 +260,7 @@ There is no limit to the number of containers in a storage.
 
 ### Keystone API version
 
-The current version of Keystone is version 3, v2 being obsolete for several years: <http://travaux.ovh.net/?do=details&id=42179>
+The current version of Keystone is version 3, v2 being obsolete for several years: <https://public-cloud.status-ovhcloud.com/incidents/gwqhdkprm136>
 
 ## Go further
 

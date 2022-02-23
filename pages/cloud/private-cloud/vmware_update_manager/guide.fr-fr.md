@@ -7,7 +7,7 @@ section: Fonctionnalités VMware vSphere
 order: 09
 ---
 
-**Dernière mise à jour le 23/11/2021**
+**Dernière mise à jour le 09/12/2021**
 
 ## Objectif
 
@@ -83,7 +83,19 @@ Le résumé de conformité se met alors à jour.
 
 ![Update](images/en09noncompliant.png){.thumbnail}
 
-Retournez dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Corriger`{.action}.
+Retournez dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Transfert intermédiaire`{.action}.
+
+![Update](images/en10bisstage.png){.thumbnail}
+
+Sélectionnez l'hôte et cliquez à nouveau sur `Transfert intermédiaire`{.action}.
+
+![Update](images/en10terstagea.png){.thumbnail}
+
+Le processus de transfert démarre et durera en fonction du nombre et de la taille des correctifs.
+
+![Update](images/en10terstage.png){.thumbnail}
+
+Toujours dans la section `Lignes de base attachées`, sélectionnez toutes les lignes de bases assignées et cliquez sur `Corriger`{.action}.
 
 ![Update](images/en10remediate.png){.thumbnail}
 

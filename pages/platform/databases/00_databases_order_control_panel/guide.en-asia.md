@@ -1,12 +1,12 @@
 ---
 title: Getting started with Public Cloud Databases
-excerpt: Find out how to set up your managed MongoDB service in the OVHcloud Control Panel
+excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 slug: getting-started
 section: General information
 order: 1
 ---
 
-**Last updated 11th October 2021**
+**Last updated 1st Febuary 2022**
 
 ## Objective
 
@@ -16,14 +16,14 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
 ### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
 
@@ -85,10 +85,12 @@ The final section will display a summary of your order as well as the API equiva
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 
-Please continue with the [Database Management guide](https://docs.ovh.com/asia/en/publiccloud/databases/mongodb/managing-service/) to configure your service after installation.
+Continue with the [Database Management guide](https://docs.ovh.com/asia/en/publiccloud/databases/mongodb/managing-service/) to configure your service after installation.
+
+Note that the configuration options might be different, depending on the database type. 
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you [whitelist the suitable IP addresses](https://docs.ovh.com/asia/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips) in order to successfully access your database.
+> For security reasons the default network configuration doesn't allow any incoming connections. It is thus critical you [authorise the suitable IP addresses](https://docs.ovh.com/asia/en/publiccloud/databases/mongodb/managing-service/#configuring-authorised-ips) in order to successfully access your database.
 
 ## Go further
 

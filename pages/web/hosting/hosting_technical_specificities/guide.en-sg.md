@@ -6,7 +6,7 @@ section: 'Configuring the Web Hosting plan'
 order: 4
 ---
 
-**Last updated 13th May 2020**
+**Last updated 22th February 2022**
 
 
 ## Objective
@@ -37,20 +37,11 @@ order: 4
 
 #### Simultaneous Database Connections
 
-- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database (200 with the included Private SQL database). Plese refer to the [product page](https://www.ovhcloud.com/en-sg/web-hosting/) to verify the available options of our Web Hosting plans.
-
-- You can also order additional **Private SQL** databases, which have some customisation options:
-
-    - *max_connections*: 100 by default, with the possibility of increasing to 200
-
-    - *max_user_connections*: 50 by default, with the possibility of increasing to 200
-
-Find out more on our [website](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) and in [our guide](../getting-started-with-private-sql/).
-
+- On Web Hosting plans (shared databases), there is a limit of 30 concurrent connections per database. Plese refer to the [product page](https://www.ovhcloud.com/en-sg/web-hosting/) to verify the available options of our Web Hosting plans.
 
 #### Connections from an external server
 
-- For security reasons it is not possible to connect from an external server to a Web Hosting plan's database, irrespective of whether they are shared or Private SQL databases. Only OVHcloud Web Hosting servers are able to connect to the database servers. Any other connection will cause the following error:
+- For security reasons it is not possible to connect from an external server to a Web Hosting plan's database. Only OVHcloud Web Hosting servers are able to connect to the database servers. Any other connection will cause the following error:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...

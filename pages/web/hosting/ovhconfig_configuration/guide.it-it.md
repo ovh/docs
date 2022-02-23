@@ -167,4 +167,4 @@ Se utilizzi il tuo hosting per ospitare più siti, hai sicuramente attivato l’
 
 [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

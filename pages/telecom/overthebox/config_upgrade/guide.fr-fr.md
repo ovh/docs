@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
 section: "Configurations de l'OverTheBox"
 ---
 
-**Dernière mise à jour le 16/06/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -33,7 +33,7 @@ Cliquez sur `OverThebox`{.action} dans la barre de services à gauche, puis sél
 
 Cliquez ensuite sur le bouton `Mettre à jour`{.action}, puis cliquez une seconde fois sur l'encart explicatif, la mise à jour commencera alors.
 
-![overthebox](images/upgrade-step1.png){.thumbnail}
+![overthebox](images/upgrade-step1-2022.png){.thumbnail}
 
 Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationnelle.
 
@@ -86,7 +86,7 @@ Sur l'espace client OVHcloud, deux informations de versions vous sont présenté
 
 - La **version du système** est la version du système **OverTheBox** sur lequel a été construite l'image. Elle est basée sur le dépôt [overthebox](https://github.com/ovh/overthebox/tags){.external}.
 
-![overthebox](images/upgrade-more1.png){.thumbnail}
+![overthebox](images/upgrade-more1-2022.png){.thumbnail}
 
 ### Passer sur une version Beta ou une version Raspberry Pi 3
 
@@ -97,7 +97,7 @@ Sur l'espace client OVHcloud, deux informations de versions vous sont présenté
 
 Sur l'espace client OVHcloud, vous pouvez modifier le canal de votre version. Cela peut vous permettre d'utiliser des versions en cours de développement ou dans un status bêta, ainsi que la version dédiée au Raspberry Pi si vous souhaitez utiliser ce type d'équipement.
 
-![overthebox](images/upgrade-more2.png){.thumbnail}
+![overthebox](images/upgrade-more2-2022.png){.thumbnail}
 
 ## Aller plus loin
 

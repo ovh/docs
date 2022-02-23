@@ -3,7 +3,7 @@ title: Configuring the reverse DNS of a VPS
 excerpt: Find out how to set up the reverse DNS resolution
 slug: configure-reverse-dns-vps
 routes:
-    canonical: 'https://docs.ovh.com/gb/ie/public-cloud/configure-reverse-dns-instance/'
+    canonical: 'https://docs.ovh.com/ie/en/public-cloud/configure-reverse-dns-instance/'
 section: Network management
 order: 3
 ---
@@ -26,7 +26,7 @@ Configuring the reverse DNS resolution for a VPS is especially useful when sendi
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), switch to the `Bare Metal Cloud`{.action} section and click on `IP`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), switch to the `Bare Metal Cloud`{.action} section and open `IP`{.action}.
 
 In the table on this page, your eligible services will be listed. You can filter for your VPS using the drop-down menu under **Services**.
 

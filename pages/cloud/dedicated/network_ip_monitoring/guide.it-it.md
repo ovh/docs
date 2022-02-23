@@ -75,7 +75,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nella scheda `Informazioni generali`{.action} e poi la struttura **Stato dei servizi**, clicca sul pulsante `...`{.action} accanto a "Monitoraggio". Clicca su `Attiva`{.action} o `Disattiva`{.action}. Clicca su `Conferma`{.action} nella nuova finestra per confermare le modifiche.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Attiva il monitoring di servizi specifici
 
@@ -83,7 +83,7 @@ Oltre al monitoring standard, OVHcloud può anche monitorare servizi specifici c
 
  Per effettuare questa operazione, nella scheda `Informazioni generali`{.action} e poi nel riquadro **Stato dei servizi**, clicca sul pulsante `...`{.action} accanto a "Servizi monitorati". Clicca su `Monitora i tuoi servizi`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
  Verrai reindirizzato allo schermo qui sotto. Clicca su `Monitora un servizio`{.action} e inserisci l'indirizzo IP, il protocollo, il numero di porta, la risposta del server e l'intervallo di tempo tra le verifiche del tuo servizio. Clicca sul simbolo di conferma (**V**) per confermare le modifiche.
 

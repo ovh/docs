@@ -62,20 +62,13 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 To retrieve a backup of your database, please read our guide on
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/).
 
-If you are using a **Private SQL** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
-You can also download, import and restore backups in this section.
-
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click `Hosting`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click on the `More`{.action} tab, then `Statistics and logs`{.action}.
+Click `Hosting plans`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Then click on the link under **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 A window will appear with the different types of logs you can access. They are classed by month:
 
@@ -106,7 +99,5 @@ When you have selected the log types and month you want to view, the logs are ar
 [Accessing a web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/)
 
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
-
-[Private SQL](../getting-started-with-private-sql/)
 
 Join our community of users on <https://community.ovh.com/en/>.

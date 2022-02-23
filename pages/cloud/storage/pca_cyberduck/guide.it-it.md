@@ -3,7 +3,7 @@ title: Gestisci i tuoi archivi con un client Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Come configurare Cyberduck per gestire il tuo Public Cloud Archive
 section: Public Cloud Archive
-order: 80
+order: 080
 ---
 
 > [!primary]

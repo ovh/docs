@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 16/06/2021**
+**Última actualización: 01/02/2022**
 
 ## Objetivo
 
@@ -26,12 +26,12 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 ## Requisitos
 
 - Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es-es/vps/) de OVHcloud ya configurado.
+- Tener un [servidor privado virtual (VPS)](https://www.ovhcloud.com/es-es/vps/) de OVHcloud ya configurado.
 - Tener acceso de administrador (raíz) a su servidor virtual privado (VPS) a través del protocolo/programa SSH (opcional).
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud para acceder al panel de control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), navegue hasta la sección «Servidor» y seleccione su servidor en la barra lateral de la izquierda (debajo de `VPS)`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), navegue hasta la sección `Bare Metal Cloud`{.action} y seleccione su servidor en la barra lateral de la izquierda, en `Servidores privados virtuales`{.action}.
 
 ### Paso 1: Suscribirse a la opción «Copias de seguridad automatizadas»
 
@@ -70,7 +70,7 @@ Haga clic en `...`{.action} junto a la copia de seguridad a la que necesite acce
 
 Una vez completado el proceso, recibirá un mensaje de correo electrónico. Ahora, puede conectarse a su servidor virtual privado (VPS) y añadir la partición donde se encuentra su copia de seguridad.
 
-#### Paso 2: Secure Shell
+#### En Secure Shell
 
 Primero, conéctese a su servidor virtual privado (VPS) a través del protocolo/programa Secure Shell (SSH).
 
@@ -103,6 +103,30 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Ahora, puede cambiar a esta carpeta y acceder a los datos de su copia de seguridad.
+
+#### En Windows
+
+Establezca una conexión RDP (Remote Desktop) con su VPS.
+
+Una vez que se haya conectado, haga clic derecho en el botón `Inicio`{.action} y abra el menú `Administración de discos`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+La copia de seguridad montada aparecerá como un disco básico con el mismo espacio de almacenamiento que el disco principal.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+El disco aparecerá como `Desactivada`, haga clic derecho en el disco y seleccione `En línea`{.action}.
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+Más adelante podrá acceder a la copia de seguridad montada en `Explorador de archivos`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
+
+> [!warning]
+> Tenga en cuenta que se reiniciará el servidor al desmontar la copia de seguridad.
+>
 
 ### Buenas prácticas para utilizar la copia de seguridad automática
 

@@ -4,7 +4,7 @@ slug: criar_um_acesso_a_interface_horizon
 legacy_guide_number: 1773
 excerpt: 'Saiba como aceder à interface Horizon'
 section: Gestão a partir do Horizon
-order: 1
+order: 01
 ---
 
 **Última atualização a 14 de Novembro de 2019**

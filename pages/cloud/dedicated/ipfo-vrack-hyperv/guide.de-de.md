@@ -2,7 +2,7 @@
 title: "Hyper-V mit Failover-IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Failover-IPs in einem vRack konfigurieren"
 slug: ipfo-vrack-hyperv
-Abschnitt: vRack 
+section: vRack 
 ---
 
 > [!primary]

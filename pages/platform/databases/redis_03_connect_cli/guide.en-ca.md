@@ -36,9 +36,9 @@ It's a Client-Server interaction.
 > Please note that redis-cli is natively integrated in the redis package.
 >
 
-You first need to install a software to interact with your Redis instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... The only rule is to be able to reach the public network (Internet) and have sufficient priviledge to install it.
+You first need to install a software to interact with your Redis instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... The only rule is to be able to reach the public network (Internet) and have sufficient privilege to install it.
 
-In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://https://redis.io/download>. 
+In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://https://redis.io/download>.
 
 Once installed, you need to catch your IP address in order to authorize connection form this specific client.
 
@@ -56,14 +56,14 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 #### Step 1: Verify your user roles and password
 
-Select the `Users`{.action} tab. 
+Select the `Users`{.action} tab.
 
 Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user.<br>
 Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
-We provide official Redis Access Control List (ACL). Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right priviledges for your user. Those ACL will define the allow or disallow commands or categories of commands, keys and Pub/Sub channels.
+We provide official Redis Access Control List (ACL). Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right privileges for your user. Those ACL will define the allowed or disallowed commands or categories of commands, keys and Pub/Sub channels.
 
-In our example, we will create a user called *redisUser* with the (fake) generated password *3FAKExSW6Rez9Xw0admB* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
+In our example, we will create a user called *redisUser* with the (fake) generated password *3FAKExSW6Rez9Xw0admB* and right for the *ping* command (syntax equivalent to *<+ping>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
 
 ![User Creation](images/user_creation.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Like this we can help prevent intrusive connection attempts.
 
 Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
 
-![Add an IP](images/ip_whitelist.png){.thumbnail}
+![Add an IP](images/ip_authorize.png){.thumbnail}
 
 > [!primary]
 >
@@ -119,12 +119,12 @@ PONG
 
 It means that the Redis instance is running and responding to your command.
 
-To be in interactive mode, do not use any particular command : 
+To be in interactive mode, do not use any particular command :
 `redis-cli -u rediss://<username>:<password>@<hostname>:<port>`.<br>
 
 If you want to avoid to type username and password in your shell session, type:
-`redis-cli -u rediss://<username>:<password>@<hostname>:<port>` 
-to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum priviledges to run other commands. 
+`redis-cli -u rediss://<username>:<password>@<hostname>:<port>`
+to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum privileges to run other commands.
 
 Don't forget you need to modify the username, password, hostname and port.
 

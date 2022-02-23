@@ -24,11 +24,6 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 - [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
 - Windows SPLA Licensing enabled
 
-> [!primary]
->
-> Our Veeam offers are currently not compatible with the latest version (11) offered by Veeam. OVHcloud will continue to offer version 10 until further notice. Please take this into consideration when configuring Veeam for your services.
->
-
 ## Instructions
 
 ### Activating the backup option

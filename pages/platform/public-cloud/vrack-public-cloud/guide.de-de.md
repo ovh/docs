@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 18.11.2021**
+**Letzte Aktualisierung am 21.12.2021**
 
 ## Ziel
 
@@ -50,7 +50,7 @@ Dieses umfassende technische Interface erlaubt es Ihnen, fast alle Aktionen in O
 Lesen Sie die [Anleitung zu Horizon](../erstellung_eines_zugangs_zu_horizon/), um sich mit dem Interface vertraut zu machen.
 
 > [!primary]
-> Horizon mit Zonenfunktion: Denken Sie daran, Ihr geografisches Arbeitsgebiet ganz oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...)
+> Horizon mit Zonenfunktion: Denken Sie daran, Ihre Arbeitszone oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...).
 >
 
 ### OVHcloud APIv6
@@ -109,9 +109,7 @@ Sobald das vRack aktiv ist, finden Sie diesen Dienst unter der Bezeichnung "pn-x
 
 #### Über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie dann das Public Cloud Projekt Ihrer Wahl oben links aus.
-
-![Projektauswahl](images/vrack2021-05.png){.thumbnail}
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie auf `Private Network`{.action} im linken Menü.
 
@@ -125,7 +123,7 @@ Um die Konfiguration des vRack über das OVHcloud Kundencenter fortzusetzen, les
 
 #### Über die OVHcloud APIv6
 
-Um ein vRack mit der OVHcloud APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](../public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) des entsprechenden Leitfadens.
+Um ein vRack mit der OVHcloud APIv6 zu aktivieren und zu verwalten, lesen Sie bitte [diesen Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#step-1-activating-and-managing-a-vrack) (EN) des entsprechenden Leitfadens.
 
 ### Schritt 2: Erstellen eines VLAN im vRack
 
@@ -179,7 +177,7 @@ Bestätigen Sie die gewünschten Regionen, geben Sie einen Namen für Ihr privat
 
 #### Erstellen eines VLAN mit der OVHcloud APIv6
 
-Um ein VLAN mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](../public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
+Um ein VLAN mit der OVHCloud APIv6 zu erstellen, folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en//public-cloud/public-cloud-vrack-apiv6/#step-3-creating-a-vlan-in-the-vrack_1) (EN) der entsprechenden Anleitung.
 
 ### Schritt 3: Instanz in das vRack integrieren
 
@@ -203,7 +201,7 @@ Folgen Sie der Anleitung zum [Erstellen einer Public Cloud-Instanz](../public-cl
 
 ##### **Über die OVHcloud APIv6**
 
-Bitte folgen Sie [diesem Abschnitt](../public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN) der entsprechenden Anleitung.
+Bitte folgen Sie [diesem Abschnitt](https://docs.ovh.com/gb/en//public-cloud/public-cloud-vrack-apiv6/#step-4-integrating-an-instance-into-the-vrack_1) (EN) der entsprechenden Anleitung.
 
 ##### **Über die OpenStack APIs**
 
@@ -247,7 +245,7 @@ nova net-list
 ><br> - Die für Ihre Konfiguration erforderliche(n) VLAN(s) 
 >
 
-Beachten Sie auch die folgenden Informationen, wie in der [Anleitung zur Nova API](../starting-with-nova-api/) (EN) beschrieben:
+Beachten Sie auch die folgenden Informationen, wie in der [Anleitung zur Nova API](https://docs.ovh.com/gb/en//public-cloud/starting-with-nova-api/) (EN) beschrieben:
 
 - ID oder Name des OpenStack SSH Keys
 - ID des Instanz-Typs (Flavor)
@@ -410,7 +408,7 @@ Wählen Sie im daraufhin angezeigten Popup-Fenster die privaten Netzwerke aus, d
 
 ##### **Verwaltung der Netzwerkinterfaces über die OVHcloud APIv6**
 
-Lesen Sie [diesen Abschnitt](../public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) der entsprechenden Anleitung.
+Lesen Sie [diesen Abschnitt](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack-apiv6/#in-case-of-an-existing-instance_1) (EN) der entsprechenden Anleitung.
 
 ##### **Verwaltung der Netzwerkinterfaces über OpenStack Horizon**
 

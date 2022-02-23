@@ -20,8 +20,8 @@ Nach einem Dienstausfall erscheinen virtuelle Maschinen nicht mehr in Ihrem vSph
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [vSphere Interface](../den_vsphere_client_installieren/).
-- Sie verfügen über Datastores, die die Dateien der virtuellen Maschinen enthalten.
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um die Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
 
 ## In der praktischen Anwendung
 

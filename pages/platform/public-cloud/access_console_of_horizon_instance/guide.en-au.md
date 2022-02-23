@@ -3,7 +3,7 @@ title: Access the console for an instance in Horizon
 excerpt: This guide will assist accessing the console via the Horizon interface.
 slug: access_console_horizon
 section: Horizon
-order: 3
+order: 12
 ---
 
 
@@ -17,7 +17,7 @@ In the event of loss of access to your instance, wether caused by a configuratio
 >The VNC console can also serve as the first approach for analysis of any boot phase issues on your instance.
 >
 
-## Prerequisites
+## Requirements
 
 - [Configuring user access to Horizon](../configure_user_access_to_horizon/)
 - An already created instance

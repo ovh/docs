@@ -2,7 +2,7 @@
 title: 'Sostituire un disco difettoso'
 slug: sostituzione-disco
 excerpt: 'Scopri come individuare un disco difettoso e chiederne la sostituzione'
-section: 'RAID & dischi'
+section: 'RAID e dischi'
 ---
 
 **Ultimo aggiornamento: 12/07/2018**
@@ -211,4 +211,4 @@ Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dis
 [Rescue Mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
 
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

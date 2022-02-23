@@ -3,7 +3,7 @@ title: Swift Command Memo
 slug: pca/swift-commands-memo
 excerpt: Find here the main swift commands to manage your Public Cloud Archive object containers
 section: Public Cloud Archive
-order: 70
+order: 070
 ---
 
 **Last updated 21st September 2021**

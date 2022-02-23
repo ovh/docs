@@ -165,13 +165,13 @@ Löschen Sie den Schlüssel, der dem Benutzer entspricht, dessen Zugriff entfern
 
 Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, die mit einem der unterstützten Verschlüsselungstypen (derzeit RSA, ECDSA, ED25519) erstellt wurden. 
 
-Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Produkte und Dienstleistungen`{.action}.
+Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Dienstverwaltung`{.action}.
 
-![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 In „Meine Dienste“ wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
-![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Wählen Sie im Dropdown-Menü „Dedicated“ aus.
 

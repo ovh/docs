@@ -3,7 +3,7 @@ title: "Premiers pas avec l'API Swift S3"
 excerpt: "Découvrez comment utiliser l'API Swift S3"
 slug: swift-s3api
 section: Object Storage Standard (Swift)
-order: 20
+order: 020
 ---
 
 **Dernière mise à jour le 22/09/2020**
@@ -23,7 +23,7 @@ Le middleware Swift s3api qui assure la compatibilité de l'API S3 a été activ
 
 ### Définir les variables d'environnement OpenStack
 
- ```bash
+```bash
 user@host:~$ source <user_name>-openrc.sh
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
 

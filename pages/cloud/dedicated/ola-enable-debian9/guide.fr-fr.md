@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 2
 ---
 
-**Dernière mise à jour le 23/03/2021**
+**Dernière mise à jour le 07/01/2022**
 
 ## Objectif
 
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

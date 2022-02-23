@@ -2,8 +2,8 @@
 title: FAQ
 excerpt: 'FAQ für OVHcloud Public Cloud Instanzen'
 slug: public-cloud-faq
-section: 'Erste Schritte'
-order: 3
+section: 'Allgemeine Informationen'
+order: 01
 ---
 
 > [!primary]
@@ -69,7 +69,7 @@ Nein, ein Volume muss zuerst ausgehängt werden, um es vergrößern zu können.
 
 ### Wie viele zusätzliche Volumes kann ich einer Instanz hinzufügen?
 
-Sie können bis zu 26 zusätzliche Volumes an eine Instanz anhängen.
+Sie können bis zu 25 zusätzliche Volumes an eine Instanz anhängen.
 
 ### Wie werden meine Server geschützt?
 

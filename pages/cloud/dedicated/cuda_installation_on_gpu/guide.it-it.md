@@ -1,7 +1,7 @@
 ---
 title: Installare CUDA su un server dedicato GPU
 slug: installare-cuda-su-server-gpu
-section: Altro
+section: Utilizzo avanzato
 ---
 
 **Ultimo aggiornamento: 14/12/2017**
@@ -161,4 +161,4 @@ Wed Nov 1 09:14:38 2017
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

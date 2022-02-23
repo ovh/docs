@@ -4,9 +4,10 @@ excerpt: 'Poner una instancia en modo de rescate'
 slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
+order: 03
 ---
 
-**Última actualización: 26/07/2021**
+**Última actualización: 11/02/2022**
 
 ## Objetivo
 
@@ -30,11 +31,11 @@ En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://www
 
 A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la izquierda de la pantalla y acceda a «Instancias».
 
-![control panel](images/compute.png){.thumbnail}
+![control panel](images/compute2022.png){.thumbnail}
 
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
 
-![control panel](images/rescue1.png){.thumbnail}
+![control panel](images/rescue2022.png){.thumbnail}
 
 Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
 
@@ -73,7 +74,7 @@ Podrá acceder a sus datos desde la carpeta /mnt.
 
 Una vez que haya completado sus tareas, puede desactivar el modo de rescate reiniciando normalmente su instancia. Para hacerlo, haga clic en la flecha desplegable de su instancia y seleccione `«Salir del modo de rescate»`{.action}.
 
-![control panel](images/rescueexit.png){.thumbnail}
+![control panel](images/rescueexit2022.png){.thumbnail}
 
 ### Activar el modo rescate utilizando la API de OpenStack
 

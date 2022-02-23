@@ -1,7 +1,7 @@
 ---
-title: Install Grafana on OVHcloud Managed Kubernetes
+title: Installing Grafana on OVHcloud Managed Kubernetes
 slug: installing-grafana
-excerpt: "Find out how to install Grafana on OVHcloud Managed Kubernetes"
+excerpt: "Find out how to Installing Grafana on OVHcloud Managed Kubernetes"
 section: Tutorials
 ---
 
@@ -81,7 +81,7 @@ persistence:
   - kubernetes.io/pvc-protection
 ```
 
-> [!warn]
+> [!warning]
 > Don't forget to update `[YOUR_INGRESS_URL]`
 
 Save the content above in a file name `values.yml` as we will use it in the next step.

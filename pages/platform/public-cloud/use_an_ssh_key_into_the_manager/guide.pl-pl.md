@@ -5,24 +5,38 @@ slug: zarzazdzanie-kluczami-SSH-w-public-cloud
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-**Ostatnia aktualizacja: 04-12-2019**
+**Ostatnia aktualizacja: 10-02-2022**
 
 ## Wprowadzenie
+
 SSH to protokół umożliwiający dostęp do serwera oraz uwierzytelnioną i zaszyfrowaną komunikację z nim.
+
+**Dowiedz się, jak korzystać z kluczy SSH w Panelu klienta OVHcloud.**
+
+## Wymagania początkowe
+
+- Utworzenie [projektu Public Cloud](https://docs.ovh.com/pl/public-cloud/utworz_projekt_public_cloud/) w Panelu klienta
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [klucz SSH](../public-cloud-pierwsze-kroki/)
+
+
+> [!primary]
+>
+Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
+>
 
 Klucz SSH można dodać w interfejsie Public Cloud na dwa sposoby:
 
 - Pierwsza, bardziej bezpośrednia metoda polega na dodaniu klucza podczas tworzenia instancji.
 - Druga metoda polega na dodaniu klucza z menedżera kluczy SSH.
 
-### Wymagania początkowe
+### Tworzenie instancji
 
-- [klucz SSH](../tworzenie-kluczy-ssh/){.external}
-
-
-## Tworzenie instancji
-Aby utworzyć instancję, w interfejsie klienta Public Cloud kliknij pozycję `Utwórz instancję`{.action} w menu Instancje w sekcji `Środowisko obliczeniowe`{.action} (po lewej stronie).
+Aby utworzyć instancję, w interfejsie klienta Public Cloud kliknij pozycję `Utwórz instancję`{.action} w menu `Instances`{.action} znajduje się w sekcji **Compute** menu z lewej strony.
 
 ![Add a server](images/compute.png){.thumbnail}
 
@@ -36,7 +50,7 @@ Jeśli chcesz dodać klucz, kliknij przycisk `Dodaj klucz`{.action}. W polu „N
 
 ![Add a key](images/addkey.png){.thumbnail}
 
-## Korzystając z narzędzia zarządzania kluczami
+### Korzystając z narzędzia zarządzania kluczami
 
 Po wybraniu pozycji „Klucze SSH” z lewego menu projektu zostanie wyświetlona karta „Klucze SSH”.
 
@@ -48,3 +62,6 @@ Kliknij przycisk `Dodaj klucz`{.action}, a następnie — po wpisaniu nazwy i wk
 
 Klucz będzie dostępny do użycia podczas [tworzenia następnej instancji w chmurze](../rozpoczecie_pracy_z_instancja_public_cloud/){.external}.
       
+## Sprawdź również
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

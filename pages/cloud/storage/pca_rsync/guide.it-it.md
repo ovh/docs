@@ -3,7 +3,7 @@ title: Gestisci i tuoi archivi con Rsync
 slug: pca/rsync
 excerpt: Scopri come accedere ai tuoi archivi Public Cloud con Rsync
 section: Public Cloud Archive
-order: 90
+order: 090
 ---
 
 > [!primary]

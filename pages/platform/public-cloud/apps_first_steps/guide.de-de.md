@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit vorinstallierten Anwendungen
 slug: vorstellige-anwendungen
-excerpt: Erfahren Sie hier, wie Sie auf Ihrem VPS vorinstallierte Anwendungen einrichten
+excerpt: Erfahren Sie hier, wie Sie vorinstallierte Anwendungen auf Instanzen einrichten
 section: Erste Schritte
 ---
 
@@ -137,9 +137,9 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 > [!faq]
 >
 > Kann ich meine eigenen DNS Server verwenden?
->> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com"und "ns2.mydomain.com"wünschen, müssen Sie "GLUE"Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../../domains/glue-registry/#schritt-1-glue-eintrage-hinzufugen). Bitte beachten Sie, dass die Erstellung 24 Stunden dauern kann.
+>> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain “GLUE” Einträge erstellen. Wenn Sie zum Beispiel “ns1.mydomain.com” und “ns2.mydomain.com” wünschen, müssen Sie “GLUE” Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](../../domains/glue-registry/#schritt-1-glue-eintrage-hinzufugen). Bitte beachten Sie, dass die Erstellung 24 Stunden dauern kann.
 > Warum sollte ich das Root-Passwort festlegen?
->> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den root-Benutzer und das von Ihnen definierte Passwort verwenden.
+>> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
 > Wo ist meine Lizenz für cPanel?
 >> OVHcloud bietet derzeit keine Lizenzen für Public Cloud Server außer Windows Lizenzen an. Sie müssen eine Lizenz von einem Drittanbieter für cPanel erwerben. Wenden Sie sich dazu an den cPanel Anbieter.
 
@@ -161,7 +161,7 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 > [!faq]
 >
 > Wo ist meine Plesk-Lizenz?
->> OVHcloud bietet derzeit keine Lizenz für Public Cloud Server außer Windows Lizenzen. Kunden müssen eine Lizenz von einem Drittanbieter für Plesk erwerben. Dazu empfehlen wir Ihnen, direkt mit dem Plesk-Herausgeber zu sprechen.
+>> OVHcloud bietet derzeit keine Lizenzen für Public Cloud Instanzen außer für Windows. Plesk-Lizenzen müssen von einem Drittanbieter bezogen werden. Wenden Sie sich hierzu direkt an einen Anbieter.
 
 ### Virtualmin
 

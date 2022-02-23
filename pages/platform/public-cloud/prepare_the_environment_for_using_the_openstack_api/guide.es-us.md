@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a tr
 section: OpenStack
 ---
 
-**Última actualización: 25/02/2019**
+**Última actualización: 22/12/2021**
 
 ## Objetivo
 
@@ -31,10 +31,16 @@ Actualice la caché de los paquetes con el siguiente comando:
 apt-get update
 ```
 
-Utilice el siguiente comando para instalar los clientes Nova, Glance y Swift:
+Utilice el siguiente comando para instalar los clientes Nova y Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt-get install python-openstackclient python-novaclient python-swiftclient -y
+```
+
+Python3 Versión
+
+```sh
+apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.
@@ -143,6 +149,39 @@ Si la operación se ha realizado correctamente, se mostrará un resumen.
 En el símbolo del sistema puede comprobar la versión instalada introduciendo `python-V` (no importa en qué directorio se encuentre).
 
 ![Verificación](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### En MacOS
+
+Puede utilizar [HomeBrew](https://brew.sh), un gestor de paquetes para MacOS.
+
+Abra el terminal e ejecute el siguiente comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilice los siguientes comandos para instalar los clientes Nova (aplicación de cálculo) y Swift:
+
+Para Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Para Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Para acceder a las herramientas de ayuda, ejecute el siguiente comando:
+
+```sh
+openstack —-help
+nova help
+```
 
 ## Más información
 

@@ -9,7 +9,7 @@ section: 'VMware vSphere Funktionen'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 18.01.2021**
+**Letzte Aktualisierung am 23.12.2021**
 
 ## Ziel
 
@@ -17,9 +17,9 @@ Diese Anleitung erklärt Funktionsweise und Einsatz von vSAN Fault Domains.
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Hosted Private Cloud Angebot](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/)
-- Zugriff auf den [vSphere HTML Client](../den_vsphere_client_installieren/)
-- Sie verfügen über einen vSAN-Cluster mit mindestens 3 Hosts
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um die Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung mit spezifischen Rechten für NSX [erstellt im OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de))
+- Sie haben einen [vSAN Datastore](https://docs.ovh.com/de/private-cloud/vmware-vsan/)
 
 ## In der praktischen Anwendung
 

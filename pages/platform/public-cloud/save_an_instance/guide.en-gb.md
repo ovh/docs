@@ -16,14 +16,14 @@ You can create a backup of your instance at any time via the [OVHcloud Control P
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Creating a backup of an instance
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 
 Next, click on the `...`{.action} button to the right of the instance, then `Create a backup`{.action}.
 

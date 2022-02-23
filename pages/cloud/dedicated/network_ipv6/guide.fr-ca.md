@@ -29,6 +29,8 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 
 En installant votre serveur à l’aide d’un modèle de système d’exploitation Linux fourni par OVHcloud, vous constaterez que la première adresse IPv6 (l'adresse principale) est déjà configurée, prête à l’emploi.
 
+Si vous souhaitez configurer configurer plusieurs adresses IPv6 sur votre serveur (ou si vous souhaitez l’utiliser sur une VM) vous devez disposer d’une IP fail-over configurée avec une vMAC. Dans le cas contraire, l'IPv6 ne pourra pas être routée par nos routeurs/switchs.
+
 > [!primary]
 >
 > La passerelle par défaut de votre bloc IPv6 (IPv6_GATEWAY) demeure xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
@@ -62,7 +64,7 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -117,7 +119,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
@@ -168,7 +170,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -214,7 +216,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -271,7 +273,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Étape 1 : Utiliser RDP pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 
 #### Étape 2 : Ouvrir la configuration réseau de votre serveur
@@ -309,4 +311,4 @@ Si vous rencontrez toujours des problèmes après avoir testé votre connexion, 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

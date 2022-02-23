@@ -16,7 +16,7 @@ order: 2
 
 A criação de um [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) em modo simples ou avançado pode causar várias anomalias.
 
-**Saiba como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique**
+**Descubra como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique**
 
 > [!warning]
 >
@@ -55,7 +55,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
+As ofertas [Alojamento Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) e [Alojamento Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) permitem-lhe criar até três módulos em 1 clique suplementares. As ofertas **Alojamento Performance** permitem-lhe também ativar gratuitamente um [servidor CloudDB](https://www.ovh.pt/cloud/cloud-databases/).
 
 #### Solução n°2: eliminar uma base de dados não utilizada <a name="delete-database"></a>
 
@@ -145,11 +145,11 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 > Não poderemos prestar-lhe assistência nesta matéria.
 >
 
-### "Can't connect to database 'test' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
+### "Can't connect to database 'test' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor SQL privado](../sql-privado-primeira-utilizacao/). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
 
 Nesta situação, modifique os [direitos do utilizador](../criar-bases-de-dados-e-utilizadores/#gerir-as-permissoes-dos-utilizadores) em causa para que possa usufruir dos direitos **Administrador** ou em **Leitura/Escrita** com base de dados.
 
@@ -159,7 +159,7 @@ Verifique também as suas credenciais ao [ligar diretamente](../conexao-base-de-
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor SQL privado](../sql-privado-primeira-utilizacao/). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
 
 Clique na parte `Web cloud`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), depois no separador `Bases de dados`{.action} à esquerda do seu ecrã.
 

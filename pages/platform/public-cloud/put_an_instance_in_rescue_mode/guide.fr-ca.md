@@ -7,7 +7,7 @@ section: "Gestion depuis l'espace client"
 order: 3
 ---
 
-**Dernière mise à jour le 26/07/2021**
+**Dernière mise à jour le 11/02/2022**
 
 ## Objectif
 
@@ -31,11 +31,11 @@ Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ov
 
 Cliquez ensuite sur l'onglet `Instances`{.action} dans la barre de navigation à gauche.
 
-![tableau de bord](images/compute.png){.thumbnail}
+![tableau de bord](images/compute2022.png){.thumbnail}
 
 Cliquez ensuite sur `...`{.action} à droite de l'instance et sélectionnez `Redémarrer en mode rescue`{.action}.
 
-![tableau de bord](images/rescue1.png){.thumbnail}
+![tableau de bord](images/rescue2022.png){.thumbnail}
 
 Vous allez maintenant voir la boîte de dialogue « Démarrer en mode rescue ». Cliquez sur la liste déroulante pour sélectionner la distribution Linux que vous souhaitez utiliser en mode rescue, puis cliquez sur le bouton `Redémarrer`{.action}.
 
@@ -73,7 +73,7 @@ Vos données seront maintenant accessibles depuis le dossier /mnt.
 
 Une fois vos tâches terminées, vous pouvez désactiver le mode rescue en redémarrant votre instance depuis l'espace client. Pour cela, cliquez sur `...`{.action} et sélectionnez `Sortir du mode rescue`{.action}.
 
-![tableau de bord](images/rescueexit.png){.thumbnail}
+![tableau de bord](images/rescueexit2022.png){.thumbnail}
 
 ### Activer le mode rescue avec les API OpenStack
 

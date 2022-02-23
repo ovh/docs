@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 14/01/2020**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -42,7 +42,7 @@ Une fois tous les éléments en votre possession, la récupération de vos fichi
 
 - **utiliser un logiciel compatible avec le protocole FTP ou SFTP** : vous devrez installer un logiciel compatible sur votre ordinateur, comme [ FileZilla ](../mutualise-guide-utilisation-filezilla/). Nous vous invitons à vous rapprocher de l'éditeur du logiciel installé si vous souhaitez obtenir de l'aide sur son utilisation, OVHcloud n'ayant pas créé celui-ci ;
 
-- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées, ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
+- **utiliser un accès SSH** : vous devrez utiliser des commandes depuis un terminal pour interagir avec votre espace de stockage. Des connaissances plus avancées ainsi qu'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d'accès. Pour plus d'informations, vous pouvez consulter notre guide  [« Utiliser l’accès SSH de son hébergement web»](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 
 #### 1.2 Télécharger les fichiers depuis votre espace de stockage.
 
@@ -62,20 +62,17 @@ Pour vérifier le dossier dans lequel votre site internet est stocké, positionn
 Pour récupérer une sauvegarde de votre base de données, consultez notre guide :
 [« Récupérer la sauvegarde de la base de données d’un hébergement web »](../exportation-bases-donnees/){.external}.
 
-Si vous utilisez une base de données **SQL privé** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
-[« Tout sur le SQL privé »](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
+Si vous utilisez une base de données **CloudDB** pour votre site Web, consultez la section dédiée à la sauvegarde sur notre guide :
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/){.external}.
 
 ### Étape 3 : récupérer les logs de votre hébergement OVHcloud
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`{.action} puis sur`Statistiques et logs`{.action}.
+Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 
-Cliquez ensuite sur le lien sous la mention **Logs** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
 
@@ -101,12 +98,12 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-[Utilisation logiciel FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
 
 [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](../exportation-bases-donnees/){.external}.
 
-[Tout sur le SQL privé](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external}.
+[Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

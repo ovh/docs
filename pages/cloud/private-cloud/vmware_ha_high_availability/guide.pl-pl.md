@@ -5,7 +5,7 @@ excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
 legacy_guide_number: '2163279'
 space_key: VS
 space_name: vSphere as a Service
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 02
 ---
 

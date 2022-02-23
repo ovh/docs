@@ -2,7 +2,7 @@
 title: S3/Swift REST API compatibility
 slug: object-storage-standard-s3-and-swift-rest-api-compatibility
 section: Object Storage Standard (Swift)
-order: 30
+order: 030
 ---
 **Last updated 27th October 2021**
 

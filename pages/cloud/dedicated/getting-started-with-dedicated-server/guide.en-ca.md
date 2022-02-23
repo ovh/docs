@@ -18,9 +18,9 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
-- administrative access (root) via SSH or remote desktop (Windows) to your server
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
+- Administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
 ## Instructions
@@ -74,9 +74,9 @@ If you are installing a GNU/Linux-based based operating system, you can add your
 
 If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
-To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
+To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
 
-![Customise the partition configuration](images/SSH_13.png){.thumbnail}
+![Customise the partition configuration](images/SSH_13.1.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 

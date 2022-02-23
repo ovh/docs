@@ -22,9 +22,9 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
+- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
 ## Instructions
 
@@ -50,7 +50,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) for free.
+With the [Professional](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -140,11 +140,11 @@ If you don't have any other databases and you don't want to order an additional 
 > We will not be able to assist you with this.
 >
 
-### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.privatesql'. The error is: Access denied for user 'xxxx'@'xxxxxx' (using password: YES)"
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#basic-module-installation) on a database located on a [CloudDB server](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the user logged in during the installation does not have sufficient rights to the database, or that the credentials entered are incorrect.
 
 In this situation, first modify the [user rights](../create-databases-and-users/#managing-user-rights) concerned, so that they have **Administrator** or **Read/write** rights on the database.
 
@@ -154,7 +154,7 @@ You can also verify your login details by [connecting directly](../connecting-to
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [private SQL server](../getting-started-with-private-sql/) or [CloudDB](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
+You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [CloudDB server](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
 
 Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
 

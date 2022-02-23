@@ -2,8 +2,8 @@
 title: Preguntas frecuentes
 excerpt: FAQ para las instancias Public Cloud de OVHcloud
 slug: public-cloud-faq
-section: Primeros pasos
-order: 11
+section: Información general
+order: 01
 ---
 
 **Última actualización: 06/09/2021**
@@ -48,7 +48,7 @@ Para pasar de un modo de facturación a otro, consulte nuestra guía [Cambiar de
 
 ## ¿Cómo puedo escalar mis instancias si necesito más o menos recursos?
 
-Cualquier instancia puede redimensionarse hacia una instancia más potente de la misma gama desde el área de cliente, haciendo clic en el botón `Editar` {.action} en la página de la instancia. También es posible redimensionar la migración hacia un modelo inferior, si se ha iniciado con la opción "flex". Esta opción impone un tamaño de disco de 50 GB para todos los modelos, permitiendo así redimensionamientos en ambos sentidos.
+Cualquier instancia puede redimensionarse hacia una instancia más potente de la misma gama desde el área de cliente, haciendo clic en el botón `Editar`{.action} en la página de la instancia. También es posible redimensionar la migración hacia un modelo inferior, si se ha iniciado con la opción "flex". Esta opción impone un tamaño de disco de 50 GB para todos los modelos, permitiendo así redimensionamientos en ambos sentidos.
 En cualquier caso, el redimensionamiento de una instancia requiere un reinicio.
 
 ### ¿Las instancias de Public Cloud son compatibles con cloud-init?
@@ -67,7 +67,7 @@ No, es necesario desvincular un volumen antes de poder aumentarlo.
 
 ## ¿Cuántos volúmenes adicionales puedo asociar a cada instancia?
 
-Puede asociar hasta 26 volúmenes adicionales por instancia.
+Puede asociar hasta 25 volúmenes adicionales por instancia.
 
 ## ¿Cómo están protegidos mis servidores?
 

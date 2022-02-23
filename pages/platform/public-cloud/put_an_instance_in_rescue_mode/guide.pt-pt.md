@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
-**Última atualização: 26/07/2021**
+**Última atualização: 11/02/2022**
 
 ## Sumário
 
@@ -18,23 +18,23 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 
 ## Requisitos
 
-* uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+* uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
+* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * acesso administrativo (root) à sua instância via SSH
 
 ## Instruções
 
 ### Ativar o modo rescue
 
-Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Public Cloud`{.action}.
+Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Public Cloud`{.action}.
 
 Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 
-![área de cliente](images/compute.png){.thumbnail}
+![área de cliente](images/compute2022.png){.thumbnail}
 
 Clique nos três pontos situados à direita da instância e selecione a opção `Reiniciar em modo rescue`{.action}.
 
-![área de cliente](images/rescue1.png){.thumbnail}
+![área de cliente](images/rescue2022.png){.thumbnail}
 
 Surgirá então a janela que lhe permite executar esta ação. Clique na lista pendente para selecionar a distribuição Linux que deseja usar em modo rescue e clique no botão `Reiniciar`{.action}. 
 
@@ -73,7 +73,7 @@ A sua informação estará agora disponível a partir da pasta /mnt.
 
 Após concluir as suas tarefas, pode desativar o modo rescue reiniciando normalmente a sua instância. Para o fazer, clique na seta voltada para baixo na sua instância e selecione `Sair do modo rescue`{.action}.
 
-![área de cliente](images/rescueexit.png){.thumbnail}
+![área de cliente](images/rescueexit2022.png){.thumbnail}
 
 ### Ativar o modo rescue usando a API OpenStack
 

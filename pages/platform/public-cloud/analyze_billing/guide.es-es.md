@@ -1,9 +1,9 @@
 ---
 title: 'Información sobre el tipo de facturación cloud'
 slug: informacion-sobre-el-tipo-de-facturacion-cloud
-section: 'Información general'
+section: 'Gestión del proyecto'
 excerpt: 'Cómo interpretar la facturación de las soluciones Public Cloud'
-order: 2
+order: 02
 ---
 
 **Última actualización: 21/09/2021**
@@ -64,7 +64,7 @@ El importe total será de 20,97 euros.
 
 ### Consultar una factura
 
-Para consultar las facturas de un proyecto, acceda al universo `Public Cloud`{.action} (1) del área de cliente de OVHcloud y seleccione el proyecto cloud correspondiente en el menú de la izquierda (2). A continuación, acceda a la sección `Billing Control`{.action} (3) y seleccione `Historial`{.action} (4).
+Para consultar las facturas de un proyecto, acceda al universo `Public Cloud`{.action} del área de cliente de OVHcloud y seleccione el proyecto cloud correspondiente en el menú de la izquierda. A continuación, acceda a la sección `Billing Control`{.action} y seleccione `Historial`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 
@@ -199,4 +199,4 @@ El almacenamiento de archivos tiene en cuenta tres elementos:
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -5,20 +5,35 @@ legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
 ---
 
-**Ultimo aggiornamento: 12/07/2018**
+**Ultimo aggiornamento: 28/01/2022**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
-CloudDB consente di usufruire di un’istanza database, con risorse dedicate e garantite. Questo servizio offre maggiori performance e flessibilità, per venire incontro a clienti con esigenze specifiche.
+La soluzione CloudDB permette di usufruire di un'istanza di database, le cui risorse sono dedicate e garantite che ti offrono prestazioni e flessibilità.
+La soluzione CloudDB è associata di default alla rete di hosting Web OVHcloud. È possibile associarla a qualsiasi altra rete tramite una lista di indirizzi IP autorizzati.
 
 **Scopri come iniziare a utilizzare la soluzione CloudDB**. 
 
 ## Prerequisiti
 
-- Disporre di un’[istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external}
+- Disporre di un’[istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa nelle soluzioni di [hosting Web performance](https://www.ovhcloud.com/it/web-hosting/))
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
+
+### Attiva il tuo server CloudDB incluso con la tua offerta di hosting Web
+
+Se la tua offerta di hosting include l'opzione CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+
+Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
+
+![Informazioni generali](images/db-activation.png){.thumbnail}
+
+Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server CloudDB. e sarà accessibile dalla colonna di sinistra nel `Database`{.action}.
 
 ### Visualizza le informazioni generali dell'istanza
 
@@ -143,19 +158,27 @@ A questo punto scegli se applicare o meno le seguenti opzioni aggiuntive, poi cl
 
 ![Clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autorizza un indirizzo IP
+### Autorizza un indirizzo IP <a name="trustip"></a>
 
 Affinché l’accesso alla tua istanza CloudDB funzioni correttamente, è fondamentale indicare gli IP o i blocchi di IP che possono connettersi ai tuoi database. Per fare ciò, clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungere un IP/mask`{.action}.
 
-![Clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `IP/mask`{.action} e poi, se vuoi, aggiungi una descrizione. Decidi se vuoi fornire un accesso soltanto ai database o anche via SFTP. Infine clicca su `Conferma`{.action}.
 
 ![Clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+### Autorizza la connessione a un hosting Web OVHcloud <a name="trustip"></a>
+
+Di default, la soluzione CloudDB è automaticamente associata agli hosting Web OVHcloud. Se necessario, è possibile disattivare l'accesso degli hosting Web OVHcloud al database CloudDB.
+
+Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Accesso agli hosting Web OVHcloud`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+
 ### Collega il tuo sito al database
 
-Ora che il tuo database è stato creato e che uno o più utenti dispongono dei permessi necessari per effettuare l’accesso, non resta che collegare il sito al database. Questa operazione si può eseguire in diversi modi, a seconda del sito e del CMS utilizzato (WordPress, Joomla!, ecc…) o, in caso in cui tu stia installando un sito, dello step in cui ti trovi.
+Una volta creato il database, che uno o più utenti dispongono dei diritti su quest'ultima e che sull'istanza CloudDB sono stati autorizzati almeno un indirizzo IP o gli hosting Web OVHcloud, non resta che collegare il sito al database. Questo step può essere effettuato in diversi modi, in base al sito o al CMS utilizzato (WordPress, Joomla!, ecc...) e allo step in cui ti trovi se installi un sito Web.
 
 In ogni caso, è necessario disporre di queste cinque informazioni:
 
@@ -174,6 +197,30 @@ In ogni caso, è necessario disporre di queste cinque informazioni:
 
 ![Clouddb](images/clouddb-login-information.png){.thumbnail}
 
+### Recupera i log del tuo server CloudDB
+
+Per verificare gli ultimi log del tuo database, accedi alla scheda `Logs`{.action} del tuo server CloudDB. Questa scheda mostra in tempo reale gli alert e gli errori.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Per recuperare tutti i log del tuo server CloudDB, accedi via SFTP a quest'ultimo.
+
+> [!warning]
+>
+> Prima di connetterti verifica che l'indirizzo IP della postazione utilizzata sia autorizzato sul tuo server CloudDB, con l'opzione `SFTP` selezionata. Per maggiori informazioni, consulta la sezione [Autorizza la connessione a un hosting Web OVHcloud](#trustip) di questa guida.
+
+Le informazioni di connessione SFTP sono disponibili nella scheda `Informazioni generali`{.action} del tuo server CloudDB. Se non ricordi la `password del server`, clicca sul pulsante `...`{.action} a destra per modificarlo.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Accedi tramite un client FTP (FileZilla, Cyberduck, WinSCP, ecc...).
+
+Per FileZilla, nel menu `File`{.action}, vai al `Gestionale di siti`{.action}. Clicca su `Nuovo sito`{.action} e inserisci le impostazioni rilevate precedentemente.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+Il file di log, chiamato `stdout.log`, si trova alla radice.
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
