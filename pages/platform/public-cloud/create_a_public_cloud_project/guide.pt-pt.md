@@ -27,8 +27,6 @@ A criação de um projeto é a primeira etapa na implantação de [instâncias P
 
 Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e clique no menu `Public Cloud`{.action}. Em seguida, clique em `Crie o seu primeiro projeto Public Cloud da OVH`{.action}.
 
-![first connection](images/firstconnection.png){.thumbnail}
-
 Agora você pode adicionar um *voucher* se tiver um. Somente um comprovante fornecido para a sua ramificação de nuvem OVHcloud pode ser usado.
 
 > [!warning]

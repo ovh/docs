@@ -41,12 +41,12 @@ Tryb Rescue można włączyć tylko w Panelu [klienta OVHcloud](https://www.ovh.
 
 Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}.
 
-![Zmień tryb uruchamiania](images/rescue-mode-01.png){.thumbnail}
+![Zmień tryb uruchamiania](images/rescue-mode-001.png){.thumbnail}
 
 Na następnym ekranie wybierz **Uruchom w trybie diagnostycznym (Rescue)**. Jeśli Twój serwer posiada system operacyjny Linux, na rozwijanej liście wybierz `rescue64-pro`{.action}. Jeśli Twój serwer znajduje się w systemie Windows, wybierz `WinRescue`{.action} (patrz [sekcja przewodnika poniżej](#windowsrescue)). Określ inny adres e-mail, jeśli nie chcesz, aby dane do logowania zostały wysłane na główny adres Twojego konta OVHcloud.
 <br>Kliknij `Dalej`{.action} i `Zatwierdź`{.action}.
 
-![Tryb Rescue-Pro](images/rescue-mode-03.png){.thumbnail}
+![Tryb Rescue-Pro](images/rescue-mode-003.png){.thumbnail}
 
 Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w strefie zatytułowanej **Status usług**.
 <br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.

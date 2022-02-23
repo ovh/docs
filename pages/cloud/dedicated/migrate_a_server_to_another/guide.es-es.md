@@ -28,9 +28,9 @@ Como sus necesidades y las gamas de OVHcloud evolucionan constantemente, es nece
 
 ## Requisitos
 
-- dos servidores dedicados (uno antiguo y otro nuevo) con el sistema operativo instalado
-- acceso administrativo a sus servidores
-- competencias de administración del sistema
+- Dos servidores dedicados (uno antiguo y otro nuevo) con el sistema operativo instalado
+- Acceso administrativo a sus servidores
+- Competencias de administración del sistema
 
 ## Procedimiento
 

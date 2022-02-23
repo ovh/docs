@@ -96,7 +96,7 @@ You must also add a routing configuration.
 
 ##### **Adding a routing configuration**
 
-Click on the `...`{.action} button on the desired data centre then on `Add routing configuration`{.action} configuration.
+Click on the `...`{.action} button on the desired data centre then on `Add routing configuration`{.action}.
 
 ![add datacentre](images/l3dc2.png){.thumbnail}
 

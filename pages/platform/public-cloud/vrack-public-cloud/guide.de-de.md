@@ -50,7 +50,7 @@ Dieses umfassende technische Interface erlaubt es Ihnen, fast alle Aktionen in O
 Lesen Sie die [Anleitung zu Horizon](../erstellung_eines_zugangs_zu_horizon/), um sich mit dem Interface vertraut zu machen.
 
 > [!primary]
-> Horizon mit Zonenfunktion: Denken Sie daran, Ihr geografisches Arbeitsgebiet ganz oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...)
+> Horizon mit Zonenfunktion: Denken Sie daran, Ihre Arbeitszone oben links in Ihrem Interface zu wählen (GRA5, SBG3, BHS1...).
 >
 
 ### OVHcloud APIv6
@@ -109,9 +109,7 @@ Sobald das vRack aktiv ist, finden Sie diesen Dienst unter der Bezeichnung "pn-x
 
 #### Über das OVHcloud Kundencenter
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie dann das Public Cloud Projekt Ihrer Wahl oben links aus.
-
-![Projektauswahl](images/vrack2021-05.png){.thumbnail}
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie auf `Private Network`{.action} im linken Menü.
 

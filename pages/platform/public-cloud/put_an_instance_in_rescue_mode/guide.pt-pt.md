@@ -30,7 +30,7 @@ Primeiro, inicie sessão na [Área de Cliente OVHcloud](https://www.ovh.com/auth
 
 Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 
-![área de cliente](images/compute2022.PNG){.thumbnail}
+![área de cliente](images/compute2022.png){.thumbnail}
 
 Clique nos três pontos situados à direita da instância e selecione a opção `Reiniciar em modo rescue`{.action}.
 

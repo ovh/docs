@@ -25,7 +25,7 @@ Configuring the reverse DNS resolution for an instance is especially useful when
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), switch to the `Bare Metal Cloud`{.action} section and click on `IP`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open the `IP`{.action} section in the left-hand menu.
 
 In the table on this page, your eligible services will be listed. You can filter for your Public Cloud project ID using the drop-down menu under **Services**.
 

@@ -22,17 +22,13 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 * Administrative (root) access to your instance via SSH (for Linux only)
 * Administrative access to your instance via RDP (for Windows only)
 
-## Intructions
+## Instructions
 
-### Using the OVH Control Panel
+### Using the OVHcloud Control Panel.
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and open your `Public Cloud`{.action} project.
 
-When you’ve found your project in the list, click it and then select the `Infrastructure`{.action} tab.
-
-![control panel](images/increase-disk-01.png){.thumbnail}
-
-Locate your instance in your project and then click the the additional disk attached to it.
+Locate your Block Storage disk under "Storage" section on the left-hand sidebar.
 
 ![control panel](images/increase-disk-02.png){.thumbnail}
 

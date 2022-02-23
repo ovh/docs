@@ -24,9 +24,7 @@ Horizon ist die grafische Verwaltungsoberfläche für OpenStack. Bestimmte Funkt
 
 ### Schritt 1: Ein OpenStack Benutzerkonto erstellen
 
-Um auf das Horizon-Interface zugreifen zu können, müssen Sie zunächst ein OpenStack-Benutzerkonto erstellen. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Projektnamen in der linken Menüleiste.
-
-![Add user](images/select_project.png){.thumbnail}
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Wählen Sie in der linken Menüleiste `Users & Roles`{.action} unter „Project Management“.
 

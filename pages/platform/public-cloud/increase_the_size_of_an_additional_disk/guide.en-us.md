@@ -27,9 +27,7 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ### Using the OVHcloud Control Panel.
 
-In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
-
-![control panel](images/select_project.png){.thumbnail}
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and open your `Public Cloud`{.action} project.
 
 Locate your Block Storage disk under "Storage" section on the left-hand sidebar.
 

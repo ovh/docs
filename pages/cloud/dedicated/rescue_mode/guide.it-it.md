@@ -42,13 +42,13 @@ La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](ht
 
 Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
 
-![Modifica la modalità di avvio](images/rescue-mode-01.png){.thumbnail}
+![Modifica la modalità di avvio](images/rescue-mode-001.png){.thumbnail}
 
-Nella finestra successiva seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue64-pro`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
+Nella pagina successiva, seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue64-pro`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
 Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
-<br>Clicca su `Continua`{.action} e `Conferma`{.action}.
+<br>Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
 
-![Modalità Rescue Pro ](images/rescue-mode-03.png){.thumbnail}
+![Modalità Rescue Pro ](images/rescue-mode-003.png){.thumbnail}
 
 Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza della voce "Stato" nella sezione intitolata **Stato dei servizi**.
 <br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.

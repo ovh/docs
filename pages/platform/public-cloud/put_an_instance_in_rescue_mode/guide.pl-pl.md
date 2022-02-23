@@ -30,7 +30,7 @@ Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?act
 
 Następnie wybierz projekt Public Cloud z menu bocznego po lewej stronie ekranu i przejdź do pozycji Instancje.
 
-![control panel](images/compute2022.PNG){.thumbnail}
+![control panel](images/compute2022.png){.thumbnail}
 
 Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie ratunkowym`{.action}.
 

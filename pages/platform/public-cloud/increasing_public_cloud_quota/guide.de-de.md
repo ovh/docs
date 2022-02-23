@@ -38,7 +38,7 @@ Sie können Ihre Ressourcenquote manuell oder automatisch erhöhen.
 
 Dieses Verfahren ermöglicht Ihnen, eine Quotenerhöhung manuell anzufordern und mit einer Vorauszahlung (Public Cloud Credit) zu bestätigen.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Public Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
