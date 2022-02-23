@@ -26,8 +26,6 @@ Das Erstellen eines Projekts ist die Voraussetzung, um [Public Cloud Instanzen](
 
 Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und klicken Sie auf `Erstellen Sie Ihr erstes OVH Public Cloud Projekt`{.action}.
 
-![first connection](images/firstconnection.png){.thumbnail}
-
 Sie können jetzt einen Gutschein hinzufügen, falls vorhanden. Beachten Sie, dass Gutscheine niederlassungsabhängig sind (OVHcloud Subsidiary).
 
 > [!warning]

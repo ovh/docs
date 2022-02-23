@@ -26,7 +26,7 @@ Sie können hierzu ein oder mehrere Projekte an andere OVHcloud Kundenkennungen 
 
 ### Schritt 1: Ein Projekt auswählen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Wechseln Sie nun mit Klick auf `Contacts and Rights`{.action} links unter "Project Management" zur Sektion "Kontakte und Berechtigungen".
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Wechseln Sie nun mit Klick auf `Contacts and Rights`{.action} links unter "Project Management" zur Sektion "Kontakte und Berechtigungen".
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
 

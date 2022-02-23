@@ -20,9 +20,9 @@ Este mecanismo es similar al de algunos operadores telefónicos que facturan a f
 
 ## Requisitos
 
-* Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
-* Una [instancia Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/){.external}.
-* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
+- Una [instancia Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/){.external}.
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Principio general
 
@@ -63,7 +63,7 @@ El importe total será de 20,97 euros.
 
 ### Consultar una factura
 
-Para consultar las facturas de un proyecto, acceda al universo `Public Cloud`{.action} (1) del área de cliente de OVHcloud y seleccione el proyecto cloud correspondiente en el menú de la izquierda (2). A continuación, acceda a la sección `Billing Control`{.action} (3) y seleccione `Historial`{.action} (4).
+Para consultar las facturas de un proyecto, acceda al universo `Public Cloud`{.action} del área de cliente de OVHcloud y seleccione el proyecto cloud correspondiente en el menú de la izquierda. A continuación, acceda a la sección `Billing Control`{.action} y seleccione `Historial`{.action}.
 
 ![public-cloud](images/pci-billing-information1-2021.png){.thumbnail}
 

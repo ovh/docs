@@ -20,8 +20,8 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} or [Horizon interface](https://docs.ovh.com/au/en/public-cloud/configure_user_access_to_horizon/)
+- An [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) on hourly billing
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} or [Horizon interface](https://docs.ovh.com/au/en/public-cloud/configure_user_access_to_horizon/)
 - Knowledge of [Openstack API](https://docs.ovh.com/au/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) and [Openstack variables](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
@@ -45,7 +45,7 @@ This option will allow you to release the resources dedicated to your Public Clo
 
 #### From the OVHcloud Control Panel
 
-In the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu.
+In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left side menu.
 
 Click on the `...`{.action} button to the right of the instance you want to suspend, then click on `Suspend`{.action}.
 
@@ -113,7 +113,7 @@ This option will allow you to re-up your instance so that you can continue using
 
 #### From the OVHcloud Control Panel
 
-In the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu.
+In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
 Click on the `...`{.action} button to the right of the instance, then click on `Reactivate`{.action}.
 
@@ -149,7 +149,7 @@ This option will allow you to shutdown your instance and store the VM state on d
 
 #### From the OVHcloud Control Panel
 
-In the OVHcloud Control Panel, click on the `Public Cloud`{.action} section menu, select your Public Cloud project and click on `Instances`{.action} in the left side menu.
+In the OVHcloud Control Panel, select your project from the `Public Cloud`{.action} section and click on `Instances`{.action} in the left side menu.
 
 Click on the `...`{.action} button to the right of the instance you want to stop, then click on `Stop`{.action}.
 

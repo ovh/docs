@@ -52,9 +52,7 @@ Der Vorgang muss in beiden Konten bestätigt werden.
 
 Zu diesem Zweck wechseln Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/contacts/services) zum Bereich "Verwaltung der Kontakte".
 
-![](images/controlpanel.png){.thumbnail}
-
- Klicken Sie dort auf `Meine Anfragen`{.action} (in beiden Kundenkennungen).
+Klicken Sie dort auf `Meine Anfragen`{.action} (in beiden Kundenkennungen).
 
 ![](images/controlpanel1.png){.thumbnail}
 

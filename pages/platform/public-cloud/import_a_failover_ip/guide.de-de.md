@@ -28,11 +28,9 @@ Im OVHcloud Kundencenter können Sie eine Failover-IP-Adresse, die mit einem and
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
 Klicken Sie auf `Failover IP`{.action} im Abschnitt „Network“.
-
-![IP-Bereich](images/import.png){.thumbnail}
 
 Klicken Sie nun auf `Failover IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die importiert werden können.
 
