@@ -28,9 +28,7 @@ Instead oy buying additional ones, you can import a failover IP address that is 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select `Failover IP`{.action} in the "Network" section.
-
-![IP Section](images/import.png){.thumbnail}
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and open your `Public Cloud`{.action} project. Then select `Failover IP`{.action} in the "Network" section.
 
 Click on `Import a failover IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
 

@@ -24,7 +24,7 @@ Sie können jederzeit über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth
 
 ### Ein Backup einer Instanz erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken anschließend im linken Menü auf `Instances`{.action}.
 
 Klicken Sie dann auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 

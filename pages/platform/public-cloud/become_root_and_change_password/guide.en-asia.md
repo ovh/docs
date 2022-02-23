@@ -13,7 +13,7 @@ order: 5
 
 To perform certain administrative functions on your server (e.g. installing packages), you'll need to have a high level of user access. On Linux servers, this access is called "root".
 
-**This guide will show you how to become the root user and create a password for the root account.**
+**This guide explains how to become the root user and create a password for the root account.**
 
 ## Requirements
 
@@ -67,7 +67,7 @@ Next, enter the root password.
 
 #### For connections via the built-in VNC console in the OVHcloud Control Panel
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, access the VNC console on the manager:
 
@@ -81,7 +81,7 @@ Switch to the tab `VNC console`{.action}. At the command prompt, enter your logi
 
 #### For connections using Linux terminals
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
@@ -101,7 +101,7 @@ Once done, you should be able to access your server with the root user and passw
 
 #### For connections using Putty
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, enable root login and password authentication in your **sshd_config** file:
 

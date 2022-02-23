@@ -29,7 +29,7 @@ This can be useful in cases where:
 
 ### Attaching a new volume
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open your `Public Cloud`{.action} project. Then open `Block Storage`{.action} in the left-hand menu.
 
 In this section, click on the button `Create a volume`{.action}.
 

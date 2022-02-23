@@ -48,9 +48,7 @@ Debe confirmar este procedimiento en ambas cuentas.
 
 ## Confirmación
 
-Para ello, acceda a las propiedades de su cuenta y seleccione «Mis contactos» en el lado derecho:
-
-![cambiar-contactos](images/controlpanel.png){.thumbnail}
+Para ello, acceda a las propiedades de su cuenta y seleccione «Mis contactos» en el lado derecho.
 
 En ambos paneles de control de contactos, acceda a la sección «Mis solicitudes»:
 
