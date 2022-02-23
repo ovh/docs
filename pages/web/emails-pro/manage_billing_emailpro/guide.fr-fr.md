@@ -59,7 +59,7 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre plateforme puis cl
 
 Depuis la fenêtre de gestion de votre plateforme E-mail Pro, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Résilier`{.action}. 
 
-![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >
