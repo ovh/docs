@@ -67,37 +67,41 @@ You can pick and choose widget to be displayed.
 
 ### Troubleshoot
 
-The Troubleshoot section
+The Troubleshoot section is your alert and log repository. There, you will be able to see and dig into the problems you're experiencing. Contextual links to documentation and fixes are also provided.
 
 ![](images/en07troubleshoot.png){.thumbnail}
 
 ### Optimize
 
-The Optimize section
+The Optimize section gives you an insight and recommandations on the Capacity of your infrastructure. The monitoring analysis performed by vROPS displays usage and right-sizing info to enable you to scale your environment.
 
 ![](images/en08optimize.png){.thumbnail}
 
 ### Plan
 
-The Plan section
+The Plan section gives you trend and capacity management tools so you can future proof your infrastructure.<br>
+Cost analysis and planning is also helpful for budgeting purposes.
 
 ![](images/en09plan.png){.thumbnail}
 
 ### Configure
 
-The Configure section
+The Configure section defines your metrics and threshold reactions through policies and alerts.<br>
+You will be able to set up groups, profile, policies and/or alerts and appropriate response to tailor your infrastructure needs.
 
 ![](images/en10configure.png){.thumbnail}
 
 ### Automation
 
-The Automation section
+The Automation section schedules one time or scheduled maintenance jobs.<br>
+Those jobs can be assigned to single or multiple objects over multiple spaces.
 
 ![](images/en11automation.png){.thumbnail}
 
 ### Administration
 
-The Administration section
+The Administration section pilots vROPS access and data clollection.<br>
+This is where you can create specific vROPS accounts to be used. 
 
 ![](images/en12administration.png){.thumbnail}
 
