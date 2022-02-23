@@ -6,7 +6,7 @@ section: Concepts
 order: 1
 ---
 
-**Last updated 14<sup>th</sup> July, 2021**
+**Last updated 23<sup>th</sup> February, 2021**
 
 
 ## Objective 
@@ -19,9 +19,11 @@ In this document, we list all the features currently supported by the Data Proce
 
 At this moment, OVHcloud Data Processing supports the following engines:
 
-  - Spark 3.2.0
-  - Spark 3.0.1
-  - Spark 2.4.3 
+  - Spark 3.2.1 (Scala 2.13.7)
+  - Spark 3.1.3 (Scala 2.12.4)
+  - Spark 3.0.3 (Scala 2.12.4)
+  - Spark 3.0.1 (Scala 2.12.4)
+  - Spark 2.4.3 (Scala 2.12.4)
 
 It is not possible to interact with Apache Spark cluster via command line.  
 
