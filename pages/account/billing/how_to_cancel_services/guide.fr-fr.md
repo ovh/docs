@@ -82,7 +82,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 &emsp;&emsp;[SMS](#sms)<br />
 &emsp;&emsp;[FAX](#fax)<br />
 
-[Offres transverses](#transversal)<br />
+[Solutions transverses](#transversal)<br />
 &emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
@@ -292,7 +292,7 @@ Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une dema
 
 Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-fax).
 
-### Offres transverses <a name="transversal"></a>
+### Solutions transverses <a name="transversal"></a>
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
