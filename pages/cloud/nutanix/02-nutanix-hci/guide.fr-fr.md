@@ -115,7 +115,7 @@ Pour avoir ce résumé dans l'encadré en haut il faut cliquer sur **Diagram**.
 
 ## Aller plus loin
 
-Site très interessant sur le fonctionnement de NUTANIX [The nutanix BIBLE](https://www.nutanixbible.com/)
+Site très interessant sur le fonctionnement de NUTANIX [https://www.nutanixbible.com/](https://www.nutanixbible.com/)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
