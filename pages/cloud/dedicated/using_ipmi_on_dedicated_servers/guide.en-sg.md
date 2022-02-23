@@ -16,13 +16,13 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
 You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
 
-To enable one of these methods, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab.
+To enable one of these methods, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI`{.action} tab.
 
 ### Access via the Java applet <a name="applet-java"></a>
 

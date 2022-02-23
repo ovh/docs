@@ -32,7 +32,7 @@ A ligação ao IPMI pode ser efetuada principalmente através de vários método
 
 - Um terceiro método, unicamente disponível para os servidores mais recentes, permite utilizar uma ferramenta KVM a partir de um browser web.
 
-Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action}.
+Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor e depois clique no separador `IPMI`{.action}.
 
 ### Aceder com a applet Java <a name="applet-java"></a>
 

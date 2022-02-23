@@ -32,7 +32,7 @@ Połączenie z IPMI można wykonać głównie za pomocą kilku metod: apletu Jav
 
 - Trzecia metoda, dostępna tylko dla najnowszych serwerów, pozwala na korzystanie z narzędzia KVM przy użyciu przeglądarki internetowej.
 
-Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} w menu po lewej stronie, wybierz serwer i kliknij zakładkę `IPMI`{.action}.
+Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} i wybierz serwer, a następnie kliknij zakładkę `IPMI`{.action}.
 
 ### Logowanie za pomocą apletu Java <a name="applet-java"></a>
 
