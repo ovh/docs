@@ -97,6 +97,7 @@ Valider la configuration:
 ```sh
 ip a
 ```
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
 
 
 ## Debian
