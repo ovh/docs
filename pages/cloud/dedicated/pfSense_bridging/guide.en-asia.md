@@ -50,7 +50,7 @@ Click on the three dots to open the `Context`{.action} menu, and click `Add a vi
 
 Select `ovh`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
-![Add a virtual MAC (2)](images/addvmac1.png){.thumbnail}
+![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
 
 #### Determining the gateway address
 
