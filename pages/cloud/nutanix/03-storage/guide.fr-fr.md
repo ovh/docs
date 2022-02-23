@@ -17,6 +17,7 @@ Documentation de présentation du stockage et création d'un **storage container
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
+> Certaines options comme l'utilisation de la compression ou de la deduplication necessitent des licences particulières fournies par NUTANIX au travers D'OVHcloud, il faudra se renseigner auprès du service commercial d'OVHcloud pour plus d'information.
 
 ## Prérequis
 
@@ -64,31 +65,31 @@ Nous allons créer un **Storage container** avec 300 Go minimum réservé pour c
 
 ![StorageMenu](images/StorageMenu.png)
 
-Dans le menu choisir la sélection Storage
+Dans le menu choisir la sélection *Storage*
 
 ![StorageContainerDashboard](images/StorageContainerDashboard.PNG)
 
-Dans la sélection de gauche être positionné sur Storage container.
+Dans la sélection de gauche être positionné sur **Storage container**.
 
-Dans la sélection de droite Cliquer sur le signe plus à gauche de Storage Container.
+Dans la sélection de droite Cliquer sur le **signe + à gauche de Storage Container**.
 
 ![StorageContainerCreation1](images/StorageContainerCreation1.PNG)
 
-Saisir le nom du storage container dans la zone de saisie NAME
+Saisir le nom du storage container dans la zone de saisie NAME.
 
-Cliquer sur Advanced Settings pour avoir les paramètres avancés du **Storage Container**
+Cliquer sur **Advanced Settings** pour avoir les paramètres avancés.
 
 ![StorageContainerCreation2](images/StorageContainerCreation2.PNG)
 
-Dans la sélection saisir la taille du **Storage container** et faire défiler pour voir toutes les options possibles.
+Dans la sélection **reserved capacity** saisir la taille ensuite faire défiler pour voir toutes les options possibles.
 
 ![StorageContainerCreation3](images/StorageContainerCreation3.PNG)
 
-Cliquer sur SAVE pour finaliser la création du **Storage container**
+Cliquer sur **SAVE** pour finaliser la création du **Storage container**
 
 ![StorageContainerDasboardNC.PNG](images/StorageContainerDasboardNC.PNG)
 
-Dans le tableau de bord le nouveau Storage container est visible.
+Dans le tableau de bord le nouveau **Storage container** est visible.
 
 Pour plus de détail sur la création de **Storage containers** voir les références dans la section aller plus loin.
 
@@ -98,15 +99,16 @@ Pour plus de détail sur la création de **Storage containers** voir les référ
 
 Dans la sélection de gauche être positionné sur **Volume GROUP**
 
-Dans la sélection de droite Cliquer sur le signe plus à gauche de Volume Group.
+Dans la sélection de droite Cliquer sur **le signe + à gauche de Volume Group**.
 
 ![VolumeGroupCreation1](images/VolumeGroupCreation1.PNG)
 
-Cliquer sur Add New Disk
+Cliquer sur **Add New Disk**.
 
 ![VolumeGroupCreation2](images/VolumeGroupCreation2.PNG)
 
-Saisir la taille comme dans l'encadré au milieu et cliquer sur Add dans le deuxième encadré
+Saisir la taille comme dans l'encadré **Size** au milieu et cliquer sur **Add** dans le deuxième encadré.
+
 
 ![VolumeGroupCreation3](images/VolumeGroupCreation3.PNG)
 
@@ -116,7 +118,7 @@ Faire défiler pour voir les autres options
 
 ![VolumeGroupCreation4](images/VolumeGroupCreation4.PNG)
 
-Pour valider la création d'un *Volume Group* cliquer sur Save
+Pour valider la création d'un **Volume Group** cliquer sur Save
 
 ![VolumeGroupDashBoard](image/VolumeGroupDashBoardCreated.PNG)
 
