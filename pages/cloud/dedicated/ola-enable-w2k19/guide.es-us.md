@@ -26,7 +26,7 @@ Nuestros NIC en OLA tienen una configuración privada-privada, por lo que no es 
 
 Haga clic en el botón `Desde un applet Java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+![remote_kvm](images/remote_kvm2022.png){.thumbnail}
 
 Se descargará un programa JNLP. Abra el programa una vez descargado para acceder a IPMI  e introduzca las claves asociadas al servidor.
 
