@@ -105,6 +105,12 @@ Congratulations! You are now connected to your Redis instance!
 
 ![Result](images/redis_06_connect_redisinsight-20220209095533690.png)
 
+> [!primary]
+>
+> RedisInsight has usefull features.
+> Learn more about [here](https://redis.com/redis-enterprise/redis-insight/)
+>
+
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.

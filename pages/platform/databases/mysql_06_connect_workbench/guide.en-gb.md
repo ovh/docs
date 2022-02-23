@@ -112,6 +112,11 @@ Congratulation, in the `Schemas`{.action} tab, you will see yours databases
 
 ![](images/mysql_06_connect_workbench-20220210114125831.png)
 
+> [!primary]
+>
+> Once connected, MySQL Workbench facilitate many actions such as querying your databases, manage used or even import data. Please read official documentations to discover the whole feature list : <https://www.mysql.com/fr/products/workbench/features.html>
+>
+
 ## Go further
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
