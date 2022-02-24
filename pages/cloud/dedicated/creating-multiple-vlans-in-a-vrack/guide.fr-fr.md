@@ -5,16 +5,16 @@ excerpt: 'Découvrez comment créer plusieurs VLAN dans le vRack'
 section: vRack
 ---
 
-**Dernière mise à jour le 24/09/2021**
+**Dernière mise à jour le 24/02/2022**
 
-# Objectif
+## Objectif
 
 La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external} vous permet de créer un seul VLAN. Cela signifie que vous ne pouvez utiliser chaque adresse IP qu'une seule fois. Cependant, avec la version 2.0 de la configuration du vRack, vous pouvez créer jusqu'à 4 000 réseaux locaux virtuels au sein d'un seul vRack. Cela signifie que vous pouvez utiliser chaque adresse IP jusqu'à 4 000 fois.
 
 **Ce guide vous explique comment créer plusieurs VLAN dans le vRack.**
 
 
-# Prérequis
+## Prérequis
 
 - Posséder un ou plusieurs [serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/){.external} compatibles avec le vRack.
 - Avoir activé un service [vRack](https://www.ovh.com/fr/solutions/vrack){.external}.
@@ -24,7 +24,9 @@ La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configure
 - Avoir finalisé la [configuration du vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}.
 
 
-# En pratique - sous Linux
+## En pratique 
+
+### Sous Linux
 
 > [!primary]
 >
@@ -33,40 +35,41 @@ La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configure
 > Toutes les commandes sont à adapter en fonction de la distribution utilisée. N'hésitez pas à vous reporter à la documentation officielle de votre distribution en cas de doute.
 >
 
-## Ubuntu 20 & 21 
+#### Ubuntu 20 & 21 
 
 Ces exemples ont été réalisés sous Ubuntu 21.10 (Impish Indri).
 
-Installer le paquet "VLAN":
+Installez le paquet "VLAN":
 
 ```sh
 sudo apt-get install vlan
 ```
 
-Charger le kernel module 8021q.
+Chargez le kernel module 8021q.
 ```sh
 sudo su -c 'echo "8021q" >> /etc/modules'
 ```
 
-Désactiver la configuration automatique du réseau pour eviter de perdre la configuration après reboot. Editer ou creer le fichier suivant:
+Désactivez la configuration automatique du réseau pour eviter de perdre la configuration après reboot. Editez ou créez le fichier suivant:
 ```sh
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 
-Ajouter la ligne suivante:
+Ajoutez la ligne suivante:
 ```sh
 network: {config: disabled}
 ```
 
-Récupérer l'adresse MAC de l'interface à configurer:
+Récupérez l'adresse MAC de l'interface à configurer:
 ```sh
 ip a
 ```
 
 Ici l'interface qui nous intéresse est `eno2` avec l'adresse MAC `d0:50:99:d6:6b:14`:
+
 ![ubuntu VLAN](images/vrack3-ubuntu-01.png)
 
-Ajouter la configuration réseau avec la déclaration du VLAN dans le fichier suivant:
+Ajoutez la configuration réseau avec la déclaration du VLAN dans le fichier suivant:
 ```sh
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -89,20 +92,21 @@ network:
             - 192.168.0.14/16
 ```
 
-Appliquer les paramètres:
+Appliquez les paramètres:
 ```sh
 sudo netplan try
 sudo netplan apply
 ```
 
-Valider la configuration:
+Validez la configuration:
 ```sh
 ip a
 ```
+
 ![ubuntu VLAN](images/vrack3-ubuntu-02.png)
 
 
-## Debian
+#### Debian
 
 Avant tout, il faut installer le paquet « VLAN » sur votre serveur. Pour cela, utilisez la commande suivante :
 
@@ -148,7 +152,7 @@ netmask 255.255.0.0
 broadcast 192.168.255.255
 ```
 
-# En pratique - Sous Windows
+### Sous Windows
 
 Connectez-vous à votre serveur via le bureau à distance et ouvrez l'application « Server Manager ». Sélectionnez ensuite `Local Server`{.action}, puis cliquez sur le lien `Disabled`{.action} à côté de **NIC Teaming** :
 
@@ -192,7 +196,7 @@ Dans l'étape suivante, cliquez sur `Use the following IP address`{.action}. Pou
 
 Pour finir, cliquez sur le bouton `OK`{.action} pour sauvegarder les modifications et enfin redémarrez le serveur.
 
-# Aller plus loin
+## Aller plus loin
 
 [Configurer plusieurs serveurs dédiés dans le vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}
 

@@ -5,15 +5,15 @@ excerpt: This guide will show you how to create multiple vLANs within the vRack
 section: Network Management
 ---
 
-**Last updated 2018/06/21**
+**Last update 24th February 2022**
 
-# Objective
+## Objective
 
 The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.external} enables you to create only one vLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 vLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
 
 **This guide will show you how to create multiple vLANs within the vRack.**
 
-# Requirements
+## Requirements
 
 * an active [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
 * two or more [vRack-compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
@@ -23,14 +23,16 @@ The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
 
-# Instructions - Linux
+## Instructions
+
+### Linux
 
 > [!primary]
 >
-> As an example, we'll use **eth1** as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
+> As an example, we'll use **eno2** for Ubuntu and **eth1** for Debian as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
 >
 
-## Ubuntu 20 & 21 
+#### Ubuntu 20 & 21 
 
 These samples was realised on Ubuntu 21.10 (Impish Indri).
 
@@ -98,7 +100,7 @@ ip a
 ```
 ![ubuntu VLAN](images/vrack3-ubuntu-02.png)
 
-## Debian
+#### Debian
 
 First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
 
@@ -132,7 +134,7 @@ netmask 255.255.0.0
 broadcast 192.168.255.255
 ```
 
-# Instructions - Windows
+### Windows
 
 Log on to your server via a remote desktop connection, and open the Server Manager app. Then select `Local Server`{.action}. Now click the `Disabled`{.action} link next to **NIC Teaming**:
 
