@@ -86,7 +86,7 @@ Click the `Order more licences`{.action} button on the right. Enter the number a
 
 ### Remove a licence in a licence group
 
-From the `Licences`{.action} tab of your licence group, click the `...`{.action} to the right of the licence you want to cancel, then click `Delete`{.action}.
+From the `Licences`{.action} tab of your licence group, click on `...`{.action} to the right of the licence you want to cancel, then click `Delete`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail}
 
@@ -95,7 +95,7 @@ From the `Licences`{.action} tab of your licence group, click the `...`{.action}
 
 ### Cancel licence group
 
-To cancel your Microsoft Office 365 CSP1 licence group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then on the `Manage services`{.action} button. Then click the `...`{.action} button. to the right of the licence group to be cancelled, then `Cancel`{.action}.<br>
+To cancel your Microsoft Office 365 CSP1 licence group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then on the `Manage services`{.action} button. Then click the `...`{.action} button to the right of the licence group to be cancelled, then `Cancel`{.action}.<br>
 Enter the reasons for your cancellation request, then click `Confirm`{.action}.
 
 > [!primary]
