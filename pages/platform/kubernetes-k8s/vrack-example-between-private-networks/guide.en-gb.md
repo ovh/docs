@@ -6,7 +6,7 @@ order: 11
 ---
 
 
-**Last updated July 31th<sup>th</sup>, 2021.**
+**Last updated July 31<sup>st</sup>, 2021.**
 
 <style>
  pre {
