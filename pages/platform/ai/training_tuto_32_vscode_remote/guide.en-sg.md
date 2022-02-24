@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial -  Connect to VSCode via remote
-slug: vscode-remote-code
+slug: training/vscode-remote-code
 excerpt: Tutorial to configure Remote Visual Studio with AI Training
 section: AI Training tutorials
 order: 04

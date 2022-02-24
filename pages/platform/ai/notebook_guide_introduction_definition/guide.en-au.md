@@ -1,6 +1,6 @@
 ---
 title: AI Notebooks - Getting started
-slug: definition
+slug: notebooks/definition
 excerpt: Learn the concept behind AI Training notebooks
 section: AI Notebooks guides
 order: 02

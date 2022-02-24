@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial -  How to debug jobs
-slug: debug-jobs
+slug: training/debug-jobs
 excerpt: Tutorial about how to debug your jobs
 section: AI Training tutorials
 order: 05

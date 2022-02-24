@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutorial - Use tensorboard inside notebooks
-slug: tuto-tensoboard-embedded
-excerpt: How to use tensoboard inside AI Notebooks  
+slug: notebooks/tuto-tensorboard-embedded
+excerpt: How to use tensorboard inside AI Notebooks  
 section: AI Notebooks tutorials
 order: 03
 ---

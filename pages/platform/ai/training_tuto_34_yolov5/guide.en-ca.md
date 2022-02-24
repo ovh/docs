@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial - Training YOLOv5 on a custom dataset
-slug: yolov5-example
+slug: training/yolov5-example
 excerpt: Example on how to use a YOLOv5 model on AI Training
 section: AI Training tutorials
 order: 06

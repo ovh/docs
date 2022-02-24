@@ -1,6 +1,6 @@
 ---
 title: CLI - Commands reference
-slug: overview-cli
+slug: cli/overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
 section: Command Line Interface
 order: 201

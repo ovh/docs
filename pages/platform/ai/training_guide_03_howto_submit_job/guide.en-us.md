@@ -1,6 +1,6 @@
 ---
 title: AI Training - Getting started
-slug: submit-job
+slug: training/submit-job
 excerpt: Learn how to submit an AI Training job via UI
 section: AI Training guides
 order: 03

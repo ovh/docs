@@ -1,6 +1,6 @@
 ---
 title: CLI - Installation
-slug: install-client
+slug: cli/install-client
 excerpt: Learn how to install the CLI to interact with AI Training
 section: Command Line Interface
 order: 202

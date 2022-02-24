@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial - Deploy a web service for YOLOv5 using Flask
-slug: web-service-yolov5
+slug: training/web-service-yolov5
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
 section: AI Training tutorials
 order: 09

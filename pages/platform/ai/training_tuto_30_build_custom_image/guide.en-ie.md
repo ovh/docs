@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial -  Build & use custom image
-slug: build-use-custom-image
+slug: training/build-use-custom-image
 excerpt: Explanations on how to build and use your own custom image
 section: AI Training tutorials
 order: 02

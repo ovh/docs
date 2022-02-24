@@ -1,6 +1,6 @@
 ---
 title: Accessing data from your Object Storage
-slug: access-object-storage-data
+slug: cli/access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
 section: Command Line Interface
 order: 208

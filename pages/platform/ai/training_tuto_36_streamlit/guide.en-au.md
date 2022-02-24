@@ -1,6 +1,6 @@
 ---
 title: AI Training - Tutorial - Build & use a Streamlit image
-slug: build-use-streamlit-image
+slug: training/build-use-streamlit-image
 excerpt: How to build and use a custom Docker image containing a Streamlit application
 section: AI Training tutorials
 order: 08

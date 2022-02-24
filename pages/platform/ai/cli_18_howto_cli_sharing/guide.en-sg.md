@@ -1,6 +1,6 @@
 ---
 title: CLI - Share an AI Notebook with your users
-slug: sharing-notebooks
+slug: cli/sharing-notebooks
 excerpt: Learn how to share a notebook
 section: Command Line Interface
 order: 207

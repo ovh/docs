@@ -1,6 +1,6 @@
 ---
 title: AI Training - Start and use notebooks with UI
-slug: start-use-notebooks
+slug: training/start-use-notebooks
 excerpt: Learn how to start and use notebooks over AI training
 section: AI Training guides
 order: 06

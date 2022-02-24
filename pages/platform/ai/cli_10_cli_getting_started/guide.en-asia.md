@@ -1,6 +1,6 @@
 ---
 title: CLI - Getting started with the CLI
-slug: getting-started-cli
+slug: cli/getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: Command Line Interface
 order: 200

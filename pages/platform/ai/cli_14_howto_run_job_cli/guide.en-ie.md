@@ -1,6 +1,6 @@
 ---
 title: CLI - Launch an AI Training job
-slug: run-job-cli
+slug: cli/run-job-cli
 excerpt: Learn how to run an AI Training job using the CLI
 section: Command Line Interface
 order: 204

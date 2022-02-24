@@ -1,6 +1,6 @@
 ---
 title: AI Training - Monitor your cloud resources
-slug: resources
+slug: training/resources
 excerpt: Learn the resources provided by AI Training jobs
 section: AI Training guides
 order: 04
