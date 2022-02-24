@@ -10,7 +10,11 @@ order: 04
 
 ## Objectif
 
-Cette page montre comment créer une VM , modifier une VM la déplacer d'un noeud à l'autre et faire des snapshots.
+Cette page montre comment :
+* Créer un Ordinateur virtuel.
+* Modifier un Ordinateur virtuel.
+* Déplacer un Ordinateur virtuel dans les nœuds du cluster.
+* Faire un SNAPSHOT.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -23,8 +27,6 @@ Cette page montre comment créer une VM , modifier une VM la déplacer d'un noeu
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté à Prism Element sur le cluster
-
-
 
 ## En pratique
 
