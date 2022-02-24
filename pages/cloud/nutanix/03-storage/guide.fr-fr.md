@@ -87,7 +87,7 @@ Pour plus de détails sur la création d'un **Storage Container**, reportez-vous
 
 ### Créer un **Volume Group**
 
-Positionnez-vous sur `Volume Groupe`{.action} et cliquez, à droite, sur `+ Volume Groupe`{.action}.
+Positionnez-vous sur `Volume Group`{.action} et cliquez, à droite, sur `+ Volume Group`{.action}.
 
 ![VolumeGroupDashBoard](images/VolumeGroupDashBoard.PNG)
 

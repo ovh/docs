@@ -93,7 +93,7 @@ Sur le tableau de bord (*Dashboard*) de Prism Central, cliquez sur le nom du clu
 
 ![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG)
 
-Vous accédez alors au tableau de bors de votre cluster.
+Vous accédez alors au tableau de bord de votre cluster.
 
 À droite apparaît le nombre total de disques, le nombre de VMs ainsi que le le nombre d'hôtes.<br>
 Un coeur de couleur verte indique que le cluster Nutanix fonctionne correctement.<br>
