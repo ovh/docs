@@ -7,13 +7,13 @@ section: Network Management
 
 **Last updated 2018/06/21**
 
-## Objective
+# Objective
 
 The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.external} enables you to create only one vLAN. This means that you can only use each IP address once. However, with the vRack version 2.0 configuration, you can create up to 4,000 vLANs within a single vRack. This means that you can use each IP address up to 4,000 times.
 
 **This guide will show you how to create multiple vLANs within the vRack.**
 
-## Requirements
+# Requirements
 
 * an active [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
 * two or more [vRack-compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
@@ -23,14 +23,82 @@ The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
 
-## Instructions
-
-### Linux
+# Instructions - Linux
 
 > [!primary]
 >
 > As an example, we'll use **eth1** as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
 >
+
+## Ubuntu 20 & 21 
+
+These samples was realised on Ubuntu 21.10 (Impish Indri).
+
+Install "VLAN" packet:
+
+```sh
+sudo apt-get install vlan
+```
+
+Load the 8021q kernel module:
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Create or edit this configuration file to prevent changes to your network configuration from being made automatically:
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+And add this line:
+```sh
+network: {config: disabled}
+```
+
+Get the network interface name and it's MAC address:
+```sh
+ip a
+```
+
+Here the the interface that we whant to configure is `eno2` with `d0:50:99:d6:6b:14` MAC address:
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Add the network configuration for this network interface and the VLAN declaration in the following file:
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Check and apply the settings:
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Validate the configuration:
+```sh
+ip a
+```
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+## Debian
 
 First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
 
@@ -64,7 +132,7 @@ netmask 255.255.0.0
 broadcast 192.168.255.255
 ```
 
-### Windows
+# Instructions - Windows
 
 Log on to your server via a remote desktop connection, and open the Server Manager app. Then select `Local Server`{.action}. Now click the `Disabled`{.action} link next to **NIC Teaming**:
 

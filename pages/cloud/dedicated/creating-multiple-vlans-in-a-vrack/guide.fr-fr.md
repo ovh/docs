@@ -33,7 +33,9 @@ La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configure
 > Toutes les commandes sont à adapter en fonction de la distribution utilisée. N'hésitez pas à vous reporter à la documentation officielle de votre distribution en cas de doute.
 >
 
-## Ubuntu 21.10 (Impish Indri)
+## Ubuntu 20 & 21 
+
+Ces exemples ont été réalisés sous Ubuntu 21.10 (Impish Indri).
 
 Installer le paquet "VLAN":
 
