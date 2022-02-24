@@ -41,10 +41,10 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 > El firewall de red protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
-Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} de la barra de herramientas y seleccione la sección `IP`{.action} situada en la esquina inferior izquierda de la página.<br>
+Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
 Haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
 
-![Activación del firewall de red](images/firewall_creation_2020.png){.thumbnail}
+![Activación del firewall de red](images/firewall_creation2022.png){.thumbnail}
 
 Confirme la operación haciendo clic en `Aceptar`{.action}.
 
@@ -118,7 +118,7 @@ Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2
 >
 
 Para configurar las reglas de sus puertos en Armor, debe conectarse primero al área de cliente de OVHcloud.<br>
-A continuación, acceda al menú `Bare Metal Cloud`{.action} y haga clic en la sección `IP`{.action} de la columna izquierda. Haga clic en `...`{.action} junto a la dirección IP del servidor de juego y, seguidamente, en `Configurar el firewall «Game»`{.action}".
+A continuación, acceda al menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}. Haga clic en `...`{.action} junto a la dirección IP del servidor de juego y, seguidamente, en `Configurar el firewall «Game»`{.action}".
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
