@@ -65,7 +65,7 @@ You can set up to **20 rules per IP**.
 >
 
 
-### Configure the Network Firewall.
+### Configure the Network Firewall
 
 To add a rule, click on `Add a rule`{.action}:
 
