@@ -1,7 +1,7 @@
 ---
-title: Stockage sur NUTANIX
+title: Présentation du stockage sur Nutanix
 slug: storage
-excerpt: "Gestion du stockage dans un CLUSTER NUTANIX"
+excerpt: "Présentatiion de la gestion du stockage dans un Cluster Nutanix"
 section: Premiers pas
 order: 03
 ---
@@ -10,129 +10,113 @@ order: 03
 
 ## Objectif
 
-Documentation de présentation du stockage et création d'un **storage container** et d'un **volume group**.
+Ce guide vous présente le stockage ainsi que la création d'un **storage container** et d'un **volume group**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-> Certaines options comme l'utilisation de la compression ou de la deduplication necessitent des licences particulières fournies par NUTANIX au travers D'OVHcloud, il faudra se renseigner auprès du service commercial d'OVHcloud pour plus d'information.
+> Certaines options comme l'utilisation de la compression ou de la déduplication nécessitent des licences particulières fournies par Nutanix au travers d'OVHcloud, nous vous invitons à vous renseigner auprès du service commercial OVHcloud pour plus d'informations.
 
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté à Prism Element sur le cluster
+- Être connecté sur le cluster [via Prism Element](https://docs.ovh.com/fr/nutanix/redondancy-hardware/)
 
+## Présentation du fonctionnement du stockage dans un cluster Nutanix
 
-## Présentation du fonctionnement du stockage dans un cluster NUTANIX
+Lors de la création d'un Cluster Nutanix le système connecte tous les disques des nœuds dans un **Storage Pool**. Il est déconseillé d'avoir plusieurs Storage Pools.
 
-Lors de la création d'un CLUSTER NUTANIX le système connecte tous les disques des nœuds dans un **Storage Pools** Il est déconseillé d'avoir plusieurs **Storage Pools**
+Par défaut, le **facteur de réplication** est sur 2 et il peut être modifié à 3 si l'on a au minimum 5 nœuds.
 
-Par défaut le Facteur de réplication est sur 2 et l'on peut passer à 3 si l'on a au minimum 5 nœuds.
+Les données ne sont pas stockées directement dans le Storage Pool, elles le sont dans des **Storages Containers** où il est possible d'activer des options de compression, déduplication, etc pour optimiser l'utilisation du stockage. 
 
-les données ne sont pas stockées directement dans le **Storage Pools** elle le sont dans des **Storages containers** où il est possible d'activer des options de compressions, déduplications et autre pour optimiser l'utilisation du stockage. 
+Il existe aussi des **Volume Groups** qui donnent la possibilité d'avoir un accès en ISCSI ou directement en simulation SCSI pour :
 
-Il existe aussi des **Volume groups** qui donnent la possibilité d'avoir un accès en ISCSI ou directement en simulation SCSI pour :
-
-* Un ordinateur tier hors du cluster ou une vm du cluster
-* Plusieurs ordinateurs tier ou plusieurs Vm du cluster pour des applications nécessitant un stockage partagé comme par exemple des bases de données Microsoft SQL en mode CLUSTER.
+* un ordinateur tiers hors du cluster ou une VM du cluster;
+* plusieurs ordinateurs tiers ou plusieurs VMs du cluster pour des applications nécessitant un stockage partagé, comme par exemple des bases de données Microsoft SQL en mode Cluster.
 
 ## En pratique
 
-### Modification du **facteur de réplication** 
+### Modifier le **facteur de réplication** 
 
-![prism-element-dashboard](images/prism-element-dashboard.PNG)
+Cliquez sur l'engrenage en haut à droite de l'interface Prism Element.
 
-Cliquer sur l'engrenage dans la sélection
+![prism element dashboard](images/prism-element-dashboard.PNG)
 
-![GearMenu1](images/GearMenu1.PNG)
+Faites défiler les réglages (*Settings*) à l'aide de l'ascenseur et cliquez sur `Redondancy state`{.action}.
 
-Faire défiler Settings à l'aide de l'ascenseur dans la sélection jusqu'en bas de la page.
+Si vous disposez de 5 nœuds, vous pouvez modifier le paramètre **Desired redondancy factor**, en le passant de 2 à 3.
 
 ![RedondancyState](images/RedondancyState.PNG)
 
-Dans la sélection de gauche se positionner sur **Redondancy state**. 
+Il est nécessaire d'attendre un certain temps pour que les données se trouvent sur 3 nœuds.
 
-Dans la sélection de droite se positionner sur **Desired redondancy factor** remplacer 2 par 3 et faire Save *Cette opération n'est possible que si l'on a au minimum 5 nœuds.
+### Créer un **Storage Container**
 
-Il faut un certain temps pour que les données se trouvent sur 3 nœuds.
+Nous allons créer un **Storage Container**, avec 300 Go (minimum) réservés pour ce stockage. Les autres paramètres sont ceux par défaut.
 
-### Création d'un **Storage container**
-
-Nous allons créer un **Storage container** avec 300 Go minimum réservé pour ce stockage et les autres paramètres par défaut.
+Dans le menu, sélectionnez `Storage`{.action}.
 
 ![StorageMenu](images/StorageMenu.png)
 
-Dans le menu choisir la sélection **Storage**
+Positionnez-vous sur `Storage Container`{.action} et cliquez, à droite, sur  `+ Storage Container`{.action}.
 
 ![StorageContainerDashboard](images/StorageContainerDashboard.PNG)
 
-Dans la sélection de gauche être positionné sur **Storage container**.
-
-Dans la sélection de droite Cliquer sur le **signe + à gauche de Storage Container**.
+Donnez un nom au storage container dans la zone de saisie **NAME**.<br>
+Cliquez ensuite sur `Advanced Settings`{.action} pour afficher les paramètres avancés.
 
 ![StorageContainerCreation1](images/StorageContainerCreation1.PNG)
 
-Saisir le nom du storage container dans la zone de saisie **NAME**.
-
-Cliquer sur **Advanced Settings** pour avoir les paramètres avancés.
+Dans le champ **RESERVED CAPACITY**, saisissez la taille de votre container. D'autres options sont également disponibles.
 
 ![StorageContainerCreation2](images/StorageContainerCreation2.PNG)
 
-Dans la sélection **RESERVED CAPACITY** saisir la taille ensuite faire défiler pour voir toutes les options possibles.
+Cliquez enfin sur `Save`{.action} pour finaliser la création du **Storage Container**.
 
 ![StorageContainerCreation3](images/StorageContainerCreation3.PNG)
 
-Cliquer sur **SAVE** pour finaliser la création du **Storage container**
+Le nouveau **Storage Container** est ensuite visible dans le tableau de bord.
 
 ![StorageContainerDasboardNC.PNG](images/StorageContainerDasboardNC.PNG)
 
-Dans le tableau de bord le nouveau **Storage container** est visible.
+Pour plus de détails sur la création d'un **Storage Container**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
-Pour plus de détail sur la création de **Storage containers** voir les références dans la section aller plus loin.
+### Créer un **Volume Group**
 
-### Création d'un **Volume group**
+Positionnez-vous sur `Volume Groupe`{.action} et cliquez, à droite, sur `+ Volume Groupe`{.action}.
 
 ![VolumeGroupDashBoard](images/VolumeGroupDashBoard.PNG)
 
-Dans la sélection de gauche être positionné sur **Volume GROUP**
-
-Dans la sélection de droite Cliquer sur **le signe + à gauche de Volume Group**.
+Cliquez sur **Add New Disk**.
 
 ![VolumeGroupCreation1](images/VolumeGroupCreation1.PNG)
 
-Cliquer sur **Add New Disk**.
+Saisissez la taille dans le champ **Size** et cliquez sur `Add`{.action}.
 
 ![VolumeGroupCreation2](images/VolumeGroupCreation2.PNG)
 
-Saisir la taille comme dans l'encadré **Size** au milieu et cliquer sur **Add** dans le deuxième encadré.
-
+Le disque apparait dans le **Volume Group**. Vous pouvez ainsi ajouter plusieurs autres disques.
 
 ![VolumeGroupCreation3](images/VolumeGroupCreation3.PNG)
 
-Le disque apparait, il est aussi possible d'ajouter plusieurs disques
-
-Faire défiler pour voir les autres options
+Une fois votre ou vos disque(s) créé(s), parcourez les options disponibles et validez enfin la création du **Volume Group** en cliquant sur `Save`{.action}.
 
 ![VolumeGroupCreation4](images/VolumeGroupCreation4.PNG)
 
-Pour valider la création d'un **Volume Group** cliquer sur *Save*
+Le **Volume Group** apparait alors dans la liste.
 
 ![VolumeGroupDashBoardCreated](images/VolumeGroupDashBoardCreated.PNG)
 
-Le **Volume GROUP** apparait dans la liste 
+## Aller plus loin <a name="gofurther"></a>
 
-## Aller plus loin
+[Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
-Lien vers la présentation d'un cluster NUTANIX [<https://docs.ovh.com/fr/nutanix/nutanix-hci/>](<https://docs.ovh.com/fr/nutanix/nutanix-hci/>)
+[Documentation Nutanix sur le stockage](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 
-Documentation NUTANIX concernant le stockage [https://portal.nutanix.com/](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
-
-Lien sur les licences NUTANIX [https://www.nutanix.com/products/software-options](https://www.nutanix.com/products/software-options)
-
-
-
+[Les licences Nutanix](https://www.nutanix.com/products/software-options)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
