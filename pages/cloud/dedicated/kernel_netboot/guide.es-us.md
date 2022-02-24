@@ -30,7 +30,6 @@ Para iniciar su servidor en el disco, primero debe conectarse al [panel de contr
 
 Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
 
-![Netboot](images/netboot-01_2020.png){.thumbnail}
 
 En la pestaña `estado del servicio`{.action}, sección `Información general`{.action}, haga clic en editar la opción Boot.
 
