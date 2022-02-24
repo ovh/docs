@@ -67,15 +67,11 @@ First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=g
 
 In the `General information`{.action} tab, then the **Service status** box, click on the `...`{.action} button next to “Monitoring”. Then click `Enable`{.action} or `Disable`{.action}. Click `Confirm`{.action} in the window that appears to confirm the changes.
 
-![monitoring](images/monitoring01.png){.thumbnail}
-
 ### Enabling monitoring for specific services
 
 In addition to standard monitoring, you can authorise OVHcloud to monitor specific services such as HTTP, SSH and other protocols.
 
  To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
 
  You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
 
