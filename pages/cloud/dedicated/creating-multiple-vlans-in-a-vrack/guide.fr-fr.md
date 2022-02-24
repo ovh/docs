@@ -24,7 +24,7 @@ La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configure
 - Avoir finalisé la [configuration du vRack](https://docs.ovh.com/fr/dedicated/configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}.
 
 
-## En pratique 
+## En pratique - Sous Linux
 
 ### Sous Linux
 
@@ -37,39 +37,39 @@ La [configuration standard du vRack](https://docs.ovh.com/fr/dedicated/configure
 
 #### Ubuntu 20 & 21 
 
-Ces exemples ont été réalisés sous Ubuntu 21.10 (Impish Indri).
+Cet exemple est basé sur Ubuntu 21.10 (Impish Indri).
 
-Installez le paquet "VLAN":
+Installez le paquet « VLAN » sur votre serveur. Pour cela, utilisez la commande suivante :
 
 ```sh
 sudo apt-get install vlan
 ```
 
-Chargez le kernel module 8021q.
+Chargez le kernel module 8021q :
 ```sh
 sudo su -c 'echo "8021q" >> /etc/modules'
 ```
 
-Désactivez la configuration automatique du réseau pour eviter de perdre la configuration après reboot. Editez ou créez le fichier suivant:
+Désactivez la configuration automatique du réseau pour eviter de perdre la configuration après le redémarrage du serveur. Editez ou créez le fichier suivant :
 ```sh
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 
-Ajoutez la ligne suivante:
+Ajoutez la ligne suivante :
 ```sh
 network: {config: disabled}
 ```
 
-Récupérez l'adresse MAC de l'interface à configurer:
+Récupérez l'adresse MAC de l'interface à configurer :
 ```sh
 ip a
 ```
 
-Ici l'interface qui nous intéresse est `eno2` avec l'adresse MAC `d0:50:99:d6:6b:14`:
+Ici l'interface qui nous intéresse est `eno2` avec l'adresse MAC `d0:50:99:d6:6b:14` :
 
 ![ubuntu VLAN](images/vrack3-ubuntu-01.png)
 
-Ajoutez la configuration réseau avec la déclaration du VLAN dans le fichier suivant:
+Ajoutez la configuration réseau avec le tag du VLAN dans le fichier suivant:
 ```sh
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -92,13 +92,13 @@ network:
             - 192.168.0.14/16
 ```
 
-Appliquez les paramètres:
+Enregistrez et fermez le fichier, puis exécutez les commandes suivantes :
 ```sh
 sudo netplan try
 sudo netplan apply
 ```
 
-Validez la configuration:
+Validez la configuration avec la commande suivante :
 ```sh
 ip a
 ```
