@@ -1,5 +1,5 @@
 ---
-title: Use tensorboard inside a job
+title: AI Training - Tutorial - Use tensorboard inside a job
 slug: tuto-tensorboard-inside-job
 excerpt: How to use a tensorboard inside an AI Training Job
 section: AI Training tutorials

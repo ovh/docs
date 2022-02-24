@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: AI Training - Monitor your cloud resources
 slug: resources
 excerpt: Learn the resources provided by AI Training jobs
 section: AI Training guides

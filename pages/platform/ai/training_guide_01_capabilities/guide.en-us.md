@@ -1,5 +1,5 @@
 ---
-title: AI Training Capabilities and Limitations
+title: AI Training - Capabilities and Limitations
 slug: capabilities
 excerpt: Find out about current capabilities and limitations of AI Training
 section: AI Training guides

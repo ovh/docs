@@ -1,5 +1,5 @@
 ---
-title: Overview of ovhai CLI
+title: CLI - Commands reference
 slug: overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
 section: Command Line Interface

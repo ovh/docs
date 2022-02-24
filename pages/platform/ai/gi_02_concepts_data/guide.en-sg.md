@@ -1,5 +1,5 @@
 ---
-title: Data
+title: Data - concept and best practices
 slug: data
 excerpt: Learn the concept behind AI Training data
 section: General Information

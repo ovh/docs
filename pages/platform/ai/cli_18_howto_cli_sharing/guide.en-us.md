@@ -1,5 +1,5 @@
 ---
-title: Sharing notebooks
+title: CLI - Share an AI Notebook with your users
 slug: sharing-notebooks
 excerpt: Learn how to share a notebook
 section: Command Line Interface

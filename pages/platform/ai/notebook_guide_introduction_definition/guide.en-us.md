@@ -1,5 +1,5 @@
 ---
-title: Definition
+title: AI Notebooks - Getting started
 slug: definition
 excerpt: Learn the concept behind AI Training notebooks
 section: AI Notebooks guides

@@ -1,5 +1,5 @@
 ---
-title: Submit a job via UI
+title: AI Training - Getting started
 slug: submit-job
 excerpt: Learn how to submit an AI Training job via UI
 section: AI Training guides

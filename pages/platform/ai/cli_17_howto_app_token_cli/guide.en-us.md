@@ -1,5 +1,5 @@
 ---
-title: Create an app token via CLI
+title: CLI - Manage access tokens
 slug: app-token-cli
 excerpt: Learn how to create Application tokens with the ovhai CLI
 section: Command Line Interface

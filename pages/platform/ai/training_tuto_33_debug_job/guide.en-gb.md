@@ -1,5 +1,5 @@
 ---
-title: How to debug jobs
+title: AI Training - Tutorial -  How to debug jobs
 slug: debug-jobs
 excerpt: Tutorial about how to debug your jobs
 section: AI Training tutorials

@@ -1,5 +1,5 @@
 ---
-title: Jobs
+title: AI Training - Job concept
 slug: jobs
 excerpt: Learn the concept behind AI Training jobs
 section: AI Training guides

@@ -1,5 +1,5 @@
 ---
-title: Install the CLI
+title: CLI - Installation
 slug: install-client
 excerpt: Learn how to install the CLI to interact with AI Training
 section: Command Line Interface

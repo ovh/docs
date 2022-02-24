@@ -1,5 +1,5 @@
 ---
-title: Getting started
+title: CLI - Getting started
 slug: getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: Command Line Interface

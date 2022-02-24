@@ -1,5 +1,5 @@
 ---
-title: Tensorflow with GPUs
+title: AI Training - Tutorial -  Tensorflow with GPUs
 slug: tensorflow-gpu-examples
 excerpt: Example on how to use Tensorflow library with GPUs 
 section: AI Training tutorials

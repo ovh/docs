@@ -1,5 +1,5 @@
 ---
-title: Start and use notebooks with UI
+title: AI Training - Start and use notebooks with UI
 slug: start-use-notebooks
 excerpt: Learn how to start and use notebooks over AI training
 section: AI Training guides
