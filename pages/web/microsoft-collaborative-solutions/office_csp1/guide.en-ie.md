@@ -6,7 +6,7 @@ section: Office
 order: 2
 ---
 
-**Last updated 9th September 2021**
+**Last updated 24th February 2022**
 
 ## Objective
 
@@ -81,6 +81,25 @@ If you would like to add one or more licences to your existing licence group, yo
 Click the `Order more licences`{.action} button on the right. Enter the number and type of licences you would like to order.
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
+
+### Manage your subscriptions <a name="managesubscriptions"></a>
+
+### Remove a licence in a licence group
+
+From the `Licences`{.action} tab of your licence group, click the `...`{.action} to the right of the licence you want to cancel, then click `Disable account`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
+
+### Cancel licence group
+
+To cancel your Microsoft Office 365 CSP1 licence group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then on the `Manage services`{.action} button. Then click the `...`{.action} button. to the right of the licence group to be cancelled, then `Cancel`{.action}.<br>
+Enter the reasons for your cancellation request, then click `Confirm`{.action}.
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
 
 ## Go further
 
