@@ -15,11 +15,11 @@ The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.
 
 ## Requirements
 
-* an active [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
-* two or more [vRack-compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
-* administrative (root) access to the server via SSH
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
-* your chosen private IP address range
+* An active [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service in your account
+* Two or more [vRack-compatible servers](https://www.ovh.com/world/dedicated-servers/){.external}
+* Administrative (root) access to the server via SSH
+* Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
+* Your chosen private IP address range
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
 
@@ -34,9 +34,9 @@ The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.
 
 #### Ubuntu 20 & 21 
 
-These samples was realised on Ubuntu 21.10 (Impish Indri).
+These commands were executed under Ubuntu 21.10 (Impish Indri).
 
-Install "VLAN" packet:
+First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
 
 ```sh
 sudo apt-get install vlan
@@ -62,7 +62,7 @@ Get the network interface name and it's MAC address:
 ip a
 ```
 
-Here the the interface that we whant to configure is `eno2` with `d0:50:99:d6:6b:14` MAC address:
+Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
 ![ubuntu VLAN](images/vrack3-ubuntu-01.png)
 
 Add the network configuration for this network interface and the VLAN declaration in the following file:
@@ -88,13 +88,13 @@ network:
             - 192.168.0.14/16
 ```
 
-Check and apply the settings:
+Save and close the file, then run the following commands:
 ```sh
 sudo netplan try
 sudo netplan apply
 ```
 
-Validate the configuration:
+Use the following command to confirm the configuration:
 ```sh
 ip a
 ```
