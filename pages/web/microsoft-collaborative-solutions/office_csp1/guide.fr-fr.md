@@ -86,7 +86,7 @@ Cliquez sur le bouton `Commander plus de licences`{.action} à droite. Indiquez 
 
 #### Supprimer une licence dans un groupe de licences
 
-Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton `...`{.action} à droite de la licence à résilier, puis cliquez sur `Supprimer`{.action}.
+Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton `...`{.action} à droite de la licence à résilier, puis cliquez sur `Supprimer le compte`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail}
 

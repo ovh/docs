@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 09/09/2021**
+**Ultimo aggiornamento: 24/02/2022**
 
 ## Obiettivo
 
@@ -86,11 +86,11 @@ Clicca sul pulsante `Ordina più licenze`{.action} a destra. Indica il numero e 
 
 ![email](images/Outlook-cps1-05.png){.thumbnail}
 
-### Gestisci i tuoi abbonamenti <a name="managscrizioni"></a>
+### Gestisci i tuoi abbonamenti <a name="managesubscriptions"></a>
 
 ##### Elimina una licenza in un gruppo di licenze
 
-Nella scheda `Licences`{.action} del tuo gruppo di licenze, clicca sul pulsante `...`{.action} in corrispondenza della licenza da disattivare e clicca su `Elimina`{.action}.
+Nella scheda `Licenze`{.action} del tuo gruppo di licenze, clicca sul pulsante `...`{.action} in corrispondenza della licenza da disattivare e clicca su `Disattiva SharePoint`{.action}.
 
 ![email](images/Outlook-cps1-06.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Nella scheda `Licences`{.action} del tuo gruppo di licenze, clicca sul pulsante 
 
 ##### Disattiva il gruppo di licenze
 
-Per disattivare il tuo gruppo di licenze Microsoft Office 365 CSP1, clicca sul tuo nome in alto a destra e seleziona `Gestisci i servizi`{.action}. Clicca sul pulsante `...`{.action} a destra del gruppo di licenze da disattivare, quindi su `Resiliare`{.action}.<br>
+Per disattivare il tuo gruppo di licenze Microsoft Office 365 CSP1, clicca sul tuo nome in alto a destra e seleziona `Gestisci i servizi`{.action}. Clicca sul pulsante `...`{.action} a destra del gruppo di licenze da disattivare, quindi su `Disattiva`{.action}.<br>
 Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}.
 
 > [!primary]

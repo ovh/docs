@@ -82,11 +82,11 @@ Click the `Order more licences`{.action} button on the right. Enter the number a
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
 
-### Manage your subscriptions <a name=`management subscriptions`></a>
+### Manage your subscriptions <a name="managesubscriptions"></a>
 
 ### Remove a licence in a licence group
 
-From the `Licences`{.action} tab of your licence group, click on `...`{.action} to the right of the licence you want to cancel, then click `Delete`{.action}.
+From the `Licences`{.action} tab of your licence group, click on `...`{.action} to the right of the licence you want to cancel, then click `Disable account`{.action}.
 
 ![emails](images/Outlook-cps1-06.png){.thumbnail}
 

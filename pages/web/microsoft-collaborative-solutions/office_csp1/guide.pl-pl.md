@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 09/09/2021**
+**Ostatnia aktualizacja z dnia 24/02/2022**
 
 ## Wprowadzenie
 
@@ -86,11 +86,11 @@ Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie. Podaj lic
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
 
-### Zarządzaj subskrypcjami <a name="managesubscripts"></a>
+### Zarządzaj subskrypcjami <a name="managesubscriptions"></a>
 
 #### Usuń licencję z grupy licencji
 
-W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `...`{.action} po prawej stronie licencji do rezygnacji, po czym kliknij na `Usuń`{.action}.
+W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `...`{.action} po prawej stronie licencji do rezygnacji, po czym kliknij na `Usuń konto`{.action}.
 
 ![e-maile](images/Outlook-cps1-06.png){.thumbnail}
 
@@ -99,7 +99,7 @@ W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `...`{.action} p
 
 #### Rezygnacja z grupy licencji
 
-Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1, kliknij Twoją nazwę w prawym górnym rogu Panelu klienta OVHcloud, a następnie przycisk `Zarządzanie usługam`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie grupy licencji do rezygnacji, następnie kliknij `Rezygnacja z`{.action}.<br>
+Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1, kliknij Twoją nazwę w prawym górnym rogu Panelu klienta OVHcloud, a następnie przycisk `Zarządzanie usługami`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie grupy licencji do rezygnacji, następnie kliknij `Zrezygnuj`{.action}.<br>
 Podaj przyczyny rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 > [!primary]
