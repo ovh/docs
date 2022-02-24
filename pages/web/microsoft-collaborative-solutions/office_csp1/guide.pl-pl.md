@@ -86,6 +86,25 @@ Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie. Podaj lic
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
 
+### Zarządzaj subskrypcjami <a name="managesubscripts"></a>
+
+#### Usuń licencję z grupy licencji
+
+W zakładce `Licencje`{.action} grupy licencji kliknij przycisk `...`{.action} po prawej stronie licencji do rezygnacji, po czym kliknij na `Usuń`{.action}.
+
+![e-maile](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
+
+#### Rezygnacja z grupy licencji
+
+Aby zrezygnować z grupy licencji Microsoft Office 365 CSP1, kliknij Twoją nazwę w prawym górnym rogu Panelu klienta OVHcloud, a następnie przycisk `Zarządzanie usługam`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie grupy licencji do rezygnacji, następnie kliknij `Rezygnacja z`{.action}.<br>
+Podaj przyczyny rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
+
+> [!primary]
+> Zasoby wykorzystane w bieżącym miesiącu zostaną zafakturowane na koniec bieżącego miesiąca.
+
 ## Sprawdź również
 
 [Skorzystaj ze zdalnego pulpitu z Microsoft 365 apps](https://docs.ovh.com/pl/microsoft-collaborative-solutions/office365-proplus-biuro-a-zdalne/)

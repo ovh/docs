@@ -86,6 +86,25 @@ Clicca sul pulsante `Ordina più licenze`{.action} a destra. Indica il numero e 
 
 ![email](images/Outlook-cps1-05.png){.thumbnail}
 
+### Gestisci i tuoi abbonamenti <a name="managscrizioni"></a>
+
+##### Elimina una licenza in un gruppo di licenze
+
+Nella scheda `Licences`{.action} del tuo gruppo di licenze, clicca sul pulsante `...`{.action} in corrispondenza della licenza da disattivare e clicca su `Elimina`{.action}.
+
+![email](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> I consumi del mese in corso saranno fatturati alla fine del mese.
+
+##### Disattiva il gruppo di licenze
+
+Per disattivare il tuo gruppo di licenze Microsoft Office 365 CSP1, clicca sul tuo nome in alto a destra e seleziona `Gestisci i servizi`{.action}. Clicca sul pulsante `...`{.action} a destra del gruppo di licenze da disattivare, quindi su `Resiliare`{.action}.<br>
+Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action}.
+
+> [!primary]
+> I consumi del mese in corso saranno fatturati alla fine del mese.
+
 ## Per saperne di più
 
 [Utilizza il desktop remoto con Microsoft 365 aps](https://docs.ovh.com/it/microsoft-collaborative-solutions/office365-proplus-desktop-remoto/)

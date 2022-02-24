@@ -82,6 +82,25 @@ Click the `Order more licences`{.action} button on the right. Enter the number a
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
 
+### Manage your subscriptions <a name=`management subscriptions`></a>
+
+### Remove a licence in a licence group
+
+From the `Licences`{.action} tab of your licence group, click the `...`{.action} to the right of the licence you want to cancel, then click `Delete`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
+
+### Cancel licence group
+
+To cancel your Microsoft Office 365 CSP1 licence group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then on the `Manage services`{.action} button. Then click the `...`{.action} button. to the right of the licence group to be cancelled, then `Cancel`{.action}.<br>
+Enter the reasons for your cancellation request, then click `Confirm`{.action}.
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
+
 ## Go further
 
 [Using Remote Desktop with Microsoft 365 apps](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/office365-proplus-remote-desktop/)

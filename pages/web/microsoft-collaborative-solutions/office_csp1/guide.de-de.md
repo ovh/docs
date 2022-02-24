@@ -86,6 +86,25 @@ Klicken Sie rechts auf den Button `Weitere Lizenzen bestellen`{.action}. Geben S
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
 
+#### Ihre Abonnements verwalten<a name="manageubscripments"></a> 
+
+##### Eine Lizenz aus einer Lizenzgruppe löschen
+
+Klicken Sie im Tab `Lizenzen`{.action} Ihrer Lizenzgruppe rechts neben der zu kündigenden Lizenz auf den Button `...`{.action} und anschließend auf `löschen`{.action}.
+
+![E-Mails](images/Outlook-cps1-06.png) {.thumbnail}
+
+> [!primary]
+> Der Verbrauch des laufenden Monats wird am Ende dieses Monats abgerechnet.
+
+##### Die Lizenzgruppe kündigen
+
+Um Ihre Microsoft Office 365 CSP1 Lizenzgruppe zu kündigen, klicken Sie oben rechts im OVHcloud Kundencenter auf Ihren Namen und anschließend auf den Button `Verwaltung der Dienste`{.action}. Klicken Sie dann rechts neben der zu kündigenden Lizenzgruppe auf den Button `...`{.action} und anschließend auf `Kündigen`{.action}<br>.
+Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
+
+> [!primary]
+> Der Verbrauch des laufenden Monats wird am Ende dieses Monats abgerechnet.
+
 ## Weiterführende Informationen
 
 [Remote Desktop mit Microsoft 365 Apps verwenden](https://docs.ovh.com/de/microsoft-collaborative-solutions/office365-proplus-remotedesktopdienste/)

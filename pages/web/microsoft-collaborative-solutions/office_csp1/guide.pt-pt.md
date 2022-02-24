@@ -86,6 +86,25 @@ Clique no botão `Encomendar mais licenças`{.action} à direita. Indique o núm
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
 
+### Gerir as suas assinaturas <a name="managesubscrições"></a>
+
+###### Eliminar uma licença num grupo de licenças
+
+No separador `Licences` {.action" do seu grupo de licenças, clique no botão `...`{.action} à direita da licença a rescindir, e clique em `Eliminer` {.action}.
+
+![emails](images/Outlook-cps1-06.png) {.thumbnail}
+
+> [!primary]
+> Os consumos do mês em curso serão faturados no final deste último.
+
+###### Rescindir o grupo de licenças
+
+Para rescindir o seu grupo de licenças Microsoft Office 365 CSP1, clique no seu nome (canto superior direito) da Área de Cliente OVHcloud e, a seguir, no botão `Gestão dos serviços` {.action}. A seguir, clique no botão `...`{.action} à direita do grupo de licenças a rescindir, depois por `Resilier`{.action}.<br>
+Indique as razões do seu pedido de rescisão e clique em `Valider` {.action.
+
+> [!primary]
+> Os consumos do mês em curso serão faturados no final deste último.
+
 ## Saiba mais
 
 [Utilizar o ambiente de trabalho remoto com Microsoft 365 apps](https://docs.ovh.com/pt/microsoft-collaborative-solutions/office365-proplus-escrit%C3%B3rio-a-dist%C3%A2ncia/)
