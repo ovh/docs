@@ -46,7 +46,7 @@ Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} p
 
 Nella pagina successiva, seleziona **Avviare in Rescue mode**. Se il tuo server utilizza un sistema operativo Linux, seleziona `rescue64-pro`{.action} nel menu a tendina. Se il tuo server è Windows, scegli `WinRescue`{.action} (consulta la [sezione della guida qui sotto](#windowsrescue)).
 Se **non** vuoi che le credenziali di accesso siano inviate all'indirizzo principale del tuo account, inserisci un altro indirizzo email.
-<br>Clicca su `Continua`{.action} per procedere al passo successivo, poi su `Conferma`{.action}.
+<br>Clicca su `Continua`{.action} e `Conferma`{.action}.
 
 ![Modalità Rescue Pro ](images/rescue-mode-003.png){.thumbnail}
 
