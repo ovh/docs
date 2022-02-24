@@ -22,8 +22,6 @@ Creating a project is the first step in deploying [Public Cloud instances](https
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and click on `Create your first OVH Public Cloud project`{.action}.
 
-![first connection](images/firstconnection.png){.thumbnail}
-
 You can now add a voucher if you have one. Only a voucher provided for your OVHcloud branch can be used.
 
 > [!warning]

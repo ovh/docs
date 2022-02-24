@@ -5,7 +5,7 @@ excerpt: Découvrez comment activer des notifications par e-mail ou SMS pour vou
 section: Diagnostic et dépannage
 ---
 
-**Dernière mise à jour le 10/05/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Pour pouvoir gérer vos alertes, connectez-vous à votre [espace client OVHcloud
 
 Dans l'onglet `Mon accès`{.action}, cliquez sur `Afficher les alertes`{.action} dans le cadre `Informations générales`.
 
-![espace client](images/espace-client.png){.thumbnail}
+![espace client](images/espace-client-2022.png){.thumbnail}
 
 Vous arrivez alors sur le formulaire de création de notifications.
 

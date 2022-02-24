@@ -287,11 +287,11 @@ Une fois l’installation du RTM réussie, vous pouvez à partir de votre espace
 
 ## Aller plus loin
 
-[ Quelles sont les adresses IP du monitoring OVH ?
-](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
+[ Quelles sont les adresses IP du monitoring OVHcloud ?
+](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/)
 
 [Visualiser vos données](https://docs.ovh.com/fr/metrics/usecase-visualize/)
 
 [Activer et utiliser le mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -77,9 +77,9 @@ Jeśli instalujesz system operacyjny GNU/Linux, możesz dodać klucz SSH do osta
 
 Jeśli klucz SSH jest już zarejestrowany, pojawi się on w rozwijanym menu w polu "Klucze SSH" na dole. Jeśli nie, najpierw należy dodać jedną z nich w sekcji "Moje usługi".
 
-Aby to zrobić, otwórz pasek boczny klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
+Aby to zrobić, otwórz pasek boczny klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Zarządzanie usługami`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_13.png){.thumbnail}
+![Spersonalizuj konfigurację partycji](images/SSH_13.1.png){.thumbnail}
 
 W sekcji "Moje usługi" przejdź do zakładki `Klucze SSH`{.action} i kliknij `Dodaj klucz SSH`{.action}.
 

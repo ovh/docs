@@ -1,17 +1,25 @@
 ---
-title: Konfiguracja Zerto Virtual Replication w DRP
+title: Korzystanie z Replikacji Zerto Virtual między dwoma centrami danych OVHcloud
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
 section: Usługi i opcje OVHcloud
 ---
 
-**Ostatnia aktualizacja z dnia 30-06-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 11-02-2022**
 
 ## Wprowadzenie
 
 Niniejszy przewodnik wyjaśnia, w jaki sposób skonfigurować Zerto Virtual Replication w infrastrukturze Private Cloud.
 
-**Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie odzyskiwania awaryjnego (DRP, Disaster Recovery Plan) w dwóch ofertach Private Cloud.**
+Niniejszy przewodnik wyjaśnia, w jaki sposób wdrożyć Zerto Virtual Replication między dwoma centrami danych OVHcloud.
+
+W pozostałych przypadkach zapoznaj się z naszym przewodnikiem dotyczącym sposobu [korzystania z usługi Zerto między OVHcloud a platformą zewnętrzną](https://docs.ovh.com/pl/private-cloud/zerto-virtual-replication-klient-do-ovhcloud/).
+
+**Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie odzyskiwania awaryjnego (DRP, Disaster Recovery Plan) w dwóch ofertach Hosted Private Cloud.**
 
 ## Wymagania początkowe
 

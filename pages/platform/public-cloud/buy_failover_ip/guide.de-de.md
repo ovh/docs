@@ -32,7 +32,7 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus.<br>
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 Klicken Sie im Menü auf der linken Seite im Abschnitt `Network` auf `Failover IP`{.action}.
 
 Klicken Sie dann auf die Schaltfläche `Aktionen`{.action} und wählen Sie `Failover-IPs kaufen`{.action}.

@@ -4,6 +4,7 @@ excerpt: 'Cambiar los contactos de un proyecto'
 slug: cambiar_los_contactos_de_un_proyecto
 legacy_guide_number: g2106
 section: 'Gestión del proyecto'
+order: 06
 ---
 
 **Última actualización: 6/12/2019**
@@ -47,9 +48,7 @@ Debe confirmar este procedimiento en ambas cuentas.
 
 ## Confirmación
 
-Para ello, acceda a las propiedades de su cuenta y seleccione «Mis contactos» en el lado derecho:
-
-![cambiar-contactos](images/controlpanel.png){.thumbnail}
+Para ello, acceda a las propiedades de su cuenta y seleccione «Mis contactos» en el lado derecho.
 
 En ambos paneles de control de contactos, acceda a la sección «Mis solicitudes»:
 

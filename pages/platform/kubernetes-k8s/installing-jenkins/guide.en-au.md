@@ -69,7 +69,7 @@ storageclass.storage.k8s.io/csi-cinder-high-speed created
 
 ## Installing the Jenkins Helm chart
 
-> [!warn]
+> [!warning]
 > As with Helm 2, the official Helm `stable` repository is currently deprecated.
 > The Helm community is currently transitioning to a hub model, with a [Helm Hub](https://hub.helm.sh/), where charts can be searched using `helm search hub <keyword>`
 > As most charts from the Helm _stable_ repository have been transferred to the [Bitnami repository](https://github.com/bitnami/charts/) we are using it in the tutorial.

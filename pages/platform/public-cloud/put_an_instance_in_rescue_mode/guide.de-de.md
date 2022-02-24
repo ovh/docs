@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
-**Letzte Aktualisierung am 26.07.2021**
+**Letzte Aktualisierung am 11.02.2022**
 
 ## Ziel
 
@@ -30,8 +30,6 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 ![control panel](images/compute2022.png){.thumbnail}
 
 Klicken Sie im Interface für die Instanzen auf `...`{.action} rechts neben der Instanz und wählen Sie `Neustart im Rescue-Modus`{.action}.
-
-
 
 Sie sehen nun den Dialog "Neustart im Rescue-Modus". Klicken Sie auf die Dropdown-Liste, um die Distribution auszuwählen, die Sie im Rescue-Modus verwenden möchten, und klicken Sie dann auf `Neu starten`{.action}.
 

@@ -5,7 +5,7 @@ excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre 
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 02/12/2020**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -16,10 +16,9 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 ## Prérequis
 
 - Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
-- Être connecté à l'[espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Telecom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} dans la partie `Telecom`{.action}.
 - Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
 - Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
-
 
 > [!primary]
 >
@@ -32,9 +31,9 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ### Étape 1 : retrouver les IP associées à votre accès
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
 
-![blocip](images/blocip-step01-edit.png){.thumbnail}
+![blocip](images/blocip-step01-edit-2022.png){.thumbnail}
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
@@ -66,11 +65,11 @@ Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à c
 > Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
 >
 
-Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
+Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
-![blocip](images/blocip-step04-edit.png){.thumbnail}
+![blocip](images/blocip-step04-edit-2022.png){.thumbnail}
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
@@ -234,7 +233,7 @@ Toujours dans le menu `Network Settings`{.action}, selectionnez le menu `Broadba
 
 En cas de doute, le type de votre connexion est disponible sur l’espace client OVHcloud.
 
-![blocip](images/blocip-step10.png){.thumbnail}
+![blocip](images/blocip-step10-2022.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivez le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 

@@ -47,9 +47,7 @@ Zmianę musisz potwierdzić na obu kontach.
 
 ## Potwierdzenie
 
-Aby potwierdzić, przejdź do właściwości konta i wybierz pozycję Moje kontakty (po prawej):
-
-![zmiana-kontactow](images/controlpanel.png){.thumbnail}
+Aby potwierdzić, przejdź do właściwości konta i wybierz pozycję Moje kontakty (po prawej).
 
 W Panelu klienta obu kontaktów przejdź do sekcji Moje żądania:
 

@@ -1,42 +1,47 @@
 ---
 title: Configurar llaves SSH adicionales
-excerpt: Configurar llaves SSH adicionales
+excerpt: Cómo configurar llaves SSH adicionales para la instancia de Public Cloud
 slug: configurar_llaves_ssh_adicionales
 legacy_guide_number: g1924
-section: Gestión de los accesos
+section: Tutoriales
+order: 01
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
 
-## 
-Al crear una instancia solo es posible configurar una única llave SSH. No obstante, usted puede autorizar el acceso a su instancia a otros usuarios que dispongan de llaves SSH configurando el archivo authorized_keys.
+**Última actualización: 04/02/2022**
 
-Esta guía explica cómo configurar llaves SSH adicionales en la instancia para dar acceso a ella a otras personas.
+## Objetivo
+ 
+Al crear una instancia, solo es posible configurar una llave SSH para la conexión inicial. Para permitir el acceso de su instancia a otros usuarios, es posible añadir claves configurando el archivo *authorized_keys*.
 
+**Esta guía explica cómo configurar llaves SSH adicionales para las conexiones a la instancia.**
 
-## Requisitos previos
-Es necesario disponer de una instancia.
+## Requisitos
 
+- Tener una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
+- Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Tener acceso a su instancia por SSH como administrador (root).
+
+## Procedimiento
 
 > [!primary]
 >
-Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
+Si quiere registrar una llave SSH en el Panel de configuración de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
 >
 
-## Creación de la llave SSH
+### Creación de la llave SSH
 
-- Crear llaves SSH
+Para crear una nueva llave SSH, consulte la [guía de las primeras etapas con Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/).
 
+### Configuración del nuevo usuario
 
-Sin embargo, no es necesario añadirla en el área de cliente de OVH.
+[Conéctese a su instancia por SSH](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#connect-to-instance) y cree un nuevo usuario con los siguientes comandos:
 
-
-## Configuración de un nuevo usuario
-Conéctese a la instancia.
-
-Cree un nuevo usuario:
-
-```
-admin@serveur-1:~$ sudo adduser user2
+```bash
+~$ sudo adduser user2
 
 Adding user `user2' ...
 Adding new group `user2' (1001) ...
@@ -44,48 +49,50 @@ Adding new user `user2' (1001) with group `user2' ...
 Creating home directory `/home/user2' ...
 Copying files from `/etc/skel' ...
 
-Enter new UNIX password: 
-Retype new UNIX password: 
+Enter new UNIX password:
+Retype new UNIX password:
 passwd: password updated successfully
 Changing the user information for user2
 Enter the new value, or press ENTER for the default
-Full Name []: 
-Room Number []: 
-Work Phone []: 
-Home Phone []: 
-Other []: 
+Full Name []:
+Room Number []:
+Work Phone []:
+Home Phone []:
+Other []:
 Is the information correct? [Y/n] Y
 ```
 
+Abra el archivo *authorized_keys* en la carpeta personal del nuevo usuario con un editor de texto:
 
-Añada la clave pública SSH a la carpeta personal del nuevo usuario:
-
-```
-admin@serveur-1:~$ sudo vim /home/user2/.ssh/authorized_keys
-```
-
-
-Puede crear la carpeta .ssh si esta no existe.
-
-```
-admin@serveur-1:~$ sudo mkdir /home/user2/.ssh/
+```bash
+~$ sudo nano /home/user2/.ssh/authorized_keys
 ```
 
+Añada al archivo la clave pública creada en el primer paso. Guarde y cierre el editor.
 
-Ya podrá conectarse desde ese usuario con la clave privada asociada a la que acaba de configurar:
+Si la carpeta .ssh todavía no existe, puede crearla con el siguiente comando:
 
-```
-root@serveur:~$ ssh user2@149.xxx.xxx.22
-
-Linux serveur-1 3.2.0-4-amd64 #1 SMP Debian 3.2.68-1+deb7u1 x86_64
-Last login: Fri Oct 16 08:14:24 2015 from proxy-109-190-254-35.ovh.net
-
-user2@serveur-1:~$
+```bash
+~$ sudo mkdir /home/user2/.ssh/
 ```
 
+Puede configurar varias llaves SSH añadiéndolas a los archivos *authorized_keys* de las correspondientes carpetas de usuario.
 
-Puede configurar otras llaves SSH para el usuario admin añadiéndolas al archivo authorized_keys correspondiente:
+Ya puede conectarse con el usuario y la clave privada configurados anteriormente:
 
+```bash
+~$ ssh user2@instance_IP
 ```
-admin@serveur-1:~$ sudo vim /home/admin/.ssh/authorized_keys
+```console
+Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
+
+user2@server:~$
 ```
+
+## Más información
+
+[Crear una primera instancia de Public Cloud y conectarse a ella](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/)
+
+[Cambiar la llave SSH en caso de pérdida](https://docs.ovh.com/us/es/public-cloud/modificar_su_llave_ssh_en_caso_de_perdida/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.

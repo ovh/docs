@@ -25,11 +25,11 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
 Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
-Pour connaître le nombre d'emplacements libres restants, rendez vous dans la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche et sélectionnez votre offre.
+Pour connaître le nombre d'emplacements libres restants, rendez vous dans la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} et sélectionnez votre offre.
 
 En sélectionnant votre pack, vous obtenez une vue globale des services associés à ce dernier. Vous pourrez alors retrouver le nombre d'emplacements encore disponibles.
 
-![nombre de lignes](images/Activation01-edit.png){.thumbnail}
+![nombre de lignes](images/Activation01-edit-2022.png){.thumbnail}
 
 Dans l'exemple ci-dessus, il y a :
 

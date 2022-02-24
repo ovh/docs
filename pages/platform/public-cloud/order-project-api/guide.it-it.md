@@ -6,7 +6,7 @@ section: Per iniziare
 order: 9
 ---
 
-**Ultimo aggiornamento: 22 dicembre 2020**
+**Ultimo aggiornamento: 22/12/2020**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.

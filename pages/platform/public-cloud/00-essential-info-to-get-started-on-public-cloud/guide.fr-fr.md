@@ -114,7 +114,7 @@ Vous pouvez avoir besoin de gérer plusieurs utilisateurs qui vont intervenir su
 - Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
 - Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](https://docs.ovh.com/fr/public-cloud/deleguer-ses-projets/) en complément sur votre projet.
 
-# Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="gofurther"></a>
 
 Voici quelques ressources générales qui vous aideront dans votre démarrage sur Public Cloud :
 

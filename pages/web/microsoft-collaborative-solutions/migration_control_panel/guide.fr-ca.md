@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Dernière mise à jour le 23/07/2021**
+**Dernière mise à jour le 22/02/2022**
 
 ## Objectif
 
@@ -93,7 +93,15 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 #### 3.2 Migrer la nouvelle version du MXPlan <a name="NouvelleVersionMxplan"></a>
 
-Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [Exchange](../ajouter-domaine-exchange/).
+> [!warning]
+>
+> Si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme e-mail, avant de commencer votre migration. <br> - *Par exemple, pour migrer le compte « myemail@mydomain.ovh », vous devez ajouter le nom de domaine « mydomain.ovh » à votre plateforme.*
+>
+>Sélectionnez l’onglet `Domaines associés`{.action} sur votre plateforme, puis cliquez sur `Ajouter un domaine`{.action}. Une fois le nom de domaine ajouté, assurez-vous que la mention `OK` est bien présente dans la colonne `Statut`.
+>
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
+>
+> Pour plus de détails sur l'ajout d'un nom de domaine, suivez [le guide Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/).
 
 La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
 

@@ -6,7 +6,7 @@ legacy_guide_number: g2029
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 26-07-2021**
+**Ostatnia aktualizacja z dnia 11-02-2022**
 
 ## Wprowadzenie
 
@@ -18,7 +18,7 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 
 ## Wymagania początkowe
 
-* [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
+* [Instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH
 
@@ -34,7 +34,7 @@ Następnie wybierz projekt Public Cloud z menu bocznego po lewej stronie ekranu 
 
 Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restartuj w trybie ratunkowym`{.action}.
 
-![](images/rescue2022.png){.thumbnail}
+![control panel](images/rescue2022.png){.thumbnail}
 
 Zostanie wyświetlone okno dialogowe „Restart w trybie ratunkowym”. Kliknij listę rozwijaną, aby wybrać dystrybucję systemu Linux do użycia w trybie ratunkowym, a następnie kliknij przycisk `Uruchom ponownie`{.action}.
 

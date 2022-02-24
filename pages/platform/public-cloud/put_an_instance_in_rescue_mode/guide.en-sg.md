@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 3
 ---
 
-**Last updated 26th July 2021**
+**Last updated 11th Febuary 2022**
 
 ## Objective
 
@@ -27,13 +27,13 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 
 ### Step 1: Activating rescue mode
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), switch to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Instances`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu.
 
 ![control panel](images/compute2022.png){.thumbnail}
 
 Click on `...`{.action} in the row of the instance concerned and select `Reboot in rescue mode`{.action}.
 
-![](images/rescue2022.png){.thumbnail}
+![control panel](images/rescue2022.png){.thumbnail}
 
 You will now see the `Reboot in rescue mode` dialog box. Click the drop-down list to select the distribution you would like to use in rescue mode and then click the `Restart`{.action} button.
 

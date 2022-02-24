@@ -4,9 +4,10 @@ excerpt: 'Poner una instancia en modo de rescate'
 slug: poner_una_instancia_en_modo_de_rescate
 legacy_guide_number: g2029
 section: 'Gestión de las instancias desde el área de cliente'
+order: 03
 ---
 
-**Última actualización: 26/07/2021**
+**Última actualización: 11/02/2022**
 
 ## Objetivo
 
@@ -34,7 +35,7 @@ A continuación, seleccione su proyecto de Public Cloud en el menú lateral a la
 
 A continuación, haga clic en los 3 puntos a la derecha de la instancia y seleccione `«Reiniciar en modo de rescate»`{.action}
 
-![](images/rescue2022.png){.thumbnail}
+![control panel](images/rescue2022.png){.thumbnail}
 
 Entonces verá el cuadro de diálogo «Reiniciar en modo de rescate». Haga clic en la lista desplegable para seleccionar la distribución de Linux que desea utilizar en el modo de rescate y, a continuación, en el botón `«Reiniciar»`{.action}.
 

@@ -163,7 +163,7 @@ In diesem Fall können Sie die [RAM-Kapazität](https://docs.ovh.com/de/hosting/
 
 Sie können Ihre Datenbank auch weiter optimieren, indem Sie die Anweisungen in unserer Anleitung "[Ihren Datenbankserver konfigurieren](https://docs.ovh.com/de/hosting/konfigurieren-ihres-datenbank-servers/#uberprufung-der-ram-nutzung)" befolgen.
 
-[!primary]
+> [!primary]
 >
 > Wenn Sie Schwierigkeiten haben, die Ressourcennutzung auf Ihrem Datenbankserver zu reduzieren, und diese nicht erhöhen möchten, kontaktieren Sie unsere [User Community](https://community.ovh.com/en/) oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/). Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 >

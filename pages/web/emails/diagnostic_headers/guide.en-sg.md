@@ -56,54 +56,44 @@ The header is composed of several elements indicating the path of the email. The
 Below is a non-exhaustive list of the elements that can make up a header, along with their meaning. 
 
 - The `Received` field is present in the header each time the email is sent to an outgoing server (SMTP). The host name of the server is usually found with its IP address and a timestamp. The `Received` fields are sorted from the most recent pass to the oldest pass on a server:
-
 <pre class="console"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
-	for <john@mydomain.ovh>; Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
- 
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
 </code></pre>
-
   *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC).*
 
-- The `Return-Path` field corresponds to the return address when the message failed to be sent. The return address is usually the one that sent the email. 
-
+- The `Return-Path` field corresponds to the return address when the message failed to be sent. The return address is usually the one that sent the email.
 <pre class="console"><code>
-Return-Path: &ltjohn@mydomain.ovh&gt
+Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - The `From` field indicates the email sender address and display name.
-
 <pre class="console"><code>
-From: John &ltjohn@mydomain.ovh&g
+From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - The `To` field indicates the email recipient address and display name.
-
 <pre class="console"><code>
-To: Robert &ltrobert@hisdomain.ovh&gt
+To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - The `Subject` field is the subject of the email.
-
 <pre class="console"><code>
 Subject: Hello my friend
 </code></pre>
 
 - The `Message-ID` field designates the unique identifier of the email and ends with the name of the outgoing server (after the "@"). 
-
 <pre class="console"><code>
-Message-ID: &ltDc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/sg/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
-
 <pre class="console"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
 
 - The `X-` fields are custom fields. They serve as complements to the standard fields. They are implemented by the servers that the emails pass through.
-
 <pre class="console"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
@@ -171,6 +161,9 @@ To download the `.eml` file, select the email you want. Click on the button `...
 To display the header, select the email you want and click on the **arrow** to the right of `Reply All`{.action}. Click on `View Message Details`{.action}. A new window will open with the full email header, allowing you to download it.
 
 ![emails](images/owa01.png){.thumbnail}
+
+Also see our video tutorial:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##### **Retrieving the .eml file**
 

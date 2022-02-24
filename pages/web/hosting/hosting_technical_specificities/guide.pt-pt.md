@@ -6,7 +6,11 @@ section: 'Configuração do alojamento'
 order: 4
 ---
 
-**Última atualização: 27/05/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 22/02/2022**
 
 ## Objetivo
 
@@ -120,6 +124,32 @@ Pode encontrar várias informações sobre o seu cluster através da seguinte li
 Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Alojamento`{.action} na barra à esquerda e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
 
 Para conhecer as especificidades técnicas do serviço Cloud Web, clique aqui: <https://cloudweb-infos.hosting.ovh.net/>
+
+### Informações sobre backups automáticos <a name="backup"></a>
+
+> [!warning]
+>
+> A OVHcloud compromete-se a fornecer um serviço de backup automático de dados, bem como a disponibilização desses backups. No entanto, é da sua responsabilidade implementar a sua própria política de restauração e determinar pontos de restauro nos momentos que considere oportunos.
+
+### Espaço de disco
+
+Todas as nossas ofertas de alojamento web partilhado situadas:
+
+- em Gravelines (GRA), França, dispõem de backups automáticos no dia 1 / D-2 / D-3 / D-7 / D-14. Estes backups são igualmente armazenados no datacenter de Roubaix (RBX), em França.
+
+- em Beauharnois (BHS), no Canadá, dispõem de backups automáticos a D-1 / D-2 / D-3 / D-7 / D-14. Estes backups são igualmente armazenados no datacenter de Beauharnois (BHS), no Canadá.
+
+Saiba como [ligar-se ao espaço de armazenamento](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) ou [restaurar o espaço de armazenamento do alojamento web](https://docs.ovh.com/pt/hosting/restauracao-ftp-filezilla-area-de-cliente/) nos nossos documentos.
+
+###### Base de dados / SQL
+
+Para as bases de dados partilhadas (incluídas na sua oferta de alojamento Web) ou os servidores de base de dados (SQL privado / Cloud Databases), propostos em Gravelines (GRA), em França e Beauharnois (BHS), no Canadá, o backup das bases de dados é feito todos os dias. Estes backups estão acessíveis (através de [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external} ou através das [API OVHcloud](https://api.ovh.com/). Os backups são igualmente armazenados numa outra infraestrutura. Estes dados são replicados em 3 locais distintos em França: Roubaix(RBX), Estrasburgo(SBG) e Gravelines(GRA). A política de retenção dos backups é de 30 dias.
+
+Saiba como [Recuperar o backup da base de dados de um alojamento web](https://docs.ovh.com/pt/hosting/partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) no nosso manual.
+
+##### E-mail
+
+Para as contas de e-mails partilhadas (incluídas na sua oferta de alojamento Web), é realizado um backup automático diário, que é copiado para outro centro de dados.
 
 ## Política de utilização de cookies
 

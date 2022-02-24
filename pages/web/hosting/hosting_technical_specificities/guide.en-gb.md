@@ -5,7 +5,7 @@ excerpt: 'Find out details about the technical capabilities of your Web Hosting 
 section: 'Web Hosting configuration'
 ---
 
-**Last updated 11th June 2020**
+**Last updated 22th February 2022**
 
 
 ## Objective
@@ -79,7 +79,7 @@ Please refer to [this guide](../creating-database/) for more information about m
 > [!primary]
 >
 > The .ovhconfig file is functional at the root folder of the Web Hosting or in a level 1 subdirectory (usually _/www/_). The only way to override the main .ovhconfig settings is with another .ovhconfig file in a subfolder.  
-Placing this file deeper in the directory structure will have no effect (e.g. _/www/test/_, _/www/test/test2/_). Make sure the file is readable by your CMS (604 or 644).
+> Placing this file deeper in the directory structure will have no effect (e.g. _/www/test/_, _/www/test/test2/_). Make sure the file is readable by your CMS (604 or 644).
 >
 
 
@@ -123,6 +123,31 @@ You can verify the cluster number of the Web Hosting on this page under **FTP se
 
 For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/>
 
+### Automatic backup information <a name=“backup”></a>
+
+> [!warning]
+>
+> OVHcloud is committed to providing an automatic data backup service, as well as making these backups available. However, it is your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
+
+#### Disk space
+
+All of our Web Hosting plans located in:
+
+- Gravelines (GRA), France have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are stored in the Roubaix (RBX) data centre in France.
+
+- Beauharnois (BHS), Canada have automatic backups at D-1 / D-2 / D-3 / D-7 / D-14. These backups are stored in the Beauharnois (BHS) data centre in Canada.
+
+Find out how to [log in to your storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) or [restore your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/) in our documentation.
+
+#### Database / SQL
+
+For shared database services (included in your Web Hosting plan) or database servers (Private SQL/Cloud Databases), offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. You can access these backups (via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} or via the [OVHcloud API](https://api.ovh.com/)). Backups are also stored on another infrastructure. This data is replicated in 3 separate locations in France: Roubaix (RBX), Strasbourg (SBG), and Gravelines (GRA). The backup retention policy is 30 days.
+
+Find out how to [Retrieve a database backup of a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_database_export_guide/) in our guide.
+
+#### Email
+
+For shared email accounts (included in your Web Hosting plan), a daily automatic backup is created and copied to another data centre.
 
 ### Cookie Policy
 

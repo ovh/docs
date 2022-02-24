@@ -42,12 +42,12 @@ O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https
 
 Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
 
-![Alterar o modo de arranque](images/rescue-mode-01.png){.thumbnail}
+![Alterar o modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
-No ecrã seguinte, selecione **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
-<br>Clique em `Seguinte`{.action} e `Validar`{.action}.
+Na página seguinte, seleccionar **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
+<br>Clique em `Seguinte`{.action} para prosseguir para o próximo passo, depois em `Validar`{.action}.
 
-![Modo rescue-pro](images/rescue-mode-03.png){.thumbnail}
+![Modo rescue-pro](images/rescue-mode-003.png){.thumbnail}
 
 Concluída a alteração, clique em `...`{.action} à direita do "Estado" na zona **Estado dos serviços**.
 <br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.

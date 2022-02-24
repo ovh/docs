@@ -2,7 +2,8 @@
 title: Configurar uma nova instalação do Windows Server
 slug: windows-first-config
 excerpt: Saiba como ativar a ligação à Área de Trabalho remota e a resposta ICMP
-section: Introdução
+section: Primeiros passos
+order: 7
 ---
 
 > [!primary]

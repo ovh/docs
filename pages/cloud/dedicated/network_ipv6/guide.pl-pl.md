@@ -2,7 +2,7 @@
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 slug: siec-ipv6
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-section: 'Zarządzanie siecią'
+section: 'Sieć & IP'
 ---
 
 **Ostatnia aktualizacja: 01/12/2021**
@@ -40,7 +40,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 > - Adres IPv6 serwera to 2607:5300:60:62ac::/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
 > - Adres IPv6 serwera to 2001:41D0:1:46e::/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 >
 
 > [!api]
@@ -62,7 +62,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-[Więcej informacji zawiera ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+[Więcej informacji zawiera ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
@@ -118,7 +118,7 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
@@ -168,7 +168,7 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
@@ -215,7 +215,7 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
@@ -271,7 +271,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu RDP
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie konfiguracji sieci dla serwera

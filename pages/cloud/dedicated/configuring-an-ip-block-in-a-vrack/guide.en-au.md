@@ -15,11 +15,11 @@ As well as private IP addressing, the [vRack](https://www.ovh.com.au/solutions/v
 
 ## Requirements
 
-* a public block of IP addresses in your account, with a minimum of four addresses
-* your chosen private IP address range
-* a [vRack compatible server](https://www.ovh.com.au/dedicated-servers/){.external}
-* a [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service activated in your account
-* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+* A public block of IP addresses in your account, with a minimum of four addresses
+* Your chosen private IP address range
+* A [vRack compatible server](https://www.ovh.com.au/dedicated-servers/){.external}
+* A [vRack](https://www.ovh.com.au/solutions/vrack/){.external} service activated in your account
+* Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 

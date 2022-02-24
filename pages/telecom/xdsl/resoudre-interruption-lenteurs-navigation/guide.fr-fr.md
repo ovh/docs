@@ -5,17 +5,17 @@ excerpt: 'Découvrez comment rétablir votre accès à Internet ou identifier un
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 22/10/2018**
+**Dernière mise à jour le 16/02/2021**
 
 ## Objectif
 
 Une interruption ou des lenteurs de navigation sur Internet peuvent être occasionnées par un élément perturbateur, généralement situé dans votre domicile. Celui-ci peut être lié à l'un de vos équipements (votre ordinateur, par exemple) ou à une mauvaise configuration. Quelques vérifications et manipulations vous permettent, dans la plupart des cas, de rétablir votre accès à Internet ou d'identifier l'élément perturbateur.
 
-**Découvrez comment résoudre une interruption ou des lenteurs de navigation sur votre connexion OVH.**
+**Découvrez comment résoudre une interruption ou des lenteurs de navigation sur votre connexion OVHcloud.**
 
 ## Prérequis
 
-- Disposer d'un ordinateur relié à votre modem OVH via un câble Ethernet ou en Wi-Fi.
+- Disposer d'un ordinateur relié à votre modem OVHcloud via un câble Ethernet ou en Wi-Fi.
 
 ## En pratique
 
@@ -27,7 +27,7 @@ Avant de débuter, assurez-vous qu'aucun élément plus global ne perturbe votre
 
 - **le service n'est pas dégradé suite à une saturation de votre connexion** : il est possible que votre connexion fonctionne correctement mais qu'un élément relié à votre modem accapare le débit disponible. Reportez-vous alors aux instructions décrites dans notre documentation « [Vérifier si son lien xDSL est saturé](https://docs.ovh.com/fr/xdsl/verifier-lien-xdsl-sature/){.external} » ;
 
-- **aucun incident sur votre ligne n'est en cours** : un incident plus global pourrait perturber votre accès. Rendez-vous donc sur la page <https://www.ovhtelecom.fr/xdsl/incident/#/> ou sur notre site [Travaux OVH](http://travaux.ovh.net/?project=20&status=all&perpage=50){.external} ;
+- **aucun incident sur votre ligne n'est en cours** : un incident plus global pourrait perturber votre accès. Rendez-vous donc sur la page <https://www.ovhtelecom.fr/xdsl/incident/#/> ou sur notre site [status-ovhcloud.com](https://web-cloud.status-ovhcloud.com/){.external} ;
 
 - **le service fonctionne sur un autre équipement** : si vous en avez la possibilité, testez votre connexion depuis un équipement différent (tel qu'un autre ordinateur ou un téléphone).
 
@@ -63,7 +63,7 @@ Il se peut qu'un élément basique de votre ordinateur (comme la configuration d
 
 - vérifiez que la date et l'heure sont à jour sur votre ordinateur. Si ce n'est pas le cas, l'accès à certains sites bénéficiant d'un certificat SSL pourrait ne plus fonctionner ;
 
-- si vous avez activé le protocole **IPv6** sur votre accès internet OVH, assurez-vous que le ou les sites qui ne fonctionnent pas sont bien accessibles via ce protocole. Si ce n'est pas le cas, désactiver l'IPv6 pourrait rétablir l'accès à ces pages. Cette gestion s'effectue dans l'espace client depuis l'onglet `Mon accès`{.action} de l'accès à Internet concerné, puis la section `Caractéristiques`.
+- si vous avez activé le protocole **IPv6** sur votre accès internet OVHcloud, assurez-vous que le ou les sites qui ne fonctionnent pas sont bien accessibles via ce protocole. Si ce n'est pas le cas, désactiver l'IPv6 pourrait rétablir l'accès à ces pages. Cette gestion s'effectue dans l'espace client depuis l'onglet `Mon accès`{.action} de l'accès à Internet concerné, puis la section `Caractéristiques`.
 
 Si votre connexion fonctionne de nouveau, un élément perturbe donc bien son fonctionnement sur votre ordinateur. Reconfigurez, réinitialisez ou écartez cet élément afin de résoudre la panne. Si votre connexion ne fonctionne toujours pas, poursuivez la lecture de cette documentation.
 
@@ -105,9 +105,9 @@ Pour l'activer, faites un clic droit sur l'image représentant la carte puis cli
 
 Selon votre méthode de connexion, une icône (Wi-Fi ou câble) sera présente en bas à droite de votre écran.
 
-- **Pour une connexion WIFI** (image de gauche) : l'icône indique que des connexions sont disponibles et vous invite à vous connecter à un réseau Wi-Fi. Pour cela, cliquez sur l'icône, sélectionnez le nom de votre réseau Wi-Fi (*SSID*), puis renseignez le mot de passe correspondant (*wifi key*). Si besoin, ces informations se situent à l'arrière de votre modem OVH.
+- **Pour une connexion WIFI** (image de gauche) : l'icône indique que des connexions sont disponibles et vous invite à vous connecter à un réseau Wi-Fi. Pour cela, cliquez sur l'icône, sélectionnez le nom de votre réseau Wi-Fi (*SSID*), puis renseignez le mot de passe correspondant (*wifi key*). Si besoin, ces informations se situent à l'arrière de votre modem OVHcloud.
 
-- **Pour une connexion Ethernet par câble** (image de droite) : l'icône indique qu'aucune connexion n'est disponible et vous précise que la liaison entre votre ordinateur et votre modem OVH n'est pas détectée. Vérifiez alors si un câble est bien présent entre ces deux équipements, ainsi que son état. Si possible, essayez un autre câble. Enfin, testez de relier ce câble à un autre port Ethernet derrière votre modem OVH. 
+- **Pour une connexion Ethernet par câble** (image de droite) : l'icône indique qu'aucune connexion n'est disponible et vous précise que la liaison entre votre ordinateur et votre modem OVHcloud n'est pas détectée. Vérifiez alors si un câble est bien présent entre ces deux équipements, ainsi que son état. Si possible, essayez un autre câble. Enfin, testez de relier ce câble à un autre port Ethernet derrière votre modem OVHcloud. 
 
 ![browsingoutage](images/xdsl-browsing-outage-step4.png){.thumbnail}
 
@@ -123,7 +123,7 @@ Plusieurs causes peuvent expliquer cet état. Nous vous conseillons alors de :
 
 - vérifier si votre modem est toujours connecté à Internet. Pour cela, reportez-vous aux instructions décrites dans notre documentation « [Rétablir son service suite à une coupure complète ou partielle](https://docs.ovh.com/fr/xdsl/interruption-de-service/){.external} » ;
 - vous assurer que la clef Wi-Fi utilisée est correcte. Tentez de vous connecter de nouveau en renseignant la bonne clef ;
-- redémarrer votre modem ainsi que votre ordinateur. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
+- redémarrer votre modem ainsi que votre ordinateur. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} ».
 
 ![browsingoutage](images/xdsl-browsing-outage-step6.png){.thumbnail}
 
@@ -140,25 +140,25 @@ Votre connexion Wi-Fi n'est toujours pas fonctionnelle ? Deux vérifications pe
 
 - **Modifier la clef Wi-Fi** : votre réseau Wi-Fi étant accessible par le biais d'une clef, il est possible que celle que vous utilisez ne soit pas correcte. Il est alors conseillé de modifier la clef Wi-Fi, afin d'être sûr d'en utiliser une fonctionnelle.
 
-Pour accéder à la configuration de votre réseau Wi-Fi OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l'accès Internet concerné. Positionnez-vous sur l'onglet `Mon modem`{.action} et cliquez sur `Configurer les réseaux Wi-Fi`{.action} dans la section `Configuration générale`{.action}.
+Pour accéder à la configuration de votre réseau Wi-Fi OVHcloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action} puis sélectionnez le pack et l'accès Internet concerné. Positionnez-vous sur l'onglet `Mon modem`{.action} et cliquez sur `Configurer les réseaux Wi-Fi`{.action} dans la section `Configuration générale`{.action}.
 
-![browsingoutage](images/xdsl-browsing-outage-step7.png){.thumbnail}
+![browsingoutage](images/espaceclient2022.png){.thumbnail}
 
 Dans la page qui apparaît, cliquez sur le bouton représentant des points de suspension (à droite du réseau Wi-Fi que vous souhaitez configurer), puis sur `Éditer`{.action}. La configuration actuelle s'affiche en dessous du tableau. Vous pouvez y modifier le canal Wi-Fi ainsi que la clef Wi-Fi. 
 
 Validez vos changements grâce au bouton `Valider`{.action} et **patientez cinq minutes le temps que la modification soit prise en compte par votre modem.** Si nécessaire, effectuez plusieurs tests concernant le canal Wi-Fi afin de trouver celui le plus stable et le mieux adapté à votre situation.
 
-![browsingoutage](images/xdsl-browsing-outage-step8.png){.thumbnail}
+![browsingoutage](images/wifi-2022.png){.thumbnail}
 
 #### 3. Vérifier la configuration réseau de votre modem
 
 Si la connexion n'est toujours pas fonctionnelle, vérifier que la configuration réseau du modem peut permettre de rétablir votre accès.
 
-Pour cela, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l'accès Internet concerné. Positionnez-vous sur l'onglet `Mon modem`{.action} et descendez dans la page jusqu'à voir la section `Configuration réseau`{.action}.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action} puis sélectionnez le pack et l'accès Internet concerné. Positionnez-vous sur l'onglet `Mon modem`{.action} et descendez dans la page jusqu'à voir la section `Configuration réseau`{.action}.
 
 Nous allons nous intéresser spécifiquement aux tableaux `IP LAN` et `DHCP`.
 
-![browsingoutage](images/xdsl-browsing-outage-step9.png){.thumbnail}
+![browsingoutage](images/acces-internet-laptop-test-step12-2022.png){.thumbnail}
 
 Si vous n'avez pas modifié la configuration réseau de votre modem, vous devriez trouver les informations ci-dessous :
 
@@ -178,9 +178,9 @@ Si vous ne retrouvez pas ces éléments dans la configuration de votre modem, c'
 
 Vous avez également la possibilité de réinitialiser la configuration de votre modem. Toutefois, assurez-vous que cette opération ne provoquera pas l'indisponibilité d'éléments de votre réseau local. 
 
-Pour réinitialiser la configuration de votre modem, depuis l'onglet `Mon modem`{.action}, descendez dans la page jusqu'à voir la section `Configurations avancées`{.action}, puis cliquez sur `Réinitialiser la configuration OVH`{.action}. **Patientez cinq minutes le temps que la modification soit prise en compte par votre modem.**
+Pour réinitialiser la configuration de votre modem, depuis l'onglet `Mon modem`{.action}, descendez dans la page jusqu'à voir la section `Configurations avancées`{.action}, puis cliquez sur `Réinitialiser la configuration OVHcloud`{.action}. **Patientez cinq minutes le temps que la modification soit prise en compte par votre modem.**
 
-![browsingoutage](images/xdsl-browsing-outage-step10.png){.thumbnail}
+![browsingoutage](images/acces-internet-laptop-test-step13-2022.png){.thumbnail}
 
 #### 4. Vérifier la configuration de la carte réseau
 

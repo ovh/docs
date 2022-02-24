@@ -2,7 +2,8 @@
 title: Enforcing policy management on OVHcloud Managed Kubernetes with Kyverno
 slug: installing-kyverno
 excerpt: Find out how to secure your OVHcloud Managed Kubernetes and deploy Kyverno for policy management
-section: Tutorials
+section: Security
+order: 0
 ---
 
 **Last updated 7th February 2022.**

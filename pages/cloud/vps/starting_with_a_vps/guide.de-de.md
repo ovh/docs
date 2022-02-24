@@ -32,7 +32,7 @@ Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren S
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `Virtual Private Server`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Virtual Private Server`{.action} Ihren Server aus.
 
 Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihnen, grundlegende Operationen auszuführen. Es unterscheidet sich je nach Reihe Ihres VPS.
 
@@ -106,7 +106,7 @@ Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. G
 Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 - Ihr Betriebssystem aus dem Drop-down-Menü
-- einen [SSH-Schlüssel](../../dedicated/ssh-schluessel-erzeugen/) (optional)
+- Einen [SSH-Schlüssel](../../dedicated/ssh-schluessel-erzeugen/) (optional)
 
 ![Neuinstallation des VPS](images/2020panel_01.png){.thumbnail}
 
@@ -164,14 +164,14 @@ Jede Neuinstallation erfolgt direkt in Ihrem Kundencenter. Klicken Sie einfach a
 Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 - Ihr Betriebssystem aus dem Drop-down-Menü
-- die Nutzersprache
-- einen [SSH-Schlüssel](../../dedicated/ssh-schluessel-erzeugen/) (optional)
+- Die Nutzersprache
+- Einen [SSH-Schlüssel](../../dedicated/ssh-schluessel-erzeugen/) (optional)
 
 ![Auswahlmenü für die Neuinstallation](images/reinstall_menu.png){.thumbnail}
 
 > [!primary]
 >
->Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Bare Metal Cloud`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
+>Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `Lizenzen`{.action}.
 >
 Um ein **Windows** Betriebssystem auf einem VPS zu betreiben, muss es **bei der Bestellung des Dienstes** ausgewählt werden. Ein VPS mit einem anderen Betriebssystem kann nicht nachträglich auf dem beschriebenen Weg mit Windows reinstalliert werden.
 >

@@ -5,7 +5,7 @@ excerpt: Découvrez comment configurer un bloc d'adresses IP publiques dans le v
 section: vRack
 ---
 
-**Dernière mise à jour le 2018/08/24**
+**Dernière mise à jour le 24/08/2018**
 
 ## Objectif
 
