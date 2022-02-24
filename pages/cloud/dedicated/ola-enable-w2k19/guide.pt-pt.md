@@ -22,7 +22,7 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas par
 ## Instruções
 
 A configuração private-private disponível no OLA para as nossas NIC não permite aceder ao servidor em SSH. Para aceder ao servidor, é necessário utilizar a ferramenta IPMI.
-<br>Para o fazer, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, selecione o seu servidor em em `Servidores dedicados`{.action} e clique no separador `IPMI`{.action} (1).
+<br>Para o fazer, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, selecione o seu servidor em `Servidores dedicados`{.action} e clique no separador `IPMI`{.action} (1).
 
 Em seguida, clique no botão `A partir de applet java (KVM)`{.action} (2).
 
