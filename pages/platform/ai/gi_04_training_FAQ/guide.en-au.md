@@ -49,7 +49,7 @@ Here are the most frequently asked questions about AI Training.
 > > Depending on how you build your container, make sure that the mapping between your data (/workspace/mybucket for instance) is not already existing within your image.
 > >
 > Why can't I can't access my UI ?
-> > Make sure your job is in a « running » state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](https://docs.ovh.com/gb/en/ai-training/capabilities/#available-ports-to-public-network)).
+> > Make sure your job is in a « running » state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](https://docs.ovh.com/gb/en/publiccloud/ai/training/capabilities/#available-ports-to-public-network)).
 > > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensoboard user the `--bind-all` flag).
 > >
 > Why is the image not executed with the expected linux user ?
@@ -60,13 +60,13 @@ Here are the most frequently asked questions about AI Training.
 > > `COPY --chown=42420:42420 my_local_folder my_folder_embeded_in_image`
 > >
 > How to start a notebook ?
-> > All steps for starting and working on notebooks are described [here](../start-use-notebooks)
+> > All steps for starting and working on notebooks are described [here](https://docs.ovh.com/au/en/publiccloud/ai/training/start-use-notebooks)
 > >
 > How to add python library in a notebook ?
 > > You can use `pip` command inside console of notebooks to install libraries as long as the installation process doesn't require root access. If a specific library require root access you will have instead to build your own job image with all your libraries and use it instead of provided ones.
 > >
 > How to build my first Datascience container ?
-> > Essential information about building custom Docker container can be found [here](../build-use-custom-image). Advanced information can be found [here](https://docs.docker.com/engine/reference/builder/)
+> > Essential information about building custom Docker container can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/training/build-use-custom-image). Advanced information can be found [here](https://docs.docker.com/engine/reference/builder/)
 > >
 
 ## Feedback

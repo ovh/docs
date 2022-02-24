@@ -14,7 +14,7 @@ This guide shows how to access Object Storage data from your [**notebooks**](htt
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ca/en/ai-training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ca/en/publiccloud/ai/training/install-client/))
 
 ## Upload data to your Object Storage
 

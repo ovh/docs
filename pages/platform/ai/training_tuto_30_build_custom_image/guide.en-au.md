@@ -16,7 +16,7 @@ This tutorial covers the process of building your own job image for specific nee
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](../create-user)
+-   a [user for AI Training](https://docs.ovh.com/au/en/publiccloud/ai/create-user)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building an image and a [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -132,7 +132,7 @@ Pushing your image to a registry is needed in order for AI Training to pull it.
 
 AI Training provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](../add-private-registry) before using it.
+If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](https://docs.ovh.com/au/en/publiccloud/ai/training/add-private-registry) before using it.
 
 The basic commands to push a docker image to a registry is :
 

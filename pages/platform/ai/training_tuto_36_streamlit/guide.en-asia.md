@@ -18,7 +18,7 @@ The purpose of this tutorial is to provide a concrete example on how to build an
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](../create-user)
+-   a [user for AI Training](https://docs.ovh.com/asia/en/publiccloud/ai/create-user)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
@@ -135,7 +135,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 >
-> The shared registry of AI Training should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](../add-private-registry).
+> The shared registry of AI Training should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](https://docs.ovh.com/asia/en/publiccloud/ai/training/add-private-registry).
 
 Find the address of your shared registry by launching this command:
 

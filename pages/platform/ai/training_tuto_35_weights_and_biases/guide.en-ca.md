@@ -25,7 +25,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 ### Launch and access Jupyter notebook
 
-If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), just follow this [guide](../start-use-notebooks) and select the docker image of your choice.
+If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), just follow this [guide](https://docs.ovh.com/ca/en/publiccloud/ai/training/start-use-notebooks) and select the docker image of your choice.
 
 If you want to launch it with the CLI, just choose the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 

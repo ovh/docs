@@ -34,7 +34,7 @@ ovhai capability
 ```
 
 > [!primary]
-> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](../data)
+> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](https://docs.ovh.com/sg/en/publiccloud/ai/data)
 
 ### Available ports to public network
 

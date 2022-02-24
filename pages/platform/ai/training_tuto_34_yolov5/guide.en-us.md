@@ -29,7 +29,7 @@ If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [guide](../data-cli). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [guide](https://docs.ovh.com/us/en/publiccloud/ai/cli/data-cli). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ``` {.bash}
 ovhai data upload <region> <container> <paths>
@@ -41,15 +41,15 @@ ovhai data upload <region> <container> <paths>
 
 ### Launching and accessing Jupyter notebook with Pytorch library
 
-You need to attach a volume if your data is in your OVHcloud object storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data](../data).
+You need to attach a volume if your data is in your OVHcloud object storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/us/en/publiccloud/ai/data).
 
-If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), just follow this [guide](../start-use-notebooks).
+If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), just follow this [guide](https://docs.ovh.com/us/en/publiccloud/ai/training/start-use-notebooks).
 
 `Choose the same region as your object container` > `select the Pytorch docker image` > `Attach Object Storage containers (the one that contains your dataset)`
 
 ![image](images/new-job-attach-object-storage-container.png){.thumbnail}
 
-If you want to launch it with the CLI, choose the [volume](../run-job-cli/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
+If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/us/en/publiccloud/ai/cli/run-job-cli/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
 ``` {.bash}
 ovhai job run ovhcom/ai-training-pytorch:1.8.1 --volume <container@region/prefix:mount_path:permission:cache> --gpu <nb-gpus>

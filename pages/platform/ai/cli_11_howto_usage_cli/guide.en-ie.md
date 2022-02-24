@@ -14,7 +14,7 @@ This guide covers the usage of the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/install-client)
 
 ## Instructions
 

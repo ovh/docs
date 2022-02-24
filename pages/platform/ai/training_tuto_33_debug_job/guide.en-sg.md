@@ -15,7 +15,7 @@ This tutorial gives you some hints on how to debug your jobs if things go wrong.
 ## Requirements
 
 -   an **AI Training Job** you would like to start
--   the [OVHcloud AI CLI](../install-client) installed
+-   the [OVHcloud AI CLI](https://docs.ovh.com/sg/en/publiccloud/ai/cli/install-client) installed
 
 ## Which commands and arguments can I use to debug?
 

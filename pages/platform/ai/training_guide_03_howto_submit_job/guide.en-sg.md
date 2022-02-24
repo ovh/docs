@@ -10,7 +10,7 @@ order: 03
 
 ## Objective
 
-This guide covers the initialisation of **AI Training** and the submission of [**jobs**](../jobs) through the OVHcloud Control Panel.
+This guide covers the initialisation of **AI Training** and the submission of [**jobs**](https://docs.ovh.com/sg/en/publiccloud/ai/training/jobs) through the OVHcloud Control Panel.
 
 ## Requirements
 
@@ -45,7 +45,7 @@ Once **AI Training** is activated you land on the **dashboard** service with sev
 -   Jobs: list of active jobs
 
 > [!primary]
-> You don't need a user to launch a new job from the OVHcloud manager but you will need one later if you want to use the CLI or access your jobs urls. Instructions for creating new users are described [here](../create-user).
+> You don't need a user to launch a new job from the OVHcloud manager but you will need one later if you want to use the CLI or access your jobs urls. Instructions for creating new users are described [here](https://docs.ovh.com/sg/en/publiccloud/ai/create-user).
 
 ### Step 3 - Starting a job submission
 
@@ -55,7 +55,7 @@ From the **jobs** list in the dashboard you can start the job submission by clic
 
 ### Step 4 - Selecting a region for your job
 
-Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information see the [capabilities](../capabilities).
+Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information see the [capabilities](https://docs.ovh.com/sg/en/publiccloud/ai/training/capabilities).
 Select the desired region and click `Next`{.action}.
 
 ![image](images/06_submit_region.png){.thumbnail}
@@ -74,17 +74,17 @@ OVHcloud provides a set of images from which you can choose to ease the submissi
 
 Preset images cannot cover all your needs so you can specify your own image if necessary. You can use any image that is accessible from **AI Training**.
 
-This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](../add-private-registry).
+This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](https://docs.ovh.com/sg/en/publiccloud/ai/training/add-private-registry).
 
 Once your image is chosen, click `Next`{.action}.
 
 ### Step 6 - Attaching data to your job (optional)
 
-You can attach [**data**](../data) objects to your job either as input for your training workload or as output for your results (e.g. model weights).
+You can attach [**data**](https://docs.ovh.com/sg/en/publiccloud/ai/data) objects to your job either as input for your training workload or as output for your results (e.g. model weights).
 
-Before attaching a data object you need to [create one](../data). A **data** object cannot be attached to a running **job**.
+Before attaching a data object you need to [create one](https://docs.ovh.com/sg/en/publiccloud/ai/data). A **data** object cannot be attached to a running **job**.
 
-To attach a **data** object, just select from the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customise this mount path, you will need to use the **`ovhai` CLI**, its installation procedure is available [here](../install-client).
+To attach a **data** object, just select from the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customise this mount path, you will need to use the **`ovhai` CLI**, its installation procedure is available [here](https://docs.ovh.com/sg/en/publiccloud/ai/cli/install-client).
 
 ![image](images/10_submit_data_selected.png){.thumbnail}
 
@@ -104,7 +104,7 @@ The Docker image you provided in Step 5 includes an entrypoint for your containe
 
 In this step you can either select the amount of GPUs or CPUs you need for your training workload.
 
-The max amount of GPUs or CPUs you can select for your **job** is region dependent. If you choose a GPU a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](../capabilities).
+The max amount of GPUs or CPUs you can select for your **job** is region dependent. If you choose a GPU a fixed ratio of CPU is applied based on the number of GPUs. Similarly, there is a fixed ratio of Memory based on the number of CPUs. For more information see the [capabilities](https://docs.ovh.com/sg/en/publiccloud/ai/training/capabilities).
 
 Once the amount of resources is set you can see a preview of the billing rate. Click `Next`{.action}.
 
@@ -135,7 +135,7 @@ From this list you can access your job details either by clicking on its `ID` or
 ![image](images/15_jobs_details.png){.thumbnail}
 
 -   **Job Information**: basic information on the job you submitted
--   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
+-   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](https://docs.ovh.com/sg/en/publiccloud/ai/training/capabilities).
 -   **Resources**: a summary of the resources consumed by the **job**
 -   **Actions**: available actions
 -   **Data**: list of **data** objects attached to the job

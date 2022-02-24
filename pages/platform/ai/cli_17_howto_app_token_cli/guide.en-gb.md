@@ -14,7 +14,7 @@ This guide covers the creation of application tokens for AI Training.
 
 ## Requirements
 
--   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
+-   a working `ovhai` CLI [how to install ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client)
 
 ## Instructions
 

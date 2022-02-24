@@ -20,7 +20,7 @@ order: 105
 
 There are two ways to manage your data:
 
--   You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](../install-client)
+-   You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client)
 -   You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), see [create data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
 
 ## How it works

@@ -14,7 +14,7 @@ This guide shows how to share [**notebooks**](https://docs.ovh.com/asia/en/publi
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/asia/en/ai-training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/asia/en/publiccloud/ai/training/install-client/))
 
 ## Share a notebook with people in your Public Cloud project
 

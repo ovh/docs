@@ -55,7 +55,7 @@ These AI models will work to detect the positive or negative feelings in English
 
 > [!primary]
 >
-> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](https://docs.ovh.com/asia/en/ai-training/build-use-custom-image/) guide.
+> If you want to deploy your own container, you need to comply with a few rules like adding a specific user. Follow our [Build and use custom images](https://docs.ovh.com/asia/en/publiccloud/ai/training/build-use-custom-image/) guide.
 >
 
 #### Step 3: Assign compute resources

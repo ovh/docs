@@ -16,12 +16,12 @@ This tutorial covers the proccess of starting a new Jupyter notebook and experim
 
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](../create-user)
+-   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/create-user)
 -   some knowledge about [Tensorflow](https://www.tensorflow.org/) library
 
 ## Launch and access Jupyter notebook with Tensorflow library
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](../start-use-notebooks) and select the `Tensorflow 2` docker image.
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/training/start-use-notebooks) and select the `Tensorflow 2` docker image.
 
 If you want to launch it with the `CLI`, just choose the number of GPUs (`<nb-gpus>`) to use on jour job and use the following command:
 

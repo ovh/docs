@@ -15,8 +15,8 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 ## Requirements
 
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](../create-user)
--   installing the [OVHcloud AI CLI](../install-client)
+-   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/create-user)
+-   installing the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client)
 
 > [!warning]
 > The deployed image needs to contain the `bash` binary and a glibc-based Linux (Ubuntu / Debian)

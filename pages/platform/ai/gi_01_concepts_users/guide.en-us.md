@@ -12,7 +12,7 @@ order: 104
 
 The **users** of the AI Training platform are simply your Public Cloud users that you can create in the OVHcloud Control Panel. To give access to **AI Training** to any of your users, you need to grant them the **AI Training Operator** role. Then you can use this user's credentials to authenticate.
 
-**AI Training** includes the OVHcloud Object Storage as a persistent storage solution for your [data](../data). To use these features the user needs to be granted the **Objectstore Operator** role since it implies read/write access to the Object Storage.
+**AI Training** includes the OVHcloud Object Storage as a persistent storage solution for your [data](https://docs.ovh.com/us/en/publiccloud/ai/data). To use these features the user needs to be granted the **Objectstore Operator** role since it implies read/write access to the Object Storage.
 
 ### Roles
 
@@ -28,7 +28,7 @@ There are 2 available roles :
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to submit a job](../submit-job).
+-   You can check the [OVHcloud documentation on how to submit a job](https://docs.ovh.com/us/en/publiccloud/ai/training/submit-job).
 
 ## Feedback
 

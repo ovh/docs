@@ -81,7 +81,7 @@ This newly generated token provides read access over all resources tagged with t
 
 #### Operator token
 
-An operator token grants read access along with management access for the matching AI apps. This means that you can manage the AI App lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/au/en/ai-training/install-client/)) or the [AI Training API](https://gra.training.ai.cloud.ovh.net/) by providing this token.
+An operator token grants read access along with management access for the matching AI apps. This means that you can manage the AI App lifecycle (start/stop/delete) using either the CLI (more info [here](https://docs.ovh.com/au/en/publiccloud/ai/training/install-client/)) or the [AI Training API](https://gra.training.ai.cloud.ovh.net/) by providing this token.
 
 This Operator token will be scoped on a specific AI App and we will use the default `ovh/id` label to do so (since it is reserved, there is only one AI App that can match this label selector).
 
@@ -91,7 +91,7 @@ This Operator token will be scoped on a specific AI App and we will use the defa
 
 ![token generation input operator](images/07-token-gen-input-op.png){.thumbnail}
 
-Additional information about the use of a token to manage an AI Training resource can be found [here](https://docs.ovh.com/au/en/ai-training/app-token-cli/#use-the-app-token).
+Additional information about the use of a token to manage an AI Training resource can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/training/app-token-cli/#use-the-app-token).
 
 ### Using a token to query an AI App
 

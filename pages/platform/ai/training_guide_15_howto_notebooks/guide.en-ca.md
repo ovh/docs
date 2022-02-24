@@ -16,13 +16,13 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 -   an **AI Training project** created inside a **public cloud** project
--   a [user for AI Training](../create-user)
+-   a [user for AI Training](https://docs.ovh.com/ca/en/publiccloud/ai/create-user)
 
 ## Instructions
 
 ### Step 1 - Begin as classic job submission
 
-Follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 5 - Providing a Docker image](../submit-job/#step-5-providing-a-docker-image).
+Follow the same steps as a classic job submission described [here](https://docs.ovh.com/ca/en/publiccloud/ai/training/submit-job) until you reach the [Step 5 - Providing a Docker image](https://docs.ovh.com/ca/en/publiccloud/ai/training/submit-job/#step-5-providing-a-docker-image).
 
 ### Step 2 - Select the notebook corresponding to your needs
 
@@ -46,7 +46,7 @@ Once your image is chosen, click `Next`{.action}.
 
 ### Step 3 - Continue as a classic job submission
 
-Continue to follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 10 - Consulting your job](../submit-job/#step-10-consulting-your-job).
+Continue to follow the same steps as a classic job submission described [here](https://docs.ovh.com/ca/en/publiccloud/ai/training/submit-job) until you reach the [Step 10 - Consulting your job](https://docs.ovh.com/ca/en/publiccloud/ai/training/submit-job/#step-10-consulting-your-job).
 
 > [!warning]
 > If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
@@ -62,7 +62,7 @@ Once your job is `In progress`, in the job description panel you should see the 
 If your are not authenticated as a AI Training user you should see a screen asking your username and password.
 
 > [!primary]
-> If you have never created a user for AI Training yet you can follow the instruction [here](../create-user)
+> If you have never created a user for AI Training yet you can follow the instruction [here](https://docs.ovh.com/ca/en/publiccloud/ai/create-user)
 
 Fill the field and click `Login`{.action}.
 
@@ -84,7 +84,7 @@ By default the home directory of your job is located under `/workspace`. It mean
 >
 > If you are missing a library or a configuration, you can add it directly in command line in the **console** of the notebook as long as you don't need priviledge access (root access). Example : `pip install <...>`
 >
-> For installing specific libraries that require priviledge access you will have to build your own notebook image and use it as **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of **preset image**. More information about creating your own docker image can be found [here](../build-use-custom-image)
+> For installing specific libraries that require priviledge access you will have to build your own notebook image and use it as **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of **preset image**. More information about creating your own docker image can be found [here](https://docs.ovh.com/ca/en/publiccloud/ai/training/build-use-custom-image)
 
 > [!primary]
 >

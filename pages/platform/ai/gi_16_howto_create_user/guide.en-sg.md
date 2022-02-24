@@ -20,7 +20,7 @@ Users management is available in the `Public Cloud` Control Panel under `Project
 
 ![image](images/03_users_menu.png){.thumbnail}
 
-Create a new [user](../users) and specify the required roles. Two roles are used within **AI Training**:
+Create a new [user](https://docs.ovh.com/sg/en/publiccloud/ai/users) and specify the required roles. Two roles are used within **AI Training**:
 
 -   AI Training Operator: Grants access to **AI Training**
 -   Objectstore Operator: Grants read/write access to the OVHcloud Object Storage.

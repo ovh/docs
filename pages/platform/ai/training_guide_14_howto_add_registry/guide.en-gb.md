@@ -40,7 +40,7 @@ Once the form is filled out click `Add`{.action}.
 
 Once your registry is added you can use any images pushed on the registry for your jobs.
 
-From the OVHcloud Control Panel while [submitting a job](../submit-job), you can choose a custom Docker image in Step 7.
+From the OVHcloud Control Panel while [submitting a job](https://docs.ovh.com/gb/en/publiccloud/ai/training/submit-job), you can choose a custom Docker image in Step 7.
 
 ![custom docker image](images/02_submit_image_custom.png){.thumbnail}
 
@@ -50,9 +50,9 @@ The default shared registry remains available even with a private registry added
 
 ## Going Further
 
--   You can check the official documentation about [how to submit a **job**](../submit-job)
--   You can check out the documentation about the [`ovhai` CLI](../overview-cli)
--   You can check out the documentation about [how to setup the `ovhai` CLI](../install-client)
+-   You can check the official documentation about [how to submit a **job**](https://docs.ovh.com/gb/en/publiccloud/ai/training/submit-job)
+-   You can check out the documentation about the [`ovhai` CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/overview-cli)
+-   You can check out the documentation about [how to setup the `ovhai` CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client)
 
 ## Feedback
 
