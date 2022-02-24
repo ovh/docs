@@ -27,7 +27,7 @@ section: Technical resources
  }
 </style>
 
-**Last updated 23 September, 2021.**
+**Last updated 24 February, 2022.**
 
 We list here the Kubernetes objects you can find running in an OVHcloud Managed Kubernetes.
 
@@ -42,9 +42,9 @@ These objects are created either at the cluster or at the `node` creation, and t
 There are several existing `namespaces` running in your cluster:
 
 - `default`: namespace by default
-- `kube-system`: for objects created by Kubernetes
-- `kube-public`: reserved mainly for cluster usage & in case of specific resources should be publicly available
 - `kube-node-lease`: for heartbeat Node's lease object
+- `kube-public`: reserved mainly for cluster usage & in case of specific resources should be publicly available
+- `kube-system`: for objects created by Kubernetes
 
 The following listed resources are running in theses `namespaces`.
 
@@ -60,28 +60,30 @@ There are several management `services` running in your cluster:
 In my example cluster, I get:
 
 <pre class="console"><code>$ kubectl get services --all-namespaces
-NAMESPACE     NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)         AGE
-default       kubernetes       ClusterIP   10.3.0.1     $lt;none>        443/TCP         17d
-kube-system   kube-dns         ClusterIP   10.3.0.10    $lt;none>        53/UDP,53/TCP   17d
-kube-system   metrics-server   ClusterIP   10.3.41.98   $lt;none>        443/TCP         17d
-kube-system   wormhole         ClusterIP   10.3.0.2     $lt;none>        443/TCP         17d</code></pre>
+NAMESPACE     NAME                        TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                  AGE
+default       kubernetes                  ClusterIP      10.3.0.1       <none>           443/TCP                  14d
+kube-system   kube-dns                    ClusterIP      10.3.0.10      <none>           53/UDP,53/TCP,9153/TCP   14d
+kube-system   metrics-server              ClusterIP      10.3.224.150   <none>           443/TCP                  14d
+kube-system   wormhole                    ClusterIP      10.3.0.2       <none>           443/TCP                  14d
+</code></pre>
 
 
 ### Deployments
 
 To implement these services, you will find several `deployment` objects:
 
-- `kube-dns`
+- `coredns`
+- `kube-dns-autoscaler`
 - `metrics-server`
-- `wormhole`
 
 In my example cluster, I get:
 
 <pre class="console"><code>$ kubectl get deployments --all-namespaces
-NAMESPACE     NAME                  READY   UP-TO-DATE   AVAILABLE   AGE
-kube-system   kube-dns              2/2     2            2           17d
-kube-system   kube-dns-autoscaler   1/1     1            1           17d
-kube-system   metrics-server        1/1     1            1           17d</code></pre>
+NAMESPACE     NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+kube-system   coredns                     2/2     2            2           14d
+kube-system   kube-dns-autoscaler         1/1     1            1           14d
+kube-system   metrics-server              1/1     1            1           14d
+</code></pre>
 
 
 ### Daemon sets
@@ -89,33 +91,35 @@ kube-system   metrics-server        1/1     1            1           17d</code><
 There are also several `daemonsets` to define the pods that will be deployed in every node:
 
 - `canal`
-- `proxy`
+- `kube-proxy`
 - `wormhole`
 
 In my example cluster, with 5 nodes, I get:
 
 <pre class="console"><code>$ kubectl get daemonsets --all-namespaces
 NAMESPACE     NAME         DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR                 AGE
-kube-system   canal        5         5         5       5            5           beta.kubernetes.io/os=linux   17d
-kube-system   kube-proxy   5         5         5       5            5           &lt;none>                        17d
-kube-system   wormhole     5         5         5       5            5           &lt;none>                        17d</code></pre>
+kube-system   canal        3         3         3       3            3           beta.kubernetes.io/os=linux   14d
+kube-system   kube-proxy   3         3         3       3            3           <none>                        14d
+kube-system   wormhole     3         3         3       3            3           <none>                        14d
+</code></pre>
 
 
 ### Replica sets
 
 There are also several `replicasets` to define the pods that will run on several instances:
 
-- `metrics-server`
-- `kube-dns-autoscaler`
-- `kube-dns`
+- `coredns-*`
+- `kube-dns-autoscaler-*`
+- `metrics-server-*`
 
 In my example cluster, I get:
 
 <pre class="console"><code>$ kubectl get replicaset --all-namespaces
-NAMESPACE     NAME                             DESIRED   CURRENT   READY   AGE
-kube-system   kube-dns-autoscaler-54fc5469d8   1         1         1       17d
-kube-system   kube-dns-dfcc979bf               2         2         2       17d
-kube-system   metrics-server-9ffb558           1         1         1       17d</code></pre>
+NAMESPACE     NAME                                   DESIRED   CURRENT   READY   AGE
+kube-system   coredns-77b9fbd56                      2         2         2       14d
+kube-system   kube-dns-autoscaler-ddf4c7d5b          1         1         1       14d
+kube-system   metrics-server-66bb5cd998              1         1         1       14d
+</code></pre>
 
 
 ### Pods
@@ -123,40 +127,33 @@ kube-system   metrics-server-9ffb558           1         1         1       17d</
 You will find one instance of the following pods running in every node of your cluster:
 
 - `canal`
-- `proxy`
+- `kube-proxy`
 - `wormhole`
 
 You will also find one global instance of:
 
-- `metrics-server`
 - `kube-dns-autoscaler`
+- `metrics-server`
 
 And several instances of:
 
-- `kube-dns`
+- `coredns`
 
-In my example cluster, with 5 nodes, I get:
+In my example cluster, with 3 nodes, I get:
 
 <pre class="console"><code>$ kubectl get pods --all-namespaces
-NAMESPACE     NAME                                   READY   STATUS    RESTARTS   AGE
-kube-system   canal-25dtz                            2/2     Running   1          17d
-kube-system   canal-25vkd                            2/2     Running   0          17d
-kube-system   canal-t9v6p                            2/2     Running   0          17d
-kube-system   canal-xplff                            2/2     Running   0          17d
-kube-system   canal-zs9zn                            2/2     Running   0          17d
-kube-system   kube-dns-autoscaler-54fc5469d8-qrs6g   1/1     Running   0          17d
-kube-system   kube-dns-dfcc979bf-6jkzt               3/3     Running   0          9d
-kube-system   kube-dns-dfcc979bf-xr27d               3/3     Running   0          17d
-kube-system   kube-proxy-26hgs                       1/1     Running   0          17d
-kube-system   kube-proxy-5xftt                       1/1     Running   0          17d
-kube-system   kube-proxy-k2x96                       1/1     Running   0          17d
-kube-system   kube-proxy-p8747                       1/1     Running   0          17d
-kube-system   kube-proxy-pj4bp                       1/1     Running   0          17d
-kube-system   metrics-server-9ffb558-wtcll           1/1     Running   0          17d
-kube-system   wormhole-gl64h                         1/1     Running   0          17d
-kube-system   wormhole-jd7v5                         1/1     Running   0          17d
-kube-system   wormhole-lbxw4                         1/1     Running   0          17d
-kube-system   wormhole-zbsmx                         1/1     Running   0          17d
-kube-system   wormhole-ztphr                         1/1     Running   0          17d</code></pre>
-
-
+NAMESPACE     NAME                                         READY   STATUS    RESTARTS      AGE
+kube-system   canal-lcmmw                                  2/2     Running   2 (14d ago)   14d
+kube-system   canal-ljcfj                                  2/2     Running   2 (14d ago)   14d
+kube-system   canal-x56p5                                  2/2     Running   1 (14d ago)   14d
+kube-system   coredns-77b9fbd56-4s8mb                      1/1     Running   0             14d
+kube-system   coredns-77b9fbd56-fslpn                      1/1     Running   0             14d
+kube-system   kube-dns-autoscaler-ddf4c7d5b-chzvs          1/1     Running   0             14d
+kube-system   kube-proxy-5qs2t                             1/1     Running   0             14d
+kube-system   kube-proxy-qb8h9                             1/1     Running   0             14d
+kube-system   kube-proxy-xws7j                             1/1     Running   0             14d
+kube-system   metrics-server-66bb5cd998-rs46p              1/1     Running   0             14d
+kube-system   wormhole-7cbmc                               1/1     Running   0             14d
+kube-system   wormhole-7dt6x                               1/1     Running   0             14d
+kube-system   wormhole-vh7pk                               1/1     Running   0             14d
+</code></pre>
