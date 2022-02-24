@@ -2,7 +2,7 @@
 title: Accessing your AI App with tokens
 slug: ai-apps-tokens
 excerpt: Discover how to create a scoped token and query your AI App
-section: AI Apps - Guides
+section: AI Apps guides
 order: 100
 ---
 

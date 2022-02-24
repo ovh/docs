@@ -2,7 +2,7 @@
 title: Users
 slug: users
 excerpt: Learn the concept behind AI Training users
-section: General Information
+section: General information
 order: 104
 ---
 

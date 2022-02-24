@@ -2,7 +2,7 @@
 title: Create User with UI
 slug: create-user
 excerpt: Learn how to create AI training users that will interract with jobs
-section: How to (with UI)
+section: General information
 order: 2
 ---
 

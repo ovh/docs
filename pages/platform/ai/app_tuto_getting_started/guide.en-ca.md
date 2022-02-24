@@ -2,7 +2,7 @@
 title: Getting started with AI Apps
 slug: apps/getting-started
 excerpt: Discover AI Apps and deploy your first application
-section: AI Apps - Guides
+section: AI Apps guides
 order: 200
 ---
 

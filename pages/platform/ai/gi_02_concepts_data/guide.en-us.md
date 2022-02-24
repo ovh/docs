@@ -2,7 +2,7 @@
 title: Data - concept and best practices
 slug: data
 excerpt: Learn the concept behind AI Training data
-section: General Information
+section: General information
 order: 105
 ---
 

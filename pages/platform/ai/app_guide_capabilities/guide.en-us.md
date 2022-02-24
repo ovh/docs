@@ -2,7 +2,7 @@
 title: AI Apps - Capabilities and limitations
 slug: apps/capabilities
 excerpt: Discover the capabilities and limitations of AI Apps
-section: AI Apps - Guides
+section: AI Apps guides
 order: 01
 ---
 

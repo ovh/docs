@@ -2,7 +2,7 @@
 title: FAQ
 slug: faq
 excerpt: Find the answers to the most frequently asked questions about OVHcloud AI Training
-section: General Information
+section: General information
 order: 106
 ---
 
