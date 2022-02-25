@@ -114,7 +114,7 @@ Cliquez sur le menu `Hardware`{.action} pour obtenir le détail du stockage par 
 
 Cliquez sur `Diagrams`{.action} pour obtenir un résumé graphique tel que présenté ci-dessous.
 
-![Harware Detail](images/HardwareDetail.PNG)
+![Hardware Detail](images/HardwareDetail.PNG)
 
 ## Aller plus loin
 
