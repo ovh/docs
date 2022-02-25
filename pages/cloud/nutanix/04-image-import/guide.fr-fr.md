@@ -27,15 +27,15 @@ order: 04
 
 ## Présentation du système d'images dans Nutanix
 
-Les images sont des importations d'images de format divers et parmi eux les fichiers ISO mais il possible d'importer la plupart des images d'ordinateurs virtuels existants.
+Les images sont des fichiers importés de format divers comme des images ISO mais il est aussi possible d'importer la plupart des images d'ordinateurs virtuels existants (vhdx, qcow2, etc...).
 
-L'importation des images se fait soit à partir de Prism Central ou de Prism Element. Cette documentation decrit l'importation d'une image à partir de Prism Central.
+L'importation des images se fait soit à partir de Prism Central ou de Prism Element. Cette documentation décrit l'importation d'une image à partir de Prism Central.
 
 Pour plus de détails sur la création d'images reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-En haut à gauche Cliquez su `l'icone avec 3 traits`{.action} 
+En haut à gauche Cliquez sur `l'icone avec 3 traits`{.action} 
 
 ![Affichage du menu de gauche](images/PrismCentralDashboardWithLeftMenu.PNG)
 
