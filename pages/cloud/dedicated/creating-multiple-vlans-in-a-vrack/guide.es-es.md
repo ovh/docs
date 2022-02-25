@@ -5,7 +5,7 @@ excerpt: 'Cómo crear varias VLAN en el vRack'
 section: vRack
 ---
 
-**Última actualización: 29/09/2021**
+**Última actualización: 24/02/2022**
 
 ## Objetivo
 
@@ -30,10 +30,83 @@ La [configuración estándar del vRack](https://docs.ovh.com/es/dedicated/config
 
 > [!primary]
 >
-> En este ejemplo utilizaremos **eth1** como interfaz de red, **10** como etiqueta VLAN y **192.168.0.0/16** como rango de direcciones IP. 
+> En este ejemplo utilizaremos **eno2** para Ubuntu y **eth1** para Debian como interfaz de red, **10** como etiqueta VLAN y **192.168.0.0/16** como rango de direcciones IP. 
 >
 > No olvide adaptar todos los comandos en función de la distribución que utilice. En caso de duda, consulte la documentación oficial de su distribución.
 >
+
+#### Ubuntu 20 y 21
+
+Este ejemplo está basado en Ubuntu 21.10 (Impish Indri).
+
+En primer lugar, instale el paquete **vlan** en el servidor. Para ello, ejecute el siguiente comando:
+
+```sh
+sudo apt-get install vlan
+```
+
+Cargue el módulo del núcleo 8021q:
+
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Cree o edite este archivo de configuración para evitar que los cambios en la configuración de red se realicen automáticamente:
+
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+Y añada esta línea:
+
+```sh
+network: {config: disabled}
+```
+
+Aquí la interfaz que queremos configurar es `eno2` con dirección MAC: `d0:50:99:d6:6b:14`.
+
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Agregue la configuración de red para esta interfaz de red y la declaración de VLAN en el siguiente archivo:
+
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Guarde y cierre el archivo y ejecute los siguientes comandos:
+
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Utilice el siguiente comando para confirmar la configuración:
+
+```sh
+ip a
+```
+
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+#### Debian
 
 En primer lugar, instale el paquete **vlan** en el servidor. Para ello, ejecute el siguiente comando:
 
