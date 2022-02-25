@@ -33,15 +33,15 @@ Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en 
 
 En la pestaña `estado del servicio`{.action}, sección `Información general`{.action}, haga clic en editar la opción Boot.
 
-![Netboot](images/netboot-02.png){.thumbnail}
+![Netboot](images/netboot_2022.png){.thumbnail}
 
 Entonces seleccione `Arrancar en el disco duro`{.action}, clic en `siguiente`{.action}, y finalmente `Acepte`{.action}
 
-![Netboot](images/netboot-03.png){.thumbnail}
+![Netboot](images/netboot_003.png){.thumbnail}
 
 Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
 
-![Netboot](images/netboot-04.png){.thumbnail}
+![Netboot](images/netboot_004.png){.thumbnail}
 
 ### Inicie el servidor desde el modo de Red
 

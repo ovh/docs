@@ -5,30 +5,21 @@ excerpt: Retrouvez ici les Étapes a suivre pour demarrer votre serveur sur un n
 section: Divers
 ---
 
+**Dernière mise à jour le 25/02/2022**
 
 ## Prérequis
+
 Le Netboot est un service proposé gratuitement par OVHcloud et qui permet de démarrer le serveur dédié que vous louez chez OVHcloud sur un kernel déjà compilé. Une fois configuré de cette façon, votre serveur charge automatiquement le noyau depuis le réseau, vous n'avez rien d'autre à configurer. Cette méthode vous permet également de mettre à jour très simplement votre noyau car OVHcloud compile la dernière version du noyau dès sa disponibilité et la met à disposition sur le Netboot.
 
 Pour pouvoir modifier le netboot, il faut :
 
-- Avoir une machine, telle qu'un serveur dédié, chez OVHcloud.
-- Avoir accès à l'espace client.
+- Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
+- Avoir accès à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 
 ## Procedure
-Pour démarrer votre serveur sur le Netboot, il vous faut configurer cette fonctionnalité depuis votre espace client.
 
-
-### Booter sur le disque dur
-Pour démarrer votre serveur sur Disque Dur, vous devez tout d'abord vous connecter à votre espace client.
-
-Rendez-vous ensuite sur l'Univers `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur.
-
-Dans l'onglet `Etat du serveur`{.action}, section `Informations générales`{.action}, cliquez sur `modifier`{.action} sur la ligne Boot.
-
-Sélectionnez ensuite `Booter sur disque dur`{.action}, cliquer sur `suivant`{.action}, et enfin valider la confirmation de changement de netboot.
-
-Il ne reste plus qu'à redémarrer le serveur pour que le nouveau netboot soit pris en compte.
+Pour démarrer votre serveur sur le Netboot, il vous faut configurer cette fonctionnalité depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 
 ### Booter en mode Network
@@ -39,39 +30,34 @@ Il ne reste plus qu'à redémarrer le serveur pour que le nouveau netboot soit p
 > Cette partie est déstinée aux serveurs sous Linux. Pour Windows, FreeBSD, et les distributions de Virtualisation, seule la sélection en mode Disque Dur ou les modes Rescue sont possibles.
 > 
 
-Pour démarrer votre serveur sur un noyau réseau, vous devez tout d'abord vous connecter à votre espace client.
+Pour démarrer votre serveur sur un noyau réseau, connecter à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
-Rendez-vous ensuite sur l'Univers `Cloud`{.action}, puis sélectionnez votre serveur.
+Rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans `Serveurs dédiés`{.action}.
 
-Dans l'onglet `Etat du serveur`{.action}, section `Informations générales`{.action}, cliquez sur `modifier`{.action} sur la ligne Boot.
+Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}. 
+
+![Netboot](images/netboot_2022.png){.thumbnail}
 
 Sélectionnez `Booter en mode Network`{.action}.
 
-Il vous faudra alors choisir le kernel désiré parmis la liste ci-dessous.
+![Netboot](images/netboot_005.png){.thumbnail}
 
-- **Stable Kernel, Vanilla - 64bits.** (Prise en charge de CPUFAMILY, SMP, & IPv6)
-- **Stable Kernel, hz1000 - 64bits.** (Prise en charge de CPUFAMILY, SMP, & IPv6)
-- **Stable Kernel, with GRSec - 64bits.** (Prise en charge de GRSec, CPUFAMILY, SMP, & IPv6)
-
-Sélectionnez ensuite le Root Device (partition où se trouve la partition racine de votre serveur).
+Sélectionnez le noyau(kernel) disponible puis entrez le Root Device (partition où se trouve la partition racine de votre serveur).
 
 Pour déterminer le Root Device de votre serveur, consultez le fichier /etc/fstab de votre serveur.
 
 En SSH :
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cat /etc/fstab</span> <span class="output"># <file system> <mount point> <type> <options> <dump> <pass></span> <span class="output">/dev/sda1 / ext3 errors=remount-ro 0 1</span> <span class="output">/dev/sda2 /home ext3 defaults,grpquota,usrquota 1 2</span> <span class="output">/dev/sda3 swap swap defaults 0 0</span> <span class="blank">&nbsp;</span> <span class="output">proc /proc proc defaults 0 0</span> <span class="output">sysfs /sys sysfs defaults 0 0</span> <span class="output">shm /dev/shm tmpfs nodev,nosuid,noexec 0 0</span> </pre></div>
+
 Dans notre exemple, le Root Device sera /dev/sda1.
 
-Il ne reste plus qu'à valider le changement, et procéder au redémarrage du serveur pour que le netboot soit pris en compte.
+Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
+Une fois la modification terminée, cliquez sur `...` {.action} à droite de « Statut » dans la zone intitulée **Etat des services.** Cliquez sur `Redémarrer`{.action} pour que le netboot soit pris en compte.
 
-### Booter en mode Rescue
-Pour démarrer votre serveur sur un noyau réseau, vous devez tout d'abord vous connecter à votre espace client.
+![Netboot](images/netboot_004.png){.thumbnail}
 
-Rendez-vous ensuite sur l'Univers `Cloud`{.action}, puis sélectionnez votre serveur.
+## Allez plus loin
 
-Dans l'onglet `Etat du serveur`{.action}, section `Informations générales`{.action}, cliquez sur `modifier`{.action} sur la ligne Boot.
-
-Sélectionnez `Booter en mode Rescue`{.action}, puis le mode rescue souhaité pour le serveur. (Par défaut, **rescue64-pro**)
-
-Il ne reste plus qu'à valider le changement, et procéder au redémarrage du serveur pour que le netboot soit pris en compte.
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/.>
