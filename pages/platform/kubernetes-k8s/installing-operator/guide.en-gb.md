@@ -77,6 +77,7 @@ We'll develop this operator with the [operator SDK](https://sdk.operatorframewor
 The operator SDK provides several tools:
  - a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator,
  - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator.  
+
 In this article we use the [Helm helper](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/).  
 We'll see in other articles how to develop operators with other languages (Go for example).
 
@@ -141,7 +142,7 @@ Your first Helm operator will follow the following code organization:
 │       └── values.yaml
 ```
 
-First, create a `helm-charts` folder and then a `ovh-nginx` folder inside it.
+First, create a `helm-charts` folder and then an `ovh-nginx` folder inside it.
 Go inside `helm-charts/ovh-nginx` folders.
 
 Then,  create a `template` folder.
@@ -154,7 +155,7 @@ metadata:
   labels:
     {{- include "ovh-nginx.labels" . | nindent 4 }}
 spec:
-  replicas: {{ .Values.replicaCount }} # Thanks to Helm the replica field will be dynamic
+  replicas: {{ .Values.replicaCount }} # Thanks to Helm the replicas field will be dynamic
   selector:
     matchLabels:
       {{- include "ovh-nginx.selectorLabels" . | nindent 6 }}
@@ -207,7 +208,7 @@ spec:
     {{- include "ovh-nginx.selectorLabels" . | nindent 4 }}
 ```
 
-Then, in `template` folder, create a helper to simplify the templates, to fo that create a `helper.tpl` file with the content:
+Then, in `template` folder, create a helper to simplify the templates, to do that create a `helper.tpl` file with the content:
 ```
 {{/*
 Expand the name of the chart.
@@ -255,7 +256,7 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 
 Your values needed to be defined in a `values.yaml` file in the `ovh-nginx` folder with the content:
 ```yaml
-# To allow our operator to change the number of replicas
+# To allow your operator to change the number of replicas
 replicaCount: 1
 
 image:
@@ -265,7 +266,7 @@ image:
 
 service:
   type: LoadBalancer
-  # To allow our operator to change the port
+  # To allow your operator to change the port
   port: 80
 ```
 > [!info]
@@ -297,7 +298,7 @@ It is important to note that CRDs by themselves are just data.
 They do not have any logic attached to them, nor any special behavior. 
 To add logic you need a [controller](https://kubernetes.io/docs/concepts/architecture/controller/) or an operator.
 
-You need to update your code organisation and add the following folder:
+You need to update your code organisation and add the following folders:
 ```bash
 .
 ├── helm-charts
@@ -365,7 +366,7 @@ Then in the `manifests` folder create the `watches.yaml` file with the following
 ### Test it locally (almost)
 
 Before packaging and deploying your operator in a real Kubernetes cluster you can test it locally.
-You still need a Kubernetes cluster to deploy your CRD and the Nginx server managed by the operator.
+You still need your Managed Kubernetes cluster to deploy your CRD and the Nginx server managed by the operator.
 First, create the CRD in your Kubernetes cluster:
 
 ```bash
@@ -722,11 +723,22 @@ spec:
 ```
 
 ```bash
-kubectl get pods --namespace test-ovh-nginx-operator
+kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
 ```
+
+Then, display the pods and service:
+
+```bash
+kubectl get pods --namespace test-ovh-nginx-operator
+kubectl get services --namespace test-ovh-nginx-operator
+```
+
 
 Output should be like this:
 <pre class="console"><code>
+$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+ovhnginx.tutorials.ovhcloud.com/mynginx-sample updated
+
 $ kubectl get pods --namespace test-ovh-nginx-operator
 NAME                                        READY   STATUS    RESTARTS   AGE
 mynginx-sample-ovh-nginx-65b64c6585-4nc88   1/1     Running   0          4m29s
