@@ -53,7 +53,6 @@ sudo su -c 'echo "8021q" >> /etc/modules'
 
 Utwórz lub edytuj ten plik konfiguracyjny, aby zapobiec automatycznemu wprowadzaniu zmian w konfiguracji sieci:
 
-
 ```sh
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
