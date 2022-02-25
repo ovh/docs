@@ -42,7 +42,7 @@ Sélectionnez `Booter en mode Network`{.action}.
 
 ![Netboot](images/netboot_005.png){.thumbnail}
 
-Sélectionnez le noyau(kernel) disponible puis entrez le Root Device (partition où se trouve la partition racine de votre serveur).
+Sélectionnez le noyau (kernel) disponible puis entrez le Root Device (partition où se trouve la partition racine de votre serveur).
 
 Pour déterminer le Root Device de votre serveur, consultez le fichier /etc/fstab de votre serveur.
 

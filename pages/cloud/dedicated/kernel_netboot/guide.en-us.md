@@ -36,9 +36,9 @@ To start your server on a network kernel, you must first connect to your [Contro
 
 Go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
 
-![Netboot](images/netboot_2022.png)
-
 Look for “Boot” in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
+
+![Netboot](images/netboot_2022.png)
 
 Select `Boot in network mode`{.action}.
 
