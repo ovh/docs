@@ -538,35 +538,40 @@ COPY helm-charts  ${HOME}/helm-charts
 WORKDIR ${HOME}
 ```
 
-Then, build the image and push it on your favorite registry:
+Then, build the image and push it on your favorite registry (for instance the [Managed Private Registry](https://docs.ovh.com/gb/en/private-registry/) by OVHcloud):
 ```bash
-docker build -t ovhplateform/ovh-nginx-operator:1.0.0 . 
-
-docker push ovhplateform/ovh-nginx-operator:1.0.0
+docker build  -t [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0 .
+docker login [YOUR_PRIVATE_REGISTRY_URL]
+docker push [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0
 ```
 Output should be like this:
 <pre class="console"><code>
-$ docker build -t ovhplateform/ovh-nginx-operator:1.0.0 . 
-[+] Building 6.0s (9/9) FINISHED                                                                                                                                                                    
- => [internal] load build definition from Dockerfile                                          0.0s
- => => transferring dockerfile: 206B                                                          0.0s
- => [internal] load .dockerignore                                                             0.0s
- => => transferring context: 2B                                                               0.0s
- => [internal] load metadata for quay.io/operator-framework/helm-operator:v1.17.0             2.1s
- => [1/4] FROM quay.io/operator-framework/helm-operator:v1.17.
- ...
- => [internal] load build context                                                             0.0s
- => => transferring context: 6.92kB                                                           0.0s
- => [2/4] COPY watches.yaml /opt/helm/watches.yaml                                            0.1s
- => [3/4] COPY helm-charts  /opt/helm/helm-charts                                             0.0s
- => [4/4] WORKDIR /opt/helm                                                                   0.0s
- => exporting to image                                                                        0.1s
- => => exporting layers                                                                       0.1s
- => => writing image sha256:0f71fd44ff901ed21977e5079a68d3aade40f0cca4550a72365241b5cf450f98  0.0s
- => => naming to docker.io/wilda/ovh-nginx-operator:1.0.0            
+$ docker buildx build --platform linux/amd64 -t 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0 .
+[+] Building 0.4s (9/9) FINISHED                                                                                                                 
+ => [internal] load build definition from Dockerfile                                                                                        0.0s
+ => => transferring dockerfile: 32B                                                                                                         0.0s
+ => [internal] load .dockerignore                                                                                                           0.0s
+ => => transferring context: 2B                                                                                                             0.0s
+ => [internal] load metadata for quay.io/operator-framework/helm-operator:v1.17.0                                                           0.4s
+ => [internal] load build context                                                                                                           0.0s
+ => => transferring context: 659B                                                                                                           0.0s
+ => [1/4] FROM quay.io/operator-framework/helm-operator:v1.17.0@sha256:516e69e6c0c78cca64fd3fe2a43703cf709f399bcfc36dabbc238f8d90954e59     0.0s
+ => CACHED [2/4] COPY watches.yaml /opt/helm/watches.yaml                                                                                   0.0s
+ => CACHED [3/4] COPY helm-charts  /opt/helm/helm-charts                                                                                    0.0s
+ => CACHED [4/4] WORKDIR /opt/helm                                                                                                          0.0s
+ => exporting to image                                                                                                                      0.0s
+ => => exporting layers                                                                                                                     0.0s
+ => => writing image sha256:0f71fd44ff901ed21977e5079a68d3aade40f0cca4550a72365241b5cf450f98                                                0.0s
+ => => naming to 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0     
 
-$ docker push ovhplateform/ovh-nginx-operator:1.0.0
-The push refers to repository [docker.io/ovhplateform/ovh-nginx-operator]
+$ docker login https://56hkk1xk.gra7.container-registry.ovh.net
+Username: harbor-user1
+Password: 
+
+Login Succeeded
+
+$ docker push 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
+The push refers to repository [56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator]
 5f70bf18a086: Pushed 
 4edd44e1433c: Pushed 
 35217553513b: Pushed 
@@ -574,20 +579,41 @@ The push refers to repository [docker.io/ovhplateform/ovh-nginx-operator]
 895f2ebb55fa: Pushed 
 ede2e4397fdc: Pushed 
 87cd41b1f9f8: Pushed 
-44f62afd0479: Pushed
+44f62afd0479: Pushed 
 1.0.0: digest: sha256:509549a6bac0a2e52a19b4bbac80b5411a2c0fe581c5fbd2cc6b4a456e339eb3 size: 1984
 </code></pre>
 
 
-The last step consistes to deploy your operator in the Kubernetes cluster.
-Create the `ovh-nginx-operator.yaml` file in the `manifests` folder with the following content:
+The last step consistes to deploy your operator in the Kubernetes cluster.  
+First, create the namespace for the operator:
+```bash
+kubectl create ns ovh-nginx-operator
+```
+Output should be like this:
+<pre class="console"><code>
+$ kubectl create ns ovh-nginx-operator
+
+namespace/ovh-nginx-operator created
+</code></pre>
+
+If you have pushed your image in a private registry, you have to create the secret:
+```bash
+kubectl create secret generic regcred \
+    --from-file=.dockerconfigjson=<path/to/.docker/config.json>/config.json  \
+    --type=kubernetes.io/dockerconfigjson \
+    --namespace=ovh-nginx-operator
+```
+Output should be like this:
+<pre class="console"><code>
+kubectl create secret generic regcred \
+    --from-file=.dockerconfigjson=/Users/sphilipp/.docker/config.json  \
+    --type=kubernetes.io/dockerconfigjson
+    --namespace=ovh-nginx-operator
+secret/regcred created
+</code></pre>
+
+Then, create the `ovh-nginx-operator.yaml` file in the `manifests` folder with the following content:
 ```yaml
-# The namespace where the operator is deployed
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: ovh-nginx-operator
----
 # Authorisations for the operator
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
@@ -665,8 +691,10 @@ spec:
       serviceAccountName: ovh-nginx-operator-sa
       containers:
       - name: operator
-        image: ovhplateform/ovh-nginx-operator:1.0.0
+        image: 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
         imagePullPolicy: Always
+      imagePullSecrets:
+      - name: regcred
 ```
 And apply the file to the Kubernetes cluster:
 ```bash
@@ -677,7 +705,7 @@ Output should be like this:
 <pre class="console"><code>
 $ kubectl apply -f manifests/ovh-nginx-operator.yaml
 namespace/ovh-nginx-operator created
-clusterrole.rbac.authorization.k8s.io/ovhnginxoperator-admin-role unchanged
+clusterrole.rbac.authorization.k8s.io/ovhnginxoperator-admin-role created
 serviceaccount/ovh-nginx-operator-sa created
 clusterrolebinding.rbac.authorization.k8s.io/ovh-nginx-operator-admin configured
 deployment.apps/ovh-nginx-operator created
