@@ -31,6 +31,8 @@ Les images sont des fichiers importés de format divers comme des images ISO mai
 
 L'importation des images se fait soit à partir de Prism Central ou de Prism Element. Cette documentation décrit l'importation d'une image à partir de Prism Central.
 
+Il est possible de faire l'importation d'images à partir d'un fichier local ou d'un lien URL.
+
 Pour plus de détails sur la création d'images reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
@@ -47,11 +49,11 @@ Cliquez sur `Add Image`{.action}.
 
 ![Prism Central - Gestion des Images](images/PrismCentralAddImage.PNG)
 
-Cliquer sur `Add FIle`{.action}
+Cliquer sur `Add File`{.action}
 
 ![Fenêtre d'ajout d'une image](images/AddImage01.PNG)
 
-Sélectionner le fichier et cliquer sur `Ouvrir`{.action}
+Sélectionner le fichier et cliquer sur `Open`{.action}
 
 ![Fenêtre des options d'ajout d'une image partie 1](images/AddImage02.PNG)
 
@@ -62,6 +64,11 @@ Saisissez le nom du fichier, une description ensuite `Cliquez sur Next`{.action}
 Laissez les options par défaut et `Cliquez sur Save`{.action}
 
 ![Fenêtre des options d'ajout d'une image partie 3](images/AddImage04.PNG)
+
+L'image importée apparait dans le tableau de bord des images dans Prism Central
+
+![Tableau de bord des images avec nouvelle Image - Prism Central](images/PrismCentralDashboardImagesWithNewImages.PNG)
+
 
 ## Aller plus loin <a name="gofurther"></a>
 
