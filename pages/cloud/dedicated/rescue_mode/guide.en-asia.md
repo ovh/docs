@@ -42,7 +42,7 @@ Look for "Boot" in the **General information** box and click on `...`{.action}, 
 
 In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
-Click on `Next`{.action} and `Confirm`{.action}.
+Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
 ![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
 

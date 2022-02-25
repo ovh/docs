@@ -75,7 +75,7 @@ In addition to standard monitoring, you can authorise OVHcloud to monitor specif
 
  To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
 
- ![monitoring](images/monitoring02.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
  You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
 
