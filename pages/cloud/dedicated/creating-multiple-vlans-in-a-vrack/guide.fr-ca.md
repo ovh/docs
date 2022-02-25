@@ -13,7 +13,6 @@ La [configuration standard du vRack](../configurer-plusieurs-serveurs-dedies-dan
 
 **Ce guide vous explique comment créer plusieurs VLAN dans le vRack.**
 
-
 ## Prérequis
 
 - Posséder un ou plusieurs [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} compatibles avec le vRack.
@@ -23,8 +22,7 @@ La [configuration standard du vRack](../configurer-plusieurs-serveurs-dedies-dan
 - Être connecté avec le compte administrateur (Windows).
 - Avoir finalisé la [configuration du vRack](../configurer-plusieurs-serveurs-dedies-dans-le-vrack/){.external}.
 
-
-## En pratique - Sous Linux
+## En pratique
 
 ### Sous Linux
 
@@ -46,11 +44,15 @@ sudo apt-get install vlan
 ```
 
 Chargez le kernel module 8021q :
+
 ```sh
 sudo su -c 'echo "8021q" >> /etc/modules'
 ```
 
-Désactivez la configuration automatique du réseau pour eviter de perdre la configuration après le redémarrage du serveur. Editez ou créez le fichier suivant :
+Désactivez la configuration automatique du réseau pour eviter de perdre la configuration après le redémarrage du serveur.
+
+Editez ou créez le fichier suivant :
+
 ```sh
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
@@ -61,6 +63,7 @@ network: {config: disabled}
 ```
 
 Récupérez l'adresse MAC de l'interface à configurer :
+
 ```sh
 ip a
 ```
@@ -69,7 +72,8 @@ Ici l'interface qui nous intéresse est `eno2` avec l'adresse MAC `d0:50:99:d6:6
 
 ![ubuntu VLAN](images/vrack3-ubuntu-01.png)
 
-Ajoutez la configuration réseau avec le tag du VLAN dans le fichier suivant:
+Ajoutez la configuration réseau avec le tag du VLAN dans le fichier suivant :
+
 ```sh
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -93,18 +97,19 @@ network:
 ```
 
 Enregistrez et fermez le fichier, puis exécutez les commandes suivantes :
+
 ```sh
 sudo netplan try
 sudo netplan apply
 ```
 
 Validez la configuration avec la commande suivante :
+
 ```sh
 ip a
 ```
 
 ![ubuntu VLAN](images/vrack3-ubuntu-02.png)
-
 
 #### Debian
 
@@ -128,14 +133,16 @@ Après cela, il faut déclarer la plage d'adresses IP dans le vRack et l'étique
 ip addr add 192.168.0.0/16 dev eth1.10
 ```
 
-Il est possible que l'interface soit coupée:
+Il est possible que l'interface soit coupée :
+
 ```sh
 # ip  addr show dev eth1
 7: eno2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state DOWN group default qlen 1000
 [...]
 ```
 
-Pour l'allumer:
+Pour l'allumer :
+
 ```sh
 ip link set dev eth1 up
 ```
