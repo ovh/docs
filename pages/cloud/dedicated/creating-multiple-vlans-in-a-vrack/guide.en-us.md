@@ -22,7 +22,6 @@ The standard [vRack configuration](../configuring-vrack-on-dedicated-servers/){.
 * Your chosen private IP address range
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
-
 ## Instructions
 
 ### Linux
@@ -43,29 +42,35 @@ sudo apt-get install vlan
 ```
 
 Load the 8021q kernel module:
+
 ```sh
 sudo su -c 'echo "8021q" >> /etc/modules'
 ```
 
 Create or edit this configuration file to prevent changes to your network configuration from being made automatically:
+
 ```sh
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
 
 And add this line:
+
 ```sh
 network: {config: disabled}
 ```
 
 Get the network interface name and it's MAC address:
+
 ```sh
 ip a
 ```
 
 Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
+
 ![ubuntu VLAN](images/vrack3-ubuntu-01.png)
 
 Add the network configuration for this network interface and the VLAN declaration in the following file:
+
 ```sh
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
@@ -89,15 +94,18 @@ network:
 ```
 
 Save and close the file, then run the following commands:
+
 ```sh
 sudo netplan try
 sudo netplan apply
 ```
 
 Use the following command to confirm the configuration:
+
 ```sh
 ip a
 ```
+
 ![ubuntu VLAN](images/vrack3-ubuntu-02.png)
 
 #### Debian

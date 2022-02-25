@@ -5,7 +5,7 @@ excerpt: This guide will show you how to create multiple vLANs within the vRack
 section: Network Management
 ---
 
-**Last updated 21st June 2018**
+**Last update 24th February 2022**
 
 ## Objective
 
@@ -15,11 +15,11 @@ The standard [vRack configuration](https://docs.ovh.com/sg/en/dedicated/configur
 
 ## Requirements
 
-* an active [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service in your account
-* two or more [vRack-compatible servers](https://www.ovh.com/sg/dedicated-servers/){.external}
-* administrative (root) access to the server via SSH
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
-* your chosen private IP address range
+* An active [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service in your account
+* Two or more [vRack-compatible servers](https://www.ovh.com/sg/dedicated-servers/){.external}
+* Administrative (root) access to the server via SSH
+* Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+* Your chosen private IP address range
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
 
@@ -29,8 +29,87 @@ The standard [vRack configuration](https://docs.ovh.com/sg/en/dedicated/configur
 
 > [!primary]
 >
-> As an example, we'll use **eth1** as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
+> As an example, we'll use **eno2** for Ubuntu and **eth1** for Debian as the network interface, **10** as the vLAN tag, and **192.168.0.0/16** as the IP address range.
 >
+
+#### Ubuntu 20 & 21 
+
+These commands were executed under Ubuntu 21.10 (Impish Indri).
+
+First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
+
+```sh
+sudo apt-get install vlan
+```
+
+Load the 8021q kernel module:
+
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Create or edit this configuration file to prevent changes to your network configuration from being made automatically:
+
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+And add this line:
+
+```sh
+network: {config: disabled}
+```
+
+Get the network interface name and it's MAC address:
+
+```sh
+ip a
+```
+
+Here the interface that we want to configure is `eno2` with MAC address: `d0:50:99:d6:6b:14`.
+
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Add the network configuration for this network interface and the VLAN declaration in the following file:
+
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Save and close the file, then run the following commands:
+
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Use the following command to confirm the configuration:
+
+```sh
+ip a
+```
+
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+#### Debian
 
 First, you need to establish an SSH connection to your server, and run the following commands from the command line. This will install the vLAN package on your server:
 
