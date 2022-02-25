@@ -1,6 +1,6 @@
 ---
 title: Importation d'images ISO 
-slug: storage
+slug: image-import
 excerpt: "Gestion des images ISO à partir de Prism Central"
 section: Premiers pas
 order: 04
