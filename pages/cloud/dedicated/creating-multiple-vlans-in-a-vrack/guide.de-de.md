@@ -5,7 +5,7 @@ excerpt: 'So erstellen Sie mehrere VLANs im vRack'
 section: vRack
 ---
 
-**Stand 29.09.2021**
+**Stand 24.02.2022**
 
 ## Einleitung
 
@@ -30,10 +30,89 @@ Bei der [Standardkonfiguration des vRack](https://docs.ovh.com/de/dedicated/mehr
 
 > [!primary]
 >
-> In unserem Beispiel verwenden wir `eth1` als Netzwerkinterface, **10** als VLAN-Tag und **192.168.0.0/16** als IP-Adressbereich. 
+> In unserem Beispiel verwenden wir **eno2** für Ubuntu und **eth1** für Debian als Netzwerkinterface, **10** als VLAN-Tag und **192.168.0.0/16** als IP-Adressbereich. 
 >
 > Die Befehle müssen an die jeweils verwendete Distribution angepasst werden. Wenn Sie Fragen haben, lesen Sie die offizielle Dokumentation Ihrer Distribution.
 >
+
+#### Ubuntu 20 & 21
+
+Dieses Beispiel basiert auf Ubuntu 21.10 (Impish Indri).
+
+Installieren Sie zuerst das Paket „VLAN“ auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
+
+```sh
+sudo apt-get install vlan
+```
+
+Laden Sie das 8021q Kernel-Modul:
+
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Erstellen oder bearbeiten Sie diese Konfigurationsdatei, um zu verhindern, dass Änderungen an der Netzwerkkonfiguration automatisch vorgenommen werden:
+
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+Und fügen Sie folgende Zeile hinzu:
+
+```sh
+network: {config: disabled}
+```
+
+Rufen Sie den Namen und die MAC-Adresse der Netzwerkschnittstelle ab:
+
+```sh
+ip a
+```
+
+Hier ist das Interface, das wir konfigurieren wollen, `eno2` mit MAC Adresse: `d0:50:99:d6:6b:14`.
+
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Fügen Sie die Netzwerkkonfiguration für diese Netzwerkschnittstelle und die VLAN-Deklaration in der folgenden Datei hinzu:
+
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Speichern und schließen Sie die Datei und führen Sie dann die folgenden Befehle aus:
+
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Verwenden Sie folgenden Befehl, um die Konfiguration zu bestätigen:
+
+```sh
+ip a
+```
+
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+#### Debian
 
 Installieren Sie zuerst das Paket „VLAN“ auf Ihrem Server. Verwenden Sie hierzu folgenden Befehl:
 
