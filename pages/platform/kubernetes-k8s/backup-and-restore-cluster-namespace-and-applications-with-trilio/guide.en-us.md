@@ -223,7 +223,6 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   ```text
   NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
   triliovault-operator/k8s-triliovault-operator   2.7.0           2.7.0           K8s-TrilioVault-Operator is an operator designe...
-  triliovault/k8s-triliovault-operator            0.9.0           0.9.0           K8s-TrilioVault-Operator is an operator designe...
   ```
   </li>
   <li>The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator which will also install the `Triliovault Manager` CRD. Install `TrilioVault for Kubernetes Operator` using `Helm`:
@@ -254,13 +253,13 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
   ```text
   NAME                                            READY   UP-TO-DATE   AVAILABLE   AGE
-  k8s-triliovault-admission-webhook               1/1     1            1           2m45s
-  k8s-triliovault-control-plane                   1/1     1            1           2m45s
-  k8s-triliovault-exporter                        1/1     1            1           2m45s
-  k8s-triliovault-ingress-gateway                 1/1     1            1           2m45s
-  k8s-triliovault-web                             1/1     1            1           2m45s
-  k8s-triliovault-web-backend                     1/1     1            1           2m45s
-  triliovault-operator-k8s-triliovault-operator   1/1     1            1           4m35s
+  k8s-triliovault-admission-webhook               1/1     1            1           45d
+  k8s-triliovault-control-plane                   1/1     1            1           45d
+  k8s-triliovault-exporter                        1/1     1            1           45d
+  k8s-triliovault-ingress-nginx-controller        1/1     1            1           13d
+  k8s-triliovault-web                             1/1     1            1           45d
+  k8s-triliovault-web-backend                     1/1     1            1           45d
+  triliovault-operator-k8s-triliovault-operator   1/1     1            1           45d
   ```
   Now, please check your `triliovaultmanagers` CRDs, `tvm` CR as well:
 
@@ -270,17 +269,17 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   The output looks similar to the following:
 
   ```text
-  backupplans.triliovault.trilio.io                2022-01-20T09:15:59Z
-  backups.triliovault.trilio.io                    2022-01-20T09:15:59Z
-  clusterbackupplans.triliovault.trilio.io         2022-01-20T09:15:59Z
-  clusterbackups.triliovault.trilio.io             2022-01-20T09:16:00Z
-  clusterrestores.triliovault.trilio.io            2022-01-20T09:16:01Z
-  hooks.triliovault.trilio.io                      2022-01-20T09:16:01Z
-  licenses.triliovault.trilio.io                   2022-01-20T09:16:01Z
-  policies.triliovault.trilio.io                   2022-01-20T09:16:02Z
-  restores.triliovault.trilio.io                   2022-01-20T09:16:02Z
-  targets.triliovault.trilio.io                    2022-01-20T09:16:03Z
-  triliovaultmanagers.triliovault.trilio.io        2022-01-20T09:14:39Z
+  backupplans.triliovault.trilio.io                     2021-09-29T07:39:38Z
+  backups.triliovault.trilio.io                         2021-09-29T07:39:38Z
+  clusterbackupplans.triliovault.trilio.io              2021-09-29T07:39:39Z
+  clusterbackups.triliovault.trilio.io                  2021-09-29T07:39:39Z
+  clusterrestores.triliovault.trilio.io                 2021-09-29T07:39:39Z
+  hooks.triliovault.trilio.io                           2021-09-29T07:39:39Z
+  licenses.triliovault.trilio.io                        2021-09-29T07:39:39Z
+  policies.triliovault.trilio.io                        2021-09-29T07:39:40Z
+  restores.triliovault.trilio.io                        2021-09-29T07:39:40Z
+  targets.triliovault.trilio.io                         2021-09-29T07:39:40Z
+  triliovaultmanagers.triliovault.trilio.io             2021-09-29T07:38:30Z
   ```
   You can also check if the `TVM` Custom Resource is created.
 	
@@ -528,37 +527,39 @@ The Helm based installation covered in [Step 1 - Installing TrilioVault for Kube
 
 ### Getting Access to the TVK Web Management Console
 
-To be able to access the console and explore the features it offers, you can either user LoadBalancer, NodePort or need to port forward the ingress gateway service for TVK.
+To be able to access the console and explore the features it offers, you can either user LoadBalancer, NodePort or need to port forward the ingress-nginx-controller service for TVK.
 
-First, you need to identify the `ingress-gateway` service from the `tvk` namespace:
+First, you need to identify the `ingress-nginx-controller` service from the `tvk` namespace:
 
 ```shell
 kubectl get svc -n tvk
 ```
-The output looks similar to (search for the `k8s-triliovault-ingress-gateway` line, and notice that it listens on port `80` in the `PORT(S)` column):
+The output looks similar to (search for the `k8s-triliovault-ingress-nginx-controller` line, and notice that it listens on port `80` in the `PORT(S)` column):
 
 ```text
-NAME                                TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                      AGE
-k8s-triliovault-admission-webhook   ClusterIP   10.245.121.127   <none>        443/TCP                      22m
-k8s-triliovault-ingress-gateway     NodePort    10.245.186.164   <none>        80:30090/TCP,443:30530/TCP   22m
-k8s-triliovault-web                 ClusterIP   10.245.62.14     <none>        80/TCP                       22m
-k8s-triliovault-web-backend         ClusterIP   10.245.69.118    <none>        80/TCP                       22m
-trilio-s3-target-browser-u8wf5f     ClusterIP   10.245.7.116     <none>        80/TCP                       38s
+NAME                                                            TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)                      AGE
+k8s-triliovault-admission-webhook                               ClusterIP   10.3.241.124   <none>        443/TCP                      45d
+k8s-triliovault-ingress-nginx-controller                        NodePort    10.3.183.125   <none>        80:31879/TCP,443:31921/TCP   13d
+k8s-triliovault-ingress-nginx-controller-admission              ClusterIP   10.3.20.89     <none>        443/TCP                      13d
+k8s-triliovault-web                                             ClusterIP   10.3.56.86     <none>        80/TCP                       45d
+k8s-triliovault-web-backend                                     ClusterIP   10.3.236.30    <none>        80/TCP                       45d
+triliovault-operator-k8s-triliovault-operator-webhook-service   ClusterIP   10.3.8.249     <none>        443/TCP                      45d
 ```
-If you are using LoadBalancer for the `k8s-triliovault-ingress-gateway` then the output would look like:
+If you are using LoadBalancer for the `ingress-nginx-controller` then the output would look like:
 
 ```text
-NAME                                                            TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                      AGE
-k8s-triliovault-admission-webhook                               ClusterIP      10.3.64.146    <none>          443/TCP                      24h
-k8s-triliovault-ingress-gateway                                 LoadBalancer   10.3.57.207    51.222.45.171   80:30090/TCP,443:30530/TCP   24h
-k8s-triliovault-web                                             ClusterIP      10.3.207.185   <none>          80/TCP                       24h
-k8s-triliovault-web-backend                                     ClusterIP      10.3.249.53    <none>          80/TCP                       24h
-triliovault-operator-k8s-triliovault-operator-webhook-service   ClusterIP      10.3.59.49     <none>          443/TCP                      24h
+NAME                                                            TYPE        	CLUSTER-IP     EXTERNAL-IP   	PORT(S)                      AGE
+k8s-triliovault-admission-webhook                               ClusterIP   	10.3.241.124   <none>        	443/TCP                      45d
+k8s-triliovault-ingress-nginx-controller                        LoadBalancer    10.3.183.125   51.222.45.171	80:31879/TCP,443:31921/TCP   13d
+k8s-triliovault-ingress-nginx-controller-admission              ClusterIP   	10.3.20.89     <none>        	443/TCP                      13d
+k8s-triliovault-web                                             ClusterIP   	10.3.56.86     <none>        	80/TCP                       45d
+k8s-triliovault-web-backend                                     ClusterIP   	10.3.236.30    <none>        	80/TCP                       45d
+triliovault-operator-k8s-triliovault-operator-webhook-service   ClusterIP   	10.3.8.249     <none>        	443/TCP                      45d
 ```
 `TVK` is using an `Nginx Ingress Controller` to route traffic to the management web console services. Routing is host based, and the host name is `ovh-k8s-tvk.demo.trilio.io` as defined in the `Helm` values file from the `ovh/docs`:
 
 ```yaml
-# The host name to use when accessing the web console via the TVK ingress gateway
+# The host name to use when accessing the web console via the TVK ingress controller service
 ingressConfig:
   host: "ovh-k8s-tvk.demo.trilio.io"
 ```
@@ -567,10 +568,10 @@ Having the above information at hand, please go ahead and edit the `/etc/hosts` 
 ```text
 127.0.0.1 ovh-k8s-tvk.demo.trilio.io
 ```
-Next, create the port forward for the TVK ingress gateway service:
+Next, create the port forward for the TVK ingress controller service:
 
 ```shell
-kubectl port-forward svc/k8s-triliovault-ingress-gateway 8080:80 -n tvk
+kubectl port-forward svc/k8s-triliovault-ingress-nginx-controller 8080:80 -n tvk
 ```
 Finally download the `kubeconfig` file for your OVH Managed Kubernetes Cluster present under `Service` tab as `Kubeconfig file`. This step is required so that the web console can authenticate you using kubeconfig file:
 
@@ -692,7 +693,7 @@ spec:
   backupConfig:
     target:
       name: trilio-ovh-s3-target
-      namespace: demo-backup-ns
+      namespace: tvk
   backupPlanComponents:
     helmReleases:
       - mysql-qa
@@ -700,7 +701,7 @@ spec:
 Explanation for the above configuration:
 
 - `spec.backupConfig.target.name`: Tells `TVK` what target `name` to use for storing backups.
-- `spec.backupConfig.target.namespace`: Tells `TVK` in what namespace the target was created.
+- `spec.backupConfig.target.namespace`: Tells `TVK` in which namespace the target was created.
 - `spec.backupComponents`: Defines a `list` of `resources` to back up (can be `namespaces` or `Helm releases`).
 
 Typical `Backup` CRD looks like below:
@@ -995,7 +996,7 @@ You can also open the web console main dashboard and inspect the `multi-namespac
 
 ### Re-creating the `OVH Managed Kubernetes Cluster` and Restoring Applications
 
-An important aspect to keep in mind is that whenever you destroy a `OVH Managed Kubernetes Cluster` and then restore it, a new `Load Balancer` with a new external `IP` is created as well when `TVK` restores your `ingress` controller. So, please make sure to update your OVH Managed DNS `A records` accordingly.
+An important aspect to keep in mind is that whenever you destroy a `OVH Managed Kubernetes Cluster` and then restore it, a new `Load Balancer` with a new external `IP` is created as well when `TVK` restores your `ingress controller`. So, please make sure to update your OVH Managed DNS `A records` accordingly.
 
 Now, delete the whole `OVH Managed Kubernetes Cluster` using the [OVH Cloud Web Console](https://ca.ovh.com/manager/public-cloud)
 

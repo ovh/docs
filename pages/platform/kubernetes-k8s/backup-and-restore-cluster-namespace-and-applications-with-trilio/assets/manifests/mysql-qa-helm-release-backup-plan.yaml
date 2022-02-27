@@ -2,7 +2,7 @@ apiVersion: triliovault.trilio.io/v1
 kind: BackupPlan
 metadata:
   name: mysql-qa-helm-release-backup-plan
-  namespace: demo-backup-ns
+  namespace: tvk
 spec:
   backupConfig:
     target:
