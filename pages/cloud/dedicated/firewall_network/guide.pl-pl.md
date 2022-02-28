@@ -41,9 +41,9 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 > Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
 > 
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, a następnie sekcję `IP`{.action} w dolnej części kolumny po lewej stronie. Kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
 
-![Aktywacja Network Firewall ](images/firewall_creation.png){.thumbnail}
+![Aktywacja Network Firewall ](images/firewall_creation2022.png){.thumbnail}
 
 Następnie wymagane jest potwierdzenie.
 
@@ -117,7 +117,7 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 >
 
 Aby skonfigurować reguły portów w trybie Armor, należy najpierw zalogować się do Panelu klienta OVHcloud.<br>
-Następnie przejdź do menu `Bare Metal Cloud`{.action} i kliknij sekcję `IP`{.action} na pasku bocznym po lewej stronie. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
+Następnie przejdź do menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

@@ -47,9 +47,7 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 
 ### Sposta un IP dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e poi sulla sezione `IP`{.action} in basso a sinistra.
-
-![Spazio Cliente](images/manager01.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}.
 
 Il menu a tendina "Service" ti permette di selezionare solo gli IP Failover.
 

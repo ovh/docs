@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated 16<sup>th</sup> February 2022.**
+**Last updated 28th February 2022.**
 
 <style>
  pre {
@@ -46,6 +46,12 @@ Note that any operation requested to our services, like node deletions or update
 Most worker nodes (be them added manually or through cluster autoscaler) are created within a few minutes, with the exception of GPU worker nodes (t1 and t2 flavors) where ready status can take up to a bit more than one hour.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
+
+## Data persistence
+
+If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
+
+We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lose your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) for more information.
 
 ## LoadBalancer
 

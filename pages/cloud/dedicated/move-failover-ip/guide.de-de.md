@@ -47,9 +47,7 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 
 ### Eine IP über das OVHcloud Kundencenter umziehen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü am Ende `IP`{.action} aus.
-
-![Kundencenter](images/manager01.png){.thumbnail}
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
 Das Drop-down-Menü "Dienst" erlaubt es Ihnen, nach Failover-IP-Adressen zu filtern.
 
