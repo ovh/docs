@@ -145,7 +145,7 @@ Your first Helm operator will follow the following code organization:
 First, create a `helm-charts` folder and then an `ovh-nginx` folder inside it.
 Go inside `helm-charts/ovh-nginx` folders.
 
-Then,  create a `template` folder.
+Then, create a `templates` folder.
 In this `templates` folder, create a file named `deployment.yaml` with the following content:
 ```yaml
 apiVersion: apps/v1
@@ -189,7 +189,7 @@ spec:
               port: http
 ```
 
-Then, in `template` folder, you can create the Service in a file `service.yaml` with the following content:
+Then, in `templates` folder, you can create the Service in a file `service.yaml` with the following content:
 ```yaml
 apiVersion: v1
 kind: Service
@@ -427,7 +427,7 @@ You need to update your code organisation and add the `samples` folder in the `m
 └── watches.yaml
 ```
 
-In the folder `samples` create the file `tutorials_v1_ovhnginxoperator.yaml` with the following content:
+In the `samples` folder create the file `tutorials_v1_ovhnginxoperator.yaml` with the following content:
 ```yaml
 apiVersion: tutorials.ovhcloud.com/v1
 kind: OvhNginx
