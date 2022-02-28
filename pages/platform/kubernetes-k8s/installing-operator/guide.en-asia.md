@@ -707,6 +707,12 @@ spec:
       imagePullSecrets:
       - name: regcred
 ```
+
+> [!info]
+>
+> Replace the path to the operator image by your own path to your registry
+>
+
 And apply the file to the Kubernetes cluster:
 ```bash
 kubectl apply -f manifests/ovh-nginx-operator.yaml -n ovh-nginx-operator
