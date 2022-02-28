@@ -1,12 +1,12 @@
 ---
-title:  Déplacer une IP Fail Over
+title:  Déplacement d'une IP Fail Over
 excerpt: "Découvrez comment déplacer une IP Fail Over depuis l'espace client ou via les API OVHcloud"
 slug: ip-fo-move
 section: 'Réseau & IP'
 order: 7
 ---
 
-**Dernière mise à jour le 09/12/2021**
+**Dernière mise à jour le 23/02/2022**
 
 ## Objectif
 
