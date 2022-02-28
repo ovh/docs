@@ -58,4 +58,4 @@ Una lista con un record "vmac / supported" che sarà "true" o "false" (valore bo
 
 [Iniziare a utilizzare le API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
