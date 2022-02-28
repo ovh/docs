@@ -1,5 +1,5 @@
 ---
-title: 'Configuration d'un IPv6 sur un serveur dédié'
+title: "Configuration d'une IPv6 sur un serveur dédié"
 slug: network-ipv6
 excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.'
 section: 'Réseau & IP'
