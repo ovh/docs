@@ -79,7 +79,6 @@ The operator SDK provides several tools:
  - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator.  
 
 In this article you will use the [Helm helper](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/).  
-You'll see in other articles how to develop operators with other languages (Go for example).
 
 ### Install the CLI
 
@@ -780,6 +779,8 @@ mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   8080:3
 
 
 You can also try to delete the service and see that the operator recreates it!
+
+## What’s next
 
 Other tutorials on operators will be soon available to discover additional ways to develop an operator.
 
