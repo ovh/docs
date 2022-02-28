@@ -63,7 +63,7 @@ Aceda ao separador `Contas de e-mail`{.action} da sua plataforma, clique no bot�
 
 Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.action} no canto superior direito e, a seguir, em `Cancelar`{.action}. 
 
-![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >

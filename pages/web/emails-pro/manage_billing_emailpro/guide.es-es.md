@@ -63,7 +63,7 @@ Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en
 
 En la ventana de gestión de su plataforma Email Pro, haga clic en el botón `Acciones`{.action} en la parte superior derecha y seleccione `Dar de baja`{.action}. 
 
-![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >

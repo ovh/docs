@@ -63,7 +63,7 @@ Przejdź do karty `Konta e-mail`{.action} Twojej platformy, następnie kliknij p
 
 W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie `Rezygnacja`{.action}. 
 
-![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >

@@ -63,7 +63,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma e poi sul pul
 
 Dalla finestra di gestione della piattaforma Email Pro, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Disattiva`{.action}. 
 
-![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
+![billing_emailpro](images/billing-emailpro-05.png){.thumbnail}
 
 > [!primary]
 >
