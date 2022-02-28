@@ -5,7 +5,7 @@ excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Inte
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 21/12/2020**
+**Dernière mise à jour le 28/02/2022**
 
 ## Objectif
 
