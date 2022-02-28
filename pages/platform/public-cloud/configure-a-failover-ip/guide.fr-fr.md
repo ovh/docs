@@ -1,12 +1,12 @@
 ---
-title: 'Configurer une IP fail-over'
+title: 'Configuration d'une  IP fail-Over'
 slug: configurer_une_ip_failover
 excerpt: 'Découvrez comment ajouter des adresses IP fail-over à la configuration de votre instance'
 section: Réseau
 order: 2
 ---
 
-**Dernière mise à jour le 14 avril 2021**
+**Dernière mise à jour le 23/02/2022**
 
 ## Objectif
 
@@ -40,7 +40,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 
 |Terme|Description|Exemples|
 |---|---|---|
-|IP_FAILOVER|Adresse IP fail-over attribuée à votre service|169.254.10.254|
+|IP_FAILOVER|Adresse IP fail-over attribuée à votre service|169.XXX.XXX.XXX|
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
