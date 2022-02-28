@@ -710,7 +710,7 @@ spec:
 
 > [!info]
 >
-> Replace the path to the operator image by your own path to your registry
+> The path to the operator's image must be the same value that the _[YOUR_PRIVATE_REGISTRY_URL]_ field in the previous examples.
 >
 
 And apply the file to the Kubernetes cluster:
