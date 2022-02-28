@@ -5,7 +5,11 @@ excerpt: Ce guide vous présente comment avoir accès à votre cluster en utilis
 section: Cloud Disk Array
 ---
 
+## Objectif
+
 Il existe différentes façons d'utiliser votre grappe Ceph. Nous allons décrire comment cartographier votre cluster en utilisant **rbd client**.
+
+## Prérequis
 
 Vous devez d'abord vous assurer que vous avez bien effectué ces démarches :
 
@@ -14,10 +18,11 @@ Vous devez d'abord vous assurer que vous avez bien effectué ces démarches :
 - [Ajouter des droits à un utilisateur sur un pool](https://docs.ovh.com/ca/fr/storage/ceph/changer-droits-utilisateurs/)
 - [Ajouter un IP ACL](https://docs.ovh.com/ca/fr/storage/ceph/creer-ip-acl/) pour permettre à votre serveur de contacter le cluster
 
+## En pratique
 
-## Installation Ceph
-Pour les distributions **Debian**:
+### Installation Ceph
 
+Pour les distributions **Debian** :
 
 ```bash
 ubuntu@server:~$ sudo apt-get -y install ceph ceph-common
@@ -28,7 +33,6 @@ Setting up ceph (10.2.0-0ubuntu0.16.04.2) ...
 
 Pour les distributions **rpm** :
 
-
 ```bash
 [centos@server ~]$ sudo yum install -y ceph-common
 [...]
@@ -36,10 +40,9 @@ Installed:
 ceph-common.x86_64 1:0.80.7-3.el7
 ```
 
+### Configuration Ceph
 
-## Configuration Ceph
 Créer un fichier: /etc/ceph/ceph.conf
-
 
 ```ini
 1. [global]
@@ -48,20 +51,18 @@ Créer un fichier: /etc/ceph/ceph.conf
 
 Créer le fichier /etc/ceph/ceph.client.<ceph_user_name>.keyring
 
-
 ```ini
 1. [client.<ceph_user_name>]
 2. key = <my_user_key>
 ```
 
-<mon_X_IP> doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://ca.ovh.com/manager/){.external}. Sous "Plateformes et services", sélectionnez votre groupe Ceph.
+<mon_X_IP> doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous "Plateformes et services", sélectionnez votre groupe Ceph.
 
 <my_user_key> doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
 
+### Contrôle de la configuration
 
-## Contrôle de la configuration
 Vous pouvez vérifier la configuration en listant les images à l'intérieur de votre pool.
-
 
 ```bash
 ubuntu@server:~$ rbd -n client.myuser list mypool
@@ -69,10 +70,9 @@ ubuntu@server:~$ rbd -n client.myuser list mypool
 
 Dans ce cas, le résultat est vide car nous n'avons pas encore créé d'image. Si vous avez une erreur, veuillez vérifier votre configuration.
 
+### Création d'images
 
-## Création d'images
-Vous ne pouvez pas monter directement une piscine, vous devez **monter une image** qui existe sur la piscine.
-
+Vous ne pouvez pas monter directement un pool, vous devez **monter une image** qui existe sur le pool.
 
 ```bash
 ubuntu@server:~$ rbd -n client.myuser create mypool/myimage -s $((10*1024*1024)) --image-format 2 --image-feature layering
@@ -82,8 +82,7 @@ myimage
 
 Nous nous assurons que l'image a été créée correctement en répertoriant le contenu du pool.
 
-
-## Cartographier l'image
+### Cartographier l'image
 
 ```bash
 ubuntu@server:~$ sudo rbd -n client.myuser map mypool/myimage
@@ -92,8 +91,7 @@ ubuntu@server:~$ sudo rbd -n client.myuser map mypool/myimage
 
 Mon image rbd n'est pas mappée à /dev/rbd0, c'est un stockage en bloc. C'est pourquoi nous devons **mettre en place un système de fichiers**.
 
-
-## Configuration du système de fichiers
+### Configuration du système de fichiers
 
 ```bash
 ubuntu@server:~$ sudo mkfs.xfs /dev/rbd0
@@ -108,8 +106,7 @@ log      =internal log           bsize=4096   blocks=521728, version=2
 realtime =none                   extsz=4096   blocks=0, rtextents=0
 ```
 
-
-## Monter le système de fichiers
+### Monter le système de fichiers
 
 ```bash
 ubuntu@server:~$ sudo mkdir /mnt/rbd
@@ -120,3 +117,7 @@ Filesystem      Size  Used Avail Use% Mounted on
 ```
 
 Vous pouvez maintenant utiliser votre grappe Ceph !
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
