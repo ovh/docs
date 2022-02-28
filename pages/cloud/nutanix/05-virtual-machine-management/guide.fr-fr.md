@@ -192,7 +192,7 @@ Attendre la fin de l'installation
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG)
 
-Saisissez le mote de passe dans `Password`{.action} et `Reenter password`{.action}
+Saisissez le mot de passe dans `Password`{.action} et `Reenter password`{.action}
 
 Ensuite Cliquez sur `Next`{.action}
 
@@ -222,7 +222,7 @@ Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}
 
 Cliquez sur `Install`{.action}
 
-Maintenant que l'installation des du système d'exploitations et des pilotes spécifiques à **Ahv** il faut installer les NGT *Nutanix Guest TOOLS**
+Maintenant que l'installation des du système d'exploitations et des pilotes spécifiques à **Ahv** il faut installer les **NGT (Nutanix Guest TOOLS)**
 
 
 
