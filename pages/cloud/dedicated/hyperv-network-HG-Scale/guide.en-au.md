@@ -139,7 +139,7 @@ Next, you need to select `LAN routing` and then click `Next`{.action}.
 
 Finally, click on `Finish`{.action} and then `Start Service`{.action} on the popup that will appear.
 
-![Configure RRAS](images/configure_rras_3.png){.thumbnail}
+![Configure RRAS](images/configure_rras_4.png){.thumbnail}
 
 #### Set Primary and Additional IP statically on Hyper-V interface
 
