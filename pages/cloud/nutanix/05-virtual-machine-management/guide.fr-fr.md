@@ -43,18 +43,17 @@ L'outil **Move** permet de migrer facilement des VM existantes dans un autre env
 
 Pour plus de détails sur *AHV* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
-Dans les cas pratiques nous allons voir coment créer un ordinateur virtuel pour Windows , modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer la VM d'un nœud à l'autre du cluster.
-
-
 ## En pratique
 
-Dans les cas pratiques nous allons voir coment créer un ordinateur virtuel pour Windows , modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer la VM d'un nœud à l'autre du cluster.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows , modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer la VM d'un nœud à l'autre du cluster.
 
 `l'icone avec 3 traits`{.action} Pour copier si besoin
 
-### Création d'une Ordinateur Virtuel
+### Création d'une Ordinateur Virtuel un système d'exploitation Windows
 
-Nous allons créer une ordinateu virtuel pour installer Windows server 2022
+L'installation d'un ordinateur virtuel sous Windowns necessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
+
+Nous allons créer une ordinateur virtuel pour installer Windows server 2022
 
 Dans **Prism Central** dans le menu de gauche dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
@@ -80,7 +79,7 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 4](images/CreateVM04.PNG)
 
-Rajoutez l'image ISO de l'installer de Windows Server 2022
+Rajoutez l'image ISO de l'installation de Windows Server 2022
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**
 
@@ -92,7 +91,7 @@ Cliquez `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG)
 
-Rajoutez l'image ISO des pilotes spécifiques à *AHV* notamment le pilote contrôleur de disque.
+Rajoutez l'image ISO des pilotes spécifiques à *AHV* notamment le pilote du contrôleur de disques.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**
 
@@ -100,7 +99,7 @@ Cliquez sur `Save`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 7](images/CreateVM07.PNG)
 
-Cliquez sur `Attach Subnet`{.action}
+Configuration du réseau - Cliquez sur `Attach Subnet`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG)
 
