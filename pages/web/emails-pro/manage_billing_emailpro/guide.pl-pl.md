@@ -1,6 +1,6 @@
 ---
 title: 'Zarządzanie płatnościami za Twoje konta E-mail Pro'
-slug: zarządzanie-płatnosciami-emailpro
+slug: zarzadzanie-platnosciami-emailpro
 excerpt: 'Dowiedz się, jak zarządzać fakturowaniem usługi E-mail Pro'
 section: 'Pierwsze kroki'
 order: 4
@@ -27,23 +27,23 @@ Oferta E-mail Pro umożliwia elastyczne zarządzanie płatnościami. Niniejszy p
 
 ### Zamówienie dodatkowych kont
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `WebCloud`{.action}. Kliknij `Email Pro`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią platformę E-mail Pro.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. Kliknij `E-mail Pro`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią platformę E-mail Pro.
 
-Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamów konta`{.action} w prawym górnym rogu.
+Przejdź do karty `Konta e-mail`{.action}, a następnie kliknij przycisk `Zamówienie kont`{.action} w prawym górnym rogu.
 
 ![billing_emailpro](images/billing-emailpro-01.png){.thumbnail}
 
 ### Zmień częstotliwość odnawiania kont <a name="periodicity"></a>
 
-W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie `Tryb płatności`{.action}. 
+W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie `Sposób płatności`{.action}. 
 
 ![billing_emailpro](images/billing-emailpro-02.png){.thumbnail}
 
-Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta. Możesz dokonać wyboru, klikając na pozycję **Miesięczną**, **Roczną** lub **Brak**. Można to zrobić również indywidualnie dla każdego rachunku.
+Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta. Możesz dokonać wyboru, klikając na pozycję **Abonament miesięczny**, **Roczny** lub **Brak**. Można to zrobić również indywidualnie dla każdego rachunku.
 
-- **Miesięcznie**: Konto jest płatne co miesiąc w dniu wskazanym w kolumnie **Data wygaśnięcia**
-- **Rocznie**: Płatności za 12 miesięcy w dniu wskazanym w kolumnie **Data wygaśnięcia**
-- **Brak**\: konto zostanie zawieszone, a następnie usunięte w dniu wskazanym w kolumnie **Data wygaśnięcia**
+- **Abonament miesięczny**: Konto jest płatne co miesiąc w dniu wskazanym w kolumnie **Data wygasania**
+- **Roczny**: Płatności za 12 miesięcy w dniu wskazanym w kolumnie **Data wygasania**
+- **Brak**: konto zostanie zawieszone, a następnie usunięte w dniu wskazanym w kolumnie **Data wygasania**
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
@@ -55,13 +55,13 @@ Aby usunąć konto z Twojej platformy E-mail Pro, należy najpierw zrezygnować 
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 
-Przejdź do karty `Konta e-mail`{.action} Twojej platformy, następnie kliknij przycisk...` przed danym kontem, a następnie kliknij `{.action}Zresetuj to konto` `{.action}. Po zresetowaniu konto pozostanie nieaktywne do czasu wygaśnięcia.
+Przejdź do karty `Konta e-mail`{.action} Twojej platformy, następnie kliknij przycisk `...`{.action} przed danym kontem, a następnie kliknij `Zresetuj to konto`{.action}. Po zresetowaniu konto pozostanie nieaktywne do czasu wygaśnięcia.
 
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
 ### Rezygnacja z platformy
 
-W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Działania`{.action} w prawym górnym rogu, a następnie `Rezygnacja`{.action}. 
+W oknie zarządzania Twoją usługą E-mail Pro kliknij przycisk `Operacje`{.action} w prawym górnym rogu, a następnie `Rezygnacja`{.action}. 
 
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 

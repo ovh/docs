@@ -27,7 +27,7 @@ A oferta E-mail Pro dispõe de uma gestão flexível no que diz respeito à fatu
 
 ### Encomendar contas suplementares
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `WebCloud`{.action}. Clique em `Email Pro`{.action} na barra à esquerda e selecione a plataforma E-mail Pro em causa.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`{.action}. Clique em `E-mail Pro`{.action} e selecione a plataforma E-mail Pro em causa.
 
 Aceda ao separador `Contas de e-mail`{.action} e clique no botão `Encomendar contas`{.action} no canto superior direito.
 
@@ -43,15 +43,15 @@ Aparecerá uma janela, a tabela permite-lhe gerir o período de renovação de c
 
 - **Mensal**: A conta é faturada mensalmente na data indicada na coluna **Expiração**
 - **Anual**: Foi faturado durante 12 meses na data indicada na coluna **Expiração**
-- **Nenhuma**\: a conta será suspensa e eliminada na data indicada na coluna **Expiração**
+- **Nenhuma**: a conta será suspensa e eliminada na data indicada na coluna **Expiração**
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
-Clique `em Seguinte`{.action} para aceder ao resumo das alterações que foram pedidas e, a seguir, clique em `Validar`{.action} para confirmar a sua escolha.
+Clique em `Seguinte`{.action} para aceder ao resumo das alterações que foram pedidas e, a seguir, clique em `Validar`{.action} para confirmar a sua escolha.
 
 ### Eliminar contas
 
-Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhum**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity){.external}.
+Para eliminar uma conta da plataforma E-mail Pro, primeiro tem de a cancelar passando a configuração da renovação para **Nenhuma**. Para isso, consulte o passo ["Alterar a periodicidade das contas"](#periodicity){.external}.
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 
@@ -61,7 +61,7 @@ Aceda ao separador `Contas de e-mail`{.action} da sua plataforma, clique no bot�
 
 ### Cancelar a plataforma
 
-Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.action} no canto superior direito e, a seguir, em `Rescindir`{.action}. 
+Na janela de gestão da plataforma E-mail Pro, clique no botão `Ações`{.action} no canto superior direito e, a seguir, em `Cancelar`{.action}. 
 
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 

@@ -27,7 +27,7 @@ La solución Email Pro dispone de una gestión flexible relativa a la facturaci�
 
 ### Contratar cuentas adicionales
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `WebCloud`{.action}. En la columna izquierda, haga clic en `Email Pro`{.action} y seleccione la plataforma Email Pro correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Email Pro`{.action} y seleccione la plataforma Email Pro correspondiente.
 
 Acceda a la pestaña `Cuentas de correo`{.action} y haga clic en el botón `Contratar cuentas`{.action} en la parte superior derecha.
 
@@ -43,11 +43,11 @@ Se abrirá una ventana en la que podrá gestionar el período de renovación de 
 
 - **Mensual**: La cuenta se le facturará cada mes en la fecha indicada en la columna **Expiración.**
 - **Anual**: Se le facturará durante 12 meses a la fecha indicada en la columna **Expiración.**
-- **Ninguna**\: la cuenta se suspenderá y se eliminará en la fecha indicada en la columna **Expiración.**
+- **Ninguna**: la cuenta se suspenderá y se eliminará en la fecha indicada en la columna **Expiración.**
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
-Haga clic `en "Siguiente`{.action}" para consultar el resumen de los cambios solicitados y, seguidamente, haga clic en "`Aceptar`{.action}" para confirmar su elección.
+Haga clic en `Siguiente`{.action} para consultar el resumen de los cambios solicitados y, seguidamente, haga clic en `Aceptar`{.action} para confirmar su elección.
 
 ### Eliminar cuentas
 
@@ -55,7 +55,7 @@ Para eliminar una cuenta de su plataforma Email Pro, primero debe darla de baja 
 
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
 
-Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el botón `..`{.action} delante de la cuenta correspondiente y luego en `Restaurar la cuenta`{.action}. Una vez reiniciada, la cuenta permanecerá en blanco hasta su expiración.
+Acceda a la pestaña `Cuentas de correo`{.action} de su plataforma, haga clic en el botón `...`{.action} delante de la cuenta correspondiente y luego en `Restaurar la cuenta`{.action}. Una vez reiniciada, la cuenta permanecerá en blanco hasta su expiración.
 
 ![billing_emailpro](images/billing-emailpro-04.png){.thumbnail}
 
