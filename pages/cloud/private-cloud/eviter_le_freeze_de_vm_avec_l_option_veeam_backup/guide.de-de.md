@@ -6,7 +6,11 @@ section: 'Verwaltung virtueller Maschinen'
 order: 7
 ---
 
-**Stand 19.07.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Stand 22.02.2022**
 
 ## Einleitung
 
@@ -17,13 +21,11 @@ Dies passiert, weil der Snapshot Ihrer virtuellen Maschine auf dem Backup Proxy 
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Private Cloud](https://www.ovh.de/private-cloud/){.external} Lösung.
-- Die Option [Veeam Managed Backup](https://www.ovh.de/private-cloud/optionen/veeam.xml){.external} ist aktiviert.
-- Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Die Option [Veeam Managed Backup](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external} aktivieren.
 
-## Beschreibung
-
-### Vorgehensweise
+## In der praktischen Anwendung
 
 > [!primary]
 >
@@ -34,8 +36,9 @@ Dies passiert, weil der Snapshot Ihrer virtuellen Maschine auf dem Backup Proxy 
 > - Alle virtuellen Maschinen, für die Backups erstellt werden, die jedoch nicht in den DRS-Regeln enthalten sind, können weiterhin blockiert werden.
 >
 
+Um diese Lösung umzusetzen, klicken Sie auf den entsprechenden Cluster, gehen Sie auf den Tab `Configure`{.action} und dann auf den Abschnitt `VM/Host Rules`{.action}.
 
-Um diese Lösung umzusetzen, klicken Sie mit der rechten Maustaste auf den zugehörigen Cluster und bearbeiten Sie die Einstellungen.
+![vSphere](images/en01add.png){.thumbnail}
 
 Erstellen Sie eine DRS-Regel, um die **virtuellen Maschinen zusammenzuhalten** und fügen Sie sie zu einem Backup Proxy hinzu. Wenn Sie eine große Anzahl virtueller Maschinen sichern möchten, können Sie mehrere DRS-Regeln erstellen und sie mit mehreren Backup Proxys verbinden. Der OVH Algorithmus stellt sicher, dass der Backup-Prozess der virtuellen Maschine vom Backup Proxy auf demselben ESXi-Host ausgeführt wird wie die virtuelle Maschine.
 
@@ -44,17 +47,11 @@ Erstellen Sie eine DRS-Regel, um die **virtuellen Maschinen zusammenzuhalten** u
 > Wenn Sie einen neuen Backup Proxy hinzufügen, verursacht dies zusätzliche Kosten.
 >
 
-Im DRS-Bereich können Sie wie folgt eine Regel hinzufügen:
-
-![](images/image0_7.png){.thumbnail}
+![proxy](images/en02proxy.png){.thumbnail}
 
 Erstellen Sie eine andere DRS-Regel für **separate virtuelle Maschinen**, damit die Backup Proxys auf verschiedenen Hosts verbleiben.
 
-![](images/image0_28.png){.thumbnail}
-
-Erstellen Sie eine Gruppe virtueller Maschinen, geben Sie den Namen der Gruppe ein und fügen Sie den Host zu der Regel hinzu:
-
-![](images/image1_9.png){.thumbnail}
+![proxy](images/en03proxy2.png){.thumbnail}
 
 Bitte beachten Sie, dass eine Anti-Affinitätsregel eingerichtet sein muss, damit sich die Backup Proxys nie auf demselben Host befinden, und dass Sie so viele Affinitätsregeln wie Backup Proxys benötigen.
 
