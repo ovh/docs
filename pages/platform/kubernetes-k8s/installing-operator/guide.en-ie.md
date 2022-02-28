@@ -1,6 +1,6 @@
 ---
 title: Deploying a Kubernetes Operator based on Helm on OVHcloud Managed Kubernetes
-slug: installing-operator
+slug: deploying-helm-operator
 excerpt: Learn how to deploy Kubernetes operator on OVHcloud Managed Kubernetes with Helm and the Operator SDK
 section: Operators
 ---
@@ -36,7 +36,7 @@ section: Operators
 ![Operator diagram](images/operator.png)
 
 In few words an operator offers OPS actions programmatically and avoid repetitive human activities that are devoid of added value.
-The tasks that an operator can do are various and can be on resources deployed in Kubernetes (like a Pod for example) or outside (like a database for example).
+The tasks that an operator can do are various and can be on resources deployed in Kubernetes (like a Pod) or outside (like a database for example).
 In this guide, we are focusing on resources inside a Kubernetes cluster.
 
 An operator is based on a [Custom Resource](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that allows to extend Kubernetes API.
@@ -50,7 +50,7 @@ An operator can have various capabilities:
 * backup and recovery if the operator handles a state,
 * auto-remediation of the application if a problem occurs,
 * monitoring and observability for its own metrics,
-* auto scaling, auto tuning, ...  
+* auto scaling, auto tuning...  
 
 A good summary of the capabilities of an operator can be found on the [operator framework website](https://operatorframework.io/operator-capabilities/).
 
@@ -66,20 +66,19 @@ This tutorial assumes that you already have a Kubernetes cluster managed by OVHc
 
 ## Instructions
 
-In this tutorial, we create a simple operator that manages the installation of an Nginx server and monitors it.  
-Our operator will allow us to:
+In this tutorial, you will create a simple operator that manages the installation of an Nginx server and monitors it.  
+The operator allow you to:
  - install a Ngnix server with the required number of Pods,
  - upgrade the number of Pods,
  - change the HTTP port,
  - recreate the service if it is deleted.
 
-We'll develop this operator with the [operator SDK](https://sdk.operatorframework.io).  
+You'll develop this operator with the [operator SDK](https://sdk.operatorframework.io).  
 The operator SDK provides several tools:
  - a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator,
  - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator.  
 
-In this article we use the [Helm helper](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/).  
-We'll see in other articles how to develop operators with other languages (Go for example).
+In this article you will use the [Helm helper](https://sdk.operatorframework.io/docs/building-operators/helm/quickstart/).  
 
 ### Install the CLI
 
@@ -97,8 +96,8 @@ operator-sdk version
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ brew install operator-sdk
+<pre class="console"><code>$ brew install operator-sdk
+...
 ==> Installing dependencies for operator-sdk: go
 ==> Installing operator-sdk dependency: go
 ==> Pouring go--1.17.6.x86_64_linux.bottle.tar.gz
@@ -115,6 +114,7 @@ Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 ==> Caveats
 ==> operator-sdk
+...
 
 $ operator-sdk version
 operator-sdk version: "v1.17.0", commit: "704b02a9ba86e85f43edb1b20457859e9eedc6e6", kubernetes version: "v1.21", go version: "go1.17.6", GOOS: "darwin", GOARCH: "arm64"
@@ -146,7 +146,7 @@ First, create a `helm-charts` folder and then an `ovh-nginx` folder inside it.
 Go inside `helm-charts/ovh-nginx` folders.
 
 Then,  create a `template` folder.
-In this `template` folder, create a file named `deployment.yaml` with the following content:
+In this `templates` folder, create a file named `deployment.yaml` with the following content:
 ```yaml
 apiVersion: apps/v1
 kind: Deployment
@@ -208,7 +208,7 @@ spec:
     {{- include "ovh-nginx.selectorLabels" . | nindent 4 }}
 ```
 
-Then, in `template` folder, create a helper to simplify the templates, to do that create a `helper.tpl` file with the content:
+Then, always in `templates` folder, create a helper to simplify the templates, to do that create a `_helper.tpl` file with the content:
 ```
 {{/*
 Expand the name of the chart.
@@ -284,7 +284,7 @@ type: application
 version: 0.1.0
 ```
 
-At this point we have a standard helm chart.
+At this point you have a standard Helm chart.
 It can be used with the Helm client (`helm upgrade` for instance) to deploy the Nginx server. 
 In the following sections you'll see how to delegate this to an operator.
 
@@ -315,7 +315,7 @@ You need to update your code organisation and add the following folders:
 └── watches.yaml
 ```
 
-First create a `manifests` folder and then a `crd` folder.
+First create a `manifests` folder. Go inside it and create a `crd` folder.
 In the `crd` folder create a `tutorials.ovhcloud.com_ovhnginxoperators.yaml` file with the following content:
 
 ```yaml
@@ -355,7 +355,7 @@ spec:
     subresources:
       status: {}
 ```
-Then in the `manifests` folder create the `watches.yaml` file with the following content:
+Then create the `watches.yaml` file with the following content:
 
 ```yaml
 - group: tutorials.ovhcloud.com
@@ -374,8 +374,7 @@ kubectl apply -f manifests/crd/tutorials.ovhcloud.com_ovhnginxoperators.yaml
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ kubectl apply -f manifests/crd/tutorials.ovhcloud.com_ovhnginxoperators.yaml
+<pre class="console"><code>$ kubectl apply -f manifests/crd/tutorials.ovhcloud.com_ovhnginxoperators.yaml
 customresourcedefinition.apiextensions.k8s.io/ovhnginxs.tutorials.ovhcloud.com created
 
 $ kubectl get crds/ovhnginxs.tutorials.ovhcloud.com
@@ -389,8 +388,7 @@ helm-operator run
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ helm-operator run
+<pre class="console"><code>$ helm-operator run
 
 {"level":"info","ts":1645197230.698494,"logger":"cmd","msg":"Version","Go Version":"go1.17.6","GOOS":"darwin","GOARCH":"arm64","helm-operator":"v1.17.0","commit":"704b02a9ba86e85f43edb1b20457859e9eedc6e6"}
 {"level":"info","ts":1645197230.699863,"logger":"cmd","msg":"Watch namespaces not configured by environment variable WATCH_NAMESPACE or file. Watching all namespaces.","Namespace":""}
@@ -403,8 +401,14 @@ $ helm-operator run
 {"level":"info","ts":1645197231.993102,"logger":"controller.ovhnginx-controller","msg":"Starting workers","worker count":8}
 </code></pre>
 
+> [!info]
+>
+> Do not stop the operator execution. It's mandatory that it continues to run for the next steps.  
+> You'll can stop it later in this tutorial when you'll deploy it in the Kubernetes cluster.
+
+
 Now it's time to create your first CR.
-You need to update your code organisation and add the `sample` folder in the `manifests` folder:
+You need to update your code organisation and add the `samples` folder in the `manifests` folder:
 ```bash
 .
 ├── helm-charts
@@ -441,8 +445,7 @@ kubectl create ns test-ovh-nginx-operator
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ kubectl create ns test-ovh-nginx-operator
+<pre class="console"><code>$ kubectl create ns test-ovh-nginx-operator
 namespace/test-ovh-nginx-operator created
 
 $ kubectl get ns                           
@@ -460,8 +463,7 @@ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+<pre class="console"><code>$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample created
 
 $ kubectl get ovhnginx
@@ -469,8 +471,7 @@ NAME             AGE
 mynginx-sample   79s
 </code></pre>
 
-What about your operator?
-It's detects the new CR and does a few things:
+At the time, the operator which is currently running, detects the new CR and does a few things:
 ```bash
 {"level":"info","ts":1645197784.822017,"logger":"controller.ovhnginx-controller","msg":"Starting EventSource","source":"kind source: *unstructured.Unstructured"}
 {"level":"info","ts":1645197784.822165,"logger":"helm.controller","msg":"Watching dependent resource","ownerApiVersion":"tutorials.ovhcloud.com/v1","ownerKind":"OvhNginx","apiVersion":"apps/v1","kind":"Deployment"}
@@ -481,45 +482,51 @@ It's detects the new CR and does a few things:
 
 Let's take a look at the resources in your Kubernetes cluster:
 ```bash
-kubectl get pods
-kubectl get service
+kubectl get pod -n test-ovh-nginx-operator
+kubectl get svc -n test-ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>
-$ kubectl get pods
+<pre class="console"><code>$ kubectl get pod -n test-ovh-nginx-operator
 NAME                                        READY   STATUS    RESTARTS   AGE
 mynginx-sample-ovh-nginx-65b64c6585-wtc5g   1/1     Running   0          72s
 
-$ kubectl get service
+$ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)        AGE
 mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.170   80:30356/TCP   105s
+</code></pre>
+
+Get the service external IP:
+```bash
+kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n test-ovh-nginx-operator
+```
+
+Output should be like this:
+<pre class="console"><code>$ kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n test-ovh-nginx-operator
+152.228.169.170
 </code></pre>
 
 You can now visit the URL `http://152.228.169.170/`:  
 ![Hello world from Nginx](images/hello-world.png)
 
-You can now safely delete your CR:
+At the time, the operator should be triggered and will delete created pods and services.
 ```bash
-kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample
+kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>
-$ kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample
+<pre class="console"><code>$ kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
 ovhnginx.tutorials.ovhcloud.com "mynginx-sample" deleted
 
-$ kubectl get pods
+$ kubectl get pod -n test-ovh-nginx-operator 
 No resources found in test-ovh-nginx-operator namespace.
 
-$ kubectl get services
+$ kubectl get svc -n test-ovh-nginx-operator
 No resources found in test-ovh-nginx-operator namespace.
 </code></pre>
 
-### Deploy the operator in Kubernetes
+### Deploy the operator on the OVHcloud Managed Kubernetes cluster
 
-Maybe you think:
-> ok my operator turns on my computer, but how can I deploy it on my Kubernetes cluster?
-
-And you're right, the goal of our operator is to be independent and manage automatically all requests!
+Now you will show you how to deploy your operator on a Kubernetes cluster.
+You can now safely stop the local operator running in your terminal.
 
 > [!info]
 >
@@ -538,15 +545,15 @@ COPY helm-charts  ${HOME}/helm-charts
 WORKDIR ${HOME}
 ```
 
-Then, build the image and push it on your favorite registry (for instance the [Managed Private Registry](https://docs.ovh.com/ie/en/private-registry/) by OVHcloud):
+Then, build the image and push it to your favorite registry.
+In order to create a private registry you can follow the how to create an [OVHcloud private registry](../../private-registry/creating-a-private-registry/) tutorial.
 ```bash
-docker build  -t [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0 .
 docker login [YOUR_PRIVATE_REGISTRY_URL]
+docker build  -t [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0 .
 docker push [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0
 ```
 Output should be like this:
-<pre class="console"><code>
-$ docker buildx build --platform linux/amd64 -t 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0 .
+<pre class="console"><code>$ docker build -t 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0 .
 [+] Building 0.4s (9/9) FINISHED                                                                                                                 
  => [internal] load build definition from Dockerfile                                                                                        0.0s
  => => transferring dockerfile: 32B                                                                                                         0.0s
@@ -584,19 +591,18 @@ ede2e4397fdc: Pushed
 </code></pre>
 
 
-The last step consistes to deploy your operator in the Kubernetes cluster.  
+The last step is to deploy your operator in the Kubernetes cluster.  
 First, create the namespace for the operator:
 ```bash
 kubectl create ns ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>
-$ kubectl create ns ovh-nginx-operator
+<pre class="console"><code>$ kubectl create ns ovh-nginx-operator
 
 namespace/ovh-nginx-operator created
 </code></pre>
 
-If you have pushed your image in a private registry, you have to create the secret:
+Now you need to create a Kubernetes secret in order to tell Kubernetes what are the credentials to login and pull images to your Docker private registry:
 ```bash
 kubectl create secret generic regcred \
     --from-file=.dockerconfigjson=<path/to/.docker/config.json>/config.json  \
@@ -604,12 +610,16 @@ kubectl create secret generic regcred \
     --namespace=ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>
-kubectl create secret generic regcred \
+<pre class="console"><code>$ kubectl create secret generic regcred \
     --from-file=.dockerconfigjson=/Users/sphilipp/.docker/config.json  \
-    --type=kubernetes.io/dockerconfigjson
+    --type=kubernetes.io/dockerconfigjson \
     --namespace=ovh-nginx-operator
 secret/regcred created
+
+$ kubectl get secret regcred -n ovh-nginx-operator
+NAME      TYPE                             DATA   AGE
+regcred   kubernetes.io/dockerconfigjson   1      49s
+
 </code></pre>
 
 Then, create the `ovh-nginx-operator.yaml` file in the `manifests` folder with the following content:
@@ -691,6 +701,7 @@ spec:
       serviceAccountName: ovh-nginx-operator-sa
       containers:
       - name: operator
+        # Set the pah to your own image registry
         image: 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
         imagePullPolicy: Always
       imagePullSecrets:
@@ -698,19 +709,17 @@ spec:
 ```
 And apply the file to the Kubernetes cluster:
 ```bash
-kubectl apply -f manifests/ovh-nginx-operator.yaml
+kubectl apply -f manifests/ovh-nginx-operator.yaml -n ovh-nginx-operator
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ kubectl apply -f manifests/ovh-nginx-operator.yaml
-namespace/ovh-nginx-operator created
+<pre class="console"><code>$ kubectl apply -f manifests/ovh-nginx-operator.yaml -n ovh-nginx-operator
 clusterrole.rbac.authorization.k8s.io/ovhnginxoperator-admin-role created
 serviceaccount/ovh-nginx-operator-sa created
 clusterrolebinding.rbac.authorization.k8s.io/ovh-nginx-operator-admin configured
 deployment.apps/ovh-nginx-operator created
 
-$ kubectl get pods --namespace ovh-nginx-operator
+$ kubectl get pods -n ovh-nginx-operator
 NAME                                  READY   STATUS    RESTARTS   AGE
 ovh-nginx-operator-5487958499-v9q46   1/1     Running   0          70s
 </code></pre>
@@ -720,25 +729,25 @@ It's time to test the operator.
 As previously you can apply the CR of the `samples` folder:
 
 ```bash
-kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml -n test-ovh-nginx-operator
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+<pre class="console"><code>$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml -n test-ovh-nginx-operator
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample created
 
-$ kubectl get pods --namespace test-ovh-nginx-operator
+$ kubectl get pods -n test-ovh-nginx-operator
 NAME                                        READY   STATUS    RESTARTS   AGE
 mynginx-sample-ovh-nginx-65b64c6585-5ddpm   1/1     Running   0          44s
 
-$ kubectl get services --namespace test-ovh-nginx-operator
+$ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
 mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   80:30403/TCP   2m36s
 </code></pre>
 
 
-Update the CR like with the following content and apply it again:
+Now you can change the operator behavior and tell it to create two replicas instead of one.
+To do that, in the `samples` folder edit the file `tutorials_v1_ovhnginxoperator.yaml` with the following content:
 ```yaml
 apiVersion: tutorials.ovhcloud.com/v1
 kind: OvhNginx
@@ -751,34 +760,55 @@ spec:
 ```
 
 ```bash
-kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml -n test-ovh-nginx-operator
 ```
 
 Then, display the pods and service:
 
 ```bash
-kubectl get pods --namespace test-ovh-nginx-operator
-kubectl get services --namespace test-ovh-nginx-operator
+kubectl get pods -n test-ovh-nginx-operator
+kubectl get svc -n test-ovh-nginx-operator
 ```
 
-
 Output should be like this:
-<pre class="console"><code>
-$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml
+<pre class="console"><code>$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml -n test-ovh-nginx-operator
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample updated
 
-$ kubectl get pods --namespace test-ovh-nginx-operator
+$ kubectl get pods -n test-ovh-nginx-operator
 NAME                                        READY   STATUS    RESTARTS   AGE
 mynginx-sample-ovh-nginx-65b64c6585-4nc88   1/1     Running   0          4m29s
 mynginx-sample-ovh-nginx-65b64c6585-5ddpm   1/1     Running   0          28m
 
-$ kubectl get services --namespace test-ovh-nginx-operator
+$ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
 mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   8080:30403/TCP   30m
 </code></pre>
 
 
-You can also try to delete the service and see that the operator recreates it!
+## Cleanup
+
+If you want, you can uninstall the Nginx server and the operator.  
+First, delete your CR to delete the deployed Nginx server:
+```bash
+kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
+```
+
+Then, delete the namespace:
+```bash
+kubectl delete ns test-ovh-nginx-operator
+```
+
+Then, delete all resources and the operator itself:
+```bash
+kubectl delete ns ovh-nginx-operator
+```
+
+Finally, delete the CRD:
+```bash
+kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
+```
+
+## What’s next
 
 Other tutorials on operators will be soon available to discover additional ways to develop an operator.
 
