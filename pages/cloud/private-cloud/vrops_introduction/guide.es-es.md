@@ -1,6 +1,8 @@
 ---
-title: Introduction to vRealize Operations - vROPS
+title: Introducción a vRealize Operations - vROPS (EN)
 slug: vrops-introduction
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/vrops-introduction/'
 excerpt: Connect to vROPS and check the basics of your infrastructure
 section: vRops
 order: 01
@@ -16,8 +18,8 @@ vRealize Operations is an operations management tool that monitors physical, vir
 
 ## Requirements
 
-- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
-- A user account with access to vSphere and vROPS (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/) to receive login credentials.
+- A user account with access to vSphere and vROPS (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es))
 
 ## Instructions
 
