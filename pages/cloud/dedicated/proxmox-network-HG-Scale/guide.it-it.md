@@ -245,4 +245,4 @@ iface ens18 inet static
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
