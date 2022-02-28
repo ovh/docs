@@ -12,7 +12,7 @@ order: 303
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a MongoDB database instance with one of the world's most famous Open Source management tool for MongoDB: MongoDB Compass.**
+**This guide explains how to connect to a MongoDB database instance with one of the world's most famous Open Source (SSPL) management tool for MongoDB: MongoDB Compass.**
 
 ## Requirements
 
@@ -115,3 +115,9 @@ You are now interact with your Public Cloud Databases for MongoDB
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+Are you on Discord? Connect to our channel at https://discord.gg/PwPqWUpN8G and interact directly with the team that builds our databases service!
