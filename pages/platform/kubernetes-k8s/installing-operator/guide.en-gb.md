@@ -388,8 +388,7 @@ helm-operator run
 ```
 
 Output should be like this:
-<pre class="console"><code>
-$ helm-operator run
+<pre class="console"><code>$ helm-operator run
 
 {"level":"info","ts":1645197230.698494,"logger":"cmd","msg":"Version","Go Version":"go1.17.6","GOOS":"darwin","GOARCH":"arm64","helm-operator":"v1.17.0","commit":"704b02a9ba86e85f43edb1b20457859e9eedc6e6"}
 {"level":"info","ts":1645197230.699863,"logger":"cmd","msg":"Watch namespaces not configured by environment variable WATCH_NAMESPACE or file. Watching all namespaces.","Namespace":""}
@@ -603,7 +602,7 @@ kubectl create secret generic regcred \
 Output should be like this:
 <pre class="console"><code>$ kubectl create secret generic regcred \
     --from-file=.dockerconfigjson=/Users/sphilipp/.docker/config.json  \
-    --type=kubernetes.io/dockerconfigjson
+    --type=kubernetes.io/dockerconfigjson \
     --namespace=ovh-nginx-operator
 secret/regcred created
 
@@ -700,12 +699,11 @@ spec:
 ```
 And apply the file to the Kubernetes cluster:
 ```bash
-kubectl apply -f manifests/ovh-nginx-operator.yaml
+kubectl apply -f manifests/ovh-nginx-operator.yaml -n ovh-nginx-operator
 ```
 
 Output should be like this:
-<pre class="console"><code>$ kubectl apply -f manifests/ovh-nginx-operator.yaml
-namespace/ovh-nginx-operator created
+<pre class="console"><code>$ kubectl apply -f manifests/ovh-nginx-operator.yaml -n ovh-nginx-operator
 clusterrole.rbac.authorization.k8s.io/ovhnginxoperator-admin-role created
 serviceaccount/ovh-nginx-operator-sa created
 clusterrolebinding.rbac.authorization.k8s.io/ovh-nginx-operator-admin configured
@@ -778,7 +776,28 @@ mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   8080:3
 </code></pre>
 
 
-You can also try to delete the service and see that the operator recreates it!
+## Cleanup
+
+If you want, you can uninstall the Nginx server and the operator.  
+First, delete your CR to delete the deployed Nginx server:
+```bash
+kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
+```
+
+Then, delete the namespace:
+```bash
+kubectl delete ns test-ovh-nginx-operator
+```
+
+Then, delete the operator:
+```bash
+kubectl delete ns ovh-nginx-operator
+```
+
+Finally, delete the CRD:
+```bash
+kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
+```
 
 ## What’s next
 
