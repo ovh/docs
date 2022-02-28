@@ -95,7 +95,7 @@ In MongoDB Compass fill the connection field with the `Service URI`
 
 ![New connection](images/new-connection.png)
 
-You are now interact with your Public Cloud Databases for MongoDB
+Now you are now interact with your Public Cloud Databases for MongoDB
 
 ![Connected](images/connected.png)
 
