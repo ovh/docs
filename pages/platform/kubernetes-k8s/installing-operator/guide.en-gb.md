@@ -189,7 +189,7 @@ spec:
               port: http
 ```
 
-Then, in `template` folder, you can create the Service in a file `service.yaml` with the following content:
+Then, in `templates` folder, you can create the Service in a file `service.yaml` with the following content:
 ```yaml
 apiVersion: v1
 kind: Service
