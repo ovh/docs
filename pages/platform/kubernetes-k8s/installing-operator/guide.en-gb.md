@@ -73,7 +73,7 @@ The operator allow you to:
  - change the HTTP port,
  - recreate the service if it is deleted.
 
-We'll develop this operator with the [operator SDK](https://sdk.operatorframework.io).  
+You'll develop this operator with the [operator SDK](https://sdk.operatorframework.io).  
 The operator SDK provides several tools:
  - a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator,
  - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator.  
@@ -284,7 +284,7 @@ type: application
 version: 0.1.0
 ```
 
-At this point we have a standard Helm chart.
+At this point you have a standard Helm chart.
 It can be used with the Helm client (`helm upgrade` for instance) to deploy the Nginx server. 
 In the following sections you'll see how to delegate this to an operator.
 
@@ -525,7 +525,7 @@ No resources found in test-ovh-nginx-operator namespace.
 
 ### Deploy the operator on the OVHcloud Managed Kubernetes cluster
 
-Now we will show you how to deploy your operator on a Kubernetes cluster.
+Now you will show you how to deploy your operator on a Kubernetes cluster.
 You can now safely stop the local operator running in your terminal.
 
 > [!info]
