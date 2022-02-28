@@ -37,9 +37,9 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Firewall Network protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
-![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
+![Enabling the Firewall Network](images/firewall_creation2022.png){.thumbnail}
 
 - You will then be asked to confirm:
 
@@ -117,7 +117,7 @@ For example, a packet for TCP port 80 will be captured by rule 2 and the rules t
 >
 
 In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
-In the `Bare Metal Cloud`{.action} menu, click on the `IP`{.action} section on the left-hand sidebar. Click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

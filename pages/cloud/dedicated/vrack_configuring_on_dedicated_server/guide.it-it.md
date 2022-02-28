@@ -32,7 +32,7 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 
 ### Step 1: aggiungi i tuoi server alla vRack
 
-Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e apri il menu `vRack`{.action} nel menu a sinistra.
+Una volta attivata la vRack, accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e apri il menu `vRack`{.action}.
 
 Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca su ciascun server che vuoi aggiungere alla vRack e poi clicca sul pulsante `Aggiungi`{.action}.
 

@@ -40,15 +40,17 @@ Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: 
 
 ### Assegna un indirizzo MAC virtuale
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu `Bare Metal Cloud`{.action}. Clicca sul menu `IP`{.action} nella barra dei menu a sinistra e seleziona il tuo indirizzo IP Failover nella tabella.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `IP`{.action}.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+Il menu a tendina “Service” ti permette di selezionare solo gli IP Failover.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Clicca sui tre puntini `..`{.action}. e poi su `Aggiungi un indirizzo MAC virtuale`{.action}.
 
 ![Aggiungi un MAC virtuale (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Seleziona "OVH" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
+Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
 
 ![Aggiungi un MAC virtuale (2)](images/virtual_mac_03.png){.thumbnail}
 

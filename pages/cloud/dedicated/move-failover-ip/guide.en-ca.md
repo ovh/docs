@@ -44,9 +44,8 @@ With this technology, you can switch IP addresses from one solution to another i
  
 ### Moving an IP from the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page.
+Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}.
 
-![move failover](images/manager01.png){.thumbnail}
 
 The "Service" drop-down menu allows you to filter for Failover IPs.
 

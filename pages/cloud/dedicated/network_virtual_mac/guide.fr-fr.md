@@ -25,9 +25,7 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 
 ### Assigner une adresse MAC
 
-Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis sur la section `IP`{.action} dans la colonne de gauche de la page.
-
-![IPFO](images/ipsection.png){.thumbnail}
+Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}.
 
 Localisez ensuite votre adresse IP fail-over (ou votre bloc) dans la liste, puis cliquez sur le bouton `...`{.action} pour afficher la liste des options.
 
@@ -37,12 +35,12 @@ Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, séle
 
 > [!primary]
 >
-> **Type** : il s'agit du type d’adresse MAC virtuelle (« VMware » sera une adresse MAC faite pour le système VMware ESXi tandis qu'« OVHcloud » conviendra à tous les autres types de systèmes de virtualisation).
+> **Type** : il s'agit du type d’adresse MAC virtuelle (« VMware » sera une adresse MAC faite pour le système VMware ESXi tandis qu'« ovh » conviendra à tous les autres types de systèmes de virtualisation).
 >
 > **Nom de la machine virtuelle** : il s'agit du nom souhaité pour l’adresse MAC virtuelle, pour retrouver ensuite plus facilement ce couple IP/MAC.
 >
 
-![IPFO](images/virtual_mac_03.png){.thumbnail}
+![IPFO](images/addvmac2.png){.thumbnail}
 
 
 > [!primary]
@@ -57,7 +55,7 @@ Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, séle
 > La suppression d'une adresse MAC est définitive, aucune récupération ultérieure ne sera possible.
 > 
 
-Pour supprimer une adresse MAC virtuelle associée à une IP fail-over, connectez-vous dans un premier temps à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis rendez-vous dans le menu `Bare Metal Cloud`{.action} et la section `IP`{.action}. Sélectionnez le serveur concerné afin que l’IP fail-over (ou le bloc d’IP) qui y sont attachées apparaissent.
+Pour supprimer une adresse MAC virtuelle associée à une IP fail-over, connectez-vous dans un premier temps à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}. Sélectionnez le serveur concerné afin que l’IP fail-over (ou le bloc d’IP) qui y sont attachées apparaissent.
 
 Pour finir, cliquez sur le bouton `...`{.action} à droite puis cliquez sur `Supprimer la MAC virtuelle`{.action}.
 

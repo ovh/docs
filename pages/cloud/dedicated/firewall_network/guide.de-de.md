@@ -44,7 +44,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 
 Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
 
-![Aktivierung der Firewall Network](images/firewall_creation.png){.thumbnail}
+![Aktivierung der Firewall Network](images/firewall_creation2022.png){.thumbnail}
 
 - Anschließend werden Sie nach einer Bestätigung gefragt.
 
@@ -123,7 +123,7 @@ Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die 
 >
 
 Um die Regeln Ihrer Ports in Armor zu konfigurieren müssen Sie sich zuerst in Ihrem OVHcloud Kundencenter einloggen.<br>
-Gehen Sie anschließend in das Menü `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf den Abschnitt `IP`{.action}. Klicken Sie auf `...`{.action}. neben der IP-Adresse Ihres Gameservers und anschließend auf `Game Firewall konfigurieren`{.action}.
+Gehen Sie anschließend in das Menü `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}. Klicken Sie auf `...`{.action}. neben der IP-Adresse Ihres Gameservers und anschließend auf `Game Firewall konfigurieren`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
