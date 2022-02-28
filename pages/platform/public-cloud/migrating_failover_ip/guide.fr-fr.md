@@ -29,7 +29,7 @@ Ce guide vous explique comment basculer une IP Failover d'une instance à une au
 
 ### Migration de l'IP Fail Over
 
-Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le service Public Cloud concerné. Sélectionnez ensuite IP dans la partie **Storage and Backup** .
+Tout d’abord, connectez-vous à l’[Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et Sélectionnez ensuite **IP**.
 Dans notre exemple, une IP failover est routée vers "Instance_A" et nous voulons la rediriger vers "Instance_B".
 
 ![migrating failover ip](images/failover2022.png){.thumbnail}
