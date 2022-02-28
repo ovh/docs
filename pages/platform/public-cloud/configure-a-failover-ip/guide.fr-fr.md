@@ -1,5 +1,5 @@
 ---
-title: 'Configuration d'une  IP fail-Over'
+title: "Configuration d'une  IP fail-Over"
 slug: configurer_une_ip_failover
 excerpt: 'Découvrez comment ajouter des adresses IP fail-over à la configuration de votre instance'
 section: Réseau
