@@ -1,11 +1,11 @@
 ---
-title: 'Configurer IPv6 sur un serveur dédié'
+title: 'Configuration d'un IPv6 sur un serveur dédié'
 slug: network-ipv6
 excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 01/12/2021**
+**Dernière mise à jour le 23/02/2022**
 
 ## Objectif
 
