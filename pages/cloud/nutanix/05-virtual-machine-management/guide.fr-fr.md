@@ -28,11 +28,11 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster NUTANIX et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *AHV* est fourni avec Nutanix sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
 
-OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *AHV*.
+OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
 
-*AHV* permet :
+*Ahv* permet :
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre du cluster.
@@ -45,13 +45,12 @@ Pour plus de détails sur *AHV* reportez-vous à la section « [Aller plus loin]
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows , modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer la VM d'un nœud à l'autre du cluster.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
 
-`l'icone avec 3 traits`{.action} Pour copier si besoin
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
 
-L'installation d'un ordinateur virtuel sous Windowns ncessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
+L'installation d'un ordinateur virtuel sous Windowns nécessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
 
 Nous allons créer une ordinateur virtuel pour installer Windows server 2022
 
@@ -63,7 +62,7 @@ Cliquez sur `Create VM`{.action}
 
 ![Tableau de Bord Prism Central - Gestion des VMs ](images/PrismCentralDashVmDashBoard.PNG)
 
-Saisissez un nom dans `ame`{.action}, Choisissez les options dans dans `VM Properties`{.action} et cliquez sur `Next`{.action}
+Saisissez un nom dans `Name`{.action}, Choisissez les options dans dans `VM Properties`{.action} et cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG)
 
@@ -113,7 +112,7 @@ Cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 10](images/CreateVM10.PNG)
 
-dans timezone choisissez `zone`{.action} et cliquez sur `Next`{.action}
+Dans timezone choisissez `zone`{.action} et cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG)
 
@@ -121,17 +120,124 @@ Cliquez sur `Create VM`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG)
 
-Dans le tableau de bord la nouvelle VM apparait 
+Dans le tableau de bord des ordinateurs virtuels l'ordinateur virtuel nouvellement créé apparait 
 
 ![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG)
  
-L'ordinateur virtuel est maintenant créé l'étape suivante sera d'installer Windows
-
 ### Installation de Windows Server 2022
 
-Sélectionnez la VM sur laquelle Windows Server 2022 sera installé en cliquant sur `Case à cocher VM à gauche`{.action}
+Sélection de l'ordinateur virtuel sur lequel Windows Server 2022 sera installé 
 
-![Installation - WS2022](images/InstallWS2022-01.PNG) 
+Cliquez sur `Case à cocher à coter de l'ordinateur virtuel à gauche`{.action}
+
+![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG) 
+
+Démarrage de l'ordinateur virtuel.
+
+Cliquez sur `Menu action`{.action} et Cliquez sur `Power ON`{.action}
+
+![Installation - WS2022 - Démarrage ](images/InstallWS2022-02.PNG)
+
+Lancement de la console
+
+Cliquez sur `Menu action`{.action} et Cliquez sur `Launch Console`{.action}
+
+![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG)
+
+Lancement de l'installation 
+
+Cliquez sur `Next`{.action}
+
+![Installation - WS2022 - Etape1](images/InstallWS2022-04.PNG)
+
+Cliquez sur `Install now`{.action}
+
+![Installation - WS2022 - Etape2](images/InstallWS2022-05.PNG)
+
+Cliquez sur `Windows Server 2022 Standard (Desktop Experience)`{.action} 
+
+Ensuite Cliquez sur `Next`{.action}
+
+![Installation - WS2022- Etape3](images/InstallWS2022-06.PNG)
+
+Cliquez sur `I accept etc...`{.action} et `Next`{.action}
+
+![Installation - WS2022](images/InstallWS2022-07.PNG)
+
+Cliquez sur `Load driver...`{.action}
+
+![Installation - WS2022- Etape4](images/InstallWS2022-08.PNG)
+
+Cliquez sur `Browse`{.action}
+
+![Installation - WS2022- Etape5](images/InstallWS2022-09.PNG)
+
+Selectionnez le bon dossier et cliquez sur `OK`{.action}
+
+![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG)
+
+Cliquer sur `Next`{.action}
+
+![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG)
+
+Le disque de 60 Gb apparait , cliquez sur `Next`{.action}
+
+![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG)
+
+Attendre la fin de l'installation
+
+![Installation - WS2022- Etape7](images/InstallWS2022-13.PNG)
+
+![Installation - WS2022- Etape8](images/InstallWS2022-14.PNG)
+
+![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG)
+
+Saisissez le mote de passe dans `Password`{.action} et `Reenter password`{.action}
+
+Ensuite Cliquez sur `Next`{.action}
+
+![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG)
+
+Allez dans le gestionnaire de périphérique pour installer le pilote de la carte réseau et un pilote système spécifique à **Ahv**
+
+Faites `Clic droit sur Ethernet Controller`{.action} et cliquez sur `Update Driver`{.action}
+
+![Post Installation - WS2022- Pilotes Etape 1](images/InstallWS2022-17.PNG)
+
+Selectionnez le dossier **E:\NetKVM\2k16\amd64** et cliquez sur `Next`{.action}
+
+![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-18.PNG)
+
+Cliquez sur `Install`{.action}
+
+![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-19.PNG)
+
+Faites `Clic droit sur PCI Device dans Other Devices`{.action} et cliquez sur `Update Driver`{.action}
+
+![Post Installation - WS2022- Pilotes Etape 2](images/InstallWS2022-20.PNG)
+
+Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}
+
+![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG)
+
+Cliquez sur `Install`{.action}
+
+Maintenant que l'installation des du système d'exploitations et des pilotes spécifiques à **Ahv** il faut installer les NGT *Nutanix Guest TOOLS**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Création d'un SNAPSHOT
