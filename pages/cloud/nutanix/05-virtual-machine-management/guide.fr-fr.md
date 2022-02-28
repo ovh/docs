@@ -6,7 +6,7 @@ section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 24/02/2022**
+**Dernière mise à jour le 28/02/2022**
 
 ## Objectif
 
@@ -92,7 +92,7 @@ Cliquez `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG)
 
-Rajouter l'image ISO des pilotes spécifiques à *AHV* notamment le pilote du pilote de disque.
+Rajoutez l'image ISO des pilotes spécifiques à *AHV* notamment le pilote contrôleur de disque.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**
 
@@ -118,15 +118,21 @@ dans timezone choisissez `zone`{.action} et cliquez sur `Next`{.action}
 
 Cliquez sur `Create VM`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM11.PNG)
+![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG)
 
 Dans le tableau de bord la nouvelle VM apparait 
 
-![Tableau de bord VMs - VM Créé](images/InstallWS2022-01.PNG)
+![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG)
  
 L'ordinateur virtuel est maintenant créé l'étape suivante sera d'installer Windows
 
 ### Installation de Windows Server 2022
+
+Sélectionnez la VM sur laquelle Windows Server 2022 sera installé en cliquant sur `Case à cocher VM à gauche`{.action}
+
+![Installation - WS2022](images/InstallWS2022-01.PNG) 
+
+
 
 
 
