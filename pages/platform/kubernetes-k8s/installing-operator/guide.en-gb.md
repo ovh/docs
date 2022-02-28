@@ -427,7 +427,7 @@ You need to update your code organisation and add the `samples` folder in the `m
 └── watches.yaml
 ```
 
-In the folder `samples` create the file `tutorials_v1_ovhnginxoperator.yaml` with the following content:
+In the `samples` folder create the file `tutorials_v1_ovhnginxoperator.yaml` with the following content:
 ```yaml
 apiVersion: tutorials.ovhcloud.com/v1
 kind: OvhNginx
