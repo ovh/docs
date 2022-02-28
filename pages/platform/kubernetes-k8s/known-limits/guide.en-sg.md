@@ -49,7 +49,7 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 ## Data persistence
 
-If an incident is detected by the OVHcloud monitoring, as part of autohealthing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
+If an incident is detected by the OVHcloud monitoring, as part of auto-healing, or in case of a version upgrade, the Nodes can be fully reinstalled. 
 
 We advise you to save your data in Persistent Volumes (PV), not to save data directly on Nodes if you don't want to lost your data. Follow our [guide about how to setup and manage Persistent Volumes on OVHcloud Managed Kubernetes](../ovh-kubernetes-persistent-volumes/) for more information.
 
