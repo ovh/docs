@@ -145,7 +145,7 @@ Your first Helm operator will follow the following code organization:
 First, create a `helm-charts` folder and then an `ovh-nginx` folder inside it.
 Go inside `helm-charts/ovh-nginx` folders.
 
-Then,  create a `template` folder.
+Then, create a `templates` folder.
 In this `templates` folder, create a file named `deployment.yaml` with the following content:
 ```yaml
 apiVersion: apps/v1
