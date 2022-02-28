@@ -122,7 +122,7 @@ iface ens18 inet static
 
 #### Prerequisiti
 
-* Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi
+* Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi. Il blocco deve essere puntato verso la vRack.
 * Aver selezionato un intervallo di indirizzi IP privati
 * Disporre di un [server compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}

@@ -16,9 +16,9 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 ## Requirements
 
-- an [OVHcloud dedicated server](https://www.ovhcloud.com/en/bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- a [failover IP](https://www.ovhcloud.com/en/bare-metal/ip/)
+- An [OVHcloud dedicated server](https://www.ovhcloud.com/en/bare-metal/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [failover IP](https://www.ovhcloud.com/en/bare-metal/ip/)
 
 > [!warning]
 >
@@ -118,11 +118,11 @@ iface ens18 inet static
 
 #### Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses
-- your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en/bare-metal/){.external}
-- a [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+- Your chosen private IP address range
+- A [vRack compatible server](https://www.ovhcloud.com/en/bare-metal/){.external}
+- A [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service activated in your account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
 #### Target configuration schema

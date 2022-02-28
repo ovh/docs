@@ -122,7 +122,7 @@ iface ens18 inet static
 
 #### Requisitos
 
-* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
+* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones. El bloque debe apuntarse al vRack.
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es/bare-metal/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.

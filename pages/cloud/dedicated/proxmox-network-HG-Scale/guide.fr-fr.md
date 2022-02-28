@@ -118,7 +118,7 @@ iface ens18 inet static
 
 #### Prérequis
 
-* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
+* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
