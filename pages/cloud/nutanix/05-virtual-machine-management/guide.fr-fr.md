@@ -28,7 +28,7 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster NUTANIX et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*HYPERV, VMWARE Esxi , Ahv*). *AHV* est fourni avec NUTANIX sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *AHV* est fourni avec Nutanix sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
 
 OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *AHV*.
 
@@ -36,7 +36,7 @@ OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *AHV*.
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre du cluster.
-* La migro segmentation des VM au travers de **Flow**. 
+* La micro-segmentation des VM au travers de **Flow**. 
 
 L'outil **Move** permet de migrer facilement des VM existantes dans un autre environnement virtuel ou non vers Nutanix et son hyperviseur *AHV*.
 
@@ -51,7 +51,7 @@ Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pou
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
 
-L'installation d'un ordinateur virtuel sous Windowns necessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
+L'installation d'un ordinateur virtuel sous Windowns ncessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
 
 Nous allons créer une ordinateur virtuel pour installer Windows server 2022
 
@@ -63,9 +63,11 @@ Cliquez sur `Create VM`{.action}
 
 ![Tableau de Bord Prism Central - Gestion des VMs ](images/PrismCentralDashVmDashBoard.PNG)
 
-Saisissez un nom dans `Name`{.action}, Choisissez les options dans dans `VM Properties`{.action} et cliquez sur `Next`{.action}
+Saisissez un nom dans `ame`{.action}, Choisissez les options dans dans `VM Properties`{.action} et cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG)
+
+Ajout d'un disques système
 
 Cliquez sur `Attach Disk`{.action}
 
@@ -75,13 +77,15 @@ Saisissez 60 `Capacity`{.action} et cliquez sur `Save`{.action} pour créer un d
 
 ![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG)
 
+Ajout de 'image ISO de l'installation de Windows Server 2022
+
 Cliquez sur `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 4](images/CreateVM04.PNG)
 
-Rajoutez l'image ISO de l'installation de Windows Server 2022
-
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**
+
+Ajout de l'image ISO des pilotes spécifiques à *AHV* notamment le pilote du contrôleur de disques.
 
 Cliquez sur `Save`{.action}
 
@@ -90,8 +94,6 @@ Cliquez sur `Save`{.action}
 Cliquez `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG)
-
-Rajoutez l'image ISO des pilotes spécifiques à *AHV* notamment le pilote du contrôleur de disques.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**
 
@@ -130,10 +132,6 @@ L'ordinateur virtuel est maintenant créé l'étape suivante sera d'installer Wi
 Sélectionnez la VM sur laquelle Windows Server 2022 sera installé en cliquant sur `Case à cocher VM à gauche`{.action}
 
 ![Installation - WS2022](images/InstallWS2022-01.PNG) 
-
-
-
-
 
 
 ### Création d'un SNAPSHOT
