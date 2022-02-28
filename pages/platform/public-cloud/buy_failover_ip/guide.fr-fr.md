@@ -28,7 +28,7 @@ Ces adresses IP fail-over ne pourront être migrées que vers les instances d'un
 
 ## En pratique
 
-### Etape 1
+### étape 1
 
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section ` Bare Metal Cloud`{.action}.<br>
 Dans le menu de gauche, cliquez sur `IP`{.action} dans la section `Network` puis choisissez `Commander des IP additionnelles`{.action}.
