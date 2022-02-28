@@ -482,17 +482,27 @@ At the time, the operator which is currently running, detects the new CR and doe
 
 Let's take a look at the resources in your Kubernetes cluster:
 ```bash
-kubectl get pod -l app.kubernetes.io/instance=mynginx-sample
-kubectl get svc -l app.kubernetes.io/instance=mynginx-sample
+kubectl get pod -n test-ovh-nginx-operator
+kubectl get svc -n test-ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>$ kubectl get pod -l app.kubernetes.io/instance=mynginx-sample
+<pre class="console"><code>$ kubectl get pod -n test-ovh-nginx-operator
 NAME                                        READY   STATUS    RESTARTS   AGE
 mynginx-sample-ovh-nginx-65b64c6585-wtc5g   1/1     Running   0          72s
 
-$ kubectl get svc -l app.kubernetes.io/instance=mynginx-sample
+$ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)        AGE
 mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.170   80:30356/TCP   105s
+</code></pre>
+
+Get the service external IP:
+```bash
+kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n test-ovh-nginx-operator
+```
+
+Output should be like this:
+<pre class="console"><code>$ kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n test-ovh-nginx-operator
+152.228.169.170
 </code></pre>
 
 You can now visit the URL `http://152.228.169.170/`:  
@@ -500,17 +510,17 @@ You can now visit the URL `http://152.228.169.170/`:
 
 At the time, the operator should be triggered and will delete created pods and services.
 ```bash
-kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample
+kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
 ```
 Output should be like this:
-<pre class="console"><code>$ kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample
+<pre class="console"><code>$ kubectl delete ovhnginxs.tutorials.ovhcloud.com/mynginx-sample -n test-ovh-nginx-operator
 ovhnginx.tutorials.ovhcloud.com "mynginx-sample" deleted
 
-$ kubectl get pod -l app.kubernetes.io/instance=mynginx-sample
-No resources found in default namespace.
+$ kubectl get pod -n test-ovh-nginx-operator 
+No resources found in test-ovh-nginx-operator namespace.
 
-$ kubectl get svc -l app.kubernetes.io/instance=mynginx-sample
-No resources found in default namespace.
+$ kubectl get svc -n test-ovh-nginx-operator
+No resources found in test-ovh-nginx-operator namespace.
 </code></pre>
 
 ### Deploy the operator on the OVHcloud Managed Kubernetes cluster
@@ -760,7 +770,6 @@ kubectl get pods -n test-ovh-nginx-operator
 kubectl get svc -n test-ovh-nginx-operator
 ```
 
-
 Output should be like this:
 <pre class="console"><code>$ kubectl apply -f manifests/samples/tutorials_v1_ovhnginxoperator.yaml -n test-ovh-nginx-operator
 ovhnginx.tutorials.ovhcloud.com/mynginx-sample updated
@@ -789,7 +798,7 @@ Then, delete the namespace:
 kubectl delete ns test-ovh-nginx-operator
 ```
 
-Then, delete the operator:
+Then, delete all resources and the operator itself:
 ```bash
 kubectl delete ns ovh-nginx-operator
 ```
