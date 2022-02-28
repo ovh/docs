@@ -70,7 +70,7 @@ As you can see in the schema, a `sealed-secrets-controller` runs in the Kubernet
 
 > [!primary]
 >
-> I you delete the `SealedSecret` in your cluster, the generated `Secret` will be deleted too.
+> If you delete the `SealedSecret` in your cluster, the generated `Secret` will be deleted too.
 
 Sealed Secrets are a straightforward application of asymmetric (public key) cryptography. Public key cryptography involves a tightly-linked pair of keys (called "public" and "private"), and anything encrypted with one can only be decrypted by the other.
 

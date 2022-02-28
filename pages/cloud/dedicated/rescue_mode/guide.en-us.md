@@ -29,14 +29,14 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers** in the left-hand sidebar. 
+You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers**. 
 
-Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Edit`{.action}.
+Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
 ![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
 

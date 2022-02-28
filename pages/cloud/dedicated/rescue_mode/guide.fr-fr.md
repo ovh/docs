@@ -40,7 +40,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 ![Changer le mode de démarrage](images/rescue-mode-001.png){.thumbnail}
 
 Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue64-pro`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
-<br>Cliquez sur `Suivant`{.action} pour passer à la prochaine étape, puis sur `Valider`{.action}.
+<br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
 ![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
 

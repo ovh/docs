@@ -65,11 +65,11 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 |/NFS_PATH|zpool-999888/PartitionName|
 |MOUNTING_FOLDER|/media/NasHA -v|
 
-### CentOS 6
+### CentOS 
 
-Compatibility: centos
+Compatibility: CentOS
 
-To mount an NFS share under CentOS 6, you must:
+To mount an NFS share under CentOS, you must:
 
 - Connect to the server in SSH.
 - Install the "nfs-utils" and "rpcbind" packages via the command:

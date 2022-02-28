@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 09.09.2021**
+**Letzte Aktualisierung am 24.02.2022**
 
 ## Ziel
 
@@ -85,6 +85,25 @@ Wenn Sie eine oder mehrere Lizenzen zu Ihrer bestehenden Lizenzgruppe hinzufüge
 Klicken Sie rechts auf den Button `Weitere Lizenzen bestellen`{.action}. Geben Sie die Anzahl und den Typ der Lizenzen an, die Sie hinzufügen möchten.
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
+
+#### Ihre Abonnements verwalten<a name="managesubscriptions"></a> 
+
+##### Eine Lizenz aus einer Lizenzgruppe löschen
+
+Klicken Sie im Tab `Lizenzen`{.action} Ihrer Lizenzgruppe rechts neben der zu kündigenden Lizenz auf den Button `...`{.action} und anschließend auf `Account löschen`{.action}.
+
+![E-Mails](images/Outlook-cps1-06.png) {.thumbnail}
+
+> [!primary]
+> Der Verbrauch des laufenden Monats wird am Monatsende abgerechnet.
+
+##### Die Lizenzgruppe kündigen
+
+Um Ihre Microsoft Office 365 CSP1 Lizenzgruppe zu kündigen, klicken Sie oben rechts im OVHcloud Kundencenter auf Ihren Namen und anschließend auf den Button `Dienstverwaltung`{.action}. Klicken Sie dann rechts neben der zu kündigenden Lizenzgruppe auf den Button `...`{.action} und anschließend auf `Kündigen`{.action}<br>.
+Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
+
+> [!primary]
+> Der Verbrauch des laufenden Monats wird am Monatsende abgerechnet.
 
 ## Weiterführende Informationen
 
