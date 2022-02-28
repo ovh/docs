@@ -32,7 +32,7 @@ Si vous configurez votre serveur dédié en tant que serveur DNS, vous pouvez ut
 
 ### Ajout d'un domaine <a name="ajoutdomaine"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur dans la barre latérale de gauche sous `Serveurs Dédiés`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur sous `Serveurs Dédiés`{.action}.
 
 Cliquez ensuite sur  l'onglet `DNS secondaire`{.action} puis sur le bouton `Ajouter un domaine`{.action}.
 
