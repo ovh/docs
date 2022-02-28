@@ -7,7 +7,7 @@ section: 'Réseau'
 order: 1
 ---
 
-**Dernière mise à jour le 14/12/2021**
+**Dernière mise à jour le 23/02/2022**
 
 ## Objectif
 
@@ -28,26 +28,33 @@ Ces adresses IP fail-over ne pourront être migrées que vers les instances d'un
 
 ## En pratique
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné.<br>
-Dans le menu de gauche, cliquez sur `Failover IP`{.action} dans la section `Network`.
+### Etape 1
 
-Cliquez ensuite sur le bouton `Actions`{.action} puis choisissez `Acheter des IPs Failover Cloud`{.action}.
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section ` Bare Metal Cloud`{.action}.<br>
+Dans le menu de gauche, cliquez sur `IP`{.action} dans la section `Network` puis choisissez `Commander des IP additionnelles`{.action}.
 
-![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
+![failoverIP](images/buyfailoverip1-2022.png){.thumbnail}
+
+### étape 2
 
 Un nouveau menu apparaîtra alors :
 
 ![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
-Renseignez les informations suivantes :
+### étape 3
 
+Sélectionnez le service pour lequel vous désirez acheter des IPs supplémentaires
+
+![failoverIP](images/buyfailoverip-select-service.png){.thumbnail}
+
+
+### étape 4
+
+*Sélectionnez l'offre,chaque IP fail-over vous coûtera 2€ HT à l'achat. Elles seront ensuite renouvelées gratuitement et automatiquement chaque mois.
 * Le nombre d'IP fail-over souhaitées (les blocs d'IP ne sont pas disponibles pour le moment).
-* L'instance sur laquelle seront routées les adresses IP.
 * La géolocalisation des adresses IP.
 
-Vous devrez également accepter les conditions générales de service.
-
-Chaque IP fail-over vous coûtera 2€ HT à l'achat. Elles seront ensuite renouvelées gratuitement et automatiquement chaque mois.
+![failoverIP](images/buyfailoverip-SQL.png){.thumbnail}
 
 Les géolocalisations disponibles en Europe sont :
 
@@ -57,6 +64,10 @@ Les géolocalisations disponibles en Europe sont :
 |  Irlande |  Italie  | Lituanie |  Pays-bas |     Royaume-Uni    |
 | Portugal |  Espagne |  Pologne |  Lituanie |                    |
 
+### étape 5
+
+Cliquez ensuite sur le bouton `Confirmer`{.action}
+![failoverIP](images/buyfailoverip-confirm.png){.thumbnail}
 
 > [!primary] **Disponibilité**
 > 
