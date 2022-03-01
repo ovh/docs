@@ -45,7 +45,7 @@ Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin]
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation WINDOWS, faire des snapshots et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation Windows, faire des snapshots et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
 
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
@@ -78,7 +78,7 @@ Saisissez 60 `Capacity`{.action} et cliquez sur `Save`{.action} pour créer un d
 
 Ajout de 'image ISO de l'installation de Windows Server 2022.
 
-L'image doit être importée pour pouvoir l'utiliser.
+L'image doit être importée avant l'utilisation.
 
 Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther)
 
@@ -123,9 +123,10 @@ Dans timezone choisissez le fuseau horaire de votre pays. `zone`{.action} et cli
 ![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG)
 
 Cliquez sur `Create VM`{.action}
+
 ![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG)
 
-Dans le tableau de bord des ordinateurs virtuels l'ordinateur virtuel nouvellement créé apparait 
+L'ordinateur virtuel nouvellement créé apparait dans le tableau de bord.
 
 ![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG)
  
@@ -229,7 +230,49 @@ Pour finir l'installation Cliquez sur `Close`{.action}
 
 ![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG)
 
-Maintenant que l'installation du système d'exploitations et des pilotes spécifiques à **Ahv** est terminé. Il faut installer les **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notatamment au niveau des sauvegardes et des Snapshots.
+Maintenant que l'installation du système d'exploitations et des pilotes spécifiques à **Ahv** est terminée. Il faut installer les **Ngt (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notatamment au niveau des sauvegardes et des Snapshots.
+
+Avant de lancer l'installation des **Ngt** s'assurer que sur l'ordinateur virtuel concerné un disque dur est déconnecté
+
+Dans la console Faites un `click droit sur un lecteur de CDROM`{.action} et Cliquez sur `Eject`{.action}
+
+![NGT Installation 1](images/Ngt-Installation01.png)
+
+Dans Prism Central `Selectionnez l'ordinateur virtuel`{.action}
+
+![NGT Installation 2](images/Ngt-Installation02.png)
+
+Cliquez dans le menu `Actions`{.action} et cliquez `Install NGT`{.action}
+
+![NGT Installation 3](images/Ngt-Installation03.png)
+
+Dans la fenêtre Install NGT cliquez sur `Confirm & Enter Password`{.action}
+
+![NGT Installation 4](images/Ngt-Installation04.png)
+
+Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}
+
+![NGT Installation 4](images/Ngt-Installation05.png)
+
+Revenez dans la console de l'ordintateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}
+
+Choisir `Install Nutanix Guest Tools`{.action}
+
+![NGT Installation 4](images/Ngt-Installation06.png)
+
+Choisir `I agree to the Etc...`{.action} et cliquez sur `Install`{.action}
+
+![NGT Installation 4](images/Ngt-Installation07.png)
+
+Laissez finir l'installation
+
+![NGT Installation 4](images/Ngt-Installation08.png)
+
+Pour finir l'installation cliquez sur `Close`{.action}
+
+![NGT Installation 4](images/Ngt-Installation09.png)
+
+
 
 
 
