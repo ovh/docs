@@ -117,7 +117,7 @@ If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
 <pre class="console"><code>$ kubectl get svc -n ingress-nginx ingress-nginx-controller
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
-ingress-nginx-controller   LoadBalancer   10.3.232.157   152.228.168.132   80:30903/TCP,443:31546/TCP   19h
+ingress-nginx-controller   LoadBalancer   10.3.232.157   51.178.69.190   80:30903/TCP,443:31546/TCP   19h
 </code></pre>
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
