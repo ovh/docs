@@ -2,8 +2,8 @@
 title: AI Notebooks - Tutorial - Manage your data with CLI
 slug: notebooks/tuto-access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
-section: Command Line Interface
-order: 208
+section: AI Notebooks tutorials
+order: 01
 ---
 
 **Last updated 27th of May, 2021.**
