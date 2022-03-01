@@ -27,11 +27,11 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 
 ### Planification
 
-As stated in the Requirements, an NSX Edge Services Gateway is used in our case study for Firewall and DHCP purposes.<br>
+As stated in the Requirements, an NSX Edge Services Gateway is used in our study case for Firewall and DHCP purposes.<br>
 Other Network components can be used as alternative such as pfsense.<br>
 
-To set up your Network, you will need to define a public IP for external access and an internal network for your Tanzu infrastructure.<br>
-Your Datacenter comes with a set of public IPs useable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section.<br>
+To set up your Network, you will need to define a public IP for external access and an internal network with dhcp service activated for your Tanzu infrastructure.<br>
+Your Datacenter comes with a set of public IPs useable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section. You will also see the mask and gateway settings on the page.<br>
 Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-ip-block/) documentation if you are out of useable public IPs.
 
 ![](images/en00ipblocks.png){.thumbnail}
@@ -41,8 +41,15 @@ Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-
 > Public IPs marked as "Reserved" are used for Datacenter functions and cannot be used for other services.
 >
 
+For our study case, the NSX Edge Services Gateway is set up with two interfaces as follows
+- an external interface (Uplink) with a primary and secondary public IPs (xxx.xxx.xxx.225 and xxx.xxx.xxx.226)
+- an internal interface (Internal) with private IP 172.16.13.1 on VLAN13
+- dhcp service distributing VLAN13 address scope 172.16.13.10 through 172.16.13.100
+- an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access 
 
-
+![](images/en01nsxinter.png){.thumbnail}
+![](images/en02nsxdhcp.png){.thumbnail}
+![](images/en03nsxsnat.png){.thumbnail}
 
 
 ### Bootstrap VM
