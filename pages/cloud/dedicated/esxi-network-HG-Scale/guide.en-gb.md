@@ -21,11 +21,11 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ## Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
-- your chosen private IP address range
-- a [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
-- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+- Your chosen private IP address range.
+- A [vRack compatible dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
+- A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 ## Instructions
 
@@ -41,7 +41,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ### Failover IP via vRack
 
-First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `vRack`{.action} menu in the left-hand sidebar.
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
