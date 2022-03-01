@@ -32,7 +32,7 @@ Other Network components can be used as alternative such as pfsense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network for your Tanzu infrastructure.<br>
 Your Datacenter comes with a set of public IPs useable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section.<br>
-Check out our Adding an IP block documentation if you need more public IPs.
+Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-ip-block/) documentation if you are out of useable public IPs.
 
 ![](images/en00ipblocks.png){.thumbnail}
 
@@ -40,6 +40,9 @@ Check out our Adding an IP block documentation if you need more public IPs.
 >
 > Public IPs marked as "Reserved" are used for Datacenter functions and cannot be used for other services.
 >
+
+
+
 
 
 ### Bootstrap VM
