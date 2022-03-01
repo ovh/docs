@@ -1,11 +1,11 @@
 ---
-title: "Utiliser Hyper-V avec des adresses IP fail-over sur un vRack"
+title: "Utilisation d'un Hyper-V avec des adresses IP fail-over sur un vRack"
 excerpt: "Découvrez comment configurer une machine virtuelle avec des IPs fail-over et Hyper-V sur un vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
 ---
 
-**Dernière mise à jour le 26/04/2021**
+**Dernière mise à jour le 23/02/2022**
 
 ## Objectif
 
