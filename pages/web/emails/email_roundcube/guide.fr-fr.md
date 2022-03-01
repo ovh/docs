@@ -179,12 +179,12 @@ Dans Écriture des messages, vous pouvez choisir les différents éléments lié
 
 Pour les autres options disponibles, consultez la capture ci-contre.
 
-- Par défaut sur la nouvelle interface de Roundcube ("Larry") l'option "Composer un message au format HTML" est mise par défaut sur la valeur "en réponse aux messages HTML uniquement" .
+- Par défaut sur la nouvelle interface de Roundcube ("Larry") l'option `Rédiger des courriers HTML` est mise par défaut sur la valeur `en réponse à un courrier en HTML` .
 
-Il vous est possible de la modifier vers "toujours" afin d'envoyer vos e-mails en format HTML.
+Il vous est possible de la modifier vers `toujours` afin d'envoyer vos e-mails en format HTML.
 
 
-![hosting](images/img_1288.jpg){.thumbnail}
+![options_RC](images/options_RC.PNG){.thumbnail}
 
 
 ### Carnet d'adresses
@@ -371,14 +371,14 @@ Pour insérer la signature associée à cette identité, référez-vous à la se
 ## Nouveau message
 
 ### Acceder a la redaction d'un nouveau message
-Afin d'écrire un nouveau message, cliquez sur Composer.... Si vous ne voyez pas ce bouton (vous êtes dans les paramètres ou le carnet d'adresses), cliquez sur l'enveloppe blanche (Courriel) en haut à droite. Vous trouverez alors ce bouton.
+Afin d'écrire un nouveau message, cliquez sur `Rédiger`{.action} Si vous ne voyez pas ce bouton (vous êtes dans les paramètres ou le carnet d'adresses), cliquez sur l'enveloppe blanche (Courriel) en haut à droite. Vous trouverez alors ce bouton.
 
 
-![hosting](images/img_1404.jpg){.thumbnail}
+![bouton_rediger](images/bouton_rediger.png){.thumbnail}
 
 
 ### Differentes options
-Vous avez cliqué sur "Composer...". Apparaissent alors des options utiles à la rédaction de votre e-mail telles que l'ajout des contacts issus du [carnet d'adresses](#CARNET){.external}, les [pièces jointes](#ATTACHED){.external} et les [paramètres](#SIGNATURE){.external} propres au message. Vous pouvez donc rechercher vos correspondants enregistrés en cliquant sur les types de copie que vous souhaitez leur attribuer :
+Vous avez cliqué sur `Rédiger`{.action}. Apparaissent alors des options utiles à la rédaction de votre e-mail telles que l'ajout des contacts issus du [carnet d'adresses](#CARNET){.external}, les [pièces jointes](#ATTACHED){.external} et les [paramètres](#SIGNATURE){.external} propres au message. Vous pouvez donc rechercher vos correspondants enregistrés en cliquant sur les types de copie que vous souhaitez leur attribuer :
 
 - To+ : ajouter votre correspondant en destinataire direct ;
 - Cc+ : ajouter votre correspondant en copie simple ;

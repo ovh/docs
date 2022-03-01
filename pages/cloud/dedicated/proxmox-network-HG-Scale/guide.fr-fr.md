@@ -118,7 +118,7 @@ iface ens18 inet static
 
 #### Prérequis
 
-* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
+* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses. Le bloc doit être pointé vers le vRack.
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovhcloud.com/fr/bare-metal/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
@@ -134,6 +134,10 @@ Il vous faut:
 
 * créer un agrégat;
 * créer un bridge raccordé à l’agrégat;
+
+Premièrement, ajoutez votre bloc public d’adresses IP au vRack. Pour ce faire, allez dans la section `Bare Metal Cloud`{.action} de votre espace client OVHcloud et ouvrez le menu `vRack`{.action}.
+
+Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur le bloc public d’adresses IP que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 #### Configurer une adresse IP utilisable
 
