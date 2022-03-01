@@ -1,5 +1,5 @@
 ---
-title: CLI - Managing object storage data
+title: CLI - Commands reference for data
 slug: cli/data-cli
 excerpt: Learn how to manage your object storage data with the ovhai CLI
 section: Command Line Interface
