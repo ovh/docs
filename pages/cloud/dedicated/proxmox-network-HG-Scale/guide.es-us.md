@@ -139,6 +139,10 @@ Debe:
 * crear un agregado;
 * crear un puente con el agregado;
 
+En primer lugar, añada su bloque público de direcciones IP al vRack. Para ello, acceda a la sección `Bare Metal Cloud`{.action} de su área de cliente de OVHcloud y abra el menú `vRack`{.action}.
+
+Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque público de direcciones IP que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
+
 #### Configurar una dirección IP útil
 
 En el caso del vRack, la primera, la penúltima y la última direcciones de un bloque de IP siempre están reservadas a la dirección de red, la puerta de enlace y el *broadcast* de la red, respectivamente. Eso significa que la primera dirección útil es la segunda dirección del bloque, tal y como se muestra a continuación:

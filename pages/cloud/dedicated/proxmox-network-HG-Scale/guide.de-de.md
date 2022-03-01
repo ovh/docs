@@ -139,6 +139,10 @@ Folgende Schritte sind notwendig:
 - Erstellung eines Aggregats
 - Erstellung der mit dem Aggregat verbundenen Bridge
 
+Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem OVHcloud Kundencenter und öffnen Sie `vRack`{.action}.
+
+Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
+
 #### Eine verwendbare IP-Adresse konfigurieren
 
 Im Fall des vRack sind die erste, die vorletzte und die letzte Adresse eines bestimmten IP-Blocks immer für die Netzwerkadresse, das Netzwerk-Gateway und den *Broadcast* des Netzwerks reserviert. Das heißt, die erste verwendbare Adresse ist die zweite Adresse des Blocks, wie im Folgenden dargestelltt:

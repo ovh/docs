@@ -139,6 +139,10 @@ Musisz:
 * tworzenie agregatu;
 * stworzyć brydż podłączony do agregatu;
 
+Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w Panelu klienta OVHcloud i otwórz menu `vRack`{.action}.
+
+Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
+
 #### Konfiguracja adresu IP
 
 W przypadku sieci vRack pierwszy, przedostatni i ostatni adres danego bloku IP są zawsze zarezerwowane odpowiednio dla adresu sieci, bramy sieciowej i *broadcastu* sieci. Oznacza to, że pierwszy możliwy do użycia adres jest drugim adresem z bloku, jak pokazano poniżej:

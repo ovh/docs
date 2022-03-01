@@ -139,6 +139,10 @@ Vi serve:
 * creare un aggregato;
 * creare un bridge collegato all’aggregato;
 
+Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo Spazio Cliente OVHcloud e apri il menu `vRack`{.action}.
+
+Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco pubblico di indirizzi IP che vuoi aggiungere alla vRack e poi clicca su `Aggiungi`{.action}.
+
 #### Configura un indirizzo IP utilizzabile
 
 Nel caso della vRack, il primo, il penultimo e l'ultimo indirizzo di un determinato blocco IP sono sempre riservati rispettivamente all'indirizzo di rete, al gateway di rete e al *broadcast* di rete. Questo significa che il primo indirizzo utilizzabile è il secondo indirizzo del blocco, come indicato di seguito:
