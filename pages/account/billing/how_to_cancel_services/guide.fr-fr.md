@@ -49,7 +49,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 [Bare Metal Cloud](#baremetalcloud)<br />
 &emsp;&emsp;[Serveur dédié](#dedicated)<br />
 &emsp;&emsp;[VPS](#vps)<br />
-&emsp;&emsp;[Managed bare metal](#managedbaremetal)<br />
+&emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
 &emsp;&emsp;[Serveur NAS-HA](#nas)<br />
 &emsp;&emsp;[Load Balancer](#iplb)<br />
 &emsp;&emsp;[Licences](#licences)<br />
@@ -103,7 +103,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, 
 
 Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
 
-#### Managed bare metal <a name="managedbaremetal"></a>
+#### Managed Bare Metal <a name="managedbaremetal"></a>
 
 Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/managed-bare-metal/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/managed-bare-metal/comment-resilier-le-managed-bare-metal/).
 
