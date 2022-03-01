@@ -553,7 +553,7 @@ docker build  -t [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0 .
 docker push [YOUR_PRIVATE_REGISTRY_URL]/example/ovh-nginx-operator:1.0.0
 ```
 Output should be like this:
-<pre class="console"><code>$ docker build -t 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0 .
+<pre class="console"><code>$ docker build -t myregistryid.xxx1.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0 .
 [+] Building 0.4s (9/9) FINISHED                                                                                                                 
  => [internal] load build definition from Dockerfile                                                                                        0.0s
  => => transferring dockerfile: 32B                                                                                                         0.0s
@@ -569,16 +569,16 @@ Output should be like this:
  => exporting to image                                                                                                                      0.0s
  => => exporting layers                                                                                                                     0.0s
  => => writing image sha256:0f71fd44ff901ed21977e5079a68d3aade40f0cca4550a72365241b5cf450f98                                                0.0s
- => => naming to 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0     
+ => => naming to myregistryid.xxx1.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0     
 
-$ docker login https://56hkk1xk.gra7.container-registry.ovh.net
+$ docker login https://myregistryid.xxx1.container-registry.ovh.net
 Username: harbor-user1
 Password: 
 
 Login Succeeded
 
-$ docker push 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
-The push refers to repository [56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator]
+$ docker push myregistryid.xxx1.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
+The push refers to repository [myregistryid.xxx1.container-registry.ovh.net/example/ovh-nginx-operator]
 5f70bf18a086: Pushed 
 4edd44e1433c: Pushed 
 35217553513b: Pushed 
@@ -702,7 +702,7 @@ spec:
       containers:
       - name: operator
         # Set the pah to your own image registry
-        image: 56hkk1xk.gra7.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
+        image: myregistryid.xxx1.container-registry.ovh.net/example/ovh-nginx-operator:1.0.0
         imagePullPolicy: Always
       imagePullSecrets:
       - name: regcred
@@ -816,7 +816,7 @@ kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
 
 ## What’s next
 
-Other tutorials on operators will be soon available to discover additional ways to develop an operator.
+To go deeper on Kubernetes operators topic, follow others tutorials in `Operators` section.
 
 ## Go further
 
