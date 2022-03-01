@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-Connaitre la gestion des ordinateurs virtuels dans un cluster NUTANIX et être capable de créer, modifier et migrer un ordinateur virtuel.
+Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, modifier et migrer un ordinateur virtuel.
 
 
 > [!warning]
@@ -30,7 +30,7 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster NUTANIX et être c
 
 Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
 
-OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
+OVHcloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
 
 *Ahv* permet :
 
@@ -38,10 +38,10 @@ OVHCloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre du cluster.
 * La micro-segmentation des VM au travers de **Flow**. 
 
-L'outil **Move** permet de migrer facilement des VM existantes dans un autre environnement virtuel ou non vers Nutanix et son hyperviseur *AHV*.
+L'outil **Move** permet de migrer facilement des VM existantes dans un autre environnement virtuel ou non vers Nutanix et son hyperviseur *Ahv*.
 
 
-Pour plus de détails sur *AHV* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
@@ -50,9 +50,9 @@ Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pou
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
 
-L'installation d'un ordinateur virtuel sous Windowns nécessite un paramétrage particulier car Microsoft ne fourni pas le pilote pour le contrôleur de disques.
+L'installation d'un ordinateur virtuel sous Windows nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques.
 
-Nous allons créer une ordinateur virtuel pour installer Windows server 2022
+Création d'un ordinateur virtuel pour permettant l'installation de  Windows server 2022
 
 Dans **Prism Central** dans le menu de gauche dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
@@ -76,7 +76,11 @@ Saisissez 60 `Capacity`{.action} et cliquez sur `Save`{.action} pour créer un d
 
 ![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG)
 
-Ajout de 'image ISO de l'installation de Windows Server 2022
+Ajout de 'image ISO de l'installation de Windows Server 2022.
+
+L'image doit être importée pour pouvoir l'utiliser.
+
+Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther)
 
 Cliquez sur `Attach Disk`{.action}
 
@@ -84,7 +88,7 @@ Cliquez sur `Attach Disk`{.action}
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**
 
-Ajout de l'image ISO des pilotes spécifiques à *AHV* notamment le pilote du contrôleur de disques.
+Ajout de l'image ISO des pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques.
 
 Cliquez sur `Save`{.action}
 
@@ -100,7 +104,9 @@ Cliquez sur `Save`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 7](images/CreateVM07.PNG)
 
-Configuration du réseau - Cliquez sur `Attach Subnet`{.action}
+Configuration du réseau
+
+Cliquez sur `Attach Subnet`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG)
 
@@ -112,12 +118,11 @@ Cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 10](images/CreateVM10.PNG)
 
-Dans timezone choisissez `zone`{.action} et cliquez sur `Next`{.action}
+Dans timezone choisissez le fuseau horaire de votre pays. `zone`{.action} et cliquez sur `Next`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG)
 
 Cliquez sur `Create VM`{.action}
-
 ![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG)
 
 Dans le tableau de bord des ordinateurs virtuels l'ordinateur virtuel nouvellement créé apparait 
@@ -128,7 +133,7 @@ Dans le tableau de bord des ordinateurs virtuels l'ordinateur virtuel nouvelleme
 
 Sélection de l'ordinateur virtuel sur lequel Windows Server 2022 sera installé 
 
-Cliquez sur `Case à cocher à coter de l'ordinateur virtuel à gauche`{.action}
+Cliquez sur `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}
 
 ![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG) 
 
@@ -160,11 +165,11 @@ Ensuite Cliquez sur `Next`{.action}
 
 ![Installation - WS2022- Etape3](images/InstallWS2022-06.PNG)
 
-Cliquez sur `I accept etc...`{.action} et `Next`{.action}
+Séléctionnez `I accept etc...`{.action} et cliquez sur `Next`{.action}
 
 ![Installation - WS2022](images/InstallWS2022-07.PNG)
 
-Cliquez sur `Load driver...`{.action}
+Cliquez sur `Load driver`{.action}
 
 ![Installation - WS2022- Etape4](images/InstallWS2022-08.PNG)
 
@@ -180,7 +185,7 @@ Cliquer sur `Next`{.action}
 
 ![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG)
 
-Le disque de 60 Gb apparait , cliquez sur `Next`{.action}
+Le disque de 60 Gb apparait, cliquez sur `Next`{.action}
 
 ![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG)
 
@@ -194,7 +199,7 @@ Attendre la fin de l'installation
 
 Saisissez le mot de passe dans `Password`{.action} et `Reenter password`{.action}
 
-Ensuite Cliquez sur `Next`{.action}
+Ensuite Cliquez sur `Finish`{.action}
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG)
 
@@ -220,9 +225,13 @@ Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}
 
 ![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG)
 
-Cliquez sur `Install`{.action}
+Pour finir l'installation Cliquez sur `Close`{.action}
 
-Maintenant que l'installation des du système d'exploitations et des pilotes spécifiques à **Ahv** il faut installer les **NGT (Nutanix Guest TOOLS)**
+![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG)
+
+Maintenant que l'installation du système d'exploitations et des pilotes spécifiques à **Ahv** est terminé. Il faut installer les **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notatamment au niveau des sauvegardes et des Snapshots.
+
+
 
 
 
@@ -252,7 +261,12 @@ Maintenant que l'installation des du système d'exploitations et des pilotes sp�
 
 [Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
-[Documentation Nutanix sur AHV]https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20
+[Importation d'images dans Nutanix](ttps://docs.ovh.com/fr/nutanix/image-import)
+
+
+[Documentation Nutanix sur Ahv]https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20
+
+
 
 [Les licences Nutanix](https://www.nutanix.com/products/software-options)
 
