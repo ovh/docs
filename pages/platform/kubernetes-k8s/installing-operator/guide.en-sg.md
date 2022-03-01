@@ -492,7 +492,7 @@ mynginx-sample-ovh-nginx-65b64c6585-wtc5g   1/1     Running   0          72s
 
 $ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)        AGE
-mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.170   80:30356/TCP   105s
+mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.XXX.XXX.255   80:30356/TCP   105s
 </code></pre>
 
 Get the service external IP:
@@ -502,10 +502,10 @@ kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingr
 
 Output should be like this:
 <pre class="console"><code>$ kubectl get svc mynginx-sample-ovh-nginx -o jsonpath='{.status.loadBalancer.ingress[0].ip}' -n test-ovh-nginx-operator
-152.228.169.170
+152.XXX.XXX.255
 </code></pre>
 
-You can now visit the URL `http://152.228.169.170/`:  
+You can now visit the URL `http://152.XXX.XXX.255/`:  
 ![Hello world from Nginx](images/hello-world.png)
 
 At the time, the operator should be triggered and will delete created pods and services.
@@ -748,7 +748,7 @@ mynginx-sample-ovh-nginx-65b64c6585-5ddpm   1/1     Running   0          44s
 
 $ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
-mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   80:30403/TCP   2m36s
+mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.XXX.XXX.255   80:30403/TCP   2m36s
 </code></pre>
 
 
@@ -787,7 +787,7 @@ mynginx-sample-ovh-nginx-65b64c6585-5ddpm   1/1     Running   0          28m
 
 $ kubectl get svc -n test-ovh-nginx-operator
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)          AGE
-mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.228.169.172   8080:30403/TCP   30m
+mynginx-sample-ovh-nginx   LoadBalancer   10.3.175.10   152.XXX.XXX.255   8080:30403/TCP   30m
 </code></pre>
 
 
