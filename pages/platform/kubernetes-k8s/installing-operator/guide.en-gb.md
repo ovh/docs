@@ -861,10 +861,6 @@ Finally, delete the CRD:
 kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
 ```
 
-## What’s next
-
-To go deeper on Kubernetes operators topic, follow others tutorials in the `Operators` section.
-
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.  
