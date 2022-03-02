@@ -56,6 +56,7 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 Once the Network is ready, a Bootstrap VM is needed.<br>
 It will hold the necessary software components (Docker and Kubectl) and pilot the installation of Tanzu.<br>
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
+VM prerequisites for Tanzu CE is 2 CPUs and 6 GB Ram.<br>
 You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
 
 Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
@@ -63,11 +64,25 @@ Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VL
 
 Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
 
+Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)
+
 Install [Docker Engine](https://docs.docker.com/engine/install/)
 
 Install [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
-Install [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
+
+### Tanzu Management Cluster
+
+The VM is now ready for Tanzu deployment.
+
+#### Install [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
+
+In a terminal window, run the install commmand:
+>brew install vmware-tanzu/tanzu/tanzu-community-edition
+
+
+
+
 
 
 
