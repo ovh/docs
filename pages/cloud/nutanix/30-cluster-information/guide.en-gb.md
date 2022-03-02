@@ -1,5 +1,5 @@
 ---
-title: Retrieve your Nutanix installation status information
+title: Retrieving your Nutanix installation status information
 slug: nutanix-cluster-information
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
 section: Troubleshooting
@@ -10,14 +10,14 @@ order: 01
 
 ## Objective
 
-In order to optimise the handling of support tickets for the Nutanix solution, it is essential to provide OVHcloud teams with a set of information on the status of your Nutanix installation.
+In order to optimise the handling of support tickets for Hosted Private Cloud powered by Nutanix, it is essential to provide OVHcloud teams with a set of information on the status of your Nutanix installation.
 
-**Find out how to retrieve essential information on the status of your Nutanix cluster.**
+**This guide explains how to retrieve essential information on the status of your Nutanix cluster.**
 
 ## Requirements
 
-- a Nutanix cluster in your OVHcloud account
-- access to the Prism Central web interface
+- A Nutanix cluster in your OVHcloud account
+- Login credentials and URL for Prism Central, received via email after the installation
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Log in to Prism Central, open the main menu in the top left-hand corner and clic
 
 ![AOS - Hypervisor](images/hardware-clusters.png){.thumbnail}
 
-Click the `List`{.action} tab and for the cluster concerned, note down the **AOS version**.
+Click the `List`{.action} tab and note down the **AOS version** for the cluster concerned.
 
 ![AOS - Hypervisor](images/aos.png){.thumbnail}
 
@@ -40,7 +40,7 @@ Select a host from the list of hosts in your cluster.
 
 ![AOS - Hypervisor](images/hypervisor01.png){.thumbnail}
 
-Note the type of **Hypervisor**  and the **Hypervisor Version**.<br>
+Note the type of **Hypervisor** and the **Hypervisor Version**.<br>
 In the example below, the hypervisor type is AHV and the hypervisor version is 20201105.1161.
 
 ![AOS - Hypervisor](images/hypervisor02.png){.thumbnail}
@@ -78,7 +78,7 @@ To the right of the window, click on `Actions`{.action}, then `Run NCC checks`{.
 
 ![Nutanix Cluster Check](images/ncc03.png){.thumbnail}
 
-In the window that appears, tick the “All Checks” and “Send the cluster check report in the email” boxes (only if you would like to [receive the report by email](#email)), then click `Run`{.action}.
+In the window that appears, tick the boxes “All Checks” and “Send the cluster check report in the email” (only if you would like to [receive the report by email](#email)), then click `Run`{.action}.
 
 ![Nutanix Cluster Check](images/ncc04.png){.thumbnail}
 
@@ -94,19 +94,19 @@ You can then download the NCC report in .txt format by clicking `Download output
 
 ![Nutanix Cluster Check](images/ncc07.png){.thumbnail}
 
-Once the report has been downloaded, you can then send it to our teams, along with any elements that have already been retrieved:
+Once the report has been downloaded, you can then send it to our teams along with any elements already retrieved:
 
 - [AOS version](#aos)
 - [Hypervisor type and version](#hypervisor)
-- [Node serial number](#node-sn).
+- [Node serial number](#node-sn)
 
 > [!primary]
-> Use the [Plik](https://plik.ovhcloud.com/#/) tool to upload your report and send it to us as a download link. You can find more information on using the Plik tool in [this guide](https://docs.ovh.com/gb/en/customer/plik/).
+> Use the [Plik tool](https://plik.ovhcloud.com/#/) to upload your report and send it to us as a download link. You can find more information on using the Plik tool in [this guide](https://docs.ovh.com/gb/en/customer/plik/).
 >
 
 #### Receiving NCC report by email <a name="email"></a>
 
-In order to receive the NCC report by e-mail, it is necessary to have pre-populated an SMTP server and at least one e-mail address for notification of alerts and activity reports.
+In order to receive the NCC report by email, it is necessary to have pre-populated an SMTP server and at least one email address for notification of alerts and activity reports.
 
 ##### **Adding an SMTP server**
 
