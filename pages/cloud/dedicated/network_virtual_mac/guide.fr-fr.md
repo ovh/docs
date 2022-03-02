@@ -1,11 +1,11 @@
 ---
-title: 'Assigner une adresse MAC virtuelle à une IP fail-over'
+title: 'Assignation d'une adresse MAC virtuelle à une IP fail-over'
 slug: network-virtual-mac
 excerpt: 'Découvrez comment créer une adresse MAC virtuelle et comment l’associer à une IP fail-over'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 16/12/2021**
+**Dernière mise à jour le 02/03/2022**
 
 ## Objectif
 
