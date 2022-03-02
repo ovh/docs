@@ -17,13 +17,13 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 ## Requirements
 
 - a Veeam Enterprise solution
-- Windows Server 2012 or newer
+- Windows Server 2012 or a newer version
 
 ## Instructions
 
 ### Setting up Veeam Backup & Replication
 
-Download the **Veeam Backup & Replication** solution from the Veeam website. If you do not have an account, you will need to set one up (account setup is free).
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
@@ -136,7 +136,7 @@ Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 ##### **Using the OVHcloud Control Panel**
 
-In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
+In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
 ![control panel register](images/veeam001.png){.thumbnail}
 
