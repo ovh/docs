@@ -34,7 +34,7 @@ Sticky sessions or session affinity, is a feature that allows you to keep a sess
 In this tutorial we are going to:
 - deploy an application on your OVHcloud Managed Kubernetes cluster through a `deployment` with several replicas
 - setup an [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external}
-- deploy an `Ingress` to configure the Nginx Ingress Controller to use sticky sessions/session affinity on OVHcloud Managed Kubernetes Service
+- deploy an `Ingress` to configure the Nginx Ingress Controller to use sticky sessions/session affinity
 - test the session affinity
 
 
@@ -51,7 +51,7 @@ In this guide you will deploy an application, in Golang, that run a HTTP server 
 This kind of application will allow you to validate that our Nginx Ingress correctly maintain the session.
 
 
-First, create a file `deployment.yaml` with the following content:
+First, create a file `deployment.yml` with the following content:
 
 ```yaml
 apiVersion: apps/v1
@@ -84,7 +84,7 @@ spec:
 
 This YAML deployment manifest file defines that our application, based on `ovhplatform/what-is-my-pod:1.0.1` image wll be deployed with 3 replicas (3 pods). We pass on environment variable the pod name in order to display it in our `what-is-my-pod` application.
 
-Then, create a file `svc.yaml` with the following content to define our service (a service expose a deployment):
+Then, create a file `svc.yml` with the following content to define our service (a service expose a deployment):
 
 ```yaml
 apiVersion: v1
@@ -236,7 +236,7 @@ You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via
 
 At this step, you need to deploy an Ingress resource and configure it to use the sticky sessions.
 
-Create a file `ingress.yaml` with the following content:
+Create a file `ingress-session-affinity.yml` with the following content:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -278,6 +278,9 @@ Output should be like this:
 ingress.networking.k8s.io/ingress created
 </code></pre>
 
+You settep-up and configured a Kubernetes Ingress resource that will maintained sessions for users like the illustration below:
+
+![Sticky session on Kubernetes schema](images/sticky-session-schema.png)
 
 ## Test the session affinity
 
@@ -325,7 +328,7 @@ Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 
 > [!primary]
 >
-> The tips with using curl with cookies is to store the received cookie in a file and read back the cookies from that file later.
+> The tips with using `curl` with cookies is to store the received cookie in a file and read back the cookies from that file later.
 
 ## Go further
 
