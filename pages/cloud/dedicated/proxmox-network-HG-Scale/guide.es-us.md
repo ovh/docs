@@ -122,7 +122,7 @@ iface ens18 inet static
 
 #### Requisitos
 
-* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones.
+* Tener un bloque público de direcciones IP reservado en su cuenta, con un mínimo de cuatro direcciones. El bloque debe apuntarse al vRack.
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor compatible con el vRack](https://www.ovhcloud.com/es/bare-metal/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
@@ -138,6 +138,10 @@ Debe:
 
 * crear un agregado;
 * crear un puente con el agregado;
+
+En primer lugar, añada su bloque público de direcciones IP al vRack. Para ello, acceda a la sección `Bare Metal Cloud`{.action} de su área de cliente de OVHcloud y abra el menú `vRack`{.action}.
+
+Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque público de direcciones IP que quiera añadir al vRack y, seguidamente, en el botón `Añadir`{.action}.
 
 #### Configurar una dirección IP útil
 
@@ -245,4 +249,4 @@ iface ens18 inet static
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

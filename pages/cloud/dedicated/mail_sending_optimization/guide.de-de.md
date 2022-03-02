@@ -66,9 +66,7 @@ Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maxim
 
 Wenn Sie fertig sind, fügen Sie den PTR-Eintrag (auch bekannt als Reverse):
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und klicken Sie links unten auf den Bereich `IP`{.action}. 
-
-![IP Reverse](images/ipsection.png)
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}. 
 
 Wählen Sie im Dropdown-Menü **Dienst** einen Server mit einer IPv4-Adresse aus:
 

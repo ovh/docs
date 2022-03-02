@@ -41,9 +41,9 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 > Il Firewall Network protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Bare Metal Cloud`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Dopo, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
 
-![Attivazione del Firewall Network](images/firewall_creation.png){.thumbnail}
+![Attivazione del Firewall Network](images/firewall_creation2022.png){.thumbnail}
 
 Si apre una nuova finestra per confermare l’operazione:
 
@@ -116,7 +116,7 @@ Un pacchetto destinato alla porta 80/TCP, ad esempio, verrà catturato dalla reg
 >
 
 Per configurare le regole delle porte in Armor, accedi allo Spazio Cliente OVHcloud.<br>
-In seguito accedi al menu `Bare Metal Cloud`{.action} e clicca sulla sezione `IP`{.action} nella barra laterale sinistra. Clicca sui `...`{.action} in corrispondenza dell'indirizzo IP del tuo server di gioco e poi su `Configura il Firewall Game`{.action}.
+In seguito accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}. Clicca sui `...`{.action} in corrispondenza dell'indirizzo IP del tuo server di gioco e poi su `Configura il Firewall Game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

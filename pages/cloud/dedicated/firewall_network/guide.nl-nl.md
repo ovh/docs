@@ -40,7 +40,7 @@ Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, bied
 
 Log u in op bij het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, ga naar het `IP`{.action}-gedeelte en klik op `...`{.action} om de firewall op een IPv4 te activeren.
 
-![Activering van Network Firewall](images/firewall_creation.png){.thumbnail}
+![Activering van Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 Er zal een bevestiging van u gevraagd worden. 
 

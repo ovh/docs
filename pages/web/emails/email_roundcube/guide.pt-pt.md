@@ -163,7 +163,7 @@ Para as outras opções disponíveis consulte a imagem ao lado.
 
 Terá a possibilidade de alterar essa definição para "sempre" para que todos os seus emails sejam enviados no formato HTML.
 
-![](images/img_1288.jpg){.thumbnail}
+![options_rc_en](images/options_rc_en.png){.thumbnail}
 
 
 ## Contactos
@@ -324,14 +324,14 @@ Para introduzir a assinatura associada a essa identidade, consulte a secção [I
 
 
 ## Aceder à redação de uma nova mensagem
-Para escrever uma nova mensagem, clique em Nova mensagem....
+Para escrever uma nova mensagem, clique em `Nova messagem`{.action}.
 Se não tiver esse botão (está nas Definições ou Contactos). Clique no envelope branco (Mensagens) em cima no lado direito. Encontrará então esse botão.
 
-![](images/img_1404.jpg){.thumbnail}
+![compose](images/compose.png){.thumbnail}
 
 
 ## Diferentes opções
-Clicou em "Nova mensagem...".
+Clicou em `Nova messagem`{.action}.
 Aparecem de imediato opções úteis à redação do seu e-mail tais como a adição de contatos da [lista de contactos](#CARNET), os [anexos](#ATTACHED) e os [parâmetros](#SIGNATURE) da própria mensagem.
 Pode então procurar os contactos guardados ao clicar no tipo de cópia ao qual os deseja atribuir:
 

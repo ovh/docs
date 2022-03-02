@@ -41,9 +41,11 @@ Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu 
 
 ### Schritt 1: Eine virtuelle MAC-Adresse zuweisen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie dann links im Menü auf `IP`{.action} und identifizieren Sie Ihre Failover IP in der Tabelle.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-![IP Failover](images/virtual_mac_01_2020_1.png){.thumbnail}
+Das Drop-down-Menü “Dienst” erlaubt es Ihnen, nach Failover-IP-Adressen zu filtern.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Klicken Sie auf `...`{.action} in der betreffenden Zeile um das Kontextmenü zu öffnen und klicken Sie dann auf `Virtuelle MAC-Adresse hinzufügen`{.action}.
 

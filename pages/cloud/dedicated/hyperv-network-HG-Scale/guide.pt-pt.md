@@ -143,7 +143,7 @@ De seguida, selecione `LAN Routing` e clique em `Next`{.action}.
 
 Por fim, clique em `Finish`{.action} e, a seguir, em `Start Service`{.action}, na janela que aparecerá.
 
-![Configura RRAS](images/configure_rras_3.png){.thumbnail}
+![Configura RRAS](images/configure_rras_4.png){.thumbnail}
 
 #### Definir os endereços IP estáticos principal e suplementar na interface Hyper-V
 

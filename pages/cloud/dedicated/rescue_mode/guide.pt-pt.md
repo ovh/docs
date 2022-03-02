@@ -45,7 +45,7 @@ Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e dep
 ![Alterar o modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
 Na página seguinte, seleccionar **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
-<br>Clique em `Seguinte`{.action} para prosseguir para o próximo passo, depois em `Validar`{.action}.
+<br>Clique em `Seguinte`{.action} e `Validar`{.action}.
 
 ![Modo rescue-pro](images/rescue-mode-003.png){.thumbnail}
 
@@ -163,7 +163,7 @@ Se já protegeu os seus dados, pode utilizar a interface Web do modo de recupera
 - **Memória**: Verifique a memória RAM instalada no servidor. (Esta operação pode levar algum tempo)
 - **Rede**: Verifique a ligação a um sistema de referência interno da OVHcloud, bem como a ligação ao seu browser.
 
-![Interface Web para o modo de segurança](images/rescue-mode-04.png) {.thumbnail}
+![Interface Web para o modo de segurança](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

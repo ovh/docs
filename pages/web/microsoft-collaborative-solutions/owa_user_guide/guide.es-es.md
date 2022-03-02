@@ -132,7 +132,7 @@ Haga clic en la rueda dentada situada en la esquina superior derecha y seleccion
 
 En la sección "**Remitentes bloqueados**", escriba una dirección de correo electrónico o un nombre de dominio que desea bloquear y haga clic en el botón `+`{.action} para añadirlo a la lista.
 
-![useowa](images/owa_exchange_block.png) {.thumbnail}
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Gestionar una lista de contactos
 

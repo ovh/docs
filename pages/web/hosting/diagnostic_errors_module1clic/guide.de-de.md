@@ -145,7 +145,7 @@ Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebo
 
 ### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxx-xxx.eu.clouddb.ovh.net'. Fehler: Zugriff verweigert für Benutzer 'xxxx'@'xxxxxxxx' (Passwort verwenden: JA)“
 
-![cant_connect](images/cant_connect.png) {.thumbnail}
+![cant_connect](images/cant_connect.png){.thumbnail}
 
 Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [CloudDB Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
 
@@ -155,7 +155,7 @@ Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhostin
 
 ### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxxxxxx.mysql.db'. Fehler: Unbekannter MySQL Server Host 'xxxxxx.mysql.db'“
 
-![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
 Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [CloudDB Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
 

@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 09/09/2021**
+**Última actualización: 24/02/2022**
 
 ## Objetivo
 
@@ -85,6 +85,25 @@ Si quiere añadir una o más licencias al grupo de licencias existente, puede ha
 Haga clic en el botón `Contratar más licencias`{.action} a la derecha. Indique el número y el tipo de licencias que quiere contratar.
 
 ![correo electrónico](images/Outlook-cps1-05.png){.thumbnail}
+
+### Gestionar las suscripciones <a name="managesubscriptions">>
+
+#### Eliminar una licencia en un grupo de licencias
+
+En la pestaña `Licencias`{.action} de su grupo de licencias, haga clic en el botón `...`{.action} a la derecha de la licencia que desea dar de baja y haga clic en `Eliminar la cuenta`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> El consumo del mes en curso se facturará al final del mismo.
+
+#### Dar de baja el grupo de licencias
+
+Para dar de baja su grupo de licencias Microsoft Office 365 CSP1, haga clic en su nombre en la esquina superior derecha del área de cliente de OVHcloud y seleccione el botón `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha del grupo de licencias que desea dar de baja y, seguidamente, `Dar de baja`{.action}.< br>
+Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
+
+> [!primary]
+> El consumo del mes en curso se facturará al final del mismo.
 
 ## Más información
 

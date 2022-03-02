@@ -17,17 +17,17 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- an Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- An Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
 
 ## Instructions
 
 ### Configuring OLA in the OVHcloud Control Panel
 
-To start configuring OLA, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} in the left-hand sidebar, then select your server from the list.
+To start configuring OLA, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} and select your server from the list.
 
-![network interfaces](images/network_interfaces2021.png){.thumbnail}
+![network interfaces](images/network_interfaces2022.png){.thumbnail}
 
 In the tab `Network interfaces`{.action} (1), click on the `...`{.action} button (2) to the right of "Mode" in the **OLA: OVHcloud Link Aggregation** box. Next, click `Configure private aggregation`{.action}  (2).
 
