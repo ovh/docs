@@ -30,9 +30,12 @@ order: 1
  }
 </style>
 
+## Objective
+
 Sticky sessions or session affinity, is a feature that allows you to keep a session alive for a certain period of time. In a Kubernetes cluster, all the traffic from a client to an application, even if you scale from 1 to 3 or more replicas, will be redirected to the same pod.
 
 In this tutorial we are going to:
+
 - deploy an application on your OVHcloud Managed Kubernetes cluster through a `deployment` with several replicas
 - setup an [Nginx Ingress](https://github.com/kubernetes/ingress-nginx){.external}
 - deploy an `Ingress` to configure the Nginx Ingress Controller to use sticky sessions/session affinity
@@ -43,16 +46,17 @@ In this tutorial we are going to:
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
-## Deploying the application
+## Instructions
 
-In this guide you will deploy an application, in Golang, that run a HTTP server and display the Pod name.
+### Deploying the application
 
-This kind of application will allow you to validate that our Nginx Ingress correctly maintain the session.
+In this guide you will deploy an application, in Golang, that runs a HTTP server and displays the Pod name.
 
+This kind of application will allow you to validate that Nginx Ingress correctly maintains the session.
 
-First, create a file `deployment.yml` with the following content:
+First, create a `deployment.yml` file with the following content:
 
 ```yaml
 apiVersion: apps/v1
@@ -83,9 +87,9 @@ spec:
                 fieldPath: metadata.name
 ```
 
-This YAML deployment manifest file defines that our application, based on `ovhplatform/what-is-my-pod:1.0.1` image wll be deployed with 3 replicas (3 pods). We pass on environment variable the pod name in order to display it in our `what-is-my-pod` application.
+This YAML deployment manifest file defines that our application, based on `ovhplatform/what-is-my-pod:1.0.1` image will be deployed with 3 replicas (3 pods). We pass the pod name on environment variable in order to display it in our `what-is-my-pod` application.
 
-Then, create a file `svc.yml` with the following content to define our service (a service expose a deployment):
+Then, create a `svc.yml` file with the following content to define our service (a service exposes a deployment):
 
 ```yaml
 apiVersion: v1
@@ -137,9 +141,9 @@ NAME             TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
 what-is-my-pod   ClusterIP   10.3.57.203   <none>        8080/TCP   3m35s
 </code></pre>
 
-## Installing the Nginx Ingress Controller Helm chart
+### Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
+For this tutorial, we are using the [Nginx Ingress Controller Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 
@@ -170,7 +174,7 @@ Install the latest version of Ingress Nginx with `helm install` command:
 helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 ```
 
-The install process will begin and a new `ingress-nginx` namespace will be created
+The install process will begin and a new `ingress-nginx` namespace will be created.
 
 <pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 NAME: ingress-nginx
@@ -232,12 +236,11 @@ ingress-nginx-controller   LoadBalancer   10.3.232.157   152.228.168.132   80:30
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
-
-## Configuring the Nginx Ingress Controller to use sticky sessions/session affinity
+### Configuring the Nginx Ingress Controller to use sticky sessions/session affinity
 
 At this step, you need to deploy an Ingress resource and configure it to use the sticky sessions.
 
-Create a file `ingress-session-affinity.yml` with the following content:
+Create an `ingress-session-affinity.yml` file with the following content:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
@@ -279,13 +282,13 @@ Output should be like this:
 ingress.networking.k8s.io/ingress created
 </code></pre>
 
-You settep-up and configured a Kubernetes Ingress resource that will maintained sessions for users like the illustration below:
+You have set-up and configured a Kubernetes Ingress resource that will maintain sessions for users, as in the illustration below:
 
 ![Sticky session on Kubernetes schema](images/sticky-session-schema.png)
 
-## Test the session affinity
+### Test the session affinity
 
-The final step of this guide is to access to our application and test the session affinity.
+The final step of this guide is to access our application and test the session affinity.
 
 Execute the following command to retrieve the Load-Balancer IP created by the Nginx Ingress Controller:
 
@@ -299,9 +302,9 @@ You should have a Load-Balancer IP like this:
 152.228.168.143
 </code></pre>
 
-Now you can access to this IP through your favorite browser and reload the page several times:
+Now you can access this IP through your favorite browser and reload the page several times:
 
-![](images/sticky-session-affinity-01.png)
+![session affinity](images/sticky-session-affinity-01.png)
 
 Everytime you reload the page, you should get the same cookie value, so the Ingress redirects you to the same Pod.
 
