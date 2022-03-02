@@ -176,7 +176,7 @@ Por defecto, la solución Cloud Databases está asociada automáticamente a los 
 
 Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Acceso a los alojamientos web de OVHcloud`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3-2022.png) {.thumbnail}
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Conectar el sitio web con la base de datos
 
@@ -203,7 +203,7 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
 Para comprobar los últimos logs de la base de datos, acceda a la pestaña `Logs`{.action} del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
 
-![clouddb](images/clouddb-log01.png) {.thumbnail}
+![clouddb](images/clouddb-log01.png){.thumbnail}
 
 Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP a este último.
 
@@ -213,13 +213,13 @@ Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP 
 
 Puede consultar la información de conexión SFTP en la pestaña `Información general`{.action} de su servidor Cloud Databases. Si no conoce la `Contraseña del servidor`, haga clic en el botón `...`{.action} a la derecha para modificarlo.
 
-![clouddb](images/clouddb-log02.png) {.thumbnail}
+![clouddb](images/clouddb-log02.png){.thumbnail}
 
 Conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
 
 En FileZilla, acceda al menú `Archivo`{.action} y acceda al menú `Gestor de sitios`{.action}". Haga clic en `Nuevo sitio`{.action} e introduzca los parámetros anteriores.
 
-![clouddb](images/clouddb-log03.png) {.thumbnail}
+![clouddb](images/clouddb-log03.png){.thumbnail}
 
 El archivo de logs, llamado `stdout.log`, se encuentra en la raíz.
 

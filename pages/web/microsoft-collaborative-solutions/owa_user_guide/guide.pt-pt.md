@@ -132,7 +132,7 @@ Clique na roda dentada no canto superior direito e, a seguir, em "Opções". Na 
 
 Na secção "**Remetentes bloqueados**", introduza um endereço de e-mail ou um domínio a bloquear e clique no botão `+`{.action} para o adicionar na lista.
 
-![useowa](images/owa_exchange_block.png) {.thumbnail}
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Gerir uma lista de contactos
 

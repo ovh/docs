@@ -72,7 +72,7 @@ Die Migration kann über zwei Interfaces durchgeführt werden:<br>
 - **den MX Plan-Bereich**, sobald Sie über einen E-Mail Pro oder Exchange Dienst (bereits konfiguriert oder nicht konfiguriert) und eine MX Plan Adresse verfügen, die Sie migrieren möchten.
 
 > Zur Erinnerung: Vergewissern Sie sich, dass vor Beginn der Migration keine **Weiterleitung** oder **Auto-Antworten** für Ihren MXplan eingerichtet sind.
-> ![E-Mail](images/mxplan-legacy-redirect.png) {.thumbnail}
+> ![E-Mail](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Interface. Die Migrationsdauer hängt davon ab, wie viele Inhalte auf Ihren neuen Account migriert werden. Es kann sich daher um einige Minuten bis zu mehreren Stunden handeln.
 
@@ -111,7 +111,7 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 >
 >Wählen Sie den Tab `Assoziierte Domains`{.action} Ihres Dienstes aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Sobald die Domain hinzugefügt wurde, überprüfen Sie, dass der Eintrag `OK` in der Spalte `Status` angezeigt wird.
 >
->![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Weitere Informationen zum Hinzufügen einer Domain finden Sie in [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange Hilfe](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/).
 

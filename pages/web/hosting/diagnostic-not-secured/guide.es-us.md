@@ -54,7 +54,7 @@ Para encontrar la dirección IP de su [hosting OVHcloud](https://www.ovhcloud.co
 
 En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
 
-![hosting-general-informations](images/hosting-general-informations.png) {.thumbnail}
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
 #### Verificar la dirección IP en la zona DNS
 
@@ -64,7 +64,7 @@ Haga clic en `Dominios`{.action} en la esquina superior izquierda de su [área d
 
 Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de tipo `A` para su dominio:
 
-![zone-dns-ip](images/zone-dns-ip.png) {.thumbnail}
+![zone-dns-ip](images/zone-dns-ip.png){.thumbnail}
 
 #### Realizar las acciones necesarias
 

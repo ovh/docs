@@ -92,7 +92,7 @@ Haga clic en el botón `Contratar más licencias`{.action} a la derecha. Indique
 
 En la pestaña `Licencias`{.action} de su grupo de licencias, haga clic en el botón `...`{.action} a la derecha de la licencia que desea dar de baja y haga clic en `Eliminar la cuenta`{.action}.
 
-![emails](images/Outlook-cps1-06.png) {.thumbnail}
+![emails](images/Outlook-cps1-06.png){.thumbnail}
 
 > [!primary]
 > El consumo del mes en curso se facturará al final del mismo.
