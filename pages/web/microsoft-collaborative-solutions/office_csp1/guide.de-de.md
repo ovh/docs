@@ -92,7 +92,7 @@ Klicken Sie rechts auf den Button `Weitere Lizenzen bestellen`{.action}. Geben S
 
 Klicken Sie im Tab `Lizenzen`{.action} Ihrer Lizenzgruppe rechts neben der zu kündigenden Lizenz auf den Button `...`{.action} und anschließend auf `Account löschen`{.action}.
 
-![E-Mails](images/Outlook-cps1-06.png) {.thumbnail}
+![E-Mails](images/Outlook-cps1-06.png){.thumbnail}
 
 > [!primary]
 > Der Verbrauch des laufenden Monats wird am Monatsende abgerechnet.

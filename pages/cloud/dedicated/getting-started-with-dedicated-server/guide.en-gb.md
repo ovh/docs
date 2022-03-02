@@ -176,7 +176,7 @@ All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the a
 
 ### Rescue mode
 
-For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](../ovh-rescue/).
 

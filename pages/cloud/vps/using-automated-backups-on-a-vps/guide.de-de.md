@@ -114,7 +114,7 @@ Ihr Backup erscheint als "Basic" Datenträger mit demselben Speicherplatz wie Ih
 
 Die Disk wird als `Offline` angezeigt. Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action} aus.
 
-![online backup](images/windowsbackup3.png) {.thumbnail}
+![online backup](images/windowsbackup3.png){.thumbnail}
 
 Anschließend können Sie auf Ihr gemountetes Backup als Laufwerk über den `Datei-Explorer` zugreifen.
 

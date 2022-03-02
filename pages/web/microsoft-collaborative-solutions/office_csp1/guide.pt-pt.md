@@ -92,7 +92,7 @@ Clique no botão `Encomendar mais licenças`{.action} à direita. Indique o núm
 
 No separador `Licenças` {.action" do seu grupo de licenças, clique no botão `...`{.action} à direita da licença a rescindir, e clique em `Eliminar conta` {.action}.
 
-![emails](images/Outlook-cps1-06.png) {.thumbnail}
+![emails](images/Outlook-cps1-06.png){.thumbnail}
 
 > [!primary]
 > Os consumos do mês em curso serão faturados no final deste último.

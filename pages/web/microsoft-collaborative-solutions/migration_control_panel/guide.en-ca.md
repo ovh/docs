@@ -98,7 +98,7 @@ Finally, confirm the password for the source email address (the one you want to 
 >
 >Select the `Associated domains`{.action} tab on your platform, then click `Add a domain`{.action}. Once you have added your domain name, ensure that the word `OK` is in the `Status` column.
 >
->![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > To find out more about adding a domain name, follow [the Exchange guide](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 

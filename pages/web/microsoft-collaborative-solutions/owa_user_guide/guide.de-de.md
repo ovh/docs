@@ -132,7 +132,7 @@ Klicken Sie oben rechts auf das Zahnrad und dann auf "Optionen". Folgen Sie in d
 
 Geben Sie im Bereich "**Absender gesperrt**"eine E-Mail-Adresse oder eine zu blockierende Domain ein und klicken Sie auf die Schaltfläche `+`{.action}, um diese in die Liste aufzunehmen.
 
-![useowa](images/owa_exchange_block.png) {.thumbnail}
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Eine Kontaktliste verwalten
 

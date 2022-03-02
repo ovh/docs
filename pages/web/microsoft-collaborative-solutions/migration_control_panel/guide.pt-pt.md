@@ -70,7 +70,7 @@ A migração pode ser efetuada a partir de duas interfaces:<br>
 - **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
 
 > Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MXplan.
-> ![email](images/mxplan-legacy-redirect.png) {.thumbnail}
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.
 
@@ -109,7 +109,7 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 >
 >Selecione o separador `Domínios associados`{.action} na sua plataforma, e clique em `Adicionar um domínio`{.action}. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está na coluna `Estatuto`.
 >
->![exchange](images/account_migration_adddomain.png) {.thumbnail}
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
 > Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](https://docs.ovh.com/pt/emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [o guia Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 
