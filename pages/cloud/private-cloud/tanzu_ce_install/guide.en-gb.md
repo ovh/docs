@@ -25,9 +25,9 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 
 ## Instructions
 
-### Planification
+### Network
 
-As stated in the Requirements, an NSX Edge Services Gateway is used in our study case for Firewall and DHCP purposes.<br>
+As stated in the Requirements (with links to full docs), an NSX Edge Services Gateway is used in our study case for Firewall and DHCP purposes.<br>
 Other Network components can be used as alternative such as pfsense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network with dhcp service activated for your Tanzu infrastructure.<br>
@@ -52,5 +52,23 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 
 
 ### Bootstrap VM
+
+Once the Network is ready, a Bootstrap VM is needed.<br>
+It will hold the necessary software components (Docker and Kubectl) and pilot the installation of Tanzu.<br>
+We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
+You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
+
+Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).
+![](images/en04bootvlan.png){.thumbnail}
+
+
+
+
+
+
+
+
+
+
 
 
