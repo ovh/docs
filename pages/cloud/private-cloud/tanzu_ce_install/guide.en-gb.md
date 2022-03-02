@@ -43,11 +43,11 @@ Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-
 
 For our study case, the NSX Edge Services Gateway is set up with two interfaces as follows
 - an external interface (Uplink) with a primary and secondary public IPs (xxx.xxx.xxx.225 and xxx.xxx.xxx.226)
-- an internal interface (Internal) with private IP 172.16.13.1 on VLAN13
+- an internal interface (Internal) with private IP 172.16.13.1 on VLAN13<br>
 ![](images/en01nsxinter.png){.thumbnail}
-- dhcp service distributing VLAN13 address scope 172.16.13.10 through 172.16.13.100
+- dhcp service distributing VLAN13 address scope 172.16.13.10 through 172.16.13.100<br>
 ![](images/en02nsxdhcp.png){.thumbnail}
-- an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access 
+- an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access <br>
 ![](images/en03nsxsnat.png){.thumbnail}
 
 
@@ -58,7 +58,7 @@ It will hold the necessary software components (Docker and Kubectl) and pilot th
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
 You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
 
-Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).
+Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
 ![](images/en04bootvlan.png){.thumbnail}
 
 
