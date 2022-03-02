@@ -1,5 +1,5 @@
 ---
-title: 'Mehrere VLANs im vRack erstellen'
+title: Mehrere VLANs im vRack erstellen
 slug: vrack-vlan-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie mehrere VLANs im vRack erstellen'
 section: vRack
