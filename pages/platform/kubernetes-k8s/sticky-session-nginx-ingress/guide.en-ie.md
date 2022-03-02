@@ -3,7 +3,7 @@ title: Sticky sessions/Session Affinity based on Nginx Ingress on OVHcloud Manag
 slug: sticky-session-nginx-ingress
 excerpt: 'Find out how to set-up and configure sticky sessions/session Affinity based on Nginx Ingress on OVHcloud Managed Kubernetes'
 section: Traffic management
-order: 1
+order: 01
 ---
 
 **Last updated 2nd March 2022.**
