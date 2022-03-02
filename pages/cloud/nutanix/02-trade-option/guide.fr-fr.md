@@ -20,15 +20,14 @@ Présentation de l'offre commerciale d'OVHcloud.
 
 ## Présentation de l'offre commerciale Nutanix OVHcloud
 
-OVHCloud propose deux formules pour les Offres HOSTED Private Cloud Nutanix:
+OVHCloud propose deux formules pour les Offres HOSTED Private Cloud Nutanix :
 
 * **Nutanix Standard Pack**
 * **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** mais en plus avec des possibilités de disaster recovery plus performantes et des possibilités de cryptage des données avancées. 
 
-### détail de la partie commune au deux offres
+### détail de la partie commune aux deux offres
 
-Les options qui sont communes aux deux offres OVHcloud sont les suivantes:
-
+Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
 
 Produits faisant partie **Nutanix Cloud Infrastructure (NCI)** anciennement **Hybrid Cloud Infrastructure** 
 
@@ -44,8 +43,30 @@ Produits Membre de **Nutanix Unified Storage** Anciennement **Unified Storage**
 
 - **Volumes block storage** : stockage par bloc pour un accès en iSCSI soit à l'interieur d'un cluster Nutanix pour un usage particulier soit à l'extérieur pour donner accès au stockage à d'autres ordinateurs ou infrastructures virtualisées.
 
+Produit Membre des **Framework utilities**
 
+- **X-ray** : Ensemble d'outils de test et de benchmark des principales solutions de convergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)
+- **Move** :  Outil de migration vers Nutanix [Présentation Nutanix de MOVE](https://www.nutanix.com/products/move)
+- **Lcm** : Outil de mise à jour des clusters [Présentation de LCM](https://www.nutanix.com/products/life-cycle-manager)
 
+### Divergences entre la version **Nutanix Standard** et **Nutanix Advanced**
+
+Les differences se situe au niveau d'**AOS Storage** anciennement **AOS Distributed Storage**
+
+**Nutanix Standard** utiliser la version **AOS Pro** qui permet de :
+- Gérer le stockage distribué
+- Faire de l'orchestration avancé
+- De la réplication Asynchrone avec un RPO (Recovery Point Objective) d'une heure
+
+**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standard de :
+- d'avoir unn réplication avancée avec une meilleur resilience entre cluster
+    + **Nearsync replication** avec un RPO à 20 secondes
+    + **Metrosync replication** avec un RPO à 1 seconde
+- Une meileure sécurité
+    + **Software encryption at rest** cryptage logiciel
+    + **Native KVM** gestion des clé de cryptage   
+
+Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/fr/products/software-options)
 
 
 * **AHV Virtualization** :  en tant qu'hyperviseur pour la virtualisation.
@@ -69,15 +90,10 @@ La différence se situe au niveau des version d'AOS **Acropolis OS** avec deux v
     * réplication asynchrone avec un RPO d'une heure
 
 * **AOS Ultimage** fournit avec la Advanced Pack:
+    * Gestion du *DRP* **Disaster Recovery Plan**, Plan de reprise d'activité
     * reprends toutes les versions de la version **AOS Pro**
     * réplication synchrone, nearsync et metro qui offrent un meilleur RPO et RTO
-    * Options de sécurité avancées avec du **cryptage logiciel** et un KMS **Key Management system**
-
-
-
-
-
-
+    * Options de sécurité avancées avec du **cryptage logiciel** et un KMS **Key Management system** 
 
 ## Aller plus loin
 
