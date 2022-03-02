@@ -44,11 +44,10 @@ Check out our [Adding an IP block](https://docs.ovh.com/gb/en/private-cloud/add-
 For our study case, the NSX Edge Services Gateway is set up with two interfaces as follows
 - an external interface (Uplink) with a primary and secondary public IPs (xxx.xxx.xxx.225 and xxx.xxx.xxx.226)
 - an internal interface (Internal) with private IP 172.16.13.1 on VLAN13
-- dhcp service distributing VLAN13 address scope 172.16.13.10 through 172.16.13.100
-- an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access 
-
 ![](images/en01nsxinter.png){.thumbnail}
+- dhcp service distributing VLAN13 address scope 172.16.13.10 through 172.16.13.100
 ![](images/en02nsxdhcp.png){.thumbnail}
+- an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access 
 ![](images/en03nsxsnat.png){.thumbnail}
 
 
