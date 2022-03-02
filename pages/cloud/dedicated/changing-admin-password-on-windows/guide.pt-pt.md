@@ -36,7 +36,7 @@ O netboot deve ser migrado para "rescue64-pro (Customer rescue system (Linux)". 
 
 Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
-![prazo](images/adminpw_win_01.png){.thumbnail}
+![prazo](images/adminpw_win_001.png){.thumbnail}
 
 Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zona **Estado dos serviços**.
 <br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.
@@ -295,7 +295,7 @@ O netboot deve ser migrado para "WinRescue System for Windows". Procure "Boot" n
 
 Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zona **Estado dos serviços**.
 <br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.

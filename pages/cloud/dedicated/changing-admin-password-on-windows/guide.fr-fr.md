@@ -33,7 +33,7 @@ Le netboot doit être basculé vers « rescue64-pro (Customer rescue system (Lin
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
@@ -292,7 +292,7 @@ Le netboot doit être basculé vers « WinRescue (Rescue System for Windows) ».
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 

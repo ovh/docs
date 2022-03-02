@@ -36,7 +36,7 @@ Il netboot deve essere trasferito verso "rescue64-pro (Customer rescue system (L
 
 Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
 <br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.
@@ -294,7 +294,7 @@ Il netboot deve essere spostato verso "WinRescue (Rescue System for Windows)". C
 
 Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
 <br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.

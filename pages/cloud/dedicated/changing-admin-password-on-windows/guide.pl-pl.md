@@ -36,7 +36,7 @@ Netboot musi zostać przełączony na "rescue64-pro (Customer rescue system (Lin
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w obszarze zatytułowanym **Status**.
 <br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.
@@ -292,7 +292,7 @@ Netboot musi zostać przełączony na WinRescue (Rescue System for Windows). Wys
 
 Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w obszarze zatytułowanym **Status**.
 <br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.
