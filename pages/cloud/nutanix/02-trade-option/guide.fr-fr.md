@@ -23,7 +23,7 @@ Présentation de l'offre commerciale d'OVHcloud.
 OVHCloud propose deux formules pour les Offres HOSTED Private Cloud Nutanix :
 
 * **Nutanix Standard Pack**
-* **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** mais en plus avec des possibilités de disaster recovery plus performantes et des possibilités de cryptage des données avancées. 
+* **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** avec d'autre options supplémentaire comme un réplication plus performantes, des possibilités de cryptage des données avancées et des options de plan de reprises d'activités. 
 
 ### détail de la partie commune aux deux offres
 
@@ -32,9 +32,9 @@ Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
 Produits faisant partie **Nutanix Cloud Infrastructure (NCI)** anciennement **Hybrid Cloud Infrastructure** 
 
 - **AHV Virtualization** : Virtualisation intégrée dans NUTANIX [Présentation Nutanix AHV](https://www.nutanix.com/products/ahv)
-- **Nutanix Kubernetes Engine** : Gestion des containers Kubernetes sous Nutanix produit anciennement nommé Karbon [Présentation Nutanix Kubernetes Engine](https://www.nutanix.com/fr/products/karbon)
+- **Nutanix Kubernetes Engine** : Gestion des containers Kubernetes sous Nutanix produit anciennement nommé **Karbon** [Présentation Nutanix Kubernetes Engine](https://www.nutanix.com/fr/products/karbon)
 
-Produits faisant partie de **Nutanix Cloud Manager(NCM)** anciennement **Cloud Management** [Présentation de Nutanix Cloud Management](https://www.nutanix.com/fr/products/cloud-manager/aiops)
+Produits de la famille **Nutanix Cloud Manager(NCM)** anciennement **Cloud Management** [Présentation de Nutanix Cloud Management](https://www.nutanix.com/fr/products/cloud-manager/aiops)
 
 - **Intelligent operation** anciennement **Prism Pro** : Surveillance et prévision des besoins
 - **Flow** : virtualisation du réseau et micro-segmentation du réseau [Présentation de FLOW](https://www.nutanix.com/products/flow)
@@ -45,7 +45,7 @@ Produits Membre de **Nutanix Unified Storage** Anciennement **Unified Storage**
 
 Produit Membre des **Framework utilities**
 
-- **X-ray** : Ensemble d'outils de test et de benchmark des principales solutions de convergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)
+- **X-ray** : Ensemble d'outils de test et de benchmark des principales solutions d'hyperconvergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)
 - **Move** :  Outil de migration vers Nutanix [Présentation Nutanix de MOVE](https://www.nutanix.com/products/move)
 - **Lcm** : Outil de mise à jour des clusters [Présentation de LCM](https://www.nutanix.com/products/life-cycle-manager)
 
@@ -59,45 +59,17 @@ Les differences se situe au niveau d'**AOS Storage** anciennement **AOS Distribu
 - De la réplication Asynchrone avec un RPO (Recovery Point Objective) d'une heure
 
 **Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standard de :
-- d'avoir unn réplication avancée avec une meilleur resilience entre cluster
+- Permettre une réplication avancée avec une meilleur resilience entre cluster
     + **Nearsync replication** avec un RPO à 20 secondes
     + **Metrosync replication** avec un RPO à 1 seconde
-- Une meileure sécurité
+- d'avoir Une meileure sécurité
     + **Software encryption at rest** cryptage logiciel
     + **Native KVM** gestion des clé de cryptage   
 
 Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/fr/products/software-options)
 
 
-* **AHV Virtualization** :  en tant qu'hyperviseur pour la virtualisation.
-* **Intelligent Operations** : Cette partie anciennement nommé **Prism PRO** 
-* **Nutanix Kubernetes Engine** : pour l'utilisation de containers KUBERNETES.
-* **Flow** : 
-    **Virtual Networking** : 
-    **Micro Segmentation** :
-* **Volume Group** : permet l'accès au stockage Nutanix soit en interne pour des besoins partiuuliers de clustering ou des accès au stockage Nutanix de l'exterieur.
-* **X-Ray**: Teste les scénarios de montée en charge sur la plupart des infrastuctures hyperconvergées.
-* **MOVE**: Permet la migration d'une infrastructure existante sur Nutanix Ahv avec un minimum de coupure.
-* **LCM**: Outil de mise à jour du cluster NUTANIX à la fois pour le matériel (Firmware) que les logiciels Nutanix (AOS, AhV, etc..)
-
-### Avantages de la version **Nutanix Advanced Pack***
-
-La différence se situe au niveau des version d'AOS **Acropolis OS** avec deux versions 
-
-* **AOS Pro** fournit avec la Standard Pack:
-    * Stockage distribué **AOS Storage**
-    * orchestration avancé 
-    * réplication asynchrone avec un RPO d'une heure
-
-* **AOS Ultimage** fournit avec la Advanced Pack:
-    * Gestion du *DRP* **Disaster Recovery Plan**, Plan de reprise d'activité
-    * reprends toutes les versions de la version **AOS Pro**
-    * réplication synchrone, nearsync et metro qui offrent un meilleur RPO et RTO
-    * Options de sécurité avancées avec du **cryptage logiciel** et un KMS **Key Management system** 
-
 ## Aller plus loin
-
-
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
