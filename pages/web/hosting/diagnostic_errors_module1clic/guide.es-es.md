@@ -156,7 +156,7 @@ Compruebe también sus claves de acceso [conectando directamente](../coneccion-b
 
 ### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
-![cant_connect_server](images/cant_connect_server.png) {.thumbnail}
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
 Ha iniciado la instalación de un módulo en 1 clic en [modo avanzado](../modulos-en-un-clic/#instalacion-avanzada-de-un-modulo) en una base de datos situada en un [servidor CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/). Le hemos enviado por correo electrónico este mensaje de error. Significa que el nombre de servidor de bases de datos indicado es incorrecto.
 
