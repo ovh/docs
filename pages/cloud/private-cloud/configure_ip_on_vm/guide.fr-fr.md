@@ -6,7 +6,7 @@ section: 'Gestion des machines virtuelles'
 order: 5
 ---
 
-**Dernière mise à jour le 12/10/2020**
+**Dernière mise à jour le 02/03/2022**
 
 ## Objectif
 
