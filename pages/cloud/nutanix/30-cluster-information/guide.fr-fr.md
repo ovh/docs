@@ -40,7 +40,7 @@ Sélectionnez un hôte dans la liste de ceux appartenant à votre cluster.
 
 ![AOS - Hypervisor](images/hypervisor01.png){.thumbnail}
 
-Prenez note du **type d'hyperviseur** (*Hypervisor*) de la **version de l'hyperviseur** (*Hypervisor Version*).<br>
+Prenez note du **type d'hyperviseur** (*Hypervisor*) et de la **version de l'hyperviseur** (*Hypervisor Version*).<br>
 Dans l'exemple ci-dessous, le type d'hyperviseur est « AHV » et la version de l'hyperviseur est « 20201105.1161 ».
 
 ![AOS - Hypervisor](images/hypervisor02.png){.thumbnail}
