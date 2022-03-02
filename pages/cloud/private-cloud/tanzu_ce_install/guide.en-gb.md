@@ -80,8 +80,10 @@ The VM is now ready for Tanzu deployment.
 In a terminal window, run the install commmand:
 >brew install vmware-tanzu/tanzu/tanzu-community-edition
 
+Note the output install folder and run the post install script: {HOMEBREW-INSTALL-LOCATION}/configure-tce.sh
+>/home/linuxbrew/.linuxbrew/Cellar/tanzu-community-edition/v0.10.0/libexec/configure-tce.sh
 
-
+![](images/en05tanzucli.png){.thumbnail}
 
 
 
