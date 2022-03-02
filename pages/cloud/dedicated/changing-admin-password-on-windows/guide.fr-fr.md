@@ -29,7 +29,7 @@ Les étapes suivantes décrivent le processus de modification du mot de passe ad
 Le système doit être démarré en mode rescue avant de pouvoir modifier le mot de passe admin. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous `Serveurs dédiés`{.action}.
 
 Le netboot doit être basculé vers « rescue64-pro (Customer rescue system (Linux) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. 
-<br>Dans la page suivante, sélectionnez **Booter en mode rescue** et sélectionnez « rescue64-pro » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
+<br>Dans la page suivante, sélectionnez **Booter en mode rescue** et choisissez « rescue64-pro » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
@@ -288,7 +288,7 @@ Il est recommandé d'utiliser le clavier virtuel lors de la saisie de mots de pa
 Le système doit être démarré en mode rescue avant de pouvoir modifier le mot de passe admin. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs dédiés`{.action}.
 
 Le netboot doit être basculé vers « WinRescue (Rescue System for Windows) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. 
-<br>Dans la fenêtre qui apparaît, cochez **Booter en mode rescue** et sélectionnez « WinRescue » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
+<br>Dans la page suivante, sélectionnez **Booter en mode rescue** et choisissez « WinRescue » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
 
 Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
