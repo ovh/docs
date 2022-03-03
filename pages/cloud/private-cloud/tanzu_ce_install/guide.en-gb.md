@@ -85,10 +85,10 @@ Install gcc
 
 Install [Docker Engine](https://docs.docker.com/engine/install/)<br>
 Start with getting the necessary packages
->sudo apt-get install \
->ca-certificates \
->curl \
->gnupg \
+>sudo apt-get install \ 
+>ca-certificates \ 
+>curl \ 
+>gnupg \ 
 >lsb-release
 
 Add Docker’s official GPG key
