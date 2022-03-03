@@ -237,5 +237,42 @@ Upon completion, verify tou get a creation message and the nodes are visible in 
 
 ![](images/en21vsphere.png){.thumbnail}
 
+Get the cluster admin credentials for future interactions:
+>tanzu cluster kubeconfig get "clustername" --admin
 
 
+### Tanzu Workload Cluster
+
+To deploy a workload cluster, we'll duplicate and modify the configuration file for the management cluster.<br>
+Start a terminal window in the bootstrap VM and go to the config file folder.<br>
+>cd .config/tanzu/tkg/clusterconfigs
+
+Use ls to find the yaml configuration file name and copy it into a new one.<br>
+>cp existing.yaml new.yaml
+
+![](images/en26copyconf.png){.thumbnail}
+
+Use a text editor to modify the key fields:
+- CLUSTER_NAME : choose a name for your new cluster
+- VSPHERE_CONTROL_PLANE_ENDPOINT : choose an unused IP in the same subnet but not in the dhcp scope
+- VSPHERE_FOLDER : this is not mandatory but you can define a different folder for ease of management<br>
+Save and close the file.
+
+Back in the terminal, run the deploy command calling your new yaml file.<br>
+> tanzu cluster create --file .config/tanzu/tkg/clusterconfigs/new.yaml
+
+Upon completion, verify tou get a creation message and the nodes are visible in vSphere.
+
+![](images/en27created.png){.thumbnail}
+
+![](images/en28vsphere.png){.thumbnail}
+
+Get the cluster admin credentials for future interactions:
+>tanzu cluster kubeconfig get "clustername" --admin
+
+TCE is now ready for application installs.
+
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
