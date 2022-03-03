@@ -69,8 +69,8 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 &emsp;&emsp;[SSL Sectigo Certificate](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
 &emsp;&emsp;[CloudDB](#clouddb)<br />
-&emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
-&emsp;&emsp;[E-mail Pro](#emailpro)<br />
+&emsp;&emsp;[Email MX Plan](#mxplan)<br />
+&emsp;&emsp;[Email Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
 &emsp;&emsp;[Private Exchange](#private)<br />
 &emsp;&emsp;[Office 365 csp 1](#office-csp1)<br />
@@ -78,13 +78,9 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 &emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
 [Telecom](#telecom)<br />
-&emsp;&emsp;[xDSL](#xdsl)<br />
-&emsp;&emsp;[VoIP](#voip)<br />
-&emsp;&emsp;[OverTheBox](#otb)<br />
 &emsp;&emsp;[SMS](#sms)<br />
-&emsp;&emsp;[FAX](#fax)<br />
 
-[Transverse Solutions](#transversal)<br />
+[Miscellaneous](#transversal)<br />
 &emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
@@ -208,7 +204,7 @@ Next, click on the `...`{.action} button to the right of the service you want to
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
-#### E-mail MX Plan <a name="mxplan"></a>
+#### Email MX Plan <a name="mxplan"></a>
 
 An MX Plan solution is not subject to a periodic subscription. You cannot cancel your order, but you can delete your service if you wish.
 
@@ -225,7 +221,7 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 > Deleting a MX Plan will permanently erase all corresponding data. The process of deleting a MX Plan does not entitle you to a refund.
 >
 
-#### E-mail Pro <a name="emailpro"></a>
+#### Email Pro <a name="emailpro"></a>
 
 To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) offer, follow the instructions of this [guide](https://docs.ovh.com/gb/en/emails-pro/emailpro-billing/#deleting-accounts).
 
