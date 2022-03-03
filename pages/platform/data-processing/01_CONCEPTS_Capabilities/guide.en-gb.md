@@ -6,7 +6,7 @@ section: Concepts
 order: 1
 ---
 
-**Last updated 23<sup>th</sup> February, 2022**
+**Last updated 23<sup>rd</sup> February, 2022**
 
 
 ## Objective 
