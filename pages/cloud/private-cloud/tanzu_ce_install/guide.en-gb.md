@@ -18,7 +18,8 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 ## Requirements
 
 - Be an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
-- Have a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- Have a user account with access the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Have a user account with access to vSphere
 - Have an [NSX Edge Services Gateway](https://docs.ovh.com/gb/en/private-cloud/how-to-deploy-an-nsx-edge-gateway/) deployed
 - Have [dhcp](https://docs.ovh.com/gb/en/private-cloud/setup-dhcp-nsx-edge/) services activated on the NSX Gateway
 
@@ -49,6 +50,9 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 ![](images/en02nsxdhcp.png){.thumbnail}
 - an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access <br>
 ![](images/en03nsxsnat.png){.thumbnail}
+
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Private Cloud and add the public IPs used to the allowed adresses to connect.<br>
+![](images/en00ipsec.png){.thumbnail}
 
 
 ### Bootstrap VM
