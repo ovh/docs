@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 7
 ---
 
-**Last updated 21st February 2022**
+**Last updated 3rd March 2022**
 
 ## Objective
 
@@ -98,7 +98,7 @@ Snapshots are available in a directory designated for this purpose (.snapshots).
 
 ### Which backup policy is associated with Enterprise File Storage?
 
-Customers are responsible for managing their own backup solution and policy. However, for resiliency and security, OVHcloud performs a daily backup of your service to a remote server located in the same data centre. In case of failure or attack, OVHcloud can restore data from the previous day. If necessary, you can request a restoration as a paid service option.
+Customers are responsible for managing their own backup solution and policy. However, for resiliency and security, OVHcloud performs a daily backup of your service to a remote server. In case of failure or attack, OVHcloud can restore data from the previous day. If necessary, you can request a restoration as a paid service option.
 
 ### Are snapshots included in the capacity of a pool?
 
@@ -122,7 +122,7 @@ Snapshots are allocated a minimum of 5% of the storage space. For example, a 5Ti
 
 ### Where are snapshots stored?
 
-Your snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks within a data centre. In parallel, OVHcloud takes a daily snapshot at a remote site.
+Your snapshots are stored at the same level as your service. Snapshots are replicated on two separate servers in two different racks. In parallel, OVHcloud takes a daily snapshot at a remote site.
 
 ### How do I track the usage of pools and volumes?
 

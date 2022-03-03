@@ -102,7 +102,7 @@ Snapshoty są dostępne w odpowiednim katalogu (.snapshoty).
 
 ### Jaka polityka tworzenia kopii zapasowych jest przypisana do Enterprise File Storage?
 
-Użytkownicy są odpowiedzialni za zarządzanie kopiami zapasowymi (narzędzie i reguły). Ze względów bezpieczeństwa i odporności infrastruktury OVHcloud wykonuje codzienną kopię zapasową usługi na zdalnym serwerze w tym samym centrum danych. W przypadku awarii lub ataku, OVHcloud może przywrócić dane z poprzedniego dnia. Operacja ta jest realizowana na żądanie i opcjonalnie płatna usługa.
+Użytkownicy są odpowiedzialni za zarządzanie kopiami zapasowymi (narzędzie i reguły). Ze względów bezpieczeństwa i odporności infrastruktury OVHcloud wykonuje codzienną kopię zapasową usługi na zdalnym serwerze. W przypadku awarii lub ataku, OVHcloud może przywrócić dane z poprzedniego dnia. Operacja ta jest realizowana na żądanie i opcjonalnie płatna usługa.
 
 ### Czy snapshoty są zawarte w pojemności puli?
 
@@ -126,7 +126,7 @@ Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej
 
 ### Gdzie są przechowywane snapshoty?
 
-Twoje snapshoty są przechowywane na tym samym poziomie, co Twoja usługa. Snapshoty są replikowane na dwóch różnych serwerach, w dwóch różnych konfiguracjach w centrum danych. Jednocześnie OVHcloud wykonuje codzienną kopię zapasową snapshota zdalnej strony WWW.
+Twoje snapshoty są przechowywane na tym samym poziomie, co Twoja usługa. Snapshoty są replikowane na dwóch różnych serwerach, w dwóch różnych konfiguracjach. Jednocześnie OVHcloud wykonuje codzienną kopię zapasową snapshota zdalnej strony WWW.
 
 ### Jak monitorować wykorzystanie puli i wolumenów?
 

@@ -10,7 +10,7 @@ order: 7
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/02/2022**
+**Ultimo aggiornamento: 03/03/2022**
 
 ## Obiettivo
 
@@ -102,7 +102,7 @@ Gli Snapshot sono disponibili in una directory appositamente creata (.snapshot).
 
 ### Qual è la politica di backup associata a Enterprise File Storage?
 
-Gli utenti sono responsabili della gestione dei loro backup (strumenti e regole). Per ragioni di sicurezza e resilienza dell'infrastruttura, OVHcloud esegue un backup giornaliero del servizio su un server remoto nello stesso datacenter. In caso di malfunzionamenti o attacchi, OVHcloud può ripristinare i dati del giorno precedente. Questa operazione viene eseguita su richiesta ed è un servizio opzionale fatturato.
+Gli utenti sono responsabili della gestione dei loro backup (strumenti e regole). Per ragioni di sicurezza e resilienza dell'infrastruttura, OVHcloud esegue un backup giornaliero del servizio su un server remoto. In caso di malfunzionamenti o attacchi, OVHcloud può ripristinare i dati del giorno precedente. Questa operazione viene eseguita su richiesta ed è un servizio opzionale fatturato.
 
 ### Gli Snapshot sono inclusi nella capacità di un pool?
 
@@ -126,7 +126,7 @@ Un minimo del 5% dello spazio di storage è assegnato agli Snapshot. Ad esempio,
 
 ### Dove sono salvati gli Snapshot?
 
-I tuoi Snapshot sono salvati allo stesso livello del tuo servizio. Gli Snapshot vengono replicati su due server distinti, in due rack differenti all'interno di un datacenter. Allo stesso tempo, OVHcloud esegue uno Snapshot giornaliero su un sito remoto.
+I tuoi Snapshot sono salvati allo stesso livello del tuo servizio. Gli Snapshot vengono replicati su due server distinti, in due rack differenti. Allo stesso tempo, OVHcloud esegue uno Snapshot giornaliero su un sito remoto.
 
 ### Come monitorare l'utilizzo di pool e volumi?
 

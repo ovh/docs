@@ -102,7 +102,7 @@ Die Snapshots sind in einem dafür vorgesehenen Verzeichnis (*.snapshots*) verf�
 
 ### Welche Backup-Policy ist mit Enterprise File Storage verbunden?
 
-Benutzer sind für die Durchführung und Verwaltung ihrer Backups verantwortlich. Aus Gründen der Sicherheit und Resilienz der Infrastruktur führt OVHcloud jedoch ein tägliches Backup des Dienstes auf einem Remote-Server im selben Rechenzentrum durch. Im Falle eines Ausfalls oder eines Angriffs kann OVHcloud die Daten des Vortages wiederherstellen. Eine Wiederherstellung kann auf Anfrage als bezahlte Dienstleistung erfolgen.
+Benutzer sind für die Durchführung und Verwaltung ihrer Backups verantwortlich. Aus Gründen der Sicherheit und Resilienz der Infrastruktur führt OVHcloud jedoch ein tägliches Backup des Dienstes auf einem Remote-Server. Im Falle eines Ausfalls oder eines Angriffs kann OVHcloud die Daten des Vortages wiederherstellen. Eine Wiederherstellung kann auf Anfrage als bezahlte Dienstleistung erfolgen.
 
 ### Sind Snapshots in der Kapazität eines Pools enthalten?
 
@@ -126,7 +126,7 @@ Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. So wird zum Beisp
 
 ### Wo werden die Snapshots gespeichert?
 
-Ihre Snapshots werden auf demselben Niveau gespeichert wie Ihr Dienst. Die Snapshots werden auf zwei separate Server in zwei verschiedenen Racks innerhalb eines Rechenzentrums repliziert. OVHcloud erstellt parallel dazu einen täglichen Snapshot an einem entfernten Standort.
+Ihre Snapshots werden auf demselben Niveau gespeichert wie Ihr Dienst. Die Snapshots werden auf zwei separate Server in zwei verschiedenen Racks repliziert.. OVHcloud erstellt parallel dazu einen täglichen Snapshot an einem entfernten Standort.
 
 ### Wie kann ich die Verwendung von Pools und Volumes nachverfolgen?
 
