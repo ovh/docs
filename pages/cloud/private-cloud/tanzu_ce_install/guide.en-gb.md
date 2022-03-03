@@ -73,10 +73,13 @@ Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
 Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)<br>
 Start with git
 >sudo apt install git -y
+
 Run the Homebrew install script
 >/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 Add Homebrew to your path
 >eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 Install gcc
 >brew install gcc
 
@@ -87,18 +90,20 @@ Start with getting the necessary packages
 >curl \
 >gnupg \
 >lsb-release
+
 Add Docker’s official GPG key
 >curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
 set up the stable repository
 >echo \
 >"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
 >$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
 Set up the engine
 >sudo apt-get install docker-ce docker-ce-cli containerd.io
+
 Post install, add the current user to the docker group to allow it to run it without rights elevation
 >sudo usermod -aG docker $USER
-
-
 
 Install [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
