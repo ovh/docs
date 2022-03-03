@@ -6,7 +6,7 @@ section: Premiers pas
 order: 04
 ---
 
-**Dernière mise à jour le 23/02/2022**
+**Dernière mise à jour le 03/03/2022**
 
 ## Objectif
 
@@ -23,15 +23,15 @@ Ce guide vous présente le stockage ainsi que la création d'un **storage contai
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur le cluster [via Prism Element](https://docs.ovh.com/fr/nutanix/redondancy-hardware/)
+- Être connecté sur le cluster via Prism Element
 
 ## Présentation du fonctionnement du stockage dans un cluster Nutanix
 
-Lors de la création d'un Cluster Nutanix le système connecte tous les disques des nœuds dans un **Storage Pool**. Il est déconseillé d'avoir plusieurs Storage Pools.
+Lors de la création d'un Cluster Nutanix, le système connecte tous les disques des nœuds dans un **Storage Pool**. Il est déconseillé d'avoir plusieurs Storage Pools.
 
 Par défaut, le **facteur de réplication** est sur 2 et il peut être modifié à 3 si l'on a au minimum 5 nœuds.
 
-Les données ne sont pas stockées directement dans le Storage Pool, elles le sont dans des **Storages Containers** où il est possible d'activer des options de compression, déduplication, etc pour optimiser l'utilisation du stockage. 
+Les données ne sont pas stockées directement dans le Storage Pool, elles le sont dans des **Storage Containers** où il est possible d'activer des options de compression, déduplication, etc pour optimiser l'utilisation du stockage. 
 
 Il existe aussi des **Volume Groups** qui donnent la possibilité d'avoir un accès en ISCSI ou directement en simulation SCSI pour :
 
@@ -44,13 +44,13 @@ Il existe aussi des **Volume Groups** qui donnent la possibilité d'avoir un acc
 
 Cliquez sur l'engrenage en haut à droite de l'interface Prism Element.
 
-![prism element dashboard](images/prism-element-dashboard.PNG)
+![prism element dashboard](images/prism-element-dashboard.PNG){.thumbnail}
 
-Faites défiler les réglages (*Settings*) à l'aide de l'ascenseur et cliquez sur `Redondancy state`{.action}.
+Faites défiler les réglages (*Settings*) à l'aide de l'ascenseur et cliquez sur `Redundancy state`{.action}.
 
-Si vous disposez de 5 nœuds, vous pouvez modifier le paramètre **Desired redondancy factor**, en le passant de 2 à 3.
+Si vous disposez de 5 nœuds, vous pouvez modifier le paramètre **Desired redundancy factor**, en le passant de 2 à 3.
 
-![RedondancyState](images/RedondancyState.PNG)
+![RedundancyState](images/RedondancyState.PNG){.thumbnail}
 
 Il est nécessaire d'attendre un certain temps pour que les données se trouvent sur 3 nœuds.
 
@@ -60,28 +60,28 @@ Nous allons créer un **Storage Container**, avec 300 Go (minimum) réservés po
 
 Dans le menu, sélectionnez `Storage`{.action}.
 
-![StorageMenu](images/StorageMenu.png)
+![StorageMenu](images/StorageMenu.png){.thumbnail}
 
 Positionnez-vous sur `Storage Container`{.action} et cliquez, à droite, sur  `+ Storage Container`{.action}.
 
-![StorageContainerDashboard](images/StorageContainerDashboard.PNG)
+![StorageContainerDashboard](images/StorageContainerDashboard.PNG){.thumbnail}
 
 Donnez un nom au storage container dans la zone de saisie **NAME**.<br>
 Cliquez ensuite sur `Advanced Settings`{.action} pour afficher les paramètres avancés.
 
-![StorageContainerCreation1](images/StorageContainerCreation1.PNG)
+![StorageContainerCreation1](images/StorageContainerCreation1.PNG){.thumbnail}
 
 Dans le champ **RESERVED CAPACITY**, saisissez la taille de votre container. D'autres options sont également disponibles.
 
-![StorageContainerCreation2](images/StorageContainerCreation2.PNG)
+![StorageContainerCreation2](images/StorageContainerCreation2.PNG){.thumbnail}
 
 Cliquez enfin sur `Save`{.action} pour finaliser la création du **Storage Container**.
 
-![StorageContainerCreation3](images/StorageContainerCreation3.PNG)
+![StorageContainerCreation3](images/StorageContainerCreation3.PNG){.thumbnail}
 
 Le nouveau **Storage Container** est ensuite visible dans le tableau de bord.
 
-![StorageContainerDasboardNC.PNG](images/StorageContainerDasboardNC.PNG)
+![StorageContainerDasboardNC.PNG](images/StorageContainerDasboardNC.PNG){.thumbnail}
 
 Pour plus de détails sur la création d'un **Storage Container**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -89,27 +89,27 @@ Pour plus de détails sur la création d'un **Storage Container**, reportez-vous
 
 Positionnez-vous sur `Volume Group`{.action} et cliquez, à droite, sur `+ Volume Group`{.action}.
 
-![VolumeGroupDashBoard](images/VolumeGroupDashBoard.PNG)
+![VolumeGroupDashBoard](images/VolumeGroupDashBoard.PNG){.thumbnail}
 
 Cliquez sur **Add New Disk**.
 
-![VolumeGroupCreation1](images/VolumeGroupCreation1.PNG)
+![VolumeGroupCreation1](images/VolumeGroupCreation1.PNG){.thumbnail}
 
 Saisissez la taille dans le champ **Size** et cliquez sur `Add`{.action}.
 
-![VolumeGroupCreation2](images/VolumeGroupCreation2.PNG)
+![VolumeGroupCreation2](images/VolumeGroupCreation2.PNG){.thumbnail}
 
 Le disque apparait dans le **Volume Group**. Vous pouvez ainsi ajouter plusieurs autres disques.
 
-![VolumeGroupCreation3](images/VolumeGroupCreation3.PNG)
+![VolumeGroupCreation3](images/VolumeGroupCreation3.PNG){.thumbnail}
 
 Une fois votre ou vos disque(s) créé(s), parcourez les options disponibles et validez enfin la création du **Volume Group** en cliquant sur `Save`{.action}.
 
-![VolumeGroupCreation4](images/VolumeGroupCreation4.PNG)
+![VolumeGroupCreation4](images/VolumeGroupCreation4.PNG){.thumbnail}
 
 Le **Volume Group** apparait alors dans la liste.
 
-![VolumeGroupDashBoardCreated](images/VolumeGroupDashBoardCreated.PNG)
+![VolumeGroupDashBoardCreated](images/VolumeGroupDashBoardCreated.PNG){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
