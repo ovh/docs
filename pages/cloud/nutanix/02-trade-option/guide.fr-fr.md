@@ -20,7 +20,7 @@ Présentation de l'offre commerciale d'OVHcloud.
 
 ## Présentation de l'offre commerciale Nutanix OVHcloud
 
-La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutanix classiques (Pro et Ultimate).
+La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutanix classiques (Pro et Ultimate). Seules celles qui apparaissent sur ce site sont disponibles.
 
 OVHcloud propose deux choix de licences:
 
@@ -58,10 +58,10 @@ Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distr
 - De la réplication Asynchrone avec un RPO (Recovery Point Objective) d'une heure
 
 **Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standards de :
-- Permettre une réplication avancée avec une meilleur résilience entre cluster
+- Une réplication avancée avec une meilleur résilience entre cluster
     + **Nearsync replication** avec un RPO à 20 secondes
     + **Metrosync replication** avec un RPO à 1 seconde
-- d'avoir Une meileure sécurité
+- et meileure sécurité
     + **Software encryption at rest** cryptage logiciel
     + **Native KVM** gestion des clé de cryptage   
 
