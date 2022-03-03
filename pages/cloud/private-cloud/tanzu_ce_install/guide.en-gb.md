@@ -131,6 +131,13 @@ Note the output install folder and run the post install script: {HOMEBREW-INSTAL
 
 ![](images/en05tanzucli.png){.thumbnail}
 
+#### [Deployment](https://tanzucommunityedition.io/docs/latest/vsphere-install-mgmt/)
+
+Launch the installer with the command
+>tanzu management-cluster create --ui
+
+
+
 
 
 
