@@ -24,10 +24,10 @@ La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutani
 
 OVHcloud propose deux choix de licences :
 
-* **Nutanix Standard Pack**
+* **Nutanix Standard Pack**.
 * **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** et d'autres options supplémentaires comme une réplication plus performante, des possibilités de cryptage de données avancées et des options de plan de reprises d'activités. 
 
-### détail de la partie commune aux deux offres
+### Options communes aux deux offres
 
 Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
 
