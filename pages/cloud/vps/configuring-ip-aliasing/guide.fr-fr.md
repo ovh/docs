@@ -1,11 +1,11 @@
 ---
-title: 'Configurer une adresse IP en alias'
+title: "Configuration d'une adresse IP en alias"
 slug: ip-aliasing-vps
 excerpt: 'Découvrez comment ajouter des adresses IP fail-over à votre configuration VPS'
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 30/11/2021**
+**Dernière mise à jour le 03/03/2022**
 
 ## Objectif
 
