@@ -116,6 +116,7 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 - <b>MaxConnections:</b> The number of concurrent connections authorised on CloudDB.
 - <b>Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
 - <b>Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
+- <b>sql_mode</b> : The <b>sql_mode</b> option affects the supported SQL syntax, and the data validation performed by MySQL/MariaDB. Only available for MariaDB.
 
 > [!primary]
 > When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
@@ -128,6 +129,15 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
 > \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
+>
+
+> [!primary]
+>
+> sql_mode :
+> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER : Default mode of MariaDB 10.1.
+> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION : Default mode of MariaDB 10.2 and higher.
+>
+> We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
 
 Make the necessary changes, then click `Confirm`{.action}.

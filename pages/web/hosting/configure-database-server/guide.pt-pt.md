@@ -116,6 +116,7 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 - **MaxConnexions**: Número de conexões simultâneas autorizadas no servidor de bases de dados.
 - **Wait_timeout**: Tempo (em segundos) que o servidor aguardará atividade numa conexão não interativa antes de a fechar.
 - **Event_scheduler**: Permite acionar a execução de pedidos programados diretamente no servidor MySQL.
+- **sql_mode** : A opção **sql_mode** afeta a sintaxe SQL e as verificações de validação de dados efetuadas por MySQL/MariaDB. Apenas disponível para MariaDB.
 
 > [!primary]
 > Quando encontra um erro no seu site a indicar **«Too many connections»**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
@@ -127,6 +128,15 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 > Tmpdir:
 > \- /dev/shm: O servidor de bases de dados vai alocar para este diretório metade da sua memória RAM, tendo em vista um melhor desempenho.
 > \- /tmp: O servidor vai alocar no disco rígido um espaço ilimitado para este diretório, mas o desempenho será muito inferior. Recomendamos que utilize este diretório apenas para operações pontuais pesadas.
+>
+
+> [!primary]
+>
+> sql_mode :
+> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER : Modo predefinido de MariaDB 10.1.
+> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION : Modo predefinido de MariaDB 10.2 e superior.
+>
+> Recomendamos que utilize sempre o modo predefinido, exceto se a sua base de dados tiver sido atualizada a partir de uma versão com um modo predefinido diferente da versão atual.
 >
 
 Efetue as modificações necessárias e clique em `Confirmar`{.action}.
