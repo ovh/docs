@@ -293,6 +293,4 @@ Finally, click on `Confirm cancellation`{.action}.
 
 [Managing renewal for OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
 
-[FAQ - Automatic renewal at OVH](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
-
 Join our community of users on <https://community.ovh.com/en/>.
