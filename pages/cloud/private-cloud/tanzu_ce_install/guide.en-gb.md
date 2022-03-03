@@ -52,6 +52,7 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 ![](images/en03nsxsnat.png){.thumbnail}
 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Private Cloud and add the public IPs used to the allowed adresses to connect.<br>
+The adresses should appear as "Authorised and set up".<br>
 ![](images/en00ipsec.png){.thumbnail}
 
 
@@ -66,7 +67,7 @@ You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deplo
 Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
 ![](images/en04bootvlan.png){.thumbnail}
 
-In a tezrminal window, start with update commands:
+In a terminal window, start with update commands:
 >sudo apt update
 and
 >sudo apt-get install build-essential
