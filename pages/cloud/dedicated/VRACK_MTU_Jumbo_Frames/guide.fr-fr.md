@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer les Jumbo frames dans le vRack'
 section: 'vRack'
 ---
 
-**Derniére mise à jour le 17/08/2020**
+**Derniére mise à jour le 03/03/2022**
 
 ## Objectif
 
