@@ -22,7 +22,7 @@ Le NAS (Network Attached Storage) est un serveur de fichiers relié à un résea
 
 La gestion de votre NAS-HA s'effectue via l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
-Une fois connecté, cliquez sur `Bare Metal Cloud`{.action}, puis ouvrez `NAS et CDN`{.action}. Cliquez sur votre service pour avoir accès au menu d'administration.
+Une fois connecté, cliquez sur `Bare Metal Cloud`{.action} puis sur `NAS et CDN`{.action}. Cliquez sur votre service pour avoir accès au menu d'administration.
 
 ![accès au NAS](images/nas2022-01.png){.thumbnail}
 
