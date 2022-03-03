@@ -67,10 +67,12 @@ In a tezrminal window, start with update commands:
 and
 >sudo apt-get install build-essential
 
-Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
+#### [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/) install
+
 >sudo apt-get install ntp
 
-Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)<br>
+#### [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/) install
+
 Start with git
 >sudo apt install git -y
 
@@ -83,7 +85,8 @@ Add Homebrew to your path
 Install gcc
 >brew install gcc
 
-Install [Docker Engine](https://docs.docker.com/engine/install/)<br>
+#### [Docker Engine](https://docs.docker.com/engine/install/) install
+
 Start with getting the necessary packages
 >sudo apt-get install \ 
 >ca-certificates \ 
@@ -105,16 +108,22 @@ Set up the engine
 Post install, add the current user to the docker group to allow it to run it without rights elevation
 >sudo usermod -aG docker $USER
 
-Install [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+#### [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) install
+
+Download the lastest package
+>curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+
+Run the installer
+>sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 
 ### Tanzu Management Cluster
 
 The VM is now ready for Tanzu deployment.
 
-#### Install [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
+#### [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
 
-In a terminal window, run the install commmand:
+In a terminal window, run the CLI install commmand
 >brew install vmware-tanzu/tanzu/tanzu-community-edition
 
 Note the output install folder and run the post install script: {HOMEBREW-INSTALL-LOCATION}/configure-tce.sh
