@@ -1,7 +1,7 @@
 ---
-title: Options Hosted Private Cloud powered by Nutanix
-slug: nutanix-options
-excerpt: "Présentation des options de la solution Nutanix OVHcloud"
+title: Consulter la liste des services et licences inclus
+slug: services-license-included
+excerpt: "Présentation des services et licences inclus"
 section: Premiers pas
 order: 02
 ---
@@ -57,7 +57,7 @@ Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distr
 - Faire de l'orchestration avancé.
 - De la réplication Asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
 
-**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standards de :
+**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standards :
 - Une réplication avancée avec une meilleur résilience entre cluster.
     + **Nearsync replication** avec un **RPO** à 20 secondes.
     + **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continue.

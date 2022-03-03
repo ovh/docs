@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-Être capable d'ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors d'installation des systèmes d'exploitations.
+Être capable d'ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors d'installation de systèmes d'exploitations.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
