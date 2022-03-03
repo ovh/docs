@@ -1,7 +1,7 @@
 ---
-title: Options Commerciales Nutanix OVHcloud
+title: Options Hosted Private Cloud powered by Nutanix
 slug: trade-option
-excerpt: "Présentation de l'offre commerciale de Nutanix"
+excerpt: "Présentation des options de la solution Nutanix OVHcloud"
 section: Premiers pas
 order: 02
 ---
@@ -20,10 +20,10 @@ Présentation de l'offre commerciale d'OVHcloud.
 
 ## Présentation de l'offre commerciale Nutanix OVHcloud
 
-OVHCloud propose deux formules pour les Offres HOSTED Private Cloud Nutanix :
+OVHCloud propose deux formules pour les Offres Hosted Private Cloud Nutanix :
 
 * **Nutanix Standard Pack**
-* **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** avec d'autre options supplémentaire comme un réplication plus performantes, des possibilités de cryptage des données avancées et des options de plan de reprises d'activités. 
+* **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** et d'autres options supplémentaires comme une réplication plus performante, des possibilités de cryptage des données avancées et des options de plan de reprises d'activités. 
 
 ### détail de la partie commune aux deux offres
 
@@ -45,20 +45,20 @@ Produits Membre de **Nutanix Unified Storage** Anciennement **Unified Storage**
 
 Produit Membre des **Framework utilities**
 
-- **X-ray** : Ensemble d'outils de test et de benchmark des principales solutions d'hyperconvergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)
+- **X-ray** : Ensemble d'outils de test et de benchmark sur les  principales solutions d'hyperconvergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray)
 - **Move** :  Outil de migration vers Nutanix [Présentation Nutanix de MOVE](https://www.nutanix.com/products/move)
 - **Lcm** : Outil de mise à jour des clusters [Présentation de LCM](https://www.nutanix.com/products/life-cycle-manager)
 
 ### Divergences entre la version **Nutanix Standard** et **Nutanix Advanced**
 
-Les differences se situe au niveau d'**AOS Storage** anciennement **AOS Distributed Storage**
+Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distributed Storage**
 
-**Nutanix Standard** utiliser la version **AOS Pro** qui permet de :
+**Nutanix Standard** utilise la version **AOS Pro** qui permet de :
 - Gérer le stockage distribué
 - Faire de l'orchestration avancé
 - De la réplication Asynchrone avec un RPO (Recovery Point Objective) d'une heure
 
-**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standard de :
+**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standards de :
 - Permettre une réplication avancée avec une meilleur resilience entre cluster
     + **Nearsync replication** avec un RPO à 20 secondes
     + **Metrosync replication** avec un RPO à 1 seconde
