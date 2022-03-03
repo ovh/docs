@@ -136,6 +136,11 @@ Note the output install folder and run the post install script: {HOMEBREW-INSTAL
 Launch the installer with the command
 >tanzu management-cluster create --ui
 
+In the opening browser window, select the vSphere option
+
+![](images/en06deploy.png){.thumbnail}
+
+
 
 
 
