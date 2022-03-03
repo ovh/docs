@@ -323,6 +323,4 @@ Enfin, cliquez sur `Confirmer l'annulation`{.action}.
 
 [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
 
-[FAQ - Le renouvellement automatique chez OVH](https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/)
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
