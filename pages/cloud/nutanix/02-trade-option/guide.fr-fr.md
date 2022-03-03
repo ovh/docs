@@ -20,7 +20,7 @@ Présentation de l'offre commerciale d'OVHcloud.
 
 ## Présentation de l'offre commerciale Nutanix OVHcloud
 
-La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutanix classiques (Pro et Ultimate). Seules celles qui apparaissent sur ce site sont disponibles.
+La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutanix classiques (Pro et Ultimate). Seules celles qui apparaissent sur cette page sont disponibles.
 
 OVHcloud propose deux choix de licences:
 
@@ -33,9 +33,9 @@ Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
 
 - **Nutanix Cloud Infrastructure (NCI)** anciennement **Hybrid Cloud Infrastructure** 
     + **AHV Virtualization** : Virtualisation intégrée dans NUTANIX [Présentation Nutanix AHV](https://www.nutanix.com/products/ahv)
-    + **Nutanix Kubernetes Engine** : Gestion des containers Kubernetes sous Nutanix produit anciennement nommé **Karbon** [Présentation Nutanix Kubernetes Engine](https://www.nutanix.com/fr/products/karbon)
+    + **Nutanix Kubernetes Engine** : Gestion des containers Kubernetes sous Nutanix produit anciennement nommé **Karbon** [Présentation Nutanix Kubernetes Engine](https://www.nutanix.com/products/karbon)
 
-- **Nutanix Cloud Manager(NCM)** anciennement **Cloud Management** [Présentation de Nutanix Cloud Management](https://www.nutanix.com/fr/products/cloud-manager/aiops)
+- **Nutanix Cloud Manager(NCM)** anciennement **Cloud Management** [Présentation de Nutanix Cloud Management](https://www.nutanix.com/products/cloud-manager/aiops)
     + **Intelligent operation** anciennement **Prism Pro** : Surveillance et prévision des besoins
     + **Flow** : virtualisation et micro-segmentation du réseau [Présentation de FLOW](https://www.nutanix.com/products/flow)
 
@@ -61,11 +61,11 @@ Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distr
 - Une réplication avancée avec une meilleur résilience entre cluster
     + **Nearsync replication** avec un RPO à 20 secondes
     + **Metrosync replication** avec un RPO à 1 seconde
-- et meileure sécurité
+- et une meileure sécurité
     + **Software encryption at rest** cryptage logiciel
     + **Native KVM** gestion des clé de cryptage   
 
-Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/fr/products/software-options)
+Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/products/software-options)
 
 
 ## Aller plus loin
