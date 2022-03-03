@@ -10,7 +10,7 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/02/2022**
+**Última atualização: 03/03/2022**
 
 ## Objetivo
 
@@ -102,7 +102,7 @@ As snapshots estão disponíveis num diretório especial (.snapshots).
 
 ### Qual é a política de backup associada ao Enterprise File Storage?
 
-Os utilizadores são responsáveis pela gestão dos seus backups (ferramentas e regras). No entanto, por razões de segurança e de resiliência da infraestrutura, a OVHcloud opera um backup diário do serviço num servidor distante no mesmo datacenter. Em caso de avaria ou de ataque, a OVHcloud pode restaurar os dados do dia anterior. Esta ação efetua-se a pedido e é um serviço opcional faturado.
+Os utilizadores são responsáveis pela gestão dos seus backups (ferramentas e regras). No entanto, por razões de segurança e de resiliência da infraestrutura, a OVHcloud opera um backup diário do serviço num servidor distante. Em caso de avaria ou de ataque, a OVHcloud pode restaurar os dados do dia anterior. Esta ação efetua-se a pedido e é um serviço opcional faturado.
 
 ### As snapshots estão incluídas na capacidade de uma pool?
 
@@ -126,7 +126,7 @@ Um mínimo de 5% do espaço de armazenamento é atribuído às snapshots. Por ex
 
 ### Onde estão armazenadas as snapshots?
 
-As suas snapshots são armazenadas ao mesmo nível que o seu serviço. As snapshots são replicadas em dois servidores diferentes, em dois racks diferentes dentro de um datacenter. Paralelamente, a OVHcloud efetua uma snapshot diária num site remoto.
+As suas snapshots são armazenadas ao mesmo nível que o seu serviço. As snapshots são replicadas em dois servidores diferentes, em dois racks diferentes. Paralelamente, a OVHcloud efetua uma snapshot diária num site remoto.
 
 ### Como seguir a utilização dos pools e dos volumes?
 
