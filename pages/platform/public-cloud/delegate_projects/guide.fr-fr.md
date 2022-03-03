@@ -1,8 +1,8 @@
 ---
-title: 'Déléguer des projets'
+title: "Déléguer des projets"
 slug: deleguer-ses-projets
-excerpt: 'Apprenez à déléguer des droits d'accès d'un projet Public Cloud à d'autres comptes OVHcloud'
-section: 'Gestion de projets'
+excerpt: "Apprenez à déléguer des droits d'accès d'un projet Public Cloud à d'autres comptes OVHcloud"
+section: Gestion de projets
 order: 7
 ---
 
