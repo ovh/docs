@@ -62,11 +62,26 @@ You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deplo
 Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
 ![](images/en04bootvlan.png){.thumbnail}
 
-Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
+In a tezrminal window, start with update commands:
+>sudo apt update
+and
+>sudo apt-get install build-essential
 
-Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)
+Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
+>sudo apt-get install ntp
+
+Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)<br>
+Start with git
+>sudo apt install git -y
+Run the Homebrew install script
+>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Add Homebrew to your path
+>eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+Install gcc
+>brew install gcc
 
 Install [Docker Engine](https://docs.docker.com/engine/install/)
+
 
 Install [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
