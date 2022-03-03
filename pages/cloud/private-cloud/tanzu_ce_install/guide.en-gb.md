@@ -121,6 +121,17 @@ Download the lastest package
 Run the installer
 >sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
+#### SSH Key Pair
+
+run the creation command
+>ssh-keygen -t rsa -b 4096 -C "youremail@yourdomain.com"
+
+Press Enter to save the key in default path (/root/.ssh/id_rsa).<br>
+Enter and confirm a password for the key.<br>
+Add the private key to the SSH agent running on your machine, and enter the password you created in the previous step.
+>ssh-add ~/.ssh/id_rsa
+
+Keep the .ssh/id_rsa.pub file handy as it holds the public key you will need to input later for TCE configuration
 
 ### Tanzu Management Cluster
 
@@ -145,13 +156,37 @@ In the opening browser window, select the vSphere option
 
 ![](images/en06deploy.png){.thumbnail}
 
+enter the Private cloud FQDN and fill in administrative credential before clicking `Connect`{.action}.
 
+![](images/en07connect.png){.thumbnail}
 
+Click `Continue`{.action} to verify the SSL footprint.
 
+![](images/en08ssl.png){.thumbnail}
 
+Select your datacenter and fill in the SSH public key created earlier (.ssh/id_rsa.pub).<br>
+Click `Next`{.action}.
 
+![](images/en09ssh.png){.thumbnail}
 
+Choose a type of cluster (Development or Production) and a node size.
 
+![](images/en10type.png){.thumbnail}
+
+Fill in the name of your custer, choose a control plane enpoint provider and IP (same subnet but outside of dhcp scope).<br>
+Click `Next`{.action}.
+
+![](images/en11control.png){.thumbnail}
+
+NSX Advanced Load Balancer and Metadata sections are optional and we'll leave them as is.<br>
+Click `Next`{.action} on both of them.
+
+![](images/en12optional.png){.thumbnail}
+
+Choose your resource locations.<br>
+Click `Next`{.action}.
+
+![](images/en13resources.png){.thumbnail}
 
 
 
