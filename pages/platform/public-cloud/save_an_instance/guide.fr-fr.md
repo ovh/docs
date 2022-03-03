@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
-excerpt: 'Apprenez à sauvegarder une instance Public Cloud dans votre espace client OVHcloud'
+excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
 section: "Gestion depuis l'espace client"
 order: 1
 ---
@@ -16,16 +16,16 @@ Vous pouvez créer une sauvegarde unique d'une instance ou configurer un plannin
 
 ## Prérequis
 
-- Avoir une instance [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) dans votre compte OVHcloud.
-- Être connecté à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
-## Instructions
+## En pratique
 
 ### Créer une sauvegarde d'une instance
 
-Connectez-vous à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 
-Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer un backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
@@ -39,11 +39,11 @@ Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Inst
 
 ### Créer une sauvegarde automatisée d’une instance
 
-Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde`{.action} automatique.
+Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde automatisée`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Vous pourrez configurer les paramètres de sauvegarde suivants sur la page suivante :
+Vous pourrez alors configurer les paramètres de sauvegarde suivants :
 
 #### **Le workflow** 
 
@@ -68,17 +68,17 @@ Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l
 
 #### **Le nom** 
 
-Entrez un nom pour la planification de la sauvegarde automatique. Prenez connaissance des informations de tarification et créez le planning avec `Confirmer`{.action}.
+Entrez un nom pour la planification de la sauvegarde automatique. Prenez connaissance des informations de tarification et créez le planning en cliquant sur le bouton `Créer`{.action}.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
 ### Gestion des sauvegardes et des plannings
 
-Les planifications peuvent être créées et supprimées dans la section Public Cloud `Workflow Management`{.action}.
+Les planifications peuvent être créées et supprimées dans la section `Workflow Management`{.action} de votre espace client Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Les sauvegardes de vos instances sont gérées dans la section Public Cloud `Instance Backup`{.action}.
+Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`{.action} de votre espace client Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
