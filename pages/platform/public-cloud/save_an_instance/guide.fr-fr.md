@@ -1,85 +1,91 @@
 ---
 title: 'Sauvegarder une instance'
 slug: sauvegarder-une-instance
-excerpt: 'Découvrez comment sauvegarder une instance Public Cloud en quelques clics'
+excerpt: 'Apprenez à sauvegarder une instance Public Cloud dans votre espace client OVHcloud'
 section: "Gestion depuis l'espace client"
 order: 1
 ---
 
-**Dernière mise à jour le 22/11/2019**
+**Dernière mise à jour le 28/02/2022**
 
 ## Objectif
 
-Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cette dernière peut vous permettre de restaurer votre instance sur une ancienne configuration ; ou de pouvoir recréer cette dernière.
+Vous pouvez créer une sauvegarde unique d'une instance ou configurer un planning afin d'automatiser les sauvegardes de vos instances. Les sauvegardes peuvent être utilisées pour restaurer votre instance à un état antérieur ou pour créer une nouvelle instance identique.
 
-**Réalisez en quelques clics une sauvegarde d'une instance Public Cloud.**
+**Ce guide explique comment créer des sauvegardes manuelles et automatiques d'une instance Public Cloud.**
 
 ## Prérequis
 
-- [Avoir créé une instance Public Cloud depuis votre compte](../creer-instance-espace-client/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Avoir une instance [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) dans votre compte OVHcloud.
+- Être connecté à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
-## En pratique
+## Instructions
 
 ### Créer une sauvegarde d'une instance
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, sélectionnez l'onglet Public Cloud puis la rubrique `Instances`{.action}.
+Connectez-vous à votre espace client [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Instances`{.action} dans le menu de gauche.
 
-Cliquez alors sur les `...`{.action} à droite de l'instance choisie et enfin sur `Créer un backup`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Renseignez un nom pour cette sauvegarde sur la page suivante.
+Renseignez un nom pour la sauvegarde sur la page suivante. Prenez connaissance des informations tarifaires et cliquez sur `Confirmer`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Une fois la sauvegarde terminée, celle-ci sera ensuite disponible dans la rubrique `Instance Backup`{.action}.
+Une fois la sauvegarde terminée, celle-ci sera disponible dans la section `Instance Backup`{.action} .
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-### Créer une sauvegarde automatisée d'une instance
+### Créer une sauvegarde automatisée d’une instance
 
-Dans la rubrique `Instances`{.action}, sélectionnez `Créer une sauvegarde automatisée`{.action} dans les actions disponibles de l'instance à sauvegarder.
+Cliquez sur le bouton `...`{.action} à droite de l'instance et sélectionnez `Créer une sauvegarde`{.action} automatique.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Vous devrez renseigner plusieurs informations sur la page suivante :
+Vous pourrez configurer les paramètres de sauvegarde suivants sur la page suivante :
 
 #### **Le workflow** 
 
-Il existe actuellement un seul workflow, celui-ci fera une sauvegarde de l'instance et du volume principal de celle-ci.
+Actuellement, un seul workflow existe. Il créera une sauvegarde pour l'instance et son volume principal.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
-#### **La ressource**. 
+#### **La ressource** 
 
-Il suffit de sélectionner l'instance concernée par la sauvegarde.
+Vous pouvez sélectionner l'instance à sauvegarder.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **L'ordonnancement** 
+#### **Le planning** 
 
-Il s'agit de définir la fréquence des sauvegardes. Deux options par défaut sont proposées :
+Vous pouvez définir une planification de sauvegarde personnalisée ou choisir l'une des fréquences par défaut :
 
-* Une sauvegarde tous les jours avec un historique de 7 jours maximum.
-* Une sauvegarde tous les jours avec un historique de 14 jours maximum.
+- Sauvegarde quotidienne avec rétention des 7 dernières sauvegardes
+- Sauvegarde quotidienne avec rétention des 14 dernières sauvegardes
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
-    
-#### **Le nommage** 
+#### **Le nom** 
 
-Il s'agit simplement de donner un nom à la tâche de sauvegarde.
+Entrez un nom pour la planification de la sauvegarde automatique. Prenez connaissance des informations de tarification et créez le planning avec `Confirmer`{.action}.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-Une fois celle-ci créée, elle sera disponible dans la rubrique `Workflow Management`{.action} :
+### Gestion des sauvegardes et des plannings
+
+Les planifications peuvent être créées et supprimées dans la section Public Cloud `Workflow Management`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Les sauvegardes seront disponibles dans la rubrique `Instance Backup`{.action} et facturés en tant que tel.
+Les sauvegardes de vos instances sont gérées dans la section Public Cloud `Instance Backup`{.action}.
 
+![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](https://docs.ovh.com/fr/public-cloud/creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/).
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Créer / restaurer un serveur virtuel a partir d’une sauvegarde](https://docs.ovh.com/fr/public-cloud/creer-restaurer-un-serveur-virtuel-a-partir-dune-sauvegarde/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
