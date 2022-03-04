@@ -17,7 +17,7 @@ Si vous configurez votre serveur dédié en tant que serveur DNS, vous pouvez ut
 ## Prérequis
 
 * Disposer d'un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
-* Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} edont vous avez la gestion administrative ou technique.
+* Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} dont vous avez la gestion administrative ou technique.
 * Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 > [!warning]
@@ -63,11 +63,11 @@ Les domaines ajoutés seront répertoriés dans cet onglet et peuvent être supp
 
 ### Vérification de l'autorisation pour le domaine <a name="verificationdomaine"></a>
 
-Il est nécessaire de confirmer votre autorisation à gérer le domaine concerné avant de pouvoir l'ajouter au DNS secondaire OVHcloud. Cela s'effectue via via une recherche DNS automatisée sur le sous-domaine *ownercheck.votrenomdedomaine*. Une chaîne unique de caractères est générée à cette fin et affichée dans l'espace client OVHcloud.
+Il est nécessaire de confirmer votre autorisation à gérer le domaine concerné avant de pouvoir l'ajouter au DNS secondaire OVHcloud. Cela s'effectue via une recherche DNS automatisée sur le sous-domaine *ownercheck.votrenomdedomaine*. Une chaîne unique de caractères est générée à cette fin et affichée dans l'espace client OVHcloud.
 
 - Si le domaine est géré par un bureau d'enregistrement externe ou utilise des serveurs DNS externes à ce stade, connectez-vous à l'espace client de votre fournisseur DNS et ajoutez un enregistrement TXT avec le sous-domaine « ownercheck » et la valeur fournie à l'étape 2 de l'[Ajout de domaine"](#ajoutdomaine).
 
-- Si le domaine est géré par OVHcloud en tant que serveur d'enregistrement et qu'il utilise des serveurs DNS OVHcloud, fermez la fenêtre en cliquant préalablement sur `Annuler`{.action}. Vous pouvez ensuite suivre les instructions de [ce guide](../../domains/editer-ma-zone-dns/) pour ajouter l'enregistrement TXT dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Si le domaine est géré par OVHcloud en tant que serveur d'enregistrement et qu'il utilise des serveurs DNS OVHcloud, fermez la fenêtre en cliquant préalablement sur `Annuler`{.action}. Vous pouvez ensuite suivre les instructions de [ce guide](../../domains/editer-ma-zone-dns/) pour ajouter l'enregistrement TXT dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ![DNS secondaire](images/cp-04.png){.thumbnail}
 
@@ -75,6 +75,6 @@ Après avoir correctement ajouté l'enregistrement TXT à la zone DNS du domaine
 
 ## Aller plus loin
 
-[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud](https://docs.ovh.com/ca/fr/domains/editer-ma-zone-dns/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
