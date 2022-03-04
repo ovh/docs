@@ -1,12 +1,12 @@
 ---
-title: 'Configurer l’agrégation de liens OLA dans votre espace client'
+title: "Configuration de l’agrégation de liens OLA dans votre espace client"
 slug: ola-manager
 excerpt: 'Découvrez comment activer l’agrégation de liens OVHcloud dans votre espace client.'
 section: 'Utilisation avancée'
 order: 1
 ---
 
-**Dernière mise à jour le 15/11/2021**
+**Dernière mise à jour le 04/03/2022**
 
 ## Objectif
 
