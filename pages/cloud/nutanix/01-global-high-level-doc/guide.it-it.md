@@ -12,7 +12,7 @@ order: 01
 
 ## Objective
 
-This page provides an explanation of the elements that constitute a Nutanix Cluster as delivered by OVHcloud and how it functions on the OVHcloud infrastructure.
+This page provides an explanation of the elements that constitute a Nutanix cluster as delivered by OVHcloud and how it functions on the OVHcloud infrastructure.
 
 ### Main characteristics
 

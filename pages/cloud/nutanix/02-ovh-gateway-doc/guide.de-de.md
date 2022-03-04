@@ -85,7 +85,7 @@ To redeploy the gateway VM you will need:
 
 ##### **Check the failover IP address**
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and open the management section of your [vRack](https://www.ovh.de/loesungen/vrack/){.external}. Verify the failover IP address used by the Nutanix Cluster.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) and open the management section of your [vRack](https://www.ovh.de/loesungen/vrack/){.external}. Verify the failover IP address used by the Nutanix cluster.
 
 ![ip failover](images/check_subnet0.png){.thumbnail}
 
