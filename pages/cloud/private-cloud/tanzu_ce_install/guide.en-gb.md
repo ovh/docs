@@ -6,7 +6,7 @@ section: Tanzu
 order: 01
 ---
 
-**Last Updated on 03/03/2022**
+**Last Updated on 04/03/2022**
 
 ## Objective
 
@@ -73,7 +73,7 @@ Browse for the OVA file you downloaded and deploy it.
 
 Once done, right click on the VM and in the `Template`{.action} section, select `Convert to Template`{.action}.
 
-![](images/en24template.png){.thumbnail}
+![](images/en25template.png){.thumbnail}
 
 
 ### Bootstrap VM
