@@ -47,7 +47,7 @@ Se abrirá una ventana en la que podrá gestionar el período de renovación de 
 
 > [!primary]
 >
-> Para una gestión simplificada, la facturación de cada servicio se alinea automáticamente a principios de mes. Para proceder a la alineación y, en su caso, trasladar la fecha de la suscripción, recibirá una factura del servicio por la parte proporcional al período restante.
+> Para una gestión simplificada, la facturación de cada cuenta Email Pro se ajusta automáticamente a principios de mes. Para proceder a la alineación y, en su caso, mover la fecha de suscripción, recibirá una factura de su cuenta Email Pro de la parte proporcional al período restante.
 >
 >Ejemplo: Si el pedido se realiza el 8 de enero con una suscripción mensual, la siguiente facturación se realizará el 8 de febrero. La siguiente factura cubrirá el período comprendido entre el 8 de febrero y el 1 de marzo.
 

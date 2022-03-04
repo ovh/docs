@@ -47,9 +47,9 @@ Aparecerá uma janela, a tabela permite-lhe gerir o período de renovação de c
 
 > [!primary]
 >
-> Para uma gestão simplificada, a faturação de cada serviço é automaticamente alinhada no início do mês. Para efetuar este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura do seu serviço numa base pro rata temporis.
+> Para uma gestão simplificada, a faturação de cada conta Email Pro é automaticamente alinhada no início do mês. Para proceder a este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura da sua conta Email Pro numa base pro rata temporis.
 >
-> Exemplo: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
+>Exemplo: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 

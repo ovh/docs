@@ -47,7 +47,7 @@ Si apre una finestra con la tabella che ti permette di gestire il periodo di rin
 
 > [!primary]
 >
-> Per una gestione semplificata, la fatturazione di ogni servizio viene automaticamente allineata all'inizio del mese. Per effettuare l'allineamento e quindi spostare la data di iscrizione, riceverai una fattura del tuo servizio in base al prorata temporis.
+> Per una gestione semplificata, la fatturazione di ogni account Email Pro viene automaticamente allineata all'inizio del mese. Per effettuare l'allineamento e quindi spostare la data di iscrizione, riceverai una fattura dal tuo account Email Pro, prorata temporis.
 >
 >Esempio: Un ordine effettuato il 08 gennaio con un abbonamento mensile genererà la sua prossima fatturazione il 08 febbraio. La fattura successiva copre il periodo compreso tra il 08 febbraio e il 1o marzo.
 
