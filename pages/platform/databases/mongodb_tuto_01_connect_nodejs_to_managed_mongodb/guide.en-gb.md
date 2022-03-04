@@ -23,13 +23,13 @@ In this tutorial, we will use the Node.js platform to build a **real-time chat a
 
 Before making a connection, we need to verify that our MongoDB instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
 
 ### Step 1: Verify your user roles and password
 
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
-We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use-case.
+We provide official MongoDB built-in roles. Please read the [official MongoDB documentation](https://docs.mongodb.com/manual/reference/built-in-roles/){.external} to select the right roles for your use case.
 
 In our example, we will simply reset the **admin** password.
 
@@ -39,7 +39,7 @@ Once created or updated, the user has to be ready and have the status "Enabled" 
 
 ### Step 2: Authorise incoming connections from the MongoDB client
 
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
+In this step, select the `Authorised IPs`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
 
@@ -210,7 +210,7 @@ var mongoose = require('mongoose');
 
 From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), select the `General Information`{.action} tab. In the `Login Informations` section, copy the `Service URI`.
 
-It should be similar to this when you have a single node (Essential service plan) :
+It should be similar to this when you have a single node (Essential service plan):
 
 ```
 mongodb://<username>:<password>@<hostname>/admin?tls=true
@@ -222,15 +222,15 @@ And like this when you have a MongoDB cluster with multiple nodes, called a repl
 mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
 ```
 
-Here we will use a MongoDB cluster
+Here we will use a MongoDB cluster.
 
-And we will assign a variable, the `Service URI` of our mongodb instance database.
+And we will assign a variable, the `Service URI` of our MongoDB instance database.
 
 ```javascript
 var dbUrl = 'mongodb://<username>:<password>@<host>/admin?replicaSet=replicaset&tls=true'
 ```
 
-Mongoose will connect to the mongodb database with the connect method:
+Mongoose will connect to the MongoDB database with the connect method:
 
 ```javascript
 mongoose.connect(dbUrl , (err) => {   
@@ -256,7 +256,7 @@ Install it using the following command:
 npm install -s body-parser
 ```
 
-Add the following codes to **server.js:**
+Add the following code to **server.js:**
 
 ```javascript
 var bodyParser = require('body-parser')  
@@ -334,7 +334,7 @@ To solve this we can add a push notification system that will send messages from
 
 ### Socket.io
 
-Socket.IO is a JavaScript library for real-time web applications. It enables real-time, bi-directional communication between web clients and server and has two parts: a client-side library that runs in the browser and a server-side library for Node.js. Socket.io enables real-time bidirectional event-based communication.
+Socket.io is a JavaScript library for real-time web applications. It enables real-time, bi-directional communication between web clients and server and has two parts: a client-side library that runs in the browser and a server-side library for Node.js. Socket.io enables real-time bi-directional event-based communication.
 
 To install socket.io:
 
@@ -394,7 +394,7 @@ So each time a message is posted, the server will update the messages in the mes
 
 ![NodeJS Chat App second user](images/mongodb_tuto_01_connect_nodejs_to_managed_mongodb-20220215104535750.png)
 
-Great! You now have a nodeJS chat application up and running, with messages stored on a MongoDB cluster. Reach out [official NodeJS tutorials](https://nodejs.dev/learn) for more use cases.
+Great! You now have a nodeJS chat application up and running, with messages stored on a MongoDB cluster. Reach out to [official NodeJS tutorials](https://nodejs.dev/learn) for more use cases.
 
 
 ## Attachments
