@@ -44,7 +44,7 @@ We are now ready to learn how to connect to our PostgreSQL instance.
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -135,7 +135,7 @@ Once saved, select your server in the servers list on the left. In the Dashboard
 
 > [!primary]
 >
-> pgAdmin has [usefull functions](https://pgadmin.org/features){.external} such as:
+> pgAdmin has [useful functions](https://pgadmin.org/features){.external} such as:
 >
 > - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/6.4/backup_and_restore.html){.external} a single table, a schema, or a complete database
 > - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/6.4/role_dialog.html){.external}
