@@ -56,25 +56,25 @@ Création d'un ordinateur virtuel pour permettant l'installation de  Windows ser
 
 Dans **Prism Central** dans le menu de gauche dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
-![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG)
+![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG){.thumbnail}
 
 Cliquez sur `Create VM`{.action}
 
-![Tableau de Bord Prism Central - Gestion des VMs ](images/PrismCentralDashVmDashBoard.PNG)
+![Tableau de Bord Prism Central - Gestion des VMs ](images/PrismCentralDashVmDashBoard.PNG){.thumbnail}
 
 Saisissez un nom dans `Name`{.action}, Choisissez les options dans dans `VM Properties`{.action} et cliquez sur `Next`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG)
+![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG){.thumbnail}
 
 Ajout d'un disques système
 
 Cliquez sur `Attach Disk`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 2](images/CreateVM02.PNG)
+![Création d'un Ordinateur virtuel - Etape 2](images/CreateVM02.PNG){.thumbnail}
 
 Saisissez 60 `Capacity`{.action} et cliquez sur `Save`{.action} pour créer un disque de 60 Go.
 
-![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG)
+![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG){.thumbnail}
 
 Ajout de 'image ISO de l'installation de Windows Server 2022.
 
@@ -84,7 +84,7 @@ Pour plus de détails sur *L'importation d'images* reportez-vous à la section �
 
 Cliquez sur `Attach Disk`{.action}.
 
-![Création d'un Ordinateur virtuel - Etape 4](images/CreateVM04.PNG)
+![Création d'un Ordinateur virtuel - Etape 4](images/CreateVM04.PNG){.thumbnail}
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
@@ -92,43 +92,43 @@ Ajout de l'image ISO des pilotes spécifiques à *Ahv* notamment le pilote du co
 
 Cliquez sur `Save`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 5](images/CreateVM05.PNG)
+![Création d'un Ordinateur virtuel - Etape 5](images/CreateVM05.PNG){.thumbnail}
 
 Cliquez `Attach Disk`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG)
+![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**
 
 Cliquez sur `Save`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 7](images/CreateVM07.PNG)
+![Création d'un Ordinateur virtuel - Etape 7](images/CreateVM07.PNG){.thumbnail}
 
 Configuration du réseau.
 
 Cliquez sur `Attach Subnet`{.action}.
 
-![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG)
+![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![Création d'un Ordinateur virtuel - Etape 9](images/CreateVM09.PNG)
+![Création d'un Ordinateur virtuel - Etape 9](images/CreateVM09.PNG){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Création d'un Ordinateur virtuel - Etape 10](images/CreateVM10.PNG)
+![Création d'un Ordinateur virtuel - Etape 10](images/CreateVM10.PNG){.thumbnail}
 
 Dans timezone choisissez le fuseau horaire de votre pays. `zone`{.action} et cliquez sur `Next`{.action}.
 
-![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG).
+![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG){.thumbnail}
 
 Cliquez sur `Create VM`{.action}
 
-![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG)
+![Création d'un Ordinateur virtuel - Etape 12](images/CreateVM12.PNG){.thumbnail}
 
 L'ordinateur virtuel nouvellement créé apparait dans le tableau de bord.
 
-![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG).
+![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG){.thumbnail}.
  
 ### Installation de Windows Server 2022
 
@@ -136,99 +136,99 @@ Sélection de l'ordinateur virtuel sur lequel Windows Server 2022 sera installé
 
 Cliquez sur `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}.
 
-![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG)
+![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG){.thumbnail}
 
 Démarrage de l'ordinateur virtuel.
 
 Cliquez sur `Menu action`{.action} et Cliquez sur `Power ON`{.action}
 
-![Installation - WS2022 - Démarrage ](images/InstallWS2022-02.PNG)
+![Installation - WS2022 - Démarrage ](images/InstallWS2022-02.PNG){.thumbnail}
 
 Lancement de la console.
 
 Cliquez sur `Menu action`{.action} et Cliquez sur `Launch Console`{.action}
 
-![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG)
+![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG){.thumbnail}
 
 Lancement de l'installation .
 
 Cliquez sur `Next`{.action}
 
-![Installation - WS2022 - Etape1](images/InstallWS2022-04.PNG)
+![Installation - WS2022 - Etape1](images/InstallWS2022-04.PNG){.thumbnail}
 
 Cliquez sur `Install now`{.action}.
 
-![Installation - WS2022 - Etape2](images/InstallWS2022-05.PNG)
+![Installation - WS2022 - Etape2](images/InstallWS2022-05.PNG){.thumbnail}
 
 Cliquez sur `Windows Server 2022 Standard (Desktop Experience)`{.action} 
 
 Ensuite Cliquez sur `Next`{.action}.
 
-![Installation - WS2022- Etape3](images/InstallWS2022-06.PNG)
+![Installation - WS2022- Etape3](images/InstallWS2022-06.PNG){.thumbnail}
 
 Séléctionnez `I accept etc...`{.action} et cliquez sur `Next`{.action}.
 
-![Installation - WS2022](images/InstallWS2022-07.PNG)
+![Installation - WS2022](images/InstallWS2022-07.PNG){.thumbnail}
 
 Cliquez sur `Load driver`{.action}.
 
-![Installation - WS2022- Etape4](images/InstallWS2022-08.PNG)
+![Installation - WS2022- Etape4](images/InstallWS2022-08.PNG){.thumbnail}
 
 Cliquez sur `Browse`{.action}.
 
-![Installation - WS2022- Etape5](images/InstallWS2022-09.PNG)
+![Installation - WS2022- Etape5](images/InstallWS2022-09.PNG){.thumbnail}
 
 Selectionnez le bon dossier et cliquez sur `OK`{.action}.
 
-![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG)
+![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG){.thumbnail}
 
 Cliquer sur `Next`{.action}.
 
-![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG)
+![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG){.thumbnail}
 
 Le disque de 60 Gb apparait, cliquez sur `Next`{.action}.
 
-![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG)
+![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG){.thumbnail}
 
 Attendre la fin de l'installation.
 
-![Installation - WS2022- Etape7](images/InstallWS2022-13.PNG)
+![Installation - WS2022- Etape7](images/InstallWS2022-13.PNG){.thumbnail}
 
-![Installation - WS2022- Etape8](images/InstallWS2022-14.PNG)
+![Installation - WS2022- Etape8](images/InstallWS2022-14.PNG){.thumbnail}
 
-![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG)
+![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
 
 Saisissez le mot de passe dans `Password`{.action} et `Reenter password`{.action}.
 
 Ensuite Cliquez sur `Finish`{.action}.
 
-![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG)
+![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG){.thumbnail}
 
 Allez dans le gestionnaire de périphérique pour installer le pilote de la carte réseau et un pilote système spécifique à **Ahv**.
 
 Faites `Clic droit sur Ethernet Controller`{.action} et cliquez sur `Update Driver`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 1](images/InstallWS2022-17.PNG)
+![Post Installation - WS2022- Pilotes Etape 1](images/InstallWS2022-17.PNG){.thumbnail}
 
 Selectionnez le dossier **E:\NetKVM\2k16\amd64** et cliquez sur `Next`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-18.PNG)
+![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-18.PNG){.thumbnail}
 
 Cliquez sur `Install`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-19.PNG)
+![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-19.PNG){.thumbnail}
 
 Faites `Clic droit sur PCI Device dans Other Devices`{.action} et cliquez sur `Update Driver`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 2](images/InstallWS2022-20.PNG)
+![Post Installation - WS2022- Pilotes Etape 2](images/InstallWS2022-20.PNG){.thumbnail}
 
 Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG)
+![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG){.thumbnail}
 
 Pour finir l'installation Cliquez sur `Close`{.action}.
 
-![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG)
+![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
 
 Maintenant que l'installation du système d'exploitation et des pilotes spécifiques à **Ahv** est terminée il faut installer les **Ngt (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
 
@@ -236,41 +236,41 @@ Avant de lancer l'installation des **Ngt** s'assurer que sur l'ordinateur virtue
 
 Lancez la console de l'ordinateur virtuel et Faites un `click droit sur un lecteur de CDROM`{.action} et Cliquez sur `Eject`{.action}.
 
-![NGT Installation 1](images/Ngt-Installation01.png)
+![NGT Installation 1](images/Ngt-Installation01.png){.thumbnail}
 
 Revenez dans Prism Central `Selectionnez l'ordinateur virtuel`{.action}.
 
-![NGT Installation 2](images/Ngt-Installation02.png)
+![NGT Installation 2](images/Ngt-Installation02.png){.thumbnail}
 
 Cliquez dans le menu `Actions`{.action} et cliquez `Install NGT`{.action}.
 
-![NGT Installation 3](images/Ngt-Installation03.png)
+![NGT Installation 3](images/Ngt-Installation03.png){.thumbnail}
 
 Dans la fenêtre Install NGT cliquez sur `Confirm & Enter Password`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation04.png)
+![NGT Installation 4](images/Ngt-Installation04.png){.thumbnail}
 
 Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation05.png)
+![NGT Installation 4](images/Ngt-Installation05.png){.thumbnail}
 
 Revenez dans la console de l'ordintateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}.
 
 Choisir `Install Nutanix Guest Tools`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation06.png)
+![NGT Installation 4](images/Ngt-Installation06.png){.thumbnail}
 
 Choisir `I agree to the Etc...`{.action} et cliquez sur `Install`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation07.png)
+![NGT Installation 4](images/Ngt-Installation07.png){.thumbnail}
 
 Laissez finir l'installation.
 
-![NGT Installation 4](images/Ngt-Installation08.png)
+![NGT Installation 4](images/Ngt-Installation08.png){.thumbnail}
 
 Pour finir l'installation cliquez sur `Close`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation09.png)
+![NGT Installation 4](images/Ngt-Installation09.png){.thumbnail}
 
 L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
