@@ -47,9 +47,9 @@ Im neuen Fenster können Sie den Verlängerungszeitraum jedes Accounts über die
 
 > [!primary]
 >
-> Für eine vereinfachte Verwaltung wird die Abrechnung jedes Dienstes am Anfang des Monats automatisch angepasst. Um diese Anpassung vorzunehmen und das Abonnement gegebenenfalls zu verschieben, erhalten Sie eine anteilige Rechnung Ihrer Dienstleistung.
+> Für eine vereinfachte Verwaltung wird die Abrechnung jedes Dienstes automatisch auf den Ersten des Monats angepasst. Um diese Anpassung vorzunehmen und das Abonnement gegebenenfalls zu verschieben, erhalten Sie eine anteilige Rechnung zu Ihrer Dienstleistung.
 >
-> Beispiel: Eine Bestellung, die am 08. Januar mit einem monatlichen Abo getätigt wird, zieht die nächste Abrechnung am 08. Februar nach sich. Die nächste Rechnung betrifft den Zeitraum vom 08. Februar bis zum 1. März.
+> Beispiel: Eine Bestellung, die am 08. Januar mit monatlichem Abonnement ausgeführt wird, zieht die nächste Abrechnung am 08. Februar nach sich. Die nächste Rechnung betrifft den Zeitraum vom 08. Februar bis zum 01. März.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
