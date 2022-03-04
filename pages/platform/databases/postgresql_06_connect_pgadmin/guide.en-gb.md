@@ -12,7 +12,7 @@ order: 303
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a PostgreSQL database instance with one of the world's most famous Open Source management tool for Postgres: pgAdmin.**
+**This guide explains how to connect to a PostgreSQL database instance with one of the world's most famous Open Source management tool for PostgreSQL: pgAdmin.**
 
 ## Requirements
 
@@ -26,7 +26,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 A PostgreSQL instance can be managed through multiple ways.
 One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-php/) or [Python](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-python/).
 
-Another way is to interact directly using a management tool for Postgres: pgAdmin.
+Another way is to interact directly using a management tool for PostgreSQL: pgAdmin.
 
 In order to do so, we will need to install pgAdmin, then configure our Public Cloud Databases for PostgreSQL instances to accept incoming connections, and finally configure pgAdmin 4.
 
@@ -108,7 +108,7 @@ Once logged in pgAdmin, from the Servers dashboard view select `Add new server`{
 
 In the **Create - Server** dialog of the `General`{.action} tab, fill in the Name field.
 
-![Create - Server : General tab](images/postgresql_06_connect_pgadmin-20220204140701739.png)
+![Create - Server General tab](images/postgresql_06_connect_pgadmin-20220204140701739.png)
 
 Then select the `Connection`{.action} tab and fill in the following fields with the collected credentials:
 
@@ -118,15 +118,15 @@ Then select the `Connection`{.action} tab and fill in the following fields with 
 - Username
 - Password
 
-![Create - Server : Connection tab](images/postgresql_06_connect_pgadmin-20220204140939712.png)
+![Create - Server Connection tab](images/postgresql_06_connect_pgadmin-20220204140939712.png)
 
-Finally select the `SSL`{.action} tab and set the **SSL Mode** to **Require**.
+Finally, select the `SSL`{.action} tab and set the **SSL Mode** to **Require**.
 
-![Create - Server : SSL tab](images/postgresql_06_connect_pgadmin-20220204141355524.png)
+![Create - Server SSL tab](images/postgresql_06_connect_pgadmin-20220204141355524.png)
 
 > [!primary]
 >
-> If needed you can adjust the connection timeout in the `Advanded`{.action} tab.
+> If needed you can adjust the connection timeout in the `Advanced`{.action} tab.
 >
 
 Once saved, select your server in the servers list on the left. In the Dashboard view, you can observe that the connection is active:
