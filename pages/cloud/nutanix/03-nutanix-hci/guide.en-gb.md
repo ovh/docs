@@ -10,7 +10,7 @@ order: 03
 
 ## Objective
 
-This document details the operation of a Nutanix hyperconvergence solution and describes the Prim Central and PRISM element interfaces.
+This document details the operation of a Nutanix hyperconvergence solution and describes the Prism Central and PRISM element interfaces.
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -20,8 +20,8 @@ This document details the operation of a Nutanix hyperconvergence solution and d
 
 ## Requirements
 
-- a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Technical solution overview
 
@@ -29,12 +29,12 @@ This document details the operation of a Nutanix hyperconvergence solution and d
 
 A Nutanix solution consists of so-called nodes. In practice, a node is a physical computer. On this computer, we find:
 
-* One system disk or two system disks in RAID. The AHV hypervisor is installed on this system disk. 
-* An SSD or CVM (a virtual machine that provides connections between each node and is an essential component of the Nutanix solution) is stored. Any remaining disk space may be used for data storage.
-* Other SSD or SAS disks, with a different licence cost depending on the chosen storage technology.
-* One or more processors.
-* Memory.
-* Sometimes a **GPU** (*Graphical Processor Unit*) graphics card.
+- One system disk or two system disks in RAID. The AHV hypervisor is installed on this system disk. 
+- An SSD or CVM (a virtual machine that provides connections between each node and is an essential component of the Nutanix solution) is stored. Any remaining disk space may be used for data storage.
+- Other SSD or SAS disks, with a different licence cost depending on the chosen storage technology.
+- One or more processors.
+- Memory.
+- Sometimes a **GPU** (*Graphical Processor Unit*) graphics card.
 
 Ideally, each node in a Nutanix cluster should be identical. There may be differences, especially when a GPU is present. However, nodes that contain storage must be identical.
 
@@ -50,8 +50,8 @@ As a reminder, the OVHcloud Nutanix solution starts from 3 nodes and can go up t
 Data redundancy is not done on one node as with RAID, but across the network on multiple nodes.<br>
 There are several levels of redundancy:
 
-* RF2 data is available on 2 nodes, allowing a node or data disk to fail on one of the nodes.
-* RF3: Data is available on 3 nodes. This solution is only possible from 5 nodes, it is more secure as it allows the loss of two nodes with a smaller storage capacity.
+- RF2: Data is available on 2 nodes, allowing a node or data disk to fail on one of the nodes.
+- RF3: Data is available on 3 nodes. This solution is only possible from 5 nodes, it is more secure as it allows the loss of 2 nodes with a smaller storage capacity.
 
 ### Virtualisation Overview
 
@@ -64,10 +64,10 @@ If a node fails, the virtual machines reboot on one of the nodes.
 
 ### List of Nutanix cluster connection options
 
-* From the Prism Central web interface (an additional virtual machine that has features that Prism Element does not have and that can connect to one or more clusters).
-* On the Prism ELEMENT web interface (actually one of the CVMs).
-* Via SSH on the cluster (in this case, it is also one of the CVMs).
-* Via SSH on one of the cluster nodes for hypervisor maintenance operations.
+- From the Prism Central web interface (an additional virtual machine that has features that Prism Element does not have and that can connect to one or more clusters).
+- On the Prism ELEMENT web interface (actually one of the CVMs).
+- Via SSH on the cluster (in this case, it is also one of the CVMs).
+- Via SSH on one of the cluster nodes for hypervisor maintenance operations.
 
 Through Prism Central and Prism Element, it is possible to use the RESTAPI interface to automate some command line tasks.
 
@@ -79,11 +79,11 @@ Now that the Nutanix solution has been introduced, we will connect to Nutanix's 
 
 We will connect via Prism Central which is the entry point, from the Internet, into the solution offered by OVHcloud.
 
-Access to the cluster is via a public address such as <https://FQDN:9440>. This address is provided to you when you create a Nutanix cluster with OVHcloud.
+Access to the cluster is via a public address such as `https://FQDN:9440`. This address is provided to you when you create a Nutanix cluster with OVHcloud.
 
 ![Interface Prism Central - Login](images/PrismCentralUsername.PNG){.thumbnail}
 
-Enter your user name and password and click the arrow.
+Enter your username and password and click the arrow.
 
 ![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG){.thumbnail}
 
@@ -97,7 +97,7 @@ You will then access your cluster’s dashboard.
 
 To the right is the total number of disks, the number of VMs, and the number of hosts.<br>
 A green heart indicates that the Nutanix cluster is functioning correctly.<br>
-At the bottom of this section, you will see the fault tolerance level (1 means we are in RF2 with the possibility of a disk loss on a node or an entire node).
+At the bottom of this section, you will see the fault tolerance level (1 means we are in RF2 with the possibility of a disk loss on a node or failure of an entire node).
 
 A summary of the storage and available disk space is displayed on the left.<br>
 Click `View Details`{.action} for more information about storage.
