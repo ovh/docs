@@ -45,7 +45,7 @@ In the new window, the table allows you to manage the renewal period for each ac
 >
 > For simplified management, the billing for each service is automatically aligned at the beginning of the month. To complete this alignment, and move the subscription date if applicable, you will receive a bill for your service on a pro rata basis.
 >
->Example: An order placed on 08 January with a monthly subscription will be billed again on 08 February. The following invoice will cover the period between February 08 and March 1.
+>Example: An order placed on 08 January with a monthly subscription will be billed again on 08 February. The following invoice will cover the period between February 08 and March 1st.
 
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
