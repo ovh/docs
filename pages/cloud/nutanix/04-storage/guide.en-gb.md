@@ -21,11 +21,11 @@ This guide will show you how to create a **storage container** and a **volume gr
 
 ## Requirements
 
-- a Nutanix cluster in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- You must be connected to the cluster via the Prism Element web interface
+- A Nutanix cluster in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Being connected to the cluster via the Prism Element web interface
 
-## Overview of Storage operations in a Nutanix cluster
+## Overview of storage operations in a Nutanix cluster
 
 When a Nutanix cluster is created, the system connects all the nodes' disks in a **Storage Pool**. It is not recommended to have multiple Storage Pools.
 
@@ -35,8 +35,8 @@ The data is not stored directly in the Storage Pool, it is stored in **Storage C
 
 There are also **Volume Groups** that provide the ability to access via ISCSI or directly in SCSI simulation for:
 
-* a third-party computer outside the cluster, or a cluster VM
-* multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in Cluster mode.
+- A third-party computer outside the cluster or a cluster VM
+- Multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in Cluster mode
 
 ## Instructions
 
