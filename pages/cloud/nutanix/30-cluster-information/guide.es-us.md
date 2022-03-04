@@ -1,6 +1,8 @@
 ---
 title: Obtener los datos de estado de su instalación Nutanix (EN)
 slug: nutanix-cluster-information
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-cluster-information/'
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
 section: Troubleshooting
 order: 01
