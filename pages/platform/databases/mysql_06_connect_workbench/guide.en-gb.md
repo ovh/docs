@@ -42,7 +42,7 @@ Once you have downloaded and installed it, follow the steps below to set up a re
 
 Before making a connection, we need to verify that our MySQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your MySQL instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -60,7 +60,7 @@ GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
 
 #### Step 2: Authorise incoming connections from the MySQL client
 
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
+In this step, select the `Authorised IPs`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
 
@@ -114,7 +114,7 @@ Congratulations, in the `Schemas`{.action} tab, you will see your databases.
 
 > [!primary]
 >
-> Once connected, MySQL Workbench facilitate many actions such as querying your databases, manage used or even import data. Please read the official documentation to discover the whole feature list : <https://www.mysql.com/products/workbench/features.html>
+> Once connected, MySQL Workbench facilitatec many actions such as querying your databases and managing used or even import data. Please read the official documentation to discover the whole feature list: <https://www.mysql.com/products/workbench/features.html>.
 >
 
 ## Go further
