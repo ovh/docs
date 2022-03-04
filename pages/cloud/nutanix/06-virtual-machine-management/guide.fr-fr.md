@@ -28,7 +28,7 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter des licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
 
 OVHcloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
 
@@ -106,7 +106,7 @@ Cliquez sur `Save`{.action}
 
 Configuration du réseau.
 
-Cliquez sur `Attach Subnet`{.action}.
+Laissez tel quel et Cliquez sur `Attach Subnet`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG){.thumbnail}
 
@@ -178,7 +178,7 @@ Cliquez sur `Browse`{.action}.
 
 ![Installation - WS2022- Etape5](images/InstallWS2022-09.PNG){.thumbnail}
 
-Selectionnez le bon dossier et cliquez sur `OK`{.action}.
+Selectionnez le bon dossier `e:\vioscsi\2k16\amd64`et cliquez sur `OK`{.action}.
 
 ![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG){.thumbnail}
 
@@ -254,7 +254,7 @@ Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
 
 ![NGT Installation 4](images/Ngt-Installation05.png){.thumbnail}
 
-Revenez dans la console de l'ordintateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}.
+Revenez dans la console de l'ordinateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}.
 
 Choisir `Install Nutanix Guest Tools`{.action}.
 
@@ -268,7 +268,7 @@ Laissez finir l'installation.
 
 ![NGT Installation 4](images/Ngt-Installation08.png){.thumbnail}
 
-Pour finir l'installation cliquez sur `Close`{.action}.
+A la fin de l'installation cliquez sur `Close`{.action}.
 
 ![NGT Installation 4](images/Ngt-Installation09.png){.thumbnail}
 
@@ -276,7 +276,7 @@ L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
 ### Création d'un SNAPSHOT
 
-
+Un snapshot est une image
 
 ### Migration d'une VM
 

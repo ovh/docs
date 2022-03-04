@@ -68,6 +68,17 @@ Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distr
 
 Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/products/software-options).
 
+### En résumé
+
+Ci dessous se trouve un petit tableau récapitulatif des deux offres Nutanix OVHcloud :
+
+| Offre commercial OVHcloud     | Détail de l'offre             |
+| ----------------------------- | ----------------------------- |
+| **OVHcloud Nutanix Standard** | **AOS Pro**                   |
+|                               | **Volumes block storage**     | 
+| **OVHcloud Nutanix Advanced** | **AOS Ultimate**              |
+|                               | **Volumes block storage**     |  
+
 
 ## Aller plus loin
 
