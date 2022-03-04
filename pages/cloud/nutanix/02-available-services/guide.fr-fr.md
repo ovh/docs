@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Présentation de l'offre commerciale d'OVHcloud.
+Présentation des fonctionnalités Nutanix incluses dans l'offre Hosted Private Cloud powered by Nutanix
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -18,18 +18,18 @@ Présentation de l'offre commerciale d'OVHcloud.
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-## Présentation de l'offre commerciale Nutanix OVHcloud
+## Périmètre des fonctionalités Nutanix incluses dans l'offre Hosted Private Cloud powered by Nutanix
 
-La solution de Nutanix OVHcloud n'inclut pas tous les produits des Offres Nutanix classiques (Pro et Ultimate). Seules celles qui apparaissent sur cette page sont disponibles.
+Seules les fonctionnalités Nutanix listées sur cette page sont disponibles dans l'offre Hosted Private Cloud powered by Nutanix. Si la fonctionalité que vous cherchez n'est pas disponible, nous vous invitons à consulter la roadmap [GitHub Hoster Private Cloud] (https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
 
-OVHcloud propose deux choix de licences :
+Hosted Private Cloud powered by Nutanix offre deux pack de licences :
 
-* **Nutanix Standard Pack**.
-* **Nutanix Advanced Pack** avec les mêmes options que **Nutanix Standard Pack** et d'autres options supplémentaires comme une réplication plus performante, des possibilités de cryptage de données avancées et des options de plan de reprises d'activités. 
+* **Nutanix Standard Pack**
+* **Nutanix Advanced Pack** qui reprend les fonctionnalités du **Nutanix Standard Pack** auxquelles viennent s'ajouter des fonctionnalités supplémentaires telles que la réplication plus performante, des possibilités de cryptage de données avancées et des options de plan de reprises d'activités. 
 
-### Options communes aux deux offres
+### Socle de fonctionalités communes aux deux packs de licences
 
-Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
+Les options qui sont communes aux deux packs de licences sont les suivantes :
 
 - **Nutanix Cloud Infrastructure (NCI)** anciennement **Hybrid Cloud Infrastructure** 
     + **AHV Virtualization** : Virtualisation intégrée dans NUTANIX [Présentation de Nutanix AHV](https://www.nutanix.com/products/ahv)
@@ -46,44 +46,27 @@ Les options qui sont communes aux deux offres OVHcloud sont les suivantes :
 
     + **X-ray** : Ensemble d'outils de test et de benchmark sur les principales solutions d'hyperconvergences [Présentation Nutanix de X-Ray](https://www.nutanix.com/products/x-ray).
     + **Move** :  Outil de migration vers Nutanix [Présentation Nutanix de MOVE](https://www.nutanix.com/products/move).
-    + **Lcm** : Outil de mise à jour des clusters [Présentation de LCM](https://www.nutanix.com/products/life-cycle-manager).
+    + **LCM** : Outil de mise à jour des clusters [Présentation de LCM](https://www.nutanix.com/products/life-cycle-manager).
 
-### Divergences entre la version **Nutanix Standard** et **Nutanix Advanced**
+### Fonctionnalités complémentaires disponibles avec le pack de licence **Nutanix Standard**
 
-Les différences se situent au niveau d'**AOS Storage** anciennement **AOS Distributed Storage**.
+**Nutanix Standard** inclu la version **AOS Pro** de la fonctionnalité **AOS Storage** anciennement **AOS Distributed Storage**, qui permet de :
+- Gérer le stockage distribué
+- Faire de l'orchestration avancé
+- De la réplication Asynchrone avec un *RPO* (Recovery Point Objective) d'une heure
 
-**Nutanix Standard** utilise la version **AOS Pro** qui permet de :
-- Gérer le stockage distribué.
-- Faire de l'orchestration avancé.
-- De la réplication Asynchrone avec un *RPO* (Recovery Point Objective) d'une heure.
+### Fonctionalités supplémentaires disponibles avec le pack de licence **Nutanix Advanced**
 
-**Nutanix Advanced** utilise la version **AOS Ultimate** qui permet en plus des options standards :
-- Une réplication avancée avec une meilleur résilience entre cluster.
-    + **Nearsync replication** avec un **RPO** à 20 secondes.
-    + **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continue.
-    + **Sync replication** avec un **RPO** à 0 secondes.
+**Nutanix Advanced** inclu la version **AOS Ultimate** de la fonctionnalité **AOS Storage** anciennement **AOS Distributed Storage**, qui ajoute, en plus des fonctionnalités standards :
+- Une réplication avancée avec une meilleur résilience entre cluster
+    + **Nearsync replication** avec un **RPO** à 20 secondes
+    + **Metro Availability** avec un **RPO** à 0 secondes et possible utilisation en continue
+    + **Sync replication** avec un **RPO** à 0 secondes
 - et une meileure sécurité
-    + **Software encryption at rest** cryptage logiciel.
-    + **Native KVM** gestion des clés de cryptage.   
+    + **Software encryption at rest** cryptage logiciel
+    + **Native KVM** gestion des clés de cryptage
 
 Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/products/software-options).
-
-### En résumé
-
-Ci dessous se trouve un petit tableau récapitulatif des deux offres Nutanix OVHcloud :
-
-| Offre commerciale OVHcloud    | Détail de l'offre             |
-| ----------------------------- | ----------------------------- |
-| **OVHcloud Nutanix Standard** | **AOS Pro**                   
-|                               |  **Volumes block storage**      
-|                               | **AHV Virtualization**        
-|                               | **Nutanix Kubernetes Engine**  
-|                               | **Intelligent operation**     
-|                               | **Flow**                      |
-| **OVHcloud Nutanix Advanced** | **AOS Ultimate**              |
-|                               | **Volumes block storage**     |
-
-
 
 
 ## Aller plus loin
