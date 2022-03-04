@@ -45,6 +45,12 @@ Pojawi się okno. W tabeli możesz zarządzać czasem odnowienia każdego konta.
 - **Roczny**: Płatności za 12 miesięcy w dniu wskazanym w kolumnie **Data wygasania**
 - **Brak**: konto zostanie zawieszone, a następnie usunięte w dniu wskazanym w kolumnie **Data wygasania**
 
+> [!primary]
+>
+> W przypadku uproszczonego zarządzania, fakturowanie każdej usługi jest automatycznie dostosowywane na początku miesiąca. Aby to wyrównać i przenieść w razie potrzeby datę abonamentu, otrzymasz fakturę za usługę z proporcjonalną opłatą za czas nieokreślony.
+>
+>Przykład: Następne zamówienie złożone w dniu 08 stycznia wraz z abonamentem miesięcznym wiąże się z opłaceniem w dniu 08 lutego. Poniższa faktura będzie dotyczyć okresu od 08 lutego do 1 marca.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Kliknij `Dalej`{.action}, aby przejść do podsumowania żądanych zmian, a następnie kliknij `Zatwierdź`{.action}, aby potwierdzić wybór.
