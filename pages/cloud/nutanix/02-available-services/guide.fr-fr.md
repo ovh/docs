@@ -72,12 +72,18 @@ Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Option
 
 Ci dessous se trouve un petit tableau récapitulatif des deux offres Nutanix OVHcloud :
 
-| Offre commercial OVHcloud     | Détail de l'offre             |
+| Offre commerciale OVHcloud    | Détail de l'offre             |
 | ----------------------------- | ----------------------------- |
-| **OVHcloud Nutanix Standard** | **AOS Pro**                   |
-|                               | **Volumes block storage**     | 
+| **OVHcloud Nutanix Standard** | **AOS Pro**                   
+|                               |  **Volumes block storage**      
+|                               | **AHV Virtualization**        
+|                               | **Nutanix Kubernetes Engine**  
+|                               | **Intelligent operation**     
+|                               | **Flow**                      |
 | **OVHcloud Nutanix Advanced** | **AOS Ultimate**              |
-|                               | **Volumes block storage**     |  
+|                               | **Volumes block storage**     |
+
+
 
 
 ## Aller plus loin
