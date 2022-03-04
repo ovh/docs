@@ -13,7 +13,7 @@ order: 02
 
 [Wagtail](https://wagtail.org/){.external} is a free and open source content management system (CMS) written in Python. It is popular amongst websites using the [Django framework](https://www.djangoproject.com/){.external}.
 
-In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/en-gb/public-cloud/postgresql/).
+In this tutorial, we are going to show you how to install [Wagtail](https://wagtail.org/){.external} and how to connect it to the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} [database service](https://www.ovhcloud.com/en-gb/public-cloud/postgresql/).
 
 ## Requirements
 
@@ -31,7 +31,7 @@ In this tutorial, we are going to show you how to install [Wagtail](https://wagt
 
 Before making a connection, we need to verify that our PostgreSQL instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=G) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your PostgreSQL instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=G) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance.
 
 ### Step 1: Verify your user roles and password
 
@@ -181,11 +181,11 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
 
-If everything worked, <http://127.0.0.1:8000> will show you a welcome page:
+If everything worked, `http://127.0.0.1:8000` will show you a welcome page:
 
 ![Wagtail welcome page](images/postgresql_tuto_02_connect_wagtail_to_managed_postgresql-2022021414341293.png){.thumbnail}
 
-You can now access the administrative area at <http://127.0.0.1:8000/admin>:
+You can now access the administrative area at `http://127.0.0.1:8000/admin`:
 
 ![Wagtail admin page](images/postgresql_tuto_02_connect_wagtail_to_managed_postgresql-20220215093836579.png)
 
