@@ -1,12 +1,12 @@
 ---
-title: 'Configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Windows Server 2019'
+title: 'Configuration de votre NIC pour la fonctionnalité OVHcloud Link Aggregation sur Windows Server 2019'
 slug: ola-w2k19
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur « Windows Server 2019 »'
 section: 'Utilisation avancée'
 order: 4
 ---
 
-**Dernière mise à jour le 23/03/2021.**
+**Dernière mise à jour le 04/03/2022.**
 
 ## Objectif
 
