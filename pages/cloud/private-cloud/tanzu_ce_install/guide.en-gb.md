@@ -51,13 +51,13 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 - an SNAT rule to translate adress range 172.16.13.1/24 into secondary public IP xxx.xxx.xxx.226 for external access <br>
 ![](images/en03nsxsnat.png){.thumbnail}
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Private Cloud and add the public IPs used to the allowed adresses to connect.<br>
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Private Cloud and add the public IPs to the allowed adresses to connect.<br>
 The adresses should appear as "Authorised and set up".<br>
 ![](images/en00ipsec.png){.thumbnail}
 
 ### Node Template
 
-The TCE clusters require a template to be used to build the nodes. Those can be dowloaded from the [VMware Customer Connect](https://customerconnect.vmware.com/downloads/get-download?downloadGroup=TCE-0100) website. If you do not own an account, you can create one for free.
+The TCE clusters require a template to build the nodes. Those can be dowloaded from the [VMware Customer Connect](https://customerconnect.vmware.com/downloads/get-download?downloadGroup=TCE-0100) website. If you do not own an account, you can create one for free.
 
 Select the latest version of the OVA you need to use and download it locally.
 
@@ -79,12 +79,12 @@ Once done, right click on the VM and in the `Template`{.action} section, select 
 ### Bootstrap VM
 
 Once the Network and template are ready, a Bootstrap VM is needed.<br>
-It will hold the necessary software components (Docker and Kubectl) and pilot the installation of Tanzu.<br>
+It will hold the necessary software components (Docker and Kubectl) and pilot the installation of TCE.<br>
 We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
-VM prerequisites for Tanzu CE is 2 CPUs and 6 GB Ram.<br>
+VM prerequisites for TCE is 2 CPUs and 6 GB Ram.<br>
 You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
 
-Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
+Make sure the VM is set on the VLAN that will be used for the TCE clusters (VLAN13 in our case).<br>
 ![](images/en04bootvlan.png){.thumbnail}
 
 In a terminal window, start with update commands:
@@ -155,7 +155,7 @@ Keep the .ssh/id_rsa.pub file handy as it holds the public key you will need to 
 
 ### Tanzu Management Cluster
 
-The VM is now ready for Tanzu deployment.
+The VM is now ready for TCE deployment.
 
 #### [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
 
@@ -270,7 +270,7 @@ Upon completion, verify tou get a creation message and the nodes are visible in 
 Get the cluster admin credentials for future interactions:
 >tanzu cluster kubeconfig get "clustername" --admin
 
-TCE is now ready for application installs.
+TCE is now ready for application install.
 
 
 ## Go further
