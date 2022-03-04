@@ -13,7 +13,7 @@ order: 01
 VMware Tanzu Community Edition (TCE) is a full-featured, easy-to-manage Kubernetes platform.
 You can deploy the product on an OVHcloud infrastructure to leverage its functionnality and scalability.
 
-**This guide offers a step by step study case to achieve the objective**
+**This guide offers a step by step example of TCE installation**
 
 ## Requirements
 
