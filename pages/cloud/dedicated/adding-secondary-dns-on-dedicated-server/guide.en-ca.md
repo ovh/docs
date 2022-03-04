@@ -29,7 +29,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 ### Adding a domain name <a name="addingdomain"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers**.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
