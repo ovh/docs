@@ -12,7 +12,7 @@ order: 303
 
 Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions.
 
-**This guide explains how to connect to a Redis database instance with the free GUI : RedisInsight.**
+**This guide explains how to connect to a Redis database instance with the free GUI: RedisInsight.**
 
 ## Requirements
 
@@ -24,7 +24,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Concept
 
 A Redis instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Redis - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Redis - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/).
 
 Another way is to interact directly using the GUI: RedisInsight.
 
@@ -44,7 +44,7 @@ We are now ready to learn how to connect to our Redis instance.
 
 Before making a connection, we need to verify that our Redis instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, and select your Redis instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Redis instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -56,13 +56,13 @@ In our example, we will create a user called *redisUser* and right for the *ping
 
 ![User creation](images/redis_06_connect_redisinsight-20220207155917336.png){.thumbnail}
 
-Once created or updated, the user has to be ready and with the "Enabled" status in the control panel.
+Once created or updated, the user has to be ready and with the "Enabled" status in the Control Panel.
 
 ![User ready](images/redis_06_connect_redisinsight-20220207114127502.png){.thumbnail}
 
 #### Step 2: Authorise incoming connections from RedisInsight
 
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
+In this step, select the `Authorised IPs`{.action} tab (Access Control List).
 By default, a Public Cloud Database does not accept any form of connection from the outside world.
 This way we can help prevent intrusive connection attempts.
 
@@ -85,7 +85,7 @@ Select the `General information`{.action} tab to find the required login informa
 
 #### Configuration
 
-Once connected to the RedisInsight interface click on `I already have a database` link:
+Once connected to the RedisInsight interface, click on the `I already have a database` link:
 
 ![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png)
 
@@ -93,11 +93,11 @@ Then on `Connect to a Redis database`:
 
 ![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png)
 
-Fill the form with the previous collected informations. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`:
+Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`:
 
 ![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png)
 
-Finally select your Redis database:
+Finally, select your Redis database:
 
 ![Dashboard](images/redis_06_connect_redisinsight-20220209095424435.png)
 
@@ -107,8 +107,8 @@ Congratulations! You are now connected to your Redis instance!
 
 > [!primary]
 >
-> RedisInsight has usefull features.
-> Learn more about [here](https://redis.com/redis-enterprise/redis-insight/)
+> RedisInsight has useful features.
+> Learn more about them [here](https://redis.com/redis-enterprise/redis-insight/).
 >
 
 ## Go further
