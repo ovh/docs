@@ -24,7 +24,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Concept
 
 A MongoDB instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to MongoDB with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-php/) or [Python](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-python/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to MongoDB with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/) or by using programming languages, such as [PHP](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-php/) or [Python](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-python/).
 
 Another way is to interact directly using a management tool for MongoDB: MongoDB Compass.
 
@@ -101,7 +101,7 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 
 > [!primary]
 >
-> Explore hte [documentation](https://docs.mongodb.com/compass/current/) to view all the features and how to interact with your data
+> Explore the [documentation](https://docs.mongodb.com/compass/current/) to view all the features and how to interact with your data.
 >
 
 ## Go further
@@ -111,8 +111,6 @@ Now you are now interact with your Public Cloud Databases for MongoDB:
 [Managing a MongoDB service from the OVHcloud Control Panel](https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/)
 
 [Configuring vRack for Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)
-
-Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
 Join our community of users on <https://community.ovh.com/en/>.
 
