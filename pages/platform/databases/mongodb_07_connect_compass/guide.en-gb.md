@@ -42,7 +42,7 @@ We are now ready to learn how to connect to our MongoDB instance.
 
 Before making a connection, we need to verify that our MongoDB instance is correctly configured.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MongoDB instance.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your MongoDB instance.
 
 #### Step 1: Verify your user roles and password
 
@@ -91,7 +91,7 @@ mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname nod
 
 ### Connect with MongoDB Compass
 
-In MongoDB Compass fill the connection field with the `Service URI`:
+In MongoDB Compass fill in the connection field with the `Service URI`:
 
 ![New connection](images/new-connection.png)
 
