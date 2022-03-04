@@ -78,201 +78,200 @@ Pour finir, faites un clic droit sur la VM et dans la section `Modèle`{.action}
 
 ### VM de Bootstrap
 
-Once the Network and template are ready, a Bootstrap VM is needed.<br>
-It will hold the necessary software components (Docker and Kubectl) and pilot the installation of Tanzu.<br>
-We'll use an Ubuntu VM but any OS allowing the install of the necessary items would work.<br>
-VM prerequisites for Tanzu CE is 2 CPUs and 6 GB Ram.<br>
-You can deploy a VM [from an ISO](https://docs.ovh.com/gb/en/private-cloud/deploying-a-virtual-machine/) or [from an OVF template](https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/).<br>
+Une fois le réseau et le modèle prêts, une VM de Bootstrap est nécessaire pour les composants logiciels (Docker et Kubectl) et le pilotage de l'installation de TCE.<br>
+Nous utilisons une machine virtuelle sous Ubuntu, mais tout système d'exploitation permettant l'installation des éléments nécessaires est possible.<br>
+Les prérequis pour TCE sont un VM avec 2 CPU et 6 Go de RAM.<br>
+Vous pouvez déployer une VM [depuis un ISO](https://docs.ovh.com/fr/private-cloud/deploiement-d-une-machine-virtuelle/) ou [depuis un modèle OVF](https://docs.ovh.com/fr/private-cloud/deploiement-template-ovh/).<br>
 
-Make sure the VM is set on the VLAN that will be used for the Tanzu clusters (VLAN13 in our case).<br>
+Assurez-vous que la machine virtuelle utilise le VLAN défini pour les clusters TCE (VLAN13 dans notre cas).<br>
 ![](images/en04bootvlan.png){.thumbnail}
 
-In a terminal window, start with update commands:
+Dans une fenêtre de terminal, commencez par entrer les commandes de mise à jour :
 >sudo apt update
-and
+puis
 >sudo apt-get install build-essential
 
-#### [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/) install
+#### Installation [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
 
 >sudo apt-get install ntp
 
-#### [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/) install
+#### Installation [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)
 
-Start with git
+Intallez git
 >sudo apt install git -y
 
-Run the Homebrew install script
+lancez le script d'installation de Homebrew
 >/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Add Homebrew to your path
+Ajoutez Homebrew à votre path
 >eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-Install gcc
+Installez gcc
 >brew install gcc
 
-#### [Docker Engine](https://docs.docker.com/engine/install/) install
+#### Installation [Docker Engine](https://docs.docker.com/engine/install/)
 
-Start with getting the necessary packages
+Commencez par les packages nécessaires
 >sudo apt-get install \ 
 >ca-certificates \ 
 >curl \ 
 >gnupg \ 
 >lsb-release
 
-Add Docker’s official GPG key
+Ajoutez la clé GPG officielle de Docker
 >curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-set up the stable repository
+Paramétrez le repository stable
 >echo \ 
 >"deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \ 
 >$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
-Set up the engine
+Paramétrez le moteur
 >sudo apt-get install docker-ce docker-ce-cli containerd.io
 
-Post install, add the current user to the docker group to allow it to run it without rights elevation
+Après l'installation, ajoutez votre utilisateur au groupe docker pour lui permettre d'exécuter l'application sans élévation de droits
 >sudo usermod -aG docker $USER
 
-#### [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/) install
+#### Installation [Kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
-Download the lastest package
+Téléchargez le dernier package
 >curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 
-Run the installer
+Lancez l'installateur
 >sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
 #### SSH Key Pair
 
-run the creation command
+Lancez la commande de création
 >ssh-keygen -t rsa -b 4096 -C "youremail@yourdomain.com"
 
-Press Enter to save the key in default path (/root/.ssh/id_rsa).<br>
-Enter and confirm a password for the key.<br>
-Add the private key to the SSH agent running on your machine, and enter the password you created in the previous step.
+Appuyez sur Entrée pour sauvegarder la clé dans le chemin par défaut (/root/.ssh/id_rsa).<br>
+Entrez et confirmez un mot de passe pour la clé.<br>
+Ajoutez la clé privée à l'agent SSH en cours d'exécution sur votre VM et entrez le mot de passe créé à l'étape précédente.
 >ssh-add ~/.ssh/id_rsa
 
-Keep the .ssh/id_rsa.pub file handy as it holds the public key you will need to input later for TCE configuration
+Gardez le fichier .ssh/id_rsa.pub sous la main, il contient la clé publique nécessaire pour la configuration de TCE.
 
 ### Tanzu Management Cluster
 
-The VM is now ready for Tanzu deployment.
+La VM est maintenant prête pour le déploiement de TCE.
 
 #### [Tanzu CLI](https://tanzucommunityedition.io/docs/latest/cli-installation/)
 
-In a terminal window, run the CLI install commmand
+Dans un terminal, lancez la commande d'installation de la CLI
 >brew install vmware-tanzu/tanzu/tanzu-community-edition
 
-Note the output install folder and run the post install script: {HOMEBREW-INSTALL-LOCATION}/configure-tce.sh
+Notez le dossier d'installation et exécutez le script post-installation: {HOMEBREW-INSTALL-LOCATION}/configure-tce.sh
 >/home/linuxbrew/.linuxbrew/Cellar/tanzu-community-edition/v0.10.0/libexec/configure-tce.sh
 
 ![](images/en05tanzucli.png){.thumbnail}
 
-#### [Deployment](https://tanzucommunityedition.io/docs/latest/vsphere-install-mgmt/)
+#### [Deploiement](https://tanzucommunityedition.io/docs/latest/vsphere-install-mgmt/)
 
-Launch the installer with the command
+Lancez le programme d'installation avec la commande
 >tanzu management-cluster create --ui
 
-In the opening browser window, select the vSphere option
+Dans la fenêtre du navigateur qui s'affiche, sélectionnez l'option vSphere
 
 ![](images/en06deploy.png){.thumbnail}
 
-enter the Private cloud FQDN and fill in administrative credential before clicking `Connect`{.action}.
+Entrez le FQDN du Private Cloud et remplissez les informations d'identification avant de cliquer sur `Connect`{.action}.
 
 ![](images/en07connect.png){.thumbnail}
 
-Click `Continue`{.action} to verify the SSL footprint.
+Cliquez sur `Continue`{.action} pour verifier la SSL footprint.
 
 ![](images/en08ssl.png){.thumbnail}
 
-Select your datacenter and fill in the SSH public key created earlier (.ssh/id_rsa.pub).<br>
-Click `Next`{.action}.
+Selectionnez votre datacenter et fournissez la clé publique SSH créée précédement (.ssh/id_rsa.pub).<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en09ssh.png){.thumbnail}
 
-Choose a type of cluster (Development or Production) and a node size.
+Choisissez un type de cluster (Development ou Production) et une taille pour les noeuds.
 
 ![](images/en10type.png){.thumbnail}
 
-Fill in the name of your custer, choose a control plane enpoint provider and IP (same subnet but outside of dhcp scope).<br>
-Click `Next`{.action}.
+Entrez un nom de cluster, choisissez un plane enpoint provider et une IP (en dehors du pool dhcp mais dans le même sous réseau).<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en11control.png){.thumbnail}
 
-NSX Advanced Load Balancer and Metadata sections are optional and we'll leave them as is.<br>
-Click `Next`{.action} on both of them.
+NSX Advanced Load Balancer et Metadata sont des sections optionelles.<br>
+Cliquez sur `Next`{.action} pour les deux.
 
 ![](images/en12optional.png){.thumbnail}
 
-Choose your resource locations.<br>
-Click `Next`{.action}.
+Choisissez vos emplacements de ressource.<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en13resources.png){.thumbnail}
 
-Enter the Kubernetes Network settings.<br>
-Click `Next`{.action}.
+Entrez les paramètres du réseau Kubernetes.<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en14kubnet.png){.thumbnail}
 
-Disable Identity Management.<br>
-Click `Next`{.action}.
+Désactivez l'Identity Management.<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en15identity.png){.thumbnail}
 
-Select the node template to be used.<br>
-Click `Next`{.action}.
+Selectionnez le modèle pour les noeuds.<br>
+Cliquez sur `Next`{.action}.
 
 ![](images/en16os.png){.thumbnail}
 
-Click `Review Configuration`{.action}.
+Cliquez sur `Review Configuration`{.action}.
 
 ![](images/en17review.png){.thumbnail}
 
-When ready, click `Deploy Management Cluster`{.action}.
+Cliquez sur `Deploy Management Cluster`{.action}.
 
 ![](images/en18deploy.png){.thumbnail}
 
-Upon completion, verify tou get a creation message and the nodes are visible in vSphere.
+Une fois l'opération terminée, vérifiez que vous voyez le message de création et que les nœuds sont visibles dans vSphere.
 
 ![](images/en20created.png){.thumbnail}
 
 ![](images/en21vsphere.png){.thumbnail}
 
-Get the cluster admin credentials for future interactions:
+Enregistrez les informations d'identification de l'administrateur du cluster :
 >tanzu cluster kubeconfig get "clustername" --admin
 
 
 ### Tanzu Workload Cluster
 
-To deploy a workload cluster, we'll duplicate and modify the configuration file for the management cluster.<br>
-Start a terminal window in the bootstrap VM and go to the config file folder.<br>
+Pour déployer un cluster de workload, dupliquez et modifiez le fichier de configuration du cluster de management.<br>
+Dans un terminal, dans la VM de bootstrap, allez dans le dossier contenant le fichier de configuration.<br>
 >cd .config/tanzu/tkg/clusterconfigs
 
-Use ls to find the yaml configuration file name and copy it into a new one.<br>
+Utilisez ls pour récupérer le nom du fichier yaml puis dupliquez le avec un nouveau nom.<br>
 >cp existing.yaml new.yaml
 
 ![](images/en26copyconf.png){.thumbnail}
 
-Use a text editor to modify the key fields:
-- CLUSTER_NAME : choose a name for your new cluster
-- VSPHERE_CONTROL_PLANE_ENDPOINT : choose an unused IP in the same subnet but not in the dhcp scope
-- VSPHERE_FOLDER : this is not mandatory but you can define a different folder for ease of management<br>
-Save and close the file.
+Utilisez un éditeur de texte pour modifier les champs clés:
+- CLUSTER_NAME : choisissez un nom pour le nouveau cluster
+- VSPHERE_CONTROL_PLANE_ENDPOINT : choisissez une IP libre sur le même sous réseau mais hors du pool dhcp
+- VSPHERE_FOLDER : ce n'est pas obligatoire mais vous pouvez définir un dossier différent pour faciliter la gestion<br>
+Sauvegardez et fermez le fichier.
 
-Back in the terminal, run the deploy command calling your new yaml file.<br>
+De retour dans le terminal, exécutez la commande de déploiement avec votre nouveau fichier yaml.<br>
 > tanzu cluster create --file .config/tanzu/tkg/clusterconfigs/new.yaml
 
-Upon completion, verify tou get a creation message and the nodes are visible in vSphere.
+Une fois l'opération terminée, vérifiez que vous voyez le message de création et que les nœuds sont visibles dans vSphere.
 
 ![](images/en27created.png){.thumbnail}
 
 ![](images/en28vsphere.png){.thumbnail}
 
-Get the cluster admin credentials for future interactions:
+Enregistrez les informations d'identification de l'administrateur du cluster :
 >tanzu cluster kubeconfig get "clustername" --admin
 
-TCE is now ready for application installs.
+TCE est maintenant prêt à recevoir vos applications.
 
 
-## Go further
+## Aller plus loin
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
