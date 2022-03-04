@@ -8,11 +8,9 @@ order: 2
 
 **Dernière mise à jour le 03/03/2022**
 
-[## FAQ hébergements web OVHcloud]
+## Gestion de votre offre
 
-### Gestion de votre offre
-
-#### Comment configurer mon hébergement ?
+### Comment configurer mon hébergement ?
 
 Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Depuis la rubrique `Hébergement`, vous pourrez notamment gérer vos certificats SSL, la version PHP, l'option CDN, le multisite, les bases de données, etc.
 
@@ -24,7 +22,7 @@ Pour créer ou supprimer un élément, connectez-vous à votre [espace client OV
 
 **Trucs et Astuces** : depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), vous avez la possibilité de réaliser des sauvegardes régulières de vos bases de données.]
 
-#### Comment gérer mes mots de passe ?
+### Comment gérer mes mots de passe ?
 
 Pour gérer vos mots de passe, vous devez tout d'abord vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). En cas d'oubli de votre identifiant ou de votre mot de passe, cliquez sur `Identifiant ou mot de passe oublié`{.action} sous la fenêtre de connexion. Un e-mail vous sera envoyé avec une procédure de réinitialisation. 
 Vous pouvez également consulter le guide [Définir et gérer le mot de passe de votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
@@ -35,23 +33,23 @@ Une fois connecté à votre espace client, vous pourrez gérer les accès de vos
 * Pour modifier le mode passe de votre base de données, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
 * Pour modifier le mode passe de votre adresse e-mail MX Plan, suivez les instructions de ce [guide](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/).
 
-#### Comment mettre en ligne mon site ? 
+### Comment mettre en ligne mon site ? 
 
 Pour mettre en ligne votre site, vous devez disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/), qui correspondra à l'adresse depuis laquelle votre site sera accessible (exemple : ovhcloud.com). Vous aurez également besoin d'un [hébergement Web](https://www.ovhcloud.com/fr/web-hosting/) sur lequel installer votre site. Afin suivre pas à pas les étapes pour construire votre nouveau site Web, consultez cette [page](https://www.ovhcloud.com/fr/web-hosting/uc-website/) puis suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/).
 
 **Trucs et Astuces** : Pour vous aider à créer votre site Internet, OVHcloud vous permet d'installer grâce aux [modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/) des outils tels que Wordpress, Prestashop, Joomla ou encore Drupal.
 
-#### Comment migrer mon site Internet et mes e-mails vers OVHcloud ? 
+### Comment migrer mon site Internet et mes e-mails vers OVHcloud ? 
 
 Pour migrer votre site Internet et vos e-mails vers OVHcloud, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/).
 
 **Trucs et Astuces** : Pour migrer les e-mails, vous devrez recréer vos comptes chez OVHcloud puis utiliser notre outil de migration [OVH Mail Migrator](https://omm.ovh.net/).
 
-#### Comment héberger plusieurs sites web sur un même hébergement mutualisé ?
+### Comment héberger plusieurs sites web sur un même hébergement mutualisé ?
 
 Les offres OVHcloud vous permettent d'héberger plusieurs sites Internet sur un seul hébergement. Pour cela, vous devez attacher un autre nom de domaine ou attacher un sous-domaine à cet hébergement, en suivant les instructions de [ce guide](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
 
-#### Comment changer de formule d'hébergement ?
+### Comment changer de formule d'hébergement ?
 
 > [!primary]
 >
@@ -78,15 +76,19 @@ Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votr
 >
 
 
-### Diagnostic
+## Diagnostic
 
-#### Que faire si mon site web dysfonctionne ? 
+### Que faire si mon site web dysfonctionne ? 
 
 Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site Internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois cette vérification faite, consultez les [évèments en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont impactés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi à l'aide des questions suivantes.
 
 **Trucs et Astuces** : Si votre site est soudainement indisponible suite à une manipulation de votre part, vous pouvez restaurer son contenu depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, dirigez-vous sur l'onglet `FTP-SSH` de votre hébergement et cliquez sur le bouton `Restaurer une sauvegarde`{.action}, situé à droite de votre écran. Vous pouvez également vous appuyer sur la documentation suivante : [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
 
-#### Que faire si après publication de mon site, la page « Félicitations » d'OVHcloud reste affichée ?
+### Je n'arrive pas à installer de module en 1 clic sur mon hébergement. Que dois-je faire ?
+
+Si vous rencontrez des difficultés dans la création d'un module en 1 clic sur votre hébergement OVHcloud, suivez les instructions de ce [guide]().
+
+### Que faire si après publication de mon site, la page « Félicitations » d'OVHcloud reste affichée ?
 
 À l'installation de votre hébergement, OVHcloud met en place cette page d'attente, sous la forme d'un fichier **index.html** contenu dans le dossier **www** de votre serveur FTP.
 
@@ -94,19 +96,19 @@ Ce fichier est automatiquement désactivé lors de la création de votre [module
 
 Si vous avez choisi [d'installer votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) afin de le renommer en **index.html.old**. 
 
-#### Que faire si mon site affiche une erreur "403 forbidden" ?
+### Que faire si mon site affiche une erreur "403 forbidden" ?
 
-![403](images/403.png){.thumbnail}
+![403error](images/403error.png){.thumbnail}
 
 Consultez le guide [Réagir en cas de désactivation pour sécurité d’un hébergement](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/)
 
-#### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
+### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
 
 ![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
 
 Consultez le guide [Changer la version de PHP de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/)
 
-#### Que faire si mon site affiche une page « Index of » ?
+### Que faire si mon site affiche une page « Index of » ?
 
 > [!primary]
 >
@@ -141,11 +143,7 @@ Vous obtiendrez, sous quelques minutes, le résultat suivant :
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
 
-> [!primary]
->
-> Utiliser le répertoire `www` comme `Dossier racine` n'est en aucun cas obligatoire. Vous pouvez installer votre site dans un autre dossier de votre serveur FTP.
-
-#### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
+### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
@@ -155,20 +153,20 @@ Scénario 1 : Votre site a été créé sur une adresse web de type « xxxxx.clu
 
 > [!warning]
 >
-> L'opération de suppression d'une base de données comme celle d'un module en 1 clic sont définitives. Elles entraînent également la suppression des sauvegardes des données concernées. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+> L'opération de suppression d'une base de données comme celle d'un module en 1 clic sont définitives. Elles entraînent également la suppression des sauvegardes des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, assurez-vous d'être capable de le recréer. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 >
 
 Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
-Puis sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` : 
+Puis sa base de données depuis l'onglet du même nom situé à droite de votre écran, toujours dans la partie `Hébergements` :
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
-Puis relancez son installation sur le nom de domaine souhaité, [manuellement](../mutualise-installer-manuellement-mon-cms/) ou en utilisant la fonctionnalité [Module en 1 clic](../modules-en-1-clic/).
+Puis relancez son installation sur le nom de domaine souhaité, en utilisant la fonctionnalité [Module en 1 clic](https://docs.ovh.com/fr/hosting/1-click-module-management/).
 
-Scénario 2 : 
+Scénario 2 :
 
 Si votre site s'affiche sous cette url suite à une manipulation, restaurez-le à son état antérieur.
 
@@ -183,7 +181,7 @@ Pour restaurer le code source de votre site, consultez notre guide « [Restaurer
 
 Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) ».
 
-#### Que faire si mon site redirige vers le webmail OVHcloud ?
+### Que faire si mon site redirige vers le webmail OVHcloud ?
 
 ![webmail](images/webmail.png){.thumbnail}
 
@@ -199,9 +197,13 @@ Rendez-vous dans la partie Domaines de votre espace client OVHcloud,
 
 ![site-not-installed2021](images/site-not-installed2021.png){.thumbnail}
 
-https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
+Pour résoudre https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
 ### Que faire si mon site affiche une page "Error establishing database connection" ?
+
+![](images/.png){.thumbnail}
+
+Si votre site affiche une page **Error establishing database connection**, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees).
 
 ### Que faire si mon site affiche une erreur "Too many redirect" ?
 
@@ -209,40 +211,71 @@ https://docs.ovh.com/fr/hosting/erreur-site-non-installe/
 
 Si votre site affiche des erreurs de ce type : 
 
-Firefox : 
+Firefox :
 
 ![unabletoconnect](images/unabletoconnect.png){.thumbnail}
 
-Google : 
+Chrome :
 
 ![sitecantbereached](images/sitecantbereached.png){.thumbnail}
 
-Safari : 
+Safari :
 
-(Attendre un peu pour tester mypersonaldomainname.ovh sur safari (pas dispo sur windows))
+![](images/.png){.thumbnail}
 
-#### Que faire si mon site affiche une erreur "500 Internal Server Error" ?
+Edge :
 
-Si votre site affiche une erreur **500 Internal Server Error**, consultez ce [guide](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
+![](images/.png){.thumbnail}
 
-#### Que faire si mon site rencontre des lenteurs ?
+### Que faire si mon site affiche une erreur "500 Internal Server Error" ?
+
+![error-500](images/error-500.png){.thumbnail}
+
+Si votre site affiche une erreur **500 Internal Server Error**, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
+
+### Que faire si mon site rencontre des lenteurs ?
 
 En cas de lenteurs sur votre site, consultez ce [guide](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
 
-#### Que faire si mon site affiche une page blanche ?
+### Que faire si mon site affiche une page blanche ?
 
-Si votre site affiche une page entièrement blanche, consultez ce [guide](https://docs.ovh.com/fr/hosting/comment-diagnostiquer-page-blanche/).
+Si votre site affiche une page entièrement blanche, consultez ce [guide](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
 
-#### Que faire si ma base de données est pleine ?
+### Que faire si ma base de données est pleine ?
 
-#### Que faire si mon site affiche "Connexion non sécurisée ?
+![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-#### Que faire si mon site affiche une erreur "503 error Backend fetch failed (Varnish cache)" ?
+Si la base de données de votre site excède le quota autorisée, consultez ce [guide]().
 
-#### Que faire si mon site affiche une erreur  "Your request has been blocked" ou Your IP has been banned" ?
+### Que faire si mon site affiche "Connexion non sécurisée ?
 
-#### Le nom de domaine qui apparaît dans mon espace client est bizarre et ne correspond pas à celui que j'ai commandé. Que dois-je faire ? (notation IDN)
+Firefox :
 
+![](images/.png){.thumbnail}
+
+Chrome :
+
+![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}
+
+Safari :
+
+![](images/.png){.thumbnail}
+
+Edge :
+
+![](images/.png){.thumbnail}
+
+### Que faire si mon site affiche une erreur "503 error Backend fetch failed (Varnish cache)" ?
+
+![](images/.png){.thumbnail}
+
+### Que faire si mon site affiche une erreur  "Your request has been blocked" ou Your IP has been banned" ?
+
+![](images/.png){.thumbnail}
+
+### Le nom de domaine qui apparaît dans mon espace client est bizarre et ne correspond pas à celui que j'ai commandé. Que dois-je faire ? (notation IDN)
+
+![](images/.png){.thumbnail}
 
 ## Aller plus loin <a name="allerplusloin"></a>
 
