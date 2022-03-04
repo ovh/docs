@@ -1,12 +1,12 @@
 ---
-title: 'Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans CentOS 7'
+title: 'configururation de votre NIC pour l’agrégation de liens OVHcloud dans CentOS 7'
 slug: ola-centos7
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur CentOS 7'
 section: 'Utilisation avancée'
 order: 3
 ---
 
-**Dernière mise à jour le 23/03/2021**
+**Dernière mise à jour le 04/03/2022**
 
 ## Objectif
 
