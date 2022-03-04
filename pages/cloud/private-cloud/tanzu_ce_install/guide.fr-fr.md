@@ -73,7 +73,7 @@ Recherchez le fichier OVA téléchargé et déployez-le.
 
 Pour finir, faites un clic droit sur la VM et dans la section `Modèle`{.action}, sélectionnez `Convertir au modèle`{.action}.
 
-![](images/en24template.png){.thumbnail}
+![](images/en25template.png){.thumbnail}
 
 
 ### VM de Bootstrap
