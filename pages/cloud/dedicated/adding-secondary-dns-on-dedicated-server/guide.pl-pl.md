@@ -36,7 +36,7 @@ Jeśli skonfigurujesz serwer dedykowany jako serwer DNS, możesz użyć DNS seco
 
 ### Dodanie domeny <a name="ajoutdomaine"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, następnie wybierz Twój serwer na bocznym pasku po lewej stronie pod `Serwery dedykowane`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swój serwer z `Serwery dedykowane`{.action}.
 
 Następnie kliknij zakładkę `DNS secondary`{.action}, a następnie przycisk `Dodaj domenę`{.action}.
 
