@@ -4,6 +4,7 @@ slug: available-services
 excerpt: "Présentation des services et licences inclus dans l'offre Hosted Private Cloud powered by Nutanix"
 section: Premiers pas
 order: 02
+hidden: true
 ---
 
 **Dernière mise à jour le 07/03/2022**
@@ -15,7 +16,7 @@ Cette page vous présente les licences et services Nutanix inclus dans l'offre H
 ## Périmètre des licences et services Nutanix inclus dans l'offre Hosted Private Cloud powered by Nutanix
 
 Seuls les licences et services Nutanix listés sur cette page sont disponibles dans l'offre Hosted Private Cloud powered by Nutanix.<br>
-Si la licence ou le service que vous cherchez n'est pas disponible, nous vous invitons à consulter la [roadmap GitHub Hosted Private Cloud](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
+Si la licence ou le service que vous cherchez n'est pas disponible, nous vous invitons à consulter la roadmap [GitHub Hosted Private Cloud](https://github.com/ovh/hosted-private-cloud-roadmap/projects/3) en première intention.
 
 Hosted Private Cloud powered by Nutanix propose deux pack de licences :
 
