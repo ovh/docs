@@ -114,7 +114,7 @@ Congratulations, in the `Schemas`{.action} tab, you will see your databases.
 
 > [!primary]
 >
-> Once connected, MySQL Workbench facilitatec many actions such as querying your databases and managing used or even import data. Please read the official documentation to discover the whole feature list: <https://www.mysql.com/products/workbench/features.html>.
+> Once connected, MySQL Workbench facilitates many actions such as querying your databases and managing used or even import data. Please read the official documentation to discover the whole feature list: <https://www.mysql.com/products/workbench/features.html>.
 >
 
 ## Go further
