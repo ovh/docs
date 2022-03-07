@@ -6,10 +6,6 @@ section: Enterprise File Storage
 order: 3
 ---
 
-> [!warning]
-> Enterprise File Storage est un produit en phase **Bêta**. Pendant cette phase, le service n'est pas disponible pour les clients en dehors de l'Europe.
->
-
 **Dernière mise à jour le 27/10/2021**
 
 ## Objectif
@@ -21,7 +17,7 @@ Dans ce guide, découvrez comment gérer les volumes pour l'offre OVHcloud Enter
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
 
 ## L'essentiel
 
@@ -36,7 +32,7 @@ Il peut également avoir un nom et une description (facultatif).
 
 ## Instructions
 
-Toutes les routes API utilisées pour ce guide sont disponibles dans la section */storage* : <https://api.ovh.com/console/#/storage>.
+Toutes les routes API utilisées pour ce guide sont disponibles dans la section */storage* : <https://ca.api.ovh.com/console/#/storage>.
 
 > [!primary]
 >

@@ -41,7 +41,7 @@ Sie können für Ihren Kunden-Account einen oder mehrere Storage-Einheiten zwisc
 >
 > - Aus Transparenzgründen wird Enterprise File Storage in TiB ausgeliefert. Sie werden dennoch TB-Größen sehen, weil es die gemeinhin bekanntere Einheit ist.
 >
-> - Wenn Sie also beispielsweise einen Enterprise File Storage mit 1 TB bestellen, verfügen Sie realiter über 1 TiB = 1,09951 TB ;-).
+> - Wenn Sie also beispielsweise einen Enterprise File Storage mit 1 TB bestellen, verfügen Sie realiter über 1 TiB = 1,09951 TB.
 >
 
 ### Funktionsprinzip von Capacity Pools
