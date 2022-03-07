@@ -14,16 +14,16 @@ order: 303
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/compute/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/compute/) in your OVHcloud account
 - A PostgreSQL database running on OVHcloud Enterprise Cloud Databases (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 These guides can help you to meet these requirements:
 
-- [Getting started with Public Cloud Databases](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/)
-- [PostgreSQL - Connect with CLI](https://docs.ovh.com/us/en/publiccloud/databases/postgresql/connect-cli/)
+- [Getting started with Public Cloud Databases](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/)
+- [PostgreSQL - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/)
 
 ## Considerations
 
@@ -35,7 +35,7 @@ These guides can help you to meet these requirements:
 - This document outlines an offline migration path for your database, which means you'll have to suspend all the writes from your application and schedule for maintenance for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
 - Ensure the source and destination PostgreSQL versions match.
 - Ensure you have good enough bandwidth between the client machine and both source and destination databases.
-- Ensure you choose a [Database plan](https://www.ovhcloud.com/en/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
+- Ensure you choose a [Database plan](https://www.ovhcloud.com/en-gb/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
 
 ## Procedure
 
@@ -79,9 +79,9 @@ Edit it so that it reads:
 ALTER TABLE public.<table> OWNER TO avnadmin;
 ```
 
-Then, search the schema dump file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](https://docs.ovh.com/us/en/publiccloud/databases/postgresql/capabilities/) to learn about what the destination database supports.
+Then, search the schema dump file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/) to learn about what the destination database supports.
 
-Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extensions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](https://docs.ovh.com/us/en/publiccloud/databases/postgresql/extensions/)).
+Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extensions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/)).
 
 ### Step 5: Import the schema
 
@@ -125,7 +125,7 @@ $ pg_restore -d defaultdb -h <postgresql-xxxxxxxxx.database.cloud.ovh.net> -p <p
 ```
 
 As for the data export step and depending on the dataset size and the available bandwidth, the operation might take some time.<br>
-You can monitor the disk & network activity from the Metrics section of the DB service page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we):
+You can monitor the disk & network activity from the Metrics section of the DB service page in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB):
 
 ![Metrics Tab](images/metrics_tab.png){.thumbnail}
 
