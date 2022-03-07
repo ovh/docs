@@ -4,6 +4,7 @@ slug: storage
 excerpt: Overview of Storage Management in a Nutanix Cluster
 section: Getting started
 order: 04
+hidden: true
 ---
 
 **Last updated 23rd February 2022**
