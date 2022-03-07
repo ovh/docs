@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-prism-web-ui-security/'
 excerpt: Find out how to restrict Prism Central Web access
 section: Rete e Sicurezza
-order: 01
+order: 05
 ---
 
 **Last updated 11th January 2022**

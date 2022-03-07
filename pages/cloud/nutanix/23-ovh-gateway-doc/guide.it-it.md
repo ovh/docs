@@ -4,8 +4,8 @@ slug: ovh-gateway-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/ovh-gateway-documentation/'
 excerpt: Find out how the OVHGateway works
-section: Per iniziare
-order: 02
+section: Rete e sicurezza
+order: 03
 ---
 
 **Last updated 11th January 2022**
