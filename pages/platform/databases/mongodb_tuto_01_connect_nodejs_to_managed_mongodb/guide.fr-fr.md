@@ -2,7 +2,7 @@
 title: MongoDB - Tutoriel - Construire une application NodeJS connectée au service OVHcloud Managed MongoDB (EN)
 slug: mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
-section: MongoDB - Tutorials
+section: MongoDB - Tutoriels
 order: 01
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb/'

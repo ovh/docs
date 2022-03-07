@@ -2,7 +2,7 @@
 title: MongoDB - Connect with MongoDB Compass
 excerpt: Connect to your Public Cloud Databases for MongoDB using MongoDB Compass
 slug: mongodb/connect-compass
-section: MongoDB
+section: MongoDB - Guides
 order: 303
 ---
 
