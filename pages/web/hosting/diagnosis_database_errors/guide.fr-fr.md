@@ -31,6 +31,8 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ### « Erreur lors de la connexion à la base de données »
 
+![error_establishing_a_DB_connection](images/error_establishing_a_DB_connection.png){.thumbnail}
+
 #### Vérifier les incidents en cours
 
 Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) que votre datacentre, votre cluster d'hébergement, votre serveur CloudDB ou Cloud Databases n'est pas concerné par un incident sur l'infrastructure OVHcloud.
