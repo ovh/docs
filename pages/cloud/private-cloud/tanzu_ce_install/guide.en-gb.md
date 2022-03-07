@@ -137,11 +137,11 @@ brew install gcc
 Start with getting the necessary packages:
 
 ```bash
->sudo apt-get install \ 
->ca-certificates \ 
->curl \ 
->gnupg \ 
->lsb-release
+>sudo apt-get install \
+ca-certificates \
+curl \
+gnupg \
+lsb-release
 ```
 
 Add Docker’s official GPG key:
