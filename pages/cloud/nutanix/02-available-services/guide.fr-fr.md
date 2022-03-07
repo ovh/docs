@@ -6,7 +6,7 @@ section: Premiers pas
 order: 02
 ---
 
-**Dernière mise à jour le 03/03/2022**
+**Dernière mise à jour le 04/03/2022**
 
 ## Objectif
 
@@ -68,8 +68,6 @@ Les options qui sont communes aux deux packs de licences sont les suivantes :
 
 Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Options AOS](https://www.nutanix.com/products/software-options).
 
-
 ## Aller plus loin
-
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
