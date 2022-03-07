@@ -2,7 +2,7 @@
 title: MongoDB - Se connecter avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
 slug: mongodb/connect-php
-section: MongoDB
+section: MongoDB - Guides
 order: 301
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-php/'

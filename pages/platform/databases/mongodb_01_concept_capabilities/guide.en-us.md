@@ -2,7 +2,7 @@
 title: MongoDB - Capabilities and Limitations
 slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-section: MongoDB
+section: MongoDB - Guides
 order: 1
 ---
 
