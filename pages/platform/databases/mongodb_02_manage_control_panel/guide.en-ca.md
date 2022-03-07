@@ -2,7 +2,7 @@
 title: MongoDB - Managing a database service from the OVHcloud Control Panel
 excerpt: Find out how to manage your databases in the OVHcloud Control Panel
 slug: mongodb/managing-service
-section: MongoDB
+section: MongoDB - Guides
 order: 2
 ---
 
