@@ -4,8 +4,8 @@ slug: nutanix-isolate-management-machines
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-isolate-management-machines/'
 excerpt: Find out how to isolate management machines from production
-section: Utilizzo avanzato
-order: 01
+section: Rete e Sicurezza
+order: 07
 ---
 
 **Last updated 11th January 2022**

@@ -4,8 +4,8 @@ slug: nutanix-public-ip
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-public-ip/'
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
-section: Erste Schritte
-order: 03
+section: Netzwerk und Sicherheit
+order: 04
 ---
 
 **Last updated 11th January 2022**

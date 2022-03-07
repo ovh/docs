@@ -2,8 +2,8 @@
 title: Securing Prism Central Web access
 slug: nutanix-prism-web-ui-security
 excerpt: Find out how to restrict Prism Central Web access
-section: Networking & Security
-order: 01
+section: Network & Security
+order: 05
 ---
 
 **Last updated 11th January 2022**

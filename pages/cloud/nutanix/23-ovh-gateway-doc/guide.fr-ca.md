@@ -2,8 +2,8 @@
 title: Fonctionnement de la passerelle OVHgateway
 slug: ovh-gateway-documentation
 excerpt: Découvrez comment fonctionne la passerelle OVHgateway
-section: Premiers pas
-order: 02
+section: Réseau et sécurité
+order: 03
 hidden: true
 ---
 
