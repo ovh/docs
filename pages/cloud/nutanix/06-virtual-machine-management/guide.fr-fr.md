@@ -28,9 +28,9 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise la même interface pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
 
-OVHcloud a fait le choix d'utiliser Nutanix avec l'hyperviseur *Ahv*.
+L'offre d'OVHcloud est fournie avec l'hyperviseur *Ahv*.
 
 *Ahv* permet :
 

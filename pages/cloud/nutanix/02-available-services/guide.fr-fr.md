@@ -70,7 +70,7 @@ Pour plus d'informations sur les différentes versions d'**AOS** [Nutanix Option
 
 ### En résumé
 
-Ci dessous se trouve un petit tableau récapitulatif des deux offres Nutanix OVHcloud :
+Ci-dessous se trouve un petit tableau récapitulatif des deux offres Nutanix OVHcloud :
 
 | Nom de l'offre                | Catégorie du service                   | Fonctionnalité associé au service |
 | ----------------------------- | -------------------------------------- | --------------------------------- |
