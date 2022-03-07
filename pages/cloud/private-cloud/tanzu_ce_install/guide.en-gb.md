@@ -28,7 +28,7 @@ You can deploy the product on an OVHcloud infrastructure to leverage its functio
 ### Network
 
 As stated in the Requirements (with links to full docs), an NSX Edge Services Gateway is used in our study case for Firewall and DHCP purposes.<br>
-Other Network components can be used as alternative, such as pfsense.<br>
+Other Network components can be used as alternative, such as pfSense.<br>
 
 To set up your Network, you will need to define a public IP for external access and an internal network with DHCP service activated for your TCE infrastructure.<br>
 Your Datacenter comes with a set of public IPs usable for your different needs. They are visible in the Datacenter `Configure`{.action} tab, in the `Network`{.action} section. You will also see the mask and gateway settings on the page.<br>
@@ -54,7 +54,7 @@ For our study case, the NSX Edge Services Gateway is set up with two interfaces 
 In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Security`{.action} tab of your Hosted Private Cloud and add the public IPs to the allowed adresses to connect.<br>
 The addresses should appear as "Authorised and set up".
 
-![adresses](images/en00ipsec.png){.thumbnail}
+![addresses](images/en00ipsec.png){.thumbnail}
 
 ### Node Template
 
@@ -220,7 +220,7 @@ Note the output install folder and run the post install script:
 /home/linuxbrew/.linuxbrew/Cellar/tanzu-community-edition/v0.10.0/libexec/configure-tce.sh
 ```
 
-![](images/en05tanzucli.png){.thumbnail}
+![Tanzu CLI](images/en05tanzucli.png){.thumbnail}
 
 #### [Deployment](https://tanzucommunityedition.io/docs/latest/vsphere-install-mgmt/)
 
