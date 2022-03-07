@@ -22,7 +22,7 @@ Ce guide vous présente le stockage ainsi que la création d'un **storage contai
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Être connecté sur le cluster via Prism Element
 
 ## Présentation du fonctionnement du stockage dans un cluster Nutanix
@@ -113,7 +113,7 @@ Le **Volume Group** apparait alors dans la liste.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Présentation d'un cluster Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
 
 [Documentation Nutanix sur le stockage](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-storage-management-wc-c.html)
 
