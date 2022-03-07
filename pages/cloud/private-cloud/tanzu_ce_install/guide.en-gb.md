@@ -103,7 +103,7 @@ sudo apt-get install build-essential
 #### Install [NTP](https://vitux.com/how-to-install-ntp-server-and-client-on-ubuntu/)
 
 ```bash
->sudo apt-get install ntp
+sudo apt-get install ntp
 ```
 
 #### Install [Homebrew](https://www.how2shout.com/linux/how-to-install-brew-ubuntu-20-04-lts-linux/)
@@ -137,7 +137,7 @@ brew install gcc
 Start with getting the necessary packages:
 
 ```bash
->sudo apt-get install \
+sudo apt-get install \
 ca-certificates \
 curl \
 gnupg \
