@@ -5,14 +5,13 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 07/03/2022**
+**Last updated 7th March 2022**
 
 ## Objective
 
 Veeam Backup & Replication is a data protection software. It offers its users a wide range of options for backing up, replicating and restoring their data.
 
 **This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
-
 
 ## Requirements
 
@@ -129,15 +128,18 @@ Via the graphical user interface:
 
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
-5. Click on `Advanced`{.action} to locate the previously added service account and click on `Find Now`{.action}. Select the `OVHVeeamEnterprise`{.action} user from the list of users.
+<ol start="5">
+  <li>Click on `Advanced`{.action} to locate the previously added service account and click on `Find Now`{.action}. Select the `OVHVeeamEnterprise`{.action} user from the list of users.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
-6. Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate. Next, enable all permissions on the `OVHVeeamEnterprise`{.action} user.
+<ol start="6">
+  <li>Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate. Next, enable all permissions on the `OVHVeeamEnterprise`{.action} user.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
-7. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
+<ol start="7">
+  <li>Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.</li>
 
 Your OVHVeeamEnterprise user is now accessible locally and remotely.
 

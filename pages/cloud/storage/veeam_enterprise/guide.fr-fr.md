@@ -13,7 +13,6 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
 
-
 ## Prérequis
 
 * Posséder une offre Veeam Enterprise.
@@ -129,15 +128,18 @@ Via l’interface graphique d’utilisateur :
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd.png){.thumbnail}
 
-5. Cliquez sur `Avancé...`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.
+<ol start="5">
+  <li>Cliquez sur `Avancé...`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.</li>
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd1.png){.thumbnail}
 
-6. Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider. Ensuite, activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.
+<ol start="6">
+  <li>Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider. Ensuite, activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.</li>
 
 ![Autorisations de lancement et d'activation](images/veeamuseradd3.png){.thumbnail}
 
-7. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
+<ol start="7">
+  <li>Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.</li>
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
