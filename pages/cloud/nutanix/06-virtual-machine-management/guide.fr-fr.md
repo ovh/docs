@@ -35,7 +35,7 @@ L'offre d'OVHcloud est fournie avec l'hyperviseur *Ahv*.
 *Ahv* permet :
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
-* La migration d'ordinateurs virtuels d'un nœud à l'autre du cluster.
+* La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
 * La micro-segmentation des VM au travers de **Flow**. 
 
 L'outil **Move** permet de migrer facilement des VM existantes dans un autre environnement virtuel ou non vers Nutanix et son hyperviseur *Ahv*.
@@ -45,7 +45,7 @@ Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin]
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation Windows, faire des snapshots et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation Windows et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
 
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
@@ -66,7 +66,7 @@ Saisissez un nom dans `Name`{.action}, Choisissez les options dans dans `VM Prop
 
 ![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG){.thumbnail}
 
-Ajout d'un disques système
+Ajout d'un disques système.
 
 Cliquez sur `Attach Disk`{.action}
 
@@ -88,7 +88,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
-Ajout de l'image ISO des pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques.
+Ajout de l'image ISO des pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée.
 
 Cliquez sur `Save`{.action}
 
@@ -252,33 +252,58 @@ Dans la fenêtre Install NGT cliquez sur `Confirm & Enter Password`{.action}.
 
 Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation05.png){.thumbnail}
+![NGT Installation 5](images/Ngt-Installation05.png){.thumbnail}
 
 Revenez dans la console de l'ordinateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}.
 
 Choisir `Install Nutanix Guest Tools`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation06.png){.thumbnail}
+![NGT Installation 6](images/Ngt-Installation06.png){.thumbnail}
 
 Choisir `I agree to the Etc...`{.action} et cliquez sur `Install`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation07.png){.thumbnail}
+![NGT Installation 7](images/Ngt-Installation07.png){.thumbnail}
 
-Laissez finir l'installation.
+L'installation se lance.
 
-![NGT Installation 4](images/Ngt-Installation08.png){.thumbnail}
+![NGT Installation 8](images/Ngt-Installation08.png){.thumbnail}
 
 A la fin de l'installation cliquez sur `Close`{.action}.
 
-![NGT Installation 4](images/Ngt-Installation09.png){.thumbnail}
+![NGT Installation 9](images/Ngt-Installation09.png){.thumbnail}
 
 L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
-### Création d'un SNAPSHOT
+### Migration d'un ordinateur virtuel.
 
-Un snapshot est une image
+La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster.
 
-### Migration d'une VM
+Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{.action}.
+
+![Migrate - VM01](images/MigrateVM01.png){.thumbnail}
+
+Dans la nouvelle fenêtre,  à coté Host le nom du nœud sur lequel l'ordinateur virtuel fonctionne actuellement est affiché comme ici *NTNX-221060034-A*
+
+ ![Migrate - VM02](images/MigrateVM02.png){.thumbnail}
+
+Cliquez dans le menu `More`{.action} et choisissez `Migrate`{.action}
+
+ ![Migrate - VM03](images/MigrateVM03.png){.thumbnail}
+
+Choisissez un nœud dans `Host`{.action}
+
+![Migrate - VM04](images/MigrateVM04.png){.thumbnail} et cliquez sur `Migrate`{.action}
+
+Lorque la migration sera terminée, le nom du nœud aura changé dans Host.
+
+![Migrate - VM05](images/MigrateVM05.png){.thumbnail} et cliquez sur `Migrate`{.action}
+
+
+
+
+
+
+
 
 
 
