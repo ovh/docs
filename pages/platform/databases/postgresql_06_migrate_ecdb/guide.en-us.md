@@ -6,7 +6,7 @@ section: PostgreSQL - Guides
 order: 303
 ---
 
-**Last updated March 2d 2022**
+**Last updated March 2nd 2022**
 
 ## Objective
 
@@ -14,16 +14,16 @@ order: 303
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/compute/) in your OVHcloud account
 - A PostgreSQL database running on OVHcloud Enterprise Cloud Database (the "source" instance)
 - A PostgreSQL database running on OVHcloud Public Cloud Databases (the "target" instance)
 - A PostgreSQL client that can connect to both database instances, source and target.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
-These documents can help you ready these requirements:
+These guides can help you to meet these requirements:
 
-- [Getting started with Public Cloud Databases](https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/)
-- [PostgreSQL - Connect with CLI](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-cli/)
+- [Getting started with Public Cloud Databases](https://docs.ovh.com/us/en/publiccloud/databases/getting-started/)
+- [PostgreSQL - Connect with CLI](https://docs.ovh.com/us/en/publiccloud/databases/postgresql/connect-cli/)
 
 ## Considerations
 
@@ -35,7 +35,7 @@ These documents can help you ready these requirements:
 - This document outlines an offline migration path for your database, which means you'll have to suspend all the writes from your application and schedule for maintenance for the duration of the migration. Ensure you plan sufficient downtime to carry out all the migration tasks.
 - Ensure the source and destination PostgreSQL versions match.
 - Ensure you have good enough bandwidth between the client machine and both source and destination databases.
-- Ensure you choose a [Database plan](https://www.ovhcloud.com/en-gb/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
+- Ensure you choose a [Database plan](https://www.ovhcloud.com/en/public-cloud/prices/#databases) with appropriate compute, storage and memory resources.
 
 ## Procedure
 
@@ -54,7 +54,7 @@ $ pg_dump --file "path/to/dump.sql" --host "xxxxxxxxxxx.prm.clouddb.ovh.net" --p
 
 ### Step 3: Export the data
 
-User the `pg_dump` command to export the database data to the client machine, as a tar archive file:
+Use the `pg_dump` command to export the database data to the client machine, in a .tar archive file:
 
 ```bash
 $ pg_dump --file "path/to/dump.tar" --host "xxxxxxxxxxx.prm.clouddb.ovh.net" --port "<write port>" \
@@ -65,27 +65,27 @@ Exporting the full dataset may take time depending on the size of the database a
 
 ### Step 4: Edit the schema
 
-Since you won't have access to super user privilege (usually named `postgres`) on the destination database, you need to replace references to that role in the schema dump file with another role -- either `avnadmin`, the initial admin user of your managed database, or another user you'd have created beforehand.
+Since you won't have access to super user privilege (usually named `postgres`) on the destination database, you need to replace references to that role in the schema dump file with another role, either `avnadmin`, the initial admin user of your managed database, or another user you'd have created beforehand.
 
-open the schema dump file with a text editor and search for lines looking like:
+Open the schema dump file with a text editor and search for lines such as:
 
 ```sql
 ALTER TABLE public.<table> OWNER TO postgres;
 ```
 
-And modify it so that it reads:
+Edit it so that it reads:
 
 ```sql
 ALTER TABLE public.<table> OWNER TO avnadmin;
 ```
 
-Then, search the schema dump file file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/) to learn about what the destination database supports.
+Then, search the schema dump file for anything that is not compatible with the OVHcloud Public Cloud Databases offer. Review [PostgreSQL - Capabilities and Limitations](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/) to learn about what the destination database supports.
 
-Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extentions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/)).
+Pay particular attention to anything related to extensions, users, roles and schemas. For example, if you installed any third party extensions, you'll need to remove them as extensions are to be handled differently going forward (check the list of supported extensions here: [PostgreSQL - Available extensions](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/)).
 
 ### Step 5: Import the schema
 
-Use the following psql command to restore the schema on to the destination:
+Use the following psql command to restore the schema on the destination:
 
 ```bash
 $ psql -v ON_ERROR_STOP=1 -h postgresql-xxxxxxxx.database.cloud.ovh.net -p <port> \
@@ -96,18 +96,21 @@ This step should complete quickly.
 
 ### Step 6: Verify the schema import
 
- Connect to your database service to check if the schema restore completed successfully:
+Connect to your database service to check if the schema restore completed successfully:
+
 ```bash
 $ psql "postgres://<username>:<password>@<hostname>:<port>/defaultdb?sslmode=require"
 ```
 
-Check the table(s)
-```
+Check the table(s):
+
+```sql
 defaultdb=> \dt
 ```
 
-Verify the schema
-```
+Verify the schema:
+
+```sql
 defaultdb=> \d <tablename>
 defaultdb=> select * from information_schema.columns;
 ```
@@ -121,7 +124,8 @@ $ pg_restore -d defaultdb -h <postgresql-xxxxxxxxx.database.cloud.ovh.net> -p <p
      --no-owner -U avnadmin --data-only path/to/the/dump.tar -v
 ```
 
-As for the data export step and depending on the dataset size and the available bandwidth, the operation might take some time. You can monitor the disk & network activity from the Metrics section of the DB service page on your OVHcloud control panel:
+As for the data export step and depending on the dataset size and the available bandwidth, the operation might take some time.<br>
+You can monitor the disk & network activity from the Metrics section of the DB service page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we):
 
 ![Metrics Tab](images/metrics_tab.png){.thumbnail}
 
@@ -142,9 +146,9 @@ defaultdb=> select pg_size_pretty(pg_total_relation_size('<tablename>'));
 defaultdb=> select count(*) from <tablename>;
 ```
 
-### Step 9: Resume operation using the destination database
+### Step 9: Resume operations using the destination database
 
-Once you verified that the database migration was successful, update client applications to have them connect to the destination database. You can now resume normal operation.
+Once you verified that the database migration was successful, update client applications to have them connect to the destination database. You can now resume normal operations.
 
 ## Go further
 
