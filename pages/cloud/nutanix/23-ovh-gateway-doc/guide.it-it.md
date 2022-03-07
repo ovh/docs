@@ -4,7 +4,7 @@ slug: ovh-gateway-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/ovh-gateway-documentation/'
 excerpt: Find out how the OVHGateway works
-section: Iniziare a utilizzare
+section: Per iniziare
 order: 02
 ---
 
