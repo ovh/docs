@@ -77,7 +77,7 @@ You will be redirected to the launch wizard, simply close the window.
 
 You will need to generate a **complex** password.
 
-Launch Windows Powershell as an adminstrator.
+To begin, launch Windows Powershell as an administrator.
 
 Next, create a service account, entering these lines of command:
 
