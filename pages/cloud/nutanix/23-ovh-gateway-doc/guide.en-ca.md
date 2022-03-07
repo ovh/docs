@@ -2,8 +2,8 @@
 title: OVHgateway documentation
 slug: ovh-gateway-documentation
 excerpt: Find out how the OVHGateway works
-section: Getting started
-order: 02
+section: Network & Security
+order: 03
 hidden: true
 ---
 

@@ -4,7 +4,7 @@ slug: high-level-documentation
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/high-level-documentation/'
 excerpt: Technical details of the Nutanix infrastructure at OVHcloud
-section: Iniziare a utilizzare
+section: Per iniziare
 order: 01
 ---
 

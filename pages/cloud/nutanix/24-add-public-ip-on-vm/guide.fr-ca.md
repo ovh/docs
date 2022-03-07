@@ -2,8 +2,8 @@
 title: Ajouter une adresse IP publique à une nouvelle VM
 slug: nutanix-public-ip
 excerpt:  Découvrez comment utiliser une IP publique sur une VM Ubuntu, créée via API
-section: Premiers pas
-order: 03
+section: Réseau et sécurité
+order: 04
 hidden: true
 ---
 

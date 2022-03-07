@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-change-vrack/'
 excerpt: Find out how to change the Nutanix Cluster vRack
 section: Sieć i bezpieczeństwo
-order: 02
+order: 06
 ---
 
 **Last updated 11th January 2022**

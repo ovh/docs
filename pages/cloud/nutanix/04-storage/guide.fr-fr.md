@@ -1,7 +1,7 @@
 ---
 title: Présentation du stockage sur Nutanix
 slug: storage
-excerpt: "Présentatiion de la gestion du stockage dans un Cluster Nutanix"
+excerpt: 'Présentation de la gestion du stockage dans un Cluster Nutanix'
 section: Premiers pas
 order: 04
 ---
