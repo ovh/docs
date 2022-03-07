@@ -98,7 +98,7 @@ Launch the Veeam console.
 
 Check that it is in **Community Edition** mode, in the bottom right-hand corner.
 
-![free edition](images/veeamcommunity.png){.thumbnail}
+![free edition](images/Veeamcommunity.png){.thumbnail}
 
 Go to the menu, and click `Users and Roles`{.action}.
 
@@ -125,20 +125,19 @@ Via the graphical user interface:
 1. In your Windows search bar, type `Component Services`{.action} and launch the service.
 2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
 3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
-4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action} then on `Add`{.action}.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}. Next, click on `Add`{.action}.
 
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
-5. Click on `Advanced`{.action} to located the previously added service account. Next, click on `Find Now`{.action} and select the `OVHVeeamEnterprise`{.action} user from the list of users.
+5. Click on `Advanced`{.action} to locate the previously added service account and click on `Find Now`{.action}. Select the `OVHVeeamEnterprise`{.action} user from the list of users.
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
-6. Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate.
-7. Enable all permissions on the `OVHVeeamEnterprise`{.action} user.
+6. Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate. Next, enable all permissions on the `OVHVeeamEnterprise`{.action} user.
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
-8. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
+7. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
 
 Your OVHVeeamEnterprise user is now accessible locally and remotely.
 

@@ -125,7 +125,7 @@ Via l’interface graphique d’utilisateur :
 1. Dans votre barre de recherche Windows, tapez `Services de composants`{.action} et lancez le service.
 2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
 3. À droite, sous l'onglet `Actions`{.action}, cliquez sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
-4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action} puis sur `Ajouter`{.action}.
+4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action}. Ensuite, cliquez sur `Ajouter`{.action}.
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd.png){.thumbnail}
 
@@ -133,13 +133,11 @@ Via l’interface graphique d’utilisateur :
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd1.png){.thumbnail}
 
-6. Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider.
-
-7. Activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.
+6. Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider. Ensuite, activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.
 
 ![Autorisations de lancement et d'activation](images/veeamuseradd3.png){.thumbnail}
 
-8. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
+7. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
