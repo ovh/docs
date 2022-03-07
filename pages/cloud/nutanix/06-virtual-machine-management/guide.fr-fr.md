@@ -36,23 +36,23 @@ L'offre d'OVHcloud est fournie avec l'hyperviseur *Ahv*.
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
-* La micro-segmentation des VM au travers de **Flow**. 
+* La micro-segmentation réseau des VM au travers de **Flow**. 
 
-L'outil **Move** permet de migrer facilement des VM existantes dans un autre environnement virtuel ou non vers Nutanix et son hyperviseur *Ahv*.
+L'outil **Move** permet de migrer facilement des VM existantes d'autre environnement virtuel ou non vers Nutanix et son hyperviseur *Ahv*.
 
 
 Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, modifier les ressources de cet ordinateur, installer le système d'exploitation Windows et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, installer le système d'exploitation Windows et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
 
 
 ### Création d'une Ordinateur Virtuel un système d'exploitation Windows
 
 L'installation d'un ordinateur virtuel sous Windows nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques.
 
-Création d'un ordinateur virtuel pour permettant l'installation de  Windows server 2022
+Lancement de l'installation de Windows Server 2022
 
 Dans **Prism Central** dans le menu de gauche dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
@@ -88,7 +88,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
-Ajout de l'image ISO des pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée.
+Ajout de l'image ISO contenant les pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable.
 
 Cliquez sur `Save`{.action}
 
@@ -292,12 +292,11 @@ Cliquez dans le menu `More`{.action} et choisissez `Migrate`{.action}
 
 Choisissez un nœud dans `Host`{.action}
 
-![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
+![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail}
 
 le nom du nœud est changé dans Host quand la migration est terminées
 
-![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
-
+![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
