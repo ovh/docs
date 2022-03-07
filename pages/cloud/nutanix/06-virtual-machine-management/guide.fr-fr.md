@@ -1,7 +1,7 @@
 ---
-title: Gestion des ordinateur virtuels 
+title: Gestion des ordinateurs virtuels 
 slug: virtual-machine-management
-excerpt: "Gestion des Ordinateurs virtuels dans Prism Central"
+excerpt: "Apprendre la gestion des ordinateurs virtuels dans Prism Central"
 section: Premiers pas
 order: 06
 ---
@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, modifier et migrer un ordinateur virtuel.
+Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, et migrer un ordinateur virtuel.
 
 
 > [!warning]
@@ -38,8 +38,7 @@ L'offre d'OVHcloud est fournie avec l'hyperviseur *Ahv*.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
 * La micro-segmentation réseau des VM au travers de **Flow**. 
 
-L'outil **Move** permet de migrer facilement des VM existantes d'autre environnement virtuel ou non vers Nutanix et son hyperviseur *Ahv*.
-
+L'outil **Move** permet de migrer facilement des VM existantes d'autres environnements virtuels vers Nutanix et son hyperviseur *Ahv*.
 
 Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -48,7 +47,7 @@ Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin]
 Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, installer le système d'exploitation Windows et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
 
 
-### Création d'une Ordinateur Virtuel un système d'exploitation Windows
+### Création d'une Ordinateur virtuel pour un système d'exploitation Windows
 
 L'installation d'un ordinateur virtuel sous Windows nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques.
 
@@ -66,19 +65,19 @@ Saisissez un nom dans `Name`{.action}, Choisissez les options dans dans `VM Prop
 
 ![Création d'un Ordinateur virtuel - Etape 1](images/CreateVM01.PNG){.thumbnail}
 
-Ajout d'un disques système.
+Ajout d'un disque système.
 
 Cliquez sur `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 2](images/CreateVM02.PNG){.thumbnail}
 
-Saisissez 60 `Capacity`{.action} et cliquez sur `Save`{.action} pour créer un disque de 60 Go.
+Saisissez dancs capacity `60`{.action} et cliquez sur `Save`{.action} pour créer un disque de 60 Go.
 
 ![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG){.thumbnail}
 
 Ajout de 'image ISO de l'installation de Windows Server 2022.
 
-L'image doit être importée avant l'utilisation.
+L'image doit avoir été importée avant l'utilisation dans un nouvel ordinateurs virtuel.
 
 Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther)
 
@@ -88,11 +87,11 @@ Cliquez sur `Attach Disk`{.action}.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
-Ajout de l'image ISO contenant les pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable.
-
-Cliquez sur `Save`{.action}
+et cliquez sur `Save`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 5](images/CreateVM05.PNG){.thumbnail}
+
+Ajout de l'image ISO contenant les pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable.
 
 Cliquez `Attach Disk`{.action}
 
@@ -106,11 +105,11 @@ Cliquez sur `Save`{.action}
 
 Configuration du réseau.
 
-Laissez tel quel et Cliquez sur `Attach Subnet`{.action}.
+Cliquez sur `Attach Subnet`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 8](images/CreateVM08.PNG){.thumbnail}
 
-Cliquez sur `Save`{.action}.
+Laissez tel quel et cliquez sur `Save`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 9](images/CreateVM09.PNG){.thumbnail}
 
@@ -134,7 +133,7 @@ L'ordinateur virtuel nouvellement créé apparait dans le tableau de bord.
 
 Sélection de l'ordinateur virtuel sur lequel Windows Server 2022 sera installé. 
 
-Cliquez sur `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}.
+Cliquez sur la `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}.
 
 ![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG){.thumbnail}
 
@@ -152,7 +151,7 @@ Cliquez sur `Menu action`{.action} et Cliquez sur `Launch Console`{.action}
 
 Lancement de l'installation .
 
-Cliquez sur `Next`{.action}
+Choisissez vos paramètres régionaux et Cliquez sur `Next`{.action}
 
 ![Installation - WS2022 - Etape1](images/InstallWS2022-04.PNG){.thumbnail}
 
@@ -182,7 +181,7 @@ Selectionnez le bon dossier `e:\vioscsi\2k16\amd64`et cliquez sur `OK`{.action}.
 
 ![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG){.thumbnail}
 
-Cliquer sur `Next`{.action}.
+Selectionnnez `Red Hat VirtIO SCSI etc..`{.action}Cliquez sur `Next`{.action}.
 
 ![Installation - WS2022- Etape6](images/InstallWS2022-11.PNG){.thumbnail}
 
@@ -230,7 +229,7 @@ Pour finir l'installation Cliquez sur `Close`{.action}.
 
 ![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
 
-Maintenant que l'installation du système d'exploitation et des pilotes spécifiques à **Ahv** est terminée il faut installer les **Ngt (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
+Maintenant que l'installation du système d'exploitation et des pilotes spécifiques à **Ahv** sont terminées il faut installer les **Ngt (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
 
 Avant de lancer l'installation des **Ngt** s'assurer que sur l'ordinateur virtuel concerné un lecteur de CDROM est déconnecté.
 
@@ -254,7 +253,7 @@ Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
 
 ![NGT Installation 5](images/Ngt-Installation05.png){.thumbnail}
 
-Revenez dans la console de l'ordinateur virtuel et faites `click droit sur un lecteur de CDROM`{.action}.
+Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action}. contenant les **Ngt**
 
 Choisir `Install Nutanix Guest Tools`{.action}.
 
@@ -294,7 +293,7 @@ Choisissez un nœud dans `Host`{.action}
 
 ![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail}
 
-le nom du nœud est changé dans Host quand la migration est terminées
+le nom du nœud est changé dans Host quand la migration est terminée
 
 ![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail}
 
