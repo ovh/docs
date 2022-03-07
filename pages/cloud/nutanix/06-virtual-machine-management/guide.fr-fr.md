@@ -280,32 +280,23 @@ La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtue
 
 Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{.action}.
 
-![Migrate - VM01](images/MigrateVM01.png){.thumbnail}
+![Migrate - VM01](images/MigrateVM01.PNG){.thumbnail}
 
 Dans la nouvelle fenêtre,  à coté Host le nom du nœud sur lequel l'ordinateur virtuel fonctionne actuellement est affiché comme ici *NTNX-221060034-A*
 
- ![Migrate - VM02](images/MigrateVM02.png){.thumbnail}
+ ![Migrate - VM02](images/MigrateVM02.PNG){.thumbnail}
 
 Cliquez dans le menu `More`{.action} et choisissez `Migrate`{.action}
 
- ![Migrate - VM03](images/MigrateVM03.png){.thumbnail}
+ ![Migrate - VM03](images/MigrateVM03.PNG){.thumbnail}
 
 Choisissez un nœud dans `Host`{.action}
 
-![Migrate - VM04](images/MigrateVM04.png){.thumbnail} et cliquez sur `Migrate`{.action}
+![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
 
 Lorque la migration sera terminée, le nom du nœud aura changé dans Host.
 
-![Migrate - VM05](images/MigrateVM05.png){.thumbnail} et cliquez sur `Migrate`{.action}
-
-
-
-
-
-
-
-
-
+![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
 
 
 
