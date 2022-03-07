@@ -125,7 +125,7 @@ Via the graphical user interface:
 1. In your Windows search bar, type `Component Services`{.action} and launch the service.
 2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
 3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
-4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}. Next, click on `Add`{.action}.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}. Next, click on `Add...`{.action}.
 
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
