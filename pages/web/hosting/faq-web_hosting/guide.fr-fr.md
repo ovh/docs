@@ -6,7 +6,7 @@ section: Premiers pas
 order: 2
 ---
 
-**Dernière mise à jour le 03/03/2022**
+**Dernière mise à jour le 07/03/2022**
 
 ## Gestion de votre offre
 
@@ -71,24 +71,16 @@ Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votr
 
 ## Diagnostic
 
+> [!warning]
+>
+> Si vous rencontrez une anomalie non répertoriée dans cette FAQ, consultez la partie « Diagnostics » sur cette [page](https://docs.ovh.com/fr/hosting/).
+>
+
 ### Que faire si mon site web dysfonctionne ? 
 
-Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site Internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois cette vérification faite, consultez les [évèments en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont impactés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi à l'aide des questions suivantes.
+Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site Internet. Pour en identifier la cause, commencez par vérifier que tous vos services sont bien renouvelés et actifs en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois cette vérification faite, consultez les [évéments en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont impactés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi à l'aide des questions suivantes.
 
 **Trucs et Astuces** : Si votre site est soudainement indisponible suite à une manipulation de votre part, vous pouvez restaurer son contenu depuis votre espace client. Pour cela, dirigez-vous sur l'onglet `FTP-SSH` de votre hébergement et cliquez sur le bouton `Restaurer une sauvegarde`{.action}, situé à droite de votre écran. Vous pouvez également vous appuyer sur la documentation suivante : [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
-
-### Que faire si mon site affiche une erreur « Ce site est inaccessible » ?
-
-|Chrome :<br>« Ce site est inaccessible »|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
-|Firefox :<br>« Hum, nous ne parvenons pas à trouver ce site. »|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
-|Edge :<br>« Désolé, impossible d’accéder à cette page »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
-|Safari :<br>« Safari ne parvient pas à trouver le serveur »|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
-
-Consultez le guide [Que faire si mon site est inaccessible ?](https://docs.ovh.com/fr/hosting/erreur-serveur-inaccessible/).
-
-### Je n'arrive pas à installer de module en 1 clic sur mon hébergement. Que dois-je faire ?
-
-Si vous rencontrez des difficultés dans la création d'un module en 1 clic sur votre hébergement OVHcloud, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/erreurs-frequentes-modules-en-1-clic/).
 
 ### Que faire si après publication de mon site, la page « Site en construction » d'OVHcloud reste affichée ?
 
@@ -100,12 +92,6 @@ Ce fichier est automatiquement désactivé lors de la création de votre [module
 
 Si vous avez choisi [d'installer votre site manuellement](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [connectez-vous à votre espace FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) afin de le renommer en **index.html.old**.
 
-### Que faire si mon site affiche une page « Index of » ?
-
-![index_of](images/index_of.png){.thumbnail}
-
-Consultez le guide [Que faire en cas de page « Index of » ?](https://docs.ovh.com/fr/hosting/diagnostic-index-of/).
-
 ### Que faire si mon site s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net » ?
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
@@ -116,7 +102,7 @@ Deux scénarii sont possibles. Soit votre site a été créé sous cette adresse
 
 > [!warning]
 >
-> L'opération de suppression d'une base de données comme celle d'un module en 1 clic sont définitives. Elles entraînent également la suppression des sauvegardes des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, assurez-vous d'être capable de le recréer à l'identique. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+> La suppression d'une base de données, comme celle d'un module en 1 clic, est définitive. Elles entraînent également la suppression des sauvegardes des données concernées. Avant de supprimer votre site sur l'hébergement OVHcloud, assurez-vous d'être capable de le recréer à l'identique. Si vous n'êtes pas certain des manipulations à effectuer, contactez votre webmaster ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
 >
 
 Dans le premier cas, après avoir réalisé toutes les sauvegardes nécessaires, supprimez votre module depuis la partie `Hébergements` de votre espace client OVHcloud :
@@ -144,12 +130,6 @@ Pour restaurer le code source de votre site, consultez notre guide [Restaurer l�
 
 Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
 
-### Que faire si mon site affiche une page « Site non installé" ?
-
-![site-not-installed2021](images/site-not-installed2021.png){.thumbnail}
-
-Consultez le guide [Résoudre l’erreur « Site non installé »](https://docs.ovh.com/fr/hosting/erreur-site-non-installe/).
-
 ### Que faire si mon site redirige vers le webmail OVHcloud ?
 
 ![webmail](images/webmail.png){.thumbnail}
@@ -158,85 +138,61 @@ Cette anomalie indique une configuration erronée au niveau des [serveurs DNS](h
 
 Le cas le plus courant est lié au fait que votre nom de domaine et votre hébergement ayant été commandés séparément, ils ne sont pas reliés entre eux.
 
-Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), 
+Rendez-vous dans la partie `Domaines`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur le nom de domaine concerné puis sur l'onglet `Serveurs DNS`{.action}.
 
-### Que faire si mon site affiche une erreur « 403 forbidden » ?
+Notez ensuite les serveurs DNS indiqués puis rendez vous dans l'onglet `Zone DNS`{.action}. 
 
-![403error](images/403error.png){.thumbnail}
+Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone DNS`{.action} avec les `Serveurs DNS` indiqués dans l'onglet du même nom :
 
-Consultez le guide [Réagir en cas de désactivation pour sécurité d’un hébergement](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/).
-
-### Que faire si mon nom de domaine redirige vers un site inconnu ?
-
-### Que faire si mon site affiche une erreur indiquant que la version PHP de mon hébergement est insuffisante ?
-
-![erreur_wp_php](images/erreur_wp_php.png){.thumbnail}
-
-Consultez le guide [Changer la version de PHP de son hébergement web](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/).
-
-### Que faire si mon site affiche une page « Error establishing database connection » ?
-
-![error_establishing_a_DB_connection](images/error_establishing_a_DB_connection.png){.thumbnail}
-
-Consultez le guide [Résoudre les erreurs les plus fréquentes liées aux bases de données](https://docs.ovh.com/fr/hosting/erreurs-frequentes-bases-de-donnees/#erreur-lors-de-la-connexion-a-la-base-de-donnees).
+- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (Pour les manipulations à effectuer, suivez les instructions de ce [guide](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#en-pratique)).
+- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans cette [liste](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), effectuez une réinitialisation en suivant les instructions de ce [guide](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns).
 
 ### Que faire si mon site affiche une erreur « Too many redirect » ?
 
+> [!alert]
+>
+> La restauration de votre hébergement OVHcloud entraînera celle de l'ensemble des sites qu'il contient.
+>
+> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur FTP ou celles de la base de données juste avant la restauration.
+>
+
+Si vous ne souhaitez pas faire appel à un Webmaster, restaurez votre site à son état précédent :
+
+- Pour restaurer le code source de votre site, consultez notre guide [Restaurer l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
+
+- Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
+
+Dans le cas contraire ou si les restaurations ne vous permettent pas de rétablir l'accès à votre site, consultez le site de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+
+### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache) » ?
+
+![503_varnish](images/503_varnish.png){.thumbnail}
+
+Si vous avez activé l'option [CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) de votre hébergement, désactivez le mode *Maintenance* sur votre site Wordpress ou Prestashop.
+
+Si vous n'avez pas activé cette option ni utilisé le mode *Maintenance*, contactez votre Webmaster ou consultez le site de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).
+
+### Que faire si mon site affiche une erreur  « Your request has been blocked » ?
+
+![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
+
+Ce message indique que le type de requête HTTP que vous tentez de faire sur votre site est interdit pour un temps limité. Dans cette situation, [examinez les logs]() de votre site, afin de déterminer quelles requêtes ont 
+
+### Que faire si mon site affiche une erreur  « Your IP has been banned » ?
+
+![your_ip_has_been_blocked](images/your_ip_has_been_blocked.png){.thumbnail}
 
 
-### Que faire si mon site affiche une erreur « 500 Internal Server Error » ?
 
-![error-500](images/error-500.png){.thumbnail}
-
-Si votre site affiche une erreur **500 Internal Server Error**, suivez les instructions de ce [guide](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
-
-### Que faire si mon site rencontre des lenteurs ?
-
-Consultez le guide [Optimisation des performances de votre site](https://docs.ovh.com/fr/hosting/optimisation-performances-site/).
-
-### Que faire si mon site affiche une page blanche ?
-
-Consultez le guide [](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/).
-
-### Que faire si ma base de données est pleine ?
-
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
-
-Si la base de données de votre site excède le quota autorisée, consultez ce [guide]().
-
-### Que faire si mon site affiche « Connexion non sécurisée ?
-
-Firefox :
-
-![](images/.png){.thumbnail}
-
-Chrome :
-
-![notsecured_chrome](images/notsecured_chrome.png){.thumbnail}
-
-Safari :
-
-![](images/.png){.thumbnail}
-
-Edge :
-
-![](images/.png){.thumbnail}
-
-### Que faire si mon site affiche une erreur « 503 error Backend fetch failed (Varnish cache)" ?
+### Le nom de domaine qui apparaît dans mon espace client ne correspond pas à celui que j'ai commandé. Que dois-je faire ? (notation IDN)
 
 ![](images/.png){.thumbnail}
 
-### Que faire si mon site affiche une erreur  « Your request has been blocked" ou Your IP has been banned" ?
 
-![](images/.png){.thumbnail}
-
-### Le nom de domaine qui apparaît dans mon espace client est bizarre et ne correspond pas à celui que j'ai commandé. Que dois-je faire ? (notation IDN)
-
-![](images/.png){.thumbnail}
 
 ## Aller plus loin <a name="allerplusloin"></a>
 
-[Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[FAQ - E-mails mutualisés MX Plan](https://docs.ovh.com/fr/emails/faq-emails/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/)
 
