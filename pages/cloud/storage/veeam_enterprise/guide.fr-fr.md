@@ -125,11 +125,11 @@ Via l’interface graphique d’utilisateur :
 1. Dans votre barre de recherche Windows, tapez `Services de composants`{.action} et lancez le service.
 2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
 3. À droite, sous l'onglet `Actions`{.action}, cliquez sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
-4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action}. Ensuite, cliquez sur `Ajouter`{.action}.
+4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier les limites`{.action}. Ensuite, cliquez sur `Ajouter...`{.action}.
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd.png){.thumbnail}
 
-5. Cliquez sur `Avancé`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.
+5. Cliquez sur `Avancé...`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd1.png){.thumbnail}
 
