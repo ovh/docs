@@ -45,6 +45,12 @@ Se abrirá una ventana en la que podrá gestionar el período de renovación de 
 - **Anual**: Se le facturará durante 12 meses a la fecha indicada en la columna **Expiración.**
 - **Ninguna**: la cuenta se suspenderá y se eliminará en la fecha indicada en la columna **Expiración.**
 
+> [!primary]
+>
+> Para una gestión simplificada, la facturación de cada cuenta Email Pro se ajusta automáticamente a principios de mes. Para proceder a la alineación y, en su caso, mover la fecha de suscripción, recibirá una factura de su cuenta Email Pro de la parte proporcional al período restante.
+>
+>Ejemplo: Si el pedido se realiza el 8 de enero con una suscripción mensual, la siguiente facturación se realizará el 8 de febrero. La siguiente factura cubrirá el período comprendido entre el 8 de febrero y el 1 de marzo.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Haga clic en `Siguiente`{.action} para consultar el resumen de los cambios solicitados y, seguidamente, haga clic en `Aceptar`{.action} para confirmar su elección.

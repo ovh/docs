@@ -41,6 +41,12 @@ In the new window, the table allows you to manage the renewal period for each ac
 - **Yearly**: You are billed for 12 months on the date listed in the **Expiry** column.
 - **None**: The account will be suspended, then deleted on the date listed in the **Expiry** column.
 
+> [!primary]
+>
+> For simplified management, the billing for each Email Pro account is automatically aligned at the beginning of the month. To make this alignment, and move the subscription date if necessary, you will receive an invoice from your Email Pro account on a pro rata basis.
+>
+>Example: An order placed on 08 January with a monthly subscription will be billed again on 08 February. The following invoice will cover the period between February 08 and March 1st.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Click `Next`{.action} to access the summary of the requested changes, then click `Confirm`{.action} to confirm your choice.

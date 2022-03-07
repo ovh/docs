@@ -45,6 +45,12 @@ Im neuen Fenster können Sie den Verlängerungszeitraum jedes Accounts über die
 - **Jährlich**: Die Abrechnung erfolgt für 12 Monate zu dem in der Spalte **Ablaufdatum** genannten Datum.
 - **Keine**: Der Account wird geschlossen und an dem in der Spalte **Ablaufdatum** genannten Datum  gelöscht.
 
+> [!primary]
+>
+> Für eine vereinfachte Verwaltung wird die Abrechnung jedes Dienstes automatisch auf den Ersten des Monats angepasst. Um diese Anpassung vorzunehmen und das Abonnement gegebenenfalls zu verschieben, erhalten Sie eine anteilige Rechnung für Ihren E-Mail Pro Account.
+>
+> Beispiel: Eine Bestellung, die am 08. Januar mit monatlichem Abonnement ausgeführt wird, zieht die nächste Abrechnung am 08. Februar nach sich. Die nächste Rechnung betrifft den Zeitraum vom 08. Februar bis zum 01. März.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Klicken Sie auf `Weiter`{.action}, um die Zusammenfassung der Änderungen anzuzeigen, und klicken Sie dann auf `Bestätigen`{.action}, um Ihre Auswahl zu bestätigen.

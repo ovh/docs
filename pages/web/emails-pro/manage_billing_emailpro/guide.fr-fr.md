@@ -42,6 +42,12 @@ Vous pouvez aussi le faire individuellement devant chaque compte.
 - **Annuel** : vous êtes facturé sur 12 mois à la date mentionnée dans la colonne **Expiration**.
 - **Aucune** : le compte sera suspendu puis supprimé à la date mentionnée dans la colonne **Expiration**.
 
+> [!primary]
+>
+> Pour une gestion simplifée, la facturation de chaque compte Email Pro est automatiquement alignée en début de mois. Pour procéder à cet alignement, et donc déplacer la date d'abonnement le cas échéant, vous recevrez une facture de votre compte Email Pro au prorata temporis.
+>
+>Exemple: Une commande effectuée le 08 janvier avec un abonnement mensuel entraînera sa prochaine facturation le 08 février. La facture suivante couvrira la période entre le 08 février et le 1er mars.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Cliquer sur `Suivant`{.action} pour accéder au résumé des changements qui ont été demandés. Cliquez enfin sur `Valider`{.action} pour confirmer votre choix.

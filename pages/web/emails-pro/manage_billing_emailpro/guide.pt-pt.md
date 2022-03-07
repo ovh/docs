@@ -45,6 +45,12 @@ Aparecerá uma janela, a tabela permite-lhe gerir o período de renovação de c
 - **Anual**: Foi faturado durante 12 meses na data indicada na coluna **Expiração**
 - **Nenhuma**: a conta será suspensa e eliminada na data indicada na coluna **Expiração**
 
+> [!primary]
+>
+> Para uma gestão simplificada, a faturação de cada conta Email Pro é automaticamente alinhada no início do mês. Para proceder a este alinhamento, e assim deslocar a data de subscrição caso seja necessário, receberá uma fatura da sua conta Email Pro numa base pro rata temporis.
+>
+>Exemplo: Uma encomenda efetuada no dia 08 de Janeiro com um plano de subscrição mensal levará à sua próxima faturação no dia 08 de fevereiro. A fatura seguinte abrangerá o período de 8 de fevereiro a 1 de março.
+
 ![billing_emailpro](images/billing-emailpro-03.png){.thumbnail}
 
 Clique em `Seguinte`{.action} para aceder ao resumo das alterações que foram pedidas e, a seguir, clique em `Validar`{.action} para confirmar a sua escolha.
