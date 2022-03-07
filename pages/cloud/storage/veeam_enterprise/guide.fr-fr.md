@@ -77,7 +77,7 @@ Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer l
 
 Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
-Lancez Windows Powershell en tant qu'administrateur.
+Pour commencer, lancez Windows Powershell en tant qu'administrateur.
 
 Créez ensuite un compte de service, en entrant ces lignes de commande :
 
