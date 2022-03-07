@@ -282,7 +282,7 @@ Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{
 
 ![Migrate - VM01](images/MigrateVM01.PNG){.thumbnail}
 
-Dans la nouvelle fenêtre,  à coté Host le nom du nœud sur lequel l'ordinateur virtuel fonctionne actuellement est affiché comme ici *NTNX-221060034-A*
+Dans la nouvelle fenêtre, à coté de Host le nom du nœud sur lequel l'ordinateur virtuel fonctionne actuellement est affiché comme ici *NTNX-221060034-A*
 
  ![Migrate - VM02](images/MigrateVM02.PNG){.thumbnail}
 
@@ -294,10 +294,9 @@ Choisissez un nœud dans `Host`{.action}
 
 ![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
 
-Lorque la migration sera terminée, le nom du nœud aura changé dans Host.
+le nom du nœud est changé dans Host quand la migration est terminées
 
 ![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail} et cliquez sur `Migrate`{.action}
-
 
 
 ## Aller plus loin <a name="gofurther"></a>
