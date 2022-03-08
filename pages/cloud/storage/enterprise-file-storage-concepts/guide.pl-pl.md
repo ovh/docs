@@ -41,7 +41,7 @@ Możesz zamówić jedną lub kilka przestrzeni dyskowych między 1TiB i 29TiB na
 >
 > - Dla Enterprise File Storage, ponieważ chcemy być z Tobą transparentni, dostarczymy TiB wolumen nawet jeśli TB będzie dla Ciebie jednostką, ponieważ ogół społeczeństwa używa TB.
 >
-> - Jeśli zamawiasz usługę Enterprise File Storage o rozmiarze 1 TB, w rzeczywistości dysponujesz 1 TiB = 1,09951 TB ;-).
+> - Jeśli zamawiasz usługę Enterprise File Storage o rozmiarze 1 TB, w rzeczywistości dysponujesz 1 TiB = 1,09951 TB.
 >
 
 ### Zasada działania puli
