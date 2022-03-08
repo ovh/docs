@@ -224,7 +224,7 @@ Faites `Clic droit sur PCI Device dans Other Devices`{.action} et cliquez sur `U
 
 ![Post Installation - WS2022- Pilotes Etape 2](images/InstallWS2022-20.PNG){.thumbnail}
 
-Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}.
+Sélectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}.
 
 ![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG){.thumbnail}
 
@@ -234,7 +234,7 @@ Pour finir l'installation Cliquez sur `Close`{.action}.
 
 ![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
 
-Installation des **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
+Installation des **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure interaction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
 
 Lancez la console de l'ordinateur virtuel et Faites un `click droit sur un lecteur de CDROM`{.action} et Cliquez sur `Eject`{.action}.
 
@@ -257,7 +257,7 @@ Cliquez sur `Skip and Mount`{.action}.
 
 ![NGT Installation 5](images/Ngt-Installation05.png){.thumbnail}
 
-Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action}. contenant les **NGT (Nutanix Guest Tools)**
+Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action} contenant les **NGT (Nutanix Guest Tools)**
 
 Choisissez `Install Nutanix Guest Tools`{.action}.
 
