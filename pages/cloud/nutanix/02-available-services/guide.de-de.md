@@ -1,5 +1,5 @@
 ---
-title: Liste der Dienstleistungen und Lizenzen inklusive (EN)
+title: Liste der Dienstleistungen und inkludierten Lizenzen (EN)
 slug: available-services
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/available-services/'
@@ -12,7 +12,7 @@ order: 02
 
 ## Objective
 
-This page lists the included Nutanix licences and services in the **Hosted Private Cloud powered by Nutanix** offer
+This page lists the included Nutanix licences and services in the **Hosted Private Cloud powered by Nutanix** offer.
 
 ## Scope of included Nutanix licences and services in the Hosted Private Cloud powered by Nutanix offer
 

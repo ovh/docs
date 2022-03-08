@@ -1,9 +1,9 @@
 ---
-title: Vorstellung des Storages auf Nutanix (EN)
+title: Übersicht Nutanix Storage (EN)
 slug: storage
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/storage/'
-excerpt: Overview of Storage Management in a Nutanix Cluster
+excerpt: Overview of Storage Management in a Nutanix cluster
 section: Erste Schritte
 order: 04
 ---
@@ -38,7 +38,7 @@ The data is not stored directly in the Storage Pool, it is stored in **Storage C
 There are also **Volume Groups** that provide the ability to access via ISCSI or directly in SCSI simulation for:
 
 - A third-party computer outside the cluster or a cluster VM
-- Multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in Cluster mode
+- Multiple third-party computers or VMs in the cluster for applications that require shared storage, such as Microsoft SQL databases in cluster mode
 
 ## Instructions
 

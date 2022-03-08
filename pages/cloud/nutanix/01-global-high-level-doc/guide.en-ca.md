@@ -11,11 +11,11 @@ hidden: true
 
 ## Objective
 
-This page provides an explanation of the elements that constitute a Nutanix Cluster as delivered by OVHcloud and how it functions on the OVHcloud infrastructure.
+This page provides an explanation of the elements that constitute a Nutanix cluster as delivered by OVHcloud and how it functions on the OVHcloud infrastructure.
 
 ### Main characteristics
 
-A Nutanix Cluster consists of a stack of OVHcloud services:
+A Nutanix cluster consists of a stack of OVHcloud services:
 
 - [Dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/)
 - [vRack](https://www.ovh.com/ca/en/solutions/vrack/)
