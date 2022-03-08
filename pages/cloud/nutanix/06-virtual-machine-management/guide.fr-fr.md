@@ -38,13 +38,15 @@ L'offre d'OVHcloud est fournie avec l'hyperviseur **AHV**.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
 * La micro-segmentation et la sécurisation du réseau entre ordinateurs virtuels en utilisant le logiciel **Flow**. 
 
-L'outil **Move** permet de migrer facilement des VM existantes d'autres environnements (**Esxi, HyperV & AWS**) vers Nutanix et son hyperviseur **AHV**.
+L'outil **Move** permet de migrer facilement des ordinateurs virtuels existants d'autres environnements (**Esxi, HyperV & AWS**) vers Nutanix et son hyperviseur **AHV**.
 
 Pour plus de détails sur **Ahv** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
 Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows Server 2022 en partant de la création de l'ordinateur virtuel jusqu'à l'installation du système d'exploitation et des outils **NGT (Nutanix Guest Tools).
+
+Nous allons voir aussi la migration d'un ordinateur virtuel.
 
 ### Création d'une Ordinateur virtuel pour un système d'exploitation Windows
 
@@ -92,7 +94,7 @@ et cliquez sur `Save`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 5](images/CreateVM05.PNG){.thumbnail}
 
-Ajout de l'image ISO contenant les pilotes spécifiques à **AHV** notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable. Elle est disponible sur le site Internet de Nutanix si l'on a un compte client.
+Ajout de l'image ISO contenant les pilotes spécifiques à **AHV** notamment le pilote du contrôleur de disques. Cette image aussi doit être importée. Elle est disponible sur le site Internet de Nutanix si l'on a un compte client.
 
 Cliquez `Attach Disk`{.action}.
 
@@ -152,7 +154,7 @@ Cliquez sur `Menu action`{.action} et Cliquez sur `Launch Console`{.action}
 
 ![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG){.thumbnail}
 
-Commencer l'installation.
+Commencez l'installation.
 
 Choisissez vos paramètres régionaux et Cliquez sur `Next`{.action}
 
@@ -206,7 +208,7 @@ Ensuite Cliquez sur `Finish`{.action}.
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG){.thumbnail}
 
-Allez dans le gestionnaire de périphérique pour installer le pilote de la carte réseau et un pilote système spécifique à **Ahv**.
+Allez dans le gestionnaire de périphérique pour installer le pilote de la carte réseau et un pilote système spécifique à **AHV**.
 
 Faites `Clic droit sur Ethernet Controller`{.action} et cliquez sur `Update Driver`{.action}.
 
@@ -279,13 +281,17 @@ L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
 ### Migration d'un ordinateur virtuel.
 
-La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster. Si l'on a plusierus clusters et les bonnes licences il est possible de faire de la migration d'un cluster à l'autre aussi. Cette documentation ne montre qu'un migration à l'intérieur d'un cluster.
+La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster. 
+
+Si l'on a plusieurs clusters et les bonnes licences il est possible de faire de la migration d'un cluster à l'autre aussi. 
+
+Cette documentation ne montre qu'un migration à l'intérieur du même cluster.
 
 Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{.action}.
 
 ![Migrate - VM01](images/MigrateVM01.PNG){.thumbnail}
 
-Dans la nouvelle fenêtre, à coté de Host le nom du nœud sur lequel l'ordinateur virtuel fonctionne actuellement est affiché comme ici *NTNX-221060034-A*
+contrôler sur quel nœud l'ordinateur fonctionne actuellement  il est affiché à coté de Host au milieu de la fenêtre
 
  ![Migrate - VM02](images/MigrateVM02.PNG){.thumbnail}
 
@@ -297,7 +303,7 @@ Choisissez un nœud dans `Host`{.action}
 
 ![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail}
 
-le nom du nœud est changé dans Host quand si la  migration s'est bien terminée
+le nom du nœud est changé dans Host si la  migration s'est bien terminée
 
 ![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail}
 
