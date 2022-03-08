@@ -1,7 +1,7 @@
 ---
 title: Gestion des ordinateurs virtuels 
 slug: virtual-machine-management
-excerpt: "Apprendre la gestion des ordinateurs virtuels dans Prism Central"
+excerpt: "Decouvrez la gestion des ordinateurs virtuels dans Prism Central"
 section: Premiers pas
 order: 06
 ---
@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, et migrer un ordinateur virtuel.
+Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, et de migrer un ordinateur virtuel.
 
 
 > [!warning]
@@ -28,31 +28,30 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (*Hyperv, Vmware Esxi , Ahv*). *Ahv* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (**Hyperv, Vmware Esxi , AHV**). *AHV* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
 
-L'offre d'OVHcloud est fournie avec l'hyperviseur *Ahv*.
+L'offre d'OVHcloud est fournie avec l'hyperviseur *AHV*.
 
-*Ahv* permet :
+**AHV** permet entre autre de :
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
 * La micro-segmentation réseau des VM au travers de **Flow**. 
 
-L'outil **Move** permet de migrer facilement des VM existantes d'autres environnements virtuels vers Nutanix et son hyperviseur *Ahv*.
+L'outil **Move** permet de migrer facilement des VM existantes d'autres environnements (**Esxi, HyperV & AWS**) vers Nutanix et son hyperviseur **AHV**.
 
 Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows, installer le système d'exploitation Windows et migrer un ordinateur virtuel d'un nœud à l'autre du cluster.
-
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows Server 2022 en partant de la création de l'ordinateur virtuel jusqu'à l'installation du système d'exploitation.
 
 ### Création d'une Ordinateur virtuel pour un système d'exploitation Windows
 
-L'installation d'un ordinateur virtuel sous Windows nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques.
+L'installation d'un ordinateur virtuel sous Windows Server 2022 nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques de l'hyperviseur **AHV**.
 
-Lancement de l'installation de Windows Server 2022
-
+#### Création de l'ordinateur virtuel Windows Server 2022
+ 
 Dans **Prism Central** dans le menu de gauche dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
 ![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG){.thumbnail}
@@ -79,7 +78,7 @@ Ajout de 'image ISO de l'installation de Windows Server 2022.
 
 L'image doit avoir été importée avant l'utilisation dans un nouvel ordinateurs virtuel.
 
-Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther)
+Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther).
 
 Cliquez sur `Attach Disk`{.action}.
 
@@ -87,17 +86,17 @@ Cliquez sur `Attach Disk`{.action}.
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
-et cliquez sur `Save`{.action}
+et cliquez sur `Save`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 5](images/CreateVM05.PNG){.thumbnail}
 
-Ajout de l'image ISO contenant les pilotes spécifiques à *Ahv* notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable.
+Ajout de l'image ISO contenant les pilotes spécifiques à **AHV** notamment le pilote du contrôleur de disques. Cette image aussi doit être importée au préalable. Elle est disponible sur le site Internet de Nutanix si l'on a un compte client.
 
-Cliquez `Attach Disk`{.action}
+Cliquez `Attach Disk`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
-Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**
+Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**.
 
 Cliquez sur `Save`{.action}
 
@@ -129,27 +128,27 @@ L'ordinateur virtuel nouvellement créé apparait dans le tableau de bord.
 
 ![Tableau de bord VMs - VM Créé](images/CreateVM13.PNG){.thumbnail}.
  
-### Installation de Windows Server 2022
+#### Installation de Windows Server 2022
 
-Sélection de l'ordinateur virtuel sur lequel Windows Server 2022 sera installé. 
+Sélectionnez l'ordinateur virtuel sur lequel Windows Server 2022 sera installé. 
 
 Cliquez sur la `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}.
 
 ![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG){.thumbnail}
 
-Démarrage de l'ordinateur virtuel.
+Démarrez l'ordinateur virtuel.
 
 Cliquez sur `Menu action`{.action} et Cliquez sur `Power ON`{.action}
 
 ![Installation - WS2022 - Démarrage ](images/InstallWS2022-02.PNG){.thumbnail}
 
-Lancement de la console.
+Lancez la console.
 
 Cliquez sur `Menu action`{.action} et Cliquez sur `Launch Console`{.action}
 
 ![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG){.thumbnail}
 
-Lancement de l'installation .
+Commencer l'installation.
 
 Choisissez vos paramètres régionaux et Cliquez sur `Next`{.action}
 
@@ -189,7 +188,7 @@ Le disque de 60 Gb apparait, cliquez sur `Next`{.action}.
 
 ![Installation - WS2022- Etape6](images/InstallWS2022-12.PNG){.thumbnail}
 
-Attendre la fin de l'installation.
+Attendez la fin de l'installation.
 
 ![Installation - WS2022- Etape7](images/InstallWS2022-13.PNG){.thumbnail}
 
@@ -225,13 +224,15 @@ Selectionnez le dossier **E:\Balloon\2k16\amd64** et cliquez sur `Next`{.action}
 
 ![Post Installation - WS2022- Pilotes Etape 3](images/InstallWS2022-21.PNG){.thumbnail}
 
+
 Pour finir l'installation Cliquez sur `Close`{.action}.
+
 
 ![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
 
-Maintenant que l'installation du système d'exploitation et des pilotes spécifiques à **Ahv** sont terminées il faut installer les **Ngt (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
+Il faut installer les **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
 
-Avant de lancer l'installation des **Ngt** s'assurer que sur l'ordinateur virtuel concerné un lecteur de CDROM est déconnecté.
+Avant de lancer l'installation des **NGT (Nutanix Guest TOOLS)** il faut s'assurer que sur l'ordinateur virtuel concerné un lecteur de CDROM est déconnecté.
 
 Lancez la console de l'ordinateur virtuel et Faites un `click droit sur un lecteur de CDROM`{.action} et Cliquez sur `Eject`{.action}.
 
@@ -253,7 +254,7 @@ Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
 
 ![NGT Installation 5](images/Ngt-Installation05.png){.thumbnail}
 
-Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action}. contenant les **Ngt**
+Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action}. contenant les **NGT (Nutanix Guest Tools)**
 
 Choisir `Install Nutanix Guest Tools`{.action}.
 
@@ -275,7 +276,7 @@ L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
 ### Migration d'un ordinateur virtuel.
 
-La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster.
+La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster. Si l'on a plusierus clusters et le bonnes licences il est possible de faire de la migration d'un cluster à l'autre aussi. Cette documentation ne montre qu'un migration à l'intérieur d'un cluster.
 
 Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{.action}.
 
@@ -293,7 +294,7 @@ Choisissez un nœud dans `Host`{.action}
 
 ![Migrate - VM04](images/MigrateVM04.PNG){.thumbnail}
 
-le nom du nœud est changé dans Host quand la migration est terminée
+le nom du nœud est changé dans Host quand si la  migration s'est bien terminée
 
 ![Migrate - VM05](images/MigrateVM05.PNG){.thumbnail}
 
@@ -301,9 +302,9 @@ le nom du nœud est changé dans Host quand la migration est terminée
 
 [Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
-[Importation d'images dans Nutanix](https://docs.ovh.com/fr/nutanix/image-import)
+[Importation d'images dans Nutanix](https://docs.ovh.com/fr/nutanix/image-import/)
 
-[Documentation Nutanix sur Ahv](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
+[Documentation Nutanix sur AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 
 [Les licences Nutanix](https://www.nutanix.com/products/software-options)
 
