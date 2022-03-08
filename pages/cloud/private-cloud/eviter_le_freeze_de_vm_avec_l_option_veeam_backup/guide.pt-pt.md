@@ -22,7 +22,7 @@ Isto deve-se ao facto de o snapshot da VM estar instalado no backup proxy, que f
 
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a fim de receber dados de acesso.
 - Ter um identificador de utilizador ativo (criado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
-- Ativar a opção [Veeam Backup Managed](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/veeam-backup-managed/) {.external}.
+- Ativar a opção [Veeam Backup Managed](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
 
 ## Instruções
 
