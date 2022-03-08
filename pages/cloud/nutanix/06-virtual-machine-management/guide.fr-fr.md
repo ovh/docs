@@ -30,21 +30,21 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être c
 
 Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (**Hyperv, Vmware Esxi , AHV**). **AHV** est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
 
-L'offre d'OVHcloud est fournie avec l'hyperviseur *AHV*.
+L'offre d'OVHcloud est fournie avec l'hyperviseur **AHV**.
 
 **AHV** permet entre autre de :
 
 * L'utilisation d'ordinateurs virtuels sous Windows et Linux.
 * La migration d'ordinateurs virtuels d'un nœud à l'autre d'un cluster.
-* La micro-segmentation réseau des VM au travers de **Flow**. 
+* La micro-segmentation et la sécurisation du réseau entre ordinateurs virtuels en utilisant le logiciel **Flow**. 
 
 L'outil **Move** permet de migrer facilement des VM existantes d'autres environnements (**Esxi, HyperV & AWS**) vers Nutanix et son hyperviseur **AHV**.
 
-Pour plus de détails sur *Ahv* reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+Pour plus de détails sur **Ahv** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows Server 2022 en partant de la création de l'ordinateur virtuel jusqu'à l'installation du système d'exploitation.
+Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows Server 2022 en partant de la création de l'ordinateur virtuel jusqu'à l'installation du système d'exploitation et des outils **NGT (Nutanix Guest Tools).
 
 ### Création d'une Ordinateur virtuel pour un système d'exploitation Windows
 
@@ -76,13 +76,15 @@ Saisissez dancs capacity `60`{.action} et cliquez sur `Save`{.action} pour crée
 
 Ajout de 'image ISO de l'installation de Windows Server 2022.
 
-L'image doit avoir été importée avant l'utilisation dans un nouvel ordinateurs virtuel.
+L'image doit être importée avant d'être utilisable dans un nouvel Ordinateur Virtuel.
 
 Pour plus de détails sur *L'importation d'images* reportez-vous à la section « [Aller plus loin](#gofurther).
+
 
 Cliquez sur `Attach Disk`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 4](images/CreateVM04.PNG){.thumbnail}
+
 
 Changez ces paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **WS2022EN.ISO**.
 
@@ -232,9 +234,7 @@ Pour finir l'installation Cliquez sur `Close`{.action}.
 
 ![Post Installation - WS2022- Pilotes Etape 4](images/InstallWS2022-22.PNG){.thumbnail}
 
-Il faut installer les **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
-
-Avant de lancer l'installation des **NGT (Nutanix Guest TOOLS)** il faut s'assurer que sur l'ordinateur virtuel concerné un lecteur de CDROM est déconnecté.
+Installation des **NGT (Nutanix Guest TOOLS)** qui permettent une meilleure intéraction avec Nutanix notamment au niveau des sauvegardes et des Snapshots.
 
 Lancez la console de l'ordinateur virtuel et Faites un `click droit sur un lecteur de CDROM`{.action} et Cliquez sur `Eject`{.action}.
 
@@ -259,11 +259,11 @@ Cliquez sur `Skip and Mount`{.action}.
 
 Revenez dans la console de l'ordinateur virtuel et faites `click droit le lecteur de CDROM`{.action}. contenant les **NGT (Nutanix Guest Tools)**
 
-Choisir `Install Nutanix Guest Tools`{.action}.
+Choisissez `Install Nutanix Guest Tools`{.action}.
 
 ![NGT Installation 6](images/Ngt-Installation06.png){.thumbnail}
 
-Choisir `I agree to the Etc...`{.action} et cliquez sur `Install`{.action}.
+Choisissez `I agree to the Etc...`{.action} et cliquez sur `Install`{.action}.
 
 ![NGT Installation 7](images/Ngt-Installation07.png){.thumbnail}
 
