@@ -1,14 +1,14 @@
 ---
 title: 'Cisco ASA Firewall aktualisieren'
 slug: cisco-asa-firewall-aktualisieren
-excerpt: 'Hier erfahren Sie, wie Sie Ihre Cisco ASA Firewall aktualisieren.'
+excerpt: 'Hier erfahren Sie, wie Sie Ihre Cisco ASA Firewall aktualisieren'
 section: 'Fortgeschrittene Nutzung'
 ---
 
 > [!primary]
-> **End of support for the Cisco ASA Firewall feature on dedicated servers**
+> **End of support Cisco ASA Firewall**
 >
-> OVHcloud announces the end of its support for the Cisco ASA Firewall feature for dedicated servers. More information is available on [this page](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
+> OVHcloud stellt den Support für das Dedicated Server Feature Cisco ASA Firewall demnächst ein. Genauere Informationen finden Sie auf [dieser Seite](https://docs.ovh.com/gb/en/dedicated/cisco-asa-eol/).
 >
 
 **Stand 16.08.2018**
