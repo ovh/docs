@@ -12,7 +12,7 @@ order: 02
 
 ## Objective
 
-This page lists the included Nutanix licences and services in the **Hosted Private Cloud powered by Nutanix** offer
+This page lists the included Nutanix licences and services in the **Hosted Private Cloud powered by Nutanix** offer.
 
 ## Scope of included Nutanix licences and services in the Hosted Private Cloud powered by Nutanix offer
 
