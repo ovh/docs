@@ -34,7 +34,7 @@ order: 01
 ## Procedimiento
 
 > [!primary]
-> En primer lugar, compruebe si nuestra herramienta [OVH Mail Migrator](https://omm.ovh.net/) {.external} permite la migración automática. Para ello, consulte la guía [Migrar cuentas de correo electrónico a través de OVH Mail Migrator](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/) {.external}.
+> En primer lugar, compruebe si nuestra herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external} permite la migración automática. Para ello, consulte la guía [Migrar cuentas de correo electrónico a través de OVH Mail Migrator](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange-migracion-de-cuentas-correo-ovh-mail-migrator/){.external}.
 
 En esta guía hemos realizado las operaciones con los tres programas de correo más utilizados, **Outlook**, **Mail** en Mac OS y **Thunderbird**.
 

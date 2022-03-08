@@ -24,4 +24,4 @@ This page provides an overview of the technical limitations of the Object Storag
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

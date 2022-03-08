@@ -28,7 +28,7 @@ Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=g
 
 Haga clic en los `...`{.action} a la derecha del snapshot seleccionado y por último, en `Crear una instancia`{.action}.
 
-![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
 Se abrirá la página de creación de instancia.
 

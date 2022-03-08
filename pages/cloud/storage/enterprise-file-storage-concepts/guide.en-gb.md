@@ -29,7 +29,7 @@ You can order one or more storage spaces between 1 TiB and 29 TiB with your OVHc
 >
 > - T, the “tera-” prefix, is a metric and SI standard where you are using base-10. So 1 TB = 10^12=1000000000000 bytes = 1000 GB.
 >
-> - Ti, the “Tebi-” prefix, was created later as one of the Binary prefixes that are now an IEC/ISO standard where you are using base-2. It means 1024^4=2^40. So 1 TiB = 1099511627776 bytes= 1024 GiB.
+> - Ti, the “Tebi-” prefix, was created later as one of the Binary prefixes that are now an IEC/ISO standard where you are using base-2. It means 1024^4=2^40. So 1 TiB = 1099511627776 bytes = 1024 GiB.
 >
 > - Computers are using base-2 so the amount of storage that you can see in your OS is in TiB. Storage vendors tend to use TB because it makes for a larger number than TiB.
 >
@@ -37,7 +37,7 @@ You can order one or more storage spaces between 1 TiB and 29 TiB with your OVHc
 >
 > - For Enterprise File Storage, because we want to be transparent with you, we will deliver the volume in TiB even if you see TB as unit because the general public is using TB.
 >
-> - So if you order a 1 TB Enterprise File Storage, in reality, you will have 1TiB = 1,09951 TB ;-).
+> - So if you order a 1 TB Enterprise File Storage, in reality, you will have 1TiB = 1,09951 TB.
 >
 
 ### The principle of capacity pools

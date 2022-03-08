@@ -3,7 +3,7 @@ title: Presentazione dello storage su Nutanix (EN)
 slug: storage
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/storage/'
-excerpt: Overview of Storage Management in a Nutanix Cluster
+excerpt: Overview of Storage Management in a Nutanix cluster
 section: Per iniziare
 order: 04
 ---

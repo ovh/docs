@@ -4,7 +4,7 @@ slug: nutanix-public-ip
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-public-ip/'
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
-section: Rete e sicurezza
+section: Rete e Sicurezza
 order: 04
 ---
 
@@ -24,7 +24,7 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 
 ## Requirements
 
-- A Nutanix Cluster in your OVHcloud account
+- A Nutanix cluster in your OVHcloud account
 - Login credentials and URL for Prism Central, received via email after the installation
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - An available failover IP address

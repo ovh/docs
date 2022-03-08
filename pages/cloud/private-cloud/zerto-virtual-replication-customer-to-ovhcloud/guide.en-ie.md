@@ -1,5 +1,5 @@
 ---
-title: 'Using Zerto between OVHcloud and a third party plateform'
+title: 'Using Zerto between OVHcloud and a third party platform'
 slug: zerto-virtual-replication-customer-to-ovh
 excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
 section: 'OVHcloud services and options'

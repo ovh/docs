@@ -3,7 +3,7 @@ title: Prezentacja przestrzeni dyskowej na Nutanix (EN)
 slug: storage
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/storage/'
-excerpt: Overview of Storage Management in a Nutanix Cluster
+excerpt: Overview of Storage Management in a Nutanix cluster
 section: Pierwsze kroki
 order: 04
 ---

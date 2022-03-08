@@ -1,7 +1,7 @@
 ---
 title: Storage overview on Nutanix
 slug: storage
-excerpt: Overview of Storage Management in a Nutanix Cluster
+excerpt: Overview of Storage Management in a Nutanix cluster
 section: Getting started
 order: 04
 hidden: true

@@ -179,4 +179,4 @@ Edit your `config/config.php` file and add:
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

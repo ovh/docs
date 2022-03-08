@@ -95,4 +95,4 @@ At the **Summary** step of the wizard, complete the object storage repository co
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

@@ -34,7 +34,7 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**. 
+You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**.
 
 Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 

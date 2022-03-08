@@ -163,7 +163,7 @@ Para as outras opções disponíveis consulte a imagem ao lado.
 
 Terá a possibilidade de alterar essa definição para "sempre" para que todos os seus emails sejam enviados no formato HTML.
 
-![options_rc_en](images/options_rc_en.png){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 ## Contactos
@@ -327,7 +327,7 @@ Para introduzir a assinatura associada a essa identidade, consulte a secção [I
 Para escrever uma nova mensagem, clique em `Nova messagem`{.action}.
 Se não tiver esse botão (está nas Definições ou Contactos). Clique no envelope branco (Mensagens) em cima no lado direito. Encontrará então esse botão.
 
-![compose](images/compose.png){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 ## Diferentes opções
