@@ -40,15 +40,13 @@ L'offre d'OVHcloud est fournie avec l'hyperviseur **AHV**.
 
 L'outil **Move** permet de migrer facilement des ordinateurs virtuels existants d'autres environnements (**Esxi, HyperV & AWS**) vers Nutanix et son hyperviseur **AHV**.
 
-Pour plus de détails sur **Ahv** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+Pour plus de détails sur **AHV** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-Dans les cas pratiques nous allons voir comment créer un ordinateur virtuel pour Windows Server 2022 en partant de la création de l'ordinateur virtuel jusqu'à l'installation du système d'exploitation et des outils **NGT (Nutanix Guest Tools).
+les cas pratiques montrent la création d'un ordinateur virtuel sous Windows Serveur 2022 et de la migration d'un ordinateur virtuel.
 
-Nous allons voir aussi la migration d'un ordinateur virtuel.
-
-### Création d'une Ordinateur virtuel pour un système d'exploitation Windows
+### Création d'une Ordinateur virtuel pour un système d'exploitation Windows 2022
 
 L'installation d'un ordinateur virtuel sous Windows Server 2022 nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques de l'hyperviseur **AHV**.
 
@@ -72,7 +70,7 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Création d'un Ordinateur virtuel - Etape 2](images/CreateVM02.PNG){.thumbnail}
 
-Saisissez dancs capacity `60`{.action} et cliquez sur `Save`{.action} pour créer un disque de 60 Go.
+Saisissez dans capacity `60`{.action} et cliquez sur `Save`{.action} pour créer un disque de 60 Go.
 
 ![Création d'un Ordinateur virtuel - Etape 3](images/CreateVM03.PNG){.thumbnail}
 
@@ -170,7 +168,7 @@ Ensuite Cliquez sur `Next`{.action}.
 
 ![Installation - WS2022- Etape3](images/InstallWS2022-06.PNG){.thumbnail}
 
-Séléctionnez `I accept etc...`{.action} et cliquez sur `Next`{.action}.
+Sélectionnez `I accept etc...`{.action} et cliquez sur `Next`{.action}.
 
 ![Installation - WS2022](images/InstallWS2022-07.PNG){.thumbnail}
 
@@ -208,7 +206,7 @@ Ensuite Cliquez sur `Finish`{.action}.
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-16.PNG){.thumbnail}
 
-Allez dans le gestionnaire de périphérique pour installer le pilote de la carte réseau et un pilote système spécifique à **AHV**.
+Allez dans le gestionnaire de périphériques de Windows pour installer le pilote de la carte réseau et un pilote système spécifique à **AHV**.
 
 Faites `Clic droit sur Ethernet Controller`{.action} et cliquez sur `Update Driver`{.action}.
 
