@@ -1,11 +1,11 @@
 ---
-title: What are the IP addresses of the OVHcloud monitoring?
+title: What are the IP addresses of the OVHcloud monitoring ?
 slug: monitoring-ip-ovh
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server.
 section: Network Management
 ---
 
-**Last updated 17th August 2021**
+**Last updated 17th august 2021**
 
 ## Objective
 
@@ -19,12 +19,12 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ## Requirements
 
-- An OVHcloud service on which you have installed a firewall
-- Access to the firewall rules
+- An OVHcloud product on which you have installed a Firewall.
+- Have access to the Firewall rules.
 
 ## Instructions
 
-### IP addresses to be authorised
+## IP adresses to be authorized
 
 |Reverse|IP|Protocol|
 |---|---|---|
@@ -73,11 +73,11 @@ In the `General information`{.action} tab, then the **Service status** box, clic
 
 In addition to standard monitoring, you can authorise OVHcloud to monitor specific services such as HTTP, SSH and other protocols.
 
-To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
+ To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
 
 ![monitoring](images/monitoring02.png){.thumbnail}
 
-You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
+ You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
 

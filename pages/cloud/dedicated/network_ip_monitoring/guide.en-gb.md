@@ -1,11 +1,11 @@
 ---
-title: What are the IP addresses of the OVHcloud monitoring?
+title: What are the IP addresses of the OVHcloud monitoring ?
 slug: monitoring-ip-ovh
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server.
 section: Network management
 ---
 
-**Last updated 17th August 2021**
+**Last updated 17th august 2021**
 
 ## Objective
 
@@ -19,12 +19,12 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ## Requirements
 
-- An OVHcloud service on which you have installed a firewall
-- Access to the firewall rules
+- An OVHcloud product on which you have installed a Firewall.
+- Have access to the Firewall rules.
 
 ## Instructions
 
-### IP addresses to be authorised
+## IP adresses to be authorized
 
 |Reverse|IP|Protocol|
 |---|---|---|
