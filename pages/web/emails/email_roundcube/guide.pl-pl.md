@@ -167,7 +167,7 @@ Pozostałe opcje są widoczne na zrzucie ekranu.
 
 Można zmienić tą wartość na "zawsze", żeby wysyłać wiadomości w formacie HTML.
 
-![options_rc_en](images/options_rc_en.png){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 #### Książka adresowa
@@ -343,7 +343,7 @@ Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
 #### Tworzenie nowej wiadomości
 Aby napisać nową wiadomość, kliknij na `Utwórz`{.action}.
 
-![compose](images/compose.png){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 #### Opcje

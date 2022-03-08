@@ -110,7 +110,7 @@ This allows you to check the storage status by node.
 
 Click on the `Hardware`{.action} menu to view the details of the storage per node, as well as the number of disks allocated per node.
 
-![Hardware Menu](images/HardwareMenu.png){.thumbnail}
+![Hardware Menu](images/HardwareMenu.PNG){.thumbnail}
 
 Click `Diagrams`{.action} for a graphical summary as shown below.
 

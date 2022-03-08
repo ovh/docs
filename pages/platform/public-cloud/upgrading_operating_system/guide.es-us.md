@@ -168,7 +168,7 @@ Una vez que se ha descargado la versión y se ha iniciado el proceso de actualiz
 Compruebe que sus aplicaciones funcionan según lo previsto. Si necesita ayuda, le recomendamos que [restaure la copia de seguridad](../crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot/) realizada antes de la actualización.
 
 > [!primary]
-> Si necesita ayuda, encontrará respuestas en el sitio web [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/) {.external}.
+> Si necesita ayuda, encontrará respuestas en el sitio web [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
 >
 
 ## Más información

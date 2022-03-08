@@ -162,7 +162,7 @@ Die weiteren verfügbaren Optionen sehen Sie im nebenstehenden Screenshot.
 
 Sie können dies auf "immer" umstellen, wenn Sie alle E-Mails im HTML-Format versenden möchten.
 
-![options_rc_en](images/options_rc_en.png){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 ### Adressbuch
@@ -334,7 +334,7 @@ Wie Sie die dieser Identität zugewiesene Signatur einfügen wird im Abschnitt [
 
 Um eine neue Nachricht zu verfassen klicken Sie auf `Schreiben`{.action}. Wenn Sie diesen Button nicht sehen, weil Sie zum Beispiel gerade die Einstellungen oder das Adressbuch aufgerufen haben, klicken Sie auf das weiße Briemumschlagssysmbol rechts oben, dann wird der Button eingeblendet.
 
-![compose](images/compose.png){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 ### Optionen
 

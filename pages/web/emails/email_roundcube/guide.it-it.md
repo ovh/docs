@@ -161,7 +161,7 @@ Per le altre opzioni disponibili, controlla la figura.
 
 Puoi modificare questa opzione in "sempre" per inviare le tue email in formato HTML.
 
-![options_rc_en](images/options_rc_en.png){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 ## Elenco contatti
@@ -324,7 +324,7 @@ Per inserire la firma associata a questa identità, fai riferimento alla sezione
 ## Accedere all'interfaccia di scrittura di un nuovo messaggio
 Per scrivere un nuovo messaggio, clicca su Componi. Se non vedi questo pulsante, clicca sulla busta bianca in alto a destra (Posta) per visualizzarlo.
 
-![compose](images/compose.png){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 ## Opzioni
