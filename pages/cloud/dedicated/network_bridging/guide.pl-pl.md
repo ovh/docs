@@ -52,7 +52,7 @@ Kliknij `...`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
 
 Wybierz "ovh" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej maszyny", a następnie kliknij `Zatwierdź`{.action}.
 
-![Dodaj wirtualny adres MAC (2)](images/virtual_mac_03.png){.thumbnail}
+![Dodaj wirtualny adres MAC (2)](images/addvmac2.png){.thumbnail}
 
 ### Określ adres bramy
 
