@@ -49,7 +49,7 @@ Click on `...`{.action} in the relevant row to open the context menu, and select
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 

@@ -53,7 +53,7 @@ Klicken Sie auf `...`{.action} in der betreffenden Zeile um das Kontextmenü zu 
 
 Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMware ESXi verwenden - andernfalls wählen Sie `vmware`{.action}. Geben Sie einen Namen in das Feld "Name der virtuellen Maschine" ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-![Virtuelle MAC-Adresse hinzufügen (2)](images/virtual_mac_03.png){.thumbnail}
+![Virtuelle MAC-Adresse hinzufügen (2)](images/addvmac2.png){.thumbnail}
 
 ### Schritt 2: Die Adresse des Gateways bestimmen
 

@@ -137,6 +137,8 @@ For each user you can specify:
 - Commands (such as "-@all +get")
 - Channels (such as "*")
 
+Update of user ACLs is allowed only via API.
+
 You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
 
 ## We want your feedback!

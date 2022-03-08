@@ -52,7 +52,7 @@ Clicca sui tre puntini `..`{.action}. e poi su `Aggiungi un indirizzo MAC virtua
 
 Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
 
-![Aggiungi un MAC virtuale (2)](images/virtual_mac_03.png){.thumbnail}
+![Aggiungi un MAC virtuale (2)](images/addvmac2.png){.thumbnail}
 
 ### Determinare l'indirizzo del gateway
 

@@ -34,7 +34,7 @@ In the next page, select **Boot in rescue mode** and select "rescue64-pro" from 
 
 ![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
@@ -281,7 +281,7 @@ The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Loo
 
 ![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode. This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode. This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 

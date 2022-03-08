@@ -65,7 +65,7 @@ In our example, the Root Device will be /dev/sda1.
 
 Click `Next`{.action}, and then finally `Confirm`{.action}
 
-Once the change is completed, click on `...`{.action}  next to “Status” in the box labelled **Service status**. Select `Reboot`{.action} so that the new netboot takes effect.
+Once the change is completed, click on `...`{.action}  next to “Status” in the box labelled **Service status**. Select `Restart`{.action} so that the new netboot takes effect.
 
 ![Netboot](images/netboot_004.png){.thumbnail}
 
