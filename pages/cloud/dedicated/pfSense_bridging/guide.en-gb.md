@@ -42,9 +42,13 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section and open `IP`{.action}. Next, locate your failover IP address in the table.
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. 
 
-Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
+The “Service” drop-down menu allows you to filter for Failover IPs. 
+
+![Add a virtual MAC (1)](images/manageIPs.png){.thumbnail} 
+
+Next, locate your failover IP address in the table and click on the three dots to open the `Context`{.action} menu. Select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
 
