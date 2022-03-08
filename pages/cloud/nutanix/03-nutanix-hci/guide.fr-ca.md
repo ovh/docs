@@ -111,7 +111,7 @@ Vous pouvez ainsi vérifier l'état du stockage par nœud.
 
 Cliquez sur le menu `Hardware`{.action} pour obtenir le détail du stockage par nœud, ainsi que le nombre de disques alloués par nœud.
 
-![Hardware Menu](images/HardwareMenu.png)
+![Hardware Menu](images/HardwareMenu.PNG)
 
 Cliquez sur `Diagrams`{.action} pour obtenir un résumé graphique tel que présenté ci-dessous.
 

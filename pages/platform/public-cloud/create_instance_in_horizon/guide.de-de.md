@@ -20,7 +20,7 @@ Sie haben die Möglichkeit, Instanzen direkt über das Horizon-Interface zu erst
 
 ## Voraussetzungen
 
-- Sie haben ein [Public Cloud](https://www.ovh.de/public-cloud/){.external} Projekt über Ihren OVHcloud Account erstellt.
+- Sie haben ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external} Projekt über Ihren OVHcloud Account erstellt.
 - [Sie sind im Horizon-Interface eingeloggt](../erstellung_eines_zugangs_zu_horizon/){.external}. 
 
 ## In der praktischen Anwendung

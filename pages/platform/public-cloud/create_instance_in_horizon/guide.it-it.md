@@ -20,7 +20,7 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 
 ## Prerequisiti
 
-- Disporre di un progetto [Public Cloud OVHcloud](https://www.ovh.it/public-cloud/){.external}
+- Disporre di un progetto [Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/){.external}
 - [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external} 
 
 ## Procedura

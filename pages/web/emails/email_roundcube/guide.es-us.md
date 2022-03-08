@@ -159,7 +159,7 @@ En la nueva interfaz de Roundcube «Larry», la opción «Componer mensaje en HT
 
 Puede cambiarlo a «siempre» para enviar sus mensajes de correo en formato HTML.
 
-![options_rc_en](images/options_rc_en.png){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 ## Contactos
@@ -322,7 +322,7 @@ Para insertar la firma asociada a dicha identidad, consulte el apartado [«Inser
 ## Redactar un nuevo mensaje
 Para escribir un nuevo mensaje haga clic en `Redactar`{.action}. Si no puede ver este botón (desde la configuración o los contactos), haga clic en el sobre blanco «Correo» situado en la barra superior para mostrarlo.
 
-![compose](images/compose.png){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 ## Opciones
