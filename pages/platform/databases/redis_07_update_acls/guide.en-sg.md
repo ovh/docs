@@ -20,7 +20,6 @@ You must therefore use the [OVHcloud API](https://docs.ovh.com/sg/en/api/first-s
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for Redis.
 
@@ -32,7 +31,7 @@ For the rest of this tutorial, we consider that you are logged in on [ca.api.ovh
 
 ### Get your service, Redis cluster and user IDs
 
-start by identifying the service, the redis cluster and the user you want to apply the changes to.
+You first need to identify the service, the Redis cluster and the user you want to apply the changes to.
 
 #### Get the desired service ID
 
