@@ -18,9 +18,15 @@ As explained on this page: [Redis Capabilities, Users & roles](https://docs.ovh.
 
 You must therefore use the OVHcloud() API.
 
-If you have never used the OVHcloud API before, then it is strongly recommended that you follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
+## Requirements
 
-For the rest of the tutorial, we consider that you are connected and identified on the site [API.OVH.com](https://api.ovh.com/console)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account.
+- An up and running Public Cloud Database for Redis.
+
+If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+
+For the rest of this tutorial, we consider that you are connected and identified on the site [API.OVH.com](https://api.ovh.com/console).
 
 ## Get your service, Redis cluster and user ids
 
@@ -52,16 +58,30 @@ From the resulting list, find and select the desired **user**.
 
 To get more details on a user, simply add the **user** value to the end of the previous request: [https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/database/redis/%7BclusterId%7D/user/%7BuserId%7D~GET](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/database/redis/%7BclusterId%7D/user/%7BuserId%7D~GET)
 
-Example :
+Example:
 
 ![API path user detail](images/redis_07_update_acls_04.png){.thumbnail}
 
+The result shows four string arrays, which represent the ACLs defined for the given user.
 
+- Keys: Allow and disallow certain keys and key permissions.
+- Categories: Add all the commands in such category to be called by the user, with valid categories being like @admin, @set, @sortedset,...
+- Commands: Add or remove the command to the list of commands the user can call.
+- Channels: Allow and disallow Pub/Sub channels.
 
+You can follow the official Redis documentation about users and ACL: [https://redis.io/topics/acl](https://redis.io/topics/acl){.external}.
 
+## Update an ACL with the API
 
+Open the url: [https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/database/redis/%7BclusterId%7D/user/%7BuserId%7D~PUT](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/database/redis/%7BclusterId%7D/user/%7BuserId%7D~PUT) in a web browser, and paste the corresponding identifiers (**serviceName**, **clusterId**, **user**).
 
-You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
+Now, according the strategy you choosed, set the different values into the string arrays, as example:
+
+![API update ACL string arrays](images/redis_07_update_acls_05.png){.thumbnail}
+
+Click on the [Execute] button and see that tha Redis user ACL has been changed:
+
+![API ACL change result](images/redis_07_update_acls_06.png){.thumbnail}
 
 ## We want your feedback!
 
