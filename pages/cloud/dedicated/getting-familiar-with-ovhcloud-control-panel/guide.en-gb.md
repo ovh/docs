@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-OVHcloud has combined all Kimsufi and So you Start dedicated servers in a product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you during this migration, we have set up a guide explaining the OVHcloud Control Panel and its options.
+OVHcloud has combined all Kimsufi and So you Start dedicated servers in a product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change if your have opted for a purchase on the Eco range, we have set up a guide explaining the OVHcloud Control Panel and its options.
 
 **This guide is designed to help you familiarise yourself with the OVHcloud Control Panel**
 
@@ -64,8 +64,6 @@ Kimsufi             | So you Start | OVHcloud
 - Reverse: Click on the `...`{.action} next to this section to enter/modify your reverse DNS.
 
 **Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/gb/en/dedicated/secondary-dns/)
-
-**Backup Storage** (only available on OVHcloud and So you Start servers): Order and configure your backup storage here. For more information, consult the following [guide](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/).
 
 **Interventions**: Find here the current and past interventions made on your server.
 
