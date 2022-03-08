@@ -6,11 +6,11 @@ section: Premiers pas
 order: 07
 ---
 
-**Dernière mise à jour le 18/02/2022**
+**Dernière mise à jour le 07/03/2022**
 
 ## Objectif
 
-ette page décrit la configuration des alertes par messagerie
+Cette page décrit la configuration des alertes par messagerie dans Prism Central
 
 ***Une documentation similaire avait été faite ou l'on avait aussi la collecte des logs***
 ***A Faire***

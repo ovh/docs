@@ -65,7 +65,7 @@ Laissez les options par défaut et `Cliquez sur Save`{.action}
 
 ![Fenêtre des options d'ajout d'une image partie 3](images/AddImage04.PNG)
 
-L'image importée apparait dans le tableau de bord des images dans Prism Central
+L'image importée apparait dans le tableau de bord des images dans Prism Central.
 
 ![Tableau de bord des images avec nouvelle Image - Prism Central](images/PrismCentralDashboardImagesWithNewImages.PNG)
 
