@@ -10,7 +10,7 @@ order: 06
 
 ## Objectif
 
-Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer, et de migrer un ordinateur virtuel.
+Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être capable de créer et de migrer un ordinateur virtuel.
 
 
 > [!warning]
@@ -28,7 +28,7 @@ Connaitre la gestion des ordinateurs virtuels dans un cluster Nutanix et être c
 
 ## Présentation de la gestion des ordinateurs virtuels dans Prism Central
 
-Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (**Hyperv, Vmware Esxi , AHV**). *AHV* est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
+Le système Nutanix utilise les mêmes interfaces pour gérer le stockage et la virtualisation, il peut être installé avec plusieurs hyperviseurs (**Hyperv, Vmware Esxi , AHV**). **AHV** est fourni avec Nutanix sans devoir acheter de licences supplémentaires pour l'hyperviseur. 
 
 L'offre d'OVHcloud est fournie avec l'hyperviseur *AHV*.
 
@@ -110,13 +110,15 @@ Cliquez sur `Attach Subnet`{.action}.
 
 Laissez tel quel et cliquez sur `Save`{.action}.
 
+
 ![Création d'un Ordinateur virtuel - Etape 9](images/CreateVM09.PNG){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
+
 ![Création d'un Ordinateur virtuel - Etape 10](images/CreateVM10.PNG){.thumbnail}
 
-Dans timezone choisissez le fuseau horaire de votre pays. `zone`{.action} et cliquez sur `Next`{.action}.
+Choisissez le fuseau horaire de votre pays. `zone`{.action} et cliquez sur `Next`{.action}.
 
 ![Création d'un Ordinateur virtuel - Etape 11](images/CreateVM11.PNG){.thumbnail}
 
@@ -130,7 +132,7 @@ L'ordinateur virtuel nouvellement créé apparait dans le tableau de bord.
  
 #### Installation de Windows Server 2022
 
-Sélectionnez l'ordinateur virtuel sur lequel Windows Server 2022 sera installé. 
+Sélectionnez l'ordinateur virtuel sur lequel Windows Server 2022. 
 
 Cliquez sur la `Case à cocher à coté de l'ordinateur virtuel à gauche`{.action}.
 
@@ -242,15 +244,16 @@ Revenez dans Prism Central `Selectionnez l'ordinateur virtuel`{.action}.
 
 ![NGT Installation 2](images/Ngt-Installation02.png){.thumbnail}
 
+
 Cliquez dans le menu `Actions`{.action} et cliquez `Install NGT`{.action}.
 
 ![NGT Installation 3](images/Ngt-Installation03.png){.thumbnail}
 
-Dans la fenêtre Install NGT cliquez sur `Confirm & Enter Password`{.action}.
+Cliquez sur `Confirm & Enter Password`{.action}. 
 
 ![NGT Installation 4](images/Ngt-Installation04.png){.thumbnail}
 
-Dans la deuxième Fenêtre Install NGT cliquez sur `Skip and Mount`{.action}.
+Cliquez sur `Skip and Mount`{.action}.
 
 ![NGT Installation 5](images/Ngt-Installation05.png){.thumbnail}
 
@@ -276,7 +279,7 @@ L'installation d'un ordinateur virtuel sous Windows est entierement terminée.
 
 ### Migration d'un ordinateur virtuel.
 
-La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster. Si l'on a plusierus clusters et le bonnes licences il est possible de faire de la migration d'un cluster à l'autre aussi. Cette documentation ne montre qu'un migration à l'intérieur d'un cluster.
+La migration d'un ordinateur virtuel consiste à déplacer une ordinateur virtuel à chaud d'un nœud à l'autre d'un cluster. Si l'on a plusierus clusters et les bonnes licences il est possible de faire de la migration d'un cluster à l'autre aussi. Cette documentation ne montre qu'un migration à l'intérieur d'un cluster.
 
 Dans la gestion des ordinateurs virtuels de Prism Central cliquez sur `WS2022N`{.action}.
 
