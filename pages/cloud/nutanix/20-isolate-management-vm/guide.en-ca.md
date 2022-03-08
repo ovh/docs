@@ -11,7 +11,7 @@ hidden: true
 
 ## Objective
 
-A Nutanix cluster contains two different types of management machines after delivery:
+A Nutanix Cluster contains two different types of management machines after delivery:
 
 - VM, 1 CVM per node plus Prism Central
 - Physical servers (nodes)
@@ -28,7 +28,7 @@ In order to increase the security of management machines, it is recommended to i
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
+- A Nutanix Cluster in your OVHcloud account
 
 ## Instructions
 

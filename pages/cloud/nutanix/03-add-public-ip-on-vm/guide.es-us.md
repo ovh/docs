@@ -24,7 +24,7 @@ If you want to create a web front-end or a reverse proxy to create a stack of VM
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
+- A Nutanix Cluster in your OVHcloud account
 - Login credentials and URL for Prism Central, received via email after the installation
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - An available failover IP address

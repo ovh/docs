@@ -1,7 +1,7 @@
 ---
-title: Changing the vRack of a Nutanix cluster
+title: Changing the vRack of a Nutanix Cluster
 slug: nutanix-change-vrack
-excerpt: Find out how to change the Nutanix cluster vRack
+excerpt: Find out how to change the Nutanix Cluster vRack
 section: Networking & Security
 order: 02
 ---
@@ -10,9 +10,9 @@ order: 02
 
 ## Objective
 
-A Nutanix cluster is delivered with its own vRack. In order to interconnect with other OVHcloud services, you can attach your cluster to a different vRack.
+A Nutanix Cluster is delivered with its own vRack. In order to interconnect with other OVHcloud services, you can attach your Cluster to a different vRack.
 
-**This guide explains how to add a Nutanix cluster to another vRack.**
+**This guide explains how to add a Nutanix Cluster to another vRack.**
 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -22,7 +22,7 @@ A Nutanix cluster is delivered with its own vRack. In order to interconnect with
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
+- A Nutanix Cluster in your OVHcloud account
 - An additional [vRack](https://www.ovh.com/world/solutions/vrack/) service activated in your account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
@@ -32,7 +32,7 @@ A Nutanix cluster is delivered with its own vRack. In order to interconnect with
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
-Open the Nutanix cluster vRack configuration page, select all the services (e.g. dedicated server, IP, load balancer) and click on `Remove`{.action}.
+Open the Nutanix Cluster vRack configuration page, select all the services (e.g. dedicated server, IP, load balancer) and click on `Remove`{.action}.
 
 ![Remove Features](images/vrack-1.png){.thumbnail}
 

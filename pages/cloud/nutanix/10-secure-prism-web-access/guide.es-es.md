@@ -24,14 +24,14 @@ After delivery, Prism Central is accessible on the public Internet. Access restr
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
+- A Nutanix Cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Instructions
 
 ### Step 1: Find the relevant Load Balancer
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and open the Nutanix cluster vRack configuration page.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) and open the Nutanix Cluster vRack configuration page.
 
 Identify the name of your Load Balancer.
 

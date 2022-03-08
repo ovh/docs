@@ -10,7 +10,7 @@ order: 01
 
 ## Objectif
 
-Cette page fournit une explication sur les éléments qui constituent un cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
+Cette page fournit une explication sur les éléments qui constituent un Cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
 
 ## En pratique
 
