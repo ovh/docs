@@ -5,25 +5,26 @@ excerpt: 'Dowiedz się, jak zainstalować serwer Veeam Backup & Replication z Ve
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 08/02/2022**
+**Ostatnia aktualizacja z dnia 08/03/2022**
 
 ## Wprowadzenie
 
 Veeam Backup & Replication jest oprogramowaniem do ochrony danych. Oferuje wiele możliwości tworzenia kopii zapasowych, replikacji i przywracania danych.
 
-**Dowiedz się, jak zainstalować serwer Veeam Backup & Replication, a następnie jak zarejestrować go na serwerze licencji Veeam Enterprise OVH.**
+**Dowiedz się, jak zainstalować serwer Veeam Backup & Replication, a następnie jak zarejestrować go na serwerze licencji Veeam Enterprise OVHcloud.**
 
 
 ## Wymagania początkowe
 
 * Posiadanie usługi [Veeam Enterprise](https://www.ovh.pl/storage-solutions/veeam-enterprise.xml){.external}
-* Posiadanie wirtualnej maszyny z Windows Server 2012 lub 201
+* Posiadanie wirtualnej maszyny z Windows Server 2012 lub nowszej wersji
+
 
 ## W praktyce
 
 ### Instalacja Veeam Backup & Replication
 
-Pobierz rozwiązanie **Veeam Backup & Replication** ze strony Veeam. Jeśli nie masz konta, utwórz je (bezpłatnie).
+Pobierz rozwiązanie **Veeam Backup & Replication** ze [strony Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Jeśli nie masz konta, utwórz je (bezpłatnie).
 
 Plik ma postać obrazu dysku w formacie ISO. Po przesłaniu pliku na Twój serwer wybierz czytnik CD maszyny, po czym wybierz obraz.
 
@@ -67,15 +68,17 @@ Po jej zakończeniu zamknij kreator instalacji, klikając `Finish`{.action}.
 
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
-Kreator instalacji poprosi o zrestartowanie systemu Windows w celu zakończenia operacji. Wybierz `Yes`{.action}.
+Zostaniesz przekierowany do asystenta instalacji. Wystarczy zamknąć okno.
 
-![](images/veeamBandR_inst_11.png){.thumbnail}
+![](images/veeamconsoleinstalled.png){.thumbnail}
 
 ### Tworzenie konta usługi Veeam Enterprise
 
 #### Utwórz konto usługi
 
 Najpierw wygeneruj **silne** hasło.
+
+Aby rozpocząć, uruchom Windows Powershell jako administrator.
 
 Następnie utwórz konto usługi, wprowadzając poniższe wiersze poleceń po zalogowaniu się jako administrator:
 
@@ -93,25 +96,25 @@ Uruchom konsolę Veeam.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Sprawdź, czy pracujesz w trybie **Free Edition** w prawym dolnym rogu.
+Sprawdź, czy pracujesz w trybie **Commnunity Edition** w prawym dolnym rogu.
 
-![](images/veeamBandR_conf_13.PNG){.thumbnail}
+![](images/veeamcommunity.png){.thumbnail}
 
 Przejdź do menu, następnie kliknij `Users and Roles`{.action}.
 
-![](images/veeamBandR_conf_14.PNG){.thumbnail}
+![](images/veeamBandR_conf_2.png){.thumbnail}
 
 W oknie `Security`{.action} wybierz `Add...`{.action}.
 
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
+![](images/veeamBandR_conf_3.png){.thumbnail}
 
 Następnie w oknie `Add User`{.action} wybierz utworzone konto usługi. Wybierz rolę **Veeam Backup Administrator** i zatwierdź przyciskiem `OK`{.action}.
 
-![](images/veeamBandR_conf_15.PNG){.thumbnail}
+![](images/veeamBandR_conf_4.png){.thumbnail}
 
 W oknie **Security** możesz sprawdzić, czy konto zostało utworzone.
 
-![](images/veeamBandR_conf_16.PNG){.thumbnail}
+![](images/veeamBandR_conf_5.png){.thumbnail}
 
 #### Zezwolenia na wykonywanie i aktywację
 
@@ -122,18 +125,30 @@ Za pomocą interfejsu graficznego użytkownika:
 1. W pasku wyszukiwania Windows wpisz `Component Services`{.action} i uruchom usługę.
 2. W menu po lewej stronie i po drzewie kliknij `Component Services`{.action}, następnie `Computers`{.action}, a następnie `My Computer`{.action}.
 3. Po prawej stronie w zakładce `Actions`{.action} kliknij `More Actions`{.action}, a następnie `Properties`{.action}.
-4. Przejdź do `COM Security`{.action} i do drugiej opcji `Launch and Activation Permissions`{.action}, kliknij `Edit Limits`{.action}.
-5. Kliknij na użytkownika `OVHVeeamEnterprise`{.action} i aktywuj wszystkie uprawnienia.
+4. Przejdź do `COM Security`{.action} i do drugiej opcji `Launch and Activation Permissions`{.action}, kliknij `Edit Limits`{.action}. Następnie kliknij polecenie `Add...`{.action}.
 
-![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
-6. Kliknij `OK`{.action}, aby potwierdzić i `Apply`{.action}, aby zatwierdzić zmiany.
+<ol start="5">
+<li>Kliknij na  `Advanced...`{.action} aby zlokalizować konto usługi wcześniej dodane. Następnie kliknij polecenie `Find Now`{.action} i wybierz użytkownika `OVHVeeamEnterprise`{.action} z listy użytkowników.</li>
+
+![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
+
+<ol start="6">
+<li>Kliknij na `OK`{.action}, aby potwierdzić wybór i na `OK`{.action}, aby zatwierdzić. Następnie aktywuj wszystkie uprawnienia dla użytkownika `OVHVeeamEnterprise`{.action}.</li>
+
+![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
+
+<ol start="7">
+<li>Kliknij `OK`{.action}, aby potwierdzić i `Apply`{.action}, aby zatwierdzić zmiany.</li>
 
 Twój użytkownik OVHVeeamEnterprise jest teraz dostępny lokalnie i zdalnie.
 
 #### Zarejestruj licencję dla serwera Veeam Backup & Replication
 
-Operację tę należy przeprowadzić za pośrednictwem API OVH.
+## W panelu klienta OVHcloud
+
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Hosted Private Cloud`{.action} i wybierz `Platformy i usługi`{.action}. Następnie wybierz Twoją usługę **backup serverenterprise**, a następnie kliknij przycisk `Aktywuj licencję`{.action} w sekcji `Skróty`.
 
 Najpierw pobierz serviceName:
 
@@ -173,7 +188,7 @@ Przejdź do menu, następnie kliknij `Licence`{.action}.
 
 ![](images/veeamBandR_lic_1.png){.thumbnail}
 
-Upewnij się, czy wyświetlane informacje dotyczą Twojej licencji OVH.
+Upewnij się, czy wyświetlane informacje dotyczą Twojej licencji OVHcloud.
 
 ![](images/veeamBandR_lic_2.png){.thumbnail}
 

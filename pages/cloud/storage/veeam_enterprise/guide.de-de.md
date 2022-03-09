@@ -67,15 +67,17 @@ Klicken Sie nach erfolgreicher Installation auf `Finish`{.action}, um den Assist
 
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
-Der Installationsassistent wird zum Windows-Neustart auffordern, um den Vorgang abzuschließen. Wählen Sie hier `Yes`{.action}.
+Sie werden zum Startassistenten weitergeleitet. Schließen Sie einfach das Fenster.
 
-![](images/veeamBandR_inst_11.png){.thumbnail}
+![](images/veeamconsoleinstalled.png){.thumbnail}
 
 ### Veeam Enterprise Service-Account erstellen
 
 #### Service-Account erstellen
 
 Generieren Sie zunächst ein **komplexes** Passwort.
+
+Starten Sie zunächst Windows Powershell als Administrator.
 
 Erstellen Sie dann den Service-Account, indem Sie als Administrator folgende Befehle eingeben:
 
@@ -94,9 +96,9 @@ Starten Sie die Veeam-Konsole.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Überprüfen Sie in der rechten unteren Ecke, dass Sie sich im Modus **Free Edition** befinden.
+Überprüfen Sie in der rechten unteren Ecke, dass Sie sich im Modus **Community Edition** befinden.
 
-![](images/veeamBandR_conf_1.png){.thumbnail}
+![](images/Veeamcommunity.png){.thumbnail}
 
 Klicken Sie im Menü auf `Users and Roles`{.action}.
 
@@ -123,12 +125,21 @@ Der OVHVeeamEnterprise Benutzer ist nur lokal verfügbar. Um die Remote-Verbindu
 1. Geben Sie in der Windows Suche `Component Services`{.action} ein und starten Sie den Dienst.
 2. Klicken Sie links in der Ordnerstruktur auf `Component Services`{.action}, dann `Computers`{.action} und `My Computer`{.action}.
 3. Klicken Sie rechts unter dem Tab `Actions`{.action} auf `More Actions`{.action} und dann auf `Properties`{.action}.
-4. Gehen Sie zu `COM Security`{.action} und klicken Sie unter `Launch and Activation Permissions`{.action} auf `Edit Limits`{.action}.
-5. Wählen Sie den Benutzer `OVHVeeamEnterprise`{.action} aus und aktivieren Sie alle Berechtigungen.
+4. Gehen Sie zu `COM Security`{.action} und klicken Sie unter `Launch and Activation Permissions`{.action} auf `Edit Limits`{.action}. Als Nächstes klicken Sie auf `Add...`{.action}.
 
-![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
+
+<ol start="5">
+<li>Klicken Sie auf `Advanced`{.action}, um das zuvor hinzugefügte Dienstkonto zu finden, und klicken Sie auf `Find Now`{.action}. Wählen Sie den Benutzer `OVHVeeamEnterprise`{.action} aus der Liste der Benutzer aus.</li>
+
+![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
+<li>Klicken Sie auf `OK`{.action}', um die Auswahl zu bestätigen, und auf `OK`{.action}', um die Auswahl zu bestätigen. Als Nächstes aktivieren Sie alle Berechtigungen für den Benutzer `OVHVeeamEnterprise`{.action}.</li>
+
+![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
+
+<ol start="7">
 <li>Klicken Sie auf `OK`{.action}, um zu bestätigen und auf `Apply`{.action}, um die Änderungen anzuwenden.</li>
 </ol>
 
@@ -138,13 +149,9 @@ Ihr OVHVeeamEnterprise Benutzer ist jetzt lokal und über Fernzugriff verfügbar
 
 ## Im OVHcloud Kundencenter
 
-Gehen Sie im Kundencenter in den Bereich `Hosted Private Cloud`{.action} und wählen Sie unter `Plattformen und Dienstleistungen`{.action} den Dienst **backupserverenterprise**.
+Gehen Sie im Kundencenter in den Bereich `Hosted Private Cloud`{.action} und wählen Sie unter `Plattformen und Dienstleistungen`{.action} den Dienst **backupserverenterprise**. Wählen Sie in der Sektion "Shortcuts" `Lizenz aktivieren`{.action} aus.
 
-![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
-
-Wählen Sie in der Sektion "Shortcuts" `Lizenz aktivieren`{.action} aus.
-
-![](images/backupEnterpriseServer_manager_02.png){.thumbnail}
+![](images/veeam001.png){.thumbnail}
 
 Geben Sie im daraufhin geöffneten Fenster folgende Informationen ein:
 
@@ -154,9 +161,11 @@ Geben Sie im daraufhin geöffneten Fenster folgende Informationen ein:
 
 Bestätigen Sie anschließend mit `OK`{.action}.
 
+![activation licence](images/veeam03.png){.thumbnail}
+
 Nach der Aktivierung finden Sie die Hauptinformationen auf der Seite des Dienstes.
 
-![](images/backupEnterpriseServer_manager_03.png){.thumbnail}
+![licence activated](images/veeam02.png){.thumbnail}
 
 ## Mit der OVHcloud API
 
