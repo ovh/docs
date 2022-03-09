@@ -15,14 +15,14 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 ## Requirements
 
-- a Veeam Enterprise solution
+- a [Veeam Enterprise solution](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}
 - Windows Server 2012 or a newer version
 
 ## Instructions
 
 ### Setting up Veeam Backup & Replication
 
-Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}. If you do not have an account, you will need to set one up (account setup is free).
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
