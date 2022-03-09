@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Ultimo aggiornamento: 03/02/2022**
+**Ultimo aggiornamento: 09/03/2022**
 
 ## Obiettivo
 
@@ -113,10 +113,10 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 - **AutoCommit**: Definisce se le richieste sono automaticamente confermate (committed) o no.
 - **Interactive_timeout**: Tempo in secondi durante il quale il server attende l'attività su una connessione interattiva prima di chiuderla.
 - **InnodbBufferPoolSize**: Scelta della dimensione della memoria buffer.
-- **MaxConnessioni:** Numero di connessioni simultanee autorizzate sul database.
+- **MaxConnessioni**: Numero di connessioni simultanee autorizzate sul database.
 - **Wait_timeout**: Tempo in secondi durante il quale il server attende l'attività su una connessione non interattiva prima di chiuderla.
 - **Event_scheduler**: Consente di avviare l'esecuzione di richieste programmate direttamente sul server MySQL.
-- **sql_mode** : L'opzione **sql_mode** influisce sull'interpretazione della sintassi SQL e sulle verifiche di convalida dei dati eseguite da MySQL/MariaDB. Disponibile esclusivamente per MariaDB.
+- **sql_mode**: L'opzione **sql_mode** influisce sull'interpretazione della sintassi SQL e sulle verifiche di convalida dei dati eseguite da MySQL/MariaDB. Disponibile esclusivamente per MariaDB.
 
 > [!primary]
 > Quando si verifica un errore sul tuo sito indicando **"Too many connections"**, è dovuto al superamento del numero di connessioni simultanee sul tuo database.
@@ -133,9 +133,10 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 
 > [!primary]
 >
-> sql_mode :
-> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER : Modalità di default di MariaDB 10.1.
-> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION : Modalità di default di MariaDB 10.2 e versioni superiori.
+> <b>sql_mode</b>:    
+> - <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modalità di default di MariaDB 10.1.
+> 
+> - <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modalità di default di MariaDB 10.2 e versioni superiori.
 >
 > Consigliamo di utilizzare sempre la modalità di default, tranne nel caso in cui il database sia stato aggiornato a partire da una versione con modalità di default differente da quella della versione attuale.
 >
