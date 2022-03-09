@@ -174,7 +174,7 @@ Também pode [consultar o seu consumo atual](https://docs.ovh.com/fr/public-clou
 > Após o cancelamento e a assinatura em curso, o seu domínio genérico (.com,.org. net, etc.) fica "reservado" durante o período de "*graça*" (5 dias) e depois durante o período de "*redenção*" (35 a 40 dias suplementares), o que significa que só poderá renová-lo durante esses períodos.
 >
 
-Para rescindir o seu [domínio](https://www.ovhcloud.com/fr/domains/), aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir o seu [domínio](https://www.ovhcloud.com/pt/domains/), aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 
@@ -194,7 +194,7 @@ Não é possível rescindir as ofertas [SSL sectigo](https://www.ovhcloud.com/fr
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Para rescindir a sua oferta [Web Paas](https://www.ovhcloud.com/fr/web-paas/), aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
+Para rescindir a sua oferta [Web Paas](https://www.ovhcloud.com/pt/web-paas/), aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu nome (canto superior direito) e, a seguir, no botão `Gestão dos serviços`{.action}.
 
 A seguir, clique no botão `...`{.action} à direita do serviço a rescindir e, a seguir, em `Rescindir`{.action}.
 

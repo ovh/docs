@@ -174,7 +174,7 @@ También puede [consultar su consumo actual](https://docs.ovh.com/fr/public-clou
 > Una vez haya dado de baja el servicio y finalice la suscripción, su dominio genérico (.com, .org). net, etc.) se queda "reservado" durante el período denominado "de *gracia*" (5 días) y después durante el de "*redención*" (35 a 40 días adicionales), lo que significa que solo usted podrá renovarlo durante estos períodos.
 >
 
-Para dar de baja su [dominio](https://www.ovhcloud.com/fr/domains/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su [dominio](https://www.ovhcloud.com/es-es/domains/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
 
 Haga clic en el botón `..`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -182,7 +182,7 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 #### Alojamiento web <a name="hosting"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovhcloud.com/fr/web-hosting/), haga clic en su nombre en la esquina superior derecha y seleccione el botón [Gestión de servicios](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) ` `{.action}.
+Conéctese al [área de cliente de OVHcloud]https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón [Gestión de servicios]() ` `{.action}.
 
 Haga clic en el botón `..`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 
@@ -194,7 +194,7 @@ No es posible dar de baja las ofertas [SSL sectigo](https://www.ovhcloud.com/fr/
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Para dar de baja su servicio [Web](https://www.ovhcloud.com/fr/web-paas/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
+Para dar de baja su [servicio Web](https://www.ovhcloud.com/es-es/web-paas/), conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la esquina superior derecha y seleccione el botón `Gestión de servicios`{.action}.
 
 Haga clic en el botón `..`{.action} situado a la derecha del servicio que desea dar de baja y seleccione `Dar de baja`{.action}.
 

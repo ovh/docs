@@ -174,7 +174,7 @@ Możesz również [sprawdzić aktualne](https://docs.ovh.com/fr/public-cloud/inf
 > Po rezygnacji z abonamentu i po zakończeniu abonamentu, domena globalna (.com, .org. netto itp.) pozostajesz "zarezerwowany" w okresie "*łaski*" (5 dni), a następnie w okresie "*odkupienia*" (35 do 40 dni), co oznacza, że tylko Ty będziesz mógł go odnowić w tych okresach.
 >
 
-Aby zrezygnować z [domeny](https://www.ovhcloud.com/fr/domains/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Zarządzanie usługami`{.action}.
+Aby zrezygnować z [domeny](https://www.ovhcloud.com/pl/domains/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij Twoją nazwę w prawym górnym rogu, a następnie przycisk `Zarządzanie usługami`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Rezygnacja`{.action}.
 
@@ -194,7 +194,7 @@ Nie można przed terminem rozwiązania umowy dla ofert [SSL sectigo](https://www
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Aby zrezygnować z usługi [Web Paas](https://www.ovhcloud.com/fr/web-paas/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Zarządzanie usługami`{.action}.
+Aby zrezygnować z usługi [Web Paas](https://www.ovhcloud.com/pl/web-paas/), zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swoją nazwę w prawym górnym rogu, a następnie przycisk `Zarządzanie usługami`{.action}.
 
 Następnie kliknij przycisk `...`{.action} po prawej stronie usługi do rezygnacji, a następnie `Rezygnacja`{.action}.
 

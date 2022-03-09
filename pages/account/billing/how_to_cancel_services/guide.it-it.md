@@ -174,7 +174,7 @@ Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](htt
 > In seguito alla tua rescissione e al completamento dell'abbonamento in corso, il tuo dominio generico (.com, .org...) net, ecc... ti resta "riservato" durante il periodo detto "di *grazia*" (5 giorni) e durante quello di "*redemption*" (35-40 giorni supplementari), il che significa che sarai in grado di rinnovarlo durante questi periodi.
 >
 
-Per disattivare il tuo [dominio](https://www.ovhcloud.com/fr/domains/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare il tuo [dominio](https://www.ovhcloud.com/it/domains/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 
@@ -194,7 +194,7 @@ Le offerte [SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/) n
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Per disattivare la tua offerta [Web Paas](https://www.ovhcloud.com/fr/web-paas/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
+Per disattivare la tua offerta [Web Paas](https://www.ovhcloud.com/it/web-paas/), accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo nome in alto a destra e poi sul pulsante `Gestione dei servizi`{.action}.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza del servizio da disattivare e seleziona `Disattiva`{.action}.
 

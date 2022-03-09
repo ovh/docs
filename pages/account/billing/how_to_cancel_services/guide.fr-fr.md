@@ -111,7 +111,7 @@ Pour résilier votre offre [Managed bare metal](https://www.ovhcloud.com/fr/mana
 
 #### Serveur NAS-HA <a name="nas"></a>
 
-Pour résilier votre [Serveur NAS-HA](https://www.ovh.com/fr/nas/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
+Pour résilier votre [Serveur NAS-HA](https://www.ovh.com/ca/fr/nas/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite du service à résilier, puis sur `Résilier`{.action}.
 

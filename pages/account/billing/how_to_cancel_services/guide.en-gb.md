@@ -145,7 +145,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-To cancel your [Veeam Cloud Connect](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [Veeam Cloud Connect](https://www.ovhcloud.com/en-gb/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Service Management`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
