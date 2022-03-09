@@ -95,7 +95,7 @@ Lancez la console Veeam.
 
 Vérifiez que vous êtes en mode **Community Edition**, dans le coin en bas à droite.
 
-![mode free edition](images/veeamcommunity.png){.thumbnail}
+![mode free edition](images/Veeamcommunity.png){.thumbnail}
 
 Allez dans le menu, puis cliquez sur `Users and Roles`{.action}.
 
