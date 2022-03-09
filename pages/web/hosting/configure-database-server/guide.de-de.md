@@ -133,9 +133,9 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> sql_mode :
-> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER : Standardmodus von MariaDB 10.1.
-> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION : Standardmodus von MariaDB 10.2 und spätere Versionen.
+> sql_mode:
+> - NO_ENGINE_SUBSTITUTION, NO_AUTO_CREATE_USER: Standardmodus von MariaDB 10.1.
+> - STRICT_TRANS_TABLES, ERROR_FOR_DIVISION_BY_ZERO, NO_AUTO_CREATE_USER, NO_ENGINE_SUBSTITUTION: Standardmodus von MariaDB 10.2 und spätere Versionen.
 >
 > Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
