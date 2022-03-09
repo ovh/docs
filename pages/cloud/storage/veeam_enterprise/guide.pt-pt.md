@@ -95,7 +95,7 @@ Abra a consola Veeam e conecte-se.
 
 Verifique se está em modo **Community Edition** no canto inferior direito.
 
-![](images/veeamcommunity.png){.thumbnail}
+![](images/Veeamcommunity.png){.thumbnail}
 
 No menu, clique em `Users and Roles`{.action}.
 
@@ -128,19 +128,19 @@ Através da interface gráfica de utilizador:
 
 
 <ol start="5">
-<li>Clique em `Advanced...`{.action} para localizar a conta de serviço adicionada anteriormente. A seguir, clique em `Find Now`{.action} e selecione o utilizador `OVHVeeamEnterprise`{.action} na lista de utilizadores.</li>
+ <li>Clique em `Advanced...`{.action} para localizar a conta de serviço adicionada anteriormente. A seguir, clique em `Find Now`{.action} e selecione o utilizador `OVHVeeamEnterprise`{.action} na lista de utilizadores.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 
 <ol start="6">
-<li>Clique em `OK`{.action} para confirmar a seleção e em `OK`{.action} para validar. De seguida, ative todas as permissões no utilizador `OVHVeeamEnterprise`{.action}.</li>
+ <li>Clique em `OK`{.action} para confirmar a seleção e em `OK`{.action} para validar. De seguida, ative todas as permissões no utilizador `OVHVeeamEnterprise`{.action}.</li>
 
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
-<li>Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.</li>
+ <li>Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.</li>
 
 O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
 
@@ -150,10 +150,6 @@ O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância
 
 
 Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença` {.action} na secção `Atalho`.
-
-![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
-
-Na página principal do serviço, selecione a opção `Enable the license`{.action}.
 
 ![](images/veeam001.png){.thumbnail}
 

@@ -97,7 +97,7 @@ Abra la consola Veeam y conéctese.
 
 Compruebe que se encuentre en modo **Community Edition** en la esquina inferior derecha.
 
-![Add OVH Storage](images/veeamcommunity.png){.thumbnail}
+![Add OVH Storage](images/Veeamcommunity.png){.thumbnail}
 
 En el menú, haga clic en `Users and Roles`{.action}.
 
@@ -129,18 +129,18 @@ Desde la interfaz gráfica de usuario:
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
-<li>Haga clic en `Advanced...`{.action} para localizar la cuenta de servicio anteriormente añadida. Haga clic en `Find Now`{.action} y seleccione el usuario `OVHVeeamEnterprise`{.action} en la lista de usuarios.</li>
+ <li>Haga clic en `Advanced...`{.action} para localizar la cuenta de servicio anteriormente añadida. Haga clic en `Find Now`{.action} y seleccione el usuario `OVHVeeamEnterprise`{.action} en la lista de usuarios.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
-<li>Haga clic en `OK`{.action} para confirmar la selección y en `OK`{.action} para validar. A continuación, active todos los permisos en el usuario `OVHVeeamEnterprise`{.action}.</li>
+ <li>Haga clic en `OK`{.action} para confirmar la selección y en `OK`{.action} para validar. A continuación, active todos los permisos en el usuario `OVHVeeamEnterprise`{.action}.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 
 <ol start="7">
-<li>Haga clic en `OK`{.action} para confirmar y `Apply`{.action} para aceptar los cambios.</li>
+ <li>Haga clic en `OK`{.action} para confirmar y `Apply`{.action} para aceptar los cambios.</li>
 
 Ya puede acceder a su usuario de OVHVeeamEnterprise local y a distancia.
 

@@ -94,9 +94,9 @@ Uruchom konsolę Veeam.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Sprawdź, czy pracujesz w trybie **Commnunity Edition** w prawym dolnym rogu.
+Sprawdź, czy pracujesz w trybie **Community Edition** w prawym dolnym rogu.
 
-![](images/veeamcommunity.png){.thumbnail}
+![](images/Veeamcommunity.png){.thumbnail}
 
 Przejdź do menu, następnie kliknij `Users and Roles`{.action}.
 
@@ -182,7 +182,7 @@ Uruchom konsolę Veeam.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Przejdź do menu, następnie kliknij `Licence`{.action}.
+Przejdź do menu, następnie kliknij `License`{.action}.
 
 ![](images/veeamBandR_lic_1.png){.thumbnail}
 

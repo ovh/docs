@@ -5,7 +5,7 @@ excerpt: 'Come configurare un server Veeam Backup & Replication con Veeam Enterp
 section: 'Veeam Backup & Replication'
 ---
 
-**Ultimo aggiornamento: 08/02/2022**
+**Ultimo aggiornamento: 08/03/2022**
 
 ## Obiettivo
 
@@ -97,7 +97,7 @@ Avvia la console Veeam ed esegui il login.
 
 Assicurati di aver effettuato l’accesso in modalità **Community Edition**, nell’angolo in basso a destra.
 
-![](images/veeamcommunity.png){.thumbnail}
+![](images/Veeamcommunity.png){.thumbnail}
 
 Nel menu, clicca su `Users and Roles`{.action}.
 
@@ -129,17 +129,17 @@ Tramite l'interfaccia grafica utente:
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
-<li>Clicca su `Advanced...`{.action} per localizzare l'account di servizio precedentemente aggiunto. Clicca su `Find Now`{.action} e seleziona l'utente `OVHVeeamEnterprise`{.action} nella lista degli utenti.</li>
+ <li>Clicca su `Advanced...`{.action} per localizzare l'account di servizio precedentemente aggiunto. Clicca su `Find Now`{.action} e seleziona l'utente `OVHVeeamEnterprise`{.action} nella lista degli utenti.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
-<li>clicca su `OK`{.action} per confermare la selezione e poi su `OK`{.action}. In seguito, attiva tutti i permessi sull'utente `OVHVeeamEnterprise`{.action}.</li>
+ <li>clicca su `OK`{.action} per confermare la selezione e poi su `OK`{.action}. In seguito, attiva tutti i permessi sull'utente `OVHVeeamEnterprise`{.action}.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
-<li>Clicca su `OK`{.action} per confermare e `Apply`{.action} per validare le modifiche.</li>
+ <li>Clicca su `OK`{.action} per confermare e `Apply`{.action} per validare le modifiche.</li>
 
 Il tuo utente OVHVeeamEnterprise è accessibile in locale e a distanza.
 
@@ -202,7 +202,7 @@ Avvia la console Veeam ed esegui il login.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Clicca sul menu tendina e seleziona `Licence`{.action}.
+Clicca sul menu tendina e seleziona `License`{.action}.
 
 ![](images/veeamBandR_lic_1.png){.thumbnail}
 
