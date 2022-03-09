@@ -6,7 +6,7 @@ section: 'CloudDB'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 03-02-2022**
+**Ostatnia aktualizacja z dnia 09-03-2022**
 
 ## Wprowadzenie
 
@@ -110,9 +110,10 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 - **Automatycznie**: Definiuje, czy zapytania są automatycznie zatwierdzane (committed) czy nie.
 - **Interactive_timeout**: Czas w sekundach, podczas których serwer czeka na działanie w interaktywnym połączeniu przed jego zamknięciem.
 - **InnodbBufferPoolSize**: Wybór rozmiaru pamięci buforowej.
-- **Maksymalna liczba połączeń:** Liczba autoryzowanych jednoczesnych połączeń do bazy danych.
+- **Maksymalna liczba połączeń**: Liczba autoryzowanych jednoczesnych połączeń do bazy danych.
 - **Wait_timeout**: Czas w sekundach, podczas których serwer czeka na działanie w nieinteraktywnym połączeniu przed jego zamknięciem.
-- **Event_scheduler** : Umożliwia uruchamianie wykonywania zaprogramowanych zapytań bezpośrednio na serwerze MySQL.
+- **Event_scheduler**: Umożliwia uruchamianie wykonywania zaprogramowanych zapytań bezpośrednio na serwerze MySQL.
+- **sql_mode**: Opcja **sql_mode** wpływa na składnię SQL oraz sprawdzanie poprawności danych przez MySQL lub MariaDB. Dostępny wyłącznie dla MariaDB.
 
 > [!primary]
 > Jeśli na Twojej stronie pojawi się błąd wskazujący **"Too many connections"**, jest to spowodowane przekroczeniem liczby jednoczesnych połączeń do Twojej bazy danych.
@@ -121,10 +122,21 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 
 > [!primary]
 >
-> <b>Tmpdir</b>: 
+> <b>Tmpdir</b>:    
 > \- /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
 >
 > \- /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Tryb domyślny dla MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Tryb domyślny dla MariaDB 10.2 i nowszych wersji.
+>
+> Zalecamy, aby zawsze używać trybu domyślnego, chyba że baza danych została zaktualizowana z wersji mającej inny tryb domyślny niż bieżąca wersja.
 >
 
 Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
@@ -157,16 +169,16 @@ Aby zmienić tę wersję, kliknij `Zmień wersję`{.action}.
 
 Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL"**, a następnie klikając `Uruchom`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Jak poznać dokładną wersję mySQL lub MariaDB, której używam?**
+#### **Jak poznać dokładną wersję mySQL lub MariaDB, której używam?**
 
 W tym celu wprowadź komendę w phpMyAdmin, w rubryce **"SQL"**, następnie kliknij `Uruchom`{.action}:
 
-```
-show variables jak "version";
+```sql
+show variables like "version";
 ```
 
 > [!primary]
@@ -231,7 +243,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej l
 
 ### Optymalizacja bazy danych
 
- Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
+Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
 
 #### **Indeksowanie bazy danych**
 
@@ -239,8 +251,8 @@ Aby przyspieszyć wyszukiwanie podczas zapytania, należy dodać indeks do pól 
 
 Przykład: regularnie wyszukujesz osób w danym mieście. Zaindeksuj pole "miasto" za pomocą następującego zapytania:
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `miasto` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Czyszczenie bazy danych**
 
@@ -272,7 +284,7 @@ W zapytaniach SQL sprawdź, czy wybierasz tylko to, czego potrzebujesz, a przede
 
 Przykład:
 
-```bash
+```sql
 (where table1.pole = tabela2.pole2)
 ```
 
