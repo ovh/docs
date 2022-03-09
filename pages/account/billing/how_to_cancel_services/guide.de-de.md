@@ -2,17 +2,21 @@
 title: Kündigen Sie Ihre OVHcloud Dienste
 excerpt: Hier erfahren Sie, wie Sie Ihre OVHcloud Abonnements unterbrechen
 slug: how-to-cancel-your-services
-section: Meine Dienste und deren Verlängerung verwalten
+section: Verlängerung der Dienste verwalten
 order: 03
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Mitmachen" auf dieser Seite.
+>
 
 **Stand 01.03.2022**
 
 ## Ziel
 
-Sie möchten eine oder mehrere OVHcloud Dienste kündigen. In dieser Anleitung erfahren Sie, wie Sie Ihr Abonnement über das  [OVHcloud Kundencenter unterbrechen](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Sie möchten eine oder mehrere OVHcloud Dienste kündigen. In dieser Anleitung erfahren Sie, wie Sie Ihr Abonnement über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) unterbrechen.
 
-Zuerst lesen Sie den Abschnitt "Wählen Sie> das betreffende Produkt im Abschnitt "Wie kündigen [Sie Ihr Abo?](#terminate) "
+Zuerst lesen Sie den Teil “[Was passiert, wenn ein OVHcloud Dienst gekündigt wird?](#consequences)“.<br> Wählen Sie dann das betreffende Produkt aus dem Teil “[Wie kann ich Ihr Abonnement kündigen?](#terminate)“.
 
 > [!primary]
 >
@@ -23,17 +27,17 @@ Zuerst lesen Sie den Abschnitt "Wählen Sie> das betreffende Produkt im Abschnit
 
 ## Was passiert, wenn ein OVHcloud Dienst gekündigt wird? <a name="consequences"></a>
 
-Die "Kündigung"eines OVHcloud Dienstes bedeutet, dass **er am Ende** des laufenden Abonnements endgültig eingestellt wird (mit Ausnahme für [Domainnamen](#domain)). Sie können Ihre Dienstleistung kündigen oder [eine Kündigungsanfrage](#cancel) bis zu 24 Stunden vor dem Vertragsende stornieren.
+Die “Kündigung“ eines OVHcloud Dienstes bedeutet, dass er am Ende des laufenden Abonnements **endgültig** eingestellt wird (mit Ausnahme für [Domainnamen](#domain)). Sie können Ihre Dienstleistung kündigen oder [eine Kündigungsanfrage](#cancel) bis zu 24 Stunden vor dem Vertragsende stornieren.
 
-Handelt es sich um ein E-Mail-Angebot, einen Server oder ein Webhosting, so werden alle betroffenen Daten gelöscht, ohne dass ein Abruf **möglich ist**.
+Handelt es sich um ein E-Mail-Angebot, einen Server oder ein Webhosting, so werden alle betroffenen Daten gelöscht, **ohne dass ein Abruf möglich ist**.
 
 Handelt es sich um einen Domainnamen oder eine Telefonnummer, so werden diese wieder in Umlauf gebracht und können von **anderen Kunden bestellt werden**.
 
-Dies bedeutet, dass Sie vor einer Kündigung sicher sein **müssen**:
+Dies bedeutet, dass Sie vor einer Kündigung **sicher** sein müssen:
 
-- Der Vorgang betrifft einen Dienst, den Sie nicht mehr verwenden möchten.
-- Sie verfügen erforderlichenfalls über eine *funktionierende* Alternative.
-- wenn nötig alle betroffenen Daten gespeichert haben.
+- Der Vorgang betrifft einen Dienst, den Sie nicht mehr verwenden möchten;
+- Sie verfügen erforderlichenfalls über eine *funktionierende* Alternative;
+- Wenn nötig alle betroffenen Daten gespeichert haben.
 
 ## Wie kann ich Ihr Abonnement kündigen? <a name="terminate"></a>
 
@@ -41,93 +45,89 @@ Dies bedeutet, dass Sie vor einer Kündigung sicher sein **müssen**:
 >
 > Die Kündigung kann nur vorgenommen werden, wenn folgende Bedingungen erfüllt sind:
 >
-> * Sie sind der "Administrator-Kontakt"des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#definition)).
-> * der Dienst wird nicht von Hand verlängert;
+> * Sie sind der “Administrator-Kontakt“ des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#definition));
+> * Der Dienst wird nicht von Hand verlängert;
 > * Die Dienstleistung wird nicht eingestellt, insbesondere aufgrund eines Mangels an Berichtigung einer Rechnung.
 >
 
 Klicken Sie auf den zu kündigenden Produkttyp in der folgenden Liste der wichtigsten OVHcloud Angebote: 
 
 [Bare Metal Cloud](#baremetalcloud)<br />
-  >
-  >
-  >
-  >
-  >
-  >
+&emsp;&emsp;[Dedicated Server](#dedicated)<br />
+&emsp;&emsp;[VPS](#vps)<br />
+&emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
+&emsp;&emsp;[NAS-HA Server](#nas)<br />
+&emsp;&emsp;[Load Balancer](#iplb)<br />
+&emsp;&emsp;[Lizenzen](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-  >
-  >
-  >
+&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
+&emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
 
 [Web Cloud](#webcloud)<br />
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
+&emsp;&emsp;[Domainnamen](#domain)<br />
+&emsp;&emsp;[Web Hosting](#hosting)<br />
+&emsp;&emsp;[Sectigo SSL-Zertifikate](#ssl_sectigo)<br />
+&emsp;&emsp;[OVHcloud Web PaaS powered by Platform.sh](#webpaas)<br />
+&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[E-Mail MX Plan](#mxplan)<br />
+&emsp;&emsp;[E-Mail Pro](#emailpro)<br />
+&emsp;&emsp;[Hosted Exchange](#hosted)<br />
+&emsp;&emsp;[Private Exchange](#private)<br />
+&emsp;&emsp;[Office 365 CSP1](#office-csp1)<br />
+&emsp;&emsp;[Office 365 CSP2](#office-csp2)<br />
+&emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
 [Telecom](#telecom)<br />
-  >
-  >
-  >
-  >
-  >
+&emsp;&emsp;[SMS](#sms)<br />
 
-[Solutions transverses](#transversal)<br />
-  >
+[Verschiedenes](#transversal)<br />
+&emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
 
 #### Dedicated Server <a name="dedicated"></a>
 
-Um Ihren [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/) zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihren [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### VPS <a name="vps"></a>
 
-Um Ihren [VPS](https://www.ovhcloud.com/de/vps/) zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihren [VPS](https://www.ovhcloud.com/de/vps/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Managed Bare Metal <a name="managedbaremetal"></a>
 
-Um Ihr Managed [Bare Metal Angebot zu kündigen](https://www.ovhcloud.com/de/managed-bare-metal/), folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/managed-bare-metal/eine-managed-bare-metal-kuendigen/).
+Um Ihr Managed [Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Angebot zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/managed-bare-metal/eine-managed-bare-metal-kuendigen/).
 
 #### HA-NAS Server <a name="nas"></a>
 
-Um Ihren [HA-NAS](https://www.ovh.de/nas/) Server zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienste`{.action}.
+Um Ihren [HA-NAS](https://www.ovh.de/nas/) Server zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Loadbalancer <a name="iplb"></a>
 
-Um Ihr [Loadbalancer](https://www.ovh.de/loesungen/load-balancer/) Angebot zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter] ein(https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienste`{.action}.
+Um Ihr [Loadbalancer](https://www.ovh.de/loesungen/load-balancer/) Angebot zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Lizenzen <a name="licences"></a>
 
-Um eine bei OVHcloud bestellte Lizenz zu kündigen, loggen Sie sich in Ihr OVHcloud Kundencenter ein[, klicken Sie oben rechts auf Ihren Namen und dann auf den Button ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Verwaltung der Dienstleistungen`{.action}.
+Um eine bei OVHcloud bestellte Lizenz zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
 Klicken Sie dann auf den Button `...`{.action} rechts neben der zu kündigenden Lizenz und dann auf `Kündigen`{.action}.
 
@@ -137,33 +137,33 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Um Ihr Hosted [Private Cloud Powered by VMware](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/).
+Um Ihr Hosted [Private Cloud Powered by VMware](https://www.ovhcloud.com/de/hosted-private-cloud/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/private-cloud/eine-private-cloud-kuendigen/).
 
 #### Hosted Private Cloud Powered by Anthos <a name="hostedprivatecloud-anthos"></a>
 
-Um Ihre [Hosted Private Cloud Powered by Anthos](https://www.ovhcloud.com/de/hosted-private-cloud/anthos/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den `Button Verwaltung der Dienste`{.action}.
+Um Ihre [Hosted Private Cloud Powered by Anthos](https://www.ovhcloud.com/de/hosted-private-cloud/anthos/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action}. und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
-Um Ihren [Veeam Cloud Connect](https://www.ovh.com/fr/storage-solutions/veeam-cloud-connect/) Dienst zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienste`{.action}.
+Um Ihren [Veeam Cloud Connect](https://www.ovhcloud.com/de/storage-solutions/veeam-cloud-connect/) Dienst zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action}. und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betreffenden Dienst `..`{.action} und dann auf `Löschen`{.action} klicken, wie im folgenden Beispiel für eine Instanz:
+Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betreffenden Dienst `...`{.action} und dann auf `Löschen`{.action} klicken, wie im folgenden Beispiel für eine Instanz:
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
-Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite [zum Abrechnungsmodus Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
+Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
 
-Sie können [Ihren aktuellen Verbrauch](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/#consulter-sa-consommation-actuelle) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
+Sie können Ihren [aktuellen Verbrauch](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -171,40 +171,40 @@ Sie können [Ihren aktuellen Verbrauch](https://docs.ovh.com/fr/public-cloud/inf
 
 > [!primary]
 >
-> Nach Ihrer Kündigung und dem Ende des laufenden Abonnements erhalten Sie Ihre generische Domain (.com, .org. net, usw.) Sie bleiben während der so genannten "Gnadenfrist" (*5 Tage)* und dann während der "*Redemption*" (35 bis 40 Tage) "reserviert", was bedeutet, dass Sie es allein in diesen Zeiten verlängern können.
+> Nach Ihrer Kündigung und dem Ende des laufenden Abonnements erhalten Sie Ihre generische Domain (.com, .org. net, usw.) Sie bleiben während der so genannten “*Gnadenfrist*“ (5 Tage) und dann während der “*Redemption*“ (35 bis 40 Tage) “reserviert“, was bedeutet, dass Sie es allein in diesen Zeiten verlängern können.
 >
 
-Um Ihre [Domain zu kündigen](https://www.ovhcloud.com/fr/domains/), loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihre [Domainname](https://www.ovhcloud.com/fr/domains/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### Webhosting <a name="hosting"></a>
 
-Um Ihr [Webhosting](https://www.ovhcloud.com/fr/web-hosting/) zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihr [Webhosting](https://www.ovhcloud.com/de/web-hosting/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### SSL Sectigo Zertifikat <a name="ssl_sectigo"></a>
 
-Bei den [SSL Sectigo Angeboten](https://www.ovhcloud.com/fr/web-hosting/options/ssl/) ist eine Kündigung vor Ablauf nicht möglich, da diese nicht automatisch verlängert werden. Es genügt also, wenn Sie diese zum nächsten Termin nicht verlängern.
+Bei den [SSL Sectigo](https://www.ovhcloud.com/de/web-hosting/options/ssl/) Angeboten ist eine Kündigung vor Ablauf nicht möglich, da diese nicht automatisch verlängert werden. Es genügt also, wenn Sie diese zum nächsten Termin nicht verlängern.
 
 #### OVHcloud Web Paas powered by Platform.sh <a name="webpaas"></a>
 
-Um Ihr [Web Paas](https://www.ovhcloud.com/fr/web-paas/) Angebot zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihr [Web Paas](https://www.ovhcloud.com/de/web-paas/) Angebot zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
 #### CloudDB <a name="clouddb"></a>
 
-Um Ihr [CloudDB](https://www.ovh.com/fr/cloud-databases/) Angebot zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den `Button Verwaltung der Dienste`{.action}.
+Um Ihr [CloudDB](https://www.ovh.de/cloud/cloud-databases/) Angebot zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
@@ -212,9 +212,9 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 Ein MX Plan Angebot unterliegt nicht einem regelmäßigen Abonnement. Sie kann daher nicht gekündigt werden, aber wenn Sie dies wünschen, können Sie Ihr Angebot löschen.
 
-Um Ihr [MX Plan](https://docs.ovh.com/fr/emails/) Angebot zu löschen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um Ihr [MX Plan](https://docs.ovh.com/de/emails/) Angebot zu löschen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann auf den Button `..`{.action}. rechts neben der zu kündigenden Dienstleistung und dann auf `MX Plan sofort löschen`{.action}.
+Klicken Sie dann auf den Button `...`{.action} rechts neben der zu kündigenden Dienstleistung und dann auf `MX Plan sofort löschen`{.action}.
 
 Geben Sie die Gründe für Ihre Anfrage zur Löschung an und klicken Sie auf `Bestätigen`{.action}.
 
@@ -222,85 +222,50 @@ Sie erhalten in diesem Fall eine E-Mail mit der Vorgehensweise zur Schließung I
 
 > [!warning]
 >
->Beim Löschen eines MX Plan werden automatisch alle zugehörigen Daten unwiderruflich gelöscht. Das Löschen eines MX Plan Pakets bedeutet keine Garantie zur Rückerstattung.
+> Beim Löschen eines MX Plan werden automatisch alle zugehörigen Daten unwiderruflich gelöscht. Das Löschen eines MX Plan Pakets bedeutet keine Garantie zur Rückerstattung.
 >
 
 #### E-Mail Pro <a name="emailpro"></a>
 
-Um Ihr E-Mail [Pro Angebot](https://www.ovhcloud.com/fr/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/#deletion).
+Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Angebot zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/emails-pro/verwaltung-der-abrechnung-emailpro/#konten-entfernen).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Um Ihr Hosted [Exchange Angebot zu kündigen](https://www.ovhcloud.com/fr/emails/hosted-exchange/), folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes).
+Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Angebot zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen).
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr Private [Exchange Angebot](https://www.ovhcloud.com/fr/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes_1).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) Angebot zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/#accounts-entfernen_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Um Ihr Office [365 CSP](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/) Angebot zu kündigen folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-ovh/#managesubscriptions).
+Um Ihr [Office 365 CSP 1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) Angebot zu kündigen folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/bestellung_und_verwaltung_einer_office_365_lizenzgruppe_bei_ovh/#ihre-abonnements-verwalten).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Um Ihr Office [365](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/) CSP 2 Angebot zu kündigen folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh/#gerer-vos-abonnements).
+Um Ihr [Office 365 CSP 2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) Angebot zu kündigen folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/microsoft-collaborative-solutions/verwaltung_einer_office_365_reseller_lizenzgruppe_csp2/#ihre-abos-verwalten).
 
 #### Sharepoint <a name="sharepoint"></a>
 
-Sie können entweder **einen** einzelnen Account aus Ihrer Sharepoint-Plattform löschen oder die gesamte Sharepoint-Plattform kündigen.
+Sie können entweder einen einzelnen Account aus Ihrer Sharepoint-Plattform **löschen** oder die gesamte Sharepoint-Plattform kündigen.
 Wenn Sie die gesamte Plattform kündigen möchten, empfehlen wir Ihnen, zuerst jedes einzelne Konto zu löschen.
 
-* Um einen individuellen Sharepoint Account zu löschen, loggen Sie sich in Ihren >
-Klicken Sie im Tab `Benutzer` {.action} auf den Button `...`{.action} rechts neben dem zu löschenden Account und dann auf `den Account {.action}` löschen. Lesen Sie die Informationen und klicken Sie auf `Bestätigen` {.action}.
+* Um einen individuellen SharePoint-Account zu löschen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie anschließend auf `Microsoft`{.action}, `Sharepoint`{.action} und auf Ihre Sharepoint-Plattform.<br>
+Klicken Sie im Tab `Benutzer`{.action} auf den Button `...`{.action} rechts neben dem zu löschenden Account und dann auf `Account löschen`{.action}. Lesen Sie die Informationen und klicken Sie auf `Bestätigen`{.action}.
 
-* Um Ihre gesamte Sharepoint[-Plattform zu kündigen, loggen Sie sich ](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/)in Ihr OVHcloud Kundencenter ein[, klicken Sie oben rechts auf Ihren Namen und dann auf den ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)Button Verwaltung der Dienste` `{.action}.
+* Um Ihre gesamte [Sharepoint-Plattform](https://www.ovhcloud.com/de/collaborative-tools/sharepoint/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann auf den `..`{.action}. rechts neben der zu kündigenden Sharepoint-Plattform und dann auf `Kündigen`{.action}.
-
-Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
-
-### Telecom <a name="telecom"></a>
-
-#### xDSL / FTTH <a name="xdsl"></a>
-
-Um Ihr [FTTH oder xDSL](https://www.ovhtelecom.fr/offre-internet/) Angebot zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/xdsl/comment-resilier-mon-acces-xdsl/).
-
-> [!warning]
->
-> **Sonderfall**
->
-> Wenn Sie ein [SIP Trunk](https://www.ovhtelecom.fr/telephonie/sip-trunk/) Paket kündigen möchten, müssen **Sie** über Ihr OVHcloud Kundencenter eine Support-Anfrage bei den Support-Teams erstellen.
->
-
-#### VoIP <a name="voip"></a>
-
-Um ein [VoIP](https://www.ovhtelecom.fr/telephonie/voip/) Angebot zu kündigen, befolgen Sie die Anweisungen in dieser Anleitung, [um eine SIP oder Trunk](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-sip-trunk) Leitung zu kündigen oder [eine Alias-Nummer zu kündigen](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-alias).
-
-#### OverTheBox <a name="otb"></a>
-
-Um Ihren [OverTheBox](https://www.ovhtelecom.fr/overthebox/) Dienst zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienste`{.action}.
-
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann auf den `...`{.action} rechts neben der zu kündigenden Sharepoint-Plattform und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
-
-#### SMS <a name="sms"></a>
-
-Für SMS Angebote gibt es kein [Kündigungsverfahren](https://www.ovhtelecom.fr/sms/). Ein SMS Account generiert weder ein monatliches Abo noch eine Abrechnung. SMS Gutschriften haben eine unbegrenzte Lebensdauer.
-
-Wenn Sie einen SMS-Account löschen möchten, erstellen Sie über Ihr OVHcloud Kundencenter eine Support-Anfrage.
-
-#### FAX <a name="fax"></a>
-
-Um ein [FAX](https://www.ovhtelecom.fr/fax/) Angebot zu kündigen befolgen Sie bitte die [Anweisungen](https://docs.ovh.com/fr/voip/changer-l-offre-et-les-options-d-une-ligne-voip/#resilier-fax).
 
 ### Bereichsübergreifende Lösungen <a name="transversal"></a>
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
-Um Ihr [SSL Gateway](https://www.ovh.com/fr/ssl-gateway/) Angebot zu kündigen, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienste`{.action}.
+Um Ihr [SSL Gateway](https://www.ovh.de/ssl-gateway/) Angebot zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `..`{.action}. und dann auf `Kündigen`{.action}.
+Klicken Sie dann rechts neben der zu kündigenden Dienstleistung auf `...`{.action} und dann auf `Kündigen`{.action}.
 
 Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Bestätigen`{.action}.
 
@@ -311,9 +276,9 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 > Sie können eine Kündigungsanfrage bis zu 24 Stunden vor dem Kündigungsdatum stornieren.
 >
 
-Um eine Kündigungsanfrage zu stornieren, loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Verwaltung der Dienstleistungen`{.action}.
+Um eine Kündigungsanfrage zu stornieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
-Klicken Sie dann auf den Button `..`{.action}. rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstleistung stornieren`{.action} 
+Klicken Sie dann auf den Button `...`{.action} rechts neben der Dienstleistung, für die eine Kündigung beantragt wurde, und dann auf `Kündigung der Dienstes stornieren`{.action} 
 
 ![cancel_termination](images/cancel_termination.png){.thumbnail}
 
@@ -321,8 +286,6 @@ Klicken Sie dann auf `Stornierung bestätigen`{.action}.
 
 ## Mehr <a name="gofurther"></a>
 
-[Verlängerung meiner Dienste verwalten](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
+[Verlängerung Ihrer OVHcloud Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
 
-[FAQ - Automatische Verlängerung bei OVH](https://docs.ovh.com/fr/billing/faq-renouvellement-automatique-ovh/)
-
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

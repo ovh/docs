@@ -222,12 +222,12 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 > [!warning]
 >
->La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. L'action de supprimer un MX Plan n'octroie aucun remboursement.
+> La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. L'action de supprimer un MX Plan n'octroie aucun remboursement.
 >
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/#deletion).
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/emails-pro/gestion-facturation-emailpro/#supprimer-un-compte).
 
 #### Hosted Exchange <a name="hosted"></a>
 
