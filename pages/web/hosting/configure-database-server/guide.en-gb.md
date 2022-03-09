@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 9th March 2022**
 
 ## Objective
 
@@ -133,9 +133,9 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 > [!primary]
 >
-> sql_mode:
-> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER: Default mode of MariaDB 10.1.
-> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION: Default mode of MariaDB 10.2 and higher.
+> <b>sql_mode</b>:
+> \- <div> <style type="text/css"</style> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre></div>: Default mode of MariaDB 10.1.
+> \- <div> <style type="text/css"</style> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre></div>: Default mode of MariaDB 10.2 and higher.
 >
 > We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
