@@ -16,14 +16,14 @@ Veeam Backup & Replication è un software di protezione dei dati che offre diver
 
 ## Prerequisiti
 
-* Disporre dell’opzione [Veeam Enterprise](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}
-* Disporre di una macchina Windows Server 2012 o di una versione più recente
+* Disporre dell’opzione [Veeam Enterprise](https://www.ovhcloud.com/it/storage-solutions/veeam-enterprise/){.external}.
+* Disporre di una macchina Windows Server 2012 o di una versione più recente.
 
 ## Procedura
 
 ### Installa Veeam Backup & Replication
 
-Scarica la soluzione **Veeam Backup & Replication** dal [sito di Veeam]https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se non hai ancora registrato un account, creane uno (gratis).
+Scarica la soluzione **Veeam Backup & Replication** dal [sito di Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se non hai ancora registrato un account, creane uno (gratis).
 
 Il file è un’immagine disco in formato ISO: dopo averlo trasferito sul tuo server, seleziona il lettore CD della macchina e scegli l’immagine, poi avvia l’installazione.
 
@@ -67,9 +67,7 @@ A operazione completata, esci dall’installer cliccando su `Finish`{.action}.
 
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
-Ti verrà chiesto di riavviare Windows per finalizzare l’operazione. Clicca su `Yes`{.action}.
-
-![](images/veeamBandR_inst_11.png){.thumbnail}
+Verrai reindirizzato all'assistente all'installazione, ti sarà sufficiente chiudere la finestra.
 
 ### Crea un account di servizio Veeam Enterprise
 
@@ -85,8 +83,10 @@ Successivamente, crea un account di servizio accedendo come amministratore e uti
 New-LocalUser “OVHVeeamEnterprise” -Password (ConvertTo-SecureString - AsPlainText “P@ssword01” -Force) -Description “OVH Service Account for Veeam Enterprise -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
 ```
 
-Sostituisci il nome dell’account (OVHVeeamEnterprise) e la password (P@ssword01) dell’esempio con le tue credenziali.
-  
+Tieni presente che il nome dell'account e la password rappresentano un esempio e devono essere sostituiti:
+
+* Nome dell'account: OVHVeeamEnterprise
+* Password: P@ssword01
   
 
 #### Definisci le autorizzazioni dell’account di servizio
@@ -134,7 +134,7 @@ Tramite l'interfaccia grafica utente:
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
-<li>clicca su `OK`{.action} per confermare la selezione e su `OK`{.action} per confermare. In seguito, attiva tutti i permessi sull'utente `OVHVeeamEnterprise`{.action}.</li>
+<li>clicca su `OK`{.action} per confermare la selezione e poi su `OK`{.action}. In seguito, attiva tutti i permessi sull'utente `OVHVeeamEnterprise`{.action}.</li>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 

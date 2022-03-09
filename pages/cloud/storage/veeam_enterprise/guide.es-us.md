@@ -16,7 +16,7 @@ Veeam Backup & Replication es un programa que permite gestionar la seguridad de 
 
 ## Requisitos
 
-* Tener una [solución Veeam Enterprise](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}.
+* Tener una [solución Veeam Enterprise](https://www.ovhcloud.com/es/storage-solutions/veeam-enterprise/){.external}.
 * Disponer de un máquina Windows Server 2012 o de una versión superior.
 
 ## Procedimiento
@@ -69,8 +69,6 @@ Cuando haya terminado, salga del instalador haciendo clic en `Finish`{.action}.
 
 El sistema le redirigirá al asistente de instalación. Solo tiene que cerrar la ventana.
 
-![launch wizard](images/veeamconsoleinstalled.png){.thumbnail}
-
 ### Crear una cuenta de servicio Veeam Enterprise
 
 #### Crear la cuenta de servicio
@@ -85,7 +83,10 @@ A continuación, cree una cuenta de servicio introduciendo el siguiente comando 
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
 ```
 
-No olvide sustituir en el comando anterior el nombre de la cuenta (OVHVeeamEnterprise) y la contraseña (P@ssword01) por los suyos propios.
+Tenga en cuenta que el nombre de la cuenta y la contraseña son un ejemplo y deben sustituirse:
+
+* Nombre de la cuenta: OVHVeeamEnterprise
+* Contraseña: P@ssword01
 
 
 #### Establecer las autorizaciones de la cuenta de servicio

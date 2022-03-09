@@ -16,7 +16,7 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 ## Requisitos
 
-* Dispor de um [serviço Veeam Enterprise](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}.
+* Dispor de um [serviço Veeam Enterprise](https://www.ovhcloud.com/pt/storage-solutions/veeam-enterprise/){.external}.
 * Dispor de máquina Windows Server 2012 ou uma versão mais recente.
 
 ## Instruções
@@ -68,8 +68,6 @@ Quando esta for concluída, saia do instalador clicando em `Finish`{.action}.
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
 Será redirecionado para o assistente de instalação. Basta fechar a janela.
-
-![](images/veeamconsoleinstalled.png){.thumbnail}
 
 ### Criar uma conta de serviço Veeam Enterprise
 
@@ -219,4 +217,4 @@ Verifique que a informação apresentada corresponde à sua licença da OVHcloud
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
