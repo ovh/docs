@@ -15,7 +15,7 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 ## Prérequis
 
-* Posséder une [offre Veeam Enterprise](https://www.veeam.com/enterprise-backup-solutions-software.html?ad=menu-products){.external}.
+* Posséder une [offre Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/){.external}.
 * Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
 
 ## En pratique
@@ -67,8 +67,6 @@ Une fois celle-ci terminée, quittez l'installateur en cliquant sur `Finish`{.ac
 ![fermeture de l'installateur](images/veeamBandR_inst_10.png){.thumbnail}
 
 Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer la fenêtre.
-
-![launch wizard](images/veeamconsoleinstalled.png){.thumbnail}
 
 ### Créer un compte de service Veeam Enterprise
 
