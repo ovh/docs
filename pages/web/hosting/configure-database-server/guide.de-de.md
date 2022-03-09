@@ -116,7 +116,7 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 - **MaxLines:** Anzahl der erlaubten Simultanverbindungen auf CloudDB.
 - **Wait_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
 - **Event_scheduler**: Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
-- **sql_mode** : Die Option **sql_mode** betrifft die jeweilige SQL-Syntax und die Überprüfungen der Datenvalidierung durch MySQL/MariaDB. Nur für MariaDB verfügbar.
+- **sql_mode**: Die Option **sql_mode** betrifft die jeweilige SQL-Syntax und die Überprüfungen der Datenvalidierung durch MySQL/MariaDB. Nur für MariaDB verfügbar.
 
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
@@ -134,8 +134,8 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 > [!primary]
 >
 > sql_mode:
-> - NO_ENGINE_SUBSTITUTION, NO_AUTO_CREATE_USER: Standardmodus von MariaDB 10.1.
-> - STRICT_TRANS_TABLES, ERROR_FOR_DIVISION_BY_ZERO, NO_AUTO_CREATE_USER, NO_ENGINE_SUBSTITUTION: Standardmodus von MariaDB 10.2 und spätere Versionen.
+> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER: Standardmodus von MariaDB 10.1.
+> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION: Standardmodus von MariaDB 10.2 und spätere Versionen.
 >
 > Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
