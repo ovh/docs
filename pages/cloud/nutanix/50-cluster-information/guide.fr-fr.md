@@ -128,67 +128,80 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
 
-#### Collecter tous les logs
+#### Collecter tous les logs pour un envoi au support NUTANIX
 
 Il faut parfois récuperer les logs Nutanix pour les envoyer au support. 
 
-Les logs peuvent être envoyés directement en sftp chez Nutanix lors la collecte des logs ou être rassemblé localement sur chacune des **CVM** (Pour rappel il y'a une CVM par nœud ) et être récupéré en SFTP avec scp ou winscp.
+Unn outil existe au sein de l'interface Prism Element dans le  menu HEALTH qui fait une collecte de log et qui perme de l'envoyer chez Nutanix mais nutanix recommande de ne plus utiliser cet outil pour envoyer des logs mais plutôt un outil en ligne de commande qui se nomme Logbay.
 
-##### Partie commune à la récupération des logs 
+Cet outil permet de récolter les logs sur chaque **CVM** et Prism Central pour :
 
-Allez dans Prism Element sur le cluster à analyser
+* Directement envoyer les logs au Support Nutanix avec le numéro d'incident. 
+* Générer les logs les récuperer en SSH pour les enyoyer ultérierement à partir du portail Nutanix avec le numéro d'incident.
 
-Cliquez dans le menu sur `Health`{.action}
+##### Collecter les logs concernant **Prism Central**
 
-![LogCollect - étape 1](images/LogCollect01.PNG){.thumbnail}
+Connectez vous en ssh avec la commande **ssh** sous linux ou avec l'outil **putty** sur l'adresse IP de Prism Central comme par exemple sous linux ```ssh nutanix@adresseipprismcentral```:
 
-Cliquez à droite sur `Actions`{.action} et choisissez `Collect Logs`{.action}
+```
+# Commande pour générer les logs et les envoyer au support de Nutanix
+logbay collect --dst=ftp://nutanix -c casenumber
+```
 
-![LogCollect - étape 2](images/LogCollect02.PNG){.thumbnail}
+```
+# Commande pour genérer les logs sans les envoyer au support Nutanix
+logbay collect 
+# Affichez le nom du fichier généré
+ls /home/nutanix/data/logbay/bundles
+```
 
-Cliquez sur `Select Nodes`{.action}
+Récuperez les logs à partir d'un ordinateur sous linux avec la commande **scp** ou sous Windows **pscp** 
 
-![LogCollect - étape 3](images/LogCollect03.PNG){.thumbnail}
+```
+### Lancez la copie avec le nom du fichier généré
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PC-adresseipprismcentral-CW.zip
+nutanix@adresseipprismcentral's password:
+Saisissez le mot de passe
+```
 
-En haut à gauche sélectionnez sur `Node`{.action} pour sélectionner tous les nœuds et cliquez sur `Done`{.action}
+##### Collecter les logs des **CVM** d'un cluster
 
-![LogCollect - étape 4](images/LogCollect04.PNG){.thumbnail}
+Connectez vous en ssh avec la commande **ssh** sous linux ou avec l'outil **putty** sur l'adresse IP du cluster comme par exemple sous linux ```ssh nutanix@adresseipcluster```
 
-Cliquez sur `Next`{.action}
+```
+#lancez cette commande pour demande la collecte des logs sur tous les **CVM** et les envoyer les logs au support de Nutanix
+allssh logbay collect
+```
 
-![LogCollect - étape 5](images/LogCollect05.PNG){.thumbnail}
+```
+#lancez cette commande pour demande la collecte des logs sur tous les **CVM** sans les envoyer au support Nutanix
+allssh logbay collect --dst=ftp://nutanix -c casenumber
+# afficher le nom des fichiers générés
+allssh ls /home/nutanix/data/logbay/bundles
+```
 
-Cliquez sur `Next`{.action}
-
-![LogCollect - étape 6](images/LogCollect06.PNG){.thumbnail}
-
-A la prochaine étape il faut choisir entre l'envoi de logs au support Nutanix ou localement
-
-###### Récupération des logs pour Internet
-
-Sélectionnez `Select Server when the logs can be collected`{.action} , choisissez **Nutanix Support SFTP** et cliquez sur `Collect`{.action}
-
-![LogCollect - étape 7](images/LogCollect07.PNG){.thumbnail}
-
-Si l'accès INTERNET fonctionne correctement les logs sont envoyés directement chez Nutanix pour analyse.
-
-###### Récupération des logs au travers de la ligne de commande
-
-Sélectionnez `Select Server when the logs can be collected`{.action} , choisissez **Download Locally** et cliquez sur `Collect`{.action}
-
-![LogCollect - étape 8](images/LogCollect08.PNG){.thumbnail}
-
-Sur chacune des **CVM** il faut maintenant récupérer les logs
-
-L'étape suivante devra être faite autant de fois que le cluster a de nœud
-
-
+```
+### Lancez la copie avec les nom des fichiers généré
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+nutanix@CVM1's password:
+Saisissez le mot de passe
+...
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+nutanix@CVMN's password:
+Saisissez le mot de passe
+```
 
 
+Pour plus de détails sur **Logbay** et **putty** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+ 
 
 
 
 
-## Aller plus loin
+## Aller plus loinx
+
+[Lien vers Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+[Documentation officielle LOGBAY](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
