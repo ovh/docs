@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Última actualización: 03/02/2022**
+**Última actualización: 09/03/2022**
 
 ## Objetivo
 
@@ -109,12 +109,13 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 - **Tmpdir**: Directorio de archivos temporales. **/dev/shm** corresponde a la memoria RAM de la instancia. **/tmp** es el disco duro de la instancia.
 - **MaxAllowedPacket**: Tamaño máximo de los envíos
 - **max_user_connections**: Número de conexiones simultáneas autorizadas por usuario.
-- **AutoCommit** : Define si las peticiones se validan automáticamente (committed) o no.
-- **Interactive_timeout** : Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
-- **InnodbBufferPoolSize** : Tamaño de la memoria intermedia (en megabytes).
-- **MaxConnexions :** Número de conexiones simultáneas autorizadas en el CloudDB.
+- **AutoCommit**: Define si las peticiones se validan automáticamente (committed) o no.
+- **Interactive_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
+- **InnodbBufferPoolSize**: Tamaño de la memoria intermedia (en megabytes).
+- **MaxConnexions**: Número de conexiones simultáneas autorizadas en el CloudDB.
 - **Wait_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
-- **Event_scheduler** : Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
+- **Event_scheduler**: Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
+- **sql_mode**: La opción **sql_mode** afecta a la sintaxis SQL y las verificaciones de validación de datos realizadas por MySQL o MariaDB. Solo disponible para MariaDB.
 
 > [!primary]
 > Cuando se produce un error en el sitio web que indica **"Too many connections"**, se debe a que se han superado las conexiones simultáneas a su base de datos.
@@ -123,9 +124,19 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 
 > [!primary]
 >
-> Tmpdir:
-> - /dev/shm : El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
-> - /tmp/* El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
+> <b>Tmpdir</b>:
+> - /dev/shm: El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
+> - /tmp: El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:    
+> - <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.1.
+> 
+> - <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores.
+>
+> Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >
 
 Realice los cambios necesarios y haga clic en `Confirmar`{.action}.
