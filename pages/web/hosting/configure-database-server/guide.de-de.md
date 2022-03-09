@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 09.03.2022**
 
 ## Ziel
 
@@ -16,7 +16,7 @@ Die Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres 
 
 ## Voraussetzungen
 
-- Sie haben ein [Cloud Databases](https://www.ovh.de/cloud-databases/) in Ihrem Kunden-Account.
+- Sie haben einen [Cloud Databases](https://www.ovh.de/cloud-databases/) Dienst in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -133,9 +133,9 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> sql_mode:
-> - NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER: Standardmodus von MariaDB 10.1.
-> - STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION: Standardmodus von MariaDB 10.2 und spätere Versionen.
+> <b>sql_mode</b>:
+> \- <div> <style type="text/css"</style> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre></div>: Standardmodus von MariaDB 10.1.
+> \- <div> <style type="text/css"</style> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre></div>: Standardmodus von MariaDB 10.2 und spätere Versionen.
 >
 > Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
