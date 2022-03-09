@@ -4,6 +4,8 @@ slug: redis/acls
 excerpt: Update Redis users ACLs with the OVHcloud API 
 section: Redis
 order: 2
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/acls/'
 ---
 
 **Last updated March 8<sup>th</sup>, 2022**
@@ -14,16 +16,16 @@ This page shows you how to update your Redis user ACLs with the OVHcloud API.
 
 ## Users and roles
 
-As explained on this page: [Redis Capabilities, Users & roles](https://docs.ovh.com/asia/en/publiccloud/databases/redis/capabilities/#users-and-roles), the users' ACLs can not be updated via the OVHcloud Control Panel.
+As explained on this page: [Redis Capabilities, Users & roles](https://docs.ovh.com/us/es/publiccloud/databases/redis/capabilities/#users-and-roles), the users' ACLs can not be updated via the OVHcloud Control Panel.
 
-You must therefore use the [OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/).
+You must therefore use the [OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account.
+- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account.
 - An up and running Public Cloud Database for Redis.
 
-If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/).
+If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 For this tutorial, we consider that your are logged on the relevant API (Europe: <https://api.ovh.com>, Canada/Asia:  <https://ca.api.ovh.com>). We will use Europe API for this tutorial.
 

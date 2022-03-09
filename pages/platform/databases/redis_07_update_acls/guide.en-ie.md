@@ -25,7 +25,7 @@ You must therefore use the [OVHcloud API](https://docs.ovh.com/ie/en/api/first-s
 
 If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/ie/en/api/first-steps-with-ovh-api/).
 
-For the rest of this tutorial, we consider that you are logged in on [api.ovh.com](https://api.ovh.com/console).
+For this tutorial, we consider that your are logged on the relevant API (Europe: <https://api.ovh.com>, Canada/Asia:  <https://ca.api.ovh.com>). We will use Europe API for this tutorial.
 
 ## Instructions
 
