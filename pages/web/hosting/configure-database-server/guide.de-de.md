@@ -133,10 +133,11 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> <b>sql_mode</b>:    
-> - <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.1.
+> <b>sql_mode</b>:
+>   
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.1.
 > 
-> - <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.2 und spätere Versionen.
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.2 und spätere Versionen.
 >
 > Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
@@ -171,15 +172,15 @@ Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 
 Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **SQL** geklickt haben und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
+#### **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
 
 Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -253,7 +254,7 @@ Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index a
 
 Beispiel: Sie suchen regelmäßig nach „Person“ in Verbindung mit „Stadt“. Indexieren Sie das Feld "Stadt" folgendermaßen:
 
-```bash
+```sql
 ALTER TABLE 'test' ADD INDEX ('Stadt');
 
 ```
@@ -288,7 +289,7 @@ Prüfen Sie in Ihren SQL-Anfragen, ob Sie nur die tatsächlich benötigten Daten
 
 Beispiel:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

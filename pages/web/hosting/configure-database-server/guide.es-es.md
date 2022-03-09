@@ -124,17 +124,19 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 
 > [!primary]
 >
-> <b>Tmpdir</b>:
+> <b>Tmpdir</b>:    
 > - /dev/shm: El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
+>
 > - /tmp: El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
 >
 
 > [!primary]
 >
-> <b>sql_mode</b>:    
-> - <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.1.
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.1.
 > 
-> - <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores.
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores.
 >
 > Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >
@@ -169,7 +171,7 @@ Para modificar esta versión, haga clic en `Editar la versión`{.action}.
 
 Introduzca este comando en phpMyAdmin haciendo clic en la **base de datos**, en la sección **"SQL"**, y haciendo clic en `Ejecutar`{.action}:
 
-```
+```sql
 select version();
 ```
 
@@ -177,7 +179,7 @@ select version();
 
 Para ello, introduzca el comando en phpMyAdmin, en la sección **"SQL"** y haga clic en `Ejecutar`{.action}.
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -243,7 +245,7 @@ Acceda a la pestaña `Métricas` del área de cliente. Puede consultar el gráfi
 
 ### Gestionar las bases de datos
 
- Es recomendable mantener su base de datos para que sea potente. Lo que significa "alto rendimiento" es que la información contenida en la base de datos se devuelve lo antes posible al script que la solicita. Para ello, es necesaria una base de datos estructurada y optimizada.
+Es recomendable mantener su base de datos para que sea potente. Lo que significa "alto rendimiento" es que la información contenida en la base de datos se devuelve lo antes posible al script que la solicita. Para ello, es necesaria una base de datos estructurada y optimizada.
 
 #### Seleccionar la base de datos
 
@@ -251,8 +253,8 @@ Para aumentar la velocidad de búsqueda en una petición, es necesario poner un 
 
 Ejemplo: regularmente realiza una búsqueda de persona respecto a la ciudad. Introduzca el campo "ciudad" con la siguiente petición:
 
-```bash
-ALTER TABLE `test ADD INDEX ( `ville` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### Seleccionar la base de datos
 
@@ -284,7 +286,7 @@ En sus consultas SQL, compruebe que solo seleccione lo que necesite, y sobre tod
 
 Por ejemplo:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 
