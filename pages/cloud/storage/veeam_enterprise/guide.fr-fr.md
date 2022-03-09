@@ -128,16 +128,19 @@ Via l’interface graphique d’utilisateur :
 
 <ol start="5">
   <li>Cliquez sur `Avancé...`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.</li>
+</ol>
 
 ![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
   <li>Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider. Ensuite, activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.</li>
+</ol>
 
 ![Autorisations de lancement et d'activation](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
   <li>Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.</li>
+</ol>
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 
