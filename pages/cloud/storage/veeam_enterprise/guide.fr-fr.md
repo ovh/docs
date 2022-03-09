@@ -94,7 +94,7 @@ Lancez la console Veeam.
 
 ![console Veeam](images/veeamBandR_use_12.png){.thumbnail}
 
-Vérifiez que vous êtes en mode **Free Edition**, dans le coin en bas à droite.
+Vérifiez que vous êtes en mode **Community Edition**, dans le coin en bas à droite.
 
 ![mode free edition](images/veeamBandR_conf_1.png){.thumbnail}
 
