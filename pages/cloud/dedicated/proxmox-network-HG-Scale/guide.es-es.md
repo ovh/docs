@@ -36,7 +36,7 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failo
 > En estas gamas de servidores, hay 4 tarjetas de red. Las dos primeras para el público, las dos últimas para el privado. Para disfrutar del conjunto del ancho de banda, es necesario crear agregados.
 >
 
-### IP Failover en modo de rueda en las interfaces de red públicas
+### IP Failover en modo "routed" en las interfaces de red públicas
 
 #### Esquema de la configuración de destino
 
