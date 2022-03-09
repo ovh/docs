@@ -129,18 +129,20 @@ Através da interface gráfica de utilizador:
 
 <ol start="5">
  <li>Clique em `Advanced...`{.action} para localizar a conta de serviço adicionada anteriormente. A seguir, clique em `Find Now`{.action} e selecione o utilizador `OVHVeeamEnterprise`{.action} na lista de utilizadores.</li>
+</ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 
 <ol start="6">
  <li>Clique em `OK`{.action} para confirmar a seleção e em `OK`{.action} para validar. De seguida, ative todas as permissões no utilizador `OVHVeeamEnterprise`{.action}.</li>
-
+</ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
  <li>Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.</li>
+</ol>
 
 O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
 
