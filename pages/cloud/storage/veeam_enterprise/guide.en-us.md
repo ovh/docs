@@ -128,16 +128,19 @@ Via the graphical user interface:
 
 <ol start="5">
   <li>Click on `Advanced`{.action} to locate the previously added service account and click on `Find Now`{.action}. Select the `OVHVeeamEnterprise`{.action} user from the list of users.</li>
+</ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
   <li>Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate. Next, enable all permissions on the `OVHVeeamEnterprise`{.action} user.</li>
+</ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
   <li>Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.</li>
+</ol>
 
 Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
