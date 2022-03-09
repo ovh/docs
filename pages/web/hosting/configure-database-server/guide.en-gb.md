@@ -133,10 +133,9 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 > [!primary]
 >
-> <b>sql_mode</b>:
->
-> \- <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>: Default mode of MariaDB 10.1.
-> \- <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>: Default mode of MariaDB 10.2 and higher.
+> <b>sql_mode</b>:    
+> \- <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre><br> Default mode of MariaDB 10.1.
+> \- <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre><br> Default mode of MariaDB 10.2 and higher.
 >
 > We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
