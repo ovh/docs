@@ -23,7 +23,7 @@ Cette fonction collaborative de Exchange permet de créer des adresses de messag
 
 ## En pratique
 
-Connectez-vous à votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action} dans la barre de services située à gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
+Connectez-vous à votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Microsoft`{.action} , puis sur `Exchange`{.action}. Sélectionnez ensuite le service Exchange concerné. Cliquez sur l'onglet `Plus +`{.action} , puis sur `Ressources`{.action}.
 
 ### Étape 1 : créer une ressource
 

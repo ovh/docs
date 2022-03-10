@@ -26,7 +26,7 @@ Esta función colaborativa de Exchange permite crear direcciones de correo dedic
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action} en la barra de navegación superior. En la columna izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. A continuación, seleccione el servicio Exchange correspondiente. Abra la pestaña `Plus +`{.action} y haga clic en `Recursos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. A continuación, seleccione el servicio Exchange correspondiente. Abra la pestaña `Plus +`{.action} y haga clic en `Recursos`{.action}.
 
 ### 1\. crear un recurso
 

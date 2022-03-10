@@ -107,7 +107,7 @@ Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Pla
 
 Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie hierzu im linken Menü den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte `Diagnose` sehen, ob die DNS-Konfiguration korrekt ist: Eine rote Meldung erscheint, wenn die Konfiguration geändert werden muss.
+Wählen Sie hierzu den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte `Diagnose` sehen, ob die DNS-Konfiguration korrekt ist: Eine rote Meldung erscheint, wenn die Konfiguration geändert werden muss.
 
 > [!primary]
 >

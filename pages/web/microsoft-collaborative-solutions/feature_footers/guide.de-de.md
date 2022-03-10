@@ -31,7 +31,7 @@ order: 3
 ## In der praktischen Anwendung
 
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich „Web“ und wählen Sie in der linken Menüleiste unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Webcloud`{.action} und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 
 ![Exchange Signaturen](images/exchange-footer-step1.png){.thumbnail}
 

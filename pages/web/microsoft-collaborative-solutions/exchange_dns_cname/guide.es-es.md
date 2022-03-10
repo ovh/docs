@@ -16,14 +16,14 @@ Al asociar un dominio a su servicio de correo, es posible que deba configurar un
 
 ## Requisitos
 
-- Tener una solución de correo electrónico en OVH.
+- Tener una solución de correo electrónico en OVHcloud.
 - Haber añadido al servicio de correo un dominio que requiera la creación de un registro CNAME.
 - Poder modificar la configuración (la zona DNS) del dominio.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
-### 1. El diagnóstico CNAME de OVH
+### 1. El diagnóstico CNAME de OVHcloud
 
 En determinados casos, al declarar un dominio en su servicio de correo aparece la etiqueta de diagnóstico **CNAME** (de Canonical Name).
 
@@ -31,13 +31,13 @@ Esta etiqueta le permite demostrar que usted es el administrador del dominio que
 
 Puede aparecer por los siguientes motivos:
 
-- El dominio no está registrado en OVH.
+- El dominio no está registrado en OVHcloud.
 - El dominio no está administrado por el mismo ID de cliente que el servicio de correo.
-- El dominio no utiliza la configuración de OVH (es decir, sus servidores DNS).
+- El dominio no utiliza la configuración de OVHcloud (es decir, sus servidores DNS).
 
 ![CNAME](images/cname_exchange_diagnostic.png){.thumbnail}
 
-### 2. Obtener la configuración CNAME de OVH
+### 2. Obtener la configuración CNAME de OVHcloud
 
 Abra la pestaña `Dominios asociados`{.action} de su servicio Exchange y haga clic en la etiqueta roja `CNAME`{.action} para obtener la información necesaria.
 
@@ -47,20 +47,20 @@ El contenido que deberá tener el registro CNAME se muestra de la siguiente form
 
 Existen dos posibilidades:
 
-- **Si el dominio utiliza la configuración de OVH**, puede realizar las operaciones que se describen a continuación directamente desde el área de cliente de OVH.
+- **Si el dominio utiliza la configuración de OVHcloud**, puede realizar las operaciones que se describen a continuación directamente desde el área de cliente de OVHcloud.
 
-- **Si el dominio no utiliza la configuración de OVH** (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS.
+- **Si el dominio no utiliza la configuración de OVHcloud** (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS.
 
 > [!primary]
 >
-> Si el dominio está registrado en OVH, puede comprobar si utiliza nuestra configuración desde el área de cliente. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
+> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración desde el área de cliente. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
 >
 
-### 3. Crear el registro CNAME en la zona DNS de OVH
+### 3. Crear el registro CNAME en la zona DNS de OVHcloud
 
-Haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
-Se mostrará una tabla con la configuración del dominio en OVH. Cada línea de la tabla contiene un registro DNS.
+Se mostrará una tabla con la configuración del dominio en OVHcloud. Cada línea de la tabla contiene un registro DNS.
 
 Para añadir un registro CNAME, haga clic en el botón `Añadir un registro`{.action}.
 

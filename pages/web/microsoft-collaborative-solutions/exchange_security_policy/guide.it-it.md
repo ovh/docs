@@ -32,7 +32,7 @@ Per accedere alla politica di sicurezza del tuo servizio Exchange accedi allo [S
 
 |Emails e Email Pro|Exchange| 
 |---|---| 
-|Clicca su `Emails`{.action} o `Email Pro`{.action} nella colonna di sinistra e seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona `Gestisci la politica di sicurezza`{.action}.|Clicca su `Microsoft`{.action} nella colonna di sinistra e poi su `Exchange`{.action}, quindi seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona` Gestisci la politica di sicurezza`{.action}.|
+|Clicca su `Emails`{.action} o `Email Pro`{.action} e seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona `Gestisci la politica di sicurezza`{.action}.|Clicca su `Microsoft`{.action} e poi su `Exchange`{.action}, quindi seleziona la tua offerta. Clicca sulla scheda `Altre opzioni` e seleziona`Gestisci la politica di sicurezza`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 Prosegui nella lettura di questa guida consultando la sezione corrispondente all’azione che vuoi effettuare:

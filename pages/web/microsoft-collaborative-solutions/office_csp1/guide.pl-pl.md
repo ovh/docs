@@ -45,7 +45,7 @@ Zostaniesz przekierowany do strony zamówienia, w celu zatwierdzenia i uregulowa
 
 ### Włącz licencję
 
-Po zamówieniu licencji należy ją aktywować w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
+Po zamówieniu licencji należy ją aktywować w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action}, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
 
 Kliknij przycisk `...`{.action} przed licencją, a następnie `Edytuj konto`{.action}.
 
@@ -62,7 +62,7 @@ Po aktywacji licencji otrzymasz e-mail na adres e-mail do kontaktu Twojego konta
 E-mail zawiera informacje niezbędne do pobrania i instalacji pakietu Microsoft 365, **a mianowicie adres e-mail aktywacyjny** oraz **hasło**.
 
 >
-> Jeśli chcesz samodzielnie zdefiniować hasło, musisz to zrobić w Panelu klienta. W sekcji `Web Cloud` kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
+> Jeśli chcesz samodzielnie zdefiniować hasło, musisz to zrobić w Panelu klienta. W sekcji `Web Cloud` kliknij `Microsoft`{.action}, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
 >
 > Kliknij przycisk `...`{.action} po prawej stronie wybranej licencji, a następnie `Zmień hasło`{.action}.
 >
@@ -80,7 +80,7 @@ Przejdź do strony <https://portal.office.com/> i zaloguj się **za pomocą adre
 
 ### Dodaj licencję do istniejącej grupy
 
-Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji, możesz to zrobić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
+Jeśli chcesz dodać jedną lub więcej licencji do istniejącej grupy licencji, możesz to zrobić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W sekcji `Web Cloud`{.action} kliknij `Microsoft`{.action}, następnie `Office`{.action} i wybierz odpowiednią grupę licencji.
 
 Kliknij przycisk `Zamów więcej licencji`{.action} po prawej stronie. Podaj liczbę i rodzaj licencji, które chcesz zamówić.
 

@@ -107,7 +107,7 @@ Se pretender eliminá-lo, aceda ao separador `Contas de e-mail`{.action} da plat
 
 Nesta etapa, os seus endereços de e-mail já devem ser migrados e funcionais. Por questões de segurança, sugerimos que verifique se a configuração do seu domínio está correta ao consultar a Área de Cliente.
 
-Para isso, selecione o serviço E-mail Pro ou Exchange em questão na barra à esquerda e aceda ao separador `Domínios associados`{.action}. Na tabela que vai aparecer, a coluna "Diagnóstico" irá permitir-lhe ver se a configuração DNS está correta: se a configuração tiver de ser alterada, aparecerá uma etiqueta vermelha.
+Para isso, selecione o serviço E-mail Pro ou Exchange em questão e aceda ao separador `Domínios associados`{.action}. Na tabela que vai aparecer, a coluna "Diagnóstico" irá permitir-lhe ver se a configuração DNS está correta: se a configuração tiver de ser alterada, aparecerá uma etiqueta vermelha.
 
 > [!primary]
 >

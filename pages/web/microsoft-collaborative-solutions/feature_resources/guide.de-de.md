@@ -26,8 +26,7 @@ Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie dann den betreffenden Exchange Dienst aus.
-
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie dann den betreffenden Exchange Dienst aus.
 Klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Ressourcen`{.action}.
 
 ### Schritt 1: eine Ressource erstellen
