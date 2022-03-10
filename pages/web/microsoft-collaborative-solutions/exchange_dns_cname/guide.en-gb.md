@@ -60,7 +60,7 @@ At this point, there will be two options:
 
 Click `Domains`{.action} in the OVHcloud Control Panel, then on the domain name concerned. Then select the `DNS zone`{.action} tab.
 
-A table should appear. This will display your c domain’s configuration. It is made up of several DNS records, one per row in the table.
+A table should appear. This will display your domain’s configuration. It is made up of several DNS records, one per row in the table.
 
 To add a CNAME record, click `Add an entry`{.action}.
 
