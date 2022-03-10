@@ -130,14 +130,15 @@ Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le r
 
 ### Collecter Les logs pour un envoi au support NUTANIX
 
-Il faut parfois récupérer les logs Nutanix pour les envoyer au support. le support fourni un numéro d'incident qu'il faudra utiliser pour envoyer ces logs. 
+Lors d'une ouverture d'incident au support Nutanix, Nutanix fourni un numéro d'incident et il est parfois demandé de récupérer l'ensemble des logs des nœuds et de **Prism Central**.
 
-Un outil existe au sein de l'interface Prism Element dans le menu HEALTH qui fait une collecte de log et qui peut l'envoyer au support Nutanix mais Nutanix recommande de ne plus utiliser cet outil pour envoyer des logs mais plutôt un outil en ligne de commande qui se nomme Logbay.
+Un outil existe au sein de l'interface Prism Element dans le menu **HEALTH** qui fait une collecte de logs et permet de l'envoyer au support Nutanix mais Nutanix recommande de ne plus utiliser cet outil pour envoyer des logs mais plutôt une commande à partir de la console.
 
-Cet outil permet de récolter les logs de chaque nœud à partir de l'adresse IP de  **Prism Element**  et de Prism Central à partir de l'adresse ip de **Prism Central** pour :
+Cet outil est sur chaque **CVM** d'un nœud et sur **Prism Central**. 
+
 
 * Générer les logs et les envoyer directement au Support Nutanix avec le numéro d'incident. 
-* Générer les logs et les récuperer en SSH pour les envoyer ultérieurement à partir du portail Nutanix avec le numéro d'incident.
+* Générer les logs et les récupérer en SSH pour les envoyer ultérieurement à partir du portail Nutanix avec le numéro d'incident.
 
 #### Collecter les logs concernant **Prism Central**
 
@@ -197,7 +198,7 @@ allssh ls /home/nutanix/data/logbay/bundles
 
 ##### Récupération des logs collectés dans des fichiers au format **zip**
 
-Copiez chaque fichier généré sur chacuns des nœuds
+Copiez chaque fichier généré sur chacun des nœuds
 ```
 scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
 nutanix@CVM1's password:
