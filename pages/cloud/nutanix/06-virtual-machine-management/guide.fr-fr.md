@@ -49,7 +49,7 @@ Les cas pratiques ci-dessous montrent la création d'une machine virtuelle sous 
 
 L'installation d'une machine virtuelle sous Windows Server 2022 nécessite un paramétrage particulier car Microsoft ne fournit pas le pilote pour le contrôleur de disques de l'hyperviseur **AHV**.
 
-#### Création d'une machine virtuellle Windows Server 2022
+#### Création d'une machine virtuelle Windows Server 2022
  
 Dans le menu de gauche de **Prism Central**, dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}
 
@@ -229,7 +229,7 @@ Pour finir l'installation, cliquez sur `Close`{.action}.
 
 Les NGT sont des outils qui permettent une meilleure interaction avec Nutanix, notamment au niveau des sauvegardes et des snapshots.
 
-Lancez la console de la machine virtuellle, faites un clic-droit sur un lecteur de CDROM et cliquez sur `Eject`{.action}.
+Lancez la console de la machine virtuelle, faites un clic-droit sur un lecteur de CDROM et cliquez sur `Eject`{.action}.
 
 ![NGT Installation 1](images/Ngt-Installation01.png){.thumbnail}
 
