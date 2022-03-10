@@ -1,5 +1,5 @@
 ---
-title: Importation d'images ISO 
+title: "Importer des images ISO"
 slug: image-import
 excerpt: "Gestion des images ISO à partir de Prism Central"
 section: Premiers pas
@@ -10,7 +10,9 @@ order: 05
 
 ## Objectif
 
-Être capable d'ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors de l'installaion  d'un système d'exploitation.
+Vous pouvez ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors de l'installaion  d'un système d'exploitation.
+
+**Ce guide vous détaille comment importer des images ISO depuis Prism Central.**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -27,21 +29,21 @@ order: 05
 
 ## Présentation du système d'images dans Nutanix
 
-Les images sont des fichiers importés de format divers comme des images ISO mais il est aussi possible d'importer la plupart des images d'ordinateurs virtuels existants (vhdx, qcow2, etc...).
+Les images sont des fichiers importés de formats divers, telles que des images ISO, mais il est aussi possible d'importer la plupart des images d'ordinateurs virtuels existants (vhdx, qcow2, etc...).
 
-L'importation des images se fait soit à partir de Prism Central ou de Prism Element. Cette documentation décrit l'importation d'une image à partir de Prism Central.
+L'importation des images se fait à partir de Prism Central ou de Prism Element. Cette documentation décrit l'importation d'une image à partir de Prism Central.
 
 Il est possible de faire l'importation d'images à partir d'un fichier local ou d'un lien URL.
 
-Pour plus de détails sur la création d'images reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+Pour plus de détails sur la création d'images, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
 ## En pratique
 
-En haut à gauche Cliquez sur `l'icone avec 3 traits`{.action} 
+Depuis Prism Central, ouvrez le menu principal via le bouton en haut à gauche. 
 
 ![Affichage du menu de gauche](images/PrismCentralDashboardWithLeftMenu.PNG)
 
-Dépliez `Compute & Storage`{.action} Cliquez sur `Images`{.action}.
+Dépliez `Compute & Storage`{.action} et cliquez sur `Images`{.action}.
 
 ![Menu de gauche déplié avec Image surlignée](images/PrismCentralLefMenuToImage.PNG).
 
@@ -49,26 +51,25 @@ Cliquez sur `Add Image`{.action}.
 
 ![Prism Central - Gestion des Images](images/PrismCentralAddImage.PNG)
 
-Cliquer sur `Add File`{.action}
+Cliquez sur le bouton `Add File`{.action}.
 
 ![Fenêtre d'ajout d'une image](images/AddImage01.PNG)
 
-Sélectionner le fichier et cliquer sur `Open`{.action}
+Sélectionnez le fichier d'image et cliquez sur `Open`{.action}.
 
 ![Fenêtre des options d'ajout d'une image partie 1](images/AddImage02.PNG)
 
-Saisissez le nom du fichier, une description ensuite `Cliquez sur Next`{.action}
+Saisissez le nom du fichier, rajoutez une description puis cliquez sur `Next`{.action}.
 
 ![Fenêtre des options d'ajout d'une image partie 2](images/AddImage03.PNG)
 
-Laissez les options par défaut et `Cliquez sur Save`{.action}
+Laissez les options par défaut et cliquez sur `Save`{.action}.
 
 ![Fenêtre des options d'ajout d'une image partie 3](images/AddImage04.PNG)
 
-L'image importée apparait dans le tableau de bord des images dans Prism Central.
+L'image importée apparaît dans le tableau de bord des images dans Prism Central.
 
-![Tableau de bord des images avec nouvelle Image - Prism Central](images/PrismCentralDashboardImagesWithNewImages.PNG)
-
+![Tableau de bord des images avec nouvelle image - Prism Central](images/PrismCentralDashboardImagesWithNewImages.PNG)
 
 ## Aller plus loin <a name="gofurther"></a>
 
