@@ -25,10 +25,9 @@ Właśnie złożyłeś zamówienie na platformę Private Exchange. Niniejszy prz
 
 Po realizacji zamówienia otrzymasz na adres e-mail podany w Panelu klienta informacje umożliwiające skonfigurowanie platformy Private Exchange. 
 
-Aby przeczytać ten e-mail w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swój profil w prawym górnym rogu, a następnie wybierz `Moje konto`{.action}. Przejdź do karty `Wiadomości odebrane`{.action} i wyszukaj e-mail z następującym tematem:
+Aby przeczytać ten e-mail w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij swój profil w prawym górnym rogu, a następnie wybierz `E-maile od OVHcloud`{.action} i wyszukaj e-mail z następującym tematem:
 
 > **[xx-11111-ovh] Trwa instalowanie usługi Exchange 20_xxx_**
-
 
 ![first-use-private-exchange](images/first-use-private-exchange-01.png){.thumbnail}
 

@@ -32,7 +32,7 @@ Pour accéder à la politique de sécurité de votre service e-mail, connectez-v
 
 |E-mails et E-mail Pro|Exchange| 
 |---|---| 
-|Cliquez sur `Emails`{.action} ou `E-mail Pro`{.action} dans la colonne de gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}|Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`, puis sur `Gérer la politique de sécurité`{.action}|
+|Cliquez sur `Emails`{.action} ou `E-mail Pro`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus` puis sur `Gérer la politique de sécurité`{.action}|Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`, puis sur `Gérer la politique de sécurité`{.action}|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 Poursuivez ensuite vers le ou les aspects que vous souhaitez modifier.

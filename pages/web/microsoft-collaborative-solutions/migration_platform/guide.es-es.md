@@ -107,7 +107,7 @@ Si quiere eliminarlo, abra la pestaña `Cuentas de correo`{.action} de su plataf
 
 En este punto, sus direcciones de correo ya deben migrarse y ser funcionales. Por seguridad, le recomendamos que se asegure de que la configuración del dominio es correcta consultando su área de cliente.
 
-Para ello, seleccione el servicio Email Pro o Exchange correspondiente en la columna izquierda y abra la pestaña `Dominios asociados`{.action}. A continuación, en la columna "Diagnóstico", explicaremos si la configuración DNS es correcta: se mostrará una etiqueta roja si la configuración ha de modificarse.
+Para ello, seleccione el servicio Email Pro o Exchange correspondiente y abra la pestaña `Dominios asociados`{.action}. A continuación, en la columna "Diagnóstico", explicaremos si la configuración DNS es correcta: se mostrará una etiqueta roja si la configuración ha de modificarse.
 
 > [!primary]
 >

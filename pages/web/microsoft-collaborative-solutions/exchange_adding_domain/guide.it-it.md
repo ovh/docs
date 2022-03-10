@@ -27,7 +27,7 @@ Aggiungere uno o più domini su Exchange è un’operazione fondamentale per uti
 
 Una volta che il tuo Exchange è stato creato e risulta disponibile, è possibile gestirlo dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
-nella colonna di sinistra, clicca su `Microsoft`{.action} > `Exchange`{.action} e seleziona il tuo servizio.
+ Clicca su `Microsoft`{.action} > `Exchange`{.action} e seleziona il tuo servizio.
 
 > [!primary]
 >
