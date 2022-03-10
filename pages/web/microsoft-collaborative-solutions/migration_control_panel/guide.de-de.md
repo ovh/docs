@@ -22,7 +22,7 @@ OVHcloud bietet mehrere E-Mail-Lösungen an: MX Plan (autonom oder in einem Webh
 
 - Sie verfügen über eine MX Plan E-Mail-Adresse (über das MX Plan Angebot oder in einem OVHcloud Webhosting [Angebot](https://www.ovhcloud.com/de/web-hosting/){.external}).
 - Sie verfügen über einen [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro ](https://www.ovhcloud.com/de/emails/email-pro/){.external} Dienst mit mindestens einem nicht konfigurierten Account (dieser wird als "@configureme.me"angezeigt).
-- **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten.**
+- **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse aktiviert, die Sie migrieren möchten.**
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
@@ -85,7 +85,7 @@ Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Inter
 
 ##### **Migration mit Exchange Konfigurationsassistent**
 
-Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} . Der Assistent sollte erscheinen, um Ihnen bei der Konfiguration Ihres neuen Exchange Dienstes zu helfen. Während dieses Vorgangs können Sie die zu migrierenden MX Plan E-Mail-Accounts auswählen.
+Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Ihren Exchange Dienst aus. Der Assistent sollte erscheinen, um Ihnen bei der Konfiguration Ihres neuen Exchange Dienstes zu helfen. Während dieses Vorgangs können Sie die zu migrierenden MX Plan E-Mail-Accounts auswählen.
 
 Wird der Konfigurationsassistent nicht angezeigt, werden stattdessen die allgemeinen Informationen zum Exchange Dienst angezeigt. In diesem Fall müssen Sie Ihre Accounts über das MX Plan Interface migrieren.
 
