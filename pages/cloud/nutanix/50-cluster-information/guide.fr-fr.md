@@ -132,7 +132,7 @@ Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le r
 
 Lors d'une ouverture d'incident au support Nutanix, Nutanix fourni un numéro d'incident et il est parfois demandé de récupérer l'ensemble des logs des nœuds et de **Prism Central**.
 
-Un outil existe au sein de l'interface Prism Element dans le menu **HEALTH** qui fait une collecte de logs et permet de l'envoyer au support Nutanix mais Nutanix recommande de ne plus utiliser cet outil pour envoyer des logs mais plutôt une commande à partir de la console.
+Jusqu'a présent il était possible de collecter les logs à partir de **Prism Element** mais le support Nutanix recommande de ne plus l'utiliser, il faut à la place utiliser la ligne de commande sur le cluster ou sur **Prism central**
 
 Cet outil est sur chaque **CVM** d'un nœud et sur **Prism Central**. 
 
@@ -216,6 +216,6 @@ Pour plus de détails sur **Logbay** et **putty** reportez-vous à la section «
 
 [Lien vers Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-[Documentation de Logbay par Nutanix](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
+[Documentation Officielle de Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
