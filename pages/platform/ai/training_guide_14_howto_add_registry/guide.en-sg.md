@@ -1,5 +1,5 @@
 ---
-title: AI Training - Manage registries
+title: AI Training - Manage Docker registries
 slug: training/add-private-registry
 excerpt: Learn how to add your own registry to AI Training via UI
 section: AI Training guides

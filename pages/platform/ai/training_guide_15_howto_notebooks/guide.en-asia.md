@@ -1,5 +1,5 @@
 ---
-title: AI Training - Start and use notebooks with UI
+title: AI Training - Start a job with a notebook Docker image
 slug: training/start-use-notebooks
 excerpt: Learn how to start and use notebooks over AI training
 section: AI Training guides
