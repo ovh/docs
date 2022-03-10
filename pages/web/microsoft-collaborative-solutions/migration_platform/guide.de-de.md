@@ -38,9 +38,9 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 ### Die Zielplattform konfigurieren
 
-Wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/) Plattform hinzu . Wenn Sie auf eine MX Plan Plattform migrieren, da der zugehörige Domainname "fest"ist, können Sie direkt zum nächsten [Schritt übergehen](#accountsmigration).
+Wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/) Plattform hinzu. Wenn Sie auf eine MX Plan Plattform migrieren, können Sie direkt zum [nächsten Schritt übergehen](#accountsmigration).
 
-> Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Konfigurieren Sie Ihre Domain **als nicht-autoritativ**. Vergewissern Sie sich, dass der Eintrag `OK` in der Spalte `Status` vorhanden ist.
+> Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Konfigurieren Sie Ihre Domain als **nicht-autoritativ**. Vergewissern Sie sich, dass der Eintrag `OK` in der Spalte `Status` vorhanden ist.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
