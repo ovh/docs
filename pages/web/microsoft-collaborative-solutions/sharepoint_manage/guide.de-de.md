@@ -24,7 +24,7 @@ Mit einer Microsoft SharePoint Lösung können Sie während Ihrer kollaborativen
 
 ### Schritt 1: Eine SharePoint Plattform bestellen
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie in den Bereich `Web Cloud`{.action}, um die Bestellung Ihrer SharePoint-Plattform zu starten.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}, um die Bestellung Ihrer SharePoint-Plattform zu starten.
 
 Ihnen stehen zwei Arten von Plattformen zur Verfügung:
 
