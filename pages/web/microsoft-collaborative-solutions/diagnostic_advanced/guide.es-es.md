@@ -28,7 +28,7 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 
 ### Realizar un diagnóstico
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Seleccione `Microsoft`{.action} en el menú de la izquierda, haga clic en `Exchange`{.action} y seleccione su servicio.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Seleccione `Microsoft`{.action}, haga clic en `Exchange`{.action} y seleccione su servicio.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -92,7 +92,7 @@ En función del uso de su servicio Exchange, son válidos los siguientes servido
 
 > [!warning]
 > En nuestras guías utilizamos como nombre de servidor: ex<b>?</b>.mail.ovh.net. Debe reemplazar el "?" por el número correspondiente al servidor de su servicio Exchange.<br>
-> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}.  En el menú de la izquierda, abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
+> Puede consultar esta información en el área de cliente de OVHcloud, en la sección `Web Cloud`{.action}. Abra `Microsoft`{.action} y seleccione `Exchange`{.action}. El nombre del servidor aparece en la pestaña **Conexión** de la `Información general`{.action}.
 >
 
 > [!primary]

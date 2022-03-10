@@ -27,7 +27,7 @@ Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektroni
 
 Po utworzeniu i udostępnieniu usługi Hosted Exchange, można nią zarządzać poprzez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-W tym celu zaloguj się w Panelu klienta, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action} na pasku usług po lewej stronie. W kolejnym kroku kliknij wybraną nazwę usługi  Hosted Exchange.
+W tym celu zaloguj się w Panelu klienta, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. W kolejnym kroku kliknij wybraną nazwę usługi  Hosted Exchange.
 
 > [!primary]
 >

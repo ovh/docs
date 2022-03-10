@@ -26,7 +26,7 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 
 Sobald die Bestellung aufgegeben wurde, erhalten Sie die Informationen zum Konfigurieren Ihres Private Exchange an die hinterlegte E-Mail-Adresse des Kunden-Accounts.
 
-Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails vom Support`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
+Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails von OVHcloud`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
 
 > **\[xx-11111-ovh] Ihr Private Exchange 20_xxx_ wird bereitgestellt!**
 

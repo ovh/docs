@@ -27,7 +27,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 Once your Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
-To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action} in the left-hand services bar. Then select the name of the Exchange service concerned.
+To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. Then select the name of the Exchange service concerned.
 
 > [!primary]
 >

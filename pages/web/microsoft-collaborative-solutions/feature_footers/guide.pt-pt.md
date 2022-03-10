@@ -31,7 +31,7 @@ Na Área de Cliente OVHcloud, pode criar assinaturas universais (footers) para e
 ## Instruções
 
 
-Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na secção «Web» e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action} à esquerda. No menu horizontal, clique em `More+`{.action} e selecione `Footers`{.action}.
+Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na secção `Webcloud`{.action} e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action}. No menu horizontal, clique em `More+`{.action} e selecione `Footers`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 

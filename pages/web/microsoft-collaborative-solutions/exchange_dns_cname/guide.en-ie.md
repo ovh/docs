@@ -1,6 +1,6 @@
 ---
 title: Creating a CNAME record to add an associated domain
-excerpt: Find out about the purpose of a CNAME record, and how to add one at OVH
+excerpt: Find out about the purpose of a CNAME record, and how to add one at OVHcloud
 slug: exchange_20132016_how_to_add_a_cname_record
 section: Getting started with Exchange
 ---
@@ -11,18 +11,18 @@ section: Getting started with Exchange
 
 When you add a domain name to your Exchange service, you may be required to configure the CNAME entry in your DNS zone. This configuration ensures that you have admin rights for the domain name in question.
 
-**Find out about the purpose of a CNAME record, and how to add one at OVH.**
+**Find out about the purpose of a CNAME record, and how to add one at OVHcloud.**
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
-- You need to have admin rights for the Exchange service on your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You need to have admin rights for the Exchange service on your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You need to have added a domain name to your Exchange service before requesting the addition of a CNAME record.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
 
 ## Instructions
 
-### Step 1: Understand the CNAME diagnostic at OVH
+### Step 1: Understand the CNAME diagnostic at OVHcloud
 
 The **CNAME** (Canonical Name) diagnostic box appears in certain cases when you declare a domain name on your Exchange service.
 
@@ -30,13 +30,13 @@ Its purpose is to prove that you are the admin of the domain name you would like
 
 This diagnostic can appear for the following situations:
 
-- The domain name is not registered with OVH.
+- The domain name is not registered with OVHcloud.
 - The domain name is not administrated by your NIC handle.
-- The domain name declared is not configured to use OVH's DNS servers.
+- The domain name declared is not configured to use OVHcloud's DNS servers.
 
 ![Exchange](images/cname_exchange_diagnostic.png){.thumbnail}
 
-### Step 2: Retrieve the OVH CNAME information
+### Step 2: Retrieve the OVHcloud CNAME information
 
 Go to the `Associated domains`{.action} tab, and click on the red `CNAME`{.action} box to retrieve the information required.
 
@@ -46,20 +46,20 @@ The target of the CNAME record will appear above.
 
 At this point, there will be two options:
 
-- **If your domain uses the OVH configuration**, you can make the changes listed below through your OVH Control Panel.
+- **If your domain uses the OVHcloud configuration**, you can make the changes listed below through your OVHcloud Control Panel.
 
-- **If your domain name does not use the OVH configuration**, you must carry out the modifications through whichever interface you use to manage your domain name.
+- **If your domain name does not use the OVHcloud configuration**, you must carry out the modifications through whichever interface you use to manage your domain name.
 
 > [!primary]
 >
-> If your domain name is registered with OVH, you can check if it is using the OVH configuration in your Control Panel. To do this, go to the `DNS servers`{.action} tab, and select the domain name concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your Control Panel. To do this, go to the `DNS servers`{.action} tab, and select the domain name concerned.
 >
 
-### Step 3: Create the CNAME record in the OVH configuration
+### Step 3: Create the CNAME record in the OVHcloud configuration
 
-Click `Domains`{.action} in the left-hand services bar in the Control Panel, then on the domain name concerned. Then select the `DNS zone`{.action} tab.
+Click `Domains`{.action} in the Control Panel, then on the domain name concerned. Then select the `DNS zone`{.action} tab.
 
-A table should appear. This will display your OVH domain’s configuration. It is made up of several DNS records, one per row in the table.
+A table should appear. This will display your OVHcloud domain’s configuration. It is made up of several DNS records, one per row in the table.
 
 To add a CNAME record, click `Add an entry`{.action}.
 

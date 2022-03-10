@@ -25,7 +25,7 @@ Acaba de efetuar a encomenda de uma plataforma Private Exchange. Este guia expli
 
 Uma vez realizada a encomenda, receberá no endereço de e-mail referenciado na sua Área de Cliente, as informações para configurar a sua plataforma Private Exchange. 
 
-Para consultar este e-mail a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu perfil, no topo da página à direita, e depois em `A minha conta`{.action}. Dirija-se ao separador `E-mails recebidos`{.action} e pesquise o e-mail com o assunto:
+Para consultar este e-mail a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu perfil, no topo da página à direita, e depois em `E-mails de serviço`{.action} e pesquise o e-mail com o assunto:
 
 > **\[xx-11111-ovh] O seu serviço Private Exchange 20_xxx_ será entregue em breve!**
 
