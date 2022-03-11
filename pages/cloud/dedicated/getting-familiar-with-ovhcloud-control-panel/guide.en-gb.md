@@ -68,7 +68,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 
 **Tasks**: Here you can view recent tasks performed on your server.
 
-For more information on managing your dedicated server via the OVHcloud Control Panel, please refer to [this guide]https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/).
+For more information on managing your dedicated server via the OVHcloud Control Panel, please refer to [this guide](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/).
 
 ### Section IP
 

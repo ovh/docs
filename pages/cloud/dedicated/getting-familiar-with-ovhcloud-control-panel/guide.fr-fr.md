@@ -58,7 +58,7 @@ Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de vo
 - IPV4 : Cliquez sur les `...`{.action} à côté de cette option pour gérer votre IP.
 - Reverse : Cliquez sur les `...`{.action} à côté de cette section pour entrer/modifier votre reverse DNS.
 
-**DNS secondaire** : Configurez votre DNS secondaire ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/en/dedicated/secondary-dns/)
+**DNS secondaire** : Configurez votre DNS secondaire ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/en/dedicated/secondary-dns/).
 
 **Backup Storage** (Disponible uniquement sur les serveurs OVHcloud et les serveurs So you Start y compris ceux de la ligne Eco) : Commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
 
