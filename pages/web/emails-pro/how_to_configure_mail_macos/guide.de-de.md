@@ -32,12 +32,12 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
  
 ## In der praktischen Anwendung
 
-> [!warning]
+> [!primary]
 >
-> In unserem Beispiel verwenden wir den Servernamen: pro**?**.mail.ovh.net Ersetzen Sie das "?" durch die Zahl für den Server Ihres E-Mail Pro Dienstes.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Diese Zahl finden Sie in [Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Web Cloud`{.action} und `E-Mail Pro`{.action} in der Spalte links. Den Servernamen sehen Sie im Rahmen **Verbindung** des Tabs `Allgemeine Informationen`{.action}.
-> 
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie im Bereich `Web Cloud`{.action} und `E-Mail Pro`{.action}. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+>
 
 ### Account hinzufügen
 
