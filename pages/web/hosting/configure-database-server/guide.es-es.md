@@ -124,7 +124,8 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 
 > [!primary]
 >
-> <b>Tmpdir</b>:    
+> <b>Tmpdir</b>:
+>
 > - /dev/shm: El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
 >
 > - /tmp: El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
