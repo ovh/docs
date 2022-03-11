@@ -24,11 +24,11 @@ Per configurare un indirizzo IP Failover sulle tue istanze Public Cloud, ad esem
 
 - Un [progetto Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Un[indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
+- Un [indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
 
 ## Procedura
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu`Public Cloud`{.action} e infine sul tuo `Progetto`{.action}. Quindi, seleziona `Failover IP`{.action} nella sezione "Network".
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo progetto nella sezione `Public Cloud `{.action}. Quindi, seleziona `Failover IP`{.action} nella sezione "Network".
 
 Clicca su `Azioni`{.action} e seleziona `Importa un IP`{.action} per visualizzare tutti gli indirizzi IP che possono essere importati nel tuo progetto Public Cloud.
 
@@ -41,6 +41,8 @@ Clicca sui tre puntini a destra dell’IP che vuoi importare e poi su `Importa q
 ![Importa IP Failover](images/import2.png){.thumbnail}
 
 Ora, clicca su `Importa`{.action}.
+
+![Import confirm](images/importconfirm.png){.thumbnail}
 
 Una volta effettuata l’operazione, la pagina verrà ricaricata e visualizzerai queste informazioni, come conferma che la migrazione dell’IP è stata effettuata correttamente.
 

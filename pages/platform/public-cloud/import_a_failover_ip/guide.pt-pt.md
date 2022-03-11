@@ -1,6 +1,6 @@
 ---
 title: 'Importar um IP Failover'
-excerpt: 'Este guia explica como importar um IP Failover para o seu projeto Public Cloud OVH.'
+excerpt: 'Este guia explica como importar um IP Failover para o seu projeto Public Cloud OVHcloud.'
 slug: importar_um_ip_failover
 legacy_guide_number: g1883
 section: Rede
@@ -12,7 +12,7 @@ section: Rede
 
 Se precisa de configurar um endereço IP Failover numa das suas instâncias, quer seja para:
 
-- Tem vários sítios na sua instância . 
+- Tem vários sítios na sua instância. 
 - Acolhe projectos internacionais.
 - Deseja migrar a sua atividade de um servidor dedicado para uma instância Public Cloud.
 
