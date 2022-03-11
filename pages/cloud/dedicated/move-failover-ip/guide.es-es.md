@@ -49,7 +49,7 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda al menú `Bare Metal Cloud`{.action} y abra `IP`{.action}.
 
-El menú desplegable "Servicio" puede seleccionar el tipo de servicio a visualizar. Puede elegir "IP failover" para solamente visualizar las IPs de este tipo.
+En el menú desplegable "Servicio" puede seleccionar el tipo de servicio a visualizar. Puede elegir "IP failover" para solamente visualizar las IPs de este tipo.
 
 Haga clic en el botón `...`{.action} que está a la derecha de la dirección IP que quiera mover y, seguidamente, en `Mover la IP failover`{.action}.
 
