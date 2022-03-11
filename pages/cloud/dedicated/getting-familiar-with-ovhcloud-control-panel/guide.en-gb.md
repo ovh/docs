@@ -10,42 +10,37 @@ order: 1
 
 ## Objective
 
-OVHcloud has combined all Kimsufi and So you Start dedicated servers in a product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change if your have opted for a purchase on the Eco range, we have set up a guide explaining the OVHcloud Control Panel and its options.
+OVHcloud has combined all of its Kimsufi, So you Start and Rise dedicated servers into a new product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change, if you have opted to purchase products from the Eco range, we have set up a guide that will introduce you to the OVHcloud Control Panel and its options.
+
 
 **This guide is designed to help you familiarise yourself with the OVHcloud Control Panel**
 
 > [!warning]
-> Please note that despite the interface change, the options available for your server range will remain the same. Some options will only be available for servers in the OVHcloud range.
+> Please note that despite the interface change, the options available for your server range will remain the same. Some options will only be available for servers from the OVHcloud baremetal server range.
 >
 
 ## Instructions
 
 ### Dashboard
 
- Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/OVHclouddashboard.png" width="500"/>
+![dashboard](images/OVHclouddashboard.png){.thumbnail}
 
-The OVHcloud dashboard provides a summary of all your services. This interface has several sections that allow you to access a service instantly.<br>
+If you have pruchased servers from the Eco product line, your dashboard will now be the one in the OVHcloud Control Panel. The OVHcloud dashboard provides a summary of all your services. This interface has several sections that allow you to access a service instantly.<br>
 The right-hand column gives you access to your personal information, NIC handle and support level (if applicable). It also provides a set of shortcuts and useful links.
 
 ### Accessing a server
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/listserversKimsufi.png" width="500"/>  | <img src="images/listserversSoyoustart.png" width="500"/> | <img src="images/listserversOVHcloud.png" width="600"/>
+![acces server](images/listserversOVHcloud.png){.thumbnail}
 
 In the Kimsufi and So you Start interfaces, the dashboard allows you to see your server/list of servers.<br>
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then on `Dedicated Servers`{.action} in the left-hand column to display your servers.<br>
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then on `Dedicated Servers`{.action} to display your servers.<br>
 If you have several servers, the `All my servers`{.action} button allows you to list them for easy access.
 
 ### Server interface
 
 Once you are in the `Dedicated Servers`{.action} menu, click on the server of your choice to access its interface.
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/serverinterfaceKimsufi.png" width="700"/>  | <img src="images/serverinterfaceSoyoustart.png" width="700"/> | <img src="images/serverinterfaceOVHcloud.png" width="700"/>
+![server interface](images/serverinterfaceOVHcloud.png){.thumbnail}
 
 **General information** : In this section, you will find all the information concerning your server.
 
@@ -65,9 +60,11 @@ Kimsufi             | So you Start | OVHcloud
 
 **Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/gb/en/dedicated/secondary-dns/)
 
+**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult this [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
+
 **Interventions**: Find here the current and past interventions made on your server.
 
-**IPMI** (Only available on OVHcloud servers and some So you Start servers): Access your server's IPMI or KVM IP here.
+**IPMI** (Only available on OVHcloud servers and some So you Start servers including those in the Eco line): Access your server's IPMI or KVM IP here. For more information about using this tool, see this [guide](https://docs.ovh.com/gb/en/dedicated/use-ipmi-dedicated-servers/).
 
 **Tasks**: Here you can view recent tasks performed on your server.
 
@@ -75,28 +72,22 @@ For more information on managing your dedicated server via the OVHcloud Control 
 
 ### Section IP
 
-To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on `IP`{.action} in the bottom left-hand column.
+To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `IP`{.action}.
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/manageIPKimsufi.png" width="700"/>  | <img src="images/manageIPSoyoustart.png" width="700"/> | <img src="images/manageIPsOVHcloud.png" width="700"/> |
+![ip section](images/manageIPsOVHcloud.png){.thumbnail}
 
-### Licences tab
+### Licences tab (not offered on Kimsufi)
 
-To access the Licences tab in the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on `Licences`{.action} in the column on the left of the page. 
+To access the Licences tab in the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `Licences`{.action}. 
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-Licences are not offered for this range.  | <img src="images/managelicencesSoyoustart.png" width="700"/> | <img src="images/managelicencesOVHcloud.png" width="700"/>
+![licences](images/managelicencesOVHcloud.png){.thumbnail}
 
 ### Support, Billing and Account Management
 
 In the Kimsufi or So you Start Control Panel, these options are available in the top right-hand corner, under individual tabs.<br>
 In the OVHcloud Control Panel, these options are grouped into a common space. Click on your name in the top right-hand corner and click on your initials to go to the `Manage my account` section.
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/accountOVHcloud.png" width="500"/>
+![billing](images/accountOVHcloud.png){.thumbnail}>
 
 - **General information**: in this section, you can view your account information, your latest bill, and access different shortcuts.
 - **Security**: this section allows you to manage the security settings of your account. For more information, please consult this [guide](https://docs.ovh.com/gb/en/customer/all-about-your-username/).
@@ -118,7 +109,6 @@ In practice, here are some guides to help you get started:
 [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/gb/en/customer/all-about-your-username/).<br>
 [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/).<br>
 [Creating SSH keys](https://docs.ovh.com/gb/en/dedicated/creating-ssh-keys-dedicated/).<br>
-[Using the IPMI with Dedicated Servers](https://docs.ovh.com/gb/en/dedicated/use-ipmi-dedicated-servers/).<br>
 [What are the IP addresses of the OVHcloud monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
 
 Join our community of users on <https://community.ovh.com/en/>.

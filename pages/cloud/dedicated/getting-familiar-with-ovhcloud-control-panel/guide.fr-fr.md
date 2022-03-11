@@ -6,46 +6,41 @@ section: Clients So you Start & Kimsufi
 order: 1
 ---
 
-**Dernière mise à jour le 22/02/2022**
+**Dernière mise à jour le 11/03/2022**
 
 ## Objective
 
-OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi et So you Start dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner durant cette migration, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
+OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi, So you Start et Rise dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner dans ce changement si vous avez opté pour un achat sur la de produits Eco, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
 
 **Ce guide est destiné à vous aidez à vous familiariser avec l'espace client OVHcloud**
 
 > [!warning]
-> Veuillez noter que malgré le changement d'interface client, les options disponibles pour votre gamme de serveur resteront les mêmes. Certaines options ne seront disponibles que pour les serveurs de la gamme OVHcloud.
+> Veuillez noter que malgré le changement d'interface client, certaines options ne seront disponibles que pour les serveurs de la gamme de serveurs baremetal OVHcloud.
 >
 
 ## En pratique
 
 ### Tableau de bord
 
- Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/OVHclouddashboard.png" width="500"/>
+![tableau de bord](images/OVHclouddashboard.png){.thumbnail}
 
-Le tableau de bord OVHcloud présente un récapitulatif de tous vos services. Cette interface présente plusieurs sections qui vous permettent d'accéder instantanément à un service.<br>
-La colonne de droite vous donne accès à vos informations personnelles, votre identifiant client et votre niveau de support (le cas échéant). Elle propose également un ensemble de raccourcis et de liens utiles.
+Si vous avez acquis des serveurs de la ligne de produit Eco, votre tableau de bord sera désormais celui de l’espace client OVHcloud. Ce tableau de bord OVHcloud présente un récapitulatif de tous vos services. Cette interface présente plusieurs sections qui vous permettent d'accéder instantanément à un service.<br>
+La colonne de droite vous donne accès à vos informations personnelles, votre identifiant client et votre niveau de support (le cas échéant).<br>
+Elle propose également un ensemble de raccourcis et de liens utiles.
 
 ### Accéder au serveur
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/listserversKimsufi.png" width="500"/>  | <img src="images/listserversSoyoustart.png" width="500"/> | <img src="images/listserversOVHcloud.png" width="600"/>
+![acces serveur](images/listserversOVHcloud.png){.thumbnail}
 
 Dans les interfaces Kimsufi et So you Start, le tableau de bord vous permet de voir votre serveur/liste de serveurs.<br>
-Depuis l'espace client OVHcloud, cliquez d’abord sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `Serveurs dédiés`{.action} dans la colonne de gauche pour afficher vos serveurs.<br>
+Depuis l'espace client OVHcloud, cliquez d’abord sur le menu `Bare Metal Cloud`{.action} et ensuite sur `Serveurs dédiés`{.action} pour afficher vos serveurs.<br>
 Si vous possédez plusieurs serveurs, le bouton `Tous mes serveurs`{.action} vous permet de les lister pour un accès facile.
 
 ### Interface Serveur
 
 Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de votre choix pour accéder à son interface.
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/serverinterfaceKimsufi.png" width="700"/>  | <img src="images/serverinterfaceSoyoustart.png" width="700"/> | <img src="images/serverinterfaceOVHcloud.png" width="700"/>
+![inteface serveur](images/serverinterfaceOVHcloud.png){.thumbnail}
 
 **Informations générales** : Dans cette section, retrouvez toutes les informations concernant votre serveur.
 
@@ -65,11 +60,11 @@ Kimsufi             | So you Start | OVHcloud
 
 **DNS secondaire** : Configurez votre DNS secondaire ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/en/dedicated/secondary-dns/)
 
-**Backup Storage** (Disponible uniquement sur les serveurs OVHcloud et So you Start) : Commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
+**Backup Storage** (Disponible uniquement sur les serveurs OVHcloud et les serveurs So you Start y compris ceux de la ligne Eco) : Commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
 
 **Interventions** : Retrouvez ici les interventions en cours et passées sur votre serveur.
 
-**IPMI** (Disponible uniquement sur les serveurs OVHcloud et certains serveurs So you Start) : Accédez ici à l'IPMI ou le KVM IP de votre serveur.
+**IPMI** (Disponible uniquement sur les serveurs OVHcloud et certains serveurs So you Start y compris ceux de la ligne Eco) : Accédez ici à l'outil IPMI ou le KVM IP de votre serveur. Pour plus d'informations sur l'utilisation de cet outil, consultez ce [guide](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies).
 
 **Tâches** : Visualisez ici les tâches récentes effectuées sur votre serveur.
 
@@ -77,28 +72,22 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `IP`{.action} en bas de la colonne à gauche.
+Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action} :
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/manageIPKimsufi.png" width="700"/>  | <img src="images/manageIPSoyoustart.png" width="700"/> | <img src="images/manageIPsOVHcloud.png" width="700"/> |
+![section ip](images/manageIPsOVHcloud.png){.thumbnail}
 
-### Onglet Licences
+### Onglet Licences (non offert sur Kimsufi)
 
-Pour accéder à l'onglet « Licences » dans l'espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} dans la barre supérieure et ensuite sur `Licences`{.action} dans la colonne à gauche de la page. 
+Pour accéder à l'onglet « Licences » dans l'espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `Licences`{.action} :
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-Licences are not offered for this range.  | <img src="images/managelicencesSoyoustart.png" width="700"/> | <img src="images/managelicencesOVHcloud.png" width="700"/>
+![license](images/managelicencesOVHcloud.png){.thumbnail}
 
 ### Support, Facturation et Gestion de compte
 
 Dans l’espace client Kimsufi ou So you Start, ces options sont disponibles en haut à droite sous des onglets individuels.<br>
 Dans l’espace client OVHcloud, ces options sont regroupées dans un espace commun. Cliquez sur votre nom en haut à droite et cliquez sur vos initiales pour accéder à la rubrique `Gérer mon compte`.
 
-Kimsufi             | So you Start | OVHcloud
-:-------------------------:|:-------------------------:|:---------------------:
-<img src="images/Kimsufimanager.png" width="500"/>  | <img src="images/Soyoustartmanager.png" width="500"/> | <img src="images/accountOVHcloud.png" width="500"/>
+![factu](images/accountOVHcloud.png){.thumbnail}
 
 - **Informations générales** : dans cette rubrique, vous pouvez visualiser les informations de votre compte, votre dernière facture et accéder à différents raccourcis.
 - **Sécurité** : cette rubrique vous permet de gérer les paramètres de sécurité de votre compte. Pour plus d’informations, nous vous invitons à consulter ce [guide](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).
@@ -120,7 +109,6 @@ Dans la pratique, voici quelques guides qui vous aideront au démarrage :
 [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/).<br>
 [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/).<br>
 [Créer une clé SSH](https://docs.ovh.com/fr/dedicated/creer-cle-ssh-serveur-dediees/).<br>
-[Utilisation de l’IPMI pour les serveurs dédiés](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/).<br>
-[Quelles sont les adresses IP du monitoring OVHcloud ?](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/)
+[Quelles sont les adresses IP du monitoring OVHcloud ?](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
