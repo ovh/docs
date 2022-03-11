@@ -23,7 +23,7 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 >
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
 
-**Cómo mover una IP failover desde el área de cliente de OVHcloud o a través de las API de OVHcloud**
+**Cómo mover una IP failover desde el área de cliente de OVHcloud o a través de la API de OVHcloud**
 
 ## Requisitos
 
@@ -65,7 +65,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
 Conéctese a la página web de las [API de OVHcloud](https://api.ovh.com/).
 
-En primer lugar, es mejor comprobar si la dirección IP se puede mover correctamente.
+En primer lugar, es mejor comprobar si la dirección IP se puede mover correctamente al servidor deseado.
 <br>Para comprobar si la IP puede moverse a uno de sus servidores dedicados, utilice la siguiente llamada:
 
 > [!api]
