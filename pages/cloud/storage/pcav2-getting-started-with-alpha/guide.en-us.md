@@ -1,6 +1,6 @@
 ---
-title: Getting started with PCAv2 Alpha
-slug: s3/getting-started-with-pcav2-alpha
+title: Getting started with PCAv2 (Alpha)
+slug: s3/getting-started-with-pcav2
 excerpt:
 section: Public Cloud Archive
 order: 200
@@ -8,19 +8,24 @@ order: 200
 
 **Last updated 21st February 2022**
 
-## Requirement
+## Objective
 
-Getting started with AWS CLI (https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+## Requirements
+
+- [Getting started with AWS CLI](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+
+## Instructions
 
 In this tutorial, **awscli aliases** are used to simplify the commands.
 
-```
+```bash
 mkdir -p ~/.aws/cli
 touch ~/.aws/cli/alias
 ```
 
 Add this content to the file:
-```
+
+```bash
 [toplevel]
 
 put-ovh-archive = s3api put-bucket-intelligent-tiering-configuration --id myid --intelligent-tiering-configuration '{"Id": "myid", "Status": "Enabled", "Tierings": [{"Days": 999,"AccessTier": "OVH_ARCHIVE"}]}' --bucket
@@ -48,61 +53,62 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 > If you have defined multiple profiles, add `--profile <profile>` to the command line.
 >
 
-## Bucket archiving
+### Bucket archiving
 
-After its creation, a bucket is in write-only mode.
+After its creation, a bucket is in write-only mode.<br>
 Allowed actions are adding and listing objects.
 
-Archive a bucket
+Archive a bucket:
 
 ```bash
 aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-archive <bucket_name>
 ```
 
-After this request, the bucket is not archived yet.
-It will take some time before it is archived on the tapes.
+After this request, the bucket is not archived yet.<br>
+It will take some time before it is archived on the tapes.<br>
 From this command and until a restoration, the bucket cannot accept any read or write requests on objects (listing objects is still allowed).
 
 > [!primary]
 >
-> Note for the Alpha period that nothing is stored on tapes.
+> During the Alpha phase, nothing is stored on tapes.
 >
 
-## Bucket restoring
+### Bucket restoring
 
-Restore a bucket
+Restore a bucket:
 
 ```bash
 aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-restore <bucket_name>
 ```
 
-After this request, the bucket is not restored yet.
+After this request, the bucket is not restored yet.<br>
 It will take some time before it is restored and for the objects to be accessible in read-only (writing objects is forbidden).
 
-## Bucket deletion
+### Bucket deletion
 
-Delete an intelligent-tiering configuration and objects of a bucket
+Delete an intelligent-tiering configuration and objects of a bucket:
 
 ```bash
 aws --endpoint-url https://s3.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
-After this request, the objects of the bucket are not deleted yet.
-It will take some time before objects are deleted.
+After this request, the objects of the bucket are not deleted yet.<br>
+It will take some time before objects are deleted.<br>
 Once objects are deleted, the bucket can be released: 
 
 ```bash
 aws s3 rb s3://<bucket_name>
 ```
 
-## Bucket status
+### Bucket status
 
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
+
 ```bash
 aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
 ```
 
-### Bucket statuses
+#### List of bucket statuses
 
 | Status      | Description                                                                      | Objects permissions    |
 |-------------|----------------------------------------------------------------------------------|------------------------|
@@ -119,4 +125,3 @@ aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucke
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
-
