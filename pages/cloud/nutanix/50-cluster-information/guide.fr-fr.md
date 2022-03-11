@@ -136,7 +136,7 @@ Il est possible de collecter les logs à partir de **Prism Element** mais nous v
 
 L'outil de récupération des logs (Logbay) est disponible sur chaque **CVM** d'un nœud et sur **Prism Central**. 
 
-Vous pouvez ainsi générer les logs et les envoyer directement au support Nutanix avec le numéro d'incident, ou générer les logs et les récupérer en SSH afin de les envoyer ultérieurement à partir du portail Nutanix, avec le numéro d'incident.
+Vous pouvez générer les logs et les récupérer en SSH.
 
 > [!primary]
 >
@@ -150,16 +150,6 @@ Par exemple sous Linux :
 
 ```ssh nutanix@adresseipprismcentral```
 
-##### **Collecter et envoyer les logs au support Nutanix**
-
-Collectez et envoyez les logs au support Nutanix :
-
-```bash
-logbay collect --dst=ftp://nutanix -c casenumber
-```
-
-##### **Collecter les logs pour les envoyer ultérieurement au support Nutanix**
-
 Collectez les logs :
 
 ```bash
@@ -172,9 +162,8 @@ Affichez le nom du fichier généré :
 ls /home/nutanix/data/logbay/bundles
 ```
 
-##### **Récupérer les logs collectés dans un fichier au format .zip**
-
-Faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
+Récupérez ensuite les logs collectés dans un fichier au format .zip.<br>
+Pour cela, faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
 
 ```bash
 scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PC-adresseipprismcentral-CW.zip .
@@ -190,16 +179,6 @@ Par exemple sous Linux :
 
 ```ssh nutanix@adresseiprismelement```
 
-##### **Collecter les logs et les envoyer directement au support Nutanix**
-
-Collectez et envoyez tous les logs des nœuds au support avec le numéro d'incident.
-
-```bash
-allssh logbay collect --dst=ftp://nutanix -c casenumber
-```
-
-##### **Collecter les logs pour les envoyer ultérieurement au support Nutanix**
-
 Collectez tous les logs des nœuds :
 
 ```bash
@@ -212,9 +191,8 @@ Affichez le nom de tous les fichiers générés :
 allssh ls /home/nutanix/data/logbay/bundles
 ```
 
-##### **Récupérer les logs collectés dans des fichiers au format .zip**
-
-Copiez chaque fichier généré sur chacun des nœuds :
+Récupérez ensuite les logs collectés dans des fichiers au format .zip.<br>
+Pour cela, copiez chaque fichier généré sur chacun des nœuds :
 
 ```bash
 scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
@@ -224,6 +202,10 @@ scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adre
 nutanix@CVMN's password:
 Saisissez le mot de passe
 ```
+
+> [!primary]
+> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
+>
 
 ## Aller plus loin
 
