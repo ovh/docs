@@ -1,14 +1,22 @@
 ---
 title: Getting started with PCAv2 (Alpha)
 slug: s3/getting-started-with-pcav2
-excerpt:
+excerpt: This guide shows you how to manage your data with PCAv2
 section: Public Cloud Archive
 order: 200
 ---
 
-**Last updated 21st February 2022**
+**Last updated 11th Mars 2022**
 
 ## Objective
+
+PCAv2 is a service for long-term data storage.
+When archived, every object of a bucket is stored on physical tapes.
+Restoration can take some time as it needs to be read on tapes.
+
+**This guide explains how to set up storage on tapes with PCAv2.**
+
+*Note for the Alpha that tapes are not used.*
 
 ## Requirements
 
