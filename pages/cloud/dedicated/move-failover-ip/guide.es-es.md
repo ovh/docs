@@ -19,7 +19,7 @@ Las IP failover pueden moverse entre los servicios que utilice. El objetivo es n
 Esta tecnología le permite mover las direcciones IP de un servidor a otro en menos de un minuto, prácticamente sin interrupciones para sus usuarios. Asimismo, este mecanismo también puede utilizarse durante la migración de servicios, transfiriendo los proyectos del entorno de desarrollo al de producción, o durante la migración hacia un servidor de respaldo en caso de fallo.
 
 > [!primary]
-> Una IP failover no puede moverse de un país a otro distinto. Por ejemplo, una IP situada en el datacenter SBG (Francia) podrá migrarse a GRA (Francia) o RBX (Francia), pero no podrá migrarse a un servidor localizado en BHS(Canadá).
+> Una IP failover no puede moverse de un país a otro distinto. Por ejemplo, una IP situada en el datacenter SBG (Francia) podrá migrarse a GRA (Francia) o RBX (Francia), pero no podrá migrarse a un servidor localizado en BHS (Canadá).
 >
 > Los bloques de IPs se tienen que mover en bloque. No es posible dividir un bloque o mover las IPs de un bloque a distintos servidores.
 
