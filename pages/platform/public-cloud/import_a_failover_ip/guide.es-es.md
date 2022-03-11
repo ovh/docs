@@ -6,7 +6,7 @@ legacy_guide_number: g1883
 section: 'Red e IP'
 ---
 
-**Última actualización: 6/12/2019**
+**Última actualización: 10/03/2022**
 
 ## Objetivo
 
@@ -16,7 +16,7 @@ Si necesita configurar una dirección IP de conmutación en sus instancias porqu
 - Aloja varios proyectos internacionales
 - Quiere migrar de un servidor dedicado a una instancia de Public Cloud
 
-... puede importar una dirección IP de conmutación que esté asociada a otro servicio de OVHcloud.
+Puede importar una dirección IP de conmutación que esté asociada a otro servicio de OVHcloud.
 
 **Esta guía explica cómo importar esta IP de conmutación en su proyecto de Public Cloud de OVHcloud.**
 
@@ -31,11 +31,11 @@ Si necesita configurar una dirección IP de conmutación en sus instancias porqu
 Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione su proyecto en la sección `Public Cloud`{.action}. 
 A continuación, seleccione `Failover IP`{.action} en la sección "Network".
 
-![IP Section](images/import.png){.thumbnail}
-
 Haga clic en `Acciones`{.action} y seleccione `Importar una IP`{.action} para mostrar todas las direcciones IP que se pueden importar en su proyecto de Public Cloud.
 
 ![IP Section](images/import1.png){.thumbnail}
+
+Si todavía no tiene ninguna IP Failover en su proyecto de Public Cloud, la opción de importar una IP se mostrará en la página de inicio.
 
 Haga clic en los tres puntos a la derecha de la IP que quiere importar y haga clic en `Importar esta IP Failover`{.action}.
 

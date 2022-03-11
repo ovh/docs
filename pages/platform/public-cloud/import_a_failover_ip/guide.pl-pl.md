@@ -34,6 +34,8 @@ Kliknij przycisk `Operacje`{.action} i wybierz opcję ` Importuj adres IP`{.act
 
 ![IP Section](images/import1.png){.thumbnail}
 
+Jeśli nie posiadasz jeszcze adresu IP Failover w Twoim projekcie Public Cloud, na stronie głównej pojawi się możliwość importu adresu IP.
+
 Kliknij ikonę z trzema kropkami po prawej stronie adresu IP, który chcesz zaimportować, a następnie kliknij pozycję `Importuj ten IP Failover`{.action}.
 
 ![Import Failover IP](images/import2.png){.thumbnail}

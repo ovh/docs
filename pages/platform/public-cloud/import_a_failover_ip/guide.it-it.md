@@ -34,6 +34,8 @@ Clicca su `Azioni`{.action} e seleziona `Importa un IP`{.action} per visualizzar
 
 ![IP Section](images/import1.png){.thumbnail}
 
+Se non disponi ancora di un IP Failover sul tuo progetto Public Cloud, l'opzione di importare un IP comparirà sulla homepage.
+
 Clicca sui tre puntini a destra dell’IP che vuoi importare e poi su `Importa questo IP Failover`{.action}.
 
 ![Importa IP Failover](images/import2.png){.thumbnail}
