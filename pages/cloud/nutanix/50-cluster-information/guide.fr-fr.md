@@ -1,12 +1,12 @@
 ---
 title: Récupérer les informations de statut de votre installation Nutanix
 slug: nutanix-cluster-information
-excerpt: Découvrez comment récupérer les informations essentielles sur le statut de votre cluster Nutanix.
+excerpt: Découvrez comment récupérer les informations essentielles sur le statut de votre cluster Nutanix
 section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 17/02/2022**
+**Dernière mise à jour le 10/03/2022**
 
 ## Objectif
 
@@ -128,6 +128,107 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
 
+### Collecter les logs des noeuds
+
+Pour une analyse plus précise, il peut être nécessaire de récupérer les logs des nœuds et de **Prism Central**.
+
+Il est possible de collecter les logs à partir de **Prism Element** mais nous vous recommandons davantage d'utiliser la ligne de commande sur le cluster ou sur **Prism central**.
+
+L'outil de récupération des logs (Logbay) est disponible sur chaque **CVM** d'un nœud et sur **Prism Central**. 
+
+Vous pouvez ainsi générer les logs et les envoyer directement au support Nutanix avec le numéro d'incident, ou générer les logs et les récupérer en SSH afin de les envoyer ultérieurement à partir du portail Nutanix, avec le numéro d'incident.
+
+> [!primary]
+>
+> Pour plus de détails sur **Logbay** et **Putty**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+
+#### Collecter les logs concernant Prism Central
+
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP de **Prism Central**.
+
+Par exemple sous Linux :
+
+```ssh nutanix@adresseipprismcentral```
+
+##### **Collecter et envoyer les logs au support Nutanix**
+
+Collectez et envoyez les logs au support Nutanix :
+
+```bash
+logbay collect --dst=ftp://nutanix -c casenumber
+```
+
+##### **Collecter les logs pour les envoyer ultérieurement au support Nutanix**
+
+Collectez les logs :
+
+```bash
+logbay collect 
+```
+
+Affichez le nom du fichier généré :
+
+```bash
+ls /home/nutanix/data/logbay/bundles
+```
+
+##### **Récupérer les logs collectés dans un fichier au format .zip**
+
+Faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
+
+```bash
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PC-adresseipprismcentral-CW.zip .
+nutanix@adresseipprismcentral's password:
+Saisissez le mot de passe
+```
+
+#### Collecter tous les logs des nœuds à partir de l'adresse IP de Prism Element
+
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP du cluster.
+
+Par exemple sous Linux :
+
+```ssh nutanix@adresseiprismelement```
+
+##### **Collecter les logs et les envoyer directement au support Nutanix**
+
+Collectez et envoyez tous les logs des nœuds au support avec le numéro d'incident.
+
+```bash
+allssh logbay collect --dst=ftp://nutanix -c casenumber
+```
+
+##### **Collecter les logs pour les envoyer ultérieurement au support Nutanix**
+
+Collectez tous les logs des nœuds :
+
+```bash
+allssh logbay collect
+```
+
+Affichez le nom de tous les fichiers générés :
+
+```bash
+allssh ls /home/nutanix/data/logbay/bundles
+```
+
+##### **Récupérer les logs collectés dans des fichiers au format .zip**
+
+Copiez chaque fichier généré sur chacun des nœuds :
+
+```bash
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+nutanix@CVM1's password:
+Saisissez le mot de passe
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+nutanix@CVMN's password:
+Saisissez le mot de passe
+```
+
 ## Aller plus loin
+
+[Putty](https://www.putty.org/)
+
+[Documentation Nutanix sur Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
