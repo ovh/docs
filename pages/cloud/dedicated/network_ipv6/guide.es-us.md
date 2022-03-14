@@ -43,6 +43,10 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 >
 
+> [!warning]
+> Tenga en cuenta que los **servidores Kimsufi** se entregan con un único bloque IPV6 (/128). En ese caso, consulte la [guía](https://docs.ovh.com/us/es/vps/configurar-ipv6/) para configurar la ipv6 en un servidor Kimsufi.
+>
+
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
