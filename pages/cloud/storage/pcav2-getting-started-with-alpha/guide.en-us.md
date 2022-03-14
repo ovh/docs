@@ -16,7 +16,9 @@ Restoration can take some time as it needs to be read on tapes.
 
 **This guide explains how to set up storage on tapes with PCAv2.**
 
-*Note for the Alpha that tapes are not used.*
+> [!primary]
+>
+> During the the Alpha period, tapes are not used.
 
 ## Requirements
 
@@ -78,7 +80,7 @@ From this command and until a restoration, the bucket cannot accept any read or 
 
 > [!primary]
 >
-> During the Alpha phase, nothing is stored on tapes.
+> During the Alpha period, nothing is stored on tapes.
 >
 
 ### Bucket restoring
