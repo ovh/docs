@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-OVHcloud has combined all of its Kimsufi, So you Start and Rise dedicated servers into a new product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change, if you have opted to purchase products from the Eco range, we have set up a guide that will introduce you to the OVHcloud Control Panel and its options.
+OVHcloud has combined all of its Kimsufi, So you Start and Rise dedicated servers into a new product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change, if you have opted to purchase products from the Eco line, we have set up a guide that will introduce you to the OVHcloud Control Panel and its options.
 
 
 **This guide is designed to help you familiarise yourself with the OVHcloud Control Panel**
@@ -92,7 +92,7 @@ In the OVHcloud Control Panel, these options are grouped into a common space. Cl
 - **General information**: in this section, you can view your account information, your latest bill, and access different shortcuts.
 - **Security**: this section allows you to manage the security settings of your account. For more information, please consult this [guide](https://docs.ovh.com/gb/en/customer/all-about-your-username/).
 - **Emails received**: in this section, you can find all of the emails which OVHcloud has sent you, apart from requests for assistance.
-- **Level of support** (only available for OVHcloud services): You can find more information on the level of support offered by OVHcloud in this section.
+- **Level of support** (only available for OVHcloud services): you can find more information on the level of support offered by OVHcloud in this section.
 - **User management**: this section allows you to manage your users. For more information, please consult this [guide](https://docs.ovh.com/gb/en/customer/managing-users/).
 - **My bills**: in this section, you can view your invoices, track payments made with your default payment method, and view your credit notes. For more information, please consult this [guide](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/).
 - **My services**: in this section, you can view all of your services, contracts and SSH keys.
