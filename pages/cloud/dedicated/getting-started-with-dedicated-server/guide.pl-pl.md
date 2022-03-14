@@ -125,6 +125,8 @@ Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](
 
 Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (root). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
 
+Sprawdź również nasz przewodnik [Skonfiguruj nową instalację Windows Server](https://docs.ovh.com/pl/dedicated/windows-first-config/).
+
 ### Restart serwera dedykowanego <a name="reboot"></a>
 
 Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
