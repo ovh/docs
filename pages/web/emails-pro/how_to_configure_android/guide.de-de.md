@@ -101,4 +101,4 @@ OVHcloud bietet Ihnen außerdem eine Webanwendung mit [kollaborativen Funktionen
 
 [Konfiguration Ihres Exchange Accounts in Android über die Gmail-App](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_20132016_konfiguration_in_android/)
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
