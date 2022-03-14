@@ -80,7 +80,7 @@ Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez su
 
 Pour accéder à l'onglet « Licences » dans l'espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `Licences`{.action} :
 
-![license](images/managelicencesOVHcloud.png){.thumbnail}
+![licence](images/managelicencesOVHcloud.png){.thumbnail}
 
 ### Support, facturation et gestion de compte
 
