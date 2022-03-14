@@ -1,6 +1,8 @@
 ---
-title: Getting started with PCAv2 (Alpha)
+title: Premiers pas avec PCAv2 (Alpha) (EN)
 slug: s3/getting-started-with-pcav2
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-pcav2/'
 excerpt: This guide shows you how to manage your data with PCAv2
 section: Public Cloud Archive
 order: 200
@@ -22,7 +24,7 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with AWS CLI](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+- [Getting started with AWS CLI](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/#utilisation-de-aws-cli)
 
 ## Instructions
 
@@ -134,4 +136,4 @@ aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucke
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.

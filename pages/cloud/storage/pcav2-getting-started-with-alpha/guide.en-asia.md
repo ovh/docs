@@ -22,7 +22,7 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with AWS CLI](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+- [Getting started with AWS CLI](https://docs.ovh.com/asia/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
 
 ## Instructions
 
