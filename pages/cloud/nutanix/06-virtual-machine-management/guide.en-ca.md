@@ -4,7 +4,6 @@ slug: virtual-machine-management
 excerpt: Discover virtual machine management in Prism Central
 section: Getting started
 order: 06
-hidden: true
 ---
 
 **Last updated 10th March 2022**

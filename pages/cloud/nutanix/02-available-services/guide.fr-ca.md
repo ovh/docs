@@ -4,7 +4,6 @@ slug: available-services
 excerpt: "Présentation des services et licences inclus dans l'offre Hosted Private Cloud powered by Nutanix"
 section: Premiers pas
 order: 02
-hidden: true
 ---
 
 **Dernière mise à jour le 07/03/2022**

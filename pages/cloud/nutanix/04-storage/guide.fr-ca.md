@@ -4,7 +4,6 @@ slug: storage
 excerpt: 'Présentation de la gestion du stockage dans un Cluster Nutanix'
 section: Premiers pas
 order: 04
-hidden: true
 ---
 
 **Dernière mise à jour le 23/02/2022**

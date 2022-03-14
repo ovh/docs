@@ -4,7 +4,6 @@ slug: nutanix-upgrade-prismcentral
 excerpt: Find out how to upgrade your Nutanix cluster
 section: Getting started
 order: 08
-hidden: true
 ---
 
 **Last updated 11th January 2022**

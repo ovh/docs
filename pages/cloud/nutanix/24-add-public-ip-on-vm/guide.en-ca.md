@@ -4,7 +4,6 @@ slug: nutanix-public-ip
 excerpt: Find out how to use a public IP on a Ubuntu VM, created via API
 section: Network & Security
 order: 04
-hidden: true
 ---
 
 **Last updated 11th January 2022**
