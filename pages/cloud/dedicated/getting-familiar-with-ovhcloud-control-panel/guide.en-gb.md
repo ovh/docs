@@ -6,7 +6,7 @@ section: So You Start & Kimsufi customers
 order: 1
 ---
 
-**Last updated 22/02/2022**
+**Last updated 11/03/2022**
 
 ## Objective
 
@@ -98,6 +98,7 @@ In the OVHcloud Control Panel, these options are grouped into a common space. Cl
 - **My services**: in this section, you can view all of your services, contracts and SSH keys.
 - **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to this [guide](https://docs.ovh.com/gb/en/billing/manage-payment-methods/).
 - **My orders**: view your orders from this page. More information is available in this [guide](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/).
+**My contacts**: in this section, you can view and manage the contacts associated with your services. In the **My requests** tab, you will find contact change requests sent from your customer account, as well as service management requests received. For more information on managing your service contacts, please refer to this [guide](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 - **My support requests**: in this section, you can open/view all of your support tickets.
 
 ## Go further

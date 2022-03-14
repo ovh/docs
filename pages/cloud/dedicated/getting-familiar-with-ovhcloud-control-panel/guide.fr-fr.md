@@ -72,7 +72,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action}.
+Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action} :
 
 ![section ip](images/manageIPOVHcloud.png){.thumbnail}
 
@@ -96,8 +96,9 @@ Dans l’espace client OVHcloud, ces options sont regroupées dans un espace com
 - **Gestion des utilisateurs** : cette rubrique vous permet de gérer vos utilisateurs. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/fr/customer/gestion-utilisateurs/).
 - **Mes factures** : depuis cette rubrique, vous pouvez consulter vos factures, suivre les paiements effectués avec votre moyen de paiement par défaut et consulter vos avoirs. Plus d'informations sur [ce guide](https://docs.ovh.com/fr/billing/gerer-factures-ovh/).
 - **Mes services** : cette rubrique vous permet de visualiser l'ensemble de vos services, vos contrats et vos clés SSH.
-- **Moyens de paiement** : dans cette rubrique, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter c[e guide](https://docs.ovh.com/fr/billing/manage-payment-methods/).
+- **Moyens de paiement** : dans cette rubrique, vous avez accès à votre moyen de paiement actuel, votre compte prépayé ainsi que vos vouchers OVHcloud. Vous y trouverez également l'option d'ajouter/supprimer une méthode de paiement. Pour plus d’informations sur la gestion de vos moyens de paiement, nous vous invitons à consulter [ce guide](https://docs.ovh.com/fr/billing/manage-payment-methods/).
 - **Mes commandes** : consultez vos commandes depuis cette page. Plus d'informations sur [ce guide](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/).
+- **Mes contacts** : dans cette rubrique, vous pouvez visualiser et gérer les contacts associés à vos services. Dans l'onglet **Mes demandes**, vous trouverez les demandes de modification de coordonnées envoyées depuis votre compte client ainsi que les demandes de gestion de services reçues. Pour plus d’informations sur la gestion de vos contacts de services, nous vous invitons à consulter [ce guide](https://docs.ovh.com/fr/customer/gestion-des-contacts/).
 - **Mes demandes d'assistance** : cette rubrique vous permet d’ouvrir/visualiser l’ensemble de vos demandes d’assistance.
 
 ## Aller plus loin
