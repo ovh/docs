@@ -13,7 +13,7 @@ order: 1
 OVHcloud has combined all of its Kimsufi, So you Start and Rise dedicated servers into a new product line called Eco, to give you a better overview of our configurations. Due to these changes, you can now manage all of your services, across all ranges, from the OVHcloud Control Panel. To support you in this change, if you have opted to purchase products from the Eco line, we have set up a guide that will introduce you to the OVHcloud Control Panel and its options.
 
 
-**This guide is designed to help you familiarise yourself with the OVHcloud Control Panel**
+**This guide is designed to help you familiarise yourself with the OVHcloud Control Panel.**
 
 > [!warning]
 > Please note that despite the interface change, the options available for your server range will remain the same. Some options will only be available for servers from the OVHcloud baremetal server range.
@@ -74,7 +74,7 @@ For more information on managing your dedicated server via the OVHcloud Control 
 
 To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `IP`{.action}.
 
-![ip section](images/manageIPsOVHcloud.png){.thumbnail}
+![ip section](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Licences tab (not offered on Kimsufi)
 
