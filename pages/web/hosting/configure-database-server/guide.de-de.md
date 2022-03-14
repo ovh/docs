@@ -125,7 +125,8 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> <b>Tmpdir</b>:    
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
 >
 > \- /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.

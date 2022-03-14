@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Letzte Aktualisierung am 27.05.2021**
+**Letzte Aktualisierung am 11.03.2022**
 
 ## Ziel
 
@@ -110,13 +110,13 @@ Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, un
 
 **Beispiel mit Root:**
 
-```sh
+```bash
 ssh root@IPv4_Ihres_Servers
 ```
 
 **Beispiel mit einem vorkonfigurierten Benutzer:**
 
-```sh
+```bash
 ssh root@Referenzname_Ihres_Servers
 ```
 
@@ -130,7 +130,7 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Pa
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
-```sh
+```bash
 reboot
 ```
 
@@ -146,17 +146,11 @@ Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als s
 
 Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus kontrollieren (Abschnitt **Dienststatus**).
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Wenn **Monitoring** auf `Aktiviert` gestellt ist, werden Sie per E-Mail benachrichtigt sobald der Server sich unerwartet verhält. Sie können diese Benachrichtungen über den `...`{.action} Button deaktivieren.
+Wenn **Monitoring** auf `Aktiviert` gestellt ist, werden Sie per E-Mail benachrichtigt sobald der Server sich unerwartet verhält. Sie können diese Benachrichtungen über den `...`{.action} Button deaktivieren.
 
-- Wenn Sie die Option **Eingriffe am Standort** aktivieren, stimmen Sie der Überwachung durch Techniker im Rechenzentrum zu. Die Hardware wird dann geprüft, falls Ihr Server nicht mehr auf Pings reagiert. 
-
-> [!warning]
-> Wenn die *on-site* Interventionen auf `On`{.action} gesetzt sind, stellen Sie sicher, dass Sie die Option **deaktivieren**, bevor Sie relevante Aktionen auf Ihrem Server durchführen (Hardwaretests, Neustarts, etc.). Sie erhalten Sie weiterhin automatische E-Mails, solange "Monitoring" aktiv ist.
->
-
-Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](https://docs.ovh.com/de/dedicated/monitoring-ip-ovh/).
 
 ### Netzwerkkonfiguration
 

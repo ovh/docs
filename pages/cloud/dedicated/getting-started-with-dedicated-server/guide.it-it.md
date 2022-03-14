@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/05/2021**
+**Ultimo aggiornamento: 11/03/2022**
 
 ## Obiettivo
 
@@ -109,13 +109,13 @@ Utilizza questi esempi per connetterti al tuo server e sostituisci le informazio
 
 **Esempio con root:**
 
-```sh
+```bash
 sh ssh root@IPv4_del_tuo_server 
 ```
 
 **Esempio con un utente preconfigurato:**
 
-```sh
+```bash
 ssh root@nome_di_riferimento_del_tuo_server
 ```
 
@@ -129,7 +129,7 @@ Una volta completata l'installazione, riceverai un'email con la password per l'a
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
 
-```sh
+```bash
 reboot
 ```
 
@@ -145,18 +145,11 @@ Come spiegato nella parte iniziale di questa guida, in quanto amministratore del
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Se il **Monitoraggio** è `attivo`, riceverai un'email ogni volta che il server si comporta in modo inaspettato. Puoi disattivare questi messaggi tramite il pulsante `...`{.action}.
+Se il **Monitoraggio** è `attivo`, riceverai un'email ogni volta che il server si comporta in modo inaspettato. Puoi disattivare questi messaggi tramite il pulsante `...`{.action}.
 
-- Attivando l'opzione **Interventi in loco**, autorizzi i tecnici del datacenter a controllare l'hardware nel caso in cui il tuo server non risponda più ai ping.
-
-> [!warning]
->
-> Se gli interventi sul sito sono attivi (il cursore è su `ON`{.action}), ti consigliamo di **disattivare** l'opzione prima di effettuare le azioni appropriate sul tuo server (test hardware, riavvio, ecc...). Riceverai sempre email automatiche finché la funzione "Monitoraggio" sarà attiva.
->
-
-Per maggiori informazioni sul monitoraggio, consulta [questa guida](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Per maggiori informazioni sul monitoraggio, consulta [questa guida](https://docs.ovh.com/it/dedicated/monitoring-ip-ovh/).
 
 ### Configurazione rete
 

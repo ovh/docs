@@ -26,7 +26,7 @@ You have just purchased an Email Pro solution, which gives you affordable profes
 
 Once the Email Pro service has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-To do this, log in, then click on `Email Pro`{.action} in the services menu on the left and select the appropriate service.
+To do this, log in, then click on `Email Pro`{.action} and select the appropriate service.
 
 > [!primary]
 >
@@ -130,7 +130,7 @@ If you would like to configure your email address on an email client or device (
 >
 > In our guides, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Email Pro`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ## Go further

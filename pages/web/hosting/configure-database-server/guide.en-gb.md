@@ -125,7 +125,8 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 > [!primary]
 >
-> <b>Tmpdir</b>:    
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
 > \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.

@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 28/05/2021**
+**Última actualización: 11/03/2022**
 
 ## Objetivo
 
@@ -109,13 +109,13 @@ Utilice los siguientes ejemplos para conectarse a su servidor y sustituya la inf
 
 **Ejemplo de root:**
 
-```sh
+```bash
 ssh root@IPv4_del_servidor
 ```
 
 **Ejemplo de usuario preconfigurado:**
 
-```sh
+```bash
 ssh root@nombre_de_referencia_del_servidor
 ```
 
@@ -129,7 +129,7 @@ Una vez finalizada la instalación, recibirá un mensaje de correo electrónico 
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
-```sh
+```bash
 reboot
 ```
 
@@ -145,18 +145,11 @@ Como se recuerda en el apartado Objetivo de esta guía, usted es el administrado
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). La opción se encuentra en la sección `Estado de los servicios`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
+Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
 
-- Si activa la opción **Intervenciones in situ**, autoriza a los técnicos del datacenter a controlar el hardware en caso de que su servidor no responda a ping.
-
-> [!warning]
->
-> Si las intervenciones in situ están activadas (el cursor estará en `On`{.action}, asegúrese de **desactivar** la opción antes de realizar las acciones apropiadas en su servidor (pruebas de hardware, reinicio, etc.). Siempre recibirá mensajes de correo automáticos mientras esté activa la función "Monitorización".
->
-
-Para más información sobre la monitorización de OVHcloud, consulte [esta guía](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Para más información sobre la monitorización de OVHcloud, consulte [esta guía](https://docs.ovh.com/es/dedicated/monitoring-ip-ovh/).
 
 ### Configuración de red
 

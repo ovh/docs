@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 11/03/2022**
 
 ## Objectif
 
@@ -105,13 +105,13 @@ Utilisez les exemples suivants pour vous connecter à votre serveur et remplacez
 
 **Exemple avec root :**
 
-```sh
+```bash
 ssh root@IPv4_de_votre_serveur
 ```
 
 **Exemple avec un utilisateur préconfiguré :**
 
-```sh
+```bash
 ssh ubuntu@nom_de_reference_de_votre_serveur
 ```
 
@@ -125,7 +125,7 @@ Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot d
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
-```sh
+```bash
 reboot
 ```
 
@@ -141,16 +141,9 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Si le **Monitoring** est `Activé`, vous serez averti par e-mail chaque fois que le serveur se comporte de manière inattendue. Vous pouvez désactiver ces messages via le bouton `...`{.action}.
-
-- Si vous activez l'option **Interventions sur site**, vous autorisez les techniciens du data center à contrôler le matériel au cas où votre serveur ne répondrait plus aux pings.
-
-> [!warning]
->
-> Si les interventions sur site sont activées (le curseur est alors sur `On`{.action}), veillez à **désactiver** l'option avant d'effectuer les actions appropriées sur votre serveur (tests matériels, redémarrages, etc.). Vous recevrez toujours des e-mails automatiques tant que la fonction « Monitoring » est active.
->
+Si le **Monitoring** est `Activé`, vous serez averti par e-mail chaque fois que le serveur se comporte de manière inattendue. Vous pouvez désactiver ces messages via le bouton `...`{.action}.
 
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](../monitoring-ip-ovh/).
 

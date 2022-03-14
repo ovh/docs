@@ -1,88 +1,95 @@
 ---
-title: 'Backup einer Instanz erstellen'
-excerpt: 'So erstellen Sie mit wenigen Klicks eine Sicherheitskopie Ihrer Instanz'
+title: Backup einer Instanz erstellen
+excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
 slug: ein_backup_einer_instanz_erstellen
-legacy_guide_number: g1881
-section: 'Verwaltung im OVHcloud Kundencenter'
+section: Verwaltung im OVHcloud Kundencenter
+order: 1
 ---
 
-**Letzte Aktualisierung am 22.11.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
+**Letzte Aktualisierung am 28.02.2022**
 
 ## Ziel
 
-Sie können jederzeit über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitskopie einer Instanz erstellen. Damit können Sie Ihre Instanz auf eine frühere Konfiguration zurücksetzen oder auf deren Basis eine neue Instanz erstellen.
+Sie können ein einzelnes Backup einer Instanz erstellen oder einen Zeitplan konfigurieren, um Backups Ihrer Instanzen zu automatisieren. Diese Backups können verwendet werden, um Ihre Instanz auf einen früheren Zustand wiederherzustellen oder um eine neue, identische Instanz zu erstellen.
 
-**Diese Anleitung erklärt, wie Sie in der Public Cloud Oberfläche des OVHcloud Kundencenters Backups erstellen und planen.**
+**Diese Anleitung erklärt, wie Sie manuelle und automatische Backups einer Public Cloud Instanz erstellen.**
 
 ## Voraussetzungen
 
+- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 
 ## In der praktischen Anwendung
 
-### Ein Backup einer Instanz erstellen
+### Backup einer Instanz erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken anschließend im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
-Klicken Sie dann auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
+Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Geben Sie dann auf der folgenden Seite einen Namen für dieses Backup an.
+Geben Sie auf der folgenden Seite eine Bezeichnung für das Backup ein. Nehmen Sie die Abrechnungsinformationen zur Kenntnis und klicken Sie auf `Bestätigen`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Sobald die Sicherung abgeschlossen ist, wird das Backup im Abschnitt `Instance Backup`{.action} angezeigt
+Sobald das Backup bereit ist, wird es im Bereich `Instance Backup`{.action} angezeigt.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
-### Ein automatisches Backup einer Instanz erstellen
+### Automatisches Backup einer Instanz erstellen
 
-Im Bereich `Instances`{.action} klicken Sie auf die 3 Punkte rechts neben der Instanz und wählen `Automatisches Backup erstellen`{.action}
+Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Automatisches Backup erstellen`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Sie müssen dann auf der nächsten Seite einige Informationen abgeben:
+Sie können dann folgende Backup-Einstellungen konfigurieren:
 
 #### **Workflow** 
 
-Es gibt zur Zeit nur diesen einen Workflow, er erstellt die Backups der Instanz und des primären Volume.
+Derzeit existiert nur ein Workflow. Er erstellt ein Backup für die Instanz und das primäre Volume.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
-#### **Zugeteilte Ressource**. 
+#### **Ressource** 
 
-Es genügt, die für die Sicherheitskopie betroffene Instanz zu wählen.
+Sie können die zu sichernde Instanz auswählen.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
 #### **Scheduling** 
 
-Legen Sie hier die Häufigkeit der Sicherheitskopien fest. Es gibt auch zwei Standard-Optionen zur Auswahl:
+Sie können eine personalisierte Backup-Planung festlegen oder eine der Standardrotationen auswählen:
 
-- Tägliches Backup mit einer Historie von maximal 7 Tagen.
-- Tägliches Backup mit einer Historie von maximal 14 Tagen.
+- Tägliche Sicherung mit Speicherung der letzten 7 Backups
+- Tägliche Sicherung mit Speicherung der letzten 14 Backups
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
-    
-#### **Schedule-Name** 
+#### **Name** 
 
-Geben Sie eine Bezeichnung für den Workflow-Task an.
+Geben Sie einen Namen für die Planung des automatischen Backups ein. Nehmen Sie die Abrechnungsinformationen zur Kenntnis und erstellen Sie das Scheduling, indem Sie auf den Button `Erstellen`{.action} klicken.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-Sobald er erstellt wurde, wird der neue Workflow unter `Workflow Management`{.action} angezeigt.
+### Verwaltung der Backups und Zeitpläne
+
+Zeitplanungen können im Bereich `Workflow Management`{.action} Ihres Public Cloud Kundencenters erstellt und entfernt werden.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Die Backups werden im linken Menü unter `Instance Backup`{.action} verfügbar sein und gemäß Ihrer Instanzkonfiguration berechnet.
+Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet.
 
-Um eine neue Instanz basierend auf einem Backup zu erstellen, klicken Sie hier rechts auf `...`{.action} und dann auf `Instanz erstellen`{.action}.
+![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
 
+Erfahren Sie in [dieser Anleitung](https://docs.ovh.com/de/public-cloud/einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen/), wie Sie Sicherungen verwenden, um Instanzen zu klonen oder wiederherzustellen.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+[Verwenden von Backups zum Erzeugen oder Wiederherstellen von Instanzen](https://docs.ovh.com/de/public-cloud/einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen/)
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
