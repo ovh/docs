@@ -1,8 +1,8 @@
 ---
-title: Kimsufi and SoYouStart customers - Get to know the OVHcloud Control Panel
+title: Kimsufi and So you Start customers - Get to know the OVHcloud Control Panel
 excerpt: Find out how to navigate the OVHcloud Control Panel
 slug: get-familiar-with-ovhcloud-control-panel
-section: So you Start & Kimsufi customers
+section: So You Start & Kimsufi customers
 order: 1
 ---
 
@@ -16,7 +16,7 @@ OVHcloud has combined all of its Kimsufi, So you Start and Rise dedicated server
 **This guide is designed to help you familiarise yourself with the OVHcloud Control Panel.**
 
 > [!warning]
-> Please note that despite the interface change, the options available for your server range will remain the same. Some options will only be available for servers from the OVHcloud baremetal server range.
+> Please note that despite the interface change, the options available for your server range will remain the same. Some options may not be available for Kimsufi and So you Start servers.
 >
 
 ## Instructions
@@ -51,7 +51,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 **Service status**
 
 - Status: Click on the `...`{.action} next to this option to reboot or delete your server.
-- Monitoring: Click on the `...`{.action} next to this option to enable/disable monitoring on your server. To find out how to install Real Time Monitoring (RTM), please refer to this [guide](https://docs.ovh.com/gb/en/dedicated/install-rtm/).
+- Monitoring: Click on the `...`{.action} next to this option to enable/disable monitoring on your server.
 
 **Network**
 
