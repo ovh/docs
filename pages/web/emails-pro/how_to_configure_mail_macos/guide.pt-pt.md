@@ -32,12 +32,13 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
  
 ## Instruções
 
-> [!warning]
+> [!primary]
 >
-> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
-> 
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action} na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
-> 
+> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
+>
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+>
+
 
 ### Adicionar a conta
 
