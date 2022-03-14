@@ -128,7 +128,7 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
 
-### Collecter les logs des noeuds
+### Collecter l'ensemble des logs du cluster
 
 Pour une analyse plus précise, il peut être nécessaire de récupérer les logs des nœuds et de **Prism Central**.
 
