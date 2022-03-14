@@ -26,7 +26,7 @@ Sie haben gerade eine E-Mail Pro Lösung erworben. Nun können Sie zu einem gün
 
 Wenn der E-Mail Pro Dienst eingerichtet und verfügbar ist, können Sie ihn über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
 
-Loggen Sie sich hierzu in Ihrem Kundencenter ein, klicken Sie auf `E-Mail Pro`{.action} und wählen Sie den Namen des betreffenden Dienstes aus.
+Loggen Sie sich hierzu in Ihrem Kundencenter ein und wählen Sie den betreffenden `E-Mail Pro`{.action} Dienst aus.
 
 > [!primary]
 >
