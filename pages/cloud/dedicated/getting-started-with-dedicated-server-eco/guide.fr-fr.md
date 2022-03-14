@@ -47,7 +47,7 @@ Cliquez sur `Suivant`{.action} pour continuer.
 
 ![Sélection de template](images/reinstalling-your-server-02.png){.thumbnail}
 
-Après avoir choisi `Installer à partir d'un template OVHcloud`{.action}, vous pouvez sélectionner le système d'exploitation dans les menus déroulants.
+Après avoir choisi `Installer à partir d'un template OVH`{.action}, vous pouvez sélectionner le système d'exploitation dans les menus déroulants.
 
 ![Sélection opérationnelle](images/reinstalling-your-server-03.png){.thumbnail}
 
@@ -73,7 +73,7 @@ Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez 
 
 ![Personnaliser la configuration de la partition](images/SSH_14.png){.thumbnail}
 
-Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (compatible avec un VPS également).
+Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (également compatible avec un VPS).
 
 Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-même (de type RSA, ECDSA ou Ed25519) dans les champs correspondants.
 
@@ -82,7 +82,7 @@ Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-mê
 Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](../creer-cle-ssh-serveur-dediees/).
 
 > [!warning]
->OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+> OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
 >
 >Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
 >
@@ -111,7 +111,7 @@ Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](../s
 
 #### Windows
 
-Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**Remote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
+Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**emote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
 
 Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](https://docs.ovh.com/fr/dedicated/windows-first-config/) ».
 
@@ -123,7 +123,7 @@ Un redémarrage peut être nécessaire pour appliquer des configurations mises �
 reboot
 ```
 
-Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
+Vous pouvez cependant effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
 
 ![Redémarrage](images/rebooting-your-server.png){.thumbnail}
 
@@ -154,7 +154,7 @@ Le mode bridge est l'action entreprise par l'équipement réseau pour créer un 
 
 Il s'agit d'une configuration qui est le plus souvent utilisée dans le cadre de la virtualisation pour permettre à chaque machine virtuelle d’avoir sa propre adresse IP publique.
 
-Pour plus d'informations sur le mode bridge, reportez-vous à notre guide: [Mode bridge IP](../network-bridging/).
+Pour plus d'informations sur le mode bridge, reportez-vous à notre guide « [Mode bridge IP](../network-bridging/) ».
 
 #### Alias IP
 
@@ -166,7 +166,7 @@ Pour obtenir des instructions détaillées sur la configuration de l'alias IP, r
 
 > [!primary]
 >
-> À noter que les serveurs de la gamme **Kimsufi** ne disposent que d'une adresse IPv4 et d'une adresse IPv6.
+> Les serveurs de la gamme **Kimsufi** ne disposent que d'une adresse IPv4 et d'une adresse IPv6.
 >
 
 Tous les serveurs dédiés OVHcloud sont livrés avec un bloc /64 IPv6. Pour utiliser les adresses de ce bloc, vous devez apporter des modifications à la configuration du réseau. Consultez notre guide « [Configuration IPv6](../network-ipv6/) ».
