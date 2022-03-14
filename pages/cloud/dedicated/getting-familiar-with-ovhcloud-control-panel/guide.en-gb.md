@@ -60,7 +60,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 
 **Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/gb/en/dedicated/secondary-dns/)
 
-**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult this [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/).
+**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult this [guide](https://docs.ovh.com/gb/en/dedicated/services-backup-storage/).
 
 **Interventions**: Find here the current and past interventions made on your server.
 
