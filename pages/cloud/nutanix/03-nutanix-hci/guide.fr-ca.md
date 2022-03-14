@@ -4,6 +4,7 @@ slug: nutanix-hci
 excerpt: "Présentation de la solution d'hyperconvergence Nutanix"
 section: Premiers pas
 order: 03
+hidden: true
 ---
 
 **Dernière mise à jour le 22/02/2022**
@@ -21,7 +22,7 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## Présentation de la solution technique
 
@@ -79,19 +80,19 @@ Maintenant que la solution Nutanix a été présentée, nous allons nous connect
 
 Nous allons nous connecter au travers de Prism Central qui est le point d'entrée, depuis Internet, dans la solution proposée par OVHcloud.
 
-L'accès au cluster se fait via une adresse publique  du type https://FQDN:9440. Cette adresse vous est fournie lors de la création d'un cluster Nutanix chez OVHcloud.
+L'accès au cluster se fait via une adresse publique  du type <https://FQDN:9440>. Cette adresse vous est fournie lors de la création d'un cluster Nutanix chez OVHcloud.
 
-![Interface Prism Central - Login](images/PrismCentralUsername.PNG){.thumbnail}
+![Interface Prism Central - Login](images/PrismCentralUsername.PNG)
 
 Saisissez votre nom d'utilisateur et votre mot de passe et cliquez sur la flèche.
 
-![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG){.thumbnail}
+![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG)
 
 ### Connexion à Prism Element via Prism Central
 
 Sur le tableau de bord (*Dashboard*) de Prism Central, cliquez sur le nom du cluster dans le cadre **Cluster Quick Access**.
 
-![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG){.thumbnail}
+![Interface Prism Central - Dashboard](images/PrismCentralDashboard.PNG)
 
 Vous accédez alors au tableau de bord de votre cluster.
 
@@ -102,19 +103,19 @@ En bas de cet encadré est affiché le niveau de tolérance de panne (1 signifie
 À gauche est affiché un résumé du stockage et de l'espace disque disponible.<br>
 Cliquez sur `View Details`{.action} pour obtenir davantage d'informations sur le stockage.
 
-![Interface Prism Element - DashBoard](images/PrismElementDashBoard.PNG){.thumbnail}
+![Interface Prism Element - DashBoard](images/PrismElementDashBoard.PNG)
 
 Vous pouvez ainsi vérifier l'état du stockage par nœud.
 
-![Stockage](images/StorageDetail.PNG){.thumbnail}
+![Stockage](images/StorageDetail.PNG)
 
 Cliquez sur le menu `Hardware`{.action} pour obtenir le détail du stockage par nœud, ainsi que le nombre de disques alloués par nœud.
 
-![Hardware Menu](images/HardwareMenu.PNG){.thumbnail}
+![Hardware Menu](images/HardwareMenu.PNG)
 
 Cliquez sur `Diagrams`{.action} pour obtenir un résumé graphique tel que présenté ci-dessous.
 
-![Hardware Detail](images/HardwareDetail.PNG){.thumbnail}
+![Hardware Detail](images/HardwareDetail.PNG)
 
 ## Aller plus loin
 
