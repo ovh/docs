@@ -6,7 +6,7 @@ section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 17/02/2022**
+**Dernière mise à jour le 14/03/2022**
 
 ## Objectif
 
@@ -128,6 +128,86 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
 
-## Aller plus loin
+### Collecter l'ensemble des logs du cluster
+
+Pour une analyse plus précise, il peut être nécessaire de récupérer les logs des nœuds et de **Prism Central**.
+
+Il est possible de collecter les logs à partir de **Prism Element** mais nous vous recommandons davantage d'utiliser la ligne de commande sur le cluster ou sur **Prism central**.
+
+L'outil de récupération des logs (Logbay) est disponible sur chaque **CVM** d'un nœud et sur **Prism Central**. 
+
+Vous pouvez générer les logs et les récupérer en SSH.
+
+> [!primary]
+>
+> Pour plus de détails sur **Logbay** et **Putty**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+
+#### Collecter les logs concernant Prism Central
+
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP de **Prism Central**.
+
+Par exemple sous Linux :
+
+```ssh nutanix@prismcentralipaddress```
+
+Collectez les logs :
+
+```bash
+logbay collect 
+```
+
+Affichez le nom du fichier généré :
+
+```bash
+ls /home/nutanix/data/logbay/bundles
+```
+
+Récupérez ensuite les logs collectés dans un fichier au format .zip.<br>
+Pour cela, faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
+
+```bash
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-generatedfile.zip
+nutanix@adresseipprismcentral's password:
+```
+
+#### Collecter tous les logs des nœuds à partir de l'adresse IP de Prism Element
+
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP du cluster.
+
+Par exemple sous Linux :
+
+```ssh nutanix@prismelementipaddress```
+
+Collectez tous les logs des nœuds :
+
+```bash
+allssh logbay collect
+```
+
+Affichez le nom de tous les fichiers générés :
+
+```bash
+allssh ls /home/nutanix/data/logbay/bundles
+```
+
+Récupérez ensuite les logs collectés dans des fichiers au format .zip.<br>
+Pour cela, copiez chaque fichier généré sur chacun des nœuds :
+
+```bash
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-generatednumber-PE-prismelementipaddress.zip
+nutanix@CVM1's password:
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-prismelementipaddress.zip
+nutanix@CVMN's password:
+```
+
+> [!primary]
+> Utilisez l'outil [Plik](https://ca.plik.ovh/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/ca/fr/customer/plik/).
+>
+
+## Aller plus loin <a name="gofurther"></a>
+
+[Putty](https://www.putty.org/)
+
+[Documentation Nutanix sur Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

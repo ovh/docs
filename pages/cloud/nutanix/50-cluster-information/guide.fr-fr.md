@@ -6,7 +6,7 @@ section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 10/03/2022**
+**Dernière mise à jour le 14/03/2022**
 
 ## Objectif
 
@@ -204,7 +204,7 @@ nutanix@CVMN's password:
 > Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
 >
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 [Putty](https://www.putty.org/)
 
