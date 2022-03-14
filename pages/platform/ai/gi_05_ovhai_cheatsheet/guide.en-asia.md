@@ -14,9 +14,9 @@ The goal of this cheat sheet is to provide a quick reference to all the commands
 
 ## Cheat sheet
 
-[![ovhai CLI cheat sheet - part 01](images/ovhai-cheat-sheet-01.jpg)](ovhai-cheat-sheet.pdf)
+[![ovhai CLI cheat sheet - part 01](images/ovhai-cheat-sheet-01.jpg)](https://github.com/ovh/docs/blob/develop/pages/platform/ai/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
 
-[![ovhai CLI cheat sheet - part 02](images/ovhai-cheat-sheet-02.jpg)](ovhai-cheat-sheet.pdf)
+[![ovhai CLI cheat sheet - part 02](images/ovhai-cheat-sheet-02.jpg)](https://github.com/ovh/docs/blob/develop/pages/platform/ai/gi_05_ovhai_cheatsheet/ovhai-cheat-sheet.pdf)
 
 ## Feedback
 
