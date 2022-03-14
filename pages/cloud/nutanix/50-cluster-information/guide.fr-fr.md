@@ -148,7 +148,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@adresseipprismcentral```
+```ssh nutanix@prismcentralipaddress```
 
 Collectez les logs :
 
@@ -166,9 +166,8 @@ Récupérez ensuite les logs collectés dans un fichier au format .zip.<br>
 Pour cela, faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
 
 ```bash
-scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PC-adresseipprismcentral-CW.zip .
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-generatedfile.zip
 nutanix@adresseipprismcentral's password:
-Saisissez le mot de passe
 ```
 
 #### Collecter tous les logs des nœuds à partir de l'adresse IP de Prism Element
@@ -177,7 +176,7 @@ Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Put
 
 Par exemple sous Linux :
 
-```ssh nutanix@adresseiprismelement```
+```ssh nutanix@prismelementipaddress```
 
 Collectez tous les logs des nœuds :
 
@@ -195,12 +194,10 @@ Récupérez ensuite les logs collectés dans des fichiers au format .zip.<br>
 Pour cela, copiez chaque fichier généré sur chacun des nœuds :
 
 ```bash
-scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-generatednumber-PE-prismelementipaddress.zip
 nutanix@CVM1's password:
-Saisissez le mot de passe
-scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-prismelementipaddress.zip
 nutanix@CVMN's password:
-Saisissez le mot de passe
 ```
 
 > [!primary]
