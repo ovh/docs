@@ -30,7 +30,7 @@ Sie bietet auch nützliche Verknüpfungen und Verknüpfungen.
 
 ### Zugang zum Server
 
-![Server-Zugänge](images/listserversOVHcloud.png){.thumbnail}
+![server list](images/listserversOVHcloud.png){.thumbnail}
 
 In den Kimsufi und So you Start Interfaces können Sie über das Dashboard Ihren Server/die Liste der Server einsehen.<br>
 Klicken Sie im OVHcloud Kundencenter zunächst auf das Menü `Bare Metal Cloud`{.action} und dann auf `Dedicated Server`{.action}, um Ihre Server anzuzeigen.<br>
@@ -40,7 +40,7 @@ Wenn Sie mehrere Server haben, können Sie diese über den Button `Alle meine Se
 
 Klicken Sie im Menü `Dedicated Server`{.action} auf den Server Ihrer Wahl, um auf das Interface zuzugreifen.
 
-![integral Server](images/serverinterfaceOVHcloud.png){.thumbnail}
+![server interface](images/serverinterfaceOVHcloud.png){.thumbnail}
 
 **Allgemeine Informationen**\: In diesem Abschnitt finden Sie alle Informationen zu Ihrem Server.
 
