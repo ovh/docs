@@ -87,7 +87,7 @@ To access the Licences tab in the OVHcloud Control Panel, click on the `Bare Met
 In the Kimsufi or So you Start Control Panel, these options are available in the top right-hand corner, under individual tabs.<br>
 In the OVHcloud Control Panel, these options are grouped into a common space. Click on your name in the top right-hand corner and click on your initials to go to the `Manage my account` section.
 
-![billing](images/accountOVHcloud.png){.thumbnail}>
+![billing](images/accountOVHcloud.png){.thumbnail}
 
 - **General information**: in this section, you can view your account information, your latest bill, and access different shortcuts.
 - **Security**: this section allows you to manage the security settings of your account. For more information, please consult this [guide](https://docs.ovh.com/gb/en/customer/all-about-your-username/).

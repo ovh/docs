@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud annonce le regroupement de l’ensemble des serveurs dédiés Kimsufi, So you Start et Rise dans une ligne de produits appelée Eco, afin de vous offrir une meilleure vue d’ensemble de nos configurations. En raison de ces changements, vous pourrez désormais gérer tous vos services, quelle que soit leur gamme, depuis l'espace client OVHcloud. Pour vous accompagner dans ce changement si vous avez opté pour un achat sur la ligne de produits Eco, nous avons mis en place un guide vous présentant l’espace client OVHcloud et ses options.
 
-**Ce guide est destiné à vous aidez à vous familiariser avec l'espace client OVHcloud.**
+**Ce guide est destiné à vous aider à vous familiariser avec l'espace client OVHcloud.**
 
 > [!warning]
 > Veuillez noter que malgré le changement d'interface client, certaines options ne seront disponibles que pour les serveurs de la gamme de serveurs baremetal OVHcloud.
