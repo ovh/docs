@@ -42,7 +42,7 @@ The Data Sources section lists the different spaces monitored by vROPS. By defau
 
 ![Data sources](images/en04datasources.png){.thumbnail}
 
-Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple spaces, from VMware to Azure through AWS.
+Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple Private Clouds.
 
 ![adding an account](images/en04datasourcesb.png){.thumbnail}
 
