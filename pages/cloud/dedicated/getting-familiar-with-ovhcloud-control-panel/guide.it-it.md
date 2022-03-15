@@ -58,13 +58,13 @@ Nel menu `Server Dedicati`{.action}, clicca sul server che preferisci per accede
 - IPV4: clicca sui `...`{.action}. in corrispondenza di questa opzione per gestire il tuo IP.
 - Reverse: clicca sui `...`{.action} in corrispondenza di questa sezione per inserire/modificare il tuo reverse DNS.
 
-**DNS secondario**: configura qui il tuo DNS secondario. Per maggiori informazioni, consulta questa [guida](https://docs.ovh.com/it/dedicated/creare-dns-secondario-server-dedicato/).
+**DNS secondario**: configura qui il tuo DNS secondario. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/dedicated/creare-dns-secondario-server-dedicato/).
 
-**Backup Storage** (disponibile solo sui server OVHcloud e sui server So you Start, inclusi quelli della linea Eco): ordina e configura il tuo backup storage qui. Per maggiori informazioni, consulta questa [guida](https://docs.ovh.com/it/dedicated/servizio-backup-storage/).
+**Backup Storage** (disponibile solo sui server OVHcloud e sui server So you Start, inclusi quelli della linea Eco): ordina e configura il tuo backup storage qui. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/dedicated/servizio-backup-storage/).
 
 **Interventi**: ritrova qui gli interventi in corso e passati sul tuo server.
 
-**IPMI** (disponibile solo sui server OVHcloud e su alcuni server So you Start, inclusi quelli della linea Eco): accedi al tool IPMI o al KVM IP del tuo server. Per maggiori informazioni sull'utilizzo di questo strumento, consulta questa [guida](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/).
+**IPMI** (disponibile solo sui server OVHcloud e su alcuni server So you Start, inclusi quelli della linea Eco): accedi al tool IPMI o al KVM IP del tuo server. Per maggiori informazioni sull'utilizzo di questo strumento, consulta [questa guida](https://docs.ovh.com/it/dedicated/utilizzo-ipmi-server-dedicati/).
 
 **Operazioni**: visualizza qui le operazioni recenti eseguite sul tuo server.
 
@@ -72,13 +72,13 @@ Per maggiori informazioni sulla gestione del tuo server dedicato, consulta [ques
 
 ### Sezione IP
 
-Per accedere alla sezione « IP » dello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e poi su `IP`{.action}.
+Per accedere alla sezione **IP** dello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e poi su `IP`{.action}.
 
 ![sezione ip](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Scheda Licenze (non disponibile su Kimsufi)
 
-Per accedere alla scheda "Licenze" nello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e poi su `Licenze`{.action}:
+Per accedere alla scheda **Licenze** nello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e poi su `Licenze`{.action}:
 
 ![licenza](images/managelicencesOVHcloud.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Nello Spazio Cliente OVHcloud, queste opzioni sono raggruppate in uno spazio com
 - **I tuoi servizi**: questa sezione ti permette di visualizzare tutti i tuoi servizi, i tuoi contratti e le tue chiavi SSH.
 - **Modalità di pagamento**: in questa sezione è possibile accedere al metodo di pagamento corrente, al conto prepagato e ai voucher OVHcloud. e aggiungere/rimuovere un metodo di pagamento. Per maggiori informazioni sulla gestione dei metodi di pagamento, consulta [questa guida](https://docs.ovh.com/it/billing/manage-payment-methods/).
 - **I tuoi ordini**: consulta i tuoi ordini da questa pagina. Per maggiori informazioni, consulta [questa guida](https://docs.ovh.com/it/billing/gestire-ordini-ovh/).
-- **I tuoi contatti**: in questa sezione è possibile visualizzare e gestire i contatti associati ai tuoi servizi. Nella scheda **Le tue richieste**, visualizzi le richieste di modifica dei contatti inviate dal tuo account e le richieste di gestione dei servizi ricevute. Per maggiori informazioni sulla gestione dei contatti di servizio, consulta questa [guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+- **I tuoi contatti**: in questa sezione è possibile visualizzare e gestire i contatti associati ai tuoi servizi. Nella scheda **Le tue richieste**, visualizzi le richieste di modifica dei contatti inviate dal tuo account e le richieste di gestione dei servizi ricevute. Per maggiori informazioni sulla gestione dei contatti di servizio, consulta [questa guida](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
 - **Le tue richieste di supporto**: questa sezione ti permette di aprire/visualizzare tutte le tue richieste di assistenza.
 
 ## Per saperne di più

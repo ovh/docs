@@ -58,13 +58,13 @@ En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccio
 - IPV4: haga clic en los `...`{.action} junto a esta opción para gestionar su IP.
 - Registro inverso: haga clic en los `...`{.action} al lado de esta sección para entrar o modificar su registro DNS inverso.
 
-**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte esta [guía](https://docs.ovh.com/es/dedicated/crear-dns-secundario-servidor-dedicado/).
+**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte [esta guía](https://docs.ovh.com/es/dedicated/crear-dns-secundario-servidor-dedicado/).
 
-**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte esta [guía](https://docs.ovh.com/es/dedicated/servicio-backup-storage/).
+**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte [esta guía](https://docs.ovh.com/es/dedicated/servicio-backup-storage/).
 
 **Intervenciones**: consulte las intervenciones en curso y pasadas al servidor.
 
-**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte esta [guía](https://docs.ovh.com/es/dedicated/utilizar-ipmi-servidor-dedicado/).
+**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte [esta guía](https://docs.ovh.com/es/dedicated/utilizar-ipmi-servidor-dedicado/).
 
 **Tareas**: vea aquí las tareas realizadas recientemente en su servidor.
 
@@ -72,13 +72,13 @@ Para más información sobre la gestión de su servidor dedicado desde el área 
 
 ### Sección IP
 
-Para acceder a la sección « IP » del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `IP`{.action}.
+Para acceder a la sección **IP** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `IP`{.action}.
 
 ![Sección ip](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Pestaña Licencias (no disponible en Kimsufi)
 
-Para acceder a la pestaña « Licencias » del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Licencias`{.action}.
+Para acceder a la pestaña **Licencias** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Licencias`{.action}.
 
 ![license](images/managelicencesOVHcloud.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Estas opciones se agrupan en un área de cliente de OVHcloud. Haga clic en su no
 - **Mis facturas**: desde esta sección podrá consultar sus facturas, seguir los pagos realizados con su forma de pago por defecto y consultar sus activos. Más información sobre [esta guía](https://docs.ovh.com/es/billing/gestionar-facturas-ovh/).
 - **Mis servicios**: desde esta sección podrá ver todos sus servicios, contratos y llaves SSH.
 - **Formas de pago**: en esta sección, tiene acceso a su forma de pago actual, a su cuenta de prepago y a sus códigos promocionales de OVHcloud. También incluye la opción de añadir o eliminar una forma de pago. Para más información sobre la gestión de sus formas de pago, consulte [esta guía](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/).
-- **Mis contactos** : en esta sección puede visualizar y gestionar los contactos asociados a sus servicios. En la pestaña **Mis solicitudes**, puede acceder a las solicitudes realizadas por su cuenta de cliente para modificar los contactos, así como a las solicitudes de gestión de los servicios recibidos. . Para más información sobre la gestión de sus contactos de servicios, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
+- **Mis contactos** : en esta sección puede visualizar y gestionar los contactos asociados a sus servicios. En la pestaña **Mis solicitudes**, puede acceder a las solicitudes realizadas por su cuenta de cliente para modificar los contactos, así como a las solicitudes de gestión de los servicios recibidos. Para más información sobre la gestión de sus contactos de servicios, consulte [esta guía](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
 - **Mis pedidos**: consulte sus pedidos desde esta página. Más información sobre [esta guía](https://docs.ovh.com/es/billing/gestionar-los-pedidos-en-ovh/).
 - **Mis solicitudes de asistencia**: en esta sección podrá abrir/visualizar todas sus solicitudes de asistencia.
 

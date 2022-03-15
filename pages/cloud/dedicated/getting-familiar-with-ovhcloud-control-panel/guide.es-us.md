@@ -58,13 +58,13 @@ En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccio
 - IPV4: haga clic en los `...`{.action} junto a esta opción para gestionar su IP.
 - Registro inverso: haga clic en los `...`{.action} al lado de esta sección para entrar o modificar su registro DNS inverso.
 
-**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte esta [guía](https://docs.ovh.com/us/es/dedicated/crear-dns-secundario-servidor-dedicado/).
+**DNS secundario**: configure su DNS secundario aquí. Para más información, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/crear-dns-secundario-servidor-dedicado/).
 
-**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte esta [guía](https://docs.ovh.com/us/es/dedicated/servicio-backup-storage/).
+**Backup Storage** (disponible únicamente en los servidores de OVHcloud y los servidores So you Start, incluidos los de la línea Eco): contrate y configure su backup storage aquí. Para más información, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/servicio-backup-storage/).
 
 **Intervenciones**: consulte las intervenciones en curso y pasadas al servidor.
 
-**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte esta [guía](https://docs.ovh.com/us/es/dedicated/utilizar-ipmi-servidor-dedicado/).
+**IPMI** (solo disponible en los servidores de OVHcloud y en algunos servidores So you Start, incluidos los de la línea Eco): acceda aquí a la herramienta IPMI o al KVM IP de su servidor. Para más información sobre el uso de esta herramienta, consulte [esta guía](https://docs.ovh.com/us/es/dedicated/utilizar-ipmi-servidor-dedicado/).
 
 **Tareas**: vea aquí las tareas realizadas recientemente en su servidor.
 
@@ -72,13 +72,13 @@ Para más información sobre la gestión de su servidor dedicado desde el área 
 
 ### Sección IP
 
-Para acceder a la sección « IP » del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `IP`{.action}.
+Para acceder a la sección **IP** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `IP`{.action}.
 
 ![Sección ip](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Pestaña Licencias (no disponible en Kimsufi)
 
-Para acceder a la pestaña « Licencias » del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Licencias`{.action}.
+Para acceder a la pestaña **Licencias** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `Licencias`{.action}.
 
 ![license](images/managelicencesOVHcloud.png){.thumbnail}
 

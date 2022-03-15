@@ -58,13 +58,13 @@ No menu `Servidores Dedicados`{.action}, clique no servidor à sua escolha para 
 - IPV4: clique nas `...`{.action} junto a esta opção para gerir o seu IP.
 - Reverse: clique nas `...`{.action} junto a esta secção para entrar/modificar a sua reverse DNS.
 
-**DNS secundário**: configure o seu DNS secundário aqui. Para mais informações consulte este [guia](https://docs.ovh.com/pt/dedicated/criar-dns-secundario-servidor-dedicado/).
+**DNS secundário**: configure o seu DNS secundário aqui. Para mais informações consulte [este guia](https://docs.ovh.com/pt/dedicated/criar-dns-secundario-servidor-dedicado/).
 
-**Backup Storage** (disponível apenas nos servidores OVHcloud e nos servidores So you Start, incluindo os da linha Eco): encomende e configure o seu backup storage aqui. Para mais informações consulte este [guia](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/).
+**Backup Storage** (disponível apenas nos servidores OVHcloud e nos servidores So you Start, incluindo os da linha Eco): encomende e configure o seu backup storage aqui. Para mais informações consulte [este guia](https://docs.ovh.com/pt/dedicated/servicos-backup-storage/).
 
 **Intervenções**: encontre aqui as intervenções em curso e passadas no seu servidor.
 
-**IPMI** (disponível apenas nos servidores OVHcloud e certos servidores So you Start, incluindo os da linha Eco): aceda aqui à ferramenta IPMI ou ao KVM IP do seu servidor. Para mais informações sobre a utilização desta ferramenta, consulte este [guia](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/).
+**IPMI** (disponível apenas nos servidores OVHcloud e certos servidores So you Start, incluindo os da linha Eco): aceda aqui à ferramenta IPMI ou ao KVM IP do seu servidor. Para mais informações sobre a utilização desta ferramenta, consulte [este guia](https://docs.ovh.com/pt/dedicated/usar-ipmi-servidores-dedicados/).
 
 **Tarefas**: visualize aqui as tarefas recentes efetuadas no seu servidor.
 
@@ -72,13 +72,13 @@ Para mais informações sobre a gestão do seu servidor dedicado através da Ár
 
 ### Secção IP
 
-Para aceder à secção « IP » da sua Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e, a seguir, em `IP`{.action}.
+Para aceder à secção **IP** da sua Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e, a seguir, em `IP`{.action}.
 
 ![secção ip](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Separação Licenças (não disponível no Kimsufi)
 
-Para aceder ao separador « Licenças » na Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e depois em `Licenças`{.action}:
+Para aceder ao separador **Licenças** na Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e depois em `Licenças`{.action}:
 
 ![licença](images/managelicencesOVHcloud.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Na Área de Cliente OVHcloud, estas opções estão agrupadas num espaço comum.
 - **Mis serviços**: esta rubrica permite-lhe visualizar o conjunto dos seus serviços, os seus contratos e as suas chaves SSH.
 - **Formas de pago**: nesta rubrica, terá acesso ao seu método de pagamento atual, à sua conta pré-paga bem como aos seus vouchers OVHcloud. Também poderá adicionar/eliminar um método de pagamento. Para obter mais informações sobre a gestão dos seus métodos de pagamento, consulte [este guia](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/).
 - **Mis pedidos**: consulte as suas encomendas a partir desta página. Para mais informações, consulte [este guia](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/).
-- **Mis contactos** : nesta secção, pode visualizar e gerir os contactos associados aos seus serviços. No separador **Os meus pedidos**, encontrará os pedidos de modificação de dados enviados a partir da sua conta de cliente, bem como os pedidos de gestão de serviços recebidos. Para mais informações sobre a gestão dos seus contactos de serviços, consulte o [presente guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
+- **Mis contactos** : nesta secção, pode visualizar e gerir os contactos associados aos seus serviços. No separador **Os meus pedidos**, encontrará os pedidos de modificação de dados enviados a partir da sua conta de cliente, bem como os pedidos de gestão de serviços recebidos. Para mais informações sobre a gestão dos seus contactos de serviços, consulte [este guia](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).
 - **Os meus pedidos de assistência**: esta secção permite-lhe abrir/visualizar o conjunto dos seus pedidos de assistência.
 
 ## Saiba mais

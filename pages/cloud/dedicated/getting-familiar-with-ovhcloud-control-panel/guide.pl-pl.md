@@ -58,13 +58,13 @@ W menu `Serwery dedykowane`{.action} kliknij wybrany serwer, aby uzyskać dostę
 - IPV4: kliknij `...`{.action} obok tej opcji, aby zarządzać adresem IP.
 - Rewers: kliknij `...`{.action} obok tej sekcji, aby wprowadzić/zmienić rewers DNS.
 
-**DNS secondary**: skonfiguruj tutaj DNS secondary. Więcej informacji znajdziesz w tym [przewodniku](https://docs.ovh.com/pl/dedicated/dodawanie-domeny-secondary-dns/).
+**DNS secondary**: skonfiguruj tutaj DNS secondary. Więcej informacji znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/dedicated/dodawanie-domeny-secondary-dns/).
 
-**Backup Storage** (dostępny tylko na serwerach OVHcloud i serwerach So you Start, w tym na serwerach linii Eco): zamów i skonfiguruj backup storage tutaj. Więcej informacji znajdziesz w tym [przewodniku](https://docs.ovh.com/pl/dedicated/usluga-backup-storage/).
+**Backup Storage** (dostępny tylko na serwerach OVHcloud i serwerach So you Start, w tym na serwerach linii Eco): zamów i skonfiguruj backup storage tutaj. Więcej informacji znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/dedicated/usluga-backup-storage/).
 
 **Interwencje**: znajdziesz tutaj bieżące i przeszłe interwencje na Twoim serwerze.
 
-**IPMI** (dostępny tylko na serwerach OVHcloud i na niektórych serwerach So you Start, w tym na serwerach linii Eco): przejdź tutaj do narzędzia IPMI lub KVM IP Twojego serwera. Więcej informacji na temat korzystania z tego narzędzia znajdziesz w tym [przewodniku](https://docs.ovh.com/pl/dedicated/uzywanie-ipmi-serwery-dedykowane/).
+**IPMI** (dostępny tylko na serwerach OVHcloud i na niektórych serwerach So you Start, w tym na serwerach linii Eco): przejdź tutaj do narzędzia IPMI lub KVM IP Twojego serwera. Więcej informacji na temat korzystania z tego narzędzia znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/dedicated/uzywanie-ipmi-serwery-dedykowane/).
 
 **Zadania**: sprawdź w tym miejscu ostatnie zadania wykonywane na serwerze.
 
@@ -72,13 +72,13 @@ Aby uzyskać więcej informacji na temat zarządzania serwerem dedykowanym w Pan
 
 ### Sekcja IP
 
-Aby uzyskać dostęp do sekcji « IP » w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `IP`{.action}.
+Aby uzyskać dostęp do sekcji **IP** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `IP`{.action}.
 
 ![sekcja ip](images/manageIPOVHcloud.png){.thumbnail}
 
 ### Zakładka Licencje (niedostępna na serwerze Kimsufi)
 
-Aby uzyskać dostęp do zakładki « Licencje » w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `Licencje`{.action}:
+Aby uzyskać dostęp do zakładki **Licencje** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `Licencje`{.action}:
 
 ![licencja](images/managelicencesOVHcloud.png){.thumbnail}
 
