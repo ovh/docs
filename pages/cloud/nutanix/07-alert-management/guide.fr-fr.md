@@ -109,7 +109,7 @@ Cliquez sur le `rond rouge numéroté`{.action}.
 
 L'alarme déclenchée apparait.
 
-![Show triggered alarm 02](images/ShowTriggeredAlarm01.PNG){.thumbnail}
+![Show triggered alarm 02](images/ShowTriggeredAlarm02.PNG){.thumbnail}
 
 Sélectionnez l'alarme et cliquez sur `Resolve`{.action}
 
