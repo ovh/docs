@@ -45,7 +45,7 @@ L'état des actions qu'un utilisateur de **Prism Central**  execute apparait dan
 
 Pour que **Prism Central** puisse envoyer des alertes, il faut configurer un serveur SMTP.
 
-Cliquez sur `Icône Engrenage`{.action} en haut à droite de l'interface **Prism Central** pour configurer le  .
+Cliquez sur `Icône Engrenage`{.action} en haut à droite de l'interface **Prism Central** pour le configurer.
 
 ![Configure Prism Central SMTP Server 01](images/ConfigurePrismCentralSmtp01.PNG){.thumbnail}
 
