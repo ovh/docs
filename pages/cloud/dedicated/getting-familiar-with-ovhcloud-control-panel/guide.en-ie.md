@@ -60,11 +60,11 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 
 **Secondary DNS**: Configure your secondary DNS here. For more information, consult the following [guide](https://docs.ovh.com/ie/en/dedicated/secondary-dns/)
 
-**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult this [guide](https://docs.ovh.com/ie/en/dedicated/services-backup-storage/).
+**Backup Storage** (Only available on OVHcloud servers and So you Start servers including those in the Eco line): Order and configure your backup storage here. For more information, consult [this guide](https://docs.ovh.com/ie/en/dedicated/services-backup-storage/).
 
 **Interventions**: Find here the current and past interventions made on your server.
 
-**IPMI** (Only available on OVHcloud servers and some So you Start servers including those in the Eco line): Access your server's IPMI or KVM IP here. For more information about using this tool, see this [guide](https://docs.ovh.com/ie/en/dedicated/use-ipmi-dedicated-servers/).
+**IPMI** (Only available on OVHcloud servers and some So you Start servers including those in the Eco line): Access your server's IPMI or KVM IP here. For more information about using this tool, see [this guide](https://docs.ovh.com/ie/en/dedicated/use-ipmi-dedicated-servers/).
 
 **Tasks**: Here you can view recent tasks performed on your server.
 
@@ -90,15 +90,15 @@ In the OVHcloud Control Panel, these options are grouped into a common space. Cl
 ![billing](images/accountOVHcloud.png){.thumbnail}
 
 - **General information**: in this section, you can view your account information, your latest bill, and access different shortcuts.
-- **Security**: this section allows you to manage the security settings of your account. For more information, please consult this [guide](https://docs.ovh.com/ie/en/customer/all-about-your-username/).
+- **Security**: this section allows you to manage the security settings of your account. For more information, please consult [this guide](https://docs.ovh.com/ie/en/customer/all-about-your-username/).
 - **Emails received**: in this section, you can find all of the emails which OVHcloud has sent you, apart from requests for assistance.
 - **Level of support** (only available for OVHcloud services): you can find more information on the level of support offered by OVHcloud in this section.
-- **User management**: this section allows you to manage your users. For more information, please consult this [guide](https://docs.ovh.com/ie/en/customer/managing-users/).
-- **My bills**: in this section, you can view your invoices, track payments made with your default payment method, and view your credit notes. For more information, please consult this [guide](https://docs.ovh.com/ie/en/billing/manage-ovh-bills/).
+- **User management**: this section allows you to manage your users. For more information, please consult [this guide](https://docs.ovh.com/ie/en/customer/managing-users/).
+- **My bills**: in this section, you can view your invoices, track payments made with your default payment method, and view your credit notes. For more information, please consult [this guide](https://docs.ovh.com/ie/en/billing/manage-ovh-bills/).
 - **My services**: in this section, you can view all of your services, contracts and SSH keys.
-- **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to this [guide](https://docs.ovh.com/ie/en/billing/manage-payment-methods/).
-- **My orders**: view your orders from this page. More information is available in this [guide](https://docs.ovh.com/ie/en/billing/managing-ovh-orders/).
-- **My contacts**: in this section, you can view and manage the contacts associated with your services. In the **My requests** tab, you will find contact change requests sent from your customer account, as well as service management requests received. For more information on managing your service contacts, please refer to this [guide](https://docs.ovh.com/ie/en/customer/managing-contacts/).
+- **Payment method**: in this section, you can access your current payment method, your prepaid account and OVHcloud vouchers. You will also find the option to add/delete a payment method. For further information on managing your payment methods, please refer to [this guide](https://docs.ovh.com/ie/en/billing/manage-payment-methods/).
+- **My orders**: view your orders from this page. More information is available in [this guide](https://docs.ovh.com/ie/en/billing/managing-ovh-orders/).
+- **My contacts**: in this section, you can view and manage the contacts associated with your services. In the **My requests** tab, you will find contact change requests sent from your customer account, as well as service management requests received. For more information on managing your service contacts, please refer to [this guide](https://docs.ovh.com/ie/en/customer/managing-contacts/).
 - **My support requests**: in this section, you can open/view all of your support tickets.
 
 ## Go further

@@ -58,13 +58,13 @@ Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de vo
 - IPV4 : cliquez sur les `...`{.action} à côté de cette option pour gérer votre IP.
 - Reverse : cliquez sur les `...`{.action} à côté de cette section pour entrer/modifier votre reverse DNS.
 
-**DNS secondaire** : configurez votre DNS secondaire ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/fr/dedicated/creer-dns-secondaire-serveur-dedie/).
+**DNS secondaire** : configurez votre DNS secondaire ici. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/creer-dns-secondaire-serveur-dedie/).
 
-**Backup Storage** (disponible uniquement sur les serveurs OVHcloud et les serveurs So you Start, y compris ceux de la ligne Eco) : commandez et configurez votre backup storage ici. Pour plus d'informations, consultez ce [guide](https://docs.ovh.com/ca/fr/dedicated/services-backup-storage/).
+**Backup Storage** (disponible uniquement sur les serveurs OVHcloud et les serveurs So you Start, y compris ceux de la ligne Eco) : commandez et configurez votre backup storage ici. Pour plus d'informations, consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/services-backup-storage/).
 
 **Interventions** : retrouvez ici les interventions en cours et passées sur votre serveur.
 
-**IPMI** (disponible uniquement sur les serveurs OVHcloud et certains serveurs So you Start, y compris ceux de la ligne Eco) : accédez ici à l'outil IPMI ou le KVM IP de votre serveur. Pour plus d'informations sur l'utilisation de cet outil, consultez ce [guide](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies).
+**IPMI** (disponible uniquement sur les serveurs OVHcloud et certains serveurs So you Start, y compris ceux de la ligne Eco) : accédez ici à l'outil IPMI ou le KVM IP de votre serveur. Pour plus d'informations sur l'utilisation de cet outil, consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/utilisation-ipmi-serveurs-dedies).
 
 **Tâches** : visualisez ici les tâches récentes effectuées sur votre serveur.
 
