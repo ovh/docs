@@ -1,20 +1,22 @@
 ---
-title: Getting started with PCAv2 (Alpha)
-slug: s3/getting-started-with-pcav2
-excerpt: This guide shows you how to manage your data with PCAv2
-section: Public Cloud Archive
+title: Premiers pas avec Cold Archive (Alpha) (EN)
+slug: s3/getting-started-with-cold-archive
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-cold-archive/'
+excerpt: This guide shows you how to manage your data with Cold Archive
+section: Cold Archive
 order: 200
 ---
 
-**Last updated 11th March 2022**
+**Last updated 15th March 2022**
 
 ## Objective
 
-PCAv2 is a service for long-term data storage.
+Cold Archive is a service for long-term data storage.
 When archived, every object of a bucket is stored on physical tapes.
 Restoration can take some time as it needs to be read on tapes.
 
-**This guide explains how to set up storage on tapes with PCAv2.**
+**This guide explains how to set up storage on tapes with Cold Archive.**
 
 > [!primary]
 >
@@ -22,7 +24,8 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with AWS CLI](https://docs.ovh.com/au/en/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+- [Getting started with AWS CLI](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/#utilisation-de-aws-cli)
+- `awscli` version >= 1.16.62
 
 ## Instructions
 
@@ -134,4 +137,4 @@ aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucke
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/>.
