@@ -1,12 +1,12 @@
 ---
 title: Récupérer les informations de statut de votre installation Nutanix
 slug: nutanix-cluster-information
-excerpt: Découvrez comment récupérer les informations essentielles sur le statut de votre cluster Nutanix.
+excerpt: Découvrez comment récupérer les informations essentielles sur le statut de votre cluster Nutanix
 section: Diagnostic
 order: 01
 ---
 
-**Dernière mise à jour le 10/03/2022**
+**Dernière mise à jour le 14/03/2022**
 
 ## Objectif
 
@@ -128,95 +128,85 @@ Faites défiler le menu de gauche jusqu'au sous-menu « Alerts and Notifications
 
 Cochez au minimum la case « Every Single Alert » afin de pouvoir recevoir le rapport NCC. Saisissez une adresse e-mail valide dans le champ prévu à cet effet puis cliquez sur `Save`{.action}.
 
-### Collecter Les logs pour un envoi au support NUTANIX
+### Collecter l'ensemble des logs du cluster
 
-Lors d'une ouverture d'incident au support Nutanix un numéro d'incident.
+Pour une analyse plus précise, il peut être nécessaire de récupérer les logs des nœuds et de **Prism Central**.
 
-Pour une analyse plus précise Le support Nutanix peut demander la récupération des logs des nœuds et de **Prism Central**.
+Il est possible de collecter les logs à partir de **Prism Element** mais nous vous recommandons davantage d'utiliser la ligne de commande sur le cluster ou sur **Prism central**.
 
-Jusqu'a présent il était possible de collecter les logs à partir de **Prism Element** mais le support Nutanix recommande de ne plus l'utiliser, il faut à la place utiliser la ligne de commande sur le cluster ou sur **Prism central**
+L'outil de récupération des logs (Logbay) est disponible sur chaque **CVM** d'un nœud et sur **Prism Central**. 
 
-Cet outil est sur chaque **CVM** d'un nœud et sur **Prism Central**. 
+Vous pouvez générer les logs et les récupérer en SSH.
 
+> [!primary]
+>
+> Pour plus de détails sur **Logbay** et **Putty**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
-* Générer les logs et les envoyer directement au Support Nutanix avec le numéro d'incident. 
-* Générer les logs et les récupérer en SSH pour les envoyer ultérieurement à partir du portail Nutanix avec le numéro d'incident.
+#### Collecter les logs concernant Prism Central
 
-#### Collecter les logs concernant **Prism Central**
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP de **Prism Central**.
 
-Connectez-vous en ssh avec la commande **ssh** sous linux ou avec l'outil **putty** sur l'adresse IP de **Prism Central** comme par exemple sous linux ```ssh nutanix@adresseipprismcentral```
+Par exemple sous Linux :
 
-##### Collecter et envoyer les logs au support Nutanix
+```ssh nutanix@prismcentralipaddress```
 
-Collectez et envoyez les Logs au support Nutanix
-```
-logbay collect --dst=ftp://nutanix -c casenumber
-```
+Collectez les logs :
 
-##### Collecter les logs pour les envoyer ultérieurement au support Nutanix
-
-Collectez les logs
-```
+```bash
 logbay collect 
 ```
 
-Affichez le nom du fichier généré
-```
+Affichez le nom du fichier généré :
+
+```bash
 ls /home/nutanix/data/logbay/bundles
 ```
 
-##### Récupération des logs collectés dans un fichier au format **zip**
+Récupérez ensuite les logs collectés dans un fichier au format .zip.<br>
+Pour cela, faites une copie des fichiers à partir d'un ordinateur sous Linux via la commande **scp**, ou sous Windows avec **pscp** :
 
-Faites une copie des fichiers à partir d'un ordinateur sous linux avec la commande **scp** ou sous Windows avec **pscp**. 
-```
-scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PC-adresseipprismcentral-CW.zip .
+```bash
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-generatedfile.zip
 nutanix@adresseipprismcentral's password:
-Saisissez le mot de passe
 ```
 
-#### Collecter tous les logs des nœuds à partir de l'adresse IP de de **Prism Element**
+#### Collecter tous les logs des nœuds à partir de l'adresse IP de Prism Element
 
-Connectez-vous en ssh avec la commande **ssh** sous linux ou avec l'outil **putty** sur l'adresse IP du cluster comme par exemple sous linux ```ssh nutanix@adresseiprismelement```
+Connectez-vous en SSH avec la commande **ssh** sous Linux, ou avec l'outil **Putty** sous Windows, sur l'adresse IP du cluster.
 
-##### Collecter les logs et les envoyer directement au support Nutanix
+Par exemple sous Linux :
 
-Collectez et envoyez tous les logs des nœuds au support avec le numéro d'incident.
-```
-allssh logbay collect --dst=ftp://nutanix -c casenumber
-```
+```ssh nutanix@prismelementipaddress```
 
-##### Collecter les logs pour les envoyer ultérieurement au support Nutanix
+Collectez tous les logs des nœuds :
 
-Collectez tous les logs des nœuds
-```
+```bash
 allssh logbay collect
 ```
 
-Affichez le nom de tous les fichiers générés
-```
+Affichez le nom de tous les fichiers générés :
+
+```bash
 allssh ls /home/nutanix/data/logbay/bundles
 ```
 
+Récupérez ensuite les logs collectés dans des fichiers au format .zip.<br>
+Pour cela, copiez chaque fichier généré sur chacun des nœuds :
 
-##### Récupération des logs collectés dans des fichiers au format **zip**
-
-Copiez chaque fichier généré sur chacun des nœuds
-```
-scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+```bash
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-generatednumber-PE-prismelementipaddress.zip
 nutanix@CVM1's password:
-Saisissez le mot de passe
-
-scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-adresseipprismelement.zip
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-prismelementipaddress.zip
 nutanix@CVMN's password:
-Saisissez le mot de passe
 ```
 
-Pour plus de détails sur **Logbay** et **putty** reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
- 
+> [!primary]
+> Utilisez l'outil [Plik](https://plik.ovhcloud.com/#/) pour téléverser vos fichiers .zip et nous les transmettre sous la forme de liens de téléchargement. Retrouvez plus d'informations sur l'utilisation de l'outil Plik sur [ce guide](https://docs.ovh.com/fr/customer/plik/).
+>
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
-[Lien vers Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+[Putty](https://www.putty.org/)
 
 [Documentation Nutanix sur Logbay](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 

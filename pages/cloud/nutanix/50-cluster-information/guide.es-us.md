@@ -4,11 +4,11 @@ slug: nutanix-cluster-information
 routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/nutanix-cluster-information/'
 excerpt: Find out how to retrieve essential information on the status of your Nutanix cluster
-section: Troubleshooting
+section: Diagnóstico
 order: 01
 ---
 
-**Last updated 17th February 2022**
+**Last updated 14th March 2022**
 
 ## Objective
 
@@ -130,6 +130,86 @@ Scroll to the "Alerts and Notifications" submenu on the left and click `Alert Em
 
 Check at least the "Every Single Alert" box to receive the NCC report. Enter a valid email address in the field, then click `Save`{.action}.
 
-## Go further
+### Collect all cluster logs
+
+For more accurate analysis, it may be necessary to retrieve logs from nodes and **Prism Central**.
+
+It is possible to collect logs from **Prism Element** but we recommend using the command line on the cluster or on **Prism Central**.
+
+The log recovery tool (Logbay) is available on each **CVM** of a node and on **Prism Central**. 
+
+You can generate the logs and retrieve them via SSH.
+
+> [!primary]
+>
+> For more information about **Logbay** and **Putty**, see the [Go further](#gofurther) section of this guide.
+
+#### Collect logs about Prism Central
+
+Connect to the IP address of **Prism Central** via SSH with the **ssh** command on Linux, or with the **Putty** tool on Windows.
+
+For example on Linux:
+
+```ssh nutanix@prismcentralipaddress```
+
+Collect logs:
+
+```bash
+logbay collect 
+```
+
+Display the name of the generated file:
+
+```bash
+ls /home/nutanix/data/logbay/bundles
+```
+
+Then retrieve the logs collected in a .zip file.<br>
+To do this, make a copy of the files from a computer on Linux via the **scp** command, or on Windows with **pscp**:
+
+```bash
+scp nutanix@adresseipprismcentral:/home/nutanix/data/logbay/bundlesNTNX-Log-generatedfile.zip
+nutanix@adresseipprismcentral's password:
+```
+
+#### Collect all node logs from Prism Element IP
+
+Log in on the cluster’s IP address via SSH with the **ssh** command on Linux, or with the **Putty** tool on Windows.
+
+For example on Linux:
+
+```ssh nutanix@prismelementipaddress```
+
+Collect all node logs:
+
+```bash
+allssh logbay collect
+```
+
+Display the names of all generated files:
+
+```bash
+allssh ls /home/nutanix/data/logbay/bundles
+```
+
+Then retrieve the logs collected in .zip files.<br>
+To do this, copy each generated file onto each node:
+
+```bash
+scp nutanix@CVM1:/home/nutanix/data/logbay/bundlesNTNX-Log-generatednumber-PE-prismelementipaddress.zip
+nutanix@CVM1's password:
+scp nutanix@CVMN:/home/nutanix/data/logbay/bundlesNTNX-Log-numerodemande-PE-prismelementipaddress.zip
+nutanix@CVMN's password:
+```
+
+> [!primary]
+> Use the [Plik tool](https://ca.plik.ovh/#/) tool to upload your .zip files and send them to us as download links. You can find more information on using the Plik tool in [this guide](https://docs.ovh.com/us/es/customer/plik/).
+>
+
+## Go further <a name="gofurther"></a>
+
+[Putty](https://www.putty.org/)
+
+[Logbay Nutanix documentation](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LM3BCAW)
 
 Join our community of users on <https://community.ovh.com/en/>.

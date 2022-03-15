@@ -22,7 +22,7 @@ Découvrez comment gérer des machines virtuelles dans un cluster Nutanix et com
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Être connecté à Prism Central sur le cluster
 
 ## Présentation de la gestion des machines virtuelles dans Prism Central
@@ -299,9 +299,9 @@ Le nom du nouveau nœud apparaîtra en face de **Host** si la  migration s'est b
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Présentation d'un cluster Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Présentation d'un cluster Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
 
-[Importation d'images dans Nutanix](https://docs.ovh.com/fr/nutanix/image-import/)
+[Importation d'images dans Nutanix](https://docs.ovh.com/ca/fr/nutanix/image-import/)
 
 [Documentation Nutanix sur AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 
