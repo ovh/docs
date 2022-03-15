@@ -1,7 +1,7 @@
 ---
 title: Gestion des alertes et des évènements
 slug: storage
-excerpt: 'Analyser et modifier les alertes et le évènements dans une cluster Nutanix'
+excerpt: 'Analyser et modifier les alertes et les évènements dans une cluster Nutanix'
 section: Premiers pas
 order: 07
 ---
@@ -37,7 +37,7 @@ Il est possible d'ajouter des alertes personnalisées pour augmenter la sensibil
 
 Les alertes peuvent être envoyées à des destinataires au travers de la messagerie électronique.
 
-L'état des actions qu'un utilisateur de **Prism Central**  execute apparait dans la liste des tâches avec son status *terminée,en cours ou en erreur*.
+L'état des actions qu'un utilisateur de **Prism Central** exécute apparait dans la liste des tâches avec son statut *terminée, en cours ou en erreur*.
 
 ## En pratique
 
@@ -77,7 +77,7 @@ Saisissez les noms des destinataires dans la zone de saisie `Email Recipients`{.
 
 Pour créer une alerte personnalisée avec des seuils de déclenchements différents
 
-Cliquez sur `Alerts Policies`{.action} et selectionnez `User Defined`{.action}
+Cliquez sur `Alerts Policies`{.action} et seléctionnez `User Defined`{.action}
 
 ![Create Alert 01](images/CreateAlert01.PNG){.thumbnail}
 
