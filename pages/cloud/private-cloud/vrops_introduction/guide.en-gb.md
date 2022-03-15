@@ -44,7 +44,6 @@ The Data Sources section lists the different spaces monitored by vROPS. By defau
 
 Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple Private Clouds.
 
-![adding an account](images/en04datasourcesb.png){.thumbnail}
 
 ### Environments
 
