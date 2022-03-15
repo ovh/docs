@@ -44,7 +44,7 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 >
 
 > [!warning]
-> Beachten Sie, dass die **Kimsufi Server** mit einem einzigen IPV6 Block (/128) bereitgestellt werden. In diesem Fall beachten Sie bitte [Anleitung](https://docs.ovh.com/de/vps/ipv6-konfigurieren/) für die Konfiguration der IPv6 auf einem Kimsufi Server.
+> Beachten Sie, dass die Kimsufi Server mit einem einzigen IPV6 Block (/128) bereitgestellt werden. In diesem Fall beachten Sie bitte die [Anleitung](https://docs.ovh.com/de/vps/ipv6-konfigurieren/) für die Konfiguration von IPv6 auf einem Kimsufi Server.
 >
 
 > [!api]
