@@ -6,6 +6,10 @@ section: Clientes So you Start & Kimsufi
 order: 1
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 14/03/2022**
 
 ## Objetivo
@@ -110,6 +114,6 @@ Veja aqui alguns guias adicionais que o ajudarão nos seus primeiros passos:
 [Proteger a minha conta OVHcloud e gerir as minhas informações pessoais](https://docs.ovh.com/pt/customer/saber_tudo_sobre_o_identificador_de_cliente/).<br>
 [Como gerir os contactos (gestores) dos serviços OVHcloud](https://docs.ovh.com/pt/customer/gestao_dos_contactos/).<br>
 [Criar chaves SSH](https://docs.ovh.com/pt/dedicated/criar-chaves-ssh-dedicadas/).<br>
-[Quais são os endereços IP do monitoring OVHcloud?](https://docs.ovh.com/pt/dedicated/monitoring-ip-ovh/)
+[Quais são os endereços IP do monitoring OVHcloud?](https://docs.ovh.com/pt/dedicated/monitoring-ip-ovh/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
