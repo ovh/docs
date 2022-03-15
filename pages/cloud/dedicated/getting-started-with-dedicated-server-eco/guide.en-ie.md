@@ -2,7 +2,7 @@
 title: Getting started with a Kimsufi, So You Start or Rise dedicated server
 slug: getting-started-dedicated-server-eco
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/'
+    canonical: 'https://docs.ovh.com/ie/en/dedicated/getting-started-dedicated-server/'
 excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
 section: 'Getting started'
 order: 2
@@ -18,8 +18,8 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) of the ranges Kimsufi, So You Start or Rise in your OVHcloud account
 - Administrative access (root) via SSH or remote desktop (Windows) to your server
 
 
@@ -29,7 +29,7 @@ When your dedicated server is first set up during the order process, you can sel
 
 ### Installing or reinstalling your dedicated server
 
-You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -39,7 +39,7 @@ To be able to install a customised image on the server, choose the third option 
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk or Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-gb/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> Some proprietary operating systems or platforms such as Plesk or Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-ie/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 >
 You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
 >
@@ -114,7 +114,7 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
-Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/gb/en/dedicated/windows-first-config-dedicated/).
+Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/ie/en/dedicated/windows-first-config-dedicated/).
 
 ### Restarting your dedicated server <a name="reboot"></a>
 
@@ -124,7 +124,7 @@ A reboot might become necessary in order to apply updated configurations or to f
 reboot
 ```
 
-However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
 
 ![Rebooting](images/rebooting-your-server.png){.thumbnail}
 
@@ -134,7 +134,7 @@ As explained in the “Objective” section of this guide, you are the administr
 
 ### OVHcloud Monitoring 
 
-You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (section **Service status**).
+You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (section **Service status**).
 
 ![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
@@ -146,7 +146,7 @@ You can find more information about OVHcloud Monitoring in [this guide](../monit
 
 > [!primary]
 >
-> Please note that [additional IP addresses](https://www.ovhcloud.com/en-gb/bare-metal/ip/) are not compatible with the **Kimsufi** range.
+> Please note that [additional IP addresses](https://www.ovhcloud.com/en-ie/bare-metal/ip/) are not compatible with the **Kimsufi** range.
 >
 
 #### Network bridging
@@ -174,7 +174,7 @@ OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addre
 
 ### Rescue mode
 
-For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](../ovh-rescue/).
 
