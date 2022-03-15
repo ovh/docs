@@ -43,6 +43,11 @@ Dans la pratique, un snapshot créé à l'instant T ne fera que quelques kilo oc
 
 ## Snapshot à H-1
 
+> [!warning]
+>
+>Le dossier .zfs n'est plus visible sur les nouvelles générations de datastores, vous pouvez cependant passer par le support technique pour demander la restauration d'une VM avec un snapshot horaire à H-1
+>
+
 Vous avez la possibilité de récupérer le snapshot ZFS de la dernière heure (H-1) depuis le vSphere Web Client HTML, puisque celui-ci est directement stocké dans vos datastores. 
 
 ### Récupérer un snapshot à H-1
