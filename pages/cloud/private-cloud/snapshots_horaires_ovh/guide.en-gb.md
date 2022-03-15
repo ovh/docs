@@ -47,7 +47,7 @@ In practice, a snapshot created at a point in time *T* will only take up kilobyt
 
 > [!warning]
 >
->The .zfs folder is not visible in the latest generation of datastores. You may still contact our support team to request a H-1 snapshot VM restore.
+>The .zfs folder is not visible in the latest generation of datastores. You may still contact our support team to request a H-1 VM snapshot restore.
 >
 
 You can retrieve the latest ZFS snapshot (H-1) from the vSphere Web Client, as it is placed directly on your datastores. 
