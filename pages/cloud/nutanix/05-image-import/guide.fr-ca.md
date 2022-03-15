@@ -4,7 +4,6 @@ slug: image-import
 excerpt: "Gestion des images ISO à partir de Prism Central"
 section: Premiers pas
 order: 05
-hidden: true
 ---
 
 **Dernière mise à jour le 10/03/2022**

@@ -4,7 +4,6 @@ slug: nutanix-change-vrack
 excerpt: "Découvrez comment modifier le vRack d'un cluster Nutanix"
 section: Réseau et sécurité
 order: 06
-hidden: true
 ---
 
 **Dernière mise à jour le 11/01/2022**

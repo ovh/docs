@@ -4,7 +4,6 @@ slug: nutanix-isolate-management-machines
 excerpt: Découvrez comment isoler les machines de gestion de la production
 section: Réseau et sécurité
 order: 07
-hidden: true
 ---
 
 **Dernière mise à jour le 11/01/2022**
