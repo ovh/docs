@@ -4,7 +4,6 @@ slug: ovh-gateway-documentation
 excerpt: Découvrez comment fonctionne la passerelle OVHgateway
 section: Réseau et sécurité
 order: 03
-hidden: true
 ---
 
 **Dernière mise à jour le 11/01/2022**

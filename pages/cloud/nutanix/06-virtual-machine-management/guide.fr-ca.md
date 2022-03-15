@@ -4,7 +4,6 @@ slug: virtual-machine-management
 excerpt: "Découvrez la gestion des machines virtuelles dans Prism Central"
 section: Premiers pas
 order: 06
-hidden: true
 ---
 
 **Dernière mise à jour le 10/03/2022**
