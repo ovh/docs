@@ -45,7 +45,7 @@ Diese Option erlaubt es Ihnen, die dedizierten Ressourcen Ihrer Public Cloud Ins
 
 #### Im OVHcloud Kundencenter
 
-Loggen Sie sich in Ihr OVHcloud Kundencenter ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihr OVHcloud Kundencenter ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Instances`{.action}.
 
 Klicken Sie in der Instanzenverwaltung auf `...`{.action} rechts neben der Instanz und wählen Sie `Aussetzen`{.action}.
 

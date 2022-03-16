@@ -32,7 +32,7 @@ Le protocole SFTP peut être utilisé pour transférer des fichiers via une conn
 
 Par défaut, un serveur utilisant un système d'exploitation GNU/Linux aura un accès SSH via le port 22. Cependant, vous avez peut-être déjà modifié ce port (par exemple en suivant [notre guide pour sécuriser un serveur dédié](../securiser-un-serveur-dedie/)).
 
-#### Si vous avez accès à votre serveur
+#### **Si vous avez accès à votre serveur**
 
 Dans l'interface graphique de FileZilla, entrez l'adresse IP de votre serveur dans le champ `Hôte`, ainsi que votre nom d'utilisateur et votre mot de passe dans les champs respectifs. En ce qui concerne le champ `Port`, entrez « 22 » ou le port que votre service SSH écoute si vous l'avez modifié.
 
@@ -48,7 +48,7 @@ La progression du transfert de données s'affiche alors en bas de l'interface de
 
 ![progression du transfert sftp](images/sftp_sd_02.png){.thumbnail}
 
-#### Si votre serveur est en mode rescue
+#### **Si votre serveur est en mode rescue**
 
 En mode rescue, vous devez d'abord monter votre partition. Pour ce faire, vous pouvez suivre les instructions indiquées dans [ce guide](../ovh-rescue/).
 
@@ -65,7 +65,7 @@ Si vous avez correctement créé le point de montage, les données se trouvent d
 
 ## Aller plus loin
 
-[Mode rescue](../ovh-rescue/)
+[Activer et utiliser le mode rescue](../ovh-rescue/)
 
 [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/)
 

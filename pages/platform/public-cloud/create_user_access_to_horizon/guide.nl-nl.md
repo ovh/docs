@@ -5,7 +5,7 @@ slug: een_toegang_tot_horizon_creeren
 legacy_guide_number: 1773
 excerpt: Ontdek hoe u uw Horizon-interface kunt openen
 section: Vanaf de Horizon-interface
-order: 1
+order: 01
 ---
 
 **Laatste update 17-03-2018**

@@ -230,16 +230,10 @@ Par exemple :
 Évitez d’utiliser la clause « HAVING » qui peut ralentir les recherches. Évitez également la clause « GROUP BY », à moins que son utilisation soit absolument nécessaire.
 
 
-#### SQL privé
-Si, en dépit de toutes les modifications et mesures d’optimisation que vous avez appliquées, la base de données est toujours lente, ou si un grand nombre de requêtes sont envoyées à la base de données, vous pourrez éventuellement opter pour notre forfait SQL privé pour disposer de plus de ressources.
-Vous trouvez une comparaison de nos offres sur [sur le site du produit](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/){.external}.
-
 ## Aller plus loin
 
 [Modifier la configuration d’un d’hébergement web](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/){.externe}
 
 [Créer une base de données sur son hébergement web](../creer-base-de-donnees/){.external}
-
-[Premiers pas avec le service SQL privé](../premiers-pas-avec-sql-prive){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

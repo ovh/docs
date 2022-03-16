@@ -36,7 +36,7 @@ El protocolo SFTP puede utilizarse para transferir archivos a través de una con
 
 Por defecto, un servidor que utilice un sistema operativo GNU/Linux tendrá acceso SSH a través del puerto 22. Sin embargo, puede que ya haya cambiado el puerto (por ejemplo, siguiendo [nuestra guía para proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)).
 
-#### Si tiene acceso al servidor
+#### **Si tiene acceso al servidor**
 
 En la interfaz gráfica de FileZilla, introduzca la dirección IP del servidor en el campo `Host`, así como su nombre de usuario y contraseña en los campos respectivos. En el campo `Puerto`, introduzca "22" o el puerto en el que escucha el servicio SSH si lo ha modificado.
 
@@ -52,7 +52,7 @@ El progreso de la transferencia de datos se muestra en la parte inferior de la i
 
 ![Progreso de la transferencia SFTP](images/sftp_sd_02.png){.thumbnail}
 
-#### Si el servidor está en modo de rescate
+#### **Si el servidor está en modo de rescate**
 
 En modo de rescate, es necesario montar primero la partición. Para ello, siga las indicaciones de [esta guía](../modo_de_rescate/).
 
@@ -69,7 +69,7 @@ Si ha creado correctamente el punto de montaje, los datos se encuentran en el di
 
 ## Más información
 
-[Modo de rescate](../modo_de_rescate/)
+[Activar y utilizar el modo de rescate](../modo_de_rescate/)
 
 [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
 

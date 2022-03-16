@@ -1,12 +1,12 @@
 ---
-title: How to manage your 1-click module?
+title: How to manage your 1-click module
 excerpt: Find out how to manage your 1-click module in the OVHcloud Control Panel
 slug: 1-click-module-management
 section: CMS
 order: 2
 ---
 
-**Last updated 21th December 2021**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -22,9 +22,9 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ## Requirements
 
-- a [Web Cloud hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that allows you to install a 1-click module (only the free [Start10M plan](https://docs.ovh.com/gb/en/hosting/activate-start10m/) does not provide this feature)
-- a 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/))
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that allows you to install a 1-click module (only the free [Start10M plan](https://docs.ovh.com/gb/en/hosting/activate-start10m/) does not provide this feature)
+- A 1-click module on your Web Hosting plan (If you did not install one yet, follow the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/))
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -36,7 +36,7 @@ Next, click on the `...`{.action} button to the right of the line related to you
 
 > [!primary]
 >
-> If your website does not display properly after this, please refer to the OVHcloud web hosting guides in the [Troubleshooting](https://docs.ovh.com/gb/en/hosting/) section.
+> If your website does not display properly after this, please refer to the OVHcloud Web Hosting guides in the [Troubleshooting](https://docs.ovh.com/gb/en/hosting/) section.
 >
 
 ### Access the administrator interface
@@ -58,7 +58,7 @@ In both cases, you will receive an email containing a link to reset your passwor
 
 > [!primary]
 >
-> **What can you do if you did not receive the email to reset the admin password of your website ?**
+> **What can you do if you did not receive the email to reset the admin password of your website?**
 >
 > Check the `Spam`{.action} and `Trash`{.action} folders in your mailbox.
 >
@@ -78,20 +78,20 @@ Then, click on the `...`{.action} button to the right of the line related to you
 
 > [!warning]
 >
-> Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/gb/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB key or external hard drive, following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/).
+> Backing up your data is an essential part of the [securing of your websites](https://docs.ovh.com/gb/en/hosting/secure-website/). We recommend you to download regularly your data backup on a local device, such as an USB drive or external hard drive, following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/export-a-website/).
 >
 
 #### Step 1: identify the database linked to your module <a name="step1"></a>
 
 To delete your 1-click module, you must first identify its database with **certainty**. Go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on `Web Cloud`{.action}, `Hosting plans`{.action}, on the concerned hosting plan then on the `Databases`{.action} tab.
 
-If you have only one database in this part of your control panel and you do not have a [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/private-sql/) offer, you can consider this to be your website's database.
+If you have only one database in this part of your control panel and you do not have a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) offer, you can consider this to be your website's database.
 
 Otherwise, go to the `Multisite`{.action} tab. Note the `Root folder` name: this is the directory where the files that make up your 1-click module are located on the FTP server.
 
 Then log on to the [FTP space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) of your hosting plan. Open the `Root folder` found earlier in the `Multisite`{.action} tab and browse to the configuration file for your module:
 
-- Wordpress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
+- WordPress: **"wp-config.php"** (the database name appears as **"DB_NAME"**).
 - Joomla!: **"configuration.php"** (the database name appears under **"public $db"**).
 - Drupal: **"settings.php"** (Go to the **"sites"** folder then open the **"default"** directory. The database name appears under the name **"database"**).
 - Prestashop: **"parameters.php"** (To find it, go to the **"app"** folder, then click on **"config"**. The name of your module’s database will appear as **"database_name"**).
@@ -118,7 +118,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 > If you have a [Personal Hosting](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
-To complete the removal of your module, in the `Web cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
+To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.
 
 Before attempting to install a new module again, verify that the previously requested removal tasks have been completed in the `Ongoing jobs`{.action} tab.
 
@@ -126,19 +126,19 @@ Before attempting to install a new module again, verify that the previously requ
 
 Secure your website by following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/secure-website/).
 
-Add CAPTCHA-type testing tools to the forms on your website.
+Add CAPTCHA-type verification tools to the forms on your website.
 
-Do not install plugins or templates that have not been recommended by the official website or community of your CMS:
+Do not install plugins or templates that have not been recommended by the official website or the community of your CMS:
 
-- [Wordpress](https://wordpress.org/){.external}
+- [WordPress](https://wordpress.org/){.external}
 - [Joomla!](https://community.joomla.org/){.external}
 - [Drupal](https://www.drupal.org/community){.external}
 - [Prestashop](https://www.prestashop.com/en){.external}
 
 ## Go further <a name="gofurther"></a>
 
-[Resolving the most common 1-click module errors](https://docs.ovh.com/gb/en/hosting/error-frequently-1-click-modules/).
+[Resolving the most common 1-click module errors](https://docs.ovh.com/gb/en/hosting/error-frequently-1-click-modules/)
 
-For specialised services (SEO, development, etc.), contact the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-Join our community on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

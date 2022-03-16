@@ -5,7 +5,7 @@ excerpt: Cómo reiniciar un VPS en modo de rescate.
 section: Diagnóstico y modo de rescate
 ---
 
-**Última actualización: 24 de noviembre de 2020**
+**Última actualización: 11/02/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -74,6 +74,8 @@ Una vez que haya iniciado el reinicio, una barra de progreso mostrará el progre
 >
 
 Ahora puede conectarse a su VPS por SSH utilizando las claves de acceso del modo de rescate. Una vez que haya activado el modo de rescate, reinicie el VPS en modo "normal" desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Más información
 

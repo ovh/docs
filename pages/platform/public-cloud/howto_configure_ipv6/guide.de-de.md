@@ -42,7 +42,7 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 
 ### Netzwerk-Informationen abrufen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, und klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Nachdem Sie links Ihr Projekt ausgewählt haben, wählen Sie das Menü `Instances`{.action} und klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Wählen Sie das Menü `Instances`{.action} und klicken Sie dann auf `...`{.action} und `Instanz-Details`{.action} neben der gewünschten Instanz.
 
 ![Public-Cloud-IPv6](images/pci2022.png){.thumbnail}
 

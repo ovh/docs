@@ -32,7 +32,7 @@ Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Si
 
 |E-Mails und E-Mail Pro|Exchange| 
 |---|---| 
-|Klicken Sie links im Menü auf `E-Mails`{.action} bzw. `E-Mail Pro`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf den Tab `Mehr`, dann auf `Verwaltung der Sicherheitseinstellungen`{.action}.|Klicken Sie links im Menü auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf `Sicherheit`{.action}.|
+|Klicken Sie auf `E-Mails`{.action} bzw. `E-Mail Pro`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf den Tab `Mehr`, dann auf `Verwaltung der Sicherheitseinstellungen`{.action}.|Klicken Sie auf `Microsoft`{.action}, dann auf `Exchange`{.action} und wählen Sie die betreffende Lösung aus. Klicken Sie auf `Sicherheit`{.action}.|
 |![Exchange Sicherheit](images/manage-security01.png){.thumbnail}|![Exchange Sicherheit](images/manage-security02.png){.thumbnail}|
 
 Befolgen Sie nun die Anleitung entsprechend den von Ihnen gewünschten Aktionen.

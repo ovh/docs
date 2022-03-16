@@ -31,7 +31,7 @@ Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) pe
 ## Procedura
 
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione “Web”, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra. Clicca sulla scheda`More+`{.action}nel menu orizzontale e seleziona `Footers`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Webcloud`{.action}, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}. Clicca sulla scheda`More+`{.action}nel menu orizzontale e seleziona `Footers`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 

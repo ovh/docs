@@ -29,24 +29,24 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers** in the left-hand sidebar. 
+You can activate rescue mode only from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**.
 
-Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.
+Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
-![Modify boot mode](images/rescue-mode-01.png){.thumbnail}
+![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
 
-In the popup window, tick **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
-Click on `Next`{.action} and `Confirm`{.action}.
+Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
-![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
+![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![Reboot the server](images/rescue-mode-02.png){.thumbnail}
 

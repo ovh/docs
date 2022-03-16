@@ -19,7 +19,7 @@ You must have one or more of the following options:
 - A [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes databases
 - A [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) database pack
 - A [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/) server
-- A Cloud Databases server
+- A [Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server
 
 ## Instructions
 
@@ -53,7 +53,7 @@ The date until which the customer can receive support for the product under the 
 After this date, the product is no longer supported and is considered obsolete.
 It applies at least 6 months after end of life announcement.
 
-#### **Period of obsolescence**
+#### Period of obsolescence
 
 It occurs after the end of support.
 

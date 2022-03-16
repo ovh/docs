@@ -2,11 +2,11 @@
 title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
 slug: backup-eine-datenbank-exportieren
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
-section: SQL Private
+section: CloudDB
 order: 4
 ---
 
-**Letzte Aktualisierung am 16.09.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -16,14 +16,14 @@ Ihre Datenbank enthält in der Regel wichtige Datensätze für den Betrieb Ihrer
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Datenbank über das Kundencenter sichern und exportieren
@@ -42,13 +42,13 @@ In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfüg
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Jetzt sichern`{.action}.
 
-![private-sql](images/private-sql-save01.png){.thumbnail}
+![clouddb](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Backup exportieren
 
 Klicken Sie auf `...`{.action}. rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
-![private-sql](images/private-sql-dl01.png){.thumbnail}
+![clouddb](images/private-sql-dl01.png){.thumbnail}
 
 Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung herunterladen`{.action}, um die Datei anzufordern.
 
@@ -58,7 +58,7 @@ Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rec
 
 In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Export durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-sichern-und-exportieren).
 
-##### 1\.1 MySQL oder MariaDB Datenbank über OVHcloud phpMyAdmin exportieren (nur SQL Private)
+##### 1\.1 MySQL oder MariaDB Datenbank über OVHcloud phpMyAdmin exportieren 
 
 Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](../datenbank-verbindung-auf-bdd/#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
 
@@ -66,13 +66,10 @@ Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank,
 
 Sie haben zwei mögliche Exportmethoden. Wenn Sie keine besonderen Bedürfnisse haben, empfehlen wir Ihnen die Verwendung des Schnellmodus im **SQL**-Format.
 
-![private-sql](images/private-sql-export01.png){.thumbnail}
+![clouddb](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 MySQL oder MariaDB Datenbank über die Kommandozeile exportieren
 
-> [!primary]
->
-> Für einen SQL Private Server ist diese Aktion ausschließlich mit [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) über ein OVHcloud Webhosting möglich.
 
 ```bash
 mysqldump --host=server --user=benutzername --port=port --password=passwort datenbankname > datenbankname.sql
@@ -80,9 +77,6 @@ mysqldump --host=server --user=benutzername --port=port --password=passwort date
 
 ##### 1\.3 MySQL oder MariaDB Datenbank über ein PHP Skript exportieren
 
-> [!primary]
->
-> Für einen SQL Private Server kann dieses Skript nur über ein OVHcloud Webhosting ausgeführt werden. 
 
 
 ```php
@@ -104,19 +98,12 @@ In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare 
  
 ##### 2\.1 PostgreSQL Datenbank über die Kommandozeile exportieren
 
-> [!primary]
->
-> Für einen SQL Private Server ist diese Aktion ausschließlich mit [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) über ein OVHcloud Webhosting möglich.
 
 ```bash
 pg_dump --host=server --port=port --user=benutzername --password=passwort datenbankname > datenbankname.sql
 ```
 
 ##### 2\.2 PostgreSQL Datenbank über ein PHP Skript exportieren
-
-> [!primary]
->
-> Für einen SQL Private Server kann dieses Skript nur über ein OVHcloud Webhosting ausgeführt werden. 
 
 ```php
 1. <?php echo "Ihre Datenbank wird gesichert......."

@@ -36,7 +36,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 ### Aggiungi un dominio <a name="ajoutdomaine"></a>
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella barra laterale sinistra del `server dedicati`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server da `Server dedicati`{.action}.
 
 Clicca sulla scheda `DNS secondaria`{.action} e poi sul pulsante `Aggiungi un dominio`{.action}.
 

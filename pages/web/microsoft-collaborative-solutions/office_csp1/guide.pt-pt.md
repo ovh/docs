@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/09/2021**
+**Última atualização: 24/02/2022**
 
 ## Objetivo
 
@@ -45,7 +45,7 @@ Será redirecionado para a página de encomenda para validar e pagar esta últim
 
 ### Ativar a sua licença
 
-Depois de encomendar a sua licença, é necessário ativá-la a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Web Cloud`, clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
+Depois de encomendar a sua licença, é necessário ativá-la a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Web Cloud`, clique em `Microsoft`{.action} e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
 
 Clique no botão `...`{.action} à frente da licença e, a seguir, em `Editar a conta`{.action}.
 
@@ -62,7 +62,7 @@ Uma vez a licença ativada, receberá um e-mail no endereço de contacto da sua 
 Este e-mail contém as informações necessárias para o download e a instalação da sua suite Microsoft 365, a saber, **o endereço de e-mail de ativação** e a **password**.
 
 >
-> Para definir a palavra-passe, deverá fazê-lo a partir da Área de Cliente. Na secção `Web Cloud`, clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
+> Para definir a palavra-passe, deverá fazê-lo a partir da Área de Cliente. Na secção `Web Cloud`, clique em `Microsoft`{.action} e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
 >
 > Clique no botão `...`{.action} à direita da licença em causa e, a seguir, em `Alterar a palavra-passe`{.action}.
 >
@@ -80,11 +80,30 @@ Aceda <https://portal.office.com/> e ligue-se ao endereço **de e-mail de ativa�
 
 ### Adicionar uma licença a um grupo existente
 
-Se pretender adicionar uma ou várias licenças ao seu grupo de licenças existentes, pode fazê-lo a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Web Cloud`, clique em `Microsoft`{.action} na barra à esquerda e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
+Se pretender adicionar uma ou várias licenças ao seu grupo de licenças existentes, pode fazê-lo a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Na secção `Web Cloud`, clique em `Microsoft`{.action} e, a seguir, em `Office`{.action} e selecione o grupo de licenças em causa.
 
 Clique no botão `Encomendar mais licenças`{.action} à direita. Indique o número e o tipo de licenças que pretende encomendar.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
+
+### Gerir as suas assinaturas <a name="managesubscriptions"></a>
+
+###### Eliminar uma licença num grupo de licenças
+
+No separador `Licenças` {.action" do seu grupo de licenças, clique no botão `...`{.action} à direita da licença a rescindir, e clique em `Eliminar conta` {.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Os consumos do mês em curso serão faturados no final deste último.
+
+###### Rescindir o grupo de licenças
+
+Para rescindir o seu grupo de licenças Microsoft Office 365 CSP1, clique no seu nome (canto superior direito) da Área de Cliente OVHcloud e, a seguir, no botão `Gestão dos serviços` {.action}. A seguir, clique no botão `...`{.action} à direita do grupo de licenças a rescindir, depois por `Rescindir`{.action}.<br>
+Indique as razões do seu pedido de rescisão e clique em `Validar` {.action.
+
+> [!primary]
+> Os consumos do mês em curso serão faturados no final deste último.
 
 ## Saiba mais
 

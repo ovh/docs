@@ -6,7 +6,7 @@ section: Firewall Cisco ASA
 order: 01
 ---
 
-**Dernière mise à jour le 17/12/2021**
+**Dernière mise à jour le 01/02/2022**
 
 ## Résumé
 
@@ -39,6 +39,6 @@ Est concerné par cette fin de vie :
 
 ## Options de migration et services de remplacement
 
-OVHcloud vous recommande l’utilisation du firewall de l’OS de votre serveur dédié : Linux iptable ou Microsoft Windows Firewall Microsoft.
+OVHcloud vous recommande l’utilisation du firewall de l’OS de votre serveur dédié : Linux Iptables ou Microsoft Windows Firewall.
 
-OVHcloud mettra prochainement un guide à disposition, accessible depuis [cette page](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/#configurer-le-pare-feu-interne-iptables), pour aider à la configuration du firewall Linux iptable et de Microsoft Windows firewall Microsoft.
+Consultez nos guides pour [configurer le pare-feu sous Linux avec Iptables](https://docs.ovh.com/fr/dedicated/firewall-iptables/) ou pour [configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/).

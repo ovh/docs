@@ -5,7 +5,7 @@ excerpt: Saiba como instalar um CMS com os módulos 1 clique da OVH
 section: CMS
 ---
 
-**Última atualização: 25/01/2018**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 
@@ -26,7 +26,7 @@ Os Módulos 1 clique permitem instalar um CMS, uma ferramenta para criar um site
 
 Um CMS (Content Management System) é uma interface que permite criar e editar um site de forma muito simples. Com um CMS, toda a gente pode criar e gerir um site. Cada CMS tem vantagens ou funcionalidades diferentes, adequadas às necessidades de cada tipo de site (e.g. blogue, loja online, site normal). Com um CMS pode criar um site personalizado. Basta escolher um dos temas (designs) disponíveis, e adicionar texto, imagens....
 
-A OVH disponibiliza 4 CMS que podem ser instalados com os módulos 1 clique. Antes de avançar com esta operação, escolha o CMS. De seguida, siga as instruções indicadas neste manual. Se precisar de ajuda, consulte [a nossa página de comparação entre CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/).
+A OVHcloud disponibiliza 4 CMS que podem ser instalados com os módulos 1 clique. Antes de avançar com esta operação, escolha o CMS. De seguida, siga as instruções indicadas neste manual. Se precisar de ajuda, consulte [a nossa página de comparação entre CMS](https://www.ovhcloud.com/pt/web-hosting/uc-cms-comparison/).
 
 Para usar um CMS não incluído nos Módulos 1 clique, deverá instalá-lo manualmente. Este CMS terá que ser compatível com as características da sua oferta (e.g. versão PHP). Veja as várias ofertas [aqui](https://www.ovhcloud.com/pt/web-hosting/)).
 
@@ -54,7 +54,7 @@ Se tiver dúvidas, pode consultar o guia (em francês) [Como usar meu alojamento
 
 Depois de selecionar o domínio, selecione a instalação simples ou a instalação avançada:
 
-- Na instalação simples (opção predefinida), o sistema OVH instala o CMS e envia um e-mail com os dados para aceder e gerir o módulo. Esta é a forma mais simples e mais rápida para instalar um módulo.
+- Na instalação simples (opção predefinida), o sistema OVHcloud instala o CMS e envia um e-mail com os dados para aceder e gerir o módulo. Esta é a forma mais simples e mais rápida para instalar um módulo.
 - Já a instalação avançada permite configurar vários aspetos da instalação do CMS. Nesta opção deverá introduzir alguns dados associados ao funcionamento do CMS e da base de dados (e.g. seleção da base de dados, localização, informações de ligação, pasta de instalação, idioma, ID de cliente do administrador)
 
 #### Instalação simples
@@ -82,8 +82,8 @@ Agora tem que preencher a informação relativa à base de dados. Existem vária
 
 - a base de dados já está criada no seu alojamento: selecione uma das bases de dados indicadas na lista e introduza as informações solicitadas;
 - a base de dados não está criada no seu alojamento: siga as instruções para a criar uma base de dados. Introduza a informação solicitada atrás;
-- a base de dados foi criada na instância SQL Privé ou CloudDB: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
-- a base de dados foi criada noutro alojamento Web OVH: selecione `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
+- a base de dados foi criada na instância CloudDB: selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A instância e o alojamento web devem estar alojadas no mesmo datacenter;
+- a base de dados foi criada noutro alojamento Web OVHcloud : selecione-a `Base de dados externa ao seu alojamento web`{.action} e introduza as informações solicitadas. A base de dados e o alojamento web devem estar alojados no mesmo datacenter;
 
 Concluída esta etapa, clique no botão `Seguinte`{.action}.
 
@@ -140,8 +140,6 @@ Se precisar de ajuda para usar as funcionalidades de gestão do seu site, aceda 
 [Como usar o meu alojamento com vários sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} (versão PT disponível em breve).
 
 [Gestão de uma base de dados a partir de um alojamento partilhado](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external}
-
-Veja a nossa [oferta SQL Privé](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external}
 
 Veja a nossa [oferta CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}
 

@@ -39,8 +39,7 @@ Es posible configurar sus cuentas Exchange en el cliente de correo que usted uti
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
-> en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
 ### Añadir la cuenta
@@ -78,8 +77,7 @@ Si necesita realizar alguna operación que pueda provocar la pérdida de los dat
 >
 > En nuestro ejemplo, utilizamos el nombre del servidor: ex**?**.mail.ovh.net. Debe reemplazar el "? " por el número que designa el servidor del servicio Exchange.
 > 
-> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}.
-> en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
+> Encontrará esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en el apartado `Microsoft`{.action}/`Exchange`{.action}. El nombre del servidor puede verse en el recuadro **Conexión** de la pestaña `Información General`{.action}.
 > 
 
 Si su cuenta de correo ya está configurada y debe acceder a los parámetros de la cuenta para modificarlos:

@@ -4,7 +4,7 @@ slug: resize-an-instance
 excerpt: "Find out how to resize an instance in the Horizon interface"
 legacy_guide_number: 1778
 section: Horizon
-order: 8
+order: 11
 ---
 
 **Last updated 22nd November 2021**

@@ -29,11 +29,11 @@ For example, your email address is **john.smith@mydomain.ovh** and you create an
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to the `Web Cloud` section. Then choose the menu section coresponding to your email solution:
 
-- **Exchange**: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}, and select the service concerned. Click on the `Email accounts`{.action} tab.
+- **Exchange**: Open `Microsoft`{.action}, then `Exchange`{.action}, and select the service concerned. Click on the `Email accounts`{.action} tab.
 
-- **Email Pro**: Open `Professional Email`{.action} in the services bar on the left-hand side, select the service concerned, then click on the `Email accounts`{.action} tab.
+- **Email Pro**: Open `Professional Email`{.action}, select the service concerned, then click on the `Email accounts`{.action} tab.
 
-- **Emails** (MXplan): Open `Emails`{.action} in the services bar on the left-hand side, select the service concerned, then click on the `Email accounts`{.action} tab.
+- **Emails** (MXplan): Open `Emails`{.action}, select the service concerned, then click on the `Email accounts`{.action} tab.
 
 In the table that appears, you will see an `Alias` column.
 

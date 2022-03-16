@@ -68,7 +68,6 @@ Il existe deux chemins pour accéder au suivi d'une migration unique :
 
 La page qui s'affiche vous permet de suivre l'avancement de votre migration. Un message vous indique si le processus va débuter, est en cours ou est terminé. Selon cet état, plusieurs interactions sont possibles :
 
-
 - `Stopper le processus `{.action} : Permet d'annuler la migration. Les éléments déjà migrés seront conservés sur le compte de destination.
 - `Supprimer les éléments migrés`{.action} : Permet de supprimer des éléments déjà migrés vers le compte de destination. Vous pouvez effacer des éléments à partir d'un point de synchronisation précis.
 - `Synchroniser`{.action} : Permet de récupérer des nouveaux éléments non migrés lors d'une précédente synchronisation entre le compte source et le compte de destination. Nous considérons cette action comme une migration des éléments manquants sur le compte de destination par rapport au compte source.
@@ -77,7 +76,7 @@ La page qui s'affiche vous permet de suivre l'avancement de votre migration. Un 
 
 #### Lancer la migration
 
-Depuis la page <https://omm.ovh.net/>, dans l'onglet `PST / ICS / VCF`{.action} au dessus, selon la migration que vous souhaitez réaliser, cliquez sur `Nouvelle migration PST`{.action}, `Nouvelle migration ICS`{.action} ou `Nouvelle migration VCF`{.action}.
+Depuis la page <https://omm.ovh.net/>, dans l'onglet `PST / ICS / VCF`{.action} au dessus, cliquez sur `Nouvelle migration PST / ICS / VCF`{.action}.
 
 Ici, vous devez être en possession du fichier comportant le contenu que vous souhaitez migrer sur le compte e-mail.
 

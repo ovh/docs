@@ -3,7 +3,7 @@ title: 'Dostęp do panelu Horizon'
 slug: tworzenie_dostepu_do_interfejsu_horizon
 excerpt: 'Aktywacja dostępu do panelu Horizon'
 section: 'Zarządzanie w interfejsie Horizon'
-order: 1
+order: 01
 ---
 
 **Ostatnia aktualizacja: 14 listopada 2019**

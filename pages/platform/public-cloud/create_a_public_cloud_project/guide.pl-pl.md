@@ -26,8 +26,6 @@ Utworzenie projekt jest pierwszym krokiem we wdrażaniu [instancji Public Cloud]
 
 Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), i kliknij menu `Public Cloud`{.action}. Następnie kliknij przycisk `Utwórz Twój pierwszy projekt Public Cloud`{.action}.
 
-![first connection](images/firstconnection.png){.thumbnail}
-
 Możesz teraz dodać *voucher*, jeśli go posiadasz. Możesz wykorzystać tylko *voucher* przypisany do Twojego oddziału OVHcloud.
 
 > [!warning]

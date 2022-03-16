@@ -32,12 +32,12 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
  
 ## W praktyce
 
-> [!warning]
+> [!primary]
 >
-> Poniżej stosujemy przykładową nazwę serwera: pro**?**.mail.ovh.net. Chcesz zastąpić "?" cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
-> Zapoznaj się z tą cyfrą w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Web Cloud`{.action}, a następnie w sekcji `E-mail Pro`{.action} w lewej kolumnie. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
-> 
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action}. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+>
 
 ### Dodaj konto
 

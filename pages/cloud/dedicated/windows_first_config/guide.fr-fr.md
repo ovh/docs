@@ -1,50 +1,63 @@
 ---
-title: Première configuration Windows Server (Pare-feu)
+title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
-excerpt: Decouvrez ici comment activer la connexion au Bureau a distance via KVM si celle-ci est desactivee.
-section: Diagnostic et mode Rescue
+routes:
+    canonical: 'https://docs.ovh.com/fr/vps/windows-first-config/'
+excerpt: Découvrez comment activer la connexion au bureau à distance et la réponse ICMP
+section: Premiers pas
 ---
 
+**Derniére mise à jour le 18/01/2022**
+
+## Objectif
+
+Après une nouvelle installation d'un système d'exploitation Windows Server sur un serveur dédié, l'accès à distance et la réponse ICMP (Internet Control Message Protocol) peuvent parfois être désactivés.
+
+**Ce guide explique comment configurer Windows afin de réactiver l'ICMP et d'autoriser les connexions via le protocole Remote Desktop Protocol.**
 
 ## Prérequis
-Lors de l'installation d'un Windows Server 2012, 2012 R2 ou 2016 il est possible que la connexion au Bureau à distance soit désactivée, ainsi que la réponse au protocole ICMP. Si tel est le cas, ce guide vous indique où faire les modifications.
 
-Pour cela, il vous sera nécessaire d'avoir :
+- Une distribution Windows installée sur un [serveur dédié OVHcloud](https://www.ovhcloud.com/fr/bare-metal/).
+- Avoir accès à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-- Un serveur installé sous Windows Server 2012, 2012 R2 ou 2016.
-- Un accès à votre espace client OVH.
+## En pratique
 
+### Étape 1 : accès au KVM
 
-## Procedure
+Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](../utilisation-ipmi-serveurs-dedies/#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
 
-### Étape 1 &#58; Acceder au KVM
-Afin d'accéder au KVM, vous devez accéder à votre `Espace client OVH`{.action}, vous rendre sur l'onglet `Dédié`{.action}, puis sur votre serveur.
+### Étape 2 : terminer l'installation de Windows
 
-Il vous faudra ensuite vous rendre sur la section `IPMI`{.action} en haut de votre espace client, puis lancer le KVM via l'application JAVA.
+Une fois la session KVM établie, les écrans de configuration initiale s'affichent. Vous devez configurer ici votre **pays/région**, la **langue de Windows** et votre **disposition de clavier**. Une fois que vous avez effectué cette opération, cliquez sur `Next`{.action}.
 
+![KVM](images/setup-03.png){.thumbnail}
 
-![KVM](images/windows1.png){.thumbnail}
+Dans le deuxième écran, entrez un mot de passe pour votre compte Administrateur et confirmez-le, puis cliquez sur `Finish`{.action}.
 
-Vous aurez alors un accès "clavier-souris virtuel" sur votre serveur.
+![KVM](images/setup-04.png){.thumbnail}
 
+Windows appliquera vos paramètres, puis affichera l'écran de connexion. Cliquez sur le bouton `Send CtrlAltDel`{.action} dans le coin supérieur droit pour vous connecter.
 
-### Étape 2 &#58; Premiers parametrages de Windows
-Sur l'écran KVM, vous constaterez le démarrage de Windows. Il vous faudra alors configurer la langue du clavier Windows, ainsi que le mot de passe **Administrator**.
+![KVM](images/setup-05.png){.thumbnail}
 
+Entrez le mot de passe que vous avez créé pour votre compte Administrateur et cliquez sur la flèche.
 
-![Langue](images/windows2.png){.thumbnail}
+![KVM](images/setup-06.png){.thumbnail}
 
+La configuration initiale est terminée. Une fois connecté, vous devez modifier les paramètres nécessaires du pare-feu Windows.
 
-![Mdp](images/windows3.png){.thumbnail}
+### Étape 3 : modifier le pare-feu Windows
 
-
-### Étape 3 &#58; Modification du Pare-feu Windows
-Une fois l'installation terminée, il faut aller dans `Outils d'Administration`{.action}, puis dans `Pare-feu Windows avec sécurité avancée`{.action}.
-
+Ouvrez les `Outils d'administration`{.action} du panneau de configuration `Système and Sécurité`{.action} et double-cliquez sur `Pare-feu Windows avec sécurité avancée`{.action}.
 
 ![Admin](images/windows4.png){.thumbnail}
 
-Enfin, il vous sera nécessaire d'activer l'ICMP et la connexion au Bureau à distance. *(clic droit -> Autoriser la règle)*
+Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau à distance) respectives. Faites un clic droit sur la règle et sélectionnez `Autoriser la règle`{.action} dans le menu contextuel.
 
+![Activé](images/windows5.png){.thumbnail}
 
-![Active](images/windows5.png){.thumbnail}
+Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

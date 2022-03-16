@@ -1,90 +1,121 @@
 ---
-title: Tworzenie migawki
+title: Tworzenie migawki (EN)
 slug: tworzenie-migawki
-excerpt: Przywróć maszyny wirtualne do wcześniejszego stanu za pomocą migawek
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/create-a-snapshot/'
+excerpt: Return to a previous VM state using snapshots
 legacy_guide_number: '7766547'
-section: Zarządzanie maszynami wirtualnymi
+section: Zarządzanie wirtualnymi maszynami
 order: 08
 ---
 
-**Ostatnia aktualizacja z dnia 25-06-2020**
+**Last updated 19th January 2022**
 
-## Wprowadzenie 
+## Objective
 
-Możesz wykonać kopię migawkową maszyny wirtualnej, aby przywrócić ją do najnowszej migawki lub też go usunąć.
+VMWare offers the ability to take snapshots so you can save and possibly go back to a VM's previous state.
 
-**Niniejszy przewodnik wyjaśnia działanie migawek**
+**This guide explains how to execute these tasks**
 
-## Wymagania początkowe
+## Requirements
 
-- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
-- Połączenie z klientem vSphere HTML
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
-## W praktyce
+## Instructions
 
-Migawki są przydatne, gdy musisz wielokrotnie przywracać maszynę wirtualną do tego samego stanu, lecz nie chcesz tworzyć wielu jej kopii. Funkcja ta pozwala tworzyć punkty przywracania. 
+### Take a Snapshot
 
-Dzięki temu możesz zachować pierwotny stan maszyny wirtualnej przed zmianą jej sposobu działania. 
+A snapshot allows you to capture a VM state.<br>
+It offers a layer of protection for your VM prior to executing changes as it offers the ability to come back to that state if needed.
 
-Mimo że migawki tworzą tylko „chwilowy” obraz dysku, zaleca się regularne usuwanie migawek. Przechowywanie licznych migawek zajmuje dużo przestrzeni dyskowej, powodując spadek wydajności maszyny wirtualnej.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right-click it and, in the `Snapshot`{.action} menu, select `Take Snapshot`{.action}.
+
+![TAKE](images/en01take.png){.thumbnail}
+
+By default, the snapshot will be named after the current date and time. You may edit it to your preference.<br>
+A description may also be added for reference.<br>
+If your VM is running, the snapshot process offers two options:
+
+- Snapshot the virtual machine's memory. This will save the VM Ram state, helping with certain applications that may not have commited changes to disk. It should also make your snapshot crash-resistant, meaning it can be reverted to without powering off the VM.
+- Quiesce guest file system (Needs VMware Tools installed). This will bring your VM to a state that is backup suitable: clearing buffers, committing changes to disks...<br>
+
+If your VM is not running, those options are greyed out.<br>
+*We recommend taking snapshots of a turned off VM and if it is not possible, preferably use the Quiesce option over the memory snapshot for added security.*
+
+Click `OK`{.action} when ready.
+
+![SNAP](images/en02snap.png){.thumbnail}
+
+Your snapshot is done.
+
+### Manage Snapshots
+
+You can take multiple snapshots of a single VM repeating the process explained above.<br>
+With time, snapshots will consume resources, especially storage, to be maintained and possibly will affect VM performance.<br>
+Below is how to revert, clear or consolidate snapshots.
+
+#### Revert to Snapshot
+
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
+
+![MANAGE](images/en03manage.png){.thumbnail}
+
+Check the snapshot tree and select the one you wish to go back to.<br>
+Click on `Revert To`{.action}.
+
+![REVERT](images/en04revert.png){.thumbnail}
+
+Confirm by clicking `OK`{.action}.
+
+![CONFIRM](images/en05confirm.png){.thumbnail}
+
+You can click `Done`{.action} as your VM has been reverted to the point chosen.
 
 > [!primary]
-> 
-> Odradza się używania migawek jako metody tworzenia kopii zapasowych maszyny wirtualnej.
-> 
+>
+> If you only have a single snapshot or wish to revert to the last taken snapshot, you can speed up the process by choosing `Revert to Latest Snapshot`{.action} in the `Snapshots`{.action} menu.
 
-Migawka umożliwia zapisanie stanu maszyny wirtualnej z momentu uruchomienia tej opcji. Migawka zawiera (w zależności od wyboru):
+#### Clear Snapshot
 
-- Stan wszystkich dysków maszyny wirtualnej.
-- Zawartość pamięci maszyny wirtualnej.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Manage Snapshots`{.action}.
 
-> [!warning]
-> 
-> Nie można zmieniać wielkości dysku podczas wykonywania kopii migawkowej maszyny wirtualnej.
-> 
+![MANAGE](images/en03manage.png){.thumbnail}
 
-### Wykonywanie migawki
+Check the snapshot tree and select the one you wish to delete.<br>
+Click on `Delete`{.action}.<br>
+*You can also clear all snapshots by clicking `Delete All`{.action}.*
 
-Naciśnij prawym przyciskiem myszy Twoją maszynę wirtualną, wybierz opcję `Migawki`{.action}, a następnie `Wykonaj migawkę...`{.action}:
+![DELETE](images/en06delete.png){.thumbnail}
 
-![creer snapshot](images/snapshot01.png){.thumbnail}
+Confirm by clicking `OK`{.action}.
 
-Możesz teraz nazwać tę migawkę, dodać do niego opis oraz określić, czy chcesz dołączyć do migawki także pamięć maszyny wirtualnej.
+![CONFIRM](images/en07confirm.png){.thumbnail}
 
-Możesz teraz wykonać migawkę z pamięcią RAM lub bez pamięci RAM wykorzystywanej przez maszynę wirtualną. Jeśli wybierzesz opcję z pamięcią RAM, czas wykonania zadania będzie dłuższy, ale nie trzeba będzie wykonywać restartu podczas przywracania kopii. 
+You can click `Done`{.action} as your snapshot was cleared.
 
-W drugim przypadku (bez kopii pamięci RAM) zadanie zostanie wykonane szybciej, ale konieczny będzie restart maszyny wirtualnej w przypadku przywracania danych.
+> [!primary]
+>
+> If you wish to clear all snapshots, you can speed up the process by choosing `Delete All Snapshots`{.action} in the `Snapshots`{.action} menu.
 
-![configurer snapshot](images/snapshot02.png){.thumbnail}
+#### Consolidate snapshots
 
-### Zarządzanie migawkami
+Snapshot consolidation is useful when snapshot disks fail to compress after a delete operation. After consolidation, redundant disks are removed, improving virtual machine performance and saving storage space.
 
-Wszystkie migawki są dostępne w managerze kopii migawkowych. Naciśnij prawym przyciskiem myszy swoją maszynę wirtualną, wybierz opcję `Migawki`{.action}, a następnie `Zarządzaj migawkami`{.action}:
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM, right click on it and in the `Snapshots`{.action} menu, select `Consolidate`{.action}.
 
-![gerer snapshots](images/snapshot03.png){.thumbnail}
+![CONSOLIDATE](images/en08consolidate.png){.thumbnail}
 
-### Usuwanie migawki
+Confirm by clicking `YES`{.action}.
 
-W managerze migawek wybierz migawkę, którą chcesz usunąć, a następnie kliknij `Usuń`{.action}.
+![CONFIRM](images/en09confirm.png){.thumbnail}
 
-Można usunąć wszystkie migawki maszyny wirtualnej za pomocą jednej operacji, klikając przycisk `Usuń wszystko`{.action}.
+You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 
-### Przywracanie migawki
+## Go further
 
-W managerze migawek wybierz migawkę, którą chcesz przywrócić, a następnie kliknij `Przywróć`{.action}.
-
-### Konsolidowanie migawek
-
-Obecność nadmiarowych dysków może obniżać wydajność maszyn wirtualnych.
-
-Konsolidacja migawek jest przydatną funkcją, gdy dyski migawek nie mogą się skompresować po operacji usunięcia. Po konsolidacji nadmiarowe dyski są usuwane, co poprawia wydajność maszyn wirtualnych i pozwala oszczędzić przestrzeń dyskową.
-
-Aby przeprowadzić konsolidację, naciśnij prawym przyciskiem myszy maszynę wirtualną, wybierz opcję `Migawki`{.action}, a następnie `Konsoliduj`{.action}:
-
-![consolidate snapshots](images/consolidate.png){.thumbnail}
-
-Więcej informacji na ten temat znajdziesz w [dokumentacji VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
-
-## Sprawdź również
-
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.

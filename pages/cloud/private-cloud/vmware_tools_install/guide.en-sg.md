@@ -6,7 +6,7 @@ section: Virtual machine management
 order: 6
 ---
 
-**Last updated 15th October 2020**
+**Last updated 1st February 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ VMware Tools improve the performance of a virtual machine and enable many of its
 
 ## Requirements
 
-- Web client access (HTML5)
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg))
 
 ## Instructions
 

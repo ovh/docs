@@ -48,9 +48,7 @@ Per diventare effettiva, la modifica deve essere accettata da entrambi gli accou
 
 ## Conferma
 
-Per confermare l’operazione, clicca sul nome del tuo account in alto a destra, seleziona `Il tuo account`{.action} e poi `I tuoi contatti`{.action}:
-
-![change-contacts](images/controlpanel.png){.thumbnail}
+Per confermare l’operazione, clicca sul nome del tuo account in alto a destra, seleziona `Il tuo account`{.action} e poi `I tuoi contatti`{.action}.
 
 Dallo Spazio Cliente di entrambi i contatti, accedi alla sezione Le mie richieste:
 

@@ -23,8 +23,8 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- an OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 
 ## Instructions
@@ -36,9 +36,9 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Network Firewall protects the IPs that are associated with a server. As a result, you need to configure each IP separately. You cannot configure the server as a whole.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
-![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
+![Enabling the Firewall Network](images/firewall_creation2022.png){.thumbnail}
 
 You will then be asked to confirm.
 
@@ -65,7 +65,7 @@ You can set up to **20 rules per IP**.
 >
 
 
-### Configure the Network Firewall.
+### Configure the Network Firewall
 
 To add a rule, click on `Add a rule`{.action}:
 
@@ -111,7 +111,7 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 >
 
 In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
-In the `Bare Metal Cloud`{.action} menu, click on the `IP`{.action} section on the left-hand sidebar. Click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

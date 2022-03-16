@@ -2,21 +2,21 @@
 title: 'Configurar o servidor de bases de dados'
 slug: configurar-otimizar-servidor-de-bases-de-dados
 excerpt: 'Saiba como configurar e otimizar o servidor de bases de dados'
-section: 'SQL Privado'
+section: 'CloudDB'
 order: 6
 ---
 
-**Última atualização: 16/09/2020**
+**Última atualização: 09/03/2022**
 
 ## Objetivo
 
-Os servidores de bases de dados SQL Privado e Cloud Databases oferecem-lhe a possibilidade de agir sobre os parâmetros globais do seu servidor. Além disso, tem a hipótese de visualizar a atividade do servidor. 
+Os servidores Cloud Databases oferecem-lhe a possibilidade de agir sobre os parâmetros globais do seu servidor. Além disso, tem a hipótese de visualizar a atividade do servidor. 
 
 **Saiba como configurar e otimizar o servidor de bases de dados.**
 
 ## Requisitos
 
-- Dispor de um [serviço de alojamento SQL Privado](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -76,29 +76,28 @@ Depois de obter o número do cluster em que está o seu alojamento, consulte a p
 Para modificar a solução do servidor de bases de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
-![sql-privado](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Escolha o volume de RAM desejado e clique no botão `Seguinte`{.action}. Poderá então escolher a duração desejada.
 
 > [!primary]
 >
 > O prazo restante até à <b>expiração</b> será calculado
-> proporcionalmente. Este cálculo vai basear-se na data de expiração do servidor SQL
-> Privado e não na data da encomenda.
+> proporcionalmente. Este cálculo vai basear-se na data de expiração do servidor CloudDB e não na data da encomenda.
 > 
 
 Após a validação dos contratos, será reencaminhado para a ordem de encomenda a fim de pagar pela alteração. Esta última produzirá efeitos em algumas horas.
 
 > [!warning]
 >
->  Se atualmente dispõe de um servidor SQL Privado gratuito no âmbito do seu
+>  Se atualmente dispõe de um servidor CloudDB gratuito no âmbito do seu
 > alojamento Performance, a modificação do serviço vai fazê-lo perder a
 > gratuidade.
 > 
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor SQL Privado. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor CloudDB. 
 
 #### Instância MySQL e MariaDB
 
@@ -106,7 +105,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No quadro **Configuração geral do MySql**, vai encontrar a configuração definida atualmente para a base de dados. Pode alterá-la diretamente e clicar em `Aplicar`{.action}.
 
-![sql-privado](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir**: Diretório de ficheiros temporários. **/dev/shm** corresponde à memória RAM da instância. **/tmp** corresponde ao disco rígido da instância.
 - **MaxAllowedPacket**: Tamanho máximo dos pacotes.
@@ -117,6 +116,7 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 - **MaxConnexions**: Número de conexões simultâneas autorizadas no servidor de bases de dados.
 - **Wait_timeout**: Tempo (em segundos) que o servidor aguardará atividade numa conexão não interativa antes de a fechar.
 - **Event_scheduler**: Permite acionar a execução de pedidos programados diretamente no servidor MySQL.
+- **sql_mode**: A opção **sql_mode** afeta a sintaxe SQL e as verificações de validação de dados efetuadas por MySQL/MariaDB. Apenas disponível para MariaDB.
 
 > [!primary]
 > Quando encontra um erro no seu site a indicar **«Too many connections»**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
@@ -125,9 +125,22 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 
 > [!primary]
 >
-> Tmpdir:
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: O servidor de bases de dados vai alocar para este diretório metade da sua memória RAM, tendo em vista um melhor desempenho.
+>
 > \- /tmp: O servidor vai alocar no disco rígido um espaço ilimitado para este diretório, mas o desempenho será muito inferior. Recomendamos que utilize este diretório apenas para operações pontuais pesadas.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo predefinido de MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo predefinido de MariaDB 10.2 e superior.
+>
+> Recomendamos que utilize sempre o modo predefinido, exceto se a sua base de dados tiver sido atualizada a partir de uma versão com um modo predefinido diferente da versão atual.
 >
 
 Efetue as modificações necessárias e clique em `Confirmar`{.action}.
@@ -143,7 +156,7 @@ Não é possível modificar a configuração de uma instância PostgreSQL.
 
 No entanto, pode ativar extensões nas bases de dados. Para isso, aceda ao separador `Bases de dados` e clique no ícone da tabela junto à base de dados, sob a coluna **«Extensões»**.
 
-![sql-privado](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Alterar a versão MySQL, PostgreSQL ou MariaDB do servidor de bases de dados
 
@@ -153,22 +166,22 @@ A versão atual surge na linha **«Versão»**.
 
 Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
-![sql-privado](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **Como saber a versão exata de PostgreSQL que utilizo?**
 
 Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica **«SQL»**, e a seguir em `Lançar`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Como saber a versão exata de mySQL ou MariaDB que utilizo?**
+#### **Como saber a versão exata de mySQL ou MariaDB que utilizo?**
 
 Introduza este comando no phpMyAdmin, rubrica **«SQL»**, e a seguir em `Executar`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -194,7 +207,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
 
-![sql-privado](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Acesso aos logs «Slow Query»
 
@@ -208,7 +221,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
 
-![sql-privado](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](../partilhado_guia_de_utilizacao_do_filezilla/){.external}.
 
@@ -221,7 +234,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
 
-![sql-privado](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Acompanhar o número de conexões por minuto
 
@@ -231,11 +244,11 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
 
-![sql-privado](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Otimizar as bases de dados
 
- Aconselhamos que faça a manutenção das suas bases de dados para que o seu desempenho permaneça elevado. Um desempenho elevado significa que as informações contidas na base são devolvidas rapidamente ao script que as solicita. Nesse sentido, as bases de dados precisam de ser estruturadas e otimizadas.
+Aconselhamos que faça a manutenção das suas bases de dados para que o seu desempenho permaneça elevado. Um desempenho elevado significa que as informações contidas na base são devolvidas rapidamente ao script que as solicita. Nesse sentido, as bases de dados precisam de ser estruturadas e otimizadas.
 
 #### **Indexar a base de dados**
 
@@ -243,8 +256,8 @@ Para aumentar a rapidez de pesquisa no seguimento de um pedido, é necessário i
 
 Por exemplo: costuma fazer pesquisas de pessoas relativamente à cidade. Indexe o campo «cidade» com o pedido seguinte:
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `cidade` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Limpar a base de dados**
 
@@ -276,7 +289,7 @@ Nos pedidos SQL, verifique se seleciona apenas aquilo de que precisa e, principa
 
 Por exemplo:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 
@@ -289,5 +302,3 @@ Por exemplo, evite utilizar **«HAVING»**; isto torna os pedidos mais pesados. 
 [Lista dos endereços IP dos clusters e alojamentos web](../lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
-
-

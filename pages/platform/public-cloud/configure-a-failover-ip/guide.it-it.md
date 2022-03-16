@@ -32,7 +32,7 @@ Potrai configurare indirizzi IP Failover sulle tue istanze, ad esempio se ospiti
 
 ## Procedura
 
-Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'accedere alla tua istanza via SSH o tramite una sessione di connessione all'interfaccia grafica utente (RDP per un'istanza Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (amministratore/sudo).
+Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'accedere alla tua istanza via SSH o tramite una sessione di connessione all'interfaccia grafica utente (VNC per un'istanza Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (amministratore/sudo).
 
 > [!primary]
 >
@@ -168,7 +168,11 @@ sudo netplan apply
 
 Ripeti questa procedura per ogni indirizzo IP Failover.
 
-### Windows Server 2016
+### Windows Server (2016)
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Public Cloud`{.action} e seleziona il tuo progetto.
+
+Apri `Instances`{.action} nel menu a sinistra. Clicca sul nome della tua istanza. Accedi alla scheda `Console VNC`{.action}.
 
 #### Step 1: verifica la configurazione di rete
 

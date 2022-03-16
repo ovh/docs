@@ -2,21 +2,21 @@
 title: 'Configurer votre serveur de bases de données'
 slug: configurer-optimiser-son-serveur-de-base-de-donnees
 excerpt: 'Découvrez comment configurer et optimiser votre serveur de base de données'
-section: 'SQL Privé'
+section: 'CloudDB'
 order: 6
 ---
 
-**Dernière mise à jour le 24/08/2020**
+**Dernière mise à jour le 09/03/2022**
 
 ## Objectif
 
-Les serveurs de bases de données SQL Privé et Cloud Databases vous donnent la possibilité d'agir sur les paramètres globaux de votre serveur. Vous pouvez également visualiser l'activité de votre serveur. 
+Les serveurs de bases de données Cloud Databases vous donnent la possibilité d'agir sur les paramètres globaux de votre serveur. Vous pouvez également visualiser l'activité de votre serveur. 
 
 **Découvrez comment configurer et optimiser votre serveur de bases de données.**
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -76,29 +76,25 @@ Après avoir récupéré le numéro du cluster sur lequel est situé votre hébe
 Pour modifier l'offre de votre serveur de bases de données, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 Dans l'onglet **« Informations générales »** qui est affiché par défaut, cliquez sur `...`{.action} à droite de la mention « RAM » puis sur `Changer la quantité de la RAM`{.action}  afin d'accéder à la commande de ce basculement.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Choisissez la quantité de RAM souhaitée puis cliquez sur le bouton `Suivant`{.action}. Vous pouvez ensuite choisir la durée souhaitée.
 
 > [!primary]
 >
-> Un report au prorata sera effectué s'il vous reste quelques mois avant
-> l'expiration. Ce prorata sera basé sur la date d'expiration du serveur SQL
-> Privé et non sur celle du bon de commande.
+> Un report au prorata sera effectué s'il vous reste quelques mois avant l'expiration. Ce prorata sera basé sur la date d'expiration du serveur CloudDB et non sur celle du bon de commande.
 > 
 
 Après validation des contrats, vous serez redirigé vers le bon de commande afin de régler cette modification. Celle-ci sera effective sous quelques heures.
 
 > [!warning]
 >
->  Si vous disposez actuellement d'un serveur SQL Privé gratuit grâce à votre
-> hébergement Performance, la modification de l'offre vous fera perdre sa
-> gratuité.
+>  Si vous disposez actuellement d'un serveur CloudDB gratuit grâce à votre hébergement Performance, la modification de l'offre vous fera perdre sa gratuité.
 > 
 
 ### Modifier la configuration de mon serveur de bases de données
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur SQL privé. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur CloudDB. 
 
 #### Instance MySQL et MariaDB
 
@@ -106,7 +102,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Vous trouverez dans le cadre **« Configuration générale de MySql »** la configuration actuellement définie pour votre base de données. Vous pouvez directement modifier celle-ci, puis cliquer sur `Appliquer`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir** : Répertoire des fichiers temporaires. **/dev/shm** correspond à la mémoire RAM de l'instance. **/tmp** correspond au disque dur de l'instance.
 - **MaxAllowedPacket** : Taille maximum des paquets.
@@ -117,17 +113,30 @@ Vous trouverez dans le cadre **« Configuration générale de MySql »** la conf
 - **MaxConnexions :** Nombre de connexions simultanées autorisées sur le de bases de données.
 - **Wait_timeout** : Temps en secondes pendant lequel le serveur attend l'activité sur une connexion non interactive avant de la fermer.
 - **Event_scheduler** : Permet de déclencher l’exécution de requêtes programmées directement dans le serveur MySQL.
+- **sql_mode** : L'option **sql_mode** affecte la syntaxe SQL prise en charge, et les vérifications de validation des données effectués par MySQL/MariaDB. Uniquement disponible pour MariaDB.
 
 > [!primary]
-> Lorsque vous rencontrez une erreur sur votre site indiquant **« Too many connections»**, cela est dû au dépassement du nombre de connexions simultanées sur votre de bases de données. 
-> Vous pouvez alors augmenter la variable **« MaxConnections »** si elle n'est pas à son maximum.
+> Lorsque vous rencontrez une erreur sur votre site indiquant **« Too many connections»**, cela est dû au dépassement du nombre de connexions simultanées sur votre de bases de données.Vous pouvez alors augmenter la variable **« MaxConnections »** si elle n'est pas à son maximum.
 >
 
 > [!primary]
 >
-> Tmpdir :
+> <b>Tmpdir</b> :
+>
 > - /dev/shm : Le serveur de bases de données allouera la moitié de sa mémoire RAM à ce répertoire pour plus de performances.
+>
 > - /tmp : Le serveur allouera sur son disque dur un espace illimité pour ce répertoire, mais cela sera beaucoup moins performant. Nous vous conseillons d'utiliser ce répertoire uniquement pour les opérations occasionnelles lourdes.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b> :
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Mode par défaut de MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Mode par défaut de MariaDB 10.2 et supérieur.
+>
+> Nous vous recommandons de toujours utiliser le mode par défaut, sauf si votre base de données a été mis à jour depuis une version ayant un mode par défaut différent de la version actuelle.
 >
 
 Effectuez les modifications nécessaires puis cliquez sur `Confirmer`{.action}.
@@ -143,7 +152,7 @@ Il n'est pas possible de modifier la configuration d'une instance PostgreSQL.
 
 Vous pouvez néanmoins activer des extensions sur vos bases de données. Pour cela, dirigez-vous-vous dans l'onglet `Bases de données`, cliquez sur l'icône de tableau de votre base de données sous la colonne **« Extensions »**
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Changer la version MySQL, PostgreSQL ou MariaDB du serveur de bases de données
 
@@ -153,14 +162,14 @@ La version actuelle apparaît à la ligne **« Version »**.
 
 Pour modifier cette version, cliquez sur `Modifier la version`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **Comment connaitre la version exacte de PostgreSQL que j'utilise ?**
 
 Entrez cette commande dans phpPgAdmin en cliquant sur **votre base de données**, rubrique **« SQL »**, puis en cliquant sur `Lancer`{.action} :
 
-```
+```sql
 select version();
 ```
 
@@ -168,7 +177,7 @@ select version();
 
 Il faut pour cela entrer cette commande dans phpMyAdmin, rubrique **« SQL »**, puis cliquer sur `Exécuter`{.action} :
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -194,7 +203,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dirigez-vous dans l'onglet `Métriques` de votre serveur de bases de données. Vous trouverez le graphique **« Statistiques du temps d'exécution des requêtes »**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Accès aux logs « Slow Query »
 
@@ -208,7 +217,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dans l'onglet `informations générales`, vous trouverez la section **« SFTP »** dans le cadre **« Informations de connexion »**
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Pour vous y connecter en **SFTP**, vous pouvez le faire via le logiciel Filezilla en vous aidant du guide: [ « Utilisation du logiciel FileZilla avec votre hébergement »]( ../mutualise-guide-utilisation-filezilla/){.external}.
 
@@ -221,7 +230,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez le graphique **« Statistiques de mémoire RAM utilisée »**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Suivre le nombre de connexions par minute
 
@@ -231,11 +240,11 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez le graphique **« Statistiques du total des connexions par minute »**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Optimiser vos bases de données
 
- Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Ce que l'on entend par performante, c'est le fait que les informations contenues dans la base de données soient le plus rapidement retournées au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
+Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Ce que l'on entend par performante, c'est le fait que les informations contenues dans la base de données soient le plus rapidement retournées au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
 
 #### **Indexer la base de données**
 
@@ -243,8 +252,8 @@ Pour augmenter la rapidité des recherches lors d'une requête, il faut mettre u
 
 Exemple : vous faites régulièrement une recherche de personne par rapport à la ville. Indexez le champ « ville » avec la requête suivante :
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `ville` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Purger la base de données**
 
@@ -276,7 +285,7 @@ Dans vos requêtes SQL, vérifiez que vous ne sélectionnez que ce dont vous ave
 
 Exemple :
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 
@@ -289,5 +298,3 @@ Exemple :
 [Liste des adresses IP des clusters et hebergements web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
-

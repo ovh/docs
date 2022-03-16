@@ -2,7 +2,7 @@
 title: MongoDB - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Line Interface (CLI)
 slug: mongodb/connect-cli
-section: MongoDB
+section: MongoDB - Guides
 order: 300
 ---
 
@@ -157,6 +157,7 @@ Once connected, you can manage your MongoDB instance with built-in MongoDB Shell
 Please follow the official MongoDB documentation.
 
 To verify:
+
 - *db* : will indicate on which database you are
 - *use myNewDatabase* will switch to another database (will create one if not existing)
 - *db.myCollection.insertOne( ... )* will insert data in your collection

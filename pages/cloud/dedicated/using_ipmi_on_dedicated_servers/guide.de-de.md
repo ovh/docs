@@ -32,7 +32,7 @@ Die Verbindung zur IPMI kann über mehrere Methoden hergestellt werden: Java-App
 
 - Eine dritte Methode, die nur für neuere Server verfügbar ist, erlaubt die Verwendung des KVM-Tools auch über einen Webbrowser.
 
-Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} im linken Menü auf `Dedicated Server`{.action}, wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI`{.action}.
+Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} und wählen Sie unter `Dedicated Server`{.action} Ihren Server aus. Klicken Sie dann auf den Tab `IPMI`{.action}.
 
 ### Über Java Applet verbinden <a name="applet-java"></a>
 
@@ -40,7 +40,7 @@ Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installie
 
 Klicken Sie im `IPMI`{.action}-Bereich Ihres OVHcloud Kundencenters auf `Mit einem Java-Applet (KVM)`{.action}.
 
-![IPMI Java initiiert](images/java_ipmi_initiate_2020.png){.thumbnail}.
+![IPMI Java initiiert](images/java_ipmi_initiate_2022.png){.thumbnail}.
 
 Laden Sie die `kvm.jnlp`-Datei herunter, wenn Sie dazu aufgefordert sind, und starten Sie sie.
 
@@ -70,7 +70,7 @@ Klicken Sie dann auf `Zur Konsole (KVM)`, um die Konsole in Ihrem Browser zu öf
 
 Wir empfehlen, sich via Java-Applet einzuloggen; Sie können IPMI aber auch als Serial over LAN (SoL) verwenden. Klicken Sie `Mit Ihrem Browser (SoL)`{.action} im Bereich `IPMI`{.action} Ihres Kundencenters.
 
-![Aktivierung der IPMI Integritätserklärung](images/sol_ipmi_activation_2020.png){.thumbnail}
+![Aktivierung der IPMI Integritätserklärung](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,11 +81,11 @@ Wir empfehlen, sich via Java-Applet einzuloggen; Sie können IPMI aber auch als 
 
 Es kann vorkommen, dass die IPMI nicht mehr reagiert. Sie können dann zunächst einen Test durchführen, indem Sie auf `IPMI-Test `{.action} klicken. Die Ergebnisse der Diagnose werden unten auf der Seite angezeigt.
 
-![IPMI-Test](images/ipmi_test_2020.png){.thumbnail}
+![IPMI-Test](images/ipmi_test_2022.png){.thumbnail}
 
 Wenn alles normal ist, wie in hier verwendeten Beispiel, dann haben Sie wahrscheinlich lokale Probleme (Internetverbindung, lokales Gerät). Wenn die IPMI-Funktion tatsächlich auf Schwierigkeiten stößt, können Sie sie neu starten, indem Sie auf `IPMI neu starten`{.action} klicken.
 
-![IPMI-Test](images/ipmi_reboot_2020.png){.thumbnail}
+![IPMI-Test](images/ipmi_reboot_2022.png){.thumbnail}
 
 Der Neustart des IPMI dauert einige Minuten.
 
@@ -133,7 +133,7 @@ Um von Ihrer ISO Datei aus zu starten müssen Sie auf das BIOS zugreifen und die
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
 > [!primary]
-> Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media` {.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
+> Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media`{.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
 >
 
 Klicken Sie auf die `ENTF` Taste während des Startvorgangs, um zum BIOS-Interface zu gelangen. Sie können auch die Taste `F11` drücken und auf das BIOS zugreifen, indem Sie die Option `Enter Setup`{.action} auswählen.

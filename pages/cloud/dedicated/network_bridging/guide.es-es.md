@@ -40,17 +40,19 @@ Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de c
 
 ### Asignar una dirección MAC virtual
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y haga clic en el menú `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `IP`{.action} y seleccione su dirección IP Failover.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione la sección `IP`{.action}.
 
-![IP Failover](images/virtual_mac_01_2020_1.png){.thumbnail}
+El menú desplegable “Servicio” le permite seleccionar únicamente las IP Failover.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Haga clic en los `...`{.action} y, seguidamente, en `Añadir una dirección MAC virtual`{.action}.
 
 ![Añadir una MAC virtual (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Seleccione "OVH" en la lista desplegable "Tipo", escriba un nombre en el campo "Nombre de la máquina virtual" y haga clic en `Aceptar`{.action}.
+Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "Nombre de la máquina virtual" y haga clic en `Aceptar`{.action}.
 
-![Añadir una MAC virtual (2)](images/virtual_mac_03.png){.thumbnail}
+![Añadir una MAC virtual (2)](images/addvmac2.png){.thumbnail}
 
 ### Establecer la dirección de la puerta de enlace
 

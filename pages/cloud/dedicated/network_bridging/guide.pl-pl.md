@@ -40,17 +40,19 @@ Dla tego przykładu użyjemy następujących wartości w naszych przykładach ko
 
 ### Przypisz wirtualny adres MAC
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Bare Metal Cloud`{.action}. Następnie kliknij menu `IP`{.action} na pasku usług po lewej stronie, po czym w tabeli kliknij Twój adres IP Failover.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action}, a następnie wybierz sekcję `IP`{.action}.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+W rozwijanym menu “Service” możesz wybrać tylko adresy IP Failover.
 
-Kliknij `...`{.action}, a następnie Dodaj wirtualny `adres MAC`{.action}.
+![manage IPs](images/manageIPs.png){.thumbnail}
+
+Kliknij `...`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
 
 ![Dodaj wirtualny adres MAC (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Wybierz "OVH" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej maszyny", a następnie kliknij `Zatwierdź`{.action}.
+Wybierz "ovh" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej maszyny", a następnie kliknij `Zatwierdź`{.action}.
 
-![Dodaj wirtualny adres MAC (2)](images/virtual_mac_03.png){.thumbnail}
+![Dodaj wirtualny adres MAC (2)](images/addvmac2.png){.thumbnail}
 
 ### Określ adres bramy
 

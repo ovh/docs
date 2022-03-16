@@ -32,7 +32,7 @@ Para acceder a la política de seguridad de su servicio de correo, conéctese al
 
 |Correo electrónico|Exchange| 
 |---|---| 
-|Haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el servicio correspondiente. Haga clic en `Más`{.action} y seleccione `Editar la política de seguridad`{.action}.|En la columna izquierda, haga clic en `Microsoft`{.action}, después en `Exchange`{.action}, y seleccione el servicio correspondiente. Haga clic en `Más +` y seleccione `Editar la política de seguridad`{.action}|
+|Haga clic en `Correo electrónico`{.action}y seleccione el servicio correspondiente. Haga clic en `Más`{.action} y seleccione `Editar la política de seguridad`{.action}.| Haga clic en `Microsoft`{.action}, después en `Exchange`{.action}, y seleccione el servicio correspondiente. Haga clic en `Más +` y seleccione `Editar la política de seguridad`{.action}|
 |![Política de seguridad Exchange](images/manage-security01.png){.thumbnail}|![Política de seguridad Exchange](images/manage-security02.png){.thumbnail}|
 
 Continúe leyendo esta guía en el apartado correspondiente a la acción que desee realizar:

@@ -29,8 +29,8 @@ These failover IP addresses can only be migrated to instances in the same projec
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section, and select the Public Cloud project of your choice.<br>
-In the left-hand menu, click on `IP Failover`{.action} in the 'Network' section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project.
+In the left-hand menu, click on `Failover IP`{.action} in the 'Network' section.
 
 Then click on the `Actions`{.action} button and choose `Buy Cloud failover IPs`{.action}.
 

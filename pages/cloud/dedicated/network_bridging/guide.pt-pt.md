@@ -40,17 +40,19 @@ Para este exemplo, utilizaremos os seguintes valores nos nossos exemplos de cód
 
 ### Atribuir um endereço MAC virtual
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Bare Metal Cloud`{.action}. A seguir, clique no menu `IP`{.action} na barra à esquerda e, em seguida, procure o seu endereço IP Failover na tabela.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e depois na secção `IP`{.action}.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+O menu pendente “Service” permite-lhe selecionar apenas os endereços IP Failover.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Clique nas `...`{.action} e, a seguir, em `Adicionar um endereço MAC virtual`{.action}.
 
 ![Adicionar um MAC virtual (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Selecione "OVH" na lista pendente "Tipo", introduza um nome no campo "Nome da máquina virtual" e clique em `Validar`{.action}.
+Selecione "ovh" na lista pendente "Tipo", introduza um nome no campo "Nome da máquina virtual" e clique em `Validar`{.action}.
 
-![Adicionar um MAC virtual (2)](images/virtual_mac_03.png){.thumbnail}
+![Adicionar um MAC virtual (2)](images/addvmac2.png){.thumbnail}
 
 ### Determinar o endereço da gateway
 

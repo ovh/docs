@@ -4,7 +4,7 @@ slug: configure_user_access_to_horizon
 legacy_guide_number: 1773
 excerpt: Find out how to access the Horizon interface
 section: Horizon
-order: 1
+order: 01
 ---
 
 **Last updated 14th November 2019**
@@ -25,15 +25,13 @@ Horizon is the graphical management interface for OpenStack. Certain features ca
 
 ### Create an OpenStack user account
 
-First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the `arrow button`{.action} next to your project name in the top-left corner of the screen.
-
-![Add user](images/select_project.png){.thumbnail}
+To access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and open your `Public Cloud`{.action} project.
 
 Under "Project management" on the left-hand sidebar, select `Users & Roles user`{.action}.
 
 ![User roles](images/users_roles.png){.thumbnail}
 
-Clique the `Create User`{.action} button to generate the following pop-up.
+Click the `Create User`{.action} button to generate the following pop-up.
 
 ![Add user](images/adduser.png){.thumbnail}
 

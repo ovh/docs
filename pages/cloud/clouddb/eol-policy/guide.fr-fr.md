@@ -27,11 +27,9 @@ Disposer d'une ou plusieurs des offres suivantes:
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Cloud Databases Publics, instances SGBD dédiées joignables via le réseau public ([voir les annonces](https://docs.ovh.com/fr/clouddb/clouddb-eos-eol/)).
+- Les services CloudDB, instances SGBD dédiées joignables via le réseau publique ou via le réseau Web Hosting  ([voir les annonces](../clouddb-eos-eol/)).
 
-- Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol)).
-
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol)).
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/){.external})..
 
 ### Définitions et lignes directrices de la politique de fin de vie
 
@@ -53,7 +51,7 @@ La date jusqu'à laquelle le client peut bénéficier d’une assistance pour le
 Après cette date, le produit ne fait plus l'objet de services d'assistance et est considéré comme obsolète.
 S'applique au minimum 6 mois après l'annonce de fin de vie.
 
-#### **Période d'obsolescence**
+#### Période d'obsolescence
 
 Elle survient après la fin de support.
 

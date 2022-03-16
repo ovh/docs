@@ -27,7 +27,7 @@ Le service Hosted Exchange permet de bénéficier d’adresses e-mail profession
 
 Une fois votre service Hosted Exchange créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} dans la barre de services à gauche. Cliquez enfin sur le nom du service Hosted Exchange concerné.
+Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Hosted Exchange concerné.
 
 > [!primary]
 >

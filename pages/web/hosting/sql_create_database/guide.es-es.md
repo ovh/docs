@@ -6,7 +6,7 @@ section: 'Bases de datos'
 order: 1
 ---
 
-**Última actualización: 23/06/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 
@@ -106,7 +106,7 @@ Para consultar las copias de seguridad disponibles y su fecha de creación, haga
 
 **Demasiadas conexiones**
 
-Las bases de datos de los planes de hosting están limitadas a 30 conexiones simultáneas (variable del sistema *max_connections*). Las peticiones SQL deben optimizarse para evitar este fallo. Si el problema persiste, deberá valorar medidas alternativas como migrar a una base de datos privada SQL o [mejorar su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/). 
+Las bases de datos de los planes de hosting están limitadas a 30 conexiones simultáneas (variable del sistema *max_connections*). Las peticiones SQL deben optimizarse para evitar este fallo. Si el problema persiste, deberá valorar medidas alternativas como migrar a una base de datos [CloudDB](https://www.ovh.es/cloud/cloud-databases/) o [mejorar su plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/). 
 
 **Errores de conexión o «not found»**
 

@@ -3,7 +3,7 @@ title: Dodawanie bloku IP
 slug: dodawanie-bloku-ip
 excerpt: Jak zamówić blok IP dla swojej usługi Private Cloud
 legacy_guide_number: '7766457'
-section: Funkcje OVH
+section: Funkcjonalności OVHcloud
 order: 01
 ---
 

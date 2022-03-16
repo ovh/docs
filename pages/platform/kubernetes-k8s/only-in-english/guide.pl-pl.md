@@ -7,8 +7,8 @@ section: Getting started
 
 ## Dokumentacja dostępna wyłącznie w języku angielskim
 
-Dokumentacja dotycząca produktu [OVHcloud Managed Kubernetes Service](https://www.ovh.pl/public-cloud/kubernetes/) nie jest w tym momencie dostępna w Twoim języku.
+Dokumentacja dotycząca produktu [OVHcloud Managed Kubernetes Service](https://www.ovhcloud.com/pl/public-cloud/kubernetes/) nie jest w tym momencie dostępna w Twoim języku.
 Skorzystaj z dokumentacji [w języku angielskim](https://docs.ovh.com/gb/en/kubernetes/).
 Znajdziesz w niej przewodniki, tutoriale oraz kompletną dokumentację dotyczącą dostępnych funkcji i rozpoznanych ograniczeń.
 
-Kliknij [tutaj](https://docs.ovh.com/gb/en/kubernetes/), aby zapoznać się z dokumentacją  [OVHcloud Managed Kubernetes](https://www.ovh.pl/public-cloud/kubernetes/).
+Kliknij [tutaj](https://docs.ovh.com/gb/en/kubernetes/), aby zapoznać się z dokumentacją  [OVHcloud Managed Kubernetes](https://www.ovhcloud.com/pl/public-cloud/kubernetes/).

@@ -122,7 +122,7 @@ iface18 inet static
 
 #### Voraussetzungen
 
-- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
+- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account. Der IP-Adressblock muss auf das vRack zeigen.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
@@ -138,6 +138,10 @@ Folgende Schritte sind notwendig:
 
 - Erstellung eines Aggregats
 - Erstellung der mit dem Aggregat verbundenen Bridge
+
+Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem OVHcloud Kundencenter und öffnen Sie `vRack`{.action}.
+
+Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
 
 #### Eine verwendbare IP-Adresse konfigurieren
 

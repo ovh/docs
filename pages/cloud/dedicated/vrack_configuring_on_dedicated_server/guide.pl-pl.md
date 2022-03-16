@@ -32,7 +32,7 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 
 ### Etap 1: dodaj serwery do usługi vRack
 
-Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz menu `vRack`{.action} w menu po lewej stronie.
+Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz menu `vRack`{.action}.
 
 Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij każdy z serwerów, które chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 

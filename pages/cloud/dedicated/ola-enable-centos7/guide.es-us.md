@@ -22,11 +22,11 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la 
 ## Procedimiento
 
 Nuestros NIC en OLA tienen una configuración privada-privada, por lo que no es posible acceder al servidor por SSH. Así pues, es necesario utilizar la herramienta IPMI para acceder al servidor.
-<br>Para ello, en primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Bare Metal Cloud`{.action}, haga clic en `Servidores dedicados`{.action} en el menú de la izquierda y seleccione el servidor. A continuación, abra la pestaña `IPMI`{.action} (1).
+<br>Para ello, en primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Bare Metal Cloud`{.action}, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. A continuación, abra la pestaña `IPMI`{.action} (1).
 
 Haga clic en el botón `Desde un applet Java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+![remote_kvm](images/remote_kvm2022.png){.thumbnail}
 
 Se descargará un programa JNLP. Abra el programa para acceder a IPMI e introduzca las claves asociadas al servidor.
 

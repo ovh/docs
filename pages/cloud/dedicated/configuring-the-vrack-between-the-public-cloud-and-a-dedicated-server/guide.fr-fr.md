@@ -40,8 +40,6 @@ Une fois le service vRack livré sur votre compte, vous pouvez à présent y ajo
 
 Cliquez sur le menu `Bare Metal Cloud`{.action}, puis sur `Network`{.action}, et ensuite sur `vRack`{.action}. Sélectionnez votre vRack dans la liste.
 
-![vrack livré](images/vrackdelivered.png){.thumbnail}
-
 Dans la liste des services éligibles, sélectionnez le projet que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 ![ajouter un projet au vrack](images/addprojectvrack.png){.thumbnail}

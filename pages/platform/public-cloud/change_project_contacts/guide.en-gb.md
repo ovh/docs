@@ -49,11 +49,7 @@ You have to confirm this procedure in both accounts.
 
 ## Confirmation
 
-To do this go to your account properties and select `My contacts`{.action} on the right:
-
-![change-contacts](images/controlpanel.png){.thumbnail}
-
-In both contacts Control Panel, you have to go to the `My requests`{.action} section:
+For both accounts, open the `Contact management`{.action} again and select the `My requests`{.action} tab.
 
 ![change-contacts](images/controlpanel1.png){.thumbnail}
 

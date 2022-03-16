@@ -6,9 +6,6 @@ section: Enterprise File Storage
 order: 1
 ---
 
-> [!warning]
-> Enterprise File Storage es un producto en fase **Beta**. Durante esta fase, el servicio no está disponible para clientes fuera de Europa.
->
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -37,7 +34,7 @@ Puede contratar uno o varios espacios de almacenamiento entre 1 TiB y 29TiB en s
 >
 > - T, el prefijo "tera-" es una métrica y un estándar IT que utiliza la base-10. Entonces 1 TB = 10^12 bytes = 10000000000 bytes = 1000 GB.
 >
-> - Ti, el prefijo "Tebi-", se creó más tarde como uno de los prefijos binarios que ahora son estándares IEC/ISO y que utiliza la base-2. Significa 1024^4=2^4. Entonces 1 TiB = 1099511627776 bytes= 1024 GiB.
+> - Ti, el prefijo "Tebi-", se creó más tarde como uno de los prefijos binarios que ahora son estándares IEC/ISO y que utiliza la base-2. Significa 1024^4=2^4. Entonces 1 TiB = 1099511627776 bytes = 1024 GiB.
 >
 > - Los ordenadores utilizan la base 2, de modo que la cantidad de almacenamiento que puede ver en su sistema operativo se expresa en TiB. Los proveedores de almacenamiento suelen utilizar el TB, ya que es un número mayor que el TiB.
 >
@@ -45,7 +42,7 @@ Puede contratar uno o varios espacios de almacenamiento entre 1 TiB y 29TiB en s
 >
 > - Para Enterprise File Storage, porque queremos ser transparentes con usted, entregaremos el volumen en TiB aunque vean el TB como unidad, porque el público en general usa TB.
 >
-> - De esta forma, si contrata un servicio Enterprise File Storage de 1 TB, dispondrá en realidad de 1 TiB = 1,09951 TB ;-).
+> - De esta forma, si contrata un servicio Enterprise File Storage de 1 TB, dispondrá en realidad de 1 TiB = 1,09951 TB.
 >
 
 ### Principio de funcionamiento de las capacity pools

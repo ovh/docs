@@ -25,9 +25,7 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ### 1 - Aceder à interface de gestão do serviço
 
-Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-
-Para isso, clique em `E-mail Pro`{.action} no menu à esquerda e selecione o nome do serviço.
+Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.Para isso, clique em `E-mail Pro`{.action} e selecione o nome do serviço.
 
 > [!primary]
 >
@@ -135,8 +133,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 >
 > No nosso exemplo, utilizamos a referência servidor: pro**?**.mail.ovh.net. Deve substituir o «?» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action},
->  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 
 ## Quer saber mais?

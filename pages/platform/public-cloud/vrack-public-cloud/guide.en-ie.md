@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated December 21 2021.**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -16,10 +16,10 @@ OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) is a private network solut
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
-- basic networking knowledge
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
+- Basic networking knowledge
 
 ## Interfaces
 
@@ -101,11 +101,9 @@ Once the service is active, you will find it in your Control Panel in the `Bare 
 
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project.
 
-![project selection](images/vrack2021-05.png){.thumbnail}
-
-Click on `Private network`{.action} in left-hand navigation bar.
+Click on `Private Network`{.action} in left-hand navigation bar.
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 

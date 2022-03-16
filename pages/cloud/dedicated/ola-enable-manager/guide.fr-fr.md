@@ -25,9 +25,9 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 
 ### Configurer OLA dans votre espace client OVHcloud
 
-Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche et sélectionnez votre serveur dans la liste.
+Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} et sélectionnez votre serveur dans la liste.
 
-![network interfaces](images/network_interfaces2021.png){.thumbnail}
+![network interfaces](images/network_interfaces2022.png){.thumbnail}
 
 Dans l'onglet `Interfaces réseau`{.action} (1), cliquez sur le bouton `...`{.action} (2) à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Configurer l'agrégation privée`{.action} (2).
 

@@ -1,5 +1,5 @@
 ---
-title: Configuring the cluster autoscaler 
+title: Configuring the cluster autoscaler
 slug: configuring-cluster-autoscaler
 excerpt: ''
 section: User guides
@@ -28,7 +28,7 @@ order: 7
  }
 </style>
 
-**Last updated November 4<sup>th</sup>, 2021.**
+**Last updated February 18<sup>th</sup>, 2022.**
 
 ## Objective
 
@@ -92,7 +92,7 @@ kubectl get nodepools
 You can change several parameters values through kubectl command:
 
 ```bash
-kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}'
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}}'
 ```
 
 In my example cluster:
@@ -100,18 +100,20 @@ In my example cluster:
 {
   "antiAffinity": false,
   "autoscale": true,
+  "autoscaling": {
+    "scaleDownUnneededTimeSeconds": 600,
+    "scaleDownUnreadyTimeSeconds": 1200,
+    "scaleDownUtilizationThreshold": "0.5"
+  },
   "desiredNodes": 3,
   "flavor": "b2-7",
   "maxNodes": 100,
   "minNodes": 0,
-  "monthlyBilled": true,
-  "scaleDownUnneededTimeSeconds": 600,
-  "scaleDownUnreadyTimeSeconds": 1200,
-  "scaleDownUtilizationThreshold": "0.5"
+  "monthlyBilled": true
 }
 </code></pre>
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}'
+<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 </code></pre>
 
@@ -119,22 +121,26 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 {
   "antiAffinity": false,
   "autoscale": true,
+  "autoscaling": {
+    "scaleDownUnneededTimeSeconds": 900,
+    "scaleDownUnreadyTimeSeconds": 1500,
+    "scaleDownUtilizationThreshold": "0.7"
+  },
   "desiredNodes": 3,
   "flavor": "b2-7",
   "maxNodes": 100,
   "minNodes": 0,
-  "monthlyBilled": true,
-  "scaleDownUnneededTimeSeconds": 900,
-  "scaleDownUnreadyTimeSeconds": 1500,
-  "scaleDownUtilizationThreshold": "0.7"
+  "monthlyBilled": true
 }
 </code></pre>
 
 For the moment, only these following parameters are editable:
 
-- scaleDownUnneededTimeSeconds
-- scaleDownUnreadyTimeSeconds
-- scaleDownUtilizationThreshold
+- autoscale
+- autoscaling
+- desiredNodes
+- minNodes
+- maxNodes
 
 You can contact us through [Gitter](https://gitter.im/ovh/kubernetes) if you need to edit other parameters and/or you can check our [public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 

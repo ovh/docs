@@ -4,7 +4,7 @@ excerpt: Find out how to manage secure access to your instances
 slug: access_and_security_in_horizon
 legacy_guide_number: g1774
 section: Horizon
-order: 3
+order: 07
 ---
 
 **Last updated 26th May 2021**
@@ -14,7 +14,7 @@ order: 3
 The OpenStack Horizon interface provides options to configure access to your instances and other services.<br>
 For example, you can define security groups to filter incoming and outgoing connections or download an OpenRC file containing the credentials for the OpenStack API.
 
-## Prerequisites
+## Requirements
 
 - [Configuring user access to Horizon](../configure_user_access_to_horizon/)
 

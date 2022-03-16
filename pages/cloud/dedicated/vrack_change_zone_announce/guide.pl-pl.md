@@ -9,7 +9,7 @@ section: vRack
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVH.
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVHcloud.
 
 **Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack.**
 
@@ -41,14 +41,14 @@ Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w
 
 ### Etap 2: zmiana strefy rozgłaszania bloku IP
 
-Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfikatora klienta OVH. Teraz użyj poniższych API, aby zmienić strefę rozgłaszania bloku IP.
+Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfikatora klienta OVHcloud. Teraz użyj poniższych API, aby zmienić strefę rozgłaszania bloku IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji „Cloud”, a następnie „vRack”.
+To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action}, następnie `Network`{.action} i następnie "vRack". 
 
 > [!api]
 >

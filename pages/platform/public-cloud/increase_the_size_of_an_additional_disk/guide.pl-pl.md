@@ -6,7 +6,7 @@ legacy_guide_number: g1865
 section: 'Zarządzanie w Panelu klienta OVH'
 ---
 
-**Ostatnia aktualizacja: 14 listopada 2019**
+**Ostatnia aktualizacja z dnia 14/11/2019**
 
 ## Wprowadzenie
 
@@ -16,8 +16,8 @@ Jeśli wykorzystano całą przestrzeń dyskową dodatkowego dysku, można zwięk
 
 ## Wymagania początkowe
 
-* [instancja Public Cloud](https://www.ovh.pl/public-cloud/){.external} na koncie OVHcloud
-* [dodatkowy dysk](https://www.ovh.pl/public-cloud/block-storage/){.external} przyłączony do instancji
+* [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
+* [dodatkowy dysk](https://www.ovhcloud.com/pl/public-cloud/block-storage/){.external} przyłączony do instancji
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH (tylko w systemie Linux)
 * dostęp administracyjny do instancji za pośrednictwem protokołu RDP (tylko w systemie Windows)

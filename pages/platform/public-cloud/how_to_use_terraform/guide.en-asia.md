@@ -23,7 +23,7 @@ The open source tool Terraform was developed to make the creation of complex clo
 - [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
 - [Setting OpenStack environment variables](../set-openstack-environment-variables/)
 - [Your OVHcloud API identifiers and authorisation key](../../api/first-steps-with-ovh-api/)
-- [An SSH key](../create-ssh-keys)
+- [An SSH key](../public-cloud-first-steps/)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 

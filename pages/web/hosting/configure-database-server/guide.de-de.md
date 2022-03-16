@@ -2,21 +2,21 @@
 title: 'Konfigurieren Ihres Datenbankservers'
 slug: konfigurieren-ihres-datenbank-servers
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Datenbankserver konfigurieren und optimieren können'
-section: SQL Private
+section: CloudDB
 order: 6
 ---
 
-**Letzte Aktualisierung am 24.08.2020**
+**Letzte Aktualisierung am 09.03.2022**
 
 ## Ziel
 
-Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen. 
+Die Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen. 
 
 **Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie haben einen [Cloud Databases](https://www.ovh.de/cloud-databases/) Dienst in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -77,27 +77,27 @@ Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Wählen Sie die gewünschte Menge RAM aus und klicken Sie auf `Weiter`{.action}. Danach können Sie die gewünschte Dauer wählen.
 
 > [!primary]
 >
 > Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes.
-> Diese Berechnung basiert auf dem Ablaufdatum des SQL Private Servers, nicht auf dem Datum des Bestellscheins.
+> Diese Berechnung basiert auf dem Ablaufdatum des CloudDB Servers, nicht auf dem Datum des Bestellscheins.
 > 
 
 Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung auszuführen. Die Anpassung erfolgt innerhalb einiger Stunden.
 
 > [!warning]
 >
-> Wenn Sie bisher einen kostenlosen SQL Private Server, inkludiert in einem Performance Hosting-Paket, genutzt haben, wird dies mit dem
+> Wenn Sie bisher einen kostenlosen CloudDB Server, inkludiert in einem Performance Hosting-Paket, genutzt haben, wird dies mit dem
 > Wechsel des Angebots hinfällig.
 > 
 
 ### Die Konfiguration meines Datenbankservers ändern
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres SQL Private Servers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres CloudDB Servers aus. 
 
 #### MySQL und MariaDB Instanzen
 
@@ -105,7 +105,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwenden`{.action} klicken.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir**: Verzeichnis temporärer Dateien. **/dev/shm** entspricht dem RAM Speicher der Instanz. **/tmp** entspricht der Festplatte der Instanz.
 - **MaxAllowedPacket**: Maximale Paketgröße
@@ -113,9 +113,10 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 - **AutoCommit**: Legt fest, ob die SQL-Transaktionen automatisch bestätigt werden oder nicht.
 - **Interactive_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer interaktiven Verbindung wartet, bevor er diese schließt.
 - **InnodbBufferPoolSize**: Größe des Pufferspeichers auswählen (in Megabyte).
-- **MaxLines:** Anzahl der erlaubten Simultanverbindungen auf Private SQL.
+- **MaxLines:** Anzahl der erlaubten Simultanverbindungen auf CloudDB.
 - **Wait_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
 - **Event_scheduler**: Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
+- **sql_mode**: Die Option **sql_mode** betrifft die jeweilige SQL-Syntax und die Überprüfungen der Datenvalidierung durch MySQL/MariaDB. Nur für MariaDB verfügbar.
 
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
@@ -124,10 +125,22 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> <b>Tmpdir</b>:    
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
 >
 > \- /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>   
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Standardmodus von MariaDB 10.2 und spätere Versionen.
+>
+> Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
 
 Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Bestätigen`{.action}.
@@ -143,7 +156,7 @@ Die Konfiguration einer PostgreSQL-Instanz kann nicht geändert werden.
 
 Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken` und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Ändern der MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers
 
@@ -153,22 +166,22 @@ Die aktuelle Version wird unter **Version** angezeigt.
 
 Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **Wie kann ich die genaue Version von PostgreSQL erfahren, die verwendet wird?**
 
 Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **SQL** geklickt haben und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
+#### **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
 
 Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -193,7 +206,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Zugang zu Slow-Query-Logs
 
@@ -207,7 +220,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
 
@@ -220,7 +233,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Verbindungen pro Minute überprüfen
 
@@ -230,7 +243,7 @@ Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Ihre Datenbanken optimieren
 
@@ -242,7 +255,7 @@ Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index a
 
 Beispiel: Sie suchen regelmäßig nach „Person“ in Verbindung mit „Stadt“. Indexieren Sie das Feld "Stadt" folgendermaßen:
 
-```bash
+```sql
 ALTER TABLE 'test' ADD INDEX ('Stadt');
 
 ```
@@ -277,7 +290,7 @@ Prüfen Sie in Ihren SQL-Anfragen, ob Sie nur die tatsächlich benötigten Daten
 
 Beispiel:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

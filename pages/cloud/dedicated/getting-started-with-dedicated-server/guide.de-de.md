@@ -11,7 +11,7 @@ order: 1
 >
 
 
-**Letzte Aktualisierung am 27.05.2021**
+**Letzte Aktualisierung am 11.03.2022**
 
 ## Ziel
 
@@ -78,9 +78,9 @@ Wenn Sie ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlü
 
 Wenn ein SSH-Schlüssel bereits hinterlegt ist, erscheint er unten im Drop-down-Menü unter "SSH-Schlüssel". Falls nicht, fügen Sie zuerst einen im Bereich "Meine Dienstleistungen" hinzu.
 
-Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Produkte und Dienstleistungen`{.action}.
+Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Dienstverwaltung`{.action}.
 
-![Partitionskonfiguration personalisieren](images/SSH_13.png){.thumbnail}
+![Partitionskonfiguration personalisieren](images/SSH_13.1.png){.thumbnail}
 
 Gehen Sie in "Meine Dienste" auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
@@ -110,13 +110,13 @@ Verwenden Sie die folgenden Beispiele, um sich mit Ihrem Server zu verbinden, un
 
 **Beispiel mit Root:**
 
-```sh
+```bash
 ssh root@IPv4_Ihres_Servers
 ```
 
 **Beispiel mit einem vorkonfigurierten Benutzer:**
 
-```sh
+```bash
 ssh root@Referenzname_Ihres_Servers
 ```
 
@@ -126,11 +126,13 @@ Weitere Informationen zu SSH finden Sie in unserer [Anleitung](../ssh-einfuehrun
 
 Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Ihrem Passwort für den Administrator-Zugang (Root). Verwenden Sie diese Login-Daten, um sich via RDP (**R**emote **D**esktop **P**rotocol) mit dem Server zu verbinden. Wenn Sie eingeloggt sind, wird Windows Sie durch die Erstinstallation führen.
 
+Beachten Sie auch unsere Anleitung zum [Konfigurieren einer neuen Windows Server Installation](https://docs.ovh.com/de/dedicated/windows-first-config/).
+
 ### Neustart Ihres Dedicated Servers <a name="reboot"></a>
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
-```sh
+```bash
 reboot
 ```
 
@@ -146,17 +148,11 @@ Wie oben erläutert, sind Sie der Administrator Ihres dedizierten Servers. Als s
 
 Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus kontrollieren (Abschnitt **Dienststatus**).
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Wenn **Monitoring** auf `Aktiviert` gestellt ist, werden Sie per E-Mail benachrichtigt sobald der Server sich unerwartet verhält. Sie können diese Benachrichtungen über den `...`{.action} Button deaktivieren.
+Wenn **Monitoring** auf `Aktiviert` gestellt ist, werden Sie per E-Mail benachrichtigt sobald der Server sich unerwartet verhält. Sie können diese Benachrichtungen über den `...`{.action} Button deaktivieren.
 
-- Wenn Sie die Option **Eingriffe am Standort** aktivieren, stimmen Sie der Überwachung durch Techniker im Rechenzentrum zu. Die Hardware wird dann geprüft, falls Ihr Server nicht mehr auf Pings reagiert. 
-
-> [!warning]
-> Wenn die *on-site* Interventionen auf `On`{.action} gesetzt sind, stellen Sie sicher, dass Sie die Option **deaktivieren**, bevor Sie relevante Aktionen auf Ihrem Server durchführen (Hardwaretests, Neustarts, etc.). Sie erhalten Sie weiterhin automatische E-Mails, solange "Monitoring" aktiv ist.
->
-
-Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Weitere Informationen zum OVHcloud Monitoring finden Sie in [unserer Anleitung](https://docs.ovh.com/de/dedicated/monitoring-ip-ovh/).
 
 ### Netzwerkkonfiguration
 

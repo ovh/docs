@@ -20,15 +20,15 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 > To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
 >
 
-- an OVHcloud Connect Direct [solution](https://www.ovhcloud.com/en-sg/network-security/ovhcloud-connect/)
-- an OVHcloud [vRack](https://www.ovh.com/sg/solutions/vrack/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- An [OVHcloud Connect Direct solution](https://www.ovhcloud.com/en-sg/network-security/ovhcloud-connect/)
+- An OVHcloud [vRack](https://www.ovh.com/sg/solutions/vrack/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open `OVHcloud Connect`{.action} and click on your solution.
 
-![ovhcloud connect selection](images/occ01.png){.thumbnail}
+![ovhcloud connect selection](images/occ_01.png){.thumbnail}
 
 ### Step 1: Associating a vRack
 

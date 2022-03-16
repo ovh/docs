@@ -37,7 +37,7 @@ Vous pouvez commander un ou plusieurs espaces de stockage entre 1TiB et 29TiB su
 >
 > - Pour Enterprise File Storage, parce que nous voulons être transparents avec vous, nous livrerons le volume en TiB même si vous voyez le TB comme unité, parce que le grand public utilise le TB.
 >
-> - Ainsi, si vous commandez un service Enterprise File Storage de 1 TB, vous disposerez en réalité de 1 TiB = 1,09951 To ;-).
+> - Ainsi, si vous commandez un service Enterprise File Storage de 1 TB, vous disposerez en réalité de 1 TiB = 1,09951 TB.
 >
 
 ### Principe de fonctionnement des capacity pools

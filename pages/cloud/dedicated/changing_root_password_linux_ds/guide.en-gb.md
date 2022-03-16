@@ -19,9 +19,9 @@ It may become necessary to change the root password (or the one of your admin/su
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- login credentials received via email after the installation (if still valid)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for using rescue mode)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Login credentials received via email after the installation (if still valid)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for using rescue mode)
 
 
 > [!warning]

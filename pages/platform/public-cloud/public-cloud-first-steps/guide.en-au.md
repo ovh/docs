@@ -16,8 +16,8 @@ Considering best practices, OVHcloud Public Cloud instances require a different 
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 
 ## Instructions
@@ -64,7 +64,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-You can accept the default file by pressing "Enter" (↩). Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
+You can accept the default file by pressing "Enter". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
@@ -321,7 +321,7 @@ For example, Remmina Remote Desktop Client is a compatible application which sho
 
 ![linux remote](images/linux-connect-01.png){.thumbnail}
 
-Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "Enter" (↩).
+Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "Enter".
 
 ![linux remote](images/linux-connect-02.png){.thumbnail}
 

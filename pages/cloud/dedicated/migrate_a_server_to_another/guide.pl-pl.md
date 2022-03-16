@@ -27,9 +27,9 @@ W miarę jak zmieniają się Twoje potrzeby i gama produktów OVHcloud, czasami 
 
 ## Wymagania początkowe
 
-- dwa serwery dedykowane (stary i nowy) z zainstalowanym systemem operacyjnym
-- dostęp administracyjny do serwerów
-- umiejętności administrowania systemem
+- Dwa serwery dedykowane (stary i nowy) z zainstalowanym systemem operacyjnym
+- Dostęp administracyjny do serwerów
+- Umiejętności administrowania systemem
 
 ## W praktyce
 

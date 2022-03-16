@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pola CNAME po dodaniu przypisanej domeny'
 slug: exchange_20132016_dodanie_pola_cname
-excerpt: 'Dowiesz się, dlaczego dodanie pola CNAME może być wymagane i jak je dodać w Panelu klienta OVH'
+excerpt: 'Dowiesz się, dlaczego dodanie pola CNAME może być wymagane i jak je dodać w Panelu klienta OVHcloud'
 section: 'Pierwsze kroki z Exchange'
 order: 5
 ---
@@ -23,7 +23,7 @@ Podczas dodawania domeny do Twojej usługi e-mail możesz zostać poproszony o k
 
 ## W praktyce
 
-### Etap 1: diagnostyka CNAME OVH
+### Etap 1: diagnostyka CNAME OVHcloud
 
 Przycisk diagnostyki pola **CNAME** (Canonical Name) pojawia się w niektórych przypadkach podczas deklarowania nazwy domeny w Twojej usłudze e-mail.
 
@@ -31,9 +31,9 @@ Ma to na celu weryfikację, czy jesteś administratorem nazwy domeny, którą ch
 
 Diagnostyka może pojawić się w następujących przypadkach:
 
-- zadeklarowana nazwa domeny nie jest zarejestrowana w OVH;
+- zadeklarowana nazwa domeny nie jest zarejestrowana w OVHcloud;
 - zadeklarowana nazwa domeny nie jest przypisana do Twojego identyfikatora klienta;
-- zadeklarowana nazwa domeny nie używa konfiguracji OVH (nie wskazuje na serwery DNS OVH).
+- zadeklarowana nazwa domeny nie używa konfiguracji OVHcloud (nie wskazuje na serwery DNS OVHcloud).
 
 ![cnamedomainemail](images/cname_exchange_diagnostic.png){.thumbnail}
 
@@ -47,20 +47,20 @@ Pojawi się pole CNAME.
 
 Następnie, mogą pojawić się dwie opcje: 
 
-- **Twoja domena używa konfiguracji OVH**: możesz przeprowadzić opisaną poniżej operację w Panelu klienta OVH:
+- **Twoja domena używa konfiguracji OVHcloud**: możesz przeprowadzić opisaną poniżej operację w Panelu klienta OVHcloud:
 
-- **Twoja domena nie używa konfiguracji OVH**: musisz wprowadzić stosowne modyfikacje w interfejsie służącym do zarządzania konfiguracją Twojej domeny.
+- **Twoja domena nie używa konfiguracji OVHcloud**: musisz wprowadzić stosowne modyfikacje w interfejsie służącym do zarządzania konfiguracją Twojej domeny.
 
 > [!primary]
 >
-> Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić w Panelu klienta, w zakładce `Serwery DNS`{.action}, czy używa ona konfiguracji OVH.
+> Jeśli domena jest zarejestrowana w OVHcloud, możesz sprawdzić w Panelu klienta, w zakładce `Serwery DNS`{.action}, czy używa ona konfiguracji OVHcloud.
 >
 
-### Etap 3: Tworzenie pola CNAME w konfiguracji OVH
+### Etap 3: Tworzenie pola CNAME w konfiguracji OVHcloud
 
-Kliknij w `Domeny`{.action} na pasku usług po lewej stronie w Panelu klienta, następnie w nazwę wybranej domeny. Wybierz zakładkę `Strefa DNS`{.action}.
+Kliknij w `Domeny`{.action} w Panelu klienta, następnie w nazwę wybranej domeny. Wybierz zakładkę `Strefa DNS`{.action}.
 
-Pojawi się tabela. Zawiera ona dane dotyczące konfiguracji Twojej domeny w OVH. Na konfigurację składają się rekordy DNS, każdy zaznaczony w oddzielnym wierszu tabeli.
+Pojawi się tabela. Zawiera ona dane dotyczące konfiguracji Twojej domeny w OVHcloud. Na konfigurację składają się rekordy DNS, każdy zaznaczony w oddzielnym wierszu tabeli.
 
 Aby dodać pole CNAME, kliknij w przycisk `Dodaj wpis`{.action}.
 

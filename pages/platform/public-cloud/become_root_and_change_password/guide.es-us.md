@@ -2,8 +2,8 @@
 title: 'Convertirse en el usuario root y establecer una contraseña'
 slug: conectarse_como_usuario_root_y_establecer_una_contrasena
 excerpt: 'Esta guía explica cómo configurar el usuario root y la contraseña de la cuenta root'
-section: Tutoriales
-order: 5
+section: Primeros pasos
+order: 06
 ---
 
 **Última actualización: 19/10/2021**

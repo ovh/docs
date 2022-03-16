@@ -10,7 +10,7 @@ section: Tutoriale
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 27/09/2018**
+**Ostatnia aktualizacja z dnia 10/02/2022**
 
 ## Wprowadzenie
 
@@ -22,8 +22,9 @@ Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](https://docs.ovh.com/pl/pu
 
 ## Wymagania początkowe
 
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Dostęp do Twojej instancji przez SSH w [tryb Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/)
 - Utwórz klucz SSH
-- Zmień instancję w trybie Rescue
 
 ## W praktyce
 
@@ -32,7 +33,7 @@ Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](https://docs.ovh.com/pl/pu
 Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
 >
 
-Po zamontowaniu dysku Twojej instancji w [trybie Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/) będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
+Po zamontowaniu dysku Twojej instancji w trybie Rescue, będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
 
 Plik zawierający klucze SSH to:
 
@@ -88,6 +89,6 @@ Po wykonaniu modyfikacji i zapisaniu jej zawartości wystarczy zrestartować ins
 
 ## Sprawdź również
 
-[Zmień instancję w trybie Rescue](https://docs.ovh.com/pl/public-cloud/przelaczenie_instancji_w_tryb_rescue/)
+[Zostań użytkownikiem root i wybierz hasło](https://docs.ovh.com/pl/public-cloud/dostep_root_i_zdefiniowanie_hasla/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

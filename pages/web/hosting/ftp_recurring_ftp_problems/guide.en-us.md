@@ -1,46 +1,98 @@
 ---
-title: 'Recurring FTP problems'
+title: Troubleshooting recurring errors when using FTP software
+excerpt: Find out how to resolve the most common FTP software related issues
 slug: recurring_ftp_problems
-excerpt: 'Recurring FTP problems'
-legacy_guide_number: g1996
+legacy_guide_number: 1996
+section: FTP and SSH
+order: 3
 ---
 
-## I have uploaded my files through FTP software, but they are not showing
+**Last updated 5th January 2022**
 
-- Make sure you copy your files to the WWW folder on your web server or they may not be visible.
-- If you have changed your DNS zone, it can take between 4 and 24 hours for those updates to propagate throughout the Internet.
+## Objective
 
+Using FTP software when logging in to your [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/) can cause various anomalies. This guide will help you resolve the most common ones.
 
-## My FTP codes do not work
-Make sure you have copied your password correctly. It is best to copy and paste it (Ctrl-C Ctrl-V on windows).
-Make sure you do not confuse l (L) with 1 (one) or O (the letter O) with 0 (zero).
-If it still doesn't work, your credentials are probably incorrect.
+**Find out how to resolve the most common FTP software related issues.**
 
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
 
-## How much space do I have left on my wesite?
-If you are running out of space on your website this could cause problems when you want to upload new files. 
+## Requirements
 
-- To check this, log in to your [customer account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-- Select your hosting platform
+- An OVHcloud [Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
+## Instructions
 
+### "This server does not support FTP on TLS" (FileZilla)
 
-![](images/img_3298.jpg){.thumbnail}
-You will be met with a summary including your FTP quota.
+![filezilla_error](images/filezilla_error.png){.thumbnail}
 
-![](images/img_3299.jpg){.thumbnail}
+This message coming from [FileZilla](https://docs.ovh.com/us/en/hosting/web_hosting_filezilla_user_guide/) indicates that you have not enabled the SFTP or SSH option from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). As a result, the information exchanged between your OVHcloud hosting server and your computer will not be encrypted.
 
+If the data you want to exchange via this link is not confidential, click `OK`{.action}.
 
-## I cannot upload my files to the ftp server.
-You have to connect in passive mode (configuration mode that allows the FTP server to define the connection port) in your FTP client. For example, in FileZilla, click Edit -> Settings -> Connections -> then FTP on the left-hand side - > Passive mode.
+Otherwise, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Web Cloud`{.action} section, then `Hosting plans`{.action}. Select the hosting plan concerned, then choose the `FTP-SSH`{.action} tab.
 
+If you have a [Personal](https://www.ovhcloud.com/en/web-hosting/personal-offer/) Web Hosting plan, tick the `Disabled`{.action} box in the `SFTP`{.action} column, then wait a few minutes.
 
-## What is the "cgi-bin" directory used for?
-The "cgi-bin" directory is parallel to the "www" folder and it cannot be read directly from a web server. It has the following characteristics:
+If you have a [Pro](https://www.ovhcloud.com/en/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en/web-hosting/performance-offer/) Web Hosting plan, click on the `...`{.action} button to the right of the FTP user concerned, then on `Edit`{.action}.
 
-- None of the files you place in the directory can be read. They will only be "run" by the server instead of displayed normally. For example you cannot place gif or jpeg images here
-- Because none of the files in this directory can be read, you can use it, for example, for storing text format files from databases you want to protect
-- An alias of your site is used to run cgi scripts from cgi-bin. You cannot run scripts other than with your domain.
+Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), click `Next`{.action} and then click on `Confirm`{.action}. Wait a few minutes.
 
+> [!primary]
+>
+> For any other error messages, see the `Troubleshooting` section of our [Web Hosting guides](../).
+>
 
+### I transferred my files with FTP software, but my website does not appear.
 
+First of all, check that your website’s files and folders are in the [root folder](https://docs.ovh.com/us/en/hosting/web_hosting_how_to_get_my_website_online/#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
+
+If you have modified your [DNS servers or DNS zone](https://docs.ovh.com/us/en/domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
+
+### My FTP credentials are not working.
+
+If you are unable to log in, change your FTP password as described in this [guide](https://docs.ovh.com/us/en/hosting/modify-ftp-user-password/).
+
+### I encounter random errors on my website.
+
+A lack of file storage capacity on your Web Hosting plan may cause your site to malfunction when you try to modify or update it.
+
+To check the remaining storage space on your hosting, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Click on `Web Cloud`{.action}, then on `Hosting plans`{.action}. Select the concerned hosting plan.
+
+The amount of data storage used on your Web Hosting server (excluding databases) appears in the `General information`{.action} section under `Disk space`.
+
+![disk_space](images/disk_space.png){.thumbnail}
+
+### I can't transfer my files to the FTP server.
+
+Check that your FTP software is connected in "Passive mode" (Configuration mode of an FTP server in which the server determines the connection port).
+
+For example, for [Filezilla](https://docs.ovh.com/us/en/hosting/web_hosting_filezilla_user_guide/), click on `Edit`{.action}, then on `Settings`{.action} and open the `Connection`{.action} settings. Click on `FTP`{.action} and then choose `Passive (recommended)`{.action}.
+
+Also limit the size of your data transfers (you cannot send more than **5000 files and folders** on OVHcloud shared servers on a single transfer). Split your imports if necessary and use compressed folders.
+
+If you have a [Pro](https://www.ovhcloud.com/en/web-hosting/professional-offer/) or [Performance](https://www.ovhcloud.com/en/web-hosting/performance-offer/) Web Hosting plan, use the [SSH protocol](https://docs.ovh.com/us/en/hosting/web_hosting_ssh_on_web_hosting_packages/) to import files on to your file storage space.
+
+### I can't delete the symbolic link "index.html" on my FTP space.
+
+This link is installed by default on OVHcloud Web Hosting plans. It displays this image on your web browser:
+
+![site_under_construction](images/site_under_construction.png){.thumbnail}
+
+If you did not use the "[1-click module](https://docs.ovh.com/us/en/hosting/web_hosting_web_hosting_modules/)" feature to create your website, you will need to use the [Net2FTP](https://docs.ovh.com/us/en/hosting/log-in-to-storage-ftp-web-hosting/#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in order to manually delete the "Website under construction" page.
+
+## Go further <a name="gofurther"></a>
+
+[Using FileZilla software with your hosting](https://docs.ovh.com/us/en/hosting/web_hosting_filezilla_user_guide/)
+
+For specialised services (SEO, development, etc.), contact your [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>.

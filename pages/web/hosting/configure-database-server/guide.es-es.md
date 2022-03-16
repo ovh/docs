@@ -2,22 +2,22 @@
 title: 'Configurar el servidor de bases de datos'
 slug: configurar-optimizar-su-servidor-de-base-de-datos
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-section: SQL Privado
+section: CloudDB
 order: 6
 ---
 
-**Última actualización: 24/08/2020**
+**Última actualización: 09/03/2022**
 
 ## Objetivo
 
-Los servidores de bases de datos SQL Privado y Cloud Databases le ofrecen la posibilidad de modificar los parámetros globales de su servidor. También puede ver la actividad del servidor. 
+Los servidores Cloud Databases le ofrecen la posibilidad de modificar los parámetros globales de su servidor. También puede ver la actividad del servidor. 
 
 **Esta guía explica cómo configurar y optimizar el servidor de bases de datos.**
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener contratado un plan de [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
@@ -57,7 +57,7 @@ En la nueva ventana, indique en `IP/máscara`{.action} la dirección IP o la má
 
 Para un alojamiento web de OVHcloud, debe autorizar la dirección IP "puerta de enlace" (gateway) de este último. 
 
-Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
+Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
 
 Encontrará la mención **"Servidor FTP"**, que le indicará el número de cluster en el que está, como se indica a continuación.
 
@@ -73,31 +73,30 @@ Una vez que haya obtenido el número del cluster en el que está situado el aloj
 
 ### Cambiar la oferta del servidor de bases de datos
 
-Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
+Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
 En la pestaña **"Información general"** que se muestra por defecto, haga clic en `...`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Elija la cantidad de RAM deseada y haga clic en el botón `Siguiente`{.action}. A continuación, elija la duración deseada.
 
 > [!primary]
 >
 > La parte proporcional se transferirá si solo tiene unos meses antes.
-> Expiración Esta parte se basará en la fecha de expiración del servidor SQL.
-> Privado, no de la orden de pedido.
+> Expiración Esta parte se basará en la fecha de expiración del servidor CloudDB, no de la orden de pedido.
 > 
 
 Tras la validación de los contratos, será redirigido a la orden de pedido, donde deberá abonar los cambios. La eliminación tardará unas horas en aplicarse.
 
 > [!warning]
 >
->  Si actualmente tiene un servidor SQL Privado gratuito con
-> plan de hosting Performance, al cambiar la solución el servicio de SQL Privado pasará a tener un coste aparte.
+>  Si actualmente tiene un servidor CloudDB gratuito con
+> plan de hosting Performance, al cambiar la solución el servicio de CloudDB pasará a tener un coste aparte.
 > 
 
 ### Modificar la configuración de mi servidor de bases de datos
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor SQL privado. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor CloudDB. 
 
 #### Instancia MySQL y MariaDB
 
@@ -105,17 +104,18 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 En el cuadro **"Configuración general de MySql"** encontrará la configuración actualmente establecida para su base de datos. Puede modificarla directamente y hacer clic en `Aplicar`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Tmpdir**: Directorio de archivos temporales. **/dev/shm** corresponde a la memoria RAM de la instancia. **/tmp** es el disco duro de la instancia.
 - **MaxAllowedPacket**: Tamaño máximo de los envíos
 - **max_user_connections**: Número de conexiones simultáneas autorizadas por usuario.
-- **AutoCommit** : Define si las peticiones se validan automáticamente (committed) o no.
-- **Interactive_timeout** : Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
-- **InnodbBufferPoolSize** : Tamaño de la memoria intermedia (en megabytes).
-- **MaxConnexions :** Número de conexiones simultáneas autorizadas en el SQL Privado.
+- **AutoCommit**: Define si las peticiones se validan automáticamente (committed) o no.
+- **Interactive_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
+- **InnodbBufferPoolSize**: Tamaño de la memoria intermedia (en megabytes).
+- **MaxConnexions**: Número de conexiones simultáneas autorizadas en el CloudDB.
 - **Wait_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
-- **Event_scheduler** : Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
+- **Event_scheduler**: Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
+- **sql_mode**: La opción **sql_mode** afecta a la sintaxis SQL y las verificaciones de validación de datos realizadas por MySQL o MariaDB. Solo disponible para MariaDB.
 
 > [!primary]
 > Cuando se produce un error en el sitio web que indica **"Too many connections"**, se debe a que se han superado las conexiones simultáneas a su base de datos.
@@ -124,9 +124,22 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 
 > [!primary]
 >
-> Tmpdir:
-> - /dev/shm : El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
-> - /tmp/* El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
+> <b>Tmpdir</b>:
+>
+> - /dev/shm: El servidor de bases de datos asignará la mitad de su memoria RAM a este directorio para un mayor rendimiento.
+>
+> - /tmp: El servidor asignará a su disco duro un espacio ilimitado para este repertorio, pero será mucho menos potente. Le recomendamos que utilice este directorio únicamente para operaciones ocasionales pesadas.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores.
+>
+> Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >
 
 Realice los cambios necesarios y haga clic en `Confirmar`{.action}.
@@ -142,7 +155,7 @@ No es posible modificar la configuración de una instancia PostgreSQL.
 
 No obstante, puede activar extensiones en sus bases de datos. Para ello, abra la pestaña `Bases de datos` y haga clic en el icono de la tabla de la base de datos en la columna **"Extensiones"**
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Cambiar la versión MySQL, PostgreSQL o MariaDB del servidor de bases de datos
 
@@ -152,14 +165,14 @@ La versión actual aparece en la línea **"Versión"**.
 
 Para modificar esta versión, haga clic en `Editar la versión`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **¿Cómo puedo conocer la versión exacta de PostgreSQL que utilizo?**
 
 Introduzca este comando en phpMyAdmin haciendo clic en la **base de datos**, en la sección **"SQL"**, y haciendo clic en `Ejecutar`{.action}:
 
-```
+```sql
 select version();
 ```
 
@@ -167,7 +180,7 @@ select version();
 
 Para ello, introduzca el comando en phpMyAdmin, en la sección **"SQL"** y haga clic en `Ejecutar`{.action}.
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -192,7 +205,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Acceso a los logs "Slow Query"
 
@@ -206,7 +219,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Para conectarse por **SFTP**, puede hacerlo a través del programa Filezilla, siguiendo la guía Guía de uso de FileZilla
 
@@ -219,7 +232,7 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico **"Estadísticas de memoria RAM utilizada"**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Número de conexiones por minuto
 
@@ -229,11 +242,11 @@ Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` 
 
 Acceda a la pestaña `Métricas` del área de cliente. Puede consultar el gráfico **"Estadísticas del total de conexiones por minuto"**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Gestionar las bases de datos
 
- Es recomendable mantener su base de datos para que sea potente. Lo que significa "alto rendimiento" es que la información contenida en la base de datos se devuelve lo antes posible al script que la solicita. Para ello, es necesaria una base de datos estructurada y optimizada.
+Es recomendable mantener su base de datos para que sea potente. Lo que significa "alto rendimiento" es que la información contenida en la base de datos se devuelve lo antes posible al script que la solicita. Para ello, es necesaria una base de datos estructurada y optimizada.
 
 #### Seleccionar la base de datos
 
@@ -241,8 +254,8 @@ Para aumentar la velocidad de búsqueda en una petición, es necesario poner un 
 
 Ejemplo: regularmente realiza una búsqueda de persona respecto a la ciudad. Introduzca el campo "ciudad" con la siguiente petición:
 
-```bash
-ALTER TABLE `test ADD INDEX ( `ville` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### Seleccionar la base de datos
 
@@ -274,7 +287,7 @@ En sus consultas SQL, compruebe que solo seleccione lo que necesite, y sobre tod
 
 Por ejemplo:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

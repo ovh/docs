@@ -1,16 +1,18 @@
 ---
-title: 'Setting up a VPN for OVHcloud Zerto DRP'
+title: 'Using Zerto between OVHcloud and a third party platform'
 slug: zerto-virtual-replication-customer-to-ovh
-excerpt: 'Learn how to setup a VPN tunnel to connect your on-premises plaftorm to your OVHcloud Private Cloud'
+excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 6th December 2019** 
+**Last updated 11th February 2022** 
 
 ## Objective
 
-This guide provides an outline of how to configure a virtual private network between an on-premises Zerto platform and an OVHcloud Hosted Private Cloud.
+This guide provides an outline of how to configure a virtual private network between an OVHcloud Hosted Private Cloud and a different platform.
 We will use the OPNsense open-source VPN Solution as an example, and explain the simplest way to set up a VPN tunnel to the Zerto network. 
+
+Check out [Zerto between two OVHcloud datacenters](https://docs.ovh.com/us/en/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/) for the other scenario.
 
 **Find out how to get started with a VPN for OVHcloud Zerto DRP.**
 

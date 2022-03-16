@@ -2,7 +2,7 @@
 title: 'Correggere la Product Key di Windows Server'
 excerpt: 'Scopri come modificare il codice Product Key di Windows Server'
 slug: windows-key
-section: Altro
+section: Utilizzo avanzato
 ---
 
 **Ultimo aggiornamento: 07/03/2018**

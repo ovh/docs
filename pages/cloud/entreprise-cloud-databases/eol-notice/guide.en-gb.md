@@ -6,7 +6,7 @@ section: Announcements
 order: 1
 ---
 
-**Last updated 20th December 2021**
+**Last updated 7th March 2022**
 
 ## Summary
 
@@ -85,6 +85,6 @@ There is no automatic migration option so far.
 
 You can migrate to other PostgreSQL services with native PostgreSQL commands, such as **pg_dump** and **pg_restore**.
 
-Specific guides are under redaction for a step by step process. We will link them here and on official Public Cloud Databases documentation.
+See [our guide on migrating to the Public Cloud Databases solution](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/howto-migrate-ecdb-to-pcd/).
 
 If you need assistance, please contact our support directly. We provide a catalog of professional services.

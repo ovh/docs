@@ -217,17 +217,10 @@ Ejemplo:
 #### Evite opciones intensivas de recursos:
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
-
-#### SQL Privado
-Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de SQL Privado para disponer de más recursos.
-Puede encontrar una comparativa de nuestras ofertas [en la página del producto](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/){.external}.
-
 ## Más información
 
 [Modificar la configuración de un plan de hospedaje web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/){.external}
 
 [Gestionar una base de datos en un paquete de hospedaje web](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
-
-[Primeros pasos con el servicio SQL Privado](../primeros-pasos-con-sql-privado/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

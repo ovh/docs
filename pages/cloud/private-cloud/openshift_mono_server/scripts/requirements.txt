@@ -1,3 +1,0 @@
-ansible==4.2.0
-pyvmomi==6.7.0.2018.9
-requests==2.20.0

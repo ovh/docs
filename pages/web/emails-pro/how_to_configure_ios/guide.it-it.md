@@ -39,10 +39,10 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 > [!primary]
 >
-> Nel nostro esempio, usiamo il nome del server: pro**?**.mail.ovh.net. Dovrai sostituire il ""? " dalla cifra che indica il server del tuo servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa cifra è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Web Cloud`{.action} e `Email Pro`{.action} nella colonna di sinistra. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
->
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
+> 
 
 Sulla schermata Home del tuo dispositivo clicca su `Impostazioni`{.action} (icona a ruota dentata). L'aggiunta di un account si effettua in diversi modi, a seconda della tua versione iOS:
 

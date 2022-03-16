@@ -6,7 +6,7 @@ section: 'Configurations techniques avancées'
 order: 6
 ---
 
-**Dernière mise à jour le 01/06/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -40,9 +40,9 @@ Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès �
 
 ### Récupérer le serviceName de votre accès xDSL ou FTTH
 
-Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} dans le menu de gauche puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
+Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
-![serviceName dans espace client](images/servicename.png){.thumbnail}
+![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
 
 ### Générer l'envoi de nouveaux identifiants par e-mail
 
@@ -76,7 +76,7 @@ L'objet de l'e-mail est le suivant :
 
 Voici un exemple d'e-mail contenant les identifiants PPPoE :
 
-![email_recus](images/contenumailtyperesetppp.png){.thumbnail}
+![email_recus](images/contenumailtyperesetppp-2022.png){.thumbnail}
 
 ## Aller plus loin
 

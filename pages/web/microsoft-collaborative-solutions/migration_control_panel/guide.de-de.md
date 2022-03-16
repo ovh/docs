@@ -6,7 +6,7 @@ section: Account-Migration
 order: 1
 ---
 
-**Letzte Aktualisierung am 05.01.2021**
+**Letzte Aktualisierung am 22.02.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -22,7 +22,7 @@ OVHcloud bietet mehrere E-Mail-Lösungen an: MX Plan (autonom oder in einem Webh
 
 - Sie verfügen über eine MX Plan E-Mail-Adresse (über das MX Plan Angebot oder in einem OVHcloud Webhosting [Angebot](https://www.ovhcloud.com/de/web-hosting/){.external}).
 - Sie verfügen über einen [Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} oder [E-Mail Pro ](https://www.ovhcloud.com/de/emails/email-pro/){.external} Dienst mit mindestens einem nicht konfigurierten Account (dieser wird als "@configureme.me"angezeigt).
-- **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse eingerichtet, die Sie migrieren möchten.**
+- **Sie haben keine Weiterleitungen für die MX Plan E-Mail-Adresse aktiviert, die Sie migrieren möchten.**
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
@@ -39,7 +39,7 @@ Bevor Sie fortfahren, ist es wichtig zu wissen, auf welches Angebot Sie Ihre MX 
 
 Dieser Schritt ist optional, wenn Sie bereits über einen Exchange oder E-Mail Pro Dienst verfügen, auf den Sie diese Migration durchführen.
 
-Ist dies nicht der Fall, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie links im Menü auf `Bestellen`{.action}. Wählen Sie dann den Dienst aus, den Sie bestellen möchten. Sie werden zur Bestellseite weitergeleitet. Folgen Sie den verschiedenen Schritten und warten Sie, bis der Dienst tatsächlich installiert ist. Sie erhalten eine E-Mail, sobald dies abgeschlossen ist.
+Sollten Sie dies nicht tun, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und bestellen Sie dann den E-Mail Pro oder Exchange Dienst, den Sie möchten. Folgen Sie den verschiedenen Schritten und warten Sie, bis der Dienst tatsächlich installiert ist. Sie erhalten eine E-Mail, sobald diese abgeschlossen ist.
 
 > [!primary]
 >
@@ -50,7 +50,7 @@ Ist dies nicht der Fall, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https:
 
 Bevor Sie mit der Migration beginnen, müssen Sie die Version des MXPlan identifizieren, von der aus Sie migrieren.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus.
 
 |Legacy MX Plan Version|Neue MX Plan Version|
 |---|---|
@@ -72,7 +72,7 @@ Die Migration kann über zwei Interfaces durchgeführt werden:<br>
 - **den MX Plan-Bereich**, sobald Sie über einen E-Mail Pro oder Exchange Dienst (bereits konfiguriert oder nicht konfiguriert) und eine MX Plan Adresse verfügen, die Sie migrieren möchten.
 
 > Zur Erinnerung: Vergewissern Sie sich, dass vor Beginn der Migration keine **Weiterleitung** oder **Auto-Antworten** für Ihren MXplan eingerichtet sind.
-> ![E-Mail](images/mxplan-legacy-redirect.png) {.thumbnail}
+> ![E-Mail](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Interface. Die Migrationsdauer hängt davon ab, wie viele Inhalte auf Ihren neuen Account migriert werden. Es kann sich daher um einige Minuten bis zu mehreren Stunden handeln.
 
@@ -85,13 +85,13 @@ Wenn Sie bereit sind, folgen Sie der Anleitung entsprechend dem gewählten Inter
 
 ##### **Migration mit Exchange Konfigurationsassistent**
 
-Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} links im Menü den betreffenden Dienst aus. Der Assistent sollte erscheinen, um Ihnen bei der Konfiguration Ihres neuen Exchange Dienstes zu helfen. Während dieses Vorgangs können Sie die zu migrierenden MX Plan E-Mail-Accounts auswählen.
+Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Ihren Exchange Dienst aus. Der Assistent sollte erscheinen, um Ihnen bei der Konfiguration Ihres neuen Exchange Dienstes zu helfen. Während dieses Vorgangs können Sie die zu migrierenden MX Plan E-Mail-Accounts auswählen.
 
 Wird der Konfigurationsassistent nicht angezeigt, werden stattdessen die allgemeinen Informationen zum Exchange Dienst angezeigt. In diesem Fall müssen Sie Ihre Accounts über das MX Plan Interface migrieren.
 
 ##### **Migration über das MX Plan Interface**
 
-Um die Migration über dieses Interface durchzuführen, gehen Sie im Bereich `E-Mails`{.action} im linken Menü Ihres OVHcloud Kundencenters zum Tab "E-Mails". Wählen Sie dann den Dienst mit dem Domainnamen Ihrer E-Mail-Adressen aus. Klicken Sie auf `...`{.action} in der Zeile des betreffenden E-Mail-Accounts (auch als Quell-Account bezeichnet) und dann auf `Account überführen`{.action}.
+Um die Migration über dieses Interface durchzuführen, gehen Sie im Bereich `E-Mails`{.action} zum Tab "E-Mails". Wählen Sie dann den Dienst mit dem Domainnamen Ihrer E-Mail-Adressen aus. Klicken Sie auf `...`{.action} in der Zeile des betreffenden E-Mail-Accounts (auch als Quell-Account bezeichnet) und dann auf `Account überführen`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 
@@ -105,8 +105,15 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 
 #### 3.2 Die neue MXPlan-Version migrieren <a name="NouvelleVersionMxplan"></a>
 
-Wenn Sie Ihr neues E-Mail-Angebot gerade bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro oder](../../emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen)[Exchange](../domain-zu-exchange-hinzufugen/) Plattform hinzu.
-
+> [!warning]
+>
+> Wenn Sie Ihr neues E-Mail Angebot gerade erst bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrem E-Mail-Dienst hinzu, bevor Sie mit der Migration beginnen. <br> - *Um zum Beispiel den Account "myemail@mydomain.ovh" zu migrieren müssen Sie die Domain "mydomain.ovh" zu Ihrem Dienst hinzufügen.*
+>
+>Wählen Sie den Tab `Assoziierte Domains`{.action} Ihres Dienstes aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Sobald die Domain hinzugefügt wurde, überprüfen Sie, dass der Eintrag `OK` in der Spalte `Status` angezeigt wird.
+>
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
+>
+> Weitere Informationen zum Hinzufügen einer Domain finden Sie in [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange Hilfe](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/).
 
 Die Migration Ihres MXPlan erfolgt in 3 Schritten: **Umbenennen**, **Erstellen** und **Migrieren**.
 
@@ -146,7 +153,7 @@ Wenn Sie ihn löschen möchten, gehen Sie in den Tab `E-Mails`{.action} Ihres MX
 
 In diesem Schritt müssen Ihre E-Mail-Adressen bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie hierzu im linken Menü den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte "Diagnose" sehen, ob die DNS-Konfiguration korrekt ist: Ein rotes Kästchen erscheint, wenn die Konfiguration geändert werden sollte.
+Wählen Sie hierzu den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte "Diagnose" sehen, ob die DNS-Konfiguration korrekt ist: Ein rotes Kästchen erscheint, wenn die Konfiguration geändert werden sollte.
 
 > [!primary]
 >

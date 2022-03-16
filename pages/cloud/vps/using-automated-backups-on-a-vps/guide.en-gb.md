@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 16th June 2021**
+**Last updated 01st February 2022**
 
 ## Objective
 
@@ -27,7 +27,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), navigate to the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the Automated backups option
 
@@ -66,7 +66,7 @@ Click on `...`{.action} next to the backup you need to access and select `Mounti
 
 After the process is completed, you will receive an email. You can now connect to your VPS and add the partition where your backup is located.
 
-#### Step 2: Secure Shell
+#### Using Secure Shell
 
 First, connect to your VPS via SSH.
 
@@ -99,12 +99,29 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.
-                                       
+                                        
+#### Using Windows
+
+Establish an RDP connection to your server. When you’ve logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+When the disk management tool opens, your mounted backup will appear as a basic disk with the same storage space as your main disk.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+The disk will appear as `Offline`, right-click on the disk and select `Online`{.action}.
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+Once done, your mounted backup will be accessible in the `File Explorer`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
 
 > [!warning]
 > Please note that a server reboot will occur when the backup is unmounted.
->                   
-                                                                                
+>  
+
 ### Best practice for using auto-backups
 
 The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.

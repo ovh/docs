@@ -10,7 +10,7 @@ order: 6
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07-10-2021**
+**Ostatnia aktualizacja z dnia 01-02-2022**
 
 ## Wprowadzenie
 
@@ -25,7 +25,7 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w
 
 ## Wymagania początkowe
 
-* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów
+* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera dedykowanego kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}.
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
@@ -38,7 +38,16 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w
 > W tej gamie serwerów znajdują się 4 karty sieciowe. Dwa dla publiczności, dwa dla prywatnego. Aby korzystać z całej przepustowości, należy utworzyć agregaty.
 >
 
+> [!warning]
+>
+> Znana wada jest obecnie widoczna w graficznym interfejsie użytkownika ESXi. Wykonanie tych etapów w interfejsie spowoduje niefunkcjonalną konfigurację. Konieczne jest zastosowanie tej konfiguracji przy użyciu interfejsu wiersza poleceń przez SSH.
+>
+
 ### IP Failover w sieci vRack
+
+Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i otwórz menu `vRack`{.action}.
+
+Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
 #### Konfiguracja początkowa
 

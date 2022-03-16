@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 2
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 19/01/2022**
 
 ## Objetivo
 
@@ -72,7 +72,7 @@ Habrá recibido esta información por correo electrónico tras la instalación d
 
 ![Instalación de un sitio web](images/get-website-online-step1.png){.thumbnail}
 
-Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](../conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}. Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}.
+Se mostrará la información relativa a su espacio de almacenamiento. Entre esa información se encuentran los datos necesarios para conectarse a este último. Para más información, consulte nuestra guía [Conectarse al espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/){.external}. Si no recuerda la contraseña, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](https://docs.ovh.com/us/es/hosting/cambiar-contrasena-usuario-ftp/){.external}.
 
 Una vez que disponga de todos los datos necesarios, podrá conectarse a su espacio de almacenamiento de tres formas diferentes:
 
@@ -88,7 +88,11 @@ Una vez que se haya conectado al espacio de almacenamiento, solo tendrá que sub
 
 Para conocer la carpeta en la que debe colocar el sitio web, vaya a la pestaña `Multisitio`{.action} del área de cliente de OVH. Aparecerá una tabla en la que podrá consultar la **Carpeta raíz** del dominio correspondiente. Ese es el directorio en el que debe colocar los archivos del sitio web.
 
-Es posible que en el espacio de almacenamiento ya haya un archivo denominado **index.html**, que puede haber sido creado por OVH durante la instalación del alojamiento para mostrar una página por defecto en el sitio web. En ese caso, no olvide eliminarlo (o renombrarlo) antes de colocar sus archivos.
+Es posible que en el espacio de almacenamiento ya haya un archivo denominado index.html, que puede haber sido creado por OVHcloud al instalar el alojamiento para mostrar una página por defecto en su sitio web. En ese caso, no olvide eliminarlo (o renombrarlo) antes de colocar sus archivos.
+
+> [!primary]
+>
+> Un archivo "index.php" siempre estará por encima de un archivo "index.html". Por lo tanto, cuando ambos están presentes, sólo se llamará "index.php".
 
 ![Instalación de un sitio web](images/get-website-online-step2.png){.thumbnail}
 
@@ -103,13 +107,13 @@ En la actualidad, prácticamente todos los sistemas de gestión de contenidos (C
 
 Según el sitio web, la conexión puede realizarse, o bien manualmente, o bien a través de un panel de administración generado por el propio sitio web. Para ello, debe realizar las acciones que se indican a continuación.
 
-#### 3.1. Obtener la base de datos existente (opcional)
+#### 3.1. Obtener la base de datos existente 
 
 Si va a migrar un sitio web que ya existe, descargue la base de datos desde su anterior proveedor. Si se trata de un sitio web nuevo, omita este paso.
 
-#### 3.2. Crear la base de datos en OVH (opcional)
+#### 3.2. Crear la base de datos en OVH 
 
-Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, una solución [SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/start-sql/){.external} o [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}), necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
+Si ya dispone de una base de datos (incluida con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}, necesitará el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor. Una vez disponga de estos datos, vaya al siguiente paso.
 
 Si quiere crear una nueva base de datos en OVH, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `Bases de datos`{.action}.
 
@@ -118,13 +122,11 @@ A continuación, haga clic en `Crear una base de datos`{.action} o, si este bot�
 ![Instalación de un sitio web](images/get-website-online-step3.png){.thumbnail}
 
 
-#### 3.3. Importar una base de datos existente (opcional)
+#### 3.3. Importar una base de datos existente 
 
 Si está migrando un sitio web, deberá importar la base de datos existente en la que acaba de crear. Si se trata de un sitio web nuevo, omita este paso.
 
-Existen diversas formas de realizar la importación. OVH le ofrece la posibilidad de hacerlo desde el área de cliente. Para ello, sitúese en la tabla que contiene las bases de datos creadas en su servicio, haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos recién creada y seleccione la opción `Importar un archivo`{.action}. Introduzca la información solicitada.
-
-![Instalación de un sitio web](images/get-website-online-step4.png){.thumbnail}
+Existen diversas formas de realizar la importación. OVHcloud ofrece una desde el área de cliente. Una vez que haya accedido a la lista de bases de datos creadas en su servicio, haga clic en el botón `...`{.action} situado a la derecha de la base de datos y seleccione `Importar un archivo`{.action}.
 
 #### 3.4. Conectar el sitio web a la base de datos
 

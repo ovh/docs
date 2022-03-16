@@ -23,11 +23,11 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 ## W praktyce
 
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Webcloud`{.action}. Kliknij `Microsoft`{.action}, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+
 ### Hosted Exchange 
 
 #### Zamówienie dodatkowych kont
-
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.action}w lewym górnym rogu i wybierz opcję `Zamów konta`{.action}
 
@@ -35,8 +35,6 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 
 #### Zmiana częstotliwości odnawiania usługi dla Twoich kont
-
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}. 
 
@@ -56,15 +54,13 @@ Poniższy przykład zawiera działania, które należy przeprowadzić, aby przej
 
 > W drugim etapie wyświetli się podsumowanie wskazujące wprowadzoną zmianę. Kliknij przycisk `Wyślij`{.action} na dole po lewej.
 
-> ![billing_exchange](images/billing-exchange-03.gif){.thumbnail}
+> ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Usuwanie kont
 
 Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, przechodząc procedurę konfiguracji jego odnawiania w sekcji „**Wygasa z końcem**”. W tym celu należy zapoznać się z etapem [„zmiana częstotliwości odnawiania kont”](./#modifier-la-periodicite-de-vos-comptes){.external}.
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
-
-W tym celu zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action} Twojej usługi, kliknij przycisk `...`{.action} przed danym kontem, a następnie kliknij `Zresetuj`{.action}. Po zresetowaniu konto pozostanie nieaktywne do czasu wygaśnięcia.
 
@@ -76,16 +72,12 @@ Przejdź do karty `Konta e-mail`{.action} Twojej usługi, kliknij przycisk `...`
 
 #### Zamówienie dodatkowych kont
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
-
 Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.action} w lewym górnym rogu i wybierz opcję `Dodaj konto`{.action}. Konto zostanie zafakturowane za bieżący miesiąc.
 
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 
 #### Usuwanie kont
-
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego konta i wybierz `Usuń`{.action}. Konto zostanie natychmiastowo usunięte z usługi, nie ma więc potrzeby przeprowadzenia procesu rezygnacji.
 

@@ -6,7 +6,7 @@ section: "Gestion depuis l'espace client"
 order: 6
 ---
 
-**Dernière mise à jour le 27 septembre 2018**
+**Dernière mise à jour le 10/02/2022**
 
 ## Objectif
 
@@ -18,8 +18,9 @@ Pour récupérer l'accès, nous avons mis à votre disposition un [mode rescue](
 
 ## Prérequis
 
+- Disposer d'une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)dans votre compte OVHcloud
+- Avoir accès à votre instance via SSH en [mode rescue](../passer-une-instance-en-mode-rescue/)
 - Créer une clé SSH
-- Passer une instance en mode rescue
 
 ## En pratique
 
@@ -28,7 +29,7 @@ Pour récupérer l'accès, nous avons mis à votre disposition un [mode rescue](
 Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
 >
 
-Après avoir monté le disque de votre instance en [mode rescue](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/), vous serez en mesure d'accéder à l'ensemble de vos fichiers.
+Après avoir monté le disque de votre instance en mode rescue, vous serez en mesure d'accéder à l'ensemble de vos fichiers.
 
 Le fichier contenant vos clés SSH est le fichier :
 
@@ -82,8 +83,7 @@ Une fois cette modification effectuée et sauvegardée, il vous suffit de redém
 
 ## Aller plus loin
 
-[Passer une instance en mode rescue](https://docs.ovh.com/fr/public-cloud/passer-une-instance-en-mode-rescue/)
-
+[Passer root et définir un mot de passe](https://docs.ovh.com/fr/public-cloud/passer-root-et-definir-un-mot-de-passe/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

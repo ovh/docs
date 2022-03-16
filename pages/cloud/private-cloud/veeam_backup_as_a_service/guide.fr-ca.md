@@ -26,11 +26,6 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler-new/) sur le ou les clusters.
 * Mettre en place la gestion des licences Windows sur le Private Cloud.
 
-> [!primary]
->
-> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (11) proposée par Veeam. OVHcloud continuera de proposer la version 10 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
->
-
 ## En pratique
 
 ### Activer le service

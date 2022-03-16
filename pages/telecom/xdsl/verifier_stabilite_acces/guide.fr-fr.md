@@ -6,7 +6,7 @@ section: 'Diagnostic et dépannage'
 order: 9
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -45,9 +45,9 @@ La période de récupération des logs radius est de trois mois maximum.
 
 ### Récupérer le serviceName de votre accès xDSL ou FTTH
 
-Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} dans le menu de gauche puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
+Le *serviceName* correspond à la référence interne de votre accès. Pour la retrouver, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr), partie `Telecom`{.action}. Cliquez sur `Accès Internet`{.action} puis sélectionnez votre offre xDSL ou FTTH. La référence interne est affichée dans le cadre `Accès Internet` à droite.
 
-![serviceName dans espace client](images/servicename.png){.thumbnail}
+![serviceName dans espace client](images/servicename-2022.png){.thumbnail}
 
 ### Utiliser les API OVHcloud
 

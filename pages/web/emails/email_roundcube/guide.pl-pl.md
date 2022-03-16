@@ -167,7 +167,7 @@ Pozostałe opcje są widoczne na zrzucie ekranu.
 
 Można zmienić tą wartość na "zawsze", żeby wysyłać wiadomości w formacie HTML.
 
-![](images/img_1288.jpg){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 #### Książka adresowa
@@ -341,13 +341,13 @@ Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
 ### Wiadomość e-mail
 
 #### Tworzenie nowej wiadomości
-Aby napisać nową wiadomość, kliknij na Utwórz.
+Aby napisać nową wiadomość, kliknij na `Utwórz`{.action}.
 
-![](images/img_1404.jpg){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 #### Opcje
-Po kliknięciu na "Utwórz" pojawią się opcje niezbędne do napisania wiadomości e-mail takie jak dodanie kontaktu z [książki adresowej](#CARNET), [załączniki](#ATTACHED) i [ustawienia](#SIGNATURE) wiadomości.
+Po kliknięciu na `Utwórz`{.action} pojawią się opcje niezbędne do napisania wiadomości e-mail takie jak dodanie kontaktu z [książki adresowej](#CARNET), [załączniki](#ATTACHED) i [ustawienia](#SIGNATURE) wiadomości.
 Możesz wyszukiwać zarejestrowanych adresatów klikając na typ kopii:
 
 - To+: dodaj kontakt jako bezpośredniego adresata;

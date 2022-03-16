@@ -16,8 +16,8 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) with Windows installed in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) with Windows installed in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
 ## Instructions
@@ -26,15 +26,15 @@ The following steps describe the process of changing the local admin password by
 
 ### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
 
-The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.<br>
-In the popup window, tick **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.<br>
+In the next page, select **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 <br>Click on `Next`{.action} and `Confirm`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
@@ -275,13 +275,13 @@ It is advisable to use the virtual keyboard when typing passwords in this interf
 
 #### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
 
-The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}. In the popup window, tick **Boot in rescue mode** and select "WinRescue" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
+The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}. In the next page, select **Boot in rescue mode** and select "WinRescue" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode. This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode. This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 

@@ -90,7 +90,7 @@ Clicca sui tre puntini `...`{.action} a destra della riga relativa al tuo modulo
 
 Per eliminare il tuo modulo in 1 click, è necessario iniziare ad identificarne il database in modo **sicuro**. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Web Cloud`{.action}, `Hosting`{.action}, sul tuo hosting e poi sulla scheda `Database`{.action}.
 
-Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/), puoi considerare che si tratta di quello del tuo sito.
+Se disponi di un solo database in questa parte del tuo Spazio Cliente e non disponi di soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/), puoi considerare che si tratta di quello del tuo sito.
 
 In caso contrario, clicca sulla scheda `Multisito`{.action}. Annota il nome della `Cartella di root`: è la directory in cui sono presenti i file che costituiscono il tuo modulo in 1 click sul server FTP.
 

@@ -29,7 +29,7 @@ Gli errori sugli account email Exchange possono avere diverse cause. Una diagnos
 
 ### Realizza una diagnostica
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action} nel menu a sinistra, clicca su `Exchange`{.action} e seleziona il tuo servizio.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella sezione `Web Cloud`{.action}. Seleziona `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona il tuo servizio.
 
 ![Diagnostica Exchange](images/img_4450.png){.thumbnail}
 
@@ -93,7 +93,7 @@ In base all'utilizzo del tuo servizio Exchange, i server MX seguenti sono validi
 
 > [!warning]
 > Nelle nostre guide, utilizziamo come nome server: ex<b>?</b>.mail.ovh.net. Dovrai sostituire il ""? " dal numero corrispondente al server del tuo servizio Exchange.<br>
-> Queste informazioni sono disponibili nello Spazio Cliente OVHcloud, sezione `Web Cloud`{.action}.  Apri `Microsoft`{.action} nel menu a sinistra, poi `Exchange`{.action} e seleziona il tuo servizio. Il nome del server compare nella sezione **Connessione** della scheda `Informazioni generali`{.action}.
+> Queste informazioni sono disponibili nello Spazio Cliente OVHcloud, sezione `Web Cloud`{.action}. Apri `Microsoft`{.action}, poi `Exchange`{.action} e seleziona il tuo servizio. Il nome del server compare nella sezione **Connessione** della scheda `Informazioni generali`{.action}.
 >
 
 > [!primary]

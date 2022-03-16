@@ -106,6 +106,8 @@ Para criar uma pasta, clique com o botão direito do rato no seu endereço de e-
 
 #### Criar regras inbox
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Para gerir as regras, clique no ícone de engrenagem na parte superior e, de seguida, em `Opções`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -121,6 +123,16 @@ Preencha a informação solicitada consoante a regra que pretende que seja execu
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](../criar-regras-inbox-no-owa/).
+
+#### Bloquear um remetente
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Clique na roda dentada no canto superior direito e, a seguir, em "Opções". Na coluna da esquerda, siga a secção "Correio", em "Contas", e depois "Bloquear ou autorizar".
+
+Na secção "**Remetentes bloqueados**", introduza um endereço de e-mail ou um domínio a bloquear e clique no botão `+`{.action} para o adicionar na lista.
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Gerir uma lista de contactos
 
@@ -139,6 +151,8 @@ Nesta nova página, pode adicionar um novo contacto, criar uma lista de contacto
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Alterar a palavra-passe
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Pode alterar a palavra-passe da sua conta quando tiver iniciado uma sessão no OWA. Para o fazer, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 

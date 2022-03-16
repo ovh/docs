@@ -3,7 +3,7 @@ title: Introducing Horizon
 excerpt: Discover the main sections of the Horizon interface
 slug: horizon
 section: Horizon
-order: 1
+order: 02
 ---
 
 **Last updated 5th November 2021**

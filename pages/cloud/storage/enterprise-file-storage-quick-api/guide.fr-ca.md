@@ -6,10 +6,6 @@ section: Enterprise File Storage
 order: 2
 ---
 
-> [!warning]
-> Enterprise File Storage est un produit en phase **Bêta**. Pendant cette phase, le service n'est pas disponible pour les clients en dehors de l'Europe.
->
-
 **Dernière mise à jour le 27/10/2021**
 
 ## Objectif
@@ -21,7 +17,7 @@ Dans ce guide de démarrage rapide, découvrez comment débuter sur votre offre 
 ## Prérequis
 
 - Disposer d'une offre OVHcloud Enterprise File Storage
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
 - Savoir [monter un partage NFS](https://docs.ovh.com/ca/fr/storage/nas/nas-nfs/)
 
 ## L'essentiel
@@ -32,7 +28,7 @@ Vous avez la possibilité de choisir la taille de vos volumes, gérer les accès
 
 ## En pratique
 
-Toutes les API utilisées pour ce guide sont disponibles dans la section */storage* : <https://api.ovh.com/console/#/storage>.
+Toutes les API utilisées pour ce guide sont disponibles dans la section */storage* : <https://ca.api.ovh.com/console/#/storage>.
 
 > [!primary]
 >
