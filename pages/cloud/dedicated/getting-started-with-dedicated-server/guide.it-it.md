@@ -125,6 +125,8 @@ Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](../int
 
 Una volta completata l'installazione, riceverai un'email con la password per l'accesso amministratore (root). Utilizza queste credenziali per connetterti al server via RDP (**R**emote **D**esktop **P**rotocol). Una volta connesso, Windows ti guiderà durante l'installazione iniziale.
 
+Consulta anche la nostra guida [Configurare una nuova installazione di Windows Server](https://docs.ovh.com/it/dedicated/windows-first-config/).
+
 ### Riavvio del tuo server dedicato <a name="reboot"></a>
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
