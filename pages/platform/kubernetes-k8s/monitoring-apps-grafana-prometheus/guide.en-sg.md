@@ -1,7 +1,7 @@
 ---
-title: Monitoring apps on OVHcloud Managed Kubernetes Service with Prometheus and Grafana
+title: Monitoring apps with Prometheus and Grafana on OVHcloud Managed Kubernetes Service
 slug: monitoring-apps-prometheus-grafana
-excerpt: 'Find out how to monitor and visualize metrics on OVHcloud Managed Kubernetes Service with Prometheus and Grafana.'
+excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on OVHcloud Managed Kubernetes Service.'
 section: Monitoring & Observability
 order: 00
 ---
