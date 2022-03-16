@@ -1,62 +1,74 @@
 ---
-title: 'Création et suppression d’un utilisateur OpenStack'
+title: 'Création et suppression d’utilisateurs OpenStack'
 slug: creation-et-suppression-dun-utilisateur-openstack
 section: 'Gestion de projets'
+excerpt: Apprenez à créer et supprimer un utilisateur OpenStack depuis votre espace client
 order: 9
 ---
 
-**Dernière mise à jour le 6 décembre 2019**
+**Dernière mise à jour le 16/03/2022**
 
 ## Objectif
-Pour pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable créer un utilisateur OpenStack. Vous pouvez créer un nombre illimité d’utilisateurs OpenStack.
 
-**Découvrez comment créer et supprimer un utilisateur OpenStack.**
+L’accès à Horizon et aux API OpenStack s’effectue via des paires login/mot de passe appelées "*OpenStack users*". Vous pouvez créer autant d'utilisateurs OpenStack que nécessaire et leur attribuer différents droits d'accès.
+
+**Ce guide vous explique comment gérer des utilisateurs OpenStack depuis votre espace client.**
 
 ## Prérequis
 
-Disposer d'un projet Public Cloud. S'il s'agit de votre premier projet, il doit dater de plus de 7 jours (ou contactez l’assistance technique pour vérifier si vous pouvez débloquer le projet plus tôt). Les autres projets n’auront pas cette limitation.
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
-## En pratique
+> [!primary]
+>
+> Si le projet Public Cloud concerné est le **premier projet** créé dans votre espace client, les utilisateurs OpenStack ne seront disponibles qu’au bout de 7 jours à compter de la date de création du projet.
+>
+> Vous pouvez demander la suppression de cette mesure de sécurité en créant un ticket d'assistance dans votre espace client.
+>
 
-### Créer un utilisateur OpenStack.
-Tout d’abord, pour accéder à l’interface Horizon, vous devez créer un compte utilisateur OpenStack. Pour ce faire, connectez-vous à votre espace client et sélectionnez `Public Cloud`{.action}. Sur l’écran qui s’affiche, cliquez sur la `flèche`{.action} à côté du nom de votre projet en haut, à gauche.
+## Instructions
 
-![Add user](images/select_project.png){.thumbnail}
+### Création d'un utilisateur OpenStack
 
-Dans la rubrique « Project Management » dans la barre latérale gauche, sélectionnez `Users & Roles`{.action}.
+Connectez-vous à votre espace client OVHcloud et ouvrez votre projet `Public Cloud`{.action}. Cliquez sur `Users & Roles`{.action} dans le menu de gauche sous "Project management". 
+
+Cliquez sur le bouton `Créer un utilisateur`{.action}.
 
 ![User roles](images/users_roles.png){.thumbnail}
 
-Cliquez sur le bouton `Créer un utilisateur`{.action} pour afficher la fenêtre contextuelle suivante.
+La description de l'utilisateur n'est pas le nom d'utilisateur de l'utilisateur OpenStack mais un terme descriptif pour vous aider à organiser les utilisateurs et leurs droits. Entrez une description et cliquez sur `Suivant`{.action}.
 
 ![Add user](images/adduser.png){.thumbnail}
 
-La description de l’utilisateur ne représente pas le nom de cet utilisateur. Il s’agit simplement d’un terme descriptif qui vous rappellera le type d’utilisateur auquel il appartient. Sur l’écran suivant, vous pourrez définir les autorisations de l’utilisateur. Pour chaque case d’autorisation que vous cochez, l’utilisateur obtiendra les privilèges correspondants indiqués dans le tableau ci-dessous :
+Vous pouvez maintenant sélectionner des rôles d'utilisateur représentant les autorisations que l'utilisateur aura. Pour chaque case cochée, l’utilisateur obtiendra des privilèges d’accès selon le tableau ci-dessous.
 
 ![Permissions](images/permissions.png){.thumbnail}
 
-Cliquez sur le bouton `Confirmer`{.action} lorsque vous avez terminé et vous verrez l’écran suivant :
+Cliquez sur `Confirmer`{.action} pour créer l'utilisateur OpenStack. L’identifiant et le mot de passe sont automatiquement générés et affichés dans votre espace client.
 
 ![User_pw](images/user_pw.png){.thumbnail}
 
-Enregistrez votre mot de passe à cet instant même, car c’est la seule occasion que vous aurez de le récupérer. Toutefois, si vous le perdez, vous pouvez toujours en créer un nouveau en cliquant sur le bouton (...) à droite de l'utilisateur puis sur `Regénérer un mot de passe :`{.action}
+Veillez à enregistrer le mot de passe affiché dans le message vert dans un gestionnaire de mots de passe pour le moment. Le mot de passe ne pourra pas être récupéré par la suite. Cependant, il est toujours possible de créer un nouveau mot de passe en cliquant sur `...`{.action} et en sélectionnant `Regénérer un mot de passe`{.action}.
 
 ![Generate](images/generatepw.png){.thumbnail}
 
-Une fois votre utilisateur créé, vous pouvez utiliser ces identifiants pour vous connecter à l’interface Horizon via le bouton `Horizon`{.action} dans la barre latérale gauche.
+Avec l'utilisateur OpenStack créé, vous pourrez utiliser ses identifiants pour vous connecter à [l'interface Horizon](https://docs.ovh.com/fr/public-cloud/horizon/) en cliquant sur le lien `Horizon`{.action} dans le menu de gauche.
 
-### Supprimer un utilisateur OpenStack
+### Suppression de l'utilisateur OpenStack
 
-Vous pouvez supprimer un utilisateur OpenStack depuis le menu `Users & Roles`{.action}. Cliquez sur le bouton (...) à droite de l'utilisateur à supprimer puis sur `Supprimer`{.action}. Vous devrez alors confirmer la suppression.
+La suppression de l'utilisateur OpenStack se fait depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Users & Roles`{.action} dans le menu de gauche sous "Project management". 
 
 ![public-cloud](images/delete.png){.thumbnail}
 
+Cliquez sur `...`{.action} et sélectionnez `Supprimer`{.action}.
 
-> [!alert]
+> [!warning]
 >
-> Toute suppression d’utilisateur est définitive et invalidera tous les tokens associés, y compris ceux dont la date d’expiration n’est pas encore dépassée.
->
+> La suppression d'un utilisateur est définitive et invalidera tous les tokens associés, y compris ceux dont la date d'expiration n'est pas encore dépassée.
+> 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+[Présentation de Horizon](https://docs.ovh.com/fr/public-cloud/horizon/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
