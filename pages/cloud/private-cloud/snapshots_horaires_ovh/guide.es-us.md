@@ -12,7 +12,7 @@ order: 06
 > 
 
 
-**Última actualización: 21/10/2020**
+**Última actualización: 15/03/2022**
 
 ## Objetivo
 
@@ -47,6 +47,11 @@ Por lo tanto, puede decirse que el tamaño de un snapshot es aproximadamente igu
 En la práctica, un snapshot creado en el momento T solo hará unos cuantos kilobytes. El tamaño del snapshot aumentará en función de las modificaciones realizadas hasta el siguiente snapshot. Si elimina los datos, el espacio solo se liberará al eliminar el snapshot.
 
 ## Snapshot a H-1
+
+> [!warning]
+>
+> La carpeta .zfs ya no es visible para las nuevas generaciones de datastores. No obstante, puede utilizar el soporte técnico para solicitar la restauración de una MV con un snapshot por horas a H-1.
+>
 
 Es posible recuperar el snapshot ZFS de la última hora (H-1) desde el vSphere Web Client HTML, ya que este se almacena directamente en sus datastores. 
 
