@@ -1,7 +1,7 @@
 ---
-title: Monitoring apps with Prometheus and Grafana on OVHcloud Managed Kubernetes Service
+title: Monitoring apps with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service
 slug: monitoring-apps-prometheus-grafana
-excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on OVHcloud Managed Kubernetes Service.'
+excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Grafana on an OVHcloud Managed Kubernetes Service'
 section: Monitoring & Observability
 order: 00
 ---
@@ -36,9 +36,9 @@ In this tutorial we will show you how to monitor your applications/workloads on 
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](../deploying-hello-world/).
 
-You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You also need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
 ## Instructions
 
@@ -54,13 +54,13 @@ The [Prometheus Operator](https://github.com/prometheus-operator/prometheus-oper
 
 ![Prometheus Architecture](images/prometheus-scraping-schema.png){.thumbnail}
 
-The purpose of this project is to simplify and automate the configuration of a Prometheus based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys a Grafana and their dashboards, to visualize our metrics in a user-friendly way.
+The purpose of this project is to simplify and automate the configuration of a Prometheus-based monitoring stack for Kubernetes clusters. The Prometheus operator also deploys Grafana and its dashboards, to visualize our metrics in a user-friendly way.
 
-If you are interested about the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
+If you are interested into the operator, feel free to read the [Prometheus operator official documentation](https://github.com/prometheus-operator/prometheus-operator){.external}.
 
 ### Installing the Prometheus operator
 
-For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack){.external} found on [Prometheus Community repository](https://github.com/prometheus-community){.external}.
+For this tutorial we are using the [Prometheus Operator Helm chart](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack){.external} found on the [Prometheus Community repository](https://github.com/prometheus-community){.external}.
 
 Add the Prometheus Helm repository:
 
@@ -82,7 +82,7 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈Happy Helming!⎈
 </code></pre>
 
-You need to modify some settings. To do this, you will inspect the chart to retrieve these values ​​in a file:
+You need to modify some settings. To do this, inspect the chart to retrieve these values ​​in a file:
 
 ```bash
 helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prometheus-stack.values
@@ -90,15 +90,15 @@ helm inspect values prometheus-community/kube-prometheus-stack > /tmp/kube-prome
 
 Open the `/tmp/kube-prometheus-stack.values` file in your favorite editor.
 
-Then, into it, search for `adminPassword` and replace it with the password you want to use for Grafana.
+Then search into it for `adminPassword` and replace it with the password you want to use for Grafana.
 
-By default, Grafana password should be like this:
+By default, the Grafana password should be like this:
 
 ```yaml
   adminPassword: prom-operator
 ```
 
-Please, copy the Grafana admin password, you will use it later in this tutorial.
+Copy and save the Grafana admin password, you will use it later in this tutorial.
 
 You are now ready to install Prometheus and Grafana.
 
@@ -149,7 +149,7 @@ kube-prometheus-stack-1647417678-prometheus-node-exporter-xkqt2   1/1     Runnin
 prometheus-kube-prometheus-stack-1647-prometheus-0                2/2     Running   0          14m
 </code></pre>
 
-And you can check that `Prometheus` and `Grafana` have an external IP:
+You can also check that `Prometheus` and `Grafana` have an external IP:
 
 <pre class="console"><code>$ kubectl get svc -n prometheus
 NAME                                                        TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                      AGE
@@ -167,7 +167,7 @@ If it's not the case, please wait until the Load Balancers are correctly created
 
 ### Visualize the metrics
 
-Now you can retrieve Prometheus and Grafana URL thanks to the following commands:
+Now you can retrieve Prometheus and Grafana URLs with the following commands:
 
 ```bash
 export PROMETHEUS_URL=$(kubectl get svc -n prometheus -l app=kube-prometheus-stack-prometheus -o jsonpath='{.items[].status.loadBalancer.ingress[].ip}')
@@ -194,7 +194,8 @@ Grafana URL: http://51.178.69.167
 
 Open your browser and go to the Prometheus interface.
 
-Built-in, without doing anything on your side, several metrics are already availability. You can test them by typing `sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)` in the search bar.
+Without doing anything on your side, several built-in metrics are already available. You can test them by typing `sum(kube_pod_owner{job="kube-state-metrics"}) by (namespace)` in the search bar.
+
 Click on the `Execute`{.action} button to determine if the Kubernetes metrics are visible:
 
 ![Prometheus](images/prometheus.png){.thumbnail}
@@ -203,7 +204,7 @@ Thanks to the PromQL query you can list the number of pods per namespace in your
 
 Kubernetes components emit metrics in Prometheus format. You can find more information in the [Kubernetes official documentation](https://kubernetes.io/docs/concepts/cluster-administration/system-metrics/){.external}.
 
-You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials bellow:
+You can also go to the Grafana interface. Open your browser and point to `http://$GRAFANA_URL` value using the credentials below:
 
 - Login: `admin`
 - Password: `prom-operator` (by default)
@@ -217,13 +218,13 @@ This time again, thanks to the prometheus operator and without doing anything on
 ![Grafana](images/grafana-browse.png){.thumbnail}
 ![Grafana](images/grafana-dashboards.png){.thumbnail}
 
-You can click on `General/Kubernetes/Compute Resources/Cluster` dashboard for example to visualize the metrics of your Kubernetes cluster:
+For example, you can click on the `General/Kubernetes/Compute Resources/Cluster` dashboard to visualize the metrics of your Kubernetes cluster:
 
 ![Grafana](images/grafana-metrics.png){.thumbnail}
 
 ## Cleanup
 
-First, execute `helm list` command in every namespaces (with `-A` option) in your Kubernetes cluster to see what you've installed.
+First, execute the `helm list` command in every namespace (with `-A` option) in your Kubernetes cluster to see what you've installed.
 
 <pre class="console"><code>$ helm list -A
 NAME                            	NAMESPACE    	REVISION	UPDATED                             	STATUS  	CHART                       	APP VERSION
@@ -244,7 +245,7 @@ release "kube-prometheus-stack-1647417678" uninstalled
 
 ## Go further
 
-Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in order to create alerts for example.
+Prometheus and Grafana are very powerful monitoring tools, but also have alerting systems. Don't hesitate to dig in, to create alerts for example.
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation](../).
 
