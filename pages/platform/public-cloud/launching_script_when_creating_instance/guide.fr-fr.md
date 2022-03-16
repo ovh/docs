@@ -105,6 +105,15 @@ Après avoir récupéré la liste des images et des modèles d'instance, il est 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1
 ```
+> [!primary]
+> Veuillez noter qu'avec le script ci-dessus, à moins qu'il ne soit spécifié, l'instance sera créée avec un abonnement horaire. 
+>
+
+Pour passer l'instance à un abonnement mensuel, exécutez la commande suivante :
+
+```sh
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
+```
 
 Après vérification, notre utilisateur est correctement ajouté après la création de l'instance avec les droits nécessaires :
 

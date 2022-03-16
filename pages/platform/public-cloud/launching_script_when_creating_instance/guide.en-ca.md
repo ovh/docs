@@ -14,8 +14,8 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Requirements
 
-- An environment that is ready to use the OpenStack API
-- OpenStack environment variables set
+- [An environment that is ready to use the OpenStack API](.../prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack environment variables set](.../public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -105,6 +105,16 @@ After you have retrieved the list of images and instance templates, you can laun
 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1
+```
+
+> [!primary]
+> Please note that with the above script unless specified, the instance will be created with an hourly subscription. 
+>
+
+To switch the instance to a monthly subscription, execute the following command:
+
+```sh
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 After we have double-checked the details, our user is correctly added after the instance has been created, and they have all of the permissions required:
