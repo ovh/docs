@@ -34,6 +34,8 @@ Lors de la création d’une instance Public Cloud, vous pouvez choisir entre un
 
 ## En pratique
 
+### Depuis l'espace client OVHcloud
+
 Dans [votre espace client](https://ca.ovh.com/auth/?action=alleraugestionnaire){.external}, cliquez sur `Public cloud`{.action}, choisissez le projet Public cloud concerné puis cliquez sur `Instances`{.action} dans le menu `Compute`. Cliquez sur le bouton `...`{.action} à droite de l'instance pour laquelle vous souhaitez modifier la facturation. Vous verrez alors le bouton `Passer au forfait mensuel`{.action} :
 
 ![Modifier le mode de calcul des factures](images/switch_to_monthly_updated.png){.thumbnail}
@@ -43,6 +45,27 @@ Il vous faudra ensuite confirmer que vous souhaitez modifier le mode de facturat
 ![Confirmer la modification du mode de calcul des factures](images/confirm_to_monthly_updated.png){.thumbnail}
 
 Après validation de votre choix, vous recevrez immédiatement une facture mensuelle au prorata. La prochaine facture inclura la partie du mois à l'heure (le 1er du mois jusqu'au changement) et les nouveaux frais mensuels.
+
+### Depuis l'API Openstack
+
+Lors de la création d'une instance à l'aide de l'API Openstack, sauf si cela est spécifié dans le script de création, l'instance est automatiquement créée avec un abonnement horaire. Pour passer à un abonnement mensuel, exécutez la commande suivante :
+
+```sh
+openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```
+
+Remplacez "InstanceID" par l'ID de l'instance correspondante. Cet identifiant peut être récupéré depuis l’espace client ou l’API OVHcloud.
+
+### Depuis l'API OVHcloud
+
+Connectez-vous à l’[interface API OVHcloud](https://ca.api.ovh.com/console/) selon le [guide approprié](../../api-premiers-pas/) et suivez les étapes ci-dessous.
+
+Utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+>
 
 ## Aller plus loin
 
