@@ -36,7 +36,7 @@ Pode facilmente reinstalar o seu servidor e escolher outra imagem de OS na sua [
 
 ![Botão Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
-No ecrã seguinte, selecione `Instalar a partir de um template OVH`{.action} ou `Instalar um dos seus templates`{.action} para utilizar um template de instalação.
+No ecrã seguinte, selecione `Instalar a partir de um template OVHcloud`{.action} ou `Instalar um dos seus templates`{.action} para utilizar um template de instalação.
 
 Para poder instalar uma imagem personalizada no servidor, escolha a terceira opção `Instalar a partir de uma imagem personalizada`{.action}. Consulte o manual "[Utilizar a funcionalidade Bring Your Own Image](../bringyourownimage/)" para saber mais sobre os parâmetros desta funcionalidade.
 
