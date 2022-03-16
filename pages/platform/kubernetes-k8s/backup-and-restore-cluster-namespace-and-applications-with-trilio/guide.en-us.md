@@ -27,7 +27,7 @@ sections: 'Tutorials'
  }
 </style>
 
-**Last updated February 24<sup>th</sup>, 2022.**
+**Last updated March 20<sup>th</sup>, 2022.**
 
 ## Introduction
 
@@ -187,6 +187,8 @@ csi-cinder-classic          cinder.csi.openstack.org   Delete          Immediate
 csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate           true                   3d
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
+**Disclaimer** As of today, the storage classes `csi-cinder-classic` and `csi-cinder-high-speed` does not support the `volume snapshot` capability out of the box. The OVH Managed Kubernetes Service team is working to add this feature in the next version planned to release by mid of May 2022. While it get the updated, users can use any `CSI provisioner` compatible with the underlying `cinder` storage. In this example, we have used `Hostpath CSI driver` for demonstration purpose.
+
 User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
 ## Step 1 - Installing TrilioVault for Kubernetes
@@ -215,14 +217,14 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
   ```shell
   helm repo add triliovault-operator http://charts.k8strilio.net/trilio-stable/k8s-triliovault-operator
-  helm repo add triliovault http://charts.k8strilio.net/trilio-stable/k8s-triliovault
+  helm repo update
   helm search repo triliovault-operator
   ```
   The output looks similar to the following:
 
   ```text
   NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-  triliovault-operator/k8s-triliovault-operator   2.7.0           2.7.0           K8s-TrilioVault-Operator is an operator designe...
+  triliovault-operator/k8s-triliovault-operator   2.7.1           2.7.1           K8s-TrilioVault-Operator is an operator designe...
   ```
   </li>
   <li>The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install `TrilioVault for Kubernetes Operator` on the cluster. You can run `helm install` command to install the Operator which will also install the `Triliovault Manager` CRD. Install `TrilioVault for Kubernetes Operator` using `Helm`:
@@ -241,8 +243,8 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 
   ```text
   NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-  triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.7.0           2.7.0
-  triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.7.0  2.7.0
+  triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.7.1           2.7.1
+  triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.7.1  2.7.1
   ```
   Next, verify that `TrilioVault-Operator` and `Triliovault-Manager` application is up and running:
 
@@ -290,7 +292,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
 	
   ```text
   NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-  triliovault-manager   2.7.0                 Cluster   Deployed
+  triliovault-manager   2.7.1                 Cluster   Deployed
   ```
   </li>
 </ol>
