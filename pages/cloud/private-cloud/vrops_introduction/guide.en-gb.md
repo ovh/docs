@@ -44,7 +44,6 @@ The Data Sources section lists the different spaces monitored by vROPS. By defau
 
 Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple Private Clouds.
 
-
 ### Environments
 
 The Environments section inventories your infrastructure and gives you access to monitoring of all your objects. Objects can be Hosts, Network devices, VMs, Applications... 
