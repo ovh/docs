@@ -231,7 +231,7 @@ To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-ex
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
+To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
@@ -243,12 +243,12 @@ To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-to
 
 #### Sharepoint <a name="sharepoint"></a>
 
-You can either **delete** an individual account from your Sharepoint platform or cancel the entire Sharepoint platform.
+You can either **delete** an individual account from your [Sharepoint platform](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/) or cancel the entire Sharepoint platform.
 If you would like to cancel the entire platform, we advise you to start by deleting each individual account beforehand.
 
 - To delete an individual Sharepoint account, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click on `Microsoft`{.action}, `Sharepoint`{.action} and then on your Sharepoint platform. <br>On the `Users` tab {.action}, click on the `...`{.action} button to the right of the account you want to delete, then on `Disable account`{.action}. Review the information and click on `Confirm` {.action}.
 
-- To cancel your entire [SharePoint](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/) platform, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Service Management`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
+- To cancel your entire SharePoint platform, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Service Management`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
 ### Telecom <a name="telecom"></a>
 

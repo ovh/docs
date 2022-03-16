@@ -137,7 +137,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/hosted-private-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/private-cloud/comment-resilier-le-private-cloud/).
+Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/private-cloud/comment-resilier-le-private-cloud/).
 
 #### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
 
@@ -157,7 +157,7 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Chaque service Public Cloud peut être supprimé en cliquant sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
+Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut être supprimé en cliquant sur le bouton `...`{.action} à droite du service concerné, puis sur `Supprimer`{.action}, comme dans l'exemple ci-dessous pour une instance :
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 

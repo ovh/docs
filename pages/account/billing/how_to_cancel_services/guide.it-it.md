@@ -6,13 +6,17 @@ section: Gestire il rinnovo dei servizi OVHcloud
 order: 03
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 01/03/2022**
 
 ## Obiettivo
 
 Disattivare uno o più servizi OVHcloud Questa guida ti mostra come interrompere il tuo abbonamento dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Per prima cosa, leggi la sezione ">Seleziona il prodotto interessato nella sezione "[Come cancellare il tuo abbonamento?"](#terminate) ".
+Per prima cosa, accedi alla sezione "Cosa succede quando un servizio OVHcloud viene disattivato?](#consequences)".<br> Scegli il prodotto nella sezione "Come disattivare il tuo abbonamento?](#terminate)".
 
 > [!primary]
 >
@@ -23,7 +27,7 @@ Per prima cosa, leggi la sezione ">Seleziona il prodotto interessato nella sezio
 
 ## Cosa succede quando un servizio OVHcloud viene disattivato? <a name="consequences"></a>
 
-La "disattivazione" di un servizio OVHcloud comporta l'interruzione definitiva** del servizio al termine **dell'abbonamento in corso (con un'eccezione, tuttavia, per i [domini](#domain)). È possibile disattivare il servizio o [annullare una richiesta di disattivazione](#cancel) fino a 24 ore prima della data di scadenza dell'abbonamento.
+La "disattivazione" di un servizio OVHcloud comporta l'interruzione **definitiva** del servizio al termine dell'abbonamento in corso (con un'eccezione, tuttavia, per i [domini](#domain)). È possibile disattivare il servizio o [annullare una richiesta di disattivazione](#cancel) fino a 24 ore prima della data di scadenza dell'abbonamento.
 
 Se si tratta di un servizio di posta elettronica, di un server o di un hosting Web, tutti i dati in questione verranno eliminati **senza possibilità di recupero**.
 
@@ -49,43 +53,40 @@ Questo implica che, prima di disattivarsi, devi essere **certo**:
 Clicca sul tipo di prodotto da disattivare nella lista delle principali offerte OVHcloud: 
 
 [Bare Metal Cloud](#baremetalcloud)<br />
-  >
-  >
-  >
-  >
-  >
-  >
+&emsp;&emsp;[Server dedicato](#dedicated)<br />
+&emsp;&emsp;[VPS](#vps)<br />
+&emsp;&emsp;[Managed Bare Metal](#managedbaremetal)<br />
+&emsp;&emsp;[Serveur NAS-HA](#nas)<br />
+&emsp;&emsp;[Load Balancer](#iplb)<br />
+&emsp;&emsp;[Licences](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-  >
-  >
-  >
+&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[Hosted Private Cloud powered by Anthos](#hostedprivatecloud-anthos)<br />
+&emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
 
 [Web Cloud](#webcloud)<br />
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
-  >
+&emsp;&emsp;[Nom de domaine](#domain)<br />
+&emsp;&emsp;[Hébergement Web](#hosting)<br />
+&emsp;&emsp;[Certificat SSL Sectigo](#ssl_sectigo)<br />
+&emsp;&emsp;[OVHcloud Web Paas powered by Platform.sh](#webpaas)<br />
+&emsp;&emsp;[CloudDB](#clouddb)<br />
+&emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
+&emsp;&emsp;[E-mail Pro](#emailpro)<br />
+&emsp;&emsp;[Hosted Exchange](#hosted)<br />
+&emsp;&emsp;[Private Exchange](#private)<br />
+&emsp;&emsp;[Office 365 csp 1](#office-csp1)<br />
+&emsp;&emsp;[Office 365 csp 2](#office-csp2)<br />
+&emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
 [Telecom](#telecom)<br />
-  >
-  >
-  >
-  >
-  >
-
-[Solutions transverses](#transversal)<br />
-  >
+&emsp;&emsp;[xDSL](#xdsl)<br />
+&emsp;&emsp;[VoIP](#voip)<br />
+&emsp;&emsp;[OverTheBox](#otb)<br />
+&emsp;&emsp;[SMS](#sms)<br />
+&emsp;&emsp;[FAX](#fax)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
 

@@ -153,7 +153,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Each Public Cloud service can be deleted by clicking on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
+Each [Public Cloud](https://www.ovhcloud.com/en/public-cloud/) service can be deleted by clicking on the `...`{.action} button to the right of the service concerned, then on `Delete`{.action}, as in the example below for an instance:
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
@@ -190,15 +190,7 @@ You cannot cancel [Sectigo SSL services](https://www.ovhcloud.com/en/web-hosting
 
 #### OVHcloud Web PaaS powered by Platform.sh <a name="webpaas"></a>
 
-To cancel your [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
-
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
-
-Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
-
-#### CloudDB <a name="clouddb"></a>
-
-To cancel your [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) solution, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [Web PaaS solution](https://www.ovhcloud.com/en/web-paas/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -208,7 +200,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 An MX Plan solution is not subject to a periodic subscription. You cannot cancel your order, but you can delete your service if you wish.
 
-To delete your [MX Plan solution](https://docs.ovh.com/gb/en/emails/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To delete your [MX Plan solution](https://docs.ovh.com/us/en/emails/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Delete MX Plan immediately`{.action}.
 
@@ -221,48 +213,15 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 > Deleting a MX Plan will permanently erase all corresponding data. The process of deleting a MX Plan does not entitle you to a refund.
 >
 
-#### Email Pro <a name="emailpro"></a>
-
-To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) service, follow the instructions of this [guide](https://docs.ovh.com/gb/en/emails-pro/emailpro-billing/#deleting-accounts).
-
 #### Hosted Exchange <a name="hosted"></a>
 
-To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) service, follow the instructions of this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
-
-#### Private Exchange <a name="private"></a>
-
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
-
-#### Office 365 CSP1 <a name="office-csp1"></a>
-
-To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/manage-office-365-csp1/#manage-your-subscriptions).
-
-#### Office 365 CSP2 <a name="office-csp2"></a>
-
-To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/order-and-manage-a-group-of-ovh-office-365-csp2-reseller-licences/#manage-your-subscriptions).
-
-#### Sharepoint <a name="sharepoint"></a>
-
-You can either **delete** an individual account from your Sharepoint platform or cancel the entire Sharepoint platform.
-If you would like to cancel the entire platform, we advise you to start by deleting each individual account beforehand.
-
-- To delete an individual Sharepoint account, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section. Click on `Microsoft`{.action}, `Sharepoint`{.action} and then on your Sharepoint platform. <br>On the `Users` tab {.action}, click on the `...`{.action} button to the right of the account you want to delete, then on `Disable account`{.action}. Review the information and click on `Confirm` {.action}.
-
-- To cancel your entire [SharePoint](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/) platform, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
-
-### Telecom <a name="telecom"></a>
-
-#### SMS <a name="sms"></a>
-
-There is no cancellation procedure for [SMS offers](https://www.ovh.co.uk/sms/). An SMS account does not generate a monthly subscription or billing. SMS credits have an unlimited lifetime.
-
-If you would like to delete an SMS account, please create a support request via the OVHcloud Control Panel.
+To cancel your [Hosted Exchange](https://www.ovhcloud.com/en/emails/hosted-exchange/) service, follow the instructions of this [guide](https://docs.ovh.com/us/en/microsoft-collaborative-solutions/manage-exchange-billing/#deleting-accounts).
 
 ### Transversal solutions <a name="transversal"></a>
 
 #### SSL Gateway <a name="ssl_gateway"></a>
 
-To cancel your [SSL Gateway](https://www.ovhcloud.com/en-gb/) solution, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
+To cancel your [SSL Gateway](https://www.ovh.com/world/ssl-gateway/) solution, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on your name in the top right-hand corner, then on `Service Management`{.action}.
 
 Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
 
@@ -285,6 +244,6 @@ Finally, click on `Confirm cancellation`{.action}.
 
 ## Go further <a name="gofurther"></a>
 
-[Managing renewal for OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
+[Managing renewal for OVHcloud services](https://docs.ovh.com/us/en/billing/how-to-use-automatic-renewal-at-ovh/)
 
 Join our community of users on <https://community.ovh.com/en/>.
