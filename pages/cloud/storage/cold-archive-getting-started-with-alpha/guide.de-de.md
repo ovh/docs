@@ -74,7 +74,7 @@ Allowed actions are adding and listing objects.
 Archive a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-archive <bucket_name>
 ```
 
 After this request, the bucket is not archived yet.<br>
@@ -91,7 +91,7 @@ From this command and until a restoration, the bucket cannot accept any read or 
 Restore a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-restore <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-restore <bucket_name>
 ```
 
 After this request, the bucket is not restored yet.<br>
@@ -102,7 +102,7 @@ It will take some time before it is restored and for the objects to be accessibl
 Delete an intelligent-tiering configuration and objects of a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
 After this request, the objects of the bucket are not deleted yet.<br>
@@ -118,7 +118,7 @@ aws s3 rb s3://<bucket_name>
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
 ```
 
 #### List of bucket statuses
