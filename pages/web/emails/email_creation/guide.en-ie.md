@@ -24,7 +24,7 @@ The email addresses in your MX Plan allow you to send and receive your email thr
 
 ### Step 1: Log in to your email service's interface
 
-To begin the procedure, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click on `Emails`{.action} in the service menu on the left, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
+To begin the procedure, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click on `Emails`{.action}, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
 
 The table shown contains all the email addresses created as part of your MX Plan package.
 

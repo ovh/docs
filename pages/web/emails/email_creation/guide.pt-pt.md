@@ -30,7 +30,7 @@ Os endereços de e-mail da oferta MX Plan permitem enviar e receber e-mails no d
 
 A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de [se o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção Web. Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

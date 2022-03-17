@@ -29,7 +29,7 @@ En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-ma
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
 
-Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, depuis la colonne à gauche.
+Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 
 Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
@@ -37,7 +37,7 @@ Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ense
 
 Cliquez sur `Ajouter un répondeur`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations ci-dessous.
 

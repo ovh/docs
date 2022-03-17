@@ -42,7 +42,7 @@ Esistono due tipi di reindirizzamenti:
 
 In base alla data di attivazione della soluzione MXplan o in caso di [recente migrazione del servizio](https://www.ovhcloud.com/it/web-hosting/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva 
 
-accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione “Web” e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action} e seleziona il tuo servizio nella sezione `Email`{.action}. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|

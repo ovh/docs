@@ -25,7 +25,7 @@ Utile dans le cas ou vous souhaitez déléguer  **seulement un ou certains compt
 
 ### Pre-requis
 
-Dans un premier temps, connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe. Puis rendez-vous dans la section "Emails" sur la gauche.
+Dans un premier temps, connectez-vous à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} à l'aide de votre couple identifiant (nic- handle) - mot de passe. Puis rendez-vous dans la section `Emails`{.action}.
 
 ![hosting](images/4135.png){.thumbnail}
 
@@ -33,7 +33,7 @@ Dans un premier temps, connectez-vous à votre [espace client](https://ca.ovh.co
 
 ### Deleguer tout le service email d'un domaine a un identifiant
 
-- Sélectionnez le service e-mail concerné dans le menu de gauche puis positionnez-vous sur l'onglet "Emails"
+- Sélectionnez le service e-mail concerné puis positionnez-vous sur l'onglet `Emails`{.action}
 - Cliquez alors sur "Gérer vos partages pour toutes les adresses email"
 
 ![hosting](images/4141.png){.thumbnail}
@@ -46,7 +46,7 @@ Il est possible d'ajouter plusieurs identifiants OVHcloud pour gérer chaque adr
 
 ### Deleguer un ou plusieurs comptes emails a un identifiant
 
-- Sélectionnez le domaine concerné sur la gauche
+- Sélectionnez le domaine concerné
 - A droite du compte email que vous souhaitez déléguer, cliquez sur le bouton "..."
 - Cliquez sur " Délégation de la gestion "
 

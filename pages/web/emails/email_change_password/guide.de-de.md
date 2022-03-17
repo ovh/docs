@@ -28,7 +28,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
