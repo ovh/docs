@@ -16,7 +16,7 @@ By setting OpenStack environment variables on your desktop, you can use the Open
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- An [OpenStack user account](../configure_user_access_to_horizon/#create-an-openstack-user-account)
+- An [OpenStack user account](../creation-and-deletion-of-openstack-user/)
 - OpenStack [installed on your system](../prepare_the_environment_for_using_the_openstack_api/)
 
 ## Instructions
@@ -45,7 +45,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-As outlined in our guide on [Accessing the Horizon interface](../configure_user_access_to_horizon/), the password is only visible once — when it is created.
+As outlined in our guide on [Accessing the Horizon interface](../creation-and-deletion-of-openstack-user/), the password is only visible once — when it is created.
 
 If you forget your password, you will need to reset it.
 
