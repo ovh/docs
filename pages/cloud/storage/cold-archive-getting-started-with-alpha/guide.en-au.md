@@ -2,7 +2,7 @@
 title: Getting started with Cold Archive (Alpha)
 slug: s3/getting-started-with-cold-archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-section: Cold Archive
+section: Cold Archive (Alpha)
 order: 200
 ---
 
