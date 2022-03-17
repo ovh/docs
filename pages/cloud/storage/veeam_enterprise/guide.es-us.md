@@ -129,20 +129,20 @@ Desde la interfaz gráfica de usuario:
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
- <li>Haga clic en `Advanced...`{.action} para localizar la cuenta de servicio anteriormente añadida. Haga clic en `Find Now`{.action} y seleccione el usuario `OVHVeeamEnterprise`{.action} en la lista de usuarios.</li>
+ <li>Haga clic en <code class="action">Advanced...</code> para localizar la cuenta de servicio anteriormente añadida. Haga clic en <code class="action">Find Now</code> y seleccione el usuario <code class="action">OVHVeeamEnterprise</code> en la lista de usuarios.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
- <li>Haga clic en `OK`{.action} para confirmar la selección y en `OK`{.action} para validar. A continuación, active todos los permisos en el usuario `OVHVeeamEnterprise`{.action}.</li>
+ <li>Haga clic en <code class="action">OK</code> para confirmar la selección y en <code class="action">OK</code> para validar. A continuación, active todos los permisos en el usuario <code class="action">OVHVeeamEnterprise</code>.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 
 <ol start="7">
- <li>Haga clic en `OK`{.action} para confirmar y `Apply`{.action} para aceptar los cambios.</li>
+ <li>Haga clic en <code class="action">OK</code> para confirmar y <code class="action">Apply</code> para aceptar los cambios.</li>
 </ol>
 
 Ya puede acceder a su usuario de OVHVeeamEnterprise local y a distancia.

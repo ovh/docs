@@ -128,19 +128,19 @@ Za pomocą interfejsu graficznego użytkownika:
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
-<li>Kliknij na  `Advanced...`{.action} aby zlokalizować konto usługi wcześniej dodane. Następnie kliknij polecenie `Find Now`{.action} i wybierz użytkownika `OVHVeeamEnterprise`{.action} z listy użytkowników.</li>
+<li>Kliknij na <code class="action">Advanced...</code> aby zlokalizować konto usługi wcześniej dodane. Następnie kliknij polecenie <code class="action">Find Now</code> i wybierz użytkownika <code class="action">OVHVeeamEnterprise</code> z listy użytkowników.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
-<li>Kliknij na `OK`{.action}, aby potwierdzić wybór i na `OK`{.action}, aby zatwierdzić. Następnie aktywuj wszystkie uprawnienia dla użytkownika `OVHVeeamEnterprise`{.action}.</li>
+<li>Kliknij na <code class="action">OK</code>, aby potwierdzić wybór i na <code class="action">OK</code>, aby zatwierdzić. Następnie aktywuj wszystkie uprawnienia dla użytkownika <code class="action">OVHVeeamEnterprise</code>.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
-<li>Kliknij `OK`{.action}, aby potwierdzić i `Apply`{.action}, aby zatwierdzić zmiany.</li>
+<li>Kliknij <code class="action">OK</code>, aby potwierdzić i <code class="action">Apply</code>, aby zatwierdzić zmiany.</li>
 </ol>
 
 Twój użytkownik OVHVeeamEnterprise jest teraz dostępny lokalnie i zdalnie.
