@@ -10,7 +10,7 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 11.11.2021**
+**Letzte Aktualisierung am 16.03.2022**
 
 ## Ziel
 
@@ -21,9 +21,15 @@ Das mit OpenStack ausgelieferte Horizon Interface wurde von OVHcloud angepasst, 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://docs.ovh.com/de/public-cloud/erstellung_public_cloud_projekt/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben einen [OpenStack Benutzer](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) in Ihrem Projekt erstellt.
 
 ## In der praktischen Anwendung
+
+### In OpenStack Horizon einloggen
+
+Öffnen Sie die [Horizon Login Seite](https://horizon.cloud.ovh.net/auth/login/). Geben Sie die zuvor erstellten Login-Daten des [OpenStack Users](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) ein und klicken Sie auf `Connect`{.action}.
+
+Sie können hierzu auch auf `Horizon`{.action} im linken Menü unter "Management Interfaces" klicken, wenn Sie Ihr `Public Cloud`{.action} Projekt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geöffnet haben.
 
 ### Auswahl der Region (Rechenzentrum)
 
