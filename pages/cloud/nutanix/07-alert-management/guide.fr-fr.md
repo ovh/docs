@@ -6,7 +6,7 @@ section: Premiers pas
 order: 07
 ---
 
-**Dernière mise à jour le 15/03/2022**
+**Dernière mise à jour le 17/03/2022**
 
 ## Objectif
 
@@ -25,21 +25,21 @@ Ce guide vous détaille comment consulter les alertes et les évènements ainsi 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central
 
-## Définitions des alertes et des événements dans **Prism Central**
+## Définitions des alertes, événements et tâches dans Prism Central
 
-Tout ce qui se passe dans un cluster associé à **Prism Central** est enregistré dans les évènements.
+Tout ce qui se passe dans un cluster associé à Prism Central est enregistré dans les **évènements**.
 
-Les alertes se déclenchent automatiquement lorsque quelque chose d'anormal survient, comme par exemple l'utilisation excessive du **CPU** sur une machine virtuelle.<br>
-Les alertes de **Prism Central** s'ajoutent à celles de **Prism Element**.
+Les **alertes** se déclenchent automatiquement lorsqu'une anomalie survient, comme par exemple l'utilisation excessive du CPU sur une machine virtuelle.<br>
+Les alertes de Prism Central s'ajoutent à celles de Prism Element.
 
 Vous pouvez ajouter des alertes personnalisées pour augmenter la sensibilité sur un élément du cluster.<br>
 Les alertes peuvent être envoyées à des destinataires au travers de la messagerie électronique.
 
-L'état des actions qu'un utilisateur de **Prism Central** exécute apparait dans la liste des tâches avec son statut *terminée, en cours ou en erreur*.
+Chaque action qu'un utilisateur de Prism Central exécute apparait en tant que **tâche** et est donc listée avec un statut *terminée*, *en cours* ou *en erreur*
 
 ## En pratique
 
-### Configuration du serveur SMTP dans **Prism Central**
+### Configuration du serveur SMTP dans Prism Central
 
 Pour que **Prism Central** puisse envoyer des alertes, vous devez configurer un serveur SMTP.
 
@@ -71,17 +71,19 @@ Saisissez les noms des destinataires dans la zone de saisie « Email Recipients 
 
 #### Création d'une alerte personnalisée
 
-Pour créer une alerte personnalisée, avec des seuils de déclenchements différents, cliquez sur `Alerts Policies`{.action} et seléctionnez `User Defined`{.action}
+Pour créer une alerte personnalisée, avec des seuils de déclenchements différents, cliquez sur `Alerts Policies`{.action} et sélectionnez `User Defined`{.action}. 
 
 ![Create Alert 01](images/CreateAlert01.PNG){.thumbnail}
 
-Sélectionnez, à gauche, les paramètres que vous voulez surveiller comme, dans l'exemple ci-dessous, l'utilisation du processeur sur une seule machine virtuelle.
+Cliquez ensuite sur `Create Alert Policy`{.action}.
 
-Modifiez ensuite, en haut à droite, les paramètres **Behavioral Anomaly** {.action} en cochant `Every time there is an anomaly, alert`{.action} et choisissez `Critical`{.action}.
+À gauche, sélectionnez les paramètres que vous voulez surveiller comme, dans l'exemple ci-dessous, l'utilisation du processeur sur une seule machine virtuelle.
 
-Au milieu à droite, modifiez les paramètres **Static Threshold** {.action} en cochant `Alert Critical if`{.action} et choisissez `supérieur à 60%`{.action}.
+Modifiez ensuite les paramètres « Behavioral Anomaly » en cochant `Every time there is an anomaly, alert`{.action} et choisissez `Critical`{.action}.
 
-Cliquez en bas à droite sur `Save`{.action} pour valider l'enregistrement de l'alerte personnalisée.
+Modifiez les paramètres « Static Threshold » en cochant `Alert Critical if`{.action} et choisissez un seuil supérieur à 60%.
+
+Cliquez sur `Save`{.action} pour valider l'enregistrement de l'alerte personnalisée.
 
 ![Create Alert 02](images/CreateAlert02.PNG){.thumbnail}
 
