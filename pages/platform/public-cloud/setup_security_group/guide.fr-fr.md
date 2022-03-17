@@ -17,13 +17,13 @@ Pour des raisons de sécurité, il est possible de configurer et d'utiliser des 
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).
-- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)
+- [Être connecté à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 
 ## En pratique
 
 ### Étape 1 : créer un groupe de sécurité
 
-Accédez à l'interface [Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/). Choisissez alors la région dans laquelle vous voulez créer un groupe de sécurité, via le bouton en haut à gauche.
+Accédez à l'interface [Horizon](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/). Choisissez alors la région dans laquelle vous voulez créer un groupe de sécurité, via le bouton en haut à gauche.
 
 ![définir la région](images/security-group0.png){.thumbnail}
 

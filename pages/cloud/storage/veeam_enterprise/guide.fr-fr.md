@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment installer un serveur Veeam Backup & Replication ave
 section: 'Veeam'
 ---
 
-**Dernière mise à jour le 08/02/2022**
+**Dernière mise à jour le 07/03/2022**
 
 ## Objectif
 
@@ -13,17 +13,16 @@ Veeam Backup & Replication est un logiciel de protection des données. Il offre 
 
 **Apprenez à installer un serveur Veeam Backup & Replication, puis à l'enregistrer auprès du serveur de licences Veeam Enterprise de OVHcloud.**
 
-
 ## Prérequis
 
-* Posséder une offre Veeam Enterprise.
-* Avoir à disposition une machine Windows Server 2012 ou 2016.
+* Posséder une [offre Veeam Enterprise](https://www.ovhcloud.com/fr/storage-solutions/veeam-enterprise/){.external}.
+* Avoir à disposition une machine Windows Server 2012 ou une version plus récente.
 
 ## En pratique
 
 ### Installer Veeam Backup & Replication
 
-Téléchargez la solution **Veeam Backup & Replication** depuis le site de Veeam. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
+Téléchargez la solution **Veeam Backup & Replication** depuis le site de [Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si vous n'avez pas de compte, il sera nécessaire d'en créer un (celui-ci est gratuit).
 
 Le fichier se présente sous la forme d'une image disque au format ISO. Après l'avoir transférée sur votre serveur, sélectionnez le lecteur CD de la machine puis choisissez l'image.
 
@@ -67,9 +66,7 @@ Une fois celle-ci terminée, quittez l'installateur en cliquant sur `Finish`{.ac
 
 ![fermeture de l'installateur](images/veeamBandR_inst_10.png){.thumbnail}
 
-L'installateur vous demande de redémarrer Windows afin de finaliser l'opération. Choisissez alors `Yes`{.action}.
-
-![redémarrer Windows](images/veeamBandR_inst_11.png){.thumbnail}
+Vous serez redirigé vers l'assistant d'installation, il vous suffit de fermer la fenêtre.
 
 ### Créer un compte de service Veeam Enterprise
 
@@ -77,7 +74,9 @@ L'installateur vous demande de redémarrer Windows afin de finaliser l'opératio
 
 Au préalable, il est nécessaire de générer un mot de passe **complexe**.
 
-Créez ensuite un compte de service, en entrant ces lignes de commande depuis un accès administrateur :
+Pour commencer, lancez Windows Powershell en tant qu'administrateur.
+
+Créez ensuite un compte de service, en entrant ces lignes de commande :
 
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVH Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
@@ -94,9 +93,9 @@ Lancez la console Veeam.
 
 ![console Veeam](images/veeamBandR_use_12.png){.thumbnail}
 
-Vérifiez que vous êtes en mode **Free Edition**, dans le coin en bas à droite.
+Vérifiez que vous êtes en mode **Community Edition**, dans le coin en bas à droite.
 
-![mode free edition](images/veeamBandR_conf_1.png){.thumbnail}
+![mode free edition](images/Veeamcommunity.png){.thumbnail}
 
 Allez dans le menu, puis cliquez sur `Users and Roles`{.action}.
 
@@ -123,12 +122,25 @@ Via l’interface graphique d’utilisateur :
 1. Dans votre barre de recherche Windows, tapez `Services de composants`{.action} et lancez le service.
 2. Dans le menu à gauche et suivant l'arborescence, cliquez sur `Services de composants`{.action}, puis `Ordinateurs`{.action}, puis `Poste de travail`{.action}.
 3. À droite, sous l'onglet `Actions`{.action}, cliquez sur `Autres actions`{.action} puis sur `Propriétés`{.action}.
-4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier`{.action}.
-5. Cliquez sur l'utilisateur `OVHVeeamEntreprise`{.action} et activez toutes les permissions.
+4. Allez dans `Sécurité COM`{.action} et sous la deuxième option `Autorisations d'exécution d'activation`{.action}, cliquez sur `Modifier les limites`{.action}. Ensuite, cliquez sur `Ajouter...`{.action}.
 
-![Propriétés Autorisations d'exécution et d'activation](images/permissionsuserveam.png){.thumbnail}
+![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd.png){.thumbnail}
 
-6. Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.
+<ol start="5">
+  <li>Cliquez sur `Avancé...`{.action} pour localiser le compte de service précédemment ajouté. Cliquez ensuite sur `Rechercher`{.action} et sélectionnez l'utilisateur `OVHVeeamEnterprise`{.action} dans la liste des utilisateurs.</li>
+</ol>
+
+![Propriétés Autorisations d'exécution et d'activation](images/veeamuseradd1.png){.thumbnail}
+
+<ol start="6">
+  <li>Cliquez sur `OK`{.action} pour confirmer la sélection et sur `OK`{.action} pour valider. Ensuite, activez toutes les permissions sur l'utilisateur `OVHVeeamEnterprise`{.action}.</li>
+</ol>
+
+![Autorisations de lancement et d'activation](images/veeamuseradd3.png){.thumbnail}
+
+<ol start="7">
+  <li>Cliquez sur `OK`{.action} pour confirmer et sur `Appliquer`{.action} pour valider les changements.</li>
+</ol>
 
 Votre utilisateur OVHVeeamEntreprise est maintenant accessible en local et à distance.
 

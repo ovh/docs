@@ -15,7 +15,7 @@ Das Konfigurieren der OpenStack Umgebungsvariablen auf Ihrem lokalen Ger채t erm�
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben einen [OpenStack User erstellt](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/).
 - OpenStack ist bereits [auf Ihrem System installiert](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
 
 ## In der praktischen Anwendung
@@ -44,7 +44,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Wie in der [Anleitung zu Horizon](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/) erkl채rt, ist das Passwort ist nur eimalig w채hrend der Erstellung sichtbar.
+Wie in der [Anleitung zu Horizon](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) erkl채rt, ist das Passwort ist nur eimalig w채hrend der Erstellung sichtbar.
 
 Wenn Sie das Passwort nicht zur Verf체gung haben, muss es neu erstellt werden.
 
