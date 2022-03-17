@@ -5,7 +5,7 @@ excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam 
 section: Veeam
 ---
 
-**Last updated 08/02/2022**
+**Last updated 7th March 2022**
 
 ## Objective
 
@@ -13,17 +13,16 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 **This guide explains how to set up a Veeam Backup & Replication server, then register it with an OVHcloud Veeam Enterprise licence server.**
 
-
 ## Requirements
 
-- a Veeam Enterprise solution
-- Windows Server 2012 or newer
+- a [Veeam Enterprise solution](https://www.ovhcloud.com/asia/storage-solutions/veeam-enterprise/){.external}
+- Windows Server 2012 or a newer version
 
 ## Instructions
 
 ### Setting up Veeam Backup & Replication
 
-Download the **Veeam Backup & Replication** solution from the Veeam website. If you do not have an account, you will need to set one up (account setup is free).
+Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
 
@@ -67,9 +66,7 @@ Once it is complete, exit the installation wizard by clicking `Finish`{.action}.
 
 ![finish install](images/veeamBandR_inst_10.png){.thumbnail}
 
-The installation wizard will prompt you to reboot Windows in order to finalise the operation. At this point, click `Yes`{.action}.
-
-![reboot](images/veeamBandR_inst_11.png){.thumbnail}
+You will be redirected to the launch wizard, simply close the window.
 
 ### Creating a Veeam Enterprise service account
 
@@ -77,7 +74,9 @@ The installation wizard will prompt you to reboot Windows in order to finalise t
 
 You will need to generate a **complex** password.
 
-Next, create a service account, entering these lines of command as an admin:
+To begin, launch Windows Powershell as an administrator.
+
+Next, create a service account, entering these lines of command:
 
 ```powershell
 New-LocalUser "OVHVeeamEnterprise" -Password (ConvertTo-SecureString -AsPlainText "P@ssword01" -Force) -Description "OVHcloud Service Account for Veeam Enterprise" -PasswordNeverExpires:$true -UserMayNotChangePassword:$true -AccountNeverExpires:$true
@@ -94,9 +93,9 @@ Launch the Veeam console.
 
 ![veeam console](images/veeamBandR_use_12.png){.thumbnail}
 
-Check that it is in **Free Edition** mode, in the bottom right-hand corner.
+Check that it is in **Community Edition** mode, in the bottom right-hand corner.
 
-![free edition](images/veeamBandR_conf_1.png){.thumbnail}
+![free edition](images/Veeamcommunity.png){.thumbnail}
 
 Go to the menu, and click `Users and Roles`{.action}.
 
@@ -123,12 +122,25 @@ Via the graphical user interface:
 1. In your Windows search bar, type `Component Services`{.action} and launch the service.
 2. On the left menu and following the tree structure, click on `Component Services`{.action}, then on `Computers`{.action}, then on `My Computer`{.action}.
 3. On the right, under the `Actions`{.action} tab, click on `More Actions`{.action}, then on `Properties`{.action}.
-4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}.
-5. Select the `OVHVeeamEnterprise`{.action} user and enable all permissions.
+4. Go to `COM Security`{.action}, underneath the second section `Launch and Activation Permissions`{.action}, click on `Edit Limits`{.action}. Next, click on `Add...`{.action}.
 
-![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
-6. Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.
+<ol start="5">
+  <li>Click on `Advanced`{.action} to locate the previously added service account and click on `Find Now`{.action}. Select the `OVHVeeamEnterprise`{.action} user from the list of users.</li>
+</ol>
+
+![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
+
+<ol start="6">
+  <li>Click on `OK`{.action} to confirm the selection, and on `OK`{.action} to validate. Next, enable all permissions on the `OVHVeeamEnterprise`{.action} user.</li>
+</ol>
+
+![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
+
+<ol start="7">
+  <li>Click on `OK`{.action} to confirm and on `Apply`{.action} to validate the changes.</li>
+</ol>
 
 Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
@@ -136,7 +148,7 @@ Your OVHVeeamEnterprise user is now accessible locally and remotely.
 
 ##### **Using the OVHcloud Control Panel**
 
-In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
+In your OVHcloud Control Panel, open the `Hosted Private Cloud`{.action} section and select your service labelled **backupserverenterprise** from `Platforms and services`{.action}. On this page, click on `Activate license`{.action} in the `Shortcuts` box.
 
 ![control panel register](images/veeam001.png){.thumbnail}
 
