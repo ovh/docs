@@ -19,9 +19,10 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Instructions
 
-### Create an instance with a script.
+### Create an instance with a script
 
-#### Create a script.
+#### Create a script
+
 There are several different scripts that are useful for you to launch when you create an instance. For example, you can use **shell scripts**:
 
 - Add a new user:
@@ -88,7 +89,7 @@ users:
 ```
 
 
-With this script, you create an “** ovh**” user with sudo permissions, and they can connect via 2 different SSH keys.
+With this script, you create an "**ovh**" user with sudo permissions, and they can connect via 2 different SSH keys.
 
 
 
@@ -99,7 +100,8 @@ With this script, you create an “** ovh**” user with sudo permissions, and t
 > 
 
 
-#### Create the instance.
+#### Create the instance
+
 After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user- data** argument:
 
 
@@ -128,6 +130,7 @@ Last login: Tue Oct 20 07:51:58 2015 from proxy-109-190-254-35.ovh.net
 ovh@instance1:~$ sudo su
 root@instance1:/home/ovh#
 ```
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -7,21 +7,24 @@ order: 13
 ---
 
 
-## Préambule
+## Objectif
+
 Dans certaines situations, il vous sera nécessaire de lancer un script lors de la création de votre instance. Par exemple, dans le cas ou vous souhaitez configurer plusieurs clés SSH pour votre instance, ou bien pour configurer votre service SSH automatiquement.
 
-Ce guide vous explique comment lancer un script lors de la création de votre instance via Cloud-init et les API OpenStack.
+**Ce guide vous explique comment lancer un script lors de la création de votre instance via Cloud-init et les API OpenStack.**
 
 
-### Prérequis
+## Prérequis
+
 - [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
 - [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
-## Creation d'une instance avec script
+### Creation d'une instance avec script
 
-### Creation d'un script
-Il existe plusieurs possibilités de scripts utiles à lancer lors de la création d'une instance. Vous pouvez par exemple utiliser des  **scripts shell**  :
+#### Creation d'un script
+
+Il existe plusieurs possibilités de scripts utiles à lancer lors de la création d'une instance. Vous pouvez par exemple utiliser des **scripts shell**  :
 
 - Ajout d'un nouvel utilisateur :
 
@@ -36,7 +39,7 @@ echo "VOTRE_CLE_SSH_PUBLIQUE" > /home/ovh/.ssh/authorized_keys
 ```
 
 
-Ce script vous permet de créer un utilisateur nommé " **ovh** ". On lui donne ensuite les accés  **sudo**  et on ajoute sa clé ssh.
+Ce script vous permet de créer un utilisateur nommé "**ovh**". On lui donne ensuite les accés **sudo** et on ajoute sa clé ssh.
 
 - Modification de la configuration SSH :
 
@@ -62,8 +65,6 @@ apt-get install -y apache2 php5
 ```
 
 
-
-
 > [!alert]
 >
 > Ce script peut augmenter le temps de création de l'instance.
@@ -87,7 +88,7 @@ users:
 ```
 
 
-Ce script permet donc de créer un utilisateur " **ovh**" ayant les droits sudo, avec la possibilité de se connecter avec 2 clés SSH différentes.
+Ce script permet donc de créer un utilisateur "**ovh**" ayant les droits sudo, avec la possibilité de se connecter avec 2 clés SSH différentes.
 
 
 
@@ -98,8 +99,9 @@ Ce script permet donc de créer un utilisateur " **ovh**" ayant les droits sudo,
 > 
 
 
-### Creation de l'instance
-Après avoir récupéré la liste des images et des modèles d'instance, il est possible de lancer le script avec Cloud-init grâce à l'argument  **--user- data**  :
+#### Creation de l'instance
+
+Après avoir récupéré la liste des images et des modèles d'instance, il est possible de lancer le script avec Cloud-init grâce à l'argument **--user- data** :
 
 
 ```bash
@@ -127,3 +129,7 @@ Last login: Tue Oct 20 07:51:58 2015 from proxy-109-190-254-35.ovh.net
 ovh@instance1:~$ sudo su
 root@instance1:/home/ovh#
 ```
+
+## Aller plus loin
+  
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

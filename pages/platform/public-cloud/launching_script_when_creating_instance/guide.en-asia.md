@@ -19,9 +19,10 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Instructions
 
-### Create an instance with a script.
+### Create an instance with a script
 
-#### Create a script.
+#### Create a script
+
 There are several different scripts that are useful for you to launch when you create an instance. For example, you can use **shell scripts**:
 
 - Add a new user:
@@ -62,9 +63,6 @@ apt-get upgrade -y
 apt-get install -y apache2 php5
 ```
 
-
-
-
 > [!alert]
 >
 > This script can increase the time it takes to create the instance.
@@ -88,8 +86,7 @@ users:
 ```
 
 
-With this script, you create an “** ovh**” user with sudo permissions, and they can connect via 2 different SSH keys.
-
+With this script, you create an "**ovh**" user with sudo permissions, and they can connect via 2 different SSH keys.
 
 
 > [!alert]
@@ -99,7 +96,8 @@ With this script, you create an “** ovh**” user with sudo permissions, and t
 > 
 
 
-#### Create the instance.
+#### Create the instance
+
 After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user- data** argument:
 
 
