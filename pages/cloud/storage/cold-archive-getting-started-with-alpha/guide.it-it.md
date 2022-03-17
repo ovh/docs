@@ -1,22 +1,22 @@
 ---
-title: Premiers pas avec PCAv2 (Alpha) (EN)
-slug: s3/getting-started-with-pcav2
+title: Getting started with Cold Archive (Alpha) (EN)
+slug: s3/getting-started-with-cold-archive
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-pcav2/'
-excerpt: This guide shows you how to manage your data with PCAv2
-section: Public Cloud Archive
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-cold-archive/'
+excerpt: This guide shows you how to manage your data with Cold Archive
+section: Cold Archive (Alpha)
 order: 200
 ---
 
-**Last updated 11th March 2022**
+**Last updated 15th March 2022**
 
 ## Objective
 
-PCAv2 is a service for long-term data storage.
+Cold Archive is a service for long-term data storage.
 When archived, every object of a bucket is stored on physical tapes.
 Restoration can take some time as it needs to be read on tapes.
 
-**This guide explains how to set up storage on tapes with PCAv2.**
+**This guide explains how to set up storage on tapes with Cold Archive.**
 
 > [!primary]
 >
@@ -24,7 +24,8 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with AWS CLI](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/#utilisation-de-aws-cli)
+- [Getting started with AWS CLI](https://docs.ovh.com/it/storage/s3/getting-started-with-s3/#using-the-aws-cli)
+- `awscli` version >= 1.16.62
 
 ## Instructions
 
@@ -73,7 +74,7 @@ Allowed actions are adding and listing objects.
 Archive a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-archive <bucket_name>
 ```
 
 After this request, the bucket is not archived yet.<br>
@@ -90,7 +91,7 @@ From this command and until a restoration, the bucket cannot accept any read or 
 Restore a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net put-ovh-restore <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net put-ovh-restore <bucket_name>
 ```
 
 After this request, the bucket is not restored yet.<br>
@@ -101,7 +102,7 @@ It will take some time before it is restored and for the objects to be accessibl
 Delete an intelligent-tiering configuration and objects of a bucket:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
 After this request, the objects of the bucket are not deleted yet.<br>
@@ -117,7 +118,7 @@ aws s3 rb s3://<bucket_name>
 Once an intelligent-tiering configuration has been pushed (via a `put-bucket-intelligent-tiering-configuration` operation) and until it is removed (via a `delete-bucket-intelligent-tiering-configuration` operation), the status of a bucket is readable through:
 
 ```bash
-aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
+aws --endpoint-url https://s3.rbx.archive.cloud.ovh.net get-ovh-bucket-status <bucket_name> | jq '.IntelligentTieringConfiguration.Status'
 ```
 
 #### List of bucket statuses
@@ -136,4 +137,4 @@ aws --endpoint-url https://s3.archive.cloud.ovh.net get-ovh-bucket-status <bucke
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
