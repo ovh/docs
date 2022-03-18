@@ -36,7 +36,7 @@ Esistono due tipi di reindirizzamenti:
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}, un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
+- Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}, un [hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} o una soluzione MX Plan ordinata separatamente)
 
 ## Procedura
 
@@ -69,7 +69,7 @@ Inserisci le informazioni richieste:
 |---|---|  
 |Dall'indirizzo: |inserisci l’indirizzo email su cui vuoi attivare il reindirizzamento.|  
 |All'indirizzo:|inserisci l’indirizzo email su cui vuoi inoltrare automaticamente i tuoi messaggi.  Può essere uno dei tuoi indirizzi email OVHcloud o un account esterno.|
-|Scegli una modalità di copia:|Scegli se vuoi: <br> - **Conservare una copia dell'email in OVH** (se vuoi conservare sul tuo indirizzo email i messaggi reindirizzati. In questo caso, le email saranno disponibili su entrambi gli account). <br> - **Non conservare una copia dell’email**(qualsiasi email in arrivo verrà inoltrata automaticamente su un’altra casella senza che l'indirizzo principale la riceva) <br> *cf. lo [schema illustrato ](./#informazioni-generali){.external}all’inizio di questa guida*.|
+|Scegli una modalità di copia:|Scegli se vuoi: <br> - **Conservare una copia dell'email in OVHcloud** (se vuoi conservare sul tuo indirizzo email i messaggi reindirizzati. In questo caso, le email saranno disponibili su entrambi gli account). <br> - **Non conservare una copia dell’email**(qualsiasi email in arrivo verrà inoltrata automaticamente su un’altra casella senza che l'indirizzo principale la riceva) <br> *cf. lo [schema illustrato ](./#informazioni-generali){.external}all’inizio di questa guida*.|
 
 Clicca su `Conferma`{.action} per aggiungere il reindirizzamento.
 

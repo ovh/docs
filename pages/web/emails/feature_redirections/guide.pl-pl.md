@@ -69,14 +69,14 @@ Uzupełnij zgodnie z trzema poniższymi parametrami:
 |---|---|  
 |Z adresu |Tutaj wpisz adres e-mail, z którego chcesz przekierowywać wiadomości.|  
 |Na adres|Tutaj wpisz docelowy adres e-mail przekierowania. Może to być jeden z Twoich adresów e-mail OVHcloud lub adres zewnętrzny.|
-|Wybierz tryb kopii|Wybierz jedną z opcji: <br> - **Zachowaj kopię e-maila w OVH** (otrzymasz e-mail na swój adres główny oraz na adres przekierowania) <br> - **Nie zachowuj kopii e-maila** (e-mail zostanie przesłany bezpośrednio na adres przekierowania, z pominięciem adresu głównego) <br> *por. [schemat](./#informacje-ogolne){.external} na początku tego przewodnika.*|
+|Wybierz tryb kopii|Wybierz jedną z opcji: <br> - **Zachowaj kopię e-maila w OVHcloud** (otrzymasz e-mail na swój adres główny oraz na adres przekierowania) <br> - **Nie zachowuj kopii e-maila** (e-mail zostanie przesłany bezpośrednio na adres przekierowania, z pominięciem adresu głównego) <br> *por. [schemat](./#informacje-ogolne){.external} na początku tego przewodnika.*|
 
 Następnie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić dodanie tego adresu przekierowania.
 
 ![emails](images/mxplan-legacy-3.png){.thumbnail}
 
 > [!primary]
-> Jeśli wybrano opcję **Zachowaj kopię e-maila w OVH**, na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail na ten sam adres
+> Jeśli wybrano opcję **Zachowaj kopię e-maila w OVHcloud**, na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail na ten sam adres
 > — w ten sposób tworzona jest kopia lokalna.
 > 
 

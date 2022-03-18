@@ -16,15 +16,15 @@ The email addresses in your MX Plan allow you to send and receive your email thr
 
 ## Requirements
 
-- You need to have an MX Plan email address (included in [OVH Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external} or available separately).
+- You need to have an MX Plan email address (included in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external} or available separately).
 - You must be able to create email addresses as part of your package.
-- You must have permission to manage the MX Plan concerned from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You must have permission to manage the MX Plan concerned from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
 ### Step 1: Log in to your email service's interface
 
-To begin the procedure, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click on `Emails`{.action}, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
+To begin the procedure, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click on `Emails`{.action}, then select the domain name for which you have taken out an MX Plan package. Next, go to the `Emails`{.action} tab.
 
 The table shown contains all the email addresses created as part of your MX Plan package.
 
@@ -37,7 +37,7 @@ To create a new email address, click on `Create an email address`{.action}. In t
 |Information|Description|  
 |---|---|  
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVH Control Panel.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
 |Password|Define the password for this account, then confirm it.|
 
@@ -64,7 +64,7 @@ Finally, click on `Confirm`{.action} to create the email address. You can repeat
 
 ### Step 3: Use the email address
 
-Now, you just need to use your email addresses. To help you get started, OVH offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://www.ovh.ie/mail/>. You will need to enter the credentials for the email address that you created with OVH.
+Now, you just need to use your email addresses. To help you get started, OVHcloud offers Roundcube: an online webmail application. Roundcube is available at the following address: <https://www.ovh.ie/mail/>. You will need to enter the credentials for the email address that you created with OVHcloud.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: <https://docs.ovh.com/ie/en/emails/>.
 

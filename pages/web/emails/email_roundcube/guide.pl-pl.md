@@ -8,25 +8,25 @@ order: 05
 
 ## Wprowadzenie
 Wprowadziliśmy usługę Webmail Roundcube, abyś miał  dostęp do swoich maili z dowolnego miejsca. Za pomocą interfejsu WWW możesz odbierać, wysyłać i zarządzać wiadomościami email, wystarczy dostęp do Internetu.
-Usługa OVH Webmail działa w oparciu o protokół HTTPS z szyfrowaniem SSL. Taka forma połączenia zapewnia pełne bezpieczeństwo w przypadku logowania z publicznej sieci WIFI. 
+Usługa OVHcloud Webmail działa w oparciu o protokół HTTPS z szyfrowaniem SSL. Taka forma połączenia zapewnia pełne bezpieczeństwo w przypadku logowania z publicznej sieci WIFI. 
 
 
 ## W praktyce
 
 ### Dostęp do interfejsu
 
-- Poprzez stronę OVH.pl
+- Poprzez stronę OVHcloud.pl
 
-Wejdź na stronę [OVH.pl](http://www.ovh.pl) i kliknij na "Webmail" w górnej części strony.
+Wejdź na stronę [OVHcloud.pl](http://www.ovh.pl) i kliknij na "Webmail" w górnej części strony.
 
 ![](images/img_2413.jpg){.thumbnail}
 
 
 - Interfejs logowania
 
-Dotarłeś  do interfejsu wpisywania adresu e-mail. Interfejs ten pozwala na bezpośrednie przekierowanie do interfejsu Webmail związanego z usługą OVH, a której korzystasz.
+Dotarłeś  do interfejsu wpisywania adresu e-mail. Interfejs ten pozwala na bezpośrednie przekierowanie do interfejsu Webmail związanego z usługą OVHcloud, a której korzystasz.
 
-Jeśli znasz typ swojej usługi w OVH, możesz zalogować się bezpośrednio do wybranego Webmaila klikając na .
+Jeśli znasz typ swojej usługi w OVHcloud, możesz zalogować się bezpośrednio do wybranego Webmaila klikając na .
 
 Klikając na , otrzymasz dostęp do przewodników związanych z wybranym interfejsem Webmail.
 
@@ -209,9 +209,9 @@ Aby utworzyć własny folder, kliknij na "+".
 
 - Krok 2:
 
-Utworzymy folder "Test OVH". Zostanie on umieszczony w INBOX. E-maile będą się wyświetlały w formie listy.
+Utworzymy folder "Test OVHcloud". Zostanie on umieszczony w INBOX. E-maile będą się wyświetlały w formie listy.
 
-INBOX to folder "Odebrane". Katalog "Test OVH" zostanie utworzony w skrzynce odbiorczej.
+INBOX to folder "Odebrane". Katalog "Test OVHcloud" zostanie utworzony w skrzynce odbiorczej.
 
 Kliknij na Zapisz.
 
@@ -278,7 +278,7 @@ Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
 
 - Krok 1:
 
-Obrazek powinien być zainstalowany na serwerze (hosting OVH lub inny).
+Obrazek powinien być zainstalowany na serwerze (hosting OVHcloud lub inny).
 
 Zaznaczając Podpis w HTML pojawia się edytor WYSWYG*.
 Kliknij na kwadrat HTML, żeby otworzyć okno, które pozwoli na wprowadzenie kodu HTML. 
@@ -328,7 +328,7 @@ W części Tożsamości kliknij na "+", aby dodać nową tożsamość.
 
 - Krok 2:
 
-W tym przykładzie utworzyliśmy tożsamość o nazwie Guides OVH. Jest ona przypisana do adresu no-reply@ovh.net, który będzie widoczny o odbiorców wiadomości. Odpowiedź zostanie wysłana na adres support@ovh.net. Klikamy na Zapisz.
+W tym przykładzie utworzyliśmy tożsamość o nazwie Guides OVHcloud. Jest ona przypisana do adresu no-reply@ovh.net, który będzie widoczny o odbiorców wiadomości. Odpowiedź zostanie wysłana na adres support@ovh.net. Klikamy na Zapisz.
 
 Po zapisaniu nowa tożsamość pojawi się w kolumnie z tożsamościami.
 
@@ -553,7 +553,7 @@ Wpisz kryteria wyszukiwania i kliknij na "Szukaj".
 
 
 #### Eksportowanie książki adresowej
-Chcesz pobrać wszystkie kontakty z Webmaila RoundCube OVH poprzez eksport pliku z książki adresowej. 
+Chcesz pobrać wszystkie kontakty z Webmaila RoundCube OVHcloud poprzez eksport pliku z książki adresowej. 
 
 Kliknij na opcję "Eksportuj" w górnej części strony.
 

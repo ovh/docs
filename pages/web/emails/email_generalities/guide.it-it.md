@@ -15,7 +15,7 @@ legacy_guide_number: g1474
 
 ## Obiettivo
 
-La soluzione MX Plan di OVH con cui potrai inviare e ricevere messaggi dal dispositivo che preferisci.
+La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal dispositivo che preferisci.
 
 **Questa guida ti mostra le operazioni di base da effettuare sul tuo servizio di posta elettronica MX Plan.**
 

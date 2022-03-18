@@ -17,7 +17,7 @@ Os endereços de e-mail da oferta MX Plan permitem-lhe enviar e receber e-mails 
 ## Requisitos
 
 - Ter o serviço MX Plan (incluído num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em separado).
-- Em função do método que utilizar: aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](https://www.ovh.pt/mail/){.external} Outlook Web Messenger (OWA).
+- Em função do método que utilizar: aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail](https://www.ovh.pt/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Os endereços de e-mail da oferta MX Plan permitem-lhe enviar e receber e-mails 
 
 A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de [se o serviço foi migrado recentemente](https://www.ovhcloud.com/pt/web-hosting/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
@@ -44,7 +44,7 @@ Se possuir a nova versão da oferta MX Plan, a secção “Informações gerais�
 Existem duas formas de alterar a palavra-passe de um endereço de e-mail. Selecione a opção que pretende realizar.
 
 - [Alterar a palavra-passe a partir do webmail OWA.](./#alterar-a-palavra-passe-a-partir-do-webmail-owa) Para isso, deverá dispor da palavra-passe atual. 
-- [Alterar a palavra-passe a partir da Área de Cliente OVH.](./#alterar-a-palavra-passe-a-partir-da-area-de-cliente-ovh) Para isso, não precisa de dispor da palavra-passe atual.
+- [Alterar a palavra-passe a partir da Área de Cliente OVHcloud.](./#alterar-a-palavra-passe-a-partir-da-area-de-cliente-ovh) Para isso, não precisa de dispor da palavra-passe atual.
 
 #### Alterar a palavra-passe a partir do webmail OWA
 
@@ -69,7 +69,7 @@ Na nova janela, comece por indicar a sua palavra-passe atual. A seguir, escreva 
 
 ![email](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Alterar a palavra-passe a partir da Área de Cliente OVH
+#### Alterar a palavra-passe a partir da Área de Cliente OVHcloud
 
 Aceda ao separador `Contas de e-mail`{.action}. Aparecerá uma tabela com todos os endereços de e-mail criados na sua oferta. A seguir, clique no botão `...`{.action} à direita do endereço em questão e, a seguir, em `Alterar`{.action}.
 

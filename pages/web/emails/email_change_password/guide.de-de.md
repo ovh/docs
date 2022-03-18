@@ -17,7 +17,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 ## Voraussetzungen
 
 - Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} oder separat bestellbar.
-- Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface](https://www.ovh.de/mail/){.external} Outlook on the Web (OWA) eingeloggt.
+- Je nach der von Ihnen gewählten Vorgehensweise sind Sie entweder in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Web Cloud`{.action} oder über das [Webmail-Interface](https://www.ovh.de/mail/){.external} Outlook on the Web (OWA) eingeloggt.
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovhcloud.com/de/web-hosting/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Loggen Sie sich hierzu in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
@@ -44,7 +44,7 @@ Sie verfügen über die neue MX Plan Version und sollten die nachfolgende Anzeig
 Es gibt zwei Möglichkeiten, um das Passwort einer E-Mail-Adresse zu ändern. Fahren Sie mit der gewünschten Vorgehensweise fort.
 
 - [Passwort über OWA Webmail ändern](./#passwort-uber-owa-webmail-andern). Hierzu benötigen Sie das aktuelle Passwort der E-Mail-Adresse. 
-- [Passwort über das OVH Kundencenter ändern](./#passwort-uber-das-ovh-kundencenter-andern). Hierzu ist das aktuelle Passwort der E-Mail-Adresse nicht erforderlich.
+- [Passwort über das OVHcloud Kundencenter ändern](./#passwort-uber-das-ovh-kundencenter-andern). Hierzu ist das aktuelle Passwort der E-Mail-Adresse nicht erforderlich.
 
 #### Passwort über OWA Webmail ändern
 
@@ -69,7 +69,7 @@ Geben Sie im neu geöffneten Fenster zunächst Ihr aktuelles Passwort ein. Geben
 
 ![E-Mail](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Passwort über das OVH Kundencenter ändern
+#### Passwort über das OVHcloud Kundencenter ändern
 
 Gehen Sie zunächst auf den Tab `E-Mail-Accounts`{.action}. Die angezeigte Tabelle enthält alle E-Mail-Adressen, die im Rahmen Ihres Angebots angelegt wurden. Klicken Sie nun rechts neben der betreffenden Adresse auf den Button `...`{.action} und dann auf `Ändern`{.action}.
 

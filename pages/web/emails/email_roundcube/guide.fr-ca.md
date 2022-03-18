@@ -242,9 +242,9 @@ Pour créer un dossier personnalisé et ainsi isoler les messages d'un thème ou
 
 
 ### Creer un dossier (2)
-Ici nous créons le dossier "Test OVH", il sera placé dans la INBOX et l'affichage des e-mails s'y trouvant sera sous forme de liste.
+Ici nous créons le dossier "Test OVHcloud", il sera placé dans la INBOX et l'affichage des e-mails s'y trouvant sera sous forme de liste.
 
-La INBOX est l'anglicisme pour  **"Boîte de réception"** . Le dossier "Test OVH" sera donc créé dans la boîte de réception.
+La INBOX est l'anglicisme pour  **"Boîte de réception"** . Le dossier "Test OVHcloud" sera donc créé dans la boîte de réception.
 
 Cliquez sur Enregistrer pour valider la création.
 

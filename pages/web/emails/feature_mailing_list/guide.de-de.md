@@ -216,7 +216,7 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müssen Sie eine leere E-Mail an [Name_Ihrer_ML-edit@yourdomain.com](mailto:edit@votredomaine.com) senden.
 
-- Beispiel: Ihre Mailingliste lautet [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh). Von Ihrer Moderator-E-Mail-Adresse aus müssen Sie eine Nachricht an [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh) senden.
+- Beispiel: Ihre Mailingliste lautet [newsletter@testinterne.OVHcloud](mailto:newsletter@testinterne.ovh). Von Ihrer Moderator-E-Mail-Adresse aus müssen Sie eine Nachricht an [newsletter-edit@testinterne.OVHcloud](mailto:newsletter-edit@testinterne.ovh) senden.
 
 Sie erhalten dann eine E-Mail, die Sie anleitet wie Sie Ihre Änderungen vornehmen können.
 

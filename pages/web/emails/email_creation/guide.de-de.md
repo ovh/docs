@@ -131,7 +131,7 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein.
 |Information|Beschreibung|  
 |---|---|  
 |Account-Name|Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel: vorname.name). Die entsprechende Domain ist bereits standardmäßig angegeben.|  
-|Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie den Account später von anderen Accounts in Ihrem OVH Kundencenter unterscheiden können.|  
+|Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie den Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.|  
 |Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihrer E-Mail-Adresse zum Speichern von Nachrichten.|  
 |Passwort|Wählen Sie ein Passwort und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
