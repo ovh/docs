@@ -36,11 +36,11 @@ Per una corretta gestione delle email è necessario disporre di un'offerta attiv
 
 Come verificare che i tuoi servizi siano operativi:
 
-- Per il tuo **dominio**, accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e seleziona il tuo dominio. Se il tuo dominio è scaduto, ti verrà indicato in alto.
-- Per il tuo **hosting Web**, vai alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il tuo hosting. La data di scadenza o di rinnovo automatico del tuo hosting verrà indicata in alto.
-- Per un'offerta **MX Plan**, vai alla sezione `Web Cloud`{.action}, clicca su `Email`{.action} nella colonna di sinistra e seleziona il dominio interessato. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
-- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} nella colonna di sinistra e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
-- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action} nella colonna di sinistra, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
+- Per il tuo **dominio**, accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} e seleziona il tuo dominio. Se il tuo dominio è scaduto, ti verrà indicato in alto.
+- Per il tuo **hosting Web**, vai alla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} e seleziona il tuo hosting. La data di scadenza o di rinnovo automatico del tuo hosting verrà indicata in alto.
+- Per un'offerta **MX Plan**, vai alla sezione `Web Cloud`{.action}, clicca su `Email`{.action} e seleziona il dominio interessato. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
+- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
+- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
 
 ### Non riesco a inviare email dal mio client di posta
 
@@ -68,9 +68,9 @@ Come modificare la password di un indirizzo email:
 
 - Per una soluzione **MX Plan**, consulta la guida [Modificare la password di un indirizzo email MX Plan](https://docs.ovh.com/it/emails/modificare-password-account-email-mxplan/).
 
-- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} nella colonna di sinistra e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password.
+- Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password.
 
-- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action} nella colonna di sinistra, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/attiva_2fa_exchange/).
+- Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/attiva_2fa_exchange/).
 
 ### Sul tuo servizio è in corso un incidente o una manutenzione?
 

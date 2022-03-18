@@ -28,7 +28,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 Depending on the date your service was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the MX Plan solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
+To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action}, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|

@@ -23,7 +23,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 Once the MX Plan solution has been created and is available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/), you may have the old or new version of the solution. You will need to check this before you proceed any further.
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and open the Web Cloud section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|

@@ -8,14 +8,14 @@ order: 05
 ---
 
 
-## Attraverso il sito OVH
-Accedi al sito [OVH](http://www.ovh.it) e clicca su "Webmail" in alto a destra.
+## Attraverso il sito OVHcloud
+Accedi al sito [OVHcloud](http://www.ovh.it) e clicca su "Webmail" in alto a destra.
 
 ![](images/img_2413.jpg){.thumbnail}
 
 
-## Interfaccia della Webmail OVH
-Vedrai un'interfaccia in cui inserire un indirizzo email. In questo modo verrai reindirizzato verso la Webmail del tuo servizio email OVH.
+## Interfaccia della Webmail OVHcloud
+Vedrai un'interfaccia in cui inserire un indirizzo email. In questo modo verrai reindirizzato verso la Webmail del tuo servizio email OVHcloud.
 
 Se sai già che offerta email hai, puoi accedere direttamente alla Webmail del tuo servizio, cliccando su .
 
@@ -25,7 +25,7 @@ Cliccando su , accedi direttamente alle guide relative alle Webmail.
 Cliccando su "Memorizza questo indirizzo email", i vari indirizzi inseriti saranno salvati nel menù in alto a destra (Webmail in blu). Il vantaggio è connettersi facilmente all'indirizzo desiderato!
 
 
-## Interfaccia della Webmail OVH
+## Interfaccia della Webmail OVHcloud
 Arrivi poi all'interfaccia della Webmail del tuo servizio email, se l'indirizzo è già precompilato. inseriscilo comunque di nuovo.
 
 Inserisci quindi il tuo indirizzo email e la password e clicca su "Login".
@@ -263,9 +263,9 @@ Per inserire la firma associata a questa identità, fai riferimento alla sezione
 
 
 ## Installa una firma con un'immagine (1)
-Per questa operazione è necessario che l'immagine sia salvata su un server (ad esempio il tuo hosting OVH).
+Per questa operazione è necessario che l'immagine sia salvata su un server (ad esempio il tuo hosting OVHcloud).
 
-Per salvare un'immagine sul tuo hosting OVH, segui  [questa guida](http://guides.ovh.com/FtpFileZilla).
+Per salvare un'immagine sul tuo hosting OVHcloud, segui  [questa guida](http://guides.ovh.com/FtpFileZilla).
 
 Selezionando Firma HTML, l'editor WYSWYG* viene visualizzato come ti mostra la figura.
 
@@ -312,9 +312,9 @@ In Identità, clicca sul "+" per aggiungere una nuova identità.
 
 
 ## Nuova identità/firma (2)
-Nel nostro esempio, creiamo un'identità chiamata Guide OVH. È associata all'indirizzo no-reply@ovh.net, che vogliamo mostrare ai destinatari. Quando rispondono, il messaggio viene inviato a  supporto@ovh.net. Personalizziamo la firma (facoltativo) e clicchiamo su Registra.
+Nel nostro esempio, creiamo un'identità chiamata Guide OVHcloud. È associata all'indirizzo no-reply@ovh.net, che vogliamo mostrare ai destinatari. Quando rispondono, il messaggio viene inviato a  supporto@ovh.net. Personalizziamo la firma (facoltativo) e clicchiamo su Registra.
 
-Dopo aver confermato, la nuova identità Guide OVH <no-reply@ovh.net> viene visualizzata nella colonna delle identità.
+Dopo aver confermato, la nuova identità Guide OVHcloud <no-reply@ovh.net> viene visualizzata nella colonna delle identità.
 
 Per inserire la firma associata a questa identità, fai riferimento alla sezione [Inserire una firma in formato HTML](#SIGNATURE).
 
@@ -368,7 +368,7 @@ Ecco come viene ricevuto il messaggio che ci siamo inviati.
 
 Se la mail non viene ricevuta automaticamente, clicca su  "Aggiorna" in alto a sinistra (frecce orizzontali opposte).
 
-Possiamo verificare che il mittente è Support OVH e che la firma viene visualizzata correttamente.
+Possiamo verificare che il mittente è Support OVHcloud e che la firma viene visualizzata correttamente.
 
 ![](images/img_1408.jpg){.thumbnail}
 
@@ -407,7 +407,7 @@ In questo esempio, creiamo due gruppi per illustrare le diverse possibilità.
 
 Per cominciare, clicca sull'icona Elenco Contatti RoundCube per accedere all'interfaccia che vedi.
 
-Per inserire tutti i contatti delle guide OVH, creiamo un gruppo chiamato "Guide".
+Per inserire tutti i contatti delle guide OVHcloud, creiamo un gruppo chiamato "Guide".
 
 Clicca su "+" in basso a sinistra, per creare il gruppo di contatti.
 Il cursore si posiziona automaticamente nel campo di digitazione del nome, come vedi in figura
@@ -537,7 +537,7 @@ Inserisci i tuoi criteri di ricerca e clicca su "Ricerca" (qui il pulsante è na
 
 
 ## Esporta la tua rubrica
-Recupera i contatti della tua Webmail RoundCube OVH utilizzando l'esportazione di un file di indirizzi.
+Recupera i contatti della tua Webmail RoundCube OVHcloud utilizzando l'esportazione di un file di indirizzi.
 
 Clicca su "Esporta" nella barra in alto, per scaricare un file rcube_contacts.vcf.
 

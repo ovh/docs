@@ -28,7 +28,7 @@ Adquiriu um serviço MX Plan, que lhe permite beneficiar de endereços de e-mail
 
 Depois de criada e disponível a oferta MX Plan, poderá geri-la a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/). Antes de continuar, deve verificar a versão de que dispõe.
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção "Web Cloud". Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

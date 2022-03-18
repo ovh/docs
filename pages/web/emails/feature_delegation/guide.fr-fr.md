@@ -45,7 +45,7 @@ https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSub
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`.
 
-Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné.
+Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné.
 
 Pour afficher la liste des comptes e-mails de votre offre MXplan, cliquez sur l'onglet `Emails`{.action}.
 
