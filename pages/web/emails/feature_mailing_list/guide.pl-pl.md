@@ -218,7 +218,7 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 Możesz spersonalizować większość tekstów listy mailingowej. Jako moderator musisz wysłać pustą wiadomość na adres nazwa_twojej_LM- [edit@twojadomena.com](mailto:edit@twojadomena.com){.external}.
 
-- Przykład: Twoja lista mailingowa to [newsletter@testinterne.OVHcloud](mailto:newsletter@testinterne.ovh){.external}. Z adresu e-mail moderatora należy wysłać wiadomość na adres [newsletter-edit@testinterne.OVHcloud](mailto:newsletter-edit@testinterne.ovh){.external} .
+- Przykład: Twoja lista mailingowa to [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external}. Z adresu e-mail moderatora należy wysłać wiadomość na adres [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external} .
 
 Wówczas otrzymasz wiadomość z instrukcją wprowadzania modyfikacji.
 

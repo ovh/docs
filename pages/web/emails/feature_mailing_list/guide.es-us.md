@@ -218,7 +218,7 @@ ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 
 Es posible personalizar la mayoría de los textos de una lista de difusión. Como moderador, debe enviar un correo electrónico vacío a nombre_de_su_LD- [edit@sudominio.com](mailto:edit@sudominio.com){.external}.
 
-- Por ejemplo: Si su lista de difusión es [newsletter@testinterne.OVHcloud](mailto:newsletter@testinterne.ovh){.external}. Desde su dirección de correo electrónico de moderador, enviará un mensaje a [newsletter-edit@testinterne.OVHcloud](mailto:newsletter-edit@testinterne.ovh){.external}.
+- Por ejemplo: Si su lista de difusión es [newsletter@testinterne.ovh](mailto:newsletter@testinterne.ovh){.external}. Desde su dirección de correo electrónico de moderador, enviará un mensaje a [newsletter-edit@testinterne.ovh](mailto:newsletter-edit@testinterne.ovh){.external}.
 
 Luego, recibirá un correo electrónico con la información necesaria para guiarle en la realización de las modificaciones.
 
