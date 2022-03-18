@@ -95,7 +95,7 @@ Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=m
 
 - The `X-` fields are custom fields. They serve as complements to the standard fields. They are implemented by the servers that the emails pass through.
 <pre class="console"><code>
-X--Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
 X-VR-SPAMSTATE: OK
 X-VR-SPAMSCORE: 0
