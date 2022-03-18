@@ -207,9 +207,9 @@ Um einen personalisierten Ordner zu erstellen (um zum Beispiel alle E-Mails eine
 
 ### Ordner erstellen (2)
 
-In diesem Beispiel erstellen wir den Ordner "Test OVHcloud". Dieser wird innerhalb der INBOX platziert und die Anzeige der E-Mails erfolgt in Listenform.
+In diesem Beispiel erstellen wir den Ordner "Test OVH". Dieser wird innerhalb der INBOX platziert und die Anzeige der E-Mails erfolgt in Listenform.
 
-INBOX ist der englische Begriff für den "Posteingang". Der Ordner "Test OVHcloud" wird also innerhalb des Ordners Posteingang erstellt.
+INBOX ist der englische Begriff für den "Posteingang". Der Ordner "Test OVH" wird also innerhalb des Ordners Posteingang erstellt.
 
 Klicken Sie auf Speichern, um die Erstellung des Ordners abzuschließen.
 

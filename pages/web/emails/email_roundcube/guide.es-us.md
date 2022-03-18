@@ -199,9 +199,9 @@ Para crear una carpeta personalizada y aislar los mensajes de un tema o un inter
 
 
 ## Crear una carpeta (2)
-En este caso, creamos la carpeta «Test OVHcloud» en INBOX y los mensajes que contenga se visualizarán en forma de lista.
+En este caso, creamos la carpeta «Test OVH» en INBOX y los mensajes que contenga se visualizarán en forma de lista.
 
-La INBOX es el término inglés para «Bandeja de entrada», así que la carpeta «Test OVHcloud» se creará en la bandeja de entrada.
+La INBOX es el término inglés para «Bandeja de entrada», así que la carpeta «Test OVH» se creará en la bandeja de entrada.
 
 Haga clic en «Guardar» para finalizar la creación de la carpeta.
 

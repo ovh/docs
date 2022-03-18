@@ -203,7 +203,7 @@ Per creare una cartella personalizzata e isolare messaggi precisi, clicca su "+"
 
 
 ## Crea una cartella (2)
-Creiamo la cartella "Test OVHcloud", da inserire in INBOX, in cui i messaggi saranno visualizzati come lista.
+Creiamo la cartella "Test OVH", da inserire in INBOX, in cui i messaggi saranno visualizzati come lista.
 
 
 Clicca su Registra per validare la creazione.

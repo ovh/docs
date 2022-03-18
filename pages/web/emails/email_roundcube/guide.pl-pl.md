@@ -209,9 +209,9 @@ Aby utworzyć własny folder, kliknij na "+".
 
 - Krok 2:
 
-Utworzymy folder "Test OVHcloud". Zostanie on umieszczony w INBOX. E-maile będą się wyświetlały w formie listy.
+Utworzymy folder "Test OVH". Zostanie on umieszczony w INBOX. E-maile będą się wyświetlały w formie listy.
 
-INBOX to folder "Odebrane". Katalog "Test OVHcloud" zostanie utworzony w skrzynce odbiorczej.
+INBOX to folder "Odebrane". Katalog "Test OVH" zostanie utworzony w skrzynce odbiorczej.
 
 Kliknij na Zapisz.
 

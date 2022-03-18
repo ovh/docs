@@ -205,9 +205,9 @@ Para criar uma pasta personalizada e isolar as mensagens de um determinado tema 
 
 
 ## Criar uma pasta (2)
-Vamos então criar a pasta "Test OVHcloud", que será colocada na INBOX e a apresentação dos e-mails faz-se sob a forma de lista.
+Vamos então criar a pasta "Test OVH", que será colocada na INBOX e a apresentação dos e-mails faz-se sob a forma de lista.
 
-A INBOX é o sinónimo de "Caixa de receção". A pasta "Test OVHcloud" será então criada na caixa de receção.
+A INBOX é o sinónimo de "Caixa de receção". A pasta "Test OVH" será então criada na caixa de receção.
 
 Clique em Guardar para validar a criação.
 
