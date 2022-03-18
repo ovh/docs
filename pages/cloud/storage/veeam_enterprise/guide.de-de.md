@@ -128,19 +128,19 @@ Der OVHVeeamEnterprise Benutzer ist nur lokal verfügbar. Um die Remote-Verbindu
 ![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
 <ol start="5">
-  <li>Klicken Sie auf `Advanced`{.action}, um das zuvor hinzugefügte Dienstkonto zu finden, und klicken Sie auf `Find Now`{.action}. Wählen Sie den Benutzer `OVHVeeamEnterprise`{.action} aus der Liste der Benutzer aus.</li>
+  <li>Klicken Sie auf <code class="action">Advanced</code>, um das zuvor hinzugefügte Dienstkonto zu finden, und klicken Sie auf <code class="action">Find Now</code>. Wählen Sie den Benutzer <code class="action">OVHVeeamEnterprise</code> aus der Liste der Benutzer aus.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
 
 <ol start="6">
-  <li>Klicken Sie auf `OK`{.action}, und dann auf `OK`{.action}, um die Auswahl zu bestätigen. Als Nächstes aktivieren Sie alle Berechtigungen für den Benutzer `OVHVeeamEnterprise`{.action}.</li>
+  <li>Klicken Sie auf <code class="action">OK</code>, und dann auf <code class="action">OK</code>, um die Auswahl zu bestätigen. Als Nächstes aktivieren Sie alle Berechtigungen für den Benutzer <code class="action">OVHVeeamEnterprise</code>.</li>
 </ol>
 
 ![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
 
 <ol start="7">
-  <li>Klicken Sie auf `OK`{.action}, um zu bestätigen und auf `Apply`{.action}, um die Änderungen anzuwenden.</li>
+  <li>Klicken Sie auf <code class="action">OK</code>, um zu bestätigen und auf <code class="action">Apply</code>, um die Änderungen anzuwenden.</li>
 </ol>
 
 Ihr OVHVeeamEnterprise Benutzer ist jetzt lokal und über Fernzugriff verfügbar.
