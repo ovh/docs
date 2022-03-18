@@ -17,11 +17,11 @@ Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités
 |Services Public Cloud|Actvités certifiées HDS|
 |---|---|
 |Compute, Storage (Block, Object, Archive, Snapshot, Instance Backup)|1,2,3,4,6|
-|Managed Kubernetes Service, ML Serving|1,2,3,4,5,6|
+|Managed Kubernetes Service, ML Serving, AI Training, Data Processing, Cloud Databases |1,2,3,4,5,6|
 
 > [!primary]
 >
-> Les services Public Cloud : Managed Private Registry, AI Training, Data Processing (Spark) et Big Data Cluster (Hadoop) ne sont pas, à date, dans le périmètre de certification HDS.
+> Le service Public Cloud "Managed Private Registry" n'est pas, à date, dans le périmètre de certification HDS.
 >
 
 **Découvez comment activer l’option pour l’hébergement des données de santé sur votre projet Public Cloud**
