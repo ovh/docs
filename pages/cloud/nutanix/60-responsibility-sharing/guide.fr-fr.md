@@ -2,7 +2,7 @@
 title: RACI Hosted Private Cloud powered by Nutanix
 slug: raci-hpc-nutanix
 section: RACI Hosted Private Cloud powered by Nutanix
-excerpt: RACI entre OVHcloud et le client pour l'utilisation du produit Hosted Private Cloud powered by Nutanix
+excerpt: "RACI entre OVHcloud et le client pour l'utilisation du produit Hosted Private Cloud powered by Nutanix"
 ---
 
 **Dernière mise à jour le XX/XX/XX**
