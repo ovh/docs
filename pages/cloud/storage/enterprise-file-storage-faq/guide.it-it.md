@@ -104,7 +104,7 @@ Gli Snapshot sono disponibili in una directory appositamente creata (.snapshot).
 
 Gli utenti sono responsabili della gestione dei loro backup (strumenti e regole). Per ragioni di sicurezza e resilienza dell'infrastruttura, OVHcloud esegue un backup giornaliero del servizio su un server remoto. In caso di malfunzionamenti o attacchi, OVHcloud può ripristinare i dati del giorno precedente. Questa operazione viene eseguita su richiesta ed è un servizio opzionale fatturato.
 
-### Gli Snapshot sono inclusi nella capacità di un pool?
+### Gli Snapshot sono inclusi nella capacità di un servizio?
 
 Un minimo del 5% dello spazio di storage è assegnato agli Snapshot. Ad esempio, su un servizio di 5TiB, 250GiB sono riservati agli Snapshot.
 

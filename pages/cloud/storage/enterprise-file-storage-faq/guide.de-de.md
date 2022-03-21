@@ -104,7 +104,7 @@ Die Snapshots sind in einem daf체r vorgesehenen Verzeichnis (*.snapshots*) verf�
 
 Benutzer sind f체r die Durchf체hrung und Verwaltung ihrer Backups verantwortlich. Aus Gr체nden der Sicherheit und Resilienz der Infrastruktur f체hrt OVHcloud jedoch ein t채gliches Backup des Dienstes auf einem Remote-Server. Im Falle eines Ausfalls oder eines Angriffs kann OVHcloud die Daten des Vortages wiederherstellen. Eine Wiederherstellung kann auf Anfrage als bezahlte Dienstleistung erfolgen.
 
-### Sind Snapshots in der Kapazit채t eines Pools enthalten?
+### Sind Snapshots in der Kapazit채t eines Dienstes enthalten?
 
 Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. Bei einem Dienst mit 5TiB sind zum Beispiel 250GiB f체r Snapshots reserviert.
 

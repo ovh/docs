@@ -104,7 +104,7 @@ Snapshoty są dostępne w odpowiednim katalogu (.snapshoty).
 
 Użytkownicy są odpowiedzialni za zarządzanie kopiami zapasowymi (narzędzie i reguły). Ze względów bezpieczeństwa i odporności infrastruktury OVHcloud wykonuje codzienną kopię zapasową usługi na zdalnym serwerze. W przypadku awarii lub ataku, OVHcloud może przywrócić dane z poprzedniego dnia. Operacja ta jest realizowana na żądanie i opcjonalnie płatna usługa.
 
-### Czy snapshoty są zawarte w pojemności puli?
+### Czy snapshoty są zawarte w pojemności usługi?
 
 Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej. Na przykład, w usłudze 5TiB, 250GiB jest zarezerwowane dla snapshotów.
 
