@@ -28,7 +28,7 @@ order: 01
  }
 </style>
 
-**Last updated March 17, 2022.**
+**Last updated March 21, 2022.**
 
 ## Objective
 
@@ -44,25 +44,20 @@ It can be used for monitoring microservices-based distributed systems:
 - Service dependency analysis
 - Performance / latency optimization
 
-TODO: xxx
-
-
-With Jaeger ...
-
+TODO: faire le schema d'architecture a la mano ?
 ![Jaeger](images/jaeger-architecture.png)
 
 Read more about [Jaeger architecture and components](https://www.jaegertracing.io/docs/1.32/architecture/).
 
-TODO: xxx
-
-xxx
+TODO: remplacer DB par le Db ou in-memory DB
 
 In this guide you will:
 
-- Install Jaeger
-- TODO: xxx create a Go application
-- TODO: xxx deploy ?
-- TODO: xxx
+- Install Jaeger Operator
+- Deploy Jaeger components
+- Access to the UI
+- Deploy your instrumented application
+- Visualize traces
 
 You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=ie){.external} to reinitialize your cluster before following this tutorial.
 
@@ -74,7 +69,14 @@ You also need to have [Helm](https://docs.helm.sh/){.external} installed on your
 
 ## Instructions
 
+In this guide we will show you first how to deploy Jaeger as distributed tracing platform backend and thenn how to create and deploy your application that will send their traces to Jaeger.
+
 TODO: xxx
+
+go app (with OpenTelemetry) -> jaeger/simplest-collector <- jaeger-UI/query
+
+TODO: pour la visualisation de l'app en go dessiner un conteneur avec dedans l'icone go et opentelemetry
+puis vers un conteneur collector puis vers un conteneur query/UI
 
 ### Installing Jaeger
 
@@ -174,19 +176,29 @@ jaeger.jaegertracing.io/simplest created
 You can now check if the Jaeger instance is running with the following commands:
 
 ```bash
-kubectl get jaegers
+kubectl get jaeger
 kubectl get pods -l app.kubernetes.io/instance=simplest
 ```
 
 Theses commands will check if the instances that were created, list the jaeger objects and list the pods that are running:
 
-<pre class="console"><code>$ kubectl get jaegers
+<pre class="console"><code>$ kubectl get jaeger
 NAME       STATUS    VERSION   STRATEGY   STORAGE   AGE
 simplest   Running   1.30.0    allinone   memory    4s
 
 $ kubectl get pods -l app.kubernetes.io/instance=simplest
 NAME                        READY   STATUS    RESTARTS   AGE
 simplest-59ccc99bcc-zpscb   1/1     Running   0          80s
+</code></pre>
+
+You can also check that all Jaeger services have been correctly deployed:
+
+<pre class="console"><code>$ kubectl get svc -l app=jaeger
+NAME                          TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                  AGE
+simplest-agent                ClusterIP      None           <none>           5775/UDP,5778/TCP,6831/UDP,6832/UDP      3d21h
+simplest-collector            ClusterIP      10.3.197.39    <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
+simplest-collector-headless   ClusterIP      None           <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
+simplest-query                LoadBalancer   10.3.114.168   51.210.210.101   16686:30598/TCP,16685:30835/TCP          3d21h
 </code></pre>
 
 ### Access to Jaeger UI
@@ -210,32 +222,180 @@ Open your browser and go to the Jaeger interface.
 
 ![Jaeger Query](images/jaeger-query.png)
 
-### TODO: xxx
+### Deploy your instrumented application
+
+In order to link your application to the Jaeger backend you need to use a tool like OpenTelemetry.
+
+![OpenTelemetry](images/opentelemetry-logo)
+
+[OpenTelemetry](https://opentelemetry.io/) is a collection of tools, APIs, and SDKs. Useful to instrument, generate, collect, and export telemetry data (metrics, logs, and traces) to help you analyze your software’s performance and behavior.
+
+OpenTelemetry integrates with popular libraries and frameworks such as Spring, Express, Quarkus, and with a lot of languages. Go to the documentation to see [how to integrate your application](https://opentelemetry.io/docs/instrumentation/).
+
+For this guide you will deploy a Golang application, instrumented with OpenTelemetry, that will send traces to a provider: your Jaeger collector.
+
+We already packaged a Golang application into a Docker image and pushed it in [our ovhplatform Docker Hub repository](https://hub.docker.com/r/ovhplatform/what-is-my-pod-with-tracing) so you can use it directly.
+
+In order to deploy  the application on your OVHcloud managed Kubernetes Service, create a `deployment.yml` file with the following content:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: what-is-my-pod-with-tracing-deployment
+  labels:
+    app: what-is-my-pod-with-tracing
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: what-is-my-pod-with-tracing
+  template:
+    metadata:
+      labels:
+        app: what-is-my-pod-with-tracing
+    spec:
+      containers:
+      - name: what-is-my-pod-with-tracing
+        image: ovhplatform/what-is-my-pod-with-tracing:1.0.2
+        ports:
+        - containerPort: 8080
+        env:
+          - name: MY_POD_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+```
+
+TODO: pusher l'image dans docker hub ovhplatform/what-is-my-pod-with-tracing:1.0.2 !!!!
+
+This YAML deployment manifest file defines that our application, based on `ovhplatform/what-is-my-pod-with-tracing:1.0.2` image will be deployed with 3 replicas (3 pods). We pass the pod name on environment variable in order to display it in our what-is-my-pod-with-tracing application.
+
+Then, create a `svc.yml` file with the following content to define our service (a service exposes a deployment):
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: what-is-my-pod-with-tracing
+  name: what-is-my-pod-with-tracing
+spec:
+  ports:
+  - port: 8080
+  selector:
+    app: what-is-my-pod-with-tracing
+  type: LoadBalancer
+```
+
+Apply the deployment and service manifest files to your cluster with the following commands:
+
+```bash
+kubectl apply -f deployment.yml
+kubectl apply -f svc.yml
+```
+
+Output should be like this:
+
+<pre class="console"><code>$ kubectl apply -f deployment.yml
+deployment.apps/what-is-my-pod-with-tracing-deployment created
+
+$ kubectl apply -f svc.yml
+service/what-is-my-pod-with-tracing created
+</code></pre>
+
+You can verify if your application is running and service is created by running the following commands:
+
+```bash
+kubectl get pod -l app=what-is-my-pod-with-tracing
+kubectl get svc -l app=what-is-my-pod-with-tracing
+```
+
+Output should be like this:
+
+<pre class="console"><code>$ kubectl get pod -l app=what-is-my-pod-with-tracing
+NAME                                                      READY   STATUS    RESTARTS   AGE
+what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z   1/1     Running   0          3m
+what-is-my-pod-with-tracing-deployment-84b56684d8-bcsxh   1/1     Running   0          3m
+what-is-my-pod-with-tracing-deployment-84b56684d8-wbjmz   1/1     Running   0          3m
+
+$ kubectl get svc -l app=what-is-my-pod-with-tracing
+NAME                          TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)          AGE
+what-is-my-pod-with-tracing   LoadBalancer   10.3.118.87   135.125.84.198   8080:32365/TCP   3m
+</code></pre>
+
+In order to generate traffic you need to get the external IP of your service:
+
+```bash
+export APP_URL=$(kubectl get svc what-is-my-pod-with-tracing -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+echo Application URL: http://$APP_URL:8080/
+```
+
+And then generate traffic with curl command:
+
+```bash
+curl http://$APP_URL:8080/
+```
+
+You should obtain the following result:
+
+<pre class="console"><code>$ export APP_URL=$(kubectl get svc what-is-my-pod-with-tracing -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+
+$ echo $APP_URL
+135.125.84.198
+
+$ curl http://$APP_URL:8080/
+Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z"!%
+
+$ curl http://$APP_URL:8080/
+Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z"!%
+
+$ curl http://$APP_URL:8080/
+Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-wbjmz"!%
+</code></pre>
+
+TODO: xx
+
+TODO: montrer le main.go avec les parties intéressantes pentelemetry et envoi a jaeger-collector
+
+TODO: you can find all the source code of this application ...
+https://github.com/ovhcloud-devrel/go-what-is-my-pod-with-tracing
+
+
+TODO: xxx we initiate ... we define a service named ... and at each time an user call hello route "/", e create a span and we send it to the jaeger collector
 
 TODO: xxx
 
-Next. we need to create a resource describing the Jaeger instance we want the Operator to manage. To do so, we will follow Jaeger’s official documentation:
+
+TODO: montrer le code avec les traces qui vont etre envoyé" au jarger-colectohealess (simplestcollector-headless) ...
 
 
-You can check if the Kyverno pod is correctly running:
+code source de l'app : link github
 
-<pre class="console"><code>$ kubectl get pods -n kyverno
-NAME                       READY   STATUS    RESTARTS   AGE
-kyverno-554ffb4c96-f2lvs   1/1     Running   0          50s
-</code></pre>
 
-And you can check that Kyverno installed several webhooks on your cluster:
+### Deploy your application
 
-<pre class="console"><code>$ kubectl get validatingwebhookconfigurations,mutatingwebhookconfigurations
-NAME                                                                                                  WEBHOOKS   AGE
-validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-validating-webhook-cfg     1          52s
-validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-validating-webhook-cfg   2          52s
+TODO: We deployed this app in the Docker hub ...
 
-NAME                                                                                              WEBHOOKS   AGE
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-mutating-webhook-cfg     1          52s
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-mutating-webhook-cfg   2          52s
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-verify-mutating-webhook-cfg     1          52s
-</code></pre>
+TODO: xxx
+
+
+$ kubectl apply -f k8s/deployment.yml
+kubectl get po
+deployment.apps/what-is-my-pod-with-tracing-deployment created
+
+# create a service in order to access the application through a load balancer
+$ kubectl expose deployment what-is-my-pod-with-tracing-deployment --name=what-is-my-pod-with-tracing --type=LoadBalancer
+
+
+### Visualize traces
+
+
+TODO: xxx
+
+Connect to ... jaeger UI link
+
+click on .. search ...
 
 ### Create and deploy policies
 
@@ -269,43 +429,7 @@ spec:
   - name: validate-namespace
     match:
       resources:
-        kinds:
-        - Pod
     validate:
-      message: "Using \"default\" namespace is not allowed."
-      pattern:
-        metadata:
-          namespace: "!default"
-  - name: require-namespace
-    match:
-      resources:
-        kinds:
-        - Pod
-    validate:
-      message: "A namespace is required."
-      pattern:
-        metadata:
-          namespace: "?*"
-  - name: validate-podcontroller-namespace
-    match:
-      resources:
-        kinds:
-        - DaemonSet
-        - Deployment
-        - Job
-        - StatefulSet
-    validate:
-      message: "Using \"default\" namespace is not allowed for pod controllers."
-      pattern:
-        metadata:
-          namespace: "!default"
-  - name: require-podcontroller-namespace
-    match:
-      resources:
-        kinds:
-        - DaemonSet
-        - Deployment
-        - Job
         - StatefulSet
     validate:
       message: "A namespace is required for pod controllers."
@@ -372,235 +496,32 @@ disallow-default-namespace:
 
 Perfect, you no longer have the ability to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
 
-#### Policy 2: Create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno`
-
-For our second example we want to create a `generate` policy that will create a new ConfigMap called `zk-kafka-address` in all new namespaces except `kube-system`, `kube-public` and `kyverno`.
-
-Create a new policy in a `policy-generate-cm.yaml` file:
-
-```yaml
-apiVersion: kyverno.io/v1
-kind: ClusterPolicy
-metadata:
-  name: zk-kafka-address
-spec:
-  rules:
-  - name: k-kafka-address
-    match:
-      resources:
-        kinds:
-        - Namespace
-    exclude:
-      resources:
-        namespaces:
-        - kube-system
-        - kube-public
-        - kyverno
-    generate:
-      synchronize: true
-      kind: ConfigMap
-      name: zk-kafka-address
-      # generate the resource in the new namespace
-      namespace: "{{request.object.metadata.name}}"
-      data:
-        kind: ConfigMap
-        metadata:
-          labels:
-            somekey: somevalue
-        data:
-          ZK_ADDRESS: "192.168.10.10:2181,192.168.10.11:2181,192.168.10.12:2181"
-          KAFKA_ADDRESS: "192.168.10.13:9092,192.168.10.14:9092,192.168.10.15:9092"
-```
-
-> [!primary]
-> When the `synchronize` attribute is set to `true`, modifications will be synchronized to the generated resources.  
-> So in our case, if you change the values of `ZK_ADDRESS` and `KAFKA_ADDRESS` for example, all the created ConfigMap will be updated.
-
-To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
-
-```bash
-kubectl apply -f policy-generate-cm.yaml
-```
-
-After applying the policy, check if the policy is correctly applied on the cluster:
-
-<pre class="console"><code>$ kubectl apply -f policy-generate-cm.yaml
-clusterpolicy.kyverno.io/zk-kafka-address created
-
-$ kubectl get cpol -A
-NAME                         BACKGROUND   ACTION    READY
-disallow-default-namespace   true         enforce   true
-zk-kafka-address             true         audit     true
-</code></pre>
-
-The `generate` rule is triggered during the `API CREATE` operation, so for this policy when a new namespace is created.
-
-In order to test the behavior of this policy, you will create a new namespace `test2`:
-
-```bash
-kubectl create ns test2
-```
-
-And then check if the new ConfigMap appears in the new `test2` namespace:
-
-```bash
-kubectl get cm -A
-```
-
-You should have results like these:
-
-<pre class="console"><code>$ kubectl create ns test2
-namespace/test2 created
-
-$ kubectl get cm -A
-NAMESPACE         NAME                                 DATA   AGE
-default           kube-root-ca.crt                     1      7d20h
-kube-node-lease   kube-root-ca.crt                     1      7d20h
-kube-public       kube-root-ca.crt                     1      7d20h
-kube-system       canal-config                         5      7d20h
-kube-system       coredns                              1      7d20h
-kube-system       extension-apiserver-authentication   6      7d20h
-kube-system       kube-dns-autoscaler                  1      7d20h
-kube-system       kube-proxy                           1      7d20h
-kube-system       kube-root-ca.crt                     1      7d20h
-kyverno           kube-root-ca.crt                     1      7d19h
-kyverno           kyverno                              2      7d19h
-kyverno           kyverno-metrics                      1      7d19h
-test              kube-root-ca.crt                     1      7d16h
-test2             kube-root-ca.crt                     1      2m28s
-test2             zk-kafka-address                     2      2m27s
-</code></pre>
-
-As you can see the ConfigMap `zk-kafka-address` have been created in the new `test2` namespace.
-
-#### Policy 3: Add a label `app: my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in a given namespace
-
-The aim of this policy is to automatically add a label `app=my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in the namespaces `team-a`.
-
-In order to do that, we will show you how to deploy a `mutate` policy.
-
-> [!primary]
-> Resource `mutation` occurs before `validation`, so the validation rules should not contradict the changes performed by the mutation section.
-
-Create a new policy in a `policy-add-label.yaml` file:
-
-```yaml
-apiVersion: kyverno.io/v1
-kind: ClusterPolicy
-metadata:
-  name: add-label    
-spec:
-  rules:
-  - name: add-label
-    match:
-      resources:
-        kinds:
-        - Pod
-        - Service
-        - ConfigMap
-        - Secret
-        namespaces:
-        - team-a
-    mutate:
-      patchStrategicMerge:
-        metadata:
-          labels:
-            app: my-awesome-app
-``` 
-
-To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
-
-```yaml
-kubectl apply -f policy-add-label.yaml
-```
-
-After applying the policy, check if the policy is correctly applied on the cluster:
-
-<pre class="console"><code>$ kubectl apply -f policy-add-label.yaml
-clusterpolicy.kyverno.io/add-label created
-
-$ kubectl get cpol -A
-NAME                         BACKGROUND   ACTION    READY
-add-label                    true         audit
-disallow-default-namespace   true         enforce   true
-zk-kafka-address             true         audit     true
-</code></pre>
-
-Now you can create a new namespace `team-a`, deploy a new Pod into it and check if the new label have been correctly added automatically:
-
-```bash
-kubectl create ns team-a
-kubectl apply -f my-pod.yaml -n team-a
-kubectl get pod my-pod -n team-a --show-labels
-```
-
-> [!primary]
-> Previously in this guide we showed you the creation of a Pod in a file named `my-pod.yaml`, so in this step you can reuse it.
-
-You should obtain the following results:
-
-<pre class="console"><code>$ kubectl create ns team-a
-namespace/team-a created
-
-$ kubectl apply -f my-pod.yaml -n team-a
-pod/my-pod created
-
-$ kubectl get pod my-pod -n team-a --show-labels
-NAME     READY   STATUS    RESTARTS   AGE   LABELS
-my-pod   1/1     Running   0          29s   app=my-awesome-app
-</code></pre>
-
-### Debugging/validating
-
-Previously in this guide we show you how to install the `kyverno` CLI. With this CLI you can [apply](https://kyverno.io/docs/kyverno-cli/#apply), [test](https://kyverno.io/docs/kyverno-cli/#test) and [validate](https://kyverno.io/docs/kyverno-cli/#validate) policies.
-
-In this tutorial we want to show you that the CLI is perfect for a usage on your local machine (for dev/test usages) and in your CI/CD pipelines in order to test and validate the policies you want to deploy in production are correct.
-
-You can for example check if policies we created are validated with the `kyverno validate` command:
-
-```bash
-kyverno validate *.yaml
-```
-
-You should obtain results like these:
-
-<pre class="console"><code>$ kyverno validate *.yaml
-----------------------------------------------------------------------
-Policy disallow-default-namespace is valid.
-
-----------------------------------------------------------------------
-Policy add-label is valid.
-
-----------------------------------------------------------------------
-Policy zk-kafka-address is valid.
-</code></pre>
-
-### Troubleshooting
-
-If you have any problem with Kyverno, for example you deployed a policy and don't know why it's not working, you can go to the [Kyverno troubleshooting page](https://kyverno.io/docs/troubleshooting/).
+TODO: xx
 
 ### What's next?
 
-You now have a policy management on your Kubernetes cluster, and you deployed a few policies to test the behavior of Kyverno.  
-In order to see more examples of policies, you can go to [Kyverno policies repository](https://github.com/kyverno/policies/). This repository contains Kyverno policies for a wide array of usage on various Kubernetes and ecosystem resources and subjects.
-
-If you have any questions or troubles about Kyverno, you can also go to [Kyverno Slack community](https://slack.k8s.io/#kyverno).
-
-Having a policy management is a good practice to follow. It will help you to keep your cluster clean and secure.  
-Next time we will see another tutorial that will help you to secure your OVHcloud Managed Kubernetes clusters.
+TODO: xxx
 
 ## Cleanup
 
-First, remove the `ClusterPolicies` you deployed in this guide:
+Delete Jaeger components (created by the operator):
 
 ```bash
-kubectl delete cpol --all
+kubectl delete jaeger simplest
 ```
 
-To uninstall Kyverno, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Kyverno Helm installed chart:
+Wait until the components are deleted and then you can uninstall the operator.
+
+To uninstall Jaeger Operator, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Kyverno Helm installed chart:
 
 ```bash
-helm uninstall kyverno kyverno/kyverno --namespace kyverno
+helm uninstall jaeger-operator --namespace observability
+```
+
+Delete the `observability` namespace:
+
+```bash
+kubectl delete namespace observability
 ```
 
 ## Go further
