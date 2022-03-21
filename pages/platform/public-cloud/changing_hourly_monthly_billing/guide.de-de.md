@@ -11,7 +11,7 @@ section: Projektverwaltung
 
 Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrechnung stündlich oder monatlich erfolgen soll. Instanzen mit Stundensatz werden nach dem Verfahren *Pay as you go* abgerechnet, d.h. am Monatsende werden den Nutzern die spezifischen Ressourcen in Rechnung gestellt, die sie verwendet haben. 
 
-Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werden zu einem niedrigeren Preis berechnet (50% weniger als bei der verbrauchsspezifischen Abrechnung). Wenn Sie ursprünglich die stündliche Abrechnung ausgewählt haben, können Sie jederzeit zur monatlichen Abrechnung wechseln.
+Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werden zu einem niedrigeren Preis berechnet (bis zu 50% weniger als bei der verbrauchsspezifischen Abrechnung). Wenn Sie ursprünglich die stündliche Abrechnung ausgewählt haben, können Sie jederzeit zur monatlichen Abrechnung wechseln.
 
 **In dieser Anleitung wird erläutert, wie Sie von der stündlichen zur monatlichen Abrechnung wechseln.**
 
