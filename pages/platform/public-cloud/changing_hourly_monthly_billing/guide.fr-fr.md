@@ -58,7 +58,7 @@ Remplacez "InstanceID" par l'ID de l'instance correspondante. Cet identifiant pe
 
 ### Depuis l'API OVHcloud
 
-Connectez-vous à l’[interface API OVHcloud](https://ca.api.ovh.com/console/) selon le [guide approprié](../../api-premiers-pas/) et suivez les étapes ci-dessous.
+Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/console/) selon le [guide approprié](../../api-premiers-pas/) et suivez les étapes ci-dessous.
 
 Utilisez l'appel suivant :
 
