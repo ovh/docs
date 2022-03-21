@@ -10,7 +10,7 @@ order: 7
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 21-02-2022**
+**Ostatnia aktualizacja z dnia 21-03-2022**
 
 ## Wprowadzenie
 
@@ -106,7 +106,7 @@ Użytkownicy są odpowiedzialni za zarządzanie kopiami zapasowymi (narzędzie i
 
 ### Czy snapshoty są zawarte w pojemności puli?
 
-Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej. Na przykład usłudze 5TiB będzie towarzyszyć dodatkowe 250GiB zarezerwowane dla snapshotów. Po przekroczeniu tej pojemności snapshoty zajmą przestrzeń dyskową usługi.
+Do kopii zapasowych snapshot przydziela się co najmniej 5% przestrzeni dyskowej. Na przykład, w usłudze 5TiB, 250GiB jest zarezerwowane dla snapshotów.
 
 ### Jaka jest maksymalna liczba snapshotów na usługę?
 

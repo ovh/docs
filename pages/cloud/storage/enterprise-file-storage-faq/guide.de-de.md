@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.02.2022**
+**Letzte Aktualisierung am 21.03.2022**
 
 ## Ziel
 
@@ -106,7 +106,7 @@ Benutzer sind für die Durchführung und Verwaltung ihrer Backups verantwortlich
 
 ### Sind Snapshots in der Kapazität eines Pools enthalten?
 
-Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. So wird zum Beispiel ein Dienst mit 5 TiB von zusätzlichen 250 GiB begleitet, die für Snapshots reserviert sind. Über diese Kapazität hinaus werden die Snapshots den Speicherplatz des Dienstes beanspruchen.
+Snapshots werden mindestens 5% des Speicherplatzes zugewiesen. Bei einem Dienst mit 5TiB sind zum Beispiel 250GiB für Snapshots reserviert.
 
 ### Wie viele Snapshots gibt es pro Dienstleistung maximal?
 

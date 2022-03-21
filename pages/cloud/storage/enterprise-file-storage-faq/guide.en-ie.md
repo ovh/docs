@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 7
 ---
 
-**Last updated 3rd March 2022**
+**Last updated 21st March 2022**
 
 ## Objective
 
@@ -102,7 +102,7 @@ Customers are responsible for managing their own backup solution and policy. How
 
 ### Are snapshots included in the capacity of a pool?
 
-Snapshots are allocated a minimum of 5% of the storage space. For example, a 5TiB service will be accompanied by an additional 250GiB reserved for snapshots. Beyond this capacity, snapshots will occupy the service space.
+Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TiB service, 250GiB are reserved for snapshots.
 
 ### What is the maximum number of snapshots per service?
 

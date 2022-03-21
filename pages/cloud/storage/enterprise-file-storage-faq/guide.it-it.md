@@ -10,7 +10,7 @@ order: 7
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/03/2022**
+**Ultimo aggiornamento: 21/03/2022**
 
 ## Obiettivo
 
@@ -106,7 +106,7 @@ Gli utenti sono responsabili della gestione dei loro backup (strumenti e regole)
 
 ### Gli Snapshot sono inclusi nella capacità di un pool?
 
-Un minimo del 5% dello spazio di storage è assegnato agli Snapshot. Ad esempio, un servizio di 5TiB sarà accompagnato da 250GiB aggiuntivi riservati per gli Snapshot. Oltre a questa capacità, gli Snapshot occuperanno lo spazio del servizio.
+Un minimo del 5% dello spazio di storage è assegnato agli Snapshot. Ad esempio, su un servizio di 5TiB, 250GiB sono riservati agli Snapshot.
 
 ### Qual è il numero massimo di Snapshot per servizio?
 
