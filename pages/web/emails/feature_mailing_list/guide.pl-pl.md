@@ -48,7 +48,7 @@ Nadawca (sender) przesyła wiadomość e-mail do odbiorców z listy mailingowej.
 
 Aby utworzyć listę mailingową, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz kartę `Web Cloud`{.action} znajdującą się u góry.
 
-Po zalogowaniu kliknij w lewej kolumnie w sekcję `E-maile`{.action}, a następnie nazwę danej domeny. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
+Po zalogowaniu kliknij w sekcję `E-maile`{.action}, a następnie nazwę danej domeny. Przejdź do karty `Listy mailingowe`{.action} w Twojej usłudze e-mail.
 
 ![emails](images/manage_mailing-lists_01.png){.thumbnail}
 

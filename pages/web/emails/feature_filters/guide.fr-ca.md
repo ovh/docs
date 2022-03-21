@@ -33,7 +33,7 @@ Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 
 Dans le tableau listant vos différentes adresses e-mails, cliquez sur l'icône `Filtre`{.action} de l'adresse concernée.
 
-![emails](images/img_3239.jpg){.thumbnail}
+![emails](images/img_3239.png){.thumbnail}
 
 Vous accéderez à la liste de vos filtres actuellement configurés pour cette adresse e-mail. Pour en ajouter un, cliquez donc sur le bouton à droite `Ajouter un Filtre`{.action}.
 

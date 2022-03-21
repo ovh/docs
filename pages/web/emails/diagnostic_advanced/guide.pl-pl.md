@@ -37,11 +37,11 @@ Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli T
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 
-- W przypadku **domeny** przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} w kolumnie z lewej strony i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
-- W przypadku **hostingu WWW** przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action} w kolumnie z lewej strony, a następnie wybierz Twój hosting. Data wygaśnięcia lub automatycznego odnowienia hostingu zostanie pokazana na górze strony.
-- W przypadku oferty **MXplan** przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action} w kolumnie z lewej strony, a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
-- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
-- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku **domeny** przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
+- W przypadku **hostingu WWW** przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz Twój hosting. Data wygaśnięcia lub automatycznego odnowienia hostingu zostanie pokazana na górze strony.
+- W przypadku oferty **MXplan** przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action}, a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 
 ### Nie mogę wysyłać e-maili z programu pocztowego
 
@@ -69,9 +69,9 @@ W jaki sposób zmienić hasło do konta e-mail:
 
 - W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
 
-- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
 
-- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
 
 ### Masz problem z utrzymaniem usługi?
 

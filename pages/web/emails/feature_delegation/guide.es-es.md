@@ -47,7 +47,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
 
-En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
+Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
 Para ver la lista de cuentas de correo de su solución MXplan, haga clic en la pestaña `Correo electrónico`{.action}.
 
