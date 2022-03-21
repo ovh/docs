@@ -188,7 +188,8 @@ csi-cinder-high-speed       cinder.csi.openstack.org   Delete          Immediate
 csi-hostpath-sc (default)   hostpath.csi.k8s.io        Retain          Immediate           false                  2d
 ```
 **Disclaimer:**
-As of today, the storage classes `csi-cinder-classic` and `csi-cinder-high-speed` does not support the `volume snapshot` capability out of the box. The OVH Managed Kubernetes Service team is working to add this feature in the next version planned to release by mid of May 2022. While it get the updated, users can use any `CSI provisioner` compatible with the underlying `cinder` storage. In this example, we have used `Hostpath CSI driver` for demonstration purpose.
+A current limitation of the managed Cinder CSI with OVHcloud Managed Kubernetes Service do not allow to snapshot attached persistent volumes.
+OVHcloud have validated that this limitation will be removed following a CSI upgrade planned for all clusters early May 2022.
 
 User should run a preflight check to make sure all the prerequisites for the TVK are fulfilled to proceed safely with installation. Follow the [TVK Preflight Checks](https://docs.trilio.io/kubernetes/support/support-and-issue-filing/tvk-preflight-checks) page to install and run preflight through krew plugin.
 
