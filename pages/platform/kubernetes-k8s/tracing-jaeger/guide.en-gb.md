@@ -73,7 +73,7 @@ In this guide we will show you first how to deploy Jaeger as distributed tracing
 
 TODO: xxx
 
-go app (with OpenTelemetry) -> jaeger/simplest-collector <- jaeger-UI/query
+go app (with OpenTelemetry) -> jaeger/jaeger-collector <- jaeger-UI/query
 
 TODO: pour la visualisation de l'app en go dessiner un conteneur avec dedans l'icone go et opentelemetry
 puis vers un conteneur collector puis vers un conteneur query/UI
@@ -143,17 +143,17 @@ NAME                               READY   STATUS    RESTARTS   AGE
 jaeger-operator-67f8dd68c9-5qj26   1/1     Running   0          3m5s
 </code></pre>
 
-The simplest possible way to create a Jaeger instance is by creating a YAML file that will install the default AllInOne image. This “all-in-one” image includes: agent, collector, query, ingester and Jaeger UI in a single pod, using in-memory storage by default.
+The jaeger possible way to create a Jaeger instance is by creating a YAML file that will install the default AllInOne image. This “all-in-one” image includes: agent, collector, query, ingester and Jaeger UI in a single pod, using in-memory storage by default.
 
 For this guide you will deploy Jaeger components through this simple way, which can be uses for development, testing and demo purposes but for [production strategy](https://www.jaegertracing.io/docs/1.32/operator/#deployment-strategies) you can read the official documentation.
 
-Once the `jaeger-operator` pod in the namespace `observability` is ready, create a `simplest.yaml` file with the following content:
+Once the `jaeger-operator` pod in the namespace `observability` is ready, create a `jaeger.yaml` file with the following content:
 
 ```yaml
 apiVersion: jaegertracing.io/v1
 kind: Jaeger
 metadata:
-  name: simplest
+  name: jaeger
 spec:
   query:
     serviceType: LoadBalancer
@@ -164,41 +164,41 @@ In this YAML manifest file we specify that you want to access the Jaeger UI (`ja
 And apply it:
 
 ```bash
-kubectl apply -f simplest.yaml
+kubectl apply -f jaeger.yaml
 ```
 
-Theses commands will create a Jaeger instance named `simplest` in the namespace `observability`:
+Theses commands will create a Jaeger instance named `jaeger` in the namespace `observability`:
 
-<pre class="console"><code>$ kubectl apply -f simplest.yaml
-jaeger.jaegertracing.io/simplest created
+<pre class="console"><code>$ kubectl apply -f jaeger.yaml
+jaeger.jaegertracing.io/jaeger created
 </code></pre>
 
 You can now check if the Jaeger instance is running with the following commands:
 
 ```bash
 kubectl get jaeger
-kubectl get pods -l app.kubernetes.io/instance=simplest
+kubectl get pods -l app.kubernetes.io/instance=jaeger
 ```
 
 Theses commands will check if the instances that were created, list the jaeger objects and list the pods that are running:
 
 <pre class="console"><code>$ kubectl get jaeger
 NAME       STATUS    VERSION   STRATEGY   STORAGE   AGE
-simplest   Running   1.30.0    allinone   memory    4s
+jaeger   Running   1.30.0    allinone   memory    4s
 
-$ kubectl get pods -l app.kubernetes.io/instance=simplest
+$ kubectl get pods -l app.kubernetes.io/instance=jaeger
 NAME                        READY   STATUS    RESTARTS   AGE
-simplest-59ccc99bcc-zpscb   1/1     Running   0          80s
+jaeger-59ccc99bcc-zpscb   1/1     Running   0          80s
 </code></pre>
 
 You can also check that all Jaeger services have been correctly deployed:
 
 <pre class="console"><code>$ kubectl get svc -l app=jaeger
 NAME                          TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                  AGE
-simplest-agent                ClusterIP      None           <none>           5775/UDP,5778/TCP,6831/UDP,6832/UDP      3d21h
-simplest-collector            ClusterIP      10.3.197.39    <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
-simplest-collector-headless   ClusterIP      None           <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
-simplest-query                LoadBalancer   10.3.114.168   51.210.210.101   16686:30598/TCP,16685:30835/TCP          3d21h
+jaeger-agent                ClusterIP      None           <none>           5775/UDP,5778/TCP,6831/UDP,6832/UDP      3d21h
+jaeger-collector            ClusterIP      10.3.197.39    <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
+jaeger-collector-headless   ClusterIP      None           <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
+jaeger-query                LoadBalancer   10.3.114.168   51.210.210.101   16686:30598/TCP,16685:30835/TCP          3d21h
 </code></pre>
 
 ### Access to Jaeger UI
@@ -206,13 +206,13 @@ simplest-query                LoadBalancer   10.3.114.168   51.210.210.101   166
 Now you can retrieve Jaeger UI URL with the following command:
 
 ```bash
-export JAEGER_URL=$(kubectl get svc simplest-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+export JAEGER_URL=$(kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 echo Jaeger URL: http://$JAEGER_URL:16686
 ```
 
 You should obtain the following result:
 
-<pre class="console"><code>$ export JAEGER_URL=$(kubectl get svc simplest-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+<pre class="console"><code>$ export JAEGER_URL=$(kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 
 $ echo Jaeger URL: http://$JAEGER_URL:16686
 Jaeger URL: http://51.210.210.101:16686
@@ -233,6 +233,114 @@ In order to link your application to the Jaeger backend you need to use a tool l
 OpenTelemetry integrates with popular libraries and frameworks such as Spring, Express, Quarkus, and with a lot of languages. Go to the documentation to see [how to integrate your application](https://opentelemetry.io/docs/instrumentation/).
 
 For this guide you will deploy a Golang application, instrumented with OpenTelemetry, that will send traces to a provider: your Jaeger collector.
+
+We create a `main.go` file containing:
+
+- the import of the OpenTelemetry dependencies,
+- a `tracerProvider` method that initiate a connection to a Jaeger provider 
+- a `main()` method that connect to the Jaeger collector you deployed previously and create and send a span each time the `/` HTTP route will be called
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
+	"time"
+
+	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+	"go.opentelemetry.io/otel"
+	"go.opentelemetry.io/otel/attribute"
+	"go.opentelemetry.io/otel/exporters/jaeger"
+	"go.opentelemetry.io/otel/sdk/resource"
+	tracesdk "go.opentelemetry.io/otel/sdk/trace"
+	semconv "go.opentelemetry.io/otel/semconv/v1.7.0"
+)
+
+const (
+	service     = "go-what-is-my-pod-with-tracing"
+	environment = "development"
+	id          = 1
+)
+
+func tracerProvider(url string) (*tracesdk.TracerProvider, error) {
+	// Create the Jaeger exporter
+	exp, err := jaeger.New(jaeger.WithCollectorEndpoint(jaeger.WithEndpoint(url)))
+	if err != nil {
+		return nil, err
+	}
+	tp := tracesdk.NewTracerProvider(
+		// Always be sure to batch in production.
+		tracesdk.WithBatcher(exp),
+		// Record information about this application in a Resource.
+		tracesdk.WithResource(resource.NewWithAttributes(
+			semconv.SchemaURL,
+			semconv.ServiceNameKey.String(service),
+			attribute.String("environment", environment),
+			attribute.Int64("ID", id),
+		)),
+	)
+	return tp, nil
+}
+
+func main() {
+
+	// Tracer
+	tp, err := tracerProvider("http://jaeger-collector-headless.default.svc.cluster.local:14268/api/traces")
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	// Register our TracerProvider as the global so any imported
+	// instrumentation in the future will default to using it.
+	otel.SetTracerProvider(tp)
+
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
+
+	// Cleanly shutdown and flush telemetry when the application exits.
+	defer func(ctx context.Context) {
+		// Do not make the application hang when it is shutdown.
+		ctx, cancel = context.WithTimeout(ctx, time.Second*5)
+		defer cancel()
+		if err := tp.Shutdown(ctx); err != nil {
+			log.Fatal(err)
+		}
+	}(ctx)
+
+	tr := tp.Tracer("component-main")
+
+	ctx, span := tr.Start(ctx, "hello")
+	defer span.End()
+
+	// HTTP Handlers
+	helloHandler := func(w http.ResponseWriter, r *http.Request) {
+		// Use the global TracerProvider
+		tr := otel.Tracer("hello-handler")
+		_, span := tr.Start(ctx, "hello")
+		span.SetAttributes(attribute.Key("mykey").String("value"))
+		defer span.End()
+
+		podName := os.Getenv("MY_POD_NAME")
+		fmt.Fprintf(w, "Hello %q!", podName)
+	}
+
+	otelHandler := otelhttp.NewHandler(http.HandlerFunc(helloHandler), "Hello")
+
+	http.Handle("/", otelHandler)
+
+	log.Println("Listening on localhost:8080")
+
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+```
+
+> [!primary]
+>
+> The code source of the application [is available on GitHub](https://github.com/ovhcloud-devrel/go-what-is-my-pod-with-tracing).
 
 We already packaged a Golang application into a Docker image and pushed it in [our ovhplatform Docker Hub repository](https://hub.docker.com/r/ovhplatform/what-is-my-pod-with-tracing) so you can use it directly.
 
@@ -266,8 +374,6 @@ spec:
               fieldRef:
                 fieldPath: metadata.name
 ```
-
-TODO: pusher l'image dans docker hub ovhplatform/what-is-my-pod-with-tracing:1.0.2 !!!!
 
 This YAML deployment manifest file defines that our application, based on `ovhplatform/what-is-my-pod-with-tracing:1.0.2` image will be deployed with 3 replicas (3 pods). We pass the pod name on environment variable in order to display it in our what-is-my-pod-with-tracing application.
 
@@ -353,166 +459,39 @@ Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z"!%
 $ curl http://$APP_URL:8080/
 Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-wbjmz"!%
 </code></pre>
-
-TODO: xx
-
-TODO: montrer le main.go avec les parties intéressantes pentelemetry et envoi a jaeger-collector
-
-TODO: you can find all the source code of this application ...
-https://github.com/ovhcloud-devrel/go-what-is-my-pod-with-tracing
-
-
-TODO: xxx we initiate ... we define a service named ... and at each time an user call hello route "/", e create a span and we send it to the jaeger collector
-
-TODO: xxx
-
-
-TODO: montrer le code avec les traces qui vont etre envoyé" au jarger-colectohealess (simplestcollector-headless) ...
-
-
-code source de l'app : link github
-
-
-### Deploy your application
-
-TODO: We deployed this app in the Docker hub ...
-
-TODO: xxx
-
-
-$ kubectl apply -f k8s/deployment.yml
-kubectl get po
-deployment.apps/what-is-my-pod-with-tracing-deployment created
-
-# create a service in order to access the application through a load balancer
-$ kubectl expose deployment what-is-my-pod-with-tracing-deployment --name=what-is-my-pod-with-tracing --type=LoadBalancer
-
-
 ### Visualize traces
 
+Open your browser and go back to the Jaeger interface (http://$JAEGER_URL:16686).
 
-TODO: xxx
+![Jaeger query services](images/jaeger-services.png)
 
-Connect to ... jaeger UI link
+You should now see two available services:
+- go-what-is-my-pod-with-tracing
+- jaeger-query
 
-click on .. search ...
+Select `go-what-is-my-pod-with-tracing` service and click on `Find Traces`{.action} button.
 
-### Create and deploy policies
+![Jaeger query traces](images/jaeger-traces.png)
 
-Kyverno is running on your OVHcloud Managed Kubernetes cluster, so now you can simply create and deploy policies with the rules you want to put in place in your cluster.
+You can now click in a trace and visualize useful informations.
 
-In this guide we will show you how to create several policies that will:
-
-- Deny deploying resources in the `default` namespace
-- Create automatically a ConfigMap in all namespaces except `kube-system`, `kube-public` and `kyverno`
-- Add automatically a label to Pods, Services, ConfigMaps, and Secrets in a given namespace
-
-#### Policy 1: Disallow deployments in the `default` namespace
-
-For our first example we want to deny deploying resources in the `default` namespace.
-
-Why? Because it's a good practice to isolate workloads/applications with Namespaces. One namespace per project/team/...  
-So imagine if several teams deploy different applications in the `default` namespace, they will not be isolated.
-
-The policy will validate whether new resources can be deployed, so we will create a `validate` policy.
-
-Create a new policy in a `policy-disallow-default-namespace.yaml` file:
-
-```yaml
-apiVersion: kyverno.io/v1
-kind: ClusterPolicy
-metadata:
-  name: disallow-default-namespace
-spec:
-  validationFailureAction: enforce
-  rules:
-  - name: validate-namespace
-    match:
-      resources:
-    validate:
-        - StatefulSet
-    validate:
-      message: "A namespace is required for pod controllers."
-      pattern:
-        metadata:
-          namespace: "?*"
-```
-
-> [!primary]
-> The **validationFailureAction** policy attribute that controls admission is set to **enforce** to block **resource creation or updates** when the resource is non-compliant.  
-> Using the default value **audit** will report violations (in a **PolicyReport** or **ClusterPolicyReport**) but will not block requests.
-
-To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
-
-```yaml
-kubectl apply -f policy-disallow-default-namespace.yaml
-```
-
-After applying the policy, check if the policy is correctly applied on the cluster:
-
-<pre class="console"><code>$ kubectl apply -f policy-disallow-default-namespace.yaml
-clusterpolicy.kyverno.io/disallow-default-namespace created
-
-$ kubectl get clusterpolicy
-NAME                         BACKGROUND   ACTION     READY
-disallow-default-namespace   true         enforce    true
-</code></pre>
-
-> [!primary]
-> With Kyverno installation, [new CRDs](https://kyverno.io/docs/crds/) have been added. The one that interests us is the new resource type `ClusterPolicy`. So in order to list, display, edit and remove Kyverno policies, you can execute `kubectl` command with `ClusterPolicy` resource object type.  
-> Ex: `kubectl get clusterpolicy` or `kubectl get cpol` with the short name.
-
-Now you will try to deploy a simple application in the `default` namespace.  
-For that, create a file named `my-pod.yaml` with the following content:
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: my-pod
-spec:
-  containers:
-  - name: hello-world
-    image: ovhplatform/hello
-    ports:
-    - containerPort: 80
-```
-
-Apply it without defining any namespace (namespace is `default` by default):
-
-```bash
-kubectl apply -f my-pod.yaml
-```
-
-<pre class="console"><code>$ kubectl apply -f my-pod.yaml
-Error from server: error when creating "my-pod.yaml": admission webhook "validate.kyverno.svc-fail" denied the request:
-
-resource Pod/default/my-pod was blocked due to the following policies
-
-disallow-default-namespace:
-  validate-namespace: 'validation error: Using "default" namespace is not allowed.
-    Rule validate-namespace failed at path /metadata/namespace/'
-</code></pre>
-
-Perfect, you no longer have the ability to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
-
-TODO: xx
+![Jaeger query trace details](images/jaeger-trace-details.png)
 
 ### What's next?
 
-TODO: xxx
+TODO: xxxx
 
 ## Cleanup
 
 Delete Jaeger components (created by the operator):
 
 ```bash
-kubectl delete jaeger simplest
+kubectl delete jaeger -n jaeger
 ```
 
 Wait until the components are deleted and then you can uninstall the operator.
 
-To uninstall Jaeger Operator, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Kyverno Helm installed chart:
+To uninstall Jaeger Operator, as you installed it through Helm, you can use `helm uninstall` command in order to delete the Jaeger Helm installed chart:
 
 ```bash
 helm uninstall jaeger-operator --namespace observability
