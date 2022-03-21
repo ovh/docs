@@ -48,19 +48,19 @@ Sobald Sie Ihre Wahl bestätigt haben, erhalten Sie eine anteilige Monatsrechnun
 
 ### Über die OpenStack API
 
-Bei der Erstellung einer Instanz mithilfe der OpenStack-API wird die Instanz automatisch mit einem Zeitabonnement erstellt, es sei denn, dies wird im Erstellungsskript angegeben. Um auf ein monatliches Abo umzustellen, führen Sie folgenden Befehl aus:
+Bei der Erstellung einer Instanz mithilfe der OpenStack API wird die Instanz automatisch mit Stundensatz erstellt, wenn nicht anders im Erstellungsskript angegeben. Um auf die monatliche Abrechnung umzustellen, führen Sie folgenden Befehl aus:
 
-```sh
+```bash
 openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
-Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung kann über das Kundencenter oder die API von OVHcloud abgerufen werden.
+Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung kann über das Kundencenter oder die OVHcloud API abgerufen werden.
 
 ### Über die OVHcloud API
 
-Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) in das [OVHcloud API-Interface](https://eu.api.ovh.com/console/) ein und folgen Sie den nachstehenden Schritten.
+Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) in das [OVHcloud API Interface](https://eu.api.ovh.com/console/) ein und folgen Sie den nachstehenden Schritten.
 
-Verwenden Sie folgenden Anruf:
+Verwenden Sie folgenden Aufruf:
 
 > [!api]
 >
