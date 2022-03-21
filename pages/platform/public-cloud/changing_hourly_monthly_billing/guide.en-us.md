@@ -6,12 +6,12 @@ section: Project management
 order: 4
 ---
 
-**Last updated 10th September 2021**
+**Last updated 18th March 2022**
 
 ## Objective
 
 When you create a Public Cloud instance, you can choose to be billed at either an hourly or monthly rate. Hourly-rate instances are billed on a pay-as-you-go basis, i.e. at the end of each month, users are billed for every commenced hour per actual resources used.<br>
-Monthly-rate instances are 50% less expensive compared to an hourly rate for the same duration. Each month commenced will be billed at the end of the month.<br>
+Monthly-rate instances are up to 50% less expensive compared to an hourly rate for the same duration. Each month commenced will be billed at the end of the month.<br>
 If you initially selected hourly billing, you can switch to monthly billing at any time.
 
 **This guide explains how to switch from hourly to monthly billing.**
@@ -49,6 +49,7 @@ Once you have confirmed your choice, you will immediately receive a monthly pror
 ### From the Openstack API
 
 When creating an instance using the Openstack API, unless specified in the creation script, the instance is automatically created with an hourly subscription. To switch to a monthly subscription, execute the following command:
+
 ```sh
 openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```

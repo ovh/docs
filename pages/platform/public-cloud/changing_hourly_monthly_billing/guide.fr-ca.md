@@ -6,12 +6,12 @@ section: 'Gestion de projets'
 order: 5
 ---
 
-**Dernière mise à jour le 10/09/2021**
+**Dernière mise à jour le 18/03/2022**
 
 ## Objectif
 
 Lors de la création d’une instance Public Cloud, vous pouvez choisir entre une facturation à l’heure ou une facturation mensuelle. Les instances « à l'heure » sont facturées en *pay-as-you-go* , c'est-à-dire que chaque utilisateur paie en fin de mois, pour chaque heure commencée, la somme des ressources réellement consommées.
-<br>Les instances assujetties à un taux mensuel sont 50 % moins chères que les instances assujetties à un taux horaire pour la même durée. Chaque mois entamé est facturé en fin de mois.
+<br>Les instances assujetties à un taux mensuel sont jusqu'à 50 % moins chères que les instances assujetties à un taux horaire pour la même durée. Chaque mois entamé est facturé en fin de mois.
 <br>Si vous avez initialement choisi une facturation à l'heure, vous pouvez passer à la facturation mensuelle à tout moment.
 
 **Ce guide explique comment passer d'une facturation à l'heure vers une facturation mensuelle.**
