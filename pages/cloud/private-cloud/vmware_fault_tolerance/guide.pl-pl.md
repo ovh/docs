@@ -54,8 +54,6 @@ W zależności od Twoich potrzeb, dostępnych jest teraz kilka operacji.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-Użyj [Testu obciążeniowego](../tryb-resilience/) OVHcloud, aby przetestować bardzo wysoką dostępność wirtualnej maszyny w trybie **Fault Tolerance**.
-
 ## Niemożliwe działania i niekompatybilności
 
 Na maszynie wirtualnej z włączoną funkcją **Fault Tolerance** nie jest możliwe wykonywanie pewnych działań ani korzystanie z niektórych urządzeń.
