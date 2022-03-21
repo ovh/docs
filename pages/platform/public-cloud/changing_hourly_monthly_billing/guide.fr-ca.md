@@ -50,8 +50,8 @@ Après validation de votre choix, vous recevrez immédiatement une facture mensu
 
 Lors de la création d'une instance à l'aide de l'API Openstack, sauf si cela est spécifié dans le script de création, l'instance est automatiquement créée avec un abonnement horaire. Pour passer à un abonnement mensuel, exécutez la commande suivante :
 
-```sh
-openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Remplacez "InstanceID" par l'ID de l'instance correspondante. Cet identifiant peut être récupéré depuis l’espace client ou l’API OVHcloud.

@@ -49,8 +49,8 @@ Una vez confirmada su elección, recibirá de inmediato una factura mensual prop
 
 Al crear una instancia utilizando la API OpenStack, a menos que se especifique en el script de creación, la instancia se crea automáticamente con una suscripción por horas. Para cambiar a una suscripción mensual, ejecute el siguiente comando:
 
-```sh
-openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Sustituya "InstanceID" por el ID de la instancia correspondiente. Puede obtener este identificador desde el área de cliente o la API de OVHcloud.

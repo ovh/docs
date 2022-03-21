@@ -49,8 +49,8 @@ In seguito a questa modifica, riceverete immediatamente una fattura mensile pro 
 
 Durante la creazione di un'istanza tramite l'API Openstack, tranne se specificato nello script di creazione, l'istanza viene creata automaticamente con una fatturazione oraria. Per effettuare il passaggio a un abbonamento mensile, esegui questo comando:
 
-```sh
-openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Sostituisci "InstanceID" con l'ID dell'istanza corrispondente. L'identificativo può essere recuperato dallo Spazio Cliente OVHcloud o tramite l'API.

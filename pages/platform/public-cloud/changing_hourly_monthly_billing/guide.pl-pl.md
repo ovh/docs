@@ -48,8 +48,8 @@ Po potwierdzeniu wyboru, natychmiast otrzymają Państwo miesięczny rachunek pr
 
 Podczas tworzenia instancji za pomocą API Openstack, o ile nie zostało to określone w skrypcie tworzenia, instancja jest automatycznie tworzona z abonamentem godzinowym. Aby przejść na abonament miesięczny, wprowadź następującą komendę:
 
-```sh
-openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Zastąp "InstanceID" identyfikatorem odpowiedniej instancji. Identyfikator może zostać pobrany z Panelu klienta lub API OVHcloud.

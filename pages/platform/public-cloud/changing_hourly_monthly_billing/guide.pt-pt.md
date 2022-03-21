@@ -49,8 +49,8 @@ Depois de confirmar a sua escolha, receberá imediatamente uma factura mensal ra
 
 Ao criar uma instância com a ajuda da API OpenStack, a menos que tal esteja indicado no script de criação, a instância será automaticamente criada com uma subscrição horária. Para passar a uma subscrição mensal, execute o seguinte comando:
 
-```sh
-openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```bash
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Substitua "InstanceID" pelo ID da instância correspondente. Este identificador pode ser obtido a partir da Área de Cliente ou da API OVHcloud.

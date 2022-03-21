@@ -50,7 +50,7 @@ Once you have confirmed your choice, you will immediately receive a monthly pror
 
 When creating an instance using the Openstack API, unless specified in the creation script, the instance is automatically created with an hourly subscription. To switch to a monthly subscription, execute the following command:
 
-```sh
+```bash
 openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
