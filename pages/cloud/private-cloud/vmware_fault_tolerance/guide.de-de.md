@@ -54,8 +54,6 @@ Nun haben Sie je nach Bedarf die Auswahl zwischen verschiedenen Aktionen.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-Der Modus [Resilienz](../resilienz-modus/) von OVHcloud ist ein probates Mittel, um die sehr hohe Verfügbarkeit Ihrer virtuellen Maschine mit **Fault Tolerance** zu testen.
-
 ## Unmögliche Aktionen und Fälle von Inkompatibilität
 
 Ist **Fault Tolerance** bei einer virtuellen Maschine aktiviert, so sind einige Aktionen und der Gebrauch bestimmter Peripheriegeräte nicht mehr möglich.

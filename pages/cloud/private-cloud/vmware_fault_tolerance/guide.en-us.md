@@ -54,8 +54,6 @@ Several operations are now available according to your needs.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-The OVHcloud [Resilience mode](../resilience-mode/) is a good way to test your FT-activated virtual machine for high availability.
-
 ## Impossible and incompatible actions
 
 On a virtual machine with **Fault Tolerance** enabled, it is no longer possible to perform certain actions or to use certain devices.
