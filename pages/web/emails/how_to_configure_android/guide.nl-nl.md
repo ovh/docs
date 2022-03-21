@@ -16,7 +16,7 @@ Leer hoe u een MX Plan e-mailadres kunt configureren op Android, via de Gmail-ap
 
 ## Vereisten
 
-- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}).
+- U moet beschikken over een MX Plan-e-mailadres (inbegrepen bij MX Plan en in [OVHcloud-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}).
 - Er moet een Gmail-applicatie op uw apparaat zijn geïnstalleerd. U kunt het vanaf de Google Play Store installeren.
 - U moet beschikken over de inloggegevens voor het e-mailadres waarvan u de instellingen wilt bewerken.
 

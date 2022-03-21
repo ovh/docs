@@ -5,7 +5,7 @@ excerpt: 'Saiba como instalar um servidor Veeam Backup & Replication com Veeam E
 section: Veeam
 ---
 
-**Última atualização: 08/02/2022**
+**Última atualização: 08/03/2022**
 
 ## Sumário
 
@@ -16,14 +16,14 @@ O Veeam Backup & Replication é um programa de proteção de dados, que oferece 
 
 ## Requisitos
 
-* Dispor de um serviço Veeam Enterprise.
-* Dispor de uma máquina Windows Server 2012 ou 2016.
+* Dispor de um [serviço Veeam Enterprise](https://www.ovhcloud.com/pt/storage-solutions/veeam-enterprise/){.external}.
+* Dispor de máquina Windows Server 2012 ou uma versão mais recente.
 
 ## Instruções
 
 ### Instalar o Veeam Backup & Replication
 
-Descarregue o programa **Veeam Backup & Replication** a partir do site da Veeam e,  caso não tenha conta, crie uma (gratuitamente).
+Descarregue o programa **Veeam Backup & Replication** a partir do [site da Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Se não possui contas, será necessário criar uma (esta é gratuita).
 
 O ficheiro apresenta-se sob a forma de uma imagem de disco no formato ISO. Depois de o ter transferido para o servidor, selecione o leitor CD da máquina e escolha a imagem.
 
@@ -67,15 +67,15 @@ Quando esta for concluída, saia do instalador clicando em `Finish`{.action}.
 
 ![](images/veeamBandR_inst_10.png){.thumbnail}
 
-O instalador irá pedir-lhe que reinicie o Windows de forma a finalizar a operação. Escolha a opção `Yes`{.action}.
-
-![](images/veeamBandR_inst_11.png){.thumbnail}
+Será redirecionado para o assistente de instalação. Basta fechar a janela.
 
 ### Criar uma conta de serviço Veeam Enterprise
 
 #### Criar a conta de serviço
 
 Em primeiro lugar, é necessário gerar uma palavra-passe **complexa**. Para isso, pode utilizar um gerador de palavras-passe.
+
+Comece por lançar o Windows Powershell como administrador.
 
 A seguir, crie uma conta de serviço introduzindo o seguinte comando a partir de um acesso de administrador:
 
@@ -93,9 +93,9 @@ Abra a consola Veeam e conecte-se.
 
 ![](images/veeamBandR_use_12.png){.thumbnail}
 
-Verifique se está em modo **Free Edition** no canto inferior direito.
+Verifique se está em modo **Community Edition** no canto inferior direito.
 
-![](images/veeamBandR_conf_1.png){.thumbnail}
+![](images/Veeamcommunity.png){.thumbnail}
 
 No menu, clique em `Users and Roles`{.action}.
 
@@ -122,27 +122,38 @@ Através da interface gráfica de utilizador:
 1. Na sua barra de pesquisa Windows, introduza `Component Services`{.action} e lance o serviço.
 2. No menu à esquerda e seguindo a arborescência, clique em `Component Services`{.action}, depois em `Computers`{.action} e depois em `My Computer`{.action}.
 3. À direita, no separador `Actions`{.action}, clique em `More Actions`{.action} e, a seguir, em `Properties`{.action}.
-4. Aceda à `COM Security`{.action} e, sob a segunda opção `Launch and Activation Permissions`{.action}, clique em `Edit Limits`{.action}.
-5. Clique no utilizador `OVHVeeamEnterprise`{.action} e ative todas as permissões.
+4. Aceda à `COM Security`{.action} e, sob a segunda opção `Launch and Activation Permissions`{.action}, clique em `Edit Limits`{.action}. A seguir, clique em `Add...`{.action}.
 
-![Launch and Activation Permissions](images/permissionsuserveam.png){.thumbnail}
+![Launch and Activation Permissions](images/veeamuseradd.png){.thumbnail}
 
-6. Clique em `OK`{.action} para confirmar e `Apply`{.action} para validar as alterações.
+
+<ol start="5">
+ <li>Clique em <code class="action">Advanced...</code> para localizar a conta de serviço adicionada anteriormente. A seguir, clique em <code class="action">Find Now</code> e selecione o utilizador <code class="action">OVHVeeamEnterprise</code> na lista de utilizadores.</li>
+</ol>
+
+![Launch and Activation Permissions](images/veeamuseradd1.png){.thumbnail}
+
+
+<ol start="6">
+ <li>Clique em <code class="action">OK</code> para confirmar a seleção e em <code class="action">OK</code> para validar. De seguida, ative todas as permissões no utilizador <code class="action">OVHVeeamEnterprise</code>.</li>
+</ol>
+
+![Launch and Activation Permissions](images/veeamuseradd3.png){.thumbnail}
+
+<ol start="7">
+ <li>Clique em <code class="action">OK</code> para confirmar e <code class="action">Apply</code> para validar as alterações.</li>
+</ol>
 
 O seu utilizador OVHVeeamEnterprise está agora acessível local e à distância.
 
-#### Registar o servidor Veeam Backup & Replication
+### Registar o servidor Veeam Backup & Replication
 
-**Através da Área de Cliente OVHcloud
-**
+## Através da Área de Cliente OVHcloud
 
-A partir da Área de Cliente OVHcloud, abra o universo Cloud e, na secção `Platforms and services`{.action}, selecione o seu serviço **backupserverenterprise**.
 
-![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
+Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção Hosted Private Cloud {.ação} e selecione `Plataformas e serviços` {.ação}. De seguida, selecione o seu serviço **backupserverenterprise** e clique em `Ativar a licença` {.action} na secção `Atalho`.
 
-Na página principal do serviço, selecione a opção `Enable the license`{.action}.
-
-![](images/backupEnterpriseServer_manager_02.png){.thumbnail}
+![](images/veeam001.png){.thumbnail}
 
 Na nova janela, introduza as seguintes informações:
  * o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
@@ -151,11 +162,14 @@ Na nova janela, introduza as seguintes informações:
  * a palavra-passe da conta.
 
 Em seguida, confirme clicando em `OK`{.action}.
+
+![](images/veeam03.png){.thumbnail}
+
 Quando a ativação estiver concluída, poderá encontrar as informações principais na página do serviço.
 
-![](images/backupEnterpriseServer_manager_03.png){.thumbnail}
+![](images/veeam02.png){.thumbnail}
 
-**Com a API da OVH**
+## Com a API da OVHcloud
 
 Para começar, obtenha o serviceName:
 
@@ -195,10 +209,10 @@ No menu, clique em `License`{.action}.
 
 ![](images/veeamBandR_lic_1.png){.thumbnail}
 
-Verifique que a informação apresentada corresponde à sua licença da OVH.
+Verifique que a informação apresentada corresponde à sua licença da OVHcloud.
 
 ![](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

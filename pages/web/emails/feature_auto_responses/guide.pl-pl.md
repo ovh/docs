@@ -34,15 +34,15 @@ W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail
 
 Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
-Wybierz odpowiednią domenę w sekcji `E-maile`{.action}, w kolumnie po lewej stronie.
+Wybierz odpowiednią domenę w sekcji `E-maile`{.action}.
 
-Kliknij kartę `E-maile`{.action} u góry, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
+Kliknij kartę `E-maile`{.action}, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
 
 Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, które wyświetlają wszystkie autorespondery e-mail na Twojej usłudze e-mail.
 
 Kliknij `Dodaj autoresponder`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi informacjami.
 

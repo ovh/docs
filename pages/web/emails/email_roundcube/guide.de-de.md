@@ -7,18 +7,18 @@ section: 'E-Mail Clients'
 order: 2
 ---
 
-## Über die OVH Webseite
-Begeben Sie sich auf die [OVH Webseite](http://www.ovh.de) und klicken Sie oben auf "Webmail".
+## Über die OVHcloud Webseite
+Begeben Sie sich auf die [OVHcloud Webseite](http://www.ovh.de) und klicken Sie oben auf "Webmail".
 
 ![](images/img_2413.jpg){.thumbnail}
 
 ### Verbindungs-Interface
 Sie werden dann auf eine Internetseite geleitet, auf der Sie Ihre E-Mail-Adresse eingeben können.
-Über dieses Interface werden Sie direkt mit dem Webmail Ihres OVH Mailing-Dienstes verbunden.
+Über dieses Interface werden Sie direkt mit dem Webmail Ihres OVHcloud Mailing-Dienstes verbunden.
 
-Wenn Sie bereits wissen, welcher unserer Webmail-Dienste der richtige für Sie ist, können Sie auch direkt darauf zugreifen. Klicken Sie hierfür unter "Die von OVH angebotenen Webmailer" auf .
+Wenn Sie bereits wissen, welcher unserer Webmail-Dienste der richtige für Sie ist, können Sie auch direkt darauf zugreifen. Klicken Sie hierfür unter "Die von OVHcloud angebotenen Webmailer" auf .
 
-Wenn Sie auf  klicken, kommen Sie direkt zu den OVH Anleitungen zum gewünschten Webmailer.
+Wenn Sie auf  klicken, kommen Sie direkt zu den OVHcloud Anleitungen zum gewünschten Webmailer.
 
 ![](images/img_2414.jpg){.thumbnail}
 Wenn Sie bei "Diese E-Mail-Adresse speichern" ein Häkchen setzen, werden alle so angegegebenen E-Mail-Adresse gespeichert und später rechts oben angezeigt (Webmail). So können Sie sich jederzeit direkt mit der gewünschten Adresse verbinden!
@@ -275,9 +275,9 @@ Wie Sie die dieser Identität zugewiesene Signatur einfügen wird im Abschnitt [
 
 ### Erstellung einer Signatur mit einem Bild (1)
 
-Um ein Bild zu einer Signatur hinzufügen zu können, muss dieses Bild auf einem Server gehostet werden (z.B. Ihrem OVH Webhosting, einem Dedicated Server...).
+Um ein Bild zu einer Signatur hinzufügen zu können, muss dieses Bild auf einem Server gehostet werden (z.B. Ihrem OVHcloud Webhosting, einem Dedicated Server...).
 
-Wie Sie sich per FTP mit Ihrem OVH Webhosting verbinden, um ein Bild hochzuladen, wird in [dieser Hilfe](http://hilfe.ovh.de/HostingFTPServer) beschrieben.
+Wie Sie sich per FTP mit Ihrem OVHcloud Webhosting verbinden, um ein Bild hochzuladen, wird in [dieser Hilfe](http://hilfe.ovh.de/HostingFTPServer) beschrieben.
 
 Wenn Sie HTML-Signatur auswählen, wird ein WYSIWYG* Editor eingeblendet (siehe Bild).
 Klicken Sie auf die HTML-Kachel, um ein Fenster zu öffnen, in das Sie Ihren HTML-Code eingeben können.
@@ -320,9 +320,9 @@ Unter Identitäten kann man dann auf das "+" Symbol klicken, um eine Neue Identi
 
 ### Neue Identität / Signatur (2)
 
-In unserem nebenstehenden Beispiel erstellen wir eine Identität namens Guides OVH. Diese Identität wird der Adresse no-reply@ovh.net zugewiesen, die bei den Empfängern angezeigt wird. Wenn diese auf die E-Mails antworten, geht die Antwort an die Adresse support@ovh.net. Optional kann die Signatur noch personalisiert werden, und zum Abschluss werden die Änderungen mit einem Klick auf Speichern bestätigt.
+In unserem nebenstehenden Beispiel erstellen wir eine Identität namens Guides OVHcloud. Diese Identität wird der Adresse no-reply@ovh.net zugewiesen, die bei den Empfängern angezeigt wird. Wenn diese auf die E-Mails antworten, geht die Antwort an die Adresse support@ovh.net. Optional kann die Signatur noch personalisiert werden, und zum Abschluss werden die Änderungen mit einem Klick auf Speichern bestätigt.
 
-Danach erscheint die neue Identität Guides OVH <no-reply@ovh.net> in der Liste der Identitäten.
+Danach erscheint die neue Identität Guides OVHcloud <no-reply@ovh.net> in der Liste der Identitäten.
 
 Wie Sie die dieser Identität zugewiesene Signatur einfügen wird im Abschnitt [Einfügen einer Signatur im HTML-Format](#SIGNATURE) beschrieben.
 
@@ -375,7 +375,7 @@ Der Versand der E-Mail im vorherigen Abschnitt wurde für support@ovh.net selbst
 
 Wenn die E-Mail nicht automatisch angezeigt wird, können Sie links oben auf "Aktualisieren" klicken.
 
-Wir sehen, dass der Absender Support OVH ist und die Signatur korrekt angezeigt wird.
+Wir sehen, dass der Absender Support OVHcloud ist und die Signatur korrekt angezeigt wird.
 
 ![](images/img_1408.jpg){.thumbnail}
 
@@ -418,7 +418,7 @@ In diesem Beispiel zur Verwendung des Adressbuchs werden wir 2 Gruppen erstellen
 
 Um zu beginnen klicken Sie auf das Icon des RoundCube Adressbuchs, um folgendes Interface aufzurufen.
 
-Wir erstellen hier eine Gruppe "Guides", in die alle in Zusammenhang mit den OVH Guides stehenden Kontakte aufgenommen werden.
+Wir erstellen hier eine Gruppe "Guides", in die alle in Zusammenhang mit den OVHcloud Guides stehenden Kontakte aufgenommen werden.
 
 Klicken Sie auf das "+" Symbol links unten, um eine Kontaktgruppe zu erstellen.
 Der Cursor erscheint dann wie im nebenstehenden Screenshot automatisch im Bereich zur Angabe des Namens.
@@ -543,7 +543,7 @@ Tragen Sie Ihre Suchbegriffe ein und klicken Sie dann auf "Suche".
 
 ### Export Ihres Adressbuchs
 
-Sie können bei Bedarf sämtliche in Ihrem OVH RoundCube Webmail existierenden Kontakte in eine Datei exportieren. Klicken Sie dazu in der oberen Symbolleiste auf "Exportieren".
+Sie können bei Bedarf sämtliche in Ihrem OVHcloud RoundCube Webmail existierenden Kontakte in eine Datei exportieren. Klicken Sie dazu in der oberen Symbolleiste auf "Exportieren".
 
 Es wird dann eine Datei mit dem Namen rcube_contacts.vcf erstellt und Ihnen zum Download angeboten.
 

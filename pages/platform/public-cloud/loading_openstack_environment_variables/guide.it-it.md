@@ -15,7 +15,7 @@ L’impostazione delle variabili d’ambiente OpenStack ti consente di utilizzar
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Aver creato un utente OpenStack. A questo proposito, consulta [l’apposita guida](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/#crea-un-utente-openstack)
+- Aver creato un utente OpenStack. A questo proposito, consulta [l’apposita guida](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/)
 - Aver preparato l’ambiente di sviluppo per utilizzare l’API OpenStack A questo proposito, consulta questa guida: [Preparare l’ambiente per utilizzare l’API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/)
 
 ## Procedura
@@ -43,7 +43,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Come indicato nella guida [Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/), la password è visibile una sola volta, cioè al momento della sua creazione.
+Come indicato nella guida [Accedere all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/), la password è visibile una sola volta, cioè al momento della sua creazione.
 
 Se l’hai dimenticata, dovrai reimpostarla.
 

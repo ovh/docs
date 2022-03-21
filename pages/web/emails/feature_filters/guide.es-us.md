@@ -33,11 +33,11 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 En primer lugar, conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
-Seleccione el dominio en la sección `Correo electrónico`{.action}.
+Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
 En la tabla, que recoge las direcciones de correo, haga clic en el icono `Filtro`{.action} de la dirección en cuestión.
 
-![correo electrónico](images/img_3239.jpg){.thumbnail}
+![correo electrónico](images/img_3239.png){.thumbnail}
 
 Acceda a la lista de filtros actualmente configurados para esta dirección de correo. Para añadir un filtro, haga clic en el botón a la derecha `Añadir un filtro`{.action}.
 

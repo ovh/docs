@@ -38,7 +38,7 @@ Sie gelangen zum Bereich `Verwaltung der Auto-Antworten`, das alle Responder fü
 
 Klicken Sie auf `Eine Auto-Antwort hinzufügen`{.action}, um einen neuen Responder anzulegen.
 
-![Hosting](images/email_responder01.gif){.thumbnail}
+![Hosting](images/email_responder01.png){.thumbnail}
 
 Füllen Sie nun im Popup-Fenster das Formular gemäß den folgenden Angaben aus:
 
