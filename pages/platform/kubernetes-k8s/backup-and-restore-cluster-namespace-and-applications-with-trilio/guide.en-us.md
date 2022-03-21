@@ -599,7 +599,7 @@ Go ahead and explore each section from the left, like:
   ![TVK Auto-discovered Applications](assets/images/tvk_auto_discovered_applications.png)
   - `Backupplans`:
   ![TVK Backupplans](assets/images/tvk_backupplans.png)
-  - `Taargets`:
+  - `Targets`:
   ![TVK Target List](assets/images/tvk_target_list.png)
   - `Scheduling Policy`:
   ![TVK Default Scheduling Policy](assets/images/tvk_default_scheduling_policies.png)
@@ -1015,14 +1015,19 @@ Next, verify and activate a new license as described in the [TrilioVault Applica
 To get access to the web console user interface, please consult [Getting Access to the TVK Web Management Console](#getting-access-to-the-tvk-web-management-console) section.
 
 Then, navigate to `Resource Management -> TVK Namespace -> Targets` (in case of `ovh/docs` the TVK Namespace is `tvk`)
+![TVK Target List](assets/images/tvk_target_list.png)
 
 Going further, browse the target and list the available backups by clicking on the `Actions` button from the right. Then, select `Launch Browser` option from the pop-up menu (for this to work the target must have the `enableBrowsing` flag set to `true`)
+![TVK Target Browser](assets/images/tvk_target_browser.png)
 
-Now, click on the `multi-ns-backup-plan` item from the list, and then click and expand the `multi-ns-backup` item from the right sub-window
+Now, click on the `multi-ns-backup-plan` item from the list, and then click and expand the `multi-ns-backup` item from the right sub-window similar to:
+![Multi-Namespace Restore Phase 1](assets/images/multi-ns-restore_phase_1.png)
 
-To start the restore process, click on the `Restore` button. A progress window will be displayed similar to
+To start the restore process, click on the `Restore` button. A progress window will be displayed similar to below:
+![Multi-Namespace Restore Phase 2](assets/images/multi-ns-restore_phase_2.png)
 
-After a while, if the progress window looks like below, then the `multi-namespace` restore operation completed successfully
+After a while, if the progress window looks like below, then the `multi-namespace` restore operation completed successfully.
+![Multi-Namespace Restore Phase 3](assets/images/multi-ns-restore_phase_3.png)
 
 ### Checking OVH Managed Kubernetes Cluster Applications State
 
