@@ -50,10 +50,10 @@ You can add more users by clicking on the button `Add user`{.action}.
 
 ![Add user](images/mysql_07_prepare_for_incoming_connections-20220308111540905.png){.thumbnail}
 
-Enter a username and, then click `Create User`{.action}.
+Enter a username then click `Create User`{.action}.
 
 > [!primary]
-> You can delete user or regenerate password via the `...`{.action} button in the `Users & Roles` table.
+> You can delete a user or regenerate a password via the `...`{.action} button in the `Users & Roles` table.
 
 #### Step 2: Authorise incoming connections from the MySQL client
 
