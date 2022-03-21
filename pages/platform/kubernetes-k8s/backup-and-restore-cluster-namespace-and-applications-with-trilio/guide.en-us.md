@@ -797,7 +797,7 @@ Steps to initiate the `mysql-qa` Helm release one time backup:
 </ol>
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
 
-Finally, you can check that the backup is available in the web console as well, by navigating to `Resource Management -> demo-backup-ns -> Backup Plans` (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
+Finally, you can check that the backup is available in the web console as well, by navigating to `Backup & Recovery -> Backup Plans` and `Backup & Recovery -> Targets` and select `demo-ns-backup` Namespace from the Top dropdown (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
 
 ### Deleting mysql-qa Helm Release and Resources
 Now, go ahead and simulate a disaster, by intentionally deleting the `mysql-qa` Helm release:
@@ -1014,7 +1014,7 @@ Next, verify and activate a new license as described in the [TrilioVault Applica
 
 To get access to the web console user interface, please consult [Getting Access to the TVK Web Management Console](#getting-access-to-the-tvk-web-management-console) section.
 
-Then, navigate to `Resource Management -> TVK Namespace -> Targets` (in case of `ovh/docs` the TVK Namespace is `tvk`)
+Then, navigate to `Backup & Recovery -> Targets` and select TVK Namespace from the Top dropdown (in case of `ovh/docs` the TVK Namespace is `tvk`)
 ![TVK Target List](assets/images/tvk_target_list.png)
 
 Going further, browse the target and list the available backups by clicking on the `Actions` button from the right. Then, select `Launch Browser` option from the pop-up menu (for this to work the target must have the `enableBrowsing` flag set to `true`)
