@@ -1,5 +1,5 @@
 ---
-title: Redis - Connect Redis to vrack
+title: Redis - Connect Redis to vRack
 slug: redis/vrack
 excerpt: Connect an OVHcloud managed Redis cluster to vrack 
 section: Redis
@@ -144,7 +144,7 @@ That's it! Your managed Redis database is ready to be accessed within the vRack 
 
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
 
-If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/#in-case-of-an-existing-instance_2).
+If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/us/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2).
 
 For this tutorial, create a new instance by following the next steps.
 

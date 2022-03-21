@@ -1,9 +1,11 @@
 ---
-title: Redis - Connect Redis to vRack
+title: Redis - Connecter Redis au vRack (EN)
 slug: redis/vrack
 excerpt: Connect an OVHcloud managed Redis cluster to vrack 
 section: Redis
 order: 201
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/vrack/'
 ---
 
 **Last updated March 17<sup>th</sup>, 2022**
@@ -22,8 +24,8 @@ This will be, from a configuration point of view, the equivalent of this:
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account.
-- An [Activated Vrack](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/).
+- A [Public Cloud project](https://www.ovhcloud.com/ca/fr/public-cloud/) in your OVHcloud account.
+- An [Activated Vrack](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/).
 
 The OVHcloud vRack is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services, such as databases. The vRack also allows you to add Public Cloud instances to your private network to create an infrastructure of physical and virtual resources.
 
@@ -69,7 +71,7 @@ Create a new Redis database service:
 
 Choose the **Business** solution.
 
-According the [Redis capabilities page](https://docs.ovh.com/ca/en/publiccloud/databases/redis/capabilities/#plans), the use of private networks with databases is allowed for **Business** and **Enterprise** plans. 
+According the [Redis capabilities page](https://docs.ovh.com/ca/fr/publiccloud/databases/redis/capabilities/#plans), the use of private networks with databases is allowed for **Business** and **Enterprise** plans. 
 
 ![Choose plan](images/redis_08_vrack_09.png){.thumbnail}
 
@@ -89,7 +91,7 @@ From the Subnetwork list, select the **10.0.0.0/16 - YYY**. The YYY value is the
 
 ![Configure options](images/redis_08_vrack_12.png){.thumbnail}
 
-The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/en/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/fr/api/api-premiers-pas/).
 
 ![Resume database creation](images/redis_08_vrack_13.png){.thumbnail}
 
@@ -144,7 +146,7 @@ That's it! Your managed Redis database is ready to be accessed within the vRack 
 
 The database is now connected to the virtual network, we can use it from any component that is connected to the same vRack.
 
-If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/ca/en/public-cloud/public-cloud-vrack/#cases-of-an-already-existing-instance_2).
+If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-vrack/#cas-dune-instance-deja-existante_2).
 
 For this tutorial, create a new instance by following the next steps.
 
@@ -174,7 +176,7 @@ Wait for the **Activated** status.
 
 ### Connecting and installing the Redis client
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/ca/en/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/) page.
 
 Connect to the instance via SSH:
 
