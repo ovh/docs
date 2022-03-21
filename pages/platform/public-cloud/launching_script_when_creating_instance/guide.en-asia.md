@@ -6,7 +6,10 @@ section: OpenStack
 order: 9
 ---
 
+**Last updated 18th March 2022**
+  
 ## Objective
+
 In some situations, you will need to launch a script when you create an instance. For example, you may want to do this if you need to configure multiple SSH keys for your instance, or configure your SSH service automatically.
 
 **This guide explains how to launch a script when an instance is created, via Cloud-init and OpenStack APIs.**
@@ -19,9 +22,7 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Instructions
 
-### Create an instance with a script
-
-#### Create a script
+### Create a script
 
 There are several different scripts that are useful for you to launch when you create an instance. For example, you can use **shell scripts**:
 
@@ -96,23 +97,13 @@ With this script, you create an "**ovh**" user with sudo permissions, and they c
 > 
 
 
-#### Create the instance
+### Create the instance
 
 After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user- data** argument:
 
 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1
-```
-
-> [!primary]
-> Please note that with the above script unless specified, the instance will be created with an hourly subscription. 
->
-
-To switch the instance to a monthly subscription, execute the following command:
-
-```sh
-openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 After we have double-checked the details, our user is correctly added after the instance has been created, and they have all of the permissions required:

@@ -7,6 +7,8 @@ order: 13
 ---
 
 
+**Dernière mise à jour le 18/03/2022**
+  
 ## Objectif
 
 Dans certaines situations, il vous sera nécessaire de lancer un script lors de la création de votre instance. Par exemple, dans le cas ou vous souhaitez configurer plusieurs clés SSH pour votre instance, ou bien pour configurer votre service SSH automatiquement.
@@ -20,9 +22,9 @@ Dans certaines situations, il vous sera nécessaire de lancer un script lors de 
 - [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
-### Creation d'une instance avec script
+## En pratique
 
-#### Creation d'un script
+### Creation d'un script
 
 Il existe plusieurs possibilités de scripts utiles à lancer lors de la création d'une instance. Vous pouvez par exemple utiliser des **scripts shell**  :
 
@@ -99,23 +101,13 @@ Ce script permet donc de créer un utilisateur "**ovh**" ayant les droits sudo, 
 > 
 
 
-#### Creation de l'instance
+### Creation de l'instance
 
 Après avoir récupéré la liste des images et des modèles d'instance, il est possible de lancer le script avec Cloud-init grâce à l'argument **--user- data** :
 
 
 ```bash
 root@server:~# nova boot --key_name SSH_KEY --image bdcb5042-3548-40d0-b06f-79551d3b4377 --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --user-data ./adduser.sh Instance1
-```
-
-> [!primary]
-> Veuillez noter qu'avec le script ci-dessus, à moins qu'il ne soit spécifié, l'instance sera créée avec un abonnement horaire. 
->
-
-Pour passer l'instance à un abonnement mensuel, exécutez la commande suivante :
-
-```sh
-openstack server set --property ovh-monthly-instance=1 "InstanceID"
 ```
 
 Après vérification, notre utilisateur est correctement ajouté après la création de l'instance avec les droits nécessaires :
