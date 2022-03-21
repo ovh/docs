@@ -5,7 +5,7 @@ slug: abrechnungsart-aendern-public-cloud
 section: Projektverwaltung
 ---
 
-**Letzte Aktualisierung am 21.09.2021**
+**Letzte Aktualisierung am 21.03.2022**
 
 ## Ziel
 
@@ -34,6 +34,8 @@ Instanzen mit monatlicher Fälligkeit können im Voraus bezahlt werden und werde
 
 ## In der praktischen Anwendung
 
+### Über das OVHcloud Kundencenter
+
 Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) unter `Instances`{.action} die Instanz für welche Sie das Abrechnungsintervall ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf `...`{.action} rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
@@ -44,6 +46,26 @@ Sie müssen dann bestätigen, dass Sie die Abrechnungsart ändern möchten:
 
 Sobald Sie Ihre Wahl bestätigt haben, erhalten Sie eine anteilige Monatsrechnung. Die nächste Rechnung enthält den Stundensatzanteil des Monats (1. des Monats bis zur Änderung) und die neue monatliche Gebühr.
 
+### Über die OpenStack API
+
+Bei der Erstellung einer Instanz mithilfe der OpenStack-API wird die Instanz automatisch mit einem Zeitabonnement erstellt, es sei denn, dies wird im Erstellungsskript angegeben. Um auf ein monatliches Abo umzustellen, führen Sie folgenden Befehl aus:
+
+```sh
+openstack server set --property ovh-monthly-instance=1 "InstanceID"
+```
+
+Ersetzen Sie "InstanceID" mit der ID der entsprechenden Instanz. Diese Kennung kann über das Kundencenter oder die API von OVHcloud abgerufen werden.
+
+### Über die OVHcloud API
+
+Loggen Sie sich gemäß der [entsprechenden Anleitung](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) in das [OVHcloud API-Interface](https://eu.api.ovh.com/console/) ein und folgen Sie den nachstehenden Schritten.
+
+Verwenden Sie folgenden Anruf:
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+>
 
 ## Weiterführende Informationen
 

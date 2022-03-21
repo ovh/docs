@@ -5,11 +5,11 @@ slug: cambiare-tipo-fatturazione-public-cloud
 section: 'Gestione del progetto'
 ---
 
-**Ultimo aggiornamento 21/09/2021**
+**Ultimo aggiornamento 21/03/2022**
 
 ## Obiettivo
 
-Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile. Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
+Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o mensile. Le istanze 'orarie' sono fatturate in _pay-as-you-go_, in cui l’utente paga a fine mese la somma delle ore consumate. Per le istanze 'mensili', invece, è necessario effettuare il pagamento anticipato per il mese entrante ma ad un prezzo minore (fino al 50% di sconto). Se inizialmente hai scelto la fatturazione oraria, è comunque possibile passare alla fatturazione mensile in qualsiasi momento.
 
 **Questa guida ti mostra come passare da una fatturazione oraria ad una mensile.**
 
@@ -33,6 +33,8 @@ Creando un’istanza Public Cloud, si può scegliere tra fatturazione oraria o m
 
 ## Procedura
 
+### Dallo Spazio Cliente OVHcloud
+
 Nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} seleziona l’istanza per la quale desideri modificare la modalità di fatturazione e clicca sui tre puntini a destra per aprire il relativo menu opzioni. A questo punto clicca sul pulsante `Passa al forfait mensile`{.action}:
 
 ![Change billing calculation](images/switch_to_monthly_updated.png){.thumbnail}
@@ -43,6 +45,26 @@ Nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https:/
 
 In seguito a questa modifica, riceverete immediatamente una fattura mensile pro rata. La prossima fattura comprenderà la parte di tariffa oraria del mese (il 1° del mese fino al cambiamento) e il nuovo costo mensile.
 
+### Da API Openstack
+
+Durante la creazione di un'istanza tramite l'API Openstack, tranne se specificato nello script di creazione, l'istanza viene creata automaticamente con una fatturazione oraria. Per effettuare il passaggio a un abbonamento mensile, esegui questo comando:
+
+```sh
+openstack server set —property ovh-monthly-instance=1 "InstanceID"
+```
+
+Sostituisci "InstanceID" con l'ID dell'istanza corrispondente. L'identificativo può essere recuperato dallo Spazio Cliente OVHcloud o tramite l'API.
+
+### Dall'API OVHcloud
+
+Accedi alla [interfaccia API OVHcloud](https://eu.api.ovh.com/console/) in base alla [guida appropriata](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN) e segui gli step seguenti.
+
+Utilizza questa chiamata:
+
+> [!api]
+>
+> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+>
 
 ## Per saperne di più
 
