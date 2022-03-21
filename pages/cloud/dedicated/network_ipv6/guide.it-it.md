@@ -44,7 +44,7 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 >
 
 > [!warning]
-> Ti ricordiamo che i **server Kimsufi** sono forniti con un solo blocco IPV6 (/128). In questo caso, consulta questa [guida](https://docs.ovh.com/it/vps/configurare-ipv6/) per configurare l'ipv6 su un server Kimsufi.
+> Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPV6 (/128). In questo caso, consulta questa [guida](https://docs.ovh.com/it/vps/configurare-ipv6/) per configurare l'ipv6 su un server Kimsufi.
 >
 >
 
