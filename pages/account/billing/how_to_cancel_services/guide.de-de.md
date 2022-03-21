@@ -154,7 +154,7 @@ Geben Sie die Gründe für Ihre Kündigungsanfrage an und klicken Sie auf `Best�
 
 ### Public Cloud <a name="publiccloud"></a>
 
-Jeder [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Dienst kann gelöscht werden, indem Sie rechts neben dem betreffenden Dienst `...`{.action} und dann auf `Löschen`{.action} klicken, wie im folgenden Beispiel für eine Instanz abgebildet:
+Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betreffenden Dienst `...`{.action} und dann auf `Löschen`{.action} klicken, wie im folgenden Beispiel für eine Instanz abgebildet:
 
 ![public cloud instance deletion](images/pci-deletion.png){.thumbnail}
 
@@ -244,13 +244,13 @@ Um Ihr [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microso
 
 #### Sharepoint <a name="sharepoint"></a>
 
-Sie können entweder einen einzelnen Account aus Ihrer [Sharepoint Plattform](https://www.ovhcloud.com/de/collaborative-tools/sharepoint/) **löschen** oder den gesamten Sharepoint Dienst kündigen.
+Sie können entweder einen einzelnen Account aus Ihrer Sharepoint Plattform **löschen** oder den gesamten Sharepoint Dienst kündigen.
 Wenn Sie den Dienst vollständig kündigen möchten, empfehlen wir Ihnen, zuerst jedes einzelne Konto zu löschen.
 
 - Um einen einzelnen SharePoint-Account zu löschen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie anschließend auf `Microsoft`{.action}, `Sharepoint`{.action} und auf Ihre Sharepoint Plattform.<br>
 Klicken Sie im Tab `Benutzer`{.action} auf den Button `...`{.action} rechts neben dem zu löschenden Account und dann auf `Account löschen`{.action}. Lesen Sie die Informationen und klicken Sie auf `Bestätigen`{.action}.
 
-- Um den vollständigen Sharepoint Dienst zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
+- Um den vollständigen [Sharepoint Dienst](https://www.ovhcloud.com/de/collaborative-tools/sharepoint/) zu kündigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf Ihren Namen und dann auf den Button `Dienstverwaltung`{.action}.
 
 Klicken Sie dann auf den `...`{.action} rechts neben der zu kündigenden Sharepoint Plattform und dann auf `Kündigen`{.action}.
 
