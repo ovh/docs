@@ -298,6 +298,7 @@ Please follow the steps below, to install `TrilioVault` via `Helm`:
   ```
   </li>
 </ol>
+
 If the output looks like above, you installed `TVK` successfully. Next, you will learn how to check license type and validity, as well as how to renew.
 
 ### TrilioVault Application Licensing
@@ -468,6 +469,7 @@ Steps to create a `Target` for `TrilioVault`:
   ```
   </li>
 </ol>
+
 What happens next is, `TrilioVault` will spawn a `worker job` named `trilio-ovh-s3-target-validator` responsible with validating your S3 bucket (like availability, permissions, etc.). If the job finishes successfully, the bucket is considered to be healthy or available and the `trilio-ovh-s3-target-validator` job resource is deleted afterwards. If something bad happens, the S3 target validator job is left up and running so that you can inspect the logs and find the possible issue.
 
 Now, please go ahead and check if the `Target` resource created earlier is `healthy`:
@@ -795,9 +797,10 @@ Steps to initiate the `mysql-qa` Helm release one time backup:
   ```
   </li>
 </ol>
+
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how `TrilioVault` stores `Kubernetes` metadata by listing the `TrilioVault S3 Bucket` contents.
 
-Finally, you can check that the backup is available in the web console as well, by navigating to `Backup & Recovery -> Backup Plans` and `Backup & Recovery -> Targets` and select `demo-ns-backup` Namespace from the Top dropdown (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
+Finally, you can check that the backup is available in the web console as well, by navigating to `Backup & Recovery -> Backup Plans` and select `demo-ns-backup` Namespace from the Top dropdown (notice that it's in the `Available` state, and that the `mysql-qa` Helm release was backed up in the `Component Details` sub-view)
 
 ### Deleting mysql-qa Helm Release and Resources
 Now, go ahead and simulate a disaster, by intentionally deleting the `mysql-qa` Helm release:
