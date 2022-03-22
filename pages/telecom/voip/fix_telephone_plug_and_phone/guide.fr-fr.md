@@ -70,12 +70,12 @@ Il convient donc alors de vérifier, dans l'ordre :
 > [!primary]
 > **Prérequis réseau pour la téléphonie VoIP OVHcloud**
 >
-> Si votre réseau local est géré par un prestataire informatique ou si vous disposez des connaissances nécessaires, voici les prérequis réseau que nous vous invitons à respecter afin de faciliter le fonctionnement de la téléphonie VoIP OVHcloud :
+> Si votre réseau local est géré par un prestataire informatique ou si vous disposez des connaissances nécessaires, voici les prérequis réseau que nous vous invitons à vérifier sur votre réseau local afin de faciliter le fonctionnement de la téléphonie VoIP OVHcloud :
 >
 > - Le trafic vers le réseau 91.121.128.0/23 doit être autorisé.
 > - Le trafic doit être autorisé sur les ports 5060 et 5962 en UDP.
 > - Le trafic doit être autorisé sur les ports 2424 et 2427 en UDP (uniquement pour les téléphones MGCP des gammes LG et Thomson).
-> - La place de ports 30000 à 40000 en UDP doit être ouverte (ports RTP, plage de son).
+> - La plage de ports 30000 à 40000 en UDP doit être ouverte (ports RTP, plage de son).
 > - La durée de vie des sessions UDP (Time/Timeout/NAT Session) doit être supérieure ou égale à 180 secondes.
 > - Si elle est disponible, la fonction SIP ALG doit être désactivée.
 >
@@ -105,7 +105,7 @@ Afin de le déterminer, connectez le téléphone (ou un ordinateur) **directemen
 
 **Le téléphone redevient fonctionnel ou l'ordinateur se connecte à Internet ?**
 
-Le défaut provient alors probablement du réseau local**. Contactez votre prestataire informatique pour effectuer un diagnostic ou vérifiez chaque élément de votre réseau.
+Le défaut provient alors probablement du réseau local. Contactez votre prestataire informatique pour effectuer un diagnostic ou vérifiez chaque élément de votre réseau.
 
 **Le téléphone est toujours inopérant ou l'ordinateur ne se connecte pas à Internet ?**
 
