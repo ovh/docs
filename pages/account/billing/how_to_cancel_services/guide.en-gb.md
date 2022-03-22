@@ -6,7 +6,7 @@ section: Managing the renewal of services
 order: 03
 ---
 
-**Last updated 1st March 2022**
+**Last updated 22rd March 2022**
 
 ## Objective
 
@@ -46,7 +46,7 @@ This means that, before any termination, you must be **certain** that:
 > - The service is not suspended, particularly because an invoice has not been paid.
 >
 
-Click on the type of product to be cancelled in the following list of main OVHcloud solutions: 
+Click on the type of product to be cancelled in the following list of main OVHcloud solutions:
 
 [Bare Metal Cloud](#baremetalcloud)<br />
 &emsp;&emsp;[Dedicated Server](#dedicated)<br />

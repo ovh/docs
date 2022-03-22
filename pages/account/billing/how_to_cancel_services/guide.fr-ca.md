@@ -6,7 +6,7 @@ section: Gérer mes services et leur renouvellement
 order: 03
 ---
 
-**Dernière mise à jour le 01/03/2022**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
@@ -69,7 +69,6 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 &emsp;&emsp;[Certificat SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[E-mail MX Plan](#mxplan)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
-&emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
 
@@ -192,6 +191,10 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 >
 > La suppression d'un MX Plan entraîne l'effacement définitif de toutes les données correspondantes. L'action de supprimer un MX Plan n'octroie aucun remboursement.
 >
+
+#### Hosted Exchange <a name="hosted"></a>
+
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/), suivez les instructions de ce [guide](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/gestion-facturation-exchange/#supprimer-des-comptes).
 
 ### Solutions transverses <a name="transversal"></a>
 

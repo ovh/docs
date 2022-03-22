@@ -6,7 +6,7 @@ section: Managing the renewal of services
 order: 03
 ---
 
-**Last updated 1st March 2022**
+**Last updated 22rd March 2022**
 
 ## Objective
 
@@ -68,17 +68,8 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 &emsp;&emsp;[Web Hosting](#hosting)<br />
 &emsp;&emsp;[SSL Sectigo Certificate](#ssl_sectigo)<br />
 &emsp;&emsp;[OVHcloud Web PaaS powered by Platform.sh](#webpaas)<br />
-&emsp;&emsp;[CloudDB](#clouddb)<br />
 &emsp;&emsp;[Email MX Plan](#mxplan)<br />
-&emsp;&emsp;[Email Pro](#emailpro)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
-&emsp;&emsp;[Private Exchange](#private)<br />
-&emsp;&emsp;[Office 365 CSP1](#office-csp1)<br />
-&emsp;&emsp;[Office 365 CSP2](#office-csp2)<br />
-&emsp;&emsp;[Sharepoint](#sharepoint)<br />
-
-[Telecom](#telecom)<br />
-&emsp;&emsp;[SMS](#sms)<br />
 
 [Miscellaneous](#transversal)<br />
 &emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
@@ -133,7 +124,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 #### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
 
-To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en/hosted-private-cloud/), follow the instructions in this [guide](https://docs.ovh.com/us/en/private-cloud/how-to-cancel-private-cloud/).
+To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/vsphere/), follow the instructions in this [guide](https://docs.ovh.com/us/en/private-cloud/how-to-cancel-private-cloud/).
 
 #### Hosted Private Cloud powered by Anthos <a name="hostedprivatecloud-anthos"></a>
 

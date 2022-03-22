@@ -6,7 +6,7 @@ section: Gérer mes services et leur renouvellement
 order: 03
 ---
 
-**Dernière mise à jour le 01/03/2022**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
@@ -239,21 +239,21 @@ Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-ovh/#managesubscriptions).
+Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-ovh/#gerer-vos-abonnements).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh/#gerer-vos-abonnements).
+Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de ce [guide](https://docs.ovh.com/fr/microsoft-collaborative-solutions/commander-et-gerer-un-groupe-de-licences-office-365-revendeur-csp2-ovh/#gerer-vos-abonnements).
 
 #### Sharepoint <a name="sharepoint"></a>
 
-Vous pouvez soit **supprimer** un compte individuel de votre plateforme Sharepoint, soit résilier la plateforme Sharepoint entière.
+Vous pouvez soit **supprimer** un compte individuel de votre plateforme [Sharepoint](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/), soit résilier la plateforme Sharepoint entière.
 Si vous souhaitez résilier la plateforme entière, nous vous conseillons de commencer par la suppression préalable de chaque compte individuel.
 
 * Pour supprimer un compte Sharepoint individuel, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez successivement sur `Microsoft`{.action}, `Sharepoint`{.action} puis sur votre plateforme Sharepoint.<br>
 Dans l'onglet `Utilisateurs`{.action}, cliquez sur le bouton `...`{.action} à droite du compte à supprimer puis sur `Supprimer le compte`{.action}. Prenez connaissance des informations et cliquez sur `Valider`{.action}.
 
-* Pour résilier l'ensemble de votre plateforme [Sharepoint](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/), connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
+* Pour résilier l'ensemble de votre plateforme Sharepoint, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre nom en haut à droite puis sur le bouton `Gestion des services`{.action}.
 
 Cliquez ensuite sur le bouton `...`{.action} à droite de la plateforme Sharepoint à résilier, puis sur `Résilier`{.action}.
 

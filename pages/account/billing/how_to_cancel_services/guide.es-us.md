@@ -2,7 +2,7 @@
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
 slug: how-to-cancel-your-services
-section: Gestionar mis servicios y su renovación
+section: Pedidos, facturas y servicios
 order: 03
 ---
 
@@ -10,7 +10,7 @@ order: 03
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 01/03/2022**
+**Última actualización: 22/03/2022**
 
 ## Objetivo
 
@@ -68,14 +68,11 @@ Haga clic en el tipo de producto que desea dar de baja en la siguiente lista de 
 [Public Cloud](#publiccloud)<br />
 
 [Web Cloud](#webcloud)<br />
-&emsp;&emsp;[Domain name](#domain)<br />
-&emsp;&emsp;[Web Hosting](#hosting)<br />
-&emsp;&emsp;[SSL Sectigo Certificate](#ssl_sectigo)<br />
+&emsp;&emsp;[Nombre de dominio](#domain)<br />
+&emsp;&emsp;[Alojamiento web](#hosting)<br />
+&emsp;&emsp;[Certificado SSL Sectigo](#ssl_sectigo)<br />
 &emsp;&emsp;[Email MX Plan](#mxplan)<br />
 &emsp;&emsp;[Hosted Exchange](#hosted)<br />
-
-[Telecom](#telecom)<br />
-&emsp;&emsp;[SMS](#sms)<br />
 
 [Miscellaneous](#transversal)<br />
 &emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />

@@ -2,7 +2,7 @@
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
 slug: how-to-cancel-your-services
-section: Gestionar mis servicios y su renovación
+section: Pedidos, facturas y servicios
 order: 03
 ---
 
@@ -10,13 +10,13 @@ order: 03
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 01/03/2022**
+**Última actualización: 22/03/2022**
 
 ## Objetivo
 
 Quiere dar de baja uno o varios servicios de OVHcloud. Esta guía explica cómo cancelar la suscripción desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
-En primer lugar, consulte la sección "[¿Qué ocurre cuando se da de baja un servicio de OVHcloud?](#consequences)".< br> A continuación, seleccione el producto correspondiente en la sección "[Cómo dar de baja la suscripción?](#terminate)".
+En primer lugar, consulte la sección "[¿Qué ocurre cuando se da de baja un servicio de OVHcloud?](#consequences)". A continuación, seleccione el producto correspondiente en la sección "[Cómo dar de baja la suscripción?](#terminate)".
 
 > [!primary]
 >
@@ -247,13 +247,13 @@ Para dar de baja la solución [Office 365 csp 2](https://www.ovhcloud.com/es-es/
 
 #### SharePoint <a name="sharepoint"></a>
 
-Puede **eliminar** una cuenta individual de su [plataforma SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/) o dar de baja toda la plataforma SharePoint.
+Puede **eliminar** una cuenta individual de su plataforma [SharePoint](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/) o dar de baja toda la plataforma SharePoint.
 Si desea dar de baja toda la plataforma, le recomendamos que comience por eliminar previamente cada cuenta individual.
 
 * Para eliminar una cuenta SharePoint individual, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la sección `Web Cloud`{.action}. Haga clic sucesivamente en `Microsoft`{.action}, `SharePoint`{.action} y, seguidamente, en su plataforma Sharepoint.< br>.
 En la pestaña `Usuarios`{.action}, haga clic en el botón Línea `...`{.action} a la derecha de la cuenta que desea eliminar y haga clic en `"Eliminar la cuenta`{.action}. Lea la información y haga clic en `Aceptar`{.action}.
 
-* Para dar de baja toda su plataforma Sharepoint, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), haga clic en su nombre en la parte superior derecha y luego en el botón "Gestión de servicios" {.action}.
+* Para dar de baja toda su plataforma Sharepoint, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en su nombre en la parte superior derecha y luego en el botón "Gestión de servicios" {.action}.
 
 Haga clic en el botón `...`{.action} a la derecha de la plataforma SharePoint que desea dar de baja y, seguidamente, en `Dar de baja`{.action}.
 

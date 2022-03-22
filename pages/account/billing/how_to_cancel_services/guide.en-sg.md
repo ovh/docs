@@ -6,7 +6,7 @@ section: Managing the renewal of services
 order: 03
 ---
 
-**Last updated 1st March 2022**
+**Last updated 22rd March 2022**
 
 ## Objective
 
