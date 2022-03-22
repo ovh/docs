@@ -3,7 +3,7 @@ title: 'Managing your Public Cloud Instances'
 slug: get-started-with-a-public-cloud-instance
 excerpt: 'Find out how to manage your Public Cloud projects via the OVHcloud Control Panel'
 section: Getting started
-order: 2
+order: 05
 ---
 
 **Last updated 4th December 2019**
