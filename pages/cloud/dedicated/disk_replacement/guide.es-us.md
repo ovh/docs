@@ -11,7 +11,7 @@ section: 'RAID y discos'
 
 Si detecta un fallo en un disco o nuestro sistema le ha enviado una notificación por correo electrónico informándole del fallo de un disco, debe adoptar las medidas necesarias para sustituirlo lo antes posible.
 
-**Esta guía explica cómo saber si falla un disco y cómo solicitar su sustitución a OVH.**
+**Esta guía explica cómo saber si falla un disco y cómo solicitar su sustitución a OVHcloud.**
 
 > [!warning]
 >
