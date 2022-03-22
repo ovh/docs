@@ -2,7 +2,7 @@
 title: Redis - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for Redis using the Command Line Interface (CLI)
 slug: redis/connect-cli
-section: Redis
+section: Redis - Guides
 order: 100
 ---
 
@@ -38,7 +38,7 @@ It's a Client-Server interaction.
 
 You first need to install a software to interact with your Redis instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... The only rule is to be able to reach the public network (Internet) and have sufficient privilege to install it.
 
-In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://https://redis.io/download>. 
+In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://https://redis.io/download>.
 
 Once installed, you need to catch your IP address in order to authorize connection form this specific client.
 
@@ -56,7 +56,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 1: Verify your user roles and password
 
-Select the `Users`{.action} tab. 
+Select the `Users`{.action} tab.
 
 Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user.<br>
 Be careful! By doing so you will need to update all the places where you already use this user/password pair.
@@ -119,12 +119,12 @@ PONG
 
 It means that the Redis instance is running and responding to your command.
 
-To be in interactive mode, do not use any particular command : 
+To be in interactive mode, do not use any particular command :
 `redis-cli -u rediss://<username>:<password>@<hostname>:<port>`.<br>
 
 If you want to avoid to type username and password in your shell session, type:
-`redis-cli -u rediss://<username>:<password>@<hostname>:<port>` 
-to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum privileges to run other commands. 
+`redis-cli -u rediss://<username>:<password>@<hostname>:<port>`
+to connect to the Redis instance then use the `AUTH <username> <password>` command to switch to your user that have minimum privileges to run other commands.
 
 Don't forget you need to modify the username, password, hostname and port.
 
@@ -150,7 +150,7 @@ redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> HELLO
 12) "master"
 13) "modules"
 14) (empty array)
-redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> 
+redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185>
 ```
 
 Congratulations! You are now fully able to interact with your Redis instance!
