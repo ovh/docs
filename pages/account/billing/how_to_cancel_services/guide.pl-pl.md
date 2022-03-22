@@ -81,7 +81,7 @@ Kliknij na rodzaj produktu, który chcesz zrezygnować z usługi na poniższej l
 &emsp;&emsp;[Office 365 csp 2](#office-csp2)<br />
 &emsp;&emsp;[Sharepoint](#sharepoint)<br />
 
-[Solutions transverses](#transversal)<br />
+[Rozwiązania poprzeczne](#transversal)<br />
 &emsp;&emsp;[SSL Gateway](#ssl_gateway)<br />
 
 ### Bare Metal Cloud <a name="baremetalcloud"></a>
