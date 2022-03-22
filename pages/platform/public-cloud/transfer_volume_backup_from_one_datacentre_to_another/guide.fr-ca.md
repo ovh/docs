@@ -11,7 +11,7 @@ order: 11
 
 ## Objectif
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
+Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
 
 **Découvrez comment transférer une sauvegarde de volume d'un datacenter à un autre.**
 
@@ -42,7 +42,7 @@ root@serveur:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+ 
 ```
 
-Lancez ensuite la commande ci-dessous pour déchiffrer le volume à partir de son instance :
+Lancez ensuite la commande ci-dessous pour démonter le volume à partir de son instance : :
 
 ```sh 
 root@serveur:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
