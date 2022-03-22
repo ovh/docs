@@ -5,12 +5,12 @@ excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 18/03/2022**
+**Dernière mise à jour le 22/03/2022**
  
 ## Objectif
 
-À la différence des modèles de téléphones historiques fonctionant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
-Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a donc besoin :
+À la différence des modèles de téléphones historiques fonctionnant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
+Pour fonctionner correctement, à l'instar de votre ordinateur, un téléphone OVHcloud a donc besoin :
 
 - d'être alimenté électriquement;
 - d'être raccordé à votre réseau local et de communiquer sur Internet.
@@ -20,7 +20,7 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 - un défaut d'alimentation électrique;
 - une problématique réseau telle que :
     - une connectivité limitée ou inexistante;
-    - un défaut de distribution d'adresses IP sur votre réseau local;
+    - un défaut de distribution d'adresses IP (DHCP) sur votre réseau local;
 - un défaut temporaire de configuration du téléphone.
  
 **Découvrez comment diagnostiquer et dépanner votre téléphone OVHcloud.**
@@ -30,11 +30,12 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 - Disposer d'une [ligne téléphonique OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Disposer d'un [téléphone fourni par OVHcloud](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external} et l'avoir installé.
- 
+
 ## En pratique
 
 > [!warning]
 > Les équipes de support OVHcloud ne pourront pas vous fournir d'assistance quant à la configuration matérielle et logicielle de votre réseau local, celui-ci étant de votre responsabilité.
+>
 
 Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
 Nous vous conseillons donc de **suivre l'ordre des étapes de vérification** ci-dessous afin de dépanner votre téléphone.<br>
@@ -66,7 +67,20 @@ Il convient donc alors de vérifier, dans l'ordre :
 - l'état de votre **connexion à Internet**;
 - la distribution fonctionnelle des **adresses IP** sur votre réseau local.
 
-### Le raccordement au réseau local
+> [!primary]
+> **Prérequis réseau pour la téléphonie VoIP OVHcloud**
+>
+> Si votre réseau local est géré par un prestataire informatique ou si vous disposez des connaissances nécessaires, voici les prérequis réseau que nous vous invitons à respecter afin de faciliter le fonctionnement de la téléphonie VoIP OVHcloud :
+>
+> - Le trafic vers le réseau 91.121.128.0/23 doit être autorisé.
+> - Le trafic doit être autorisé sur les ports 5060 et 5962 en UDP.
+> - Le trafic doit être autorisé sur les ports 2424 et 2427 en UDP (uniquement pour les téléphones MGCP des gammes LG et Thomson).
+> - La place de ports 30000 à 40000 en UDP doit être ouverte (ports RTP, plage de son).
+> - La durée de vie des sessions UDP (Time/Timeout/NAT Session) doit être supérieure ou égale à 180 secondes.
+> - Si elle est disponible, la fonction SIP ALG doit être désactivée.
+>
+
+#### Le raccordement au réseau local
 
 Comme indiqué précédemment, chaque téléphone VoIP doit être raccordé à votre réseau local.<br> 
 Vérifiez donc qu'un **câble réseau Ethernet RJ45** est bien branché :
@@ -82,7 +96,7 @@ Sur votre routeur / modem / Box Internet, le câble doit être raccordé à l'un
 
 --- images exemple ? ---
 
-### La connexion à Internet
+#### La connexion à Internet
 
 Vérifiez que les ordinateurs connectés **au même réseau** que le téléphone OVHcloud disposent bien d'une connexion à Internet fonctionnelle.<br>
 Si ce n'est pas le cas, le défaut est donc probablement lié à votre réseau local ou à votre fournisseur d'accès à Internet.
@@ -97,7 +111,7 @@ Le défaut provient alors probablement du réseau local**. Contactez votre prest
 
 Le défaut est alors probablement issu de la connexion à Internet. Contactez votre fournisseur d'accès à Internet pour effectuer un diagnostic de votre connexion.
 
-#### Si OVHcloud est votre fournisseur d'accès à Internet
+##### **Si OVHcloud est votre fournisseur d'accès à Internet**
 
 Commencez par consulter la [carte des incidents](https://status.isp.ovh.net/) pour vérifier si un incident générique est en cours.<br>
 Si aucun incident générique n'est en cours dans votre zone géographique, consultez [nos guides « Diagnostic et dépannage »](https://docs.ovh.com/fr/xdsl/) pour effectuer un premier diagnostic de votre accès à Internet.<br>
@@ -111,13 +125,15 @@ Les guides suivants vous seront utiles :
 
 #### L'attribution d'une adresse IP
 
-Afin de fonctionner correctement, votre téléphone, au même titre que tout équipement réseau, doit récupérer une adresse IP locale depuis votre routeur.
+Afin de fonctionner correctement, votre téléphone, au même titre que tout équipement réseau, doit récupérer une adresse IP locale depuis votre routeur. Assez généralement, cette attribution d'adresses IP est assurée automatiquement par le protocole DHCP (**D**ynamic **H**ost **C**onfiguration **P**rotocol) de votre routeur / modem / Box Internet.
 
 Si vos branchements sont corrects, que votre connexion à Internet est fonctionnelle et que le téléphone continue à afficher en continu un message inhabituel lié au réseau, vous devez vérifier que le téléphone se voit bien attribuer une adresse IP locale.
 
 Rendez-vous dans le menu du téléphone et cherchez le sous-menu « *réseau* » ou « *network* ». Le nom exact de ce sous-menu peut varier en fonction du modèle de téléphone, aidez-vous de sa documentation au besoin.
 
-Cherchez une ligne du menu généralement intitulée « *IP* », « *Adresse IP* », « *IP Address* », « *IPv4* ». Si l'adresse indiquée est en 0.0.0.0 ou inexistante, cela signifique que le réseau local n'attribue pas d'adresse IP locale valide à votre téléphone.
+Cherchez une ligne du menu généralement intitulée « *IP* », « *Adresse IP* », « *IP Address* », « *IPv4* ».
+
+Si l'adresse indiquée est en 0.0.0.0 ou inexistante, cela peut signifier que le réseau local n'attribue pas d'adresse IP locale valide à votre téléphone.
 
 Exemple d'une adresse IP **valide** sur un téléphone xxx:
 
@@ -137,7 +153,7 @@ Si votre téléphone reste inopérant malgré les vérifications précédentes, 
 >
 > Pour procéder au dépannage, il est indispensable de connaître l'adresse IP publique du réseau sur lequel est raccordé votre téléphone.
 >
-> Si votre ordinateur est sur le **même réseau local** que votre téléphone, rendez-vous sur <http://monip.org> et prenez notre de l'adresse IP publique qui vous indiquée.
+> Rendez-vous sur <http://monip.ovh> et prenez note de l'adresse IP publique qui vous est indiquée.
 >
 
 Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis cliquez sur l'onglet `Telecom`{.action}.
@@ -149,6 +165,9 @@ Positionnez-vous à présent sur l'onglet `Assistance`{.action}, puis cliquez su
 ![dépannage-plug-and-phone](images/control-panel01.png){.thumbnail}
 
 Une fois sur l'assistant, celui-ci va vous guider en vous posant plusieurs questions et en vous proposant des manipulations. Suivez avec précision les informations qui s'affichent lors de la complétion des étapes de l'assistant. Ces dernières peuvent vous permettre de résoudre la panne que vous rencontrez.
+
+> [!primary]
+> Le nombre de questions peut varier selon le modèle de téléphone.
 
 Assurez-vous également que votre téléphone est correctement branché électriquement et bien connecté à votre réseau local.
 
@@ -177,9 +196,14 @@ Si la reconfiguration de votre téléphone n'a pas permis de résoudre votre pro
 
 #### 1. Réinitialiser votre modem
 
-Il se peut que votre modem ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, nous vous recommandons d'effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
+> [!alert]
+>
+> La réinitialisation de votre modem peut entraîner la perte de potentielles configurations personnalisées sur celui-ci.
+> **Ne réalisez cette étape que si vous êtes sûr de vous.**
 
-- **vous disposez d'un modem OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Redémarrer ou réinitialiser un modem ADSL OVH](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/){.external} » ;
+Il se peut que votre modem ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
+
+- **vous disposez d'un modem OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud_1){.external} » ;
 
 - **vous disposez d'un modem d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
 
@@ -192,6 +216,11 @@ Dès lors, deux possibilités :
 - **votre téléphone fonctionne sur cet autre accès** : cela signifie que la problématique que vous rencontrez actuellement provient de votre routeur / modem / Box Internet (que ce soit sa configuration ou une panne matérielle) ;
 
 - **votre téléphone ne fonctionne pas sur cet autre accès** : cela indique que la problématique que vous rencontrez actuellement provient de votre téléphone (que ce soit sa configuration ou une panne matérielle). Dans ce cas de figure, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud. Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket les tests que vous avez déjà effectués.
+
+### Étape 6 - Contacter l'assistance OVHcloud
+
+Si votre téléphone OVHcloud reste inopérant une fois les manipulations décrites ci-dessuus effectuées, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud.<br>
+Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket l'ensemble des tests que vous avez déjà effectués.
  
 ## Aller plus loin
  
