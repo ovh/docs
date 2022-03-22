@@ -1,155 +1,139 @@
 ---
 title: 'Gérer vos instances Public Cloud'
 slug: debuter-avec-une-instance-public-cloud
-excerpt: 'Découvrez comment bien débuter avec une instance Public Cloud'
+excerpt: 'Découvrez comment gérer vos instances Public Cloud dans l’espace client OVHcloud'
 section: 'Premiers pas'
 order: 05
 ---
 
-**Dernière mise à jour le 4 décembre 2019**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
-Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
+Vous pouvez gérer vos instances Public Cloud dans votre [espace client](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
 
-**Découvrez comment démarrer avec une instance Public Cloud.**
+**Ce guide explique les actions disponibles dans le Panneau de configuration pour une instance Public Cloud.**
 
 ## Prérequis
 
-- [Avoir créé une instance Public Cloud depuis votre espace client](../premiers-pas-instance-public-cloud/).
-- [Avoir créé une clé SSH](../creation-des-cles-ssh/).
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Une instance [Public Cloud](../premiers-pas-instance-public-cloud/) dans votre projet
+- Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr)
 
-## En pratique
+## Instructions
 
-### Accéder à l’interface de gestion de l’instance
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. 
 
-Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'onglet Public Cloud. Sélectionnez le service Public Cloud concerné. Cliquez ensuite sur l’onglet `Instances`{.action} à gauche.
+### Utiliser l'interface de gestion des instances
 
-Sur la page qui s’affiche, vous verrez un résumé de toutes vos instances. Plusieurs informations vont s’afficher ici :
-
-- le modèle de votre instance
-- son nom et sa région
-- les disques durs s’il y en a
-- l’adresse IP de votre instance
-- son état
+Cliquez sur `Instances`{.action} dans le menu de gauche. 
 
 ![public-cloud](images/compute.png){.thumbnail}
 
-### Modifier la configuration d’une instance
+Cette page liste l'ensemble de vos instances Public Cloud et certaines de leurs propriétés :
 
-Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez `Éditer`{.action}.
+- ID de l'instance, nécessaire pour certains appels API
+- La localisation du datacentre, c'est-à-dire la région de l'instance
+- Le modèle d'instance
+- L'image c'est à dire le système installé sur l'instance
+- L'adresse IPv4 de l'instance
+- Volumes (disques) additionnels actuellement attachés à l'instance
+- Statut de l'instance indiquant si elle est à l'état `Activé`.
 
-![public-cloud](images/edit.png){.thumbnail}
+### Options de gestion sur le tableau de bord des instances
 
-Dans la fenêtre qui s’affiche, vous pouvez :
+Sur la page de gestion des instances, cliquez sur le nom de l'instance dans le tableau.
 
-- modifier le nom de l’instance
-- changer le modèle d’instance
-- réinstaller l’instance sur un autre système d’exploitation (**notez que si vous choisissez de le faire, les données actuellement stockées sur l’instance seront supprimées**)
-- passer d’une facturation horaire à un tarif mensuel fixe (les factures seront alors envoyées au prorata, le jour du mois où vous effectuez la modification)
+Sélectionnez l'option souhaitée dans le cadre de gauche "Gestion".
 
-![public-cloud](images/edit1.png){.thumbnail}
-![public-cloud](images/edit2.png){.thumbnail}
-![public-cloud](images/edit3.png){.thumbnail}
+![public-cloud](images/management.png){.thumbnail}
 
-### Créer une sauvegarde d’une instance
+Ces actions sont également disponibles sur la page de gestion des instances si vous cliquez sur `...`{.action} dans le tableau.
 
-Vous pouvez créer une sauvegarde d’une instance à partir de sa page d’administration.  Pour ce faire, cliquez sur les 3 points à droite de l’instance et sélectionnez `Créer un backup`{.action}. Vous verrez ensuite cette page affichant toutes les informations nécessaires :
+#### Éditer la configuration de l'instance
 
-![public-cloud](images/backup.png){.thumbnail}
+Cliquez sur `Éditer`{.action}.
 
-Les informations suivantes s’afficheront alors :
+La nouvelle page affiche une version modifiée des options [de création d'instance](../premiers-pas-instance-public-cloud/), dans laquelle vous pouvez modifier les éléments suivants :
 
-![public-cloud](images/backup1.png){.thumbnail}
+- **Renommer l'instance** : Vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
+- **Modification de l’image** : Vous pouvez choisir un autre système d'exploitation pour l'instance. (Notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient.)
+- **Modification du template** : Vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](../premiers-pas-instance-public-cloud/#etape-3-creer-une-instance) pour plus d'informations sur les options.
+- **Modification du type** de facturation : Vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](../changer-type-facturation-public-cloud/) pour des informations détaillées).
 
-Après votre confirmation, les informations suivantes s’afficheront :
+#### Création d'un backup de l'instance
 
-![public-cloud](images/backup2.png){.thumbnail}
+Cliquez sur `Créer un backup`{.action}.
 
-Une fois la sauvegarde effectuée, vous pourrez la voir dans la section `Sauvegarde de l’instance`{.action} : 
+Reportez-vous au guide [Sauvegarder une instance](../sauvegarder-une-instance/) pour des informations détaillées. 
 
-![public-cloud](images/backup3.png){.thumbnail}
+#### Créer un backup automatique de l'instance
 
-Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](../sauvegarder-une-instance/) si vous avez besoin d’aide à ce sujet.
+Cliquez sur `Créer une sauvegarde automatisée`{.action} automatique.
 
-### Créer une sauvegarde automatique d’une instance
+Reportez-vous au guide [Sauvegarder une instance](../sauvegarder-une-instance/#creer-une-sauvegarde-automatisee-dune-instance) pour des informations détaillées.
 
-Vous pouvez programmer une sauvegarde automatique pour une instance depuis sa page d’administration. Pour ce faire, cliquez sur les 3 points à droite de l’instance et sélectionnez `Créer une sauvegarde automatisée`{.action} : ![public-cloud](images/backupauto.png){.thumbnail}
+#### Suspension de l'instance
 
-La page suivante s’affiche :
+Cliquez sur `Arrêter`{.action}.
 
-![public-cloud](images/backupauto1.png){.thumbnail}
+Cela va mettre l'instance dans un état suspendu. Référez-vous à notre guide [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#arreter-suspend-une-instance_1) pour des informations détaillées.
 
-Une fois que vous aurez sélectionné les informations nécessaires et que vous aurez cliqué sur `Créer`{.action}, vous serez redirigé vers la page suivante :
+Cliquez sur `Boot`{.action} pour réactiver l'instance.
 
-![public-cloud](images/backupauto2.png){.thumbnail}
+#### Utiliser le mode rescue
 
-Vous pouvez à tout moment accéder au menu `Workflow Management`{.action} pour supprimer le processus de sauvegarde automatique en cours :
+Cliquez sur `Redémarrer en mode rescue`{.action}.
 
-![public-cloud](images/backupautodelete.png){.thumbnail}
+Cela activera le mode rescue de l'instance. Consultez notre guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue/) pour obtenir des informations détaillées.
 
-Vous pouvez vous référer à notre guide sur la [sauvegarde d’une instance](../sauvegarder-une-instance/) si vous avez besoin d’aide à ce sujet.
+#### Redémarrage de l'instance
 
-### Récupérer vos informations de connexion
+- Cliquez sur `Redémarrer à chaud (soft)`{.action} pour effectuer un redémarrage au niveau logiciel.
+- Cliquez sur `Reboot à froid (hard)`{.action} pour lancer un reboot au niveau matériel.
 
-Dans l’interface de gestion de l’instance, cliquez sur `Détails de l’instance`, et vérifiez les informations affichées sous `Informations de connexion`{.action}. Vous y trouverez les commandes SSH dont vous avez besoin pour vous connecter à votre instance.
+Confirmez la demande de redémarrage dans la fenêtre qui apparaît.
 
-![public-cloud](images/instancedetails1.png){.thumbnail}
-![public-cloud](images/instancedetails.png){.thumbnail}
+#### Réservation de l'instance
+
+Cliquez sur `Suspendre`{.action}.
+
+Ceci placera l'instance dans l'état "shelved", affiché ici comme `Suspended`. Consultez notre guide [Suspendre ou mettre en pause une instance](../suspendre-ou-mettre-en-pause-une-instance/#suspendre-shelve-une-instance) pour en savoir plus sur les différents états.
+
+Cliquez sur `Réactiver`{.action} pour restaurer l'état `Activé`.
+
+#### Réinstallation d'une instance
+
+Cliquez sur `Réinstaller`{.action}.
+
+Cette action réinstallera l'instance avec le même système d'exploitation, à condition que l'image soit toujours prise en charge.
+
+Notez que la réinstallation **supprime toutes les données** actuellement stockées sur votre instance.
+
+#### Suppression d'une instance
+
+Cliquez sur `Supprimer`{.action}.
+
+Cette action aura pour effet de supprimer définitivement l'instance ainsi que toutes ses données.
+
+Confirmez le traitement dans la fenêtre qui apparaît.
 
 ### Accéder à la console VNC
 
-Vous pouvez accéder directement à votre instance via la console VNC. Seulement, il faudra que vous ayez au préalable configuré un mot de passe pour l’utilisateur root.
+Cliquez sur `Instances`{.action} dans le menu de gauche. Sur la page de gestion des instances, cliquez sur le nom de l'instance dans le tableau.
 
-Pour accéder à cette console, cliquez sur `Console VNC`{.action} dans le tableau de bord de l’instance.
-
-![public-cloud](images/vnc.png){.thumbnail}
-
-La console s’affiche à l’écran :
+Passez du tableau de bord à la console `Console VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-### Redémarrer une instance
+La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
 
-Deux méthodes existent pour redémarrer une instance :
-
-- Redémarrage à chaud (logiciel)
-- Redémarrage à froid (matériel)
-
-Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez soit `Redémarrage à chaud (soft)`{.action} soit `Redémarrage à froid (hard)`{.action}.
-
-Ensuite confirmez votre requête dans la fenêtre qui s’affiche.
-
-![public-cloud](images/reboot.png){.thumbnail}
-
-### Réinstaller une instance
-
-Vous pouvez réinstaller une instance et conserver le même système d’exploitation.
-
-> [!warning]
->
-Si vous choisissez de réinstaller une instance, toutes les données actuellement stockées sur celle-ci seront effacées.
->
-
-Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez `Réinstaller`{.action}. Cliquez ensuite sur `Confirmer`{.action} pour lancer le processus.
-
-![public-cloud](images/reinstall.png){.thumbnail}
-
-### Supprimer une instance
-
-Vous pouvez également supprimer une instance.
-
-> [!warning]
->
-Cette action supprimera définitivement l’instance ainsi que toutes les données qu’elle contient.
->
-
-Dans l’interface de gestion de l’instance, cliquez sur les 3 points situés à droite de l’instance et sélectionnez `Supprimer`{.action}. Cliquez ensuite sur `Confirmer`{.action} pour lancer le processus.
-
-![public-cloud](images/delete.png){.thumbnail}
+Consultez notre [guide "Premiers pas"](../premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) pour en savoir plus sur les étapes nécessaires.
 
 ## Aller plus loin
 
-[Créer une première instance Public Cloud et s'y connecter](../premiers-pas-instance-public-cloud/)
+[Créer une première instance Public Cloud et s’y connecter](../premiers-pas-instance-public-cloud/)
+
+[Présentation d'Horizon](../presentation-dhorizon/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
