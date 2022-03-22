@@ -1,7 +1,7 @@
 ---
 title: Distributed tracing with Jaeger on an OVHcloud Managed Kubernetes Service
 slug: tracing-jaeger
-excerpt: 'Find out how to set-up distributed tracing on OVHcloud Managed Kubernetes Service with Jaeger.'
+excerpt: 'Find out how to set up distributed tracing on OVHcloud Managed Kubernetes Service with Jaeger.'
 section: Monitoring & Observability
 order: 01
 ---
@@ -28,7 +28,7 @@ order: 01
  }
 </style>
 
-**Last updated March 22, 2022.**
+**Last updated 22nd March 2022**
 
 ## Objective
 
@@ -58,7 +58,7 @@ In this guide you will:
 - Deploy your instrumented application
 - Visualize traces
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=ie){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -161,7 +161,7 @@ And apply it:
 kubectl apply -f jaeger.yaml
 ```
 
-Theses commands will create a new CRD `Jaeger` and an instance named `jaeger`:
+These commands will create a new CRD `Jaeger` and an instance named `jaeger`:
 
 <pre class="console"><code>$ kubectl apply -f jaeger.yaml
 jaeger.jaegertracing.io/jaeger created
@@ -174,7 +174,7 @@ kubectl get jaeger
 kubectl get pods -l app.kubernetes.io/instance=jaeger
 ```
 
-Theses commands will check if the instances that were created, list the jaeger objects and list the pods that are running:
+Theses commands will check if the instances were created, list the Jaeger objects and list the pods that are running:
 
 <pre class="console"><code>$ kubectl get jaeger
 NAME       STATUS    VERSION   STRATEGY   STORAGE   AGE
@@ -231,8 +231,8 @@ For this guide you will deploy a Golang application, instrumented with OpenTelem
 Our `main.go` file contains:
 
 - the import of the OpenTelemetry dependencies,
-- a `tracerProvider` method that initiate a connection to a Jaeger provider 
-- a `main()` method that connect to the Jaeger collector you deployed previously and create and send a span each time the `/` HTTP route will be called
+- a `tracerProvider` method that initiates a connection to a Jaeger provider 
+- a `main()` method that connects to the Jaeger collector you deployed previously and creates and sends a span each time the `/` HTTP route will be called
 
 ```go
 package main
@@ -338,7 +338,7 @@ func main() {
 
 We already packaged a Golang application into a Docker image and pushed it in [our ovhplatform Docker Hub repository](https://hub.docker.com/r/ovhplatform/what-is-my-pod-with-tracing) so you can use it directly.
 
-In order to deploy  the application on your OVHcloud managed Kubernetes Service, create a `deployment.yaml` file with the following content:
+In order to deploy the application on your OVHcloud managed Kubernetes Service, create a `deployment.yaml` file with the following content:
 
 ```yaml
 apiVersion: apps/v1
@@ -468,7 +468,7 @@ Select `go-what-is-my-pod-with-tracing` service and click on `Find Traces`{.acti
 
 ![Jaeger query traces](images/jaeger-traces.png)
 
-You can now click in a trace and visualize useful informations.
+You can now click in a trace and visualize useful information.
 
 ![Jaeger query trace details](images/jaeger-trace-details.png)
 
@@ -494,7 +494,7 @@ Delete the `observability` namespace:
 kubectl delete ns observability
 ```
 
-And delete deployed application:
+And delete the deployed application:
 
 ```bash
 kubectl delete -f deployment.yaml
