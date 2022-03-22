@@ -62,7 +62,6 @@ Here is an overview of the various plans capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network.
 
-
 #### Nodes
 
 - **Essential**: the cluster is delivered with 3 nodes by default.
@@ -121,20 +120,20 @@ For both public and private networks, Ingress and Egress traffic are included in
 
 #### Kafka replication and data retention
 
-You can select a Kafka source cluster and a Kakfa destination cluster from the same Public Cloud project.
+You can select a Kafka source cluster and a Kafka destination cluster from the same Public Cloud project.
 External Kafka clusters are not supported so far.
 
-You  need at least 2 kafka clusters to create replication flows.
+You  need at least 2 Kafka clusters to create replication flows.
 
 Replication flows allowed parameters are:
 
-- Source;
-- Target;
-- Topics;
-- Topics exclusion;
-- Sync group offset;
-- Sync interval in seconds (s);
-- Heartbeats (true/false).
+- Source
+- Target
+- Topics
+- Topics exclusion
+- Sync group offset
+- Sync interval in seconds (s)
+- Heartbeats (true/false)
 
 Data retention is only limited by your cluster storage space.
 
@@ -155,7 +154,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 - **Metrics retention :** 1 calendar month.
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 
