@@ -2,9 +2,8 @@
 title: 'Zostań użytkownikiem root i wybierz hasło'
 slug: dostep_root_i_zdefiniowanie_hasla
 excerpt: 'Dowiedz się, jak się zalogować jako użytkownik root i ustawić dla niego hasło'
-legacy_guide_number: g1786
 section: Tutoriale
-order: 5
+order: 08
 ---
 
 **Ostatnia aktualizacja z dnia 19-10-2021**

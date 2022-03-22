@@ -4,7 +4,7 @@ slug: comment-changer-mon-offre-xdsl
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 16/02/2022**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
@@ -52,8 +52,16 @@ Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessair
 Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) seront accessibles une fois le changement effectif. 
 
 > [!primary]
-> Si vous possédez une offre Express, vous avez la possibilité de la faire évoluer en Entreprise. Il est par contre impossible de faire évoluer une offre Entrepise vers une offre Express.
+> Vous pouvez à tout moment faire évoluer une offre Connect ou Express Lite vers une offre Express, ou faire évoluer une offre Express vers une offre Entreprise.
 >
+> En revanche, les évolutions suivantes ne sont possibles qu'au terme de la période d'engagement en cours sur votre offre actuelle :
+>
+> - Entreprise vers Express;
+> - Entreprise vers Express Lite;
+> - Entreprise vers Connect;
+> - Express vers Express Lite;
+> - Express vers Connect;
+> - Express Lite vers Connect;
 
 ## Aller plus loin
 

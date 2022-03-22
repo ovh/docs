@@ -36,6 +36,13 @@ routes:
 
 In this tutorial, we are going to show you how to build a [Strapi](https://strapi.io/){.external} application using the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/fr/public-cloud/postgresql/).
 
+> [!warning]
+>
+> OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
+>
+> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community of users on <https://community.ovh.com/>. OVHcloud can't provide you with technical support in this regard.
+>
+
 ## Before you begin
 
 You need to be able to order a database solution in the OVHcloud Control Panel, as explained in our [Getting started with Public Cloud Databases](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) guide.
@@ -113,7 +120,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 ### Authorize your IP address
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. 
+> For security reasons the default network configuration doesn't allow any incoming connections.
 > To allow access from your application or development environment to your PostgreSQL database service, you must add your IP addresses to the service authorized list.
 
 #### Add your IPs to the DB authorized list
@@ -159,18 +166,18 @@ The useful parameters are:
 Now connect to the database with the following command
 
 ```sh
-psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password 
+psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 ```
 
 Enter the password and press `Enter`{.action}.
 
 <pre class="console"><code>$ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
-Password: 
+Password:
 psql (14.1 (Debian 14.1-1.pgdg110+1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 Type "help" for help.
 
-defaultdb=> 
+defaultdb=>
 </code></pre>
 
 Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with [Strapi](https://strapi.io/){.external}.
@@ -222,18 +229,18 @@ warning package.json: No license field
 [4/4] Building fresh packages...
 success Installed "create-strapi-app@4.0.2" with binaries:
       - create-strapi-app
-? Choose your installation type 
-  Quickstart (recommended) 
-❯ Custom (manual settings) 
+? Choose your installation type
+  Quickstart (recommended)
+❯ Custom (manual settings)
 </code></pre>
 
 On the next step, select `postgres` and press `Enter`{.action}.
 
 <pre class="console"><code>
 ? Choose your installation type Custom (manual settings)
-? Choose your default database client 
-  sqlite 
-❯ postgres 
+? Choose your default database client
+  sqlite
+❯ postgres
   mysql
 </code></pre>
 

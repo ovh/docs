@@ -2,7 +2,7 @@
 title: Redis - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for Redis using the Command Line Interface (CLI)
 slug: redis/connect-cli
-section: Redis
+section: Redis - Guides
 order: 100
 ---
 
@@ -150,7 +150,7 @@ redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> HELLO
 12) "master"
 13) "modules"
 14) (empty array)
-redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185> 
+redis-9f6095f3-9f6095f3.database.cloud.ovh.net:20185>
 ```
 
 Congratulations! You are now fully able to interact with your Redis instance!

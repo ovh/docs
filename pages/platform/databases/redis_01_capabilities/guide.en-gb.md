@@ -2,7 +2,7 @@
 title: Redis - Capabilities and Limitations
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-section: Redis
+section: Redis - Guides
 order: 1
 ---
 
@@ -99,7 +99,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers. 
+The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 

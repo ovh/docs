@@ -21,11 +21,11 @@ In alcuni casi potrebbe essere necessario creare istanze direttamente dall’int
 ## Prerequisiti
 
 - Disporre di un progetto [Public Cloud OVHcloud](https://www.ovhcloud.com/it/public-cloud/){.external}
-- [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external} 
+- [Essere connesso all’interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/){.external} 
 
 ## Procedura
 
-Per avviare la creazione di un’istanza, accedi all’interfaccia Horizon. Se hai bisogno di aiuto per effettuare questa operazione, consulta la guida [Creare un utente per accedere a Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/){.external}.
+Per avviare la creazione di un’istanza, accedi all’interfaccia Horizon. Se hai bisogno di aiuto per effettuare questa operazione, consulta [la guida](https://docs.ovh.com/it/public-cloud/horizon/){.external}.
 
 Clicca su `Compute`{.action} nel menu a sinistra e seleziona `Instances`{.action}.
 

@@ -3,10 +3,10 @@ title: Présentation de Horizon
 slug: presentation-dhorizon
 legacy_guide_number: 1776
 section: Gestion depuis Horizon
-order: 02
+order: 01
 ---
 
-**Dernière mise à jour le 05/11/2021**
+**Dernière mise à jour le 16/03/2022**
 
 ## Objectif
 
@@ -17,9 +17,15 @@ L'interface Horizon, nativement proposée avec OpenStack, a été adaptée par O
 ## Prérequis
 
 - Un [project Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) dans votre compte OVHcloud.
-- [Créer un accès à Horizon](../creer-un-acces-a-horizon/).
+- Un utilisateur [OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) créé dans votre projet.
 
 ## En pratique
+
+### Se connecter à OpenStack Horizon
+
+Ouvrez la page de connexion à [Horizon](https://horizon.cloud.ovh.net/auth/login/) et renseignez les [identifiants OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) préalablement créés, puis cliquez sur `Connect`{.action}.
+
+Vous pouvez également cliquer sur `Horizon`{.action} dans le menu de gauche sous "Management Interfaces" après avoir ouvert votre projet `Public Cloud`{.action} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ### Choix de la région du datacentre
 

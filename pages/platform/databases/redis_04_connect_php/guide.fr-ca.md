@@ -1,8 +1,8 @@
 ---
-title: Redis - Se connecter avec PHP (EN)
+title: Redis - Connectez-vous avec PHP (EN)
 excerpt: Connect to your Public Cloud Databases for Redis using the PHP programming language
 slug: redis/connect-php
-section: Redis
+section: Redis - Guides
 order: 101
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/'
@@ -126,12 +126,12 @@ In your PHP environment, let's try a connection. To be sure that we are indeed c
 	echo "\nServer is running: ".$redis->ping("OK");
 
 	// Set the key pair
-	echo "\nSet key pair (foo,cowabunga)."; 
+	echo "\nSet key pair (foo,cowabunga).";
 	$redis->set('foo', 'cowabunga');
 
 	//Get the value of the key foo
 	$response = $redis->get('foo');
-	echo "\nGet the value for key foo :"; 
+	echo "\nGet the value for key foo :";
 	echo $response;
 
 	if ($response == "cowabunga") {
@@ -155,4 +155,4 @@ Congratulations! Everything is working properly.
 
 Visit our dedicated Discord channel: <https://discord.gg/PwPqWUpN8G>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
