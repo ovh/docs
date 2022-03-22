@@ -16,9 +16,9 @@ Vous pouvez gérer vos instances Public Cloud dans votre [espace client](https:/
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Une instance [Public Cloud](../premiers-pas-instance-public-cloud/) dans votre projet
-- Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Une [instance Public Cloud](../premiers-pas-instance-public-cloud/) dans votre projet
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
