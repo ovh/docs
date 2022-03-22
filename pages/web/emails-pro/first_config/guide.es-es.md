@@ -27,7 +27,7 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 
 Una vez creado y activado el servicio E-mail Pro, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
-Para ello, inicie sesión en el área de cliente. En la barra de servicios a la izquierda, haga clic en `E-mail Pro`{.action} y seleccione el nombre del servicio correspondiente.
+Para ello, inicie sesión en el área de cliente. Haga clic en `E-mail Pro`{.action} y seleccione el nombre del servicio correspondiente.
 
 > [!primary]
 >
@@ -131,8 +131,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor pro**?**.mail.ovh.net. Deberá sustituir la «?» por el número que designa el servidor del servicio E-mail Pro.
 > 
-> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
->  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
+> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action}. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
 > 
 
 ## Más información

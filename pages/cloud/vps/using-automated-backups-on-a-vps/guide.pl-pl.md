@@ -110,7 +110,7 @@ Utwórz połączenie RDP (Remote Desktop) z Twoim serwerem VPS.
 
 Po zalogowaniu kliknij prawym przyciskiem myszy przycisk `Start`{.action} i otwórz `Zarządzanie dyskami`{.action}.
 
-[disk management](images/windowsbackup1.png){.thumbnail}
+![disk management](images/windowsbackup1.png){.thumbnail}
 
 Podmontowana kopia zapasowa będzie wyglądać jak dysk podstawowy z tą samą przestrzenią dyskową co główny dysk.
 

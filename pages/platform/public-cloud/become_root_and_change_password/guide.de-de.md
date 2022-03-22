@@ -2,9 +2,8 @@
 title: 'Root-Rechte erlangen und Passwort festlegen'
 slug: root-rechte_erlangen_und_passwort_festlegen
 excerpt: 'Erfahren Sie hier, wie Sie Root-Rechte erlangen und ein Passwort vergeben'
-legacy_guide_number: g1786
 section: 'Erste Schritte'
-order: 5
+order: 08
 ---
 
 **Letzte Aktualisierung am 19.10.2021**

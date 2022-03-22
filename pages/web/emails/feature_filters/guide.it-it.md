@@ -43,11 +43,11 @@ Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
 
-E seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+E seleziona il tuo servizio nella sezione `Email`{.action}.
 
 Nella scheda `Email`{.action} del tuo servizio MXplan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
-![email](images/img_3239.jpg){.thumbnail}
+![email](images/img_3239.png){.thumbnail}
 
 A questo punto, accedi alla lista dei filtri configurati per questo indirizzo email.
 

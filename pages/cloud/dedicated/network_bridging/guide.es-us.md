@@ -52,7 +52,7 @@ Haga clic en los `...`{.action} y, seguidamente, en `Añadir una dirección MAC 
 
 Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "Nombre de la máquina virtual" y haga clic en `Aceptar`{.action}.
 
-![Añadir una MAC virtual (2)](images/virtual_mac_03.png){.thumbnail}
+![Añadir una MAC virtual (2)](images/addvmac2.png){.thumbnail}
 
 ### Establecer la dirección de la puerta de enlace
 

@@ -219,7 +219,7 @@ spec:
 
 Then, still in the `templates` folder, create a helper to simplify the templates. To do that, create a `_helper.tpl` file with the content:
 
-```
+```bash
 {{/*
 Expand the name of the chart.
 */}}

@@ -34,15 +34,15 @@ In caso di assenza al tuo ufficio, puoi installare una segreteria email che lasc
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. 
 
-Seleziona il dominio nella sezione `Email`{.action}, dalla colonna a sinistra.
+Seleziona il dominio nella sezione `Email`{.action}.
 
-Clicca sulla scheda `Email`{.action} in alto e poi su `Gestisci le risposte automatiche`{.action}.
+Clicca sulla scheda `Email`{.action} e poi su `Gestisci le risposte automatiche`{.action}.
 
 Verrai reindirizzato alla finestra `Gestione delle risposte` automatiche che visualizzeranno tutte le risposte automatiche attive sulla tua soluzione di posta.
 
 Clicca su `Aggiungi una risposta automatica`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 Si apre la finestra di aggiunta. completandola con le informazioni indicate qui sotto.
 

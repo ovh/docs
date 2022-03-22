@@ -43,15 +43,13 @@ The “Service” drop-down menu allows you to filter for Failover IPs.
 
 ![manage IPs](images/manageIPs.png){.thumbnail}
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
-
 Click on `...`{.action} in the relevant row to open the context menu, and select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC](images/virtual_mac_02_2020.png){.thumbnail}
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 

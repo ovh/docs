@@ -58,7 +58,7 @@ An dieser Stelle sind zwei weitere Vorgehensweisen möglich:
 
 ### Schritt 3: Den CNAME-Eintrag in der OVH Konfiguration anlegen
 
-Klicken Sie in Ihrem Kundencenter im linken Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain. Gehen Sie dann in den Tab `DNS Zone`{.action}.
+Klicken Sie in Ihrem Kundencenter auf `Domains`{.action} und anschließend auf die entsprechende Domain. Gehen Sie dann in den Tab `DNS Zone`{.action}.
 
 Es sollte eine Tabelle angezeigt werden. In dieser ist die Konfiguration Ihrer Domain bei OVH angezeigt. Sie besteht aus mehreren DNS-Einträgen, die in jeweils einer Zeile der Tabelle stehen.
 

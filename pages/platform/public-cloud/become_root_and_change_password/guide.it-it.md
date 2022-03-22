@@ -3,7 +3,7 @@ title: 'Devenire utente root e selezionare una password'
 slug: imposta_una_password_amministratore
 excerpt: "Imparare a usare l'utente root e creare una password per esso"
 section: Tutorial
-order: 5
+order: 08
 ---
 
 **Ultimo aggiornamento: 19/10/2021**

@@ -26,7 +26,7 @@ Um die in Ihrem Exchange Angebot enthaltenen Accounts nutzen zu können, benöti
 
 Wenn Ihr Hosted Exchange Angebot eingerichtet und verfügbar ist, können Sie es über Ihr [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} verwalten.
 
-Gehen Sie hierzu in Ihrem Kundencenter im linken Menü auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend den Namen des entsprechenden Exchange Dienstes aus.
+Gehen Sie hierzu in Ihrem Kundencenter auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend den Namen des entsprechenden Exchange Dienstes aus.
 
 > [!primary]
 >

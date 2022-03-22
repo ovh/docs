@@ -6,10 +6,6 @@ section: Enterprise File Storage
 order: 5
 ---
 
-> [!warning]
-> Enterprise File Storage es un producto en fase **Beta**. Durante esta fase, el servicio no está disponible para clientes fuera de Europa.
->
-
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
@@ -25,7 +21,7 @@ Esta guía explica cómo gestionar los snapshots de los volúmenes de la soluci�
 ## Requisitos
 
 - Tener contratado un plan Enterprise File Storage de OVHcloud con un volumen.
-- Estar conectado a la página de las [API de OVHcloud.](https://api.ovh.com/)
+- Estar conectado a la página de las [API de OVHcloud](https://ca.api.ovh.com/)
 
 ## Lo esencial
 
@@ -40,7 +36,7 @@ Los snapshots se crean a partir de un volumen operativo.
 
 ## Procedimiento
 
-Todas las API utilizadas en esta guía están disponibles en la sección */storage*: <https://api.ovh.com/console/#/storage>.
+Todas las API utilizadas en esta guía están disponibles en la sección */storage*: <https://ca.api.ovh.com/console/#/storage>.
 
 > [!primary]
 >

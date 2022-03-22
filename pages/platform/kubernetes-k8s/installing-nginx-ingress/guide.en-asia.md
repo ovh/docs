@@ -2,7 +2,8 @@
 title: Installing Nginx Ingress on OVHcloud Managed Kubernetes
 slug: installing-nginx-ingress
 excerpt: 'Find out how to install Nginx Ingress on OVHcloud Managed Kubernetes'
-section: Tutorials
+section: Traffic management
+order: 0
 ---
 
 **Last updated 1st March 2022.**

@@ -1,7 +1,7 @@
 ---
 title: Créer un champ CNAME à l'ajout d'un domaine associé
 slug: exchange-ajouter-champ-cname-dns
-excerpt: Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVH
+excerpt: Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVHcloud
 section: Premiers pas avec Exchange
 order: 5
 ---
@@ -12,18 +12,18 @@ order: 5
 
 Lors de l'ajout d'un nom de domaine à votre service Exchange, une configuration du champ CNAME (DNS) peut vous être demandée. Celle-ci a pour but de s'assurer que l'ajout du nom de domaine en question est légitime.
 
-**Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVH.**
+**Apprenez pourquoi l'ajout d'un champ CNAME peut être requis et comment en ajouter un chez OVHcloud.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-- Être en mesure d’administrer le service Exchange depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être en mesure d’administrer le service Exchange depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir effectué l'ajout d'un nom de domaine sur votre service Exchange demandant l'ajout d'un champ CNAME.
 - Pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
 
 ## En pratique
 
-### Étape 1 : comprendre le diagnostic CNAME d'OVH
+### Étape 1 : comprendre le diagnostic CNAME d'OVHcloud
 
 La pastille de diagnostic **CNAME** (Canonical Name) apparaît dans certains cas spécifiques lors de la déclaration d'un nom de domaine sur votre service Exchange.
 
@@ -31,7 +31,7 @@ Son but est de prouver que vous êtes bien l'administrateur du nom de domaine qu
 
 ![Exchange](images/cname_exchange_diagnostic.png){.thumbnail}
 
-### Étape 2 : récupérer la configuration CNAME d'OVH
+### Étape 2 : récupérer la configuration CNAME d'OVHcloud
 
 Positionnez-vous sur l'onglet `Domaine associés`{.action} et cliquez sur la pastille de couleur rouge `CNAME`{.action} pour récupérer les informations nécessaires.
 

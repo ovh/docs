@@ -36,11 +36,11 @@ Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ati
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 
-- Para o seu **domínio**, aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
-- Para o seu **Alojamento Web**, dirija-se à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda e selecione o seu alojamento. A data de expiração ou de renovação automática do seu alojamento será indicada no topo da página.
-- Para uma oferta **MXplan**, aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} na coluna da esquerda e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
-- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
-- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para o seu **domínio**, aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
+- Para o seu **Alojamento Web**, dirija-se à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e selecione o seu alojamento. A data de expiração ou de renovação automática do seu alojamento será indicada no topo da página.
+- Para uma oferta **MXplan**, aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 
 ### Não consigo enviar e-mails a partir do meu software de e-mail
 
@@ -68,9 +68,9 @@ Como alterar a palavra-passe de um endereço de e-mail:
 
 - Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/)
 
-- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
 
-- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
 
 ### Há algum incidente ou manutenção em curso no meu serviço?
 

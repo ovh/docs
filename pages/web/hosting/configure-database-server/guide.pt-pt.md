@@ -6,7 +6,7 @@ section: 'CloudDB'
 order: 6
 ---
 
-**Última atualização: 03/02/2022**
+**Última atualização: 09/03/2022**
 
 ## Objetivo
 
@@ -116,6 +116,7 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 - **MaxConnexions**: Número de conexões simultâneas autorizadas no servidor de bases de dados.
 - **Wait_timeout**: Tempo (em segundos) que o servidor aguardará atividade numa conexão não interativa antes de a fechar.
 - **Event_scheduler**: Permite acionar a execução de pedidos programados diretamente no servidor MySQL.
+- **sql_mode**: A opção **sql_mode** afeta a sintaxe SQL e as verificações de validação de dados efetuadas por MySQL/MariaDB. Apenas disponível para MariaDB.
 
 > [!primary]
 > Quando encontra um erro no seu site a indicar **«Too many connections»**, isso deve-se à ultrapassagem do número máximo de conexões simultâneas na base de dados.
@@ -124,9 +125,22 @@ No quadro **Configuração geral do MySql**, vai encontrar a configuração defi
 
 > [!primary]
 >
-> Tmpdir:
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: O servidor de bases de dados vai alocar para este diretório metade da sua memória RAM, tendo em vista um melhor desempenho.
+>
 > \- /tmp: O servidor vai alocar no disco rígido um espaço ilimitado para este diretório, mas o desempenho será muito inferior. Recomendamos que utilize este diretório apenas para operações pontuais pesadas.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo predefinido de MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo predefinido de MariaDB 10.2 e superior.
+>
+> Recomendamos que utilize sempre o modo predefinido, exceto se a sua base de dados tiver sido atualizada a partir de uma versão com um modo predefinido diferente da versão atual.
 >
 
 Efetue as modificações necessárias e clique em `Confirmar`{.action}.
@@ -159,15 +173,15 @@ Para modificar esta versão, clique em `Alterar a versão`{.action}.
 
 Introduza este comando no phpPgAdmin, clicando na sua **base de dados**, rubrica **«SQL»**, e a seguir em `Lançar`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Como saber a versão exata de mySQL ou MariaDB que utilizo?**
+#### **Como saber a versão exata de mySQL ou MariaDB que utilizo?**
 
 Introduza este comando no phpMyAdmin, rubrica **«SQL»**, e a seguir em `Executar`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -234,7 +248,7 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **�
 
 ### Otimizar as bases de dados
 
- Aconselhamos que faça a manutenção das suas bases de dados para que o seu desempenho permaneça elevado. Um desempenho elevado significa que as informações contidas na base são devolvidas rapidamente ao script que as solicita. Nesse sentido, as bases de dados precisam de ser estruturadas e otimizadas.
+Aconselhamos que faça a manutenção das suas bases de dados para que o seu desempenho permaneça elevado. Um desempenho elevado significa que as informações contidas na base são devolvidas rapidamente ao script que as solicita. Nesse sentido, as bases de dados precisam de ser estruturadas e otimizadas.
 
 #### **Indexar a base de dados**
 
@@ -242,8 +256,8 @@ Para aumentar a rapidez de pesquisa no seguimento de um pedido, é necessário i
 
 Por exemplo: costuma fazer pesquisas de pessoas relativamente à cidade. Indexe o campo «cidade» com o pedido seguinte:
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `cidade` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Limpar a base de dados**
 
@@ -275,7 +289,7 @@ Nos pedidos SQL, verifique se seleciona apenas aquilo de que precisa e, principa
 
 Por exemplo:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 
@@ -288,5 +302,3 @@ Por exemplo, evite utilizar **«HAVING»**; isto torna os pedidos mais pesados. 
 [Lista dos endereços IP dos clusters e alojamentos web](../lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
-
-

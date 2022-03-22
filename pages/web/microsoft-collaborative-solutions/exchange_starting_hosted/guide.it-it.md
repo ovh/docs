@@ -29,7 +29,7 @@ Con Hosted Exchange puoi usufruire di account email professionali che semplifica
 
 Una volta che il tuo Hosted Exchange è pronto per l’utilizzo, puoi gestirlo direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
-cliccando su `Microsoft`{.action} e poi su `Exchange`{.action} nella barra del menu di sinistra. Infine selezione il nome del tuo Hosted Exchange.
+cliccando su `Microsoft`{.action} e poi su `Exchange`{.action}. Infine selezione il nome del tuo Hosted Exchange.
 
 > [!primary]
 >

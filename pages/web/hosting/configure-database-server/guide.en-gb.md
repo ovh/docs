@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 9th March 2022**
 
 ## Objective
 
@@ -16,8 +16,8 @@ With the Cloud Databases database servers, you can influence your server’s glo
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- A [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
@@ -116,6 +116,7 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 - <b>MaxConnections:</b> The number of concurrent connections authorised on CloudDB.
 - <b>Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
 - <b>Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
+- <b>sql_mode</b>: The <b>sql_mode</b> option affects the supported SQL syntax, and the data validation performed by MySQL/MariaDB. Only available for MariaDB.
 
 > [!primary]
 > When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
@@ -124,10 +125,22 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 > [!primary]
 >
-> <b>Tmpdir</b>:  
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
 > \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Default mode of MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Default mode of MariaDB 10.2 and higher.
+>
+> We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
 
 Make the necessary changes, then click `Confirm`{.action}.
@@ -160,7 +173,7 @@ To edit this version, click `Update version`{.action}.
 
 Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL** section, then click `Launch`{.action}:
 
-```
+```sql
 select version();
 ```
 
@@ -168,7 +181,7 @@ select version();
 
 To do this, enter this command in phpMyAdmin, in the **SQL** section, then click `Run`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -244,7 +257,7 @@ To increase the speed of searches during a query, you must index the fields that
 
 Example: you do a regular search for people in relation to the city. Index the “city” field with the following query:
 
-```bash
+```sql
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
@@ -280,7 +293,7 @@ In your SQL queries, make sure you select only what you need, and especially tha
 
 Example:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

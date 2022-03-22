@@ -31,7 +31,7 @@ The Netboot facility needs to be configured in the [OVHcloud Control Panel](http
 > This part is intended for servers running Linux. For Windows, FreeBSD, and Virtualization distributions, only Hard Disk mode selection or Rescue modes are possible.
 > 
 
-To start your server on a network kernel, you must first connect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+To start your server on a network kernel, you must first connect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
 Go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
 
@@ -64,7 +64,7 @@ In our example, the Root Device will be /dev/sda1.
 
 Click `Next`{.action}, and then finally `Confirm`{.action}
 
-Once the change is completed, click on `...`{.action}  next to “Status” in the box labelled **Service status**. Select `Reboot`{.action} so that the new netboot takes effect.
+Once the change is completed, click on `...`{.action}  next to “Status” in the box labelled **Service status**. Select `Restart`{.action} so that the new netboot takes effect.
 
 ![Netboot](images/netboot_004.png){.thumbnail}
 

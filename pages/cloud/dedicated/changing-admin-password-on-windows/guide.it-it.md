@@ -29,14 +29,14 @@ Negli step successivi descriviamo il processo di modifica della password admin l
 
 ### Step 1: riavvia il server in modalità Rescue
 
-Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella colonna di sinistra sotto `Server dedicati`{.action}.
+Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server dal menu dei `Server dedicati`{.action}.
 
 Il netboot deve essere trasferito verso "rescue64-pro (Customer rescue system (Linux)". Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
 <br>Nella nuova finestra, seleziona **Avviare in Rescue mode** e seleziona "Rescue64-pro" nel menu. Se le credenziali di accesso devono essere inviate a un indirizzo diverso da quello principale del tuo account, seleziona un indirizzo email nell'ultimo campo. 
 
 Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
 <br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.
@@ -287,14 +287,14 @@ Si raccomanda di utilizzare la tastiera virtuale durante l'inserimento della pas
 
 #### Step 1: riavvia il server in modalità Rescue
 
-Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella colonna di sinistra sotto `Server dedicati`{.action}.
+Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server dal menu dei `Server dedicati`{.action}.
 
 Il netboot deve essere spostato verso "WinRescue (Rescue System for Windows)". Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
 <br>Nella nuova finestra, seleziona **Avviare in Rescue mode** e seleziona "WinRescue" nel menu. Se le credenziali di accesso devono essere inviate a un indirizzo diverso da quello principale del tuo account, seleziona un indirizzo email nell'ultimo campo. 
 
 Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
 <br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.

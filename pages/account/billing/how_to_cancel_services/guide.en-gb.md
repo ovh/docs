@@ -244,6 +244,7 @@ To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-to
 #### Sharepoint <a name="sharepoint"></a>
 
 You can either **delete** an individual account from your [Sharepoint platform](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/) or cancel the entire Sharepoint platform.
+
 If you would like to cancel the entire platform, we advise you to start by deleting each individual account beforehand.
 
 - To delete an individual Sharepoint account, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click on `Microsoft`{.action}, `Sharepoint`{.action} and then on your Sharepoint platform. <br>On the `Users` tab {.action}, click on the `...`{.action} button to the right of the account you want to delete, then on `Disable account`{.action}. Review the information and click on `Confirm` {.action}.

@@ -17,13 +17,13 @@ For security reasons, you can configure and use filtering rules that will define
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/).
-- Access to the [Horizon interface](https://docs.ovh.com/sg/en/public-cloud/configure_user_access_to_horizon/)
+- Access to the [Horizon interface](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/)
 
 ## Instructions
 
 ### Step 1: creating a security group
 
-Access the [Horizon interface](https://docs.ovh.com/sg/en/public-cloud/configure_user_access_to_horizon/). Then choose the region in which you want to create a security group, via the button in the top left-hand corner.
+Access the [Horizon interface](https://docs.ovh.com/sg/en/public-cloud/creation-and-deletion-of-openstack-user/). Then choose the region in which you want to create a security group, via the button in the top left-hand corner.
 
 ![define region](images/security-group0.png){.thumbnail}
 

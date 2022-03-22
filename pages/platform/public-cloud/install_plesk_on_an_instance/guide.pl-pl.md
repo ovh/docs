@@ -10,7 +10,7 @@ section: Tutoriale
 
 ## Wprowadzenie
 
-Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych.  Można go zainstalować i z niego korzystać na jednej z instancji [Public Cloud](https://www.ovh.pl/public-cloud/){.external}.
+Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowanych.  Można go zainstalować i z niego korzystać na jednej z instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
 
 **Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud.** 
 

@@ -32,7 +32,7 @@ To access the security policy of your email service, log in to your [OVHcloud Co
 
 |Emails and Email Pro|Exchange| 
 |---|---| 
-|Click on `Emails`{.action} or `Professional Email`{.action} in the left-hand column, then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Microsoft`{.action} in the left-hand column, then on `Exchange`{.action}, and select the solution you want to manage. Click on `Security`{.action}.|
+|Click on `Emails`{.action} or `Professional Email`{.action}, then click on the solution you want to manage. Click on the `More` tab, then on `Manage security policy`{.action}.|Click on `Microsoft`{.action}, then on `Exchange`{.action}, and select the solution you want to manage. Click on `Security`{.action}.|
 |![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 Continue to the aspect(s) you want to modify.

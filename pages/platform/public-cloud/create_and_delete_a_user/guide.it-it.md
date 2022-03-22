@@ -1,57 +1,78 @@
 ---
-title: 'Creare e rimuovere un utente OpenStack'
+title: Crea ed elimina utenti OpenStack
 slug: creation-and-deletion-of-openstack-user
 section: Gestione del progetto
+excerpt: Scopri come creare e rimuovere un utente OpenStack dallo Spazio Cliente OVHcloud
+order: 9
 ---
 
-**Ultimo aggiornamento 06/12/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Premessa
-Per utilizzare le API OpenStack o Horizon è necessario creare un utente OpenStack. Questa guida ti mostra come creare e rimuovere un utente.
+**Ultimo aggiornamento: 17/03/2022**
 
-Il numero degli utenti OpenStack è illimitato.
+## Obiettivo
 
+L'accesso a Horizon e alle API OpenStack avviene tramite combinazioni identificativo/password chiamate "*OpenStack Users*". È possibile creare tutti gli utenti OpenStack necessari e attribuire loro diversi diritti di accesso.
 
-### Prerequisiti
-Aver creato un Progetto Public Cloud da oltre 7 giorni, se si tratta del primo (altrimenti, contatta il team di supporto per verificare se è possibile sbloccare il progetto prima). Gli altri progetti non hanno questo limite.
+**Questa guida ti mostra come gestire gli utenti OpenStack dallo Spazio Cliente OVHcloud.**
 
+## Prerequisiti
 
-## Crea un utente OpenStack
-Per accedere a Horizon bisogna innanzitutto creare un utente OpenStack. Per farlo, accedi al tuo Spazio Cliente, sezione`Public Cloud`{.action},  clicca sull’icona a forma di`freccia`{.action}e infine seleziona il progetto che ti interessa.
+- Un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
-![Add user](images/select_project.png){.thumbnail}
+> [!primary]
+>
+> Se il progetto Public Cloud in questione è il **primo progetto** creato nel tuo Spazio Cliente, la creazione di utenti OpenStack sarà possibile solo dopo 7 giorni dalla data di creazione del progetto.
+>
+> È possibile richiedere l'eliminazione di questa misura di sicurezza creando un ticket di assistenza nel tuo Spazio Cliente.
+>
 
-Nella sezione “Project Management” del menu a sinistra, seleziona`Users & Roles user`{.action}.
+## Procedura
+
+### Crea un utente OpenStack
+
+Accedi allo Spazio Cliente OVHcloud e apri il tuo progetto `Public Cloud`{.action}. Clicca su `Users & Roles`{.action} nel menu a sinistra sotto "Project management". 
+
+Clicca sul pulsante `Crea un utente`{.action}.
 
 ![User roles](images/users_roles.png){.thumbnail}
 
-Clicca sul pulsante`Create User`{.action}per generare il seguente pop-up.
+La descrizione dell'utente non è il nome utente OpenStack ma una descrizione da inserire per aiutarti a organizzare gli utenti e i loro diritti. Inserisci una descrizione e clicca su `Seguente`{.action}.
 
 ![Add user](images/adduser.png){.thumbnail}
 
-La descrizione utente non corrisponde al nome utente: è soltanto un termine descrittivo per aiutarti a ricordare di che tipo di utente si tratta. Nella nuova finestra, puoi impostare i permessi dell’utente. Per ogni ruolo selezionato, all’utente vengono assegnati i permessi corrispondenti, come mostrato nella tabella qui sotto:
+Adesso puoi selezionare ruoli che rappresentano le autorizzazioni che l'utente otterrà. Per ogni casella selezionata, l'utente otterrà privilegi di accesso in base alla tabella qui sotto.
 
-![Permissions](images/permissions.png){.thumbnail}
+![Permessi](images/permissions.png){.thumbnail}
 
-Al termine dell’operazione clicca su`Conferma`{.action}e visualizzerai la seguente finestra: 
+Clicca su `Conferma`{.action} per creare l'utente OpenStack. L'identificativo e la password vengono generati automaticamente e visualizzati nello Spazio Cliente.
 
 ![User_pw](images/user_pw.png){.thumbnail}
 
-Ricordati di salvare la password ora per poterla utilizzare di nuovo per una successiva connessione. Tuttavia, se la perdi puoi sempre crearne una nuova cliccando sui tre puntini (...) nel seguente menu e selezionando`Crea una nuova password:`{.action}
+Salva la password, solo visualizzata in verde in quel momento, su un gestore di password. La password non potrà essere recuperata in seguito. Tuttavia, è sempre possibile creare una nuova password cliccando su `...`{.action} e selezionando `Rigenerare una password`{.action}.
 
 ![Generate](images/generatepw.png){.thumbnail}
 
-Una volta creato l’utente, puoi accedere all’interfaccia Horizon con queste credenziali dalla sezione `Horizon`{.action}nel menu a sinistra.
+Una volta creato l'utente OpenStack, puoi utilizzare le credenziali per accedere all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/) cliccando sul link `Horizon`{.action} nel menu di sinistra.
 
-## Rimuovi un utente OpenStack
-È possibile rimuovere un utente OpenStack direttamente dallo Spazio Cliente OVH (Cloud → Servers → Nome del progetto Public Cloud). Vai nella sezione OpenStack e clicca sull’icona a forma di cestino a destra della schermo.
+### Elimina l'utente OpenStack
 
+L'utente OpenStack viene eliminato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Users & Roles`{.action} nel menu a sinistra sotto "Project management". 
 
 ![public-cloud](images/delete.png){.thumbnail}
 
-L’utente verrà eliminato in pochi secondi.
+Clicca su `...`{.action} e seleziona `Elimina`{.action}.
 
-> [!alert]
+> [!warning]
 >
-> La rimozione di un utente è definitiva e, di conseguenza,
-> tutti i token associati non saranno più validi, anche quelli con data di scadenza non ancora superata.
+> L'eliminazione di un utente è definitiva e invaliderà tutti i token associati, inclusi quelli la cui data di scadenza non è ancora stata superata.
+> 
+
+## Per saperne di più
+
+[Introduzione a Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.

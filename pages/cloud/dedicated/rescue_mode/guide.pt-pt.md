@@ -163,7 +163,7 @@ Se já protegeu os seus dados, pode utilizar a interface Web do modo de recupera
 - **Memória**: Verifique a memória RAM instalada no servidor. (Esta operação pode levar algum tempo)
 - **Rede**: Verifique a ligação a um sistema de referência interno da OVHcloud, bem como a ligação ao seu browser.
 
-![Interface Web para o modo de segurança](images/rescue-mode-04.png) {.thumbnail}
+![Interface Web para o modo de segurança](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

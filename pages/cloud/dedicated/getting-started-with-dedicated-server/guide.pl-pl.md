@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 28/05/2021**
+**Ostatnia aktualizacja z dnia 11/03/2022**
 
 ## Wprowadzenie
 
@@ -36,9 +36,9 @@ W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obr
 
 ![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
 
-Na następnym ekranie wybierz `Zainstaluj szablon OVH`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
+Na następnym ekranie wybierz `Zainstaluj szablon OVHcloud`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
 
-Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/gb/en/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
+Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/pl/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
 
 > [!primary]
 >
@@ -109,13 +109,13 @@ Użyj poniższych przykładów, aby połączyć się z serwerem i zastąp dane i
 
 **Przykład z root:**
 
-```sh
+```bash
 ssh root@IP_Twojego_serwera
 ```
 
 **Przykład dla wstępnie skonfigurowanego użytkownika:**
 
-```sh
+```bash
 ssh root@nazwa_serwera
 ```
 
@@ -125,15 +125,17 @@ Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](
 
 Po zakończeniu instalacji otrzymasz e-mail z hasłem dostępu administratora (root). Użyj tych danych do logowania się do serwera przez RDP (**R**emote **D**esktop **P**rotocol). Po zalogowaniu Windows poprowadzi Cię przez całą początkową instalację.
 
+Sprawdź również nasz przewodnik [Skonfiguruj nową instalację Windows Server](https://docs.ovh.com/pl/dedicated/windows-first-config/).
+
 ### Restart serwera dedykowanego <a name="reboot"></a>
 
 Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
 
-```sh
+```bash
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/rebooting-your-server.png){.thumbnail}
 
@@ -145,18 +147,11 @@ Zgodnie z informacją w części „Wprowadzenie” niniejszego przewodnika, jes
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Wariant ten znajduje się w sekcji `Status usług`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Jeśli **Monitoring** jest `Aktywny`, zostaniesz powiadomiony e-mailem o nieoczekiwanym działaniu serwera. Możesz wyłączyć te wiadomości za pomocą przycisku `...`{.action}.
+Jeśli **Monitoring** jest `Aktywny`, zostaniesz powiadomiony e-mailem o nieoczekiwanym działaniu serwera. Możesz wyłączyć te wiadomości za pomocą przycisku `...`{.action}.
 
-- Jeśli włączysz opcję **Interwencje w centrum danych**, zezwolisz technikom centrum danych na sprawdzenie sprzętu na wypadek gdyby Twój serwer przestał odpowiadać na pingi.
-
-> [!warning]
->
-> Jeśli interwencje na miejscu są włączone (kursor jest wtedy na `On`{.action}, **wyłącz** opcję przed wykonaniem odpowiednich operacji na serwerze (testy sprzętowe, restart, itp.). Gdy funkcja "Monitoring" jest aktywna, otrzymasz zawsze automatyczne e-maile.
->
-
-Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](https://docs.ovh.com/pl/dedicated/monitoring-ip-ovh/).
 
 ### Konfiguracja sieci
 

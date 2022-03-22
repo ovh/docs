@@ -54,7 +54,7 @@ Dans notre exemple, le Root Device sera /dev/sda1.
 
 Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
-Une fois la modification terminée, cliquez sur `...` {.action} à droite de « Statut » dans la zone intitulée **Etat des services.** Cliquez sur `Redémarrer`{.action} pour que le netboot soit pris en compte.
+Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services.** Cliquez sur `Redémarrer`{.action} pour que le netboot soit pris en compte.
 
 ![Netboot](images/netboot_004.png){.thumbnail}
 

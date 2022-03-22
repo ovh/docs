@@ -90,4 +90,4 @@ You will find on the official rClone website a detailed documentation of the pos
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

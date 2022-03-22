@@ -43,11 +43,11 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
 
-En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
+Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
 En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
-![correo electrónico](images/img_3239.jpg){.thumbnail}
+![correo electrónico](images/img_3239.png){.thumbnail}
 
 A continuación, acceda a la lista de filtros actualmente configurados para esta dirección de correo.
 

@@ -2,9 +2,8 @@
 title: 'Zarządzanie instancjami Public Cloud'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z instancji Public Cloud'
 slug: rozpoczecie_pracy_z_instancja_public_cloud
-legacy_guide_number: g2018
 section: 'Pierwsze kroki'
-order: 2
+order: 05
 ---
 
 **Ostatnia aktualizacja: 04-12-2019**

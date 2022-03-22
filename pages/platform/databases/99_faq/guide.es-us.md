@@ -328,7 +328,7 @@ Each database instance is strongly secured through multiple actions:
 - **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default, no ACL is declared on the service meaning nobody can connect to your service until you add at least one.
 - **End-to-End encryption**: connections to databases are, by default, encrypted with TLS protocol, providing an end-to-end encryption protection. OVHcloud generates a SSL/TLS certificate for each dB instance. Once you establish an encrypted connection betwen your application and your database instance, your data flows will be encrypted.
 - **Data encryption**: data is stored on dedicated volumes that are encrypted.
-- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/es/about-us/data-sovereignty/)
+- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/es-es/about-us/data-sovereignty/)
 
 ### Who can access my database instance initially ?
 

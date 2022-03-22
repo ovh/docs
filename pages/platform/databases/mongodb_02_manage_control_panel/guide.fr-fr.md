@@ -2,7 +2,7 @@
 title: "MongoDB - Gérer un service de base de données depuis l’espace client OVHcloud (EN)"
 excerpt: Find out how to manage your databases in the OVHcloud Control Panel
 slug: mongodb/managing-service
-section: MongoDB
+section: MongoDB - Guides
 order: 2
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/'

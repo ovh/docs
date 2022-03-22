@@ -178,7 +178,7 @@ Ihre CloudDB Lösung wird automatisch an die Webhostings von OVHcloud angebunden
 
 Klicken Sie hierzu auf den Tab `Autorisierte IP`{.action} und dann auf den Button `Zugang zu OVHcloud Webhostings`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3-2022.png) {.thumbnail}
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Ihre Website mit der Datenbank verbinden
 
@@ -205,7 +205,7 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 Um die neuesten Logs Ihrer Datenbank zu überprüfen, gehen Sie auf den Tab `Logs`{.action} Ihres CloudDB Servers. Dieser Tab zeigt in Echtzeit Alarme und Fehler an.
 
-![clouddb](images/clouddb-log01.png) {.thumbnail}
+![clouddb](images/clouddb-log01.png){.thumbnail}
 
 Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diesem ein.
 
@@ -215,13 +215,13 @@ Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diese
 
 Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres CloudDB Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
 
-![clouddb](images/clouddb-log02.png) {.thumbnail}
+![clouddb](images/clouddb-log02.png){.thumbnail}
 
 Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
 
 Für FileZilla gehen Sie im Menü `File`{.action} zum Bereich `Site Manager`{.action}. Klicken Sie auf `New Site`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
 
-![clouddb](images/clouddb-log03.png) {.thumbnail}
+![clouddb](images/clouddb-log03.png){.thumbnail}
 
 Die Log-Datei mit dem Namen `stdout.log` befindet sich im Wurzelverzeichnis.
 

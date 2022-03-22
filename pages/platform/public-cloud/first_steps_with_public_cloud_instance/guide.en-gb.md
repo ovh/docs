@@ -1,131 +1,139 @@
 ---
-title: 'Managing your Public Cloud Instances'
+title: Managing your Public Cloud instances
 slug: get-started-with-a-public-cloud-instance
-excerpt: 'Find out how to manage your Public Cloud projects via the OVHcloud Control Panel'
+excerpt: 'Find out how to manage your Public Cloud instances in the OVHcloud Control Panel'
 section: Getting started
-order: 2
+order: 05
 ---
 
-**Last updated 4th December 2019**
+**Last updated 22nd March 2022**
 
 ## Objective
 
-You can manage your Public Cloud projects easily via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). You will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
+You can manage your Public Cloud instances in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-**This guide explains the first steps with a Public Cloud Instance.**
+**This guide explains the available Control Panel actions for a Public Cloud instance.**
 
 ## Requirements
 
-- A [Public Cloud instance in your Control Panel](../public-cloud-first-steps/)
-- An [SSH key](../create-ssh-keys/)
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- A [Public Cloud instance](../public-cloud-first-steps/) in your project
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-### Access the management interface for the instance
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. 
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, click in the `Instances`{.action} tab on your left.
+### Using the management interface for instances
 
-On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
-
-- The model of your instance
-- Its name and region
-- Hard disks
-- Your instance’s IP address
-- Its state
+Click on `Instances`{.action} the left-hand menu. 
 
 ![public-cloud](images/compute.png){.thumbnail}
 
-### Edit the configuration of an instance
+This page lists all your Public Cloud instances and some of their properties:
 
-In the management interface for the instance, click on the 3 dots on the right of the instance, and select `Edit`{.action}.
+- The instance ID, needed for certain API calls
+- The location of the data centre i.e. the region of the instance
+- The instance model
+- The image i.e. the OS installed on the instance
+- The IPv4 address of the instance
+- Additional volumes (disks) currently attached to the instance
+- The status of the instance, indicating whether it is in the `Activated` state
 
-![public-cloud](images/edit.png){.thumbnail}
+### Management options on the instance dashboard
 
-In the window that opens, you can:
+On the instance management page, click on the name of the instance in the table.
 
-- Rename the instance.
-- Change the instance model .
-- Reinstall the instance on another operating system (**please note that if you choose to do this, the data currently stored on the instance will be deleted**).
-- Switch from hourly billing to a fixed monthly rate (bills will then be sent on a pro rata basis, based on the day of the month that you switch).
+Select the desired option in the left-hand "Management" box.
 
-![public-cloud](images/edit1.png){.thumbnail}
-![public-cloud](images/edit2.png){.thumbnail}
-![public-cloud](images/edit3.png){.thumbnail}
+![public-cloud](images/management.png){.thumbnail}
 
-### Create a backup of an instance
+These actions are also available on the instance management page if you click on `...`{.action} in the table.
 
-You can create a backup of an instance from its admin page.  To do this, click on the 3 dots on the right of the instance and select `Create a backup`{.action}. Then you will see this page with all the necessary information: ![public-cloud](images/backup.png){.thumbnail} .
+#### Editing the configuration of the instance
 
-Then the following information is being displayed: ![public-cloud](images/backup1.png){.thumbnail} .
+Click on `Edit`{.action}.
 
-After you have confirmed the following information will be displayed: ![public-cloud](images/backup2.png){.thumbnail} .
+The new page displays a modified version of the [instance creation options](../public-cloud-first-steps/) where you can edit the following items:
 
-Once backup has been done will be able to see it in `Instance Backup`{.action} section: ![public-cloud](images/backup3.png){.thumbnail} .
+- **Renaming the instance**: You can give a name to the instance for easier identification.
+- **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
+- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](../public-cloud-first-steps/#step-3-creating-an-instance) for more information about the options.
+- **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](../change-public-cloud-billing-rate/) for detailed information).
 
-You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
+#### Creating a backup of the instance
 
-### Create an automatic backup of an instance
+Click on `Create a backup`{.action}.
 
-You can schedule an automatic backup of an instance from its admin page. To do this, click on the 3 dots on the right of it and select `Create an automatic backup`{.action}: ![public-cloud](images/backupauto.png){.thumbnail}
+Refer to our guide [Backing up an instance](../back-up-instance/) for detailed information. 
 
-Then the following page will be displayed: ![public-cloud](images/backupauto1.png){.thumbnail} .
+#### Creating an automatic backup of the instance
 
-Once you have selected the necessary information and you have clicked on `Create`{.action}, you will be redirected to the following page: ![public-cloud](images/backupauto2.png){.thumbnail} .
+Click on `Create an automatic backup`{.action}.
 
-At any time you can go to that `Workflow management`{.action} to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
+Refer to our guide [Backing up an instance](../back-up-instance/#creating-an-automated-backup-of-an-instance) for detailed information.
 
-You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
+#### Suspending the instance
 
-### Retrieve your login information
+Click on `Stop`{.action}.
 
-In the management interface for the Instance, click on `Instance details`, and check the information bellow `Login information`{.action}. There, you can retrieve the SSH commands you need to use to connect to your instance.
+This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](../shelve-or-pause-an-instance/#suspend-stop-an-instance_1) for detailed information.
 
-![public-cloud](images/instancedetails1.png){.thumbnail}
-![public-cloud](images/instancedetails.png){.thumbnail}
+Click on `Boot`{.action} to reactivate the instance.
 
-### Access the VNC console
+#### Using rescue mode
 
-Using the VNC console, you can access your instance directly. Please note, however, that you will need to have configured a password for the root user.
+Click on `Reboot in rescue mode`{.action}.
 
-To access this console, click on `VNC console`{.action} in the "Instances" dashboard.
+This will activate rescue mode for the instance. Refer to our guide [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode/) for detailed information.
 
-![public-cloud](images/vnc.png){.thumbnail}
+#### Restarting the instance
 
-The console will then be available:
+- Click on `Hot reboot (soft)`{.action} to perform a software-level reboot.
+- Click on `Cold reboot (hard)`{.action} to perform a hardware-level reboot.
+
+Confirm the reboot request in the popup window.
+
+#### Shelving the instance
+
+Click on `Suspend`{.action}.
+
+This will put the instance in the "shelved" state, here displayed as `Suspended`. Consult our guide [Shelve or pause an instance](../shelve-or-pause-an-instance/#shelve-suspend-an-instance) to learn more about the different states.
+
+Click on `Reactivate`{.action} to restore the `Activated` state.
+
+#### Reinstalling an instance
+
+Click on `Reinstall`{.action}.
+
+This action will reinstall the instance with the same operating system, provided the image is still supported.
+
+Note that reinstalling **deletes all data** currently stored on your instance.
+
+#### Deleting an instance
+
+Click on `Delete`{.action}.
+
+This action will permanently delete the instance, as well as all of the data stored on it.
+
+Confirm the request in the popup window.
+
+### Accessing the VNC console
+
+Click on `Instances`{.action} the left-hand menu. On the instance management page, click on the name of the instance in the table.
+
+Switch from the dashboard to the tab `VNC console`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-### Reboot an instance
+The VNC console provides direct access to your instance. In order for this access to work you need to configure a username and password on the instance first. 
 
-There are two different ways of rebooting an instance:
-
-- Hot reboot (software)
-- Cold reboot (hardware)
-
-In the management interface for the instance, click on the 3 dots you find on the right of the instance, and select either `Hot reboot (software)`{.action} or `Cold reboot (hardware)`{.action}.
-
-Then confirm your request in the window that opens.
-
-![public-cloud](images/reboot.png){.thumbnail}
-
-### Reinstall an instance
-
-You can reinstall an instance and keep the same operating system. **Please note that if you choose to reinstall, all of the data currently stored on your instance will be erased.**
-
-In the management interface for the Instance, click on the 3 dots you find on the right of the instance, and select `Reinstall`{.action}. Then click `Confirm`{.action} to start the process.
-
-![public-cloud](images/reinstall.png){.thumbnail}
-
-### Delete an instance
-
-You can also delete an instance. **This will permanently delete the instance, as well as all of the data stored on it.**
-
-In the management interface for the instance, click on the down-arrow icon, and select `Delete`{.action}. Then click confirm to start the process. 
-
-![public-cloud](images/delete.png){.thumbnail}
+Consult our [Getting started guide](../public-cloud-first-steps/#step-4-connecting-to-your-instance) to learn more about the necessary steps.
 
 ## Go further
 
 [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/)
+
+[Introducing Horizon](../public-cloud/horizon/)
 
 Join our community of users on <https://community.ovh.com/en/>.

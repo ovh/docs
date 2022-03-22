@@ -16,7 +16,7 @@ The [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} is a private n
 
 ## Requirements
 
-- A [Public Cloud project](https://www.ovhcloud.com/en-asia/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - An [OpenStack user account](../configure_user_access_to_horizon/#create-an-openstack-user-account)
 - Basic networking knowledge
 - Consulting the guide [Configuring the vRack on Public Cloud](../public-cloud-vrack) (to understand the different methods to manage the vRack with the Public Cloud)

@@ -163,7 +163,7 @@ Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuper
 - **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
 - **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
 
-![Interfaz web para el modo de rescate](images/rescue-mode-04.png) {.thumbnail}
+![Interfaz web para el modo de rescate](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

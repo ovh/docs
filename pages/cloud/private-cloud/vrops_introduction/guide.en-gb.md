@@ -19,7 +19,7 @@ vRealize Operations is an operations management tool that monitors physical, vir
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials.
 - A user account with access to vSphere and vROPS (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
-## Instructions
+## Instructions 
 
 ### Interface access
 
@@ -42,9 +42,7 @@ The Data Sources section lists the different spaces monitored by vROPS. By defau
 
 ![Data sources](images/en04datasources.png){.thumbnail}
 
-Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple spaces, from VMware to Azure through AWS.
-
-![adding an account](images/en04datasourcesb.png){.thumbnail}
+Clicking on `ADD ACCOUNT`{.action} gives you the ability to centralize multiple Private Clouds.
 
 ### Environments
 

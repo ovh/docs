@@ -6,7 +6,7 @@ section: 'CloudDB'
 order: 6
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 09/03/2022**
 
 ## Objectif
 
@@ -113,6 +113,7 @@ Vous trouverez dans le cadre **« Configuration générale de MySql »** la conf
 - **MaxConnexions :** Nombre de connexions simultanées autorisées sur le de bases de données.
 - **Wait_timeout** : Temps en secondes pendant lequel le serveur attend l'activité sur une connexion non interactive avant de la fermer.
 - **Event_scheduler** : Permet de déclencher l’exécution de requêtes programmées directement dans le serveur MySQL.
+- **sql_mode** : L'option **sql_mode** affecte la syntaxe SQL prise en charge, et les vérifications de validation des données effectués par MySQL/MariaDB. Uniquement disponible pour MariaDB.
 
 > [!primary]
 > Lorsque vous rencontrez une erreur sur votre site indiquant **« Too many connections»**, cela est dû au dépassement du nombre de connexions simultanées sur votre de bases de données.Vous pouvez alors augmenter la variable **« MaxConnections »** si elle n'est pas à son maximum.
@@ -120,9 +121,22 @@ Vous trouverez dans le cadre **« Configuration générale de MySql »** la conf
 
 > [!primary]
 >
-> Tmpdir :
+> <b>Tmpdir</b> :
+>
 > - /dev/shm : Le serveur de bases de données allouera la moitié de sa mémoire RAM à ce répertoire pour plus de performances.
+>
 > - /tmp : Le serveur allouera sur son disque dur un espace illimité pour ce répertoire, mais cela sera beaucoup moins performant. Nous vous conseillons d'utiliser ce répertoire uniquement pour les opérations occasionnelles lourdes.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b> :
+>
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Mode par défaut de MariaDB 10.1.
+> 
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Mode par défaut de MariaDB 10.2 et supérieur.
+>
+> Nous vous recommandons de toujours utiliser le mode par défaut, sauf si votre base de données a été mis à jour depuis une version ayant un mode par défaut différent de la version actuelle.
 >
 
 Effectuez les modifications nécessaires puis cliquez sur `Confirmer`{.action}.
@@ -155,7 +169,7 @@ Pour modifier cette version, cliquez sur `Modifier la version`{.action}.
 
 Entrez cette commande dans phpPgAdmin en cliquant sur **votre base de données**, rubrique **« SQL »**, puis en cliquant sur `Lancer`{.action} :
 
-```
+```sql
 select version();
 ```
 
@@ -163,7 +177,7 @@ select version();
 
 Il faut pour cela entrer cette commande dans phpMyAdmin, rubrique **« SQL »**, puis cliquer sur `Exécuter`{.action} :
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -230,7 +244,7 @@ Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez l
 
 ### Optimiser vos bases de données
 
- Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Ce que l'on entend par performante, c'est le fait que les informations contenues dans la base de données soient le plus rapidement retournées au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
+Il est conseillé d'entretenir sa base de données pour qu'elle soit performante. Ce que l'on entend par performante, c'est le fait que les informations contenues dans la base de données soient le plus rapidement retournées au script qui les demande. Pour cela, il faut une base de données structurée et optimisée.
 
 #### **Indexer la base de données**
 
@@ -238,8 +252,8 @@ Pour augmenter la rapidité des recherches lors d'une requête, il faut mettre u
 
 Exemple : vous faites régulièrement une recherche de personne par rapport à la ville. Indexez le champ « ville » avec la requête suivante :
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `ville` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Purger la base de données**
 
@@ -271,7 +285,7 @@ Dans vos requêtes SQL, vérifiez que vous ne sélectionnez que ce dont vous ave
 
 Exemple :
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 
@@ -284,5 +298,3 @@ Exemple :
 [Liste des adresses IP des clusters et hebergements web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
-

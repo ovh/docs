@@ -48,7 +48,7 @@ Cliquez sur les `...`{.action} à côté de l'IP Failover de votre choix, puis c
 
 Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
-![Ajouter une MAC virtuelle (2)](images/virtual_mac_03.png){.thumbnail}
+![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
 ### Déterminer l'adresse de la passerelle
 
