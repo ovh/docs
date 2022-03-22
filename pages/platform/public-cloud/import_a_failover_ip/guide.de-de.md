@@ -32,7 +32,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 Klicken Sie auf `Failover IP`{.action} im Abschnitt "Network".
 
-Klicken Sie auf `Aktionen`{.action} und wählen Sie Eine `IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die in Ihr Public Cloud Projekt importiert werden können.
+Klicken Sie auf `Aktionen`{.action} und wählen Sie `Eine IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die in Ihr Public Cloud Projekt importiert werden können.
 
 ![IP-Bereich](images/import1.png){.thumbnail}
 
