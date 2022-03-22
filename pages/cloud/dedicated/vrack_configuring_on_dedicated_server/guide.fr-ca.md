@@ -30,7 +30,7 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 
 Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et ouvrez le menu `vRack`{.action}.
 
-Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action} .
+Sélectionnez votre vRack dans la liste pour afficher la liste des services éligibles. Cliquez sur chacun des serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
