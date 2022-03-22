@@ -56,9 +56,12 @@ Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) sero
 >
 > En revanche, les évolutions suivantes ne sont possibles qu'au terme de la période d'engagement en cours sur votre offre actuelle :
 >
-> - Entreprise vers Express
-> - Express vers Express Lite
-> - Express vers Connect 
+> - Entreprise vers Express;
+> - Entreprise vers Express Lite;
+> - Entreprise vers Connect;
+> - Express vers Express Lite;
+> - Express vers Connect;
+> - Express Lite vers Connect;
 
 ## Aller plus loin
 
