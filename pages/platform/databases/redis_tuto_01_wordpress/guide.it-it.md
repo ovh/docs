@@ -19,7 +19,7 @@ Do you have a CMS website or blog, perhaps powered by WordPress? Learn how to sp
 >
 > OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
 >
-> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community at https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community of users on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ### CMS platform
