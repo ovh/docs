@@ -2,7 +2,7 @@
 title: Redis - Connectez-vous avec RedisInsight (EN)
 excerpt: Connect to your Public Cloud Databases for Redis using RedisInsight
 slug: redis/connect-redisinsight
-section: Redis
+section: Redis - Guides
 order: 303
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-redisinsight/'

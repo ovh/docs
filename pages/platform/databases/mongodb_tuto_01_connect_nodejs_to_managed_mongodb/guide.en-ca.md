@@ -12,6 +12,13 @@ order: 01
 
 In this tutorial, we will use the Node.js platform to build a **real-time chat application** that sends and shows messages to a recipient instantly without any page refresh. We will use the JavaScript framework Express.js and the Mongoose and Socket.io libraries to achieve this.
 
+> [!warning]
+>
+> OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
+>
+> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community at https://community.ovh.com/fr/. OVHcloud cannot provide you with technical support in this regard.
+>
+
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
