@@ -43,6 +43,10 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/sg/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >
 
+> [!warning]
+> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). In this case, please refer to this [guide](https://docs.ovh.com/sg/en/vps/configuring-ipv6/) for configuring ipv6 on a Kimsufi server.
+>
+
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network

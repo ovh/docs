@@ -30,7 +30,7 @@ The Netboot facility needs to be configured in the [OVHcloud Control Panel](http
 
 ### Boot your server from Network mode
 
-To start your server on a network kernel, you must first connect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+To start your server on a network kernel, you must first connect to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
 
 Go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
 
