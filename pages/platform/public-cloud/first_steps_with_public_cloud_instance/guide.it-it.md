@@ -3,8 +3,7 @@ title: 'Gestire le istanze Public Cloud'
 slug: come_utilizzare_la_tua_istanza_public_cloud
 excerpt: 'Come eseguire le prime operazioni su un’istanza Public Cloud OVHcloud'
 section: 'Per iniziare'
-legacy_guide_number: g2018
-order: 2
+order: 05
 ---
 
 **Ultimo aggiornamento 04/12/2019**

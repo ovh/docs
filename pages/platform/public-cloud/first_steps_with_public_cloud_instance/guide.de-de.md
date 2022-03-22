@@ -3,7 +3,7 @@ title: 'Die ersten Schritte mit Ihrer Public Cloud Instanz'
 excerpt: 'Erfahren Sie hier, wie Sie mit einer Public Cloud Instanz starten'
 slug: die_ersten_schritte_mit_ihrer_public_cloud_instanz
 section: 'Erste Schritte'
-legacy_guide_number: g2018
+order: 05
 ---
 
 **Letzte Aktualisierung am 04.12.2019**
