@@ -7,7 +7,7 @@ section: 'RAID e discos'
 
 **Última atualização: 24/07/2019**
 
-## Sumário
+## Objetivo
 
 Para minimizar os riscos de erro durante a substituição de um disco rígido, pedimos aos nossos clientes que nos forneçam o número de série do disco que pretendem substituir. Na maioria dos casos, pode encontrá-lo ao testar os discos rígidos individualmente graças à ferramenta Smartmontools.
 
