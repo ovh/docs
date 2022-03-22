@@ -36,6 +36,13 @@ routes:
 
 In this tutorial, we are going to show you how to connect your OVHcloud Managed Kubernetes Service to an OVHcloud Managed MySQL database.
 
+> [!warning]
+>
+> OVHcloud provides services for which you are responsible for their configuration and management. You are therefore responsible for their proper functioning.
+>
+> This tutorial is designed to help you as much as possible with common tasks. If you are having difficulty performing these actions, please contact a specialized service provider and/or discuss it with our community at https://community.ovh.com/fr/. OVHcloud cannot provide you with technical support in this regard.
+>
+
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](https://docs.ovh.com/gb/en/kubernetes/deploying-hello-world/).
@@ -109,7 +116,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 ### Authorise your OVHcloud Managed Kubernetes cluster
 
 > [!warning]
-> For security reasons the default network configuration doesn't allow any incoming connections. 
+> For security reasons the default network configuration doesn't allow any incoming connections.
 > To allow access from your OVHcloud Managed Kubernetes service to the database, cluster nodes IPs have to be authorised.
 > Adding Kubernetes cluster nodes IPs to the authorised list is not recommended on production environnment, and must only be done for testing.
 > Soon, we will write a guide on using vrack, and how to interconnect your various managed services.
@@ -158,7 +165,7 @@ Now connect to the database with the following command
 mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
 ```
 
-<pre class="console"><code>root@mysql-client:/# mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb 
+<pre class="console"><code>root@mysql-client:/# mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
 mysql: [Warning] Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 3603
