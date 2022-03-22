@@ -1,6 +1,6 @@
 ---
 title: 'Obter o número de série de um disco rígido'
-slug: obter-numero-serie-discofind-disk-serial-number
+slug: obter-numero-serie-disco
 excerpt: 'Saiba como obter o número de série de um disco rígido para proceder à sua substituição'
 section: 'RAID e discos'
 ---
