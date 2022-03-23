@@ -10,12 +10,12 @@ order: 09
 
 ## Objectif
 
-Présenter l'ensemble des outils d'administrations en plus des interfaces WEB  **Prism Central** et **Prim Element** qui sont :
+Présenter l'ensemble des outils d'administrations autre que les interfaces WEB  de **Prism Central** et **Prim Element** qui sont :
 
-* ncli accessible en local , en SSH sur **Prism Central** et **Prism Element**.
-* acli utilisable en ssh sur les **CVM** ou **Prism Element**.
-* Cmdlets pour **Powershell** sur l'environnement Microsoft.
-* Commande **restapi** à partir de l'URL de **Prism Central** soit en accès WEB soit avec la commande curl. 
+* ncli accessible sur un poste local , en SSH sur **Prism Central** et **Prism Element**.
+* acli utilisable en ssh sur les **CVM** .
+* Cmdlets pour **Powershell** .
+* Commande **restapi** à partir de l'URL de **Prism Central** ou **Prism Element**
 
 
 > [!warning]
@@ -28,32 +28,303 @@ Présenter l'ensemble des outils d'administrations en plus des interfaces WEB  *
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Certaines commandes ne sont utilisable que si vous avez accès à **Prism Central** et **Prism Element** en ssh
-
+- Certaines commandes ne sont utilisables que si vous avez accès à **Prism Central** et **Prism Element** en ssh
 
 
 
 ## Présentation des outils
 
-### Commande **ncli**
+### Présentation de **ncli**
 
-ncli est une commande que l'on trouve sur **Prism Central** et sur toutes les **CVM**, il est aussi possible de l'installer en local sur un poste Windows ou Linux.
+**ncli** se trouve sur **Prism Central** et sur toutes les **CVM** au travers d'une connexion *ssh*, il est aussi possible de l'installer en local sur un poste Windows ou Linux à partir de l'interface *web* de **Prism Central**.
 
-ncli permet de gérer le cluster Nutanix
+**ncli** permet de gérer le cluster Nutanix comme le stockage, les tâches et certaines actions sur  les machines virtuelles à l'interieur du CLUSTER.
 
-### Commande **acli**
+### Informations sur **acli**
 
-### Utilisation de Powershell
+La commmande acli est uniquement disponible sur les **CVM** elle est orientée sur la gestion des hotes des machines virtuelles , des résaux et des snapshots. 
+
+### Extensions **Powershell** 
+
+Powershell est un langage de script qui a été développé par Microsoft qui se base sur **Net.Framework**. 
+
+Il fonctionne dans les environnements **Microsoft**, **Linux** et **MacOS**. 
+
+Nutanix a rajouté des extensions qui permettent l'administration du cluster et des VM en utilisant des scripts POWERSHELL.
+
+Pour que cela fonctionne il faut acc
 
 ### Interface d'administration **restapi**
 
+Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser un api nommée  **restapi** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de script comme **python** ou **php**
+
+Pour plus de détails sur ces commande reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+
 ## En pratique
 
+### Exemples d'utilisation de **ncli**
+
+Se connecter sur en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM*
+
+```ssh nutanix@oneofcvm```
+
+ncli est utilisable en mode intéractif en lançant **ncli** sans option ou en executant **ncli** suivi des options 
+
+l'utilisation d'une commande ncli se présente comme ceci ```ncli entitée action option1="valeur" option2="valeur2``` 
+
+#### Création d'un **Storage Container** nommé newcontainer en mote interactif
+
+```bash
+ncli
+<ncli> 
+<ncli> ctr create name="NewContainer" sp-name="default-storage-pool-10728992352041"
+
+    Id                        : 0005ce15-3f3c-a8ce-3802-043f72bf18a6::2900908
+    Uuid                      : c3db4020-2a98-4636-b9eb-8ebf10a1b351
+    Name                      : Moncontainer
+    Storage Pool Id           : 0005ce15-3f3c-a8ce-3802-043f72bf18a6::9
+    Storage Pool Uuid         : 111d4e91-10df-4f6c-a774-b79b53077131
+    Free Space (Logical)      : 37.69 TiB (41,445,056,716,652 bytes)
+    Used Space (Logical)      : 0 bytes
+    Allowed Max Capacity      : 37.69 TiB (41,445,056,716,652 bytes)
+    Used by other Containers  : 260.86 GiB (280,096,141,312 bytes)
+    Explicit Reservation      : 0 bytes
+    Thick Provisioned         : 0 bytes
+    Replication Factor        : 2
+    Oplog Replication Factor  : 2
+    NFS Whitelist Inherited   : true
+    Container NFS Whitelist   : 192.168.0.77/255.255.255.255
+    VStore Name(s)            : Moncontainer
+    Random I/O Pri Order      : SSD-PCIe, SSD-SATA, DAS-SATA
+    Sequential I/O Pri Order  : SSD-PCIe, SSD-SATA, DAS-SATA
+    Compression               : off
+    Fingerprint On Write      : off
+    On-Disk Dedup             : off
+    Erasure Code              : off
+    Software Encryption       : off
+<ncli> 
+```
+
+#### Suppression du **Storage Container sans directement à partir le la **CVM**
+
+En lançant la commande ci-dessous le **Storage Container** sera supprimé sans confirmation avec une seule commande:
+
+```bash
+ncli ctr remove name="Newcontainer"
+```
+
+### Exemples concernant **acli**
+
+Se connecter en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM*
+
+```ssh nutanix@oneofcvm```
+
+acli est utilisable en mode intéractif en lançant **acli** sans option ou en executant **acli** suivi des options 
+
+l'utilisation d'une commande **acli** se présente comme ceci ```acli entité.action pourqui option1="valeur" option2="valeur2``` 
+
+#### Création d'un **Snapshot** en mode interactif
+
+```bash
+acli 
+<acropolis> vm.snapshot_create VM-TEST snapshot_name_list="Example"
+<acropolis> exit
+```
+#### Affichage et suppression d'un **Snapshot** à partir de la console de la **CVM**
+
+En mode console par défaut il demandera de confirmer lors d'un choix à faire mais il est possible de lancer la commande acli avec une confirmation automatique par défaut en ajoutant l'option -y après acli
+
+
+Saisissez ces commandes pour afficher et supprimer un snapshot avec une demande confirmation
+
+```bash
+acli acli snapshot.list
+Snapshot Name  Snapshot ID                           Creation Time                         VM Name
+Example2       fce5483f-5a9d-4b76-9ad7-48685fb4a638  Wednesday March 23 2022, 09:27:16 AM  VM-TEST
+acli snapshot.delete Example2
+Delete 1 snapshots? (yes/no)
+Delete 1 snapshots? (yes/no) yes
+Example2: pending
+Example2: complete
+```
+
+Utilisez cette syntaxe pour ne pas avoir de confirmation
+
+```bash
+acli -y snapshot.delete Example2
+Example2: pending
+Example2: complete
+```
+
+### Configuration de Powershell sous Windows et utilisation pratique
+
+#### Installation de Powershell 7 et des modules pour Nutanix
+
+Il est necessaire d'installer la derniere version de Powershell à partir ce lien [Lien vers installation Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi)
+
+Téléchargez le programme d'installation qui correspond à votre version de Windows en 32 bits ou plus généralement en 64 bits
+
+Lancez l'invite de Commande Powershell 7
+
+```powershell
+PS C:\Users\Administrator> Install-Module Nutanix.Cli
+
+Untrusted repository
+You are installing the modules from an untrusted repository. If you trust this repository, change its
+InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from
+'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):A
+PS C:\Users\Administrator> Install-module Nutanix.Prism.PS.Cmds
+PS C:\Users\Administrator> Install-module Nutanix.Prism.Common
+```
+
+#### Exemples de commandes avec Powershell pour Nutanix
+
+Importez les modules pour Powershell dans la console **PowerShell 7**
+
+```powershell
+PS C:\Users\Administrator> Import-Module Nutanix.Cli -Prefix NTNX
+PS C:\Users\Administrator> Import-Module Nutanix.Prism.Common -Prefix NTNX
+PS C:\Users\Administrator> Import-Module Nutanix.Prism.PS.Cmds -Prefix NTNX
+```
+
+Connectez vous à Prism Central 
+
+```powershell
+PS C:\Users\Administrator> Connect-NTNXPrismCentral ipprismcentral -UserName nomutilisateur -AcceptInvalidSSLCerts
+Password: *****************
+[Warning]: This Prism Central version[pc.2022.1] might not be compatible.This might cause some cmdlets to not function correctly.Please consider upgrading to pc.2020.7 or later Do you still want to continue [Y/N]?:Y
+
+Server                : ipprismcentral
+Version               : pc.2022.1
+UserName              : nomutilisateur
+AcceptInvalidSSLCerts : True
+ForcedConnection      : False
+```
+
+
+Executez la commande ci-dessous pour afficher la liste de toutes les machines virtuelles
+
+```powershell
+PS C:\Users\Administrator> Get-NTNXvm
+
+pcHostName                    : 192.168.0.222
+vmId                          : 0005ce15-3f3c-a8ce-3802-043f72bf18a6::c8ef83db-a095-49f3-9bb8-cbcdc85c3ebf
+uuid                          : c8ef83db-a095-49f3-9bb8-cbcdc85c3ebf
+powerState                    : off
+vmName                        : OVHgateway
+guestOperatingSystem          :
+ipAddresses                   : {}
+hypervisorType                : kKvm
+hostName                      :
+hostId                        :
+hostUuid                      :
+containerIds                  : {0005ce15-3f3c-a8ce-3802-043f72bf18a6::728, 0005ce15-3f3c-a8ce-3802-043f72bf18a6::728}
+containerUuids                : {98e67c38-77c4-4e05-bc20-b38bab5b28b2, 98e67c38-77c4-4e05-bc20-b38bab5b28b2}
+nutanixVirtualDisks           : {/SelfServiceContainer/.acropolis/vmdisk/a7da0957-9f90-4c07-8d12-65f851350453,
+                                /SelfServiceContainer/.acropolis/vmdisk/b308778d-594f-4903-bc30-c2a2fd45ed5d}
+nutanixVirtualDiskIds         : {0005ce15-3f3c-a8ce-3802-043f72bf18a6::a7da0957-9f90-4c07-8d12-65f851350453,
+                                0005ce15-3f3c-a8ce-3802-043f72bf18a6::b308778d-594f-4903-bc30-c2a2fd45ed5d}
+nutanixVirtualDiskUuids       : {a7da0957-9f90-4c07-8d12-65f851350453, b308778d-594f-4903-bc30-c2a2fd45ed5d}
+virtualNicIds                 : {0005ce15-3f3c-a8ce-3802-043f72bf18a6::c8ef83db-a095-49f3-9bb8-cbcdc85c3ebf:50:6b:8d:c5
+                                :d4:8a, 0005ce15-3f3c-a8ce-3802-043f72bf18a6::c8ef83db-a095-49f3-9bb8-cbcdc85c3ebf:50:6
+                                b:8d:e2:16:4e}
+virtualNicUuids               : {1e8defc6-ea18-4d67-ba41-d3ae21047940, 537632dc-4db3-483e-a7bb-500d2c1e56ba}
+clusterUuid                   : 0005ce15-3f3c-a8ce-3802-043f72bf18a6
+virtualGpuUuids               :
+memoryCapacityInBytes         : 1073741824
+memoryReservedCapacityInBytes : 0
+numVCpus                      : 1
+cpuReservedInHz               :
+numNetworkAdapters            : 2
+controllerVm                  : False
+controlDomain                 :
+vdiskNames                    : {}
+vdiskFilePaths                : {/SelfServiceContainer/.acropolis/vmdisk/a7da0957-9f90-4c07-8d12-65f851350453,
+                                /SelfServiceContainer/.acropolis/vmdisk/b308778d-594f-4903-bc30-c2a2fd45ed5d}
+diskCapacityInBytes           : 11811543040
+displayable                   : False
+acropolisVm                   : True
+protectionDomainName          :
+protectionType                :
+consistencyGroupName          :
+description                   :
+runningOnNdfs                 : True
+nonNdfsDetails                :
+fingerPrintOnWrite            :
+onDiskDedup                   :
+gpusInUse                     : False
+vmType                        :
+```
+
+Utilisez la même commande avec un | sur une autre commande powershell qui n'affiche que le nom de la VM
+
+```powershell
+PS C:\Users\Administrator> Get-NTNXvm | ft vmname
+
+vmName
+------
+vmfromrestapimajhttpd3
+WS2022TEMPLATE
+vmfromrestapiws
+NTNX-221060034-A-CVM
+VM-WS2019
+gateway368
+PFSENSE-POUR-MOVE
+VM-TESTFG
+WS2022b
+prism-central
+NutaDemo1
+NTNX-520001155-A-CVM
+NTNX-520001158-A-CVM
+MOVE
+NTNX-520000892-A-CVM
+VM-WS2022
+OVHgateway
+```
+
+Utilisez cet enchainement de commandes pour rechercher une machine virtuelle nommé VW-WS2022 et la supprimer
+
+```powershell
+PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM-WS2022" } | Remove-NTNXVM
+```
+
+### Utilisation des commandes restapi
 
 
 
-## Aller plus loin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Aller plus loin <a name="gofurther"></a>
+
+[Référence NCLI de Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Command-Ref-AOS-v5_20:man-ncli-c.html)
+
 
 [Installation des CmdLets Nutanix](https://portal.nutanix.com/page/documents/details?targetId=PS-Cmdlets-AOS-v6_0:ps-ps-cmdlets-install-r.html#:~:text=Sign%20in%20to%20the%20Nutanix,desktop%20shortcut%20NutanixCmdlets%20is%20created.) 
+
+
+
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
