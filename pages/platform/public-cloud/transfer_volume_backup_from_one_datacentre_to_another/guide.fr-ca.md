@@ -42,7 +42,7 @@ root@serveur:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+ 
 ```
 
-Lancez ensuite la commande ci-dessous pour démonter le volume à partir de son instance : :
+Lancez ensuite la commande ci-dessous pour démonter le volume à partir de son instance :
 
 ```sh 
 root@serveur:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
