@@ -16,7 +16,7 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 -   an **AI Training project** created inside a **public cloud** project
--   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/users)
 
 ## Instructions
 
@@ -62,7 +62,7 @@ Once your job is `In progress`, in the job description panel you should see the 
 If your are not authenticated as a AI Training user you should see a screen asking your username and password.
 
 > [!primary]
-> If you have never created a user for AI Training yet you can follow the instruction [here](https://docs.ovh.com/sg/en/publiccloud/ai/create-user)
+> If you have never created a user for AI Training yet you can follow the instruction [here](https://docs.ovh.com/sg/en/publiccloud/ai/users)
 
 Fill the field and click `Login`{.action}.
 

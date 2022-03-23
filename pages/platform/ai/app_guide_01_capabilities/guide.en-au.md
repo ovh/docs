@@ -122,7 +122,7 @@ API endpoints to manage your AI Apps can be found here:
 
 #### Command line interface (CLI)
 
-AI Apps is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/au/en/publiccloud/ai/training/install-client/){.external}.
+AI Apps is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/){.external}.
 
 ## Going further
 

@@ -16,7 +16,7 @@ This tutorial covers the proccess of starting a new Jupyter notebook and experim
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/us/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/us/en/publiccloud/ai/users)
 -   some knowledge about [Tensorflow](https://www.tensorflow.org/) library
 
 ## Launch and access Jupyter notebook with Tensorflow library
