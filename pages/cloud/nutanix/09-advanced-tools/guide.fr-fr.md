@@ -56,7 +56,7 @@ Pour que cela fonctionne il faut acc
 
 ### Interface d'administration **restapi**
 
-Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser un api nommée  **restapi** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de script comme **python** ou **php**
+Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser un api nommée  **restapi** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de programmation comme **python** ou **php** et même avec les commandes standards de **Powershell**.
 
 Pour plus de détails sur ces commande reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -64,7 +64,7 @@ Pour plus de détails sur ces commande reportez-vous à la section « [Aller plu
 
 ### Exemples d'utilisation de **ncli**
 
-Se connecter sur en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM*
+Se connecter en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM*
 
 ```ssh nutanix@oneofcvm```
 
@@ -289,8 +289,13 @@ Utilisez cet enchainement de commandes pour rechercher une machine virtuelle nom
 PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM-WS2022" } | Remove-NTNXVM
 ```
 
-### Utilisation des commandes restapi
+### Utilisation des commandes **Restapi**
 
+tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**
+
+#### Affichage de toutes le commandes à partir de **Prism central**
+
+Cliquer en haut à gauche
 
 
 
