@@ -6,7 +6,7 @@ section: 'Gestion de projets'
 order: 5
 ---
 
-**Dernière mise à jour le 18/03/2022**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
@@ -58,14 +58,14 @@ Remplacez "InstanceID" par l'ID de l'instance correspondante. Cet identifiant pe
 
 ### Depuis l'API OVHcloud
 
-Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/console/) selon le [guide approprié](../../api-premiers-pas/) et suivez les étapes ci-dessous.
-
-Utilisez l'appel suivant :
+Connectez-vous à l’[interface API OVHcloud](https://eu.api.ovh.com/console/) et utilisez l'appel suivant :
 
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
+
+Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/) ».
 
 ## Aller plus loin
 
