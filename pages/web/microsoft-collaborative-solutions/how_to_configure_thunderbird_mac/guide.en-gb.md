@@ -2,7 +2,7 @@
 title: 'Configuring your Exchange account in Thunderbird for macOS'
 slug: exchange-configuration-thunderbird-mac
 routes:
-    canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
+    canonical: 'https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Exchange account in Thunderbird for macOS'
 section: 'Email clients'
 order: 6
