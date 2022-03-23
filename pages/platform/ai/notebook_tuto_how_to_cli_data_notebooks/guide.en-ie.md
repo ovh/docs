@@ -14,7 +14,7 @@ This guide shows how to access Object Storage data from your [**notebooks**](htt
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ie/en/publiccloud/ai/training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/install-client/))
 
 ## Upload data to your Object Storage
 
@@ -41,7 +41,7 @@ This command can be read as "Load the container `my-dataset` from the GRA region
 with `ro` (read-only) permissions".
 
 Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
-You can read the [Getting started](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/getting-started-cli/) page to know how to find this URL.
+You can read the [Getting started](https://docs.ovh.com/ie/en/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
 

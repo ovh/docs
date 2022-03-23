@@ -20,7 +20,7 @@ For more information on how to train YOLOv5 on a custom dataset, refer to the fo
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 -   an AI Training project created inside a Public Cloud project
--   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 -   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_object_detection_yolov5.ipynb))
