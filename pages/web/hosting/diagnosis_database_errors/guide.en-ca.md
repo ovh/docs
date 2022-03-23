@@ -236,4 +236,4 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
-Join our community of users on https://https://community.ovh.com/en/
+Join our community of users on https://community.ovh.com/en/
