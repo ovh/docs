@@ -30,6 +30,14 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/solucione
 > En esta guía utilizaremos, a modo de ejemplo, el bloque de IP **46.105.135.96/28** y la interfaz de red secundaria **eth1** (dedicada al vRack).
 >
 
+### Añadir el bloque IP al vRack
+
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, abra el menú `vRack`{.action}.
+
+Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga clic en el bloque IP que quiera añadir al vRack y haga clic en el botón `Añadir`{.action}.
+
+![vrack](images/addIPblock.png){.thumbnail}
+
 ### Configurar una dirección IP útil
 
 En el caso del vRack, la primera, la penúltima y la última dirección de un bloque de IP siempre están reservadas para la dirección de red, la puerta de enlace y el *broadcast* respectivamente. Eso significa que la primera dirección útil es la segunda dirección del bloque, tal y como se muestra a continuación:
