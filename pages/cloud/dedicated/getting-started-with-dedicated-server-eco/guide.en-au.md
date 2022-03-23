@@ -198,7 +198,7 @@ For more information, please refer to our guide: [Using the IPMI with dedicated 
 
 OVHcloud dedicated servers have an access-controlled storage space as a gratuitous service option. It is best used as a complementary backup option in case the server itself suffers data loss.
 
-To activate and use the backup storage, please refer to [this guide](../services-backup-storage/).
+To activate and use the backup storage, please refer to [this guide](../using-backup-storage/).
 
 ## Go further
 
