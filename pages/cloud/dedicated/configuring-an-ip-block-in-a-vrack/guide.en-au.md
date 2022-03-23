@@ -5,7 +5,7 @@ excerpt: This guide will show you how to configure a block of public IP addresse
 section: Network Management
 ---
 
-**Last updated 24/08/2018**
+**Last updated 23rd March 2022**
 
 ## Objective
 
@@ -27,6 +27,14 @@ As well as private IP addressing, the [vRack](https://www.ovh.com.au/solutions/v
 >
 For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the vRack.
 >
+
+### Add the IP block to the vRack
+
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+
+Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
+
+![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configure a usable IP address
 
