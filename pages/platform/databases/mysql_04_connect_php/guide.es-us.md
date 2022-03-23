@@ -21,7 +21,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your MySQL instance](https://docs.ovh.com/us/es/databases/mysql/configure-mysql-instance/) to accept incoming connections
+- [Configure your MySQL instance](https://docs.ovh.com/us/es/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). *This guide was made in PHP 8.0.8*.
 
 ## Concept
@@ -48,7 +48,7 @@ Please follow the official [MySQL Drivers and Plugin](https://www.php.net/manual
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/us/es/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/us/es/hosting/cambiar-version-php-en-alojamiento-web/).
 
 We are now ready to learn how to connect to our MySQL instance.
 

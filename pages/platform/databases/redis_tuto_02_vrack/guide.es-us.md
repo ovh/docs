@@ -91,7 +91,7 @@ From the Subnetwork list, select the **10.0.0.0/16 - YYY**. The YYY value is the
 
 ![Configure options](images/redis_08_vrack_12.png){.thumbnail}
 
-The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+The final section will display a summary of your order as well as the API equivalent for creating this database instance with the [OVHcloud API](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/).
 
 ![Resume database creation](images/redis_08_vrack_13.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Wait for the **Activated** status.
 
 ### Connecting and installing the Redis client
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/us/es/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/) page.
 
 Connect to the instance via SSH:
 
