@@ -17,8 +17,8 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Requirements
 
-- [An environment that is ready to use the OpenStack API](.../prepare_the_environment_for_using_the_openstack_api/)
-- [OpenStack environment variables set](.../public-cloud/set-openstack-environment-variables/)
+- [An environment that is ready to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack environment variables set](../set-openstack-environment-variables/)
 
 ## Instructions
 

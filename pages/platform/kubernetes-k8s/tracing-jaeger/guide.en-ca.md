@@ -461,6 +461,7 @@ Open your browser and go back to the Jaeger interface (http://$JAEGER_URL:16686)
 ![Jaeger query services](images/jaeger-services.png)
 
 You should now see two available services:
+
 - go-what-is-my-pod-with-tracing
 - jaeger-query
 

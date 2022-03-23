@@ -14,7 +14,7 @@ This guide covers the submission of [**notebooks**](https://docs.ovh.com/au/en/p
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/au/en/publiccloud/ai/cli/install-client/))
 
 ## Instructions
 
@@ -161,7 +161,7 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
 
-Learn how to share your notebooks with other people [here](https://docs.ovh.com/au/en/publiccloud/ai/notebooks/sharing-notebooks/).
+Learn how to share your notebooks with other people [here](https://docs.ovh.com/au/en/publiccloud/ai/cli/sharing-notebooks/).
 
 ## Feedback
 

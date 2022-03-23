@@ -45,7 +45,7 @@ Once **AI Training** is activated you land on the **dashboard** service with sev
 -   Jobs: list of active jobs
 
 > [!primary]
-> You don't need a user to launch a new job from the OVHcloud manager but you will need one later if you want to use the CLI or access your jobs urls. Instructions for creating new users are described [here](https://docs.ovh.com/gb/en/publiccloud/ai/create-user).
+> You don't need a user to launch a new job from the OVHcloud manager but you will need one later if you want to use the CLI or access your jobs urls. Instructions for creating new users are described [here](https://docs.ovh.com/gb/en/publiccloud/ai/users).
 
 ### Step 3 - Starting a job submission
 

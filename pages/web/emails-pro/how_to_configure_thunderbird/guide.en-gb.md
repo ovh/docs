@@ -2,7 +2,7 @@
 title: 'Configuring an Email Pro address on Thunderbird for Windows'
 slug: configure-emailpro-for-thunderbird-windows
 routes:
-    canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
+    canonical: 'https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 section: 'Email client configuration'
 order: 5

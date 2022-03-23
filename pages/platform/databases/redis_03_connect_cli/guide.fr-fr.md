@@ -40,7 +40,7 @@ It's a Client-Server interaction.
 
 You first need to install a software to interact with your Redis instance remotely. This official software can be installed on various supports like your own computer, a VPS, a virtual machine... The only rule is to be able to reach the public network (Internet) and have sufficient privilege to install it.
 
-In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://https://redis.io/download>.
+In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://redis.io/download>.
 
 Once installed, you need to catch your IP address in order to authorize connection form this specific client.
 

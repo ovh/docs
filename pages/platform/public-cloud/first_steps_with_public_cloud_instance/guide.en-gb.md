@@ -134,6 +134,6 @@ Consult our [Getting started guide](../public-cloud-first-steps/#step-4-connecti
 
 [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/)
 
-[Introducing Horizon](../public-cloud/horizon/)
+[Introducing Horizon](../horizon/)
 
 Join our community of users on <https://community.ovh.com/en/>.
