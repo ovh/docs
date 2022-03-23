@@ -51,14 +51,14 @@ Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contien
 
 Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
 
-- [dallo Spazio Cliente OVH](#viacontrolpanel)
+- [dallo Spazio Cliente OVHcloud](#viacontrolpanel)
 - [via API](#viaapi)
 
-#### Dallo Spazio Cliente OVH <a name="viacontrolpanel"></a>
+#### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action}. Seleziona il tuo servizio cliccando sul `VPS`{.action} nel menu a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}:
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, vai alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server in `Server Privati Virtuali`{.action}.
 
-nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
+Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
