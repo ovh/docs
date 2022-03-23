@@ -4,7 +4,7 @@ slug: object-storage-standard-s3-and-swift-rest-api-compatibility
 section: Object Storage Standard (Swift)
 order: 030
 ---
-**Last updated 27th October 2021**
+**Last updated 23rd March 2022**
 
 ## Objective
 
@@ -26,7 +26,7 @@ This guide lists the main features of Amazon S3 that are supported.
 | Abort Multipart Upload | **Yes** |
 | List Parts | **Yes** |
 | GET Object ACL | **Yes** |
-| PUT Object ACL | **Yes** |
+| PUT Object ACL | No |
 | PUT Bucket | **Yes** |
 | GET Bucket List Objects | **Yes** |
 | HEAD Bucket | **Yes** |
