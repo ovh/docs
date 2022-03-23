@@ -5,7 +5,7 @@ section: Object Storage Standard (Swift)
 order: 030
 ---
 
-**Dernière mise à jour le 27/10/2021**
+**Dernière mise à jour le 23/03/2022**
 
 ## Objectif
 
@@ -27,7 +27,7 @@ Ce guide énumère les fonctionnalités principales d'Amazon S3 supportées.
 | Abort Multipart Upload | **Yes** |
 | List Parts | **Yes** |
 | GET Object ACL | **Yes** |
-| PUT Object ACL | **Yes** |
+| PUT Object ACL | No |
 | PUT Bucket | **Yes** |
 | GET Bucket List Objects | **Yes** |
 | HEAD Bucket | **Yes** |
