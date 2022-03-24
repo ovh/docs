@@ -5,7 +5,7 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 section: Getting started
 ---
 
-**Last updated 24nd March 2022**
+**Last updated 24th March 2022**
 
 ## Before you begin
 
