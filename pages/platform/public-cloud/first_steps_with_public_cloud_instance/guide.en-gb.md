@@ -128,12 +128,12 @@ Switch from the dashboard to the tab `VNC console`{.action}.
 
 The VNC console provides direct access to your instance. In order for this access to work you need to configure a username and password on the instance first. 
 
-Consult our [Getting started guide](../public-cloud-first-steps/#step-4-connecting-to-your-instance) to learn more about the necessary steps.
+Consult our [Getting started guide](../public-cloud-first-steps/#connect-to-instance) to learn more about the necessary steps.
 
 ## Go further
 
 [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/)
 
-[Introducing Horizon](../public-cloud/horizon/)
+[Introducing Horizon](../horizon/)
 
 Join our community of users on <https://community.ovh.com/en/>.
