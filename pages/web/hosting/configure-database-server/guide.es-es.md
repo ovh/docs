@@ -135,9 +135,11 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 >
 > <b>sql_mode</b>:
 >
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.1.
+> &emsp;&emsp;Modo por defecto de MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
 > 
-> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores.
+> &emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
 > Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >
