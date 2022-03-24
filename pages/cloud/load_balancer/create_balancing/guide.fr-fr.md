@@ -5,7 +5,7 @@ excerpt: Découvrez les différents modes de répartition de charge du Load Bala
 section: Configuration
 ---
 
-**Dernière mise à jour le 06/02/2022**
+**Dernière mise à jour le 24/03/2022**
 
 ## Objectif
 
@@ -33,11 +33,11 @@ Pour connaître les différentes parties élémentaires du service OVHcloud Load
 |LeastConn|Sélectionne le serveur qui a le moins de connexions actives, c'est le paramètre recommandé pour de longues sessions avec peu de trafic. L'algorithme *RoundRobin* est appliqué sur les groupes de serveurs qui ont le même nombre de connexion actives.|
 |RoundRobin|Sélectionne les serveurs les uns après les autres pour chaque connexion, **c'est l'algorithme par défaut.**|
 |Source|Cet algorithme effectue une fonction de *hashage* (hash) sur l'adresse IP source, puis divise le résultat par le nombre de serveurs actuellement actifs. La même adresse IP source sera alors toujours redirigée vers le même serveur, tant que celui-ci reste actif.|
-|URI|Cet algorithme effectue une fonction de *hashage* (hash) sur une partie, ou sur l'URI entière, puis divise le résultat par le nombre de serveurs actuellement actifs. Le même URI sera alors toujours redirigée vers le même serveur tant, que celui-ci reste actif.|
+|URI|Cet algorithme effectue une fonction de *hashage* (hash) sur une partie, ou sur l'URI entière, puis divise le résultat par le nombre de serveurs actuellement actifs. La même URI sera alors toujours redirigée vers le même serveur tant que celui-ci reste actif.|
 
 ### Modifier le mode de répartition de charge d'une ferme via l'espace client
 
-- Dans la section `Fermes de serveur`{.action} (1) vous verrez les fermes actuellement créées. Il vous suffit d'éditer l'une d'entre elles en cliquant sur les trois points à droite (2) puis `Modifier`{.action} :
+Dans la section `Fermes de serveur`{.action} vous verrez les fermes actuellement créées. Il vous suffit d'éditer l'une d'entre elles en cliquant sur les trois points à droite puis `Modifier`{.action} :
 
 ![Modification d'une ferme](images/server_cluster_change.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Une fois le mode de répartition souhaité sélectionné, cliquez sur `Mettre à
 
 ![Appliquer la configuration](images/apply_config.png){.thumbnail}
 
-### Modifier le mode de répartition de charge d'une ferme deouis l'API OVHcloud
+### Modifier le mode de répartition de charge d'une ferme depuis l'API OVHcloud
 
 La modification des paramètres de mode de répartition s'effectue en éditant ceux de la ferme de serveurs.
 
