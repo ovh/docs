@@ -291,11 +291,301 @@ PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM
 
 ### Utilisation des commandes **Restapi**
 
-tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**
+tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**, certaines commandes necessiterons d'autres outils supplémentaires disponible dans l'environnment Linux.
 
 #### Affichage de toutes le commandes à partir de **Prism central**
 
-Cliquer en haut à gauche
+Il est possible d'avoir la liste des commandes **REST Api** à partir de **Prism Central**
+
+Dans **Prism Central** en haut à droite cliquez sur `Username`{.action} et dans le menu cliquez sur `REST API Explorer`{.action}
+
+![Display RESTAPI commands 01](images/Display-restapicommands-01.png){.thumbnail}
+
+à gauche apparait la famille de commandes 
+
+Cliquez sur `List operations`{.action} à gauche d'une des familles de commandes pour faire apparaitre toutes les commandes possibles.  
+
+![Display RESTAPI commands 02](images/Display-restapicommands-02.png){.thumbnail}
+
+Cliquez sur `Expand operations`{.action} pour faire lister la syntaxe d'une commande en particulier.
+
+![Display RESTAPI commands 03](images/Display-restapicommands-03.png){.thumbnail}
+
+![Display RESTAPI commands 04](images/Display-restapicommands-04.png){.thumbnail}
+
+#### Divers exemples simples
+
+Se connecter en SSH sur une VM linux du cluster qui a **curl** et **jq** d'installé
+
+Pour que ces exemples fonctionnent remplacez prismcentralip par l'adresse IP ou le nom FQDN de **Prism central** , primcentraluser par l'utilisateur de **Prism central** et prismcentralpassword par le mot de passe de l'utilisateur de **Prism central**
+
+##### Afficher la liste des images disponibles pour les déploiements de machines virtuelles.
+
+Executez cette commande après avoir remplacé "prismcenraluser:password" par le nom d'utilisateur et le mot de passe 
+
+```bash
+curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/images/list" | jq
+```
+
+Cette commande a généré un fichier au format json lisible grace à la commande **jq** qui contient la liste des images et de quelques informations utiles que l'on pourrait avoir besoin.
+
+```json
+{
+  "api_version": "3.1",
+  "metadata": {
+    "total_matches": 14,
+    "kind": "image",
+    "length": 14,
+    "offset": 0
+  },
+  "entities": [
+    {
+      "status": {
+        "state": "COMPLETE",
+        "execution_context": {
+          "task_uuid": [
+            "3a4315c8-0f9e-4182-be89-9083371ef40e"
+          ]
+        },
+        "name": "ubuntu-20.04.3-live-server-amd64.iso",
+        "resources": {
+          "retrieval_uri_list": [
+            "https://127.0.0.1:9440/api/nutanix/v3/images/4a48f395-80f3-4afe-a3e4-91700db88901/file"
+          ],
+          "current_cluster_reference_list": [
+            {
+              "kind": "cluster",
+              "uuid": "0005ce15-3f3c-a8ce-3802-043f72bf18a6"
+            }
+          ],
+          "architecture": "X86_64",
+          "size_bytes": 1261371392,
+          "image_type": "ISO_IMAGE",
+          "source_uri": "file://4a48f395-80f3-4afe-a3e4-91700db88901"
+        },
+        "description": "Ubuntu Server 20.04"
+      },
+      "spec": {
+        "name": "ubuntu-20.04.3-live-server-amd64.iso",
+        "resources": {
+          "image_type": "ISO_IMAGE",
+          "source_uri": "file://4a48f395-80f3-4afe-a3e4-91700db88901",
+          "architecture": "X86_64"
+        },
+        "description": "Ubuntu Server 20.04"
+      },
+      "metadata": {
+        "last_update_time": "2021-10-12T13:38:55Z",
+        "kind": "image",
+        "uuid": "4a48f395-80f3-4afe-a3e4-91700db88901",
+        "creation_time": "2021-10-12T13:38:49Z",
+        "spec_version": 2,
+        "spec_hash": "00000000000000000000000000000000000000000000000000",
+        "categories_mapping": {},
+        "owner_reference": {
+          "kind": "user",
+          "uuid": "00000000-0000-0000-0000-000000000000",
+          "name": "admin"
+        },
+        "categories": {}
+      }
+    },
+```
+
+##### Affichage de la liste des machines virtuelles
+
+Executez cette commande pour afficher la liste des machines virtuelles
+
+```bash
+curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/vms/list" | jq 
+```
+Le résultat est toujours au format JSON
+
+Ci dessous une partie du fichier généré contenant l'UUID de la machine virtuelle qui est en fait sont identifiant unique pour Nutanix, il existe un UUID pour toutes les éléments de Nutanix (VM, Vdisks, images etc...)
+
+"kind:" "vm" correspond au type de l'objet et uuid est son uuid
+
+```json
+        "kind": "vm",
+        "uuid": "46574b90-333b-4cd9-a737-3af0f8e242b7",
+```
+
+##### Affichage des informations d'une machine virtuelle à partir de son uuid
+
+Lancez cette commande en réutisant l'UUID de l'exemple précedent
+
+```bash
+curl -k -X GET --header "Accept: application/json" - u "prismcentraluser:prismcentralpassword" "https://prismcentralip:9440/api/nutanix/v3/vms/46574b90-333b-4cd9-a737-3af0f8e242b7" | jq
+```
+
+##### Affichage la liste des réseaux
+
+Lancez cette commande 
+
+```bash
+ curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/subnets/list" | jq
+```
+ #### Exemples avancées
+
+ En plus de pouvoir afficher des informations il possible aussi d'interagir avec Nutanix pour créer des éléments nous allons voir comment créer deux machines virtuelles de manière automatisé l'une sous Linux , l'autre sous Windows.
+
+##### Création d'une machine virtuelle sous Linux
+
+Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml.
+
+
+En ligne de commande créez un mot de passe et le transformer au format SHA-512 ce mot de passe servira dans le fichier au format yaml
+
+```bash
+mkpasswd --method=SHA-512 -s
+Password:
+$6$q0hSUaxUNIzgF$4R6hbeVF7Nqz3JMUSI47vINSmwt3XufAIC1lvu15twR/8HMkuRIGd7ZNNLMDGYYGyrgZXwgI7q2BP2rCAv9BU1
+```
+
+Editer un fichier au format yaml qui contiendra ces informations, Remplacez <RSAKEYFORLOGING> par un clé RSA qui permettra de se connecter avec le compte userlinux en ssh. Remplacez <PASSWORDGENERATEDBYMKPASSWORD> par le mot de passe au format SHA-512 créé
+
+editer le fichier ```cloud-config.yaml``` 
+
+```yaml
+#cloud-config
+hostname: vm-fromcloudinit
+fqdn: vm-fromcloudinit.localdomain
+users:
+  - name: userlinux
+    ssh-authorized-keys:
+      - ssh-rsa <RSAKEYFORLOGIN>
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    groups: sudo
+    shell: /bin/bash
+    lock_passwd: false
+    passwd: <PASSWORDGENERATEDBYMKPASSWD>
+
+package_upgrade: true
+
+packages:
+  - nginx
+
+runcmd:
+  - sleep 60 & reboot
+```
+
+Le fichier au format yaml est créé il permettra l'installation d'une machine virtuelle sous LINUX avec le serveur WEB **NGINX** 
+
+Nous allons transformer le fichier yaml au format MIME64 pour pouvoir l'intégrer ultérieurement dans un fichier JSON pour l'installation de la VM
+
+Lancez cette commande pour stocker temporairement les données générées au format mime et l'afficher à l'écran
+
+```bash
+USERDATA=$(base64 -w 0 cloud-config.yaml)
+echo $USERDATA
+```
+
+
+
+Editez le fichier vmlinux.json qui permet de créer une machine virtuelle à partir d'une image LINUX pour CLOUDINIT qui est référencé dans le fichier avec son UUID.
+
+et remplacer **<MIME64FORMATEDYAMLFILE>** par le contenu de la variable **$USERDATA**
+
+```json
+{
+	"spec":{
+		"name":"vmlinuxfromrestapi",
+		"resources":{
+			"power_state":"ON",
+			"num_vcpus_per_socket":1,
+			"num_sockets":1,
+			"memory_size_mib":1024,
+			"disk_list":[{
+				"device_properties":{
+					"device_type":"DISK",
+					"disk_address": {
+						"device_index": 0,
+						"adapter_type": "SCSI"
+					}
+				},
+				"data_source_reference": {
+					"kind": "image",
+					"uuid": "925b8579-0a8d-4329-a5bd-cf2d6a1d66bc"
+				}
+			},
+			{
+				"device_properties":{
+					"device_type":"CDROM",
+					"disk_address": {
+                                                "device_index": 0,
+                                                "adapter_type": "IDE"
+					}
+				}
+			}],
+			"nic_list":[{
+				"nic_type":"NORMAL_NIC",
+				"is_connected":true,
+				"ip_endpoint_list":[{
+					"ip_type":"DHCP"
+				}],
+				"subnet_reference":{
+					"kind":"subnet",
+					"name":"base",
+					"uuid":"ae8d3cdb-c52c-4ab7-a7b3-ea4ea022adea"
+				}
+			}],
+			"guest_tools":{
+				"nutanix_guest_tools":{
+					"state":"ENABLED",
+					"iso_mount_state":"MOUNTED"
+				}
+			},
+			"guest_customization": {
+				"cloud_init": {
+					"user_data": "<MIME64FORMATEDYAMLFILE>"
+				},
+				"is_overridable": false
+			}
+		},
+		"cluster_reference":{
+			"kind":"cluster",
+			"name":"Cluster_368",
+			"uuid":"0005ce15-3f3c-a8ce-3802-043f72bf18a6"
+		}
+	},
+	"api_version":"3.1.0",
+	"metadata":{
+		"kind":"vm"
+	}
+}
+```
+
+Lancez cette commande 
+
+```bash
+curl -k -H Accept:application/json -H Content-Type:application/json -u "prismcentraluser:prismcentralpassword"  -X POST "https://prismcentralip:9440/api/nutanix/v3/vms" -d @vmlinux.json | jq .
+```
+
+La nouvelle VM va apparaitre dans **Prism Central** elle aura été mise à jours et NGINX sera installé
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -328,8 +618,7 @@ Cliquer en haut à gauche
 
 [Installation des CmdLets Nutanix](https://portal.nutanix.com/page/documents/details?targetId=PS-Cmdlets-AOS-v6_0:ps-ps-cmdlets-install-r.html#:~:text=Sign%20in%20to%20the%20Nutanix,desktop%20shortcut%20NutanixCmdlets%20is%20created.) 
 
+[Réferences sur les outils de développements autour de Nutanix](https://www.nutanix.dev)
 
-
-
-
+,
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
