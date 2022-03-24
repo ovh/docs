@@ -15,7 +15,6 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 
 **Ce guide a pour but de vous aider à créer un service HTTP/2 avec l'offre Load Balancer OVHcloud. Nous allons ici configurer ce service pour répartir la charge sur plusieurs serveurs répondant en HTTP/2.**
 
-
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/){.external} (Pack 2 minimum).
@@ -27,7 +26,7 @@ ALPN (Application-Layer Protocol Negotiation) est une extension TLS qui permet �
 
 > [!warning]
 >
-> L'ordre de création des éléments est important : les routes doivent être configurées avant de pouvoir leur attacher des règles.
+> L'ordre de création des éléments est important : les routes doivent être configurées **avant** de pouvoir leur attacher des règles.
 > 
 
 ### Ajouter une route
