@@ -55,7 +55,7 @@ The following table shows the available roles for environment types.
 | Contributor | Yes | Yes | Yes | Yes | No | No |
 | Admin| Yes | Yes | Yes | Yes | Yes | Yes |
 
-To customize who can use SSH, [set the access key](../configuration-app/app-reference#access) in your `platform.app.yaml` file.
+To customize who can use SSH, [set the access key](../configuration-app/access/) in your `platform.app.yaml` file.
 
 ## Manage users
 
