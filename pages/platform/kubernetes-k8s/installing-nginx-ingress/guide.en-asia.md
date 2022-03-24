@@ -6,7 +6,7 @@ section: Traffic management
 order: 0
 ---
 
-**Last updated 1st March 2022.**
+**Last updated 24th March 2022**
 
 <style>
  pre {
@@ -123,6 +123,20 @@ ingress-nginx-controller   LoadBalancer   10.3.232.157   51.178.69.190   80:3090
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
+Enter the following command to retrieve it:
+
+```bash
+export INGRESS_URL=$(kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+```
+
+You should have a content like this:
+
+<pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+echo Ingress URL: http://$INGRESS_URL/
+Ingress URL: http://135.125.84.16/
+</code></pre>
+
+
 In order to test your `nginx-ingress`, you can for example [install a Wordpress](../installing-wordpress) on your cluster, and then create a YAML file for the Ingress that uses the controller:
 
 ```
@@ -161,6 +175,6 @@ And the Ingress is created.
 ingress.extensions/ingress created
 </code></pre>
 
-So now if you point your browser to `http://[YOUR_LOAD_BALANCER_IP]`, you will see your Wordpress:
+So now if you point your browser to `http://$INGRESS_URL/`, you will see your Wordpress:
 
 ![Wordpress using Ingress](images/installing-ingress-01.png){.thumbnail}
