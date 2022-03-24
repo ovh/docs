@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Última actualización: 09/03/2022**
+**Última actualización: 29/03/2022**
 
 ## Objetivo
 
@@ -115,7 +115,7 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 - **MaxConnexions**: Número de conexiones simultáneas autorizadas en el CloudDB.
 - **Wait_timeout**: Tiempo (en segundos) que el servidor espera actividad en una conexión no interactiva antes de cerrarla.
 - **Event_scheduler**: Permite activar la ejecución de consultas programadas directamente en el servidor MySQL.
-- **sql_mode**: La opción **sql_mode** afecta a la sintaxis SQL y las verificaciones de validación de datos realizadas por MySQL o MariaDB. Solo disponible para MariaDB.
+- **sql_mode**: La opción **sql_mode** afecta a la sintaxis SQL y las verificaciones de validación de datos realizadas por MySQL o MariaDB.
 
 > [!primary]
 > Cuando se produce un error en el sitio web que indica **"Too many connections"**, se debe a que se han superado las conexiones simultáneas a su base de datos.
@@ -140,6 +140,12 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 > 
 > &emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores:
 > <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Modo por defecto de MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Modo por defecto de MySQL 5.7 y versiones superiores:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
 > Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >
