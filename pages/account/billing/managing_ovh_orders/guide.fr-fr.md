@@ -1,7 +1,7 @@
 ---
-title: 'Gérer mes commandes OVHcloud'
+title: Gérer mes commandes OVHcloud
 slug: gerer-ses-commandes-ovh
-excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
+excerpt: Découvrez comment gérer vos commandes chez OVHcloud
 section: Facturation
 ---
 
@@ -61,7 +61,7 @@ Voici les différents états de commande :
 
 |État|Explication|
 |---|---|
-|Paiement non reçu|Cet état correspond à un bon de commande qui n'a pas reçu de paiement. Le règlement n'est pas obligatoire, la commande ne sera pas finalisée et disparaîtra à sa date d'expiration.|
+|Paiement non reçu|Cet état correspond à un bon de commande qui n'a pas encore reçu de paiement. Sans règlement de votre part, la commande expirera et sera annulée à la date indiquée sur le bon de commande. Si passé ce délai, vous souhaitez finalement réaliser cet achat, il vous faudra simplement repasser commande|
 |Validation|Votre commande est en cours de vérification manuelle par nos services (jours ouvrés uniquement). La validation sera faite une fois cette étape finalisée. En cas d'impossibilité de finaliser l'opération, un e-mail vous sera envoyé pour fournir des documents justificatifs.|
 |Livraison en cours|La livraison de votre service est en cours, il vous suffit de patienter. Selon le service, la livraison peut s'effectuer en quelques minutes ou quelques heures.|
 |Finalisée|Vous avez reçu votre service et les accès vous ont été transmis par e-mail (si un accès est requis).|
@@ -93,8 +93,10 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 >
 > Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pourrez donc l'utiliser pour des renouvellements ni si votre [compte client OVHcloud](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte) est d'un autre type que *Particulier*.
 >
+> De plus, le droit de rétractation ne s'applique pas aux commandes non payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire
+>
 
-Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : 
+Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
 
 * Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
 * Sélectionnez `Annuler la commande`{.action}.
