@@ -71,9 +71,11 @@ Dans la fenêtre suivante, cliquez sur `Valider`{.action}.
 
 ![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
 
-Vous obtiendrez le résultat suivant :
+Sous quelques minutes (pensez à rafraîchir votre navigateur), vous obtiendrez le résultat suivant :
 
 ![multisite_modified](images/multisite_modified.png){.thumbnail}
+
+Vérifiez enfin que votre site s'affiche correctement. Dans le cas contraire, redémarrez votre appareil et videz le cache de votre navigateur si nécessaire.
 
 ## Aller plus loin <a name="gofurther"></a>
 
