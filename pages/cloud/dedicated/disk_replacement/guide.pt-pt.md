@@ -15,7 +15,7 @@ Se verificar que um disco tem problemas ou que o nosso sistema lhe enviou uma no
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços OVH são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
+> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 > 
 > Este guia fornece as instruções necessárias para usar as funcionalidades básicas de um servidor dedicado. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste guia intitulada: «Quer saber mais?»
 > 
@@ -23,7 +23,7 @@ Se verificar que um disco tem problemas ou que o nosso sistema lhe enviou uma no
 
 ## Requisitos
 
-- Estar conectado em SSH ao [servidor dedicado OVH](https://www.ovh.pt/servidores_dedicados/){.external} com acesso *root* (Linux).
+- Estar conectado em SSH ao [servidor dedicado OVHcloud](https://www.ovh.pt/servidores_dedicados/){.external} com acesso *root* (Linux).
 
 
 ## Instruções
@@ -45,7 +45,7 @@ Sempre que receber um alerta por e-mail ou que constate uma falha, é indispens�
 
 #### Servidor com recurso a um RAID por software
 
-Se possui um servidor que recorre a RAID por software, consulte o guia [«RAID por software» - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} para encontrar os discos instalados no seu servidor.
+Se possui um servidor que recorre a RAID por software, consulte o guia [«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/) para encontrar os discos instalados no seu servidor.
 
 Quando tiver encontrado o caminho de acesso aos discos, pode testá-los da seguinte forma através do comando `smartctl`:
 
@@ -121,7 +121,7 @@ O número do RAID deve ser especificado (/dev/sg0 = 1.º RAID, /dev/sg1 = 2.º R
 
 #### Servidor com um disco NVMe
 
-No caso de um disco NVMe, será preciso pôr o servidor em modo [« Recue-pro »](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}, no qual a ferramenta **nvme-cli** está instalada de forma padrão.
+No caso de um disco NVMe, será preciso pôr o servidor em modo [« Rescue-pro »](https://docs.ovh.com/pt/dedicated/rescue_mode/), no qual a ferramenta **nvme-cli** está instalada de forma padrão.
 
 Então será necessário utilizar o comando `nvme list` para obter os números de série dos discos:
 
@@ -138,9 +138,9 @@ root@rescue:~# nvme list
 
 #### Substituir o disco a frio (desligando o servidor)
 
-Para pedir a substituição de um disco, basta criar um ticket junto do serviço de apoio técnico, a partir da [Área de Cliente OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. De modo a acelerar o processo, é conveniente fornecer os elementos ligados aos testes. Aqui fica uma lista do que é preciso:
+Para pedir a substituição de um disco, basta criar um ticket junto do serviço de apoio técnico, a partir da [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. De modo a acelerar o processo, é conveniente fornecer os elementos ligados aos testes. Aqui fica uma lista do que é preciso:
 
-- **O número de série do disco a substituir, bem como de todos os outros discos sem problemas**. Para obter o número de série do disco a substituir, consulte [este guia - EN](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external}. Se por alguma razão não conseguir obter o número de série do disco, queira mencioná-lo no ticket e comunicar-nos o número de série do(s) disco(s) a não substituir. 
+- **O número de série do disco a substituir, bem como de todos os outros discos sem problemas**. Para obter o número de série do disco a substituir, consulte [este guia](https://docs.ovh.com/pt/dedicated/obter-numero-serie-disco/). Se por alguma razão não conseguir obter o número de série do disco, queira mencioná-lo no ticket e comunicar-nos o número de série do(s) disco(s) a não substituir. 
 
 Como já indicado, os números de todos os discos são importantes. Eles serão transmitidos ao técnico no datacenter e evitarão a ocorrência de erros durante a operação.
 
@@ -199,16 +199,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Se possui um servidor em RAID por hardware, o RAID vai restabelecer-se de forma autónoma. Atenção: o *auto-rebuild*, ativado de forma padrão, não deve ter sido desativado por si. O processo de ressincronização pode levar alguns minutos e prejudicar o desempenho de leitura/escrita do RAID.
 
-Se possui um servidor em RAID por software, convém que execute manualmente a ressincronização dos discos. Para isso, consulte a documentação associada ao [«RAID por software» - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}.
+Se possui um servidor em RAID por software, convém que execute manualmente a ressincronização dos discos. Para isso, consulte a documentação associada ao [«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/).
 
 
 ## Quer saber mais?
 
-[«RAID por software» - EN](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+[«RAID por software»](https://docs.ovh.com/pt/dedicated/raid-soft/)
 
 [«RAID por hardware» - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
 
-[« Recue-pro »](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}
+[Modo rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/)
 
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

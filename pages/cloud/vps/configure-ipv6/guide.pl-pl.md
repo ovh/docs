@@ -56,9 +56,9 @@ Pierwszy etap polega na pobraniu adresu IPv6 oraz bramy IPv6 przypisanych do Two
 
 #### W panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Bare Metal Cloud`{.action}. Kliknij `VPS`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni serwer VPS. Następnie przejdź do sekcji `Strona główna`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w `Prywatne serwery wirtualne`{.action}.
 
-Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 „[Konfiguracja adresu IPv6](#applyipv6)”.
+Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 “[Konfiguracja adresu IPv6](#applyipv6)”.
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Po pobraniu adresów przejdź do etapu 2 "[Zastosuj konfigurację IPv6](#applyip
 
 ### Etap 2: zastosuj konfigurację IPv6 <a name="applyipv6"></a>
 
-Kiedy posiadasz już informacje niezbędne do konfiguracji IPv6, zaloguj się przez SSH do VPS. Więcej informacji na temat SSH znajdziesz w naszym przewodniku „[Wprowadzenie do SSH](../../dedicated/ssh-wprowadzenie/){.external}”.
+Kiedy posiadasz już informacje niezbędne do konfiguracji IPv6, zaloguj się przez SSH do VPS. Więcej informacji na temat SSH znajdziesz w naszym przewodniku “[Wprowadzenie do SSH](../../dedicated/ssh-wprowadzenie/){.external}”.
 
 Istnieje kilka metod konfiguracji IPv6. W zależności od Twojego przypadku przejdź do metody, której chcesz użyć.
 
