@@ -28,6 +28,14 @@ As well as private IP addressing, the [vRack](https://www.ovh.ie/solutions/vrack
 For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the vRack.
 >
 
+### Add the IP block to the vRack
+
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+
+Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
+
+![vrack](images/addIPblock.png){.thumbnail}
+
 ### Configure a usable IP address
 
 For vRack purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:

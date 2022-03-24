@@ -176,7 +176,7 @@ Wait for the **Activated** status.
 
 ### Connecting and installing the Redis client
 
-We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/pl/public-cloud/public-cloud-first-steps/) page.
+We assume that you have an already set SSH key on your project. For more details, read the [Creating and connecting to your first Public Cloud instance](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/) page.
 
 Connect to the instance via SSH:
 

@@ -119,7 +119,7 @@ Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, et
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Recue-pro »](../ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Rescue-pro »](../ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 

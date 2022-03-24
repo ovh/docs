@@ -5,9 +5,9 @@ excerpt: 'Hier erfahren Sie, wie Sie die Seriennummer einer Festplatte ermitteln
 section: 'Diagnose & Rescue Modus'
 ---
 
-**Stand 02.07.2019**
+**Letzte Aktualisierung am 02.07.2019**
 
-## Einleitung
+## Ziel
 
 Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir unsere Kunden, die Seriennummer der zu ersetzenden Festplatte anzugeben. In den meisten Fällen finden Sie diese, indem Sie Ihre Festplatten mit dem Smartmontools-Tool überprüfen.
 
@@ -19,7 +19,7 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 - Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
 - Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} Search Engine).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!primary]
 >

@@ -5,7 +5,7 @@ excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
 section: vRack
 ---
 
-**Stand 24.04.2019**
+**Letzte Aktualisierung am 23.03.2022**
 
 ## Einleitung
 
@@ -20,7 +20,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 * Sie haben den gewünschten privaten IP-Adressbereich vorbereitet.
 * Sie verfügen über einen mit vRack kompatiblen [Server](https://www.ovh.de/dedicated_server/){.external}.
 * Sie haben einen [vRack](https://www.ovh.de/loesungen/vrack/){.external} Dienst aktiviert.
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+* Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 
 ## Beschreibung
@@ -29,6 +29,14 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 > In der vorliegenden Anleitung verwenden wir als Beispiel den IP-Block 46.105.135.96/28 sowie `eth1` als sekundäres Netzwerk, das dem vRack zugewiesen ist.
 >
+
+### IP-Block zum vRack hinzufügen
+
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Öffnen Sie anschließend das Menü `vRack`{.action}.
+
+Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den IP-Block, den Sie zum vRack hinzufügen möchten, und klicken Sie auf den Button `Hinzufügen`{.action}.
+
+![vrack](images/addIPblock.png){.thumbnail}
 
 ### Eine verwendbare IP-Adresse konfigurieren
 
