@@ -585,7 +585,7 @@ Il est possible d'installer des machines virtuelles sous Windows à partir d'une
 Le fichier de configuration est un fichier au format **XML**, il est possible de créer ce fichier au travers des outils **Windows ADK** téléchargeables sur le site de **Microsoft** sur ce lien [Téléchargement Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et notamment **Windows system image manager**
 
 
-Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin et qui affecte le mot de passe **P@ssword** aux comptes administrator et admin
+Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin et qui affecte le mot de passe **P@ssw0rd** aux comptes administrator et admin
 
 
 ```xml
@@ -595,11 +595,21 @@ Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin
         <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <SetupUILanguage>
                 <UILanguage>en-US</UILanguage>
+                <WillShowUI>Never</WillShowUI>
             </SetupUILanguage>
             <InputLocale>0409:00000409</InputLocale>
             <SystemLocale>en-US</SystemLocale>
             <UILanguage>en-US</UILanguage>
             <UserLocale>en-US</UserLocale>
+        </component>
+        <component name="Microsoft-Windows-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UserData>
+                <AcceptEula>true</AcceptEula>
+                <FullName>Nutanix Doc</FullName>
+                <Organization>Nutanix Doc</Organization>
+            </UserData>
+            <EnableFirewall>true</EnableFirewall>
+            <EnableNetwork>true</EnableNetwork>
         </component>
     </settings>
     <settings pass="specialize">
@@ -611,13 +621,13 @@ Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin
         <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <UserAccounts>
                 <AdministratorPassword>
-                    <Value>UABAAHMAcwB3AG8AcgBkAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                    <Value>UABAAHMAcwB3ADAAcgBkAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
                     <PlainText>false</PlainText>
                 </AdministratorPassword>
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
                         <Password>
-                            <Value>UABAAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
+                            <Value>UABAAHMAcwB3ADAAcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
                             <PlainText>false</PlainText>
                         </Password>
                         <Group>Administrators</Group>
@@ -625,6 +635,20 @@ Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
+            <OOBE>
+                <HideEULAPage>true</HideEULAPage>
+                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
+                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
+                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
+                <ProtectYourPC>1</ProtectYourPC>
+                <HideLocalAccountScreen>true</HideLocalAccountScreen>
+            </OOBE>
+        </component>
+        <component name="Microsoft-Windows-International-Core" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <UILanguage>en-US</UILanguage>
+            <UserLocale>en-US</UserLocale>
+            <SystemLocale>en-US</SystemLocale>
+            <InputLocale>0409:00000409</InputLocale>
         </component>
     </settings>
     <cpi:offlineImage cpi:source="wim:c:/sw2019/sources/install.wim#Windows Server 2019 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
@@ -725,7 +749,7 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface We
 curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmwindows.json | jq .
 ```
 
-La nouvelle machine virtuelle doit apparaitre dans **Prism Central** elle sera démarrée et prendra les options du fichier de réponse.
+La nouvelle machine virtuelle doit apparaitre dans **Prism Central** elle est démarrée avec les options du fichier de réponse.
 
 ## Aller plus loin <a name="gofurther"></a>
 
