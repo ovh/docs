@@ -6,7 +6,7 @@ section: Introdução
 order: 08
 ---
 
-**Última atualização: 19/10/2021**
+**Última atualização: 24/03/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -20,8 +20,8 @@ Para realizar determinadas tarefas num servidor (como a instalação de pacotes,
 
 ## Requisitos
 
-* Uma [instância Public Cloud ](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
-* ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+- Uma [instância Public Cloud ](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -38,12 +38,12 @@ Retype new UNIX password:
 passwd: password updated successfully 
 ```
 
-### Atualizar os repositórios (Debian e Ubuntu)
+### Atualizar o sistema (Debian e Ubuntu)
 
 Para atualizar os _pacotes_ de software instalados no seu servidor, insira o seguinte comando:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Atualizar o sistema (CentOS e Fedora)
