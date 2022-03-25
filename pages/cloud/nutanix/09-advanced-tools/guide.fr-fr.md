@@ -6,7 +6,7 @@ section: Premiers pas
 order: 09
 ---
 
-**Dernière mise à jour le 17/03/2022**
+**Dernière mise à jour le 25/03/2022**
 
 ## Objectif
 
@@ -39,11 +39,11 @@ Présenter l'ensemble des outils d'administrations autre que les interfaces WEB 
 
 **ncli** se trouve sur **Prism Central** et sur toutes les **CVM** au travers d'une connexion **ssh**, il est aussi possible de l'installer en local sur un poste Windows ou Linux à partir de l'interface Web de **Prism Central**.
 
-**ncli** permet de gérer le cluster Nutanix comme le stockage, les tâches et certaines actions sur les machines virtuelles à l'interieur du CLUSTER.
+**ncli** permet de gérer le cluster Nutanix comme le stockage, les tâches et certaines actions sur les machines virtuelles à l'intérieur du CLUSTER.
 
 ### Informations sur **acli**
 
-La commmande acli est uniquement disponible sur les **CVM** elle est orientée sur la gestion des hotes des machines virtuelles, des résaux et des snapshots. 
+La commmande acli est uniquement disponible sur les **CVM** elle est utilisée pour la gestion des hotes des machines virtuelles, des réseaux et des snapshots. 
 
 ### Extensions **Powershell** 
 
@@ -253,7 +253,7 @@ gpusInUse                     : False
 vmType                        :
 ```
 
-Réutilisez la même commande suivie de d'un commande suplémentaire séparé par un |
+Réutilisez la même commande suivie de d'un commande supplémentaire séparé par un |
 
 ```powershell
 PS C:\Users\Administrator> Get-NTNXvm | ft vmname
@@ -287,7 +287,7 @@ PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM
 
 ### Utilisation des commandes **REST API**
 
-Tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**, certaines commandes nécessiterons d'autres outils supplémentaires disponibles dans l'environnement Linux.
+Tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**, certaines commandes ont besoins d'autres outils qui sont disponible dans une environnement Linux.
 
 #### Affichage de toutes le commandes à partir de **Prism central**
 
@@ -400,7 +400,7 @@ curl -k -X POST --header "Content-Type: application/json" --header "Accept: appl
 ```
 Le résultat est toujours au format JSON
 
-Ci-dessous une partie du fichier généré contenant l'UUID de la machine virtuelle qui est en fait son identifiant unique pour Nutanix, il existe un UUID pour toutes les éléments de Nutanix (VM, Vdisks, images, etc....)
+Ci-dessous une partie du fichier généré contenant l'UUID de la machine virtuelle qui est en fait son identifiant unique pour Nutanix, il existe un UUID pour tous les éléments de Nutanix (VM, Vdisks, images, etc....)
 
 "kind:" "vm" correspond au type de l'objet et uuid est son uuid
 
@@ -419,7 +419,7 @@ curl -k -X GET --header "Accept: application/json" - u "< PRISM CENTRAL USER >:<
 
 ##### Affichage la liste des réseaux
 
-Lancez cette commande pour afficher la listes de réseaux dans Nutanix :
+Lancez cette commande pour afficher la liste des réseaux dans Nutanix :
 
 ```bash
  curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/subnets/list" | jq
@@ -427,7 +427,7 @@ Lancez cette commande pour afficher la listes de réseaux dans Nutanix :
  
 #### Affichage des informations sur les clusters administrées la console **Prism Central**
 
-Lancez la commande ci dessous pour afficher les informations sur les clusters administrées par **Prism Central**.
+Lancez la commande ci-dessous pour afficher les informations sur les clusters administrées par **Prism Central**.
 
 ```bash
 curl -k --request POST --url "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/clusters/list" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" --header 'Content-Type: application/json' --data '{ }' | jq
@@ -437,7 +437,7 @@ curl -k --request POST --url "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/c
 
 En plus de pouvoir afficher des informations il est possible d'agir sur le cluster Nutanix pour créer ou modifier des éléments du cluster. 
  
-Nous allons voir comment créer deux machines virtuelles de manière automatisé l'une sous Linux, l'autre sous Windows.
+Nous allons voir comment créer deux machines virtuelles de manière automatisée l'une sous Linux, l'autre sous Windows.
 
 ##### Création d'une machine virtuelle sous Linux
 
@@ -445,7 +445,7 @@ Il est possible d'installer Linux à partir d'images préinstallées et de perso
 
 Suivez ces instructions pour créer une VM à partir d'une image personnalisable avec cloud-init :
 
-Sous Linux créer une mot passe au format SHA-512 avec la commande ```mkpasswd```
+Sous Linux créez un mot passe au format SHA-512 avec la commande ```mkpasswd```
 
 ```bash
 mkpasswd --method=SHA-512 -s
@@ -574,16 +574,16 @@ Lancez cette commande :
 curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmlinux.json | jq .
 ```
 
-La nouvelle machine virtuelle va apparaitre dans **Prism Central** avec les mises **NGINX** installé et les mises à jours effectués.
+La nouvelle machine virtuelle va apparaitre dans **Prism Central** avec **NGINX** installé et les mises à jours faîtes.
 
 ##### Création d'une machine virtuelle sous Windows
 
-Il est possible d'installer des ordinateurs virtuels sous Windows à partir d'une image qui a été préparé à l'aide la commande **sysprep** intégrée à Windows, et d'y appliquer un fichier de personalisation.
+Il est possible d'installer des ordinateurs virtuels sous Windows à partir d'une image qui a été préparé à l'aide la commande **sysprep** intégrée à Windows, et d'y appliquer un fichier de personnalisation.
 
 Le fichier de configuration est un fichier au format **XML**, il est possible de créer ce fichier au travers des outils **Windows ADK** téléchargeables sur le site de **Microsoft** [Lien de téléchargement Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et notamment **Windows system image manager**
 
 
-Ci dessous un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin et qui affecte le mot de passe P@ssword aux comptes administrator et admin
+Voici un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin et qui affecte le mot de passe **P@ssword** aux comptes administrator et admin
 
 
 ```xml
@@ -629,7 +629,7 @@ Ci dessous un exemple de fichier XML pour Windows 2019 qui crée un utilisateur 
 </unattend>
 ```
 
-Copiez le fichier XML sur une VM linux du cluster et transformez le au format MIME64 comme ceci pour l'intégrer dans le fichier de configuration de la vm au format json.
+Copiez le fichier XML sur une VM linux du cluster et transformez-le au format MIME64 comme ceci pour l'intégrer dans le fichier de configuration de la vm au format json.
 
 
 ```bash
@@ -640,7 +640,7 @@ Editez le fichier *vmwindows.json* ci-dessous en modifiant ces éléments pour l
 
 * **< VMNAME >** par le nom de la VM que vous voulez donner 
 * **< UUID-IMAGE-WINDOWS2022SYSPREPED >** par l'UUID de l'image WINDOWS SYSPREPED utilisable avec un fichier XML
-* **< UUID-NETWORK >**  nom du réseau sur laquelle la machine virtuelle va fonctionner. 
+* **< UUID-NETWORK >** nom du réseau sur laquelle la machine virtuelle va fonctionner. 
 * **< MIME64FORMATEDYAMLFILE >** doit être remplacé par le contenu de la variable ```$USERDATA```
 * **< CLUSTER-NAME >** par le nom du cluster
 * **< CLUSTER-UUID >** avec l'UUID du cluster  
@@ -723,7 +723,7 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface We
 curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmwindows.json | jq .
 ```
 
-La nouvelle VM va apparaitre dans **Prism Central** elle sera démarrée et prendra les options du fichier de réponse.
+La nouvelle VM doit apparaitre dans **Prism Central** elle sera démarrée et prendra les options du fichier de réponse.
 
 ## Aller plus loin <a name="gofurther"></a>
 
