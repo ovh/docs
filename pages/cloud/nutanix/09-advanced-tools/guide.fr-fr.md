@@ -10,7 +10,7 @@ order: 09
 
 ## Objectif
 
-Présenter l'ensemble des outils d'administrations autre que les interfaces WEB  de **Prism Central** et **Prim Element** qui sont :
+Présenter l'ensemble des outils d'administrations autre que les interfaces WEB de **Prism Central** et **Prim Element** qui sont :
 
 * ncli accessible sur un poste local, en SSH sur **Prism Central** et **Prism Element**.
 * acli utilisable en ssh sur les **CVM**.
@@ -29,6 +29,7 @@ Présenter l'ensemble des outils d'administrations autre que les interfaces WEB 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Certaines commandes ne sont utilisables que si vous avez accès à **Prism Central** et **Prism Element** en ssh
+- Pour les commandes REST API il faut disposer d'une machine virtuelle sous linux avec un éditeur de texte , la commande curl et jq.
 
 
 
@@ -55,7 +56,7 @@ Nutanix a rajouté des extensions qui permettent l'administration du cluster et 
 
 ### Interface d'administration **REST API**
 
-Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser un api nommée **REST API** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de programmation comme **python** ou **php** et même avec les commandes standards de **Powershell**.
+Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser une **api** nommée **REST API** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de programmation comme **python** ou **php** et même avec les commandes standards de **Powershell**.
 
 Pour plus de détails sur ces commandes reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -69,7 +70,7 @@ Se connecter en **ssh** soit avec la commande **ssh** sous linux ou un outil sou
 ssh nutanix@oneofcvm
 ```
 
-ncli est utilisable en mode intéractif en lançant **ncli** sans option mais il est possible d'éxecuter **ncli** suivi des instructions sur la même ligne comme avec cette syntaxe ```ncli entitée action option1="valeur" option2="valeur2``` 
+ncli s'utilise suivi des options comme ceci ```ncli entitée action option1="valeur" option2="valeur2``` mais est aussi utilisable de manière  intéractive en éxecutant uniquement ```ncli```.
 
 #### Création d'un **Storage Container** nommé newcontainer en mote interactif
 
@@ -104,7 +105,7 @@ ncli
 <ncli> 
 ```
 
-#### Suppression du **Storage Container sans directement à partir le la **CVM**
+#### Suppression du **Storage Container sans confirmation 
 
 Lancez la commande ci-dessous pour supprimer sans confirmation le **Storage Container**. 
 
@@ -112,17 +113,15 @@ Lancez la commande ci-dessous pour supprimer sans confirmation le **Storage Cont
 ncli ctr remove name="Newcontainer"
 ```
 
-### Exemples concernant **acli**
+### Exemples d'utilisation de la commande **acli**
 
 Se connecter en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM**
 
 ```ssh nutanix@oneofcvmipaddress```
 
-La commande **acli** est utilisable de manière interactive ou suivi des commandes à executer avec la syntaxe ci-dessous: 
+La commande acli s'utilise suivi des options comme ceci ```acli entité.action pourqui option1="valeur" option2="valeur2``` mais est aussi utilisable de manière  intéractive en éxecutant uniquement ```acli```.
 
-```bash
-acli entité.action pourqui option1="valeur" option2="valeur2
-``` 
+Si l'on utilise acli avec la requêtte demandé, une demande de confirmation sera systèmatiquement lors d'un choix pour automatiser la tâche et faire un choix par défaut utilisez plutôt cette syntaxe ```acli -y entité.action pourqui option1="valeur" option2="valeur2```
 
 #### Création d'un **Snapshot** en mode interactif
 
@@ -131,11 +130,9 @@ acli
 <acropolis> vm.snapshot_create VM-TEST snapshot_name_list="Example"
 <acropolis> exit
 ```
-#### Affichage et suppression d'un **Snapshot** avec une commande complète sur la même ligne**
+#### Affichage et suppression d'un **Snapshot** avec toute la commande sur une même ligne
 
-En mode console par défaut une confirmation est demandée lors d'un choix mais il est possible de lancer la commande **acli** avec une confirmation automatique du choix par défaut en ajoutant l'option -y après acli.
-
-Saisissez ces commandes pour afficher et supprimer un snapshot avec une demande confirmation.
+Saisissez ces commandes pour afficher et supprimer un snapshot avec une demande de confirmation.
 
 ```bash
 acli acli snapshot.list
@@ -148,7 +145,7 @@ Example2: pending
 Example2: complete
 ```
 
-Utilisez cette syntaxe pour ne pas avoir de demandes de confirmation lors de la suppression du snapshot.
+Utilisez cette syntaxe sans demande de confirmation lors de la suppression du snapshot.
 
 ```bash
 acli -y snapshot.delete Example2
@@ -290,19 +287,19 @@ PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM
 
 ### Utilisation des commandes **REST API**
 
-Tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**, certaines commandes nécessiterons d'autres outils supplémentaires disponible dans l'environnement Linux.
+Tous les exemples qui seront montrés ci-dessous seront fait à partir d'une console sous Linux avec l'outils **curl**, certaines commandes nécessiterons d'autres outils supplémentaires disponibles dans l'environnement Linux.
 
 #### Affichage de toutes le commandes à partir de **Prism central**
 
-Il est possible d'avoir la liste des commandes **REST Api** à partir de **Prism Central**
+Il est possible d'avoir la liste des commandes **REST API** à partir de **Prism Central**
 
 Dans **Prism Central** en haut à droite cliquez sur `Username`{.action} et dans le menu cliquez sur `REST API Explorer`{.action}
 
 ![Display RESTAPI commands 01](images/Displayrestapicmds-01.png){.thumbnail}
 
-La liste des commandes est affichée à gauche.
+La liste des groupes de commandes est affichée à gauche.
 
-Cliquez sur `List operations`{.action} à droite d'une des familles de commandes pour faire apparaitre toutes les commandes possibles.  
+Cliquez sur `List operations`{.action} à droite d'une des groupes de commandes pour faire apparaitre toutes les commandes possibles de ce groupe.
 
 ![Display RESTAPI commands 02](images/Displayrestapicmds-02.png){.thumbnail}
 
@@ -316,14 +313,17 @@ Cliquez sur `Expand operations`{.action} pour faire lister la syntaxe d'une comm
 
 Se connecter en SSH sur une VM linux du cluster qui a **curl** et **jq** d'installé
 
-Pour que ces exemples fonctionnent remplacez prismcentralip par l'adresse IP ou le nom FQDN de **Prism central**, primcentraluser par l'utilisateur de **Prism central** et prismcentralpassword par le mot de passe de l'utilisateur de **Prism central**
+Pour que ces exemples fonctionnent remplacez 
+
+*  < PRISMCENTRAL IP > par l'adresse IP ou le nom FQDN de **Prism central**
+*  < PRISM CENTRAL USER > par l'utilisateur de **Prism central** 
+*  <PRISM CENTRAL PASSWORD > par le mot de passe de l'utilisateur de **Prism central**
 
 ##### Afficher la liste des images disponibles pour les déploiements de machines virtuelles.
 
-Exécutez cette commande après avoir remplacé "prismcenraluser:password" par le nom d'utilisateur et le mot de passe 
 
 ```bash
-curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/images/list" | jq
+curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/images/list" | jq
 ```
 
 Cette commande a généré un fichier au format json lisible grace à la commande **jq** qui contient la liste des images et de quelques informations utiles que l'on pourrait avoir besoin.
@@ -396,7 +396,7 @@ Cette commande a généré un fichier au format json lisible grace à la command
 Executez cette commande pour afficher la liste des machines virtuelles
 
 ```bash
-curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/vms/list" | jq 
+curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms/list" | jq 
 ```
 Le résultat est toujours au format JSON
 
@@ -414,7 +414,7 @@ Ci-dessous une partie du fichier généré contenant l'UUID de la machine virtue
 Lancez cette commande en réutilisant l'UUID de l'exemple précedent
 
 ```bash
-curl -k -X GET --header "Accept: application/json" - u "prismcentraluser:prismcentralpassword" "https://prismcentralip:9440/api/nutanix/v3/vms/46574b90-333b-4cd9-a737-3af0f8e242b7" | jq
+curl -k -X GET --header "Accept: application/json" - u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms/46574b90-333b-4cd9-a737-3af0f8e242b7" | jq
 ```
 
 ##### Affichage la liste des réseaux
@@ -422,20 +422,20 @@ curl -k -X GET --header "Accept: application/json" - u "prismcentraluser:prismce
 Lancez cette commande pour afficher la listes de réseaux dans Nutanix :
 
 ```bash
- curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "prismcentraluser:prismcentralpassword" -d {} "https://prismcentralip:9440/api/nutanix/v3/subnets/list" | jq
+ curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/subnets/list" | jq
 ```
  
-#### Affichage des informations sur les clusters administrées la console **Prism central**
+#### Affichage des informations sur les clusters administrées la console **Prism Central**
 
-Pour afficher les informations sur le cluster lancez cette commande.
+Lancez la commande ci dessous pour afficher les informations sur les clusters administrées par **Prism Central**.
 
 ```bash
-curl -k --request POST --url "https://prismcentralip:9440/api/nutanix/v3/clusters/list" -u "prismcentraluser:prismcentralpassword" --header 'Content-Type: application/json' --data '{ }' | jq
+curl -k --request POST --url "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/clusters/list" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" --header 'Content-Type: application/json' --data '{ }' | jq
 ```
 
 #### Exemples avancées
 
-En plus de pouvoir afficher des informations il est possible d'agir sur Nutanix pour créer ou modifier des éléments du cluster. 
+En plus de pouvoir afficher des informations il est possible d'agir sur le cluster Nutanix pour créer ou modifier des éléments du cluster. 
  
 Nous allons voir comment créer deux machines virtuelles de manière automatisé l'une sous Linux, l'autre sous Windows.
 
@@ -450,7 +450,7 @@ Sous Linux créer une mot passe au format SHA-512 avec la commande ```mkpasswd``
 ```bash
 mkpasswd --method=SHA-512 -s
 Password:
-$6$q0hSUaxUNIzgF$4R6hbeVF7Nqz3JMUSI47vINSmwt3XufAIC1lvu15twR/8HMkuRIGd7ZNNLMDGYYGyrgZXwgI7q2BP2rCAv9BU1
+ExampleSHA512axUNIzgF$4R6hbeVF7Nqz3JMUSI47vINSmwt3XufAIC1lvu15twR/8HMkuRIGd7ZNNLMDGYYGyrgZXwgI7q2BP2rCAv9BU1
 ```
 
 Editer le fichier ```cloud-config.yaml```, remplacez < RSAKEYFORLOGING > par un clé RSA qui permettra de se connecter avec le compte userlinux en ssh au travers de cette clé. Remplacez < PASSWORDGENERATEDBYMKPASSWORD > par le mot de passe au format SHA-512 créé
@@ -481,7 +481,7 @@ runcmd:
 
 Le fichier au format **yaml** est créé il permettra l'installation d'une machine virtuelle sous LINUX avec le serveur WEB **NGINX** 
 
-Transformez le fichier **yaml** au format **mime64** et stockez le dans une variable pour pouvoir l'intégrer dans un autre fichier.
+Transformez le fichier **yaml** au format **mime64** et stockez le dans une variable pour pouvoir l'intégrer dans un autre fichier ultérieurement.
 
 ```bash
 USERDATA=$(base64 -w 0 cloud-config.yaml)
@@ -492,14 +492,12 @@ Editez le fichier *vmlinux.json* ci-dessous en modifiant ces éléments pour l'a
 
 * **< VMNAME >** par le nom de la VM que vous voulez donner 
 * **< UUID-IMAGE-LINUX-CLOUD-INIT >** par l'UUID de l'image LINUX compatible avec cloud-init
-* **< UUID-NETWORK >** nom du réseau sur laquelle la machine virtuelle va fonctionner. 
+* **< UUID-NETWORK >** UUID du réseau sur laquelle la machine virtuelle va fonctionner. 
 * **< MIME64FORMATEDYAMLFILE >** doit être remplacé par le contenu de la variable ```$USERDATA```
 * **< CLUSTER-NAME >** par le nom du cluster
 * **< CLUSTER-UUID >** avec l'UUID du cluster  
 
-
-
-Toutes les informations nécessaires sont soit accessibles depuis l'interface Web de **Prism central** ou au travers de commandes **REST API** 
+Toutes les informations nécessaires sont soit accessibles depuis l'interface Web de **Prism central** ou au travers des commandes **REST API** vue précedemment. 
 
 ```json
 {
@@ -573,71 +571,65 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface We
 Lancez cette commande :
 
 ```bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "prismcentraluser:prismcentralpassword"  -X POST "https://prismcentralip:9440/api/nutanix/v3/vms" -d @vmlinux.json | jq .
+curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmlinux.json | jq .
 ```
 
-La nouvelle VM va apparaitre dans **Prism Central** elle aura été mise à jours et NGINX sera installé
+La nouvelle machine virtuelle va apparaitre dans **Prism Central** avec les mises **NGINX** installé et les mises à jours effectués.
 
 ##### Création d'une machine virtuelle sous Windows
 
-Il est possible d'installer des ordinateurs virtuels sous Windows à partir d'une image qui a été préparé pour pouvoir être dupliqué à l'aide la commande **sysprep** intégrée à Windows, et comme pour linux d'y appliquer un fichier de configuration.
+Il est possible d'installer des ordinateurs virtuels sous Windows à partir d'une image qui a été préparé à l'aide la commande **sysprep** intégrée à Windows, et d'y appliquer un fichier de personalisation.
 
 Le fichier de configuration est un fichier au format **XML**, il est possible de créer ce fichier au travers des outils **Windows ADK** téléchargeables sur le site de **Microsoft** [Lien de téléchargement Windows ADK](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et notamment **Windows system image manager**
 
-Ci-dessous un exemple de fichier **XML** généré par l'outil de Microsoft qui crée un utilisateur admin avec un mot de passe et modifie le mot de passe administrateur.
+
+Ci dessous un exemple de fichier XML pour Windows 2019 qui crée un utilisateur admin et qui affecte le mot de passe P@ssword aux comptes administrator et admin
+
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <unattend xmlns="urn:schemas-microsoft-com:unattend">
-    <settings pass="specialize">
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <CopyProfile>true</CopyProfile>
-        </component>
-    </settings>
     <settings pass="windowsPE">
-        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <component name="Microsoft-Windows-International-Core-WinPE" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SetupUILanguage>
+                <UILanguage>en-US</UILanguage>
+            </SetupUILanguage>
             <InputLocale>en-US</InputLocale>
             <SystemLocale>en-US</SystemLocale>
             <UILanguage>en-US</UILanguage>
             <UserLocale>en-US</UserLocale>
         </component>
-        <component name="Microsoft-Windows-Setup" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <UserData>
-                <AcceptEula>true</AcceptEula>
-                <FullName>Nutanix Doc</FullName>
-                <Organization>Nutanix Doc</Organization>
-            </UserData>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <TimeZone>Central Standard Time</TimeZone>
         </component>
     </settings>
     <settings pass="oobeSystem">
-        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="wow64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-            <OOBE>
-                <HideOnlineAccountScreens>true</HideOnlineAccountScreens>
-                <ProtectYourPC>3</ProtectYourPC>
-                <HideEULAPage>true</HideEULAPage>
-                <HideLocalAccountScreen>true</HideLocalAccountScreen>
-                <HideOEMRegistrationScreen>true</HideOEMRegistrationScreen>
-                <HideWirelessSetupInOOBE>true</HideWirelessSetupInOOBE>
-            </OOBE>
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
             <UserAccounts>
+                <AdministratorPassword>
+                    <Value>UABAAHMAcwB3AG8AcgBkAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                    <PlainText>false</PlainText>
+                </AdministratorPassword>
                 <LocalAccounts>
                     <LocalAccount wcm:action="add">
                         <Password>
-                            <Value>< CRYPTED PASSWORD ></Value>
+                            <Value>UABAAHMAcwB3AG8AcgBkAFAAYQBzAHMAdwBvAHIAZAA=</Value>
                             <PlainText>false</PlainText>
                         </Password>
-                        <Name>admin</Name>
                         <Group>Administrators</Group>
+                        <Name>admin</Name>
                     </LocalAccount>
                 </LocalAccounts>
             </UserAccounts>
         </component>
     </settings>
-    <cpi:offlineImage cpi:source="wim:c:/source/sources/install.wim#Windows Server 2022 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+    <cpi:offlineImage cpi:source="wim:c:/sw2019/sources/install.wim#Windows Server 2019 SERVERSTANDARD" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
 </unattend>
 ```
 
-Copiez le fichier XML sur une VM linux du cluster et transformez le au format MIME64 comme ceci pour l'intégrer dans un autre fichier
+Copiez le fichier XML sur une VM linux du cluster et transformez le au format MIME64 comme ceci pour l'intégrer dans le fichier de configuration de la vm au format json.
 
 
 ```bash
@@ -728,7 +720,7 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface We
 ```
 
 ```bash
-curl -k -H Accept:application/json -H Content-Type:application/json -u "prismcentraluser:prismcentralpassword"  -X POST "https://prismcentralip:9440/api/nutanix/v3/vms" -d @vmwindows.json | jq .
+curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmwindows.json | jq .
 ```
 
 La nouvelle VM va apparaitre dans **Prism Central** elle sera démarrée et prendra les options du fichier de réponse.
@@ -743,8 +735,7 @@ La nouvelle VM va apparaitre dans **Prism Central** elle sera démarrée et pren
 
 [Réferences sur les outils de développements autour de Nutanix](https://www.nutanix.dev)
 
-,
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-Lancez cette commande 
+
 
