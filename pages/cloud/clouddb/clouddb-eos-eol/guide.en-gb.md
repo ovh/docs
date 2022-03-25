@@ -9,7 +9,6 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
-|MariaDB 10.1|2019-07-29|2020-04-17|2020-10-17|
 |MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|To be defined|To be defined|To be defined|
