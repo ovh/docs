@@ -10,12 +10,12 @@ order: 09
 
 ## Objectif
 
-Présenter l'ensemble des outils d'administrations autre que les interfaces WEB de **Prism Central** et **Prim Element** qui sont :
+Présenter l'ensemble des outils d'administrations autres que les interfaces WEB de **Prism Central** et **Prim Element** qui sont :
 
 * ncli accessible sur un poste local, en **ssh** sur **Prism Central** et **Prism Element**.
 * acli utilisable en ssh sur les **CVM**.
 * Cmdlets pour **Powershell**.
-* Commande **restapi** à partir de l'URL de **Prism Central** ou **Prism Element**.
+* Interface **REST API** à partir de l'URL de **Prism Central** ou **Prism Element**.
 
 
 > [!warning]
@@ -56,7 +56,7 @@ Nutanix a rajouté des extensions qui permettent l'administration du cluster et 
 
 ### Interface d'administration **REST API**
 
-Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser une **api** nommée **REST API** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de programmation comme **python** ou **php** et même avec les commandes standards de **Powershell**.
+Au travers de l'URL de **Prism central** ou **Prism Element** il est possible d'utiliser une **API** nommée **REST API** que l'on peut soit utiliser en ligne de commande avec l'outil **curl** ou au travers d'un autre langage de programmation comme **python** ou **php** et même avec les commandes standards de **Powershell**.
 
 Pour plus de détails sur ces commandes reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -64,7 +64,7 @@ Pour plus de détails sur ces commandes reportez-vous à la section « [Aller pl
 
 ### Exemples d'utilisation de **ncli**
 
-Se connecter en **ssh** soit avec la commande **ssh** sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM**
+Se connecter en **ssh** avec un client **ssh** sur une des **CVM**
 
 ```bash
 ssh nutanix@oneofcvm
@@ -115,11 +115,11 @@ ncli ctr remove name="Newcontainer"
 
 ### Exemples d'utilisation de la commande **acli**
 
-Se connecter en ssh soit avec la commande ssh sous linux ou un outil sous Windows permettant une connexion SSH sur une des **CVM**
+Se connecter en **ssh** avec un client ssh sur une des **CVM**
 
 ```ssh nutanix@oneofcvmipaddress```
 
-La commande acli s'utilise suivi des options comme ceci ```acli entities.action forwich option1="value1" option2="value2"``` mais est aussi utilisable de manière intéractive en éxecutant uniquement ```acli```.
+La commande acli s'utilise suivie des options comme ceci ```acli entities.action forwich option1="value1" option2="value2"``` mais est aussi utilisable de manière intéractive en éxecutant uniquement ```acli```.
 
 Si l'on utilise acli suivie d'une suite de commandes une demande de confirmation sera systèmatiquement proposée.
 
@@ -132,7 +132,7 @@ acli
 <acropolis> vm.snapshot_create VM-TEST snapshot_name_list="Example"
 <acropolis> exit
 ```
-#### Affichage et suppression d'un **Snapshot** avec toute la commande sur une même ligne
+#### Affichage et suppression d'un **Snapshot** avec la commande sur une même ligne
 
 Saisissez ces commandes pour afficher et supprimer un snapshot avec une demande de confirmation.
 
@@ -196,7 +196,7 @@ Password: *****************
 
 Server                : ipprismcentral
 Version               : pc.2022.1
-UserName              : nomutilisateur
+UserName              : < PRISM CENTRAL USERNAME >
 AcceptInvalidSSLCerts : True
 ForcedConnection      : False
 ```
@@ -255,7 +255,7 @@ gpusInUse                     : False
 vmType                        :
 ```
 
-Réutilisez la même commande suivie de d'un commande supplémentaire séparé par un |
+Réutilisez la même commande suivie de d'un commande supplémentaire séparé par un | pour dans ce cas n'afficher que le nom de la machine virtuelle.
 
 ```powershell
 PS C:\Users\Administrator> Get-NTNXvm | ft vmname
@@ -289,7 +289,7 @@ PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM
 
 ### Utilisation des commandes **REST API**
 
-Tous les exemples montrés ci-dessous sont executés sur une machine virtuelle sous Linux avec l'outils **curl**, certaines commandes ont besoins d'autres outils qui sont disponibles dans la plupart des distributions linux.
+Tous les exemples montrés ci-dessous doivent être executés sur une machine virtuelle sous Linux avec l'outils **curl**, certaines commandes ont besoins d'autres outils qui sont disponibles dans la plupart des distributions linux.
 
 #### Affichage de toutes le commandes à partir de **Prism central**
 
@@ -309,6 +309,7 @@ Cliquez sur `Expand operations`{.action} pour faire lister la syntaxe d'une comm
 
 ![Display RESTAPI commands 03](images/Displayrestapicmds-03.png){.thumbnail}
 
+
 ![Display RESTAPI commands 04](images/Displayrestapicmds-04.png){.thumbnail}
 
 #### Divers exemples simples
@@ -317,9 +318,9 @@ Se connecter en SSH sur une VM linux du cluster qui a les commandes **curl** et 
 
 Pour que ces exemples fonctionnent remplacez 
 
-*  < PRISMCENTRAL IP > par l'adresse IP ou le nom FQDN de **Prism central**
-*  < PRISM CENTRAL USER > par l'utilisateur de **Prism central** 
-*  < PRISM CENTRAL PASSWORD > par le mot de passe de l'utilisateur de **Prism central**
+*  < PRISMCENTRAL IP > par l'adresse IP ou le nom FQDN de **Prism Central**
+*  < PRISM CENTRAL USER > par l'utilisateur de **Prism Central** 
+*  < PRISM CENTRAL PASSWORD > par le mot de passe de l'utilisateur de **Prism Central**
 
 ##### Afficher la liste des images ISO et QCOW2 installées sur **Prism Central**
 
@@ -402,7 +403,7 @@ curl -k -X POST --header "Content-Type: application/json" --header "Accept: appl
 ```
 Le résultat est toujours au format JSON
 
-Ci-dessous une partie du fichier généré contenant l'UUID de la machine virtuelle qui est en fait son identifiant unique pour Nutanix, il existe un UUID pour tous les éléments de de clusters Nutanix (VM, Vdisks, images, etc....)
+Ci-dessous une partie du fichier généré contenant l'UUID de la machine virtuelle qui est en fait son identifiant unique pour Nutanix, il existe un UUID pour tous les éléments des clusters Nutanix (VM, Vdisks, images, etc....)
 
 "kind:" "vm" correspond au type de l'objet et uuid est son uuid
 
@@ -439,7 +440,7 @@ curl -k --request POST --url "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/c
 
 En plus de pouvoir afficher des informations il est possible d'agir sur le cluster Nutanix pour créer ou modifier des éléments d'un cluster. 
  
-Nous allons voir comment créer deux machines virtuelles de manière automatisée l'une sous Linux, l'autre sous Windows.
+Nous allons voir comment créer deux machines virtuelles d'une manière automatisée l'une sous Linux, l'autre sous Windows.
 
 ##### Création d'une machine virtuelle sous Linux
 
@@ -664,10 +665,10 @@ echo $USERDATA
 ```
 Editez le fichier *vmwindows.json* ci-dessous en modifiant ces éléments pour l'adapter à votre environnement
 
-* **< VMNAME >** par le nom de la VM que vous voulez donner 
+* **< VMNAME >** par le nom de la VM que vous voulez donner dans la console Nutanix
 * **< UUID-IMAGE-WINDOWS2022SYSPREPED >** par l'UUID de l'image WINDOWS SYSPREPED utilisable avec un fichier XML
-* **< UUID-NETWORK >** nom du réseau sur laquelle la machine virtuelle va fonctionner. 
-* **< MIME64FORMATEDYAMLFILE >** doit être remplacé par le contenu de la variable ```$USERDATA```
+* **< UUID-NETWORK >** avec le nom du réseau sur laquelle la machine virtuelle va fonctionner. 
+* **< MIME64FORMATEDYAMLFILE >** en le remplaçant par le contenu de la variable ```$USERDATA```
 * **< CLUSTER-NAME >** par le nom du cluster
 * **< CLUSTER-UUID >** avec l'UUID du cluster  
 
