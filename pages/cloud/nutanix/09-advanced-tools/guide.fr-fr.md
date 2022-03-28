@@ -1,7 +1,7 @@
 ---
 title: Outils avancés
 slug: advanced-tools
-excerpt: "Présentation de divers outils avancés"
+excerpt: "Présentation de divers outils avancés disponibles pour l'offre Hosted Private Cloud powered by Nutanix"
 section: Premiers pas
 order: 09
 ---
@@ -16,7 +16,6 @@ Ce guide vous présente l'ensemble des outils d'administration, autres que les i
 * acli utilisable en SSH sur les **CVM**.
 * Cmdlets pour **Powershell**.
 * L'interface **REST API** à partir de l'URL de **Prism Central** ou **Prism Element**.
-
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
