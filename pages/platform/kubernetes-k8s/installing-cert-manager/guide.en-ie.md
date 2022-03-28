@@ -1,11 +1,11 @@
 ---
 title: Installing cert-manager on OVHcloud Managed Kubernetes
 slug: installing-cert-manager
-excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes '
+excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated 31<sup>st</sup> August, 2021.**
+**Last updated 25th March 2022.**
 
 <style>
  pre {
@@ -29,17 +29,23 @@ section: Tutorials
  }
 </style>
 
+## Objective
+
+[Cert-manager](https://github.com/cert-manager/cert-manager) is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.
+
+![Cert Manager](images/cert-manager-logo.png)
+
+It will ensure certificates are valid and up to date periodically, and attempt to renew certificates at an appropriate time before expiry.
+
+![Cert Manager architecture](images/cert-manager-archi.png)
 
 In this tutorial we are going to guide you with the setup of [cert-manager](https://github.com/jetstack/cert-manager){.external} on your OVHcloud Managed Kubernetes Service.
 
-
-## Before you begin
+## Requirements
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 You also need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
-
-
 
 ## Installing cert-manager Helm chart
 
@@ -47,28 +53,50 @@ For this tutorial we are using the [cert-manager Helm chart](https://artifacthub
 
 The chart is fully configurable, but here we are using the default configuration.
 
+Add the cert-manager Helm repository:
 
-```
-# Before installing the chart, you must first install the cert-manager CustomResourceDefinition resources.
-# This is performed in a separate step to allow you to easily uninstall and reinstall cert-manager without deleting your installed custom resources.
-kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.5.3/cert-manager.crds.yaml
-
+```bash
 helm repo add jetstack https://charts.jetstack.io
 helm repo update
-helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.5.3
 ```
 
-The install process will begin:
+These commands will add the Kyverno Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm install cert-manager jetstack/cert-manager --namespace cert-manager --create-namespace --version v1.5.3
+<pre class="console"><code>$ helm repo add jetstack https://charts.jetstack.io
+helm repo update
+"jetstack" already exists with the same configuration, skipping
+Hang tight while we grab the latest from your chart repositories...
+...
+...Successfully got an update from the "jetstack" chart repository
+...
+Update Complete. ⎈Happy Helming!⎈
+</code></pre>
+
+Install the latest version of cert-manager with `helm install` command:
+
+```bash
+helm install \
+  cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+ --set installCRDs=true
+```
+
+This command will install the latest version of cert-manager, create a new `cert-manager` namespace and install the new CRD (CustomResourceDefinitions):
+
+<pre class="console"><code>$ helm install \
+  cert-manager jetstack/cert-manager \
+  --namespace cert-manager \
+  --create-namespace \
+ --set installCRDs=true
 NAME: cert-manager
-LAST DEPLOYED: Tue Aug 31 17:39:31 2021
+LAST DEPLOYED: Fri Mar 25 14:30:50 2022
 NAMESPACE: cert-manager
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
-cert-manager v1.5.3 has been deployed successfully!
+cert-manager v1.7.2 has been deployed successfully!
 
 In order to begin issuing certificates, you will need to set up a ClusterIssuer
 or Issuer resource (for example, by creating a 'letsencrypt-staging' issuer).
@@ -85,13 +113,25 @@ documentation:
 https://cert-manager.io/docs/usage/ingress/
 </code></pre>
 
-Now that the cert-manager is deployed, we need to configure a cluster-issuer to perform Let's Encrypt ACME challenges.
+Check cert-manager have been deployed correctly with `kubectl get pods --namespace cert-manager` command:
 
-To avoid to be banned by Let's Encrypt robots, for testing purposes, the staging environment should be used before going to prod.
+<pre class="console"><code>$ kubectl get pods --namespace cert-manager
+NAME                                       READY   STATUS    RESTARTS   AGE
+cert-manager-75cf8df6b6-x2q6l              1/1     Running   0          2m34s
+cert-manager-cainjector-857f5bd88c-gggxw   1/1     Running   0          2m34s
+cert-manager-webhook-5cd99556d6-jq5vk      1/1     Running   0          2m34s
+</code></pre>
 
-Apply this file using kubectl to add new certificate issuers:
+Now that the cert-manager is deployed, we need to configure a **cluster-issuer** to perform Let's Encrypt ACME challenges.
 
-<pre class="console"><code>apiVersion: cert-manager.io/v1
+> [!primary]
+>
+>To avoid to be banned by Let's Encrypt robots, for testing purposes, the staging environment should be used before going to prod.
+
+Create an Issuer in a file named `issuer.yaml` with the following content:
+
+```yaml
+apiVersion: cert-manager.io/v1
 kind: ClusterIssuer
 metadata:
   name: letsencrypt-prod
@@ -128,10 +168,16 @@ spec:
     - http01:
         ingress:
           class: nginx
-</code></pre>
+```
 
 > [!primary]
 > Don't forget to replace `[YOUR_EMAIL]` by a real value, it will be used for ACME challenges.
+
+Apply the YAML manifest:
+
+```bash
+kubectl apply -f issuer.yaml
+```
 
 Now, any ingress resources will be able to be annotated with:
 
@@ -142,3 +188,6 @@ Now, any ingress resources will be able to be annotated with:
 
 Please refer to [How to install Ingress Nginx Controller](../installing-nginx-ingress/) tutorial for ingresses configuration.
 
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
