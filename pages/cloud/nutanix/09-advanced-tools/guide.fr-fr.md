@@ -122,11 +122,11 @@ Connectez-vous en SSH avec un client SSH sur une des **CVM** :
 ssh nutanix@oneofcvmipaddress
 ```
 
-La commande acli s'utilise suivie d'options, comme ici ```acli entities.action forwich option1="value1" option2="value2"``` mais elle est aussi utilisable de manière interactive en uniquement ```acli``` depuis une **CVM**
+La commande acli s'utilise suivie d'options, comme ici ```acli entities.action for-which option1="value1" option2="value2"``` mais elle est aussi utilisable de manière interactive en uniquement ```acli``` depuis une **CVM**
 
 Si l'on utilise **acli** suivie d'une suite de commandes, une demande de confirmation sera systématiquement proposée si un choix se présente.
 
-Pour automatiser la tâche et faire un choix par défaut, utilisez plutôt cette syntaxe ```acli -y entities.action forwich option1="value" option2="value2"```
+Pour automatiser la tâche et faire un choix par défaut, utilisez plutôt cette syntaxe ```acli -y entities.action for-which option1="value" option2="value2"```
 
 #### Création d'un **snapshot** en mode interactif
 
