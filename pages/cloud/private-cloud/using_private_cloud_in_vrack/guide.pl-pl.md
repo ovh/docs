@@ -10,7 +10,7 @@ order: 02
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 31-12-2021**
+**Ostatnia aktualizacja z dnia 28-03-2022**
 
 ## Wprowadzenie
 
@@ -28,7 +28,8 @@ vRack umożliwia podłączenie różnych usług cloud OVHcloud w ramach jednej l
 
 ### Panel klienta
 
-Podczas dostarczania usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) część *datacenter* jest już w sieci vRack.
+Podczas dostarczania usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) część *datacenter* jest już w sieci vRack. Aby uzyskać dostęp do sekcji vRack,
+przejdź do sekcji `Bare Metal Cloud`{.action}, kliknij `Network`{.action}, następnie kliknij `vRack`{.action}. Wybierz vRack z listy, aby wyświetlić zawartość.
 
 ![Centrum danych](images/vRackDatacenter.PNG){.thumbnail}
 

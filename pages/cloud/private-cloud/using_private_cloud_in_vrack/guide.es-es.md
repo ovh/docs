@@ -28,7 +28,7 @@ El vRack permite conectar distintos servicios cloud de OVHcloud entre sí, dentr
 
 ### Área de cliente
 
-Al entregar el servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), la parte *datacenter* ya está dentro de un vRack.
+Al entregar el servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), la parte *datacenter* ya está dentro de un vRack. Para acceder al vRack, acceda a la sección `Bare Metal Cloud`{.action}, haga clic en `Network`{.action}, y luego en `vRack`{.action}. Seleccione su vRack de la lista para ver el contenido.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 

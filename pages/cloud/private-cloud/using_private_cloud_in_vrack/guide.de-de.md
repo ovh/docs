@@ -10,7 +10,7 @@ legacy_guide_number: g1257
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 31.12.2021**
+**Letzte Aktualisierung am 28.03.2022**
 
 ## Ziel
 
@@ -28,7 +28,7 @@ vRack bietet die Möglichkeit, verschiedene Cloud-Dienste von OVHcloud untereina
 
 ### OVHcloud Kundencenter
 
-Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack` (unter "Hosted Private Cloud" in Ihrem OVHcloud Kundencenter) angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack.
+Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack` angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack. Um zum vRack zu gelangen Gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und dann auf `vRack`{.action}. Wählen Sie in der Liste Ihr vRack aus, um den Inhalt anzuzeigen.
 
 ![Rechenzentrum](images/vRackDatacenter.PNG){.thumbnail}
 
