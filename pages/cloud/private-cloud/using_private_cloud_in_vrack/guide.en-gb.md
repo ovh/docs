@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 2
 ---
 
-**Last updated 31st December 2021**
+**Last updated 28th March 2022**
 
 ## Objective
 
@@ -26,7 +26,9 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ### OVHcloud Control Panel
 
-After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed as an eligible service to be added to the `vRack`{.action}. To access the vrack section in your OVHcloud Control Panel, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action}, then on `vrack`{.action}. Select your vRack from the list. and the "datacenter" will be automatically included into a vRack.
+After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the section `vRack`{.action} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). 
+
+To access it, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then on `vrack`{.action}. Select your vRack from the list and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 
