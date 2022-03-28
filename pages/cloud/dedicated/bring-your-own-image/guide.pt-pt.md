@@ -23,6 +23,7 @@ Para além dos requisitos e limitações citados abaixo, é necessário assegura
 - Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a secção ["Implementação através da Área de Cliente"](#viacontrolpanel) deste manual.
 - Ter acesso às [API OVHcloud](https://api.ovh.com/){.external} para a parte ["Implementação através da API"](#viaapi) deste manual.
 - Ter gerado os [credenciais para utilizar a APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) para a parte ["Implementação através da API"](#viaapi) deste manual.
+- A dimensão da sua imagem deve ser inferior ao(s) disco(s) instalado(s) no servidor.
 
 > [!warning]
 >

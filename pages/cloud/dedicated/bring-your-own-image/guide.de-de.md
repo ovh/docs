@@ -26,6 +26,7 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (für die Methode über das [Kundencenter](#viacontrolpanel)).
 - Sie haben die [Credentials generiert, um die API zu verwenden](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (für den Abschnitt zum [Deployment über API](#viaapi)).
+- Die Größe Ihres Images muss kleiner sein als die auf dem Server installierte(n) Festplatte(n).
 
 > [!warning]
 >
