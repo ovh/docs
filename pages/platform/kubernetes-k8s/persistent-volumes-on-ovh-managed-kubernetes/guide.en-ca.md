@@ -5,7 +5,29 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 section: Getting started
 ---
 
-**Last updated 24th March 2022**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Last updated 28th March 2022**
 
 ## Before you begin
 
@@ -53,8 +75,7 @@ We currently support several Storage Classes on OVHcloud Managed Kubernetes:
 
 You can display them with the `kubectl get storageclass` command:
 
-<pre class="console"><code>
-$ kubectl get storageclass
+<pre class="console"><code>$ kubectl get storageclass
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   42d
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   42d
