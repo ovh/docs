@@ -452,7 +452,7 @@ Nous allons voir comment créer deux machines virtuelles d'une manière automati
 
 ##### Création d'une machine virtuelle sous Linux
 
-Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml.  Pour importer des images dans un cluster Nutanix vous pouvez vous aider de ce lien [Importation d'image ISO](https://https://docs.ovh.com/fr/nutanix/image-import/)
+Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml.  Pour importer des images dans un cluster Nutanix vous pouvez vous aider de ce lien [Importation d'image ISO](https://docs.ovh.com/fr/nutanix/image-import/)
 
 Suivez ces instructions pour créer une machine virtuelle à partir d'une image personnalisable avec cloud-init d'UBUNTU.
 
