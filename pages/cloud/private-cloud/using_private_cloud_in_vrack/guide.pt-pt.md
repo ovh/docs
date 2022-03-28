@@ -20,6 +20,7 @@ O vRack é a possibilidade de ligar diferentes serviços cloud da OVHcloud entre
 
 ## Requisitos
 
+- Ter um serviço [vRack](https://www.ovh.pt/solucoes/vrack/) na sua conta ou encomendar um serviço se necessário
 - Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
 - Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
