@@ -869,7 +869,7 @@ mysql-qa-helm-release-full-backup   mysql-qa-helm-release-backup-plan   Full    
 
 If the output looks like above, you successfully backed up the `mysql-qa` Helm release. You can go ahead and see how TrilioVault stores Kubernetes metadata by listing the TrilioVault S3 Bucket contents.
 
-Finally, you can check that the backup is available in the web console as well, by navigating to `Backup & Recovery -> Backup Plans` and ` and select `demo-ns-backup` Namespace from the Top dropdown (notice that it's in the "Available" state, and that the `mysql-qa` Helm release was backed up in the "Component Details" sub-view)
+Finally, you can check that the backup is available in the web console as well, by navigating to `Backup & Recovery -> Backup Plans` and select `demo-ns-backup` Namespace from the Top dropdown (notice that it's in the "Available" state, and that the `mysql-qa` Helm release was backed up in the "Component Details" sub-view)
 
 #### Deleting mysql-qa Helm Release and Resources <a name="deleting-mysql-qa-helm-release-and-resources"></a>
 
@@ -1100,7 +1100,7 @@ You can also open the web console main dashboard and inspect the multi-namespace
 
 An important aspect to keep in mind is that whenever you destroy an OVHcloud Managed Kubernetes Cluster and then restore it, a new Load Balancer with a new external IP is created as well when TVK restores your ingress controller. So, please make sure to update your OVHcloud Managed DNS `A records` accordingly.
 
-Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](https://docs.ovh.com/au/en/kubernetes/creating-a-cluster/#instructions).
 
@@ -1114,7 +1114,7 @@ To get access to the web console user interface, please consult the [Getting Acc
 
 Then, navigate to `Resource Management > TVK Namespace > Targets` (in case of `ovh/docs` the TVK Namespace is `tvk`).
 
-[TVK Target List](images/tvk_target_list.png){.thumbnail}
+![TVK Target List](images/tvk_target_list.png){.thumbnail}
 
 Going further, browse the target and list the available backups by clicking on the `Actions`{.action} button from the right. Then, select `Launch Browser`{.action} option from the pop-up menu (for this to work the target must have the `enableBrowsing` flag set to "true").
 
@@ -1380,4 +1380,4 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/disaster-recovery-plan).
 - [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
-- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes)
+- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes).
