@@ -10,7 +10,7 @@ order: 01
 
 ## Objectif
 
-Ce guide à pour but de connaitre **Nutanix MOVE** de le configurer et de l'utiliser pour effectuer une migration. 
+Ce guide a pour but de présenter et d'utiliser **Nutanix MOVE** dans le cadre d'une migration vers un cluster Nutanix sous **AHV**.
 
 
 > [!warning]
@@ -25,11 +25,11 @@ Ce guide à pour but de connaitre **Nutanix MOVE** de le configurer et de l'util
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central
-- Avoir une connexion à un environnement autre que Nutanix
+- Avoir une connexion à un environnement autre que Nutanix 
 
 ## Présentation de **Nutanix MOVE**
 
-**Nutanix Move** est un outil qui permet d'effectuer des migration de machines virtuelles depuis **VMware ESXI**, **Hyper**, **Azure** et **AWS** vers **AHV** il peut aussi être utilisé pour faire des migration de Nutanix **AHV** vers **AWS**
+**Nutanix Move** est un outil qui permet d'effectuer des migrations de machines virtuelles depuis **VMware ESXI**, **Hyper**, **Azure** et **AWS** vers **AHV** il peut aussi être utilisé pour faire des migrations de Nutanix **AHV** vers **AWS**.
 
 Ce logiciel se présente comme une machine virtuelle dont les sources sont disponibles sur le site de Nutanix avec un compte client.
 
@@ -40,23 +40,19 @@ le logiciel **Nutanix Move** est le seul à communiquer entre la source et la de
 
 ## En pratique
 
-Nous allons voir comment éffectuer une migration entre un environnement distant sur HYPERV et un environnement NUTANIX OVHCloud.
+Nous allons voir comment effectuer une migration entre un environnement distant sur HYPERV et un environnement NUTANIX OVHCloud.
 
 La source et la destination sont sur deux réseaux privés interconnectés au travers d'un VPN **IPSEC**.
 
-La source ou se trouve le serveur HYPERV est sur le LAN 192.168.68.0/24.
-
-La destination où se trouve un cluster Nutanix est sur le LAN 192.168.0.0/24.
-
-Le VPN IPSEC a été établi avec le système pfsense au travers de deux connexion publiques
+Les deux environnements sont sur deux réseaux séparés distants connectés au travers d'un **VPN IPSEC** 
 
 ### Installation de MOVE sur le Cluster NUTANIX
 
 #### Téléchargement et importation des sources 
 
-Récupérez le fichier QCOW2 sur ce site [Téléchargement MOVE](https://portal.nutanix.com/page/downloads?product=move)
+Récupérez le fichier au format **qcow2** sur ce site [Téléchargement MOVE](https://portal.nutanix.com/page/downloads?product=move)
 
-Connectez vous avec un compte enregistré chez Nutanix
+Connectez-vous avec un compte enregistré chez Nutanix
 
 ![Login Portal](images/PortalLogin.PNG)
 
@@ -64,7 +60,7 @@ cliquez sur `Downloads`{.action} à droite de Move QCOW2 file for AHV
 
 ![Download Move](images/DownloadMove.PNG)
 
-Importez l'image téléchargée de Move dans Nutanix. Pour plus d'information sur l'importation d'image cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
+Importez l'image téléchargée de Move dans Nutanix. Pour plus d'information sur l'importation d'images cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
 
 #### Installation de la machine virtuelle **Move**
 
@@ -84,7 +80,7 @@ Cliquez sur `Create VM`{.action}
 
 Saisissez **Nutanix MOVE** dans `Name`{.action}  
 
-Choisissez ces options **2 vCPU**  , **2 Cores** et **8 GB** dans `VM Properties`{.action} et Cliquez sur `Next`{.action}
+Choisissez ces options **2 vCPU**, **2 Cores** et **8 GB** dans `VM Properties`{.action} et Cliquez sur `Next`{.action}
 
 ![Move Install 04](images/MoveInstall05.PNG)
 
@@ -96,13 +92,13 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Move Install 06](images/MoveInstall05.PNG)
 
-Choississez ces options **Disk** , **Clone from Image** et **move-4.3.0.qcow2**  ensuite cliquez sur `Save`{.action}
+Choississez ces options **Disk**, **Clone from Image** et **move-4.3.0.qcow2**  ensuite cliquez sur `Save`{.action}
 
 Cliquez sur `Attach to Subnet`{.action}
 
 ![Move Install 07](images/MoveInstall07.PNG)
 
-Choisissez le réseau dans `Subnet` , verifiez qu'il soit bien connecté dans `Network Connection State` et cliquez sur `Save`{.action}
+Choisissez le réseau dans `Subnet`, vérifiez qu'il soit bien connecté dans `Network Connection State` et cliquez sur `Save`{.action}
 
 ![Move Install 08](images/MoveInstall08.PNG)
 
@@ -110,15 +106,15 @@ Cliquez sur `Next`{.action}
 
 ![Move Install 09](images/MoveInstall09.PNG)
 
-Laissez les options de timezone par défaut et cliquez sur sur `Next`{.action}
+Laissez les options de timezone par défaut et cliquez sur `Next`{.action}
 
 ![Move Install 10](images/MoveInstall10.PNG)
 
-Cliquez sur sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle Move
+Cliquez sur sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle **Nutanix Move**
 
 ![Move Install 11](images/MoveInstall11.PNG)
 
-Selectionnez la machine virtuelle **Nutanix Move** et cliquez sur le menu `Actions`{.action}
+Sélectionnez la machine virtuelle **Nutanix Move** et cliquez sur le menu `Actions`{.action}
 
 ![Move Install 12](images/MoveInstall12.PNG)
 
@@ -126,63 +122,114 @@ Cliquez sur `Power On`{.action} dans le menu action pour démarrer la machine vi
 
 ![Move Install 13](images/MoveInstall13.PNG)
 
-La machine virtuelle est démarrée si l'on a un serveur DHCP sur le réseau ou se trouve cette machine elle obtiendra une adresse dans la colonne `IP adresses`  
+La machine virtuelle est démarrée et l'on obtient une adresse IP si un serveur **DHCP** est opérationnel sur ce réseau.
 
 ![Move Install 14](images/MoveInstall13.PNG)
 
-Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP mais il  est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
+Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
 
 Pour plus de détails sur **Nutanix MOVE**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
-### Configuration de **Move** 
+### Configuration de **Nutanix Move** 
 
-Avant de configurer Move il est important d'avoir un compte d'administration sur **Prism Element** et non **Prism Central**
+#### Connexion à l'interface WEB et création d'environnements pour la migration
 
-#### Création d'un compte dans **Prism Element**
+Connectez-vous à l'adresse IP de la machine virtuelle **Nutanix Move** au travers d'un navigateur WEB en HTTPS comme ceci **https://addresseipnutanixmove/**
 
-A partir du tableau de bord de **Prism Central**, cliquez sur `Cluster`{.action} pour aller vers **Prism Element**
+Cliquez sur `I have read and agree to terms and conditions`{.action} suivi de  `Continue`{.action} pour accepter la licence
 
-![Create Prism Element Account 01](images/CreatePrismElementAccount01.PNG)
+![MoveConfigure 01](images/MoveConfigure01.PNG)
 
-Sur le tableau de bord de **Prism Element** cliquez sur l'icone `engrenage`{.action} pour aller dans les paramètres
+Cliquez sur `OK`{.action} pour poursuivre
 
-![Create Prism Element Account 02](images/CreatePrismElementAccount02.PNG)
+![MoveConfigure 02](images/MoveConfigure02.PNG)
 
-Cliquez sur `Local User Management`{.action} à gauche dans les options de `Users and Roles`
+Choisissez un mot de passe dans `Enter new Password`{.action} , confirmez le dans `Re-Enter new Password`{.action} et cliquez sur `Set Password`{.action} pour valider la création du mot de passe de Nutanix Move.
 
-![Create Prism Element Account 03](images/CreatePrismElementAccount03.PNG)
+![MoveConfigure 03](images/MoveConfigure03.PNG)
 
-Cliquez sur `New User`{.action} dans les options de `Local User Management`
+Saisissez le mot de passe dans `Password`{.action} et cliquez sur `Log In`{.action} pour se connecter à l'interface WEB de **Nutanix MOVE**.
 
-![Create Prism Element Account 04](images/CreatePrismElementAccount04.PNG)
+![MoveConfigure 04](images/MoveConfigure04.PNG)
 
-Choisissez le nom d'utilisateur dans `username`, l'adresse de messagerie dans `Email`, le mot de passe dans `Password`
+Cliquez sur `Add Environment`{.action}
 
-Ensuite cocher la case à cocher à coté `User Admin`{.action} et cliquez sur `Save`{.action} pour créer l'utilisateur.
+![MoveConfigure 05](images/MoveConfigure05.PNG)
 
-![Create Prism Element Account 05](images/CreatePrismElementAccount05.PNG)
+Choisissez `Nutanix AOS`{.action} 
 
-Le compte est créé et il apparait dans la liste
+![MoveConfigure 06](images/MoveConfigure06.PNG)
 
-![Create Prism Element Account 06](images/CreatePrismElementAccount06.PNG)
+Saisissez ces informations **PRISM-CENTRAL-DESTINATION** dans `Environment Name`{.action}, l'adresse IP privée de **Prism Central** dans `Nutanix Environment`{.action}, Un compte d'administration de **Prism Central** dans `Username `{.action}, le mot de passe de compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter **Prism Central** comme environnement. 
 
-Connectez vous à partir d'un ordinateur qui a accès au réseau privé du Cluster sur l'adresse IP de **Prism Element** sur un navigateur
+![MoveConfigure 07](images/MoveConfigure07.PNG)
 
-avec ce type d'URL **https://adresseiprismelement:9440** pour tester le bon fonctionnement du nouveau compte
+Choisissez `Microsoft Hyper-V`{.action} 
 
-![Create Prism Element Account 07](images/CreatePrismElementAccount07.PNG)
+![MoveConfigure 08](images/MoveConfigure08.PNG)
 
-#### Paramétrage des environnements
+Cliquez sur `Add Environment`{.action}
 
-Connectez vous à la VM au travers de l'interface WEB de la machine virtuelle MOVE
+![MoveConfigure 09](images/MoveConfigure09.PNG)
 
-!!!! A documenter
+Saisissez ces informations **HYPERV-SOURCE** dans `Environment Name`{.action}, l'adresse IP privée du serveur **HYPER-V** dans `Hyper-V Server/Cluster`{.action}, un compte d'administration **HYPER-V** dans `Username `{.action} , le mot de passe de ce compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter **Prism Central** comme environnement. 
 
-#### Migration de machines virtuelles depuis un environnement **HyperV*** vers **AHV**
+![MoveConfigure 10](images/MoveConfigure10.PNG)
 
-Avant de migrer une machine virtuelle existante il faudra s'assurer que la version du système d'exploitation 
+Les deux environements de migrations apparaissents en haut à gauche.
+
+![MoveConfigure 11](images/MoveConfigure11.PNG)
 
 
+#### Création d'un plan de migration d'un serveur HYPER-V vers un environnement NUTANIX.
+
+Nous allons créer un plan de migration à partir des deux environements crées précedemment.
+
+Cliquez sur `Create a Migration Plan`{.action}
+
+![CreateMigrationPLan 01](images/CreateMigrationPlan01.PNG)
+
+Choisissez un nom dans `Plan Name`{.action} et cliquez sur `Proceed`{.action}
+
+![CreateMigrationPLan 02](images/CreateMigrationPlan02.PNG)
+
+Saisissez ces informations **HYPERV-SOURCE** dans `Select a Source`{.action},  **PRISM-CENTRAL-DESTINATION** dans `Hyper-V Server/Cluster`{.action}, le nom du CLUSTER dans `Target Cluster`{.action}, le nom du container de destination dans `Target Container`{.action} ensuite cliquez sur `NEXT`{.action} pour passer à l'étape suivante.
+
+![CreateMigrationPLan 03](images/CreateMigrationPlan03.PNG)
+
+Sélectionnez les machines virtuelles que vous voulez migrer de l'environnement **HYPER-V** vers **AOS** en cliquant à gauche de la VM sur l'icone `Clic ICONE`{.action}, selectionnez les machines virtuelles et cliquez sur `Next`{.action} pour continuer la création du plan de migration.
+
+![CreateMigrationPLan 04](images/CreateMigrationPlan04.PNG)
+
+Choisissez le réseau dans `Target Network`{.action} et cliquez sur `Next`{.action}.
+
+![CreateMigrationPLan 05](images/CreateMigrationPlan05.PNG)
+
+Cliquez sur `Next`{.action} pour valider la migration.
+
+![CreateMigrationPLan 06](images/CreateMigrationPlan06.PNG)
+
+Cliquez sur `Save`{.action} pour Enregistrer le plan de migration sans l'éxecuter.
+
+![CreateMigrationPLan 07](images/CreateMigrationPlan07.PNG)
+
+#### Lancement de la migration
+
+Le plan de migration est créé il est possible de le lancer manuellement.
+
+Sélectionnez la `Case à cocher près du Plan de migration`{.action}.
+
+![CreateMigrationPLan 08](images/CreateMigrationPlan08.PNG)
+
+Dans le menu `Action` cliquez sur `Start`{.action}.
+
+![CreateMigrationPLan 09](images/CreateMigrationPlan09.PNG)
+
+La migration est en cours et apparait en progrès `in progress`dans la colonne `Status` à droite de l'écran.
+
+![CreateMigrationPLan 10](images/CreateMigrationPlan10.PNG)
+
+!!!! Reste à rajouter le cut Over
 
 ## Aller plus loin <a name="gofurther"></a>
 
