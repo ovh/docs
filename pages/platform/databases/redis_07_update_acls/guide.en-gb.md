@@ -3,7 +3,7 @@ title: Redis - Manage Redis ACLs via API
 slug: redis/acls
 excerpt: Update Redis users ACLs with the OVHcloud API
 section: Redis - Guides
-order: 2
+order: 070
 ---
 
 **Last updated March 8<sup>th</sup>, 2022**

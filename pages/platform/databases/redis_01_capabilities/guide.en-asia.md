@@ -3,7 +3,7 @@ title: Redis - Capabilities and Limitations
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
 section: Redis - Guides
-order: 1
+order: 010
 ---
 
 **Last updated January 26<sup>th</sup>, 2022**
@@ -134,12 +134,37 @@ For each user you can specify:
 - Username
 - Keys (such as "cached:*")
 - Categories (such as "@set")
-- Commands (such as "-@all +get")
+- Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-Update of user ACLs is allowed only via API.
+You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
 
-You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
+Here is the list of unsupported commands:
+
+- bgrewriteaof
+- cluster
+- command
+- debug
+- failover
+- migrate
+- role
+- slaveof
+- script
+- eval
+- evalsha
+- acl
+- bgsave
+- config
+- replicaof
+- lastsave
+- save
+- shutdown
+- monitor
+
+> [!primary]
+>
+> Update of user ACLs is allowed only via API. Follow this [guide](https://docs.ovh.com/asia/en/publiccloud/databases/redis/acls/) to learn more.
+>
 
 ## We want your feedback!
 
