@@ -578,12 +578,12 @@ Dans les systèmes à noeud unique, les services doivent pouvoir communiquer ent
 
 |Adresse source|Port source|Adresse de destination|Port de destination|Protocole|Commentaires|
 |--------------|-----------|----------------------|-------------------|---------|------------|
-|Serveur d'administration|any|SAP HANA|22|TCP| sshd (IN)|
+|Serveur d'administration|tout|SAP HANA|22|TCP| sshd (IN)|
 |Clients de base de données|tout|SAP HANA|30015|Port d'accès TCP|SQL/MDX pour l'accès à la base de données standard. L'accès à ces ports doit être activé pour tous les clients de base de données, par exemple les applications, les serveurs d'applications, les clients d'utilisateurs finaux et SAP HANA Studio.|
 |Accès à la base de données|tout|SAP HANA|30017|Port d'accès TCP|SQL/MDX pour l'accès à la base de données standard. L'accès à ces ports doit être activé pour tous les clients de base de données, par exemple les applications, les serveurs d'applications, les clients d'utilisateurs finaux et SAP HANA Studio.|
-|NTP|any|SAP HANA|123|UDP|Time sync (IN)|
-|DNS|53|SAP HANA|any|TCP/UDP|résolution DNS (IN)|
-|SAP HANA|any|DNS Server|53|TCP/UDP|Résolution DNS (OUT)|
+|NTP|tout|SAP HANA|123|UDP|Time sync (IN)|
+|DNS|53|SAP HANA|tout|TCP/UDP|résolution DNS (IN)|
+|SAP HANA|tout|DNS Server|53|TCP/UDP|Résolution DNS (OUT)|
 
 > [!primary]
 > Cette liste fournit les ports de base utilisés pour SAP HANA.
