@@ -130,7 +130,7 @@ La machine virtuelle est démarrée si l'on a un serveur DHCP sur le réseau ou 
 
 ![Move Install 14](images/MoveInstall13.PNG)
 
-Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP , il est possible de l'installer sur un réseau où le serveur DHCP n'est pas disponible. 
+Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP mais il  est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
 
 Pour plus de détails sur **Nutanix MOVE**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -140,7 +140,37 @@ Avant de configurer Move il est important d'avoir un compte d'administration sur
 
 #### Création d'un compte dans **Prism Element**
 
-A partir de **Prism Central**
+A partir du tableau de bord de **Prism Central**, cliquez sur `Cluster`{.action} pour aller vers **Prism Element**
+
+![Create Prism Element Account 01](images/CreatePrismElementAccount01.PNG)
+
+Sur le tableau de bord de **Prism Element** cliquez sur l'icone `engrenage`{.action} pour aller dans les paramètres
+
+![Create Prism Element Account 02](images/CreatePrismElementAccount02.PNG)
+
+Cliquez sur `Local User Management`{.action} à gauche dans les options de `Users and Roles`
+
+![Create Prism Element Account 03](images/CreatePrismElementAccount03.PNG)
+
+Cliquez sur `New User`{.action} dans les options de `Local User Management`
+
+![Create Prism Element Account 04](images/CreatePrismElementAccount04.PNG)
+
+Choisissez le nom d'utilisateur dans `username`, l'adresse de messagerie dans `Email`, le mot de passe dans `Password`
+
+Ensuite cocher la case à cocher à coté `User Admin`{.action} et cliquez sur `Save`{.action} pour créer l'utilisateur.
+
+![Create Prism Element Account 05](images/CreatePrismElementAccount05.PNG)
+
+Le compte est créé et il apparait dans la liste
+
+![Create Prism Element Account 06](images/CreatePrismElementAccount06.PNG)
+
+Connectez vous à partir d'un ordinateur qui a accès au réseau privé du Cluster sur l'adresse IP de **Prism Element** sur un navigateur
+
+avec ce type d'URL **https://adresseiprismelement:9440** pour tester le bon fonctionnement du nouveau compte
+
+![Create Prism Element Account 07](images/CreatePrismElementAccount07.PNG)
 
 #### Paramétrage des environnements
 
