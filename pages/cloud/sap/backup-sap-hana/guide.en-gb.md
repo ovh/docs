@@ -6,7 +6,7 @@ section: Advanced usage
 order: 01
 ---
 
-**Last updated 4th February 2022**
+**Last updated 28th March 2022**
 
 ## Overview
 
@@ -165,7 +165,7 @@ You container will now be present on the list, as shown below:
 ***N.B : Store the password associated to this user in a password manager as it will be provided just once.***
 
 <ol start="7">
-  <li>Give the <code class="action">Object Storage Operator</code> role for this user on `Users & Roles`{.action} tab :</li>
+  <li>Give the <code class="action">Object Storage Operator</code> role for this user on <code class="action">Users & Roles</action> tab :</li>
 </ol>
 
 ![s3-role](images/8-user-roles-en.png){.thumbnail}

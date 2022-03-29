@@ -89,7 +89,7 @@ HDB stop
 ```
 
 <ol start="5">
-  <li>Launch the HDBLCM in the SPS folder!</li>
+  <li>Launch the HDBLCM in the SPS folder:</li>
 </ol>
 
 ```bash
