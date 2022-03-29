@@ -14,6 +14,12 @@ This guide will give you all the tips to manage properly your account and the bi
 
 **This guide explains how to set your OVHcloud services/account in order to prevent any interruption or irregularity.**
 
+> [!warning]
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>
+
 ## Requirements
 
 - having access to your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
@@ -44,13 +50,15 @@ Note that e-mails sent by OVHcloud will be also visible in your [OVHcloud contro
 * click on your name at the top right of your screen ;
 * click on `Service emails`{.action} in the right-hand menu.
 
+![service_emails](images/service_emails.png){.thumbnail}
+
 #### Payment method
 
 In order to prevent any service interruption and for the good functionning of the autorenewal, we recommend that you [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 #### Account Security
 
-[Create a strong password](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password) which will ensure your account privacy. 
+[Create a strong password](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password) which will ensure your account privacy.
 
 [Enable two factor authentification](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/) to prevent any fraudulent access.
 
@@ -59,6 +67,8 @@ For the security measures to be efficient, make sure your e-mail addresses (main
 ### Order follow-up
 
 Did you know that you can [track your orders](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) in your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) ? Just navigate to the `Dashboard`{.action} tab at the top menu of your screen, then click on `View my orders`{.action}.
+
+![viewmyorders](images/viewmyorders.png){.thumbnail}
 
 You will find out the steps of delivery and you will know if actions are required from your side.
 
@@ -84,4 +94,13 @@ To get more information about termination of your services, consult the [How to 
 
 #### Account closure
 
-If you want to definitely close your OVHcloud personal account, first check that it doesn't contain active services, pending invoices or ongoing orders. Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-your-rights?lsdDoc=exercising-your-rights) to ask for the deletion of your account. All related data will be permanently deleted.
+If you want to definitely close your OVHcloud personal account, first check that it doesn't contain active services, pending invoices or ongoing orders. Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-your-rights?lsdDoc=exercising-your-rights) to ask for the permanent deletion of your account.
+
+## Go further <a name="gofurther"></a>
+
+[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/gb/en/customer/scams-fraud-phishing/)
+
+[Managing OVHcloud bills](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/)
+
+Join our community of users on <https://community.ovh.com/en/>.
+
