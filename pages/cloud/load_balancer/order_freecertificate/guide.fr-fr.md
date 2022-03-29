@@ -6,7 +6,7 @@ excerpt: Commander un certificat SSL gratuit pour vos services web derrière un 
 section: Configuration
 ---
 
-**Dernière mise à jour le 20/01/2021**
+**Dernière mise à jour le 29/03/2022**
 
 ## Objectif
 
@@ -30,11 +30,11 @@ La première étape est de configurer votre frontend pour gérer la terminaison 
 
 Vous pouvez configurer votre terminaison SSL depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Load Balancer`{.action}.
 
-Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau Frontend ou éditez-en un existant.
+Après avoir sélectionné le Load Balancer que vous souhaitez modifier, créez un nouveau frontend ou éditez-en un existant.
 
 Dans l'onglet `Frontends`{.action}, cliquez sur le bouton `Ajouter un frontend`{.action} pour en créer un nouveau.<br>
 Une fenêtre d'édition apparait alors, sélectionnez le protocole `HTTPS`.<br>
-Renseignez également les champ `Ferme par défaut` ou `Redirection HTTP` dans les paramètres avancés.
+Renseignez également les champs `Ferme par défaut` ou `Redirection HTTP` dans les paramètres avancés.
 
 ![Configuration la terminaison SSL d'un Frontend](images/enable_ssl_terminaison.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Dans l'onglet `Certificats SSL`{.action}, cliquez sur le bouton `Commander un ce
 
 Vous pourrez suivre votre commande dans l'onglet `Tâches`{.action}. La tâche correspondant à la commande d'un certificat SSL gratuit est nommée `orderFreeCertificate`.
 
-### Depuis l'API
+### Depuis l'API OVHcloud
 
 #### Commander le certificate SSL gratuit
 
@@ -69,7 +69,6 @@ Appliquez ensuite les modifications :
 >
 
 Dans l'API, la commande se fait via l'appel suivant :
-
 
 > [!api]
 >
