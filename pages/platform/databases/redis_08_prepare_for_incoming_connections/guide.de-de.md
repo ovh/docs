@@ -34,7 +34,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
 
-In our example, we will create a user called *redisUser* and right for :
+In our example, we will create a user called *redisUser* and rights for :
 
 - *allkeys* for keys (syntax equivalent to *<\*>*)
 - the *ping* command (syntax equivalent to *<+ping>*)
@@ -55,7 +55,7 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 >
 > Follow the [Commands Official Documentation](https://redis.io/commands/) to learn more.
 >
-> Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/redis/capabilities/#users-and-roles) to learn more about users and roles capabilities and limatations.
+> Follow this [guide](https://docs.ovh.com/de/publiccloud/databases/redis/capabilities/#users-and-roles) to learn more about users and roles capabilities and limitations.
 >
 
 #### Step 2: Authorise incoming connections from the Redis client
