@@ -121,13 +121,13 @@ Nous utiliserons donc la solution [OVHcloud Object Storage](https://www.ovhcloud
 - un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
 
 <ol start="1">
-  <li>Connectez-vous à l'<a class="external-link" href="https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR/" rel="nofollow">espace client OVHcloud</a>, accédez à la section `Public Cloud`{.action}, sélectionnez votre projet puis cliquez sur `Object Storage`{.action} et enfin cliquez sur `Créer un conteneur d'objets`{.action}.</li>
+  <li>Connectez-vous à l'<a class="external-link" href="https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR/" rel="nofollow">espace client OVHcloud</a>, accédez à la section <code class="action">Public Cloud</code>, sélectionnez votre projet puis cliquez sur <code class="action">Object Storage</code> et enfin cliquez sur `Créer un conteneur d'objets`{.action}.</li>
 </ol>
 
 ![interface](images/1-manager-interface-fr.png){.thumbnail}
 
 <ol start="2">
-  <li>Sélectionner `Standard (Swift)`{.action}:</li>
+  <li>Sélectionner <code class="action">Standard (Swift)</code> :</li>
 </ol>
 
 ![swift](images/2-swift-fr.png){.thumbnail}
@@ -139,7 +139,7 @@ Nous utiliserons donc la solution [OVHcloud Object Storage](https://www.ovhcloud
 ![region](images/3-container-localization-fr.png){.thumbnail}
 
 <ol start="4">
-  <li>Sélectionnez le type de conteneur `Privé`{.action} : </li>
+  <li>Sélectionnez le type de conteneur <code class="action">Privé</code> : </li>
 </ol>
 
 ![container type](images/4-private-container-fr.png){.thumbnail}
@@ -155,7 +155,7 @@ Votre conteneur va maintenant apparaître dans la liste, comme montré ci-dessou
 ![container list](images/6-container-list-fr.png){.thumbnail}
 
 <ol start="6">
-  <li>Accédez à l'onglet `s3 users`{.action} pour créer un utilisateur : </li>
+  <li>Accédez à l'onglet <code class="action">s3 users</code> pour créer un utilisateur : </li>
 </ol>
 
 ![s3-users](images/7-create-user-fr.png){.thumbnail}
