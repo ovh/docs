@@ -6,7 +6,7 @@ section: "Utilisation avancée"
 order: 01
 ---
 
-**Dernière mise à jour le 28/03/2022**
+**Dernière mise à jour le 29/03/2022**
 
 ## Objectif
 
@@ -37,6 +37,15 @@ Pour une meilleure utilisation il est conseillé d'installer **Nutanix Move** au
 
 le logiciel **Nutanix Move** est le seul à communiquer entre la source et la destination.
 
+> [!warning]
+> Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration classique selon les préconisations de 
+> Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'un migration il est préferable d'avoir le service de la base de données stoppé.
+> IL faut vérifier la compatibilité le machine virtuelle à migrer avec l'environnement Nutanix Utilisé.
+
+
+
+
+
 
 ## En pratique
 
@@ -44,7 +53,8 @@ Nous allons voir comment effectuer une migration entre un environnement distant 
 
 La source et la destination sont sur deux réseaux privés interconnectés au travers d'un VPN **IPSEC**.
 
-Les deux environnements sont sur deux réseaux séparés distants connectés au travers d'un **VPN IPSEC** 
+
+
 
 ### Installation de MOVE sur le Cluster NUTANIX
 
