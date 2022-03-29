@@ -24,15 +24,15 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 
 - Um serviço [vRack](https://www.ovh.pt/solucoes/vrack/) ativado na sua conta
 - Vários [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/) (compatíveis com vRack)
-- Dispor de um acesso de administrador (root) ao servidor através de SSH ou RDP.
+- Dispor de um acesso de administrador (root) ao servidor através de SSH ou RDP
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Preparar o intervalo de endereços IP privados que escolheu.
+- Preparar o intervalo de endereços IP privados que escolheu
 
 ## Instruções
 
 ### Etapa 1: adicionar os seus servidores ao vRack
 
-Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e introduza o menu `vRack`{.action}.
+Depois de ativar o vRack na sua conta, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Network` {.action} e abra o menu `vRack {.action}.
 
 Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique em cada um dos servidores que deseja adicionar ao vRack e, a seguir, em `Adicionar`{.action}.
 
