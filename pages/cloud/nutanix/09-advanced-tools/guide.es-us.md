@@ -1,78 +1,80 @@
 ---
-title: Outils avancés
+title: Herramientas avanzadas (EN)
 slug: advanced-tools
-excerpt: "Présentation de divers outils avancés disponibles pour l'offre Hosted Private Cloud powered by Nutanix"
-section: Utilisation avancée
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/advanced-tools/'
+excerpt: Presentation of various advanced tools available for the Hosted Private Cloud powered by Nutanix offer
+section: Uso avanzado
 order: 01
 ---
 
-**Dernière mise à jour le 28/03/2022**
+**Last updated 28th March 2022**
 
-## Objectif
+## Objective
 
-Ce guide vous présente l'ensemble des outils d'administration, autres que les interfaces web **Prism Central** et **Prim Element**, que sont :
+This guide will show you all the administration tools, other than the **Prism Central** and **Prim Element** web interfaces, which are:
 
-* ncli accessible sur un poste local, en SSH sur **Prism Central** et **Prism Element**.
-* acli utilisable en SSH sur les **CVM**.
-* Cmdlets pour **Powershell**.
-* L'interface **REST API** à partir de l'URL de **Prism Central** ou **Prism Element**.
+- ncli which can be accessed locally, via SSH on **Prism Central** and **Prism Element**.
+- acli which can be used via SSH on **CVMs**.
+- Cmdlets for **Powershell**.
+- The **REST API** from the **Prism Central** or **Prism Element** URL.
 
 > [!warning]
-> OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> This guide is designed to assist you as much as possible with common tasks. Nevertheless, we recommend contacting a specialist provider if you experience any difficulties or doubts when it comes to managing, using or setting up a service on a server.
 >
 
-## Prérequis
+## Requirements
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Pour l'interface **REST API**, vous devez disposer d'une machine virtuelle sous Linux avec un éditeur de texte, afin d'exécuter les commandes **curl** et **jq**.
+- a Nutanix cluster in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- For the **REST API**, you must have a virtual machine running Linux with a text editor to run the **curl** and **jq** commands.
 
 > [!primary]
-> Certaines commandes ne sont utilisables que si vous avez accès à **Prism Central** et **Prism Element** en SSH.
+> Some commands can only be used if you have SSH access to **Prism Central** and **Prism Element**.
 >
 
-## Présentation des outils
+## Tools overview
 
-### Commande ncli
+### ncli command
 
-**ncli** se trouve sur **Prism Central** et sur toutes les **CVM** au travers d'une connexion SSH. Vous pouvez aussi l'installer en local sur un poste Windows ou Linux à partir de l'interface web **Prism Central**.
+**ncli** is located on **Prism Central** and all **CVMs** through an SSH connection. You can also install it locally on a Windows or Linux desktop from the **Prism Central** web interface.
 
-**ncli** permet de gérer des aspects du cluster Nutanix comme le stockage, les tâches et certaines actions sur les machines virtuelles à l'intérieur du cluster.
+**ncli** allows you to manage aspects of the Nutanix cluster such as storage, tasks and some actions on virtual machines within the cluster.
 
-### Outil acli
+### acli tool
 
-La commmande acli est uniquement disponible sur les **CVM**. Elle est utilisée pour la gestion des hôtes des machines virtuelles, des réseaux et des snapshots. 
+The acli command is only available on **CVMs**. It is used for managing VMs, network and snapshot hosts. 
 
-### Extensions **Powershell** 
+### **Powershell** extensions
 
-Powershell est un langage de script qui a été développé par Microsoft et qui se base sur **Net.Framework**. 
+Powershell is a scripting language developed by Microsoft and based on **Net.Framework**. 
 
-Il fonctionne dans les environnements **Microsoft**, **Linux** et **MacOS** mais il est principalement utilisé dans un environnement **Microsoft**.<br>
-Tous les exemples cités ci-dessous ont été exécutés uniquement sur cet environnement.
+It works in **Microsoft**, **Linux** and **MacOS** environments but is mainly used in a **Microsoft** environment.<br>
+All of the examples below have been run only on this environment.
 
-Nutanix a rajouté des extensions qui permettent l'administration du cluster et des VM en utilisant des scripts Powershell.
+Nutanix has added extensions that allow cluster and VM administration using Powershell scripts.
 
-### Interface d'administration **REST API**
+### **API REST** administration interface
 
-Au travers de l'URL de **Prism central** ou **Prism Element**, vous pouvez utiliser une **API** nommée **REST API** soit en ligne de commande avec l'outil **curl**, soit au travers d'un autre langage de programmation comme **python** ou **php**, voire même avec les commandes standard de **Powershell**.
+Through the URL of **Prism Central** or **Prism Element**, you can use an **API** named **REST API** either in the command line with the **curl** tool, or through another programming language such as **python** or **php** or even with the standard commands of **Powershell**.
 
-Pour plus de détails sur ces commandes, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+For more information on these commands, see the [Go further](#gofurther) section of this guide.
 
-## En pratique
+## Instructions
 
-### Exemples d'utilisation de **ncli**
+### Examples of **ncli** use
 
-Connectez-vous en SSH avec un client SSH sur une des **CVM** :
+Connect via SSH with an SSH client on one of the **CVMs**:
 
 ```bash
 ssh nutanix@oneofcvm
 ```
 
-La commande ncli s'utilise suivie d'options, comme ici ```ncli entité action option1="valeur" option2="valeur2``` mais elle est aussi utilisable de manière interactive en exécutant uniquement ```ncli```.
+The ncli command is used followed by options, as in this example ```ncli entity action option1=`value` option2=`value2``` but it also can be used interactively by running only ```ncli```.
 
-#### Création d'un Storage Container nommé **newcontainer** en mode interactif
+#### Creating a Storage Container named **newcontainer** in interactive mode
 
 ```bash
 ncli
@@ -105,40 +107,41 @@ ncli
 <ncli> 
 ```
 
-#### Suppression du **Storage Container**
+#### Deleting the **Storage Container**
 
-Lancez la commande ci-dessous pour supprimer sans confirmation le **Storage Container** :
+Run the following command to delete the **Storage Container** without confirmation:
 
 ```bash
 ncli ctr remove name="Newcontainer"
 ```
 
-### Exemples d'utilisation de la commande **acli**
+### Examples of using the **acli** command
 
-Connectez-vous en SSH avec un client SSH sur une des **CVM** :
+Connect via SSH with an SSH client on one of the **CVMs**:
 
 ```bash
 ssh nutanix@oneofcvmipaddress
 ```
 
-La commande acli s'utilise suivie d'options, comme ici ```acli entities.action for-which option1="value1" option2="value2"``` mais elle est aussi utilisable de manière interactive en uniquement ```acli``` depuis une **CVM**
+The acli command is used followed by options, such as ```acli entities.action for-which option1="value1" option2="value2"```, but it also can be used interactively by running only ```acli``` from a **CVM**
 
-Si l'on utilise **acli** suivie d'une suite de commandes, une demande de confirmation sera systématiquement proposée si un choix se présente.
+If **acli** is used followed by a sequence of orders, a confirmation request will always be offered if a choice is made.
 
-Pour automatiser la tâche et faire un choix par défaut, utilisez plutôt cette syntaxe ```acli -y entities.action for-which option1="value" option2="value2"```
+To automate the task and make a default choice, use this syntax instead ```acli -y entities.action for-which option1="value" option2="value2"```
 
-#### Création d'un **snapshot** en mode interactif
+#### Creating a **snapshot** in interactive mode
 
-Executez cette suite de commandes à partir d'une des **CVM** :
+Run these commands from one of the **CVMs**:
 
 ```bash
 acli 
 <acropolis> vm.snapshot_create VM-TEST snapshot_name_list="Example"
 <acropolis> exit
 ```
-#### Affichage et suppression d'un **snapshot** sans passer par le mode interactif
 
-Saisissez ces commandes pour afficher et supprimer un snapshot avec une demande de confirmation :
+#### View and delete a **snapshot** without going through interactive mode
+
+Run these commands to view and delete a snapshot with a confirmation request:
 
 ```bash
 # Snapshot listing
@@ -153,7 +156,7 @@ Example2: pending
 Example2: complete
 ```
 
-Utilisez cette syntaxe sans demande de confirmation lors de la suppression du snapshot :
+Use this syntax without prompting when deleting the snapshot:
 
 ```bash
 # Snapshot delete
@@ -162,14 +165,14 @@ Example2: pending
 Example2: complete
 ```
 
-### Configuration de **Powershell** sous Windows et utilisation pratique
+### How to configure and use **Powershell** on Windows
 
-#### Installation de **Powershell** 7 et des modules pour Nutanix
+#### Installing **Powershell** 7 and Nutanix modules
 
-Il est nécessaire d'installer la dernière version de **Powershell** à partir ce lien [Site pour installation Powershell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi)
+You need to install the latest version of **Powershell** from this [Powershell installation website](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.2#msi).
 
-Téléchargez et installez le programme d'installation qui correspond à votre version de Windows, en 32 bits ou plus généralement en 64 bits.<br>
-Lancez l'invite de Commande Powershell 7 en mode administrateur.
+Download and install the installer that corresponds to your version of Windows, in 32 bits or more generally in 64 bits.<br>
+Launch the Powershell 7 command prompt in administrator mode.
 
 ```powershell
 PS C:\Users\Administrator> Install-Module Nutanix.Cli
@@ -183,9 +186,9 @@ PS C:\Users\Administrator> Install-module Nutanix.Prism.PS.Cmds
 PS C:\Users\Administrator> Install-module Nutanix.Prism.Common
 ```
 
-#### Exemples de commandes avec Powershell pour Nutanix
+#### Command examples with Powershell for Nutanix
 
-Importez les modules pour Powershell depuis la  console **PowerShell 7** :
+Import modules for Powershell from the **PowerShell 7** console:
 
 ```powershell
 PS C:\Users\Administrator> Import-Module Nutanix.Cli -Prefix NTNX
@@ -193,10 +196,10 @@ PS C:\Users\Administrator> Import-Module Nutanix.Prism.Common -Prefix NTNX
 PS C:\Users\Administrator> Import-Module Nutanix.Prism.PS.Cmds -Prefix NTNX
 ```
 
-Connectez-vous à Prism Central en executant la commande ci-dessous en modifiant ces éléments :
+Log in to Prism Central by executing the command below and edit these items:
 
-- `< PRISM CENTRAL IP >` remplacez cet élément par l'adresse IP ou le FQDN de **Prism Central**
-- `< PRISM CENTRAL USERNAME >` remplacez cet élément par le nom de l'utilisateur de **Prism Central**
+- `< PRISM CENTRAL IP >` replace this item with the IP address or FQDN of **Prism Central**
+- `< PRISM CENTRAL USERNAME >` replace this item with the **Prism Central** user name
 
 ```powershell
 PS C:\Users\Administrator> Connect-NTNXPrismCentral <PRISM CENTRAL IP>  -UserName < PRISM CENTRAL USERNAME > -AcceptInvalidSSLCerts
@@ -210,7 +213,7 @@ AcceptInvalidSSLCerts : True
 ForcedConnection      : False
 ```
 
-Exécutez la commande ci-dessous pour afficher la liste de toutes les machines virtuelles :
+Run the command below to see a list of all virtual machines:
 
 ```powershell
 PS C:\Users\Administrator> Get-NTNXvm
@@ -264,7 +267,7 @@ gpusInUse                     : False
 vmType                        :
 ```
 
-Réutilisez la commande précedente suivie de `|` et de la commande `ft` pour n'afficher que le nom de la machine virtuelle :
+Reuse the previous command followed by `|` and the `ft` command to display only the virtual machine name:
 
 ```powershell
 PS C:\Users\Administrator> Get-NTNXvm | ft vmname
@@ -290,54 +293,54 @@ VM-WS2022
 OVHgateway
 ```
 
-Utilisez cet enchainement de commandes pour rechercher une machine virtuelle nommée VW-WS2022 et la supprimer :
+Use this command sequence to find and remove a virtual machine named VW-WS2022:
 
 ```powershell
 PS C:\Users\Administrator> Get-NTNXVM | where-object {$_.Source.vmname -like "VM-WS2022" } | Remove-NTNXVM
 ```
 
-### Utilisation des commandes **REST API**
+### Using **REST API** commands
 
-Tous les exemples montrés ci-dessous doivent être exécutés sur une machine virtuelle sous Linux avec l'outil **curl**.<br>
-Certaines commandes ont besoin d'autres outils qui sont disponibles dans la plupart des distributions Linux.
+All of the examples shown below must be run on a virtual machine running Linux with the **curl** tool.<br>
+Some commands need other tools that are available in most Linux distributions.
 
-#### Affichage de toutes les options **API** à partir de **Prism central**
+#### Display all **API** options from **Central Prism**
 
-Il est possible d'avoir la liste des options **REST API** à partir de **Prism Central**.
+You can get the list of **REST API** options from **Prism Central**.
 
-En haut à droite de l'interface **Prism Central**, cliquez sur `Username`{.action} puis sur `REST API Explorer`{.action}.
+In the top right-hand corner of the **Prism Central** interface, click `Username`{.action}, then `REST API Explorer`{.action}.
 
 ![Display RESTAPI commands 01](images/Displayrestapicmds-01.png){.thumbnail}
 
-La liste des groupes de commandes est affichée à gauche.
+The list of command groups is displayed on the left.
 
-Cliquez sur `List operations`{.action} à droite d'un des groupes de commandes pour faire apparaitre toutes les commandes possibles de ce groupe.
+Click `List operations`{.action} to the right of one of the command groups to display all possible commands in that group.
 
 ![Display RESTAPI commands 02](images/Displayrestapicmds-02.png){.thumbnail}
 
-Cliquez sur `Expand operations`{.action} pour lister la syntaxe d'une commande en particulier.
+Click `Expand operations`{.action} to list the syntax for a particular command.
 
 ![Display RESTAPI commands 03](images/Displayrestapicmds-03.png){.thumbnail}
 
 ![Display RESTAPI commands 04](images/Displayrestapicmds-04.png){.thumbnail}
 
-#### Divers exemples simples
+#### Various simple examples
 
-Connectez-vous en SSH sur une VM Linux du cluster qui a les commandes **curl** et **jq** installées.
+Connect via SSH to a Linux VM in the cluster that has the **curl** and **jq** commands installed.
 
-Pour que ces exemples fonctionnent, remplacez :
+For these examples to work, replace:
 
--  `< PRISMCENTRAL IP >` par l'adresse IP ou le nom FQDN de **Prism Central**;
--  `< PRISM CENTRAL USER >` par l'utilisateur de **Prism Central**;
--  `< PRISM CENTRAL PASSWORD >` par le mot de passe de l'utilisateur de **Prism Central**.
+- `< PRISMCENTRAL IP >` by the IP address or FQDN of **Prism Central**.
+- `< PRISM CENTRAL USER >` by the **Prism Central** user.
+- `< PRISM CENTRAL PASSWORD >` by the **Prism Central** user password.
 
-##### **Afficher la liste des images ISO et QCOW2 installées sur Prism Central**
+##### **View the list of ISO and QCOW2 images installed on Prism Central**
 
 ```bash
 curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/images/list" | jq
 ```
 
-Cette commande a généré un fichier au format json lisible grâce à la commande **jq** qui contient la liste des images et les informations nécessaires pour d'autres commandes **REST API**.
+This command generated a file in a readable json format using the **jq** command, which contains the list of images and the information needed for other **REST API** commands.
 
 ```json
 {
@@ -402,63 +405,64 @@ Cette commande a généré un fichier au format json lisible grâce à la comman
     },
 ```
 
-##### **Affichage de la liste des machines virtuelles**
+##### **Viewing the list of virtual machines**
 
-Exécutez cette commande pour afficher la liste des machines virtuelles :
+Run this command to display the list of virtual machines:
 
 ```bash
 curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms/list" | jq 
 ```
-Le résultat est toujours au format **json**.
 
-Ci-dessous une partie du fichier généré, contenant l'**UUID** de la machine virtuelle. 
+The result is always in **json** format.
 
-Il existe un UUID pour chaque élément des clusters Nutanix (VM, Vdisks, images, etc....). Ce numéro est unique.
+Below is a part of the generated file, containing the virtual machine **UUID**. 
 
-`"kind:" "vm"` correspond au type de l'objet.
+There is a UUID for each element of the Nutanix clusters (VM, Vdisks, images, etc..). This number is unique.
+
+`"kind:" "vm"` corresponds to the type of the object.
 
 ```json
         "kind": "vm",
         "uuid": "46574b90-333b-4cd9-a737-3af0f8e242b7",
 ```
 
-##### **Affichage des informations d'une machine virtuelle à partir de son uuid**
+##### **Viewing VM Information from its uuid**
 
-Lancez la commande ci dessous en remplaçant `< VM UUID >` par l'UUID d'une machine virtuelle listée précédemment :
+Run the following command by replacing `< VM UID >` with the UUID of a previously listed virtual machine:
 
 ```bash
 curl -k -X GET --header "Accept: application/json" - u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms/< VM UUID >" | jq
 ```
 
-##### **Affichage de la liste des réseaux**
+##### **Viewing the Network List**
 
-Lancez cette commande pour afficher la liste des réseaux dans Nutanix :
+Run this command to display the list of networks in Nutanix:
 
 ```bash
  curl -k -X POST --header "Content-Type: application/json" --header "Accept: application/json" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" -d {} "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/subnets/list" | jq
 ```
  
-#### **Affichage des informations sur les clusters administrées par la console Prism Central**
+#### **Viewing Information about Administered Clusters in the Prism Central Console**
 
-Lancez la commande ci-dessous pour afficher les informations sur les clusters administrés par **Prism Central** :
+Run the following command to display information about the clusters administered by **Prism Central**:
 
 ```bash
 curl -k --request POST --url "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/clusters/list" -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >" --header 'Content-Type: application/json' --data '{ }' | jq
 ```
 
-#### Exemples avancés
+#### Advanced examples
 
-En plus de pouvoir afficher des informations, vous pouvez agir sur le cluster Nutanix pour créer ou modifier des éléments d'un cluster. 
+In addition to displaying information, you can act on the Nutanix cluster to create or modify elements of a cluster. 
  
-Nous allons voir comment créer deux machines virtuelles d'une manière automatisée, l'une dans un environnement Linux, l'autre sous Windows.
+We will see how to create two virtual machines in an automated way, one in a Linux environment, the other on Windows.
 
-##### **Création d'une machine virtuelle sous Linux**
+##### **Creating a virtual machine on Linux**
 
-Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml. Pour importer des images dans un cluster Nutanix, vous pouvez vous aider de notre guide sur l'[importation d'images ISO](https://docs.ovh.com/fr/nutanix/image-import/).
+You can install Linux from pre-installed images, and you can customise the configuration with cloud-init, which uses the yaml file format. To import images into a Nutanix cluster, you can refer to our guide on [importing ISO images](https://docs.ovh.com/us/es/nutanix/image-import/).
 
-Suivez ces instructions pour créer une machine virtuelle à partir d'une image personnalisable avec cloud-init d'Ubuntu.
+Follow these instructions to create a virtual machine from a Ubuntu cloud-init customisable image.
 
-Sous Linux, créez un mot passe au format SHA-512 avec la commande ```mkpasswd``` :
+On Linux, create a password in SHA-512 format with the command ```mkpasswd```:
 
 ```bash
 mkpasswd --method=SHA-512 -s
@@ -466,10 +470,10 @@ Password:
 ExampleSHA512axUNIzgF$4R6hbeVF7Nqz3JMUSI47vINSmwt3XufAIC1lvu15twR/8HMkuRIGd7ZNNLMDGYYGyrgZXwgI7q2BP2rCAv9BU1
 ```
 
-Editez le fichier ```cloud-config.yaml```. Remplacez : 
+Edit the ```cloud-config.yaml``` file. Replace: 
 
-- `< RSAKEYFORLOGIN >` par une clé RSA qui permettra de se connecter avec le compte userlinux en SSH au travers de cette clé. 
-- `< PASSWORDGENERATEDBYMKPASSWORD >` par le mot de passe créé au format SHA-512.
+- `< RSAKEYFORLOGIN >` by an RSA key that will connect via the SSH userlinux account. 
+- `< PASSWORDGENERATEDBYMKPASSWORD >` by the password created in SHA-512 format.
 
 ```yaml
 #cloud-config
@@ -494,25 +498,25 @@ runcmd:
   - sleep 60 & reboot
 ```
 
-Le fichier au format **yaml** est créé avec la possibilité de faire l'installation d'une machine virtuelle sous LINUX avec le serveur WEB **NGINX**.
+The file in **yaml** format is created with the possibility to install a virtual machine under LINUX with the **NGINX** WEB server.
 
-Transformez le fichier **yaml** au format **mime64** puis stockez-le dans une variable pour pouvoir l'intégrer dans le fichier de configuration de la machine virtuelle.
+Transform the **yaml** file into **mime64** format and store it in a variable so that it can be integrated into the virtual machine configuration file.
 
 ```bash
 USERDATA=$(base64 -w 0 cloud-config.yaml)
 echo $USERDATA
 ```
 
-Editez le fichier **vmlinux.json** ci-dessous en modifiant ces éléments pour l'adapter à votre environnement :
+Edit the **vmlinux.json** file below by editing these elements to fit your environment:
 
-- `< VMNAME >` doit être remplacé par le nom de la machine virtuelle que vous voulez donner dans la console Nutanix. 
-- `< UUID-IMAGE-LINUX-CLOUD-INIT >` doit être remplacé par l'UUID de l'image Linux compatible avec cloud-init.
-- `< UUID-NETWORK >` doit être remplacé par l'UUID du réseau sur laquelle la machine virtuelle va fonctionner. 
-- `< MIME64FORMATEDYAMLFILE >` doit être remplacé par le contenu de la variable ```$USERDATA```.
-- `< CLUSTER-NAME >` doit être remplacé par le nom du cluster.
-- `< CLUSTER-UUID >` doit être remplacé par l'UUID du cluster.  
+- `< VMNAME >` must be replaced with the name of the virtual machine you want to give in the Nutanix console. 
+- `< UUID-IMAGE-LINUX-CLOUD-INIT >` must be replaced with the UUID of the cloud-init-compatible Linux image.
+- `< UID-NETWORK >` must be replaced with the UUID of the network on which the virtual machine will operate. 
+- `< MIME64FORMATEDYAMLFILE >` must be replaced with the contents of the ```$USERDATA``` variable.
+- `< CLUSTER-NAME >` must be replaced with the cluster name.
+- `< CLUSTER-UUID >` must be replaced with the cluster UUID.  
 
-Toutes les informations nécessaires sont soit accessibles depuis l'interface web de **Prism central**, soit au travers des accès à **REST API** vus précédemment. 
+All the necessary information is either accessible from the **Prism central** web interface or through the **REST API** access seen above. 
 
 ```json
 {
@@ -583,22 +587,22 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface we
 }
 ```
 
-Lancez cette commande pour installer la machine virtuelle :
+Run this command to install the virtual machine:
 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmlinux.json | jq .
 ```
 
-La nouvelle machine virtuelle va alors apparaitre dans **Prism Central** avec **NGINX** installé et les mises à jours effectuées.
+The new virtual machine will then appear in **Prism Central** with **NGINX** installed and updates performed.
 
-##### **Création d'une machine virtuelle sous Windows**
+##### **Creating a virtual machine on Windows**
 
-Vous pouvez installer des machines virtuelles sous Windows à partir d'une image préparée à l'aide de la commande **sysprep** intégrée à Windows, et y appliquer un fichier de personnalisation.<br>
-L'image peut être importée directement d'une machine virtuelle du cluster.
+You can install virtual machines on Windows from a prepared image using the Windows-integrated **sysprep** command and apply a customisation file to it.<br>
+The image can be imported directly from a virtual machine in the cluster.
 
-Le fichier de configuration est un fichier au format **XML**. Il est possible de créer ce fichier au travers des outils **Windows ADK** téléchargeables sur le site de **Microsoft** via [ce lien](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) et d'utiliser **Windows system image manager** pour créer un fichier **XML** adéquat.
+The configuration file is an **XML** file. You can create this file using the **Windows ADK** tools that you can download from the **Microsoft** site via [this link](https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) and use **Windows system image manager** to create a suitable **XML** file.
 
-Ci-dessous un exemple de fichier **XML** pour Windows 2019 qui crée un utilisateur admin et qui modifie le mot de passe du compte **admin** et **Administrator** en P@ssw0rd :
+Below is an example **XML** file for Windows 2019 that creates an admin user and changes the password for the **admin** and **Administrator** account to P@ssw0rd:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -667,23 +671,23 @@ Ci-dessous un exemple de fichier **XML** pour Windows 2019 qui crée un utilisat
 </unattend>
 ```
 
-Copiez le fichier **XML** sur une VM Linux du cluster et transformez-le au format MIME64, comme ci-dessous, pour l'intégrer dans le fichier de configuration de la machine virtuelle au format **json** :
+Copy the **XML** file to a Linux VM in the cluster and transform it into MIME64 format, as below, to integrate it into the VM configuration file in **json** format:
 
 ```bash
 USERDATA=$(base64 -w 0 answerfile.xml)
 echo $USERDATA
 ```
 
-Editez le fichier *vmwindows.json* ci-dessous en modifiant ces éléments pour l'adapter à votre environnement :
+Edit the *vmwindows.json* file below by editing these items to fit your environment:
 
-- `< VMNAME >` doit être remplacé par le nom de la VM que vous voulez donner dans la console Nutanix.
-- `< UUID-IMAGE-WINDOWS2022SYSPREPED >` doit être remplacé par l'UUID de l'image Windows SYSPREPED utilisable avec un fichier XML.
-- `< UUID-NETWORK >` doit être remplacé par le nom du réseau sur laquelle la machine virtuelle va fonctionner. 
-- `< MIME64FORMATEDYAMLFILE >` doit être remplacé  par le contenu de la variable ```$USERDATA```.
-- `< CLUSTER-NAME >` doit être remplacé par le nom du cluster.
-- `< CLUSTER-UUID >` doit être remplacé par l'UUID du cluster.
+- `< VMNAME >` must be replaced with the name of the VM you want to give in the Nutanix console.
+- `< UID-IMAGE-WINDOWS2022SYSPREPED >` must be replaced with the UUID of the Windows SYSPREPED image that can be used with an XML file.
+- `< UID-NETWORK >` must be replaced with the name of the network on which the virtual machine will operate. 
+- `< MIME64FORMATEDYAMLFILE >` must be replaced with the contents of the ```$USERDATA``` variable.
+- `< CLUSTER-NAME >` must be replaced with the cluster name.
+- `< CLUSTER-UUID >` must be replaced with the cluster UUID.
 
-Toutes les informations nécessaires sont soit accessibles depuis l'interface web de **Prism central** ou au travers de commandes **REST API**.
+All necessary information is either accessible from the **Prism Central** web interface or through **REST API** commands.
 
 ```json
 {
@@ -761,16 +765,16 @@ Toutes les informations nécessaires sont soit accessibles depuis l'interface we
 curl -k -H Accept:application/json -H Content-Type:application/json -u "< PRISM CENTRAL USER >:< PRISM CENTRAL PASSWORD >"  -X POST "https://< PRISM CENTRAL IP >:9440/api/nutanix/v3/vms" -d @vmwindows.json | jq .
 ```
 
-La nouvelle machine virtuelle doit apparaitre dans **Prism Central**, elle est alors démarrée avec les options du fichier de réponse.
+The new virtual machine will appear in **Prism Central**, it is then started with the response file options.
 
-## Aller plus loin <a name="gofurther"></a>
+## Go further <a name="gofurther"></a>
 
-[Références NCLI de Nutanix](https://portal.nutanix.com/page/documents/details?targetId=Command-Ref-AOS-v5_20:man-ncli-c.html)
+[Nutanix NCLI references](https://portal.nutanix.com/page/documents/details?targetId=Command-Ref-AOS-v5_20:man-ncli-c.html)
 
-[Références ACLI de NUTANIX](https://portal.nutanix.com/page/documents/details?targetId=Command-Ref-AOS-v5_20:man-acli-c.html)
+[ACLI references of NUTANIX](https://portal.nutanix.com/page/documents/details?targetId=Command-Ref-AOS-v5_20:man-acli-c.html)
 
-[Installation des CmdLets Nutanix](https://portal.nutanix.com/page/documents/details?targetId=PS-Cmdlets-AOS-v6_0:ps-ps-cmdlets-installv2-r.html) 
+[Installing Nutanix CmdLets](https://portal.nutanix.com/page/documents/details?targetId=PS-Cmdlets-AOS-v6_0:ps-ps-cmdlets-installv2-r.html) 
 
-[Réferences sur les outils de développements de Nutanix](https://www.nutanix.dev)
+[References to Nutanix development tools](https://www.nutanix.dev)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.

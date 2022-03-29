@@ -468,7 +468,7 @@ ExampleSHA512axUNIzgF$4R6hbeVF7Nqz3JMUSI47vINSmwt3XufAIC1lvu15twR/8HMkuRIGd7ZNNL
 
 Editez le fichier ```cloud-config.yaml```. Remplacez : 
 
-- `< RSAKEYFORLOGING >` par une clé RSA qui permettra de se connecter avec le compte userlinux en SSH au travers de cette clé. 
+- `< RSAKEYFORLOGIN >` par une clé RSA qui permettra de se connecter avec le compte userlinux en SSH au travers de cette clé. 
 - `< PASSWORDGENERATEDBYMKPASSWORD >` par le mot de passe créé au format SHA-512.
 
 ```yaml
@@ -508,7 +508,7 @@ Editez le fichier **vmlinux.json** ci-dessous en modifiant ces éléments pour l
 - `< VMNAME >` doit être remplacé par le nom de la machine virtuelle que vous voulez donner dans la console Nutanix. 
 - `< UUID-IMAGE-LINUX-CLOUD-INIT >` doit être remplacé par l'UUID de l'image Linux compatible avec cloud-init.
 - `< UUID-NETWORK >` doit être remplacé par l'UUID du réseau sur laquelle la machine virtuelle va fonctionner. 
-- `< MIME64FORMATEDYAMLFILE >` doit être remplacé par le contenu de la variable ```$USERDATA```
+- `< MIME64FORMATEDYAMLFILE >` doit être remplacé par le contenu de la variable ```$USERDATA```.
 - `< CLUSTER-NAME >` doit être remplacé par le nom du cluster.
 - `< CLUSTER-UUID >` doit être remplacé par l'UUID du cluster.  
 
