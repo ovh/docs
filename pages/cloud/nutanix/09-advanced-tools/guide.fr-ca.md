@@ -26,7 +26,7 @@ Ce guide vous présente l'ensemble des outils d'administration, autres que les i
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Pour l'interface **REST API**, vous devez disposer d'une machine virtuelle sous Linux avec un éditeur de texte, afin d'exécuter les commandes **curl** et **jq**.
 
 > [!primary]
@@ -454,7 +454,7 @@ Nous allons voir comment créer deux machines virtuelles d'une manière automati
 
 ##### **Création d'une machine virtuelle sous Linux**
 
-Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml. Pour importer des images dans un cluster Nutanix, vous pouvez vous aider de notre guide sur l'[importation d'images ISO](https://docs.ovh.com/fr/nutanix/image-import/).
+Il est possible d'installer Linux à partir d'images préinstallées et de personnaliser la configuration avec cloud-init qui utilise le format de fichiers yaml. Pour importer des images dans un cluster Nutanix, vous pouvez vous aider de notre guide sur l'[importation d'images ISO](https://docs.ovh.com/ca/fr/nutanix/image-import/).
 
 Suivez ces instructions pour créer une machine virtuelle à partir d'une image personnalisable avec cloud-init d'Ubuntu.
 
