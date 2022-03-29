@@ -40,7 +40,7 @@ To interact with your Redis instance using Python, your development environment 
 - A compatible version of Python
 - Redis-py
 
-Please follow the official [Redis-py](https://github.com/redis/redis-py#installation){.external}. to get the latest information.
+Please follow the official [Redis-py](https://github.com/redis/redis-py#installation){.external} to get the latest information.
 
 Once your Python environment is set up and you begin executing a **python --version** in your command line interface (CLI), you should see information about the version as shown below :
 
@@ -81,7 +81,6 @@ $ b'bar'
 ```
 
 Congratulations! Everything is working properly.
-
 
 ## Go further
 
