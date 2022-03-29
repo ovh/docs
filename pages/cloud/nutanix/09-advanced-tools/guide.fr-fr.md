@@ -70,7 +70,7 @@ Connectez-vous en SSH avec un client SSH sur une des **CVM** :
 ssh nutanix@oneofcvm
 ```
 
-La commande ncli s'utilise suivie d'options, comme ici ```ncli entitée action option1="valeur" option2="valeur2``` mais elle est aussi utilisable de manière interactive en exécutant uniquement ```ncli```.
+La commande ncli s'utilise suivie d'options, comme ici ```ncli entité action option1="valeur" option2="valeur2``` mais elle est aussi utilisable de manière interactive en exécutant uniquement ```ncli```.
 
 #### Création d'un Storage Container nommé **newcontainer** en mode interactif
 
