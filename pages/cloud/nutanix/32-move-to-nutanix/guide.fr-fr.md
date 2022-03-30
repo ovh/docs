@@ -31,7 +31,9 @@ Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des
 
 ## Présentation de **Nutanix MOVE**
 
-**Nutanix Move** est un outil qui permet d'effectuer des migrations de machines virtuelles depuis **VMware ESXI**, **Hyper**, **Azure** et **AWS** vers **AHV** il peut aussi être utilisé pour faire des migrations de Nutanix **AHV** vers **AWS**.
+**Nutanix Move** est un outil qui permet d'effectuer des migrations de machines virtuelles depuis **VMware ESXI**, **Hyper**, **Azure** et **AWS** vers **AHV**.
+
+Il peut aussi être utilisé pour faire des migrations de Nutanix **AHV** vers **AWS**.
 
 Ce logiciel fonctionne sur une machine virtuelle dont les sources sont disponibles sur le site de Nutanix avec un compte client.
 
@@ -40,7 +42,7 @@ Pour une utilisation optimale il est conseillé d'installer **Nutanix Move** au 
 le logiciel **Nutanix Move** est le seul à communiquer entre la source et la destination.
 
 > [!warning]
-> Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration selon les préconisations de Microsoft 
+> Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration selon les préconisations de Microsoft.
 >
 > Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'une migration il est préférable d'avoir le service de la base de données stoppé.
 >
