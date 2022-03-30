@@ -36,7 +36,7 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ####  Por phpMyAdmin OVHcloud
 
-Acceda a su área de cliente. Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
+Acceda a su área de cliente. Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action}. Seleccione el nombre del servidor de bases de datos.
 
 En la pestaña `Información general`, el enlace de acceso se encuentra en el recuadro **"Administración de la base de datos"**, bajo el epígrafe "Interfaz de usuario".
 

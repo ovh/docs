@@ -47,7 +47,7 @@ Nachdem Sie Ihr Projekt genau definiert haben, können Sie es auf Ihrem Webhosti
 
 Bei dieser Lösung kommen die OVH 1-Klick-Module zum Einsatz, die eine einfache und schnelle Installation eines CMS ermöglichen. OVH übernimmt die Installation der Website und teilt Ihnen anschließend Ihre Zugangsdaten zum Verwaltungsinterface mit.
 
-Damit die Installation des OVH Moduls erfolgreich ist, vergewissern Sie sich zunächst, dass das Verzeichnis, in dem das Modul installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein). Um die Installation des 1-Klick-Moduls durchzuführen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Dann klicken Sie auf den Tab `1 Klick Module`{.action} und anschließend auf den Button `Ein Modul hinzufügen`{.action}.
+Damit die Installation des OVH Moduls erfolgreich ist, vergewissern Sie sich zunächst, dass das Verzeichnis, in dem das Modul installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein). Um die Installation des 1-Klick-Moduls durchzuführen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. In den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Dann klicken Sie auf den Tab `1 Klick Module`{.action} und anschließend auf den Button `Ein Modul hinzufügen`{.action}.
 
 ![Zugriff auf die 1-Klick-Module](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -66,7 +66,7 @@ Damit die Installation des OVH Moduls erfolgreich ist, überprüfen Sie bitte, d
 - das Verzeichnis, in dem das Modell installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein).
 - auf Ihrem Webhosting bereits eine Datenbank angelegt wurde (gehen Sie in den Tab `Datenbanken`{.action} und anschließend auf `Eine Datenbank erstellen`{.action}, um eine Datenbank anzulegen).
 
-Um eine Datenbank zu erstellen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Im Tab `Datenbanken`{.action} klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
+Um eine Datenbank zu erstellen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. In den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Im Tab `Datenbanken`{.action} klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
 
 ![Zugriff auf die 1-Klick-Module](images/create_a_database.png){/thumbnail}
 
@@ -86,7 +86,7 @@ Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich
 
 ### Schritt 3: Ihre E-Mail-Adressen anlegen
 
-Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot enthaltenen E-Mail-Adressen nicht nutzen möchten. Um eine oder mehrere E-Mail-Adressen anzulegen, stellen Sie zunächst sicher, dass Sie in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt sind. Dann gehen Sie im linken Menü in den Bereich `E-Mails`{.action} und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. In dem Tab `E-Mails`{.action} klicken Sie dann auf den Button `Eine E-Mail-Adresse erstellen`{.action}.
+Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot enthaltenen E-Mail-Adressen nicht nutzen möchten. Um eine oder mehrere E-Mail-Adressen anzulegen, stellen Sie zunächst sicher, dass Sie in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt sind. In den Bereich `E-Mails`{.action} und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. In dem Tab `E-Mails`{.action} klicken Sie dann auf den Button `Eine E-Mail-Adresse erstellen`{.action}.
 
 ![Eine E-Mail-Adresse anlegen](images/create_an_email_address.png){/thumbnail}
 
@@ -108,13 +108,13 @@ Es gibt mehrere zu OVH gehörige DNS-Einträge. Wir interessieren uns an dieser 
 
 - **A-Eintrag für die Website**
 
-Um den A-Eintrag zu überprüfen, den Sie für die DNS-Zone Ihrer Domain benötigen, loggen Sie sich bitte in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.
+Um den A-Eintrag zu überprüfen, den Sie für die DNS-Zone Ihrer Domain benötigen, loggen Sie sich bitte in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. In den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, das Sie gerade bestellt haben. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.
 
 ![A-Eintrag bearbeiten](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **MX-Einträge für E-Mails**
 
-Um die MX-Einträge zu überprüfen, die Sie für die Zone Ihrer Domain benötigen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. Dann gehen Sie im linken Menü in den Bereich E-Mails und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Informationen, die neben dem Punkt „MX Einträge“ stehen. Diese können sich je nach Dienstleistung unterscheiden, je nachdem, welchen DNS-Filter Sie angewendet haben.
+Um die MX-Einträge zu überprüfen, die Sie für die Zone Ihrer Domain benötigen, loggen Sie sich in Ihrem [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein. In den Bereich E-Mails und klicken anschließend auf den Namen des Webhostings, das Sie gerade bestellt haben. Dann suchen Sie in dem Tab `Allgemeine Informationen`{.action} die Informationen, die neben dem Punkt „MX Einträge“ stehen. Diese können sich je nach Dienstleistung unterscheiden, je nachdem, welchen DNS-Filter Sie angewendet haben.
 
 ![MX-Einträge bearbeiten](images/know_the_OVH_MX_records.png){/thumbnail}
 

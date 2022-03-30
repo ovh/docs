@@ -54,7 +54,7 @@ Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritte
 
 ### Schritt 1: Die Konfigurationsdatei Ihrer Website identifizieren <a name="step1"></a>
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann im linken Menü auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
+Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servername
 - Für DRUPAL: Der *Servername* erscheint unter "**host**" und der *Benutzername* unter "**username**".
 - Für PRESTASHOP: Der *Servername* erscheint unter "**database_host**" und der *Benutzername* unter "**database_user**".
 
-Klicken Sie dann im **linken Bereich** Ihrer Bildschirmanzeige auf `Datenbanken`{.action}. 
+Klicken Sie anschließend im Bereich `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
 
 Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [CloudDB Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
 
@@ -214,7 +214,7 @@ Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (festgele
 
 #### Fall 2: Die Datenbank Ihrer Website ist Teil eines CloudDB Datenbankdienstes <a name="case2"></a>
 
-Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters (linkes Menü) und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
+Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

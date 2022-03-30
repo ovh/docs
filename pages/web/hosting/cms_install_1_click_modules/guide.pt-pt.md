@@ -34,7 +34,7 @@ Para usar um CMS não incluído nos Módulos 1 clique, deverá instalá-lo manua
 
 ### Aceder à área de gestão dos Módulos 1 clique
 
-Na Área de Cliente, no menu à esquerda, clique em `Alojamentos`{.action}, e depois no respetivo alojamento. De seguida, clique em `Módulos 1 clique`{.action}.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. De seguida, clique em `Módulos 1 clique`{.action}.
 
 Nesta página, pode consultar, gerir e instalar vários Módulos 1 clique.
 

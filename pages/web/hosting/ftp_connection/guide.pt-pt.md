@@ -37,7 +37,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 > **Se já possuir estas informações**, passe diretamente para o passo “[2 - Aceder ao espaço de armazenamento](./#2-aceder-ao-espaco-de-armazenamento)”.
 > 
 
-Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
+Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
 Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
 
@@ -70,7 +70,7 @@ A ligação ao espaço de armazenamento pode ser realizada de várias formas. Co
 
 #### 1. Ligação através de FTP Explorer <a name="ftpexplorer"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. 
 
 Aceda ao separador `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}. 
 

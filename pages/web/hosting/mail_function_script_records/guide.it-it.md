@@ -28,7 +28,7 @@ Le email automatiche sono messaggi di posta inviati tramite script  e sono utili
 
 ## Procedura
 
-Le operazioni di monitoring e gestione delle email automatiche di un hosting Web OVH sono disponibili nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: clicca su `Hosting`{.action} nel menu a sinistra, seleziona il tuo servizio dalla lista e clicca su `Altre opzioni`{.action} > `Script email`{.action}.
+Le operazioni di monitoring e gestione delle email automatiche di un hosting Web OVH sono disponibili nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: clicca su `Hosting`{.action}, seleziona il tuo servizio dalla lista e clicca su `Altre opzioni`{.action} > `Script email`{.action}.
 
 Dalla nuova pagina è possibile seguire e gestire le email automatiche inviate dall’hosting.
 

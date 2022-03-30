@@ -31,7 +31,7 @@ Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operat
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein. Klicken Sie auf den Tab `Web Cloud`{.action} und dann in der linken Spalte auf `Hosting-Pakete`{.action}.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein. Klicken Sie auf den Tab `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}.
 
 Wählen Sie das betreffende Hosting aus, klicken Sie auf den Tab `Mehr+`{.action} und dann auf `Geplante Aufgaben - Cron`{.action}
 
