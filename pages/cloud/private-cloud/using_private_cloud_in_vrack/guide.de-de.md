@@ -20,15 +20,15 @@ vRack bietet die Möglichkeit, verschiedene Cloud-Dienste von OVHcloud untereina
 
 ## Voraussetzungen
 
-- Sie haben eine [vRack](https://www.ovh.de/loesungen/vrack/) Dienstleistung in Ihrem Account oder bestellen falls nötig
-- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
-- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- Sie haben eine [vRack](https://www.ovh.de/loesungen/vrack/) Dienstleistung in Ihrem Account.
+- Sie sind Administrator-Kontakt für die [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur, um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
 
 ## In der praktischen Anwendung
 
 ### OVHcloud Kundencenter
 
-Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack` angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack. Um zum vRack zu gelangen Gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und dann auf `vRack`{.action}. Wählen Sie in der Liste Ihr vRack aus, um den Inhalt anzuzeigen.
+Sobald Ihre Dienstleistung [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) bereitgestellt ist, wird sie im Bereich `vRack` angezeigt und das "Rechenzentrum" befindet sich bereits in einem vRack. Um zum vRack zu gelangen, gehen Sie in den Bereich `Bare Metal Cloud`{.action}, klicken Sie auf `Network`{.action} und dann auf `vRack`{.action}. Wählen Sie in der Liste Ihr vRack aus, um den Inhalt anzuzeigen.
 
 ![Rechenzentrum](images/vRackDatacenter.PNG){.thumbnail}
 
