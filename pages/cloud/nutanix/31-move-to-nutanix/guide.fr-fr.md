@@ -10,10 +10,9 @@ order: 01
 
 ## Objectif
 
-Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des migration depuis un autre environnement vers **AHV*
+Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des migrations depuis d'autres environnements vers **AHV*
 
-
-**Ce guide a vous explique comment éffectuer une migration avec ce logiciel**.
+**Ce guide vous explique comment effectuer une migration avec ce logiciel**.
 
 
 > [!warning]
@@ -34,16 +33,16 @@ Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des
 
 **Nutanix Move** est un outil qui permet d'effectuer des migrations de machines virtuelles depuis **VMware ESXI**, **Hyper**, **Azure** et **AWS** vers **AHV** il peut aussi être utilisé pour faire des migrations de Nutanix **AHV** vers **AWS**.
 
-Ce logiciel se présente comme une machine virtuelle dont les sources sont disponibles sur le site de Nutanix avec un compte client.
+Ce logiciel fonctionne sur une machine virtuelle dont les sources sont disponibles sur le site de Nutanix avec un compte client.
 
-Pour une meilleure utilisation il est conseillé d'installer **Nutanix Move** au plus près de la destination.
+Pour une utilisation optimale il est conseillé d'installer **Nutanix Move** au plus près de la destination.
 
 le logiciel **Nutanix Move** est le seul à communiquer entre la source et la destination.
 
 > [!warning]
 > Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration selon les préconisations de Microsoft 
-> Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'un migration il est préferable d'avoir le service de la base de données stoppé.
-> IL faut vérifier la compatibilité le machine virtuelle d'origine avec l'environnement Nutanix de destination.
+> Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'une migration il est préférable d'avoir le service de la base de données stoppé.
+> IL faut vérifier la compatibilité la machine virtuelle d'origine avec l'environnement Nutanix de destination.
 
 ## En pratique
 
@@ -53,35 +52,37 @@ La source et la destination sont sur deux réseaux privés interconnectés au tr
 
 ### Préparation des machines virtuelles d'origines avant migration.
 
-Connectez vous sur ce site pour vérifier la comptabilité des machines sources avec le futur environnement sous Nutanix
+Connectez-vous sur ce site pour vérifier la comptabilité des machines sources avec le futur environnement sous Nutanix
 
 [Matrice de comptatibilité Nutanix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/guestos)
 
 #### Spécificité des machines virtuelles sous LINUNX
 
-Si la machine virtuelle utilise un noyau avec une version minimale en 2.6.X il n'est pas nécessaire de préparer la machine virtuelle source elle peuvent démarrer sur le cluster NUTANIX avec ce pilote de disques. Pour les machine virtuelles plus anciennes il faut faire quelques opérations particulières.
+Si la machine virtuelle utilise un noyau avec une version minimale en 2.6.X il n'est pas nécessaire de préparer la machine virtuelle source elle peut démarrer sur le cluster NUTANIX avec les pilotes du noyau. Pour les machines virtuelles plus anciennes il faut faire quelques opérations particulières.
 
 #### Particularité de l'environnement Microsoft
 
-Microsoft ne fourni pas les pilotes **VIRTIO** pour les pilotes de la carte SCSI et de la carte réseau il faut les installer au préalable avant de faire une migration l'outil **Nutanix Move**
+Microsoft ne fournit pas les pilotes **Virtio** de la carte SCSI et de la carte réseau. Il faut Installer ces pilotes avant de faire une migration avec l'outil **Nutanix Move**, ces pilotes sont disponibles sur le site de Nutanix avec un compte client.
 
 > [!primary]
-> Microsoft Windows 2008 n'est plus supporté ni par Microsoft ni par Nutanix mais néanmoins il est possible d'installer des pilotes VIRTIO anciens et de tenter une migration.
+> Microsoft Windows 2008 n'est plus supporté ni par Microsoft ni par Nutanix mais néanmoins il est possible d'installer d'anciens pilotes **Virtio** et de tenter une migration.
 >
 
-Connectez vous sur le site de Nutanix avec un compte client pour télécharger les pilotes VIRTIO [Lien de téléchargement des pilotes VIRTIO](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
+Connectez-vous sur le site de Nutanix avec un compte client pour télécharger les pilotes VIRTIO.
 
-Saisissez votre nom d'utilisateur dans `Emails`, votre mot de passe dans `Passwords` et cliquez sur `Log In`{.action} 
+[Lien de téléchargement des pilotes VIRTIO](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
 
-![Download Virtio](images/DownloadVirtio01.PNG)
+Saisissez votre nom d'utilisateur dans `Emails`{.action}, votre mot de passe dans `Passwords`{.action} et cliquez sur `Log In`{.action} 
+
+![Download Virtio01](images/DownloadVirtio01.PNG)
 
 Sur le portail Nutanix téléchargez la version qui vous convient en cliquant sur un des `Downloads`{.action}
 
 Nous allons prendre le pilote pour **Amd64** 
 
-![Download Virtio](images/DownloadVirtio02.PNG)
+![Download Virtio02 ](images/DownloadVirtio02.PNG)
 
-A partir d'un ordinateur source sous Windows double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}
+A partir d'une machine virtuelle sous Windows de l'environnement HYPER-V double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}
 
 ![Installing guest driver 01](images/VirtGuestInstall01.PNG)
 
@@ -89,13 +90,13 @@ Cliquez sur `I accept the terms in the license Agreement`{.action} ainsi que sur
 
 ![Installing guest driver 02](images/VirtGuestInstall02.PNG)
 
-Cliquez sur `Finish`{.action} pour terminer l'installation sans avoir à redémarrer l'ordinateur source.
+Cliquez sur `Finish`{.action} pour terminer l'installation sans avoir à redémarrer la machine virtuelle.
 
 ### Installation de MOVE sur le Cluster NUTANIX.
 
 #### Téléchargement et importation des sources. 
 
-Récupérez le fichier au format **qcow2** sur ce site [Téléchargement MOVE](https://portal.nutanix.com/page/downloads?product=move)
+Récupérez le fichier au format **qcow2** sur ce site [Lien de téléchargement de MOVE](https://portal.nutanix.com/page/downloads?product=move)
 
 Connectez-vous avec un compte enregistré chez Nutanix
 
@@ -105,11 +106,11 @@ cliquez sur `Downloads`{.action} à droite de Move QCOW2 file for AHV
 
 ![Download Move](images/DownloadMove.PNG)
 
-Importez l'image téléchargée de Move dans Nutanix. Pour plus d'information sur l'importation d'images cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
+Importez l'image téléchargée de Move dans Nutanix. Pour plus d'informations sur l'importation d'images cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
 
 #### Installation de la machine virtuelle **Move**
 
-Créez une machine virtuelle à partir de de l'image Move
+Créez une machine virtuelle à partir de l'image Move
 
 Depuis Prism Central, ouvrez le menu principal via le bouton en haut à gauche.
 
@@ -242,7 +243,7 @@ Saisissez ces informations **HYPERV-SOURCE** dans `Select a Source`{.action},  *
 
 ![CreateMigrationPLan 03](images/CreateMigrationPlan03.PNG)
 
-Sélectionnez les machines virtuelles que vous voulez migrer de l'environnement **HYPER-V** vers **AOS** en cliquant à gauche de la VM sur l'icone `Clic ICONE`{.action}, selectionnez les machines virtuelles et cliquez sur `Next`{.action} pour continuer la création du plan de migration.
+Sélectionnez les machines virtuelles que vous voulez migrer de l'environnement **HYPER-V** vers **AOS** en cliquant à gauche de la VM sur l'icone `Clic ICONE`{.action}, sélectionnez les machines virtuelles et cliquez sur `Next`{.action} pour continuer la création du plan de migration.
 
 ![CreateMigrationPLan 04](images/CreateMigrationPlan04.PNG)
 
@@ -260,7 +261,7 @@ Cliquez sur `Save`{.action} pour Enregistrer le plan de migration sans l'éxecut
 
 #### Lancement de la migration
 
-Le plan de migration est créé il est possible de le lancer manuellement.
+Le plan de migration est créé, il est possible de le lancer manuellement.
 
 Sélectionnez la `Case à cocher près du Plan de migration`{.action}.
 
@@ -276,7 +277,7 @@ La migration est en cours et apparait en progrès `in progress` dans la colonne 
 
 #### Finalisation de la migration
 
-Vérifiez que vous pouvez basculer en vous postionnant avec la souris sur `In Progress` un fenêtre va apparaitre avec à l'intérieur cette information **Ready to Cutover N** N correspond aux nombre d'ordinateurs qui peuvent basculer. Cliquez sur `In Progress`{.action} pour lancer le processus de finalisation.
+Contrôler l'état de la migration en se positionnant avec la souris sur `In Progress` un fenêtre doit apparaitre avec  cette information **Ready to Cutover N** N correspond aux nombre d'ordinateurs qui peuvent basculer. Cliquez sur `In Progress`{.action} pour lancer le processus de finalisation.
 
 ![Cut Over 01](images/CutOver01.PNG)
 
