@@ -76,7 +76,7 @@ Klicken Sie auf die drei Punkte rechts neben dem Backup, das Sie exportieren mö
 
 ### Backup über das phpMyAdmin-Webinterface exportieren
 
-Loggen Sie sich auf phpMyAdmin ein, um den Vorgang durchzuführen. Loggen Sie sich hierfür zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich auf phpMyAdmin ein, um den Vorgang durchzuführen. Loggen Sie sich hierfür zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Klicken Sie auf die drei Punkte rechts neben der betreffenden Datenbank und gehen Sie dann auf `Zugang zu phpMyAdmin`{.action}.
 
