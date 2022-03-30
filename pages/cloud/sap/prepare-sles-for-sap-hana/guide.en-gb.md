@@ -6,7 +6,7 @@ section: Getting started
 order: 01
 ---
 
-**Last updated 4th February 2022**
+**Last updated 29th March 2022**
 
 ## Objective
 
@@ -518,10 +518,10 @@ vgs
 </ol>
 
 ```bash
-lvcreate -i 4 -I 256 -L XXG -n lvhanadata vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanalog vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanabackup vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanashared vghana
+lvcreate -i 2 -I 256 -L XXG -n lvhanadata vghana
+lvcreate -i 2 -I 256 -L XXG -n lvhanalog vghana
+lvcreate -i 1 -I 256 -L XXG -n lvhanabackup vghana
+lvcreate -i 1 -I 256 -L XXG -n lvhanashared vghana
 lvcreate -i 1 -I 256 -L XXG -n lvusrsap vgsys
 ```
 
@@ -588,7 +588,7 @@ In single-node systems, at least services need to communicate with each other.
 >
 
 > [!primary]
-> For the system database (SYSTEMDB), the port takes the following form: 3<instance-number>13.<br>
+> For the system database (SYSTEMDB), the port takes the following form: 3`instance-number`13.<br>
 > For example, 30013 (if the instance is 00).
 >
 > If you install a new system, you automatically get one tenant, unless you install an empty system. The port for the automatically created first tenant typically takes the following form: 3<instance-number>15. For example, 30015 (if the instance is 00).
@@ -681,6 +681,9 @@ To do so:
 
 <ol start="1">
     <li>Login in <a href=https://hotui-supportportal.dispatcher.hana.ondemand.com/index.html">SAP portal</a></li>
+</ol>
+
+<ol start="2">
     <li>Click on 'Manage Systems':</li>
 </ol>
 
@@ -692,13 +695,13 @@ To do so:
 
 ![SAP portal add system](images/3-sap-portal-add-system.png){.thumbnail}
 
-<ol start="3">
+<ol start="4">
     <li>Upload the measurement results (zip archive):</li>
 </ol>
 
 ![SAP portal upload measurement](images/4-sap-portal-upload-measurement.png){.thumbnail}
 
-<ol start="4">
+<ol start="5">
     <li>Interpret the results.</li>
 </ol>
 

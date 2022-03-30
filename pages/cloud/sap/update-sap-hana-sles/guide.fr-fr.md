@@ -88,7 +88,7 @@ HDB stop
 ```
 
 <ol start="5">
-  <li>Lancez HDBLCM dans le dossier SPS !</li>
+  <li>Lancez HDBLCM dans le dossier SPS :</li>
 </ol>
 
 ```bash

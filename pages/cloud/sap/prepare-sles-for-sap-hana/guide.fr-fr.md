@@ -6,7 +6,7 @@ section: Premiers pas
 order: 01
 ---
 
-**Dernière mise à jour le 04/02/2022**
+**Dernière mise à jour le 29/03/2022**
 
 ## Objectif
 
@@ -32,7 +32,7 @@ OVHcloud fournit du matériel certifié SAP sur lequel construire une solution S
 
 Pour déployer votre image cloud-ready SLES for SAP sur un serveur bare-metal, suivez notre guide « [Comment utiliser la fonctionnalité Bring Your Own Image](https://docs.ovh.com/gb/en/dedicated/bringyourownimage/) ».
 
-Vous pouvez également déployer une image ISO de SLES ISO à travers l'IPMI : [Installation d'un Système d'Exploitation à l'aide d'IPMI](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/#installation-dun-systeme-dexploitation-a-laide-dipmi-v1)
+Vous pouvez également déployer une image ISO de SLES à travers l'IPMI : [Installation d'un Système d'Exploitation à l'aide d'IPMI](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/#installation-dun-systeme-dexploitation-a-laide-dipmi-v1)
 
 #### Conditions générales
 
@@ -311,7 +311,7 @@ Après un redémarrage, l'utilisation du THP sera désactivée.
 **Ou**
 
 <ol start="2">
-<li>Utilisez le bootloader YaS, exécutez : </li>
+<li>Utilisez le bootloader YaST, exécutez : </li>
 </ol>
 
 ```bash
@@ -361,7 +361,7 @@ Après un redémarrage, l'utilisation des états C2 et supérieurs sera désacti
 **Ou**
 
 <ol start="2">
-<li>Utilisez le bootloader YaST2, exécutez : </li>
+<li>Utilisez le bootloader YaST, exécutez : </li>
 </ol>
 
 ```bash
@@ -522,10 +522,10 @@ vgs
 </ol>
 
 ```bash
-lvcreate -i 4 -I 256 -L XXG -n lvhanadata vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanalog vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanabackup vghana
-lvcreate -i 4 -I 256 -L XXG -n lvhanashared vghana
+lvcreate -i 2 -I 256 -L XXG -n lvhanadata vghana
+lvcreate -i 2 -I 256 -L XXG -n lvhanalog vghana
+lvcreate -i 1 -I 256 -L XXG -n lvhanabackup vghana
+lvcreate -i 1 -I 256 -L XXG -n lvhanashared vghana
 lvcreate -i 1 -I 256 -L XXG -n lvusrsap vgsys
 ```
 
@@ -565,7 +565,7 @@ echo "/dev/mapper/vgsys-lvusrsap /usr/sap xfs noatime,nodiratime,logbsize=256k 0
 
 ## Architecture réseau
 
-### Overview
+### Présentation
 
 SAP recommande une communication réseau dédiée de 10 Gbit/s entre le paysage SAP HANA et le système source pour une réplication efficace des données.
 
@@ -578,12 +578,12 @@ Dans les systèmes à noeud unique, les services doivent pouvoir communiquer ent
 
 |Adresse source|Port source|Adresse de destination|Port de destination|Protocole|Commentaires|
 |--------------|-----------|----------------------|-------------------|---------|------------|
-|Serveur d'administration|any|SAP HANA|22|TCP| sshd (IN)|
+|Serveur d'administration|tout|SAP HANA|22|TCP| sshd (IN)|
 |Clients de base de données|tout|SAP HANA|30015|Port d'accès TCP|SQL/MDX pour l'accès à la base de données standard. L'accès à ces ports doit être activé pour tous les clients de base de données, par exemple les applications, les serveurs d'applications, les clients d'utilisateurs finaux et SAP HANA Studio.|
 |Accès à la base de données|tout|SAP HANA|30017|Port d'accès TCP|SQL/MDX pour l'accès à la base de données standard. L'accès à ces ports doit être activé pour tous les clients de base de données, par exemple les applications, les serveurs d'applications, les clients d'utilisateurs finaux et SAP HANA Studio.|
-|NTP|any|SAP HANA|123|UDP|Time sync (IN)|
-|DNS|53|SAP HANA|any|TCP/UDP|résolution DNS (IN)|
-|SAP HANA|any|DNS Server|53|TCP/UDP|Résolution DNS (OUT)|
+|NTP|tout|SAP HANA|123|UDP|Time sync (IN)|
+|DNS|53|SAP HANA|tout|TCP/UDP|résolution DNS (IN)|
+|SAP HANA|tout|DNS Server|53|TCP/UDP|Résolution DNS (OUT)|
 
 > [!primary]
 > Cette liste fournit les ports de base utilisés pour SAP HANA.
@@ -592,7 +592,7 @@ Dans les systèmes à noeud unique, les services doivent pouvoir communiquer ent
 >
 
 > [!primary]
-> Pour la base de données système (SYSTEMDB), le port se présente de la manière suivante : 3<numéro-instance>13.<br>
+> Pour la base de données système (SYSTEMDB), le port se présente de la manière suivante : 3`numéro-instance`13.<br>
 > Par exemple, 30013 (si l'instance est 00).
 >
 > Si vous installez un nouveau système, vous obtenez automatiquement un tenant, à moins que vous n'installiez un système vide. Le port du premier tenant créé automatiquement prend généralement la forme suivante : 3<numéro_instance>15. Par exemple, 30015 (si l'instance est 00).
@@ -647,7 +647,7 @@ hcmtsetup
 </ol>
 
 |Nom du dossier|Contenu|
-|—|—|
+|---|---|
 |config|Plans d'exécution|
 |lib|Binaires|
 |hcmtplugins|Plug-ins de test|
@@ -679,14 +679,17 @@ Par défaut, vous aurez le choix entre deux plans d'exécution :
 
 #### Interprétation des tests
 
-Après avoir exécuté les tests hcmt, le programme affichera une archive zip 'hcmtresult'.
+Après avoir exécuté les tests hcmt, le programme va générer une archive zip 'hcmtresult'.
 
-L'archive contient tous les résultats des mesures et sera ensuite interprétée sur le site Web SAP HANA Hardware and Cloud Measurement Analysis.
+Cette archive contient tous les résultats des mesures et sera ensuite interprétée sur le site Web SAP HANA Hardware and Cloud Measurement Analysis.
 
 Pour ce faire :
 
 <ol start="1">
   <li>Connectez-vous <a href=https://hotui-supportportal.dispatcher.hana.ondemand.com/index.html">au portail SAP</a></li>
+</ol>
+
+<ol start="2">
   <li>Cliquez sur « Manage Systems » (Gérer les systèmes) : </li>
 </ol>
 
@@ -698,13 +701,13 @@ Pour ce faire :
 
 ![SAP portal add system](images/3-sap-portal-add-system.png){.thumbnail}
 
-<ol start="3">
+<ol start="4">
   <li>Téléchargez les résultats des mesures (archive zip) : </li>
 </ol>
 
 ![Mesure du téléchargement du portail SAP](images/4-sap-portal-upload-measurement.png){.thumbnail}
 
-<ol start="4">
+<ol start="5">
   <li>Interprétez les résultats.</li>
 </ol>
 
