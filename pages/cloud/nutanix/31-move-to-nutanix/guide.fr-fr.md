@@ -6,11 +6,14 @@ section: "Utilisation avancée"
 order: 01
 ---
 
-**Dernière mise à jour le 29/03/2022**
+**Dernière mise à jour le 30/03/2022**
 
 ## Objectif
 
-Ce guide a pour but de présenter et d'utiliser **Nutanix MOVE** dans le cadre d'une migration vers un cluster Nutanix sous **AHV**.
+Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des migration depuis un autre environnement vers **AHV*
+
+
+**Ce guide a vous explique comment éffectuer une migration avec ce logiciel**.
 
 
 > [!warning]
@@ -38,14 +41,9 @@ Pour une meilleure utilisation il est conseillé d'installer **Nutanix Move** au
 le logiciel **Nutanix Move** est le seul à communiquer entre la source et la destination.
 
 > [!warning]
-> Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration classique selon les préconisations de 
+> Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration selon les préconisations de Microsoft 
 > Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'un migration il est préferable d'avoir le service de la base de données stoppé.
-> IL faut vérifier la compatibilité le machine virtuelle à migrer avec l'environnement Nutanix Utilisé.
-
-
-
-
-
+> IL faut vérifier la compatibilité le machine virtuelle d'origine avec l'environnement Nutanix de destination.
 
 ## En pratique
 
@@ -53,12 +51,49 @@ Nous allons voir comment effectuer une migration entre un environnement distant 
 
 La source et la destination sont sur deux réseaux privés interconnectés au travers d'un VPN **IPSEC**.
 
+### Préparation des machines virtuelles d'origines avant migration.
 
+Connectez vous sur ce site pour vérifier la comptabilité des machines sources avec le futur environnement sous Nutanix
 
+[Matrice de comptatibilité Nutanix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/guestos)
 
-### Installation de MOVE sur le Cluster NUTANIX
+#### Spécificité des machines virtuelles sous LINUNX
 
-#### Téléchargement et importation des sources 
+Si la machine virtuelle utilise un noyau avec une version minimale en 2.6.X il n'est pas nécessaire de préparer la machine virtuelle source elle peuvent démarrer sur le cluster NUTANIX avec ce pilote de disques. Pour les machine virtuelles plus anciennes il faut faire quelques opérations particulières.
+
+#### Particularité de l'environnement Microsoft
+
+Microsoft ne fourni pas les pilotes **VIRTIO** pour les pilotes de la carte SCSI et de la carte réseau il faut les installer au préalable avant de faire une migration l'outil **Nutanix Move**
+
+> [!primary]
+> Microsoft Windows 2008 n'est plus supporté ni par Microsoft ni par Nutanix mais néanmoins il est possible d'installer des pilotes VIRTIO anciens et de tenter une migration.
+>
+
+Connectez vous sur le site de Nutanix avec un compte client pour télécharger les pilotes VIRTIO [Lien de téléchargement des pilotes VIRTIO](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
+
+Saisissez votre nom d'utilisateur dans `Emails`, votre mot de passe dans `Passwords` et cliquez sur `Log In`{.action} 
+
+![Download Virtio](images/DownloadVirtio01.PNG)
+
+Sur le portail Nutanix téléchargez la version qui vous convient en cliquant sur un des `Downloads`{.action}
+
+Nous allons prendre le pilote pour **Amd64** 
+
+![Download Virtio](images/DownloadVirtio02.PNG)
+
+A partir d'un ordinateur source sous Windows double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}
+
+![Installing guest driver 01](images/VirtGuestInstall01.PNG)
+
+Cliquez sur `I accept the terms in the license Agreement`{.action} ainsi que sur `Install`{.action}
+
+![Installing guest driver 02](images/VirtGuestInstall02.PNG)
+
+Cliquez sur `Finish`{.action} pour terminer l'installation sans avoir à redémarrer l'ordinateur source.
+
+### Installation de MOVE sur le Cluster NUTANIX.
+
+#### Téléchargement et importation des sources. 
 
 Récupérez le fichier au format **qcow2** sur ce site [Téléchargement MOVE](https://portal.nutanix.com/page/downloads?product=move)
 
