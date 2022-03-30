@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 2
 ---
 
-**Last updated 31st December 2021**
+**Last updated 28th March 2022**
 
 ## Objective
 
@@ -17,6 +17,7 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ## Requirements
 
+- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/) service in your account or order one if needed
 - Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) to receive login credentials
 - A user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca))
 
@@ -24,7 +25,9 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ### OVHcloud Control Panel
 
-After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the section `vRack` (under "Hosted Private Cloud" in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)) and the "datacenter" will be automatically included into a vRack.
+After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the `vRack`{.action} section in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+
+To access it, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action}, then on `vRack`{.action}. Select your vRack from the list and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 
