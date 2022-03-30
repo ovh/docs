@@ -107,7 +107,7 @@ Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servername
 - Für DRUPAL: Der *Servername* erscheint unter "**host**" und der *Benutzername* unter "**username**".
 - Für PRESTASHOP: Der *Servername* erscheint unter "**database_host**" und der *Benutzername* unter "**database_user**".
 
-Klicken Sie anschließend im Bereich `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
+Öffnen Sie anschließend `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
 
 Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [CloudDB Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
 
