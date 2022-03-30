@@ -54,13 +54,13 @@ La source et la destination sont sur deux réseaux privés interconnectés au tr
 
 ### Préparation des machines virtuelles d'origines avant migration.
 
+La machine virtuelle doit faire partie de la liste des machines virtuelles supportées dans la matrice de compatibilité pour que la migration fonctionne.
+
 Connectez-vous sur ce site ci-dessous pour vérifier la compabilité des machines sources avec l'environnement de destination sous Nutanix :
 
 [Matrice de comptatibilité Nutanix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/guestos)
 
-#### Spécificité des machines virtuelles sous LINUNX
-
-La machine virtuelle doit faire partie de la liste des machines virtuelles supportées dans la matrice de compatibilité pour la migration fonctionne.
+#### Spécificité des machines virtuelles sous LINUX
 
 Certaines machines virtuelles ne démarrerons pas correctement après la migration avec **Nutanix MOVE**, vérifiez la liste de compatibilité car il est probable que le pilote SCSI ne soit pas supporté et qu'il soit nécessaire de le changer avec le pilote PCI , dans cas il faudra suivre cette procédure [Changer le contrôleur disque d'une Machine Virtuelle](#changediskcontroller) après la migration de la machine virtuelle.
 
@@ -76,11 +76,11 @@ Connectez-vous sur le site de Nutanix avec un compte client pour télécharger l
 
 [Lien de téléchargement des pilotes VIRTIO](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
 
-Saisissez votre nom d'utilisateur dans `Emails`{.action}, votre mot de passe dans `Passwords`{.action} et cliquez sur `Log In`{.action}.
+Saisissez votre nom d'utilisateur dans `Emails`{.action}, votre mot de passe dans `Password`{.action} et cliquez sur `Log In`{.action}.
 
 ![Download Virtio01](images/DownloadVirtio01.PNG)
 
-Sur le portail Nutanix téléchargez la version qui vous convient en cliquant sur un des `Downloads`{.action}.
+Cliquant sur le `Download`{.action} qui vous convient.
 
 Nous allons prendre le pilote pour **Amd64**.
 
@@ -102,7 +102,7 @@ Cliquez sur `Finish`{.action} pour terminer l'installation sans avoir à redéma
 
 #### Téléchargement et importation des sources. 
 
-Récupérez le fichier au format **qcow2** sur ce site [Lien de téléchargement de MOVE](https://portal.nutanix.com/page/downloads?product=move)
+Récupérez le fichier au format **qcow2** sur ce site [Lien de téléchargement de Nutanix MOVE](https://portal.nutanix.com/page/downloads?product=move)
 
 Connectez-vous avec un compte enregistré chez Nutanix
 
@@ -118,7 +118,7 @@ Importez l'image téléchargée de **Nutanix Move** dans le cluster. Pour plus d
 
 Créez une machine virtuelle à partir de l'image Move
 
-Depuis **Prism Central** ouvrez le menu principal via le bouton en haut à gauche.
+Depuis **Prism Central** ouvrez le menu principal en cliquant sur le bouton en haut à gauche.
 
 ![Move Install 01](images/MoveInstall01.PNG)
 
@@ -176,7 +176,7 @@ La machine virtuelle est démarrée et l'on obtient une adresse IP si un serveur
 
 ![Move Install 14](images/MoveInstall14.PNG)
 
-Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
+Cette installation de **Nutanix Move** se fait sur un réseau ou il y'a un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
 
 Pour plus de détails sur **Nutanix MOVE**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -231,9 +231,11 @@ Les deux environements de migrations apparaissents en haut à gauche.
 ![MoveConfigure 11](images/MoveConfigure11.PNG)
 
 
-#### Création d'un plan de migration d'un serveur HYPER-V vers un environnement NUTANIX.
+#### Création d'un plan de migration
 
 Nous allons créer un plan de migration à partir des deux environnements créés précédemment.
+
+La source sera le serveur **HYPER-V** et la destination le cluster **NUTANIX**.
 
 Cliquez sur `Create a Migration Plan`{.action}
 
@@ -293,7 +295,7 @@ Cliquez sur Continue.
 
 ![Cut Over 03](images/CutOver03.PNG)
 
-La finalisation est en cours veuillez attendre tant qu'a l'écran apparaisse  `Final data sync in progress`
+La finalisation est en cours veuillez attendre 
 
 ![Cut Over 03](images/CutOver04.PNG)
 
@@ -305,7 +307,7 @@ Connectez-vous sur **Prism Central** pour voir les 3 Ordinateurs virtuels migré
 
 ![Cut Over 03](images/CutOver06.PNG)
 
-#### Modificztion du controleur de disque sur une machine virtuelle LINUX <a name="changediskcontroller"></a>
+#### Modification du controleur de disque sur une machine virtuelle LINUX <a name="changediskcontroller"></a>
 
 Si la machine virtuelle ne démarre pas correctement après la migration c'est que probablement ce n'est pas le bon contrôleur de disque dans la configuration de la machine virtuelle. Dans ce cas il faut le changer avec cette procédure.
 
@@ -317,7 +319,7 @@ Assurez-vous que la machine virtuelle est bien éteinte.
 
 ![Change Disk Controller 02](images/ChangeVMDiskController02.PNG)
 
-Revenez sur le Menu Principal et cliquez sur `VMs`{.action}.
+Revenez sur le Menu Principal et cliquez sur `Images`{.action}.
 
 ![Change Disk Controller 03](images/ChangeVMDiskController03.PNG)
 
@@ -325,7 +327,7 @@ Cliquez sur `add images`{.action}.
 
 ![Change Disk Controller 04](images/ChangeVMDiskController04.PNG)
 
-Choisissez **VM Disk** dans `Image Source`{action} , Ensuite saisissez un nom dans `Search by VM Name`{action} et cliquez sur `Signe+`{action}.
+Choisissez **VM Disk** dans `Image Source`{action} , Ensuite saisissez un nom dans `Search by VM Name`{action} et cliquez sur le `Signe+`{action}.
 
 ![Change Disk Controller 05](images/ChangeVMDiskController05.PNG)
 
@@ -365,7 +367,7 @@ Cliquez sur la `Attach Disk`{action}.
 
 ![Change Disk Controller 14](images/ChangeVMDiskController14.PNG)
 
-Choisissez **Disk** Dans `Type`{action}, prenez l'option **Clone from image** saisissez **Nom image créé** à `Image`{action} et mettre PCI à `Type`{action}.
+Choisissez **Disk** Dans `Type`{action}, prenez l'option **Clone from image** saisissez **Nom image créé** à `Image`{action}, mettre PCI à `Type`{action} et cliquez sur `Save`{action}
 
 ![Change Disk Controller 15](images/ChangeVMDiskController15.PNG)
 
@@ -380,6 +382,8 @@ Cliquez sur `Next`{action}.
 Cliquez sur `Save`{action}.
 
 ![Change Disk Controller 18](images/ChangeVMDiskController18.PNG)
+
+le contrôleur de disque a été modifié et la machine virtuelle demarre correctement.
 
 ## Aller plus loin <a name="gofurther"></a>
 
