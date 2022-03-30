@@ -16,6 +16,18 @@ Retrouvez ici les limites techniques relatives à l'offre Object Storage S3 High
 
 100
 
+### Nombre maximum d'objets dans un conteneurs
+
+Illimité
+
+### Bande passante maximale par connexion
+
+1 Gbps / connexion
+
+### Taille maximum par object / mpu / part
+
+5Go max par object, 10000 parts max dans un mpu, 5Mo size min pour un part
+
 ### Nombre maximum de comptes utilisateurs par projet
 
 1000
