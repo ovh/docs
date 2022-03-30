@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 08
 ---
 
-**Last updated 19th October 2021**
+**Last updated 24th March 2022**
 
 ## Objective
 
@@ -35,12 +35,12 @@ passwd: password updated
 successfully
 ```
 
-### Update repositories (Debian/Ubuntu)
+### Update the system (Debian/Ubuntu)
 
 To update the installed software packages on your server, type the following command at the command line:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Update the system (CentOS/Fedora)

@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 16-03-2021**
+**Ostatnia aktualizacja z dnia 25-03-2022**
  
 ## Wprowadzenie
 
@@ -57,14 +57,14 @@ Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz 
 
 Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z Twoim serwerem VPS używając informacji przekazanych e-mailem (nazwa użytkownika i adres IPv4):
 
-```sh
+```bash
 ssh username@IPv4_of_your_VPS
 ```
 
 Ponieważ jesteś teraz zalogowany z wysokimi prawami (użytkownik *sudo*), możesz wprowadzić polecenia do wykonywania zadań administracyjnych. Przed rozpoczęciem tych operacji zalecamy zmianę hasła:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -72,7 +72,7 @@ passwd: password updated successfully
 
 Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil „root” i ustaw Twoje hasło dostępu dla administratora:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -88,7 +88,7 @@ Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wył
 
 Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
 
-```sh
+```bash
 reboot
 ```
 
@@ -132,13 +132,13 @@ Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz 
 
 Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z serwerem VPS:
 
-```sh
+```bash
 ssh root@IPv4_of_your_VPS
 ```
 
 Albo:
 
-```sh
+```bash
 ssh root@your_VPS_reference_name
 ```
 
@@ -146,7 +146,7 @@ ssh root@your_VPS_reference_name
 
 Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
 
-```sh
+```bash
 reboot
 ```
 

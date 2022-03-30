@@ -6,7 +6,7 @@ section: Tutoriale
 order: 08
 ---
 
-**Ostatnia aktualizacja z dnia 19-10-2021**
+**Ostatnia aktualizacja z dnia 24-03-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
@@ -20,8 +20,8 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 
 ## Wymagania początkowe
 
-* instancja [Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- [Instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -38,12 +38,12 @@ Retype new UNIX password:
 passwd: password updated successfully 
 ```
 
-### Aktualizacja repozytoriów (Debian i Ubuntu)
+### Aktualizacja systemu (Debian i Ubuntu)
 
 Aby zaktualizować _pakiety_ oprogramowania zainstalowane na Twoim serwerze, wprowadź następującą komendę: 
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Aktualizacja systemu (CentOS i Fedora)
