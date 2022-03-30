@@ -41,7 +41,7 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action},puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Délier mon option e-mail`{.action}
 
