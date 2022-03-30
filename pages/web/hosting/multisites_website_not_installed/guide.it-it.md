@@ -63,7 +63,7 @@ Seleziona l'hosting interessato dalla lista e clicca sulla scheda `Multisito`{.a
 
 #### 2\.1 Identifica l'indirizzo IP del tuo hosting OVHcloud
 
-Per recuperare l'indirizzo IP, clicca su `Hosting` nella colonna di sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona l'hosting interessato.
+Per recuperare l'indirizzo IP, clicca su `Hosting` nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona l'hosting interessato.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

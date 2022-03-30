@@ -50,7 +50,7 @@ Para resolver esta anomalía, deberá:
 
 Los mensajes de error mencionados [anteriormente](#objective) no significan necesariamente que su sitio web esté alojado en uno de nuestros [planes Web Cloud](https://www.ovhcloud.com/es-es/web-hosting/). Por lo tanto, debe comprobar la dirección IP del servidor al que está asociado su [dominio](https://www.ovhcloud.com/es-es/domains/).
 
-Para encontrar la dirección IP de su [hosting OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente en el menú de la izquierda.
+Para encontrar la dirección IP de su [hosting OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/), haga clic en el botón `Web Cloud`{.action} situado en la esquina superior derecha de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o IPV6 de su alojamiento.
 
@@ -60,7 +60,7 @@ En la pestaña `Información general`{.action}, indique la dirección IPV4 y/o I
 
 Compruebe que la dirección IP indicada en [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns) corresponde a la de su [Web Cloud hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
-Haga clic en `Dominios`{.action} en la esquina superior izquierda de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el dominio de su sitio web.
+Haga clic en `Dominios`{.action}  de su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el dominio de su sitio web.
 
 Seleccione la pestaña `Zona DNS`{.action} y anote el destino del registro de tipo `A` para su dominio:
 

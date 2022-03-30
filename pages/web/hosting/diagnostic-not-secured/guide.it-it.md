@@ -50,7 +50,7 @@ Per risolvere questa anomalia, è necessario:
 
 I messaggi di errore menzionati [sopra](#objective) non significano necessariamente che il tuo sito è ospitato su una delle nostre [offerte Web Cloud](https://www.ovhcloud.com/it/web-hosting/). Dovrai quindi verificare l'indirizzo IP del server al quale è collegato il tuo [dominio](https://www.ovhcloud.com/it/domains/).
 
-Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/), clicca su `Web Cloud`{.action} nel menu a sinistra `Hosting`{.action} e seleziona l'hosting interessato.
+Per recuperare l'indirizzo IP del tuo [hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/), clicca su `Web Cloud`{.action} `Hosting`{.action} e seleziona l'hosting interessato.
 
 Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IPV6 del tuo hosting.
 
@@ -60,7 +60,7 @@ Nella scheda `Informazioni generali`{.action}, inserisci l'indirizzo IPV4 e/o IP
 
 A questo punto è necessario verificare che l'indirizzo IP indicato nella [Zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns) corrisponda a quello del tuo [hosting Web Cloud](https://www.ovhcloud.com/it/web-hosting/).
 
-Clicca su `Nomi di dominio`{.action} in alto a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il dominio del tuo sito.
+Clicca su `Nomi di dominio`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona il dominio del tuo sito.
 
 Seleziona la scheda `Zona DNS`{.action} e annota la destinazione d'ingresso di tipo `A` per il tuo dominio:
 

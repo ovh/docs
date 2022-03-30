@@ -151,7 +151,6 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 
 Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
 
-Nesta situação, modifique os [direitos do utilizador](../criar-bases-de-dados-e-utilizadores/#gerir-as-permissoes-dos-utilizadores) em causa para que possa usufruir dos direitos **Administrador** ou em **Leitura/Escrita** com base de dados.
 
 Verifique também as suas credenciais ao [ligar diretamente](../conexao-base-de-dados-servidor-bdd/#instrucoes) ao seu servidor de bases de dados e, de seguida, execute novamente a instalação do seu módulo.
 
@@ -161,7 +160,7 @@ Verifique também as suas credenciais ao [ligar diretamente](../conexao-base-de-
 
 Iniciou a instalação de um módulo 1 clique em [modo avançado](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/#instalacao-avancada) numa base de dados situada num [servidor CloudDB](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
 
-Clique na parte `Web cloud`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), depois no separador `Bases de dados`{.action} à esquerda do seu ecrã.
+Clique na parte `Web cloud`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), depois no separador `Bases de dados`{.action}.
 
 A seguir, clique na oferta em causa: o nome do servidor a utilizar é indicado sob a menção `Nome do host` na sub-parte `SQL` de `Informações da ligação`.
 

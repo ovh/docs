@@ -121,7 +121,7 @@ Consulte as respetivas páginas de informação para verificar as bibliotecas di
 
 Pode encontrar várias informações sobre o seu cluster através da seguinte ligação: <https://webhosting-infos.hosting.ovh.net>
 
-Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Alojamento`{.action} na barra à esquerda e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
+Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamento`{.action} e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
 
 Para conhecer as especificidades técnicas do serviço Cloud Web, clique aqui: <https://cloudweb-infos.hosting.ovh.net/>
 

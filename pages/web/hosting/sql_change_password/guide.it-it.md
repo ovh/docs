@@ -55,7 +55,7 @@ La modifica della password del database del tuo sito avviene in quattro step:
 
 ### Step 1: identifica il file di configurazione del tuo sito <a name="step1"></a>
 
-Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e poi sul menu a sinistra dello schermo, su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action} e su `Hosting`{.action} e infine sull'hosting interessato. Clicca sulla scheda `Multisito`{.action}. Identifica il nome della `Cartella di root` del tuo sito (la directory in cui si trovano file e cartelle).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Per registrare il *nome del server* e il *nome utente* del database, è necessar
 - Per DRUPAL: il *nome del server* appare sotto **"host"** e il *nome utente* sotto la dicitura **"username"**;
 - Per PRESTASHOP: il *nome del server* appare sotto **"database_host"** e il *nome utente* sotto la voce **"database_user"**.
 
-Clicca sulla parte **sinistra** dello schermo e poi su `Database`{.action}. 
+Clicca su `Database`{.action} nella sezione `Web Cloud`{.action}. 
 
 Nella scheda `Informazioni generali`{.action}, indica nelle tue offerte [CloudDB](https://www.ovh.it/cloud/cloud-databases/) quella che contiene, con la voce `Nome host`{.action}, il nome del server del tuo database trovato precedentemente.
 
@@ -215,7 +215,7 @@ Nella nuova finestra, inserisci la nuova password del tuo database (definita all
 
 #### Caso 2: il database del tuo sito fa parte di un'offerta CloudDB <a name="case2"></a>
 
-Accedi alla sezione `Database`{.action} del tuo Spazio Cliente (menu a sinistra) e clicca sulla scheda `Utenti e diritti`{.action}:
+Accedi alla sezione `Database`{.action} del tuo Spazio Cliente e clicca sulla scheda `Utenti e diritti`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

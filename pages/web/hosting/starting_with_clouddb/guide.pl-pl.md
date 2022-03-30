@@ -30,17 +30,17 @@ Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHclou
 
 ### Włączenie prywatnego CloudDB zawartego w ofercie hostingu
 
-Jeśli Twój hosting zawiera opcję prywatnego CloudDB, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+Jeśli Twój hosting zawiera opcję prywatnego CloudDB, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action}.
 
 W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
 ![Informacje ogólne](images/db-activation.png){.thumbnail}
 
-Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej, aby określić typ i wersję Twojego prywatnego CloudDB. Będzie on dostępny w kolumnie po lewej stronie w `bazie danych`{.action}.
+Postępuj zgodnie z instrukcjami, aby określić typ i wersję Twojego serwera CloudDB. Będzie on dostępny w `bazie danych`{.action}.
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >

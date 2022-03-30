@@ -26,17 +26,17 @@ Par défaut, votre solution CloudDB est liée au réseau d'hébergements web OVH
 
 ### Activation de votre serveur CloudDB inclus avec votre offre d'hébergement web
 
-Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche.
+Si votre offre d'hébergement inclut l'option CloudDB, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Depuis la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}.
 
 Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
 
 ![Informations générales](images/db-activation.png){.thumbnail}
 
-Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur CloudDB. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur CloudDB. Il sera ensuite accessible dans `Base de données`{.action}.
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >

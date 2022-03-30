@@ -37,7 +37,7 @@ Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OV
 
 ### Acceder a la gestión de los módulos en un clic
 
-En la columna izquierda del área de cliente de  OVHcloud, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
 
 ![Acceso a la sección «Módulos en un clic»](images/access_to_the_1_click_modules_section.png){.thumbnail}
 

@@ -6,7 +6,7 @@ section: Utilisation avancée
 order: 01
 ---
 
-**Dernière mise à jour le 04/02/2022**
+**Dernière mise à jour le 29/03/2022**
 
 ## Objectif
 
@@ -75,7 +75,7 @@ Vous pouvez retrouver le guide d'installation OVHcloud [ici](https://docs.ovh.co
 |SAP HANA|tout|Veeam Backup&Replication|10006|TCP|Port par défaut utilisé pour la communication avec le serveur Veeam Backup & Replication. Notez bien que les données entre les modules externes Veeam et les référentiels de sauvegarde sont transférées directement, en contournant le serveur Veeam Backup & Replication.|
 |SAP HANA|tout|Veeam Backup Repository|2500 à 3300|TCP|Plage par défaut des ports utilisés comme canaux de transmission de données. Pour chaque connexion TCP utilisée par un processus de sauvegarde, un port de cette plage est attribué.|
 |Veeam Backup & Replication|tout|Veeam Backup Repository|2500 à 3300|TCP|Plage par défaut des ports utilisés comme canaux de transmission de données. Pour chaque connexion TCP utilisée par un processus de sauvegarde, un port de cette plage est attribué|
-|Veeam Backup & Replication|tout|Serveur Linux utilisé comme repository de backup ou serveur gateway|2|TCP|Port utilisé comme canal de contrôle du serveur Veeam Plug-in vers l'hôte Linux cible|
+|Veeam Backup & Replication|tout|Serveur Linux utilisé comme repository de backup ou serveur gateway|22|TCP|Port utilisé comme canal de contrôle du serveur Veeam Plug-in vers l'hôte Linux cible|
 |Veeam Backup & Replication|tout|Microsoft Windows Server utilisé comme repository de backup ou serveur gateway|135, 137 à 139, 445|TCP/UDP|Ports utilisés comme canal de gestion du serveur Veeam Plug-in vers le serveur Repository/Gateway. Les ports sont également utilisés pour déployer les composants Veeam|
 |Veeam Backup & Replication|tout|Microsoft Windows Server utilisé comme repository de backup ou serveur gateway|6160, 6162|TCP|Ports par défaut utilisés par le Service Veeam Installer et le Service Veeam Data Mover|
 
@@ -121,13 +121,13 @@ Nous utiliserons donc la solution [OVHcloud Object Storage](https://www.ovhcloud
 - un [projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
 
 <ol start="1">
-  <li>Connectez-vous à l'<a class="external-link" href="https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR/" rel="nofollow">espace client OVHcloud</a>, accédez à la section `Public Cloud`{.action}, sélectionnez votre projet puis cliquez sur `Object Storage`{.action} et enfin cliquez sur `Créer un conteneur d'objets`{.action}.</li>
+  <li>Connectez-vous à l'<a class="external-link" href="https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR/" rel="nofollow">espace client OVHcloud</a>, accédez à la section <code class="action">Public Cloud</code>, sélectionnez votre projet puis cliquez sur <code class="action">Object Storage</code> et enfin cliquez sur <code class="action">Créer un conteneur d'objets</code>.</li>
 </ol>
 
 ![interface](images/1-manager-interface-fr.png){.thumbnail}
 
 <ol start="2">
-  <li>Sélectionner `Standard (Swift)`{.action}:</li>
+  <li>Sélectionner <code class="action">Standard (Swift)</code> :</li>
 </ol>
 
 ![swift](images/2-swift-fr.png){.thumbnail}
@@ -139,7 +139,7 @@ Nous utiliserons donc la solution [OVHcloud Object Storage](https://www.ovhcloud
 ![region](images/3-container-localization-fr.png){.thumbnail}
 
 <ol start="4">
-  <li>Sélectionnez le type de conteneur `Privé`{.action} : </li>
+  <li>Sélectionnez le type de conteneur <code class="action">Privé</code> : </li>
 </ol>
 
 ![container type](images/4-private-container-fr.png){.thumbnail}
@@ -155,7 +155,7 @@ Votre conteneur va maintenant apparaître dans la liste, comme montré ci-dessou
 ![container list](images/6-container-list-fr.png){.thumbnail}
 
 <ol start="6">
-  <li>Accédez à l'onglet `s3 users`{.action} pour créer un utilisateur : </li>
+  <li>Accédez à l'onglet <code class="action">s3 users</code> pour créer un utilisateur : </li>
 </ol>
 
 ![s3-users](images/7-create-user-fr.png){.thumbnail}
@@ -163,7 +163,7 @@ Votre conteneur va maintenant apparaître dans la liste, comme montré ci-dessou
 ***N.B : Stockez le mot de passe associé à cet utilisateur dans un gestionnaire de mots de passe, il ne vous sera fourni qu'une seule fois.***
 
 <ol start="7">
-  <li>Dans la section `Project Management`, donnez le rôle `Object Storage Operator`{.action} à l'utilisateur sous l'onglet `Users & Roles`{.action} :</li>
+  <li>Dans la section `Project Management`, donnez le rôle <code class="action">Object Storage Operator</action> à l'utilisateur sous l'onglet <code class="action">Users & Roles</clode> :</li>
 </ol>
 
 ![s3-role](images/8-user-roles-fr.png){.thumbnail}
@@ -264,9 +264,9 @@ Pour permettre la sauvegarde via l'API backint, une installation et une configur
 Voici comment fonctionne le backup :
 
 <ol start="1">
-<li>HANA démarre la sauvegarde.</li>
-<li>Veeam Plugin for SAP HANA attribue plusieurs flux à la cible de sauvegarde.</li>
-<li>Les données sont stockées sur le Backup Repository Veeam</li>
+  <li>HANA démarre la sauvegarde.</li>
+  <li>Veeam Plugin for SAP HANA attribue plusieurs flux à la cible de sauvegarde.</li>
+  <li>Les données sont stockées sur le Backup Repository Veeam</li>
 </ol>
 
 *** Pour plus d'informations, merci de vérifier la documentation [Veeam Plugin for SAP-HANA](https://helpcenter.veeam.com/docs/backup/plugins/sap_hana_plugin.html?ver=100){.external} ***

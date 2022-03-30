@@ -32,7 +32,7 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 - la dirección del servidor.
 - el puerto de conexión al servidor.
 
-Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección Web y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Habrá recibido esta información por correo electrónico tras la instalación de su alojamiento. Si no dispone de ellos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección Web y,Haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Para obtener una copia de seguridad de la base de datos, consulte nuestra guía:
 
 Si desea conservar el historial de los logs de su sitio web, puede acceder a ellos desde el alojamiento.
 
-En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}. Haga clic en el enlace que aparece `Ver los logs`{.action}.
+Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Haga clic en la pestaña `Estadísticas y logs`{.action}. Haga clic en el enlace que aparece `Ver los logs`{.action}.
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 

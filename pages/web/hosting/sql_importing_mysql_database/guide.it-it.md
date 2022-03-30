@@ -49,7 +49,7 @@ Continua la lettura in base al metodo di importazione scelto.
 
 ### Ripristino dallo Spazio Cliente OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
 
@@ -63,7 +63,7 @@ Clicca sui tre puntini in corrispondenza del database da ripristinare e selezion
 
 ### Importazione dallo Spazio Cliente OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
 
@@ -96,7 +96,7 @@ Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la f
 
 ### Interfaccia Web phpMyAdmin
 
-Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 

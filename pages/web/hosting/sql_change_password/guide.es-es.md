@@ -55,7 +55,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 
 ### Etapa 1: identificar el archivo de configuración del sitio web <a name="step1"></a>
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y, en el menú situado a la izquierda de su pantalla, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y, seleccione `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}. Identifique el nombre de la `Carpeta raíz` del sitio web (el directorio en el que se encuentran sus archivos y carpetas).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -108,7 +108,7 @@ En ese caso, deberá volver al archivo de configuración del sitio web para regi
 - Para DRUPAL: el *nombre del servidor* aparece en **"host"** y el *nombre de usuario* bajo la mención **"username"**;
 - Para PRESTASHOP: el *nombre del servidor* aparece en **"database_host"** y el *nombre de usuario* bajo la mención **"database_user"**.
 
-A continuación, haga clic en la columna **izquierda** de su pantalla en `Bases de datos`{.action}. 
+A continuación, haga clic en `Bases de datos`{.action} en el apartado `Web Cloud`{.action}. 
 
 En la pestaña `Información general`{.action}, identifique el nombre del servidor de la base de datos que haya encontrado antes en sus [CloudDB](https://www.ovh.es/cloud/cloud-databases/), con el `Nombre del host`{.action}.
 
@@ -215,7 +215,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 #### Caso n° 2: la base de datos de su sitio web forma parte de una solución CloudDB. <a name="case2"></a>
 
-Acceda a la sección `Bases de datos`{.action} del área de cliente (menú de la izquierda) y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
+Acceda a la sección `Bases de datos`{.action} del área de cliente y haga clic en el servidor correspondiente en la pestaña `Usuarios y permisos`{.action}.
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

@@ -37,7 +37,7 @@ First, check on [https://web-cloud.status-ovhcloud.com/](https://web-cloud.statu
 >
 > You can find these details in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), in the `Web Cloud`{.action} section:
 >
-> - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} from the left-hand menu and select the plan concerned. The information is available in the `General information`{.action} tab.
+> - To find your Web Hosting plan's data centre and filer (file server), open `Hosting plans`{.action} and select the plan concerned. The information is available in the `General information`{.action} tab.
 > - To find the **cluster** of servers on which your hosting is located, click on the `FTP-SSH`{.action} tab. The cluster identifier is part of the name of your `FTP server`.
 >
 

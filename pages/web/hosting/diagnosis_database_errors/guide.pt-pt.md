@@ -43,9 +43,9 @@ Em [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.co
 >
 > Para encontrar estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na parte `Web Cloud`{.action}:
 >
-> - Para encontrar o `Datacenter` do seu alojamento, bem como o seu `Filer` (servidor de ficheiro), escolha os `Alojamentos`{.action} no menu à esquerda e, a seguir, o alojamento em causa. Encontrará estas informações no separador `Informações gerais`{.action}.
+> - Para encontrar o `Datacenter` do seu alojamento, bem como o seu `Filer` (servidor de ficheiro), escolha os `Alojamentos`{.action} e, a seguir, o alojamento em causa. Encontrará estas informações no separador `Informações gerais`{.action}.
 > - Para encontrar o **cluster** de servidores em que se encontra o seu alojamento, clique no separador `FTP-SSH`{.action}. Esta informação aparecerá no nome do seu `Servidor FTP`.
-> - Para encontrar o nome do seu servidor **CloudDB**, clique em `Bases de dados`{.action} no menu à esquerda e, a seguir, na oferta em causa. Encontrará esta informação no separador `Informações gerais`{.action}.
+> - Para encontrar o nome do seu servidor **CloudDB**, clique em `Bases de dados`{.action} e, a seguir, na oferta em causa. Encontrará esta informação no separador `Informações gerais`{.action}.
 >
 
 #### Verificar os dados de acesso à sua base de dados <a name="config_file"></a>

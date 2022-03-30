@@ -38,7 +38,7 @@ Vérifiez tout d'abord sur [https://web-cloud.status-ovhcloud.com/](https://web-
 >
 > Pour retrouver ces informations, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans la partie `Web Cloud`{.action} :
 >
-> - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action} dans le menu de gauche, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
+> - Pour retrouver le `Datacentre` de votre hébergement, ainsi que son `Filer` (serveur de fichier), choisissez `Hébergements`{.action}, puis l'hébergement concerné. Vous trouverez ces informations dans l'onglet `Informations générales`{.action}.
 > - Pour retrouver le **cluster** de serveurs sur lequel se trouve votre hébergement, cliquez sur l'onglet `FTP-SSH`{.action}. Cette information apparaîtra dans le nom de votre `Serveur FTP`.
 >
 

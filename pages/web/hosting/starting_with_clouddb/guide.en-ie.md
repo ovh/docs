@@ -26,17 +26,17 @@ Your CloudDB solution is linked to the OVHcloud web hosting network by default. 
 
 ### CloudDB server activation included with your Web Hosting plan
 
-If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
+If your hosting plan includes the CloudDB option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action}.
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Private database**. Then click `Enable`{.action} to start the activation process.
 
 ![General information](images/db-activation.png){.thumbnail}
 
-To complete the activation, follow the instructions to determine the type and version of your CloudDB server. It will then be accessible from the left column in `Database`{.action}.
+To complete the activation, follow the instructions to determine the type and version of your CloudDB server. It will then be accessible in `Database`{.action}.
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+From [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >

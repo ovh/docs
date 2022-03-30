@@ -156,7 +156,7 @@ You can also verify your login details by [connecting directly](../connecting-to
 
 You have launched the installation of a 1-click module in [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation) on a database located on a [CloudDB server](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/). You received this error message by email. This means that the database server name you specified is incorrect.
 
-Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab on the left-hand side of your screen.
+Click on the `Web Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then on the `Databases`{.action} tab.
 
 Then click on the solution concerned: The name of the server to be used is indicated under `Host name` in the `SQL` section of `Login information`.
  
