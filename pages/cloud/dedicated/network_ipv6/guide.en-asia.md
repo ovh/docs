@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 1st December 2021**
+**Last updated 15th March 2022**
 
 ## Objective
 
@@ -131,7 +131,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in /etc/sysconfig/network-scripts/ifcfg-eth0. Use the command line to locate this file and open it for editing.
+Your server's network configuration file is located in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Use the command line to locate this file and open it for editing.
 
 #### Step 3: Amend the network configuration file
 
