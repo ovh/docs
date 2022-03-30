@@ -60,11 +60,13 @@ Connectez-vous sur ce site ci-dessous pour vérifier la compabilité des machine
 
 #### Spécificité des machines virtuelles sous LINUNX
 
-Si la machine virtuelle utilise un noyau avec une version minimale en 2.6.X il n'est pas nécessaire de préparer la machine virtuelle source elle peut démarrer sur le cluster NUTANIX avec les pilotes du noyau. Pour les machines virtuelles plus anciennes il faut faire quelques opérations particulières.
+La machine virtuelle doit faire partie de la liste des machines virtuelles supportées dans la matrice de compatibilité pour la migration fonctionne.
+
+Certaines machines virtuelles ne démarrerons pas correctement après la migration avec **Nutanix MOVE**, vérifiez la liste de compatibilité car il est probable que le pilote SCSI ne soit pas supporté et qu'il soit nécessaire de le changer avec le pilote PCI , dans cas il faudra suivre cette procédure [Changer le contrôleur disque d'une Machine Virtuelle](#changediskcontroller) après la migration de la machine virtuelle.
 
 #### Particularité de l'environnement Microsoft
 
-Microsoft ne fournit pas les pilotes **Virtio** de la carte SCSI et de la carte réseau. Il faut Installer ces pilotes avant de faire une migration avec l'outil **Nutanix Move**, ces pilotes sont disponibles sur le site de Nutanix avec un compte client.
+Microsoft ne fournit pas les pilotes **Virtio** de la carte SCSI et de la carte réseau. Il faut Installer ces pilotes avant de faire une migration, ces pilotes sont disponibles sur le site de Nutanix avec un compte client.
 
 > [!primary]
 > Microsoft Windows 2008 n'est plus supporté ni par Microsoft ni par Nutanix mais néanmoins il est possible d'installer d'anciens pilotes **Virtio** et de tenter une migration.
@@ -74,17 +76,17 @@ Connectez-vous sur le site de Nutanix avec un compte client pour télécharger l
 
 [Lien de téléchargement des pilotes VIRTIO](https://portal.nutanix.com/page/downloads?product=ahv&bit=VirtIO)
 
-Saisissez votre nom d'utilisateur dans `Emails`{.action}, votre mot de passe dans `Passwords`{.action} et cliquez sur `Log In`{.action} 
+Saisissez votre nom d'utilisateur dans `Emails`{.action}, votre mot de passe dans `Passwords`{.action} et cliquez sur `Log In`{.action}.
 
 ![Download Virtio01](images/DownloadVirtio01.PNG)
 
-Sur le portail Nutanix téléchargez la version qui vous convient en cliquant sur un des `Downloads`{.action}
+Sur le portail Nutanix téléchargez la version qui vous convient en cliquant sur un des `Downloads`{.action}.
 
-Nous allons prendre le pilote pour **Amd64** 
+Nous allons prendre le pilote pour **Amd64**.
 
 ![Download Virtio02 ](images/DownloadVirtio02.PNG)
 
-A partir d'une machine virtuelle sous Windows de l'environnement HYPER-V double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}
+A partir d'une machine virtuelle sous Windows de l'environnement HYPER-V double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}.
 
 ![Installing guest driver 01](images/VirtioGuestInstall01.PNG)
 
@@ -106,7 +108,7 @@ Connectez-vous avec un compte enregistré chez Nutanix
 
 ![Login Portal](images/PortalLogin.PNG)
 
-cliquez sur `Downloads`{.action} à droite de Move QCOW2 file for AHV
+Cliquez sur `Downloads`{.action} à droite de Move QCOW2 file for AHV.
 
 ![Download Move](images/DownloadMove.PNG)
 
@@ -116,7 +118,7 @@ Importez l'image téléchargée de **Nutanix Move** dans le cluster. Pour plus d
 
 Créez une machine virtuelle à partir de l'image Move
 
-Depuis Prism Central, ouvrez le menu principal via le bouton en haut à gauche.
+Depuis **Prism Central** ouvrez le menu principal via le bouton en haut à gauche.
 
 ![Move Install 01](images/MoveInstall01.PNG)
 
@@ -138,7 +140,7 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Move Install 05](images/MoveInstall05.PNG)
 
-Choississez ces options **Disk**, **Clone from Image** et **move-4.3.0.qcow2**  ensuite cliquez sur `Save`{.action}
+Choisissez ces options **Disk**, **Clone from Image** et **move-4.3.0.qcow2**  ensuite cliquez sur `Save`{.action}
 
 ![Move Install 06](images/MoveInstall06.PNG)
 
@@ -231,7 +233,7 @@ Les deux environements de migrations apparaissents en haut à gauche.
 
 #### Création d'un plan de migration d'un serveur HYPER-V vers un environnement NUTANIX.
 
-Nous allons créer un plan de migration à partir des deux environements créés précedemment.
+Nous allons créer un plan de migration à partir des deux environnements créés précédemment.
 
 Cliquez sur `Create a Migration Plan`{.action}
 
@@ -257,7 +259,7 @@ Cliquez sur `Next`{.action} pour valider la migration.
 
 ![CreateMigrationPLan 06](images/CreateMigrationPlan06.PNG)
 
-Cliquez sur `Save`{.action} pour Enregistrer le plan de migration sans l'éxecuter.
+Cliquez sur `Save`{.action} pour Enregistrer le plan de migration sans l'éxécuter.
 
 ![CreateMigrationPLan 07](images/CreateMigrationPlan07.PNG)
 
@@ -273,17 +275,17 @@ Dans le menu `Action` cliquez sur `Start`{.action}.
 
 ![CreateMigrationPLan 09](images/CreateMigrationPlan09.PNG)
 
-La migration est en cours et apparait en progrès `in progress` dans la colonne `Status` à droite de l'écran.
+La migration est en cours, sur la colonne `Status`  on voit l'état de la migration si elle est lancée elle apparait `in progress` à droite de l'écran.
 
 ![CreateMigrationPLan 10](images/CreateMigrationPlan10.PNG)
 
 #### Finalisation de la migration
 
-Contrôler l'état de la migration en se positionnant avec la souris sur `In Progress` un fenêtre doit apparaitre avec  cette information **Ready to Cutover N** N correspond aux nombre d'ordinateurs qui peuvent basculer. Cliquez sur `In Progress`{.action} pour lancer le processus de finalisation.
+Contrôler l'état de la migration en se positionnant avec la souris sur `In Progress` un fenêtre doit apparaitre avec cette information **Ready to Cutover N** N correspond aux nombre d'ordinateurs qui peuvent basculer. Cliquez sur `In Progress`{.action} pour lancer le processus de finalisation.
 
 ![Cut Over 01](images/CutOver01.PNG)
 
-Sélectionnez tous les ordinateurs en cliquant sur la case à cocher `VM Name`{.action} et en cliquez sur `Cutover`{.action}.
+Sélectionnez tous les ordinateurs en cliquant sur la case à cocher `VM Name`{.action} et cliquez sur `Cutover`{.action}.
 
 ![Cut Over 02](images/CutOver02.PNG)
 
@@ -291,20 +293,95 @@ Cliquez sur Continue.
 
 ![Cut Over 03](images/CutOver03.PNG)
 
-La finalisation est en cours veuillez attendre tant qu'a l'écran apparait  `Final data sync in progress`
+La finalisation est en cours veuillez attendre tant qu'a l'écran apparaisse  `Final data sync in progress`
 
 ![Cut Over 03](images/CutOver04.PNG)
 
-Le status de migration apparait dans `Migration Status` si l'on voit **Completed** c'est que la migration est terminée.
+La migration est terminée dès que l'on voit **Completed** dans `Migration Status`
 
 ![Cut Over 03](images/CutOver05.PNG)
 
-Si l'on se connecte dans **Prism Central** les 3 Ordinateurs virtuels migrés apparaissent et sont démarrés
+Connectez-vous sur **Prism Central** pour voir les 3 Ordinateurs virtuels migrés qui sont présents et démarrés.
 
 ![Cut Over 03](images/CutOver06.PNG)
 
-## Aller plus loin <a name="gofurther"></a>
+#### Modificztion du controleur de disque sur une machine virtuelle LINUX <a name="changediskcontroller"></a>
 
+Si la machine virtuelle ne démarre pas correctement après la migration c'est que probablement ce n'est pas le bon contrôleur de disque dans la configuration de la machine virtuelle. Dans ce cas il faut le changer avec cette procédure.
+
+Allez dans le menu Principal de **Prism Central** Cliquez sur `VMs`{.action}
+
+![Change Disk Controller 01](images/ChangeVMDiskController01.PNG)
+
+Assurez-vous que la machine virtuelle est bien éteinte.
+
+![Change Disk Controller 02](images/ChangeVMDiskController02.PNG)
+
+Revenez sur le Menu Principal et cliquez sur `VMs`{.action}.
+
+![Change Disk Controller 03](images/ChangeVMDiskController03.PNG)
+
+Cliquez sur `add images`{.action}.
+
+![Change Disk Controller 04](images/ChangeVMDiskController04.PNG)
+
+Choisissez **VM Disk** dans `Image Source`{action} , Ensuite saisissez un nom dans `Search by VM Name`{action} et cliquez sur `Signe+`{action}.
+
+![Change Disk Controller 05](images/ChangeVMDiskController05.PNG)
+
+Mettez un nom à `Image Name`{action} et cliquez sur `Next`{action}.
+
+![Change Disk Controler 06](images/ChangeVMDiskController06.PNG)
+
+Sélectionnez `Place image on source VM's cluster`{action} et cliquez sur `Save`{action}.
+
+![Change Disk Controller 07](images/ChangeVMDiskController07.PNG)
+
+L'image créé à partir de la machine virtuelle apparait au bout de quelques instants.
+
+![Change Disk Controller 08](images/ChangeVMDiskController08.PNG)
+
+Cliquez sur le `Menu principal`{action} et choisissez `VMs`{action} pour revenir sur le Machine virtuelles.
+
+![Change Disk Controller 09](images/ChangeVMDiskController09.PNG)
+
+Sélectionnez la machine virtuelle en cliquant sur la `case à cocher`{action} à gauche de cette machine virtuelle.
+
+![Change Disk Controller 10](images/ChangeVMDiskController10.PNG)
+
+Cliquez sur le menu `Actions`{action} et choisissez `Update`{action}
+
+![Change Disk Controller 11](images/ChangeVMDiskController11.PNG)
+
+Cliquez sur la `corbeille`{action} à coté du lecteur de CDROM.
+
+![Change Disk Controller 12](images/ChangeVMDiskController12.PNG)
+
+Cliquez sur la `corbeille`{action} à coté du lecteur de disque.
+
+![Change Disk Controller 13](images/ChangeVMDiskController13.PNG)
+
+Cliquez sur la `Attach Disk`{action}.
+
+![Change Disk Controller 14](images/ChangeVMDiskController14.PNG)
+
+Choisissez **Disk** Dans `Type`{action}, prenez l'option **Clone from image** saisissez **Nom image créé** à `Image`{action} et mettre PCI à `Type`{action}.
+
+![Change Disk Controller 15](images/ChangeVMDiskController15.PNG)
+
+Cliquez sur `Next`{action}.
+
+![Change Disk Controller 16](images/ChangeVMDiskController16.PNG)
+
+Cliquez sur `Next`{action}.
+
+![Change Disk Controller 17](images/ChangeVMDiskController17.PNG)
+
+Cliquez sur `Save`{action}.
+
+![Change Disk Controller 18](images/ChangeVMDiskController18.PNG)
+
+## Aller plus loin <a name="gofurther"></a>
 
 
 [Installation et configuration de Move](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Move-v4_3:Nutanix-Move-v4_3)
