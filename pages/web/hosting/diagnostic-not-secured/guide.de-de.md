@@ -48,7 +48,7 @@ Um die Problemursache zu beheben müssen Sie:
 
 Die [oben](#objective) genannten Fehlermeldungen bedeuten nicht unbedingt, dass Ihre Website auf einem unserer [Web Cloud Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird. Überprüfen Sie daher die IP-Adresse des Servers, auf den Ihr [Domainname](https://www.ovhcloud.com/de/domains/) verweist.
 
-Um die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) herauszufinden, klicken Sie oben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus.
+Um die IP-Adresse Ihres [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) herauszufinden, gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zu `Web Cloud`{.action} und wählen Sie das betreffende Hosting unter `Hosting-Pakete`{.action} aus.
 
 Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse Ihres Hostings angezeigt.
 
@@ -58,7 +58,7 @@ Im Tab `Allgemeine Informationen`{.action} wird Ihnen die IPv4- und IPv6-Adresse
 
 Überprüfen Sie nun, ob die in der [DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) hinterlegte IP-Adresse der Adresse Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/) entspricht.
 
-Begeben Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Domainnamen`{.action} und wählen Sie die Domain Ihrer Website aus.
+Loggen Sie Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und  und wählen Sie den Domainnamen Ihrer Website unter `Domainnamen`{.action} aus.
 
 Wechseln Sie zum Tab `DNS-Zone`{.action} aus und notieren Sie das "Ziel" des Eintrags vom Typ `A` Ihres Domainnamens:
 
@@ -95,7 +95,7 @@ Wenn Sie über ein **importiertes SSL-Zertifikat** verfügen, kontaktieren Sie d
 
 >[!primary]
 >
-> Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann auf `E-Mails vom Support`{.action}:
+> Um alle von unseren Diensten versendeten E-Mails einzusehen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und dann auf `E-Mails von OVHcloud`{.action}:
 >
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
