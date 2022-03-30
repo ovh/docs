@@ -10,7 +10,7 @@ order: 01
 
 ## Objectif
 
-Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des migrations depuis d'autres environnements vers **AHV*
+Nutanix fourni un outil qui se nomme **Nutanix MOVE** et qui permet de faire des migrations depuis d'autres environnements vers **AHV**
 
 **Ce guide vous explique comment effectuer une migration avec ce logiciel**.
 
@@ -41,18 +41,20 @@ le logiciel **Nutanix Move** est le seul à communiquer entre la source et la de
 
 > [!warning]
 > Il est fortement déconseillé d'utiliser **Nutanix Move** Avec des machines virtuelles sous Windows Server exécutant **Active Directory** ou **Microsoft Exchange** il est plus judicieux de faire une migration selon les préconisations de Microsoft 
+>
 > Pour les machines virtuelles qui utilisent des bases de données sous **Microsoft SQL** lors de finalisation d'une migration il est préférable d'avoir le service de la base de données stoppé.
+>
 > IL faut vérifier la compatibilité la machine virtuelle d'origine avec l'environnement Nutanix de destination.
 
 ## En pratique
 
 Nous allons voir comment effectuer une migration entre un environnement distant sur HYPERV et un environnement NUTANIX OVHCloud.
 
-La source et la destination sont sur deux réseaux privés interconnectés au travers d'un VPN **IPSEC**.
+La source et la destination sont sur deux réseaux privés interconnectés au travers d'un **VPN IPSEC**.
 
 ### Préparation des machines virtuelles d'origines avant migration.
 
-Connectez-vous sur ce site pour vérifier la comptabilité des machines sources avec le futur environnement sous Nutanix
+Connectez-vous sur ce site ci-dessous pour vérifier la compabilité des machines sources avec l'environnement de destination sous Nutanix :
 
 [Matrice de comptatibilité Nutanix](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/guestos)
 
@@ -84,13 +86,15 @@ Nous allons prendre le pilote pour **Amd64**
 
 A partir d'une machine virtuelle sous Windows de l'environnement HYPER-V double-cliquez sur `Nutanix-VirtIO-1.1.7-amd64`{.action}
 
-![Installing guest driver 01](images/VirtGuestInstall01.PNG)
+![Installing guest driver 01](images/VirtioGuestInstall01.PNG)
 
 Cliquez sur `I accept the terms in the license Agreement`{.action} ainsi que sur `Install`{.action}
 
-![Installing guest driver 02](images/VirtGuestInstall02.PNG)
+![Installing guest driver 02](images/VirtioGuestInstall02.PNG)
 
 Cliquez sur `Finish`{.action} pour terminer l'installation sans avoir à redémarrer la machine virtuelle.
+
+![Installing guest driver 03](images/VirtioGuestInstall03.PNG)
 
 ### Installation de MOVE sur le Cluster NUTANIX.
 
@@ -106,7 +110,7 @@ cliquez sur `Downloads`{.action} à droite de Move QCOW2 file for AHV
 
 ![Download Move](images/DownloadMove.PNG)
 
-Importez l'image téléchargée de Move dans Nutanix. Pour plus d'informations sur l'importation d'images cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
+Importez l'image téléchargée de **Nutanix Move** dans le cluster. Pour plus d'informations sur l'importation d'images cliquez sur ce lien [Importation d'images](https://docs.ovh.com/fr/nutanix/image-import/).
 
 #### Installation de la machine virtuelle **Move**
 
@@ -128,17 +132,15 @@ Saisissez **Nutanix MOVE** dans `Name`{.action}
 
 Choisissez ces options **2 vCPU**, **2 Cores** et **8 GB** dans `VM Properties`{.action} et Cliquez sur `Next`{.action}
 
-![Move Install 04](images/MoveInstall05.PNG)
+![Move Install 04](images/MoveInstall04.PNG)
 
 Cliquez sur `Attach Disk`{.action}
 
 ![Move Install 05](images/MoveInstall05.PNG)
 
-Cliquez sur `Attach Disk`{.action}
-
-![Move Install 06](images/MoveInstall05.PNG)
-
 Choississez ces options **Disk**, **Clone from Image** et **move-4.3.0.qcow2**  ensuite cliquez sur `Save`{.action}
+
+![Move Install 06](images/MoveInstall06.PNG)
 
 Cliquez sur `Attach to Subnet`{.action}
 
@@ -170,7 +172,7 @@ Cliquez sur `Power On`{.action} dans le menu action pour démarrer la machine vi
 
 La machine virtuelle est démarrée et l'on obtient une adresse IP si un serveur **DHCP** est opérationnel sur ce réseau.
 
-![Move Install 14](images/MoveInstall13.PNG)
+![Move Install 14](images/MoveInstall14.PNG)
 
 Cette installation de Nutanix Move se fait sur un réseau ou il y'a un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
 
@@ -206,7 +208,7 @@ Choisissez `Nutanix AOS`{.action}
 
 ![MoveConfigure 06](images/MoveConfigure06.PNG)
 
-Saisissez ces informations **PRISM-CENTRAL-DESTINATION** dans `Environment Name`{.action}, l'adresse IP privée de **Prism Central** dans `Nutanix Environment`{.action}, Un compte d'administration de **Prism Central** dans `Username `{.action}, le mot de passe de compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter **Prism Central** comme environnement. 
+Saisissez ces informations **PRISM-CENTRAL-DESTINATION** dans `Environment Name`{.action}, l'adresse IP privée de **Prism Central** dans `Nutanix Environment`{.action}, Un compte d'administration de **Prism Central** dans `Username `{.action}, le mot de passe du compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter un environnement **Prism Central**. 
 
 ![MoveConfigure 07](images/MoveConfigure07.PNG)
 
@@ -218,7 +220,7 @@ Cliquez sur `Add Environment`{.action}
 
 ![MoveConfigure 09](images/MoveConfigure09.PNG)
 
-Saisissez ces informations **HYPERV-SOURCE** dans `Environment Name`{.action}, l'adresse IP privée du serveur **HYPER-V** dans `Hyper-V Server/Cluster`{.action}, un compte d'administration **HYPER-V** dans `Username `{.action} , le mot de passe de ce compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter **Prism Central** comme environnement. 
+Saisissez ces informations **HYPERV-SOURCE** dans `Environment Name`{.action}, l'adresse IP privée du serveur **HYPER-V** dans `Hyper-V Server/Cluster`{.action}, un compte d'administration **HYPER-V** dans `Username `{.action} , le mot de passe de ce compte dans `Password`{.action} et cliquez sur `ADD`{.action} pour ajouter un environnement **HYPER-V**. 
 
 ![MoveConfigure 10](images/MoveConfigure10.PNG)
 
@@ -229,7 +231,7 @@ Les deux environements de migrations apparaissents en haut à gauche.
 
 #### Création d'un plan de migration d'un serveur HYPER-V vers un environnement NUTANIX.
 
-Nous allons créer un plan de migration à partir des deux environements crées précedemment.
+Nous allons créer un plan de migration à partir des deux environements créés précedemment.
 
 Cliquez sur `Create a Migration Plan`{.action}
 
@@ -289,7 +291,7 @@ Cliquez sur Continue.
 
 ![Cut Over 03](images/CutOver03.PNG)
 
-La finalisation est en cours veuillez attendre elle apparait `Final data sync in progress`
+La finalisation est en cours veuillez attendre tant qu'a l'écran apparait  `Final data sync in progress`
 
 ![Cut Over 03](images/CutOver04.PNG)
 
