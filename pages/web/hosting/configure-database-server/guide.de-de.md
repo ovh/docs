@@ -70,7 +70,6 @@ Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie 
 > Die IP-Adresse des Clusters wird nicht funktionieren, um die Verbindung mit dem Cloud-DB-Server zu ermöglichen. Es muss die ausgehende IP-Adresse („gateway“)  hinzugefügt werden.
 >
 
-
 ### Wechseln des Datenbank-Angebots
 
 Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
