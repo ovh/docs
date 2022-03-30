@@ -1,9 +1,7 @@
 ---
 title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
-id: '1585'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
-legacy_guide_number: g1585
 section: Diagnose
 order: 4
 ---
@@ -64,7 +62,7 @@ Wählen Sie das betreffende Hosting aus der Liste aus und klicken Sie dann auf d
 
 #### 2\.1 Die IP-Adresse Ihres OVHcloud Hostings identifizieren
 
-Um die korrekte IP-Adresse herauszufinden, klicken Sie in Ihrem [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus.
+Um die korrekte IP-Adresse herauszufinden, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus.
 
 ![hosting-general-information](images/hosting-general-informations.png){.thumbnail}
 
