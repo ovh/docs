@@ -1,6 +1,6 @@
 ---
-title: 'Augmenter la taille d’un disque supplémentaire'
-excerpt: 'Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale'
+title: "Augmenter la taille d’un disque supplémentaire"
+excerpt: "Découvrez comment augmenter la taille d'un volume supplémentaire et agrandir sa partition principale"
 slug: augmenter-la-taille-dun-disque-supplementaire
 section: 'Stockage'
 order: 6
