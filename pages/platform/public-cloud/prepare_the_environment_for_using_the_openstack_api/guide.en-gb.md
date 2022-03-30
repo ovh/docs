@@ -6,7 +6,7 @@ section: OpenStack
 order: 1
 ---
 
-**Last updated 22nd December 2021**
+**Last updated 30th March 2022.**
 
 ## Objective
 
@@ -26,22 +26,18 @@ With the OpenStack API, you can automate your management by generating scripts. 
 
 Open the terminal and connect to the environment you want to prepare via SSH.
 
-Update the packet cache using the `apt-get update` command:
+Update the packet cache using the `apt update` command:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Use the command below to install the Nova client (compute application) and Swift:
+Use the command below to install the OpenStack client, as well as Nova client (compute application) and Swift using python3-pip:
 
 ```sh
-apt-get install python-openstackclient python-novaclient python-swiftclient -y
-```
-
-Python3 Version
-
-```sh
-apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -67,22 +63,13 @@ Update the packet cache using the following command:
 ```sh
 yum update -y
 ```
-Install the rdo-release RPM with the following command:
+
+Use the command below to install the OpenStack client, as well as Nova client (compute application) and Swift using python3-pip:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-Then the OpenStack client:
-
-```sh
-yum install -y python-openstackclient
-```
-
-And finally, the Nova client:
-
-```sh
-yum install -y python-novaclient
+yum install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -140,7 +127,7 @@ The changes you have made will become effective after the system has been reboot
 As an administrator, open the program in the command line (CMD), and install the OpenStack client using the following command:
 
 ```sh
-# pip install python-openstackclient
+pip install python-openstackclient
 ```
 
 If the operation is completed properly, you will see a summary:
