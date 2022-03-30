@@ -30,17 +30,18 @@ Ihre CloudDB Lösung ist standardmäßig an das Webhosting-Netzwerk von OVHcloud
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen CloudDB Servers
 
-Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
+Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} auf `Hosting-Pakete`{.action}.
 
 Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
 ![Allgemeine Informationen](images/db-activation.png){.thumbnail}
 
-Folgen Sie den Anweisungen, um Typ und Version Ihres CloudDB Servers zu bestimmen. Nach Abschluss des Vorgangs kann der CloudDB Dienst über die linke Menüspalte unter `Datenbanken`{.action} eingesehen werden.
+Folgen Sie den Anweisungen zur Bestimmung von Typ und Version Ihres CloudDB Servers. Sie können dann in `Datenbank`{.action} eingesehen werden.
 
 ### Allgemeine Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+
 
 > [!primary]
 >

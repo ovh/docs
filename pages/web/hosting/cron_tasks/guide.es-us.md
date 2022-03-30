@@ -32,7 +32,7 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente, abra la pestaña `Plus+`{.action} y haga clic en `Tareas planificadas - Cron.`{.action}
 

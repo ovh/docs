@@ -32,7 +32,7 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action} na coluna da esquerda.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action}.
 
 Selecione o alojamento em causa, clique no separador `Plus+`{.action} e, a seguir, em `Tarefas programadas - Cron`{.action}
 

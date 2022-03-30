@@ -58,7 +58,7 @@ Select the concerned hosting plan in the list, then click on the `Multisite`{.ac
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
-To find the IP address, click `Hosting plans`{.action} in the left-hand column of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then select the concerned Hosting plan.
+To find the IP address, click `Hosting plans`{.action} in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), then select the concerned Hosting plan.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

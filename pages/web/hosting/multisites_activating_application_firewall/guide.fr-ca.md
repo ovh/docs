@@ -31,7 +31,7 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Dans la barre de services à gauche, cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
 
 ### Activer le pare-feu applicatif dans la configuration PHP
 

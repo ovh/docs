@@ -36,7 +36,7 @@ Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta
 
 ### Dostęp do zarządzania modułami
 
-W menu usług po lewej stronie Panelu klienta, przejdź do sekcji `Hosting`{.action}, a następnie kliknij nazwę Twojej usługi. Wsród dostępnych zakładek, wybierz i kliknij zakładkę `Moduły`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Wsród dostępnych zakładek, wybierz i kliknij zakładkę `Moduły CMS`{.action}.
 
 W tu możesz przeglądać już zainstalowane moduły, zarządzać nimi i instalować nowe.
 

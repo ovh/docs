@@ -23,7 +23,7 @@ Za pomocą serwerów baz Cloud Databases możesz wpłynąć na globalne parametr
 
 ### Wyświetl ogólne informacje o serwerze baz danych
 
-Na pasku usług po lewej stronie Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Prosimy o poświęcenie kilku minut na sprawdzenie, czy wyświetlane informacje są poprawne lub zgodne z poniższymi wskazówkami.
 
@@ -43,7 +43,7 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Pr
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
 
-W tym celu przejdź do paska usług po lewej stronie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. 
+W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. 
 
 Kliknij kartę Autoryzowane `IP`{.action}, a następnie przycisk `Dodaj adres IP/maskę`{.action}.
 
@@ -57,7 +57,7 @@ W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autor
 
 W przypadku hostingu OVHcloud należy autoryzować adres IP "bramy wyjściowej" (gateway). 
 
-Aby uzyskać adres IP "**bramy wyjściowej**", przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Hosting`{.action} w kolumnie po lewej stronie. Wybierz hosting z listy i kliknij zakładkę `FTP - SSH`.
+Aby uzyskać adres IP "**bramy wyjściowej**", przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Hosting`{.action}. Wybierz hosting z listy i kliknij zakładkę `FTP - SSH`.
 
 Na stronie znajdziesz wpis **"Serwer FTP"**, pod którym wpiszesz numer klastra, na którym się znajdujesz.
 
@@ -73,7 +73,7 @@ Po odnalezieniu numeru klastra, na którym znajduje się Twój hosting, sprawdź
 
 ### Zmiana oferty serwera baz danych
 
-Aby zmienić ofertę serwera baz danych, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych.
+Aby zmienić ofertę serwera baz danych, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.
 
 ![clouddb](images/private-sql-order-ram01.png){.thumbnail}
@@ -94,7 +94,7 @@ Po zatwierdzeniu regulaminów zostaniesz przekierowany do zamówienia, abyś mó
 
 ### Zmiana konfiguracji serwera baz danych
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę prywatnego serwera SQL. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę prywatnego serwera SQL. 
 
 #### Instancja MySQL i MariaDB
 
@@ -207,7 +207,7 @@ show variables like "version";
 
 Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
 
@@ -221,7 +221,7 @@ Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykon
 
 Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych. 
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
 
@@ -234,7 +234,7 @@ Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapy
 
 #### Monitoruj zużytą pamięć RAM
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"**.
 
@@ -244,7 +244,7 @@ Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"
 
 Wykres ten pozwala na śledzenie, w ciągu ostatnich 24 godzin, obciążenia połączeń na minutę na serwerze bazy danych.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej liczby połączeń na minutę"**.
 
