@@ -270,17 +270,41 @@ Dans le menu `Action` cliquez sur `Start`{.action}.
 
 ![CreateMigrationPLan 09](images/CreateMigrationPlan09.PNG)
 
-La migration est en cours et apparait en progrès `in progress`dans la colonne `Status` à droite de l'écran.
+La migration est en cours et apparait en progrès `in progress` dans la colonne `Status` à droite de l'écran.
 
 ![CreateMigrationPLan 10](images/CreateMigrationPlan10.PNG)
 
-!!!! Reste à rajouter le cut Over
+#### Finalisation de la migration
+
+Vérifiez que vous pouvez basculer en vous postionnant avec la souris sur `In Progress` un fenêtre va apparaitre avec à l'intérieur cette information **Ready to Cutover N** N correspond aux nombre d'ordinateurs qui peuvent basculer. Cliquez sur `In Progress`{.action} pour lancer le processus de finalisation.
+
+![Cut Over 01](images/CutOver01.PNG)
+
+Sélectionnez tous les ordinateurs en cliquant sur la case à cocher `VM Name`{.action} et en cliquez sur `Cutover`{.action}.
+
+![Cut Over 02](images/CutOver02.PNG)
+
+Cliquez sur Continue. 
+
+![Cut Over 03](images/CutOver03.PNG)
+
+La finalisation est en cours veuillez attendre elle apparait `Final data sync in progress`
+
+![Cut Over 03](images/CutOver04.PNG)
+
+Le status de migration apparait dans `Migration Status` si l'on voit **Completed** c'est que la migration est terminée.
+
+![Cut Over 03](images/CutOver05.PNG)
+
+Si l'on se connecte dans **Prism Central** les 3 Ordinateurs virtuels migrés apparaissent et sont démarrés
+
+![Cut Over 03](images/CutOver06.PNG)
 
 ## Aller plus loin <a name="gofurther"></a>
 
 
-[Installation et configuration de Move](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Move-v4_3:Nutanix-Move-v4_3)
 
+[Installation et configuration de Move](https://portal.nutanix.com/page/documents/details?targetId=Nutanix-Move-v4_3:Nutanix-Move-v4_3)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
