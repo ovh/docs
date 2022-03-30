@@ -1,7 +1,7 @@
 ---
 title: Migration vers Nutanix au travers de MOVE
 slug: move-to-nutanix
-excerpt: 'Installer, configurer et utiliser l'outil de migration MOVE'
+excerpt: "Installer, configurer et utiliser l'outil de migration MOVE"
 section: Utilisation avancée
 order: 02
 ---
