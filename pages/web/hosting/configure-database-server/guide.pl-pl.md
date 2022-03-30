@@ -6,7 +6,7 @@ section: 'CloudDB'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 09-03-2022**
+**Ostatnia aktualizacja z dnia 29-03-2022**
 
 ## Wprowadzenie
 
@@ -113,7 +113,7 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 - **Maksymalna liczba połączeń**: Liczba autoryzowanych jednoczesnych połączeń do bazy danych.
 - **Wait_timeout**: Czas w sekundach, podczas których serwer czeka na działanie w nieinteraktywnym połączeniu przed jego zamknięciem.
 - **Event_scheduler**: Umożliwia uruchamianie wykonywania zaprogramowanych zapytań bezpośrednio na serwerze MySQL.
-- **sql_mode**: Opcja **sql_mode** wpływa na składnię SQL oraz sprawdzanie poprawności danych przez MySQL lub MariaDB. Dostępny wyłącznie dla MariaDB.
+- **sql_mode**: Opcja **sql_mode** wpływa na składnię SQL oraz sprawdzanie poprawności danych przez MySQL lub MariaDB.
 
 > [!primary]
 > Jeśli na Twojej stronie pojawi się błąd wskazujący **"Too many connections"**, jest to spowodowane przekroczeniem liczby jednoczesnych połączeń do Twojej bazy danych.
@@ -133,9 +133,17 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 >
 > <b>sql_mode</b>:
 >
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Tryb domyślny dla MariaDB 10.1.
+> &emsp;&emsp;Tryb domyślny dla MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
 > 
-> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Tryb domyślny dla MariaDB 10.2 i nowszych wersji.
+> &emsp;&emsp;Tryb domyślny dla MariaDB 10.2 i nowszych wersji:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Tryb domyślny dla MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Tryb domyślny dla MySQL 5.7 i nowszych wersji:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
 > Zalecamy, aby zawsze używać trybu domyślnego, chyba że baza danych została zaktualizowana z wersji mającej inny tryb domyślny niż bieżąca wersja.
 >

@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Last updated 9th March 2022**
+**Last updated 29th March 2022**
 
 ## Objective
 
@@ -116,7 +116,7 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 - <b>MaxConnections:</b> The number of concurrent connections authorised on CloudDB.
 - <b>Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
 - <b>Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
-- <b>sql_mode</b>: The <b>sql_mode</b> option affects the supported SQL syntax, and the data validation performed by MySQL/MariaDB. Only available for MariaDB.
+- <b>sql_mode</b>: The <b>sql_mode</b> option affects the supported SQL syntax, and the data validation performed by MySQL/MariaDB.
 
 > [!primary]
 > When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
@@ -136,9 +136,17 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 >
 > <b>sql_mode</b>:
 >
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>&emsp;&emsp;Default mode of MariaDB 10.1.
+> &emsp;&emsp;Default mode of MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
 > 
-> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>&emsp;&emsp;Default mode of MariaDB 10.2 and higher.
+> &emsp;&emsp;Default mode of MariaDB 10.2 and higher:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Default mode of MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Default mode of MySQL 5.7 and higher:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
 > We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
