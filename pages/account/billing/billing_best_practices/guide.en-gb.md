@@ -17,7 +17,7 @@ This guide will give you all the tips to manage properly your account and the bi
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on <https://community.ovh.com/en/> if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
