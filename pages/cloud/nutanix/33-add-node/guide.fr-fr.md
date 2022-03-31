@@ -49,7 +49,7 @@ Sur le tableau de bord les 3 nœuds sont visibles dans `Hardware Summary`, Cliqu
 
 Une vue plus détaillée apparait avec des informations comme l'espace total et la capacité de résilience du stockage. Cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
-![Cluster detail before Expansion](images/ClusterDetailBeforeFromDashboard.PNG){.thumbnail}
+![Cluster detail before Expansion](images/ClusterDetailBFromDashboard.PNG){.thumbnail}
 
 Cliquez sur le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
 
