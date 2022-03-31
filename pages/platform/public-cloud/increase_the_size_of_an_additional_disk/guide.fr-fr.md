@@ -12,26 +12,26 @@ order: 6
 
 Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous pouvez ajouter du stockage en augmentant sa taille. 
 
-**Ce guide explique comment augmenter la taille d'un disque supplémentaire et étendre la partition principale en conséquence.**
+**Ce guide explique comment augmenter la taille d'un disque supplémentaire et comment étendre la partition principale en conséquence.**
 
 ## Prérequis
 
-- Une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud
-- Un disque [supplémentaire](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/) créé dans votre projet
-- Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr)
-- Avoir un accès administratif (root) à votre instance via SSH (Linux) ou RDP (Windows)
+- Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud.
+- Un [disque supplémentaire](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/) créé dans votre projet.
+- Être connecté votre à [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
+- Avoir un accès administratif (root) à votre instance via SSH (Linux) ou RDP (Windows).
 
-## Instructions
+## En pratique
 
-Les étapes suivantes supposent que vous avez configuré un disque supplémentaire selon [notre guide](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/).
+Les étapes suivantes supposent que vous avez déjà configuré un disque supplémentaire selon les intrusctions de [notre guide](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/).
 
 ### Modifier la taille du disque
 
-Connectez-vous à votre espace client [OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche.
 
-Si le volume est attaché à une **instance Windows*, cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Détacher de l'instance`{.action}.
+Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume et sélectionnez `Détacher de l'instance`{.action}.
 
-Cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Modifier`{.action}.
+Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Editer`{.action}.
 
 ![tableau de bord](images/increase-disk-02.png){.thumbnail}
 
@@ -41,7 +41,7 @@ Dans la fenêtre qui apparaît, indiquez la nouvelle taille du volume et cliquez
 
 Assurez-vous que le volume est attaché à votre instance avant de continuer. Si ce n'est pas le cas, cliquez sur `...`{.action} dans la ligne du volume et sélectionnez `Attacher à l'instance`{.action}.
 
-### Extension de la partition (instance Linux)
+### Etendre la partition (instance Linux)
 
 Ouvrez une connexion SSH à votre instance pour ajuster la partition au disque redimensionné.
 
@@ -51,22 +51,25 @@ Démontez d’abord le disque en utilisant cette commande :
 admin@server:~$ sudo umount /mnt/disk
 ```
 
-Recréer la partition :
+Recréez la partition :
 
 ```bash
 admin@server:~$ sudo fdisk /dev/vdb
 ```
+
 ```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command
 ```
+
 ```console
 Command (m for help): d
 
 Selected partition 1
 Partition 1 has been deleted.
 ```
+
 ```console
 Command (m for help): n
 
@@ -81,6 +84,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
 
 Created a new partition 1 of type 'Linux' and of size 70 GiB.
 ```
+
 ```console
 Command (m for help): w
 
@@ -89,7 +93,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Vérifier et vérifier la partition :
+Vérifiez la partition :
 
 ```bash
 admin@server:~$ sudo e2fsck -f /dev/vdb1
@@ -129,11 +133,11 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
-### Extension de la partition (instance Windows)
+### Etendre la partition (instance Windows)
 
-Établissez une connexion RDP (Remote Desktop) avec votre instance Windows.
+Établissez une connexion RDP (Remote Desktop) sur votre instance Windows.
 
-Une fois connecté, faites un clic droit sur le bouton `Menu`{.action} Démarrer et ouvrez `Gestion`{.action} des disques.
+Une fois connecté, faites un clic-droit sur le bouton `Démarrer`{.action} et ouvrez la `Gestion des disques`{.action}.
 
 ![windows](images/resize-win-01.png){.thumbnail}
 
@@ -141,13 +145,15 @@ Le disque étendu affiche désormais la capacité supplémentaire sous forme d'e
 
 ![windows](images/resize-win-02.png){.thumbnail}
 
-Faites un clic droit sur le volume et sélectionnez `Étendre le volume`{.action} dans le menu contextuel.
+Faites un clic-droit sur le volume et sélectionnez `Étendre le volume`{.action} dans le menu contextuel.
 
 ![windows](images/resize-win-03.png){.thumbnail}
 
-Dans l'Assistant Extension de volume, cliquez sur `Suivant`{.action} pour continuer.
+Dans l'assistant d'extension de volume, cliquez sur `Suivant`{.action} pour continuer.
 
-Vous pouvez modifier l'espace disque à cette étape si vous souhaitez ajouter moins que la totalité de la partition. Cliquez sur `Suivant`{.action}.
+Vous pouvez modifier l'espace disque à cette étape si vous souhaitez ajouter une capacité moindre que la totalité de la partition.
+
+Cliquez sur `Suivant`{.action}.
 
 ![windows](images/resize-win-04.png){.thumbnail}
 
