@@ -6,7 +6,7 @@ section: Tutoriels
 hidden: true
 ---
 
-**Dernière mise à jour le 30/03/2022**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -29,39 +29,39 @@ Le logiciel [Zoiper](https://www.zoiper.com/){.external} est un softphone (logic
 
 ## En pratique
 
-Ce guide décrit la méthode pour enregistrer votre ligne sur la version Android de Zoiper. 
-<br>La méthode d'enregistrement est similaire sur les autres OS.
+Ce tutoriel décrit la méthode pour enregistrer votre ligne sur la version Windows de Zoiper5. 
+<br>La méthode d'enregistrement est similaire sur les autres systèmes d'exploitation.
 
 ### Enregistrer votre ligne SIP
 
 Une fois Zoiper ouvert, vous devez renseigner deux champs.
-
-![assistant zoiper](images/zoiper01.png){.thumbnail}
 
 Le premier champ doit être renseigné avec votre **Login/Username** et votre **domain** OVHcloud sous la forme `username@domain`.<br>
 Par exemple : `0033912345678@sip5.ovh.fr`.
 
 Renseignez votre **mot de passe SIP** dans le deuxième champ puis appuyez sur `Créer un compte`{.action}.
 
-![configuration zoiper](images/zoiper02.png){.thumbnail}
+![assistant zoiper](images/zoiper01.png){.thumbnail}
 
 Dans la fenêtre suivante, renseignez à nouveau votre **domain** OVHcloud et appuyez sur `Suivant`{.action}.
 
-![domain zoiper](images/zoiper03.png){.thumbnail}
+![domain zoiper](images/zoiper02.png){.thumbnail}
 
 L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification ou un proxy sortant. Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, utilisez le bouton `Passer`{.action}.
 
-![proxy zoiper](images/zoiper04.png){.thumbnail}
+![proxy zoiper](images/zoiper03.png){.thumbnail}
 
 Le logiciel testera ensuite les protocoles de transport possibles. Les lignes SIP OVHcloud utilisant uniquement le protocole UDP, veillez à ce qu'il soit sélectionné puis sélectionnez `Terminer`{.action}.
 
+![protocole zoiper](images/zoiper04.png){.thumbnail}
+
+Un message de succès de l'enregistrement de la ligne est alors présenté.
+
 ![protocole zoiper](images/zoiper05.png){.thumbnail}
 
-Vous pouvez vérifier que la ligne est enregistrée en cliquant sur le bouton`☰`{.action} situé à gauche de la barre de recherches. La mention « Le compte est prêt » indique un enregistrement réussi.
+Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
 
 ![enregistrement zoiper](images/zoiper06.png){.thumbnail}
-
-Vous pouvez dès lors être joint et composer des appels depuis votre ligne SIP OVHcloud.
 
 ### Dépannage
 
@@ -69,10 +69,12 @@ Si l'enregistrement a échoué, vérifiez que vous avez bien saisi les identifia
 
 Vérifiez également que l'adresse IP depuis laquelle vous utilisez Zoiper fait partie des adresses IP autorisées à utiliser votre ligne SIP. Pour plus de détails, consultez le guide [Restreindre sa ligne SIP OVHcloud par IP](https://docs.ovh.com/fr/voip/restreindre-ligne-sip-par-ip/).
 
+Vous pouvez aussi tester l'enregistrement de votre ligne [sur un autre softphone](../enregistrer-ligne-sip-linphone).
+
 ## Aller plus loin
 
 [Utiliser une ligne SIP OVHcloud sur un softphone](../enregistrer-ligne-sip-softphone)
 
-[Utiliser une ligne SIP OVHcloud sur Linphone](../enregistrer-sip-linphone)
+[Utiliser une ligne SIP OVHcloud sur Linphone](../enregistrer-ligne-sip-linphone)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

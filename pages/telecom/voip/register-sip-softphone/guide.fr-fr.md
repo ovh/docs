@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment enregistrer une ligne SIP OVHcloud sur un softphone
 section: Tutoriels
 ---
 
-**Dernière mise à jour le 30/03/2022**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -39,12 +39,12 @@ Contrairement aux lignes pré-configurées sur des téléphones OVHcloud, vous a
 
 ### Etape 1 : retrouver vos identifiants SIP
 
-Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer votre ligne :
+Vous devez **impérativement** disposer des trois informations suivantes afin de pouvoir enregistrer votre ligne :
 
 |Information|Description|
 |---|---|
 | Login / User name | Il s'agit du numéro de votre ligne, au format international.|
-| Mot de passe SIP | Vous devez modifier ce mot de passe depuis votre espace client OVHcloud.|
+| Mot de passe SIP | Vous pouvez modifier ce mot de passe depuis votre espace client OVHcloud.|
 | Domain / Registrar | Le nom du serveur de téléphonie qui héberge votre ligne.|
 
 #### Login et Domain
@@ -77,8 +77,8 @@ Une fois vos identifiants connus, vous pouvez procéder à l'enregistrement de v
 De nombreuses logiciels de ce type sont disponibles. Nous vous proposons de suivre des méthodes pour deux d'entre eux, **Linphone** et **Zoiper**.<br>
 Cliquez sur les liens ci-dessous pour lire les tutoriels :
 
-- [Tutoriel - Enregistrer une ligne SIP OVHcloud sur Linphone](../enregistrer-sip-linphone).
-- [Tutoriel - Enregistrer une ligne SIP OVHcloud sur Zoiper](../enregistrer-sip-zoiper).
+- [Tutoriel - Enregistrer une ligne SIP OVHcloud sur Linphone](../enregistrer-ligne-sip-linphone).
+- [Tutoriel - Enregistrer une ligne SIP OVHcloud sur Zoiper](../enregistrer-ligne-sip-zoiper).
 
 ## Aller plus loin
 
