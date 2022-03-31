@@ -60,7 +60,7 @@ Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login** et v
 ![username - domain](images/username-domain.png){.thumbnail}
 
 > [!warning]
-> Dans cet exemple, le **Domain** est `sip5.ovh.fr`. Prenez soin de vérifier quel est le **Domain** de votre ligne, celui-ci pouvant être différent.
+> Dans l'exemple ci-dessus, le **Domain** est `sip5.ovh.fr`. Prenez soin de vérifier quel est le **Domain** de votre ligne, celui-ci pouvant être différent.
 >
 
 #### Mot de passe SIP
