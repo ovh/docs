@@ -63,7 +63,7 @@ Cliquez sur `Run`{.action} pour lancer un contrôle. et attendez que ce soit ter
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
-Maintenant que le contrôle a été fait cliquez sur l'icone `engrenage`{.action} en haut à droite pour modifier les paramètres.
+Maintenant que le contrôle a été fait cliquez sur l'icone en forma d'`engrenage`{.action} en haut à droite pour modifier les paramètres.
 
 ![Add Node 01](images/AddNode01.PNG){.thumbnail}
 
