@@ -78,6 +78,8 @@ Sélectionnez ensuite la nouvelle formule de votre hébergement et la durée de 
 
 #### Adresses e-mails
 
+- Indique qu'il est possible de prendre un mx plan si le quota de la nouvelle offre est trop bas
+
 #### Mailing lists
 
 - cette fonctionnalité n'existe pas sur les perso / KS web
