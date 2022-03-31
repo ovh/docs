@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-Les clusters Nutanix sont évolutifs il est possible de rajouter un nœud (Un serveur physique) dans un cluster existant
+Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (Un serveur physique) dans un cluster existant.
 
 **Ce guide vous explique comment ajouter ce nœud et valider son bon fonctionnement**.
 
@@ -31,7 +31,7 @@ Les clusters Nutanix sont évolutifs il est possible de rajouter un nœud (Un se
 
 ## En Pratique
 
-Un cluster de 3 nœuds va être étendu avec un nœud supplémentaire.
+Un cluster de 3 nœuds va être étendu avec un nœud supplémentaire. l'ajout de plusieurs nœuds en même temps n'est pas possible il faut le faire en plusieurs étapes a chaque nouveau nœud
 
 Connectez-vous à **Prism Element** au travers de **Prism Central** pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
@@ -55,21 +55,47 @@ Cliquez sur `Run`{.action} pour lancer un contrôle. et attendre que le contrôl
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
+Maintenant que le côntrole a été fait cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans les paramètres.
 
+![Add Node 01](images/AddNode01.PNG){.thumbnail}
 
+Cliquez sur `Expand Cluster`{.action}.
 
+![Add Node 02](images/AddNode02.PNG){.thumbnail}
 
+Cliquez sur la `checkbox`{.action} à coté de l'hôte découvert. pou voir apparaitre les détails du nœud
 
+![Add Node 03](images/AddNode03.PNG){.thumbnail}
 
+Faites défiler la `scroll bar`{.action} pour voir les options
 
+![Add Node 04](images/AddNode04.PNG){.thumbnail}
 
+Finissez de faire défilez la `scroll bar`{.action} et cliquez sur `Next`{.action}
 
+![Add Node 05](images/AddNode05.PNG){.thumbnail}
 
+Choisissez le Rack dans `Assign to Rack`{.action} et cliquez sur `Next`{.action}
 
+![Add Node 06](images/AddNode06.PNG){.thumbnail}
 
+Cliquez sur `Expand Cluster`{.action}
 
+![Add Node 07](images/AddNode07.PNG){.thumbnail}
 
+Cliquez sur `Open`{.action} pour voir le détail de l'expansion du cluster
 
+![Add Node 08](images/AddNode08.PNG){.thumbnail}
+
+![Add Node 09](images/AddNode09.PNG){.thumbnail}
+
+l'ajout du nœud est terminée lorsque  **Expanding Cluster** est à 100%
+
+![Add Node 10](images/AddNode10.PNG){.thumbnail}
+
+Sur le tableau de bord apparait les 4 noeuds dans **Hardware Summary**, cliquez sur `View Details`{.action}
+
+![Cluster detail after Expansion](images/CLusterDetailAfterFromDashboard.PNG){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
