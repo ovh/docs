@@ -18,7 +18,7 @@ Si vous avez atteint la capacité maximale de votre disque supplémentaire, vous
 
 - Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre projet Public Cloud.
 - Un [disque supplémentaire](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/) créé dans votre projet.
-- Être connecté votre à [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr).
 - Avoir un accès administratif (root) à votre instance via SSH (Linux) ou RDP (Windows).
 
 ## En pratique
@@ -29,7 +29,7 @@ Les étapes suivantes supposent que vous avez déjà configuré un disque suppl�
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez ensuite sur `Block Storage`{.action} dans le menu de gauche.
 
-Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume et sélectionnez `Détacher de l'instance`{.action}.
+Si le volume est attaché à une **instance Windows**, cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Détacher de l'instance`{.action}.
 
 Cliquez sur le bouton `...`{.action} à droite du volume concerné et sélectionnez `Editer`{.action}.
 
