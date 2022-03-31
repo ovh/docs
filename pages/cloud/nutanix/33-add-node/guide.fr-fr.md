@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (Un serveur physique) dans un cluster existant.
+Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (des serveurs physique) dans un cluster existant.
 
 **Ce guide vous explique comment ajouter ce nœud et valider son bon fonctionnement**.
 
@@ -27,23 +27,33 @@ Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (Un 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central.
-- Un serveur physique prêt à être configuré préparé par les équipes d'OVHCloud
+- Un serveur physique prêt à être configuré ajouté dans le manager OVHCloud
+
+## Informations techniques
+
+La solution Nutanix d'OVHCloud permet d'avoir entre 3 et 18 nœuds sur le même CLUSTER.
+
+Il est possible d'ajouter plusieurs nœuds lors de l'expansion du Cluster.
+
+Les nœuds à rajouter doivent avoir la même version que ceux du cluster existant.
 
 ## En Pratique
 
-Un cluster de 3 nœuds va être étendu avec un nœud supplémentaire. l'ajout de plusieurs nœuds en même temps n'est pas possible il faut le faire en plusieurs étapes a chaque nouveau nœud
+Ajout d'un nœud dans un Cluster Nutanix.
 
-Connectez-vous à **Prism Element** au travers de **Prism Central** pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+Connectez-vous à **Prism Element** au travers de **Prism Central**.
+
+Pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
 Sur le tableau de bord les 3 nœuds sont visibles dans `Hardware Summary`, Cliquez sur `View Details`{.action} au milieu à gauche pour faire apparaitre plus de détail.
 
 ![Display dashboard before Expansion](images/DisplayDashboardBefore.PNG){.thumbnail}
 
-Une vue plus détaillée apparait avec des informations comme l'espace total et la capacité de résilience sur le stockage. Cliquez sur `Close`{.action} pour fermer cette fenêtre.
+Une vue plus détaillée apparait avec des informations comme l'espace total et la capacité de résilience du stockage. Cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 ![Cluster detail before Expansion](images/ClusterDetailBeforeFromDashboard.PNG){.thumbnail}
 
-Cliquez sur le menu `Home`{.action} et choisisissez `Health`{.action} pour faire une analyse avant le rajout du nœud.
+Cliquez sur le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse avant le rajout du nœud.
 
 ![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
 
@@ -55,7 +65,7 @@ Cliquez sur `Run`{.action} pour lancer un contrôle. et attendre que le contrôl
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
-Maintenant que le côntrole a été fait cliquez sur `l'engrenage`{.action} en haut à droite pour aller dans les paramètres.
+Maintenant que le contrôle a été fait cliquez sur l'icone `engrenage`{.action} en haut à droite pour aller dans les paramètres.
 
 ![Add Node 01](images/AddNode01.PNG){.thumbnail}
 
@@ -63,48 +73,46 @@ Cliquez sur `Expand Cluster`{.action}.
 
 ![Add Node 02](images/AddNode02.PNG){.thumbnail}
 
-Cliquez sur la `checkbox`{.action} à coté de l'hôte découvert. pou voir apparaitre les détails du nœud
+Cliquez sur la `case à cocher`{.action} à coté de l'hôte découvert. pour faire apparaitre les détails du nœud.
 
 ![Add Node 03](images/AddNode03.PNG){.thumbnail}
 
-Faites défiler la `scroll bar`{.action} pour voir les options
+Faites défiler la `barre de défilement`{.action} pour voir les options.
 
 ![Add Node 04](images/AddNode04.PNG){.thumbnail}
 
-Finissez de faire défilez la `scroll bar`{.action} et cliquez sur `Next`{.action}
+Finissez de faire défilez la `barre de défilement`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Node 05](images/AddNode05.PNG){.thumbnail}
 
-Choisissez le Rack dans `Assign to Rack`{.action} et cliquez sur `Next`{.action}
+Choisissez le Rack dans `Assign to Rack`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Node 06](images/AddNode06.PNG){.thumbnail}
 
-Cliquez sur `Expand Cluster`{.action}
+Cliquez sur `Expand Cluster`{.action}.
 
 ![Add Node 07](images/AddNode07.PNG){.thumbnail}
 
-Cliquez sur `Open`{.action} pour voir le détail de l'expansion du cluster
+Cliquez sur `Open`{.action} pour voir le détail de l'expansion du cluster.
 
 ![Add Node 08](images/AddNode08.PNG){.thumbnail}
 
 ![Add Node 09](images/AddNode09.PNG){.thumbnail}
 
-l'ajout du nœud est terminée lorsque  **Expanding Cluster** est à 100%
+L'ajout du nœud est terminée lorsque  **Expanding Cluster** est à 100%.
 
 ![Add Node 10](images/AddNode10.PNG){.thumbnail}
 
-Sur le tableau de bord apparait les 4 noeuds dans **Hardware Summary**, cliquez sur `View Details`{.action}
+Sur le tableau de bord apparait les 4 nœuds dans **Hardware Summary**, cliquez sur `View Details`{.action}
 
 ![Cluster detail after Expansion](images/CLusterDetailAfterFromDashboard.PNG){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
 
-[Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
-
-
-[Guide Nutanix d'ajout d'un noeud](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
+[Guide Nutanix d'ajout de nœuds](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
