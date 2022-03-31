@@ -6,7 +6,7 @@ legacy_guide_number: g1851
 section: Gestão via OpenStack
 ---
 
-**Última atualização: 22/12/2021**
+**Última atualização: 30/03/2022**
 
 ## Sumário
 
@@ -26,22 +26,18 @@ Graças à API OpenStack, pode automatizar esta gestão gerando scripts. O clien
 
 Abra o terminal ou estabeleça uma ligação em SSH ao ambiente que pretende preparar.
 
-Atualize a cache dos pacotes através do comando `apt-get update`:
+Atualize a cache dos pacotes através do comando `apt update`:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilize o comando abaixo para instalar os clientes Nova (aplicação de cálculo) e Swift:
+Utilize o comando abaixo para instalar os clientes OpenStack, Nova (aplicação de cálculo) e Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient python-swiftclient -y
-```
-
-Python3 Versão
-
-```sh
-apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
@@ -67,22 +63,13 @@ Atualize a cache dos pacotes através do seguinte comando:
 ```sh
 yum update -y
 ```
-Instale o rpm rdo-release com o seguinte comando:
+
+Utilize o comando abaixo para instalar os clientes OpenStack, Nova (aplicação de cálculo) e Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-E o cliente OpenStack:
-
-```sh
-yum install -y python-openstackclient
-```
-
-E, finalmente, o cliente Nova:
-
-```sh
-yum install -y python-novaclient
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.

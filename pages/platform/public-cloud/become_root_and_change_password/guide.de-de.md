@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 08
 ---
 
-**Letzte Aktualisierung am 19.10.2021**
+**Letzte Aktualisierung am 24.03.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
@@ -38,12 +38,12 @@ Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-### Repositorys aktualisieren (Debian/Ubuntu)
+### ystem aktualisieren (Debian/Ubuntu)
 
 Um die auf Ihrem Server installierten Softwarepakete zu aktualisieren, geben Sie folgenden Befehl in der Kommandozeile ein:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### System aktualisieren (CentOS/Fedora)

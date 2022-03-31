@@ -8,7 +8,7 @@ order: 1
 
 **Última atualização: 30/03/2021**
 
-## Sumário
+## Objetivo
 
 As instâncias Public Cloud OVHcloud requerem uma abordagem diferente da de uma solução VPS ou Servidor Dedicado.
 
@@ -22,7 +22,7 @@ As instâncias Public Cloud OVHcloud requerem uma abordagem diferente da de uma 
 
 ## Instruções
 
-### 1.º Passo: Criação de chaves SSH
+### Etapa 1: Criação de chaves SSH
 
 O protocolo SSH assegura a encriptação das comunicações cliente-servidor. O uso de chaves SSH também aumenta a segurança ao evitar conexões de aparelhos que não dispõem da chave correta. A criação de uma chave SSH fornece-lhe uma chave pública e outra privada.
 
@@ -41,25 +41,25 @@ A autenticação de conexão em instâncias Windows só requer o nome de utiliza
 
 A partir de um computador Mac ou de uma máquina com um SO Linux, comece por abrir a aplicação de linhas de comando (Terminal). Confirme que tem uma pasta «.ssh» no seu diretório $HOME. Se esta pasta não existir, crie uma:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Utilize o seguinte comando para criar uma chave RSA de 4096 bits:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 A utilização da opção «-t» com este comando permite-lhe especificar um método de encriptação diferente, por exemplo:
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 O comando irá solicitar-lhe que guarde a chave recém-criada no ficheiro padrão:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Para ler e exportar a sua chave pública, utilize o comando «cat» no respetivo ficheiro e copie o seguinte resultado:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >Num Terminal macOS, também pode usar os comandos «pbcopy» e «pbpaste» para gerir as cadeias de chaves. Por exemplo, use este comando para copiar a chave do ficheiro «id_rsa.pub» para a área de transferência:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -135,7 +135,7 @@ Nesta janela pode selecionar e copiar a chave pública para a guardar na Área d
 
 Guarde ambas as chaves sob a forma de ficheiro e use a opção de criação de uma frase de acesso. Já que só será exigida uma chave privada correspondente para o acesso à instância de Public Cloud a partir do seu posto de trabalho, neste ponto impõe-se a aplicação de medidas de segurança adequadas. Quando se estabelecer uma conexão à instância, será preciso introduzir uma frase de acesso.
 
-### 2.º Passo: Armazenamento de chaves públicas na Área de Cliente OVHcloud
+### Etapa 2: Armazenamento de chaves públicas na Área de Cliente OVHcloud
 
 Independentemente do método usado para criar chaves SSH, agora já dispõe de uma chave pública pronta a ser adicionada a uma instância Public Cloud. Pode armazenar chaves na secção Public Cloud da Área de Cliente OVHcloud, de modo a tê-las à mão quando criar uma instância.
 
@@ -151,7 +151,7 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 ![add key](images/puttygen-04.png){.thumbnail}
 
 
-### 3.º Passo: Criação de uma instância
+### Etapa 3: Criação de uma instância
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
 
@@ -216,7 +216,7 @@ Recomendamos que escolha a faturação horária caso tenha dúvidas a respeito d
 
 Depois de ter verificado que a configuração está correta, clique no botão `Criar uma instância`{.action} para concluir o processo. A disponibilização do serviço pode levar alguns minutos.
 
-### 4.º Passo: Conexão à instância <a name="connect-to-instance"></a>
+### Etapa 4: Conexão à instância <a name="connect-to-instance"></a>
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Instâncias`{.action}, na barra de navegação à esquerda, sob «Compute». A instância estará pronta quando a coluna «Estado» da tabela passar a «Ativada». Pode verificar clicando no botão «Refresh», situado junto de `Criar uma instância`{.action}.
 
@@ -237,13 +237,13 @@ Agora já pode aceder à sua instância a partir de uma interface de linhas de c
 
 Quando solicitado, introduza a frase de acesso à sua chave privada. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Como se encontra conectado como privilégios root («sudo user»), pode introduzir imediatamente comandos destinados a tarefas administrativas. É aconselhável que, antes, altere a sua palavra-passe:
 
-```sh
+```bash
 $ sudo passwd
 New password:
 Retype new password:
@@ -251,7 +251,7 @@ passwd: password updated successfully
 ```
 Agora pode usar estas credenciais para se conectar através da `Consola VNC`{.action}, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). De seguida, passe para o utilizador «root» e crie uma palavra-passe segura. Então, volte para o utilizador anterior:
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:
