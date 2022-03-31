@@ -6,7 +6,7 @@ section: Object Storage S3 High Performance
 order: 180
 ---
 
-**Dernière mise à jour le 03/01/2022**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -26,7 +26,9 @@ Illimité
 
 ### Taille maximum par object / mpu / part
 
-5Go max par object, 10000 parts max dans un mpu, 5Mo size min pour un part
+- 5Go maximum par object
+- 10000 parts maximum dans un mpu
+- 5Mo est la taille minimum pour un part
 
 ### Nombre maximum de comptes utilisateurs par projet
 
