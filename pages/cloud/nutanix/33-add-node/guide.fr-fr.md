@@ -10,7 +10,7 @@ order: 03
 
 ## Objectif
 
-Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (des serveurs physique) dans un cluster existant.
+Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds dans un cluster existant.
 
 **Ce guide vous explique comment ajouter ce nœud et valider son bon fonctionnement**.
 
@@ -19,8 +19,6 @@ Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds (des
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
->
-> Certaines options comme l'utilisation de la compression ou de la déduplication nécessitent des licences particulières fournies par Nutanix au travers d'OVHcloud, nous vous invitons à vous renseigner auprès du service commercial OVHcloud pour plus d'informations.
 
 ## Prérequis
 
@@ -35,7 +33,7 @@ La solution Nutanix d'OVHCloud permet d'avoir entre 3 et 18 nœuds sur le même 
 
 Il est possible d'ajouter plusieurs nœuds lors de l'expansion du Cluster.
 
-Les nœuds à rajouter doivent avoir la même version que ceux du cluster existant.
+Les nœuds à rajouter doivent avoir la même version d'**AOS** que ceux du cluster existant.
 
 ## En Pratique
 
@@ -53,19 +51,19 @@ Une vue plus détaillée apparait avec des informations comme l'espace total et 
 
 ![Cluster detail before Expansion](images/ClusterDetailBeforeFromDashboard.PNG){.thumbnail}
 
-Cliquez sur le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse avant le rajout du nœud.
+Cliquez sur le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
 
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
+![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}.
 
 Cliquez en haut à droite sur `Actions`{.action} et choisissez `Run NCC Check`{.action}.
 
 ![NCC check before Expansion 02](images/CheckBeforeAdd02.PNG){.thumbnail}
 
-Cliquez sur `Run`{.action} pour lancer un contrôle. et attendre que le contrôle soit terminée
+Cliquez sur `Run`{.action} pour lancer un contrôle. et attendez que ce soit terminée.
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
-Maintenant que le contrôle a été fait cliquez sur l'icone `engrenage`{.action} en haut à droite pour aller dans les paramètres.
+Maintenant que le contrôle a été fait cliquez sur l'icone `engrenage`{.action} en haut à droite pour modifier les paramètres.
 
 ![Add Node 01](images/AddNode01.PNG){.thumbnail}
 
@@ -81,7 +79,7 @@ Faites défiler la `barre de défilement`{.action} pour voir les options.
 
 ![Add Node 04](images/AddNode04.PNG){.thumbnail}
 
-Finissez de faire défilez la `barre de défilement`{.action} et cliquez sur `Next`{.action}.
+Continuez le défilement jusqu'en bas de la fenêtre et cliquez sur `Next`{.action}.
 
 ![Add Node 05](images/AddNode05.PNG){.thumbnail}
 
@@ -103,7 +101,11 @@ L'ajout du nœud est terminée lorsque  **Expanding Cluster** est à 100%.
 
 ![Add Node 10](images/AddNode10.PNG){.thumbnail}
 
-Sur le tableau de bord apparait les 4 nœuds dans **Hardware Summary**, cliquez sur `View Details`{.action}
+Sur le tableau de bord apparait les 4 nœuds dans **Hardware Summary**, cliquez sur `View Details`{.action} pour afficher plus d'informations.
+
+![Display dashbord after expansion](images/DisplayDashboardAfter.PNG){.thumbnail}
+
+Cliquez sur `Close`{.action} pour revenir au tableau de bord.
 
 ![Cluster detail after Expansion](images/CLusterDetailAfterFromDashboard.PNG){.thumbnail}
 
