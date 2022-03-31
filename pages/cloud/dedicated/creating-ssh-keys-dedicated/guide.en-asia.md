@@ -173,9 +173,9 @@ If you have copied the full output, the identifier after the key should already 
 > Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
 >
 
-### Setting a default SSH key (only for Dedicated)
+### Setting a default SSH key (only for the “Dedicated” section)
 
-If you have added multiple SSH keys in your control panel, it is possible to sent one key to be used as the default key on the account. 
+If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
 
 > [!warning]
 > Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
@@ -193,7 +193,7 @@ Once done, a popup message will appear confirming the key has been set as defaul
 
 ![SSH key control panel](images/defaultsshkey1.png){.thumbnail}
 
-### Disabling the SSH key
+### Disabling the SSH key <a name="disablesshkey"></a>
 
 To disable the SSH key, perform the same steps as above and click on the `Key` icon next to the corresponding SSH key and disable the default option.
 
