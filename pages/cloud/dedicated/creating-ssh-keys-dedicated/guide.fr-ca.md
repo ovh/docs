@@ -189,13 +189,13 @@ Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de
 
 ![Espace client de la clé SSH](images/defaultsshkey.png){.thumbnail}
 
-Une fois l'opération terminée, un message s'affiche pour confirmer que la clé a été définie par défaut et que l'icône `Clé` sera mise en évidence.
+Une fois l'opération terminée, un message s'affiche pour confirmer que la clé a été définie par défaut. L'icône `Clé` sera alors mise en évidence.
 
 ![Espace client de la clé SSH](images/defaultsshkey1.png){.thumbnail}
 
 ### Désactiver de la clé SSH par défaut <a name="disablesshkey"></a>
 
-Pour désactiver la clé SSH par défaut, effectuez les mêmes opérations que ci-dessus et cliquez sur l'icône `Clé` à côté de la clé SSH correspondante, pour désactivez l'option.
+Pour désactiver la clé SSH par défaut, effectuez les mêmes opérations que ci-dessus et cliquez sur l'icône `Clé` à côté de la clé SSH correspondante, afin de désactiver l'option.
 
 ## Aller plus loin
 
