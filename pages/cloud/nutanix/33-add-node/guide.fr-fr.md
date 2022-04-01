@@ -47,7 +47,7 @@ Sur le tableau de bord les 3 nœuds sont visibles dans `Hardware Summary`, Cliqu
 
 ![Display dashboard before Expansion](images/DisplayDashboardBefore.PNG){.thumbnail}
 
-Une vue plus détaillée apparait avec des informations comme l'espace total et la capacité de résilience du stockage. Cliquez sur `Close`{.action} pour fermer cette fenêtre.
+Une vue plus détaillée est affichée avec des informations comme l'espace total et la capacité de résilience du stockage. Cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 ![Cluster detail before Expansion](images/ClusterDetailBFromDashboard.PNG){.thumbnail}
 
@@ -59,7 +59,7 @@ Cliquez en haut à droite sur `Actions`{.action} et choisissez `Run NCC Check`{.
 
 ![NCC check before Expansion 02](images/CheckBeforeAdd02.PNG){.thumbnail}
 
-Cliquez sur `Run`{.action} pour lancer un contrôle. et attendez que ce soit terminée.
+Cliquez sur `Run`{.action} pour lancer un contrôle. et attendez que l'opération soit terminée.
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
@@ -101,7 +101,7 @@ L'ajout du nœud est terminée lorsque  **Expanding Cluster** est à 100%.
 
 ![Add Node 10](images/AddNode10.PNG){.thumbnail}
 
-Sur le tableau de bord apparait les 4 nœuds dans **Hardware Summary**, cliquez sur `View Details`{.action} pour afficher plus d'informations.
+Quatre nœuds sont visibles dans **Hardware Summary**, cliquez sur `View Details`{.action} pour afficher plus d'informations.
 
 ![Display dashbord after expansion](images/DisplayDashboardAfter.PNG){.thumbnail}
 
