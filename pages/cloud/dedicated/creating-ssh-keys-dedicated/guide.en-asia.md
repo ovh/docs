@@ -108,7 +108,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for Windows and other operating systems. You can use it to remotely connect to a Linux server. Its companion software, PuTTY Key Generator (PuTTYgen), can be used to create SSH keys.
 
-First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your Windows "programs" menu or use Search.
+First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your "programs" menu or use the Windows Search.
 
 Next, run the software and select the key type. In our example, we choose a 4096 bit RSA key. Click the `Generate`{.action} button to start the creation process.
 
@@ -204,7 +204,7 @@ Once done, a popup message will appear confirming the key has been set as defaul
 
 ### Disabling the SSH key <a name="disablesshkey"></a>
 
-To disable the SSH key, perform the same steps as above and click on the `Key` icon next to the corresponding SSH key and disable the default option.
+To disable the SSH key, simply repeat the previous steps but click on the `Key` icon next to the corresponding SSH key to disable it.
 
 ## Go further
 
