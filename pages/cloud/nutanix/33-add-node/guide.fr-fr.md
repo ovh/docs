@@ -6,11 +6,11 @@ section: "Utilisation avancée"
 order: 03
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 01/04/2022**
 
 ## Objectif
 
-Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds dans un cluster existant.
+Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dans un cluster existant.
 
 **Ce guide vous explique comment ajouter ce nœud et valider son bon fonctionnement**.
 
@@ -25,7 +25,7 @@ Les clusters Nutanix sont évolutifs il est possible de rajouter des nœuds dans
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central.
-- Un serveur physique prêt à être configuré ajouté dans le manager OVHCloud
+- Un serveur physique prêt à être configuré ajouté dans le manager OVHCloud.
 
 ## Informations techniques
 
@@ -51,7 +51,7 @@ Une vue plus détaillée apparait avec des informations comme l'espace total et 
 
 ![Cluster detail before Expansion](images/ClusterDetailBFromDashboard.PNG){.thumbnail}
 
-Cliquez sur le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
+Ouvrez le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
 
 ![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}.
 
@@ -63,7 +63,7 @@ Cliquez sur `Run`{.action} pour lancer un contrôle. et attendez que ce soit ter
 
 ![NCC check before Expansion 03](images/CheckBeforeAdd03.PNG){.thumbnail}
 
-Maintenant que le contrôle a été fait cliquez sur l'icone en forma d'`engrenage`{.action} en haut à droite pour modifier les paramètres.
+Après le contrôle, cliquez sur l'icôe `engrenage`{.action} en haut à droite pour modifier les paramètres.
 
 ![Add Node 01](images/AddNode01.PNG){.thumbnail}
 
@@ -108,6 +108,8 @@ Sur le tableau de bord apparait les 4 nœuds dans **Hardware Summary**, cliquez 
 Cliquez sur `Close`{.action} pour revenir au tableau de bord.
 
 ![Cluster detail after Expansion](images/CLusterDetailAfterFromDashboard.PNG){.thumbnail}
+
+
 
 ## Aller plus loin <a name="gofurther"></a>
 
