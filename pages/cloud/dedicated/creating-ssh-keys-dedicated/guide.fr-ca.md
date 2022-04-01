@@ -178,7 +178,7 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possible de définir une clé à utiliser comme clé par défaut sur le compte.
 
 > [!warning]
-> Veuillez notez qu'une fois la clé par défaut définie, elle sera également utilisée comme moyen de connexion lors du redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être désactivée avant de redémarrer le serveur en mode rescue.
+> Veuillez noter qu'une fois la clé SSH par défaut définie, elle sera également utilisée comme moyen de connexion lors du redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être désactivée avant de redémarrer le serveur en mode rescue.
 >
 
 Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
