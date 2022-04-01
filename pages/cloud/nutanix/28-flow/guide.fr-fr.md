@@ -1,7 +1,7 @@
 ---
 title: Nutanix Flow
 slug: flow
-excerpt: "Utilisation de Nutanix Move"
+excerpt: "Sécurisation du réseau à l'intérieur d'un CLUSTER au travers de FLOW"
 section: Réseau et sécurité
 order: 09
 ---
@@ -20,5 +20,12 @@ Connaitre et utiliser Nutanix Flow pour isoler des VM dans l'environnement Nutan
 
 
 ## Aller plus loin
+
+[Présentation de Nutanix FLOW](https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2094-Flow:TN-2094-Flow)
+
+[Régles de sécurité de Nutanix FLOW](https://portal.nutanix.com/page/documents/details?)
+
+targetId=Nutanix-Flow-Guide-v5_20:mul-security-policy-management-pc-c.html
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
