@@ -12,7 +12,7 @@ order: 03
 
 Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dans un cluster existant.
 
-**Ce guide vous explique comment ajouter ce nœud et valider son bon fonctionnement**.
+**Ce guide vous explique comment ajouter un nœud et valider son bon fonctionnement**.
 
 
 > [!warning]
