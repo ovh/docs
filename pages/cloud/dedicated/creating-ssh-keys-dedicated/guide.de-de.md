@@ -99,7 +99,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->In einem MacOS Terminal können Sie auch die Kommandos „pbcopy“ und „pbpaste“ verwenden, um mit Schlüsselstrings zu arbeiten. Verwenden Sie den folgenden Befehl zum Kopieren des Schlüssels aus der Datei „id_rsa.pub“ in die Zwischenablage:
+>In einem MacOS Terminal können Sie auch die Kommandos “pbcopy” und “pbpaste” verwenden, um mit Schlüsselstrings zu arbeiten. Verwenden Sie den folgenden Befehl zum Kopieren des Schlüssels aus der Datei “id_rsa.pub” in die Zwischenablage:
 >
 
 ```bash
@@ -129,13 +129,13 @@ Sie können den öffentlichen Schlüssel in diesem Fenster markieren und kopiere
 
 ### SSH-Schlüssel zur Ihrem Server hinzufügen
 
-Wechseln Sie zu Ihrem $HOME-Verzeichnis und erstellen Sie den Ordner „.ssh“ (falls nicht vorhanden):
+Wechseln Sie zu Ihrem $HOME-Verzeichnis und erstellen Sie den Ordner “.ssh” (falls nicht vorhanden):
 
 ```bash
 $ mkdir ~/.ssh
 ```
 
-Um den Schlüssel für den aktuellen Benutzer zu speichern, öffnen Sie eine Datei mit dem Namen „authorized_keys“ mit Ihrem bevorzugten Texteditor:
+Um den Schlüssel für den aktuellen Benutzer zu speichern, öffnen Sie eine Datei mit dem Namen “authorized_keys” mit Ihrem bevorzugten Texteditor:
 
 ```bash
 $ nano ~/.ssh/authorized_keys
@@ -147,7 +147,7 @@ Kopieren Sie Ihren **öffentlichen Schlüssel** und fügen Sie ihn in diese neue
 $ systemctl restart sshd
 ```
 
-Um zu überprüfen, ob Ihr Schlüssel ordnungsgemäß eingerichtet wurde, versuchen Sie unter Verwendung Ihres Benutzernamens mit dem folgenden Befehl über SSH auf Ihren Server zuzugreifen. Ersetzen Sie „IP_ADDRESSorHOSTNAME“ durch die IP-Adresse oder den Hostnamen des Servers, auf den Sie zugreifen möchten:
+Um zu überprüfen, ob Ihr Schlüssel ordnungsgemäß eingerichtet wurde, versuchen Sie unter Verwendung Ihres Benutzernamens mit dem folgenden Befehl über SSH auf Ihren Server zuzugreifen. Ersetzen Sie “IP_ADDRESSorHOSTNAME” durch die IP-Adresse oder den Hostnamen des Servers, auf den Sie zugreifen möchten:
 
 ```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
@@ -159,7 +159,7 @@ Um SSH-Schlüssel für zusätzliche Benutzer hinzuzufügen, wiederholen Sie einf
 
 #### Autorisierte Schlüssel von Ihrem Server entfernen
 
-Löschen Sie den Schlüssel, der dem Benutzer entspricht, dessen Zugriff entfernt werden soll, aus der „authorized_keys“ Datei. Speichern Sie nach dem Entfernen des Schlüssels die Datei und beenden Sie den Texteditor.
+Löschen Sie den Schlüssel, der dem Benutzer entspricht, dessen Zugriff entfernt werden soll, aus der “authorized_keys” Datei. Speichern Sie nach dem Entfernen des Schlüssels die Datei und beenden Sie den Texteditor.
 
 ### Ihren SSH-Schlüssel ins OVHcloud Kundencenter importieren
 
@@ -173,17 +173,17 @@ In „Meine Dienste“ wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicke
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2.1.png){.thumbnail}
 
-Wählen Sie im Dropdown-Menü „Dedicated“ aus.
+Wählen Sie im Dropdown-Menü “Dedicated” aus.
 
-Geben Sie im neuen Fenster eine Kennung (einen Namen Ihrer Wahl) für den Schlüssel ein. Fügen Sie die Schlüsselzeichenfolge (kopiert aus Ihrer „.pub“ -Datei oder PuTTYgen) in das Feld „Schlüssel“ ein.
+Geben Sie im neuen Fenster eine Kennung (einen Namen Ihrer Wahl) für den Schlüssel ein. Fügen Sie die Schlüsselzeichenfolge (kopiert aus Ihrer “.pub” -Datei oder PuTTYgen) in das Feld “Schlüssel” ein.
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_3.png){.thumbnail}
 
-Wenn Sie die vollständige Ausgabe kopiert haben, sollte der „Identifier“ hinter dem Schlüsselstring bereits enthalten sein. Beachten Sie, dass Sie zum Speichern Ihres Schlüssels immer Ihren „Identifier“ nach dem Schlüssel angeben müssen. Dies ist eine Anforderung des OVHcloud Kundencenters (Beispielformat oben im Screenshot). Klicken Sie zum Speichern Ihres öffentlichen Schlüssels auf `Bestätigen`{.action}.
+Wenn Sie die vollständige Ausgabe kopiert haben, sollte der “Identifier” hinter dem Schlüsselstring bereits enthalten sein. Beachten Sie, dass Sie zum Speichern Ihres Schlüssels immer Ihren “Identifier” nach dem Schlüssel angeben müssen. Dies ist eine Anforderung des OVHcloud Kundencenters (Beispielformat oben im Screenshot). Klicken Sie zum Speichern Ihres öffentlichen Schlüssels auf `Bestätigen`{.action}.
 
 > [!primary]
 >
-> Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
+> Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
 ### Einen standardmäßigen SSH-Schlüssel festlegen (nur für den Bereich "Dedicated")
