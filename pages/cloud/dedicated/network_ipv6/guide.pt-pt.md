@@ -5,9 +5,13 @@ excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
 section: 'Redes & IP'
 ---
 
-**Última atualização: 01/12/2021**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 30/03/2022**
+
+## Objetivo
 
 O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. Cada servidor dedicado da OVHcloud inclui um bloco IPv6 /64. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
 
@@ -21,9 +25,9 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud;
-- todos os seus dados IPv6 (prefixo, gateway, etc.);
-- ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
+- Todos os seus dados IPv6 (prefixo, gateway, etc.).
+- Ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
 
 ## Instruções
 
@@ -223,7 +227,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-Abra o ficheiro de configuração de rede situado em /etc/systemd/network. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
+Abra o ficheiro de configuração de rede situado em `/etc/systemd/network`. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
@@ -240,7 +244,7 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-Para adicionar múltiplos endereços IPv6, adicione múltiplas secções  \[Address].
+Para adicionar múltiplos endereços IPv6, adicione múltiplas secções [Address].
 
 ```console
 [Address]
@@ -275,7 +279,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 #### Passo 1: Usar o RDP para se conectar ao servidor
 
-[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor).
+[Encontre mais informações neste guia.](../primeiros-passos-servidor-dedicado/#ligar-se-ao-servidor)
 
 
 #### Passo 2: Abrir a configuração da rede do servidor
@@ -305,9 +309,9 @@ Introduza a sua configuração IPv6 (` IPv6 address` e `Default Gateway`) e cliq
 
 Se depois de testar a sua ligação continuar a experienciar problemas, crie um pedido de apoio a fim de rever as suas configurações. Será necessário fornecer:
 
-- o nome do sistema operativo e a versão em uso no servidor;
-- o nome e o diretório do ficheiro de configuração de rede; 
-- o conteúdo desse ficheiro. 
+- O nome do sistema operativo e a versão em uso no servidor.
+- O nome e o diretório do ficheiro de configuração de rede.
+- O conteúdo desse ficheiro. 
 
 
 ## Quer saber mais?

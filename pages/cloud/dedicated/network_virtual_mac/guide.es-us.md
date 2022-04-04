@@ -27,6 +27,8 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 
 En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda al menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.
 
+![IPFO](images/manageIPOVHcloud.png){.thumbnail}
+
 Localice su dirección IP failover (o su bloque) en la lista, haga clic en el botón `···`{.action} situado al final de la línea correspondiente para ver la lista de opciones y seleccione `Añadir una MAC virtual`{.action}.
 
 ![IPFO](images/addvmac.png){.thumbnail}
