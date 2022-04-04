@@ -27,6 +27,8 @@ A OVHcloud permite-lhe associar um endereço MAC virtual a um endereço de IP, d
 
 Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
 
+![IPFO](images/manageIPOVHcloud.png){.thumbnail}
+
 De seguida, localize na lista o endereço de IP Fail-over (ou o bloco) e clique no botão `...`{.action} para exibir a lista de opções.
 
 ![IPFO](images/addvmac.png){.thumbnail}
