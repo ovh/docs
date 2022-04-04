@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 19th March 2021**
+**Last updated 31st March 2022**
 
 ## Objective
 
@@ -25,14 +25,16 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
+
+> [!warning]
+> Please note that if you have set a default SSH key in your control panel for dedicated products, you will not receive a root password when rebooting a server rescue mode. In this case, you must first disable the key before proceeding. To do so, please consult this [section](../ovh-rescue/#disablesshkey) of the relevant guide.
+> 
 
 You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**.
 
