@@ -8,7 +8,7 @@ section: 'Diagnostica e modalità Rescue'
 **Ultimo aggiornamento 07/04/2022**
 
 > [!warning]
-> Dal 7 aprile 2022, il servizio di visualizzazione dei dati relativi all'attività del tuo server è obsoleto. Il servizio continuerà a funzionare per i server che l'hanno già installato fino al 30 giugno 2022. Dopo questa data, procederemo alla disattivazione della funzionalità senza impatto sul funzionamento del server associato. Non è consigliabile installare questo servizio Questa notifica ha lo scopo di lasciarti abbastanza tempo per anticipare la sostituzione della funzionalità eliminata.
+> Dal 7 aprile 2022, la funzionalità di visualizzazione dei dati relativi all'attività del tuo server è obsoleta. L'opzione Real Time Monitoring continuerà a funzionare per i server che l'hanno già installata fino al 30 giugno 2022. Dopo questa data, procederemo all'arresto di questa funzionalità senza impatto sul funzionamento del server associato. Non è consigliato installare questa opzione. Questa notifica ha lo scopo di lasciarti abbastanza tempo per anticipare la sostituzione della funzionalità eliminata.
 >
 
 ## Obiettivo

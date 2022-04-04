@@ -8,7 +8,7 @@ section: 'Diagnostyka i tryb Rescue'
 **Ostatnia aktualizacja: 07-04-2022**
 
 > [!warning]
-> Od 7 kwietnia 2022 usługa wyświetlania danych dotyczących działalności Twojego serwera jest nieaktualna. Usługa będzie nadal działać dla serwerów, które ją zainstalowały do dnia 30 czerwca 2022 r. Po tej dacie zrezygnujemy z funkcji i nie będzie to miało wpływu na działanie przypisanego serwera. Nie zalecamy zatem instalacji tej usługi. Powiadomienie to ma na celu pozostawienie czasu na zaplanowanie zmiany usuniętej funkcji.
+> Od 7 kwietnia 2022 funkcja wyświetlania danych dotyczących działalności Twojego serwera jest nieaktualna. Opcja Real Time Monitoring będzie nadal działać dla serwerów, które ją zainstalowały do 30 czerwca 2022. Po tej dacie wycofujemy tę funkcję i nie będzie to miało wpływu na działanie przypisanego serwera. Nie zalecamy zatem instalacji tej opcji. Powiadomienie to ma na celu pozostawienie czasu na zaplanowanie zmiany usuniętej funkcji.
 >
 
 ## Wprowadzenie
