@@ -1,12 +1,12 @@
 ---
 title: "Gestion du service OVHcloud Load Balancer via l'espace client"
 slug: utilisation-iplb
-excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client"
+excerpt: "Résumé des principales fonctionnalités et prise en main du service Load Balancer via l'espace client OVHcloud"
 section: Premiers pas
 order: 02
 ---
 
-**Dernière mise à jour le 20/01/2021**
+**Dernière mise à jour le 04/04/2022**
 
 ## Objectif
 
@@ -30,7 +30,7 @@ Sur la page de résumé de votre service Load Balancer, vous trouverez les menus
 |Statut|Résumé de votre Load Balancer avec le nom du service, les frontends, les fermes fonctionnelles et les serveurs ajoutés|
 |Utilisation|Un récapitulatif de l'utilisation de votre LoadBalancer|
 |Graphiques|Des graphiques présentant le nombre de connexions simultanées ou le nombre de requêtes par minute|
-|Informations|Votre IPv4 et les IP fail-over liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détail sen cliquant sur le bouton `...`{.action})|
+|Informations|Votre IPv4 et les IP fail-over liées, ainsi que le nombre d'IPv4 de sortie (obtenez des détails en cliquant sur le bouton `...`{.action})|
 |Configuration|Personnalisez ici le nom de votre offre. Retrouvez aussi le(s) cipher(s), qui sont personnalisables, ainsi que le datacenter où se situe votre Load Balancer|
 |Abonnement|Vous trouverez ici les détails administratifs de votre offre|
 
@@ -38,7 +38,7 @@ Pour ajouter des `Frontends`{.action} ou des `Fermes de serveurs`{.action}, cliq
 
 ### Gérer ses frontends
 
-Afin d'ajouter des frontends, il vous suffit de vous rendre dans l'onglet' `Frontends`{.action} et de cliquer sur `Ajouter un frontend`{.action}. Vous aurez alors accès au menu suivant :
+Afin d'ajouter des frontends, il vous suffit de vous rendre dans l'onglet `Frontends`{.action} et de cliquer sur `Ajouter un frontend`{.action}. Vous aurez alors accès au menu suivant :
 
 ![Ajout frontend](images/add_frontend.png){.thumbnail}
 
@@ -46,7 +46,7 @@ Détails des éléments d'un frontend :
 
 |Élément|Fonction|
 |---|---|
-|Nom|Vus pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
+|Nom|Vous pouvez nommer ici votre frontend, afin notamment de l'identifier rapidement si vous en avez plusieurs |
 |Protocole|Vous avez le choix entre le HTTP, HTTPS, TCP, SSL TCP (ou TLS) et l'UDP|
 |Port|Choisissez ici le port d'écoute à utiliser|
 |Datacenter|Vous pouvez choisir entre un datacenter en particulier ou tous pour la création du frontend|
@@ -59,7 +59,7 @@ Vous avez également accès à des paramètres avancés :
 |Élément|Fonction|
 |---|---|
 |Dedicated IP failover|La liste des IP fail-over des serveurs distants|
-|Resteindre l'accès à des IPs|Liste permettant de restreindre l'accès distant au Load Balancer, uniquement en IPv4|
+|Restreindre l'accès à des IPs|Liste permettant de restreindre l'accès distant au Load Balancer, uniquement en IPv4|
 |Redirection HTTP|Ajout d'une URL de redirection HTTP|
 |Entête HTTP|Ajout d'un en-tête HTTP|
 
@@ -72,7 +72,7 @@ Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans l'ongle
 |Élément|Fonction|
 |---|---|
 |Mode de répartition|Choix entre Round-robin, First, Last, Source ou URI pour votre balancement d'IP|
-|Suivi de session|Le suivi de session peut se faire par Cookie ou IP Source, à définir ici|
+|Suivi de session|Le suivi de session peut se faire par cookie ou IP Source, à définir ici|
 |Sonde|Choix et activation de la sonde|
 
 ### Gérer ses serveurs
@@ -119,7 +119,7 @@ Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'
 
 |Élément|Fonction|
 |---|---|
-|Nom|Choissez si vous le souhaitez un nom à votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
+|Nom|Choisissez si vous le souhaitez un nom à votre certificat, afin de l'identifier rapidement quand vous en avez plusieurs|
 |Clef privée|Champ d'ajout de la clef privée à ajouter au service|
 |Certificat|Champ d'ajout du certificat|
 |Chaîne|Champ d'ajout du certificat racine si nécessaire|
