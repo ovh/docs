@@ -50,11 +50,11 @@ Three plans are available:
 
 Here is an overview of the various plans capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                        |
-| ------------ | -------------------------- | ---------------- | ------------------------------ |
-| *Essential*  | 1                          | No               | Public only                    |
-| *Business*   | 2                          | No               | Public (Private vRack planned) |
-| *Enterprise* | 3                          | No               | Public (Private vRack planned) |
+| Plan         | Number of nodes by default | Additional nodes | Network                |
+| ------------ | -------------------------- | ---------------- | ---------------------- |
+| *Essential*  | 1                          | No               | Public only            |
+| *Business*   | 2                          | No               | Public & Private vRack |
+| *Enterprise* | 3                          | No               | Public & Private vRack |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
 
