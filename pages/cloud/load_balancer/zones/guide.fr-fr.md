@@ -5,7 +5,7 @@ excerpt: "Utilisez les zones afin d'augmenter la disponibilité et diminuer la l
 section: Configuration
 ---
 
-**Dernière mise à jour le 01/02/2022**
+**Dernière mise à jour le 04/04/2022**
 
 ## Objectif
 
@@ -14,7 +14,7 @@ Le service OVHcloud Load Balancer est localisé dans une ou plusieurs zone(s) de
 Vous pouvez commander des zones supplémentaires pour votre service.
 Vous augmentez ainsi la disponibilité de votre service Load Balancer en cas d'indisponibilité d'une zone.
 
-Il est également possible, si configuré de façon appropriée, d'utiliser plusieurs zones afin de minimiser la latence pour vos visiteurs.
+Via une configuration adéquate, vous pouvez également utiliser plusieurs zones afin de minimiser la latence pour vos visiteurs.
 
 **Découvrez comment commander et gérer des zones supplémentaires.**
 
@@ -22,6 +22,7 @@ Il est également possible, si configuré de façon appropriée, d'utiliser plus
 
 - Posséder une offre [OVHcloud Load balancer](https://www.ovh.com/fr/solutions/load-balancer/) dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à l'[API OVHcloud](https://api.ovh.com/).
 
 ## En pratique
 
@@ -29,7 +30,7 @@ Il est également possible, si configuré de façon appropriée, d'utiliser plus
 
 #### Depuis l'espace client OVHcloud
 
-Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action}, puis `Load Balancer`{.action}.
+Vous pouvez commander une zone supplémentaire depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Bare Metal Cloud`{.action}, puis `Load Balancer`{.action}.
 
 Sélectionnez votre Load Balancer puis, dans l'onglet `Accueil`{.action} et le menu `Configuration`{.action}, cliquez sur `Ajouter`{.action} dans la partie « Zones de disponibilité ».
 
@@ -39,7 +40,7 @@ Sélectionnez alors le(s) zone(s) que vous souhaitez commander et cliquez sur `A
  
 ![Selection d'une zone load balancer depuis le manager](images/Select_Zone_IPLB.png){.thumbnail}
 
-Un bon de commande est  généré, il vous faudra le régler.
+Un bon de commande est généré, il vous faudra le régler.
 
 ![Payer la commande zone load balancer depuis le manager](images/Paybill_Zone_IPLB.png){.thumbnail}
 
@@ -87,16 +88,15 @@ N'oubliez pas de régler le bon de commande ainsi généré.
 
 Une fois que la commande de votre zone est finalisée, vous pouvez l'ajouter depuis votre espace client OVHcloud.
 
-Sélectionnez le Load Balancer que vous souhaitez modifier puis créez un nouveau Frontend, ou éditez-en un existant, via l'onglet `Frontends`{.action}
+Sélectionnez le Load Balancer que vous souhaitez modifier puis créez un nouveau frontend, ou éditez-en un existant, via l'onglet `Frontends`{.action}
 
-Dans le champ `Datacenter`{.action}, choisissez la zone que vous souhaitez associer à votre Frontend.
+Dans le champ `Datacenter`{.action}, choisissez la zone que vous souhaitez associer à votre frontend.
 
 ![Choix de la zone](images/Select-Datacenter.png){.thumbnail}
 
 Une fois le frontend configuré, cliquez sur `Ajouter`{.action} ou `Modifier`{.action} selon que vous configurez un nouveau frontend ou un frontend existant.
 
-N'oubliez pas de déployer la configuration. Pour ce faire, dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée,
-cliquez sur `Appliquer la configuration`{.action}.
+N'oubliez pas de déployer la configuration. Pour ce faire, dans le bandeau de rappel vous précisant que la configuration n'est pas appliquée, cliquez sur `Appliquer la configuration`{.action}.
 
 ![Application d'une Configuration d'un Load Balancer](images/apply-configuration.PNG){.thumbnail}
 
@@ -115,8 +115,8 @@ Cette valeur spéciale `Tous (ALL)` va permettre de déployer la même configura
 Si le but est de réduire la latence, vous pouvez diriger les requêtes venant depuis le load balancer de la zone1 vers des serveurs backends proches géographiquement de cette zone1.<br>
 De façon similaire, vous pouvez diriger les requêtes venant depuis le load balancer de la zone2 vers des serveurs backends proches de la zone2.
 
-Afin de réaliser cela, il vous faut spécifier un frontend dans chaque zone qui utilise une farm dans la même zone.<br>
-Cela va vous permettre de déclarer les serveurs backends dans des farms différentes par zone et de controler les serveurs backends utilisés en fonction de la zone.
+Afin de réaliser cela, il vous faut spécifier un frontend dans chaque zone qui utilise une ferme dans la même zone.<br>
+Cela va vous permettre de déclarer les serveurs backends dans des fermes différentes par zone et de contrôler les serveurs backends utilisés en fonction de la zone.
 
 ![Fonctionnement avec plusieurs zones et plusieurs fermes](images/multi_zones_multi_backends.png){.thumbnail}
 
