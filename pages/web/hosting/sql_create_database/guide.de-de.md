@@ -6,7 +6,7 @@ section: 'Datenbanken'
 order: 1
 ---
 
-**Letzte Aktualisierung am 21.09.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -24,7 +24,7 @@ Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommen
 
 ### Schritt 1: Auf die Datenbankverwaltung des Webhostings zugreifen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im oberen Menü den Bereich `Web Cloud`{.action} aus. Klicken Sie in der linken Menüleiste auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie anschließend in den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die Tabelle in diesem Bereich enthält alle Datenbanken, die als Teil Ihres Webhosting Angebots erstellt wurden.
 
@@ -105,7 +105,7 @@ Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt ein
 
 **Too many connections**
 
-Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine Private-SQL-Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/). 
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine [CloudDB](https://www.ovh.de/cloud/cloud-databases/) oder ein [Upgrade Ihres Webhostings](https://www.ovhcloud.com/de/web-hosting/uc-best-web-hosting/). 
 
 **Verbindungsfehler und „not found“-Meldungen**
 

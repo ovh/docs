@@ -6,7 +6,7 @@ section: CMS
 order: 1
 ---
 
-**Dernière mise à jour le 15/12/2017**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -29,16 +29,16 @@ Les modules en 1 clic permettent l'installation facile et rapide d'un site Inter
 
 Un CMS (pour Content Management System) vous permet de concevoir un site web via une interface simple d'utilisation. Il en existe plusieurs types en fonction des projets de chacun. Vous pourrez ainsi bénéficier d'une structure de site prête à l'emploi à personnaliser (thème, textes, etc.) à votre convenance.
 
-OVH propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/) pourrait vous aider dans votre décision.
+OVHcloud propose 4 quatre CMS avec ses modules en 1 clic. En utilisant cette solution, vous devrez donc choisir dans cette liste. Si votre choix s'est déjà porté sur l'un d'entre eux, poursuivez les différentes étapes de ce tutoriel. Dans le cas contraire, ce [comparatif des CMS](https://www.ovhcloud.com/fr/web-hosting/uc-cms-comparison/) pourrait vous aider dans votre décision.
 
-Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVH, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovhcloud.com/fr/web-hosting/)).
+Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHcloud, vous pouvez toujours l'installer manuellement sur votre hébergement, sous réserve de la compatibilité de ce CMS avec votre offre (retrouvez nos offres [ici](https://www.ovhcloud.com/fr/web-hosting/)).
 
 ![Logo des CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Étape 2 : accéder à la gestion des modules 1 clic
 
-Dans la barre de services à gauche de votre espace client OVH, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée.
 
 Vous pourrez y consulter les différents modules en 1 clic déjà installés, les gérer et en installer de nouveaux.
 
@@ -86,8 +86,8 @@ Vous devez à présent renseigner les informations de connexion à votre base de
 
 - la base de données est déjà créée sur votre hébergement : sélectionnez-la dans la liste et complétez les informations demandées ;
 - la base de données n'est pas encore créée sur votre hébergement : suivez les indications afin de créer cette dernière, puis effectuez de nouveau la manipulation ;
-- la base de données est créée sur mon instance SQL Privé ou CloudDB : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données ;
-- la base de données est créée sur un autre hébergement Web OVH : sélectionnez dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
+- la base de données est créée sur mon instance CloudDB : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. L'instance et l'hébergement web doivent être hébergés dans le même centre de données ;
+- la base de données est créée sur un autre hébergement Web OVHcloud : sélectionnez-la dans la liste `Base de données en dehors de votre hébergement web`{.action} et complétez les informations demandées. La base de données et l'hébergement web doivent être hébergés dans le même centre de données ;
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
 
@@ -144,8 +144,6 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre site
 [Comment partager mon hébergement Web entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
 
 [Gestion d’une base de données depuis un hébergement mutualisé](https://docs.ovh.com/fr/hosting/gestion-dune-base-de-donnees-depuis-un-hebergement-mutualise/){.external}
-
-Découvrez nos [offres SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external}
 
 Découvrez nos [offres CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
 

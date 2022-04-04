@@ -47,7 +47,7 @@ Wanneer u op uw control panel bent ingelogd zult uw gebruikersnaam rechtsbovenaa
 
 
 ## 
-U kunt uw wachtwoord achterhalen door te klikken op wachtwoord vergeten op de inlogpagina van uw [control panel](https://https://ssl0.ovh.net/).
+U kunt uw wachtwoord achterhalen door te klikken op wachtwoord vergeten op de inlogpagina van uw [control panel](https://ssl0.ovh.net/).
 
 Er zal een bevestigende e-mail verzonden worden aan het contact e-mailadres. 
 Als u geen toegang meer heeft tot dit adres kunt u het volgende formulier invullen:  

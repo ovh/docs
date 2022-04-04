@@ -3,7 +3,7 @@ title: 'Creating an Instance via the Horizon interface'
 slug: create-an-instance-in-horizon
 excerpt: 'Find out how to create an Instance via the Horizon interface'
 section: Horizon
-order: 4
+order: 03
 ---
 
 **Last updated 30th December 2021**
@@ -17,11 +17,11 @@ You can create multiple Instances directly in the Horizon interface, and also co
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- [Access to the Horizon interface](../configure_user_access_to_horizon/){.external} 
+- [Access to the Horizon interface](../horizon/)
 
 ## Instructions
 
-To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our guide to [Accessing the Horizon interface](../configure_user_access_to_horizon/){.external}.
+To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](../configure_user_access_to_horizon/).
 
 Next, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 

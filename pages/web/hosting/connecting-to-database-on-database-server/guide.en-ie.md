@@ -2,11 +2,11 @@
 title: 'Connecting to a database on your database server'
 slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
-section: Private SQL
+section: CloudDB
 order: 3
 ---
 
-**Last updated 16th September 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -16,7 +16,7 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) or a [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- a [Cloud Database](https://www.ovh.ie/cloud-databases/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
@@ -34,9 +34,9 @@ You can access your database’s content via an interface. There are several way
 > Since MariaDB is a derivative of MySQL, the commands are exactly the same for these 2 types of databases.
 > 
 
-####  With OVHcloud phpMyAdmin (for Private SQL only)
+####  With OVHcloud phpMyAdmin 
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the SQL instance concerned.
 
 In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
 
@@ -50,7 +50,6 @@ You will land on the phpMyAdmin login page.
 - **User**: Enter the username you created in the `Users and rights` tab of your database server.
 - **Password**: Enter the password for the user concerned.
 - **Port**: Enter the port listed in the `General information` tab, in the **Database administration** box, under “Port” in the **SQL** section.
- (This box appears only for Private SQL servers)
 
 If the connection succeeds, the next page of phpMyAdmin will appear.
 
@@ -76,19 +75,11 @@ To connect to your database, please ensure that you have the following informati
 
 ##### 1\. Connecting via the command line
 
-> [!primary]
->
-> For a Private SQL server, this action is only possible via [SSH](../web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
-
 ```bash
 mysql --host=server --user=username --port=port --password=password database_name
 ```
 
 ##### 2\. Connecting via PHP script
-
-> [!primary]
->
-> For a Private SQL server, you can only run this script from an OVHcloud Web Hosting plan. 
 
 ```php
 1. <?php
@@ -140,10 +131,6 @@ To connect to your database, please ensure that you have the following informati
 
 #### Connecting via the command line
 
-> [!primary]
->
-> For a Private SQL server, this action is only possible via [SSH](../web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
-
 
 ```bash
 psql --host=server --port=port --user=username --password=password database_name
@@ -151,9 +138,6 @@ psql --host=server --port=port --user=username --password=password database_name
 
 #### Connecting via PHP script
 
-> [!primary]
->
-> For a Private SQL server, you can only run this script from an OVHcloud Web Hosting plan.
 
 ```php
 1. <?php

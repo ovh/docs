@@ -2,7 +2,8 @@
 title: 'Crear una instancia en Horizon'
 slug: crear_una_instancia_en_horizon
 excerpt: 'Cómo crear una instancia desde el panel Horizon'
-section: Horizon
+section: Gestión desde Horizon
+order: 5
 ---
 
 > [!primary]
@@ -20,11 +21,11 @@ Es posible crear instancias directamente en Horizon. Desde esta interfaz podrá,
 ## Requisitos
 
 - Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud.
-- [Estar conectado a Horizon](../crear_un_acceso_a_horizon/){.external}. 
+- [Estar conectado a Horizon](../horizon/){.external}. 
 
 ## Procedimiento
 
-En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra guía [Conectarse a Horizon](../crear_un_acceso_a_horizon/){.external}.
+En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra [guía](../horizon/).
 
 A continuación, haga clic en `Compute`{.action} en la columna izquierda y seleccione `Instances`{.action}.
 

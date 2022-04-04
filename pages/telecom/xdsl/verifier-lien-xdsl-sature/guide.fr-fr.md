@@ -5,24 +5,24 @@ excerpt: 'Apprenez à contrôler la saturation de votre connexion internet'
 section: 'Diagnostic et dépannage'
 ---
 
-**Dernière mise à jour le 23/10/2018**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
-Votre solution xDSL OVH vous permet d'accéder à différents types de contenus sur Internet (des sites ou des médias, par exemple). Vous consommez alors des ressources allouées à votre connexion, aussi appelées bande passante ou débit. Lorsqu'elles sont intégralement utilisées, vous saturez votre ligne et cela peut entraîner des lenteurs (comme des sites web qui se chargent lentement ou des vidéos qui ne s'affichent plus en haute définition).
+Votre solution xDSL OVHcloud vous permet d'accéder à différents types de contenus sur Internet (des sites ou des médias, par exemple). Vous consommez alors des ressources allouées à votre connexion, aussi appelées bande passante ou débit. Lorsqu'elles sont intégralement utilisées, vous saturez votre ligne et cela peut entraîner des lenteurs (comme des sites web qui se chargent lentement ou des vidéos qui ne s'affichent plus en haute définition).
 
 **Apprenez à vérifier si votre lien xDSL est saturé.**
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 - Disposer d'un ordinateur relié via un câble Ethernet au modem utilisant le lien xDSL que vous souhaitez tester.
 
 ## En pratique
 
 La méthode la plus courante pour vérifier votre débit est d'effectuer un test par le biais d'un site internet spécialisé. Cette méthode, bien qu'intéressante, reste un indicateur réalisé à un instant T. Le résultat obtenu peut donc énormément varier selon l'utilisation faite de votre connexion au même moment.
 
-Depuis votre espace client OVH, vous avez la possibilité de consulter l'activité de votre connexion sur une période de temps que vous choisissez. Vous pouvez ainsi vérifier le débit alloué ainsi que le trafic utilisé. Cela permet d'avoir une vision globale de l'utilisation de votre connexion par tous les équipements reliés à votre modem.
+Depuis votre espace client OVHcloud, vous avez la possibilité de consulter l'activité de votre connexion sur une période de temps que vous choisissez. Vous pouvez ainsi vérifier le débit alloué ainsi que le trafic utilisé. Cela permet d'avoir une vision globale de l'utilisation de votre connexion par tous les équipements reliés à votre modem.
 
 Poursuivez la lecture de cette documentation selon la vérification que vous souhaitez effectuer. Bien évidemment, les deux peuvent être réalisées conjointement.
 
@@ -34,9 +34,9 @@ Poursuivez la lecture de cette documentation selon la vérification que vous sou
 
 Cette opération se réalise en plusieurs étapes. Le but étant de pouvoir vérifier si votre connexion est saturée ou non.
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, sélectionnez le pack concerné puis l'accès que vous souhaitez vérifier. Assurez-vous alors d'être positionné sur l'onglet `Mon accès`{.action}.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Accès Internet`{.action}, sélectionnez le pack concerné puis l'accès que vous souhaitez vérifier. Assurez-vous alors d'être positionné sur l'onglet `Mon accès`{.action}.
 
-![xdslsaturation](images/xdsl-capacity-step1.png){.thumbnail}
+![xdslsaturation](images/monacces-2022.png){.thumbnail}
 
 #### Étape 1 : vérifier le débit alloué à ma connexion
 
@@ -78,7 +78,7 @@ Vous ne constatez alors pas de saturation de votre connexion. Si tel est le cas,
 
 ### Effectuer un test ponctuel de débit
 
-OVH met à votre disposition sur le site <http://proof.ovh.net/> un outil permettant de vérifier votre débit à un instant T. Gardez en tête que le résultat obtenu peut énormément varier selon l'utilisation faite de votre connexion au moment où vous réalisez ce test.
+OVHcloud met à votre disposition sur le site <http://proof.ovh.net/> un outil permettant de vérifier votre débit à un instant T. Gardez en tête que le résultat obtenu peut énormément varier selon l'utilisation faite de votre connexion au moment où vous réalisez ce test.
 
 Afin que celui-ci puisse s'effectuer dans les meilleures conditions, nous vous recommandons au préalable de :
 

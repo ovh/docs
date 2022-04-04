@@ -6,7 +6,7 @@ section: Databases
 order: 1
 ---
 
-**Last updated 30th June 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -24,7 +24,7 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ### Step 1: Accessing the Web Hosting database management section
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `Databases`{.action} tab.
 
 The table in this section contains all the databases created as part of your Web Hosting plan.
 
@@ -106,7 +106,7 @@ To verify the available snapshots and their creation timestamp, click on the sym
 
 **Too many connections**
 
-Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a Private SQL database or a [hosting plan upgrade](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/). 
+Web Hosting databases are limited to 30 simultaneous connections (system variable *max_connections*). SQL requests should therefore be optimised to prevent this kind of error. If issues persist anyway, alternative measures should be considered i.e. switching to a [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/) or a [hosting plan upgrade](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/). 
 
 **Connection / "not found" errors**
 

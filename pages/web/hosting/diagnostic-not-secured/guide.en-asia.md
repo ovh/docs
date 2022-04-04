@@ -46,7 +46,7 @@ To solve this issue, you will need to:
 
 The error messages mentioned [above](#objective) do not necessarily mean that your website is hosted on one of our [Web Cloud offers](https://www.ovhcloud.com/asia/web-hosting/). For this reason, you will need to check the IP address of the server your [domain name](https://www.ovhcloud.com/asia/domains/) is attached to.
 
-To find the IP address of your [OVHcloud hosting plan](https://www.ovhcloud.com/asia/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then on `Hosting plans`{.action} in the left-hand menu.
+To find the IP address of your [OVHcloud hosting plan](https://www.ovhcloud.com/asia/web-hosting/), click on `Web Cloud`{.action} in the top of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), then on `Hosting plans`{.action}.
 
 In the `General information`{.action} tab, note the IPV4 and/or IPV6 address of your Web hosting.
 
@@ -56,7 +56,7 @@ In the `General information`{.action} tab, note the IPV4 and/or IPV6 address of 
 
 You now need to check that the IP address listed in the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) corresponds to the one of your [Web Cloud hosting plan](https://www.ovhcloud.com/asia/web-hosting/).
 
-Click on `Domain names`{.action} in the top left-hand corner of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select your website’s domain name.
+Click on `Domain names`{.action} of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select your website’s domain name.
 
 Select the `DNS Zone`{.action} tab and note the target of the `A` record for your domain name:
 

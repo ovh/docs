@@ -11,11 +11,11 @@ section: 'RAID y discos'
 
 Si detecta un fallo en un disco o nuestro sistema le ha enviado una notificación por correo electrónico informándole del fallo de un disco, debe adoptar las medidas necesarias para sustituirlo lo antes posible.
 
-**Esta guía explica cómo saber si falla un disco y cómo solicitar su sustitución a OVH.**
+**Esta guía explica cómo saber si falla un disco y cómo solicitar su sustitución a OVHcloud.**
 
 > [!warning]
 >
-> La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
+> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
 > 
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 > 
@@ -23,7 +23,7 @@ Si detecta un fallo en un disco o nuestro sistema le ha enviado una notificació
 
 ## Requisitos
 
-- Estar conectado al [servidor dedicado de OVH](https://www.ovh.es/servidores_dedicados/){.external} por SSH con acceso root (Linux).
+- Estar conectado al [servidor dedicado de OVHcloud](https://www.ovh.es/servidores_dedicados/){.external} por SSH con acceso root (Linux).
 
 
 ## Procedimiento
@@ -32,7 +32,7 @@ Si detecta un fallo en un disco o nuestro sistema le ha enviado una notificació
 
 En primer lugar, **es fundamental realizar una copia de seguridad de sus datos**. El único propósito de un RAID (excepto el RAID 0) es proteger sus datos frente a los fallos de los discos. Una vez que un disco queda inutilizado, todos los datos dependen del buen funcionamiento del disco o discos restantes. Es poco probable que fallen dos discos al mismo tiempo, pero no es imposible.
 
-Antes de realizar cualquier sustitución de discos, OVH requiere:
+Antes de realizar cualquier sustitución de discos, OVHcloud requiere:
 
 -	una confirmación por su parte de que ha realizado una copia de seguridad de los datos;
 -	una confirmación de que, conociendo los riesgos de pérdida de los datos, acepta la sustitución del disco.
@@ -143,7 +143,7 @@ root@rescue:~# nvme list
 
 #### Sustituir el disco en frío (requiere una interrupción del servidor)
 
-Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [área de cliente de OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
+Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet a nuestro soporte desde el [área de cliente de OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Para acelerar el proceso, deberá proporcionar la información obtenida en las pruebas anteriores. Son necesarios los siguientes datos:
 
 - **Número de serie del disco que quiera sustituir, así como de todos los demás discos**: Para obtener el número de serie del disco, consulte [esta guía](https://docs.ovh.com/es/dedicated/obtener-numero-de-serie-disco/){.external}. Si por alguna razón no fuera posible obtener el número de serie del disco, indíquelo en el tíquet y comunique el número de serie del disco o discos que no haya que sustituir. Como ya hemos dicho, es importante indicar el número de serie de todos los discos para evitar errores durante la operación.
 

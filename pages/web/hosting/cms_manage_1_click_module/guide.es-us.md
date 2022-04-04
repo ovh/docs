@@ -90,8 +90,6 @@ A continuación, haga clic en el botón `...`{.action} a la derecha de la línea
 
 Para eliminar el módulo en 1 clic, es necesario empezar identificando su base de datos de forma **segura**. Para ello, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Haga clic en `Web Cloud`{.action}, `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
-Si dispone de una sola base de datos en esta parte del área de cliente y no dispone de soluciones [SQL Privado](https://www.ovhcloud.com/es/web-hosting/options/private-sql/), puede considerar que se trata de la de su sitio web.
-
 En caso contrario, abra la pestaña `Multisitio`{.action}. Anote el nombre de la `Carpeta raíz`: es el directorio en el que se encuentran los archivos que constituyen su módulo en 1 clic en el servidor FTP.
 
 Conéctese al [espacio FTP del alojamiento](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/). Abra la `Carpeta raíz` encontrada anteriormente en la pestaña `Multisitio`{.action} y busque el archivo de configuración de su módulo:

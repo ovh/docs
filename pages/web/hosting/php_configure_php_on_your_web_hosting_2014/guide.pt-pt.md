@@ -45,7 +45,7 @@ Tem a possibilidade de conhecer a versão de PHP que está a ser utilizada pelo 
 
 |Meios|Descrição|
 |---|---|
-|Através da Área de Cliente|Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Na janela `Informações gerais`{.action}, localize a versão abaixo de **“Versão global de PHP”**. Se vir um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.|
+|Através da Área de Cliente|Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Na janela `Informações gerais`{.action}, localize a versão abaixo de **“Versão global de PHP”**. Se vir um símbolo redondo azul, aguarde alguns minutos para que a versão seja atualizada.|
 |Através de um script|Crie um script **.php** incluindo apenas o código `<?php phpinfo(); ?>`. Deverá publicá-lo no seu espaço de armazenamento e aceder-lhe através do seu endereço URL completo.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

@@ -66,9 +66,7 @@ Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até 
 
 Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao separador `Bare Metal Cloud`{.action} e clique na secção `IP`{.action} no canto inferior esquerdo. 
-
-![Reverse IP](images/ipsection.png)
+Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao separador `Bare Metal Cloud`{.action} e abra `IP`{.action}. 
 
 No menu pendente do **Serviço**, selecione um serviço com um endereço IPv4:
 

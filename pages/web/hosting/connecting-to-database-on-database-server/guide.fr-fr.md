@@ -2,11 +2,11 @@
 title: 'Se connecter à la base de données de votre serveur de bases de données'
 slug: connexion-base-de-donnees-serveur-bdd
 excerpt: 'Découvrez comment se connecter à votre base de données'
-section: 'SQL Privé'
+section: CloudDB
 order: 3
 ---
 
-**Dernière mise à jour le 24/08/2020**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -16,16 +16,16 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [SQL Privé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/){.external} et [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au Host mais aux bases de données hébergées sur celui-ci. 
 > <br> Il n'y a pas d'accès super utilisateur  « root ». 
-> <br> Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL  ou Adminer sont pleinement compatibles.
+> <br> Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
 
 ### Se connecter a une base de données MySQL ou MariaDB 
@@ -35,9 +35,9 @@ Il est possible de consulter le contenu de votre base de données via une interf
 > MariaDB étant un dérivé de MySQL, les différentes commandes sont exactement les mêmes pour ces 2 types de bases de données.
 > 
 
-####  Par phpMyAdmin OVHcloud (uniquement pour l'offre SQL Privé)
+####  Par phpMyAdmin OVHcloud 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Base de données`{.action}. Sélectionnez le nom de votre serveur de bases de données.
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »**  sous la mention « Interface utilisateur ».
 
@@ -50,7 +50,7 @@ Vous arrivez sur la page de connexion de phpMyAdmin.
 - **Serveur :** renseignez le nom d'hôte de votre serveur visible dans l'onglet `Informations générales`, dans le cadre **« Administration de la base de données »** sous la mention « Nom d'hôte » de la partie **SQL**.
 - **Utilisateur :** renseignez le nom d'utilisateur créé dans l'onglet `Utilisateurs et droits` de votre serveur de bases de données.
 - **Mot de passe :** renseignez le mot de passe associé à l'utilisateur concerné.
-- **Port :** renseignez le port mentionné dans l'onglet `Informations générales`, dans le cadre **« Administration de la base de données »** sous la mention « Port» de la partie **SQL**. (Cette case ne s'affiche que pour les serveurs SQL Privé)
+- **Port :** renseignez le port mentionné dans l'onglet `Informations générales`, dans le cadre **« Administration de la base de données »** sous la mention « Port» de la partie **SQL**.
 
 Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
@@ -76,19 +76,11 @@ Afin de vous connecter à votre base de données, assurez-vous de récupérer le
 
 ##### 1. Connexion en ligne de commande
 
-> [!primary]
->
-> Pour un serveur SQL privé, cette action est  uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
-
 ```bash
 mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
 ```
 
 ##### 2. Connexion par script PHP
-
-> [!primary]
->
-> Pour un serveur SQL privé, l’exécution de ce script ne peut se faire uniquement que depuis un hébergement mutualisé OVHcloud. 
 
 ```php
 1. <?php
@@ -143,20 +135,11 @@ Afin de vous connecter à votre base de données, assurez-vous de récupérer le
 
 #### Connexion en ligne de commande
 
-> [!primary]
->
-> Pour un serveur SQL privé, cette action est  uniquement possible en [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
-
-
 ```bash
 psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base
 ```
 
 #### Connexion par script PHP
-
-> [!primary]
->
-> Pour un serveur SQL privé, l'execution de ce script ne peut se faire uniquement que depuis un hébergement mutualisé OVHcloud.
 
 ```php
 1. <?php

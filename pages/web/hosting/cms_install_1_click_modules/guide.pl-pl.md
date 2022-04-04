@@ -5,11 +5,11 @@ excerpt: Dowiedz się, jak stworzyć stronę internetową za pomocą modułów O
 section: CMS
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-31**
+**Ostatnia aktualizacja dnia 03-02-2022**
 
 ## Wprowadzenie
 
-Moduły OVH umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla.
+Moduły OVHcloud umożliwiają łatwe i szybkie postawienie strony internetowej (bez konieczności posiadania umiejętności technicznych), przy pomocy narzędzi w Panelu klienta OVH. Automatyczna instalacja jest dostępna dla: WordPress, PrestaShop, Drupal i Joomla.
 
 **Dowiedz się, jak postawić stronę za pomocą modułów OVH.**
 
@@ -26,17 +26,17 @@ Moduły OVH umożliwiają łatwe i szybkie postawienie strony internetowej (bez 
 
 CMS (Content Management System) umożliwiają postawienie strony internetowej za pomocą prostego w użyciu interfejsu. Istnieje wiele systemów zarządzania treścią, które mają różne przeznaczenie. Dzięki temu wybierasz gotowe do użycia rozwiązanie, które dowolnie personalizujesz pod względem struktury strony (szablon, teksty itd.).
 
-OVH oferuje cztery systemy zarządzania treścią do prostej i szybkiej instalacji jako gotowe moduły. Są to najpopularniejsze rozwiązania dostępne na rynku. Jeśli już dokonałeś wyboru jednego spośród CMS-ów, przejdź do kolejnego kroku tego przewodnika. 
+OVHcloud oferuje cztery systemy zarządzania treścią do prostej i szybkiej instalacji jako gotowe moduły. Są to najpopularniejsze rozwiązania dostępne na rynku. Jeśli już dokonałeś wyboru jednego spośród CMS-ów, przejdź do kolejnego kroku tego przewodnika. 
 Jeżeli nie wiesz, który CMS jest dla Ciebie, zapoznaj się z naszym [porównaniem systemów CMS](https://www.ovhcloud.com/pl/web-hosting/uc-cms-comparison/){.external}.
 
-Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVH, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}).
+Jeśli chcesz zainstalować inne rozwiązanie niż te dostępne w Panelu klienta OVHcloud, możesz zawsze zainstalować je ręcznie na hostingu pod warunkiem, że będzie on kompatybilny z Twoją ofertą (szczegóły pakietów hostingowych znajdziesz [tutaj](https://www.ovhcloud.com/pl/web-hosting/){.external}).
 
-![Dostępne w OVH CMS](images/CMS_logo.png){.thumbnail}
+![Dostępne w OVHcloud CMS](images/CMS_logo.png){.thumbnail}
 
 
 ### Dostęp do zarządzania modułami
 
-W menu usług po lewej stronie Panelu klienta, przejdź do sekcji `Hosting`{.action}, a następnie kliknij nazwę Twojej usługi. Wsród dostępnych zakładek, wybierz i kliknij zakładkę `Moduły`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. Wsród dostępnych zakładek, wybierz i kliknij zakładkę `Moduły CMS`{.action}.
 
 W tu możesz przeglądać już zainstalowane moduły, zarządzać nimi i instalować nowe.
 
@@ -84,8 +84,8 @@ Teraz podaj informacje dotyczące logowania do Twojej bazy danych. Istnieje kilk
 
 - baza danych jest już utworzona na Twoim hostingu - wybierz ją z listy i uzupełnij wymagane informacje;
 - baza danych nie została jeszcze utworzona na Twoim hostingu - zastosuj się do wskazówek w celu jej utworzenia, a następnie ponownie dokonaj wyboru;
-- baza danych jest utworzona na instancji Private SQL lub CloudDB – wybierz z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
-- baza danych jest utworzona na innym hostingu w OVH – wybierz z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Baza danych oraz hosting muszą być zlokalizowane w tym samym centrum danych;
+- baza danych jest utworzona na instancji CloudDB – wybierz ją z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Instancja SQL oraz hosting muszą być zlokalizowane w tym samym centrum danych;
+- baza danych jest utworzona na innym hostingu w OVHcloud – wybierz ją z listy `Baza danych poza hostingiem WWW`{.action} i uzupełnij wymagane informacje. Baza danych oraz hosting muszą być zlokalizowane w tym samym centrum danych;
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}.
 
@@ -142,8 +142,6 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 [Jak rozdzielić hosting WWW na wiele stron](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
 
 [Zarządzanie bazą danych na hostingu](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}
-
-Poznaj instancje [Private SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external}
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

@@ -3,7 +3,7 @@ title: "Conocer la interfaz de Public Cloud"
 excerpt: "Visita guiada de la interfaz de Public Cloud para descubrir las diferentes secciones"
 slug: interfaz-de-public-cloud
 section: Primeros pasos
-order: 03
+order: 02
 ---
 
 > [!primary]

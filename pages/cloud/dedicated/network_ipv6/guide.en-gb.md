@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network management'
 ---
 
-**Last updated 1st December 2021**
+**Last updated 15th March 2022**
 
 ## Objective
 
@@ -41,6 +41,10 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!warning]
+> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). In this case, please refer to this [guide](https://docs.ovh.com/gb/en/vps/configuring-ipv6/) for configuring ipv6 on a Kimsufi server.
 >
 
 > [!api]
@@ -126,7 +130,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in /etc/sysconfig/network-scripts/ifcfg-eth0. Use the command line to locate this file and open it for editing.
+Your server's network configuration file is located in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Use the command line to locate this file and open it for editing.
 
 #### Step 3: Amend the network configuration file
 

@@ -1,9 +1,7 @@
 ---
 title: 'Fehler "Seite nicht installiert" beheben'
 excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
-id: '1585'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
-legacy_guide_number: g1585
 section: Diagnose
 order: 4
 ---
@@ -53,7 +51,7 @@ Wählen Sie das betreffende Hosting aus der Liste aus und klicken Sie dann auf d
 |Szenario|Erforderliche Maßnahme|
 |---|---|
 |Der Name Ihrer Website erscheint in der Tabelle.|Wenn Sie den Namen Ihrer Website gerade im Multisite-Bereich Ihres Hostings hinzugefügt haben, warten Sie etwa 20 Minuten und leeren Sie den Cache Ihres Browsers. Wenn die Nachricht `Seite nicht installiert` noch besteht, gehen Sie zu [Schritt 2](#checkdomainlink).|
-|Die Domain oder Subdomain Ihrer Website wird nicht in der Tabelle angezeigt.|Fügen Sie Ihre Domain zu `Multisite` {.action} hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen)" folgen.|
+|Die Domain oder Subdomain Ihrer Website wird nicht in der Tabelle angezeigt.|Fügen Sie Ihre Domain zu `Multisite`{.action} hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen)" folgen.|
 |Die Domain wurde ohne Aktion Ihrerseits als Multisite entfernt.|Ihr Domainname oder die DNS-Zone wird wahrscheinlich über einen anderen Account verwaltet. Fügen Sie Ihre Domain als Multisite hinzu, indem Sie der Anleitung "[Mehrere Websites auf einem Webhosting einrichten](../multisites-mehrere-websites-konfigurieren/#schritt-22-eine-externe-domain-hinzufugen)" folgen.|
 
 ### Schritt 2: Die DNS-Zone Ihrer Domain überprüfen <a name="checkdomainlink"></a>
@@ -64,7 +62,7 @@ Wählen Sie das betreffende Hosting aus der Liste aus und klicken Sie dann auf d
 
 #### 2\.1 Die IP-Adresse Ihres OVHcloud Hostings identifizieren
 
-Um die korrekte IP-Adresse herauszufinden, klicken Sie in der linken Spalte Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus.
+Um die korrekte IP-Adresse herauszufinden, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus.
 
 ![hosting-general-information](images/hosting-general-informations.png){.thumbnail}
 

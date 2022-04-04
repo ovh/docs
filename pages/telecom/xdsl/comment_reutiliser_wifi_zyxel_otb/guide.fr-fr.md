@@ -5,7 +5,7 @@ excerpt: "Découvrez comment réutiliser le WiFi d'un modem Zyxel avec votre Ove
 section: "Intégration avec les offres OverTheBox d'OVHcloud"
 ---
 
-**Dernière mise à jour le 12/04/2021**
+**Dernière mise à jour le 16/02/2021**
 
 ## Objectif
 
@@ -30,12 +30,12 @@ Dans ce guide, vous verrez comment tirer parti de l'interface du modem Zyxel pou
 
 > [!primary]
 >
-> Ce guide ne concerne que les modems de marque Zyxel. Si vous possedez un modem Thomson ou Technicolor, vous pouvez demander un échange de confort facturé 70 € HT (84 € TTC). Pour cela, depuis votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} partie « Télécom », cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Accès`{.action}. En bas de la page à gauche, cliquez sur le bouton `Echanger mon modem`{.action}.
+> Ce guide ne concerne que les modems de marque Zyxel. Si vous possedez un modem Thomson ou Technicolor, vous pouvez demander un échange de confort facturé 70 € HT (84 € TTC). Pour cela, depuis votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} partie « Télécom », cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Accès`{.action}. En bas de la page à gauche, cliquez sur le bouton `Echanger mon modem`{.action}.
 >
 
 ### Étape 1 : désactiver la configuration à distance <a name="desactiver-configuration-distance"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
 
@@ -43,7 +43,7 @@ Dans le cadre « Configuration à distance », vérifiez que la case à côté d
 
 - **la configuration à distance est activée**: Vous devez désactiver la configuration à distance si vous souhaitez paramétrer votre modem Zyxel localement. Pour ce faire, décochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de la désactivation.
 
-![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step1.png){.thumbnail}
+![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step1-2022.png){.thumbnail}
 
 ### Étape 2 : se connecter à l'interface locale du modem <a name="interface-locale"></a>
 
@@ -83,7 +83,7 @@ Dans la dernière partie apparaissent deux listes, `Available LAN Interfaces` et
 
 Une fois les interfaces souhaitées déplacées dans la section `Selected LAN Interfaces`, cliquez sur `OK`{.action} pour valider votre choix. Le modem va alors déplacer les interfaces dans le groupe `OverTheBox`. Un délai peut être nécessaire avant que ne s'affichent les deux groupes d'interfaces `Default` et `OverTheBox`.
 
-![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-3.png){.thumbnail}
+![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-3-2022.png){.thumbnail}
 
 ### Étape 4 : modifier la gestion du DHCP pour le groupe OverTheBox
 

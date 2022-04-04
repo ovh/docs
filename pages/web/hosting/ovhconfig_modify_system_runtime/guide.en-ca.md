@@ -33,7 +33,7 @@ When you modify your Web Hosting plan’s configuration, you will also change th
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click `Web Hosting`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -75,7 +75,7 @@ By changing the runtime environment, you can edit certain technical values for y
 |Environment|Legacy|Stable|Stable64|
 |---|---|---|---|
 |architecture|32 bits|32 bits|64 bits|
-|Maximum PHP version|5.6|7.3|7.4|
+|Minimum PHP version|5.6|7.3|7.4|
 |Openssl|1.0.1t|1.0.1t|1.1.1d|
 |Python|2.7 and 3.4|2.7 and 3.7|2.7 and 3.7|
 |Ruby|2.1|2.1|2.5|

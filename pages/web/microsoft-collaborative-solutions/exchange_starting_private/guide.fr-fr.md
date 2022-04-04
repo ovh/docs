@@ -26,7 +26,7 @@ Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide d
 
 Une fois la commande réalisée, vous recevrez, sur l'adresse e-mail de référence de votre espace client, les informations pour configurer votre plateforme Private Exchange. 
 
-Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre profil en haut à droite puis cliquez sur `Mon compte`{.action}. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet:
+Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre profil en haut à droite puis cliquez sur `E-mails de service`{.action} et recherchez l'e-mail ayant pour objet:
 
 > **[xx-11111-ovh] Votre service Private Exchange 20_xxx_ est en cours de livraison !**
 
@@ -52,7 +52,7 @@ Complétez celle-ci selon les indications du tableau ci-dessous.
 |----------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Nom de votre serveur 	| Dans le menu déroulant, choisissez le sous-domaine associé à votre nom de domaine. <br> Dans le champ libre, tapez le nom de domaine que vous souhaitez associer.                                                                   	|
 | E-mail               	| Choisissez une adresse e-mail dans la liste proposée. Celle-ci servira à recevoir l'e-mail de validation du certificat SSL de votre plateforme, il est donc impératif qu'elle soit valide ou qu'elle redirige vers une adresse e-mail accessible pour le recevoir.
-| DNS Assist           	| En cochant cette case vous autorisez la configuration automatique de votre zone DNS pour le nom de domaine de votre plateforme. Le domaine doit être géré sur le même compte OVHcloud que votre plateforme. Si vous ne cochez pas lq case, un e-mail avec les informations de configuration de votre zone DNS vous sera envoyé. 	|
+| DNS Assist           	| En cochant cette case vous autorisez la configuration automatique de votre zone DNS pour le nom de domaine de votre plateforme. Le domaine doit être géré sur le même compte OVHcloud que votre plateforme. Si vous ne cochez pas la case, un e-mail avec les informations de configuration de votre zone DNS vous sera envoyé. 	|
 
 Après validation de cette étape, un message vous indique que la configuration a bien été effectuée. Vous sont également rappelées l'adresse e-mail de validation du certificat SSL et l'adresse d'accès au webmail de votre plateforme.
 

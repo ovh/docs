@@ -6,22 +6,12 @@ section: Kafka MirrorMaker
 order: 1
 ---
 
-**Last updated December 15<sup>th</sup>, 2021**
+**Last updated January 26<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
-
-## BETA phase
-
-Please note that the Public Cloud Databases for Kafka offer is currently in BETA phase, meaning:
-
-- the service is free during BETA phase;
-- the service is not ready for production;
-- there is no official support;
-- there are no contractual agreements (SLA);
-- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/150>.
 
 ## Capabilities and limitations
 
@@ -70,7 +60,6 @@ Here is an overview of the various plans capabilities:
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network.
 
-
 #### Nodes
 
 - **Essential**: the cluster is delivered with 3 nodes by default.
@@ -94,7 +83,6 @@ Here are the node types you can choose from:
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
 
-
 **Business plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
@@ -103,7 +91,6 @@ Here are the node types you can choose from:
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
 
-
 **Enterprise plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
@@ -111,7 +98,6 @@ Here are the node types you can choose from:
 | db1-7   | N/A       | 2     | 7           |
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
-
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
@@ -129,20 +115,20 @@ For both public and private networks, Ingress and Egress traffic are included in
 
 #### Kafka replication and data retention
 
-You can select a Kafka source cluster and a Kakfa destination cluster from the same Public Cloud project.
+You can select a Kafka source cluster and a Kafka destination cluster from the same Public Cloud project.
 External Kafka clusters are not supported so far.
 
-You  need at least 2 kafka clusters to create replication flows.
+You  need at least 2 Kafka clusters to create replication flows.
 
 Replication flows allowed parameters are:
 
-- Source;
-- Target;
-- Topics;
-- Topics exclusion;
-- Sync group offset;
-- Sync interval in seconds (s);
-- Heartbeats (true/false).
+- Source
+- Target
+- Topics
+- Topics exclusion
+- Sync group offset
+- Sync interval in seconds (s)
+- Heartbeats (true/false)
 
 Data retention is only limited by your cluster storage space.
 
@@ -163,7 +149,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 - **Metrics retention :** 1 calendar month.
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 

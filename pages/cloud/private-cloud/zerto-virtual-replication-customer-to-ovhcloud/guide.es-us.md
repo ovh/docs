@@ -1,17 +1,23 @@
 ---
-title: 'Configuración de una VPN para su Plan de Recuperación ante Desastres con Zerto OVHcloud'
+title: Utilizar Zerto entre OVHcloud y una plataforma tercera
 slug: zerto-virtual-replication-customer-to-ovhcloud
-excerpt: Esta guía explica cómo cofigurar una VPN para conectar su plataforma Zerto local con su Private Cloud de OVHcloud.
+excerpt: 'Cómo conectar su Zerto OVHcloud a otra plataforma'
 section: 'Servicios y opciones de OVHcloud'
 ---
 
-**Última actualización: 30/06/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 11/02/2022**
 
 ## Objetivo:
-El objetivo de esta guía es ayudarle a configurar la red privada virtual (VPN) para conectar su plataforma local con su Hosted Private Cloud OVHcloud y así implementar la solución de recuperación ante desastres
-Zerto.
+
+Esta guía explica cómo configurar la red privada virtual (VPN) para conectar una plataforma de terceros a su Hosted Private Cloud de OVHcloud e implementar la solución de recuperación ante desastres Zerto.<br>.
 Para mostrar el procedimiento, vamos a utilizar como ejemplo la solución VPN de OPNSense, una plataforma firewall/VPN open source.
-Para facilitar la explicación, vamos a describir la forma más sencilla de establecer un túnel VPN con la red de la interfaz Zerto Virtual Manager (ZVM). 
+Para facilitar la explicación, vamos a describir la forma más sencilla de establecer un túnel VPN con la red de la interfaz Zerto Virtual Manager (ZVM).
+
+Para el segundo caso, consulte nuestra guía "[Zerto entre dos datacenters de OVHcloud](https://docs.ovh.com/us/es/private-cloud/zerto-virtual-replication-vmware-vsphere-drp/)".
 
 ## Requisitos:
 

@@ -17,9 +17,9 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Requirements
 
-- a dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-- at least one [failover IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) attached to the server
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+- At least one [failover IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) attached to the server
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -37,9 +37,11 @@ Code samples in the following instructions have to be replaced with your own val
 
 ### Step 1: Assign a virtual MAC address
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to the `Bare Metal Cloud`{.action} section. Then click on `IP`{.action} in the menu on the left-hand side and locate your failover IP address in the table.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+The “Service” drop-down menu allows you to filter for Failover IPs.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Click on `...`{.action} in the relevant row to open the context menu, and select `Add a virtual MAC`{.action}.
 
@@ -47,7 +49,7 @@ Click on `...`{.action} in the relevant row to open the context menu, and select
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 

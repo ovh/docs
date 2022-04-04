@@ -2,11 +2,11 @@
 title: 'Convertirse en el usuario root y establecer una contraseña'
 slug: conectarse_como_usuario_root_y_establecer_una_contrasena
 excerpt: 'Esta guía explica cómo configurar el usuario root y la contraseña de la cuenta root'
-section: Tutoriales
-order: 5
+section: Primeros pasos
+order: 08
 ---
 
-**Última actualización: 19/10/2021**
+**Última actualización: 24/03/2022**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -20,8 +20,8 @@ Para realizar determinadas tareas en un servidor (como la instalación de paquet
 
 ## Requisitos
 
-* una [instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud
-* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Una [instancia de Public Cloud](https://docs.ovh.com/us/es/public-cloud/public-cloud-primeros-pasos/#3-crear-una-instancia) en su cuenta de OVHcloud
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 
 ## Procedimiento
 
@@ -38,12 +38,12 @@ Retype new UNIX password:
 passwd: password updated successfully 
 ```
 
-### Actualizar los repositorios (Debian y Ubuntu)
+### Actualizar el sistema (Debian y Ubuntu)
 
 Para actualizar los paquetes de software instalados en el servidor, introduzca el siguiente comando:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Actualizar el sistema (CentOS y Fedora)

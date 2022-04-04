@@ -6,7 +6,7 @@ legacy_guide_number: g1865
 section: Armazenamento
 ---
 
-**Última atualização a 14 de Novembro de 2019**
+**Última atualização a 14/11/2019**
 
 ## Sumário
 
@@ -16,9 +16,9 @@ Mesmo que tenha atingido a capacidade máxima de armazenamento no seu disco adic
 
 ## Requisitos
 
-* uma [Instância de Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
+* uma [Instância de Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud
 * um [disco adicional](https://www.ovhcloud.com/pt/public-cloud/block-storage/){.external} associado à sua instância
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * acesso administrativo (raiz) à sua instância via SSH (apenas para Linux )
 * acesso administrativo à sua instância via RDP (apenas para Windows)
 
@@ -26,7 +26,7 @@ Mesmo que tenha atingido a capacidade máxima de armazenamento no seu disco adic
 
 ### Utilizando a Área de Cliente
 
-Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto em que pretende editar o tamanho do disco adicional.
+Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto em que pretende editar o tamanho do disco adicional.
 
 ![área de cliente](images/select_project.png){.thumbnail}
 

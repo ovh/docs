@@ -26,7 +26,7 @@ Grâce aux groupes Exchange, de nombreux participants peuvent communiquer par en
 
 ### Étape 1 : Créez un nouveau groupe
 
-Connectez-vous d’abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section « Web » et sélectionnez votre service Exchange à partir de la colonne figurant sous `Microsoft`{.action} `Exchange`{.action} située sur le coté gauche. Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
+Connectez-vous d’abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Accédez à la section `Webcloud`{.action} et sélectionnez votre service Exchange à partir de la colonne figurant sous `Microsoft`{.action} `Exchange`{.action} . Cliquez sur l'onglet `Groupes`{.action} dans le menu horizontal.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 

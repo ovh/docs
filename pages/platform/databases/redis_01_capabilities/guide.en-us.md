@@ -2,26 +2,16 @@
 title: Redis - Capabilities and Limitations
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-section: Redis
-order: 1
+section: Redis - Guides
+order: 010
 ---
 
-**Last updated October 08<sup>th</sup>, 2021**
+**Last updated January 26<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Redis offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
-
-## BETA phase
-
-Please note that the Public Cloud Databases for Redis offer is currently in BETA Phase, meaning:
-
-- The service is free during BETA phase.
-- The service is not ready for production.
-- There is no official support.
-- There are no contractual agreements (SLA).
-- Some features are under development. You can check out our BETA vs General Availability here: <https://github.com/ovh/public-cloud-roadmap/issues/121>.
 
 ## Capabilities and limitations
 
@@ -109,7 +99,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers. 
+The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 
@@ -144,10 +134,37 @@ For each user you can specify:
 - Username
 - Keys (such as "cached:*")
 - Categories (such as "@set")
-- Commands (such as "-@all +get")
+- Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
+You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
+
+Here is the list of unsupported commands:
+
+- bgrewriteaof
+- cluster
+- command
+- debug
+- failover
+- migrate
+- role
+- slaveof
+- script
+- eval
+- evalsha
+- acl
+- bgsave
+- config
+- replicaof
+- lastsave
+- save
+- shutdown
+- monitor
+
+> [!primary]
+>
+> Update of user ACLs is allowed only via API. Follow this [guide](https://docs.ovh.com/us/en/publiccloud/databases/redis/acls/) to learn more.
+>
 
 ## We want your feedback!
 

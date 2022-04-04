@@ -42,7 +42,7 @@ Há dois tipos de reencaminhamento:
 
 A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou do facto de o serviço [ter sido migrado recentemente](https://www.ovh.pt/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e, a seguir, à secção «Web». Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e, a seguir, à secção `Web Cloud`{.action}. Clique em E-mails e selecione o serviço correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

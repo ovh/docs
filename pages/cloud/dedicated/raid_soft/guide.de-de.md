@@ -11,7 +11,7 @@ section: 'RAID & Festplatten'
 
 Das RAID (Redundant Array of Independent Disks) ist ein System, das Datenverlust auf Servern entgegenwirkt, indem es diese Daten auf mehreren Festplatten speichert.
 
-Das RAID-Level für OVH Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
+Das RAID-Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
 
 **In dieser Anleitung erfahren Sie, wie Sie das Matrix-RAID Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Festplattenschaden neu eingerichtet werden muss.**
 

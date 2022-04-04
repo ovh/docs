@@ -2,7 +2,7 @@
 title: 'Tworzenie i eksportowanie bazy danych na serwerze baz danych'
 slug: kopia-zapasowa-eksportowa-bazy-danych
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
-section: 'Private SQL'
+section: 'CloudDB'
 order: 4
 ---
 
@@ -10,7 +10,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 24-08-2020**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/)
+- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -33,7 +33,7 @@ Baza danych może zawierać dużą liczbę informacji niezbędnych dla Twojej st
 
 ### Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. Przejdź do karty `Bazy danych`.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. Przejdź do karty `Bazy danych`.
 
 W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dostępnych dla Twojej bazy danych.
 
@@ -48,13 +48,13 @@ W kolumnie **"Kopie zapasowe"** liczba ta odpowiada liczbie kopii zapasowych dos
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Zapisz teraz`{.action}.
 
-![private-sql](images/private-sql-save01.png){.thumbnail}
+![clouddb](images/private-sql-save01.png){.thumbnail}
 
 #### 2\. Eksport kopii zapasowej
 
 Kliknij przycisk `...`{.action} po prawej stronie bazy danych, a następnie `Wyświetl kopie zapasowe.`{.action}
 
-![private-sql](images/private-sql-dl01.png){.thumbnail}
+![clouddb](images/private-sql-dl01.png){.thumbnail}
 
 Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} po prawej stronie wybranej kopii zapasowej, a następnie `Pobierz kopię zapasową`{.action}, aby pobrać kopię zapasową.
 
@@ -64,7 +64,7 @@ Pojawi się lista dostępnych kopii zapasowych, kliknij przycisk `...`{.action} 
 
  W niektórych przypadkach pamięć RAM dostępna na serwerze baz danych nie pozwala na zrealizowanie pożądanego eksportu. W takim przypadku zalecamy użycie narzędzia OVHcloud w Panelu klienta. Dzięki temu będziesz mógł korzystać z zewnętrznych zasobów Twojej oferty do przeprowadzenia tej operacji. Przejdź do sekcji ["Tworzenie kopii zapasowych i eksportowanie bazy danych w Panelu klienta"](./#tworzenie-kopii-zapasowych-i-eksportowanie-bazy-danych-w-panelu-klienta) niniejszego przewodnika.
 
-##### 1\.1 Eksportowanie bazy MySQL lub MariaDB z poziomu phpMyAdmin OVHcloud (tylko w przypadku oferty Prywatnego SQL)
+##### 1\.1 Eksportowanie bazy MySQL lub MariaDB z poziomu phpMyAdmin OVHcloud 
 
 Aby zaimportować bazę danych bezpośrednio z phpMyAdmin, należy najpierw się do niej zalogować. Aby to zrobić, możesz zapoznać się z tym [przewodnikiem](../polaczenie-bazy-danych-serwer-bdd).
 
@@ -72,23 +72,15 @@ Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wye
 
 Masz dwa możliwe sposoby eksportu. Jeśli nie potrzebujesz określonego trybu, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
 
-![private-sql](images/private-sql-export01.png){.thumbnail}
+![clouddb](images/private-sql-export01.png){.thumbnail}
 
 ##### 1\.2 Eksportowanie bazy MySQL lub MariaDB z wiersza poleceń
-
-> [!primary]
->
-> Dla prywatnego serwera SQL operacja ta jest możliwa tylko przez [SSH](../hosting_www_ssh_na_hostingu/) z poziomu hostingu OVHcloud.
 
 ```bash
 mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
 ##### 1\.3 Eksport bazy MySQL lub MariaDB ze skryptu PHP
-
-> [!primary]
->
-> W przypadku prywatnego serwera SQL wykonywanie tego skryptu może odbywać się wyłącznie z poziomu hostingu OVHcloud.
 
 
 ```php
@@ -110,19 +102,12 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
  
 ##### 2\.1 Eksport bazy PostgreSQL z linii poleceń
 
-> [!primary]
->
-> Dla prywatnego serwera SQL operacja ta jest możliwa tylko przez [SSH](../hosting_www_ssh_na_hostingu/) z poziomu hostingu OVHcloud.
-
 ```bash
 pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
 ##### 2\.2 Eksport bazy PostgreSQL ze skryptu PHP
 
-> [!primary]
->
-> W przypadku prywatnego serwera SQL wykonywanie tego skryptu może odbywać się wyłącznie z poziomu hostingu OVHcloud.
 
 ```php
 1. <?php echo "Twoja baza jest w trakcie tworzenia kopii zapasowej.....";

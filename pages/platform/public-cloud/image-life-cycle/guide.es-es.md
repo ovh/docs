@@ -2,8 +2,8 @@
 title: 'Public Cloud & VPS - Ciclo de vida de las imágenes'
 slug: public-cloud-vps-image-life-cycle
 excerpt: Descubra el ciclo de vida de las imágenes proporcionadas para Public Cloud y VPS
-section: 'Primeros pasos'
-order: 8
+section: 'Información general'
+order: 03
 ---
 
 > [!primary]

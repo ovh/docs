@@ -6,7 +6,11 @@ legacy_guide_number: g1463
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 14/05/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 22/02/2022**
 
 ## Objetivo
 
@@ -36,9 +40,9 @@ section: 'Configuración del alojamiento'
 
 ### Conexiones simultáneas a la base de datos
 
-- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos privada incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
+- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos CloudDB incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
 
-- También puede contratar bases de datos **SQL Privado** adicionales, que tienen opciones de personalización:
+- También puede contratar bases de datos **CloudDB** adicionales, que tienen opciones de personalización:
 
     - *max_connections*: 100 por defecto, con posibilidad de pasar a 200
 
@@ -48,7 +52,7 @@ Para saber más, consulte los detalles de nuestros [Planes de hosting](https://w
 
 #### Conexiones desde un servidor externo
 
-- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o privadas. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
+- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o CloudDB. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -117,9 +121,35 @@ Consulte las páginas de información respectiva para verificar las librerías d
 
 Puede consultar información detallada de su cluster en este enlace: <https://webhosting-infos.hosting.ovh.net>
 
-Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
+Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
 
 Para conocer las particularidades técnicas del hosting Cloud Web, diríjase directamente al enlace <https://cloudweb-infos.hosting.ovh.net/>.
+
+## Información sobre las copias de seguridad automáticas <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud se compromete a prestar un servicio de copias de seguridad automático de los datos y a ponerlos a disposición de los usuarios. Sin embargo, es su responsabilidad implementar su propia política de restauración, y determinar puntos de restauración en los momentos que juzgue convenientes.
+
+#### Espacio en disco
+
+Todos nuestros planes de hosting situados en:
+
+- en Gravelines (GRA), Francia, disponen de copias de seguridad automáticas en D-1, D-2, D-3, D-7 y D-14. Estas copias de seguridad también se almacenan en el datacenter de Roubaix (RBX), en Francia.
+
+- en Beauharnois (BHS), Canadá, disponen de copias de seguridad automáticas en D-1, D-2, D-3, D-7 y D-14. Estas copias de seguridad también se almacenan en el datacenter de Beauharnois (BHS), en Canadá.
+
+Esta guía explica cómo [conectarse al espacio de almacenamiento](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) o [restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
+
+#### Base de datos / SQL
+
+Para las bases de datos compartidas (incluidas en su plan de hosting) o los servidores de bases de datos (SQL Privado/Cloud Databases) de Gravelines (GRA), Francia y Beauharnois (BHS), Canadá, la copia de seguridad de las bases de datos se realiza diariamente. Estas copias de seguridad están disponibles (a través de [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a través de [la API de OVHcloud](https://api.ovh.com/)). Las copias de seguridad también se almacenan en otra infraestructura. Estos datos se replican en 3 lugares distintos en Francia : Roubaix (RBX), Estrasburgo (SBG) y Gravelines (GRA). La política de retención de las copias de seguridad es de 30 días.
+
+Esta guía explica cómo [Descargar la copia de seguridad de la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_exportacion_de_una_base_de_datos/) en nuestra guía.
+
+#### Email
+
+Para las cuentas de correo en alojamiento compartido (incluidas en su plan de web hosting), se realiza y se copia una copia de seguridad automática diaria a otro datacenter.
 
 ## Política de cookies
 

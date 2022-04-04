@@ -26,7 +26,7 @@ O serviço Hosted Exchange permite beneficiar de endereços de e-mail profission
 
 Depois de ativado, o serviço Hosted Exchange pode ser gerido a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-Para isso, aceda à Área de Cliente OVH, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action} na coluna à esquerda. Finalmente, clique no nome do serviço Hosted Exchange em questão.
+Para isso, aceda à Área de Cliente OVH, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Finalmente, clique no nome do serviço Hosted Exchange em questão.
 
 > [!primary]
 >

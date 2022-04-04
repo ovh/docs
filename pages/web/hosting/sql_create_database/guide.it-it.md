@@ -6,7 +6,7 @@ section: Database
 order: 1
 ---
 
-**Ultimo aggiornamento 23/06/2020**
+**Ultimo aggiornamento 03/02/2022**
 
 ## Obiettivo
 
@@ -24,7 +24,7 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ### Step 1: accedi alla gestione dei database dell’hosting
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Web Cloud`{.action} nella barra di navigazione in alto. Clicca su `piani Hosting`{.action} nella colonna a sinistra e seleziona il tuo servizio. Quindi, clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Web Cloud`{.action} nella barra di navigazione in alto. Clicca su `piani Hosting`{.action} e seleziona il tuo servizio. Quindi, clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting.
 
@@ -106,7 +106,7 @@ Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca 
 
 **Troppe connessioni**
 
-I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database SQL privato o effettuare l’[upgrade di un piano di hosting](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/). 
+I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabile del sistema *max_connections*). È necessario ottimizzare le richieste SQL per prevenire questo tipo di errore. Se il problema persiste, è necessario prendere in considerazione altre misure, ad esempio passare a un database [CloudDB](https://www.ovh.de/cloud/cloud-databases/) o effettuare l’[upgrade di un piano di hosting](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/). 
 
 **Errori di connessione o “not found”**
 

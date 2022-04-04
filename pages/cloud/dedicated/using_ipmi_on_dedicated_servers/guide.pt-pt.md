@@ -32,7 +32,7 @@ A ligação ao IPMI pode ser efetuada principalmente através de vários método
 
 - Um terceiro método, unicamente disponível para os servidores mais recentes, permite utilizar uma ferramenta KVM a partir de um browser web.
 
-Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action}.
+Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} e selecione o seu servidor e depois clique no separador `IPMI`{.action}.
 
 ### Aceder com a applet Java <a name="applet-java"></a>
 
@@ -40,7 +40,7 @@ Para que a applet Java funcione, é necessário que o Java esteja instalado no s
 
 Na secção `IPMI`{.action} da Área de Cliente OVHcloud, clique em `A partir de applet Java (KVM)`{.action}:
 
-![IPMI Java iniciado](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java iniciado](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Faça o download do ficheiro `kvm.jnlp` quando for convidado a fazê-lo, e depois lance-o:
 
@@ -70,7 +70,7 @@ A seguir, clique em `Aceder à consola (KVM)`{.action} para abrir a consola no s
 
 Mesmo que o recomendemos para se ligar através da applet Java, também pode utilizar o IPMI através de Serial over LAN (SoL). Para isso, clique em `A partir do seu navegador (SoL)`{.action} na secção `IPMI`{.action} da sua Área de Cliente.
 
-![Ativação da declaração de integridade IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
+![Ativação da declaração de integridade IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,11 +81,11 @@ Mesmo que o recomendemos para se ligar através da applet Java, também pode uti
 
 É possível que o IPMI não responda mais. Se não conseguir aceder, pode efetuar um teste clicando em `Testar o IPMI`{.action} e visualizar o resultado do diagnóstico:
 
-![Teste IPMI](images/ipmi_test_2020.png){.thumbnail}
+![Teste IPMI](images/ipmi_test_2022.png){.thumbnail}
 
 Se tudo é normal, como no nosso exemplo, poderá defrontar-se com um problema local (ligação à Internet, correio local). Se o problema com o IPMI persistir, pode reiniciá-lo clicando em `Reiniciar o IPMI`{.action}.
 
-![Teste IPMI](images/ipmi_reboot_2020.png){.thumbnail}
+![Teste IPMI](images/ipmi_reboot_2022.png){.thumbnail}
 
 A reinicialização do IPMI demora alguns minutos.
 
@@ -105,7 +105,7 @@ Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) atravé
 De seguida, selecione a norma ISO que deseja utilizar no sistema de ficheiros do seu computador local. Depois de selecionar a sua norma ISO, prima o botão `Ctrl Alt Del`{.action} no canto superior direito do ecrã para reiniciar o servidor. Carregue na tecla `F` para aceder às opções de arranque.
 
 > [!primary]
-> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Keyboard` {.action} na barra de menus no topo da janela. De seguida, selecione `Soft Keyboard` no menu pendente e clique em `Show` {.action}.
+> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Keyboard`{.action} na barra de menus no topo da janela. De seguida, selecione `Soft Keyboard` no menu pendente e clique em `Show`{.action}.
 >
 
 Selecione a opção `UEFI Virtual CDROM 1.00` no menu de arranque (Boot) para iniciar o servidor a partir da ISO previamente associada.
@@ -133,7 +133,7 @@ Para começar a partir do seu ficheiro ISO, deve aceder à BIOS e alterar as op�
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
 > [!primary]
-> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Virtual Media` {.action} na barra de menus no topo da janela. De seguida, selecione `Virtual Keyboard` {.action} no menu pendente.
+> Poderá ter de utilizar o teclado de software para registar as entradas no IPMI. Para aceder, clique na opção `Virtual Media`{.action} na barra de menus no topo da janela. De seguida, selecione `Virtual Keyboard`{.action} no menu pendente.
 >
 
 Durante o processo de arranque, prima a tecla `SUPR` quando for convidado a aceder à BIOS. Também pode carregar na tecla `F11` e aceder à BIOS selecionando a opção `Enter Setup`{.action}.

@@ -6,7 +6,7 @@ legacy_guide_number: g1883
 section: Networking
 ---
 
-**Last updated 7th April 2020**
+**Last updated 10th March 2022**
 
 ## Objective
 
@@ -28,13 +28,13 @@ Instead oy buying additional ones, you can import a failover IP address that is 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select `Failover IP`{.action} in the "Network" section.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), select your project from the `Public Cloud`{.action} section. Then select `Failover IP`{.action} in the "Network" section.
 
-![IP Section](images/import.png){.thumbnail}
-
-Click on `Import a failover IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
+Click on `Actions`{.action} and select `Import an IP`{.action} to display all the IP addresses that can be imported into your Public Cloud project.
 
 ![IP Section](images/import1.png){.thumbnail}
+
+If you do not currently have a Failover IP on your Public Cloud project, the option to import an IP will be displayed on the homepage.
 
 Click on `...`{.action} next to the IP address you would like to import and click `Import this failover IP`{.action}.
 
@@ -42,7 +42,7 @@ Click on `...`{.action} next to the IP address you would like to import and clic
 
 Confirm by clicking on `Import`{.action}.
 
-![Import Failover IP](images/importconfirm.png){.thumbnail}
+![Import confirm](images/importconfirm.png){.thumbnail}
 
 The page will refresh and the information that the IP address was migrated successfully will appear.
 
@@ -55,6 +55,11 @@ A pop-up will appear to choose the instance to which your IP address should be a
 ![Import Failover IP](images/modifyinstance1.png){.thumbnail}
 
 Click on `Attach`{.action} to confirm. The page will display a modification message.
+
+> [!warning]
+>
+> A failover IP cannot be moved between different zones. For example, an IP located in the SBG data center can be moved to GRA or RBX, but cannot be moved to BHS.
+>
 
 ![Import Failover IP](images/modifycompleted.png){.thumbnail}
 

@@ -2,12 +2,16 @@
 title: 'Configurar IPv6 em servidores dedicados'
 slug: rede-ipv6
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-section: 'Gestão de Rede'
+section: 'Redes & IP'
 ---
 
-**Última atualização: 01/12/2021**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 30/03/2022**
+
+## Objetivo
 
 O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. Cada servidor dedicado da OVHcloud inclui um bloco IPv6 /64. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
 
@@ -21,9 +25,9 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud;
-- todos os seus dados IPv6 (prefixo, gateway, etc.);
-- ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
+- Todos os seus dados IPv6 (prefixo, gateway, etc.).
+- Ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
 
 ## Instruções
 
@@ -40,7 +44,11 @@ Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utili
 > - O endereço IPv6 do servidor é 2607:5300:60:62ac::/64. Logo, o IPv6_GATEWAY vai ser 2607:5300:60:62FF:FF:FF:FF:FF.
 > - O endereço IPv6 do servidor é 2001:41D0:1:46e::/64. Logo, o IPv6_GATEWAY vai ser 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!warning]
+> Note que os servidores Kimsufi são fornecidos com um único bloco IPV6 (/128). Neste caso, consulte este [guia](https://docs.ovh.com/pt/vps/configurar-ipv6/) para a configuração do ipv6 num servidor Kimsufi.
 >
 
 > [!api]
@@ -219,7 +227,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-Abra o ficheiro de configuração de rede situado em /etc/systemd/network. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
+Abra o ficheiro de configuração de rede situado em `/etc/systemd/network`. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
@@ -236,7 +244,7 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-Para adicionar múltiplos endereços IPv6, adicione múltiplas secções  \[Address].
+Para adicionar múltiplos endereços IPv6, adicione múltiplas secções [Address].
 
 ```console
 [Address]
@@ -301,9 +309,9 @@ Introduza a sua configuração IPv6 (` IPv6 address` e `Default Gateway`) e cliq
 
 Se depois de testar a sua ligação continuar a experienciar problemas, crie um pedido de apoio a fim de rever as suas configurações. Será necessário fornecer:
 
-- o nome do sistema operativo e a versão em uso no servidor;
-- o nome e o diretório do ficheiro de configuração de rede; 
-- o conteúdo desse ficheiro. 
+- O nome do sistema operativo e a versão em uso no servidor.
+- O nome e o diretório do ficheiro de configuração de rede.
+- O conteúdo desse ficheiro. 
 
 
 ## Quer saber mais?

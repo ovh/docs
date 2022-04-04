@@ -31,7 +31,7 @@ Een database ("DB") wordt gebruikt voor het opslaan van zogenaamde dynamische el
 
 **Wees extra voorzichtig bij het wijzigen van het wachtwoord in uw database**: als er wijzigingen zijn aangebracht, kunnen websites die de database gebruiken ontoegankelijk worden. Door meer te leren over de impact van het wijzigen van databasewachtwoorden, kunt u een beter inzicht krijgen in de wijzigingen die u zult aanbrengen.
 
-Tegenwoordig gebruiken vrijwel alle CMS'en (WordPress, Joomla!, etc.) een database voor het opslaan van dynamische elementen, zoals opmerkingen of artikelen. Voor deze websites is het dus van essentieel belang om verbinding te kunnen maken met een database om correct te kunnen functioneren. Een configuratiebestand met informatie uit de database maakt deze verbinding mogelijk. Als u dus het wachtwoord wijzigt voor de database die wordt gehost bij OVH, moet u ervoor zorgen dat u dezelfde wijziging aanbrengt in het bestand dat wordt gebruikt om uw website verbinding te laten maken met de database.
+Tegenwoordig gebruiken vrijwel alle CMS'en (WordPress, Joomla!, etc.) een database voor het opslaan van dynamische elementen, zoals opmerkingen of artikelen. Voor deze websites is het dus van essentieel belang om verbinding te kunnen maken met een database om correct te kunnen functioneren. Een configuratiebestand met informatie uit de database maakt deze verbinding mogelijk. Als u dus het wachtwoord wijzigt voor de database die wordt gehost bij OVHcloud, moet u ervoor zorgen dat u dezelfde wijziging aanbrengt in het bestand dat wordt gebruikt om uw website verbinding te laten maken met de database.
 
 > [!primary]
 >

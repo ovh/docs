@@ -233,7 +233,7 @@ Let's modify the configuration file /etc/td-agent-bit/td-agent-bit.conf for the 
     Logstash_Prefix my-fluent
 ```
 
-If required, please refer to parameters in the [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit/configuration-file){.external}.
+If required, please refer to parameters in the [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/administration/configuring-fluent-bit){.external}.
 
 All Apache access logs will now be pushed to the OpenSearch database under the "my-fluent" index.
 
@@ -253,7 +253,7 @@ Congratulations, you are now able to collect data from multiple sources and push
 
 [OpenSearch Dashboard Official documentation](https://opensearch.org/docs/latest){.external}
 
-[OpenSearch Project GitHub](https://https://github.com/opensearch-project){.external}
+[OpenSearch Project GitHub](https://github.com/opensearch-project){.external}
 
 [Fluent Bit Official Documentation](https://docs.fluentbit.io/manual/){.external}
 

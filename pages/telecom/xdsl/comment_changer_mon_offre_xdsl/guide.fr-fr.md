@@ -4,7 +4,7 @@ slug: comment-changer-mon-offre-xdsl
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 22/03/2022**
 
 ## Objectif
 
@@ -27,19 +27,19 @@ La demande de changement d'offre s'effectue via votre [espace client OVHcloud](h
 <br>Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action} puis choisissez le pack que vous souhaitez faire évoluer.
 <br>Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 
-![changement d'offre](images/Changement01-edit.png){.thumbnail}
+![changement d'offre](images/Changement01-edit-2022.png){.thumbnail}
 
 La page suivante vous permettra de retrouver les informations nécessaires pour effectuer votre choix d'offre.
 
 La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs. Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.
 <br>Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
 
-![choix de l'offre](images/Changement02-edit.png){.thumbnail}
+![choix de l'offre](images/Changement02-edit-2022.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.
 <br>Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
 
-![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
+![Validation de l'offre](images/Changement03-edit-2022.png){.thumbnail}
 
 Il faut compter un délai d'une heure pour que le changement soit effectif, sauf pour les cas particuliers suivants :
 
@@ -52,8 +52,16 @@ Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessair
 Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) seront accessibles une fois le changement effectif. 
 
 > [!primary]
-> Si vous possédez une offre Express, vous avez la possibilité de la faire évoluer en Entreprise. Il est par contre impossible de faire évoluer une offre Entrepise vers une offre Express.
+> Vous pouvez à tout moment faire évoluer une offre Connect ou Express Lite vers une offre Express, ou faire évoluer une offre Express vers une offre Entreprise.
 >
+> En revanche, les évolutions suivantes ne sont possibles qu'au terme de la période d'engagement en cours sur votre offre actuelle :
+>
+> - Entreprise vers Express;
+> - Entreprise vers Express Lite;
+> - Entreprise vers Connect;
+> - Express vers Express Lite;
+> - Express vers Connect;
+> - Express Lite vers Connect.
 
 ## Aller plus loin
 

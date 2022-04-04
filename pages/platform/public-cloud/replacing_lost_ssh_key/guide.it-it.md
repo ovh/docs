@@ -10,7 +10,7 @@ section: Gestione dallo Spazio Cliente OVHcloud
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 27 settembre 2018**
+**Ultimo aggiornamento: 10/02/2022**
 
 ## Obiettivo
 
@@ -22,8 +22,9 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 
 ## Prerequisiti
 
-- Crea una chiave SSH
-- Attiva un'istanza in modalità Rescue
+-- Disporre di una [Istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
+- Avere accesso alla tua istanza via SSH in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/)
+- Creare una chiave SSH
 
 ## Procedura
 
@@ -32,7 +33,7 @@ Per recuperare l'accesso, abbiamo messo a tua disposizione una [modalità Rescue
 Per salvare una chiave SSH nello Spazio Cliente OVHcloud, ti consigliamo di utilizzare la cifratura RSA o ECDSA. ED25519 non è attualmente supportato.
 >
 
-Dopo aver montato il disco della tua istanza in [modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/), sarai in grado di accedere a tutti i tuoi file.
+Dopo aver montato il disco della tua istanza in modalità Rescue, sarai in grado di accedere a tutti i tuoi file.
 
 Il file contenente le tue chiavi SSH è il file:
 
@@ -44,8 +45,10 @@ Per aggiungere la nuova chiave SSH, è sufficiente modificare questo file e aggi
 
 ```sh
 sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
-ssh-rsa 11111111112222222222333333333333444444555555 5555556666666667777777777778888888889999999900000 0000000000000000000= old@sshkey
-ssh-rsa AAAAAAAAABBBBBBBBBBBBBBBBBBBBBCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEEEEEEFFFFFFFFFFMMMGGGGGGGGGGGGGGGGGGGG hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhGGMHHHHHMHHHHHG=
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
+777777777778888888888999999900000000000000000000000000== old@sshkey
+ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
+EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
 ### Modifica la chiave SSH utente predefinita
@@ -88,6 +91,6 @@ Una volta effettuata la modifica e salvata, è sufficiente riavviare la tua ista
 
 ## Per saperne di più
 
-[Attiva un'istanza in modalità Rescue](https://docs.ovh.com/it/public-cloud/riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/)
+[Devenire utente root e selezionare una password](https://docs.ovh.com/it/public-cloud/imposta_una_password_amministratore/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

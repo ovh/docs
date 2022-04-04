@@ -5,7 +5,7 @@ excerpt: 'Saiba como criar várias VLAN no vRack'
 section: vRack
 ---
 
-**Última atualização: 29/09/2021**
+**Última atualização: 24/02/2022**
 
 ## Sumário
 
@@ -30,10 +30,89 @@ A [configuração standard do vRack](https://docs.ovh.com/pt/dedicated/configura
 
 > [!primary]
 >
-> Como exemplo, utilizaremos `eth1` como interface de rede, **10** como etiqueta VLAN e **192.168.0.0/16** como intervalo de endereços de IP. 
+> Como exemplo, utilizaremos **eno2** para Ubuntu e **eth1** para Debian como interface de rede, **10** como etiqueta VLAN e **192.168.0.0/16** como intervalo de endereços de IP. 
 >
 > Todas as encomendas devem ser adaptadas em função da distribuição utilizada. Não hesite em consultar a documentação oficial da sua distribuição em caso de dúvidas.
 >
+
+#### Ubuntu 20 & 21
+
+Este exemplo é baseado em Ubuntu 21.10 (Impish Indri).
+
+Primeiro, deve estabelecer uma ligação SSH ao seu servidor e executar os seguintes comandos a partir da linha de comandos. Será instalado o pacote vLAN no seu servidor:
+
+```sh
+sudo apt-get install vlan
+```
+
+Carregue o módulo kernel 8021q:
+
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Crie ou edite este ficheiro de configuração para evitar que as alterações na configuração de rede sejam efetuadas automaticamente:
+
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+E adicione esta linha:
+
+```sh
+network: {config: disabled}
+```
+
+Obter o nome da interface de rede e o seu endereço MAC:
+
+```sh
+ip a
+```
+
+Aqui a interface que queremos configurar é `eno2` com um endereço MAC: `d0:50:99:d6:6b:14`.
+
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Adicione a configuração de rede para esta interface de rede e a declaração de VLAN no seguinte ficheiro:
+
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Guarde e feche o ficheiro e, em seguida, execute os seguintes comandos:
+
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Utilize o seguinte comando para confirmar a configuração:
+
+```sh
+ip a
+``` 
+
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+#### Debian
 
 Primeiro, é necessário instalar o pacote “VLAN” no seu servidor. Para o fazer, utilize o seguinte comando:
 
@@ -115,4 +194,4 @@ Finalmente, clique no botão `OK`{.action} para guardar as alterações e reinic
 
 [Configurar vários servidores dedicados no vRack](https://docs.ovh.com/pt/dedicated/configurar-varios-servidores-dedicados-no-vrack/){.external}
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,135 +1,194 @@
 ---
-title: 'Shared Mail: Guide to view email headers'
+title: 'Retrieving email headers'
 slug: shared_mail_guide_to_view_email_headers
+excerpt: Find out how to view headers in your email client
 section: 'Troubleshooting'
 order: 03
 ---
 
-
-## Microsoft Outlook Express
-Select the e-mail which you want to retrieve the header.
-
-Go to "File" -> "Proprietors" then "Details".
-
-Click "Message Source". You can retrieve the header in the e-mail.
-
-
-## Microsoft Outlook 2003
-Open the e-mail which you want to retrieve the header.
-
-n the new window, go to "Display" -> "Options ...".
-
-![](images/img_1587.jpg){.thumbnail}
-The full header of the email appears (see green box in the screenshot below).
-
-![](images/img_1588.jpg){.thumbnail}
-
-
-## Microsoft Outlook 2007
-Right-click on the e-mail which you want to retrieve the header.
-
-Go to "Message Options ...".
-
-![](images/img_1590.jpg){.thumbnail}
-The full header of the email appears (see green box in the screenshot below).
-
-![](images/img_1592.jpg){.thumbnail}
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #fff; 
+   color: #000;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.90em;
+   color: #000;
+ }
+ .small {
+     font-size: 0.90em;
+ }
+</style>
 
 
-## Microsoft Outlook 2010
-Open the e-mail which you want to retrieve the header.
+**Last updated 19th November 2021**
 
-In this new window, go to the "Message" and then click the small arrow to the right of indicators (see green box in the screenshot below).
+## Objective
 
-![](images/img_1593.jpg){.thumbnail}
-The full header of the email appears (see green box in the screenshot below).
+The role of an email header is to trace the path taken by an email on the network, from the sender to the recipient.<br>
+You can use it to identify malicious emails or detect slow reception.
 
-![](images/img_1594.jpg){.thumbnail}
+Every email you receive has a header but it is not displayed by default when you view your email. You can however retrieve the header from your email client or webmail.
 
+You can also export the entire email as a `.eml` file. This file may be requested to scan a malicious email you received.<br>
+To retrieve a `.eml` file, go to the [Webmail](#webmail) section below.
 
-## Microsoft Outlook 2013
-Open the e-mail which you want to retrieve the header.
+**This guide explains how to retrieve an email header from your email client.**
 
-In the new window, go to "File".
+## Requirements
 
-![](images/img_1595.jpg){.thumbnail}
-Then select "Information" and "Properties".
+- An email address using one of our [OVHcloud email solutions](https://www.ovhcloud.com/en-ie/emails/), or an external solution
+- Access to your email address via webmail or an email client
 
-![](images/img_1596.jpg){.thumbnail}
-The full header of the email appears (see green box in the screenshot below).
+## Instructions
 
-![](images/img_1597.jpg){.thumbnail}
+### Understanding the content of a header
 
+The header is composed of several elements indicating the path of the email. These are arranged in reverse chronological order, from the newest to the oldest entry, followed by additional information.<br>
+Below is a non-exhaustive list of the elements that can make up a header, along with their meaning. 
 
-## Mozilla Thunderbird
-Select the message which you want to retrieve the header.
+- The `Received` field is present in the header each time the email is sent to an outgoing server (SMTP). The host name of the server is usually found with its IP address and a timestamp. The `Received` fields are sorted from the most recent pass to the oldest pass on a server:
+<pre class="console"><code>
+Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
+	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
+	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
+</code></pre>
+  *Here the email was sent from server mxplan7.mail.ovh.net to server mo3005.mail-out.ovh.net on 30 June 2021 at 13:12:40 (time zone UTC).*
 
-Press "Ctrl+U".
+- The `Return-Path` field corresponds to the return address when the message failed to be sent. The return address is usually the one that sent the email.
+<pre class="console"><code>
+Return-Path: &lt;john@mydomain.ovh&gt;
+</code></pre>
 
-![](images/img_1598.jpg){.thumbnail}
-The full header of the email appears (see green box in the screenshot below).
+- The `From` field indicates the email sender address and display name.
+<pre class="console"><code>
+From: John &lt;john@mydomain.ovh&gt;
+</code></pre>
 
-![](images/img_1599.jpg){.thumbnail}
+- The `To` field indicates the email recipient address and display name.
+<pre class="console"><code>
+To: Robert &lt;robert@hisdomain.ovh&gt;
+</code></pre>
 
+- The `Subject` field is the subject of the email.
+<pre class="console"><code>
+Subject: Hello my friend
+</code></pre>
 
-## Mac Mail
-Select the e-mail which you want to retrieve the header.
+- The `Message-ID` field designates the unique identifier of the email and ends with the name of the outgoing server (after the "@"). 
+<pre class="console"><code>
+Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
+</code></pre>
 
-Go to "Presentation" -> "Message" -> "All headers".
+- The `Received-SPF` field displays the result of the [SPF](https://docs.ovh.com/ie/en/domains/web_hosting_the_spf_record/) check performed on the sender's domain name. You can use the `client-ip` argument to find the IP address of the server that sent the email. 
+<pre class="console"><code>
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
+</code></pre>
 
-![](images/img_1569.jpg){.thumbnail}
-The full header of the email appears, then you can view it.
+- The `X-` fields are custom fields. They serve as complements to the standard fields. They are implemented by the servers that the emails pass through.
+<pre class="console"><code>
+X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
+X-Ovh-Tracer-Id: 1234567891011121314
+X-VR-SPAMSTATE: OK
+X-VR-SPAMSCORE: 0
+X-VR-SPAMCAUSE: 
+</code></pre>
 
-![](images/img_1570.jpg){.thumbnail}
+### Recovering a header from an email client
 
+#### Microsoft Outlook 
 
-## Microsoft Outlook 2011 for Mac
-Right click on the e-mail you want to retrieve the header.
+To read the header, open the email of your choice in a separate window by double-clicking it in the list.
 
-Then select  "View Source"
+In the new window, click `File`{.action} in the top left-hand corner.
 
-![](images/img_1565.jpg){.thumbnail}
-The full header of the email appears, then you can view it.
+![emails](images/outlook01.png){.thumbnail}
 
-![](images/img_1566.jpg){.thumbnail}
+Then select `Info`{.action} on the left, and click `Properties`{.action}.
 
+![emails](images/outlook02.png){.thumbnail}
 
-## Microsoft Entourage 2008 for Mac
-Select the e-mail which you want to retrieve the header.
+The full email header appears in the lower box. You can select the entire text and copy it to a file.
 
-Right click on the e-mail
+![emails](images/outlook03.png){.thumbnail}
 
-Then select "Source".
+#### Mozilla Thunderbird
 
-A new window opens with the full headers of the email.
+To display the header, select the email you want, then press `Ctrl` and `U` at the same time.
 
+![emails](images/thunderbird01.png){.thumbnail}
 
-## Roundcube
-Select the e-mail which you want to retrieve the header.
+The full email header appears in a separate window, you can select the entire text and copy it to a file.
 
-Visit "... (More)" -> "View source".
+#### macOS email
 
-![](images/img_1600.jpg){.thumbnail}
-A new tab will open in your browser with the full header of the email.
+To display the header, select the email you want and open `View`{.action} in the top menu bar. Then go to `Message`{.action} and click `All Headers`{.action}.
 
-![](images/img_1601.jpg){.thumbnail}
+![emails](images/mailmac01.png){.thumbnail}
 
+The full email header appears in a separate window. You can select the entire text and copy it to a file.
 
-## OWA 2013
-Select the e-mail which you want to retrieve the header.
+### Retrieving a header on webmail <a name="webmail"></a>
 
-Go to "..." -> "display the message details".
+#### Roundcube
 
-![](images/img_1572.jpg){.thumbnail}
-The full header of the email appears, then you can view it.
+##### **Retrieving the header**
 
-![](images/img_1573.jpg){.thumbnail}
+To display the header, select the email you want. Click on the button `... More`{.action} then on `< > Show source`{.action}.
 
+![emails](images/roundcube01.png){.thumbnail}
 
-## Gmail
-Open the e-mail which you want to retrieve the header.
+A new window will open with the full email header. You can select the entire text and copy it to a file.
 
-Click the arrow next to the reply button.
+##### **Retrieving the .eml file**
 
-Select "Show original" to open a new window header of the email.
+To download the `.eml` file, select the email you want. Click on the button `... More`{.action} then on `Download (.eml)`{.action}.
 
+![emails](images/roundcube02.png){.thumbnail}
+
+#### Outlook Web Application (OWA) <a name="owa"></a>
+
+##### **Retrieving the header**
+
+To display the header, select the email you want and click on the **arrow** to the right of `Reply All`{.action}. Click on `View Message Details`{.action}. A new window will open with the full email header, allowing you to download it.
+
+![emails](images/owa01.png){.thumbnail}
+
+Also see our video tutorial:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0?start=36" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+##### **Retrieving the .eml file**
+
+To download the `.eml` file, click on `(+) New`{.action} to create a new email. 
+
+Select the email you want to extract, then drag and drop it into the content of the new email. 
+
+Click the down arrow next to the attachment you just created, and then click `Download`{.action} to save the file to your device.
+
+![emails](images/owa02.gif){.thumbnail}
+
+### Retrieving a header on external email clients
+
+#### Gmail
+
+To retrieve the header, select the email concerned, then click the 3 vertical dots on the right. Click on `Show original`{.action} to open a new window with the full email header, which also allows you to download it in `.eml` format.
+
+![emails](images/gmail01.png){.thumbnail}
+
+#### Outlook.com
+
+To view the header in the <Outlook.com> webmail interface, see the [Outlook Web Application](#owa) topic in this guide.
+
+## Go further
+
+[Email FAQ](https://docs.ovh.com/ie/en/emails/emails-faq/)
+
+Join our community of users on <https://community.ovh.com/en/>.

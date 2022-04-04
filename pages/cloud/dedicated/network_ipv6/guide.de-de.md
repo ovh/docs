@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur kon
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 01.12.2021**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 30.03.2022**
 
 ## Ziel
 
@@ -40,7 +44,11 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 > - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
 > - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
-> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+>
+
+> [!warning]
+> Beachten Sie, dass die Kimsufi Server mit einem einzigen IPV6 Block (/128) bereitgestellt werden. In diesem Fall beachten Sie bitte die [Anleitung](https://docs.ovh.com/de/vps/ipv6-konfigurieren/) für die Konfiguration von IPv6 auf einem Kimsufi Server.
 >
 
 > [!api]
@@ -125,7 +133,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/sysconfig/network-scripts/ifcfg-eth0. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
@@ -175,7 +183,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/rc.conf. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/rc.conf`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
@@ -221,7 +229,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Öffnen Sie die Netzwerkkonfigurationsdatei in /etc/systemd/network. In unserem Beispiel heißt die Datei 50-default.network.
+Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/systemd/network`. In unserem Beispiel heißt die Datei 50-default.network.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 

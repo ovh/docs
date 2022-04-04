@@ -1,148 +1,143 @@
 ---
 title: 'Gerir as suas instâncias Public Cloud'
 slug: comecar-com-uma-instancia-public-cloud
-excerpt: 'Saiba como começar a utilizar uma instância Public Cloud'
+excerpt: 'Saiba como gerir as suas instâncias Public Cloud na Área de Cliente OVHcloud'
 section: Introdução
-order: 2
+order: 05
 ---
 
-**Última atualização: 4 de dezembro de 2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 22/03/2022**
 
-Tem a possibilidade de gerir facilmente as suas instâncias Public Cloud da OVH a partir da sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Aqui poderá consultar todos os seus projetos de infraestrutura (instâncias, backups, discos, chaves SSH, etc.) e de armazenamento (incluindo a lista de containers).
+## Objetivo
 
-**Saiba como começar a utilizar uma instância Public Cloud.**
+Pode gerir as suas instâncias Public Cloud na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-### Requisitos
+**Este guia explica em pormenor as ações disponíveis na Área de Cliente OVHcloud para uma instância Public Cloud.**
 
-- uma [instância Public Cloud OVH](../public-cloud-primeiros-passos/)
-- uma [chave SSH](../criacao-de-chaves-ssh/)
+## Requisitos
 
-### Instruções
+- Um [projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Uma [instância Public Cloud](../public-cloud-primeiros-passos/) no seu projeto
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
-### Aceder à interface de gestão da instância
+## Instruções
 
-Comece por aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá até à secção “Public Cloud” e selecione o serviço Public Cloud em questão. Depois, clique no separador `Instâncias`{.action} à sua esquerda.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. 
 
-Nessa página, verá um resumo de todas as instâncias. Aqui poderá consultar várias informações:
+### Utilizar a interface de gestão das instâncias
 
-- o modelo da sua instância;
-- o nome e a região;
-- os discos rígidos associados;
-- o endereço IP da instância;
-- o respetivo estado.
+Clique em `Instances`{.action} no menu à esquerda. 
 
 ![public-cloud](images/compute.png){.thumbnail}
 
-### Editar a configuração de uma instância
+Esta página lista o conjunto das suas instâncias Public Cloud e algumas das suas propriedades:
 
-Na interface de gestão da instância, clique nos três pontos situados à direita da mesma e selecione a opção `Editar`{.action}.
+- ID da instância, necessária para determinadas chamadas API;
+- a localização do datacenter, ou seja, a região da instância;
+- O modelo da instância;
+- imagem, ou seja, o SO instalado na instância;
+- o endereço IPv4 da instância;
+- os volumes (discos) adicionais atualmente associados à instância;
+- o estado da instância, indicando se está no estado `Ativado`.
 
-![public-cloud](images/edit.png){.thumbnail}
+### Opções de gestão no painel de controlo da instância
 
-Na janela que aparece, poderá:
+Na página de gestão das instâncias, clique no nome de uma instância.
 
-- dar outro nome à instância;
-- alterar o modelo da instância; 
-- reinstalar a instância noutro sistema operativo (**atenção: os dados atuais serão eliminados durante esta operação**);
-- passar de uma faturação à hora para uma faturação mensal (será então emitida uma fatura proporcional à data de mudança).
+Selecione a opção desejada no quadro da esquerda "Gestão".
 
-![public-cloud](images/edit1.png){.thumbnail}
+![public-cloud](images/management.png){.thumbnail}
 
-![public-cloud](images/edit2.png){.thumbnail}
+Estas ações também estão disponíveis na página de gestão das instâncias, se clicar no botão `...`{.action} na tabela.
 
-![public-cloud](images/edit3.png){.thumbnail}
+#### Editar a configuração de uma instância
 
-### Criar uma cópia de segurança de uma instância
+Clique em `Editar`{.action}.
 
-Pode criar uma cópia de segurança de uma instância a partir da página de gestão da mesma.  Para isso, clique nos três pontos situados à direita da instância e selecione a opção `Criar uma cópia de segurança`{.action}. Em seguida, visualizará uma página com toda a informação necessária: 
+A nova página que aparece apresenta uma versão modificada das opções [de criação de instância](../public-cloud-primeiros-passos/), na qual pode modificar os seguintes elementos:
 
-![public-cloud](images/backup.png){.thumbnail}
+- **Modificar o nome**: pode atribuir um nome à instância para uma maior facilidade de identificação.
+- **Modificar a imagem**: pode escolher outro sistema operativo para a instância (tenha em atenção que a reinstalação de uma instância eliminará todos os dados que contém).
+- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](../public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia).
+- **Alterar o período de faturação**: pode alterar o período de faturação da instância de uma faturação à hora para uma faturação mensal. Para mais informações, consulte [este guia](../mudar-tipo-faturacao-public-cloud/).
 
-Será depois exibida a seguinte informação: 
+#### Criar um backup de uma instância
 
-![public-cloud](images/backup1.png){.thumbnail}
+Clique em `Criar um backup`{.action}.
 
-Após confirmar, será exibida a seguinte informação: 
+Para mais informações, consulte o manual "[Guardar uma instância](../efetuar_backup_de_uma_instancia/)". 
 
-![public-cloud](images/backup2.png){.thumbnail}
+#### Criar um backup automático de uma instância
 
-Uma vez realizada a cópia de segurança será possível visualizá-la na secção `Cópia de segurança da instância`{.action}: 
+Clique em `Criar um backup automatizado`{.action}.
 
-![public-cloud](images/backup3.png){.thumbnail}
+Para mais informações, consulte o manual "[Guardar uma instância](../efetuar_backup_de_uma_instancia/#criar-um-backup-automatizado-de-uma-instancia)".
 
-Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/) para obter ajuda nesta operação. 
+#### Suspender uma instância
 
-### Criar uma cópia de segurança automática da instância
+Clique em `Parar`{.action}.
 
-Pode agendar uma cópia de segurança automática da instância a partir da página de gestão da mesma. Para isso, clique nos três pontos situados à direita da instância e selecione a opção `Criar uma cópia de segurança automática`{.action}: 
+Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#parar-suspend-uma-instancia_1)".
 
-![public-cloud](images/backupauto.png){.thumbnail}
+Clique em `Iniciar`{.action} para reativar a instância.
 
-Será então exibida a seguinte página: 
+#### Utilizar o modo rescue
 
-![public-cloud](images/backupauto1.png){.thumbnail}
+Clique em `Reiniciar em modo de rescue`{.action}.
 
-Uma vez selecionada a informação necessária e após ter clicado em Criar, será redirecionado para a página: 
+Isto irá ativar o modo de rescue da instância. Consulte o nosso manual [Passar uma instância em modo de rescue](../passar_uma_instancia_em_modo_de_rescue/) para obter informações detalhadas.
 
-![public-cloud](images/backupauto2.png){.thumbnail}
+#### Reiniciar uma instância
 
-Poderá consultar a qualquer altura a `Gestão de workflow`{.action} para eliminar o atual processo de criação de uma cópia de segurança automática: 
+- Clique em `Reboot a quente (soft)`{.action} para efetuar um reboot ao nível de software.
+- Clique em `Reiniciar a frio (hard)`{.action} para lançar um reboot ao nível material.
 
-![public-cloud](images/backupautodelete.png){.thumbnail}
+Confirme o pedido de reboot na janela que aparecer.
 
-Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/) para obter ajuda nesta operação. 
+#### Suspender (*shelve*) uma instância
 
-### Obter a informação de login
+Clique em `Suspender`{.action}.
 
-Na interface de gestão da instância, clique em `Detalhes da instância` e confira a seguinte `Informação de login`{.action}. Aqui, poderá obter os comandos SSH necessários para se conectar à sua instância.
+Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspended`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](../suspender_ou_colocar_em_pausa_uma_instancia/#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
 
-![public-cloud](images/instancedetails1.png){.thumbnail}
+Clique em `Reativar`{.action} para restaurar o estado `Ativado` da instância.
 
-![public-cloud](images/instancedetails.png){.thumbnail}
+#### Reinstalar uma instância
+
+Clique em `Reinstalar`{.action}.
+
+Esta ação reinstalará a instância com o mesmo sistema operativo, desde que a imagem seja sempre tomada a cargo.
+
+Tenha em atenção que a reinstalação **elimina todos os dados** atualmente armazenados na sua instância.
+
+#### Eliminar uma instância
+
+Clique em `Eliminar`{.action}.
+
+Esta ação terá por efeito eliminar definitivamente a instância, bem como todos os seus dados.
+
+Confirme o pedido de eliminação na janela que aparecer.
 
 ### Aceder à consola VNC
 
-A consola VNC permite-lhe aceder diretamente à sua instância. No entanto, deve ter configurado uma palavra-passe para o utilizador “root”.
+Clique em `Instances`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
 
-Para aceder a esta consola, clique em `Consola VNC`{.action} na página de gestão da instância.
-
-![public-cloud](images/vnc.png){.thumbnail}
-
-A consola fica então disponível.
+A seguir, clique no separador `Console VNC`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-### Reiniciar uma instância
+A consola VNC fornece um acesso direto à sua instância. Para que este acesso funcione, primeiro tem de configurar um nome de utilizador e uma palavra-passe na instância. 
 
-Existem duas formas diferentes de reiniciar uma instância:
+Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](../public-cloud-primeiros-passos/#connect-to-instance)".
 
-- reboot a quente (software);
-- reboot a frio (hardware).
+## Quer saber mais?
 
-Na interface de gestão da instância, clique nos três pontos situados à direita da mesma e selecione `reboot a quente (software)`{.action} ou `reboot a frio (hardware)`{.action}.
+[Criação e conexão a uma primeira instância Public Cloud](../public-cloud-primeiros-passos/)
 
-A seguir, confirme a reinicialização na nova janela.
-
-![public-cloud](images/reboot.png){.thumbnail}
-
-### Reinstalar uma instância
-
-Pode reinstalar uma instância mantendo o mesmo sistema operativo. **Esta operação irá eliminar todos os dados atuais.**
-
-Na interface de gestão da instância, clique nos três pontos situados à direita da mesma e selecione a opção `Reinstalar`{.action}. A seguir, confirme para iniciar o processo.
-
-![public-cloud](images/reinstall.png){.thumbnail}
-
-### Eliminar uma instância
-
-Também pode eliminar uma instância. **Esta operação irá eliminar de forma definitiva a instância e os respetivos dados.**
-
-Na interface de gestão da instância, clique no ícone de seta virada para baixo e selecione a opção `Eliminar`{.action}. A seguir, confirme para iniciar o processo. 
-
-![public-cloud](images/delete.png){.thumbnail}
-
-## Vá mais longe
+[Apresentação do Horizon](../horizon/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

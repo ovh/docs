@@ -7,7 +7,7 @@ section: 'Gestion via OpenStack'
 order: 1
 ---
 
-**Dernière mise à jour le 22/12/2021**
+**Dernière mise à jour le 30/03/2022**
 
 ## Objectif
 
@@ -27,22 +27,18 @@ Grâce à l'API OpenStack, vous pouvez automatiser cette gestion en générant d
 
 Ouvrez le terminal ou connectez-vous en SSH à l'environnement que vous souhaitez préparer.
 
-Mettez à jour le cache des paquets, grâce à la commande `apt-get update`:
+Mettez à jour le cache des paquets, grâce à la commande `apt update`:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul) et Swift :
+Utilisez la commande ci-dessous pour installer les clients OpenStack ainsi que Nova (application de calcul) et Swift :
 
 ```sh
-apt-get install python-openstackclient python-novaclient python-swiftclient -y
-```
-
-Python3 Version
-
-```sh
-apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.
@@ -63,27 +59,18 @@ nova help
 
 Ouvrez le terminal ou connectez-vous en SSH à l'environnement que vous souhaitez préparer.
 
-Mettez à jour le cache des paquets grâce à la commande suivante  :
+Mettez à jour le cache des paquets grâce à la commande suivante :
 
 ```sh
 yum update -y
 ```
-Installez le rpm rdo-release avec la commande suivante :
+
+Utilisez la commande ci-dessous pour installer les clients OpenStack ainsi que Nova (application de calcul) et Swift :
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-Puis le client OpenStack :
-
-```sh
-yum install -y python-openstackclient
-```
-
-Et enfin le client Nova :
-
-```sh
-yum install -y python-novaclient
+yum install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.

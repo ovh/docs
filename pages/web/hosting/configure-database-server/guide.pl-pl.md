@@ -2,28 +2,28 @@
 title: 'Konfiguracja serwera baz danych'
 slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-section: 'Private SQL'
+section: 'CloudDB'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 24-08-2020**
+**Ostatnia aktualizacja z dnia 29-03-2022**
 
 ## Wprowadzenie
 
-Za pomocą serwerów baz danych Private SQL i Cloud Databases możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
+Za pomocą serwerów baz Cloud Databases możesz wpłynąć na globalne parametry serwera. Możesz również wyświetlić aktywność swojego serwera. 
 
 **Dowiedz się, jak skonfigurować i zoptymalizować serwer baz danych.**
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty hostingu Private](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/){.external} SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
+- Posiadanie [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 ### Wyświetl ogólne informacje o serwerze baz danych
 
-Na pasku usług po lewej stronie Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Prosimy o poświęcenie kilku minut na sprawdzenie, czy wyświetlane informacje są poprawne lub zgodne z poniższymi wskazówkami.
 
@@ -43,7 +43,7 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji SQL. Pr
 
 Aby uzyskać dostęp do instancji CloudDB, należy wskazać adresy IP lub zakresy adresów IP, które mogą się łączyć z Twoimi bazami danych.
 
-W tym celu przejdź do paska usług po lewej stronie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. 
+W Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bazy danych`{.action}, a następnie do odpowiedniej instancji SQL. 
 
 Kliknij kartę Autoryzowane `IP`{.action}, a następnie przycisk `Dodaj adres IP/maskę`{.action}.
 
@@ -57,7 +57,7 @@ W oknie, które się wyświetli wskaż adres IP lub maskę, którą chcesz autor
 
 W przypadku hostingu OVHcloud należy autoryzować adres IP "bramy wyjściowej" (gateway). 
 
-Aby uzyskać adres IP "**bramy wyjściowej**", przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Hosting`{.action} w kolumnie po lewej stronie. Wybierz hosting z listy i kliknij zakładkę `FTP - SSH`.
+Aby uzyskać adres IP "**bramy wyjściowej**", przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Hosting`{.action}. Wybierz hosting z listy i kliknij zakładkę `FTP - SSH`.
 
 Na stronie znajdziesz wpis **"Serwer FTP"**, pod którym wpiszesz numer klastra, na którym się znajdujesz.
 
@@ -73,10 +73,10 @@ Po odnalezieniu numeru klastra, na którym znajduje się Twój hosting, sprawdź
 
 ### Zmiana oferty serwera baz danych
 
-Aby zmienić ofertę serwera baz danych, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych.
+Aby zmienić ofertę serwera baz danych, przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych.
 W zakładce **"Informacje ogólne"**, która jest wyświetlana domyślnie, kliknij `...`{.action} po prawej stronie słowa "RAM", a następnie `Zmień ilość pamięci RAM`{.action}, aby przejść do zlecenia zamówienia na tą zmianę.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Wybierz żądaną ilość pamięci RAM i kliknij `Dalej`{.action}. Następnie możesz wybrać żądany okres.
 
@@ -94,7 +94,7 @@ Po zatwierdzeniu regulaminów zostaniesz przekierowany do zamówienia, abyś mó
 
 ### Zmiana konfiguracji serwera baz danych
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę prywatnego serwera SQL. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę prywatnego serwera SQL. 
 
 #### Instancja MySQL i MariaDB
 
@@ -102,7 +102,7 @@ Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefiniowaną dla Twojej bazy danych. Możesz ją zmienić, po czym kliknąć `Zastosuj`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - **Rozmiar**: Katalog plików tymczasowych. **/dev/shm** odpowiada instancji pamięci RAM. **/tmp** odpowiada instancji dysku twardego.
 - **MaxAllowedPacket**: Maksymalny rozmiar pakietów
@@ -110,9 +110,10 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 - **Automatycznie**: Definiuje, czy zapytania są automatycznie zatwierdzane (committed) czy nie.
 - **Interactive_timeout**: Czas w sekundach, podczas których serwer czeka na działanie w interaktywnym połączeniu przed jego zamknięciem.
 - **InnodbBufferPoolSize**: Wybór rozmiaru pamięci buforowej.
-- **Maksymalna liczba połączeń:** Liczba autoryzowanych jednoczesnych połączeń do bazy danych.
+- **Maksymalna liczba połączeń**: Liczba autoryzowanych jednoczesnych połączeń do bazy danych.
 - **Wait_timeout**: Czas w sekundach, podczas których serwer czeka na działanie w nieinteraktywnym połączeniu przed jego zamknięciem.
-- **Event_scheduler** : Umożliwia uruchamianie wykonywania zaprogramowanych zapytań bezpośrednio na serwerze MySQL.
+- **Event_scheduler**: Umożliwia uruchamianie wykonywania zaprogramowanych zapytań bezpośrednio na serwerze MySQL.
+- **sql_mode**: Opcja **sql_mode** wpływa na składnię SQL oraz sprawdzanie poprawności danych przez MySQL lub MariaDB.
 
 > [!primary]
 > Jeśli na Twojej stronie pojawi się błąd wskazujący **"Too many connections"**, jest to spowodowane przekroczeniem liczby jednoczesnych połączeń do Twojej bazy danych.
@@ -121,10 +122,30 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 
 > [!primary]
 >
-> <b>Tmpdir</b>: 
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
 >
 > \- /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> &emsp;&emsp;Tryb domyślny dla MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
+> 
+> &emsp;&emsp;Tryb domyślny dla MariaDB 10.2 i nowszych wersji:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Tryb domyślny dla MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Tryb domyślny dla MySQL 5.7 i nowszych wersji:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> Zalecamy, aby zawsze używać trybu domyślnego, chyba że baza danych została zaktualizowana z wersji mającej inny tryb domyślny niż bieżąca wersja.
 >
 
 Wprowadź niezbędne zmiany i kliknij `Zatwierdź`{.action}.
@@ -140,7 +161,7 @@ Nie można zmienić konfiguracji instancji PostgreSQL.
 
 Możesz jednak aktywować rozszerzenia Twoich baz danych. W tym celu przejdź do zakładki `Bazy danych`, kliknij ikonę tabeli bazy danych w kolumnie **"Rozszerzenia"**
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Zmiana wersji MySQL, PostgreSQL lub MariaDB serwera baz danych
 
@@ -150,23 +171,23 @@ Aktualna wersja pojawia się w wierszu **"Wersja"**.
 
 Aby zmienić tę wersję, kliknij `Zmień wersję`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **Jak poznać dokładną wersję PostgreSQL, której używam?**
 
 Wprowadź to polecenie w phpPgAdmin klikając na **bazę danych**, sekcja **"SQL"**, a następnie klikając `Uruchom`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Jak poznać dokładną wersję mySQL lub MariaDB, której używam?**
+#### **Jak poznać dokładną wersję mySQL lub MariaDB, której używam?**
 
 W tym celu wprowadź komendę w phpMyAdmin, w rubryce **"SQL"**, następnie kliknij `Uruchom`{.action}:
 
-```
-show variables jak "version";
+```sql
+show variables like "version";
 ```
 
 > [!primary]
@@ -186,11 +207,11 @@ show variables jak "version";
 
 Dzięki temu możesz wyświetlić czas wykonywania zapytań na serwerze baz danych w ciągu ostatnich 24 godzin.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykonywania zapytań"**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Dostęp do logów "Slow Query"
 
@@ -200,11 +221,11 @@ Przejdź do karty `Metryki` serwera baz danych. Wykres **"Statystyki czasu wykon
 
 Logi te, nazywane **"slow-query.log"**, mogą zostać odzyskane z katalogu głównego przestrzeni SFTP Twojego serwera baz danych. 
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 W zakładce `informacje ogólne` sekcja **"SFTP"** w polu **"Informacje o logowaniu"**
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 Aby zalogować się przez **SFTP**, możesz skorzystać z programu Filezilla i z niniejszego przewodnika: [ "Korzystanie z programu FileZilla na Twoim hostingu"]( ../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/){.external}.
 
@@ -213,25 +234,25 @@ Jeśli ten plik jest pusty, to znaczy, że nie masz żadnych nieoptymalnych zapy
 
 #### Monitoruj zużytą pamięć RAM
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki pamięci RAM"**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Monitorowanie liczby połączeń na minutę
 
 Wykres ten pozwala na śledzenie, w ciągu ostatnich 24 godzin, obciążenia połączeń na minutę na serwerze bazy danych.
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych. 
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Baza danych`{.action}. Wybierz nazwę serwera baz danych. 
 
 Przejdź do karty `Metryki` w Panelu klienta. Wykres **"Statystyki całkowitej liczby połączeń na minutę"**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Optymalizacja bazy danych
 
- Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
+Zalecamy optymalizację bazy danych w celu zapewnienia jej wysokiej wydajności. Wydajność polega na tym, że informacje zawarte w bazie danych są zwracane do skryptu, który je wzywa. Wymaga to ustrukturyzowanej i zoptymalizowanej bazy danych.
 
 #### **Indeksowanie bazy danych**
 
@@ -239,8 +260,8 @@ Aby przyspieszyć wyszukiwanie podczas zapytania, należy dodać indeks do pól 
 
 Przykład: regularnie wyszukujesz osób w danym mieście. Zaindeksuj pole "miasto" za pomocą następującego zapytania:
 
-```bash
-ALTER TABLE `test` ADD INDEX ( `miasto` );
+```sql
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 #### **Czyszczenie bazy danych**
 
@@ -272,7 +293,7 @@ W zapytaniach SQL sprawdź, czy wybierasz tylko to, czego potrzebujesz, a przede
 
 Przykład:
 
-```bash
+```sql
 (where table1.pole = tabela2.pole2)
 ```
 

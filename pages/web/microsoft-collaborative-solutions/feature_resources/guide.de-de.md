@@ -14,7 +14,7 @@ section: 'Exchange Account-Funktionen'
 
 ## Ziel
 
-Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen, die den Ressourcen Ihrer Organisation zugewiesen sind, etwa für Konferenzräume und gemeinsam genutzte Hardware. Die Verwendung dieser Ressourcen-Accounts erlaubt es, die Organisation von Events in einer kollaborativen Arbeitsumgebung zu optimieren, indem Verfügbarkeitsprüfungen automatisch ausgeführt und die Ressourcen unmittelbar in Exchange Kalender integriert werden können.
+Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen, die den Ressourcen Ihrer Organisation zugewiesen sind, etwa für Konferenzräume und gemeinsam genutzte Hardware. Die Verwendung dieser Ressourcen-Accounts erlaubt es, die Organisation von Events in einer kollaborativen Arbeitsumgebung zu optimieren, indem Verfügbarkeitsprüfungen automatisch ausgeführt und die Ressourcen unmittelbar im Exchange Kalender integriert werden können.
 
 **Diese Anleitung erklärt, wie Sie Ressourcen mithilfe des OVHcloud Kundencenters und der Outlook Web App (OWA) verwalten.**
 
@@ -22,12 +22,11 @@ Diese kollaborative Exchange-Funktion erlaubt die Erstellung von E-Mail-Adressen
 
 - Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über Login-Daten für die E-Mail-Accounts mit Zugriff auf die Ressource
+- Sie verfügen über Login-Daten für die E-Mail-Accounts mit Zugriff auf die Ressource.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie dann den betreffenden Exchange Dienst aus.
-
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus.
 Klicken Sie auf den Tab `Mehr +`{.action} und dann auf `Ressourcen`{.action}.
 
 ### Schritt 1: eine Ressource erstellen

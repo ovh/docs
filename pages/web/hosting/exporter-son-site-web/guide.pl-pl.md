@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 14-01-2020**
+**Ostatnia aktualizacja z dnia 03-02-2022**
 
 ## Wprowadzenie
 
@@ -32,7 +32,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 - adres serwera;
 - port połączenia z serwerem.
 
-Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji „Web” i kliknij `Hostingi`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
+Dane te otrzymasz w wiadomości e-mail potwierdzającej instalację hostingu. Jeśli nie posiadasz wskazanych wyżej informacji, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji „Web” i kliknij `Hostingi`{.action} . Wybierz odpowiedni hosting i przejdź do karty `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -62,20 +62,16 @@ Aby sprawdzić, w którym katalogu powinna zostać opublikowana strona WWW, prze
 Z naszego przewodnika dowiesz się, jak utworzyć i pobrać kopię zapasową bazy danych:
 [„Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW”](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
 
-Jeśli korzystasz z **Prywatnego serwera SQL** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
-[„Wszystko o prywatnym serwerze SQL”](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}.
+Jeśli korzystasz z **serwera CloudDB** w Twojej witrynie, zapoznaj się z sekcją poświęconą kopii zapasowej w naszym przewodniku:
+[Tworzenie i eksportowanie bazy danych na serwerze baz danych](https://docs.ovh.com/pl/hosting/kopia-zapasowa-eksportowa-bazy-danych/){.external}.
 
 ### Etap 3: pobranie logów z hostingu OVHcloud
 
 Jeśli chcesz pobrać historię logów Twojej witryny, możesz to zrobić z poziomu planu hostingu WWW.
 
-Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij przycisk`Plus +`{.action}, a następnie `Statystyki i logi`{.action}.
+Kliknij przycisk `Hosting`{.action} i wybierz odpowiednie rozwiązanie. Kliknij zakładkę `Statystyki i logi`{.action}. Następnie kliknij link pod napisem `Zobacz logi`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Następnie kliknij link pod napisem**Logi** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Pojawi się okno z różnymi typami dostępnych logów. Są one podzielone według miesięcy:
 
@@ -107,6 +103,6 @@ Po wybraniu logów danego typu i z konkretnego miesiąca, są one prezentowane d
 
 [Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/){.external}.
 
-[Wszystko o prywatnym serwerze SQL](https://docs.ovh.com/pl/hosting/prywatny_sql/){.external}.
+[Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}.
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

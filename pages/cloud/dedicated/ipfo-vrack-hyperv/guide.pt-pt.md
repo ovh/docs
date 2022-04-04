@@ -2,7 +2,7 @@
 title: "Utilizar Hyper-V com endereços IP Failover num vRack"
 excerpt: "Descubra como configurar uma máquina virtual com IP Failover e Hyper-V num vRack"
 slug: ipfo-vrack-hyperv
-Secção: vRack 
+section: vRack 
 ---
 
 > [!primary]
@@ -20,7 +20,7 @@ Siga o processo de instalação do Hyper-V, a associação de um switch virtual 
 ## Requisitos
 
 - Um servidor dedicado (compatível com [vRack](https://www.ovh.pt/solucoes/vrack/)) no qual Windows Server está instalado.
-- Para usar neste manual uma imagem ISO do sistema operativo que será instalado na sua máquina virtual (CentOS 7).
+- Uma imagem ISO para o sistema operacional que será instalado na sua máquina virtual (o CentOS 7 será utilizado como exemplo neste guia).
 - Um vRack entregue na sua conta OVHcloud.
 - Um Bloco IP de 4 endereços IP ou mais.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).

@@ -2,7 +2,7 @@
 title: 'Sostituire un disco difettoso'
 slug: sostituzione-disco
 excerpt: 'Scopri come individuare un disco difettoso e chiederne la sostituzione'
-section: 'RAID & dischi'
+section: 'RAID e dischi'
 ---
 
 **Ultimo aggiornamento: 12/07/2018**
@@ -15,7 +15,7 @@ Se riscontri un malfunzionamento del disco oppure il nostro sistema ti ha inviat
 
 > [!warning]
 >
-> OVH mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
+> OVHcloud mette a tua disposizione macchine di cui tu sei responsabile. Non avendo accesso a queste macchine, non siamo noi gli amministratori e pertanto non possiamo fornirti alcuna assistenza. È responsabilità dell'utente garantire ogni giorno la gestione e la sicurezza del software.
 > 
 > Mettiamo questa guida a tua disposizione per aiutarti con le attività più comuni. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
@@ -23,7 +23,7 @@ Se riscontri un malfunzionamento del disco oppure il nostro sistema ti ha inviat
 
 ## Prerequisiti
 
-- Avere un [server dedicato OVH](https://www.ovh.it/server_dedicati/){.external}
+- Avere un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/){.external}
 - Avere l’accesso amministratore (*root*) al server via SSH
 
 
@@ -45,7 +45,7 @@ Se ricevi un alert via email o noti qualsiasi segno di malfunzionamento, è fond
 
 #### Server con RAID software
 
-Se possiedi un server che dispone di un RAID software, fai riferimento alla guida (in inglese) [Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} per trovare i dischi installati sul tuo server.
+Se possiedi un server che dispone di un RAID software, fai riferimento alla guida [Software RAID](https://docs.ovh.com/it/dedicated/raid-software/){.external} per trovare i dischi installati sul tuo server.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -89,7 +89,7 @@ Nel nostro caso, la riga importante è la seguente:
 
 #### Server con RAID hardware
 
-Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
+Se il tuo server dispone di un RAID hardware, fai riferimento alla guida (in inglese) [Hardware RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} e segui la procedura relativa al tuo tipo di controller RAID per trovare i percorsi di accesso ai tuoi dischi.
 
 Una volta individuato il percorso per accedere ai dischi, puoi testarli utilizzando il comando `smartctl` come segue:
 
@@ -138,9 +138,9 @@ root@rescue:~# nvme list
 
 #### Sostituzione del disco a freddo (spegnimento del server necessario)
 
-Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Spazio Cliente OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
+Per richiedere la sostituzione di un disco, basta creare un ticket presso il nostro team di assistenza direttamente dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Al fine di accelerare il processo, fornisci gli elementi collegati ai test. Di seguito, un riepilogo delle informazioni che dovrai fornire.
 
-- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external} (in inglese). Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
+- **Il numero di serie del disco da sostituire e di tutti gli altri dischi funzionanti**. Per recuperare il numero di serie del disco da sostituire consulta [questa guida](https://docs.ovh.com/it/dedicated/recuperare-numero-di-serie-disco/){.external}. Se non è possibile recuperare il numero di serie del disco, è necessario farlo presente nel ticket e comunicarci il numero di serie del o dei dischi da non sostituire. 
 
 Come anticipato, sono importanti i numeri di tutti i dischi in quanto verranno poi trasmessi al tecnico nel datacenter ed eviteranno un possibile errore durante l’operazione.
 
@@ -199,14 +199,14 @@ MegaCli -PdLocate -start -physdrv[E0:S0] -a0
 
 Se possiedi un server con RAID hardware, il RAID si ricostruisce da sé. Poiché l’*auto-rebuild* è attiva di default, assicurati di non averla disattivata manualmente. Il processo di risincronizzazione può richiedere alcuni minuti e ridurre le performance di lettura/scrittura sul RAID.
 
-Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dischi manualmente. Per maggiori informazioni, consulta la documentazione in inglese sul [RAID software](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}.
+Se possiedi un server con RAID software, ti consigliamo di risincronizzare i dischi manualmente. Per maggiori informazioni, consulta la documentazione in inglese sul [RAID software ](https://docs.ovh.com/it/dedicated/raid-software/).
 
 
 ## Per saperne di più
 
-[RAID software](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} (in inglese)
+[RAID software](https://docs.ovh.com/it/dedicated/raid-software/)
 
-[RAID hardware](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (in inglese)
+[RAID hardware - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
 
 [Rescue Mode](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
 

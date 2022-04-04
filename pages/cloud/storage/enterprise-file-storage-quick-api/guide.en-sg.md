@@ -6,11 +6,6 @@ section: Enterprise File Storage
 order: 2
 ---
 
-> [!warning]
-> Enterprise File Storage is a beta product. During this phase, the service is not available to customers outside Europe.
->
-
-
 **Last updated 27th October 2021**
 
 ## Objective
@@ -28,12 +23,12 @@ You're able to choose file volume size, manage accesses using ACLs or create sna
 ## Requirements
 
 - An Enterprise File Storage service
-- You should be logged in to the [OVHcloud API](https://api.ovh.com)
+- You should be logged in to the [OVHcloud API](https://ca.api.ovh.com)
 - Basic understanding of how to [mount a NFS volume](https://docs.ovh.com/gb/en/storage/nas-nfs/)
 
 ## Instructions
 
-All API routes used for this quickstart are available under the */storage* section here: <https://api.ovh.com/console/#/storage>.
+All API routes used for this quickstart are available under the */storage* section here: <https://ca.api.ovh.com/console/#/storage>.
 
 > [!primary]
 >

@@ -32,7 +32,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 - l’adresse du serveur.
 - le port de connexion au serveur.
 
-Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
+Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -66,13 +66,9 @@ Pour récupérer une sauvegarde de votre base de données, consultez notre guide
 
 Si vous souhaitez conserver l'historique des logs de votre site, un accès à ces derniers est disponible avec votre hébergement.
 
-Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`{.action} puis sur`Statistiques et logs`{.action}.
+Cliquez sur `Hébergements`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Statistiques et logs`{.action}. Cliquez ensuite sur le lien sous la mention `Voir les logs`{.action} :
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Cliquez ensuite sur le lien sous la mention **Logs** :
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Une fenêtre apparait avec les différents types de logs à disposition. Ils sont classés par mois :
 
@@ -98,7 +94,7 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 
 [Modifier le mot de passe d’un utilisateur FTP](../modifier-mot-de-passe-utilisateur-ftp/){.external}.
 
-[Utilisation logiciel FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
+[Utiliser FileZilla avec votre hebergement](../mutualise-guide-utilisation-filezilla/){.external}.
 
 [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}. 
 

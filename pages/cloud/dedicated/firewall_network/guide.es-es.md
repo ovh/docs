@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 20/09/2018**
+**Última actualización: 23/12/2021**
 
 ## Objetivo
 
@@ -41,10 +41,10 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 > El firewall de red protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
-Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} de la barra de herramientas y seleccione la sección `IP`{.action} situada en la esquina inferior izquierda de la página.<br>
+Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
 Haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la IPv4 en la que quiera activar el cortafuegos y seleccione `Crear firewall`{.action}.
 
-![Activación del firewall de red](images/firewall_creation.png){.thumbnail}
+![Activación del firewall de red](images/firewall_creation2022.png){.thumbnail}
 
 Confirme la operación haciendo clic en `Aceptar`{.action}.
 

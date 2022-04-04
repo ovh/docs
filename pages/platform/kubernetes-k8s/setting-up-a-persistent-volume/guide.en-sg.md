@@ -1,9 +1,9 @@
 ---
-title: Setting-up a Persistent Volume OVHcloud Managed Kubernetes
+title: Setting-up a Persistent Volume on OVHcloud Managed Kubernetes
 slug: setting-up-a-persistent-volume
 excerpt: ''
-section: Tutorials
-order: 6
+section: Storage
+order: 0
 ---
 
 **Last updated 19<sup>th</sup> October 2021.**
@@ -117,7 +117,7 @@ spec:
   - name: myfrontend
     image: nginx
     volumeMounts:
-    - mountPath: "/var/www/html"
+    - mountPath: "/usr/share/nginx/html"
       name: test-volume
   volumes:
   - name: test-volume

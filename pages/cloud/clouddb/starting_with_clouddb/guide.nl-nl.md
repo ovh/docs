@@ -6,7 +6,7 @@ excerpt: 'Ontdek hoe u een goed begin kunt maken met CloudDB'
 section: 'Aan de slag'
 ---
 
-**Laatste update 22-05-2018**
+**Laatste update 28-01-2022**
 
 ## Introductie
 
@@ -148,7 +148,7 @@ Kies tot slot of de onderstaande aanvullende opties moeten worden toegepast en k
 
 Om ervoor te zorgen dat uw CloudDB-instance toegankelijk is, moet u de IP-adressen of reeksen, die verbinding kunnen maken met uw database, invoeren. Klik hiervoor op het tabblad `Geautoriseerde IP-adressen`{.action} en klik vervolgens op `Een IP-adres / masker toevoegen`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 In het venster dat verschijnt, voert u het IP-adres of masker in dat u wilt autoriseren in `IP/mask`{.action}, samen met een beschrijving als u dat wenst. U kunt vervolgens beslissen of u alleen toegang wilt verlenen tot de databases of tot de SFTP. Klik vervolgens op `Bevestigen`{.action}. 
 

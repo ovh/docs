@@ -114,7 +114,7 @@ Vous pouvez avoir besoin de gérer plusieurs utilisateurs qui vont intervenir su
 - Si vous souhaitez utiliser les APIs OpenStack ou S3, ou l'interface Horizon, vous aurez à [créer des utilisateurs](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/) pour cela. Les utilisateurs peuvent éventuellement avoir des droits limités afin de sécuriser les périmètres d'action.
 - Si vous n'avez pas besoin d'accéder aux APIs ou à Horizon, vous pouvez [associer un autre compte client OVHcloud](https://docs.ovh.com/fr/public-cloud/deleguer-ses-projets/) en complément sur votre projet.
 
-# Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="gofurther"></a>
 
 Voici quelques ressources générales qui vous aideront dans votre démarrage sur Public Cloud :
 
@@ -135,6 +135,9 @@ Dans la pratique, voici également quelques guides qui vous aideront au démarra
 |[Attacher un disque supplémentaire à une instance](https://docs.ovh.com/fr/public-cloud/creer-et-configurer-un-disque-supplementaire-sur-une-instance/)|Ce guide vous accompagne pour ajouter du stockage additionnel à votre première instance.|
 |[Accéder à l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)|L'interface Horizon d'OpenStack permet certaines actions avancées, voici comment vous y connecter.|
 |[Créer un cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Ce guide vous accompagne pas à pas dans la création de votre premier cluster Kubernetes.|
+|[Configurer une IP FailOver](https://docs.ovh.com/fr/public-cloud/configurer_une_ip_failover/)|Les IP FailOver peuvent vous permettre de basculer le trafic d'une instance à une autre, ce guide vous expliquera comment configurer cela.|
+|[Utilisation de l'interface Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)|Horizon est l'interface classique d'OpenStack, ce guide vous expliquera comment y accéder.|
+|[Installation de la CLI OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/)|OpenStack peut également être utilisé en ligne de commande, voici comment installer les outils.|
 
 Un des gros avantages d'utiliser des technologies standards et ouvertes, comme OpenStack ou Kubernetes, est de bénéficier de toute la documentation déjà disponible.
 

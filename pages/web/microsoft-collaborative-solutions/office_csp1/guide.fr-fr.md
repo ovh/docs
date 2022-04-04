@@ -1,12 +1,12 @@
 ---
-title: Gérer un groupe de licences Microsoft 365 OVHcloud
+title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
 slug: commander-et-gerer-un-groupe-de-licences-office-365-ovh
 excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
 section: Office
 order: 2
 ---
 
-**Dernière mise à jour le 09/09/2021**
+**Dernière mise à jour le 22/02/2022**
 
 ## Objectif
 
@@ -41,7 +41,7 @@ Vous serez redirigé vers la page de commande afin de valider et régler celle-c
 
 ### Activer votre licence
 
-Après avoir commandé votre licence, il est nécessaire de l'activer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
+Après avoir commandé votre licence, il est nécessaire de l'activer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action}  puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
 
 Cliquez sur le bouton `...`{.action} devant la licence, puis sur `Editer le compte`{.action}.
 
@@ -58,7 +58,7 @@ Une fois la licence activée, vous recevez un e-mail sur l'adresse e-mail de con
 Cet e-mail contient les informations nécessaires au téléchargement et à l'installation de votre suite Microsoft 365, à savoir **l'adresse e-mail d'activation** et le **mot de passe**.
 
 >
-> Si vous souhaitez définir vous-même le mot de passe, il est nécessaire de le faire depuis l'espace client. Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
+> Si vous souhaitez définir vous-même le mot de passe, il est nécessaire de le faire depuis l'espace client. Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action}  puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
 >
 > Cliquez sur le bouton `...`{.action} à droite de la licence concernée puis sur `Changer le mot de passe`{.action}.
 >
@@ -76,11 +76,30 @@ Rendez-vous sur <https://portal.office.com/> et connectez-vous avec **l'adresse 
 
 ### Ajouter une licence à un groupe existant
 
-Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences existant, il est possible de le faire depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
+Si vous souhaitez ajouter une ou plusieurs licences à votre groupe de licences existant, il est possible de le faire depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la section `Web Cloud`, cliquez sur `Microsoft`{.action}  puis sur `Office`{.action} et sélectionnez le groupe de licence concerné.
 
 Cliquez sur le bouton `Commander plus de licences`{.action} à droite. Indiquez le nombre et le type de licences que vous souhaitez commander.
 
 ![emails](images/Outlook-cps1-05.png){.thumbnail}
+
+### Gérer vos abonnements <a name="managesubscriptions"></a>
+
+#### Supprimer une licence dans un groupe de licences
+
+Depuis l'onglet `Licences`{.action} de votre groupe de licences, cliquez sur le bouton `...`{.action} à droite de la licence à résilier, puis cliquez sur `Supprimer le compte`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Les consommations du mois en cours seront facturées à la fin de ce dernier.
+
+#### Résilier le groupe de licences
+
+Pour résilier votre groupe de licence Microsoft Office 365 CSP1, cliquez sur votre nom en haut à droite de l'espace client OVHcloud puis sur le bouton `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du groupe de licences à résilier, puis sur `Résilier`{.action}.<br>
+Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider`{.action}.
+
+> [!primary]
+> Les consommations du mois en cours seront facturées à la fin de ce dernier.
 
 ## Aller plus loin
 

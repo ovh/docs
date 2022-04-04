@@ -5,24 +5,27 @@ slug: bringyourownimage
 section: Advanced use
 ---
 
-**Last updated 29th March 2021**
+**Last updated 28th March 2022**
 
 ## Objective
 
 The Bring Your Own Image feature (BYOI) enables you to deploy *cloudready* images directly on your dedicated server. You can therefore use the bare metal service as a resource for your deployments.
 
 **What does *cloudready* mean?**
-<br>The *cloudready* standard generally means to be agnostic of the infrastructure on which the image is deployed.
+
+The *cloudready* standard generally means to be agnostic of the infrastructure on which the image is deployed.
 In addition to the prerequisites and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
+<br>
 The image must be able to boot correctly, whatever the server type. It must also embed the Cloud-Init service if ConfigDrive is used. Finally, the system configurations must allow the OS to be fully initiated, especially those related to the network.
 
 **This guide explains how to use BYOI on your OVHcloud dedicated server.**
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
-- access to the [OVHcloud API](../../api/first-steps-with-ovh-api/) (for the section "[Deployment via API](#viaapi)" of this guide)
+- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
+- Access to the [OVHcloud API](../../api/first-steps-with-ovh-api/) (for the section "[Deployment via API](#viaapi)" of this guide)
+- Your image must be smaller than the disk(s) installed in the server
 
 
 > [!warning]

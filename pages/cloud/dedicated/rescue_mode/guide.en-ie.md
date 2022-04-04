@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 19th March 2021**
+**Last updated 31st March 2022**
 
 ## Objective
 
@@ -25,28 +25,30 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- A [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers** in the left-hand sidebar. 
+> [!warning]
+> Please note that if you have set a default SSH key in your control panel for dedicated products, you will not receive a root password when rebooting a server rescue mode. In this case, you must first disable the key before proceeding. To do so, please consult this [section](../ovh-rescue/#disablesshkey) of the relevant guide.
+> 
 
-Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.
+You can activate rescue mode only from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**. 
 
-![Modify boot mode](images/rescue-mode-01.png){.thumbnail}
+Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
-In the popup window, tick **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
+![Modify boot mode](images/rescue-mode-001.png){.thumbnail}
 
-Click on `Next`{.action} and `Confirm`{.action}.
+In the next page, select **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 
-![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
+Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} to validate the change.
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
+
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![Reboot the server](images/rescue-mode-02.png){.thumbnail}
 

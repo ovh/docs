@@ -6,7 +6,7 @@ section: 'Bases de dados'
 order: 1
 ---
 
-**Última atualização: 01/09/2020**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 
@@ -24,7 +24,7 @@ As bases de dados (BDD) servem para armazenar os designados «elementos dinâmic
 
 ### Passo 1: Aceder à secção de gestão da base de dados no plano de alojamento web
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Planos de alojamento`{.action} na barra de serviços à esquerda e, a seguir, escolha o plano de alojamento em causa. Depois, clique no separador `Bases de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Planos de alojamento`{.action} e, a seguir, escolha o plano de alojamento em causa. Depois, clique no separador `Bases de dados`{.action}.
 
 A tabela desta secção contém todas as bases de dados criadas no âmbito do seu plano de alojamento web.
 
@@ -106,7 +106,7 @@ Para verificar os snapshots disponíveis e a sua data/hora de criação, clique 
 
 **Demasiadas conexões**
 
-As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma base de dados SQL privada ou fazer um [upgrade do plano de alojamento](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/). 
+As bases de dados dos alojamentos web têm um limite de 30 conexões simultâneas (variável de sistema *max_connections*). Assim, os pedidos SQL devem ser otimizados de modo a evitar este tipo de erro. Se continuar a encontrar problemas, considere tomar medidas alternativas; por exemplo: mudar para uma  [CloudDB](https://www.ovh.pt/cloud/cloud-databases/) ou fazer um [upgrade do plano de alojamento](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/). 
 
 **Erros de conexão ou «not found»**
 

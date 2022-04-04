@@ -27,8 +27,6 @@ La creazione di un progetto è il primo passo nella distribuzione delle [istanze
 
 Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clica sul menu `Public Cloud`{.action} poi clicca su `Crea il tuo primo progetto Public Cloud OVH`{.action}.
 
-![first connection](images/firstconnection.png){.thumbnail}
-
 Ora puoi aggiungere un voucher se ne hai uno. È possibile utilizzare solo un voucher fornito per il ramo OVHcloud.
 
 > [!warning]

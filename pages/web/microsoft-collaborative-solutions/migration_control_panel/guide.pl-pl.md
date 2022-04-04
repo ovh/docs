@@ -6,7 +6,7 @@ section: 'Migracja konta Exchange'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 23-07-2021**
+**Ostatnia aktualizacja z dnia 22-02-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -37,7 +37,7 @@ Zanim przejdziesz dalej, ważne jest, aby wiedzieć, na jaką ofertę chcesz prz
 
 Ten etap jest opcjonalny, jeśli posiadasz już usługę Exchange lub E-mail Pro, do której chcesz przeprowadzić migrację.
 
-W przeciwnym razie, aby przeprowadzić operację, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie kliknij przycisk `Zamów`{.action} na pasku usług po lewej stronie. Następnie wybierz usługę, którą chcesz zamówić. Zostaniesz przekierowany na stronę zamówienia. Postępuj zgodnie z kolejnymi instrukcjami, następnie zaczekaj, aż usługa zostanie zainstalowana. Otrzymasz e-mail z końcem abonamentu.
+W przeciwnym razie zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zamów usługę E-mail Pro lub Exchange. Postępuj zgodnie z kolejnymi instrukcjami, następnie zaczekaj aż usługa zostanie zainstalowana. Otrzymasz e-mail z końcem abonamentu.
 
 > [!primary]
 >
@@ -48,7 +48,7 @@ W przeciwnym razie, aby przeprowadzić operację, zaloguj się do [Panelu klient
 
 Przed rozpoczęciem migracji określ wersję programu MXPlan, z której chcesz wykonać migrację.
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę. Przejdź do wersji, którą posiadasz, odnosząc się do poniższej tabeli.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę. Przejdź do wersji, którą posiadasz, odnosząc się do poniższej tabeli.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -83,13 +83,13 @@ Kiedy wszystko jest gotowe, przejdź do opisu operacji w wybranym interfejsie. P
 
 ##### **Migracja z poziomu asystenta konfiguracji Exchange**
 
-Aby się do niego zalogować, wybierz w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} odpowiednią usługę na pasku usług po lewej stronie. Należy pojawić się asystent, który pomoże Ci w skonfigurowaniu nowej usługi Exchange. Podczas tego procesu będziesz mógł wybrać konta e-mail MX Plan, które chcesz przenieść.
+Aby się do niego zalogować, wybierz w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} odpowiednią usługę. Należy pojawić się asystent, który pomoże Ci w skonfigurowaniu nowej usługi Exchange. Podczas tego procesu będziesz mógł wybrać konta e-mail MX Plan, które chcesz przenieść.
 
 Jeśli asystent konfiguracji nie wyświetla się, wyświetlą się ogólne informacje o usłudze Exchange. W takim przypadku będziesz musiał przeprowadzić migrację Twoich kont za pomocą interfejsu MX Plan.
 
 ##### **Migracja z poziomu interfejsu MX Plan**
 
-Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji `E-maile`{.action} na pasku usług po lewej stronie Panelu klienta OVHcloud. Wybierz usługę noszącą nazwę domeny Twoich kont e-mail. Kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Migracja konta`{.action}.
+Aby przeprowadzić migrację w tym interfejsie, przejdź do sekcji `E-maile`{.action} Panelu klienta OVHcloud. Wybierz usługę noszącą nazwę domeny Twoich kont e-mail. Kliknij logo w kształcie koła zębatego na linii odpowiedniego konta e-mail (zwane również kontem źródłowym), a następnie kliknij `Migracja konta`{.action}.
 
 ![Exchange](images/access_the_migration_tool.png){.thumbnail}
 
@@ -103,7 +103,15 @@ Następnie potwierdź hasło do źródłowego konta e-mail (które chcesz przeni
 
 #### 3.2 Przeniesienie nowej wersji MXPlan <a name="NouvelleVersionMxplan"></a>
 
-Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, dodaj najpierw nazwę domeny do platformy [E-mail Pro](../../emails-pro/pierwsza-konfiguracja-email-pro/#etap-2-dodanie-domeny) lub [Exchange](../dodanie-domeny-exchange/).
+> [!warning]
+>
+> Jeśli właśnie zamówiłeś nową ofertę e-mail, przed rozpoczęciem migracji dodaj najpierw nazwę domeny do platformy e-mail. <br> - *Na przykład, aby przenieść konto "myemail@mydomain.ovh", należy dodać do swojej platformy nazwę domeny "mydomain.ovh".*
+>
+>Wybierz kartę `Powiązane domeny`{.action} na Twojej platformie, następnie kliknij `Dodaj domenę`{.action}. Po dodaniu domeny upewnij się, że w kolumnie `Status` znajduje się nazwa `OK`.
+>
+>![exchange](images/account_migration_adddomain.png){.thumbnail}
+>
+> Aby uzyskać więcej informacji na temat dodania domeny, sprawdź [przewodnik E-mail Pro](https://docs.ovh.com/pl/emails-pro/pierwsza-konfiguracja-email-pro/#etap-2-dodanie-domeny) lub [przewodnik Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/).
 
 Migracja MXPlan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 
@@ -143,7 +151,7 @@ Jeśli chcesz go usunąć, przejdź do zakładki `Konta e-mail`{.action} MXPlan,
 
 Na tym etapie Twoje konta e-mail muszą być migrowane i działać. Ze względów bezpieczeństwa sprawdź, czy konfiguracja Twojej domeny jest poprawna, sprawdzając w Panelu klienta.
 
-W tym celu wybierz odpowiednią usługę E-mail Pro lub Exchange na pasku usług po lewej stronie, następnie przejdź do zakładki Powiązane `domeny`{.action}. W tabeli, która się wyświetla, w kolumnie "Diagnostyka" możesz sprawdzić, czy konfiguracja DNS jest prawidłowa: czerwony przycisk pojawia się, jeśli konfiguracja wymaga zmiany.
+W tym celu wybierz odpowiednią usługę E-mail Pro lub Exchange, następnie przejdź do zakładki Powiązane `domeny`{.action}. W tabeli, która się wyświetla, w kolumnie "Diagnostyka" możesz sprawdzić, czy konfiguracja DNS jest prawidłowa: czerwony przycisk pojawia się, jeśli konfiguracja wymaga zmiany.
 
 > [!primary]
 >

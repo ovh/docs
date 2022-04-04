@@ -28,38 +28,38 @@ This guide lists the S3 API features supported by High Performance.
 |:--|:-:|
 | DELETE Bucket | ✅ |
 | DELETE Bucket cors | ✅ |
-| DELETE Bucket encryption 	 
-| DELETE Bucket lifecycle | ✅ |
-| DELETE Bucket policy 	 
-| DELETE Bucket replication 	 
+| DELETE Bucket encryption | |	 
+| DELETE Bucket lifecycle | |
+| DELETE Bucket policy | |
+| DELETE Bucket replication | |
 | DELETE Bucket tagging | ✅ |
-| DELETE Bucket website 	 
+| DELETE Bucket website | |
 | GET Bucket (List Objects) Version 2 | ✅ |
 | GET Bucket acl | ✅ |
 | GET Bucket cors | ✅ |
-| GET Bucket encryption 	 
-| GET Bucket lifecycle | ✅ |
+| GET Bucket encryption | |
+| GET Bucket lifecycle | |
 | GET Bucket location | ✅ |
-| GET Bucket notification 	 
+| GET Bucket notification | |	 
 | GET Bucket Object versions | ✅ |
-| GET Bucket policy 	 
-| GET Bucket replication 	 
+| GET Bucket policy | |
+| GET Bucket replication | |
 | GET Bucket tagging | ✅ |
 | GET Bucket versioning | ✅ |
-| GET Bucket website 	 
+| GET Bucket website | |
 | HEAD Bucket | ✅ |
 | List Multipart Uploads | ✅ |
 | PUT Bucket | ✅ |
 | PUT Bucket acl | ✅ |
 | PUT Bucket cors | ✅ |
-| PUT Bucket encryption 	 
-| PUT Bucket lifecycle | ✅ |
-| PUT Bucket notification 	 
-| PUT Bucket policy 	 
-| PUT Bucket replication 	 
+| PUT Bucket encryption | |	 
+| PUT Bucket lifecycle | |
+| PUT Bucket notification | |	 
+| PUT Bucket policy | |
+| PUT Bucket replication | |
 | PUT Bucket tagging | ✅ |
 | PUT Bucket versioning | ✅ |
-| PUT Bucket website 	 
+| PUT Bucket website 	| |
 
 ### Objects operations
 
@@ -71,11 +71,11 @@ This guide lists the S3 API features supported by High Performance.
 | GET Object | ✅ |
 | GET Object ACL | ✅ |
 | GET Object tagging | ✅ |
-| GET Object torrent 	 
+| GET Object torrent | |
 | HEAD Object | ✅ |
 | OPTIONS object | ✅ |
-| POST Object 	 
-| POST Object restore 	 
+| POST Object | |
+| POST Object restore | |
 | PUT Object | ✅ |
 | PUT Object - Copy | ✅ |
 | PUT Object acl | ✅ |

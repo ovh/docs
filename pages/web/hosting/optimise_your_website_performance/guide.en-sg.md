@@ -214,17 +214,10 @@ Example:
 #### Avoid resource intensive options:
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
-
-#### Private SQL
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
-A comparison of our offers can be found [on the product page](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/).
-
 ## Go further
 
 [Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment)
 
 [Creating and managing a database in your Web Hosting plan](../creating-database)
-
-[Getting started with the Private SQL service](../getting-started-with-private-sql)
 
 Join our community of users on <https://community.ovh.com/en/>.

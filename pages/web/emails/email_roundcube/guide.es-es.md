@@ -8,16 +8,16 @@ order: 05
 ---
 
 
-## Desde la web de OVH
-Acceda a [OVH.es](http://www.ovh.es) y haga clic en el enlace «Webmail» situado en la esquina superior derecha.
+## Desde la web de OVHcloud
+Acceda a [OVHcloud.es](http://www.ovh.es) y haga clic en el enlace «Webmail» situado en la esquina superior derecha.
 
 ![](images/img_2413.jpg){.thumbnail}
 
 
-## Página de conexión al webmail de OVH
-Llegará a una pantalla en la que deberá introducir su dirección de correo electrónico. La interfaz le redirigirá directamente al webmail correspondiente a su servicio de correo OVH.
+## Página de conexión al webmail de OVHcloud
+Llegará a una pantalla en la que deberá introducir su dirección de correo electrónico. La interfaz le redirigirá directamente al webmail correspondiente a su servicio de correo OVHcloud.
 
-Si ya sabe qué tipo de servicio de correo tiene en OVH, puede seleccionar directamente el webmail en la parte inferior de la página, haciendo clic en el icono .
+Si ya sabe qué tipo de servicio de correo tiene en OVHcloud, puede seleccionar directamente el webmail en la parte inferior de la página, haciendo clic en el icono .
 
 Haciendo clic en , accederá directamente a las guías relativas al webmail seleccionado.
 
@@ -25,7 +25,7 @@ Haciendo clic en , accederá directamente a las guías relativas al webmail sele
 Si marca la casilla «Memorizar esta dirección», la dirección de correo introducida se guardará en el menú «Webmail» situado en la esquina superior derecha. Así podrá conectarse más fácilmente a esa dirección.
 
 
-## Página de conexión al webmail de OVH
+## Página de conexión al webmail de OVHcloud
 Llegará a la página de conexión al webmail de su servicio de correo.
 
 Si la dirección de correo no aparece cumplimentada en el campo «Nombre de usuario», introdúzcala. Introduzca también la contraseña y haga clic en «Iniciar sesión».
@@ -159,7 +159,7 @@ En la nueva interfaz de Roundcube «Larry», la opción «Componer mensaje en HT
 
 Puede cambiarlo a «siempre» para enviar sus mensajes de correo en formato HTML.
 
-![](images/img_1288.jpg){.thumbnail}
+![options_rc_en](images/options_RC_en.PNG){.thumbnail}
 
 
 ## Contactos
@@ -264,9 +264,9 @@ Para insertar la firma asociada a una identidad, consulte el apartado [«Inserta
 
 
 ## Crear una firma con imagen (1)
-Esta etapa requiere que la imagen esté alojada en un servidor (en el servidor de alojamiento de OVH o en cualquier otro).
+Esta etapa requiere que la imagen esté alojada en un servidor (en el servidor de alojamiento de OVHcloud o en cualquier otro).
 
-Para subir una imagen a su alojamiento de OVH, siga esta [guía](http://guias.ovh.es/FtpFileZilla).
+Para subir una imagen a su alojamiento de OVHcloud, siga esta [guía](http://guias.ovh.es/FtpFileZilla).
 
 Marcando la casilla «Firma HTML», se abrirá el editor WYSWYG (what you see is what you get, lo que ves es lo que obtienes).
 Haga clic en el icono «HTML» para abrir la ventana que le permitirá insertar código HTML.
@@ -310,9 +310,9 @@ En «Identidades», haga clic en el icono «+» para añadir una nueva identidad
 
 
 ## Nueva identidad (2)
-Como se ve en la imagen, vamos a crear una identidad llamada «Guides OVH» asociada a la dirección no-reply@ovh.net, que es la dirección que queremos que vean los destinatarios. Cuando estos respondan a los mensajes, la respuesta se enviará a la dirección support@ovh.net. Personalizamos la firma (opcional) y hacemos clic en «Guardar».
+Como se ve en la imagen, vamos a crear una identidad llamada «Guides OVHcloud» asociada a la dirección no-reply@ovh.net, que es la dirección que queremos que vean los destinatarios. Cuando estos respondan a los mensajes, la respuesta se enviará a la dirección support@ovh.net. Personalizamos la firma (opcional) y hacemos clic en «Guardar».
 
-Una vez guardada, la nueva identidad «Guides OVH <no-reply@ovh.net>» aparecerá en la columna de identidades.
+Una vez guardada, la nueva identidad «Guides OVHcloud <no-reply@ovh.net>» aparecerá en la columna de identidades.
 
 Para insertar la firma asociada a dicha identidad, consulte el apartado [«Insertar una firma en formato HTML»](#SIGNATURE).
 
@@ -320,13 +320,13 @@ Para insertar la firma asociada a dicha identidad, consulte el apartado [«Inser
 
 
 ## Redactar un nuevo mensaje
-Para escribir un nuevo mensaje haga clic en «Redactar...». Si no puede ver este botón (desde la configuración o los contactos), haga clic en el sobre blanco «Correo» situado en la barra superior para mostrarlo.
+Para escribir un nuevo mensaje haga clic en `Redactar`{.action}. Si no puede ver este botón (desde la configuración o los contactos), haga clic en el sobre blanco «Correo» situado en la barra superior para mostrarlo.
 
-![](images/img_1404.jpg){.thumbnail}
+![compose](images/Compose.PNG){.thumbnail}
 
 
 ## Opciones
-Al hacer clic en «Redactar...» aparecerán las opciones de redacción del correo, como añadir contactos de la libreta de direcciones, adjuntar archivos y configurar el propio mensaje.
+Al hacer clic en `Redactar`{.action} aparecerán las opciones de redacción del correo, como añadir contactos de la libreta de direcciones, adjuntar archivos y configurar el propio mensaje.
 
 Para añadir un destinatario, haga clic en el tipo de copia que quiere asignarle:
 
@@ -364,7 +364,7 @@ El mensaje anterior, enviado a support@ovh.net desde esa misma cuenta, se recibe
 
 Si el mensaje no se recibe automáticamente, puede hacer clic en «Actualizar» en la esquina superior izquierda (flechas horizontales opuestas).
 
-Como podemos ver, el remitente es «Support OVH» y la firma se muestra correctamente.
+Como podemos ver, el remitente es «Support OVHcloud» y la firma se muestra correctamente.
 
 ![](images/img_1408.jpg){.thumbnail}
 
@@ -405,7 +405,7 @@ En este ejemplo, vamos a crear dos grupos para ilustrar las distintas situacione
 
 Para empezar, haga clic en el icono «Contactos» (con forma de persona), situado en la barra superior, para acceder a la gestión de los contactos.
 
-Para agrupar todos los contactos relacionados con las guías OVH, vamos a crear un grupo llamado «Guides».
+Para agrupar todos los contactos relacionados con las guías OVHcloud, vamos a crear un grupo llamado «Guides».
 
 Haga clic en el icono «+» situado en la parte inferior de la primera columna para crear un grupo de contactos. El cursor se colocará automáticamente en el campo de texto.
 
@@ -526,7 +526,7 @@ Introduzca uno o más criterios de búsqueda y haga clic en «Buscar».
 
 
 ## Exportar contactos
-Si quiere obtener todos sus contactos del webmail Roundcube OVH, puede hacerlo exportando el archivo de la libreta de direcciones.
+Si quiere obtener todos sus contactos del webmail Roundcube OVHcloud, puede hacerlo exportando el archivo de la libreta de direcciones.
 
 En «Contactos», haga clic en «Exportar».
 

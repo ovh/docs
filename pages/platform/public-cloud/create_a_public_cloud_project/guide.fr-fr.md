@@ -24,8 +24,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}.
 
-![première connexion](images/firstconnection.png){.thumbnail}
-
 Si vous disposez d'un bon d'achat, vous pouvez alors le renseigner. Seuls les bons d'achats fournis pour votre filiale OVHcloud peuvent être utilisés.
 
 > [!warning]

@@ -16,7 +16,7 @@ OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedi
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Account.
+- Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
@@ -41,30 +41,30 @@ Für die Login-Authentifizierung auf Windows-Instanzen sind nur Benutzername und
 
 Öffnen Sie zunächst über einen Mac-Computer oder ein Gerät mit installiertem Linux-Betriebssystem die Kommandozeile (Terminal). Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis ein Ordner „.ssh“ befindet. Ist der Ordner nicht vorhanden, erstellen Sie diesen:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 Indem Sie die Option „-t“ mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z. B.:
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 Nach Ausführen des Befehls werden Sie aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
-```sh
+```ssh
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Sie können die Standarddatei akzeptieren, indem Sie auf „↩“ („Enter“) klicken. Anschließend haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel durch ein Passwort zu schützen. Diese Maßnahme wird empfohlen, da sie für zusätzliche Sicherheit sorgt. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
+Sie können die Standarddatei akzeptieren, indem Sie „Enter“ drücken. Anschließend haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel durch ein Passwort zu schützen. Diese Maßnahme wird empfohlen, da sie für zusätzliche Sicherheit sorgt. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
 
 Ihre SSH-Schlüssel sollten im Verzeichnis „.ssh“ gespeichert sein. Zum Dateinamen der öffentlichen Schlüsseldatei wurde die Endung „.pub“ hinzugefügt.
 
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Wenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl „cat“ auf Ihre „.pub“-Schlüsseldatei an und kopieren Sie die Ausgabe:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >In einem MacOS-Terminal können Sie auch die „pbcopy“- und „pbpaste“-Befehle verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel diesen Befehl, um den Schlüssel aus der Datei „id_rsa.pub“ in der Zwischenablage zu speichern.
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -141,10 +141,10 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 
 > [!primary]
 >
-Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern lesen Sie bitte die Anleitung „[Configuring additional SSH keys](https://docs.ovh.com/gb/en/public-cloud/configuring_additional_ssh_keys/)“ (Englisch).
+Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung „[Zusätzliche SSH-Schlüssel konfigurieren](https://docs.ovh.com/de/public-cloud/zusaetzliche-ssh-schluessel-konfigurieren/)“.
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
 
 Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld „Schlüssel“ ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
 
@@ -153,7 +153,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 ### Schritt 3: Instanz erstellen
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
 
 ![Instanz auswählen](images/instance-creation-01-2021.png){.thumbnail}
 
@@ -174,7 +174,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 >
 Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Project Management“ auf `Quota and Regions`{.action} klicken.
 >
-Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die „Flex“-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in der vorliegenden Anleitung.
+Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die „Flex“-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
 >
 
 Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instanz aus.
@@ -218,7 +218,7 @@ Nachdem Sie überprüft haben, dass Ihre Konfigurationseinstellungen korrekt sin
 
 ### Schritt 4: Mit Ihrer Instanz verbinden <a name="connect-to-instance"></a>
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
 
 ![Instanzen-Seite](images/instance-connect-01.png){.thumbnail}
 
@@ -237,13 +237,13 @@ Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zu
 
 Geben Sie die Passphrase Ihres privaten Schlüssels ein, wenn Sie dazu aufgefordert werden. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Da Sie mit root-Berechtigung eingeloggt sind („sudo user“), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
 
-```sh
+```bash
 $ sudo passwd
 New password:
 Retype new password:
@@ -251,7 +251,7 @@ passwd: password updated successfully
 ```
 Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:
@@ -317,11 +317,11 @@ Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteve
 
 Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
 
-Remmina Remote Desktop Client beispielsweise ist eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Webseite](https://remmina.org/) herunterladen.
+Zum Beispiel ist Remmina Remote Desktop Client eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Webseite](https://remmina.org/) herunterladen.
 
 ![Linux Remote](images/linux-connect-01.png){.thumbnail}
 
-Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll „RDP“ ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf „↩“ („Enter“).
+Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll „RDP“ ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf „Enter“.
 
 ![Linux Remote](images/linux-connect-02.png){.thumbnail}
 

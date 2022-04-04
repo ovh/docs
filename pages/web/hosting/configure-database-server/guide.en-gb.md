@@ -2,28 +2,28 @@
 title: 'Configuring your database server'
 slug: configure-optimise-database-server
 excerpt: 'Find out how to configure and optimise your database server'
-section: Private SQL
+section: CloudDB
 order: 6
 ---
 
-**Last updated 24/08/2020**
+**Last updated 29th March 2022**
 
 ## Objective
 
-With the Private SQL and Cloud Databases database servers, you can influence your server’s global settings. You can also view your server's activity. 
+With the Cloud Databases database servers, you can influence your server’s global settings. You can also view your server's activity. 
 
 **Find out how to configure and optimise your database server.**
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- A [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
 ### View general information on your database server
 
-In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 You can also view important information on your SQL instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
@@ -43,7 +43,7 @@ You can also view important information on your SQL instance. Please take a few 
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database.
 
-In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
@@ -57,7 +57,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 For an OVHcloud Web Hosting plan, you will need to authorise its gateway IP address. 
 
-To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click the `Web Cloud` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
+To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click the `Web Cloud` tab, then click on `Hosting plans`{.action}. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
 
 Here, look for **FTP server**, which will show you the cluster number you are on, as shown below.
 
@@ -73,31 +73,31 @@ Once you have retrieved the number of the cluster on which your Web Hosting plan
 
 ### Modifying the database server solution
 
-To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click the `Web Cloud` tab, and then click `Database`{.action} in the left pane. Select the name of your database server.
+To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click the `Web Cloud` tab, and then click `Database`{.action}. Select the name of your database server.
 
 In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
-![private-sql](images/private-sql-order-ram01.png){.thumbnail}
+![clouddb](images/private-sql-order-ram01.png){.thumbnail}
 
 Choose the amount of RAM you want, then click `Next`{.action}. You can then choose the duration you want.
 
 > [!primary]
 >
 > The remaining term until expiration will be prorated.
-> This pro rata calculation will be based on the expiration date of the Private SQL server, not on the date of the purchase order.
+> This pro rata calculation will be based on the expiration date of the CloudDB server, not on the date of the purchase order.
 > 
 
 Once you have confirmed your contracts, you will be redirected to the purchase order to pay for this change. It will then be effective within a few hours.
 
 > [!warning]
 >
->  If you currently have a free Private SQL server available as part of a Performance hosting, it will no longer be free after changing your offer.
+>  If you currently have a free CloudDB server available as part of a Performance hosting, it will no longer be free after changing your offer.
 > 
 
 
 ### Modifying my database server’s configuration
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
 #### MySQL and MariaDB instances
 
@@ -105,7 +105,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fr
 
 In the **General configuration of MySQL** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
-![private-sql](images/private-sql-config02.png){.thumbnail}
+![clouddb](images/private-sql-config02.png){.thumbnail}
 
 - <b>Tmpdir</b>: Directory of temporary files. <b>"/dev/shm"</b> is the instance’s RAM. <b>"/tmp"</b> is the instance’s hard drive.
 - <b>MaxAllowedPacket</b>: The maximum packet size.
@@ -113,9 +113,10 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 - <b>AutoCommit</b>: Sets whether requests are automatically committed or not.
 - <b>Interactive_timeout</b>: Time (in seconds) for which the server will wait for activity on an interactive connection before closing the connection.
 - <b>InnodbBufferPoolSize</b>: The selected buffer memory size.
-- <b>MaxConnections:</b> The number of concurrent connections authorised on Private SQL.
+- <b>MaxConnections:</b> The number of concurrent connections authorised on CloudDB.
 - <b>Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
 - <b>Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
+- <b>sql_mode</b>: The <b>sql_mode</b> option affects the supported SQL syntax, and the data validation performed by MySQL/MariaDB.
 
 > [!primary]
 > When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
@@ -124,10 +125,30 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 
 > [!primary]
 >
-> <b>Tmpdir</b>:  
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
 > \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>
+> &emsp;&emsp;Default mode of MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
+> 
+> &emsp;&emsp;Default mode of MariaDB 10.2 and higher:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Default mode of MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Default mode of MySQL 5.7 and higher:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> We recommend always using the default mode, unless your database was updated from a version with a default mode that is different from the current version.
 >
 
 Make the necessary changes, then click `Confirm`{.action}.
@@ -143,7 +164,7 @@ You cannot modify the configuration of a PostgreSQL instance.
 
 However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the **Extensions** column.
 
-![private-sql](images/private-sql-config03.png){.thumbnail}
+![clouddb](images/private-sql-config03.png){.thumbnail}
 
 ### Change the MySQL, PostgreSQL or MariaDB version of the database server
 
@@ -153,14 +174,14 @@ The current version appears in the **Version** row.
 
 To edit this version, click `Update version`{.action}.
 
-![private-sql](images/private-sql-config04.png){.thumbnail}
+![clouddb](images/private-sql-config04.png){.thumbnail}
 
 
 #### **How do I know the exact version of PostgreSQL I am using?**
 
 Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL** section, then click `Launch`{.action}:
 
-```
+```sql
 select version();
 ```
 
@@ -168,7 +189,7 @@ select version();
 
 To do this, enter this command in phpMyAdmin, in the **SQL** section, then click `Run`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -190,11 +211,11 @@ show variables like "version";
 
 This allows you to view the query execution time on your database server in the last 24 hours.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
 Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
 
-![private-sql](images/private-sql-metrics01.png){.thumbnail}
+![clouddb](images/private-sql-metrics01.png){.thumbnail}
 
 #### Access to Slow Query logs
 
@@ -205,11 +226,11 @@ Go to the `Metrics` tab for your database server. You will find the graph **Quer
 These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server. 
 
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
 In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
 
-![private-sql](images/private-sql-SFTP01.png){.thumbnail}
+![clouddb](images/private-sql-SFTP01.png){.thumbnail}
 
 To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](../web_hosting_filezilla_user_guide/).
 
@@ -218,21 +239,21 @@ If this file is empty, you do not have any slow queries.
 
 #### Monitoring the RAM used
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **RAM usage statistics**.
 
-![private-sql](images/private-sql-metrics02.png){.thumbnail}
+![clouddb](images/private-sql-metrics02.png){.thumbnail}
 
 #### Number of connections per minute
 
 This graph allows you to track, over the last 24 hours, the load of connections per minute on your database server.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Web Cloud` section, and then click `Databases`{.action}. Select the name of your CloudDB server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **Statistics for total connections per minute**.
 
-![private-sql](images/private-sql-metrics03.png){.thumbnail}
+![clouddb](images/private-sql-metrics03.png){.thumbnail}
 
 ### Managing your databases
 
@@ -244,7 +265,7 @@ To increase the speed of searches during a query, you must index the fields that
 
 Example: you do a regular search for people in relation to the city. Index the “city” field with the following query:
 
-```bash
+```sql
 ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
@@ -280,7 +301,7 @@ In your SQL queries, make sure you select only what you need, and especially tha
 
 Example:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

@@ -21,7 +21,7 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 
 ## Instructions
 
-Une fois RTM installé via votre Espace client, vous pouvez surveiller votre serveur dans la section `Dédié`{.action}. Sur la page principale de votre serveur, vous pouvez trouver les informations de surveillance sous `Real Time Monitoring` :
+Une fois RTM installé via votre Espace client, vous pouvez surveiller votre serveur dans la section `Serveurs Dédiés`{.action}. Sur la page principale de votre serveur, vous pouvez trouver les informations de surveillance sous `Real Time Monitoring` :
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 

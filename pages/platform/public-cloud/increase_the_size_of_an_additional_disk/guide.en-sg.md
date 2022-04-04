@@ -1,72 +1,73 @@
 ---
-title: 'Increasing the size of an additional disk'
-excerpt: 'Find out how to increase the size of an additional disk and enlarge its main partition'
+title: Increasing the size of an additional disk
+excerpt: 'Find out how to increase the size of an additional volume and enlarge its main partition'
 slug: increase_the_size_of_an_additional_disk
-legacy_guide_number: g1865
 section: Storage
 order: 2
 ---
 
-**Last updated 14th November 2019**
+**Last updated 29th March 2022**
 
 ## Objective
 
-If you have reached the maximum storage capacity on your additional disk, you can still increase its size. 
+If you have reached the maximum capacity on your additional disk, you can add more storage by increasing its size. 
 
-**This guide will show you how to increase the size of an additional disk as well as enlarging its main partition.**
+**This guide explains how to increase the size of an additional disk and extend the main partition accordingly.**
 
 ## Requirements
 
-* A [Public Cloud Instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} in your your OVHcloud account
-* An [additional disk](https://www.ovhcloud.com/en-sg/public-cloud/block-storage/){.external} attached to your instance
-* Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
-* Administrative (root) access to your instance via SSH (for Linux only)
-* Administrative access to your instance via RDP (for Windows only)
+- A [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/) in your Public Cloud project
+- An [additional disk](../create_and_configure_an_additional_disk_on_an_instance/) created in your project
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
-## Intructions
+## Instructions
 
-### Using the OVHcloud Control Panel.
+The following steps presume that you have configured an additional disk according to [our guide](../create_and_configure_an_additional_disk_on_an_instance/).
 
-In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
+### Modifying the size of the disk
 
-![control panel](images/select_project.png){.thumbnail}
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project. Then click on `Block Storage`{.action} in the left-hand menu.
 
-Locate your Block Storage disk under "Storage" section on the left-hand sidebar.
+If the volume is attached to a **Windows instance**, click on `...`{.action} in the row of the volume and select `Detach from instance`{.action}.
+
+Click on `...`{.action} in the row of the volume and select `Edit`{.action}.
 
 ![control panel](images/increase-disk-02.png){.thumbnail}
 
-Next, click on the 3 dots on the right of the disk and click Edit. You will be redirected to this page where you can change the volume capacity.
+In the popup window, enter the new size for the volume and click on `Modify the volume`{.action}.
 
 ![control panel](images/increase-disk-03.png){.thumbnail}
 
-When you've finished, click the `Modify the volume`{.action} button.
+Ensure that the volume is attached to your instance before continuing. If not, click on `...`{.action} in the row of the volume and select `Attach to instance`{.action}.
 
+### Extending the partition (Linux instance)
 
-### Using Linux.
+Establish an SSH connection to your instance in order to adjust the partition to the resized disk.
 
-First, unmount the disk using this command.
+Unmount the disk first by using this command:
 
+```bash
+admin@server:~$ sudo umount /mnt/disk
 ```
-admin@server-1:~$ sudo umount /mnt/disk
-```
 
-Next, recreate the partition.
+Recreate the partition:
 
+```bash
+admin@server:~$ sudo fdisk /dev/vdb
 ```
-admin@server-1:~$ sudo fdisk /dev/vdb
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command
 ```
-
-```
+```console
 Command (m for help): d
 
 Selected partition 1
 Partition 1 has been deleted.
 ```
-
-```
+```console
 Command (m for help): n
 
 Partition type
@@ -80,8 +81,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
 
 Created a new partition 1 of type 'Linux' and of size 70 GiB.
 ```
-
-```
+```console
 Command (m for help): w
 
 The partition table has been altered.
@@ -89,10 +89,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Next, verify and recheck the partition.
+Verify and check the partition:
 
-```
-#admin@server-1:~$ sudo e2fsck -f /dev/vdb1
+```bash
+admin@server:~$ sudo e2fsck -f /dev/vdb1
 
 e2fsck 1.42.12 (29-Aug-2014)
 Pass 1: Checking inodes, blocks, and sizes
@@ -103,22 +103,22 @@ Pass 5: Checking group summary information
 /dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
 ```
 
-```
-#admin@server-1:~$ sudo resize2fs /dev/vdb1
+```bash
+admin@server:~$ sudo resize2fs /dev/vdb1
 
 resize2fs 1.42.12 (29-Aug-2014)
 Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
 The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
 ```
 
-Finally, mount and check the disk.
+Finally, re-mount and check the disk:
 
-```
-#admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+```bash
+admin@server:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-```
-#admin@server-1:~$ df -h
+```bash
+admin@server:~$ df -h
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -129,44 +129,36 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
-### Using Windows.
+### Extending the partition (Windows instance)
 
-Establish an RDP connection to your instance. When you've logged in, right-click on the `Start Menu`{.action} button, and then click `Disk Management`{.action}.
+Establish a remote desktop (RDP) connection to your Windows instance.
 
-![windows](images/increase-disk-04.png){.thumbnail}
+Once logged in, right-click on the `Start Menu`{.action} button and open `Disk Management`{.action}.
 
-When the disk management tool opens, you’ll see your new disk as an unknown volume with unallocated space as shown below.
+![windows](images/resize-win-01.png){.thumbnail}
 
-![windows](images/increase-disk-05.png){.thumbnail}
+The extended disk now displays the additional capacity as unallocated space.
 
-If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select Online.
+![windows](images/resize-win-02.png){.thumbnail}
 
-![windows](images/increase-disk-06.png){.thumbnail}
+Right-click on the volume and select `Extend Volume`{.action} from the context menu.
 
-> [!primary]
->
-Depending on your version of Windows, you may need to initialise your additional disk before you can use it. To initialise your disk, right-click it again and this time select `Initialise Disk`{.action}.
->
+![windows](images/resize-win-03.png){.thumbnail}
 
-If the main volume on you disk is smaller than the entire disk capacity, right-click on the volume and then click `Extend Volume`{.action}.
+In the "Extend Volume Wizard", click on `Next`{.action} to proceed.
 
-![windows](images/increase-disk-07.png){.thumbnail}
+You can modify the disk space in this step if you want to add less than the entire amount to the partition. Click on `Next`{.action}.
 
-The Extend Volume Wizard will now be displayed. Click `Next`{.action} to start the wizard.
+![windows](images/resize-win-04.png){.thumbnail}
 
-![windows](images/increase-disk-08.png){.thumbnail}
+Click on `Finish`{.action} to complete the process.
 
-Now increase the volume to the size you want, and click `Next`{.action} when you're finished.
+The resized volume now includes the additional disk space.
 
-![windows](images/increase-disk-09.png){.thumbnail}
-
-Finally, click `Finish`{.action} to complete the process.
-
-![windows](images/increase-disk-10.png){.thumbnail}
+![windows](images/resize-win-05.png){.thumbnail}
 
 ## Go further
 
-[Create and configure an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance)
+[Creating and configuring an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.
-

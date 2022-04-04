@@ -103,7 +103,7 @@ If you would like to delete it, go to the `Email accounts`{.action} tab on your 
 
 At this stage, your email addresses should already be migrated and functional. For security reasons, please ensure that your domain is correctly configured in your Control Panel.
 
-To do this, select the Email Pro or Exchange service concerned in the services bar on the left-hand side, then go to the `Associated domains`{.action} tab. In the table shown, you can use the `Diagnostic` column to check if the DNS configuration is correct: a red box appears if the configuration needs to be modified.
+To do this, select the Email Pro or Exchange service concerned, then go to the `Associated domains`{.action} tab. In the table shown, you can use the `Diagnostic` column to check if the DNS configuration is correct: a red box appears if the configuration needs to be modified.
 
 > [!primary]
 >

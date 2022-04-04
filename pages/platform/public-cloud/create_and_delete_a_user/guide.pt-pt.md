@@ -1,62 +1,78 @@
 ---
-title: 'Criar e eliminar um utilizador OpenStack'
+title: "Criação e eliminação de utilizadores OpenStack"
 slug: criar-e-eliminar-um-utilizador-openstack
 section: Gestão do projeto
+excerpt: Saiba como criar e eliminar um utilizador OpenStack a partir da Área de Cliente OVHcloud
+order: 9
 ---
 
-**Última atualização: 6 de dezembro de 2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Introdução
-Para usar o Horizon ou as API OpenStack precisa de criar um utilizador OpenStack. Este guia mostra como criar e eliminar um utilizador.
+**Última atualização: 17/03/2022**
 
-O número de utilizadores OpenStack não é limitado.
+## Objetivo
 
+O acesso ao Horizon e às API OpenStack efetua-se através de combinações identificadoras/password chamadas "*OpenStack users*". Pode criar tantos utilizadores OpenStack quanto necessário e atribuir-lhes diferentes direitos de acesso.
 
-### Requisitos
-Ter criado um projeto Public Cloud há mais de 7 dias, se for o seu primeiro projeto (ou contacte o Apoio ao Cliente para verificar se se é possível desbloquear o projeto mais cedo). Os restantes projetos não têm esta limitação.
+**Este manual explica-lhe como gerir utilizadores OpenStack a partir da Área de Cliente OVHcloud.**
 
+## Requisitos
 
-## Criar um utilizador OpenStack
-Antes de mais, para aceder à interface Horizon, é necessário criar uma conta de utilizador OpenStack. Para isso, faça login na sua Área de Cliente e vá para a secção `Public Cloud`{.action} no canto superior esquerdo da página. No ecrã seguinte, clique na `seta `{.action}ao lado do nome do seu projeto no canto superior esquerdo do ecrã.
+- Um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-![Adicionar utilizador](images/select_project.png){.thumbnail}
+> [!primary]
+>
+> Se o projeto Public Cloud em causa for o **primeiro projeto** criado na sua Área de Cliente, a criação de utilizadores OpenStack só será possível após 7 dias a contar da data de criação do projeto.
+>
+> Pode solicitar a eliminação desta medida de segurança criando um ticket de assistência na sua Área de Cliente.
+>
 
-Em “Gestão de projetos” na barra lateral esquerda, selecione `Utilizadores e funções`{.action}.
+## Instruções
 
-![Funções](images/users_roles.png){.thumbnail}
+### Criação de um utilizador OpenStack
 
-Clique em `Criar utilizador`{.action} para gerar o pop-up seguinte.
+Ligue-se à sua Área de Cliente OVHcloud e abra o seu projeto `Public Cloud`{.action}. Clique em `Users & Roles`{.action} no menu à esquerda em "Project management". 
 
-![Adicionar utilizador](images/adduser.png){.thumbnail}
+Clique no botão `Criar um utilizador`{.action}.
 
-A descrição do utilizador não é o nome de utilizador. É apenas um descritivo para o ajudar a recordar de que tipo de utilizador se trata. O ecrã seguinte permite-lhe conceder permissões de utilizador. Para cada caixa de permissões que marcar, o utilizador terá os privilégios correspondentes, como se pode ver na seguinte tabela:
+![User roles](images/users_roles.png){.thumbnail}
+
+A descrição do utilizador não é o nome de utilizador OpenStack, mas sim uma descrição que deve introduzir para o ajudar a organizar os utilizadores e as suas permissões. Introduza uma descrição e clique em `Seguinte`{.action}.
+
+![Add user](images/adduser.png){.thumbnail}
+
+Agora pode selecionar funções que representam as autorizações que o utilizador irá obter. Para cada quadrícula, o utilizador obterá privilégios de acesso de acordo com o quadro abaixo.
 
 ![Permissões](images/permissions.png){.thumbnail}
 
-Clique no botão `Confirmar`{.action} após concluir, e será apresentado o seguinte ecrã:
+Clique em `Confirmar`{.action} para criar o utilizador OpenStack. O identificador e a palavra-passe são gerados e apresentados automaticamente na sua Área de Cliente.
 
-![Utilizador_pw](images/user_pw.png){.thumbnail}
+![User_pw](images/user_pw.png){.thumbnail}
 
-Certifique-se de que guarda a sua palavra-passe agora, pois este é o único momento em que a poderá recuperar. No entanto, se a perder pode sempre criar uma senha nova ao clicar nas reticências (...) no menu seguinte e selecionar `Gerar palavra-passe:`{.action}
+Queira registar a palavra-passe, apresentada apenas no quadro verde nesse momento, num gestor de palavras-passe. A palavra-passe não poderá ser recuperada posteriormente. No entanto, é sempre possível criar uma nova palavra-passe clicando em `...`{.action} e selecionando `Regenerar uma palavra-passe`{.action}.
 
-![Gerar](images/generatepw.png){.thumbnail}
+![Generate](images/generatepw.png){.thumbnail}
 
-Uma vez criado o seu utilizador, pode usar estas credenciais para iniciar uma sessão na interface Horizon utilizando o botão `Horizon`{.action} na barra lateral esquerda.
+Depois de criar o utilizador OpenStack, poderá utilizar as suas credenciais para se ligar [à interface Horizon](https://docs.ovh.com/pt/public-cloud/horizon/) clicando na ligação `Horizon`{.action} no menu à esquerda.
 
-## Eliminar um utilizador OpenStack
-Pode eliminar um utilizador OpenStack diretamente na Área de Cliente OVH (Cloud → Servidores → Nome do seu projeto Public Cloud). Na secção OpenStack, à direita, irá encontrar o ícone do caixote do lixo:
+### Eliminação do utilizador OpenStack
 
+A eliminação do utilizador OpenStack é efetuada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique em `Users & Roles`{.action} no menu à esquerda em "Project management". 
 
 ![public-cloud](images/delete.png){.thumbnail}
 
-Basta clicar nele e o utilizador será eliminado em apenas alguns segundos.
+Clique em `...`{.action} e selecione `Eliminar`{.action}.
 
-> [!alert]
+> [!warning]
 >
-> Qualquer eliminação de utilizador é permanente e irá invalidar todos os
-> tokens associados, mesmo aqueles com uma data de expiração que ainda não foi excedida.
+> A eliminação de um utilizador é definitiva e invalidará todos os tokens associados, incluindo os que não tenham expirado.
+> 
 
+## Quer saber mais?
 
-## Más información
+[Apresentação do Horizon](https://docs.ovh.com/pt/public-cloud/horizon/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 slug: vrack-pci-ds
-excerpt: 'This guide will show you how to configure private networking between a Public Cloud instance and a Dedicated Server.'
+excerpt: 'Find out how to configure private networking between a Public Cloud instance and a Dedicated Server'
 section: 'Network Management'
 ---
 
@@ -16,11 +16,11 @@ The OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/) allows you to conf
 
 ## Requirements
 
-* an [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
-* a [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
-* a [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-* a private IP address range of your choice
+- An [OVHcloud Public Cloud instance](https://docs.ovh.com/au/en/public-cloud/public-cloud-first-steps/)
+- A [vRack](https://www.ovh.com.au/solutions/vrack/) service activated in your account
+- A [Dedicated Server](https://www.ovhcloud.com/en-au/bare-metal/){.external} compatible with the vRack
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A private IP address range of your choice
 
 
 ## Instructions
@@ -41,7 +41,6 @@ Once the vRack service is delivered to your account, you can now add your projec
 
 Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action}, then on `vRack`{.action}. Select your vRack from the list.
 
-![vrack delivered](images/vrackdelivered.png){.thumbnail}
 
 From the list of eligible services, select the project you want to add to the vRack and then click on the `Add`{.action} button.
 

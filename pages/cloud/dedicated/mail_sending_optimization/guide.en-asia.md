@@ -61,9 +61,7 @@ Once you have modified your domain name’s DNS zone, you will need to allow a m
 
 Once done, add the PTR record (also known as the reverse):
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Bare Metal Cloud`{.action} section, then click on the `IP`{.action} section at the bottom left of the page. 
-
-![Reverse IP](images/ipsection.png)
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, go to the `Bare Metal Cloud`{.action} section, then open `IP`{.action}. 
 
 In the **“Service”** drop-down menu, select a service with an IPv4 address:
 

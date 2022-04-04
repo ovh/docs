@@ -9,7 +9,7 @@ section: Uso avanzado
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 29/03/2021**
+**Última actualización: 28/03/2022**
 
 ## Objetivo
 
@@ -27,6 +27,7 @@ Además de los requisitos y limitaciones indicados más abajo, debe asegurarse d
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la sección ["Despliegue desde el área de cliente"](#viacontrolpanel) de esta guía.
 - Estar conectado a la [API de OVHcloud](https://api.ovh.com/){.external} para la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
 - Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
+- El tamaño de la imagen debe ser inferior al disco o discos instalados en el servidor
 
 > [!warning]
 >

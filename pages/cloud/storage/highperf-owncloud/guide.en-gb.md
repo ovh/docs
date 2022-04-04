@@ -14,6 +14,13 @@ Owncloud is a suite of client-server software for creating and using file hostin
 
 **This guide explains how to set up storage in Owncloud to use a High Performance bucket.**
 
+> [!warning]
+> 
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+> 
+> This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+> 
+
 ## Requirements
 
 - A bucket
@@ -75,4 +82,4 @@ The result should be similar to this:
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Join our community of users on [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

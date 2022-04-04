@@ -1,12 +1,12 @@
 ---
-title: Introducing Horizon 
+title: Introducing Horizon
 excerpt: Discover the main sections of the Horizon interface
 slug: horizon
 section: Horizon
-order: 1
+order: 01
 ---
 
-**Last updated 5th November 2021**
+**Last updated 16th March 2022**
 
 ## Objective
 
@@ -17,9 +17,15 @@ The Horizon interface, natively offered with OpenStack, has been adapted by OVHc
 ## Requirements
 
 - A [Public Cloud project](https://docs.ovh.com/ca/en/public-cloud/create_a_public_cloud_project/) in your OVHcloud account
-- [Configuring user access to Horizon](../configure_user_access_to_horizon/)
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/) created in your project
 
 ## Instructions
+
+### Logging in to OpenStack Horizon
+
+Open the [Horizon login page](https://horizon.cloud.ovh.net/auth/login/) and enter the [OpenStack user credentials](../creation-and-deletion-of-openstack-user/) previously created, then click on `Connect`{.action}.
+
+You can also click on `Horizon`{.action} in the left-hand menu under "Management Interfaces" after opening your `Public Cloud`{.action} project in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 ### Data centre region selection
 

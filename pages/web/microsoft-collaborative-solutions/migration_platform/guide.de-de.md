@@ -38,9 +38,9 @@ Sie möchten Ihre E-Mail-Adressen von einer Exchange- oder E-Mail Pro-Plattform 
 
 ### Die Zielplattform konfigurieren
 
-Wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/) Plattform hinzu . Wenn Sie auf eine MX Plan Plattform migrieren, da der zugehörige Domainname "fest"ist, können Sie direkt zum nächsten [Schritt übergehen](#accountsmigration).
+Wenn Sie Ihr neues E-Mail-Angebot bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro](https://docs.ovh.com/de/emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen) oder [Exchange](https://docs.ovh.com/de/microsoft-collaborative-solutions/domain-zu-exchange-hinzufugen/) Plattform hinzu. Wenn Sie auf eine MX Plan Plattform migrieren, können Sie direkt zum [nächsten Schritt übergehen](#accountsmigration).
 
-> Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Konfigurieren Sie Ihre Domain **als nicht-autoritativ**. Vergewissern Sie sich, dass der Eintrag `OK` in der Spalte `Status` vorhanden ist.
+> Wählen Sie den Tab `Assoziierte Domains`{.action} auf Ihrer Plattform aus und klicken Sie dann auf `Eine Domain hinzufügen`{.action}. Konfigurieren Sie Ihre Domain als **nicht-autoritativ**. Vergewissern Sie sich, dass der Eintrag `OK` in der Spalte `Status` vorhanden ist.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
@@ -107,7 +107,7 @@ Um ihn zu löschen, gehen Sie zum Tab `E-Mail-Accounts`{.action} Ihrer Quell-Pla
 
 Ihre E-Mail-Adressen sollten bereits migriert und funktionsfähig sein. Aus Sicherheitsgründen bitten wir Sie, die korrekte Konfiguration Ihrer Domain in Ihrem Kundencenter zu überprüfen.
 
-Wählen Sie hierzu im linken Menü den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte `Diagnose` sehen, ob die DNS-Konfiguration korrekt ist: Eine rote Meldung erscheint, wenn die Konfiguration geändert werden muss.
+Wählen Sie hierzu den betreffenden E-Mail Pro oder Exchange Dienst aus und gehen Sie dann auf den Tab `Assoziierte Domains`{.action}. In der angezeigten Tabelle können Sie in der Spalte `Diagnose` sehen, ob die DNS-Konfiguration korrekt ist: Eine rote Meldung erscheint, wenn die Konfiguration geändert werden muss.
 
 > [!primary]
 >

@@ -3,9 +3,10 @@ title: Création, lancement et suppression d’images dans Horizon
 slug: creation-lancement-et-suppression-dimages-dans-horizon
 legacy_guide_number: 1784
 section: Gestion depuis Horizon
-order: 13
+order: 09
 ---
 
+**Dernière mise à jour le 30/12/2021**
 
 ## Preambule
 L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon. Cela peut vous permettre par exemple d'importer les images de vos anciennes machines virtuelles vers le Public Cloud, à condition que leur format soit compatible.

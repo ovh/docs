@@ -6,7 +6,7 @@ section: 'SSH e chave SSH'
 order: 3
 ---
 
-**Última atualização: 15 de abril de 2020**
+**Última atualização: 15/04/2020**
 
 ## Sumário
 

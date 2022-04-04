@@ -5,7 +5,7 @@ excerpt: Find out how to use the OVHcloud rescue mode for troubleshooting
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 8th January 2021**
+**Last updated 11th Febuary 2022**
 
 ## Objective
 
@@ -43,7 +43,7 @@ Performing checks in rescue mode helps to determine whether an issue is software
 
 ### Activating rescue mode
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}.
 
 #### With a current VPS range
 
@@ -72,6 +72,7 @@ After you have initiated the reboot, a progress bar will show how the task is pr
 
 You can now connect via SSH to your VPS using the dedicated rescue mode credentials. Once you have completed your actions in rescue mode, reboot the VPS again in 'normal' mode from the OVHcloud Control Panel.
 
+![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
 ## Go further
 

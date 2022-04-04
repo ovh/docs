@@ -5,7 +5,7 @@ excerpt: 'Find out how to export an OVHcloud website'
 section: 'Getting started'
 ---
 
-**Last updated 18th February 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -31,7 +31,7 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -61,20 +61,16 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 To retrieve a backup of your database, please read our guide on
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/){.external}.
 
-If you are using a **Private SQL** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
-You can also download, import and restore backups in this section.
+If you are using a **CloudDB** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
+You can also download, import and restore backups in this section. Please read our guide [Backing up and exporting a database of your database server](https://docs.ovh.com/gb/en/hosting/backup-export-database-server/)
 
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click `Hosting`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click on the `More`{.action} tab, then `Statistics and logs`{.action}.
+Click `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Then click on the link under **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 A window will appear with the different types of logs you can access. They are classed by month:
 
@@ -106,6 +102,6 @@ When you have selected the log types and month you want to view, the logs are ar
 
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
 
-[Private SQL](../getting-started-with-private-sql/)
+[Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

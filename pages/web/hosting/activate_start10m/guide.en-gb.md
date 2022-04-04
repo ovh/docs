@@ -24,9 +24,9 @@ With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.exter
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Domain names`{.action} (**1**) in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Domain names`{.action}, then choose the domain name concerned.
 
-In the **General information** box (**2**), you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}(**3**).
+In the **General information** box , you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 

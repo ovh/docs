@@ -46,7 +46,7 @@ What is Keycloak?
 
 ![Keycloak](images/keycloak.png)
 
-__[Keycloak](https://www.keycloak.org/about)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
+__[Keycloak](https://www.keycloak.org/)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
 It makes it easy to secure applications and services with little to no code.  
 More information can be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
 
@@ -246,7 +246,7 @@ Address: 135.125.84.194
 >
 > This `PersistentVolume` will be provided through the Cinder storage class which is the default storage class used by Managed Kubernetes Service at OVHcloud *(this volume will be billed)*.  
 >
-> For more information, please refer to the following documentation: [Setting-up a Persistent Volume OVHcloud Managed Kubernetes](https://docs.ovh.com/sg/en/kubernetes/setting-up-a-persistent-volume/#persistent-volumes-pv-and-persistent-volume-claims-pvc)
+> For more information, please refer to the following documentation: [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](https://docs.ovh.com/sg/en/kubernetes/setting-up-a-persistent-volume/#persistent-volumes-pv-and-persistent-volume-claims-pvc)
 
 ### Keycloak installation
 

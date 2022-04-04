@@ -5,7 +5,7 @@ excerpt: Find here the IP addresses to fill in when setting up a firewall so tha
 section: Network Management
 ---
 
-**Last updated 17th august 2021**
+**Last updated 17th August 2021**
 
 ## Objective
 
@@ -19,12 +19,12 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ## Requirements
 
-- An OVHcloud product on which you have installed a Firewall.
-- Have access to the Firewall rules.
+- An OVHcloud service on which you have installed a firewall
+- Access to the firewall rules
 
 ## Instructions
 
-## IP adresses to be authorized
+### IP addresses to be authorised
 
 |Reverse|IP|Protocol|
 |---|---|---|
@@ -63,21 +63,21 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ### Enabling or disabling monitoring
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and select the `Bare Metal Cloud`{.action} tab. In the left-hand menu, select the server concerned in the `Dedicated servers`{.action} drop-down menu.
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} drop-down menu.
 
 In the `General information`{.action} tab, then the **Service status** box, click on the `...`{.action} button next to “Monitoring”. Then click `Enable`{.action} or `Disable`{.action}. Click `Confirm`{.action} in the window that appears to confirm the changes.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Enabling monitoring for specific services
 
 In addition to standard monitoring, you can authorise OVHcloud to monitor specific services such as HTTP, SSH and other protocols.
 
- To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
+To do this, in the `General information`{.action} tab, then in the **Service status** box, click the `...`{.action} button next to "Monitored services". Click `Monitor my services`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
- You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
+You will be redirected to the screen below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
 

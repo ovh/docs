@@ -1,37 +1,42 @@
 ---
 title: 'Configurer des clés SSH supplémentaires'
 slug: configurer-des-cles-ssh-supplementaires
-excerpt: 'Apprenez à configurer des clés SSH supplémentaires sur votre instance'
-legacy_guide_number: 1924
+excerpt: 'Découvrez comment configurer des clés SSH supplémentaires pour votre instance Public Cloud'
 section: 'Tutoriels'
+order: 01
 ---
 
-**Dernière mise à jour le 9 mai 2019**
+**Dernière mise à jour le 04/02/2022**
 
 ## Objectif
  
-Lors de la création d’une instance, il n’est pas possible de configurer une seule clé SSH. Vous pouvez cependant autoriser l’accès à d’autres utilisateurs disposant de clés SSH pour votre instance en configurant le fichier « authorized_keys ».
+Lors de la création d’une instance, une seule clé SSH peut être configurée pour la connexion initiale. Afin de permettre l'accès de votre instance à d'autres utilisateurs, des clés supplémentaires peuvent être ajoutées en configurant le fichier *authorized_keys*.
 
-**Ce guide vous explique comment configurer des clés SSH supplémentaires sur votre instance afin d'en donner l’accès à d’autres personnes.**
+**Ce guide vous explique comment configurer des clés SSH supplémentaires pour les connexions à votre instance.**
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-* Posséder une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} dans votre compte OVH.
-* Avoir accès en ligne de commande à votre instance via SSH. 
+- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
-## Instructions
+## En pratique
 
-### Créer la clé SSH
+> [!primary]
+>
+Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est pas pris en charge actuellement.
+>
 
-Suivez d’abord notre guide « [Créer votre première clé SSH](../creation-des-cles-ssh/){.external} ».
+### Création de la clé SSH
 
-### Configurer un nouvel utilisateur
+Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes avec Public Cloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/).
 
-Connectez-vous d'abord à votre instance via SSH et utilisez la commande suivante pour créer un nouvel utilisateur :
+### Configuration du nouvel utilisateur
 
-```
-admin@server-1:~$ sudo adduser user2
+[Connectez-vous à votre instance en SSH](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
+
+```bash
+~$ sudo adduser user2
 
 Adding user `user2' ...
 Adding new group `user2' (1001) ...
@@ -52,42 +57,37 @@ Other []:
 Is the information correct? [Y/n] Y
 ```
 
-Ensuite, enregistrez une nouvelle clé publique SSH dans le dossier personnel du nouvel utilisateur grâce à la commande ci-dessous :
+Ouvrez le fichier *authorized_keys* dans le dossier personnel du nouvel utilisateur avec un éditeur de texte :
 
-```
-admin@server-1:~$ sudo vim /home/user2/.ssh/authorized_keys
-```
-
-Si le fichier « .ssh » n'existe pas encore, vous pouvez le créer avec la commande suivante :
-
-```
-admin@serveur-1:~$ sudo mkdir /home/user2/.ssh/
+```bash
+~$ sudo nano /home/user2/.ssh/authorized_keys
 ```
 
-Vous pouvez désormais vous connecter avec cet utilisateur à l'aide de la clé privée liée à celle que vous avez configurée.
+Ajoutez dans le fichier la clé publique créée à la première étape. Enregistrez et fermez l'éditeur.
 
-```
-root@server:~$ ssh user2@149.xxx.xxx.22
+Si le dossier .ssh n'existe pas encore, vous pouvez le créer avec cette commande :
 
-Linux server-1 3.2.0-4-amd64 #1 SMP Debian 3.2.68-1+deb7u1 x86_64
-Last login: Fri Oct 16 08:14:24 2015 from proxy-109-190-254-35.ovh.net
-
-user2@server-1:~$
+```bash
+~$ sudo mkdir /home/user2/.ssh/
 ```
 
+Vous pouvez configurer plusieurs clés SSH en les ajoutant aux fichiers *authorized_keys* des dossiers utilisateur correspondants.
 
-Vous pouvez configurer d’autres clés SSH pour l’utilisateur administrateur en ajoutant celles-ci dans le fichier « authorized_keys » correspondant avec cette commande :
+Désormais, vous pouvez vous connecter avec l'utilisateur et la clé privée configurés précédemment :
 
+```bash
+~$ ssh user2@instance_IP
 ```
-admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
-```
+```console
+Linux b2-7-de1 5.10.0-10-cloud-amd64 #1 SMP Debian 5.10.84-1 (2021-12-08) x86_64
 
+user2@server:~$
+```
 
 ## Aller plus loin
 
-[Créer des clés SSH](../creation-des-cles-ssh/){.external}
+[Créer une première instance Public Cloud et s’y connecter](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/)
 
-[Remplacement de votre paire de clés SSH perdue](../changer-sa-cle-ssh-en-cas-de-perte/){.external}
-
+[Changer sa clé SSH en cas de perte](https://docs.ovh.com/ca/fr/public-cloud/changer-sa-cle-ssh-en-cas-de-perte/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

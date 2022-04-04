@@ -1,130 +1,143 @@
 ---
-title: 'Die ersten Schritte mit Ihrer Public Cloud Instanz'
-excerpt: 'Erfahren Sie hier, wie Sie mit einer Public Cloud Instanz starten'
+title: Public Cloud Instanzen verwalten
+excerpt: Erfahren Sie hier, wie Sie Ihre Public Cloud Instanzen im OVHcloud Kundencenter verwalten
 slug: die_ersten_schritte_mit_ihrer_public_cloud_instanz
 section: 'Erste Schritte'
-legacy_guide_number: g2018
+order: 05
 ---
 
-**Letzte Aktualisierung am 04.12.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 22.03.2022**
 
 ## Ziel
 
-Sie können die OVHcloud Public Cloud einfach über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Dort finden Sie Ihre gesamte Infrastruktur (Instanzen, Backups, Festplatten, SSH-Schlüssel usw.) und Storage-Projekte (einschließlich der Liste Ihrer Container).
+Sie können Ihre Public Cloud Instanzen in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten.
 
-**Diese Anleitung erläutert die Grundlagen der Verwaltung von Public Cloud Instanzen.**
+**In dieser Anleitung werden die im OVHcloud Kundencenter für eine Public Cloud Instanz verfügbaren Aktionen beschrieben.**
 
 ## Voraussetzungen
 
+- Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](../public-cloud-erste-schritte/) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben im OVHcloud Kundencenter einen [SSH-Schlüssel hinzugefügt](https://docs.ovh.com/de/public-cloud/create-ssh-keys/).
 
 ## In der praktischen Anwendung
 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
-### Zugriff auf die Verwaltungsschnittstelle der Instanz
+### Das Instanzen-Verwaltungsinterface verwenden
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
-
-Auf dieser Seite sehen Sie eine Zusammenfassung aller Ihrer Instanzen. Hier werden verschiedene Informationen angezeigt:
-
-- das Modell Ihrer Instanz
-- Name und Standort
-- zugehörige Festplatten
-- IP-Adresse der Instanz
-- Status der Instanz
+Klicken Sie im linken Menü auf `Instances`{.action}. 
 
 ![public-cloud](images/compute.png){.thumbnail}
 
-### Die Konfiguration einer Instanz bearbeiten
+Diese Seite zeigt alle Ihre Public Cloud Instanzen und einige ihrer Eigenschaften an:
 
-Klicken Sie in der Verwaltungsschnittstelle für die Instanz auf die 3 Punkte rechts neben der Instanz und wählen Sie `Bearbeiten`{.action}.
+- Die ID der Instanz (erforderlich für bestimmte API-Aufrufe)
+- Standort des Rechenzentrums, d.h. Region der Instanz
+- Der Instanz-Typ
+- Das Image, d.h. das auf der Instanz installierte Betriebssystem
+- IPv4-Adresse der Instanz
+- Zusätzliche Volumes (Disks), die derzeit mit der Instanz verbunden sind
+- Instanz-Status, der anzeigt, ob sich die Instanz im Zustand `Aktiviert` befindet
 
-![public-cloud](images/edit.png){.thumbnail}
+### Verwaltungsoptionen im Instanz-Dashboard
 
-In dem Fenster, das sich öffnet, haben Sie folgende Möglichkeiten:
+Klicken Sie auf der Instanzverwaltungsseite auf den Namen der gewünschten Instanz.
 
-- die Instanz umbenennen
-- das Instanzmodell ändern 
-- die Instanz mit einem anderen Betriebssystem neu installieren (**bitte beachten Sie, dass in diesem Fall die Daten, die aktuell auf der Instanz gespeichert sind, gelöscht werden**)
-- von der stündlichen Abrechnung zu einem festen monatlichen Tarif wechseln (Rechnungen werden dann anteilig erstellt, ausgehend von dem Tag des Monats, an dem Sie wechseln).
+Wählen Sie die gewünschte Option im linken Menü "Verwaltung".
 
-![public-cloud](images/edit1.png){.thumbnail}
-![public-cloud](images/edit2.png){.thumbnail}
-![public-cloud](images/edit3.png){.thumbnail}
+![public-cloud](images/management.png){.thumbnail}
 
-### Ein Backup einer Instanz erstellen
+Diese Aktionen sind auch auf der Instanzverwaltungsseite verfügbar, wenn Sie auf den Button `...`{.action} in der Tabelle klicken.
 
-Sie können auf ihrer Administrationsseite ein Backup einer Instanz erstellen. Hierzu klicken Sie auf die 3 Punkte rechts neben der Instanz und wählen `Backup erstellen`{.action}. Anschließend sehen Sie diese Seite mit allen notwendigen Informationen: ![public-cloud](images/backup.png){.thumbnail} .
+#### Konfiguration einer Instanz bearbeiten
 
-Danach werden die folgenden Informationen angezeigt: ![public-cloud](images/backup1.png){.thumbnail}
+Klicken Sie auf `Bearbeiten`{.action}.
 
-Nach Ihrer Bestätigung werden die folgenden Informationen angezeigt: ![public-cloud](images/backup2.png){.thumbnail}
+Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von Instanzen](../public-cloud-erste-schritte/), in der Sie die folgenden Elemente bearbeiten können.
 
-Sobald das Backup abgeschlossen ist, wird es im Abschnitt `Instance Backup`{.action} angezeigt: ![public-cloud](images/backup3.png){.thumbnail}
+- **Instanz-Name ändern**: Sie können der Instanz einen Namen geben, um die Identifikation zu vereinfachen.
+- **Image ändern**: Sie können ein anderes Betriebssystem für die Instanz auswählen. (Beachten Sie, dass bei der Reinstallation einer Instanz alle darauf liegenden Daten gelöscht werden.)
+- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](../public-cloud-erste-schritte/#schritt-3-instanz-erstellen).
+- **Abrechnungszeitraum ändern**: Sie können die Abrechnungsart der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](../abrechnungsart-aendern-public-cloud/).
 
-Sie können in unserer Anleitung [Backup einer Instanz erstellen](https://docs.ovh.com/de/public-cloud/ein_backup_einer_instanz_erstellen) nachlesen, wenn Sie Hilfe benötigen. 
+#### Backup einer Instanz erstellen
 
-### Ein automatisches Backup einer Instanz erstellen
+Klicken Sie auf `Backup erstellen`{.action}.
 
-Sie können auf Ihrer Administrationsseite ein automatisches Backup einer Instanz planen. Hierzu klicken Sie auf die 3 Punkte rechts daneben und wählen `Automatisches Backup erstellen`{.action}: ![public-cloud](images/backupauto.png){.thumbnail}
+Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)". 
 
-Danach wird die folgende Seite angezeigt: ![public-cloud](images/backupauto1.png){.thumbnail}
+#### Ein automatisches Backup einer Instanz erstellen
 
-Sobald Sie die erforderlichen Informationen ausgewählt und auf `Erstellen`{.action} geklickt haben, werden Sie auf die folgende Seite weitergeleitet: ![public-cloud](images/backupauto2.png){.thumbnail}
+Klicken Sie auf `Automatisches Backup erstellen`{.action}.
 
-Sie können jederzeit zum `Workflow Management`{.action} wechseln, um den aktuellen automatischen Backup-Prozess zu löschen: ![public-cloud](images/backupautodelete.png){.thumbnail}
+Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/#automatisches-backup-einer-instanz-erstellen)".
 
-Sie können in unserer Anleitung [Backup einer Instanz erstellen](https://docs.ovh.com/de/public-cloud/ein_backup_einer_instanz_erstellen) nachlesen, wenn Sie Hilfe benötigen. 
+#### Instanz anhalten (*suspend*)
 
-### Ihre Login-Informationen abrufen
+Klicken Sie auf `Anhalten`{.action}.
 
-Klicken Sie im Interface für die Instanzen auf `...`{.action} und `Instanz-Details `{.action} und überprüfen Sie die `Login-Informationen`{.action} unter „Netzwerke“. Dort können Sie die SSH-Befehle abrufen, die Sie zum Aufbauen einer Verbindung mit Ihrer Instanz benötigen.
+Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#anhalten-einer-instanz-suspend_1).
 
-![public-cloud](images/instancedetails1.png){.thumbnail}
-![public-cloud](images/instancedetails.png){.thumbnail}
+Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
+
+#### Rescue-Modus verwenden
+
+Klicken Sie auf `Neustart im Rescue-Modus`{.action}.
+
+Dies aktiviert den Rescue-Modus der Instanz. Um detaillierte Informationen zu erhalten, lesen Sie unsere Anleitung zum [Rescue-Modus](../umstellung_einer_instanz_auf_den_rescue-modus/).
+
+#### Instanz neu starten
+
+- Klicken Sie auf `Soft Reboot durchführen`{.action} um einen Neustart auf Software-Ebene durchzuführen.
+- Klicken Sie auf `Hard Reboot durchführen`{.action} um einen Neustart auf Hardware-Ebene durchzuführen.
+
+Bestätigen Sie die Anfrage zum Neustart im angezeigten Fenster.
+
+#### Instanz aussetzen (*shelve*)
+
+Klicken Sie auf `Aussetzen`{.action}.
+
+Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Genauere Informationen zu den Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](../aussetzen_oder_pausieren_einer_instanz/#aussetzen-einer-instanz-shelve)".
+
+Klicken Sie auf `Reaktivieren`{.action}, um den Status `Aktiviert` der Instanz wiederherzustellen.
+
+#### Instanz neu installieren
+
+Klicken Sie auf `Neu installieren`{.action}.
+
+Mit dieser Aktion wird die Instanz mit demselben Betriebssystem neu installiert, sofern das Image weiterhin unterstützt wird.
+
+Bitte beachten Sie, dass bei einer Reinstallation alle derzeit **auf Ihrer Instanz gespeicherten Daten gelöscht** werden.
+
+#### Instanz löschen
+
+Klicken Sie auf `Löschen`{.action}.
+
+Die Instanz und alle zugehörigen Daten werden damit endgültig entfernt.
+
+Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
 ### Auf die VNC-Konsole zugreifen
 
-Über die VNC-Konsole können Sie direkt auf Ihre Instanz zugreifen. Beachten Sie jedoch, dass Sie ein Passwort für den Root-Benutzer konfiguriert haben müssen.
+Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
 
-Um auf diese Konsole zuzugreifen, klicken Sie im Instanz-Dashboard auf `VNC-Konsole`{.action}.
-
-![public-cloud](images/vnc.png){.thumbnail}
-
-Die Konsole ist dann verfügbar:
+Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 ![public-cloud](images/vnc1.png){.thumbnail}
 
-### Eine Instanz neu starten
+Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Es gibt zwei Möglichkeiten, um eine Instanz neu zu starten:
-
-- Hot Reboot (Software)
-- Cold Reboot (Hardware)
-
-Klicken Sie in der Verwaltungsschnittstelle für die Instanz auf die 3 Punkte rechts neben der Instanz und wählen Sie entweder `Hot Reboot durchführen`{.action} oder `Cold Reboot durchführen`{.action}.
-
-Bestätigen Sie dann Ihre Anfrage in dem Fenster, das sich öffnet.
-
-![public-cloud](images/reboot.png){.thumbnail}
-
-### Eine Instanz neu installieren
-
-Sie können eine Instanz neu installieren und das Betriebssystem beibehalten. **Bitte beachten Sie, dass bei einer Neuinstallation alle Daten, die derzeit auf Ihrer Instanz gespeichert sind, gelöscht werden.**
-Klicken Sie in der Instanzenverwaltung auf die 3 Punkte rechts neben der Instanz und wählen Sie `Neu installieren`{.action}. Klicken Sie dann auf `Bestätigen`{.action}, um den Vorgang zu starten.
-
-![public-cloud](images/reinstall.png){.thumbnail}
-
-### Eine Instanz löschen
-
-Sie können eine Instanz auch löschen. **Dadurch werden die Instanz sowie alle darauf gespeicherten Daten dauerhaft gelöscht.**
-
-Klicken Sie in der Instanzenverwaltung auf auf `...`{.action} und wählen Sie `Löschen`{.action}. Klicken Sie dann auf `Bestätigen`{.action}, um den Vorgang zu starten. 
-
-![public-cloud](images/delete.png){.thumbnail}
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](../public-cloud-erste-schritte/#connect-to-instance)".
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.
+[Erste Public Cloud Instanz erstellen und auf dieser einloggen](../public-cloud-erste-schritte/)
+
+[Einführung in Horizon](../horizon/)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

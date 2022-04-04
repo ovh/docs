@@ -47,10 +47,9 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 > [!primary]
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
-> 
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action}
->  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
-> 
+>
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+>
 
 | | |
 |---|---|
@@ -92,10 +91,9 @@ A janela está dividida em duas partes, **Correio de entrada** e **Correio de sa
 > [!primary]
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
-> 
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na rubrica `Web Cloud`{.action} e depois `E-mail Pro`{.action}
->  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
-> 
+>
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+>
 
 ![Outlook](images/config-outlook-emailpro07.png){.thumbnail}
 

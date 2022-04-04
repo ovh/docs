@@ -6,10 +6,6 @@ section: Enterprise File Storage
 order: 4
 ---
 
-> [!warning]
-> Enterprise File Storage is a beta product. During this phase, the service is not available to customers outside Europe.
->
-
 **Last updated 27th October 2021**
 
 ## Objective
@@ -21,7 +17,7 @@ In this tutorial, we will provide an overview of how to manage ACLs for OVHcloud
 ## Requirements
 
 - An OVHcloud Enterprise File Storage volume
-- You should be logged in to the [OVHcloud API](https://api.ovh.com)
+- You should be logged in to the [OVHcloud API](https://ca.api.ovh.com)
 
 ## Basics
 
@@ -36,7 +32,7 @@ Using ACLs, you can allow an IP or range of IP addresses (CIDR notation) to acce
 
 ## Instructions
 
-All API routes used for this tutorial are available under the */storage* section here: <https://api.ovh.com/console/#/storage>.
+All API routes used for this tutorial are available under the */storage* section here: <https://ca.api.ovh.com/console/#/storage>.
 
 > [!primary]
 >

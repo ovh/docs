@@ -46,7 +46,7 @@ root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+
 ```
 
-De seguida, execute o comando abaixo para decifrar o volume a partir da sua instância:
+De seguida, execute o comando abaixo para desmontar o volume a partir da instância:
 
 
 ```sh

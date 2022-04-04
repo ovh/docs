@@ -47,7 +47,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
 
-e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+e seleziona il tuo servizio nella sezione `Email`{.action}.
 
 Per visualizzare la lista degli account email della tua offerta MXplan, clicca sulla scheda `Email`{.action}.
 

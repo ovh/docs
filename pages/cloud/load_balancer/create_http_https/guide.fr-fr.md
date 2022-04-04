@@ -37,7 +37,6 @@ Pour rappel, le service OVHcloud Load Balancer est composé de 4 parties éléme
 
 Avant de vous lancer, si vous ne l'avez pas encore lue, nous vous conseillons de consulter la présentation générale du service OVHcloud Load Balancer: [Présentation de l'OVHcloud Load Balancer](../iplb-presentation/).
 
-
 > [!warning]
 >
 > L'ordre de création des éléments est important. En particulier, les fermes de serveurs doivent être configurées avant de pouvoir leur attacher un certificat SSL/TLS ou des serveurs. De même, les frontends doivent être configurés après les fermes de serveurs afin de pouvoir configurer la ferme par défaut du frontend.
@@ -170,6 +169,7 @@ Votre serveur devrait apparaître dans la liste des serveurs, dans l'onglet `Fer
 >
 > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
+
 
 ### Ajouter un frontend
 

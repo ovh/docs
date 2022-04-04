@@ -5,7 +5,7 @@ section: 'Virtual machine management'
 excerpt: 'This guide will show you how to to implement a bypass solution, using the VMware DRS mechanism'
 ---
 
-**Last updated 13th November 2018**
+**Last updated 22nd February 2022**
 
 ## Objective
 
@@ -19,13 +19,13 @@ This problem will not occur if the virtual machine and the backup proxy are loca
 
 ## Requirements
 
-- a [Private Cloud](https://www.ovh.ie/private-cloud/){.external} solution
-- the [Veeam Managed Backup](https://www.ovh.ie/private-cloud/options/veeam.xml){.external} option enabled
-- access to the vSphere management interface
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie))
+- [Veeam Managed Backup](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external} option enabled
 
 ## Instructions
 
-### Limitations of this solution.
+### Limitations of this solution
 
 Please note the following before you begin this process:
 
@@ -33,28 +33,24 @@ Please note the following before you begin this process:
 - The user must manually add the new VMs into the DRS rules.
 - Any VMs that need to be backed up, but are not part of the DRS rules, may still experience freezes.
 
-### Implementing the solution.
+### Implementing the solution
 
-To implement this solution, right-click on the relevant cluster, then modify the settings.
+To implement this solution, click on the relevant cluster, then go to the `Configure`{.action} tab and the `VM/Host Rules`{.action} section
 
-Create a DRS rule to **"Keep virtual machines together"** and add VMs with a backup proxy. If you have a large number of VMs to backup, you can create multiple DRS rules, and link them with multiple backup proxies. The OVH algorithm will ensure that the virtual machine backup process is performed by whichever backup proxy is present on the same ESXi host as the VM.
+![vSphere](images/en01add.png){.thumbnail}
+
+Add a rule to **"Keep virtual machines together"** and add VMs with a backup proxy. If you have a large number of VMs to backup, you can create multiple DRS rules, and link them with multiple backup proxies. The OVHcloud algorithm will ensure that the virtual machine backup process is performed by whichever backup proxy is present on the same ESXi host as the VM.
 
 > [!warning]
 >
 > Adding a new backup proxy will result in an additional cost.
 >
 
-In the DRS section, you can add a rule as follows:
+![proxy](images/en02proxy.png){.thumbnail}
 
-![](images/image0_7.png){.thumbnail}
+Create another rule to **"Separate virtual machines"**, in order to keep backup proxies on different hosts:
 
-Create another DRS rule to **"Separate virtual machines"**, in order to keep backup proxies on different hosts:
-
-![](images/image0_28.png){.thumbnail}
-
-Create a VM group, enter the group name, and add the host to this rule:
-
-![](images/image1_9.png){.thumbnail}
+![proxy](images/en03proxy2.png){.thumbnail}
 
 Note that you must have an anti-affinity rule, so that backup proxies are never on the same host, and as many affinity rules as you have backup proxies.
 

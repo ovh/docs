@@ -1,53 +1,73 @@
 ---
-title: Verificare una macchina in caso di lentezza
-excerpt: ''
+title: Verificare una macchina in caso di lentezza (EN)
+excerpt: 'Troubleshoot performance issues on a VM'
 slug: verificare_una_macchina_in_caso_di_lentezza
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/check_a_slow_machine/'
 legacy_guide_number: g601
+section: Gestione delle macchine virtuali
 ---
 
+**Last updated on 17th January 2022**
 
-## 
-Ecco i passi da seguire per fare una diagnosi in caso di forti rallentamenti su una VM.
+## Objective
 
-È necessario utilizzare il client vSphere, o accedervi utilizzando il proprio client locale, oppure utilizzando la connessione RDP che ti abbiamo fornito al momento dell'attivazione del tuo Private Cloud.
+Use the vSphere monitoring tools to troubleshoot a slow VM.
 
+**This guide offers a step by step study case to troubleshoot performance issues on a VM.**
 
-## Controllo delle macchine virtuali:
-Inizialmente, si selezionerà la VM problematica, poi andremo alla scheda "Prestazione". Qui troviamo i grafici di riepilogo dell'utilizzo della nostra VM per la CPU, RAM, ecc. Se constatiamo un utilizzo importante in questa finestra, le irregolarità provengono certamente dalla VM.
-In questo caso puoi procedere ad un aumento delle risorse della tua VM,dopo esserti assicurato che non ci siano limitazioni nella sezione "Risorse dei parametri"  della VM (clic destro sulla VM => Modifica impostazioni => Risorse)
+## Requirements
 
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
 
-## Controllo Cluster / Pool delle risorse
-Sul cluster o sul pool di risorse, andiamo sulla scheda "Prestazioni". Questo ti permetterà di vedere i grafici delle prestazioni e di utilizzo delle risorse:
+## Instructions
 
-![](images/img_95.jpg){.thumbnail}
-Nella sezione "Allocazione delle risorse", potrai vedere in cifre il consumo globale delle tue VM sulle risorse disponibili:
+You have three levels of monitoring accessible in vSphere to troubleshoot issues:
 
-![](images/img_96.jpg){.thumbnail}
-Possono esserci due casi:
+- VM
+- Cluster
+- Storage
 
-- Se un host è sovraccarico, è possibile eseguire manualmente la migrazione della tua VM ad un altro host, o una migrazione a caldo con vMotion.
+### VM Monitoring
 
-Se possiedi una licenza Enterprise, puoi utilizzare la funzione DRS, che ti permette di gestire automaticamente questa operazione, secondo l'utilizzo delle risorse dei tuoi hosts.
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your VM and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![VM monitoring](images/en01vm.png){.thumbnail}
 
-- Qualora tutti i tuoi hosts presentino un carico importante, occorrerà aggiungerne grazie alla sezione "Private Cloud OVH", o "Archivio OVH".
+You may also use the `Utilization`{.action} section to help your investigations.
 
+### Cluster monitoring
 
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.<br>
+Navigate to your Cluster and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![cluster mmonitoring](images/en02cluster.png){.thumbnail}
 
-## Controllo degli archivi
-Al di là delle risorse di sistema per le tue macchine virtuali, puoi anche monitorare i tuoi archivi. Quando sei in  "Datastore", seleziona il tuo NAS e poi la sezione "Prestazione":
+You may also use the `Resource Allocation`{.action} and `Utilization`{.action} sections to help your investigations.
 
-![](images/img_97.jpg){.thumbnail}
+> [!primary]
+>
+> Resource Pools can be accessed and monitored in the same way clusters are.
+> 
 
+### Storage monitoring
 
-## Controllo della rete
-Infine, è possibile controllare lo stato della rete.
-Dentro il tuo Manager puoi vedere il flusso utilizzato come le limitazioni che hai predisposto sulla tua VLAN:
+In the vSphere interface menu, go to the `Storage`{.action} dashboard.<br>
+Navigate to your datastore and select it.<br>
+The `Monitor`{.action} tab presents performance `Overview`{.action}.<br>
+You may see real-time metrics or choose to check a timeframe to see performance evolution.<br>
+You may also change the view to dig on more specific subjects.
 
+![storage monitoring](images/en03storage.png){.thumbnail}
 
-- Manager v5 -> Private Cloud -> Sommario/Accoglienza
+## Go further
 
-
-
+Join our community of users on <https://community.ovh.com/en/>.

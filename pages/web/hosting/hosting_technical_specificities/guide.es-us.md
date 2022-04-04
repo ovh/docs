@@ -6,7 +6,11 @@ legacy_guide_number: g1463
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 14/05/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 22/02/2022**
 
 ## Objetivo
 
@@ -36,19 +40,11 @@ section: 'Configuración del alojamiento'
 
 ### Conexiones simultáneas a la base de datos
 
-- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos (200 con la base de datos privada incluida). Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
-
-- También puede contratar bases de datos **SQL Privado** adicionales, que tienen opciones de personalización:
-
-    - *max_connections*: 100 por defecto, con posibilidad de pasar a 200
-
-    - *max_user_connections*: 50 por defecto, con posibilidad de pasar a 200
-
-Para saber más, consulte los detalles de nuestros [Planes de hosting](https://www.ovhcloud.com/es/web-hosting/) y [nuestra guía](../primeros-pasos-con-sql-privado/).
+- En los planes de hosting (bases de datos compartidas), existe un límite de 30 conexiones simultáneas por base de datos. Consulte los [detalles de nuestros planes de hosting](https://www.ovhcloud.com/es/web-hosting/) para comprobar las opciones disponibles en cada plan de alojamiento web.
 
 #### Conexiones desde un servidor externo
 
-- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud, ya sean bases de datos SQL compartidas o privadas. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
+- Por razones de seguridad, no es posible conectarse desde un servidor externo a la base de datos de un plan de hosting OVHcloud. Solo los servidores OVHcloud Web Hosting pueden conectarse a los servidores de base de datos. Cualquier otra conexión generará el siguiente error:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -117,7 +113,7 @@ Consulte las páginas de información respectiva para verificar las librerías d
 
 Puede consultar información detallada de su cluster en este enlace: <https://webhosting-infos.hosting.ovh.net>
 
-Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
+Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
 
 Para conocer las particularidades técnicas del hosting Cloud Web, diríjase directamente al enlace <https://cloudweb-infos.hosting.ovh.net/>.
 

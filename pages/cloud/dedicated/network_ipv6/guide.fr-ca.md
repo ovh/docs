@@ -5,7 +5,7 @@ excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 01/12/2021**
+**Dernière mise à jour le 15/03/2022**
 
 ## Objectif
 
@@ -43,6 +43,11 @@ Si vous souhaitez configurer configurer plusieurs adresses IPv6 sur votre serveu
 > Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](https://docs.ovh.com/ca/fr/api/api-premiers-pas/). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
 >
 
+> [!warning]
+> À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPV6 (/128). Dans ce cas, référez-vous à ce [guide](https://docs.ovh.com/ca/fr/vps/configurer-ipv6/) pour la configuration de l’ipv6 sur un serveur Kimsufi.
+>
+>
+
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
@@ -64,7 +69,7 @@ Si vous souhaitez configurer configurer plusieurs adresses IPv6 sur votre serveu
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -119,7 +124,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
@@ -170,7 +175,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -216,7 +221,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -273,7 +278,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Étape 1 : Utiliser RDP pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 
 #### Étape 2 : Ouvrir la configuration réseau de votre serveur
@@ -311,4 +316,4 @@ Si vous rencontrez toujours des problèmes après avoir testé votre connexion, 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

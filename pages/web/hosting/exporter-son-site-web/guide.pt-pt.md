@@ -6,7 +6,7 @@ section: Introdução
 order: 2
 ---
 
-**Última atualização: 14/01/2020**
+**Última atualização: 03/02/2022**
 
 ## Sumário
 
@@ -32,7 +32,7 @@ Para se ligar ao seu espaço de armazenamento, deve dispor dos seguintes element
 - o endereço do servidor;
 - a porta de ligação ao servidor.
 
-Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra de serviços à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. 
+Estes elementos foram-lhe enviados no e-mail enviado após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -62,20 +62,16 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 Para recuperar um backup da sua base de dados, consulte o nosso guia:
 ["Recuperar o backup da base de dados de um alojamento web"](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/){.external}.
 
-Se utiliza uma base de dados **SQL privado** para o seu website, consulte a secção dedicada ao backup no nosso guia:
-["Tudo sobre o SQL privado"](../sql-privado-primeira-utilizacao/).
+Se utiliza uma base de dados **CloudDB** para o seu website, consulte a secção dedicada ao backup no nosso guia:
+[Backup e exportação de uma base de dados no servidor de bases de dados](https://docs.ovh.com/pt/hosting/backup-exportacao-base-de-dados/).
 
 ### Etapa 3: recuperar os logs do seu alojamento OVHcloud
 
 Se deseja guardar o histórico dos logs do seu website, pode aceder aos logs no seu alojamento.
 
-Depois, clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique no separador `Mais +`{.action} e em `Estatísticas e logs`{.action}.
+Depois, clique em `Alojamentos`{.action} e selecione o plano correspondente. Clique no separador `Estatísticas e logs`{.action}. A seguir, clique na ligação sob a menção `Ver logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-A seguir, clique na ligação debaixo da menção **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Aparece uma janela com os diferentes tipos de logs disponíveis.  Estão classificados por mês:
 
@@ -107,6 +103,6 @@ Quando seleciona o tipo de logs para o mês que mais lhe interessa, estes são a
 
 [Recuperar o backup da base de dados de um alojamento web](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/)
 
-[SQL privado](../sql-privado-primeira-utilizacao/)
+[CloudDB - primeira utilização](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

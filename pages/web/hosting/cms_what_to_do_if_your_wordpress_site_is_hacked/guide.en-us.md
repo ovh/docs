@@ -42,7 +42,7 @@ In the rest of this guide we will explain how to locate the intrusion, and then 
 Before restoring your website, it is important to check when your web files (FTP) were last modified, in order to find and fix security flaws.
 It is not possible to undertake a detailed procedure to locate the exact source of the intrusion, but usually a hacker will have exploited a flaw in the script in order to make an HTTP request. 
 
-All the HTTP requests are available in your server logs (https://logs.ovh.net/your_domain).
+All the HTTP requests are available in your server logs (https://logs.cluster0XX.hosting.ovh.net/your_domain).
 Replace "your_domain" with your domain name and the extension. ex: "ovh.com".
 
 - 1 Locate the date and time contained in the email you received*

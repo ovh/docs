@@ -1,94 +1,239 @@
 ---
-title: 'Passwort einer Webhosting-Datenbank ändern'
+title: Passwort einer Webhosting-Datenbank ändern
 slug: datenbank-passwort-aendern
-excerpt: 'So ändern Sie das Passwort einer Datenbank, die im Rahmen eines Webhosting Angebots erstellt wurde.'
-section: 'Datenbanken'
+excerpt: Erfahren Sie hier, wie Sie Passwörter von zu Webhostings gehörigen Datenbanken ändern
+section: Datenbanken
 order: 2
 ---
 
-**Stand 26.06.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 26.01.2022**
 
-In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werden heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet und sind über ein zugehöriges Passwort erreichbar.
+## Ziel
 
-**Hier erfahren Sie, wie Sie das Passwort einer Datenbank ändern, die im Rahmen eines Webhosting Angebots erstellt wurde.**
+Die meisten Websites verwenden eine **Datenbank**, um ihre Artikel, Kommentare oder E-Mail-Adressen zu speichern.
+
+Die Verbindung zu dieser Datenbank wird durch eine **Konfigurationsdatei** im [FTP-Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings ermöglicht. Sie enthält die Login-Daten, die es Ihrer Website erlauben, sich bei ihrem **Datenbank-Server** anzumelden.
+
+Die Änderung des Passworts einer Datenbank muss deshalb immer an zwei Orten durchgeführt werden:
+
+- In der [Konfigurationsdatei](https://docs.ovh.com/de/hosting/1-click-module-management/#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
+
+- **Und** auf dem Server, der die entsprechende Datenbank enthält, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+
+Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
+
+Wenn Sie das Passwort Ihrer Datenbank ändern möchten, müssen daher die in dieser Anleitung **beschriebenen Operationen vollständig** durchgeführt werden. Bei Zweifeln an den durchzuführenden Aktionen wenden Sie sich an Ihren Webmaster oder kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+
+Die Änderung des Passworts der Datenbank Ihrer Website erfolgt in vier Schritten:
+
+- [Schritt 1: Die Konfigurationsdatei Ihrer Website identifizieren](#step1)
+- [Schritt 2: Die zugehörige Datenbank für Ihre Website ermitteln](#step2)
+- [Schritt 3: Das Passwort der Datenbank Ihrer Website in ihrer Konfigurationsdatei ändern](#step3)
+- [Schritt 4: Das Passwort der Datenbank Ihrer Website auf dem Datenbankserver ändern](#step4)
+
+**Diese Anleitung erklärt, wie Sie das Passwort einer Datenbank sicher ändern.**
+
+> [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+>
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung des betreffenden Webhosting Angebots.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verwenden eine [in Ihrem Webhosting enthaltene Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder einen [CloudDB Dienst](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über die FTP-Zugangsdaten, um sich auf dem [Speicherplatz](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) Ihres Hostings einzuloggen.
 
-> [!warning]
->
-> Wenn Sie das Passwort Ihrer Datenbank ändern, denken Sie daran, diese Änderung auch in der Konfigurationsdatei vorzunehmen, die die Datenbank mit Ihrer Website verbindet.
->
+## In der praktischen Anwendung
 
-## Beschreibung
+### Schritt 1: Die Konfigurationsdatei Ihrer Website identifizieren <a name="step1"></a>
 
-### Schritt 1: Situation einschätzen
+Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action} und schließlich auf das betreffende Hosting. Öffnen Sie den Tab `Multisite`{.action}. Identifizieren Sie den Namen des `Wurzelverzeichnisses` Ihrer Website (das Verzeichnis, in dem sich ihre Dateien und Ordner befinden).
 
-**Seien Sie vorsichtig, wenn Sie das Passwort einer Datenbank ändern**: Wenn die Änderung nicht korrekt durchgeführt wird, kann es sein, dass die Website nicht mehr erreichbar ist. Ein genaueres Verständnis der Auswirkungen einer Passwortänderung ermöglicht es Ihnen, weitere notwendige Änderungen besser zu bestimmen.
+![root_folder](images/root_folder.png){.thumbnail}
 
-Heute verwenden praktisch alle Content Management Systeme (CMS) wie WordPress oder Joomla! eine Datenbank, um dynamische Elemente einer Website, wie zum Beispiel Kommentare oder Artikel, zu speichern. Für diese Seiten ist die Verbindung zur Datenbank daher absolut notwendig, um zu funktionieren. Die Verbindung wird mithilfe einer Konfigurationsdatei hergestellt, die Informationen zur Datenbank enthält. Aus diesem Grund muss nach der Passwortänderung der OVH Datenbank diese Änderung auch unbedingt in der Konfigurationsdatei vorgenommen werden, um die Verbindung zwischen Ihrer Website und der Datenbank zu gewährleisten.
-
-> [!primary]
->
-> Wir empfehlen, vor Änderungen zu überprüfen, ob Ihre Website mit einer Datenbank verbunden ist. Ist das der Fall, sollten Sie zunächst sicherstellen, dass Sie wissen, wie diese Änderungen zu übertragen sind, damit die Website erreichbar bleibt.
->
-> Da diese Einstellungen die Konfiguration Ihrer Website und nicht die OVH Dienste betreffen, empfehlen wir, den Herausgeber der Website oder einen spezialisierten Dienstleister zu kontaktieren, sollten Sie weitere Hilfe benötigen.
->
-
-### Schritt 2: Auf die Verwaltung der Webhosting-Datenbanken zugreifen
-
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
-
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden.
-
-![datenbank passwort](images/database-password-step1.png){.thumbnail}
-
-### Schritt 3: Passwort der Datenbank ändern
-
-Um das Passwort zu ändern, klicken Sie rechts neben der entsprechenden Datenbank auf die drei Punkte und anschließend auf `Passwort ändern`{.action}.
-
-![datenbank passwort](images/database-password-step2.png){.thumbnail}
-
-Geben Sie im angezeigten Fenster das neue Passwort ein, bestätigen Sie dieses und klicken Sie anschließend auf den Button `Bestätigen`{.action}.
-
-**Die Änderung benötigt einige Minuten, bis sie wirksam ist.**
+Klicken Sie anschließend auf den Tab `FTP-SSH`{.action} und greifen Sie auf den Speicherplatz mit den Dateien und Ordnern Ihrer Seite (*FTP-Bereich*) zu, indem Sie auf den `FTP-Explorer`{.action} klicken.
 
 > [!primary]
 >
-> Aus Sicherheitsgründen halten Sie sich bitte an die bei der Eingabe des Passworts angezeigten Bedingungen. Wir empfehlen Ihnen außerdem:
+> Wenn Sie das Passwort Ihres FTP-Speicherplatzes ändern möchten, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
 >
-> - nicht zweimal das gleiche Passwort zu verwenden
->
-> - ein Passwort zu verwenden, das keinen Bezug zu Ihren persönlichen Angaben hat (vermeiden Sie zum Beispiel Ihren Namen, Vornamen oder Ihr Geburtsdatum)
->
-> - Ihr Passwort regelmäßig zu erneuern
->
-> - Ihr Passwort nicht auf Papier zu notieren oder sich selbst per E-Mail zuzusenden
->
-> - Ihr Passwort nicht in Ihrem Webbrowser zu speichern, auch wenn dieser Sie dazu auffordert
+> Wenn Sie sich mit einer anderen Methode verbinden möchten, lesen Sie [diese Anleitung](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/).
 >
 
-![datenbank passwort](images/database-password-step3.png){.thumbnail}
+Öffnen Sie das oben identifizierte `Wurzelverzeichnis`.
 
-### Schritt 4: Verbindung zwischen Datenbank und Website wiederherstellen
+Suchen und öffnen Sie die Konfigurationsdatei Ihrer Website:
+
+- Für eine WORDPRESS-Website handelt es sich um "**wp-config.php**".
+- Bei einer JOOMLA-Website handelt es sich um "**configuration.php**".
+- Öffnen Sie für eine DRUPAL-Website "**sites**" und "**default**". Die Konfigurationsdatei ist "**settings.php**".
+- Öffnen Sie für eine PRESTASHOP-Website den Ordner "**app**" und dann "**config**". Die Konfigurationsdatei ist "**parameters.php**".
+
+### Schritt 2: Die Datenbank Ihrer Website identifizieren <a name="step2"></a>
+
+Es sind zwei Fälle möglich:
+
+- Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhosting-Angebots.
+- Fall 2: Die Datenbank ist Teil eines *CloudDB* Dienstes. In diesem Fall benötigen Sie den *Servernamen* und den *Benutzernamen* Ihrer Datenbank, um den korrekten Datenbankdienst gesichert zu ermitteln.
+
+Um zu bestimmen, welcher Fall auf Ihre Webseite zutrifft, notieren Sie zunächst den Namen der Datenbank in der im [ersten Schritt](#step1) identifizierten Konfigurationsdatei:
+
+- Für WORDPRESS: Der Name erscheint unter "**DB_NAME**".
+- Für JOOMLA: Der Name erscheint unter "**public $db**".
+- Für DRUPAL: Der Name erscheint unter "**database**".
+- Für PRESTASHOP: Der Name erscheint unter "**database_name**".
+
+Führen Sie im Bereich `Web Cloud`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) jeweils die folgenden Schritte aus:
+
+- Gehen Sie in den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
+- Klicken Sie auf den Tab `Datenbanken`{.action} auf der **rechten Seite der Bildschirmanzeige**.
+- Suchen Sie den Namen der zuvor in der Spalte `Name der Datenbank` gefundenen Datenbank.
+
+Wenn Sie in diesem Teil Ihres Kundencenters den Namen der in der Konfigurationsdatei angegebenen Datenbank gefunden haben, gehen Sie zu [Schritt 3](#step3).
+
+Ist das nicht der Fall, ist die Datenbank Ihrer Website an ein [CloudDB Angebot](https://www.ovh.de/cloud-databases/) gebunden.
+
+Gehen Sie dann zurück zur Konfigurationsdatei Ihrer Website, um den *Servernamen* sowie den *Benutzernamen* Ihrer Datenbank zu notieren:
+
+- Für WORDPRESS: Der *Servername* erscheint unter "**DB_HOST**" und der *Benutzername* unter "**DB_USER**".
+- Für JOOMLA: Der *Servername* erscheint unter "**public $host**" und der *Benutzername* unter "**public $user**".
+- Für DRUPAL: Der *Servername* erscheint unter "**host**" und der *Benutzername* unter "**username**".
+- Für PRESTASHOP: Der *Servername* erscheint unter "**database_host**" und der *Benutzername* unter "**database_user**".
+
+Öffnen Sie anschließend `Datenbanken`{.action} im Bereich `Web Cloud`{.action}.
+
+Im Tab `Allgemeine Informationen`{.action} können Sie in Ihren [CloudDB Angeboten](https://www.ovh.de/cloud-databases/) den Servernamen Ihrer zuvor gefundenen Datenbank unter `Hostname`{.action} auswählen.
+
+Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte`{.action}, um auch den `Benutzernamen`{.action} Ihrer Datenbank zu ermitteln.
+
+### Schritt 3: Passwort der Datenbank Ihrer Website in ihrer Konfigurationsdatei ändern <a name="step3"></a>
 
 > [!primary]
 >
-> Dieser Schritt ist nicht notwendig, wenn Ihre Website nicht mit einer Datenbank verbunden ist.
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/customer/passwort-verwalten/).
 >
 
-Wenn auf Ihrer Website eine Nachricht angezeigt wird, dass die Verbindung zur Datenbank nicht hergestellt werden kann, haben Sie das neue Passwort noch nicht in der Konfigurationsdatei angegeben, die von Ihrer Website zum Herstellen der Verbindung verwendet wird.
+Legen Sie das neue Passwort Ihrer Datenbank fest und speichern Sie es. Es muss folgende Bedingungen erfüllen:
 
-Damit Ihre Website sich mit der Datenbank verbinden kann, wird eine Datei auf Ihrem Speicherplatz hinterlegt, die die notwendigen Informationen zur Verbindungsherstellung enthält: Benutzername, Passwort, Name der Datenbank und Server-Adresse. Aufgrund der Passwortänderung über das OVH Kundencenter ist diese Verbindung nun unterbrochen.
+- Mindestens 8 Zeichen
+- Höchstens 30 Zeichen
+- Mindestens ein Großbuchstabe
+- Mindestens ein Kleinbuchstabe
+- Mindestens eine Zahl
+- Ausschließlich Ziffern und Buchstaben
 
-Um Sie wiederherzustellen, geben Sie das neue Passwort in der Datei mit den Datenbankinformationen ein. Da diese Einstellungen die Konfiguration Ihrer Website und nicht die OVH Dienste betreffen, empfehlen wir, den Herausgeber der Website oder einen spezialisierten Dienstleister zu kontaktieren, falls Sie weitere Hilfe benötigen.
+Gehen Sie wie in [Schritt 1](#step1) beschrieben zum FTP-Speicherplatz Ihres Hostings und bearbeiten Sie die Konfigurationsdatei Ihrer Website.
 
-## Weiterführende Informationen
+**Speichern** Sie vor jeder Änderung den Inhalt der Datei lokal in einem Textdokument, um eine Backup-Kopie für einen Fehlerfall aufzubewahren.
 
-[Hier finden Sie weitere Ratschläge zur Passwortsicherheit vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html){.external}.
+Ersetzen Sie manuell das Passwort Ihrer Datenbank, wobei Sie **jegliche Änderung oder Löschung anderer Elemente in der Konfigurationsdatei vermeiden**. (In den folgenden Auszügen darf nur das Beispielpasswort "*0VhCloudPa55w0rdDB123*"ersetzt werden.)
+
+- Ändern Sie in der Konfigurationsdatei einer WORDPRESS Webseite "**DB_PASSWORD**":
+
+```php
+//** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'dbname123');
+ 
+/** MySQL username Database */
+define('DB_USER', 'dbname123');
+ 
+/** MySQL database password */
+define('DB_PASSWORD', '0VhCloudPa55w0rdDB123');
+ 
+/** MySQL hostname */
+define('DB_HOST', 'dbname123.mysql.db:3306');
+```
+
+- Ändern Sie in der Konfigurationsdatei einer JOOMLA Website "**public $password**" (am Ende der Konfigurationsdatei):
+
+```php
+public host = 'dbname123.mysql.db:3306';
+public-user = 'dbname123'
+public password = '0vhCloudPa55w0rdDB123';
+public $db = 'dbname123'
+```
+
+- Ändern Sie in der Konfigurationsdatei einer DRUPAL Website "**password**":
+
+```php
+$databases['default']['default'] = array (
+  'database' => 'dbname123'
+  'username' => 'dbname123'
+  'password' => '0vhCloudPa55w0rdDB123',
+  'prefix' => 'prefix123_',
+  'host' => 'dbname123.mysql.db',
+  'port' => '3306'
+```
+
+- Ändern Sie in der Konfigurationsdatei einer PRESTASHOP Website "**database_password**":
+
+```php
+'database_host' => 'dbname123.mysql.db',
+'database_port' => '3306'
+'database_name' => 'dbname123'
+'database_user' => 'dbname123'
+'database_password' => '0vhCloudPa55w0rdDB123',
+```
+
+Speichern Sie diese Änderung.
+
+### Schritt 4: Passwort der Datenbank Ihrer Website auf dem Datenbankserver ändern <a name="step4"></a>
+
+> [!primary]
+>
+> Es dauert einige Minuten, bis diese Operation abgeschlossen ist. Nachdem Sie den Task gestartet haben, können Sie den Status im Tab `Aktuelle Tasks`{.action} einsehen.
+>
+
+Auch hier sind zwei Fälle möglich: 
+
+- Wenn Ihre Datenbank sich im Bereich Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für [Webhostings](https://www.ovhcloud.com/de/web-hosting/)befindet, folgen Sie [diesen Anweisungen](#case1).
+
+- Wenn Ihre Datenbank sich in dem Teil Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) befindet, der [CloudDB Angeboten](https://docs.ovh.com/de/clouddb/) gewidmet ist, folgen Sie [diesen Anweisungen](#case2).
+
+#### Fall 1: Die Datenbank Ihrer Website ist Teil Ihres Webhostings <a name="case1"></a>
+
+Gehen Sie im Bereich `Hosting-Pakete`{.action} Ihres Kundencenters auf den Tab `Datenbanken`{.action} im rechten Bereich Ihrer Bildschirmanzeige:
+
+![database-password-step1](images/database-password-step1.png){.thumbnail}
+
+Klicken Sie dann rechts neben der Datenbank Ihrer Website auf `...`{.action} und anschließend auf `Passwort ändern`{.action}.
+
+![database-password-step2](images/database-password-step2.png){.thumbnail}
+
+Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (festgelegt in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
+
+![database-password-step3](images/database-password-step3.png){.thumbnail}
+
+#### Fall 2: Die Datenbank Ihrer Website ist Teil eines CloudDB Datenbankdienstes <a name="case2"></a>
+
+Gehen Sie in den Bereich `Datenbanken`{.action} Ihres Kundencenters und klicken Sie auf den betreffenden Server. Gehen Sie zum Tab `Benutzer und Rechte`{.action}:
+
+![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
+
+Um das Passwort Ihrer Datenbank auf dem Server zu ändern, klicken Sie auf `...`{.action} rechts neben dem im [zweiten Schritt](#step2) identifizierten `Benutzernamen`{.action} und anschließend auf `Passwort ändern`{.action}.
+
+![userDBpassword-step2](images/userDBpassword-step2.png){.thumbnail}
+
+Geben Sie im angezeigten Fenster das neue Passwort Ihrer Datenbank ein (definiert in [Schritt 3](#step3)), bestätigen Sie dieses und klicken Sie dann auf den Button `Bestätigen`{.action}.
+
+![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
+
+## Weiterführende Informationen <a name="gofurther"></a>
+
+[Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
+
+[Passwortverwaltung](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+
+[Die häufigsten Datenbankfehler beheben](https://docs.ovh.com/de/hosting/datenbanken-fehler-beheben/)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

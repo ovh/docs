@@ -10,7 +10,7 @@ order: 6
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 07.10.2021**
+**Letzte Aktualisierung am 01.02.2022**
 
 ## Ziel
 
@@ -25,7 +25,7 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 
 ## Voraussetzungen
 
-- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account.
+- Sie haben einen öffentlichen IP-Adressblock mit mindestens vier Adressen in Ihrem Kunden-Account. Der IP-Adressblock muss auf das vRack zeigen.
 - Sie haben Ihren gewünschten privaten IP-Adressbereich festgelegt.
 - Sie verfügen über einen mit vRack kompatiblen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
@@ -39,7 +39,16 @@ Bei den High Grade & SCALE Reihen ist der Betrieb von Failover-IPs im *Bridged*-
 > Bei diesen Serverreihen gibt es 4 Netzwerkkarten: jeweils zwei für das öffentliche und lokale Netzwerk. Um die gesamte Bandbreite zu nutzen, müssen Aggregate erstellt werden.
 >
 
-### Failover-IP über das vRack
+> [!warning]
+>
+> Derzeit ist ein bekannter Fehler in der grafischen Benutzeroberfläche von ESXi vorhanden. Die Ausführung der Schritte in diesem Interface würde daher zu einer nicht funktionalen Konfiguration führen. Es ist absolut notwendig, diese Konfiguration über das SSH-Kommandozeileninterface anzuwenden.
+>
+
+### Failover-IP über vRack
+
+Fügen Sie Ihren öffentlichen IP-Adressblock zum vRack hinzu. Gehen Sie hierzu in den Bereich `Bare Metal Cloud`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und öffnen Sie `vRack`{.action}.
+
+Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleistungen anzuzeigen. Klicken Sie auf den öffentlichen IP-Adressblock, den Sie zum vRack hinzufügen möchten, und klicken Sie dann auf den Button `Hinzufügen`{.action}.
 
 #### Ursprüngliche Konfiguration
 
@@ -70,7 +79,7 @@ Folgende Schritte sind notwendig:
 
 > [!primary]
 >
-> Die Änderungen sind im *command mode* (shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
+> Die Änderungen sind im *command mode* (Shell) statt über das grafische Interface (GUI) von ESXi vorzunehmen.
 >
 
 ##### **Erstellung des Aggregats im LACP-Modus auf dem vSwitch, der die öffentlichen Interfaces hat**

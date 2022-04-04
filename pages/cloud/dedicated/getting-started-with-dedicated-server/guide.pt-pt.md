@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 28/05/2021**
+**Última atualização: 11/03/2022**
 
 ## Objetivo
 
@@ -36,7 +36,7 @@ Pode facilmente reinstalar o seu servidor e escolher outra imagem de OS na sua [
 
 ![Botão Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
-No ecrã seguinte, selecione `Instalar a partir de um template OVH`{.action} ou `Instalar um dos seus templates`{.action} para utilizar um template de instalação.
+No ecrã seguinte, selecione `Instalar a partir de um template OVHcloud`{.action} ou `Instalar um dos seus templates`{.action} para utilizar um template de instalação.
 
 Para poder instalar uma imagem personalizada no servidor, escolha a terceira opção `Instalar a partir de uma imagem personalizada`{.action}. Consulte o manual "[Utilizar a funcionalidade Bring Your Own Image](../bringyourownimage/)" para saber mais sobre os parâmetros desta funcionalidade.
 
@@ -77,9 +77,9 @@ Se instalar um sistema operativo GNU/Linux, pode adicionar a sua chave SSH à ú
 
 Se uma chave SSH já estiver registada, aparecerá no menu pendente em "Chaves SSH" na parte inferior. Caso contrário, terá de adicionar uma na secção "Serviços".
 
-Para isso, abra a barra lateral ao clicar no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
+Para isso, abra a barra lateral ao clicar no canto superior direito e utilize o atalho `Gestão dos serviços`{.action}.
 
-![Personalizar a configuração da partição](images/SSH_13.png){.thumbnail}
+![Personalizar a configuração da partição](images/SSH_13.1.png){.thumbnail}
 
 Em "Os meus serviços", passe para o separador `Chaves SSH`{.action} e clique em `Adicionar uma chave SSH`{.action}.
 
@@ -109,13 +109,13 @@ Para se ligar ao servidor, utilize os exemplos abaixo e substitua as informaçõ
 
 **Exemplo com root:**
 
-```sh
+```bash
 ssh root@IPv4_do_servidor
 ```
 
 **Exemplo com um utilizador pré-configurado:**
 
-```sh
+```bash
 ssh root@nome_de_referência_do_servidor
 ```
 
@@ -125,11 +125,13 @@ Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](../ssh-in
 
 Uma vez terminada a instalação, receberá um e-mail com a sua palavra-passe de acesso administrador (root). Deve utilizar estas informações de identificação para se ligar ao servidor através de RDP (**R**emote **D**esktop **P**rotocol). Uma vez ligado, o Windows irá guiá-lo durante a instalação inicial.
 
+Consulte também o nosso guia [Configurar uma nova instalação do Windows Server](https://docs.ovh.com/pt/dedicated/windows-first-config/).
+
 ### Reinicialização do seu servidor dedicado <a name="reboot"></a>
 
 Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
 
-```sh
+```bash
 reboot
 ```
 
@@ -145,18 +147,11 @@ Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enq
 
 Pode ativar ou desativar o monitoring de um servidor dedicado a partir do separador `Informações gerais`{.action} da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). A opção situa - se na secção `Estado dos serviços`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Se a **Monitorização** estiver `Ativado`, será alertado por e-mail cada vez que o servidor agir de forma inesperada. Pode desativar estas mensagens através do botão `...`{.action}.
+Se a **Monitorização** estiver `Ativado`, será alertado por e-mail cada vez que o servidor agir de forma inesperada. Pode desativar estas mensagens através do botão `...`{.action}.
 
-- Se ativar a opção **Intervenções no local**, autoriza os técnicos do datacenter a controlar o hardware caso o seu servidor deixe de responder aos pings.
-
-> [!warning]
->
-> Se as intervenções no local estiverem ativadas (o cursor está no `On`{.action}, queira **desativar** a opção antes de efetuar as ações adequadas no seu servidor (testes materiais, reinicializações, etc.). Receberá sempre e-mails automáticos enquanto a função "Monitoring" estiver ativa.
->
-
-Para mais informações sobre o sistema de monitorização, consulte [este manual](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh/).
+Para mais informações sobre o sistema de monitorização, consulte [este manual](https://docs.ovh.com/pt/dedicated/monitoring-ip-ovh/).
 
 ### Configuração de rede
 

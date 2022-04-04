@@ -1,28 +1,53 @@
 ---
-title: Como adicionar um host ?
-excerpt: ''
+title: Como adicionar um host ? (EN)
+excerpt: Learn how to add compute capabilities to your infrastructure
 slug: como_adicionar_um_host
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/how_do_you_add_a_host/'
+section: Introdução
 legacy_guide_number: g605
 ---
 
+**Last updated 1st February 2022**
 
-## 
-Deverá utilizar o cliente vSphere, quer através do seu próprio software cliente local, quer mediante a utilização da ligação RDP que lhe é fornecida aquando da ativação do seu Private Cloud.
+## Objective
 
+Within your OVHcloud environment, you can add a new dedicated host in just a few minutes.
 
-## 
-No cliente vSphere, selecione o seu pCC. Aceda de seguida ao separador «Private Cloud OVH», do lado direito e selecione «Adicionar host».
-Depois, apenas terá de clicar no botão "Encomendar".
+**Learn how to add compute capabilities to your infrastructure.**
 
-![](images/img_104.jpg){.thumbnail}
-Uma vez o host encomendado, uma tarefa será apresentada no seu vSphere para a adição de um novo host ao seu datacenter.
+## Requirements
 
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
-## 
+## Instructions
 
-## ATENÇÃO !!!
-É necessário colocar o host em manutenção antes de o suprimir do seu Datacenter.
-Para levar a cabo essa operação basta-lhe clicar com o botão do lado direito e clicar em «Suprimir» (ou Remove) :
+> [!warning]
+>
+> Adding resources through vSphere adds them as hourly resources for billing purposes. If you wish to switch them to monthly resources, it can be changed in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+> For more info on this, check out our [Introduction to the Hosted Private Cloud Control Panel](https://docs.ovh.com/pt/private-cloud/manager-ovh-private-cloud/)
+> 
 
-![](images/img_105.jpg){.thumbnail}
+In the vSphere interface menu, go to the `Hosts and Clusters`{.action} dashboard.
 
+![Menu](images/en01dash.png){.thumbnail}
+
+The `Configure`{.action} tab gives you access to the OVHcloud plugin.<br>
+in the `Add Host`{.action} menu, choose the type of host you would like to add and click `Next`{.action}.
+
+![Choose](images/en02choose.png){.thumbnail}
+
+Verify your order and confirm by clicking `Next`{.action}.
+
+![Confirm](images/en03validate.png){.thumbnail}
+
+Your order is then confirmed. The progression of the delivery is showing with an estimated time of availability.
+
+![Delivery](images/en04deliver.png){.thumbnail}
+
+Once done, a new host is showing in your datacenter and is ready for use.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

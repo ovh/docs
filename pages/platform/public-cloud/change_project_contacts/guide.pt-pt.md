@@ -47,9 +47,7 @@ Tem de confirmar este procedimento em ambas as contas.
 
 ## Confirmação
 
-Para confirmar, aceda às propriedades da sua conta e selecione “Os meus contactos” no lado direito:
-
-![contactos](images/controlpanel.png){.thumbnail}
+Para confirmar, aceda às propriedades da sua conta e selecione “Os meus contactos” no lado direito.
 
 No Painel de Controlo de ambos os contactos, tem de aceder à secção “Os meus pedidos”:
 

@@ -2,7 +2,7 @@
 title: Accedere al database del tuo database server
 slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
-section: SQL Privato
+section: CloudDB
 order: 3
 ---
 
@@ -10,7 +10,7 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/08/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ order: 3
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovhcloud.com/it/web-hosting/options/start-sql/){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -38,9 +38,9 @@ order: 3
 > MariaDB è un derivato di MySQL e i diversi comandi sono esattamente gli stessi per questi 2 tipi di database.
 > 
 
-####  Per phpMyAdmin OVHcloud (solo per l'offerta SQL Privato)
+####  Per phpMyAdmin OVHcloud 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Dalla scheda `Informazioni generali`, il link di accesso nel riquadro **"Amministrazione del database"** è disponibile nella sezione "Interfaccia utente".
 
@@ -53,7 +53,7 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 - **Server:** inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
 - **Utente:** inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
 - **Password:** inserisci la password associata all'utente
-- **Porta:** inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. (Questa casella è disponibile solo per i server SQL Privato)
+- **Porta:** inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
 
 Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
@@ -79,19 +79,12 @@ Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
 ##### 1. Connessione online di comando
 
-> [!primary]
->
-> Per un server SQL privato, questa azione è possibile solo in [SSH](../hosting_condiviso_il_protocollo_ssh/){.external} da un hosting condiviso OVHcloud.
-
 ```bash
 mysql --host=server --user=username --port=port --password=password database_name
 ```
 
 ##### 2. Connessione tramite script PHP
 
-> [!primary]
->
-> Per un server SQL privato, l'esecuzione di questo script può essere effettuata solo da un hosting condiviso OVHcloud. 
 
 ```php
 1. <?php
@@ -146,20 +139,11 @@ Per connetterti al tuo database, assicurati di recuperare queste informazioni:
 
 #### Connessione online di comando
 
-> [!primary]
->
-> Per un server SQL privato, questa azione è possibile solo in [SSH](../hosting_condiviso_il_protocollo_ssh/){.external} da un hosting condiviso OVHcloud.
-
-
 ```bash
 psql —host=server —port=port —user=utente —password=password nome_database
 ```
 
 #### Connessione tramite script PHP
-
-> [!primary]
->
-> Per un server SQL privato, l'esecuzione di questo script può essere effettuata solo da un hosting condiviso OVHcloud.
 
 ```php
 1. <?php

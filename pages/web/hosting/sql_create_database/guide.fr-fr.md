@@ -7,7 +7,7 @@ order: 1
 ---
 
 
-**Dernière mise à jour le 23/06/2020**
+**Dernière mise à jour le 03/02/2022**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Une base de données (BDD) est utilisée pour stocker ce que l'on appelle des é
 
 ### Étape 1 : Accéder à la section de gestion de la base de données de l'hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Plans d’hébergement`{.action} dans la barre de services à gauche, puis choisissez l’hébergement web concerné. Ensuite, dirigez-vous dans l’onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Plans d’hébergement`{.action}, puis choisissez l’hébergement web concerné. Ensuite, dirigez-vous dans l’onglet `Bases de données`{.action}.
 
 Le tableau de cette section contient toutes les bases de données créées dans le cadre de votre hébergement web.
 
@@ -106,7 +106,7 @@ Pour vérifier les snapshots disponibles ainsi que leur date et heure de créati
 
 **Trop de connexions**
 
-Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données SQL privée ou une [mise à niveau d'une offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/). 
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives devraient être envisagées, par exemple, le passage à une base de données [CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/) ou une [mise à niveau d'une offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/). 
 
 **Erreurs de connexion / « introuvable »**
 

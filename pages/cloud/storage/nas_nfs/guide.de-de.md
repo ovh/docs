@@ -5,20 +5,20 @@ excerpt: 'Hier erfahren Sie, wie Sie einen NAS via NFS-Freigabe mounten.'
 section: NAS
 ---
 
-**Stand 16.07.2019**
+**Letzte Aktualisierung am 21.02.2022**
 
 ## Voraussetzungen
 
 In dieser Anleitung erfahren Sie, wie Sie auf den gängigsten Distributionen einen NFS-Mount durchführen. Um eine NFS-Freigabe zu mounten, benötigen Sie:
 
-- einen OVH NAS
-- eine Maschine im OVH Netzwerk (Dedicated Server, VPS, Instanz, ...)
-- eine NFS-kompatible Distribution
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) **oder** einen [VPS](https://www.ovhcloud.com/de/vps/) **oder** eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) mit einer Windows-Distribution in Ihrem Kunden-Account.
+- Sie verfügen über eine [HA-NAS Lösung](https://www.ovh.de/nas/).
+- eine NFS-kompatible Distribution.
 
 
 ### Linux
 
-Kompatibilität: Debian 6/7/8 & Ubuntu 12/13/14
+Kompatibilität: Debian & Ubuntu 
 
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Linux:
 
@@ -67,9 +67,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Kompatibilität: CentOS 6
-
-Voraussetzungen zum Mounten einer NFS-Freigabe unter CentOS 6:
+Voraussetzungen zum Mounten einer NFS-Freigabe unter CentOS:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
 - Sie haben die Pakete „nfs-utils“ und „rpcbind“ mit folgendem Befehl installiert:
@@ -229,3 +227,7 @@ Füllen Sie das nun angezeigte Formular aus:
 >
 > Der NFS-Benutzer ist `root`-Benutzer. Rechteänderungen mit diesem Benutzer können daher Konflikte mit vorhandenen CIFS/SMB-Rechten verursachen.
 > 
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

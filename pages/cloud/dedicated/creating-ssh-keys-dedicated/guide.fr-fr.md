@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -173,6 +173,29 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 > Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../../public-cloud/premiers-pas-instance-public-cloud).
 >
 
+### Définir une clé SSH par défaut (uniquement pour la section « Dédiés »)
+
+Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possible de définir une clé à utiliser comme clé par défaut sur le compte.
+
+> [!warning]
+> Veuillez noter qu'une fois la clé SSH par défaut définie, elle sera également utilisée comme moyen de connexion lors du redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être désactivée avant de redémarrer le serveur en mode rescue.
+>
+
+Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
+
+![Espace de gestion des clés SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de votre choix pour la définir comme clé par défaut.
+
+![Espace client de la clé SSH](images/defaultsshkey.png){.thumbnail}
+
+Une fois l'opération terminée, un message s'affiche pour confirmer que la clé a été définie par défaut. L'icône `Clé` sera alors mise en évidence.
+
+![Espace client de la clé SSH](images/defaultsshkey1.png){.thumbnail}
+
+### Désactiver de la clé SSH par défaut <a name="disablesshkey"></a>
+
+Pour désactiver la clé SSH par défaut, effectuez les mêmes opérations que ci-dessus et cliquez sur l'icône `Clé` à côté de la clé SSH correspondante, afin de désactiver l'option.
 
 ## Aller plus loin
 

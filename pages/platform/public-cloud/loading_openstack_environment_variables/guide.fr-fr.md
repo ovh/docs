@@ -16,7 +16,7 @@ Charger les variables d'environnement OpenStack sur votre poste vous permettra d
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/#creer-un-utilisateur-openstack)
+- Avoir créé un utilisateur OpenStack. Consultez [le guide qui y est dédié](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 - Avoir préparé l'environnement pour utiliser OpenStack. Consultez pour cela le guide suivant : [Préparer l’environnement pour utiliser l’API OpenStack](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/)
 
 ## En pratique
@@ -44,7 +44,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Comme indiqué dans le guide [Accéder à l’interface Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/), le mot de passe n'est visible qu'une seule fois, à sa création.
+Comme indiqué dans le guide [Accéder à l’interface Horizon](https://docs.ovh.com/fr/creation-et-suppression-dun-utilisateur-openstack/), le mot de passe n'est visible qu'une seule fois, à sa création.
 
 Si vous avez oublié celui-ci, il faudra le recréer.
 

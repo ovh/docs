@@ -6,7 +6,7 @@ section: Zarządzanie wirtualnymi maszynami
 order: 04
 ---
 
-**Ostatnia aktualizacja z dnia 02-09-2020**
+**Ostatnia aktualizacja z dnia 01-02-2022**
 
 ## Wprowadzenie
 
@@ -34,7 +34,6 @@ Nie można wykorzystać miejsca, które zostało zajęte.
 
 Przykład: jeśli na dysku Thin o pojemności 100 GB zajętych jest 40 GB, a 20 GB danych zostanie usuniętych z wirtualnej maszyny, miejsce zajmowane na datastore będzie nadal wynosić 40 GB, a przydzielone miejsce wynosić będzie 100 GB.
 
-
 ### Thick provisioning Eager zero
 
 *Thick provisioning Eager zero* to rodzaj formatu dysku zajmującego całą przydzieloną przestrzeń na datastore. 
@@ -55,7 +54,6 @@ Przyznana przestrzeń zarezerwowana jest dla dysku wirtualnej maszyny, ale dane 
 
 Przykład dla wirtualnych maszyn o pojemności 100 GB z *Guest OS* o pojemności 40 GB:
 
-
 |Rodzaj dysku|Przydzielona przestrzeń|Block zeroed|Zajęta przestrzeń|
 |---|---|---|---|
 |Eager Zero|W momencie tworzenia wirtualnej maszyny|W momencie tworzenia wirtualnej maszyny|100 GB|
@@ -64,9 +62,9 @@ Przykład dla wirtualnych maszyn o pojemności 100 GB z *Guest OS* o pojemności
 
 ### Format dysku w OVHcloud
 
-W przypadku przestrzeni dyskowej typu datastore w infrastrukturze Private Cloud dostępny jest tylko *Thin provisioning*.
+W infrastrukturze Hosted Private Cloud dostępny jest jedynie Thin provisioning*.
 
-W przypadku przestrzeni vSan dostępne są wszystkie trzy rodzaje formatów dysków.
+3 rodzaje formatów są jednak dostępne na przestrzeni dyskowej vSAN.
 
 ## Sprawdź również
 

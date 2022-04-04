@@ -3,14 +3,15 @@ title: Modificar su llave SSH en caso de pérdida
 excerpt: Modificar su llave SSH en caso de pérdida
 slug: modificar_su_llave_ssh_en_caso_de_perdida
 legacy_guide_number: g2069
-section: Seguridad
+section: Gestión de las instancias desde el área de cliente
+order: 05
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 27 de septiembre de 2018**
+**Última actualización: 10/02/2022**
 
 ## Objetivo
 
@@ -22,8 +23,9 @@ Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](ht
 
 ## Requisitos
 
+- Tener una [Instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
+- Tener acceso a su instancia a través de SSH en [modo de rescate](../poner_una_instancia_en_modo_de_rescate/)
 - Crear una llave SSH
-- Pasar una instancia a modo de rescate
 
 ## Procedimiento
 
@@ -44,8 +46,10 @@ Si quiere añadir su nueva llave SSH, solo tiene que editar el archivo y añadir
 
 ```sh
 sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
-ssh-rsa 111111111222222222223333333333334444444555555 5555566666677777777778888888888899999999999900000 00000000000000000000= old@sshkey
-ssh-rsa AAAAAAAAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDEEEEFFFFFFFFFFFFFFFFFFFFGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGHhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh= new@sshkey
+ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
+777777777778888888888999999900000000000000000000000000== old@sshkey
+ssh-rsa AAAAAAAAABBBBBBBBBBBCCCCCCCCCCCCCCCCDDDDDDDDDDDDDDDDDDDEEEEEEEEE
+EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 ```
 
 ### Cambiar la llave SSH de usuario por defecto
@@ -88,6 +92,6 @@ Una vez realizada la modificación y guardada, solo tiene que reiniciar su insta
 
 ## Más información
 
-[Pasar una instancia a modo de rescate](https://docs.ovh.com/us/es/public-cloud/poner_una_instancia_en_modo_de_rescate/)
+[Convertirse en el usuario root y establecer una contraseña](https://docs.ovh.com/us/es/public-cloud/conectarse_como_usuario_root_y_establecer_una_contrasena/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
