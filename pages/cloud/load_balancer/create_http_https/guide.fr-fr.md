@@ -5,11 +5,11 @@ excerpt: Configuration d’un service Load Balancer
 section: Configuration
 ---
 
-**Dernière mise à jour le à 25/04/2022**
+**Dernière mise à jour le à 04/04/2022**
 
 ## Objectif
 
-Ce guide a pour but de vous aider à créer votre premier service HTTP/HTTPS avec OVHcloud Load Balancer. Nous allons ici configurer un service OVHcloud Load Balancer simple pour répartir la charge HTTP d'un service, tel qu'un site web.
+Ce guide a pour but de vous aider à créer votre premier service HTTP/HTTPS avec l'offre OVHcloud Load Balancer OVHcloud. Nous allons ici configurer un service OVHcloud Load Balancer simple pour répartir la charge HTTP d'un service, tel qu'un site web.
 
 Un frontend sera créé pour écouter sur le port 80, tandis qu'un autre écoutera sur le port 443 avec un certificat SSL/TLS. Ces frontends seront configurés pour diriger leur trafic vers une ferme HTTP commune. Cette ferme peut disposer d'un ou plusieurs serveurs, selon la configuration choisie / adaptée.
 
