@@ -32,7 +32,7 @@ Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas e
 ## En pratique
 
 > [!warning]
-> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](../ovh-rescue/#disablesshkey) du guide correspondant.
+> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](../creer-cle-ssh-serveur-dediees/#disablesshkey) du guide correspondant.
 >
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
