@@ -6,38 +6,39 @@ section: Premiers pas
 order: 01
 ---
 
-**Dernière mise à jour le 19/01/2022**
+**Dernière mise à jour le 04/04/2022**
 
 ## Objectif
 
-L'[OVHcloud Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
+Le [Load Balancer OVHcloud](https://www.ovh.com/fr/solutions/load-balancer/) répartit la charge entre vos différents services dans nos datacentres. Il vous assure la mise à l'échelle de votre infrastructure face à un trafic important, une tolérance aux pannes et des temps de réponse optimisés.
 
 Vous pouvez ajouter des fontionnalités d'équilibrage de charge qui correspondent le mieux à vos besoins.
 
 ## En pratique
- 
- ### Qu’est-ce que le load balancing ? 
- 
+
+### Qu’est-ce que le load balancing ? 
+
 Le load balancing, ou répartition de charge, est une technologie conçue pour distribuer la charge de travail entre différents serveurs ou applications. Le but : optimiser la performance globale de l’infrastructure, son rendement et sa capacité.
 
 ### Les types de trafic gérés par le load balancer
-Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.
+
+Le service OVHcloud Load Balancer est basé sur de robustes solutions open-source : Haproxy pour les flux TCP et Nginx pour les flux UDP.<br>
 Il peut être utilisé pour fonctionner avec différents protocoles :
 
 |Type|Description|Avantages|Technologie|
 |---|---|---|---|
-|HTTP|Tout type de services web HTTP/HTTPS|Optimisé pour du traitement L7 (applicatif)|Haproxy|
+|HTTP|Tout type de service web HTTP/HTTPS|Optimisé pour du traitement L7 (applicatif)|Haproxy|
 |TCP|Pour tout service réseau qui n'est pas HTTP|Peut supporter toutes les applications TCP|Haproxy|
 |UDP|Pour tout type de flux UDP|Peut supporter toutes les applications UDP|Nginx|
 
 Le service OVHcloud Load Balancer contient de nombreuses fontionnalités :
 
- - une protection Anti-DDoS OVHcloud ;
- - un support de zones multiples (Anycast) ;
- - un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
- - un service compatible avec une IP Fail-over ;
- - le vRack est supporté ;
- - la redondance : votre Load Balancer fonctionne sur des instances séparées, fonctionnant elles-mêmes sur des équipements séparés et redondants.
+- une protection Anti-DDoS OVHcloud ;
+- un support de zones multiples (Anycast) ;
+- un support HTTP/HTTPS avancé (redirections, headers, ACL...) ;
+- un service compatible avec une IP Fail-over ;
+- le vRack est supporté ;
+- la redondance : votre Load Balancer fonctionne sur des instances séparées, fonctionnant elles-mêmes sur des équipements séparés et redondants.
 
 ### Parties élémentaires
 
@@ -48,8 +49,8 @@ Le service OVHcloud Load Balancer contient de nombreuses fontionnalités :
 |Parties Élémentaires|Fonction|
 |---|---|
 |Frontend|Le frontend définit le type de protocole (HTTP/TCP/UDP) du service OVHcloud Load Balancer. C'est également la partie qui expose le port d'écoute du service|
-|Farm|La ferme reçoit le trafic provenant du front end, c'est la partie qui s'occupe de faire la répartition de charge|
-|Server|Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application|
+|Ferme|La ferme reçoit le trafic provenant du frontend, c'est la partie qui s'occupe de faire la répartition de charge|
+|Serveur|Ce sont les serveurs qui reçoivent le trafic final et qui répondent via l'application|
 
 Avec ces trois parties élémentaires qui composent le Load Balancer, il est possible de configurer à peu près tous les types de load-balancing possibles.
 
@@ -69,7 +70,7 @@ Le service OVHcloud Load Balancer est capable de détecter automatiquement l'abs
 
 #### Faire évoluer facilement votre infrastructure
 
-Il est possible d'ajouter ou retirer une ferme, un front end ou un serveur du service OVHcloud Load Balancer sans interruption de service.
+Il est possible d'ajouter ou retirer une ferme, un frontend ou un serveur du service OVHcloud Load Balancer sans interruption de service.
 
 ![Scale your infra easily](images/facilitate_maintenance.png){.thumbnail}
 
@@ -83,9 +84,9 @@ En cas de maintenance planifiée sur votre infrastructure, il est désormais fac
 
 Vous pouvez désormais mixer différents services d'OVHcloud dans le Load Balancer, comme par exemple :
 
-- les instances Public Cloud avec IP fail-over ;
-- les VPS avec IP fail-over ;
-- les serveurs dédiés avec IP fail-over ;
+- les instances Public Cloud avec IP fail-over;
+- les VPS avec IP fail-over;
+- les serveurs dédiés avec IP fail-over;
 - les vRack.
 
 ![Mix and match service](images/mix_and_match.png){.thumbnail}
