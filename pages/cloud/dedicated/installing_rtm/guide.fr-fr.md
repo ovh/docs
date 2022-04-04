@@ -6,7 +6,11 @@ section: 'Diagnostic et mode Rescue'
 ---
 
 
-**Dernière mise à jour le 24/03/2020**
+**Dernière mise à jour le 07/04/2022**
+
+> [!warning]
+> Depuis le 7 avril 2022, le service d’affichage des données relative à l’activité de votre serveur est obsolète. Le service continuera de fonctionner pour les serveurs l’ayant déjà installé jusqu’au 30 juin 2022. Après cette date, nous procéderons à l’arrêt de la fonctionnalité, et ce sans impact sur le fonctionnement du serveur associé. L’installation de ce service vous est donc déconseillée. Cette notification a pour but de vous laisser suffisamment de temps pour anticiper le remplacement de la fonctionnalité supprimée.
+>
 
 ## Objectif
 

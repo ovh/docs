@@ -5,7 +5,11 @@ excerpt: 'Découvrez comment installer le Real Time Monitoring sur Linux'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 1er août 2019**
+**Dernière mise à jour le 07/04/2022**
+
+> [!warning]
+> Depuis le 7 avril 2022, le service d’affichage des données relative à l’activité de votre serveur est obsolète. Le service continuera de fonctionner pour les serveurs l’ayant déjà installé jusqu’au 30 juin 2022. Après cette date, nous procéderons à l’arrêt de la fonctionnalité, et ce sans impact sur le fonctionnement du serveur associé. L’installation de ce service vous est donc déconseillée. Cette notification a pour but de vous laisser suffisamment de temps pour anticiper le remplacement de la fonctionnalité supprimée.
+>
 
 ## Objectif
 
@@ -17,7 +21,7 @@ Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur e
 
 - Vous devez être connecté via SSH (ou sur votre interface utilisateur graphique) sur votre serveur Linux (accès *root*)
 - Vous devez être connecté au bureau à distance sur votre serveur Windows (accès *administrateur*).
-- Vous devez être connecté à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Vous devez être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## Instructions
 
