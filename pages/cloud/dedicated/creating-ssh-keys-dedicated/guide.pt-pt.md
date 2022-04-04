@@ -6,9 +6,9 @@ section: 'SSH e chave SSH'
 order: 3
 ---
 
-**Última atualização: 15/04/2020**
+**Última atualização: 01/04/2022**
 
-## Sumário
+## Objetivo
 
 A utilização do protocolo SSH aciona um canal seguro dentro de uma rede insegura numa arquitetura cliente-servidor, ligando um cliente SSH a um servidor SSH. A criação de uma chave SSH fornece-lhe uma chave pública e outra privada. Pode colocar a chave pública em qualquer servidor e depois desbloqueá-la, ligando-a a um cliente que já possua a sua chave privada armazenada no mesmo. Se a chave SSH coincidir com a configuração existente, poderá iniciar sessão sem necessitar de introduzir a palavra-passe.
 
@@ -160,7 +160,7 @@ Em “Os meus serviços” passe para o separador `Chaves SSH`{.action} e clique
 
 ![Painel de gestão de chaves SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
 
-Selecione "Dedicadas" no menu suspenso.
+Selecione "Serviços Dedicados" no menu suspenso.
 
 Na nova janela, introduza um ID (nome à sua escolha) para a chave. Cole a cadeia da chave (copiada do seu ficheiro ".pub") no campo “Chave”.
 
@@ -170,8 +170,25 @@ Se tiver copiado o resultado na sua totalidade, o identificador após a chave j�
 
 > [!primary]
 >
-> Quaisquer chaves guardadas na seção “Dedicadas” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](../../public-cloud/public-cloud-primeiros-passos).
+> Quaisquer chaves guardadas na seção “Serviços Dedicados” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](../../public-cloud/public-cloud-primeiros-passos).
 >
+
+### Definir uma chave SSH predefinida (apenas para a secção "Serviços Dedicados")
+
+Se tiver adicionado múltiplas chaves SSH à sua Área de Cliente, é possível definir uma chave a utilizar como chave predefinida na conta.
+
+> [!warning]
+> Tenha em conta que, uma vez definida a chave SSH, esta será também utilizada como meio de ligação durante o reboot de um servidor em modo rescue. Para receber uma palavra-passe, a chave predefinida deve ser desativada antes de reiniciar o servidor em modo rescue.
+>
+
+Abra a barra de navegação lateral clicando no seu nome no canto superior direito e utilize o atalho `Gestão dos serviços`{.action}.
+
+![Painel de gestão de chaves SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Na lista de chaves, clique no ícone `Chave` ao lado da chave SSH da sua escolha para a definir como chave predefinida.
+
+![Espaço cliente da chave SSH](images/defaultsshkey.png){.thumbnail}
+
 
 
 ## Saiba mais
