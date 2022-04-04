@@ -27,7 +27,7 @@ Unlimited
 ### Maximum size per object / mpu / part
 
 - Maximum 5 GB per object
-- 10000 parts maximum in an mpu
+- 10000 parts maximum in a mpu
 - 5MB is the minimum size for a part
 
 ### Maximum number of user accounts per project
