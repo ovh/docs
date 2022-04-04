@@ -6,7 +6,7 @@ section: Premiers pas
 order: 04
 ---
 
-**Dernière mise à jour le 19/01/2022**
+**Dernière mise à jour le 04/04/2022**
 
 ## Liste des fonctions API
 
@@ -21,12 +21,12 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 
 > [!primary]
 >
-> Les Frontend, Ferme et Serveur sont spécifiques au
+> Les frontend, ferme et serveur sont spécifiques au
 > protocole (parmi HTTP, TCP ou UDP) dans lequel ils sont définis.
-> Bien qu'ils puissent être "combinés" entre eux, ce n'est possible qu'au sein
-> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un Frontend
-> UDP avec une Ferme HTTP. Mais il est possible (en l'absence d'autres
-> limitations) d'utiliser un Frontend HTTP avec une Ferme HTTP.
+> Bien qu'ils puissent être « combinés » entre eux, ce n'est possible qu'au sein
+> d'un même protocole. Ainsi, il n'est pas possible d'utiliser un frontend
+> UDP avec une ferme HTTP. Mais il est possible (en l'absence d'autres
+> limitations) d'utiliser un frontend HTTP avec une ferme HTTP.
 > 
 
 ## Frontend
@@ -37,7 +37,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
 > 
 
-### Retournee la liste des IDs des frontends existants
+### Retourner la liste des IDs des frontends existants
 
 > [!api]
 >
@@ -64,7 +64,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
-### Éditer les paramètres relatifs à un frontend particulier
+### Éditer les paramètres relatifs à un frontend en particulier
 
 > [!api]
 >
@@ -117,7 +117,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
-### Éditer les paramètres relatifs à une ferme particulière
+### Éditer les paramètres relatifs à une ferme en particulier
 
 > [!api]
 >
@@ -143,7 +143,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > Il est nécessaire de bien exécuter la fonction API qui correspond au type de service souhaité.
 > 
 
-### Retourner la liste des IDs des serveurs liés à une ferme particulière
+### Retourner la liste des IDs des serveurs liés à une ferme en particulier
 
 > [!api]
 >
@@ -152,7 +152,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
-### Créer un serveur pour une ferme particulière
+### Créer un serveur pour une ferme en particulier
 
 > [!api]
 >
@@ -161,7 +161,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > @api {POST} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
-### Retourner les paramètres d'un serveur particulier
+### Retourner les paramètres d'un serveur en particulier
 
 > [!api]
 >
@@ -170,7 +170,7 @@ Pour une référence complète des fonctions de l'API du service OVHcloud Load B
 > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
-### Éditer les paramètres d'un serveur particulier
+### Éditer les paramètres d'un serveur en particulier
 
 > [!api]
 >
