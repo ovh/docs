@@ -29,7 +29,7 @@ Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dan
 
 ## Informations techniques
 
-La solution Nutanix d'OVHCloud permet d'avoir entre 3 et 18 nœuds sur le même CLUSTER.
+La solution **Hosted Private Cloud powered by Nutanix** permet d'avoir entre 3 et 18 nœuds sur le même CLUSTER.
 
 Il est possible d'ajouter plusieurs nœuds lors de l'expansion du Cluster.
 
@@ -71,7 +71,7 @@ Cliquez sur `Expand Cluster`{.action}.
 
 ![Add Node 02](images/AddNode02.PNG){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à coté de l'hôte découvert. pour faire apparaitre les détails du nœud.
+Cliquez sur la `case à cocher`{.action} à coté de l'hôte découvert afin de faire apparaitre les détails du nœud.
 
 ![Add Node 03](images/AddNode03.PNG){.thumbnail}
 
@@ -94,6 +94,7 @@ Cliquez sur `Expand Cluster`{.action}.
 Cliquez sur `Open`{.action} pour voir le détail de l'expansion du cluster.
 
 ![Add Node 08](images/AddNode08.PNG){.thumbnail}
+
 
 ![Add Node 09](images/AddNode09.PNG){.thumbnail}
 
