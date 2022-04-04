@@ -6,7 +6,7 @@ section: 'SSH y llave SSH'
 order: 3
 ---
 
-**Última actualización: 15/4/2020**
+**Última actualización: 01/04/2022**
 
 ## Objetivo
 
@@ -33,24 +33,24 @@ En un equipo Mac o Linux, abra la aplicación «Terminal» (línea de comandos).
 
 Compruebe si dispone de una carpeta «.ssh» en el directorio «$HOME». Si la carpeta no existe, créela:
 
-```sh
+```bash
 # mkdir ~/.ssh
 ```
 
 Utilice el siguiente comando para crear una clave RSA de 4096 bits:
 
-```sh
+```bash
 # ssh-keygen -b 4096
 ```
 El uso del parámetro «-t» con este comando permite especificar un método de cifrado diferente, por ejemplo:
 
-```sh
+```bash
 # ssh-keygen -t ed25519 -a 256
 ```
 
 El comando le pedirá que guarde la nueva clave creada:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -59,7 +59,7 @@ Confirme y, a continuación, tendrá la opción de introducir una frase de contr
 
 Las claves SSH deben almacenarse en la carpeta «.ssh».
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -85,7 +85,7 @@ The key's randomart image is:
 
 Para leer y exportar su clave pública, utilice el comando «cat» en el archivo de la clave y copie el resultado:
 
-```ssh
+```bash
 # cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -118,25 +118,25 @@ Siga moviendo el ratón hasta que la barra esté llena. La clave se ha creado y 
 
 Vaya al directorio «$HOME» y cree la carpeta «.ssh» (si no existe):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 Para almacenar la clave del usuario actual, abra un archivo denominado «authorized_keys» con su procesador de texto preferido:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Copie y pegue su **clave pública** en este nuevo archivo. Guarde el archivo y salga del procesador de texto. Reinicie su servidor o reinicie únicamente el servicio OpenSSH (el comando apropiado puede variar en función de su sistema operativo):
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 Para comprobar que su clave se haya configurado correctamente, trate de acceder a su servidor a través del protocolo/programa SSH con el comando siguiente. Sustituya «IP_ADDRESSorHOSTNAME» por la dirección IP o el nombre de host del servidor al que está intentando acceder:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 
@@ -173,6 +173,29 @@ Si ha copiado el resultado completo, ya debería estar incluido el identificador
 > Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](../../public-cloud/public-cloud-primeros-pasos).
 >
 
+### Establecer una llave SSH por defecto (solo para el universo "Dedicado")
+
+Si ha añadido varias llaves SSH al área de cliente, es posible establecer una llave que se utilizará como llave por defecto en la cuenta.
+
+> [!warning]
+> Tenga en cuenta que, una vez definida la llave SSH por defecto, también se utilizará como medio de conexión al reiniciar un servidor en modo de rescate. Para recibir una contraseña en su lugar, debe desactivarse la llave por defecto antes de reiniciar el servidor en modo de rescate.
+>
+
+Abra la navegación de la barra lateral haciendo clic en su nombre en la esquina superior derecha y utilice el acceso directo `Gestión de servicios`{.action}.
+
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+En la lista de claves, haga clic en el icono `Clave` situado junto a la llave SSH de su elección para asignarla como llave por defecto.
+
+![Área de cliente de la llave SSH](images/defaultsshkey.png) {.thumbnail}
+
+Una vez finalizada la operación, se mostrará un mensaje confirmando que la clave ha sido establecida de forma predeterminada. El icono de la `llave` aparece resaltado.
+
+![Área de cliente de la llave SSH](images/defaultsshkey1.png) {.thumbnail}
+
+### Desactivar la llave SSH por defecto <a name="disablesshkey"></a>
+
+Para desactivar la llave SSH por defecto, siga los pasos que se indican y haga clic en el icono `Llave` situado junto a la llave SSH correspondiente para desactivar la opción.
 
 ## Más información
 

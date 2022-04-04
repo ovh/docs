@@ -6,7 +6,7 @@ section: 'Sicherheit'
 order: 1
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+**Letzte Aktualisierung am 01.04.2020**
 
 ## Ziel
 
@@ -35,24 +35,24 @@ Beachten Sie bitte, dass SSH-Schlüssel bei Servern, auf denen Windows installie
 
 Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis der Ordner „.ssh“ befindet. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn:
 
-```sh
+```bash
 # mkdir ~/.ssh
 ```
 
 Verwenden Sie den folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 
-```sh
+```bash
 # ssh-keygen -b 4096
 ```
 Wenn Sie die Option „-t“ mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
-```sh
+```bash
 # ssh-keygen -t ed25519 -a 256
 ```
 
 Sie werden nachfolgend aufgefordert, den neu erstellten Schlüssel in der Standarddatei zu speichern:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -61,7 +61,7 @@ Sie können die Standarddatei akzeptieren, indem Sie "↩" drücken. Jetzt haben
 
 Ihre SSH-Schlüssel sollten im Verzeichnis „.ssh“ gespeichert sein. Der Datei mit dem öffentlichen Schlüssel wird ".pub" zum Dateinamen hinzugefügt.
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -87,7 +87,7 @@ The key's randomart image is:
 
 Verwenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl „cat“ auf Ihre Schlüsseldatei und kopieren Sie die Ausgabe:
 
-```ssh
+```bash
 # cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -102,7 +102,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >In einem MacOS Terminal können Sie auch die Kommandos „pbcopy“ und „pbpaste“ verwenden, um mit Schlüsselstrings zu arbeiten. Verwenden Sie den folgenden Befehl zum Kopieren des Schlüssels aus der Datei „id_rsa.pub“ in die Zwischenablage:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -131,25 +131,25 @@ Sie können den öffentlichen Schlüssel in diesem Fenster markieren und kopiere
 
 Wechseln Sie zu Ihrem $HOME-Verzeichnis und erstellen Sie den Ordner „.ssh“ (falls nicht vorhanden):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 Um den Schlüssel für den aktuellen Benutzer zu speichern, öffnen Sie eine Datei mit dem Namen „authorized_keys“ mit Ihrem bevorzugten Texteditor:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Kopieren Sie Ihren **öffentlichen Schlüssel** und fügen Sie ihn in diese neue Datei ein. Speichern Sie die Datei und beenden Sie den Editor. Starten Sie Ihren Server oder nur den OpenSSH-Daemon neu (der entsprechende Befehl kann je nach Betriebssystem variieren):
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 Um zu überprüfen, ob Ihr Schlüssel ordnungsgemäß eingerichtet wurde, versuchen Sie unter Verwendung Ihres Benutzernamens mit dem folgenden Befehl über SSH auf Ihren Server zuzugreifen. Ersetzen Sie „IP_ADDRESSorHOSTNAME“ durch die IP-Adresse oder den Hostnamen des Servers, auf den Sie zugreifen möchten:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 
@@ -186,6 +186,29 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der „Identifier“ hi
 > Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
+### Einen standardmäßigen SSH-Schlüssel festlegen (nur für den Bereich "Dedicated")
+
+Wenn Sie mehrere SSH-Schlüssel in Ihrem Kundencenter hinzugefügt haben, können Sie einen Schlüssel festlegen, der als Standardschlüssel für den Account verwendet werden soll.
+
+> [!warning]
+> Bitte beachten Sie, dass der SSH-Schlüssel nach seiner Standardeinstellung auch beim Neustart eines Servers im Rescue-Modus als Verbindungsmittel verwendet wird. Um stattdessen ein Passwort zu erhalten, muss der Standardschlüssel deaktiviert werden, bevor der Server im Rescue-Modus neu gestartet wird.
+>
+
+Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Dienstverwaltung`{.action}.
+
+![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Klicken Sie in der Liste der Schlüssel neben dem SSH-Schlüssel Ihrer Wahl auf das icon `Schlüssel`, um diesen als Standardschlüssel zu definieren.
+
+![Kundencenter des SSH Keys](images/defaultsshkey.png){.thumbnail}
+
+Nach Abschluss der Operation wird eine Nachricht angezeigt, um zu bestätigen, dass der Schlüssel standardmäßig definiert wurde. Das icon `Schlüssel` wird dann hervorgehoben.
+
+![Kundencenter des SSH Keys](images/defaultsshkey1.png){.thumbnail}
+
+#### Deaktivieren des standardmäßigen SSH-Schlüssel <a name="disablesshkey"></a>
+
+Um den SSH-Standard-Schlüssel zu deaktivieren, führen Sie die gleichen Operationen wie oben durch und klicken Sie neben dem entsprechenden SSH-Schlüssel auf das Icon `Schlüssel`, um die Option zu deaktivieren.
 
 ## Weiterführende Informationen
 
