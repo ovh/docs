@@ -159,7 +159,7 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
+Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/).
 
 Learn how to share your notebooks with other people [here](https://docs.ovh.com/us/en/publiccloud/ai/cli/sharing-notebooks/).
 
