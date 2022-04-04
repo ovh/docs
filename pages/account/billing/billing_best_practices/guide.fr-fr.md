@@ -18,7 +18,7 @@ Ce guide vous donnera tous les conseils pour gérer correctement votre compte et
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter notre communauté si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Requirements
@@ -58,19 +58,31 @@ Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espa
 
 ![service_emails](images/service_emails.png){.thumbnail}
 
-#### Moyens de paiement
+#### Renouvellement automatique
 
 > [!primary]
 >
-> Afin de sécuriser vos services et d'assurer leur bon fonctionnement, nous vous recommandons de mettre en place le [renouvellement automatique](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/) de vos services OVHcloud.
+> Afin de sécuriser vos services et d'assurer leur bon fonctionnement, nous vous recommandons de mettre en place le **renouvellement automatique** sur l'ensemble de vos services OVHcloud et à vous assurer régulièrement de la validité du moyen de paiement par défaut sur le [compte facturation](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition) de vos services.
 >
-, nous vous recommandons [d’enregistrer un moyen de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+Pour toute information sur l'activation de l'autorenew, consultez les guides suivants :
+
+* [Gérer le renouvellement de mes services](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/) ;
+* [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) ;
+* [Payer une commande en tant qu’administration publique](https://docs.ovh.com/fr/billing/reglement-par-mandat-administratif/).
+
+Si vous décidez de ne pas mettre en place le renouvellement automatique, vous recevrez des notifications par e-mail vous invitant à effectuer un paiement manuel pour soit renouveler votre service à l'avance, soit régler votre facture en attente.
+
+> [!alert]
+>
+> Si vos services ne sont pas renouvelés à temps, ils 
+
 
 #### Sécurité des comptes
 
-[Créez un mot de passe fort](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password) qui assurera la confidentialité de votre compte.
+[Créez un mot de passe fort](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) qui assurera la confidentialité de votre compte.
 
-[Activez la double authentification](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/) pour prévenir tout accès frauduleux.
+[Activez la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) pour prévenir tout accès frauduleux.
 
 Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adresses e-mail (principale et de secours) et votre numéro de téléphone mobile sont à jour et accessibles.
 
@@ -81,12 +93,6 @@ Saviez-vous que vous pouvez [suivre vos commandes](https://docs.ovh.com/gb/en/bi
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
 
 Vous serez informé des étapes de la livraison et vous saurez si des actions sont nécessaires de votre côté.
-
-### Renouvellement des services OVHcloud
-
-Afin d'éviter une interruption de service, OVHcloud vous recommande d'activer [le renouvellement automatique (autorenew)](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/) sur vos services. Vos factures seront alors automatiquement régularisées avec votre moyen de paiement par défaut.
-
-Si vous ne [enregistrez pas de moyen de paiement] (https://docs.ovh.com/gb/en/billing/managing-ovh-orders/), vous recevrez des notifications vous invitant à effectuer un paiement manuel pour soit renouveler votre service à l'avance, soit régler votre facture en attente.
 
 ### Résiliation
 

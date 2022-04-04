@@ -17,7 +17,7 @@ This guide will give you all the tips to properly manage your account and the bi
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on <https://community.ovh.com/en/> if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community of users. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
@@ -52,9 +52,19 @@ Note that emails sent by OVHcloud will be also visible in your [OVHcloud Control
 
 ![service_emails](images/service_emails.png){.thumbnail}
 
-#### Payment method
+#### Automatic renewal
 
-In order to prevent any service interruption and for the good functioning of the autorenewal, we recommend that you [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> [!primary]
+>
+> To keep your services secure and running smoothly, we recommend setting up **automatic renewal** for all of your OVHcloud services. We also advise you to regularly check the validity of the default payment method of your services [billing account](https://docs.ovh.com/gb/en/customer/managing-contacts/#definition).
+>
+
+For more information, please follow the instructions of these guides :
+
+* [Manage renewal of my services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/);
+* [Manage my payment methods](https://docs.ovh.com/gb/en/billing/manage-payment-methods/).
+
+If you decide to stay on a manual renewal and do not register a [payment method](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/), you will receive notifications prompting you to make a manual payment to either renew your service in advance or pay your pending bill.
 
 #### Account security
 
@@ -71,12 +81,6 @@ Did you know that you can [track your orders](https://docs.ovh.com/gb/en/billing
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
 
 You will find out the steps of delivery and you will know if actions are required from your side.
-
-### Renewal of OVHcloud services
-
-In order to prevent any service interruption, OVHcloud recommends you to activate [automatic renewal (autorenew)](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/) on your services. Your invoices will then be automatically paid with your default payment method.
-
-If you don't [register a payment method](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/), you will receive notifications, inviting you to perform a manual payment to either renew your service in advance or settle your pending invoice.
 
 ### Termination
 
