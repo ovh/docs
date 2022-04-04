@@ -8,7 +8,7 @@ section: 'Diagnostic and rescue mode'
 **Last updated 7th April 2022**
 
 > [!warning]
-> As of April 7th 2022, the service for displaying data related to your server’s activity is obsolete. The service will continue to work for servers that have already installed it until June 30th 2022. After this date, we will discontinue the service, without impacting the operation of the associated server. We therefore advise you not to install this service. The purpose of this notification is to give you enough time to anticipate the replacement of the discontinued service.
+> As of April 7th 2022, the service for displaying data related to your server’s activity is obsolete. The Real Time Monitoring option will continue to work for servers that already have it installed until June 30th 2022. After this date, we will discontinue the service, without impacting the operation of the associated server. We therefore advise you not to install this service. The purpose of this notification is to give you enough time to anticipate the replacement of the discontinued service.
 >
 
 ## Objective
