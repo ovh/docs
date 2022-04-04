@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie Real Time Monitoring auf Linux installieren
 section: 'Diagnose & Rescue Modus'
 ---
 
-**Letzte Aktualisierung 24.03.2020**
+**Letzte Aktualisierung 07.04.2022**
+
+> [!warning]
+> Seit dem 7. April 2022 ist der Dienst zur Anzeige von Aktivitätsdaten Ihres Servers veraltet. Der Dienst wird für Server, die ihn bereits installiert haben, bis zum 30. Juni 2022 weiter funktionieren. Nach diesem Datum werden wir die Funktion einstellen, ohne dass dies Auswirkungen auf den Betrieb des zugehörigen Servers hat. Wir raten Ihnen daher von der Installation dieses Dienstes ab. Diese Benachrichtigung soll Ihnen genügend Zeit geben, um den Ersatz für die entfernte Funktion vorwegzunehmen.
+>
 
 ## Ziel
 
