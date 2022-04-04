@@ -1,20 +1,20 @@
 ---
-title: AI Notebooks - Tutorial - Manage your data with CLI
-slug: notebooks/tuto-access-object-storage-data
+title: CLI - Use your data in a notebook
+slug: cli/access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
-section: AI Notebooks tutorials
-order: 01
+section: Command Line Interface
+order: 08
 ---
 
 **Last updated 27th of May, 2021.**
 
 ## Objective
 
-This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/ca/en/publiccloud/ai/notebooks/definition/).
+This guide shows how to access Object Storage data from your [**notebooks**](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/definition/).
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/ca/en/publiccloud/ai/cli/install-client/))
+- a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/install-client/))
 
 ## Upload data to your Object Storage
 
@@ -41,7 +41,7 @@ This command can be read as "Load the container `my-dataset` from the GRA region
 with `ro` (read-only) permissions".
 
 Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
-You can read the [Getting started](https://docs.ovh.com/ca/en/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
+You can read the [Getting started](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
 
 You should get a page like this, showing your dataset in the file explorer:
 

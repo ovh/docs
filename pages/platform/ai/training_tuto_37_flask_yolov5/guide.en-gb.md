@@ -14,7 +14,7 @@ The purpose of this tutorial is to show how to deploy a web service for YOLOv5 u
 
 In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom Docker image for a Flask application.
 
-For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](../yolov5-example/).
+For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov5-example/).
 
 ## Requirements
 
