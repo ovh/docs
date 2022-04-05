@@ -6,7 +6,7 @@ section: 'Sicherheit'
 order: 1
 ---
 
-**Letzte Aktualisierung am 01.04.2020**
+**Letzte Aktualisierung am 01.04.2022**
 
 ## Ziel
 
