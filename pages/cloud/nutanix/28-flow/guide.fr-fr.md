@@ -133,25 +133,26 @@ A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous
 
 ![Configure Quarantine 01](images/configurequarantinerule01.png){.thumbnail}
 
+
 Cliquez sur le `numéro`{.action} à coté de Quarantined pour voir les machines virtuelles en quarantaine.
 
 ![Configure Quarantine 02](images/configurequarantinerule02.png){.thumbnail}
 
 La liste des machines virtuelles en quarantaine apparait dans `Name` cliquez sur `Close`{.action} pour revenir au menu précedent.
 
-[Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
+![Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
 
 CLiquez sur `Quarantine`{.action}  en dessous de Name à gauche.
 
-[Configure Quarantine 04](images/configurequarantinerule04.png){.thumbnail}
+![Configure Quarantine 04](images/configurequarantinerule04.png){.thumbnail}
 
 Le status de la règles est en mode `Monitoring ` comme indiqué en haut à gauche. 
 
 Le trafic n'est pas bloqué mais surveillé comme on peut le voir en bas à droite et à gauche entre les machines virtuelles en quarantaines et l'ensemble du réseau interne et externe au travers de traits oranges.
 
-Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
+!Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
 
-[Configure Quarantine 05](images/configurequarantinerule05.png){.thumbnail}
+![Configure Quarantine 05](images/configurequarantinerule05.png){.thumbnail}
 
 Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
@@ -161,31 +162,31 @@ Le trafic est bloqué et il est possible de voir les tentatives d'accès aux mac
 
 IL est possible de modifier la règle de quarantaine pour autoriser certains flux.
 
-[Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
+![Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
 
 Cliquez sur Cliquez sur `Enforce`{.action} en haut à droite pour modifier la règle.
 
-[Configure Quarantine 07](images/configurequarantinerule07.png){.thumbnail}
+![Configure Quarantine 07](images/configurequarantinerule07.png){.thumbnail}
 
 Cliquez sur `Next`{.action}
 
-[Configure Quarantine 08](images/configurequarantinerule08.png){.thumbnail}
+![Configure Quarantine 08](images/configurequarantinerule08.png){.thumbnail}
 
 Positionerz vous  avec la souris sur une règle de blocage et cliquez sur `Allow Traffic`{.action}
 
-[Configure Quarantine 09](images/configurequarantinerule09.png){.thumbnail}
+![Configure Quarantine 09](images/configurequarantinerule09.png){.thumbnail}
 
 Selectionnez le trafic découvert entrant en cliquant sur la `case à cocher`{.action} à gauche de la règle. et cliquez sur `Allow 1 Discovered Traffic`{.action}. Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping , le reste du trafic venant de cette machine virtuelle sera bloqué.
 
-[Configure Quarantine 10](images/configurequarantinerule10.png){.thumbnail}
+![Configure Quarantine 10](images/configurequarantinerule10.png){.thumbnail}
 
 Positionerz vous  avec la souris sur une règle de blocage sortante et cliquez sur `Allow Traffic`{.action}
 
-[Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
+![Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
 
 Selectionnez le trafic découvert sortant en cliquant sur la `case à cocher`{.action} à gauche de la règle. et cliquez sur `Allow 1 Discovered Traffic`{.action}. Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping , le reste du trafic venant de cette machine virtuelle sera bloqué.
 
-[Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
+![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
 Le trafic autorisé est maintenant visible avec des traits de couleurs bleus et le trafic bloqué reste en rouge.
 
@@ -193,33 +194,33 @@ Ces autorisations sont fastidieuses à gérer car il faut attendre la découvert
 
 Cliquez à gauche sur `Add Source`{.action} à gauche pour autoriser une règle entrante vers la quarantaine
 
-[Configure Quarantine 13](images/configurequarantinerule13.png){.thumbnail}
+![Configure Quarantine 13](images/configurequarantinerule13.png){.thumbnail}
 
 Saisissez le nom de la catégorie ainsi que sa valeur dans  `Add source by: category` pour faire une règle avec les machines virtuelles membres  de la catégorie choisie, ensuite cliquez sur `Add`{.action}.
 
-[Configure Quarantine 14](images/configurequarantinerule14.png){.thumbnail}
+![Configure Quarantine 14](images/configurequarantinerule14.png){.thumbnail}
 
 La source apparait dans `Configured`
 
 Cliquez sur le signe `+`{.action} à coté de **Quarantine: Forensics**
 
-[Configure Quarantine 15](images/configurequarantinerule15.png){.thumbnail}
+![Configure Quarantine 15](images/configurequarantinerule15.png){.thumbnail}
 
 Cliquez sur `Save`{.action}
 
-[Configure Quarantine 16](images/configurequarantinerule16.png){.thumbnail}
+![Configure Quarantine 16](images/configurequarantinerule16.png){.thumbnail}
 
 Cliquez à gauche sur `Add Destination`{.action} à droite pour autoriser une règle sortante depuis la quarantaine
 
-[Configure Quarantine 17](images/configurequarantinerule17.png){.thumbnail}
+![Configure Quarantine 17](images/configurequarantinerule17.png){.thumbnail}
 
 Saisissez le nom de la catégorie ainsi que sa valeur dans  `Add source by: category` pour faire une règle avec les machines virtuelles membres de la catégorie choisie, ensuite cliquez sur `Add`{.action}.
 
-[Configure Quarantine 18](images/configurequarantinerule18.png){.thumbnail}
+![Configure Quarantine 18](images/configurequarantinerule18.png){.thumbnail}
 
 Cliquez sur `Next`{.action}
 
-[Configure Quarantine 19](images/configurequarantinerule18.png){.thumbnail}
+![Configure Quarantine 19](images/configurequarantinerule18.png){.thumbnail}
 
 Cliquez sur `Save and Enforce`{.action} pour appliquez les changements sur la règle de quarantaine.
 
