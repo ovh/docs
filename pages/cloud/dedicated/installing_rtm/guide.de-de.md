@@ -8,7 +8,7 @@ section: 'Diagnose & Rescue Modus'
 **Letzte Aktualisierung 07.04.2022**
 
 > [!warning]
-> Seit dem 7. April 2022 ist die Funktion zur Anzeige von Daten über die Aktivität Ihres Servers veraltet. Die Real Time Monitoring-Option wird für Server, die sie bereits installiert haben, bis zum 30. Juni 2022 weiter funktionieren. Nach diesem Datum werden wir diese Funktion ohne Auswirkungen auf den Betrieb des zugehörigen Servers abschalten. Wir raten Ihnen daher von der Installation dieser Option ab. Diese Benachrichtigung soll Ihnen genügend Zeit geben, um den Ersatz der entfernten Funktion zu antizipieren.
+> Seit dem 7. April 2022 ist die Funktion zur Anzeige von Daten über die Aktivität Ihres Servers veraltet. Die Real Time Monitoring-Option wird für Server, die sie bereits installiert haben, bis zum 30. Juni 2022 weiter funktionieren. Nach diesem Datum werden wir diese Funktion ohne Auswirkungen auf den Betrieb des zugehörigen Servers abschalten. Wir raten Ihnen daher von der Installation dieser Option ab. Dieser Hinweis soll Ihnen genügend Zeit geben, um den Ersatz der entfernten Funktion zu planen.
 >
 
 ## Ziel
