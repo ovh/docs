@@ -41,19 +41,19 @@ Pour plus d'informations sur la connexion au cluster reportez-vous à la section
 
 Cliquez sur l'icôe `engrenage`{.action} en haut à droite pour modifier les paramètres.
 
-![Activate Flow 01](images/ActivateMicrosegmentation01.PNG){.thumbnail}
+![Activate Flow 01](images/activatemicrosegmentation01.png){.thumbnail}
 
 Faites défiler la `barre de défilement`{.action} à gauche et cliquez sur `Microsegementation`{.action}.
 
-![Activate Flow 02](images/ActivateMicrosegmentation02.PNG){.thumbnail}
+![Activate Flow 02](images/activatemicrosegmentation02.png){.thumbnail}
 
 Cliquez sur la `case à cocher`{.action} à coté à gauche de **Enable Microsegmentation** et cliquez sur `Save`{.action}.
 
-![Activate Flow 03](images/ActivateMicrosegmentation03.PNG){.thumbnail}
+![Activate Flow 03](images/activatemicrosegmentation03.png){.thumbnail}
 
 La microsegmentation est activée . Il est possible de la désactiver.
 
-![Activate Flow 04](images/ActivateMicrosegmentation04.PNG){.thumbnail}
+![Activate Flow 04](images/activatemicrosegmentation04.png){.thumbnail}
 
 ### Configuration des catégories
 
@@ -67,41 +67,41 @@ Nous allons créer une Catégories **Special Computers** avec une valeur nommée
 
 Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
-![Create Category 01](images/ConfigureCategories01.PNG){.thumbnail}
+![Create Category 01](images/configurecategories01.png){.thumbnail}
 
 Cliquez sur `New Category`{.action}.
 
-![Create Category 02](images/ConfigureCategories02.PNG){.thumbnail}
+![Create Category 02](images/configurecategories02.png){.thumbnail}
 
 Saisir le nom de la catégorie dans `Name`{.action} ensuite cliquez sur `New value`{.action}.
 
-![Create Category 03](images/ConfigureCategories03.PNG){.thumbnail}
+![Create Category 03](images/configurecategories03.png){.thumbnail}
 
 Saisir un nom dans `Value`{.action} et cliquez sur le `bouton bleu`{.action} à droite. 
 
-![Create Category 04](images/ConfigureCategories04.PNG){.thumbnail}
+![Create Category 04](images/configurecategories04.png){.thumbnail}
 
 Cliquez sur `Save`{.action} 
 
-![Create Category 05](images/ConfigureCategories05.PNG){.thumbnail}
+![Create Category 05](images/configurecategories05.png){.thumbnail}
 
 La nouvelle catégorie apparait dans la liste des catégories
 
-![Create Category 06](images/ConfigureCategories06.PNG){.thumbnail}
+![Create Category 06](images/configurecategories06.png){.thumbnail}
 
 #### Affectation d'une catégorie à une machine virtuelle
 
 Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
-![Add VM to Category 01](images/AddVmToCategory01.PNG){.thumbnail}
+![Add VM to Category 01](images/addvmtocategory01.png){.thumbnail}
 
 `Sélectionnez`{.action} la machine virtuelle à gauche, cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}.
 
-![Add VM to Category 02](images/AddVmToCategory02.PNG){.thumbnail}
+![Add VM to Category 02](images/addvmtocategory02.png){.thumbnail}
 
 Saisisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouton `+`{.action}
 
-![Add VM to Category 03](images/AddVmToCategory03.PNG){.thumbnail}
+![Add VM to Category 03](images/addvmtocategory03.png){.thumbnail}
 
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
 
@@ -113,21 +113,27 @@ La quarataine est utilisable avec les options par défaut si la micro-segmentati
 
 Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
-![Add VM to Quarantine 01](images/AddVmToQuarantine01.PNG){.thumbnail}
+![Add VM to Quarantine 01](images/addvmtoquarantine01.png){.thumbnail}
 
 `Sélectionnez`{.action} la machine virtuelle à gauche, cliquez sur `Actons`{.action} et choisissez `Quarantine VMs`{.action}.
 
-![Add VM to Quarantine 02](images/AddVmToQuarantine02.PNG){.thumbnail}
+![Add VM to Quarantine 02](images/addvmtoquarantine02.png){.thumbnail}
 
 Choisissez `Forensic`{.action} dans `quarantine Method` et cliquez sur `Quarantine`{.action}.
 
-![Add VM to Quarantine 03](images/AddVmToQuarantine03.PNG){.thumbnail}
+![Add VM to Quarantine 03](images/addvmtoquarantine03.png){.thumbnail}
 
 La machine virtuelle est en quarantaine.
 
 #### Personalisation de la quarantaine réseau.
 
-Pour l'instant la machine virtuelle mise en quarantaine n'est pas bloquée nous allons configurer l'unique règle existante dans la sécurité réseau.
+Pour l'instant la machine virtuelle mise en quarantaine n'est pas bloquée, suivez ces instructions pour configurer la quarantaine.
+
+A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
+
+
+
+
 
 
 
