@@ -1,5 +1,5 @@
 ---
-title: Kafka Connect - Capabilities and Limitations
+title: Kafka Connect - Capacités et limitations (EN)
 slug: kafkaconnect/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka Connect
 section: Kafka Connect - Guides
