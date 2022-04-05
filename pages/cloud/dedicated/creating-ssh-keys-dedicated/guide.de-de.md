@@ -186,23 +186,23 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der “Identifier” hi
 > Alle im Abschnitt “Dedicated” gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
-### Einen standardmäßigen SSH-Schlüssel festlegen (nur für den Bereich "Dedicated")
+### Einen Standardschlüssel festlegen (nur für den Bereich "Dedicated")
 
 Wenn Sie mehrere SSH-Schlüssel in Ihrem Kundencenter hinzugefügt haben, können Sie einen Schlüssel festlegen, der als Standardschlüssel für den Account verwendet werden soll.
 
 > [!warning]
-> Bitte beachten Sie, dass der SSH-Schlüssel nach seiner Standardeinstellung auch beim Neustart eines Servers im Rescue-Modus als Verbindungsmittel verwendet wird. Um stattdessen ein Passwort zu erhalten, muss der Standardschlüssel deaktiviert werden, bevor der Server im Rescue-Modus neu gestartet wird.
+> Bitte beachten Sie, dass der SSH-Schlüssel nach seiner Standardeinstellung auch beim Neustart eines Servers im Rescue-Modus zum sicheren Login verwendet wird. Um stattdessen ein Passwort zu erhalten, muss der Standardschlüssel deaktiviert werden, bevor der Server im Rescue-Modus neu gestartet wird.
 >
 
 Öffnen Sie das vertikale Seitenmenü, indem Sie oben rechts auf Ihren Namen klicken und wählen Sie danach den Shortcut `Dienstverwaltung`{.action}.
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-Klicken Sie in der Liste der Schlüssel neben dem SSH-Schlüssel Ihrer Wahl auf das icon `Schlüssel`, um diesen als Standardschlüssel zu definieren.
+Klicken Sie in der Liste der SSH-Schlüssel neben dem gewünschten Schlüssel auf das `Schlüssel-Icon`, um diesen als Standardschlüssel zu definieren.
 
 ![Kundencenter des SSH Keys](images/defaultsshkey.png){.thumbnail}
 
-Nach Abschluss der Operation wird eine Nachricht angezeigt, um zu bestätigen, dass der Schlüssel standardmäßig definiert wurde. Das icon `Schlüssel` wird dann hervorgehoben.
+Nach Abschluss der Operation wird eine Nachricht zur Bestätigung angezeigt, dass der Schlüssel als Standard definiert wurde. Das `Schlüssel-Icon` wird dann hervorgehoben.
 
 ![Kundencenter des SSH Keys](images/defaultsshkey1.png){.thumbnail}
 
