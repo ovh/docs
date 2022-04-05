@@ -1,5 +1,5 @@
 ---
-title: 'Die Kontakte eines Projekts ändern'
+title: 'Kontakte eines Projekts ändern'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte eines Projekts ändern können'
 slug: die_kontakte_eines_projekts_andern
 legacy_guide_number: g2106

@@ -1,66 +1,54 @@
 ---
-title: 'Change project contacts'
-excerpt: 'Change project contacts'
+title: Changing project contacts
+excerpt: Find out how to change the contacts of a Public Cloud project
 slug: change_project_contacts
-legacy_guide_number: g2106
 section: Project management
 order: 6
 ---
 
-**Last updated 6th December 2019**
+**Last updated 4th April 2022**
 
 ## Objective
 
-With the OVHcloud Public Cloud you can now change the contacts for billing and project administration. 
-This means that you can seperate the OVHcloud account which manages your bills from the OVHcloud account which manages your various instances. 
+You can change the contacts for project administration and billing of a Public Cloud project in the OVHcloud Control Panel.<br>
+Modifying these contacts enables you to separate the technical management of services within a project from the project's billing.
 
-This guide explains how to edit your contacts.
-
+**This guide explains how to change the contacts of a Public Cloud project in the OVHcloud Control Panel.**
 
 ## Requirements
 
-- Two OVHcloud accounts
-- A Public Cloud project
-- Admin and billing contacts in the same subsidiary
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Admin and billing contacts in the same OVHcloud subsidiary
 
 ## Instructions
 
-In order to modify your project contacts, first go to the `Contacts and Rights`{.action} below Project management tab.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and open your `Public Cloud`{.action} project. Click on `Contacts and Rights`{.action} in the **Project Management** section.
 
-![change-contacts](images/contact.png){.thumbnail}
-
-You will now see your current administrative and billing contacts.
+On this page you can see the administrative and billing contacts associated with your project.
 
 ![change-contacts](images/contact1.png){.thumbnail}
 
-When you click on `Edit`{.action} you will be taken to a new page which lets you modify your contacts:
+Click on one of the `Edit`{.action} buttons to modify the current contacts. This will open the **Contact management** section of your Control Panel.
+
+The contacts of your Public Cloud project are displayed in the table. Click on the `...`{.action} button and then on `Edit contacts`{.action}.
 
 ![change-contacts](images/contactchange.png){.thumbnail}
 
-Then, click the `...`{.action} on the right of the Public Cloud project and click in `Edit Contacts`{.action}. A new window will appear so you can change the contacts.
+In the new window, enter the desired NIC handle for each contact you wish to change. Bear in mind that the OVHcloud accounts for `Admin` and `Billing` contacts have to be registered in the same OVHcloud subsidiary.
 
 ![change-contacts](images/contactchange1.png){.thumbnail}
 
-Once you have confirmed the new contacts, both OVHcloud accounts will receive an email containing a code allowing them to confirm this change:
+Once you have clicked `Confirm`{.action}, both OVHcloud accounts affected by the change will receive a confirmation email. This email contains a token with which the contact change can be accepted in the tab `My requests`{.action} of the **Contact management** section.
 
-![change-contacts](images/contactchange2.png){.thumbnail}
-
-You have to confirm this procedure in both accounts.
-
-## Confirmation
-
-For both accounts, open the `Contact management`{.action} again and select the `My requests`{.action} tab.
-
-![change-contacts](images/controlpanel1.png){.thumbnail}
-
-Click the `...`{.action} on the right and click `Accept`{.action}. A new window will appear: 
-
-![change-contacts](images/contactchange3.png){.thumbnail}
-
-You just have to insert the code which you have just received by email into the window which appeared after you confirmed the procedure from both accounts.
-
-After this is done, contacts have been changed as requested.
+For a more detailed explanation of this process, please consult our guide [Managing contacts for your services](../../customer/managing-contacts/).
 
 ## Go further
+
+[Information regarding Public Cloud billing options](../information-on-cloud-billing-options/)
+
+[Managing contacts for your services](../../customer/managing-contacts/)
+
+[Delegating projects](../delegate-projects/)
 
 Join our community of users on <https://community.ovh.com/en/>.

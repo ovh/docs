@@ -30,17 +30,15 @@ Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?act
 
 Esta página le permite ver los contactos asociados a su proyecto.
 
-![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
-
-### Configurar los contactos del proyecto
+![public-cloud-delegate-projects](images/delegatingproject_ca01.png){.thumbnail}
 
 Puede hacer clic en los botones `Editar`{.action} para cambiar los contactos actuales. Se abrirá la sección **Gestión de contactos** del área de cliente. Siga las indicaciones que le indicamos en la guía [Gestionar los contactos de los servicios](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/).
 
 ### Añadir contactos y permisos
 
-Haga clic en el botón `Añadir`{.action} para añadir un usuario y asignarle permisos. Se abrirá una ventana en la que deberá introducir el identificador del usuario (en formato xx00000-ovh) y seleccionar `Sólo Lectura` o `lectura-escritura` en el menú desplegable.
+Haga clic en el botón `Añadir`{.action} para añadir un usuario y asignarle permisos. Se abrirá una ventana en la que deberá introducir el identificador del usuario (email@example.com) y seleccionar `Sólo Lectura` o `lectura-escritura` en el menú desplegable.
 
-![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca02.png){.thumbnail}
 
 > [!primary]
 >
@@ -51,7 +49,7 @@ Haga clic en `Añadir`{.action} para aceptar la delegación de acceso. Recibirá
 
 Una vez recargada la página, se mostrarán en la tabla las cuentas de cliente de OVHcloud añadidas y sus respectivos permisos.
 
-![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca03.png){.thumbnail}
 
 Para desbloquear un acceso, haga clic en el botón `...`{.action} y seleccione `Eliminar`{.action}.
 

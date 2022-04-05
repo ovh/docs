@@ -28,6 +28,11 @@ With this technology, you can switch IP addresses from one solution to another i
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 > [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+
+> [!warning]
 > If the failover IP address or one of the block IP addresses has a virtual MAC attached, the target server must support the vMAC functionality.
 > See [this guide](https://docs.ovh.com/au/en/dedicated/network-support-virtual-mac/) for details.
 >
