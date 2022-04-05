@@ -31,7 +31,7 @@ section: Storage
 
 ## Objective
 
-It is possible to store Terraform state on a remote data store/backend like a AWS S3 bucket, a Google Cloud STorage (GCS)... but do you know that you can also store your Terraform states on an OVHcloud Object Storage container?
+It is possible to store Terraform state on a remote data store/backend like a AWS S3 bucket, a Google Cloud Storage (GCS)... but do you know that you can also store your Terraform states on an OVHcloud Object Storage container?
 
 In this tutorial you will:
 
