@@ -3,7 +3,7 @@ title: Concepts - Security overview
 excerpt: Public Cloud Databases security overview
 slug: concepts-security-overview
 section: General information
-order: 90
+order: 050
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/concepts-security-overview/'
 ---

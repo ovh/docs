@@ -3,7 +3,7 @@ title: How to order and manage a database via API
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 slug: order-api
 section: General information
-order: 2
+order: 020
 ---
 
 **Last updated September 3<sup>rd</sup>, 2021**
