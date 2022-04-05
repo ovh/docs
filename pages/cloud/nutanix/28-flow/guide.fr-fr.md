@@ -31,8 +31,6 @@ Il est possible :
 
 ## En pratique
 
-Nous allons configurez **Nutanix Flow**.
-
 Connectez-vous à **Prism Central**.
 
 Pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
@@ -45,9 +43,9 @@ Cliquez sur l'icôe `engrenage`{.action} en haut à droite pour modifier les par
 
 Faites défiler la `barre de défilement`{.action} à gauche et cliquez sur `Microsegementation`{.action}.
 
-![Activate Flow 02](images/activateicrosegmentation02.png){.thumbnail}
+![Activate Flow 02](images/activatemicrosegmentation02.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à coté à gauche de **Enable Microsegmentation** et cliquez sur `Save`{.action}.
+Cliquez sur la `case à cocher`{.action} à gauche de **Enable Microsegmentation** et cliquez sur `Save`{.action}.
 
 ![Activate Flow 03](images/activatemicrosegmentation03.png){.thumbnail}
 
@@ -63,7 +61,7 @@ Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est 
 
 # Création d'une catégorie
 
-Nous allons créer une Catégories **Special Computers** avec une valeur nommée **Antirus**.
+Nous allons créer une Catégories **Special Computers** avec une valeur nommée **Antivirus**.
 
 Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
@@ -73,11 +71,11 @@ Cliquez sur `New Category`{.action}.
 
 ![Create Category 02](images/configurecategories02.png){.thumbnail}
 
-Saisir le nom de la catégorie dans `Name`{.action} ensuite cliquez sur `New value`{.action}.
+Saisissez le nom de la catégorie dans `Name`{.action} ensuite cliquez sur `New value`{.action}.
 
 ![Create Category 03](images/configurecategories03.png){.thumbnail}
 
-Saisir un nom dans `Value`{.action} et cliquez sur le `bouton bleu`{.action} à droite. 
+Saisissez un nom dans `Value`{.action} et cliquez sur le `bouton bleu`{.action} à droite. 
 
 ![Create Category 04](images/configurecategories04.png){.thumbnail}
 
@@ -95,7 +93,7 @@ Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Comp
 
 ![Add VM to Category 01](images/addvmtocategory01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche, cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}.
+`Sélectionnez`{.action} la machine virtuelle à gauche ensuite cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}. dans le menu
 
 ![Add VM to Category 02](images/addvmtocategory02.png){.thumbnail}
 
@@ -104,6 +102,8 @@ Saisisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bou
 ![Add VM to Category 03](images/addvmtocategory03.png){.thumbnail}
 
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
+
+![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle fasse partie de la catégorie choisie.
 
 ### Gestion de la quarantaine réseau.
 
@@ -115,7 +115,7 @@ Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Comp
 
 ![Add VM to Quarantine 01](images/addvmtoquarantine01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche, cliquez sur `Actons`{.action} et choisissez `Quarantine VMs`{.action}.
+`Sélectionnez`{.action} la machine virtuelle à gauche ensuite cliquez sur `Actions`{.action} et choisissez `Quarantine VMs`{.action}. dans le menu.
 
 ![Add VM to Quarantine 02](images/addvmtoquarantine02.png){.thumbnail}
 
@@ -139,7 +139,7 @@ Cliquez sur le `numéro`{.action} à coté de Quarantined pour voir les machines
 
 La liste des machines virtuelles en quarantaine apparait dans `Name` cliquez sur `Close`{.action} pour revenir au menu précedent.
 
-[Configure Quarantine 03](images/configurequarantinerule04.png){.thumbnail}
+[Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
 
 CLiquez sur `Quarantine`{.action}  en dessous de Name à gauche.
 
