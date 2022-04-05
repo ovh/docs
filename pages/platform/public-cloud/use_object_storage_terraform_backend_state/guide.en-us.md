@@ -2,7 +2,8 @@
 title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state'
 slug: use_object_storage_terraform_backend_state
 excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
-section: Storage
+section: Tutorials
+order: 03
 ---
 
 <style>
@@ -54,7 +55,7 @@ In this tutorial you will:
 
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
-![Terraform](images/terraform.png)
+![Terraform](images/terraform.png){.thumbnail}
 
 This tool has a powerful and very intuitive command line interface (CLI).
 If you are interested in leveraging your knowledge about Terraform CLI, a [Cheat Sheet](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external} exists.
@@ -63,13 +64,13 @@ At OVHcloud we created a [Terraform provider](https://registry.terraform.io/prov
 
 ### Terraform states and backend
 
-Terraform have several concepts, one of them is the `state`.
+Terraform has several concepts, one of them is the `state`.
 
-A Terraform state is a snapshot of your infrastructure from when you last ran `terraform apply` command.
+A Terraform state is a snapshot of your infrastructure from when you last ran the `terraform apply` command.
 By default, the state file is stored locally in a `terraform.tfstate` file.
 But the common usage, in production environment, is to store it remotely.
 
-![Terraform state schema](images/schema.png)
+![Terraform state schema](images/schema.png){.thumbnail}
 
 You can for example store your Terraform state on an OVHcloud Object Storage container.
 
@@ -83,17 +84,17 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have an Object Storage container, if you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) tutorial.
+First, you need to have an Object Storage container. If you don't already had one, you can follow the [Creating an Object Storage container](../../storage/pcs/create-container/) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state` and its region is `GRA`.
 
-![terraform state container in OVHcloud Object Storage](images/object_storage.png)
+![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
 ### Initializing Terraform configuration
 
 Create a `backend.tf` file with the following content:
 
-```
+```yaml
 terraform {
     backend "swift" {
         container = "terraform-state"
@@ -106,7 +107,7 @@ terraform {
 
 In this file you define a [Swift Terraform backend](https://www.terraform.io/language/settings/backends/swift) in the `GRA` region. Don't hesitate to change this parameter if you created an Object Storage container in another region.
 
-We tell also to use an OpenStack `clouds.yaml` file.
+We also use an OpenStack `clouds.yaml` file.
 
 > [!primary]
 >
@@ -122,48 +123,48 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Access the administration UI for your OVHcloud Managed Kubernetes clusters by clicking on `Users & Roles`{.action} in the left-hand menu and click on `+ Add user`{.action}.
 
-![Create OpenStack user](images/create_openstack_user1.png)
+![Create OpenStack user](images/create_openstack_user1.png){.thumbnail}
 
 Enter a description for the user you want to create, for example `Terraform` and click on `Next`{.action}.
 
-![Create OpenStack user](images/create_openstack_user2.png)
+![Create OpenStack user](images/create_openstack_user2.png){.thumbnail}
 
 Check the `ObjectStore operator` role and click on `Confirm`{.action}.
 
-![Create OpenStack user](images/create_openstack_user3.png)
+![Create OpenStack user](images/create_openstack_user3.png){.thumbnail}
 
-Your user will be creating.
+Your user is being created.
 Username and password will be automatically generated and displayed in your Control Panel.
 
-![Create OpenStack user](images/create_openstack_user4.png)
+![Create OpenStack user](images/create_openstack_user4.png){.thumbnail}
 
 Be sure to save the password shown in the green message box to a password manager at this time. The password cannot be recovered afterwards. However, you can always create a new password by clicking on `...`{.action} and selecting `Generate a password`{.action}.
 
-![Generate OpenStack user password](images/create_openstack_user5.png)
+![Generate OpenStack user password](images/create_openstack_user5.png){.thumbnail}
 
 ### Retrieve OpenStack credentials 
 
 Now click on `...`{.action} and select `Launch OpenStack Horizon`.
 
-Enter the user and password informations you saved before then click on `Connect`{.action}.
+Enter the user and password information you saved before then click on `Connect`{.action}.
 
-![Horizon Login](images/horizon_login.png)
+![Horizon Login](images/horizon_login.png){.thumbnail}
 
 In the side bar, click on `API Access`{.action}.
 
-![Horizon Home Page](images/horizon_hp.png)
+![Horizon Home Page](images/horizon_hp.png){.thumbnail}
 
 Click on `Download OpenStack RC File`{.action} button and then on `OpenStack clouds.yaml File`{.action}.
 
-![Horizon API Access](images/horizon_api_access.png)
+![Horizon API Access](images/horizon_api_access.png){.thumbnail}
 
 Save the `clouds.yaml` file in your local machine.
 
-You need to edit the generated `clouds.yaml` file in order to give every informations needed by Terraform.
+You need to edit the generated `clouds.yaml` file in order to provide all details needed by Terraform.
 
-Edit this `clouds.yaml` file like bellow:
+Edit this `clouds.yaml` file like below:
 
-```
+```yaml
 clouds:
   tfstate:
     auth:
@@ -181,13 +182,13 @@ clouds:
 >
 > If the `password` line is missing in your `clouds.yaml` file, please add it with the password you copied/pasted earlier.
 
-Terraform needs to know where are your OpenStack credentials (`clouds.yaml` file) so you have several possibilities:
+Terraform needs to know where your OpenStack credentials are located (`clouds.yaml` file) so you have several possibilities:
 
 - place the `clouds.yaml` into the current working directory of your Terraform files
 - place it in `~/.config/openstack`
 - or place it on `/etc/openstack`
 
-Whatever the solution who choose, Terraform will automatically find the `clouds.yaml` file.
+Whatever the solution you choose, Terraform will automatically find the `clouds.yaml` file.
 
 In this guide we choose to save it next to the `backend.tf` file:
 
@@ -199,11 +200,11 @@ In this guide we choose to save it next to the `backend.tf` file:
 
 ### Terraform Init
 
-Now you can initialize your Terraform configuration with `terraform init` command.
+Now you can initialize your Terraform configuration with the `terraform init` command.
 
 The [terraform init](https://www.terraform.io/cli/commands/init) command is used to initialize a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control. It is safe to run this command multiple times.
 
-This command, initialize the backend (remote or local state).
+This command initializes the backend (remote or local state).
 
 After executing this command, you should obtain a result like this:
 
