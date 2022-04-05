@@ -32,9 +32,7 @@ Esta página permite-lhe ver os contactos associados ao seu projeto.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-### Configurar os contactos do projeto
-
-Pode clicar nos botões `Alterar`{.action} para alterar os contactos atuais. Esta secção irá abrir a secção **Gestão dos contactos** na Área de Cliente. Para finalizar esta operação, siga as instruções descritas no nosso manual "[Gerir os contactos dos seus serviços](https://docs.ovh.com/pt/customer/gestao_dos_contactos/)".
+Pode clicar nos botões `Alterar`{.action} para alterar os contactos atuais. Para finalizar esta operação, siga as instruções descritas no nosso manual "[Alterar os contactos de um projeto](../alterar_os_contactos_de_um_projeto/)".
 
 ### Adicionar contactos e permissões
 

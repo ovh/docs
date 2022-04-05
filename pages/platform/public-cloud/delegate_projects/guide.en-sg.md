@@ -6,7 +6,7 @@ section: Project management
 order: 7
 ---
 
-**Last updated 25th Febuary 2022**
+**Last updated 4th April 2022**
  
 ## Objective
 
@@ -28,9 +28,7 @@ On this page you can see the contacts associated with your project.
 
 ![public-cloud-delegate-projects](images/delegatingproject_ca01.png){.thumbnail}
 
-### Configuring project contacts
-
-You can click on the `Edit`{.action} buttons to change the current contacts. This will open the **Contact management** section of your Control Panel. Follow the instructions in our guide [Managing contacts for your services](https://docs.ovh.com/sg/en/customer/managing-contacts/) to complete this process.
+You can click on the `Edit`{.action} buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](../change_project_contacts/) to complete this process.
 
 ### Adding contacts and permissions
 
