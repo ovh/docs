@@ -93,7 +93,7 @@ You can then reach your notebook’s URL once the it is running.
 
 You should have this overview:
 
-![image](images/notebook-overview.png){.thumbnail}
+![image](images/overview-notebook.png){.thumbnail}
 
 ### Experimenting YOLOv5 notebook
 
