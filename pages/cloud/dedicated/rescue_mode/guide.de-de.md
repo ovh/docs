@@ -36,7 +36,7 @@ Der erste Schritt, auch im Rescue-Modus, sollte immer darin bestehen, ein Backup
 ## In der praktischen Anwendung
 
 > [!warning]
-> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein root-Passwort erhalten, wenn Sie in Ihrem Bereich für dedizierte Produkte einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Dazu lesen Sie bitte den [Abschnitt](.../ssh-schluessel-erzeugen/#disablesshkey) der entsprechenden Anleitung.
+> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Dazu lesen Sie bitte den [Abschnitt](../ssh-schluessel-erzeugen/#disablesshkey) der entsprechenden Anleitung.
 >
 
 Der Rescue-Modus kann nur über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktiviert werden. Wählen Sie Ihren Server aus, indem Sie in den Bereich `Bare Metal Cloud`{.action} wechseln und ihn dann unter `Dedicated Server`{.action} anklicken.
@@ -64,7 +64,7 @@ Wenn Sie Ihre Tasks im Rescue-Modus beendet haben, denken Sie daran, den Netboot
 
 > [!primary]
 > 
-> Wenn Sie einen SSH-Schlüssel verwenden (der auch in Ihrem OVHcloud-Kundencenter aktiviert ist), wird Ihnen kein Passwort zugesandt. Sobald der Server im Rescue-Modus ist, können Sie sich direkt mit Ihrem SSH-Schlüssel verbinden.
+> Wenn Sie einen SSH-Schlüssel verwenden (der auch in Ihrem OVHcloud-Kundencenter aktiviert ist), wird Ihnen kein Passwort zugesandt. Sobald der Server im Rescue-Modus ist, können Sie sich direkt über Ihren SSH-Schlüssel verbinden.
 >
 
 Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit Ihren Login-Daten für den Rescue-Modus. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar. Klicken Sie in der oberen rechten Ecke Ihres Kundencenters auf den Namen Ihrer Kundenkennung und anschließend auf `E-Mails vom Support`{.action}.
