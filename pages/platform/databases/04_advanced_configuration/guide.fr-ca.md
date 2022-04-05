@@ -3,7 +3,7 @@ title: Configuration avancée (EN)
 excerpt: Advanced configuration for Public Cloud Databases engines
 slug: advanced-configuration
 section: General information
-order: 070
+order: 080
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/'
 ---

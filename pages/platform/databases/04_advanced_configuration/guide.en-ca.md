@@ -3,7 +3,7 @@ title: Advanced configuration
 excerpt: Advanced configuration for Public Cloud Databases engines
 slug: advanced-configuration
 section: General information
-order: 070
+order: 080
 ---
 
 **Last updated April 1st, 2022**
