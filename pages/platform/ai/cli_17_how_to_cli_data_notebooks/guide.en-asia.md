@@ -3,7 +3,7 @@ title: CLI - Use your data in a notebook
 slug: cli/access-object-storage-data
 excerpt: Learn how to access data from your Object Storage in your Notebook
 section: Command Line Interface
-order: 08
+order: 207
 ---
 
 **Last updated 27th of May, 2021.**
