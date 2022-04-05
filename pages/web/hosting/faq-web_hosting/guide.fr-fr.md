@@ -82,7 +82,7 @@ Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votr
 
 Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site. Pour en identifier la cause, commencez par vérifier qu'aucun de vos abonnements n'a besoin d'être **renouvelé** en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Consultez ensuite les [évéments en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont impactés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi.
+Consultez ensuite les [évèments en cours sur notre infrastructure](https://www.status-ovhcloud.com/). Si tous vos services sont actifs et ne sont impactés par aucun incident ou maintenance, nous vous invitons à réaliser un diagnostic plus approfondi.
 
 ### Que faire si, après la mise en ligne de mon site, la page « Site en construction » d'OVHcloud reste affichée ?
 
@@ -193,7 +193,7 @@ Pour vous aider à corriger ces anomalies, contactez votre Webmaster ou l'un de 
 
 Ce message indique que l'adresse IP que vous utilisez pour vous connecter à votre site est bloquée pour un temps limité. 
 
-Dans cette situation, [examinez les logs](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre site, afin de déterminer quelles requêtes ont provoqué ce blocage. Vérifiez également que votre poste informatique n'est pas infecté par un virus. Vous pouvez enfin contacter l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) afin qu'il vérifie le code informatique de votre site.
+Dans cette situation, [examinez les logs](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre site, afin de déterminer quelles requêtes ont provoqué ce blocage. Vérifiez également que votre poste informatique n'est pas infecté par un virus. Vous pouvez enfin contacter l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/), afin qu'il vérifie le code informatique de votre site.
 
 ### J'ai commandé un domaine comportant des accents et il s'affiche écrit de façon étrange dans mon espace client. Que dois-je faire ?
 
@@ -201,10 +201,15 @@ Dans cette situation, [examinez les logs](https://docs.ovh.com/fr/hosting/mutual
 
 Vous n'avez aucune action à mener dans cette situation. Même si votre domaine s'affiche en [notation internationalisée (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9){.external} dans votre espace client, il fonctionnera et s'affichera de façon tout à fait normale ailleurs. L'adresse Web de votre site s'affichera telle que vous l'avez demandée. Vos adresses e-mails s'afficheront également telles que vous le souhaitiez chez vos correspondants.
 
+> [!warning]
+>
+> L'utilisation d'une adresse e-mail avec un domaine IDN dans un logiciel de messagerie (Outlook, Mail de mac, etc.) n'est pas recommandé et peut provoquer des incompatibilités.
+>
+
 ## Aller plus loin <a name="allerplusloin"></a>
 
 [FAQ - E-mails mutualisés MX Plan](https://docs.ovh.com/fr/emails/faq-emails/)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/)
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
