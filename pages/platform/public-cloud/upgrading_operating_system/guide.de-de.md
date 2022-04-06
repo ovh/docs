@@ -64,8 +64,8 @@ Aktualisieren Sie nach dem Neustart das Verzeichnis `/etc/apt/sources.list`, um 
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
-$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
-$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
 Nachdem Sie die neueste Version als Ziel festgelegt haben, führen Sie das Upgrade durch und initiieren Sie abschließend einen Neustart:
