@@ -181,4 +181,3 @@ A preview of the three notebooks can be found on GitHub [here](https://github.co
 Please send us your questions, feedback and suggestions to improve the service:
 
 - On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
-
