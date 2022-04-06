@@ -44,6 +44,13 @@ Po potwierdzeniu pojawia się poniższy komunikat informujący, że Twój wybór
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> Na koncie Gmail musisz posiadać hasło minimum 16 linii, zwane również "hasłem aplikacji". Podczas "autoryzacji aplikacji o niskim poziomie bezpieczeństwa" należy stosować silne hasło do konta Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Sprawdź również
 
 [„Migracja konta Gmail do adresu e-mail OVHcloud przy użyciu narzędzia OVH Mail Migrator”](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-konta-gmail-przez-ovh-mail-migrator){.external}

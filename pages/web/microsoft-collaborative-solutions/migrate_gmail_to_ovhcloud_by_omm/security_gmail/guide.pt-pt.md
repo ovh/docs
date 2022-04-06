@@ -44,6 +44,13 @@ Depois da validação, a mensagem seguinte indica que a sua escolha foi consider
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> É necessário ter uma palavra-passe de 16 dígitos na sua conta Gmail, também conhecida como "password de aplicação". Quando "autorizar as aplicações menos seguras", é necessário que uma palavra-passe forte seja aplicada na sua conta Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Quer saber mais?
 
 ["Migrar um endereço Gmail para um endereço de e-mail OVHcloud através do OVH Mail Migrator"](https://docs.ovh.com/pt/microsoft-collaborative-solutions/migracao-de-gmail-atraves-de-ovh-mail-migrator){.external}

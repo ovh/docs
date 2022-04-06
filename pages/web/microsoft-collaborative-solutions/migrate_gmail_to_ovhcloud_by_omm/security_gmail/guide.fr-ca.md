@@ -47,6 +47,13 @@ Après validation, le message ci-dessous indique que votre choix a bien été pr
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> Il est nécessaire d'avoir un mot de passe à 16 caractères minimum sur votre compte Gmail, aussi appelé "mot de passe d'application". En effet lorsque vous "autoriser les applications moins sécurisées", il est nécessaire qu'un mot de passe fort soit appliqué sur votre compte Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Aller plus loin
 
 [«Migrer une adresse Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator »](../../migration-de-gmail-via-ovh-mail-migrator){.external}

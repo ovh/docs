@@ -43,6 +43,13 @@ Once you have confirmed, the message below will show that your choice has been p
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> You need to have a password of at least 16 digit on your Gmail account, also called “application password”. When you “authorise less secure apps”, a strong password must be applied to your Gmail account.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Go further
 
 [Migrating a Gmail account to an OVHcloud email address via the OVH Mail Migrator](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/migrate-gmail-via-ovh-mail-migrator){.external}

@@ -45,6 +45,13 @@ Dopo la convalida, questo messaggio ti conferma che la tua scelta è stata presa
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> È necessario avere una password di almeno 16 cifra sul tuo account Gmail, chiamata anche "password dell'applicazione". Quando autorizzi “Consenti app meno sicure”, è necessario applicare una password forte sul tuo account Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Per saperne di più
 
 [“Migrare un account Gmail verso OVHcloud con OVH Mail Migrator”](../){.external}

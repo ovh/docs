@@ -44,6 +44,13 @@ Tras la validación, el siguiente mensaje le indica que su elección ha sido con
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
 
+> [!warning]
+>
+> Es necesario tener una contraseña de al menos 16 dígitos en su cuenta de Gmail, también llamada «contraseña de aplicación». ya que, al «Autorizar las aplicaciones poco seguras», es necesario que se aplique una contraseña segura en su cuenta de Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
 ## Más información
 
 [«Migrar una cuenta de Gmail a una dirección de correo electrónico de OVHcloud a través de OVH Mail Migrator»](https://docs.ovh.com/es/microsoft-collaborative-solutions/migracion-de-gmail-mediante-ovh-mail-migrator){.external}
