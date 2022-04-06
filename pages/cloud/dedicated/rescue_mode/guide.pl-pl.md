@@ -36,10 +36,10 @@ Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyski
 ## W praktyce
 
 > [!warning]
-> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](.../tworzenie-klucze-ssh-dedykowane/#disablesshkey) odpowiedniego przewodnika.
+> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](../tworzenie-klucze-ssh-dedykowane/#disablesshkey) odpowiedniego przewodnika.
 >
 
-Tryb Rescue można włączyć tylko w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
+Tryb Rescue można włączyć tylko w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
 
 Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}.
 
