@@ -2,13 +2,13 @@
 title: Redis - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for Redis using the PHP programming language
 slug: redis/connect-php
-section: Redis
-order: 101
+section: Redis - Guides
+order: 040
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-php/'
 ---
 
-**Last updated 5th of November 2021**
+**Last updated 24th March 2022**
 
 ## Objective
 
@@ -18,9 +18,10 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it);
-- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for Redis;
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- A [Public Cloud project](https://www.ovhcloud.com/it/public-cloud/) in your OVHcloud account
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/it/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your Redis instance](https://docs.ovh.com/it/databases/redis/configure-redis-instance/) to accept incoming connections
 - A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
 
 ## Concept
@@ -50,61 +51,6 @@ For both phpredis and Predis it is recommended to check their respective sites o
 
 We are now ready to learn how to connect to our Redis instance. We will use phpredis as the PHP client.
 
-### Configure your Redis instance to accept incoming connections
-
-Before making a connection, we need to verify that our redis instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your Redis instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
-
-We provide official Redis ACL, Access Control List. Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right privileges for your user. Those ACL will define the allow or disallow commands or categories of commands, keys and Pub/Sub channels.
-
-In our example, we will create a user called *redisUser* with the generated (fake) password *3FAKExSW6Rez9Xw0admB* and *allcommands* for commands (syntax equivalent to *<+@all>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
-
-![User Creation](images/user_creation.png){.thumbnail}
-
-Once created or updated, the user has to be ready and with the "Enabled" status in the control panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorize incoming connections from the Redis client
-
-In this step, select the `Authorised IP's`{.action} tab.
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-Like this we can help prevent intrusive connection attempts.
-
-Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow a connection from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
-
-### Get your connection information (URI)
-
-Now all the setup should be done for the remote client and the Redis instance.
-
-Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
-
-It should be similar to this :
-
-```
-rediss://<username>:<password>@<hostname>:<port>
-```
-
-A bit of information to know :
-
-- It will pass the username and password arguments
-- not on the default Redis port
-- TLS is activated
-
-We will now follow the official MongoDB documentation to perform our first connection with PHP.
-
 ### Connect with PHP
 
 In your PHP environment, let's try a connection. To be sure that we are indeed connected, set a data pair and then check we can get the value of it.
@@ -126,12 +72,12 @@ In your PHP environment, let's try a connection. To be sure that we are indeed c
 	echo "\nServer is running: ".$redis->ping("OK");
 
 	// Set the key pair
-	echo "\nSet key pair (foo,cowabunga)."; 
+	echo "\nSet key pair (foo,cowabunga).";
 	$redis->set('foo', 'cowabunga');
 
 	//Get the value of the key foo
 	$response = $redis->get('foo');
-	echo "\nGet the value for key foo :"; 
+	echo "\nGet the value for key foo :";
 	echo $response;
 
 	if ($response == "cowabunga") {

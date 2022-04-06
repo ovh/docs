@@ -14,13 +14,13 @@ The purpose of this tutorial is to show how to deploy a web service for YOLOv5 u
 
 In order to do this, you will use [Flask](https://flask.palletsprojects.com/en/2.0.x/), an open-source micro framework for web development in Python. You will also learn how to build and use a custom Docker image for a Flask application.
 
-For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](../yolov5-example/).
+For more information on how to train YOLOv5 on a custom dataset, refer to the following [documentation](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/yolov5-example/).
 
 ## Requirements
 
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 -   an AI Training project created inside a Public Cloud project
--   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 -   your weights obtained from training a YOLOv5 model on your dataset (refer to the *"Export trained weights for future inference"* part of the [notebook for YOLOv5](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_object_detection_yolov5.ipynb))

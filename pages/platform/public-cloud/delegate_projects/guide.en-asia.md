@@ -6,7 +6,7 @@ section: Project management
 order: 7
 ---
 
-**Last updated 25th Febuary 2022**
+**Last updated 4th April 2022**
  
 ## Objective
 
@@ -26,17 +26,15 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 On this page you can see the contacts associated with your project.
 
-![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca01.png){.thumbnail}
 
-### Configuring project contacts
-
-You can click on the `Edit`{.action} buttons to change the current contacts. This will open the **Contact management** section of your Control Panel. Follow the instructions in our guide [Managing contacts for your services](https://docs.ovh.com/asia/en/customer/managing-contacts/) to complete this process.
+You can click on the `Edit`{.action} buttons to change the current contacts. Follow the instructions in our guide [Changing project contacts](../change_project_contacts/) to complete this process.
 
 ### Adding contacts and permissions
 
-Click on the `Add`{.action} button in order to add a user and assign permissions. In the popup window, enter the NIC handle of the user (in the form xx00000-ovh), then select `Read-only` or `Read/Write` from the menu.
+Click on the `Add`{.action} button in order to add a user and assign permissions. In the popup window, enter the NIC handle of the user (email@example.com), then select `Read-only` or `Read/Write` from the menu.
 
-![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca02.png){.thumbnail}
 
 > [!primary]
 >
@@ -47,7 +45,7 @@ Click on `Add`{.action} to confirm the access delegation. A confirmation email w
 
 Once the page has reloaded, the added OVHcloud customer accounts and their respective permissions are listed in the table.
 
-![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca03.png){.thumbnail}
 
 To revoke an access, click on the `...`{.action} button and then select `Delete`{.action}.
 

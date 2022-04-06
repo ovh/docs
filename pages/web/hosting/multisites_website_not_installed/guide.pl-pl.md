@@ -62,7 +62,7 @@ Wybierz odpowiedni hosting z listy, następnie kliknij zakładkę `MultiSite`{.a
 
 #### 2.1 Identyfikacja adresu IP hostingu OVHcloud
 
-Aby odnaleźć adres IP, kliknij `Hosting` w kolumnie po lewej stronie [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz odpowiedni hosting.
+Aby odnaleźć adres IP, kliknij `Hosting` w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz odpowiedni hosting.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

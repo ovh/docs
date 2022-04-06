@@ -20,7 +20,7 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 ## Procedimiento
 
-La instalación de Netboot debe configurarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+La instalación de Netboot debe configurarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 
 ### Inicie el servidor desde el modo network

@@ -36,7 +36,7 @@ Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operat
 
 ![Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
-A continuación, seleccione `Instalar desde una plantilla de OVH`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
+A continuación, seleccione `Instalar desde una plantilla de OVHcloud`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
 
 Para instalar una imagen personalizada en el servidor, seleccione la tercera opción `Instalar desde una imagen personalizada`{.action}. Para más información sobre los parámetros de esta funcionalidad, consulte la guía [Utilizar la funcionalidad Bring Your Own Image](../bringyourownimage/).
 

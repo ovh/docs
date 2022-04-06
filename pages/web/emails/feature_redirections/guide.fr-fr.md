@@ -42,7 +42,7 @@ Il y a deux types de redirections :
 
 Selon la date d'activation de votre offre MXplan ou si [celle-ci a été récemment migrée](https://www.ovhcloud.com/fr/web-hosting/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci. 
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Web ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
@@ -69,14 +69,14 @@ Complétez selon les 3 paramètres suivants :
 |---|---|  
 |De l'adresse |Renseignez ici l'adresse e-mail que vous souhaitez rediriger.|  
 |Vers l'adresse|Renseignez ici l'adresse de destination de votre redirection. Il peut s'agir de l'une de vos adresses e-mail OVHcloud, ou d'une adresse e-mail externe.|
-|Choisissez un mode de copie|Choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVH** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection) <br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma](./#generalites){.external} au début de ce guide.*|
+|Choisissez un mode de copie|Choisissez si vous souhaitez : <br> - **Conserver une copie du mail chez OVHcloud** (recevoir l'e-mail sur votre adresse principale ainsi que l'adresse de redirection) <br> - **Ne pas conserver de copie du mail** (renvoyer directement vers l'adresse de redirection sans que l'adresse principale ne le reçoive) <br> *cf. le [schéma](./#generalites){.external} au début de ce guide.*|
 
 Cliquez ensuite sur `Valider`{.action} pour confirmer l'ajout de cette redirection.
 
 ![emails](images/mxplan-legacy-3.png){.thumbnail}
 
 > [!primary]
-> Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVH** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des
+> Lorsque vous choisissez le mode de copie « **Conserver une copie du mail chez OVHcloud** », une redirection de l'adresse e-mail vers elle-même est créée automatiquement dans la liste des
 > redirections, elle matérialise cette copie locale.
 > 
 

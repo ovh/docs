@@ -2,12 +2,11 @@
 title: 'Become the root user and select a password'
 slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
-legacy_guide_number: g1786
 section: 'Getting started'
-order: 5
+order: 08
 ---
 
-**Last updated 19th October 2021**
+**Last updated 24th March 2022**
 
 ## Objective
 
@@ -36,12 +35,12 @@ passwd: password updated
 successfully
 ```
 
-### Update repositories (Debian/Ubuntu)
+### Update the system (Debian/Ubuntu)
 
 To update the installed software packages on your server, type the following command at the command line:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Update the system (CentOS/Fedora)

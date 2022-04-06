@@ -22,7 +22,7 @@ Si vous constatez un défaut de disque ou que notre système vous a envoyé une 
 
 ## Prérequis
 
-- Être connecté en SSH à votre [serveur dédié OVH](https://www.ovh.com/fr/serveurs_dedies/){.external} avec l'accès *root* (Linux).
+- Être connecté en SSH à votre [serveur dédié OVHcloud](https://www.ovh.com/fr/serveurs_dedies/){.external} avec l'accès *root* (Linux).
 
 
 ## En pratique
@@ -119,7 +119,7 @@ Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, et
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Recue-pro »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Rescue-pro »](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 
@@ -136,7 +136,7 @@ root@rescue:~# nvme list
 
 #### Remplacer le disque à froid (coupure du serveur requise)
 
-Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVH](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
+Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
 - **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](https://docs.ovh.com/fr/dedicated/find-disk-serial-number/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 

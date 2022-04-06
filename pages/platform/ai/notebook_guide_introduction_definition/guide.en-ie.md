@@ -19,9 +19,9 @@ for your notebooks while they are running.
 Each notebook is linked to a **Public Cloud** project and specifies hardware resources along with a machine learning framework and an editor among those available.
 
 The easiest way to create and manage notebooks currently is to use the ovhai CLI. You can start learning to use it
-by reading the [Getting Started](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/getting-started-cli/) page.
+by reading the [Getting Started](https://docs.ovh.com/ie/en/publiccloud/ai/cli/getting-started-cli/) page.
 
-Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/ie/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
+Notebooks also provide an easy way to access data from your Object Storage, you can read more about it [here](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/).
 
 ## Considerations
 

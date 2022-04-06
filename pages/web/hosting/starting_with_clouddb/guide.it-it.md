@@ -30,17 +30,17 @@ La soluzione CloudDB è associata di default alla rete di hosting Web OVHcloud. 
 
 ### Attiva il tuo server CloudDB incluso con la tua offerta di hosting Web
 
-Se la tua offerta di hosting include l'opzione CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+Se la tua offerta di hosting include l'opzione CloudDB, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action}.
 
 Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
 ![Informazioni generali](images/db-activation.png){.thumbnail}
 
-Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server CloudDB. e sarà accessibile dalla colonna di sinistra nel `Database`{.action}.
+Segui le istruzioni fornite per determinare il tipo e la versione del tuo server CloudDB. e sarà accessibile in `Database`{.action}.
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >

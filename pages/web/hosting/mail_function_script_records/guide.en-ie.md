@@ -27,7 +27,7 @@ Automated emails are messages that are sent via scripts. For example, they are u
 
 ## Instructions
 
-In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, you can monitor and manage automated emails sent from your OVH Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
+In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, you can monitor and manage automated emails sent from your OVH Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action}, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
 
 On the page that opens at this stage, you can monitor and manage automated emails sent from your OVH Web Hosting plan.
 

@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 7
 ---
 
-**Last updated 3rd March 2022**
+**Last updated 21st March 2022**
 
 ## Objective
 
@@ -100,9 +100,9 @@ Snapshots are available in a directory designated for this purpose (.snapshots).
 
 Customers are responsible for managing their own backup solution and policy. However, for resiliency and security, OVHcloud performs a daily backup of your service to a remote server. In case of failure or attack, OVHcloud can restore data from the previous day. If necessary, you can request a restoration as a paid service option.
 
-### Are snapshots included in the capacity of a pool?
+### Are snapshots included in the capacity of a service?
 
-Snapshots are allocated a minimum of 5% of the storage space. For example, a 5TiB service will be accompanied by an additional 250GiB reserved for snapshots. Beyond this capacity, snapshots will occupy the service space.
+Snapshots are allocated a minimum of 5% of the storage space. For example, on a 5TiB service, 250GiB are reserved for snapshots.
 
 ### What is the maximum number of snapshots per service?
 

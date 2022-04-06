@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/03/2021**
+**Ultimo aggiornamento: 25/03/2022**
 
 ## Obiettivo
 
@@ -57,14 +57,14 @@ Se utilizzi PuTTy, avvia l’applicazione e inserisci il nome del server o l’i
 
 Una volta avviato il terminale, accedi al tuo VPS digitando il seguente comando con le informazioni fornite nell’email  (nome utente e indirizzo IPv4):
 
-```sh
+```bash
 ssh nome_utente@IPv4_del_tuo_VPS
 ```
 
 Dato che sei connesso con diritti elevati (utente *sudo*), puoi effettuare ordini per effettuare operazioni amministrative. Prima, però, ti consigliamo di modificare la password:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd nome_utente
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -72,7 +72,7 @@ passwd: password updated successfully
 
 Attenzione: le password non vengono mostrate. Dopodiché passa all'utente "root" e definisci la password admin:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -88,7 +88,7 @@ Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
 
-```sh
+```bash
 reboot
 ```
 
@@ -132,13 +132,13 @@ Se utilizzi PuTTy, avvia l’applicazione e inserisci il nome del server o l’i
 
 Una volta avviato il terminale, accedi al tuo VPS digitando il comando:
 
-```sh
+```bash
 ssh root@IPv4_del_tuo_VPS
 ```
 
 o
 
-```sh
+```bash
 ssh root@indirizzo_di_riferimento_del_tuo_VPS
 ```
 
@@ -146,7 +146,7 @@ ssh root@indirizzo_di_riferimento_del_tuo_VPS
 
 Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
 
-```sh
+```bash
 reboot
 ```
 

@@ -5,7 +5,7 @@ excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
 section: vRack
 ---
 
-**Ultimo aggiornamento: 30/11/2018**
+**Ultimo aggiornamento: 23/03/2022**
 
 ## Obiettivo
 
@@ -29,6 +29,14 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 >
 > In questa guida utilizzeremo, a titolo di esempio, un blocco IP di 46.105.135.96/28 e l’interfaccia di rete secondaria `eth1`{.action} (dedicata alla vRack).
 >
+
+### Aggiungi il blocco IP alla vRack
+
+Nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. In seguito, apri il menu `vRack`{.action}
+
+Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco IP che vuoi aggiungere alla vRack e clicca su `Aggiungi`{.action}.
+
+![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configura un indirizzo IP utilizzabile
 
@@ -134,4 +142,4 @@ Riavvia il server per applicare tutte le modifiche.
 
 [Configurare la vRack tra un’istanza Public Cloud e un server dedicato](https://docs.ovh.com/it/dedicated/configurare-vrack-tra-pci-e-server-dedicato/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

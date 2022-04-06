@@ -8,16 +8,16 @@ order: 05
 ---
 
 
-## Através do website OVH.pt
-Aceda ao website [OVH.pt](http://www.ovh.pt) e clique em "Webmail" em cima à direita.
+## Através do website OVHcloud.pt
+Aceda ao website [OVHcloud.pt](http://www.ovh.pt) e clique em "Webmail" em cima à direita.
 
 ![](images/img_2413.jpg){.thumbnail}
 
 
-## Interface geral de Webmail OVH
-Será encaminhado para uma interface de introdução de endereço de email. Esta interface permite-lhe aceder diretamente ao webmail dos serviços OVH, independentemente do serviço em questão. 
+## Interface geral de Webmail OVHcloud
+Será encaminhado para uma interface de introdução de endereço de email. Esta interface permite-lhe aceder diretamente ao webmail dos serviços OVHcloud, independentemente do serviço em questão. 
 
-Se conhece já o tipo de oferta de email OVH que tem subscrito, pode aceder diretamente ao Webmail da sua escolha no fundo da página, clicando em 
+Se conhece já o tipo de oferta de email OVHcloud que tem subscrito, pode aceder diretamente ao Webmail da sua escolha no fundo da página, clicando em 
 
 Ao clicar em , acederá diretamente aos guias relativos à interface webmail sobre a qual tem o rato por cima.
 
@@ -25,7 +25,7 @@ Ao clicar em , acederá diretamente aos guias relativos à interface webmail sob
 Ao marcar a opção "Memorizar este endereço de email", os endereços introduzidos dessa forma serão guardados no menu contextual no topo, à direita ("Webmail" em azul), A vantagem, é a de que pode ligar-se diretamente ao endereço desejado, de forma simples!
 
 
-## Interface geral de Webmail OVH
+## Interface geral de Webmail OVHcloud
 Uma vez efetuada essa escolha, chegará à interface Webmail do seu serviço de email. Se o endereço não estiver pré-preenchido, introduza-o de novo.
 
 Introduza aqui o seu endereço de e-mail bem como a password associada, e depois clique em  "Entrar".
@@ -268,9 +268,9 @@ Para introduzir a assinatura associada a essa identidade, consulte a secção [I
 
 
 ## Implementar uma assinatura com uma imagem (1)
-Nesta etapa necessita que a imagem esteja alojada num servidor (o seu alojamento OVH ou outro).
+Nesta etapa necessita que a imagem esteja alojada num servidor (o seu alojamento OVHcloud ou outro).
 
-De forma a efetuar o upload de uma imagem no seu alojamento OVH queira consultar o seguinte[guia](http://guias.ovh.pt/FtpFileZilla).
+De forma a efetuar o upload de uma imagem no seu alojamento OVHcloud queira consultar o seguinte[guia](http://guias.ovh.pt/FtpFileZilla).
 
 Ao selecionar Assinatura HTML, o editor WYSWYG* aparece como demonstrado ao lado.
 Clique no quadrado HTML de forma a abrir a janela que irá permitir que introduza código HTML.
@@ -314,9 +314,9 @@ Tenho a conta de e-mail support@ovh.net, e desejo enviar e-mails como sendo no-r
 
 
 ## Nova identidade/assinatura (2)
-No exemplo ao lado, criámos a identidade denominada como Guides OVH. Está anexada ao endereço no-reply@ovh.net, endereço que desejo mostrar aos meus correspondentes. Assim que lhes respondo aos e-mails, a resposta é enviada ao endereço support@ovh.net. Eu personalizo a minha assinatura (facultativo) e clico em Guardar.
+No exemplo ao lado, criámos a identidade denominada como Guides OVHcloud. Está anexada ao endereço no-reply@ovh.net, endereço que desejo mostrar aos meus correspondentes. Assim que lhes respondo aos e-mails, a resposta é enviada ao endereço support@ovh.net. Eu personalizo a minha assinatura (facultativo) e clico em Guardar.
 
-Após o registo, a minha nova identidade Guides OVH <no-reply@ovh.net> aparece na coluna das identidades.
+Após o registo, a minha nova identidade Guides OVHcloud <no-reply@ovh.net> aparece na coluna das identidades.
 
 Para introduzir a assinatura associada a essa identidade, consulte a secção [Introduzir uma assinatura no formato HTML](#SIGNATURE).
 
@@ -371,7 +371,7 @@ Veja como é recebido o e-mail que enviámos.
 
 Se o e-mail é  automaticamente recebido poderá clicar em "Atualizar" botão à direita (flechas horizontais opostas).
 
-Constatamos então que o remetente é Support OVH e a assinatura é apresentada corretamente.
+Constatamos então que o remetente é Support OVHcloud e a assinatura é apresentada corretamente.
 
 ![](images/img_1408.jpg){.thumbnail}
 
@@ -408,7 +408,7 @@ Neste exemplo de utilização da lista de contactos, vamos criar 2 grupos para i
 
 Para começar, clique no ícone Contactos do RoundCube (ícone de uma pessoa à direita) para aceder à interface demonstrada na imagem ao lado.
 
-Para introduzirmos os contactos que estarão em contacto com os guias OVH, decidimos criar um grupo intitulado de "Guides".
+Para introduzirmos os contactos que estarão em contacto com os guias OVHcloud, decidimos criar um grupo intitulado de "Guides".
 
 Para tal, clique em "+" no fundo à esquerda de forma a poder criar um grupo de contactos.
 O cursor introduz-se automaticamente na zona a introduzir o nome, como mostra a imagem ao lado.
@@ -539,7 +539,7 @@ Introduza o seu(s) critério(s) de pesquisa e clique em "Procurar" (o botão pod
 
 
 ## Exportar a sua lista de contactos
-Deseja recuperar o conjunto dos seus contactos atuais do seu webmail RoundCube OVH através da exportação de um ficheiro da sua lista de endereços.
+Deseja recuperar o conjunto dos seus contactos atuais do seu webmail RoundCube OVHcloud através da exportação de um ficheiro da sua lista de endereços.
 Para tal, clique na opção "Exportar" no menu no topo.
 
 Ao clicar será gerado e proposto o download de um ficheiro rcube_contacts.vcf.

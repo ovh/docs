@@ -16,7 +16,7 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVH](https://www.ovh.it/server_dedicati/){.external}
+- Disporre di un [server dedicato OVHcloud](https://www.ovh.it/server_dedicati/){.external}
 - Avere accesso al server via SSH con l’utente root
 - Su server Windows, aver installato l’utility **sas2ircu** (distribuita da [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external})
 
@@ -25,7 +25,7 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 
 > [!primary]
 >
-> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue64](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} e utilizzare il tool preinstallato **nvme-cli**.
+> Per i dischi NVMe è necessario attivare sul server la modalità [Rescue64-pro](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} e utilizzare il tool preinstallato **nvme-cli**.
 > 
 
 ### Recupera il numero di serie di un disco con RAID software

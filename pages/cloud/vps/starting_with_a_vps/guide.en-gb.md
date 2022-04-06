@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 16th March 2021**
+**Last updated 25th March 2022**
 
 ## Objective
 
@@ -17,7 +17,7 @@ A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike Web Hos
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
@@ -50,21 +50,21 @@ Using PuTTY for example, simply open the application and enter the servername or
 
 Connecting from a command terminal, type the following to log in to your VPS with the information provided in the email (username and IPv4 address):
 
-```sh
+```bash
 ssh username@IPv4_of_your_VPS
 ```
 
 Since you are now logged in with elevated privileges (a *sudo* user), you can enter commands to perform administrative tasks. It is recommendable to first change your password:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
 Note that passwords are not displayed. Next, switch to the "root" user and set your admin password:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -80,7 +80,7 @@ Connecting with the "root" user is disabled by default as a security measure. If
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
-```sh
+```bash
 reboot
 ```
 
@@ -122,13 +122,13 @@ Using PuTTY for example, simply open the application and enter the servername or
 
 Connecting from a command terminal, type the  command to log in to your VPS, replacing the text after the @ symbol with the information required (IPv4 address or VPS reference name):
 
-```sh
+```bash
 ssh root@IPv4_of_your_VPS
 ```
 
 Or:
 
-```sh
+```bash
 ssh root@your_VPS_reference_name
 ```
 
@@ -136,7 +136,7 @@ ssh root@your_VPS_reference_name
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
-```sh
+```bash
 reboot
 ```
 

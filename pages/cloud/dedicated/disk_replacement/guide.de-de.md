@@ -5,7 +5,7 @@ excerpt: 'In dieser Anleitung erklären wir Ihnen, wie Sie eine defekte Festplat
 section: 'Diagnose & Rescue Modus'
 ---
 
-**Stand 28.08.2018**
+**Letzte Aktualisierung am 28.08.2018**
 
 ## Einleitung
 
@@ -15,7 +15,7 @@ Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Syst
 
 > [!warning]
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
 > 
 > Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen“ dieser Anleitung.
 > 
@@ -23,7 +23,7 @@ Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Syst
 
 ## Voraussetzungen
 
-- Sie sind via SSH (*Root*-Zugriff) mit Ihrem [OVH Dedicated Server](https://www.ovh.de/dedicated_server/){.external} verbunden (Linux).
+- Sie sind via SSH (*Root*-Zugriff) mit Ihrem [OVHcloud Dedicated Server](https://www.ovh.de/dedicated_server/){.external} verbunden (Linux).
 
 
 ## Beschreibung
@@ -44,7 +44,7 @@ Sollten Sie durch eine E-Mail-Benachrichtigung oder eine Überprüfung Ihrerseit
 
 #### Server mit Software-RAID
 
-Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Configuring software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} (Englisch), wie Sie die auf Ihrem Server installierten Festplatten finden.
+Falls Sie einen Server mit Software-RAID besitzen, erfahren Sie in der Anleitung [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}, wie Sie die auf Ihrem Server installierten Festplatten finden.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -88,7 +88,7 @@ Die Seriennummer finden Sie in unserem Beispiel also in folgender Zeile:
 
 #### Server mit Hardware-RAID
 
-Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch) und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
+Falls Sie einen Server mit Hardware RAID besitzen, lesen Sie unsere Anleitung [Managing Hardware RAID - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} und folgen Sie den Vorgaben für Ihren RAID-Controller-Typ, um die Zugriffspfade zu Ihren Festplatten zu identifizieren.
 
 Wenn Ihnen der Zugriffspfad zu Ihren Festplatten bekannt ist, können Sie diese mithilfe des Befehls `smartctl` folgendermaßen überprüfen:
 
@@ -139,7 +139,7 @@ root@rescue:~# nvme list
 
 Den Austausch einer Ihrer Festplatten können Sie ganz bequem durch die Erstellung einer Support-Anfrage über Ihr [OVH Kundencenter](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} anfordern. Sie können den Vorgang beschleunigen, indem Sie uns alle mit den Tests verbundenen Daten mitteilen. Hier eine Zusammenfassung der von uns benötigten Informationen:
 
-- **die Seriennummer sowohl der zu ersetzenden Festplatte als auch aller weiteren intakten Festplatten**. Wie Sie die Seriennummer der zu ersetzenden Festplatte in Erfahrung bringen, sehen Sie in [dieser Anleitung](https://docs.ovh.com/gb/en/dedicated/find-disk-serial-number/){.external} (Englisch). Sollten Sie aus irgendeinem Grund die Seriennummer der Festplatte nicht abrufen können, geben Sie dies bitte im Ticket an und teilen Sie uns die Seriennummern der nicht zu ersetzenden Festplatten mit. 
+- **die Seriennummer sowohl der zu ersetzenden Festplatte als auch aller weiteren intakten Festplatten**. Wie Sie die Seriennummer der zu ersetzenden Festplatte in Erfahrung bringen, sehen Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/find-disk-serial-number/){.external} (Englisch). Sollten Sie aus irgendeinem Grund die Seriennummer der Festplatte nicht abrufen können, geben Sie dies bitte im Ticket an und teilen Sie uns die Seriennummern der nicht zu ersetzenden Festplatten mit. 
 
 Wie oben bereits erläutert, benötigen wir idealerweise die Seriennummern aller Festplatten. Diese werden dem Techniker im Rechenzentrum mitgeteilt, um Fehler beim Austausch zu vermeiden.
 
@@ -198,14 +198,14 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 Wenn Sie über einen Hardware-RAID verfügen, wird sich der RAID selbst wiederherstellen. Bitte beachten Sie: Hierfür darf die standardmäßig aktivierte Funktion *auto-rebuild* nicht manuell von Ihnen deaktiviert worden sein. Bitte beachten Sie auch, dass der Resynchronisationsprozess einige Minuten in Anspruch nehmen kann und die Lese-/Schreibperformance Ihres RAID in dieser Zeit eingeschränkt sein kann.
 
-Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} (English).
+Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer Festplatten manuell gestartet werden. Wie das geht, erfahren Sie in unserer Anleitung zum Thema [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}.
 
 
 ## Weiterführende Informationen
 
-[Software-RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/) (Englisch)
+[Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/)
 
-[Hardware-Raid](https://docs.ovh.com/gb/en/dedicated/raid-hard/) (Englisch)
+[Hardware-Raid - EN](https://docs.ovh.com/gb/en/dedicated/raid-hard/)
 
 [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/)
 

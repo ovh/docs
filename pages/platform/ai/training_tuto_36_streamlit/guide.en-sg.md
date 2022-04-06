@@ -18,7 +18,7 @@ The purpose of this tutorial is to provide a concrete example on how to build an
 
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/sg/en/publiccloud/ai/users)
 -   [Docker](https://www.docker.com/get-started) installed on your local computer
 -   some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 

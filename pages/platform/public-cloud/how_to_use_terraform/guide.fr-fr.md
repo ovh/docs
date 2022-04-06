@@ -5,6 +5,7 @@ description: Utilisation de Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploiement de votre infrastructure
 section: Tutoriels
+order: 02
 ---
 
 **Dernières mise à jour le 01/07/2021**

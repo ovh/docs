@@ -26,7 +26,7 @@ El acceso a los logs y las estadísticas de su sitio web está incluido en su pl
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente y abra la pestaña `Estadísticas y logs.`{.action}
 

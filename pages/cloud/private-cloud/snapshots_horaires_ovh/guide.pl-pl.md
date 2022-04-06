@@ -11,7 +11,7 @@ order: 06
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 21-10-2020**
+**Ostatnia aktualizacja z dnia 15-03-2022**
 
 ## Wprowadzenie
 
@@ -46,6 +46,11 @@ Można więc powiedzieć, że rozmiar snapshota jest w przybliżeniu równy rozm
 W praktyce snapshot utworzony w tym momencie T będzie miał tylko kilka kilobajtów. Rozmiar snapshota zwiększy się w zależności od zmian dokonanych do kolejnego snapshota. Jeśli usuniesz dane, przestrzeń zostanie uwolniona tylko podczas usuwania snapshota.
 
 ## Snapshot H-1
+
+> [!warning]
+>
+>Folder .zfs nie jest już widoczny w nowej generacji datastores. Możesz jednak przejść przez pomoc techniczną, aby zlecić przywrócenie wirtualnej maszyny ze snapshotem godzinowym na H-1.
+>
 
 Możesz pobrać snapshot ZFS z ostatniej godziny (H-1) z poziomu interfejsu vSphere Web Client HTML, ponieważ jest on przechowywany bezpośrednio w Twoich datastore. 
 

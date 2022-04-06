@@ -21,11 +21,11 @@ Tem a possibilidade de criar instâncias diretamente a partir da interface Horiz
 ## Requisitos
 
 - Dispor de um projeto [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external} na sua conta OVHcloud.
-- [Ter acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/){.external}. 
+- [Ter acesso à interface Horizon](../horizon/){.external}. 
 
 ## Instruções
 
-Para começar a criar uma instância, aceda à interface Horizon. Se precisar de ajuda para realizar esta operação, consulte o nosso manual “[Criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/){.external}”.
+Para começar a criar uma instância, aceda à interface Horizon. Se precisar de ajuda para realizar esta operação, consulte o [nosso manual](../horizon/).
 
 A seguir, clique em `Compute`{.action} no menu à esquerda e, de seguida, em `Instances`{.action}.
 

@@ -35,15 +35,15 @@ En caso de ausencia en su despacho, puede poner en marcha un contestador email q
 
 Inicie sesión en el  [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, 
 
-Seleccione el dominio en la sección `Correo electrónico`{.action} de la columna izquierda.
+Seleccione el dominio en la sección `Correo electrónico`{.action}.
 
-Abra la pestaña `Correo electrónico`{.action} en la parte superior y haga clic en `Gestión de contestadores`{.action}.
+Abra la pestaña `Correo electrónico`{.action} y haga clic en `Gestión de contestadores`{.action}.
 
 El sistema le redirigirá a la ventana de `Gestión de contestadores`, que muestra todos los contestadores de correo electrónico de su solución de correo.
 
 Haga clic en `Añadir un contestador`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 Se abrirá la ventana de adición. Puede completarla con los siguientes datos:
 

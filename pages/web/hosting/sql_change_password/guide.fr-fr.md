@@ -51,7 +51,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 
 ### Étape 1 : identifier le fichier de configuration de votre site <a name="step1"></a>
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, dans le menu à gauche de votre écran, sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action} puis, sur `Hébergements`{.action} et enfin sur l'hébergement concerné. Rendez-vous ensuite dans l'onglet `Multisite`{.action}. Identifiez le nom du `Dossier racine` de votre site (le répertoire dans lequel se trouvent ses fichiers et dossiers).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -104,7 +104,7 @@ Vous devez donc retourner dans le fichier de configuration de votre site, afin d
 - Pour DRUPAL : le *nom du serveur* apparaît sous **« host »** et le *nom d'utilisateur* sous la mention **« username »**;
 - Pour PRESTASHOP : le *nom du serveur* apparaît sous **« database_host »** et le *nom d'utilisateur* sous la mention **« database_user »**.
 
-Cliquez ensuite, dans la partie **gauche** de votre écran, sur `Bases de données`{.action}. 
+Cliquez ensuite, dans la partie `Bases de données`{.action} dans la section `Web Cloud`{.action}.
 
 Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [CloudDB](https://www.ovh.com/fr/cloud-databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
 
@@ -210,7 +210,7 @@ Dans la fenêtre qui s'affiche, renseignez le nouveau mot de passe de votre base
 
 #### Cas n°2 : la base de données de votre site fait partie d'une offre CloudDB <a name="case2"></a>
 
-Rendez-vous dans la partie `Bases de données`{.action} de votre espace client (menu de gauche) et sur le serveur concerné, cliquez sur l'onglet `Utilisateurs et droits`{.action} :
+Rendez-vous dans la partie `Bases de données`{.action} de votre espace client et sur le serveur concerné, cliquez sur l'onglet `Utilisateurs et droits`{.action} :
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

@@ -30,7 +30,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a job.
 
 First of all, you must have trained your model and saved your results in an object store container (exemple: `my_tf_metrics` located in Gravelines `GRA`).
 
-Alternatively, you can have a job already `RUNNING` that is plugged with that object store container and is writting metric logs inside it (exemple: `my_tf_metrics@GRA:/runs:RW:cache`). In that last case, don't forget the `cache` parameter indicating that the volume is cached and sharable among jobs. More information about volumes configuration in jobs can be found [here](../run-job-cli/#attaching-volumes), information about volume caching can be found [here](../data/#capabilities).
+Alternatively, you can have a job already `RUNNING` that is plugged with that object store container and is writting metric logs inside it (exemple: `my_tf_metrics@GRA:/runs:RW:cache`). In that last case, don't forget the `cache` parameter indicating that the volume is cached and sharable among jobs. More information about volumes configuration in jobs can be found [here](https://docs.ovh.com/us/en/publiccloud/ai/cli/run-job-cli/#attaching-volumes), information about volume caching can be found [here](https://docs.ovh.com/us/en/publiccloud/ai/data/#capabilities).
 
 > [!primary]
 >

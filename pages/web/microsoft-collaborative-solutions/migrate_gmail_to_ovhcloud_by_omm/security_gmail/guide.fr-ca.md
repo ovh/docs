@@ -4,7 +4,7 @@ slug: securite-gmail
 hidden: true
 ---
 
-**Dernière mise à jour le 03/02/2020**
+**Dernière mise à jour le 06/04/2022**
 
 ## Objectif
 
@@ -13,8 +13,7 @@ Ce guide vous détaille comment activer l'option "autoriser les applications moi
 
 > [!primary]
 > 
-Cette documentation est une étape liée au guide 
-[«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](../../migration-de-gmail-via-ovh-mail-migrator){.external}
+> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](../../migration-de-gmail-via-ovh-mail-migrator){.external}
 > 
 
 ## En pratique
@@ -46,6 +45,13 @@ Ce message a pour but de vérifier que vous êtes bien à l'initiative de cette 
 Après validation, le message ci-dessous indique que votre choix a bien été pris en compte. Vous pouvez à présent vous connecter à votre compte Gmail en dehors des applications Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Il est nécessaire d'avoir un mot de passe à 16 caractères minimum sur votre compte Gmail, aussi appelé "mot de passe d'application". En effet lorsque vous "autoriser les applications moins sécurisées", il est nécessaire qu'un mot de passe fort soit appliqué sur votre compte Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Aller plus loin
 

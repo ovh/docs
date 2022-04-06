@@ -4,7 +4,7 @@ slug: bezpieczenstwo-gmail
 hidden: true
 ---
 
-**Ostatnia aktualizacja z dnia 03-02-2020**
+**Ostatnia aktualizacja z dnia 06-04-2022**
 
 ## Wprowadzenie
 
@@ -43,6 +43,13 @@ Ta wiadomość ma na celu sprawdzenie, czy opcja ta została rzeczywiście aktyw
 Po potwierdzeniu pojawia się poniższy komunikat informujący, że Twój wybór został uwzględniony. Teraz możesz logować się do Twojego konta Gmail poza aplikacjami Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Na koncie Gmail musisz posiadać hasło minimum 16 linii, zwane również "hasłem aplikacji". Podczas "autoryzacji aplikacji o niskim poziomie bezpieczeństwa" należy stosować silne hasło do konta Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Sprawdź również
 

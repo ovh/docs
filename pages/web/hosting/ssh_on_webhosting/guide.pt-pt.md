@@ -23,7 +23,7 @@ Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazena
 
 ### 1.ª etapa: Assegurar que o acesso SSH se encontra ativo <a name="sshcheck"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção «Web», e clique em `Alojamentos`{.action} na barra de serviços à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção «Web», e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento 
 
 Na coluna «SSH» da tabela, verifique se o utilizador SSH (ou «Login») em causa dispõe de um acesso SSH ativo. Se não for o caso, surgirá a menção «Desativado».
 

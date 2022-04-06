@@ -34,15 +34,15 @@ Em caso de ausência no seu escritório, pode configurar um respondedor de e-mai
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. 
 
-Selecione o domínio correspondente na secção `Emails`{.action}, na coluna à esquerda.
+Selecione o domínio correspondente na secção `Emails`{.action}.
 
-Clique no separador `E-mails`{.action} em cima e, a seguir, em `Gestão das respostas automáticas`{.action}.
+Clique no separador `E-mails`{.action}, a seguir, em `Gestão das respostas automáticas`{.action}.
 
 Será reencaminhado para a janela `Gestão das respostas automáticas` que apresentam o conjunto das respostas automáticas de e-mail no seu serviço de e-mail.
 
 Clique em `Adicionar uma resposta automática`{.action}
 
-![alojamento](images/email_responder01.gif){.thumbnail}
+![alojamento](images/email_responder01.png){.thumbnail}
 
 Aparecerá a janela de adição. Pode completá-la conforme as informações abaixo.
 

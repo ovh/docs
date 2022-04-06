@@ -159,7 +159,7 @@ Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhostin
 
 Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](../webhosting_installation_von_webhosting-modulen/#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [CloudDB Server](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
 
-Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Bereich `Web Cloud`{.action} und anschließend auf das Menü `Datenbanken`{.action} links in der Auswahl.
+Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Bereich `Web Cloud`{.action} und anschließend auf das Menü `Datenbanken`{.action}.
 
 Klicken Sie anschließend auf den zugehörigen Dienst. Der zu verwendende Servername wird unter dem Eintrag `Hostname` im Bereich `SQL` in `Verbindungsinformationen` angegeben.
 

@@ -15,7 +15,7 @@ This tutorial covers the process of starting a job using a Visual Studio Code Re
 ## Requirements
 
 -   an **AI Training project** created inside a **Public Cloud** project
--   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/create-user)
+-   a [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users)
 -   installing the [OVHcloud AI CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client)
 
 > [!warning]

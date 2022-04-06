@@ -1,9 +1,9 @@
 ---
-title: Redis - Capacités et limitations (EN)
+title: Redis - Capacités et limites (EN)
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-section: Redis
-order: 1
+section: Redis - Guides
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
 ---
@@ -52,11 +52,11 @@ Three plans are available:
 
 Here is an overview of the various plans capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                        |
-| ------------ | -------------------------- | ---------------- | ------------------------------ |
-| *Essential*  | 1                          | No               | Public only                    |
-| *Business*   | 2                          | No               | Public (Private vRack planned) |
-| *Enterprise* | 3                          | No               | Public (Private vRack planned) |
+| Plan         | Number of nodes by default | Additional nodes | Network                |
+| ------------ | -------------------------- | ---------------- | ---------------------- |
+| *Essential*  | 1                          | No               | Public only            |
+| *Business*   | 2                          | No               | Public & Private vRack |
+| *Enterprise* | 3                          | No               | Public & Private vRack |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
 
@@ -101,7 +101,7 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 
 #### Maximum simultaneous connections
 
-The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers. 
+The number of simultaneous connections in Public Cloud Databases for Redis depends on the available total memory on the server. We allow 4 \* megabytes_of_bytes_memory connections per RAM GB, but at least 10000 connections, even on the smallest servers.
 
 So for example on a server with 7GB memory, you will get up to 7 \* 4096 = 28672 simultaneous connections.
 
@@ -136,10 +136,37 @@ For each user you can specify:
 - Username
 - Keys (such as "cached:*")
 - Categories (such as "@set")
-- Commands (such as "-@all +get")
+- Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
+You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
+
+Here is the list of unsupported commands:
+
+- bgrewriteaof
+- cluster
+- command
+- debug
+- failover
+- migrate
+- role
+- slaveof
+- script
+- eval
+- evalsha
+- acl
+- bgsave
+- config
+- replicaof
+- lastsave
+- save
+- shutdown
+- monitor
+
+> [!primary]
+>
+> Update of user ACLs is allowed only via API. Follow this [guide](https://docs.ovh.com/fr/publiccloud/databases/redis/acls/) to learn more.
+>
 
 ## We want your feedback!
 

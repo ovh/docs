@@ -45,7 +45,7 @@ To test whether your website is compatible with IPv6, you can use the [ipv6-test
 
 ### Step 1: Retrieve your Web Hosting plan’s IPv6 address
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned.
 
 In the `General information` section, copy the entry from the **IPv6** field and move on to the next step.
 
@@ -58,7 +58,7 @@ In the `General information` section, copy the entry from the **IPv6** field and
 
 In order for a browser to find the IPv6 address with your domain name, you must modify the DNS zone associated with it and create an **AAAA** record. You can refer to our guide on [Editing a DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 
-In `Domains`{.action} in the services bar on the left-hand side, go to your domain name’s `DNS zone`{.action} tab. Click on the `Add an entry`{.action} button to the right of the table. You need to insert the IPv6 address retrieved in the previous step, using the **AAAA** record type.
+In `Domains`{.action}, go to your domain name’s `DNS zone`{.action} tab. Click on the `Add an entry`{.action} button to the right of the table. You need to insert the IPv6 address retrieved in the previous step, using the **AAAA** record type.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

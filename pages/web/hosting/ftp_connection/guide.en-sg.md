@@ -37,7 +37,7 @@ To log in to your storage space, you will need the following:
 > **If you already have this information**, you can continue directly to step 2: "[Access your storage space](./#step-2-access-your-storage-space)".
 > 
 
-If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. 
+If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. 
 
 The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
 
@@ -70,7 +70,7 @@ There are several ways you can access your storage space. We recommend reading t
 
 #### 1. Log in via FTP Explorer <a name="ftpexplorer"></a>
 
-To log in to the storage space via FTP Explorer, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=sg), then go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action} in the services bar on the left-hand side, click on the name of the Web Hosting plan concerned. 
+To log in to the storage space via FTP Explorer, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=sg), then go to the `Web Cloud`{.action} section and click on `Hosting plans`{.action}, click on the name of the Web Hosting plan concerned. 
 
 Go to the `FTP - SSH`{.action} tab, and click `FTP Explorer`{.action}. 
 

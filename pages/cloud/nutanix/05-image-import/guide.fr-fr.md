@@ -10,7 +10,7 @@ order: 05
 
 ## Objectif
 
-Vous pouvez ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors de l'installaion  d'un système d'exploitation.
+Vous pouvez ajouter des images ISO dans le système Nutanix pour les utiliser ultérieurement lors de l'installation  d'un système d'exploitation.
 
 **Ce guide vous détaille comment importer des images ISO depuis Prism Central.**
 

@@ -2,13 +2,13 @@
 title: Redis - Connectez-vous avec RedisInsight (EN)
 excerpt: Connect to your Public Cloud Databases for Redis using RedisInsight
 slug: redis/connect-redisinsight
-section: Redis
-order: 303
+section: Redis - Guides
+order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-redisinsight/'
 ---
 
-**Last updated 7th February 2022**
+**Last updated 24th March 2022**
 
 ## Objective
 
@@ -20,7 +20,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - A [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
-- An up and running Public Cloud Database for Redis
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/ca/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your Redis instance](https://docs.ovh.com/ca/fr/databases/redis/configure-redis-instance/) to accept incoming connections
 - A RedisInsight stable version installed and public network connectivity (Internet). This guide was made in RedisInsight 1.11.1
 
 ## Concept
@@ -41,41 +42,6 @@ To interact with your Redis instance with RedisInsight you need to install it.
 Please follow the official [RedisInsight](https://docs.redis.com/latest/ri/installing){.external} to get the latest information.
 
 We are now ready to learn how to connect to our Redis instance.
-
-### Configure your Redis instance to accept incoming connections
-
-Before making a connection, we need to verify that our Redis instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar and select your Redis instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user/password pair.
-
-We provide official Redis ACL, Access Control List. Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right privileges for your user. Those ACL will define the allow or disallow commands or categories of commands, keys and Pub/Sub channels.
-
-In our example, we will create a user called *redisUser* and right for the *ping* command (syntax equivalent to *<+ping>*) and *info* command (syntax equivalent to *<+info>*) / *allkeys* for keys (syntax equivalent to *<\*>*) / *allchannels* for channels (syntax equivalent to *<\*>*).
-
-![User creation](images/redis_06_connect_redisinsight-20220207155917336.png){.thumbnail}
-
-Once created or updated, the user has to be ready and with the "Enabled" status in the Control Panel.
-
-![User ready](images/redis_06_connect_redisinsight-20220207114127502.png){.thumbnail}
-
-#### Step 2: Authorise incoming connections from RedisInsight
-
-In this step, select the `Authorised IPs`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This way we can help prevent intrusive connection attempts.
-
-Click to authorise a new IP, and enter the IP of your RedisInsight environment. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
 
 ### Connect with RedisInsight
 

@@ -16,7 +16,7 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 
 -   a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 -   **AI Training activated** for your account, see [how to submit a job Step 2](https://docs.ovh.com/au/en/publiccloud/ai/training/submit-job)
--   a user for AI Training, see [how to create a user](https://docs.ovh.com/au/en/publiccloud/ai/create-user)
+-   a user for AI Training, see [how to create a user](https://docs.ovh.com/au/en/publiccloud/ai/users)
 
 ## Instructions
 

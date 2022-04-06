@@ -1,9 +1,9 @@
 ---
 title: Redis - Manage Redis ACLs via API
 slug: redis/acls
-excerpt: Update Redis users ACLs with the OVHcloud API 
-section: Redis
-order: 2
+excerpt: Update Redis users ACLs with the OVHcloud API
+section: Redis - Guides
+order: 070
 ---
 
 **Last updated March 8<sup>th</sup>, 2022**
@@ -63,8 +63,8 @@ From the resulting list, select and copy the Redis cluster ID, also known as **c
 
 Open the following API call and do the following steps:
 
-- paste your service ID into the **serviceName** input field 
-- paste the cluster ID into the **clusterId** input field 
+- paste your service ID into the **serviceName** input field
+- paste the cluster ID into the **clusterId** input field
 - click `Execute`{.action}
 
 > [!api]

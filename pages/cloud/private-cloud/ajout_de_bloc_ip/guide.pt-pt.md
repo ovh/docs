@@ -6,7 +6,7 @@ section: Funcionalidades da OVHcloud
 order: 01
 ---
 
-**Última atualização: 30/12/2021**
+**Última atualização: 06/04/2022**
 
 ## Objetivo
 
@@ -89,7 +89,7 @@ O resultado terá este formato:
 
 ![campo nexthop](images/api-result.png){.thumbnail}
 
-De seguida, utilize esta chamada API para mover o IP no “IP parking”:
+Se tiver de desassociar o bloco IP mais tarde, pode utilizar esta chamada API para mover o IP no “IP parking”:
 
 > [!api]
 >
@@ -106,6 +106,10 @@ Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHclou
 A referência da operação é “removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
+
+O IP aparecerá depois no `Endereços IP em Parking`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Quer saber mais?
 

@@ -137,8 +137,8 @@ Once saved, select your server in the servers list on the left. In the Dashboard
 >
 > pgAdmin has [useful functions](https://pgadmin.org/features){.external} such as:
 >
-> - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/6.4/backup_and_restore.html){.external} a single table, a schema, or a complete database
-> - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/6.4/role_dialog.html){.external}
+> - [Backup & Restore](https://www.pgadmin.org/docs/pgadmin4/latest/backup_and_restore.html){.external} a single table, a schema, or a complete database
+> - [Manage Roles](https://www.pgadmin.org/docs/pgadmin4/latest/role_dialog.html){.external}
 >
 
 ## Go further

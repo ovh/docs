@@ -36,9 +36,9 @@ W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obr
 
 ![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
 
-Na następnym ekranie wybierz `Zainstaluj szablon OVH`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
+Na następnym ekranie wybierz `Zainstaluj szablon OVHcloud`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
 
-Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/gb/en/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
+Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/pl/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
 
 > [!primary]
 >
@@ -135,7 +135,7 @@ Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania prob
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/rebooting-your-server.png){.thumbnail}
 

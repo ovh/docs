@@ -1,5 +1,5 @@
 ---
-title: CLI - Getting started
+title: CLI - Launch an AI notebook
 slug: cli/getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: Command Line Interface
@@ -14,7 +14,7 @@ This guide covers the submission of [**notebooks**](https://docs.ovh.com/gb/en/p
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/training/install-client/))
+-   a working `ovhai` CLI ([how to install ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/))
 
 ## Instructions
 
@@ -159,9 +159,9 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
+Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
-Learn how to share your notebooks with other people [here](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/sharing-notebooks/).
+Learn how to share your notebooks with other people [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/sharing-notebooks/).
 
 ## Feedback
 

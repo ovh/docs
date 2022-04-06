@@ -53,8 +53,6 @@ A continuación, podrá realizar diversas operaciones en función de sus necesid
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-El [modo de resiliencia](../modo-resiliencia/) de OVHcloud es una buena forma de comprobar la alta disponibilidad de su máquina virtual en **Fault Tolerance**.
-
 ## Acciones imposibles e incompatibles
 
 En las máquinas virtuales con la funcionalidad **Fault Tolerance** activada, no es posible realizar algunas acciones ni utilizar ciertos periféricos.

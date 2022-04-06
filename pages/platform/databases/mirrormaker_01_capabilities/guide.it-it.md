@@ -54,14 +54,13 @@ Three plans are available:
 
 Here is an overview of the various plans capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                        |
-| ------------ | -------------------------- | ---------------- | ------------------------------ |
-| *Essential*  | 1                          | No               | Public only                    |
-| *Business*   | 3                          | No               | Public (Private vRack planned) |
-| *Enterprise* | 6                          | No               | Public (Private vRack planned) |
+| Plan         | Number of nodes by default | Additional nodes | Network                |
+| ------------ | -------------------------- | ---------------- | ---------------------- |
+| *Essential*  | 1                          | No               | Public only            |
+| *Business*   | 3                          | No               | Public & Private vRack |
+| *Enterprise* | 6                          | No               | Public & Private vRack |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network.
-
 
 #### Nodes
 
@@ -86,7 +85,6 @@ Here are the node types you can choose from:
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
 
-
 **Business plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
@@ -95,7 +93,6 @@ Here are the node types you can choose from:
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
 
-
 **Enterprise plans**
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
@@ -103,7 +100,6 @@ Here are the node types you can choose from:
 | db1-7   | N/A       | 2     | 7           |
 | db1-15  | N/A       | 4     | 15          |
 | db1-30  | N/A       | 8     | 30          |
-
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
@@ -121,20 +117,20 @@ For both public and private networks, Ingress and Egress traffic are included in
 
 #### Kafka replication and data retention
 
-You can select a Kafka source cluster and a Kakfa destination cluster from the same Public Cloud project.
+You can select a Kafka source cluster and a Kafka destination cluster from the same Public Cloud project.
 External Kafka clusters are not supported so far.
 
-You  need at least 2 kafka clusters to create replication flows.
+You  need at least 2 Kafka clusters to create replication flows.
 
 Replication flows allowed parameters are:
 
-- Source;
-- Target;
-- Topics;
-- Topics exclusion;
-- Sync group offset;
-- Sync interval in seconds (s);
-- Heartbeats (true/false).
+- Source
+- Target
+- Topics
+- Topics exclusion
+- Sync group offset
+- Sync interval in seconds (s)
+- Heartbeats (true/false)
 
 Data retention is only limited by your cluster storage space.
 
@@ -155,7 +151,6 @@ As of today, you can't export logs and metrics, nor plug them into a remote tool
 - **Metrics retention :** 1 calendar month.
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 

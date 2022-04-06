@@ -5,7 +5,11 @@ excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
 section: 'Rete e IP'
 ---
 
-**Ultimo aggiornamento: 01/12/2021**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 30/03/2022**
 
 ## Obiettivo
 
@@ -21,13 +25,13 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
-- Tutti i dati del tuo IPv6 (prefisso, gateway, etc.)
-- Una conoscenza basilare di reti e [SSH](../introduzione-ssh/)
+- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud.
+- Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
+- Una conoscenza basilare di reti e [SSH](../introduzione-ssh/).
 
 ## Procedura
 
-Se per installare il tuo server utilizzi un template per il SO Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
+Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
 
 Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un IP Failover configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
 
@@ -41,6 +45,11 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 > - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!warning]
+> Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPV6 (/128). In questo caso, consulta questa [guida](https://docs.ovh.com/it/vps/configurare-ipv6/) per configurare l'ipv6 su un server Kimsufi.
+>
 >
 
 > [!api]
@@ -124,7 +133,7 @@ Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utiliz
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Il file di configurazione di rete del tuo server si trova in /etc/sysconfig/network-scripts/ifcfg-eth0. Usa la riga di comando per localizzare questo file e aprilo per modificarlo.
+Il file di configurazione di rete del tuo server si trova in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Usa la riga di comando per localizzare questo file e aprilo per modificarlo.
 
 #### Step 3: Modifica il file di configurazione di rete.
 
@@ -220,7 +229,7 @@ Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utiliz
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Apri il file di configurazione di rete che si trova in /etc/systemd/network. A scopo dimostrativo, il nome del nostro file è 50-default.network.
+Apri il file di configurazione di rete che si trova in `/etc/systemd/network`. A scopo dimostrativo, il nome del nostro file è 50-default.network.
 
 #### Step 3: Modifica il file di configurazione di rete.
 
@@ -303,9 +312,9 @@ Digita la configurazione del tuo IPv6 (`indirizzo IPv6` e `gateway predefinito`)
 
 Se dopo aver testato la tua connessione riscontri ancora dei problemi, crea una richiesta di assistenza per l’esame delle tue configurazioni. È necessario fornire quando segue:
 
-- il nome e la versione del sistema operativo che utilizzi sul tuo server
-- il nome e la directory del file di configurazione di rete 
-- il contenuto di quel file 
+- Il nome e la versione del sistema operativo che utilizzi sul tuo server.
+- Il nome e la directory del file di configurazione di rete. 
+- Il contenuto di quel file. 
 
 
 ## Per saperne di più
