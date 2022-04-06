@@ -1,12 +1,12 @@
 ---
-title: Deploy an app to classify sounds with pre-trained model using Streamlit
-slug: streamlit-sounds-classification
+title: AI Training - Tutorial - Deploy an app to classify sounds with pre-trained model using Streamlit
+slug: training/tuto-streamlit-sounds-classification
 excerpt: How to deploy a Streamlit app to classify sounds
-section: Tutorials
+section: AI Training tutorials
 order: 13
 ---
 
-**Last updated 5th of April, 2022.**
+**Last updated 6th April, 2022.**
 
 ## Objective
 
@@ -14,27 +14,27 @@ The purpose of this tutorial is to deploy an application to classify sounds from
 
 The use case is marine mammal sounds, a topic already covered in a previous [tutorial](link to the blog post).
 
-In order to do this, you will use [Streamlit][Streamlit], a Python framework that turns scripts into shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
+In order to do this, you will use [Streamlit](Streamlit), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
 Overview of the app:
 
-![image](images/overview-streamlit-sounds.png){.thumbnail}
+![Overview](images/overview-streamlit-sounds.png){.thumbnail}
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-* an AI Training project created inside a Public Cloud project
-* a [user for AI Training][OVH Create user]
-* [Docker][Docker Get Started] installed on your local computer
-* some knowledge about building image and [Dockerfile][Dockerfile reference]
-* have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).You will be able to obtain your data.csv file and save your model.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
+- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
+- [Docker](Docker Get Started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](Dockerfile reference);
+- You also should have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb). You will be able to obtain your data.csv file and save your model.
 
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.
 
-* More information about Streamlit capabilities can be found [here][Streamlit Doc]
-* Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/marine_sounds_classification_app)
+- More information about Streamlit capabilities can be found [here](Streamlit Doc).
+- Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/marine_sounds_classification_app).
 
 ### Write the Streamlit application
 
@@ -55,7 +55,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import LabelEncoder
 ```
 
-Create the function that allow to save the uploaded sounds in an `Object Container`.
+Create the function that allows to save the uploaded sounds in an `Object Container`.
 
 ```python
 def save_file(sound_file):
@@ -65,7 +65,7 @@ def save_file(sound_file):
     return sound_file.name
 ```
 
-Create the function that allow to transform each sound into a `csv` file.
+Create the function that allows to transform each sound into a `csv` file.
 
 ```python
 def transform_wav_to_csv(sound_saved):
@@ -104,7 +104,7 @@ def transform_wav_to_csv(sound_saved):
     return df_test
 ```
 
-Define the function that classifies the sound from the previously trained model.
+Define the function that classifies the sounds from the previously trained model.
 
 > [!primary]
 >
@@ -252,9 +252,6 @@ docker build . -t streamlit_app:latest
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-
-> [!primary]
->
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **sreamlit_app:latest**.
 >
 
@@ -282,7 +279,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here][OVH Add private registry].
+> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
 >
 
 Find the address of your shared registry by launching this command:
@@ -291,7 +288,7 @@ Find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credentials:
+Log in on the shared registry with your usual OpenStack credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
@@ -320,9 +317,6 @@ ovhai job run --default-http-port 8501 \
 > [!primary]
 >
 > `--default-http-port 8501` indicates that the port to reach on the job URL is the `8501`.
->
-
-> [!primary]
 >
 > `--cpu 1` indicates that we request 1 CPU for that job.
 >
@@ -356,3 +350,9 @@ If you want your notebook to be accessible without the need to authenticate, spe
 >
 > Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 >
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
