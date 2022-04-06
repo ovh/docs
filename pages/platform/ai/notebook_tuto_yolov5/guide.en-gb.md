@@ -44,9 +44,9 @@ ovhai data upload <region> <container> <paths>
 
 ### Launching and accessing Jupyter notebook with PyTorch framework
 
-You need to attach a volume if your data is in your OVHcloud object storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data][OVH Data].
+You need to attach a volume if your data is in your OVHcloud object storage and you want to use it during your experiment, or if you need to save the results of your work in the object storage. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](OVH Notebooks).
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/definition/).
 
 1. `Name your notebook`
 2. `Choose Jupyterlab editor`
