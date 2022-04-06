@@ -18,7 +18,7 @@ Connaitre et utiliser Nutanix Flow pour la sécurisation du réseau au sein d'un
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
-## Présentaion de de **Nutanix Flow**
+## Présentation de de **Nutanix Flow**
 
 Cette option est disponible dans toutes les offres **Hosted Private Cloud Powered by Nutanix**. Elle permet de protéger le réseau sein d'un ou plusieurs clusters Nutanix gérés par **Prism Central**.
 
@@ -41,7 +41,7 @@ Cliquez sur l'icône `engrenage`{.action} en haut à droite pour modifier les pa
 
 ![Activate Flow 01](images/activatemicrosegmentation01.png){.thumbnail}
 
-Faites défiler la `barre de défilement`{.action} à gauche et cliquez sur `Microsegementation`{.action}.
+Faites défiler la `barre de défilement`{.action} à gauche et cliquez sur `Microsegmentation`{.action}.
 
 ![Activate Flow 02](images/activatemicrosegmentation02.png){.thumbnail}
 
@@ -57,7 +57,7 @@ La microsegmentation est activée. Il est possible de la désactiver.
 
 Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaines catégories sont présentes lors de l'installation de **Prism Central** et il est possible de créer des nouvelles catégories.
 
-Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des VM, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
+Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
 
 # Création d'une catégorie
 
@@ -109,7 +109,7 @@ Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une caté
 
 #### Mise en quarantaine d'une VM
 
-La quarantaine est utilisable avec les options par défaut si la micro-segmentation ast active. Elle peut s'appliquer à une ou plusieurs machines virtuelles.
+La quarantaine est utilisable avec les options par défaut si la micro-segmentation est active. Elle peut s'appliquer à une ou plusieurs machines virtuelles.
 
 Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
@@ -138,29 +138,29 @@ Cliquez sur le `numéro`{.action} à coté de `Quarantined` pour voir les machin
 
 ![Configure Quarantine 02](images/configurequarantinerule02.png){.thumbnail}
 
-La liste des machines virtuelles en quarantaine apparait dans `Name` cliquez sur `Close`{.action} pour revenir au menu précedent.
+La liste des machines virtuelles en quarantaine apparait dans `Name` cliquez sur `Close`{.action} pour revenir au menu précèdent.
 
 ![Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
 
-CLiquez sur `Quarantine`{.action} en dessous de Name à gauche pour modifier la règle.
+Cliquez sur `Quarantine`{.action} en dessous de Name à gauche pour modifier la règle.
 
 ![Configure Quarantine 04](images/configurequarantinerule04.png){.thumbnail}
 
-Le status de la règle est en mode `Monitoring ` comme indiqué en haut à gauche. 
+Le statut de la règle est en mode `Monitoring ` comme indiqué en haut à gauche. 
 
-Le trafic n'est pas bloqué mais surveillé comme on peut le voir en bas à droite et à gauche entre les machines virtuelles en quarantaines et l'ensemble du réseau interne et externe au travers de traits orange.
+Le trafic n'est pas bloqué mais surveillé. Les connexions entres les machines virtuelles mises en quarantaines et le reste du réseau est représenté par des traits de couleurs oranges reliés à des rectangles représentant l'adresse IP de source ou de destination.
 
-!Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
+Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
 
 Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
 ![Configure Quarantine 05](images/configurequarantinerule05.png){.thumbnail}
 
-Le statuts de la règle est maintenant sur `Enforced` 
+Le statut de la règle est maintenant sur `Enforced` 
 
 Le trafic est bloqué et il est possible de voir les tentatives d'accès aux machines virtuelles en quarantaines avec des fenêtres et des liens de couleur rouge.
 
-IL est possible de modifier la règle de quarantaine pour autoriser certains flux.
+Il est possible de modifier la règle de quarantaine pour autoriser certains flux.
 
 ![Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
 
@@ -172,11 +172,12 @@ Cliquez sur `Next`{.action}
 
 ![Configure Quarantine 08](images/configurequarantinerule08.png){.thumbnail}
 
-Positionnez la souris sur une règle de blocage et cliquez sur `Allow Traffic`{.action}
+Positionnez la souris sur une règle de blocage entrante et cliquez sur `Allow Traffic`{.action}
 
 ![Configure Quarantine 09](images/configurequarantinerule09.png){.thumbnail}
 
-Sélectionnez le trafic découvert entrant en cliquant sur la `case à cocher`{.action} à gauche de la règle. et cliquez sur `Allow 1 Discovered Traffic`{.action}. Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping, le reste du trafic venant de cette machine virtuelle sera bloqué.
+Cliquez sur la `case à cocher`{.action} à gauche de la règle pour Sélectionner le trafic découvert entrant. Ensuite cliquez sur `Allow 1 Discovered Traffic`{.action}.
+Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping, le reste du trafic venant de cette machine virtuelle sera bloqué.
 
 ![Configure Quarantine 10](images/configurequarantinerule10.png){.thumbnail}
 
@@ -184,11 +185,13 @@ Positionez la souris sur une règle de blocage sortante et cliquez sur `Allow Tr
 
 ![Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
 
-Sélectionnez le trafic découvert sortant en cliquant sur la `case à cocher`{.action} à gauche de la règle et cliquez sur `Allow 1 Discovered Traffic`{.action}. Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping, le reste du trafic allant vers cette machine virtuelle est bloqué.
+Cliquez sur la `case à cocher`{.action} à gauche de la règle pour Sélectionner le trafic découvert sortant. Ensuite cliquez sur `Allow 1 Discovered Traffic`{.action}.
+Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'est le protocole ICMP sur le ping, le reste du trafic sortant vers cette machine virtuelle sera bloqué.
+
 
 ![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
-Le trafic autorisé est maintenant visible avec des traits de couleurs bleus et le trafic bloqué reste en rouge.
+Le trafic autorisé est maintenant visible avec des traits de couleurs bleus alors que le trafic bloqué est en rouge.
 
 Ces autorisations sont fastidieuses à gérer car il faut attendre la découverte du trafic réseau et ensuite l'autoriser, il est possible de rajouter une règle manuellement sans passer par cette découverte.
 
@@ -227,7 +230,7 @@ Cliquez sur `Save and Enforce`{.action} pour appliquez les changements sur la r�
 
 ### Création d'une règle d'isolation du réseau.
 
-### Création d'und règle d'application.
+### Mise en place d'une règle d'application.
 
 
 ## Aller plus loin
