@@ -12,9 +12,9 @@ order: 13
 
 The purpose of this tutorial is to deploy an application to classify sounds from a pre-trained model.
 
-The use case is marine mammal sounds, a topic already covered in a previous [tutorial](link to the blog post).
+The use case is marine mammal sounds, a topic already covered in a previous [tutorial](https://blog.ovhcloud.com/ai-notebooks-analyze-and-classify-sounds-with-ai/).
 
-In order to do this, you will use [Streamlit](Streamlit), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
+In order to do this, you will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
 Overview of the app:
 
@@ -25,15 +25,15 @@ Overview of the app:
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
-- [Docker](Docker Get Started) installed on your local computer;
-- Some knowledge about building image and [Dockerfile](Dockerfile reference);
+- [Docker](https://www.docker.com/get-started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - You also should have followed the steps of the marine mammal sounds classification notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb). You will be able to obtain your data.csv file and save your model.
 
 ## Instructions
 
 You are going to follow different steps to build your Streamlit application.
 
-- More information about Streamlit capabilities can be found [here](Streamlit Doc).
+- More information about Streamlit capabilities can be found [here](https://docs.streamlit.io/en/stable/).
 - Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/streamlit/marine_sounds_classification_app).
 
 ### Write the Streamlit application
