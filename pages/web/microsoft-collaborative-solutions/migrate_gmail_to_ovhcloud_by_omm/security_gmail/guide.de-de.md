@@ -48,7 +48,7 @@ Nach der Validierung zeigt die folgende Meldung an, dass Ihre Auswahl berücksic
 
 > [!warning]
 >
-> Sie benötigen ein Passwort mit mindestens 16 Zeichen auf Ihrem Gmail-Account, auch als "Application Passwort" bezeichnet. Wenn Sie „Weniger sichere Apps zulassen", muss Ihr Gmail-Account ein starkes Passwort verwenden.
+> Sie benötigen ein Passwort mit mindestens 16 Zeichen auf Ihrem Gmail-Account, auch als "Application Passwort" bezeichnet. Wenn Sie „Weniger sichere Apps zulassen" aktivieren, muss Ihr Gmail-Account ein starkes Passwort verwenden.
 >
 > ![omm](images/OMM-gmail-security-08.png){.thumbnail}
 >
