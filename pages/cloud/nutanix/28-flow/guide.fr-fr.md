@@ -49,7 +49,7 @@ Cliquez sur la `case à cocher`{.action} à gauche de **Enable Microsegmentation
 
 ![Activate Flow 03](images/activatemicrosegmentation03.png){.thumbnail}
 
-La microsegmentation est activée. Il est possible de la désactiver.
+La micro-segmentation est activée. Il est possible de la désactiver.
 
 ![Activate Flow 04](images/activatemicrosegmentation04.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouto
 
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
 
-![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle fasse partie de la catégorie choisie.
+![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
 
 ### Gestion de la quarantaine réseau.
 
@@ -148,13 +148,15 @@ Cliquez sur `Quarantine`{.action} en dessous de Name à gauche pour modifier la 
 
 Le statut de la règle est en mode `Monitoring ` comme indiqué en haut à gauche. 
 
-Le trafic n'est pas bloqué mais surveillé. Les connexions entres les machines virtuelles mises en quarantaines et le reste du réseau est représenté par des traits de couleurs oranges reliés à des rectangles représentant l'adresse IP de source ou de destination.
+Le trafic n'est pas bloqué mais surveillé. Les connexions entre les machines virtuelles mises en quarantaines et le reste du réseau sont représentées par des traits de couleurs orange reliés à des rectangles représentant l'adresse IP de source ou de destination.
 
 Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
 
+![Configure Quarantine 05](images/configurequarantinerule05.png){.thumbnail}
+
 Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
-![Configure Quarantine 05](images/configurequarantinerule05.png){.thumbnail}
+![Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
 
 Le statut de la règle est maintenant sur `Enforced` 
 
@@ -162,9 +164,7 @@ Le trafic est bloqué et il est possible de voir les tentatives d'accès aux mac
 
 Il est possible de modifier la règle de quarantaine pour autoriser certains flux.
 
-![Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
-
-Cliquez sur Cliquez sur `Enforce`{.action} en haut à droite pour modifier la règle.
+Cliquez sur Cliquez sur `Update`{.action} en haut à droite pour modifier la règle.
 
 ![Configure Quarantine 07](images/configurequarantinerule07.png){.thumbnail}
 
@@ -191,7 +191,7 @@ Cette action n'autorise que le trafic spécifique découvert dans cet exemple c'
 
 ![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
-Le trafic autorisé est maintenant visible avec des traits de couleurs bleus alors que le trafic bloqué est en rouge.
+Le trafic autorisé est maintenant visible avec des traits de couleurs grises alors que le trafic bloqué est en rouge.
 
 Ces autorisations sont fastidieuses à gérer car il faut attendre la découverte du trafic réseau et ensuite l'autoriser, il est possible de rajouter une règle manuellement sans passer par cette découverte.
 
@@ -223,12 +223,26 @@ Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: categ
 
 Cliquez sur `Next`{.action}
 
-![Configure Quarantine 19](images/configurequarantinerule18.png){.thumbnail}
+![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
 Cliquez sur `Save and Enforce`{.action} pour appliquez les changements sur la règle de quarantaine.
 
+![Configure Quarantine 20](images/configurequarantinerule20.png){.thumbnail}
+
+Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quarantaine.
+
+![Configure Quarantine 21](images/configurequarantinerule21.png){.thumbnail}
+
+Le statut de de la règle est sur sur `Enforced`, certaines règles d'autorisations sont configurées pour la quarantaine en mode `Forensics` par contre sur le mode `strict` aucune autorisation n'est faite. Si une nouvelle machine virtuelle est mise en quarantaine ce sont ces règles qui seront appliquées.
+
+![Configure Quarantine 22](images/configurequarantinerule22.png){.thumbnail}
+
 
 ### Création d'une règle d'isolation du réseau.
+
+
+
+
 
 ### Mise en place d'une règle d'application.
 
