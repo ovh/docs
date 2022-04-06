@@ -107,6 +107,8 @@ The operation name is removeIpRipeBlock.
 
 ![operations manager](images/operations.png){.thumbnail}
 
+The IP will then appear in the `IP parking`{.action}.
+
 ![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Go further
