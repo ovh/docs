@@ -19,8 +19,8 @@ The purpose of this tutorial is to show you how to build and use a custom Docker
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - An **AI Training project** created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
-- [Docker](Docker Get Started) installed on your local computer;
-- Some knowledge about building image and [Dockerfile](Dockerfile reference).
+- [Docker](https://www.docker.com/get-started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 ## Instructions
 
@@ -94,7 +94,7 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-- More information about Dockerfiles can be found [here](Dockerfile reference).
+- More information about Dockerfiles can be found [here](https://docs.docker.com/engine/reference/builder/).
 - Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/flask/hello-world/Dockerfile).
 
 ### Build the Docker image from the Dockerfile
