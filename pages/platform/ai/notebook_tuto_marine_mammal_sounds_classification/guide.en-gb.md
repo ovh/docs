@@ -49,11 +49,11 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide][OVH Notebooks].
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/).
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
-If you want to launch it with the CLI, choose the [volume][OVH JOB cli] you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
+If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
 ovhai notebook run one-for-all jupyterlab \
@@ -66,7 +66,7 @@ You can then reach your notebook’s URL once the notebook is Running.
 
 ### Cloning the GitHub repository
 
-The GitHub repository containing all examples for OVHcloud AI TRAINING is available [here][GITHUB OVHAI Examples].
+The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
 
 Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
 
