@@ -34,7 +34,7 @@ Hugging Face allows us to show the Tweets sentiments according to their topic.
 In order to do this, we will compare 3 models on the sentiment analysis of Tweets: 2 *Sentiment analysis* models working on French and another one on multilingual.
 
 - Model based on [CamemBERT](https://huggingface.co/transformers/model_doc/camembert.html): [pt-tblard-tf-allocine](https://huggingface.co/philschmid/pt-tblard-tf-allocine)
-- Mdel based on [BARThez](https://huggingface.co/transformers/model_doc/barthez.html): [barthez-sentiment-classification](https://huggingface.co/moussaKam/barthez)
+- Model based on [BARThez](https://huggingface.co/transformers/model_doc/barthez.html): [barthez-sentiment-classification](https://huggingface.co/moussaKam/barthez)
 - Model based on [BERT](https://huggingface.co/transformers/model_doc/bert.html): [bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
 
 We will also use a model to classify the Tweets according to their topic: a *Zero-Shot classification* model working on French.
