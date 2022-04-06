@@ -4,17 +4,16 @@ slug: securite-gmail
 hidden: true
 ---
 
-**Dernière mise à jour le 03/02/2020**
+**Dernière mise à jour le 06/04/2022**
 
 ## Objectif
 
 
-Ce guide vous détaille comment activer l'option "autoriser les applications moins sécurisées" sur votre compte Gmail.
+Ce guide vous détaille comment activer l'option « autoriser les applications moins sécurisées » sur votre compte Gmail.
 
 > [!primary]
 > 
-Cette documentation est une étape liée au guide 
-[«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator){.external}
+> Cette documentation est une étape liée au guide [«Migrer un compte Gmail vers une adresse e-mail OVHcloud via OVH Mail Migrator»](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-de-gmail-via-ovh-mail-migrator){.external}.
 > 
 
 ## En pratique
@@ -46,6 +45,13 @@ Ce message a pour but de vérifier que vous êtes bien à l'initiative de cette 
 Après validation, le message ci-dessous indique que votre choix a bien été pris en compte. Vous pouvez à présent vous connecter à votre compte Gmail en dehors des applications Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Le mot de passe de votre compte Gmail doit comporter un minimum de 16 caractères, et ainsi être considéré comme un « mot de passe d'application ». En effet, lorsque vous « autorisez les applications moins sécurisées », il est nécessaire qu'un mot de passe fort soit appliqué sur votre compte Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Aller plus loin
 

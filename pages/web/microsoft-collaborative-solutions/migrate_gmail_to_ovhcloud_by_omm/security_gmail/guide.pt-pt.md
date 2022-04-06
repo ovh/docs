@@ -4,7 +4,7 @@ slug: seguridad_gmail
 hidden: true
 ---
 
-**Última atualização: 03/02/2020**
+**Última atualização: 06/04/2022**
 
 ## Objetivo
 
@@ -43,6 +43,13 @@ Esta mensagem tem como objetivo verificar se esteve na origem desta ativação. 
 Depois da validação, a mensagem seguinte indica que a sua escolha foi considerada. Pode agora ligar-se à sua conta Gmail fora das aplicações Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> É necessário ter uma palavra-passe de 16 dígitos na sua conta Gmail, também conhecida como "password de aplicação". Quando "autorizar as aplicações menos seguras", é necessário que uma palavra-passe forte seja aplicada na sua conta Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Quer saber mais?
 
