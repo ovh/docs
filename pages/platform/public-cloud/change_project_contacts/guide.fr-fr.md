@@ -1,7 +1,7 @@
 ---
-title: "Changer les contacts d’un projet"
-excerpt: "Découvrez comment changer les contacts d'un projet Public Cloud"
-slug: changer-les-contacts-dun-projet
+title: "Gestion de contacts d’un projet"
+excerpt: "Découvrez comment gérer les contacts d'un projet Public Cloud"
+slug: gestion-des-contacts-dun-projet-PCI
 section: 'Gestion de projets'
 order: 6
 ---
@@ -10,10 +10,10 @@ order: 6
 
 ## Objectif
 
-Vous pouvez modifier les contacts pour l'administration et la facturation d'un projet Public Cloud dans votre espace client.<br>
-La modification de ces contacts permet de dissocier la gestion technique des services d'un projet de sa facturation.
+Vous pouvez modifier les contacts administrateur et facturation d'un projet Public Cloud dans votre espace client.<br>
+La modification de ces contacts permet de dissocier la gestion technique de la gestion facturation, pour les services d'un projet .
 
-**Ce guide vous explique comment changer les contacts d'un projet Public Cloud dans votre espace client.**
+**Ce guide vous explique comment modifier les contacts d'un projet Public Cloud dans votre espace client.**
 
 ## Prérequis
 
@@ -27,7 +27,7 @@ La modification de ces contacts permet de dissocier la gestion technique des ser
 
 Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez sur `Contacts and Rights`{.action} dans la section **Project Management**.
 
-Cette page vous permet de voir les contacts administratif et facturation associés à votre projet.
+Cette page vous permet de voir les contacts administrateur et facturation associés à votre projet.
 
 ![change-contacts](images/contact1.png){.thumbnail}
 
@@ -37,11 +37,11 @@ Les contacts de votre projet Public Cloud s'affichent dans le tableau. Cliquez s
 
 ![change-contacts](images/contactchange.png){.thumbnail}
 
-Dans la nouvelle fenêtre, indiquez le nichandle souhaité pour chaque contact que vous souhaitez modifier. Notez que les comptes OVHcloud pour les contacts `Admin` et `Billing` doivent être obligatoirement renseignés dans la même filiale OVHcloud.
+Dans la nouvelle fenêtre, indiquez l'identifiant client souhaité pour chaque contact que vous souhaitez modifier. Notez que les comptes OVHcloud pour les `Contact administrateur` et `Contact facturation` doivent être obligatoirement renseignés dans la même filiale OVHcloud.
 
 ![change-contacts](images/contactchange1.png){.thumbnail}
 
-Après avoir cliqué sur le bouton `Confirmer`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un token permettant d'accepter le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
+Après avoir cliqué sur le bouton `Valider`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un code(token) permettant de valider le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
 
 Pour une explication plus détaillée de cette procédure, nous vous invitons à consulter notre guide "[Gérer les contacts de ses services](../../customer/gestion-des-contacts/)".
 
