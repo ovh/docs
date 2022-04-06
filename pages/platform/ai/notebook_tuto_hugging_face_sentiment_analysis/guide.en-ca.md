@@ -45,8 +45,8 @@ We will also use a model to classify the Tweets according to their topic: a *Zer
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca);
+- A [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account;
 - A Public Cloud user with the ability to start AI Notebooks;
 - A Hugging Face account (if you want!).
 
@@ -61,11 +61,11 @@ Beforehand, if you want to store your data (Tweets) in an **object container**, 
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai data upload <region> <container> <paths>

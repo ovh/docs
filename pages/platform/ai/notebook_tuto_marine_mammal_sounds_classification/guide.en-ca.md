@@ -16,8 +16,8 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca);
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account;
 - A user for AI Notebooks
 - Your own dataset
 
@@ -25,11 +25,11 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai data upload <region> <container> <paths>
@@ -47,13 +47,13 @@ ovhai data upload <region> <container> <paths>
 > Although this tutorial is based on the use of the **TensorFlow** image, we advise you to use this image: **One image to rule them all**. This will help you avoid errors when installing libraries such as Librosa or SoundFile, Python audio libraries.
 >
 
-You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
+You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), just follow this [guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/).
+If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), just follow this [guide](https://docs.ovh.com/ca/en/publiccloud/ai/cli/getting-started-cli/).
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
-If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
+If you want to launch it with the CLI, choose the [volume](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
 ovhai notebook run one-for-all jupyterlab \
