@@ -89,7 +89,7 @@ When you create a PersistentVolume Claim on your Kubernetes cluster, we provisio
 
 Since Kubernetes 1.11, support for expanding `PersistentVolumeClaims` (PVCs) is enabled by default, and it works on Cinder volumes. In order to learn how to resize them, please refer to the [Resizing PersistentVolumes](../resizing-persistent-volumes/) tutorial. Kubernetes PVCs resizing only allows to expand volumes, nor to decrease them.
 
-## Setting-up a PersistentVolume
+## Setting up a PersistentVolume
 
 In this guide we are going to use a simple example: a small Nginx web server, running in a Pod, created by a Deployment, attached to a PersistentVolume.
 

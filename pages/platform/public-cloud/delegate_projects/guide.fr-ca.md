@@ -26,17 +26,13 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Cette page vous permet de voir les contacts associés à votre projet.
 
-![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
-
-### Configurer les contacts du projet
+![public-cloud-delegate-projects](images/delegatingproject_ca01.png){.thumbnail}
 
 Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Cela ouvrira la rubrique **Gestion des contacts** de votre espace client. Suivez les instructions décrites dans notre guide « [Gérer les contacts de ses services](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/) » afin de finaliser cette manipulation.
 
-### Ajouter des contacts et des droits
+Cliquez sur le bouton `Ajouter`{.action} pour ajouter un utilisateur et lui attribuer des droits. Dans la fenêtre qui apparaît, renseignez l'identifiant de l'utilisateur  (email@example.com) puis sélectionnez `Lecture seule` ou `Lecture/Écriture` dans le menu déroulant.
 
-Cliquez sur le bouton `Ajouter`{.action} pour ajouter un utilisateur et lui attribuer des droits. Dans la fenêtre qui apparaît, renseignez l'identifiant de l'utilisateur (sous la forme xx00000-ovh) puis sélectionnez `Lecture seule` ou `Lecture/Écriture` dans le menu déroulant.
-
-![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca02.png){.thumbnail}
 
 > [!primary]
 >
@@ -47,7 +43,7 @@ Cliquez sur `Ajouter`{.action} pour valider la délégation d'accès. Un e-mail 
 
 Une fois la page rechargée, les comptes clients OVHcloud ajoutés ainsi que leurs droits respectifs sont listés dans le tableau.
 
-![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
+![public-cloud-delegate-projects](images/delegatingproject_ca03.png){.thumbnail}
 
 Pour révoquer un accès, cliquez sur le bouton `...`{.action} puis sélectionnez `Supprimer`{.action}.
 

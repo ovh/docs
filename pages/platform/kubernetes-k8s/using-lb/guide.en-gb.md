@@ -1,12 +1,11 @@
 ---
 title: Using the OVHcloud Managed Kubernetes LoadBalancer
-excerpt: ''
+excerpt: Find out how to use and deploy an OVHcloud Managed Kubernetes LoadBalancer
 slug: using-lb
 section: Getting started
 ---
 
-
-**Last updated 19<sup>th</sup> October 2021.**
+**Last updated 5th April 2022**
 
 <style>
  pre {
@@ -39,7 +38,7 @@ In this tutorial we are explaining how to deploy services on OVHcloud Managed Ku
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
 
 > [!warning]
-> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your K8S application.
+> When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your Kubernetes application.
 > The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
@@ -48,7 +47,7 @@ When you begin to use Kubernetes for real applications, one of the first questio
 
 There are several ways to route the external traffic into your cluster:
 
-- Using Kubernetes proxy and `ClusterIP`: The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external source, you can open a Kubernetes proxy between the external source and the cluster. Its is usually only used for development.
+- Using Kubernetes proxy and `ClusterIP`: The default Kubernetes `ServiceType` is `ClusterIP`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external source, you can open a Kubernetes proxy between the external source and the cluster. Its is usually only used for development.
 
 - Exposing services as `NodePort`: Declaring a `Service` of type `NodePort` exposes the service on each Node’s IP at a static port (the `NodePort`). You can then access the `Service` from the outside of the cluster by requesting `<NodeIp>:<NodePort>`. It can be used for production, with some limitations.
 
@@ -56,11 +55,11 @@ There are several ways to route the external traffic into your cluster:
 
 ### Using Kubernetes proxy and ClusterIP
 
-The default Kubernetes `ServiceType` is `ClusterIp`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIp` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
+The default Kubernetes `ServiceType` is `ClusterIP`, that exposes the `Service` on a cluster-internal IP. To reach the `ClusterIP` from an external computer, you can open a Kubernetes proxy between the external computer and the cluster.
 
-You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIp).
+You can use `kubectl` to create such a proxy. When the proxy is up, you're directly connected to the cluster, and you can use the `Services` internal IP (ClusterIP).
 
-![ClusterIp and kubectl proxy](images/using-lb-ClusterIp.jpg){.thumbnail}
+![ClusterIP and kubectl proxy](images/using-lb-ClusterIp.jpg){.thumbnail}
 
 This method isn't suited for a production environment, but it's interesting for development, debugging or other quick-and-dirty operations.
 
@@ -149,7 +148,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ovhplatform/hello
+        image: ovhplatform/hello:1.0
         ports:
         - containerPort: 80
 ```
@@ -162,13 +161,14 @@ kubectl apply -f hello.yml
 
 After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created:
 
-<pre class="console"><code>$ kubectl apply -f  hello.yml
-service/hello-world created
-deployment.apps/hello-world-deployment created
+<pre class="console"><code>$ kubectl apply -f hello.yml
+
+service/hello-world unchanged
+deployment.apps/hello-world-deployment configured
 </code></pre>
 
 > [!primary]
-> The application you have just deployed is a simple nginx server with a single static *Hello World* page. 
+> The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
 > Basically it just deploys the Docker image [`ovhplatform/hello`](https://hub.docker.com/r/ovhplatform/hello/)
 
 ### List the services
@@ -195,13 +195,13 @@ NAME          TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)        AGE
 hello-world   LoadBalancer   10.3.81.234   xxx.xxx.xxx.xxx   80:31699/TCP   4m
 </code></pre>
 
-For each service you deploy with `LoadBalancer` type, you will get a new IPv4 `xxx.xxx.xxx.xxx` to access the service.
+For each service you deploy with `LoadBalancer` type, you will get a new IPv4 with the `xxx.xxx.xxx.xxx` format to access the service.
 
 ### Testing your service
 
-If you point your web browser to the service URL, the `hello-world` service will answer you:
+If you point your web browser to the `EXTERNAL-IP` value, the `hello-world` service will answer you:
 
-![Testing your service](images/using-lb-01.png){.thumbnail}
+![Testing your service](images/using-lb.png){.thumbnail}
 
 ### Cleaning up
 
@@ -217,7 +217,8 @@ If you list the services you will see that `hello-world` doesn't exist anymore:
 
 <pre class="console"><code>$ kubectl delete service hello-world
 service "hello-world" deleted
-$ kubectl get services
+
+$ kubectl get services -l app=hello-world
 No resources found.
 </code></pre>
 
@@ -230,19 +231,20 @@ kubectl delete deploy hello-world-deployment
 And now if you list your deployment you will find no resource:
 
 <pre class="console"><code>$ kubectl delete deploy hello-world-deployment
-deployment.extensions "hello-world-deployment" deleted
-$ kubectl get deployments
+deployment.apps "hello-world-deployment" deleted
+
+$ kubectl get deployments -l app=hello-world
 No resources found.
 </code></pre>
 
 If now you list the pods:
 
 ```bash
-kubectl get pods
+kubectl get pod -n default -l app=hello-world
 ```
 
-you will see that the pod created for `hello-world` has been deleted too:
+You will see that the pod created for `hello-world` has been deleted too:
 
-<pre class="console"><code>$ kubectl -n=default get pods
+<pre class="console"><code>$ kubectl get pod -l app=hello-world
 No resources found
 </code></pre>
