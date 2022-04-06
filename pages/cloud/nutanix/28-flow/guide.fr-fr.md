@@ -241,7 +241,7 @@ Si l'on met une machine virtuelle en quarantaine **strict** rien ne sera autoris
 
 ### Création d'une règle d'isolation du réseau.
 
-Nous allons créez une règle d'isolation de réseau entre un machine virtuelle sensible dont l'accès ne doit pas être accessible par un autre groupe de machines virtuelles.
+Nous allons créez une règle d'isolation du réseau entre des machines virtuelles membres de catégories différentes pour quelles ne puissent pas communiquer entres elles.
 
 #### Ajouter des valeurs dans une catégorie
 
@@ -275,7 +275,7 @@ saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur
 
 Cliquez sur `Save`{.action} pour valider la modification de la valeur.
 
-![Create Isolation Rule 08](images/createisolationrule09.png){.thumbnail}
+![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
 La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles veleurs.
 
@@ -291,7 +291,7 @@ Sélectionnez la machine virtuelle en utilisant la `case à cocher à sa gauche`
 
 ![Create Isolation Rule 11](images/createisolationrule11.png){.thumbnail}
 
-Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
+Cliquez sur le menu `Actions`{.action} et sélectionnez `Manage Categories`{.action}.
 
 ![Create Isolation Rule 12](images/createisolationrule12.png){.thumbnail}
 
@@ -303,7 +303,7 @@ Cliquez sur `Save`{.action}
 
 ![Create Isolation Rule 14](images/createisolationrule14.png){.thumbnail}
 
-Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leur gauche`{.action}.
+Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leurs gauches`{.action}.
 
 ![Create Isolation Rule 15](images/createisolationrule15.png){.thumbnail}
 
@@ -321,7 +321,7 @@ Cliquez sur `Save`{.action}
 
 #### Créer la règle d'isolation entre deux catégories
 
-maitenant que les machines virtuelles à isoler sont membre d'une nouvelle catégorie il va être possible de créer une règle d'isolation entre ces deux catégories.
+maitenant que les machines virtuelles à isoler sont membre catégorie. Nous allons créer une règle d'isolation entre ces deux catégories.
 
 Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
 
@@ -341,7 +341,7 @@ Sélectionnez Enforce dans `Select a Policy mode`{.action} et cliquez sur `Save 
 
 ![Create Isolation Rule 22](images/createisolationrule22.png){.thumbnail}
 
-La règle est visible dans la liste des règles de sécurité.
+La règle est active dans la liste des règles de sécurité.
 
 Cliquez sur `Le nom de la règle`{.action} en dessous de `Name` pour voir le détail.
 
