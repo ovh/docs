@@ -59,7 +59,7 @@ Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaine
 
 Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
 
-### Création d'une catégorie
+#### Création d'une catégorie
 
 Nous allons créer une Catégories **Special Computers** avec une valeur nommée **Antivirus**.
 
@@ -87,6 +87,10 @@ La nouvelle catégorie apparait dans la liste des catégories
 
 ![Create Category 06](images/configurecategories06.png){.thumbnail}
 
+#### Modification d'une catégorie
+
+!!!!! A réorganiser !!!!!
+
 #### Affectation d'une catégorie à une machine virtuelle
 
 Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
@@ -104,6 +108,8 @@ Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouto
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
 
 ![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
+
+#### Affectation d'une catégorie à plusieurs machines virtuelles
 
 ### Gestion de la quarantaine réseau.
 
