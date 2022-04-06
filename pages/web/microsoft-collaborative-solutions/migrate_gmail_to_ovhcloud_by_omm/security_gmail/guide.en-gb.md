@@ -45,7 +45,7 @@ Once you have confirmed, the message below will show that your choice has been p
 
 > [!warning]
 >
-> You need to have a password of at least 16 digit on your Gmail account, also called “application password”. When you “authorise less secure apps”, a strong password must be applied to your Gmail account.
+> You need to have a password of at least 16 characters on your Gmail account, also called “application password”. When you “authorise less secure apps”, a strong password must be applied to your Gmail account.
 >
 > ![omm](images/OMM-gmail-security-08.png){.thumbnail}
 >
