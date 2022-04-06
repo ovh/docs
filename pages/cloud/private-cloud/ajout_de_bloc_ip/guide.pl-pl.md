@@ -7,7 +7,7 @@ section: Funkcjonalności OVHcloud
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 30-12-2022**
+**Ostatnia aktualizacja z dnia 06-04-2022**
 
 ## Wprowadzenie
 
@@ -90,7 +90,7 @@ Wynik będzie następujący:
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów IP”:
+Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do przeniesienia IP na „parking adresów IP”:
 
 > [!api]
 >

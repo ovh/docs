@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 01
 ---
 
-**Last updated 30th December 2021**
+**Last updated 6th April 2022**
 
 ## Objective
 
@@ -90,7 +90,7 @@ The result should look like this:
 
 ![nexthop field](images/api-result.png){.thumbnail}
 
-Next, use this API call to move the IP into the IP parking space:
+If you need to detach the IP block, you can use the following API call to move the IP into the IP parking space:
 
 > [!api]
 >

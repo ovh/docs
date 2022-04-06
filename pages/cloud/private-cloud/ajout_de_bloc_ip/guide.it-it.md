@@ -6,7 +6,7 @@ section: Funzionalità OVHcloud
 order: 01
 ---
 
-**Ultimo aggiornamento: 30/12/2021**
+**Ultimo aggiornamento: 06/04/2022**
 
 ## Obiettivo
 
@@ -87,7 +87,7 @@ Il risultato sarà di questo tipo:
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP. 
+Se, in seguito, devi scollegare il blocco IP, puoi utilizzare questa chiamata API per spostare l’IP nel Parking degli IP. 
 
 > [!api]
 >

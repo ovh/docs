@@ -6,7 +6,7 @@ section: Funcionalidades de OVHcloud
 order: 01
 ---
 
-**Última actualización: 30/12/2021**
+**Última actualización: 06/04/2022**
 
 ## Objetivo
 
@@ -89,7 +89,7 @@ Obtendrá el siguiente resultado:
 
 ![campo nexthop](images/api-result.png){.thumbnail}
 
-A continuación utilice la siguiente llamada para mover la IP en el parking de IP:
+Si más adelante tiene que desvincular el bloque IP, puede utilizar la siguiente llamada para mover la IP en el parking de IP:
 
 > [!api]
 >
