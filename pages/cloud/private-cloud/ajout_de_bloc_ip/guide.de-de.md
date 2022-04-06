@@ -6,7 +6,7 @@ legacy_guide_number: '7766457'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 30.12.2021**
+**Letzte Aktualisierung am 06.04.2022**
 
 ## Ziel
 
@@ -89,7 +89,7 @@ Das Ergebnis wird wie folgt angezeigt:
 
 ![Feld nexthop](images/api-result.png){.thumbnail}
 
-Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu verschieben:
+Wenn Sie anschließend den IP-Block abtrennen müssen, können Sie diesen API-Aufruf verwenden, um die IP in den IP-Parkplatz zu verschieben:
 
 > [!api]
 >
@@ -106,6 +106,10 @@ Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](http
 Die Referenz der Operation lautet „removeIpRipeBlock“.
 
 ![Operationen Kundencenter](images/operations.png){.thumbnail}
+
+Die IP wird dann im `Ip-Parkplatz`{.action} angezeigt.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Weiterführende Informationen
 
