@@ -59,7 +59,7 @@ Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaine
 
 Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
 
-# Création d'une catégorie
+### Création d'une catégorie
 
 Nous allons créer une Catégories **Special Computers** avec une valeur nommée **Antivirus**.
 
