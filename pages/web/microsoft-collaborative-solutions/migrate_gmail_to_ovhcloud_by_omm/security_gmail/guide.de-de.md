@@ -4,7 +4,7 @@ slug: gmail-sicherheit
 hidden: true
 ---
 
-**Letzte Aktualisierung am 13.02.2020**
+**Letzte Aktualisierung am 06.04.2022**
 
 ## Ziel
 
