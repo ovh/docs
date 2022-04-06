@@ -1,6 +1,6 @@
 ---
-title: 'Changer les contacts d’un projet'
-excerpt: 'Découvrez comment changer les contacts d'un projet Public Cloud'
+title: "Changer les contacts d’un projet"
+excerpt: "Découvrez comment changer les contacts d'un projet Public Cloud"
 slug: changer-les-contacts-dun-projet
 section: 'Gestion de projets'
 order: 6
