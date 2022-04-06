@@ -24,8 +24,8 @@ For more information about Hugging Face, please visit <https://huggingface.co/>.
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
-- [Docker](Docker Get Started) installed on your local computer;
-- Some knowledge about building image and [Dockerfile](Dockerfile reference);
+- [Docker](https://www.docker.com/get-started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 
 We also suggest you do some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
 
