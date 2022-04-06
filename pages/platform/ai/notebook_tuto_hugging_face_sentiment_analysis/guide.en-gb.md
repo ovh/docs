@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 5
 ---
 
-**Last updated 8th of February, 2022.**
+**Last updated 6th April, 2022.**
 
 ## Objective
 
@@ -15,58 +15,57 @@ The purpose of this tutorial is to show how it is possible to use [Hugging Face]
 > [!primary]
 >
 > **Why using existing models?**
-> - it may be that someone has already encountered the same problem as you. So a model may already exist for the task you are trying to address
-> - not enough data: you may not have enough data to train a model from scratch
-> - not enough computing power
-> - lack of knowledge in the field
-> - time saving!
+>
+> - Someone may already have encountered the same problem as you. So a model may already exist for the task you are trying to address
+> - Not enough data: you may not have enough data to train a model from scratch
+> - Not enough computing power
+> - Lack of knowledge in the field
+> - Time saving!
 >
 
 **How to define NLP?**
 
 The *Natural language processing* is a branch of Machine Learning that aims to give to computer programs the ability to understand natural human language.
 
-**USE CASE**: all **OVHcloud** french Tweets posted on *October 16, 2021*, i.e. 1 day after the company's IPO and 3 days after an incident.
+**USE CASE**: all **OVHcloud** French Tweets posted on *October 16, 2021*, i.e. 1 day after the company's IPO and 3 days after an incident.
 
 Hugging Face allows us to show the Tweets sentiments according to their topic.
 
-In order to do this, we will compare 3 models on the sentiment analysis of Tweets: 2 *Sentiment analysis* model working on french and an other on multilingual.
+In order to do this, we will compare 3 models on the sentiment analysis of Tweets: 2 *Sentiment analysis* models working on French and another one on multilingual.
 
-- model based on [CamemBERT](https://huggingface.co/transformers/model_doc/camembert.html): [pt-tblard-tf-allocine](https://huggingface.co/philschmid/pt-tblard-tf-allocine)
+- Model based on [CamemBERT](https://huggingface.co/transformers/model_doc/camembert.html): [pt-tblard-tf-allocine](https://huggingface.co/philschmid/pt-tblard-tf-allocine)
+- Mdel based on [BARThez](https://huggingface.co/transformers/model_doc/barthez.html): [barthez-sentiment-classification](https://huggingface.co/moussaKam/barthez)
+- Model based on [BERT](https://huggingface.co/transformers/model_doc/bert.html): [bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
 
-- model based on [BARThez](https://huggingface.co/transformers/model_doc/barthez.html): [barthez-sentiment-classification](https://huggingface.co/moussaKam/barthez)
+We will also use a model to classify the Tweets according to their topic: a *Zero-Shot classification* model working on French.
 
-- model based on [BERT](https://huggingface.co/transformers/model_doc/bert.html): [bert-base-multilingual-uncased-sentiment](https://huggingface.co/nlptown/bert-base-multilingual-uncased-sentiment)
+- Model based on [CamemBERT](https://huggingface.co/transformers/model_doc/camembert.html): [camembert-base-xnli](https://huggingface.co/BaptisteDoyen/camembert-base-xnli)
 
-We will also use a model to classify the Tweets according to their topic: a *Zero-Shot classification* model working on french.
-
-- model based on [CamemBERT](https://huggingface.co/transformers/model_doc/camembert.html): [camembert-base-xnli](https://huggingface.co/BaptisteDoyen/camembert-base-xnli)
-
-![image](images/hugging_face_doc.png){.thumbnail}
+![Hugging Face](images/hugging_face_doc.png){.thumbnail}
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager);
-- a Public Cloud project created;
-- a Public Cloud user with the ability to start AI Notebooks;
-- an Hugging Face account (if you want!)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- A Public Cloud user with the ability to start AI Notebooks;
+- A Hugging Face account (if you want!).
 
 ## Instructions
 
 > [!primary]
 >
-> In this tutorial, we get our Tweets and form our database as a **.csv** file!
+> In this tutorial, we get our Tweets and form our database as a **.csv** file.
 >
 
-Beforehand, if you want to store your data (Tweets) in an **object container**, please follow this step!
+Beforehand, if you want to store your data (Tweets) in an **object container**, please follow this next step.
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
+If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
-If you want to run it with the CLI, just follow this [guide][OVH DATA cli]. You have to choose the region, the name of your container and the path where your data is located and use the following command:
+If you want to run it with the CLI, just follow [this guide][https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/]. You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
 ```bash
 ovhai data upload <region> <container> <paths>
@@ -89,7 +88,7 @@ ovhai notebook run huggingface-transformers jupyterlab \
 
 The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
 
-Inside your notebook, open a new Terminal tab by clicking `File` > `New` > `Terminal`.
+Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
 
 ![image](images/new-terminal.png){.thumbnail}
 
@@ -141,7 +140,7 @@ Tweets are divided into 2 classes according to their sentiment: **positive** or 
 
 *Refer to [NLP Town](https://www.nlp.town/)*
 
-Tweets are divided into 5 classes, from 1 to 5 stars, according to their sentiment: 1 star corresponds to a **very negative** tweet while 5 stars corresponds to a **very positive** tweet.
+Tweets are divided into 5 classes, from 1 to 5 stars, according to their sentiment: 1 star corresponds to a **very negative** tweet while 5 stars correspond to a **very positive** tweet.
 
 ![BERT_results](images/results-bert.png){.thumbnail}
 
@@ -153,13 +152,13 @@ It is possible to **process our data manually** and **compare our results** with
 
 The confusion matrix will also give us information about false positives or false negatives.
 
-#### Consufion matrix - BARThez x reel sentiments
+#### Confusion matrix - BARThez x reel sentiments
 
 ![BARThez_matrix](images/confusion-matrix-barthez.png){.thumbnail}
 
 Success rate: **87.02 %**
 
-#### Consufion matrix - CamemBERT x reel sentiments
+#### Confusion matrix - CamemBERT x reel sentiments
 
 ![CamemBERT_matrix](images/confusion-matrix-camembert.png){.thumbnail}
 
