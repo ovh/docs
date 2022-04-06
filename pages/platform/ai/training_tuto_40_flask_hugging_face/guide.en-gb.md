@@ -6,34 +6,34 @@ section: AI Training tutorials
 order: 12
 ---
 
-**Last updated 5th of April, 2022.**
+**Last updated 6th April, 2022.**
 
 ## Objective
 
-The purpose of this tutorial is to show how to deploy a web service for sentiment analysis on text using Hugging Face pretrained models.
-
+The purpose of this tutorial is to show you how to deploy a web service for sentiment analysis on text using Hugging Face pretrained models.<br>
 In order to do this, you will use Flask, an open-source micro framework for web development in Python. You will also learn how to build and use a custom Docker image for a Flask application.
 
 Overview of the app:
 
-![image](images/flask-hugging-face-overview.png){.thumbnail}
+![Hugging Face Overview](images/flask-hugging-face-overview.png){.thumbnail}
 
-For more information about Hugging Face, refer to their [web site](https://huggingface.co/).
+For more information about Hugging Face, please visit <https://huggingface.co/>.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-* an AI Training project created inside a Public Cloud project
-* a [user for AI Training][OVH Create user]
-* [Docker][Docker Get Started] installed on your local computer
-* some knowledge about building image and [Dockerfile][Dockerfile reference]
-* have done some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
+- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
+- [Docker](Docker Get Started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](Dockerfile reference);
+
+We also suggest you do some tests to find out which [Hugging Face model](https://huggingface.co/models) is right for your use case. Find examples on our [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
 
 ## Instructions
 
-First, the tree structure of your folder should be as follows.
+First, the tree structure of your folder should be as follows:
 
-![image](images/tree-flask-app.png){.thumbnail}
+![Flask tree structure](images/tree-flask-app.png){.thumbnail}
 
 Find more information about the Flask application [here](https://flask.palletsprojects.com/en/2.0.x/quickstart/#a-minimal-application) to get ready to use it.
 
@@ -120,7 +120,7 @@ Here we will mainly discuss how to write the `app.py` code, the `requirements.tx
 
 ### Write the Dockerfile for the application
 
-Your `Dockerfile` should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from a Python image:
+Your `Dockerfile` should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from a Python image:
 
 ```console
 FROM python:3.8
@@ -164,9 +164,6 @@ docker build . -t sentiment_analysis_app:latest
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-
-> [!primary]
->
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **sentiment_analysis_app:latest**.
 >
 
@@ -194,7 +191,7 @@ Once started, your application should be available on `http://localhost:5000`.
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here][OVH Add private registry].
+> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
 >
 
 Find the adress of your shared registry by launching this command:
@@ -203,7 +200,7 @@ Find the adress of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credentials:
+Login on the shared registry with your usual OpenStack credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
@@ -228,13 +225,13 @@ ovhai job run --default-http-port 5000 --cpu 4 <shared-registry-address>/sentime
 >
 > `--default-http-port 5000` indicates that the port to reach on the job URL is the `5000`.
 >
-
-> [!primary]
->
 > `--cpu 4` indicates that we request 4 CPUs for that job.
->
-
-> [!primary]
 >
 > Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 >
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
