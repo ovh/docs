@@ -16,11 +16,11 @@ The purpose of this tutorial is to show you how to build and use a custom Docker
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-* an **AI Training project** created inside a **Public Cloud** project
-* a [user for AI Training][OVH Create user]
-* [Docker][Docker Get Started] installed on your local computer
-* some knowledge about building image and [Dockerfile][Dockerfile reference]
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
+- An **AI Training project** created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
+- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
+- [Docker](Docker Get Started) installed on your local computer;
+- Some knowledge about building image and [Dockerfile](Dockerfile reference).
 
 ## Instructions
 
@@ -56,8 +56,8 @@ if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0')
 ```
 
-* More information about Flask can be found [here][https://flask.palletsprojects.com/en/2.0.x/]
-* Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/hello-world)
+- More information about Flask can be found [here](https://flask.palletsprojects.com/en/2.0.x/).
+- Direct link to the full python file can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/flask/hello-world).
 
 ### Write the requirements.txt for your applications
 
@@ -94,8 +94,8 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-* More information about Dockerfiles can be found [here][Dockerfile reference]
-* Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/flask/hello-world/Dockerfile)
+- More information about Dockerfiles can be found [here](Dockerfile reference).
+- Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/blob/main/jobs/flask/hello-world/Dockerfile).
 
 ### Build the Docker image from the Dockerfile
 
@@ -108,9 +108,6 @@ docker build . -t flask-app:latest
 > [!primary]
 >
 > The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
->
-
-> [!primary]
 >
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **flask-app:latest**.
 >
@@ -134,22 +131,22 @@ docker run --rm -it -p 5000:5000 --user=42420:42420 flask-app:latest
 > Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behavior that will occur on **AI TRAINING jobs**. It executes the docker container as the specific OVHcloud user (user **42420:42420**).
 >
 
-Once started, your application should be available on http://localhost:5000.
+Once started, your application should be available on  `http://localhost:5000 `.
 
-## Push the image into the shared registry
+### Push the image into the shared registry
 
 > [!warning]
 >
-> The shared registry of AI Training should only be use for testing purpose. Please consider attaching your own docker registry. More information about this can be found [here][OVH Add private registry].
+> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
 >
 
-Find the adress of your shared registry by launching this command:
+Find the address of your shared registry by launching this command:
 
 ```console
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credencials:
+Log in on the shared registry with your usual OpenStack credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
@@ -162,7 +159,7 @@ docker tag flask-app:latest <shared-registry-address>/flask-app:latest
 docker push <shared-registry-address>/flask-app:latest
 ```
 
-## Launch the job
+### Launch the job
 
 The following command starts a new job running your Flask application:
 
@@ -174,13 +171,7 @@ ovhai job run --default-http-port 5000 --cpu 1 <shared-registry-address>/flask-a
 >
 > `--default-http-port 5000` indicates that the port to reach on the job url is the `5000`.
 >
-
-> [!primary]
->
 > `--cpu 1` indicates that we request 4 cpu for that job.
->
-
-> [!primary]
 >
 > Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 >
@@ -188,3 +179,9 @@ ovhai job run --default-http-port 5000 --cpu 1 <shared-registry-address>/flask-a
 Once the job is running you can access your Flask application directly from the job's URL.
 
 ![image](images/flask-app.png){.thumbnail}
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
