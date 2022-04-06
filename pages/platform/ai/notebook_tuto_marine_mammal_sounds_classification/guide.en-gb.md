@@ -85,3 +85,9 @@ Once the repository has been cloned, find your notebook by following this path: 
 Once your dataset is ready and uploaded, you are able to train the model!
 
 A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 

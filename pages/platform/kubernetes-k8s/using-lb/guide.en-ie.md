@@ -148,7 +148,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: ovhplatform/hello:1.0
+        image: ovhplatform/hello:1.1
         ports:
         - containerPort: 80
 ```

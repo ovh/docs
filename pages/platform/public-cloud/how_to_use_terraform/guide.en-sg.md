@@ -5,6 +5,7 @@ description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
 section: Tutorials
+order: 02
 ---
 
 **Last updated 1st July 2021**

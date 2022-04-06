@@ -175,3 +175,9 @@ Do not hesitate to test several models!
 ### Experimenting the notebooks
 
 A preview of the three notebooks can be found on GitHub [here](https://github.com/ovh/ai-training-examples/tree/main/notebooks/hugging-face/tuto/sentiment-analysis-Twitter).
+
+## Feedback
+
+Please send us your questions, feedback and suggestions to improve the service:
+
+- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9) 
