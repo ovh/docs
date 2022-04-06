@@ -233,16 +233,125 @@ Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quaran
 
 ![Configure Quarantine 21](images/configurequarantinerule21.png){.thumbnail}
 
-Le statut de de la règle est sur sur `Enforced`, certaines règles d'autorisations sont configurées pour la quarantaine en mode `Forensics` par contre sur le mode `strict` aucune autorisation n'est faite. Si une nouvelle machine virtuelle est mise en quarantaine ce sont ces règles qui seront appliquées.
+Le statut de de la règle est  sur `Enforced` , le mode **forensic** a été personnalisé.
+
+Si l'on met une machine virtuelle en quarantaine **strict** rien ne sera autorisée, par contre en mode **forensics** les règles ajoutés s'appliquerons.
 
 ![Configure Quarantine 22](images/configurequarantinerule22.png){.thumbnail}
 
-
 ### Création d'une règle d'isolation du réseau.
 
+Nous allons créez une règle d'isolation de réseau entre un machine virtuelle sensible dont l'accès ne doit pas être accessible par un autre groupe de machines virtuelles.
 
+#### Ajouter des valeurs dans une catégorie
 
+Cliquez dans le menu principal sur `Catégories`{.action} dans le sous menu `Administration`.
 
+![Create Isolation Rule 01](images/createisolationrule01.png){.thumbnail}
+
+Sélectionnez la catégorie `Special-Computers`{.action}
+
+![Create Isolation Rule 02](images/createisolationrule02.png){.thumbnail}
+
+Cliquez sur `Update`{.action} dans le menu `Actions`{.action}
+
+![Create Isolation Rule 03](images/createisolationrule03.png){.thumbnail}
+
+Cliquez sur `New value`{.action}
+
+![Create Isolation Rule 04](images/createisolationrule03.png){.thumbnail}
+
+saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+
+![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
+
+Cliquez sur `New value`{.action}
+
+![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
+
+saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+
+![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
+
+Cliquez sur `Save`{.action} pour valider la modification de la valeur.
+
+![Create Isolation Rule 08](images/createisolationrule09.png){.thumbnail}
+
+La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles veleurs.
+
+![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
+
+#### Affecter des valeurs à des machines virtuelles
+
+Cliquez sur `Vms`{.action} se trouvant dans la catégorie `Compute & Storage` du menu principal.
+
+![Create Isolation Rule 10](images/createisolationrule10.png){.thumbnail}
+
+Sélectionnez la machine virtuelle en utilisant la `case à cocher à sa gauche`{.action}.
+
+![Create Isolation Rule 11](images/createisolationrule11.png){.thumbnail}
+
+Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
+
+![Create Isolation Rule 12](images/createisolationrule12.png){.thumbnail}
+
+Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
+
+![Create Isolation Rule 13](images/createisolationrule13.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Create Isolation Rule 14](images/createisolationrule14.png){.thumbnail}
+
+Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leur gauche`{.action}.
+
+![Create Isolation Rule 15](images/createisolationrule15.png){.thumbnail}
+
+Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
+
+![Create Isolation Rule 16](images/createisolationrule16.png){.thumbnail}
+
+Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
+
+![Create Isolation Rule 17](images/createisolationrule17.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Create Isolation Rule 18](images/createisolationrule18.png){.thumbnail}
+
+#### Créer la règle d'isolation entre deux catégories
+
+maitenant que les machines virtuelles à isoler sont membre d'une nouvelle catégorie il va être possible de créer une règle d'isolation entre ces deux catégories.
+
+Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
+
+![Create Isolation Rule 19](images/createisolationrule19.png){.thumbnail}
+
+Cliquez sur `Create Security Policy`{.action}.
+
+![Create Isolation Rule 20](images/createisolationrule20.png){.thumbnail}
+
+Sélectionnez `Isolate Environments (Isolation Policy)`{.action} ensuite cliquez sur `Create`{.action}.
+
+![Create Isolation Rule 21](images/createisolationrule21.png){.thumbnail}
+
+Saisissez le nom de la règle dans `Name`{.action} ensuite mettez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action} suivi d'une autre catégorie dans `From this category`{.action}.
+
+Sélectionnez Enforce dans `Select a Policy mode`{.action} et cliquez sur `Save and Enforce`{.action}. 
+
+![Create Isolation Rule 22](images/createisolationrule22.png){.thumbnail}
+
+La règle est visible dans la liste des règles de sécurité.
+
+Cliquez sur `Le nom de la règle`{.action} en dessous de `Name` pour voir le détail.
+
+![Create Isolation Rule 23](images/createisolationrule23.png){.thumbnail}
+
+Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de connexion entre les deux zones est détéctée car c'est marquée comme **No Traffic between them has been discovered**
+
+![Create Isolation Rule 24](images/createisolationrule24.png){.thumbnail}
+
+Si une connexion tentative de connexion réseau est detectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
 
 ### Mise en place d'une règle d'application.
 
