@@ -96,7 +96,7 @@ Open the following API call, paste your service ID into the serviceName input fi
 
 From the resulting list, select and copy the cluster ID, also known as clusterId.
 
-### Get the PostgreSQL existing Advanced Configuration
+### Get the existing Advanced Configuration
 
 Open the following API call and paste the corresponding inputs (serviceName, clusterId)and click `Execute`{.action}:
 

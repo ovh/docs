@@ -25,7 +25,7 @@ However, it is possible to modify some parameters via the API.
 - A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
 - A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/es/databases/getting-started/) can help you to meet this requirement)
 
-If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
+If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 
 Here, we consider that your are logged on the relevant API (Europe: https://api.ovh.com, Canada/Asia: https://ca.api.ovh.com).
 
@@ -98,7 +98,7 @@ Open the following API call, paste your service ID into the serviceName input fi
 
 From the resulting list, select and copy the cluster ID, also known as clusterId.
 
-### Get the PostgreSQL existing Advanced Configuration
+### Get the existing Advanced Configuration
 
 Open the following API call and paste the corresponding inputs (serviceName, clusterId)and click `Execute`{.action}:
 
