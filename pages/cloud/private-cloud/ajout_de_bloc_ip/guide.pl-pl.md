@@ -108,6 +108,10 @@ Odnośnik do operacji to „removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
 
+Następnie IP pojawi się w `Parking adresów IP`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
+
 ## Sprawdź również
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

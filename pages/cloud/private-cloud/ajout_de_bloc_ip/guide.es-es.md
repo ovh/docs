@@ -108,6 +108,10 @@ La referencia de la operación es «removeIpRipeBlock».
 
 ![operaciones manager](images/operations.png){.thumbnail}
 
+A continuación, la IP aparecerá en el `Aparcamiento de IP`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -107,6 +107,10 @@ Die Referenz der Operation lautet „removeIpRipeBlock“.
 
 ![Operationen Kundencenter](images/operations.png){.thumbnail}
 
+Die IP wird dann im `Ip-Parkplatz`{.action} angezeigt.
+
+![IP parking](images/ip-parking.png){.thumbnail}
+
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
