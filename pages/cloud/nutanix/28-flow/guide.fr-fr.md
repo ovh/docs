@@ -10,7 +10,7 @@ order: 09
 
 ## Objectif
 
-Connaitre et utiliser Nutanix Flow pour la sécurisation du réseau au sein d'un cluster Nutanix.
+Connaitre et utiliser **Nutanix Flow** pour la sécurisation du réseau au sein d'un cluster Nutanix.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -55,7 +55,9 @@ La micro-segmentation est activée. Il est possible de la désactiver.
 
 ### Configuration des catégories <a name="gocategoriesemanage"></a>
 
-Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaines catégories sont présentes lors de l'installation de **Prism Central** et il est possible de créer de nouvelles catégories.
+Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
+
+Une liste de catégories avec des valeurs existe , dans certains cas il sera obligatoir d'utiliser ces listes existantes comme pour la création d'une règles d'applications mails il est possible de les modifier ou d'en créer de nouvelles. 
 
 Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
 
@@ -101,11 +103,11 @@ Cliquez sur `New value`{.action}
 
 ![Create Isolation Rule 04](images/modifycategory04.png){.thumbnail}
 
-saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+Saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
 
 ![Create Isolation Rule 05](images/modifycategory05.png){.thumbnail}
 
-Cliquez sur `New value`{.action}
+Cliquez sur `New value`{.action}.
 
 ![Create Isolation Rule 06](images/modifycategory06.png){.thumbnail}
 
@@ -113,7 +115,7 @@ saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur
 
 ![Create Isolation Rule 07](images/modifycategory07.png){.thumbnail}
 
-Cliquez sur `Save`{.action} pour valider la modification de la valeur.
+Cliquez sur `Save`{.action} pour valider la modification de la catégorie.
 
 ![Create Isolation Rule 08](images/modifycategory08.png){.thumbnail}
 
