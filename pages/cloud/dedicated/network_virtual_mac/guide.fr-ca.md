@@ -21,6 +21,11 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 * Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Votre serveur doit supporter les MAC virtuelles. Consultez [ce guide](https://docs.ovh.com/ca/fr/dedicated/network-support-virtual-mac/) afin de le déterminer.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
 ### Assigner une adresse MAC

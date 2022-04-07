@@ -32,6 +32,12 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+>
+
+> [!warning]
 > Se o endereço IP Fail Over, ou um dos endereços IP do bloco, tem um MAC virtual afetado, o servidor alvo deve suportar a funcionalidade dos MAC virtuais.
 > Consulte [este guia](https://docs.ovh.com/pt/dedicated/network-support-virtual-mac/) para saber mais.
 >

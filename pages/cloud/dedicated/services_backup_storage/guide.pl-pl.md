@@ -28,6 +28,12 @@ Serwery dedykowane OVHcloud dysponują dodatkową przestrzenią do przechowywani
 * Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external} na koncie OVHcloud
 * Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+>
+
 ## W praktyce
 
 ### Włącz Backup Storage

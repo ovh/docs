@@ -25,6 +25,11 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 - Tener al menos una dirección [IP failover](https://www.ovhcloud.com/es/bare-metal/ip/) conectada al servidor.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+
 ## Procedimiento
 
 Los pasos básicos son siempre los mismos, independientemente de los sistemas utilizados:

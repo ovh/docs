@@ -28,6 +28,11 @@ Los servidores dedicados de OVHcloud incluyen un espacio de backup adicional par
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en su cuenta de OVHcloud.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
 ## Procedimiento
 
 ### Activar el Backup Storage

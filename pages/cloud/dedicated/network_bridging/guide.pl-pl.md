@@ -25,6 +25,12 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 - Posiadanie co najmniej jednego adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/) podłączonego do serwera
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+>
+
 ## W praktyce
 
 Podstawowe etapy są zawsze takie same, niezależnie od stosowanych systemów:

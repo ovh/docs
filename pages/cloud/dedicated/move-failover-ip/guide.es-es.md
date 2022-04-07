@@ -32,6 +32,11 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 > [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
+> [!warning]
 > Si la dirección IP failover, o una de las direcciones IP del bloque, tiene una MAC virtual asociada, el servidor de destino debe soportar la funcionalidad de las MAC virtuales.
 > Para ello, consulte [esta guía](https://docs.ovh.com/es/dedicated/network-support-virtual-mac/).
 >

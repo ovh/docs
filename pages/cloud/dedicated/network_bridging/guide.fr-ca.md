@@ -21,6 +21,12 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 * Bénéficier d'au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) connectée au serveur.
 * Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+>
+
 ## En pratique
 
 Les étapes de base sont toujours les mêmes, indépendamment des systèmes utilisés :
