@@ -1,11 +1,11 @@
 ---
 title: RACI Hosted Private Cloud powered by Nutanix
-slug: raci-hpc-nutanix
-section: RACI Hosted Private Cloud powered by Nutanix
+slug: raci-hosted-private-cloud-nutanix
+section: RACI
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation du produit Hosted Private Cloud powered by Nutanix"
 ---
 
-**Dernière mise à jour le XX/XX/XX**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -100,6 +100,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
 
 ##### **3.1.7. Continuité d'activité**
+
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer les systèmes de gestion automatiques de l’infrastructure mise à disposition | I | RA |
