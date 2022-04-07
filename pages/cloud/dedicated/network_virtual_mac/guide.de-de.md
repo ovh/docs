@@ -19,8 +19,11 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
 - Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Ihr Server muss die virtuellen MAC-Adressen unterstützen. Ziehen Sie [diese Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um diese zu bestimmen.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## In der praktischen Anwendung
 

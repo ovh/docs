@@ -153,6 +153,8 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 ### 3. Crear una instancia
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
@@ -244,7 +246,7 @@ Enter passphrase for key '/Users/username/.ssh/id_rsa':
 Al estar conectado con permisos root («sudo user»), podrá ejecutar comandos para realizar tareas administrativas. Le recomendamos que, en primer lugar, modifique su contraseña:
 
 ```bash
-$ sudo passwd
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully

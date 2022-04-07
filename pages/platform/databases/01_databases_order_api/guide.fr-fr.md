@@ -3,7 +3,7 @@ title: Commander et gérer une base de données via API (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
 slug: order-api
 section: Informations générales
-order: 2
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-api/'
 ---

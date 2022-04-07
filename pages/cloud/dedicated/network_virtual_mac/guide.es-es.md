@@ -21,6 +21,11 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Su servidor debe soportar las MAC virtuales. Para ello, consulte [esta guía](https://docs.ovh.com/es/dedicated/network-support-virtual-mac/).
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
 ## Procedimiento
 
 ### Asignar una dirección MAC

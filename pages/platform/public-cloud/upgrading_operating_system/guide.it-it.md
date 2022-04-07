@@ -62,8 +62,8 @@ Dopo il riavvio, aggiorna la directory /etc/apt/sources.list per indirizzare la 
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
-$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
-$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
 Una volta che la versione successiva è stata adattata, puoi procedere all'aggiornamento e al riavvio finale:

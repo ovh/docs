@@ -59,8 +59,8 @@ Après le redémarrage, mettez à jour le répertoire /etc/apt/sources.list pour
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
-$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
-$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
 Maintenant que la prochaine version est ciblée, vous pouvez procéder à la mise à jour ainsi qu'au redémarrage final :

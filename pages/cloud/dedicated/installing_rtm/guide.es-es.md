@@ -5,7 +5,11 @@ excerpt: 'Cómo instalar Real Time Monitoring en Linux'
 section: 'Diagnóstico y modo de rescate'
 ---
 
-**Última actualización: 24/3/2020**
+**Última actualización: 07/04/2022**
+
+> [!warning]
+> Desde el 7 de abril de 2022, la funcionalidad de visualización de los datos relativos a la actividad del servidor ha quedado obsoleta. La opción de Real Time Monitoring seguirá funcionando para los servidores que la hayan instalado hasta el 30 de junio de 2022. A partir de esa fecha, procederemos a la interrupción de esta funcionalidad, sin que ello afecte al funcionamiento del servidor asociado. No es recomendable instalar esta opción. Esta notificación le permitirá disponer de tiempo suficiente para anticipar la sustitución de la funcionalidad eliminada.
+>
 
 ## Objetivo
 

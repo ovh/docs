@@ -32,6 +32,12 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 > [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+>
+
+> [!warning]
 > Se l'indirizzo IP Fail Over, o uno degli indirizzi IP del blocco, ha un MAC virtuale compromesso, il server di destinazione deve supportare la funzionalità dei MAC virtuali.
 > Consulta [questa guida](https://docs.ovh.com/it/dedicated/network-support-virtual-mac/) per determinarlo.
 >

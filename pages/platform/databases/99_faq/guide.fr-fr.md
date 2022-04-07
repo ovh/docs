@@ -3,7 +3,7 @@ title: FAQ (EN)
 excerpt: 'Frequently Asked Questions on Public Cloud Databases'
 slug: faq
 section: Informations générales
-order: 3
+order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/faq/'
 ---

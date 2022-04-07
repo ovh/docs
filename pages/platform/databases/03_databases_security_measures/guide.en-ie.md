@@ -3,7 +3,7 @@ title: Concepts - Security overview
 excerpt: Public Cloud Databases security overview
 slug: concepts-security-overview
 section: General information
-order: 90
+order: 050
 ---
 
 **Last updated 23rd December 2021**

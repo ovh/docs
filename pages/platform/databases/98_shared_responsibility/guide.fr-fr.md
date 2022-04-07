@@ -3,7 +3,7 @@ title: Partage de responsabilité (EN)
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: Informations générales
-order: 98
+order: 070
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/responsibility-model/'
 ---

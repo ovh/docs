@@ -153,6 +153,8 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 ### Krok 3: tworzenie instancji
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie „Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”).
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
@@ -244,7 +246,7 @@ Enter passphrase for key '/Users/username/.ssh/id_rsa':
 Ponieważ logujesz się z uprawnieniami użytkownika root, czyli administratora („sudo user”), możesz od razu wpisywać polecenia, aby wykonać zadania administracyjne. Zalecane jest, aby najpierw zmienić hasło:
 
 ```bash
-$ sudo passwd
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully

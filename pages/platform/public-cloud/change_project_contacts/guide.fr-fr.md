@@ -41,7 +41,7 @@ Dans la nouvelle fenêtre, indiquez l'identifiant client souhaité pour chaque c
 
 ![change-contacts](images/contactchange1.png){.thumbnail}
 
-Après avoir cliqué sur le bouton `Valider`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un code(token) permettant de valider le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
+Après avoir cliqué sur le bouton `Valider`{.action}, les deux comptes OVHcloud concernés par le changement recevront un e-mail de confirmation. Cet e-mail contient un code (token) permettant de valider le changement de contact dans l'onglet `Mes demandes`{.action} de la section **Gestion des contacts**.
 
 Pour une explication plus détaillée de cette procédure, nous vous invitons à consulter notre guide "[Gérer les contacts de ses services](../../customer/gestion-des-contacts/)".
 

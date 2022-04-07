@@ -32,6 +32,12 @@ Mit dieser Technologie können Sie IP-Adressen von einem Dienst zum anderen in w
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+>
+
+> [!warning]
 > Wenn die Failover-IP oder eine der IP-Adressen des Blocks eine virtuelle MAC-Adresse hat, muss der Zielserver die vMAC-Funktionalität unterstützen.
 > Weitere Informationen finden Sie in [dieser Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
 >
