@@ -6,7 +6,7 @@ section: Tutoriels
 hidden: true
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -39,15 +39,15 @@ Une fois Zoiper ouvert, vous devez renseigner deux champs.
 Le premier champ doit être renseigné avec votre **Login/Username** et votre **domain** OVHcloud sous la forme `username@domain`.<br>
 Par exemple : `0033912345678@sip5.ovh.fr`.
 
-Renseignez votre **mot de passe SIP** dans le deuxième champ puis appuyez sur `Créer un compte`{.action}.
+Renseignez votre **mot de passe SIP** dans le deuxième champ puis cliquez sur `Créer un compte`{.action}.
 
 ![assistant zoiper](images/zoiper01.png){.thumbnail}
 
-Dans la fenêtre suivante, renseignez à nouveau votre **domain** OVHcloud et appuyez sur `Suivant`{.action}.
+Dans la fenêtre suivante, renseignez à nouveau votre **domain** OVHcloud et cliquez sur `Suivant`{.action}.
 
 ![domain zoiper](images/zoiper02.png){.thumbnail}
 
-L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification ou un proxy sortant. Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, utilisez le bouton `Passer`{.action}.
+L'assistant de configuration Zoiper vous propose alors de saisir un nom d'utilisateur d'authentification ou un proxy sortant. Ces informations n'étant pas nécessaires pour l'enregistrement d'une ligne SIP OVHcloud, cliquez sur le bouton `Passer`{.action}.
 
 ![proxy zoiper](images/zoiper03.png){.thumbnail}
 
