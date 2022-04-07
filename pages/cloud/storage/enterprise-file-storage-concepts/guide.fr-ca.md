@@ -103,7 +103,7 @@ Retrouvez plus d'informations sur le guide [« Gérer les snapshots d'un volume 
 
 - Un volume ne peut pas avoir plus de 200 snapshots.
 - Nombre maximum de politiques de snapshot par volume : 1
-- Nombre maximum de règles par politique de snapshot policy : 4
+- Nombre maximum de règles par politique de snapshot : 4
 
 #### Limites liées aux ACL :
 
