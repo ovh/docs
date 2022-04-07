@@ -138,4 +138,4 @@ Retrouvez plus d'informations sur le guide [« Gérer les snapshots d'un volume 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur Discord : https://discord.gg/jW2FgBJ72h
+Échangez avec notre communauté d’utilisateurs sur Discord : <https://discord.gg/jW2FgBJ72h>
