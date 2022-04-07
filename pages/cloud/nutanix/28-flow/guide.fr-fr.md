@@ -117,7 +117,7 @@ Cliquez sur `Save`{.action} pour valider la modification de la valeur.
 
 ![Create Isolation Rule 08](images/modifycategory08.png){.thumbnail}
 
-La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles veleurs.
+La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles valeurs.
 
 ![Create Isolation Rule 09](images/modifycategory09.png){.thumbnail}
 
@@ -128,23 +128,28 @@ Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Comp
 
 ![Add VM to Category 01](images/addvmtocategory01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche ensuite cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}. dans le menu
+`Sélectionnez`{.action} la machine virtuelle à gauche 
 
 ![Add VM to Category 02](images/addvmtocategory02.png){.thumbnail}
 
-Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouton `+`{.action}
+Cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}. dans le menu
 
 ![Add VM to Category 03](images/addvmtocategory03.png){.thumbnail}
 
+Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouton `+`{.action}
+
+![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail}
+
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
 
-![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
+![Add VM to Category 05](images/addvmtocategory05.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
 
 #### Affectation d'une catégorie à plusieurs machines virtuelles
 
 Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leurs gauches`{.action}.
 
 ![Add categorie to multi VMs 01](images/multivmcategorychange01.png){.thumbnail}
+
 Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
 
 ![Add categorie to multi VMs 02](images/multivmcategorychange02.png){.thumbnail}
@@ -157,6 +162,30 @@ Cliquez sur `Save`{.action}
 
 ![Add categorie to multi VMs 04](images/multivmcategorychange04.png){.thumbnail}
 
+#### Affectation d'une catégorie à des sous réseaux
+
+Nous allons voir comment affecter une sous catégorie à un réseau ou plusieurs sous réseaux
+
+Allez dans le `Menu Principal`{.action} et cliquez sur `Subnets`{.action} sous `Network & Security`
+
+![Add Category to subnet 01](images/addcategorytosubnet01.png){.thumbnail}
+
+Sélectionnez les `sous réseaux`{.action} en cliquant sur les case à cocher à gauche 
+
+![Add Category to subnet 02](images/addcategorytosubnet02.png){.thumbnail}
+
+Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
+
+![Add Category to subnet 03](images/addcategorytosubnet03.png){.thumbnail}
+
+Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
+
+![Add Category to subnet 04](images/addcategorytosubnet04.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Add Category to subnet 05](images/addcategorytosubnet05.png){.thumbnail}
+
 ### Gestion de la quarantaine réseau.
 
 #### Mise en quarantaine d'une VM
@@ -167,13 +196,17 @@ Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Comp
 
 ![Add VM to Quarantine 01](images/addvmtoquarantine01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche ensuite cliquez sur `Actions`{.action} et choisissez `Quarantine VMs`{.action} dans le menu.
+`Sélectionnez`{.action} la machine virtuelle à gauche ensuite 
 
 ![Add VM to Quarantine 02](images/addvmtoquarantine02.png){.thumbnail}
 
-Choisissez `Forensic`{.action} dans `quarantine Method` et cliquez sur `Quarantine`{.action}.
+Cliquez sur `Actions`{.action} et choisissez `Quarantine VMs`{.action} dans le menu.
 
 ![Add VM to Quarantine 03](images/addvmtoquarantine03.png){.thumbnail}
+
+Choisissez `Forensic`{.action} dans `quarantine Method` et cliquez sur `Quarantine`{.action}.
+
+![Add VM to Quarantine 04](images/addvmtoquarantine04.png){.thumbnail}
 
 La machine virtuelle est en quarantaine.
 
@@ -334,6 +367,46 @@ Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de c
 Si une connexion tentative de connexion réseau est detectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
 
 ### Mise en place d'une règle d'application.
+
+Nous allons mettre en place une règle d'application qui n'autorisera que le port HTTP sur une catégorie d'application à une VM depuis une catégories appliquée à deux sous réseaux. 
+
+Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
+
+A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
+
+![Create Application Rule 01](images/createapplicationrule01.png){.thumbnail}
+
+Cliquez sur `Create Security Policy`{.action} 
+
+![Create Application Rule 02](images/createapplicationrule02.png){.thumbnail}
+
+Sélectionnez `Secure Application (App Policy)`{.action} et cliquez sur `Create`{.action}
+
+![Create Application Rule 03](images/createapplicationrule03.png){.thumbnail}
+
+Saisissez ces champs `Name` par un nom de règle , `Purpose` avec un commentaire , `Secure this App` en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
+
+![Create Application Rule 04](images/createapplicationrule04.png){.thumbnail}
+
+Cliquez sur `Add Source`{.action} à gauche
+
+![Create Application Rule 05](images/createapplicationrule05.png){.thumbnail}
+
+Choisissez la `catégorie` concernant le VLAN et cliquez sur `Add`{.action}
+
+![Create Application Rule 06](images/createapplicationrule06.png){.thumbnail}
+
+Cliquez sur le signe `+`{.action} pour relier à l'application à la source.
+
+![Create Application Rule 07](images/createapplicationrule07.png){.thumbnail}
+
+Sélectionnez `Select a Service`{.action} , choisir la catégorie dans `Protocol/Service`{.action}, recherchez le nom du service dans `Port/Service Details`{.action} et cliquez sur `Save`{.action}.
+
+![Create Application Rule 08](images/createapplicationrule08.png){.thumbnail}
+
+Cliquez sur `Next`{.action} pour finaliser la création de la règle.
+
+![Create Application Rule 09](images/createapplicationrule09.png){.thumbnail}
 
 
 ## Aller plus loin <a name="gofurther"></a>
