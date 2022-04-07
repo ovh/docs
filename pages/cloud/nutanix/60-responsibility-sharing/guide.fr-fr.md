@@ -25,7 +25,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Choisir la localisation des serveurs dédiés | RA | I |
-| Choisir le pack de licence nutanix en fonction des besoins | RA | I |
+| Choisir le pack de licence Nutanix en fonction des besoins | RA | I |
 | Dimensionner les serveurs dédiés en fonction des besoins | RA | I |
 | Choisir les options de configuration des serveurs dédiés en fonction des besoins | RA | I |
 
