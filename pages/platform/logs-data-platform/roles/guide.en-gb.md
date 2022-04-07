@@ -46,8 +46,8 @@ Some items can be shared in read-only whereas others can be shared with a write 
 
 - **Data Stream**: Graylog Data Streams can only be shared **read-only** since logs are fully immutable. 
 - **Dashboards**: Graylog Dashboards can be shared **read-only or read-write**. With the read-write access, the users in the role can add, modify and remove widgets of a dashboard. 
-- **Index **: Elasticsearch indices can be shared **read-only or read-write**. With the read-write access, users in the role can add, modify and delete documents in the index. They can also alter the mapping.
-- **Aliases**: Elasticsearch Aliases are **read-only**. They can only be used to read the data attached to them.
+- **Index **: Opensearch indices can be shared **read-only or read-write**. With the read-write access, users in the role can add, modify and delete documents in the index. They can also alter the mapping.
+- **Aliases**: Opensearch Aliases are **read-only**. They can only be used to read the data attached to them.
 - **Kibana**: Kibana can be shared **read-only or read-write**. If Kibana is read-only, users have access to the Kibana but cannot modify it. If Kibana is read-write, they can modify the dashboards or the visualizations or any other Kibana feature or setting.
 
 > [!primary]

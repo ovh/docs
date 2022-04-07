@@ -308,7 +308,7 @@ sudo filebeat modules enable haproxy
 ```
 
 
-Edit your filebeat.yml configuration file to include the following snippet to enable log file reading in the module and to configure filebeat with our special Elasticsearch input.
+Edit your filebeat.yml configuration file to include the following snippet to enable log file reading in the module and to configure filebeat with our special Opensearch input.
 
 ```yaml
 filebeat.modules:

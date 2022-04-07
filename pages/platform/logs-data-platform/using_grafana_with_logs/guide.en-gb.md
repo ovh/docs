@@ -5,11 +5,11 @@ order: 1
 section: Visualize your logs
 ---
 
-**Last updated 27th July, 2020**
+**Last updated 21th April, 2022**
 
 ## Objective
 
-[Grafana](http://grafana.org/){.external} provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 2.5, Grafana is able to communicate with Elasticsearch and so allow you to mix data from Logs Data Platform and other data sources like IoT at the same place. This guide will show you how to achieve this.
+[Grafana](http://grafana.org/){.external} provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 2.5, Grafana is able to communicate with Opensearch and so allow you to mix data from Logs Data Platform and other data sources like IoT at the same place. This guide will show you how to achieve this.
 
 
 ## Requirements
@@ -28,7 +28,7 @@ After some training you will be able to create this kind of dashboard:
 
 ### Select your Stream Alias
 
-To access your logs from Grafana, you will need to setup an Elasticsearch Alias and link them to your Graylog streams, so here we go again :
+To access your logs from Grafana, you will need to setup an Opensearch Alias and link them to your Graylog streams, so here we go again :
 
 1. Go back to your manager.
 2. In the Alias panel, click on the `Add an alias`{.action} button
@@ -52,7 +52,9 @@ Then follow the Grafana installation guide according your platform: [http://docs
 
 If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000){.external} Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platform datasource:
 
-![Data source](images/datasource.png){.thumbnail}
+![Data source_1](images/datasource_1.png){.thumbnail}
+
+
 
 > [!warning]
 >
@@ -62,9 +64,15 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > - Set your Logs Data Platform credentials for Basic auth values
 > - Set your Logs Data Platform alias name as Grafana Index name value
 > - Change default Time field name to timestamp
-> - Set **6.0+** as Elasticsearch version
+> - Set **1.X** as Opensearch version
 > - Register your data source and test it.
 > 
+
+
+If your configuration is correct, it should display: " _Index Ok. Timefield Ok._"
+
+[!Data source 2](images/datasource_2.png){.thumbnail}
+
 
 ### Test it!
 
@@ -74,7 +82,7 @@ Now let's add a simple counter of your logs to a new dashboard.
 1. On the bottom right, select your datasource.
 1. That's it :)
 
-If you want to know what you can do with Grafana and Elasticsearch, you can fly to the [official documentation](http://docs.grafana.org/datasources/elasticsearch/){.external} or to this very good resource: [How to effectively use the Elasticsearch data source in Grafana and solutions to common pitfalls](https://blog.raintank.io/how-to-effectively-use-the-elasticsearch-data-source-and-solutions-to-common-pitfalls/){.external}
+If you want to know what you can do with Grafana and Opensearch, you can fly to the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/){.external}.
 
 
 ## Go further
