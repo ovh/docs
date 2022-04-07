@@ -18,6 +18,11 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
 La connexion à l’IPMI peut s’effectuer principalement via plusieurs méthodes : l’applet Java (conseillé) ou le navigateur (Serial over LAN).

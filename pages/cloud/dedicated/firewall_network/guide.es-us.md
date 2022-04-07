@@ -31,6 +31,10 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 - Tener contratado un servicio de OVHcloud que utilice el firewall de red ([servidores dedicados](https://www.ovh.com/world/es/servidores_dedicados/){.external}, [VPS](https://www.ovh.com/world/es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/en/bare-metal/ip/){.external}...).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Dedicado`{.action}.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 ## Procedimiento
 

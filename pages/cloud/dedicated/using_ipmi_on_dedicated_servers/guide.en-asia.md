@@ -18,6 +18,11 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
+
 ## Instructions
 
 You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
