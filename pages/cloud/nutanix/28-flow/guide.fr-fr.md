@@ -6,7 +6,7 @@ section: Réseau et sécurité
 order: 09
 ---
 
-**Dernière mise à jour le 05/04/2022**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -20,7 +20,7 @@ Connaitre et utiliser Nutanix Flow pour la sécurisation du réseau au sein d'un
 
 ## Présentation de de **Nutanix Flow**
 
-Cette option est disponible dans toutes les offres **Hosted Private Cloud Powered by Nutanix**. Elle permet de protéger le réseau sein d'un ou plusieurs clusters Nutanix gérés par **Prism Central**.
+Cette option est disponible dans toutes les offres **Hosted Private Cloud Powered by Nutanix**. Elle permet de protéger le réseau au sein d'un ou plusieurs clusters Nutanix gérés par **Prism Central**.
 
 Il est possible :
 
@@ -53,9 +53,9 @@ La micro-segmentation est activée. Il est possible de la désactiver.
 
 ![Activate Flow 04](images/activatemicrosegmentation04.png){.thumbnail}
 
-### Configuration des catégories
+### Configuration des catégories <a name="gocategoriesemanage"></a>
 
-Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaines catégories sont présentes lors de l'installation de **Prism Central** et il est possible de créer des nouvelles catégories.
+Une catégorie est un objet qui peut contenir une ou plusieurs valeurs, certaines catégories sont présentes lors de l'installation de **Prism Central** et il est possible de créer de nouvelles catégories.
 
 Les catégories permettent de faciliter la gestion d'un cluster Nutanix, il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
 
@@ -89,10 +89,6 @@ La nouvelle catégorie apparait dans la liste des catégories
 
 #### Modification d'une catégorie
 
-Cliquez dans le menu principal sur `Catégories`{.action} dans le sous menu `Administration`.
-
-![Create Isolation Rule 01](images/modifycategory01.png){.thumbnail}
-
 Sélectionnez la catégorie `Special-Computers`{.action}
 
 ![Create Isolation Rule 02](images/modifycategory02.png){.thumbnail}
@@ -103,7 +99,7 @@ Cliquez sur `Update`{.action} dans le menu `Actions`{.action}
 
 Cliquez sur `New value`{.action}
 
-![Create Isolation Rule 04](images/modifycategory03.png){.thumbnail}
+![Create Isolation Rule 04](images/modifycategory04.png){.thumbnail}
 
 saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
 
@@ -145,6 +141,21 @@ Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une caté
 ![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
 
 #### Affectation d'une catégorie à plusieurs machines virtuelles
+
+Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leurs gauches`{.action}.
+
+![Add categorie to multi VMs 01](images/multivmcategorychange01.png){.thumbnail}
+Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
+
+![Add categorie to multi VMs 02](images/multivmcategorychange02.png){.thumbnail}
+
+Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
+
+![Add categorie to multi VMs 03](images/multivmcategorychange03.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Add categorie to multi VMs 04](images/multivmcategorychange04.png){.thumbnail}
 
 ### Gestion de la quarantaine réseau.
 
@@ -282,85 +293,50 @@ Si l'on met une machine virtuelle en quarantaine **strict** rien ne sera autoris
 
 ### Création d'une règle d'isolation du réseau.
 
-Nous allons créez une règle d'isolation du réseau entre des machines virtuelles membres de catégories différentes pour quelles ne puissent pas communiquer entres elles.
+Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
+![Create Isolation Rule 01](images/createisolationrule01.png){.thumbnail}
 
-#### Affecter des valeurs à des machines virtuelles
+Assurez vous d'avoir correctement configuré les valeurs **Direction** et **Production** de la catégorie Special-computers comme affiché ci dessous. 
 
-Cliquez sur `Vms`{.action} se trouvant dans la catégorie `Compute & Storage` du menu principal.
+Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
 
-![Create Isolation Rule 10](images/createisolationrule10.png){.thumbnail}
-
-Sélectionnez la machine virtuelle en utilisant la `case à cocher à sa gauche`{.action}.
-
-![Create Isolation Rule 11](images/createisolationrule11.png){.thumbnail}
-
-Cliquez sur le menu `Actions`{.action} et sélectionnez `Manage Categories`{.action}.
-
-![Create Isolation Rule 12](images/createisolationrule12.png){.thumbnail}
-
-Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
-
-![Create Isolation Rule 13](images/createisolationrule13.png){.thumbnail}
-
-Cliquez sur `Save`{.action}
-
-![Create Isolation Rule 14](images/createisolationrule14.png){.thumbnail}
-
-Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leurs gauches`{.action}.
-
-![Create Isolation Rule 15](images/createisolationrule15.png){.thumbnail}
-
-Cliquez sur le menu `Actions`{.action} et selectionnez `Manage Categories`{.action}.
-
-![Create Isolation Rule 16](images/createisolationrule16.png){.thumbnail}
-
-Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
-
-![Create Isolation Rule 17](images/createisolationrule17.png){.thumbnail}
-
-Cliquez sur `Save`{.action}
-
-![Create Isolation Rule 18](images/createisolationrule18.png){.thumbnail}
-
-#### Créer la règle d'isolation entre deux catégories
-
-maitenant que les machines virtuelles à isoler sont membre catégorie. Nous allons créer une règle d'isolation entre ces deux catégories.
+![Create Isolation Rule 02](images/createisolationrule02.png){.thumbnail}
 
 Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
 
-![Create Isolation Rule 19](images/createisolationrule19.png){.thumbnail}
+![Create Isolation Rule 03](images/createisolationrule04.png){.thumbnail}
 
 Cliquez sur `Create Security Policy`{.action}.
 
-![Create Isolation Rule 20](images/createisolationrule20.png){.thumbnail}
+![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
 
 Sélectionnez `Isolate Environments (Isolation Policy)`{.action} ensuite cliquez sur `Create`{.action}.
 
-![Create Isolation Rule 21](images/createisolationrule21.png){.thumbnail}
+![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
 
 Saisissez le nom de la règle dans `Name`{.action} ensuite mettez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action} suivi d'une autre catégorie dans `From this category`{.action}.
 
 Sélectionnez Enforce dans `Select a Policy mode`{.action} et cliquez sur `Save and Enforce`{.action}. 
 
-![Create Isolation Rule 22](images/createisolationrule22.png){.thumbnail}
+![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
 
 La règle est active dans la liste des règles de sécurité.
 
 Cliquez sur `Le nom de la règle`{.action} en dessous de `Name` pour voir le détail.
 
-![Create Isolation Rule 23](images/createisolationrule23.png){.thumbnail}
+![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
-Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de connexion entre les deux zones est détéctée car c'est marquée comme **No Traffic between them has been discovered**
+Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de connexion entre les deux zones est détéctée comme indiquée sur ce message. **No Traffic between them has been discovered**
 
-![Create Isolation Rule 24](images/createisolationrule24.png){.thumbnail}
+![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
 
 Si une connexion tentative de connexion réseau est detectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
 
 ### Mise en place d'une règle d'application.
 
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
