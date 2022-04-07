@@ -26,14 +26,14 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and [create](https://docs.ovh.com/gb/en/storage/pcs/create-container/) a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the Object Storage section and [create a new object container](https://docs.ovh.com/gb/en/storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
 
 > [!primary]
 >
-> With the OVHcloud Control Panel you can only upload files (not folders). You can, for instance, upload a zip file to optimize the bandwidth and unzip it later when you access it threw your JupyterLab.
-> You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than threw your browser). 
+> In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through your JupyterLab.
+> You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser). 
 >
 
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
@@ -56,7 +56,7 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
-To be able to use the source code below in this article you have to create two containers Object Storage mount as follow:
+To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
  - mount point name: `/workspace/data`, permissions: `read & write`
  - mount point name: `/workspace/saved_model`, permissions: `read & write`
 
