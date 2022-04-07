@@ -6,7 +6,7 @@ section: Introdução
 order: 6
 ---
 
-**Última atualização no dia 13/12/202**
+**Última atualização no dia 13/12/2021**
 
 ## Objetivo
 

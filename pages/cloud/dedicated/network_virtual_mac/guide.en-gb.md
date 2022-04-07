@@ -20,6 +20,10 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - Your server must support virtual MACs. To determine this, consult [this guide](https://docs.ovh.com/gb/en/dedicated/network-support-virtual-mac/).
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
 ## Instructions
 

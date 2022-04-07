@@ -21,6 +21,8 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 ## Instructions
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Px-NhCRAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Subscribing to the service
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
