@@ -1,146 +1,155 @@
 ---
-title: 'Verlängerung Ihrer OVHcloud Dienste verwalten'
+title: Verlängerung Ihrer OVHcloud Dienste verwalten
 slug: anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh
-excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die automatische Verlängerung Ihrer Dienste verwalten'
-section: 'Verlängerung der Dienste verwalten'
+excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die automatische Verlängerung Ihrer Dienste verwalten
+section: Verlängerung der Dienste verwalten
 order: 1
-legacy_guide_number: g1271
 ---
 
-**Letzte Aktualisierung am 06.05.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 31.03.2022**
 
 ## Ziel
 
-Sie können die Verlängerung und die Kündigung Ihrer Dienste in Ihrem OVHcloud Kundencenter verwalten.
+Sie können die Verlängerung und die Kündigung Ihrer Dienste in Ihrem Kundencenter verwalten.
 
 **Diese Anleitung erklärt, wie Sie im OVHcloud Kundencenter die automatische Verlängerung Ihrer Dienste verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich „Meine Dienste“ unter `Verträge`{.action} einsehen können.
+> Je nach Ihrem Wohnsitz, der örtlichen Gesetzgebung und Dienstleistungsart können manche Details dieser Anleitung variieren oder in ihrem Fall nicht zutreffen. Für konkrete Informationen können Sie Ihre OVHcloud Verträge im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen: Klicken Sie auf Ihren Namen oben rechts in der Anzeige, öffnen Sie die `Dienstverwaltung`{.action} und wechseln Sie zum Tab `Verträge`{.action}.
 >
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben aktive OVHcloud Dienstleistungen.
-- Sie sind der Rechnungskontakt Ihrer OVHcloud Dienstleistungen.
+- Sie haben aktive OVHcloud Dienste.
+- Sie sind [Rechnungskontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/#definition) für Ihre OVHcloud Dienste.
 
 ## In der praktischen Anwendung
 
-Dienste, die auf die automatische Verlängerung eingestellt sind, werden jeweils zu ihrem Ablaufdatum verlängert; hierzu wird das im Kundencenter hinterlegte Standardzahlungsmittel belastet. Sie können Ihre Dienstleistungen aber jederzeit in Ihrem Kundencenter kündigen, damit sie nicht nach ihrem Ablaufdatum weiter verlängert werden.
+Beim Kauf sind Ihre Dienstleistungen so eingestellt, dass sie bei Fälligkeit automatisch verlängert werden, indem Zahlungen mit der in Ihrem Kundencenter hinterlegten Standardzahlungsart beglichen werden. Sie können diese Dienstleistungen jederzeit über Ihr Kundencenter kündigen. Nach Ablauf ihrer Gültigkeitsdauer werden sie nicht verlängert.
 
-Bestimmte Dienste (Domainnamen, Webhostings, VPS, Dedicated Server) können auf manuelle Verlängerung eingestellt werden, falls Sie keine automatische Zahlung wünschen.
+Es ist aber auch möglich, einige Dienste (Domainnamen, Webhosting, VPS, Dedicated Server) für die *manuelle* Verlängerung einzurichten, wenn Sie keine Verlängerungen oder automatischen Zahlungen möchten.
 
-Sie können entsprechend der gewünschten Aktion direkt zu den passenden Hilfen gelangen:
+Wir empfehlen Ihnen, folgende Anleitungen zu verwenden, um die jeweils gewünschten Operationen durchzuführen:
 
-- [Verlängerungsstatus Ihrer Dienste anzeigen](./#verlangerungsstatus-ihrer-dienste-anzeigen): In diesem Abschnitt wird erläutert, wie Sie die Übersicht Ihrer Dienste aufrufen. Sie können überprüfen, welche Dienste automatisch verlängert werden und Details zu deren Status einsehen.
+- [Verlängerungsstatus Ihrer Dienste anzeigen](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#verlangerungsstatus-ihrer-dienste-anzeigen): Diese Anleitung beschreibt, wie Sie die automatische Verlängerung Ihrer Dienste überprüfen und deren Verlängerungs- oder Ablaufdatum abrufen.
 
-- [Die Verlängerung Ihrer Dienstleistungen verwalten](./#die-verlangerung-bei-ovhcloud): Dieser Abschnitt hilft Ihnen dabei, die automatische Verlängerung zu aktivieren oder zu deaktivieren, das Zahlungsintervall einer Dienstleistung zu ändern und Verlängerungszahlungen vor Ablauf zu leisten.
+- [Verlängerung Ihrer Dienstleistungen verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#die-verlangerung-bei-ovhcloud): In dieser Anleitung erfahren Sie, wie Sie die automatische Verlängerung aktivieren oder deaktivieren, die Zahlungsfrequenz eines Dienstes ändern und Verlängerungen vor Ablauf bezahlen.
 
-- [Ihre Zahlungsarten verwalten](../zahlungsarten-verwalten/): Folgen Sie dieser Anleitung, um sich zu vergewissern, dass Sie über ein valides Zahlungsmittel für die künftigen Dienstverlängerungen verfügen. Sie können in diesem Zusammenhang auch Zahlungsarten hinzufügen oder löschen.
+- [Zahlungsarten verwalten](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/): Mithilfe dieser Anleitung können Sie überprüfen, ob Sie ein gültiges Zahlungsmittel für künftige Verlängerungen hinterlegt haben, und bei Bedarf Zahlungsarten hinzufügen oder entfernen.
 
-### Übersicht "Meine Dienste" aufrufen
+### Dienstleistungseinstellungen aufrufen
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet sind, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Produkte und Dienstleistungen`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie oben rechts auf den Namen Ihrer Kundenkennung. Öffnen Sie die `Dienstverwaltung`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 
 ### Verlängerungsstatus Ihrer Dienste anzeigen
 
-Die Seite „Meine Dienste“ enthält eine Tabelle zur Verwaltung Ihrer Dienstleistungen bei OVHcloud. Sie können deren Bezeichnungen, die Dienstleistungsart, die Verfügbarkeit der Dienste (aktiv oder abgelaufen), deren Status (Verlängerungsart, durchzuführende Aktion, etc.) sowie die Ablaufdaten einsehen.
+Die Seite `Meine Dienste` enthält eine Tabelle zur Verwaltung Ihrer OVHcloud Dienste. Dort finden Sie Dienstnamen, die Art der Dienstleistung, die Verfügbarkeit des Dienstes (wenn dieser beispielsweise deaktiviert ist), seinen Status (Art der Verlängerung, durchzuführende Aktion usw.) und das Datum, an dem durchzuführende Aktionen wirksam werden.
 
 ![manageautomaticrenewal](images/manageautorenew2b.png){.thumbnail}
 
-Sie können die Spalten auf- oder absteigend sortieren, das Suchfeld benutzen oder auch einen Filter anwenden, um nur bestimmte Dienstleistungen gezielt auszuwählen.
+Sie können die Spalten in aufsteigender oder absteigender Reihenfolge sortieren, das Suchfeld verwenden oder auch einen Filter aktivieren, um die Anzeige auf Dienste mit ausgewählten Kriterien zu beschränken.
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Ihre Filterkriterien werden dann über der Tabelle angezeigt. Hier sehen Sie ein Beispiel eines Filters, der nur Domainnamen anzeigt, für die eine zu begleichende Rechnung aussteht.
+Ihre Filterkriterien sind dann über der Tabelle aufgelistet. Hier sehen Sie ein Beispiel für einen Filter, der Domainnamen anzeigt, für die eine zu bezahlende Rechnung besteht.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 
-### Die Verlängerung bei OVHcloud
+### Automatische Verlängerung
 
-#### **Automatische Verlängerung**
+Ihre Dienstleistungen werden mit aktivierter **automatischer Verlängerung** eingerichtet. Dieser Modus stellt sicher, dass Ihre Dienstleistungen bei Ablauf automatisch verlängert werden. Darüber hinaus werden Ihre Rechnungen automatisch beglichen, sofern Sie in Ihrem Kunden-Account eine Zahlungsart eingetragen haben.
 
-Standardmäßig ist für Ihre Dienstleistungen die **automatische Verlängerung** aktiviert. Dieser Modus ermöglicht Ihnen, sicherzugehen, dass Ihre Dienstleistungen bei Ablauf nicht deaktiviert werden. Darüber hinaus werden, sofern Sie in Ihrem Kundenkonto eine gültige Zahlungsart eingetragen haben, Ihre Rechnungen automatisch mit dieser beglichen.
+Wenn Sie keine [Zahlungsart](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/) eingetragen haben, erhalten Sie eine Rechnung per E-Mail. Sie brauchen die Rechnung dann lediglich online zu begleichen. 
 
-Wenn Sie keine Zahlungsart hinterlegt haben, wird Ihnen eine Rechnung per E-Mail gesendet. Sie können die Rechnung dann über das Online-Formular bezahlen. 
+Für Dienstleistungen, die eine automatische Erneuerungsfrequenz haben welche 1 Monat übersteigt (3 Monate, 6 Monate, 12 Monate), wird Ihnen im vorherigen Monat eine Erinnerung per E-Mail zugesandt welche die bald zu erneuernden Dienstleistungen zusammenfasst. 
 
-Für Dienstleistungen, die eine automatische Verlängerungsfrequenz von mehr als einem Monat haben (3 Monate, 6 Monate, 12 Monate), wird Ihnen im vorherigen Monat eine Erinnerung per E-Mail gesendet. Sie enthält alle demnächst zu verlängernden Dienste. 
+Wenn Sie eine dieser Dienstleistungen nicht verlängern möchten, genügt es, sie [in Ihrem Kundencenter zu kündigen](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
 
-Wenn Sie eine dieser Dienstleistungen nicht verlängern möchten, genügt es, diese in Ihrem Kundencenter zu kündigen.
+### Die manuelle Erneuerung
 
-#### **Manuelle Verlängerung**
+Darüber hinaus können Sie einige OVHcloud Dienste (Domainnamen, Hosting, VPS, Dedicated Server) auf die **manuelle Verlängerung** umstellen. Dieser Verlängerungsmodus ist nützlich, wenn Sie nicht sicher sind, ob Sie die Dienstleistung zum Ablaufdatum behalten möchten oder wenn Sie nicht möchten, dass Ihre Rechnungen automatisch von Ihrem Zahlungsmittel eingezogen werden. 
 
-Sie können auch für manche OVHcloud Dienste (Domainnamen, Webhostings, VPS, Dedicated Server) den Status **manuelle Verlängerung** aktivieren. Dieser Verlängerungsmodus ist nützlich, wenn Sie nicht sicher sind, ob die Dienstleistung nach Ablauf beibehalten werden soll oder wenn Sie nicht wünschen, dass Ihre Zahlungen automatisch vom Standardzahlungsmittel eingezogen werden. 
-
-Wenn Sie diesen Modus wählen, erhalten Sie vor Ablauf mehrere Erinnerungen per E-Mail; jede enthält einen Link zur direkten Verlängerung des Dienstes. Sie können diese Zahlung aber auch einfach von Ihrem Kundencenter aus durchführen.
+Wenn Sie diesen Modus wählen, erhalten Sie vor dem Ablaufdatum der Dienste mehrere Erinnerungsnachrichten per E-Mail. Jede enthält einen Link, über den die betroffenen Dienstleistungen vor Ablauf verlängert werden können. Sie können die Zahlung auch einfach von Ihrem Kundencenter aus durchführen.
 
 > [!warning]
 >
->Wenn Sie keine Zahlung für eine Dienstleistung mit manueller Erneuerung durchführen, wird diese am Ablaufdatum automatisch deaktiviert und nach ein paar Tagen permanent gelöscht.
+> Wenn Sie keine Zahlung für eine Dienstleistung mit manueller Verlängerung durchführen, wird diese am Ablaufdatum automatisch deaktiviert und nach ein paar Tagen gelöscht.
 >
->Es ist in diesem Fall also nicht notwendig, die Dienstleistung explizit zu kündigen.
+> Es ist also nicht notwendig, die Kündigung zu beantragen, wenn Sie die Dienstleistung nicht beibehalten möchten.
 >
-
 
 ### Verlängerung verwalten
 
-Auf der rechten Seite jeder Dienstleistung klicken Sie auf den Button `...`{.action} in der Spalte „Aktionen“, um die Verlängerungseinstellungen vorzunehmen. 
+Klicken Sie rechts neben jedem Dienst auf den Button `...`{.action} in der Spalte `Aktionen`, um die Verlängerung Ihrer Dienstleistungen einzustellen.
 
 ![manageautomaticrenewal](images/manageautorenew5b.png){.thumbnail}
 
 > [!primary]
 >
->Manche der unten beschriebenen Aktionen können nicht verfügbar sein, abhängig von der Art der Dienstleistung. 
+> Je nach Dienstleistung sind manche Aktionen nicht verfügbar, da die manuelle Verlängerung nicht anwendbar ist.
 >
- 
-#### **Die Verlängerung konfigurieren**
+
+#### Die Verlängerung einstellen
 
 ![manageautomaticrenewal](images/manageautorenew6b.png){.thumbnail}
 
-Je nach ausgewählter Dienstleistung können Sie die manuelle Verlängerung aktivieren oder das Intervall der automatischen Verlängerung auswählen. Im der Beispielansicht können Sie die Verlängerungsart wählen und auch deren Zeitraum.
+Je nach gewählter Dienstleistung können Sie die Konfiguration für die manuelle Verlängerung oder die Frequenz für die automatische Verlängerung festlegen. Im vorliegenden Fall können Sie die Verlängerungsart wählen und auch deren Frequenz.
 
 ![manageautomaticrenewal](images/manageautorenew7.png){.thumbnail}
 
-Entsprechend der Auswahl werden die künftigen Daten für Zahlungen, die verwendete Zahlungsart und das Ablaufdatum angezeigt.
+Entsprechend der getroffenen Wahl werden die künftigen Daten der Einzugsermächtigung, die Zahlungsart, die angewendet wird sowie auch das Ablaufdatum präzisiert werden.
 
-#### **Dienst verlängern**
+#### Verlängerung der Dienstleistung
 
-Diese Aktion wird nur für Dienste vorgeschlagen, die auf manuelle Verlängerung eingestellt sind; hier werden Sie dann zum Online-Formular für Zahlungen weitergeleitet. Sie können diese Dienstleistungen jederzeit vor ihrem Ablauf bezahlen und auch die Dauer ihrer Verlängerung wählen.
+Diese Aktion ist nur für Dienstleistungen verfügbar, für die manuelle Verlängerung eingestellt ist; hier werden Sie dann zur Benutzeroberfläche für Onlinezahlung weiter geleitet. Sie können diese Dienstleistungen jederzeit vor dem Ablauf erneuern und die Dauer der Verlängerung wählen.
 
-#### **Vorauszahlen**
+#### Die Zahlung antizipieren
 
-Diese Aktion wird nur für Dienste vorgeschlagen, die auf automatische Verlängerung eingestellt sind; hier werden Sie dann zum Online-Formular für Zahlungen weitergeleitet. Sie können diese Dienstleistungen jederzeit vor ihrem Ablauf bezahlen und auch die Dauer ihrer Verlängerung wählen. In diesem Fall wird die gewählte Laufzeit der bestehenden Dienstlaufzeit hinzugefügt. Ihnen entsteht also kein Nachteil.
+Diese Aktion ist nur für Dienstleistungen verfügbar, für die automatische Verlängerung eingestellt ist; hier werden Sie dann zur Benutzeroberfläche für Onlinezahlung weitergeleitet. Sie können diese Dienstleistungen jederzeit vor dem Ablauf erneuern und die Dauer der Verlängerung wählen. In diesem Fall wird die neue Laufzeit der aktuellen Gültigkeitsdauer hinzugefügt. Sie verlieren die verbleibende Gültigkeitsdauer nicht.
 
-#### **Am Ablaufdatum kündigen**
+#### Bei Ablauf kündigen
 
-Diese Aktion wird nur für Dienste vorgeschlagen, die auf automatische Verlängerung eingestellt sind. Wenn Sie diese Aktion wählen, werden die automatische Verlängerung und die automatische Zahlung deaktiviert.
+Diese Aktion ist nur für Dienstleistungen verfügbar, für die automatische Verlängerung eingestellt ist. Mit dieser Aktion werden automatische Verlängerung und Zahlung für die ausgewählte Dienstleistung deaktiviert.
 
-#### **Meine Rechnung begleichen**
+> [!warning]
+>
+> Weitere Informationen zur Kündigung der OVHcloud-Dienste finden Sie in dieser [Anleitung](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
+>
 
-Wenn Sie Dienstleistungen mit automatischer Verlängerung beziehen, jedoch keine Zahlungsart zur Begleichung Ihrer Rechnungen eingetragen haben, wird eine Meldung „Ausstehende Rechnung“ angezeigt, jeweils für den Dienst, der auf Zahlung wartet. Klicken Sie auf `Meine Rechnung begleichen`{.action}, um zum Online-Formular für Zahlungen weitergeleitet zu werden.
+#### Meine Rechnung bezahlen
 
-#### **Gruppierte Aktionen**
+Wenn Sie Dienstleistungen mit automatischer Verlängerung nutzen, aber keine gültige Zahlungsart hinterlegt haben, erscheint ein Vermerk über die **zu bezahlende Rechnung**, wann immer eine Rechnung noch nicht beglichen ist. Wählen Sie dann die Aktion `Meine Rechnung bezahlen`{.action} um zur Benutzeroberfläche für Onlinezahlung weitergeleitet zu werden.
 
-Sie können Aktionen für mehrere Dienste zugleich durchführen, indem Sie die gewünschten Dienste in der Tabelle auswählen und dann auf den Button `Aktionen`{.action} klicken.
+#### Gruppierte Aktionen
+
+Sie können gruppierte Aktionen durchführen, indem Sie mehrere Dienstleistungen in der Tabelle auswählen und dann auf den Button `Aktionen`{.action} klicken.
 
 ![manageautomaticrenewal](images/manageautorenew9.png){.thumbnail}
 
-Die folgende Tabelle erläutert die hier verfügbaren Aktionen.
+Die nachfolgende Tabelle detailliert die möglichen Gruppenaktionen.
 
-|  Mögliche Aktion  |  Beschreibung  |
-|  :-----          |  :-----          |
-|  Verlängern |  Mehrere Dienstleistungen gleichzeitig verlängern. Sie werden auf eine Seite weitergeleitet, die es ermöglicht, die Dauer der gewünschten Verlängerung auszuwählen und die Zahlung durchzuführen. |
-|  Automatische Zahlung deaktivieren |  Die automatische Zahlung für mehrere Dienstleistungen gleichzeitig deaktivieren. Wenn eine oder mehrere Dienstleistungen mit der manuellen Verlängerung nicht kompatibel sind, wird dies während der Bestätigung angezeigt.  |
-|  Automatische Zahlung aktivieren |  Die automatische Zahlung für mehrere Dienstleistungen gleichzeitig aktivieren. Nur die tatsächlich infrage kommenden Dienstleistungen werden aktualisiert. |
-|  Als CSV Datei exportieren |  Erzeugen einer Datei im Format *.csv.* |
-|  Die Ablaufdaten aneinander angleichen |  Erlaubt, das Ablaufdatum Ihrer Dienstleistungen auf einen Kalendertag zu vereinheitlichen. Nur die tatsächlich infrage kommenden Dienstleistungen werden aktualisiert. |
-
+|Mögliche Aktion|Beschreibung|
+|---|---|
+|Verlängern|Mehrere Dienstleistungen gleichzeitig verlängern. Sie werden auf eine Seite weitergeleitet, auf der Sie die gewünschte Verlängerungsdauer auswählen können. Sie können dann eine Onlinezahlung durchführen.|
+|Automatische Zahlung deaktivieren|Die automatische Zahlung für mehrere Dienstleistungen gleichzeitig deaktivieren. Wenn eine oder mehrere Dienstleistungen mit der manuellen Erneuerung nicht kompatibel sind, wird dies während der Bestätigung angezeigt.|
+|Automatische Zahlung aktivieren|Die automatische Zahlung für mehrere Dienstleistungen gleichzeitig aktivieren. Nur die in Frage kommenden Dienstleistungen werden aktualisiert.|
+|Export als CSV-Datei|Exportiert alle Ihre Dienstleistungen und deren Ablaufdaten in eine Datei im Format *csv*.|
+|Ablaufdaten einander angleichen|Das Ablaufdatum Ihrer Dienstleistungen an einen Kalendertag angleichen. Nur die in Frage kommenden Dienstleistungen werden aktualisiert.|
 
 ## Weiterführende Informationen
+
+[Informationen zu den Abrechnungsoptionen der Public Cloud](https://docs.ovh.com/de/public-cloud/informationen-zu-cloud-abrechnungsoptionen/)
+
+[Die Abrechnung für Ihre Exchange Accounts verwalten](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange-abrechnung-verwalten/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
