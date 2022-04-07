@@ -151,6 +151,8 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 ### Étape 3 : Créer une instance
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
@@ -241,7 +243,7 @@ Enter passphrase for key '/Users/username/.ssh/id_rsa':
 Vous êtes maintenant connecté avec les privilèges root (« sudo user »). Il est conseillé de changer d'abord votre mot de passe :
 
 ```bash
-$ sudo passwd
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully

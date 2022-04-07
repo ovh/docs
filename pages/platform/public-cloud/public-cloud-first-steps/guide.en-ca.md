@@ -153,6 +153,8 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 ### Step 3: Creating an instance
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
@@ -244,7 +246,7 @@ Enter passphrase for key '/Users/username/.ssh/id_rsa':
 Since you are logged in with root privileges ("sudo user"), you can immediately enter commands to perform administrative tasks. It is advisable to first change your password:
 
 ```bash
-$ sudo passwd
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully

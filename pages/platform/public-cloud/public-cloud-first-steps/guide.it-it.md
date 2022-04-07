@@ -153,6 +153,8 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 ### Step 3: crea un’istanza
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
@@ -244,7 +246,7 @@ Enter passphrase for key '/Users/username/.ssh/id_rsa':
 Dato che hai effettuato l’accesso con i privilegi di root (“sudo user”), puoi inserire subito i comandi per eseguire le attività amministrative. Ti consigliamo di cambiare prima la password:
 
 ```bash
-$ sudo passwd
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
