@@ -37,15 +37,9 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les machines physiques et les bâtiments d’hébergement | CI | RA |
 | Installer et configurer les briques fonctionnelles internes au serveur dédié nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS, BMC, IPMI...) |  | RA |
-| Acheter et détenir les licences et droits d’utilisation pour les OS utilisés | RA |  |
+| Acheter et détenir les licences et droits d’utilisation Nutanix | I | RA  |
 | Déployer la configuration réseau initiale sur les équipements | I | RA |
-
-#### 2.3. Installation du SI client
-
-| **Activité** | **Client** | **OVHcloud** |
-| --- | --- | --- |
-| Installer l'OS | RA | RI |
-| Installer l'ensemble des logiciels souhaités sur le serveur dédié | RA |  |
+| Installer le cluster Nutanix | I | RA |
 
 ### 3. Utilisation du service
 
@@ -59,7 +53,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Administrer les applicatifs installés sur le Serveur Dédié | RA |  |
 | Décider d’ajouter / supprimer une option sur le Serveur Dédié, demander le remplacement d'un matériel défectueux sur le Serveur Dédié | RA | I |
 | Réaliser l’ajout / suppression des options / du matériel sur le Serveur Dédié | I | RA |
-| Adapter la configuration de l’OS aux ressources matérielles en présence | RA |  |
+| Configurer le logiciel Nutanix  | RA |  |
 
 ##### **3.1.2. Gestion des accès**
 
@@ -101,7 +95,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Assurer la sécurité des infrastructures de gestion (API, control plane) | R | RA |
-| Assurer la sécurité des OS, Softwares et Middlewares installés sur les Serveurs Dédiés | RA |  |
+| Assurer la sécurité du logiciel Nutanix, des Softwares et Middlewares installés sur les Serveurs Dédiés | RA |  |
 | Gérer la sécurité des données déposées par le Client sur les Serveurs Dédiés | RA |  |
 | Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
 
@@ -118,7 +112,11 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Remplacer les éléments matériels défectueux du Serveur Dédié | I | RA |
+| Remplacer les éléments matériels défectueux du Serveur Dédié | I | RA |
+| Ouvrir les tickets d'incidents relatif à un dysfonctionnement matériel du Serveur Dédié | RA | I |
+| Ouvrir les tickets d'incidents relatif au logiciel Nutanix | RA | I |
 | Traiter les incidents matériels et réseau (tickets et contacts téléphoniques) | AI | RA |
+| Traiter les incidents relatif au logiciel Nutanix (tickets et contacts téléphoniques) | AI | RA |
 | Traiter les autres incidents | RA |  |
 | Restaurer les sauvegardes de la machine | RA |  |
 
@@ -126,7 +124,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Déployer les correctifs, mettre à jour et configurer les OS, softwares, middlewares et systèmes d’information hébergés sur les Serveurs Dédiés | RA |  |
+| Déployer les correctifs, mettre à jour et configurer Nutanix | RA |  |
 | Planifier les changements demandés par le client | RA | RI |
 
 ### 4. Réversibilité
