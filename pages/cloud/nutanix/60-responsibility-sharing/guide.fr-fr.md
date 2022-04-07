@@ -112,7 +112,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Remplacer les éléments matériels défectueux du Serveur Dédié | I | RA |
-| Remplacer les éléments matériels défectueux du Serveur Dédié | I | RA |
 | Ouvrir les tickets d'incidents relatif à un dysfonctionnement matériel du Serveur Dédié | RA | I |
 | Ouvrir les tickets d'incidents relatif au logiciel Nutanix | RA | I |
 | Traiter les incidents matériels et réseau (tickets et contacts téléphoniques) | AI | RA |
