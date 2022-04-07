@@ -11,7 +11,7 @@ legacy_guide_number: g1271
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 31/03/2022**
+**Ultimo aggiornamento: 07/04/2022**
 
 ## Obiettivo
 
@@ -62,7 +62,7 @@ Puoi selezionare le colonne in ordine crescente o decrescente, utilizzare il cam
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-I criteri di filtraggio da te selezionati saranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare i domini con fattura in attesa di pagamento.
+I criteri di filtraggio verranno visualizzati sopra la tabella. Ecco un esempio di filtro che permette di visualizzare gli hosting per i quali una fattura è in attesa di pagamento.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

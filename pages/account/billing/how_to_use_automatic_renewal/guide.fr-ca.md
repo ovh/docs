@@ -6,7 +6,7 @@ section: Gérer mes services et leur renouvellement
 order: 01
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -57,7 +57,7 @@ Vous avez la possibilité de trier les colonnes par ordre croissant ou décroiss
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les noms de domaines pour lesquels une facture est en attente de réglement.
+Vos critères de filtrage seront alors affichés au dessus du tableau. Voici un exemple de filtre permettant d'afficher les hébergements pour lesquels une facture est en attente de réglement.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

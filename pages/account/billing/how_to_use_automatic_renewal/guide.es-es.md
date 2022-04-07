@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 31/03/2022**
+**Última actualización: 07/04/2022**
 
 ## Objetivo
 
@@ -61,7 +61,7 @@ Puede ordenar las columnas por orden creciente o decreciente, utilizar el campo 
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Sus criterios de filtrado se mostrarán sobre el cuadro. A continuación, puede apreciar un ejemplo de filtro que muestra los nombres de dominios con una factura pendiente de pago.
+Los criterios de filtrado se mostrarán en la parte superior de la tabla. Este es un ejemplo de filtro que permite ver los alojamientos para los que hay una factura pendiente de pago.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

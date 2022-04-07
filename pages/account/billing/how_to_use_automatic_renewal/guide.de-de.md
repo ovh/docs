@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 31.03.2022**
+**Letzte Aktualisierung am 07.04.2022**
 
 ## Ziel
 
@@ -61,7 +61,7 @@ Sie können die Spalten in aufsteigender oder absteigender Reihenfolge sortieren
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Ihre Filterkriterien sind dann über der Tabelle aufgelistet. Hier sehen Sie ein Beispiel für einen Filter, der Domainnamen anzeigt, für die eine zu bezahlende Rechnung besteht.
+Ihre Filterkriterien werden dann über der Tabelle angezeigt. Hier ein Beispiel eines Filters, mit dem die Hosting-Pakete angezeigt werden können, für die eine Rechnung aussteht.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

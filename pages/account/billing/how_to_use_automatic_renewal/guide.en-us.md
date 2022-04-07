@@ -6,7 +6,7 @@ section: Managing the renewal of services
 order: 01
 ---
 
-**Last updated 31st March 2022**
+**Last updated 7th April 2022**
 
 ## Objective
 
@@ -57,7 +57,7 @@ You can sort the columns by ascending or descending order, use the search field 
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Your filter criteria are then displayed above the table. Here is an example of a filter that displays domain names with bills awaiting payment.
+Your filter criteria will then be displayed above the table. Below is an example of a filter that can be used to display web hosting plans that have bills pending payment.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

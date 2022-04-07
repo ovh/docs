@@ -11,7 +11,7 @@ order: 01
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 31/03/2022**
+**Última atualização: 07/04/2022**
 
 ## Objetivo
 
@@ -62,7 +62,7 @@ Pode ordenar as colunas por ordem crescente ou decrescente, utilizar o campo de 
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Os seus critérios de filtragem serão, então, apresentados por cima do quadro. Eis um exemplo de filtro que permite apresentar os nomes dos domínios para os quais uma fatura está com pagamento pendente.
+Os seus critérios de filtragem serão apresentados por cima da tabela. Eis um exemplo de filtro que permite apresentar os alojamentos para os quais uma fatura está a aguardar pagamento.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 

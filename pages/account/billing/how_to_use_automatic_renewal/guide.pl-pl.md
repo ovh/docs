@@ -11,7 +11,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 31-03-2022**
+**Ostatnia aktualizacja z dnia 07/04/2022**
 
 ## Wprowadzenie
 
@@ -62,7 +62,7 @@ Możesz sortować kolumny w kolejności rosnącej lub malejącej, używać pola 
 
 ![manageautomaticrenewal](images/manageautorenew3.png){.thumbnail}
 
-Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie nazw domen, w przypadku których faktura oczekuje na zapłatę.
+Kryteria filtrowania zostaną wyświetlone nad tabelą. Oto przykład filtra umożliwiającego wyświetlenie hostingu, dla którego faktura oczekuje na uregulowanie.
 
 ![manageautomaticrenewal](images/manageautorenew4b.png){.thumbnail}
 
