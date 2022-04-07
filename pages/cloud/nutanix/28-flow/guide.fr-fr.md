@@ -89,7 +89,42 @@ La nouvelle catégorie apparait dans la liste des catégories
 
 #### Modification d'une catégorie
 
-!!!!! A réorganiser !!!!!
+Cliquez dans le menu principal sur `Catégories`{.action} dans le sous menu `Administration`.
+
+![Create Isolation Rule 01](images/modifycategory01.png){.thumbnail}
+
+Sélectionnez la catégorie `Special-Computers`{.action}
+
+![Create Isolation Rule 02](images/modifycategory02.png){.thumbnail}
+
+Cliquez sur `Update`{.action} dans le menu `Actions`{.action}
+
+![Create Isolation Rule 03](images/modifycategory03.png){.thumbnail}
+
+Cliquez sur `New value`{.action}
+
+![Create Isolation Rule 04](images/modifycategory03.png){.thumbnail}
+
+saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+
+![Create Isolation Rule 05](images/modifycategory05.png){.thumbnail}
+
+Cliquez sur `New value`{.action}
+
+![Create Isolation Rule 06](images/modifycategory06.png){.thumbnail}
+
+saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+
+![Create Isolation Rule 07](images/modifycategory07.png){.thumbnail}
+
+Cliquez sur `Save`{.action} pour valider la modification de la valeur.
+
+![Create Isolation Rule 08](images/modifycategory08.png){.thumbnail}
+
+La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles veleurs.
+
+![Create Isolation Rule 09](images/modifycategory09.png){.thumbnail}
+
 
 #### Affectation d'une catégorie à une machine virtuelle
 
@@ -249,43 +284,6 @@ Si l'on met une machine virtuelle en quarantaine **strict** rien ne sera autoris
 
 Nous allons créez une règle d'isolation du réseau entre des machines virtuelles membres de catégories différentes pour quelles ne puissent pas communiquer entres elles.
 
-#### Ajouter des valeurs dans une catégorie
-
-Cliquez dans le menu principal sur `Catégories`{.action} dans le sous menu `Administration`.
-
-![Create Isolation Rule 01](images/createisolationrule01.png){.thumbnail}
-
-Sélectionnez la catégorie `Special-Computers`{.action}
-
-![Create Isolation Rule 02](images/createisolationrule02.png){.thumbnail}
-
-Cliquez sur `Update`{.action} dans le menu `Actions`{.action}
-
-![Create Isolation Rule 03](images/createisolationrule03.png){.thumbnail}
-
-Cliquez sur `New value`{.action}
-
-![Create Isolation Rule 04](images/createisolationrule03.png){.thumbnail}
-
-saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
-
-![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
-
-Cliquez sur `New value`{.action}
-
-![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
-
-saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
-
-![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
-
-Cliquez sur `Save`{.action} pour valider la modification de la valeur.
-
-![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
-
-La catégorie est visible dans le tableau de bord des catégories avec ces deux nouvelles veleurs.
-
-![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
 
 #### Affecter des valeurs à des machines virtuelles
 
