@@ -3,7 +3,7 @@ title: Getting started with Public Cloud Databases
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 slug: getting-started
 section: General information
-order: 1
+order: 010
 ---
 
 **Last updated 1st Febuary 2022**

@@ -3,7 +3,7 @@ title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 slug: getting-started
 section: Informations générales
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
 ---

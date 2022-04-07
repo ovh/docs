@@ -3,7 +3,7 @@ title: FAQ
 excerpt: 'Frequently Asked Questions on Public Cloud Databases'
 slug: faq
 section: General information
-order: 3
+order: 030
 ---
 
 **Last updated August 25<sup>th</sup>, 2021**
