@@ -370,6 +370,8 @@ Si une connexion tentative de connexion réseau est detectée entre ces deux zon
 
 Nous allons mettre en place une règle d'application qui n'autorisera que le port HTTP sur une catégorie d'application à une VM depuis une catégories appliquée à deux sous réseaux. 
 
+Par défaut le trafic sortant est autorisé à partir des ordinateurs faisant partie de la catégorie d'applications.
+
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
 
 A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
