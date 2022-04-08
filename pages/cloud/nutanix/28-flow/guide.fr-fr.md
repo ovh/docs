@@ -50,11 +50,9 @@ Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
 Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
 
-Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie de ces catégories et être utilisé dans des outils comme **Flow** par exemple.
+Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie de ces catégories qui peuvent être utilisées dans des outils comme **Flow** par exemple.
 
 #### Création d'une catégorie
-
-Nous allons créer une Catégories **Special-Computers** avec une valeur nommée **Antivirus**.
 
 Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
