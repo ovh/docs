@@ -135,7 +135,7 @@ Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouto
 
 Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une catégorie.
 
-![Add VM to Category 05](images/addvmtocategory05.png){.thumbnail} pour que la machine virtuelle soit membre de cette catégorie.
+![Add VM to Category 05](images/addvmtocategory05.png){.thumbnail} 
 
 #### Affectation d'une catégorie à plusieurs machines virtuelles
 
@@ -235,7 +235,7 @@ Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
 ![Configure Quarantine 06](images/configurequarantinerule06.png){.thumbnail}
 
-Le statut de la règle est maintenant sur `Enforced` 
+Le statut de la règle est maintenant sur `Enforced`.
 
 Le trafic est bloqué nous voyons les tentatives d'accès aux machines virtuelles en quarantaines via des traits de couleurs rouges vers des rectangles contenant l'adresse IP de la machine virtuelle.
 
@@ -400,6 +400,13 @@ Cliquez sur `Next`{.action} pour finaliser la création de la règle.
 
 ![Create Application Rule 09](images/createapplicationrule09.png){.thumbnail}
 
+Sélectionnez `Enforce`{.action} et cliquez sur `Save and Enforce`{.action}
+
+![Create Application Rule 10](images/createapplicationrule10.png){.thumbnail}
+
+La règle créée se trouve dans la liste des règles. 
+
+![Create Application Rule 11](images/createapplicationrule11.png){.thumbnail}
 
 ## Aller plus loin <a name="gofurther"></a>
 
