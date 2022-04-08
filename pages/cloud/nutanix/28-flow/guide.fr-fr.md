@@ -48,11 +48,9 @@ La micro-segmentation est activée. Il est possible de la désactiver.
 
 Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
-Lors de l'installation d'un cluster certaines catégories existent déjà, il est possible de les modifier.
+Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables , d'autres catégories peuvent être ajoutées.
 
-Il est possible de rajouter des catégories supplémentaires.
-
-Il est possible de les affecter à des entités comme des machines virtuelles, des sous réseaux ou des images pour ensuite les utiliser dans des outils comme **Flow** par exemple.
+Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie des ces catégories et être utilisé dans des outils comme **Flow** par exemple.
 
 #### Création d'une catégorie
 
@@ -183,7 +181,7 @@ Cliquez sur `Save`{.action}.
 
 ### Gestion de la quarantaine réseau.
 
-La quarantaine réseau permet à partir de la gestion de VM d'isoler une machine virtuelle de l'ensemble du réseau ou de lui permettre un accès restreint à certains outils de réparations sur le réseau.
+La quarantaine réseau permet d'isoler une machine virtuelle de l'ensemble du réseau ou de lui permettre un accès restreint à certains outils de réparations se trouvant sur le réseau.
 
 #### Mise en quarantaine d'une VM
 
@@ -296,27 +294,35 @@ Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: categ
 
 ![Configure Quarantine 18](images/configurequarantinerule18.png){.thumbnail}
 
-Cliquez sur `Next`{.action}.
+Cliquez sur le signe `°`{.action} à droite de la quarantaine
 
 ![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
-Cliquez sur `Save and Enforce`{.action} pour appliquer les changements sur la règle de quarantaine.
+Cliquez sur `Save`{.action}.
 
 ![Configure Quarantine 20](images/configurequarantinerule20.png){.thumbnail}
 
-Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quarantaine.
+Cliquez sur `Next`{.action}.
 
 ![Configure Quarantine 21](images/configurequarantinerule21.png){.thumbnail}
+
+Cliquez sur `Save and Enforce`{.action} pour appliquer les changements sur la règle de quarantaine.
+
+![Configure Quarantine 22](images/configurequarantinerule22.png){.thumbnail}
+
+Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quarantaine.
+
+![Configure Quarantine 23](images/configurequarantinerule23.png){.thumbnail}
 
 Le statut de de la règle est sur `Enforced` , le mode **forensic** a été personnalisé.
 
 Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux machines virtuelles définies dans la règle de quarantaine.
 
-![Configure Quarantine 22](images/configurequarantinerule22.png){.thumbnail}
+![Configure Quarantine 24](images/configurequarantinerule24.png){.thumbnail}
 
 ### Création d'une règle d'isolation
 
-Un règle d'isolations permet le blocage de communication entre deux types de catégories (machines virtuelles ou sous réseaux)
+Un règle d'isolations permet le blocage des communications réseaux  entre deux types de catégories (machines virtuelles ou sous réseaux)
 
 Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
 
@@ -330,31 +336,31 @@ Pour plus d'informations sur la gestion des catégories reportez-vous à la sect
 
 Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
 
-![Create Isolation Rule 03](images/createisolationrule04.png){.thumbnail}
+![Create Isolation Rule 03](images/createisolationrule03.png){.thumbnail}
 
 Cliquez sur `Create Security Policy`{.action}.
 
-![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
+![Create Isolation Rule 04](images/createisolationrule04.png){.thumbnail}
 
 Sélectionnez `Isolate Environments (Isolation Policy)`{.action} ensuite cliquez sur `Create`{.action}.
 
-![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
+![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
 
 Saisissez le nom de la règle dans `Name`{.action} ensuite mettez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action} suivi d'une autre catégorie dans `From this category`{.action}.
 
 Sélectionnez Enforce dans `Select a Policy mode`{.action} et cliquez sur `Save and Enforce`{.action}. 
 
-![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
+![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
 
 La règle est active dans la liste des règles de sécurité.
 
 Cliquez sur `Le nom de la règle`{.action} en dessous de `Name` pour voir le détail.
 
-![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
+![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
 
 Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de connexion entre les deux zones est détectée comme indiquée sur ce message. **No Traffic between them has been discovered**
 
-![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
+![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
 Si une tentative de connexion réseau est détectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
 
