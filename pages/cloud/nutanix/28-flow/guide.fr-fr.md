@@ -185,8 +185,6 @@ La quarantaine réseau permet d'isoler une machine virtuelle de l'ensemble du r�
 
 #### Mise en quarantaine d'une VM
 
-La quarantaine est utilisable avec les options par défaut si la micro-segmentation est active. Elle peut s'appliquer à une ou plusieurs machines virtuelles.
-
 Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
 ![Add VM to Quarantine 01](images/addvmtoquarantine01.png){.thumbnail}
@@ -268,7 +266,7 @@ Cliquez sur la `case à cocher`{.action} à gauche de la règle pour Sélectionn
 Le trafic autorisé est maintenant visible avec des traits de couleurs grises alors que le trafic bloqué est en rouge.
 
 
-Pour créer une règle manuellement sans passer par la découverte du réseau, cliquez à gauche sur `Add Source`{.action} pour autoriser une règle entrante vers la quarantaine.
+Pour créer une règle manuellement sans passer par la découverte du réseau, cliquez à gauche sur `Add Source`{.action} pour autoriser une connexion entrante vers la quarantaine.
 
 ![Configure Quarantine 13](images/configurequarantinerule13.png){.thumbnail}
 
@@ -278,7 +276,7 @@ Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: categ
 
 La source apparait dans `Configured`
 
-Cliquez sur le signe `+`{.action} à coté de **Quarantine: Forensics**
+Cliquez sur le signe `+`{.action} à gauche de **Quarantine: Forensics**
 
 ![Configure Quarantine 15](images/configurequarantinerule15.png){.thumbnail}
 
@@ -294,7 +292,7 @@ Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: categ
 
 ![Configure Quarantine 18](images/configurequarantinerule18.png){.thumbnail}
 
-Cliquez sur le signe `°`{.action} à droite de la quarantaine
+Cliquez sur le signe `+`{.action} à droite de **Quarantine: Forensics**
 
 ![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
@@ -316,7 +314,7 @@ Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quaran
 
 Le statut de de la règle est sur `Enforced` , le mode **forensic** a été personnalisé.
 
-Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux machines virtuelles définies dans la règle de quarantaine.
+Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux zones définies dans la règle de quarantaine.
 
 ![Configure Quarantine 24](images/configurequarantinerule24.png){.thumbnail}
 
@@ -324,15 +322,7 @@ Une machine virtuelle placée en mode **Strict** sera totalement isolée du rés
 
 Un règle d'isolations permet le blocage des communications réseaux  entre deux types de catégories (machines virtuelles ou sous réseaux)
 
-Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
-
-![Create Isolation Rule 01](images/createisolationrule01.png){.thumbnail}
-
-Assurez-vous d'avoir correctement configuré les valeurs dans la catégorie avant de continuer le paramètrage.
-
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
-
-![Create Isolation Rule 02](images/createisolationrule02.png){.thumbnail}
 
 Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
 
@@ -364,9 +354,11 @@ Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de c
 
 Si une tentative de connexion réseau est détectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
 
+![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
+
 ### Mise en place d'une règle d'application.
 
-Une règle d'application permet de limiter l'accès à une catégorie d'applications à certains port protocoles ou services.
+Une règle d'application permet de limiter l'accès à une catégorie d'applications vers certains ports protocoles ou services.
 
 La catégorie d'applications est deja existante dans les catégories avec des valeurs prédéfinies mais il est possible d'ajouter d'autres valeurs.
 
