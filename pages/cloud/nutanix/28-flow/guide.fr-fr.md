@@ -129,7 +129,7 @@ Cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}.
 
 ![Add VM to Category 03](images/addvmtocategory03.png){.thumbnail}
 
-Saisissez `le nom de la catégorie et de sa valeur` ensuite cliquez sur le bouton `+`{.action}.
+Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
 
 ![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail}
 
@@ -139,7 +139,7 @@ Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une caté
 
 #### Affectation d'une catégorie à plusieurs machines virtuelles
 
-Sélectionnez trois machines virtuelles en utilisant les `cases à cocher à leurs gauches`{.action}.
+Sélectionnez trois machines virtuelles en utilisant les `cases à cocher `{.action} à leurs gauches.
 
 ![Add category to multi VMs 01](images/multivmcategorychange01.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Cliquez sur le menu `Actions`{.action} et sélectionnez `Manage Categories`{.act
 
 ![Add category to multi VMs 02](images/multivmcategorychange02.png){.thumbnail}
 
-Saisissez le nom de votre valeur dans la `zone de saisie`{.action} et cliquez sur le bouton `+`{.action}.
+Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
 
 ![Add category to multi VMs 03](images/multivmcategorychange03.png){.thumbnail}
 
@@ -156,8 +156,6 @@ Cliquez sur `Save`{.action}
 ![Add category to multi VMs 04](images/multivmcategorychange04.png){.thumbnail}
 
 #### Affectation d'une catégorie à des sous réseaux
-
-Nous allons voir comment affecter une catégorie à un ou plusieurs sous réseaux.
 
 Allez dans le `Menu Principal`{.action} et cliquez sur `Subnets`{.action} sous `Network & Security`.
 
@@ -205,7 +203,7 @@ La machine virtuelle est en quarantaine.
 
 #### Personnalisation de la quarantaine réseau.
 
-Pour l'instant la machine virtuelle mise en quarantaine n'est pas bloquée, suivez ces instructions pour configurer la quarantaine.
+Pour l'instant aucun blocage n'affecte la machine virtuelle en quarantaine. Suivez ces instructions pour configurer la quarantaine.
 
 A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
 
@@ -247,19 +245,19 @@ Cliquez sur `Next`{.action}
 
 ![Configure Quarantine 08](images/configurequarantinerule08.png){.thumbnail}
 
-Positionnez la souris sur une règle de blocage entrante et cliquez sur `Allow Traffic`{.action}
+Positionnez la souris sur une tentative de connexion entrante et cliquez sur `Allow Traffic`{.action}
 
 ![Configure Quarantine 09](images/configurequarantinerule09.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à gauche de la règle pour Sélectionner le trafic découvert entrant ensuite cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic spécifique découvert comme par exemple le protocole ICMP.
+Cliquez sur la `case à cocher`{.action} à gauche pour sélectionner le trafic découvert entrant et cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert comme par exemple ci-dessous le protocole ICMP.
 
 ![Configure Quarantine 10](images/configurequarantinerule10.png){.thumbnail}
 
-Positionez la souris sur une règle de blocage sortante et cliquez sur `Allow Traffic`{.action}
+Positionez la souris sur une tentative de connexion sortante et cliquez sur `Allow Traffic`{.action}.
 
 ![Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à gauche de la règle pour Sélectionner le trafic découvert sortant. Ensuite cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic spécifique découvert.
+Cliquez sur la `case à cocher`{.action} à gauche sélectionner le trafic découvert sortant. Ensuite cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert.
 
 ![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
@@ -274,17 +272,17 @@ Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: categ
 
 ![Configure Quarantine 14](images/configurequarantinerule14.png){.thumbnail}
 
-La source apparait dans `Configured`
+La source apparait dans `Configured`.
 
-Cliquez sur le signe `+`{.action} à gauche de **Quarantine: Forensics**
+Cliquez sur le signe `+`{.action} à gauche de **Quarantine: Forensics**.
 
 ![Configure Quarantine 15](images/configurequarantinerule15.png){.thumbnail}
 
-Cliquez sur `Save`{.action}
+Autorisez tous le trafic et cliquez sur `Save`{.action}.
 
 ![Configure Quarantine 16](images/configurequarantinerule16.png){.thumbnail}
 
-Cliquez à gauche sur `Add Destination`{.action} à droite pour autoriser une règle sortante depuis la quarantaine
+Cliquez à gauche sur `Add Destination`{.action} à droite pour autoriser une règle sortante depuis la quarantaine.
 
 ![Configure Quarantine 17](images/configurequarantinerule17.png){.thumbnail}
 
@@ -296,7 +294,7 @@ Cliquez sur le signe `+`{.action} à droite de **Quarantine: Forensics**
 
 ![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
-Cliquez sur `Save`{.action}.
+Autorisez tous le trafic et cliquez sur `Save`{.action}.
 
 ![Configure Quarantine 20](images/configurequarantinerule20.png){.thumbnail}
 
@@ -352,15 +350,15 @@ Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de c
 
 ![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
-Si une tentative de connexion réseau est détectée entre ces deux zones le message a changé en **Traffic between them has been discovered**
+Si une tentative de connexion réseau est détectée entre ces deux zones le message change et devient **Traffic between them has been discovered**
 
 ![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
 
 ### Mise en place d'une règle d'application.
 
-Une règle d'application permet de limiter l'accès à une catégorie d'applications vers certains ports protocoles ou services.
+Une règle d'application limite l'accès à vers certains ports protocoles ou services des membres d'un catégorie depuis une autre catégorie.
 
-La catégorie d'applications est déjà existante dans les catégories avec des valeurs prédéfinies mais il est possible d'ajouter d'autres valeurs.
+Cette règle n'est utilisable qu'avec un catégorie nommé **Applications** que l'on peut modifier mais pas supprimer.
 
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
 
@@ -396,15 +394,15 @@ Sélectionnez `Select a Service`{.action} , choisir la catégorie dans `Protocol
 
 ![Create Application Rule 08](images/createapplicationrule08.png){.thumbnail}
 
-Cliquez sur `Next`{.action} pour finaliser la création de la règle.
+Cliquez sur `Next`{.action}.
 
 ![Create Application Rule 09](images/createapplicationrule09.png){.thumbnail}
 
-Sélectionnez `Enforce`{.action} et cliquez sur `Save and Enforce`{.action}
+Sélectionnez `Enforce`{.action} et cliquez sur `Save and Enforce`{.action} pour activer cette règle.
 
 ![Create Application Rule 10](images/createapplicationrule10.png){.thumbnail}
 
-La règle créée se trouve dans la liste des règles. 
+La règle créée se trouve dans la liste des règles.
 
 ![Create Application Rule 11](images/createapplicationrule11.png){.thumbnail}
 
