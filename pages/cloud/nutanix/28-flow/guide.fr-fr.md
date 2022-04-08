@@ -48,9 +48,9 @@ La micro-segmentation est activée. Il est possible de la désactiver.
 
 Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
-Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables , d'autres catégories peuvent être ajoutées.
+Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
 
-Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie des ces catégories et être utilisé dans des outils comme **Flow** par exemple.
+Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie de ces catégories et être utilisé dans des outils comme **Flow** par exemple.
 
 #### Création d'une catégorie
 
@@ -312,7 +312,7 @@ Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quaran
 
 ![Configure Quarantine 23](images/configurequarantinerule23.png){.thumbnail}
 
-Le statut de de la règle est sur `Enforced` , le mode **forensic** a été personnalisé.
+Le statut de de la règle est sur `Enforced`, le mode **forensic** a été personnalisé.
 
 Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux zones définies dans la règle de quarantaine.
 
@@ -320,7 +320,7 @@ Une machine virtuelle placée en mode **Strict** sera totalement isolée du rés
 
 ### Création d'une règle d'isolation
 
-Un règle d'isolations permet le blocage des communications réseaux  entre deux types de catégories (machines virtuelles ou sous réseaux)
+Un règle d'isolations permet le blocage des communications réseaux entre deux types de catégories (machines virtuelles ou sous réseaux)
 
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
 
@@ -360,7 +360,7 @@ Si une tentative de connexion réseau est détectée entre ces deux zones le mes
 
 Une règle d'application permet de limiter l'accès à une catégorie d'applications vers certains ports protocoles ou services.
 
-La catégorie d'applications est deja existante dans les catégories avec des valeurs prédéfinies mais il est possible d'ajouter d'autres valeurs.
+La catégorie d'applications est déjà existante dans les catégories avec des valeurs prédéfinies mais il est possible d'ajouter d'autres valeurs.
 
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
 
@@ -376,7 +376,7 @@ Sélectionnez `Secure Application (App Policy)`{.action} et cliquez sur `Create`
 
 ![Create Application Rule 03](images/createapplicationrule03.png){.thumbnail}
 
-Saisissez ces champs `Name` par un nom de règle, `Purpose` avec un commentaire , `Secure this App` en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
+Saisissez ces champs `Name` par un nom de règle, `Purpose` avec un commentaire, `Secure this App` en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
 
 ![Create Application Rule 04](images/createapplicationrule04.png){.thumbnail}
 
