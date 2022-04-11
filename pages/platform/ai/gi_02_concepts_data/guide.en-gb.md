@@ -61,7 +61,7 @@ The purpose of **read-only** permissions is to ensure that you do not modify you
 
 > [!primary]
 >
-> If you have directly added data from the Object Storage to the container connected in RO, you can request an **intermediate synchronization**. Otherwise, your data will be **synchronized at the next start** of your job or notebook.
+> If you have directly added data from the Object Storage to the container connected in `RO`, you can request an **intermediate synchronization**. Otherwise, your data will be **synchronized at the next start** of your job or notebook.
 
 - **Read Write** (shorten by `RW`): you have full access to your data in your job or notebook. You can therefore write, modify, add or delete data in this container.
 
