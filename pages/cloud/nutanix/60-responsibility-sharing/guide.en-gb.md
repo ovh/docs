@@ -2,7 +2,7 @@
 title: Responsibility sharing - Hosted Private Cloud powered by Nutanix
 slug: raci-hosted-private-cloud-nutanix
 section: RACI
-excerpt: "Shared responsibility between AMAZON and the customer for the use of the Hosted Private Cloud powered by Nutanix product"
+excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Hosted Private Cloud powered by Nutanix product"
 ---
 
 **Last updated 07/04/2022**
