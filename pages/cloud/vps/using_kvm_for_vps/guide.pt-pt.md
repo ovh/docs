@@ -6,6 +6,10 @@ section: Primeiros passos
 order: 6
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 14/09/2020**
 
 ## Objetivo
@@ -17,7 +21,7 @@ O dispositivo KVM permite uma conexão direta ao seu VPS sem precisar de utiliza
 ## Requisitos
 
 - Um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud.
-- Estar conectado à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Estar conectado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
