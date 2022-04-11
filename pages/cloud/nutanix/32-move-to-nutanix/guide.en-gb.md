@@ -38,7 +38,7 @@ This software works on a virtual machine whose sources are available on the Nuta
 
 For optimal use, we recommend installing **Nutanix Move** as close as possible to the destination.
 
-The **Nutanix Move** software is the only software that communicates between source and destination.
+The **Nutanix Move** software is the only software that communicates between the source and the destination.
 
 > [!warning]
 > It is strongly discouraged to use **Nutanix Move** with virtual machines on a Windows Server running **Active Directory** or **Microsoft Exchange**. It is best to migrate as recommended by Microsoft.
@@ -49,9 +49,9 @@ The **Nutanix Move** software is the only software that communicates between sou
 
 ## Instructions
 
-We will see how to migrate from a remote environment on Hyper-V to an OVHcloud Nutanix environment.
+We will look at how to migrate between a remote environment on Hyper-V to an OVHcloud Nutanix environment.
 
-The source and destination are on two interconnected private networks through an **IPSEC VPN**.
+The source and the destination are on two interconnected private networks through an **IPSEC VPN**.
 
 ### Preparing the original virtual machines before migration
 
@@ -311,7 +311,7 @@ The migration is in progress. The `Status` column gives you information on the s
 Check the status of the migration by hovering over the `In Progress` status.<br>
 A window with the information **Ready to Cutover N** should appear, listing the number of VMs that can be migrated.
 
-Click `In Progress`{.action} to start the finalisation process.
+Click `In Progress`{.action} to start the completion process.
 
 ![Cut Over 01](images/CutOver01.PNG){.thumbnail}
 
@@ -323,7 +323,7 @@ Click `Continue`{.action}.
 
 ![Cut Over 03](images/CutOver03.PNG){.thumbnail}
 
-Wait a few moments while it finalizes.
+Wait a few moments while it completes.
 
 ![Cut Over 03](images/CutOver04.PNG){.thumbnail}
 
@@ -331,7 +331,7 @@ The migration is complete when **Completed** appears in the `Migration Status` c
 
 ![Cut Over 03](images/CutOver05.PNG){.thumbnail}
 
-Log in to **Prism Central** to see the 3 migrated VMs that are present and running.
+Log into **Prism Central** to view the 3 migrated VMs that are present and running.
 
 ![Cut Over 03](images/CutOver06.PNG){.thumbnail}
 
@@ -400,7 +400,7 @@ Select:
 - **Disk** In `Type`;
 - Select **Clone from image**;
 - Enter the **name of the image created** in `Image`; 
-- select PCI as the `Bus type`{action} and click `Save`{action}
+- Select PCI as the `Bus type`{action} and click `Save`{action}
 
 ![Change Disk Controller 15](images/ChangeVMDiskController15.PNG){.thumbnail}
 
