@@ -16,7 +16,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 |R : Est en charge de la Réalisation du processus|
 |A : Est gArant de la bonne fin du processus|
 |C : Est Consulté pendant le processus|
-|I : est Informé des résultats  du processus|
+|I : est Informé des résultats du processus|
 
 ### 1. Avant la souscription
 
