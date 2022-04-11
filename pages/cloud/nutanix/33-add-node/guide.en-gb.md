@@ -75,11 +75,12 @@ Check the box next to the discovered host to display the node details.
 
 ![Add Node 03](images/AddNode03.PNG){.thumbnail}
 
-Scroll to see options.
+Scroll to see the options.
 
 ![Add Node 04](images/AddNode04.PNG){.thumbnail}
 
-Continue scrolling to the bottom of the window and click `Next`{.action}.
+Scroll down to the bottom of the window and click on `Next`.
+{.action}.
 
 ![Add Node 05](images/AddNode05.PNG){.thumbnail}
 
