@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 7th December 2021**
+**Last updated 11th April 2022**
 
 ## Objective
 
@@ -84,10 +84,30 @@ So, let's start!
 
 First, create a `provider.tf` file with the minimum version, european endpoint ("ovh-eu") and keys you got in this guide previously.
 
+Terraform 0.13 and later:
+
+```
+terraform {
+  required_providers {
+    ovh = {
+      source  = "ovh/ovh"
+    }
+  }
+}
+
+provider "ovh" {
+  endpoint           = "ovh-eu"
+  application_key    = "<your_access_key>"
+  application_secret = "<your_application_secret>"
+  consumer_key       = "<your_consumer_key>"
+}
+```
+
+Terraform 0.12 and earlier:
+
 ```
 # Configure the OVHcloud Provider
 provider "ovh" {
-  version            = "~> 0.11"
   endpoint           = "ovh-eu"
   application_key    = "<your_access_key>"
   application_secret = "<your_application_secret>"
