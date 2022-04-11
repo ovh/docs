@@ -19,7 +19,7 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
 - A user for AI Notebooks
-- Two [containers Object Storage](https://docs.ovh.com/gb/en/storage/pcs/create-container/) to store the data and the model
+- Two [Object Storage containers](https://docs.ovh.com/gb/en/storage/pcs/create-container/) to store the data and the model
 - Your own dataset
 
 ## Instructions
