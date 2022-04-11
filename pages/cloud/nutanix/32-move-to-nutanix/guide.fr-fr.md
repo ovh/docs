@@ -163,7 +163,7 @@ Laissez les options de fuseau horaire par défaut et cliquez sur `Next`{.action}
 
 ![Move Install 10](images/MoveInstall10.PNG){.thumbnail}
 
-Cliquez sur sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle **Nutanix Move**.
+Cliquez sur `Create VM`{.action} pour finaliser l'installation de la machine virtuelle **Nutanix Move**.
 
 ![Move Install 11](images/MoveInstall11.PNG){.thumbnail}
 
