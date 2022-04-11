@@ -19,15 +19,22 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we);
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account;
 - A user for AI Notebooks
+- Two [Object Storage containers](https://docs.ovh.com/us/en/storage/pcs/create-container/) to store the data and the model
 - Your own dataset
 
 ## Instructions
 
 ### Uploading your dataset on Public Cloud Storage
 
-If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the Object Storage section and create a new object container by clicking `Object Storage`{.action} > `Create an object container`{.action}.
+If you want to upload it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the Object Storage section and [create a new object container](https://docs.ovh.com/us/en/storage/pcs/create-container/) by clicking `Object Storage`{.action} > `Create an object container`{.action}.
 
 ![image](images/new-object-container.png){.thumbnail}
+
+> [!primary]
+>
+> In the OVHcloud Control Panel, you can upload files but not folders. For instance, you can upload a .zip file to optimize the bandwidth, then unzip it later when accessing it through your JupyterLab.
+> You can also use the OVHcloud AI CLI to upload files and folders (and be more stable than through your browser). 
+>
 
 If you want to run it with the CLI, just follow this [this guide](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/). You have to choose the region, the name of your container and the path where your data is located and use the following command:
 
@@ -49,7 +56,9 @@ ovhai data upload <region> <container> <paths>
 
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/).
 
-If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), just follow this [guide](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
+To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
+ - mount point name: `/workspace/data`, permissions: `read & write`
+ - mount point name: `/workspace/saved_model`, permissions: `read & write`
 
 `Choose the same region as your object container` > `"One image to rule them all" framework` > `Attach Object Storage containers (the one that contains your dataset)`
 
@@ -68,6 +77,7 @@ You can then reach your notebook’s URL once the notebook is Running.
 
 The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
 
+If you have not already added a git repository when you created your notebook with the OVHcloud Control Panel, you have to clone it.
 Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
 
 ![image](images/new-terminal.png){.thumbnail}
