@@ -5,7 +5,7 @@ section: RACI
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Hosted Private Cloud powered by Nutanix product"
 ---
 
-**Last updated 07/04/2022**
+**Last updated 07th April 2022**
 
 ## Objective
 
