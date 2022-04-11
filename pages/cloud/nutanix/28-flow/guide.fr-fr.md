@@ -1,6 +1,6 @@
 ---
 title: Configurer Nutanix Flow
-slug: flow
+slug: nutanix-flow
 excerpt: "Découvrez comment configurer et utiliser Nutanix Flow"
 section: Réseau et sécurité
 order: 09
@@ -10,7 +10,7 @@ order: 09
 
 ## Objectif
 
-Nutanix Flow est disponible dans toutes les offres **Hosted Private Cloud Powered by Nutanix**. Cette option permet de sécuriser le réseau à l'intérieur d'un ou plusieurs clusters gérés par **Prism Central**
+Nutanix Flow est disponible sur toutes les offres **Hosted Private Cloud Powered by Nutanix**. Cette option permet de sécuriser le réseau dans un ou plusieurs clusters gérés par **Prism Central**
 
 **Apprenez à utiliser Nutanix Flow pour la sécurisation du réseau au sein d'un cluster Nutanix.**
 
@@ -24,23 +24,23 @@ Nutanix Flow est disponible dans toutes les offres **Hosted Private Cloud Powere
 
 Connectez-vous à **Prism Central**.
 
-Pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+Pour vous connecter à un cluster Nutanix, au besoin, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
 ### Activation de **Nutanix Flow**
 
-Cliquez sur l'icône `engrenage`{.action} en haut à droite pour modifier les paramètres.
+Cliquez sur l'engrenage en haut à droite pour modifier les paramètres.
 
 ![Activate Flow 01](images/activatemicrosegmentation01.png){.thumbnail}
 
-Faites défiler la `barre de défilement`{.action} à gauche et cliquez sur `Microsegmentation`{.action}.
+Cliquez sur `Microsegmentation`{.action} depuis la barre de défilement à gauche.
 
 ![Activate Flow 02](images/activatemicrosegmentation02.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à gauche de **Enable Microsegmentation** et cliquez sur `Save`{.action}.
+Cochez la case **Enable Microsegmentation** et cliquez sur `Save`{.action}.
 
 ![Activate Flow 03](images/activatemicrosegmentation03.png){.thumbnail}
 
-La micro-segmentation est activée. Il est possible de la désactiver.
+La micro-segmentation est activée. Il sera toujours possible de la désactiver.
 
 ![Activate Flow 04](images/activatemicrosegmentation04.png){.thumbnail}
 
@@ -50,11 +50,11 @@ Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
 Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
 
-Des entités comme des machines virtuelles, des sous réseaux ou des images peuvent faire partie de ces catégories qui peuvent être utilisées dans des outils comme **Flow** par exemple.
+Les entités comme les machines virtuelles, les sous réseaux ou les images peuvent faire parties des catégories utilisées pour un outil comme **Flow** par exemple.
 
 #### Création d'une catégorie
 
-Au travers du menu principal cliquez sur `Categories`{.action} dans le sous menu `Administration`.
+Depuis le menu principal cliquez sur `Categories`{.action} dans le sous-menu `Administration`.
 
 ![Create Category 01](images/configurecategories01.png){.thumbnail}
 
@@ -62,11 +62,11 @@ Cliquez sur `New Category`{.action}.
 
 ![Create Category 02](images/configurecategories02.png){.thumbnail}
 
-Saisissez le nom de la catégorie dans `Name`{.action} ensuite cliquez sur `New value`{.action}.
+Saisissez le nom de la catégorie dans **Name** puis cliquez sur `New value`{.action}.
 
 ![Create Category 03](images/configurecategories03.png){.thumbnail}
 
-Saisissez un nom dans `Value`{.action} et cliquez sur le `bouton bleu`{.action} à droite. 
+Saisissez un nom dans **Value** et cliquez sur le bouton de validation bleu à droite. 
 
 ![Create Category 04](images/configurecategories04.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Cliquez sur `New value`{.action}
 
 ![Create Isolation Rule 04](images/modifycategory04.png){.thumbnail}
 
-Saisissez une valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+Saisissez une valeur dans la colonne **Value** puis cliquez sur l'icône de validation.
 
 ![Create Isolation Rule 05](images/modifycategory05.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Cliquez sur `New value`{.action}.
 
 ![Create Isolation Rule 06](images/modifycategory06.png){.thumbnail}
 
-Saisissez une autre valeur dans la `colonne Values`{.action} ensuite cliquez sur l'icône de validation.
+Saisissez une autre valeur dans la colonne **Value** puis cliquez sur l'icône de validation.
 
 ![Create Isolation Rule 07](images/modifycategory07.png){.thumbnail}
 
@@ -115,19 +115,19 @@ La catégorie est visible dans le tableau de bord des catégories avec ces deux 
 
 #### Affectation d'une catégorie à une machine virtuelle
 
-Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
+Depuis le menu principal, cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
 ![Add VM to Category 01](images/addvmtocategory01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche.
+Sélectionnez la machine virtuelle en cochant à gauche de celle-ci.
 
 ![Add VM to Category 02](images/addvmtocategory02.png){.thumbnail}
 
-Cliquez sur `Actions`{.action} et choisissez `Manage Categories`{.action}. 
+Cliquez sur `Actions`{.action} puis sur `Manage Categories`{.action}. 
 
 ![Add VM to Category 03](images/addvmtocategory03.png){.thumbnail}
 
-Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
+Saisissez `nomdelacatégorie:valeur` et cliquez sur le signe `+`{.action}.
 
 ![Add VM to Category 04](images/addvmtocategory04.png){.thumbnail}
 
@@ -145,7 +145,7 @@ Cliquez sur le menu `Actions`{.action} et sélectionnez `Manage Categories`{.act
 
 ![Add category to multi VMs 02](images/multivmcategorychange02.png){.thumbnail}
 
-Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
+Saisissez `nomdelacatégorie:valeur` et cliquez sur `+`{.action}.
 
 ![Add category to multi VMs 03](images/multivmcategorychange03.png){.thumbnail}
 
@@ -155,11 +155,11 @@ Cliquez sur `Save`{.action}
 
 #### Affectation d'une catégorie à des sous réseaux
 
-Allez dans le `Menu Principal`{.action} et cliquez sur `Subnets`{.action} sous `Network & Security`.
+Depuis le menu principal, cliquez sur `Subnets`{.action} sous `Network & Security`.
 
 ![Add Category to subnet 01](images/addcategorytosubnet01.png){.thumbnail}
 
-Sélectionnez les `sous réseaux`{.action} en cliquant sur les case à cocher à gauche 
+Sélectionnez les sous réseaux en cochant à leur gauche. 
 
 ![Add Category to subnet 02](images/addcategorytosubnet02.png){.thumbnail}
 
@@ -167,7 +167,7 @@ Cliquez sur le menu `Actions`{.action} et sélectionnez `Manage Categories`{.act
 
 ![Add Category to subnet 03](images/addcategorytosubnet03.png){.thumbnail}
 
-Saisissez `NOMCATEGORIE:VALEUR`{.action} et cliquez sur le signe `+`{.action}.
+Saisissez `nomdelacatégorie:valeur` et cliquez sur `+`{.action}.
 
 ![Add Category to subnet 04](images/addcategorytosubnet04.png){.thumbnail}
 
@@ -181,11 +181,11 @@ La quarantaine réseau permet d'isoler une machine virtuelle de l'ensemble du r�
 
 #### Mise en quarantaine d'une VM
 
-Allez dans le `Menu Principal`{.action} et cliquez sur `VMs`{.action} sous `Compute & Storage.`
+Depuis le menu principal et cliquez sur `VMs`{.action} sous `Compute & Storage.`
 
 ![Add VM to Quarantine 01](images/addvmtoquarantine01.png){.thumbnail}
 
-`Sélectionnez`{.action} la machine virtuelle à gauche. 
+Sélectionnez la machine virtuelle en cochant à gauche de celle-ci. 
 
 ![Add VM to Quarantine 02](images/addvmtoquarantine02.png){.thumbnail}
 
@@ -193,35 +193,35 @@ Cliquez sur `Actions`{.action} et choisissez `Quarantine VMs`{.action} dans le m
 
 ![Add VM to Quarantine 03](images/addvmtoquarantine03.png){.thumbnail}
 
-Choisissez `Forensic`{.action} dans `quarantine Method` et cliquez sur `Quarantine`{.action}.
+Sélectionnez `Forensic`{.action} dans `quarantine Method`, puis cliquez sur `Quarantine`{.action}.
 
 ![Add VM to Quarantine 04](images/addvmtoquarantine04.png){.thumbnail}
 
-La machine virtuelle est en quarantaine.
+La machine virtuelle est à présent en quarantaine.
 
 #### Personnalisation de la quarantaine réseau.
 
 Pour l'instant aucun blocage n'affecte la machine virtuelle en quarantaine. Suivez ces instructions pour configurer la quarantaine.
 
-A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
+Depuis le menu principal, cliquez sur `Security Policies`{.action} dans le sous-menu `Network & Security`.
 
 ![Configure Quarantine 01](images/configurequarantinerule01.png){.thumbnail}
 
-Cliquez sur le `numéro`{.action} à coté de `Quarantined` pour voir les machines virtuelles en quarantaine.
+Cliquez sur le numéro à coté de `Quarantined` pour afficher les machines virtuelles en quarantaine.
 
 ![Configure Quarantine 02](images/configurequarantinerule02.png){.thumbnail}
 
-La liste des machines virtuelles en quarantaine apparait dans `Name` cliquez sur `Close`{.action} pour revenir au menu précèdent.
+La liste des machines virtuelles en quarantaine apparait dans la colonne **Name**. Cliquez sur `Close`{.action} pour revenir au menu précèdent.
 
 ![Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
 
-Cliquez sur `Quarantine`{.action} en dessous de Name à gauche pour modifier la règle.
+Cliquez sur `Quarantine`{.action} en dessous de la colonne **Name** pour modifier la règle.
 
 ![Configure Quarantine 04](images/configurequarantinerule04.png){.thumbnail}
 
-Le statut de la règle est en mode `Monitoring ` comme indiqué en haut à gauche. 
+Le statut de la règle est en mode `Monitoring` comme indiqué en haut à gauche. 
 
-Le trafic n'est pas bloqué mais surveillé. Les connexions entre les machines virtuelles mises en quarantaines et le reste du réseau sont représentées par des traits de couleurs orange reliés à des rectangles représentant l'adresse IP de la source ou de la destination.
+Le trafic n'est pas bloqué mais surveillé. Les connexions entre les machines virtuelles mises en quarantaine et le reste du réseau sont représentés par des traits de couleurs orange reliés à des rectangles représentant l'adresse IP de la source ou de la destination.
 
 Cliquez sur `Enforce`{.action} en haut à droite pour passer du mode **Monitoring** au mode **Enforcing** avec blocage du trafic.
 
@@ -233,7 +233,7 @@ Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
 Le statut de la règle est maintenant sur `Enforced`.
 
-Le trafic est bloqué nous voyons les tentatives d'accès aux machines virtuelles en quarantaines via des traits de couleurs rouges vers des rectangles contenant l'adresse IP de la machine virtuelle.
+Le trafic est bloqué nous voyons les tentatives d'accès aux machines virtuelles en quarantaines via des lignes en pointillés rouges vers les blocs contenant l'adresse IP de la machine virtuelle.
 
 Cliquez sur Cliquez sur `Update`{.action} en haut à droite pour modifier la règle afin d'autoriser certains flux réseaux.
 
@@ -247,7 +247,7 @@ Positionnez la souris sur une tentative de connexion entrante et cliquez sur `Al
 
 ![Configure Quarantine 09](images/configurequarantinerule09.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à gauche pour sélectionner le trafic découvert entrant et cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert comme par exemple ci-dessous le protocole ICMP.
+Cochez la case à gauche de la **Source** pour sélectionner le trafic découvert entrant, puis cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert comme par exemple ci-dessous le protocole ICMP.
 
 ![Configure Quarantine 10](images/configurequarantinerule10.png){.thumbnail}
 
@@ -255,24 +255,23 @@ Positionez la souris sur une tentative de connexion sortante et cliquez sur `All
 
 ![Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
 
-Cliquez sur la `case à cocher`{.action} à gauche sélectionner le trafic découvert sortant. Ensuite cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert.
+Cochez la case à gauche de la **Source** pour sélectionner le trafic découvert sortant, puis cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert.
 
 ![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
-Le trafic autorisé est maintenant visible avec des traits de couleurs grises alors que le trafic bloqué est en rouge.
-
+Le trafic autorisé est maintenant visible par des lignes grises alors que le trafic bloqué est en rouge.
 
 Pour créer une règle manuellement sans passer par la découverte du réseau, cliquez à gauche sur `Add Source`{.action} pour autoriser une connexion entrante vers la quarantaine.
 
 ![Configure Quarantine 13](images/configurequarantinerule13.png){.thumbnail}
 
-Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: category` ensuite cliquez sur `Add`{.action}.
+Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: Category` puis cliquez sur `Add`{.action}.
 
 ![Configure Quarantine 14](images/configurequarantinerule14.png){.thumbnail}
 
 La source apparait dans `Configured`.
 
-Cliquez sur le signe `+`{.action} à gauche de **Quarantine: Forensics**.
+Cliquez sur `+`{.action} à gauche de **Quarantine: Forensics**.
 
 ![Configure Quarantine 15](images/configurequarantinerule15.png){.thumbnail}
 
@@ -280,15 +279,15 @@ Autorisez tous le trafic et cliquez sur `Save`{.action}.
 
 ![Configure Quarantine 16](images/configurequarantinerule16.png){.thumbnail}
 
-Cliquez à gauche sur `Add Destination`{.action} à droite pour autoriser une règle sortante depuis la quarantaine.
+Cliquez à droite sur `Add Destination`{.action} pour autoriser une règle sortante depuis la quarantaine.
 
 ![Configure Quarantine 17](images/configurequarantinerule17.png){.thumbnail}
 
-Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: category` ensuite cliquez sur `Add`{.action}.
+Saisissez le nom de la catégorie ainsi que sa valeur dans `Add source by: Category`, puis cliquez sur `Add`{.action}.
 
 ![Configure Quarantine 18](images/configurequarantinerule18.png){.thumbnail}
 
-Cliquez sur le signe `+`{.action} à droite de **Quarantine: Forensics**
+Cliquez sur `+`{.action} à droite de **Quarantine: Forensics**
 
 ![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
@@ -308,7 +307,7 @@ Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quaran
 
 ![Configure Quarantine 23](images/configurequarantinerule23.png){.thumbnail}
 
-Le statut de de la règle est sur `Enforced`, le mode **forensic** a été personnalisé.
+Le statut de de la règle est sur `Enforced`, le mode **Forensic** a été personnalisé.
 
 Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux zones définies dans la règle de quarantaine.
 
@@ -320,7 +319,7 @@ Un règle d'isolations permet le blocage des communications réseaux entre deux 
 
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
 
-Cliquez sur `Securities Policies`{.action} se trouvant dans la catégorie `Network & Security` du menu principal.
+Depuis le menu principal, cliquez sur `Securities Policies`{.action} dans le sous-menu `Network & Security`.
 
 ![Create Isolation Rule 03](images/createisolationrule03.png){.thumbnail}
 
@@ -328,23 +327,23 @@ Cliquez sur `Create Security Policy`{.action}.
 
 ![Create Isolation Rule 04](images/createisolationrule04.png){.thumbnail}
 
-Sélectionnez `Isolate Environments (Isolation Policy)`{.action} ensuite cliquez sur `Create`{.action}.
+Sélectionnez `Isolate Environments (Isolation Policy)`{.action} puis cliquez sur `Create`{.action}.
 
 ![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
 
-Saisissez le nom de la règle dans `Name`{.action} ensuite mettez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action} suivi d'une autre catégorie dans `From this category`{.action}.
+Saisissez le nom de la règle dans `Name`{.action} puis ajoutez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action}, suivi d'une autre catégorie dans `From this category`{.action}.
 
-Sélectionnez Enforce dans `Select a Policy mode`{.action} et cliquez sur `Save and Enforce`{.action}. 
+Sélectionnez `Enforce` dans **Select a Policy mode**, puis cliquez sur `Save and Enforce`{.action}. 
 
 ![Create Isolation Rule 06](images/createisolationrule06.png){.thumbnail}
 
 La règle est active dans la liste des règles de sécurité.
 
-Cliquez sur `Le nom de la règle`{.action} en dessous de `Name` pour voir le détail.
+Cliquez sur `Le nom de la règle`{.action} en dessous de la colonne **Name** pour voir le détail.
 
 ![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
 
-Le statut de la règle est `Enforced` et l'on peut voir qu'aucune tentative de connexion entre les deux zones est détectée comme indiquée sur ce message. **No Traffic between them has been discovered**
+Le statut de la règle indique `Enforced` et on peut voir qu'aucune tentative de connexion entre les deux zones n'est détectée, comme le signal  ce message: **No Traffic between them has been discovered**
 
 ![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
@@ -354,13 +353,13 @@ Si une tentative de connexion réseau est détectée entre ces deux zones le mes
 
 ### Mise en place d'une règle d'application.
 
-Une règle d'application limite l'accès à vers certains ports protocoles ou services des membres d'un catégorie depuis une autre catégorie.
+Une règle d'application limite l'accès vers certains ports, protocoles ou services des membres d'une catégorie depuis une autre catégorie.
 
-Cette règle n'est utilisable qu'avec un catégorie nommé **Applications** que l'on peut modifier mais pas supprimer.
+Cette règle n'est utilisable qu'avec une catégorie nommée **Applications** que l'on peut modifier mais pas supprimer.
 
 Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
 
-A partir du menu principal cliquez sur `Security Policies`{.action} dans le sous menu `Network & Security`.
+Depuis le menu principal, cliquez sur `Security Policies`{.action} dans le sous-menu `Network & Security`.
 
 ![Create Application Rule 01](images/createapplicationrule01.png){.thumbnail}
 
@@ -372,7 +371,7 @@ Sélectionnez `Secure Application (App Policy)`{.action} et cliquez sur `Create`
 
 ![Create Application Rule 03](images/createapplicationrule03.png){.thumbnail}
 
-Saisissez ces champs `Name` par un nom de règle, `Purpose` avec un commentaire, `Secure this App` en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
+Saisissez les champs **Name** pour le nom de de la règle, **Purpose** pour un commentaire, **Secure this App** en choisissant une catégorie existante d'applications et cliquez sur `Next`{.action}.
 
 ![Create Application Rule 04](images/createapplicationrule04.png){.thumbnail}
 
@@ -384,11 +383,11 @@ Choisissez la `catégorie` concernant le VLAN et cliquez sur `Add`{.action}
 
 ![Create Application Rule 06](images/createapplicationrule06.png){.thumbnail}
 
-Cliquez sur le signe `+`{.action} pour relier à l'application à la source.
+Cliquez sur `+`{.action} pour relier l'application à la source.
 
 ![Create Application Rule 07](images/createapplicationrule07.png){.thumbnail}
 
-Sélectionnez `Select a Service`{.action} , choisir la catégorie dans `Protocol/Service`{.action}, recherchez le nom du service dans `Port/Service Details`{.action} et cliquez sur `Save`{.action}.
+Sélectionnez `Select a Service`{.action} , choisir la catégorie dans **Protocol/Service**, recherchez le nom du service dans **Port/Service Details** et cliquez sur `Save`{.action}.
 
 ![Create Application Rule 08](images/createapplicationrule08.png){.thumbnail}
 
