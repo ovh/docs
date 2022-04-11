@@ -69,7 +69,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server  | I | RA |
-| Monitor physical resource performance | MP | R |
+| Monitor physical resource performance | RA | R |
 | Process and clear alarms from managed devices on the Dedicated Server  | I | RA |
 | Keep logs of the information system hosted on the Dedicated Server | RA |  |
 | Keep logs of the Control Plane that monitors the Dedicated Server |  | RA |
