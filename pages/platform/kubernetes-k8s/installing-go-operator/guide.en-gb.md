@@ -398,7 +398,7 @@ spec:
   # TODO(user): Add fields here
 ```
 
-The GO controller `ovhnginx_controller.go` in the folder `./controllers`:
+The Go controller `ovhnginx_controller.go` in the folder `./controllers`:
 ```go
 package controllers
 
