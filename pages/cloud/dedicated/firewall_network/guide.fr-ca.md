@@ -27,6 +27,10 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 - Posséder un service OVHcloud bénéficiant d’un Firewall Network ([ serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [ VPS](https://www.ovh.com/ca/fr/vps/){.external},[ instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external}, [Private Cloud](https://www.ovh.com/ca/fr/cloud-prive){.externalP}, [IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
 - Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 ## En pratique
 

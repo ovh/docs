@@ -24,6 +24,10 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - A private IP address range of your choice
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
 ## Instructions
 

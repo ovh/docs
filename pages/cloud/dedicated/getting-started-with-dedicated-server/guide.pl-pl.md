@@ -26,6 +26,10 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 - Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
+> [!primary]
+>
+> Jeśli Twój serwer należy do linii produktów **Eco**, przejdź do [tego przewodnika](../getting-started-dedicated-server-eco/).
+
 ## W praktyce
 
 Jeśli Twój serwer dedykowany jest po raz pierwszy skonfigurowany w trakcie procesu zamówienia, możesz wybrać system operacyjny do zainstalowania.

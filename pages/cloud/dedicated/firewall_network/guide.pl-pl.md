@@ -31,6 +31,10 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 - Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 

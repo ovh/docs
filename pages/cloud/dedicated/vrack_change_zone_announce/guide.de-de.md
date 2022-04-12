@@ -19,6 +19,11 @@ Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Net
 - Sie haben [einen IP-Adressblock im vRack eingerichtet](../vrack-ip-block-hinzufuegen-oder-entfernen/).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## Beschreibung
 
 ### Schritt 1: Aktuelle Ankündigungszone ermitteln

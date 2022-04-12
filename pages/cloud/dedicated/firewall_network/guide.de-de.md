@@ -32,6 +32,10 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## Beschreibung
 

@@ -22,6 +22,10 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
+> [!primary]
+>
+> Si votre serveur appartient à la ligne de produits **Eco** , rendez-vous plutôt dans [ce guide](../getting-started-dedicated-server-eco/).
+
 ## En pratique
 
 Lorsque votre serveur dédié est configuré pour la première fois au cours du processus de commande, vous pouvez sélectionner le système d'exploitation à installer.

@@ -28,6 +28,11 @@ O vRack (rack virtual) da OVHcloud permite agrupar virtualmente vários servidor
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Preparar o intervalo de endereços IP privados que escolheu
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
 ## Instruções
 
 ### Etapa 1: adicionar os seus servidores ao vRack

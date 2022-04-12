@@ -19,6 +19,11 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau
 - Avoir [configuré un bloc d’adresses IP dans le vRack](../ajouter-ou-enlever-un-bloc-ip-du-vrack/).
 - Disposer de connaissances avancées en réseau.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
 ### Étape 1 : vérifier la zone d'annonce actuelle
