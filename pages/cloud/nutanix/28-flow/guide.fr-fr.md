@@ -20,6 +20,12 @@ Nutanix Flow est disponible dans toutes les offres **Hosted Private Cloud Powere
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
+## Prérequis
+
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté sur le cluster via Prism Central. 
+
 ## En pratique
 
 Connectez-vous à **Prism Central**.
