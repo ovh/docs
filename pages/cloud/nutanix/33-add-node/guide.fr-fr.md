@@ -53,7 +53,7 @@ Cliquez sur `Close`{.action} pour fermer cette fenêtre.
 
 Ouvrez le menu `Home`{.action} et choisissez `Health`{.action} pour faire une analyse du cluster avant le rajout du nœud.
 
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}.
+![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
 
 Cliquez en haut à droite sur `Actions`{.action} et choisissez `Run NCC Check`{.action}.
 

@@ -23,8 +23,8 @@ Nutanix clusters are scalable. You can add nodes to an existing cluster.
 
 - A Nutanix cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- You must be connected to the cluster via Prism Central.
-- A ready-to-configure physical server added to the OVHcloud Control Panel.
+- You must be connected to the cluster via Prism Central
+- A ready-to-configure physical server added to the OVHcloud Control Panel
 
 ## Technical information
 
@@ -53,7 +53,7 @@ Click `Close`{.action} to close this window.
 
 Open the `Home`{.action} menu and choose `Health`{.action} to perform a cluster analysis before adding the node.
 
-![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}.
+![NCC check before Expansion 01](images/CheckBeforeAdd01.PNG){.thumbnail}
 
 Click on `Actions`{.action} in the top right-hand corner and choose `Run NCC Check`{.action}.
 
