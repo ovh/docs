@@ -37,7 +37,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Produire, acheminer, livrer et maintenir les machines physiques et les bâtiments d’hébergement | CI | RA |
 | Installer et configurer les briques fonctionnelles internes au serveur dédié nécessaires au maintien en conditions opérationnelles et au maintien en conditions de sécurité (firmware, BIOS, BMC, IPMI...) |  | RA |
-| Acheter et détenir les et droits d’utilisation Nutanix | I | RA  |
+| Acheter et détenir les licences et droits d’utilisation Nutanix | I | RA  |
 | Déployer la configuration réseau initiale sur les équipements | I | RA |
 | Installer le cluster Nutanix | I | RA |
 
