@@ -5,7 +5,7 @@ excerpt: 'Creates a Kubernetes cluster through Terraform'
 section: Getting started
 ---
 
-**Last updated 11th April 2022**
+**Last updated 12th April 2022**
 
 ## Objective
 
@@ -55,6 +55,10 @@ Why?
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
 In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/) tutorial.
+
+Concretely, you have to generate these credentials via the [OVH token generation page](https://api.ovh.com/createToken/?GET=/*&POST=/*&PUT=/*&DELETE=/*) with the following rights:
+
+![OVHcloud API rights](images/api-rights.png){.thumbnail}
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
@@ -114,6 +118,15 @@ provider "ovh" {
   consumer_key       = "<your_consumer_key>"
 }
 ```
+
+Alternatively the secret keys can be retrieved from your environment.
+
+- `OVH_ENDPOINT`
+- `OVH_APPLICATION_KEY`
+- `OVH_APPLICATION_SECRET`
+- `OVH_CONSUMER_KEY`
+
+This later method (or a similar alternative) is recommended to avoid storing secret data in a source repository.
 
 Here, we defined the `ovh-eu` endpoint because we want to call the OVHcloud Europe API, but other endpoints exist, depending on your needs:
 
