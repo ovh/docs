@@ -1,12 +1,12 @@
-—
+---
 Titre : Conseils pour la gestion de vos factures et de votre compte client
 slug : billing-best-practices
-excerpt : Découvrez comment gérer au mieux vos factures, commandes, moyens de paiement et compte client
+excerpt : Retrouvez ici nos conseils pour une meilleure gestion de vos factures, commandes, moyens de paiement et compte client
 section : Gérer mes services et leur renouvellement
 order : 02
-—
+---
 
-**Dernière mise à jour le 29/03/2022**
+**Dernière mise à jour le 12/04/2022**
 
 ## Objectif
 
@@ -18,7 +18,7 @@ Ce guide vous donnera tous les conseils pour gérer correctement votre compte et
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter notre communauté si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter notre communauté si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Requirements
@@ -62,7 +62,7 @@ Les e-mails envoyés par OVHcloud sont également accessibles depuis votre [espa
 
 > [!primary]
 >
-> Afin de sécuriser vos services et d'assurer leur bon fonctionnement, nous vous recommandons de mettre en place le **renouvellement automatique** sur l'ensemble de vos services OVHcloud et à vous assurer régulièrement de la validité du moyen de paiement par défaut sur le [compte facturation](https://docs.ovh.com/fr/customer/gestion-des-contacts/#definition) de vos services.
+> Afin d’éviter toute interruption de service et pour le bon fonctionnement de l’autorenew, nous vous recommandons [d’enregistrer un moyen de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
 Pour toute information sur l'activation de l'autorenew, consultez les guides suivants :
@@ -72,11 +72,6 @@ Pour toute information sur l'activation de l'autorenew, consultez les guides sui
 * [Payer une commande en tant qu’administration publique](https://docs.ovh.com/fr/billing/reglement-par-mandat-administratif/).
 
 Si vous décidez de ne pas mettre en place le renouvellement automatique, vous recevrez des notifications par e-mail vous invitant à effectuer un paiement manuel pour soit renouveler votre service à l'avance, soit régler votre facture en attente.
-
-> [!alert]
->
-> Si vos services ne sont pas renouvelés à temps, ils 
-
 
 #### Sécurité des comptes
 
@@ -88,7 +83,7 @@ Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adress
 
 ### Suivi de commande
 
-Saviez-vous que vous pouvez [suivre vos commandes](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ? Il vous suffit de vous rendre dans l'onglet `Tableau de bord`{.action} du menu supérieur de votre écran, puis de cliquer sur `Voir mes commandes`{.action}.
+Saviez-vous que vous pouviez [suivre vos commandes](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/) dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ? Il vous suffit de vous rendre dans l'onglet `Tableau de bord`{.action} du menu supérieur de votre écran puis de cliquer sur `Voir mes commandes`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
 
@@ -100,22 +95,22 @@ Vous serez informé des étapes de la livraison et vous saurez si des actions so
 
 Si vous souhaitez ne plus utiliser l'un de vos services, vous pouvez le résilier, passer son renouvellement en mode manuel ou le supprimer immédiatement depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Cliquez d'abord sur votre nom en haut à droite de votre écran, puis sur `Gestion des services`{.action}. Sur le côté droit de votre écran, cliquez sur le `...`{.action} correspondant au service sur lequel vous souhaitez agir, puis cliquez sur l'un des boutons suivants :
+Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Gestion des services`{.action}. Sur le côté droit de votre écran, cliquez sur le `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
 
-- `Configurer le renouvellement`{.action}: Sur l'écran suivant, vous pourrez passer le "type de renouvellement" de votre service à "Manuel". Cliquez ensuite sur "Suivant" et "Confirmer". Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera ** supprimé définitivement**.
-- `Cancel`{.action}: Sur l'écran suivant, indiquez les raisons de votre demande de résiliation, puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera ** supprimé définitivement**.
-- `Supprimer ... immédiatement`{.action}: sur l'écran suivant, cliquez sur `Confirmer`{.action}. Votre service sera ** supprimé immédiatement et définitivement**.
+- `Configurer le renouvellement`{.action}: Sur l'écran suivant, vous pourrez passer le "type de renouvellement" de votre service à "Manuel". Cliquez ensuite sur "Suivant" et "Confirmer". Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
+- `Cancel`{.action}: Sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
+- `Supprimer ... immédiatement`{.action}: sur l'écran suivant, cliquez sur `Confirmer`{.action}. Votre service sera supprimé **immédiatement et définitivement**.
 
-Pour obtenir plus d’informations sur la résiliation de vos services, consultez le guide [Comment résilier un service OVH] (https://docs.ovh.com/gb/en/billing/how-to-cancel-your-services/).
+Pour obtenir plus d’informations sur la résiliation de vos services, consultez le guide [Comment résilier vos services OVHcloud](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
 
 #### Fermeture de compte
 
-Si vous souhaitez clôturer définitivement votre compte personnel OVHcloud, vérifiez tout d’abord qu’il ne contient pas de services actifs, de factures en attente ou de commandes en cours. Ensuite, utilisez [ce formulaire](https://www.ovh.co.uk/personal-data-protection/exercise-your-rights?lsdDoc=exercising-your-rights) pour demander la suppression définitive de votre compte.
+Si vous souhaitez clôturer définitivement votre compte personnel OVHcloud, vérifiez tout d’abord qu’il ne contient pas de services actifs, de factures en attente ou de commandes en cours. Ensuite, utilisez [ce formulaire](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/) pour demander la suppression définitive de votre compte.
 
-## Aller plus loin <a name="go further"></a>
+## Aller plus loin <a name="gofurther"></a>
 
-[Attention aux arnaques - reconnaître des e-mails et des phishing frauduleux](https://docs.ovh.com/gb/en/customer/scams-fraud-phishing/)
+[Méfiez-vous des arnaques - comment reconnaître des e-mails ou SMS de fraude et de phishing](https://docs.ovh.com/fr/customer/arnaques-fraude-phishing/)
 
-[Gestion des factures OVH](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/)
+[Gérer mes factures OVHcloud](https://docs.ovh.com/fr/billing/gerer-factures-ovh/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

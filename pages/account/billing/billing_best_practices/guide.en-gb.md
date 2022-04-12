@@ -56,7 +56,7 @@ Note that emails sent by OVHcloud will be also visible in your [OVHcloud Control
 
 > [!primary]
 >
-> To keep your services secure and running smoothly, we recommend setting up **automatic renewal** for all of your OVHcloud services. We also advise you to regularly check the validity of the default payment method of your services [billing account](https://docs.ovh.com/gb/en/customer/managing-contacts/#definition).
+> In order to prevent any service interruption and for the good functioning of the autorenewal, we recommend that you [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >
 
 For more information, please follow the instructions of these guides :
