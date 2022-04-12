@@ -6,7 +6,7 @@ section: Utilisation avancée
 order: 02
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -24,7 +24,7 @@ Nutanix fournit un outil qui se nomme **Nutanix Move** et qui permet de faire de
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud]((https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 - Être connecté sur le cluster via Prism Central
 - Avoir une connexion à un environnement autre que Nutanix 
 

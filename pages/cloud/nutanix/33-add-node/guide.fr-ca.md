@@ -6,7 +6,7 @@ section: "Utilisation avancée"
 order: 03
 ---
 
-**Dernière mise à jour le 04/04/2022**
+**Dernière mise à jour le 07/04/2022**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dan
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Être connecté sur le cluster via Prism Central.
 - Un serveur physique prêt à être configuré ajouté dans l'espace client OVHCloud.
 
@@ -111,7 +111,7 @@ Cliquez sur `Close`{.action} pour revenir au tableau de bord.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
 
 [Guide Nutanix d'ajout de nœuds](https://portal.nutanix.com/page/documents/details?targetId=Web-Console-Guide-Prism-v5_20:wc-cluster-expand-wc-t.html)
 
