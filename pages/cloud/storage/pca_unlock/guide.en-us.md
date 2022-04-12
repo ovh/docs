@@ -1,53 +1,56 @@
 ---
-title: Unlock your data in the PCA
+title: Unfreezing your data stored in the Public Cloud Archive
 slug: pca/unlock
-excerpt: This guide shows you how to manage your Public Cloud Archives.
+excerpt: Find out how to unfreeze your archives
 section: Public Cloud Archive
 order: 030
 ---
 
-**Dernière mise à jour le 12/04/2022**
+**Last updated 12th April 2022**
 
-## Preamble
-Public Cloud Archive is a cold storage offer designed to host large volumes of data without any size limit at a very attractive price. Intended for data that is not accessed often, a request must be made in advance and there is a delay prior to recovering data. The time delay will vary depending on the age of data and the frequency of data access.
+## Objective
 
-## Prerequisite
+Public Cloud Archive is a cold storage solution designed to host large volumes of data, with no size limit and very attractive pricing.
 
-- Unfreeze via the manager OVHcloud :
-    - Be connected to your [manager OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en){.external}.
-- Unfreeze via python-swiftclient :
-    - [Prepare the environement to set Openstack API](https://docs.ovh.com/us/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/){.external} installing python-swiftclient.
-    - [Change OpenStack environment variables](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/){.external}.
+Since cold storage data is supposed to be rarely accessed, a retrieval request is required, implying a delay prior to recovering the data. This time period varies depending on the age of data and the frequency of data access.
 
-## Practical case
+## Requirements
 
-### Unfreeze your object from your manager
+- Unfreezing via the OVHcloud Control Panel:
+    - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en)
+- Unfreezing via python-swiftclient:
+    - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/us/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
+    - [Setting OpenStack environment variables](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/)
 
-In the [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en){.external}, click on the tag `Public Cloud`{.action}, select your public cloud project and click on `Cloud Archive`{.action} in the left menu.
+## Instructions
 
-To unfreeze the archive, click on the button `...`{.action} on the right of your archive, then `Unfreeze`{.action} to start the process of retrieve.
+### Unfreezing your object from the Control Panel
+
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), open your `Public Cloud`{.action} project and click on `Cloud Archive`{.action} in the left-hand menu.
+
+To unfreeze the archive, click on the button `...`{.action} to the right of your archive, then `Unfreeze`{.action} to start the retrieval process.
 
 ![Unfreeze](images/unfreeze.png){.thumbnail}
 
-Once the process is finished, time and hours of availability is dispaly in the column "Availability".
+Once the process has started, the date and time your archive will be available is displayed in the `Availability` column.
 
 ![Unfreeze result](images/unfreeze_result.png){.thumbnail}
 
-Your file will be available for upload at this time. You can start your upload directly via yiour browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/en/storage/pca/sftp/).
+Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/en/storage/pca/sftp/).
 
 
-### Unfreeze your object via python-swiftclient
+### Unfreezing your object via python-swiftclient
 
-Check the state of your object to download :
+Check the status of the object to download:
 
 ```bash
-swift stat <conteneur_pca> <objet>
+swift stat <pca_container> <object>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <conteneur_pca>
-                Object: <objet>
+             Container: <pca_container>
+                Object: <object>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -62,32 +65,31 @@ X-Openstack-Request-Id: txbb0eff9ebf9442eab0d02-0061123b5a
        X-Iplb-Instance: 12308
 ```
 
-The following line shows if the object is unfreeze:
+The following line indicates that the object is frozen:
 
 ```
 X-Ovh-Retrieval-State: sealed
 ```
 
-Consequently, the`swift download` command get back an 429 error 
+Therefore, the `swift download` command will return a 429 error:
 
 ```bash
-swift download <conteneur_pca> <objet>
+swift download <pca_container> <object>
+```
+```
+Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
 ```
 
-```
-Error downloading object '<conteneur_pca>/<objet>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur_pca>/<objet> 429 Too Many Requests
-```
-
-Launching back the `swift stat` command :
+Relaunching the `swift stat` command:
 
 ```bash
-swift stat <conteneur_pca> <objet>
+swift stat <pca_container> <object>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <conteneur_pca>
-                Object: <objet>
+             Container: <pca_container>
+                Object: <object>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -103,28 +105,28 @@ X-Openstack-Request-Id: tx9012d12434a447bd81528-0061123c54
        X-Iplb-Instance: 12309
 ```
 
-The following line indicates if the object is being unfreezed:
+The following line indicates that the object is being unfrozen:
 
 ```
 X-Ovh-Retrieval-State: unsealing
 ```
 
-The following line indicates indicates the delay (in seconds) to wait before retrieving the object :
+The next line indicates the time period (in seconds) to wait before retrieving the object:
 
-```
+```bash
 X-Ovh-Retrieval-Delay: 14313
 ```
 
-Once the delay over :
+Once the time period has elapsed:
 
 ```bash
-swift stat <conteneur_pca> <objet>
+swift stat <pca_container> <object>
 ```
 
 ```
                Account: AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf
-             Container: <conteneur_pca>
-                Object: <objet>
+             Container: <pca_container>
+                Object: <object>
           Content Type: text/plain
         Content Length: 746
          Last Modified: Tue, 10 Aug 2021 08:39:41 GMT
@@ -139,42 +141,43 @@ X-Openstack-Request-Id: txaf1eac9ceb8a45efb36e1-0061127482
        X-Iplb-Instance: 38343
 ```
 
-The following line indicates if the object is unfreezed
+The following line indicates that the object is now unfrozen:
 
 ```
 X-Ovh-Retrieval-State: unsealed
 ```
 
-Upload of object is working : 
+To download the object:
 
 ```bash
-swift download <conteneur_pca> <objet>
+swift download <pca_container> <object>
 ```
 
-```
-swift download <conteneur_pca> <objet>
-<objet> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
+```bash
+swift download <pca_container> <object>
+<object> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
 ```
 
-#### Automate tj-he object download
+#### Automating the object download
 
 > [!primary]
 >
-> this feature require the package `at`.
+> This feature requires the `at` package.
 >
 
 ```bash
-swift download <conteneur_pca> <objet>
+swift download <pca_container> <object>
 ```
-
 ```
-Error downloading object '<conteneur_pca>/<objet>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<conteneur_pca>/<objet> 429 Too Many Requests
+Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
 ```
 
 ```bash
-X_OVH_RETRIEVAL_DELAY=$(swift download <conteneur_pca> <objet> | awk -F ": " '/X-Ovh-Retrieval-Delay/ {print $2}'
+X_OVH_RETRIEVAL_DELAY=$(swift download <pca_container> <object> | awk -F ": " '/X-Ovh-Retrieval-Delay/ {print $2}'
 RETRIEVAL_DELAY=$((${X_OVH_RETRIEVAL_DELAY} / 60 + 2))
-swift download <conteneur_pca> <objet> | at now + ${RETRIEVAL_DELAY} minutes
+swift download <pca_container> <object> | at now + ${RETRIEVAL_DELAY} minutes
 ```
 
+## Go further
 
+Join our community of users on <https://community.ovh.com/en/>.
