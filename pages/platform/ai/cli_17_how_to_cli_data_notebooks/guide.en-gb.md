@@ -34,7 +34,7 @@ This file can now be accessed from your notebooks, either with read-only or read
 In order to access your dataset, you can use the `--volume` option.
 
 ``` {.console}
-$ ovhai tensorflow jupyterlab notebook run --volume my-dataset@GRA:/workspace/datasets:ro
+$ ovhai notebook run tensorflow jupyterlab --volume my-dataset@GRA:/workspace/datasets:ro
 ```
 
 This command can be read as "Load the container `my-dataset` from the GRA region, in the /workspace/datasets directory,
