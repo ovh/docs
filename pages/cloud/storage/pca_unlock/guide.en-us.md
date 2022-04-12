@@ -17,7 +17,7 @@ Since cold storage data is supposed to be rarely accessed, a retrieval request i
 ## Requirements
 
 - Unfreezing via the OVHcloud Control Panel:
-    - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en)
+    - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - Unfreezing via python-swiftclient:
     - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/us/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
     - [Setting OpenStack environment variables](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/)
@@ -26,7 +26,7 @@ Since cold storage data is supposed to be rarely accessed, a retrieval request i
 
 ### Unfreezing your object from the Control Panel
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), open your `Public Cloud`{.action} project and click on `Cloud Archive`{.action} in the left-hand menu.
+In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), open your `Public Cloud`{.action} project and click on `Cloud Archive`{.action} in the left-hand menu.
 
 To unfreeze the archive, click on the button `...`{.action} to the right of your archive, then `Unfreeze`{.action} to start the retrieval process.
 
