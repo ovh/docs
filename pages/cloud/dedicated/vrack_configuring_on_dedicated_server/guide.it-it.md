@@ -28,6 +28,11 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Aver selezionato una gamma di indirizzi IP privati
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 ## Procedura
 
 ### Step 1: aggiungi i tuoi server alla vRack

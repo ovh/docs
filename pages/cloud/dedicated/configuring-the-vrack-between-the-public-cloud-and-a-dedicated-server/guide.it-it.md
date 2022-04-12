@@ -26,6 +26,10 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} OVHcloud è una rete 
 * Avere accesso allo [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 * Una gamma di indirizzi IP privati di tua scelta
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 ## Procedura
 

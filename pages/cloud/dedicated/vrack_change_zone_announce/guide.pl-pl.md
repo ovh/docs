@@ -19,6 +19,11 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 - [Konfiguracja bloku adresów IP w sieci vRack](../dodawanie-lub-usuwanie-bloku-ip-vrack/)
 - Posiadanie zaawansowanej wiedzy w zakresie sieci
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
 ## W praktyce
 
 ### Krok 1: weryfikacja aktualnej strefy rozgłaszania

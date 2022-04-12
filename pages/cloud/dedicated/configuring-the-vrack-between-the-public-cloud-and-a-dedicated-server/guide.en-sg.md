@@ -22,6 +22,10 @@ The OVHcloud [vRack](https://www.ovh.com/sg/solutions/vrack) allows you to confi
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 - A private IP address range of your choice
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-sg/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-sg/compare/) for more information.
 
 ## Instructions
 
