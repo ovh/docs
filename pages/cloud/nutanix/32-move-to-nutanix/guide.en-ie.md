@@ -180,7 +180,7 @@ The virtual machine is started and an IP address is obtained if a **DHCP** serve
 
 ![Move Install 14](images/MoveInstall14.PNG){.thumbnail}
 
-This installation of **Nutanix Move** is done on a network that has a DHCP server, but it is possible to configure the virtual machine on a network without a **DHCP server** 
+This installation of **Nutanix Move** is done on a network that has a DHCP server, but it is possible to configure the virtual machine on a network without a **DHCP server** . 
 
 For more information about **Nutanix Move**, see the [Go further](#gofurther) section of this guide.
 
@@ -188,7 +188,9 @@ For more information about **Nutanix Move**, see the [Go further](#gofurther) se
 
 #### Logging in to the web interface and creating environments for migration
 
-Connect to the IP address of the **Nutanix Move** virtual machine through a web browser in HTTPS, as follows: `https://addresseipnutanixmove/`
+Connect to the IP address of the **Nutanix Move** virtual machine through a web browser in HTTPS, as follows: `https://IPaddressNutanixMove/`.
+
+
 
 Read the licence conditions, accept them and click `Continue`{.action}.
 

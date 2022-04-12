@@ -179,7 +179,7 @@ La machine virtuelle est démarrée et l'on obtient une adresse IP si un serveur
 
 ![Move Install 14](images/MoveInstall14.PNG){.thumbnail}
 
-Cette installation de **Nutanix Move** se fait sur un réseau disposant d'un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP** 
+Cette installation de **Nutanix Move** se fait sur un réseau disposant d'un serveur DHCP mais il est possible de configurer la machine virtuelle sur un réseau sans serveur **DHCP**. 
 
 Pour plus de détails sur **Nutanix Move**, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
 
@@ -187,7 +187,7 @@ Pour plus de détails sur **Nutanix Move**, reportez-vous à la section « [Alle
 
 #### Connexion à l'interface web et création d'environnements pour la migration
 
-Connectez-vous à l'adresse IP de la machine virtuelle **Nutanix Move** au travers d'un navigateur web en HTTPS comme ceci : `https://addresseipnutanixmove/`
+Connectez-vous à l'adresse IP de la machine virtuelle **Nutanix Move** au travers d'un navigateur web en HTTPS comme ceci : `https://addresseipnutanixmove/`.
 
 Prenez connaissance des conditions d'utilisation de la licence, validez leur acceptation et cliquez sur `Continue`{.action}.
 
