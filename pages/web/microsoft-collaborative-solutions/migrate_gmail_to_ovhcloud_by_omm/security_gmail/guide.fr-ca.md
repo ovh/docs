@@ -48,7 +48,7 @@ Après validation, le message ci-dessous indique que votre choix a bien été pr
 
 > [!warning]
 >
-> Il est nécessaire d'avoir un mot de passe à 16 caractères minimum sur votre compte Gmail, aussi appelé "mot de passe d'application". En effet lorsque vous "autoriser les applications moins sécurisées", il est nécessaire qu'un mot de passe fort soit appliqué sur votre compte Gmail.
+> Le mot de passe de votre compte Gmail doit comporter un minimum de 16 caractères, et ainsi être considéré comme un « mot de passe d'application ». En effet, lorsque vous « autorisez les applications moins sécurisées », il est nécessaire qu'un mot de passe fort soit appliqué sur votre compte Gmail.
 >
 > ![omm](images/OMM-gmail-security-08.png){.thumbnail}
 >

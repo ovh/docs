@@ -15,11 +15,16 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/asia/solutions
 
 ## Requirements
 
-* A public block of IP addresses in your account, with a minimum of four addresses
-* Your chosen private IP address range
-* A [vRack compatible server](https://www.ovh.com/asia/dedicated-servers/){.external}
-* A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
-* Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+- A public block of IP addresses in your account, with a minimum of four addresses
+- Your chosen private IP address range
+- A [vRack compatible server](https://www.ovh.com/asia/dedicated-servers/){.external}
+- A [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service activated in your account
+- Access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
 
 ## Instructions
 

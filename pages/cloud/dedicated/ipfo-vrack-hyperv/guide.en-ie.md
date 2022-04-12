@@ -13,11 +13,16 @@ section: vRack
 
 ## Requirements
 
-- A [vRack](https://www.ovh.ie/solutions/vrack/) compatible dedicated server with Windows Server installed.
-- An ISO for the OS that will be installed on your VM. (CentOS 7 will be used as an example in this guide)
-- A vRack delivered to your OVHcloud account.
-- A Failover IP block of 4 or more IPs.
+- A [vRack](https://www.ovh.ie/solutions/vrack/) compatible dedicated server with Windows Server installed
+- An ISO for the OS that will be installed on your VM (CentOS 7 will be used as an example in this guide)
+- A vRack delivered to your OVHcloud account
+- A Failover IP block of 4 or more IPs
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
 
 ## Instructions
 

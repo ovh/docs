@@ -18,6 +18,11 @@ Las tramas Jumbo o *Jumbo frames* son tramas Ethernet con una carga útil superi
 - Tener un [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
 - Abrir un *shell* con permisos root.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es-es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es-es/compare/).
+
 > [!primary]
 >
 > El tamaño MTU debe ser idéntico en todos los hosts de una misma subred. 

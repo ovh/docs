@@ -25,6 +25,11 @@ Postępuj zgodnie z instrukcjami procesu instalacji Hyper-V, połączenia wirtua
 - Blok IP 4 adresów IP lub więcej.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
 ## W praktyce
 
 Ten przewodnik zakłada, że zainstalowałeś już Windows Server, jesteś zalogowany przez zdalny pulpit i przypisałeś już Twój serwer dedykowany oraz blok IP do sieci vRack. Więcej informacji na temat tych kroków znajdziesz w przewodniku od 1 do 4: [Konfiguracja kilku serwerów dedykowanych w sieci vRack](../konfiguracja-kilku-serwerow-dedykowanych-vrack/).

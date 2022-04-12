@@ -24,6 +24,11 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+
 ## En pratique
 
 ### Étape 1 : ajouter vos serveurs au vRack
