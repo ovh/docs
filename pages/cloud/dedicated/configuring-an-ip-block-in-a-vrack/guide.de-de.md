@@ -81,7 +81,7 @@ broadcast 46.105.135.111
 
 ### Neue IP-Routing-Tabelle erstellen
 
-Wir empfehlen Ihnen, zuerst „iproute2“ herunterzuladen und zu installieren. Mit diesem Paket ist es möglich, das IP-Routing auf dem Server manuell zu konfigurieren.
+Wir empfehlen Ihnen, zuerst “iproute2” herunterzuladen und zu installieren. Mit diesem Paket ist es möglich, das IP-Routing auf dem Server manuell zu konfigurieren.
 
 Stellen Sie eine SSH-Verbindung zu Ihrem Server her und verwenden Sie folgenden Befehl, um das Paket herunterzuladen und zu installieren.
 

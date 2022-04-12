@@ -139,7 +139,7 @@ Stellen Sie eine SSH-Verbindung mit Ihrem Server her und geben Sie den folgenden
 nano /etc/ssh/sshd_config
 ```
 
-Suchen Sie anschließend den folgenden Abschnitt und ersetzen Sie „yes“ mit „no“ in der Zeile `PermitRootLogin`:
+Suchen Sie anschließend den folgenden Abschnitt und ersetzen Sie “yes” mit “no” in der Zeile `PermitRootLogin`:
 
 ```sh
 # Authentication: 
