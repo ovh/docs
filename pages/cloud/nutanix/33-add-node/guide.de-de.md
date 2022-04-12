@@ -1,5 +1,5 @@
 ---
-title: "Node in einem Nutanix-Cluster hinzufügen (EN)"
+title: "Node zu einem Nutanix-Cluster hinzufügen (EN)"
 slug: add-node
 excerpt: 'Add a node and confirm that it is working properly'
 section: Fortgeschrittene Nutzung
