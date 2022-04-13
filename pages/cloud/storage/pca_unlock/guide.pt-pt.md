@@ -1,50 +1,50 @@
 ---
-title: Odblokuj dane przechowywane w systemie Public Cloud Archive
+title: Descongelar os seus dados armazenados no Public Cloud Archive
 slug: pca/unlock
-excerpt: Sprawdź, jak odblokować archiwa
+excerpt: Saiba como descongelar os seus arquivos
 section: Public Cloud Archive
 order: 030
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
-> 
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-**Ostatnia aktualizacja z dnia 12-04-2022**
+**Última atualização: 12/04/2022**
 
-## Wprowadzenie
+## Objetivo
 
-Public Cloud Archive to rozwiązanie do archiwizacji danych o niskiej pojemności. Jest to rozwiązanie do przechowywania danych na zimno o dużej pojemności.
+O Public Cloud Archive é uma oferta de armazenamento frio destinada a alojar grandes volumes de dados, sem qualquer limite de tamanho, com um preço muito atrativo.
 
-W przypadku rzadko używanych danych wymagane jest odblokowanie, co oznacza konieczność opóźnienia w odzyskiwaniu danych. Czas ten jest zmienny w zależności od czasu trwania i częstotliwości dostępu do Twoich danych.
+Destinado aos dados raramente consultados, é necessário um pedido de desbloqueio, implicando um prazo antes da recuperação. Este prazo varia em função da antiguidade e da frequência de acesso aos seus dados.
 
-## Wymagania początkowe
+## Requisitos
 
-- Odblokowanie w Panelu klienta:
-    - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Odblokowanie za pomocą python-swiftclient:
-    - [Przygotowanie środowiska do korzystania z API OpenStack](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/) poprzez instalację python-swiftclient.
-    - [Pobranie zmiennych środowiskowych OpenStack](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/).
+- A partir da Área de Cliente OVHcloud:
+    - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Degel através de python-swiftclient:
+    - [Preparar o ambiente para utilizar a API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/) instalando python-swiftclient.
+    - [Carregar as variáveis de ambiente OpenStack](https://docs.ovh.com/pt/public-cloud/carregar-as-variaveis-de-ambiente-openstack/).
 
-## W praktyce
+## Instruções
 
-### Odblokuj obiekty w Panelu klienta
+### Libertar os seus objetos a partir da Área de Cliente
 
-W [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij zakładkę `Public Cloud`{.action}, wybierz Twój projekt Public Cloud i kliknij sekcję `Cloud Archive`{.action} w menu po lewej stronie.
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no separador `Public Cloud`{.action}, selecione o seu projeto Public Cloud e clique na secção `Cloud Archive`{.action} no menu à esquerda.
 
-Aby odblokować archiwum, kliknij przycisk `...`{.action} po prawej stronie, a następnie `Odblokuj`{.action}, aby rozpocząć proces odzyskiwania.
+Para descongelar um arquivo, clique no botão `...`{.action} à direita desta e, a seguir, em `Descongelar`{.action} a fim de dar início ao processo de recuperação.
 
-![odwadnianie](images/unfreeze.png){.thumbnail}
+![desgel](images/unfreeze.png){.thumbnail}
 
-Po rozpoczęciu procesu w kolumnie `Dostępność` wyświetli się data i godzina udostępnienia archiwum.
+Uma vez o processo iniciado, a data e a hora de disponibilidade do seu arquivo são apresentadas na coluna `Disponibilidade`.
 
-![okres przed odblokowaniem](images/unfreeze_result.png){.thumbnail}
+![prazo antes do descongelamento](images/unfreeze_result.png){.thumbnail}
 
-Twój plik będzie dostępny do pobrania po tym czasie. Pobieranie można wówczas rozpocząć bezpośrednio przez przeglądarkę lub przez [klienta Swift/SFTP/SCP](https://docs.ovh.com/pl/storage/pca/sftp/).
+O seu ficheiro estará disponível para download após este prazo. Poderá então iniciar o download diretamente através do browser ou através de [um cliente Swift/SFTP/SCP](https://docs.ovh.com/gb/en/storage/pca/sftp/).
 
-### Odblokuj swoje obiekty poprzez python-swiftclient
+### Libertar os seus objetos através de python-swiftclient
 
-Sprawdź status obiektu do pobrania:
+Verifique o estado do objeto a descarregar:
 
 ```bash
 swift stat <pca_container> <object>
@@ -68,13 +68,13 @@ X-Openstack-Request-Id: txbb0eff9ebf9442eab0d02-0061123b5a
        X-Iplb-Instance: 12308
 ```
 
-Poniższy wiersz wskazuje, że obiekt jest zamrożony:
+A seguinte linha indica que o objeto está congelado:
 
 ```
 X-Ovh-Retrieval-State: sealed
 ```
 
-W związku z tym zamówienie `swift download` zwróci błąd 429:
+Por isso, a encomenda `swift download` devolverá um erro 429:
 
 ```bash
 swift download <pca_container> <object>
@@ -83,7 +83,7 @@ swift download <pca_container> <object>
 Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
 ```
 
-Po ponownym uruchomieniu komendy `swift stat`:
+Reiniciar o comando `swift stat`:
 
 ```bash
 swift stat <pca_container> <object>
@@ -108,19 +108,19 @@ X-Openstack-Request-Id: tx9012d12434a447bd81528-0061123c54
        X-Iplb-Instance: 12309
 ```
 
-Poniższy wiersz wskazuje, że obiekt jest odblokowany:
+A seguinte linha indica que o objeto está a ser descongelado:
 
 ```
 X-Ovh-Retrieval-State: unsealing
 ```
 
-W następnym wierszu czas (w sekundach) na pobranie obiektu:
+E a seguinte linha indica o tempo (em segundos) que deve esperar para poder descarregar o objeto:
 
 ```
 X-Ovh-Retrieval-Delay: 14313
 ```
 
-Po upłynięciu terminu:
+Uma vez terminado o prazo:
 
 ```bash
 swift stat <pca_container> <object>
@@ -144,13 +144,13 @@ X-Openstack-Request-Id: txaf1eac9ceb8a45efb36e1-0061127482
        X-Iplb-Instance: 38343
 ```
 
-Poniższy wiersz wskazuje, że obiekt jest odmrożony:
+A seguinte linha indica que o objeto está descongelado:
 
 ```
 X-Ovh-Retrieval-State: unsealed
 ```
 
-Pobieranie obiektu działa wówczas:
+A transferência do objeto funciona então:
 
 ```bash
 swift download <pca_container> <object>
@@ -161,11 +161,11 @@ swift download <pca_container> <object>
 <object> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
 ```
 
-#### Automatyzacja pobierania obiektu
+#### Automatizar o download do objeto
 
 > [!primary]
 >
-> Ta funkcjonalność wymaga pakietu `at`.
+> Esta funcionalidade requer o package `at`.
 >
 
 ```bash
@@ -181,6 +181,6 @@ RETRIEVAL_DELAY=$((${X_OVH_RETRIEVAL_DELAY} / 60 + 2))
 swift download <pca_container> <object> | at now + ${RETRIEVAL_DELAY} minutes
 ```
 
-## Sprawdź również
+## Quer saber mais?
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
