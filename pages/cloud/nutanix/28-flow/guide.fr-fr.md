@@ -40,7 +40,7 @@ Cochez la case **Enable Microsegmentation** et cliquez sur `Save`{.action}.
 
 ![Activate Flow 03](images/activatemicrosegmentation03.png){.thumbnail}
 
-La micro-segmentation est activée. Il sera toujours possible de la désactiver.
+La microsegmentation est activée. Il sera toujours possible de la désactiver.
 
 ![Activate Flow 04](images/activatemicrosegmentation04.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
 Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
 
-Les entités comme les machines virtuelles, les sous réseaux ou les images peuvent faire parties des catégories utilisées pour un outil comme **Flow** par exemple.
+Les entités comme les machines virtuelles, les sous-réseaux ou les images peuvent faire partie des catégories utilisées pour un outil comme **Flow** par exemple.
 
 #### Création d'une catégorie
 
@@ -153,13 +153,13 @@ Cliquez sur `Save`{.action}
 
 ![Add category to multi VMs 04](images/multivmcategorychange04.png){.thumbnail}
 
-#### Affectation d'une catégorie à des sous réseaux
+#### Affectation d'une catégorie à des sous-réseaux
 
 Depuis le menu principal, cliquez sur `Subnets`{.action} sous `Network & Security`.
 
 ![Add Category to subnet 01](images/addcategorytosubnet01.png){.thumbnail}
 
-Sélectionnez les sous réseaux en cochant à leur gauche. 
+Sélectionnez les sous-réseaux en cochant à leur gauche. 
 
 ![Add Category to subnet 02](images/addcategorytosubnet02.png){.thumbnail}
 
@@ -211,7 +211,7 @@ Cliquez sur le numéro à coté de `Quarantined` pour afficher les machines virt
 
 ![Configure Quarantine 02](images/configurequarantinerule02.png){.thumbnail}
 
-La liste des machines virtuelles en quarantaine apparait dans la colonne **Name**. Cliquez sur `Close`{.action} pour revenir au menu précèdent.
+La liste des machines virtuelles en quarantaine apparait dans la colonne **Name**. Cliquez sur `Close`{.action} pour revenir au menu précédent.
 
 ![Configure Quarantine 03](images/configurequarantinerule03.png){.thumbnail}
 
@@ -315,9 +315,9 @@ Une machine virtuelle placée en mode **Strict** sera totalement isolée du rés
 
 ### Création d'une règle d'isolation
 
-Un règle d'isolations permet le blocage des communications réseaux entre deux types de catégories (machines virtuelles ou sous réseaux)
+Un règle d'isolations permet le blocage des communications réseaux entre deux types de catégories (machines virtuelles ou sous-réseaux)
 
-Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
+Pour plus d'informations sur la gestion des catégories, reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
 
 Depuis le menu principal, cliquez sur `Securities Policies`{.action} dans le sous-menu `Network & Security`.
 
@@ -331,7 +331,7 @@ Sélectionnez `Isolate Environments (Isolation Policy)`{.action} puis cliquez su
 
 ![Create Isolation Rule 05](images/createisolationrule05.png){.thumbnail}
 
-Saisissez le nom de la règle dans `Name`{.action} puis ajoutez un commentaire dans `Purpose`{.action}, Choisissez une catégorie dans `Isolate this category`{.action}, suivi d'une autre catégorie dans `From this category`{.action}.
+Saisissez le nom de la règle dans `Name`{.action} puis ajoutez un commentaire dans `Purpose`{.action}, choisissez une catégorie dans `Isolate this category`{.action}, suivi d'une autre catégorie dans `From this category`{.action}.
 
 Sélectionnez `Enforce` dans **Select a Policy mode**, puis cliquez sur `Save and Enforce`{.action}. 
 
@@ -357,7 +357,7 @@ Une règle d'application limite l'accès vers certains ports, protocoles ou serv
 
 Cette règle n'est utilisable qu'avec une catégorie nommée **Applications** que l'on peut modifier mais pas supprimer.
 
-Pour plus d'informations sur la gestion des catégories reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
+Pour plus d'informations sur la gestion des catégories, reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide.
 
 Depuis le menu principal, cliquez sur `Security Policies`{.action} dans le sous-menu `Network & Security`.
 
