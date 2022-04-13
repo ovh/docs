@@ -1,6 +1,6 @@
 ---
 title: 'Managing users and projects'
-excerpt: ''
+excerpt: 'Find out how to manage users and projects in your OVHcloud Managed private registry (Harbor).'
 slug: managing-users-and-projects
 section: 'Getting started'
 order: 04
