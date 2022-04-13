@@ -191,7 +191,7 @@ Na lista de chaves, clique no ícone `Chave` ao lado da chave SSH da sua escolha
 
 Uma vez concluída a operação, aparecerá uma mensagem para confirmar que a chave foi definida por predefinição. O ícone `Chave` será então realçado.
 
-![Espaço cliente da chave SSH](images/defaultsshkey1.png) {.thumbnail}
+![Espaço cliente da chave SSH](images/defaultsshkey1.png){.thumbnail}
 
 ### Desativar a chave SSH predefinida <a name="disablesshkey"></a>
 
