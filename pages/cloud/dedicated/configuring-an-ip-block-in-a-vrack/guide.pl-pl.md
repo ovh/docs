@@ -81,7 +81,7 @@ broadcast 46.105.135.111
 
 ### Tworzenie nowej tablicy routingu IP
 
-Pakiet „iproute2” umożliwi ręczną konfigurację routingu IP na serwerze.
+Pakiet “iproute2” umożliwi ręczną konfigurację routingu IP na serwerze.
 
 Połącz się przez SSH z Twoim serwerem i wprowadź następującą komendę, aby pobrać i zainstalować pakiet:
 

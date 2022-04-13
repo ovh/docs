@@ -114,7 +114,7 @@ ip a
 
 #### Debian
 
-W pierwszym kroku należy zainstalować pakiet „VLAN” na Twoim serwerze. W tym celu zastosuj polecenie:
+W pierwszym kroku należy zainstalować pakiet “VLAN” na Twoim serwerze. W tym celu zastosuj polecenie:
 
 ```sh
 sudo apt-get install vlan
@@ -148,7 +148,7 @@ broadcast 192.168.255.255
 
 ### Windows
 
-Połącz się z serwerem przez zdalny pulpit i otwórz aplikację „Server Manager”. Wybierz następnie `Local Server`{.action}, po czym kliknij link `Disabled`{.action} obok **NIC Teaming**:
+Połącz się z serwerem przez zdalny pulpit i otwórz aplikację “Server Manager”. Wybierz następnie `Local Server`{.action}, po czym kliknij link `Disabled`{.action} obok **NIC Teaming**:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
@@ -184,7 +184,7 @@ Kliknij dwa razy `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-W kolejnym kroku kliknij `Use the following IP address`{.action}. IP address: wprowadź adres IP z Twojego zakresu adresów prywatnych. **Subnet mask**, wprowadź „255.255.0.0”.
+W kolejnym kroku kliknij `Use the following IP address`{.action}. IP address: wprowadź adres IP z Twojego zakresu adresów prywatnych. **Subnet mask**, wprowadź “255.255.0.0”.
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 
