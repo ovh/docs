@@ -1,5 +1,5 @@
 ---
-title: 'Creating and using a private image'
+title: 'Creating and using a Docker image stored in an OVHcloud Managed Private Registry'
 slug: creating-and-using-a-private-image
 excerpt: 'Find out how to create and use an image stored in an OVHcloud Managed Private Registry.'
 section: Tutorials
