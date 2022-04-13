@@ -164,7 +164,7 @@ is the fact that if someone else modifies the data in your cached volume, you wi
 
 Your notebook is now ready to be launched with your data!
 
-![image](images/ui-notebook-attach-data.png){.thumbnail}
+![image](images/ui-notebook-attached-data.png){.thumbnail}
 
 Wait a few seconds for the notebook to start, then you should see its URL in the output that you can access from your browser.
 You can read the [Getting started](https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/) page to know how to find this URL.
