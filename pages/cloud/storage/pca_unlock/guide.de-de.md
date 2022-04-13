@@ -1,47 +1,50 @@
 ---
-title: Unfreezing your data stored in the Public Cloud Archive
+title: Auf Public Cloud Archive gespeicherte Daten freigeben
 slug: pca/unlock
-excerpt: Find out how to unfreeze your archives
+excerpt: Erfahren Sie hier, wie Sie Ihre Archive freigeben
 section: Public Cloud Archive
 order: 030
 ---
 
-**Last updated 12th April 2022**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Objective
+**Letzte Aktualisierung am 12.04.2022**
 
-Public Cloud Archive is a cold storage solution designed to host large volumes of data, with no size limit and very attractive pricing.
+## Ziel
 
-Since cold storage data is supposed to be rarely accessed, a retrieval request is required, implying a delay prior to recovering the data. This time period varies depending on the age of data and the frequency of data access.
+Public Cloud Archive ist eine Cold Storage Lösung für das Hosting großer Datenmengen ohne Größenbeschränkung und zu sehr attraktiven Preisen.
 
-## Requirements
+Da Cold Storage Daten nur selten Zugriff benötigen, ist eine Freigabeanforderung (*Unfreeze*) notwendig, was eine Verzögerung des Datenabrufs nach sich zieht. Dieser Zeitraum variiert je nach Datenalter und Häufigkeit des Datenzugriffs.
 
-- Unfreezing via the OVHcloud Control Panel:
-    - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- Unfreezing via python-swiftclient:
-    - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/ca/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/) by installing python-swiftclient
-    - [Setting OpenStack environment variables](https://docs.ovh.com/ca/en/public-cloud/set-openstack-environment-variables/)
+## Voraussetzungen
 
-## Instructions
+- *Unfreeze* im OVHcloud Kundencenter:
+    - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- *Unfreeze* über python-swiftclient:
+    - [Umgebung für die Verwendung der OpenStack-API vorbereiten](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/) indem python-swiftclient installiert wird.
+    - [OpenStack Umgebungsvariablen einrichten](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/).
 
-### Unfreezing your object from the Control Panel
+## In der praktischen Anwendung
 
-In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), open your `Public Cloud`{.action} project and click on `Cloud Archive`{.action} in the left-hand menu.
+### Objekte über das Kundencenter abrufen
 
-To unfreeze the archive, click on the button `...`{.action} to the right of your archive, then `Unfreeze`{.action} to start the retrieval process.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie im linken Menü auf `Cloud Archive`{.action}.
+
+Um das Archiv freizugeben, klicken Sie auf den Button `...`{.action} rechts und dann auf `Unfreeze`{.action}, um den Vorgang zu starten.
 
 ![Unfreeze](images/unfreeze.png){.thumbnail}
 
-Once the process has started, the date and time your archive will be available is displayed in the `Availability` column.
+Sobald der Prozess läuft, werden Datum und Uhrzeit der Verfügbarkeit Ihres Archivs in der Spalte `Verfügbarkeit` angezeigt.
 
-![Unfreeze result](images/unfreeze_result.png){.thumbnail}
+![Frist](images/unfreeze_result.png){.thumbnail}
 
-Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/ca/en/storage/pca/sftp/).
+Ihre Datei wird nach Ablauf dieser Frist zum Download verfügbar sein. Sie können dann den Download direkt im Browser oder über einen [Swift/SFTP/SCP Client](https://docs.ovh.com/gb/en/storage/pca/sftp/) ausführen.
 
+### Objekte über python-swiftclient abrufen
 
-### Unfreezing your object via python-swiftclient
-
-Check the status of the object to download:
+Überprüfen Sie den Zustand des herunterzuladenden Objekts:
 
 ```bash
 swift stat <pca_container> <object>
@@ -65,13 +68,13 @@ X-Openstack-Request-Id: txbb0eff9ebf9442eab0d02-0061123b5a
        X-Iplb-Instance: 12308
 ```
 
-The following line indicates that the object is frozen:
+Diese Zeile zeigt an, dass das Objekt eingefroren ist:
 
 ```
 X-Ovh-Retrieval-State: sealed
 ```
 
-Therefore, the `swift download` command will return a 429 error:
+Der Befehl `swift download` gibt daher einen Fehler 429 zurück:
 
 ```bash
 swift download <pca_container> <object>
@@ -80,7 +83,7 @@ swift download <pca_container> <object>
 Error downloading object '<pca_container>/<object>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_702xxxxxxxxxxxxxxxxxxxxxxxxxxdaf/<pca_container>/<object> 429 Too Many Requests
 ```
 
-Relaunching the `swift stat` command:
+Überprüfen des Status mit `swift stat`:
 
 ```bash
 swift stat <pca_container> <object>
@@ -105,19 +108,19 @@ X-Openstack-Request-Id: tx9012d12434a447bd81528-0061123c54
        X-Iplb-Instance: 12309
 ```
 
-The following line indicates that the object is being unfrozen:
+Diese Zeile zeigt an, dass das Objekt freigegeben wird:
 
 ```
 X-Ovh-Retrieval-State: unsealing
 ```
 
-The next line indicates the time period (in seconds) to wait before retrieving the object:
+In der folgenden Zeile wird der Zeitraum (in Sekunden) angegeben, bis das Objekt heruntergeladen werden kann:
 
-```bash
+```
 X-Ovh-Retrieval-Delay: 14313
 ```
 
-Once the time period has elapsed:
+Status nach Ablauf der Frist:
 
 ```bash
 swift stat <pca_container> <object>
@@ -141,13 +144,13 @@ X-Openstack-Request-Id: txaf1eac9ceb8a45efb36e1-0061127482
        X-Iplb-Instance: 38343
 ```
 
-The following line indicates that the object is now unfrozen:
+Diese Zeile zeigt an, dass das Objekt bereit ist:
 
 ```
 X-Ovh-Retrieval-State: unsealed
 ```
 
-To download the object:
+Das Objekt herunterladen:
 
 ```bash
 swift download <pca_container> <object>
@@ -158,11 +161,11 @@ swift download <pca_container> <object>
 <object> [auth 0.961s, headers 1.767s, total 1.768s, 0.001 MB/s]
 ```
 
-#### Automating the object download
+#### Objekt-Download automatisieren
 
 > [!primary]
 >
-> This feature requires the `at` package.
+> Diese Funktion erfordert das Paket `at`.
 >
 
 ```bash
@@ -178,6 +181,6 @@ RETRIEVAL_DELAY=$((${X_OVH_RETRIEVAL_DELAY} / 60 + 2))
 swift download <pca_container> <object> | at now + ${RETRIEVAL_DELAY} minutes
 ```
 
-## Go further
+## Weiterführende Informationen
 
-Join our community of users on <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
