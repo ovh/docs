@@ -20,8 +20,8 @@ order: 105
 
 There are two ways to manage your data:
 
-- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/we/en/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/we/en/publiccloud/ai/cli/data-cli/).
-- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), see [create data container](https://docs.ovh.com/we/en/storage/pcs/create-container/)
+- You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/data-cli/).
+- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), see [create data container](https://docs.ovh.com/us/en/storage/pcs/create-container/)
 
 ## How it works
 
@@ -88,11 +88,11 @@ User can enable a `cache` feature that allow jobs and notebooks to re-use availa
 
 ## Going further
 
-- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/we/en/storage/pcs/create-container/).
+- You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/us/en/storage/pcs/create-container/).
 
-- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/we/en/publiccloud/ai/cli/access-object-storage-data/)
+- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/)
 
-- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/we/en/publiccloud/ai/cli/run-job-cli/)
+- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/us/en/publiccloud/ai/cli/run-job-cli/)
 
 ## Feedback
 
