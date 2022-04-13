@@ -39,7 +39,7 @@ Do uwierzytelnienia logowania w instancjach z systemem Windows są wymagane tylk
 
 #### Tworzenie klucza SSH przy użyciu systemu operacyjnego Linux lub Mac
 
-Na komputerze Mac lub urządzeniu z zainstalowanym systemem operacyjnym Linux najpierw otwórz aplikację wiersza polecenia (terminal). Sprawdź, czy w katalogu domowym $HOME masz folder „.ssh”. Jeśli taki folder nie istnieje, utwórz go:
+Na komputerze Mac lub urządzeniu z zainstalowanym systemem operacyjnym Linux najpierw otwórz aplikację wiersza polecenia (terminal). Sprawdź, czy w katalogu domowym $HOME masz folder “.ssh”. Jeśli taki folder nie istnieje, utwórz go:
 
 ```bash
 $ mkdir ~/.ssh
@@ -51,7 +51,7 @@ Utwórz 4096-bitowy klucz RSA przy użyciu następującego polecenia:
 ```bash
 $ ssh-keygen -b 4096
 ```
-Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją „-t”, na przykład:
+Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją “-t”, na przykład:
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
@@ -64,9 +64,9 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Możesz zaakceptować plik domyślny, naciskając klawisz „↩” (Enter). Po potwierdzeniu możesz podać hasło, które będzie stanowić zabezpieczenie klucza SSH. Jest to zalecane w celu zwiększenia bezpieczeństwa. Ponieważ klucz prywatny będzie wymagany w celu uzyskania dostępu do instancji Public Cloud z działającego urządzenia, należy zastosować odpowiednie środki bezpieczeństwa. Hasło należy podać po nawiązaniu połączenia z instancją.
+Możesz zaakceptować plik domyślny, naciskając klawisz “↩” (Enter). Po potwierdzeniu możesz podać hasło, które będzie stanowić zabezpieczenie klucza SSH. Jest to zalecane w celu zwiększenia bezpieczeństwa. Ponieważ klucz prywatny będzie wymagany w celu uzyskania dostępu do instancji Public Cloud z działającego urządzenia, należy zastosować odpowiednie środki bezpieczeństwa. Hasło należy podać po nawiązaniu połączenia z instancją.
 
-Klucze powinny zostać zapisane w katalogu „.ssh”. Klucz publiczny ma dodane „pub” do nazwy pliku.
+Klucze powinny zostać zapisane w katalogu “.ssh”. Klucz publiczny ma dodane “pub” do nazwy pliku.
 
 ```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -92,7 +92,7 @@ The key's randomart image is:
 > Klucz prywatny zawsze należy przechowywać w bezpiecznym miejscu, a dostęp do niego powinny mieć tylko uprawnione osoby.
 > 
 
-Aby wyświetlić i wyeksportować klucz publiczny, użyj polecenia „cat” względem pliku klucza z „pub” w nazwie i skopiuj dane wyjściowe:
+Aby wyświetlić i wyeksportować klucz publiczny, użyj polecenia “cat” względem pliku klucza z “pub” w nazwie i skopiuj dane wyjściowe:
 
 ```bash
 $ cat ~/.ssh/id_rsa.pub
@@ -106,7 +106,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->W terminalu systemu MacOS do obsługi ciągów kluczy można też użyć poleceń „pbcopy” i „pbpaste”. Aby na przykład skopiować klucz z pliku „id_rsa.pub” do schowka, użyj tego polecenia:
+>W terminalu systemu MacOS do obsługi ciągów kluczy można też użyć poleceń “pbcopy” i “pbpaste”. Aby na przykład skopiować klucz z pliku “id_rsa.pub” do schowka, użyj tego polecenia:
 >
 
 ```bash
@@ -117,7 +117,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [PuTTY](https://putty.org/){.external} to oprogramowanie klienta SSH typu open source z graficznym interfejsem użytkownika, z którego można korzystać w systemie Windows oraz innych systemach operacyjnych. Umożliwia zdalne połączenie z serwerem systemu Linux. Jego oprogramowanie pomocnicze PuTTYgen (PuTTY Key Generator) służy do tworzenia kluczy SSH.
 
-Jeśli jeszcze nie masz zainstalowanego oprogramowania PuTTY, najpierw pobierz je z [oficjalnej witryny internetowej](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Zalecany standardowy pakiet instalacyjny zawiera program PuTTYgen, ale można go pobrać także jako niezależny plik. Aby dowiedzieć się, czy już masz ten program, sprawdź menu „Programy” lub użyj usługi Windows Search.
+Jeśli jeszcze nie masz zainstalowanego oprogramowania PuTTY, najpierw pobierz je z [oficjalnej witryny internetowej](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Zalecany standardowy pakiet instalacyjny zawiera program PuTTYgen, ale można go pobrać także jako niezależny plik. Aby dowiedzieć się, czy już masz ten program, sprawdź menu “Programy” lub użyj usługi Windows Search.
 
 Otwórz program PuTTYgen i wybierz obsługiwany algorytm szyfrowania. W tym przykładzie jest używany algorytm RSA. Jako liczbę bitów wpisz 4096, a następnie kliknij przycisk `Generate`{.action} (Generuj).
 
@@ -144,9 +144,9 @@ Niezależnie od wybranej metody tworzenia kluczy SSH teraz można dodać klucz p
 Zapisane klucze SSH umożliwiają szybsze tworzenie instancji. Aby zmienić pary kluczy i następnie dodać użytkowników, zapoznaj się z przewodnikiem [Konfiguracja dodatkowych kluczy SSH](https://docs.ovh.com/pl/public-cloud/konfiguracja_dodatkowych_kluczy_ssh/).
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Klucze SSH`{.action} na lewym pasku nawigacyjnym w obszarze „Zarządzanie projektami”.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Klucze SSH`{.action} na lewym pasku nawigacyjnym w obszarze “Zarządzanie projektami”.
 
-Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i wklej ciąg klucza (skopiowany w [kroku 1](./#krok-1-utworzenie-kluczy-ssh) z pliku klucza publicznego lub okna PuTTYgen) w polu „Klucz”. Potwierdź, klikając przycisk `Dodaj`{.action}.
+Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i wklej ciąg klucza (skopiowany w [kroku 1](./#krok-1-utworzenie-kluczy-ssh) z pliku klucza publicznego lub okna PuTTYgen) w polu “Klucz”. Potwierdź, klikając przycisk `Dodaj`{.action}.
 
 ![add key](images/puttygen-04.png){.thumbnail}
 
@@ -155,7 +155,7 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie „Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie “Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”).
 
 ![instance select](images/instance-creation-01-2021.png){.thumbnail}
 
@@ -174,9 +174,9 @@ Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy
 
 > [!primary]
 >
-Łączne zasoby Twojej chmury publicznej w ramach Public Cloud będą początkowo ograniczone z powodów bezpieczeństwa. W Panelu klienta OVHcloud możesz sprawdzić limity i zażądać ich zwiększenia, klikając pozycję `Limity i lokalizacja`{.action} na lewym pasku nawigacyjnym w obszarze „Zarządzanie projektami”.
+Łączne zasoby Twojej chmury publicznej w ramach Public Cloud będą początkowo ograniczone z powodów bezpieczeństwa. W Panelu klienta OVHcloud możesz sprawdzić limity i zażądać ich zwiększenia, klikając pozycję `Limity i lokalizacja`{.action} na lewym pasku nawigacyjnym w obszarze “Zarządzanie projektami”.
 >
-Później będzie możliwe zwiększenie zasobów instancji, ale nie przejście do mniejszego modelu, chyba że w czwartym kroku tworzenia wybierzesz opcję instancji elastycznej „Flex”. Poniżej znajduje się więcej informacji na ten temat.
+Później będzie możliwe zwiększenie zasobów instancji, ale nie przejście do mniejszego modelu, chyba że w czwartym kroku tworzenia wybierzesz opcję instancji elastycznej “Flex”. Poniżej znajduje się więcej informacji na ten temat.
 >
 
 W następnym kroku wybierz centrum danych instancji Public Cloud.
@@ -209,7 +209,7 @@ Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść
 
 ![billing select](images/instance-creation-05.png){.thumbnail}
 
-Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozliczania godzinowego, ponieważ później już nie można go wybrać. Gdy tylko instancja będzie dostępna na stronie „Instancje”, będziesz mieć możliwość zmiany na subskrypcję miesięczną.
+Jeśli masz wątpliwości dotyczące okresu użytkowania, zalecamy wybór rozliczania godzinowego, ponieważ później już nie można go wybrać. Gdy tylko instancja będzie dostępna na stronie “Instancje”, będziesz mieć możliwość zmiany na subskrypcję miesięczną.
 
 > [!warning]
 >
@@ -220,11 +220,11 @@ Po upewnieniu się, że wybrana konfiguracja jest prawidłowa kliknij przycisk `
 
 ### Krok 4: połączenie z instancją <a name="connect-to-instance"></a>
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”. Instancja jest gotowa, gdy w kolumnie „Status” ma ustawienie „Aktywowano”. Aby to sprawdzić, możesz kliknąć przycisk „Odśwież” obok przycisku `Utwórz instancję`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”. Instancja jest gotowa, gdy w kolumnie “Status” ma ustawienie “Aktywowano”. Aby to sprawdzić, możesz kliknąć przycisk “Odśwież” obok przycisku `Utwórz instancję`{.action}.
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
-W instancji zostaje utworzony automatycznie użytkownik z podwyższonymi uprawnieniami. Nazwa użytkownika odzwierciedla wybrany obraz, tj. „ubuntu”, „debian”, „fedora”, „arch” itd. Nazwę i inne elementy specyfikacji możesz sprawdzić na „Pulpicie nawigacyjnym” instancji, klikając ikonę `...`{.action}, a następnie pozycję `Szczegóły instancji`{.action}.
+W instancji zostaje utworzony automatycznie użytkownik z podwyższonymi uprawnieniami. Nazwa użytkownika odzwierciedla wybrany obraz, tj. “ubuntu”, “debian”, “fedora”, “arch” itd. Nazwę i inne elementy specyfikacji możesz sprawdzić na “Pulpicie nawigacyjnym” instancji, klikając ikonę `...`{.action}, a następnie pozycję `Szczegóły instancji`{.action}.
 
 > [!primary]
 >
@@ -233,7 +233,7 @@ W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, z
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac
 
-Instancja jest dostępna z poziomu interfejsu wiersza polecenia (terminala) przez SSH. Zastąp nazwę użytkownika („username” w poniższych przykładach) swoją domyślną nazwą użytkownika, jak wyjaśniono powyżej. Możesz też po prostu skopiować całe polecenie logowania się z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), klikając je w „Panelu nawigacyjnym” instancji i wklejając w oknie terminala.
+Instancja jest dostępna z poziomu interfejsu wiersza polecenia (terminala) przez SSH. Zastąp nazwę użytkownika (“username” w poniższych przykładach) swoją domyślną nazwą użytkownika, jak wyjaśniono powyżej. Możesz też po prostu skopiować całe polecenie logowania się z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), klikając je w “Panelu nawigacyjnym” instancji i wklejając w oknie terminala.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -243,7 +243,7 @@ Po wyświetleniu monitu wpisz hasło do klucza prywatnego.
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
-Ponieważ logujesz się z uprawnieniami użytkownika root, czyli administratora („sudo user”), możesz od razu wpisywać polecenia, aby wykonać zadania administracyjne. Zalecane jest, aby najpierw zmienić hasło:
+Ponieważ logujesz się z uprawnieniami użytkownika root, czyli administratora (“sudo user”), możesz od razu wpisywać polecenia, aby wykonać zadania administracyjne. Zalecane jest, aby najpierw zmienić hasło:
 
 ```bash
 $ sudo passwd username
@@ -251,7 +251,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Teraz możesz użyć tych poświadczeń do zalogowania się za pośrednictwem `Konsoli VNC`{.action} do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie przełącz się na użytkownika „root” i ustaw hasło bezpieczeństwa, a potem przełącz się z powrotem na poprzedniego użytkownika.
+Teraz możesz użyć tych poświadczeń do zalogowania się za pośrednictwem `Konsoli VNC`{.action} do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie przełącz się na użytkownika “root” i ustaw hasło bezpieczeństwa, a potem przełącz się z powrotem na poprzedniego użytkownika.
 
 ```bash
 $ sudo su -
@@ -261,19 +261,19 @@ Retype new password:
 passwd: password updated successfully
 # su - username
 ```
-Przełączanie się na użytkownika „root” jest rzadko konieczne, ponieważ do dobrych praktyk zadań administracyjnych, które wymagają uprawnień administratora, należą logowanie się i wykonywanie poleceń jako użytkownik uwzględniony w grupie „sudo”.
+Przełączanie się na użytkownika “root” jest rzadko konieczne, ponieważ do dobrych praktyk zadań administracyjnych, które wymagają uprawnień administratora, należą logowanie się i wykonywanie poleceń jako użytkownik uwzględniony w grupie “sudo”.
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Windows
 
 Po utworzeniu i zapisaniu kluczy SSH (w [kroku 1](./#krok-1-utworzenie-kluczy-ssh)) i zainstalowaniu instancji z kluczem publicznym (w [kroku 3](./#krok-3-tworzenie-instancji)) możesz połączyć się z instancją przy użyciu oprogramowania [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) i swojego klucza prywatnego.
 
-Otwórz aplikację PuTTY i rozwiń pozycję „SSH” w lewym menu. Następnie kliknij pozycję „Auth”, aby wyświetlić opcje uwierzytelniania.
+Otwórz aplikację PuTTY i rozwiń pozycję “SSH” w lewym menu. Następnie kliknij pozycję “Auth”, aby wyświetlić opcje uwierzytelniania.
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Kliknij przycisk `Browse`{.action} (Przeglądaj), aby przejść do folderu, w którym znajduje się plik klucza prywatnego (.ppk), i go otworzyć. Następnie za pomocą lewego menu przejdź do pozycji „Session” (Sesja) i wpisz swoje dane logowania (nazwa_użytkownika@adres_IPv4). Zastąp nazwę użytkownika „ubuntu” widoczną na przykładowych zrzutach ekranu swoją domyślną nazwą użytkownika — zgodnie z danymi w „Panelu nawigacyjnym” instancji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). (Kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym, a następnie kliknij nazwę instancji).
+Kliknij przycisk `Browse`{.action} (Przeglądaj), aby przejść do folderu, w którym znajduje się plik klucza prywatnego (.ppk), i go otworzyć. Następnie za pomocą lewego menu przejdź do pozycji “Session” (Sesja) i wpisz swoje dane logowania (nazwa_użytkownika@adres_IPv4). Zastąp nazwę użytkownika “ubuntu” widoczną na przykładowych zrzutach ekranu swoją domyślną nazwą użytkownika — zgodnie z danymi w “Panelu nawigacyjnym” instancji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). (Kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym, a następnie kliknij nazwę instancji).
 
-Sesję możesz zapisać na potrzeby przyszłych połączeń, aby była dostępna na liście w tym interfejsie. Aby dodać sesję, podaj opisową nazwę w polu „Saved Sessions” (Zapisane sesje) i kliknij przycisk `Save`{.action} (Zapisz).
+Sesję możesz zapisać na potrzeby przyszłych połączeń, aby była dostępna na liście w tym interfejsie. Aby dodać sesję, podaj opisową nazwę w polu “Saved Sessions” (Zapisane sesje) i kliknij przycisk `Save`{.action} (Zapisz).
 
 ![using putty](images/puttyconnect-02.png){.thumbnail}
 
@@ -298,17 +298,17 @@ W pierwszym kroku zdefiniuj ustawienia lokalizacji, wybierając region, język i
 
 ![windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-W kolejnym kroku trzeba skonfigurować domyślne konto „Administrator”. Dwukrotnie wpisz hasło i kliknij przycisk `Zakończ`{.action}, aby ukończyć proces instalacji. Klikając symbol oka sprawdź, czy wszystkie znaki wpisane w polu są zgodne z faktycznym układem klawiatury.
+W kolejnym kroku trzeba skonfigurować domyślne konto “Administrator”. Dwukrotnie wpisz hasło i kliknij przycisk `Zakończ`{.action}, aby ukończyć proces instalacji. Klikając symbol oka sprawdź, czy wszystkie znaki wpisane w polu są zgodne z faktycznym układem klawiatury.
 
 Instancja zostanie ponownie uruchomiona i będzie możliwe zalogowanie się za pomocą klienta pulpitu zdalnego przy użyciu ustawionych poświadczeń. 
 
 ##### **System Windows**
 
-Otwórz natywną aplikację kliencką „Podłączanie pulpitu zdalnego” (w razie potrzeby znajdź ją przy użyciu usługi Windows Search).
+Otwórz natywną aplikację kliencką “Podłączanie pulpitu zdalnego” (w razie potrzeby znajdź ją przy użyciu usługi Windows Search).
 
 ![windows remote](images/windows-connect-03.png){.thumbnail}
 
-Podaj adres IPv4 swojej instancji i nazwę użytkownika „Administrator”, a następnie wpisz hasło. Zwykle jest wyświetlany komunikat ostrzegawczy z monitem o potwierdzenie połączenia, ponieważ certyfikat jest nieznany. Kliknij przycisk `Tak`{.action}, aby zalogować się do instancji.
+Podaj adres IPv4 swojej instancji i nazwę użytkownika “Administrator”, a następnie wpisz hasło. Zwykle jest wyświetlany komunikat ostrzegawczy z monitem o potwierdzenie połączenia, ponieważ certyfikat jest nieznany. Kliknij przycisk `Tak`{.action}, aby zalogować się do instancji.
 
 > [!primary]
 >
@@ -323,7 +323,7 @@ Zgodną aplikacją jest na przykład klient pulpitu zdalnego Remmina, który pow
 
 ![linux remote](images/linux-connect-01.png){.thumbnail}
 
-Otwórz aplikację Remmina i sprawdź, czy jest ustawiony protokół połączenia „RDP”. Wpisz adres IPv4 swojej instancji Public Cloud i naciśnij klawisz „↩” (Enter).
+Otwórz aplikację Remmina i sprawdź, czy jest ustawiony protokół połączenia “RDP”. Wpisz adres IPv4 swojej instancji Public Cloud i naciśnij klawisz “↩” (Enter).
 
 ![linux remote](images/linux-connect-02.png){.thumbnail}
 
