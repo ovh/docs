@@ -3,7 +3,7 @@ title: 'Managing users and projects'
 excerpt: ''
 slug: managing-users-and-projects
 section: 'Getting started'
-order: 3
+order: 04
 ---
 
 **Last updated 20<sup>th</sup> January, 2020.**
@@ -68,6 +68,7 @@ Let's create a private project:
 After the project is created, you can browse repositories, members, logs, replication and configuration using the navigation tab.
 
 ![Managing users and projects](images/managing-users-and-projects-007.jpg){.thumbnail}
+
 
 
 ### Creating a new user and giving it rights on the *private* project
