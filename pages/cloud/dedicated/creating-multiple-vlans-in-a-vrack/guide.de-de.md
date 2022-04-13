@@ -166,7 +166,7 @@ broadcast 192.168.255.255
 
 ### Unter Windows
 
-Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung „Server Manager“. Wählen Sie dann `Local Server`{.action} aus und klicken Sie neben “**NIC Teaming**” auf den Link `Disabled`{.action}:
+Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anwendung “Server Manager”. Wählen Sie dann `Local Server`{.action} aus und klicken Sie neben “**NIC Teaming**” auf den Link `Disabled`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 

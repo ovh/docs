@@ -169,7 +169,7 @@ Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, die mit 
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-In „Meine Dienste“ wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
+In “Meine Dienste” wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2.1.png){.thumbnail}
 
