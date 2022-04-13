@@ -6,7 +6,7 @@ excerpt: 'Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 15-01-2021**
@@ -19,7 +19,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
  
 > [!warning]
 >
-> OVHcloud dostarcza Ci maszyny, za które przejmujesz odpowiedzialność. Nie mamy dostępu do tych maszyn i nie jesteśmy ich administratorami. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem Twojego serwera zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> OVHcloud dostarcza Ci maszyny, za które przejmujesz odpowiedzialność. Nie mamy dostępu do tych maszyn i nie jesteśmy ich administratorami. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem Twojego serwera zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 > 
 
 ## Wymagania początkowe
