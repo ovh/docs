@@ -108,6 +108,7 @@ $ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
 > [!primary]
 > 
 > This is the same option as the `run` command above. You can choose to mount the volume in read only or read & write mode and mount multiple volumes.
+>
 
 ## Feedback
 
