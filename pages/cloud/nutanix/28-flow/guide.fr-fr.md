@@ -48,13 +48,13 @@ La microsegmentation est activée. Il sera toujours possible de la désactiver.
 
 Une catégorie est un objet qui peut contenir une ou plusieurs valeurs
 
-Lors de l'installation d'un cluster certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
+Lors de l'installation d'un cluster, certaines catégories existent déjà et elles sont modifiables, d'autres catégories peuvent être ajoutées.
 
-Les entités comme les machines virtuelles, les sous-réseaux ou les images peuvent faire partie des catégories utilisées pour un outil comme **Flow** par exemple.
+Les entités comme les machines virtuelles, les sous-réseaux ou les images, peuvent faire partie des catégories utilisées pour un outil comme **Flow** par exemple.
 
 #### Création d'une catégorie
 
-Depuis le menu principal cliquez sur `Categories`{.action} dans le sous-menu `Administration`.
+Depuis le menu principal, cliquez sur `Categories`{.action} dans le sous-menu `Administration`.
 
 ![Create Category 01](images/configurecategories01.png){.thumbnail}
 
@@ -137,7 +137,7 @@ Cliquez sur `Save`{.action} pour enregistrer la machine virtuelle dans une caté
 
 #### Affectation d'une catégorie à plusieurs machines virtuelles
 
-Sélectionnez trois machines virtuelles en utilisant les `cases à cocher `{.action} à leurs gauches.
+Sélectionnez trois machines virtuelles en utilisant les `cases à cocher`{.action} à leurs gauches.
 
 ![Add category to multi VMs 01](images/multivmcategorychange01.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Saisissez `nomdelacatégorie:valeur` et cliquez sur `+`{.action}.
 
 ![Add category to multi VMs 03](images/multivmcategorychange03.png){.thumbnail}
 
-Cliquez sur `Save`{.action}
+Cliquez sur `Save`{.action}.
 
 ![Add category to multi VMs 04](images/multivmcategorychange04.png){.thumbnail}
 
@@ -193,7 +193,7 @@ Cliquez sur `Actions`{.action} et choisissez `Quarantine VMs`{.action} dans le m
 
 ![Add VM to Quarantine 03](images/addvmtoquarantine03.png){.thumbnail}
 
-Sélectionnez `Forensic`{.action} dans `quarantine Method`, puis cliquez sur `Quarantine`{.action}.
+Sélectionnez `Forensic`{.action} dans `quarantine Method` puis cliquez sur `Quarantine`{.action}.
 
 ![Add VM to Quarantine 04](images/addvmtoquarantine04.png){.thumbnail}
 
@@ -233,13 +233,13 @@ Saisissez `ENFORCE`{.action} et cliquez sur `Confirm`{.action}.
 
 Le statut de la règle est maintenant sur `Enforced`.
 
-Le trafic est bloqué nous voyons les tentatives d'accès aux machines virtuelles en quarantaines via des lignes en pointillés rouges vers les blocs contenant l'adresse IP de la machine virtuelle.
+Le trafic est bloqué. Nous voyons les tentatives d'accès aux machines virtuelles en quarantaines via des lignes en pointillés rouges vers les blocs contenant l'adresse IP de la machine virtuelle.
 
-Cliquez sur Cliquez sur `Update`{.action} en haut à droite pour modifier la règle afin d'autoriser certains flux réseaux.
+Cliquez sur `Update`{.action} en haut à droite pour modifier la règle, afin d'autoriser certains flux réseaux.
 
 ![Configure Quarantine 07](images/configurequarantinerule07.png){.thumbnail}
 
-Cliquez sur `Next`{.action}
+Cliquez sur `Next`{.action}.
 
 ![Configure Quarantine 08](images/configurequarantinerule08.png){.thumbnail}
 
@@ -255,7 +255,7 @@ Positionez la souris sur une tentative de connexion sortante et cliquez sur `All
 
 ![Configure Quarantine 11](images/configurequarantinerule11.png){.thumbnail}
 
-Cochez la case à gauche de la **Source** pour sélectionner le trafic découvert sortant, puis cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert.
+Cochez la case à gauche de la **Source** pour sélectionner le trafic découvert sortant puis cliquez sur `Allow 1 Discovered Traffic`{.action} pour n'autoriser que le trafic découvert.
 
 ![Configure Quarantine 12](images/configurequarantinerule12.png){.thumbnail}
 
@@ -291,7 +291,7 @@ Cliquez sur `+`{.action} à droite de **Quarantine: Forensics**
 
 ![Configure Quarantine 19](images/configurequarantinerule19.png){.thumbnail}
 
-Autorisez tous le trafic et cliquez sur `Save`{.action}.
+Autorisez tout le trafic et cliquez sur `Save`{.action}.
 
 ![Configure Quarantine 20](images/configurequarantinerule20.png){.thumbnail}
 
@@ -303,11 +303,11 @@ Cliquez sur `Save and Enforce`{.action} pour appliquer les changements sur la r�
 
 ![Configure Quarantine 22](images/configurequarantinerule22.png){.thumbnail}
 
-Cliquez sur `Quarantine`{.action} pour voir le détail de de la règle de quarantaine.
+Cliquez sur `Quarantine`{.action} pour voir le détail de la règle de quarantaine.
 
 ![Configure Quarantine 23](images/configurequarantinerule23.png){.thumbnail}
 
-Le statut de de la règle est sur `Enforced`, le mode **Forensic** a été personnalisé.
+Le statut de la règle est sur `Enforced`, le mode **Forensic** a été personnalisé.
 
 Une machine virtuelle placée en mode **Strict** sera totalement isolée du réseau alors qu'en mode **Forensic** elle aura accès aux zones définies dans la règle de quarantaine.
 
@@ -315,7 +315,7 @@ Une machine virtuelle placée en mode **Strict** sera totalement isolée du rés
 
 ### Création d'une règle d'isolation
 
-Un règle d'isolations permet le blocage des communications réseaux entre deux types de catégories (machines virtuelles ou sous-réseaux)
+Une règle d'isolation permet le blocage des communications réseaux entre deux types de catégories (machines virtuelles ou sous-réseaux).
 
 Pour plus d'informations sur la gestion des catégories, reportez-vous à la section « [Configuration des catégories](#gocategoriesemanage) » de ce guide. 
 
@@ -343,11 +343,11 @@ Cliquez sur `Le nom de la règle`{.action} en dessous de la colonne **Name** pou
 
 ![Create Isolation Rule 07](images/createisolationrule07.png){.thumbnail}
 
-Le statut de la règle indique `Enforced` et on peut voir qu'aucune tentative de connexion entre les deux zones n'est détectée, comme le signal  ce message: **No Traffic between them has been discovered**
+Le statut de la règle indique `Enforced` et on peut voir qu'aucune tentative de connexion entre les deux zones n'est détectée, comme le signale ce message: **No Traffic between them has been discovered**.
 
 ![Create Isolation Rule 08](images/createisolationrule08.png){.thumbnail}
 
-Si une tentative de connexion réseau est détectée entre ces deux zones le message change et devient **Traffic between them has been discovered**
+Si une tentative de connexion réseau est détectée entre ces deux zones, le message change et devient **Traffic between them has been discovered**.
 
 ![Create Isolation Rule 09](images/createisolationrule09.png){.thumbnail}
 
