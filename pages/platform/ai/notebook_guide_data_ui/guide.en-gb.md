@@ -171,7 +171,7 @@ You can read the [Getting started](https://docs.ovh.com/gb/en/publiccloud/ai/cli
 
 As soon as you access your notebook, you will see your different folders containing your data
 
-![image](images/ui-notebook-attach-data.png){.thumbnail}
+![image](images/ui-notebook-containers.png){.thumbnail}
 
 ## Feedback
 
