@@ -29,7 +29,7 @@ Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotoman
 
 Fügen Sie hier die entsprechende IP hinzu. Sie können auch eine Beschreibung anfügen, um sie später einfacher in der Liste wiederzufinden.
 
-Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sobald die IP als **„Autorisiert und eingerichtet“** gekennzeichnet ist, ist die Verbindung mit vSphere über diese IP möglich.
+Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sobald die IP als **“Autorisiert und eingerichtet”** gekennzeichnet ist, ist die Verbindung mit vSphere über diese IP möglich.
 
 ![vCenter](images/restrictIP2.JPG){.thumbnail}
 

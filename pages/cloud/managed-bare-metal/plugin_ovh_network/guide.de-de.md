@@ -25,7 +25,7 @@ Das OVHcloud Network Plugin wurde entwickelt,  um alle IP-Adressen effizient zu 
 
 ## Praktische Anwendung
 
-Wenn Sie mit dem vSphere Interface verbunden sind, wählen Sie im Menü links Ihr Rechenzentrum aus. Gehen Sie auf den Reiter `Configure`{.action} und klicken Sie dann unter „OVHcloud“ auf `Network`{.action}. Es erscheint „Network summary“.
+Wenn Sie mit dem vSphere Interface verbunden sind, wählen Sie im Menü links Ihr Rechenzentrum aus. Gehen Sie auf den Reiter `Configure`{.action} und klicken Sie dann unter “OVHcloud” auf `Network`{.action}. Es erscheint “Network summary”.
 
 ![Network summary](images/ovhcloudplugin_01.png){.thumbnail}
 
@@ -33,7 +33,7 @@ Hier sehen Sie Ihre IP-Blöcke und einige grundlegende Informationen zu ihnen. K
 
 ![Informationen über IPs und Blöcke](images/ovhcloudplugin_02.png){.thumbnail}
 
-Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. Einige Adressen werden als „Reserved“ markiert sein. Achten Sie darauf,  **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
+Hier können Sie das Ziel jeder Adresse und ihre “Reverse-IP” überprüfen. Einige Adressen werden als “Reserved” markiert sein. Achten Sie darauf,  **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
 
 - die erste IP, die Ihren Block auf dem Router anzeigt;
 - die letzte IP, die für Broadcast verwendet wird;
@@ -44,13 +44,13 @@ Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. 
 > Bei manchen Konfigurationen mit virtueller Firewall ist es nicht möglich, MAC-Adressen zurückzuverfolgen, wenn das ARP-Protokoll nicht zugelassen ist.
 >
 
-Sie können nun die „Reverse-IP“ Ihrer IP-Adresse in dieser Tabelle individuell festlegen (z.B., wenn Sie einen Mailserver konfigurieren). Klicken Sie links neben der IP auf die drei vertikalen Punkte und dann auf `Edit Reverse`{.action}.
+Sie können nun die “Reverse-IP” Ihrer IP-Adresse in dieser Tabelle individuell festlegen (z.B., wenn Sie einen Mailserver konfigurieren). Klicken Sie links neben der IP auf die drei vertikalen Punkte und dann auf `Edit Reverse`{.action}.
 
 ![Edit Reverse button](images/ovhcloudplugin_03.png){.thumbnail}
 
-Geben Sie die „Reverse-IP“ ein und klicken Sie auf `Confirm`{.action}.
+Geben Sie die “Reverse-IP” ein und klicken Sie auf `Confirm`{.action}.
 
-Die neue „Reverse-IP“ wird dann in der Tabelle angezeigt.
+Die neue “Reverse-IP” wird dann in der Tabelle angezeigt.
 
 > [!primary]
 >

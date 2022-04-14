@@ -49,18 +49,18 @@ Im selben Fenster zur Bearbeitung der Einstellungen finden Sie 4 Optionskategori
 
 Es sind drei verschiedene Automatisierungsebenen verfügbar:
 
-- Im Modus „Manuell“ verschiebt DRS die VMs nicht. Sie sind selbst für die Migration und Neuverteilung Ihrer VMs verantwortlich.
+- Im Modus “Manuell” verschiebt DRS die VMs nicht. Sie sind selbst für die Migration und Neuverteilung Ihrer VMs verantwortlich.
 
-- Im Modus „Teilautomatisiert“ berät Sie DRS zur Migration Ihrer VMs, nimmt diese jedoch nur vor, wenn Sie das Verschieben der VMs bestätigen.
+- Im Modus “Teilautomatisiert” berät Sie DRS zur Migration Ihrer VMs, nimmt diese jedoch nur vor, wenn Sie das Verschieben der VMs bestätigen.
 
-- Im Modus „Vollautomatisiert“ verschiebt DRS die VMs automatisch und ohne Bestätigung Ihrerseits entsprechend der auf den Hosts vorhandenen Last.
+- Im Modus “Vollautomatisiert” verschiebt DRS die VMs automatisch und ohne Bestätigung Ihrerseits entsprechend der auf den Hosts vorhandenen Last.
 
-Darüber hinaus können Sie einen Migrationsschwellenwert zwischen „konservativ“ und „aggressiv“ für die automatischen Modi festlegen.
+Darüber hinaus können Sie einen Migrationsschwellenwert zwischen “konservativ” und “aggressiv” für die automatischen Modi festlegen.
 
-Mit der Option „Predictive DRS“, verfügbar ab VMware Version 6.5, ist es möglich, Migrationen basierend auf den von vROps ausgegebenen prognostizierten Metriken durchzuführen.
+Mit der Option “Predictive DRS”, verfügbar ab VMware Version 6.5, ist es möglich, Migrationen basierend auf den von vROps ausgegebenen prognostizierten Metriken durchzuführen.
 Letzteres ist daher unerlässlich für den Einsatz dieser DRS-Option.
 
-Mit der Option „VM-Automatisierung“ können spezifische DRS-Regeln für bestimmte VMs konfiguriert werden. Gehen Sie hierzu im Tab `Konfigurieren` ins Untermenü `VM-Außerkraftsetzungen` (einzelne VMs können „teilautomatisch“ als Migrationsmodus haben, auch wenn für den Cluster „vollautomatisch“ als Modus eingestellt ist).
+Mit der Option “VM-Automatisierung” können spezifische DRS-Regeln für bestimmte VMs konfiguriert werden. Gehen Sie hierzu im Tab `Konfigurieren` ins Untermenü `VM-Außerkraftsetzungen` (einzelne VMs können “teilautomatisch” als Migrationsmodus haben, auch wenn für den Cluster “vollautomatisch” als Modus eingestellt ist).
 
 ![DRS-Automatisierung](images/drs02.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Im Tab `Konfigurieren` finden Sie die Verwaltung der VM/Host-Regeln.
 - Separate virtuelle Maschinen: Die virtuellen Maschinen befinden sich auf verschiedenen Hosts innerhalb desselben Clusters.
 - Virtuelle Maschinen zu Hosts: Die virtuellen Maschinen der eingegebenen VM-Gruppe des Clusters müssen auf der eingegebenen Host-Gruppe ausgeführt werden. Hierzu müssen VM- und Host-Gruppen im Tab `VM/-Host-Gruppen` erstellt werden.
 
-Die vierte Regel, „Virtuelle Maschinen zu virtuelle Maschinen“, wird in unserer Anleitung zur [HA-Funktion](../vmware-ha-high-availability) erklärt (Englisch).
+Die vierte Regel, “Virtuelle Maschinen zu virtuelle Maschinen”, wird in unserer Anleitung zur [HA-Funktion](../vmware-ha-high-availability) erklärt (Englisch).
 
 ![DRS-Regeln erstellen](images/drs07.png){.thumbnail}
 

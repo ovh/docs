@@ -40,7 +40,7 @@ Pobierz SDK vSphere za pomocą następującego polecenia:
 ```
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Zostanie utworzony folder „/vsphere-automation-sdk-python”. Przejdź do tego folderu, aby wykonać polecenie instalacji: 
+Zostanie utworzony folder “/vsphere-automation-sdk-python”. Przejdź do tego folderu, aby wykonać polecenie instalacji: 
 
 ```
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
@@ -167,7 +167,7 @@ Pobierz zestaw SDK vSphere dostępny pod tym linkiem:
 
 Pobierz wersję kompatybilną z Twoim systemem operacyjnym.
 
-W tym przykładzie pobieramy „VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz”
+W tym przykładzie pobieramy “VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz”
 
 Rozpakuj pobrany plik przy użyciu polecenia:
 
@@ -191,7 +191,7 @@ Po przeczytaniu warunków zaakceptuj je i kliknij `Enter`{.action}, aby kontynuo
 
 Następnie zostaną zainstalowane pozostałe moduły. Kliknij `Enter`{.action}, aby kontynuować instalację.
 
-Aby zakończyć instalację, wybierz folder, w którym zostanie zainstalowany zestaw SDK. Domyślnie jest to folder „/usr/bin”.
+Aby zakończyć instalację, wybierz folder, w którym zostanie zainstalowany zestaw SDK. Domyślnie jest to folder “/usr/bin”.
 
 #### Przykładowy skrypt
 
@@ -253,7 +253,7 @@ print "Disconnected \n";
 
 ##### Używanie próbek
 
-W tym przykładzie użyjemy już utworzonego skryptu, znajdującego się w folderze „vmware-vsphere-cli-distrib/apps/vm/”.
+W tym przykładzie użyjemy już utworzonego skryptu, znajdującego się w folderze “vmware-vsphere-cli-distrib/apps/vm/”.
 
 Oto lista skryptów dostępnych już w tym folderze:
 
@@ -261,7 +261,7 @@ Oto lista skryptów dostępnych już w tym folderze:
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
-Utworzymy snapshot „test” na maszynie wirtualnej „Debian1”
+Utworzymy snapshot “test” na maszynie wirtualnej “Debian1”
 
 W tym celu wpisz następujące polecenie:
 
