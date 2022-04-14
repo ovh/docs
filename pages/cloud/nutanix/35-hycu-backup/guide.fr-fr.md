@@ -487,11 +487,11 @@ Choisissez la stratégie `BACKUP to S3 OVHcloud and local SNAPSHOTS`{.action} et
 
 Allez dans le menu `Dasboard`{.action} à gauche pour afficher le tableau de bord et connaitre l'état de la sauvegarde.
 
-![Display Dashboard](images/12-dashboard01.png){.thumbnail}
+![Display Dashboard](images/12-dashbord01.png){.thumbnail}
 
 Allez dans le menu `Jobs`{.action} à gauche pour afficher l'état des travaux.
 
-![Display JobState](images/12-jobstates01.png){.thumbnail}
+![Display JobState](images/12-jobstate01.png){.thumbnail}
 
 ### Restauration à partir d'HYCU
 
