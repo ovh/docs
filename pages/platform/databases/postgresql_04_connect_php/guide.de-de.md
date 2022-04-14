@@ -27,7 +27,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 ## Concept
 
 A PostgreSQL instance can be managed through multiple ways.
-One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide : [Connect to PostgreSQL with CLI](https://docs.ovh.com/de/publiccloud/databases/postgresql/connect-cli/).
+One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as shown in our guide: [Connect to PostgreSQL with CLI](https://docs.ovh.com/de/publiccloud/databases/postgresql/connect-cli/).
 
 Another way is to interact directly using programming languages, such as PHP.
 PHP is used in almost 80% of the websites in the world, such as Facebook, Wikipedia or Wordpress.
@@ -39,7 +39,7 @@ In order to do so, we will need to set up our PHP environment with PostgreSQL dr
 
 ### Setup your PHP environment
 
-To interact with your PostgreSQL instance with PHP, your development environment needs to be configured with :
+To interact with your PostgreSQL instance with PHP, your development environment needs to be configured with:
 
 - A compatible version of PHP;
 - PostgresSQL and PDO PHP extension;
