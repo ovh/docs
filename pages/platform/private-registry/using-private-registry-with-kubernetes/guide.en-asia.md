@@ -1,6 +1,6 @@
 ---
 title: 'Using Private Registry with OVHcloud Managed Kubernetes'
-excerpt: 'Find out how to use images from OVHcloud Managed Private Registry service on OVHcloud Managed Kubernetes clusters.'
+excerpt: 'Find out how to use images from OVHcloud Managed Private Registry service on OVHcloud Managed Kubernetes clusters'
 slug: using-private-registry-with-kubernetes
 section: 'Tutorials'
 order: 02
@@ -43,9 +43,9 @@ We will specifically suppose you have followed the last one and you have a `hell
 
 ## Deploying a Secret based on existing Docker credentials
 
-### Login into your OVHcloud Managed Private Registry
+### Log in to your OVHcloud Managed Private Registry
 
-In order to pull a private image from you private registry, you must authenticate with it using `docker login`.
+In order to pull a private image from your private registry, you must authenticate with it using `docker login`.
 
 ```bash
 docker login [YOUR_PRIVATE_REGISTRY_URL]
@@ -71,7 +71,7 @@ cat ~/.docker/config.json
 ### Creating the Secret
 
 Kubernetes needs to have access to the private registry to pull images from it, so you need to store the private registry credentials in a Kubernetes Secret.
-Let's create a Scret of `docker-registry` type.
+Let's create a Secret of `docker-registry` type.
 
 You will use this Secret to authenticate with your private registry to pull a private image.
 
@@ -92,7 +92,7 @@ In my private registry:
   secret/regcred created
 </code></pre>
 
-You can also checked the secret have been correctly deployed in your Kubernetes cluster:
+You can also check the secret has been correctly deployed in your Kubernetes cluster:
 
 <pre class="console"><code>$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
 
@@ -107,7 +107,7 @@ ewogICAgICAgICJhdXRocyI6IHsKCQkiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIjogewogICAg
 
 The first step to deploy a Docker image in a Kubernetes cluster is to write a YAML manifest. Let's call it `hello-ovh.yaml`:
 
-```yml
+```yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -171,7 +171,7 @@ NAME                                    READY   STATUS    RESTARTS   AGE
 hello-ovh-deployment-6df76cb7b8-vbk2b   1/1     Running   0          66s
 </code></pre>
 
-Our Pod is correctly running, so Kubernetes have pulled the image from your private registry with success.
+Our Pod is correctly running, so Kubernetes has pulled the image from your private registry with success.
 
 ## Go further
 

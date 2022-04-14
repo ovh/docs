@@ -1,5 +1,5 @@
 ---
-title: "Migration auf Nutanix über das Nutanix Move Tool (EN)"
+title: "Migration zu Nutanix über das Nutanix Move Tool (EN)"
 slug: move-to-nutanix
 excerpt: "Install, configure and use the Move migration tool"
 section: Fortgeschrittene Nutzung
