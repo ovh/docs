@@ -16,14 +16,14 @@ Plesk to prosty w użytkowaniu interfejs administracyjny dla serwerów dedykowan
 
 > [!warning]
 > 
-> OVH oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+> OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Przyłącz się do [społeczności naszych użytkowników](https://community.ovh.com/en/){.external}.
 >
 
 ## Wymagania początkowe
 
-- [Utworzenie instancji w Panelu klienta](../tworzenie_instancji_w_panelu_klienta_ovh/)
+- [Utworzenie instancji w Panelu klienta OVHcloud](../tworzenie_instancji_w_panelu_klienta_ovh/)
 - [Dostęp root i zdefiniowanie hasła](../dostep_root_i_zdefiniowanie_hasla/)
 
 ## W praktyce
