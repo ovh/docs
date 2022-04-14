@@ -53,7 +53,7 @@ Sélectionnez `URL`{.action}, saisissez l'URL de l'image qcow2 de la dernière v
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saissisez une `description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saisissez une `description`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Image HYCU 04](images/00-addimagehycu04.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Cliquez sur `nom du cluster`{.action} aller sur **Prism Element**.
 
 #### Configuration adresse IP pour ISCSI
 
-Allez dans les paramètres en cliquant sur l'icone représentant un `engrenage`{.action}.
+Allez dans les paramètres en cliquant sur l'icône représentant un `engrenage`{.action}.
 
 ![Configure ISCSI 02](images/00-configureiscsi02.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Vérifiez votre choix et cliquez sur `Yes`{.action}.
 
 ![Configure ISCSI 05](images/00-configureiscsi05.png){.thumbnail}
 
-L'adresse IP est affichée dans virtual IP.
+L'adresse IP est affichée dans **virtual IP**.
 
 ![Configure ISCSI 06](images/00-configureiscsi06.png){.thumbnail}
 
@@ -103,11 +103,11 @@ Cliquez sur `New User`{.action}.
 
 Saisissez ces valeurs :
 
-- **Username**: `svc_hycu`{.action}
-- **First Name**: `HYCU`{.action}
-- **Last Name**: `HYCU`{.action}
-- **Email**: `hycu@example.com`{.action}
-- **Password**: `mot de passe`{.action}
+- **Username** : `svc_hycu`{.action}
+- **First Name** : `HYCU`{.action}
+- **Last Name** : `HYCU`{.action}
+- **Email** : `hycu@example.com`{.action}
+- **Password** : `mot de passe`{.action}
 
 Cochez la case `Cluster Admin`{.action} et cliquez sur `Save`{.action}
 
@@ -131,9 +131,9 @@ Cliquez sur `Create VM`{.action}.
 
 Nommez la machine virtuelle dans `Name`{.action}, modifiez les propriétés de la machine virtuelle avec ces paramètres:
 
-- **CPU**:  `4 vCPU`{.action}
-- **Cores Per CPU**: `2 Cores`{.action}
-- **Memory**: `8GB`{.action}
+- **CPU** :  `4 vCPU`{.action}
+- **Cores Per CPU** : `2 Cores`{.action}
+- **Memory** : `8GB`{.action}
 
 Cliquez sur `Next`{.action}.
 
@@ -143,11 +143,11 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Create HYCUVM 04](images/02-createhycuvm04.png){.thumbnail}
 
-Saisissez ces informations:
+Saisissez ces informations :
 
-- **Type**: `Disk`{.action}
-- **Operation**: `Clone from Image`{.action}
-- **Image**: `hycu-4.3.0-4122`{.action}
+- **Type** : `Disk`{.action}
+- **Operation** : `Clone from Image`{.action}
+- **Image** : `hycu-4.3.0-4122`{.action}
 
 Cliquez sur `Save`{.action}
 
@@ -157,12 +157,12 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Create HYCUVM 06](images/02-createhycuvm06.png){.thumbnail}
 
-Choisissez ces options:
+Choisissez ces options :
 
-- **Type**: `Disk`{.action}
-- **Operation**: `Allocate on Storage Container`{.action}
-- **Image**: `default-container`{.action}
-- **Capacity**: `32Gib`{.action}
+- **Type** : `Disk`{.action}
+- **Operation** : `Allocate on Storage Container`{.action}
+- **Image** : `default-container`{.action}
+- **Capacity** : `32Gib`{.action}
 
 Cliquez sur `Save`{.action}.
 
@@ -180,7 +180,7 @@ Cliquez sur `Next`{.action}
 
 ![Create HYCUVM 10](images/02-createhycuvm10.png){.thumbnail}
 
-Créer un fiche **yaml** avec ces valeurs:
+Créer un fiche **yaml** avec ces valeurs :
 
 - < Adresse IP > par l'adresse IP locale du cluster.
 - < GATEWAY > par la passerelle locale du cluster pour aller sur Internet.
@@ -193,7 +193,7 @@ bootcmd:
 ```
 Modifiez les options de **Guest Customization** avec `Cloud-init (Linux)`{.action} dans **Script Type** et `Custom Script`{.action} pour **Configuration Method**.
 
-Copiez `le contenu du script yaml`{.action} et collez-le à l'emplacement réservé pour le script au dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
+Copiez `le contenu du script yaml`{.action} et collez-le à l'emplacement réservé pour le script au-dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
 
 ![Create HYCUVM 11](images/02-createhycuvm11.png){.thumbnail}
 
@@ -209,13 +209,13 @@ Cliquez sur `Power On`{.action} dans le menu  `Actions`.
 
 ![Create HYCUVM 14](images/02-createhycuvm14.png){.thumbnail}.
 
-La machine virtuelle est démarrée et possède l'adresse IP définie dans **cloud_init**.
+La machine virtuelle est démarrée et possède l'adresse IP définie dans **cloud-init**.
 
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
 #### Connexion et configuration d'HYCU
 
-Connectez vous avec un navigateur WEB à l'adresse IP interne ou externe si un redirection exister à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
+Connectez-vous avec un navigateur WEB à l'adresse IP interne ou externe si une redirection existe à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
 Saisissez `le mot de passe par défaut`{.action} et cliquez sur `Sign In`{.action}.
 
@@ -237,27 +237,27 @@ Cliquez sur l'icône `Administration`{.action} en forme d'engrenage en haut à d
 
 ![Configure HYCU 04](images/03-configurehycu04.png){.thumbnail}
 
-Saisissez ces informations:
+Saisissez ces informations :
 
-- **URL**: `https://url_prism_element_local:9440`{.action}
-- **USERNAME**: `utilisateur **Prism Element**`{.action} 
-- **PASSWORD**: `mot de passe de l'utilisateur **Prism Element**`{.action} 
+- **URL** : `https://url_prism_element_local:9440`{.action}
+- **USERNAME** : `utilisateur **Prism Element**`{.action} 
+- **PASSWORD** : `mot de passe de l'utilisateur **Prism Element**`{.action} 
 
 Cliquez sur `Next`{.action}
 
 ![Configure HYCU 05](images/03-configurehycu05.png){.thumbnail}
 
-Saisissez ces informations:
+Saisissez ces informations :
 
-- **URL**: `https://url_prism_central_local:9440`{.action}
-- **USERNAME**: `utilisateur de Prism Central`{.action}
-- **PASSWORD**: `mot de passe de Prism Central`{.action}
+- **URL** : `https://url_prism_central_local:9440`{.action}
+- **USERNAME** : `utilisateur de Prism Central`{.action}
+- **PASSWORD** : `mot de passe de Prism Central`{.action}
 
 Cliquez sur `Next`{.action}.
 
 ![Configure HYCU 06](images/03-configurehycu06.png){.thumbnail}
 
-L'information `VALIDATION SUCCESSFUL` apparait pour signifier que les informations saisies sont correctes , cliquez sur `Save`{.action}.
+L'information `VALIDATION SUCCESSFUL` apparait pour signifier que les informations saisies sont correctes, cliquez sur `Save`{.action}.
 
 ![Configure HYCU 07](images/03-configurehycu07.png){.thumbnail}
 
@@ -271,9 +271,9 @@ Sélectionnez `Targets`{.action} dans le menu à gauche et cliquez sur `+ Add`{.
 
 Saisissez les informations fournies par OVHcloud lors d'un abonnement à **High Performance Object Storage** ou **Standard Object Storage (SWIFT)** d'OVHcloud.
 
-- Name: `Nom`{.action}
-- Size: `Taille du stockage`{.action}
-- Type: `AWS S3/Compatible`{.action}
+- **Name** : `Nom`{.action}
+- **Size** : `Taille du stockage`{.action}
+- **Type** : `AWS S3/Compatible`{.action}
 
 Activez `ENABLE COMPRESSION`{.action} et faites défilez la fenêtre avec la `barre de défilement`{.action}. 
 
@@ -296,7 +296,7 @@ La cible est activée et est la destination des sauvegardes pour le cluster NUTA
 
 ### Mise à jour d'HYCU
 
-HYCU fournie régulierement des mises à jours voici le processus de mise à jours
+HYCU fournie régulièrement des mises à jour voici le processus de mise à jours
 
 #### Ajout des sources d'HYCU
 
@@ -313,7 +313,7 @@ Sélectionnez `URL`{.action}` saisissez l'URL de l'image qcow2 de la dernière v
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom `hycu-'4.3.1-616`{.action} saissisez une `Description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension .qcow2 derrière le nom `hycu-'4.3.1-616`{.action} saisissez une `Description`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Image HYCU for update 04](images/04-addimageforupdate04.png){.thumbnail}
 
@@ -323,13 +323,13 @@ Cliquez sur `Save`{.action} pour importer l'image et attendez que l'image soit i
 
 #### Lancement de la mise à jour à partir d'HYCU
 
-Connectez-vous avec un navigateur à l'adresse IP interne ou externe si un redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
+Connectez-vous avec un navigateur à l'adresse IP interne ou externe si une redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
 Allez dans la configuration d'HYCU en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et choisir `Power Options`{.action}.
 
 ![Before Update 01](images/05-beforeupdate01.png){.thumbnail}
  
-Sélectionnez sur `Suspend All`{.action}, cochez sur `AUTO RESUME AFTER`{.action} , laissez `1`{.action} à Hours et cliquez sur `Save`{.action}.
+Sélectionnez sur `Suspend All`{.action}, cochez sur `AUTO RESUME AFTER`{.action} , laissez `1`{.action} à **Hours** et cliquez sur `Save`{.action}.
 
 ![Before Update 02](images/05-beforeupdate02.png){.thumbnail}
 
@@ -375,10 +375,10 @@ Cliquez sur le signe `+`{.action}.
 
 Saisissez ces valeurs:
 
-- NAME: `Nom du stockage de mot de passe`{.action}.
-- PROTOCOL: `AUTOMATIC`{.action}.
-- USERNAME: `compte utilisateur de la machine virtuelle`{.action}.
-- PASSWORD `mot de passe`{.action}.
+- **NAME** : `Nom du stockage de mot de passe`{.action}.
+- **PROTOCOL** : `AUTOMATIC`{.action}.
+- **USERNAME** : `compte utilisateur de la machine virtuelle`{.action}.
+- **PASSWORD** : `mot de passe`{.action}.
 
 Cliquez sur `Save`{.action}.
 
@@ -390,10 +390,10 @@ Cliquez sur le signe `+`{.action} pour rajouter un autre compte.
 
 Saisissez ces valeurs:
 
-- NAME: `Nom du stockage de mot de passe`{.action}.
-- PROTOCOL: `AUTOMATIC`{.action}.
-- USERNAME: `compte utilisateur de la machine virtuelle`{.action}.
-- PASSWORD `mot de passe`{.action}.
+- **NAME** : `Nom du stockage de mot de passe`{.action}.
+- **PROTOCOL** : `AUTOMATIC`{.action}.
+- **USERNAME** : `compte utilisateur de la machine virtuelle`{.action}.
+- **PASSWORD** `mot de passe`{.action}.
 
 Cliquez sur `Save`{.action}.
 
@@ -425,9 +425,9 @@ Allez dans le menu `policies`{.action} à gauche et cliquez en haut à droite su
 
 Saisissez ces informations:
 
-- NAME: `HYCU VM`{.action}.
-- BACKUP EVERY: `4 hours`{.action}.
-- BACKUP THRESHOLD: `42`{.action}.
+- **NAME** : `HYCU VM`{.action}.
+- **BACKUP EVERY** : `4 hours`{.action}.
+- **BACKUP THRESHOLD** : `42`{.action}.
 
 Laissez l'option `BACKUP`{.action} cochée et faites défiler la `barre de défilement`{.action} à droite.
 
