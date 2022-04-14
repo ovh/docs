@@ -495,25 +495,25 @@ Allez dans le menu `Jobs`{.action} à gauche pour afficher l'état des travaux.
 
 ### Restauration à partir d'HYCU
 
-Utilisez le menu `Virtual Machines`{.action} et cliquez sur  `une machine virtuelle sauvegardée`{.action}
+Utilisez le menu `Virtual Machines`{.action} et cliquez sur  `une machine virtuelle sauvegardée`{.action}.
 
 ![Restore VM 01](images/13-restorevm01.png){.thumbnail}
 
 #### Restauration d'une machine virtuelle
 
-Cliquez en bas à droite sur l'icône `Restore VM`{.action}
+Cliquez en bas à droite sur l'icône `Restore VM`{.action}.
 
 ![Restore VM 02](images/13-restorevm02.png){.thumbnail}
 
-Sélectionnez `Restore VM`{.action} et cliquez sur `Next`{.action}
+Sélectionnez `Restore VM`{.action} et cliquez sur `Next`{.action}.
 
 ![Restore VM 03](images/13-restorevm03.png){.thumbnail}
 
-Laissez les options par défaut et cliquez sur `Restore`{.action}
+Laissez les options par défaut et cliquez sur `Restore`{.action}.
 
 ![Restore VM 04](images/13-restorevm04.png){.thumbnail}
 
-La machine virtuelle va être entierement restaurée 
+La machine virtuelle va être entierement restaurée. 
 
 #### Restauration d'un fichier
 
@@ -521,23 +521,23 @@ Cliquez en bas à droite sur l'icône `Restore files`{.action}
 
 ![Restore FILES 01](images/15-restorefile01.png){.thumbnail}
 
-Laissez `AUTOMATIC`{.action} dans RESTORE FROM et cliquez sur `Next`{.action}
+Laissez `AUTOMATIC`{.action} dans RESTORE FROM et cliquez sur `Next`{.action}.
 
 ![Restore FILES 02](images/15-restorefile02.png){.thumbnail}
 
-Sélectionnez `le fichier à restaurer`{.action} et cliquez sur `Next`{.action}
+Sélectionnez `le fichier à restaurer`{.action} et cliquez sur `Next`{.action}.
 
 ![Restore FILES 03](images/15-restorefile03.png){.thumbnail}
 
-Laissez les options par défaut et cliquez sur `Next`{.action}
+Laissez les options par défaut et cliquez sur `Next`{.action}.
 
 ![Restore FILES 04](images/15-restorefile04.png){.thumbnail}
 
-Choisissez `Rename restored`{.action} et cliquez sur `Restore`{.action}
+Choisissez `Rename restored`{.action} et cliquez sur `Restore`{.action}.
 
 ![Restore FILES 05](images/15-restorefile05.png){.thumbnail}
 
-Le fichier restauré sera restauré dans la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien.
+Le fichier restauré sera dans la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien.
 
 #### Restauration d'une application 
 
@@ -549,15 +549,15 @@ Cliquez sur l'icône `Restore`{.action} en bas à droite.
 
 ![Restore Application 02](images/16-restoreapplication02.png){.thumbnail}
 
-Sélectionnez `Restore databases`{.action} et cliquez sur `Next`{.action}
+Sélectionnez `Restore databases`{.action} et cliquez sur `Next`{.action}.
 
 ![Restore Application 03](images/16-restoreapplication03.png){.thumbnail}
 
-Sélectionnez `Une base de données`{.action} et cliquez sur `Next`{.action}
+Choisissez `Une base de données`{.action} et cliquez sur `Next`{.action}.
 
 ![Restore Application 04](images/16-restoreapplication04.png){.thumbnail}
 
-Désactivez `OVERWRITE EXISTING DATABASES`{.action} et cliquez sur `Restore`{.action}
+Désactivez `OVERWRITE EXISTING DATABASES`{.action} et cliquez sur `Restore`{.action}.
 
 ![Restore Application 05](images/16-restoreapplication05.png){.thumbnail}
 
