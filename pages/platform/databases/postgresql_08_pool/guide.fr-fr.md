@@ -72,7 +72,7 @@ The settings available are:
 
 ### Connect to a connection pool
 
-To establish a connection, you need to get informations about the pool:
+To establish a connection, get informations about the pool:
 
 ![Pools](images/postgresql_08_pool-20220411134051260.png){.thumbnail}
 
@@ -96,7 +96,7 @@ From terminal 2:
 $ psql "postgres://avnadmin:xxxxxxxxxxxxxxxxxxxxx@postgresql-b412100d-o2626ab53.database.cloud.ovh.net:20185/pgpool?sslmode=require"
 ```
 
-Now we have two open client connections to the PGBouncer pooler. Let's verify that each connection is able access the database:
+We have two open client connections to the pool. Let's verify that each connection is able access the database:
 
 Terminal 1:
 
@@ -118,7 +118,7 @@ pgpool=> SELECT 1;
 (1 row)
 ```
 
-Both connections respond as they should. Now let's check how many connections there are to the PostgreSQL backend  database:
+Both connections respond as they should. Now let's check how many connections there are to the PostgreSQL backend database:
 
 Terminal 1:
 
@@ -130,7 +130,7 @@ pgpool=> SELECT COUNT(*) FROM pg_stat_activity WHERE usename = 'avnadmin';
 (1 row)
 ```
 
-And as we can see from the pgstatactivity output the two psql sessions use the same PostgreSQL server database connection.
+pgstatactivity outputs the two psql sessions, which uses the same PostgreSQL server database connection.
 
 ## Go further
 
