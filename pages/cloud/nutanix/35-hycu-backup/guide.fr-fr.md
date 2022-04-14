@@ -13,7 +13,7 @@ order: 02
 
 HYCU backup est un logiciel de sauvegarde disponible pour Nutanix. 
 
-**Apprenez à installer , configurer HYCU sur un cluster Nutanix avec un stockage de type object Storage chez OVHCloud**
+**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type object Storage pour OVHCloud**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -49,12 +49,11 @@ Cliquez sur `Add Image`{.action}`.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Sélectionnez `URL`{.action}` saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple 
-`https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` et cliquez sur `Upload file`{.action}.
+Sélectionnez `URL`{.action}, saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` et cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-'4.3.0-4122`{.action} saissisez une `description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-'4.3.0-4122`{.action}, saissisez une `description`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Image HYCU 04](images/00-addimagehycu04.png){.thumbnail}
 
@@ -70,23 +69,23 @@ Cliquez sur `nom du cluster`{.action} aller sur **Prism Element**.
 
 Allez dans les paramètres en cliquant sur l'icone représentant un `engrenage`{.action}.
 
-![Configure ISCSI 02](images/00-configurureiscsi02.png){.thumbnail}
+![Configure ISCSI 02](images/00-configureiscsi02.png){.thumbnail}
 
 Cliquez sur `Cluster Details`{.action}.
 
-![Configure ISCSI 03](images/00-configurureiscsi03.png){.thumbnail}
+![Configure ISCSI 03](images/00-configureiscsi03.png){.thumbnail}
 
 Saisissez `une adresse IP non utilisée`{.action} sur le réseau local et cliquez sur `Save`{.action}.
 
-![Configure ISCSI 04](images/00-configurureiscsi04.png){.thumbnail}
+![Configure ISCSI 04](images/00-configureiscsi04.png){.thumbnail}
 
 Vérifiez votre choix et cliquez sur `Yes`{.action}.
 
-![Configure ISCSI 05](images/00-configurureiscsi05.png){.thumbnail}
+![Configure ISCSI 05](images/00-configureiscsi05.png){.thumbnail}
 
 L'adresse IP est affichée dans virtual IP.
 
-![Configure ISCSI 06](images/00-configurureiscsi06.png){.thumbnail}
+![Configure ISCSI 06](images/00-configureiscsi06.png){.thumbnail}
 
 #### Ajout compte utilisateur dans **Prism Element** pour HYCU
 
