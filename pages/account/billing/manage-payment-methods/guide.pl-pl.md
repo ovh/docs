@@ -30,7 +30,7 @@ Na wyświetlonej stronie znajduje się tabela podsumowująca sposoby płatności
 
 ### Dodać sposób płatności
 
-Gdy po raz pierwszy zamawiasz produkt OVH, zostaje wyświetlony monit o dodanie sposobu płatności, aby umożliwić automatyczne odnawianie i opłacanie usługi.
+Gdy po raz pierwszy zamawiasz produkt OVHcloud, zostaje wyświetlony monit o dodanie sposobu płatności, aby umożliwić automatyczne odnawianie i opłacanie usługi.
 
 Ten sposób płatności będzie używany domyślnie w przypadku wszystkich odnawianych usług i proponowany przy nowych zakupach.
 
