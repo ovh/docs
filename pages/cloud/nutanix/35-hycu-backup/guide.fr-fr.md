@@ -229,19 +229,19 @@ Cliquez sur `Change Password`{.action} dans le menu `admin`{.action} en haut à 
 
 Saisissez `le mot de passe par défaut`{.action} dans **OLD PASSWORD** , `le nouveau mot de passe`{.action} dans **PASSWORD** et **CONFIRM PASSWORD** ensuite cliquez sur `Save`{.action}.
 
-![Configure HYCU 03](images/03-configurehycu02.png){.thumbnail}
+![Configure HYCU 03](images/03-configurehycu03.png){.thumbnail}
 
 Nous allons connecter HYCU au cluster NUTANIX
 
-Cliquez sur l'icône en forme `d'engrenage`{.action} en haut à droite et choisir `Sources`{.action}
+Cliquez sur l'icône `Administration`{.action} en forme d'engrenage en haut à droite et choisir `Sources`{.action}
 
 ![Configure HYCU 04](images/03-configurehycu04.png){.thumbnail}
 
 Saisissez ces informations:
 
-- URL: `https://url_prism_element_local:9440`{.action}
-- USERNAME: utilisateur créé dans **Prism Element** pour HYCU
-- PASSWORD: mot de passe de l'utilisateur **Prism Element** pour HYCU
+- **URL**: `https://url_prism_element_local:9440`{.action}
+- **USERNAME**: `utilisateur **Prism Element**`{.action} 
+- **PASSWORD**: `mot de passe de l'utilisateur **Prism Element**`{.action} 
 
 Cliquez sur `Next`{.action}
 
@@ -249,9 +249,9 @@ Cliquez sur `Next`{.action}
 
 Saisissez ces informations:
 
-- URL: `https://url_prism_central_local:9440`{.action}
-- USERNAME: `utilisateur de Prism Central`{.action}
-- PASSWORD: `mot de passe de Prism Central`{.action}
+- **URL**: `https://url_prism_central_local:9440`{.action}
+- **USERNAME**: `utilisateur de Prism Central`{.action}
+- **PASSWORD**: `mot de passe de Prism Central`{.action}
 
 Cliquez sur `Next`{.action}.
 
@@ -275,22 +275,22 @@ Saisissez les informations fournies par OVHcloud lors d'un abonnement à **High 
 - Size: `Taille du stockage`{.action}
 - Type: `AWS S3/Compatible`{.action}
 
-faites défilez la fenêtre avec la `barre de défilement`{.action}. 
+Activez `ENABLE COMPRESSION`{.action} et faites défilez la fenêtre avec la `barre de défilement`{.action}. 
 
 ![Configure HYCU 10](images/03-configurehycu10.png){.thumbnail}.
 
 Finalisez la saisie des informations:
 
-- Service ENDPOINT: `URL Stockage S3`{.action}
+- SERVICE ENDPOINT: `URL Stockage S3`{.action}
 - BUCKET NAME: `Nom du bucket`{.action}
 - ACCESS KEY ID: `Clés d'accès au bucket`{.action}
 - SECRET ACCESS KEY `clesecrete`{.action}
 
-Activez la `TARGET ENCRYPTION`{.action} et cliquez sur `Save`{.action}.
+Activez `TARGET ENCRYPTION`{.action} et cliquez sur `Save`{.action}.
 
 ![Configure HYCU 11](images/03-configurehycu11.png){.thumbnail}.
 
-La cible est activée elle est la destination des sauvegardes pour le cluster NUTANIX.
+La cible est activée et est la destination des sauvegardes pour le cluster NUTANIX.
 
 ![Configure HYCU 12](images/03-configurehycu12.png){.thumbnail}.
 
@@ -325,7 +325,7 @@ Cliquez sur `Save`{.action} pour importer l'image et attendez que l'image soit i
 
 Connectez-vous avec un navigateur à l'adresse IP interne ou externe si un redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
-Allez dans la configuration d'HYCU en cliquant sur l'icône en forme `d'engrenage`{.action} et choisir `Power Options`{.action}.
+Allez dans la configuration d'HYCU en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et choisir `Power Options`{.action}.
 
 ![Before Update 01](images/05-beforeupdate01.png){.thumbnail}
  
@@ -333,7 +333,7 @@ Sélectionnez sur `Suspend All`{.action}, cochez sur `AUTO RESUME AFTER`{.action
 
 ![Before Update 02](images/05-beforeupdate02.png){.thumbnail}
 
-Revenez dans le menu de configuration en cliquant sur l'icône en forme `d'engrenage`{.action} et cliquez sur `Software Upgrade`{.action}.
+Revenez dans le menu de configuration en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et cliquez sur `Software Upgrade`{.action}.
 
 ![Update 01](images/06-updatehycu01.png){.thumbnail}
 
@@ -345,7 +345,7 @@ Cliquez sur `Yes`{.action} pour lancer le processus de mise à jour.
 
 ![Update HYCU 03](images/06-updatehycu03.png){.thumbnail}
 
-la mise à jour créée une copie de la machine virtuelle avant de lancer la mise à jour en cas d'un problème de mise à jour.
+la mise à jour éffectue une copie de la machine virtuelle avant de lancer la mise à jour en cas de défaillance de la mise à jour.
 
 ![Update HYCU 04](images/06-updatehycu04.png){.thumbnail}
 
@@ -365,7 +365,7 @@ Restez dans l'interface HYCU.
 
 #### Paramétrage des mots de passe de connexions au machines virtuelles
 
-Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'îcone en forme de `Clé`{.action} en haut à droite de l'interface.
+Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'îcone `Credentials`{.action} en forme de Clé en haut à droite de l'interface.
 
 ![Add credential 01](images/08-addcredential01.png){.thumbnail}
 
@@ -431,11 +431,11 @@ Saisissez ces informations:
 
 Laissez l'option `BACKUP`{.action} cochée et faites défiler la `barre de défilement`{.action} à droite.
 
-![Create Policy for HYCU 01 ](images/09-createpolicyforhycuvm02.png){.thumbnail}
+![Create Policy for HYCU 01 ](images/09-createpolicyforhycuvm01.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![Create Policy for HYCU 02 ](images/09-createpolicyforhycuvm03.png){.thumbnail}
+![Create Policy for HYCU 02 ](images/09-createpolicyforhycuvm02.png){.thumbnail}
 
 Cette stratégie est créée pour la machine virtuelle HYCU. 
 
@@ -475,7 +475,7 @@ Choisissez la stratégie `HYCU VM`{.action} et cliquez sur `Assign`{.action}
 
 ![Affect policy to HYCU VM 02](images/11-addhycuvmtopolicy02.png){.thumbnail}
 
-Sélectionnez quatre machines virtuelles en cliquant à gauche sur les `case à cocher`{.action} à coté de ces machines virtuelles ensuite cliquez sur l'icône `Policies`{.action} en forme de bouclier en haut à droite pour affecter une stratégie.
+Sélectionnez quatre machines virtuelles en cliquant à gauche sur les `cases à cocher`{.action} à coté de ces machines virtuelles ensuite cliquez sur l'icône `Policies`{.action} en forme de bouclier en haut à droite pour affecter une stratégie.
 
 ![Affect policy to HYCU VM 01](images/11-addsomevmtopolicy01.png){.thumbnail}
 
@@ -491,7 +491,7 @@ Allez dans le menu `Dasboard`{.action} à gauche pour afficher le tableau de bor
 
 Allez dans le menu `Jobs`{.action} à gauche pour afficher l'état des travaux.
 
-![Display Dashboard](images/12-jobstates01.png){.thumbnail}
+![Display JobState](images/12-jobstates01.png){.thumbnail}
 
 ### Restauration à partir d'HYCU
 
