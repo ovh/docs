@@ -16,8 +16,8 @@ The purpose of this tutorial is to show how it is possible to train a model in o
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie);
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account;
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - Two [Object Storage containers](https://docs.ovh.com/ie/en/storage/pcs/create-container/) to store the data and the model
 - Your own dataset
@@ -57,6 +57,7 @@ ovhai data upload <region> <container> <paths>
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment. For more information on data, volumes and permissions, see [our guide on data](https://docs.ovh.com/ie/en/publiccloud/ai/cli/access-object-storage-data/).
 
 To be able to use the source code below in this article you have to create 2 Object Storage containers mounted as follows:
+
  - mount point name: `/workspace/data`, permissions: `read & write`
  - mount point name: `/workspace/saved_model`, permissions: `read & write`
  
@@ -71,7 +72,7 @@ ovhai notebook run one-for-all jupyterlab \
   --volume <container@region/prefix:mount_path:permission>
 ```
 
-You can then reach your notebook’s URL once the notebook is Running.
+You can then reach your notebook’s URL once the notebook is running.
 
 ### Cloning the GitHub repository
 

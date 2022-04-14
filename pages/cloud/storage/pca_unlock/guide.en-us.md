@@ -36,7 +36,7 @@ Once the process has started, the date and time your archive will be available i
 
 ![Unfreeze result](images/unfreeze_result.png){.thumbnail}
 
-Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/en/storage/pca/sftp/).
+Your file will be ready for download after this time period. You can then start the download directly in your browser or via a [Swift/SFTP/SCP client](https://docs.ovh.com/us/en/storage/pca/sftp/).
 
 
 ### Unfreezing your object via python-swiftclient

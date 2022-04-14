@@ -10,7 +10,7 @@ order: 2
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 24.11.2021**
+**Letzte Aktualisierung am 14.04.2022**
 
 ## Ziel
 
@@ -83,6 +83,12 @@ Klicken Sie auf die Zeile der betreffenden Regel, um die Details der Snapshot-Pl
 
 Um Ihre [Snapshot-Regeln](#snapshot_policy) zu konfigurieren, gehen Sie zurück zum [Volume-Verwaltungsbereich](#instructions) des Dienstes und öffnen Sie den Tab `Regeln für Snapshots`{.action}.
 
+#### Auflisten und Wiederherstellen von Snapshots <a name="access_snapshots"></a>
+
+Im Kundencenter können Sie erstellte Snapshots nicht einsehen oder wiederherstellen.
+
+Um von Ihrem Mountpunkt aus auf Snapshots zuzugreifen, können Sie die in der [NetApp Dokumentation](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external} aufgeführten Befehle verwenden.
+
 #### Verwaltung der Volume-Zugriffe (ACL) <a name="access_control"></a>
 
 Die Zugriffskontrolle auf Volumes funktioniert über IP-Adressbeschränkungen. Da keine vorkonfiguriert sind, besteht der erste Schritt bei der Erstellung von Volumes in der Definition von IP-Adressen oder IP-Bereichen, denen Zugriff erlaubt werden soll.
@@ -132,6 +138,7 @@ Wenn Sie mit der Enterprise File Storage Lösung nicht noch nicht vertraut sind,
 - [Zugangskontrolle konfigurieren](#access_control)
 - [Snapshot-Policy konfigurieren](#snapshot_policy) (optional)
 - [Snapshot-Policy auf das Volume anwenden](#snapshots) (optional)
+- [Auf Snaphots zugreifen](#access_snapshots) (optional)
 - [Sich anhand der Anweisungen in "Allgemeine Informationen" mit dem Volume verbinden](#modify_volume)
 - [Sich mit der Nutzung von Enterprise File Storage über die API vertraut machen](#gofurther) (optional)
 
