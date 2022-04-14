@@ -3,7 +3,7 @@ title: PostgreSQL - Capabilities and Limitations
 slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 section: PostgreSQL - Guides
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/capabilities/'
 ---
