@@ -64,7 +64,7 @@ OVHcloud Managed Private Registry service provides you a managed, authenticated 
 
 > [!primary]
 >
-> With the `M` and `L` plan, OVHcloud install and maintain for you a vulnerability scanner: [Trivy](https://aquasecurity.github.io/trivy/).
+> With the `M` and `L` plan, OVHcloud installs and maintains a vulnerability scanner for you: [Trivy](https://aquasecurity.github.io/trivy/).
 
 6. Your private registry is being created...
 
