@@ -68,7 +68,7 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 | Uprawnienia | Wybierz poziom spośród następujących: Żaden/Użytkownik/Administrator. |
 | Opis | Tutaj możesz dodać opis użytkownika. Przykład: jego rola w firmie. |
 
-Użytkownik otrzyma własny identyfikator składający się z identyfikatora numerycznego Twojego konta (który możesz sprawdzić w menu „Zarządzanie użytkownikami”) i jego nazwy użytkownika — obie wartości są rozdzielone znakiem „/”.
+Użytkownik otrzyma własny identyfikator składający się z identyfikatora numerycznego Twojego konta (który możesz sprawdzić w menu “Zarządzanie użytkownikami”) i jego nazwy użytkownika — obie wartości są rozdzielone znakiem “/”.
 
 Przykład: **1234-567-89/james.smith**.
 
