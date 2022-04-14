@@ -29,6 +29,7 @@ You can access to the `Object Storage` section of your Public Cloud project on t
 > [!primary]
 >
 > You can upload different types of data: datasets, code, notebooks, connection weights, text or csv files, etc.
+>
 
 To upload your data, go to `Create an object container`.
 
@@ -36,17 +37,16 @@ Let's assume that a file named `my-dataset.zip` exists locally on your computer 
 
 ### 1- Select your solution
 
-> [!warning]
->
-> To use OVHcloud's AI tools, we advise you to use the `standard (swift)` solution, in accordance with the available regions (`GRA` and `BHS`).
+If you want to know more about the different storage solutions, refer to this [page](https://docs.ovh.com/asia/en/storage/).
 
 ![image](images/ui-container-solution.png){.thumbnail}
 
 ### 2- Select a region
 
-> [!warning]
+> [!primary]
 >
-> To be able to use your data with the OVHcloud AI tools, please select `GRA` and `BHS`.
+> To optimize the download and upload times, we advise you to store your data in the same place as your notebook (`GRA` or `BHS`).
+>
 
 ![image](images/ui-container-region.png){.thumbnail}
 
@@ -57,6 +57,7 @@ Choose the type of your data according to what you want to do.
 > [!primary]
 >
 > **Example:** for a dataset that you use to train your model, the `Private` type is appropriate
+>
 
 ![image](images/ui-container-type.png){.thumbnail}
 
@@ -83,6 +84,7 @@ You will now see your `my-dataset.zip` file displayed in your object container.
 > [!primary]
 >
 > You can also create a new empty `my-weights` container in which you can save your **connection weights** (or your **validated model**) at the end of your training.
+>
 
 We assume that we now have two object containers available:
 - `my-dataset`, containing the file `my-dataset.zip`
@@ -100,11 +102,7 @@ For the *first 4 steps* of the notebook creation, please refer to this [tutorial
 
 ### Choose the notebook location
 
-You can choose between *2 datacenters* for the storage of your notebook: `GRA` or `BHS`
-
-> [!warning]
->
-> You have to make sure that the **notebook location** is the same as the **data object containers** you wish to attach.
+You can choose between *2 datacenters* for the storage of your notebook: `GRA` or `BHS`.
 
 ![image](images/ui-notebook-localisation.png){.thumbnail}
 
@@ -147,6 +145,7 @@ The command is as follows:
 > [!warning]
 >
 > To make your command valid don't forget to add a `.git` at the end of the GitHub repository URL.
+>
 
 #### Use cached volumes
 
