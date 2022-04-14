@@ -214,7 +214,7 @@ In my private registry example:
 c18f071c3c8c10ca636ed9be84878c12f3a270b6def131eb756f69435b978da1
 </code></pre>
 
-And now you can test it with `curl` command:
+And now you can test it with the `curl` command:
 
 ```bash
 $ curl localhost:8080

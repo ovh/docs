@@ -57,7 +57,7 @@ Why?
 
 Because, behind the scenes, the "OVH Terraform provider" is doing requests to OVHcloud APIs. 
 
-In order to retrieve this necessary information, please follow [First steps with the OVHcloud APIs](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/) tutorial.
+In order to retrieve this necessary information, please follow the [First steps with the OVHcloud APIs](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/) tutorial.
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
@@ -189,7 +189,7 @@ output "password" {
 
 > [!primary]
 >
-> We specified that the password output is a sensitive data, so it will be censored during the `terraform apply` but you can retrieve it with the `terraform output` command as we will show you in this guide.
+> We specified that the password output is sensitive data, so it will be censored during the `terraform apply` but you can retrieve it with the `terraform output` command as we will show you in this guide.
 
 With this output, we tell Terraform to retrieve the URL of this registry to access to it, moreover the user login and the generated password.
 
