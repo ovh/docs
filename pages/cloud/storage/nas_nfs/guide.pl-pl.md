@@ -24,7 +24,7 @@ Kompatybilność: Debian & Ubuntu
 Aby zamontować zasób NFS pod Linuxem:
 
 - Zaloguj się do serwera przez SSH
-- Zainstaluj pakiet „nfs-client” przy użyciu polecenia:
+- Zainstaluj pakiet “nfs-client” przy użyciu polecenia:
 
 
 ```sh
@@ -112,7 +112,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 Aby zamontować zasób NFS pod Gentoo:
 
 - Zaloguj się do serwera przez SSH
-- Zainstaluj pakiet „nfs-utils” przy użyciu polecenia:
+- Zainstaluj pakiet “nfs-utils” przy użyciu polecenia:
 
 
 ```sh
