@@ -48,7 +48,7 @@ Please follow the official [PostgreSQL](https://www.php.net/manual/en/book.pgsql
 
 If you can edit your PHP environment on your own, install extensions and libraries as detailed in the documentation page linked above.
 
-On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/pl/hosting/how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+On the contrary, if you benefit from a managed web hosting solution, such as **OVHcloud Web Hosting offers**, you need to activate the right PHP version on your web hosting plan. You can find [a guide about modifying your PHP version for OVHcloud Web Hosting here](https://docs.ovh.com/pl/hosting/konfiguracja_php_na_hostingu_www_ovh_2014/).
 
 We are now ready to learn how to connect to our PostgreSQL instance.
 
