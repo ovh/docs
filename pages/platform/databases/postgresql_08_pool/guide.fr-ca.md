@@ -27,7 +27,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 Connection pooling allows you to maintain very large numbers of connections to a database while minimizing the consumption of server resources.
 
-### Why connection pooling ?
+### Why connection pooling?
 
 Eventually a high number of backend connections becomes a problem with PostgreSQL as the resource cost per connection is quite high due to the way PostgreSQL manages client connections. PostgreSQL creates a separate backend process for each connection and the unnecessary memory usage caused by the processes will start hurting the total throughput of the system at some point. Also, if each connection is very active, the performance can be affected by the high number of parallel executing tasks.
 
@@ -47,36 +47,37 @@ It makes sense to have enough connections so that each CPU core on the server ha
 
 - **Statement pooling:** A server connection is assigned to the client application for each statement. When the statement completes, the server connection is returned into the pool. Multi-statement transactions are not permitted for this mode.
 
-## Introductions
+## Instructions
 
 ### Create a connection pool
 
 To create a new connection pool, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) and open your `Public Cloud`{.action} project.
+
 Click on `Databases`{.action} in the left-hand navigation bar and select your PostgreSQL instance, then select the `Pools`{.action} tab.
 Click on `Add a pool`{.action}, and fill the form.
 
 The settings available are:
 
-- **Pool name:** Enter a name for your connection pool here.This will also become the "database" or "dbname" connection parameter for your pooled client connections.
-- **Database:** Choose the database that you want to connect to. Each pool can only connect to a single database.
-- **Pool Mode:** Select the pooling mode.
-- **Pool Size:** Select how many PostgreSQL server connections this pool can use at a time.
-- **Username:** Select the database username that you want to use when connecting to the backend database.
+- **Pool name**: Enter a name for your connection pool here.This will also become the "database" or "dbname" connection parameter for your pooled client connections.
+- **Database**: Choose the database that you want to connect to. Each pool can only connect to a single database.
+- **Pool Mode**: Select the pooling mode.
+- **Pool Size**: Select how many PostgreSQL server connections this pool can use at a time.
+- **Username**: Select the database username that you want to use when connecting to the backend database.
 
 ![Add a pool](images/postgresql_08_pool-20220411131919759.png){.thumbnail}
 
 > [!primary]
 >
-> You can edit, delete and access informations about the pool by clicking on `...`{.action} to the right of the pool.
+> You can edit, delete and access information about the pool by clicking on `...`{.action} to the right of the pool.
 >
 
 ### Connect to a connection pool
 
-To establish a connection, get informations about the pool:
+To establish a connection, get information about the pool:
 
 ![Pools](images/postgresql_08_pool-20220411134051260.png){.thumbnail}
 
-Click on `information`{.action}, then collect the required informations
+Click on `Information`{.action}, then collect the required information.
 
 ![Pool informations](images/postgresql_08_pool-2022041113491326.png){.thumbnail}
 
@@ -96,7 +97,7 @@ From terminal 2:
 $ psql "postgres://avnadmin:xxxxxxxxxxxxxxxxxxxxx@postgresql-b412100d-o2626ab53.database.cloud.ovh.net:20185/pgpool?sslmode=require"
 ```
 
-We have two open client connections to the pool. Let's verify that each connection is able access the database:
+We have two open client connections to the pool. Let's verify that each connection is able to access the database:
 
 Terminal 1:
 

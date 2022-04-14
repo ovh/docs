@@ -48,7 +48,7 @@ You should have at least one wordpress Helm chart in your Private Registry:
 
 We (the OVHcloud Managed Kubernetes Service team) are working on a patch to be released in early 2022. In the meantime, please remove the default storage class and install the new one.
 
-- Delete the concerned `StorageClass` that you are using by default 
+- Delete the concerned `StorageClass` that you are using by default
 
 ```bash
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
@@ -109,7 +109,7 @@ In this step you are going to deploy a chart from your OVHcloud Managed Private 
 
 As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing Helm](../../kubernetes/installing-helm/) guide for more information if needed).
 
-Run command `helm version` to make sure the `helm` CLI is correctly installed locally.
+Run the command `helm version` to make sure the `helm` CLI is correctly installed locally.
 
 <pre class="console"><code>$ helm version
 version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec6373570374ce770b", GitTreeState:"clean", GoVersion:"go1.17"}
@@ -220,7 +220,7 @@ To access your WordPress site from outside the cluster follow the steps below:
   echo Password: $(kubectl get secret --namespace default wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 </code></pre>
 
-Check your Wordpress is running correctly:
+Check your WordPress is running correctly:
 
 <pre class="console"><code>$ kubectl get pod -l app.kubernetes.io/instance=wordpress
 NAME                         READY   STATUS    RESTARTS   AGE
@@ -230,6 +230,6 @@ wordpress-mariadb-0          1/1     Running   0          85s
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
+To have an overview of the OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
 
 Join our community of users on https://community.ovh.com/en/.
