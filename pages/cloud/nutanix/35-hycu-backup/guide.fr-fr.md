@@ -53,7 +53,7 @@ Sélectionnez `URL`{.action}, saisissez l'URL de l'image qcow2 de la dernière v
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-'4.3.0-4122`{.action}, saissisez une `description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saissisez une `description`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Image HYCU 04](images/00-addimagehycu04.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Cliquez sur `Cluster Details`{.action}.
 
 ![Configure ISCSI 03](images/00-configureiscsi03.png){.thumbnail}
 
-Saisissez `une adresse IP non utilisée`{.action} sur le réseau local et cliquez sur `Save`{.action}.
+Saisissez `une adresse IP locale non utilisée`{.action} dans **Virtual IP** et cliquez sur `Save`{.action}.
 
 ![Configure ISCSI 04](images/00-configureiscsi04.png){.thumbnail}
 
@@ -129,7 +129,13 @@ Cliquez sur `Create VM`{.action}.
 
 ![Create HYCUVM 02](images/02-createhycuvm02.png){.thumbnail}
 
-Nommez la machine virtuelle dans `Name`{.action} , Modifiez les propriétés de la machine virtuelle avec  `4 vCPU, 2 coeurs et 8 Gb`{.action} ensuite cliquez sur `Next`{.action}.
+Nommez la machine virtuelle dans `Name`{.action}, modifiez les propriétés de la machine virtuelle avec ces paramètres:
+
+- **CPU**:  `4 vCPU`{.action}
+- **Cores Per CPU**: `2 Cores`{.action}
+- **Memory**: `8GB`{.action}
+
+Cliquez sur `Next`{.action}.
 
 ![Create HYCUVM 03](images/02-createhycuvm03.png){.thumbnail}
 
@@ -137,7 +143,13 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Create HYCUVM 04](images/02-createhycuvm04.png){.thumbnail}
 
-Choisissez `Disk`{.action} dans **Type**,  `Clone from Image`{.action} pour **Operation** et `hycu-4.3.0-4122`{.action} sur **Image** . Cliquez sur `Save`{.action}
+Saisissez ces informations:
+
+- **Type**: `Disk`{.action}
+- **Operation**: `Clone from Image`{.action}
+- **Image**: `hycu-4.3.0-4122`{.action}
+
+Cliquez sur `Save`{.action}
 
 ![Create HYCUVM 05](images/02-createhycuvm05.png){.thumbnail}
 
@@ -145,7 +157,14 @@ Cliquez sur `Attach Disk`{.action}
 
 ![Create HYCUVM 06](images/02-createhycuvm06.png){.thumbnail}
 
-Choisissez `Disk`{.action} dans **Type**, `Allocate on Storage Container`{.action} pour **Operation** et `default-container`{.action} sur **Storage Container** . Changez la taille à dans capacity à `32Gib`{.action} et cliquez sur `Save`{.action}.
+Choisissez ces options:
+
+- **Type**: `Disk`{.action}
+- **Operation**: `Allocate on Storage Container`{.action}
+- **Image**: `default-container`{.action}
+- **Capacity**: `32Gib`{.action}
+
+Cliquez sur `Save`{.action}.
 
 ![Create HYCUVM 07](images/02-createhycuvm07.png){.thumbnail}
 
@@ -161,9 +180,7 @@ Cliquez sur `Next`{.action}
 
 ![Create HYCUVM 10](images/02-createhycuvm10.png){.thumbnail}
 
-Modifiez les options de **Guest Customization** avec `Cloud-init (Linux)`{.action} dans **Script Type** et `Custom Script`{.action} pour **Configuration Method**.
-
-Modifiez ce script avec ces valeurs:
+Créer un fiche **yaml** avec ces valeurs:
 
 - < Adresse IP > par l'adresse IP locale du cluster.
 - < GATEWAY > par la passerelle locale du cluster pour aller sur Internet.
@@ -174,8 +191,9 @@ Modifiez ce script avec ces valeurs:
 bootcmd:
 - /opt/grizzly/bin/cloud_init_setup.sh hycubc < Adresse IP > < GATEWAY >  < DNS > "hycu.local,ntnx.local"
 ```
+Modifiez les options de **Guest Customization** avec `Cloud-init (Linux)`{.action} dans **Script Type** et `Custom Script`{.action} pour **Configuration Method**.
 
-Copiez `le contenu du script`{.action} et collez-le à l'emplacement réservé pour le script au dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
+Copiez `le contenu du script yaml`{.action} et collez-le à l'emplacement réservé pour le script au dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
 
 ![Create HYCUVM 11](images/02-createhycuvm11.png){.thumbnail}
 
@@ -201,23 +219,23 @@ Connectez vous avec un navigateur WEB à l'adresse IP interne ou externe si un r
 
 Saisissez `le mot de passe par défaut`{.action} et cliquez sur `Sign In`{.action}.
 
-![Configure HYCU 01](images/02-configurehycu01.png){.thumbnail}
+![Configure HYCU 01](images/03-configurehycu01.png){.thumbnail}
 
 Changez le mot de passe de connexion pour plus de sécurité.
 
 Cliquez sur `Change Password`{.action} dans le menu `admin`{.action} en haut à droite de l'interface.
 
-![Configure HYCU 02](images/02-configurehycu02.png){.thumbnail}
+![Configure HYCU 02](images/03-configurehycu02.png){.thumbnail}
 
 Saisissez `le mot de passe par défaut`{.action} dans **OLD PASSWORD** , `le nouveau mot de passe`{.action} dans **PASSWORD** et **CONFIRM PASSWORD** ensuite cliquez sur `Save`{.action}.
 
-![Configure HYCU 03](images/02-configurehycu02.png){.thumbnail}
+![Configure HYCU 03](images/03-configurehycu02.png){.thumbnail}
 
 Nous allons connecter HYCU au cluster NUTANIX
 
 Cliquez sur l'icône en forme `d'engrenage`{.action} en haut à droite et choisir `Sources`{.action}
 
-![Configure HYCU 04](images/02-configurehycu04.png){.thumbnail}
+![Configure HYCU 04](images/03-configurehycu04.png){.thumbnail}
 
 Saisissez ces informations:
 
