@@ -277,36 +277,134 @@ HYCU fournie régulierement des mises à jours voici le processus de mise à jou
 
 #### Ajout des sources d'HYCU
 
-Cliquez sur 
+Au travers du menu principal de ** Prism Central cliquez sur `Images`{.action} depuis le menu `Compute & Storage`{.action}
 
+![Add Image HYCU for update 01](images/04-addimageforupdate01.png){.thumbnail}
 
+Cliquez sur `Add Image`{.action}`.
 
+![Add Image HYCU for update 02](images/04-addimageforupdate02.png){.thumbnail}
 
+Sélectionnez `URL`{.action}` saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple 
+`https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2` et cliquez sur `Upload file`{.action}.
 
+![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
+Enlevez l'extension .qcow2 derrière le nom `hycu-'4.3.1-616`{.action} saissisez une `Description`{.action} et cliquez sur `Next`{.action}.
 
+![Add Image HYCU for update 04](images/04-addimageforupdate04.png){.thumbnail}
 
+Cliquez sur `Save`{.action} pour importer l'image et attendez que l'image soit importée.
 
+![Add Image HYCU for update 05](images/04-addimageforupdate05.png){.thumbnail}
 
+#### Lancement de la mise à jour à partir d'HYCU
 
+Connectez-vous avec un navigateur à l'adresse IP interne ou externe si un redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
+Allez dans la configuration d'HYCU en cliquant sur l'icône en forme `d'engrenage`{.action} et choisir `Power Options`{.action}.
 
+![Before Update 01](images/05-beforeupdate01.png){.thumbnail}
+ 
+Séléctionnez sur `Suspend All`{.action}, cochez sur `AUTO RESUME AFTER`{.action} , laissez `1`{.action}  à Hours et cliquez sur `Save`{.action}.
 
+![Before Update 02](images/05-beforeupdate02.png){.thumbnail}
 
+Revenez dans le menu de configuration en cliquant sur l'icône en forme `d'engrenage`{.action} et cliquez sur `Software Upgrade`{.action}.
 
+![Update 01](images/06-updatehycu01.png){.thumbnail}
 
+Choisissez la `Dernière version`{.action} dans **AVAILABLE VERSIONS** et cliquez sur `Software Upgrade`{.action}.
 
+![Update HYCU 02](images/06-updatehycu02.png){.thumbnail}
 
-### Mise à jour d'HYCU
+Cliquez sur `Yes`{.action} pour lancer le processus de mise à jour.
 
-Installer l'image
+![Update HYCU 03](images/06-updatehycu03.png){.thumbnail}
 
-Lancer la mise à jour à partir d'HYCU
+Lors du processus de mise à jour une sauvegarde d'une machine virtuelle est créée, et il est possible de revenir en arrière en cas d'échec de la mise à jour.
 
+![Update HYCU 04](images/06-updatehycu04.png){.thumbnail}
 
+Reconnectez-vous à HYCU. 
 
+Allez dans les paramètres en cliquant sur l'icône en forme `d'engrenage`{.action} et cliquez sur `Power Options`{.action}.
+
+![After Update 01](images/07-afterupdate01.png){.thumbnail}
+
+Décochez `Suspend All`{.action} et cliquez sur `Save`{.action}.
 
 ### Configuration de la sauvegarde
+
+Restez dans l'interface HYCU.
+
+#### Paramétrage des mots de passe de connexions au machines virtuelles
+
+Connectez-vous sur les machines virtuelles en cliquant à gauche sur l'îcone `machines virtuelles`{.action} et cliquez sur l'îcone en forme de `Clé`{.action}
+
+![Add credential 01](images/08-addcredential01.png){.thumbnail}
+
+Cliquez sur le signe `+`{.action}.
+
+![Add credential 02](images/08-addcredential02.png){.thumbnail}
+
+Saisissez ces valeurs:
+
+- NAME: `Nom du stockage de mot de passe`{.action}
+- PROTOCOL: `AUTOMATIC`{.action}
+- USERNAME: `compte utilisateur de la machine virtuelle`{.action}
+- PASSWORD `mot de passe`{.action}
+
+Cliquez sur `Save`{.action}
+
+![Add credential 03](images/08-addcredential03.png){.thumbnail}
+
+Cliquez sur le signe `+`{.action} pour rajouter un autre compte.
+
+![Add credential 04](images/08-addcredential04.png){.thumbnail}
+
+Saisissez ces valeurs:
+
+- NAME: `Nom du stockage de mot de passe`{.action}
+- PROTOCOL: `AUTOMATIC`{.action}
+- USERNAME: `compte utilisateur de la machine virtuelle`{.action}
+- PASSWORD `mot de passe`{.action}
+
+Cliquez sur `Save`{.action}
+
+![Add credential 05](images/08-addcredential05.png){.thumbnail}
+
+Cliquez sur `Close`{.action}
+
+Sélectionnez les machines virtuelles qui vont utiliser un mot de passe en cochant `la case à cocher`{.action} à droite de la machine virtuelle et cliquez sur l'icône en forme de `Clé`{.action}.
+
+![Add vm to credential 01](images/08-addvmtocredential01.png){.thumbnail}
+
+Sélectionnez dans NAME le `mot de passe`{.action} et cliquez sur `Assign`{.action}.
+
+![Add vm to credential 02](images/08-addvmtocredential02.png){.thumbnail}
+
+Sélectionnez une autre machine virtuelle qui va utiliser un mot de passe en cochant `la case à cocher`{.action} à droite de la machine virtuelle et cliquez sur l'icône en forme de `Clé`{.action}.
+
+![Add vm to credential 03](images/08-addvmtocredential03.png){.thumbnail}
+
+Sélectionnez dans NAME le `mot de passe`{.action} et cliquez sur `Assign`{.action}.
+
+![Add vm to credential 04](images/08-addvmtocredential04.png){.thumbnail}
+
+#### Création des stratégies de sauvegardes
+
+Cliquez sur l'îcone 
+
+
+
+
+
+
+
+
+
+
 
 ### test de restauration
 
