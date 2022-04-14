@@ -63,7 +63,7 @@ Cliquez sur `Save`{.action} pour importer l'image.
 
 Cliquez sur `nom du cluster`{.action} aller sur **Prism Element**.
 
-![Configure ISCSI 01](images/00-configurureiscsi01.png){.thumbnail}
+![Configure ISCSI 01](images/00-configureiscsi01.png){.thumbnail}
 
 #### Configuration adresse IP pour ISCSI
 
