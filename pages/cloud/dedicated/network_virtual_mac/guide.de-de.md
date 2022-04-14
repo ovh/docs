@@ -37,11 +37,11 @@ Suchen Sie nun in der Liste nach Ihrer Failover-IP (oder Ihrem Block) und klicke
 
 ![IPFO](images/addvmac.png){.thumbnail}
 
-Wenn das Dialogfeld „Virtuelle MAC-Adresse hinzufügen“ erscheint, wählen Sie einen Typ in der Drop-down-Liste aus, geben Sie den Namen einer virtuellen Maschine ein und klicken Sie anschließend auf `Bestätigen`{.action}.
+Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen Sie einen Typ in der Drop-down-Liste aus, geben Sie den Namen einer virtuellen Maschine ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
 > [!primary]
 >
-> **Typ**: Hierbei handelt es sich um den Typ der virtuellen MAC-Adresse („VMware“ ist eine MAC-Adresse für das System VMware ESXi und „OVH“ ist die passende Adresse für andere Arten von Virtualisierungssystemen).
+> **Typ**: Hierbei handelt es sich um den Typ der virtuellen MAC-Adresse (“VMware” ist eine MAC-Adresse für das System VMware ESXi und “OVH” ist die passende Adresse für andere Arten von Virtualisierungssystemen).
 >
 > **Name der virtuellen Maschine**: Das ist der gewünschte Name für die virtuelle MAC-Adresse, damit das IP/MAC-Paar später einfacher gefunden werden kann.
 >

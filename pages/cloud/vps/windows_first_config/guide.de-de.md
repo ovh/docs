@@ -62,4 +62,4 @@ Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

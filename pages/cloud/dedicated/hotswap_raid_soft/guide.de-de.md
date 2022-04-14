@@ -18,7 +18,7 @@ Wenn eine Festplatte Ihres Servers nicht mehr funktioniert, können Sie diese im
 - Sie verfügen über einen mHG, HG oder BHG Server.
 - Sie haben ein Software-RAID (mit LSI-Karte).
 - Sie haben Zugriff via SSH (Linux) oder RDP (Windows).
-- Sie haben das Tool „sas2ircu“ installiert (Sie finden dieses über die Suchmaschine [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
+- Sie haben das Tool “sas2ircu” installiert (Sie finden dieses über die Suchmaschine [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}).
 
 ## Beschreibung
 
@@ -28,7 +28,7 @@ Wenn eine Festplatte Ihres Servers nicht mehr funktioniert, können Sie diese im
 
 Wir gehen in dieser Anleitung zunächst davon aus, dass wir einen Alarm für die Festpatte `/dev/sdb` erhalten haben. Sie ist defekt und wir möchten sie ersetzen. **Passen Sie die Elemente dieser Anleitung entsprechend Ihrer Situation an.**
 
-Überprüfen Sie zuerst die „**Serial Number**“ der betreffenden Festplatte.
+Überprüfen Sie zuerst die “**Serial Number**” der betreffenden Festplatte.
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb
@@ -93,10 +93,10 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 
 Hier sehen Sie, dass: 
 
-- die Festplatte „**sdb**“ aufgrund nicht korrigierter Fehler („uncorrected errors“) fehlerhaft ist,
-- die „**Serial Number**“ der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.
+- die Festplatte “**sdb**” aufgrund nicht korrigierter Fehler (“uncorrected errors”) fehlerhaft ist,
+- die “**Serial Number**” der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.
 
-Um nur die „**Serial Number**“ zu erhalten, verwenden Sie folgenden Befehl:
+Um nur die “**Serial Number**” zu erhalten, verwenden Sie folgenden Befehl:
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
@@ -105,7 +105,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 
 #### Schritt 2: Position der Festplatte ermitteln
 
-Als Nächstes müssen die „**Slot ID**“ und die „**Enclosure ID**“ der betreffenden Festplatte ermittelt werden. Verwenden Sie hierfür das zuvor installierte Tool „sas2ircu“.
+Als Nächstes müssen die “**Slot ID**” und die “**Enclosure ID**” der betreffenden Festplatte ermittelt werden. Verwenden Sie hierfür das zuvor installierte Tool “sas2ircu”.
 
 Überprüfen Sie zunächst, dass alle Festplatten korrekt über eine LSI-Karte verbunden sind.
 
@@ -132,7 +132,7 @@ root@ns3054662:/home# ./sas2ircu list
 
 Der Index entspricht der ID. In unserem Beispiel ist der Index/die ID 0.
 
-Mit dieser Information können Sie jetzt für die betreffende Festplatte (mithilfe ihrer „**Serial Number**“) die „**Slot ID**“ und die „**Enclosure ID**“ ermitteln.
+Mit dieser Information können Sie jetzt für die betreffende Festplatte (mithilfe ihrer “**Serial Number**”) die “**Slot ID**” und die “**Enclosure ID**” ermitteln.
 
 ```sh
 root@ns3054662:/home# ./sas2ircu 0 display | grep -B 7 -A 2 K4GW439B
@@ -148,9 +148,9 @@ root@ns3054662:/home# ./sas2ircu 0 display | grep -B 7 -A 2 K4GW439B
 >>>   Drive Type                              : SAS_HDD
 ```
 
-Mit diesem Befehl erhalten Sie die Festplatteninformationen, darunter die „**Serial Number**“, hier K4GW439B.
+Mit diesem Befehl erhalten Sie die Festplatteninformationen, darunter die “**Serial Number**”, hier K4GW439B.
 
-Wir haben also nun die „**Enclosure ID**“ (1) und die „**Slot ID**“ (3) ermittelt.
+Wir haben also nun die “**Enclosure ID**” (1) und die “**Slot ID**” (3) ermittelt.
 
 #### Schritt 3: LED der Festplatte anschalten
 
@@ -167,11 +167,11 @@ root@ns3054662:/home# ./sas2ircu 0 locate 1:3 on
 >>> SAS2IRCU: Utility Completed Successfully.
 ```
 
-Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl „on“ durch „off“ ersetzen.
+Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl “on” durch “off” ersetzen.
 
 #### Schritt 4: Fehlerhafte Festplatte aus dem RAID entfernen
 
-Ist das noch nicht der Fall, dann versetzen Sie die Festplatte in den Status „**Faulty**“. Sehen Sie sich anschließend den RAID-Status an.
+Ist das noch nicht der Fall, dann versetzen Sie die Festplatte in den Status “**Faulty**”. Sehen Sie sich anschließend den RAID-Status an.
 
 ```sh
 root@ns3054662:/home# cat /proc/mdstat
@@ -186,7 +186,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Im vorliegenden Beispiel gehört die defekte Festplatte zu md1 und md2 (sbd1 und sbd2). Wir werden diese also nun in den „**Faulty**“-Status versetzen, d. h. jeweils sdb1 in md1 und sdb2 in md2.
+Im vorliegenden Beispiel gehört die defekte Festplatte zu md1 und md2 (sbd1 und sbd2). Wir werden diese also nun in den “**Faulty**”-Status versetzen, d. h. jeweils sdb1 in md1 und sdb2 in md2.
 
 ```sh
 root@ns3054662:/home# mdadm --manage /dev/md1 --set-faulty /dev/sdb1
@@ -253,18 +253,18 @@ Wir gehen in dieser Anleitung zunächst davon aus, dass wir einen Alarm für die
 > Es ist wichtig, dass Sie die Kommandozeile als Administrator ausführen, damit Sie keine Fehler erhalten.
 > 
 
-Überprüfen Sie zuerst die „**Serial Number**“ der betreffenden Festplatte. **Im unten stehenden Screenshot ist der Speicher eigentlich nicht fehlerhaft. Wie werden jedoch so fortfahren, als wäre das der Fall.**
+Überprüfen Sie zuerst die “**Serial Number**” der betreffenden Festplatte. **Im unten stehenden Screenshot ist der Speicher eigentlich nicht fehlerhaft. Wie werden jedoch so fortfahren, als wäre das der Fall.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
 Hier sehen Sie, dass: 
 
-- die Festplatte „**sdb**“ aufgrund nicht korrigierter Fehler („uncorrected errors“) fehlerhaft ist,
-- die „**Serial Number**“ der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.
+- die Festplatte “**sdb**” aufgrund nicht korrigierter Fehler (“uncorrected errors”) fehlerhaft ist,
+- die “**Serial Number**” der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.
 
 #### Schritt 2: Position der Festplatte ermitteln
 
-Als Nächstes müssen die „**Slot ID**“ und die „**Enclosure ID**“ der betreffenden Festplatte ermittelt werden. Verwenden Sie hierfür das zuvor installierte Tool „sas2ircu“.
+Als Nächstes müssen die “**Slot ID**” und die “**Enclosure ID**” der betreffenden Festplatte ermittelt werden. Verwenden Sie hierfür das zuvor installierte Tool “sas2ircu”.
 
 Ermitteln Sie zunächst die ID der LSI-Karte.
 
@@ -272,13 +272,13 @@ Ermitteln Sie zunächst die ID der LSI-Karte.
 
 In unserem Beispiel hat die LSI-Karte den Index/die ID 0.
 
-Mit dieser Information können Sie jetzt für die betreffende Festplatte (mithilfe ihrer „**Serial Number**“) die „**Slot ID**“ und die „**Enclosure ID**“ ermitteln.
+Mit dieser Information können Sie jetzt für die betreffende Festplatte (mithilfe ihrer “**Serial Number**”) die “**Slot ID**” und die “**Enclosure ID**” ermitteln.
 
 ![select-string](images/select-string.png){.thumbnail}
 
-Mit diesem Befehl erhalten Sie die Festplatteninformationen, darunter die „**Serial Number**“, hier K4G187WB.
+Mit diesem Befehl erhalten Sie die Festplatteninformationen, darunter die “**Serial Number**”, hier K4G187WB.
 
-Wir haben also nun die „**Enclosure ID**“ (1) und die „**Slot ID**“ (1) ermittelt.
+Wir haben also nun die “**Enclosure ID**” (1) und die “**Slot ID**” (1) ermittelt.
 
 #### Schritt 3: LED der Festplatte anschalten
 
@@ -286,11 +286,11 @@ Verwenden Sie die in den vorherigen Schritten ermittelten Informationen, um die 
 
 ![locate](images/locate.png){.thumbnail}
 
-Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl „on“ durch „off“ ersetzen.
+Sie können das Blinken der Festplatte deaktivieren, indem Sie im Befehl “on” durch “off” ersetzen.
 
 #### Schritt 4: Fehlerhafte Festplatte aus dem RAID entfernen
 
-Führen Sie diese Aktion über das Interface „**Datenträgerverwaltung**“ Ihres Windows Servers aus.
+Führen Sie diese Aktion über das Interface “**Datenträgerverwaltung**” Ihres Windows Servers aus.
 
 Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetauscht werden. Nachdem der Vorgang abgeschlossen ist, muss das RAID nur erneut synchronisiert werden. Verwenden Sie hierzu folgende Dokumentation: [Software-RAID](https://docs.ovh.com/de/dedicated/soft-raid/){.external}.
 
