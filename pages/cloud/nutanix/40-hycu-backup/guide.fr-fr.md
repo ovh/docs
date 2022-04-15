@@ -71,9 +71,11 @@ Allez dans les paramètres en cliquant sur l'icône représentant un `engrenage`
 
 ![Configure ISCSI 02](images/00-configureiscsi02.png){.thumbnail}
 
+
 Cliquez sur `Cluster Details`{.action}.
 
 ![Configure ISCSI 03](images/00-configureiscsi03.png){.thumbnail}
+
 
 Saisissez `une adresse IP locale non utilisée`{.action} dans **Virtual IP** et cliquez sur `Save`{.action}.
 
@@ -129,7 +131,7 @@ Cliquez sur `Create VM`{.action}.
 
 ![Create HYCUVM 02](images/02-createhycuvm02.png){.thumbnail}
 
-Nommez la machine virtuelle dans `Name`{.action}, modifiez les propriétés de la machine virtuelle avec ces paramètres:
+Nommez la machine virtuelle dans `Name`{.action} et modifiez les propriétés de la machine virtuelle avec ces paramètres:
 
 - **CPU** :  `4 vCPU`{.action}
 - **Cores Per CPU** : `2 Cores`{.action}
@@ -180,11 +182,11 @@ Cliquez sur `Next`{.action}
 
 ![Create HYCUVM 10](images/02-createhycuvm10.png){.thumbnail}
 
-Créer un fiche **yaml** avec ces valeurs :
+Créer un fiche **yaml** en modifiant ces valeurs :
 
-- < Adresse IP > par l'adresse IP locale du cluster.
-- < GATEWAY > par la passerelle locale du cluster pour aller sur Internet.
-- < DNS > par le DNS utilisé sur Internet.
+- **< Adresse IP >** : Adresse IP locale du cluster.
+- **< GATEWAY >** : Passerelle locale du cluster pour aller sur Internet.
+- **< DNS >** : DNS utilisé sur Internet.
 
 ```yaml
 #cloud-config
@@ -193,7 +195,7 @@ bootcmd:
 ```
 Modifiez les options de **Guest Customization** avec `Cloud-init (Linux)`{.action} dans **Script Type** et `Custom Script`{.action} pour **Configuration Method**.
 
-Copiez `le contenu du script yaml`{.action} et collez-le à l'emplacement réservé pour le script au-dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
+Copiez `le contenu du script yaml`{.action} et collez-le à `l'emplacement réservé`{.action} au-dessous de **Clear Script**, ensuite cliquez sur `Next`{.action}.
 
 ![Create HYCUVM 11](images/02-createhycuvm11.png){.thumbnail}
 
@@ -237,7 +239,7 @@ Cliquez sur l'icône `Administration`{.action} en forme d'engrenage en haut à d
 
 ![Configure HYCU 04](images/03-configurehycu04.png){.thumbnail}
 
-Saisissez ces informations :
+Saisissez les informations concernant **Prism Element** :
 
 - **URL** : `https://url_prism_element_local:9440`{.action}
 - **USERNAME** : `utilisateur **Prism Element**`{.action} 
@@ -247,7 +249,7 @@ Cliquez sur `Next`{.action}
 
 ![Configure HYCU 05](images/03-configurehycu05.png){.thumbnail}
 
-Saisissez ces informations :
+Saisissez ces informations concernant **Prism Central** :
 
 - **URL** : `https://url_prism_central_local:9440`{.action}
 - **USERNAME** : `utilisateur de Prism Central`{.action}
@@ -290,7 +292,7 @@ Activez `TARGET ENCRYPTION`{.action} et cliquez sur `Save`{.action}.
 
 ![Configure HYCU 11](images/03-configurehycu11.png){.thumbnail}.
 
-La cible est activée et est la destination des sauvegardes pour le cluster NUTANIX.
+La cible est activée pour les sauvegardes du cluster NUTANIX.
 
 ![Configure HYCU 12](images/03-configurehycu12.png){.thumbnail}.
 
@@ -308,8 +310,11 @@ Cliquez sur `Add Image`{.action}`.
 
 ![Add Image HYCU for update 02](images/04-addimageforupdate02.png){.thumbnail}
 
-Sélectionnez `URL`{.action}` saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple. 
-`https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2` et cliquez sur `Upload file`{.action}.
+Sélectionnez `URL`{.action}`. 
+
+Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple. `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`. 
+
+Cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
