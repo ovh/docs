@@ -13,7 +13,7 @@ routes:
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases' m3db offer.
+This page provides the technical capabilities and limitations of the Public Cloud Databases m3db offer.
 We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
@@ -60,9 +60,9 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### Nodes and replicas
 
-- **Essential**: the cluster can support at most one node.
-- **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Essential**: The cluster can support at most one node.
+- **Business**: The cluster is delivered with 2 nodes by default. Adding read replicas is planned.
+- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -118,18 +118,15 @@ When using private networking, some network ports get created in the private net
 
 Ingress and Egress traffic are included in the service plans and unmetered.
 
-
-
 #### Logs and metrics
 
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
-
 
 ## We want your feedback!
 

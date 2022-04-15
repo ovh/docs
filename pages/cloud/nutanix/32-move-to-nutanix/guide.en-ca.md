@@ -30,7 +30,7 @@ Nutanix provides a tool called **Nutanix Move** that allows migrations from othe
 
 ## Nutanix Move Overview
 
-**Nutanix Move** is a tool that allows virtual machine migrations from **VMware ESXI**, **Hyper-V**, **Azure** and **AWS** to ** **AHV**.
+**Nutanix Move** is a tool that allows virtual machine migrations from **VMware ESXI**, **Hyper-V**, **Azure** and **AWS** to **AHV**.
 
 It can also be used to migrate from Nutanix **AHV** to **AWS**.
 
@@ -94,7 +94,7 @@ From a Windows virtual machine in the Hyper-V environment, double-click `Nutanix
 
 ![Installing guest driver 01](images/VirtioGuestInstall01.PNG){.thumbnail}
 
-Read the licence terms and conditions, accept them by ticking the box and then click `Install`{.action}
+Read the licence terms and conditions, accept them by ticking the box and then click `Install`{.action}.
 
 ![Installing guest driver 02](images/VirtioGuestInstall02.PNG){.thumbnail}
 
@@ -180,7 +180,7 @@ The virtual machine is started and an IP address is obtained if a **DHCP** serve
 
 ![Move Install 14](images/MoveInstall14.PNG){.thumbnail}
 
-This installation of **Nutanix Move** is done on a network that has a DHCP server, but it is possible to configure the virtual machine on a network without a **DHCP server** . 
+This installation of **Nutanix Move** is done on a network that has a DHCP server, but it is possible to configure the virtual machine on a network without a **DHCP server**. 
 
 For more information about **Nutanix Move**, see the [Go further](#gofurther) section of this guide.
 

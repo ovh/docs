@@ -21,7 +21,7 @@ order: 105
 There are two ways to manage your data:
 
 - You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/install-client). Next, find out how to [manage your data with the CLI](https://docs.ovh.com/asia/en/publiccloud/ai/cli/data-cli/).
-- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), see [create data container](https://docs.ovh.com/asia/en/storage/pcs/create-container/)
+- You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), see [create data container](https://docs.ovh.com/asia/en/storage/pcs/create-container/).
 
 ## How it works
 
@@ -73,26 +73,26 @@ The purpose of the **read-write** permission is to be able to modify the content
 >
 > As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data were uploaded to your Object Storage.
 
+
 ### Volume caching and sharing
 
 By default **filesystem volumes** are created and deleted on the fly for each job needing it.
 
 User can enable a `cache` feature that allow jobs and notebooks to re-use available volumes instead of creating a new one each time. That feature serves several purposes :
-
 - Reducing synchronization time for data that have already been downloaded before.
 - Sharing same volumes between several jobs or notebooks.
 
 > [!warning]
 >
-> Unused volume data are regularly deleted. User should not rely on this `cache` feature for long time persistence.
+> Unused volume data is regularly deleted. Users should not rely on this `cache` feature for long time persistence.
 
 ## Going further
 
 - You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/asia/en/storage/pcs/create-container/).
 
-- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/asia/en/publiccloud/ai/cli/access-object-storage-data/)
+- You can check how to [use your data in an AI Notebook](https://docs.ovh.com/asia/en/publiccloud/ai/cli/access-object-storage-data/).
 
-- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/asia/en/publiccloud/ai/cli/run-job-cli/)
+- You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/asia/en/publiccloud/ai/cli/run-job-cli/).
 
 ## Feedback
 

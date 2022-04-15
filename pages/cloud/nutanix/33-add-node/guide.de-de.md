@@ -79,8 +79,7 @@ Scroll to see the options.
 
 ![Add Node 04](images/AddNode04.PNG){.thumbnail}
 
-Scroll down to the bottom of the window and click on `Next`.
-{.action}.
+Scroll down to the bottom of the window and click on `Next`{.action}.
 
 ![Add Node 05](images/AddNode05.PNG){.thumbnail}
 
