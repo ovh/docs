@@ -11,7 +11,7 @@ order: 01
 ## Objectif
 
 
-HYCU backup est un logiciel de sauvegarde disponible pour Nutanix. 
+HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix. 
 
 **Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type object Storage fourni par OVHCloud**
 
