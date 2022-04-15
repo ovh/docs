@@ -3,7 +3,7 @@ title: Démarrage en mode reprise d'activité
 slug: cluster-failover
 excerpt: "Plan d'action pour redémarrer sur un autre site en cas de problème sur le site d'origine"
 section: Plan de reprise d'activité
-order: 02
+order: 03
 ---
 
 **Dernière mise à jour le 18/02/2022**

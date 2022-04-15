@@ -3,10 +3,10 @@ title: Configurer HYCU Backup
 slug: hycu-backup
 excerpt: "Installation de la sauvegarde HYCU Backup sur un cluster Nutanix"
 section: Sauvegardes
-order: 02
+order: 01
 ---
 
-**Dernière mise à jour le 14/04/2022**
+**Dernière mise à jour le 15/04/2022**
 
 ## Objectif
 
