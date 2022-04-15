@@ -70,7 +70,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 
 Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich “Verwaltung der Benutzer” nachlesen können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
 
-Beispiel: **1234-567-89/john.smith**.
+Beispiel: **1234-567-89/johnsmith**.
 
 ![Benutzerverwaltung](images/usersmanagement3.png){.thumbnail}
 

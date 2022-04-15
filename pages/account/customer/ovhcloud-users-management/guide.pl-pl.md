@@ -70,7 +70,7 @@ Pojawi się okno, w którym należy uzupełnić wymagane pola. Kliknij przycisk 
 
 Użytkownik otrzyma własny identyfikator składający się z identyfikatora numerycznego Twojego konta (który możesz sprawdzić w menu “Zarządzanie użytkownikami”) i jego nazwy użytkownika — obie wartości są rozdzielone znakiem “/”.
 
-Przykład: **1234-567-89/james.smith**.
+Przykład: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
