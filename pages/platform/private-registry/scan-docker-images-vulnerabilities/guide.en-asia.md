@@ -94,7 +94,7 @@ To do that, go to the `Vulnerability`{.action} tab and open `Interrogation Servi
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-08.png)
 
-### Scan all the images regularly
+### Scan all images regularly
 
 You can schedule a scan:
 
