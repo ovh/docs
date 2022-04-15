@@ -145,7 +145,7 @@ Sie können die Elemente im oberen Teil sowie in der Tabelle mit den Buttons rec
 
 > [!warning]
 >
-> Wenn Sie die Sicherheitseinstellungen in den Modus „Eingeschränkt“ versetzen und keine IP-Adresse eingeben, kann sich kein Benutzer im vSphere Client einloggen. Die virtuellen Maschinen bleiben jedoch weiterhin verfügbar.
+> Wenn Sie die Sicherheitseinstellungen in den Modus “Eingeschränkt” versetzen und keine IP-Adresse eingeben, kann sich kein Benutzer im vSphere Client einloggen. Die virtuellen Maschinen bleiben jedoch weiterhin verfügbar.
 > 
 
 

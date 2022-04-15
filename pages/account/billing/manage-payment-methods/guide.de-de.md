@@ -48,7 +48,7 @@ Klicken Sie hierfür auf den Button `Zahlungsart hinzufügen`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Folgen Sie den nachfolgenden Schritten zur Hinterlegung einer Zahlungsart. Im ersten Schritt schlägt man Ihnen vor, diese neue Zahlungsart als „Standardzahlungsart“ zu definieren, damit sie für künftige Bestellungen oder automatische Zahlungen verwendet werden kann.
+Folgen Sie den nachfolgenden Schritten zur Hinterlegung einer Zahlungsart. Im ersten Schritt schlägt man Ihnen vor, diese neue Zahlungsart als “Standardzahlungsart” zu definieren, damit sie für künftige Bestellungen oder automatische Zahlungen verwendet werden kann.
 
 #### Ein Bankkonto hinzufügen
 
@@ -58,7 +58,7 @@ Im Fall der Hinterlegung eines neuen Bankkontos wird eine E-Mail von unserem Par
 
 > [!primary]
 >
-Solange diese Authorisierung nicht erfolgt ist, wird der Status „Validierung wird durchgeführt“ neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
+Solange diese Authorisierung nicht erfolgt ist, wird der Status “Validierung wird durchgeführt” neben Ihrem Bankkonto angezeigt. Es kann in diesem Status für Zahlungen per Einzug noch nicht berücksichtigt werden.
 >
 
 

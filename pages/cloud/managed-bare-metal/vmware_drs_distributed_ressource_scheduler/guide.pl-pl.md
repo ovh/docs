@@ -49,18 +49,18 @@ W tym samym oknie edycji ustawień znajdziesz cztery kategorie opcji.
 
 Dostępne są trzy różne poziomy automatyzacji:
 
-- W trybie „Ręcznym” funkcja DRS nie przeniesie maszyn wirtualnych, użytkownik musi samodzielnie zarządzać przemieszczaniem i przydzielaniem maszyn wirtualnych.
+- W trybie “Ręcznym” funkcja DRS nie przeniesie maszyn wirtualnych, użytkownik musi samodzielnie zarządzać przemieszczaniem i przydzielaniem maszyn wirtualnych.
 
-- W trybie „Częściowo automatycznym” funkcja DRS zaleci przeprowadzenie migracji maszyn wirtualnych, ale nie wykona ich, jeśli użytkownik nie zatwierdzi operacji.
+- W trybie “Częściowo automatycznym” funkcja DRS zaleci przeprowadzenie migracji maszyn wirtualnych, ale nie wykona ich, jeśli użytkownik nie zatwierdzi operacji.
 
-- W trybie „Całkowicie automatycznym” funkcja DRS automatycznie przeniesie maszyny wirtualne bez zatwierdzenia przez użytkownika, w zależności od obciążenia hostów.
+- W trybie “Całkowicie automatycznym” funkcja DRS automatycznie przeniesie maszyny wirtualne bez zatwierdzenia przez użytkownika, w zależności od obciążenia hostów.
 
 Możliwe jest również określenie mniej lub bardziej agresywnego progu migracji w trybach automatycznych.
 
-Opcja „Predictive DRS”, dostępna od wersji 6.5 narzędzia VMware, umożliwia przeprowadzanie migracji w zależności od prognoz przesłanych przez vRops,
+Opcja “Predictive DRS”, dostępna od wersji 6.5 narzędzia VMware, umożliwia przeprowadzanie migracji w zależności od prognoz przesłanych przez vRops,
 który jest zatem niezbędny dla działania tej opcji DRS.
 
-Opcja „Automatyzacja maszyny wirtualnej” umożliwia skonfigurowanie konkretnych ustawień DRS dla niektórych maszyn wirtualnych w podmenu `Wyjątków dla maszyny wirtualnej` w karcie `Konfiguruj`. (Niektóre maszyny wirtualne mogą być w częściowo automatycznym trybie migracji, mimo że klaster jest w trybie całkowicie automatycznym).
+Opcja “Automatyzacja maszyny wirtualnej” umożliwia skonfigurowanie konkretnych ustawień DRS dla niektórych maszyn wirtualnych w podmenu `Wyjątków dla maszyny wirtualnej` w karcie `Konfiguruj`. (Niektóre maszyny wirtualne mogą być w częściowo automatycznym trybie migracji, mimo że klaster jest w trybie całkowicie automatycznym).
 
 ![automatisation DRS](images/drs02.png){.thumbnail}
 

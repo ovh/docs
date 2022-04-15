@@ -30,7 +30,7 @@ Na wyświetlonej stronie znajduje się tabela podsumowująca sposoby płatności
 
 ### Dodać sposób płatności
 
-Gdy po raz pierwszy zamawiasz produkt OVH, zostaje wyświetlony monit o dodanie sposobu płatności, aby umożliwić automatyczne odnawianie i opłacanie usługi.
+Gdy po raz pierwszy zamawiasz produkt OVHcloud, zostaje wyświetlony monit o dodanie sposobu płatności, aby umożliwić automatyczne odnawianie i opłacanie usługi.
 
 Ten sposób płatności będzie używany domyślnie w przypadku wszystkich odnawianych usług i proponowany przy nowych zakupach.
 
@@ -45,7 +45,7 @@ W tym celu kliknij przycisk `Dodaj sposób płatności`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. W pierwszym kroku otrzymasz prośbę o ustawienie nowego sposobu płatności jako „domyślny sposób płatności”, tak aby był używany przy kolejnych zakupach lub automatycznych pobraniach opłat.
+Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. W pierwszym kroku otrzymasz prośbę o ustawienie nowego sposobu płatności jako “domyślny sposób płatności”, tak aby był używany przy kolejnych zakupach lub automatycznych pobraniach opłat.
 
 ### Zmienić domyślny sposób płatności
 

@@ -73,7 +73,7 @@ Verwenden Sie hierzu folgenden Befehl:
 Die Felder müssen wie folgt ausgefüllt werden:
 
 - ip: IP-Block mit /mask
-- nexthop „newPrimaryIp“ (case-sensitive)
+- nexthop “newPrimaryIp” (case-sensitive)
 - to: Ziel-Managed-Bare-Metal in der Form pcc-XXX-XXX-XXX-XXX
 
 ![Feld nexthop](images/move-api.png){.thumbnail}
@@ -97,7 +97,7 @@ Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu 
 
 Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Bare Metal Cloud`{.action} unter `Managed Bare Metal`{.action} nachverfolgen. Klicken Sie auf Ihren Managed Bare Metal Dienst und dann auf den Tab `Operationen`{.action}.
 
-Die Referenz der Operation lautet „removeIpRipeBlock“.
+Die Referenz der Operation lautet “removeIpRipeBlock”.
 
 ![Operationen Kundencenter](images/operations.png){.thumbnail}
 

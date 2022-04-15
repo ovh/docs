@@ -40,7 +40,7 @@ Laden Sie das vSphere SDK mit folgendem Befehl herunter:
 ```
 git clone https://github.com/vmware/vsphere-automation-sdk-python.git
 ```
-Das Verzeichnis „/vsphere-automation-sdk-python“ wird erstellt. Gehen Sie in diesen Ordner, um den Installationsbefehl auszuführen: 
+Das Verzeichnis “/vsphere-automation-sdk-python” wird erstellt. Gehen Sie in diesen Ordner, um den Installationsbefehl auszuführen: 
 
 ```
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///<absolute_path_to_sdk>/lib
@@ -165,7 +165,7 @@ Laden Sie das vSphere SDK über folgenden Link herunter:
 
 Stellen Sie sicher, dass es sich um die mit Ihrem Betriebssystem kompatible Version handelt.
 
-In diesem Beispiel ist die heruntergeladene Datei: „VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz“
+In diesem Beispiel ist die heruntergeladene Datei: “VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz”
 
 Extrahieren Sie die soeben heruntergeladene Datei mit folgendem Befehl:
 
@@ -187,7 +187,7 @@ Wenn Sie die Bedingungen gelesen haben, akzeptieren Sie diese und drücken Sie a
 
 Nach der Installation werden weitere Module installiert. Drücken Sie auf `Enter`{.action}, um die Installation fortzusetzen.
 
-Um die Installation abzuschließen, muss ein Verzeichnis ausgewählt werden, in dem das SDK installiert wird. Standardmäßig ist dieses Verzeichnis „/usr/bin“.
+Um die Installation abzuschließen, muss ein Verzeichnis ausgewählt werden, in dem das SDK installiert wird. Standardmäßig ist dieses Verzeichnis “/usr/bin”.
 
 #### Skriptbeispiel
 
@@ -248,7 +248,7 @@ print "Disconnected \n";
 
 ##### Samples verwenden
 
-Im vorliegenden Beispiel wird ein bereits erstelltes Skript aus dem Verzeichnis „vmware-vsphere-cli-distrib/apps/vm/“ aufgerufen.
+Im vorliegenden Beispiel wird ein bereits erstelltes Skript aus dem Verzeichnis “vmware-vsphere-cli-distrib/apps/vm/” aufgerufen.
 
 Hier ist die Liste der Skripte, die bereits in diesem Verzeichnis verfügbar sind:
 
