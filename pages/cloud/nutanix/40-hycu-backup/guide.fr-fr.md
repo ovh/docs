@@ -37,9 +37,9 @@ Connectez-vous à **Prism Central**.
 
 Pour plus d'informations sur la connexion au cluster reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
-### Installation et configuration du logiciel HYCU
+### Installer et configurer le logiciel HYCU
 
-#### Ajout de l'image d'installation d'HYCU
+#### Ajouter l'image d'installation d'HYCU
 
 Au travers du menu principal cliquez sur `Images`{.action} depuis le menu `Compute & Storage`{.action}
 
@@ -49,11 +49,11 @@ Cliquez sur `Add Image`{.action}`.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Sélectionnez `URL`{.action}, saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` et cliquez sur `Upload file`{.action}.
+Choisissez `URL`{.action} comme type de source, saisissez `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saisissez une `description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension **.qcow2** derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saisissez une `description`{.action} et cliquez sur `Next`{.action}.
 
 ![Add Image HYCU 04](images/00-addimagehycu04.png){.thumbnail}
 
@@ -61,11 +61,11 @@ Cliquez sur `Save`{.action} pour importer l'image.
 
 ![Add Image HYCU 05](images/00-addimagehycu05.png){.thumbnail}
 
-Cliquez sur `nom du cluster`{.action} aller sur **Prism Element**.
+Sur le tableau de bord **Prism Central** cliquez sur le `nom du cluster`{.action} dans la section **Cluster Quick Access** pour aller sur **Prism Element**.
 
 ![Configure ISCSI 01](images/00-configureiscsi01.png){.thumbnail}
 
-#### Configuration adresse IP pour ISCSI
+#### Configurer l'adresse IP pour ISCSI
 
 Allez dans les paramètres en cliquant sur l'icône représentant un `engrenage`{.action}.
 
@@ -87,7 +87,7 @@ L'adresse IP est affichée dans **virtual IP**.
 
 ![Configure ISCSI 06](images/00-configureiscsi06.png){.thumbnail}
 
-#### Ajout compte utilisateur dans **Prism Element** pour HYCU
+#### Ajouter un compte utilisateur dans **Prism Element** pour HYCU
 
 Cliquez sur l'engrenage pour aller dans la configuration de **Prism Element**
 
@@ -117,9 +117,9 @@ L'utilisateur est créé.
 
 ![Add local user to Prism Element 05](images/01-adduserprismelement05.png){.thumbnail}
 
-#### Création de la VM HYCU
+#### Créer la machine virtuelle pour HYCU
 
-Revenez dans l'interface de **Prism Central**.
+Allez dans **Prism Central**.
 
 Au travers du menu principal cliquez sur `VMs`{.action} depuis le menu `Compute & Storage`{.action}.
 
@@ -213,7 +213,7 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
-#### Connexion et configuration d'HYCU
+#### Configurer HYCU
 
 Connectez-vous avec un navigateur WEB à l'adresse IP interne ou externe si une redirection existe à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
@@ -294,11 +294,11 @@ La cible est activée et est la destination des sauvegardes pour le cluster NUTA
 
 ![Configure HYCU 12](images/03-configurehycu12.png){.thumbnail}.
 
-### Mise à jour d'HYCU
+### Mettre à jour d'HYCU
 
 HYCU fournie régulièrement des mises à jour voici le processus de mise à jours
 
-#### Ajout des sources d'HYCU
+#### Ajouter les sources d'une nouvelle version d'HYCU
 
 Au travers du menu principal de **Prism Central** cliquez sur `Images`{.action} depuis le menu `Compute & Storage`{.action}
 
@@ -321,7 +321,7 @@ Cliquez sur `Save`{.action} pour importer l'image et attendez que l'image soit i
 
 ![Add Image HYCU for update 05](images/04-addimageforupdate05.png){.thumbnail}
 
-#### Lancement de la mise à jour à partir d'HYCU
+#### Lancer la mise à jour à partir d'HYCU
 
 Connectez-vous avec un navigateur à l'adresse IP interne ou externe si une redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
 
@@ -359,11 +359,11 @@ Décochez `Suspend All`{.action} et cliquez sur `Save`{.action}.
 
 ![After Update 01](images/07-afterupdate02.png){.thumbnail}
 
-### Configuration de la sauvegarde
+### Configurer la sauvegarde
 
 Restez dans l'interface HYCU.
 
-#### Paramétrage des mots de passe de connexions au machines virtuelles
+#### Paramétrer les mots de passe de connexions au machines virtuelles
 
 Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'îcone `Credentials`{.action} en forme de Clé en haut à droite de l'interface.
 
@@ -417,7 +417,7 @@ Sélectionnez dans **NAME** le `mot de passe`{.action} et cliquez sur `Assign`{.
 
 ![Add vm to credential 04](images/08-addvmtocredential04.png){.thumbnail}
 
-#### Création des stratégies de sauvegardes
+#### Créer des stratégies de sauvegardes
 
 Allez dans le menu `policies`{.action} à gauche et cliquez en haut à droite sur l'icône avec le signe `+`{.action}.
 
@@ -457,7 +457,7 @@ Modifier l'option **Fast restore** avec vos paramètres et cliquez sur `Save`{.a
 
 Cette stratégie fait une sauvegarde sur le stockage S3 d'OVHcloud et aussi des snapshots à l'intérieur du cluster NUTANIX,  ce qui permet une plus grande rapidité de restauration.
 
-#### Affectation des stratégies de sauvegardes
+#### Affecter des stratégies de sauvegardes
 
 Sélectionnez toutes les machines virtuelles en cliquant en haut à gauche sur la `case à cocher`{.action} à coté de **NAME** et ensuite cliquez sur l'icône `Policies`{.action} en forme de bouclier en haut à droite pour affecter une stratégie à toutes les machines virtuelles.
 
@@ -483,7 +483,7 @@ Choisissez la stratégie `BACKUP to S3 OVHcloud and local SNAPSHOTS`{.action} et
 
 ![Affect policy to HYCU VM 02](images/11-addsomevmtopolicy02.png){.thumbnail}
 
-### Contrôle de l'état des sauvegardes
+### Contrôler l'état des sauvegardes
 
 Allez dans le menu `Dasboard`{.action} à gauche pour afficher le tableau de bord et connaitre l'état de la sauvegarde.
 
@@ -493,13 +493,13 @@ Allez dans le menu `Jobs`{.action} à gauche pour afficher l'état des travaux.
 
 ![Display JobState](images/12-jobstate01.png){.thumbnail}
 
-### Restauration à partir d'HYCU
+### Restaurer à partir d'HYCU
 
 Utilisez le menu `Virtual Machines`{.action} et cliquez sur  `une machine virtuelle sauvegardée`{.action}.
 
 ![Restore VM 01](images/13-restorevm01.png){.thumbnail}
 
-#### Restauration d'une machine virtuelle
+#### Restaurer une machine virtuelle
 
 Cliquez en bas à droite sur l'icône `Restore VM`{.action}.
 
@@ -515,7 +515,7 @@ Laissez les options par défaut et cliquez sur `Restore`{.action}.
 
 La machine virtuelle va être entierement restaurée. 
 
-#### Restauration d'un fichier
+#### Récupérer un fichier
 
 Cliquez en bas à droite sur l'icône `Restore files`{.action}
 
@@ -539,7 +539,7 @@ Choisissez `Rename restored`{.action} et cliquez sur `Restore`{.action}.
 
 Le fichier restauré sera dans la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien.
 
-#### Restauration d'une application 
+#### Restaurer une application 
 
 Cliquez sur le menu `Applications`{.action} ensuite choisissez une application à restaurer en cliquant sur une `application`{.action} en dessous de **Name**.
 
@@ -566,6 +566,8 @@ La base de données sera restaurée dans une nouvelle base de données.
 ## Aller plus loin
 
 [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+
+[Page d'accueil HYCU](https://www.hycu.com/)
 
 [Documentation HYCU](https://support.hycu.com/hc/en-us/sections/115001018365-Product-documentation)
 
