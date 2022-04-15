@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 04
 ---
 
-**Last updated 15 April, 2022.**
+**Last updated 15th April, 2022.**
 
 <style>
  pre {
@@ -32,7 +32,7 @@ order: 04
 
 OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management. 
 
-This guide will explain how to activate the vulnerabilities scanner and scan manually an image in an OVHcloud Managed Private Registry service.
+**This guide will explain how to activate the vulnerabilities scanner and manually scan an image in an OVHcloud Managed Private Registry service.**
 
 ## Before you begin
 
@@ -49,28 +49,28 @@ You can scan your images on your private registry by using the Harbor UI.
 
 ### Check that you have enabled a vulnerability scanner
 
-By default, when you create a Private Registry in order to enable a vulnerabilities scanner you need to choose a `M` or `L` plan.
+By default, when you create a Private Registry in order to enable a vulnerabilities scanner, you need to choose a `M` or `L` plan.
 
 > [!primary]
 >
 > With the `M` and `L` plan, OVHcloud installs and maintains a vulnerability scanner for you: [Trivy](https://aquasecurity.github.io/trivy/) for Harbor version 2.x or [Clair](https://github.com/quay/clair) for Harbor version 1.x.
 
-To check if you have a vulnerability scanner in your private registry, just go to `Interrogation Services`{.action} in the navigation bar.
+To verify if you have a vulnerability scanner in your private registry, go to `Interrogation Services`{.action} in the navigation bar.
 
 ![Vulnerability scanner in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-02.png)
 
 As you can see, Trivy is installed and ready to use.
 
-If you want to add manually a vulnerability scanner, you can do it too with `New Scanner`{.action}, but it will not be updated and maintaned by OVHcloud.
+If you want to manually add a vulnerability scanner, you can also do it with `New Scanner`{.action}. However, it will not be updated and maintaned by OVHcloud.
 
 ### Scan a Docker image manually
 
-You can scan manually a Docker image.
-To do that, go in your project, select an image and click on `Scan`{.action}.
+You can manually scan a Docker image.
+To do that, access your project, select an image and click on `Scan`{.action}.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-03.png)
 
-The scanner starts to scan the image.
+The scanner starts scanning the image.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-04.png)
 
@@ -82,33 +82,33 @@ When you hover the vulnerabilities column, a chart with the vulnerabilities seve
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-06.png)
 
-Click on the ID of the image to display all the vulnerabilities, ordered by severity.
+Click on the image ID to display all vulnerabilities, ranked by severity.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-07.png)
 
 #### Scan all the images
 
-You can also scan manually of all your images in your private registry.
+You can also manually scan of all your images in your private registry.
 
-To do that, go in the `Vulnerability`{.action} tab, in the `Interrogation Services`{.action} menu and click on `Scan Now`{.action} button.
+To do that, go to the `Vulnerability`{.action} tab and open `Interrogation Services`{.action}. Next, click on `Scan Now`{.action}.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-08.png)
 
-### Scan regularly all the images
+### Scan all the images regularly
 
-And you can schedule a scan:
+You can schedule a scan:
 
 - hourly
 - daily
 - weekly
 - when you want (enter as a cron format)
 
-For that, select the scheduling and click on `Save'{.action} button.
+For that, select the scheduling and click on the `Save'{.action} button.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-09.png)
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can go to the [OVHcloud Managed Private Registry site](../).
+To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](../).
 
 Join our community of users on https://community.ovh.com/en/.
