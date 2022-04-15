@@ -222,7 +222,7 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 
 #### Configurer HYCU
 
-Connectez-vous avec un navigateur WEB à l'adresse IP interne ou externe si une redirection existe à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
+Connectez-vous avec un navigateur WEB à l'adresse IP interne à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443**.
 
 Saisissez `le mot de passe par défaut`{.action} et cliquez sur `Sign In`{.action}.
 
@@ -338,7 +338,7 @@ Cliquez sur `Save`{.action} pour importer l'image.
 
 #### Lancer la mise à jour à partir d'HYCU
 
-Connectez-vous avec un navigateur à l'adresse IP interne ou externe si une redirection a été faite à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** ou **https://adressepublique:8443**
+Connectez-vous avec un navigateur à l'adresse IP interne à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** 
 
 Allez dans la configuration d'HYCU en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et choisir `Power Options`{.action}.
 
