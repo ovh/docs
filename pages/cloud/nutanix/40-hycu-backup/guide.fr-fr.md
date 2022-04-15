@@ -55,6 +55,11 @@ Choisissez `URL`{.action} comme type de source, saisissez `https://download.hycu
 
 Enlevez l'extension **.qcow2** derrière le nom et laissez `hycu-4.3.0-4122`{.action}, saisissez une `description`{.action} et cliquez sur `Next`{.action}.
 
+> [!warning]
+> Il est important d'enlever l'extension dans le nom pour le processus de configuration d'HYCU
+
+
+
 ![Add Image HYCU 04](images/00-addimagehycu04.png){.thumbnail}
 
 Cliquez sur `Save`{.action} pour importer l'image.
@@ -319,6 +324,9 @@ Cliquez sur `Upload file`{.action}.
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
 Enlevez l'extension .qcow2 derrière le nom `hycu-'4.3.1-616`{.action} saisissez une `Description`{.action} et cliquez sur `Next`{.action}.
+
+> [!warning]
+> Il est important d'enlever l'extension dans le nom pour le processus de mise à jour d'HYCU
 
 ![Add Image HYCU for update 04](images/04-addimageforupdate04.png){.thumbnail}
 
