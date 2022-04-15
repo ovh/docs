@@ -317,7 +317,9 @@ Cliquez sur `Add Image`{.action}`.
 
 Sélectionnez `URL`{.action}`. 
 
-Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme par exemple. `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`. 
+Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme : 
+-  `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`.
+
 
 Cliquez sur `Upload file`{.action}.
 
@@ -346,7 +348,7 @@ Sélectionnez sur `Suspend All`{.action}, cochez sur `AUTO RESUME AFTER`{.action
 
 ![Before Update 02](images/05-beforeupdate02.png){.thumbnail}
 
-Revenez dans le menu de configuration en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et cliquez sur `Software Upgrade`{.action}.
+Choisissez `Software Upgrade`{.action} dans le menu `Administration`{.action} en forme d'engrenage. 
 
 ![Update 01](images/06-updatehycu01.png){.thumbnail}
 
@@ -372,13 +374,11 @@ Décochez `Suspend All`{.action} et cliquez sur `Save`{.action}.
 
 ![After Update 01](images/07-afterupdate02.png){.thumbnail}
 
-### Configurer la sauvegarde
-
-Restez dans l'interface HYCU.
+### Configurer la sauvegarde dans HYCU
 
 #### Paramétrer les mots de passe de connexions au machines virtuelles
 
-Les mots de passe de connexions au machines virtuelles permettent la sauvegarde des applications contenues dans les machines virtuelles.
+Les mots de passe de connexions aux machines virtuelles permettent la sauvegarde des applications comme une base Microsoft SQL ou un serveur Exchange.
 
 Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'icône `Credentials`{.action} en forme de Clé en haut à droite de l'interface.
 
@@ -403,7 +403,7 @@ Cliquez sur le signe `+`{.action} pour rajouter un autre compte.
 
 ![Add credential 04](images/08-addcredential04.png){.thumbnail}
 
-Saisissez ces valeurs:
+Saisissez ces valeurs :
 
 - **NAME** : `Nom du stockage de mot de passe`{.action}.
 - **PROTOCOL** : `AUTOMATIC`{.action}.
@@ -470,7 +470,7 @@ Modifier l'option **Fast restore** avec vos paramètres et cliquez sur `Save`{.a
 
 ![Create Policy for General Usage 02 ](images/10-createpolicyforgeneralusage02.png){.thumbnail}
 
-Cette stratégie fait une sauvegarde sur le stockage S3 d'OVHcloud et aussi des **snapshots** à l'intérieur du cluster NUTANIX,  ce qui permet une plus grande rapidité de restauration.
+Cette stratégie fait une sauvegarde sur le stockage S3 d'OVHcloud et aussi des **snapshots** à l'intérieur du cluster Nutanix, ce qui permet une plus grande rapidité de restauration.
 
 #### Affecter des stratégies de sauvegardes
 
@@ -528,7 +528,7 @@ Laissez les options par défaut et cliquez sur `Restore`{.action}.
 
 ![Restore VM 04](images/13-restorevm04.png){.thumbnail}
 
-La machine virtuelle est entierèment restaurée. 
+La machine virtuelle est entièrement restaurée. 
 
 #### Récupérer un fichier
 
