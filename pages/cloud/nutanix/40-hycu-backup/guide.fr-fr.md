@@ -13,7 +13,7 @@ order: 01
 
 HYCU backup est un logiciel de sauvegarde disponible pour Nutanix. 
 
-**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type object Storage pour OVHCloud**
+**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type object Storage fourni par OVHCloud**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -28,7 +28,7 @@ HYCU backup est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur le cluster via Prism Central. 
-- Avoir un abonnement de stockage chez OVHcloud comme **High Performance Object Storage** ou **Standard Object Storage (SWIFT)**
+- Avoir un abonnement de stockage chez OVHcloud du type **High Performance Object Storage** ou **Standard Object Storage (SWIFT)**
 
 
 ## En pratique
