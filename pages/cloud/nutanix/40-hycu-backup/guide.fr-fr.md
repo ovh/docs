@@ -13,7 +13,7 @@ order: 01
 
 HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix. 
 
-**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type object Storage fourni par OVHCloud**
+**Apprenez à installer, configurer et utiliser HYCU sur un cluster Nutanix avec un stockage de type Object Storage fourni par OVHCloud**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -187,7 +187,7 @@ Cliquez sur `Next`{.action}
 
 ![Create HYCUVM 10](images/02-createhycuvm10.png){.thumbnail}
 
-Créer un fiche **yaml** en modifiant ces valeurs :
+Créer un fichier **yaml** en modifiant ces valeurs :
 
 - **< Adresse IP >** : Adresse IP locale du cluster.
 - **< GATEWAY >** : Passerelle locale du cluster pour aller sur Internet.
@@ -238,7 +238,7 @@ Saisissez `le mot de passe par défaut`{.action} dans **OLD PASSWORD** , `le nou
 
 ![Configure HYCU 03](images/03-configurehycu03.png){.thumbnail}
 
-Nous allons connecter HYCU au cluster NUTANIX
+Nous allons connecter HYCU au cluster Nutanix.
 
 Cliquez sur l'icône `Administration`{.action} en forme d'engrenage en haut à droite et choisir `Sources`{.action}
 
@@ -286,7 +286,7 @@ Activez `ENABLE COMPRESSION`{.action} et faites défilez la fenêtre avec la `ba
 
 ![Configure HYCU 10](images/03-configurehycu10.png){.thumbnail}.
 
-Finalisez la saisie des informations:
+Finalisez la saisie des informations :
 
 - SERVICE ENDPOINT: `URL Stockage S3`{.action}
 - BUCKET NAME: `Nom du bucket`{.action}
@@ -303,7 +303,7 @@ La cible est activée pour les sauvegardes du cluster NUTANIX.
 
 ### Mettre à jour d'HYCU
 
-HYCU fournie régulièrement des mises à jour voici le processus de mise à jours
+HYCU fournie régulièrement des mises à jour voici le processus de mise à jour.
 
 #### Ajouter les sources d'une nouvelle version d'HYCU
 
@@ -323,14 +323,14 @@ Cliquez sur `Upload file`{.action}.
 
 ![Add Image HYCU for update 03](images/04-addimageforupdate03.png){.thumbnail}
 
-Enlevez l'extension .qcow2 derrière le nom `hycu-'4.3.1-616`{.action} saisissez une `Description`{.action} et cliquez sur `Next`{.action}.
+Enlevez l'extension **.qcow2** derrière le nom `hycu-'4.3.1-616`{.action} saisissez une `Description`{.action} et cliquez sur `Next`{.action}.
 
 > [!warning]
 > Il est important d'enlever l'extension dans le nom pour le processus de mise à jour d'HYCU
 
 ![Add Image HYCU for update 04](images/04-addimageforupdate04.png){.thumbnail}
 
-Cliquez sur `Save`{.action} pour importer l'image et attendez que l'image soit importée.
+Cliquez sur `Save`{.action} pour importer l'image. 
 
 ![Add Image HYCU for update 05](images/04-addimageforupdate05.png){.thumbnail}
 
@@ -358,13 +358,13 @@ Cliquez sur `Yes`{.action} pour lancer le processus de mise à jour.
 
 ![Update HYCU 03](images/06-updatehycu03.png){.thumbnail}
 
-la mise à jour éffectue une copie de la machine virtuelle avant de lancer la mise à jour en cas de défaillance de la mise à jour.
+Une copie de sauvegarde est effectuée lors du processus de mise à jour pour revenir en arrière en cas de problèmes.
 
 ![Update HYCU 04](images/06-updatehycu04.png){.thumbnail}
 
 Connectez-vous à l'interface d'administration d'HYCU. 
 
-Allez dans les paramètres en cliquant sur l'icône en forme `d'engrenage`{.action} et cliquez sur `Power Options`{.action}.
+Cliquer sur l'icône en forme `d'engrenage`{.action} et cliquez sur `Power Options`{.action}.
 
 ![After Update 01](images/07-afterupdate01.png){.thumbnail}
 
@@ -378,7 +378,9 @@ Restez dans l'interface HYCU.
 
 #### Paramétrer les mots de passe de connexions au machines virtuelles
 
-Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'îcone `Credentials`{.action} en forme de Clé en haut à droite de l'interface.
+Les mots de passe de connexions au machines virtuelles permettent la sauvegarde des applications contenues dans les machines virtuelles.
+
+Connectez-vous sur le menu `Virtual Machines`{.action} à gauche et cliquez sur l'icône `Credentials`{.action} en forme de Clé en haut à droite de l'interface.
 
 ![Add credential 01](images/08-addcredential01.png){.thumbnail}
 
@@ -386,7 +388,7 @@ Cliquez sur le signe `+`{.action}.
 
 ![Add credential 02](images/08-addcredential02.png){.thumbnail}
 
-Saisissez ces valeurs:
+Saisissez ces valeurs :
 
 - **NAME** : `Nom du stockage de mot de passe`{.action}.
 - **PROTOCOL** : `AUTOMATIC`{.action}.
@@ -436,7 +438,7 @@ Allez dans le menu `policies`{.action} à gauche et cliquez en haut à droite su
 
 ![Create Policy ](images/09-createpolicy01.png){.thumbnail}
 
-Saisissez ces informations:
+Saisissez ces informations :
 
 - **NAME** : `HYCU VM`{.action}.
 - **BACKUP EVERY** : `4 hours`{.action}.
@@ -468,7 +470,7 @@ Modifier l'option **Fast restore** avec vos paramètres et cliquez sur `Save`{.a
 
 ![Create Policy for General Usage 02 ](images/10-createpolicyforgeneralusage02.png){.thumbnail}
 
-Cette stratégie fait une sauvegarde sur le stockage S3 d'OVHcloud et aussi des snapshots à l'intérieur du cluster NUTANIX,  ce qui permet une plus grande rapidité de restauration.
+Cette stratégie fait une sauvegarde sur le stockage S3 d'OVHcloud et aussi des **snapshots** à l'intérieur du cluster NUTANIX,  ce qui permet une plus grande rapidité de restauration.
 
 #### Affecter des stratégies de sauvegardes
 
@@ -498,7 +500,7 @@ Choisissez la stratégie `BACKUP to S3 OVHcloud and local SNAPSHOTS`{.action} et
 
 ### Contrôler l'état des sauvegardes
 
-Allez dans le menu `Dasboard`{.action} à gauche pour afficher le tableau de bord et connaitre l'état de la sauvegarde.
+Allez dans le menu `Dashboard`{.action} à gauche pour afficher le tableau de bord et connaitre l'état de la sauvegarde.
 
 ![Display Dashboard](images/12-dashbord01.png){.thumbnail}
 
@@ -526,7 +528,7 @@ Laissez les options par défaut et cliquez sur `Restore`{.action}.
 
 ![Restore VM 04](images/13-restorevm04.png){.thumbnail}
 
-La machine virtuelle va être entierement restaurée. 
+La machine virtuelle est entierèment restaurée. 
 
 #### Récupérer un fichier
 
@@ -550,7 +552,7 @@ Choisissez `Rename restored`{.action} et cliquez sur `Restore`{.action}.
 
 ![Restore FILES 05](images/15-restorefile05.png){.thumbnail}
 
-Le fichier restauré sera dans la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien.
+Le fichier restauré se trouve à l'intérieur de la machine virtuelle avec un nouveau nom pour ne pas supprimer l'ancien fichier.
 
 #### Restaurer une application 
 
@@ -574,7 +576,7 @@ Désactivez `OVERWRITE EXISTING DATABASES`{.action} et cliquez sur `Restore`{.ac
 
 ![Restore Application 05](images/16-restoreapplication05.png){.thumbnail}
 
-La base de données sera restaurée dans une nouvelle base de données.
+La base de données est restaurée dans une nouvelle base de données.
 
 ## Aller plus loin
 
