@@ -7,12 +7,12 @@ order: 1
 hidden: true
 ---
 
-**Last updated April 14th<sup>th</sup>, 2022**
+**Last updated April 14<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases' m3 aggregator offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -27,7 +27,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
-Entire database instances have to be in the same region. Multi-AZ is currently not supported.
+The entire database instances must be in the same region. Multi-AZ is currently not supported.
 
 ### M3 Aggregator versions
 
@@ -62,7 +62,7 @@ Your choice of plan affects the number of nodes your cluster can run.
 
 Each cluster is provided with the M3 Aggregator Community (GPL) license.
 
-If any, license cost is included inside the service plans. You can't bring your own licenses.
+Where applicable, the cost of the license is included in the service plans. It is not possible to bring your own licenses.
 
 ### Hardware resources
 
@@ -88,7 +88,7 @@ Here are the node types you can choose from:
 | db1-60  | N/A       | 16    | 60          |
 | db1-120 | N/A       | 32    | 120         |
 
-Right now, all nodes of a given cluster should be of the same type and live in the same region.
+Right now, all nodes in a given cluster must be of the same type and located in the same region.
 
 
 ### Features
