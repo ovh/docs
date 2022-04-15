@@ -360,7 +360,7 @@ Cliquez sur `Yes`{.action} pour lancer le processus de mise à jour.
 
 ![Update HYCU 03](images/06-updatehycu03.png){.thumbnail}
 
-Une copie de sauvegarde est effectuée lors du processus de mise à jour pour revenir en arrière en cas de problèmes.
+Une copie de sauvegarde est effectuée lors du processus de mise à jour pour pouvoir revenir en arrière en cas de problèmes.
 
 ![Update HYCU 04](images/06-updatehycu04.png){.thumbnail}
 
@@ -415,6 +415,8 @@ Cliquez sur `Save`{.action}.
 ![Add credential 05](images/08-addcredential05.png){.thumbnail}
 
 Cliquez sur `Close`{.action}
+
+![Add credential 06](images/08-addcredential06.png){.thumbnail}
 
 Sélectionnez les machines virtuelles qui vont utiliser un mot de passe en cochant `la case à cocher`{.action} à droite de la machine virtuelle et cliquez sur l'icône `credentials`{.action} en forme de clé.
 
