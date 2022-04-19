@@ -36,7 +36,7 @@ The Public Cloud Databases offer supports the following Redis versions:
 
 - Redis 6.2
 
-You can folllow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+You can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
 
 ### Redis clients
 
