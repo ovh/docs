@@ -1,58 +1,54 @@
 ---
-title: 'OVHcloud Bestellungen verwalten'
-slug: bestellungen-verwalten-ovh
-excerpt: 'Erfahren Sie hier, wie Sie Ihre Bestellungen bei OVHcloud verwalten'
-section: Abrechnung
+title: Meine OVHcloud Bestellungen verwalten
+bestellungen-verwalten-ovh
+excerpt: So verwalten Sie Ihre Bestellungen bei OVHcloud
+section: Rechnungsstellung
 ---
 
-**Letzte Aktualisierung am 04.05.2020**
+**Stand 23.03.2022**
 
 ## Ziel
 
-Eine Bestellung bei OVHcloud durchläuft verschiedene Stadien, die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen können.
+Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr OVHcloud Kundencenter verfolgen und [mit ihr interagieren](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-**In dieser Anleitung erfahren Sie alles über die Informationen auf Ihrem Bestellschein und die einzelnen Bestellschritte.**
+**Hier erfahren Sie, wie Sie Ihre Bestellungen über Ihr OVHcloud Kundencenter verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Wenn nötig, beachten Sie bitte Ihre OVHcloud-Verträge, die Sie in Ihrem OVHcloud-[Kundencenter verwenden können](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)\: Klicken Sie im Kontextmenü auf Ihren Namen oben rechts `und dann auf`{.action} Verwaltung der Dienstleistungen im Tab `Verträge`{.action}.
 >
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie sind in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) angemeldet.
 - Sie haben mindestens eine Bestellung bei OVHcloud aufgegeben.
 
-
-## In der praktischen Anwendung
+## Praktische Anwendung
 
 ### Der Bestellschein
 
-Der Bestellschein wird erstellt, sobald Sie eine Bestellung bei OVHcloud aufgeben. Darauf sind die bestellten Produkte, deren Preise sowie etwaige Rabatte aufgeführt.
+Der Bestellschein wird erstellt, sobald Sie Ihre Bestellung aufgeben. Darin werden die bestellten Produkte, deren Preis sowie mögliche Rabatte aufgeführt.
 
-![OVHcloud Bestellschein](images/order_ovh.png){.thumbnail}
+![OVH-Bestellschein](images/order01.png){.thumbnail}
 
 |Nummer|Beschreibung|
 |---|---|
-|1|Hier sind die zentralen Daten des Bestellscheins aufgeführt: Nummer, Erstellungsdatum sowie Ablaufdatum. Bitte beachten Sie, dass abgelaufene Bestellscheine nicht mehr in Ihrem Kundencenter aufgeführt werden.|
-|2|Wenn Sie bei der Bestellung in Ihrem Kundencenter eingeloggt sind, erscheint der Rechnungskontakt an dieser Stelle. Weitere Informationen über die verschiedenen Arten von Kontakten finden Sie in [dieser Anleitung](../../customer/verwaltung-der-kontakte/).|
-|3|Wenn Sie ein Standardzahlungsmittel hinterlegt haben, können Sie es an dieser Stelle auswählen. Für die automatische Verlängerung muss ein Standardzahlungsmittel hinterlegt sein.|
-|4|In diesem Bereich finden Sie die zur Verfügung stehenden Zahlungsarten. Dabei werden nur die in dem Land, in dem der Account erstellt wurde, zulässigen bzw. die mit dem Kontotyp verbundenen Zahlungsmittel aufgeführt.|
+|1|Nummer, Erstellungsdatum und Ablaufdatum des Bestellscheins. Wenn er abgelaufen ist, müssen Sie erneut bestellen.|
+|2|Ihre Rechnungsdaten. Sie müssen identifiziert werden, um Ihren Bestellschein anzuzeigen und zu bezahlen.|
+|3|Zahlungsmittel in Ihrem Kundenkonto gespeichert. Weitere Informationen finden Sie in der Anleitung \[Zahlungsarten verwalten\](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|4|Verfügbare Zahlungsmethoden. Ihnen werden nur die im Heimatland des Accounts autorisierten Zahlungsmethoden oder die mit der Art des registrierten Accounts verbundenen Zahlungsmethoden angeboten.|
 
+Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) abrufen.
 
-Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} abrufen.
+### Auf die Bestellscheine im OVHcloud -Kundencenter zugreifen
 
-
-### Auf die Bestellscheine im OVHcloud Kundencenter zugreifen
-
-Um den Verwaltungsbereich Ihrer Bestellungen aufzurufen, klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf Ihrem `Dashboard` auf `Meine Bestellungen anzeigen`{.action}.
+Um auf das Verwaltungspanel der Bestellungen zuzugreifen, loggen Sie sich [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) Kundencenter ein und klicken Sie dann im Tab `Dashboard auf`{.action} Meine Bestellungen `anzeigen`{.action}.
 
 ![Kundencenter](images/huborders.png){.thumbnail}
 
-So gelangen Sie auf eine Übersicht aller nicht abgelaufenen Bestellungen, die über Ihren OVHcloud Kunden-Account getätigt wurden.
+Nachfolgend eine Zusammenfassung der verschiedenen Bestellungen:
 
-![Bestellübersicht](images/order_recap.png){.thumbnail}
-
+![Bestellübersicht](images/order03.png){.thumbnail}
 
 Hier finden Sie zu jeder Bestellung folgende Informationen:
 
@@ -61,41 +57,61 @@ Hier finden Sie zu jeder Bestellung folgende Informationen:
 - den Status der Bestellung
 - den Gesamtbetrag des Bestellscheins einschließlich Steuern
 
-Folgende Bestellschritte sind üblich:
+Folgende Bestellstatus sind möglich:
 
 |Status|Beschreibung|
 |---|---|
-|Unbezahlt|Dieser Status bedeutet, dass für eine Bestellung noch keine Zahlung eingegangen ist. Die Zahlung ist nicht obligatorisch; wenn bis zum Ablaufdatum des Bestellscheins keine Zahlung erfolgt, wird die Bestellung nicht abgeschlossen und verschwindet aus der Übersicht.|
+|Unbezahlt|Dieser Status entspricht einem Bestellschein, für den noch keine Zahlung eingegangen ist. Ohne Zahlung Ihrerseits läuft die Bestellung ab und wird zu dem im Bestellschein angegebenen Datum storniert. Wenn Sie nach Ablauf dieser Frist den Kauf abschließen möchten, müssen Sie einfach noch eine Bestellung aufgeben|
 |Validierung|Ihre Bestellung wird von unseren Teams manuell überprüft (nur an Werktagen). Sobald dieser Schritt abgeschlossen ist, erfolgt die Bestätigung. Falls dieser Vorgang nicht abgeschlossen werden kann, werden Sie per E-Mail zur Einreichung benötigter Unterlagen aufgefordert.|
 |Wird geliefert|Die Lieferung Ihres Dienstes ist in Bearbeitung, Sie müssen nur abwarten. Je nach Dienst kann die Lieferung wenige Minuten oder einige Stunden in Anspruch nehmen.|
 |Geliefert|Ihr Dienst wurde bereitgestellt und die Zugangsdaten wurden Ihnen (sofern erforderlich) per E-Mail übermittelt.|
 
-Bestellscheine, deren Lieferung in Bearbeitung ist oder deren Zahlung noch aussteht, können Sie erneut öffnen. Klicken Sie hierfür einfach auf `...`{.action} und anschließend auf `Bestellung im HTML-Format abrufen`{.action}.
+Sie können das Bestellformular auch im HTML-Format anzeigen, indem Sie rechts neben Ihrer Bestellung auf `...`{.action} und danach auf `Die Bestellung im HTML-Format anzeigen`{.action} klicken.
 
-![Bestellübersicht](images/html_order.png){.thumbnail}
+![Bestellübersicht](images/order04.png){.thumbnail}
 
+### Bestellung verfolgen
+
+Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über Ihr OVHcloud Kundencenter [verfolgen](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
+
+* Klicken Sie auf `Ihr Dashboard`, dann auf `Meine Bestellungen anzeigen`{.action} und dann `...`{.action} vor Ihrer Bestellung.
+* Wählen Sie `Nachverfolgung der Bestellung`{.action}. Die Nachverfolgung der Bestellung kann auch angezeigt werden, indem in der Spalte Status einer Bestellung auf den Status geklickt `wird`.
+
+![Bestellverfolgung](images/order05b.png){.thumbnail}
+
+Das folgende Fenster wird angezeigt, um Sie in vier Schritten zu begleiten.
+
+![Bestellverfolgung](images/order06.png){.thumbnail}
 
 ### Widerrufsrecht ausüben
 
-Gemäß unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.de/support/agb-vertrage/) können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.
+Gemäß Artikel 12.1.2\. unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} *können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.*
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 
-Sofern die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, ist der Widerruf direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} möglich. Gehen Sie hierfür so vor, wie oben für die Ansicht des Bestellscheins beschrieben, wählen Sie dann aber anstatt `Bestellung im HTML-Format abrufen`{.action} den Punkt `Bestellung stornieren`{.action}.
+> [!warning]
+>
+> Das Widerrufsrecht gilt nur für Privatpersonen und gilt nur für Neubestellungen. Sie können sie daher nicht für Verlängerungen verwenden oder wenn Ihr [OVHcloud Kundenkonto](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte) von einem anderen Typ als Privatperson *ist*.
+>
+> Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, wenn der Bestellschein abläuft
+>
 
-![Stornierung einer Bestellung](images/cancel_order.png){.thumbnail}
+Wenn die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, kann es direkt über das OVHcloud Kundencenter [in Kraft gesetzt werden](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
 
-Bestätigen Sie nun die Stornierung der Bestellung, indem Sie den Haken bei `Ja, ich möchte diese Bestellung stornieren`{.action} setzen und dann auf den Bestätigungsbutton klicken.
+* Klicken Sie auf `Ihr Dashboard`, dann auf `Meine Bestellungen anzeigen`{.action} und dann `...`{.action} vor Ihrer Bestellung.
+* Wählen Sie `Die Bestellung stornieren`{.action}.
 
-![Stornierung bestätigen](images/cancellation_validation.png){.thumbnail}
+![Stornierung einer Bestellung](images/cancelorder1.png){.thumbnail}
 
+Bestätigen Sie nun die Stornierung der Bestellung, indem Sie ein Häkchen bei `Ja, ich möchte diese Bestellung stornieren`{.action} setzen und dann auf den Bestätigungsbutton klicken.
+
+![Stornierung bestätigen](images/cancelorder2.png){.thumbnail}
 
 > [!primary]
 >
-> Die Erstattung des Kaufpreises abzüglich der anteiligen Kosten für den Zeitraum, während dessen Ihnen der/die Dienst/e zur Verfügung stand/en, erfolgt innerhalb einer Frist von 30 Tagen ab dem Zeitpunkt der Ausübung Ihres Widerrufsrechts.
+> Die ursprünglich gezahlten Beträge werden innerhalb von 30 Tagen nach dem Widerrufsantrag nach Abzug der Tage der verbrauchten Dienste pro rata temporis erstattet.
 >
-
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
