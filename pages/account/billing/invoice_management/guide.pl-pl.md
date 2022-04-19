@@ -33,7 +33,7 @@ Faktura wystawiona przez OVHcloud jest wysyłana e-mailem za pomocą linku klikn
 
 ### Informacje na Twojej fakturze
 
-Faktura zostaje do Ciebie wysłana w momencie, gdy uregulujesz płatność za usługę lub po automatycznym odnowieniu. Znajdują się na niej informacje dotyczące produktów, za które należność została uregulowana lub oczekuje na uregulowanie oraz terminy odnowienia usług wraz z cenami. Numer faktury zaczyna się zawsze od liter „PL”.
+Faktura zostaje do Ciebie wysłana w momencie, gdy uregulujesz płatność za usługę lub po automatycznym odnowieniu. Znajdują się na niej informacje dotyczące produktów, za które należność została uregulowana lub oczekuje na uregulowanie oraz terminy odnowienia usług wraz z cenami. Numer faktury zaczyna się zawsze od liter “PL”.
 
 ![Szczegółowy opis faktury](images/invoice_ovh.png){.thumbnail}
 
@@ -44,16 +44,16 @@ Faktura zostaje do Ciebie wysłana w momencie, gdy uregulujesz płatność za us
 
 Poniżej znajdują się szczegóły dotyczące fakturowanych usług:
 
-- „Opłata za usługę”: opis usługi oraz okres rozliczeniowy, za który naliczona jest należność;
-- „Domena”: oznaczenie fakturowanej usługi;
-- „Ilość”: liczba jednostek fakturowanej usługi; 
-- „Cena jednostkowa netto” i „Wartość netto”: cena usługi.
+- “Opłata za usługę”: opis usługi oraz okres rozliczeniowy, za który naliczona jest należność;
+- “Domena”: oznaczenie fakturowanej usługi;
+- “Ilość”: liczba jednostek fakturowanej usługi; 
+- “Cena jednostkowa netto” i “Wartość netto”: cena usługi.
 
-Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty należności oznaczonej: „Razem brutto”.
+Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty należności oznaczonej: “Razem brutto”.
 
 > [!primary]
 >
-> Jeśli przy użytym sposobie płatności pojawia się napis „Termin zapłaty wg regulaminu”, oznacza to, że usługa objęta jest automatycznym odnowieniem. Użyty sposób płatności to sposób zarejestrowany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Jeśli przy użytym sposobie płatności pojawia się napis “Termin zapłaty wg regulaminu”, oznacza to, że usługa objęta jest automatycznym odnowieniem. Użyty sposób płatności to sposób zarejestrowany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 ### Sekcja płatności w Panelu klienta
@@ -82,7 +82,7 @@ W poszczególnych wierszach tabelki znajdziesz następujące informacje:
 > Jeśli saldo do uregulowania wyświetla się na czerwono, faktura oczekuje na realizację płatności. Data płatności wskazana na fakturze informuje Cię, że płatność jest wymagalna natychmiast.
 >
 
-Jeśli wyświetla się napis „Informacja niedostępna”, oznacza to, że faktura nie jest powiązana z automatycznym odnowieniem. Możesz wyświetlić te informacje, klikając na `...`{.action}. Zaproponowane zostaną trzy możliwości:
+Jeśli wyświetla się napis “Informacja niedostępna”, oznacza to, że faktura nie jest powiązana z automatycznym odnowieniem. Możesz wyświetlić te informacje, klikając na `...`{.action}. Zaproponowane zostaną trzy możliwości:
 
 ![Operacje dotyczące faktur](images/actions_choices.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Utworzony zostanie wówczas formularz [zamówienia](https://docs.ovh.com/pl/bill
 
 ### Śledzenie płatności
 
-Możesz śledzić dokonane płatności w zakładce`Płatności` w sekcji `Informacje o płatnościach`{.action}. Pozwala to na powiązanie faktur z odpowiadającymi im płatnościami. Numer dokumentu potwierdzającego uregulowanie salda zaczyna się zawsze od liter „PA_PL”.
+Możesz śledzić dokonane płatności w zakładce`Płatności` w sekcji `Informacje o płatnościach`{.action}. Pozwala to na powiązanie faktur z odpowiadającymi im płatnościami. Numer dokumentu potwierdzającego uregulowanie salda zaczyna się zawsze od liter “PA_PL”.
 
 ![Informacje o płatnościach](images/payment_tracking.png){.thumbnail}
 
@@ -121,4 +121,4 @@ Z tej sekcji możesz również eksportować dokumenty potwierdzające płatnoś�
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

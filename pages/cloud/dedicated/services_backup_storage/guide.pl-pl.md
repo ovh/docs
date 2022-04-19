@@ -6,7 +6,7 @@ section: Storage
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 15-03-2021**
@@ -306,7 +306,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 > [!primary]
 >
-> Aby użyć protokołu FTPS, zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: „ftpback-rbxX-YYY.mybackup.ovh.net”. Dodaj również flagę `-ssl` do poniższej komendy.
+> Aby użyć protokołu FTPS, zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: “ftpback-rbxX-YYY.mybackup.ovh.net”. Dodaj również flagę `-ssl` do poniższej komendy.
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:
@@ -358,7 +358,7 @@ Poniższy przykład kodu zawiera zmienne, które należy zastąpić odpowiednimi
 
 > [!primary]
 >
-> lftp używa domyślnie FTP+SSL/TLS. W związku z tym zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: „ftpback-rbxX-YYY.mybackup.ovh.net”.
+> lftp używa domyślnie FTP+SSL/TLS. W związku z tym zmień nazwę Twojej usługi Backup Storage. Na przykład, jeśli nazwa brzmi “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, zmień ją w następujący sposób: “ftpback-rbxX-YYY.mybackup.ovh.net”.
 >
 
 Aby zapisać jeden plik, możesz użyć następującej komendy:

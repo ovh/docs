@@ -7,10 +7,10 @@ order: 2
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 24-11-2021**
+**Ostatnia aktualizacja z dnia 14-04-2022**
 
 ## Wprowadzenie
 
@@ -83,6 +83,12 @@ Kliknij w linii odpowiedniej reguły, aby sprawdzić szczegóły planowania kopi
 
 Aby skonfigurować [politykę snapshotów](#snapshot_policy), wróć do sekcji [Zarządzanie wolumenami](#instructions) usługi i otwórz zakładkę `Snapshot policies`{.action}.
 
+#### Lista snapshotów <a name="access_snapshots"></a>
+
+W Panelu klienta nie możesz sprawdzić ani przywrócić wykonanych kopii zapasowych snapshot.
+
+Aby uzyskać dostęp do snapshotów z punktu montowania, możesz użyć poleceń dostępnych w dokumentacji [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+
 #### Zarządzanie ACL wolumenów <a name="access_control"></a>
 
 Kontrola dostępu do wolumenów działa poprzez ograniczenia adresów IP. Ponieważ żadne ograniczenie nie jest domyślnie skonfigurowane, pierwszym krokiem podczas tworzenia wolumenów jest zdefiniowanie adresów IP lub zakresów, z których dostęp będzie dozwolony.
@@ -132,6 +138,7 @@ Jeśli nie jesteś zaznajomiony z korzystaniem z rozwiązania Enterprise File St
 - [Konfiguracja kontroli dostępu](#access_control)
 - [Konfiguracja polityki snapshota](#snapshot_policy) (opcjonalnie)
 - [Zastosowanie reguł snapshota dla wolumenu](#snapshots) (opcjonalnie)
+- [Wyświetlanie i pobieranie snafonów](#access_snapshots) (opcjonalnie)
 - [Zaloguj się do wolumenu zgodnie z instrukcjami w sekcji "Informacje ogólne"](#modify_volume)
 - [Dowiedz się, jak korzystać z Enterprise File Storage poprzez API, sprawdź nasze przewodniki](#gofurther) (opcjonalnie)
 

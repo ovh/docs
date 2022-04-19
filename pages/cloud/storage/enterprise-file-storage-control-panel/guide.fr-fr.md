@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 2
 ---
 
-**Dernière mise à jour le 24/11/2021**
+**Dernière mise à jour le 14/04/2022**
 
 ## Objectif
 

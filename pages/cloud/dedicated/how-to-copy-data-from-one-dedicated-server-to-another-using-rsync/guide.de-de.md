@@ -15,7 +15,7 @@ Rsync (für Fernsynchronisierung) wird unter der GNU GPL vertrieben und ist ein 
 
 > [!warning]
 >
-In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/en/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -58,7 +58,7 @@ Dazu ist der allgemeine Aufbau des in dieser Anleitung verwendeten Befehls von d
 
 Rsync verwendet das Protokoll SSH für die Verbindung zum Zielgerät, jedoch müssen die notwendigen Kennungen hinzugefügt werden. Der Aufbau des Befehls wird demnach wie folgt vervollständigt: `rsync -av *YourLocalFolder*/ login@server:/*DestinationFolder*/`
 
-Falls Sie den SSH-Port auf einen anderen Port als Port 22 gelegt haben, muss die Nummer des zu verwendenden Ports angegeben werden, um die SSH-Verbindung herzustellen, indem Sie` -e 'ssh -p X' ` Ihrem Befehl hinzufügen, wobei „X“ der zu verwendende SSH-Port ist.
+Falls Sie den SSH-Port auf einen anderen Port als Port 22 gelegt haben, muss die Nummer des zu verwendenden Ports angegeben werden, um die SSH-Verbindung herzustellen, indem Sie` -e 'ssh -p X' ` Ihrem Befehl hinzufügen, wobei “X” der zu verwendende SSH-Port ist.
 
 Der Befehl, um Ihre Daten mit rsync von einem Server auf einen anderen zu kopieren ist also:
 

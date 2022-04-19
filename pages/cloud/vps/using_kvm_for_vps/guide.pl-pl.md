@@ -5,7 +5,11 @@ slug: kvm_na_serwerach_vps
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja z dnia 7-06-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 7/06/2020**
 
 ## Wprowadzenie
 
@@ -15,8 +19,8 @@ Konsola KVM pozwala na bezpośrednie połączenie z serwerem VPS bez koniecznoś
 
 ## Wymagania początkowe
 
-- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na Twoim koncie OVHcloud.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -100,4 +104,4 @@ W przypadku problemów z KVM, postępuj zgodnie z poleceniem API dotyczącym dos
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

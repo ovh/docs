@@ -30,7 +30,7 @@ Nella nuova pagina visualizzi una tabella con tutti i metodi di pagamento salvat
 
 ### Aggiungere un metodo di pagamento
 
-Quando effettui il primo ordine di un prodotto OVH ti viene chiesto di salvare un metodo di pagamento per garantire il rinnovo del servizio tramite prelevamento automatico.
+Quando effettui il primo ordine di un prodotto OVHcloud ti viene chiesto di salvare un metodo di pagamento per garantire il rinnovo del servizio tramite prelevamento automatico.
 
 Questo metodo di pagamento è utilizzato di default per i tuoi rinnovi e proposto nel momento in cui effettui un nuovo ordine.
 

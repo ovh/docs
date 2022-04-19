@@ -3,7 +3,7 @@ title: "Comment migrer de Enterprise Cloud Databases vers Public Cloud Databases
 excerpt: Learn how to migrate a PostgreSQL Enterprise Cloud Databases instance to Public Cloud Databases for PostgreSQL
 slug: postgresql/howto-migrate-ecdb-to-pcd
 section: PostgreSQL - Guides
-order: 303
+order: 080
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/howto-migrate-ecdb-to-pcd/'
 ---

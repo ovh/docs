@@ -3,7 +3,7 @@ title: PostgreSQL - Tutorial - Install Wagtail and connect it to OVHcloud Manage
 slug: postgresql/tutorial-connect-wagtail-to-managed-postgresql
 excerpt: "Find out how to install Wagtail and connect it to an OVHcloud Managed PostgreSQL service"
 section: PostgreSQL - Tutorials
-order: 02
+order: 020
 ---
 
 
@@ -148,7 +148,7 @@ The useful parameters, available in the [OVHcloud Control Panel](https://www.ovh
 - The db Password
     - Get it after you reset it.
 
-![Password reseted](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql11.png){.thumbnail}
+
 
 ```python
 DATABASES = {

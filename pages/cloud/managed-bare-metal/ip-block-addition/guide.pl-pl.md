@@ -73,7 +73,7 @@ Należy zastosować następujące wywołanie API:
 Pola należy wypełnić w następujący sposób:
 
 - ip: blok IP z /maską
-- nexthop „newPrimaryIp” (wielkość liter jest rozróżniana)
+- nexthop “newPrimaryIp” (wielkość liter jest rozróżniana)
 - to: docelowa usługa Managed Bare Metal w formie pcc-XXX-XXX-XXX-XXX
 
 ![champ nexthop](images/move-api.png){.thumbnail}
@@ -83,7 +83,7 @@ Wynik będzie następujący:
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów IP”:
+Następnie użyj tego wywołania API, aby przenieść IP na “parking adresów IP”:
 
 > [!api]
 >
@@ -97,7 +97,7 @@ Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów 
 
 Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Bare Metal Cloud`{.action}, a następnie `Managed Bare Metal`{.action}. Kliknij Twoją usługę Managed Bare Metal, a następnie kartę `Operacje`{.action}.
 
-Odnośnik do operacji to „removeIpRipeBlock”.
+Odnośnik do operacji to “removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
 

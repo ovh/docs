@@ -18,7 +18,7 @@ Kiedy zamawiasz serwer dedykowany, nie jest na nim natywnie zaimplementowany ża
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
 
@@ -139,7 +139,7 @@ W tym celu połącz się z serwerem za pomocą SSH i wpisz następujące polecen
 nano /etc/ssh/sshd_config
 ```
 
-Teraz znajdź następującą sekcję i w miejsce „yes” wstaw „no” w wierszu `PermitRootLogin`, jak pokazano w poniższym przykładzie:
+Teraz znajdź następującą sekcję i w miejsce “yes” wstaw “no” w wierszu `PermitRootLogin`, jak pokazano w poniższym przykładzie:
 
 ```sh
 # Authentication: 
@@ -156,7 +156,7 @@ Po zarejestrowaniu i zamknięciu pliku konfiguracyjnego uruchom ponownie usług�
 
 ### Instalacja i konfiguracja Fail2ban
 
-Fail2ban to oprogramowanie zapobiegające włamaniom, które blokuje nieznane adresy IP, gdy próbują spenetrować Twój system. Ten pakiet jest zalecany w celu ochrony Twojego serwera przed atakami typu „brute force”.
+Fail2ban to oprogramowanie zapobiegające włamaniom, które blokuje nieznane adresy IP, gdy próbują spenetrować Twój system. Ten pakiet jest zalecany w celu ochrony Twojego serwera przed atakami typu “brute force”.
 
 Do instalacji Fail2ban użyj następującej komendy:
 

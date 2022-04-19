@@ -59,7 +59,7 @@ In unserem Beispiel bleiben so 12 TB nutzbare Speicherkapazität.
 
 #### RAID 10
 
-Dieser Modus ist eine Kombination aus zwei Prozessen. Der erste Prozess besteht darin, die Daten aufzuteilen und auf zwei Festplatten zu speichern („Striping“). Hierdurch wird die Performance erhöht, da Anfragen gleichzeitig an beide Festplatten gesendet werden können. Beim zweiten Prozess werden die Daten im „Mirror“-Modus auf zwei Festplatten dupliziert. So erhalten Sie die Fehlertoleranz bei Ausfall zweier Festplatten in einem Cluster.
+Dieser Modus ist eine Kombination aus zwei Prozessen. Der erste Prozess besteht darin, die Daten aufzuteilen und auf zwei Festplatten zu speichern (“Striping”). Hierdurch wird die Performance erhöht, da Anfragen gleichzeitig an beide Festplatten gesendet werden können. Beim zweiten Prozess werden die Daten im “Mirror”-Modus auf zwei Festplatten dupliziert. So erhalten Sie die Fehlertoleranz bei Ausfall zweier Festplatten in einem Cluster.
 
 In unserem Beispiel bleiben so 12 TB nutzbare Speicherkapazität.
 

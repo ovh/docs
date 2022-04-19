@@ -127,7 +127,7 @@ Informacje o parametrach znajdziesz na [tej stronie](https://docs.vmware.com/en/
 
 ### Reguła HA
 
-Przejdź do sekcji `Konfiguruj`, a następnie do karty `Reguły VM/Hosta`, aby utworzyć regułę typu „Maszyny wirtualne do maszyn wirtualnych”.
+Przejdź do sekcji `Konfiguruj`, a następnie do karty `Reguły VM/Hosta`, aby utworzyć regułę typu “Maszyny wirtualne do maszyn wirtualnych”.
 
 Dzięki temu zostanie dodany warunek restartu, który zapewni, że wszystkie maszyny wirtualne z pierwszej grupy zostaną zrestartowane przed restartem maszyn z drugiej grupy.
 

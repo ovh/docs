@@ -9,20 +9,20 @@ section: Tutoriales
 
 ## Objetivo
 
-Plesk es un panel de control de servidores fácil de usar que puede instalarse en las instancias del Public Cloud de OVH.
+Plesk es un panel de control de servidores fácil de usar que puede instalarse en las instancias del Public Cloud de OVHcloud.
 
 **Esta guía explica cómo instalar Plesk en una instancia de Public Cloud.** 
 
 > [!warning]
 > 
-> La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
+> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. No dude en participar en nuestro [foro comunitario](https://community.ovh.com/en/){.external} para solicitar ayuda a otros usuarios.
 >
 
 ## Requisitos
 
-- [Crear una instancia desde el área de cliente de OVH](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
+- [Crear una instancia desde el área de cliente de OVHdloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
 - [Conectarse como usuario root y establecer una contraseña](../conectarse_como_usuario_root_y_establecer_una_contrasena/).
 
 ## Procedimiento
@@ -81,7 +81,7 @@ Para añadir su licencia de Plesk, necesitará la clave que le haya comunicado s
 
 > [!primary]
 >
-> OVH no comercializa licencias de Plesk para la solución Public Cloud. No obstante, puede adquirir una desde la web de [Plesk](https://www.plesk.com/){.external}.
+> OVHdloud no comercializa licencias de Plesk para la solución Public Cloud. No obstante, puede adquirir una desde la web de [Plesk](https://www.plesk.com/){.external}.
 > 
 
 La primera vez que se conecte a la interfaz, se abrirá automáticamente una página que le permitirá instalar su licencia de Plesk.

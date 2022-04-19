@@ -79,4 +79,4 @@ Também recomendamos que consulte o nosso manual para [proteger um VPS](../como-
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
