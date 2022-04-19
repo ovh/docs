@@ -1,6 +1,6 @@
 ---
 title: AI Notebooks - Manage and use data in a notebook via ui
-slug: notebook/manage-data-ui
+slug: notebooks/manage-data-ui
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
 section: AI Notebooks guides
 order: 03
