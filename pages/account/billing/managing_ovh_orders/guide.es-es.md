@@ -2,7 +2,7 @@
 title: Gestionar los pedidos en OVHcloud
 slug: gestionar-los-pedidos-en-ovh
 excerpt: Cómo gestionar los pedidos en OVHcloud
-section: Facturación
+section: Pedidos, facturas y servicios
 ---
 
 **Última actualización: 23/03/2022**

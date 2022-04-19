@@ -1,8 +1,8 @@
 ---
 title: Gerir as encomendas da OVHcloud
-slug: gerir-as-encomendas-ovh/
-excerpt: Saiba como gerir as suas encomendas na OVHcloud
-section: Faturação
+slug: gerir-as-encomendas-ovh
+excerpt: Saiba como gerir as suas encomendas da OVHcloud
+section: Gerir as encomendas, faturas e serviços
 ---
 
 **Última atualização: 23/03/2022**

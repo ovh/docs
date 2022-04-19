@@ -1,15 +1,15 @@
 ---
-title: Zarządzanie zamówieniami OVHcloud
-slug: zarzadzanie-zamowieniami-ovh/
-excerpt: Dowiedz się, jak zarządzać zamówieniami na usługi OVHcloud
-section: Płatności
+title: Zarządzanie zamówieniami w OVHcloud
+slug: zarzadzanie-zamowieniami-ovh
+excerpt: Dowiedz się, jak zarządzać zamówieniami na usługi w OVHcloud
+section: Zamówienia, faktury i usługi
 ---
 
 **Ostatnia aktualizacja z dnia 23-03-2022**
 
 ## Wprowadzenie
 
-Składając zamówienie możesz śledzić zamówienie i zarządzać nim w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Składając zamówienie możesz śledzić zamówienie i zarządzać nim w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 **Dowiedz się, jak zarządzać zamówieniami w Panelu klienta OVHcloud.**
 
