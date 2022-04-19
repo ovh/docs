@@ -1,7 +1,7 @@
 ---
-Titre : Conseils pour la gestion de vos factures et de votre compte client
+Titre : Les meilleures pratiques pour la gestion de vos factures et de votre compte client
 slug : billing-best-practices
-excerpt : Retrouvez ici nos conseils pour une meilleure gestion de vos factures, commandes, moyens de paiement et compte client
+excerpt : Retrouvez ici les éléments indispsensables pour la gestion de vos factures, commandes, moyens de paiement et compte client
 section : Gérer mes services et leur renouvellement
 order : 02
 ---
@@ -10,7 +10,7 @@ order : 02
 
 ## Objectif
 
-Ce guide vous donnera tous les conseils pour gérer correctement votre compte et la facturation de vos services OVHcloud.
+Ce guide contient les éléments indispensbles à une bonne gestion de votre compte et de la facturation de vos services OVHcloud.
 
 **Ce guide vous explique comment paramétrer vos services/comptes OVHcloud afin d'éviter toute interruption ou irrégularité.**
 
