@@ -1,22 +1,22 @@
 ---
 title: Data - concept and best practices
 slug: data
-excerpt: Learn the concept behind AI Training data
+excerpt: Learn the concept behind AI Tools data
 section: General information
 order: 105
 ---
 
-**Last updated 11th April 2022**
+**Last updated 11th April, 2022.**
 
 ## Definition
 
-- **Data** relates to any type of files (binary, text, etc.) that you want to use inside **AI Training jobs**.
+- **Data** relates to any type of files (binary, text, code, images, etc.) that you want to use inside with OVHcloud **AI tools**.
 - **Object Storage** is a scalable, resilient and secure storage place accessible from anywhere through HTTPS APIs. It is a perfect place to store static files on the long term.
-- **Volumes** are filesystems storage units mounted and used inside **AI Training jobs**.
+- **Volumes** are filesystems storage units mounted and used inside **AI Training jobs** and **AI notebooks**.
 
 ## Best practices
 
-**OVHcloud Object Storage** should be used to persist any data needed by **AI Training jobs**.
+**OVHcloud Object Storage** should be used to persist any data needed by **AI Training jobs** or **AI notebooks**.
 
 There are two ways to manage your data:
 
@@ -71,13 +71,13 @@ The purpose of the **read-write** permission is to be able to modify the content
 
 > [!primary]
 >
-> As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data was uploaded to your Object Storage.
+> As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data were uploaded to your Object Storage.
 
 ### Volume caching and sharing
 
 By default **filesystem volumes** are created and deleted on the fly for each job needing it.
 
-Users can enable a `cache` feature that allow jobs and notebooks to re-use available volumes instead of creating a new one each time. That feature serves several purposes:
+User can enable a `cache` feature that allow jobs and notebooks to re-use available volumes instead of creating a new one each time. That feature serves several purposes :
 
 - Reducing synchronization time for data that have already been downloaded before.
 - Sharing same volumes between several jobs or notebooks.
@@ -93,7 +93,6 @@ Users can enable a `cache` feature that allow jobs and notebooks to re-use avail
 - You can check how to [use your data in an AI Notebook](https://docs.ovh.com/ca/en/publiccloud/ai/cli/access-object-storage-data/).
 
 - You can check how to [launch an AI Training job with attached volumes](https://docs.ovh.com/ca/en/publiccloud/ai/cli/run-job-cli/).
-
 
 ## Feedback
 
