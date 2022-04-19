@@ -1,5 +1,5 @@
 ---
-title: M3 Aggregator - Capabilities and Limitations
+title: M3 Aggregator - Capacités et limitations (EN)
 slug: m3aggregator/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
 section: M3 Aggregator - Guides
