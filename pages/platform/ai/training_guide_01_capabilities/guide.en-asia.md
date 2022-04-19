@@ -30,7 +30,7 @@ If you chose the number of CPU:
 Information about maximum number of CPU/GPU, memory per CPU/GPU and local storage are available with the `ovhai` CLI.
 
 ``` {.console}
-ovhai capability
+ovhai capabilities flavor list
 ```
 
 > [!primary]
