@@ -235,7 +235,7 @@ votre `loadbalancer`{.action} dans la barre de menu à gauche.
 
 Positionnez vous sur `Server clusters`{.action} et cliquez sur `Add a server cluster`{.action}.
 
-![Configure Load Balancer 01](images/03b-configureloadbalancer01.png){.thumbnail}
+![Configure Load Balancer 01](images/03a-configureloadbalancer01.png){.thumbnail}
 
 Nommez votre ferme de serveurs dans `Name`{.action} , selectionnez `TCP`{.action} et saisissez ces informations
 
@@ -245,11 +245,11 @@ Nommez votre ferme de serveurs dans `Name`{.action} , selectionnez `TCP`{.action
 
 Cliquez sur `Add`{.action} pour valider la création de la ferme de serveurs.
 
-![Configure Load Balancer 02](images/03b-configureloadbalancer02.png){.thumbnail}
+![Configure Load Balancer 02](images/03a-configureloadbalancer02.png){.thumbnail}
 
 Cliquez sur `Add a server`{.action}
 
-![Configure Load Balancer 03](images/03b-configureloadbalancer03.png){.thumbnail}
+![Configure Load Balancer 03](images/03a-configureloadbalancer03.png){.thumbnail}
 
 Saisissez ces options
 
@@ -259,11 +259,11 @@ Saisissez ces options
 
 Cliquez sur `Add`{.action} pour valider la création du cluster
 
-![Configure Load Balancer 04](images/03b-configureloadbalancer04.png){.thumbnail}
+![Configure Load Balancer 04](images/03a-configureloadbalancer04.png){.thumbnail}
 
 Positionnez vous sur `Front-ends`{.action} et cliquez sur `Add a front-end`{.action}
 
-![Configure Load Balancer 05](images/03b-configureloadbalancer05.png){.thumbnail}
+![Configure Load Balancer 05](images/03a-configureloadbalancer05.png){.thumbnail}
 
 Nommez votre fronted dans `Names`{.action} choisissez le protocole `Tcp`{.action} et modifier ces options:
 
@@ -273,19 +273,19 @@ Nommez votre fronted dans `Names`{.action} choisissez le protocole `Tcp`{.action
 
 Ensuite cliquez sur `Add`{.action}
 
-![Configure Load Balancer 06](images/03b-configureloadbalancer06.png){.thumbnail}
+![Configure Load Balancer 06](images/03a-configureloadbalancer06.png){.thumbnail}
 
 Cliquez sur `Apply configuration`{.action}
 
-![Configure Load Balancer 07](images/03b-configureloadbalancer07.png){.thumbnail}
+![Configure Load Balancer 07](images/03a-configureloadbalancer07.png){.thumbnail}
 
 Sélectionnez le `Datacenter`{.action} et cliquez sur `Apply configuration`{.action}
 
-![Configure Load Balancer 08](images/03b-configureloadbalancer08.png){.thumbnail}
+![Configure Load Balancer 08](images/03a-configureloadbalancer08.png){.thumbnail}
 
 Se positionnez sur `Tasks`{.action} pour voir l'avancement de l'application des changements
 
-![Configure Load Balancer 08](images/03b-configureloadbalancer09.png){.thumbnail}
+![Configure Load Balancer 08](images/03a-configureloadbalancer09.png){.thumbnail}
 
 Pour plus d'information concernant le Load balancer d'OVHcloud reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
