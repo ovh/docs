@@ -28,7 +28,7 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Au travers de votre espace client d'avoir un compte public cloud avec un **bucket** de stockage de type **High Performance Object Storage** qui contient un utilisateur ayant les droits en lecture et écriture. Pour plus d'information sur la création d'un compte public et d'un stockage de consulter ces sites [Création d'un projet public](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) et [Débuter avec S3](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
+- Avoir un compte public cloud avec un **bucket** de stockage de type **High Performance Object Storage** qui contient un utilisateur ayant les droits en lecture et écriture. Vous trouverez plus d'informations sur la création d'un compte public et d'un stockage sur ces liens  [Création d'un projet public](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) et [Débuter avec S3](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
 - Disposer sur votre Cluster Nutanix de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 
@@ -121,6 +121,9 @@ Saisissez ces valeurs :
 - **Email** : `hycu@example.com`{.action}
 - **Password** : `mot de passe`{.action}
 
+> [!primary]
+> Ces informations sont fournies à titre d'exemple l'adresse de messagerie est obligatoire mais n'est pas utilisée 
+
 Cochez la case `Cluster Admin`{.action} et cliquez sur `Save`{.action}
 
 ![Add local user to Prism Element 04](images/01-adduserprismelement04.png){.thumbnail}
@@ -143,7 +146,7 @@ Cliquez sur `Create VM`{.action}.
 
 Nommez la machine virtuelle dans `Name`{.action} et modifiez les propriétés de la machine virtuelle avec ces paramètres:
 
-- **CPU** :  `4 vCPU`{.action}
+- **CPU** : `4 vCPU`{.action}
 - **Cores Per CPU** : `2 Cores`{.action}
 - **Memory** : `8GB`{.action}
 
@@ -342,11 +345,16 @@ Sélectionnez `Targets`{.action} dans le menu à gauche et cliquez sur `+ Add`{.
 
 ![Configure HYCU 09](images/03-configurehycu09.png){.thumbnail}
 
-Saisissez les informations fournies par OVHcloud lors d'un abonnement à **High Performance Object Storage** ou **Standard Object Storage (SWIFT)** d'OVHcloud.
+Saisissez les paramètres de configurations et les clés d’authentification de votre utilisateur S3 ayant les droits d’accès en lecture/écriture au bucket S3 utilisé comme expliqué ci-dessous :
 
 - **Name** : `Nom`{.action}
 - **Size** : `Taille du stockage`{.action}
 - **Type** : `AWS S3/Compatible`{.action}
+
+> [!warning]
+> le service **High Performance Object Storage** d'OVHcloud n'a pas de limites de stockage et est facturé à l'utilisation .
+> Dans la configuration du logiciel HYCU il faut fixer une valeur comme dans l'exemple ci-dessous mais il est tout à fait possible de choisir une tout autre valeur.
+>
 
 Activez `ENABLE COMPRESSION`{.action} et faites défilez la fenêtre avec la `barre de défilement`{.action}. 
 
@@ -356,8 +364,8 @@ Finalisez la saisie des informations :
 
 - SERVICE ENDPOINT: `URL Stockage S3`{.action}
 - BUCKET NAME: `Nom du bucket`{.action}
-- ACCESS KEY ID: `Clés d'accès au bucket`{.action}
-- SECRET ACCESS KEY `clesecrete`{.action}
+- ACCESS KEY ID: `Clé d'accès de l'utilisateur S3`{.action}
+- SECRET ACCESS KEY `Clé secrète de l'utilisateur S3`{.action}
 
 Activez `TARGET ENCRYPTION`{.action} et cliquez sur `Save`{.action}.
 
@@ -367,7 +375,7 @@ La cible est activée pour les sauvegardes du cluster NUTANIX.
 
 ![Configure HYCU 12](images/03-configurehycu12.png){.thumbnail}.
 
-### Mettre à jour d'HYCU
+### Mise à jour d'HYCU
 
 HYCU fournie régulièrement des mises à jour voici le processus de mise à jour.
 
