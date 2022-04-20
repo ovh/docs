@@ -12,7 +12,7 @@ order: 1
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Grafana offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -35,7 +35,7 @@ The Public Cloud Databases offer supports the following Grafana versions:
 
 - Grafana 8.3
 
-You can folllow Grafana Release Cycle on their official page : <https://grafana.com/>
+You can follow Grafana Release Cycle on their official page : <https://grafana.com/>
 
 ### Grafana clients
 
