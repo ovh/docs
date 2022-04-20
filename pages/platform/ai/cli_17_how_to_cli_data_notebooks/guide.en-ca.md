@@ -111,6 +111,21 @@ Cached volumes will be deleted at least 72 hours after the last notebook using i
 Note that the cache is shared with all users in your project. The main consequence that you need to be careful about
 is the fact that if someone else modifies the data in your cached volume, you will also see the modifications on your side.
 
+## Update volume configuration
+
+It's possible to update the volumes configuration of a notebook with the `patch` command.
+It can be convenient if you need afterward a new object storage and don't want to recreate the whole notebook.
+
+To do so, use the `patch` command with the `--volume` option:
+```{.console}
+$ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
+
+```
+
+> [!primary]
+> 
+> This is the same option as the `run` command above. You can choose to mount the volume in read only or read & write mode and mount multiple volumes.
+
 ## Feedback
 
 Please send us your questions, feedback and suggestions to improve the service:
