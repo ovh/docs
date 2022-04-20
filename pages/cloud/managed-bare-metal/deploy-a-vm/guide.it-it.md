@@ -33,12 +33,12 @@ Per effettuare l’operazione clicca con il tasto destro sul cluster in question
 
 Per creare una macchina virtuale è possibile scegliere tra diverse opzioni:
 
-- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione-in-sftp/))
-- da un template personale o [fornito da OVHcloud](../installazione-template-ovhcloud/)
-- clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP
-- clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali
-- clonare un template in un altro template, ad esempio per averlo a disposizione su diversi datastore e prevenire cali di performance durante i deploy massivi
-- convertire un template in macchina virtuale. Questa operazione comporta la perdita del template ma potrebbe rivelarsi utile per apportare modifiche
+- Da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione-in-sftp/)).
+- Da un template personale o [fornito da OVHcloud](../installazione-template-ovhcloud/).
+- Clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP.
+- Clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali.
+- Clonare un template in un altro template, ad esempio per averlo a disposizione su diversi datastore e prevenire cali di performance durante i deploy massivi.
+- Convertire un template in macchina virtuale. Questa operazione comporta la perdita del template ma potrebbe rivelarsi utile per apportare modifiche.
 
 ![Scelta della modalità di creazione](images/vm02.png){.thumbnail}
 

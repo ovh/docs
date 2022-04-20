@@ -70,7 +70,7 @@ A window will pop up, and you will need to complete the required fields. Click `
 
 The user then gets their own ID made up of your account’s digital ID (which is listed in the “User management” menu) and their username, with the two values separated by a “/”.
 
-Example: **1234-567-89/john.smith**.
+Example: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 

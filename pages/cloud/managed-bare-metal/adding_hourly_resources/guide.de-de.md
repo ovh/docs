@@ -47,7 +47,7 @@ Nachdem Sie Ihre Bestellung bestätigt haben, können Sie den Fortschritt zum Hi
 
 ![installation](images/addhost_ess_04.png){.thumbnail}
 
-Darüber hinaus wird ein neuer Task in den „recent tasks“ von vSphere erscheinen. Über diesen können Sie den Fortschritt ebenfalls nachverfolgen.
+Darüber hinaus wird ein neuer Task in den “recent tasks” von vSphere erscheinen. Über diesen können Sie den Fortschritt ebenfalls nachverfolgen.
 
 
 ## Weiterführende Informationen

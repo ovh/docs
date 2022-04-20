@@ -106,7 +106,7 @@ Se uno dei contatti non ha ricevuto l'email, l'indirizzo di contatto inserito ne
 
 Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un messaggio che informa che la richiesta è ancora in attesa di convalida da parte dell'altro contatto. Nel caso che uno dei contatti abbia appena confermato la richiesta, è possibile che l’aggiornamento della pagina nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} richieda alcuni minuti.
 
-![Gestione dei contatti](images/managing_contacts_07.png){.thumbnail}
+![Gestione dei contatti](images/managing_contacts_007.png){.thumbnail}
 
 La modifica del contatto diventerà effettiva entro pochi minuti dalla conferma della richiesta da parte dei due contatti. Riceveranno un'email con le informazioni relative alla gestione della richiesta.
 

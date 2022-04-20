@@ -139,7 +139,7 @@ Hier einige Beispiele für Meldungen:
 | Bad checkSumType, expected: sha1, sha256, md5. | Der Prüfsummentyp ist nicht korrekt. |
 | bad checkSumType for downloaded file, got: 1234 "While Expecting 5678" | Die Prüfsumme ist nicht korrekt. |
 | Can not move backup GPT data structures to the end of disk. | Das Festplattenformat ist nicht korrekt. |
-| Could not create configdrive on disk. | Die „ConfigDrive“ Partition kann nicht erstellt werden. |
+| Could not create configdrive on disk. | Die “ConfigDrive” Partition kann nicht erstellt werden. |
 
 
 ### Deployment löschen

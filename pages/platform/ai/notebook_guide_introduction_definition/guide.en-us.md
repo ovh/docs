@@ -57,7 +57,7 @@ Select _JupyterLab_, then click on the `Next`{.action} button.
 
 > [!primary]
 >
-> Note the _Edit this step_ link on the right up corner to edit previous step of the wizard. 
+> Note the _Edit this step_ link on the right up corner to edit the previous step of the wizard.
 >
 
 Choose the AI framework you want to use and click on the `Next`{.action} button.
@@ -76,7 +76,7 @@ Next, select your privacy settings and click on the `Next`{.action} button.
 
 > [!warning]
 >
-> _Public access_ will expose your data and code to anyone getting the AI Notebook link, be careful and don't use it with sensitive data
+> _Public access_ will expose your data and code to anyone getting the AI Notebook link. Be careful and don't use it with sensitive data.
 >
 
 Next, select a location for your new cluster.
@@ -88,8 +88,9 @@ Click on the `Next`{.action} button.
 
 ![Create a Notebook 07](images/creating-a-notebook07.png){.thumbnail}
 
-Next step is about **storage options**
-Be default, you will have an ephemeral storage space (local storage) and in this step you can link Object Storage containers to your AI Notebook, and directly play with your data.
+Next step is about **storage options**.
+
+By default, you will have an ephemeral storage space (local storage) and in this step you can link Object Storage containers to your AI Notebook, and directly play with your data.
 
 You can also download Git repositiories easily in your AI Notebook.
 
@@ -103,13 +104,13 @@ SSH public keys section is optional, click on the `Next`{.action} button.
 
 ![Create a Notebook 09](images/creating-a-notebook09.png){.thumbnail}
 
-At the end of the wizard, review yours settings and click on the `Create a Notebook`{.action} button to launch the creation of your notebook.
+At the end of the wizard, review your settings and click on the `Create a Notebook`{.action} button to launch the creation of your notebook.
 
 ![Create a Notebook 10](images/creating-a-notebook10.png){.thumbnail}
 
 > [!primary]
 >
-> Note at the bottom of the screen the equivalent of all this steps with the Command Line Interface (CLI) `ovhai`.
+> Note at the bottom of the screen the equivalent of all these steps with the Command Line Interface (CLI) `ovhai`.
 >
 
 When your notebook is created, it will appear on your dashboard.
@@ -122,7 +123,8 @@ Click on the `JupyterLab`{.action} link in the `Access` column in the array that
 
 ![Create a Notebook 12](images/creating-a-notebook12.png){.thumbnail}
 
-If you have not already created a Public Cloud user account, follow this [guide](https://docs.ovh.com/us/en/publiccloud/ai/users/) and then login with your Public Cloud user account.
+If you have not already created a Public Cloud user account, follow this [guide](https://docs.ovh.com/us/en/publiccloud/ai/users/) and then log in with your Public Cloud user account.
+
 Click on the `Connect`{.action} button.
 
 ![Create a Notebook 13](images/creating-a-notebook13.png){.thumbnail}
@@ -141,7 +143,7 @@ And run the code by pressing the `▶️`{.action} button:
 ```bash
 Hello World
 ```
-You code is executed in your browser, and will consume the CPUs and GPUs resources linked to your AI Notebook.
+Your code is executed in your browser and will consume the CPU and GPU resources linked to your AI Notebook.
 
 ![Create a Notebook 15](images/creating-a-notebook15.png){.thumbnail}
 
@@ -149,12 +151,12 @@ You can save your example by clicking in the sub menu `Save`{.action} of the `Fi
 
 ## Stop the AI Notebook
 
-Go back to the OVHcloud control panel, and in AI Notebook panel you can directly stop desired notebooks
+Go back to the OVHcloud Control Panel. In the AI Notebook panel you can directly stop the desired notebooks.
 
 ### Considerations
 
 - A notebook will run indefinitely until manual interruption, meaning that you will pay for it.
-- When you stop an AI Notebook, you release the compute resources, but we keep the data from your workpace. It will be billed at the price of OVHcloud Object storage
+- When you stop an AI Notebook, you release the compute resources, but we keep the data from your workspace. It will be billed at the price of OVHcloud Object storage.
 - Billing is per minute. Each started minute is due.
 
 ## Notebook lifecycle
@@ -165,11 +167,11 @@ During its lifetime the AI Notebook will transition between the following status
 > * Billing starts once a notebook is `Pending` and ends when its status switches to `Cancelling`.
 > * Only notebooks in states `Pending` and `In service` are included in the resource quota computation.
 
--   `Pending`: the AI Notebook is starting, and volumes are synchronized from the Object Storage.
--   `In service`: the AI Notebook is running and can be accessed from your browser.
--   `Cancelling`: the AI Notebook is still running, but an interruption order was received and `RW` volumes are uploaded to your Object Storage.
--   `Stopped`: the AI Notebook is stopped and `RW` volumes have been synchronized back to your Object Storage. Compute resources are released
--   `Deleted`: the AI Noteboob data is fully deleted, you don't pay anything
+- `Pending`: The AI Notebook is starting, and volumes are synchronized from the Object Storage.
+- `In service`: The AI Notebook is running and can be accessed from your browser.
+- `Cancelling`: The AI Notebook is still running, but an interruption order was received and `RW` volumes are uploaded to your Object Storage.
+- `Stopped`: The AI Notebook is stopped and `RW` volumes have been synchronized back to your Object Storage. Compute resources are released.
+- `Deleted`: The AI Notebook data is fully deleted, you don't pay anything.
 
 ## Feedback
 

@@ -34,15 +34,15 @@ Sobald Sie auf dem Server sind, öffnen Sie den Server-Manager. Wenn er nicht be
 
 ![Server-Manager](images/local_server.png){.thumbnail}
 
-Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf **Lokaler Server**. Klicken Sie anschließend neben „NIC Teaming“ auf die Schaltfläche **Deaktiviert**.
+Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf **Lokaler Server**. Klicken Sie anschließend neben “NIC Teaming” auf die Schaltfläche **Deaktiviert**.
 
 ![Lokaler Server](images/server_manager.png){.thumbnail}
 
-Klicken Sie im NIC-Teaming-Popup im Dropdown-Menü **AUFGABEN** im Abschnitt „TEAMS“ auf die Schaltfläche **Neues Team**.
+Klicken Sie im NIC-Teaming-Popup im Dropdown-Menü **AUFGABEN** im Abschnitt “TEAMS” auf die Schaltfläche **Neues Team**.
 
 ![NIC-Teaming](images/nic_teaming.png){.thumbnail}
 
-Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben „Weitere Eigenschaften“ und ändern Sie den „Teaming-Modus“ zu LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
+Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben “Weitere Eigenschaften” und ändern Sie den “Teaming-Modus” zu LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
 
 ![Neues Team](images/new_team.png){.thumbnail}
 

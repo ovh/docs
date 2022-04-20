@@ -39,7 +39,7 @@ Für die Login-Authentifizierung auf Windows-Instanzen sind nur Benutzername und
 
 #### SSH-Schlüssel mit Linux- oder Mac-Betriebssystem erstellen
 
-Öffnen Sie zunächst über einen Mac-Computer oder ein Gerät mit installiertem Linux-Betriebssystem die Kommandozeile (Terminal). Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis ein Ordner „.ssh“ befindet. Ist der Ordner nicht vorhanden, erstellen Sie diesen:
+Öffnen Sie zunächst über einen Mac-Computer oder ein Gerät mit installiertem Linux-Betriebssystem die Kommandozeile (Terminal). Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis ein Ordner “.ssh” befindet. Ist der Ordner nicht vorhanden, erstellen Sie diesen:
 
 ```bash
 $ mkdir ~/.ssh
@@ -51,7 +51,7 @@ Verwenden Sie folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstellen:
 ```bash
 $ ssh-keygen -b 4096
 ```
-Indem Sie die Option „-t“ mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z. B.:
+Indem Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z. B.:
 
 ```bash
 $ ssh-keygen -t ecdsa -a 256
@@ -64,9 +64,9 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Sie können die Standarddatei akzeptieren, indem Sie „Enter“ drücken. Anschließend haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel durch ein Passwort zu schützen. Diese Maßnahme wird empfohlen, da sie für zusätzliche Sicherheit sorgt. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
+Sie können die Standarddatei akzeptieren, indem Sie “Enter” drücken. Anschließend haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel durch ein Passwort zu schützen. Diese Maßnahme wird empfohlen, da sie für zusätzliche Sicherheit sorgt. Da für den Zugriff auf Ihre Public Cloud Instanz über Ihr Arbeitsgerät nur der zugehörige private Schlüssel erforderlich ist, sollten an dieser Stelle angemessene Sicherheitsvorkehrungen getroffen werden. Die Passphrase muss eingegeben werden, wenn eine Verbindung mit der Instanz hergestellt wird.
 
-Ihre SSH-Schlüssel sollten im Verzeichnis „.ssh“ gespeichert sein. Zum Dateinamen der öffentlichen Schlüsseldatei wurde die Endung „.pub“ hinzugefügt.
+Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Zum Dateinamen der öffentlichen Schlüsseldatei wurde die Endung “.pub” hinzugefügt.
 
 ```ssh
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -92,7 +92,7 @@ The key's randomart image is:
 > Der private Schlüssel sollte immer sicher aufbewahrt werden und der Zugriff darauf ausschließlich autorisierten Personen gestattet sein.
 > 
 
-Wenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl „cat“ auf Ihre „.pub“-Schlüsseldatei an und kopieren Sie die Ausgabe:
+Wenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl “cat” auf Ihre “.pub”-Schlüsseldatei an und kopieren Sie die Ausgabe:
 
 ```bash
 $ cat ~/.ssh/id_rsa.pub
@@ -106,7 +106,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 
 > [!primary]
 >
->In einem MacOS-Terminal können Sie auch die „pbcopy“- und „pbpaste“-Befehle verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel diesen Befehl, um den Schlüssel aus der Datei „id_rsa.pub“ in der Zwischenablage zu speichern.
+>In einem MacOS-Terminal können Sie auch die “pbcopy”- und “pbpaste”-Befehle verwenden, um die Schlüsselfolgen zu verwalten. Verwenden Sie zum Beispiel diesen Befehl, um den Schlüssel aus der Datei “id_rsa.pub” in der Zwischenablage zu speichern.
 >
 
 ```bash
@@ -117,7 +117,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 [PuTTY](https://putty.org/){.external} ist eine Open-Source-SSH-Client-Software mit grafischem Benutzerinterface, verfügbar für Windows und andere Betriebssysteme. Sie können PuTTY verwenden, um eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software PuTTY Key Generator (PuTTYgen) kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 
-Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, durchsuchen Sie das Menü „Programme“ oder verwenden Sie die Windows-Suche.
+Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, durchsuchen Sie das Menü “Programme” oder verwenden Sie die Windows-Suche.
 
 Öffnen Sie PuTTYgen und wählen Sie einen unterstützten Verschlüsselungsalgorithmus aus. Das vorliegende Beispiel verwendet RSA. Geben Sie 4096 als Bit-Anzahl ein und klicken Sie dann auf den Button `Generate`{.action}.
 
@@ -141,12 +141,12 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 
 > [!primary]
 >
-Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung „[Zusätzliche SSH-Schlüssel konfigurieren](https://docs.ovh.com/de/public-cloud/zusaetzliche-ssh-schluessel-konfigurieren/)“.
+Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern folgen Sie der Anleitung “[Zusätzliche SSH-Schlüssel konfigurieren](https://docs.ovh.com/de/public-cloud/zusaetzliche-ssh-schluessel-konfigurieren/)”.
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Project Management” auf `SSH-Schlüssel`{.action}.
 
-Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld „Schlüssel“ ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
+Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld “Schlüssel” ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
 
 ![Schlüssel hinzufügen](images/puttygen-04.png){.thumbnail}
 
@@ -155,7 +155,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der “Start”-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der “Instanzen”-Seite, indem Sie in der linken Menüzeile unter “Compute” auf `Instances`{.action} klicken.)
 
 ![Instanz auswählen](images/instance-creation-01-2021.png){.thumbnail}
 
@@ -174,9 +174,9 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 
 > [!primary]
 >
-Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Project Management“ auf `Quota and Regions`{.action} klicken.
+Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter “Project Management” auf `Quota and Regions`{.action} klicken.
 >
-Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die „Flex“-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
+Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die “Flex”-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in dieser Anleitung.
 >
 
 Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instanz aus.
@@ -209,7 +209,7 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum
 
 ![Abrechnungsmethode auswählen](images/instance-creation-05.png){.thumbnail}
 
-Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der „Instanzen“-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
+Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der “Instanzen”-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
 
 > [!warning]
 >
@@ -220,20 +220,20 @@ Nachdem Sie überprüft haben, dass Ihre Konfigurationseinstellungen korrekt sin
 
 ### Schritt 4: Mit Ihrer Instanz verbinden <a name="connect-to-instance"></a>
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter “Compute” auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status “Aktiviert” angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
 
 ![Instanzen-Seite](images/instance-connect-01.png){.thumbnail}
 
-Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen erstellt. Der Benutzername entspricht dem gewählten Image, z. B. „ubuntu“, „debian“, „fedora“, „arch“ etc. Diese sowie weitere Eigenschaften können Sie im „Dashboard“ der Instanz einsehen, indem Sie auf `...`{.action} und dann auf `Instanz-Details`{.action} klicken.
+Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen erstellt. Der Benutzername entspricht dem gewählten Image, z. B. “ubuntu”, “debian”, “fedora”, “arch” etc. Diese sowie weitere Eigenschaften können Sie im “Dashboard” der Instanz einsehen, indem Sie auf `...`{.action} und dann auf `Instanz-Details`{.action} klicken.
 
 > [!primary]
 >
-Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung „[Änderung des SSH-Schlüssels bei Verlust](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)“.
+Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-Schlüsseln, lesen Sie bitte die Anleitung “[Änderung des SSH-Schlüssels bei Verlust](https://docs.ovh.com/de/public-cloud/nderung_des_ssh_schlussels_bei_verlust/)”.
 >
 
 #### Über Linux / Mac mit einer Linux-Instanz verbinden
 
-Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zugreifen. Ersetzen Sie „username“ in den nachfolgenden Beispielen wie zuvor beschrieben mit Ihrem Standardbenutzer. Sie können auch einfach den gesamten Login-Befehl aus dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) kopieren, indem Sie diesen im „Dashboard“ Ihrer Instanz anklicken und in Ihr Terminal kopieren.
+Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zugreifen. Ersetzen Sie “username” in den nachfolgenden Beispielen wie zuvor beschrieben mit Ihrem Standardbenutzer. Sie können auch einfach den gesamten Login-Befehl aus dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) kopieren, indem Sie diesen im “Dashboard” Ihrer Instanz anklicken und in Ihr Terminal kopieren.
 
 ![Instanzen-Seite](images/instance-connect-02.png){.thumbnail}
 
@@ -243,7 +243,7 @@ Geben Sie die Passphrase Ihres privaten Schlüssels ein, wenn Sie dazu aufgeford
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
-Da Sie mit root-Berechtigung eingeloggt sind („sudo user“), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
+Da Sie mit root-Berechtigung eingeloggt sind (“sudo user”), können Sie direkt Befehle eingeben, um Verwaltungsaufgaben auszuführen. Es wird empfohlen, zuerst Ihr Passwort zu ändern:
 
 ```bash
 $ sudo passwd username
@@ -251,7 +251,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
+Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum “root”-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
 ```bash
 $ sudo su -
@@ -261,19 +261,19 @@ Retype new password:
 passwd: password updated successfully
 # su - username
 ```
-Beachten Sie, dass es nur selten notwendig ist, zum „root“-Benutzer zu wechseln. Wir empfehlen, dass Sie sich für Verwaltungsaufgaben, die root-Berechtigungen erfordern, als ein Benutzer aus der „sudo“-Gruppe einloggen, um Befehle auszuführen.
+Beachten Sie, dass es nur selten notwendig ist, zum “root”-Benutzer zu wechseln. Wir empfehlen, dass Sie sich für Verwaltungsaufgaben, die root-Berechtigungen erfordern, als ein Benutzer aus der “sudo”-Gruppe einloggen, um Befehle auszuführen.
 
 #### Über Windows mit einer Linux-Instanz verbinden
 
 Nachdem Sie Ihre SSH-Schlüssel erstellt und gespeichert ([Schritt 1](./#schritt-1-ssh-schlussel-erstellen)) und Ihre Instanz mit dem öffentlichen Schlüssel installiert haben ([Schritt 3](./#schritt-3-instanz-erstellen)), können Sie [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) und Ihren privaten Schlüssel verwenden, um sich mit Ihrer Instanz zu verbinden.
 
-Öffnen Sie PuTTY, erweitern Sie links den Menüpunkt „SSH“ und klicken Sie dann auf „Auth“, um die Authentifizierungsoptionen einzusehen.
+Öffnen Sie PuTTY, erweitern Sie links den Menüpunkt “SSH” und klicken Sie dann auf “Auth”, um die Authentifizierungsoptionen einzusehen.
 
 ![PuTTY verwenden](images/puttyconnect-01.png){.thumbnail}
 
-Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu „Session“ und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie „ubuntu“ in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im „Dashboard“ der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
+Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu “Session” und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie “ubuntu” in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im “Dashboard” der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
 
-Sie können diese Sitzung nun für zukünftige Verbindungen speichern, damit sie über die Liste in diesem Interface verfügbar ist. Geben Sie unter „Saved Sessions“ einen beschreibenden Namen ein und klicken Sie auf `Save`{.action}, um diesen hinzuzufügen.
+Sie können diese Sitzung nun für zukünftige Verbindungen speichern, damit sie über die Liste in diesem Interface verfügbar ist. Geben Sie unter “Saved Sessions” einen beschreibenden Namen ein und klicken Sie auf `Save`{.action}, um diesen hinzuzufügen.
 
 ![PuTTY verwenden](images/puttyconnect-02.png){.thumbnail}
 
@@ -298,7 +298,7 @@ Legen Sie im ersten Schritt Ihre Standorteinstellungen fest, indem Sie eine Regi
 
 ![Windows sysprep](images/windows-connect-02.png){.thumbnail}
 
-Im zweiten Schritt wird der Standard-“Administrator“-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
+Im zweiten Schritt wird der Standard-“Administrator”-Account eingerichtet. Geben Sie zweimal Ihre Passphrase ein und klicken Sie auf `Beenden`{.action}, um den Installationsvorgang abzuschließen. Verwenden Sie das Augen-Symbol, um zu überprüfen, dass alle im Feld eingegebenen Zeichen dem Layout Ihrer Tastatur entsprechen.
 
 Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten über einen Remotedesktop-Client einloggen. 
 
@@ -308,7 +308,7 @@ Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Windows-Client 
 
 ![Windows Remote](images/windows-connect-03.png){.thumbnail}
 
-Geben Sie die IPv4-Adresse Ihrer Instanz sowie „Administrator“ als Benutzer und dann Ihre Passphrase ein. Normalerweise erscheint nun eine Warnungsmeldung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich mit Ihrer Instanz zu verbinden.
+Geben Sie die IPv4-Adresse Ihrer Instanz sowie “Administrator” als Benutzer und dann Ihre Passphrase ein. Normalerweise erscheint nun eine Warnungsmeldung, die Sie auffordert, die Verbindung aufgrund eines unbekannten Zertifikats zu bestätigen. Klicken Sie auf `Ja`{.action}, um sich mit Ihrer Instanz zu verbinden.
 
 > [!primary]
 >
@@ -323,7 +323,7 @@ Zum Beispiel ist Remmina Remote Desktop Client eine kompatible Anwendung, die be
 
 ![Linux Remote](images/linux-connect-01.png){.thumbnail}
 
-Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll „RDP“ ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf „Enter“.
+Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll “RDP” ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf “Enter”.
 
 ![Linux Remote](images/linux-connect-02.png){.thumbnail}
 

@@ -33,7 +33,7 @@ Beachten Sie bitte, dass SSH-Schlüssel bei Servern, auf denen Windows installie
 
 Öffnen Sie zunächst die Befehlszeilenanwendung (Terminal).
 
-Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis der Ordner „.ssh“ befindet. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn:
+Stellen Sie sicher, dass sich in Ihrem $HOME-Verzeichnis der Ordner “.ssh” befindet. Wenn der Ordner nicht vorhanden ist, erstellen Sie ihn:
 
 ```bash
 # mkdir ~/.ssh
@@ -44,7 +44,7 @@ Verwenden Sie den folgenden Befehl, um einen 4096-Bit-RSA-Schlüssel zu erstelle
 ```bash
 # ssh-keygen -b 4096
 ```
-Wenn Sie die Option „-t“ mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
+Wenn Sie die Option “-t” mit diesem Befehl verwenden, können Sie eine andere Verschlüsselungsmethode angeben, z.B.:
 
 ```bash
 # ssh-keygen -t ed25519 -a 256
@@ -59,7 +59,7 @@ Enter file in which to save the key (/home/user/.ssh/id_rsa):
 
 Sie können die Standarddatei akzeptieren, indem Sie "↩" drücken. Jetzt haben Sie die Möglichkeit, eine Passphrase einzugeben, um Ihren SSH-Schlüssel abzusichern. Dies wird als zusätzliche Sicherheitsmaßnahme empfohlen.
 
-Ihre SSH-Schlüssel sollten im Verzeichnis „.ssh“ gespeichert sein. Der Datei mit dem öffentlichen Schlüssel wird ".pub" zum Dateinamen hinzugefügt.
+Ihre SSH-Schlüssel sollten im Verzeichnis “.ssh” gespeichert sein. Der Datei mit dem öffentlichen Schlüssel wird ".pub" zum Dateinamen hinzugefügt.
 
 ```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -85,7 +85,7 @@ The key's randomart image is:
 > Der private Schlüssel sollte stets sicher aufbewahrt werden, und der Zugriff darauf sollte ausschließlich autorisierten Personen gestattet sein.
 > 
 
-Verwenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl „cat“ auf Ihre Schlüsseldatei und kopieren Sie die Ausgabe:
+Verwenden Sie zum Lesen und Exportieren Ihres öffentlichen Schlüssels den Befehl “cat” auf Ihre Schlüsseldatei und kopieren Sie die Ausgabe:
 
 ```bash
 # cat ~/.ssh/id_rsa.pub
@@ -169,7 +169,7 @@ Im OVHcloud Kundencenter können Sie öffentliche Schlüssel speichern, die mit 
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-In „Meine Dienste“ wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
+In “Meine Dienste” wechseln Sie zum Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
 ![SSH-Schlüssel Kundencenter](images/SSH_keys_panel_2.1.png){.thumbnail}
 

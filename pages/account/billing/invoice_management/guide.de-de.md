@@ -21,7 +21,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 ## Voraussetzungen
 
 - Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
-- Sie sind der Rechnungskontakt für Ihren Dienst (mehr Informationen zu den verschiedenen Kontakten finden Sie in der Anleitung „[Verwaltung der Kontakte Ihrer Dienstleistungen](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}“).
+- Sie sind der Rechnungskontakt für Ihren Dienst (mehr Informationen zu den verschiedenen Kontakten finden Sie in der Anleitung “[Verwaltung der Kontakte Ihrer Dienstleistungen](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}”).
 
 ## Beschreibung
 
@@ -33,7 +33,7 @@ Ihre Rechnung, wenn sie von OVHcloud erstellt wird, wird Ihnen per E-Mail in For
 
 ### Aufbau Ihrer Rechnung
 
-Sie erhalten von uns eine Rechnung, wenn Sie eine Bestellung bezahlen müssen oder wenn einer Ihrer Dienste automatisch verlängert wurde. Auf der Rechnung werden die bereits bezahlten oder zu bezahlenden Produkte aufgeführt - eventuell zusammen mit den entsprechenden Verlängerungszeiträumen und den Gesamtkosten für die Dienste. Die Rechnungsnummer beginnt immer mit dem Ländercode des jeweiligen OVHcloud Sitzes (zum Beispiel „DE“ für Deutschland, „FR“ für Frankreich usw.).
+Sie erhalten von uns eine Rechnung, wenn Sie eine Bestellung bezahlen müssen oder wenn einer Ihrer Dienste automatisch verlängert wurde. Auf der Rechnung werden die bereits bezahlten oder zu bezahlenden Produkte aufgeführt - eventuell zusammen mit den entsprechenden Verlängerungszeiträumen und den Gesamtkosten für die Dienste. Die Rechnungsnummer beginnt immer mit dem Ländercode des jeweiligen OVHcloud Sitzes (zum Beispiel “DE” für Deutschland, “FR” für Frankreich usw.).
 
 ![Details auf einer Rechnung](images/invoice_ovh.png){.thumbnail}
 
@@ -49,11 +49,11 @@ Im Folgenden werden Ihnen Details zu den abgerechneten Diensten aufgeführt:
 - Menge: Anzahl der Einheiten des abgerechneten Dienstes;
 - Stückpreis und Preis ohne MwSt.: Tarif des Dienstes.
 
-Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. MwSt.“ hinzugefügt.
+Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis “Total inkl. MwSt.” hinzugefügt.
 
 > [!primary]
 >
-> Wenn unter verwendetes Zahlungsmittel „Bankeinzug“ angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} hinterlegt wurde.
+> Wenn unter verwendetes Zahlungsmittel “Bankeinzug” angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} hinterlegt wurde.
 >
 
 ### Der Abrechnungsbereich in Ihrem Kundencenter
@@ -82,7 +82,7 @@ Hier finden Sie zu jeder Tabellenzeile folgende Informationen:
 > Wenn der noch ausstehende Rechnungsbetrag rot markiert ist, dann muss diese Rechnung bezahlt werden. Die Rechnungsfrist gibt Ihnen an, ob eine Zahlung sofort fällig ist.
 >
 
-Wenn „Keine Informationen verfügbar“ angegeben ist, dann bezieht sich die Rechnung nicht auf eine automatische Verlängerung. Klicken Sie auf die drei Punkte`...`{.action}, um weitere Aktionen auszuführen. Die folgenden drei Aktionen werden Ihnen angezeigt:
+Wenn “Keine Informationen verfügbar” angegeben ist, dann bezieht sich die Rechnung nicht auf eine automatische Verlängerung. Klicken Sie auf die drei Punkte`...`{.action}, um weitere Aktionen auszuführen. Die folgenden drei Aktionen werden Ihnen angezeigt:
 
 ![Aktionen bei Rechnungen](images/actions_choices.png){.thumbnail}
 
@@ -109,7 +109,7 @@ Wir erstellen Ihnen für den Zahlungsvorgang dann einen [Bestellschein](https://
 
 ### Zahlungsverfolgung
 
-Sie können alle Ihre Zahlungen im Bereich `Abrechnungen` unter `Zahlungsverfolgung`{.action} nachverfolgen. Auf dieser Seite werden Ihnen alle Rechnungen mit den zugehörigen Beträgen und Zahlungsmitteln angezeigt. Die Referenz eines Zahlungsbelegs beginnt immer mit den Buchstaben „PA_DE“.
+Sie können alle Ihre Zahlungen im Bereich `Abrechnungen` unter `Zahlungsverfolgung`{.action} nachverfolgen. Auf dieser Seite werden Ihnen alle Rechnungen mit den zugehörigen Beträgen und Zahlungsmitteln angezeigt. Die Referenz eines Zahlungsbelegs beginnt immer mit den Buchstaben “PA_DE”.
 
 ![Zahlungsverfolgung](images/payment_tracking.png){.thumbnail}
 

@@ -70,7 +70,7 @@ Nella nuova finestra, inserisci le informazioni richieste. Clicca su `Conferma`{
 
 L’utente otterrà quindi il proprio identificativo composto dall’identificativo numerico del tuo account (indicato nel menu “Gestione degli utenti”) e dal suo nome utente, entrambi i valori sono separati da uno slash “/”.
 
-Esempio: **1234-567-89/john.smith**.
+Esempio: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 

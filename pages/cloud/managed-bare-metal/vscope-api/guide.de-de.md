@@ -28,7 +28,7 @@ Diese Informationen sind auch über APIv6 und API Metrics verfügbar.
 
 Das Tool vScope stellt zwei Arten von Informationen zur Verfügung:
 
-- Live-Informationen, die den Daten der verschiedenen Komponenten zu einem Zeitpunkt „T“ entsprechen.
+- Live-Informationen, die den Daten der verschiedenen Komponenten zu einem Zeitpunkt “T” entsprechen.
 - Grafiken, die die früheren Leistungsdaten der verschiedenen Komponenten veranschaulichen. Zum Beispiel: CPU und RAM einer virtuellen Maschine.
 
 

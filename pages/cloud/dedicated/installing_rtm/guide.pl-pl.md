@@ -156,7 +156,7 @@ add-apt-repository "deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/$(lsb_re
 
 System **Debian**:
 
-Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: „buster”).
+Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: “buster”).
   
 ```sh
 nano /etc/apt/sources.list.d/rtm.list
@@ -168,7 +168,7 @@ deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codenam
 
 System **Ubuntu**:
 
-Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: „bionic”).
+Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: “bionic”).
   
 ```sh
 nano /etc/apt/sources.list.d/rtm.list

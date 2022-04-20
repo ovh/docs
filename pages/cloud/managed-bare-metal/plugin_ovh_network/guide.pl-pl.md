@@ -37,7 +37,7 @@ W części **IP Blocks** wyszczególnione są wszystkie adresy IP Twojego bloku.
 - pierwszego adresu IP, który jest adresem Twojej sieci;
 - ostatniego adresu IP, który jest adresem **broadcast**;
 - przedostatniego adresu IP, który jest adresem **gateway**;
-- dwóch adresów IP przed „gateway”, które są używane jako **HSRP** (Hot Standby Router Protocol) w routerach.
+- dwóch adresów IP przed “gateway”, które są używane jako **HSRP** (Hot Standby Router Protocol) w routerach.
 
 ![Bloki IP](images/network_03.png){.thumbnail}
 

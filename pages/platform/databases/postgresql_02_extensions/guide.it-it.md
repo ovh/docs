@@ -3,7 +3,7 @@ title: PostgreSQL - Available extensions
 slug: postgresql/extensions
 excerpt: List of available PostgreSQL extensions
 section: PostgreSQL - Guides
-order: 2
+order: 020
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/extensions/'
 ---

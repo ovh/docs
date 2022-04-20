@@ -18,7 +18,7 @@ Jeśli jeden z dysków w serwerze jest niesprawny, możesz wymienić go bez wył
 - Posiadanie serwera mHG, HG lub BHG
 - Posiadanie programowej macierzy RAID (z kartą LSI)
 - Dostęp SSH (Linux) lub RDP (Windows)
-- Instalacja narzędzia „sas2ircu” (skorzystaj z wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}, aby je znaleźć)
+- Instalacja narzędzia “sas2ircu” (skorzystaj z wyszukiwarki [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external}, aby je znaleźć)
 
 ## W praktyce
 
@@ -93,7 +93,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 
 Stwierdzasz, że: 
 
-- dysk **SDB** jest niesprawny ze względu na nieusunięte błędy („uncorrected errors”);
+- dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).
 
 Aby otrzymać tylko **Serial Number**:
@@ -105,7 +105,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 
 #### Etap 2: określenie pozycji dysku
 
-Odszukaj **Slot ID** i **Enclosure ID** danego dysku. W tym celu użyj zainstalowanego wcześniej na Twoim serwerze narzędzia „sas2ircu”.
+Odszukaj **Slot ID** i **Enclosure ID** danego dysku. W tym celu użyj zainstalowanego wcześniej na Twoim serwerze narzędzia “sas2ircu”.
 
 Sprawdź, czy dyski są podłączone za pomocą karty LSI.
 
@@ -167,7 +167,7 @@ root@ns3054662:/home# ./sas2ircu 0 locate 1:3 on
 >>> SAS2IRCU: Utility Completed Successfully.
 ```
 
-Można wyłączyć miganie diody dysku, zastępując „on” przez „off” w poleceniu.
+Można wyłączyć miganie diody dysku, zastępując “on” przez “off” w poleceniu.
 
 #### Etap 4: usunięcie niesprawnego dysku z macierzy RAID
 
@@ -213,7 +213,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-Sdb1 i sdb2 mają status zmieniony na „faulty” **(F)**. Teraz możesz usunąć dysk z macierzy RAID.
+Sdb1 i sdb2 mają status zmieniony na “faulty” **(F)**. Teraz możesz usunąć dysk z macierzy RAID.
 
 ```sh
 root@ns3054662:/home# mdadm --manage /dev/md1 --remove /dev/sdb1
@@ -259,12 +259,12 @@ Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial
 
 Stwierdzasz, że: 
 
-- dysk **SDB** jest niesprawny ze względu na nieusunięte błędy („uncorrected errors”);
+- dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).
 
 #### Etap 2: określenie pozycji dysku
 
-Odszukaj **Slot ID** i **Enclosure ID** danego dysku. W tym celu użyj zainstalowanego wcześniej na Twoim serwerze narzędzia „sas2ircu”.
+Odszukaj **Slot ID** i **Enclosure ID** danego dysku. W tym celu użyj zainstalowanego wcześniej na Twoim serwerze narzędzia “sas2ircu”.
 
 Najpierw ustal ID karty LSI.
 
@@ -286,7 +286,7 @@ Włącz diodę LED niesprawnego dysku za pomocą polecenia `./sas2ircu 0 locate
 
 ![locate](images/locate.png){.thumbnail}
 
-Można wyłączyć miganie diody dysku, zastępując „on” przez „off” w poleceniu.
+Można wyłączyć miganie diody dysku, zastępując “on” przez “off” w poleceniu.
 
 #### Etap 4: usunięcie niesprawnego dysku z macierzy RAID
 
