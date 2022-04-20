@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 04
 ---
 
-**Last updated 15 April, 2022.**
+**Last updated 15th April 2022**
 
 <style>
  pre {
