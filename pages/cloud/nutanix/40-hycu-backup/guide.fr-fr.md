@@ -228,7 +228,7 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
-#### Configurer la redirection d'adresses dans le loadbalancer d'OVHcloud
+#### Configurer la redirection de l'URL HYCU vers le réseau public.
 
 Au travers de votre espace client OVHcloud sélectionnez `Bare Metal Cloud`{.action} sur la barre de menu en haut, ensuite cliquez sur 
 votre `loadbalancer`{.action} dans la barre de menu à gauche.
@@ -291,7 +291,8 @@ Pour plus d'information concernant le Load balancer d'OVHcloud reportez-vous à 
 
 #### Configurer HYCU
 
-Connectez-vous avec un navigateur WEB à l'adresse IP interne à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443**.
+Connectez-vous avec un navigateur WEB à l'interface d'administration d'HYCU qui doit avoir cette forme **https://fqdnclusternutanix:8443**. fqdn correspond à l'URL fournie lors de la création du cluster Nutanix.
+.
 
 Saisissez `le mot de passe par défaut`{.action} et cliquez sur `Sign In`{.action}.
 
@@ -353,7 +354,7 @@ Saisissez les paramètres de configurations et les clés d’authentification de
 
 > [!warning]
 > le service **High Performance Object Storage** d'OVHcloud n'a pas de limites de stockage et est facturé à l'utilisation .
-> Dans la configuration du logiciel HYCU il faut fixer une valeur comme dans l'exemple ci-dessous mais il est tout à fait possible de choisir une tout autre valeur.
+> Dans la configuration du logiciel HYCU il est nécessaire de fixer une taille comme dans l'exemple ci-dessous , Vous pouvez choisir une autre valeur.
 >
 
 Activez `ENABLE COMPRESSION`{.action} et faites défilez la fenêtre avec la `barre de défilement`{.action}. 
