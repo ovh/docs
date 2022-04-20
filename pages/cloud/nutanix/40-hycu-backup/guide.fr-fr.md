@@ -6,7 +6,7 @@ section: Sauvegardes
 order: 01
 ---
 
-**Dernière mise à jour le 15/04/2022**
+**Dernière mise à jour le 20/04/2022**
 
 ## Objectif
 
@@ -26,9 +26,10 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Avoir un abonnement de stockage chez OVHcloud du type **High Performance Object Storage** ou **Standard Object Storage (SWIFT)**
+- Au travers de votre espace client d'avoir un compte public cloud avec un **bucket** de stockage de type **High Performance Object Storage** qui contient un utilisateur ayant les droits en lecture et écriture. Pour plus d'information sur la création d'un compte public et d'un stockage de consulter ces sites [Création d'un projet public](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) et [Débuter avec S3](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
+- Disposer sur votre Cluster Nutanix de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 
 ## En pratique
@@ -49,7 +50,11 @@ Cliquez sur `Add Image`{.action}`.
 
 ![Add Image HYCU 02](images/00-addimagehycu02.png){.thumbnail}
 
-Choisissez `URL`{.action} comme type de source, saisissez `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}.
+Choisissez `URL`{.action} comme type de source, saisissez `https://download.hycu.com/ec/v4.3.0/hycu-4.3.0-4122.qcow2` dans **Enter Image URL** et cliquez sur `Upload file`{.action}. 
+
+> [!primary]
+> 
+> L'URL utilisée pour le téléchargement correspond à la dernière version disponible sur le site d'HYCU 
 
 ![Add Image HYCU 03](images/00-addimagehycu03.png){.thumbnail}
 
@@ -220,6 +225,67 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
+#### Configurer la redirection d'adresses dans le loadbalancer d'OVHcloud
+
+Au travers de votre espace client OVHcloud sélectionnez `Bare Metal Cloud`{.action} sur la barre de menu en haut, ensuite cliquez sur 
+votre `loadbalancer`{.action} dans la barre de menu à gauche.
+
+Positionnez vous sur `Server clusters`{.action} et cliquez sur `Add a server cluster`{.action}.
+
+![Configure Load Balancer 01](images/03b-configureloadbalancer01.png){.thumbnail}
+
+Nommez votre ferme de serveurs dans `Name`{.action} , selectionnez `TCP`{.action} et saisissez ces informations
+
+- **Port** : `8443`{.action}
+- **Datacenter** : `ALL`{.action} 
+- **Private network** : `nutanix`{.action} 
+
+Cliquez sur `Add`{.action} pour valider la création de la ferme de serveurs.
+
+![Configure Load Balancer 02](images/03b-configureloadbalancer02.png){.thumbnail}
+
+Cliquez sur `Add a server`{.action}
+
+![Configure Load Balancer 03](images/03b-configureloadbalancer03.png){.thumbnail}
+
+Saisissez ces options
+
+- **Name (optional)** : `VM-HYCU`{.action}.
+- **IPv4 address** : `addresseiphycu`{.action}. 
+- **Port** : `8443`{.action}.
+
+Cliquez sur `Add`{.action} pour valider la création du cluster
+
+![Configure Load Balancer 04](images/03b-configureloadbalancer04.png){.thumbnail}
+
+Positionnez vous sur `Front-ends`{.action} et cliquez sur `Add a front-end`{.action}
+
+![Configure Load Balancer 05](images/03b-configureloadbalancer05.png){.thumbnail}
+
+Nommez votre fronted dans `Names`{.action} choisissez le protocole `Tcp`{.action} et modifier ces options:
+
+- **Port** : `8443`{.action}
+- **Datacenter** : `ALL`{.action} 
+- **Default server cluster** : `HYCU (TCP)`{.action}
+
+Ensuite cliquez sur `Add`{.action}
+
+![Configure Load Balancer 06](images/03b-configureloadbalancer06.png){.thumbnail}
+
+Cliquez sur `Apply configuration`{.action}
+
+![Configure Load Balancer 07](images/03b-configureloadbalancer07.png){.thumbnail}
+
+Sélectionnez le `Datacenter`{.action} et cliquez sur `Apply configuration`{.action}
+
+![Configure Load Balancer 08](images/03b-configureloadbalancer08.png){.thumbnail}
+
+Se positionnez sur `Tasks`{.action} pour voir l'avancement de l'application des changements
+
+![Configure Load Balancer 08](images/03b-configureloadbalancer09.png){.thumbnail}
+
+Pour plus d'information concernant le Load balancer d'OVHcloud reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+
 #### Configurer HYCU
 
 Connectez-vous avec un navigateur WEB à l'adresse IP interne à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443**.
@@ -320,6 +386,9 @@ Sélectionnez `URL`{.action}`.
 Saisissez l'URL de l'image qcow2 de la dernière version d'HYCU comme : 
 -  `https://download.hycu.com/ec/v4.3.1/hotfixes/4.3.1-616/hycu-4.3.1-616.qcow2`.
 
+> [!primary]
+> 
+> L'URL utilisée pour le téléchargement correspond à la dernière version disponible sur le site d'HYCU 
 
 Cliquez sur `Upload file`{.action}.
 
@@ -338,7 +407,7 @@ Cliquez sur `Save`{.action} pour importer l'image.
 
 #### Lancer la mise à jour à partir d'HYCU
 
-Connectez-vous avec un navigateur à l'adresse IP interne à l'interface d'administration d'HYCU qui doit avoir cette forme **https://adresseiplocale:8443** 
+Connectez-vous au traver de l'URL fournie lors de la création du cluster Nutanix en remplaçant le port **https://fqdnclusternutanix:8443**
 
 Allez dans la configuration d'HYCU en cliquant sur l'icône `Administration`{.action} en forme d'engrenage et choisir `Power Options`{.action}.
 
@@ -580,13 +649,15 @@ Désactivez `OVERWRITE EXISTING DATABASES`{.action} et cliquez sur `Restore`{.ac
 
 La base de données est restaurée dans une nouvelle base de données.
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
 [Page d'accueil HYCU](https://www.hycu.com/)
 
 [Documentation HYCU](https://support.hycu.com/hc/en-us/sections/115001018365-Product-documentation)
+
+[Documentation OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
 [Solution OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/object-storage/)
 
