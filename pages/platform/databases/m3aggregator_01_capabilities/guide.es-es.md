@@ -3,7 +3,9 @@ title: M3 Aggregator - Capabilities and Limitations
 slug: m3aggregator/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3 Aggregator
 section: M3 Aggregator - Guides
-order: 1
+order: 010
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3aggregator/capabilities/'
 ---
 
 **Last updated April 14<sup>th</sup>, 2022**
