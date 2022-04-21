@@ -1,12 +1,12 @@
 ---
-title: 'Scanning Docker Images for Vulnerabilities with OVHcloud Managed Private Registry'
-excerpt: 'Find out how to scan Docker Images for Vulnerabilities with OVHcloud Managed Private Registry'
+title: 'Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry'
+excerpt: 'Find out how to scan Docker images for vulnerabilities with OVHcloud Managed Private Registry'
 slug: scan-docker-images-vulnerabilities
 section: 'Tutorials'
 order: 04
 ---
 
-**Last updated 15th April, 2022.**
+**Last updated 15th April, 2022**
 
 <style>
  pre {
@@ -74,7 +74,7 @@ The scanner starts scanning the image.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-04.png)
 
-The number of vulnerabilities are displayed.
+The number of vulnerabilities is displayed.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-05.png)
 
@@ -88,7 +88,7 @@ Click on the image ID to display all vulnerabilities, ranked by severity.
 
 #### Scan all the images
 
-You can also manually scan of all your images in your private registry.
+You can also scan all your images manually in your private registry.
 
 To do that, go to the `Vulnerability`{.action} tab and open `Interrogation Services`{.action}. Next, click on `Scan Now`{.action}.
 
@@ -103,7 +103,7 @@ You can schedule a scan:
 - weekly
 - when you want (enter as a cron format)
 
-For that, select the scheduling and click on the `Save'{.action} button.
+For that, select the scheduling and click on the `Save`{.action} button.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-09.png)
 

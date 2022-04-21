@@ -1,10 +1,9 @@
 ---
-title: M3db - Capabilities and Limitations
+title: M3db - Capacités et limitations (EN)
 slug: m3db/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3db
 section: M3db - Guides
-order: 1
-hidden: true
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3db/capabilities/'
 ---
@@ -14,7 +13,7 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases m3db offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
