@@ -6,7 +6,7 @@ section: General information
 order: 080
 ---
 
-**Last updated 1st April 2022**
+**Last updated 1<sup>st</sup> April, 2022**
 
 ## Objective
 
@@ -15,7 +15,7 @@ However, it is possible to modify some parameters via the API.
 
 > [!primary]
 >
-> These actions are not available from the OVHcloud Control Panel.
+> These actions are not available from the OVHcloud Control Panel
 >
 
 ## Requirements
@@ -51,10 +51,25 @@ From the resulting list, select and copy the service identifier corresponding to
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
 
 > [!tabs]
+> Cassandra
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/cassandra
+>> >
 > Kafka
 >> > [!api]
 >> >
 >> > @api {GET} /cloud/project/{serviceName}/database/kafka
+>> >
+> Kafka Connect
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect
+>> >
+> M3DB
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/m3db
 >> >
 > MySQL
 >> > [!api]
@@ -86,10 +101,25 @@ From the resulting list, select and copy the cluster ID, also known as clusterId
 Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
 
 > [!tabs]
+> Cassandra
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
+>> >
 > Kafka
 >> > [!api]
 >> >
 >> > @api {GET} /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
+>> >
+> Kafka Connect
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
+>> >
+> M3DB
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/m3db/{clusterId}/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
@@ -119,10 +149,25 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 Open the following API call and paste the corresponding inputs (serviceName, clusterId) and click `Execute`{.action}:
 
 > [!tabs]
+> Cassandra
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
+>> >
 > Kafka
 >> > [!api]
 >> >
 >> > @api {GET} /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
+>> >
+> Kafka Connect
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
+>> >
+> M3DB
+>> > [!api]
+>> >
+>> > @api {GET} /cloud/project/{serviceName}/database/m3db/{clusterId}/capabilities/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
@@ -154,13 +199,28 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 > Please note that changes to the advanced settings apply at the cluster level and therefore to all the databases in the cluster.
 >
 
-Open the following API call and paste the corresponding inputs (serviceName, clusterId):
+Open the following API call and paste the corresponding inputs (serviceName, clusterId)
 
 > [!tabs]
+> Cassandra
+>> > [!api]
+>> >
+>> > @api {PUT} /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
+>> >
 > Kafka
 >> > [!api]
 >> >
 >> > @api {PUT} /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
+>> >
+> Kafka Connect
+>> > [!api]
+>> >
+>> > @api {PUT} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
+>> >
+> M3DB
+>> > [!api]
+>> >
+>> > @api {PUT} /cloud/project/{serviceName}/database/m3db/{clusterId}/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
@@ -202,7 +262,7 @@ You can check the changes in different ways such as:
 
 ![pgAmin check Advanced Parameter](images/04_advanced_configuration-20220405153051913.png){.thumbnail}
 
-*Follow [this guide](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-pgadmin/) to learn more about pgAdmin.*
+*Follow this [guide](https://docs.ovh.com/gb/en/publiccloud/databases/postgresql/connect-pgadmin/) to learn more about pgAdmin*
 
 
 ## We want your feedback!
