@@ -6,7 +6,7 @@ section: Sauvegardes
 order: 01
 ---
 
-**Dernière mise à jour le 20/04/2022**
+**Dernière mise à jour le 21/04/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ HYCU for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Avoir un compte public cloud avec un **bucket** de stockage de type **High Performance Object Storage** qui contient un utilisateur ayant les droits en lecture et écriture. Vous trouverez plus d'informations sur la création d'un compte public et d'un stockage sur ces liens  [Création d'un projet public](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) et [Débuter avec S3](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
+- Avoir un compte public cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bueket. Vous trouverez plus d'informations sur la création d'un compte public cloud et sur l’utilisation du service High Performance Object Storage ici:   [Création d'un projet public](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/) et [Débuter avec S3](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
 - Disposer sur votre Cluster Nutanix de 60 Go de Stockage, de 8 Go de Mémoire et de 8 Cœurs.
 
 
@@ -229,6 +229,8 @@ La machine virtuelle est démarrée et possède l'adresse IP définie dans **clo
 ![Create HYCUVM 15](images/02-createhycuvm15.png){.thumbnail}
 
 #### Configurer la redirection de l'URL HYCU vers le réseau public.
+
+Dans cette section, nous allons configurer une redirection pour que vous puissiez configurer Hycu en utilisant l’interface web de l’extérieur de votre cluster.
 
 Au travers de votre espace client OVHcloud sélectionnez `Bare Metal Cloud`{.action} sur la barre de menu en haut, ensuite cliquez sur 
 votre `loadbalancer`{.action} dans la barre de menu à gauche.
