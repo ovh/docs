@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations'
 excerpt: Find here information on the Object Storage S3 High Performance limitations
 section: Object Storage S3 High Performance
-order: 180
+order: 025
 ---
 
 **Last updated 31st March 2022**
