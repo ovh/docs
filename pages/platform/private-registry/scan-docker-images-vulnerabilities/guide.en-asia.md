@@ -6,7 +6,7 @@ section: 'Tutorials'
 order: 04
 ---
 
-**Last updated 15th April, 2022.**
+**Last updated 15th April, 2022**
 
 <style>
  pre {
@@ -103,7 +103,7 @@ You can schedule a scan:
 - weekly
 - when you want (enter as a cron format)
 
-For that, select the scheduling and click on the `Save'{.action} button.
+For that, select the scheduling and click on the `Save`{.action} button.
 
 ![Scan Docker images in OVHcloud Managed Private Registry](images/scan-docker-images-vulnerabilities-09.png)
 
