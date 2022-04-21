@@ -1,6 +1,6 @@
 ---
 title: Chiffrez vos objets côté serveur avec SSE-C
-slug: s3/chiffrez-vos-objets-avec-sse-c
+slug: s3/encrypt-your-objects-with-sse-c
 excerpt:
 section: Object Storage S3 High Performance
 order: 180

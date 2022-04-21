@@ -158,4 +158,4 @@ Presigned URLs, that can be used for operations such as upload a new object, ret
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en.
+Join our community of users on https://community.ovh.com/en/.
