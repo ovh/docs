@@ -10,14 +10,14 @@ section: Introdução
 
 ## Sumário
 
-Inerentemente, a OVH oferece-lhe a renovação automática dos seus serviços. No entanto, é possível renová-los por meio das API.
+Inerentemente, a OVHcloud oferece-lhe a renovação automática dos seus serviços. No entanto, é possível renová-los por meio das API.
 
 **Este guia explica como efetuar esta operação de renovação.**
 
 ## Requisitos
 
-- Estar conectado às [API OVH](https://api.ovh.com/console){.external}.
-- Ter [criado os ID para a API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/).
+- Estar conectado às [API OVHcloud](https://api.ovh.com/console){.external}.
+- Ter [criado os ID para a API OVHcloud](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/).
 
 ## Instruções
 
