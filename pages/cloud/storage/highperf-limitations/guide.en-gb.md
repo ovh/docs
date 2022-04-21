@@ -3,7 +3,7 @@ title: Object Storage S3 High Performance - Technical Limitations
 slug: s3/limitations
 excerpt: Find here information on the Object Storage S3 High Performance limitations
 section: Object Storage S3 High Performance
-order: 180
+order: 025
 ---
 
 **Last updated 31st March 2022**
