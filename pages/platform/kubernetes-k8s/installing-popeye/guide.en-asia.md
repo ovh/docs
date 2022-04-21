@@ -6,7 +6,7 @@ section: Security
 order: 1
 ---
 
-**Last updated 15th April 2022.**
+**Last updated 15th April 2022**
 
 <style>
  pre {
@@ -55,7 +55,7 @@ In this guide you will:
 - Fix common issues
 - Store report on OVHcloud Object Storage
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 
@@ -149,9 +149,9 @@ This command run tests on all nodes and namespaces by default:
 
 As you can see, by default, our OVHcloud Managed Kubernetes cluster (and with an hello world application deployed) has a 83 score.
 
-Though it's a good score, let's take a look on what you should be improved or fixed.
+Though it's a good score, let's take a look on what should be improved or fixed.
 
-The report can be very big. So, in order to take  a look at what you should improve or fix, a good practice is to run `popeye` command only on a specified namespace.
+The report can be very big. So, in order to take a look at what you should improve or fix, a good practice is to run the `popeye` command only on a specified namespace.
 
 This way, you can better improve and fix your cluster resources step by step.
 
@@ -348,15 +348,15 @@ Username and password will be automatically generated and displayed in your Cont
 
 In order to interact with the Object Storage through S3 API, you need to generate your OpenStack credentials.
 
-Click on `Download OpenStack's RC file `{.action} to retrieve the OpenStack RC file.
+Click on `Download OpenStack's RC file`{.action} to retrieve the OpenStack RC file.
 
 ![Download OpenStack RC file](images/download-openrc1.png){.thumbnail}
 
-Then select the same region as you created your Object Storage container (`GRA` for this guide) and click on `Download`{.action} button.
+Then select the region of your Object Storage container (`GRA` for this guide) and click on the `Download`{.action} button.
 
 ![Download OpenStack RC file](images/download-openrc2.png){.thumbnail}
 
-At this step, you should have a `openrc.sh` file like this:
+At this step, you should have an `openrc.sh` file like this:
 
 ```
 cat openrc.sh
@@ -435,7 +435,7 @@ Successfully installed PrettyTable-3.1.0 PyYAML-5.4.1 appdirs-1.4.4 attrs-21.4.0
 mkdir ~/.aws
 ```
 
-Create AWS CLI config file and setup the good endpoint to our Object Storage stored in GRA region:
+Create the AWS CLI config file and set up the good endpoint to our Object Storage stored in the GRA region:
 
 vi ~/.aws/config
 
@@ -467,7 +467,7 @@ Generate AWS credentials:
 +------------+--------------------------------------------------------------------------------------------------------------------------------------+
 </code></pre>
 
-Thanks to these credentials, now you can setup them in your `.aws/credentials` file:
+Thanks to these credentials, you can now set them up in your `.aws/credentials` file:
 
 ```
 vi ~/.aws/credentials
@@ -484,7 +484,7 @@ aws_access_key_id=ec975c94081f40ba93465b648a197648
 aws_secret_access_key=857006040f054ef0b83f15bffe5a01a9
 </code></pre>
 
-Now you can test to list your existing Object Storage containers through `aws s3` CLI
+Now you can test to list your existing Object Storage containers through the `aws s3` CLI:
 
 ```bash
 aws s3 ls
@@ -535,7 +535,7 @@ X-Trans-Id: txd66f17782e2847c6a5f29-00625976e6
 -----------------------------------------------------
 </code></pre>
 
-You can check on your OVhcloud Object Storage `popeye` container the report have been correctly stored:
+You can check on your OVhcloud Object Storage `popeye` container that the report has been correctly stored:
 
 ![Popeye report stored on OVHcloud Object Storage](images/report-saved-on-object-storage.png)
 

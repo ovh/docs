@@ -1,5 +1,5 @@
 ---
-title: AI Notebooks - Manage and use data in a notebook via ui
+title: AI Notebooks - Manage and use data in a notebook via UI
 slug: notebooks/manage-data-ui
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
 section: AI Notebooks guides
@@ -94,7 +94,7 @@ You are now ready to launch a notebook with your data!
 
 ## Launch a notebook with attached data
 
-To launch an AI notebook, access to the **AI Notebooks** section of your Public Cloud project on the OVHcloud Control Panel.
+To launch an AI notebook, access the **AI Notebooks** section of your Public Cloud project in the OVHcloud Control Panel.
 
 ![image](images/ui-ai-notebooks.png){.thumbnail}
 
@@ -129,14 +129,14 @@ Once you have some data that you want to save from the notebook to Object Storag
 
 ![image](images/ui-notebook-weights-rw.png){.thumbnail}
 
-This folder will be uploaded to your Object Storage when you will stop your notebook.
-As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
-changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
+This folder will be uploaded to your Object Storage when you stop your notebook.
+
+As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state changes to `STOPPED`, it means all the data was uploaded to your Object Storage.
 
 #### Attach a public Git repository
 
-If Python code, notebooks or other files are available on a public GitHub repository, you can attach it to your notebook.
-To be able to edit it and make changes easily, use the Read-write permission.
+If Python code, notebooks or other files are available on a public GitHub repository, you can attach them to your notebook.
+To be able to edit and make changes easily, use the Read-write permission.
 
 The command is as follows:
 
@@ -144,7 +144,7 @@ The command is as follows:
 
 > [!warning]
 >
-> To make your command valid don't forget to add a `.git` at the end of the GitHub repository URL.
+> To make your command valid, don't forget to add a `.git` at the end of the GitHub repository URL.
 >
 
 #### Use cached volumes
@@ -156,7 +156,7 @@ To do so, you can check `Cache`.
 ![image](images/ui-notebook-dataset-cache.png){.thumbnail}
 
 Cached volumes will be deleted at least 72 hours after the last notebook using it has stopped.
-Note that the cache is shared with all users in your project. The main consequence that you need to be careful about
+Note that the cache is shared with all users in your project. The main consequence you need to be careful about
 is the fact that if someone else modifies the data in your cached volume, you will also see the modifications on your side.
 
 ### Launch and access the notebook
@@ -167,7 +167,7 @@ Your notebook is now ready to be launched with your data!
 
 You can read the [Getting started](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/definition/) page to know how to find this URL.
 
-As soon as you access your notebook, you will see your different folders containing your data
+As soon as you access your notebook, you will see your different folders containing your data.
 
 ![image](images/ui-notebook-containers.png){.thumbnail}
 

@@ -13,7 +13,7 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for OpenSearch offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -36,7 +36,7 @@ The Public Cloud Databases offer supports the following OpenSearch versions:
 
 - OpenSearch 1.1
 
-You can folllow version history for OpenSearch version on their official page: <https://opensearch.org/docs/latest/version-history/>
+You can follow version history for OpenSearch version on their official page: <https://opensearch.org/docs/latest/version-history/>
 
 ### OpenSearch clients and plugins compatibility
 
@@ -162,8 +162,8 @@ We do not currently support OpenSearch advanced parameters.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 
