@@ -6,7 +6,6 @@ section: Cassandra - Guides
 order: 1
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/capabilities/'
-hidden: true
 ---
 
 **Last updated April 7th<sup>th</sup>, 2022**

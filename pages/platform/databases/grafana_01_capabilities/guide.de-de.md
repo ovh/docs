@@ -4,7 +4,6 @@ slug: grafana/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Grafana
 section: Grafana
 order: 1
-hidden: true
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/grafana/capabilities/'
 ---
