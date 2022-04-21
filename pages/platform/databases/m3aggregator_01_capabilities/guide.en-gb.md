@@ -11,7 +11,7 @@ hidden: true
 
 ## Objective
 
-This page provides the technical capabilities and limitations of the Public Cloud Databases' m3 aggregator offer.<br>
+This page provides the technical capabilities and limitations of the Public Cloud Databases' M3 aggregator offer.<br>
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
@@ -31,7 +31,7 @@ The entire database instances must be in the same region. Multi-AZ is currently 
 
 ### M3 Aggregator versions
 
-The Public Cloud Databases offer supports the following m3 aggregator versions:
+The Public Cloud Databases offer supports the following M3 aggregator versions:
 
 - m3 aggregator 1.1
 - m3 aggregator 1.2
@@ -109,8 +109,8 @@ Ingress and Egress traffic are included in the service plans and unmetered.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 

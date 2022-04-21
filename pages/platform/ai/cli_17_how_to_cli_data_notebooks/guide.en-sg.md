@@ -64,13 +64,13 @@ $ ovhai notebook run tensorflow jupyterlab --volume my-neural-networks@GRA:/work
 Once you have some data that you want to save (a trained neural network in this example), you can simply write it
 to the `/workspace/neural-networks` folder.
 
-This folder will be uploaded to your Object Storage when you will stop your notebook.
+This folder will be uploaded to your Object Storage when you stop your notebook.
 As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
 changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
 
 ## Attach a public Git repository
 
-If Python code, notebooks or other files are available on a public GitHub repository, you can attach it to your notebook with the `--volume` option.
+If Python code, notebooks or other files are available on a public GitHub repository, you can attach them to your notebook with the `--volume` option.
 To be able to edit it and make changes easily, use the read-write permission (shorten by: `rw`).
 
 The command is as follows:
@@ -81,7 +81,7 @@ $ ovhai notebook run tensorflow jupyterlab --volume https://github.com/ovh/ai-tr
 
 > [!warning]
 >
-> To make your command valid don't forget to add a `.git` at the end of the GitHub repository URL.
+> To make your command valid, don't forget to add a `.git` at the end of the GitHub repository URL.
 
 ## Access multiple volumes
 
@@ -108,7 +108,7 @@ $ ovhai notebook run tensorflow jupyterlab --volume my-dataset@GRA:/workspace/da
 ```
 
 Cached volumes will be deleted at least 72 hours after the last notebook using it has stopped.
-Note that the cache is shared with all users in your project. The main consequence that you need to be careful about
+Note that the cache is shared with all users in your project. The main consequence you need to be careful about
 is the fact that if someone else modifies the data in your cached volume, you will also see the modifications on your side.
 
 ## Update volume configuration
@@ -124,7 +124,7 @@ $ ovhai notebook patch <notebook ID> -v my-dataset@GRA:/workspace/datasets:rw
 
 > [!primary]
 > 
-> This is the same option as the `run` command above. You can choose to mount the volume in read only or read & write mode and mount multiple volumes.
+> This is the same option as the `run` command above. You can choose to mount the volume in read-only or read & write mode and mount multiple volumes.
 
 ## Feedback
 
