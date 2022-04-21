@@ -3,7 +3,7 @@ title: M3db - Capabilities and Limitations
 slug: m3db/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for M3db
 section: M3db - Guides
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/m3db/capabilities/'
 ---

@@ -37,11 +37,11 @@ It makes sense to have enough connections so that each CPU core on the server ha
 
 - **Transaction pooling:** A server connection is assigned to the client application for the duration of a transaction. When PgBouncer detects the completion of the transaction, it releases the server connection back into the pool.
 
-  > [!warning]
-  >
-  >Several PostgreSQL features, described in the [official PgBouncer features page](https://www.pgbouncer.org/features), are known to be broken by the default transaction-based pooling and must not be used by the application when in this mode.
-  > You must carefully consider the design of the client applications connecting to PgBouncer, otherwise the application may not work as expected.
-  >
+> [!warning]
+>
+> Several PostgreSQL features, described in the [official PgBouncer features page](https://www.pgbouncer.org/features), are known to be broken by the default transaction-based pooling and must not be used by the application when in this mode.
+> You must carefully consider the design of the client applications connecting to PgBouncer, otherwise the application may not work as expected.
+>
 
 - **Statement pooling:** A server connection is assigned to the client application for each statement. When the statement completes, the server connection is returned into the pool. Multi-statement transactions are not permitted for this mode.
 

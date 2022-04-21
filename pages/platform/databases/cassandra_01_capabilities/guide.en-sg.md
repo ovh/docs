@@ -3,9 +3,7 @@ title: Cassandra - Capabilities and Limitations
 slug: cassandra/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
 section: Cassandra - Guides
-order: 1
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/capabilities/'
+order: 010
 ---
 
 **Last updated April 7th<sup>th</sup>, 2022**
