@@ -1,5 +1,5 @@
 ---
-title: Verschlüsseln Sie Ihre serverseitigen Objekte mit SSE-C (EN)
+title: Verschlüsseln Ihrer serverseitigen Objekte mit SSE-C (EN)
 slug: s3/encrypt-your-objects-with-sse-c
 excerpt:
 section: Object Storage S3 High Performance
