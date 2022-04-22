@@ -6,7 +6,7 @@ section: Account-Migration
 order: 1
 ---
 
-**Letzte Aktualisierung am 22.02.2022**
+**Letzte Aktualisierung am 22.04.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -169,6 +169,16 @@ Um die Konfiguration zu ändern, klicken Sie auf das rote Kästchen und führen 
 Verwenden Sie nun Ihre migrierten E-Mail-Adressen. OVHcloud stellt dazu eine Online-Anwendung (_Web App_) zur Verfügung, die über <https://www.ovh.com/de/mail/> erreichbar ist. Geben Sie dort die Login-Daten für Ihre E-Mail-Adresse ein.
 
 Wenn Sie einen der migrierten Accounts auf einem E-Mail-Client (wie Outlook) eingerichtet haben, müssen Sie diesen erneut konfigurieren. Die Verbindungsdaten zum OVHcloud Server haben sich nach der Migration geändert. Weitere Informationen finden Sie in den jeweiligen Anleitungen zu [E-Mail Pro](../../emails-pro/) und [Hosted Exchange](../). Auch wenn Sie den Account nicht sofort neu konfigurieren können, ist der Zugriff über die Online-Anwendung weiterhin möglich.
+
+### Organisation des Inhalts Ihrer E-Mail-Adressen nach einer Migration <a name="content-after-migration"></a>
+
+Wenn Sie sich zum ersten Mal in Ihrem neuen E-Mail-Account einloggen, können migrierte Inhalte teilweise verborgen werden. Um alle Elemente anzuzeigen, klicken Sie im Webmail auf Chevron neben dem `Posteingang`, um die Subordner freizugeben. Der migrierte Inhalt Ihres alten E-Mail-Accounts sollte erscheinen.
+
+![exchange](images/owa_migrate_content.png) {.thumbnail}
+
+Standardordner wie "versandte Elemente" oder "Papierkorb" erscheinen in englischer Sprache ("Sentitems" und "Trash"), mit Ausnahme der von Ihnen erstellten Ordner.
+
+Nach einer Migration können Sie alle Ordner und Unterordner Ihres Accounts einsehen, um sicherzustellen, dass alle Elemente vorhanden sind.
 
 ### Manuell migrieren
 
