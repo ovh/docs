@@ -129,4 +129,4 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 [Dazu eine Anleitung der Universität Mannheim](https://www.uni-mannheim.de/informationssicherheit/infomaterial/anleitung-keepass/#c132623)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
