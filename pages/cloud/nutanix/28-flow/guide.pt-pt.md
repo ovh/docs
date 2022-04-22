@@ -48,7 +48,7 @@ Microsegmentation is enabled. You can always disable it.
 
 ### Category configuration <a name="gocategoriesemanage"></a>
 
-A category is an object that can contain one or more values
+A category is an object that can contain one or more values.
 
 When installing a cluster, some categories already exist and can be modified, other categories can be added.
 
@@ -64,7 +64,7 @@ Click `New Category`{.action}.
 
 ![Create Category 02](images/configurecategories02.png){.thumbnail}
 
-Type the name of the category in **Name** and click `New Value`{.action}.
+Type the name of the category in **Name** and Click `New value`{.action}.
 
 ![Create Category 03](images/configurecategories03.png){.thumbnail}
 
@@ -86,11 +86,11 @@ Select the `Special-Computers category`{.action}
 
 ![Create Isolation Rule 02](images/modifycategory02.png){.thumbnail}
 
-Click `Update`{.action} on the `Actions menu`{.action}
+Click `Update`{.action} on the `Actions menu`{.action}.
 
 ![Create Isolation Rule 03](images/modifycategory03.png){.thumbnail}
 
-Click `New value`{.action}
+Click `New value`{.action}.
 
 ![Create Isolation Rule 04](images/modifycategory04.png){.thumbnail}
 
@@ -98,7 +98,7 @@ Enter a value in the **Value** column and click the validation icon.
 
 ![Create Isolation Rule 05](images/modifycategory05.png){.thumbnail}
 
-Click `New Value`{.action}.
+Click `New value`{.action}.
 
 ![Create Isolation Rule 06](images/modifycategory06.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Click `Save`{.action}.
 
 ![Add Category to subnet 05](images/addcategorytosubnet05.png){.thumbnail}
 
-### Network quarantine management.
+### Network quarantine management
 
 Network quarantine allows you to isolate a virtual machine from the entire network, or allow it restricted access to certain repair tools that are on the network.
 

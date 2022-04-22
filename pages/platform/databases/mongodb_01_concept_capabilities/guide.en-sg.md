@@ -47,7 +47,7 @@ Three plans are available:
 - *Business*
 - *Enterprise* (coming soon - stay tuned!)
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes | MongoDB License | Network                    | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | -------------------------- | ------------  | --------- |
