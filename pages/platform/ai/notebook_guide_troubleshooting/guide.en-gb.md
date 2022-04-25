@@ -29,7 +29,7 @@ If you are unable to connect to AI Notebooks, please ensure the following:
 - **You have an autorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log into the OVHcloud Control Panel and open your Public Cloud project. Click on `Users & Roles` in the left menu under `Project Management`. In the roles assignment, don't forget to select `Administrator` and/or `AI Training Operator` for your user.
 To follow all the steps in detail, please refer to this [documentation](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 
-As an alternative, you can generate an authorized token directly via our CLI.
+As an alternative, you can generate an authorized token directly via our [CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/app-token-cli/).
 
 ### I can't install packets via an APT command
 
