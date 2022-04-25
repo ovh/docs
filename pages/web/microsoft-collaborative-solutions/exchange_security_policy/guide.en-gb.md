@@ -37,7 +37,7 @@ To access the security policy of your email service, log in to your [OVHcloud Co
 
 > [!primary]
 >
-> If you do not see the `More`{.action} tab appear in the control panel of your `Emails`{.action} offer, this means that you are on a historical MXplan offer. There is no security policy management on the legacy MXplan solution.
+> If you do not see the `More`{.action} tab appear in the control panel of your `Emails`{.action} service, this means that you are on a legacy MXplan offer. There is no security policy management on the legacy MXplan solution.
 
 Continue to the aspect(s) you want to modify.
 
@@ -64,7 +64,7 @@ This allows you to set a complexity requirement, as well as rules for changing p
 
 To make this change, enter the information listed in the table below:
 
-- **Complexity requirements**: Allows user to set rules regarding the complexity of passwords:<br> \- not contain all or part of the user’s account name<br> \- be at least 6 characters long<br> \- contain uppercase and lowercase letters, non-alphabetic characters (! or $ for example), and numbers
+- **Complexity requirements**: Allows user to set rules regarding the complexity of passwords:<br> \- not contain all or part of the user’s account name<br> \- be at least 6 characters long<br> \- contain uppercase and lowercase letters, non-alphabetic characters (! or $ for example), and numbers.
 - **Prevent password change**: Allows to enforce a minimum lifetime for your Exchange accounts’ passwords. This means that users will have to wait a certain number of days before they can change their passwords.
 - **Maximum password duration**: Allows to enforce a maximum lifetime for your Exchange accounts’ passwords. This means that users will be forced to change their passwords once this time limit is reached.
 - **Keep password history**: This field will only appear if a maximum lifetime has been set. Specify whether previous passwords can be reused again, and if so, for how long.
