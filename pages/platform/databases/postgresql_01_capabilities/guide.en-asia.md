@@ -11,6 +11,7 @@ order: 010
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for PostgreSQL offer.
+
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
@@ -52,7 +53,7 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes by default | Read replicas | Network                |
 | ------------ | -------------------------- | ------------- | ---------------------- |
@@ -66,7 +67,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 

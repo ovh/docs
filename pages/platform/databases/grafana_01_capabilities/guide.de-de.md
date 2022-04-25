@@ -13,7 +13,8 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Grafana offer.
-We continuously improve our offers . You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -36,7 +37,7 @@ The Public Cloud Databases offer supports the following Grafana versions:
 
 - Grafana 8.3
 
-You can follow Grafana Release Cycle on their official page : <https://grafana.com/>
+You can follow the Grafana Release Cycle on their official page: <https://grafana.com/>.
 
 ### Grafana clients
 
@@ -44,9 +45,9 @@ You can use your browser to access your Grafana cluster.
 
 ### Plans
 
-The only plan available so far is *Essential*
+The only plan available so far is *Essential*.
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes | Network                |
 | ------------ | -------------------------- | ---------------- | ---------------------- |
@@ -98,8 +99,8 @@ We do not currently support Grafana advanced parameters.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 

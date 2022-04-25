@@ -13,6 +13,7 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka offer.
+
 We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
@@ -53,7 +54,7 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes by default | Additional nodes | Network                |
 | ------------ | -------------------------- | ---------------- | ---------------------- |
@@ -64,8 +65,8 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 #### Nodes and replicas
 
-- **Business**: the cluster is delivered with 3 nodes by default.
-- **Enterprise**: the cluster is delivered with 6 nodes by default.
+- **Business**: The cluster is delivered with 3 nodes by default.
+- **Enterprise**: The cluster is delivered with 6 nodes by default.
 
 #### License type
 
