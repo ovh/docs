@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated 23<sup>rd</sup> March, 2022.**
+**Last updated 25<sup>th</sup> April, 2022.**
 
 
 ## Objective
@@ -48,7 +48,7 @@ In this example, we are using the environment variable method.
 Type the following command into your terminal:
 
 ```
-export KUBECONFIG=./kube-config
+export KUBECONFIG=./kubeconfig.yml
 ```
 
 #### For Windows 7, 10 and 11 : 
