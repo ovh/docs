@@ -6,7 +6,7 @@ section: 'Introdução ao Exchange'
 order: 6
 ---
 
-**Última atualização: 12/06/2020**
+**Última atualização: 22/04/2022**
 
 ## Objetivo
 

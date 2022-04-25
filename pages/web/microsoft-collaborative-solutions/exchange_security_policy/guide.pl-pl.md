@@ -6,7 +6,7 @@ section: 'Pierwsze kroki z usługą Exchange'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 03-08-2020**
+**Ostatnia aktualizacja z dnia 22-04-2022**
 
 ## Wprowadzenie
 

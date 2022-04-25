@@ -6,7 +6,7 @@ section: Iniziare a utilizzare Exchange
 order: 6
 ---
 
-**Ultimo aggiornamento: 09/06/2020**
+**Ultimo aggiornamento: 22/04/2022**
 
 ## Obiettivo
 

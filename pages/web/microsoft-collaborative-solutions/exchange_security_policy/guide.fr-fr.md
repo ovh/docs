@@ -6,7 +6,7 @@ section: 'Premiers pas avec Exchange'
 order: 6
 ---
 
-**Dernière mise à jour le 09/06/2020**
+**Dernière mise à jour le 22/04/2022**
 
 ## Objectif
 

@@ -6,7 +6,7 @@ section: 'Getting started with Exchange'
 order: 6
 ---
 
-**Last updated 9th June 2020**
+**Last updated 22nd April 2022**
 
 ## Objective
 
