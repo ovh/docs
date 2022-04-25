@@ -863,10 +863,12 @@ kubectl delete crds/ovhnginxs.tutorials.ovhcloud.com
 
 ## What’s next
 
-To go deeper on Kubernetes operators topic, follow others [Kubernetes'](../) tutorials in the `Operators` section.
+To go deeper on the Kubernetes operators topic, follow the other [Kubernetes tutorials](../) in the `Operators` section.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.  
-The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) pattern in Kubernetes.  
+Join our community of users on <https://community.ovh.com/en/>.
+
+The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) pattern in Kubernetes.
+
 The operator [SDK](https://operatorframework.io/operator-capabilities/).
