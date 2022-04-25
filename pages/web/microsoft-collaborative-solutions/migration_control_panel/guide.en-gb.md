@@ -6,7 +6,7 @@ section: 'Exchange account migration'
 order: 1
 ---
 
-**Last updated 22nd February 2022**
+**Last updated 22nd April 2022**
 
 ## Objective
 
@@ -167,16 +167,24 @@ Now, you can start using your migrated email addresses. To do this, OVHcloud off
 
 If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the respective guides in the [Email Pro](../../emails-pro/) and [Hosted Exchange](../) guide sections. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 
+### Organise the contents of your email accounts following a migration <a name=`content-after-migration`></a>
+
+When you first log in to your new email account, the migrated content may be partially hidden. To view all items in the webmail, click on the "chevron" next to the `Inbox` to reveal the subfolders. The migrated content of your old email account should appear.
+
+![exchange](images/owa_migrate_content.png) {.thumbnail}
+
+After a migration, please check all of the folders and sub-folders in your account to ensure that all of the elements are present.
+
 ### Migrating manually
 
 You can also manually migrate your email addresses to your new OVHcloud email solution using only your email software. Please refer to our guide on [Migrating your email address manually](../../emails/migrate-email-addresses-manually/). However, we recommend that you use this method only when the main methods are not possible.
 
 ## Go further
 
-[Managing contacts for your services](../../customer/managing-contacts/){.external}.
+[Managing contacts for your services](../../customer/managing-contacts/)
 
-[Email Pro guides](../../emails-pro/){.external} guides
+[Email Pro guides](../../emails-pro/)
 
-[Exchange guides](../){.external}.
+[Exchange guides](../)
 
 Join our community of users on ‹https://community.ovh.com/en/>.

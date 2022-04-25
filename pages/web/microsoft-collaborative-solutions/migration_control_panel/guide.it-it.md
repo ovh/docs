@@ -168,6 +168,16 @@ A questo punto non ti resta che utilizzare i tuoi account email migrati. OVHclou
 
 Se hai configurato uno degli account migrati su un client di posta elettronica (come Outlook), è necessario impostarlo nuovamente. Le informazioni di connessione al server OVHcloud sono cambiate in seguito alla migrazione. Per maggiori informazioni sulle operazioni da effettuare, consulta la nostra documentazione nelle sezioni delle guide dedicate a [Email Pro](../../emails-pro/) e [Hosted Exchange](../). Se non sei in grado di riconfigurare l'account nell'immediato, l'accesso tramite l'applicazione online è sempre possibile.
 
+### Organizzazione del contenuto dei tuoi indirizzi email in seguito a una migrazione <a name="content-after-migration"></a>
+
+Quando ti connetti per la prima volta al tuo nuovo account email, il contenuto migrato può essere parzialmente nascosto. Per visualizzare tutti gli elementi, clicca sul tuo nome utente in corrispondenza della `Casella di ricevimento` e inserisci le sottocartelle. Il contenuto migrato del tuo vecchio account email dovrebbe apparire.
+
+![exchange](images/owa_migrate_content.png){.thumbnail}
+
+Le cartelle predefinite, come "elementi inviati" o "cestino", sono disponibili in inglese ("Sent items" e "Trash"), ad eccezione delle cartelle che hai creato.
+
+Una volta completata la migrazione, esplora tutte le cartelle e sottocartelle del tuo account per assicurarti che siano presenti tutti gli elementi.
+
 ### Migrare Manualmente
 
 Inoltre, è possibile migrare manualmente i tuoi indirizzi email verso il nuovo servizio di posta OVHcloud utilizzando esclusivamente il client di posta. Clicca sulla guida [Migrare manualmente il tuo indirizzo email](../../emails/migrare-i-indirizzi-email-manualmente/). Vi consigliamo tuttavia di utilizzare questo metodo solo quando non sono possibili i metodi principali.

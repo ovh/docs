@@ -172,6 +172,16 @@ Il ne vous reste plus qu’à utiliser vos adresses e-mail migrées. Pour cela, 
 
 Si vous avez configuré l'un des comptes migrés sur un client de messagerie (comme Outlook), vous devez de nouveau le paramétrer. Les informations de connexion au serveur OVHcloud ont changé suite à la migration. Pour vous aider dans vos manipulations, consultez notre documentation depuis les sections des guides consacrées à [E-mail Pro](https://docs.ovh.com/fr/emails-pro/) et [Hosted Exchange](../). Si vous n'êtes pas en mesure de reconfigurer le compte dans l'immédiat, l'accès via l'applicatif en ligne est toujours possible.
 
+### Organisation du contenu de vos adresses e-mail suite à une migration <a name="content-after-migration"></a>
+
+Lorsque vous vous connectez pour la première fois sur votre nouveau compte e-mail, le contenu migré peut être partiellement caché. Pour afficher l'ensemble des éléments, depuis le webmail, cliquez sur le chevron à côté de la `Boîte de réception` pour révéler les sous-dossiers. Le contenu migré de votre ancien compte e-mail devrait apparaitre.
+
+![exchange](images/owa_migrate_content.png){.thumbnail}
+
+Les dossiers par défaut, comme « éléments envoyés » ou « corbeille » apparaissent en anglais (« Sent items » et « Trash »), à l'exception des dossiers que vous avez créés.
+
+Après une migration, n'hésitez pas à explorer l'ensemble des dossiers et sous-dossiers de votre compte pour vérifier que tous les éléments sont présents.
+
 ### Migrer Manuellement
 
 Vous pouvez également migrer manuellement vos adresses e-mail vers votre nouvelle offre e-mail OVHcloud en utilisant uniquement votre logiciel de messagerie. Appuyez-vous de notre guide [Migrer manuellement votre adresse e-mail](../../emails/migrer-ses-adresses-email-manuellement/). Nous vous préconisons toutefois de n'utiliser cette méthode que lorsque les méthodes principales ne sont pas possibles.
