@@ -48,7 +48,7 @@ In this example, we are using the environment variable method.
 Type the following command into your terminal:
 
 ```
-export KUBECONFIG=./kube-config
+export KUBECONFIG=./kubeconfig.yml
 ```
 
 #### For Windows 7, 10 and 11 : 
