@@ -40,7 +40,7 @@ In a few words, an operator offers OPS actions programmatically and avoids repet
 The tasks that an operator can do are various and can be on resources deployed in Kubernetes (like a Pod) or outside (like a database for example).
 In this guide, we are focusing on resources inside a Kubernetes cluster.
 
-An operator is based on a [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that allow to extend Kubernetes API.<br/>
+An operator is based on [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/) that allow to extend Kubernetes API.<br/>
 Thanks to the control loop of Kubernetes, the operator maintains the right state of the resources.<br/>
 Then the operator's job is to monitor the state of the internal or external objects that it manages.
 
@@ -57,7 +57,7 @@ A good summary of the capabilities of an operator can be found on the [operator 
 
 As an operator is a custom API in Kubernetes, you need to develop it. Thankfully there are frameworks to help you to develop your own operator.
 The most important [framework](https://operatorframework.io/operator-capabilities/) allows you to develop an operator with Ansible, Helm and Go.
-Another kind of frameworks exists to use other languages, like Java for instance with the [Java operator SDK](https://github.com/java-operator-sdk/java-operator-sdk).
+Other frameworks exist to use other languages, like Java for instance with the [Java operator SDK](https://github.com/java-operator-sdk/java-operator-sdk).
 
 As we can see in the tutorial below, the capability of the developed operator depends on the language. For example, developing an operator with Go offers lots of capabilities.
 
@@ -70,18 +70,18 @@ This tutorial assumes that you already have a Kubernetes cluster managed by OVHc
 In this tutorial, you will create a simple operator that manages the installation of an Nginx server and monitors it. <br/>
 The operator allows you to:
 
- - install a Nginx server with the required number of Pods
- - upgrade the number of Pods
- - change the HTTP port
- - recreate the service if it is deleted
+- install a Nginx server with the required number of Pods
+- upgrade the number of Pods
+- change the HTTP port
+- recreate the service if it is deleted
 
 You'll develop this operator with the [operator SDK](https://sdk.operatorframework.io). <br/>
 The operator SDK provides several tools:
 
- - a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator
- - several helpers in different languages (Helm, Ansible and Go) to easily develop an operator
+- a [CLI](https://sdk.operatorframework.io/docs/cli/) to develop and run locally the developed operator
+- several helpers in different languages (Helm, Ansible and Go) to easily develop an operator
 
-In this article, you will use the [Go helper](https://sdk.operatorframework.io/docs/building-operators/golang/quickstart/).  
+In this article, you will use the [Go helper](https://sdk.operatorframework.io/docs/building-operators/golang/quickstart/).
 
 ### Install the CLI
 
@@ -149,12 +149,10 @@ operator-sdk init --project-name nginx-go-operator --domain ovhcloud.com --repo 
 
 For more information about the CLI options see the [documentation](https://sdk.operatorframework.io/docs/cli/operator-sdk_init/) and for more information about Go configuration (for instance the `--repo` option) see the [dedicated part](https://sdk.operatorframework.io/docs/building-operators/golang/tutorial/#a-note-on-dependency-management) of the documentation.
 
-
 > [!primary]
 >
-> Dot not use the repository `ovhcloud-devrel` as below, it's for the example. Use your own GitHub repository.
+> Dot not use the repository `ovhcloud-devrel` as below, it's for example purposes only. Use your own GitHub repository.
 >
-
 
 Output should be like this:
 
@@ -174,7 +172,7 @@ $ operator-sdk create api
 >
 > Warning: If you get an error like:<br/>
 > `/Users/xxxxxxxxx/go-operator/nginx-go-operator/bin/controller-gen: No such file or directory`<br/>
-> Make sure your GOPATH variable is well defined
+> Make sure your GOPATH variable is well defined.
 >
 
 Several resources have been created:
@@ -224,14 +222,14 @@ Several resources have been created:
 ### Custom resources definition and controller
 
 The [custom resources definition](https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/) (CRDs) is the main point of the operator.<br/>
-It allows you to extend the default API of Kubernetes. This means you can work with them the same way you would with its core resources.<br/>
+It allows you to extend the default API of Kubernetes. This means you can work with it the same way you would with its core resources.<br/>
 In other words, once you have created a CRD, you'll be able to create new resources, called Custom Resources (CRs) to distinguish them from the core Kubernetes resources.<br/>
 The CRD is some kind of schema for the CR based on it.
 
 It is important to note that CRDs by themselves are just data. They do not have any logic attached to them, nor any special behavior. 
 To add logic you need a [controller](https://kubernetes.io/docs/concepts/architecture/controller/) or an operator.
 
-You need to add an API to create these two kind of resources:
+You need to add an API to create these two kinds of resources:
 ```bash
 operator-sdk create api --group tutorials --version v1 --kind OvhNginx --resource --controller
 ```
@@ -344,7 +342,7 @@ After this, new things are generated:
 > In this tutorial you mainly work with the resources in the following folders: `api/v1`, `config/crd`, `config/samples` and `controllers/`.
 >
 
-Next, you can have a look to the three main generated files. <br/>
+Next, you can have a look at the three main generated files. <br/>
 The CRD file `tutorials.ovhcloud.com_ovhnginxes.yaml` in the folder `./config/crd/bases`:
 ```yaml
 apiVersion: apiextensions.k8s.io/v1
@@ -591,9 +589,10 @@ status:
 ### The reconciler
 
 After the CRD you have to update the reconciler to:
- - create the `deployment` for the Nginx pod,
- - create the `service`,
- - watch the created service to re-create it if it's deleted.
+
+- create the `deployment` for the Nginx pod,
+- create the `service`,
+- watch the created service to re-create it if it's deleted.
 
  Update the `./controllers/ovhnginx_controller.go` file:
  ```go
@@ -725,7 +724,7 @@ func (r *OvhNginxReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 				return ctrl.Result{}, err
 			}
 		} else if err == nil {
-			// Service exists, check if the port have to be updated.
+			// Service exists, check if the port has to be updated.
 			var port int32 = ovhNginx.Spec.Port
 			if existingService.Spec.Ports[0].Port != port {
 				log.Info("🔁 Port number changes, update the service! 🔁")
@@ -824,13 +823,13 @@ func (r *OvhNginxReconciler) SetupWithManager(mgr ctrl.Manager) error {
  ```
 > [!primary]
 >
-> It have an error like:
+> If this kind of errors occurs:
 ```bash
 controllers/ovhnginx_controller.go:22:4: no required module provides package github.com/ovhcloud-devrel/nginx-go-operator/api/v1; to add it:
     go get github.com/ovhcloud-devrel/nginx-go-operator/api/v1
 Error: not all generators ran successfully
 ```
-You certainly forget to change the repository name during the init phase of this tutorial.
+You certainly forgot to change the repository name during the init phase of this tutorial.
 To fix it, you have to change the import statement in the `./controllers/ovhnginx_controller.go` file, replace `ovhcloud-devrel` GitHub repository in `tutorialsv1 "github.com/ovhcloud-devrel/nginx-go-operator/api/v1"` with your own GitHub repository.
 >
 
@@ -1107,7 +1106,7 @@ IMG ?= $(IMAGE_TAG_BASE):$(VERSION)
 
 > [!warning]
 > 
-> If you use the last Mac M1, test can failed with the error `unable to start control plane itself: failed to start the controlplane. retried 5 times: exec: \"etcd\": executable file not found in $PATH"`. As mentioned in the following [issue](https://github.com/kubernetes-sigs/controller-runtime/issues/1657#issuecomment-988484517) you have to update `test` goal of the `Makefile` as following.
+> If you use the last Mac M1, tests can fail with the error `unable to start control plane itself: failed to start the controlplane. retried 5 times: exec: \"etcd\": executable file not found in $PATH"`. As mentioned in the following [issue](https://github.com/kubernetes-sigs/controller-runtime/issues/1657#issuecomment-988484517) you have to update `test` goal of the `Makefile` as following.
 >
 
 ```makefile
@@ -1283,7 +1282,7 @@ resources:
 - auth_proxy_client_clusterrole.yaml
 ```
 
-Then, update your `service_account.yaml` file in the `./config/rbac/` folder to use the previous created secret:
+Then, update your `service_account.yaml` file in the `./config/rbac/` folder to use the previously created secret:
 ```yaml
 apiVersion: v1
 kind: ServiceAccount
@@ -1409,10 +1408,12 @@ deployment.apps "nginx-go-operator-controller-manager" deleted
 
 ## What’s next
 
-To go deeper on Kubernetes operators topic, follow others [Kubernetes'](../) tutorials in the `Operators` section.
+To go deeper on Kubernetes operators topic, follow others [Kubernetes tutorials](../) in the `Operators` section.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.  
-The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) pattern in Kubernetes.  
+Join our community of users on <https://community.ovh.com/en/>.
+
+The [operator](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) pattern in Kubernetes.
+
 The operator [SDK](https://operatorframework.io/operator-capabilities/).
