@@ -37,7 +37,7 @@ Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Si
 
 > [!primary]
 >
-> Wenn Sie den Tab `Mehr`{.action} nicht im Verwaltungspanel Ihres `E-Mail`{.action} Angebots sehen, bedeutet dies, dass Sie auf einem historischen MXplan Angebot sind. Beim historischen MXplan Angebot gibt es keine sicherheitspolitische Steuerung.
+> Wenn der Tab `Mehr`{.action} nicht im Verwaltungsbereich von `E-Mails`{.action} zu sehen ist, bedeutet das, dass Sie einen MXplan "Legacy" verwenden. Bei diesen MXplan Diensten gibt es keine spezielle Sicherheitsverwaltung.
 
 Befolgen Sie nun die Anleitung entsprechend den von Ihnen gewünschten Aktionen.
 
