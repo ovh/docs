@@ -170,7 +170,7 @@ Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), de
 
 ## Organização do conteúdo dos seus endereços de e-mail na sequência de uma migração <a name="content-after-migration"></a>
 
-Quando se liga pela primeira vez à sua nova conta de e-mail, o conteúdo migrado pode estar parcialmente oculto. Para apresentar todos os elementos, a partir do webmail, clique no master junto da Caixa de Receção` para revelar os sub-dossiers. O conteúdo migrado da sua antiga conta de e-mail deverá aparecer.
+Quando se liga pela primeira vez à sua nova conta de e-mail, o conteúdo migrado pode estar parcialmente oculto. Para apresentar todos os elementos, a partir do webmail, clique no master junto da "Caixa de Receção" para revelar os subpasta. O conteúdo migrado da sua antiga conta de e-mail deverá aparecer.
 
 ![exchange](images/owa_migrate_content.png) {.thumbnail}
 

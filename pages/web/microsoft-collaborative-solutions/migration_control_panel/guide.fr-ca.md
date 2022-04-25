@@ -166,7 +166,7 @@ Lorsque vous vous connectez pour la première fois sur votre nouveau compte e-ma
 
 Les dossiers par défaut, comme « éléments envoyés » ou « corbeille » apparaissent en anglais (« Sent items » et « Trash »), à l'exception des dossiers que vous avez créés.
 
-N'hésitez pas, après une migration, à explorer l'ensemble des dossiers et sous-dossiers de votre compte pour s'assurer que tous les éléments sont présents.
+Après une migration, n'hésitez pas à explorer l'ensemble des dossiers et sous-dossiers de votre compte pour vérifier que tous les éléments sont présents.
 
 ### Migrer Manuellement
 
