@@ -667,6 +667,6 @@ La base de données est restaurée dans une nouvelle base de données.
 
 [Documentation OVHcloud Load Balancer](https://docs.ovh.com/fr/load-balancer/)
 
-[Nos solution OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/object-storage/)
+[Nos solutions OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/object-storage/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
