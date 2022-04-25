@@ -76,7 +76,7 @@ If you choose the number of `CPUs`:
 
 - Memory and local storage resources are not customizable but scaled linearly with each additional CPU.
 
-The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available through our [OVHcloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/), Control Panel and the `ovhai` CLI.
+The maximum amount of CPU/GPU, memory per CPU/GPU and local storage is available through our [OVHcloud website](https://www.ovhcloud.com/en-sg/public-cloud/prices/), Control Panel and the `ovhai` CLI.
 
 For your information, the current limits are:
 
@@ -84,14 +84,14 @@ For your information, the current limits are:
 - GPU: 4 per notebook.
 
 > [!primary]
-> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/gb/en/publiccloud/ai/data) for more information.
+> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see the [OVHcloud documentation on data](https://docs.ovh.com/sg/en/publiccloud/ai/data) for more information.
 >
 
 #### GPU hardware for notebooks
 
 Currently we provide:
 
-- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/en-gb/public-cloud/prices/)).
+- **NVIDIA V100S** ([pricing available here](https://www.ovhcloud.com/en-sg/public-cloud/prices/)).
 
 ### Storage
 
@@ -137,7 +137,7 @@ Limitations:
 - AI Notebooks **does not allow the use of custom Docker images**. In case you need a very specific package or framework, you can bring your custom Docker images with **OVHcloud AI Training**.
 
 AI Training allows you to benefit from the same technology and pricing, but you can create notebooks directly with your own Docker images.
-If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](https://docs.ovh.com/gb/en/publiccloud/ai/training/build-use-custom-image/).
+If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](https://docs.ovh.com/sg/en/publiccloud/ai/training/build-use-custom-image/).
 
 
 ### Network access
