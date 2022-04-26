@@ -1,6 +1,6 @@
 ---
 title: AI Notebooks - Troubleshooting
-slug: notebook/debug-notebooks
+slug: notebooks/debug-notebooks
 excerpt: Tutorial about how to debug your notebooks
 section: AI Notebooks guides
 order: 05

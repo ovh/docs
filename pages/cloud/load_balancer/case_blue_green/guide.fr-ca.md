@@ -58,8 +58,6 @@ Depuis le manager :
 ![Ajout d'une nouvelle ferme HTTP dédié à l'infrastructure A](images/ferme1.png){.thumbnail}
 
 
-![Renseigner la configuration de la ferme](images/backend1.png){.thumbnail}
-
 Via l'Api :
 
 
