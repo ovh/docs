@@ -42,7 +42,7 @@ You also need to have a working OVHcloud Managed Private Registry and have follo
 
 You should have at least one wordpress Helm chart in your Private Registry:
 
-![Helm charts in OVHcloud Managed Private Registry](images/helm-chart-in-ovh-private-registry)
+![Helm charts in OVHcloud Managed Private Registry](images/helm-chart-in-ovh-private-registry.png)
 
 ## Prerequisites
 

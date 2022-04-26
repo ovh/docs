@@ -65,7 +65,7 @@ Um den Snapshot zu sehen, klicken Sie im linken Menü auf `Instance Backup`{.act
 
 #### Im Horizon-Interface
 
-Um fortzufahren, muss der [Zugang zu Horizon](../erstellung_eines_zugangs_zu_horizon/) konfiguriert sein, damit Sie sich [in das Horizon-interface einloggen](https://horizon.cloud.ovh.net/auth/login/) können.
+Um fortzufahren, muss der [Zugang zu Horizon](../horizon/) konfiguriert sein, damit Sie sich [in das Horizon-interface einloggen](https://horizon.cloud.ovh.net/auth/login/) können.
 
 Wenn Sie Instanzen in verschiedenen Regionen eingerichtet haben, stellen Sie sicher, dass Sie sich in der korrekten Region befinden. Überprüfen Sie es in der oberen linken Ecke des Horizon-Interface.
 

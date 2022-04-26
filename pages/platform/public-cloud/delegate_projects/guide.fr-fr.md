@@ -28,7 +28,7 @@ Cette page vous permet de voir les contacts associés à votre projet.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Suivez les instructions décrites dans notre guide « [Changer les contacts d’un projet](../changer-les-contacts-dun-projet/) » afin de finaliser cette manipulation.
+Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Suivez les instructions décrites dans notre guide « [Changer les contacts d’un projet](../gestion-des-contacts-dun-projet-PCI/) » afin de finaliser cette manipulation.
 
 ### Ajouter des contacts et des droits
 

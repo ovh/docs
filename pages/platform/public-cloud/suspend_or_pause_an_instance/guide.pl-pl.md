@@ -69,7 +69,7 @@ Aby wyświetlić migawkę, przejdź do menu po lewej stronie i kliknij pozycję 
 
 #### Z poziomu interfejsu Horizon
 
-Aby kontynuować, należy [tworzenie dostepu do interfejsu Horizon](../tworzenie_dostepu_do_interfejsu_horizon/) i [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Aby kontynuować, należy [tworzenie dostepu do interfejsu Horizon](../horizon/) i [zalogować się do interfejsu Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Jeśli wdrożyłeś instancje w różnych regionach, upewnij się, że jesteś we właściwym regionie. Weryfikacji dokonujesz w lewym górnym rogu w interfejsie Horizon.
 
