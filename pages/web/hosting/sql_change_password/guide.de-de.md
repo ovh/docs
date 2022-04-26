@@ -117,7 +117,7 @@ Gehen Sie in diesem Bereich Ihres Kundencenters auf den Tab `Benutzer und Rechte
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/customer/passwort-verwalten/).
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/customer/Passwort-verwalten/).
 >
 
 Legen Sie das neue Passwort Ihrer Datenbank fest und speichern Sie es. Es muss folgende Bedingungen erfüllen:

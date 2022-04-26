@@ -89,7 +89,7 @@ W karcie `Konta e-mail`{.action} Twojej platformy kliknij przycisk `...`{.action
 
 Przenieś konto e-mail "source" na konto Twojej nowej platformy, korzystając z naszego narzędzia [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Jeśli chcesz migrować kilka kont e-mail, zalecamy użycie trybu [Project](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/#migracja-kilku-kont-w-ramach-jednego-projektu-tryb-projekt) przez [OMM](https://omm.ovh.net/Project/Create), pozwoli Ci zaimportować tabelę w formacie CSV zawierającą informacje o kontach e-mail, które mają zostać migrowane.
+> Jeśli chcesz migrować kilka kont e-mail, zalecamy użycie trybu [Project](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/#project) przez [OMM](https://omm.ovh.net/Project/Create), pozwoli Ci zaimportować tabelę w formacie CSV zawierającą informacje o kontach e-mail, które mają zostać migrowane.
 
 Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/).
 
