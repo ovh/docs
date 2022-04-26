@@ -255,7 +255,7 @@ Interfejs logowania powinien wyświetlać komunikat informujący o wygaśnięciu
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-Nowe hasło użytkownika admin musi zostać wprowadzone dwa razy. Jednak pole potwierdzenia nie jest jeszcze widoczne, co oznacza, że należy zostawić pierwsze pole puste, wpisać nowe hasło w drugim polu, a następnie użyć przycisku tabulacji (" ↹ ") klawiatury (wirtualnej), aby przejść do trzeciego pola ("Potwierdź hasło").
+Nowe hasło użytkownika admin musi zostać wprowadzone dwa razy. Jednak pole potwierdzenia nie jest jeszcze widoczne, co oznacza, że należy zostawić pierwsze pole puste, wpisać nowe hasło w drugim polu, a następnie użyć przycisku tabulacji (“ ↹ ”) klawiatury (wirtualnej), aby przejść do trzeciego pola (“Potwierdź hasło”).
 <br>Wpisz ponownie hasło i kliknij strzałkę, aby je zarejestrować.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

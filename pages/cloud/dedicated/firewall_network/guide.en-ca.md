@@ -73,6 +73,11 @@ You can set up to **20 rules per IP**.
 
 ### Configuring the Firewall Network
 
+> [!warning]
+> Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
+> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/ca/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/ca/en/dedicated/firewall-iptables/).
+>
+
 To add a rule, click on `Add a rule`{.action}:
 
 

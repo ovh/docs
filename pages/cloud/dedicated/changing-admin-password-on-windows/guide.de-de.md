@@ -253,7 +253,7 @@ Das Login-Interface sollte eine Nachricht anzeigen, die den Ablauf des Passworts
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-Das neue Passwort des Admin-Benutzers muss nun zweimal eingegeben werden. Das Bestätigungsfeld ist jedoch noch nicht sichtbar, was bedeutet, dass Sie das erste Feld leer lassen, Ihr neues Passwort in das zweite Feld eingeben und dann die Tabulatortaste ("↹") der (virtuellen) Tastatur verwenden müssen, um zum dritten Feld ("Passwort bestätigen") zu wechseln.
+Das neue Passwort des Admin-Benutzers muss nun zweimal eingegeben werden. Das Bestätigungsfeld ist jedoch noch nicht sichtbar, was bedeutet, dass Sie das erste Feld leer lassen, Ihr neues Passwort in das zweite Feld eingeben und dann die Tabulatortaste ("↹") der (virtuellen) Tastatur verwenden müssen, um zum dritten Feld (“Passwort bestätigen”) zu wechseln.
 <br>Geben Sie das Passwort erneut ein und klicken Sie auf den Pfeil, um es zu speichern.
 
 ![Enterpw](images/adminpw_win_05.png){.thumbnail}
