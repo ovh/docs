@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el firewall de red'
 slug: firewall-de-red
-excerpt: 'Cómo configurar el firewall de red'
+excerpt: 'Cómo configurar el Firewall Network'
 section: 'Red e IP'
 ---
 
@@ -13,9 +13,9 @@ section: 'Red e IP'
 
 ## Objetivo
 
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el firewall de red. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
+Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Firewall Network. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
-**Esta guía explica cómo configurar el firewall de red.**
+**Esta guía explica cómo configurar el Firewall Network.**
 
 
 > [!primary]
@@ -28,7 +28,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Tener contratado un servicio de OVHcloud que utilice el firewall de red ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
+- Tener contratado un servicio de OVHcloud que utilice el Firewall Network ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -38,11 +38,11 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Procedimiento
 
-### Activar el firewall de red
+### Activar el Firewall Network
 
 > [!primary]
 >
-> El firewall de red protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
+> El Firewall Network protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
 Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
@@ -75,7 +75,12 @@ Es posible añadir hasta **20 reglas por IP**.
 >
 
 
-### Configurar el firewall de red
+### Configurar el Firewall Network
+
+> [!warning]
+> Tenga en cuenta que el Firewall Network de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
+> Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](https://docs.ovh.com/es/dedicated/firewall-windows/) y [Configurar el firewall de Linux con iptables](https://docs.ovh.com/es/dedicated/firewall-iptables/).
+>
 
 Para añadir una regla, haga clic en el botón `Añadir una regla`{.action}.
 
@@ -112,7 +117,7 @@ Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2
 
 > [!warning]
 >
-> Si se activa la mitigación anti-DDoS, las reglas del firewall de red se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
+> Si se activa la mitigación anti-DDoS, las reglas del Firewall Network se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
 > 
 
 ### Configurar el firewall de red Armor (Firewall Game)
