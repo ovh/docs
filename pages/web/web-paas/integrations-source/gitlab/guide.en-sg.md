@@ -19,10 +19,6 @@ The [GitLab](https://gitlab.com) integration allows you to manage your Web PaaS 
 
 ## Setup
 
-> [!primary]  
-> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration. See the [Renaming the default branch guide](../../guides-general/default-branch) for more information.
-> 
-
 ### 1. Generate a token
 
 To integrate your Web PaaS project with an existing GitLab repository, you first need to generate a token on your GitLab user profile. Simply go to your Settings page on GitLab and click `Access Tokens`.

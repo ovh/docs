@@ -272,6 +272,6 @@ DATABASE_NAME,DESCRIPTION,ACTIVE_STATUS,ACTIVE_STATUS_DETAILS,OS_USER,OS_GROUP,R
 
 ## Go further
 
-General guideline documentation on [how to update SAP HANA on a a OVHcloud SLES system](../update-sap-hana-sles).
+General guideline documentation on [how to update SAP HANA on a a OVHcloud SLES system](../update-sap-hana-sles/).
 
-General guideline documentation on [how to backup SAP HANA on a a OVHcloud SLES system](../backup-sap-hana).
+General guideline documentation on [how to backup SAP HANA on a a OVHcloud SLES system](../backup-sap-hana/).
