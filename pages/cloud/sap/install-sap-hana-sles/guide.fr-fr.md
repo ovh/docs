@@ -29,7 +29,7 @@ Vous devez avoir :
 - installé toutes les dernières sources et tous les paquets nécessaires;
 - appliqué tous les processus de fine-tuning requis par SAP.
 
-Reportez-vous à la documentation sur [comment préparer un système SLES OVHcloud pour SAP HANA](../prepare-sles-for-sap-hana).
+Reportez-vous à la documentation sur [comment préparer un système SLES OVHcloud pour SAP HANA](../sap-preparation-sles-pour-sap-hana/).
 
 ## En pratique
 
