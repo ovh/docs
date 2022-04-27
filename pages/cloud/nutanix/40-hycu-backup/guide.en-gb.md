@@ -12,7 +12,7 @@ order: 01
 
 HYCU for Nutanix is a backup software available for Nutanix. 
 
-**Find out how to install, configure and use HYCU on a Nutanix cluster with Object Storage storage provided by OVHcloud**
+**Find out how to install, configure and use HYCU on a Nutanix cluster with Object Storage storage provided by OVHcloud.**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -41,7 +41,7 @@ For more information on connecting to the cluster, see the [Go further](#gofurth
 
 #### Adding HYCU installation image
 
-From the main menu, click `Images`{.action} from the `Compute & Storage menu`{.action}
+From the main menu, click `Images`{.action} from the `Compute & Storage menu`{.action}.
 
 ![Add Image HYCU 01](images/00-addimagehycu01.png){.thumbnail}
 
@@ -72,7 +72,7 @@ On the **Prism Central** dashboard, click the `cluster name`{.action} in the **C
 
 ![Configure ISCSI 01](images/00-configureiscsi01.png){.thumbnail}
 
-#### Configuring the IP Address for ISCSI
+#### Configuring the IP address for ISCSI
 
 Go to the settings by clicking on the `gear icon`{.action}.
 
@@ -96,7 +96,7 @@ The IP address is displayed in **virtual IP**.
 
 #### Adding a user account in **Prism Element** for HYCU
 
-Click the gear to go to the **Prism Element configuration**
+Click the gear to go to the **Prism Element configuration**.
 
 ![Add local user to Prism Element 01](images/01-adduserprismelement01.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Enter these values:
 - **Password**: `password`
 
 > [!primary]
-> This information is provided as an example, the e-mail address is mandatory but is not used.
+> This information is provided as an example, the email address is mandatory but is not used.
 
 Select the `Cluster Admin`{.action} checkbox and click `Save`{.action}.
 
@@ -193,7 +193,7 @@ Click `Next`{.action}.
 Create a **yaml** file by editing these values:
 
 - **< IP address >**: Local IP address of the cluster.
-- **< GATEWAY >** : Local gateway for the cluster to go on the Internet.
+- **< GATEWAY >**: Local gateway for the cluster to access the Internet.
 - **< DNS >**: DNS used on the Internet.
 
 ```yaml
@@ -234,17 +234,17 @@ In the `Server clusters`{.action} tab, click `Add a server cluster`{.action}.
 
 ![Configure Load Balancer 01](images/03a-configureloadbalancer01.png){.thumbnail}
 
-Name your server cluster, then select `TCP`{.action} and enter this information
+Name your server cluster, then select `TCP`{.action} and enter this information:
 
 - **Port**: `8443`
-- **Datacentre**: `ALL`
+- **Datacenter**: `ALL`
 - **Private network**: `nutanix`
 
 Click `Add`{.action} to confirm the server farm creation.
 
 ![Configure Load Balancer 02](images/03a-configureloadbalancer02.png){.thumbnail}
 
-Click `Add a server`{.action}
+Click `Add a server`{.action}.
 
 ![Configure Load Balancer 03](images/03a-configureloadbalancer03.png){.thumbnail}
 
@@ -265,7 +265,7 @@ Next, click on the `Front-ends`{.action} tab, and `Add a front-end`{.action}.
 Name your front-end, choose the `TCP`{.action} protocol, and modify these values:
 
 - **Port**: `8443`
-- **Datacentre**: `ALL`
+- **Datacenter**: `ALL`
 - **Default server cluster**: `HYCU (TCP)`
 
 Click `Add`{.action}.
@@ -545,7 +545,7 @@ Change the backup options in **Backup** and change the **BACKUP THREESHOLD** val
 
 ![Create Policy for General Usage 01 ](images/10-createpolicyforgeneralusage01.png){.thumbnail}
 
-Edit the **Fast restore** option with your settings and click `Save`{.action}
+Edit the **Fast restore** option with your settings and click `Save`{.action}.
 
 ![Create Policy for General Usage 02 ](images/10-createpolicyforgeneralusage02.png){.thumbnail}
 
