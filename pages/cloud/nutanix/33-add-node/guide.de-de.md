@@ -1,6 +1,8 @@
 ---
 title: "Node zu einem Nutanix-Cluster hinzufügen (EN)"
 slug: add-node
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/add-node/'
 excerpt: 'Add a node and confirm that it is working properly'
 section: Fortgeschrittene Nutzung
 order: 03

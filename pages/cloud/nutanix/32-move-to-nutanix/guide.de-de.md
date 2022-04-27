@@ -1,6 +1,8 @@
 ---
 title: "Migration zu Nutanix über das Nutanix Move Tool (EN)"
 slug: move-to-nutanix
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/move-to-nutanix/'
 excerpt: "Install, configure and use the Move migration tool"
 section: Fortgeschrittene Nutzung
 order: 02
