@@ -67,7 +67,7 @@ Then, click on `kubeconfig`{.action} to download the `kubectl` configuration fil
 How kubeconfig files are loaded?
 
 - 1. from the `--kubeconfig`{.action} flag, is specified
-- 2. from the `KUBECONFIG` environment variable, if setted
+- 2. from the `KUBECONFIG` environment variable, if set
 - 3. from the `$HOME/.kube/config` file, by default
 
 So, after downloading it, if you want to use this configuration file by default in `kubectl`, you can save it with the filename `config` in the `$HOME/.kube/` directory. Alternatively, you can place it in your working directory, with either the `KUBECONFIG` environment variable or the `--kubeconfig` flag. 
