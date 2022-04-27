@@ -72,13 +72,18 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 ### Configurer le Firewall Network
 
-Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
+> [!warning]
+> Veuillez noter que le Firewall Network d'OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.<br>
+> Pour plus d'informations, consultez les guides suivants : [Configurer le pare-feu sous Windows](https://docs.ovh.com/ca/fr/dedicated/firewall-windows/) et [Configurer le pare-feu sous Linux avec Iptables](https://docs.ovh.com/ca/fr/dedicated/firewall-iptables/).
+>
+
+Pour ajouter une règle, cliquez sur `Ajouter une règle`{.action}.
 
 ![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
 
 Pour chaque règle, vous devez choisir :
 - une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
-- une action (`Autoriser`{.action} ou ` Refuser`{.action}) ;
+- une action (`Autoriser`{.action} ou `Refuser`{.action}) ;
 - le protocole ;
 - une adresse IP (facultatif) ;
 - le port source (TCP uniquement) ;
