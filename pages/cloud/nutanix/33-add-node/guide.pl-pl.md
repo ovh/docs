@@ -1,6 +1,8 @@
 ---
 title: "Dodanie węzła do klastra Nutanix (EN)"
 slug: add-node
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/nutanix/add-node/'
 excerpt: 'Add a node and confirm that it is working properly'
 section: Zaawansowane korzystanie
 order: 03
