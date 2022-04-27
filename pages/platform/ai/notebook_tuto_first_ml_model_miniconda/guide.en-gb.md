@@ -92,7 +92,7 @@ You can then reach your notebook’s URL once the notebook is running.
 
 Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `miniconda` > `tuto` > ` ai-notebooks-introduction` > `notebook-introduction-linear-regression.ipynb`.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/first-notebook-miniconda/notebooks/miniconda/tuto/ai-notebooks-introduction/notebook-introduction-linear-regression.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/miniconda/tuto/ai-notebooks-introduction/notebook-introduction-linear-regression.ipynb).
 
 ## Feedback
 
