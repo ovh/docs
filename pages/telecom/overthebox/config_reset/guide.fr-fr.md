@@ -37,7 +37,7 @@ Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Power
 
 - Dans le cas d'un OverTheBox IT v2 :
 
-Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Reset.
+Maintenir appuyé pendant 30 secondes sur le bouton Reset. En relâchant, le bouton Reset, les trois voyants en façade s'allument pendant 1 seconde.
 
 ![overthebox](images/reset-method1_OTBv2c_edit.jpg){.thumbnail}
 
