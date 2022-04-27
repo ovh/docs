@@ -20,11 +20,11 @@ AI Notebooks are linked to a Public Cloud project. The whole project is billed a
 
 During its lifetime, the notebook will go through the following statuses:
 
-- `STARTING`: the notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](https://docs.ovh.com/gb/en/publiccloud/ai/data/#how-it-works) documentation.
+- `STARTING`: the notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization, please check out the [Data - How it works](https://docs.ovh.com/sg/en/publiccloud/ai/data/#how-it-works) documentation.
 - `RUNNING`: the notebook is running, you can connect to it and use it. Compute resources (GPUs/CPUs) are allocated to your specific notebook and data are available.
 - `STOPPING`: the notebook is stopping, your compute resources are freed, your status is saved and, if any, the data is synchronized back.
 - `STOPPED`: the notebook ended normally. You can restart it whenever you want or delete it.
-- `FAILED`: the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/debug-notebooks/#cli-my-notebook-is-in-failed-status) of our [Troubleshooting documentation](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/debug-notebooks/).
+- `FAILED`: the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code. For more information, refer to [this section](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/debug-notebooks/#cli-my-notebook-is-in-failed-status) of our [Troubleshooting documentation](https://docs.ovh.com/sg/en/publiccloud/ai/notebooks/debug-notebooks/).
 - `ERROR`: the notebook ended due to a backend error. You may reach our support.
 - `DELETING`: the notebook is being removed. When it is deleted, you will no longer see it, it will no longer exist.
 
@@ -61,7 +61,7 @@ A more detailed view:
 ### Compute resources details
 
 During the notebook creation, you can select **compute resources**, known as CPUs or GPUs.
-Their official pricing is available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or on the[OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+Their official pricing is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or on the[OVHcloud Public Cloud website](https://www.ovhcloud.com/en-sg/public-cloud/prices/).
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
@@ -71,7 +71,7 @@ Rates for compute are mentioned per hour to facilitate reading of the prices, bu
 
 Each compute resource (CPU or GPU) comes with local storage, that we can consider ephemeral since this storage space is not saved when you delete an AI Notebooks.
 
-The sizing depends on the selected amount of compute resources, check the details on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+The sizing depends on the selected amount of compute resources, check the details on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-sg/public-cloud/prices/).
 
 #### Remote Object storage
 
