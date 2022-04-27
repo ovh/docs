@@ -207,10 +207,10 @@ OVHcloud Server sind mit Firewall Network, einer eigenen Firewall direkt am Eing
 
 Das Konzept der Sicherheit ist nicht auf den Schutz eines Systems vor Angriffen beschränkt. Die Sicherung Ihrer Daten ist ebenfalls ein wesentlicher Bestandteil, weshalb OVHcloud Ihnen kostenlos 500 GB Backup-Speicherplatz für Ihren Server anbietet. Sie können den Backup-Speicher in Ihrem Kundencenter aktivieren und dort über folgende Protokolle auf ihn zugreifen.
 
-* FTP
-* FTPS
-* NFS
-* CIFS
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Außerdem benötigen Sie eine zusätzliche Backup-Lösung, um Ihre Daten zu replizieren und auf Ihren Backup-Speicher zu übertragen.
 

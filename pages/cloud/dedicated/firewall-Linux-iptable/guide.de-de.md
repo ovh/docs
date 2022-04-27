@@ -28,7 +28,7 @@ Firewalls implementieren Regeln, die erlaubten und gesperrten Traffic verwalten.
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
-- Sie haben administrativen Zugriff (root/sudo) auf Ihren Server über. 
+- Sie haben administrativen Zugriff (root/sudo) über SSH auf Ihren Server. 
 
 ## In der praktischen Anwendung
 
