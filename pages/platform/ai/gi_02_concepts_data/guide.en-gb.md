@@ -81,13 +81,13 @@ If you need to delete data from your object container, you can mount your volume
 
 - **Read Write Delete** (shorten by `RWD`): you have full access to your data in your job or notebook. You can therefore write, modify, add or **delete** data in this container.
 
-*When to attach a volume in read-write `RWD`?*
+*When to attach a volume in read-write-delete `RWD`?*
 
 The purpose of the **read-write-delete** permission is to be able to modify and **delete** the contents of the object container.
 
 > [!warning]
 >
-> After the synchronisation phase, your data deleted from your notebook or job will be permanently deleted.
+> After the synchronisation phase, your data deleted from your notebook or job will be permanently deleted in the Object Storage.
 
 > [!primary]
 >
