@@ -27,17 +27,17 @@ We back up our managed cloud databases every 1 (incremental), 12 or 24 hours —
 
 Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
 
-Engine | Backup Method(s) | Frequency | RPO
-:--- | :--- | :---: | :---:
-MongoDB | Remote site backup (option 2nd backup site) | Daily | 24h
-MongoDB Enterprise | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
-PostgreSQL | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
-MySQL | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
-Redis | Remote site backup (option 2nd backup site) | 2 times a day | 12h
-OpenSearch | Incremental + Remote site backup (option 2nd backup site) | Hourly for incremental - Daily for backup | 1h for incremental - 24h for backup
-M3 | Remote site backup (option 2nd backup site) | Daily | 24h
-Cassandra | Remote site backup (option 2nd backup site) | Daily | 24h
-Kafka | N/A | N/A | N/A
+Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
+:--- | :--- | :--- | :---: | :---: | :---:
+MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
+MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
+PostgreSQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
+MySQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
+Redis | Backup on object storage | On-Site | 2 times a day | 12h | Yes
+OpenSearch | Hourly Incremental / Backup on object storage | On-Site | Hourly / Daily | 1h / 24h | Yes
+M3 | Backup on object storage | On-Site | Daily | 24h | Yes
+Cassandra | Backup on object storage | On-Site | Daily | 24h | Yes
+Kafka | N/A | N/A | N/A | N/A | N/A
 
 ## Lexicon
 
