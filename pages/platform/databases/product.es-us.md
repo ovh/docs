@@ -1,6 +1,6 @@
 ---
 title: Databases
 slug: publiccloud/databases
-sections: General information, MongoDB - Guides, MySQL - Guides, MongoDB - Tutorials, MySQL - Tutorials, PostgreSQL - Guides, Redis - Guides, PostgreSQL - Tutorials, Redis - Tutorials, Cassandra - Guides, Kafka, Grafana - Guides, Kafka MirrorMaker, M3db - Guides, Kafka Connect - Guides, M3 Aggregator - Guides, OpenSearch
+sections: General information, MongoDB - Guides, General Guides, MongoDB - Tutorials, MySQL - Guides, PostgreSQL - Guides, MySQL - Tutorials, PostgreSQL - Tutorials, Redis - Guides, Cassandra - Guides, Redis - Tutorials, Grafana - Guides, Kafka, M3db - Guides, Kafka MirrorMaker, M3 Aggregator - Guides, Kafka Connect - Guides, OpenSearch
 order: 02
 ---
