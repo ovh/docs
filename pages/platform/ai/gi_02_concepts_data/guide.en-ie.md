@@ -47,7 +47,7 @@ There are two ways to manage your data:
 
 ### Access rights
 
-Users can give 2 different access rights on **Filesystem volumes** attached on jobs and notebooks:
+Users can give 3 different access rights on **Filesystem volumes** attached on jobs and notebooks:
 
 - **Read Only** (shorten by `RO`): you are only able to read data in your job or notebook. It is forbidden to write, modify or delete data in this container.
 
@@ -63,15 +63,35 @@ The purpose of **read-only** permissions is to ensure that you do not modify you
 >
 > If you have directly added data from the Object Storage to the container connected in `RO`, you can request an **intermediate synchronization**. Otherwise, your data will be **synchronized at the next start** of your job or notebook.
 
-- **Read Write** (shorten by `RW`): you have full access to your data in your job or notebook. You can therefore write, modify, add or delete data in this container.
+- **Read Write** (shorten by `RW`): you have full access to your data in your job or notebook. You can therefore write, modify or add data in this container.
 
 *When to attach a volume in read-write `RW`?*
 
 The purpose of the **read-write** permission is to be able to modify the contents of the object container. This permission is recommended if your container contains code (e.g. a Python file), a notebook or if you want to save a model or connection weights after your training.
 
+> [!warning]
+>
+> Volumes which are in **read-write** mode are not synchronized with the Object Storage during the `FINALIZING` or `STOPPING` phase because there is no point in synchronizing data which has not changed during the life of a job or notebook.
+
 > [!primary]
 >
-> As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data were uploaded to your Object Storage.
+> Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them from a job or notebook, they will still be present in your object container, even after synchronisation. 
+
+If you need to delete data from your object container, you can mount your volume in `RWD`.
+
+- **Read Write Delete** (shorten by `RWD`): you have full access to your data in your job or notebook. You can therefore write, modify, add or **delete** data in this container.
+
+*When to attach a volume in read-write-delete `RWD`?*
+
+The purpose of the **read-write-delete** permission is to be able to modify and **delete** the contents of the object container.
+
+> [!warning]
+>
+> After the synchronisation phase, your data deleted from your notebook or job will be permanently deleted in the Object Storage.
+
+> [!primary]
+>
+> As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data was uploaded to your Object Storage.
 
 ### Volume caching and sharing
 
