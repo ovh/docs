@@ -22,84 +22,25 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 * Daily remote site backup:
 We back up our managed cloud databases every 1 (incremental), 12 or 24 hours — depending on the product — with the ability to restore from the latest snapshot.
 
-* Point In Time Recovery (PITR):
-Either you run into a problem or you just want to see what your data looked like at a prior date, restore your data to any point in time within your selected retention period.
+* PITR:
+Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
 
-## MongoDB
+Engine | Backup Method(s) | Frequency | RPO
+:--- | :--- | :---: | :---:
+MongoDB | Remote site backup (option 2nd backup site) | Daily | 24h
+MongoDB Enterprise | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
+PostgreSQL | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
+MySQL | PITR on local S3 + Remote site backup (option 2nd backup site) | Continuous for PITR - Daily for backup | Few minutes for PITR - 24h for backup
+Redis | Remote site backup (option 2nd backup site) | 2 times a day | 12h
+OpenSearch | Incremental + Remote site backup (option 2nd backup site) | Hourly for incremental - Daily for backup | 1h for incremental - 24h for backup
+M3 | Remote site backup (option 2nd backup site) | Daily | 24h
+Cassandra | Remote site backup (option 2nd backup site) | Daily | 24h
+Kafka | N/A | N/A | N/A
 
-Method(s):
-- Remote site backup (option 2nd backup site).
+## Lexicon
 
-Frequency / Recovery Point Objective (RPO):
-- Daily / 24h
-
-## MongoDB Enterprise
-
-Method(s):
-- PITR on local S3
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Continuous / few minutes for PITR
-- Daily / 24h for backup.
-
-## PostgreSQL
-
-Method(s):
-- PITR on local S3
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Continuous / few minutes for PITR
-- Daily / 24h for backup.
-
-## MySQL
-
-Method(s):
-- PITR on local S3
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Continuous / few minutes for PITR
-- Daily / 24h for backup.
-
-## Redis
-
-Method(s):
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- 2 times a day / 12h
-
-## OpenSearch
-
-Method(s):
-- Incremental
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Hourly / 1h incremental
-- Daily / 24h for backup.
-
-## M3
-
-Method(s):
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Daily / 24h
-
-## Cassandra
-
-Method(s):
-- Remote site backup (option 2nd backup site).
-
-Frequency / Recovery Point Objective (RPO):
-- Daily / 24h
-
-## Kafka
-
-N/A
+PITR: Point In Time Recovery
+RPO: Recovery Point Objective
 
 ## We want your feedback!
 
