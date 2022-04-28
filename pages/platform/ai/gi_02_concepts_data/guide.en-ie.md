@@ -69,10 +69,6 @@ The purpose of **read-only** permissions is to ensure that you do not modify you
 
 The purpose of the **read-write** permission is to be able to modify the contents of the object container. This permission is recommended if your container contains code (e.g. a Python file), a notebook or if you want to save a model or connection weights after your training.
 
-> [!warning]
->
-> Volumes which are in **read-write** mode are not synchronized with the Object Storage during the `FINALIZING` or `STOPPING` phase because there is no point in synchronizing data which has not changed during the life of a job or notebook.
-
 > [!primary]
 >
 > Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them from a job or notebook, they will still be present in your object container, even after synchronisation. 
@@ -91,7 +87,7 @@ The purpose of the **read-write-delete** permission is to be able to modify and 
 
 > [!primary]
 >
-> As long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data was uploaded to your Object Storage.
+> For volume in `RW` or `RWD`: as long as your job or notebook is in the `FINALIZING` or `STOPPING` state, this means that the upload is still in progress. Once the state changes to `INTERRUPTED` or `STOPPED`, it means all the data was uploaded to your Object Storage.
 
 ### Volume caching and sharing
 
