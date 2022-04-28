@@ -75,7 +75,7 @@ The purpose of the **read-write** permission is to be able to modify the content
 
 > [!primary]
 >
-> Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them in your notebook, they will still be present in your object container, even after synchronisation. 
+> Volumes which are in **read-write** do not allow you to **delete** data from your Object Storage. If you delete them from a job or notebook, they will still be present in your object container, even after synchronisation. 
 
 If you need to delete data from your object container, you can mount your volume in `RWD`.
 
