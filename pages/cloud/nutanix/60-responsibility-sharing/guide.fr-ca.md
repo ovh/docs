@@ -3,6 +3,9 @@ title: Partage de responsabilité - Hosted Private Cloud powered by Nutanix
 slug: raci-hosted-private-cloud-nutanix
 section: RACI
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit Hosted Private Cloud powered by Nutanix"
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Responsibility sharing
 ---
 
 **Dernière mise à jour le 07/04/2022**

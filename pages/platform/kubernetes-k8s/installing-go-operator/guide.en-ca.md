@@ -4,6 +4,10 @@ slug: deploying-go-operator
 excerpt: Learn how to deploy Kubernetes operator written in Golang on OVHcloud Managed Kubernetes and the Operator SDK
 section: Operators
 order: 02
+kb: Public Cloud
+category_l1: Containers & Orchestration
+category_l2: Managed Kubernetes (K8s)
+category_l3: Operators
 ---
 
 **Last updated 11th April, 2022.**
