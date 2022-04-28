@@ -20,9 +20,11 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 ## Backup Methods
 
 * Daily remote site backup:
+
 We back up our managed cloud databases every 1 (incremental), 12 or 24 hours — depending on the product — with the ability to restore from the latest snapshot.
 
 * PITR:
+
 Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
 
 Engine | Backup Method(s) | Frequency | RPO
@@ -40,6 +42,7 @@ Kafka | N/A | N/A | N/A
 ## Lexicon
 
 PITR: Point In Time Recovery
+
 RPO: Recovery Point Objective
 
 ## We want your feedback!
