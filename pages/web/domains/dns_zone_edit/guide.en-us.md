@@ -53,7 +53,7 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 
 ### Access the area for managing an OVHcloud DNS zone
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) in the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
 
 The table that appears will display a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 

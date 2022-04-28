@@ -1,7 +1,7 @@
 ---
-title: 'Modificare i server DNS di un dominio OVH'
+title: 'Modificare i server DNS di un dominio OVHcloud'
 slug: web_hosting_gestisci_il_tuo_server_dns
-excerpt: 'Come modificare i server DNS di un dominio OVH'
+excerpt: 'Come modificare i server DNS di un dominio OVHcloud'
 legacy_guide_number: g2015
 section: 'DNS e zona DNS'
 order: 1
@@ -66,7 +66,7 @@ Assicurati che le modifiche non rendano il tuo dominio inaccessibile. Se non ne 
 
 ### Accedere alla gestione dei server DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} nel menu a sinistra e seleziona il tuo dominio. e clicca sulla scheda `Server DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. e clicca sulla scheda `Server DNS`{.action}.
 
 Visualizzi una tabella con tutti i server DNS OVHcloud configurati per il tuo dominio. A ogni riga corrisponde un server DNS. 
 
@@ -101,7 +101,7 @@ Cliccando sul pulsante `Reimposta i server DNS`{.action}, puoi reinizializzare i
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione, tenendo in considerazione che: 
 
-- la modifica apportata in OVHcloud deve essere presa in carico dal Registro che gestisce l'estensione del dominio. Lo stato di avanzamento dell'operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} nel menu a sinistra e poi `Operazioni in corso`{.action}.
+- la modifica apportata in OVHcloud deve essere presa in carico dal Registro che gestisce l'estensione del dominio. Lo stato di avanzamento dell'operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} e poi `Operazioni in corso`{.action}.
 - una volta applicata dall’organismo responsabile, la propagazione delle modifiche potrebbe richiedere fino a 48 ore.
 
 ## Per saperne di più

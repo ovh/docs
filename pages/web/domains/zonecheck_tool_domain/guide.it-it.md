@@ -26,7 +26,7 @@ Completa questi campi:
 Dopo qualche minuto dalla conferma dei dati inseriti, compare il risultato:
 
 
-- se tutti gli elementi sono verdi, la tua zona è configurata correttamente e puoi confermare la modifica dei server DNS dal tuo Spazio Cliente OVH.
+- se tutti gli elementi sono verdi, la tua zona è configurata correttamente e puoi confermare la modifica dei server DNS dal tuo Spazio Cliente OVHcloud.
 
 - se alcuni elementi sono rossi, visualizza i dettagli del risultato per apportare le correzioni necessarie.
 

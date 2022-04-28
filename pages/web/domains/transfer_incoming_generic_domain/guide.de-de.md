@@ -99,7 +99,7 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com
 
 ![Domain](images/Order_summary.png){.thumbnail}
 
-Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen: Klicken Sie links im Menü auf `Domainnamen`{.action}  und dann auf `Laufende Operationen`{.action}.
+Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen: Klicken Sie auf `Domainnamen`{.action}  und dann auf `Laufende Operationen`{.action}.
 
 ### Schritt 4: Erster Schritt der Transferbestätigung
 
@@ -143,7 +143,7 @@ Der Transfervorgang kann später im [OVHcloud Kundencenter](https://www.ovh.com/
 
 ### Schritt 6: Domainnamen bei OVHcloud verwalten
 
-Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Wählen Sie hierzu `Web Cloud`{.action} aus, klicken Sie links im Menü auf `Domainnamen`{.action} und klicken Sie dann auf den Domainnamen.
+Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Wählen Sie hierzu `Web Cloud`{.action} aus, klicken Sie auf `Domainnamen`{.action} und klicken Sie dann auf den Domainnamen.
 
 ## Weiterführende Informationen
 

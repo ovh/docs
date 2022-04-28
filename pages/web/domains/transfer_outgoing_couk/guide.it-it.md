@@ -50,13 +50,11 @@ Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo
 
 ### Step 1: verificare le informazioni necessarie
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca sui `Domini`{.action} nella colonna a sinistra e seleziona il dominio interessato.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il dominio interessato.
 
 Ricordati di essere connesso come contatto amministratore.
 
 Nella scheda `Informazioni generali`{.action} è possibile verificare il rispetto delle condizioni richieste per la procedura di trasferimento.
-
-![trasferimento in uscita](images/img_4266.jpg){.thumbnail}
 
 ### Step 2: modifica il TAG del tuo dominio
 

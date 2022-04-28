@@ -30,16 +30,14 @@ Existen dos formas de activar DNSSEC:
 
 > [!primary]
 >
-> Puede comprobar si su dominio utiliza la configuración DNS de OVH directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
+> Puede comprobar si su dominio utiliza la configuración DNS de OVHcloud directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
 >
 
 ### 1. Acceder a la gestión del dominio
 
-En la sección **Web** del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
+En la sección **Web** del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 Se mostrará la información general del dominio. 
-
-![Información general](images/activate-dnssec-step1.png){.thumbnail}
 
 ### 2. Configurar el servicio DNSSEC del dominio
 

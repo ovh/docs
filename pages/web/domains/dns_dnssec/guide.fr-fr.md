@@ -17,30 +17,28 @@ Pour comprendre comment cette protection fonctionne, nous vous conseillons de co
 
 ## Prérequis
 
-- Disposer d’un nom de domaine enregistré chez OVH.
+- Disposer d’un nom de domaine enregistré chez OVHcloud.
 - Le nom de domaine concerné doit posséder une extension compatible avec le DNSSEC.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 
 L'activation du DNSSEC est possible selon deux cas :
 
-- **votre nom de domaine utilise les serveurs DNS d'OVH** : l'activation s'effectue en un clic depuis votre espace client ;
+- **votre nom de domaine utilise les serveurs DNS d'OVHcloud** : l'activation s'effectue en un clic depuis votre espace client ;
 
-- **votre nom de domaine n'utilise pas les serveurs DNS d'OVH** : vous devrez vous rapprocher du prestataire gérant la configuration DNS de celui-ci. Si vous gérez vous-même cette dernière, vous devrez installer manuellement le DNSSEC. Si tel est le cas, aidez-vous des documentations disponibles en ligne.
+- **votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud** : vous devrez vous rapprocher du prestataire gérant la configuration DNS de celui-ci. Si vous gérez vous-même cette dernière, vous devrez installer manuellement le DNSSEC. Si tel est le cas, aidez-vous des documentations disponibles en ligne.
 
 > [!primary]
 >
-> Pour vérifier si votre nom de domaine utilise la configuration DNS OVH : depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
+> Pour vérifier si votre nom de domaine utilise la configuration DNS OVHcloud : depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
 >
 
 ### Étape 1 : accéder à la gestion du nom de domaine
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, et assurez-vous d'être positionné dans la partie « Web ». Cliquez alors sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné dans la liste.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, et assurez-vous d'être positionné dans la partie « Web ». Cliquez alors sur `Hébergements`{.action}, puis choisissez le nom de domaine concerné dans la liste.
 
 La page qui apparaît affiche les informations générales de celui-ci. 
-
-![dnssec](images/activate-dnssec-step1.png){.thumbnail}
 
 ### Étape 2 : gérer le DNSSEC de son nom de domaine
 

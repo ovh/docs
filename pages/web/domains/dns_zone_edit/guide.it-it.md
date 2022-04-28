@@ -50,14 +50,14 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, è necessario effettuare la modifica attraverso l'interfaccia del provider che gestisce la configurazione del dominio.
 > 
-> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVH, clicca sulla scheda `Server DNS`{.action} del dominio interessato.
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVHcloud, clicca sulla scheda `Server DNS`{.action} del dominio interessato.
 >
 
 ## Procedura
 
 ### Accedere alla gestione di una zona DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} nel menu a sinistra e seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.
 
@@ -178,7 +178,7 @@ Clicca sulla scheda `Zona DNS`{.action} dello Spazio Cliente, clicca sul pulsant
 
 ## Per saperne di più
 
-[Modificare i server DNS di un dominio OVH](../web_hosting_gestisci_il_tuo_server_dns/){.external}
+[Modificare i server DNS di un dominio OVHcloud](../web_hosting_gestisci_il_tuo_server_dns/){.external}
 
 [Aggiungere un record SPF alla configurazione di un dominio](../hosting_condiviso_il_record_spf/){.external}
 

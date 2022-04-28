@@ -18,21 +18,21 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 ## Wymagania początkowe
 
 - Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Używanie przez domenę konfiguracji OVH (serwerów DNS OVH) 
-- Rekord DynHost nie może już istnieć w strefie DNS OVH Twojej domeny jako rekord „A”
+- Używanie przez domenę konfiguracji OVHcloud (serwerów DNS OVHcloud) 
+- Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord „A”
 
 > [!warning]
 >
-> - Jeśli Twoja domena nie używa serwerów DNS OVH, zwróć się do administratora zarządzającego jej konfiguracją, aby dowiedzieć się, jakie kroki powinieneś podjąć.
+> - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, zwróć się do administratora zarządzającego jej konfiguracją, aby dowiedzieć się, jakie kroki powinieneś podjąć.
 > 
-> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do zakładki `Serwery DNS`{.action}.
+> - Jeśli domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa konfiguracji OVHcloud. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do zakładki `Serwery DNS`{.action}.
 >
 
 ## W praktyce
 
 ### Etap 1: utworzenie identyfikatora DynHost
 
-Pierwszy etap polega na utworzeniu identyfikatora DynHost. Dzięki temu będziesz mógł aktualizować dynamiczny rekord DNS, który chcesz utworzyć. Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `DynHost`{.action}.
+Pierwszy etap polega na utworzeniu identyfikatora DynHost. Dzięki temu będziesz mógł aktualizować dynamiczny rekord DNS, który chcesz utworzyć. Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Po uzupełnieniu pól kliknij przycisk `Zatwierdź`{.action}. Identyfikator poja
 
 ### Etap 2: tworzenie dynamicznego rekordu DNS (DynHost)
 
-Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVH Twojej domeny jako rekord „A”. Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
+Drugi etap polega na utworzeniu rekordu DNS, który będzie aktualizowany dynamicznie. Rekord DynHost nie może już istnieć w strefie DNS OVHcloud Twojej domeny jako rekord „A”. Aby zweryfikować rekord, i w razie potrzeby go usunąć, zapoznaj się z informacjami zawartymi w przewodniku [Modyfikacja DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
 Gdy jesteś gotowy, aby utworzyć rekord DynHost, przejdź ponownie na stronę główną w zakładce `DynHost`{.action}, a następnie kliknij przycisk `Dodaj wpis DynHost`{.action}. W oknie, które się wyświetla, wprowadź wymagane informacje:
 
@@ -69,7 +69,7 @@ Po utworzeniu identyfikatora i rekordu ostatni etap polega na zautomatyzowaniu a
 
 > [!warning]
 >
-> Instalację i konfigurację klienta przeprowadź we własnym zakresie zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. 
+> Instalację i konfigurację klienta przeprowadź we własnym zakresie zgodnie z Twoją wiedzą. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. 
 >
 
 Pamiętaj, że klient może być zainstalowany na Twoim serwerze lub komputerze albo może być już dostępny w interfejsie Twojego routera, jeśli router jest kompatybilny. Po wybraniu i zainstalowaniu klienta skonfiguruj go, używając informacji o utworzonym na wcześniejszym etapie użytkowniku DynHost.
