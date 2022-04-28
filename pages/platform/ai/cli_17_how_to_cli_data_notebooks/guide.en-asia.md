@@ -69,6 +69,12 @@ This folder will be uploaded to your Object Storage when you stop your notebook.
 As long as your notebook is in the `STOPPING` state, this means that the upload is still in progress. Once the state
 changes to `STOPPED`, it means all the data were uploaded to your Object Storage.
 
+With the `RW` permission, you can add or modify data but you **cannot permanently delete** it from your Object Storage.
+
+> [!primary]
+>
+> If you want to add, modify or **delete data**, connect your volume with **Read-write-delete** specifying `RWD` instead of `RW`.
+
 ## Attach a public Git repository
 
 If Python code, notebooks or other files are available on a public GitHub repository, you can attach them to your notebook with the `--volume` option.
