@@ -28,7 +28,7 @@ We back up our managed cloud databases every 1 (incremental), 12 or 24 hours —
 Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
 
 Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
-:--- | :--- | :--- | :---: | :---: | :---:
+:--- | :--- | :---: | :---: | :---: | :---:
 MongoDB | Backup on object storage | Off-Site | Daily | 24h | Yes
 MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minutes | Yes
 PostgreSQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
