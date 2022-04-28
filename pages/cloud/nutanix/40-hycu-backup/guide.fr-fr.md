@@ -4,6 +4,9 @@ slug: hycu-backup
 excerpt: "Installation de la sauvegarde HYCU Backup sur un cluster Nutanix"
 section: Sauvegardes
 order: 01
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Backups
 ---
 
 **Dernière mise à jour le 25/04/2022**

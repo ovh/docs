@@ -4,6 +4,9 @@ slug: nutanix-flow
 excerpt: "Découvrez comment configurer et utiliser Nutanix Flow"
 section: Réseau et sécurité
 order: 09
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Networking and security
 ---
 
 **Dernière mise à jour le 08/04/2022**

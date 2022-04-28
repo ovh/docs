@@ -4,6 +4,9 @@ slug: add-node
 excerpt: 'Add a node and confirm that it is working properly'
 section: Advanced use
 order: 03
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Advanced usage
 ---
 
 **Last updated 5th April 2022**
