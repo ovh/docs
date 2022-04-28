@@ -2,7 +2,6 @@
 title: How to disconnect an ISO image from a VM
 excerpt: How do you disconnect an ISO image from a virtual machine?
 slug: disconnect_iso_from_vm
-legacy_guide_number: g1438
 section: Getting started
 ---
 
