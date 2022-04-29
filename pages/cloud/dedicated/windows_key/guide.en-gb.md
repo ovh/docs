@@ -15,9 +15,9 @@ When you install a Windows Server operating system, the product key – also kno
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with Windows installed
-- a [Windows SPLA licence](https://www.ovh.co.uk/dedicated_servers/2014-windows-licences-pricing.xml){.external} in your account
-- access to your server via remote desktop connection
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/os/server-windows/) with Windows installed in your OVHcloud account
+- A Windows SPLA licence in your OVHcloud account
+- Administrative access to your server via remote desktop connection
 
 ## Instructions
 
