@@ -8,7 +8,7 @@ section: DNS und DNS-Zone
 **Stand 27.11.2018**
 
 
-## Einleitung
+## Ziel
 
 Eine Domainweiterleitung wird verwendet, um eine Domain auf ein neues Ziel umzuleiten. Dafür stehen verschiedene, den jeweiligen Anforderungen entsprechende Weiterleitungsarten zur Verfügung.
 
@@ -19,7 +19,7 @@ Eine Domainweiterleitung wird verwendet, um eine Domain auf ein neues Ziel umzul
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 - Sie sind mit Ihrem Webhosting verbunden (nur wenn Sie eine [.htaccess-Datei](https://docs.ovh.com/de/hosting/webhosting_alles_uber_die_datei_htaccess/){.external} hinzufügen möchten).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Domainweiterleitung verstehen
 
@@ -37,7 +37,7 @@ Beachten Sie, dass die Einrichtung einer Weiterleitung Auswirkungen auf das SEO-
 
 ### Domainweiterleitung über das Kundencenter einrichten
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie auf Domains und gehen Sie dann auf den Tab `Weiterleitung`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus. Wechseln Sie zum Tab `Weiterleitung`{.action}.
 
 Die Tabelle zeigt alle für Ihre Domain aktiven Weiterleitungen an.
 
@@ -168,4 +168,4 @@ Redirect temp / http://andere_website.tld/seite/
 
 [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
