@@ -55,7 +55,7 @@ Si malgré ces vérifications, l'écran du téléphone ne s'allume toujours pas,
 
 Si, après ces tests, l'écran du téléphone est désormais allumé mais qu'il ne fonctionne pas pour autant, poursuivez la lecture de ce guide.
  
-### Étape 2 - Vérifier la connectivité réseau du téléphone
+### Étape 2 - Vérifier la connectivité réseau du téléphone <a name="connectivity"></a>
 
 Si votre téléphone affiche en continu un message inhabituel à l'écran, tel que `erreur réseau` ou `obtention de l'adresse IP`, il est fort probable que le téléphone ne parvienne pas à récupérer toutes les informations nécessaires à son fonctionnement depuis votre réseau local.
 

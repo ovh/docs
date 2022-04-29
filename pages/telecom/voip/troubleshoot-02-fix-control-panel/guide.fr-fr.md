@@ -11,7 +11,8 @@ order: 02
 ## Objectif
 
 À la différence des modèles de téléphones historiques fonctionnant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
-Pour fonctionner correctement, à l'instar de votre ordinateur, un téléphone OVHcloud a donc besoin :
+
+Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a donc besoin :
 
 - d'être alimenté électriquement;
 - d'être raccordé à votre réseau local et de communiquer sur Internet.
@@ -34,27 +35,27 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 ## En pratique
 
-> [!warning]
-> Les équipes de support OVHcloud ne pourront pas vous fournir d'assistance quant à la configuration matérielle et logicielle de votre réseau local, celui-ci étant de votre responsabilité.
->
-> En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](https://partner.ovhcloud.com/fr/directory/) ou à vous faire aider par la communauté des utilisateurs OVHcloud. Pour plus d'informations, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide
->
-
 Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
-Nous vous conseillons donc de **suivre l'ordre des étapes de vérification** ci-dessous afin de dépanner votre téléphone.<br>
+Nous vous conseillons donc de **suivre l'ordre des étapes de diagnostic** ci-dessous afin de dépanner votre téléphone.<br>
 Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce guide, il n'est pas indispensable de suivre les étapes ultérieures.
 
-Cliquez sur l'image ci-dessous pour afficher un résumé des actions à entreprendre.
+Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en fonction du défaut rencontré.
 
-![logigramme de dépannage](images/logigramme-voip.png){.thumbnail}
+![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-### Étape 1 - Vérifier votre réseau local
+### Étape 1 - Etablir un premier diagonostic
 
-Dans un premier temps, consultez notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/) pour vérifier que votre installation électrique est conforme et que votre réseau local est optimisé pour l'utilisation de la téléphonie VoIP OVHcloud.
+**Question n°1: L'écran de votre téléphone s'allume-t-il ?**
 
-## Étape 2 - Procéder à un dépannage du téléphone depuis l'espace client OVHcloud
+- **OUI** : Poursuivez la lecture de ce guide.
+- **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/).
 
-Si votre téléphone reste inopérant malgré le diagnostic de votre réseau local, vous devez alors effectuer un dépannage par le biais de votre espace client OVHcloud.
+**Question n°2: La date et l'heure affichées sur l'écran du téléphone sont-elles exactes ?**
+
+- **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin de rétablir l'enregistrement de la ligne SIP sur le téléphone.
+- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/#connectivity).
+
+### Étape 2 - Procéder au dépannage du téléphone depuis l'espace client OVHcloud
 
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
@@ -63,9 +64,9 @@ Si votre téléphone reste inopérant malgré le diagnostic de votre réseau loc
 > Rendez-vous sur <http://monip.ovh> et prenez note de l'adresse IP publique qui vous est indiquée.
 >
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis cliquez sur l'onglet `Telecom`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis cliquez sur l'onglet `Telecom`{.action}.
 
-Cliquez sur `Téléphonie`{.action} puis choisissez la ligne concernée. 
+Cliquez sur `Téléphonie`{.action} et choisissez la ligne concernée. 
 
 Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
 
@@ -96,13 +97,17 @@ En fonction des informations sélectionnées, vous pourriez être amené à reco
 
 ### Étape 3 - Réinitialiser le téléphone (facultatif)
 
-La réinitialisation d'un téléphone s'effectuer généralement via son menu lorsqu'il en dispose d'un. A défaut, certains modèles de téléphones nécessitent d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
+> [!prilary]
+> Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
+>
+
+La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. A défaut, certains modèles de téléphones nécessitent d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
 
 Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitialiser un téléphone, en fonction de la marque de celui-ci.
 
 |Marque/Gamme|Procédure de réinitialisation|
 |---|---|
-|**Cisco** disposant d'un écran| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admn. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
+|**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
 |**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
 |**Gigaset** DECT (sans-fil)|Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en maintenant enfoncé le bouton unique de la base (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
 |**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
@@ -141,6 +146,6 @@ Dès lors, deux possibilités :
 Si votre téléphone OVHcloud reste inopérant une fois les manipulations décrites ci-dessuus effectuées, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud.<br>
 Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket l'ensemble des tests que vous avez déjà effectués.
  
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
  
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
