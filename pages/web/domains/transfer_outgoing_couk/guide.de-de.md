@@ -50,7 +50,7 @@ Falls Sie den benötigten TAG noch nicht kennen, können Sie ihn bei Ihrem neuen
 
 ### Schritt 1: Überprüfung der erforderlichen Informationen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie `Domains`{.action} und wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} Ihren Domainnamen unter `Domainnamen`{.action} aus.
 
 Denken Sie daran, dass Sie als Administrator-Kontakt eingeloggt sein müssen.
 
