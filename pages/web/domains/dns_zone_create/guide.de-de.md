@@ -2,13 +2,12 @@
 title: 'OVHcloud DNS-Zone für eine Domain erstellen'
 excerpt: 'Hier erfahren Sie, wie Sie über Ihr Kundencenter eine OVHcloud DNS-Zone für Ihre Domain erstellen.'
 slug: erstellung_einer_dns_zone_fur_eine_externe_domain
-legacy_guide_number: g2229
 section: 'DNS und DNS-Zone'
 ---
 
 **Stand 30.11.2018**
 
-## Einleitung
+## Ziel
 
 Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain. Sie besteht aus technischen Angaben, die als Einträge bezeichnet werden. DNS-Zonen werden üblicherweise dazu verwendet, Ihre Domain mithilfe dieser Einträge mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden.
 
@@ -24,7 +23,7 @@ Es kann aus verschiedenen Gründen erforderlich sein, dass Sie eine DNS-Zone fü
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: DNS-Zone über das Kundencenter erstellen
 
@@ -51,11 +50,11 @@ Nachdem Sie eine Option ausgewählt haben, folgen Sie den angezeigten Schritten 
 
 Nun, da die DNS-Zone für Ihre Domain erstellt wurde, können Sie sie bearbeiten. Die Bearbeitung ist optional, kann jedoch erforderlich werden, um die ständige Verfügbarkeit der mit dieser Domain verbundenen Dienste (wie Websites und E-Mails) sicherzustellen.
 
-Loggen Sie sich für die Bearbeitung der DNS-Zone im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
+Loggen Sie sich für die Bearbeitung der DNS-Zone im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie in `Domainnamen`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
 > [!primary]
 >
-> Wenn Sie die DNS-Zone gerade erst erstellt haben und diese in der Liste der Dienste im Bereich `Domains`{.action} nicht angezeigt wird, warten Sie einen Moment und laden Sie die Seite erneut.
+> Wenn Sie die DNS-Zone gerade erst erstellt haben und diese in der Liste der Dienste im Bereich `Domainnamen`{.action} nicht angezeigt wird, warten Sie einen Moment und laden Sie die Seite erneut.
 >
 
 Sobald die Domain angezeigt wird, können Sie die nötigen Änderungen vornehmen. Weitere Informationen hierzu finden Sie in unserer Anleitung [Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}. Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von 4 bis maximal 24 Stunden, bis sie voll wirksam ist.
