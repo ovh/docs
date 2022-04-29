@@ -1,7 +1,7 @@
 ---
 title: "Tutoriel - Diagnostic du réseau local"
 slug: diagnostic-reseau-local
-excerpt: 'Découvrez comment effectuer des vérifications basiques sur votre réseau local pour favoriser le fonctionnement de la téléphonie VoIP OVHcloud"
+excerpt: "Découvrez comment effectuer des vérifications basiques sur votre réseau local pour favoriser le fonctionnement de la téléphonie VoIP OVHcloud"
 section: 'Diagnostic et dépannage'
 order: 01
 ---
