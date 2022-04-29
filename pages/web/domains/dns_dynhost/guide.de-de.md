@@ -31,7 +31,7 @@ Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain.
 
 ### Schritt 1: DynHost-Benutzer erstellen
 
-Erstellen Sie zunächst einen DynHost-Benutzer. Über diesen können Sie den dynamischen DNS-Eintrag, den Sie erstellen möchten, aktualisieren. Loggen Sie sich zunächst im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DynHost`{.action}.
+Erstellen Sie zunächst einen DynHost-Benutzer. Über diesen können Sie den dynamischen DNS-Eintrag, den Sie erstellen möchten, aktualisieren. Loggen Sie sich zunächst im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Domainnnamen`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
