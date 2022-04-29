@@ -43,7 +43,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-### Étape 1 - Etablir un premier diagonostic
+### Étape 1 - Etablir un premier diagnostic
 
 **Question n°1: L'écran de votre téléphone s'allume-t-il ?**
 
@@ -87,7 +87,7 @@ En fonction des informations sélectionnées, vous pourriez être amené à reco
 |Manipulations|Description|
 |---|---|  
 |Vérifier l'adresse MAC du téléphone|L'adresse affichée dans votre espace client OVHcloud doit être la même que l'adresse MAC, unique, sur votre téléphone. Vous pouvez la retrouver sur l'étiquette du constructeur.|  
-|Entrer l'adresse IP du téléphone|Il s'agit de la dernière adresse IP publique connue de votre téléphone. Assurez-vous de renseigner la bonne adresse afin que la reconfiguration puisse arriver à son terme.|
+|Entrer l'adresse IP publique du téléphone|Il s'agit de la dernière adresse IP publique connue de votre téléphone. Assurez-vous de renseigner la bonne adresse afin que la reconfiguration puisse arriver à son terme.|
 |Redémarrer électriquement le téléphone|Après avoir redémarré, le téléphone récupérera un nouveau fichier de configuration, permettant ainsi de le reconfigurer.|
 
 > [!warning]
@@ -97,7 +97,7 @@ En fonction des informations sélectionnées, vous pourriez être amené à reco
 
 ### Étape 3 - Réinitialiser le téléphone (facultatif)
 
-> [!prilary]
+> [!primary]
 > Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
 >
 
