@@ -25,7 +25,7 @@ We back up our managed cloud databases every 1 (incremental), 12 or 24 hours —
 
 * PITR:
 
-Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
+Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan.
 
 Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:

@@ -21,11 +21,13 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 * Daily remote site backup:
 
-We back up our managed cloud databases every 1 (incremental), 12 or 24 hours — depending on the product — with the ability to restore from the latest snapshot.
+We back up our managed cloud databases every 1 (incremental snapshots), 12 or 24 hours (backups) — depending on the product — with the ability to restore from the latest point in time, based on the retention period of the chosen customer plan.
 
 * PITR:
 
-Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the selected retention period of the chosen customer plan.
+Either you run into a problem or you just want to see what your data looked like at a prior date, you can restore your data to any point in time within the retention period of the chosen customer plan.
+
+## Engine Specifications
 
 Engine | Backup Method(s) | Location | Frequency | RPO | Encrypted
 :--- | :--- | :---: | :---: | :---: | :---:
@@ -34,7 +36,7 @@ MongoDB Enterprise | PITR on object storage | Off-site | Continuous | Few minute
 PostgreSQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
 MySQL | PITR on object storage | On-Site | Continuous | Few minutes | Yes
 Redis | Backup on object storage | On-Site | 2 times a day | 12h | Yes
-OpenSearch | Hourly Incremental / Backup on object storage | On-Site | Hourly / Daily | 1h / 24h | Yes
+OpenSearch | Incremental | On-Site | Hourly | 1h | Yes
 M3 | Backup on object storage | On-Site | Daily | 24h | Yes
 Cassandra | Backup on object storage | On-Site | Daily | 24h | Yes
 Kafka | N/A | N/A | N/A | N/A | N/A
@@ -44,6 +46,10 @@ Kafka | N/A | N/A | N/A | N/A | N/A
 PITR: Point In Time Recovery
 
 RPO: Recovery Point Objective
+
+Off-Site: on a different region
+
+On-Site: within the same region
 
 ## We want your feedback!
 
