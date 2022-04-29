@@ -29,7 +29,7 @@ Naviguez vers l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 ### Vue Hosted Private Cloud
 
-Dans l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre service dans la liste `VMWare`{.action}. Vous pouvez renommer votre infrastructure en cliquant le bouton `Crayon`{.action} au centre de l'écran.
+Dans l'onglet `Hosted Private Cloud`{.action}, sélectionnez votre service dans la liste `VMware`{.action}. Vous pouvez renommer votre infrastructure en cliquant le bouton `Crayon`{.action} au centre de l'écran.
 
 ![HOSTED](images/en02dashboard.png){.thumbnail}
 
@@ -40,7 +40,7 @@ L'onglet `Informations générales`{.action} donne le résumé de vos options Ho
 - La « Description » est modifiable via le bouton `...`{.action}
 - La « Solution logicielle » vous donne la version vCSA installée
 - La « Localisation » de votre Hosted Private Cloud
-- La « Politique d'accès » de votre infrastructure (`Ouverte` ou `Restreinte`) 
+- La « Politique d'accès » de votre infrastructure (`Ouverte` ou `Restreinte`)
 - Le « Nombre de datacenters » de votre infrastructure
 - Le « Nombre de blocs IP » qui vous sont assignés et l'option d'en ajouter via le bouton `...`{.action}
 - Des liens vers les interfaces de gestion sont disponibles.
@@ -53,7 +53,7 @@ L'onglet `Informations générales`{.action} donne le résumé de vos options Ho
 #### Datacentres
 
 L'onglet Datacentres montre vos datacentres virtuels existants et offre la possibilité d'en ajouter.<br>
-La vue Datacentre (voir plus bas), donne tous les détails et options. 
+La vue Datacentre (voir plus bas), donne tous les détails et options.
 
 ![DATACENTERS](images/en04datacenters.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Vous pouvez paramétrer les options à l'aide des boutons sur la droite de l'éc
 > [!warning]
 >
 > Si vous mettez la politique d'accès en mode restreint et que vous ne renseignez aucune IP, aucun utilisateur ne pourra se connecter au client vSphere. Les machines virtuelles resteront toutefois accessibles.
-> 
+>
 
 En bas de la page, vous pouvez aussi ajouter un Key Management Servers.<br>
 Consultez le guide « [Activation du chiffrement des machines virtuelles](https://docs.ovh.com/fr/private-cloud/vm-encrypt/) » pour plus de details.
@@ -153,7 +153,7 @@ Le nom et la description du datacentre sont modifiables en cliquant sur le bouto
 L'onglet Informations générales donne le résumé de vos options :
 
 - Les champs « Nom » et « Description » sont modifiables via le bouton `...`{.action}
-- La « Gamme » montre les services VMWare souscrits
+- La « Gamme » montre les services VMware souscrits
 - Les champs « Hosts » et « Datastores » vous donnent les quantités d'hôtes et de datastores dans votre Hosted Private Cloud
 - « VM Backupée » vous montre le statut de votre solution de sauvegarde
 - « Plan de reprise d’activité » vous montre le statut de votre solution de PRA
