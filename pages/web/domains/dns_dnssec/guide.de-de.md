@@ -9,9 +9,9 @@ order: 1
 
 **Stand 19.06.2019**
 
-## Einleitung
+## Ziel
 
-Auf DNS-Servern wird die DNS-Konfiguration von Domains gespeichert. Diese Konfiguration wird üblicherweise dazu verwendet, Ihre Domain mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden. In den letzten Jahren haben böswillige Hacker Cache-Poisoning-Methoden für DNS-Server entwickelt, um den Traffic zu anderen Servern umzuleiten. Es gibt ein Verfahren, um Ihre Domain hiervor zu schützen: DNSSEC.
+Auf DNS-Servern wird die DNS-Konfiguration von Domains gespeichert. Diese Konfiguration wird üblicherweise dazu verwendet, Ihre Domain mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden. In den letzten Jahren haben Hacker Cache-Poisoning-Methoden für DNS-Server entwickelt, um den Traffic zu anderen Servern umzuleiten. Es gibt ein Verfahren, um Ihre Domain hiervor zu schützen: DNSSEC.
 
 **Hier erfahren Sie, wie Sie DNSSEC für Ihre Domain aktivieren, um sie vor Cache Poisoning zu schützen.**  
 Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: „[DNSSEC verstehen](https://www.ovhcloud.com/de/domains/dnssec/){.external}“
@@ -22,7 +22,8 @@ Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: �
 - Die betreffende Domain hat eine mit DNSSEC kompatible Endung.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
-## Beschreibung
+
+## In der praktischen Anwendung
 
 DNSSEC kann auf zwei Arten aktiviert werden:
 
@@ -37,7 +38,7 @@ DNSSEC kann auf zwei Arten aktiviert werden:
 
 ### Schritt 1: Auf die Domainverwaltung zugreifen
 
-Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie die betreffende Domain aus der Liste aus.
+Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action} und wählen Sie die betreffende Domain aus der Liste aus.
 
 Die geöffnete Seite zeigt die allgemeinen Informationen der Domain. 
 
