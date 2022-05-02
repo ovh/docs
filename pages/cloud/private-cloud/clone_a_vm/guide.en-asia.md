@@ -10,7 +10,7 @@ order: 07
 
 ## Objective
 
-VMWare offers the ability to clone a VM to create another one or a template.
+VMware offers the ability to clone a VM to create another one or a template.
 
 **This guide explains how to execute those tasks.**
 

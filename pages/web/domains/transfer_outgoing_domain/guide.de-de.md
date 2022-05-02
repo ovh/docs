@@ -49,7 +49,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Regis
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie `Domains`{.action} im linken Menü und wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
 
 Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz` unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
 

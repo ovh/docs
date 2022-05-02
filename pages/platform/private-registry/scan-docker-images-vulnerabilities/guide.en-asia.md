@@ -4,6 +4,10 @@ excerpt: 'Find out how to scan Docker images for vulnerabilities with OVHcloud M
 slug: scan-docker-images-vulnerabilities
 section: 'Tutorials'
 order: 04
+kb: Public Cloud
+category_l1: Containers & Orchestration
+category_l2: Managed Private Registry
+category_l3: Tutorials
 ---
 
 **Last updated 15th April, 2022**

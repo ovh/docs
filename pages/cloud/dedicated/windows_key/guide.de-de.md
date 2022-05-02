@@ -5,23 +5,23 @@ slug: windows-key
 section: Server Management
 ---
 
-**Stand 08.03.2018**
+**Letzte Aktualisierung am 20.07.2018**
 
-## Einleitung
+## Ziel
 
 Bei der Installation eines Windows Server Betriebssystems kann es vorkommen, dass der Product Key (auch Key Management Service oder KMS Key) nicht korrekt gespeichert wird. In diesem Fall wird das System mit dem Key einer 120-Tage-Testversion installiert. Nach Ablauf der Frist kann das Betriebssystem nicht weiter verwendet werden.
 
-**In dieser Anleitung erfahren Sie, wie Sie den Product Key Ihrer Windows Server Umgebung korrigieren.**
+**In dieser Anleitung erfahren Sie, wie Sie den Product Key Ihrer Windows Server Umgebung ändern.**
 
 
 ## Voraussetzungen
 
-- Sie besitzen einen [Dedicated Server](https://www.ovh.de/dedicated_server/){.external} mit Windows-Betriebssystem.
-- Sie verfügen über eine SPLA-Windows-Lizenz oder haben [eine bestellt](https://www.ovh.de/dedicated_server/preise-windows-2014-lizenzen.xml){.external}.
-- Sie haben Zugriff auf den Remotedesktop.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/os/server-windows/) mit Windows-Betriebssystem in Ihrem Kunden-Account.
+- Sie verfügen über eine SPLA-Windows-Lizenz in Ihrem Kunden-Account.
+- Sie haben administrativen Zugriff auf Ihren Server über Remotedesktop-Verbindung.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Standard-Product-Key deinstallieren
 

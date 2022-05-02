@@ -27,7 +27,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), navigate to the "Bare Metal Cloud" section, and select your server under `Virtual Private Servers`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), open the `Bare Metal Cloud`{.action} section, and select your server under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the Automated backups option
 

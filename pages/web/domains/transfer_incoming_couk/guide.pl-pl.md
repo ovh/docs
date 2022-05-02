@@ -23,7 +23,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -47,7 +47,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 #### Etap 1: Zmiana APR dla domeny
 
-Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVHcloud-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
 > [!primary]
 >

@@ -18,11 +18,11 @@ Der Rescue-Modus ist ein von OVHcloud bereitgestelltes Werkzeug, um Ihren VPS in
 
 Der Rescue-Modus ist allgemein geeignet für diese Aufgaben:
 
-  - Ihr Root-Passwort ändern
-  - Netzwerkprobleme diagnostizieren
-  - Reparatur eines fehlerhaften Betriebssystems
-  - Fehlkonfiguration der Firewall korrigieren
-  - Leistung der Festplatte testen
+- Ihr Root-Passwort ändern
+- Netzwerkprobleme diagnostizieren
+- Reparatur eines fehlerhaften Betriebssystems
+- Fehlkonfiguration der Firewall korrigieren
+- Leistung der Festplatte testen
 
 Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzustellen, ob ein Problem mit der Software oder Hardware zusammenhängt. Wir empfehlen Ihnen, diese auszuführen, bevor Sie unsere Support-Teams kontaktieren.
 

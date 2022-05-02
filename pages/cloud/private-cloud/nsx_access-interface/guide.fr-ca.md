@@ -21,7 +21,7 @@ NSX est une solution de Software Defined Network (SDN) développée par VMware q
 
 ## En pratique
 
-VMWare NSX est disponible depuis le client web vSphere uniquement.
+VMware NSX est disponible depuis le client web vSphere uniquement.
 
 Depuis la page d’accueil du client vSphere, cliquez sur `Mise en réseau et sécurité`{.action} dans la barre d'outil à gauche de votre écran.
 Vous pouvez également cliquer sur `Mise en réseau et sécurité`{.action} dans le Menu déroulant.
@@ -37,14 +37,14 @@ Vous avez alors accès au tableau de bord NSX avec tous les menus associés.
 >
 > Pour accéder à l'API NSX, vous devez utiliser https://nsx.pcc-x-x-x-x.ovh.com/api
 >
-> Exemple pour récupérer votre configuration firewall: 
+> Exemple pour récupérer votre configuration firewall:
 >
 > ```
 > curl -u "admin:xxxx" -XGET "https://nsx.pcc-x-x-x-x.ovh.com/api/4.0/firewall/globalroot-0/defaultconfig"
 > ```
 >
 > Pour des raisons de sécurité, /api/1.0/ n'est pas prise en charge.
-> 
+>
 
 
 ## Aller plus loin

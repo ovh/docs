@@ -4,6 +4,10 @@ excerpt: 'Find out how to deploy a Helm chart from your OVHcloud Private Registr
 slug: deploy-chart-from-registry-in-kubernetes
 section: 'Tutorials'
 order: 04
+kb: Public Cloud
+category_l1: Containers & Orchestration
+category_l2: Managed Private Registry
+category_l3: Tutorials
 ---
 
 **Last updated 14 April, 2022.**

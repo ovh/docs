@@ -46,9 +46,7 @@ Además de [gestionar los contactos](../../customer/gestion-de-los-contactos/), 
 
 ### 1. seleccionar el dominio
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} en la columna de la izquierda y seleccione el dominio genérico (gTLD) del que quiera cambiar el propietario.
-
-![cambio de propietario](images/SS_2.png){.thumbnail}
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio genérico (gTLD) del que quiera cambiar el propietario.
 
 ### 2. iniciar el procedimiento de cambio de propietario
 

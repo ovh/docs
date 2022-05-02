@@ -28,13 +28,13 @@ La consola KVM permite establecer una conexión directa con un VPS sin necesidad
 
 #### Gama VPS actual
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el menú izquierdo del `VPS`{.action}. En esta sección, haga clic en `...`{.action} a la derecha del nombre de su VPS en la zona "Su VPS".
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}. En esta sección, haga clic en `...`{.action} a la derecha del nombre de su VPS en la zona "Su VPS".
 
 ![Abrir KVM](images/kvm-new1.png){.thumbnail}
 
 #### Antigua gama de VPS
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el menú izquierdo del `VPS`{.action}. En esta sección, haga clic en el acceso rápido titulado `KVM`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}. En esta sección, haga clic en el acceso rápido titulado `KVM`{.action}.
 
 ![Haga clic en el botón KVM](images/kvm-new2.png){.thumbnail}
 

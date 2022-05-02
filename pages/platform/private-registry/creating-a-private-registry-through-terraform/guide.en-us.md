@@ -4,6 +4,10 @@ slug: creating-a-private-registry-through-terraform
 excerpt: 'Creates an OVHcloud Managed Private Registry (Harbor) through Terraform'
 section: 'Getting started'
 order: 02
+kb: Public Cloud
+category_l1: Containers & Orchestration
+category_l2: Managed Private Registry
+category_l3: Getting started
 ---
 
 **Last updated 13th April 2022**

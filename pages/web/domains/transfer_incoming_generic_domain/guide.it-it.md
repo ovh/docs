@@ -102,7 +102,7 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
-Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} nel menu a sinistra e seleziona `Operazioni in corso`{.action}.
+Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e seleziona `Operazioni in corso`{.action}.
 
 ### Step 4: effettua il primo step di conferma del trasferimento
 

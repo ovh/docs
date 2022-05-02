@@ -4,6 +4,9 @@ slug: move-to-nutanix
 excerpt: "Install, configure and use the Move migration tool"
 section: Advanced use
 order: 02
+kb: Hosted Private Cloud
+category_l1: Hosted Private Cloud powered by Nutanix
+category_l2: Advanced usage
 ---
 
 **Last updated 5th April 2022**

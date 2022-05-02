@@ -44,7 +44,7 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 
 - Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Używanie konfiguracji OVHcloud (serwerów DNS OVH) dla danej domeny.
+- Używanie konfiguracji OVHcloud (serwerów DNS OVHcloud) dla danej domeny.
 
 > [!warning]
 >
@@ -57,7 +57,7 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 
 ### Dostęp do interfejsu zarządzania strefą DNS
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, następnie wybierz odpowiednią nazwę domeny. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 Pojawi się tabela wyszczególniająca rekord DNS przypisany do Twojej domeny w OVHCloud dla każdego wiersza. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny. 
 

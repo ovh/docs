@@ -49,7 +49,7 @@ Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
-Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
+Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
 
 ![Podsumowanie zamówień](images/order03.png){.thumbnail}
 
