@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 31/03/2022**
+**Dernière mise à jour le 02/05/2022**
 
 ## Objectif
 
@@ -44,7 +44,7 @@ Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `
 Dans la page suivante, sélectionnez **Booter en mode rescue**. Si votre serveur dispose d’un système d’exploitation Linux, sélectionnez `rescue-customer`{.action} dans la liste déroulante. Si votre serveur est sous Windows, choisissez  `WinRescue`{.action} (voir la [section du guide ci-dessous](#windowsrescue). Spécifiez une autre adresse de messagerie si vous ne souhaitez **pas** que les identifiants de connexion soient envoyées à l'adresse principale de votre compte OVHcloud.
 <br>Cliquez sur `Suivant`{.action} et `Valider`{.action}.
 
-![Mode rescue-pro](images/rescue-mode-08.png){.thumbnail}
+![Mode rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
