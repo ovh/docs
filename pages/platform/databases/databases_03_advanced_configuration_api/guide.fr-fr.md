@@ -1,11 +1,11 @@
 ---
 title: Configuration avancée via API (EN)
 excerpt: Advanced configuration for Public Cloud Databases engines via API
-slug: advanced-configuration-api
+slug: advanced-configuration
 section: Guides généraux
 order: 030
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration-api/'
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/advanced-configuration/'
 ---
 
 **Last updated 1<sup>st</sup> April, 2022**

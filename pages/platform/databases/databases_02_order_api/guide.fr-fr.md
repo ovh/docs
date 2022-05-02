@@ -1,11 +1,11 @@
 ---
 title: Premiers pas avec les bases de données Public Cloud via API (EN)
 excerpt: Find out how to order and manage your Public Cloud managed database service using the OVHcloud API
-slug: getting-started-api
+slug: order-api
 section: Guides généraux
 order: 020
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started-api/'
+    canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/order-api/'
 ---
 
 **Last updated September 3<sup>rd</sup>, 2021**

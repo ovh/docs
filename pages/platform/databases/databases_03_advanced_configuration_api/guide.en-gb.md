@@ -1,7 +1,7 @@
 ---
 title: Configure your advanced configuration via API
 excerpt: Advanced configuration for Public Cloud Databases engines via API
-slug: advanced-configuration-api
+slug: advanced-configuration
 section: General guides
 order: 030
 ---
