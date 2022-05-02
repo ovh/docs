@@ -35,7 +35,7 @@ Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adress
 
 Vos informations personnelles (adresse postale, e-mail, etc.) doivent être à jour sur votre compte client afin de garantir la sécurité et le bon fonctionnement de vos services.
 
-Vérifier vos informations personnelles en cliquant, en haut à droite de votre espace client OVHcloud, sur votre nom puis sur vos initiales (`Gérer mon compte`{.action}).<br>
+Vérifiez vos informations personnelles en cliquant, en haut à droite de votre espace client OVHcloud, sur votre nom puis sur vos initiales (`Gérer mon compte`{.action}).<br>
 Dans la section `Mon profil`{.action} à droite de votre écran (cliquez à nouveau sur votre nom pour faire disparaître le menu de gauche), cliquez sur `...`{.action}, puis sur `Modifier mon profil`{.action}.
 
 ![myprofile](images/myprofile.png){.thumbnail}
