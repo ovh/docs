@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 03
 ---
 
-**Last updated 9th of September, 2021.**
+**Last updated 2nd of May, 2022.**
 
 ## Objective
 
@@ -44,7 +44,7 @@ You can then reach your notebook's URL once the notebook is running.
 
 ### Experiment with example notebook
 
-All source code for this tutorial can be found  [here](https://github.com/ovh/ai-training-examples).
+All source code for this tutorial can be found [here](https://github.com/ovh/ai-training-examples).
 
 The example notebook is based on the Fashion MNIST dataset.
 
