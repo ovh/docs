@@ -32,7 +32,7 @@ The tutorial presents a simple example of launching **TensorBoard** in a noteboo
 
 If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), just create a new notebook and select **TensorFlow** docker image.
 
-If you want to launch it with the [CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/getting-started-cli/), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
+If you want to launch it with the [CLI](https://docs.ovh.com/ca/en/publiccloud/ai/cli/getting-started-cli/), just choose the name of your notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) your want and use the following command:
 
 ``` {.bash}
 ovhai notebook run tensorflow jupyterlab \
@@ -42,21 +42,9 @@ ovhai notebook run tensorflow jupyterlab \
 
 You can then reach your notebook's URL once the notebook is running.
 
-### Clone the GitHub repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File` > `New` > `Terminal`.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook's terminal to clone the repository:
-
-``` {.bash}
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
 ### Experiment with example notebook
+
+All source code for this tutorial can be found  [here](https://github.com/ovh/ai-training-examples).
 
 The example notebook is based on the Fashion MNIST dataset.
 
