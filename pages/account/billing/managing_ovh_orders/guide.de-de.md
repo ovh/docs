@@ -9,18 +9,18 @@ section: Abrechnung
 
 ## Ziel
 
-Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr OVHcloud Kundencenter verfolgen und [mit ihr interagieren](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Wenn Sie eine Bestellung aufgeben, können Sie diese über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfolgen und mit ihr interagieren.
 
 **Hier erfahren Sie, wie Sie Ihre Bestellungen über Ihr OVHcloud Kundencenter verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Wenn nötig, beachten Sie bitte Ihre OVHcloud-Verträge, die Sie in Ihrem OVHcloud-[Kundencenter verwenden können](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)\: Klicken Sie im Kontextmenü auf Ihren Namen oben rechts `und dann auf`{.action} Verwaltung der Dienstleistungen im Tab `Verträge`{.action}.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Wenn nötig, beachten Sie bitte Ihre OVHcloud-Verträge, die Sie in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwenden können: Klicken Sie im Kontextmenü auf Ihren Namen oben rechts und dann auf `Verwaltung der Dienstleistungen`{.action} im Tab `Verträge`{.action}.
 >
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) angemeldet.
+- Sie sind in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
 - Sie haben mindestens eine Bestellung bei OVHcloud aufgegeben.
 
 ## Praktische Anwendung
@@ -35,14 +35,14 @@ Der Bestellschein wird erstellt, sobald Sie Ihre Bestellung aufgeben. Darin werd
 |---|---|
 |1|Nummer, Erstellungsdatum und Ablaufdatum des Bestellscheins. Wenn er abgelaufen ist, müssen Sie erneut bestellen.|
 |2|Ihre Rechnungsdaten. Sie müssen identifiziert werden, um Ihren Bestellschein anzuzeigen und zu bezahlen.|
-|3|Zahlungsmittel in Ihrem Kundenkonto gespeichert. Weitere Informationen finden Sie in der Anleitung \[Zahlungsarten verwalten\](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Zahlungsmittel in Ihrem Kundenkonto gespeichert. Weitere Informationen finden Sie in der Anleitung [Meine Zahlungsarten verwalten](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/).|
 |4|Verfügbare Zahlungsmethoden. Ihnen werden nur die im Heimatland des Accounts autorisierten Zahlungsmethoden oder die mit der Art des registrierten Accounts verbundenen Zahlungsmethoden angeboten.|
 
-Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) abrufen.
+Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) abrufen.
 
 ### Auf die Bestellscheine im OVHcloud -Kundencenter zugreifen
 
-Um auf das Verwaltungspanel der Bestellungen zuzugreifen, loggen Sie sich [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) Kundencenter ein und klicken Sie dann im Tab `Dashboard auf`{.action} Meine Bestellungen `anzeigen`{.action}.
+Um auf das Verwaltungspanel der Bestellungen zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie dann im Tab `Dashboard`{.action} auf `Meine Bestellungen anzeigen`{.action}.
 
 ![Kundencenter](images/huborders.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Sie können das Bestellformular auch im HTML-Format anzeigen, indem Sie rechts n
 
 ### Bestellung verfolgen
 
-Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über Ihr OVHcloud Kundencenter [verfolgen](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
+Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfolgen:
 
 * Klicken Sie auf `Ihr Dashboard`, dann auf `Meine Bestellungen anzeigen`{.action} und dann `...`{.action} vor Ihrer Bestellung.
 * Wählen Sie `Nachverfolgung der Bestellung`{.action}. Die Nachverfolgung der Bestellung kann auch angezeigt werden, indem in der Spalte Status einer Bestellung auf den Status geklickt `wird`.
@@ -85,7 +85,7 @@ Das folgende Fenster wird angezeigt, um Sie in vier Schritten zu begleiten.
 
 ### Widerrufsrecht ausüben
 
-Gemäß Artikel 12.1.2\. unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} *können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.*
+Gemäß Artikel 12.1.2. unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} *können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.*
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 
@@ -96,7 +96,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, wenn der Bestellschein abläuft
 >
 
-Wenn die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, kann es direkt über das OVHcloud Kundencenter [in Kraft gesetzt werden](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr):
+Wenn die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, kann es direkt über das OVHcloud Kundencenter [in Kraft gesetzt werden](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de):
 
 * Klicken Sie auf `Ihr Dashboard`, dann auf `Meine Bestellungen anzeigen`{.action} und dann `...`{.action} vor Ihrer Bestellung.
 * Wählen Sie `Die Bestellung stornieren`{.action}.
