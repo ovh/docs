@@ -6,13 +6,13 @@ section: Réseau et sécurité
 order: 03
 ---
 
-**Dernière mise à jour le 11/01/2022**
+**Dernière mise à jour le 02/05/2022**
 
 ## Objectif
 
 « OVHgateway » est le nom du point de sortie de votre cluster vers Internet.
 
-**Ce guide vous décrit le fonctionnement de cette passerelle, et la méthode pour la redeployer.**
+**Ce guide vous décrit le fonctionnement de cette passerelle, et la méthode pour la redéployer.**
 
 ## En pratique
 
@@ -21,8 +21,9 @@ order: 03
 #### Informations générales
 
 La VM est basée sur Ubuntu 20.04 LTS (« The Focal Fossa »).
+
 > [!primary]
-> La gateway est construite sur la base des "cloud" images "Daily Build" Ubuntu.
+> La gateway est construite sur la base des « *cloud* » images « *Daily Build* » Ubuntu.
 > Le fichier utilisé est téléchargé directement depuis les serveurs Ubuntu : <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> puis personnalisé à l'aide de cloud-init.
 
 > [!primary]
@@ -34,8 +35,8 @@ La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoi
 `ens4` est l'interface pour le réseau interne.
 
 > [!primary]
->  Il n'y a aucun moyen de se connecter avec SSH ou tout autre protocole.
-> Il n'est pas non plus possible de se logguer depuis la console via Prism Central.
+> Il n'y a aucun moyen de se connecter avec SSH ou tout autre protocole.
+> Il n'est pas non plus possible de se loguer depuis la console via Prism Central.
 >
 
 > [!primary]
@@ -121,6 +122,7 @@ runcmd:
   - apt autoremove -y
 final_message: "The system is finally up, after $UPTIME seconds"
 ```
+
 ### Comment redéployer la passerelle de la VM avec l'interface Prism central
 
 #### Étape 1 : collecter les informations
@@ -174,31 +176,36 @@ Cliquez sur la VM OVHgateway et ouvrez l'onglet « NICs ».
 
 #### Étape 2 : créer la VM 
 
-Connectez vous à Prism Central puis créez une vm.
+Connectez-vous à Prism Central puis créez une vm.
 
-Personnalisez le nom et la caractéristiques de la VM.
+Personnalisez le nom et les caractéristiques de la VM.
+
 ![Deploy VM](images/deploy_vm.png){.thumbnail}
 
 Cliquez sur `Next`{.action}
 
-Il faut ensuite attacher un disque, pourcela vous pouvez sélectionner l'image utilisée pour créer la gateway d'origine.
+Vous devez ensuite attacher un disque. Pour cela, vous pouvez sélectionner l'image utilisée pour créer la gateway d'origine.
+
 ![Attach Disk1](images/attach_disk.png){.thumbnail}
 
 ![Attach Disk2](images/attach_disk2.png){.thumbnail}
 
-Il faut ensuite ajouter **deux nics** sur le réseau "base" :
+Ajoutez ensuite **deux nics** sur le réseau « base » :
 
 ![Attach subnet](images/attach_subnet.png){.thumbnail}
 
 ![Attach subnet](images/attach_subnet2.png){.thumbnail}
 
-Cliquez sur `Next`{.action}
-Dans l'écran de management choisissez "cloud-init" dans la partie "Guest customization".
+Cliquez sur `Next`{.action}.
+
+Dans l'interface de gestion, choisissez `cloud-init` dans la partie « Guest customization ».
+
 ![Guest customization](images/cloud-init.png){.thumbnail}
 
-Il faut maintenant créer un script yaml pour définir les paramètres. Ce script contient les données utilisateur. Au démarrage du système, ces paramètres tels que les utilisateurs, les paquets, les fichiers, etc, seront appliqués à la VM.
+Il faut maintenant créer un script yaml pour définir les paramètres. Ce script contient les données utilisateur. Au démarrage du système, ces paramètres tels que les utilisateurs, les paquets, les fichiers, etc. seront appliqués à la VM.
 
 Vous trouverez ci-dessous un template que vous pourrez modifier avec vos valeurs pour créer votre VM.
+
 > [!primary]
 > Vous pouvez utiliser le fichier d'origine de création de la VM ou utiliser un fichier personnalisé pour créer votre propre gateway. C'est ce que nous verrons dans cet exemple.
 >
@@ -247,12 +254,13 @@ runcmd:
 ```
 
 Collez ce script dans la zone prévue à cet effet.
+
 ![Guest customization](images/cloud-init.png){.thumbnail}
 
-Cliquez sur `Next`{.action}, puis sur Cliquez sur `Create VM`{.action}.
+Cliquez sur `Next`{.action}, puis sur `Create VM`{.action}.
 
 > [!primary]
->Attendez quelques minutes pour que la VM prenne en compte tous les paramètres.
+> Attendez quelques minutes pour que la VM prenne en compte tous les paramètres.
 
 ### Comment redéployer la passerelle de la VM en ligne de commande
 
@@ -304,7 +312,6 @@ Si la passerelle existe toujours, rendez-vous sur la VM de la section VM de l'in
 Cliquez sur la VM OVHgateway et ouvrez l'onglet « NICs ».
 
 ![check subnet on gateway2](images/check_subnet_name0.png){.thumbnail}
-
 
 ##### **Récupérer les informations nécessaires grâce à l’API Nutanix**
 
@@ -549,6 +556,7 @@ Vérifiez également l'UUID de votre sous-réseau :
 Il faut maintenant créer le fichier `cloud-init.yaml`. Ce fichier contient les données utilisateur. Au démarrage du système, ces paramètres tels que les utilisateurs, les paquets, les fichiers, etc, seront appliqués à la VM.
 
 Vous trouverez ci-dessous un template que vous pourrez modifier avec vos valeurs pour créer votre VM individuelle.
+
 > [!primary]
 > Vous pouvez utiliser le fichier d'origine de création ou utiliser un fichier personnalisé pour créer votre propre gateway. C'est ce que nous verrons dans cet exemple.
 >
@@ -615,8 +623,9 @@ Enfin, utilisez une requête cURL pour enregistrer et mettre sous tension la VM 
 ```bash
 curl -k -H Accept:application/json -H Content-Type:application/json -u "admin:PRISMADMINPASSWORD" -X POST https://fqdn:9440/api/nutanix/v3/vms -d @vm.json | jq .
 ```
+
 > [!primary]
->Attendez quelques minutes pour que la VM prenne en compte tous les paramètres.
+> Attendez quelques minutes pour que la VM prenne en compte tous les paramètres.
 
 ## Aller plus loin
 
