@@ -27,7 +27,7 @@ Klicken Sie dort auf "Pre-delegated domain"und machen Sie folgende Angaben:
 Wenn Sie das Formular abgeschickt haben, erscheint kurz danach das Ergebnis:
 
 
-- Wenn alles grün ist, ist die Konfiguration korrekt. Sie können die Änderung der DNS Server in Ihrem OVH Kundencenter validieren.
+- Wenn alles grün ist, ist die Konfiguration korrekt. Sie können die Änderung der DNS Server in Ihrem OVHcloud Kundencenter validieren.
 
 - Wenn es rote Elemente gibt: In den Details des Ergebnisses sehen Sie, welche Korrekturen Sie vornehmen müssen.
 

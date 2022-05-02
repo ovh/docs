@@ -48,7 +48,7 @@ Il trasferimento di un dominio.uk (o assimilato) richiede una procedura specific
 
 #### Step 1: Modifica del TAG del tuo dominio
 
-Per trasferire il tuo dominio in OVHcloud, è necessario indicare preventivamente il TAG OVHcloud presso il tuo attuale registrar. Il TAG OVHcloud è "OVH-FR". La lista dei TAGS dei vari registrar è disponibile sul sito ufficiale del registro [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Per trasferire il tuo dominio in OVHcloud, è necessario indicare preventivamente il TAG OVHcloud presso il tuo attuale registrar. Il TAG OVHcloud è "OVHcloud-FR". La lista dei TAGS dei vari registrar è disponibile sul sito ufficiale del registro [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
 > [!primary]
 >

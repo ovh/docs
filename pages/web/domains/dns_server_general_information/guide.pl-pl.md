@@ -1,7 +1,7 @@
 ---
-title: 'Zmiana serwerów DNS domeny w OVH'
+title: 'Zmiana serwerów DNS domeny w OVHcloud'
 slug: hosting_www_informacje_na_temat_serwerow_dns
-excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVH'
+excerpt: 'Dowiedz się, jak zmodyfikować serwery DNS Twojej domeny w OVHcloud'
 section: 'DNS i strefa DNS'
 order: 1
 ---
@@ -62,10 +62,9 @@ Pamiętaj, że:
 
 Upewnij się, czy wprowadzone modyfikacje nie uniemożliwią dostępu do Twojej domeny. Jeśli nie jesteś tego pewien, skontaktuj się z osobą, która poprosi Cię o wprowadzenie tych zmian.
 
-
 ### Dostęp do interfejsu zarządzania serwerami DNS
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Przejdź do zakładki `Serwery DNS`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę. Przejdź do zakładki `Serwery DNS`{.action}.
 
 Pojawi się tabela wyszczególniająca serwery DNS aktualnie zdefiniowane przez OVHcloud dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli. 
 
@@ -100,7 +99,7 @@ Po kliknięciu przycisku `Zresetuj serwery DNS`{.action} możesz zresetować obe
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 
-- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez registry zarządzające rozszerzeniem Twojej domeny. Możesz śledzić postęp tej operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do sekcji `Domeny`{.action} na pasku usług po lewej stronie, następnie `Operacje w toku`{.action};
+- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez registry zarządzające rozszerzeniem Twojej domeny. Możesz śledzić postęp tej operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do sekcji `Domeny`{.action}, następnie `Operacje w toku`{.action};
 - po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest następnie czas propagacji wynoszący maksymalnie 48 godzin, aby modyfikacje stały się w pełni widoczne.
 
 ## Sprawdź również

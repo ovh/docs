@@ -32,7 +32,7 @@ A Domain Name System (DNS) zone is a domain name’s config file. It is composed
 
 ### Step 1: Create a DynHost username.
 
-The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
+The first step involves creating a DynHost username. Once you do so, you can then update the dynamic DNS record you would like to create. First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, click `Domains`{.action}, then choose the domain name concerned. Next, go to the `DynHost`{.action} tab.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 
