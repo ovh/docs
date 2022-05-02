@@ -35,7 +35,7 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |---|---|
 |1|Numéro, date de création et date d'expiration du bon de commande. S'il est expiré, vous devrez repasser commande.|
 |2|Vos coordonnées de facturation. Vous devez être identifié pour afficher et payer votre bon de commande.|
-|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'information, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/.|
+|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'information, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
 Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) comme expliqué dans la partie suivante.
@@ -74,7 +74,7 @@ Vous pouvez également afficher le bon de commande au format HTML en cliquant su
 
 Après génération de votre bon de commande, vous pouvez suivre votre commande depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
 
-* Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
+* Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
 * Sélectionnez `Suivi de commande`{.action}. Le suivi de commande peut également être affiché en cliquant sur l'état d'une commande dans la colonne `État`.
 
 ![Suivi de commande](images/order05b.png){.thumbnail}
@@ -91,14 +91,16 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 
 > [!warning]
 >
-> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pourrez donc l'utiliser pour des renouvellements ni si votre [compte client OVHcloud](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte) est d'un autre type que *Particulier*.
+> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas l'utiliser :
+- pour des renouvellements;
+- si votre compte client OVHcloud est d'un [autre type que Particulier]](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
 >
-> De plus, le droit de rétractation ne s'applique pas aux commandes non payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire
+> De plus, le droit de rétractation ne s'applique pas aux commandes non payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
 >
 
 Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
 
-* Cliquez sur votre `Tableau de bord`, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
+* Cliquez sur votre `Tableau de bord`{.action}, puis sur `Voir mes commandes`{.action} et enfin sur `...`{.action} devant votre commande.
 * Sélectionnez `Annuler la commande`{.action}.
 
 ![Annulation d'une commande](images/cancelorder1.png){.thumbnail}
