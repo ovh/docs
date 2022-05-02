@@ -5,7 +5,7 @@ excerpt: Découvrez comment gérer vos commandes chez OVHcloud
 section: Facturation
 ---
 
-**Dernière mise à jour le 23/03/2022**
+**Dernière mise à jour le 02/05/2022**
 
 ## Objectif
 
@@ -35,10 +35,10 @@ Le bon de commande est créé au moment du passage de votre commande. Il liste l
 |---|---|
 |1|Numéro, date de création et date d'expiration du bon de commande. S'il est expiré, vous devrez repasser commande.|
 |2|Vos coordonnées de facturation. Vous devez être identifié pour afficher et payer votre bon de commande.|
-|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'information, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Moyens de paiement enregistrés sur votre compte client. Pour plus d'informations, consultez le guide [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
 |4|Méthodes de paiement disponibles. Seules les méthodes de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré vous seront proposées.|
 
-Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) comme expliqué dans la partie suivante.
+Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), comme expliqué ci-dessous.
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
@@ -52,16 +52,16 @@ Un récapitulatif des différentes commandes passées apparaît comme ci-dessous
 
 Sur celui-ci, vous retrouverez les informations suivantes :
 
-- la date à laquelle le bon de commande a été créé ;
-- le numéro de commande ;
-- l'état de la commande ;
+- la date à laquelle le bon de commande a été créé;
+- le numéro de commande;
+- l'état de la commande;
 - le montant incluant les taxes du bon de commande.
 
 Voici les différents états de commande :
 
 |État|Explication|
 |---|---|
-|Paiement non reçu|Cet état correspond à un bon de commande qui n'a pas encore reçu de paiement. Sans règlement de votre part, la commande expirera et sera annulée à la date indiquée sur le bon de commande. Si passé ce délai, vous souhaitez finalement réaliser cet achat, il vous faudra simplement repasser commande|
+|Paiement non reçu|Cet état correspond à un bon de commande qui n'a pas encore reçu de paiement. Sans règlement de votre part, la commande expirera et sera annulée à la date indiquée sur le bon de commande. Passé ce délai, si vous souhaitez finalement réaliser cet achat, il vous faudra simplement refaire une commande.|
 |Validation|Votre commande est en cours de vérification manuelle par nos services (jours ouvrés uniquement). La validation sera faite une fois cette étape finalisée. En cas d'impossibilité de finaliser l'opération, un e-mail vous sera envoyé pour fournir des documents justificatifs.|
 |Livraison en cours|La livraison de votre service est en cours, il vous suffit de patienter. Selon le service, la livraison peut s'effectuer en quelques minutes ou quelques heures.|
 |Finalisée|Vous avez reçu votre service et les accès vous ont été transmis par e-mail (si un accès est requis).|
@@ -85,17 +85,18 @@ La fenêtre ci-dessous apparaît, vous permettant un suivi en quatre étapes.
 
 ### Appliquer le droit de rétractation
 
-L'article 12.1.2 de nos [Conditions Générales de Service](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} précise que *les clients ayant la qualité de consommateur au sens de l’article liminaire du Code de la consommation, bénéficient d'un droit de rétractation de 14 jours.*
+L'article 12.1.2 de nos [Conditions Générales de Service](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} précise que « *les clients ayant la qualité de consommateur au sens de l’article liminaire du Code de la consommation, bénéficient d'un droit de rétractation de 14 jours* ».
 
 Vous trouverez toutes les modalités d'application du droit de rétractation dans la suite de ce même article.
 
 > [!warning]
 >
 > Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas l'utiliser :
-- pour des renouvellements;
-- si votre compte client OVHcloud est d'un [autre type que Particulier]](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
 >
-> De plus, le droit de rétractation ne s'applique pas aux commandes non payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
+> - pour des renouvellements;
+> - si votre compte client OVHcloud est d'un [autre type que « Particulier] »](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
+>
+> De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
 >
 
 Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
