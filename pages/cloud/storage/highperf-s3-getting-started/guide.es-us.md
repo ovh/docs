@@ -1,23 +1,23 @@
 ---
-title: Empezar con S3 High Performance (EN)
+title: Primeros pasos con el almacenamiento de objetos de S3 (EN)
 slug: s3/getting-started-with-s3
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3'
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/'
 ---
 
 **Last updated**
 
 ## Objective
 
-This guide aims at giving you the basics of High Performance containers / objects management.
+This guide aims to familiarise you with the management of your containers / objects.
 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- an [OpenStack user](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
+- an [OpenStack user](https://docs.ovh.com/us/es/public-cloud/creation-and-deletion-of-openstack-user/)
 
 ## Instructions
 

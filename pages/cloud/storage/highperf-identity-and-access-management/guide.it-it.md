@@ -1,18 +1,18 @@
 ---
-title: Gestione delle identità e degli accessi (EN)
+title: Identità e gestione degli accessi (EN)
 slug: s3/identity-and-access-management
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management'
 excerpt:
 section: Object Storage S3 High Performance
 order: 030
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/identity-and-access-management/'
 ---
 
 **Last updated 8th December 2021**
 
 ## Objective
 
-Learn how to manage your identity and access to your High Performance resources.
+Learn how to manage your identity and access to your S3 Object Storage resources.
 
 ## Requirements
 

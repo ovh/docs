@@ -10,7 +10,7 @@ order: 030
 
 ## Objective
 
-Learn how to manage your identity and access to your High Performance resources.
+Learn how to manage your identity and access to your S3 Object Storage resources.
 
 ## Requirements
 

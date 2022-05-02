@@ -1,18 +1,18 @@
 ---
-title: Object Storage S3 High Performance - Technische Grenzen (EN)
+title: S3-Objektspeicher – Technische Einschränkungen (EN)
 slug: s3/limitations
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations'
-excerpt: Find here information on the Object Storage S3 High Performance limitations
+excerpt: Find here information on the Object Storage S3 Object Storage limitations
 section: Object Storage S3 High Performance
 order: 025
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/limitations/'
 ---
 
 **Last updated 31st March 2022**
 
 ## Objective
 
-This page provides an overview of the technical limitations of the Object Storage S3 High Performance offer.
+This page provides an overview of the technical limitations of the S3 Object Storage offer.
 
 ### Maximum number of containers in storage
 
