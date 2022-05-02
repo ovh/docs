@@ -1,7 +1,7 @@
 ---
-title : "Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud"
+title : Les bonnes pratiques pour la gestion de vos services et de votre compte OVHcloud
 slug : billing-best-practices
-excerpt : "Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client"
+excerpt : Retrouvez ici les éléments indispensables pour la bonne gestion de vos factures, commandes, moyens de paiement et compte client
 section : Gérer mes services et leur renouvellement
 order : 02
 ---
@@ -27,7 +27,7 @@ Ce guide contient les éléments indispensables à une bonne gestion de votre co
 
 - [Créez un mot de passe fort](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/#generer-un-bon-mot-de-passe) qui assurera la confidentialité de votre compte.
 
-- [Activez la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) pour éviter tout accès frauduleux à votre compte.
+- [Activez la double authentification](https://docs.ovh.com/fr/customer/securiser-son-compte-avec-une-2FA/) pour éviter tout accès frauduleux à votre espace client.
 
 Pour que les mesures de sécurité soient efficaces, assurez-vous que vos adresses e-mail (principale et de secours) et votre numéro de téléphone mobile sont **à jour et accessibles**.
 
@@ -40,7 +40,7 @@ Dans la section `Mon profil`{.action} à droite de votre écran (cliquez à nouv
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Pour plus d'informations, consultez le guide « [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1) ».
+Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#comment-gerer-mes-informations-personnelles_1).
 
 Assurez-vous que votre adresse e-mail est toujours **à jour, sécurisée et accessible.** Les e-mails émanant de nos services vous seront envoyés à cette adresse, y compris les **messages de réinitialisation** en cas de perte de votre mot de passe.
 
@@ -69,7 +69,7 @@ Pour plus d'informations sur l'activation du renouvellement automatique, consult
 - [Gérer mes moyens de paiement](https://docs.ovh.com/fr/billing/manage-payment-methods/);
 - [Payer une commande en tant qu’administration publique](https://docs.ovh.com/fr/billing/reglement-par-mandat-administratif/).
 
-Si vous décidez de ne pas activer le renouvellement automatique, vous recevrez des notifications par e-mail vous invitant à effectuer un paiement manuel pour soit renouveler votre service à l'avance, soit régler votre facture en attente.
+Si vous décidez de ne pas activer le renouvellement automatique, vous recevrez des notifications par e-mail vous invitant à effectuer un **paiement manuel**. Il vous permettra soit de renouveler votre service à l'avance, soit de régler votre facture en attente.
 
 ### Suivi de vos commandes
 
@@ -86,7 +86,7 @@ Si vous souhaitez ne plus utiliser l'un de vos services, vous pouvez le résilie
 
 Cliquez d'abord sur votre nom en haut à droite de votre écran puis sur `Gestion des services`{.action}. Sur le côté droit de votre écran, cliquez sur le bouton `...`{.action} correspondant au service sur lequel vous souhaitez agir puis cliquez sur l'un des boutons suivants :
 
-- `Configurer le renouvellement`{.action} : sur l'écran suivant, vous pourrez passer le "type de renouvellement" de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
+- `Configurer le renouvellement`{.action} : sur l'écran suivant, vous pourrez passer le `Type de renouvellement` de votre service à `Manuel`. Cliquez ensuite sur `Suivant`{.action} et `Confirmer`{.action}. Avant la date d'expiration de votre service, vous recevrez plusieurs notifications par e-mail. Si vous ne renouvelez pas votre service, il sera supprimé **définitivement**.
 - `Résilier`{.action} : sur l'écran suivant, indiquez les raisons de votre demande de résiliation puis cliquez sur `Confirmer`{.action}. À la date d’expiration de votre service, il sera supprimé **définitivement**.
 - `Supprimer immédiatement`{.action} : sur l'écran suivant, cliquez sur `Confirmer`{.action}. Un e-mail de confirmation vous sera envoyé. Suite à votre validation, votre service sera supprimé **immédiatement et définitivement**.
 
