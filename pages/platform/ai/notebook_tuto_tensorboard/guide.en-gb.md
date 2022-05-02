@@ -42,21 +42,9 @@ ovhai notebook run tensorflow jupyterlab \
 
 You can then reach your notebook's URL once the notebook is running.
 
-### Clone the GitHub repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-Inside your notebook, open a new Terminal tab by clicking `File` > `New` > `Terminal`.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook's terminal to clone the repository:
-
-``` {.bash}
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
 ### Experiment with example notebook
+
+All source code for this tutorial can be found  [here](https://github.com/ovh/ai-training-examples).
 
 The example notebook is based on the Fashion MNIST dataset.
 
