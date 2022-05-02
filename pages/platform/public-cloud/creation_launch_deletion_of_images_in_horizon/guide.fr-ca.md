@@ -48,7 +48,7 @@ L'ajout d'images personnalisées est possible via l'interface OpenStack Horizon.
 |RAW|Image disque brute|
 |VDI|VirtualBox format|
 |VHD|Microsoft format|
-|VMDK|VMWare format|
+|VMDK|VMware format|
 
 - Architecture : x86_64
 - Espace disque minimal (en Go) : si non spécifié, la valeur par défaut sera 0.
