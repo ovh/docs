@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 25.02.2022**
+**Letzte Aktualisierung am 04.04.2022**
 
 ## Ziel
 
@@ -33,9 +33,7 @@ Auf dieser Seite können Sie die zu Ihrem Projekt gehörenden Kontakte einsehen.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-### Projektkontakte konfigurieren
-
-Sie können die `Ändern`{.action} Buttons verwenden, um die aktuellen Kontakte zu ändern. Dies öffnet den Bereich **Verwaltung der Kontakte** Ihres Kundencenters. Folgen Sie den Anweisungen in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/)", um den Prozess abzuschließen.
+Sie können die `Ändern`{.action} Buttons verwenden, um die aktuellen Kontakte zu ändern. Folgen Sie den Anweisungen in unserer Anleitung "[Kontakte eines Projekts ändern](../die_kontakte_eines_projekts_andern/)", um den Prozess abzuschließen.
 
 ### Kontakte und Rechte hinzufügen
 

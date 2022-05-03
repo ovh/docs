@@ -28,6 +28,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}.
 - Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
 ## En pratique
 

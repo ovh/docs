@@ -5,9 +5,13 @@ excerpt: 'Saiba como instalar o Real Time Monitoring em Linux'
 section: 'Diagnóstico e Modo Rescue'
 ---
 
-**Última atualização: 30/04/2020**
+**Última atualização: 07/04/2022**
 
-## Sumário
+> [!warning]
+> Desde 7 de abril de 2022, a funcionalidade de apresentação dos dados relativos à atividade do seu servidor está obsoleta. A opção de Real Time Monitoring continuará a funcionar para os servidores que já a tenham instalado até 30 de junho de 2022. Após esta data, iremos parar esta funcionalidade, sem que isso afete o funcionamento do servidor associado. A instalação desta opção é desaconselhada. Esta notificação tem como objetivo dar-lhe tempo suficiente para antecipar a substituição da funcionalidade eliminada.
+>
+
+## Objetivo
 
 O Real Time Monitoring (RTM) permite monitorizar parcialmente um servidor e a sua atividade. Na Área de Cliente OVHcloud, poderá consultar informações sobre a unidade central de processamento (CPU), a memória viva (RAM), as partições de disco, as portas abertas, etc. Contudo, para as informações ficarem disponíveis, é necessário instalar no servidor o pacote RTM.
 

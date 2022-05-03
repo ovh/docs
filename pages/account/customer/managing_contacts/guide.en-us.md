@@ -3,7 +3,6 @@ title: 'Managing contacts for your services'
 slug: managing-contacts
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
 section: 'Getting started'
-hidden: yes
 ---
 
 **Last updated 10th April 2020** 
@@ -30,11 +29,10 @@ The NIC handle is a personal username that you receive via email when you create
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
-- access to the email address linked to your profile
-- the correct rights for the service concerned
-- the new contact’s NIC handle (the contact you want to add)
-- the new contact must have access to the email address linked to their profile
-- old and new billing contacts must be up-to-date with their payments
+- Access to the email address linked to any relevant customer account
+- Appropriate rights for the service concerned
+- The new contact’s NIC handle (the contact you want to add)
+- No outstanding payments on billing contacts
 
 ## Instructions
 
@@ -100,7 +98,7 @@ If one of the contacts has not received this email, the contact email address li
 
 If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Once both contacts have confirmed the request, the change will be successful within a few minutes. The two contacts will receive an email confirming that the request has been successfully processed.
 

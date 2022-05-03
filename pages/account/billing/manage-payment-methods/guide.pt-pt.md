@@ -29,7 +29,7 @@ A página que é apresentada contém um quadro que indica os métodos de pagamen
 
 ### Adicionar um método de pagamento
 
-Durante a sua primeiríssima encomenda de um produto OVH, é-lhe pedido que guarde um método de pagamento para garantir a renovação do seu serviço por débito automático.
+Durante a sua primeiríssima encomenda de um produto OVHcloud, é-lhe pedido que guarde um método de pagamento para garantir a renovação do seu serviço por débito automático.
 
 Este método de pagamento é, então, usado por defeito para todas as suas renovações, sendo proposto durante novas compras.
 

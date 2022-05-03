@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Advanced use
 ---
 
-**Last updated 29th March 2021**
+**Last updated 28th March 2022**
 
 ## Objective
 
@@ -25,6 +25,7 @@ The image must be able to boot correctly, whatever the server type. It must also
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
 - Access to the [OVHcloud API](../../api/first-steps-with-ovh-api/) (for the section "[Deployment via API](#viaapi)" of this guide)
+- Your image must be smaller than the disk(s) installed in the server
 
 
 > [!warning]

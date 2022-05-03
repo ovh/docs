@@ -33,7 +33,7 @@ Si configura su VPS como servidor DNS, puede utilizar el servicio DNS secundario
 
 ### Paso 1: recuperación del código de verificación <a name="retrievecode"></a>
 
-Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} de la barra de metal y seleccione el servidor en **servidores virtuales** privados en el menú de la izquierda.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 Abra la pestaña `DNS secundario`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 

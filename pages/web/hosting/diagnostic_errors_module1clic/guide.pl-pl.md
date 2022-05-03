@@ -160,7 +160,7 @@ Sprawdź również jego dane do logowania [bezpośrednio](../polaczenie-bazy-dan
 
 Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że podana przez Ciebie nazwa serwera baz danych jest nieprawidłowa.
 
-Kliknij na `Web cloud`{.action} [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie na zakładkę `Bazy danych`{.action} po lewej stronie ekranu.
+Kliknij na `Web cloud`{.action} [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie na zakładkę `Bazy danych`{.action}.
 
 Następnie kliknij wybraną ofertę: nazwa serwera, który ma być użyty, podana jest pod nagłówkiem `Nazwa hosta` w podczęści `SQL` danych do logowania.
 

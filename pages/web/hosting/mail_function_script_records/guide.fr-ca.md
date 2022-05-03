@@ -27,7 +27,7 @@ Les e-mails automatisés sont des messages envoyés via des scripts. Ils sont pa
 
 ## En pratique
 
-Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
+Le suivi et la gestion des e-mails automatisés de votre hébergement web OVHcloud s'effectuent depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Pour cela, connectez-vous à ce dernier, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement concerné dans la liste. Cliquez ensuite sur l'onglet `Plus +`{.action}, puis sur `Scripts emails`{.action}.
 
 La page qui s'affiche alors vous permet de suivre et de gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud.
 

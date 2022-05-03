@@ -6,10 +6,10 @@ section: 'Diagnostyka i tryb Rescue'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 19-03-2021**
+**Ostatnia aktualizacja z dnia 01-04-2022**
 
 ## Wprowadzenie
 
@@ -28,8 +28,6 @@ Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyski
 
 **Dowiedz się, jak aktywować i korzystać z trybu Rescue na Twoim serwerze.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nvlAbXNM8Bk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
@@ -37,7 +35,11 @@ Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyski
 
 ## W praktyce
 
-Tryb Rescue można włączyć tylko w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
+> [!warning]
+> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](../tworzenie-klucze-ssh-dedykowane/#disablesshkey) odpowiedniego przewodnika.
+>
+
+Tryb Rescue można włączyć tylko w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
 
 Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}.
 
@@ -71,7 +73,7 @@ Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia SSH, używaj�
 
 Przykład:
 
-```sh
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -89,7 +91,7 @@ Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Resc
 
 Partycje montowane są za pomocą komendy `mount` przez SSH. Wyświetl listę partycji, aby odnaleźć tę, którą chcesz zamontować. Możesz użyć przykładowych poleceń:
 
-```sh
+```bash
 rescue:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -111,7 +113,7 @@ Device Boot Start End Blocks Id System
 
 Po odnalezieniu partycji, którą chcesz zamontować, zastosuj poniższe polecenie:
 
-```sh
+```bash
 rescue:~# mount /dev/hda1 /mnt/
 ```
 
@@ -128,19 +130,19 @@ Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruch
 
 Możesz zamontować datastore VMware w sposób opisany powyżej. Po pierwsze, zainstaluj niezbędny pakiet:
 
-```
+```bash
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
 
-```
+```bash
 rescue:~# fdisk -l
 ```
 
 Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
 
-```
+```bash
 rescue:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
@@ -186,7 +188,7 @@ W trybie tym zainstalowane są już następujące narzędzia:
 |SilverSHielD|Serwer SSH2 i SFTP.|
 |System Recovery|System Windows do przywracania i rozwiązywania problemów systemu.|
 |TestDisk|Wydajna aplikacja do odzyskiwania danych.  Umożliwia odzyskiwanie i modyfikację uszkodzonych partycji, odnajdowanie zgubionych partycji, naprawę sektora rozruchowego, a nawet odbudowę uszkodzonego MBR. |
-|FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu „przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
+|FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu “przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
 |7-ZIP|Narzędzie do kompresji i archiwizacji plików czytające następujące formaty: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR oraz Z. Umożliwia również tworzenie Twoich własnych archiwów w następujących formatach: BZIP2, GZIP, TAR, WIM, XZ, Z oraz ZIP.|
 
 ## Sprawdź również

@@ -6,7 +6,7 @@ section: Gestion de projets
 order: 7
 ---
 
-**Dernière mise à jour le 25/02/2022**
+**Dernière mise à jour le 04/04/2022**
 
 ## Objectif
 
@@ -28,9 +28,7 @@ Cette page vous permet de voir les contacts associés à votre projet.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-### Configurer les contacts du projet
-
-Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Cela ouvrira la rubrique **Gestion des contacts** de votre espace client. Suivez les instructions décrites dans notre guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/) » afin de finaliser cette manipulation.
+Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Suivez les instructions décrites dans notre guide « [Changer les contacts d’un projet](../gestion-des-contacts-dun-projet-PCI/) » afin de finaliser cette manipulation.
 
 ### Ajouter des contacts et des droits
 

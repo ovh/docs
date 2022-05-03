@@ -69,7 +69,7 @@ Para apresentar a snapshot, aceda ao menu à esquerda e clique em `Instance Back
 
 #### Da interface Horizon
 
-Para continuar, deve [criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, deve [criar um acesso à interface Horizon](../horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se criou instâncias em regiões diferentes, certifique-se de que se encontra na região apropriada. Pode verificá-lo no canto superior esquerdo da interface Horizon.
 

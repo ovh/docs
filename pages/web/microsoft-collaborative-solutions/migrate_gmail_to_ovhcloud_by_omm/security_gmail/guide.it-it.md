@@ -4,7 +4,7 @@ slug: sicurezza-gmail
 hidden: true
 ---
 
-**Ultimo aggiornamento: 03/02/2020**
+**Ultimo aggiornamento: 06/04/2022**
 
 ## Obiettivo
 
@@ -44,6 +44,13 @@ Questo messaggio ha lo scopo di verificare che sei stato effettivamente tu a ese
 Dopo la convalida, questo messaggio ti conferma che la tua scelta è stata presa in carico. Ora puoi accedere al tuo account Gmail al di fuori delle applicazioni Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> È necessario avere una password di almeno 16 cifra sul tuo account Gmail, chiamata anche "password dell'applicazione". Quando autorizzi “Consenti app meno sicure”, è necessario applicare una password forte sul tuo account Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Per saperne di più
 

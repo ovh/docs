@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.03.2021**
+**Letzte Aktualisierung am 25.03.2022**
  
 ## Ziel
 
@@ -21,7 +21,7 @@ Ein Virtual Private Server oder VPS ist ein virtualisierter Dedicated Server. Im
 > [!warning]
 >OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
 >
-Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen diesbezüglich keinen technischen Support bieten.
+>Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen diesbezüglich keinen technischen Support bieten.
 >
 
 ## Voraussetzungen
@@ -48,7 +48,7 @@ Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten 
 #### Mit Ihrem VPS verbinden (aktuelle Reihe)
 
 Bei Erstinstallation oder Neuinstallation über das Kundencenter wird ein Nutzer erstellt, der über alle Rechte zur Serververwendung verfügt, und Sie erhalten eine E-Mail mit den Login-Daten für diesen Nutzer.<br>
-Der Nutzername wird je nach Betriebssystem generiert, zum Beispiel „ubuntu“ oder „debian“.
+Der Nutzername wird je nach Betriebssystem generiert, zum Beispiel “ubuntu” oder “debian”.
 
 Sie können sich mit dem Nutzernamen und Passwort per SSH mit Ihrem VPS verbinden. (SSH ist ein sicheres Kommunikationsprotokoll. Weitere Informationen hierzu finden Sie in der [Einführung zur Verwendung von SSH](../../dedicated/ssh-einfuehrung/). Sie können auf Ihren Server über ein Terminal (Linux OS oder Mac OS) oder unter Windows über eine Drittanbieter-Software (wir empfehlen PuTTY) zugreifen.
 
@@ -58,14 +58,14 @@ Wenn Sie zum Beispiel PuTTY verwenden, öffnen Sie einfach die Anwendung und geb
 
 Wenn Sie sich über Terminal/Konsole verbinden, geben Sie folgenden Befehl ein, um sich mit den Zugangsdaten aus der E-Mail auf Ihrem VPS einzuloggen (Nutzername und IPv4-Adresse).
 
-```sh
+```bash
 ssh nutzername@IPv4_Ihres_VPS
 ```
 
 Da Sie nun mit hohen Berechtigungen verbunden sind (ein *sudo* Benutzer), können Sie Befehle für administrative Aufgaben eingeben. Wir empfehlen Ihnen, vorher Ihr Passwort zu ändern:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd nutzername
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -73,7 +73,7 @@ passwd: password updated successfully
 
 Beachten Sie, dass die Passwörter nicht angezeigt werden. Wechseln Sie anschließend zum Root-Benutzer und legen Sie Ihr Admin-Passwort fest:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -89,7 +89,7 @@ Aus Sicherheitsgründen ist das Verbinden mit dem Root-Benutzer standardmäßig 
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
-```sh
+```bash
 reboot
 ```
 
@@ -99,7 +99,7 @@ Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter
 
 #### VPS installieren oder neu installieren (aktuelle Reihe) <a name="reinstallvps"></a>
 
-Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. Gehen Sie im Tab „Start“ im Bereich **Ihr VPS** zu „Betriebssystem / Distribution“. Klicken Sie auf `...`{.action} und dann auf `VPS reinstallieren`{.action}.
+Sie können jede Neuinstallation über das OVHcloud Kundencenter durchführen. Gehen Sie im Tab “Start” im Bereich **Ihr VPS** zu “Betriebssystem / Distribution”. Klicken Sie auf `...`{.action} und dann auf `VPS reinstallieren`{.action}.
 
 ![Neuinstallation des VPS](images/2020panel_02.png){.thumbnail}
 
@@ -133,13 +133,13 @@ Wenn Sie zum Beispiel PuTTY verwenden, öffnen Sie einfach die Anwendung und geb
 
 Wenn Sie sich über Terminal/Konsole verbinden, geben Sie folgenden Befehl ein, um die Verbindung zu Ihrem VPS herzustellen:
 
-```sh
+```bash
 ssh root@IPv4_Ihres_VPS
 ```
 
 Alternativ:
 
-```sh
+```bash
 ssh root@Referenz_Ihres_VPS
 ```
 
@@ -147,7 +147,7 @@ ssh root@Referenz_Ihres_VPS
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
-```sh
+```bash
 reboot
 ```
 

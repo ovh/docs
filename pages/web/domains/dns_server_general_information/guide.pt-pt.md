@@ -1,7 +1,7 @@
 ---
-title: 'Alterar os servidores DNS de um nome de domínio OVH'
+title: 'Alterar os servidores DNS de um nome de domínio OVHcloud'
 slug: partilhado_generalidades_sobre_os_servidores_dns
-excerpt: 'Saiba como alterar os servidores DNS do seu nome de domínio OVH'
+excerpt: 'Saiba como alterar os servidores DNS do seu nome de domínio OVHcloud'
 legacy_guide_number: g2015
 ---
 
@@ -64,7 +64,7 @@ Certifique-se de que as alterações não irão afetar o acesso do seu domínio.
 
 ### Aceder à gestão dos servidores DNS da OVHcloud
 
-Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} na barra à esquerda e escolha o domínio em questão. Aceda ao separador `Servidores DNS`{.action}.
+Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} e escolha o domínio em questão. Aceda ao separador `Servidores DNS`{.action}.
 
 A tabela que aparecer apresenta os servidores DNS atualmente definidos pela OVHcloud para o seu domínio. Vários servidores DNS podem estar listados, sendo que cada um deles possui a sua própria linha na tabela.
 
@@ -99,7 +99,7 @@ Ao clicar no botão `Reinicializar os servidores DNS`{.action}, pode reinicializ
 
 Depois de realizar as alterações necessárias, deverá esperar que as alterações se propaguem. Deve ter em conta dois prazos diferentes:
 
-- a alteração introduzida na OVHcloud deve ser tomada em conta pelo registry que gere a sua extensão de nome de domínio. Para seguir o progresso da operação, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Domínios`{.action} da barra à esquerda, e `Operações em curso`{.action}.
+- a alteração introduzida na OVHcloud deve ser tomada em conta pelo registry que gere a sua extensão de nome de domínio. Para seguir o progresso da operação, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Domínios`{.action}, e `Operações em curso`{.action}.
 - Depois de o organismo responsável pela gestão da sua extensão registar as alterações, a modificação poderá demorar até 48 horas para ficar efetiva.
 
 ## Saiba mais

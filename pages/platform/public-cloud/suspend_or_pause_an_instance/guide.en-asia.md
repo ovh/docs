@@ -64,7 +64,7 @@ To view the snapshot, go to the left side menu and click on `Instance Backup`{.a
 
 #### From the Horizon Interface
 
-To proceed, you need to [configure user access to Horizon](../configure_user_access_to_horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+To proceed, you need to [configure user access to Horizon](../horizon/) and [log in to the Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
 If you have deployed instances in different regions, make sure you are in the correct region. You can verify this on the top left corner in the Horizon interface.
 

@@ -35,7 +35,7 @@ Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre 
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
 
 ### Die Application Firewall in der PHP Konfiguration aktivieren
 

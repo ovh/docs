@@ -1,7 +1,7 @@
 ---
-title: 'Reencaminhar um domínio gerido pela OVH'
+title: 'Reencaminhar um domínio gerido pela OVHcloud'
 slug: reencaminhamento-dominio
-excerpt: 'Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVH'
+excerpt: 'Descubra os diferentes tipos de reencaminhamento e como criar um reencaminhamento para um domínio gerido pela OVHcloud'
 section: Geral
 order: 1
 ---
@@ -13,11 +13,11 @@ order: 1
 
 O reencaminhamento de um domínio permite reencaminhá-lo para um novo destino. Existem diferentes tipos de reencaminhamentos que se adaptam às diferentes necessidades dos utilizadores.
 
-**Descubra os diferentes tipos de reencaminhamentos e como criar um reencaminhamento para um domínio gerido pela OVH**
+**Descubra os diferentes tipos de reencaminhamentos e como criar um reencaminhamento para um domínio gerido pela OVHcloud**
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://ovh.com/auth){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://ovh.com/auth){.external}.
 - Ter acesso ao seu alojamento web (se pretender adicionar um [ficheiro .htaccess](https://docs.ovh.com/pt/hosting/partilhado_tudo_sobre_o_ficheiro_htaccess/){.external}).
 
 ## Instruções
@@ -30,7 +30,7 @@ Existem muitos casos em que pode ser necessário reencaminhar um domínio, sendo
 
 Existem várias formas de o fazer:
 
-- **A partir da Área de Cliente OVH**: pode aceder a um assistente de configuração para configurar o seu reencaminhamento.
+- **A partir da Área de Cliente OVHcloud**: pode aceder a um assistente de configuração para configurar o seu reencaminhamento.
 
 - **Através de um ficheiro (é necessário ter conhecimentos de programação)**: pode criar o reencaminhamento num ficheiro (geralmente, um ficheiro *.htaccess*).
 
@@ -38,13 +38,12 @@ Tenha em conta que o reencaminhamento pode afetar o posicionamento do seu websit
 
 ### Reencaminhar um domínio através da Área de Cliente
 
-Uma vez ligado à [Área de Cliente OVH](https://ovh.com/auth){.external}, clique em `Domínios`{.action} na barra de serviços à esquerda (*1* na imagem abaixo), selecione o domínio correspondente e aceda à janela `Reencaminhamento`{.action} (*2* na imagem abaixo).
+Uma vez ligado à [Área de Cliente OVHcloud](https://ovh.com/auth){.external}, clique em `Domínios`{.action} na barra de serviços à esquerda, selecione o domínio correspondente e aceda à janela `Reencaminhamento`{.action}.
 
 A tabela mostra os reencaminhamentos ativos para o domínio.
 
-Para adicionar um reencaminhamento, clique em `Adicionar um reencaminhamento`{.action} (*3* na imagem abaixo).
+Para adicionar um reencaminhamento, clique em `Adicionar um reencaminhamento`{.action}.
 
-![Página principal dos reencaminhamentos](images/create_redirection_global.png){.thumbnail}
 
 Na janela que aparece, deverá definir o nome de domínio (ou subdomínio) que pretende reencaminhar). Esta será a origem do reencaminhamento.
 
@@ -56,12 +55,12 @@ A seguir, deve escolher o tipo de destino para o qual pretende reencaminhar o do
 
 Reencaminhe um domínio para outro domínio. Esta solução é ideal se alterou o nome de domínio do seu website.
 
-- **Reencaminhamento para um servidor OVH ou externo**
+- **Reencaminhamento para um servidor OVHcloud ou externo**
 
 Modifique a configuração DNS de um domínio substituindo-a por outro destino (registo A, AAAA ou CNAME). É a opção ideal se o seu website já não está alojado no mesmo sítio, mas o domínio continua a ser o mesmo.
-Se o seu domínio utiliza a configuração da OVH, também pode realizar esta opção diretamente a partir da Área de Cliente (["Como editar a minha zona DNS?"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}).
+Se o seu domínio utiliza a configuração da OVHcloud, também pode realizar esta opção diretamente a partir da Área de Cliente (["Como editar a minha zona DNS?"](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}).
 
-Este manual só explica como realizar um reencaminhamento **para um endereço web**. Se necessita de mais informações sobre como realizar um reencaminhamento para um servidor da OVH ou externo, pode entrar em contacto com o seu fornecedor para saber que registos DNS deve modificar antes de realizar o reencaminhamento.
+Este manual só explica como realizar um reencaminhamento **para um endereço web**. Se necessita de mais informações sobre como realizar um reencaminhamento para um servidor da OVHcloud ou externo, pode entrar em contacto com o seu fornecedor para saber que registos DNS deve modificar antes de realizar o reencaminhamento.
 
 ![Etapa 2: Criação de um reencaminhamento](images/adding_redirection_2.png){.thumbnail}
 

@@ -3,12 +3,12 @@ title: Redis - Se connecter avec CLI (EN)
 excerpt: Connect to your Public Cloud Databases for Redis using the Command Line Interface (CLI)
 slug: redis/connect-cli
 section: Redis - Guides
-order: 100
+order: 030
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/connect-cli/'
 ---
 
-**Last updated 5th November 2021**
+**Last updated 24th March 2022**
 
 ## Objective
 
@@ -20,7 +20,8 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for Redis.
+- A Redis database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/fr/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your Redis instance](https://docs.ovh.com/fr/databases/redis/configure-redis-instance/) to accept incoming connections
 
 ## Concept
 
@@ -42,70 +43,9 @@ You first need to install a software to interact with your Redis instance remote
 
 In order to do so and depending on your configuration, you may need to follow the official Redis documentation to install redis-cli, part of the redis server package : <https://redis.io/download>.
 
-Once installed, you need to catch your IP address in order to authorize connection form this specific client.
-
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
-Copy the IP address numbers shown on this website and keep them for later.
-In our example, we will use the (fake) IP 109.190.200.59.
-
 We are now ready to learn how to connect to our Redis instance.
 
-### Configure your Redis instance to accept incoming connections
-
-Before making a connection, we need to verify that our redis instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your Redis instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab.
-
-Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user.<br>
-Be careful! By doing so you will need to update all the places where you already use this user/password pair.
-
-We provide official Redis Access Control List (ACL). Please read the [official Redis documentation](https://redis.io/topics/acl/){.external} to select the right privileges for your user. Those ACL will define the allowed or disallowed commands or categories of commands, keys and Pub/Sub channels.
-
-In our example, we will create a user called *redisUser* with the (fake) generated password *3FAKExSW6Rez9Xw0admB* and right for the *ping* command (syntax equivalent to *<+ping>*) / *allkeys* for keys (syntax equivalent to *<\*>*)/ *allchannels* for channels (syntax equivalent to *<\*>*).
-
-![User Creation](images/user_creation.png){.thumbnail}
-
-Once created or updated, the user has to be ready and with the "Enabled" status in the control panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorize incoming connections from the Redis client
-
-In this step, select the `Authorised IP's`{.action} tab.
-
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-Like this we can help prevent intrusive connection attempts.
-
-Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow a connection from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
-
-### Get your connection information (URI)
-
-Now all the setup should be done, from the remote client and the Redis instance.
-
-Select the `General Information`{.action} tab. In the **Login Information** section, copy the Service URI.
-
-It should be similar to this:
-
-```bash
-rediss://<username>:<password>@<hostname>:<port>
-```
-
-A bit of information to know:
-
-- It will pass the username and password arguments
-- not on the default Redis port
-- TLS is activated
+### Connection
 
 We will now follow the official Redis documentation to perform our first connection.
 

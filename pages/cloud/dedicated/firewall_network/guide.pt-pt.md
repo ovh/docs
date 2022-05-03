@@ -31,6 +31,10 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 - Dispor de um serviço OVHcloud com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
 ## Instruções
 
@@ -71,6 +75,11 @@ Pode definir até **20 regras para cada IP**.
 
 
 ### Configurar a Firewall Network
+
+> [!warning]
+> Tenha em conta que a Firewall Network da OVHcloud não pode ser utilizada para abrir portas num servidor. Para abrir portas num servidor, deve passar pela firewall do sistema operativo instalado no servidor.<br>
+> Para mais informações, consulte os seguintes guias: [Configurar a firewall em Windows](https://docs.ovh.com/pt/dedicated/firewall-windows/) e [Configurar a firewall em Linux com Iptables](https://docs.ovh.com/pt/dedicated/firewall-iptables/).
+>
 
 Adicione uma regra através da opção  `Adicionar uma regra`{.action}.
 

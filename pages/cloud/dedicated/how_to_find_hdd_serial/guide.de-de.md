@@ -5,9 +5,9 @@ excerpt: 'Hier erfahren Sie, wie Sie die Seriennummer einer Festplatte ermitteln
 section: 'Diagnose & Rescue Modus'
 ---
 
-**Stand 02.07.2019**
+**Letzte Aktualisierung am 02.07.2019**
 
-## Einleitung
+## Ziel
 
 Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir unsere Kunden, die Seriennummer der zu ersetzenden Festplatte anzugeben. In den meisten Fällen finden Sie diese, indem Sie Ihre Festplatten mit dem Smartmontools-Tool überprüfen.
 
@@ -19,7 +19,7 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 - Sie haben als Administrator (Root) via SSH Zugriff auf Ihren Server.
 - Auf Windows Servern ist das Tool sas2ircu installiert (verfügbar über das [Broadcom](https://www.broadcom.com/support/download-search/?dk=sas2ircu){.external} Search Engine).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!primary]
 >
@@ -95,7 +95,7 @@ Adapter 1
 Virtual Drive Information: Size : 2.727 TB
 ```
 
-Im obenstehenden Beispiel sind zwei RAIDs auf dem Server eingerichtet: „Adapter 0“ und „Adapter 1“. Diese werden jeweils mit `/dev/sda` und `/dev/sdb` abgebildet.
+Im obenstehenden Beispiel sind zwei RAIDs auf dem Server eingerichtet: “Adapter 0” und “Adapter 1”. Diese werden jeweils mit `/dev/sda` und `/dev/sdb` abgebildet.
 
 
 ##### Schritt 2: Festplatteninformationen abrufen
@@ -160,9 +160,9 @@ Die ID des RAID-Geräts wird wie folgt angezeigt: `/dev/sda` = 1\. RAID, `/dev/s
 
 #### Seriennummer einer Festplatte ermitteln (LSI-RAID-Controller)
 
-Der LSI-RAID-Controller verwendet ein Modul namens `sg-map`, das Geräte in der Form `/dev/sgX` abbildet („X“ ist hierbei die Nummer des Geräts).
+Der LSI-RAID-Controller verwendet ein Modul namens `sg-map`, das Geräte in der Form `/dev/sgX` abbildet (“X” ist hierbei die Nummer des Geräts).
 
-Um zu ermitteln, welche Festplatte zu einem bestimmten „sg“-Gerät gehört, folgen Sie dieser [Anleitung](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch).
+Um zu ermitteln, welche Festplatte zu einem bestimmten “sg”-Gerät gehört, folgen Sie dieser [Anleitung](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch).
 
 Wenn Sie das Gerät ermittelt haben, das mit der Festplatte, die Sie analysieren möchten, verbunden ist, verwenden Sie folgenden Befehl:
 

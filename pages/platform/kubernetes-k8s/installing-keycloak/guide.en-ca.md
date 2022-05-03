@@ -46,7 +46,7 @@ What is Keycloak?
 
 ![Keycloak](images/keycloak.png)
 
-__[Keycloak](https://www.keycloak.org/about)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
+__[Keycloak](https://www.keycloak.org/)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
 It makes it easy to secure applications and services with little to no code.  
 More information can be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
 
@@ -61,7 +61,7 @@ That's because in this tutorial we want to:
 
 In this tutorial we are going to install Keycloak on a freshly created OVHcloud Managed Kubernetes Service cluster then we will configure Keycloak instance in our Kubernetes cluster as an OIDC provider.
 
-You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
+You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} to reinitialize your cluster before following this tutorial.
 
 ## Requirements
 

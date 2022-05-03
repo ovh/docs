@@ -3,7 +3,7 @@ title: DBMS lifecycle policy
 excerpt: Lifecycle policy for Public Cloud Databases engines
 slug: lifecycle-policy
 section: General information
-order: 90
+order: 060
 ---
 
 **Last updated September 15th, 2021**

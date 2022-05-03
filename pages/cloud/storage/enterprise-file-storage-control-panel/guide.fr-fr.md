@@ -6,7 +6,7 @@ section: Enterprise File Storage
 order: 2
 ---
 
-**Dernière mise à jour le 24/11/2021**
+**Dernière mise à jour le 14/04/2022**
 
 ## Objectif
 
@@ -79,6 +79,11 @@ Cliquez sur la ligne de la règle concernée pour consulter les détails de la p
 
 Afin de configurer vos [politiques de snapshot](#snapshot_policy), revenez à la section [Gestion des volumes](#instructions) de votre service et ouvrez l'onglet `Snapshot policies`{.action}.
 
+#### Liste et récupération des snapshots <a name="access_snapshots"></a>
+
+L'espace client ne permet pas de consulter la liste des snapshots effectués ni de les restaurer. 
+Pour avoir accès aux snapshots depuis votre point de montage, vous pouvez utiliser les commandes proposées dans la documentation [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+
 #### Gestion des ACL de volumes <a name="access_control"></a>
 
 Le contrôle d'accès aux volumes fonctionne via des restrictions d'adresses IP. Comme aucune restriction n'est configurée par défaut, la première étape lors de la création de volumes consiste à définir des adresses IP ou des plages à partir desquelles l'accès sera autorisé.
@@ -128,6 +133,7 @@ Si vous n'êtes pas familier avec l'utilisation de la solution Enterprise File S
 - [Configurer le contrôle d'accès](#access_control)
 - [Configurer les politiques de snapshot](#snapshot_policy) (facultatif)
 - [Appliquer des règles de snapshot au volume](#snapshots) (facultatif)
+- [Lister et récupérer les snaphots](#access_snapshots) (facultatif)
 - [Connectez-vous à votre volume en suivant les instructions de la rubrique « Informations générales »](#modify_volume)
 - [Apprenez à utiliser Enterprise File Storage via API en consultant nos guides](#gofurther) (en option)
 

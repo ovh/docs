@@ -70,7 +70,7 @@ Une fenêtre apparaît et vous devez y compléter les champs requis. Cliquez sur
 
 L'utilisateur obtiendra alors son propre identifiant composé de l'identifiant numérique de votre compte (qui vous est rappelé dans le menu « Gestion des utilisateurs ») et de son nom d'utilisateur, les deux valeurs étant séparées par un « / ».
 
-Exemple : **1234-567-89/john.smith**.
+Exemple : **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 

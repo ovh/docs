@@ -27,6 +27,10 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 - You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - You must have basic network skills
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ca/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ca/compare/) for more information.
 
 ## Instructions
 
@@ -68,6 +72,11 @@ You can set up to **20 rules per IP**.
 
 
 ### Configuring the Firewall Network
+
+> [!warning]
+> Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
+> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/ca/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/ca/en/dedicated/firewall-iptables/).
+>
 
 To add a rule, click on `Add a rule`{.action}:
 

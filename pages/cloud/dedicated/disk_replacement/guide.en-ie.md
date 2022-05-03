@@ -16,7 +16,7 @@ If you notice that a disk is faulty, or receive a notification email about a fau
 
 > [!warning]
 >
-> OVH is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
+> OVHcloud is providing you with services that you will be responsible for. We have no access to these machines, and therefore cannot manage them, so we cannot provide administrative assistance. You are responsible for your own software and security management.
 > 
 > This guide is designed to assist you in common tasks as much as possible. However, we recommend that you call upon a specialist service provider if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 > 
@@ -140,7 +140,7 @@ root@rescue:~# nvme list
 
 #### Cold-swapping the disk (server downtime required)
 
-To request a disk replacement, you simply need to create a ticket through your [OVH Control Panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
+To request a disk replacement, you simply need to create a ticket through your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
 - **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](https://docs.ovh.com/ie/en/dedicated/find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 

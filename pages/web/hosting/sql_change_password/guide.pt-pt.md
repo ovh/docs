@@ -55,7 +55,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 
 ### Etapa 1: identificar o ficheiro de configuração do seu site <a name="step1"></a>
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e, no menu à esquerda do ecrã, em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
+Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique em `Web Cloud`{.action} e em `Alojamentos`{.action} e, por fim, no alojamento em causa. De seguida, aceda ao separador `Multisite`{.action}. Identifique o nome da `Pasta raiz` do seu site (o diretório no qual se encontram os seus ficheiros e pastas).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Para anotar o *nome do servidor* e o *nome de utilizador* da base de dados, deve
 - Para o DRUPAL: o *nome do servidor* aparece em **"host"** e o *nome de utilizador* sob a menção **"username"**;
 - Para PRESTASHOP: o *nome do servidor* aparece na rubrica **"database_host"** e o *nome de utilizador* na rubrica **"database_user"**.
 
-A seguir, clique na parte **esquerda** do ecrã em `Bases de dados`{.action}. 
+A seguir, clique na secção `Bases de dados`{.action}, na secção `Web Cloud`{.action}. 
 
 No separador `Informações gerais`{.action}, identifique, nas suas ofertas [CloudDB](https://www.ovh.pt/cloud/cloud-databases/), a que contém, sob a menção `Nome do host`{.action}, o nome do servidor da sua base de dados encontrado anteriormente.
 
@@ -215,7 +215,7 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 #### Caso n°2: a base de dados do seu site faz parte de uma oferta CloudDB <a name="case2"></a>
 
-Aceda à secção `Bases de dados`{.action} da Área de Cliente (menu à esquerda) e ao servidor em questão, clique no separador `Utilizadores e permissões`{.action}:
+Aceda à secção `Bases de dados`{.action} da Área de Cliente e ao servidor em questão, clique no separador `Utilizadores e permissões`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

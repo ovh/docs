@@ -4,7 +4,7 @@ slug: seguridad_gmail
 hidden: true
 ---
 
-**Última actualización: 03/02/2020**
+**Última actualización: 06/04/2022**
 
 ## Objetivo
 
@@ -43,6 +43,13 @@ Este mensaje tiene como objetivo comprobar que la activación corresponde a su p
 Tras la validación, el siguiente mensaje le indica que su elección ha sido confirmada. A partir de ese momento, podrá conectarse a su cuenta de Gmail fuera de las aplicaciones de Google.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Es necesario tener una contraseña de al menos 16 dígitos en su cuenta de Gmail, también llamada «contraseña de aplicación». ya que, al «Autorizar las aplicaciones poco seguras», es necesario que se aplique una contraseña segura en su cuenta de Gmail.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Más información
 

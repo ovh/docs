@@ -20,7 +20,7 @@ O IPv6 é a versão mais recente do *Internet Protocol (IP). Cada servidor VPS d
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
 > 
 
 ## Requisitos
@@ -28,7 +28,7 @@ O IPv6 é a versão mais recente do *Internet Protocol (IP). Cada servidor VPS d
 - Dispor de um [servidor VPS da OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
 - Ter conhecimentos básciso de rede.
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou à [API OVHcloud](https://api.ovh.com/console/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou à [API OVHcloud](https://api.ovh.com/console/).
 
 ## Instruções
 
@@ -51,12 +51,12 @@ Antes de começar, e com o objetivo de utilizar a mesma terminologia durante as 
 
 A primeira etapa consiste em recuperar o endereço IPV6 e a gateway IPv6 associados ao servidor. Existem dois métodos possíveis. Opte pelo método que pretende utilizar.
 
-- [Obter as informações de rede através da Área de Cliente](#viacontrolpanel).
+- [Obter as informações de rede através da Área de Cliente OVHcloud](#viacontrolpanel).
 - [Obter as informações de rede através das API](#viaapi).
 
 #### Através da Área de Cliente <a name="viacontrolpanel"></a>
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Bare Metal Cloud`{.action}. Clique em `VPS`{.action} na barra à esquerda e selecione o servidor VPS correspondente. Certifique-se de que está no separador `Página Inicial`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa n.º 2 “[Aplicar a configuração IPv6](#applyipv6)”.
 

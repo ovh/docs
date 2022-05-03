@@ -13,8 +13,6 @@ section: 'Primeros pasos'
 
 Existen varios motivos por los que un sitio web puede funcionar de forma incorrecta. Para identificar la causa del fallo, compruebe en primer lugar que ha renovado todos sus servicios y que estos están activos, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. A continuación, consulte las tareas en progreso desde la página [Status](https://web-cloud.status-ovhcloud.com/){.external} de OVHcloud. Si todos los servicios están activos y no hay tareas que afecten a su sitio, deberá realizar un diagnóstico más profundo desde la sección «Diagnóstico» de [esta página](../). 
 
-**Ideas y consejos**: Si su sitio deja de estar disponible tras una acción realizada por usted, puede restaurar el contenido directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, acceda la pestaña `FTP - SSH` de su alojamiento y haga clic en el botón `Restaurar una copia de seguridad`{.action}, situado en la parte derecha. Para más información, consulte la siguiente documentación: [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web).
-
 ### ¿Cómo configurar mi alojamiento? 
 
 Para configurar su alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, versiones PHP, CDN, multisitios, bases de datos, etc. 

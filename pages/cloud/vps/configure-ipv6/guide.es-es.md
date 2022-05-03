@@ -56,9 +56,9 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente <a name="viacontrolpanel"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Cloud`{.action} de la pestaña "Bare Metal Cloud". En la columna izquierda, haga clic en `VPS`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
-En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2\. Aplicar la configuración IPv6](#applyipv6).
+En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado 2 « [Aplicar la configuración IPv6](#applyipv6). »
 
 ![Configuración IPv6](images/configure-ipv6-step1.png){.thumbnail}
 

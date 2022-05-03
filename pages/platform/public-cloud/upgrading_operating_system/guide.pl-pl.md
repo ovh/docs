@@ -6,7 +6,7 @@ section: 'Tutoriale'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 09-07-2021**
@@ -62,8 +62,8 @@ Po ponownym uruchomieniu zaktualizuj katalog /etc/apt/sources.list, aby wybrać 
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
-$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
-$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
 Teraz, kiedy kolejna wersja jest skierowana, możesz przejść do aktualizacji i do restartu końcowego:

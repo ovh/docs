@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/03/2021**
+**Última atualização: 25/03/2022**
  
 ## Objetivo
 
@@ -21,7 +21,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 > [!warning]
 >A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
-Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
+>Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
 >
 
 ## Requisitos
@@ -32,7 +32,7 @@ Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `Servidores privados virtuais`{.action}. 
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS.
 
@@ -58,14 +58,14 @@ Ao utilizar o PuTTy, por exemplo, abra simplesmente a aplicação e introduza o 
 
 Uma vez aberto o terminal, introduza o comando seguinte para se conectar ao VPS com as informações fornecidas no e-mail (nome de utilizador e endereço IPv4):
 
-```sh
+```bash
 ssh nome_de_utilizador@IPv4_do_VPS
 ```
 
 Uma vez que está ligado com elevadas taxas de utilização (um utilizador *sudo*), pode introduzir comandos para efetuar tarefas administrativas. Mas, antes de mais, é recomendável que altere a sua palavra-passe:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd nome_de_utilizador
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -73,7 +73,7 @@ passwd: password updated successfully
 
 Atenção: as palavras-passe não são exibidas. De seguida, passe para o utilizador "root" e defina a sua palavra-passe admin:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -89,7 +89,7 @@ Por razões de segurança, a ligação ao utilizador "root" é desativada de for
 
 Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
 
-```sh
+```bash
 reboot
 ```
 
@@ -133,13 +133,13 @@ Ao utilizar o PuTTy, por exemplo, abra simplesmente a aplicação e introduza o 
 
 Abra o terminal e execute um dos comandos abaixo para aceder ao VPS.
 
-```sh
+```bash
 ssh root@IPv4_do_seu_VPS
 ```
 
 Ou:
 
-```sh
+```bash
 ssh root@Referência_do_seu_VPS
 ```
 
@@ -147,7 +147,7 @@ ssh root@Referência_do_seu_VPS
 
 Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
 
-```sh
+```bash
 reboot
 ```
 

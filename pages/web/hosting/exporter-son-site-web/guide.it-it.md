@@ -32,7 +32,7 @@ Per accedere allo spazio di storage sono necessari:
 - l'indirizzo del server.
 - porta di connessione al server
 
-Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione "Web" e clicca su `Hosting`{.action} nel menu a sinistra. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
+Questi dati sono indicati nell’email di conferma dell’installazione del tuo hosting ma, Se non ne hai ancora uno, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione "Web" e clicca su `Hosting`{.action}. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Se utilizzi un database **CloudDB** per il tuo sito Web, consulta la sezione ded
 
 Per conservare lo storico dei log del tuo sito, è disponibile un accesso a questi ultimi con il tuo hosting.
 
-Clicca su `Hosting`{.action} nel menu a sinistra e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}. Clicca sul link sotto la voce `Visualizza i log`{.action}:
+Clicca su `Hosting`{.action} e seleziona il tuo servizio. Clicca sulla scheda `Statistiche e log`{.action}. Clicca sul link sotto la voce `Visualizza i log`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
 

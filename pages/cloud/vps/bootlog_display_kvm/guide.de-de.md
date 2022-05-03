@@ -17,7 +17,7 @@ Wenn Ihr VPS nicht mehr antwortet, können Sie diesen in der Regel immer noch ü
 
 > [!primary]
 >
-> Bitte beachten Sie, dass KVM Ihnen in bestimmten Umgebungen keine relevanten Informationen liefert, da die Startsequenz in der seriellen Konsole angezeigt wird oder  GRUB im *silent mode* konfiguriert ist.
+> Bitte beachten Sie, dass KVM Ihnen in bestimmten Umgebungen keine relevanten Informationen liefert, da die Startsequenz in der seriellen Konsole angezeigt wird oder GRUB im *silent mode* konfiguriert ist.
 >
 
 **Diese Anleitung erklärt, wie Sie Boot-Logs aktivieren, die bei der Diagnose eines VPS hilfreich sein können.**

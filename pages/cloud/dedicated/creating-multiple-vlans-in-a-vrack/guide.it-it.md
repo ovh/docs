@@ -23,6 +23,10 @@ La [configurazione standard della vRack](https://docs.ovh.com/it/dedicated/confi
 - Essere connesso con l’account amministratore (con Windows)
 - Aver completato la [configurazione della vRack](https://docs.ovh.com/it/dedicated/configurare-server-dedicati-vrack/){.external}
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 ## Procedura
 

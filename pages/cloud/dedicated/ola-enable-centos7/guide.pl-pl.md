@@ -38,7 +38,7 @@ ip a
 
 > [!primary]
 >
-> Wprowadzenie tego polecenie spowoduje wywołanie wielu „interfejsów”. Jeśli masz problem z ustaleniem, które z nich są Twoimi fizycznymi interfejsami sieciowymi, do pierwszego interfejsu nadal będzie domyślnie przypisany publiczny adres IP serwera.
+> Wprowadzenie tego polecenie spowoduje wywołanie wielu “interfejsów”. Jeśli masz problem z ustaleniem, które z nich są Twoimi fizycznymi interfejsami sieciowymi, do pierwszego interfejsu nadal będzie domyślnie przypisany publiczny adres IP serwera.
 >
 
 Kiedy ustalisz nazwy dwóch interfejsów, powiąż je w systemie operacyjnym. W pierwszym kroku utwórz powiązanie interfejsów. Utwórz plik interfejsu w dowolnym edytorze tekstowym za pomocą następującego polecenia:

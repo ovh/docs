@@ -22,6 +22,9 @@ A dedicated server is a physical server located in one of our data centres. Unli
 - A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
 - Administrative access (root) via SSH or remote desktop (Windows) to your server
 
+> [!primary]
+>
+> If your server is of the **Eco** product line, go to [this guide](../getting-started-dedicated-server-eco/) instead.
 
 ## Instructions
 

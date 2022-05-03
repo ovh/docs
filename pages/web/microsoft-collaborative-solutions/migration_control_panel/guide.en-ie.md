@@ -6,7 +6,7 @@ section: 'Exchange account migration'
 order: 1
 ---
 
-**Last updated 22th February 2022**
+**Last updated 22th April 2022**
 
 ## Objective
 

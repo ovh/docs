@@ -169,6 +169,16 @@ Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OV
 
 Si ha configurado alguna de las cuentas migradas en un cliente de correo (p. ej. Outlook), deberá volver a configurarlas. La información de conexión al servidor de OVHcloud ha cambiado tras la migración. Para más información, consulte nuestra guía en las secciones relativas a [Email Pro](../../emails-pro/) y [Hosted Exchange](../). Si no puede reconfigurar la cuenta de forma inmediata, siempre es posible acceder a través de la aplicación online.
 
+### Organización del contenido de sus direcciones de correo tras una migración <a name="content-after-migration"></a>
+
+Al conectarse por primera vez a su nueva cuenta de correo, el contenido migrado puede ocultarse parcialmente. Para ver todos los elementos, haga clic en la cabecera situada al lado de la `bandeja de entrada` para revelar los subdirectorios. El contenido migrado de su antigua cuenta de correo debe aparecer.
+
+![exchange](images/owa_migrate_content.png) {.thumbnail}
+
+Las carpetas predeterminadas, como "elementos enviados" o "papelera", aparecen en inglés ("Sent items" y "Trash"), a excepción de las carpetas que haya creado.
+
+Una vez realizada la migración, podrá explorar todas las carpetas y subcarpetas de su cuenta para asegurarse de que dispone de todos los elementos.
+
 ### Migrar Manualmente
 
 También puede migrar manualmente sus direcciones de correo a su nueva solución de correo de OVHcloud utilizando únicamente su cliente de correo. Pulse nuestra guía [Migrar manualmente su dirección de correo electrónico](../../emails/migrar-sus-direcciones-de-correo-manualmente/). No obstante, le recomendamos que utilice este método únicamente cuando no sea posible utilizar los métodos principales.

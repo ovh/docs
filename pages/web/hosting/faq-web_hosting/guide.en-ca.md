@@ -13,8 +13,6 @@ section: 'Getting started'
 
 There are several possible reasons why your website may not be working properly. To identify the cause, start by logging in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and check that all of your services have been successfully renewed and are active. Once you have checked this, verify that there are no ongoing maintenance tasks by visiting the [Status page](https://web-cloud.status-ovhcloud.com/){.external}. If all your services are active and no maintenance tasks are affecting your website, you can carry out a more in-depth diagnostic by reading our ["Diagnostic" guides](../). 
 
-**Tips and tricks**: If your website suddenly goes down after an action on your part, you can restore the content via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. To do this, go to the `FTP - SSH` tab on your hosting page, and click the `Restore a backup`{.action} button on the right of your screen. For detailed instructions, you can use the following documentation: [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel).
-
 ### How do I configure my hosting space? 
 
 To configure your Web Hosting plan, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. In the `Hosting plans` section, you can manage your SSL certificates, PHP versions, CDN, multisites, databases, and more. 

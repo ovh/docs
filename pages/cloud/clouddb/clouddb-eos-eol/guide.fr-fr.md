@@ -1,16 +1,13 @@
 ---
 title: 'Annonces de fin de vente/vie CloudDB'
 slug: clouddb-eos-eol
-excerpt: 'Annonces de fin de vente/vie CloudDB'
 section: 'Ressources techniques'
 ---
 
-Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services CloudDB, instances SGBD joignables via le réseau publique ou via le réseau Web Hosting.
-Référez-vous à la [politique de fin de vie des bases de données managées](../managed-db-life-cycle-policy/) pour plus d'informations.
+Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services CloudDB, instances SGBD joignables via le réseau publique ou via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](../managed-db-life-cycle-policy/) pour plus d'informations.
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
-|MariaDB 10.1|2019-07-29|2020-04-17|2020-10-17|
 |MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|À définir|À définir|À définir|

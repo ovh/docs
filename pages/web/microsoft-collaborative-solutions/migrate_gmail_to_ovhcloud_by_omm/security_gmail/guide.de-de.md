@@ -4,7 +4,7 @@ slug: gmail-sicherheit
 hidden: true
 ---
 
-**Letzte Aktualisierung am 13.02.2020**
+**Letzte Aktualisierung am 06.04.2022**
 
 ## Ziel
 
@@ -45,6 +45,13 @@ Mit dieser Nachricht soll überprüft werden, ob Sie der Initiator dieser Aktivi
 Nach der Validierung zeigt die folgende Meldung an, dass Ihre Auswahl berücksichtigt wurde. Sie können sich jetzt auch mit Anwendungen außerhalb von Google Diensten in Ihrem Google Mail-Account anmelden.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Sie benötigen ein Passwort mit mindestens 16 Zeichen auf Ihrem Gmail-Account, auch als "Application Passwort" bezeichnet. Wenn Sie „Weniger sichere Apps zulassen" aktivieren, muss Ihr Gmail-Account ein starkes Passwort verwenden.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 
 ## Weiterführende Informationen

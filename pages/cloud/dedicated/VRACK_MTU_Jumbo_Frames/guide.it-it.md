@@ -18,6 +18,11 @@ I *Jumbo frame* sono frame Ethernet con un payload compreso tra 1500 e 9000 byte
 - Disporre di una [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 - Avviare una shell con i permessi di root
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 > [!primary]
 >
 > La dimensione MTU deve essere identica su tutti gli host di una stessa sottorete. 

@@ -22,6 +22,11 @@ Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), 
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
 ## Instruções
 
 A ligação ao IPMI pode ser efetuada principalmente através de vários métodos: applet Java (aconselhado) ou o browser (Serial over LAN).

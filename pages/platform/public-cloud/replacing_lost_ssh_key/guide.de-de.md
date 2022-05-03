@@ -57,7 +57,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Um den SSH-Schlüssel Ihres Standard-Benutzers zu ändern, begeben Sie sich einfach in dessen Home-Verzeichnis.
 
-Für den Benutzer „admin“ befindet sich die Datei zum Beispiel im Verzeichnis:
+Für den Benutzer “admin” befindet sich die Datei zum Beispiel im Verzeichnis:
 
 
 ```
@@ -65,7 +65,7 @@ Für den Benutzer „admin“ befindet sich die Datei zum Beispiel im Verzeichni
 ```
 
 
-Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer „ubuntu“, Sie finden die Datei also im Verzeichnis:
+Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer “ubuntu”, Sie finden die Datei also im Verzeichnis:
 
 
 ```
@@ -73,7 +73,7 @@ Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer „ubuntu“, Sie finde
 ```
 
 
-Sie können im Rescue Modus auch das Passwort Ihres Standard-Benutzers mit folgenden Befehlen ändern (in diesem Beispiel für den Benutzer „admin“):
+Sie können im Rescue Modus auch das Passwort Ihres Standard-Benutzers mit folgenden Befehlen ändern (in diesem Beispiel für den Benutzer “admin”):
 
 
 - Mounten Sie das Dateisystem:
@@ -83,7 +83,7 @@ root@instance:/home/admin# mount /dev/vdb1 /mnt/
 root@instance:/home/admin# chroot /mnt/
 ```
 
-- Ändern Sie das Passwort von „admin“:
+- Ändern Sie das Passwort von “admin”:
 
 
 ```

@@ -30,17 +30,17 @@ A sua solução CloudDB está associada de forma padrão à rede de alojamentos 
 
 ### Ativação do seu servidor CloudDB incluído com o seu plano de alojamento web
 
-Se a sua oferta de alojamento inclui a opção CloudDB, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
+Se a sua oferta de alojamento inclui a opção CloudDB, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action}.
 
 No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
 ![Informações gerais](images/db-activation.png){.thumbnail}
 
-Para concluir, siga as instruções seguintes para determinar o tipo e a versão do seu servidor CloudDB. De seguida, poderá aceder através da coluna da esquerda na `Base de dados`{.action}.
+Por fim, siga as instruções fornecidas para determinar o tipo e a versão do seu servidor CloudDB. De seguida, estará disponível na`Base de dados`{.action}.
 
 ### Consultar informações gerais da instância CloudDB
 
-Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
+Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >

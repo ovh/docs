@@ -58,7 +58,7 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement OVHcloud
 
-Pour retrouver l'adresse IP, cliquez sur `Hébergements` dans la colonne de gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez l'hébergement concerné.
+Pour retrouver l'adresse IP, cliquez sur `Hébergements` dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez) l'hébergement concerné.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

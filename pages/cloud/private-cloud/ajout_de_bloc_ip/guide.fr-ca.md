@@ -7,7 +7,7 @@ section: Fonctionnalités OVHcloud
 order: 01
 ---
 
-**Dernière mise à jour le 30/12/2021**
+**Dernière mise à jour le 06/04/2022**
 
 ## Objectif
 
@@ -90,7 +90,7 @@ Le résultat sera sous cette forme :
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
+Si, par la suite, vous devez détacher le bloc IP, vous pouvez utiliser cet appel API pour déplacer l'IP dans le parking des IPS :
 
 > [!api]
 >
@@ -107,6 +107,10 @@ Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcl
 La référence de l'opération est « removeIpRipeBlock ».
 
 ![operations manager](images/operations.png){.thumbnail}
+
+L'IP apparaîtra ensuite dans le `Parking des IPs`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Aller plus loin
 

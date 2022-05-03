@@ -19,13 +19,19 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 >
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 
-**Découvez comment déplacer une IP Fail Over depuis votre espace client OVHcloud ou via les API OVHcloud**
+**Découvez comment déplacer une IP Fail Over depuis votre espace client OVHcloud ou via les API OVHcloud.**
 
 ## Prérequis
 
 - Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
 - Disposer d'une [adresse IP Fail Over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/).
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+>
 
 > [!warning]
 > Si l'adresse IP Fail Over, ou une des adresses IP du bloc, a une MAC virtuelle affectée, le serveur cible doit supporter la fonctionnalité des MAC virtuelles.

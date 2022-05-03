@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/11/2021**
+**Ultimo aggiornamento: 14/04/2022**
 
 ## Obiettivo
 
@@ -83,6 +83,12 @@ Clicca sulla riga della regola in questione per visualizzare i dettagli della pi
 
 Per configurare le tue [politiche di Snapshot](#snapshot_policy), torna alla sezione [Gestione dei volumi](#instructions) del tuo servizio e apri la scheda `Snapshot poliziesche`{.action}.
 
+#### Lista e recupero degli Snapshot <a name="access_snapshots"></a>
+
+Nello Spazio Cliente non è possibile consultare la lista degli Snapshot effettuati o ripristinarli.
+
+Per accedere agli Snapshot dal tuo punto di mount, puoi utilizzare i comandi proposti nella documentazione [NetApp](https://library.netapp.com/ecmdocs/ECMP1196991/html/GUID-36DC110C-C0FE-4313-BF53-1C12838F7BBD.html){.external}.
+
 #### Gestione delle ACL dei volumi <a name="access_control"></a>
 
 Il controllo degli accessi ai volumi funziona tramite restrizioni di indirizzi IP. Poiché di default non sono presenti restrizioni, il primo step nella creazione dei volumi consiste nella definizione di indirizzi IP o fasce a partire dalle quali sarà autorizzato l'accesso.
@@ -132,6 +138,7 @@ Se non conosci la soluzione Enterprise File Storage, segui questi passaggi:
 - [Configura il controllo degli accessi](#access_control)
 - [Configura le politiche di Snapshot](#snapshot_policy) (facoltativo)
 - [Applicare regole di snapshot al volume](#snapshots) (facoltativo)
+- [Elencare e recuperare gli snapshot](#access_snapshots) (facoltativo)
 - [Accedi al tuo volume seguendo le indicazioni della sezione "Informazioni generali"](#modify_volume)
 - [Scopri come utilizzare Enterprise File Storage via API consultando le nostre guide](#gofurther) (in opzione)
 

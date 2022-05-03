@@ -5,7 +5,11 @@ excerpt: 'Sprawdź, jak zainstalować Real Time Monitoring w systemie Linux'
 section: 'Diagnostyka i tryb Rescue'
 ---
 
-**Ostatnia aktualizacja: 24-03-2020**
+**Ostatnia aktualizacja: 07-04-2022**
+
+> [!warning]
+> Od 7 kwietnia 2022 funkcja wyświetlania danych dotyczących działalności Twojego serwera jest nieaktualna. Opcja Real Time Monitoring będzie nadal działać dla serwerów, które ją zainstalowały do 30 czerwca 2022. Po tej dacie wycofujemy tę funkcję i nie będzie to miało wpływu na działanie przypisanego serwera. Nie zalecamy zatem instalacji tej opcji. Powiadomienie to ma na celu pozostawienie czasu na zaplanowanie zmiany usuniętej funkcji.
+>
 
 ## Wprowadzenie
 
@@ -152,7 +156,7 @@ add-apt-repository "deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/$(lsb_re
 
 System **Debian**:
 
-Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: „buster”).
+Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: “buster”).
   
 ```sh
 nano /etc/apt/sources.list.d/rtm.list
@@ -164,7 +168,7 @@ deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codenam
 
 System **Ubuntu**:
 
-Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: „bionic”).
+Zmienna `<distribution codename>` jest nazwą dystrybucji (na przykład: “bionic”).
   
 ```sh
 nano /etc/apt/sources.list.d/rtm.list

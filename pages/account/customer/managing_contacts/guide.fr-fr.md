@@ -106,7 +106,7 @@ Si l'un des contacts n'a pas reçu l'e-mail, il se peut que l'adresse de contact
 
 Si un seul contact a validé le changement, un message apparaîtra, vous informant que la demande est toujours en attente de validation par l'autre contact. Si l'un des contacts vient tout juste de valider une demande, l'affichage dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) se mettra à jour sous quelques minutes.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 Le changement de contact sera effectif quelques minutes après que les deux contacts aient validé la demande. Ils recevront ensuite un e-mail les informant que la demande a bien été traitée.
 

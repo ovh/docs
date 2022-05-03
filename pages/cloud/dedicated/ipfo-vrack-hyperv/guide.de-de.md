@@ -23,6 +23,11 @@ section: vRack
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie verfügen über einen IP-Block von 4 oder mehr IP-Adressen.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## In der praktischen Anwendung
 
 In dieser Anleitung wird davon ausgegangen, dass Sie bereits Windows Server installiert haben, über den Remotedesktop eingeloggt sind und Ihren Dedicated Server und Ihren IP-Block bereits einem vRack zugewiesen haben. Weitere Informationen zu diesen Schritten finden Sie in den Schritten 1 bis 4 unserer Anleitung zum [Konfigurieren von Dedicated Servern in einem vRack](../mehrere-dedizierte-server-im-vrack-konfigurieren/).

@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a tr
 section: OpenStack
 ---
 
-**Última actualización: 22/12/2021**
+**Última actualización: 30/03/2022**
 
 ## Objetivo
 
@@ -28,19 +28,15 @@ Abra el terminal o conéctese por SSH al entorno que quiera preparar.
 Actualice la caché de los paquetes con el siguiente comando:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilice el siguiente comando para instalar los clientes Nova y Swift:
+Utilice el siguiente comando para instalar los clientes OpenStack, así como Nova y Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient python-swiftclient -y
-```
-
-Python3 Versión
-
-```sh
-apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.
@@ -66,22 +62,13 @@ Actualice la caché de los paquetes mediante el siguiente comando:
 ```sh
 yum update -y
 ```
-Instale el RPM rdo-release con el siguiente comando:
+
+Utilice el siguiente comando para instalar los clientes OpenStack, así como Nova y Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-A continuación instale el cliente OpenStack.
-
-```sh
-yum install -y python-openstackclient
-```
-
-Por último, instale el cliente Nova.
-
-```sh
-yum install -y python-novaclient
+yum install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.

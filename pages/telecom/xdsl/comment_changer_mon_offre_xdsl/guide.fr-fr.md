@@ -61,7 +61,7 @@ Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) sero
 > - Entreprise vers Connect;
 > - Express vers Express Lite;
 > - Express vers Connect;
-> - Express Lite vers Connect;
+> - Express Lite vers Connect.
 
 ## Aller plus loin
 

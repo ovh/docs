@@ -30,17 +30,17 @@ Su solución Cloud Databases está asociada por defecto a la red de alojamientos
 
 ### Activación de su servidor CloudDB incluido con su plan de hosting
 
-Si el plan de hosting incluye la opción CloudDB, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
+Si el plan de hosting incluye la opción CloudDB, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action}.
 
 En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
 
 ![Información general](images/db-activation.png){.thumbnail}
 
-Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor CloudDB. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Base de Datos`{.action}.
+Siga las indicaciones para determinar el tipo y la versión de su servidor Cloud Databases. A continuación, podrá acceder a ella en la sección `Bases de datos`{.action}.
 
 ### Ver la información general del servicio
 
-En la columna izquierda de la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >

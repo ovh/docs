@@ -26,9 +26,9 @@ Um Dateien von einer virtuellen Maschine auf einen anderen Speicher zu verlagern
 
 ### Wahl des vMotion-Typs
 
-Das Menu bietet mehrere Optionen für  **vMotion**. In unserem Beispiel möchten wir nur die virtuelle Maschine in eine andere Datenbank verlagern. Daher wählen wir „Change storage only“.
+Das Menu bietet mehrere Optionen für  **vMotion**. In unserem Beispiel möchten wir nur die virtuelle Maschine in eine andere Datenbank verlagern. Daher wählen wir “Change storage only”.
 
-Mit der Option „Change compute resource only“ wird die virtuelle Maschine auf einen anderen Host verlagert.  
+Mit der Option “Change compute resource only” wird die virtuelle Maschine auf einen anderen Host verlagert.  
 
 Diese Aktion wird **vMotion** genannt und in [dieser Anleitung beschrieben](../vmware-vmotion-neu/).
 

@@ -11,7 +11,7 @@ order: 08
 
 ## Objectif
 
-VMWare offre la possibilité de créer des snapshots pour permettre le retour à un état précedent de votre VM.
+VMware offre la possibilité de créer des snapshots pour permettre le retour à un état précedent de votre VM.
 
 **Ce guide explique comment exécuter cette tâche.**
 

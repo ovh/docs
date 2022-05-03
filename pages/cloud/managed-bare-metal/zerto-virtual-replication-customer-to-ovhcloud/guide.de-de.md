@@ -148,13 +148,13 @@ Klicken Sie auf den Button `+`{.action}.
 
 ![Zerto VPN](images/image-EN-17.png){.thumbnail}
 
-Überprüfen Sie, dass als Modus „Tunnel IPv4“ ausgewählt ist.
+Überprüfen Sie, dass als Modus “Tunnel IPv4” ausgewählt ist.
 
 ##### 3.2.2 Phase 2: Lokales Netzwerk
 
 ![Zerto VPN](images/image-EN-18.png){.thumbnail}
 
-Als lokaler Netzwerktyp muss „LAN subnet“ ausgewählt sein.
+Als lokaler Netzwerktyp muss “LAN subnet” ausgewählt sein.
 
 ##### 3.2.3 Phase 2: Remote-Netzwerk
 
@@ -236,11 +236,11 @@ Klicken Sie auf `Add`{.action}, um eine neue Regel hinzuzufügen.
 
 Diese Regel enthält folgende Parameter:
 
-- Aktion: „Pass“ (Traffic autorisieren)
-- Interface: „IPsec“ (vom VPN-Tunnel eingehenden Traffic autorisieren)
-- Protokoll: „TCP“
+- Aktion: “Pass” (Traffic autorisieren)
+- Interface: “IPsec” (vom VPN-Tunnel eingehenden Traffic autorisieren)
+- Protokoll: “TCP”
 
-Wählen Sie für die Bereiche „Source“ und „Destination“ den Typ „Single host or Network“ aus und geben Sie jeweils die IP des OVHcloud ZVM bzw. die IP des Kunden-ZVM an.
+Wählen Sie für die Bereiche “Source” und “Destination” den Typ “Single host or Network” aus und geben Sie jeweils die IP des OVHcloud ZVM bzw. die IP des Kunden-ZVM an.
 
 ![Zerto VPN](images/image-EN-28.png){.thumbnail}
 

@@ -47,9 +47,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 
 ### Schritt 1: Domain auswählen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie `Domains`{.action} im linken Menü und wählen Sie die Domain aus, deren Inhaber Sie ändern möchten.
-
-![Änderung des Inhabers](images/SS_2.png){.thumbnail}
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen, deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
 
 ### Schritt 2: Vorgang für den Inhaberwechsel
 

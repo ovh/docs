@@ -31,7 +31,7 @@ This tutorial presents two examples of using Weights & Biases. The first noteboo
 
 The first step consists in creating a Jupyter Notebook with OVHcloud AI Notebooks.
 
-First, you have to install the OVHAI CLI then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
+First, you have to [install the OVHAI CLI](https://docs.ovh.com/ie/en/publiccloud/ai/cli/install-client/) then just choose the name of the notebook (`<notebook-name>`) and the number of GPUs (`<nb-gpus>`) to use on your job and use the following command:
 
 - TensorFlow image docker:
 
@@ -49,7 +49,7 @@ ovhai notebook run pytorch jupyterlab \
     --gpu <nb-gpus>
 ```
 
-Whatever the selected method, you should now be able to reach your notebook's URL.
+Whatever the selected method, you should now be able to reach your notebook's URL (see in the output of the command, the field `Url:`).
 
 ### Clone the GitHub examples repository
 
@@ -67,19 +67,13 @@ git clone https://github.com/ovh/ai-training-examples.git
 
 ### Experiment with OVHcloud examples notebooks
 
-Once the repository has been cloned, find the notebook of your choice.
-
-- The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
-
-`ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_Weights_and_Biases_MNIST.ipynb`
-
-- The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
-
-`ai-training-examples` > `notebooks` > `pytorch` > `tuto` > `notebook_Weights_and_Biases_yolov5.ipynb`
-
+Once the repository has been cloned, find the notebook of your choice.<br/>
 Instructions are directly shown inside the notebooks. You can run them with the standard "Play" button inside the notebook interface.
-
 #### Notebook using TensorFlow and Weights & Biases is based on the MNIST dataset
+
+The notebook using TensorFlow and Weights & Biases is based on the MNIST dataset. To access it, follow this path:
+
+`ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `weights-and-biases` > `notebook_Weights_and_Biases_MNIST.ipynb`
 
 The aim of this tutorial is to show how it is possible, thanks to Weights & Biases, to compare the results of trainings according to the chosen hyperparameters.
 
@@ -98,6 +92,11 @@ You can also compare the **Test error rates**:
 A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook_Weights_and_Biases_MNIST.ipynb).
 
 #### Notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset
+
+The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO dataset. To access it, follow this path:
+
+`ai-training-examples` > `notebooks` > `pytorch` > `tuto` > `notebook_Weights_and_Biases_yolov5.ipynb`
+
 
 The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In order to achieve this, the YOLOv5 s, m, l and x models performance will be compared on the COCO dataset for the same number of epochs.
 

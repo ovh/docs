@@ -23,6 +23,10 @@ La [configuración estándar del vRack](../configurar-vrack-en-servidor-dedicado
 - Estar conectado con la cuenta de administrador (Windows).
 - Haber terminado de [configurar el vRack](../configurar-vrack-en-servidor-dedicado/){.external}.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 ## Procedimiento
 

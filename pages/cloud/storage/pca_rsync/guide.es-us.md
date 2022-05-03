@@ -27,7 +27,7 @@ Los archivos binarios precompilados están disponibles en la mayoría de las dis
 
 ### ID OpenStack
 
-Puede generar su identificador y contraseña OpenStack a través de esta [guía](../../../public-cloud/crear_un_acceso_a_horizon/).
+Puede generar su identificador y contraseña OpenStack a través de esta [guía](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/).
 
 ### TenantName
 

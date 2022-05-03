@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur kon
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 01.12.2021**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 30.03.2022**
 
 ## Ziel
 
@@ -129,7 +133,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/sysconfig/network-scripts/ifcfg-eth0. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
@@ -179,7 +183,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/rc.conf. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/rc.conf`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
@@ -225,7 +229,7 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Öffnen Sie die Netzwerkkonfigurationsdatei in /etc/systemd/network. In unserem Beispiel heißt die Datei 50-default.network.
+Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/systemd/network`. In unserem Beispiel heißt die Datei 50-default.network.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 

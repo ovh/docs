@@ -36,7 +36,7 @@ Otrzymałeś wiadomość e-mail od OVHcloud i chcesz się upewnić, czy to nie p
 
 |Numer - opis|E-mail OVHcloud|E-mail typu phishing|
 |---|---|---|
-|1 - Nadawca:|Sprawdź, czy adres użyty do wysyłki wiadomości e-mail jest w domenie: „@ovhcloud.com”, „@ovh.com”, „@soyoustart.com” lub „@kimsufi.com”.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVHcloud lub będzie on nieprawidłowy.|
+|1 - Nadawca:|Sprawdź, czy adres użyty do wysyłki wiadomości e-mail jest w domenie: “@ovhcloud.com”, “@ovh.com”, “@soyoustart.com” lub “@kimsufi.com”.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVHcloud lub będzie on nieprawidłowy.|
 |2 - Temat|Sprawdź, czy Twój identyfikator **(zaczynający się od pierwszej litery nazwiska i pierwszej litery imienia zarejestrowanych w OVHcloud)** i/lub adres e-mail przypisany do Twojego konta figurują w temacie wiadomości.|Bardzo często e-maile typu phishing są oznaczone w temacie w nawiasie kwadratowym jako "spam". Temat takiej wiadomości nie będzie też zawierał Twojego identyfikatora klienta OVHcloud lub będzie on nieprawidłowy.|
 |3 - Link|Ustawienie kursora myszki na linku pozwoli Ci, bez kliknięcia w link, podejrzeć jego zawartość (w dolnej części przeglądarki internetowej). W tym przypadku widzisz link wskazujący na https://www.ovh.com. |Kiedy najedziesz na link kursorem, zobaczysz, że nie ma on nic wspólnego z OVHcloud. Nie klikaj w link.|
 

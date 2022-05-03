@@ -1,5 +1,5 @@
 ---
-title: Présentation de l'OVHcloud Load Balancer
+title: Présentation de le Load Balancer OVHcloud
 slug: iplb-presentation
 excerpt: Découvrez la nouvelle offre OVHcloud Load Balancer
 section: Premiers pas
@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} est un répartiteur de charge (load balancer) qui allie souplesse de configuration et fiabilité. Vous n'avez qu'à configurer vos produits avec l'OVHcloud Load Balancer et nous nous occupons du reste !
+La nouvelle offre [OVHcloud Load Balancer](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} est un répartiteur de charge (load balancer) qui allie souplesse de configuration et fiabilité. Vous n'avez qu'à configurer vos produits avec le Load Balancer OVHcloud et nous nous occupons du reste !
 
 **Découvrez vite la nouvelle offre OVHcloud Load Balancer.**
 
@@ -56,11 +56,11 @@ Ce qui est inclus avec ce nouveau service :
 Avec ces trois parties élémentaires qui composent le Load Balancer, il est possible de configurer à peu près tous les types de load-balancing possibles.
 
 
-### Pourquoi utiliser l'OVHcloud Load Balancer ?
+### Pourquoi utiliser le Load Balancer OVHcloud ?
 
 #### Répartir la charge
 
-C'est la fonction élémentaire d'un répartiteur de charge, mais l'OVHcloud Load Balancer OVHcloud est capable de bien plus.
+C'est la fonction élémentaire d'un répartiteur de charge, mais le Load Balancer OVHcloud OVHcloud est capable de bien plus.
 
 ![Distribute load](images/distribute_load.png){.thumbnail}
 

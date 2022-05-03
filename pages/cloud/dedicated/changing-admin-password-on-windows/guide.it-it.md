@@ -5,7 +5,7 @@ excerpt: 'Come impostare una nuova password amministratore su un server Windows'
 section: 'Diagnostica e modalità Rescue'
 ---
 
-**Ultimo aggiornamento: 16 dicembre 2020**
+**Ultimo aggiornamento: 16/12/2020**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -67,7 +67,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-In questo esempio, "sda4" è la partizione di sistema, determinata dalla sua dimensione. In genere, esiste anche una seconda partizione mirror che, in questo caso, è intitolata "/dev/sdb**X**". Nella maggior parte dei casi, infatti, il server avrà diversi dischi con schemi di partizione identici. Per la reimpostazione della password, è importante solo il primo. 
+In questo esempio, "sda4" è la partizione di sistema, determinata dalla sua dimensione. In genere, esiste anche una seconda partizione mirror che, in questo caso, è intitolata “/dev/sdb**X**”. Nella maggior parte dei casi, infatti, il server avrà diversi dischi con schemi di partizione identici. Per la reimpostazione della password, è importante solo il primo. 
 
 Salva questa partizione:
 
@@ -255,7 +255,7 @@ L'interfaccia di connessione dovrebbe visualizzare un messaggio che indichi la s
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-La nuova password per l'utente admin deve essere inserita due volte. Tuttavia, il campo di conferma non è ancora visibile, il che significa che devi lasciare il primo campo vuoto, inserire la tua nuova password nel secondo campo, quindi utilizzare il tasto di tabulazione ("  ↹ ") della tastiera (virtuale) per passare al terzo campo ("Confermare la password").
+La nuova password per l'utente admin deve essere inserita due volte. Tuttavia, il campo di conferma non è ancora visibile, il che significa che devi lasciare il primo campo vuoto, inserire la tua nuova password nel secondo campo, quindi utilizzare il tasto di tabulazione (“  ↹ ”) della tastiera (virtuale) per passare al terzo campo (“Confermare la password").
 <br>Imposta di nuovo la password e clicca sulla freccia per salvarla.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

@@ -23,7 +23,7 @@ Kompatibilität: Debian & Ubuntu
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Linux:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben das Paket „nfs-client“ über folgenden Befehl installiert:
+- Sie haben das Paket “nfs-client” über folgenden Befehl installiert:
 
 
 ```sh
@@ -40,7 +40,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -70,7 +70,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 Voraussetzungen zum Mounten einer NFS-Freigabe unter CentOS:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben die Pakete „nfs-utils“ und „rpcbind“ mit folgendem Befehl installiert:
+- Sie haben die Pakete “nfs-utils” und “rpcbind” mit folgendem Befehl installiert:
 
 
 ```sh
@@ -93,7 +93,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -111,7 +111,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Gentoo:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben das Paket „nfs-utils“ mit folgendem Befehl installiert:
+- Sie haben das Paket “nfs-utils” mit folgendem Befehl installiert:
 
 
 ```sh
@@ -134,7 +134,7 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -146,7 +146,7 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 > 
-> Fügen Sie anschließend mit folgendem Befehl den Dienst „nfsmount" zum Start Ihres Servers hinzu:
+> Fügen Sie anschließend mit folgendem Befehl den Dienst “nfsmount" zum Start Ihres Servers hinzu:
 > 
 > ```
 > rc-update add nfsmount default
@@ -216,7 +216,7 @@ Füllen Sie das nun angezeigte Formular aus:
 |Argument|Beschreibung|
 |---|---|
 |Server|Name oder IP des NAS|
-|Folder|Pfad auf dem NFS-Server für die Freigabe (z. B. „/nas-000YY/meinepartition“)|
+|Folder|Pfad auf dem NFS-Server für die Freigabe (z. B. “/nas-000YY/meinepartition”)|
 |Datastore Name|Der von Ihnen gewählte Name für den Datastore|
 
 

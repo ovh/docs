@@ -45,7 +45,7 @@ Außerdem können Sie die aktuell von Ihrem Webhosting verwendete PHP-Version au
 
 |Methode|Beschreibung|
 |---|---|
-|Über das Kundencenter|Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die aktuelle Version unter „**Globale PHP Version**“. Erscheint ein blaues, rundes Symbol neben der Version, warten Sie einen Moment ab, bis die Versionsanzeige aktualisiert ist.|
+|Über das Kundencenter|Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Im Tab `Allgemeine Informationen`{.action} finden Sie die aktuelle Version unter „**Globale PHP Version**“. Erscheint ein blaues, rundes Symbol neben der Version, warten Sie einen Moment ab, bis die Versionsanzeige aktualisiert ist.|
 |Über ein Skript|Erstellen Sie ein **.php**-Skript, das ausschließlich den Code `<?php phpinfo(); ?>` enthält. Stellen Sie das Skript auf Ihrem Speicherplatz online und rufen Sie es auf, indem Sie auf die vollständige URL zugreifen.|
 
 ![php version](images/change-php-version-step1.png){.thumbnail}

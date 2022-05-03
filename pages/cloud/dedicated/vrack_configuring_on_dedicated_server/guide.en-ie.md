@@ -24,12 +24,16 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - A private IP address range of your choice
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
 
 ## Instructions
 
 ### Step 1: Adding your servers to the vRack
 
-Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open the `vRack`{.action} menu.
+Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on `Network`{.action} and open the `vRack`{.action} menu.
 
 Select your vRack from the list to display the list of eligible services. Click on each server you want to add to the vRack and then click the `Add`{.action} button.
 

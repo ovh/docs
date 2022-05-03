@@ -27,6 +27,10 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!primary]
+>
+> Wenn Ihr Server zur Produktlinie **Eco** gehört, folgen Sie stattdesen [dieser Anleitung](../getting-started-dedicated-server-eco/).
+
 ## In der praktischen Anwendung
 
 Wenn Ihr Dedicated Server während des Bestellprozesses zum ersten Mal konfiguriert wird, können Sie das zu installierende Betriebssystem auswählen.

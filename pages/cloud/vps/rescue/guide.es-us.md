@@ -46,7 +46,7 @@ Realizar comprobaciones en modo de rescate también le ayudará a determinar si 
 
 ### Activación del modo de rescate
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Cloud`{.action} de la bare metal y seleccione el servidor de la lista de navegación de la izquierda con `VPS`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
 #### Con una solución VPS actual
 

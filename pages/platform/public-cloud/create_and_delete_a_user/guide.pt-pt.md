@@ -18,6 +18,8 @@ O acesso ao Horizon e às API OpenStack efetua-se através de combinações iden
 
 **Este manual explica-lhe como gerir utilizadores OpenStack a partir da Área de Cliente OVHcloud.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Requisitos
 
 - Um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud

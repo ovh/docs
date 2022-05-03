@@ -62,7 +62,7 @@ Selecione o alojamento correspondente na lista e clique no separador `Multisite`
 
 #### 2.1 Identificar o endereço IP do seu alojamento OVHcloud
 
-Para encontrar o endereço IP, clique em `Alojamentos` na coluna da esquerda da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o alojamento em causa.
+Para encontrar o endereço IP, clique em `Alojamentos` na  [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o alojamento em causa.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

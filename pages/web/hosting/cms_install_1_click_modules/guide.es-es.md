@@ -28,7 +28,7 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 
 Los CMS (del inglés *content management system*) permiten diseñar un sitio web a través de una interfaz fácil de usar. Existen distintos CMS en función del proyecto que desee crear. Estos módulos le permiten tener la estructura de un sitio web lista para usar, que podrá personalizar a su gusto (diseño, contenido, etc.).
 
-OVHcloud ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía.  Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
+OVHcloud ofrece cuatro CMS con sus módulos en un clic, por lo que podrá elegir el que mejor se adapte a su proyecto. Si ya ha elegido su CMS, solo tiene que seguir los pasos que se indican en esta guía. Si, por el contrario, todavía no ha elegido un CMS, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es-es/web-hosting/uc-cms-comparison/).
 
 Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento, siempre que dicho CMS sea compatible con su [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 
@@ -37,7 +37,7 @@ Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OV
 
 ### Acceder a la gestión de los módulos en un clic
 
-En la columna izquierda del área de cliente de  OVHcloud, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que quiera instalar el módulo. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. A continuación, abra la pestaña `Módulos en un clic`{.action}, desde donde podrá consultar y gestionar los distintos módulos ya instalados, así como añadir un nuevo módulo.
 
 ![Acceso a la sección «Módulos en un clic»](images/access_to_the_1_click_modules_section.png){.thumbnail}
 

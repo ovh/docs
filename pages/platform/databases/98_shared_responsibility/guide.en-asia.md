@@ -3,7 +3,7 @@ title: Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
 slug: responsibility-model
 section: General information
-order: 98
+order: 070
 ---
 
 **Last updated September 28th, 2021**

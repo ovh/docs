@@ -9,7 +9,7 @@ section: Fortgeschrittene Nutzung
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 29.03.2021**
+**Letzte Aktualisierung am 28.03.2022**
 
 ## Ziel
 
@@ -26,6 +26,7 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (für die Methode über das [Kundencenter](#viacontrolpanel)).
 - Sie haben die [Credentials generiert, um die API zu verwenden](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (für den Abschnitt zum [Deployment über API](#viaapi)).
+- Die Größe Ihres Images muss kleiner sein als die auf dem Server installierte(n) Disk(s).
 
 > [!warning]
 >
@@ -48,7 +49,7 @@ Wenn Ihr Server über **uefi** Boot verfügt, müssen Sie in Ihrem Image unbedin
 **Deployment-Methoden**
 
 - [Über das Kundencenter](#viacontrolpanel): ermöglicht es Ihnen, Ihr Image schnell und einfach über Ihr OVHcloud Kundencenter bereitzustellen.
-- [Über die API](#viaapi): Sie können die OVHcloud APIs verwenden, um sie in Ihre eigenen Skripte zu integrieren, um die Inbetriebnahme zu automatisieren.
+- [Über die API](#viaapi): Sie können die OVHcloud API verwenden, um sie in Ihre eigenen Skripte zu integrieren, um die Inbetriebnahme zu automatisieren.
 
 ### Ihr Image über das OVHcloud Kundencenter deployen <a name="viacontrolpanel"></a>
 
@@ -65,7 +66,7 @@ Wählen Sie nun geöffneten Fenster `Installation auf Basis eines personalisiert
 
 Sie werden auf die Konfigurationsseite weitergeleitet. Vergewissern Sie sich, dass die URL Ihres Images im geeigneten Format vorliegt. Vervollständigen Sie die übrigen erforderlichen Felder auf dieser Seite. Wenn Sie bestätigt haben, dass die Informationen korrekt sind, klicken Sie auf `System installieren`{.action}.
 
-Weitere Informationen zu den Optionen finden Sie im Abschnitt ["Deployment-Optionen"](#options) dieser Anleitung. 
+Weitere Informationen zu den Optionen finden Sie im Abschnitt "[Deployment-Optionen](#options)" dieser Anleitung. 
 
 Weitere Informationen zur Aktivierung von "ConfigDrive" finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
 
@@ -138,7 +139,7 @@ Hier einige Beispiele für Meldungen:
 | Bad checkSumType, expected: sha1, sha256, md5. | Der Prüfsummentyp ist nicht korrekt. |
 | bad checkSumType for downloaded file, got: 1234 "While Expecting 5678" | Die Prüfsumme ist nicht korrekt. |
 | Can not move backup GPT data structures to the end of disk. | Das Festplattenformat ist nicht korrekt. |
-| Could not create configdrive on disk. | Die „ConfigDrive“ Partition kann nicht erstellt werden. |
+| Could not create configdrive on disk. | Die “ConfigDrive” Partition kann nicht erstellt werden. |
 
 
 ### Deployment löschen

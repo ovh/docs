@@ -21,7 +21,7 @@ NSX is a Software Defined Network (SDN) solution developed by VMware that is act
 
 ## Instructions
 
-VMWare NSX is only available from the vSphere web client.
+VMware NSX is only available from the vSphere web client.
 
 From the vSphere web client homepage, click on `Networking and Security`{.action} in the left-hand side of your screen.
 You can also click on `Networking and Security`{.action} in the main menu.

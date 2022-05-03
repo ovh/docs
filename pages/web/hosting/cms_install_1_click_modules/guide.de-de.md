@@ -35,7 +35,7 @@ Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul ang
 
 ### Zugang zur Verwaltung der 1-Klick-Module
 
-Gehen Sie in Ihrem OVHcloud Kundencenter im linken Menü in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf das jeweilige Webhosting. Klicken Sie dann auf den Tab `1 Klick Module`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus.
 
 Hier können Sie die bereits installierten 1-Klick-Module einsehen und verwalten oder neue Module installieren.
 

@@ -10,7 +10,7 @@ order: 7
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 25/02/2022**
+**Ultimo aggiornamento: 04/04/2022**
 
 ## Obiettivo
 
@@ -32,9 +32,7 @@ Questa pagina ti permette di visualizzare i contatti associati al tuo progetto.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-### Configura i contatti del progetto
-
-Clicca sui pulsanti `Modifica`{.action} per modificare i contatti correnti. Questa operazione aprirà la sezione **Gestione dei contatti** del tuo Spazio Cliente. Per completare l'operazione, segui la procedura descritta nella guida [Gestire i contatti dei servizi](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
+Clicca sui pulsanti `Modifica`{.action} per modificare i contatti correnti. Per completare l'operazione, segui la procedura descritta nella guida [Modificare i contatti di un progetto](../change_project_contacts/).
 
 ### Aggiungi contatti e diritti
 

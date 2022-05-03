@@ -24,13 +24,13 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 #### Gamme VPS actuelle
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur `...`{.action} à droite du nom de votre VPS dans la zone « Votre VPS ».
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}. Dans cette section, cliquez sur `...`{.action} à droite du nom de votre VPS dans la zone « Votre VPS ».
 
 ![Ouvrir KVM](images/kvm-new1.png){.thumbnail}
 
 #### Ancienne gamme VPS
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur le lien de raccourci intitulé `KVM`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}. Dans cette section, cliquez sur le lien de raccourci intitulé `KVM`{.action}.
 
 ![Cliquez sur le bouton KVM](images/kvm-new2.png){.thumbnail}
 

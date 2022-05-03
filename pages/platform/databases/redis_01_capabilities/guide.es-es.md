@@ -3,7 +3,7 @@ title: Redis - Capabilities and Limitations
 slug: redis/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
 section: Redis - Guides
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/redis/capabilities/'
 ---
@@ -13,7 +13,8 @@ routes:
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Redis offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -36,7 +37,7 @@ The Public Cloud Databases offer supports the following Redis versions:
 
 - Redis 6.2
 
-You can folllow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
+You can follow Redis Release Cycle on their official page: <https://redis.io/topics/releases>
 
 ### Redis clients
 
@@ -50,13 +51,13 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Additional nodes | Network                        |
-| ------------ | -------------------------- | ---------------- | ------------------------------ |
-| *Essential*  | 1                          | No               | Public only                    |
-| *Business*   | 2                          | No               | Public (Private vRack planned) |
-| *Enterprise* | 3                          | No               | Public (Private vRack planned) |
+| Plan         | Number of nodes by default | Additional nodes | Network                |
+| ------------ | -------------------------- | ---------------- | ---------------------- |
+| *Essential*  | 1                          | No               | Public only            |
+| *Business*   | 2                          | No               | Public & Private vRack |
+| *Enterprise* | 3                          | No               | Public & Private vRack |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
 
@@ -64,7 +65,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default.
-- **Enterprise**: the cluster is delivered with 3 nodes by default.
+- **Enterprise**: The cluster is delivered with 3 nodes by default.
 
 #### License type
 
@@ -136,12 +137,37 @@ For each user you can specify:
 - Username
 - Keys (such as "cached:*")
 - Categories (such as "@set")
-- Commands (such as "-@all +get")
+- Commands (such as "+ping +info +echo +get +set")
 - Channels (such as "*")
 
-Update of user ACLs is allowed only via API.
+You can follow the official Redis documentation about Commands: <https://redis.io/commands/>.
 
-You can follow the official Redis documentation about users and ACL: <https://redis.io/topics/acl>.
+Here is the list of unsupported commands:
+
+- bgrewriteaof
+- cluster
+- command
+- debug
+- failover
+- migrate
+- role
+- slaveof
+- script
+- eval
+- evalsha
+- acl
+- bgsave
+- config
+- replicaof
+- lastsave
+- save
+- shutdown
+- monitor
+
+> [!primary]
+>
+> Update of user ACLs is allowed only via API. Follow this [guide](https://docs.ovh.com/es/publiccloud/databases/redis/acls/) to learn more.
+>
 
 ## We want your feedback!
 

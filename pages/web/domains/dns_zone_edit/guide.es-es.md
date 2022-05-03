@@ -1,6 +1,6 @@
 ---
-title: 'Editar una zona DNS de OVH'
-excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
+title: 'Editar una zona DNS de OVHcloud'
+excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
 slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 ---
@@ -56,7 +56,7 @@ La zona DNS de un dominio es un archivo de configuración compuesto por **regist
 
 ### Acceder a la gestión de una zona DNS de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}.Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 Se mostrará una tabla con un registro DNS asociado a su dominio en OVHcloud para cada línea. Puede filtrar el contenido por tipo de registro o por dominio.
 
@@ -177,7 +177,7 @@ También puede modificar el TTL de un registro DNS. Sin embargo, esta operación
 
 ## Más información
 
-[Cambiar los servidores DNS de un dominio en OVH](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
+[Cambiar los servidores DNS de un dominio en OVHcloud](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
 [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}
 

@@ -9,7 +9,7 @@ excerpt: 'Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15. Januar 2021**
+**Letzte Aktualisierung am 15.01.2021**
 
 ## Ziel
 
@@ -184,7 +184,7 @@ Sie finden die Anwendungsmöglichkeiten in der Dokumentation zu diesem Tool auf 
 
 GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als iptables bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
 
-```shr
+```sh
 iptables -L
 ```
 
@@ -213,4 +213,4 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 
 [Network Firewall](../../dedicated/firewall-network/)
 
-Kommen Sie zu unserer User Community auf <https://community.ovh.com/>dem
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

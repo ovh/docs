@@ -1,12 +1,12 @@
 ---
 title: 'Managing users and projects'
-excerpt: ''
+excerpt: 'Find out how to manage users and projects in your OVHcloud Managed private registry (Harbor).'
 slug: managing-users-and-projects
 section: 'Getting started'
-order: 3
+order: 04
 ---
 
-**Last updated 20<sup>th</sup> January, 2020.**
+**Last updated 13th April, 2022.**
 
 <style>
  pre {
@@ -33,7 +33,7 @@ order: 3
 
 ## Objective
 
-OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to manage users and projects on your OVHcloud Managed Private Registry service.
+OVHcloud Managed Private Registry service provides you a managed Harbor, an authenticated Docker registry where you can privately store your Docker images. This guide will explain how to manage users and projects on your OVHcloud Managed Private Registry service.
 
 
 ## Requirements
@@ -59,51 +59,53 @@ Let's create a private project:
 
 1. Create a new project on Harbor UI
 
-    ![Managing users and projects](images/managing-users-and-projects-005.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-005.png){.thumbnail}
 
 1. Call it *private* and leave the public checkbox unchecked
 
-    ![Managing users and projects](images/managing-users-and-projects-006.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-006.png){.thumbnail}
 
-After the project is created, you can browse repositories, members, logs, replication and configuration using the navigation tab.
+> [!primary]
+>
+> Keep `-1` for the storage quota if you don't want limitations. 
 
-![Managing users and projects](images/managing-users-and-projects-007.jpg){.thumbnail}
+After the project is created, you can browse repositories, helm charts, members, labels, scanner, policy, robot accounts, webhooks, logs and configuration using the navigation tab.
 
+![Managing users and projects](images/managing-users-and-projects-007.png){.thumbnail}
 
 
 ### Creating a new user and giving it rights on the *private* project
 
-
 Now you're going to create a new user and give him developer rights over the *private* project.
 
-1. Go to the *Users* section of Harbor UI and click on *New user*
+1. Go to the `Users`{.action} section of Harbor UI and click on `New user`{.action}
 
-    ![Managing users and projects](images/managing-users-and-projects-008.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-008.png){.thumbnail}
 
 
 1. Add a new *private-user* user. For the e-mail domain, use the domain found in the URL of your Harbor UI
 
-    ![Managing users and projects](images/managing-users-and-projects-009.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-009.png){.thumbnail}
 
 
 1. The new user is now visible in your Harbor UI 
 
-    ![Managing users and projects](images/managing-users-and-projects-010.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-010.png){.thumbnail}
 
 
-1. Go back to the *Project* section, choose the *private* project and in the *Members* tab, click on  *+User*
+1. Go back to the `Projects`{.action} section, choose the `private`{.action} project and in the `Members`{.action} tab, click on  `+User`{.action}
 
-    ![Managing users and projects](images/managing-users-and-projects-011.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-011.png){.thumbnail}
 
 
 1. Add the *private-user* as member to the project, and give him a *Developer* role    
 
-    ![Managing users and projects](images/managing-users-and-projects-012.jpg){.thumbnail}
+    ![Managing users and projects](images/managing-users-and-projects-012.png){.thumbnail}
 
 
 The *private-user* is now a member of the *private* project.
 
-![Managing users and projects](images/managing-users-and-projects-013.jpg){.thumbnail}
+![Managing users and projects](images/managing-users-and-projects-013.png){.thumbnail}
 
 
 ### Go further

@@ -22,7 +22,7 @@ Nel nostro esempio, il client SFTP utilizzato è WinSCP. Ne esistono molti altri
 
 
 ## Identificativo OpenStack
-Per generare il tuo login e password OpenStack, consulta questa [guida](https://www.ovh.it/g1773.crea_un_utente_per_accedere_a_horizon).
+Per generare il tuo login e password OpenStack, consulta questa [guida](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/).
 
 
 ## TenantName

@@ -38,7 +38,7 @@ If you would like to install a CMS that isn’t offered as an OVHcloud 1-click m
 
 ### Step 2: access the 1-click module manager
 
-In the services bar on the left-hand side of your OVHcloud Control Panel, go to the `Web hosting`{.action} section, then click on the web hosting plan that you have just ordered. Then click the `1-click modules`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click on `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Then click the `1-click modules`{.action} tab.
 
 Here, you can look at the 1-click modules you have already installed, manage them and install new ones.
 
