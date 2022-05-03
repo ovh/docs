@@ -1,17 +1,17 @@
 ---
-title: Utilizar High Performance con Veeam (EN)
+title: Utilizar S3 Object Storage con Veeam (EN)
 slug: s3/veeam
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/veeam'
 section: Object Storage S3 High Performance
 order: 140
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/veeam/'
 ---
 
 **Last updated on 3rd January 2022**
 
 ## Objective
 
-This guide is intended to show you how to configure Veeam to use your Object Storage S3 High Performance storage space
+This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
 
 > [!warning]
 >
@@ -26,7 +26,7 @@ This guide is intended to show you how to configure Veeam to use your Object Sto
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 High Performance](https://docs.ovh.com/us/es/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/us/es/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
@@ -81,7 +81,6 @@ At the **Bucket** step of the wizard, specify the bucket and folder that will be
 To select a folder, click `Browse`{.action} and either select an existing folder or create a new one by clicking `New Folder`{.action}.
 
 To define a soft limit that can be exceeded temporarily for your object storage consumption, select the **Limit object storage consumption to** check box and provide the value in TB or PB.
-
 
 ![Step 4. Specify Object Storage Settings](images/highperf-veeam-20220104180054702.png){.thumbnail}
 

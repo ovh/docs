@@ -1,5 +1,5 @@
 ---
-title: Optimisez l'envoi de vos fichiers vers High Performance
+title: Optimisez l'envoi de vos fichiers vers S3 Object Storage
 slug: s3/optimisez-l-envoi-de-vos-fichiers
 excerpt:
 section: Object Storage S3 High Performance

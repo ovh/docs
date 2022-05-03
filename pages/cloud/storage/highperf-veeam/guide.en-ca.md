@@ -1,5 +1,5 @@
 ---
-title: Use High Performance with Veeam
+title: Use S3 Object Storage with Veeam
 slug: s3/veeam
 section: Object Storage S3 High Performance
 order: 140
@@ -9,7 +9,7 @@ order: 140
 
 ## Objective
 
-This guide is intended to show you how to configure Veeam to use your Object Storage S3 High Performance storage space
+This guide is intended to show you how to configure Veeam to use your S3 Object Storage.
 
 > [!warning]
 >
@@ -24,7 +24,7 @@ This guide is intended to show you how to configure Veeam to use your Object Sto
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key).
 
-See our [Getting started with S3 High Performance](https://docs.ovh.com/ca/en/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/ca/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
