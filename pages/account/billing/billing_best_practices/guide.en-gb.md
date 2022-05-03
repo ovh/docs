@@ -46,7 +46,7 @@ Ensure your email address is always **up to date, accessible and secured**. Emai
 
 > [!warning]
 >
-> Add a **backup email** to your personal informations to prevent any loss of access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> Add a **backup email** to your personal information to prevent any loss of access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >
 
 Emails sent by OVHcloud will be also visible in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br>
@@ -63,10 +63,10 @@ Click on your name at the top right of your screen, then on `Service emails`{.ac
 > Check regularly that your payment method is **valid**.
 >
 
-For more information, please follow the instructions of these guides :
+For more information, please follow the instructions of these guides:
 
-* [Manage renewal of my services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/);
-* [Manage my payment methods](https://docs.ovh.com/gb/en/billing/manage-payment-methods/).
+- [Managing renewal for OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
+- [Managing payment methods](https://docs.ovh.com/gb/en/billing/manage-payment-methods/)
 
 If you decide not to activate the autorenewal on your services, you will receive notifications prompting you to make a **manual payment** to either renew your service in advance or pay your pending bill.
 
@@ -87,9 +87,9 @@ First click on your name at the top right of your screen, then on `Service manag
 
 - `Configure renewal`{.action}: On the following screen, you'll be able to switch the `Renewal type` of your service to `Manual`. Then click on `Next`{.action} and `Confirm`{.action}. Before the expiration date of your service, you will receive several notifications by email. If you don't renew your service, it will be **permanently** deleted.
 - `Cancel`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
-- `Delete immediately`{.action}: on the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
+- `Delete immediately`{.action}: On the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
 
-To get more information about termination of your services, consult the [How to cancel your OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-cancel-your-services/) guide.
+To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-cancel-your-services/) guide.
 
 ### Account closure
 
