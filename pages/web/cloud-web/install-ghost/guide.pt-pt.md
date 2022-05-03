@@ -98,7 +98,7 @@ Clique no separador `Base de dados`{.action} (se não o conseguir ver, clique no
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Na nova janela, selecione “MySQL” e escolha uma versão. Para este tutorial, selecionámos a versão 5.6. A seguir, selecione a opção “Armazenado na sua instância Cloud Web” e, por fim, `Seguinte`{.action}.
+Na nova janela, apenas "MySQL", em versão "5.6", está disponível. A seguir, selecione a opção “Armazenado na sua instância Cloud Web” e, por fim, `Seguinte`{.action}.
 
 Personalize um nome de utilizador e defina uma palavra-passe. Depois clique em `Seguinte`{.action}. Confirme a criação da base de dados clicando em `Validar`{.action}. Aguarde alguns minutos até a operação ser finalizada.
 
@@ -124,8 +124,6 @@ Na nova janela que aparecerá, preencha as informações necessárias em funçã
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### 5 - Ligar-se ao alojamento Cloud Web por SSH
 

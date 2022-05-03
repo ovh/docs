@@ -54,7 +54,7 @@ To add or modify a runtime environment, go to the `Runtime environment`{.action}
 - **if you want to add a runtime environment**, click `Actions`{.action} above the table, then `Add a runtime environment`{.action}
 - **if you want to modify a runtime environment**, click on `...`{.action} to the right of the environment concerned, then `Modify`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Enter the information requested in the popup window. Follow the remaining steps depending on the runtime environment you have selected:
 
@@ -72,7 +72,7 @@ Enter the information requested in the popup window. Follow the remaining steps 
 
 Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multisites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2).
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

@@ -10,9 +10,9 @@ order: 1
 
 [Ghost](https://ghost.org/){.external} es un gestor de contenidos open source destinado a blogueros o periodistas que simplifica el proceso de publicación en internet. El programa está escrito en JavaScript y utiliza [Node.js](https://nodejs.org/){.external}, un entorno de ejecución que permite crear sitios web y API en JavaScript del lado del servidor.
 
-En el [hosting Cloud Web de OVH](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}, es posible elegir Node.js como motor de ejecución de sitios web y, por lo tanto, permite instalar y alojar Ghost o cualquier otra aplicación diseñada para Node.js.
+En el [hosting Cloud Web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}, es posible elegir Node.js como motor de ejecución de sitios web y, por lo tanto, permite instalar y alojar Ghost o cualquier otra aplicación diseñada para Node.js.
 
-Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web de OVH y cómo publicarlo para que se pueda acceder a él a través de un dominio.
+Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web de OVHcloud y cómo publicarlo para que se pueda acceder a él a través de un dominio.
 
 ## Requisitos
 
@@ -24,16 +24,16 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 
 ### Hardware y software necesarios
 
-- Tener contratado un plan de [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external} de OVH.
+- Tener contratado un plan de [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external} de OVHcloud.
 - Haber activado Node.js como motor de ejecución.
 - Haber añadido el dominio correspondiente como multisitio y haber establecido Node.js como motor de ejecución.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
 ### 1. Activar el motor de ejecución Node.js
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Se mostrará una tabla con los motores de ejecución que haya añadido hasta ese momento. Asegúrese de que el motor de ejecución Node.js esté activado. Si lo está, vaya al apartado [2. Asociar Node.js a un multisitio](./#2-asociar-nodejs-a-un-multisitio).
 
@@ -97,7 +97,7 @@ Abra la pestaña `Bases de datos`{.action} (si no puede verla, haga clic en el b
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-En la nueva ventana, seleccione «**MySQL**» y elija la versión (para este tutorial, hemos elegido la versión **5.6**). A continuación, seleccione «**Almacenada en la instancia Cloud Web**» y haga clic en `Siguiente`{.action}.
+En la nueva ventana, solo está disponible la versión 5.6 del MySQL.. A continuación, seleccione «**Almacenada en la instancia Cloud Web**» y haga clic en `Siguiente`{.action}.
 
 Indique un nombre de usuario y una contraseña. Haga clic en `Siguiente`{.action} y confirme haciendo clic en `Aceptar`{.action}. La base de datos tardará unos minutos en crearse.
 
@@ -124,8 +124,6 @@ En la nueva ventana, introduzca la información solicitada en función de su cas
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### 5. Conectarse al hosting Cloud Web por SSH
 
@@ -248,7 +246,7 @@ Ya hemos terminado de instalar y configurar Ghost. Solo queda reiniciar el demon
 
 ### 7. Reiniciar el demonio Node.js
 
-Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
+Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
 
 A continuación, la aplicación estará accesible desde el dominio indicado en la configuración del multisitio.
 

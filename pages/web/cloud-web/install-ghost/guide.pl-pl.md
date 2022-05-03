@@ -12,7 +12,7 @@ order: 1
 
 [Hosting Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
-W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVH oraz jak udostępnić go pod Twoją domeną.
+W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVHcloud oraz jak udostępnić go pod Twoją domeną.
 
 ## Wymagania początkowe
 
@@ -24,7 +24,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVH
+- Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
@@ -98,7 +98,7 @@ Przejdź do zakładki `Bazy danych`{.action}. Jeśli zakładka nie pojawia się 
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-W oknie, które się wyświetla wybierz „MySQL”, a następnie wybierz wersję. Na potrzeby tego tutoriala wybraliśmy wersję „5.6”. Wybierz następnie „Przechowywana w Twojej instancji Cloud Web”, po czym kliknij `Dalej`{.action}.
+W oknie, które się wyświetli, dostępny jest tylko "MySQL" w wersji "5.6".. Wybierz następnie „Przechowywana w Twojej instancji Cloud Web”, po czym kliknij `Dalej`{.action}.
 
 Wybierz następnie nazwę użytkownika i określ dla niej hasło. Teraz kliknij przycisk `Dalej`{.action}. Potwierdź utworzenie bazy danych, klikając `Zatwierdź`{.action}. Odczekaj kilka minut, aż operacja się zakończy.
 
@@ -125,8 +125,6 @@ W oknie, które się wyświetla, wprowadź wymagane informacje, po czym kliknij 
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Etap 5: logowanie do Cloud Web za pomocą SSH
 

@@ -54,7 +54,7 @@ Para añadir o modificar un motor de ejecución, abra la pestaña `«Motores de 
 - **Si quiere añadir un motor de ejecución**, haga clic en `«Acciones»`{.action} (encima de la tabla) y, seguidamente, en `«Añadir un motor de ejecución`{.action}.
 - **Si quiere modificar un motor de ejecución**, haga clic en el botón `«···»`{.action} a la derecha del motor correspondiente y, seguidamente, haga clic en `«Editar»`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Introduzca la información solicitada en la ventana que aparece. Prosiga en función del motor de ejecución seleccionado:
 
@@ -72,7 +72,7 @@ Introduzca la información solicitada en la ventana que aparece. Prosiga en func
 
 Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

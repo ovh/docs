@@ -8,15 +8,22 @@ order: 1
 
 **Stand 03.09.2019**
 
-## Einleitung
+## Ziel
 
 [Ghost](https://ghost.org/){.external}  ist eine Open-Source-Blog-Engine, die entwickelt wurde, um den Prozess der Online-Veröffentlichung für Blogger und Journalisten zu vereinfachen. Das Programm ist in JavaScript geschrieben und verwendet [Node.js](https://nodejs.org/){.external},  eine Software-Plattform, mit der Sie Ihre Websites und APIs serverseitig in JavaScript erstellen können.
 
-Mit [OVH Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external} können Sie Node.js als Runtime Engine für Ihre Websites verwenden und somit auch Ghost oder jede andere für Node.js entwickelte Anwendung installieren.
+Mit [OVHcloud Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external} können Sie Node.js als Runtime Engine für Ihre Websites verwenden und somit auch Ghost oder jede andere für Node.js entwickelte Anwendung installieren.
 
 In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting ein und veröffentlichen diesen über Ihre Domain.
 
+**Hier erfahren Sie, wie Sie mit der Ghost-Engine einen Blog auf Cloud Web einrichten.**
+
 ## Voraussetzungen
+
+- ein [OVHcloud Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
+- Sie haben Node.js als Runtime Engine aktiviert.
+- Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ### Erforderliche Kenntnisse:
 
@@ -24,18 +31,11 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 - Sie wissen, wie Sie sich via SSH verbinden.
 - Sie können eine Datei in der Kommandozeile zum Beispiel via Vim, Emacs oder Nano bearbeiten.
 
-### Sie benötigen:
-
-- ein [OVH Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/){.external}.
-- Sie haben Node.js als Runtime Engine aktiviert.
-- Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
-
 ## Beschreibung
 
 ### Schritt 1: Node.js als Runtime Engine aktivieren
 
-Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Es wird eine Tabelle angezeigt, die alle aktuell hinzugefügten Runtime Engines enthält. Vergewissern Sie sich, dass Node.js als Runtime Engine aktiviert ist. Ist das der Fall, gehen Sie zu Schritt 2 „[Node.js mit einer Multisite verbinden](./#schritt-2-nodejs-mit-einer-multisite-verbinden)“ über.
 
@@ -100,7 +100,7 @@ Gehen Sie jetzt auf den Tab `Datenbanken`{.action}. Wird dieser nicht angezeigt,
 
 ![ghost cloud web](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Wählen Sie im angezeigten Fenster „MySQL“ und anschließend die gewünschte Version aus. Im vorliegenden Tutorial haben wir die Version „5.6“ ausgewählt. Wählen Sie nun „In Ihrer Cloud Web Instanz gespeichert“ aus und klicken Sie auf `Weiter`{.action}.
+Im angezeigten Fenster ist nur "MySQL"in der Version "5.6"verfügbar. Wählen Sie nun „In Ihrer Cloud Web Instanz gespeichert“ aus und klicken Sie auf `Weiter`{.action}.
 
 Geben Sie anschließend einen angepassten Benutzernamen ein und legen Sie ein Passwort fest. Wenn Sie fertig sind, klicken Sie auf `Weiter`{.action}. Bestätigen Sie anschließend die Erstellung der Datenbank, indem Sie auf `Bestätigen`{.action} klicken. Warten Sie einige Minuten ab, bis der Vorgang abgeschlossen ist.
 
@@ -127,8 +127,6 @@ Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Information
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghost cloud web](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Schritt 5: Via SSH auf Ihrem Cloud Web Hosting einloggen
 

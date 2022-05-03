@@ -6,13 +6,13 @@ section: Tutorials
 order: 1
 ---
 
-## Introduction
+## Objective
 
 [Ghost](https://ghost.org/){.external} is an open-source blogging platform. Aimed at bloggers and journalists, it is specially designed to simplify the process of publishing content online. This platform is coded in JavaScript, and uses [Node.js](https://nodejs.org/){.external}, a server-side JavaScript engine for websites and APIs.
 
-With an [OVH Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}, you can use Node.js as a runtime environment for websites, then install and host Ghost, or any other application designed for use with Node.js.
+With an [OVHcloud Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}, you can use Node.js as a runtime environment for websites, then install and host Ghost, or any other application designed for use with Node.js.
 
-In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform, and publish it online via your domain name.
+In this tutorial, we will set up a blog with Ghost on an OVHcloud Cloud Web platform, and publish it online via your domain name.
 
 ## Requirements
 
@@ -27,13 +27,13 @@ In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform,
 - a [Cloud Web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/){.external}
 - Node.js enabled as a runtime environment
 - the domain name added as a multisite, and Node.js defined as its runtime environment
-- access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
 ### Step 1: Enable Node.js as a runtime environment.
 
-To access your Cloud Web hosting plan’s runtime environments, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click Web hosting in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software applications`{.action} tab.
+To access your Cloud Web hosting plan’s runtime environments, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click Web hosting in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software applications`{.action} tab.
 
 The table that appears will list the runtime environments currently added. Check that Node.js has been enabled as the runtime environment. If it has been enabled, proceed to step 2: [Link Node.js to a multisite](./#step-2-link-nodejs-to-a-multisite).
 
@@ -98,7 +98,7 @@ Next, go to the 'Databases' tab. If this does not appear on the list, click on t
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-In the window that opens, select ‘MySQL’, then select a version. For this tutorial, we have selected version 5.6. Next, select “Stored in your Cloud Web instance”, and click `Next`{.action}.
+In the window that opens, Only `MySQL`, in version `5.6` is available.. Next, select “Stored in your Cloud Web instance”, and click `Next`{.action}.
 
 Then enter a custom username and password for the user. Once you have done so, click `Next`{.action}, then click `Confirm`{.action}. Wait a few moments for the process to finish.
 
@@ -108,7 +108,7 @@ Then enter a custom username and password for the user. Once you have done so, c
 
 This step is optional if you do not want to create environment variables. However, we strongly recommend doing so. 
 
-For this tutorial, we will create environment variables and enter the information required for connecting to our MySQL database. This means that if the password changes, for example, we can simply modify the variable in the OVH Control Panel, rather than having to modify the source code.
+For this tutorial, we will create environment variables and enter the information required for connecting to our MySQL database. This means that if the password changes, for example, we can simply modify the variable in the OVHcloud Control Panel, rather than having to modify the source code.
 
 To do this, go to the `Environment variables`{.action} tab. The table will list the variables that have already been created. To add a new one, click on the `Actions`{.action} button below the table, then `Add an environment variable`{.action}.
 
@@ -125,8 +125,6 @@ Enter the information requested in the pop-up window, adapting the information s
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Step 5: Access your Cloud Web hosting plan via SSH.
 
@@ -249,7 +247,7 @@ You have now finished installing and configuring Ghost. You now just need to res
 
 ### Step 7: Restart the Node.js daemon.
 
-To restart the Node.js daemon, go back to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Multisite`{.action} tab, click on the cogwheel button to the right of the domain name concerned, then click `Restart`{.action}.
+To restart the Node.js daemon, go back to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Multisite`{.action} tab, click on the cogwheel button to the right of the domain name concerned, then click `Restart`{.action}.
 
 Once you have done this, your application will be accessible via the domain name you have selected in your multisite’s configuration.
 

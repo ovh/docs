@@ -54,7 +54,7 @@ Per aggiungere o modificare un motore di esecuzione, seleziona l’hosting Cloud
 - **per aggiungere un motore**, clicca su `Azioni`{.action} in alto a sinistra della tabella e seleziona l’opzione `Aggiungi un motore di esecuzione`{.action}.
 - **per modificare un motore**, clicca sul pulsante `...`{.action} in corrispondenza del motore in questione e seleziona `Modifica`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettura di questa guida in base al motore scelto:
 
@@ -72,7 +72,7 @@ Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettu
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 
