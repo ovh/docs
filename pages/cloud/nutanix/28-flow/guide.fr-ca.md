@@ -404,7 +404,7 @@ La règle créée se trouve dans la liste des règles.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+[Hyper-convergence Nutanix](https://docs.ovh.com/ca/fr/nutanix/nutanix-hci/)
 
 [Présentation de Nutanix FLOW](https://portal.nutanix.com/page/documents/solutions/details?targetId=TN-2094-Flow:TN-2094-Flow)
 
