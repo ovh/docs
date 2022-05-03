@@ -6,7 +6,7 @@ section: 'Diagnostic et dépannage'
 order: 02
 ---
 
-**Dernière mise à jour le 29/04/2022**
+**Dernière mise à jour le 03/05/2022**
  
 ## Objectif
 
@@ -48,12 +48,12 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 **Question n°1: L'écran de votre téléphone s'allume-t-il ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
-- **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/).
+- **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
 
 **Question n°2: La date et l'heure affichées sur l'écran du téléphone sont-elles exactes ?**
 
 - **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin de rétablir l'enregistrement de la ligne SIP sur le téléphone.
-- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/depannage-telephone-plug-and-phone/#connectivity).
+- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
 
 ### Étape 2 - Procéder au dépannage du téléphone depuis l'espace client OVHcloud
 
@@ -143,7 +143,7 @@ Dès lors, deux possibilités :
 
 ### Étape 5 - Contacter l'assistance OVHcloud
 
-Si votre téléphone OVHcloud reste inopérant une fois les manipulations décrites ci-dessuus effectuées, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud.<br>
+Si votre téléphone OVHcloud reste inopérant malgré les manipulations décrites ci-dessus effectuées, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud.<br>
 Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket l'ensemble des tests que vous avez déjà effectués.
  
 ## Aller plus loin <a name="gofurther"></a>
