@@ -17,7 +17,7 @@ This guide aims to familiarise you with the management of your containers / obje
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- an [OpenStack user](https://docs.ovh.com/es/public-cloud/creation-and-deletion-of-openstack-user/)
+- an [OpenStack user](https://docs.ovh.com/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
 
 ## Instructions
 
