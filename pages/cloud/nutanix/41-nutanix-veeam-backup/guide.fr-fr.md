@@ -28,15 +28,12 @@ Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
-- Avoir un projet Public Cloud avec un bucket de stockage de type High Performance Object Storage ainsi qu'un utilisateur ayant les droits en lecture et écriture sur ce bucket. Vous trouverez plus d'informations sur la création d'un projet Public Cloud et sur l’utilisation du service High Performance Object Storage sur les pages suivantes :
-    - [Création d'un projet Public Cloud](https://docs.ovh.com/fr/public-cloud/creer-un-projet-public-cloud/)
-    - [Débuter avec S3 High Performance](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/).
 - D'avoir installé VEEAM Backup et Replication sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
 
 
 ## En pratique
 
-Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde sur un pro 
+Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante sur une des offres d'OVHcloud en matière de stockage. 
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -46,7 +43,7 @@ Au travers de **Prism central** connectez-vous sur Prism Element en cliquant dan
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
-ALlez dans les paramètres en cliquant sur l'icone represantant un `engrenage`{.action} en haut à droite.
+Allez dans les paramètres en cliquant sur l'icone represantant un `engrenage`{.action} en haut à droite.
 
 ![Create User VEEAM PE 02](images/01-create-pe-veeamuser02.png){.thumbnail}
 
@@ -59,6 +56,9 @@ Cliquez sur `Local User Management`{.action}.
 ![Create User VEEAM PE 04](images/01-create-pe-veeamuser04.png){.thumbnail}
 
 Cliquez sur le bouton `New User`{.action}.
+
+![Create User VEEAM PE 05](images/01-create-pe-veeamuser05.png){.thumbnail}
+
 
 Saisissez ces informations :
 
@@ -73,20 +73,19 @@ Saisissez ces informations :
 
 Cochez la case `Cluster Admin`{.action} et cliquez sur `Save`{.action}
 
-![Create User VEEAM PE 05](images/01-create-pe-veeamuser05.png){.thumbnail}
+![Create User VEEAM PE 06](images/01-create-pe-veeamuser06.png){.thumbnail}
 
 Le commpte apparait dans la liste des utilisateurs de **Prism Element**.
 
-![Create User VEEAM PE 06](images/01-create-pe-veeamuser06.png){.thumbnail}
+![Create User VEEAM PE 07](images/01-create-pe-veeamuser07.png){.thumbnail}
 
 ### Télécharger et installer l'extension pour Nutanix dans VEEAM**
 
-Connectez vous sur la machine virtuelle où se trouve VEEAM Backup.
+Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
 A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Si vous n'avez pas de compte utilisateurs sur le site de Veeam il faudra le créer ce compte est gratuit.
 
-
-Lancez l'installation
+Lancez l'installation de l'extension.
 
 > [!warning]
 > Avant de lancer d'exécuter l'installation bien s'assurer que la console VEEAM BACKUP ne soit pas lancée.
@@ -118,7 +117,7 @@ Cliquez sur `Finish`{.action}.
 
 ### Ajouter le cluster Nutanix dans la configuration de Veeam
 
-La configuration du cluster Nutanix dans Veeam ajoute une machine virtuelle dans le cluster Nutanix qui sert d'interface entre le logiciel de sauvegarde Veeam Backup et 
+La configuration du cluster Nutanix dans Veeam ajoute une machine virtuelle à l'intérieur du  cluster Nutanix qui sert d'interface entre le logiciel de sauvegarde Veeam Backup et le cluster.
 
 Lancez la console **Veeam Backup** et cliquez sur `Connect`{.action}.
 
@@ -225,6 +224,105 @@ Patientez quelques minutes.
 L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cause du DNS qui n'arrive pas à résoudre le nom du serveur Veeam. Cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 23](images/03-addclusternutanix-to-veeam23.png){.thumbnail}
+
+#### Modification du fichier host de la machine virtuelle d'interface.
+
+> [!primary]
+> 
+> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des ordinateurs
+> Notamment celui qui sert pour le logiciel Veeam Backup. 
+
+Au travers de Prism Central connectez vous à la machine virtuelle NUTANIX-PROXY. 
+
+Cliquez en haut à gauche sur `icône`{.action} du menu principal et choisissez `VMs`{.action}.
+
+![Configure Nutanix PROXY HOST 01](images/03-modify-etchostproxy01.png){.thumbnail}
+
+Cliquez sur la machine virtuelle NUTANIX-PROXY. 
+
+![Configure Nutanix PROXY HOST 02](images/03-modify-etchostproxy02.png){.thumbnail}
+
+cliquez sur `Launch console`{.action}.
+
+![Configure Nutanix PROXY HOST 03](images/03-modify-etchostproxy03.png){.thumbnail}
+
+Connectez vous avec le compte utilisateur créé précedemment et le mot de passe de ce compte.
+
+![Configure Nutanix PROXY HOST 04](images/03-modify-etchostproxy04.png){.thumbnail}
+
+A partir de la console modifier le ficher **/etc/hosts**
+
+```bash
+proxy_user@NUTANIX-PROXY~$sudo nano /etc/hosts
+[sudo] password for proxy_user:
+```
+Ajoutez  cette information qui est l'adresse IP et le nom de la machine virtuelle ou est installée Veeam Backup.
+
+```bash
+192.168.0.245 VEEAM-BACKUP 
+```
+
+Enregistrez le fichier et lancez cette commande
+```bash
+proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
+[sudo] password for proxy_user:
+```
+### Ajout d'un dépot pour les sauvegardes
+
+Nous allons rajouter un stockage SMB qui se trouve sur un site distant accessible au travers d'un VPN.
+
+Au travers de l'interface Veeam Backup cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
+
+![Add SMB reposiory 01](images/04-add-smb-repository01.png){.thumbnail}
+
+Choisissez `Network attached storage`{.action}. 
+
+![Add SMB reposiory 02](images/04-add-smb-repository02.png){.thumbnail}
+
+CLiquez sur `SMB share`{.action}. 
+
+![Add SMB reposiory 03](images/04-add-smb-repository03.png){.thumbnail}
+
+Saisissez le nom du dépot dans la zone de saisie `Name`{.action} et cliquez sur `Next`{.action}. 
+
+![Add SMB reposiory 04](images/04-add-smb-repository04.png){.thumbnail}
+
+Ecrivez le nom UNC du partage dans `Shared folder`{.action} cochez la case `This share requires access credentials`{.action} et cliquez sur `Add`{.action}. 
+
+![Add SMB reposiory 05](images/04-add-smb-repository05.png){.thumbnail}
+
+Saisir le nom d'utilisateur dans `Username`{.action} ainsi que son mot de passe dans `Password`{.action} et cliquez sur `OK`{.action}
+
+![Add SMB reposiory 06](images/04-add-smb-repository06.png){.thumbnail}
+
+Vérifiez que l'utilisateur apparraisse bien et cliquez sur `Next`{.action}
+
+![Add SMB reposiory 07](images/04-add-smb-repository07.png){.thumbnail}
+
+Cliquez sur `Next`{.action}
+
+![Add SMB reposiory 08](images/04-add-smb-repository08.png){.thumbnail}
+
+Cliquez sur `Apply`{.action}
+
+![Add SMB reposiory 09](images/04-add-smb-repository09.png){.thumbnail}
+
+Cliquez sur `Next`{.action}
+
+![Add SMB reposiory 10](images/04-add-smb-repository10.png){.thumbnail}
+
+Cliquez sur `Finish`{.action}
+
+![Add SMB reposiory 11](images/04-add-smb-repository11.png){.thumbnail}
+
+Cliquez sur `No`{.action}
+
+![Add SMB reposiory 12](images/04-add-smb-repository12.png){.thumbnail}
+
+Le nouveau dépot apparait 
+
+![Add SMB reposiory 13](images/04-add-smb-repository13.png){.thumbnail}
+
 
 
 
