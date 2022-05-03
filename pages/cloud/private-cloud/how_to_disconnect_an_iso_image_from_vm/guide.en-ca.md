@@ -9,7 +9,7 @@ section: Getting started
 
 ## Objective
 
-If an ISO is connected to a VM, the VM cannot be migrated, either manually or automatically. This can prevent DRS from working properly and the host that hosts it from being serviced.
+If an ISO is connected to a VM, the VM cannot be migrated, either manually or automatically. This can prevent DRS from working properly, and the host to be put in maintenance mode.
 
 ## Requirements
 
