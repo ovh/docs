@@ -24,13 +24,13 @@ td:nth-of-type(1) {
 
 Using server-side encryption with customer-provided encryption keys (SSE-C) allows you to set your own encryption keys.  
 
-When you upload an object, S3 High Performance uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. S3 High Performance first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
+When you upload an object, S3 Object Storage uses the encryption key you provide to apply AES-256 encryption to your data. When you retrieve an object, you must provide the same encryption key as part of your request. S3 Object Storage first verifies that the encryption key you provided matches and then decrypts the object before returning the object data to you.
 
 **This guide explains how to encrypt your server-side objects with SSE-C.**
 
 > [!warning]
 >
-> S3 High Performance does not store the encryption key you provide. That means if you lose the encryption key, you lose the object. The only thing left to do is to delete it.
+> S3 Object Storage does not store the encryption key you provide. That means if you lose the encryption key, you lose the object. The only thing left to do is to delete it.
 >
 
 ## Requirements
@@ -39,7 +39,7 @@ When you upload an object, S3 High Performance uses the encryption key you provi
 - A user with the required access rights on the bucket
 - Have installed and configured aws-cli
 
-See our [Getting started with S3 High Performance](https://docs.ovh.com/sg/en/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/sg/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 
@@ -48,8 +48,8 @@ When you use SSE-C, you must provide encryption key information using the follow
 | Name | Description |
 |:-----|:------------|
 | --sse​-customer-algorithm | Use this header to specify the encryption algorithm. The header value must be *AES256.* |
-| --sse-customer-key | Use this header to provide the 256-bit, base64-encoded encryption key for S3 High Performance to use to encrypt or decrypt your data. |
-| --sse​-customer-key-md5<p class="optional">Optional</p>| Use this header to provide the base64-encoded 128-bit MD5 digest of the encryption key according to RFC 1321. S3 High Performance uses this header for a message integrity check to ensure that the encryption key was transmitted without error. |
+| --sse-customer-key | Use this header to provide the 256-bit, base64-encoded encryption key for S3 Object Storage to use to encrypt or decrypt your data. |
+| --sse​-customer-key-md5<p class="optional">Optional</p>| Use this header to provide the base64-encoded 128-bit MD5 digest of the encryption key according to RFC 1321. S3 Object Storage uses this header for a message integrity check to ensure that the encryption key was transmitted without error. |
 
 ### Creating an encryption key
 
@@ -156,4 +156,4 @@ Presigned URLs, that can be used for operations such as upload a new object, ret
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

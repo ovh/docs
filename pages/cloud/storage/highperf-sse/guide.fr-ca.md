@@ -24,13 +24,13 @@ td:nth-of-type(1) {
 
 L'utilisation du chiffrement côté serveur avec des clés de chiffrement fournies par le client (SSE-C) vous permet de définir vos propres clés de chiffrement.  
 
-Lorsque vous téléchargez un objet, S3 High Performance utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de cryptage dans le cadre de votre demande. S3 High Performance vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
+Lorsque vous téléchargez un objet, S3 Object Storage utilise la clé de chiffrement que vous fournissez pour appliquer le chiffrement AES-256 à vos données. Lorsque vous récupérez un objet, vous devez fournir la même clé de cryptage dans le cadre de votre demande. S3 Object Storage vérifie d'abord que la clé de chiffrement que vous avez fournie correspond, puis déchiffre l'objet avant de vous renvoyer les données de l'objet.
 
 **Ce guide explique comment chiffrer vos objets côté serveur avec SSE-C.**
 
 > [!warning]
 >
-> S3 High Performance ne stocke pas la clé de chiffrement que vous fournissez. Cela signifie que si vous perdez la clé de chiffrement, vous perdez l'objet. La seule chose qui reste à faire est de le supprimer.
+> S3 Object Storage ne stocke pas la clé de chiffrement que vous fournissez. Cela signifie que si vous perdez la clé de chiffrement, vous perdez l'objet. La seule chose qui reste à faire est de le supprimer.
 >
 
 ## Prérequis
@@ -39,7 +39,7 @@ Lorsque vous téléchargez un objet, S3 High Performance utilise la clé de chif
 - Avoir créé un utilisateur et avoir défini les droits d'accès requis sur le bucket
 - Avoir installé et configuré aws-cli
 
-Consultez notre guide « [Débuter avec S3 High Performance](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
+Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/ca/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
 ## En pratique
 

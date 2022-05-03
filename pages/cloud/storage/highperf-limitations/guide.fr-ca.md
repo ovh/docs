@@ -1,7 +1,7 @@
 ---
-title: Object Storage S3 High Performance - Limites techniques
+title: S3 Object Storage - Limites techniques
 slug: s3/limitations
-excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage S3 High Performance"
+excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage S3 Object Storage"
 section: Object Storage S3 High Performance
 order: 025
 ---
@@ -10,7 +10,7 @@ order: 025
 
 ## Objectif
 
-Retrouvez ici les limites techniques relatives à l'offre Object Storage S3 High Performance.
+Retrouvez ici les limites techniques relatives à l'offre S3 Object Storage.
 
 ### Nombre maximum de conteneurs dans un stockage
 

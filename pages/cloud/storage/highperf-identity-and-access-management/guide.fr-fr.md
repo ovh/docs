@@ -10,7 +10,7 @@ order: 030
 
 ## Objectif
 
-Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources High Performance.
+Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources S3 Object Storage.
 
 ## Prérequis
 

@@ -1,18 +1,18 @@
 ---
 title: Compatibilidad S3 (EN)
 slug: s3/s3-compliancy
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3-compliancy'
 excerpt:
 section: Object Storage S3 High Performance
 order: 010
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/s3-compliancy/'
 ---
 
 **Last updated 8th December 2021**
 
 ## Objective
 
-This guide lists the S3 API features supported by High Performance.
+This guide lists the S3 API features supported by S3 Object Storage.
 
 ## Instructions
 
