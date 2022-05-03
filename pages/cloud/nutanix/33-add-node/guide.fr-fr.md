@@ -4,6 +4,7 @@ slug: add-node
 excerpt: 'Ajouter un nœud et valider son bon fonctionnement'
 section: "Utilisation avancée"
 order: 03
+hidden: true
 kb: Hosted Private Cloud
 category_l1: Hosted Private Cloud powered by Nutanix
 category_l2: Advanced usage
