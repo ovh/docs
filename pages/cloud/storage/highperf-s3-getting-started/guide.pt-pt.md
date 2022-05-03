@@ -1,5 +1,5 @@
 ---
-title: Introdução ao S3 Object Storage (EN)
+title: Começar com S3 Object Storage (EN)
 slug: s3/getting-started-with-s3
 excerpt:
 section: Object Storage S3 High Performance

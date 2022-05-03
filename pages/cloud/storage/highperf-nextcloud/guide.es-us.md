@@ -1,5 +1,5 @@
 ---
-title: Utilice el almacenamiento de objetos de S3 con Nextcloud (EN)
+title: Utilizar S3 Object Storage con Nextcloud (EN)
 slug: s3/nextcloud
 excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
 section: Object Storage S3 High Performance

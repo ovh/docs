@@ -1,5 +1,5 @@
 ---
-title: Użyj obiektowej pamięci masowej S3 z Nextcloud (EN)
+title: Skorzystaj z oferty S3 Object Storage z Nextcloud (EN)
 slug: s3/nextcloud
 excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
 section: Object Storage S3 High Performance

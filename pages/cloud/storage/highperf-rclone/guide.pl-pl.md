@@ -1,5 +1,5 @@
 ---
-title: Użyj obiektowej pamięci masowej S3 z rClone (EN)
+title: Skorzystaj z oferty S3 Object Storage z Rclone (EN)
 slug: s3/rclone
 excerpt: Learn how to set up Rclone to synchronize your files to and from S3 Object Storage.
 section: Object Storage S3 High Performance

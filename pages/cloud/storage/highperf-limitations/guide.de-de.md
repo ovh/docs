@@ -1,5 +1,5 @@
 ---
-title: S3-Objektspeicher – Technische Einschränkungen (EN)
+title: Object Storage S3 Object Storage - Technische Grenzen (EN)
 slug: s3/limitations
 excerpt: Find here information on the Object Storage S3 Object Storage limitations
 section: Object Storage S3 High Performance

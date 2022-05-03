@@ -1,5 +1,5 @@
 ---
-title: Cumplimiento S3 (EN)
+title: Compatibilidad S3 (EN)
 slug: s3/s3-compliancy
 excerpt:
 section: Object Storage S3 High Performance

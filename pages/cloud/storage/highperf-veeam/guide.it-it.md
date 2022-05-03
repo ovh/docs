@@ -1,5 +1,5 @@
 ---
-title: Usa S3 Object Storage con Veeam (EN)
+title: Utilizza S3 Object Storage con Veeam (EN)
 slug: s3/veeam
 section: Object Storage S3 High Performance
 order: 140

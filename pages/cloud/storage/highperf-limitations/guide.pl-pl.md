@@ -1,5 +1,5 @@
 ---
-title: Obiektowa pamięć masowa S3 — ograniczenia techniczne (EN)
+title: Object Storage S3 Object Storage - Ograniczenia techniczne (EN)
 slug: s3/limitations
 excerpt: Find here information on the Object Storage S3 Object Storage limitations
 section: Object Storage S3 High Performance

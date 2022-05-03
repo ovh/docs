@@ -1,5 +1,5 @@
 ---
-title: Pierwsze kroki z obiektową pamięcią masową S3 (EN)
+title: Pierwsze kroki z S3 Object Storage (EN)
 slug: s3/getting-started-with-s3
 excerpt:
 section: Object Storage S3 High Performance

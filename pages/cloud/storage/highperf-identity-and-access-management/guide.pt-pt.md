@@ -1,5 +1,5 @@
 ---
-title: Gerenciamento de identidade e acesso (EN)
+title: Gestão das identidades e dos acessos (EN)
 slug: s3/identity-and-access-management
 excerpt:
 section: Object Storage S3 High Performance

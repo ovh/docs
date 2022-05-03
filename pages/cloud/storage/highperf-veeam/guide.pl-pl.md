@@ -1,5 +1,5 @@
 ---
-title: Użyj obiektowej pamięci masowej S3 z rozwiązaniem Veeam (EN)
+title: Skorzystaj z oferty S3 Object Storage z Veeam (EN)
 slug: s3/veeam
 section: Object Storage S3 High Performance
 order: 140

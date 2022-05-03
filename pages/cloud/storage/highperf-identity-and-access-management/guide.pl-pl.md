@@ -1,5 +1,5 @@
 ---
-title: Zarządzanie tożsamością i dostępem (EN)
+title: Zarządzanie tożsamością i dostępami (EN)
 slug: s3/identity-and-access-management
 excerpt:
 section: Object Storage S3 High Performance

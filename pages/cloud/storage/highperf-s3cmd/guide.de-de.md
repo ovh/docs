@@ -1,5 +1,5 @@
 ---
-title: Verwenden Sie S3 Object Storage mit S3cmd (EN)
+title: S3 Object Storage mit S3cmd (EN)
 slug: s3/s3cmd
 excerpt: Learn how to configure S3cmd to manage your buckets and objects
 section: Object Storage S3 High Performance

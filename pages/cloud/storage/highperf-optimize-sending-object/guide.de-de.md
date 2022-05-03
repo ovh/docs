@@ -1,5 +1,5 @@
 ---
-title: Optimieren Sie das Senden Ihrer Dateien an S3 Object Storage (EN)
+title: Versenden Ihrer Dateien zu S3 Object Storage optimieren (EN)
 slug: s3/optimise-the-sending-of-your-files
 excerpt:
 section: Object Storage S3 High Performance
