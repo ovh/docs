@@ -6,23 +6,18 @@ section: 'Diagnostic et dépannage'
 order: 02
 ---
 
-**Dernière mise à jour le 03/05/2022**
+**Dernière mise à jour le 04/05/2022**
  
 ## Objectif
 
 À la différence des modèles de téléphones historiques fonctionnant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
 
-Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a donc besoin :
-
-- d'être alimenté électriquement;
-- d'être raccordé à votre réseau local et de communiquer sur Internet.
+Pour fonctionner correctement, comme votre ordinateur, un téléphone OVHcloud a donc besoin d'être alimenté électriquement, d'être raccordé à votre réseau local et de communiquer sur Internet.
 
 Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 - un défaut d'alimentation électrique;
-- une problématique réseau telle que :
-    - une connectivité limitée ou inexistante;
-    - un défaut de distribution d'adresses IP (DHCP) sur votre réseau local;
+- une problématique réseau;
 - un défaut temporaire de configuration du téléphone.
  
 **Découvrez comment diagnostiquer et dépanner votre téléphone OVHcloud.**
@@ -43,7 +38,17 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-### Étape 1 - Etablir un premier diagnostic
+Voici la table des matières de ce guide, vous pouvez cliquer sur une des entrées pour y arriver directement :
+
+[Etape 1 - Etablir un premier diagnostic](#step1)<br />
+[Etape 2 - Dépanner le téléphone depuis l'espace client OVHcloud](#step2)<br />
+[Etape 3 - Réinitialiser le téléphone (facultatif)](#step3)<br />
+[Etape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
+&emsp;&emsp;[4.1 Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
+&emsp;&emsp;[4.2 Effectuer un test croisé](#step4-2)<br />
+[Etape 5 - Contacter l'assistance OVHcloud](#step5)<br />
+
+### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
 
 **Question n°1: L'écran de votre téléphone s'allume-t-il ?**
 
@@ -55,7 +60,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 - **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin de rétablir l'enregistrement de la ligne SIP sur le téléphone.
 - **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
 
-### Étape 2 - Procéder au dépannage du téléphone depuis l'espace client OVHcloud
+### Étape 2 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step2"></a>
 
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
@@ -82,11 +87,11 @@ Assurez-vous également que votre téléphone est correctement branché électri
 
 ![dépannage-plug-and-phone](images/control-panel02.png){.thumbnail}
 
-En fonction des informations sélectionnées, vous pourriez être amené à reconfigurer automatiquement votre téléphone. Si tel est le cas, veillez à bien suivre les trois manipulations qui s'affichent :
+En fonction des informations sélectionnées, vous pourrez être amené à reconfigurer automatiquement votre téléphone. Si tel est le cas, veillez à bien suivre les trois manipulations qui s'affichent :
 
 |Manipulations|Description|
 |---|---|  
-|Vérifier l'adresse MAC du téléphone|L'adresse affichée dans votre espace client OVHcloud doit être la même que l'adresse MAC, unique, sur votre téléphone. Vous pouvez la retrouver sur l'étiquette du constructeur.|  
+|Vérifier l'adresse MAC du téléphone|L'adresse affichée dans votre espace client OVHcloud doit être la même que l'adresse MAC, unique, sur votre téléphone. Vous pouvez la retrouver sur l'étiquette du constructeur, généralement à l'arrière ou sous le téléphone.|  
 |Entrer l'adresse IP publique du téléphone|Il s'agit de la dernière adresse IP publique connue de votre téléphone. Assurez-vous de renseigner la bonne adresse afin que la reconfiguration puisse arriver à son terme.|
 |Redémarrer électriquement le téléphone|Après avoir redémarré, le téléphone récupérera un nouveau fichier de configuration, permettant ainsi de le reconfigurer.|
 
@@ -95,13 +100,13 @@ En fonction des informations sélectionnées, vous pourriez être amené à reco
 > Si la reconfiguration de votre téléphone n'arrive pas à son terme, assurez-vous d'avoir bien respecté les manipulations précédentes.
 >
 
-### Étape 3 - Réinitialiser le téléphone (facultatif)
+### Étape 3 - Réinitialiser le téléphone (facultatif) <a name="step3"></a>
 
 > [!primary]
 > Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
 >
 
-La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. A défaut, certains modèles de téléphones nécessitent d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
+La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
 
 Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitialiser un téléphone, en fonction de la marque de celui-ci.
 
@@ -109,29 +114,29 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 |---|---|
 |**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
 |**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
-|**Gigaset** DECT (sans-fil)|Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en maintenant enfoncé le bouton unique de la base (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
+|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
 |**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
 |**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
 |**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
  
-### Étape 4 - Effectuer des tests complémentaires (facultatif)
+### Étape 4 - Effectuer des tests complémentaires (facultatif) <a name="step4"></a>
 
 Si la reconfiguration de votre téléphone n'a pas permis de résoudre votre problématique, poursuivez en réalisant deux tests complémentaires. 
 
-#### 4.1 Réinitialiser votre modem
+#### 4.1 Réinitialiser votre routeur / modem / Box Internet <a name="step4-1"></a>
 
 > [!alert]
 >
-> La réinitialisation de votre modem peut entraîner la perte de potentielles configurations personnalisées sur celui-ci.
+> La réinitialisation de votre routeur / modem / Box Internet peut entraîner la perte de potentielles configurations personnalisées sur celui-ci.
 > **Ne réalisez cette étape que si vous êtes sûr de vous.**
 
-Il se peut que votre modem ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
+Il se peut que votre routeur / modem / Box Internet ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
 
-- **vous disposez d'un modem OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud_1){.external} » ;
+- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](https://docs.ovh.com/fr/xdsl/redemarrer-reinitialiser-modem-adsl-ovh/#reinitialiser-votre-box-ovhcloud_1) » ;
 
-- **vous disposez d'un modem d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
+- **vous disposez d'un routeur / modem / Box Internet d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
 
-#### 4.2 Effectuer un test croisé
+#### 4.2 Effectuer un test croisé <a name="step4-2"></a>
 
 Réaliser un test croisé permet de vérifier si l'incident provient par exemple d'un défaut de votre téléphone ou de votre routeur / modem / Box Internet. Pour cela, branchez votre téléphone sur un autre accès à Internet fonctionnel. 
 
@@ -141,11 +146,13 @@ Dès lors, deux possibilités :
 
 - **votre téléphone ne fonctionne pas sur cet autre accès** : cela indique que la problématique que vous rencontrez actuellement provient de votre téléphone (que ce soit sa configuration ou une panne matérielle). Dans ce cas de figure, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud. Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket les tests que vous avez déjà effectués.
 
-### Étape 5 - Contacter l'assistance OVHcloud
+### Étape 5 - Contacter l'assistance OVHcloud <a name="step5"></a>
 
 Si votre téléphone OVHcloud reste inopérant malgré les manipulations décrites ci-dessus effectuées, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud.<br>
 Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket l'ensemble des tests que vous avez déjà effectués.
  
 ## Aller plus loin <a name="gofurther"></a>
+
+En cas de difficultés, nous vous recommandons de faire appel à l'un de [nos partenaires](https://partner.ovhcloud.com/fr/directory/).
  
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
