@@ -14,7 +14,7 @@ order: 2
 
 L'[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} vous permet d'utiliser Node.js comme moteur d'exécution pour vos sites web, et donc d'y installer Etherpad ou toute autre application conçue pour Node.js.
 
-**Dans ce tutoriel, nous allons installer un serveur Etherpad sur un hébergement Cloud Web d'OVHcloud et le mettre à disposition derrière votre nom de domaine.**
+**Dans ce tutoriel, nous allons installer un serveur Etherpad sur un hébergement Cloud Web OVHcloud et le mettre à disposition derrière votre nom de domaine.**
 
 ## Prérequis
 

@@ -38,7 +38,8 @@ Nachdem Sie sich die verschiedenen Optionen angesehen und Ihr Projekt genau defi
 
 Bei Cloud Web stehen Ihnen für Ihr Projekt verschiedene Entwicklungssprachen zur Verfügung. Falls Sie eine andere Sprache als das standardmäßig ausgewählte PHP verwenden möchten, wählen Sie die entsprechende „Runtime Engine“ aus.
 
-Aktuell sind folgende Programmiersprachen verfügbar: 
+Aktuell sind folgende Programmiersprachen verfügbar:
+
 - PHP
 - Node.js
 - Python

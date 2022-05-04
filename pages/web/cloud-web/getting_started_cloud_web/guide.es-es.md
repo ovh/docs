@@ -39,6 +39,7 @@ Una vez que haya evaluado las distintas posibilidades y haya delimitado el proye
 El hosting Cloud Web ofrece la posibilidad de desarrollar un proyecto en distintos lenguajes de programación. Si quiere utilizar un lenguaje distinto de PHP, que es el lenguaje por defecto, deberá seleccionar el motor de ejecución correspondiente.
 
 Los lenguajes disponibles actualmente son:
+
 - PHP
 - Node.js
 - Python

@@ -1,7 +1,7 @@
 ---
 title: 'Comment installer Django CMS sur son hébergement Cloud Web'
 slug: installer-django-cms-cloud-web
-excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web d'OVHcloud"
+excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web OVHcloud"
 section: Tutoriels
 ---
 
@@ -11,18 +11,18 @@ section: Tutoriels
 
 Django CMS est un système de gestion de contenu (CMS) écrit en Python et basé sur le framework web Django.
 
-L’[hébergement Cloud Web d'OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
+L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
 
 À travers ce tutoriel, nous allons installer un site web avec Django CMS sur un hébergement Cloud Web d’OVH. Puis nous le mettrons à disposition derrière votre nom de domaine.
 
 ## Prérequis
 
-- Disposer d’un [hébergement Cloud Web d'OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir:
-  - Les bases de l’écosystème Python.
-  - Se connecter en SSH.
-  - Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
+    - Les bases de l’écosystème Python.
+    - Se connecter en SSH.
+    - Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
 
 ## En pratique
 

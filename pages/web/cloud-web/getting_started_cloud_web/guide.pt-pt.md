@@ -40,6 +40,7 @@ Depois de ter avaliado as diferentes possibilidades ao seu dispor e de ter delim
 A [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} disponibiliza-lhe múltiplas linguagens de desenvolvimento para construir o seu projeto. Se deseja utilizar outra linguagem que não PHP, que é a escolha padrão, deverá selecionar um «motor de execução» que corresponda à sua linguagem.
 
 As linguagens atualmente disponíveis são:
+
 - PHP
 - Node.js
 - Python

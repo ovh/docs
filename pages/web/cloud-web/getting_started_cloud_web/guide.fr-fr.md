@@ -41,6 +41,7 @@ Après avoir évalué les différentes possibilités et délimité avec précisi
 L'offre Cloud Web met à votre disposition de multiples langages de développement pour construire votre projet. Si vous souhaitez utiliser un autre langage que PHP, qui est le choix par défaut, vous devrez sélectionner un « moteur d’exécution » correspondant à votre langage.
 
 Les langages actuellement disponibles sont :
+
 - PHP
 - Node.js
 - Python
@@ -121,7 +122,7 @@ Cette solution vous permet de bénéficier d’une structure de site prête à l
 
 Si votre choix se porte sur l'utilisation de nos modules en 1 clic, toujours positionné sur l'hébergement Cloud Web concerné, cliquez sur l'onglet `Modules en 1 clic`{.action}, puis sur `Ajouter un module`{.action}. Vous pourrez alors initier une installation en mode « simple » (non personnalisable) ou en mode « avancé » (possibilité de personnaliser certains éléments).
 
-Si vous désirez obtenir plus d'informations sur les modules en 1 clic d'OVHcloud, consultez notre documentation : [« Installer son site avec les modules en 1 clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
+Si vous désirez obtenir plus d'informations sur les modules en 1 clic OVHcloud, consultez notre documentation : [« Installer son site avec les modules en 1 clic »](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}.
 
 > [!primary]
 >
@@ -159,7 +160,7 @@ Maintenant que vous connaissez les enregistrements DNS inhérents à votre hébe
 
 > [!warning]
 >
-> - Si votre nom de domaine n'utilise pas la configuration DNS d'OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant cette dernière.
+> - Si votre nom de domaine n'utilise pas la configuration DNS OVHcloud, vous devez réaliser la modification depuis l'interface du prestataire gérant cette dernière.
 > 
 > - Si votre nom de domaine est enregistré chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration DNS. Pour cela, rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, onglet `Serveurs DNS`{.action} une fois positionné sur le nom de domaine concerné.
 >

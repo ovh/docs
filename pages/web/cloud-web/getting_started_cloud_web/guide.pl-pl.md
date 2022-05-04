@@ -39,6 +39,7 @@ Po wybraniu różnych możliwości i określeniu ram Twojego projektu możesz pr
 W ramach Cloud Web udostępniamy różne języki programowania do budowy Twojego projektu. Jeśli chcesz użyć innego języka niż ustawione domyślnie PHP, wybierz framework odpowiadający wybranemu przez Ciebie językowi.
 
 Aktualnie dostępne języki to:
+
 - PHP
 - Node.js
 - Python

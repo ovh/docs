@@ -16,12 +16,12 @@ section: Tutoriels
 
 ## Prérequis
 
-- Disposer d’un [hébergement Cloud WebOVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 - Ce que vous devez savoir :
-  - Les bases de l’écosystème Ruby.
-  - Se connecter en SSH.
-  - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
+    - Les bases de l’écosystème Ruby.
+    - Se connecter en SSH.
+    - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
 
 ## En pratique
 
@@ -60,7 +60,7 @@ Maintenant que Ruby est activé en tant que moteur d’exécution, vous devez l�
 
 ![Associer Ruby à un multisite](images/installer-camaleon-cloud-web-003.png){.thumbnail} 
 
-Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 *Se connecter à votre Cloud Web via SSH*.
+Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 [Se connecter à votre Cloud Web via SSH](#sshconnexion).
 
 | Colonne                     | Description                                                                  |
 |-----------------------------|------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ En ce qui concerne les options supplémentaires, choisissez celles que vous souh
 ![Partager son hébergement entre plusieurs sites](images/installer-camaleon-cloud-web-004.png){.thumbnail} 
 
 
-### Étape 3 : se connecter à votre Cloud Web via SSH
+### Étape 3 : se connecter à votre Cloud Web via SSH <a name="sshconnexion"></a>
 
 Récupérez d’abord les informations vous permettant de vous connecter. Pour cela, positionnez-vous sur l’onglet `FTP - SSH`{.action}. Si celui-ci n’apparaît pas dans la liste, appuyez au préalable sur le bouton représentant trois barres. Les informations liées à votre espace de stockage apparaissent alors. Repérez celles mentionnées dans le tableau :
 

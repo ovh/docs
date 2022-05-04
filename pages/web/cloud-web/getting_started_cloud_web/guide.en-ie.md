@@ -5,7 +5,7 @@ excerpt: Find out how to get started with a Cloud Web hosting plan
 section: Getting started
 ---
 
-**Last updated 4th may 2022***
+**Last updated 4th May 2022***
 
 ## Objective
 
@@ -39,6 +39,7 @@ Once you have explored the various options available and carefully defined your 
 With [Cloud Web](https://www.ovhcloud.com/en-ie/web-hosting/cloud-web-offer/), you can choose from a range of different coding languages to build your project. If you would like to use a language other than PHP, which is the default selection, you will need to select a runtime software application that corresponds to your coding language.
 
 The languages currently available are:
+
 - PHP
 - Node.js
 - Python

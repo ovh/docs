@@ -14,7 +14,7 @@ order: 1
 
 L'[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} permet d'utiliser Node.js comme moteur d'exécution pour vos sites web et donc d'y installer et héberger Ghost ou toute autre application conçue pour Node.js.
 
-Dans ce tutoriel, nous allons installer un blog avec Ghost sur un hébergement Cloud Web d'OVHcloud et le mettre à disposition derrière votre nom de domaine.
+Dans ce tutoriel, nous allons installer un blog avec Ghost sur un hébergement Cloud Web OVHcloud et le mettre à disposition derrière votre nom de domaine.
 
 **Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web**
 
@@ -98,7 +98,7 @@ Positionnez-vous maintenant sur l'onglet `Bases de données`{.action}. Si celui-
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, Seul « MySQL », en version « 5.6 » est disponible. Sélectionnez ensuite « Stockée dans votre instance Cloud Web », puis cliquez sur `Suivant`{.action}.
+Dans la fenêtre qui s'affiche, Seul « MySQL » en version « 5.6 » est disponible. Sélectionnez ensuite « Stockée dans votre instance Cloud Web », puis cliquez sur `Suivant`{.action}.
 
 Personnalisez ensuite un nom d'utilisateur et définissez-lui un mot de passe. Une fois ceci fait, cliquez sur `Suivant`{.action}. Confirmez alors la création de la base de données en cliquant sur `Valider`{.action}. Patientez ensuite quelques minutes le temps que la manipulation se réalise.
 

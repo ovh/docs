@@ -39,6 +39,7 @@ Dopo aver valutato le diverse possibilità tra cui scegliere, puoi iniziare a me
 Cloud Web mette a tua disposizione diversi linguaggi di programmazione per consentirti di costruire il tuo progetto. Se vuoi utilizzare un linguaggio di programmazione diverso da PHP (opzione predefinita), è necessario selezionare un “programma d’esecuzione” corrispondente al tuo linguaggio.
 
 I linguaggi di programmazione disponibili sono:
+
 - PHP
 - Node.js
 - Python
