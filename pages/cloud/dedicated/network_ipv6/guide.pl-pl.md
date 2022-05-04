@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 30/03/2022**
+**Ostatnia aktualizacja: 04-05-2022**
 
 ## Wprowadzenie
 
@@ -29,6 +29,10 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 - Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
 - Podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci.
 
+> [!warning]
+> Serwery Kimsufi są dostarczane z jednym blokiem IPv6 (/128). IPv6 zostanie automatycznie skonfigurowane podczas instalacji systemu operacyjnego.
+>
+
 ## W praktyce
 
 Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu systemu operacyjnego Linux, zauważysz gotowy, już skonfigurowany pierwszy (główny) adres IPv6.
@@ -47,9 +51,6 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 > Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
 >
 
-> [!warning]
-> Należy zauważyć, że serwery Kimsufi są dostarczane z jednym blokiem IPV6 (/128). W takim przypadku skorzystaj z tego [przewodnika](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/) dotyczącego konfiguracji ipv6 na serwerze Kimsufi.
->
 
 > [!api]
 >
