@@ -2,7 +2,7 @@
 title: Kafka - Capabilities and Limitations
 slug: kafka/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-section: Kafka
+section: Kafka - Guides
 order: 1
 ---
 
