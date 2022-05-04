@@ -1,11 +1,11 @@
 ---
-title: Activating rescue mode on a VPS
+title: Activating and using rescue mode on a VPS
 slug: rescue
-excerpt: Find out how to use the OVHcloud rescue mode for troubleshooting
+excerpt: Find out how to activate and use rescue mode on a VPS
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 11th Febuary 2022**
+**Last updated 2nd May 2022**
 
 ## Objective
 
@@ -26,7 +26,7 @@ Performing checks in rescue mode helps to determine whether an issue is software
 > If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
 >
 
-**This guide explains how to reboot your VPS into rescue mode.**
+**This guide explains how to activate and use the rescue mode on your VPS.**
 
 ## Requirements
 
