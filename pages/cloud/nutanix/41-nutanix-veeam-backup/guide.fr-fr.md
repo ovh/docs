@@ -39,13 +39,13 @@ Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un c
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
-Nous allons créer un utilisateur spécifique dans Prism Element pour l'utilisation de Veeam Backup
+IL faut tout d'abord créer un utilisateur spécifique dans Prism Element pour l'utilisation de Veeam Backup.
 
-Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant dans **Cluster Quick Access** sur le cluster.
+Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant sous **Cluster Quick Access** sur le cluster.
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
-Allez dans les paramètres en cliquant sur l'icone representant un `engrenage`{.action} en haut à droite.
+A partir de **Prism Element** allez dans les paramètres en cliquant sur l'icone representant un `engrenage`{.action} en haut à droite.
 
 ![Create User VEEAM PE 02](images/01-create-pe-veeamuser02.png){.thumbnail}
 
@@ -71,21 +71,21 @@ Saisissez ces informations :
 - **Password** : `mot de passe`
 
 > [!primary]
-> Ces informations sont fournies à titre d'exemple, l'adresse de messagerie est obligatoire mais n'est pas utilisée.
+> Ces données sont fournies à titre d'exemple, l'adresse de messagerie est obligatoire mais n'est pas utilisée.
 
 Cochez la case `Cluster Admin`{.action} et cliquez sur `Save`{.action}
 
 ![Create User VEEAM PE 06](images/01-create-pe-veeamuser06.png){.thumbnail}
 
-Le commpte apparait dans la liste des utilisateurs de **Prism Element**.
+Ce compte utilisateur est créé et il est  dans la liste des utilisateurs de **Prism Element**.
 
 ![Create User VEEAM PE 07](images/01-create-pe-veeamuser07.png){.thumbnail}
 
-### Télécharger et installer l'extension pour Nutanix dans VEEAM**
+### Télécharger et installer l'extension pour un cluster **Nutanix**
 
 Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
-A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Si vous n'avez pas de compte utilisateurs sur le site de Veeam il faudra le créer ce compte est gratuit.
+A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Si vous n'avez pas un compte utilisateur sur le site de **Veeam** il faudra le créer, ce compte est gratuit.
 
 Lancez l'installation de l'extension.
 
@@ -95,9 +95,9 @@ Lancez l'installation de l'extension.
 >
 
 
-![Addon Installation 02](images/02-install-addon-nutanix-veeam01.png){.thumbnail}
-
 Double-cliquez sur l'installateur `NutanixAHPlugin_...`{.action}
+
+![Addon Installation 01](images/02-install-addon-nutanix-veeam01.png){.thumbnail}
 
 Acceptez les conditions générales d'utilisation du logiciel en sélectionnant `I accept the terms of the Veeam license agreement`{.action} et `I accept the terms of the 3rd party components license agreements`{.action} ensuite cliquez sur `Next`{.action}.
 
@@ -127,7 +127,7 @@ Lancez la console **Veeam Backup** et cliquez sur `Connect`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 01](images/03-addclusternutanix-to-veeam01.png){.thumbnail}
 
-Positionnez-vous dans `Backup Infrastucture`{.action} dans le mene en bas à droite, choisissez `Managed Servers`{.action} et cliquez sur `Add Server`{.action}.
+Positionnez-vous dans `Backup Infrastucture`{.action} dans le menu en bas à droite, choisissez `Managed Servers`{.action} et cliquez sur `Add Server`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 02](images/03-addclusternutanix-to-veeam02.png){.thumbnail}
 
@@ -143,7 +143,7 @@ Cliquez sur `Add`{.action} pour ajouter le compte utilisateur de **Prism Element
 
 ![Addon Cluster Nutanix to Veeam 05](images/03-addclusternutanix-to-veeam05.png){.thumbnail}
 
-Saisissez ces informations avec le compte crée précedemment dans Prism Element :
+Saisissez ces informations avec le compte créé précedemment dans Prism Element :
 
 - **Username** : `svc_veeam`{.action}
 - **Password** ! `Mot de passe`{.action}
@@ -156,7 +156,7 @@ Vérifiez dans **Credentials** que le compte créé soit sélectionné et clique
 
 ![Addon Cluster Nutanix to Veeam 07](images/03-addclusternutanix-to-veeam07.png){.thumbnail}
 
-Cliquez sur `Continue`{.action} pour passez outre le message d'avertissement concernant le certificat.
+Cliquez sur `Continue`{.action} pour valider le message d'avertissement concernant le certificat.
 
 ![Addon Cluster Nutanix to Veeam 08](images/03-addclusternutanix-to-veeam08.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Cliquez sur `Yes`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 12](images/03-addclusternutanix-to-veeam12.png){.thumbnail}
 
-Seléctionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action} 
+Selectionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action} 
 
 ![Addon Cluster Nutanix to Veeam 13](images/03-addclusternutanix-to-veeam13.png){.thumbnail}
 
@@ -204,10 +204,10 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
 
-Saisissez ces informations avec le compte crée précedemment dans Prism Element :
+Saisissez ces informations avec le compte crée précèdemment dans Prism Element :
 
 - **Username** : `proxy_user`{.action}
-- **Password** ! `Mot de passe`{.action}
+- **Password** : `Mot de passe`{.action}
 
 Cliquez sur `OK`{.action}.
 
@@ -233,7 +233,7 @@ L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cau
 
 > [!primary]
 > 
-> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des ordinateurs
+> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des nom d'ordinateurs
 > Notamment celui qui sert pour le logiciel Veeam Backup. 
 
 Au travers de Prism Central connectez vous à la machine virtuelle NUTANIX-PROXY. 
@@ -241,6 +241,7 @@ Au travers de Prism Central connectez vous à la machine virtuelle NUTANIX-PROXY
 Cliquez en haut à gauche sur `icône`{.action} du menu principal et choisissez `VMs`{.action}.
 
 ![Configure Nutanix PROXY HOST 01](images/03-modify-etchostproxy01.png){.thumbnail}
+
 
 Cliquez sur la machine virtuelle NUTANIX-PROXY. 
 
