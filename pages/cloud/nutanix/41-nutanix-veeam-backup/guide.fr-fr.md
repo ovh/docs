@@ -13,7 +13,7 @@ order: 02
 
 Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix. 
 
-**Apprenez à installer, configurer et utiliser VEEAM sur un cluster Nutanix avec un stockage de type Object Storage fourni par OVHCloud**
+**Apprenez à installer, configurer et utiliser VEEAM sur un cluster Nutanix sur un dossier partagé**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -29,13 +29,13 @@ Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
 - D'avoir installé VEEAM Backup et Replication sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
-- Prévoir 4 Go de mémoires , 60 Go de stockage et 4vCPU pour une machine virtuelle supplémentaire nécessaire au bon fonctionnement des sauvegardes d'un cluster Nutanix avec le logiciel **Veeam Backup**
+- d'avoir 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour une machine virtuelle supplémentaire nécessaire au bon fonctionnement des sauvegardes d'un cluster Nutanix avec le logiciel **Veeam Backup**
 
 
 
 ## En pratique
 
-Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante sur une des offres d'OVHcloud de stockage proposée. 
+Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante de type **NAS** en **SMB**. 
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -45,7 +45,7 @@ Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
-Allez dans les paramètres en cliquant sur l'icone represantant un `engrenage`{.action} en haut à droite.
+Allez dans les paramètres en cliquant sur l'icone representant un `engrenage`{.action} en haut à droite.
 
 ![Create User VEEAM PE 02](images/01-create-pe-veeamuser02.png){.thumbnail}
 
