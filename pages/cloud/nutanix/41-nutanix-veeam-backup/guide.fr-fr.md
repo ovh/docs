@@ -267,7 +267,7 @@ Enregistrez le fichier et lancez cette commande
 proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
-### Ajout d'un dépot pour les sauvegardes
+### Ajouter un dépot pour les sauvegardes
 
 Nous allons rajouter un stockage SMB qui se trouve sur un site distant accessible au travers d'un VPN.
 
@@ -319,9 +319,48 @@ Cliquez sur `No`{.action}
 
 ![Add SMB reposiory 12](images/04-add-smb-repository12.png){.thumbnail}
 
-Le nouveau dépot apparait 
+Le nouveau dépot apparait et est utilisable pour des sauvegardes
 
 ![Add SMB reposiory 13](images/04-add-smb-repository13.png){.thumbnail}
+
+### Mise en place d'une sauvegarde
+
+Nous allons créer une tâche de sauvegarde automatisée.
+
+Dans Veeam backup cliquez en bas sur `No`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
+
+![Create Backup JOB 01](images/05-createbackupjob01.png){.thumbnail}
+
+Saississez un nom dans `Name`{.action} et cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}
+
+![Create Backup JOB 02](images/05-createbackupjob02.png){.thumbnail}
+
+Cliquez sur le bouton  `Add`{.action}
+
+![Create Backup JOB 03](images/05-createbackupjob03.png){.thumbnail}
+
+Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la  `case à cocher`{.action} à gauche des machines virtuelles que vous voulez sauvegarder.
+
+![Create Backup JOB 04](images/05-createbackupjob04.png){.thumbnail}
+
+Cliquez sur `Next`{.action}
+
+![Create Backup JOB 05](images/05-createbackupjob05.png){.thumbnail}
+
+Sélectionnez le dépot dans  `Backup repository`{.action} et cliquez sur `Next`{.action}
+
+![Create Backup JOB 06](images/05-createbackupjob06.png){.thumbnail}
+
+Cochez la case `Run the job automatically`{.action}, choisissez l'heure de sauvegarde et cliquez sur `Next`{.action}
+
+![Create Backup JOB 07](images/05-createbackupjob07.png){.thumbnail}
+
+Cliquez sur `Finish`{.action} pour finir la création de la tâche de sauvegarde.
+
+![Create Backup JOB 08](images/05-createbackupjob07.png){.thumbnail}
+
+
+
 
 
 
