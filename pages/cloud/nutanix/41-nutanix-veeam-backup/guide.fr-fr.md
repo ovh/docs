@@ -29,17 +29,19 @@ Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via Prism Central. 
 - D'avoir installé VEEAM Backup et Replication sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
+- Prévoir 4 Go de mémoires , 60 Go de stockage et 4vCPU pour une machine virtuelle supplémentaire nécessaire au bon fonctionnement des sauvegardes d'un cluster Nutanix avec le logiciel **Veeam Backup**
+
 
 
 ## En pratique
 
-Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante sur une des offres d'OVHcloud en matière de stockage. 
+Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante sur une des offres d'OVHcloud de stockage proposée. 
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
 Nous allons créer un utilisateur spécifique dans Prism Element pour l'utilisation de Veeam Backup
 
-Au travers de **Prism central** connectez-vous sur Prism Element en cliquant dans **Cluster Quick Access** sur le cluster.
+Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant dans **Cluster Quick Access** sur le cluster.
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
@@ -90,6 +92,8 @@ Lancez l'installation de l'extension.
 > [!warning]
 > Avant de lancer d'exécuter l'installation bien s'assurer que la console VEEAM BACKUP ne soit pas lancée.
 >
+>
+
 
 ![Addon Installation 02](images/02-install-addon-nutanix-veeam01.png){.thumbnail}
 
@@ -115,15 +119,15 @@ Cliquez sur `Finish`{.action}.
 
 ![Addon Installation 06](images/02-install-addon-nutanix-veeam06.png){.thumbnail}
 
-### Ajouter le cluster Nutanix dans la configuration de Veeam
+### Intégrer le cluster Nutanix dans la configuration de **Veeam Backup**
 
-La configuration du cluster Nutanix dans Veeam ajoute une machine virtuelle à l'intérieur du  cluster Nutanix qui sert d'interface entre le logiciel de sauvegarde Veeam Backup et le cluster.
+Lors de La configuration de Veeam Backup pour Nutanix, une nouvelle machine virtuelle est ajoutée dans le cluster, elle sert d'interface entre le logiciel de sauvegarde **Veeam Backup** et le cluster.
 
 Lancez la console **Veeam Backup** et cliquez sur `Connect`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 01](images/03-addclusternutanix-to-veeam01.png){.thumbnail}
 
-Positionnez-vous dans `Backup Infrastucture`{.action}. choisissez `Managed Servers`{.action} et cliquez sur `Add Server`{.action}.
+Positionnez-vous dans `Backup Infrastucture`{.action} dans le mene en bas à droite, choisissez `Managed Servers`{.action} et cliquez sur `Add Server`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 02](images/03-addclusternutanix-to-veeam02.png){.thumbnail}
 
@@ -131,11 +135,11 @@ Cliquez sur `Nutanix AHV`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 03](images/03-addclusternutanix-to-veeam03.png){.thumbnail}
 
-Saisissez `l'adresse IP privée`{.action} de **Prism Element** dans DNS name or IP address et cliquez sur `Next`{.action}.
+Saisissez `l'adresse IP privée`{.action} de **Prism Element** dans **DNS name or IP address** et cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 04](images/03-addclusternutanix-to-veeam04.png){.thumbnail}
 
-Cliquez sur `Add`{.action} pour ajouter le compte utilisateur de **Prism element**
+Cliquez sur `Add`{.action} pour ajouter le compte utilisateur de **Prism Element**
 
 ![Addon Cluster Nutanix to Veeam 05](images/03-addclusternutanix-to-veeam05.png){.thumbnail}
 
@@ -148,7 +152,7 @@ Cliquez sur `OK`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 06](images/03-addclusternutanix-to-veeam06.png){.thumbnail}
 
-Vérifiez dans **Credentials** que le compte créé apparaisse et cliquez sur `Next`{.action}.
+Vérifiez dans **Credentials** que le compte créé soit sélectionné et cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 07](images/03-addclusternutanix-to-veeam07.png){.thumbnail}
 
@@ -156,7 +160,7 @@ Cliquez sur `Continue`{.action} pour passez outre le message d'avertissement con
 
 ![Addon Cluster Nutanix to Veeam 08](images/03-addclusternutanix-to-veeam08.png){.thumbnail}
 
-Cochez `Use the following IP address`{.action} et choisissez une adresse IP non utilisée , cette adresse sert au moment des sauvegardes et des restaurations de fichiers. Ensuite cliquez sur `Next`{.action}.
+Cochez `Use the following IP address`{.action} et choisissez une adresse IP privé non utilisée (cette adresse sert au moment des sauvegardes et des restaurations de fichiers) , ensuite cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 09](images/03-addclusternutanix-to-veeam09.png){.thumbnail}
 
@@ -176,7 +180,7 @@ Seléctionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action}
 
 ![Addon Cluster Nutanix to Veeam 13](images/03-addclusternutanix-to-veeam13.png){.thumbnail}
 
-Choisissez une nom dans `Name`{.action} et cliquez sur `Next`{.action} 
+Choisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action} 
 
 ![Addon Cluster Nutanix to Veeam 14](images/03-addclusternutanix-to-veeam14.png){.thumbnail}
 
@@ -184,7 +188,7 @@ Cliquez sur `Configure`{.action}
 
 ![Addon Cluster Nutanix to Veeam 15](images/03-addclusternutanix-to-veeam15.png){.thumbnail}
 
-Choisissez une adresse IP non utilisée sur le réseau local pour la machine virtuelle et cliquez sur `Ok`{.action} 
+Choisissez `une adresse IP`{.action} non utilisée sur le réseau local pour la machine virtuelle et cliquez sur `Ok`{.action} 
 
 ![Addon Cluster Nutanix to Veeam 16](images/03-addclusternutanix-to-veeam16.png){.thumbnail}
 
@@ -192,11 +196,11 @@ Cliquez sur `Next`{.action}
 
 ![Addon Cluster Nutanix to Veeam 17](images/03-addclusternutanix-to-veeam17.png){.thumbnail}
 
-Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la machine virtuelle spécifique à Veeam
+Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la machine virtuelle spécifique à Veeam.
 
 > [!warning]
-> Notez bien le compte utilisateur créé ainsi que le mot de passe il pourra servir pour se connecter en autonome sur la VM au travers
-> du navigateur WEB
+> Notez bien le compte utilisateur créé ainsi que le mot de passe il pourra servir pour se connecter sur la nouvelle machine virtuelle
+> au travers du navigateur WEB.
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
 
@@ -213,7 +217,7 @@ Vérifiez le compte utilisateurs dans **Credentials** et cliquez sur `Next`{.act
 
 ![Addon Cluster Nutanix to Veeam 20](images/03-addclusternutanix-to-veeam20.png){.thumbnail}
 
-Séléctionnez la case à cocher `Allow access to all backup repositories`{.action} et cliquez sur `Next`{.action}.
+Sélectionnez la case à cocher `Allow access to all backup repositories`{.action} et cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 21](images/03-addclusternutanix-to-veeam21.png){.thumbnail}
 
@@ -283,11 +287,11 @@ CLiquez sur `SMB share`{.action}.
 
 ![Add SMB reposiory 03](images/04-add-smb-repository03.png){.thumbnail}
 
-Saisissez le nom du dépot dans la zone de saisie `Name`{.action} et cliquez sur `Next`{.action}. 
+Saisissez le `nom du dépot`{.action} dans la zone de saisie **Name** et cliquez sur `Next`{.action}. 
 
 ![Add SMB reposiory 04](images/04-add-smb-repository04.png){.thumbnail}
 
-Ecrivez le nom UNC du partage dans `Shared folder`{.action} cochez la case `This share requires access credentials`{.action} et cliquez sur `Add`{.action}. 
+Ecrivez le `nom UNC`{.action} du partage dans **Shared folder** cochez la case `This share requires access credentials`{.action} et cliquez sur `Add`{.action}. 
 
 ![Add SMB reposiory 05](images/04-add-smb-repository05.png){.thumbnail}
 
