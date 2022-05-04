@@ -30,23 +30,23 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 
 ## En pratique
 
-Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
-Nous vous conseillons donc de **suivre l'ordre des étapes de diagnostic** ci-dessous afin de dépanner votre téléphone.<br>
-Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce guide, il n'est pas indispensable de suivre les étapes ultérieures.
-
-Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en fonction du défaut rencontré.
-
-![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
-
 Voici la table des matières de ce guide, vous pouvez cliquer sur une des entrées pour y arriver directement :
 
 [Etape 1 - Etablir un premier diagnostic](#step1)<br />
 [Etape 2 - Dépanner le téléphone depuis l'espace client OVHcloud](#step2)<br />
 [Etape 3 - Réinitialiser le téléphone (facultatif)](#step3)<br />
 [Etape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
-&emsp;&emsp;[4.1 Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
-&emsp;&emsp;[4.2 Effectuer un test croisé](#step4-2)<br />
+&emsp;&emsp;[4.1 - Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
+&emsp;&emsp;[4.2 - Effectuer un test croisé](#step4-2)<br />
 [Etape 5 - Contacter l'assistance OVHcloud](#step5)<br />
+
+Ce guide vous détaille les causes principales d'un défaut d'enregistrement de la ligne SIP associée à votre téléphone, suivant un ordre logique. 
+Nous vous conseillons donc de **suivre l'ordre des étapes de diagnostic** afin de dépanner votre téléphone.<br>
+Si votre téléphone retrouve son fonctionnement normal après avoir suivi l'une des premières étapes de ce guide, il n'est pas indispensable de suivre les étapes ultérieures.
+
+Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en fonction du défaut rencontré.
+
+![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
 ### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
 
@@ -114,7 +114,7 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 |---|---|
 |**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
 |**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
-|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
+|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
 |**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
 |**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
 |**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
