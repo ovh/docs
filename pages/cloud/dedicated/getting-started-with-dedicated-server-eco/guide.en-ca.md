@@ -167,7 +167,7 @@ For detailed instructions on how to configure IP aliasing, please refer to [this
 
 > [!primary]
 >
-> Please note that servers of the **Kimsufi** range only have one IPv4 address and one IPv6 address.
+> Please note that servers of the **Kimsufi** range only have one IPv4 address and one IPv6 address. Both will be configured automatically when installing the OS.
 >
 
 OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](../network-ipv6/).
