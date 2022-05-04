@@ -6,7 +6,7 @@ section: Sauvegardes
 order: 02
 ---
 
-**Dernière mise à jour le 03/05/2022**
+**Dernière mise à jour le 04/05/2022**
 
 ## Objectif
 
@@ -359,12 +359,69 @@ Cliquez sur `Finish`{.action} pour finir la création de la tâche de sauvegarde
 
 ![Create Backup JOB 08](images/05-createbackupjob07.png){.thumbnail}
 
+### Restauration d'un ordinateur virtuel
 
+Pour tester le bon fonctionnement des sauvegardes nous allons créer une tâche de restauration
 
+Se positionner dans le menu en bas sur `Home`{.action} choisissez dans le bandeau du haut `Restore`{.action} et prenez `Nutanix AHV`{.action}.
 
+![Restore VM 01](images/06-restorevm01.png){.thumbnail}
 
+Cliquez sur `Restore from AHV backup`{.action}.
 
+![Restore VM 02](images/06-restorevm02.png){.thumbnail}
 
+Cliquez sur `Entire VM restore`{.action}.
+
+![Restore VM 03](images/06-restorevm03.png){.thumbnail}
+
+Cliquez sur `Add`{.action}.
+
+![Restore VM 04](images/06-restorevm04.png){.thumbnail}
+
+Faites défiler et sélectionnez une `machine virtuelle`{.action} et cliquez sur `Add`{.action}.
+
+![Restore VM 05](images/06-restorevm05.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Restore VM 06](images/06-restorevm06.png){.thumbnail}
+
+Choisissez l'option `restore to a new location or with different settings`{.action} et cliquez sur `Next`{.action}.
+
+![Restore VM 07](images/06-restorevm07.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Restore VM 08](images/06-restorevm08.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Restore VM 09](images/06-restorevm09.png){.thumbnail}
+
+Renommez la VM dans `New name`{.action} et cliquez sur `Next`{.action}.
+
+![Restore VM 10](images/06-restorevm10.png){.thumbnail}
+
+Cliquez sur `Disconnect`{.action} pour isoler la machine virtuelle restaurée du réseau.
+
+![Restore VM 11](images/06-restorevm11.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Restore VM 12](images/06-restorevm12.png){.thumbnail}
+
+Cliquez sur `Next`{.action}.
+
+![Restore VM 13](images/06-restorevm13.png){.thumbnail}
+
+Cliquez sur `Finish`{.action}.
+
+![Restore VM 14](images/06-restorevm14.png){.thumbnail}
+
+Un apercu de l'état de la restauration se lance, il faut patienter le temps de la restauration.
+
+![Restore VM 15](images/06-restorevm15.png){.thumbnail}
 
 
 ## Aller plus loin <a name="gofurther"></a>
