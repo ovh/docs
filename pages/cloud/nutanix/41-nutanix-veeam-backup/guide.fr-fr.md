@@ -11,7 +11,7 @@ order: 02
 ## Objectif
 
 
-Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix. 
+Veeam backup est un logiciel de sauvegarde disponible pour Nutanix et qui fonctionne à l'aide d'un ajout. 
 
 **Apprenez à installer, configurer et utiliser VEEAM sur un cluster Nutanix sur un dossier partagé**
 
@@ -20,8 +20,6 @@ Veeam backup for Nutanix est un logiciel de sauvegarde disponible pour Nutanix.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-
-
 
 ## Prérequis
 
@@ -176,7 +174,7 @@ Cliquez sur `Yes`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 12](images/03-addclusternutanix-to-veeam12.png){.thumbnail}
 
-Selectionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action} 
+Sélectionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action} 
 
 ![Addon Cluster Nutanix to Veeam 13](images/03-addclusternutanix-to-veeam13.png){.thumbnail}
 
@@ -204,7 +202,7 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
 
-Saisissez ces informations avec le compte crée précèdemment dans Prism Element :
+Saisissez ces informations avec le compte créé précèdemment dans Prism Element :
 
 - **Username** : `proxy_user`{.action}
 - **Password** : `Mot de passe`{.action}
@@ -236,7 +234,7 @@ L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cau
 > Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des nom d'ordinateurs
 > Notamment celui qui sert pour le logiciel Veeam Backup. 
 
-Au travers de Prism Central connectez vous à la machine virtuelle NUTANIX-PROXY. 
+Au travers de Prism Central connectez-vous à la machine virtuelle NUTANIX-PROXY. 
 
 Cliquez en haut à gauche sur `icône`{.action} du menu principal et choisissez `VMs`{.action}.
 
@@ -296,15 +294,20 @@ Ecrivez le `nom UNC`{.action} du partage dans **Shared folder** cochez la case `
 
 ![Add SMB reposiory 05](images/04-add-smb-repository05.png){.thumbnail}
 
-Saisir le nom d'utilisateur dans `Username`{.action} ainsi que son mot de passe dans `Password`{.action} et cliquez sur `OK`{.action}
+Saisissez ces informations :
+
+- **Username** :  `nom d'utilisateur`{.action} 
+- **Password** :  `mot de passe`{.action} 
+
+Cliquez sur `OK`{.action}.
 
 ![Add SMB reposiory 06](images/04-add-smb-repository06.png){.thumbnail}
 
-Vérifiez que l'utilisateur apparraisse bien et cliquez sur `Next`{.action}
+Vérifiez le nom de l'utilisateur et cliquez sur `Next`{.action}.
 
 ![Add SMB reposiory 07](images/04-add-smb-repository07.png){.thumbnail}
 
-Cliquez sur `Next`{.action}
+Cliquez sur `Next`{.action}.
 
 ![Add SMB reposiory 08](images/04-add-smb-repository08.png){.thumbnail}
 
@@ -316,7 +319,7 @@ Cliquez sur `Next`{.action}
 
 ![Add SMB reposiory 10](images/04-add-smb-repository10.png){.thumbnail}
 
-Cliquez sur `Finish`{.action}
+Cliquez sur `Finish`{.action}.
 
 ![Add SMB reposiory 11](images/04-add-smb-repository11.png){.thumbnail}
 
@@ -336,15 +339,15 @@ Dans Veeam backup cliquez en bas sur `No`{.action} , ensuite ouvrez le menu `Bac
 
 ![Create Backup JOB 01](images/05-createbackupjob01.png){.thumbnail}
 
-Saississez un nom dans `Name`{.action} et cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}
+Saississez un `nom`{.action} dans **Name**, cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 02](images/05-createbackupjob02.png){.thumbnail}
 
-Cliquez sur le bouton  `Add`{.action}
+Cliquez sur le bouton `Add`{.action}.
 
 ![Create Backup JOB 03](images/05-createbackupjob03.png){.thumbnail}
 
-Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la  `case à cocher`{.action} à gauche des machines virtuelles que vous voulez sauvegarder.
+Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la  `case à cocher`{.action} à gauche des machines virtuelles.
 
 ![Create Backup JOB 04](images/05-createbackupjob04.png){.thumbnail}
 
@@ -356,19 +359,19 @@ Sélectionnez le dépot dans  `Backup repository`{.action} et cliquez sur `Next`
 
 ![Create Backup JOB 06](images/05-createbackupjob06.png){.thumbnail}
 
-Cochez la case `Run the job automatically`{.action}, choisissez l'heure de sauvegarde et cliquez sur `Next`{.action}
+Cochez la case `Run the job automatically`{.action}, choisissez `l'heure de sauvegarde`{.action} et cliquez sur `Next`{.action}
 
 ![Create Backup JOB 07](images/05-createbackupjob07.png){.thumbnail}
 
-Cliquez sur `Finish`{.action} pour finir la création de la tâche de sauvegarde.
+Cliquez sur `Finish`{.action} pour enregistrer la tâche de sauvegarde.
 
 ![Create Backup JOB 08](images/05-createbackupjob07.png){.thumbnail}
 
 ### Restauration d'un ordinateur virtuel
 
-Pour tester le bon fonctionnement des sauvegardes nous allons créer une tâche de restauration
+Pour tester le bon fonctionnement des sauvegardes nous allons executer une tâche de restauration.
 
-Se positionner dans le menu en bas sur `Home`{.action} choisissez dans le bandeau du haut `Restore`{.action} et prenez `Nutanix AHV`{.action}.
+Cliquez en bas à droite sur `Home`{.action}, dans l'option `Restore`{.action} prenez `Nutanix AHV`{.action}.
 
 ![Restore VM 01](images/06-restorevm01.png){.thumbnail}
 
@@ -431,7 +434,7 @@ Un apercu de l'état de la restauration se lance, il faut patienter le temps de 
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Documentation VEEAM concernant l'installation de VEEAM Backup](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
+[Documentation VEEAM concernant l'installation de VEEAM Backup pour Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
