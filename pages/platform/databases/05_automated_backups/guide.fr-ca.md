@@ -2,7 +2,7 @@
 title: Sauvegardes automatiques (EN)
 slug: backups
 excerpt: Discover the automated backup methods for each engine
-section: General Guides
+section: Guides généraux
 order: 001
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/backups'
@@ -20,7 +20,7 @@ We continuously improve our offers. You can follow and submit ideas to add to ou
 
 * Daily remote site backup:
 
-We back up our managed cloud databases every 1 (incremental snapshots), 12 or 24 hours (backups) — depending on the product — with the ability to restore from the latest point in time, based on the retention period of the chosen customer plan.
+We back up our managed public cloud databases every 1 (incremental snapshots), 12 or 24 hours (backups) — depending on the product — with the ability to restore from the latest point in time, based on the retention period of the chosen customer plan.
 
 * PITR:
 
