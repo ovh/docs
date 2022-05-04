@@ -1,5 +1,5 @@
 ---
-title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state'
+title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state (EN)'
 slug: use_object_storage_terraform_backend_state
 routes:
     canonical: 'https://docs.ovh.com/gb/en/public-cloud/use_object_storage_terraform_backend_state/'
