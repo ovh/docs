@@ -25,15 +25,15 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix et qui foncti
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être connecté sur le cluster via Prism Central. 
-- D'avoir installé VEEAM Backup et Replication sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
-- d'avoir 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour une machine virtuelle supplémentaire nécessaire au bon fonctionnement des sauvegardes d'un cluster Nutanix avec le logiciel **Veeam Backup**
+- Être connecté sur le cluster via **Prism Central**. 
+- D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
+- Disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
 
 
 
 ## En pratique
 
-Nous allons personnaliser VEEAM Backup & Replication pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante de type **NAS** en **SMB**. 
+Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante de type **NAS** en **SMB**. 
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -43,7 +43,7 @@ Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
-A partir de **Prism Element** allez dans les paramètres en cliquant sur l'icone representant un `engrenage`{.action} en haut à droite.
+A partir de **Prism Element** allez dans les paramètres en cliquant sur l'icône représentant un `engrenage`{.action} en haut à droite.
 
 ![Create User VEEAM PE 02](images/01-create-pe-veeamuser02.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Cliquez sur `Add`{.action} pour ajouter le compte utilisateur de **Prism Element
 
 ![Addon Cluster Nutanix to Veeam 05](images/03-addclusternutanix-to-veeam05.png){.thumbnail}
 
-Saisissez ces informations avec le compte créé précedemment dans Prism Element :
+Saisissez ces informations avec le compte créé précédemment dans **Prism Element** :
 
 - **Username** : `svc_veeam`{.action}
 - **Password** ! `Mot de passe`{.action}
@@ -202,7 +202,7 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
 
-Saisissez ces informations avec le compte créé précèdemment dans Prism Element :
+Saisissez ces informations avec le compte créé précédemment dans Prism Element :
 
 - **Username** : `proxy_user`{.action}
 - **Password** : `Mot de passe`{.action}
@@ -231,25 +231,24 @@ L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cau
 
 > [!primary]
 > 
-> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des nom d'ordinateurs
+> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des noms d'ordinateurs
 > Notamment celui qui sert pour le logiciel Veeam Backup. 
 
-Au travers de Prism Central connectez-vous à la machine virtuelle NUTANIX-PROXY. 
+Au travers de **Prism Central** connectez-vous à la machine virtuelle NUTANIX-PROXY. 
 
 Cliquez en haut à gauche sur `icône`{.action} du menu principal et choisissez `VMs`{.action}.
 
 ![Configure Nutanix PROXY HOST 01](images/03-modify-etchostproxy01.png){.thumbnail}
 
-
 Cliquez sur la machine virtuelle NUTANIX-PROXY. 
 
 ![Configure Nutanix PROXY HOST 02](images/03-modify-etchostproxy02.png){.thumbnail}
 
-cliquez sur `Launch console`{.action}.
+Cliquez sur `Launch console`{.action}.
 
 ![Configure Nutanix PROXY HOST 03](images/03-modify-etchostproxy03.png){.thumbnail}
 
-Connectez vous avec le compte utilisateur créé précedemment et le mot de passe de ce compte.
+Connectez-vous avec le compte utilisateur créé précédemment et le mot de passe de ce compte.
 
 ![Configure Nutanix PROXY HOST 04](images/03-modify-etchostproxy04.png){.thumbnail}
 
@@ -259,7 +258,7 @@ A partir de la console modifier le ficher **/etc/hosts**
 proxy_user@NUTANIX-PROXY~$sudo nano /etc/hosts
 [sudo] password for proxy_user:
 ```
-Ajoutez  cette information qui est l'adresse IP et le nom de la machine virtuelle ou est installée Veeam Backup.
+Ajoutez cette information qui correspond à l'adresse IP et le nom de la machine virtuelle ou est installée Veeam Backup.
 
 ```bash
 192.168.0.245 VEEAM-BACKUP 
@@ -270,29 +269,29 @@ Enregistrez le fichier et lancez cette commande
 proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
-### Ajouter un dépot pour les sauvegardes
+### Ajouter un dépôt pour les sauvegardes
 
 Nous allons rajouter un stockage SMB qui se trouve sur un site distant accessible au travers d'un VPN.
 
-Au travers de l'interface Veeam Backup cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
+A partir de la console **Veeam Backup** cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
-![Add SMB reposiory 01](images/04-add-smb-repository01.png){.thumbnail}
+![Add SMB repository 01](images/04-add-smb-repository01.png){.thumbnail}
 
 Choisissez `Network attached storage`{.action}. 
 
-![Add SMB reposiory 02](images/04-add-smb-repository02.png){.thumbnail}
+![Add SMB repository 02](images/04-add-smb-repository02.png){.thumbnail}
 
-CLiquez sur `SMB share`{.action}. 
+Cliquez sur `SMB share`{.action}. 
 
-![Add SMB reposiory 03](images/04-add-smb-repository03.png){.thumbnail}
+![Add SMB repository 03](images/04-add-smb-repository03.png){.thumbnail}
 
-Saisissez le `nom du dépot`{.action} dans la zone de saisie **Name** et cliquez sur `Next`{.action}. 
+Saisissez le `nom du dépôt`{.action} dans la zone de saisie **Name** et cliquez sur `Next`{.action}. 
 
-![Add SMB reposiory 04](images/04-add-smb-repository04.png){.thumbnail}
+![Add SMB repository 04](images/04-add-smb-repository04.png){.thumbnail}
 
 Ecrivez le `nom UNC`{.action} du partage dans **Shared folder** cochez la case `This share requires access credentials`{.action} et cliquez sur `Add`{.action}. 
 
-![Add SMB reposiory 05](images/04-add-smb-repository05.png){.thumbnail}
+![Add SMB repository 05](images/04-add-smb-repository05.png){.thumbnail}
 
 Saisissez ces informations :
 
@@ -301,45 +300,45 @@ Saisissez ces informations :
 
 Cliquez sur `OK`{.action}.
 
-![Add SMB reposiory 06](images/04-add-smb-repository06.png){.thumbnail}
+![Add SMB repository 06](images/04-add-smb-repository06.png){.thumbnail}
 
 Vérifiez le nom de l'utilisateur et cliquez sur `Next`{.action}.
 
-![Add SMB reposiory 07](images/04-add-smb-repository07.png){.thumbnail}
+![Add SMB repository 07](images/04-add-smb-repository07.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Add SMB reposiory 08](images/04-add-smb-repository08.png){.thumbnail}
+![Add SMB repository 08](images/04-add-smb-repository08.png){.thumbnail}
 
-Cliquez sur `Apply`{.action}
+Cliquez sur `Apply`{.action}.
 
-![Add SMB reposiory 09](images/04-add-smb-repository09.png){.thumbnail}
+![Add SMB repository 09](images/04-add-smb-repository09.png){.thumbnail}
 
-Cliquez sur `Next`{.action}
+Cliquez sur `Next`{.action}.
 
-![Add SMB reposiory 10](images/04-add-smb-repository10.png){.thumbnail}
+![Add SMB repository 10](images/04-add-smb-repository10.png){.thumbnail}
 
 Cliquez sur `Finish`{.action}.
 
-![Add SMB reposiory 11](images/04-add-smb-repository11.png){.thumbnail}
+![Add SMB repository 11](images/04-add-smb-repository11.png){.thumbnail}
 
-Cliquez sur `No`{.action}
+Cliquez sur `No`{.action}.
 
-![Add SMB reposiory 12](images/04-add-smb-repository12.png){.thumbnail}
+![Add SMB repository 12](images/04-add-smb-repository12.png){.thumbnail}
 
-Le nouveau dépot apparait et est utilisable pour des sauvegardes
+Le nouveau dépôt apparait et est utilisable pour des sauvegardes.
 
-![Add SMB reposiory 13](images/04-add-smb-repository13.png){.thumbnail}
+![Add SMB repository 13](images/04-add-smb-repository13.png){.thumbnail}
 
 ### Mise en place d'une sauvegarde
 
 Nous allons créer une tâche de sauvegarde automatisée.
 
-Dans Veeam backup cliquez en bas sur `No`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
+Dans **Veeam backup** cliquez en bas sur `No`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
 
 ![Create Backup JOB 01](images/05-createbackupjob01.png){.thumbnail}
 
-Saississez un `nom`{.action} dans **Name**, cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}.
+Saisissez un `nom`{.action} dans **Name**, cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 02](images/05-createbackupjob02.png){.thumbnail}
 
@@ -347,7 +346,7 @@ Cliquez sur le bouton `Add`{.action}.
 
 ![Create Backup JOB 03](images/05-createbackupjob03.png){.thumbnail}
 
-Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la  `case à cocher`{.action} à gauche des machines virtuelles.
+Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la `case à cocher`{.action} à gauche des machines virtuelles.
 
 ![Create Backup JOB 04](images/05-createbackupjob04.png){.thumbnail}
 
@@ -355,7 +354,7 @@ Cliquez sur `Next`{.action}
 
 ![Create Backup JOB 05](images/05-createbackupjob05.png){.thumbnail}
 
-Sélectionnez le dépot dans  `Backup repository`{.action} et cliquez sur `Next`{.action}
+Sélectionnez le dépôt dans  `Backup repository`{.action} et cliquez sur `Next`{.action}
 
 ![Create Backup JOB 06](images/05-createbackupjob06.png){.thumbnail}
 
@@ -369,7 +368,7 @@ Cliquez sur `Finish`{.action} pour enregistrer la tâche de sauvegarde.
 
 ### Restauration d'un ordinateur virtuel
 
-Pour tester le bon fonctionnement des sauvegardes nous allons executer une tâche de restauration.
+Pour tester le bon fonctionnement des sauvegardes nous allons exécuter une tâche de restauration.
 
 Cliquez en bas à droite sur `Home`{.action}, dans l'option `Restore`{.action} prenez `Nutanix AHV`{.action}.
 
@@ -427,7 +426,7 @@ Cliquez sur `Finish`{.action}.
 
 ![Restore VM 14](images/06-restorevm14.png){.thumbnail}
 
-Un apercu de l'état de la restauration se lance, il faut patienter le temps de la restauration.
+Un aperçu de l'état de la restauration se lance, il faut patienter quelques temps en fonction de la taille de la machine virtuelle.
 
 ![Restore VM 15](images/06-restorevm15.png){.thumbnail}
 
