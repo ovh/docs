@@ -5,7 +5,7 @@ excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 15/03/2022**
+**Dernière mise à jour le 04/05/2022**
 
 ## Objectif
 
@@ -25,6 +25,10 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 - Avoir toutes les informations relatives à votre IPv6 (préfix, passerelle...).
 - Avoir des connaissances de base en SSH et en réseau.
 
+> [!warning]
+> À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPv6 (/128). IPv6 sera configuré automatiquement à l’installation du système d’exploitation.
+>
+
 ## En pratique
 
 En installant votre serveur à l’aide d’un modèle de système d’exploitation Linux fourni par OVHcloud, vous constaterez que la première adresse IPv6 (l'adresse principale) est déjà configurée, prête à l’emploi.
@@ -43,10 +47,6 @@ Si vous souhaitez configurer configurer plusieurs adresses IPv6 sur votre serveu
 > Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](https://docs.ovh.com/ca/fr/api/api-premiers-pas/). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
 >
 
-> [!warning]
-> À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPV6 (/128). Dans ce cas, référez-vous à ce [guide](https://docs.ovh.com/ca/fr/vps/configurer-ipv6/) pour la configuration de l’ipv6 sur un serveur Kimsufi.
->
->
 
 > [!api]
 >
