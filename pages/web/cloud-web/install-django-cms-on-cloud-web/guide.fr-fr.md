@@ -5,6 +5,8 @@ excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cl
 section: Tutoriels
 ---
 
+**Dernière mise à jour le 04/05/2022**
+
 ## Objectif
 
 Django CMS est un système de gestion de contenu (CMS) écrit en Python et basé sur le framework web Django.
@@ -17,12 +19,10 @@ L’[hébergement Cloud Web d'OVHcloud](https://www.ovhcloud.com/fr/web-hosting/
 
 - Disposer d’un [hébergement Cloud Web d'OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
-
-### Ce que vous devez savoir
-
-- Les bases de l’écosystème Python.
-- Se connecter en SSH.
-- Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
+- Ce que vous devez savoir:
+  - Les bases de l’écosystème Python.
+  - Se connecter en SSH.
+  - Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
 
 ## En pratique
 
@@ -69,7 +69,7 @@ Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifi
 Si ce n’est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
 - Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
-- Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
+- Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées selon votre situation personnelle. Le tableau ci-dessous montre celles utilisées pour ce tutoriel.
 
@@ -282,7 +282,7 @@ Modifiez le fichier « mysite/settings.py » avec la commande suivante, en rem
     
 ### Étape 7 : redémarrez le _daemon_ Python
 
-Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis choisissez `Redémarrer`{.action}.
+Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     

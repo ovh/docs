@@ -5,7 +5,7 @@ excerpt: Cómo empezar con un alojamiento Cloud Web
 section: Primeros pasos
 ---
 
-**Última actualización: 11/07/2018**
+**Última actualización: 04/05/2022**
 
 ## Objetivo
 

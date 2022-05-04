@@ -5,7 +5,7 @@ excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
 section: Introdução
 ---
 
-**Última atualização: 11/07/2018**
+**Última atualização: 04/05/2022**
 
 ## Sumário
 

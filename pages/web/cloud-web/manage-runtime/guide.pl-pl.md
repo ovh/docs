@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostin
 section: 'Konfiguracja hostingu'
 ---
 
-**Ostatnia aktualizacja z dnia 23-01-2020**
+**Ostatnia aktualizacja z dnia 04-05-2022**
 
 ## Wprowadzenie
 

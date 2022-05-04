@@ -6,6 +6,8 @@ section: Tutoriales
 order: 1
 ---
 
+**Última actualización: 04/05/2022**
+
 ## Introducción
 
 [Ghost](https://ghost.org/){.external} es un gestor de contenidos open source destinado a blogueros o periodistas que simplifica el proceso de publicación en internet. El programa está escrito en JavaScript y utiliza [Node.js](https://nodejs.org/){.external}, un entorno de ejecución que permite crear sitios web y API en JavaScript del lado del servidor.
@@ -16,18 +18,14 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 
 ## Requisitos
 
-### Conocimientos necesarios
-
-- Estar familiarizado con el ecosistema Node.js.
-- Conectarse por SSH.
-- Editar un archivo en línea de comandos con Vim, Emacs o Nano, por ejemplo.
-
-### Hardware y software necesarios
-
 - Tener contratado un plan de [hosting Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external} de OVHcloud.
 - Haber activado Node.js como motor de ejecución.
 - Haber añadido el dominio correspondiente como multisitio y haber establecido Node.js como motor de ejecución.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
+- Conocimientos necesarios:
+    - Estar familiarizado con el ecosistema Node.js.
+    - Conectarse por SSH.
+    - Editar un archivo en línea de comandos con Vim, Emacs o Nano, por ejemplo.
 
 ## Procedimiento
 
@@ -246,7 +244,7 @@ Ya hemos terminado de instalar y configurar Ghost. Solo queda reiniciar el demon
 
 ### 7. Reiniciar el demonio Node.js
 
-Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
+Para reiniciar el demonio Node.js, vuelva al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Abra la pestaña `Multisitio`{.action}, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al dominio y seleccione `Reiniciar`{.action}.
 
 A continuación, la aplicación estará accesible desde el dominio indicado en la configuración del multisitio.
 
@@ -264,3 +262,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Conclusiones
 
 En este tutorial hemos explicado cómo instalar una aplicación Node.js en un hosting Cloud Web. ¡Ya puede empezar a utilizar Ghost y publicar en él sus primeros contenidos!
+
+## Más información
+
+[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/es/domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}
+
+[Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/){.external}
+
+[Instalar un sitio web con un módulo en un clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/){.external}
+
+[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/){.external}
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

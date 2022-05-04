@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie die Runtime Engines Ihres Hostings verwalte
 section: Webhosting-Konfiguration
 ---
 
-**Letzte Aktualisierung am 23.01.2020**
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 

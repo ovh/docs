@@ -5,6 +5,8 @@ excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
 section: Tutoriels
 ---
 
+**Dernière mise à jour le 04/05/2022**
+
 ## Objectif
 
 [Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
@@ -16,12 +18,10 @@ section: Tutoriels
 
 - Disposer d’un [hébergement Cloud WebOVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
 - Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
-
-### Ce que vous devez savoir
-
-- Les bases de l’écosystème Ruby.
-- Se connecter enSSH.
-- Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
+- Ce que vous devez savoir :
+  - Les bases de l’écosystème Ruby.
+  - Se connecter en SSH.
+  - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
 
 ## En pratique
 
@@ -67,12 +67,10 @@ Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifi
 | Dossier racine              | Il s'agit du dossier racine qui devra contenir le code source du domaine concerné (il correspond au « DocumentRoot »). Dans notre exemple, nous choisissons de spécifier « camaleon ». Celui-ci devra donc contenir notre code source Ruby. |
 | Moteur d'exécution          | Il s'agit du moteur d'exécution associé au domaine concerné. Le nom qui s’affiche correspond au *Nom personnalisé* que vous avez défini lors de la création du moteur d'exécution. Dans notre exemple, vous devriez retrouver *Ruby 2.6*.  |
 
-
-
 Si ce n’est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
 *   **Si vous souhaitez ajouter un multisite** : cliquez sur `Actions`{.action}, puis sur `Ajouter un domaine ou sous-domaine`{.action} à droite dutableau.
-*   **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
+*   **Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées selon votre situation personnelle. Le tableau ci-dessous montre celles utilisées pour cetutoriel.
 
@@ -82,7 +80,6 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 | Domaine                    |  `camaleon.demo-cloudweb.ovh`                          |
 | Dossier racine             |  `camaleon`                                            |
 | Moteur d'exécution         |  Ruby 2.6                                              |
-
 
 En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». 
 
@@ -94,12 +91,9 @@ En ce qui concerne les options supplémentaires, choisissez celles que vous souh
 Récupérez d’abord les informations vous permettant de vous connecter. Pour cela, positionnez-vous sur l’onglet `FTP - SSH`{.action}. Si celui-ci n’apparaît pas dans la liste, appuyez au préalable sur le bouton représentant trois barres. Les informations liées à votre espace de stockage apparaissent alors. Repérez celles mentionnées dans le tableau :
 
 - **SSH** : L'élément qui apparaît vous permet de récupérer deux informations. 
-  
   - **l'adresse du serveur** : elle débute après `ssh://` et se termine avant les `:`
   - **le port de connexion** : le numéro est mentionné après les `:`
-  
   On pourrait par exemple retrouver : `ssh://sshcloud.cluster000.hosting.ovh.net:12345`, donc `sshcloud.cluster000.hosting.ovh.net` en adresse de serveur et `12345` en port de connexion.
-
 - **Login** : Il s'agit de l'identifiant SSH principal créé sur votre hébergement.
 
 Si vous ne connaissez plus le mot de passe de l’utilisateur SSH, cliquez sur le bouton `...`{.action} à droite de l’utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`{.action}. 
@@ -244,7 +238,7 @@ democld@cloudweb-ssh:~/camaleon $ RAILS_ENV=production rake assets:precompile
 
 ### Étape 6 : redémarrer le *daemon* Ruby
 
-Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}. 
+Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votremultisite. 
 

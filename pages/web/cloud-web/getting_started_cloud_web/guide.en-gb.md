@@ -5,7 +5,7 @@ excerpt: 'Find out how to get started with a Cloud Web hosting plan'
 section: 'Getting started'
 ---
 
-**Last updated 11th July 2018**
+**Last updated 4th may 2022**
 
 ## Objective
 

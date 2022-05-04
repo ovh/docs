@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your Web Hosting plan’s runtime software appl
 section: 'Configuring the web hosting plan'
 ---
 
-**Last updated 23rd March 2020**
+**Last updated 4th may 2022**
 
 ## Objective
 

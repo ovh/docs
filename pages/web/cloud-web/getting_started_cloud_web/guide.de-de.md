@@ -5,7 +5,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web 
 section: 'Erste Schritte'
 ---
 
-**Stand 11.07.2018**
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 

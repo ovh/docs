@@ -5,7 +5,7 @@ excerpt: Dowiedz się, jak rozpocząć korzystanie z hostingu Cloud Web
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-07-11**
+**Ostatnia aktualizacja z dnia 04-05-2022**
 
 ## Wprowadzenie
 

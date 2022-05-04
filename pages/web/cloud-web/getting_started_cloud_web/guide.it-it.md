@@ -5,7 +5,7 @@ excerpt: Come eseguire le prime operazioni su un Cloud Web
 section: Per iniziare
 ---
 
-**Ultimo aggiornamento: 11/07/2018**
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 

@@ -5,7 +5,7 @@ excerpt: 'Cómo realizar las operaciones relativas a los motores de ejecución e
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 23/1/2020**
+**Última actualización: 04/05/2022**
 
 ## Objetivo
 

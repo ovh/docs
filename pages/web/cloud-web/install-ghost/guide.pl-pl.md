@@ -6,6 +6,8 @@ section: Tutoriale
 order: 1
 ---
 
+**Ostatnia aktualizacja z dnia 04-05-2022**
+
 ## Wprowadzenie
 
 [Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
@@ -16,18 +18,16 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ## Wymagania początkowe
 
-### Co powinieneś umieć:
-
-- Znać podstawy ekosystemu Node.js
-- Łączyć się z serwerem za pomocą protokołu SSH
-- Edytować plik za pomocą wiersza poleceń przy użyciu (na przykład) Vim, Emacs lub Nano.
-
 ### Powinieneś posiadać:
 
 - Hosting [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external} od OVHcloud
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
+-Co powinieneś umieć:
+    - Znać podstawy ekosystemu Node.js
+    - Łączyć się z serwerem za pomocą protokołu SSH
+    - Edytować plik za pomocą wiersza poleceń przy użyciu (na przykład) Vim, Emacs lub Nano.
 
 ## W praktyce
 
@@ -74,7 +74,7 @@ W powyższej tabeli zwróć uwagę na dwie kolumny. Upewnij się, czy silnik Nod
 Jeśli nie znajdujesz, dodaj nową stronę w opcji MultiSite lub zmień istniejącą.
 
 - **jeśli chcesz dodać stronę podpiętą w opcji MultiSite**: kliknij `Dodaj domenę lub subdomenę`{.action} po prawej stronie tabeli.
-- **jeśli chcesz zmienić stronę podpiętą w opcji MultiSite**: kliknij koło zębate po prawej stronie odpowiedniej domeny, po czym kliknij `Zmień`{.action}.
+- **jeśli chcesz zmienić stronę podpiętą w opcji MultiSite**: kliknij przycisk `...`{.action} po prawej stronie nazwy domeny, a następnie `Zmień`{.action}.
 
 W oknie, które się wyświetla, wprowadź wymagane informacje: Poniższa tabela wyszczególnia informacje użyte na potrzeby tego tutoriala.
 
@@ -247,7 +247,7 @@ Instalacja i konfiguracja silnika Ghost są zakończone. Teraz uruchom ponownie 
 
 ### Etap 7: ponowne uruchomienie *daemona* Node.js
 
-Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, kliknij koło zębate po prawej stronie nazwy odpowiedniej domeny, po czym kliknij `Uruchom ponownie`{.action}.
+Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, po prawej stronie nazwy wybranej domeny kliknij na przycisk `...`{.action} po prawej stronie, po czym kliknij `Uruchom ponownie`{.action}.
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 
@@ -265,3 +265,16 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Podsumowanie
 
 W tym tutorialu przedstawiliśmy poszczególne etapy instalacji aplikacji Node.js na hostingu Cloud Web. Teraz czas na korzystanie z Ghosta i publikację pierwszych treści!
+
+## Sprawdź również
+
+[Przeniesienie strony WWW do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+
+[Umieszczenie strony w Internecie](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/){.external}
+
+[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/){.external}
+
+[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/){.external}
+
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

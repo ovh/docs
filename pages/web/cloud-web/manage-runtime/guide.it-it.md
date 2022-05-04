@@ -5,7 +5,7 @@ excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare a
 section: 'Configurazione dell’hosting'
 ---
 
-**Ultimo aggiornamento: 23/01/2020**
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 

@@ -5,7 +5,7 @@ excerpt: Découvrez comment bien débuter avec un hébergement Cloud Web
 section: Premiers pas
 ---
 
-**Dernière mise à jour le 11/07/2018**
+**Dernière mise à jour le 04/05/2022**
 
 ## Objectif
 

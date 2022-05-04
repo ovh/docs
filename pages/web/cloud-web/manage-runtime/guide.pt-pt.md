@@ -6,7 +6,7 @@ section: 'Configuração do alojamento'
 hidden: true
 ---
 
-**Última atualização: 23/01/2020**
+**Última atualização: 04/05/2022**
 
 ## Sumário
 

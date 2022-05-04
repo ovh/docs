@@ -6,6 +6,8 @@ section: Tutoriels
 order: 2
 ---
 
+**Dernière mise à jour le 04/05/2022**
+
 ## Objective
 
 [Etherpad](https://etherpad.org/){.external} est un éditeur de texte en ligne collaboratif en temps réel. Il permet à plusieurs personnes d'écrire simultanément des fichiers texte via une interface web. Etherpad est écrit en JavaScript et utilise Node.js, une plateforme logicielle permettant de créer vos sites et API en JavaScript côté serveur.
@@ -20,11 +22,9 @@ L'[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/clou
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
-
-### Ce que vous devez savoir
-
-- Les bases de l'écosystème Node.js.
-- Se connecter en SSH.
+- Ce que vous devez savoir:
+    - Les bases de l'écosystème Node.js.
+    - Se connecter en SSH.
 
 ## En pratique
 
@@ -71,7 +71,7 @@ Dans le tableau, vérifiez que le moteur d'exécution Node.js est bien lié aux 
 Si ce n'est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
 - **Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
-- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du domaine concerné, puis sur `Modifier`{.action}.
+- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s'affiche, complétez les informations demandées selon votre situation personnelle. Voici celles que nous avons utilisées pour ce tutoriel :
 
@@ -152,7 +152,7 @@ demonon@cloudweb-ssh:~/etherpad [master]$ ln -fs node_modules/ep_etherpad-lite/n
 
 ### Étape 5 : redémarrer le *daemon* Node.js
 
-Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}
+Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis sur `Redémarrer`{.action}
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 

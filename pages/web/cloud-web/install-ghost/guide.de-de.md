@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Stand 03.09.2019**
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 
@@ -24,12 +24,10 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 - Sie haben Node.js als Runtime Engine aktiviert.
 - Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
-
-### Erforderliche Kenntnisse:
-
-- Sie haben Grundkenntnisse im Node.js-Ökosystem.
-- Sie wissen, wie Sie sich via SSH verbinden.
-- Sie können eine Datei in der Kommandozeile zum Beispiel via Vim, Emacs oder Nano bearbeiten.
+- Erforderliche Kenntnisse:
+    - Sie haben Grundkenntnisse im Node.js-Ökosystem.
+    - Sie wissen, wie Sie sich via SSH verbinden.
+    - Sie können eine Datei in der Kommandozeile zum Beispiel via Vim, Emacs oder Nano bearbeiten.
 
 ## Beschreibung
 
@@ -76,7 +74,7 @@ Zwei Spalten enthalten für uns wichtige Informationen. Stellen Sie sicher, dass
 Ist das nicht der Fall, fügen Sie eine neue Multisite hinzu oder ändern Sie die vorhandene Multisite.
 
 - **Wenn Sie eine Multisite hinzufügen möchten**: Klicken Sie rechts neben der Tabelle auf `Eine Domain oder Subdomain hinzufügen`{.action}.
-- **Wenn Sie eine vorhandene Multisite ändern möchten**: Klicken Sie rechts neben der betreffenden Domain auf das Zahnrad-Symbol und dann auf `Ändern`{.action}.
+- **Wenn Sie eine vorhandene Multisite ändern möchten**: klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Domain und dann auf `Ändern`{.action}.
 
 Geben Sie im angezeigten Fenster die für Ihre Situation notwendigen Informationen ein. Die nachstehende Tabelle enthält die für dieses Tutorial verwendeten Informationen.
 
@@ -249,7 +247,7 @@ Installation und Konfiguration von Ghost sind hiermit abgeschlossen. Starten Sie
 
 ### Schritt 7: Node.js-*Daemon* neu starten
 
-Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie zum Tab `Multisite`{.action} und klicken Sie rechts neben der betreffenden Domain auf das Zahnrad-Symbol, dann auf `Neu starten`{.action}.
+Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie zum Tab `Multisite`{.action} , klicken Sie rechts neben der betreffenden Domain auf den Button `...`{.action} rechts, dann auf `Neu starten`{.action}.
 
 Nach dem Neustart ist die Anwendung über die in der Konfiguration Ihrer Multisite ausgewählte Domain erreichbar.
 
@@ -267,3 +265,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Zusammenfassung
 
 Wir haben gesehen, wie man anhand der verschiedenen Schritte eine Node.js-Anwendung auf einem Cloud Web Hosting installiert. Sie können Ghost jetzt verwenden und Ihre ersten Inhalte veröffentlichen!
+
+## Weiterführende Informationen
+
+[Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
+
+[Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external}
+
+[Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
+
+[Mehrere Websites auf einem Webhosting einrichten](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/){.external}
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
