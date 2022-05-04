@@ -1,6 +1,6 @@
 ---
 title: "Déconnecter l'image ISO d'une VM"
-excerpt: Comment déconnecter une image ISO d'une machine virtuelle ?
+excerpt: "Comment déconnecter une image ISO d'une machine virtuelle ?"
 slug: disconnect_iso_from_vm
 section: Premiers pas
 ---
@@ -9,7 +9,7 @@ section: Premiers pas
 
 ## Objectif
 
-Si un ISO est connecté à une VM, celle si ne peut être migrée, ni manuellement, ni automatiquement. Cela peut donc empêcher le fonctionnement correct de DRS et la mise en maintenance de l'hôte qui l'héberge.
+Si un ISO est connecté à une VM, celle-ci ne peut être migrée, ni manuellement, ni automatiquement. Cela peut donc empêcher le fonctionnement correct de DRS et la mise en maintenance de l'hôte qui l'héberge.
 
 ## Prérequis
 
