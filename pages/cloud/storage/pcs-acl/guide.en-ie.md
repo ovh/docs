@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 040
 ---
 
-**Last updated 23rd September 2021**
+**Last updated 04 May 2022**
 
 ## Objective
 
@@ -655,7 +655,7 @@ Sync To:
 Sync Key:
 Accept-Ranges: bytes
 X-Storage-Policy: PCS
-Last-Modified: Thu, 26 Aug 2021 07:38:40 GMT
+Last-Modified: Wed, 04 May 2022 18:00:00 GMT
 X-Timestamp: 1629925988.34920
 Content-Type: text/plain; charset=utf-8
 Vary: Accept
