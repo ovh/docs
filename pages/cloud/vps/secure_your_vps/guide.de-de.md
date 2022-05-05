@@ -20,7 +20,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 > [!warning]
 >Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bitte denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/en/ (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 ## Voraussetzungen

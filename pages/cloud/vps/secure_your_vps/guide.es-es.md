@@ -19,7 +19,7 @@ Al contratar su VPS, puede elegir una distribución o sistema operativo que quie
  
 > [!warning]
 >
-> OVHcloud ofrece máquinas cuya responsabilidad recae en usted. Nosotros no tenemos acceso a estas máquinas y no somos administradores de ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las tareas más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la seguridad del servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
+> OVHcloud ofrece máquinas cuya responsabilidad recae en usted. Nosotros no tenemos acceso a los datos alojados en estas máquinas y no somos los administradores. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las tareas más habituales. No obstante, si tiene dificultades o dudas con respecto a la administración, el uso o la seguridad del servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 > 
 
 ## Requisitos

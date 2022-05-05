@@ -32,7 +32,7 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 
 In dieser Anleitung finden Sie die Konfigurationen für die gängigsten Distributionen.
 
-### Debian 10
+### Debian 10/11
 
 #### Schritt 1: Die Quelldatei sichern
 

@@ -20,7 +20,7 @@ Quando encomendar o seu VPS, pode escolher uma distribuição ou um sistema oper
  
 > [!warning]
 >
-> A OVHcloud fornece-lhe máquinas cuja responsabilidade lhe cabe. De facto, não temos acesso a estas máquinas e não somos administradores destas. o cliente é o único responsável pela gestão e pela segurança do serviço. Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas quanto à administração, utilização ou segurança do seu servidor, recomendamos que recorra a um prestador de serviços especializado. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> A OVHcloud fornece-lhe máquinas cuja responsabilidade lhe cabe. De facto, não temos acesso aos dados alojados nestas máquinas e não somos os administradores. o cliente é o único responsável pela gestão e pela segurança do serviço. Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou dúvidas quanto à administração, utilização ou segurança do seu servidor, recomendamos que recorra a um prestador de serviços especializado. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
 > 
 
 ## Requisitos

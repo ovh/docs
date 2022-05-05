@@ -31,7 +31,7 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 ## W praktyce
 Poniżej przedstawiamy konfigurację dla dystrybucji bazowych.
 
-### Debian 10
+### Debian 10/11
 
 #### Krok 1: utworzenie pliku konfiguracyjnego
 
