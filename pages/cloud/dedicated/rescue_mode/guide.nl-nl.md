@@ -27,7 +27,7 @@ U kunt de reddingsmode activeren door in te loggen op uw [OVH Control Panel](htt
 
 ![Wijzig de opstartmodus](images/rescue-mode-01.png){.thumbnail}
 
-Selecteer in het volgende scherm `Opstarten in reddingsmodus`{.action}. Als uw server een Linux-besturingssysteem heeft, selecteert u `rescue64-pro`{.action} in de vervolgkeuzelijst. Als u een Windows-server hebt, selecteert u `WinRescue`{.action}. Voer ten slotte uw e-mailadres in het tekstveld in en klik op `Volgende`{.action}.
+Selecteer in het volgende scherm `Opstarten in reddingsmodus`{.action}. Als uw server een Linux-besturingssysteem heeft, selecteert u `rescue-customer`{.action} in de vervolgkeuzelijst. Als u een Windows-server hebt, selecteert u `WinRescue`{.action}. Voer ten slotte uw e-mailadres in het tekstveld in en klik op `Volgende`{.action}.
 
 ![Rescue-pro modus](images/rescue-mode-03.png){.thumbnail}
 

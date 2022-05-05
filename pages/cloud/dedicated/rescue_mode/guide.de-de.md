@@ -45,7 +45,7 @@ Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `.
 
 ![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
 
-Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue64-pro`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
+Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue-customer`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
 <br>Klicken Sie auf `Weiter`{.action} um mit dem nächsten Schritt fortzufahren, und dann auf `Bestätigen`{.action}.
 
 ![rescue-customer](images/rescue-mode-08.png){.thumbnail}

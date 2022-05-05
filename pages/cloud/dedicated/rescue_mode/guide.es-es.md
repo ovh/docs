@@ -46,7 +46,7 @@ Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} 
 
 ![Cambiar el modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
-En la siguiente página, seleccione **Arrancar en modo rescue**. Si el sistema operativo del servidor es Linux, seleccione `rescue64-pro`{.action} en la lista desplegable. Si el servidor está en Windows, seleccione `WinRescue`{.action} (ver la [sección de la guía abajo](#windowsrescue)). Indique otra dirección de correo electrónico si **no** desea que la información de identificación de la conexión se envíe a la dirección principal de su cuenta de cliente de OVHcloud.
+En la siguiente página, seleccione **Arrancar en modo rescue**. Si el sistema operativo del servidor es Linux, seleccione `rescue-customer`{.action} en la lista desplegable. Si el servidor está en Windows, seleccione `WinRescue`{.action} (ver la [sección de la guía abajo](#windowsrescue)). Indique otra dirección de correo electrónico si **no** desea que la información de identificación de la conexión se envíe a la dirección principal de su cuenta de cliente de OVHcloud.
 <br>Haga clic en `Siguiente`{.action} y `Aceptar`{.action}.
 
 ![Modo rescue-customer](images/rescue-mode-08.png){.thumbnail}
