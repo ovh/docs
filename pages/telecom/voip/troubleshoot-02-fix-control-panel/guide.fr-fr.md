@@ -6,7 +6,7 @@ section: 'Diagnostic et dépannage'
 order: 02
 ---
 
-**Dernière mise à jour le 04/05/2022**
+**Dernière mise à jour le 05/05/2022**
  
 ## Objectif
 
@@ -33,8 +33,8 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 Voici la table des matières de ce guide, vous pouvez cliquer sur une des entrées pour y arriver directement :
 
 [Etape 1 - Etablir un premier diagnostic](#step1)<br />
-[Etape 2 - Dépanner le téléphone depuis l'espace client OVHcloud](#step2)<br />
-[Etape 3 - Réinitialiser le téléphone (facultatif)](#step3)<br />
+[Etape 2 - Réinitialiser le téléphone](#step2)<br />
+[Etape 3 - Dépanner le téléphone depuis l'espace client OVHcloud](#step3)<br />
 [Etape 4 - Effectuer des tests complémentaires (facultatif)](#step4)<br />
 &emsp;&emsp;[4.1 - Réinitialiser votre routeur / modem / Box Internet](#step4-1)<br />
 &emsp;&emsp;[4.2 - Effectuer un test croisé](#step4-2)<br />
@@ -48,19 +48,44 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
+
 ### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
 
-**Question n°1: L'écran de votre téléphone s'allume-t-il ?**
+**Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
+
+- **OUI** : Il s'agit probablement d'un incident isolé à votre poste, pousuivez la lecture de ce guide.
+- **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut commun sur un équipement annexe (switch, routeur / modem, Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
+
+**Question n°1 : L'écran de votre téléphone s'allume-t-il ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
 - **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
 
-**Question n°2: La date et l'heure affichées sur l'écran du téléphone sont-elles exactes ?**
+**Question n°3 : La date et l'heure affichées sur l'écran du téléphone sont-elles exactes ?**
 
 - **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin de rétablir l'enregistrement de la ligne SIP sur le téléphone.
 - **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
 
-### Étape 2 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step2"></a>
+### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
+
+> [!primary]
+> Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
+>
+
+La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
+
+Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitialiser un téléphone, en fonction de la marque de celui-ci.
+
+|Marque/Gamme|Procédure de réinitialisation|
+|---|---|
+|**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
+|**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
+|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
+|**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
+|**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
+|**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
+
+### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step2"></a>
 
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
@@ -100,24 +125,7 @@ En fonction des informations sélectionnées, vous pourrez être amené à recon
 > Si la reconfiguration de votre téléphone n'arrive pas à son terme, assurez-vous d'avoir bien respecté les manipulations précédentes.
 >
 
-### Étape 3 - Réinitialiser le téléphone (facultatif) <a name="step3"></a>
 
-> [!primary]
-> Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
->
-
-La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
-
-Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitialiser un téléphone, en fonction de la marque de celui-ci.
-
-|Marque/Gamme|Procédure de réinitialisation|
-|---|---|
-|**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
-|**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
-|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
-|**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
-|**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
-|**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
  
 ### Étape 4 - Effectuer des tests complémentaires (facultatif) <a name="step4"></a>
 
@@ -128,7 +136,9 @@ Si la reconfiguration de votre téléphone n'a pas permis de résoudre votre pro
 > [!alert]
 >
 > La réinitialisation de votre routeur / modem / Box Internet peut entraîner la perte de potentielles configurations personnalisées sur celui-ci.
+>
 > **Ne réalisez cette étape que si vous êtes sûr de vous.**
+>
 
 Il se peut que votre routeur / modem / Box Internet ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
 
