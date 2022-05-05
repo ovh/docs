@@ -83,12 +83,12 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 |---|---|
 |**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
 |**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
-|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://github.com/ovh/docs/blob/develop/pages/telecom/voip/fix_telephone_plug_and_phone/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
+|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
 |**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
 |**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
 |**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
 
-### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step2"></a>
+### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
 >
