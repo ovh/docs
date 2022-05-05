@@ -67,6 +67,12 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
 
+> [!warning]
+> **En cas de carnet de contacts ajouté manuellement sur le téléphone :**
+>
+> Si vous avez ajouté un carnet de contacts directement sur votre téléphone (sans passer par un ajout de contacts via l'espace client OVHcloud), la réinitialisation du téléphone entraînera la suppression du carnet de contacts. Par conséquent, assurez-vous de disposer d'une sauvegarde de ce carnet **avant** de réinitialiser le téléphone.
+>
+
 Une réinitialisation permet au téléphone de récupérer une configuration saine depuis les serveurs OVHcloud et de redevenir pleinement fonctionnel.
 
 La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
