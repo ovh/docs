@@ -22,7 +22,7 @@ Der Rescue-Modus ist allgemein geeignet für diese Aufgaben:
 - Netzwerkprobleme diagnostizieren
 - Reparatur eines fehlerhaften Betriebssystems
 - Fehlkonfiguration der Firewall korrigieren
-- Leistung der Festplatte testen
+- Leistung der Datenträger testen
 
 Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzustellen, ob ein Problem mit der Software oder Hardware zusammenhängt. Wir empfehlen Ihnen, diese auszuführen, bevor Sie unsere Support-Teams kontaktieren.
 
@@ -48,7 +48,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch festzuste
 
 ### Aktivierung des Rescue-Modus
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server unter `Virtual Private Server`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren VPS unter `Virtual Private Server`{.action} aus.
 
 #### Mit einem aktuellen VPS Angebot
 
