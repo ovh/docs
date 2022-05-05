@@ -66,7 +66,7 @@ Vous serez redirigé vers l’interface sécurisée de notre prestataire pour en
 
 #### Compte bancaire
 
-En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174, vous permettant de signer électroniquement votre mandat de prélèvement.
+En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
 
 > [!warning]
 >
@@ -90,9 +90,9 @@ En cliquant sur le bouton `Paypal`{.action}, une fenêtre contextuelle s'ouvrira
 
 En cliquant sur le bouton `Paypal`{.action}, une fenêtre contextuelle s'ouvrira afin de finaliser l'ajout du moyen de paiement.
 
-Cliquez sur le bouton `Paypal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte Paypal&#174 et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
+Cliquez sur le bouton `Paypal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte Paypal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
 
-Votre compte Paypal&#174 sera activé sous quelques minutes.
+Votre compte Paypal&#174; sera activé sous quelques minutes.
 
 ### Modifier votre moyen de paiement par défaut
 
