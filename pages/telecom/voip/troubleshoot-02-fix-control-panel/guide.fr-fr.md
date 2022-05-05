@@ -48,15 +48,14 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ![logigramme de dépannage](images/logigramme-voip-v2.png){.thumbnail}
 
-
 ### Étape 1 - Etablir un premier diagnostic <a name="step1"></a>
 
 **Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
 
-- **OUI** : Il s'agit probablement d'un incident isolé à votre poste, pousuivez la lecture de ce guide.
-- **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut commun sur un équipement annexe (switch, routeur / modem, Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
+- **OUI** : Il s'agit donc vraisemblablement d'un incident isolé à votre poste, pousuivez la lecture de ce guide.
+- **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut sur un équipement annexe et commun à ces téléphones (switch, routeur / modem / Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
 
-**Question n°1 : L'écran de votre téléphone s'allume-t-il ?**
+**Question n°2 : L'écran de votre téléphone s'allume-t-il ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
 - **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
@@ -68,9 +67,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 ### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
 
-> [!primary]
-> Si votre téléphone retrouve son fonctionnement normal après avoir suivi les premières étapes de ce guide, il n'est pas indispensable de procéder à sa réinitialisation.
->
+Une réinitialisation permet au téléphone de récupérer une configuration saine depuis les serveurs OVHcloud et de redevenir pleinement fonctionnel.
 
 La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
 
@@ -124,12 +121,10 @@ En fonction des informations sélectionnées, vous pourrez être amené à recon
 >
 > Si la reconfiguration de votre téléphone n'arrive pas à son terme, assurez-vous d'avoir bien respecté les manipulations précédentes.
 >
-
-
  
 ### Étape 4 - Effectuer des tests complémentaires (facultatif) <a name="step4"></a>
 
-Si la reconfiguration de votre téléphone n'a pas permis de résoudre votre problématique, poursuivez en réalisant deux tests complémentaires. 
+Si le dépannage de votre téléphone n'a pas permis de résoudre votre problématique, poursuivez en réalisant deux tests complémentaires. 
 
 #### 4.1 Réinitialiser votre routeur / modem / Box Internet <a name="step4-1"></a>
 
@@ -152,7 +147,7 @@ Réaliser un test croisé permet de vérifier si l'incident provient par exemple
 
 Dès lors, deux possibilités :
 
-- **votre téléphone fonctionne sur cet autre accès** : cela signifie que la problématique que vous rencontrez actuellement provient de votre routeur / modem / Box Internet (que ce soit sa configuration ou une panne matérielle) ;
+- **votre téléphone fonctionne sur cet autre accès** : cela signifie que la problématique que vous rencontrez actuellement provient de votre routeur / modem / Box Internet (que ce soit sa configuration ou une panne matérielle);
 
 - **votre téléphone ne fonctionne pas sur cet autre accès** : cela indique que la problématique que vous rencontrez actuellement provient de votre téléphone (que ce soit sa configuration ou une panne matérielle). Dans ce cas de figure, nous vous invitons à contacter notre service support via la création d'un ticket d'assistance depuis votre espace client OVHcloud. Afin de faciliter le diagnostic du téléphone par nos équipes, veillez à bien détailler dans ce ticket les tests que vous avez déjà effectués.
 
