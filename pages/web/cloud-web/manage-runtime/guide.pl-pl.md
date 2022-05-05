@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostin
 section: 'Konfiguracja hostingu'
 ---
 
-**Ostatnia aktualizacja z dnia 23-01-2020**
+**Ostatnia aktualizacja z dnia 04-05-2022**
 
 ## Wprowadzenie
 
@@ -54,7 +54,6 @@ Aby dodać lub zmienić framework, przejdź do karty`Frameworki`{.action} odpowi
 - **jeśli chcesz dodać framework**: kliknij `Operacje`{.action} nad tabelą, po czym `Dodaj framework`{.action};
 - **jeśli chcesz zmienić framework**: kliknij przycisk `...`{.action} po prawej stronie odpowiedniego frameworku, po czym kliknij `Zmień`{.action}.
 
-![cloud web hosting ssd](images/cloud-web-runtime-step2.png){.thumbnail}
 
 W oknie, które się wyświetla, wprowadź wymagane informacje: Następnie wykonaj kroki właściwe dla wybranego frameworka:
 
@@ -71,8 +70,6 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Następnie wykon
 |Framework|Wybierz nowy framework.|  
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
-
-![cloud web hosting ssd](images/cloud-web-runtime-step3.png){.thumbnail}
 
 ##### **Node.js**
 

@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your Web Hosting plan’s runtime software appl
 section: 'Configuring the web hosting plan'
 ---
 
-**Last updated 23rd March 2020**
+**Last updated 4th May 2022**
 
 ## Objective
 
@@ -54,7 +54,7 @@ To add or modify a runtime environment, go to the `Runtime environment`{.action}
 - **if you want to add a runtime environment**, click `Actions`{.action} above the table, then `Add a runtime environment`{.action}
 - **if you want to modify a runtime environment**, click on the `...`{.action}button to the right of the environment concerned, then `{.action}Modify`.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Enter the information requested in the pop-up window. Follow the remaining steps depending on the runtime environment you have selected:
 
@@ -72,7 +72,7 @@ Enter the information requested in the pop-up window. Follow the remaining steps
 
 Once you have entered this information, click `Confirm`{.action}. Please ensure that this runtime environment is definitely used by the multi-sites you want. To do this, continue to step three: [Link your runtime environment to a multisite](./#step-3-link-your-runtime-environment-to-a-multisite_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 

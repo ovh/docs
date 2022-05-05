@@ -1,34 +1,33 @@
 ---
 title: 'Installer Camaleon CMS sur son hébergement Cloud Web'
 slug: installer-camaleon-cloud-web
-excerpt: 'Apprenez à installer un Camaleon CMS sur Cloud Web'
+excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
 section: Tutoriels
 ---
 
-## Introduction
+**Dernière mise à jour le 04/05/2022**
+
+## Objectif
 
 [Camaleon CMS](http://camaleon.tuzitio.com/){.external} est un système de gestion de contenu (Content System Management, CMS en anglais) écrit en Ruby, basé sur le framework web [Ruby on Rails](https://rubyonrails.org/){.external}. L’[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Ruby comme moteur d’exécution pour vos sites web et donc d’y installer et héberger Camaleon CMS ou toute autre application web conçue en Ruby. Dans ce tutoriel, nous allons installer un site web avec Camaleon CMS sur un hébergement Cloud Web d’OVH et le mettre à disposition derrière votre nom de domaine.
+
+**Découvrez comment installer un Camaleon CMS sur Cloud Web**
 
 
 ## Prérequis
 
-### Ce que vous devez savoir
-
-*   Connaître les bases de l’écosystème Ruby.
-*   Se connecter enSSH.
-*   Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
-
-### Ce que vous devez avoir
-
-*   Disposer d’un [hébergement Cloud WebOVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-*   Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`.
-
+- Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Ce que vous devez savoir :
+    - Les bases de l’écosystème Ruby.
+    - Se connecter en SSH.
+    - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano parexemple.
 
 ## En pratique
 
 ### Étape 1 : activer Ruby comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements` dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`. 
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`. 
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Ruby est bien activé. Si tel est le cas, poursuivez vers l’étape 2  *Associer Ruby à un multisite* 
 
@@ -36,8 +35,8 @@ Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellemen
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécutionexistant.
 
-*   **Si vous souhaitez ajouter un moteur** : cliquez sur `Actions` au-dessus du tableau, puis sur `Ajouter un moteur d'exécution`.
-*   **Si vous souhaitez modifier un moteur** : cliquez sur le bouton `...` à droite du moteur concerné, puis sur `Modifier`.
+- **Si vous souhaitez ajouter un moteur** : cliquez sur `Actions`{.action} au-dessus du tableau, puis sur `Ajouter un moteur d'exécution`{.action}.
+- **Si vous souhaitez modifier un moteur** : cliquez sur le bouton `...` à droite du moteur concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées avec les valeurs suivantes de notre exemple ou adaptez-les à votre situationpersonnelle.
 
@@ -50,30 +49,28 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées avec le
 |  Script de lancement de l'application        |    config.ru                  |
 
 
-Une fois les informations complétées, cliquez sur `Valider`. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](../gerer-moteurs-execution-runtime-cloud-web/)*. 
+Une fois les informations complétées, cliquez sur `Valider`{.action}. Si vous souhaitez obtenir plus d’informations sur la gestion des moteurs d’exécution, reportez-vous à notre guide *[Gérer les moteurs d’exécution de Cloud Web](../gerer-moteurs-execution-runtime-cloud-web/)*. 
 
 ![Ajouter le moteur d'exécution Ruby](images/installer-camaleon-cloud-web-002.png){.thumbnail} 
 
 
-### Étape 2 : associer Ruby à unmultisite
+### Étape 2 : associer Ruby à un multisite
 
-Maintenant que Ruby est activé en tant que moteur d’exécution, vous devez l’associer à l’un de vos multisites. Pour cela, positionnez-vous sur l’onglet `Multisite`. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite. 
+Maintenant que Ruby est activé en tant que moteur d’exécution, vous devez l’associer à l’un de vos multisites. Pour cela, positionnez-vous sur l’onglet `Multisite`{.action}. Le tableau qui s’affiche contient tous les noms de domaine qui ont été ajoutés en tant que multisite. 
 
-![Associer Ruby à unmultisite](images/installer-camaleon-cloud-web-003.png){.thumbnail} 
+![Associer Ruby à un multisite](images/installer-camaleon-cloud-web-003.png){.thumbnail} 
 
-Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 *Se connecter à votre Cloud Web via SSH*.
+Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifiez alors que le moteur d’exécution Ruby est bien lié aux domaines concernés et que le dossier racine est correct. Aidez-vous des informations ci-dessous si nécessaire. Si tel est le cas, poursuivez vers l’étape 3 [Se connecter à votre Cloud Web via SSH](#sshconnexion).
 
 | Colonne                     | Description                                                                  |
 |-----------------------------|------------------------------------------------------------------------------|
 | Dossier racine              | Il s'agit du dossier racine qui devra contenir le code source du domaine concerné (il correspond au « DocumentRoot »). Dans notre exemple, nous choisissons de spécifier « camaleon ». Celui-ci devra donc contenir notre code source Ruby. |
 | Moteur d'exécution          | Il s'agit du moteur d'exécution associé au domaine concerné. Le nom qui s’affiche correspond au *Nom personnalisé* que vous avez défini lors de la création du moteur d'exécution. Dans notre exemple, vous devriez retrouver *Ruby 2.6*.  |
 
-
-
 Si ce n’est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
-*   **Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine` à droite dutableau.
-*   **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du nom de domaine concerné, puis sur `Modifier`.
+*   **Si vous souhaitez ajouter un multisite** : cliquez sur `Actions`{.action}, puis sur `Ajouter un domaine ou sous-domaine`{.action} à droite dutableau.
+*   **Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées selon votre situation personnelle. Le tableau ci-dessous montre celles utilisées pour cetutoriel.
 
@@ -84,32 +81,24 @@ Dans la fenêtre qui s’affiche, complétez les informations demandées selon v
 | Dossier racine             |  `camaleon`                                            |
 | Moteur d'exécution         |  Ruby 2.6                                              |
 
-
-En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». 
+En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu’à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d’informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) ». 
 
 ![Partager son hébergement entre plusieurs sites](images/installer-camaleon-cloud-web-004.png){.thumbnail} 
 
 
-### Étape 3 : se connecter à votre Cloud Web via SSH
+### Étape 3 : se connecter à votre Cloud Web via SSH <a name="sshconnexion"></a>
 
-Récupérez d’abord les informations vous permettant de vous connecter. Pour cela, positionnez-vous sur l’onglet `FTP - SSH`. Si celui-ci n’apparaît pas dans la liste, appuyez au préalable sur le bouton représentant trois barres. Les informations liées à votre espace de stockage apparaissent alors. Repérez celles mentionnées à côté des élémentssuivants :
+Récupérez d’abord les informations vous permettant de vous connecter. Pour cela, positionnez-vous sur l’onglet `FTP - SSH`{.action}. Si celui-ci n’apparaît pas dans la liste, appuyez au préalable sur le bouton représentant trois barres. Les informations liées à votre espace de stockage apparaissent alors. Repérez celles mentionnées dans le tableau :
 
-- Accès SSH au cluster 
-
-  L'élément qui apparaît vous permet de récupérer deux informations : 
-  
-  - **l'adresse de serveur** : elle débute après `ssh://` et se termine avant les `:`
+- **SSH** : L'élément qui apparaît vous permet de récupérer deux informations. 
+  - **l'adresse du serveur** : elle débute après `ssh://` et se termine avant les `:`
   - **le port de connexion** : le numéro est mentionné après les `:`
-  
-  On pourrait par exemple retrouver : `ssh://sshcloud.cluster024.hosting.ovh.net:12345`, donc `sshcloud.cluster024.hosting.ovh.net` en adresse de serveur et `12345` en port de connexion.
+  On pourrait par exemple retrouver : `ssh://sshcloud.cluster000.hosting.ovh.net:12345`, donc `sshcloud.cluster000.hosting.ovh.net` en adresse de serveur et `12345` en port de connexion.
+- **Login** : Il s'agit de l'identifiant SSH principal créé sur votre hébergement.
 
-- Login SSH principal
+Si vous ne connaissez plus le mot de passe de l’utilisateur SSH, cliquez sur le bouton `...`{.action} à droite de l’utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`{.action}. 
 
-  Il s'agit de l'identifiant SSH principal créé sur votre hébergement.
-
-Si vous ne connaissez plus le mot de passe de l’utilisateur SSH, cliquez sur le bouton `...` à droite de l’utilisateur concerné dans le tableau, puis sur `Changer le mot de passe`. 
-
-![Se connecter à votre Cloud Web viaSSH](images/installer-camaleon-cloud-web-004.png){.thumbnail} 
+![Se connecter à votre Cloud Web viaSSH](images/installer-camaleon-cloud-web-005.png){.thumbnail} 
 
 À présent, pour vous connecter en SSH, vous devez utiliser un terminal. Cet outil est installé par défaut sur macOS ou Linux. Un environnement Windows nécessitera l’installation d’un logiciel comme PuTTY ou l’ajout de la fonctionnalité « OpenSSH ». Cette démarche étant spécifique au système d’exploitation que vous utilisez, nous ne pouvons pas la détailler dans cettedocumentation. 
 
@@ -117,7 +106,7 @@ Voici l’exemple d’une ligne de commande que vous pouvez utiliser. Remplacez 
 
 ```
 ssh sshlogin@sshserver -p connectionport
-````
+```
 
 ### Étape 4 : préparer l'environnement Ruby
 
@@ -151,7 +140,7 @@ democld@cloudweb-ssh:~ $ rails -v
 Rails 5.2.3
 ```
 
-Vous pouvez maintenant vous placer dans le dossier "`camaleon`" et créer votre projet :
+Vous pouvez maintenant vous placer dans le dossier `camaleon` et créer votre projet :
 
 ```bash
 democld@cloudweb-ssh:~ $ cd camaleon/
@@ -249,7 +238,7 @@ democld@cloudweb-ssh:~/camaleon $ RAILS_ENV=production rake assets:precompile
 
 ### Étape 6 : redémarrer le *daemon* Ruby
 
-Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`. 
+Pour redémarrer le *daemon* Ruby, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action}, puis sur `Redémarrer`{.action}. 
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votremultisite. 
 
@@ -268,7 +257,18 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 ```
 
-
 ## Conclusion
 
 Nous avons vu comment installer une application Ruby sur un hébergement Cloud Web en respectant les différentes étapes. Il ne vous reste plus qu’à utiliser Camaleon CMS et y publier vos premiers contenus! Vous trouverez plus de documentation propre à Camaleon CMS et ses fonctionnalités sur la [documentation officielle du projet](http://camaleon.tuzitio.com/){.external}.
+
+## Aller plus loin
+
+[Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+
+[Mettre mon site en ligne](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+
+[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
+
+[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
