@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: FAQ per le istanze Public Cloud OVHcloud
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: 'Per iniziare'
 order: 3

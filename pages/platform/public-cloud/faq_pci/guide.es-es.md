@@ -1,6 +1,5 @@
 ---
-title: Preguntas frecuentes
-excerpt: FAQ para las instancias Public Cloud de OVHcloud
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: Información general
 order: 01
