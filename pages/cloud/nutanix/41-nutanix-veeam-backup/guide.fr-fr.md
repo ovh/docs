@@ -6,14 +6,14 @@ section: Sauvegardes
 order: 02
 ---
 
-**Dernière mise à jour le 04/05/2022**
+**Dernière mise à jour le 05/05/2022**
 
 ## Objectif
 
 
-Veeam backup est un logiciel de sauvegarde disponible pour Nutanix et qui fonctionne à l'aide d'un ajout. 
+Veeam backup est un logiciel de sauvegarde disponible pour Nutanix. 
 
-**Apprenez à installer, configurer et utiliser VEEAM sur un cluster Nutanix sur un dossier partagé**
+**Apprenez à installer, configurer et utiliser VEEAM sur un cluster Nutanix**
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -28,7 +28,7 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix et qui foncti
 - Être connecté sur le cluster via **Prism Central**. 
 - D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
 - Disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-
+- De posseder un stockage distant hors du cluster.
 
 
 ## En pratique
@@ -39,7 +39,7 @@ Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur u
 
 IL faut tout d'abord créer un utilisateur spécifique dans Prism Element pour l'utilisation de Veeam Backup.
 
-Au travers de **Prism central** connectez-vous sur **Prism Element** en cliquant sous **Cluster Quick Access** sur le cluster.
+Au travers de **Prism central** connectez-vous à **Prism Element** en cliquant sous **Cluster Quick Access** sur le cluster.
 
 ![Create User VEEAM PE 01](images/01-create-pe-veeamuser01.png){.thumbnail}
 
@@ -271,7 +271,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 ```
 ### Ajouter un dépôt pour les sauvegardes
 
-Nous allons rajouter un stockage SMB qui se trouve sur un site distant accessible au travers d'un VPN.
+Nous allons rajouter un stockage SMB qui se trouve sur un site distant.
 
 A partir de la console **Veeam Backup** cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
