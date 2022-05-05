@@ -23,7 +23,7 @@ order: 03
 The VM is based on Ubuntu 20.04 LTS (“The Focal Fossa”).
 
 > [!primary]
-> The gateway is built on the basis *Daily Build* cloud images of Ubuntu.
+> The gateway is built on the basis of *Daily Build* cloud images of Ubuntu.
 > The file used is downloaded directly from the Ubuntu servers: <https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img> then customised using cloud-init.
 
 > [!primary]
@@ -535,7 +535,7 @@ Create the `vm.json` file:
 ```
 
 > [!primary]
-> You can adjust the parameters according to your values, according to your needs: VM name, number of VCPU, RAM size, disk size, etc.
+> You can adjust the parameters with your values, according to your needs: VM name, number of VCPU, RAM size, disk size, etc.
 >
 
 Check `data_source_reference` to ensure that the UUID is the UUID of your system image:
@@ -610,7 +610,7 @@ runcmd:
 
 #### Step 3: create the VM 
 
-Turn `cloud-init.yaml` into “base64” and place it in a variable:
+Transform the `cloud-init.yaml` into “base64” and place it in a variable:
 
 ```bash
 USERDATA=$(base64 -w 0 cloud-init.yaml)
