@@ -60,11 +60,8 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 ![credit-card](images/credit-card.png){.thumbnail}
 
-Pour enregistrer une nouvelle carte bancaire, une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte. **Aucun montant ne sera prélevé**.
-
-Votre carte bancaire sera activée au bout de quelques minutes.
-
-Vous serez redirigé vers l’interface sécurisée de notre prestataire pour enregistrer une nouvelle carte bancaire.
+Pour enregistrer une nouvelle carte bancaire, vous serez redirigé vers l'interface sécurisée de notre prestataire de paiement. Une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte.
+Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de quelques minutes.
 
 #### Compte bancaire
 
@@ -72,7 +69,7 @@ Vous serez redirigé vers l’interface sécurisée de notre prestataire pour en
 
 > [!warning]
 >
-> L'utilisation de prélèvement SEPA n'est possible que pour les comptes clients français et allemands.
+> L'utilisation du prélèvement SEPA n'est possible que pour les comptes clients français et allemands.
 >
 
 En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
@@ -88,8 +85,6 @@ Suite à la réception de votre autorisation de prélèvement SEPA, votre compte
 
 #### Compte paypal
 
-En cliquant sur le bouton `Paypal`{.action}, une fenêtre contextuelle s'ouvrira afin de finaliser l'ajout du moyen de paiement.
-
 ![paypal](images/paypal.png){.thumbnail}
 
 Cliquez sur le bouton `Paypal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte Paypal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
@@ -104,7 +99,6 @@ Cliquez alors sur le bouton `...`{.action} à droite du nouveau moyen de paiemen
 
 ![manage-payment-methods](images/managepaymentmethods3.png){.thumbnail}
 
-
 > **Je souhaite remplacer mon moyen de paiement par défaut par un autre, comment faire ?**
 >
 > - Étape 1 : ajoutez le nouveau moyen de paiement
@@ -112,23 +106,13 @@ Cliquez alors sur le bouton `...`{.action} à droite du nouveau moyen de paiemen
 > - Étape 3 : supprimez l'ancien moyen de paiement
 >
 
-Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-manuel).
-
 ### Supprimer un moyen de paiement
 
 Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez le supprimer en cliquant sur le bouton `...`{.action} à droite de celui-ci. Cliquez alors sur `Supprimer ce moyen de paiement`{.action}.
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-> [!warning]
->
-> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas l'utiliser :
->
-> - pour des renouvellements;
-> - si votre compte client OVHcloud est d'un [autre type que Particulier](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
->
-> De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
->
+Si vous souhaitez supprimer l'intégralité de vos moyens de paiement, l'ensemble de vos services doit être en [renouvellement manuel](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#le-renouvellement-manuel).
 
 #### Supprimer un moyen de paiement via les API OVHcloud
 
