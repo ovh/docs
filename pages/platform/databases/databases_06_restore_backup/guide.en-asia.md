@@ -26,7 +26,8 @@ In this guide we will use a Postgresql database engine as an example, but the pr
 
 You can learn more about how backups works on the [Automated backups guide](https://docs.ovh.com/asia/en/publiccloud/databases/backups/).
 
-Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process done you will have two indepedent service running, the one from which the backup come from, and a new one on which the backup data has been imported.
+Restoration of a backup is done by creating a new service and pushing the backup data to this new service. This full process is called forking and is fully automated. Once this process is done, you will have two independent service running, the one from which the backup comes from, and a new one on which the backup data has been imported.
+
 
 ## Instructions
 ### Step 1: Select the database service you want to restore data from
@@ -35,44 +36,44 @@ First you need to go on the overview page of the service you want to restore the
 ![Select service](images/service-selection.png){.thumbnail}
 
 ### Step 2: Go to the backup tab
-In the tab list click on `backups`{.action}.
+In the tab list click on `Backups`{.action}.
 
 ![service overview](images/service-overview.png){.thumbnail}
 
 ### Step 3: Select the backup to restore from
-Select the backup from when you want to restore from. To help you choose you have the date at which the backups have been done in the colomn "Creation date".
-Click on the `...`{.action} button corresponding to the choosen backup. Then click on `Duplicate (Fork)`{.action} to go on the configuration page of the new service.
+Select the backup from which you want to restore from. To help you choose, observe the dates at which the backups have been performed in the "Creation date" column.
+Click on the `...`{.action} button corresponding to the chosen backup. Then click on `Duplicate (Fork)`{.action} to go on the configuration page of the new service.
 
 > [!warning]
-> MongoDB service has the option to restore a backup in place. Meaning restoring the backup on the same service. This option will rollback ALL data to the state it was when the backup was done, this can induce data loss.
+> The MongoDB service has the option to restore a backup in place, meaning restoring the backup on the same service. This option will rollback ALL data to the state it was in when the backup was done. This can induce data loss.
 
 
 ![backup tab](images/backup-tab.png){.thumbnail}
 
 ### Step 4: Configure the target service
-As seen before, when restoring a backups you create a new separate database service on which the backup data will be imported. You are able to configure this new service as you wish.
+As seen before, when restoring a backup you create a new separate database service on which the backup data will be imported. You are able to configure this new service as you wish.
 #### Engine
-For obvious reason you are not able to change engine, this option is greyed. Same goes for the engine version, you will be able to update engine version once the new service is running.
+For obvious reasons, you can not change the engine, this option is greyed. Same goes for the engine version, you will be able to update engine version once the new service is running.
 
 ![engine selection](images/engine-selection.png){.thumbnail}
 
 #### Plan
-When restoring a backup you can jump from service plan.
+When restoring a backup you can select another service plan.
 
 ![plan selection](images/plan-selection.png){.thumbnail}
 
 #### Region
-As of now we don't allow jumping region, your new service has to be on the same region as the old one.
+We currently don't allow changing the region. Your new service must be on the same region as the old one.
 
 ![region selection](images/region-selection.png){.thumbnail}
 
 #### Nodes
-You are able to change the node flavor of the service. Please note that you are restricted in selection depending on backup size, you can't restore a 400 GB data set on a node with only 320 GB of disk space.
+You are able to change the node flavor of the service. Please note that the selection is restricted, depending on backup size. You can't restore a 400 GB data set on a node with only 320 GB of disk space.
 
 ![node selection](images/node-selection.png){.thumbnail}
 
 #### Options
-You are able to change name.
+You can update the database name.
 
 ![engine selection](images/option-selection.png){.thumbnail}
 
@@ -84,7 +85,7 @@ You now just have to wait for your service to be ready.
 This new service is now completly independent from the one you forked the backup from. You can safely delete the old service without impacting the new one.
 
 > [!warning]
-> The newly created service did not duplicate Ip restriction nor User from the old one. Before using your service you have to do it.
+> The newly created service does not duplicate IP restrictions nor users which were created on the old service. You will have to recreate those before using your new service.
 
 ![forked service](images/forked-service.png){.thumbnail}
 
