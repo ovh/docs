@@ -180,9 +180,7 @@ Dans la fenêtre qui s'affiche, indiquez le montant à créditer, cliquez sur `S
 
 ![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
 
-Sur le bon de commande qui s'affiche, sélectionnez le moyen de paiement de votre choix.
-
-![pay-prepaid-account](images/pay-prepaid-account.png){.thumbnail}
+Sur le bon de commande qui s'affiche, sélectionnez le moyen de paiement de votre choix et réglez votre commande.
 
 ## Aller plus loin
 
