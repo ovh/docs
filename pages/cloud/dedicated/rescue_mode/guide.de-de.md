@@ -92,7 +92,7 @@ Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Par
 Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders, total 41943040 sectors

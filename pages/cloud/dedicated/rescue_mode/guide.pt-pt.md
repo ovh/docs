@@ -93,7 +93,7 @@ A maior parte das modificações efetuadas no seu servidor através de SSH em mo
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
 ```bash
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
