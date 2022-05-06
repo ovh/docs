@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 040
 ---
 
-**Last updated 04 May 2022**
+**Last updated 04th May 2022**
 
 ## Objective
 
@@ -568,7 +568,7 @@ X-Iplb-Instance: 33617
 ## The case of Large Objects
 
 If an object over 5Gb has been dropped, this generates a container such as: `<container_segments>`.<br>
-Large object can be SLO or DLO You can find more information about it [here](https://docs.openstack.org/swift/latest/overview_large_objects.html)
+A large object can be SLO or DLO. You can find more information about this on the [OpenStack documentation](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external}
 
 ### SLO
 
@@ -673,14 +673,15 @@ swift download <container> <largeobject>
 ```
 
 ### DLO
-DLO by design need to dynamically list `<container_segments>`<br> 
+
+DLO by design needs to dynamically list `<container_segments>`.<br> 
 If .rlistings ACL is only on the "manifest container" you will encounter 403 errors :
 
 ```bash
 Container GET failed: https://storage.xxx.cloud.ovh.net/v1/AUTH_e4xxxxxxxxxxxxxxxxxxxxxxxxe02f/payload.png?format=json 403 Forbidden [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource' (txn: txf74a0fc6ixxxxxxxxxxxxx-006270f0a1)
 ```
 
-To allow object download you will need to put the acl ".rlisting" on the <container_segments>
+To allow object download you will need to put the acl ".rlisting" on the <container_segments>.
 
 ```bash
 swift post dlo --read-acl ".rlistings"
