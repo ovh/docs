@@ -68,6 +68,8 @@ Vous serez redirigé vers l’interface sécurisée de notre prestataire pour en
 
 #### Compte bancaire
 
+![bank-account](images/bank-account.png){.thumbnail}
+
 En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
 
 > [!warning]
