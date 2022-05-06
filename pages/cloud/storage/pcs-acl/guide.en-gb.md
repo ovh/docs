@@ -674,7 +674,7 @@ swift download <container> <largeobject>
 
 ### DLO
 
-DLO by design needs to dynamically list `<container_segments>`.<br> 
+By design, DLO manifests need to dynamically list `<container_segments>`.<br> 
 If .rlistings ACL is only on the "manifest container" you will encounter 403 errors :
 
 ```bash

@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 040
 ---
 
-**Dernière mise à jour le 23/09/2021**
+**Dernière mise à jour le 06/05/2022**
 
 ## Objectif
 
@@ -568,7 +568,7 @@ X-Iplb-Instance: 33617
 ## Le cas des Large Objects
 
 Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
-Les "larges objets" peuvent être de type SLO ou DLO, vous trouverez plus d'informations sur ces types [ici](https://docs.openstack.org/swift/latest/overview_large_objects.html)
+Les "larges objets" peuvent être de type SLO ou DLO. Vous trouverez plus d'informations à ce sujet sur [la documentation OpenStack](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external}.
 
 ### SLO
 
@@ -622,7 +622,7 @@ X-Iplb-Request-Id: 6DBEFE1E:8B3C_3626E64B:01BB_6127443A_1E867A3:15625
 X-Iplb-Instance: 38342
 ```
 
-Si l'ACL est uniquement sur le "container manifest" vous aurez une erreur 409 lors du téléchargement :
+Si l'ACL est uniquement sur le "container manifest", vous aurez une erreur 409 lors du téléchargement :
 
 ```bash
 swift download <conteneur> <largeobject>
@@ -671,14 +671,15 @@ swift download <conteneur> <largeobject>
 ```
 
 ### DLO
-De part leurs design les manifest DLO list automatiquement leurs segments
-Si l'acl .rlistings est uniquement sur le "container manifest" vou aurez des erreurs 403 
+
+De par leur design, les manifests DLO listent automatiquement leurs segments.<br>
+Si l'ACL .rlistings est uniquement sur le "container manifest", vous aurez des erreurs 403.
 
 ```bash
 Container GET failed: https://storage.xxx.cloud.ovh.net/v1/AUTH_e4xxxxxxxxxxxxxxxxxxxxxxxxe02f/payload.png?format=json 403 Forbidden [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource' (txn: txf74a0fc6ixxxxxxxxxxxxx-006270f0a1)
 ```
 
-Pour permettres le telechargement d'objet vous aurez alors besoin de rajouter l'acl ".rlisting" sur le "container segments"
+Pour permettre le téléchargement d'objets, vous aurez alors besoin de rajouter l'ACL ".rlistings" sur le "container segments".
 
 ```bash
 swift post dlo --read-acl ".rlistings"
