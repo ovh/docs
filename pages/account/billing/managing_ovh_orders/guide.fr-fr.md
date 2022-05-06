@@ -5,7 +5,7 @@ excerpt: Découvrez comment gérer vos commandes chez OVHcloud
 section: Facturation
 ---
 
-**Dernière mise à jour le 02/05/2022**
+**Dernière mise à jour le 06/05/2022**
 
 ## Objectif
 
@@ -91,11 +91,14 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 
 > [!warning]
 >
-> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas l'utiliser :
+> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas le faire valoir :
+>
 > - pour des renouvellements;
 > - si votre compte client OVHcloud est d'un [autre type que Particulier](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
 >
 > De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
+>
+> Enfin, il ne s'applique pas à certains services (notamment les [noms de domaines](https://www.ovhcloud.com/fr/domains/) et les [certificats SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)). Lors de la commande de ces produits, il vous est de ce fait demandé de renoncer expressément à votre droit de rétractation, conformément à l'article L.221-28 du code de la consommation.
 >
 
 Si les critères d'éligibilité au droit de rétractation sont remplis, il peut être mis en application directement depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) :
