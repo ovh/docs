@@ -58,6 +58,8 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 #### Carte bancaire
 
+![credit-card](images/credit-card.png){.thumbnail}
+
 Pour enregistrer une nouvelle carte bancaire, une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte. Aucun montant ne sera prélevé.
 
 Votre carte bancaire sera activée au bout de quelques minutes.
@@ -186,7 +188,17 @@ Si le crédit disponible sur votre compte prépayé descend sous la limite défi
 
 #### Comment créditer votre compte prépayé ?
 
+Dans l'onglet `Mon compte prépayé`{.action}, cliquez sur le bouton `Créditer`{.action}.
 
+![credit-prepaid-account](images/credit-prepaid-account.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, indiquez le montant à créditer, cliquez sur `Suivant`{.action} puis sur `Commander`{.action}.
+
+![order-prepaid-account](images/order-prepaid-account.png){.thumbnail}
+
+Sur le bon de commande qui s'affiche, sélectionnez le moyen de paiement de votre choix.
+
+![pay-prepaid-account](images/pay-prepaid-account.png){.thumbnail}
 
 ## Aller plus loin
 
