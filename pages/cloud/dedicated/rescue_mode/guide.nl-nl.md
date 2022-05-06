@@ -74,7 +74,7 @@ Voor de meeste wijzigingen die u aanbrengt in uw server via SSH in de reddingsmo
 U kunt partities koppelen met behulp van het commando `mount` in SSH. Allereerst moet u uw partities vermelden, zodat u de naam van de partitie kunt ophalen die u wilt koppelen. U kunt de volgende codevoorbeelden raadplegen:
 
 ```sh
-rescue:~# fdisk -l
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders

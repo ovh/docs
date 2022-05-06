@@ -12,7 +12,7 @@ order : 8
 
 Una instancia *flex* es una instancia de disco único (50 GB) que ofrece un proceso más rápido para los snapshots. Permite redimensionar a los modelos superior o inferior con un espacio de almacenamiento fijo, mientras que los modelos clásicos solo pueden redimensionarse hacia los modelos superiores.</br> Con una infraestructura en constante evolución, puede necesitar aumentar el espacio de almacenamiento de su instancia. En ese caso, deberá cambiar su instancia *flex* a un modelo clásico. Esta acción solo es posible desde Horizon.
 
-**Esta guía explica cómo cambiar de un modelo *flex* a un modelo clásico y redimensionar su instancia *flex* desde la interfaz OpenStack Horizon.**
+</br>**Esta guía explica cómo cambiar de un modelo *flex* a un modelo clásico y redimensionar su instancia *flex* desde la interfaz OpenStack Horizon.**
 
 ## Requisitos
 
