@@ -6,7 +6,7 @@ section: Facturation
 order : 02
 ---
 
-**Dernière mise à jour le 04/05/2022**
+**Dernière mise à jour le 06/05/2022**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![hubpayment](images/hubpayment.png){.thumbnail}
 
-La page qui s’affiche contient un tableau répertoriant les moyens de paiement enregistrés dans votre compte client. Vous pourrez y :
+La page qui s’affiche contient un tableau répertoriant les moyens de paiement enregistrés sur votre compte client. Vous pourrez y :
 
 - Ajouter un moyen de paiement
 - Modifier votre moyen de paiement par défaut
@@ -36,9 +36,9 @@ La page qui s’affiche contient un tableau répertoriant les moyens de paiement
 
 Lors de votre première commande, il vous est demandé d'enregistrer un moyen de paiement, afin d'assurer le renouvellement de votre service par prélèvement automatique.
 
-Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellements et vous est proposé pour régler vos nouvelles commandes.
+Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellements et vous est proposé pour régler de nouvelles commandes.
 
-Vous avez la possibilité d'enregistrer de nouveaux moyens de paiement, afin qu'ils vous soient proposés lors de vos nouvelles commandes ou utilisés par défaut pour vos futurs prélèvements.
+Vous avez la possibilité d'enregistrer d'autres moyens de paiement, afin qu'ils vous soient proposés lors de vos nouvelles commandes ou utilisés par défaut pour vos futurs prélèvements.
 
 Il est possible d'enregistrer 3 types de moyens de paiement :
 
@@ -60,7 +60,7 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 ![credit-card](images/credit-card.png){.thumbnail}
 
-Pour enregistrer une nouvelle carte bancaire, une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte. Aucun montant ne sera prélevé.
+Pour enregistrer une nouvelle carte bancaire, une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte. **Aucun montant ne sera prélevé**.
 
 Votre carte bancaire sera activée au bout de quelques minutes.
 
@@ -70,12 +70,12 @@ Vous serez redirigé vers l’interface sécurisée de notre prestataire pour en
 
 ![bank-account](images/bank-account.png){.thumbnail}
 
-En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
-
 > [!warning]
 >
 > L'utilisation de prélèvement SEPA n'est possible que pour les comptes clients français et allemands.
 >
+
+En cas d'enregistrement d'un compte bancaire, vous recevrez un e-mail de notre partenaire Yousign&#174;, vous permettant de signer électroniquement votre mandat de prélèvement.
 
 ![manage-payment-methods](images/yousign.png){.thumbnail}
 
@@ -91,8 +91,6 @@ Suite à la réception de votre autorisation de prélèvement SEPA, votre compte
 En cliquant sur le bouton `Paypal`{.action}, une fenêtre contextuelle s'ouvrira afin de finaliser l'ajout du moyen de paiement.
 
 ![paypal](images/paypal.png){.thumbnail}
-
-En cliquant sur le bouton `Paypal`{.action}, une fenêtre contextuelle s'ouvrira afin de finaliser l'ajout du moyen de paiement.
 
 Cliquez sur le bouton `Paypal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte Paypal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
 
@@ -122,14 +120,14 @@ Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez l
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Vous ne pourrez pas supprimer un moyen de paiement sur votre compte client :
-
-1 - si aucun autre moyen de paiement valide n'y est disponible;
-2 - et si l'un de vos services OVHcloud est en renouvellement automatique (https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/#afficher-les-statuts-de-renouvellement-de-vos-services).
-
 > [!warning]
 >
-> Pour supprimer votre moyen de paiement par défaut, vous devrez **d'abord** en définir un autre.
+> Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas l'utiliser :
+>
+> - pour des renouvellements;
+> - si votre compte client OVHcloud est d'un [autre type que Particulier](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
+>
+> De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
 >
 
 #### Supprimer un moyen de paiement via les API OVHcloud
@@ -154,7 +152,7 @@ Supprimez ensuite le moyen de paiement en utilisant l’ID que vous avez obtenu 
 >
 > Pour plus d'informations, consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)/
 >
-> En cas de difficultés pour identifier vos moyens de paiement via les API OVHcloud, utilisez la fonction `Modifier la description`{.action} dans la partie [Moyens de paiement](#payment_methods) de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> En cas de difficultés pour identifier vos moyens de paiement via les API OVHcloud, utilisez la fonction `Modifier la description`{.action} (bouton `...`{.action} à droite de votre écran) dans la partie [Moyens de paiement](#payment_methods) de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
 
 ### Le compte prépayé
