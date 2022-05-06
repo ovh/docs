@@ -50,7 +50,7 @@ Pour cela, cliquez simplement sur le bouton `Ajouter un moyen de paiement`{.acti
 
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
-Puis choisissez la méthode de paiement que vous souhaitez utiliser : 
+Choisissez la méthode de paiement que vous souhaitez utiliser : 
 
 ![choose-payment-method](images/choose-payment-method.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Suivez les étapes successives d'enregistrement du moyen de paiement. A la premi
 
 ![credit-card](images/credit-card.png){.thumbnail}
 
-Pour enregistrer une nouvelle carte bancaire, vous serez redirigé vers l'interface sécurisée de notre prestataire de paiement. Une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte.
+Pour enregistrer une nouvelle carte bancaire, vous serez redirigé vers l'interface sécurisée de notre prestataire de paiement. Une empreinte financière est faite auprès de votre organisme bancaire afin de valider la saisie et la validité de votre carte.<br>
 Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de quelques minutes.
 
 #### Compte bancaire
@@ -149,8 +149,8 @@ En créditant régulièrement votre compte, vous vous assurerez ainsi que le [re
 
 Pour cela, il vous suffit de vous rendre dans la section `Moyens de paiement` de votre espace client :
 
-- Cliquez en haut à droite sur votre nom puis sur `Moyen de paiement`{.action} dans le menu de droite;
-- Sélectionner l'onglet `Mon compte prépayé`{.action}.
+- cliquez en haut à droite sur votre nom puis sur `Moyen de paiement`{.action} dans le menu de droite;
+- sélectionnez l'onglet `Mon compte prépayé`{.action}.
 
 ![prepaid-account](images/prepaid-account.png){.thumbnail}
 
