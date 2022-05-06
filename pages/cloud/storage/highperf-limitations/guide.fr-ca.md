@@ -24,9 +24,9 @@ Illimité
 
 1 Gbps / connexion
 
-### Nombre maximum de requetes par seconde en écriture sur un bucket
+### Nombre maximum de requêtes par seconde en écriture sur un bucket
 
-300 (au délà la qualité de service n'est plus garantie)
+300 (au-delà la qualité de service n'est plus garantie)
 
 ### Taille maximum par object / mpu / part
 
