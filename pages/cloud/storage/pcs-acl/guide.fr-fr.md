@@ -6,7 +6,7 @@ section: Object Storage Standard (Swift)
 order: 040
 ---
 
-**Dernière mise à jour le 23/09/2021**
+**Dernière mise à jour le 06/05/2022**
 
 ## Objectif
 
@@ -555,7 +555,7 @@ Sync To:
 Sync Key:
 Accept-Ranges: bytes
 X-Storage-Policy: PCS
-Last-Modified: Thu, 26 Aug 2021 07:24:25 GMT
+Last-Modified: Wed, 04 May 2022 18:00:00 GMT
 X-Timestamp: 1629925917.23282
 Content-Type: text/plain; charset=utf-8
 Vary: Accept
@@ -568,6 +568,10 @@ X-Iplb-Instance: 33617
 ## Le cas des Large Objects
 
 Si un objet de plus de 5Gb à été déposé, cela génère un conteneur tel que : `<conteneur_segments>`.<br>
+Les "larges objets" peuvent être de type SLO ou DLO. Vous trouverez plus d'informations à ce sujet sur [la documentation OpenStack](https://docs.openstack.org/swift/latest/overview_large_objects.html){.external}.
+
+### SLO
+
 Il faut appliquer les mêmes ACL à ce conteneur afin de pouvoir récupérer l'objet de plus de 5Gb.
 
 ```bash
@@ -608,7 +612,7 @@ Sync To:
 Sync Key:
 Accept-Ranges: bytes
 X-Storage-Policy: PCS
-Last-Modified: Wed, 25 Aug 2021 21:13:09 GMT
+Last-Modified: Wed, 04 May 2022 18:00:00 GMT
 X-Timestamp: 1629925988.34920
 Content-Type: text/plain; charset=utf-8
 Vary: Accept
@@ -618,6 +622,8 @@ X-Iplb-Request-Id: 6DBEFE1E:8B3C_3626E64B:01BB_6127443A_1E867A3:15625
 X-Iplb-Instance: 38342
 ```
 
+Si l'ACL est uniquement sur le "container manifest", vous aurez une erreur 409 lors du téléchargement :
+
 ```bash
 swift download <conteneur> <largeobject>
 ```
@@ -625,6 +631,8 @@ swift download <conteneur> <largeobject>
 ```
 Error downloading object '<conteneur>/<largeobject>': Object GET failed: https://storage.gra.cloud.ovh.net/v1/AUTH_297xxxxxxxxxxxxxxxxxxxxxxxxxx49b/<conteneur>/<largeobject> 409 Conflict  [first 60 chars of response] b'<html><h1>Conflict</h1><p>There was a conflict when trying t'
 ```
+
+Vous pouvez alors mettre à jour les droits du conteneur pour permettre le téléchargement :
 
 ```bash
 swift post <conteneur_segments> -r "297xxxxxxxxxxxxxxxxxxxxxxxxxx49b:febxxxxxxxxxxxxxxxxxxxxxxxxxxc72"
@@ -660,6 +668,21 @@ swift download <conteneur> <largeobject>
 ```
 ```
 <largeobject> [auth 0.739s, headers 1.408s, total 5504.436s, 1.171 MB/s]
+```
+
+### DLO
+
+De par leur design, les manifests DLO listent automatiquement leurs segments.<br>
+Si l'ACL .rlistings est uniquement sur le "container manifest", vous aurez des erreurs 403.
+
+```bash
+Container GET failed: https://storage.xxx.cloud.ovh.net/v1/AUTH_e4xxxxxxxxxxxxxxxxxxxxxxxxe02f/payload.png?format=json 403 Forbidden [first 60 chars of response] b'<html><h1>Forbidden</h1><p>Access was denied to this resource' (txn: txf74a0fc6ixxxxxxxxxxxxx-006270f0a1)
+```
+
+Pour permettre le téléchargement d'objets, vous aurez alors besoin de rajouter l'ACL ".rlistings" sur le "container segments".
+
+```bash
+swift post dlo --read-acl ".rlistings"
 ```
 
 ## Aller plus loin
