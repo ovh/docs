@@ -10,7 +10,7 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 01/02/2022**
+**Última atualização: 09/05/2022**
 
 ## Objetivo
 
@@ -33,9 +33,12 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged*
 
 ## Instruções
 
-> [!primary]
+> [!warning]
 >
-> Nessas gamas de servidores, há 4 placas de rede. Dois para o público, dois para o privado. Para beneficiar do conjunto da largura de banda, devem ser criados agregados.
+> Nessas gamas de servidores, há 4 placas de rede. Para beneficiar de toda a largura de banda, devem ser criados agregados. A nossa documentação baseia-se nestes agregados de placas de rede.
+>
+> **Em contrapartida, o ESXi não suporta nativamente o LACP.**
+> Não haverá redundância. A totalidade da largura de banda das placas de rede do seu servidor também não poderá ser explorada.
 >
 
 > [!warning]

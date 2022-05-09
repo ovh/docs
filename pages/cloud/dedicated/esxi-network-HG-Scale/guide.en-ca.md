@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 6
 ---
 
-**Last updated 28th January 2022**
+**Last updated 9th May 2022**
 
 ## Objective
 
@@ -29,9 +29,12 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ## Instructions
 
-> [!primary]
+> [!warning]
 >
-> On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
+> On these server ranges, there are 4 network cards. To get all the bandwidth, aggregates must be created. Our documentation is based on these card aggregates.
+>
+> **However, ESXi does not support LACP natively.**
+> Therefore, no redundancy will be available. You will also be unable to use all of your server’s network cards’ bandwidth.
 >
 
 > [!warning]
