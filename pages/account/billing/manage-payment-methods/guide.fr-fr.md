@@ -6,13 +6,13 @@ section: Facturation
 order : 02
 ---
 
-**Dernière mise à jour le 06/05/2022**
+**Dernière mise à jour le 09/05/2022**
 
 ## Objectif
 
 L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
 
-<iframe width="560" height="315" src="https://vimeo.com/showcase/9276741/video/696215450" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696215450?h=0b07baf719&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Prérequis
 
