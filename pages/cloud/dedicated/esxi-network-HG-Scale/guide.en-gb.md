@@ -34,7 +34,7 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 > On these server ranges, there are 4 network cards. To get all the bandwidth, aggregates must be created. Our documentation is based on these card aggregates.
 >
 > **However, ESXi does not support LACP natively.**
-> Therefore, no redundancy will be available. You will also be unable to use all of your server’s network cards bandwidth.
+> Therefore, no redundancy will be available. You will also be unable to use all of your server’s network cards’ bandwidth.
 >
 
 > [!warning]
