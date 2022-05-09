@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 6
 ---
 
-**Dernière mise à jour le 09/06/2022**
+**Dernière mise à jour le 09/05/2022**
 
 ## Objectif
 
@@ -29,21 +29,18 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
-> Sur ces gammes de serveurs, il y a 4 cartes réseaux.
+> Ces gammes de serveurs offrent 4 cartes réseaux. Afin de profiter de l'ensemble de la bande passante, des agrégats doivent ainsi être créés. Notre documentation se base sur ces agrégats de cartes.
+>
+> **En revanche, ESXi ne supporte pas nativement le LACP.** 
+> Aucune redondance ne sera donc disponible. La totalité de la bande-passante des cartes réseaux de votre serveur ne pourra pas non plus être exploitée.
 >
 
 > [!warning]
 >
 > Un défaut connu est actuellement présent dans l'interface utilisateur graphique ESXi. Aussi l'exécution de ces étapes dans cette interface entraînerait une configuration non fonctionnelle. Il est absolument nécessaire d'appliquer cette configuration en utilisant l'interface de ligne de commande en SSH.
 >
-
-> [!warning]
->
-> Cette documentation se base sur des agrégats de cartes. ESXi ne supporte pas de base le LACP. Il n'y aura donc aucune réelle redondance.
-> Les agrégats ne sont donc pas utile en l'état.
-
 
 ### IP fail-over via le vRack
 
