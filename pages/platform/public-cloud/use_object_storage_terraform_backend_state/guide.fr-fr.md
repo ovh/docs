@@ -1,7 +1,7 @@
 ---
-title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état Terraform"
+title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 slug: use_object_storage_terraform_backend_state
-excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état Terraform"
+excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
 section: Tutoriels
 order: 03
 ---
@@ -28,11 +28,11 @@ order: 03
  }
 </style>
 
-**Dernière mise à jour le 05/04/2022**
+**Dernière mise à jour le 09/05/2022**
 
 ## Objectif
 
-Il est possible de stocker l’état de Terraform sur un data store/backend distant comme un compartiment AWS S3, un Google Cloud Storage (GCS). Mais savez-vous que vous pouvez également stocker vos états Terraform sur un conteneur OVHcloud Object Storage ?
+Il est possible de stocker l’état de Terraform (le `tfstate`) dans un data store/backend distant comme un compartiment /bucket AWS S3, un Google Cloud Storage (GCS). Mais savez-vous que vous pouvez également stocker vos états Terraform dans un conteneur OVHcloud Object Storage ?
 
 Dans ce tutoriel, vous allez :
 
@@ -60,11 +60,11 @@ Dans ce tutoriel, vous allez :
 Cet outil dispose d’une interface de ligne de commande (CLI) puissante et très intuitive.
 Si vous souhaitez tirer parti de vos connaissances sur Terraform CLI, consultez [l'aide-mémoire](https://github.com/scraly/terraform-cheat-sheet/blob/master/terraform-cheat-sheet.pdf){.external}.
 
-Chez OVHcloud, nous avons créé un [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui vous permet d'interagir et de gérer les ressources OVHcloud.
+Chez OVHcloud, nous avons créé un [provider Terraform](https://registry.terraform.io/providers/ovh/ovh/latest){.external} qui vous permet d'interagir et de gérer les ressources OVHcloud.
 
 ### Terraform states et backend
 
-Terraform a plusieurs concepts, dont celui de`state`(état).
+Terraform a plusieurs concepts, dont celui de `state` (état).
 
 Un état Terraform est un snapshot de votre infrastructure depuis la dernière exécution de la commande `terraform apply`.
 Par défaut, le fichier d'état est stocké localement dans un fichier `terraform.tfstate`.
@@ -72,13 +72,13 @@ Mais l’usage courant, en environnement de production, est de le stocker à dis
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
-Vous pouvez par exemple stocker votre état Terraform sur un conteneur Object Storage d'OVHcloud.
+Vous pouvez par exemple stocker votre état Terraform dans un conteneur Object Storage d'OVHcloud.
 
 Pour ce faire, vous devez configurer un `backend` dans vos fichiers de configuration Terraform HCL.
 
 > [!primary]
 > 
-> Les états Terraform ne sont pas chiffrés au repos lorsqu'ils sont stockés dans un conteneur Object Storage.
+> Les états Terraform ne sont pas chiffrés lorsqu'ils sont stockés dans un conteneur Object Storage.
 
 ## Instructions
 
@@ -90,7 +90,7 @@ Pour ce guide, notre conteneur Object Storage s'appelle `terraform-state` et sa 
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
-### Initialisation configuration Terraform
+### Initialisation de la configuration de Terraform
 
 Créez un fichier `backend.tf` avec le contenu suivant :
 
@@ -115,7 +115,7 @@ Nous utilisons également un fichier OpenStack `clouds.yaml`.
 
 ### Création d'un utilisateur OpenStack avec les droits Object Storage
 
-Afin de stocker vos états Terraform sur un Object Storage, et de manière générale si vous souhaitez interagir avec l'Object Storage, vous devez être en mesure de gérer un Object Storage.
+Afin de stocker vos états Terraform dans un Object Storage, et de manière générale si vous souhaitez interagir avec l'Object Storage, vous devez être en mesure de gérer un Object Storage.
 
 Pour ce faire, vous allez créer un utilisateur OpenStack.
 
@@ -226,7 +226,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 </code></pre>
 
-Il est maintenant possible de définir vos fichiers de configuration et fournisseurs Terraform et, après l'exécution de la commande `terraform apply`, votre fichier d'état Terraform sera stocké dans un conteneur de l'Object Storage d'OVHcloud.
+Il est maintenant possible de définir vos fichiers de configuration et providers/fournisseurs Terraform et, après l'exécution de la commande `terraform apply`, votre fichier d'état Terraform sera stocké dans un conteneur de l'Object Storage d'OVHcloud.
 
 ## Aller plus loin
 
