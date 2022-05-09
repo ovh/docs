@@ -63,7 +63,7 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 **Question n°3 : Avez-vous déjà redémarré électriquement le téléphone ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
-- **NON** : Débranchez et rebranchez l'alimentation électrique du téléphone. Cela peut avoir pour effet de rétablier son fonctionnement. Si le téléphone est toujours en défaut, poursuivez la lecture de ce guide.
+- **NON** : Débranchez et rebranchez l'alimentation électrique du téléphone. Cela peut avoir pour effet de rétablir son fonctionnement. Si le téléphone est toujours en défaut, poursuivez la lecture de ce guide.
 
 ### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
 
@@ -113,10 +113,10 @@ Rendez-vous dans l'onglet `Assistance`{.action} et cliquez sur le bouton `Dépan
 Une fois dans l'assistant, celui-ci va vous guider en vous posant plusieurs questions et en vous proposant des manipulations.<br>
 Suivez avec précision les informations qui s'affichent à chaque étape de l'assistant. Ces informations peuvent vous permettre de résoudre la panne que vous rencontrez.
 
+Assurez-vous également que votre téléphone est correctement branché électriquement et bien connecté à votre réseau local.
+
 > [!primary]
 > L'image ci-dessous est donnée à titre d'exemple. Le modèle présenté et le nombre de questions peuvent varier selon le téléphone à dépanner. 
-
-Assurez-vous également que votre téléphone est correctement branché électriquement et bien connecté à votre réseau local.
 
 ![dépannage-plug-and-phone](images/control-panel02.png){.thumbnail}
 
