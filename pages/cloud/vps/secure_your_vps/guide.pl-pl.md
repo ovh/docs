@@ -19,7 +19,7 @@ Kiedy zamawiasz serwer VPS, możesz wybrać dystrybucję lub system operacyjny d
  
 > [!warning]
 >
-> OVHcloud dostarcza Ci maszyny, za które przejmujesz odpowiedzialność. Nie mamy dostępu do tych maszyn i nie jesteśmy ich administratorami. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem Twojego serwera zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera. Więcej informacji znajduje się w sekcji “Sprawdź również”.
+> OVHcloud dostarcza Ci maszyny, za które przejmujesz odpowiedzialność. W rzeczywistości nie mamy dostępu do danych przechowywanych na tych maszynach i nie jesteśmy ich administratorami. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności lub wątpliwości związanych z administrowaniem, użytkowaniem lub zabezpieczeniem Twojego serwera zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 > 
 
 ## Wymagania początkowe

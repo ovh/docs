@@ -30,7 +30,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
 
-### Debian 10
+### Debian 10/11
 
 #### Étape 1 : créer une sauvegarde
 

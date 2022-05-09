@@ -32,7 +32,7 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 
 O presente guia inclui instruções paras sistemas Linux e para o Windows Server.
 
-### Debian 10
+### Debian 10/11
 
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 
