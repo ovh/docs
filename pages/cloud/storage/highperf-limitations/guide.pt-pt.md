@@ -26,6 +26,10 @@ Unlimited
 
 1 Gbps / connection
 
+### Maximum number of write requests per second on a bucket
+
+300 (beyond that, the quality of service is no longer guaranteed)
+
 ### Maximum size per object / mpu / part
 
 - Maximum 5 GB per object

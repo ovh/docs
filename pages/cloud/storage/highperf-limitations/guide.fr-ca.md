@@ -1,7 +1,7 @@
 ---
 title: S3 Object Storage - Limites techniques
 slug: s3/limitations
-excerpt: "Retrouvez ici les limites techniques de l'offre Object Storage S3 Object Storage"
+excerpt: "Retrouvez ici les limites techniques de l'offre S3 Object Storage"
 section: Object Storage S3 High Performance
 order: 025
 ---
@@ -23,6 +23,10 @@ Illimité
 ### Bande passante maximale par connexion
 
 1 Gbps / connexion
+
+### Nombre maximum de requêtes par seconde en écriture sur un bucket
+
+300 (au-delà la qualité de service n'est plus garantie)
 
 ### Taille maximum par object / mpu / part
 
