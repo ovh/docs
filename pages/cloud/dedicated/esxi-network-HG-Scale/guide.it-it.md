@@ -10,7 +10,7 @@ order: 6
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 01/02/2022**
+**Ultimo aggiornamento: 09/05/2022**
 
 ## Obiettivo
 
@@ -33,9 +33,12 @@ Sulle gamme High Grade & SCALE, il funzionamento degli IP Failover in modalità 
 
 ## Procedura
 
-> [!primary]
+> [!warning]
 >
-> Su queste gamme di server, ci sono 4 schede di rete. Due per il pubblico, due per il privato. Per usufruire di tutta la banda passante, è necessario creare degli aggregati.
+> Su queste gamme di server, ci sono 4 schede di rete. Per sfruttare tutta la banda passante, è necessario creare degli aggregati. La nostra documentazione si basa su questi aggregati di schede di rete.
+>
+> **Per contro, ESXi non supporta nativamente il LACP.**
+> Nessuna ridondanza sarà quindi disponibile. Non sarà inoltre possibile gestire tutta la banda passante delle schede di rete del tuo server.
 >
 
 > [!warning]

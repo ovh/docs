@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 6
 ---
 
-**Dernière mise à jour le 28/01/2022**
+**Dernière mise à jour le 09/05/2022**
 
 ## Objectif
 
@@ -29,9 +29,12 @@ Sur les gammes High Grade & SCALE, le fonctionnement des IP fail-over en mode *b
 
 ## En pratique
 
-> [!primary]
+> [!warning]
 >
-> Sur ces gammes de serveurs, il y a 4 cartes réseaux. Deux pour le public, deux pour le privé. Pour profiter de l'ensemble de la bande passante, des agrégats doivent être créés.
+> Ces gammes de serveurs offrent 4 cartes réseaux. Afin de profiter de l'ensemble de la bande passante, des agrégats doivent ainsi être créés. Notre documentation se base sur ces agrégats de cartes.
+>
+> **En revanche, ESXi ne supporte pas nativement le LACP.** 
+> Aucune redondance ne sera donc disponible. La totalité de la bande-passante des cartes réseaux de votre serveur ne pourra pas non plus être exploitée.
 >
 
 > [!warning]
