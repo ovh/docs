@@ -60,6 +60,11 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 - **OUI** : Poursuivez la lecture de ce guide.
 - **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
 
+**Question n°3 : Avez-vous déjà redémarré électriquement le téléphone ?**
+
+- **OUI** : Poursuivez la lecture de ce guide.
+- **NON** : Débranchez et rebranchez l'alimentation électrique du téléphone. Cela peut avoir pour effet de rétablier son fonctionnement. Si le téléphone est toujours en défaut, poursuivez la lecture de ce guide.
+
 ### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
 
 > [!warning]
