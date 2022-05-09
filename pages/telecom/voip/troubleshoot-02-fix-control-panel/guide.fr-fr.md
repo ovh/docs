@@ -6,7 +6,7 @@ section: 'Diagnostic et dépannage'
 order: 02
 ---
 
-**Dernière mise à jour le 05/05/2022**
+**Dernière mise à jour le 09/05/2022**
  
 ## Objectif
 
@@ -52,18 +52,13 @@ Cliquez sur l'image ci-dessous pour afficher un résumé des actions à mener en
 
 **Question n°1 : Le défaut concerne-t-il un seul téléphone ?**
 
-- **OUI** : Il s'agit donc vraisemblablement d'un incident isolé à votre poste, pousuivez la lecture de ce guide.
+- **OUI** : Il s'agit donc vraisemblablement d'un incident isolé à votre poste, poursuivez la lecture de ce guide.
 - **NON** : Si plusieurs téléphones sont affectés, cela indique probablement un défaut sur un équipement annexe et commun à ces téléphones (switch, routeur / modem / Box Internet). Vérifiez donc la connectivité réseau des téléphones en vous aidant de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
 
 **Question n°2 : L'écran de votre téléphone s'allume-t-il ?**
 
 - **OUI** : Poursuivez la lecture de ce guide.
 - **NON** : Le défaut peut provenir du raccordement électrique de votre téléphone. Consultez tout d'abord notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/).
-
-**Question n°3 : La date et l'heure affichées sur l'écran du téléphone sont-elles exactes ?**
-
-- **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin de rétablir l'enregistrement de la ligne SIP sur le téléphone.
-- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
 
 ### Étape 2 - Réinitialiser le téléphone <a name="step2"></a>
 
@@ -88,6 +83,11 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 |**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
 |**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
 
+**Une fois le téléphone réinitialisé, la date et l'heure affichées sur sur son écran sont-elles exactes ?**
+
+- **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin d'effectuer un dépannage du téléphone. Cela lui permettra de récupérer les informations nécessaires à l'enregistrement de sa ligne SIP.
+- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](https://docs.ovh.com/fr/voip/diagnostic-reseau-local/#connectivity).
+
 ### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
 > **Prérequis nécessaire: connaître l'adresse IP publique de votre réseau**
@@ -109,7 +109,7 @@ Une fois dans l'assistant, celui-ci va vous guider en vous posant plusieurs ques
 Suivez avec précision les informations qui s'affichent à chaque étape de l'assistant. Ces informations peuvent vous permettre de résoudre la panne que vous rencontrez.
 
 > [!primary]
-> Le nombre de questions peut varier selon le modèle de téléphone.
+> L'image ci-dessous est donnée à titre d'exemple. Le modèle présenté et le nombre de questions peuvent varier selon le téléphone à dépanner. 
 
 Assurez-vous également que votre téléphone est correctement branché électriquement et bien connecté à votre réseau local.
 
