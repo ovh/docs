@@ -37,12 +37,12 @@ If you want to have more than one IPv6 configured on your server (or want to use
 
 > [!primary]
 >
-> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Please note that the leading "0's" can be removed in an IPv6 to avoid errors when determining the gateway.  
 >
 > For example:
 > 
-> - The IPv6 address of the server is 2607:5300:60:62ac::/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
-> - The IPv6 address of the server is 2001:41D0:1:46e::/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - The IPv6 address of the server is 2607:5300:60:62ac::/64 or 2607:5300:60:62ac:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2607:5300:60:62FF:FF:FF:FF:FF.
+> - The IPv6 address of the server is 2001:41D0:1:46e::/64 or 2001:41D0:0001:046e:0000:0000:0000:0000/64. The IPv6_GATEWAY will therefore be 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/au/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >

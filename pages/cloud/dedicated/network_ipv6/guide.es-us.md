@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 30/03/2022**
+**Última actualización: 04/05/2022**
 
 ## Objetivo
 
@@ -45,8 +45,8 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 >
 > Por ejemplo,
 > 
-> - La dirección IPv6 del servidor es 2607:5300:60:62ac::/64. Por lo tanto, la IPv6_GATEWAY será 2607:5300:60:62FF:FF:FF:FF:FF.
-> - La dirección IPv6 del servidor es 2001:41D0:1:46e::/64. Por lo tanto, la IPv6_GATEWAY será 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - La dirección IPv6 del servidor es 2607:5300:60:62ac::/64 o 2607:5300:60:62ac:0000:0000:0000:0000/64. Por lo tanto, la IPv6_GATEWAY será 2607:5300:60:62FF:FF:FF:FF:FF.
+> - La dirección IPv6 del servidor es 2001:41D0:1:46e::/64 o 2001:41D0:0001:046e:0000:0000:0000:0000/64. Por lo tanto, la IPv6_GATEWAY será 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
 >
