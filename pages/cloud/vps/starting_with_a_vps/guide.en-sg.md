@@ -192,4 +192,6 @@ You can install this SSL certificate manually, directly on the VPS. Please refer
 
 [Securing a VPS](../tips-for-securing-a-vps/)
 
+[Configuring a new Windows Server installation](../windows-first-config/)
+
 Join our community of users on <https://community.ovh.com/en/>.

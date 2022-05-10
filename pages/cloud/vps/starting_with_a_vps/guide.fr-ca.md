@@ -200,4 +200,6 @@ De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www
 
 [Sécuriser un VPS](../conseils-securisation-vps/)
 
+[Configurer une nouvelle installation de Windows Server](../windows-first-config/)
+
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

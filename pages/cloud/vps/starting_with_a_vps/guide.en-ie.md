@@ -197,4 +197,6 @@ For a more automated process, OVHcloud also offers the SSL Gateway solution. Ple
 
 [Securing a VPS](../tips-for-securing-a-vps/)
 
+[Configuring a new Windows Server installation](../windows-first-config/)
+
 Join our community of users on <https://community.ovh.com/en/>.

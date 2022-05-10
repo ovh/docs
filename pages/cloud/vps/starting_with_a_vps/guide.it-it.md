@@ -201,4 +201,6 @@ Se invece preferisci una soluzione automatica, scegli il servizio [SSL Gateway](
 
 [Proteggere un VPS](../consigli-sicurezza-vps/)
 
+[Configura una nuova installazione di Windows Server](../windows-first-config/)
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
