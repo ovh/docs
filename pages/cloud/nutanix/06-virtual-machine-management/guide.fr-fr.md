@@ -97,7 +97,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Création d'une machine virtuelle - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
-Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **Nutanix-VirtIO-1.1.7**.
+Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **Nutanix-VirtIO-1.1.7.iso**.
 
 Cliquez sur `Save`{.action}.
 
