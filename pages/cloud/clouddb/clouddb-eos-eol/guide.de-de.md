@@ -19,7 +19,6 @@ Weitere Informationen erhalten Sie auf der Seite zur [EOL Policy für Managed Da
 |MariaDB 10.4|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MariaDB 10.5|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
-|MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|Noch festzulegen|Noch festzulegen|Noch festzulegen|
 |PostgreSQL 9.5|2019-07-29|2020-08-12|2021-02-11|

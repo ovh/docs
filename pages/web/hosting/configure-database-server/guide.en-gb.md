@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Last updated 29th March 2022**
+**Last updated 10th May 2022**
 
 ## Objective
 
@@ -142,9 +142,6 @@ In the **General configuration of MySQL** box, you will see the configuration cu
 > &emsp;&emsp;Default mode of MariaDB 10.2 and higher:
 > <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
-> &emsp;&emsp;Default mode of MySQL 5.6:
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
-> 
 > &emsp;&emsp;Default mode of MySQL 5.7 and higher:
 > <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
 >
