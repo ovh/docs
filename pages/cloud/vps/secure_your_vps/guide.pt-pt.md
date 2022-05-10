@@ -208,7 +208,7 @@ A segurança dos seus dados é um elemento chave. É por isso que a OVHcloud ofe
 
 Na [página do produto](https://www.ovhcloud.com/pt/vps/options/) e nos respetivos [guias](../), poderá encontrar todas as informações sobre as soluções de backup disponíveis para o seu serviço.
 
-## Saiba mais
+## Quer saber mais?
 
 [VPS: primeira utilização](../instalar-gerir-vps/) 
 
