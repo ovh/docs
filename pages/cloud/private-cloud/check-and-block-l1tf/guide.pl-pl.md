@@ -9,7 +9,7 @@ section: Bezpieczeństwo
 
 ## Wprowadzenie
 
-W związku z informacją o istnieniu podatności L1TF („L1 Terminal Fault” lub „Foreshadow”), opublikowane zostały różne procedury i udostępnione łatki mające na celu zminimalizowanie ryzyka.
+W związku z informacją o istnieniu podatności L1TF (“L1 Terminal Fault” lub “Foreshadow”), opublikowane zostały różne procedury i udostępnione łatki mające na celu zminimalizowanie ryzyka.
 
 **Przewodnik wyjaśnia, jak zablokować podatność L1TF.**
 
@@ -57,7 +57,7 @@ Procedura dzieli się na trzy różne fazy.
 
 ### Etap 1: aktualizacja
 
-Aktualizacja vCenter jest wykonywana przez OVH, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](https://docs.ovh.com/pl/private-cloud/korzystanie_z_vmware_update_manager/){.external-link}.
+Aktualizacja vCenter jest wykonywana przez OVHcloud, jednak łatkę hostów ESXi instaluje samodzielnie użytkownik. Jest ona dostępna [w menedżerze aktualizacji](https://docs.ovh.com/pl/private-cloud/korzystanie_z_vmware_update_manager/){.external-link}.
 
 Listę łatek dla hostów ESXi znajdziesz w [tym dokumencie](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -88,7 +88,7 @@ Aby dowiedzieć się więcej, możesz przejść do etapu 3 dotyczącego rozwiąz
 > Jeśli po przejrzeniu poszczególnych elementów nie chcesz wyłączyć Hyper-threadingu, możesz usunąć wiadomość z alertem, postępując zgodnie z instrukcjami z tej [bazy wiedzy](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> OVH nie zaleca tego rozwiązania i nie ponosi odpowiedzialności za ryzyko podjęte przez użytkownika.
+> OVHcloud nie zaleca tego rozwiązania i nie ponosi odpowiedzialności za ryzyko podjęte przez użytkownika.
 >
 
 ## Sprawdź również

@@ -9,7 +9,7 @@ section: Sicherheit
 
 ## Einleitung
 
-Nach Veröffentlichung der Sicherheitslücke L1TF („L1 Terminal Fault“ oder „Foreshadow“) wurden verschiedene Vorgehensweisen und Patches veröffentlicht, die die Anfälligkeit für dieses Risiko minimieren sollen.
+Nach Veröffentlichung der Sicherheitslücke L1TF (“L1 Terminal Fault” oder “Foreshadow”) wurden verschiedene Vorgehensweisen und Patches veröffentlicht, die die Anfälligkeit für dieses Risiko minimieren sollen.
 
 **In dieser Anleitung erfahren Sie, wie Sie diese Sicherheitslücke schließen.**
 
@@ -57,7 +57,7 @@ Dieser Prozess wird in 4 Phasen unterteilt.
 
 ### 1. Update-Phase
 
-Das Update für vCenter wird von OVH durchgeführt. Der Patch für die ESXi-Hosts wird von Ihnen selbst durchgeführt und ist im [Update Manager](https://docs.ovh.com/de/private-cloud/verwendung_des_vmware_update_manager/) verfügbar.
+Das Update für vCenter wird von OVHcloud durchgeführt. Der Patch für die ESXi-Hosts wird von Ihnen selbst durchgeführt und ist im [Update Manager](https://docs.ovh.com/de/private-cloud/verwendung_des_vmware_update_manager/) verfügbar.
 
 Die Liste mit den Patches für ESXi-Hosts finden Sie in [diesem Dokument](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -88,7 +88,7 @@ Weitere Informationen finden Sie in Schritt 3 im Bereich „Resolution“ in die
 > Wenn Sie die verschiedenen Elemente überprüft haben und zu dem Schluss gekommen sind, dass Sie Hyperthreading nicht deaktivieren möchten, können Sie, wie in dieser [Knowledge Base](https://kb.vmware.com/s/article/57374){.external-link} beschrieben, die Warnung löschen.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> Dies wird von OVH keinesfalls empfohlen. OVH kann daher nicht für mögliche Folgen verantwortlich gemacht werden.
+> Dies wird von OVHcloud keinesfalls empfohlen. OVHcloud kann daher nicht für mögliche Folgen verantwortlich gemacht werden.
 >
 
 ## Weiterführende Informationen
