@@ -6,7 +6,7 @@ section: Diagnostic
 order: 7
 ---
 
-**Dernière mise à jour le 22/03/2022**
+**Dernière mise à jour le 10/05/2022**
 
 ## Objectif
 
@@ -60,7 +60,7 @@ Dans la fenêtre qui s'affiche :
 * Indiquez le répertoire contenant le fichier **index.php** ou **index.html** de votre site comme `Dossier racine` (2) ;
 * Cliquez sur `Suivant` (3).
 
-![change_root_folder](images/change_root_folder.png){.thumbnail}
+![change_root_folder](images/change_root_folder01.png){.thumbnail}
 
 > [!primary]
 >
