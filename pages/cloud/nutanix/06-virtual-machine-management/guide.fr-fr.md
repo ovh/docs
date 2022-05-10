@@ -97,7 +97,7 @@ Cliquez sur `Attach Disk`{.action}.
 
 ![Création d'une machine virtuelle - Etape 6](images/CreateVM06.PNG){.thumbnail}
 
-Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **virtio-win-0.1.126.iso**.
+Modifiez les paramètres `Type`{.action} en **CD-ROM** `Operation`{.action} en **Clone from Image** , `Image`{.action} en **Nutanix-VirtIO-1.1.7**.
 
 Cliquez sur `Save`{.action}.
 
@@ -165,7 +165,7 @@ Prenez connaissance des termes et conditions liés à la licence logicielle Micr
 
 ![Installation - WS2022](images/InstallWS2022-07.PNG){.thumbnail}
 
-Cliquez sur `Custom: Install Microsoft Server Operating System only`{.action}.
+Cliquez sur `Custom: Install Microsoft Server Operating System only (advanced)`{.action}.
 
 ![Installation - WS2022](images/InstallWS2022-08.PNG){.thumbnail}
 
@@ -179,13 +179,13 @@ Cliquez sur `Browse`{.action}.
 
 Sélectionnez le bon dossier `e:\Windows Server 2022\amd64` et cliquez sur `OK`{.action}.
 
-![Installation - WS2022- Etape5](images/InstallWS2022-10.PNG){.thumbnail}
+![Installation - WS2022- Etape5](images/InstallWS2022-11.PNG){.thumbnail}
 
 Sélectionnez ces pilotes : 
 
 * `Nutanix VirtIO Balloon Driver`{.action}
 * `Nutanix VirtIO Ethernet Adapter`{.action}
-* `Nutanix VirtIO SCSI pass-throught`{.action}
+* `Nutanix VirtIO SCSI pass-through controller`{.action}
 * `QEMU FWCfg Device`{.action}
 
 Cliquez sur `Next`{.action}.
@@ -200,7 +200,7 @@ Saisissez et confirmez le mot de passe dans les deux champs prévus à cet effet
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-14.PNG){.thumbnail}
 
-L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 est terminée.
+L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 pour l'hyperviseur **AHV** est terminée.
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
 
