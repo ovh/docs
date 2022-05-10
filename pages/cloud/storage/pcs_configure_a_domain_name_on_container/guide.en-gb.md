@@ -6,6 +6,7 @@ section: Object Storage Standard (Swift)
 order: 120
 ---
 
+**Last updated 5th May 2022**
 
 ## Objective
 

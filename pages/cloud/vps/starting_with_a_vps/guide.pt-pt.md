@@ -198,8 +198,10 @@ Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://w
 
 ## Quer saber mais?
 
-Consulte o manual [Introdução ao SSH](../../dedicated/ssh-introducao/){.external}.
+[Introdução ao SSH](../../dedicated/ssh-introducao/)
 
 [Proteger um VPS](../como-proteger-vps/)
 
-Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+[Configurar uma nova instalação do Windows Server](../windows-first-config/)
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
