@@ -1,7 +1,7 @@
 ---
-title: Use High Performance with Nextcloud
+title: Use S3 Object Storage with Nextcloud
 slug: s3/nextcloud
-excerpt: Learn how to set up storage in Nextcloud to use a High Performance bucket
+excerpt: Learn how to set up storage in Nextcloud to use a S3 Object Storage bucket
 section: Object Storage S3 High Performance
 order: 120
 ---
@@ -12,14 +12,14 @@ order: 120
 
 Nextcloud is a suite of client-server software for creating and using file hosting services.
 
-**This guide explains how to set up storage in Nextcloud to use a High Performance bucket.**
+**This guide explains how to set up storage in Nextcloud to use a S3 Object Storage bucket.**
 
 > [!warning]
-> 
+>
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
-> 
+>
 > This guide is designed to assist you in common tasks as much as possible. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
-> 
+>
 
 ## Requirements
 
@@ -27,7 +27,7 @@ Nextcloud is a suite of client-server software for creating and using file hosti
 - A user with the required access rights on the bucket
 - Your S3 credentials (access_key and secret_access_key)
 
-See our [Getting started with S3 High Performance](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/us/en/storage/s3/getting-started-with-s3) guide.
 
 ## Instructions
 

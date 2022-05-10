@@ -5,7 +5,7 @@ excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 1st December 2021**
+**Last updated 4th May 2022**
 
 ## Objective
 
@@ -25,6 +25,10 @@ Internet Protocol version 6 (IPv6) is the latest version of the Internet Protoco
 - All your IPv6 information (prefix, gateway etc.)
 - Basic knowledge of [SSH](../ssh-introduction/) and networking
 
+> [!warning]
+> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). IPv6 will be configured automatically when installing the OS.
+>
+
 ## Instructions
 
 If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
@@ -43,10 +47,6 @@ If you want to have more than one IPv6 configured on your server (or want to use
 > The safe way to retrieve the networking information for your server is to [use the OVHcloud API](https://docs.ovh.com/asia/en/api/first-steps-with-ovh-api/). Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 >
 
-> [!warning]
-> Please note that Kimsufi servers are only provided with a single IPV6 block (/128). In this case, please refer to this [guide](https://docs.ovh.com/asia/en/vps/configuring-ipv6/) for configuring ipv6 on a Kimsufi server.
->
->
 
 > [!api]
 >
@@ -131,7 +131,7 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in /etc/sysconfig/network-scripts/ifcfg-eth0. Use the command line to locate this file and open it for editing.
+Your server's network configuration file is located in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Use the command line to locate this file and open it for editing.
 
 #### Step 3: Amend the network configuration file
 

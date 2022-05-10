@@ -6,7 +6,7 @@ section: 'Netzwerk & IP'
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 23.12.2021**
@@ -32,6 +32,10 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## Beschreibung
 
@@ -73,7 +77,12 @@ Sie können bis zu **20 Regeln für jede IP** festlegen.
 >
 
 
-### Konfiguration des Firewall Network
+### Konfiguration der Network Firewall
+
+> [!warning]
+> Bitte beachten Sie, dass die Network Firewall von OVHcloud nicht verwendet werden kann, um Ports auf einem Server zu öffnen. Um Ports auf einem Server zu öffnen müssen Sie die Firewall des auf dem Server installierten Betriebssystems einrichten.<br>
+> Weitere Informationen finden Sie in den folgenden Anleitungen: [Firewall auf einem Windows Server konfigurieren](https://docs.ovh.com/de/dedicated/firewall-windows/) und [Konfiguration der Linux Firewall mit iptables](https://docs.ovh.com/de/dedicated/firewall-iptables/).
+>
 
 Um eine Regel hinzuzufügen, klicken Sie rechts auf die Schaltfläche `Eine Regel hinzufügen`{.action}:
 

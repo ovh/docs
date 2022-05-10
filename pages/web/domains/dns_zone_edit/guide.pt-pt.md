@@ -1,7 +1,7 @@
 ---
-title: 'Editar uma zona DNS da OVH'
+title: 'Editar uma zona DNS da OVHcloud'
 slug: alojamento_partilhado_como_editar_a_minha_zona_dns
-excerpt: 'Saiba como editar uma zona DNS da OVH através da Área de Cliente'
+excerpt: 'Saiba como editar uma zona DNS da OVHcloud através da Área de Cliente'
 legacy_guide_number: g1604
 ---
 
@@ -56,7 +56,7 @@ A zona DNS de um nome de domínio é um ficheiro de configuração composto por 
 
 ### Aceder à gestão de uma zona DNS da OVHcloud
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `Domínios`{.action} na barra à esquerda e selecione o domínio correspondente. De seguida, clique no separador `Zona DNS`{.action}.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `Domínios`{.action} e selecione o domínio correspondente. De seguida, clique no separador `Zona DNS`{.action}.
 
 Aparecerá uma tabela com um registo DNS associado ao seu domínio na OVHcloud. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 

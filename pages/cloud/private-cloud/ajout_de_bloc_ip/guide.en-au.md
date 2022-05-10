@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 01
 ---
 
-**Last updated 30th December 2021**
+**Last updated 6th April 2022**
 
 ## Objective
 
@@ -89,7 +89,7 @@ The result will be in this form:
 
 ![nexthop field](images/api-result.png){.thumbnail}
 
-Then use this API call to move the IP addresses to "IP parking":
+If you need to detach the IP block, you can use the following API call to move the IP into the "IP parking" section:
 
 > [!api]
 >
@@ -106,6 +106,10 @@ You can track the IP block movement from your [OVHcloud Control Panel](https://c
 The operation name is removeIpRipeBlock.
 
 ![operations manager](images/operations.png){.thumbnail}
+
+The IP will then appear in the `IP parking`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Go further
 

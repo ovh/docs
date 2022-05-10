@@ -29,7 +29,7 @@ Si vous configurez votre VPS comme serveur DNS, vous pouvez utiliser le service 
 
 ### Étape 1 : récupération du code de validation <a name="retrievecode"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur dans **Serveurs privés virtuels** dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 Basculez sur l'onglet `DNS Secondaire`{.action} et cliquez sur le bouton `Ajouter un domaine`{.action}.
 

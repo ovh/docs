@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-If you have followed the previous steps, you will now know how to [log in to the VMWare Horizon platform](../horizon-7-platform/), and your [pool template](../create-pool/) will be ready. It is now time to create your first pool.
+If you have followed the previous steps, you will now know how to [log in to the VMware Horizon platform](../horizon-7-platform/), and your [pool template](../create-pool/) will be ready. It is now time to create your first pool.
 
 **This guide will explain how to create pools using the VMware Horizon 7.1 platform.**
 
@@ -35,13 +35,13 @@ Once you have logged in to VMware Horizon, follow the steps below:
 > [!primary]
 >
 > There are three main desktop pool types: *automated*, *manual* and *RDS*.
-> 
+>
 > - *Automated* desktop pools are created using the same template, or using a template snapshot of a virtual machine (VM).
-> 
+>
 > - *Manual* desktop pools are a collection of VMs, physical computers or third-party VMs. In *automated* and *manual* desktop pools, each machine can only be accessed by one remote user at a time.
 >
 > - *RDS* desktop pools are not a collection of machines. Instead, they provide desktop sessions on RDS hosts. On an RDS host, several users can have different desktop sessions running simultaneously.
-> 
+>
 
 
 ![creating a pool](images/1201.png){.thumbnail}
@@ -70,7 +70,7 @@ Once you have logged in to VMware Horizon, follow the steps below:
 > [!primary]
 >
 > We recommend using the **Blast** protocol as it provides you with significantly smoother performance (regardless of your bandwidth conditions), higher security, and much longer battery life if you are using a mobile device. For more information on this protocol, please refer to [this VMware documentation page](https://docs.vmware.com/en/VMware-Horizon-7/7.4/horizon-architecture-planning/GUID-F64BAD49-78A0-44FE-97EA-76A56FD022D6.html){.external}.
-> 
+>
 
 ![creating a pool](images/1205.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Once you have logged in to VMware Horizon, follow the steps below:
 > [!primary]
 >
 > If the VM does not appear, select `Show all parent VMs`{.action} to find out why.
-> 
+>
 
 ![creating a pool](images/1209.png){.thumbnail}
 

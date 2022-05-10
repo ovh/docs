@@ -8,7 +8,7 @@ section: 'Diagnostyka i tryb Rescue'
 **Ostatnia aktualizacja z dnia 16/12/2020**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -255,7 +255,7 @@ Interfejs logowania powinien wyświetlać komunikat informujący o wygaśnięciu
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-Nowe hasło użytkownika admin musi zostać wprowadzone dwa razy. Jednak pole potwierdzenia nie jest jeszcze widoczne, co oznacza, że należy zostawić pierwsze pole puste, wpisać nowe hasło w drugim polu, a następnie użyć przycisku tabulacji (" ↹ ") klawiatury (wirtualnej), aby przejść do trzeciego pola ("Potwierdź hasło").
+Nowe hasło użytkownika admin musi zostać wprowadzone dwa razy. Jednak pole potwierdzenia nie jest jeszcze widoczne, co oznacza, że należy zostawić pierwsze pole puste, wpisać nowe hasło w drugim polu, a następnie użyć przycisku tabulacji (“ ↹ ”) klawiatury (wirtualnej), aby przejść do trzeciego pola (“Potwierdź hasło”).
 <br>Wpisz ponownie hasło i kliknij strzałkę, aby je zarejestrować.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}

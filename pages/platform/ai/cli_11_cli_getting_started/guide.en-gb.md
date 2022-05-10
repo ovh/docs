@@ -1,5 +1,5 @@
 ---
-title: CLI - Getting started
+title: CLI - Launch an AI notebook
 slug: cli/getting-started-cli
 excerpt: Learn how to run an AI Training notebook using the CLI
 section: Command Line Interface
@@ -159,7 +159,7 @@ Note that a notebook must first be stopped before being deleted, and that delete
 
 ## Going further
 
-Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-access-object-storage-data/).
+Learn how to access your object storage data from your notebooks [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
 
 Learn how to share your notebooks with other people [here](https://docs.ovh.com/gb/en/publiccloud/ai/cli/sharing-notebooks/).
 

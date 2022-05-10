@@ -28,7 +28,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `Serveurs privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 

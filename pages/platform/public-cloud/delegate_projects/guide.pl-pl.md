@@ -7,10 +7,10 @@ section: 'Zarządzanie projektami'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 25-02-2022**
+**Ostatnia aktualizacja z dnia 04-04-2022**
 
 ## Wprowadzenie
 
@@ -32,9 +32,7 @@ Na tej stronie możesz sprawdzić kontakty przypisane do Twojego projektu.
 
 ![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-### Konfiguracja kontaktów projektu
-
-Możesz kliknąć przycisk `Zmień`{.action}, aby zmienić aktualne kontakty. Otworzy to sekcję **Zarządzanie kontaktami** w Panelu klienta. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [kontaktami Twoich usług](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/), aby zakończyć operację.
+Możesz kliknąć przycisk `Zmień`{.action}, aby zmienić aktualne kontakty. Postępuj zgodnie z instrukcjami zawartymi w przewodniku Zarządzanie [Zmiana kontaktów projektu](../zmiana_kontaktow_projektu/), aby zakończyć operację.
 
 ### Dodaj kontakty i uprawnienia
 

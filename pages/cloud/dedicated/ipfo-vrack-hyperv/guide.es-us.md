@@ -19,11 +19,16 @@ Siga el proceso de instalación de Hyper-V, asocie un switch virtual y configure
 
 ## Requisitos
 
-- Un servidor dedicado (compatible con el [vRack](https://www.ovh.com/ca/en/solutions/vrack/)) en el que está instalado Windows Server.
-- Una imagen ISO para el sistema operativo que se instalará en su máquina virtual (CentOS 7 se utilizará como ejemplo en esta guía).
-- Un vRack incluido en su cuenta de OVHcloud.
-- Un bloque IP de 4 o más direcciones IP.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Un servidor dedicado (compatible con el [vRack](https://www.ovh.com/ca/en/solutions/vrack/)) en el que está instalado Windows Server
+- Una imagen ISO para el sistema operativo que se instalará en su máquina virtual (CentOS 7 se utilizará como ejemplo en esta guía)
+- Un vRack incluido en su cuenta de OVHcloud
+- Un bloque IP de 4 o más direcciones IP
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 ## Procedimiento
 

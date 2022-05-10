@@ -21,6 +21,11 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 - At least one [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) attached to the server
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
+
 ## Instructions
 
 The basic steps are always the same, independent of the underlying system:

@@ -3,7 +3,7 @@ title: FAQ
 excerpt: 'Managed Private Registry (Harbor) FAQ'
 slug: managed-private-registry-faq
 section: 'Getting started'
-order: 4
+order: 05
 ---
 
 ## Objective

@@ -10,7 +10,7 @@ order: 6
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 01/02/2022**
+**Última actualización: 09/05/2022**
 
 ## Objetivo
 
@@ -33,9 +33,12 @@ En las gamas High Grade & SCALE, no es posible el funcionamiento de las IP failo
 
 ## Procedimiento
 
-> [!primary]
+> [!warning]
 >
-> En estas gamas de servidores, hay 4 tarjetas de red. Dos para el público, dos para el privado. Para disfrutar del conjunto del ancho de banda, es necesario crear agregados.
+> En estas gamas de servidores, hay 4 tarjetas de red. Para disfrutar del ancho de banda completo, es necesario crear agregados. Nuestra documentación se basa en estos agregados de trajetas de red.
+>
+> **En cambio, ESXi no soporta nativamente el LACP.**
+> No habrá ninguna redundancia disponible. Tampoco podrá explotar todo el ancho de banda de las tarjetas de red de su servidor.
 >
 
 > [!warning]

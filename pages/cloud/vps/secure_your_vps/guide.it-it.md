@@ -19,7 +19,7 @@ Al momento dell'ordine del tuo VPS, puoi scegliere una distribuzione o un sistem
  
 > [!warning]
 >
-> OVHcloud mette a disposizione le macchine di cui è responsabile. Non abbiamo accesso a queste macchine e non ne siamo amministratori. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza del tuo server, ti consigliamo di rivolgerti a un esperto del settore. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione le macchine di cui è responsabile. Non abbiamo accesso ai dati ospitati su queste macchine e non siamo gli amministratori. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi relativi all'amministrazione, all'utilizzo o alla sicurezza del tuo server, ti consigliamo di rivolgerti a un esperto del settore. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
 > 
 
 ## Prerequisiti

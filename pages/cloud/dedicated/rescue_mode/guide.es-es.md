@@ -9,7 +9,7 @@ section: 'Diagnóstico y modo de rescate'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 19/03/2021**
+**Última actualización: 02/05/2022**
 
 ## Objetivo
 
@@ -28,8 +28,6 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 **Esta guía explica cómo activar y utilizar el modo de rescate en un servidor dedicado.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/).
@@ -38,16 +36,20 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 ## Procedimiento
 
+> [!warning]
+> Tenga en cuenta que, si ha establecido una llave SSH por defecto en su espacio para los productos dedicados, no recibirá una contraseña root al reiniciar un servidor en modo de rescate. En este caso, primero debe desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte esta [sección](../crear-claves-ssh-dedicadas/#disablesshkey) de la guía correspondiente.
+>
+
 Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
 Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
 ![Cambiar el modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
-En la siguiente página, seleccione **Arrancar en modo rescue**. Si el sistema operativo del servidor es Linux, seleccione `rescue64-pro`{.action} en la lista desplegable. Si el servidor está en Windows, seleccione `WinRescue`{.action} (ver la [sección de la guía abajo](#windowsrescue)). Indique otra dirección de correo electrónico si **no** desea que la información de identificación de la conexión se envíe a la dirección principal de su cuenta de cliente de OVHcloud.
+En la siguiente página, seleccione **Arrancar en modo rescue**. Si el sistema operativo del servidor es Linux, seleccione `rescue-customer`{.action} en la lista desplegable. Si el servidor está en Windows, seleccione `WinRescue`{.action} (ver la [sección de la guía abajo](#windowsrescue)). Indique otra dirección de correo electrónico si **no** desea que la información de identificación de la conexión se envíe a la dirección principal de su cuenta de cliente de OVHcloud.
 <br>Haga clic en `Siguiente`{.action} y `Aceptar`{.action}.
 
-![Modo rescue-pro](images/rescue-mode-003.png){.thumbnail}
+![Modo rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha de "Estado" en la zona titulada **Estado de los servicios**.
 <br>Haga clic en `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos.
@@ -72,7 +74,7 @@ A continuación, acceda al servidor en línea de comandos o a través de una her
 
 por ejemplo,
 
-```
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -90,8 +92,8 @@ Para realizar la mayoría de los cambios en el servidor por SSH en modo de resca
 
 Para montar las particiones, utilice el comando `mount` por SSH. Previamente deberá mostrar la lista de las particiones para conocer el nombre de la partición que quiera montar. A continuación ofrecemos algunos ejemplos de código:
 
-```
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -112,8 +114,8 @@ Device Boot Start End Blocks Id System
 
 Una vez que haya identificado el nombre de la partición que quiere montar, utilice el siguiente comando:
 
-```
-rescue:~# mount /dev/hda1 /mnt/
+```bash
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -129,41 +131,23 @@ Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el 
 
 Puede montar un datastore VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
 
-```
-rescue:~# apt-get update && apt-get install vmfs-tools
+```bash
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 A continuación, seleccione las particiones para consultar el nombre de la partición del datastore:
 
-```
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 ```
 
 Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor indicado en el paso anterior:
 
-```
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+```bash
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en línea de comandos.
-
-### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
-
-Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo `your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
-
-```
-https://169.254.10.20:444
-```
-
-Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
-
-- **Test del disco**: Comprueba su integridad con SMART.
-- **Procesadores**: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
-- **Particiones**: Comprueba el estado de los lectores.
-- **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
-- **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
-
-![Interfaz web para el modo de rescate](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

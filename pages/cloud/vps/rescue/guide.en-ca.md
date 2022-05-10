@@ -1,11 +1,11 @@
 ---
-title: Activating rescue mode on a VPS
+title: Activating and using rescue mode on a VPS
 slug: rescue
-excerpt: Find out how to use the OVHcloud rescue mode for troubleshooting
+excerpt: Find out how to activate and use rescue mode on a VPS
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 11th Febuary 2022**
+**Last updated 2nd May 2022**
 
 ## Objective
 
@@ -26,7 +26,7 @@ Performing checks in rescue mode helps to determine whether an issue is software
 > If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
 >
 
-**This guide explains how to reboot your VPS into rescue mode.**
+**This guide explains how to activate and use the rescue mode on your VPS.**
 
 ## Requirements
 
@@ -70,7 +70,43 @@ After you have initiated the reboot, a progress bar will show how the task is pr
 > You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) when it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 >
 
-You can now connect via SSH to your VPS using the dedicated rescue mode credentials. Once you have completed your actions in rescue mode, reboot the VPS again in 'normal' mode from the OVHcloud Control Panel.
+You will then need to access your server via the command line or an SSH tool, using the root password generated for the rescue mode.
+
+For example:
+
+```
+ssh root@your_server_IP
+root@your_server_password:
+```
+> [!warning]
+> 
+> Your SSH client will likely block the connection at first due to a mismatch of the ECDSA fingerprint. This is normal because the rescue mode uses its own temporary SSH server.
+>
+> One way around this is commenting the fingerprint of your regular system by adding a `#` in front of its line in the *known_hosts* file. Revert that change before returning to normal boot.
+>
+
+For most changes you make to your server via SSH while in rescue mode, you will need to mount a partition. This mode has its own temporary file system, so any file system changes you make in rescue mode will be lost once you reboot the server in normal mode.
+
+Once you are connected, verify the available disks with this command:
+
+```bash
+[RESCUE] root@vps-111111d:~ $ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0  2.5G  0 disk
+└─sda1   8:1    0  2.5G  0 part /
+sdb      8:16   0   80G  0 disk
+└─sdb1   8:17   0   80G  0 part
+```
+
+Next, mount the partition:
+
+```bash
+[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+```
+
+Your data will now be accessible from the `/mnt` folder.
+
+Once you have completed your actions in rescue mode, reboot the VPS again in 'normal' mode from the OVHcloud Control Panel.
 
 ![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 

@@ -65,7 +65,7 @@ Le snapshot sera ensuite disponible dans la rubrique `Instance Backup`{.action}.
 
 #### Depuis l’interface Horizon
 
-Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](../creer-un-acces-a-horizon/) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Pour utiliser cette méthode, il vous faut [créer un utilisateur OpenStack](../presentation-dhorizon/) et vous [connecter à l’interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Si vous avez déployé des instances dans différentes régions, assurez-vous d’être dans la bonne région. Vous pouvez le vérifier en haut à gauche dans l’interface Horizon.
 

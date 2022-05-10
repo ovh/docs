@@ -1,71 +1,77 @@
 ---
-title: 'Aumentar el tamaño de un disco adicional'
-excerpt: "Esta guía explica cómo aumentar el tamaño de un disco adicional y cómo ampliar la partición principal."
+title: "Aumentar el tamaño de un disco adicional"
+excerpt: "Cómo aumentar el tamaño de un volumen adicional y aumentar su partición principal"
 slug: aumentar_el_tamano_de_un_disco_adicional
-legacy_guide_number: g1865
+order: 6
 section: Almacenamiento
 ---
 
-**Última actualización: 14 de noviembre de 2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 29/03/2022**
 
 ## Objetivo
 
-Si ha alcanzado la capacidad máxima de almacenamiento de su disco adicional, es posible aumentar su tamaño. 
+Si ha alcanzado la capacidad máxima de su disco adicional, puede añadir almacenamiento aumentando su tamaño. 
 
-**Esta guía explica cómo aumentar el tamaño de un disco adicional y cómo ampliar la partición principal.**
+**Esta guía explica cómo aumentar el tamaño de un disco adicional y cómo ampliar la partición principal en consecuencia.**
 
 ## Requisitos
 
-* Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener un [disco adicional](https://www.ovhcloud.com/es-es/public-cloud/block-storage/){.external} asociado a su instancia
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
-* Tener acceso de administrador (root) a su instancia a través de SSH (solo para Linux)
-* Tener acceso de administrador a su instancia a través de RDP (solo para Windows)
+- Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su proyecto de Public Cloud.
+- Tener un [disco adicional](../crear_y_configurar_un_disco_adicional_en_una_instancia/) creado en su proyecto.
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Tener acceso administrativo (root) a su instancia a través de SSH (Linux) o RDP (Windows).
 
 ## Procedimiento
 
-### Desde el área de cliente
+Los siguientes pasos suponen que ya ha configurado un disco adicional según las instrucciones de [nuestra guía](../crear_y_configurar_un_disco_adicional_en_una_instancia/).
 
-Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione a continuación el proyecto en el que desea ampliar el tamaño del disco adicional.
+### Cambiar el tamaño del disco
 
-![control panel](images/select_project.png){.thumbnail}
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y abra su proyecto de `Public Cloud`{.action}. A continuación, haga clic en `Block Storage`{.action} en el menú de la izquierda.
 
-Localice su disco Block Storage en la sección «Almacenamiento» del menú de la izquierda.
+Si el volumen está asociado a una **instancia Windows**, haga clic en el botón `...`{.action} a la derecha del volumen correspondiente y seleccione `Desvincular de la instancia`{.action}.
 
-![control panel](images/increase-disk-02.png){.thumbnail}
+Haga clic en el botón `...`{.action} a la derecha del volumen correspondiente y seleccione `Editar`{.action}.
 
-Haga clic en los tres puntos situados a la derecha del disco y haga clic en Modificar. Se le redireccionará a esta página donde podrá modificar la capacidad del volumen de almacenamiento.
+![cuadro de mando](images/increase-disk-02.png){.thumbnail}
 
-![control panel](images/increase-disk-03.png){.thumbnail}
+En la nueva ventana, introduzca el nuevo tamaño del volumen y haga clic en `Editar volumen`{.action}.
 
-Una vez terminado este paso, haga clic en el botón `Modificar el volumen`{.action}.
+![cuadro de mando](images/increase-disk-03.png){.thumbnail}
 
+Asegúrese de que el volumen está asociado a su instancia antes de continuar. En caso contrario, haga clic en `...`{.action} en la línea de volumen y seleccione `Asociar a la instancia`{.action}.
 
-### Con Linux
+### Ampliar la partición (instancia Linux)
 
-Primero desmonte el disco con el siguiente comando:
+Conéctese por SSH a su instancia para ajustar la partición al disco redimensionado.
 
+Desmonte el disco utilizando este comando:
+
+```bash
+admin@server:~$ sudo umount /mnt/disk
 ```
-admin@server-1:~$ sudo unmount /mnt/disk
-```
 
-Después, vuelva a crear la partición.
+Recargue la partición:
 
+```bash
+admin@server:~$ sudo fdisk /dev/vdb
 ```
-admin@server-1:~$ sudo fdisk /dev/vdb
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command
 ```
-
-```
+```console
 Command (m for help): d
 
 Selected partition 1
 Partition 1 has been deleted.
 ```
-
-```
+```console
 Command (m for help): n
 
 Partition type
@@ -79,8 +85,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
 
 Created a new partition 1 of type 'Linux' and of size 70 GiB.
 ```
-
-```
+```console
 Command (m for help): w
 
 The partition table has been altered.
@@ -88,10 +93,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-A continuación, compruebe de nuevo la partición.
+Compruebe la partición:
 
-```
-#admin@server-1:~$ sudo e2fsck -f /dev/vdb1
+```bash
+admin@server:~$ sudo e2fsck -f /dev/vdb1
 
 e2fsck 1.42.12 (29-Aug-2014)
 Pass 1: Checking inodes, blocks, and sizes
@@ -102,22 +107,22 @@ Pass 5: Checking group summary information
 /dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
 ```
 
-```
-#admin@server-1:~$ sudo resize2fs /dev/vdb1
+```bash
+admin@server:~$ sudo resize2fs /dev/vdb1
 
 resize2fs 1.42.12 (29-Aug-2014)
 Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
 The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
 ```
 
-Para terminar, monte y compruebe el disco.
+Por último, remonte y verifique el disco:
 
-```
-#admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+```bash
+admin@server:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-```
-#admin@server-1:~$ df -h
+```bash
+admin@server:~$ df -h
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -128,42 +133,38 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
-### Con Windows
+### Ampliar la partición (instancia Windows)
 
-Conéctese a su instancia con RDP. Una vez conectado, haga clic derecho en el `Menú Inicio`{.action} y después en `Administración de discos`{.action}.
+Establezca una conexión RDP (Remote Desktop) en su instancia Windows.
 
-![Windows](images/increase-disk-04.png){.thumbnail}
+Una vez que se haya conectado, haga clic derecho en el botón `Iniciar`{.action} y abra la `Gestión de discos`{.action}.
 
-Cuando se abra la herramienta de administración de discos, aparecerá su nuevo disco como volumen desconocido con espacio no asignado, como se muestra a continuación.
+![windows](images/resize-win-01.png){.thumbnail}
 
-![Windows](images/increase-disk-05.png){.thumbnail}
+El disco ampliado muestra ahora la capacidad adicional en forma de espacio no asignado.
 
-Si el disco está desconectado puede que se deba a alguna política aplicada a la instancia. Para solucionarlo, haga clic derecho sobre el disco y seleccione En línea.
+![windows](images/resize-win-02.png){.thumbnail}
 
-![Windows](images/increase-disk-06.png){.thumbnail}
+Haga clic derecho en el volumen y seleccione `Ampliar el volumen`{.action} en el menú contextual.
 
-> [!primary]
->
-En función de su versión de Windows, puede que necesite inicializar su disco adicional antes de utilizarlo. Para inicializarlo, haga clic derecho de nuevo sobre el disco y seleccione esta vez `Inicializar Disco`{.action}.
->
+![windows](images/resize-win-03.png){.thumbnail}
 
-Si el volumen principal de su disco es inferior a la capacidad total del disco, haga clic derecho sobre el volumen y haga clic en `Ampliar volumen`{.action}
+En el Asistente para la extensión de volumen, haga clic en `Siguiente`{.action} para continuar.
 
-![Windows](images/increase-disk-07.png){.thumbnail}
+Si desea añadir una capacidad inferior a la de la partición en su totalidad, puede modificar el espacio en disco.
 
-Aparecerá a continuación el Asistente para extender volúmenes. Haga clic en `Siguiente`{.action} para iniciar el asistente.
+Haga clic en `Siguiente`{.action}.
 
-![Windows](images/increase-disk-08.png){.thumbnail}
+![windows](images/resize-win-04.png){.thumbnail}
 
-Ahora aumente el volumen hasta el tamaño deseado y haga clic en `Siguiente`{.action} cuando haya terminado.
+Haga clic en `Finalizar`{.action} para finalizar el proceso.
 
-![Windows](images/increase-disk-09.png){.thumbnail}
+El volumen redimensionado incluye ahora el espacio en disco adicional.
 
-Por último, haga clic en `Finalizar`{.action} para completar el proceso.
-
-![Windows](images/increase-disk-10.png){.thumbnail}
+![windows](images/resize-win-05.png){.thumbnail}
 
 ## Más información
 
-* [Crear y configurar un disco adicional en una instancia](https://docs.ovh.com/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/){.external}
-* Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+[Crear y configurar un disco adicional en una instancia](../crear_y_configurar_un_disco_adicional_en_una_instancia/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

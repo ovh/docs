@@ -19,6 +19,11 @@ Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Net
 - Sie haben [einen IP-Adressblock im vRack eingerichtet](../vrack-ip-block-hinzufuegen-oder-entfernen/).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## Beschreibung
 
 ### Schritt 1: Aktuelle Ankündigungszone ermitteln
@@ -81,7 +86,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse jetzt in **Gravelines** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms“.
+Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse jetzt in **Gravelines** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Weiterführende Informationen
 

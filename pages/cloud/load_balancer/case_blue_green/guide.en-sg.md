@@ -64,10 +64,6 @@ In our scenario, we will declare a farm of servers for the HTTP service. Please 
 
 ![Add a new HTTP farm dedicated to infrastructure A](images/ferme1.png){.thumbnail}
 
-
-![Enter the farm’s configuration](images/backend1.png){.thumbnail}
-
-
 #### Via the API:
 
 > [!api]

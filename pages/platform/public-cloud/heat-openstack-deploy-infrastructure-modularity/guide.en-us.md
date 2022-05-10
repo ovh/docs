@@ -5,7 +5,7 @@ excerpt: Find out how to process environment variables using the modularity of H
 section: Tutorials
 ---
 
-**Last updated 2018/06/20**
+**Last updated 20th June 2018**
 
 ## Objective
 

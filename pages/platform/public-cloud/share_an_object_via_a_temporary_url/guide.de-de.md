@@ -50,7 +50,7 @@ Um Ihren Schlüssel zu generieren, haben Sie mehrere Möglichkeiten. Sie können
 - date +%s | sha256sum
 - date +%s | md5sum 
 
-Sobald Sie Ihren Schlüssel haben, können Sie diesen über den Swift-Client auf Ihrem Projekt einrichten. Denken Sie daran, die Zahlenreihe „12345” durch Ihren Schlüssel zu ersetzen:
+Sobald Sie Ihren Schlüssel haben, können Sie diesen über den Swift-Client auf Ihrem Projekt einrichten. Denken Sie daran, die Zahlenreihe “12345” durch Ihren Schlüssel zu ersetzen:
 
 ```bash
 swift post -m "Temp-URL-Key: 12345"

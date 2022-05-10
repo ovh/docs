@@ -56,7 +56,7 @@ A primeira etapa consiste em recuperar o endereço IPV6 e a gateway IPv6 associa
 
 #### Através da Área de Cliente <a name="viacontrolpanel"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá à secção `Bare Metal Cloud`{.action} e seleccione o seu servidor em `Servidores privados virtuais`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa n.º 2 “[Aplicar a configuração IPv6](#applyipv6)”.
 

@@ -1,39 +1,39 @@
 ---
 title: 'Installer Ghost sur son hébergement Cloud Web'
 slug: installer-ghost-cloud-web
-excerpt: 'Apprenez à installer un blog avec le moteur Ghost sur Cloud Web'
+excerpt: 'Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web'
 section: Tutoriels
 order: 1
 ---
 
-## Introduction
+**Dernière mise à jour le 04/05/2022**
+
+## Objectif
 
 [Ghost](https://ghost.org/){.external} est un moteur de blog open source. Il est conçu pour simplifier le processus de publication en ligne par des blogueurs ou journalistes. Ce logiciel est écrit en JavaScript et utilise [Node.js](https://nodejs.org/){.external}, une plateforme logicielle permettant de créer vos sites et API en JavaScript côté serveur.
 
-L'[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} permet d'utiliser Node.js comme moteur d'exécution pour vos sites web et donc d'y installer et héberger Ghost ou toute autre application conçue pour Node.js.
+L'[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} permet d'utiliser Node.js comme moteur d'exécution pour vos sites web et donc d'y installer et héberger Ghost ou toute autre application conçue pour Node.js.
 
-Dans ce tutoriel, nous allons installer un blog avec Ghost sur un hébergement Cloud Web d'OVH et le mettre à disposition derrière votre nom de domaine.
+Dans ce tutoriel, nous allons installer un blog avec Ghost sur un hébergement Cloud Web OVHcloud et le mettre à disposition derrière votre nom de domaine.
+
+**Découvrez comment installer un blog avec le moteur Ghost sur Cloud Web**
 
 ## Prérequis
 
-### Ce que vous devez savoir
-
-- Connaître les bases de l'écosystème Node.js.
-- Se connecter en SSH.
-- Éditer un fichier en ligne de commande via Vim, Emacs ou Nano par exemple.
-
-### Ce que vous devez avoir
-
-- Disposer d'un [hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
+- Disposer d'un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Ce que vous devez savoir
+    - Connaître les bases de l'écosystème Node.js.
+    - Se connecter en SSH.
+    - Éditer un fichier en ligne de commande via Vim, Emacs ou Nano par exemple.
 
 ## En pratique
 
 ### Étape 1 : activer Node.js comme moteur d'exécution
 
-Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d'exécution Node.js est bien activé. Si tel est le cas, poursuivez vers l'étape 2 « [Associer Node.js à un multisite](./#etape-2-associer-nodejs-a-un-multisite) ».
 
@@ -74,7 +74,7 @@ Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifi
 Si ce n'est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
 - **Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
-- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
+- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s'affiche, complétez les informations demandées selon votre situation personnelle. Le tableau ci-dessous montre celles utilisées pour ce tutoriel.
 
@@ -98,7 +98,7 @@ Positionnez-vous maintenant sur l'onglet `Bases de données`{.action}. Si celui-
 
 ![ghostcloudweb](images/ghost-cloud-web-step5.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, sélectionnez alors « MySQL », puis choisissez une version. Pour ce tutoriel, nous avons sélectionné la version « 5.6 ». Sélectionnez ensuite « Stockée dans votre instance Cloud Web », puis cliquez sur `Suivant`{.action}.
+Dans la fenêtre qui s'affiche, Seul « MySQL » en version « 5.6 » est disponible. Sélectionnez ensuite « Stockée dans votre instance Cloud Web », puis cliquez sur `Suivant`{.action}.
 
 Personnalisez ensuite un nom d'utilisateur et définissez-lui un mot de passe. Une fois ceci fait, cliquez sur `Suivant`{.action}. Confirmez alors la création de la base de données en cliquant sur `Valider`{.action}. Patientez ensuite quelques minutes le temps que la manipulation se réalise.
 
@@ -125,8 +125,6 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées selon vot
 |database__client|string|mysql|
 |server__port|integer|80|
 |server__host|string|0.0.0.0|
-
-![ghostcloudweb](images/ghost-cloud-web-step8.png){.thumbnail}
 
 ### Étape 5 : se connecter à votre Cloud Web via SSH
 
@@ -249,7 +247,7 @@ L'installation et la configuration de Ghost sont maintenant terminées. Il ne vo
 
 ### Étape 7 : redémarrer le *daemon* Node.js
 
-Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}
+Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis sur `Redémarrer`{.action}
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 
@@ -267,3 +265,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ## Conclusion
 
 Nous avons vu comment installer une application Node.js sur un hébergement Cloud Web en respectant les différentes étapes. Il ne vous reste plus qu'à utiliser Ghost et y publier vos premiers contenus !
+
+## Aller plus loin
+
+[Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+
+[Mettre mon site en ligne](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+
+[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
+
+[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

@@ -1,18 +1,18 @@
 ---
-title: Iniziare con S3 High Performance (EN)
+title: Iniziare con S3 Object Storage (EN)
 slug: s3/getting-started-with-s3
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3'
 excerpt:
 section: Object Storage S3 High Performance
 order: 020
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/storage/s3/getting-started-with-s3/'
 ---
 
 **Last updated**
 
 ## Objective
 
-This guide aims at giving you the basics of High Performance containers / objects management.
+This guide aims to familiarise you with the management of your containers / objects.
 
 ## Requirements
 

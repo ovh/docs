@@ -1,7 +1,7 @@
 ---
-title: 'Odnawianie usług przy użyciu API OVH'
+title: 'Odnawianie usług przy użyciu API OVHcloud'
 slug: odnawianie-uslug-api-ovh
-excerpt: 'Dowiedz się, jak odnawiać usługi przy użyciu API OVH'
+excerpt: 'Dowiedz się, jak odnawiać usługi przy użyciu API OVHcloud'
 section: 'Pierwsze kroki'
 ---
 
@@ -9,13 +9,13 @@ section: 'Pierwsze kroki'
 
 ## Wprowadzenie
 
-Domyślnie, OVH oferuje automatyczne odnawianie usług. Istnieje jednak możliwość odnowienia usług przy użyciu API.
+Domyślnie, OVHcloud oferuje automatyczne odnawianie usług. Istnieje jednak możliwość odnowienia usług przy użyciu API.
 
 **Niniejszy przewodnik opisuje, w jaki sposób przeprowadzić operację odnowienia usługi.**
 
 ## Wymagania początkowe
 
-- Zalogowanie do [API OVH](https://api.ovh.com/console){.external}
+- Zalogowanie do [API OVHcloud](https://api.ovh.com/console){.external}
 - Utworzenie [danych identyfikacyjnych dla API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/)
 
 ## W praktyce

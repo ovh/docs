@@ -10,7 +10,7 @@ order: 030
 
 ## Objective
 
-Learn how to manage your identity and access to your High Performance resources.
+Learn how to manage your identity and access to your S3 Object Storage resources.
 
 ## Requirements
 
@@ -74,7 +74,7 @@ Find below some examples of JSON configuration files:
 
 ```json
 {
-  "Statement:[{
+  "Statement":[{
     "Sid": "RWContainer",
     "Effect": "Allow",
     "Action":["s3:GetObject", "s3:PutObject", "s3:DeleteObject", "s3:ListBucket", "s3:ListMultipartUploadParts", "s3:ListBucketMultipartUploads", "s3:AbortMultipartUpload", "s3:GetBucketLocation"],
@@ -124,15 +124,15 @@ Find below some examples of JSON configuration files:
 
 ### List of supported actions
 
-| Action | Scope |
+| Action  | Scope  |
 |:--|:--|
 | s3:AbortMultipartUpload | Object |
-| s3:CreateBucket |
-| s3:DeleteBucket |
+| s3:CreateBucket | Bucket |
+| s3:DeleteBucket | Bucket |
 | s3:DeleteObject | Object |
 | s3:GetBucketLocation | Bucket |
 | s3:GetObject | Object |
-| s3:ListBucket |
+| s3:ListBucket | Bucket |
 | s3:ListBucketMultipartUploads | Bucket |
 | s3:ListMultipartUploadParts | Object |
 | s3:PutObject | Object |

@@ -208,10 +208,10 @@ Para más información, consulte la guía [Configurar el firewall de red](../fir
 
 La noción de seguridad va más allá de proteger un sistema frente a posibles ataques. La protección de los datos es un aspecto fundamental. Por eso, OVHcloud ofrece un espacio de backup de 500 GB gratis con su servidor dedicado. Puede activar este espacio de backup en su área de cliente y acceder a él a través de los siguientes protocolos:
 
-* FTP
-* FTPS
-* NFS
-* CIFS
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Para replicar sus datos y transferirlos a su espacio de backup, necesitará una solución de backup externa.
 

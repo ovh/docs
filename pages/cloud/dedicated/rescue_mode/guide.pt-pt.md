@@ -10,7 +10,7 @@ section: 'Diagnóstico e Modo Rescue'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 19/03/2021**
+**Última atualização: 02/05/2022**
 
 ## Objetivo
 
@@ -29,8 +29,6 @@ O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ai
 
 **Saiba como ativar e utilizar o modo rescue do seu servidor.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
@@ -38,16 +36,20 @@ O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ai
 
 ## Instruções
 
+> [!warning]
+> Tenha em conta que se definiu uma chave SSH predefinida no seu espaço para os produtos dedicados, não receberá nenhuma palavra-passe root durante o reboot de um servidor em modo rescue. Neste caso, deve desativar primeiro a chave SSH predefinida antes de reiniciar o servidor em modo rescue. Para isso, consulte a [secção](../criar-chaves-ssh-dedicadas/#disablesshkey) do guia correspondente.
+>
+
 O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. 
 
 Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
 
 ![Alterar o modo de arranque](images/rescue-mode-001.png){.thumbnail}
 
-Na página seguinte, seleccionar **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
+Na página seguinte, seleccionar **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue-customer`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
 <br>Clique em `Seguinte`{.action} e `Validar`{.action}.
 
-![Modo rescue-pro](images/rescue-mode-003.png){.thumbnail}
+![Modo rescue-customer](images/rescue-mode-08.png){.thumbnail}
 
 Concluída a alteração, clique em `...`{.action} à direita do "Estado" na zona **Estado dos serviços**.
 <br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.
@@ -72,7 +74,7 @@ De seguida, deverá aceder ao servidor através de uma linha de comandos ou atra
 
 Por exemplo:
 
-```sh
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -90,8 +92,8 @@ A maior parte das modificações efetuadas no seu servidor através de SSH em mo
 
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
-```sh
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -112,8 +114,8 @@ Device Boot Start End Blocks Id System
 
 Depois de identificar o nome da partição que pretende montar, utilize o seguinte comando:
 
-```sh
-rescue:~# mount /dev/hda1 /mnt/
+```bash
+rescue-customer:~# mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -129,41 +131,23 @@ Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco r�
 
 Pode montar um datastore VMware da forma descrita no segmento anterior. Em primeiro lugar, instale o package necessário:
 
-```
-rescue:~# apt-get update && apt-get install vmfs-tools
+```bash
+rescue-customer:~# apt-get update && apt-get install vmfs-tools
 ```
 
 De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
 
-```
-rescue:~# fdisk -l
+```bash
+rescue-customer:~# fdisk -l
 ```
 
 Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
 
-```
-rescue:~# vmfs-fuse /dev/sdbX /mnt
+```bash
+rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
-
-### Utilização da interface Web do modo de segurança ("rescue64-pro" apenas)
-
-Depois de reiniciar o servidor, pode aceder à interface Web ao introduzir `your_server_IP:81` na barra de endereços do seu browser. Com https, utilize a porta *444* em vez disso. Por exemplo:
-
-```
-https://169.254.10.20:444
-```
-
-Se já protegeu os seus dados, pode utilizar a interface Web do modo de recuperação para testar os seguintes componentes.
-
-- **Teste do disco**: Verifique a sua integridade com o SMART.
-- **Processadores**: Verifique que o processador funciona normalmente. (Esta operação pode levar algum tempo)
-- **Partitions**: Verifica os estados dos leitores.
-- **Memória**: Verifique a memória RAM instalada no servidor. (Esta operação pode levar algum tempo)
-- **Rede**: Verifique a ligação a um sistema de referência interno da OVHcloud, bem como a ligação ao seu browser.
-
-![Interface Web para o modo de segurança](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

@@ -23,12 +23,16 @@ O IP aliasing é uma configuração de rede para servidores dedicados que permit
 - Dispor de um ou vários endereços [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}.
 - Estar ligado ao servidor usando o protocolo SSH.
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
 ## Instruções
 
 O presente guia inclui instruções paras sistemas Linux e para o Windows Server.
 
-### Debian 10
+### Debian 10/11
 
 #### 1 - Fazer cópia do ficheiro de configuração (*source file*)
 

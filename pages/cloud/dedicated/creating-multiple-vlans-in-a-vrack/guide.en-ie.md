@@ -22,6 +22,10 @@ The standard [vRack configuration](https://docs.ovh.com/ie/en/dedicated/configur
 * Your chosen private IP address range
 * You must have completed the [vRack configuration guide](https://docs.ovh.com/ie/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}.
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
 
 ## Instructions
 

@@ -28,19 +28,18 @@ There are three different contact types:
 - **The technical contact** only manages the technical aspects of a service.
 - **The billing contact** only manages the billing aspects of a service. Notably, this contact receives renewal notifications for services. 
 
-The NIC handle is a personal username that you receive via email when you create a customer account with OVHcloud. It is usually made up of two letters, followed by numbers. E.g.: **xx11111-ovh**. When you order services, this NIC handle is used as a contact.
+The NIC handle is a personal username that you receive via email when you create a customer account with OVHcloud. It is usually made up of two letters followed by numbers, in the format **xx11111-ovh**. When you order services, this NIC handle is used as a contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-- access to the email address linked to your profile
-- the correct rights for the service concerned
-- the new contact’s NIC handle (the contact you want to add)
-- the new contact must have access to the email address linked to their profile
-- old and new billing contacts must be up-to-date with their payments
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- Access to the email address linked to any relevant customer account
+- Appropriate rights for the service concerned
+- The new contact’s NIC handle (the contact you want to add)
+- No outstanding payments on billing contacts
 
 ## Instructions
 
@@ -106,7 +105,7 @@ If one of the contacts has not received this email, the contact email address li
 
 If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
-![Contact management](images/managing_contacts_07.png){.thumbnail}
+![Contact management](images/managing_contacts_007.png){.thumbnail}
 
 The contact change will take effect a few minutes after both contacts have validated the request. They will then receive an email informing them that the request has been processed.
 

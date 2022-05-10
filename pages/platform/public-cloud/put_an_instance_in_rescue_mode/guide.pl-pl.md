@@ -36,7 +36,7 @@ Kliknij ikonę z trzema kropkami (po prawej stronie instancji) i wybierz `Restar
 
 ![control panel](images/rescue2022.png){.thumbnail}
 
-Zostanie wyświetlone okno dialogowe „Restart w trybie ratunkowym”. Kliknij listę rozwijaną, aby wybrać dystrybucję systemu Linux do użycia w trybie ratunkowym, a następnie kliknij przycisk `Uruchom ponownie`{.action}.
+Zostanie wyświetlone okno dialogowe “Restart w trybie ratunkowym”. Kliknij listę rozwijaną, aby wybrać dystrybucję systemu Linux do użycia w trybie ratunkowym, a następnie kliknij przycisk `Uruchom ponownie`{.action}.
 
 ![control panel](images/rescue2.png){.thumbnail}
 

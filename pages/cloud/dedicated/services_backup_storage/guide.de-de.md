@@ -28,6 +28,11 @@ Die dedizierten Server von OVHcloud inkludieren einen zusätzlichen Backup-Speic
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## In der praktischen Anwendung
 
 ### Backup Storage aktivieren
@@ -198,7 +203,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Backup Storage geändert werden. Lautet der Name beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.
+> Um das FTPS-Protokoll zu verwenden, muss der Name Ihres Backup Storage geändert werden. Lautet der Name beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden. Fügen Sie außerdem dem untenstehenden Befehl ein `-ssl` Argument hinzu.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:
@@ -250,7 +255,7 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 > [!primary]
 >
-> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Backup Storages. Lautet dieser beispielsweise „ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net“, muss er zu „ftpback-rbxX-YYY.mybackup.ovh.net“ abgeändert werden.
+> lftp verwendet standardmäßig FTP+SSL/TLS. Ändern Sie deshalb den Namen Ihres Backup Storages. Lautet dieser beispielsweise “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, muss er zu “ftpback-rbxX-YYY.mybackup.ovh.net” abgeändert werden.
 >
 
 Geben Sie für das Backup einer einzelnen Datei folgenden Befehl ein:

@@ -31,6 +31,10 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 - Disporre di un servizio OVHcloud compatibile con il Firewall Network ([server dedicati](https://www.ovh.it/server_dedicati/){.external}, [VPS](https://www.ovh.it/vps/){.external}, [istanze Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, [Private Cloud](https://www.ovh.it/private-cloud/){.external}, [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}, ecc...).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 ## Procedura
 
@@ -71,6 +75,11 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 
 
 ### Configura il Firewall Network
+
+> [!warning]
+> Ti ricordiamo che il Firewall Network di OVHcloud non può essere utilizzato per aprire porte a un server. Per aprire le porte a un server, devi passare attraverso il firewall del sistema operativo installato sul server.<br>
+> Per maggiori informazioni, consulta queste guide: [Configurare il firewall su Windows](https://docs.ovh.com/it/dedicated/firewall-windows/) e [Configurare il firewall su Linux con Iptable](https://docs.ovh.com/it/dedicated/firewall-iptables/).
+>
 
 Per aggiungere una regola, clicca sul pulsante `Aggiungi una regola`{.action}:
 

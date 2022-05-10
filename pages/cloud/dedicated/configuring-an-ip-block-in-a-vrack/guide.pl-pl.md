@@ -16,12 +16,16 @@ Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/
 
 ## Wymagania początkowe
 
-* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów
-* Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
-* Posiadanie [serwera kompatybilnego z vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
-* Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów
+- Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
+- Posiadanie [serwera kompatybilnego z vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
+- Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 
@@ -81,7 +85,7 @@ broadcast 46.105.135.111
 
 ### Tworzenie nowej tablicy routingu IP
 
-Pakiet „iproute2” umożliwi ręczną konfigurację routingu IP na serwerze.
+Pakiet “iproute2” umożliwi ręczną konfigurację routingu IP na serwerze.
 
 Połącz się przez SSH z Twoim serwerem i wprowadź następującą komendę, aby pobrać i zainstalować pakiet:
 

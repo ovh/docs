@@ -21,10 +21,15 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) or a failover IP block (RIPE)
-- administrative access (root) via SSH or GUI to your server
-- basic networking and administration knowledge
+- A [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) or a failover IP block (RIPE)
+- Administrative access (root) via SSH or GUI to your server
+- Basic networking and administration knowledge
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 
@@ -35,7 +40,7 @@ The following sections contain the configurations for the most commonly used dis
 Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: Create a backup
 

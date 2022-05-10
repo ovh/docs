@@ -208,10 +208,10 @@ Per maggiori informazioni, consulta la nostra guida su come [configurare il Fire
 
 Il concetto di sicurezza non si limita esclusivamente alla protezione di un sistema dagli attacchi. La messa in sicurezza dei tuoi dati è un elemento fondamentale ed è per questo che OVHcloud ti offre uno spazio di backup di 500 GB incluso con il tuo server, che puoi attivare direttamente dal tuo Spazio Cliente ed eseguire l’accesso utilizzando i seguenti protocolli:
 
-* FTP
-* FTPS
-* NFS
-* CIFS
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Per copiare i tuoi dati e trasferirli nel tuo spazio di backup, avrai bisogno di una soluzione di backup esterna.
 

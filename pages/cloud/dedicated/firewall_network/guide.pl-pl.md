@@ -1,12 +1,12 @@
 ---
 title: 'Konfiguracja zapory sieciowej Network Firewall'
-excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVH'
+excerpt: 'Dowiedz się, jak skonfigurować reguły firewalla w OVHcloud'
 slug: network-firewall
 section: 'Sieć & IP'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 23-12-2021**
@@ -31,6 +31,10 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 - Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 
@@ -70,6 +74,11 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 
 
 ### Konfiguracja zapory Network Firewall 
+
+> [!warning]
+> Firewall Network OVHcloud nie może być używany do otwierania portów na serwerze. Aby otworzyć porty na serwerze, musisz przejść przez firewall systemu operacyjnego zainstalowanego na serwerze<br>
+> Więcej informacji znajdziesz w przewodnikach: [Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/) i [Konfiguracja firewalla w systemie Linux z systemem Iptables](https://docs.ovh.com/pl/dedicated/firewall-iptables/).
+>
 
 Dodawanie reguły odbywa się przez kliknięcie po prawej stronie `Dodaj regułę`{.action}.
 

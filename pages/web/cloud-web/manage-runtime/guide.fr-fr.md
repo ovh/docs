@@ -5,7 +5,7 @@ excerpt: 'Apprenez à gérer les moteurs d’exécution de votre hébergement po
 section: 'Configuration de l’hébergement'
 ---
 
-**Dernière mise à jour le 23/01/2020**
+**Dernière mise à jour le 04/05/2022**
 
 ## Objectif
 
@@ -54,8 +54,6 @@ Pour ajouter ou modifier un moteur d'exécution, positionnez-vous sur l'onglet `
 - **si vous souhaitez ajouter un moteur** : cliquez sur `Actions`{.action} au-dessus du tableau, puis sur `Ajouter un moteur d'exécution`{.action} ;
 - **si vous souhaitez modifier un moteur** : cliquez sur le bouton `...`{.action} à droite du moteur concerné, puis sur `Modifier`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
-
 Dans la fenêtre qui s'affiche, complétez les informations demandées. Poursuivez selon le moteur sélectionné :
 
 - [PHP](./#php){.external} 
@@ -72,7 +70,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées. Poursuiv
 
 Une fois les informations complétées, cliquez sur `Valider`{.action}. Assurez-vous maintenant que ce moteur d'exécution est bien utilisé par le ou les multisites souhaités. Pour cela, poursuivez vers l'étape 3 « [Associer le moteur d'exécution à un multisite](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external} ».
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 
@@ -132,9 +130,8 @@ Dans le tableau, vérifiez pour les domaines concernés si le moteur affiché es
 
 ![cloudweb](images/cloud-web-runtime-step4.png){.thumbnail}
 
-Si vous souhaitez modifier un moteur associé à un multisite, cliquez sur le pictogramme en forme de roue dentée à droite du domaine concerné puis cliquez sur `Modifier`{.action}.
+Si vous souhaitez modifier un moteur associé à un multisite, cliquez sur `...`{.action} à droite du domaine concerné puis cliquez sur `Modifier`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step5.png){.thumbnail}
 
 Sélectionnez alors le bon moteur à côté de `Moteur d'exécution` dans la fenêtre qui apparaît. Pour rappel, les noms qui s'affichent correspondent au « nom personnalisé » que vous avez défini. Il est impératif que le site ou l'application accessible depuis le domaine concerné soit compatible avec le moteur choisi. 
 

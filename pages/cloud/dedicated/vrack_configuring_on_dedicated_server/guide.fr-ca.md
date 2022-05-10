@@ -6,7 +6,7 @@ section: 'vRack'
 order: 01
 ---
 
-**Dernière mise à jour le 19/10/2021**
+**Dernière mise à jour le 02/05/2022**
 
 ## Objectif
 
@@ -24,9 +24,22 @@ Le vRack (baie virtuelle) OVHcloud permet de rassembler virtuellement plusieurs 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Préparer la plage d'adresses IP privées que vous avez choisie
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
+
 ## En pratique
 
-### Étape 1 : ajouter vos serveurs au vRack
+### Étape 1 : commander le vRack
+
+Une fois connecté à votre espace client OVHcloud, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur le bouton `Commander`{.action}. Sous ce menu, cliquez sur `vRack`{.action}.
+
+![Commander le vrack](images/orderingvrack.png){.thumbnail}
+
+Vous serez redirigé vers une autre page pour valider la commande, l’opération prendra quelques minutes.
+
+### Étape 2 : ajouter vos serveurs au vRack
 
 Une fois le vRack activé dans votre compte, rendez-vous dans la section `Bare Metal Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Network`{.action} et ouvrez le menu `vRack`{.action}.
 
@@ -34,7 +47,7 @@ Sélectionnez votre vRack dans la liste pour afficher la liste des services éli
 
 ![Choix du vRack](images/vrack_selection.png){.thumbnail}
 
-### Étape 2 : configuration de vos interfaces réseau
+### Étape 3 : configuration de vos interfaces réseau
 
 Les étapes suivantes contiennent les configurations des distributions/systèmes d'exploitation récents les plus couramment utilisés. La première étape consiste toujours à vous [connecter à votre serveur](https://docs.ovh.com/ca/fr/dedicated/premiers-pas-serveur-dedie/) en SSH ou en session RDP (pour Windows). Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateur avec des autorisations élevées (Administrateur/sudo).
 

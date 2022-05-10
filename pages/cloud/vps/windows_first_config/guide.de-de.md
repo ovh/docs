@@ -48,7 +48,7 @@ Geben Sie das Passwort ein, das Sie für Ihren Administrator-Account erstellt ha
 
 Damit ist die Erstkonfiguration abgeschlossen. Sobald Sie eingeloggt sind, ändern Sie die notwendigen Einstellungen der Windows Firewall.
 
-### Schritt 3: Windows Firewall ändern
+### Schritt 3: Windows Firewall bearbeiten
 
 Öffnen Sie die `Verwaltungstools`{.action} des Konfigurationspanel `System und Sicherheit`{.action} und klicken Sie auf `Windows Firewall mit erweiterter Sicherheit`{.action}.
 
@@ -62,4 +62,4 @@ Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

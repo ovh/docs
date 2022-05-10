@@ -1,7 +1,7 @@
 ---
-title: Redirecting a domain name managed by OVH
+title: Redirecting a domain name managed by OVHcloud
 slug: redirect-domain-name
-excerpt: Find out about the various redirection types, and how to create one for a domain name managed by OVH
+excerpt: Find out about the various redirection types, and how to create one for a domain name managed by OVHcloud
 section: General
 order: 1
 ---
@@ -12,11 +12,11 @@ order: 1
 
 You can use domain name redirection to redirect your domain to a new target. There are a variety of different redirection types, each of which is suitable for a specific need.
 
-**Find out about the various redirection types, and how to create one for a domain name managed by OVH.**
+**Find out about the various redirection types, and how to create one for a domain name managed by OVHcloud.**
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You must be logged in to your web hosting plan (if you would like to add an .htaccess file).
 
 ## Instructions
@@ -29,7 +29,7 @@ There are numerous reasons why you might want to use a redirection, but it is ty
 
 There are two ways of creating a domain name redirection:
 
-- **Through the OVH Control Panel,** using the configuration assistant to set your redirection.
+- **Through the OVHcloud Control Panel,** using the configuration assistant to set your redirection.
 
 - **Creating the redirection yourself (usually via an .htaccess file).** This will require programming skills.
 
@@ -37,13 +37,13 @@ Please note that setting up a redirection will affect your website’s SEO ranki
 
 ### Redirect a domain name from the Control Panel
 
-Once you have logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click your domain name in the `Domains`{.action} section of the service bar (1 on the image below). Then click the `Redirection`{.action} tab (2 on the image below) in the page that opens.
+Once you have logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click your domain name in the `Domains`{.action} section. Then click the `Redirection`{.action} tab in the page that opens.
 
 This table displays all active redirections for your domain name.
 
-To add a redirection, click `Add a redirection`{.action} (3 on the image below).
+To add a redirection, click `Add a redirection`{.action}.
 
-![Main page for redirections](images/create_redirection_global.png){.thumbnail}
+
 
 In the window that appears, enter the domain name (or subdomain) that you would like to redirect. This will be the redirection source.
 
@@ -55,10 +55,10 @@ You must now choose the target you would like to redirect the domain name to. Th
 
 Redirect a domain name to another domain name. This solution is ideal if you are changing your website’s domain name.
 
-- **Redirect to an OVH server, or elsewhere**
+- **Redirect to an OVHcloud server, or elsewhere**
 
 Modify a domain name’s DNS configuration and enter another target (A record, AAAA record or CNAME record). This solution is ideal if your website is no longer hosted by the same hosting provider, but the domain name is still registered with the same registrar. 
-You can also do this if your domain name uses OVH configuration, by modifying it within the Control Panel (see [How to edit my DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}).
+You can also do this if your domain name uses OVHcloud configuration, by modifying it within the Control Panel (see [How to edit my DNS zone](../web_hosting_how_to_edit_my_dns_zone/){.external}).
 
 From this point onwards, we will only focus on redirections **to a web address**. For the latter option, please contact your service provider to find out which DNS records you will need to modify in order to redirect your domain.
 

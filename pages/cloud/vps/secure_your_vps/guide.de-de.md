@@ -9,7 +9,7 @@ excerpt: 'Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15. Januar 2021**
+**Letzte Aktualisierung am 15.01.2021**
 
 ## Ziel
 
@@ -20,7 +20,7 @@ Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssys
 > [!warning]
 >Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bitte denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
 >
-Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/en/ (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
 ## Voraussetzungen
@@ -184,7 +184,7 @@ Sie finden die Anwendungsmöglichkeiten in der Dokumentation zu diesem Tool auf 
 
 GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als iptables bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
 
-```shr
+```sh
 iptables -L
 ```
 
@@ -213,4 +213,4 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 
 [Network Firewall](../../dedicated/firewall-network/)
 
-Kommen Sie zu unserer User Community auf <https://community.ovh.com/>dem
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

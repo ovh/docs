@@ -1,36 +1,34 @@
 ---
 title: 'Comment installer Django CMS sur son hébergement Cloud Web'
 slug: installer-django-cms-cloud-web
-excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web d'OVH"
+excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web OVHcloud"
 section: Tutoriels
 ---
 
-## Introduction
+**Dernière mise à jour le 04/05/2022**
+
+## Objectif
 
 Django CMS est un système de gestion de contenu (CMS) écrit en Python et basé sur le framework web Django.
 
-L’[hébergement Cloud Web d'OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
+L’[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/) permet d’utiliser Python comme moteur d’exécution pour vos sites web. Vous pouvez donc y installer et héberger Django CMS, ainsi que toute autre application web conçue dans ce langage.
 
 À travers ce tutoriel, nous allons installer un site web avec Django CMS sur un hébergement Cloud Web d’OVH. Puis nous le mettrons à disposition derrière votre nom de domaine.
 
 ## Prérequis
 
-### Ce que vous devez savoir
-
-*     Connaître les bases de l’écosystème Python.
-*     Avoir la capacité de se connecter en SSH.
-*     Savoir éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
-
-### Ce que vous devez avoir
-
-*     Disposer d’un [hébergement Cloud Web d'OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
-*     Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie Web.
+- Disposer d’un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/).
+- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
+- Ce que vous devez savoir:
+    - Les bases de l’écosystème Python.
+    - Se connecter en SSH.
+    - Éditer un fichier en ligne de commande, via Vim, Emacs ou Nano par exemple.
 
 ## En pratique
 
 ### Étape 1 : activez Python comme moteur d’exécution
 
-Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d’exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l’hébergement Cloud Web concerné. Positionnez-vous enfin sur l’onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d’exécution Python est bien activé. Si tel est le cas, poursuivez vers l’étape 2 : [« Associez Python à un multisite »](./#etape-2-associez-python-a-un-multisite).
 
@@ -38,8 +36,8 @@ Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellemen
 
 Si ce n’est pas le cas, ajoutez-en un nouveau (si votre offre vous le permet) ou modifiez le moteur d’exécution existant.
 
-*     **Si vous souhaitez ajouter un moteur** : cliquez sur `Actions`{.action} au-dessus du tableau, puis sur `Ajouter un moteur d'exécution`{.action}.
-*     **Si vous souhaitez modifier un moteur** : cliquez sur le bouton `...`{.action} à droite du moteur concerné, puis sur `Modifier`{.action}.
+- **Si vous souhaitez ajouter un moteur** : cliquez sur `Actions`{.action} au-dessus du tableau, puis sur `Ajouter un moteur d'exécution`{.action}.
+- **Si vous souhaitez modifier un moteur** : cliquez sur le bouton `...`{.action} à droite du moteur concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées avec les valeurs suivantes de notre exemple ou adaptez-les à votre situation.
 
@@ -70,8 +68,8 @@ Deux colonnes doivent retenir votre attention dans le tableau ci-dessus. Vérifi
 
 Si ce n’est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
-*     **Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
-*     **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
+- Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
+- Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s’affiche, complétez les informations demandées selon votre situation personnelle. Le tableau ci-dessous montre celles utilisées pour ce tutoriel.
 
@@ -284,7 +282,7 @@ Modifiez le fichier « mysite/settings.py » avec la commande suivante, en rem
     
 ### Étape 7 : redémarrez le _daemon_ Python
 
-Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis choisissez `Redémarrer`{.action}.
+Pour redémarrer le _daemon_ Python, retournez dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Positionnez-vous sur l’onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis choisissez `Redémarrer`{.action}.
 
 Une fois ceci fait, l’application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
     
@@ -309,3 +307,15 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 Nous avons vu comment installer une application Python sur un hébergement Cloud Web, en respectant les différentes étapes. Il ne vous reste plus qu’à utiliser Django CMS et à y publier vos premiers contenus !
 
 Vous trouverez plus d'informations sur Django CMS et ses fonctionnalités dans la [documentation officielle du projet](http://docs.django-cms.org/en/latest/).
+
+## Aller plus loin
+
+[Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+
+[Mettre mon site en ligne](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+
+[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
+
+[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

@@ -49,7 +49,7 @@ Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
-Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
+Wyświetli się strona z listą złożonych w ramach Twojego konta zamówień, których ważność nie wygasła.
 
 ![Podsumowanie zamówień](images/order03.png){.thumbnail}
 
@@ -70,13 +70,13 @@ Możliwe statusy zamówienia:
 |Dostarczanie w trakcie|Dostawa Twojej usługi jest w trakcie realizacji. W zależności od usługi dostawa może trwać kilka minut lub kilka godzin.|
 |Zakończone|Usługa dostała dostarczona, otrzymałeś dane do logowania w wiadomości e-mail (jeśli wymagane jest logowanie).|
 
-Możesz wyświetlić zamówienie, które ma status „dostarczanie w trakcie” lub „brak płatności”. W tym celu kliknij `...`{.action}, a następnie `Wyświetl zamówienie w formacie HTML`{.action}.
+Możesz wyświetlić zamówienie, które ma status “dostarczanie w trakcie” lub “brak płatności”. W tym celu kliknij `...`{.action}, a następnie `Wyświetl zamówienie w formacie HTML`{.action}.
 
 ![Podsumowanie zamówień](images/html_order.png){.thumbnail}
 
 ### Śledzenie zamówienia
 
-Po wygenerowaniu formularza zamówienia możesz je śledzić z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij na `Dashboard`{.action}, a następnie na `Wyświetl moje zamówienia`{action} i wreszcie na `...`{.action} obok Twojego zamówienia. Wybierz `Informacje o zamówieniu`{.action}. Aby śledzić zamówienie, możesz też kliknąć jego stan w kolumnie „Status”.
+Po wygenerowaniu formularza zamówienia możesz je śledzić z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij na `Dashboard`{.action}, a następnie na `Wyświetl moje zamówienia`{action} i wreszcie na `...`{.action} obok Twojego zamówienia. Wybierz `Informacje o zamówieniu`{.action}. Aby śledzić zamówienie, możesz też kliknąć jego stan w kolumnie “Status”.
 
 ![Informacje o zamówieniu](images/order05b.png){.thumbnail}
 

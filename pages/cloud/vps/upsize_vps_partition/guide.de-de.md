@@ -76,7 +76,7 @@ Pass 5: Checking group summary information
 
 Wenn Fehler festgestellt werden, sollten Sie in jedem Fall entsprechende Maßnahmen ergreifen. Im Folgenden finden Sie einige der häufigsten Fehler:
 
-- `bad magic number in superblock`: Fahren Sie nicht fort. Um dieses Problem zu beheben, befolgen Sie in der vorliegenden Anleitung die Anweisungen im Abschnitt „[Wie wird der Fehler *bad magic number in superblock* behoben?](https://docs.ovh.com/de/vps/vps-partitionierung-nach-einem-upgrade/#wie-wird-der-fehler-bad-magic-number-in-superblock-behoben)“.
+- `bad magic number in superblock`: Fahren Sie nicht fort. Um dieses Problem zu beheben, befolgen Sie in der vorliegenden Anleitung die Anweisungen im Abschnitt “[Wie wird der Fehler *bad magic number in superblock* behoben?](https://docs.ovh.com/de/vps/vps-partitionierung-nach-einem-upgrade/#wie-wird-der-fehler-bad-magic-number-in-superblock-behoben)”.
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` gefolgt von `e2fsck: Get a newer version of e2fsck!`: Aktualisieren Sie e2fsck. Wenn die neueste Version nicht über `apt` (oder einen anderen Paketmanager) verfügbar ist, muss diese aus dem Quellcode kompiliert werden.
 

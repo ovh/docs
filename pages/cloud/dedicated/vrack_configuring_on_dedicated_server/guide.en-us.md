@@ -6,7 +6,7 @@ section: 'vRack'
 order: 01
 ---
 
-**Last updated 19th October 2021**
+**Last updated 2nd May 2022**
 
 ## Objective
 
@@ -24,10 +24,22 @@ The OVHcloud vRack (virtual rack) allows multiple servers to be grouped together
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - A private IP address range of your choice
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en/compare/) for more information.
 
 ## Instructions
 
-### Step 1: Adding your servers to the vRack
+### Step 1: Ordering the vRack
+
+Once you are connected to your OVHcloud control panel, go to the `Bare Metal Cloud`{.action} menu and click on the `Order`{.action} button. Under this menu, click on `vRack`{.action}.
+
+![Order vrack](images/orderingvrack.png){.thumbnail}
+
+You will be redirected to another page to validate the order, it will take a few minutes for the vRack to be setup in your account.
+
+### Step 2: Adding your servers to the vRack
 
 Once the vRack is activated in your account, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), click on `Network`{.action} and open the `vRack`{.action} menu.
 
@@ -35,7 +47,7 @@ Select your vRack from the list to display the list of eligible services. Click 
 
 ![vRack selection](images/vrack_selection.png){.thumbnail}
 
-### Step 2: Configuring your network interfaces
+### Step 3: Configuring your network interfaces
 
 The following sections contain the configurations for the most commonly used recent distributions/operating systems. The first step is always to [log in to your server](../getting-started-dedicated-server/) via SSH or a RDP session (for Windows). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 

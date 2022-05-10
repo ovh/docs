@@ -28,13 +28,13 @@ Na stronie głównej serwisu kliknij zakładkę `Bezpieczeństwo`{.action}, a na
 
 ![Setting access policy](images/modifypolicy-01.png){.thumbnail}
 
-W oknie, które się wyświetli rozwiń menu i wybierz „Otwarta” lub "Ograniczona", po czym kliknij `Zatwierdź`{.action}, aby zastosować wybór.
+W oknie, które się wyświetli rozwiń menu i wybierz “Otwarta” lub "Ograniczona", po czym kliknij `Zatwierdź`{.action}, aby zastosować wybór.
 
 ![Setting access policy](images/modifypolicy-02.png){.thumbnail}
 
 > [!primary]
 >
-> Jeśli wybierzesz politykę dostępu „Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
+> Jeśli wybierzesz politykę dostępu “Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
 > 
 
 ## Sprawdź również

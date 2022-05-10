@@ -95,7 +95,7 @@ Możesz również przeprowadzić instalację samodzielnie. W tym celu postępuj 
 
 #### Etap 1: edytuj zmienne środowiskowe systemu
 
-Wyszukaj parametry zmiennych środowiskowych systemu i przejdź do „Edycja zmiennych środowiskowych systemu”:
+Wyszukaj parametry zmiennych środowiskowych systemu i przejdź do “Edycja zmiennych środowiskowych systemu”:
 
 ![Parametry zmiennych środowiskowych](images/2_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -107,13 +107,13 @@ Przejdź do zakładki `Zaawansowane`{.action} i kliknij `Zmienne środowiskowe`{
 
 #### Etap 3: skonfiguruj zmienne środowiskowe 
 
-W sekcji „Zmienne systemowe” wybierz „Nowy”, nadaj nazwę „PYTHON_HOME” i dodaj ścieżkę do Python’a. Domyślnie będzie wyglądała ona następująco: « C:\\Python27 ».
+W sekcji “Zmienne systemowe” wybierz “Nowy”, nadaj nazwę “PYTHON_HOME” i dodaj ścieżkę do Python’a. Domyślnie będzie wyglądała ona następująco: « C:\\Python27 ».
 
 ![Dodanie ścieżki dostępu](images/4_edit_system_variables.png){.thumbnail}
 
 #### Etap 4: dodanie ścieżki dla zmiennych
 
-Po dodaniu „Python”, edytuj ścieżkę (Path) w zmiennych systemowych i dodaj na końcu ścieżki:
+Po dodaniu “Python”, edytuj ścieżkę (Path) w zmiennych systemowych i dodaj na końcu ścieżki:
 
 `...;%PYTHON_HOME%\;%PYTHON_HOME%\Script`
 
@@ -133,7 +133,7 @@ Jeśli operacja została przeprowadzona poprawnie, wyświetli się podsumowanie
 
 ![Automatyczna instalacja](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-Możesz sprawdzić wersję instalacyjną w nowo otwartym oknie CMD (wiersz poleceń), wprowadzając „python-V” z dowolnego miejsca w systemie.
+Możesz sprawdzić wersję instalacyjną w nowo otwartym oknie CMD (wiersz poleceń), wprowadzając “python-V” z dowolnego miejsca w systemie.
 
 ![Weryfikacja](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 

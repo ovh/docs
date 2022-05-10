@@ -38,7 +38,7 @@ Die Sicherung eines Memcached-Servers erfolgt in zwei Schritten:
 - Listening-Adresse des Dienstes einschränken.
 - Nur TCP-Verbindungen erlauben.
 
-Memcached-Versionen vor /1.5.6/ erlauben standardmäßig TCP- und UDP-Verbindungen. Letztere können jedoch verwendet werden, um sogenannte „Amplification-Angriffe“ zu starten.
+Memcached-Versionen vor /1.5.6/ erlauben standardmäßig TCP- und UDP-Verbindungen. Letztere können jedoch verwendet werden, um sogenannte “Amplification-Angriffe” zu starten.
 Als die Software entwickelt wurde, waren UDP-Verbindungen laut den Entwicklern notwendig, da insgesamt weniger Ressourcen vorhanden waren.
 In dieser Anleitung gehen wir davon aus, dass Sie zu den 99 % der Nutzer gehören, die keine UDP-Verbindungen benötigen.
 

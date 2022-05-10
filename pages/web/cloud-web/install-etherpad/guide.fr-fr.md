@@ -6,33 +6,31 @@ section: Tutoriels
 order: 2
 ---
 
-## Introduction
+**Dernière mise à jour le 04/05/2022**
+
+## Objective
 
 [Etherpad](https://etherpad.org/){.external} est un éditeur de texte en ligne collaboratif en temps réel. Il permet à plusieurs personnes d'écrire simultanément des fichiers texte via une interface web. Etherpad est écrit en JavaScript et utilise Node.js, une plateforme logicielle permettant de créer vos sites et API en JavaScript côté serveur.
 
-L'[hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} vous permet d'utiliser Node.js comme moteur d'exécution pour vos sites web, et donc d'y installer Etherpad ou toute autre application conçue pour Node.js.
+L'[hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external} vous permet d'utiliser Node.js comme moteur d'exécution pour vos sites web, et donc d'y installer Etherpad ou toute autre application conçue pour Node.js.
 
-**Dans ce tutoriel, nous allons installer un serveur Etherpad sur un hébergement Cloud Web d'OVH et le mettre à disposition derrière votre nom de domaine.**
+**Dans ce tutoriel, nous allons installer un serveur Etherpad sur un hébergement Cloud Web OVHcloud et le mettre à disposition derrière votre nom de domaine.**
 
 ## Prérequis
 
-### Ce que vous devez savoir
-
-- Connaître les bases de l'écosystème Node.js.
-- Se connecter en SSH.
-
-### Ce que vous devez avoir
-
-- Disposer d'un [hébergement Cloud Web OVH](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
+- Disposer d'un [hébergement Cloud Web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/){.external}.
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Web Cloud`{.action}.
+- Ce que vous devez savoir:
+    - Les bases de l'écosystème Node.js.
+    - Se connecter en SSH.
 
 ## En pratique
 
 ### Étape 1 : activer Node.js comme moteur d'exécution
 
-Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
+Pour accéder aux moteurs d'exécution de votre hébergement Cloud Web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement Cloud Web concerné. Positionnez-vous enfin sur l'onglet `Moteurs d'exécution`{.action}.
 
 Le tableau qui apparaît affiche les moteurs d’exécution ajoutés actuellement. Assurez-vous alors que le moteur d'exécution Node.js est bien activé. Si tel est le cas, poursuivez vers l'étape 2 « [Associer Node.js à un multisite](./#etape-2-associer-nodejs-a-un-multisite) ».
 
@@ -73,7 +71,7 @@ Dans le tableau, vérifiez que le moteur d'exécution Node.js est bien lié aux 
 Si ce n'est pas le cas, ajoutez un nouveau multisite ou modifiez celui existant.
 
 - **Si vous souhaitez ajouter un multisite** : cliquez sur `Ajouter un domaine ou sous-domaine`{.action} à droite du tableau.
-- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton en forme de roue dentée à droite du domaine concerné, puis sur `Modifier`{.action}.
+- **Si vous souhaitez modifier un multisite** : cliquez sur le bouton `...`{.action} à droite du domaine concerné, puis sur `Modifier`{.action}.
 
 Dans la fenêtre qui s'affiche, complétez les informations demandées selon votre situation personnelle. Voici celles que nous avons utilisées pour ce tutoriel :
 
@@ -154,7 +152,7 @@ demonon@cloudweb-ssh:~/etherpad [master]$ ln -fs node_modules/ep_etherpad-lite/n
 
 ### Étape 5 : redémarrer le *daemon* Node.js
 
-Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton représentant une roue dentée, puis sur `Redémarrer`{.action}
+Pour redémarrer le *daemon* Node.js, retournez sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Positionnez-vous sur l'onglet `Multisite`{.action}, cliquez à droite du nom de domaine concerné sur le bouton `...`{.action} à droite, puis sur `Redémarrer`{.action}
 
 Une fois ceci fait, l'application sera accessible via le nom de domaine choisi dans la configuration de votre multisite.
 
@@ -163,3 +161,15 @@ Une fois ceci fait, l'application sera accessible via le nom de domaine choisi d
 ## Conclusion
 
 Nous avons vu comment installer une application Node.js sur un hébergement Cloud Web en respectant les différentes étapes. Il ne vous reste plus qu'à utiliser Etherpad et à collaborer tous ensemble ! 
+
+## Aller plus loin
+
+[Migrer mon site chez OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/){.external}
+
+[Mettre mon site en ligne](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/){.external}
+
+[Installer son site avec les modules en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/){.external}
+
+[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

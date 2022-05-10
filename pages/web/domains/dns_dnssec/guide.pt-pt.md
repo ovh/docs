@@ -16,30 +16,28 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 
 ## Requisitos
 
-- Ter um nome de domínio registado na OVH.
+- Ter um nome de domínio registado na OVHcloud.
 - O nome de domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
 É possível ativar o DNSSEC de duas formas diferentes:
 
-- **se o nome de domínio utilizar os servidores DNS da OVH**: a ativação é realizada diretamente na Área de Cliente;
+- **se o nome de domínio utilizar os servidores DNS da OVHcloud**: a ativação é realizada diretamente na Área de Cliente;
 
-- **se o nome de domínio não utilizar os servidores DNS da OVH**: deverá contactar o prestador responsável pela respetiva configuração DNS. Se gerir a configuração DNS, deverá instalar manualmente o DNSSEC utilizando a documentação disponível online.
+- **se o nome de domínio não utilizar os servidores DNS da OVHcloud**: deverá contactar o prestador responsável pela respetiva configuração DNS. Se gerir a configuração DNS, deverá instalar manualmente o DNSSEC utilizando a documentação disponível online.
 
 > [!primary]
 >
-> Para verificar se o domínio utiliza a configuração DNS da OVH, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
+> Para verificar se o domínio utiliza a configuração DNS da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
 >
 
 ### 1 - Aceder à gestão do nome de domínio
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”. A seguir, clique em Alojamentos na barra à esquerda e, em seguida, selecione o domínio correspondente.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”. A seguir, clique em Alojamentos e, em seguida, selecione o domínio correspondente.
 
 Poderá consultar as informações gerais do domínio na nova janela que irá aparecer. 
-
-![dnssec](images/activate-dnssec-step1.png){.thumbnail}
 
 ### 2 - Gerir o DNSSEC de um nome de domínio
 

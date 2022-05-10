@@ -23,9 +23,13 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
+- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external}, [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
 ## Instructions
 
@@ -66,6 +70,11 @@ You can set up to **20 rules per IP**.
 
 
 ### Configure the Network Firewall
+
+> [!warning]
+> Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
+> For more information, please refer to the following guides: [Configure the firewall on Windows](https://docs.ovh.com/gb/en/dedicated/firewall-windows/) and [Configuring the firewall on Linux with iptables](https://docs.ovh.com/gb/en/dedicated/firewall-iptables/).
+>
 
 To add a rule, click on `Add a rule`{.action}:
 

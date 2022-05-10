@@ -7,10 +7,10 @@ order: 6
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 01-02-2022**
+**Ostatnia aktualizacja z dnia 09-05-2022**
 
 ## Wprowadzenie
 
@@ -33,9 +33,12 @@ W ofercie High Grade & SCALE nie jest możliwe działanie adresów IP Failover w
 
 ## W praktyce
 
-> [!primary]
+> [!warning]
 >
-> W tej gamie serwerów znajdują się 4 karty sieciowe. Dwa dla publiczności, dwa dla prywatnego. Aby korzystać z całej przepustowości, należy utworzyć agregaty.
+> W tej gamie serwerów znajdują się 4 karty sieciowe. Aby korzystać z całej przepustowości, należy utworzyć agregaty. Nasza dokumentacja jest oparta na danych zagregowanych kart.
+>
+> **Jednak ESXi nie obsługuje natywnie LACP.**
+> Brak będzie zatem możliwości uzyskania redundancji. Nie będzie również możliwe wykorzystanie całej przepustowości kart sieciowych Twojego serwera.
 >
 
 > [!warning]

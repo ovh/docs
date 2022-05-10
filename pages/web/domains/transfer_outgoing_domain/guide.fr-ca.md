@@ -29,7 +29,9 @@ Le transfert d’un nom de domaine permet de changer le bureau d’enregistremen
 
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
 
-Pour lever la protection contre le transfert de votre nom de domaine OVHcloud, toujours connecté à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Web Cloud`{.action} dans la barre de services en haut. Rendez-vous dans la section `Noms de domaine`{.action} située à gauche, puis cliquez sur le nom de domaine concerné. Depuis l'onglet `Informations générales`{.action}, décochez la case `Protection contre le transfert`{.action}, puis cliquez sur `Valider`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
+
+Depuis l'onglet `Informations générales`{.action}, décochez la case `Protection contre le transfert`{.action}, puis cliquez sur `Valider`{.action}.
 
 > [!primary]
 >

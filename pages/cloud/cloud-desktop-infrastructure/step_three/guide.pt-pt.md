@@ -10,7 +10,7 @@ order: 3
 
 ## Sumário
 
-Já sabe como [conectar-se ao VMWare Horizon - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/horizon-7-platform/){.external} e o seu [modelo de pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/create-pool/){.external} está pronto. Chegou o momento de criar a sua primeira pool.
+Já sabe como [conectar-se ao VMware Horizon - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/horizon-7-platform/){.external} e o seu [modelo de pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/create-pool/){.external} está pronto. Chegou o momento de criar a sua primeira pool.
 
 **Este guia explica-lhe como efetuar essa criação a partir do VMware Horizon 7.1.**
 
@@ -35,13 +35,13 @@ Depois de se ter autenticado no VMware Horizon, realize os procedimentos seguint
 > [!primary]
 >
 > Existem três tipos principais de pools de ambientes de trabalho: *automatizadas*, *manuais* e *RDS*.
-> 
+>
 > - As pools de ambientes de trabalho *automatizadas* são criadas a partir de um mesmo modelo ou de um snapshot de modelo de máquina virtual (VM).
-> 
+>
 > - As pools de ambientes de trabalho *manuais* são uma coleção de VM, de computadores físicos ou de VM de terceiros. Nas pools *automatizadas* e *manuais*, cada máquina está disponível para um único acesso de utilizador remoto de cada vez.
 >
 > - As pools de ambientes de trabalho *RDS* não são uma coleção de máquinas. Em vez disso, fornecem sessões de ambientes de trabalho em hosts RDS. Vários utilizadores podem ter várias sessões de ambiente de trabalho em simultâneo num host RDS.
-> 
+>
 
 
 ![criação de uma pool](images/1201.png){.thumbnail}
@@ -70,7 +70,7 @@ Depois de se ter autenticado no VMware Horizon, realize os procedimentos seguint
 > [!primary]
 >
 > Aconselhamos que utilize o protocolo **Blast**, pois este garante uma melhor fluidez (independentemente da largura de banda da sua conexão), uma maior proteção e, para as utilizações em dispositivos móveis, uma importante economia da bateria. Para mais informações relativamente a este protocolo, clique [aqui](https://docs.vmware.com/fr/VMware-Horizon-7/7.2/com.vmware.horizon-view.installation.doc/GUID-F64BAD49-78A0-44FE-97EA-76A56FD022D6.html){.external}.
-> 
+>
 
 ![criação de uma pool](images/1205.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Depois de se ter autenticado no VMware Horizon, realize os procedimentos seguint
 > [!primary]
 >
 > Se a VM não surgir, selecione `Show all parent VMs`{.action} para saber a razão.
-> 
+>
 
 ![criação de uma pool](images/1209.png){.thumbnail}
 

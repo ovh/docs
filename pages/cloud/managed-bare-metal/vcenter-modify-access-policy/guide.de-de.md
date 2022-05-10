@@ -28,13 +28,13 @@ Klicken Sie auf der Startseite des Dienstes auf `Sicherheit`{.action} und danach
 
 ![Zugangseinstellungen bearbeiten](images/modifypolicy-01.png){.thumbnail}
 
-Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen „Offen“ oder „Eingeschränkt“. Klicken Sie dann auf `Bestätigen`{.action} um Ihre Auswahl anzuwenden.
+Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen “Offen” oder “Eingeschränkt”. Klicken Sie dann auf `Bestätigen`{.action} um Ihre Auswahl anzuwenden.
 
 ![Zugangseinstellungen bearbeiten](images/modifypolicy-02.png){.thumbnail}
 
 > [!primary]
 >
-> Wenn Sie „Eingeschränkt“ gewählt haben, ziehen Sie die Anleitung [„Die Verbindung von IPs mit dem vCenter erlauben“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
+> Wenn Sie “Eingeschränkt” gewählt haben, ziehen Sie die Anleitung [“Die Verbindung von IPs mit dem vCenter erlauben“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
 > 
 
 ## Weiterführende Informationen

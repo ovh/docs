@@ -7,10 +7,10 @@ order: 01
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja dnia 19-10-2021**
+**Ostatnia aktualizacja dnia 02-05-2022**
 
 ## Wprowadzenie
 
@@ -28,9 +28,22 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Zakresu prywatnych adresów IP
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
 ## W praktyce
 
-### Etap 1: dodaj serwery do usługi vRack
+### Etap 1: zamów vRack
+
+Po zalogowaniu się do Panelu klienta OVHcloud przejdź do menu `Bare Metal Cloud`{.action} i kliknij przycisk `Zamów`{.action}. W tym menu kliknij `vRack`{.action}.
+
+![Zamów vrack](images/orderingvrack.png){.thumbnail}
+
+Zostaniesz przekierowany na inną stronę, aby zatwierdzić zamówienie. Operacja zajmie kilka minut.
+
+### Etap 2: dodaj serwery do usługi vRack
 
 Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij przycisk `Network`{.action} i otwórz menu `vRack`{.action}.
 
@@ -38,7 +51,7 @@ Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz za
 
 ![Wybór szafy vRack](images/vrack_selection.png){.thumbnail}
 
-### Etap 2: konfiguracja interfejsów sieciowych
+### Etap 3: konfiguracja interfejsów sieciowych
 
 Kolejne etapy obejmują konfigurację najpopularniejszych ostatnio używanych dystrybucji/systemów operacyjnych. Pierwszy etap polega zawsze na [logowaniu się do serwera](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/) przez SSH lub przez sesję RDP (dla systemu Windows). Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z dużymi uprawnieniami (Administrator/sudo).
 

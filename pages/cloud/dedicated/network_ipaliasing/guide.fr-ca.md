@@ -21,12 +21,16 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external}.
 - Être connecté en SSH au serveur (accès root).
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 ## En pratique
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
 
-### Debian 10
+### Debian 10/11
 
 #### Étape 1 : créer une sauvegarde
 

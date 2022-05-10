@@ -16,12 +16,16 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/ca/fr/solutions
 
 ## Prérequis
 
-* Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
-* Préparer votre plage d'adresses IP privées choisies.
-* Posséder un [serveur compatible vRack](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
-* Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Avoir réservé un bloc public d'adresses IP dans votre compte, avec un minimum de quatre adresses.
+- Préparer votre plage d'adresses IP privées choisies.
+- Posséder un [serveur compatible vRack](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
+- Activer un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr-ca/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr-ca/compare/) pour plus d’informations.
 
 ## En pratique
 

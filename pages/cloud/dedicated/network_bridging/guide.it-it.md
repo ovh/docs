@@ -25,6 +25,12 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 - Disporre di almeno un indirizzo [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+>
+
 ## Procedura
 
 Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzati:

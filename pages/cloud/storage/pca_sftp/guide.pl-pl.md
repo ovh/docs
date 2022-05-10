@@ -24,7 +24,7 @@ W tym przewodniku korzystamy z programu WinSCP, ale możesz używać wybranego p
 
 
 ## ID OpenStack
-Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](https://www.ovh.pl/g1773.tworzenie_dostepu_do_interfejsu_horizon).
+Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/).
 
 
 ## TenantName

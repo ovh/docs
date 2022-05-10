@@ -14,6 +14,8 @@ Access to Horizon and the OpenStack APIs is established via username/password pa
 
 **This guide explains how to manage OpenStack users in the OVHcloud Control Panel.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NC69nrb6QlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account

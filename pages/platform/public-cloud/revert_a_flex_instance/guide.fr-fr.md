@@ -12,7 +12,7 @@ order : 10
 
 Une instance *flex* est une instance à disque unique (50 Go) offrant un processus plus rapide pour les snapshots. Elle permet un redimensionnement vers les modèles supérieurs ou inférieurs avec un espace de stockage fixe, alors que les modèles classiques ne peuvent être redimensionnés que vers les modèles supérieurs.</br> Avec une infrastructure en constante évolution, vous pouvez avoir besoin d'augmenter l'espace de stockage de votre instance. Dans ce cas, vous devrez basculer votre instance *flex* vers un modèle classique. Cette action est possible uniquement depuis l'interface Horizon.
 
-**Ce guide vous explique comment basculer d'un modèle *flex* à un modèle classique et redimensionner votre instance *flex* depuis l'interface OpenStack Horizon.**
+<br>**Ce guide vous explique comment basculer d'un modèle *flex* à un modèle classique et redimensionner votre instance *flex* depuis l'interface OpenStack Horizon.**
 
 ## Prérequis
 
