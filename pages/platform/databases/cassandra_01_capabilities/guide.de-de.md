@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/cassandra/capabilities/'
 ---
 
-**Last updated April 7th<sup>th</sup>, 2022**
+**Last updated April<sup>th</sup>, 2022**
 
 ## Objective
 
