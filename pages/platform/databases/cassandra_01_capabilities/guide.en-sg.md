@@ -6,7 +6,7 @@ section: Cassandra - Guides
 order: 010
 ---
 
-**Last updated April 7th<sup>th</sup>, 2022**
+**Last updated April 7, 2022**
 
 ## Objective
 
