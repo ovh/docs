@@ -49,7 +49,7 @@ Certaines solutions sont disponibles avec **Prism Element** :
 
 * Async DR: La réplication ne se fera qu'une fois par heure , si un problème survient il sera possible de perdre une heure de données mais le redémarrage peut se faire manuellement dans la minute.
 * NearSync DR: La réplication se fait plusieurs fois par heure il sera possible d'avoir un R.P.O entre 1 minutes et 15 minutes.
-* Metro/Sync Rep DR: il est possible d'avoir un retour à la normale instantanément.
+* Metro/Sync Rep DR: il est possible d'avoir un retour à la normale instantanément sans perte de données.
 
 Il est possible d'améliorer la gestion des plan de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
