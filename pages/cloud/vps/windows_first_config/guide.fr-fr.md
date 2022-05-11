@@ -60,7 +60,7 @@ Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles
 
 ### Activation des logs de démarrage (boot logs) Windows (facultatif)
 
-Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](../use-kvm-for-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](../utilisation-kvm-sur-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
