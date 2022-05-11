@@ -39,7 +39,7 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
-* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix
+* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix en utilisant une machine virtuelle.
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
