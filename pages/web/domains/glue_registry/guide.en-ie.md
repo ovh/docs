@@ -2,7 +2,7 @@
 title: 'Customising the DNS servers for an OVHcloud domain name'
 excerpt: 'Find out how to customise the DNS servers for your OVHcloud domain name'
 slug: glue_registry
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 7
 ---
 

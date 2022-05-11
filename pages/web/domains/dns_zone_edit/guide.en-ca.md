@@ -2,7 +2,7 @@
 title: 'Editing an OVHcloud DNS zone'
 slug: web_hosting_how_to_edit_my_dns_zone
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 3
 ---
 
