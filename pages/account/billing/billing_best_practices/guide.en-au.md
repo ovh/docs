@@ -16,7 +16,7 @@ This guide contains the essential elements for managing your account and the bil
 
 ## Requirements
 
-- Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - Active OVHcloud services in your OVHcloud account 
 
 ## Instructions
@@ -35,7 +35,7 @@ For the security measures to be efficient, make sure your email addresses (main 
 
 Your personal information (postal address, email address, etc.) must be up-to-date in your customer account to guarantee the security and proper functioning of your services.
 
-Check your personal information by clicking on your name in the top right-hand corner of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on your initials (`Manage my account`{.action}).<br>
+Check your personal information by clicking on your name in the top right-hand corner of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), then on your initials (`Manage my account`{.action}).<br>
 In the `My profile`{.action} section on the right of your screen (click on your name again to remove the left menu), click on `...`{.action}, then on `Edit my profile`{.action}.
 
 ![myprofile](images/myprofile.png){.thumbnail}
@@ -46,10 +46,10 @@ Ensure your email address is always **up to date, accessible and secured**. Emai
 
 > [!warning]
 >
-> Add a **backup email** to your personal information to prevent any loss of access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> Add a **backup email** to your personal information to prevent any loss of access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 >
 
-Emails sent by OVHcloud will be also visible in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).<br>
+Emails sent by OVHcloud will be also visible in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).<br>
 Click on your name at the top right of your screen, then on `Service emails`{.action} in the right-hand menu.
 
 ![service_emails](images/service_emails.png){.thumbnail}
@@ -58,7 +58,7 @@ Click on your name at the top right of your screen, then on `Service emails`{.ac
 
 > [!primary]
 >
-> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 >
 > Check regularly that your payment method is **valid**.
 >
@@ -72,7 +72,7 @@ If you decide not to activate the autorenewal on your services, you will receive
 
 ### Order follow-up
 
-Did you know that you can [track your orders](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)? <br>
+Did you know that you can [track your orders](https://docs.ovh.com/gb/en/billing/managing-ovh-orders/) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)? <br>
 Just navigate to the `Dashboard`{.action} tab at the top menu of your screen, then click on `View my orders`{.action}.
 
 ![viewmyorders](images/viewmyorders.png){.thumbnail}
@@ -81,7 +81,7 @@ You will find out the steps of delivery and you will know if actions are require
 
 ### Service termination
 
-If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+If you want to stop using one of your services, you can either cancel it, set its renewal to manual mode or delete it immediately through your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 First click on your name at the top right of your screen, then on `Service management`{.action}. On the right side of your screen, click on the `...`{.action} button corresponding to the service you want to act on, then click on one of the following buttons:
 
