@@ -99,7 +99,7 @@ In MongoDB Compass fill in the connection field with the `Service URI`:
 
 Now you are now interact with your Public Cloud Databases for MongoDB:
 
-![Connected](images/connected.png)
+![Connected](images/connected.png){.thumbnail}
 
 > [!primary]
 >
