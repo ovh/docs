@@ -32,12 +32,12 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. mais ce qui est essentiel c'est que les deux clusters soit entierements visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
 
-* Connexion des divers sites en connectant chaque vRACK d'un cluster Nutanix. 
-* Extension du vRACK du cluster Nutanix avec votre réseau d'entreprise.
+* Connexion des divers sites en utilisant chaque le même vRACK sur les tous les sites, pour plus d'information concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
+
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
-* Mise en place d'un VPN IPSEC entre les deux clusters (Sur site ou tous les deux chee OVHcloud).
+* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
