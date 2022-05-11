@@ -95,7 +95,7 @@ mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname nod
 
 In MongoDB Compass fill in the connection field with the `Service URI`:
 
-![New connection](images/new-connection.png)
+![New connection](images/new-connection.png){.thumbnail}
 
 Now you are now interact with your Public Cloud Databases for MongoDB:
 
