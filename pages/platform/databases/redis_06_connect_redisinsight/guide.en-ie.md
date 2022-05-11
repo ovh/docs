@@ -51,15 +51,15 @@ Select the `General information`{.action} tab to find the required login informa
 
 #### Configuration
 
-Once connected to the RedisInsight interface, click on the `I already have a database` link:
+Once connected to the RedisInsight interface, click on the `I already have a database`{.action} link:
 
 ![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png)
 
-Then on `Connect to a Redis database`:
+Then on `Connect to a Redis database`{.action}:
 
 ![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png)
 
-Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`:
+Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`{.action}:
 
 ![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png)
 

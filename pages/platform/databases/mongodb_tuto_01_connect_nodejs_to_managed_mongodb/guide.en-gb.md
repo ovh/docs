@@ -163,7 +163,7 @@ Now we need to create an HTML file, `index.html`, that displays our UI.
 </html>
 ```
 
-Please note that the empty *\<script>\</script>* tag will be the place where we will write the client-side JavaScript code.
+Please note that the empty `<script></script>` tag will be the place where we will write the client-side JavaScript code.
 
 In order to tell Express that, we will be using a static file. We will add a new line inside `server.js`:
 
