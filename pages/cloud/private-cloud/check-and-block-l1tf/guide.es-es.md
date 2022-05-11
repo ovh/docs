@@ -57,7 +57,7 @@ Consta de tres fases, que se explican a continuación.
 
 ### 1. Actualización
 
-Aunque OVH actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](https://docs.ovh.com/es/private-cloud/utilizar_vmware_update_manager/){.external-link}.
+Aunque OVHcloud actualiza el vCenter, usted deberá encargarse de actualizar los hosts ESXi. El parche está disponible en el [Update Manager](https://docs.ovh.com/es/private-cloud/utilizar_vmware_update_manager/){.external-link}.
 
 Puede consultar la lista de parches para los hosts ESXi en las [recomendaciones de seguridad de VMware](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -88,7 +88,7 @@ Para más información, consulte el apartado «Resolution», punto 3, de [este a
 > Si, teniendo en cuenta todo lo anterior, no desea desactivar el hyperthreading, puede eliminar el mensaje de alerta siguiendo los pasos que se indican en [este artículo](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![Borrar mensaje de alerta](images/deleteWarning.png){.thumbnail}
-> No obstante, OVH no lo recomienda y no podrá ser considerada responsable de las consecuencias que de ello se deriven.
+> No obstante, OVHcloud no lo recomienda y no podrá ser considerada responsable de las consecuencias que de ello se deriven.
 >
 
 ## Más información
