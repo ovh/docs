@@ -41,7 +41,7 @@ Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wen
 
 > [!primary]
 >
-> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist in der Regel xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Bitte beachten Sie, dass die "0" Kopfzeile in einer IPv6 gelöscht werden können, um Fehler bei der Bestimmung des Gateways zu vermeiden.
+> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist in der Regel xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Beachten Sie, dass führende Nullen in einer IPv6-Adresse gelöscht werden können, um Fehler bei der Bestimmung des Gateways zu vermeiden.
 >
 > Beispiel:
 > 
