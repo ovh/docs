@@ -202,4 +202,6 @@ Si prefiere automatizar la protección de su sitio web, OVHcloud le ofrece la so
 
 [Proteger un VPS](../consejos-proteccion-vps/)
 
+[Configurar una nueva instalación de Windows Server](../windows-first-config/)
+
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

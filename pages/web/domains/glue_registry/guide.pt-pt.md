@@ -3,6 +3,7 @@ title: 'Personalizar os servidores DNS de um nome de domínio'
 slug: glue_registry
 excerpt: 'Saiba como personalizar os servidores DNS do seu nome de domínio OVHcloud'
 legacy_guide_number: g1568
+section: DNS e zona DNS
 ---
 
 **Última atualização: 05/10/2018**
@@ -57,7 +58,7 @@ Esta operação deve ser realizada através da interface do prestador responsáv
 
 ### 3 - Alterar os servidores DNS do domínio
 
-Por último, só precisa de modificar os servidores DNS do seu nome de domínio. Para isso, aceda à janela `Servidores DNS`{.action} e clique em `Modificar os servidores DNS`{.action}. Substitua os seus servidores DNS atuais pelos que pretende utilizar. 
+Por último, só precisa de modificar os servidores DNS do seu nome de domínio. Para isso, aceda à janela `Servidores DNS`{.action} e clique em `Modificar os servidores DNS`{.action}. Substitua os seus servidores DNS atuais pelos que pretende utilizar.
 
 Siga os passos indicados e, caso necessite de ajuda, consulte o manual “[Modificar os servidores DNS de um domínio OVHcloud](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}” (versão em inglês).
 

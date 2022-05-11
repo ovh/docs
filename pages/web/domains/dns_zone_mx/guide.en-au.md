@@ -2,7 +2,7 @@
 title: 'Add an MX record to your domain name’s configuration'
 slug: web_hosting_configuring_mx_with_the_ovh_dns_zone
 excerpt: 'Find out how to add a MX record to your OVHcloud domain name’s configuration'
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 4
 ---
 

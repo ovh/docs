@@ -202,4 +202,6 @@ OVHcloud bietet auch die SSL Gateway-Lösung zur Automatisierung dieses Prozesse
 
 [VPS absichern](../vps-sicherheit/)
 
+[Eine neue Windows Server Installation konfigurieren](../windows-first-config/)
+
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

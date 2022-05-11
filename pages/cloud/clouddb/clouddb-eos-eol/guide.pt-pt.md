@@ -18,7 +18,6 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 |MariaDB 10.4|A definir|A definir|A definir|
 |MariaDB 10.5|A definir|A definir|A definir|
 |MongoDB 4|2019-07-29|2019-02-25|2022-09-28|
-|MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
 |MySQL 8.0|A definir|A definir|A definir|
 |PostgreSQL 9.5|2019-07-29|2020-08-12|2021-02-11|

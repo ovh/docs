@@ -197,8 +197,10 @@ OVHcloud zaproponuje Ci w sposób automatyczny [SSL Gateway](https://www.ovh.pl/
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/){.external}
+[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
 
 [Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/)
+
+[Skonfiguruj nową instalację Windows Server](../windows-first-config/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

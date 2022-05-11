@@ -25,7 +25,6 @@ O campo MX permite associar um domínio a um servidor de e-mail para que os serv
 > - Se o domínio não usar os servidores DNS da OVHcloud, os campos MX deverão ser alterados a partir da interface do agente responsável pela configuração do seu domínio.
 >
 > - Se o seu domínio for gerido pela OVHcloud, verifique se este está a usar a configuração OVHcloud. Para tal, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
->
 
 ## Instruções
 
@@ -41,13 +40,13 @@ De forma geral, **alterar os campos MX do domínio é uma operação delicada**:
 
 Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}, [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external} e [Exchange](https://www.ovh.com/pt/emails/){.external}. Os nossos servidores de e-mail dispõem de um anti-spam e antivírus.
 
-|Domínio|TTL|Tipo de registo|Prioridade|Destino|
-|---|---|---|---|---|
-|*deixar em branco*|3600|MX|1|mx0.mail.ovh.net.|
-|*deixar em branco*|3600|MX|5|mx1.mail.ovh.net.|
-|*deixar em branco*|3600|MX|50|mx2.mail.ovh.net.|
-|*deixar em branco*|3600|MX|100|mx3.mail.ovh.net.|
-|*deixar em branco*|3600|MX|200|mx4.mail.ovh.net.|
+| Domínio            | TTL  | Tipo de registo | Prioridade | Destino           |
+| ------------------ | ---- | --------------- | ---------- | ----------------- |
+| _deixar em branco_ | 3600 | MX              | 1          | mx0.mail.ovh.net. |
+| _deixar em branco_ | 3600 | MX              | 5          | mx1.mail.ovh.net. |
+| _deixar em branco_ | 3600 | MX              | 50         | mx2.mail.ovh.net. |
+| _deixar em branco_ | 3600 | MX              | 100        | mx3.mail.ovh.net. |
+| _deixar em branco_ | 3600 | MX              | 200        | mx4.mail.ovh.net. |
 
 Deve utilizar estes diferentes campos MX na configuração DNS do seu domínio. O passo seguinte permite-lhe efetuar esta operação na configuração DNS da OVHcloud do domínio.
 
@@ -72,7 +71,6 @@ Depois de preencher os dados, finalize os passos e clique em `Validar`{.action}.
 > [!primary]
 >
 > A propagação das alterações efetuadas pode demorar entre 4 e 24 horas.
->
 
 ## Quer saber mais?
 
