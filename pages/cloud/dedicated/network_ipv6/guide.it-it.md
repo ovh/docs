@@ -41,7 +41,7 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 
 > [!primary]
 >
-> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori nella determinazione del gateway.
 >
 > Ad esempio:
 > 

@@ -41,7 +41,8 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 
 > [!primary]
 >
-> La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> La puerta de enlace por defecto de su bloque IPv6 (IPv6_GATEWAY) seguirá siempre la nomenclatura xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenga en cuenta que los "0" de cabeza pueden eliminarse en una IPv6 para evitar errores al determinar la pasarela.
+
 >
 > Por ejemplo,
 > 

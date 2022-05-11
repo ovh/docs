@@ -41,7 +41,7 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 
 > [!primary]
 >
-> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów podczas określania mostka.
 >
 > Na przykład:
 > 
