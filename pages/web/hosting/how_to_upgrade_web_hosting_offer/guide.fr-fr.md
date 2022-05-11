@@ -58,7 +58,7 @@ Dans la partie `Abonnement`, `Offre`, cliquez ensuite sur le bouton `...`{.actio
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Valider`[action].
 
-### Faire évoluer votre hébergement Start 10M vers une offre supérieure <a name="start10m"</a>
+### Faire évoluer votre hébergement Start 10M vers une offre supérieure <a name="start10m"></a>
 
 Vous ne pourrez pas passer directement d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
 
