@@ -3,7 +3,7 @@ title: 'Creating an OVHcloud DNS zone for a domain name'
 slug: create_a_dns_zone_for_a_domain_which_is_not_registered_at_ovh
 excerpt: 'Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel'
 legacy_guide_number: g2229
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 2
 ---
 

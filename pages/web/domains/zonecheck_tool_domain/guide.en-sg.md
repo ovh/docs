@@ -2,7 +2,7 @@
 title: Your domain ZoneCheck
 excerpt: This guide explains how to Zone Check your domain.
 slug: your_domain_zonecheck
-section: DNS and DNS zone
+section: DNS and DNS Zone
 order: 8
 ---
 
