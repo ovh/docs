@@ -1,7 +1,7 @@
 ---
 title: Configurer une nouvelle installation de Windows Server
 slug: windows-first-config
-excerpt: 'Découvrez comment activer les journaux de démarrage, ICMP et Bureau à distance'
+excerpt: "Découvrez comment activer les logs de démarrage, l'ICMP et le bureau à distance"
 section: Premiers pas
 ---
 
@@ -9,9 +9,11 @@ section: Premiers pas
 
 ## Objectif
 
-Après une nouvelle installation d'un système d'exploitation Windows Server sur un VPS, l'accès à distance et la réponse ICMP (Internet Control Message Protocol) peuvent être désactivés. Vous pouvez cependant utiliser le KVM d'OVHcloud pour accéder à votre VPS et configurer le pare-feu Windows pour réactiver ICMP et autoriser les connexions via le protocole Remote Desktop Protocol.<br>L'activation des journaux de démarrage Windows peut être utile pour les diagnostics d'erreurs du serveur.
+Après une nouvelle installation d'un système d'exploitation Windows Server sur un VPS, l'accès à distance et la réponse ICMP (Internet Control Message Protocol) peuvent être désactivés.<br>
+Vous pouvez cependant utiliser le KVM d'OVHcloud pour accéder à votre VPS et ainsi configurer le pare-feu Windows pour réactiver ICMP et autoriser les connexions via le Remote Desktop Protocol.<br>
+L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour les diagnostics d'erreurs du serveur.
 
-**Ce guide explique comment activer ICMP, Remote Desktop Protocol et démarrer les journaux sur un VPS Windows.**
+**Ce guide explique comment activer ICMP, Remote Desktop Protocol et les logs de démarrage sur un VPS Windows.**
 
 ## Prérequis
 
@@ -56,13 +58,13 @@ Vous pouvez activer ici les règles « ICMP » et « Remote Desktop » (bureau �
 
 Votre serveur devrait maintenant répondre aux demandes utilisant ces protocoles.
 
-### Activation des journaux de démarrage Windows (facultatif)
+### Activation des logs de démarrage (boot logs) Windows (facultatif)
 
-Connectez-vous à votre serveur via une session Bureau à distance ou [KVM](../use-kvm-for-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](../use-kvm-for-vps/). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 
-Renseignez "msconfig" et cliquez sur `OK`{.action}.
+Entrez "msconfig" et cliquez sur `OK`{.action}.
 
 ![Bootlog](images/windowsboot2.png){.thumbnail}
 
@@ -70,7 +72,7 @@ Dans la nouvelle fenêtre, cochez la case à côté de `Boot log`. Cliquez sur `
 
 ![Bootlog](images/windowsboot3.png){.thumbnail}
 
-Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est ```C:\Windows\ntbtlog.txt```.
+Au prochain démarrage de votre serveur, les logs seront enregistrés dans un fichier .txt. Le chemin du fichier est `C:\Windows\ntbtlog.txt`.
 
 Pour accéder au contenu de ce fichier en mode rescue, veuillez suivre les instructions décrites dans [le guide du mode rescue du VPS](../mode-rescue-vps/).
 
