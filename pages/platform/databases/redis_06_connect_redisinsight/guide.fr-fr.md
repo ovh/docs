@@ -47,13 +47,13 @@ We are now ready to learn how to connect to our Redis instance.
 
 #### Collect required informations
 
-Select the `General information`{.action} tab to find the required login information:
+Select the `General information`{.action}`tab to find the required login information:
 
 ![Login information tab](images/redis_06_connect_redisinsight-20220209095337130.png)
 
 #### Configuration
 
-Once connected to the RedisInsight interface, click on the `I already have a database`{.action} link:
+Once connected to the RedisInsight interface, click on the `I already have a database`{.action}`link:
 
 ![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png)
 
