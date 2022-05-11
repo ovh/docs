@@ -41,12 +41,12 @@ Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM)
 
 > [!primary]
 >
-> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori nella determinazione del gateway.
 >
 > Ad esempio:
 > 
-> - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
-> - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64 o 2607:5300:60:62ac:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
+> - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64 o 2001:41D0:0001:046e:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
 >
