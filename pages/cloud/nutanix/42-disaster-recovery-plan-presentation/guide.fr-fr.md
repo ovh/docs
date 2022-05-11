@@ -20,7 +20,9 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 ## Prérequis
 
-- Disposer de plusieurs clusters Nutanix dans votre compte OVHcloud ou d'un cluster Nutanix dans votre compte OVHcloud et un cluster Nutanix dans votre infrastructure sur site.
+- Disposer de plusieurs clusters Nutanix avec ces deux options
+    + Plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud
+    + Un cluster sur site et un cluster chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos cluster via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
@@ -53,16 +55,6 @@ Il est possible d'améliorer la gestion des plan de reprises d'activités au tra
 
 > [!warning]
 > La réplication asynchrone entre deux sites est intégrée avec l'offre **Nutanix Standard** d'OVHcloud par contre il est sera nécessaire de passer sur l'offre **Nutanix Advanced** d'OVHcloud pour pouvoir utiliser les autres options.
-
-
-
-
-
-
-
-
-
-
 
 
 ## Aller plus loin
