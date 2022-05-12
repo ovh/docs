@@ -54,7 +54,7 @@ Bitte konsultieren Sie die Foren zu [WordPress](https://wordpress.org/support/).
 
 
 
-![WordPress](images/img_3379.jpg){.thumbnail}
+![WordPress](images/3379.png){.thumbnail}
 
 
 ### Joomla!
@@ -72,7 +72,7 @@ Bitte konsultieren Sie stattdessen die entsprechenden [Joomla!](http://forum.joo
 
 - Joomla!-Installationsanleitung: [Manuelle Installation von Joomla!](https://docs.ovh.com/gb/en/hosting/cms_manually_install_joomla)
 
-![Joomla](images/img_3380.jpg){.thumbnail}
+![Joomla](images/3380.png){.thumbnail}
 
 
 ### PrestaShop
@@ -91,7 +91,7 @@ Sie können hierzu in den Foren nachlesen, die der [PrestaShop-Lösung](https://
 
 - PrestaShop-Installationsanleitung: [Manuelle Installation von PrestaShop](https://docs.ovh.com/gb/en/hosting/cms_manually_install_prestashop)
 
-![PrestaShop](images/img_3381.jpg){.thumbnail}
+![PrestaShop](images/3381.png){.thumbnail}
 
 
 ### Drupal
@@ -106,7 +106,7 @@ Bitte lesen Sie in den Foren zu [Drupal](https://www.drupal.org) nach.
 -  Drupal-Installationsanleitung: [Manuelle Installation von Drupall](https://docs.ovh.com/de/hosting/cms_manuelle_installation_von_drupal/)
 
 
-![Drupal](images/img_3382.jpg){.thumbnail}
+![Drupal](images/3382.png){.thumbnail}
 
 
 

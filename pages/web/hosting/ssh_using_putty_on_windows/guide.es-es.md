@@ -33,7 +33,7 @@ Puede consultar esta información en el Panel de control. Acceda a la sección F
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/3094.png){.thumbnail}
 
 
 ## Conexión a su alojamiento

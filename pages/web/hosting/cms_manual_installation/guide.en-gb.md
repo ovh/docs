@@ -55,7 +55,7 @@ Please consult the forums dedicated to [WordPress](https://wordpress.org/support
 
 
 
-![WordPress](images/img_3379.jpg){.thumbnail}
+![WordPress](images/3379.png){.thumbnail}
 
 
 ### Joomla!
@@ -75,7 +75,7 @@ Please consult the dedicated [Joomla!](http://forum.joomla.org/) forums instead.
 
 
 
-![Joomla](images/img_3380.jpg){.thumbnail}
+![Joomla](images/3380.png){.thumbnail}
 
 
 ### PrestaShop
@@ -102,7 +102,7 @@ Please consult the forum dedicated to the
 
 
 
-![PrestaShop](images/img_3381.jpg){.thumbnail}
+![PrestaShop](images/3381.png){.thumbnail}
 
 
 ### Drupal
@@ -119,7 +119,7 @@ Please consult the forums dedicated to [Drupal](https://www.drupal.org).
 
 
 
-![Drupal](images/img_3382.jpg){.thumbnail}
+![Drupal](images/3382.png){.thumbnail}
 
 
 
