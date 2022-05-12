@@ -51,7 +51,7 @@ We are now ready to learn how to connect to our MySQL instance.
 
 We will now follow official MySQL documentation to perform our first connection.
 
-In your CLI, type `mysqlsh --sql`. The result should look like this:
+In your CLI, type `mysqlsh --version`. The result should look like this:
 
 ```console
 laptop$mysqlsh --version
