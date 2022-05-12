@@ -6,7 +6,7 @@ section: Kafka - Guides
 order: 2
 ---
 
-**Last updated 5th<sup>th</sup> of January 2022**
+**Last updated 5<sup>th</sup> January 2022**
 
 ## Objectives
 

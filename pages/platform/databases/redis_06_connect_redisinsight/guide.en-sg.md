@@ -47,29 +47,29 @@ We are now ready to learn how to connect to our Redis instance.
 
 Select the `General information`{.action} tab to find the required login information:
 
-![Login information tab](images/redis_06_connect_redisinsight-20220209095337130.png)
+![Login information tab](images/redis_06_connect_redisinsight-20220209095337130.png){.thumbnail}
 
 #### Configuration
 
-Once connected to the RedisInsight interface, click on the `I already have a database` link:
+Once connected to the RedisInsight interface, click on the `I already have a database`{.action} link:
 
-![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png)
+![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png){.thumbnail}
 
-Then on `Connect to a Redis database`:
+Then on Connect to a Redis database`{.action} :
 
-![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png)
+![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png){.thumbnail}
 
-Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`:
+Fill in the form with the previously collected credentials. Check the `Use TLS` check box and uncheck the `Verify TLS Certificate` check box. Then click on `ADD REDIS DATABASE`{.action} :
 
-![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png)
+![Add Redis database](images/redis_06_connect_redisinsight-20220207120005204.png){.thumbnail}
 
 Finally, select your Redis database:
 
-![Dashboard](images/redis_06_connect_redisinsight-20220209095424435.png)
+![Dashboard](images/redis_06_connect_redisinsight-20220209095424435.png){.thumbnail}
 
 Congratulations! You are now connected to your Redis instance!
 
-![Result](images/redis_06_connect_redisinsight-20220209095533690.png)
+![Result](images/redis_06_connect_redisinsight-20220209095533690.png){.thumbnail}
 
 > [!primary]
 >

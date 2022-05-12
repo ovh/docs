@@ -22,7 +22,7 @@ Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
-*Si vous souhaitez installer Prestashop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
+*Si vous souhaitez installer Prestashop de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [modules en 1 clic](../modules-en-1-clic/)
 
 
 ## PrestaShop

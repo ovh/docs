@@ -48,7 +48,7 @@ Veuillez consulter les forums dédiés à [WordPress](https://fr.wordpress.org/s
 
 - Guide d’installation de WordPress : [CMS, installer manuellement WordPress](../installer-manuellement-wordpress/)
 
-![CMS](images/img_3379.jpg){.thumbnail}
+![CMS](images/3379.png){.thumbnail}
 
 ### Joomla!
 
@@ -64,7 +64,7 @@ Il est plutôt recommandé de consulter les forums [Joomla!](http://forum.joomla
 
 - Guide d’installation de Joomla! : [CMS, installer manuellement Joomla!](../installer-manuellement-joomla/)
 
-![CMS](images/img_3380.jpg){.thumbnail}
+![CMS](images/3380.png){.thumbnail}
 
 ### PrestaShop
 
@@ -84,7 +84,7 @@ la solution [PrestaShop](https://www.prestashop.com/forums/).
 
 - Guide d’installation de PrestaShop : [CMS, installer manuellement PrestaShop](../installer-manuellement-prestashop/)
 
-![CMS](images/img_3381.jpg){.thumbnail}
+![CMS](images/3381.png){.thumbnail}
 
 ### Drupal
 
@@ -98,7 +98,7 @@ Veuillez consulter les forums dédiés à [Drupal](https://www.drupal.org).
 
 -  Guide d’installation de Drupal : [CMS, installer manuellement Drupal](../installer-manuellement-drupal/)
 
-![CMS](images/img_3382.jpg){.thumbnail}
+![CMS](images/3382.png){.thumbnail}
 
 ## Aller plus loin
 

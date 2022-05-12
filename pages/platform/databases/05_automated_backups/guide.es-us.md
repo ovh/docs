@@ -1,5 +1,5 @@
 ---
-title: Automated Backups (EN)
+title: Automated Backups
 slug: backups
 excerpt: Discover the automated backup methods for each engine
 section: General guides

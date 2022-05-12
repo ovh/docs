@@ -13,7 +13,7 @@ Program ten pozwala na zainstalowanie strony internetowej po zalogowaniu do prze
 
 Aby skorzystać z tego programu, przejdź na stronę: [filezilla.pl](http://filezilla.pl/)
 
-![](images/img_2400.jpg){.thumbnail}
+![FileZilla](images/2400.png){.thumbnail}
 
 
 ## Interfejs
@@ -33,7 +33,7 @@ Strefa 6 wskazuje oczekującą listę plików, które zostaną przetransferowane
 
 Część w górnej części interfejsu (w zielonej ramce) pobiera nazwę hosta (serwer, z którym się łączysz), nazwę użytkownika FTP, hasło i port.
 
-![](images/img_1818.jpg){.thumbnail}
+![FileZilla](images/1818.png){.thumbnail}
 
 ## Główne menu
 Główne menu zawiera podstawowe ikonki. Nie używamy wszystkich przycisków, aby przenieść pliki. Poniżej krótki opis ikonek.
@@ -68,7 +68,7 @@ Do połączenia z serwerem niezbędne są poniższe informacje:
 
 Po wpisaniu danych kliknij na Szybkie łączenie, aby uzyskać połączenie z serwerem.
 
-![](images/img_1819.jpg){.thumbnail}
+![FileZilla](images/1819.png){.thumbnail}
 
 
 ## Połączenie SFTP
@@ -85,7 +85,7 @@ Do połączenia z serwerem niezbędne są poniższe informacje:
 
 Po kliknięciu na przycisk Szybkie łączenie pojawi się okno dialogowe do potwierdzenia połączenia z serwerem.
 
-![](images/img_1834.jpg){.thumbnail}
+![FileZilla](images/1834.png){.thumbnail}
 
 
 ## Błędy dotyczące połączenia
@@ -97,12 +97,12 @@ Sprawdź dane do logowania. Hasło do FTP na hostingu www możesz zmienić w pan
 
 Przewodnik na temat zmiany hasła do FTP na hostingu www:[]({legacy}1374)
 
-![](images/img_1820.jpg){.thumbnail}
+![FileZilla](images/1820.png){.thumbnail}
 W tym przypadku błąd jest generowany przez nieprawidłową nazwę serwera.
 
 W tym przypadku błąd dotyczy nieprawidłowego hosta.
 
-![](images/img_1824.jpg){.thumbnail}
+![FileZilla](images/1824.png){.thumbnail}
 
 
 ## Transfer plików
@@ -114,7 +114,7 @@ Aby przenieść pliki, należy je wybrać w oknie z lewej strony (pliki lokalne)
 
 Po wykonaniu tej operacji pliki zostaną automatycznie umieszczone w kolejce transferów.
 
-![](images/img_1821.jpg){.thumbnail}
+![FileZilla](images/1821.png){.thumbnail}
 
 
 ## Widok kolejki oczekującej
@@ -131,7 +131,7 @@ Na tym poziomie można odnaleźć:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![FileZilla](images/1822.png){.thumbnail}
 
 
 ## Menu Serwer
@@ -157,7 +157,7 @@ Przykład adresu: ftp://loginftp@ftp.cluster0XX.ovh.net/www/mondossier1/monfichi
 
 Uprawnienia dla pliku : daje możliwość zmiany uprawnień do plików (CHMOD)
 
-![](images/img_1830.jpg){.thumbnail}
+![FileZilla](images/1830.png){.thumbnail}
 
 
 ## Uprawnienia do plików i katalogów
@@ -167,7 +167,7 @@ W tym interfejsie możesz zmienić uprawnienia (CHMOD) do plików i katalogów d
 
 Wpisz uprawnienia, które chcesz przyznać. Wartość CHMOD zostanie automatycznie zaktualizowany.
 
-![](images/img_1831.jpg){.thumbnail}
+![FileZilla](images/1831.png){.thumbnail}
 
 
 ## Odblokowanie strony
@@ -199,7 +199,7 @@ Aby sprawdzić, czy strona została odblokowana, otwórz ją w przeglądarce.
 
 Polecenie to nie działa przez SFTP.
 
-![](images/img_1829.jpg){.thumbnail}
+![FileZilla](images/1829.png){.thumbnail}
 Przetestuj wyświetlanie strony po około 3 godzinach. Nasze roboty przechodzą co 3 godziny i sprawdzają zmiany statusów. 
 
 Jeśli 3 godziny minęły i strona się nie wyświetla, skontaktuj się z pomocą techniczną.
@@ -210,7 +210,7 @@ W przypadku plików binarnych (pliki CGI) można wybrać sposób transferowania.
 
 Aby to zmienić, wybierz w menu głównym "Transfer" i "Tryb transferu".
 
-![](images/img_1832.jpg){.thumbnail}
+![FileZilla](images/1832.png){.thumbnail}
 
 
 ## Porównywanie katalogów
@@ -232,7 +232,7 @@ Kolory:
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![FileZilla](images/1823.png){.thumbnail}
 
 
 ## Ustawienia
@@ -244,14 +244,14 @@ Uwaga: niektóre serwery mogą uznać to za nadużycie i zablokować Twój adres
 
 Aby zmienić te ustawienia, przejdź do zakładki "Edytuj", "Ustawienia" i Połączenie".
 
-![](images/img_1825.jpg){.thumbnail}
+![FileZilla](images/1825.png){.thumbnail}
 
 ## Transfer
 Można zmienić ustawienia dotyczące domyślnych operacji do wykonania podczas modyfikowania istniejącego pliku.
 
 Aby zmienić te ustawienia, przejdź do zakładki "Edytuj", "Ustawienia" i "Transfery".
 
-![](images/img_1826.jpg){.thumbnail}
+![FileZilla](images/1826.png){.thumbnail}
 
 
 ## Informacje o serwerze do połączenia
@@ -265,5 +265,5 @@ Tego typu pytanie może się pojawić w sytuacji, gdy stwierdzisz spowolnienia l
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![FileZilla](images/2399.png){.thumbnail}
 

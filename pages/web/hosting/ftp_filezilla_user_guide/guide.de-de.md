@@ -13,7 +13,7 @@ Mit FileZilla können Sie sich über das FTP Protokoll mit dem Speicherplatz Ihr
 
 FileZilla ist Open Source, Sie können das Programm auf der offiziellen Webseite des Projekts herunterladen: [filezilla-project.org/](https://filezilla-project.org/)
 
-![](images/img_2400.jpg){.thumbnail}
+![FileZilla](images/2400.png){.thumbnail}
 
 
 ## Interface
@@ -34,7 +34,7 @@ Der Bereich 6 zeigt die Warteliste der Dateien an, die übertragen werden.
 
 Im oberen Bereich des Interfaces (unterhalb des grünen Rahmens) stehen der Hostname des Servers, mit dem Sie verbunden sind, der FTP-Benutzername, das Passwort und der verwendete Port.
 
-![](images/img_1818.jpg){.thumbnail}
+![FileZilla](images/1818.png){.thumbnail}
 
 ## Menüleiste
 Die Menüleiste enthält nützliche Icons für den Zugriff auf die Basisfunktionen des Programms. Für die Übertragung von Dateien werden diese jedoch nicht alle benötigt. Ein Überblick:
@@ -69,7 +69,7 @@ Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHclou
 
 Sobald alle Angaben eingetragen wurden klicken Sie auf Verbinden, um die Verbindung mit dem Server aufzubauen.
 
-![](images/img_1819.jpg){.thumbnail}
+![FileZilla](images/1819.png){.thumbnail}
 
 
 ## SFTP Verbindung
@@ -87,7 +87,7 @@ Um die Verbindung mit dem Server herzustellen, müssen Sie in dem grünen Rahmen
 Sobald alle Angaben eingetragen wurden klicken Sie auf Verbinden, um die Verbindung mit dem Server aufzubauen. Es öffnet sich dann ein Dialogfenster (siehe oben) zur Überprüfung der Verbindung mit dem Server.
 Wenn Sie sich mit einem OVH Server verbinden, können Sie ein Häkchen bei "Diesem Server immer vertrauen, diesen Schlüssel speichern" setzen, damit diese Bestätigung zukünftig nicht mehr angefordert wird.
 
-![](images/img_1834.jpg){.thumbnail}
+![FileZilla](images/1834.png){.thumbnail}
 
 
 ## Verbindungsfehler
@@ -99,12 +99,12 @@ Die Ursache dafür ist ein Fehler bei der Angabe des Benutzernamens und/oder Pas
 
 Mehr Informationen zur Änderung des FTP Passworts bei den Webhosting-Angeboten finden Sie in folgender Hilfe:[]({legacy}1374)
 
-![](images/img_1820.jpg){.thumbnail}
+![FileZilla](images/1820.png){.thumbnail}
 In diesem Fall wird der Fehler durch einen falschen Hostnamen verursacht.
 
 Diese Fehlermeldung wird durch einen falschen Hostname (Server) verursacht.
 
-![](images/img_1824.jpg){.thumbnail}
+![FileZilla](images/1824.png){.thumbnail}
 
 
 ## Übertragen von Dateien
@@ -116,7 +116,7 @@ Um Ihre Dateien per FTP zu übertragen, wählen Sie sie einfach aus und ziehen s
 
 Die ausgewählten Dateien werden dann automatisch in die Warteschlange für die Übertragung auf den Server aufgenommen.
 
-![](images/img_1821.jpg){.thumbnail}
+![FileZilla](images/1821.png){.thumbnail}
 
 
 ## Anzeige der Warteschlange
@@ -133,7 +133,7 @@ Dort sehen Sie:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![FileZilla](images/1822.png){.thumbnail}
 
 
 ## Kontextmenü Server
@@ -158,7 +158,7 @@ Beispiel einer so erzeugten URL: ftp://ftplogin@ftp.cluster0XX.ovh.net/www/meino
 
 Dateiberechtigungen.../blue]: Hiermit können Sie die Rechte der Dateien (CHMOD) ändern
 
-![](images/img_1830.jpg){.thumbnail}
+![FileZilla](images/1830.png){.thumbnail}
 
 
 ## Datei- und Ordnerrechte
@@ -170,7 +170,7 @@ Tragen Sie die Berechtigungen ein, die Sie erteilen möchten, der CHMOD Wert wir
 
 Wenn gewünscht, können Sie ein Häkchen bei "Unterverzeichnisse einbeziehen" setzen. Dadurch werden nicht nur die Rechte des ausgewählten Ordners, sondern auch die Rechte der eventuell darin befindlichen Ordner und Dateien geändert.
 
-![](images/img_1831.jpg){.thumbnail}
+![FileZilla](images/1831.png){.thumbnail}
 
 
 ## Seite wieder öffnen
@@ -202,7 +202,7 @@ Um zu überprüfen, dass die Seite erfolgreich wieder geöffnet wurde, rufen Sie
 
 Dieser Befehl steht bei der Verwendung von SFTP nicht zur Verfügung.
 
-![](images/img_1829.jpg){.thumbnail}
+![FileZilla](images/1829.png){.thumbnail}
 Nachdem die Änderung der Rechte auf 705 angefordert wurde, dauert es bis zu 3 Stunden, bis dies aktiv ist. Unsere Robots überprüfen alle 3 Stunden die angeforderten Zustandsänderungen. Abhängig davon, wann die Anfrage getätigt wurde, kann es also mehr oder weniger lange dauern, bis Ihre Seite wieder angezeigt wird.
 
 Wenn mehr als 3 Stunden vergangen sind und Ihre Seite immer noch nicht online ist, kontaktieren Sie bitte unseren Support.
@@ -213,7 +213,7 @@ Bei Binärdateien wie beispielsweise CGI Dateien kann es interessant sein, die �
 
 Klicken Sie dazu in der FileZilla Menüleiste auf "Transfer" und dann auf "Transfertyp".
 
-![](images/img_1832.jpg){.thumbnail}
+![FileZilla](images/1832.png){.thumbnail}
 
 
 ## Verzeichnisvergleich
@@ -234,7 +234,7 @@ Die verwendeten Farben:
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![FileZilla](images/1823.png){.thumbnail}
 
 
 ## Weitergehende Einstellungen
@@ -246,14 +246,14 @@ Seien Sie jedoch mit dieser Einstellung vorsichtig, da dies von verschiedenen Se
 
 Um diese Einstellungen zu ändern klicken Sie in der FileZilla Menüleiste auf "Bearbeiten" und wählen dann "Einstellungen" und "Verbindung" aus.
 
-![](images/img_1825.jpg){.thumbnail}
+![FileZilla](images/1825.png){.thumbnail}
 
 ## Übertragungen
 Sie können auch verschiedene Parameter für die Übertragung von Dateien (Anzahl gleichzeitiger Übertragungen, maximale Geschwindigkeit...) beeinflussen.
 
 Um diese Einstellungen zu ändern klicken Sie in der FileZilla Menüleiste auf "Bearbeiten" und wählen dann "Einstellungen" und "Übertragungen" aus.
 
-![](images/img_1826.jpg){.thumbnail}
+![FileZilla](images/1826.png){.thumbnail}
 
 
 ## Den Verbindungsserver bestimmen
@@ -267,5 +267,5 @@ Den Verbindungsserver finden Sie wie folgt heraus:
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![FileZilla](images/2399.png){.thumbnail}
 

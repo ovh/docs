@@ -32,7 +32,7 @@ Diese Informationen finden Sie im Konfigurationspanel. Gehen Sie in den Bereich 
 
 
 
-![](images/img_3094.jpg){.thumbnail}
+![Putty](images/3094.png){.thumbnail}
 
 
 ## Verbindung zu Ihrem Hosting

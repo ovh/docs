@@ -19,7 +19,7 @@ Para beneficiar o mesmo deverá aceder ao website oficial da aplicação
 
 
 
-![](images/img_2344.jpg){.thumbnail}
+![cyberduck macOS](images/2344.png){.thumbnail}
 Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: []({legacy}1380)
 
 
@@ -34,7 +34,7 @@ Aquando da primeira ligação ser-lhe-á apresentada a seguinte janela.
 
 
 
-![](images/img_2343.jpg){.thumbnail}
+![cyberduck macOS](images/2343.png){.thumbnail}
 Personalizar a apresentação do Cyberduck
 É possível personalizar a apresentação do Cyberduck para o tornar mais eficaz e pessoal.
 
@@ -42,7 +42,7 @@ Para efetuar essa manipulação clique em Apresentação e depois aceda a Person
 
 No quadro que aparece basta arrastar os elementos que deseja para a barra de ferramentas. Para validar as modificações clique em Terminar
 
-![](images/img_2345.jpg){.thumbnail}
+![cyberduck macOS](images/2345.png){.thumbnail}
 
 
 ## Ligação FTP
@@ -62,7 +62,7 @@ Para se poder ligar ao seu espaço de alojamento (FTP), siga as etapas descritas
 4. Clique em Ligação para estabelecer ligação ao seu espaço de alojamento (FTP)
 
 
-![](images/img_2361.jpg){.thumbnail}
+![cyberduck macOS](images/2361.png){.thumbnail}
 
 - Tem a possibilidade de registar a sua password no Cyberduck ao selecionar a opção Adicionar à chave de acesso. Esta opção não é obrigatória: ao não selecionar esta opção, deverá introduzir a sua password sempre que desejar estabelecer ligação ao seu espaço de alojamento.
 
@@ -77,7 +77,7 @@ Aparecerá uma mensagem de alerta informando-o que o servidor suporta ligações
 
 
 
-![](images/img_2349.jpg){.thumbnail}
+![cyberduck macOS](images/2349.png){.thumbnail}
 
 - Se não sabe se dispõe de acesso SSH na sua oferta aceda aoa [descritivo das nossas ofertas](http://www.ovh.pt/alojamento-partilhado/).
 
@@ -118,7 +118,7 @@ Para estabelecer ligação ao seu espaço de alojamento, siga as etapas descrita
 5. Clique em Ligação para se ligar ao seu espaço de alojamento (FTP)
 
 
-![](images/img_2362.jpg){.thumbnail}
+![cyberduck macOS](images/2362.png){.thumbnail}
 
 - Tem a possibilidade de registar a sua password no Cyberduck ao selecionar a opção Adicionar à chave de acesso. Esta opção não é obrigatória: ao não selecionar esta opção, deverá introduzir a sua password sempre que desejar estabelecer ligação ao seu espaço de alojamento.
 
@@ -131,7 +131,7 @@ Aquando da sua primeira ligação ao seu espaço de alojamento irá aparecer uma
 
 
 
-![](images/img_2363.jpg){.thumbnail}
+![cyberduck macOS](images/2363.png){.thumbnail}
 
 - Aconselhamos que registe as informações de ligação num bookmark. Desta forma pode guardar em memória certas informações de ligação.
 
@@ -152,7 +152,7 @@ Esta mensagem é igualmente acompanhada pela menção 530 Login authentification
 
 
 
-![](images/img_2352.jpg){.thumbnail}
+![cyberduck macOS](images/2352.png){.thumbnail}
 
 - Se não conhece os seus identificadores FTP consulte o seguinte guia: [Obter os meus identificadores FTP](http://www.ovh.pt/g1374.mettre-mon-site-en-ligne#colocar_os_meus_ficheiros_no_ftp_obter_os_meus_identificadores_ftp).
 
@@ -168,7 +168,7 @@ Esta mensagem é igualmente acompanhada pela menção Timed out waiting for init
 
 Pode estar igualmente relacionado com uma firewall ou a rede local que esteja a bloquear a porta 21 ou 22 que são utilizadas para a ligação ao FTP. Deverá igualmente verificar a sua configuração pessoal.
 
-![](images/img_2353.jpg){.thumbnail}
+![cyberduck macOS](images/2353.png){.thumbnail}
 
 - Como lembrança, o host de ligação ao seu espaço de alojamento é ftp.oseu-dominio.tld (substitua pelo seu domínio) ou ftp.clusterXXX.ovh.net (substitua XXX pelo número do cluter).
 
@@ -188,7 +188,7 @@ Para efetuar essa adição:
 
  - Clique no logo em forma de [+] (quadrado laranja) à esquerda da janela.
 
-![](images/img_2346.jpg){.thumbnail}
+![cyberduck macOS](images/2346.png){.thumbnail}
 Irá aparecer uma nova janela que irá conter as suas informações de ligação. No próximo inicio do Cyberduck poderá efetuar duplo clique nesse bookmark para estabelecer ligação de forma mais rápida.
 
 
@@ -204,7 +204,7 @@ Para transferir os seus ficheiros por FTP poderá simplesmente selecionar e real
 
 
 
-![](images/img_2354.jpg){.thumbnail}
+![cyberduck macOS](images/2354.png){.thumbnail}
 Através da interface Transferir
 Têm a possibilidade de utilizar a interface Transferir que irá abrir uma janela e que lhe permitirá explorar os seus ficheiros. Deverá selecionar os ficheiros que pretende e depois clica em Transferir.
 
@@ -213,7 +213,7 @@ Têm a possibilidade de utilizar a interface Transferir que irá abrir uma janel
 
 
 
-![](images/img_2355.jpg){.thumbnail}
+![cyberduck macOS](images/2355.png){.thumbnail}
 Consultar as transferências em curso
 Terá a possibilidade de consultar o histório das transferências para o seu espaço de alojamento. Poderá encontrar:
 
@@ -231,7 +231,7 @@ Esta janela apresenta-se de duas formas diferentes:
 
 
 
-![](images/img_2356.jpg){.thumbnail}
+![cyberduck macOS](images/2356.png){.thumbnail}
 
 
 ## Ações que poderá efetuar num ficheiro/pasta
@@ -251,7 +251,7 @@ Estas últimas permitem-lhe:
 A lista acima não é exaustiva, ou seja, existem outras ações possíveis.
 Consulte a informação presente no website do Cyberduck se necessário.
 
-![](images/img_2357.jpg){.thumbnail}
+![cyberduck macOS](images/2357.png){.thumbnail}
 
 
 ## Direitos dos ficheiros e pastas
@@ -275,7 +275,7 @@ Nessa nova janela clique em Permissões efetuando as modificações desejadas:
 
 
 
-![](images/img_2358.jpg){.thumbnail}
+![cyberduck macOS](images/2358.png){.thumbnail}
 
 
 ## Reabertura do site
@@ -291,7 +291,7 @@ Para utilizar um comando:
 
 
 
-![](images/img_2359.jpg){.thumbnail}
+![cyberduck macOS](images/2359.png){.thumbnail}
 Na nova janela introduza o comando:
 
 
@@ -306,7 +306,7 @@ Ao confirmar, irá aparecer a mensagem 200 Permissions changed on / deverá apar
 
 
 
-![](images/img_2360.jpg){.thumbnail}
+![cyberduck macOS](images/2360.png){.thumbnail}
 
 - Este comando não funciona via SFTP. Para o efetuar, utilize uma [ligação FTP](#utiliser_cyberduck_connexion_ftp).
 
@@ -338,5 +338,5 @@ Deverá depois aparecer um quadro abaixo na janela do Cyberduck. De seguida:
 
 
 
-![](images/img_2364.jpg){.thumbnail}
+![cyberduck macOS](images/2364.png){.thumbnail}
 
