@@ -2,7 +2,7 @@
 title: Restorer une sauvegarde (EN)
 slug: restore-backup
 excerpt: Find out how to restore a backup
-section: General guides
+section: Guides généraux
 order: 060
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/restore-backup'
@@ -12,7 +12,7 @@ routes:
 
 ## Objective
 
-OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance. 
+OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
 
 **This guide explains how to restore a backup of a database solution in the OVHcloud Control Panel.**
 
