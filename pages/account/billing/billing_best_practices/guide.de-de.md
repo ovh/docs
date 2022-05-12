@@ -62,7 +62,7 @@ Klicken Sie oben rechts auf Ihren Bildschirm auf Ihren Namen und dann im rechten
 
 > [!primary]
 >
-> Um Dienstunterbrechungen zu vermeiden und die automatische Verlängerung zu aktivieren, [hinterlegen Sie ein Zahlungsmittel](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/) in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+> Um Dienstunterbrechungen zu vermeiden und die automatische Verlängerung zu aktivieren, [hinterlegen Sie ein Zahlungsmittel](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/) in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 >
 > Vergewissern Sie sich regelmäßig, dass Ihr Zahlungsmittel **gültig** ist.
 >
