@@ -6,7 +6,7 @@ section: OpenSearch - Guides
 order: 2
 ---
 
-**Last updated 06<sup>th</sup> of December 2021**
+**Last updated 06<sup>th</sup> December 2021**
 
 ## Objectives
 

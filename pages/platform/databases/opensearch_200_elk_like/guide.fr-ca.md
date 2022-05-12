@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/opensearch/logstash/'
 ---
 
-**Last updated 17<sup>th</sup> of December 2021**
+**Last updated 17<sup>th</sup> December 2021**
 
 ## Objective
 
