@@ -13,7 +13,7 @@ If an ISO is connected to a VM, the VM cannot be migrated, either manually or au
 
 ## Requirements
 
-- You must be an administrative contact for the [Hosted Private Cloud](https://www.ovhcloud.com/au/en/enterprise/products/hosted-private-cloud/) infrastructure to receive login credentials.
+- You must be an administrative contact for the [Hosted Private Cloud](https://www.ovhcloud.com/en-au/enterprise/products/hosted-private-cloud/) infrastructure to receive login credentials.
 - An active username (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au))
 
 

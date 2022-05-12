@@ -57,7 +57,7 @@ Cette procédure se divise en 3 phases distinctes.
 
 ### Étape 1: Phase de mise à jour
 
-La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link}.
+La mise à jour du vCenter est réalisée par OVHcloud, cependant, le patch des hôtes ESXi est à effectuer par vos soins et est disponible dans [l'update manager](https://docs.ovh.com/ca/fr/private-cloud/vmware-update-manager/){.external-link}.
 
 Vous retrouverez la liste des patchs pour les hôtes ESXi dans [ce document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 

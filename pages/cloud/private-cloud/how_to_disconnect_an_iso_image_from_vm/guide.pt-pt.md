@@ -1,11 +1,13 @@
 ---
-title: How to disconnect an ISO image from a VM
-excerpt: How do you disconnect an ISO image from a virtual machine?
+title: How to disconnect an ISO image from a VM (EN)
 slug: disconnect_iso_from_vm
-section: Getting started
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/disconnect_iso_from_vm/'
+excerpt: How do you disconnect an ISO image from a virtual machine?
+section: Introdução
 ---
 
-**Last Updated on 27th April 2022**
+**Last Updated on 11th May 2022**
 
 ## Objective
 
@@ -13,8 +15,8 @@ If an ISO is connected to a VM, the VM cannot be migrated, either manually or au
 
 ## Requirements
 
-- You must be an administrative contact for the [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) infrastructure to receive login credentials.
-- An active username (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
+- You must be an administrative contact for the [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) infrastructure to receive login credentials.
+- An active username (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
 
 
 ## Instructions

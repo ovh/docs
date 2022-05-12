@@ -57,7 +57,7 @@ This procedure is divided into three distinct steps.
 
 ### Step 1: Update.
 
-The vCenter update is managed by OVH, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/){.external-link}.
+The vCenter update is managed by OVHcloud, however, it is your responsibility to install the patch for ESXi hosts. This is available in the [the Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/){.external-link}.
 
 You will find the list of patches for ESXi hosts in [this document](https://www.vmware.com/security/advisories/VMSA-2018-0020.html){.external-link}.
 
@@ -88,7 +88,7 @@ To find out more, you can go to step 3 in the ‘Resolution’ section of this [
 > If you do not want to disable hyper-threading on these elements, you can remove the alert message by following this [knowledge base](https://kb.vmware.com/s/article/57374){.external-link}.
 > 
 > ![](images/deleteWarning.png){.thumbnail}
-> OVH does not recommend doing this, and cannot be held responsible for this risk or any resulting consequences.
+> OVHcloud does not recommend doing this, and cannot be held responsible for this risk or any resulting consequences.
 >
 
 ## Go further
