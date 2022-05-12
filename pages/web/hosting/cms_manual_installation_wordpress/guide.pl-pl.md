@@ -23,7 +23,7 @@ Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[]({legacy}1374)
 Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1374)
 
 
-![](images/img_3125.jpg){.thumbnail}
+![wordpress](images/3125.png){.thumbnail}
 
 
 ## Część 2: pobranie plików źródłowych
@@ -35,7 +35,7 @@ Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej 
 
 Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
 
-![](images/img_3126.jpg){.thumbnail}
+![wordpress](images/3126.png){.thumbnail}
 
 
 ## Część 3: umieszczenie plików na FTP
@@ -51,7 +51,7 @@ W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzys
 
 Katalog docelowy będzie nosił nazwę "wordpress".
 
-![](images/img_3127.jpg){.thumbnail}
+![wordpress](images/3127.png){.thumbnail}
 
 ## Logowanie na hosting www przez FTP
 Aby umieścić pliki modułu WordPress na hostingu, należy najpierw zalogować się na ten hosting. 
@@ -59,7 +59,7 @@ Aby umieścić pliki modułu WordPress na hostingu, należy najpierw zalogować 
 Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
 []({legacy}1374)
 
-![](images/img_3128.jpg){.thumbnail}
+![wordpress](images/3128.png){.thumbnail}
 
 ## Transfer plików przez FTP
 Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
@@ -75,7 +75,7 @@ Jeśli taki katalog nie istnieje, możesz go utworzyć.
 
 Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
 
-![](images/img_3129.jpg){.thumbnail}
+![wordpress](images/3129.png){.thumbnail}
 
 ## Etap 2
 Po otwarciu tych katalogów:
@@ -88,7 +88,7 @@ Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdaln
 
 Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
 
-![](images/img_3130.jpg){.thumbnail}
+![wordpress](images/3130.png){.thumbnail}
 
 ## Etap 3
 Trwa przenoszenie plików.
@@ -99,7 +99,7 @@ Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały 
 
 Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
 
-![](images/img_3131.jpg){.thumbnail}
+![wordpress](images/3131.png){.thumbnail}
 
 
 ## Część 4: połączenie z bazą danych
@@ -116,14 +116,14 @@ Wpisz w przeglądarce internetowej nazwę swojej domeny. Pojawi się taki komuni
 
 Kliknij na "Utwórz plik konfiguracyjny", aby kontynuować.
 
-![](images/img_3132.jpg){.thumbnail}
+![wordpress](images/3132.png){.thumbnail}
 
 ## Etap 2
 Zaopatrz się w dane do logowania do bazy danych  (pomoc w tym zakresie jest dostępna na początku przewodnika).
 
 Kliknij na "Zaczynajmy!", aby przejść do kolejnego etapu.
 
-![](images/img_3133.jpg){.thumbnail}
+![wordpress](images/3133.png){.thumbnail}
 
 ## Etap 3
 Podaj informacje dotyczące bazy danych:
@@ -147,7 +147,7 @@ Kliknij na "Wyślij", aby kontynuować.
 
 
 
-![](images/img_3134.jpg){.thumbnail}
+![wordpress](images/3134.png){.thumbnail}
 
 
 ## Zakończenie
@@ -158,7 +158,7 @@ Aby dokończyć instalowanie modułu Wordpress, kontynuuj etapy instalacji.
 ## Etap 1
 Kliknij na "Uruchomienie instalacji", aby kontynuować.
 
-![](images/img_3135.jpg){.thumbnail}
+![wordpress](images/3135.png){.thumbnail}
 
 ## Etap 2
 Podaj informacje dotyczące administrowania blogiem WordPress:
@@ -175,19 +175,19 @@ Prywatność: Jeśli pole to jest zaznaczone, wyszukiwarki będą pozycjonować 
 
 Kliknij na "Zainstaluj WordPressa".
 
-![](images/img_3136.jpg){.thumbnail}
+![wordpress](images/3136.png){.thumbnail}
 
 ## Etap 3
 Instalacja została zakończona.
 
 Możesz już administrować blogiem klikając na przycisk "Zaloguj się".
 
-![](images/img_3137.jpg){.thumbnail}
+![wordpress](images/3137.png){.thumbnail}
 
 ## Część administracyjna modułu WordPress
 Tak wygląda panel administracyjny modułu WordPress.
 
-![](images/img_3138.jpg){.thumbnail}
+![wordpress](images/3138.png){.thumbnail}
 
 
 ## Użyteczne informacje
@@ -214,7 +214,7 @@ Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako ty
 
 Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
 
-![](images/img_3139.jpg){.thumbnail}
+![wordpress](images/3139.png){.thumbnail}
 
 ## Klasyczny błąd: wersja PHP
 Chodzi o błąd dotyczący wersji PHP serwera. 
@@ -223,5 +223,5 @@ Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
 
 Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
 
-![](images/img_3140.jpg){.thumbnail}
+![wordpress](images/3140.png){.thumbnail}
 

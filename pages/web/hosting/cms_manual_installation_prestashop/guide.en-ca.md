@@ -26,7 +26,7 @@ There is a guide showing you how to change your FTP details:[Modifying a FTP use
 There is a guide showing you how to change your SQL credentials: [Changing the password for a Web Hosting plan database](../change-password-database/)
 
 
-![prestashop](images/img_3158.jpg){.thumbnail}
+![prestashop](images/3158.png){.thumbnail}
 
 
 ## Part 2: get source files
@@ -39,7 +39,7 @@ There should be a link that lets you download the last stable version of the CMS
 
 The file will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
 
-![prestashop](images/img_3159.jpg){.thumbnail}
+![prestashop](images/3159.png){.thumbnail}
 
 
 ## Part 3: Set up files on your hosting package via FTP
@@ -56,7 +56,7 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "PrestaShop"
 
-![prestashop](images/img_3160.jpg){.thumbnail}
+![prestashop](images/3160.png){.thumbnail}
 
 ## Log on to the web hosting package via FTP
 
@@ -64,7 +64,7 @@ To get the WordPress files in to your hosting package, you first have to log on.
 
 Follow this guide on connecting to a hosting package in FTP: [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting)
 
-![prestashop](images/img_3161.jpg){.thumbnail}
+![prestashop](images/3161.png){.thumbnail}
 
 ## Transfer the files via FTP
 
@@ -82,7 +82,7 @@ If this folder does not exist you can create it.
 
 Your files must be uploaded to the "www" folder or you will not be able to access the installation procedure from your domain name.
 
-![prestashop](images/img_3162.jpg){.thumbnail}
+![prestashop](images/3162.png){.thumbnail}
 
 ## Step 2
 
@@ -96,7 +96,7 @@ Then drag and drop the files in to the "www" folder in the "Remote site" section
 
 It is very likely that the "www". folder is not empty. You do not have to delete the files within it. We will go back to this point further on in the guide.
 
-![prestashop](images/img_3163.jpg){.thumbnail}
+![prestashop](images/3163.png){.thumbnail}
 
 ## Step 3
 
@@ -108,7 +108,7 @@ Once the transfer is complete, make sure that all of the files and folders have 
 
 This is the end of the section devoted to transferring files via FTP.
 
-![prestashop](images/img_3164.jpg){.thumbnail}
+![prestashop](images/3164.png){.thumbnail}
 
 
 ## Part 4: Link with the database
@@ -128,7 +128,7 @@ Select the right language to install PrestaShop.
 
 Click "Next" to continue.
 
-![prestashop](images/img_3165.jpg){.thumbnail}
+![prestashop](images/3165.png){.thumbnail}
 
 ## Step 2
 
@@ -136,7 +136,7 @@ Tick "I accept the terms and conditions below".
 
 Click "Next".
 
-![prestashop](images/img_3166.jpg){.thumbnail}
+![prestashop](images/3166.png){.thumbnail}
 
 ## Step 3
 
@@ -161,7 +161,7 @@ Subscribe to the PrestaShop newsletter: tick the box if you want to receive the 
 
 Click "Next" to validate the information concerning PrestaShop.
 
-![prestashop](images/img_3167.jpg){.thumbnail}
+![prestashop](images/3167.png){.thumbnail}
 
 ## Step 4
 
@@ -190,7 +190,7 @@ Click "Next" to confirm login details.
 
 
 
-![prestashop](images/img_3168.jpg){.thumbnail}
+![prestashop](images/3168.png){.thumbnail}
 
 
 ## Completion
@@ -203,7 +203,7 @@ Take the following steps to finish insallting the PrestaShop store.
 
 Wait for the installation to finish. Once it is at 100% a new window will appear.
 
-![prestashop](images/img_3169.jpg){.thumbnail}
+![prestashop](images/3169.png){.thumbnail}
 
 ## Step 2
 
@@ -216,13 +216,13 @@ You can now log in and start to work on your store. Click "Manage your store".
 
 
 
-![prestashop](images/img_3170.jpg){.thumbnail}
+![prestashop](images/3170.png){.thumbnail}
 
 ## PrestaShop administration
 
 A look at the PrestaShop administration panel.
 
-![prestashop](images/img_3171.jpg){.thumbnail}
+![prestashop](images/3171.png){.thumbnail}
 
 
 ## Useful information
@@ -250,7 +250,7 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be uploaded to the "www" folder in order for them to display your website.
 
-![prestashop](images/img_3172.jpg){.thumbnail}
+![prestashop](images/3172.png){.thumbnail}
 
 ## Typical error: forgot to delete the "install folder"
 
@@ -258,5 +258,5 @@ Something else to note: Your website's files must be uploaded to the "www" folde
 
 
 
-![prestashop](images/img_3173.jpg){.thumbnail}
+![prestashop](images/3173.png){.thumbnail}
 

@@ -15,7 +15,7 @@ Ti permette di mettere online il tuo sito internet connettendoti al tuo spazio h
 Scaricalo qui:
 [filezilla.it](http://filezilla.it/)
 
-![](images/img_2400.jpg){.thumbnail}
+![FileZilla](images/2400.png){.thumbnail}
 
 
 ## Interfaccia
@@ -36,7 +36,7 @@ La zona 6 indica la lista d'attesa dei file che saranno trasferiti, o in corso d
 
 La parte superiore dell'interfaccia (sotto il riquadro verde) riprende il nome dell'host (server al quale sei connesso), il nome utente FTP, la password e la porta che viene utilizzata.
 
-![](images/img_1818.jpg){.thumbnail}
+![FileZilla](images/1818.png){.thumbnail}
 
 ## Barra principale
 La barra principale contiene le icone utili al funzionamento di base del programma. Non utilizziamo tutti i pulsanti per procedere al trasferimento dei file. Ecco una breve descrizione delle icone qui sotto.
@@ -70,7 +70,7 @@ Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](http
 
 Dopo aver inserito tutte le informazioni, clicca su Connessione rapida per accedere al server.
 
-![](images/img_1819.jpg){.thumbnail}
+![FileZilla](images/1819.png){.thumbnail}
 
 
 ## Connessione SFTP
@@ -89,7 +89,7 @@ Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:
 Dopo aver cliccato sul pulsante Connessione rapida, si apre una finestra per certificare la connessione all'host al quale stai per connetterti. 
 Se sei connesso a un host OVH, seleziona "Affidati sempre a questo host, aggiungi questa chiave alla cache" per memorizzare la preferenza.
 
-![](images/img_1834.jpg){.thumbnail}
+![FileZilla](images/1834.png){.thumbnail}
 
 
 ## Problemi di connessione
@@ -101,10 +101,10 @@ Verifica le tue informazioni, puoi modificare la password FTP del tuo hosting di
 
 Trovi qui una guida sulla modifica della password FTP:[]({legacy}1374)
 
-![](images/img_1820.jpg){.thumbnail}
+![FileZilla](images/1820.png){.thumbnail}
 In questo caso l'errore è generato da un nome host non corretto.
 
-![](images/img_1824.jpg){.thumbnail}
+![FileZilla](images/1824.png){.thumbnail}
 
 
 ## Trasferimento di file
@@ -116,7 +116,7 @@ Per trasferire i tuoi file in FTP, selezionali e trascinali dalla finestra di si
 
 Dopo aver realizzato questa operazione, i tuoi file vengono automaticamente messi in lista d'attesa per essere salvati sul server.
 
-![](images/img_1821.jpg){.thumbnail}
+![FileZilla](images/1821.png){.thumbnail}
 
 
 ## Lista d'attesa
@@ -131,7 +131,7 @@ Monitorando la lista d'attesa, puoi trovare:
 
 
 
-![](images/img_1822.jpg){.thumbnail}
+![FileZilla](images/1822.png){.thumbnail}
 
 
 ## Menu contestuale Server
@@ -155,7 +155,7 @@ Genera un URL diretto al file: ti permette di creare un link diretto al file sel
 
 Permessi dei file: ti permette di modificare i diritti dei file (CHMOD)
 
-![](images/img_1830.jpg){.thumbnail}
+![FileZilla](images/1830.png){.thumbnail}
 
 
 ## Diritti su file e cartelle
@@ -169,7 +169,7 @@ Puoi selezionare "Applica alle sottocartelle".
 
 Questa azione modifica i diritti della cartella in questione e delle cartelle e dei file al suo interno.
 
-![](images/img_1831.jpg){.thumbnail}
+![FileZilla](images/1831.png){.thumbnail}
 
 
 ## Rimettere online il tuo sito
@@ -201,7 +201,7 @@ Per verificare che il sito sia di nuovo online, fai un test sul tuo site da un b
 
 Questo comando non funziona in SFTP.
 
-![](images/img_1829.jpg){.thumbnail}
+![FileZilla](images/1829.png){.thumbnail}
 Per sicurezza, ricontrolla entro 3 ore. I nostri bot impiegano 3 ore per verificare le modifiche. In base a quando vengono apportate, il ripristino del tuo sito potrà avvenire più o meno velocemente.
 
 Se dopo 3 ore il tuo sito è offline, contatta il supporto.
@@ -212,7 +212,7 @@ Per i file di tipo binario, come un file di tipo CGI, può essere interessante s
 
 Modifica selezionando "Trasferimento" nel menu principale e poi "Tipo di trasferimento".
 
-![](images/img_1832.jpg){.thumbnail}
+![FileZilla](images/1832.png){.thumbnail}
 
 
 ## Confronta cartelle
@@ -233,7 +233,7 @@ Colori:
 
 
 
-![](images/img_1823.jpg){.thumbnail}
+![FileZilla](images/1823.png){.thumbnail}
 
 
 ## Preferenze
@@ -245,14 +245,14 @@ Alcuni server potrebbero ritenere questa azione un abuso e aggiungere il tuo IP 
 
 Per modificare queste impostazioni, accedi alla sezione "Modifica", "Impostazioni" e "Connessione".
 
-![](images/img_1825.jpg){.thumbnail}
+![FileZilla](images/1825.png){.thumbnail}
 
 ## Trasferimenti
 Puoi modificare le preferenze sulle azioni predefinite da eseguire quando modifichi un file esistente.
 
 Per modificare queste impostazioni, accedi alla sezione "Modifica", "Impostazioni" e "Trasferimenti".
 
-![](images/img_1826.jpg){.thumbnail}
+![FileZilla](images/1826.png){.thumbnail}
 
 
 ## Server di connessione
@@ -265,5 +265,5 @@ Per scoprirlo:
 
 
 
-![](images/img_2399.jpg){.thumbnail}
+![FileZilla](images/2399.png){.thumbnail}
 

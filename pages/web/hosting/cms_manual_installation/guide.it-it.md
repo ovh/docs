@@ -54,7 +54,7 @@ Se hai bisogno di aiuto, consulta i forum dedicati a [WordPress](https://wordpre
 
 - Guida all’installazione di WordPress [CMS: installa manualmente WordPress](../cms_installa_manualmente_wordpress)
 
-![cms](images/img_3379.jpg){.thumbnail}
+![cms](images/3379.png){.thumbnail}
 
 ### Joomla!
 Joomla! è un software pluripremiato e facile da usare che consente di creare siti web e applicazioni ad alte prestazioni.
@@ -69,7 +69,7 @@ Se hai bisogno di aiuto, consulta i forum dedicati a[ Joomla!](http://forum.joom
 
 - Guida all’installazione di Joomla!: [CMS: installa manualmente Joomla!](../cms_installa_manualmente_joomla)
 
-![cms](images/img_3380.jpg){.thumbnail}
+![cms](images/3380.png){.thumbnail}
 
 ### PrestaShop
 La soluzione e-commerce PrestaShop utilizza le novità “Web 2.0” come AJAX o l’ergonomia di nuova generazione. Oltre alle comuni funzionalità di shopping online, il software può essere personalizzato con moduli, temi e modelli. 
@@ -87,7 +87,7 @@ Se hai bisogno di aiuto, consulta i forum dedicati a
 
 - Guida all’installazione di PrestaShop: [CMS: installa manualmente PrestaShop](../cms_installa_manualmente_prestashop/)
 
-![cms](images/img_3381.jpg){.thumbnail}
+![cms](images/3381.png){.thumbnail}
 
 
 ### Drupal
@@ -104,7 +104,7 @@ Se hai bisogno di aiuto, consulta i forum dedicati a [Drupal](https://www.drupal
 
 
 
-![cms](images/img_3382.jpg){.thumbnail}
+![cms](images/3382.png){.thumbnail}
 
 
 

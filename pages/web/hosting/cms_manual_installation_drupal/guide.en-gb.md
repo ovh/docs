@@ -29,7 +29,7 @@ There is a guide showing you [how to get your SQL credentials](../creating-datab
 
 
 
-![](images/img_3234.jpg){.thumbnail}
+![drupal](images/3234.png){.thumbnail}
 There should be a link that lets you download the latest stable version of the CMS
 Our example uses 7.41.
 The file that you download will usually be compressed (zipped) so you have to be able to extract the files to your computer. There is lots of help available online.
@@ -53,7 +53,7 @@ Check them out if you are stuck at this stage.
 
 The target folder will be called "Drupal-xxx" (xxx often being replaced by the number of the version).
 
-![](images/img_3233.jpg){.thumbnail}
+![drupal](images/3233.png){.thumbnail}
 Log on to the web hosting package via FTP
 
 To upload the Drupal files to your hosting package, you first have to log on. 
@@ -81,7 +81,7 @@ To select them all just click CTRL+A.
 
 Then drag and drop the files in to the "Remote site" section in the "www" folder.
 
-![](images/img_3199.jpg){.thumbnail}
+![drupal](images/3199.png){.thumbnail}
 It is very likely that the "www" folder is not empty. You do not have to remove the files that are in it. We will go back to this point later on in the guide.
 
 ## Step 3
@@ -93,7 +93,7 @@ Once the transfer is complete, make sure that all of the files and folders have 
 
 This is the end of the section devoted to transfering files via FTP.
 
-![](images/img_3200.jpg){.thumbnail}
+![drupal](images/3200.png){.thumbnail}
 
 
 ## Step 1 - Installing Drupal
@@ -103,13 +103,13 @@ You will reach this page
 
 Tick "Standard Install with commonly used features pre-configured." then click "Save and continue".
 
-![](images/img_3219.jpg){.thumbnail}
+![drupal](images/3219.png){.thumbnail}
 
 
 ## Step 2 - Language choice
 Select your chosen language and then click "Save and continue".
 
-![](images/img_3218.jpg){.thumbnail}
+![drupal](images/3218.png){.thumbnail}
 
 
 ## Step 3 - Log on to the database
@@ -131,7 +131,7 @@ Tick "MySQL, MariaDB or equivalent".
 
 
 
-![](images/img_3202.jpg){.thumbnail}
+![drupal](images/3202.png){.thumbnail}
 
 - Database survey: enter your database's server name, as stated in the setup email or in your customer account. It usually ends in ".mysql.db".
 
@@ -140,7 +140,7 @@ Tick "MySQL, MariaDB or equivalent".
 Table prefix: useful for installing Drupal lots of times on the same database. In this case, you have to enter a different prefix for each installation. If in doubt, leave empty
 
 
-![](images/img_3203.jpg){.thumbnail}
+![drupal](images/3203.png){.thumbnail}
 Important: the database IDs are not automatically sent when installing the hosting package. To receive them, you have to enable the database in your customer account.
 Click "Save and continue" to confirm the database login details.
 
@@ -154,7 +154,7 @@ If not you need to enter it again correctly.
 
 
 
-![](images/img_3190.jpg){.thumbnail}
+![drupal](images/3190.png){.thumbnail}
 
 
 ## Step 5 - Configuring Drupal administration
@@ -174,7 +174,7 @@ Here are the administration settings for your Drupal CMS.
 
 Go to the bottom of the page
 
-![](images/img_3206.jpg){.thumbnail}
+![drupal](images/3206.png){.thumbnail}
 
 - By default: Choose the country/language of the website. 
 - Default time zone: Choose the website time zone. 
@@ -188,17 +188,17 @@ We recommend that you enable these options before increasing the stability and s
 
 
 
-![](images/img_3207.jpg){.thumbnail}
+![drupal](images/3207.png){.thumbnail}
 
 
 ## Step 6 - Completion
 Your Drupal CMS is now installed. 
 Click on "Visit your new website".
 
-![](images/img_3208.jpg){.thumbnail}
+![drupal](images/3208.png){.thumbnail}
 You now simply have to use Drupal and build your website.
 
-![](images/img_3209.jpg){.thumbnail}
+![drupal](images/3209.png){.thumbnail}
 
 
 ## Drupal support
@@ -227,7 +227,7 @@ It may be useful to simply just rename the file so that you can re-enable it at 
 
 Something else to note: Your website's files must be placed in the "www" folder in order for them to display your website.
 
-![](images/img_3217.jpg){.thumbnail}
+![drupal](images/3217.png){.thumbnail}
 Typical error: PHP version
 
 This is an error to do with your server's PHP version. 

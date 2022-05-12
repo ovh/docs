@@ -24,7 +24,7 @@ Per recuperare gli identificativi FTP, consulta la guida []({legacy}1374)
 Per recuperare le tue credenziali SQL, consulta la guida []({legacy}1374)
 
 
-![](images/img_3141.jpg){.thumbnail}
+![joomla](images/3141.png){.thumbnail}
 
 
 ## Parte 2: recupero dei file sorgente
@@ -36,7 +36,7 @@ In genere, il link disponibile ti permette di scaricare l'ultima versione stabil
 
 Il file scaricato generalmente è compresso (.zip). Per aprirlo e installarlo è necessario decomprimerlo.
 
-![](images/img_3142.jpg){.thumbnail}
+![joomla](images/3142.png){.thumbnail}
 
 
 ## Parte 3: configurazione dei file sull'FTP
@@ -50,14 +50,14 @@ Se hai bisogno di aiuto, segui i numerosi tutorial online e scarica uno dei tant
 
 La cartella di destinazione si chiamerà Joomla! (xxx spesso è sostituito dal numero della versione).
 
-![](images/img_3143.jpg){.thumbnail}
+![joomla](images/3143.png){.thumbnail}
 
 ## - Accedi al tuo hosting Web via FTP
 Accedi al tuo hosting e salva i file di Joomla!.
 
 Se hai bisogno di aiuto per accedere in FTP alla tua soluzione di hosting condiviso, consulta la guida []({legacy}1374)
 
-![](images/img_3144.jpg){.thumbnail}
+![joomla](images/3144.png){.thumbnail}
 
 ## - Trasferisci i tuoi file via FTP
 Per salvare i tuoi file sull'FTP, segui questi step.
@@ -73,7 +73,7 @@ Se questa cartella non esiste, puoi crearla.
 
 Per poter effettuare l'installazione dal tuo dominio, i tuoi file devono necessariamente essere salvati nella cartella "www".
 
-![](images/img_3145.jpg){.thumbnail}
+![joomla](images/3145.png){.thumbnail}
 
 ## Step 2
 Apri le cartelle:
@@ -86,14 +86,14 @@ Trascina i tuoi file nella cartella "www" della sezione Sito remoto.
 
 È molto probabile che la cartella "www" non sia vuota. Non è obbligatorio eliminare i file presenti al suo interno.
 
-![](images/img_3146.jpg){.thumbnail}
+![joomla](images/3146.png){.thumbnail}
 
 ## Step 3
 Attendi qualche minuto fino al completo trasferimento dei file sul server FTP remoto.
 
 Al termine dell'operazione, assicurati che tutti i file e le cartelle siano stati spostati correttamente.
 
-![](images/img_3147.jpg){.thumbnail}
+![joomla](images/3147.png){.thumbnail}
 
 
 ## Parte 4: collega Joomla! al tuo database
@@ -124,7 +124,7 @@ Conferma Password amministratore: conferma la password inserita precedentemente.
 
 Clicca su Avanti per continuare.
 
-![](images/img_3148.jpg){.thumbnail}
+![joomla](images/3148.png){.thumbnail}
 
 ## Step 2
 Inserisci le informazioni del tuo database:
@@ -145,7 +145,7 @@ Processa database vecchio: se le tabelle già esistenti nel database hanno lo st
 
 Clicca su Avanti per confermare le informazioni inserite.
 
-![](images/img_3149.jpg){.thumbnail}
+![joomla](images/3149.png){.thumbnail}
 
 
 ## Finalizzazione
@@ -172,31 +172,31 @@ Indica se vuoi ricevere via email le impostazioni della configurazione, come la 
 
 Clicca su Installa per continuare.
 
-![](images/img_3150.jpg){.thumbnail}
+![joomla](images/3150.png){.thumbnail}
 
 ## Step 2
 Attendi qualche minuto fino al completamento dell’installazione.
 
-![](images/img_3151.jpg){.thumbnail}
+![joomla](images/3151.png){.thumbnail}
 
 ## Step 3
 Per motivi di sicurezza, Joomla! ti invita a eliminare la cartella installation.
 
 Per eseguire questa operazione, clicca semplicemente sul tasto Elimina la cartella installation.
 
-![](images/img_3152.jpg){.thumbnail}
+![joomla](images/3152.png){.thumbnail}
 
 ## Step 4
 Compare un messaggio di conferma della cancellazione della cartella.
 
 A questo punto, inserisci le tue credenziali per accedere al pannello amministrativo e alla homepage di Joomla!.
 
-![](images/img_3153.jpg){.thumbnail}
+![joomla](images/3153.png){.thumbnail}
 
 ## Pannello di amministrazione di Joomla!
 Una volta effettuato l'accesso, visualizzi il pannello di amministrazione di Joomla!.
 
-![](images/img_3154.jpg){.thumbnail}
+![joomla](images/3154.png){.thumbnail}
 
 
 ## Informazioni utili
@@ -215,7 +215,7 @@ Se rinomini semplicemente il file, puoi riattivarlo in qualsiasi momento per uti
 
 Altre informazioni utili: per essere presi in carico, i file del tuo sito devono trovarsi nella cartella "www".
 
-![](images/img_3155.jpg){.thumbnail}
+![joomla](images/3155.png){.thumbnail}
 
 ## - Errore con la versione di PHP
 È un errore che riguarda la versione PHP del tuo server.
@@ -224,7 +224,7 @@ La causa è semplice: l'ultima versione di PHP non è stata attivata.
 
 Per modificare la versione PHP del tuo hosting coindiviso, consulta la guida [Configura PHP sul tuo Hosting Web OVH]({legacy}1207)
 
-![](images/img_3156.jpg){.thumbnail}
+![joomla](images/3156.png){.thumbnail}
 
 ## Errore Magic Quotes
 Se si verifica questo errore, significa che la variabile Magic Quotes non è definita in modo corretto e impedisce l'installazione di Joomla!.
@@ -237,5 +237,5 @@ Per modificare la versione PHP del tuo hosting coindiviso 2014, consulta la guid
 
 Per modificare la versione PHP su una vecchia offerta, consulta la guida []]({legacy}1175).
 
-![](images/img_3157.jpg){.thumbnail}
+![joomla](images/3157.png){.thumbnail}
 
