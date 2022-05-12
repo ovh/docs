@@ -1,4 +1,3 @@
-
 ---
 title: Best Practices für die Verwaltung Ihrer Dienstleistungen und Ihres OVHcloud Accounts
 slug: billing-best-practices
