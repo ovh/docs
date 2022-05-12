@@ -19,7 +19,7 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnunge
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem  [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -122,7 +122,7 @@ Es wird dann ein [Bestellschein](https://docs.ovh.com/de/billing/bestellungen-ve
 
 > [!primary]
 >
-> Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
+> Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
 >
 
 Wenn Sie eine Rechnung erhalten haben, die Sie nicht für rechtmäßig halten, und Sie eine Erstattung beantragen oder Ihre Rechnung geltend machen möchten, klicken Sie oben rechts auf Ihrem Bildschirm auf Ihren Namen und dann auf `Ein Ticket erstellen`{.action}.
@@ -133,7 +133,7 @@ Die Zahlungshistorie finden Sie in `Meine Rechnungen`{.action} und dann `Zahlung
 
 ![Zahlungsverfolgung](images/payment_tracking.png){.thumbnail}
 
-In diesem Bereich können Sie Ihre Zahlungsbelege auch im *.csv* Format exportieren, indem Sie den Button `Export als CSV-datei`{.action} (1) klicken. Über den Button `Filtern`{.action} (2) stehen Ihnen auch mehrere Filter zur Verfügung.
+In diesem Bereich können Sie Ihre Zahlungsbelege auch im *.csv* Format exportieren, indem Sie den Button `Export als CSV-Datei`{.action} (1) klicken. Über den Button `Filtern`{.action} (2) stehen Ihnen auch mehrere Filter zur Verfügung.
 
 > [!primary]
 >
