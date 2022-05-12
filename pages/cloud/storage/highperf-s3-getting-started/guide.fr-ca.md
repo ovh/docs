@@ -42,11 +42,11 @@ Sélectionnez `Object Storage`{.action} dans le menu à gauche puis cliquez sur 
 
 S'il s'agit de votre premier bucket, vous devriez voir cet affichage :
 
-![S3 Object Storage Dashboard](images/highperf-s3-getting-started-20220502112947746.png)
+![S3 Object Storage Dashboard](images/create-container-20211005102334181.png)
 
 S'il ne s'agit pas de votre premier bucket :
 
-![S3 Object Storage Dashboard](images/highperf-s3-getting-started-20220502113324116.png)
+![S3 Object Storage Dashboard](images/create-container-20211005115040834.png)
 
 Sélectionnez la solution High Performance et cliquez sur `Suivant`{.action} :
 

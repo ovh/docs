@@ -105,7 +105,7 @@ Terminal 1:
 ```sql
 pgpool=> SELECT 1;
 ?column?
-──────────
+-------
         1
 (1 row)
 ```
@@ -114,8 +114,7 @@ Terminal 2:
 
 ```sql
 pgpool=> SELECT 1;
-?column?
-──────────
+-------
         1
 (1 row)
 ```
