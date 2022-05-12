@@ -22,7 +22,7 @@ OVHcloud provides a space for you to view, manage and pay your various bills.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) as the [Billing contact](https://docs.ovh.com/gb/en/customer/managing-contacts/) of your service.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) as the [Billing contact](https://docs.ovh.com/gb/en/customer/managing-contacts/) of your service
 
 
 ## Instructions
