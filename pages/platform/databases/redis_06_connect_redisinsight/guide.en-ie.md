@@ -55,7 +55,7 @@ Once connected to the RedisInsight interface, click on the `I already have a dat
 
 ![Redis first screen](images/redis_06_connect_redisinsight-20220207114821477.png){.thumbnail}
 
-Then on Connect to a Redis database`{.action}` :
+Then on Connect to a Redis database`{.action} :
 
 ![Configure your Redis database](images/redis_06_connect_redisinsight-2022020711515517.png){.thumbnail}
 
