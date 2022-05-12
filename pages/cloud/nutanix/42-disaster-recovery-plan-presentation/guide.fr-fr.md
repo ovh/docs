@@ -20,7 +20,7 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 ## Prérequis
 
-- Disposer de plusieurs clusters Nutanix avec ces deux options
+- Disposer de plusieurs clusters Nutanix avec ces deux options :
     + Plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud
     + Un cluster sur site et un cluster chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
