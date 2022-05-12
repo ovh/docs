@@ -5,7 +5,7 @@ excerpt: Découvrez comment gérer vos factures et les paiements liés à celles
 section: Facturation
 ---
 
-**Dernière mise à jour le 03/05/2022**
+**Dernière mise à jour le 12/05/2022**
 
 ## Objectif
 
@@ -18,7 +18,8 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 > En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas selon votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) (Cliquez en haut à droite de votre écran sur votre nom puis, dans le menu contextuel, sur `Gestion des services`{.action} puis sur l'onglet `Contrats`{.action}).
 >
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696213687?h=78a6ea1e6e&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/696213687">Introduction &agrave; l&rsquo;espace client &ndash; Mes factures</a> from <a href="https://vimeo.com/ovhcloud">OVHcloud</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ## Prérequis
 
@@ -46,11 +47,6 @@ La facture de votre service OVHcloud vous est envoyée suite au règlement d'une
 |5|Quantité : le nombre d'unités du service facturé|
 |6|Prix unitaire (Hors Taxe) d'un produit|
 |7|Montant total (Toutes Taxes Comprises) de la facture|
-
-> [!primary]
->
-> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
->
 
 ### Découvrir l'espace facturation
 
