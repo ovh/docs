@@ -14,17 +14,10 @@ section: Technical resources
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.  
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 
-Currently the service is available in several regions:
+Currently the service is available in all OVHcloud public cloud geographies.
+Note that project with older regions (such as SBG1 or GRA1 for example) will be invited to transparently activate latest regions in this zone to benefit from Managed Kubernetes Service.
 
-- GRA (Western Europe)
-- SBG (Central Europe)
-- DE1 (Central Europe)
-- WAW (Eastern Europe)
-- BHS (North America)
-- SGP (South-East Asia)
-- SYD (Oceania)
-
-OVHcloud US customers can also deploy the service in both our East and West American datacenters. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
+OVHcloud US customers can also deploy the service in both our East and West American datacenters. 
 
 ### Available worker nodes flavors
 
@@ -56,6 +49,6 @@ When adding a persistent volume though Kubernetes API (or `kubectl`), it will ac
 * `csi-cinder-high-speed` compliant with Managed Kubernetes Service after `1.18.*` release
 * `csi-cinder-classic` compliant with Managed Kubernetes Service after `1.18.*` release
 
-All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, `cinder-high-speed` and `csi-cinder-high-speed` uses SSD, while `cinder-classic` and `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device,  and `csi-cinder-high-speed` uses SSD, while and `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
 
 We will support future classes as soon they are made available in OVH Public Cloud.
