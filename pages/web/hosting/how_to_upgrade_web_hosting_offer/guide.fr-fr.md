@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 2
 ---
 
-**Dernière mise à jour le 11/05/2022**
+**Dernière mise à jour le 13/05/2022**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 Lorsque vous modifiez votre formule d'hébergement en cours d'abonnement, un *pro rata temporis* s'applique sur la durée restante sur votre ancienne offre.
 
-**Exemple :**
+**Exemple :**<br>
 Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement en cours n'est pas terminé.<br>
 Par conséquent, la durée restante sera automatiquement ajoutée au pro rata temporis à votre nouvel abonnement **Pro**.<br>
 Celui-ci durera du coup un peu plus d'un an, jusqu'à son prochain renouvellement.
@@ -36,7 +36,7 @@ Celui-ci durera du coup un peu plus d'un an, jusqu'à son prochain renouvellemen
 >
 > La modification de votre abonnement pour une offre délivrant moins de ressources n'est possible que s'il s'agit de l'offre **immédiatement inférieure**. 
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
-> Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** sur l'offre *Pro*.
+> Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 >
 > Les éléments suivants concernent les offres payantes. Pour faire évoluer votre [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), suivez ces [instructions](#start10m)
 >
@@ -60,7 +60,7 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 > [!primary]
 >
-> La procédure suivante ne s'applique *que si vous avez activé l'offre de messagerie associée au Start 10M*.
+> La procédure suivante ne s'applique **que si vous avez activé l'offre de messagerie associée au Start 10M**.
 >
 > Dans le cas contraire, suivez les instructions du [paragraphe précédent](#modify).
 >
@@ -92,7 +92,7 @@ Avant de passer de l'offre [Perso](https://www.ovhcloud.com/fr/web-hosting/perso
 
 Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre comporte assez de [bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/). Vérifiez aussi qu'elles sont de tailles suffisantes.
 
-Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Celle-ci ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre (pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/)).
+Dans le cas contraire, supprimez les bases de données inutilisées et réduisez, si nécessaire, la quantité de données qu'elles contiennent. Cette quantité ne devra pas dépasser la taille maximale des bases de données de la nouvelle offre (pour toute demande d'assistance sur les manipulations à effectuer, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/)).
 
 Suite à la suppression de données sur vos bases, pensez à recalculer le quota utilisé depuis l'onglet `Bases de données`{.action} dans la partie `Hébergements`{.action} de votre espace client. Cliquez sur le bouton `...`{.action} à droite de la base concernée puis sur `Recalculer le quota`{.action}.
 
@@ -107,10 +107,10 @@ Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{
 
 Cette action vous permettra de commander un serveur CloudDB indépendant de votre offre *Performance*. Les données de votre serveur seront conservées.
 
-Si vous ne souhaitez pas conserver votre serveur CloudDB, vous pourrez également le supprimer avant de passer sur l'offre *Pro* : 
+Si vous ne souhaitez pas conserver votre serveur CloudDB, vous pouvez aussi le supprimer avant de passer sur l'offre *Pro* : 
 
-- Sauvegarder vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);
-- Supprimer votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}, sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);
+2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### Espace FTP
 
