@@ -62,7 +62,7 @@ Kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie kliknij `E-mail
 
 > [!primary]
 >
-> Aby uniknąć przerw w świadczeniu usług oraz zapewnić prawidłowe funkcjonowanie automatycznego odnowienia, [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Aby uniknąć przerw w świadczeniu usług oraz zapewnić prawidłowe funkcjonowanie automatycznego odnowienia, [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
 > Upewnij się regularnie, czy Twój sposób płatności jest **prawidłowy**.
 >
@@ -89,7 +89,7 @@ Jeśli chcesz przestać korzystać z którejkolwiek z Twoich usług, możesz je 
 
 Najpierw kliknij Twoją nazwę w prawym górnym rogu ekranu, a następnie `Zarządzanie usługami`{.action}. Po prawej stronie ekranu kliknij przycisk `...`{.action} odnoszący się do usługi, na którą chcesz działać, po czym kliknij jeden z poniższych przycisków:
 
-- `Skonfiguruj odnowienie`{.action}: na następnym ekranie będziesz mógł przenieść `Sposób odnowienia` usługi do `Recznie`. Następnie kliknij `Dalej`{.action} i `Zatwierdź` `{.action}. Przed wygaśnięciem usługi otrzymasz kilka powiadomień e-mailem. Jeśli nie odnowiesz usługi, zostanie ona **definitywnie** usunięta.
+- `Skonfiguruj odnowienie`{.action}: na następnym ekranie będziesz mógł przenieść `Sposób odnowienia` usługi do `Recznie`. Następnie kliknij `Dalej`{.action} i `Zatwierdź`{.action}. Przed wygaśnięciem usługi otrzymasz kilka powiadomień e-mailem. Jeśli nie odnowiesz usługi, zostanie ona **definitywnie** usunięta.
 - `Zrezygnuj`{.action}: w kolejnym oknie podaj powody rezygnacji, a następnie kliknij `Zatwierdź`{.action}. W dniu wygaśnięcia Twojej usługi zostanie ona **definitywnie** usunięta.
 - `Usuń natychmiast`{.action}: na następnym ekranie kliknij `Zatwierdź`{.action}. Otrzymasz e-mail z potwierdzeniem. Po zatwierdzeniu Twojej usługi zostanie **natychmiast i na stałe** usunięta.
 
