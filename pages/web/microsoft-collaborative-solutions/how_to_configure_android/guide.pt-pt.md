@@ -13,7 +13,7 @@ No nosso exemplo a conta exchange é do tipo Hosted e está configurada num Sams
 
 Durante a adição da conta, verifique que a sua ligação 3G ou Wi-Fi está ativa.
 
-![](images/img_1149.jpg){.thumbnail}
+![](images/1149.png){.thumbnail}
 
 
 ## Parte 2 : Configuração da conta de email
@@ -21,13 +21,13 @@ Introduza o seu endereço de email Exchange completo e a palavra-passe definida 
 
 Clique de seguida em "Configuração manual" para continuar.
 
-![](images/img_1150.jpg){.thumbnail}
+![](images/1150.png){.thumbnail}
 
 
 ## parte 3 : tipo de email
 Selecione de seguida "Microsoft Exchange ActiveSync" para prosseguir com a configuração da conta Exchange.
 
-![](images/img_1151.jpg){.thumbnail}
+![](images/1151.png){.thumbnail}
 
 
 ## Parte 4 : Parâmetros do servidor Exchange
@@ -47,13 +47,13 @@ No caso de uma conta do tipo Hosted, trata-se do servidor ex.mail.ovh.net ; Para
 
 Clique em "Seguinte" para continuar.
 
-![](images/img_1152.jpg){.thumbnail}
+![](images/1152.png){.thumbnail}
 
 
 ## Parte 5 : Ativação
 Uma mensagem de administração da política de confidencialidade aparecerá; é necessário validar a mesma através de um clique em "OK".
 
-![](images/img_1154.jpg){.thumbnail}
+![](images/1154.png){.thumbnail}
 
 
 ## Parte 6 : Administração de segurança
@@ -61,7 +61,7 @@ Uma segunda mensagem de administração irá pedir-lhe a validação de controlo
 
 Valide o pedido ao clicar em "OK".
 
-![](images/img_1155.jpg){.thumbnail}
+![](images/1155.png){.thumbnail}
 
 
 ## Parte 7 : Opções de conta
@@ -69,7 +69,7 @@ Nesta interface, poderá definir certas opções de configuração para o endere
 
 Uma vez efetuada a configuração, prossiga ao clicar em "Seguinte".
 
-![](images/img_1156.jpg){.thumbnail}
+![](images/1156.png){.thumbnail}
 
 
 ## Parte 8 : Administrador do periférico
@@ -77,7 +77,7 @@ Ser-lhe-ão indicadas nesta interface as permissões da aplicação "Email" de A
 
 Clique em "Ativar" para continuar.
 
-![](images/img_1157.jpg){.thumbnail}
+![](images/1157.png){.thumbnail}
 
 
 ## Parte 9 : Finalização
@@ -85,7 +85,7 @@ Já poderá dar um nome à sua conta de email.
 
 Para concluir a instalação da sua conta Exchange, clique em "OK".
 
-![](images/img_1158.jpg){.thumbnail}
+![](images/1158.png){.thumbnail}
 
 
 ## Interface Email
@@ -93,11 +93,11 @@ Eis a interface que poderá utilizar.
 
 Um clique no ícone no canto superior direito permite acesso às configurações da conta Exchange.
 
-![](images/img_1159.jpg){.thumbnail}
+![](images/1159.png){.thumbnail}
 
 
 ## Interface de configuração de email
 Eis a interface de configuração que será possível utilizar.
 
-![](images/img_1160.jpg){.thumbnail}
+![](images/1160.png){.thumbnail}
 
