@@ -336,7 +336,8 @@ You can always go to the Trilio website and generate a new [license](https://www
 Please run below command to see what license is available for your cluster (it is managed via the License CRD):
 
 ```shell
-kubectl apply -f "https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/manifests/tvk_install_license.yaml" -n tvk
+curl -LO https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kubernetes-k8s/backup-and-restore-cluster-namespace-and-applications-with-trilio/manifests/tvk_install_license.yaml
+kubectl apply -f tvk_install_license.yaml -n tvk
 ```
 
 Run the below command to verify if the license is create for OVHcloud users successfully:
