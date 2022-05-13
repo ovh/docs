@@ -38,7 +38,7 @@ Sie haben unmittelbaren Zugriff auf folgende Funktionen:
 
 
 
-![](images/img_4377.jpg){.thumbnail}
+![Dedicated Exchange](images/4377.png){.thumbnail}
 
 
 ## Schritt 2: Hinzufügen der Domain
@@ -57,7 +57,7 @@ Für die Konfiguration einer externen (nicht bei OVH registrierten) Domain werde
 
 Klicken Sie anschließend auf "Weiter", um mit der Konfiguration fortzufahren.
 
-![](images/img_4382.jpg){.thumbnail}
+![Dedicated Exchange](images/4382.png){.thumbnail}
 
 
 ## Schritt 3: Konfiguration der Domain
@@ -78,7 +78,7 @@ Setzen Sie ein Häkchen bei "MX-Einträge automatisch konfigurieren". Dies ist n
 
 
 
-![](images/img_4383.jpg){.thumbnail}
+![Dedicated Exchange](images/4383.png){.thumbnail}
 
 - Ohne OVH DNS:
 
@@ -129,7 +129,7 @@ Bitte beachten Sie: Wenn Sie ein E-Mail-Konto löschen, erscheint dieses nach ei
 
 
 
-![](images/img_4384.jpg){.thumbnail}
+![Dedicated Exchange](images/4384.png){.thumbnail}
 
 ## Änderung des Accounts:
 Über den Button "Konfiguration" gelangen Sie auf folgendes Interface:
@@ -149,7 +149,7 @@ Kleinbuchstaben (a bis z)
 Ziffern (0 bis 9)
 Nicht-alphabetische Zeichen (zum Beispiel: !, $, #, %)
 
-![](images/img_4385.jpg){.thumbnail}
+![Dedicated Exchange](images/4385.png){.thumbnail}
 
 
 ## Abschluss der Installation
