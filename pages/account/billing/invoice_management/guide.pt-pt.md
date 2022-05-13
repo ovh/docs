@@ -1,11 +1,15 @@
 ---
 title: Gerir as minhas faturas OVHcloud
-slug: gerir-faturas-ovh
+slug: gerir-faturas-ovhcloud
 excerpt: Saiba como gerir as suas faturas e pagamentos na OVHcloud
 section: Faturação
 ---
 
-**Última atualização: 03/05/2022**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 12/05/2022**
 
 ## Objetivo
 
@@ -22,18 +26,18 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 ## Requisitos
 
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) enquanto [contacto de faturação](https://docs.ovh.com/fr/customer/gestion-des-contacts/) do serviço.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) enquanto [contacto de faturação](https://docs.ovh.com/pt/customer/gestao_dos_contactos/) do serviço.
 
 ## Instruções
 
 > [!primary]
 >
-> Cada fatura é enviada por e-mail e acessível através de uma ligação ao cliente. Poderá aceder através da autenticação da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Todas as faturas ficarão igualmente disponíveis no separador `Painel`{.action} de controlo da sua Área de Cliente.
+> Cada fatura é enviada por e-mail e acessível através de uma ligação ao cliente. Poderá aceder através da autenticação da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Todas as faturas ficarão igualmente disponíveis no separador `Painel de controlo`{.action} da sua Área de Cliente.
 >
 
 ### Secções de uma fatura da OVHcloud
 
-A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encomenda ou uma renovação. Ela recapitula os montantes correspondentes à compra ou à renovação dos seus produtos, bem como os seus períodos de validade. A referência de uma fatura, para uma conta francesa, começa sempre pelas letras **FR**.
+A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encomenda ou uma renovação. Ela recapitula os montantes correspondentes à compra ou à renovação dos seus produtos, bem como os seus períodos de validade.
 
 ![Detalhes de uma fatura](images/invoice_ovh.png){.thumbnail}
 
@@ -56,7 +60,7 @@ A fatura do seu serviço OVHcloud é-lhe enviada após o pagamento de uma encome
 
 #### Consultar e gerir faturas
 
-Para consultar as suas faturas aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no seu nome no canto superior direito do ecrã e, no novo menu que aparecer, em `Faturas`{.action}.
+Para consultar as suas faturas aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no seu nome no canto superior direito do ecrã e, no novo menu que aparecer, em `Faturas`{.action}.
 
 ![Faturação](images/hubinvoices.png){.thumbnail}
 
@@ -66,32 +70,32 @@ Aparecerá uma página onde poderá consultar todas as suas faturas.
 
 > [!primary]
 >
-> Se uma fatura estiver pendente de liquidação (estado `pendente`), o montante devido será indicado a vermelho na coluna `Saldo`.
+> Se uma fatura estiver pendente de liquidação (estado `Nao pago`), o montante devido será indicado a vermelho na coluna `Saldo`.
 >
 
 Em cada linha da tabela, encontrará as seguintes informações:
 
-- A `Referência`{.action} da fatura (exemplo: FR12345678);
-- O `número do comando`{.action} correspondente;
-- A `data de emissão`{.action} da fatura;
-- O seu `montante s/IVA`{.action};
-- O seu `montante c/IVA`{.action};
-- O `saldo`{.action} a pagar;
-- O `Estatuto`{.action} da fatura (`Não paga` ou `paga`);
+- `Referência`{.action} da fatura;
+- `Número de encomenda`{.action} correspondente;
+- `Data de emissão`{.action} da fatura;
+- `Montante s/IVA`{.action};
+- `Montante c/IVA`{.action};
+- `Saldo`{.action} a pagar;
+- `Estatado`{.action} da fatura (`Não pago` ou `Pago`).
 
 Ao clicar num dos botões `...`{.action} à direita da tabela, poderá também:
 
-- `Ver versão HTML`{.action}\: a fatura aparecerá no seu browser num novo separador;
-- `Ver versão PDF`{.action}\: uma versão PDF descarregável da sua fatura será gerada automaticamente.
+- `Ver versão HTML`{.action}: a fatura aparecerá no seu browser num novo separador;
+- `Ver versão PDF`{.action}: uma versão PDF descarregável da sua fatura será gerada automaticamente.
 
 ![Ações nas faturas](images/actions_choices.png){.thumbnail}
 
 > [!primary]
 >
-> Se uma das suas faturas estiver pendente de pagamento, aparecerá um botão `Pagar o montante pendente imediatamente`{.action} ao clicar em `...`{.action}.
+> Se uma das suas faturas estiver pendente de pagamento, aparecerá um botão `Pagar a minha divida imediatamente`{.action} ao clicar em `...`{.action}.
 >
 
-##### **Filtros**
+##### **Filtrar**
 
 Tem à sua disposição vários filtros:
 
@@ -103,7 +107,7 @@ Para encontrar uma fatura precisa, poderá assim indicar a sua referência, o n�
 
 Através do menu `Ações massivas`{.action}, é-lhe possível exportar em formato *.csv* ou *.pdf* o resumo das suas faturas. Os ficheiros assim criados devem indicar o seu montante, referência e data de emissão.
 
-Se pretender exportar o conjunto das suas faturas, utilize os botões `Tudo exportar em CSV`{.action} ou `Exportar Tudo em PDF`{.action}.
+Se pretender exportar o conjunto das suas faturas, utilize os botões `Exportar tudo em CSV`{.action} ou `Exportar tudo em PDF`{.action}.
 
 ![export_all](images/export_all.png){.thumbnail}
 
@@ -117,29 +121,25 @@ Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
-Será criada uma [nota de encomenda de regularização](https://docs.ovh.com/fr/billing/gerer-ses-commandes-ovh/#le-bon-de-commande). Uma vez realizado o pagamento, a situação ficará regularizada.
-
-> [!primary]
->
-> Se pretender pagar uma fatura por conta de uma administração pública, siga as instruções deste [guia](https://docs.ovh.com/fr/billing/reglement-par-mandat-administratif/).
->
+Será criada uma [nota de encomenda de regularização](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
 
 #### Pedir a anulação de uma fatura
 
 > [!primary]
 >
-> Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](https://docs.ovh.com/fr/billing/how-to-cancel-your-services/).
+> Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](https://docs.ovh.com/pt/billing/how-to-cancel-your-services/).
 >
 
-Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu >Clique no canto superior direito do seu ecrã no seu nome, e depois em `Criar um ticket` {.action}.
+Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](https://docs.ovh.com/pt/billing/gerir-as-encomendas-ovh/#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
+<br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
 
 ### Seguir os seus pagamentos
 
-Encontre o histórico dos pagamentos efetuados nas `minhas faturas`{.action} e, a seguir, `Seguimento dos pagamentos`{.action}. Assim, poderá fazer a ligação entre cada fatura e o pagamento associado.
+Encontre o histórico dos pagamentos efetuados nas `As minhas faturas`{.action} e, a seguir, `Pagamentos`{.action}. Assim, poderá fazer a ligação entre cada fatura e o pagamento associado.
 
 ![Pagamentos](images/payment_tracking.png){.thumbnail}
 
-A partir deste espaço, pode também exportar os seus comprovativos de pagamento em formato *.csv*, através do botão `Exportar em CSV`{.action} (1). Além disso, pode utilizar o botão `Filtrar`{.action} (2) para obter vários filtros.
+A partir deste espaço, pode também exportar os seus comprovativos de pagamento em formato *.csv*, através do botão `Exportar em CSV`{.action}(1). Além disso, pode utilizar o botão `Filtrar`{.action}(2) para obter vários filtros.
 
 > [!primary]
 >
@@ -148,9 +148,8 @@ A partir deste espaço, pode também exportar os seus comprovativos de pagamento
 
 ## Saiba mais
 
-[Gerir a renovação dos serviços](https://docs.ovh.com/fr/billing/renouvellement-automatique-ovh/)
+[Gerir a renovação dos serviços](https://docs.ovh.com/pt/billing/guia_de_utilizacao_da_renovacao_automatica_da_ovh/)
 
-[Gerir os meus métodos de pagamento](https://docs.ovh.com/fr/billing/manage-payment-methods/)
+[Gerir os meus métodos de pagamento](https://docs.ovh.com/pt/billing/gerir-metodos-de-pagamento/)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
-
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

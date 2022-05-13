@@ -5,7 +5,7 @@ excerpt: Find out how to manage your bills and the payments associated with them
 section: Billing
 ---
 
-**Last updated 3rd May 2022**
+**Last updated 12th May 2022**
 
 ## Objective
 
