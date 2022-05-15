@@ -25,9 +25,9 @@ This guide contains the essential elements for managing your account and the bil
 
 #### Account security
 
-[Create a strong password](https://docs.ovh.com/gb/en/customer/manage-password/#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
+[Create a strong password](https://docs.ovh.com/asia/en/customer/manage-password/#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
 
-[Enable two factor authentification](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/) to prevent any fraudulent access.
+[Enable two factor authentification](https://docs.ovh.com/asia/en/customer/secure-account-with-2FA/) to prevent any fraudulent access.
 
 For the security measures to be efficient, make sure your email addresses (main and backup) and your mobile number are **up-to-date and accessible**.
 
@@ -40,7 +40,7 @@ In the `My profile`{.action} section on the right of your screen (click on your 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-For more information, read the guide [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/gb/en/customer/all-about-your-username/#how-to-manage-your-personal-details_1).
+For more information, read the guide [Securing my OVHcloud account and managing my personal information](https://docs.ovh.com/asia/en/customer/all-about-your-username/#how-to-manage-your-personal-details_1).
 
 Ensure your email address is always **up to date, accessible and secured**. Email messages from our services will be sent to this address, including the ones meant to reset your Control Panel's password.
 
@@ -58,15 +58,15 @@ Click on your name at the top right of your screen, then on `Service emails`{.ac
 
 > [!primary]
 >
-> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](https://docs.ovh.com/gb/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+> In order to prevent any service interruption and for the good functioning of the autorenewal, [register a payment method](https://docs.ovh.com/asia/en/billing/manage-payment-methods/) in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 >
 > Check regularly that your payment method is **valid**.
 >
 
 For more information, please follow the instructions of these guides:
 
-- [Managing renewal for OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/)
-- [Managing payment methods](https://docs.ovh.com/gb/en/billing/manage-payment-methods/)
+- [Managing renewal for OVHcloud services](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/)
+- [Managing payment methods](https://docs.ovh.com/asia/en/billing/how-to-use-automatic-renewal-at-ovh/)
 
 If you decide not to activate the autorenewal on your services, you will receive notifications prompting you to make a **manual payment** to either renew your service in advance or pay your pending bill.
 
@@ -89,7 +89,7 @@ First click on your name at the top right of your screen, then on `Service manag
 - `Cancel`{.action}: On the following screen, specify the reasons for your cancellation request, then click on `Confirm`{.action}. On the expiration date of your service, it will be **permanently** deleted.
 - `Delete immediately`{.action}: On the following screen, click on `Confirm`{.action}. You will be sent a confirmation email. After your validation, your service will be **immediately and permanently** deleted.
 
-To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](https://docs.ovh.com/gb/en/billing/how-to-cancel-your-services/) guide.
+To get more information about the termination of your services, consult the [How to cancel your OVHcloud services](https://docs.ovh.com/asia/en/billing/how-to-cancel-your-services/) guide.
 
 ### Account closure
 
@@ -98,8 +98,8 @@ Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-yo
 
 ## Go further <a name="gofurther"></a>
 
-[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/gb/en/customer/scams-fraud-phishing/)
+[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/asia/en/customer/scams-fraud-phishing/)
 
-[Managing OVHcloud bills](https://docs.ovh.com/gb/en/billing/manage-ovh-bills/)
+[Managing OVHcloud bills](https://docs.ovh.com/asia/en/billing/manage-ovh-bills/)
 
 Join our community of users on <https://community.ovh.com/en/>.
