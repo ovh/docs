@@ -26,10 +26,15 @@ OVHcloud vous permet d’associer une adresse MAC virtuelle à une adresse IP, a
 >
 > Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
+
+> [!primary]
+> Si vous n'êtes pas familier avec l'utilisation de l'API OVHcloud, consultez notre guide « [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)».
+
 ## En pratique
 
 ### Assigner une adresse MAC
 
+#### Par le Manager
 Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}.
 
 ![IPFO](images/manageIPOVHcloud.png){.thumbnail}
@@ -55,6 +60,13 @@ Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, séle
 > N’oubliez pas d’assigner l’adresse MAC virtuelle créée lors de la configuration de votre machine virtuelle.
 > 
 
+#### Par l'API
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+
 ### Supprimer une adresse MAC
 
 > [!warning]
@@ -62,9 +74,18 @@ Lorsque la boîte de dialogue « Ajouter une MAC virtuelle » apparaît, séle
 > La suppression d'une adresse MAC est définitive, aucune récupération ultérieure ne sera possible.
 > 
 
+#### Par le Manager
 Pour supprimer une adresse MAC virtuelle associée à une IP fail-over, connectez-vous dans un premier temps à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis ouvrez la section `IP`{.action}. Sélectionnez le serveur concerné afin que l’IP fail-over (ou le bloc d’IP) qui y sont attachées apparaissent.
 
 Pour finir, cliquez sur le bouton `...`{.action} à droite puis cliquez sur `Supprimer la MAC virtuelle`{.action}.
+
+#### Par l'API
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {DELETE} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+>
 
 ## Aller plus loin
 
