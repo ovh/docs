@@ -52,7 +52,7 @@ Une autre partie doit être executée à partie de **Prism Element** comme :
 
 > [!warning]
 > Avant de faire une mise à jour il faut s'assurer que les versions de **Prim Element** soient supportées par OVHcloud et que la version de **Prism Central** à mettre à jour soit compatible avec **Prism Element**
-> Les versions supportées de **Prism Element** par OVHcloud sont les versions 5.20 LTS et 6.1 STS vous pouvez éffectuer les mises à jours de ces sous-versions mais il est préférable d'attendre un mois après la sortie d'une nouvelle sous-version.  
+> Les versions supportées de **Prism Element** par OVHcloud sont les versions 5.20 LTS et 6.1 STS vous pouvez effectuer les mises à jours de ces sous-versions mais il est préférable d'attendre un mois après la sortie d'une nouvelle sous-version.  
 > La compatibilité de la version de **Prism Central** avec **Prism Element**  peut être vérifiée sur ce site [Interopérabilité NUTANIX](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/interoperability) si vous disposez d'un compte client sur le site de Nutanix.
 >
 
@@ -80,7 +80,7 @@ Une fois que vous êtes certain de pouvoir lancer la mise à jour, ouvrez les pa
 
 ![Prism Central Settings](images/menu_prism_setting.png){.thumbnail}
 
-Si des upgrades sont disponibles, vous pouvez sélectionner ceux que vous devez appliquer, puis choisir de ne faire que la pré-vérification ou l'upgrade immédiatement :
+Si des mises à jours sont disponibles, vous pouvez sélectionner ceux que vous devez appliquer, puis choisir de ne faire que la pré-vérification ou la mise à jour immédiatement :
 
 ![Prism Available upgrade](images/required_upgrade.png){.thumbnail}
 
@@ -88,7 +88,7 @@ Le pré-contrôle sera exécuté dans tous les cas :
 
 ![Prevérifications upgrade](images/preupgrade_checks.png){.thumbnail}
 
-Si vous avez sélectionné le processus d'upgrade, le processus lui-même sera initialisé :
+Si vous avez sélectionné le processus de mise à jour, le processus lui-même sera initialisé :
 
 ![Démarrage de la mise à niveau](images/upgrade_started.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Après quelques minutes, vous pourrez vous reconnecter à l'interface Prism Cent
 
 #### Upgrade NCC
 
-Si un ou plusieurs upgrades NCC sont disponibles, vous pouvez télécharger ceux dont vous avez besoin puis lancer l'upgrade :
+Si un ou plusieurs mises à jours NCC sont disponibles, vous pouvez télécharger ceux dont vous avez besoin puis lancer l'upgrade :
 
 ![Sélectionnez la version NCC](images/ncc_available_upgrade.png){.thumbnail}
 
@@ -170,7 +170,7 @@ Laissez `All Checks` et cliquez sur `Run`{.action}.
 
 ![Upgrade Prism Element 10](images/02-update-prism-element10.png){.thumbnail}
 
-Surveillez le contrôle dans le menu `Tasks`{.action}. et attendez que la tâche `Health check` soit à terminée.
+Surveillez le contrôle dans le menu `Tasks`{.action}. et attendez que la tâche `Health check` soit terminée.
 
 ![Upgrade Prism Element 11](images/02-update-prism-element11.png){.thumbnail}
 
@@ -185,9 +185,6 @@ Cliquez sur  `Next`{.action}.
 Cliquez sur  `Apply N Updates`{.action}.
 
 ![Upgrade Prism Element 14](images/02-update-prism-element14.png){.thumbnail}
-
-
-
 
 
 ## Aller plus loin
