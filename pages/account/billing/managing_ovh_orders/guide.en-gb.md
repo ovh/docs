@@ -5,7 +5,7 @@ excerpt: Find out how to manage your OVHcloud orders
 section: Billing
 ---
 
-**Last updated 06th May 2022**
+**Last updated 6th May 2022**
 
 ## Objective
 
@@ -15,7 +15,7 @@ When you place an order, you can track and interact with it from your [OVHcloud 
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you need to, please refer to your OVHcloud contracts, which are available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): click on your name in the top right-hand corner, then `Manage services`{.action} in the context menu and on the `Contracts`{.action} tab.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you need to, please refer to your OVHcloud contracts, which are available in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): Click on your name in the top right-hand corner, then `Manage services`{.action} in the context menu and on the `Contracts`{.action} tab.
 >
 
 ## Requirements
@@ -33,7 +33,7 @@ The purchase order is created when you place your order. It lists the products o
 
 |Number|Description|
 |---|---|
-|1|Purchase order number, creation date and expiration date. If it has expired, you will have to reorder it.|
+|1|Purchase order number, creation date and expiration date. If it has expired, you will have to reorder.|
 |2|Your billing details. You must be logged in to view and pay your purchase order.|
 |3|Payment methods saved to your customer account. For more information, please refer to our guide [Managing payment methods](https://docs.ovh.com/gb/en/billing/manage-payment-methods/).|
 |4|Payment methods available. You will only be offered payment methods that are authorised in the account’s country of origin, or those linked to the account type you have registered.|
@@ -52,10 +52,10 @@ A summary of the various orders placed appears as below:
 
 On this page, you will see the following information:
 
-- the date the purchase order was created
-- the Order number
-- the Order status
-- the purchase order amount, including VAT
+- The date the purchase order was created
+- The order number
+- The order status
+- The purchase order amount, including VAT
 
 The various order statuses are listed below:
 
@@ -74,8 +74,8 @@ You can also view the purchase order in HTML format by clicking on `...`{.action
 
 After generating your purchase order, you can track your order from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB):
 
-* Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} in front of your order.
-* Select `Order tracking`{.action}. Order tracking can also be displayed by clicking the status of an order in the `Status` column.
+- Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} next to your order.
+- Select `Order tracking`{.action}. Order tracking can also be displayed by clicking the status of an order in the `Status` column.
 
 ![Order tracking](images/order05b.png){.thumbnail}
 
@@ -103,8 +103,8 @@ The terms and conditions for the right of withdrawal can be found in the remaind
 
 If the eligibility criteria for the right of withdrawal are met, it can be applied directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB):
 
-* Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} in front of your order.
-* Select `Cancel the order`{.action}.
+- Click on your `Dashboard`{.action}, then on `View my orders`{.action} and finally on `...`{.action} next to your order.
+- Select `Cancel the order`{.action}.
 
 ![Cancelling an order](images/cancelorder1.png){.thumbnail}
 
