@@ -199,7 +199,7 @@ enabled = false
 ```
 
 This means that an IP address from which a host tries to connect will be blocked for ten minutes after the fifth unsuccessful login attempt.<br>
-Furthermore, all settings specified by `[DEFAULT]` and in subsequent sections stay disabled unless the line `enabled = true` is added for a service (listed below `# JAILS`).
+However, all settings specified by `[DEFAULT]` and in subsequent sections stay disabled unless the line `enabled = true` is added for a service (listed below `# JAILS`).
 
 As an example of usage, having the following lines in the section `[sshd]` will activate restrictions only for the OpenSSH service:
 
