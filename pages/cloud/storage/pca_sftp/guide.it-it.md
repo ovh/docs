@@ -6,6 +6,7 @@ section: Public Cloud Archive
 order: 100
 ---
 
+**Ultimo aggiornamento: 13/05/2022**
 
 ## Introduzione
 Public Cloud Archive (PCA) è una soluzione di archiviazione gestibile tramite l'API di OpenStack. Se non hai familiarità nell'amministrazione dello spazio di storage da riga di comando, abbiamo sviluppato un gateway che ti permette di accedere a PCA tramite un client SFTP.
@@ -76,4 +77,9 @@ In questa sezione disattiveremo due opzioni di WinSCP:
 
 
 ## Recupero dei dati
-Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](../../).
+Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](https://docs.ovh.com/it/storage/pca/unlock/).
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
