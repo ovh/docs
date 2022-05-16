@@ -89,7 +89,7 @@ Das folgende Fenster wird angezeigt, um Sie in vier Schritten zu begleiten.
 
 ### Widerrufsrecht ausüben
 
-In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf){.action} heißt es: "*Vom Kunden bereits bezahlte Beträge werden innerhalb von vierzehn (14) Tagen nach der Stornierung der Bestellung zurückerstattet.*."
+In Artikel 14.1.1 unserer [Allgemeinen Geschäftsbedingungen](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-de.pdf){.action} heißt es: "*Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses.*."
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 
