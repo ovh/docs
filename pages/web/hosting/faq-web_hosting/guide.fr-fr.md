@@ -72,8 +72,8 @@ Sélectionnez ensuite votre nouvelle formule d'hébergement et la durée de votr
 
 ### Comment conserver l'offre e-mail liée à mon hébergement mutualisé lors d'une résiliation ?
 
-Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement. 
-Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante avec vos adresses e-mails déjà créées.
+Lorsque vous résiliez ou supprimez votre hébergement mutualisé, l'offre e-mail qui est attachée est également résiliée. Pour conserver vos adresses e-mails, il vous faudra détacher l'offre e-mail avant la résiliation de l'hébergement. <br>
+Pour cela, dirigez-vous sur l'onglet `Informations générales`{.action} de votre hébergement. Dans la section **Configuration**, cliquez sur le bouton `...`{.action} à droite de « **Adresses e-mails** ». Cliquez sur `Délier mon option e-mail`{.action} et suivez les instructions pour commander une offre e-mail indépendante qui vous permettra de conserver vos adresses e-mails déjà créées.
 
 ## Diagnostic
 
