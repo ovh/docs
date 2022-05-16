@@ -115,7 +115,7 @@ After finishing this tutorial, you should be able to:
 - [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes)
     - [Installing TrilioVault Operator and Manager Using Helm](#installing-triliovault-operator-and-manager-using-helm)
     - [TrilioVault Application Licensing](#triliovault-application-licensing)
-    - [Install TVK Application Licensing](#install-tvk-application-licensing)
+    - [Installing TVK Application Licensing](#installing-tvk-application-licensing)
     - [Renewing TVK Application License](#renewing-tvk-application-license)
 - [Step 2 - Creating a TrilioVault Target to Store Backups](#step-2---creating-a-triliovault-target-to-store-backups)
 - [Step 3 - Getting to Know the TVK Web Management Console](#step-3---getting-to-know-the-tvk-web-management-console)
@@ -331,7 +331,7 @@ If the output looks like above, you installed TVK successfully. Next, you will l
 By default, when installing TVK via Helm, there is no Free Trial license generated. This tutorial will help you install the 'Cluster' scoped license which is of type 'Basic' for cluster capacity of 500 CPUs and has expiration time of 5 years. <br>
 You can always go to the Trilio website and generate a new [license](https://www.trilio.io/plans) for your cluster that suits your needs.
 
-#### Install TVK Application Licensing <a name="install-tvk-application-licensing"></a>
+#### Installing TVK Application Licensing <a name="installing-tvk-application-licensing"></a>
 
 Please run below command to see what license is available for your cluster (it is managed via the License CRD):
 
@@ -340,7 +340,7 @@ curl -LO https://raw.githubusercontent.com/ovh/docs/develop/pages/platform/kuber
 kubectl apply -f tvk_install_license.yaml -n tvk
 ```
 
-Run the below command to verify if the license is create for OVHcloud users successfully:
+Run the below command to verify if the license is successfully created for OVHcloud users:
 
 ```shell
 kubectl get license -n tvk
