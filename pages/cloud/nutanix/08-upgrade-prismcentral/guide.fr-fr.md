@@ -6,7 +6,7 @@ section: Premiers pas
 order: 08
 ---
 
-**Dernière mise à jour le 11/01/2022**
+**Dernière mise à jour le 16/05/2022**
 
 ## Objectif
 
@@ -27,15 +27,38 @@ Une fois qu'une mise à niveau d'un composant logiciel Nutanix est nécessaire, 
 
 ## En pratique
 
-### Documentation officielle des upgrades
+### Documentation officielle des mise à jours
 
 Vous pouvez rechercher le document suivant : "The Nutanix upgrades: Life Cycle Manager" ou visitez le site officiel de Nutanix pour les documentations archivées : [Software Documentation: Upgrade Guide](https://portal.nutanix.com/page/documents/details?targetId=Acropolis-Upgrade-Guide-v5_19:Acropolis-Upgrade-Guide-v5_19){.external}.
 
-### Backup
+
+### Sauvegarde
 
 Avant toute action sur la configuration du système en cluster, il est fortement recommandé de créer une nouvelle sauvegarde ou de vérifier la dernière en date.
 
-### Inventaire LCM
+### Eléments à mettre à jour
+
+Un partie des mises à jours se fait à partir de **Prism Central** comme :
+
+- **Prism Central** lui même
+- **NCC** 
+
+Une autre partie doit être executée à partie de **Prism Element** comme :
+
+- **LCM**
+- **AOS**
+- **Foundation**
+- **AHV**
+
+> [!warning]
+> Avant de faire une mise à jour il faut s'assurer que les versions de **Prim Elements** soient supportées par OVHcloud et que **Prism Central** soit compatible avec **Prism Element**
+> Les versions supportées de **Prism Element** par OVHcloud sont les versions 5.20 LTS et 6.1 STS vous pouvez faire les mises à jours de ces sous-versions mais il est préférable d'attendre un mois après la sortie d'une nouvelle sous-version.  
+> La compatibilité de la version de **Prism Central** avec **Prism Element**  peut être vérifiée sur ce site [Interopérabilité NUTANIX](https://portal.nutanix.com/page/documents/compatibility-interoperability-matrix/interoperability)
+>
+
+### Mise à jour Prism Central
+
+### Inventaire LCM 
 
 Comme l'indique le processus officiel de mise à niveau, vous devez d'abord lancer un inventaire LCM pour avoir une vue de l'état du logiciel du cluster Nutanix.
 
@@ -51,7 +74,7 @@ Après une phase de pré-vérification, vous recevrez les résultats dès la fin
 
 Sélectionnez les upgrades souhaités ou mettez à jour tous les composants. Vous pouvez également décider de gérer directement ces upgrades comme expliqué dans les deux sections suivantes.
 
-### Upgrade de Prism Central
+### Execution de la mise à jour
 
 Une fois que vous êtes certain de pouvoir lancer la mise à jour, ouvrez les paramètres via  le menu `Prism Central Settings`{.action} :
 
