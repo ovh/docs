@@ -107,9 +107,9 @@ Once connected, you can manage your MySQL instance with built-in MySQL client me
 Please follow the official MySQL documentation.
 
 To verify:
-- `SHOW DATABASES;` will list all the databases;
-- `select * from mysql.user;` will display information about existing users.
 
+- `SHOW DATABASES;` will list all the databases;  
+- `select * from mysql.user;` will display information about existing users.  
 
 In our example, it will look like this:
 
