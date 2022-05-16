@@ -6,7 +6,7 @@ section: Public Cloud Archive
 order: 100
 ---
 
-**Last updated 5th May 2022**
+**Last updated 13th May 2022**
 
 ## Objective
 Object Storage is a storage solution that is managed primarily through the OpenStack API. However, you might not be familiar with managing storage space via command line. Therefore, we have developed a gateway which makes it possible to connect to your PCA container with an SFTP client.
