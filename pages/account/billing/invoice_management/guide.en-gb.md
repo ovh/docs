@@ -21,7 +21,7 @@ OVHcloud provides you with a space where you can view, manage and pay your vario
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external})
+- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](https://docs.ovh.com/gb/en/customer/managing-contacts/){.external})
 
 ## Instructions
 
@@ -60,7 +60,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 #### View and manage bills
 
-To view your bills, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and open the `Invoices`{.action} section by clicking on your name in the top right-hand corner. 
+To view your bills, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and open the `Invoices`{.action} section by clicking on your name in the top right-hand corner. 
 
 ![Invoices in manager](images/hubinvoices.png){.thumbnail}
 

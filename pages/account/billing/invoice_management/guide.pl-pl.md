@@ -33,7 +33,7 @@ Faktura wystawiona przez OVHcloud jest wysyłana e-mailem za pomocą linku klikn
 
 ### Informacje na Twojej fakturze
 
-Faktura zostaje do Ciebie wysłana w momencie, gdy uregulujesz płatność za usługę lub po automatycznym odnowieniu. Znajdują się na niej informacje dotyczące produktów, za które należność została uregulowana lub oczekuje na uregulowanie oraz terminy odnowienia usług wraz z cenami. Numer faktury zaczyna się zawsze od liter “PL”.
+Faktura zostaje do Ciebie wysłana w momencie, gdy uregulujesz płatność za usługę lub po automatycznym odnowieniu. Znajdują się na niej informacje dotyczące produktów, za które należność została uregulowana lub oczekuje na uregulowanie oraz terminy odnowienia usług wraz z cenami. Numer faktury zaczyna się zawsze od liter “PL”.
 
 ![Szczegółowy opis faktury](images/invoice_ovh.png){.thumbnail}
 
