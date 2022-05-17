@@ -26,7 +26,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated March 23<sup>rd</sup>, 2021.**
+**Last updated May 17<sup>th</sup>, 2022.**
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
@@ -50,7 +50,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 
 > [!primary]
 >
-> In order to avoid unexpected expenses, you should be careful not to enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
+> In order to avoid unexpected expenses, you should be careful to not enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
 > 
 > A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload. 
 

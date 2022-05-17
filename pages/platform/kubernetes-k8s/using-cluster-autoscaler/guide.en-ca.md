@@ -28,7 +28,7 @@ order: 6
  }
 </style>
 
-**Last updated February 18<sup>th</sup>, 2022.**
+**Last updated May 17<sup>th</sup>, 2022.**
 
 ## Objective
 
@@ -98,7 +98,7 @@ You can activate the autoscaler on several node pools, each of which can have a 
 
 > [!primary]
 >
-> In order to avoid unexpected expenses, you should be careful not to enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
+> In order to avoid unexpected expenses, you should be careful to not enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
 >
 > A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload.
 
