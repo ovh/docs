@@ -50,20 +50,20 @@ Choose the payment method you want to use:
 
 ![choose-payment-method](images/choose-payment-method.png){.thumbnail}
 
-Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to select this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
+Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
 
-#### Payment card
+#### Credit card
 
 ![credit-card](images/credit-card.png){.thumbnail}
 
-To register a new credit card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
+To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
 No amount will be charged and your credit card will be activated in a few minutes.
 
 #### Paypal account
 
 ![paypal](images/paypal.png){.thumbnail}
 
-Select `PayPal`{.action} as your payment method, then click on the button `Next`{.action}. A pop-up window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
+Select `PayPal`{.action} as your payment method, then click on the button `Next`{.action}. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
 
 Your PayPal® account will be activated within a few minutes.
 
