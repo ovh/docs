@@ -26,15 +26,11 @@ section: Tutorials
  }
 </style>
 
-**Last updated March 23<sup>rd</sup>, 2021.**
+**Last updated May 17<sup>th</sup>, 2022.**
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
 During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
-
-> [!primary]
->
-> The cluster auto-scaler feature is currently available in beta. We expect it to reach General Availability (including support in OVHcloud Control Panel) by Summer 2021.
 
 ## Before you begin
 
@@ -51,6 +47,12 @@ As explained in the [How nodes and node pools work](../managing-nodes/) guide, i
 Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
 You can activate the autoscaler on several node pools, each of which can have a different type of instance as well as different min and max nodes number limits.
+
+> [!primary]
+>
+> In order to avoid unexpected expenses, you should be careful to not enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
+> 
+> A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload. 
 
 When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or directly [using the Kubernetes API](../managing-nodes/).
 

@@ -44,7 +44,7 @@ We list here some external resources that can help you to go further with Kubern
 
 ## Community sites
 
-- [Our own OVH Kubernetes Gitter community](https://gitter.im/ovh/kubernetes){.external}
+- [OVHcloud Managed Kubernetes Discord channel](https://discord.com/channels/850031577277792286/955385102945370122){.external} - [Invite link](https://discord.gg/27yHfTpv9z){.external}
 - [StackOverflow Kubernetes section](https://stackoverflow.com/questions/tagged/kubernetes){.external}
 - [Reddit Kubernetes section](https://www.reddit.com/r/kubernetes/){.external}
 - [#kubernetes-users Slack channel](http://slack.k8s.io/){.external}
