@@ -23,7 +23,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ### Important - La facturation en cas de changement d'offre
 
-Lorsque vous modifiez votre formule d'hébergement en cours d'abonnement, un *report de temps* sur votre nouvelle offre s'applique en fonction de la durée restante sur votre offre actuelle.
+Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* s'applique sur votre nouvelle offre. Ce report correspond à la durée restante d'abonnement sur votre offre actuelle.
 
 **Exemple :**<br>
 Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement en cours n'est pas terminé.<br>
