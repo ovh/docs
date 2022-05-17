@@ -5,7 +5,7 @@ excerpt: 'Find out how to add and manage payment methods within the OVHcloud Con
 section: Billing
 ---
 
-**Last updated 09/05/2022**
+**Last updated 9th May 2022**
 
 ## Objective
 
@@ -13,8 +13,8 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a valid payment method
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A valid payment method
 
 ## Instructions <a name="payment_methods"></a>
 
@@ -22,16 +22,16 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![hubpayment](images/hubpayment.png){.thumbnail}
 
-The page that opens will contain a table listing the payment methods saved to your customer account. You can:
+The page that opens contains a table listing the payment methods saved to your customer account. You can:
 
-- Add a payment method 
+- Add a payment method.
 - Change your default payment method.
-- Modify your payment method description
+- Modify your payment method description.
 - Delete a payment method.
 
 ### Register a payment method
 
-When you place your first order, you are asked to save a payment method, to ensure that your service can be renewed via direct debit.
+When you place your first order, you are asked to save a payment method to ensure that your service can be renewed via automatic payments.
 
 This payment method is then used by default for all of your renewals and is offered to pay for new orders.
 
@@ -39,8 +39,8 @@ You can save other payment methods so that they are suggested when you place new
 
 You can save three different payment method types:
 
-- Payment card
-- PayPal account
+- Credit card
+- PayPal® account
 
 To do this, simply click `Add a payment method`{.action}.
 
@@ -50,13 +50,13 @@ Choose the payment method you want to use:
 
 ![choose-payment-method](images/choose-payment-method.png){.thumbnail}
 
-Follow the the steps for saving a payment method. In the first step, you are asked to tick the `I want to select this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
+Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to select this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
 
 #### Payment card
 
 ![credit-card](images/credit-card.png){.thumbnail}
 
-To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
+To register a new credit card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
 No amount will be charged and your credit card will be activated in a few minutes.
 
 #### Paypal account
@@ -67,7 +67,7 @@ Select `PayPal`{.action} as your payment method, then click on the button `Next`
 
 Your PayPal® account will be activated within a few minutes.
 
-### Change your default payment method.
+### Change your default payment method
 
 Payments for your services’ renewal bills are always taken via your default payment method. If you would like to change it, you will need to add a new payment method in the OVHcloud Control Panel.
 
@@ -88,7 +88,7 @@ If you no longer want to use one of your payment methods, you can delete it by c
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-If you would like to delete all of your payment methods, all of your services must be [manual renewal type](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#manual-renewal).
+If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](https://docs.ovh.com/gb/en/billing/how-to-use-automatic-renewal-at-ovh/#manual-renewal).
 
 #### Delete a payment method via the OVHcloud API
 
@@ -110,9 +110,9 @@ Then delete the payment method using the ID you obtained in the previous step:
 
 > [!primary]
 >
-> For more information, please refer to our [Getting started with OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) 
+> For more information, please refer to our guide [Getting started with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
 >
-> If you experience any difficulties finding your payment methods via the OVHcloud APIs, use the `Edit description`{.action} function (button `...`{.action} to the right of your screen) in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+> If you experience any difficulties finding your payment methods via the OVHcloud API, use the `Edit description`{.action} function by clicking on the button `...`{.action} next to your payment method in the [Payment method](#payment_methods) section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >
 
 ### Prepaid account
