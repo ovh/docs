@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/), afin de disposer d'un serveur plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [serveur SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
+Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud.**
 
@@ -23,12 +23,12 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ### Important - La facturation en cas de changement d'offre
 
-Lorsque vous modifiez votre formule d'hébergement en cours d'abonnement, un *pro rata temporis* s'applique sur la durée restante sur votre ancienne offre.
+Lorsque vous modifiez votre formule d'hébergement en cours d'abonnement, un *report de temps* sur votre nouvelle offre s'applique en fonction de la durée restante sur votre offre actuelle.
 
 **Exemple :**<br>
 Vous passez d'une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), alors que l'abonnement en cours n'est pas terminé.<br>
-Par conséquent, la durée restante sera automatiquement ajoutée au pro rata temporis à votre nouvel abonnement **Pro**.<br>
-Celui-ci durera du coup un peu plus d'un an, jusqu'à son prochain renouvellement.
+Par conséquent, la durée restante sera automatiquement **ajoutée** au pro rata temporis à votre nouvel abonnement **Pro**.<br>
+Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouvellement.
 
 ### Modifier votre offre d'hébergement <a name="modify"></a>
 
@@ -67,18 +67,19 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
 
-1. [Récupérer les fichiers de l'espace de stockage FTP](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp).
-2. [Commander une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/).
-3. [Importer votre site sur l'espace FTP](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).
-4. [Ajouter le nom de domaine de votre site au multisite de votre nouvel hébergement](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).
+1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique);<br>
 
-Si vous disposez d'une adresse e-mail associée à votre hébergement *Start 10M*, vous devrez également suivre les étapes suivantes :
+2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action};<br>
 
-1. [Exporter vos e-mails](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
-2. Supprimer votre boîte e-mail actuelle via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la partie `Emails`{.action} concernée, cliquez sur l'onglet du même nom puis sur le bouton `...`{.action} à droite de l'adresse à supprimer et enfin sur `Supprimer le compte`{.action}.
-3. [Créer un ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/) via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de demander la suppression accélérée de votre boîte e-mail Start 10M. Cela permettra d'éviter toute perte de données suite à une erreur de manipulation. Une adresse e-mail Start 10M est conservée 14 jours sur nos serveurs avant sa suppression définitive.
-4. [Recréer votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/)
-5. [Importer vos messages dans la nouvelle boîte](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique)
+3. Créez un [ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), afin de demander, si vous le souhaitez, la suppression accélérée de votre offre (Une adresse e-mail Start 10M est conservée 14 jours par défaut, afin d'éviter toute perte de données suite à une erreur de manipulation);<br>
+
+4. [Commandez une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/);<br>
+
+5. Importez, si besoin, votre site dans votre [nouvel espace d'hébergement](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage);<br>
+
+6. [Ajoutez le nom de domaine de votre site au multisite de votre nouvelle offre](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine);<br>
+
+7. [Recréez si besoin votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) et [importez vos messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
 
 ### Vérifier que votre hébergement est compatible avec une offre inférieure <a name="checks"></a>
 
@@ -100,17 +101,18 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 #### CloudDB
 
-Si vous utilisez le [Serveur CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) inclus avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) inclue avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
 
-Cette action vous permettra de commander un serveur CloudDB indépendant de votre offre *Performance*. Les données de votre serveur seront conservées.
+Cette action vous permettra de commander une offre CloudDB indépendante de votre abonnement *Performance*. Les données de votre serveur seront conservées.
 
-Si vous ne souhaitez pas conserver votre serveur CloudDB, vous pouvez aussi le supprimer avant de passer sur l'offre *Pro* : 
+Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
-1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);
-2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer mon hébergement SQL privé`{.action}.
+1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);<br>
+
+2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### Espace FTP
 
