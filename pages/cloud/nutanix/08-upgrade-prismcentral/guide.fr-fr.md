@@ -130,7 +130,7 @@ Vous pouvez également vérifier que le NCC du cluster Nutanix est à jour lorsq
 
 ### Mise à jour de **Prism Element**
 
-A partir du tableau de bord de **Prism Central** cliquez sur votre `cluster`{.action}.
+A partir du tableau de bord de **Prism Central** dans **Cluster Quick Access** cliquez sur votre `cluster`{.action}.
 
 ![Upgrade Prism Element 01](images/02-update-prism-element01.png){.thumbnail}
 
