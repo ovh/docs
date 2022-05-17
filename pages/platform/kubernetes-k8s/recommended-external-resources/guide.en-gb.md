@@ -1,4 +1,33 @@
+---
+title: Recommended external resources
+excerpt: ''
+slug: recommended-external-resources
+section: Technical resources
+---
 
+**Last updated 1<sup>st</sup> July, 2019.**
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 # Recommended external resources
 
