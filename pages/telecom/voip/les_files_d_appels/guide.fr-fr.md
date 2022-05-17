@@ -6,7 +6,7 @@ section: 'Numéros ou alias'
 order: 5
 ---
 
-**Dernière mise à jour le 16/05/2022** 
+**Dernière mise à jour le 17/05/2022** 
  
 ## Objectif
  
@@ -24,7 +24,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 > [!primary]
 >
 > Une file d'appels ne peut être configurée **que sur un numéro alias**.
-> Consultez notre [FAQ](https://docs.ovh.com/fr/voip/faq-voip) pour plus d'informations sur les différences entre les numéros alias et les lignes SIP.
+> Consultez notre [FAQ](https://docs.ovh.com/fr/voip/faq-voip) pour plus d'informations sur les différences entre un numéro alias et une ligne SIP.
 >
 
 ## En pratique
@@ -42,9 +42,9 @@ Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequ
 
 ### Étape 2 : paramétrer la file d'appels
  
-Une fois la configuration de file d'appels appliquée, les menus de configuration de la file d'appels vous sont présentés.
+Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
 
-![fileappels](images/2022-VoIP-FA-03.png){.thumbnail}
+![fileappels](images/2022-VoIP-FA-02.png){.thumbnail}
 
 Pour revenir à cette page à tout moment, cliquez sur l'onglet `Mon numéro`{.action} puis, dans le cadre « Configuration », cliquez sur `Paramétrer la configuration`{.action}.
 
@@ -61,19 +61,19 @@ Quatre menus principaux vous sont proposés :
 
 Poursuivez la lecture de cette documentation selon le ou les paramètres que vous souhaitez réaliser.
 
-- [2.1 Gérer la file d'appels et ses lignes](../les-files-d-appels/#21-gerer-la-file-dappels-et-ses-lignes).
-- [2.2 Gérer les sons et l'attente](../les-files-d-appels/#22-gerer-les-sons-et-lattente_1).
-- [2.3 Gérer les plages horaires et les fermetures](../les-files-d-appels/#23-gerer-les-plages-horaires-et-les-fermetures_1).
-- [2.4 Gérer le filtrage des appels](../les-files-d-appels/#24-gerer-le-filtrage-des-appels_1).
+- [Gérer la file d'appels et ses lignes (obligatoire)](#manage-lines).
+- [Gérer les sons et l'attente (conseillé)](#manage-sounds).
+- [Gérer les plages horaires et les fermetures (facultatif)](#manage-agenda).
+- [Gérer le filtrage des appels (facultatif)](#manage-filters).
+- [Gérer les enregistrement d'appels (facultatif)](#manage-records)
 
-#### 2.1 Gérer la file d'appels et ses lignes
+#### 2.1 Gérer la file d'appels et ses lignes <a name="manage-lines"></a>
 
 Depuis le menu « Configuration », cliquez sur `Gestion des lignes dans la file`{.action}.
 
 ##### 1. Ajouter une ligne à la file
 
-Sur la page qui s'affiche, dans la partie « Organisation de vos lignes », cliquez sur le bouton `+ Ajouter une ligne`{.action} pour ajouter une nouvelle ligne à votre file d'appels.<br>
-Les lignes déjà présentes apparaissent dans un tableau sur cette même page.
+Sur la page qui s'affiche, dans la partie « Organisation de vos lignes », cliquez sur le bouton `+ Ajouter une ligne`{.action} pour ajouter une nouvelle ligne à votre file d'appels.
 
 ![fileappels](images/2022-VoIP-FA-04.png){.thumbnail}
 
@@ -133,7 +133,7 @@ La modification vous permet d'affiner les réglages de sonnerie de chaque ligne 
 
 ![fileappels](images/2022-VoIP-FA-09.png){.thumbnail}
 
-#### 2.2 Gérer les sons et l'attente
+#### 2.2 Gérer les sons et l'attente <a name="manage-sounds"></a>
 
 Dans le menu « Configuration », cliquez sur `Gestion des sons et de l'attente`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
 
@@ -179,7 +179,7 @@ Cliquez enfin sur le bouton `Valider`{.action} en bas de la page pour confirmer 
 
 ![fileappels](images/2022-VoIP-FA-12.png){.thumbnail}
 
-#### 2.3 Gérer les plages horaires et les fermetures
+#### 2.3 Gérer les plages horaires et les fermetures <a name="manage-agenda"></a>
 
 Depuis le menu « Configuration », cliquez sur `Plages horaires et fermetures`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
 
@@ -215,9 +215,9 @@ Définissez ensuite le créneau à appliquer grâce au bouton `Rediriger les app
 Vous pouvez également **déplacer des plages existantes**. Pour ce faire, cliquez sur ces dernières, et en maintenant le clic, glissez-les dans le tableau des horaires.<br>
 Pour **supprimer une plage**, cliquez sur celle-ci, puis sur `Supprimer`{.action}.
 
-Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements. 
-
 ![fileappels](images/2022-VoIP-FA-16.png){.thumbnail}
+
+Dès que toutes vos plages horaires sont configurées, cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements. 
 
 ##### 4. Définir des fermetures exceptionnelles
 
@@ -225,12 +225,12 @@ Une fois les plages horaires créées à votre convenance, vous avez la possibil
 
 Celles-ci vous permettront de fermer votre file d’appels sur des plages horaires normalement considérées comme étant ouvertes. Pour cela, toujours dans la partie « Gestion des plages horaires et des fermetures », cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 
+![fileappels](images/2022-VoIP-FA-17.png){.thumbnail}
+
 > [!primary]
 >
 > Les fermetures exceptionnelles complètent vos plages horaires paramétrées. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles soient prises en compte.
 >
-
-![fileappels](images/2022-VoIP-FA-17.png){.thumbnail}
 
 Sur la page qui apparaît, positionnez vos fermetures exceptionnelles sur le calendrier en cliquant sur les jours concernés. Complétez les informations demandées :
  
@@ -246,13 +246,17 @@ Une fois les informations complétées, cliquez sur `Créer l'événement`{.acti
 
 ![fileappels](images/2022-VoIP-FA-18.png){.thumbnail}
 
-#### 2.4 Gérer le filtrage des appels
+#### 2.4 Gérer le filtrage des appels <a name="manage-filters"></a>
 
 Depuis le menu « Configuration », cliquez sur `Filtrages des appels`{.action}. Plusieurs actions sont alors possibles depuis cette page. 
 
 ##### 1. Configurer les filtrages d'appels
 
-Vous avez la possibilité de mettre en place un filtrage s’appliquant aux appels entrants. Quatre configurations sont proposées :
+Vous avez la possibilité de mettre en place un filtrage s’appliquant aux appels entrants. 
+
+![fileappels](images/2022-VoIP-FA-19.png){.thumbnail}
+
+Quatre configurations sont proposées :
 
 |Configuration|Description|
 |---|---|
@@ -263,11 +267,13 @@ Vous avez la possibilité de mettre en place un filtrage s’appliquant aux appe
 
 Cliquez sur le bouton `Valider`{.action} pour sauvegarder ces changements.
 
-![fileappels](images/2022-VoIP-FA-19.png){.thumbnail}
-
 ##### 2. Configurer et gérer les listes
 
-Dans la partie « Configuration des listes », vous avez la possibilité d'ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. Pour cela, complétez les informations demandées :
+Dans la partie « Configuration des listes », vous avez la possibilité d'ajouter des numéros ou des types de numéros à la liste blanche ou à la liste noire. 
+
+![fileappels](images/2022-VoIP-FA-20.png){.thumbnail}
+
+Pour cela, complétez les informations demandées :
 
 |Informations|Description|
 |---|---|
@@ -277,15 +283,13 @@ Dans la partie « Configuration des listes », vous avez la possibilité d'ajout
 
 Une fois les listes complétées, appuyez sur `Appliquer`{.action}.
 
-![fileappels](images/2022-VoIP-FA-20.png){.thumbnail}
-
 En dessous de la configuration des listes, dans la partie « Détails de vos listes », un tableau vous permet de visualiser les numéros ainsi que les types de numéros ajoutés à vos listes. Si nécessaire, vous avez la possibilité de filtrer l'affichage de ce tableau grâce la barre de recherche ou le bouton filtre situés au-dessus de celui-ci.
 
 Pour **supprimer des éléments de vos listes**, sélectionnez-les dans le tableau en cochant la case située à gauche de ces derniers. Cliquez ensuite sur le bouton `Actions`{.action} puis sur `Supprimer les éléments sélectionnés`{.action}. Confirmez alors la suppression.
 
-![fileappels](images/2022-VoIP-FA-20.png){.thumbnail}
+![fileappels](images/2022-VoIP-FA-20bis.png){.thumbnail}
 
-### Gérer les enregistrement d'appels (facultatif)
+### Gérer les enregistrement d'appels <a name="manage-records"></a>
 
 La configuration file d'appels vous permet d'enregistrer les appels entrants. Les enregistrements sont automatiquement supprimés de nos serveurs au bout de 60 jours.
 
