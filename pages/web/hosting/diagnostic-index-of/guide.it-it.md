@@ -36,7 +36,7 @@ Se una configurazione `Multisito` non è configurata correttamente, il tuo sito 
 
 ### Comprendere l'origine della pagina "Index of"
 
-Il tuo dominio è collegato tramite la sezione `Multisito`{.action} del tuo hosting a una directory (una `Cartella di root`) sul tuo server [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
+Il tuo dominio è collegato tramite la sezione `Multisito`{.action} del tuo hosting a una directory (una "`Cartella di root`") sul tuo server [FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/).
 
 La pagina **Index of** indica che la directory in questione non contiene file **index.php** o **index.html**. Un file di questo tipo costituisce il "*punto di accesso*" del tuo sito.
 
