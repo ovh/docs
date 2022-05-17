@@ -68,17 +68,11 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
 
 1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique);<br>
-
 2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action};<br>
-
 3. Créez un [ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), afin de demander, si vous le souhaitez, la suppression accélérée de votre offre (Une adresse e-mail Start 10M est conservée 14 jours par défaut, afin d'éviter toute perte de données suite à une erreur de manipulation);<br>
-
 4. [Commandez une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/);<br>
-
 5. Importez, si besoin, votre site dans votre [nouvel espace d'hébergement](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage);<br>
-
 6. [Ajoutez le nom de domaine de votre site au multisite de votre nouvelle offre](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine);<br>
-
 7. [Recréez si besoin votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) et [importez vos messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
 
 ### Vérifier que votre hébergement est compatible avec une offre inférieure <a name="checks"></a>
@@ -101,7 +95,7 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 #### CloudDB
 
-Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) inclue avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -111,7 +105,6 @@ Cette action vous permettra de commander une offre CloudDB indépendante de votr
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
 1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);<br>
-
 2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### Espace FTP
