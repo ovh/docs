@@ -1,9 +1,10 @@
 ---
 title: Upgrading your Nutanix cluster 
 slug: nutanix-upgrade-prismcentral
-excerpt: Find out how to upgrade your Nutanix cluster
+excerpt: Find out how to upgrade your Nutanix Cluster
 section: Getting started
-order: 08
+order: 04
+hidden: true
 ---
 
 **Last updated 11th January 2022**
@@ -12,11 +13,11 @@ order: 08
 
 Once an upgrade of one Nutanix software component is needed, let's review all the main steps to apply it.
 
-**This guide explain the steps to upgrade your Nutanix cluster.**
+**This guide explain the steps to upgrade your Nutanix Cluster.**
 
 ## Requirements
 
-- A Nutanix cluster in your OVHcloud account
+- A Nutanix Cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 > [!warning]
@@ -37,7 +38,7 @@ As for any action on the configuration of the cluster system, it is strongly rec
 
 ### LCM inventory
 
-As documented in the official upgrade process, you should first launch a LCM Inventory to get a view of the software status of the Nutanix cluster.
+As documented in the official upgrade process, you should first launch a LCM Inventory to get a view of the software status of the Nutanix Cluster.
 
 ![First LCM Inventory](images/lcm_first_time.png){.thumbnail}
 
@@ -93,13 +94,13 @@ Update the LCM inventory. If no upgrades are available anymore, then only the li
 
 #### Prism Central upgrade validation
 
-You can also check that the Nutanix cluster Prism Central is up-to-date if there is no upgrade available for your cluster: Click on the `Prism Central Settings`{.action} and open `Upgrade Prism Central`{.action}. There should be no available versions:
+You can also check that the Nutanix Cluster Prism Central is up-to-date if there is no upgrade available for your cluster: Click on the `Prism Central Settings`{.action} and open `Upgrade Prism Central`{.action}. There should be no available versions:
 
 ![No Prism Central upgrade](images/no_upgrade.png){.thumbnail}
 
 #### NCC upgrade validation
 
-You can also check that the Nutanix cluster NCC is up-to-date if there is no upgrade available for your cluster: Click on the `Prism Central Settings`{.action} and open `Upgrade Prism Central`{.action}. There should be no available versions in the NCC tab:
+You can also check that the Nutanix Cluster NCC is up-to-date if there is no upgrade available for your cluster: Click on the `Prism Central Settings`{.action} and open `Upgrade Prism Central`{.action}. There should be no available versions in the NCC tab:
 
 ![No NCC upgrade](images/ncc_upgrade_done.png){.thumbnail}
 
