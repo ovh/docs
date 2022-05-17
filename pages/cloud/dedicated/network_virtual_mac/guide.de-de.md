@@ -1,7 +1,7 @@
 ---
 title: 'Virtuelle MAC-Adresse einer Failover-IP zuweisen'
 slug: network-virtual-mac
-excerpt: 'Hier erfahren Sie, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Failover-IP verbinden.'
+excerpt: 'Erfahren Sie hier, wie Sie eine virtuelle MAC-Adresse erstellen und mit einer Failover-IP verbinden'
 section: 'Netzwerk & IP'
 ---
 
@@ -22,7 +22,7 @@ Bei OVHcloud können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbind
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account, der [virtuelle MACs unterstützt](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/).
 - Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder [OVHcloud API](https://api.ovh.com/console/) eingeloggt.
-- Ihr Server muss die virtuellen MAC-Adressen unterstützen. Ziehen Sie [diese Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um diese zu bestimmen.
+- Ihr Server muss virtuelle MAC-Adressen unterstützen. Ziehen Sie [unsere Anleitung](https://docs.ovh.com/de/dedicated/network-support-virtual-mac/) zu Rate, um dies zu bestimmen.
 
 > [!warning]
 > Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
@@ -64,7 +64,7 @@ Wenn das Dialogfeld “Virtuelle MAC-Adresse hinzufügen” erscheint, wählen S
 
 #### Über die OVHcloud API
 
-Verwenden Sie folgenden API Anruf:
+Verwenden Sie folgenden API Aufruf:
 
 > [!api]
 >
@@ -85,7 +85,7 @@ Um den Vorgang abzuschließen, klicken Sie rechts in der Zeile auf den Button `.
 
 #### Über die OVHcloud API
 
-Verwenden Sie folgenden API Anruf:
+Verwenden Sie folgenden API Aufruf:
 
 > [!api]
 >
