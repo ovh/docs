@@ -1,8 +1,8 @@
 ---
 title: FAQ
-excerpt: 'Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web'
+excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web
 slug: faq-web-hosting
-section: 'Primeros pasos'
+section: Primeros pasos
 ---
 
 > [!primary]
@@ -17,27 +17,27 @@ section: 'Primeros pasos'
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para configurar el alojamiento. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, la versión PHP, la opción CDN, el multisitio, las bases de datos, etc.
 
-**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección Primeros pasos que encontrará [aquí](https://docs.ovh.com/fr/hosting/).
+**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección Primeros pasos que encontrará [aquí](https://docs.ovh.com/es/hosting/).
 
 ### ¿Cómo administrar mis contraseñas?
 
-Para gestionar sus contraseñas, debe conectarse en primer lugar al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En caso de olvidar su identificador o su contraseña, haga clic en el `ID o la contraseña olvidados`{.action} en la ventana de conexión. Recibirá la información necesaria por correo electrónico.
+Para gestionar sus contraseñas, debe conectarse en primer lugar al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En caso de olvidar su identificador o su contraseña, haga clic en el `¿No recuerda su ID de cliente o contraseña?`{.action} en la ventana de conexión. Recibirá la información necesaria por correo electrónico.
 
-También puede consultar la guía [Cambiar la contraseña de su cuenta](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
+También puede consultar la guía [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%c3%b1a/).
 
 Una vez que se haya conectado al área de cliente,
 
-- Para cambiar la contraseña de su espacio FTP, siga las indicaciones de [esta guía](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-utilisateur-ftp/).
-- Para cambiar la contraseña de la base de datos, siga las instrucciones de [esta guía](https://docs.ovh.com/fr/hosting/modifier-mot-de-passe-base-de-donnees/).
-- Para cambiar la contraseña de una cuenta MX Plan, siga las indicaciones de [esta guía](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/).
+- Para cambiar la contraseña de su espacio FTP, siga las indicaciones de [esta guía](https://docs.ovh.com/es/hosting/cambiar-contrasena-usuario-ftp/).
+- Para cambiar la contraseña de la base de datos, siga las instrucciones de [esta guía](https://docs.ovh.com/es/hosting/cambiar-contrasena-base-de-datos/).
+- Para cambiar la contraseña de una cuenta MX Plan, siga las indicaciones de [esta guía](https://docs.ovh.com/es/emails/cambiar-contrasena-direccion-correo/).
 
 ### ¿Cómo publicar mi sitio web? 
 
-Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.ovhcloud.com/fr/domains/) que corresponda a la dirección web desde la que estará accesible su sitio web (por ejemplo: *mi dominio.com*). También necesitará un [alojamiento](https://www.ovhcloud.com/fr/web-hosting/) en el que instalar su sitio web.
+Para publicar su sitio web, debe disponer de un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/) que corresponda a la dirección web desde la que estará accesible su sitio web (por ejemplo: *mi dominio.com*). También necesitará un [alojamiento](https://www.ovhcloud.com/es-es/web-hosting/) en el que instalar su sitio web.
 
-Para más información, consulte esta [página](https://www.ovhcloud.com/fr/web-hosting/uc-website/) y siga las indicaciones de la guía Publicar un sitio web en [internet](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/).
+Para más información, consulte esta [página](https://www.ovhcloud.com/es-es/web-hosting/uc-website/) y siga las indicaciones de la guía [Publicar un sitio web en internet](https://docs.ovh.com/es/hosting/web_hosting_publicar_un_sitio_web_en_internet/).
 
-**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+**Trucos y Trucos**: Para ayudarle a crear su sitio web, OVHcloud le permite instalar en su alojamiento un programa de soporte para la creación de sitios web (WordPress, PrestaShop, Joomla y Drupal), gracias a la funcionalidad [Módulos en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-UN-clic/).
 
 ### ¿Cómo transferir un sitio web y el correo a los servidores de OVHcloud? 
 
@@ -70,7 +70,7 @@ A continuación, seleccione la nueva fórmula de alojamiento y la duración de l
 >
 > - Si ha creado listas de [correo](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) con su plan de hosting, compruebe que la nueva solución incluya esta funcionalidad.
 >
-> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/fr/directory/) o con nuestra [comunidad de usuarios ](https://community.ovh.com/).
+> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) o con nuestra [comunidad de usuarios ](https://community.ovh.com/en/).
 >
 
 ### ¿Cómo conservar la solución de correo asociada a mi alojamiento compartido cuando se da de baja el servicio?
@@ -83,7 +83,7 @@ Para ello, acceda a la pestaña `Información general`{.action} del alojamiento.
 
 > [!warning]
 >
-> Si encuentra una anomalía no indicada en esta FAQ, consulte la página "Diagnóstico" de [nuestra documentación](https://docs.ovh.com/fr/hosting/).
+> Si encuentra una anomalía no indicada en esta FAQ, consulte la página "*Diagnóstico*" de [nuestra documentación](https://docs.ovh.com/es/hosting/).
 >
 
 ### ¿Qué hacer si mi sitio web no funciona bien? 
@@ -96,11 +96,11 @@ Consulte a continuación los [eventos en curso en nuestra infraestructura](https
 
 ![site_en_construction](images/site_en_construction.png){.thumbnail}
 
-Al instalar el alojamiento, OVHcloud coloca esta página de espera como un archivo `index.html` contenido en la carpeta `www` de su servidor FTP.
+Al instalar el alojamiento, OVHcloud coloca esta página de espera como un archivo **index.html** contenido en la carpeta `www` de su servidor FTP.
 
-Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/fr/hosting/modules-en-1-clic/).
+Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-UN-clic/).
 
-Si ha elegido [instalar su sitio manualmente](https://docs.ovh.com/fr/hosting/mutualise-installer-manuellement-mon-cms/), [conéctese al espacio FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) para renombrarlo como `index.html.old`.
+Si ha elegido [Web hosting: Instalar un CMS manualmente](https://docs.ovh.com/es/hosting/web_hosting_instalar_un_cms_manualmente/), [conéctese al espacio FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para renombrarlo como **index.html.old**.
 
 ### ¿Qué hacer si mi sitio web aparece en una dirección web de tipo "xxxx.cluster0xx.hosting.ovh.net"?
 
@@ -112,10 +112,10 @@ Dos escenarios son posibles. O bien el sitio web se ha creado con esta direcció
 
 > [!warning]
 >
-> La eliminación de una base de datos, como la de un módulo en 1 clic, es definitiva. También implica la **supresión de las copias de seguridad** de los datos correspondientes. Antes de eliminar el sitio web del alojamiento de OVHcloud, **asegúrese de poder crearlo de la misma** forma. Si no está seguro de las operaciones a realizar, contacte con su Webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/fr/directory/).
+> La eliminación de una base de datos, como la de un módulo en 1 clic, es definitiva. También implica la **supresión de las copias de seguridad** de los datos correspondientes. Antes de eliminar el sitio web del alojamiento de OVHcloud, **asegúrese de poder crearlo de la misma** forma. Si no está seguro de las operaciones a realizar, contacte con su Webmaster o con uno de [nuestros partners](https://partner.ovhcloud.com/es-es/directory/).
 >
 
-En primer lugar, después de realizar todas las copias de seguridad necesarias, elimine el módulo desde el área de `hosting` de OVHcloud.
+En primer lugar, después de realizar todas las copias de seguridad necesarias, elimine el módulo desde el área de `Alojamientos` de OVHcloud.
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
@@ -123,20 +123,20 @@ A continuación, elimine la base de datos desde la pestaña con el mismo nombre 
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
-Por último, reinicie la instalación en el dominio deseado, utilizando la funcionalidad [Módulo en 1 clic](https://docs.ovh.com/fr/hosting/1-click-module-management/).
+Por último, reinicie la instalación en el dominio deseado, utilizando la funcionalidad [Módulo en 1 clic](https://docs.ovh.com/es/hosting/1-click-module-management/).
 
 #### Situación 2: su sitio web aparece con una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net" después de una modificación
 
 Si el sitio web aparece con esta URL debido a una manipulación, vuelva a su estado anterior.
 
-> \[!alert]
+> [!alert]
 >
 > La restauración del alojamiento de OVHcloud conlleva la restauración **del conjunto de sitios** que contiene.
 >
 > Al restaurar un sitio web, el contenido del espacio FTP o el de la base de datos se sustituyen por una copia de seguridad. No podrá recuperar los datos del servidor FTP ni los de la base de datos antes de restaurarlos.
 >
 
-Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
+Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
 
 Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
 
@@ -158,13 +158,13 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 - Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), siga las instrucciones de [esta guía](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns) para restaurarlos.
 
-- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contacte con su Webmaster o busque un proveedor especializado a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contacte con su Webmaster o busque un proveedor especializado a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "La página no se redirige correctamente"?
 
 ![too_many_redirect](images/too_many_redirect.png){.thumbnail}
 
-> \[!alert]
+> [!alert]
 >
 > La restauración del alojamiento de OVHcloud conlleva la restauración del conjunto de sitios que contiene.
 >
@@ -173,27 +173,27 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 Restaure su sitio web a su estado anterior:
 
-- Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/).
+- Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
 
-- Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
+- Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
 
-Si las restauraciones no le permiten restablecer el acceso a su sitio web, contacte con su Webmaster o busque un proveedor especializado en la web de los [partners de OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Si las restauraciones no le permiten restablecer el acceso a su sitio web, contacte con su Webmaster o busque un proveedor especializado en la web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "503 error Backend fetch failed"?
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-Si ha activado [la opción CDN](https://docs.ovh.com/fr/hosting/accelerer-mon-site-web-en-utilisant-le-cdn/) del alojamiento, desactive el modo de *mantenimiento* en su sitio web WordPress o PrestaShop.
+Si ha activado la [opción CDN](https://docs.ovh.com/es/hosting/guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web/) del alojamiento, desactive el modo de *mantenimiento* en su sitio web WordPress o PrestaShop.
 
-Si no ha activado esta opción ni ha utilizado el modo de *mantenimiento*, póngase en contacto con su Webmaster o busque un proveedor especializado en el sitio web de los [partners de OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Si no ha activado esta opción ni ha utilizado el modo de *mantenimiento*, póngase en contacto con su Webmaster o busque un proveedor especializado en el sitio web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "Your request has been blocked"?
 
 ![your_request_has_been_blocked](images/your_request_has_been_blocked.png){.thumbnail}
 
-Este mensaje indica que el tipo de petición HTTP que intenta realizar en su sitio web está prohibido durante un tiempo limitado. En ese caso, [consulte los logs](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de su sitio web para ver qué peticiones han provocado el bloqueo.
+Este mensaje indica que el tipo de petición HTTP que intenta realizar en su sitio web está prohibido durante un tiempo limitado. En ese caso, [consulte los logs](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) de su sitio web para ver qué peticiones han provocado el bloqueo.
 
-Para ayudarle a corregir estas anomalías, contacte con su Webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/fr/directory/).
+Para ayudarle a corregir estas anomalías, contacte con su Webmaster o con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "Your IP has been banned"?
 
@@ -201,15 +201,15 @@ Para ayudarle a corregir estas anomalías, contacte con su Webmaster o con uno d
 
 Este mensaje indica que la dirección IP que utiliza para conectarse a su sitio web está bloqueada durante un tiempo limitado. 
 
-En esta situación, >
+En ese caso, [compruebe los logs](https://docs.ovh.com/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/) de su sitio web para determinar qué peticiones han provocado el bloqueo.<br>
 Compruebe también que su equipo informático no esté infectado por un virus.<br>
-Por último, puede contactar con uno de [nuestros partners](https://partner.ovhcloud.com/fr/directory/) para que este verifique el código informático de su sitio web.
+Por último, puede contactar con uno de nuestros partners (https://partner.ovhcloud.com/es-es/directory/) para que verifique el código informático de su sitio web.
 
 ### He contratado un dominio con acentos que aparece escrito de forma extraña en mi área de cliente. ¿Qué debo hacer?
 
 ![notation_idn](images/notation_idn.png){.thumbnail}
 
-No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://fr.wikipedia.org/wiki/Nom_de_domaine_internationalis%C3%A9){.external} en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
+No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación internacionalizada (IDN)](https://es.wikipedia.org/wiki/Nombre_de_dominio_internacionalizado){.external} en su área de cliente, funcionará y se mostrará de forma totalmente normal en otro lugar. La dirección web del sitio web se mostrará tal y como usted lo haya solicitado. Sus direcciones de correo también se mostrarán como desee con sus interlocutores.
 
 > [!warning]
 >
@@ -218,8 +218,8 @@ No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación 
 
 ## Más información <a name="gofurther"></a>
 
-[FAQ - Correo en alojamiento compartido MX Plan](https://docs.ovh.com/fr/emails/faq-emails/)
+[FAQ - Correo en alojamiento compartido MX Plan](https://docs.ovh.com/es/emails/correo-electronico-faq/)
 
-Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/fr/support-levels/).
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
