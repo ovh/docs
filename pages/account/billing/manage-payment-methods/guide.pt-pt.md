@@ -9,7 +9,7 @@ section: Faturação
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/05/2022**
+**Última atualização: 18/05/2022**
 
 ## Objetivo
 
@@ -52,20 +52,20 @@ Para isso, basta clicar no botão `Adicionar um método de pagamento`{.action}.
 
 Escolha o método de pagamento que deseja utilizar: 
 
-![choose-payment-method](images/choose-payment-method.png){.thumbnail}
+![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
 
 Siga as etapas sucessivas de registo do método de pagamento. Na primeira etapa, é-lhe proposto que selecione a opção `Pretendo selecionar este método de pagamento predefinido após a sua validação.`{.action}, de forma a que ele seja utilizado para as suas futuras compras ou débitos automáticos.
 
 #### Cartão bancário
 
-![credit-card](images/credit-card.png){.thumbnail}
+![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
 
 Para registar um novo cartão de crédito, será redirecionado para a interface segura do nosso prestador de pagamentos. É efetuada uma tentativa de débito junto do seu organismo bancário para validar o número e a validade do seu cartão.<br>
 Nenhum montante será debitado e o seu cartão de crédito será ativado ao fim de alguns minutos.
 
 #### Conta paga
 
-![paypal](images/paypal.png){.thumbnail}
+![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
 Clique no botão `Paypal`{.action}. Será então aberta uma janela de contexto para se ligar à sua conta Paypal® e registar esta como método de pagamento autorizado junto da OVHcloud.
 

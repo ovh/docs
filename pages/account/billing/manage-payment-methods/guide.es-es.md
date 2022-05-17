@@ -5,7 +5,7 @@ excerpt: Cómo añadir y gestionar las formas de pago en el área de cliente de 
 section: Pedidos, facturas y servicios
 ---
 
-**Última actualización: 09/05/2022**
+**Última actualización: 18/05/2022**
 
 ## Objetivo
 
@@ -50,22 +50,22 @@ Para ello, haga clic en el botón `Añadir una forma de pago`{.action}.
 
 Seleccione la forma de pago que quiera utilizar: 
 
-![choose-payment-method](images/choose-payment-method.png){.thumbnail}
+![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
 
 Siga los siguientes pasos para registrar una forma de pago. En el primer paso, puede marcar la casilla `Una vez validada, quiero seleccionar esta forma de pago por defecto`{.action}, para que se utilice en las futuras compras o cargos automáticos.
 
 #### Tarjeta bancaria
 
-![credit-card](images/credit-card.png){.thumbnail}
+![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
 
 Para registrar una nueva tarjeta bancaria, será redirigido a la página de pago seguro de nuestro proveedor. Para confirmar el registro y la validez de la tarjeta, realizaremos una retención en su cuenta.<br>
 No se cargará ningún importe y su tarjeta bancaria se activará en unos minutos.
 
 #### Cuenta PayPal
 
-![paypal](images/paypal.png){.thumbnail}
+![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `Siguiente`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
+Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `Paypal`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
 
 Su cuenta de PayPal® se activará en unos minutos.
 

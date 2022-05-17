@@ -9,7 +9,7 @@ section: Płatności
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 09-05-2022**
+**Ostatnia aktualizacja z dnia 18-05-2022**
 
 ## Wprowadzenie
 
@@ -52,22 +52,22 @@ W tym celu kliknij przycisk `Dodaj sposób płatności`{.action}.
 
 Wybierz metodę płatności, której chcesz użyć:
 
-![co-payment-method](images/choose-payment-method.png){.thumbnail}
+![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
 
 Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. Na pierwszym etapie zostaniesz poproszony o zaznaczenie kratki `Chcę wybrać ten sposób płatności jako domyślny od chwili jego zatwierdzenia`{.action}, tak aby był on używany przy kolejnych zakupach lub automatycznych pobraniach.
 
 #### Karta bankowa
 
-![kredyt](images/credit-card.png){.thumbnail}
+![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
 
 Aby zarejestrować nową kartę bankową, zostaniesz przekierowany do bezpiecznego interfejsu naszego dostawcy płatności. W celu potwierdzenia rejestracji i ważności Twojej karty, należy zalogować się do Twojego banku.<br>
 Kwota nie zostanie pobrana, a Twoja karta bankowa zostanie aktywowana po kilku minutach.
 
 #### Konto paypal
 
-![paypal](images/paypal.png){.thumbnail}
+![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Wybierz `Paypal`{.action} jako sposób płatności. Kliknij przycisk `Dalej`{.action}. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta Paypal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
+Wybierz `Paypal`{.action} jako sposób płatności. Kliknij przycisk `Paypal`{.action}. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta Paypal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
 
 Twoje konto Paypal® zostanie włączone za kilka minut.
 

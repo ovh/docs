@@ -5,7 +5,7 @@ excerpt: 'Find out how to add and manage payment methods within the OVHcloud Con
 section: Billing
 ---
 
-**Last updated 9th May 2022**
+**Last updated 18th May 2022**
 
 ## Objective
 
@@ -48,22 +48,22 @@ To do this, simply click `Add a payment method`{.action}.
 
 Choose the payment method you want to use:
 
-![choose-payment-method](images/choose-payment-method.png){.thumbnail}
+![choose-payment-method-no-sepa](images/choose-payment-method-no-sepa.png){.thumbnail}
 
 Follow the the steps for saving a payment method. In the first step, you are asked to check the option `I want to choose this as my default payment method as soon as it is validated`{.action}, so that it is used for future orders and automatic payments.
 
 #### Credit card
 
-![credit-card](images/credit-card.png){.thumbnail}
+![credit-card-no-sepa](images/credit-card-no-sepa.png){.thumbnail}
 
 To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
 No amount will be charged and your credit card will be activated in a few minutes.
 
 #### Paypal account
 
-![paypal](images/paypal.png){.thumbnail}
+![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Select `PayPal`{.action} as your payment method, then click on the button `Next`{.action}. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
+Select `PayPal`{.action} as your payment method, then click on the button `PayPal`{.action}. A popup window will then open to log in to your PayPal® account and register it as an authorized payment method with OVHcloud.
 
 Your PayPal® account will be activated within a few minutes.
 
