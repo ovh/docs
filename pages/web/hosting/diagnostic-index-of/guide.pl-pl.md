@@ -36,7 +36,7 @@ Jeśli konfiguracja `MultiSite` nie jest poprawnie skonfigurowana, Twoja strona 
 
 ### Zrozumieć pochodzenie strony "Index of"
 
-Twoja domena jest podłączona do katalogu ("`Katalog główny`{.action}") na Twoim `serwerze FTP` za pomocą [MultiSite](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/).
+Twoja domena jest podłączona do katalogu ("`Katalog główny`{.action}") na Twoim serwerze [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) za pomocą `MultiSite`{.action}.
 
 Strona **Index of** wskazuje, że dany katalog nie zawiera pliku **index.php** lub **index.html**. Plik ten to "*punkt wejścia*" Twojej strony WWW.
 
