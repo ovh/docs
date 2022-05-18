@@ -46,7 +46,7 @@ En cualquier momento puede consultar la orden de pedido desde el [área de clien
 
 ### Acceder a los pedidos desde el área de cliente de OVHcloud.
 
-Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, en la pestaña `Cuadro de mando`{.action}, haga clic en `Ver mis pedidos`{.action}.
+Para acceder al panel de gestión de pedidos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y, en la pestaña `Panel de control`{.action}, haga clic en `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/huborders.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Estos son los posibles estados de un pedido:
 |Entrega en curso|El pedido está en curso de entregarse, tenga paciencia. Según el servicio, la entrega podría tardar desde unos pocos minutos hasta varias horas.|
 |Entregado|El servicio ya se ha entregado. Las claves de acceso (en caso necesario) se han enviado por correo electrónico.|
 
-Si desea ver el pedido en formato HTML, haga clic en `«...»`{.action} a la derecha de su pedido y, seguidamente, en `«Ver el pedido en formato HTML`{.action}.
+Si desea ver el pedido en formato HTML, haga clic en `...`{.action} a la derecha de su pedido y, seguidamente, en `Ver la orden de pedido en formato HTML`{.action}.
 
 ![Resumen de pedidos](images/order04.png){.thumbnail}
 
@@ -78,8 +78,8 @@ Si desea ver el pedido en formato HTML, haga clic en `«...»`{.action} a la der
 
 Una vez generada la orden de pedido, puede realizar el seguimiento de su pedido desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es):
 
-* Haga clic en su `panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `..`{.action} delante del pedido.
-* Seleccione `«Seguimiento de los pedidos»`{.action}. El seguimiento del pedido también puede mostrarse haciendo clic en el estado de un pedido en la columna `Estado`.
+* Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido;
+* Seleccione `Seguimiento del pedido`{.action}. El seguimiento del pedido también puede mostrarse haciendo clic en el estado de un pedido en la columna `Estado`.
 
 ![Seguimiento de los pedidos](images/order05b.png){.thumbnail}
 
@@ -89,7 +89,7 @@ Se abrirá una ventana en la que podrá realizar el seguimiento en cuatro pasos.
 
 ### Ejercer el derecho de desistimiento
 
-El artículo 12.1.2 de nuestras [Condiciones Generales del Servicio](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} establece que "*los clientes que tengan la consideración de consumidores en el sentido del artículo introductorio del Código de Consumo, disfrutarán de un derecho de desistimiento de 14 días*".
+El artículo 14.1 de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf) establece que "*Los Clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros catorce (14) días naturales desde la contratación del producto o servicio correspondiente.*"
 
 Encontrará todas las modalidades de la aplicación de dicho derecho en los siguientes párrafos del mismo artículo.
 
@@ -98,21 +98,21 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 > El derecho de desistimiento sólo se aplica a los particulares y solo a los nuevos pedidos. Por lo tanto, no puede hacerlo:
 >
 > - renovaciones;
-> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
+> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](https://docs.ovh.com/es/customer/todo-sobre-el-id-de-cliente/#cambiar-el-tipo-de-cuenta).
 >
 > Además, el derecho de desistimiento no se aplica a los pedidos no pagados, ya que estos se cancelan automáticamente cuando la orden de pedido expira.
 >
-> Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](https://www.ovhcloud.com/fr/domains/) y los [certificados SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
+> Por último, no se aplica a determinados servicios (especialmente los [nombres de dominio](https://www.ovhcloud.com/es-es/domains/) y los [certificados SSL Sectigo](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/)). Al contratar estos productos, deberá renunciar expresamente a su derecho de desistimiento de conformidad con el artículo L.221-28 del Código de Consumo.
 >
 
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es):
+Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es):
 
-* Haga clic en su `panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `..`{.action} delante del pedido.
-* Seleccione `«Cancelar el pedido»`{.action}.
+* Haga clic en su `Panel de control`{.action}, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido.
+* Seleccione `Cancelar el pedido`{.action}.
 
 ![Cancelación de un pedido](images/cancelorder1.png){.thumbnail}
 
-Por último, marque la casilla `«Sí, quiero cancelar el pedido»`{.action} y confirme.
+Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confirme.
 
 ![Confirmación de la cancelación](images/cancelorder2.png){.thumbnail}
 
@@ -123,4 +123,4 @@ Por último, marque la casilla `«Sí, quiero cancelar el pedido»`{.action} y c
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

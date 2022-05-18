@@ -13,13 +13,13 @@ section: Gestione di ordini, fatture e servizi
 
 ## Obiettivo
 
-Lo Spazio Cliente OVHcloud[ ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) permette di eseguire un ordine e interagire con esso.
+Lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) permette di eseguire un ordine e interagire con esso.
 
 **Questa guida ti mostra come gestire gli ordini dallo Spazio Cliente OVHcloud.**
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di necessità, consulta i contratti OVHcloud disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)\: clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action} nel menu contestuale e sulla scheda `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di necessità, consulta i contratti OVHcloud disponibili nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it): clicca sul tuo nome in alto a destra e poi su `Gestione dei servizi`{.action} nel menu contestuale e sulla scheda `Contratti`{.action}.
 >
 
 ## Prerequisiti
@@ -39,7 +39,7 @@ Il buono d'ordine viene creato al momento dell'ordine. Elenca i prodotti ordinat
 |---|---|
 |1|Numero, data di creazione e data di scadenza del buono d'ordine. Se è scaduto, dovrai inoltrare nuovamente l'ordine.|
 |2|I tuoi dati di fatturazione. Devi essere identificato per visualizzare e pagare il tuo buono d'ordine.|
-|3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Metodi di pagamento registrati sul tuo account cliente. Per maggiori informazioni, consulta la guida [Gestire i metodi di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/).|
 |4|Metodi di pagamento disponibili. Verrai proposto solo per i metodi di pagamento autorizzati nel paese di origine dell'account o quelli associati al tipo di account registrato.|
 
 È possibile recuperare il buono d'ordine in qualsiasi momento direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), come spiegato di seguito.
@@ -59,7 +59,7 @@ In questa pagina vengono riportate queste informazioni:
 - la data di creazione del buono d'ordine;
 - il numero dell’ordine;
 - lo stato dell'ordine;
-- importo totale dell’ordine, IVA inclusa
+- importo totale dell’ordine, IVA inclusa.
 
 Ecco i diversi stati dell’ordine:
 
@@ -79,7 +79,7 @@ Per visualizzare il buono d’ordine in formato HTML, clicca sui tre puntini `..
 Una volta generato il buono d'ordine, è possibile eseguire l'ordine direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it):
 
 * Clicca sulla tua `dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
-* Seleziona `Gestione degli ordini`{.action}. Il controllo dell'ordine può essere visualizzato anche cliccando sullo stato dell'ordine nella colonna `Stato`.
+* Seleziona `Stato dell'ordini`{.action}. Il controllo dell'ordine può essere visualizzato anche cliccando sullo stato dell'ordine nella colonna `Stato`.
 
 ![Gestione degli ordini](images/order05b.png){.thumbnail}
 
@@ -98,21 +98,21 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 > Il diritto di recesso riguarda soltanto i privati e si applica solo ai nuovi ordini. Non è quindi applicabile nei seguenti casi:
 >
 > - rinnovi;
-> - se il tuo account cliente OVHcloud è di tipo [diverso da Privato](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).
+> - se il tuo account cliente OVHcloud è di [tipo diverso da Privato](https://docs.ovh.com/it/customer/tutto_sullidentificativo_cliente_ovh/#modifica-il-tipo-di-account).
 >
 > Inoltre, il diritto di recesso non si applica agli ordini non pagati, in quanto questi vengono automaticamente annullati quando scade il buono d'ordine.
 >
-> Non si applica a determinati servizi (in particolare i [domini](https://www.ovhcloud.com/fr/domains/) e i [certificati SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
+> Non si applica a determinati servizi (in particolare i [domini](https://www.ovhcloud.com/it/domains/) e i [certificati SSL Sectigo](https://www.ovhcloud.com/it/web-hosting/options/ssl/)). Al momento dell'ordine di questi prodotti, ti è quindi chiesto di rinunciare espressamente al tuo diritto di recesso, conformemente all'articolo L.221-28 del Codice del Consumo francese.
 >
 
 Se i criteri di idoneità al diritto di recesso sono soddisfatti, il diritto di recesso può essere esercitato direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it):
 
-* Clicca sulla tua `dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
+* Clicca sulla tua `Dashboard`{.action}, poi su `Visualizza i tuoi ordini`{.action} e infine su `...`{.action} davanti al tuo ordine.
 * Seleziona `Annulla l’ordine`{.action}.
 
 ![Annullamento di un ordine](images/cancelorder1.png){.thumbnail}
 
-Seleziona la casella `Sì, desidero annullare l’ordine`{.action} e infine conferma l’operazione.
+Seleziona la casella `Sì, voglio annullare questo ordine`{.action} e infine conferma l’operazione.
 
 ![Conferma dell’operazione di annullamento](images/cancelorder2.png){.thumbnail}
 
@@ -123,4 +123,4 @@ Seleziona la casella `Sì, desidero annullare l’ordine`{.action} e infine conf
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

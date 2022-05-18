@@ -39,14 +39,14 @@ Zamówienie zostało utworzone w momencie składania zamówienia. Zawiera listę
 |---|---|
 |1|Numer, data utworzenia i data wygaśnięcia zamówienia. Jeśli wygasł, należy złożyć zamówienie.|
 |2|Twoje dane do faktury. Aby wyświetlić i opłacić zamówienie, należy go zidentyfikować.|
-|3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](https://docs.ovh.com/fr/billing/manage-payment-methods/).|
+|3|Sposoby płatności zapisane na Twoim koncie klienta Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zarządzanie sposobami płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/).|
 |4|Dostępne metody płatności Zaproponowane są wyłącznie metody płatności akceptowane w kraju, w którym znajduje się konto, lub metody związane z typem zarejestrowanego konta.|
 
 Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jak wyjaśniono poniżej.
 
 ### Dostęp do zamówień w Panelu klienta OVHcloud
 
-Aby uzyskać dostęp do panelu zarządzania zamówieniami, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie w zakładce `Dashboard`{.action} kliknij `Pokaż moje zamówienia`{.action}.
+Aby uzyskać dostęp do panelu zarządzania zamówieniami, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie w zakładce `Dashboard`{.action} kliknij `Wyswietl moje zamówienia`{.action}.
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
@@ -70,16 +70,16 @@ Możliwe statusy zamówienia:
 |Dostarczanie w trakcie|Dostawa Twojej usługi jest w trakcie realizacji. W zależności od usługi dostawa może trwać kilka minut lub kilka godzin.|
 |Zakończone|Usługa dostała dostarczona, otrzymałeś dane do logowania w wiadomości e-mail (jeśli wymagane jest logowanie).|
 
-Możesz również wyświetlić zamówienie w formacie HTML, klikając `...`{.action} z prawej strony Twojego zamówienia, a następnie wybierając polecenie`Pokaż zamówienie w formacie HTML`{.action}.
+Możesz również wyświetlić zamówienie w formacie HTML, klikając `...`{.action} z prawej strony Twojego zamówienia, a następnie wybierając polecenie `Wyswietl zamówienie w formacie HTML`{.action}.
 
 ![Podsumowanie zamówień](images/order04.png){.thumbnail}
 
 ### Sprawdzanie statusu zamówienia
 
-Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl):
+Po wygenerowaniu formularza zamówienia możesz śledzić zamówienie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl):
 
 * Kliknij Twój `Dashboard`{.action}, następnie `Wyświetl moje zamówienia`{.action}, a na koniec wybierz `...`{.action} przed Twoim zamówieniem.
-* Wybierz `Śledzenie zamówienia`{.action}. Informacje o zamówieniu można również wyświetlić, klikając status zamówienia w kolumnie `Status`.
+* Wybierz `Informacje o zamówieniu`{.action}. Informacje o zamówieniu można również wyświetlić, klikając status zamówienia w kolumnie `Status`.
 
 ![Informacje o zamówieniu](images/order05b.png){.thumbnail}
 
@@ -89,7 +89,7 @@ Pojawi się poniższe okno umożliwiające monitorowanie w czterech krokach.
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
-Artykuł 12.1.2 [Ogólne Warunki Korzystania z Usług](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/ab97c58-contrat_genServices-PL-2.1.pdf) wyjaśnia, że: "*Prawo do odstąpienia od umowy. (...) Prawo do odstąpienia od umowy musi zostać zrealizowane przed upływem terminu ważności za pośrednictwem formularza dostępnego w tym celu w Interfejsie zarządzania lub przez wypełnienie poniższego formularza rezygnacji oraz wysłanie go listem poleconym z potwierdzeniem odbioru do OVHcloud lub za pomocą jakiejkolwiek innej deklaracji wyraźnie wyrażającej wolę skorzystania z tego praw.*."
+Artykuł 12.1.2 [Ogólne Warunki Korzystania z Usług](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/ab97c58-contrat_genServices-PL-2.1.pdf) wyjaśnia, że: "*Prawo do odstąpienia od umowy. (...) Prawo do odstąpienia od umowy musi zostać zrealizowane przed upływem terminu ważności za pośrednictwem formularza dostępnego w tym celu w Interfejsie zarządzania lub przez wypełnienie poniższego formularza rezygnacji oraz wysłanie go listem poleconym z potwierdzeniem odbioru do OVHcloud lub za pomocą jakiejkolwiek innej deklaracji wyraźnie wyrażającej wolę skorzystania z tego praw.*"
 
 Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu tego artykułu.
 
@@ -98,14 +98,14 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Prawo do wycofania dotyczy wyłącznie osób fizycznych i ma zastosowanie jedynie do nowych zamówień. Nie można więc twierdzić, że:
 >
 > - w przypadku odnowienia;
-> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte) OVHcloud.
+> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](https://docs.ovh.com/pl/customer/identyfikator_klienta/#zmien-typ-konta) OVHcloud.
 >
 > Ponadto prawo do odstąpienia od umowy nie ma zastosowania do zamówień nieopłaconych, ponieważ zamówienia są automatycznie anulowane po wygaśnięciu zamówienia.
 >
-> Nie dotyczy on również niektórych usług (w szczególności [domen](https://www.ovhcloud.com/fr/domains/) i [certyfikatów SSL Sectigo](https://www.ovhcloud.com/fr/web-hosting/options/ssl/)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
+> Nie dotyczy on również niektórych usług (w szczególności [domen](https://www.ovhcloud.com/pl/domains/) i [certyfikatów SSL Sectigo](https://www.ovhcloud.com/pl/web-hosting/options/ssl/)). W momencie składania zamówienia na te produkty zostaniesz poproszony o wyraźne zrzeczenie się prawa do odstąpienia od umowy zgodnie z artykułem L.221-28 Kodeksu konsumenckiego.
 >
 
-Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio [w Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl):
+Jeśli kryteria kwalifikujące do prawa odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl):
 
 * Kliknij Twój `Dashboard`{.action}, następnie `Wyświetl moje zamówienia`{.action}, a na koniec wybierz `...`{.action} przed Twoim zamówieniem.
 * Wybierz opcję `Anuluj zamówienie`{.action}.
@@ -123,4 +123,4 @@ Zaznacz kratkę `Tak, chcę anulować to zamówienie`{.action}, po czym zatwierd
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
