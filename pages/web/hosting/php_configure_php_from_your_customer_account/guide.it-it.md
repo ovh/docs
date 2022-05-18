@@ -36,7 +36,7 @@ Consulta questa [guida]({legacy}1207), che ti spiega come configurare il file .o
 Accedi alla sezione "Hosting" del tuo Spazio Cliente OVH e clicca sull'hosting in questione.
 La versione utilizzata per il tuo sito è indicata in "Versione PHP"(n.1).
 
-![](images/img_3314.jpg){.thumbnail}
+![php](images/3278.png){.thumbnail}
 Per modificarla, clicca sul link "Modifica la configurazione" (n. 2 nell'image sopra).
 
 
@@ -76,29 +76,29 @@ Modalità di sicurezza:
 
 
 
-![](images/img_4130.jpg){.thumbnail}
+![php](images/4130.png){.thumbnail}
 Per impostare una configurazione predefinita ti consigliamo di scegliere le opzioni indicate nello screenshot.
 Potrebbero essere necessari alcuni minuti perché questa modifica diventi effettiva.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Per modificare di nuovo la versione PHP, clicca su "Modifica la configurazione" e poi su "Modifica la configurazione attuale".
 
-![](images/img_3317.jpg){.thumbnail}
+![php](images/3310.png){.thumbnail}
 
 
 ## Ritorna alla versione precedente
 Se la nuova versione di PHP crea problemi sul tuo sito, puoi tornare alla configurazione precedente. Per farlo, clicca di nuovo su "Modifica la configurazione".
 
-![](images/img_3318.jpg){.thumbnail}
+![php](images/3312.png){.thumbnail}
 Poi clicca su "Ritorna a una configurazione precedente".
 
-![](images/img_3319.jpg){.thumbnail}
+![php](images/3311.png){.thumbnail}
 Se hai modificato la versione PHP solo una volta, visualizzerai questo riquadro. In caso contrario, clicca su "Seleziona storico" e scegli la versione.
 
-![](images/img_3320.jpg){.thumbnail}
+![php](images/3313.png){.thumbnail}
 Potrebbero essere necessari alcuni minuti perché questa modifica diventi effettiva.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Per ritornare a una versione PHP precedente, ti consigliamo di leggere il paragrafo "Come verificare che il tuo sito sia compatibile con una nuova versione di PHP?".
 
 
@@ -128,7 +128,7 @@ Salvalo in formato .php e rinominalo "info.php".
 Pubblica via FTP ([]({legacy}1380)) il file nella cartella desiderata, ad esempio /www/monwordpress/
 Apri il tuo browser e accedi a info.php. Ad esempio, www.tuo-sito.com/miowordpress/info.php
 
-![](images/img_3321.jpg){.thumbnail}
+![php](images/3277.png){.thumbnail}
 
 
 ## Hai configurato un file .htaccess per forzare una versione PHP: che cosa succederà?

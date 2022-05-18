@@ -575,7 +575,7 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 > [!primary]
 >
 > Ici, le `OWNER_CONTACT` représente une API de "ressource", à savoir `/me/contact` ou plus précisement `/domain/contact`.
-> Les APIs permettant de créer ces contacts sont décrites dans la section [Gestion des contacts](../api-contacts).
+> Les APIs permettant de créer ces contacts sont décrites dans la section [Gestion des contacts](../api-contact).
 
 ### CRUD des configurations sur le produit
 

@@ -21,7 +21,7 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account.
 - A PostgreSQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
-- [Configure your PostgreSQL instance](https://docs.ovh.com/pt/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
+- [Configure your PostgreSQL instance](https://docs.ovh.com/pt/publiccloud/databases/postgresql/configure-postgresql-instance/) to accept incoming connections
 - A pgAdmin stable version installed and public network connectivity (Internet). This guide was made in pgAdmin 4 version 6.4.
 
 ## Concept

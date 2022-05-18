@@ -23,7 +23,7 @@ However, it is possible to modify some parameters via the API.
 ## Requirements
 
 - A [Public Cloud project](https://www.ovhcloud.com/pt/public-cloud/) in your OVHcloud account
-- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/databases/getting-started/) can help you to meet this requirement)
+- A database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/pt/publiccloud/databases/getting-started/) can help you to meet this requirement)
 
 If you have never used the OVHcloud API before, then follow this tutorial: [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/.
 
