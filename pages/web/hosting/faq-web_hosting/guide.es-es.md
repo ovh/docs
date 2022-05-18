@@ -17,7 +17,7 @@ section: Primeros pasos
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para configurar el alojamiento. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, la versión PHP, la opción CDN, el multisitio, las bases de datos, etc.
 
-**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección Primeros pasos que encontrará [aquí](https://docs.ovh.com/es/hosting/).
+**Trucos y Trucos**: Para ayudarle a configurar su alojamiento, consulte la sección *Primeros pasos* que encontrará [aquí](https://docs.ovh.com/es/hosting/).
 
 ### ¿Cómo administrar mis contraseñas?
 
@@ -41,11 +41,11 @@ Para más información, consulte esta [página](https://www.ovhcloud.com/es-es/w
 
 ### ¿Cómo transferir un sitio web y el correo a los servidores de OVHcloud? 
 
-Consulte la guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/fr/hosting/migrer-mon-site-chez-ovh/)".
+Consulte la guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.com/es/hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)".
 
 ### ¿Cómo alojar varios sitios web en un mismo plan de hosting?
 
-Consulte la guía "[Alojar varios sitios web](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) en un mismo hosting".
+Consulte la guía "[Alojar varios sitios web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) en un mismo hosting".
 
 ### ¿Cómo cambiar de plan de alojamiento?
 
@@ -54,7 +54,7 @@ Consulte la guía "[Alojar varios sitios web](https://docs.ovh.com/fr/hosting/mu
 > Para contratar el plan de hosting más adecuado para usted, consulte [esta página](https://www.ovhcloud.com/fr/web-hosting/).
 >
 
-Para cambiar de plan de [hosting](https://www.ovhcloud.com/fr/web-hosting/), acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento en la sección `Web Cloud`{.action}. A continuación, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y, en la sección `Suscripción`, haga clic en el botón `..`{.action} en el apartado `Producto` y luego en `Cambiar de producto`{.action}.
+Para cambiar de plan de [hosting](https://www.ovhcloud.com/fr/web-hosting/), acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento en la sección `Web Cloud`{.action}. A continuación, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y, en la sección `Suscripción`, haga clic en el botón `...`{.action} en el apartado `Producto` y luego en `Cambiar de producto`{.action}.
 
 A continuación, seleccione la nueva fórmula de alojamiento y la duración de la nueva suscripción. Lea los contratos correspondientes y haga clic en `Enviar`{.action}.
 
@@ -64,11 +64,11 @@ A continuación, seleccione la nueva fórmula de alojamiento y la duración de l
 >
 > - Si ha creado demasiadas direcciones de correo para cambiar a un plan inferior, guarde y elimine las direcciones menos utilizadas.
 >
-> - Si la cuota del nuevo plan de hosting es insuficiente, conéctese por [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) al alojamiento, guarde y elimine los directorios y archivos no necesarios.
+> - Si la cuota del nuevo plan de hosting es insuficiente, conéctese por [FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) al alojamiento, guarde y elimine los directorios y archivos no necesarios.
 >
 > - Si su nuevo plan de hosting incluye un número insuficiente de bases de datos o un volumen de almacenamiento, guarde y elimine los datos o las bases de datos no utilizadas. También puede contratar una [oferta de servidores de bases de datos](https://www.ovh.com/fr/cloud-databases/).
 >
-> - Si ha creado listas de [correo](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) con su plan de hosting, compruebe que la nueva solución incluya esta funcionalidad.
+> - Si ha creado listas de [correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) con su plan de hosting, compruebe que la nueva solución incluya esta funcionalidad.
 >
 > En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) o con nuestra [comunidad de usuarios ](https://community.ovh.com/en/).
 >
@@ -132,19 +132,19 @@ Si el sitio web aparece con esta URL debido a una manipulación, vuelva a su est
 > [!alert]
 >
 > La restauración del alojamiento de OVHcloud conlleva la restauración **del conjunto de sitios** que contiene.
->
+
 > Al restaurar un sitio web, el contenido del espacio FTP o el de la base de datos se sustituyen por una copia de seguridad. No podrá recuperar los datos del servidor FTP ni los de la base de datos antes de restaurarlos.
 >
 
 Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](https://docs.ovh.com/es/hosting/restaurar-espacio-almacenamiento-alojamiento-web/).
 
-Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client).
+Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](https://docs.ovh.com/es/hosting/web_hosting_importacion_de_una_base_de_datos_mysql/#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
 
 ### ¿Qué hacer si mi sitio web redirige al webmail de OVHcloud?
 
 ![webmail](images/webmail.png){.thumbnail}
 
-Esta anomalía indica una configuración errónea a nivel de los [servidores DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/) o de la [zona DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) asociada a su dominio.
+Esta anomalía indica una configuración errónea a nivel de los [servidores DNS](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/) o de la [zona DNS](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/) asociada a su dominio.
 
 El caso más común es el siguiente: usted ha contratado por separado su dominio y su alojamiento, por lo que no están conectados entre sí a través de su zona DNS.
 
@@ -154,11 +154,11 @@ Anote los servidores DNS indicados y acceda a la pestaña `Zona DNS`{.action}.
 
 Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Zona DNS`{.action} con los `servidores DNS` indicados en la pestaña del mismo nombre:
 
-- Si los elementos son idénticos, sustituya el objetivo `213.186.33.5` por el código de cuatro cifras indicado en la pestaña `Información general` con la mención `IPv4` (para más información sobre las operaciones a realizar, consulte las instrucciones de [esta guía](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/#en-pratique)).
+- Si los elementos son idénticos, sustituya el objetivo `213.186.33.5` por el código de cuatro cifras indicado en la pestaña `Información general` con la mención `IPv4` (para más información sobre las operaciones a realizar, consulte las instrucciones de [esta guía](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/)).
 
-- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), siga las instrucciones de [esta guía](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/#reinitialiser-les-serveurs-dns) para restaurarlos.
+- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/), siga las instrucciones de [esta guía](https://docs.ovh.com/es/domains/web_hosting_informacion_general_sobre_los_servidores_dns/#restaurar-los-servidores-dns) para restaurarlos.
 
-- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/), contacte con su Webmaster o busque un proveedor especializado a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+- Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](https://docs.ovh.com/es/hosting/lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/), contacte con su Webmaster o busque un proveedor especializado a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 ### ¿Qué hacer si mi sitio web muestra un error "La página no se redirige correctamente"?
 
