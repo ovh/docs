@@ -5,13 +5,15 @@ excerpt: Cómo añadir y gestionar las formas de pago en el área de cliente de 
 section: Pedidos, facturas y servicios
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 **Última actualización: 18/05/2022**
 
 ## Objetivo
 
 En el área de cliente de OVHcloud, puede registrar y gestionar diferentes formas de pago.
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696215450?h=0b07baf719&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 ## Requisitos
 
