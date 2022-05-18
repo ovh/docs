@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 1
 ---
 
-**Last updated 15th November 2021**
+**Last updated 18th May 2022**
 
 ## Objective
 
@@ -22,6 +22,13 @@ Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) t
 - An Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
 
 ## Instructions
+
+> [!warning]
+>
+> OLA is configured on all network interfaces. They will form a “private aggregation”.
+>
+> Following the implementation of OLA, the public IP will no longer be accessible.
+>
 
 ### Configuring OLA in the OVHcloud Control Panel
 
