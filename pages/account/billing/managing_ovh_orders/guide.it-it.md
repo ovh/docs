@@ -89,7 +89,7 @@ Si apre una finestra in cui puoi effettuare il monitoraggio in quattro step.
 
 ### Esercita il diritto di recesso
 
-L'articolo 12.1.2 delle nostre [Condizioni Generali di Servizio](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} precisa che "*i clienti che hanno la qualità di consumatore ai sensi dell'articolo introduttivo del Codice del Consumo francese, beneficiano di un diritto di recesso di 14 giorni*".
+L'articolo 14.1.1.2 delle nostre [Condizioni Generali di Servizio](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/9b6e834-contrat_genServices-IT-4.0.pdf) precisa che "*Il Cliente gode del diritto di recesso previsto dalla legge. Può esercitare tale diritto, senza doverne giustificare le ragioni e senza dover pagare alcuna penale, ad eccezione delle spese di restituzione, entro un periodo di quattordici (14) giorni a partire dal giorno successivo all'Ordine. Il diritto di recesso si esercita prima della data di scadenza di cui sopra attraverso il modulo disponibile a tale scopo nell'Interfaccia di Gestione, sia compilando il seguente modulo di recesso e indirizzandolo a OVHcloud a mezzo lettera raccomandata con ricevuta di ritorno, sia attraverso qualsiasi altra dichiarazione che esprima chiaramente la volontà di esercitare tale diritto.*"
 
 Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo di tale articolo.
 

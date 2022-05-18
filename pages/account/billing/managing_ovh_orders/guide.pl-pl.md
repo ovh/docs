@@ -9,7 +9,7 @@ section: Zamówienia, faktury i usługi
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 06/05/2022**
+**Ostatnia aktualizacja z dnia 18/05/2022**
 
 ## Wprowadzenie
 
@@ -89,7 +89,7 @@ Pojawi się poniższe okno umożliwiające monitorowanie w czterech krokach.
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
-Artykuł 12.1.2 Ogólnych [warunków świadczenia Usług](https://www.ovh.com/fr/support/documents_legaux/conditions%20generales%20de%20service.pdf){.action} wyjaśnia, że "*klienci, którzy są konsumentami w rozumieniu artykułu wstępnego Kodeksu Konsumenckiego, mają prawo do odstąpienia od umowy na 14 dni*".
+Artykuł 12.1.2 [Ogólne Warunki Korzystania z Usług](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/ab97c58-contrat_genServices-PL-2.1.pdf) wyjaśnia, że: "*Prawo do odstąpienia od umowy. Klient ma prawo do odstąpienia od Umowy. Klient może skorzystać z tego prawa bez konieczności uzasadniania przyczyn swojej decyzji ani podlegania jakimkolwiek karom, z wyjątkiem opłat z tytułu zwrotu, w ciągu 14 dni od dnia następującego po dniu złożenia Zamówienia. Prawo do odstąpienia od umowy musi zostać zrealizowane przed upływem terminu ważności za pośrednictwem formularza dostępnego w tym celu w Interfejsie zarządzania lub przez wypełnienie poniższego formularza rezygnacji oraz wysłanie go listem poleconym z potwierdzeniem odbioru do OVHcloud lub za pomocą jakiejkolwiek innej deklaracji wyraźnie wyrażającej wolę skorzystania z tego prawa*."
 
 Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu tego artykułu.
 
