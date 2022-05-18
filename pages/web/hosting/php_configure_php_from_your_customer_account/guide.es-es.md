@@ -34,7 +34,7 @@ Puede consultar la siguiente guía, en la que se explica cómo configurar el arc
 ## Conocer la versión actual
 En el área de cliente, seleccione su alojamiento en la sección «Alojamiento». La versión que utiliza su sitio (1) se incluye en «Versión PHP global».
 
-![](images/img_3314.jpg){.thumbnail}
+![php](images/3278.png){.thumbnail}
 Para modificar esta versión, haga clic en «Modificar la configuración», tal y cómo se muestra en la imagen superior (2).
 
 
@@ -74,29 +74,29 @@ Firewall de aplicación:
 
 
 
-![](images/img_4130.jpg){.thumbnail}
+![php](images/4130.png){.thumbnail}
 Para una configuración por defecto, le aconsejamos que seleccione las opciones indicadas en la captura de pantalla que se incluye más arriba.
 La modificación de la versión tardará unos minutos.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 A continuación, puede volver a modificar la versión PHP haciendo clic en «Modificar la configuración» > «Modificar la configuración actual».
 
-![](images/img_3317.jpg){.thumbnail}
+![php](images/3310.png){.thumbnail}
 
 
 ## Volver a la versión anterior
 Si la modificación de la versión PHP provoca problemas en su sitio, puede «dar marcha atrás» y volver a la versión anterior de PHP. Para ello, haga clic en «Modificar la configuración».
 
-![](images/img_3318.jpg){.thumbnail}
+![php](images/3312.png){.thumbnail}
 A continuación, haga clic en «Volver a la configuración».
 
-![](images/img_3319.jpg){.thumbnail}
+![php](images/3311.png){.thumbnail}
 Si no ha realizado ningún cambio en la versión de PHP, aparecerá el siguiente cuadro. En caso contrario, tan solo tendrá que elegir en el «Historial» la versión que desee.
 
-![](images/img_3320.jpg){.thumbnail}
+![php](images/3313.png){.thumbnail}
 La modificación de la versión tardará unos minutos.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Si desea volver a la versión de PHP anterior, le invitamos a consultar el apartado «¿Cómo saber si mi sitio web es compatible con una nueva versión de PHP?» a continuación.
 
 
@@ -125,7 +125,7 @@ A continuación, guárdelo con el formato «.php» y asígnele el nombre «info.
 Publique mediante FTP ([]({legacy}1380)) el archivo en la carpeta que desee, por ejemplo «/www/miwordpress/». 
 Abra su navegador y acceda a «info.php». Por ejemplo: «www.su-sitio-com/miwordpress/info.php».
 
-![](images/img_3321.jpg){.thumbnail}
+![php](images/3277.png){.thumbnail}
 
 
 ## He configurado un archivo «.htaccess» para forzar una versión de PHP, ¿qué va a pasar?

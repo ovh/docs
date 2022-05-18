@@ -32,7 +32,7 @@ In diesem Fall hilft Ihnen folgende Anleitung weiter: []({legacy}1207). Dort erf
 ## Welche Version wird aktuell verwendet?
 Wählen Sie in Ihrem Kundencenter unter "Hosting-Pakete" das gewünschte Hosting aus. Dort finden Sie die "Globale PHP Version" (1).
 
-![](images/img_3314.jpg){.thumbnail}
+![php](images/3278.png){.thumbnail}
 Um die verwendete PHP-Version zu ändern, klicken Sie auf "Die Konfiguration ändern" (2 im Bild).
 
 
@@ -66,29 +66,29 @@ Application Firewall :
 
 
 
-![](images/img_3315.jpg){.thumbnail}
+![php](images/4130.png){.thumbnail}
 Für eine Standard-Konfiguration empfehlen wir die in obigem Screenshot angewählten Einstellungen.
 Es kann einige Minuten dauern, bis die Änderung wirksam wird.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Danach können Sie die PHP-Version jederzeit erneut ändern: Klicken Sie dafür auf "Die Konfiguration ändern" und anschließend auf "Die derzeitige Konfiguration ändern".
 
-![](images/img_3317.jpg){.thumbnail}
+![php](images/3310.png){.thumbnail}
 
 
 ## Zur vorherigen Konfiguration zurückkehren
 Wenn es durch die Änderung der PHP-Version zu Problemen auf Ihrer Webseite kommt, können Sie ganz einfach zur vorherigen Konfiguration zurückkehren. Auch hierfür klicken Sie zunächst auf "Die Konfiguration ändern".
 
-![](images/img_3318.jpg){.thumbnail}
+![php](images/3312.png){.thumbnail}
 Klicken Sie dann auf "Zurück zur vorherigen Konfiguration".
 
-![](images/img_3319.jpg){.thumbnail}
+![php](images/3311.png){.thumbnail}
 Wenn Sie die PHP-Version mehrfach geändert haben, können Sie nun unter "Ursprüngliche Wahl" die gewünschte Version auswählen. Sollten Sie nur eine einzige Änderung der PHP-Version vorgenommen haben, wird die Auswahl deaktiviert.
 
-![](images/img_3320.jpg){.thumbnail}
+![php](images/3313.png){.thumbnail}
 Es kann einige Minuten dauern, bis die Änderung wirksam wird.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Wenn Sie aufgrund von Problemen zu einer älteren PHP-Version zurückkehren müssen, empfehlen wir Ihnen den folgenden Abschnitt "Wie kann ich sicherstellen, dass meine Webseite mit einer neuen PHP-Version kompatibel ist?".
 
 
@@ -116,7 +116,7 @@ Speichern Sie sie anschließend im Format .php unter dem Namen info.php
 Veröffentlichen Sie die Datei via FTP ([]({legacy}1380)) im gewünschten Verzeichnis, z. B. /www/meinwordpress/
 In Ihrem Webbrowser können Sie jetzt dieses info.php aufrufen, z. B. über www.meine-seite.com/meinwordpress/info.php
 
-![](images/img_3321.jpg){.thumbnail}
+![php](images/3277.png){.thumbnail}
 
 
 ## Ich habe über die .htaccess-Datei eine PHP-Version definiert. Was passiert nun damit?
