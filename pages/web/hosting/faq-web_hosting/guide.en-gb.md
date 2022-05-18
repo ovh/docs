@@ -5,13 +5,13 @@ slug: web-hosting-faq
 section: Getting started
 ---
 
-**Last updated 07/04/2022**
+**Last updated 7th April 2022**
 
 ## Manage your solution
 
 ### How do I configure my hosting space?
 
-To configure your hosting, first log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Hosting` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
+To configure your hosting, first log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Hosting plans` section, you can manage your SSL certificates, the PHP version, the CDN option, the multisite, databases, etc.
 
 **Tips and tricks**: To help you configure your hosting, please check the `Getting started` section [here](https://docs.ovh.com/gb/en/hosting/).
 
@@ -29,7 +29,7 @@ Once you have logged in to your Control Panel:
 
 ### How do I put my website online? 
 
-To put your website online, you need to have a [domain name](https://www.ovhcloud.com/en-gb/domains/) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [web hosting](https://www.ovhcloud.com/en-gb/web-hosting/) plan to set up your website on.
+To put your website online, you need to have a [domain name](https://www.ovhcloud.com/en-gb/domains/) corresponding to the web address from which your website will be accessible (e.g.: *mydomain.com*). You will also need a [Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/) plan to set up your website on.
 
 To follow the steps required to build your website, go to this [page](https://www.ovhcloud.com/en-gb/web-hosting/uc-website/), then follow the instructions in our guide on [Publishing a website on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/).
 
@@ -39,7 +39,7 @@ To follow the steps required to build your website, go to this [page](https://ww
 
 Read our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/).
 
-### How do I host multiple websites on my web hosting plan? 
+### How do I host multiple websites on my Web Hosting plan? 
 
 See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
 
@@ -47,10 +47,10 @@ See our guide [Hosting multiple websites on your Web Hosting plan](https://docs.
 
 > [!primary]
 >
-> To order the web hosting plan that best suits your needs, visit [this page](https://www.ovhcloud.com/en-gb/web-hosting/).
+> To order the Web Hosting plan that best suits your needs, visit [this page](https://www.ovhcloud.com/en-gb/web-hosting/).
 >
 
-To change your [shared hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Web Cloud`{.action}, then on `Hosting plans`{.action}. Select the web hosting plan concerned, then, in the `Plan` section, click on the `...`{.action} button in the `Solution` part, then on `Change plan`{.action}.
+To change your [shared hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on `Web Cloud`{.action}, then on `Hosting plans`{.action}. Select the Web Hosting plan concerned, then, in the `Plan` section, click on the `...`{.action} button in the `Solution` part, then on `Change plan`{.action}.
 
 Then select your new hosting plan and the duration of your new subscription. Review the corresponding contracts, then click on `Send`{.action}.
 
@@ -73,9 +73,9 @@ Then select your new hosting plan and the duration of your new subscription. Rev
 
 When you cancel or delete your hosting plan, the email solution attached to it will also be cancelled. To keep your email addresses, you will need to detach the email solution before cancelling the hosting plan.<br>
 
-To do this, go to your web hosting plan’s `General information`{.action} tab. In the **Configuration** section, click on the `...`{.action} button to the right of **Email addresses**. Click `Detach my email option`{.action} and follow the instructions to order an independent email solution that lets you keep your email addresses you have already created.
+To do this, go to your Web Hosting plan’s `General information`{.action} tab. In the **Configuration** section, click on the `...`{.action} button to the right of **Email addresses**. Click `Detach my email option`{.action} and follow the instructions to order an independent email solution that lets you keep your email addresses you have already created.
 
-## Diagnostic
+## Diagnostics 
 
 > [!warning]
 >
@@ -92,7 +92,7 @@ Then check out the [current events on our infrastructure](https://www.status-ovh
 
 ![site_en_construction](images/site_en_construction.png){.thumbnail}
 
-When you install a web hosting plan, OVHcloud implements this page as an **index.html** file, contained in your `www` FTP server’s folder.
+When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your `www` FTP server’s folder.
 
 This file is automatically disabled when you create your [1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
 
@@ -142,7 +142,7 @@ If your website has a database, please refer to our guide on [Restoring a backup
 
 This anomaly indicates an incorrect configuration in the [DNS servers](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/) or the [DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/) associated with your domain name.
 
-The most common case is: If you have ordered your domain name and web hosting plan separately, they will not be linked via their DNS zone.
+The most common case is: If you have ordered your domain name and Web Hosting plan separately, they will not be linked via their DNS zone.
 
 Go to the `Domain names`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click on the domain name concerned, then on the `DNS servers`{.action} tab.
 
