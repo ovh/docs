@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 1
 ---
 
-**Dernière mise à jour le 15/11/2021**
+**Dernière mise à jour le 18/05/2022**
 
 ## Objectif
 
@@ -22,6 +22,13 @@ L'aggrégation se base sur la technologie IEEE 802.3ad, ou Link Aggregation Cont
 - Un système d'exploitation / hyperviseur supportant le protocole d'aggrégation 802.3ad (LACP)
 
 ## En pratique
+
+> [!warning]
+>
+> La configuration OLA se fait sur la totalité des interfaces réseaux. Elles formeront un agrégat de type « agrégation privée ».
+>
+> Suite à la mise en oeuvre d'OLA, l'IP publique ne sera donc plus accessible.
+>
 
 ### Configurer OLA dans votre espace client OVHcloud
 
