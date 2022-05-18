@@ -47,7 +47,7 @@ To correctly display your website, this connection must be established in the `M
 
 ### Resolving the most common cause of an "Index of" page
 
-You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP](../log-in-to-storage-ftp-web-hosting/) connection. Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
+You have imported the files of your website **mydomain.ovh** into the `www` folder on your OVHcloud Web Hosting plan through an [FTP connection](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/). Your domain name however is not linked to this folder in the `Root folder` column of your `Multisite` configuration.
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
