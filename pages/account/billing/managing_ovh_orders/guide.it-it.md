@@ -95,7 +95,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 
 > [!warning]
 >
-> Il diritto di recesso riguarda soltanto i privati e si applica solo ai nuovi ordini. Non puoi quindi farcela valere:
+> Il diritto di recesso riguarda soltanto i privati e si applica solo ai nuovi ordini. Non è quindi applicabile nei seguenti casi:
 >
 > - rinnovi;
 > - se il tuo account cliente OVHcloud è di tipo [diverso da Privato](https://docs.ovh.com/fr/customer/tout-savoir-sur-identifiant-client/#modifier-le-type-de-compte).

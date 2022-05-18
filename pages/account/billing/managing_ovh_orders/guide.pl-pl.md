@@ -89,7 +89,7 @@ Pojawi się poniższe okno umożliwiające monitorowanie w czterech krokach.
 
 ### Korzystanie z prawa do odstąpienia od umowy
 
-Artykuł 12.1.2 [Ogólne Warunki Korzystania z Usług](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/ab97c58-contrat_genServices-PL-2.1.pdf) wyjaśnia, że: "*Prawo do odstąpienia od umowy. Klient ma prawo do odstąpienia od Umowy. Klient może skorzystać z tego prawa bez konieczności uzasadniania przyczyn swojej decyzji ani podlegania jakimkolwiek karom, z wyjątkiem opłat z tytułu zwrotu, w ciągu 14 dni od dnia następującego po dniu złożenia Zamówienia. Prawo do odstąpienia od umowy musi zostać zrealizowane przed upływem terminu ważności za pośrednictwem formularza dostępnego w tym celu w Interfejsie zarządzania lub przez wypełnienie poniższego formularza rezygnacji oraz wysłanie go listem poleconym z potwierdzeniem odbioru do OVHcloud lub za pomocą jakiejkolwiek innej deklaracji wyraźnie wyrażającej wolę skorzystania z tego prawa*."
+Artykuł 12.1.2 [Ogólne Warunki Korzystania z Usług](https://storage.gra.cloud.ovh.net/v1/AUTH_325716a587c64897acbef9a4a4726e38/contracts/ab97c58-contrat_genServices-PL-2.1.pdf) wyjaśnia, że: "*Prawo do odstąpienia od umowy. (...) Prawo do odstąpienia od umowy musi zostać zrealizowane przed upływem terminu ważności za pośrednictwem formularza dostępnego w tym celu w Interfejsie zarządzania lub przez wypełnienie poniższego formularza rezygnacji oraz wysłanie go listem poleconym z potwierdzeniem odbioru do OVHcloud lub za pomocą jakiejkolwiek innej deklaracji wyraźnie wyrażającej wolę skorzystania z tego praw.*."
 
 Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu tego artykułu.
 
