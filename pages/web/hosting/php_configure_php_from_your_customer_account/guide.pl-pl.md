@@ -32,7 +32,7 @@ Skorzystaj z przewodnika na temat konfiguracji pliku .ovhconfig: []({legacy}1207
 ## Sprawdzenie aktualnej wersji
 Zaloguj się do panelu klienta i kliknij na swój hosting w części "Platformy". W linii "Globalna wersja PHP" będzie widoczna wersja używana przez Twoją stronę (1).
 
-![](images/img_3314.jpg){.thumbnail}
+![php](images/3278.png){.thumbnail}
 Aby zmienić wersję, kliknij na link "Zmień konfigurację" (2 na powyższym zdjęciu).
 
 
@@ -73,29 +73,29 @@ Tryb bezpieczeństwa:
 
 
 
-![](images/img_4130.jpg){.thumbnail}
+![php](images/4130.png){.thumbnail}
 Zalecamy w konfiguracji domyślnej wybranie opcji wskazanych na powyższym zrzucie ekranu.
 Zmiana nastąpi w ciągu kilku minut.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Następnie będziesz mógł ponownie zmienić wersję PHP klikając na "Zmień konfigurację" i "Zmień bieżącą konfigurację".
 
-![](images/img_3317.jpg){.thumbnail}
+![php](images/3310.png){.thumbnail}
 
 
 ## Powrót do poprzedniej wersji
 Jeśli zmiana wersji PHP powoduje problemy z działaniem Twojej strony, możesz wrócić do poprzedniej konfiguracji PHP. W tym celu kliknij na przycisk "Zmień konfigurację".
 
-![](images/img_3318.jpg){.thumbnail}
+![php](images/3312.png){.thumbnail}
 Następnie kliknij na "Powrót do poprzedniej konfiguracji".
 
-![](images/img_3319.jpg){.thumbnail}
+![php](images/3311.png){.thumbnail}
 Jeśli nie wykonałeś zmian wersji PHP, pojawi się ta ramka. W przeciwnym wypadku wystarczy wybrać wersję w zakładce "Wybór historyczny".
 
-![](images/img_3320.jpg){.thumbnail}
+![php](images/3313.png){.thumbnail}
 Zmiana nastąpi w ciągu kilku minut.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 Jeśli musisz wrócić do poprzedniej wersji php, sugerujemy sprawdzenie części "Jak upewnić się, czy moja strona jest kompatybilna z nową wersją PHP?"
 
 
@@ -127,7 +127,7 @@ Następnie należy zapisać plik w formacie .php i nazwać go info.php.
 Wgraj plik na FTP ([]({legacy}1380)) w wybranym katalogu, na przykład /www/wordpress/.
 W przeglądarce www otwórz ten plik info.php. Na przykład: www.twoja-strona.com/wordpress/info.php
 
-![](images/img_3321.jpg){.thumbnail}
+![php](images/3277.png){.thumbnail}
 
 
 ## Skonfigurowałem plik .htaccess, aby wymusić wersję PHP. Czy to będzie działać?

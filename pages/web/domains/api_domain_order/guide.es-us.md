@@ -581,7 +581,7 @@ Below is the exhaustive list of required configurations for a domain name.
 > [!primary]
 >
 > Here, the `OWNER_CONTACT` represents a "resource" API, namely `/me/contact`, or more precisely `/domain/contact`.
-> The API routes used to create these contacts are described in section [Contact Management](../api-contacts).
+> The API routes used to create these contacts are described in section [Contact Management](../api-contact).
 
 ### CRUD on Product Configurations
 

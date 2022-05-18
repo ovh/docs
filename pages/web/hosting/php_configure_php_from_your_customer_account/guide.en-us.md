@@ -34,7 +34,7 @@ Follow this guide to do so: []({legacy}1207)
 ## Check your current PHP version
 Log in to your customer account, go to the "Hostings" section on the left-hand side and click on the relevant hosting package. You will find the version of PHP which your site is currently running next to the phrase "Global PHP version"(1).
 
-![](images/img_3314.jpg){.thumbnail}
+![php](images/3278.png){.thumbnail}
 To alter this version, click on "Modify configuration " (2 in the image opposite).
 
 
@@ -62,29 +62,29 @@ Application firewall:
 
 
 
-![](images/img_4130.jpg){.thumbnail}
+![php](images/4130.png){.thumbnail}
 We suggest that you choose the options indicated in the screen shot above for default configuration.
 There will be a short delay while the modification is taking place.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 If you want to modify the PHP version again at a later date, you just have to click on "Modify configuration" and then "Modify current version".
 
-![](images/img_3317.jpg){.thumbnail}
+![php](images/3310.png){.thumbnail}
 
 
 ## Restore previous version
 If changing your PHP version caused issues on your website you can return to a previous version by clicking on "Modify configuration".
 
-![](images/img_3318.jpg){.thumbnail}
+![php](images/3312.png){.thumbnail}
 Then click "Return to a previous configuration".
 
-![](images/img_3319.jpg){.thumbnail}
+![php](images/3311.png){.thumbnail}
 If you have previously modified the version of PHP which your site runs you just have to select the version that you want from the list of "previous choices"
 
-![](images/img_3320.jpg){.thumbnail}
+![php](images/3313.png){.thumbnail}
 There will be a short delay while the modification is taking place.
 
-![](images/img_3316.jpg){.thumbnail}
+![php](images/3309.png){.thumbnail}
 If you do want to return to a previous version, we suggest you refer to the paragraph below: "How to make sure that my website is compatible with a new version of PHP?”
 
 
@@ -114,7 +114,7 @@ info.php
 Publish the file via FTP to the desired folder, eg. /www/mywordpress/
 Then go to this info.php file in your web browser. For example www.your-site.com/mywordpress/info.php
 
-![](images/img_3321.jpg){.thumbnail}
+![php](images/3277.png){.thumbnail}
 
 
 ## I configured a .htaccess file to force a specific version of PHP.
