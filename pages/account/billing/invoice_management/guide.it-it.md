@@ -1,118 +1,140 @@
 ---
-title: 'Gestire le fatture OVHcloud'
+title: Gestire le fatture OVHcloud
 slug: gestire-fatture-ovhcloud
-excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
+excerpt: Come amministrare fatture e pagamenti dallo Spazio Cliente
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 08/04/2021**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 12/05/2022**
 
 ## Obiettivo
 
-Lo Spazio Cliente OVHcloud offre un’amministrazione completa di tutti i servizi, inclusa la possibilità di consultare, gestire e saldare le fatture.
+OVHcloud mette a tua disposizione uno spazio per consultare, gestire e saldare le tue fatture.
 
-**Questa guida ti mostra come effettuare le diverse azioni relative alla fatturazione.**
+**Come gestire le fatture dallo Spazio Cliente OVHcloud**
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo Spazio Cliente, sezione [Prodotti e servizi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Contratti`{.action}.
+> In base al tuo luogo di residenza e alla legislazione in vigore, e al prodotto o ai prodotti in questione, è possibile che alcune sezioni di questa guida possano variare e/o non essere applicate in base alla tua situazione. In caso di dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (clicca sul tuo nome in alto a destra e poi, nel menu contestuale, sulla `Gestione dei servizi`{.action} e poi sulla scheda `Contratti`{.action}).
 >
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Essere connesso come contatto di fatturazione del servizio (per maggiori informazioni sulle diverse tipologie di contatti, consulta la guida [Gestire i contatti dei servizi OVHcloud](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) come [contatto di fatturazione](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/) del servizio
 
 ## Procedura
 
 > [!primary]
-> Aggiornamento - Gennaio 2021
 >
-Una volta emessa la fattura da OVHcloud, viene inviata un'email con un link cliccabile e accessibile direttamente nel tuo Spazio Cliente OVHcloud. Tutte le fatture sono disponibili anche dal cruscotto dello Spazio Cliente OVHcloud.
+> Ogni fattura viene inviata via email e accessibile tramite un link cliccabile. accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), Tutte le fatture sono disponibili nella scheda `Dashboard`{.action} dello Spazio Cliente.
 >
 
 ### Elementi della fattura
 
-La fattura è il documento generato in seguito al pagamento di un ordine o al rinnovo automatico di un servizio. Contiene il riepilogo dei prodotti pagati o in attesa di pagamento, con i periodi di rinnovo e gli importi corrispondenti. Il numero di riferimento delle fatture inizia sempre con il codice della sede OVHcloud di emissione (ad esempio “IT” per l’Italia, “ES” per la Spagna, “FR” per la Francia...).
+La fattura del tuo servizio OVHcloud ti viene inviata in seguito al pagamento di un ordine o al rinnovo. che riassume gli importi corrispondenti all'acquisto o al rinnovo dei tuoi prodotti e i loro periodi di validità.
 
 ![Dettaglio di una fattura](images/invoice_ovh.png){.thumbnail}
 
 |Numero|Descrizione|
 |---|---|
-|1|Informazioni relative alla fattura: codice di riferimento, data di emissione e scadenza, buono d’ordine associato, metodo di pagamento e identificativo cliente.|
-|2|Riepilogo delle informazioni del contatto di fatturazione.|
-
-Più in basso vengono visualizzati i dettagli dei servizi fatturati:
-
-- <b>Abbonamento</b>: descrizione del servizio e del periodo fatturato
-- <b>Dominio</b>: riferimento del servizio fatturato
-- <b>Quantità</b>: numero di unità del servizio fatturato
-- <b>Prezzo unitario</b> e <b>Prezzo IVA esclusa</b>: tariffa del servizio fatturato
-
-L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in corrispondenza della voce <b>Totale IVA inclusa</b>.
-
-> [!primary]
->
-> Se in corrispondenza del metodo di pagamento compare la dicitura “Informativa conto”, significa che si tratta di un rinnovo automatico. In questo caso il metodo di pagamento utilizzato è quello impostato nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
->
+|1|Informazioni sulla fattura: riferimento, data di emissione, buono d'ordine al quale si riferisce, tipo di pagamento e identificativo cliente interessato.|
+|2|Informazioni del contatto di fatturazione|
+|3|Abbonamento: una descrizione del servizio e del periodo fatturato|
+|4|Riferimento: il riferimento del servizio fatturato|
+|5|Quantità: il numero di unità del servizio fatturato|
+|6|Prezzo unitario (IVA esclusa) di un prodotto|
+|7|Importo totale (IVA Compresa) della fattura|
 
 ### Sezione fatturazione dello Spazio Cliente
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) Clicca sul tuo nome in alto a destra e poi sul nuovo menu che appare su `Fatture`{.action}.
 
-![Spazio cliente](images/hubinvoices.png){.thumbnail}
+![Fatturazione](images/hubinvoices.png){.thumbnail}
 
 Visualizzi una tabella con tutte le fatture associate al tuo identificativo:
 
 ![Riepilogo delle fatture](images/billing_section.png){.thumbnail}
 
-Per ciascuna vengono riportate queste informazioni:
-
-- riferimento della fattura (ad esempio, IT12345678)
-- data di emissione
-- importo IVA inclusa
-- importo da saldare
-- data di scadenza per il pagamento
-- pulsante `...`{.action} con le diverse azioni disponibili
-
 > [!primary]
 >
-> Se l’importo da saldare compare in rosso, significa che la fattura è in attesa di pagamento. La colonna con la data ultima per il pagamento indicherà se il saldo del servizio deve essere eseguito immediatamente.
+> Se una fattura è in attesa di pagamento (stato `Impagato`), l'importo dovuto è indicato in rosso nella colonna `Saldo`.
 >
 
-Se la fattura non è associata a un rinnovo automatico, nelle colonne relative all’importo da saldare e alla data di scadenza comparirà la dicitura “Informazione non disponibile”. Per visualizzare queste informazioni clicca sui tre puntini in corrispondenza della fattura interessata, che permettono di effettuare queste azioni:
+Per ogni riga della tabella, visualizzi queste informazioni:
+
+- `Referenza`{.action} della fattura;
+- `Numero dell'ordine`{.action} corrispondente;
+- `Data di emissione`{.action} della fattura;
+- `Importo IVA esclusa`{.action};
+- `Importo IVA inclusa`{.action};
+- `Saldo`{.action} da saldare;
+- `Stato`{.action} della fattura (`Impagato` o `Pagato`).
+
+Cliccando su uno dei pulsanti `...`{.action} a destra della tabella, potrai anche:
+
+- `Visualizza in HTML`{.action}: la fattura comparirà sul tuo browser in una nuova scheda;
+- `Visualizza in PDF`{.action}: una versione PDF scaricabile dalla tua fattura sarà generata automaticamente.
 
 ![Azioni sulle fatture](images/actions_choices.png){.thumbnail}
 
-- `Visualizza in HTML`{.action}: il documento si aprirà in una nuova scheda del browser
-- `Visualizza in PDF`{.action}: il documento verrà generato in formato PDF e il file sarà disponibili al download
-- `Visualizza i dettagli di questa fattura`{.action}\: questa opzione consente di visualizzare lo storico delle operazioni effettuate sulla fattura
+> [!primary]
+>
+> Se una delle tue fatture è in attesa di pagamento, visualizzi un pulsante `Salda subito l'importo dovuto`{.action} cliccando su `...`{.action}.
+>
 
-Per semplificare la lettura della tabella, in alto a destra sono disponibili alcuni filtri:
+##### **Filtri**
+
+Sono disponibili diversi filtri:
 
 ![Filtri](images/sort_filters.png){.thumbnail}
 
-Per trovare una fattura specifica è possibile inserire il numero di riferimento o verificare i documenti emessi in un determinato periodo: tre mesi, sei mesi, un anno o un intervallo determinato.
+Per recuperare una fattura specifica, inserisci il numero di riferimento, l'ordine associato o la data di emissione.
 
-Per scaricare in formato CSV un file Excel contenente le fatture selezionate, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e seleziona l’opzione `Esporta in CSV`{.action}. Il file mostrerà l’importo, il riferimento e la data di emissione di queste fatture.
+##### **Azioni di massa**
 
-#### Salda le tue fatture <a name="salda-fatture"></a>
+tramite il menu `Azioni massive`{.action}, puoi esportare in formato.*csv* o *.pdf* il riepilogo delle tue fatture. I file creati mostreranno importo, riferimento e data di emissione.
 
-Per procedere al saldo delle fatture in attesa di pagamento è sufficiente selezionare l’opzione `Salda subito l’importo dovuto`{.action}.
+Per esportare tutte le fatture, utilizza i pulsanti `Export tutto in CSV`{.action} o `Export tutto in PDF`{.action}.
+
+![export_all](images/export_all.png){.thumbnail}
+
+Per esportare solo una parte del prodotto, seleziona le caselle corrispondenti nella prima colonna della tabella per selezionare le fatture che ti interessano. Due nuove azioni, `Esporta la selezione in formato CSV`{.action} o `Esporta la selezione in formato PDF`{.action}, saranno disponibili nel menu `Azioni massive`{.action}.
+
+![export_selection](images/export_selection.png){.thumbnail}
+
+#### Paga le tue fatture
+
+Per procedere al saldo delle fatture in attesa di pagamento, clicca sul menu `Azioni massive`{.action} e poi sul pulsante `Salda subito l'importo dovuto`{.action}.
 
 ![Pagamento dell’importo dovuto](images/pay_debt.png){.thumbnail}
 
-Verrà creato un buono d’ordine e, una volta effettuato il pagamento, la situazione risulterà regolarizzata.
+Verrà creato un [buono d'ordine](https://docs.ovh.com/it/billing/gestire-ordini-ovh/#il-buono-dordine). Una volta effettuato il pagamento, la situazione risulterà regolarizzata.
 
-### Verifica i pagamenti
+#### Richiedi l'annullamento di una fattura
 
-Tutti i pagamenti effettuati sono disponibili nella sezione `Fatturazione` dello Spazio Cliente, nella scheda `Controllo dei pagamenti`{.action}. In questa pagina è possibile consultare le fatture e visualizzare il metodo di pagamento utilizzato. Il riferimento dei giustificativi di pagamento inizia sempre per “PA_IT”.
+> [!primary]
+>
+> Per richiedere la disattivazione del tuo servizio alla data di scadenza, segui le indicazioni di questa [guida](https://docs.ovh.com/it/billing/how-to-cancel-your-services/).
+>
+
+Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](https://docs.ovh.com/it/billing/gestire-ordini-ovh/#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
+<br> Clicca sul tuo nome in alto a destra e seleziona `Crea un ticket`{.action}.
+
+### Controlla i tuoi pagamenti
+
+Visualizza lo storico dei pagamenti effettuati nelle `Fatture`{.action} e `Controllo di pagamenti`{.action}. In questo modo è possibile collegare ciascuna fattura al pagamento associato.
 
 ![Verifica dei pagamenti](images/payment_tracking.png){.thumbnail}
 
-Proprio come per le fatture, è possibile esportare i giustificativi in formato CSV e filtrare i risultati mostrati nella tabella specificando un intervallo di tempo definito.
+In questo spazio è possibile esportare anche i giustificativi in formato *.csv*, utilizzando il pulsante `Esporta in CSV`{.action}(1). Sono disponibili anche diversi filtri utilizzando il pulsante `Filtra`{.action}(2).
 
 > [!primary]
 >
@@ -121,4 +143,9 @@ Proprio come per le fatture, è possibile esportare i giustificativi in formato 
 
 ## Per saperne di più
 
+[Gestire il rinnovo dei servizi OVHcloud](https://docs.ovh.com/it/billing/imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/)
+
+[Gestire i metodi di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/)
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+
