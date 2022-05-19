@@ -6,7 +6,7 @@ section: Optimiser son site
 order: 2
 ---
 
-**Dernière mise à jour le 13/05/2022**
+**Dernière mise à jour le 19/05/2022**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 > [!success]
 > 
-> **Envie de plus de puissance temporairement ?**
+> **Besoin de booster temporairement votre hébergement ?**
 >
 > Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
 >
