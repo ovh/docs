@@ -59,9 +59,9 @@ Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](https://docs.ovh.
 
 Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
-- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern` (1);
+- Setzen Sie einen Haken bei `Auch die Subdomain www.mydomain.ovh ändern`{.action} (1);
 - Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an;
-- Klicken Sie auf `Weiter` (3).
+- Klicken Sie auf `Weiter`{.action} (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
 

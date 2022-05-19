@@ -31,7 +31,7 @@ If a `Multisite` configuration is not correctly set up, your website may display
 
 ### Understanding the origin of the "Index of" page
 
-Your domain name is connected via the `Multisite`{.action} section of your hosting to a directory (a `Root folder`) on your [FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) server.
+Your domain name is connected via the `Multisite`{.action} section of your hosting to a directory (a `Root folder`) on your [FTP server](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/).
 
 The **Index of** page indicates that the directory does not contain an **index.php** or **index.html** file. Such a file functions as the "entry point" of your website.
 
@@ -57,9 +57,9 @@ Modify the `Root folder` by clicking on the `...`{.action} button in the row of 
 
 In the window that opens:
 
-- Select the `Also modify the www.mydomain.ovh sub-domain`{.action} (1) box.
-- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2).
-- Click on `Next` (3).
+- Select the `Also modify the www.mydomain.ovh sub-domain`{.action} (1) box;
+- Specify the directory containing your site's **index.php** or **index.html** file as `Root folder` (2);
+- Click on `Next`{.action} (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
 

@@ -60,8 +60,8 @@ Modifique el `Carpeta raíz` haciendo clic en el botón `...`{.action} a la dere
 
 En la nueva ventana:
 
-* Marque la casilla `Editar también el subdominio www.mydomain.ovh`{.action} (1).
-* Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2).
+* Marque la casilla `Editar también el subdominio www.mydomain.ovh`{.action} (1);
+* Indique el directorio que contiene el archivo **index.php** o **index.html** del sitio web como `Carpeta raíz` (2);
 * Haga clic en `Siguiente` (3).
 
 ![change_root_folder](images/change_root_folder01.png){.thumbnail}
