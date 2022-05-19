@@ -12,7 +12,7 @@ order: 2
 
 Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
-**Découvrez comment faire évoluer votre offre d'hébergement OVHcloud.**
+**Découvrez comment faire évoluer votre offre d'hébergement OVHcloud avec un minimun d'interruption.**
 
 ## Prérequis
 
@@ -62,7 +62,7 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 >
 > La procédure suivante ne s'applique **que si vous avez activé l'offre de messagerie associée au Start 10M**.
 >
-> Dans le cas contraire, suivez les instructions du [paragraphe précédent](#modify).
+> Si vous n'avez pas activé l'offre de messagerie, les instructions du [paragraphe précédent](#modify) seront suffisantes.
 >
 
 Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
@@ -83,7 +83,7 @@ L'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ne permet pas d'av
 
 Avant de passer de l'offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à l'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml), vérifiez donc que votre hébergement ne comporte qu'un seul site.
 
-#### Bases de données
+#### Bases de données Start SQL
 
 Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre comporte assez de [bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/). Vérifiez aussi qu'elles sont de tailles suffisantes.
 
