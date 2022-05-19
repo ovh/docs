@@ -21,7 +21,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ## En pratique
 
-> [!primary]
+> [!success]
 > 
 > **Envie de plus de puissance temporairement ?**
 >
@@ -45,7 +45,7 @@ Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouv
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
 > Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 >
-> Les éléments suivants concernent les offres payantes. Pour faire évoluer votre [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), suivez ces [instructions](#start10m)
+> Les éléments suivants concernent les offres payantes. Pour faire évoluer votre [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), suivez ces [instructions](#start10m).
 >
 
 > [!warning]
@@ -74,13 +74,13 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
 
-1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique);<br>
-2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action};<br>
-3. Créez un [ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), afin de demander, si vous le souhaitez, la suppression accélérée de votre offre (Une adresse e-mail Start 10M est conservée 14 jours par défaut, afin d'éviter toute perte de données suite à une erreur de manipulation);<br>
-4. [Commandez une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/);<br>
-5. Importez, si besoin, votre site dans votre [nouvel espace d'hébergement](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage);<br>
-6. [Ajoutez le nom de domaine de votre site au multisite de votre nouvelle offre](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine);<br>
-7. [Recréez si besoin votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) et [importez vos messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
+2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action}.<br>
+3. Créez un [ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), afin de demander, si vous le souhaitez, la suppression accélérée de votre offre (une adresse e-mail Start10M est conservée 14 jours par défaut, afin d'éviter toute perte de données suite à une erreur de manipulation).<br>
+4. [Commandez une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/).<br>
+5. Importez, si besoin, votre site dans votre [nouvel espace d'hébergement](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).<br>
+6. [Ajoutez le nom de domaine de votre site au multisite de votre nouvelle offre](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
+7. [Recréez si nécessaire votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) et [importez vos messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
 
 ### Vérifier que votre hébergement est compatible avec une offre inférieure <a name="checks"></a>
 
@@ -111,8 +111,8 @@ Cette action vous permettra de commander une offre CloudDB indépendante de votr
 
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
-1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique);<br>
-2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+1. Sauvegardez vos données en suivant les instructions de ce [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+2. Supprimez votre serveur CloudDB via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### Espace FTP
 
@@ -124,7 +124,7 @@ Le quota utilisé sur votre hébergement FTP est visible dans la partie `Héberg
 
 #### Adresses e-mail
 
-Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses non-nécessaires, après les avoir [sauvegardées](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) si nécessaire.
+Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses superflues, après les avoir [sauvegardées](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) si nécessaire.
 
 Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer votre hébergement sur une offre inférieure, vous pouvez également commander une nouvelle offre de messagerie **MX Plan**. Dans la partie `Emails`{.action} de votre espace client, cliquez sur l'offre concernée puis sur le bouton  `...`{.action} à droite de `Offre`. Cliquez enfin sur `Changer d'offre`{.action}.
 
@@ -134,8 +134,9 @@ Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer v
 
 La fonctionnalité [Mailing lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) et [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
 
-Pour passer votre hébergement sur une offre [Perso], vous devrez donc dans un premier temps en supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br>
-Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre concernée puis cliquez sur `...`{.action} à droite de `Offre`{.action}. Cliquez enfin sur `Changer d'offre`{.action}).
+Pour passer votre hébergement sur une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), vous devrez donc dans un premier temps en supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+
+Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre concernée puis cliquez sur `...`{.action} à droite de `Offre`{.action}. Cliquez enfin sur `Changer d'offre`{.action}.
 
 ## Aller plus loin <a name="gofurther"></a>
 
