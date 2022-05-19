@@ -56,13 +56,13 @@ Then select your new hosting plan and the duration of your new subscription. Rev
 
 > [!warning]
 >
-> Before switching to a "lower" offer (for example, before switching from a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) offer to a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) offer), check that your hosting usage is compatible with your new formula:
+> Before switching to a "lower" offer (for example, before switching from a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) offer to a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) offer), check that your hosting usage is compatible with your new plan:
 >
-> - If you have created too many email addresses to upgrade to a lower plan, save and then delete the least used addresses;
+> - If you have created too many email addresses to upgrade to a lower plan, save and then delete the least used addresses.
 >
-> - If the quota for the new hosting plan is insufficient, log in to your hosting plan via [FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/), save and delete any unnecessary folders and files;
+> - If the quota for the new hosting plan is insufficient, log in to your hosting plan via [FTP](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/), save and delete any unnecessary folders and files.
 >
-> - If your new hosting plan does not have enough databases or storage volume, back up and delete any unused data or databases. You can also order a [database server solution](https://www.ovh.co.uk/cloud/cloud-databases/);
+> - If your new hosting plan does not have enough databases or storage volume, back up and delete any unused data or databases. You can also order a [database server solution](https://www.ovh.co.uk/cloud/cloud-databases/).
 >
 > - If you have created [mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) with your hosting plan, please check that the new plan includes this feature.
 >
@@ -84,7 +84,7 @@ To do this, go to your Web Hosting plan’s `General information`{.action} tab. 
 
 ### What do I do if my website isn't working properly? 
 
-There are several reasons why your website might not be working properly. To identify the cause, start by checking that none of your subscriptions need to be **renewed** by logging into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+There are several reasons why your website might not be working properly. To identify the cause, start by verifying that none of your subscriptions need to be **renewed** by logging into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 Then check out the [current events on our infrastructure](https://www.status-ovhcloud.com/). If all of your services are active and are not affected by any incidents or maintenance, please carry out a more in-depth diagnostic.
 
@@ -92,7 +92,7 @@ Then check out the [current events on our infrastructure](https://www.status-ovh
 
 ![site_en_construction](images/site_en_construction.png){.thumbnail}
 
-When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your `www` FTP server’s folder.
+When you install a Web Hosting plan, OVHcloud implements this page as an **index.html** file, contained in your FTP server’s root folder `www`.
 
 This file is automatically disabled when you create your [1-click module](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/).
 
@@ -104,7 +104,7 @@ If you have chosen [to install your website manually](https://docs.ovh.com/gb/en
 
 There are two scenarios. Either your website was created with this web address or it appeared following a modification.
 
-#### Scenario 1: your website has been created with a xxxxx.cluster0xx.hosting.ovh.net URL
+#### Scenario 1: Your website has been created with a xxxxx.cluster0xx.hosting.ovh.net URL
 
 > [!warning]
 >
@@ -115,13 +115,13 @@ In the first case, after you have completed all the necessary backups, delete yo
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
-Then delete its database from the database tab on the right-hand side of your screen, in the `Hosting section`:
+Then delete its database from the database tab on the right-hand side of your screen, in the section `Hosting plans`:
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
 Finally, retry the installation on the domain name you want, using the [1-click module](https://docs.ovh.com/gb/en/hosting/1-click-module-management/) feature.
 
-#### Scenario 2: your website will be displayed with a xxxxx.cluster0xx.hosting.ovh.net web address, if it has been modified
+#### Scenario 2: Your website is displayed with a xxxxx.cluster0xx.hosting.ovh.net web address because it was modified
 
 If your website appears with this URL following a change, restore it to its previous state.
 
@@ -129,7 +129,7 @@ If your website appears with this URL following a change, restore it to its prev
 >
 > Restoring your OVHcloud hosting plan will restore **all of the websites** it contains.
 >
-> During a restore, the contents of your FTP space, or that of your database, are replaced by a backup. As a result, you will not be able to retrieve the data stored on the FTP server or the database data before you restore it.
+> During a restore, the contents of your FTP space or database are replaced by a backup. As a result, you will not be able to retrieve any data stored on the FTP server or  database before the restoration date.
 >
 
 To restore your website’s source code, please refer to our guide on [Restoring your Web Hosting plan’s storage space](https://docs.ovh.com/gb/en/hosting/restoring-ftp-filezilla-control-panel/).
@@ -179,7 +179,7 @@ If the restores do not allow you to restore access to your site, contact your we
 
 ![503_varnish](images/503_varnish.png){.thumbnail}
 
-If you have enabled the [CDN option](https://docs.ovh.com/gb/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/) on your web hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
+If you have enabled the [CDN option](https://docs.ovh.com/gb/en/hosting/guide_to_using_the_geocache_accelerator_on_a_web_hosting_package/) on your Web Hosting plan, disable *Maintenance* mode on your WordPress or PrestaShop website.
 
 If you have not enabled this option or used *Maintenance* mode, please contact your webmaster or search for a specialised service provider via the [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/) website.
 
@@ -199,13 +199,13 @@ This message indicates that the IP address you use to log on to your website is 
 
 In this situation, [review the logs](https://docs.ovh.com/gb/en/hosting/shared_view_my_websites_logs_and_statistics/) of your site, to determine which queries caused this block.<br>
 Also, make sure your computer is not infected with a virus.<br>
-You can also contact one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) to check your website’s computer code.
+You can also contact one of our [partners](https://partner.ovhcloud.com/en-gb/directory/) to check your website’s source code.
 
-### I have ordered a domain with accents, and it appears written in a strange way in my Control Panel. What should I do?
+### I have ordered a domain name with special characters, and it appears written in a strange way in my Control Panel. What should I do?
 
 ![notation_idn](images/notation_idn.png){.thumbnail}
 
-You have no action to take in this situation. Even if your domain appears in internationalised [notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a completely normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
+You have no action to take in this situation. Even if your domain appears in [internationalised notation (IDN)](https://en.wikipedia.org/wiki/Internationalized_domain_name){.external} in your Control Panel, it will work and display in a completely normal way elsewhere. Your website's web address will be displayed as you requested. Your email addresses will also appear as you wish to your contacts.
 
 > [!warning]
 >
