@@ -26,7 +26,7 @@ order: 2
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting]((https://www.ovhcloud.com/de/web-hosting/), auf dem Sie 1-Klick-Module installieren können (ausgenommen lediglich das kostenlose [Start10M Angebot](https://docs.ovh.com/de/hosting/start10m-aktivieren/)).
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/), auf dem Sie 1-Klick-Module installieren können (ausgenommen lediglich das kostenlose [Start10M Angebot](https://docs.ovh.com/de/hosting/start10m-aktivieren/)).
 - Sie haben ein 1-Klick-Modul auf Ihrem Hosting erstellt (Wenn Sie diese Installation noch nicht durchgeführt haben, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/)).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 

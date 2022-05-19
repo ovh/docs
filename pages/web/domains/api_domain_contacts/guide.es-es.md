@@ -114,7 +114,7 @@ Nichandle information may be retrieved and changed with these API routes.
 ### Nichandle Change on a Domain Service
 
 In this section, we will see how a Nic (admin, tech or billing) can be updated on a given domain name.
-It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](../../customer/managing-contacts/).
+It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](https://docs.ovh.com/es/customer/gestion-de-los-contactos/).
 
 Using the following API route, we are going to initiate a "task" which will allow the former and the new Nic to accept or refuse the change.
 
