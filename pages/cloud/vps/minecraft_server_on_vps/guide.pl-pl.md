@@ -1,5 +1,5 @@
 ---
-title: 'Jak utworzyć serwer Minecraft na serwerze VPS lub dedykowanym'
+title: 'Tutorial - Jak utworzyć serwer Minecraft na serwerze VPS lub dedykowanym'
 slug: tworzenie-serwera-minecraft-na-vps
 excerpt: 'Dowiedz się, jak zainstalować własny serwer Minecraft'
 section: Tutorial
