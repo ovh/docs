@@ -32,7 +32,7 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 ### Solutions d'interconnexions 
 
-Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entierements visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
+Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entièrement visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
 
 * Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'information concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
 
@@ -46,9 +46,9 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 Certaines solutions sont disponibles avec **Prism Element** :
 
-* Async DR: La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure , si un problème survient il est  possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
-* NearSync DR: La réplication se fait plusieurs fois par heure il est possible d'avoir un syncronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
-* Metro/Sync Rep DR: Le stockage du cluster Nutanix est étendu sur un autre cluster ce qui permet de n'avoir aucune perte de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantannement.
+* **Async DR** : La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure , si un problème survient il est  possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
+* **NearSync DR** : La réplication se fait plusieurs fois par heure il est possible d'avoir un syncronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
+* **Metro/Sync Rep DR** : Le stockage du cluster Nutanix est étendu sur un autre cluster ce qui permet de n'avoir aucune perte de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantanément.
 
 Il est possible d'améliorer la gestion des plan de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
