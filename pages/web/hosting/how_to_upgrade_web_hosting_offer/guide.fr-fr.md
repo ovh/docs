@@ -33,6 +33,13 @@ Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouv
 ### Modifier votre offre d'hébergement <a name="modify"></a>
 
 > [!primary]
+> 
+> **Envie de plus de puissance temporairement ?**
+>
+> Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+>
+
+> [!primary]
 >
 > La modification de votre abonnement pour une offre délivrant moins de ressources n'est possible que s'il s'agit de l'offre **immédiatement inférieure**. 
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
