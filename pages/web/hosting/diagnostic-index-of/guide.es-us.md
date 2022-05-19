@@ -36,7 +36,7 @@ Si una configuración `Multisitio` no está bien configurada, es posible que el 
 
 ### Entender el origen de la página "Index of"
 
-El dominio está conectado a través de la sección `Multisitio`{.action} del alojamiento a un directorio (un "`Carpeta raíz`") del [servidor FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
+El dominio está conectado a través de la sección `Multisitio`{.action} del alojamiento a un directorio (una `Carpeta raíz`) del [servidor FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
 La página **Index of** indica que el directorio en cuestión no contiene ningún archivo **index.php** o **index.html**. Un archivo de este tipo constituye el "*punto de entrada*" del sitio web.
 
@@ -44,7 +44,7 @@ Para mostrar su sitio web, deberá asociar su dominio a la `Carpeta raíz`{.acti
 
 > [!primary]
 >
-> Si desea asociar temporalmente su dominio a un `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
+> Si desea asociar temporalmente su dominio a una `Carpeta raíz` que no contenga un archivo **index.php** o **index.html**, puede prohibir la visualización de la lista de carpetas de su sitio web siguiendo esta [guía](https://docs.ovh.com/gb/en/hosting/what_else_can_you_do_with_the_htaccess_file/#prevent-the-content-of-a-directory-from-being-listed). También puede proteger el acceso a sus carpetas con una [contraseña](https://docs.ovh.com/us/es/hosting/compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion/).
 >
 > Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nuestro equipo de soporte no podrá ofrecerle soporte para modificar la programación interna de su sitio web.
 
@@ -54,7 +54,7 @@ Ha importado los archivos de su sitio **mydomain.ovh** a la carpeta `www` de su 
 
 ![index_of_multisite](images/index_of_multisite.png){.thumbnail}
 
-Modifique el `Carpeta raíz` haciendo clic en el botón `...`{.action} a la derecha de la tabla y luego en `Modificar el dominio`{.action} :
+Modifique la `Carpeta raíz` haciendo clic en el botón `...`{.action} a la derecha de la tabla y luego en `Modificar el dominio`{.action} :
 
 ![modify_domain](images/modify_domain.png){.thumbnail}
 
