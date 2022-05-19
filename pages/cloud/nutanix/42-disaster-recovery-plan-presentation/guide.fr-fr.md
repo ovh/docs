@@ -26,16 +26,15 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos cluster via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
-- Avoir une interconnexion de type vRack ou VPN IPSEC entre les deux clusters.
+- Avoir une interconnexion de type vRack ou VPN IPSEC entre les deux clusters en fonction des besoins.
 
 ## Présentation des diverses solutions
 
 ### Solutions d'interconnexions 
 
-Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. mais ce qui est essentiel c'est que les deux clusters soit entierements visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
+Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entierements visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
 
-* Connexion des divers sites en utilisant chaque le même vRACK sur les tous les sites, pour plus d'information concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
-
+* Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'information concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
@@ -47,9 +46,9 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 Certaines solutions sont disponibles avec **Prism Element** :
 
-* Async DR: La réplication ne se fera qu'une fois par heure , si un problème survient il sera possible de perdre une heure de données mais le redémarrage peut se faire manuellement dans la minute.
-* NearSync DR: La réplication se fait plusieurs fois par heure il sera possible d'avoir un R.P.O entre 1 minutes et 15 minutes.
-* Metro/Sync Rep DR: il est possible d'avoir un retour à la normale instantanément sans perte de données.
+* Async DR: La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure , si un problème survient il est  possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
+* NearSync DR: La réplication se fait plusieurs fois par heure il est possible d'avoir un syncronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
+* Metro/Sync Rep DR: Le stockage du cluster Nutanix est étendu sur un autre cluster ce qui permet de n'avoir aucune perte de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantannement.
 
 Il est possible d'améliorer la gestion des plan de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
@@ -60,3 +59,5 @@ Il est possible d'améliorer la gestion des plan de reprises d'activités au tra
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+
