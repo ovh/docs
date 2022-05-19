@@ -40,7 +40,7 @@ Ce moyen de paiement est alors utilisé par défaut pour tous vos renouvellement
 
 Vous avez la possibilité d'enregistrer d'autres moyens de paiement, afin qu'ils vous soient proposés lors de vos nouvelles commandes ou utilisés par défaut pour vos futurs prélèvements.
 
-Il est possible d'enregistrer 3 types de moyens de paiement :
+Il est possible d'enregistrer 2 types de moyens de paiement :
 
 - Carte bancaire
 - Compte bancaire

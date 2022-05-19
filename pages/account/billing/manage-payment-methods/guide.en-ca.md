@@ -37,7 +37,7 @@ This payment method is then used by default for all of your renewals and is offe
 
 You can save other payment methods so that they are suggested when you place new orders and used by default for future payments.
 
-You can save three different payment method types:
+You can save two different payment method types:
 
 - Credit card
 - PayPal® account

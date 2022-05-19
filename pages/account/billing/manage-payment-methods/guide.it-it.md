@@ -41,7 +41,7 @@ Questo metodo di pagamento viene utilizzato di default per tutti i rinnovi e ti 
 
 Puoi salvare altri metodi di pagamento, in modo che vengano proposti al momento dei tuoi nuovi ordini o utilizzati di default per i tuoi futuri addebiti.
 
-È possibile salvare 3 metodi di pagamento:
+È possibile salvare 2 metodi di pagamento:
 
 - Carta bancaria
 - Account PayPal

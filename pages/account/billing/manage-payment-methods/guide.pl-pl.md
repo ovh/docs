@@ -41,7 +41,7 @@ Ten sposób płatności jest używany domyślnie dla wszystkich odnowień i jest
 
 Możesz również zarejestrować inne sposoby płatności, które będą proponowane podczas składania nowych zamówień lub będą używane domyślnie dla przyszłych poleceń zapłaty.
 
-Można dodać 3 różne sposoby płatności:
+Można dodać 2 różne sposoby płatności:
 
 - Karta bankowa
 - Konto PayPal

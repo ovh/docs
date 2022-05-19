@@ -41,7 +41,7 @@ Este método de pagamento é então utilizado por defeito para todas as suas ren
 
 Tem a possibilidade de registar outros métodos de pagamento, para que eles lhe sejam propostos durante as suas novas encomendas ou utilizados por defeito para os seus futuros débitos.
 
-É possível registar 3 tipos de métodos de pagamento:
+É possível registar 2 tipos de métodos de pagamento:
 
 - Cartão bancário
 - Conta PayPal
@@ -81,7 +81,7 @@ Clique, então, no botão `...`{.action} à direita do novo método de pagamento
 
 > **Pretendo substituir o meu método de pagamento predefinido por outro, como fazer?**
 >
-> - 1 - adicione o novo método de pagamento
+> - Etapa 1: adicione o novo método de pagamento
 > - Etapa 2: defina o novo método de pagamento como método de pagamento padrão
 > - Etapa 3: elimine o método de pagamento antigo
 >

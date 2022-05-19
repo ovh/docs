@@ -41,7 +41,7 @@ Esta forma de pago se utilizará por defecto para todas sus renovaciones y se le
 
 Puede registrar otras formas de pago para que le sean propuestas al realizar nuevos pedidos o utilizar por defecto para sus futuros cargos.
 
-Es posible registrar tres tipos de formas de pago:
+Es posible registrar dos tipos de formas de pago:
 
 - Tarjeta bancaria
 - Cuenta PayPal
