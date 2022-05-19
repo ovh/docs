@@ -21,6 +21,13 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 ## En pratique
 
+> [!primary]
+> 
+> **Envie de plus de puissance temporairement ?**
+>
+> Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
+>
+
 ### Important - La facturation en cas de changement d'offre
 
 Lorsque vous modifiez votre formule en cours d'abonnement, un *report de temps* s'applique sur votre nouvelle offre. Ce report correspond à la durée restante d'abonnement sur votre offre actuelle.
@@ -31,13 +38,6 @@ Par conséquent, la durée restante sera automatiquement **ajoutée** au pro rat
 Celui-ci durera de ce fait **un peu plus d'un an**, jusqu'à son prochain renouvellement.
 
 ### Modifier votre offre d'hébergement <a name="modify"></a>
-
-> [!primary]
-> 
-> **Envie de plus de puissance temporairement ?**
->
-> Avec l'[OPTION BOOST](https://www.ovhcloud.com/fr/web-hosting/options/boost/), disponible sur nos offres *Performance*, vous pouvez faire évoluer temporairement les ressources de votre hébergement pour absorber une augmentation ponctuelle du trafic. Si cette augmentation se prolonge dans le temps, vous pouvez également migrer vers une solution supérieure afin de disposer de davantage de ressources de manière permanente.
->
 
 > [!primary]
 >
