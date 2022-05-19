@@ -12,7 +12,7 @@ order: 2
 
 Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
-**Découvrez comment faire évoluer votre offre d'hébergement OVHcloud avec un minimun d'interruption.**
+**Découvrez comment faire évoluer votre offre d'hébergement OVHcloud sans interruption.**
 
 ## Prérequis
 
