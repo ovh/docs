@@ -45,7 +45,7 @@ Consulte la guía "[Migrar un sitio web y el correo a OVHcloud](https://docs.ovh
 
 ### ¿Cómo alojar varios sitios web en un mismo plan de hosting?
 
-Consulte la guía "[Alojar varios sitios web](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) en un mismo hosting".
+Consulte la guía "[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) ".
 
 ### ¿Cómo cambiar de plan de alojamiento?
 
@@ -70,7 +70,7 @@ A continuación, seleccione la nueva fórmula de alojamiento y la duración de l
 >
 > - Si ha creado listas de [correo](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) con su plan de hosting, compruebe que la nueva solución incluya esta funcionalidad.
 >
-> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) o con nuestra [comunidad de usuarios ](https://community.ovh.com/en/).
+> En caso de duda sobre las operaciones a realizar, contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/) o con nuestra [comunidad de usuarios](https://community.ovh.com/en/).
 >
 
 ### ¿Cómo conservar la solución de correo asociada a mi alojamiento compartido cuando se da de baja el servicio?
@@ -98,7 +98,7 @@ Consulte a continuación los [eventos en curso en nuestra infraestructura](https
 
 Al instalar el alojamiento, OVHcloud coloca esta página de espera como un archivo **index.html** contenido en la carpeta `www` de su servidor FTP.
 
-Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-UN-clic/).
+Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/es/hosting/modulos-en-un-clic/).
 
 Si ha elegido [Web hosting: Instalar un CMS manualmente](https://docs.ovh.com/es/hosting/web_hosting_instalar_un_cms_manualmente/), [conéctese al espacio FTP](https://docs.ovh.com/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para renombrarlo como **index.html.old**.
 

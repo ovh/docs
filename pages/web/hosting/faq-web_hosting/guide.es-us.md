@@ -45,7 +45,7 @@ Consulte la guía [Migrar un sitio web y el correo a OVHcloud](https://docs.ovh.
 
 ### ¿Cómo alojar varios sitios web en un mismo plan de hosting?
 
-Consulte la guía [Alojar varios sitios web](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) en un mismo hosting.
+Consulte la guía "[Alojar varios sitios web en un mismo hosting](https://docs.ovh.com/us/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/)".
 
 ### ¿Cómo conservar la solución de correo asociada a mi alojamiento compartido cuando se da de baja el servicio?
 
@@ -72,7 +72,7 @@ Consulte a continuación los [eventos en curso en nuestra infraestructura](https
 
 Al instalar el alojamiento, OVHcloud coloca esta página de espera como un archivo **index.html** contenido en la carpeta `www` de su servidor FTP.
 
-Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/us/es/hosting/modulos-en-UN-clic/).
+Este archivo se desactiva automáticamente al crear su [módulo en 1 clic](https://docs.ovh.com/us/es/hosting/modulos-en-un-clic/).
 
 Si ha elegido [Web hosting: Instalar un CMS manualmente](https://docs.ovh.com/us/es/hosting/web_hosting_instalar_un_cms_manualmente/), [conéctese al espacio FTP](https://docs.ovh.com/us/es/hosting/conexion-espacio-almacenamiento-ftp-alojamiento-web/) para renombrarlo como **index.html.old**.
 

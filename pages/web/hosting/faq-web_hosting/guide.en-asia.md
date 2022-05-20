@@ -37,7 +37,7 @@ To follow the steps required to build your website, go to this [page](https://ww
 
 ### How do I transfer my website and emails to OVHcloud servers? 
 
-Read our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/asia/en/hosting/migrating-website-to-ovh/).
+Read our guide on [Migrating your website and emails to OVHcloud](https://docs.ovh.com/asia/en/hosting/migrating-website-to-ovh/).
 
 ### How do I host multiple websites on my Web Hosting plan? 
 

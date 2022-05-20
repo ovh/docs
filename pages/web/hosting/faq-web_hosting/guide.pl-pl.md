@@ -33,7 +33,7 @@ Po zalogowaniu się do Panelu klienta:
 
 ### Jak umieścić moją stronę w internecie? 
 
-Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](hhttps://www.ovhcloud.com/pl/domains/) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](https://www.ovhcloud.com/pl/web-hosting/), na którym będziesz mógł zainstalować Twoją stronę.
+Aby uruchomić Twoją stronę WWW w Internecie, musisz posiadać [Domeny](https://www.ovhcloud.com/pl/domains/) odpowiadającą adresowi WWW, z którego będzie ona dostępna (na przykład: *mojadomena.com*). Będziesz również potrzebował [hostingu](https://www.ovhcloud.com/pl/web-hosting/), na którym będziesz mógł zainstalować Twoją stronę.
 
 Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodnikiem](https://www.ovhcloud.com/pl/web-hosting/uc-website/), a następnie postępuj zgodnie z instrukcjami zawartymi w przewodniku [Uruchomienie strony WWW na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/).
 
@@ -41,7 +41,7 @@ Aby dowiedzieć się, jak budować Twoją stronę, zapoznaj się z tym [przewodn
 
 ### Jak mogę przenieść moją stronę WWW i konta e-mail na serwery OVHcloud? 
 
-Zapoznaj się z przewodnikiem [Przeniesienie strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/).
+Zapoznaj się z przewodnikiem [Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/).
 
 ### Jak zainstalować kilka stron WWW na tym samym hostingu?
 
@@ -136,7 +136,7 @@ Jeśli Twoja strona WWW wyświetla się z tym adresem URL po operacji, przywró�
 > Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Nie będziesz mógł zatem pobrać danych z serwera FTP lub z bazy danych przed przywróceniem danych.
 >
 
-Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVH](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
 
 Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Import kopii zapasowej do bazy danych hostingu](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta).
 
@@ -173,7 +173,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 Przywróć zawartość Twojej strony WWW do poprzedniego stanu:
 
-- Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVH](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/);
+- Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/);
 
 - Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Przywrócenie kopii zapasowej bazy danych](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta).
 

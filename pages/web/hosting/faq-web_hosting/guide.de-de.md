@@ -29,7 +29,7 @@ Wenn Sie in Ihrem Kundencenter eingeloggt sind:
 
 - Um das Passwort Ihres FTP-Bereichs zu ändern, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/).
 - Um das Passwort Ihrer Datenbank zu ändern, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/hosting/datenbank-passwort-aendern/).
-- Um das Passwort Ihrer MX Plan E-Mail-Adresse zu ändern, folgen Sie den Anweisungen in dieser [Anleitung](hhttps://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/).
+- Um das Passwort Ihrer MX Plan E-Mail-Adresse zu ändern, folgen Sie den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/emails/passwort-e-mail-adresse-aendern/).
 
 ### Wie kann ich meine Website online stellen? 
 
@@ -97,7 +97,7 @@ Löschen Sie dann die Datenbank im Tab desselben Namens ebenfalls im Bereich `Ho
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
  
-Starten Sie schließlich die Installation auf der gewünschten Domain unter Verwendung der [1-Klick-Modul-Funktion](hhttps://docs.ovh.com/de/hosting/1-click-module-management/) neu.
+Starten Sie schließlich die Installation auf der gewünschten Domain unter Verwendung der [1-Klick-Modul-Funktion](https://docs.ovh.com/de/hosting/1-click-module-management/) neu.
 
 #### Szenario 2: Ihre Website wird nach einer Änderung mit einer Webadresse vom Typ “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
 
