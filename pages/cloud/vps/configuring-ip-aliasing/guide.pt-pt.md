@@ -49,7 +49,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 |NETWORK_INTERFACE|Nome da interface de rede|*eth0*, *ens3*|
 |ID|ID do alias IP, começando por *0* (em função do número de endereços IP suplementares a configurar)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etapa 1: desativar a configuração automática da rede
 

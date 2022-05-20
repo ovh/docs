@@ -48,7 +48,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 |NETWORK_INTERFACE|Nazwa interfejsu sieciowego|*eth0*, *ens3*|
 |ID|ID aliasu IP, zaczynające się od *0* (w zależności od liczby dodatkowych adresów IP do skonfigurowania)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etap 1: wyłącz automatyczną konfigurację sieci
 

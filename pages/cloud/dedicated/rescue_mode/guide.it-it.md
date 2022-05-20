@@ -31,7 +31,7 @@ Se non disponi ancora di backup recenti, effettua un backup dei tuoi dati.
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato OVH](https://www.ovhcloud.com/it/bare-metal/)
+- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
