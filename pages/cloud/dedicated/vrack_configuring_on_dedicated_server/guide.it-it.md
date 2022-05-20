@@ -37,7 +37,7 @@ La vRack (rack virtuale) OVHcloud permette di unire virtualmente diversi server 
 
 ### Step 1: ordina la vRack
 
-Accedi alla sezione `Bare Metal Cloud`{.action} del tuo Spazio Cliente OVHcloud e clicca su `Ordina`{.action}. Clicca su `vRack`{.action}.
+Accedi alla sezione `Bare Metal Cloud`{.action} nel tuo Spazio Cliente OVHcloud e clicca sul pulsante `Ordina`{.action}. Nel menu, clicca sull’opzione `vRack`{.action}.
 
 ![Ordina la vRack](images/orderingvrack.png){.thumbnail}
 
