@@ -47,32 +47,6 @@ Lesen Sie die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](https:
 
 Lesen Sie die Anleitung [Mehrere Websites auf einem Webhosting](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) einrichten.
 
-### Wie ändere ich das Hosting-Angebot?
-
-> [!primary]
->
-> Um die Webhosting-Lösung zu bestellen, die am besten zu Ihren Bedürfnissen passt, beachten Sie die Informationen auf [dieser Webseite](https://www.ovhcloud.com/de/web-hosting/).
->
-
-Um das [Shared Hosting Angebot](https://www.ovhcloud.com/de/web-hosting/) zu wechseln, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich `Abo` and `Angebot`, auf `...`{.action} und dann auf `Angebot wechseln`{.action}.
-
-Wählen Sie dann Ihr neues Hosting-Paket und die Dauer Ihres neuen Abonnements aus. Lesen Sie die entsprechenden Verträge und klicken Sie dann auf `Versenden`{.action}.
-
-> [!warning]
->
-> Bevor Sie auf ein “niedrigeres“ Angebot umstellen (z. B. bevor Sie von einem [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) Angebot auf ein [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot wechseln), überprüfen Sie, ob Ihre Verwendung des Hostings mit Ihrer neuen Lösung kompatibel ist:
->
-> - Wenn Sie zu viele E-Mail-Adressen angelegt haben, um zu einem niedrigeren Angebot zu wechseln, speichern Sie und löschen Sie die am wenigsten verwendeten Adressen.
->
-> - Wenn der Speicherplatz des neuen Webhosting-Angebots nicht ausreicht, loggen Sie sich per [FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/) auf Ihrem Hosting ein und löschen Sie nicht benötigte Ordner und Dateien.
->
-> - Wenn Ihr neues Webhosting-Angebot eine unzureichende Anzahl an Datenbanken oder ein unzureichendes Speichervolumen enthält, speichern Sie die nicht genutzten Daten oder Datenbanken und löschen Sie diese. Sie können auch einen [Datenbankserver-Dienst](https://www.ovh.de/cloud/cloud-databases/) bestellen.
->
-> - Wenn Sie [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) mit Ihrem Webhosting erstellt haben, überprüfen Sie, dass Ihr neues Angebot diese Funktion beinhaltet.
->
-> Sollten Sie Zweifel an den durchzuführenden Aktionen haben, kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/) oder unsere [User-Community Partner](https://community.ovh.com/en/).
->
-
 ### Wie kann ich die E-Mail-Accounts meines Webhosting bei einer Kündigung beibehalten?
 
 Wenn Sie Ihr Webhosting kündigen oder löschen, wird auch der inbegriffene E-Mail-Dienst gekündigt. Um Ihre E-Mail-Accounts zu behalten, müssen Sie den E-Mail-Dienst vor der Kündigung des Hostings abtrennen.<br>
