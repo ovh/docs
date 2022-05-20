@@ -20,7 +20,7 @@ order: 3
 
 ## Prérequis
 
-- Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/) au forfait horaire.
+- Avoir créé une [instance Public Cloud OVHcloud](https://docs.ovh.com/ca/fr/public-cloud/premiers-pas-instance-public-cloud/) au forfait **horaire**.
 - Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou à l’interface [Horizon.](https://docs.ovh.com/ca/fr/public-cloud/creer-un-acces-a-horizon/)
 - Avoir des connaissances de l’[API Openstack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/) et des [variables Openstack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/)
 
