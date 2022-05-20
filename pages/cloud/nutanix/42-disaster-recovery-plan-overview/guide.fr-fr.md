@@ -1,7 +1,7 @@
 ---
 title: Plan de reprise d'activité sous Nutanix
-slug: disaster-recovery-presentation
-excerpt: "Présentation des diverses solution de Plan de reprise d'activité sous Nutanix"
+slug: disaster-recovery-overview
+excerpt: "Aperçu des diverses solutions de Plan de reprise d'activité sous Nutanix"
 section: Plan de reprise d'activité
 order: 03
 ---
@@ -22,7 +22,7 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 - Disposer de plusieurs clusters Nutanix avec ces deux options :
     + Plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud
-    + Un cluster sur site et un cluster chez OVHcloud
+    + Un cluster qui ne se trouve pas chez OVHcloud et un cluster chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos cluster via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
@@ -38,7 +38,7 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
-* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix en utilisant une machine virtuelle.
+* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix en utilisant une machine virtuelle ou un routeur sur chaque site.
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
@@ -57,6 +57,8 @@ Il est possible d'améliorer la gestion des plan de reprises d'activités au tra
 
 
 ## Aller plus loin
+
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
