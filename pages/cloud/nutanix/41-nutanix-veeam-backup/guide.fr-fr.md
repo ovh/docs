@@ -27,13 +27,16 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via **Prism Central**. 
 - D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
-- Disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- De posseder un stockage distant hors du cluster.
-
+- de disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
+- De posseder un stockage distant hors du cluster de type Enterprise File Storage fourni par OVHcloud dont voici le lien [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/)
 
 ## En pratique
 
-Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec une sauvegarde distante de type **NAS** en **SMB**. 
+Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec dépot distant du cluster chez OVHcloud en NFS avec la solution **Enterprise File Storage** d'OVHcloud
+
+### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHCloud
+
+
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 

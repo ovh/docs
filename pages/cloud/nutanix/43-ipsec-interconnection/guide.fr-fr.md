@@ -1,19 +1,21 @@
 ---
-title: Démarrage en mode reprise d'activité
-slug: cluster-failover
-excerpt: "Plan d'action pour redémarrer sur un autre site en cas de problème sur le site d'origine"
+title: Interconnexion IPSEC entre deux sites
+slug: ipsec-interconnection
+excerpt: "Mise en place d'un VPN IPSEC entre deux clusters Nutanix"
 section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 18/02/2022**
+**Dernière mise à jour le 20/05/2022**
 
 ## Objectif
 
-Cette page montre comment mettre en place une réplication entre cluster
+Permettre l'interconnexion deux deux clusters au travers d'un VPN IPSEC
 
 
-***Documentation à faire completement quand deux clusters seront disponibles***
+
+
+
 
 ## Aller plus loin
 
