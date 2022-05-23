@@ -79,16 +79,16 @@ Ce compte utilisateur est créé et il est dans la liste des utilisateurs de **P
 
 ![Create User VEEAM PE 07](images/01-create-pe-veeamuser07.png){.thumbnail}
 
-### Télécharger et installer l'extension pour un cluster **Nutanix**
+### Télécharger et installer l'extension pour un cluster **Nutanix** sous **AHV**
 
 Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
-A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour Veeam](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous devez disposer d'un compte utilisateur sur le site de **Veeam** vous pouvez le créer librement et gratuitement.
+A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour Veeam](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous devez disposer d'un compte utilisateur sur le site de **Veeam**, vous pouvez le créer librement et gratuitement.
 
 Lancez l'installation de l'extension.
 
 > [!warning]
-> Avant de lancer d'exécuter l'installation bien s'assurer que la console VEEAM BACKUP ne soit pas ouverte.
+> Avant de lancer d'exécuter l'installation bien s'assurer que la console **Veeam Backup & replication** ne soit pas ouverte.
 >
 >
 
@@ -198,9 +198,9 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 > [!warning]
 > Notez bien le compte utilisateur créé ainsi que le mot de passe il pourra servir pour se connecter sur la nouvelle machine virtuelle
-> au travers du navigateur WEB sans passer par le logiciel **Veeam backup** avec cette URL **https://adressipprive:8100**.
+> au travers du navigateur WEB sans passer par le logiciel **Veeam backup** avec cette URL **https://adressipprivee:8100** .
 
-![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
+![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam18.png){.thumbnail}
 
 Saisissez ces informations avec le compte créé précédemment dans Prism Element :
 
@@ -223,7 +223,7 @@ Patientez quelques minutes.
 
 ![Addon Cluster Nutanix to Veeam 22](images/03-addclusternutanix-to-veeam22.png){.thumbnail}
 
-L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cause du DNS qui n'arrive pas à résoudre le nom du serveur Veeam. Cliquez sur `Next`{.action}.
+L'installation est terminée avec un Warning, n'en tenez pas compte c'est le serveur DNS public qui n'arrive pas à résoudre le nom du serveur Veeam. Cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 23](images/03-addclusternutanix-to-veeam23.png){.thumbnail}
 
@@ -270,7 +270,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
 
-### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHcloud
+### Création du volume **Enterprise File Storage** au travers de l'espace client d'OVHcloud
 
 Au travers de l'espace client d'OVHcloud allez dans `Storage and Backup`{.action}, faites dérouler `Enterprise File Storage`{.action} et cliquez sur le `stockage`{.action} qui servira pour la sauvegarde **Veeam Backup**.
 
@@ -306,16 +306,17 @@ Un message vous informe que le contrôle d'accès a été créé.
 
 ![Create Enterprise Storage Volume 07](images/04-create-enterprise-storage-volume07.png){.thumbnail}
 
-Cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
+Cliquez sur l'onglet `General Information`{.action} et cliquez sur l'icône `Copie`{.action} pour faire une copie de l'information contenue dans `Mount path`.  
 
 > [!info]
 > L'élément copié est le dépôt qui est utilisé par **Veeam Backup**.
+> La syntaxe doit être affichée comme ceci : **adresseip://share_name**.
 >
 
 ![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
 
 
-### Ajouter le dépôt **Enterprise File Storage** pour le stockage des sauvegardes
+### Ajouter le dépôt **Enterprise File Storage** dans **Veeam Backup**
 
 A partir de la console **Veeam Backup** cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
@@ -333,7 +334,12 @@ Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
 
 ![Add Enterprise File Storage repository 04](images/05-add-enterprise-file-storage-repository04.png){.thumbnail}
 
-Saisissez ou coller le nom du volume partagée dans **Enterprise storage** dans `Shared folder:`{.action} et cliquez sur `Next`{.action}.
+`Saisissez ou coller`{.action} le nom du volume partagée dans `Shared folder:`{.action} et cliquez sur `Next`{.action}.
+
+> [!info]
+> Vous pouvez récupérez ce que vous avez copié depuis l'espace client OVHcloud.
+>
+
 
 ![Add Enterprise File Storage repository 05](images/05-add-enterprise-file-storage-repository05.png){.thumbnail}
 
@@ -358,11 +364,9 @@ Cliquez sur `Finish`{.action}.
 ![Add Enterprise File Storage repository 10](images/05-add-enterprise-file-storage-repository10.png){.thumbnail}
 
 
-### Mise en place d'une sauvegarde
+### Mise en place d'une sauvegarde automatisée
 
-Nous allons créer une tâche de sauvegarde automatisée.
-
-Dans **Veeam backup** cliquez en bas sur `Home`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}.
+Dans **Veeam backup** cliquez en bas à gauche sur `Home`{.action}, ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}.
 
 ![Create Backup JOB 01](images/06-createbackupjob01.png){.thumbnail}
 
