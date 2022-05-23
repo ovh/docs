@@ -44,7 +44,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etape 1 : désactiver la configuration automatique du réseau
 
