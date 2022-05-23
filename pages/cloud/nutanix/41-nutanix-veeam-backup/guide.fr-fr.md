@@ -29,7 +29,7 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix.
 - D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
 - De connaitre l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
 - de disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- De posseder un stockage distant hors du cluster de type Enterprise File Storage disponible chez OVHcloud dont voici la présentation [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
+- De posséder un stockage distant hors du cluster de type Enterprise File Storage disponible chez OVHcloud dont voici la présentation [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
 
 ## En pratique
 
@@ -77,7 +77,7 @@ Cochez la case `Cluster Admin`{.action} et cliquez sur `Save`{.action}
 
 ![Create User VEEAM PE 06](images/01-create-pe-veeamuser06.png){.thumbnail}
 
-Ce compte utilisateur est créé et il est  dans la liste des utilisateurs de **Prism Element**.
+Ce compte utilisateur est créé et il est dans la liste des utilisateurs de **Prism Element**.
 
 ![Create User VEEAM PE 07](images/01-create-pe-veeamuser07.png){.thumbnail}
 
@@ -160,7 +160,7 @@ Cliquez sur `Continue`{.action} pour valider le message d'avertissement concerna
 
 ![Addon Cluster Nutanix to Veeam 08](images/03-addclusternutanix-to-veeam08.png){.thumbnail}
 
-Cochez `Use the following IP address`{.action} et choisissez une adresse IP privé non utilisée (cette adresse sert au moment des sauvegardes et des restaurations de fichiers) , ensuite cliquez sur `Next`{.action}.
+Cochez `Use the following IP address`{.action} et choisissez une adresse IP privée non utilisée (cette adresse sert au moment des sauvegardes et des restaurations de fichiers) , ensuite cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 09](images/03-addclusternutanix-to-veeam09.png){.thumbnail}
 
@@ -176,23 +176,23 @@ Cliquez sur `Yes`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 12](images/03-addclusternutanix-to-veeam12.png){.thumbnail}
 
-Sélectionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action} 
+Sélectionnez `Deploy a new proxy`{.action} et cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 13](images/03-addclusternutanix-to-veeam13.png){.thumbnail}
 
-Choisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action} 
+Choisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}. 
 
 ![Addon Cluster Nutanix to Veeam 14](images/03-addclusternutanix-to-veeam14.png){.thumbnail}
 
-Cliquez sur `Configure`{.action} 
+Cliquez sur `Configure`{.action}. 
 
 ![Addon Cluster Nutanix to Veeam 15](images/03-addclusternutanix-to-veeam15.png){.thumbnail}
 
-Choisissez `une adresse IP`{.action} non utilisée sur le réseau local pour la machine virtuelle et cliquez sur `Ok`{.action} 
+Choisissez `une adresse IP`{.action} non utilisée sur le réseau local pour la machine virtuelle et cliquez sur `Ok`{.action}. 
 
 ![Addon Cluster Nutanix to Veeam 16](images/03-addclusternutanix-to-veeam16.png){.thumbnail}
 
-Cliquez sur `Next`{.action} 
+Cliquez sur `Next`{.action}. 
 
 ![Addon Cluster Nutanix to Veeam 17](images/03-addclusternutanix-to-veeam17.png){.thumbnail}
 
@@ -206,8 +206,8 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 Saisissez ces informations avec le compte créé précédemment dans Prism Element :
 
-- **Username** : `proxy_user`{.action}
-- **Password** : `Mot de passe`{.action}
+- **Username** : `proxy_user`{.action}.
+- **Password** : `Mot de passe`{.action}.
 
 Cliquez sur `OK`{.action}.
 
@@ -233,7 +233,7 @@ L'installation est terminée avec un Warning, n'en tenez pas compte c'est à cau
 
 > [!primary]
 > 
-> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des noms d'ordinateurs
+> Cette opération est nécessaire si vous n'utilisez pas de serveur DNS en interne qui fait la résolution des noms d'ordinateurs.
 > Notamment celui qui sert pour le logiciel Veeam Backup. 
 
 Au travers de **Prism Central** connectez-vous à la machine virtuelle NUTANIX-PROXY. 
@@ -285,10 +285,10 @@ Sélectionnez l'onglet `Volumes`{.action} et cliquez sur `Create a volume`{.acti
 Choisissez ces options :
 
 - **Volume name (optional)** : `BACKUP`
-- **Description (optinal)** : `BACKUP`
+- **Description (optional)** : `BACKUP`
 - **Volume size** : `500`
 
-et cliquez sur `Create a volume`{.action} pour créer un volume de 500 Go.
+Ensuite liquez sur `Create a volume`{.action} pour créer un volume de 500 Go.
 
 ![Create Enterprise Storage Volume 03](images/04-create-enterprise-storage-volume03.png){.thumbnail}
 
@@ -296,7 +296,7 @@ Modifier les paramètres du nouveau volume en cliquant à droite sur l'icône `.
 
 ![Create Enterprise Storage Volume 04](images/04-create-enterprise-storage-volume04.png){.thumbnail}
 
-Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `Add a new access`{.action}
+Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `Add a new access`{.action}.
 
 ![Create Enterprise Storage Volume 05](images/04-create-enterprise-storage-volume05.png){.thumbnail}
 
@@ -304,14 +304,14 @@ Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam 
 
 ![Create Enterprise Storage Volume 06](images/04-create-enterprise-storage-volume06.png){.thumbnail}
 
-Un message vous informe que le controle d'accès a été créé.
+Un message vous informe que le contrôle d'accès a été créé.
 
 ![Create Enterprise Storage Volume 07](images/04-create-enterprise-storage-volume07.png){.thumbnail}
 
 Cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
 
 > [!info]
-> L'élément copié est le dépot qui sera utilisé par **Veeam Backup**
+> L'élément copié est le dépôt qui sera utilisé par **Veeam Backup**.
 >
 
 ![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
@@ -364,7 +364,7 @@ Cliquez sur `Finish`{.action}.
 
 Nous allons créer une tâche de sauvegarde automatisée.
 
-Dans **Veeam backup** cliquez en bas sur `Home`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
+Dans **Veeam backup** cliquez en bas sur `Home`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}.
 
 ![Create Backup JOB 01](images/06-createbackupjob01.png){.thumbnail}
 
@@ -382,15 +382,15 @@ Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant l
 
 ![Create Backup JOB 04](images/06-createbackupjob04.png){.thumbnail}
 
-Cliquez sur `Next`{.action}
+Cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 05](images/06-createbackupjob05.png){.thumbnail}
 
-Sélectionnez le dépôt dans  `Backup repository`{.action} et cliquez sur `Next`{.action}
+Sélectionnez le dépôt dans  `Backup repository`{.action} et cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 06](images/06-createbackupjob06.png){.thumbnail}
 
-Cochez la case `Run the job automatically`{.action}, choisissez `l'heure de sauvegarde`{.action} et cliquez sur `Next`{.action}
+Cochez la case `Run the job automatically`{.action}, choisissez `l'heure de sauvegarde`{.action} et cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 07](images/06-createbackupjob07.png){.thumbnail}
 
@@ -402,7 +402,7 @@ La sauvegarde est visible au travers de l'interface WEB du **Proxy AHV**.
 
 ![Create Backup JOB 09](images/06-createbackupjob09.png){.thumbnail}
 
-Revenez dans la console **Veeam Backup** à partir du menu `Home`{.action} en bas à gauche et cliquez sur `Jobs`{.action} pour voir le job créé
+Revenez dans la console **Veeam Backup** à partir du menu `Home`{.action} en bas à gauche et cliquez sur `Jobs`{.action} pour voir le travail de sauvegarde créé.
 
 ![Create Backup JOB 10](images/06-createbackupjob10.png){.thumbnail}
 
@@ -474,6 +474,8 @@ Un aperçu de l'état de la restauration se lance, il faut patienter quelques te
 ## Aller plus loin <a name="gofurther"></a>
 
 [Documentation VEEAM concernant l'installation de VEEAM Backup pour Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
+
+[Stockage chez OVHcloud](https://https://docs.ovh.com/fr/storage/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
