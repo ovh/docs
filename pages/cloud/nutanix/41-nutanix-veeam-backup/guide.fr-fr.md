@@ -26,62 +26,16 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix.
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via **Prism Central**. 
-- D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/)
+- D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
+- De connaitre l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
 - de disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- De posseder un stockage distant hors du cluster de type Enterprise File Storage fourni par OVHcloud dont voici le lien [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/)
+- De posseder un stockage distant hors du cluster de type Enterprise File Storage disponible chez OVHcloud dont voici la présentation [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
 
 ## En pratique
 
-Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec dépot distant du cluster chez OVHcloud en NFS avec la solution **Enterprise File Storage** d'OVHcloud
-
-### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHCloud
-
-Au travers de l'espace client d'OVHcloud allez dans `Storage and Backup`{.action}, faites dérouler `Enterprise File Storage`{.action} et cliquez sur le `stockage`{.action} qui servira pour la sauvegarde **Veeam Backup**.
-
-![Create Enterprise Storage Volume 01](images/00-create-enterprise-storage-volume01.png){.thumbnail}
-
-Sélectionnez l'onglet `Volumes`{.action} et cliquez sur `Create a volume`{.action}
-
-![Create Enterprise Storage Volume 02](images/00-create-enterprise-storage-volume02.png){.thumbnail}
-
-Choisissez ces options :
-
-- **Volume name (optional)** : `BACKUP`
-- **Description (optinal)** : `BACKUP`
-- **Volume size** : `500`
-
-et cliquez sur `Create a volume`{.action} pour créer un volume de 500 Go.
-
-![Create Enterprise Storage Volume 03](images/00-create-enterprise-storage-volume03.png){.thumbnail}
-
-Modifier les paramètres du nouveau volume en Cliquant à droite sur l'icône `...`{.action} et choisissez l'option `Modify the volume`{.action}
-
-![Create Enterprise Storage Volume 04](images/00-create-enterprise-storage-volume04.png){.thumbnail}
-
-Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `Add a new access`{.action}
-
-![Create Enterprise Storage Volume 05](images/00-create-enterprise-storage-volume05.png){.thumbnail}
-
-Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam Backup pour l'accès à INTERNET`{.action} choisissez dans **Access permissions** `Read and write`{.action} ensuite cliquez sur l'icône de `validation`{.action}.
-
-![Create Enterprise Storage Volume 06](images/00-create-enterprise-storage-volume06.png){.thumbnail}
-
-Un message vous informe que le controle d'accès a été créé.
-
-![Create Enterprise Storage Volume 07](images/00-create-enterprise-storage-volume07.png){.thumbnail}
-
-Sélectionnez le `stockage`{.action} à gauche en dessous d'**Enterprise File Storage**, cliquez sur `Volumes`{.action}, sélectionnez les options du volume en cliquant sur l'icône `...`{.action} pour choisir `Modify the volume`{.action}.
-
-![Create Enterprise Storage Volume 08](images/00-create-enterprise-storage-volume08.png){.thumbnail}
-
-cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
+Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec dépot distant de ce cluster chez OVHcloud avec la solution **Enterprise File Storage** d'OVHcloud.
 
 
-> [!info]
-> L'élément copié es le dépot qui sera utilisé par **Veeam Backup**
->
-
-![Create Enterprise Storage Volume 09](images/00-create-enterprise-storage-volume09.png){.thumbnail}
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -131,7 +85,7 @@ Ce compte utilisateur est créé et il est  dans la liste des utilisateurs de **
 
 Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
-A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Si vous n'avez pas un compte utilisateur sur le site de **Veeam** il faudra le créer, ce compte est gratuit.
+A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous dezvez disposer d'un compte d'utilisateur sur le site de **Veeam** vous pouvez le créer librement.
 
 Lancez l'installation de l'extension.
 
@@ -246,7 +200,7 @@ Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la m
 
 > [!warning]
 > Notez bien le compte utilisateur créé ainsi que le mot de passe il pourra servir pour se connecter sur la nouvelle machine virtuelle
-> au travers du navigateur WEB.
+> au travers du navigateur WEB sans passer par le logiciel **Veeam backup** avec cette URL **https://adressipprive:8100**.
 
 ![Addon Cluster Nutanix to Veeam 18](images/03-addclusternutanix-to-veeam19.png){.thumbnail}
 
@@ -317,49 +271,93 @@ Enregistrez le fichier et lancez cette commande
 proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
-### Ajouter un dépôt pour les sauvegardes
 
-Nous allons rajouter le stockage **Enterprise File Storage** d'OVHcloud qui a été créé 
+### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHCloud
+
+Au travers de l'espace client d'OVHcloud allez dans `Storage and Backup`{.action}, faites dérouler `Enterprise File Storage`{.action} et cliquez sur le `stockage`{.action} qui servira pour la sauvegarde **Veeam Backup**.
+
+![Create Enterprise Storage Volume 01](images/04-create-enterprise-storage-volume01.png){.thumbnail}
+
+Sélectionnez l'onglet `Volumes`{.action} et cliquez sur `Create a volume`{.action}.
+
+![Create Enterprise Storage Volume 02](images/04-create-enterprise-storage-volume02.png){.thumbnail}
+
+Choisissez ces options :
+
+- **Volume name (optional)** : `BACKUP`
+- **Description (optinal)** : `BACKUP`
+- **Volume size** : `500`
+
+et cliquez sur `Create a volume`{.action} pour créer un volume de 500 Go.
+
+![Create Enterprise Storage Volume 03](images/04-create-enterprise-storage-volume03.png){.thumbnail}
+
+Modifier les paramètres du nouveau volume en cliquant à droite sur l'icône `...`{.action} et choisissez l'option `Modify the volume`{.action}
+
+![Create Enterprise Storage Volume 04](images/04-create-enterprise-storage-volume04.png){.thumbnail}
+
+Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `Add a new access`{.action}
+
+![Create Enterprise Storage Volume 05](images/04-create-enterprise-storage-volume05.png){.thumbnail}
+
+Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam Backup qui lui permet d'accèder à INTERNET`{.action} choisissez dans **Access permissions** `Read and write`{.action} ensuite cliquez sur l'icône de `validation`{.action}.
+
+![Create Enterprise Storage Volume 06](images/04-create-enterprise-storage-volume06.png){.thumbnail}
+
+Un message vous informe que le controle d'accès a été créé.
+
+![Create Enterprise Storage Volume 07](images/04-create-enterprise-storage-volume07.png){.thumbnail}
+
+Cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
+
+> [!info]
+> L'élément copié est le dépot qui sera utilisé par **Veeam Backup**
+>
+
+![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
+
+
+### Ajouter le dépôt **Enterprise File Storage** pour le stockage des sauvegardes
 
 A partir de la console **Veeam Backup** cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
-![Add Enterprise File Storage repository 01](images/04-add-enterprise-file-storage-repository01.png){.thumbnail}
+![Add Enterprise File Storage repository 01](images/05-add-enterprise-file-storage-repository01.png){.thumbnail}
 
 Choisissez `Network attached storage`{.action}. 
 
-![Add Enterprise File Storage repository 02](images/04-add-enterprise-file-storage-repository02.png){.thumbnail}
+![Add Enterprise File Storage repository 02](images/05-add-enterprise-file-storage-repository02.png){.thumbnail}
 
 Cliquez sur `NFS share`{.action}.
 
-![Add Enterprise File Storage repository 03](images/04-add-enterprise-file-storage-repository03.png){.thumbnail}
+![Add Enterprise File Storage repository 03](images/05-add-enterprise-file-storage-repository03.png){.thumbnail}
 
 Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
 
-![Add Enterprise File Storage repository 04](images/04-add-enterprise-file-storage-repository04.png){.thumbnail}
+![Add Enterprise File Storage repository 04](images/05-add-enterprise-file-storage-repository04.png){.thumbnail}
 
 Saisissez ou coller le nom du volume partagée dans **Enterprise storage** dans `Shared folder:`{.action} et cliquez sur `Next`{.action}.
 
-![Add Enterprise File Storage repository 05](images/04-add-enterprise-file-storage-repository05.png){.thumbnail}
+![Add Enterprise File Storage repository 05](images/05-add-enterprise-file-storage-repository05.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Add Enterprise File Storage repository 06](images/04-add-enterprise-file-storage-repository06.png){.thumbnail}
+![Add Enterprise File Storage repository 06](images/05-add-enterprise-file-storage-repository06.png){.thumbnail}
 
 Cliquer sur `Next`{.action}.
 
-![Add Enterprise File Storage repository 07](images/04-add-enterprise-file-storage-repository07.png){.thumbnail}
+![Add Enterprise File Storage repository 07](images/05-add-enterprise-file-storage-repository07.png){.thumbnail}
 
 Cliquez sur `Apply`{.action}.
 
-![Add Enterprise File Storage repository 08](images/04-add-enterprise-file-storage-repository08.png){.thumbnail}
+![Add Enterprise File Storage repository 08](images/05-add-enterprise-file-storage-repository08.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Add Enterprise File Storage repository 09](images/04-add-enterprise-file-storage-repository09.png){.thumbnail}
+![Add Enterprise File Storage repository 09](images/05-add-enterprise-file-storage-repository09.png){.thumbnail}
 
 Cliquez sur `Finish`{.action}.
 
-![Add Enterprise File Storage repository 10](images/04-add-enterprise-file-storage-repository10.png){.thumbnail}
+![Add Enterprise File Storage repository 10](images/05-add-enterprise-file-storage-repository10.png){.thumbnail}
 
 
 ### Mise en place d'une sauvegarde
@@ -368,45 +366,45 @@ Nous allons créer une tâche de sauvegarde automatisée.
 
 Dans **Veeam backup** cliquez en bas sur `Home`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
 
-![Create Backup JOB 01](images/05-createbackupjob01.png){.thumbnail}
+![Create Backup JOB 01](images/06-createbackupjob01.png){.thumbnail}
 
 L'interface WEB du **Proxy AHV** s'ouvre.
 
 Saisissez un `nom`{.action} dans **Name**, cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}.
 
-![Create Backup JOB 02](images/05-createbackupjob02.png){.thumbnail}
+![Create Backup JOB 02](images/06-createbackupjob02.png){.thumbnail}
 
 Cliquez sur le bouton `Add`{.action}.
 
-![Create Backup JOB 03](images/05-createbackupjob03.png){.thumbnail}
+![Create Backup JOB 03](images/06-createbackupjob03.png){.thumbnail}
 
 Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la `case à cocher`{.action} à gauche des machines virtuelles. et cliquez sur `Add`{.action}.
 
-![Create Backup JOB 04](images/05-createbackupjob04.png){.thumbnail}
+![Create Backup JOB 04](images/06-createbackupjob04.png){.thumbnail}
 
 Cliquez sur `Next`{.action}
 
-![Create Backup JOB 05](images/05-createbackupjob05.png){.thumbnail}
+![Create Backup JOB 05](images/06-createbackupjob05.png){.thumbnail}
 
 Sélectionnez le dépôt dans  `Backup repository`{.action} et cliquez sur `Next`{.action}
 
-![Create Backup JOB 06](images/05-createbackupjob06.png){.thumbnail}
+![Create Backup JOB 06](images/06-createbackupjob06.png){.thumbnail}
 
 Cochez la case `Run the job automatically`{.action}, choisissez `l'heure de sauvegarde`{.action} et cliquez sur `Next`{.action}
 
-![Create Backup JOB 07](images/05-createbackupjob07.png){.thumbnail}
+![Create Backup JOB 07](images/06-createbackupjob07.png){.thumbnail}
 
 Cliquez sur `Finish`{.action} pour enregistrer la tâche de sauvegarde.
 
-![Create Backup JOB 08](images/05-createbackupjob07.png){.thumbnail}
+![Create Backup JOB 08](images/06-createbackupjob07.png){.thumbnail}
 
 La sauvegarde est visible au travers de l'interface WEB du **Proxy AHV**.
 
-![Create Backup JOB 09](images/05-createbackupjob09.png){.thumbnail}
+![Create Backup JOB 09](images/06-createbackupjob09.png){.thumbnail}
 
 Revenez dans la console **Veeam Backup** à partir du menu `Home`{.action} en bas à gauche et cliquez sur `Jobs`{.action} pour voir le job créé
 
-![Create Backup JOB 10](images/05-createbackupjob10.png){.thumbnail}
+![Create Backup JOB 10](images/06-createbackupjob10.png){.thumbnail}
 
 ### Restauration d'un ordinateur virtuel
 
@@ -414,63 +412,63 @@ Pour tester le bon fonctionnement des sauvegardes nous allons exécuter une tâc
 
 Cliquez en bas à droite sur `Home`{.action}, dans l'option `Restore`{.action} prenez `Nutanix AHV`{.action}.
 
-![Restore VM 01](images/06-restorevm01.png){.thumbnail}
+![Restore VM 01](images/07-restorevm01.png){.thumbnail}
 
 Cliquez sur `Restore from AHV backup`{.action}.
 
-![Restore VM 02](images/06-restorevm02.png){.thumbnail}
+![Restore VM 02](images/07-restorevm02.png){.thumbnail}
 
 Cliquez sur `Entire VM restore`{.action}.
 
-![Restore VM 03](images/06-restorevm03.png){.thumbnail}
+![Restore VM 03](images/07-restorevm03.png){.thumbnail}
 
 Cliquez sur `Add`{.action}.
 
-![Restore VM 04](images/06-restorevm04.png){.thumbnail}
+![Restore VM 04](images/07-restorevm04.png){.thumbnail}
 
 Faites défiler et sélectionnez une `machine virtuelle`{.action} et cliquez sur `Add`{.action}.
 
-![Restore VM 05](images/06-restorevm05.png){.thumbnail}
+![Restore VM 05](images/07-restorevm05.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Restore VM 06](images/06-restorevm06.png){.thumbnail}
+![Restore VM 06](images/07-restorevm06.png){.thumbnail}
 
 Choisissez l'option `restore to a new location or with different settings`{.action} et cliquez sur `Next`{.action}.
 
-![Restore VM 07](images/06-restorevm07.png){.thumbnail}
+![Restore VM 07](images/07-restorevm07.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Restore VM 08](images/06-restorevm08.png){.thumbnail}
+![Restore VM 08](images/07-restorevm08.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Restore VM 09](images/06-restorevm09.png){.thumbnail}
+![Restore VM 09](images/07-restorevm09.png){.thumbnail}
 
 Renommez la VM dans `New name`{.action} et cliquez sur `Next`{.action}.
 
-![Restore VM 10](images/06-restorevm10.png){.thumbnail}
+![Restore VM 10](images/07-restorevm10.png){.thumbnail}
 
 Cliquez sur `Disconnect`{.action} pour isoler la machine virtuelle restaurée du réseau.
 
-![Restore VM 11](images/06-restorevm11.png){.thumbnail}
+![Restore VM 11](images/07-restorevm11.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Restore VM 12](images/06-restorevm12.png){.thumbnail}
+![Restore VM 12](images/07-restorevm12.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Restore VM 13](images/06-restorevm13.png){.thumbnail}
+![Restore VM 13](images/07-restorevm13.png){.thumbnail}
 
 Cliquez sur `Finish`{.action}.
 
-![Restore VM 14](images/06-restorevm14.png){.thumbnail}
+![Restore VM 14](images/07-restorevm14.png){.thumbnail}
 
 Un aperçu de l'état de la restauration se lance, il faut patienter quelques temps en fonction de la taille de la machine virtuelle.
 
-![Restore VM 15](images/06-restorevm15.png){.thumbnail}
+![Restore VM 15](images/07-restorevm15.png){.thumbnail}
 
 
 ## Aller plus loin <a name="gofurther"></a>
