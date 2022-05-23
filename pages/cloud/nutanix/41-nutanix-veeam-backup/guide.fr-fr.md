@@ -6,7 +6,7 @@ section: Sauvegardes
 order: 02
 ---
 
-**Dernière mise à jour le 05/05/2022**
+**Dernière mise à jour le 23/05/2022**
 
 ## Objectif
 
@@ -36,7 +36,52 @@ Nous allons personnaliser **Veam Backup & Replication** pour l'utilisation sur u
 
 ### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHCloud
 
+Au travers de l'espace client d'OVHcloud allez dans `Storage and Backup`{.action}, faites dérouler `Enterprise File Storage`{.action} et cliquez sur le `stockage`{.action} qui servira pour la sauvegarde **Veeam Backup**.
 
+![Create Enterprise Storage Volume 01](images/00-create-enterprise-storage-volume01.png){.thumbnail}
+
+Sélectionnez l'onglet `Volumes`{.action} et cliquez sur `Create a volume`{.action}
+
+![Create Enterprise Storage Volume 02](images/00-create-enterprise-storage-volume02.png){.thumbnail}
+
+Choisissez ces options :
+
+- **Volume name (optional)** : `BACKUP`
+- **Description (optinal)** : `BACKUP`
+- **Volume size** : `500`
+
+et cliquez sur `Create a volume`{.action} pour créer un volume de 500 Go.
+
+![Create Enterprise Storage Volume 03](images/00-create-enterprise-storage-volume03.png){.thumbnail}
+
+Modifier les paramètres du nouveau volume en Cliquant à droite sur l'icône `...`{.action} et choisissez l'option `Modify the volume`{.action}
+
+![Create Enterprise Storage Volume 04](images/00-create-enterprise-storage-volume04.png){.thumbnail}
+
+Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `Add a new access`{.action}
+
+![Create Enterprise Storage Volume 05](images/00-create-enterprise-storage-volume05.png){.thumbnail}
+
+Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam Backup pour l'accès à INTERNET`{.action} choisissez dans **Access permissions** `Read and write`{.action} ensuite cliquez sur l'icône de `validation`{.action}.
+
+![Create Enterprise Storage Volume 06](images/00-create-enterprise-storage-volume06.png){.thumbnail}
+
+Un message vous informe que le controle d'accès a été créé.
+
+![Create Enterprise Storage Volume 07](images/00-create-enterprise-storage-volume07.png){.thumbnail}
+
+Sélectionnez le `stockage`{.action} à gauche en dessous d'**Enterprise File Storage**, cliquez sur `Volumes`{.action}, sélectionnez les options du volume en cliquant sur l'icône `...`{.action} pour choisir `Modify the volume`{.action}.
+
+![Create Enterprise Storage Volume 08](images/00-create-enterprise-storage-volume08.png){.thumbnail}
+
+cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
+
+
+> [!info]
+> L'élément copié es le dépot qui sera utilisé par **Veeam Backup**
+>
+
+![Create Enterprise Storage Volume 09](images/00-create-enterprise-storage-volume09.png){.thumbnail}
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -91,7 +136,7 @@ A partir d'un navigateur Web Télécharger la dernière version de l'extension s
 Lancez l'installation de l'extension.
 
 > [!warning]
-> Avant de lancer d'exécuter l'installation bien s'assurer que la console VEEAM BACKUP ne soit pas lancée.
+> Avant de lancer d'exécuter l'installation bien s'assurer que la console VEEAM BACKUP ne soit pas ouverte.
 >
 >
 
@@ -274,72 +319,58 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 ```
 ### Ajouter un dépôt pour les sauvegardes
 
-Nous allons rajouter un stockage SMB qui se trouve sur un site distant.
+Nous allons rajouter le stockage **Enterprise File Storage** d'OVHcloud qui a été créé 
 
 A partir de la console **Veeam Backup** cliquez en bas à droite sur `Backup Infrastructure`{.action}, choisissez `Backup Repositories`{.action} et cliquez sur `Add repository`{.action}. 
 
-![Add SMB repository 01](images/04-add-smb-repository01.png){.thumbnail}
+![Add Enterprise File Storage repository 01](images/04-add-enterprise-file-storage-repository01.png){.thumbnail}
 
 Choisissez `Network attached storage`{.action}. 
 
-![Add SMB repository 02](images/04-add-smb-repository02.png){.thumbnail}
+![Add Enterprise File Storage repository 02](images/04-add-enterprise-file-storage-repository02.png){.thumbnail}
 
-Cliquez sur `SMB share`{.action}. 
+Cliquez sur `NFS share`{.action}.
 
-![Add SMB repository 03](images/04-add-smb-repository03.png){.thumbnail}
+![Add Enterprise File Storage repository 03](images/04-add-enterprise-file-storage-repository03.png){.thumbnail}
 
-Saisissez le `nom du dépôt`{.action} dans la zone de saisie **Name** et cliquez sur `Next`{.action}. 
+Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
 
-![Add SMB repository 04](images/04-add-smb-repository04.png){.thumbnail}
+![Add Enterprise File Storage repository 04](images/04-add-enterprise-file-storage-repository04.png){.thumbnail}
 
-Ecrivez le `nom UNC`{.action} du partage dans **Shared folder** cochez la case `This share requires access credentials`{.action} et cliquez sur `Add`{.action}. 
+Saisissez ou coller le nom du volume partagée dans **Enterprise storage** dans `Shared folder:`{.action} et cliquez sur `Next`{.action}.
 
-![Add SMB repository 05](images/04-add-smb-repository05.png){.thumbnail}
-
-Saisissez ces informations :
-
-- **Username** :  `nom d'utilisateur`{.action} 
-- **Password** :  `mot de passe`{.action} 
-
-Cliquez sur `OK`{.action}.
-
-![Add SMB repository 06](images/04-add-smb-repository06.png){.thumbnail}
-
-Vérifiez le nom de l'utilisateur et cliquez sur `Next`{.action}.
-
-![Add SMB repository 07](images/04-add-smb-repository07.png){.thumbnail}
+![Add Enterprise File Storage repository 05](images/04-add-enterprise-file-storage-repository05.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Add SMB repository 08](images/04-add-smb-repository08.png){.thumbnail}
+![Add Enterprise File Storage repository 06](images/04-add-enterprise-file-storage-repository06.png){.thumbnail}
+
+Cliquer sur `Next`{.action}.
+
+![Add Enterprise File Storage repository 07](images/04-add-enterprise-file-storage-repository07.png){.thumbnail}
 
 Cliquez sur `Apply`{.action}.
 
-![Add SMB repository 09](images/04-add-smb-repository09.png){.thumbnail}
+![Add Enterprise File Storage repository 08](images/04-add-enterprise-file-storage-repository08.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Add SMB repository 10](images/04-add-smb-repository10.png){.thumbnail}
+![Add Enterprise File Storage repository 09](images/04-add-enterprise-file-storage-repository09.png){.thumbnail}
 
 Cliquez sur `Finish`{.action}.
 
-![Add SMB repository 11](images/04-add-smb-repository11.png){.thumbnail}
+![Add Enterprise File Storage repository 10](images/04-add-enterprise-file-storage-repository10.png){.thumbnail}
 
-Cliquez sur `No`{.action}.
-
-![Add SMB repository 12](images/04-add-smb-repository12.png){.thumbnail}
-
-Le nouveau dépôt apparait et est utilisable pour des sauvegardes.
-
-![Add SMB repository 13](images/04-add-smb-repository13.png){.thumbnail}
 
 ### Mise en place d'une sauvegarde
 
 Nous allons créer une tâche de sauvegarde automatisée.
 
-Dans **Veeam backup** cliquez en bas sur `No`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
+Dans **Veeam backup** cliquez en bas sur `Home`{.action} , ensuite ouvrez le menu `Backup Job`{.action} et choisissez `Nutanix AHV`{.action}
 
 ![Create Backup JOB 01](images/05-createbackupjob01.png){.thumbnail}
+
+L'interface WEB du **Proxy AHV** s'ouvre.
 
 Saisissez un `nom`{.action} dans **Name**, cochez l'option `Backup job`{.action} ensuite cliquez sur `Next`{.action}.
 
@@ -349,7 +380,7 @@ Cliquez sur le bouton `Add`{.action}.
 
 ![Create Backup JOB 03](images/05-createbackupjob03.png){.thumbnail}
 
-Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la `case à cocher`{.action} à gauche des machines virtuelles.
+Sélectionnez les machines virtuelles que vous voulez sauvegarder en utilisant la `case à cocher`{.action} à gauche des machines virtuelles. et cliquez sur `Add`{.action}.
 
 ![Create Backup JOB 04](images/05-createbackupjob04.png){.thumbnail}
 
@@ -368,6 +399,14 @@ Cochez la case `Run the job automatically`{.action}, choisissez `l'heure de sauv
 Cliquez sur `Finish`{.action} pour enregistrer la tâche de sauvegarde.
 
 ![Create Backup JOB 08](images/05-createbackupjob07.png){.thumbnail}
+
+La sauvegarde est visible au travers de l'interface WEB du **Proxy AHV**.
+
+![Create Backup JOB 09](images/05-createbackupjob09.png){.thumbnail}
+
+Revenez dans la console **Veeam Backup** à partir du menu `Home`{.action} en bas à gauche et cliquez sur `Jobs`{.action} pour voir le job créé
+
+![Create Backup JOB 10](images/05-createbackupjob10.png){.thumbnail}
 
 ### Restauration d'un ordinateur virtuel
 
