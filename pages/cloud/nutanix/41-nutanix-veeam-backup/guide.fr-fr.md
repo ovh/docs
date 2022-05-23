@@ -33,9 +33,7 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix.
 
 ## En pratique
 
-Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec dépot distant de ce cluster chez OVHcloud avec la solution **Enterprise File Storage** d'OVHcloud.
-
-
+Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix avec un dépôt distant de ce cluster chez OVHcloud avec la solution **Enterprise File Storage** d'OVHcloud.
 
 ### Ajouter un utilisateur dans **Prism Element pour Veeam Backup**
 
@@ -85,7 +83,7 @@ Ce compte utilisateur est créé et il est dans la liste des utilisateurs de **P
 
 Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
-A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous devez disposer d'un compte d'utilisateur sur le site de **Veeam** vous pouvez le créer librement.
+A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour Veeam](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous devez disposer d'un compte utilisateur sur le site de **Veeam** vous pouvez le créer librement et gratuitement.
 
 Lancez l'installation de l'extension.
 
@@ -311,7 +309,7 @@ Un message vous informe que le contrôle d'accès a été créé.
 Cliquez sur l'onglet **General information** et copiez l'information contenue dans `Mount path` qui doit avoir cette forme **adresseip://share_name**. 
 
 > [!info]
-> L'élément copié est le dépôt qui sera utilisé par **Veeam Backup**.
+> L'élément copié est le dépôt qui est utilisé par **Veeam Backup**.
 >
 
 ![Create Enterprise Storage Volume 08](images/04-create-enterprise-storage-volume08.png){.thumbnail}
@@ -386,7 +384,7 @@ Cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 05](images/06-createbackupjob05.png){.thumbnail}
 
-Sélectionnez le dépôt dans  `Backup repository`{.action} et cliquez sur `Next`{.action}.
+Sélectionnez le dépôt dans `Backup repository`{.action} et cliquez sur `Next`{.action}.
 
 ![Create Backup JOB 06](images/06-createbackupjob06.png){.thumbnail}
 
