@@ -85,7 +85,7 @@ Ce compte utilisateur est créé et il est  dans la liste des utilisateurs de **
 
 Connectez-vous sur la machine virtuelle où se trouve VEEAM Backup.
 
-A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous dezvez disposer d'un compte d'utilisateur sur le site de **Veeam** vous pouvez le créer librement.
+A partir d'un navigateur Web Télécharger la dernière version de l'extension sur ce lien [Extension AHV pour VEEAM](https://www.veeam.com/availability-nutanix-ahv-download.html), Vous devez disposer d'un compte d'utilisateur sur le site de **Veeam** vous pouvez le créer librement.
 
 Lancez l'installation de l'extension.
 
@@ -272,7 +272,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 [sudo] password for proxy_user:
 ```
 
-### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHCloud
+### Création du volume **Enterprise File Storage au travers de l'espace client d'OVHcloud
 
 Au travers de l'espace client d'OVHcloud allez dans `Storage and Backup`{.action}, faites dérouler `Enterprise File Storage`{.action} et cliquez sur le `stockage`{.action} qui servira pour la sauvegarde **Veeam Backup**.
 
