@@ -88,9 +88,9 @@ A partir d'un navigateur Web Télécharger la dernière version de l'extension s
 Lancez l'installation de l'extension.
 
 > [!warning]
-> Avant de lancer d'exécuter l'installation bien s'assurer que la console **Veeam Backup & replication** ne soit pas ouverte.
+> Avant de lancer d'exécuter l'installation bien s'assurer que la console **Veeam Backup & replication** soit fermée.
 >
->
+
 
 
 Double-cliquez sur l'installateur `NutanixAHPlugin_...`{.action}
@@ -194,7 +194,7 @@ Cliquez sur `Next`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 17](images/03-addclusternutanix-to-veeam17.png){.thumbnail}
 
-Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la machine virtuelle spécifique à Veeam.
+Cliquez sur `Add`{.action} pour ajouter et créer le compte de connexion à la machine virtuelle **NUTANIX-PROXY** ajoutée lors d'ajout d'un cluster Nutanix dans la console **Veeam Backup et replication**.
 
 > [!warning]
 > Notez bien le compte utilisateur créé ainsi que le mot de passe il pourra servir pour se connecter sur la nouvelle machine virtuelle
@@ -298,7 +298,7 @@ Se positionnez sur l'onglet `Access Control List(ACL)`{.action} et cliquez sur `
 
 ![Create Enterprise Storage Volume 05](images/04-create-enterprise-storage-volume05.png){.thumbnail}
 
-Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam Backup qui lui permet d'accèder à INTERNET`{.action} choisissez dans **Access permissions** `Read and write`{.action} ensuite cliquez sur l'icône de `validation`{.action}.
+Saisisissez dans **Access to** `L'adresse IP publique utilisée sur la VM Veeam Backup qui sert de passerelle Internet`{.action} choisissez dans **Access permissions** `Read and write`{.action} ensuite cliquez sur l'icône de `validation`{.action}.
 
 ![Create Enterprise Storage Volume 06](images/04-create-enterprise-storage-volume06.png){.thumbnail}
 
@@ -337,7 +337,7 @@ Saisissez un `Nom`{.action} dans **Name** et cliquez sur `Next`{.action}.
 `Saisissez ou coller`{.action} le nom du volume partagée dans `Shared folder:`{.action} et cliquez sur `Next`{.action}.
 
 > [!info]
-> Vous pouvez récupérez ce que vous avez copié depuis l'espace client OVHcloud.
+> Vous pouvez devez utiliser ce que vous avez copié depuis l'espace client OVHcloud.
 >
 
 
