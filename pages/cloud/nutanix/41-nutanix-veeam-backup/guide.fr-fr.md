@@ -23,13 +23,13 @@ Veeam backup est un logiciel de sauvegarde disponible pour Nutanix.
 
 ## Prérequis
 
-- Disposer d'un cluster Nutanix dans votre compte OVHcloud
+- Disposer d'un cluster Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur le cluster via **Prism Central**. 
-- D'avoir installé **Veeam Backup & Replication** sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
-- De connaitre l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
-- de disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- De posséder un stockage distant hors du cluster de type Enterprise File Storage disponible chez OVHcloud dont voici la présentation [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
+- **Veeam Backup & eplication** installé sur une machine virtuelle de votre cluster Nutanix avec cette procédure [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
+- Connaitre l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
+- Disposer de 4 Go de mémoires vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
+- Posséder un stockage distant hors du cluster de type Enterprise File Storage disponible chez OVHcloud dont voici la présentation [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
 
 ## En pratique
 
