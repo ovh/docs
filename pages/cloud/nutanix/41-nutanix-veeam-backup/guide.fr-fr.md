@@ -6,7 +6,7 @@ section: Sauvegardes
 order: 02
 ---
 
-**Dernière mise à jour le 23/05/2022**
+**Dernière mise à jour le 24/05/2022**
 
 ## Objectif
 
@@ -170,7 +170,9 @@ Cliquez sur `Finish`{.action}.
 
 ![Addon Cluster Nutanix to Veeam 11](images/03-addclusternutanix-to-veeam11.png){.thumbnail}
 
+
 Cliquez sur `Yes`{.action}.
+
 
 ![Addon Cluster Nutanix to Veeam 12](images/03-addclusternutanix-to-veeam12.png){.thumbnail}
 
