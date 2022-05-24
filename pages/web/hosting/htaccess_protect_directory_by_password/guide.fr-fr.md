@@ -1,7 +1,6 @@
 ---
 title: "Protéger l'interface d'administration de votre site par un fichier .htaccess"
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
-legacy_guide_number: 1968
 excerpt: "Retrouvez ici comment protéger l'accès à l'administration de votre site avec un fichier .htaccess"
 section: Réécriture et authentification
 ---
@@ -33,7 +32,7 @@ Il peut parfois être nécessaire de protéger l'accès à une partie de votre s
 >
 > La solution proposée ici n'est qu'une possibilité technique parmi d'autres pour mettre en place un espace administrateur sur votre site. Vous pouvez également utiliser la fonctionnalité [Module en 1 clic](../modules-en-1-clic/) proposée par [OVHcloud](https://www.ovhcloud.com/fr/).
 >
-> Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
+> Pour toute demande sur la création ou la programmation de votre site, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ces sujets.
 >
 
 ### Etape 1 : créer l'arborescence
@@ -77,7 +76,7 @@ php crypt.php
 >
 > Pour des raisons de sécurité, l'utilisation du SSH est recommandée. Toutefois, si vous disposez d'une offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ou [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) et que vous ne souhaitez pas passer sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), vous pouvez aussi exécuter le fichier « crypter.php » par le biais de votre navigateur Web (En allant sur une URL du type https://votre-domaine.ovh/crypter.php).
 >
-> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
+> Pour toute question complémentaire sur la méthode à utiliser pour chiffrer vos mots de passe, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/). Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
 Récupérez les mots de passe chiffrés (Ne copiez pas le « &#60;br /> » si vous exécutez la commande « php crypter.php » en SSH) :
@@ -146,6 +145,6 @@ Require valid-user
 
 [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

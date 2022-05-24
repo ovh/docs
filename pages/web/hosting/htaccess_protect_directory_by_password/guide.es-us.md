@@ -1,7 +1,6 @@
 ---
 title: Proteger el panel de administración del sitio web con un archivo .htaccess
 slug: compartido-htaccess-como-proteger-el-acceso-a-un-directorio-por-autenticacion
-legacy_guide_number: g1968
 excerpt: Cómo proteger el acceso a la administración de su sitio web con un archivo .htaccess
 section: Reescritura y autenticación
 ---
@@ -37,7 +36,7 @@ A veces puede ser necesario proteger el acceso a una parte del sitio web con ide
 >
 > La solución que ofrece es solo una posibilidad técnica entre otras para crear un espacio de administrador en su sitio web. También puede utilizar la funcionalidad [Módulo en 1 clic](../modulos-en-un-clic/) que ofrece [OVHcloud](https://www.ovhcloud.com/es/).
 >
-> Para solicitar cualquier tipo de creación o programación de su sitio web, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es/). Nosotros no podremos asistirle en estos temas.
+> Para solicitar cualquier tipo de creación o programación de su sitio web, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle en estos temas.
 >
 
 ### Etapa 1: crear el árbol
@@ -81,7 +80,7 @@ php crypter.php
 >
 > Por motivos de seguridad, se recomienda utilizar el SSH. No obstante, si tiene un plan [Kimsufi Web](https://www.kimsufi.com/es/) o [Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/) y no quiere cambiar a un plan [Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), puede ejecutar el archivo "crypter.php" a través de su navegador web (yendo a una URL del tipo https://su-dominio.ovh/crypter.php).
 >
-> Para más información sobre el método de cifrado de sus contraseñas, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es/). No podremos asistirle en este asunto.
+> Para más información sobre el método de cifrado de sus contraseñas, contacte con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/). No podremos asistirle en este asunto.
 >
 
 Obtenga las contraseñas encriptadas (no copie el "&#60;br />" si ejecuta el comando "php crypter.php" en SSH):
@@ -150,6 +149,6 @@ Require valid-user
 
 [.htaccess, reescritura de URL con mod_rewrite](../web_hosting_htaccess_reescritura_de_url_con_mod_rewrite/)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
