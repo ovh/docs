@@ -6,16 +6,19 @@ section: Object Storage Standard (Swift)
 order: 020
 ---
 
+**Last updated 27th October 2021**
+
 ## Objective
 
 The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
-This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.
+
+**This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.**
 
 
 ## Requirements
 
 - [Prepare the environment to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
-- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
+- [Get the Openstack RC File v3 from Horizon](../../public-cloud/set-openstack-environment-variables/)
 
 ## Instructions
 
@@ -28,7 +31,7 @@ Please enter your OpenStack Password for project <project_name> as user <user_na
 user@host:~$
 ```
 
-### Install Openstack client if needed
+### Install OpenStack client if needed
 
 ```bash
 user@host:~$ pip install python-openstackclient
@@ -36,7 +39,7 @@ user@host:~$ pip install python-openstackclient
 user@host:~$
 ```
 
-Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
+OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
 
 ### Create EC2 credentials
 
@@ -82,9 +85,9 @@ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Token: $OS_TOKEN"
 }
 ```
 
-### Configure aws client
+### Configure AWS client
 
-Install the aws client and configure it as follows:
+Install the AWS client and configure it as follows:
 
 ```bash
 user@host:~$ pip install awscli awscli-plugin-endpoint
@@ -111,7 +114,7 @@ s3api =
 
 Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
-### Use aws client
+### Use AWS client
 
 List buckets (containers):
 
@@ -124,8 +127,21 @@ Create a new bucket:
 ```bash
 user@host:~$ aws --profile default s3 mb s3://bucket
 ```
-S3 no longer supports creating bucket names that contain uppercase letters or underscores.
-S3 Buckets can only be created on PCS policy (Object Storage)
+
+> [!primary]
+>
+> S3 Buckets can only be created on PCS policy (Object Storage).
+>
+
+> [!primary]
+>
+> The container name must respect the following rules.
+>
+> - The bucket name can be between 3 and 63 characters long, and can contain only lower-case characters, numbers, periods, and dashes.  
+> - Each bucket name must start with a lowercase letter or number.  
+> - The bucket name cannot contain underscores, end with a dash, have consecutive periods, or use dashes adjacent to periods.  
+> - The bucket name cannot be formatted as an IP address (198.51.100.24).  
+>
 
 Upload a local file to Swift:
 
@@ -153,5 +169,7 @@ user@host:~$ aws --profile default s3 rb s3://bucket
 
 ## Go further
 
-- Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
+- OpenStack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
 - S3 client command reference [here](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
+
+Join our community of users on <https://community.ovh.com/en/>.

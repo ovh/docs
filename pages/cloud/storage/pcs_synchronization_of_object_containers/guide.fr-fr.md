@@ -46,7 +46,7 @@ Dans un premier temps, il faut configurer la clé sur le conteneur qui recevra l
 - Vérifiez la région chargée dans les variables d'environnement :
 
 ```bash
-root@serveur-1:~$ env | grep OS_REGION
+root@serveur-1~$ env | grep OS_REGION
 
 OS_REGION_NAME=BHS
 ```
