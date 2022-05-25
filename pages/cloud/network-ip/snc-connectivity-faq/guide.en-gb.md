@@ -1,7 +1,6 @@
 ---
-title: FAQ
+title: FAQ SecNumCloud Connectivity
 slug: secnumcloud-connectivity-faq
-excerpt: 'Frequently Asked Questions on the SecNumCloud Connectivity offer'
 section: SecNumCloud Connectivity
 order: 05
 ---

@@ -20,8 +20,8 @@ In diesem Tutorial geben wir einen Überblick über die Verwaltung von Volume Sn
 
 ## Voraussetzungen
 
-- Sie verfügen über einen OVHcloud Enterprise File Storage
-- Sie sind zur Verwendung der [OVHcloud API](https://api.ovh.com/) eingeloggt
+- Sie verfügen über einen OVHcloud Enterprise File Storage.
+- Sie sind zur Verwendung der [OVHcloud API](https://api.ovh.com/) eingeloggt.
 
 ## Grundlagen
 
@@ -68,7 +68,7 @@ Alle vorhandenen Snapshots eines Volumes können über folgende Route abgerufen 
 >> >> Volume ID
 >
 
-Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und der `netappShareId` mit der Volume-ID.
+Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `netappShareId` mit der Volume-ID.
 
 Standardmäßig sollte kein Snapshot für ein neues Volume zurückgegeben werden.
 

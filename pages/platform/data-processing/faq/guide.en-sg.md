@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Data Processing FAQ'
+title: FAQ OVHcloud Data Processing
 slug:  data-processing-faq 
 section: Getting started
 order: 3

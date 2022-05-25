@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: Les questions les plus fréquemment posées sur les services VoIP OVHcloud
+title: FAQ VoIP OVHcloud
 slug: faq-voip
 section: FAQ
 order: 1

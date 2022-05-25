@@ -722,43 +722,6 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.230
 ```
 
-## Cluster 025
-
-#### Cluster IP addresses per country
-
-|Country|Country Code|IPv4|IPv6|
-|---|---|----|---|
-|France|FR|188.165.59.25|2001:41d0:301::25|
-|Ireland|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
-|United Kingdom|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italy|IT|178.32.138.102|2001:41d0:301:11::25|
-|Spain|ES|188.165.130.4|2001:41d0:301:4::25|
-|Poland|PL|188.165.16.78|2001:41d0:301:5::25|
-|Czech Republic|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Netherlands|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finland|FI|178.32.129.72|2001:41d0:301:8::25|
-|Lithuania|LT|188.165.26.160|2001:41d0:301:9::25|
-|Germany|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgium|BE|87.98.252.243|2001:41d0:301:10::25|
-
-If you have activated the **CDN** option on your Web Hosting, use this IP address:
-
-```bash
-145.239.37.172
-```
-
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
-
-```bash
-46.105.204.25
-```
-
-If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
-
-```bash
-91.134.248.215
-```
 
 ## Cluster 026
 
