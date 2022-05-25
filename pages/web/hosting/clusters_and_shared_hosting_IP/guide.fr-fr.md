@@ -698,44 +698,6 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.230
 ```
 
-### Cluster 025
-
-Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
-
-|Pays|Code Pays|IPv4|IPv6|
-|---|---|----|---|
-|France|FR|188.165.59.25|2001:41d0:301::25|
-|Irlande|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
-|Royaume-Uni|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italie|IT|178.32.138.102|2001:41d0:301:11::25|
-|Espagne|ES|188.165.130.4|2001:41d0:301:4::25|
-|Pologne|PL|188.165.16.78|2001:41d0:301:5::25|
-|République tchèque|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Pays-Bas|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finlande|FI|178.32.129.72|2001:41d0:301:8::25|
-|Lituanie|LT|188.165.26.160|2001:41d0:301:9::25|
-|Allemagne|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgique|BE|87.98.252.243|2001:41d0:301:10::25|
-
-Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-145.239.37.172
-```
-
-Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-46.105.204.25
-```
-
-Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
-```bash
-91.134.248.215
-```
-
 ### Cluster 026
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :

@@ -720,45 +720,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 ```bash
 91.134.248.230
 ```
-
-## Cluster 025
-
-#### IP-Adressen der Cluster nach Land
-
-|Country|Country Code|IPv4|IPv6|
-|---|---|----|---|
-|Frankreich|FR|188.165.59.25|2001:41d0:301::25|
-|Irland|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
-|Vereinigtes Königreich|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italien|IT|178.32.138.102|2001:41d0:301:11::25|
-|Spanien|ES|188.165.130.4|2001:41d0:301:4::25|
-|Polen|PL|188.165.16.78|2001:41d0:301:5::25|
-|Tschechische Republik|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Niederlande|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finnland|FI|178.32.129.72|2001:41d0:301:8::25|
-|Litauen|LT|188.165.26.160|2001:41d0:301:9::25|
-|Deutschland|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgien|BE|87.98.252.243|2001:41d0:301:10::25|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-145.239.37.172
-```
-
-Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-46.105.204.25
-```
-
-Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
-
-```bash
-91.134.248.215
-```
-
 ## Cluster 026
 
 #### IP-Adressen der Cluster nach Land
