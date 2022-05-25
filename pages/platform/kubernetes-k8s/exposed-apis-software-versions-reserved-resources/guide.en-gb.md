@@ -5,13 +5,13 @@ slug: exposed-apis-software-versions-reserved-resources
 section: Technical resources
 ---
 
-**Last updated May 3<sup>rd</sup>, 2021.**
+**Last updated May 25<sup>th</sup>, 2022.**
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
 ## OVHcloud API
 
-We have added a [Kubernetes section](https://api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://api.ovh.com/console/).
+We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://ca.api.ovh.com/console/).  
 Using it allows you to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
 
 > [!primary]
@@ -22,10 +22,11 @@ Using it allows you to add and remove nodes, update and reset your clusters or g
 Currently, we support the following Kubernetes releases:
 
 * `1.18` (deprecated)
-* `1.19`
+* `1.19` (deprecated)
 * `1.20`
 * `1.21`
 * `1.22`
+* `1.23`
 
 If you run a Managed Kubernetes Service using an older version we strongly encourage you to use the [version upgrade feature](../upgrading-kubernetes-version/) to receive official support for your cluster.
 
@@ -55,10 +56,11 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 The versions installed depends on the Kubernetes version:
 
 * `1.18`: calico v3.10.3, flannel v0.11.0 (deprecated)
-* `1.19`: calico v3.10.3, flannel v0.11.0
+* `1.19`: calico v3.10.3, flannel v0.11.0 (deprecated)
 * `1.20`: calico v3.10.3, flannel v0.11.0
-* `1.21`: calico v3.19.3, flannel v0.11.0
-* `1.22`: calico v3.20.1, flannel v0.14.0
+* `1.21`: calico v3.22.2, flannel v0.17.0
+* `1.22`: calico v3.22.2, flannel v0.17.0
+* `1.23`: calico v3.22.2, flannel v0.17.0
 
 ## CSI (Container Storage Interface)
 
@@ -66,22 +68,23 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
-* `1.18`: csi-plugin v1.18.0, csi-attacher v2.0.1, csi-provisioner v1.6.0, csi-snapshotter v2.1.5, snapshot-controller: v2.1.5, csi-resizer v0.5.0 (deprecated)
-* `1.19`: csi-plugin v1.18.0, csi-attacher v2.0.1, csi-provisioner v1.6.0, csi-snapshotter v2.1.5, snapshot-controller: v2.1.5, csi-resizer v0.5.0
-* `1.20`: csi-plugin v1.18.0, csi-attacher v2.0.1, csi-provisioner v1.6.0, csi-snapshotter v2.1.5, snapshot-controller: v2.1.5, csi-resizer v0.5.0
-* `1.21`: csi-plugin v1.18.0, csi-attacher v2.0.1, csi-provisioner v1.6.0, csi-snapshotter v2.1.5, snapshot-controller: v2.1.5, csi-resizer v0.5.0
-* `1.22`: csi-plugin v1.18.0, csi-attacher v3.3.0, csi-provisioner v3.0.0, csi-snapshotter v3.0.3, snapshot-controller: v3.0.3, csi-resizer v1.3.0
+* `1.18`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v2.2.2, csi-snapshotter v3.0.3, snapshot-controller: v3.0.3, csi-resizer v1.4.0 (deprecated)
+* `1.19`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v2.2.2, csi-snapshotter v3.0.3, snapshot-controller: v3.0.3, csi-resizer v1.4.0 (deprecated)
+* `1.20`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
+* `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0
 
 ## Other components
 
 The versions are:
 
 * `1.18`: coredns v1.8.0, metrics-server v0.3.6 (deprecated)
-* `1.19`: coredns v1.8.0, metrics-server v0.3.7
-* `1.20`: coredns v1.8.0, metrics-server v0.3.7
-* `1.21`: coredns v1.8.4, metrics-server v0.4.4
-* `1.22`: coredns v1.8.4, metrics-server v0.5.0
-
+* `1.19`: coredns v1.9.1, metrics-server v0.6.1 (deprecated)
+* `1.20`: coredns v1.9.1, metrics-server v0.6.1
+* `1.21`: coredns v1.9.1, metrics-server v0.6.1
+* `1.22`: coredns v1.9.1, metrics-server v0.6.1
+* `1.23`: coredns v1.9.1, metrics-server v0.6.1
 
 ## Enabled policies
 
