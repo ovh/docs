@@ -764,45 +764,6 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 91.134.248.230
 ```
 
-### Cluster 025
-
-A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
-
-|País|Código del país|IPv4|IPv6|
-|---|---|----|---|
-|Francia|FR|188.165.59.25|2001:41d0:301::25|
-|Irlanda|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
-|Reino Unido|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italia|IT|178.32.138.102|2001:41d0:301:11::25|
-|España|ES|188.165.130.4|2001:41d0:301:4::25|
-|Polonia|PL|188.165.16.78|2001:41d0:301:5::25|
-|República Checa|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Países Bajos|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finlandia|FI|178.32.129.72|2001:41d0:301:8::25|
-|Lituania|LT|188.165.26.160|2001:41d0:301:9::25|
-|Alemania|DE|178.33.34.108|2001:41d0:301:1::25|
-|Bélgica|BE|87.98.252.243|2001:41d0:301:10::25|
-
-Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-```bash
-145.239.37.172
-```
-
-Si el servicio **Shared CDN** (lanzado el 19/11/2020) está activado en su alojamiento, debe utilizar la siguiente dirección IP:
-
-```bash
-46.105.204.25
-```
-
-Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
-
-
-```bash
-91.134.248.215
-```
-
 ### Cluster 026
 
 A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
