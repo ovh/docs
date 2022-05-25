@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Encontre aqui as questões mais comuns sobre os e-mails OVHcloud'
+title: FAQ e-mails OVHcloud
 slug: faq-emails
 section: Introdução
 order: 07

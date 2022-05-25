@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'FAQ dla instancji Public Cloud'
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: 'Pierwsze kroki'
 order: 3

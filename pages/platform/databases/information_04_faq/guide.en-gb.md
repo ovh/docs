@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Frequently Asked Questions on Public Cloud Databases'
+title: FAQ Public Cloud databases
 slug: faq
 section: General information
 order: 040
