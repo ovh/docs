@@ -49,7 +49,7 @@ Die Laufzeit des Programms beträgt somit **etwas mehr als ein** Jahr, bis die n
 > So können Sie zum Beispiel nicht von einer *Performance 2* auf eine *Pro* Lösung wechseln.
 > Sie müssen **Ihr** Hosting zunächst von *Performance 2* zum *Performance 1* Hosting **und dann** zum *Pro* Angebot umstellen.
 >
-> Die folgenden Elemente betreffen kostenpflichtige Angebote. Um Ihr kostenloses [Start 10M Hosting](https://docs.ovh.com/fr/hosting/activer-start10m/) anzupassen, folgen Sie [diesen Anweisungen](#start10m).
+> Die folgenden Elemente betreffen kostenpflichtige Angebote. Um Ihr kostenloses [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) anzupassen, folgen Sie [diesen Anweisungen](#start10m).
 >
 
 > [!warning]
@@ -76,23 +76,23 @@ Wählen Sie dann Ihr neues Abonnement und dessen Dauer aus. Bestätigen Sie die 
 > Wenn Sie das E-Mail-Angebot nicht aktiviert haben, sind die Anweisungen im [vorherigen Abschnitt](#modify) ausreichend.
 >
 
-Sie können nicht **direkt** von einem kostenlosen [Start 10M Hosting](https://docs.ovh.com/fr/hosting/activer-start10m/) auf ein kostenpflichtiges Angebot umstellen. Folgende Operationen sind durchzuführen:
+Sie können nicht **direkt** von einem kostenlosen [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) auf ein kostenpflichtiges Angebot umstellen. Folgende Operationen sind durchzuführen:
 
-1. Speichern Sie erforderlichenfalls die [Dateien Ihres Hostings](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) und die [Nachrichten Ihres E-Mail Angebots](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique)<br>.
+1. Speichern Sie erforderlichenfalls die [Dateien Ihres Hostings](https://docs.ovh.com/de/hosting/website-exportieren/#schritt-1-dateien-von-ihrem-ftp-speicherplatz-abrufen) und die [Nachrichten Ihres E-Mail Angebots](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/)<br>.
 2. Starten Sie die Löschung Ihres Start 10M. Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf der `Dienstverwaltung`{.action}. Klicken Sie dann rechts neben dem betreffenden Dienst auf `...`{.action}. und dann auf `Hosting sofort löschen`{.action}.<br>
-3. Erstellen Sie ein [Support-Ticket](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), um auf Wunsch die beschleunigte Löschung Ihres Angebots zu beantragen (eine Start 10M E-Mail-Adresse wird standardmäßig 14 Tage gespeichert, um jeglichen Datenverlust aufgrund eines Handhabungsfehlers zu vermeiden)<br>.
+3. Erstellen Sie ein [Support-Ticket](https://help.ovhcloud.com/de/faq/support/cant-reach-support-phone/), um auf Wunsch die beschleunigte Löschung Ihres Angebots zu beantragen (eine Start 10M E-Mail-Adresse wird standardmäßig 14 Tage gespeichert, um jeglichen Datenverlust aufgrund eines Handhabungsfehlers zu vermeiden)<br>.
 4. [Bestellen Sie ein neues Webhosting-Angebot](https://www.ovhcloud.com/de/web-hosting/).<br>
-5. Importieren Sie Ihre Website erforderlichenfalls in Ihren [neuen Hosting-Bereich](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).<br>
-6. [Fügen Sie den Domainnamen Ihrer Website zur Multisite Ihres neuen Angebots hinzu](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
-7. [Erstellen Sie bei Bedarf Ihre E-Mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/)-Adresse und [importieren Sie Ihre Nachrichten](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+5. Importieren Sie Ihre Website erforderlichenfalls in Ihren [neuen Hosting-Bereich](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/#schritt-2-websitedateien-im-speicherplatz-online-stellen).<br>
+6. [Fügen Sie den Domainnamen Ihrer Website zur Multisite Ihres neuen Angebots hinzu](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen).<br>
+7. [Erstellen Sie bei Bedarf Ihre E-Mail](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/)-Adresse und [importieren Sie Ihre Nachrichten](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/).
 
 ### Überprüfen, ob Ihr Hosting mit einem niedrigeren Angebot kompatibel ist <a name="checks"></a>
 
 #### Anzahl der Websites
 
-Mit dem [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) Angebot können Sie nicht mehr als einen Domainnamen auf der [Multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) Ihres Hostings verwenden.
+Mit dem [Kimsufi Web](https://www.kimsufi.com/de/) Angebot können Sie nicht mehr als einen Domainnamen auf der [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) Ihres Hostings verwenden.
 
-Bevor Sie vom [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot zum [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) Angebot wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
+Bevor Sie vom [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot zum [Kimsufi Web](https://www.kimsufi.com/de/) Angebot wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
 
 #### Start SQL-Datenbanken
 
@@ -106,7 +106,7 @@ Nachdem Sie Ihre Datenbanken gelöscht haben, denken Sie daran, das verwendete Q
 
 #### CloudDB
 
-Wenn Sie das bei Ihrem Hosting enthaltene [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verwenden und Ihr Hosting auf ein [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) Angebot umstellen möchten, gehen Sie in den Bereich `Hosting`{.action} Ihres Kundencenters.<br>
+Wenn Sie das bei Ihrem Hosting enthaltene [CloudDB](https://docs.ovh.com/de/hosting/erste-schritte-mit-clouddb/#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) verwenden und Ihr Hosting auf ein [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) Angebot umstellen möchten, gehen Sie in den Bereich `Hosting`{.action} Ihres Kundencenters.<br>
 Klicken Sie auf den Button `...`{.action} im Bereich Private Datenbanken {.action} und dann auf `Abtrennen`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -115,12 +115,12 @@ Mit dieser Aktion können Sie ein CloudDB Angebot bestellen, das unabhängig von
 
 Wenn Sie diese Daten nicht speichern möchten, können Sie auch Ihr SQL Private löschen, bevor Sie zum *Pro* Angebot wechseln: 
 
-1. Speichern Sie Ihre Daten gemäß den Anweisungen in dieser [Anleitung](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+1. Speichern Sie Ihre Daten gemäß den Anweisungen in dieser [Anleitung](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/).<br>
 2. Löschen Sie Ihren CloudDB Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie hierzu oben rechts auf Ihren Namen und dann auf der `Dienstverwaltung`{.action}. Klicken Sie dann rechts neben der betreffenden Zeile auf `...`{.action} und dann auf `Mein SQL Private Hosting kündigen`{.action}.
 
 #### FTP Bereich
 
-Bevor Sie Ihr Webhosting auf ein niedrigeres Angebot umstellen, stellen Sie sicher, dass das neue [Angebot ausreichend FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/)-Speicherplatz zur Verfügung steht, damit die Dateien Ihres aktuellen Webhostings importiert werden können.
+Bevor Sie Ihr Webhosting auf ein niedrigeres Angebot umstellen, stellen Sie sicher, dass das neue [Angebot ausreichend FTP](https://docs.ovh.com/de/hosting/verbindung-ftp-speicher-webhosting/)-Speicherplatz zur Verfügung steht, damit die Dateien Ihres aktuellen Webhostings importiert werden können.
 
 Das auf Ihrem FTP-Hosting verwendete Quota ist im Bereich `Hosting-Pakete`{.action} Ihres Kundencenters einsehbar. Klicken Sie auf den Tab `Allgemeine Informationen`{.action}, Sie finden das Quota im `Speicherplatz`.
 
@@ -128,7 +128,7 @@ Das auf Ihrem FTP-Hosting verwendete Quota ist im Bereich `Hosting-Pakete`{.acti
 
 #### E-Mail Adressen
 
-Überprüfen Sie außerdem, dass Ihr neues Angebot eine ausreichende Anzahl verfügbarer E-Mail-Adressen bietet. Falls nicht, löschen Sie die überflüssigen Adressen, nachdem Sie diese [gegebenenfalls](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) gespeichert haben.
+Überprüfen Sie außerdem, dass Ihr neues Angebot eine ausreichende Anzahl verfügbarer E-Mail-Adressen bietet. Falls nicht, löschen Sie die überflüssigen Adressen, nachdem Sie diese [gegebenenfalls](https://docs.ovh.com/de/emails/email-adressen-manuell-migrieren/) gespeichert haben.
 
 Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vor der Umstellung Ihres Hostings auf ein niedrigeres Angebot auch ein neues **MX Plan E-Mail-Angebot bestellen**. Klicken Sie im Bereich `E-Mails`{.action}  in Ihrem Kundencenter auf das betreffende Angebot und dann auf den Button `...`{.action} rechts neben `Angebot`. Klicken Sie anschließend auf `Zu einem anderen Angebot wechseln`{.action}.
 
@@ -136,7 +136,7 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vo
 
 #### Mailinglisten
 
-Die [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) Funktion ist optional bei den [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) Hostings.
+Die [Mailinglisten](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) Funktion ist optional bei den [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.kimsufi.com/de/) Hostings.
 
 Um Ihr Hosting auf ein [Basic](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan** oder **MX Full** Plan) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 
@@ -144,9 +144,9 @@ Wählen Sie im Bereich `E-Mails`{.action} in Ihrem Kundencenter das betreffende 
 
 ## Mehr <a name="gofurther"></a>
 
-[Statistiken und Logs meiner auf einem Shared Hosting Angebot gehosteten Website einsehen](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Statistiken und Logs meiner auf einem Shared Hosting Angebot gehosteten Website einsehen](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/)
 
-[Optimierung der Performance Ihrer Webseite](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Optimierung der Performance Ihrer Webseite](https://docs.ovh.com/de/hosting/webhosting_optimierung_der_performance_ihrer_webseite/)
 
 Für spezialisierte Dienstleistungen (Referenzierung, Entwicklung etc.) kontaktieren Sie die [OVHcloud Partner](https://partner.ovhcloud.com/de/).
 

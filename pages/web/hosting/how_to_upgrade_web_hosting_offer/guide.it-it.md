@@ -49,7 +49,7 @@ Il rinnovo durerà quindi **poco più di un anno** fino al prossimo rinnovo.
 > Ad esempio, non sarà possibile passare da una formula *Performance 2* a una formula *Pro* in una sola operazione.
 > Dovrai **prima** far evolvere il tuo hosting dalla formula *Performance 2* verso l'offerta *Performance 1* **poi** verso l'offerta *Pro*.
 >
-> I seguenti elementi riguardano le offerte a pagamento. Per far evolvere il tuo [hosting gratuito Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), segui queste [istruzioni](#start10m).
+> I seguenti elementi riguardano le offerte a pagamento. Per far evolvere il tuo [hosting gratuito Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/), segui queste [istruzioni](#start10m).
 >
 
 > [!warning]
@@ -76,23 +76,23 @@ Seleziona il tuo nuovo abbonamento e la sua durata. Conferma i contratti e clicc
 > Se non hai attivato il servizio di posta, le istruzioni del [paragrafo precedente](#modify) saranno sufficienti.
 >
 
-Non è possibile passare **direttamente** da un [hosting gratuito Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) a un'offerta a pagamento. Dovrai effettuare queste operazioni:
+Non è possibile passare **direttamente** da un [hosting gratuito Start10M](https://docs.ovh.com/it/hosting/attivare_start10m/) a un'offerta a pagamento. Dovrai effettuare queste operazioni:
 
-1. Salva, se necessario, i [file del tuo hosting](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) e i [messaggi della tua offerta email](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
+1. Salva, se necessario, i [file del tuo hosting](https://docs.ovh.com/it/hosting/exporter-son-site-web/#step-1-recupero-dei-file-del-tuo-spazio-di-storage-ftp) e i [messaggi della tua offerta email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/).<br>
 2. Elimina il tuo Start10M Clicca sul tuo nome in alto a destra e seleziona `Gestione dei servizi`{.action}. Clicca sul pulsante `...`{.action} a destra del servizio interessato e poi su `Elimina subito l'hosting`{.action}.<br>
-3. Crea un [ticket di assistenza](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/) per richiedere, se vuoi, l'eliminazione accelerata della tua offerta (un indirizzo email Start10M viene conservato di default per 14 giorni, per evitare perdite di dati a causa di un errore di gestione).<br>
+3. Crea un [ticket di assistenza](https://help.ovhcloud.com/it/faq/support/cant-reach-support-phone/) per richiedere, se vuoi, l'eliminazione accelerata della tua offerta (un indirizzo email Start10M viene conservato di default per 14 giorni, per evitare perdite di dati a causa di un errore di gestione).<br>
 4. [Ordina una nuova offerta di hosting](https://www.ovhcloud.com/it/web-hosting/).<br>
-5. Importa, se necessario, il tuo sito nel tuo [nuovo spazio di hosting](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).<br>
-6. [Aggiungi il dominio del tuo sito al multisito della tua nuova offerta](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
-7. [Ricevi se necessario il tuo indirizzo email](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) e [importa i tuoi messaggi](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+5. Importa, se necessario, il tuo sito nel tuo [nuovo spazio di hosting](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#step-2-carica-i-file-del-sito-nello-spazio-di-storage).<br>
+6. [Aggiungi il dominio del tuo sito al multisito della tua nuova offerta](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio).<br>
+7. [Ricevi se necessario il tuo indirizzo email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/) e [importa i tuoi messaggi](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/).
 
 ### Verifica che il tuo hosting sia compatibile con un'offerta inferiore <a name="checks"></a>
 
 #### Numero di siti
 
-L'offerta [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) non permette di avere più di un dominio sul [multisito](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) del tuo hosting.
+L'offerta [Kimsufi Web](https://www.kimsufi.com/it/) non permette di avere più di un dominio sul [multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) del tuo hosting.
 
-Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) all'offerta [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml), verifica che il tuo hosting comporti un solo sito.
+Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) all'offerta [Kimsufi Web](https://www.kimsufi.com/it/), verifica che il tuo hosting comporti un solo sito.
 
 #### Database Start SQL
 
@@ -106,7 +106,7 @@ Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.act
 
 #### CloudDB
 
-Se utilizzi l'offerta [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) inclusa con il tuo hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare al tuo hosting su un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), accedi alla sezione `Hosting`{.action} del tuo Spazio Cliente OVHcloud.<br>
+Se utilizzi l'offerta [CloudDB](https://docs.ovh.com/it/hosting/iniziare-a-utilizzare-clouddb/#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web) inclusa con il tuo hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare al tuo hosting su un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), accedi alla sezione `Hosting`{.action} del tuo Spazio Cliente OVHcloud.<br>
 Clicca sul pulsante `...`{.action} nella sezione `Database privato`{.action} > `Scollega`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -115,12 +115,12 @@ Questa azione ti permette di ordinare un'offerta CloudDB indipendente dal tuo ab
 
 Se non vuoi conservare questi dati, è possibile eliminare il tuo SQL privato prima di passare all'offerta *Pro*: 
 
-1. Salva i tuoi dati seguendo le istruzioni di questa [guida](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+1. Salva i tuoi dati seguendo le istruzioni di questa [guida](https://docs.ovh.com/it/hosting/salvare-esportare-un-database/).<br>
 2. Elimina il tuo server CloudDB dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul tuo nome in alto a destra e seleziona `Gestione dei servizi`{.action}. Clicca sul pulsante `...`{.action} a destra della linea corrispondente e su `Elimina l'hosting SQL Privato`{.action}.
 
 #### spazio FTP
 
-Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra [spazio di storage FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) in modo che l'importazione dei file del tuo hosting attuale sia possibile.
+Prima di passare a un'offerta inferiore, assicurati che la nuova offerta offra [spazio di storage FTP](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) in modo che l'importazione dei file del tuo hosting attuale sia possibile.
 
 La quota utilizzata sull'hosting FTP è visibile nella sezione `Hosting`{.action} dello Spazio Cliente OVHcloud. Clicca sulla scheda `Informazioni generali`{.action} e seleziona `Spazio Disco`.
 
@@ -128,7 +128,7 @@ La quota utilizzata sull'hosting FTP è visibile nella sezione `Hosting`{.action
 
 #### Indirizzi email
 
-Verifica che la tua nuova offerta offra un numero sufficiente di indirizzi email disponibili. In caso contrario, rimuovi gli indirizzi superflui dopo averli [salvati](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) se necessario.
+Verifica che la tua nuova offerta offra un numero sufficiente di indirizzi email disponibili. In caso contrario, rimuovi gli indirizzi superflui dopo averli [salvati](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/) se necessario.
 
 Per mantenere lo stesso numero di caselle di posta elettronica prima di passare a un'offerta inferiore, è possibile ordinare una nuova soluzione di posta **MX Plan**. Nella sezione `Email`{.action} dello Spazio Cliente, clicca sull'offerta corrispondente e poi sul pulsante `...`{.action} a destra di `Servizio` Infine clicca su `Modifica offerta`{.action}.
 
@@ -136,7 +136,7 @@ Per mantenere lo stesso numero di caselle di posta elettronica prima di passare 
 
 #### Mailing list
 
-La funzionalità [Mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
+La funzionalità [Mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/it/).
 
 Per attivare un servizio di hosting su un'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), è necessario eliminare le mailing list o ordinare un servizio di posta che includa questa funzionalità (**MX Plan 100** o **MX Plan Full**) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
@@ -144,9 +144,9 @@ Nella sezione `Email`{.action} del tuo Spazio Cliente, seleziona l'offerta e cli
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Consulta le statistiche e i log del tuo sito ospitato su un'offerta condivisa](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consulta le statistiche e i log del tuo sito ospitato su un'offerta condivisa](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/)
 
-[Ottimizza le performance del tuo sito](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Ottimizza le performance del tuo sito](https://docs.ovh.com/it/hosting/web_hosting_ottimizza_le_performance_del_tuo_sito/)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
 

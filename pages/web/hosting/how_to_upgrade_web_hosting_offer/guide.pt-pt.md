@@ -49,7 +49,7 @@ Por conseguinte, a renovação da autorização de introdução no mercado terá
 > Por exemplo, não poderá passar de uma fórmula *Performance 2* para uma fórmula *Pro* numa única operação.
 > Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1** e **depois** para a oferta *Pro*.
 >
-> Os elementos seguintes dizem respeito às ofertas pagas. Para fazer evoluir o seu [alojamento gratuito Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), siga estas [instruções](#start10m).
+> Os elementos seguintes dizem respeito às ofertas pagas. Para fazer evoluir o seu [alojamento gratuito Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/), siga estas [instruções](#start10m).
 >
 
 > [!warning]
@@ -63,7 +63,7 @@ Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ov
 
 No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`, `Mudar de oferta` {.action}.
 
-![change_plan](images/change_plan.png) {.thumbnail}
+![change_plan](images/change_plan.png){.thumbnail}
 
 De seguida, selecione a sua nova subscrição e a sua duração. Valide os contratos correspondentes e clique em `Enviar`{.action}.
 
@@ -76,23 +76,23 @@ De seguida, selecione a sua nova subscrição e a sua duração. Valide os contr
 > Se não ativou o serviço de mensagens, as instruções do [parágrafo anterior](#modify) serão suficientes.
 >
 
-Não poderá passar **diretamente** de um [alojamento gratuito Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) para uma oferta paga. Deverá efetuar as seguintes operações:
+Não poderá passar **diretamente** de um [alojamento gratuito Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/) para uma oferta paga. Deverá efetuar as seguintes operações:
 
-1. Faça o backup, se necessário, dos [ficheiros do alojamento](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) e dos [e-mails](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
+1. Faça o backup, se necessário, dos [ficheiros do alojamento](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/#etapa-1-recuperacao-dos-ficheiros-do-seu-espaco-de-armazenamento-ftp) e dos [e-mails](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).<br>
 2. Inicie a eliminação do seu Start10M. Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços` {.action. A seguir, clique no botão ^..{.action} à direita do serviço em causa e depois ``Eliminar imediatamente o alojamento` {.action}.<br>
-3. Crie um [ticket de assistência](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/) para pedir, se o desejar, a eliminação acelerada da sua oferta (um endereço de e-mail Start10M é conservado 14 dias por defeito, a fim de evitar qualquer perda de dados devido a um erro de manipulação).<br>
+3. Crie um [ticket de assistência](https://help.ovhcloud.com/pt/faq/support/cant-reach-support-phone/) para pedir, se o desejar, a eliminação acelerada da sua oferta (um endereço de e-mail Start10M é conservado 14 dias por defeito, a fim de evitar qualquer perda de dados devido a um erro de manipulação).<br>
 4. [Encomendar uma nova oferta de alojamento](https://www.ovhcloud.com/pt/web-hosting/).<br>
-5. Importe o seu site para o seu [novo espaço de alojamento](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).<br>
-6. [Adicione o domínio do seu site ao multisite da sua nova oferta](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
-7. [Recriar o seu endereço de e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) e [importar mensagens](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+5. Importe o seu site para o seu [novo espaço de alojamento](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/#2-colocar-os-ficheiros-do-site-no-espaco-de-armazenamento).<br>
+6. [Adicione o domínio do seu site ao multisite da sua nova oferta](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#2-adicionar-um-dominio-ou-subdominio).<br>
+7. [Recriar o seu endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/) e [importar mensagens](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).
 
 ### Verificar que o seu alojamento é compatível com uma oferta inferior <a name="checks"></a>
 
 #### Número de sites
 
-A oferta [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) não permite ter mais do que um nome de domínio no [multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/) do seu alojamento.
+A oferta [Kimsufi Web](https://www.kimsufi.com/pt/) não permite ter mais do que um nome de domínio no [multisite](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) do seu alojamento.
 
-Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) à oferta [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml), verifique que o seu alojamento inclui apenas um site.
+Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) à oferta [Kimsufi Web](https://www.kimsufi.com/pt/), verifique que o seu alojamento inclui apenas um site.
 
 #### bases de dados Start SQL
 
@@ -106,7 +106,7 @@ No seguimento da eliminação de dados nas suas bases de dados, pense em recalcu
 
 #### CloudDB
 
-Se utiliza a oferta [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
+Se utiliza a oferta [CloudDB](https://docs.ovh.com/pt/hosting/comecar-com-clouddb/#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
 Clique no botão `...`{.action} na parte `Bases de dados privada`{.action} depois `Desassociar`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -115,12 +115,12 @@ Esta ação permitir-lhe-á encomendar uma oferta CloudDB independente da sua su
 
 Se não deseja conservar estes dados, pode também eliminar o seu SQL privado antes de passar para a oferta *Pro*: 
 
-1. Faça o backup dos seus dados seguindo as instruções deste [guia](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+1. Faça o backup dos seus dados seguindo as instruções deste [guia](https://docs.ovh.com/pt/hosting/backup-exportacao-base-de-dados/).<br>
 2. Elimine o seu servidor CloudDB através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita da linha em questão e depois `Eliminar o meu alojamento SQL privado`{.action}.
 
 #### Espaço FTP
 
-Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta tem espaço de [armazenamento FTP suficiente](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) para que os ficheiros do seu alojamento atual possam ser importados.
+Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta tem espaço de [armazenamento FTP suficiente](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/) para que os ficheiros do seu alojamento atual possam ser importados.
 
 A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`{.action}, na Área de Cliente. Clique no separador `Informações gerais`{.action}, e encontrará a quota no `Espaço de disco`.
 
@@ -128,7 +128,7 @@ A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`
 
 ##### Endereços de e-mail
 
-Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/), se necessário.
+Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/), se necessário.
 
 Se pretender manter o mesmo número de caixas de correio antes de passar o seu alojamento numa oferta inferior, pode igualmente encomendar uma nova oferta de e-mail **MX Plan**. Na parte `E-mails` {.action}, clique na oferta em causa e, a seguir, no botão `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
 
@@ -136,7 +136,7 @@ Se pretender manter o mesmo número de caixas de correio antes de passar o seu a
 
 ##### Mailing lists
 
-A funcionalidade [Mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
+A funcionalidade [Mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/pt/).
 
 Para passar o seu alojamento numa oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá eliminar as mailing lists ou encomendar uma oferta de e-mail que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
@@ -144,9 +144,9 @@ Na parte `E-mails`{.action}, selecione o serviço em causa e clique em `...`{.ac
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/)
 
-[Otimizar o desempenho do seu site](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Otimizar o desempenho do seu site](https://docs.ovh.com/pt/hosting/partilhado_guia_de_otimizacao_das_performances_do_seu_site/)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 

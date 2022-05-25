@@ -45,7 +45,7 @@ The service will therefore last **a little more than a year**, until its next re
 > For example, you cannot switch from a *Performance 2* formula to a *Pro* formula in a single operation.
 > You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* **plan, then** to the *Professional plan*.
 >
-> The following elements concern paid offers. To upgrade a [free Start10M hosting](https://docs.ovh.com/fr/hosting/activer-start10m/) solution, follow [these instructions](#start10m).
+> The following elements concern paid offers. To upgrade a [free Start10M hosting](https://docs.ovh.com/gb/en/hosting/activate-start10m/) solution, follow [these instructions](#start10m).
 >
 
 > [!warning]
@@ -72,23 +72,23 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > If you have not activated the email offer, the instructions in the [previous paragraph](#modify) will be sufficient.
 >
 
-You will not be able to switch **directly** from a [free Start10M hosting](https://docs.ovh.com/fr/hosting/activer-start10m/) to a paid offer. You will need to:
+You will not be able to switch **directly** from a [free Start10M hosting](https://docs.ovh.com/gb/en/hosting/activate-start10m/) to a paid offer. You will need to:
 
-1. If necessary, back up the [files on your hosting plan](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) and [messages from your email solution](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
+1. If necessary, back up the [files on your hosting plan](https://docs.ovh.com/gb/en/hosting/export-a-website/#step-1-retrieve-files-from-your-ftp-storage-space) and [messages from your email solution](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/).<br>
 2. Start the deletion of your Start10M plan. To do this, click on your name in the top right-hand corner, then `Manage services`{.action}. Then click on the `...`{.action} button to the right of the service concerned, then `Delete web hosting plan immediately`{.action}.<br>
-3. Create a [support ticket](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), in order to request the accelerated deletion of your solution (a Start10M email address is kept for 14 days by default, to avoid any data loss following a handling error).<br>
+3. Create a [support ticket](https://help.ovhcloud.com/en-gb/faq/support/cant-reach-support-phone/), in order to request the accelerated deletion of your solution (a Start10M email address is kept for 14 days by default, to avoid any data loss following a handling error).<br>
 4. [Order a new hosting package](https://www.ovhcloud.com/en-gb/web-hosting/).<br>
-5. Import your website into your [new hosting space](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage) if necessary.<br>
-6. [Add your website's domain name to your new solution's multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
-7. [If necessary, recreate your email address](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/)  and [import your messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+5. Import your website into your [new hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/#step-2-put-your-website-files-online-in-your-storage-space) if necessary.<br>
+6. [Add your website's domain name to your new solution's multisite](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/#step-2-add-a-domain-or-subdomain).<br>
+7. [If necessary, recreate your email address](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/)  and [import your messages](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/).
 
 ### Check that your hosting plan is compatible with a lower plan <a name="checks"></a>
 
 #### Number of sites
 
-With the [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+With the [Kimsufi Web](https://www.kimsufi.com/uk/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
 
-Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) solution, please check that your web hosting plan only has one website.
+Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.kimsufi.com/uk/) solution, please check that your web hosting plan only has one website.
 
 #### Start SQL databases
 
@@ -102,7 +102,7 @@ If you have deleted data from your databases, you can recalculate the quota used
 
 #### CloudDB
 
-If you are using the [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) solution included with your [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) solution, go to the `Hosting`{.action} section in your Control Panel.<br>
+If you are using the [CloudDB](https://docs.ovh.com/gb/en/hosting/getting-started-with-clouddb/#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) solution, go to the `Hosting`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
@@ -111,12 +111,12 @@ With this action, you can order a CloudDB solution independent of your *Performa
 
 If you do not want to keep this data, you can also delete your Private SQL before going to the *Pro* offer: 
 
-1. Back up your data by following the instructions in this [guide](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/#en-pratique).<br>
+1. Back up your data by following the instructions in this [guide](https://docs.ovh.com/gb/en/hosting/backup-export-database-server/).<br>
 2. Delete your CloudDB server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the line concerned, then `Delete my Private SQL hosting service`{.action}.
 
 #### FTP space
 
-Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/) so that you can import files from your current hosting plan.
+Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](https://docs.ovh.com/gb/en/hosting/log-in-to-storage-ftp-web-hosting/) so that you can import files from your current hosting plan.
 
 The quota used on your FTP hosting plan is visible in the `Hosting`{.action} section of the OVHcloud Control Panel. Click on the `General information`{.action} tab, and you will see the quota under `Disk space`.
 
@@ -124,7 +124,7 @@ The quota used on your FTP hosting plan is visible in the `Hosting`{.action} sec
 
 #### Email addresses
 
-Please also check that your new solution has a sufficient number of available email addresses. Otherwise, delete the extra addresses, after you have [saved](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/) them if necessary.
+Please also check that your new solution has a sufficient number of available email addresses. Otherwise, delete the extra addresses, after you have [saved](https://docs.ovh.com/gb/en/emails/migrate-email-addresses-manually/) them if necessary.
 
 If you would like to keep the same number of mailboxes, before moving your web hosting plan to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of the `solution`. Next, click `Change solution`{.action}.
 
@@ -132,7 +132,7 @@ If you would like to keep the same number of mailboxes, before moving your web h
 
 #### Mailing lists
 
-The [Mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) and [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) hosting plans.
+The [Mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) and [Kimsufi Web](https://www.kimsufi.com/uk/) hosting plans.
 
 To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
@@ -140,9 +140,9 @@ In the `Emails`{.action} section of your Control Panel, select the solution conc
 
 ## Go further <a name="gofurther"></a>
 
-[View my website's statistics and logs on a shared hosting plan](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
+[View my website's statistics and logs on a shared hosting plan](https://docs.ovh.com/gb/en/hosting/shared_view_my_websites_logs_and_statistics/)
 
-[Optimising your website’s performance](https://docs.ovh.com/fr/hosting/optimisation-performances-site/)
+[Optimising your website’s performance](https://docs.ovh.com/gb/en/hosting/web_hosting_optimise_your_website_performance/)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
 
