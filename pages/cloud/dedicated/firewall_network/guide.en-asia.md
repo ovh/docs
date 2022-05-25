@@ -113,6 +113,20 @@ The rules are sorted chronologically from 0 (the first rule read) to 19 (the las
 
 For example, a packet for TCP port 80 will be captured by rule 2 and the rules that come after will not be tested. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVHcloud does not authorise communication on port 25 in the previous rules.
 
+### Mitigation
+
+There are mitigation modes: automatic (always-on detection), permanent or forced.
+
+**Automatic mitigation (always-on detection)**: With this mode, the traffic goes through the mitigation system only if it is labelled as 'unusual' compared to the normal traffic usually received by the server. 
+
+**Permanent mitigation**: By activating permanent mitigation, you constantly apply a first level of filtering through our Shield hardware, as well as with the filtering rules you have defined in the Network Firewall (if applicable). All traffic at all times gets through the mitigation system before reaching the server. Please note that you must not have the firewall created/enabled in order to activate the permanent mitigation on your IP.
+
+To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+
+**Forced mitigation**: This mode is automatically put in place once an attack is detected on the server. In order to protect our infrastructure, it will be activated through out the attack till it is fully attenuated.<br> 
+It is important to note that this mode cannot be deactivated once it is enabled, it will be automatically disabled once the attack is gone.
+
+
 > [!warning]
 >
 > If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
