@@ -83,4 +83,4 @@ Per eliminare un dominio, clicca sul pulsante `...`{.action} nella tabella.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

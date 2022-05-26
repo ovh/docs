@@ -125,7 +125,7 @@ $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
-Sull'ultima riga puoi vedere che il disco aggiuntivo è stato montato a/`mnt/disk`:
+Sull'ultima riga puoi vedere che il disco aggiuntivo è stato montato a `/mnt/disk`:
 
 ```
 $ df -h
