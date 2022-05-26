@@ -287,7 +287,7 @@ W sekcji "IP Addresses" sprawdź, czy adres IP Failover został poprawnie dodany
 
 ### Diagnostyka
 
-Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue]((../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
+Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue](../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
 
 Po zalogowaniu się do serwera przez SSH wprowadź następującą komendę:
 

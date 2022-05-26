@@ -109,7 +109,7 @@ Następnie zamontuj partycję:
 
 Twoje dane będą teraz dostępne z katalogu `/mnt`.
 
-Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "normalnym" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "normalnym" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ![rescue mode control panel](images/rescue_exit.png){.thumbnail}
 
