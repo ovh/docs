@@ -90,145 +90,175 @@ sudo tar xzvfC cilium-darwin-amd64.tar.gz /usr/local/bin
 rm cilium-darwin-amd64.tar.gz{,.sha256sum}
 ```
 
-TODO: xxx
-
-
 You should have results like this:
 
-<pre class="console"><code>$ git clone https://github.com/kyverno/kyverno
-Cloning into 'kyverno'...
-remote: Enumerating objects: 64593, done.
-remote: Counting objects: 100% (984/984), done.
-remote: Compressing objects: 100% (496/496), done.
-Receiving objects:   6% (3876/64593), 876.01 KiB | 1.60 MiB/s
-Receiving objects:   6% (4222/64593), 876.01 KiB | 1.60 MiB/s
-remote: Total 64593 (delta 531), reused 832 (delta 483), pack-reused 63609
-Receiving objects: 100% (64593/64593), 55.81 MiB | 3.43 MiB/s, done.
-Resolving deltas: 100% (35868/35868), done.
+<pre class="console"><code>$ curl -L --remote-name-all https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz\{,.sha256sum\}
+shasum -a 256 -c cilium-darwin-amd64.tar.gz.sha256sum
+sudo tar xzvfC cilium-darwin-amd64.tar.gz /usr/local/bin
+rm cilium-darwin-amd64.tar.gz{,.sha256sum}
 
-$ cd kyverno
 
-$ make cli
-GOOS=darwin go build -o /Users/avache/git/github.com/kyverno/kyverno/cmd/cli/kubectl-kyverno/kyverno -ldflags="-s -w -X github.com/kyverno/kyverno/pkg/version.BuildVersion=v1.5.0-rc1-223-gf0359f82 -X github.com/kyverno/kyverno/pkg/version.BuildHash=main/f0359f8272a181923db0704696803d44a43f69f8 -X github.com/kyverno/kyverno/pkg/version.BuildTime=2022-01-19_12:10:05" /Users/avache/git/github.com/kyverno/kyverno/cmd/cli/kubectl-kyverno/main.go
-go: downloading k8s.io/klog v1.0.0
-go: downloading github.com/spf13/cobra v1.2.1
-go: downloading sigs.k8s.io/controller-runtime v0.10.3
-go: downloading k8s.io/apiextensions-apiserver v0.22.4
-go: downloading k8s.io/apimachinery v0.22.4
-go: downloading k8s.io/klog/v2 v2.10.0
-go: downloading sigs.k8s.io/yaml v1.3.0
-go: downloading github.com/fatih/color v1.12.0
-go: downloading github.com/go-git/go-billy/v5 v5.0.0
-go: downloading github.com/go-git/go-git/v5 v5.2.0
-go: downloading github.com/go-logr/logr v0.4.0
-go: downloading github.com/kataras/tablewriter v0.0.0-20180708051242-e063d29b7c23
-go: downloading github.com/lensesio/tableprinter v0.0.0-20201125135848-89e81fc956e7
-go: downloading k8s.io/api v0.22.4
-go: downloading k8s.io/cli-runtime v0.22.4
-go: downloading github.com/evanphx/json-patch v4.11.0+incompatible
-go: downloading k8s.io/client-go v0.22.4
-go: downloading github.com/googleapis/gnostic v0.5.5
-go: downloading github.com/kyverno/json-patch/v5 v5.5.1-0.20210915204938-7578f4ee9c77
-go: downloading github.com/orcaman/concurrent-map v0.0.0-20190826125027-8c72a8bb44f6
-go: downloading gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
-go: downloading k8s.io/kube-openapi v0.0.0-20211115234752-e816edb12b65
-go: downloading github.com/distribution/distribution v2.7.1+incompatible
-...
-go: downloading github.com/dimchansky/utfbom v1.1.1
+[1/2]: https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz --> cilium-darwin-amd64.tar.gz
+--_curl_--https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 15.6M  100 15.6M    0     0  9177k      0  0:00:01  0:00:01 --:--:-- 14.2M
 
-$ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
+[2/2]: https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz.sha256sum --> cilium-darwin-amd64.tar.gz.sha256sum
+--_curl_--https://github.com/cilium/cilium-cli/releases/latest/download/cilium-darwin-amd64.tar.gz.sha256sum
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100    93  100    93    0     0    134      0 --:--:-- --:--:-- --:--:--   134
+cilium-darwin-amd64.tar.gz: OK
+
+x cilium
 </code></pre>
 
-> [!warning]
-> The `kyverno` CLI installation using Krew is not working for the moment [for MacBook Air M1 devices](https://github.com/kyverno/kyverno/issues/3020).  
-> The fix is planned for Kyverno v1.6 release.
-
-After the installation, check that the `kyverno` CLI is working:
+After the installation, check that the `cilium` CLI is working:
 
 ```bash
-kyverno version
+cilium version
 ```
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ kyverno version
-Version: v1.5.0-rc1-223-gf0359f82
-Time: 2022-01-19_12:10:05
-Git commit ID: main/f0359f8272a181923db0704696803d44a43f69f8
+<pre class="console"><code>$ cilium version
+cilium-cli: v0.10.6 compiled with go1.18.1 on darwin/amd64
+cilium image (default): v1.10.11
+cilium image (stable): v1.11.5
+cilium image (running): unknown. Unable to obtain cilium version, no cilium pods found in namespace "kube-system"
 </code></pre>
 
-The Kyverno Command Line Interface (CLI) is designed to **validate** and **test** policies behavior prior to adding them to a cluster.  
-So the best practice is to use the `kyverno` CLI in your CI/CD pipelines to assist with the resource authoring process to ensure they conform to standards prior to them being deployed.
+The Cilium CLI is designed to install Cilium, inspect the state of a Cilium installation, and enable/disable various features (e.g. clustermesh, Hubble).
 
-### Installing Kyverno
+### Installing Cilium
 
-For this tutorial we are using the [Kyverno Helm chart](https://github.com/kyverno/kyverno/tree/main/charts/kyverno).
+For this tutorial we are using the [Cilium Helm chart](https://github.com/cilium/charts).
 
-Add the Kyverno Helm repository:
+Add the Cilium Helm repository:
 
 ```bash
-helm repo add kyverno https://kyverno.github.io/kyverno/
+helm repo add cilium https://helm.cilium.io/
 helm repo update
 ```
 
 These commands will add the Kyverno Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add kyverno https://kyverno.github.io/kyverno/
-helm repo update
-"kyverno" has been added to your repositories
+<pre class="console"><code>$ helm repo add cilium https://helm.cilium.io/
+"cilium" has been added to your repositories
+
+$ helm repo update
+
 Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the "nvidia" chart repository
-...
-...Successfully got an update from the "kyverno" chart repository
-...
+...Successfully got an update from the "cilium" chart repository
 Update Complete. ⎈Happy Helming!⎈
 </code></pre>
 
-Install the latest version of Kyverno with `helm install` command:
+Install the latest version of Cilium with `helm install` command:
 
 ```bash
-helm install kyverno kyverno/kyverno --namespace kyverno --create-namespace
+helm install cilium cilium/cilium --namespace kube-system
 ```
 
-This command will install the latest version of Kyverno and create a new `kyverno` namespace:
+This command will install the latest version of Cilium:
 
-<pre class="console"><code>$ helm install kyverno kyverno/kyverno --namespace kyverno --create-namespace
-NAME: kyverno
-LAST DEPLOYED: Wed Jan 19 11:41:15 2022
-NAMESPACE: kyverno
+<pre class="console"><code>$ helm install cilium cilium/cilium \
+  --namespace kube-system
+W0527 15:30:21.946420   58621 warnings.go:70] spec.template.spec.affinity.nodeAffinity.requiredDuringSchedulingIgnoredDuringExecution.nodeSelectorTerms[1].matchExpressions[0].key: beta.kubernetes.io/os is deprecated since v1.14; use "kubernetes.io/os" instead
+W0527 15:30:21.946464   58621 warnings.go:70] spec.template.metadata.annotations[scheduler.alpha.kubernetes.io/critical-pod]: non-functional in v1.16+; use the "priorityClassName" field instead
+NAME: cilium
+LAST DEPLOYED: Fri May 27 15:30:20 2022
+NAMESPACE: kube-system
 STATUS: deployed
 REVISION: 1
+TEST SUITE: None
 NOTES:
-Thank you for installing kyverno v2.1.6 😀
+You have successfully installed Cilium with Hubble.
 
-Your release is named kyverno, app version v1.5.4
+Your release version is 1.11.5.
+
+For any further help, visit https://docs.cilium.io/en/v1.11/gettinghelp
 </code></pre>
 
-> [!primary]
-> You can also [install Kyverno in HA (High Availability) mode](https://kyverno.io/docs/high-availability/) with the following command:  
-> `helm install kyverno kyverno/kyverno -n kyverno --create-namespace --set=replicaCount=3`
+You can check if Cilium have been correctly installed with the following command:
 
-You can check if the Kyverno pod is correctly running:
+```bash
+cilium status --wait
+```
 
-<pre class="console"><code>$ kubectl get pods -n kyverno
-NAME                       READY   STATUS    RESTARTS   AGE
-kyverno-554ffb4c96-f2lvs   1/1     Running   0          50s
+This command will validate that Cilium has been properly installed:
+
+<pre class="console"><code>$ cilium status --wait
+    /¯¯\
+ /¯¯\__/¯¯\    Cilium:         OK
+ \__/¯¯\__/    Operator:       OK
+ /¯¯\__/¯¯\    Hubble:         disabled
+ \__/¯¯\__/    ClusterMesh:    disabled
+    \__/
+
+Deployment        cilium-operator    Desired: 2, Ready: 2/2, Available: 2/2
+DaemonSet         cilium             Desired: 3, Ready: 3/3, Available: 3/3
+Containers:       cilium             Running: 3
+                  cilium-operator    Running: 2
+Cluster Pods:     2/11 managed by Cilium
+Image versions    cilium             quay.io/cilium/cilium:v1.11.5@sha256:79e66c3c2677e9ecc3fd5b2ed8e4ea7e49cf99ed6ee181f2ef43400c4db5eef0: 3
+                  cilium-operator    quay.io/cilium/operator-generic:v1.11.5@sha256:8ace281328b27d4216218c604d720b9a63a8aec2bd1996057c79ab0168f9d6d8: 2
 </code></pre>
 
-And you can check that Kyverno installed several webhooks on your cluster:
+And you can check that the pods are running:
 
-<pre class="console"><code>$ kubectl get validatingwebhookconfigurations,mutatingwebhookconfigurations
-NAME                                                                                                  WEBHOOKS   AGE
-validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-validating-webhook-cfg     1          52s
-validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-validating-webhook-cfg   2          52s
-
-NAME                                                                                              WEBHOOKS   AGE
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-mutating-webhook-cfg     1          52s
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-mutating-webhook-cfg   2          52s
-mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-verify-mutating-webhook-cfg     1          52s
+<pre class="console"><code>$ kubectl get po -n kube-system -l k8s-app=cilium
+NAME           READY   STATUS    RESTARTS   AGE
+cilium-29ccq   1/1     Running   0          49m
+cilium-d68d8   1/1     Running   0          49m
+cilium-nv2nf   1/1     Running   0          49m 
 </code></pre>
+
+Validate that your cluster has proper network connectivity with the following command:
+
+```bash
+cilium connectivity test
+````
+
+TODO: xxx
+
+You should obtain a result like this:
+
+<pre class="console"><code>$ 
+
+cilium connectivity test
+ℹ️  Monitor aggregation detected, will skip some flow validation steps
+✨ [k8s-cluster] Creating namespace for connectivity check...
+
+
+---------------------------------------------------------------------------------------------------------------------
+📋 Test Report
+---------------------------------------------------------------------------------------------------------------------
+✅ 69/69 tests successful (0 warnings)
+
+</code></pre>
+
+Congratulations! You have a fully functional Kubernetes cluster with Cilium. 🎉
+
+### Deploying an application
+
+In order to create our first network policy, we need, first of all, to create micorservices in our Kubernetes cluster.
+
+TODO: xxx
+
 
 ### Create and deploy policies
+
+TODO: xxx
+
+
+network pollicy editor !
+
+TOOD: xxx
 
 Kyverno is running on your OVHcloud Managed Kubernetes cluster, so now you can simply create and deploy policies with the rules you want to put in place in your cluster.
 
@@ -363,185 +393,10 @@ disallow-default-namespace:
 
 Perfect, you no longer have the ability to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
 
-#### Policy 2: Create a ConfigMap in all namespaces excepted `kube-system`, `kube-public` and `kyverno` 
-
-For our second example we want to create a `generate` policy that will create a new ConfigMap called `zk-kafka-address` in all new namespaces except `kube-system`, `kube-public` and `kyverno`.
-
-Create a new policy in a `policy-generate-cm.yaml` file:
-
-```yaml
-apiVersion: kyverno.io/v1
-kind: ClusterPolicy
-metadata:
-  name: zk-kafka-address
-spec:
-  rules:
-  - name: k-kafka-address
-    match:
-      resources:
-        kinds:
-        - Namespace
-    exclude:
-      resources:
-        namespaces:
-        - kube-system
-        - kube-public
-        - kyverno
-    generate:
-      synchronize: true
-      kind: ConfigMap
-      name: zk-kafka-address
-      # generate the resource in the new namespace
-      namespace: "{{request.object.metadata.name}}"
-      data:
-        kind: ConfigMap
-        metadata:
-          labels:
-            somekey: somevalue
-        data:
-          ZK_ADDRESS: "192.168.10.10:2181,192.168.10.11:2181,192.168.10.12:2181"
-          KAFKA_ADDRESS: "192.168.10.13:9092,192.168.10.14:9092,192.168.10.15:9092"
-```
-
-> [!primary]
-> When the `synchronize` attribute is set to `true`, modifications will be synchronized to the generated resources.  
-> So in our case, if you change the values of `ZK_ADDRESS` and `KAFKA_ADDRESS` for example, all the created ConfigMap will be updated.
-
-To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
-
-```bash
-kubectl apply -f policy-generate-cm.yaml
-```
-
-After applying the policy, check if the policy is correctly applied on the cluster:
-
-<pre class="console"><code>$ kubectl apply -f policy-generate-cm.yaml
-clusterpolicy.kyverno.io/zk-kafka-address created
-
-$ kubectl get cpol -A
-NAME                         BACKGROUND   ACTION    READY
-disallow-default-namespace   true         enforce   true
-zk-kafka-address             true         audit     true
-</code></pre>
-
-The `generate` rule is triggered during the `API CREATE` operation, so for this policy when a new namespace is created.
-
-In order to test the behavior of this policy, you will create a new namespace `test2`:
-
-```bash
-kubectl create ns test2
-```
-
-And then check if the new ConfigMap appears in the new `test2` namespace:
-
-```bash
-kubectl get cm -A
-```
-
-You should have results like these:
-
-<pre class="console"><code>$ kubectl create ns test2
-namespace/test2 created
-
-$ kubectl get cm -A
-NAMESPACE         NAME                                 DATA   AGE
-default           kube-root-ca.crt                     1      7d20h
-kube-node-lease   kube-root-ca.crt                     1      7d20h
-kube-public       kube-root-ca.crt                     1      7d20h
-kube-system       canal-config                         5      7d20h
-kube-system       coredns                              1      7d20h
-kube-system       extension-apiserver-authentication   6      7d20h
-kube-system       kube-dns-autoscaler                  1      7d20h
-kube-system       kube-proxy                           1      7d20h
-kube-system       kube-root-ca.crt                     1      7d20h
-kyverno           kube-root-ca.crt                     1      7d19h
-kyverno           kyverno                              2      7d19h
-kyverno           kyverno-metrics                      1      7d19h
-test              kube-root-ca.crt                     1      7d16h
-test2             kube-root-ca.crt                     1      2m28s
-test2             zk-kafka-address                     2      2m27s
-</code></pre>
-
-As you can see the ConfigMap `zk-kafka-address` have been created in the new `test2` namespace.
-
-#### Policy 3: Add a label `app: my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in a given namespace
-
-The aim of this policy is to automatically add a label `app=my-awesome-app` to Pods, Services, ConfigMaps, and Secrets in the namespaces `team-a`.
-
-In order to do that, we will show you how to deploy a `mutate` policy.
-
-> [!primary]
-> Resource `mutation` occurs before `validation`, so the validation rules should not contradict the changes performed by the mutation section.
-
-Create a new policy in a `policy-add-label.yaml` file:
-
-```yaml
-apiVersion: kyverno.io/v1
-kind: ClusterPolicy
-metadata:
-  name: add-label    
-spec:
-  rules:
-  - name: add-label
-    match:
-      resources:
-        kinds:
-        - Pod
-        - Service
-        - ConfigMap
-        - Secret
-        namespaces:
-        - team-a
-    mutate:
-      patchStrategicMerge:
-        metadata:
-          labels:
-            app: my-awesome-app
-``` 
-
-To deploy the Kyverno policy in the cluster, execute the following command to apply the YAML file:
-
-```yaml
-kubectl apply -f policy-add-label.yaml
-```
-
-After applying the policy, check if the policy is correctly applied on the cluster:
-
-<pre class="console"><code>$ kubectl apply -f policy-add-label.yaml
-clusterpolicy.kyverno.io/add-label created
-
-$ kubectl get cpol -A
-NAME                         BACKGROUND   ACTION    READY
-add-label                    true         audit
-disallow-default-namespace   true         enforce   true
-zk-kafka-address             true         audit     true
-</code></pre>
-
-Now you can create a new namespace `team-a`, deploy a new Pod into it and check if the new label have been correctly added automatically:
-
-```bash
-kubectl create ns team-a
-kubectl apply -f my-pod.yaml -n team-a
-kubectl get pod my-pod -n team-a --show-labels
-```
-
-> [!primary]
-> Previously in this guide we showed you the creation of a Pod in a file named `my-pod.yaml`, so in this step you can reuse it.
-
-You should obtain the following results:
-
-<pre class="console"><code>$ kubectl create ns team-a
-namespace/team-a created
-
-$ kubectl apply -f my-pod.yaml -n team-a
-pod/my-pod created
-
-$ kubectl get pod my-pod -n team-a --show-labels
-NAME     READY   STATUS    RESTARTS   AGE   LABELS
-my-pod   1/1     Running   0          29s   app=my-awesome-app
-</code></pre>
 
 ### Debugging/validating
+
+TODO: xxx
 
 Previously in this guide we show you how to install the `kyverno` CLI. With this CLI you can [apply](https://kyverno.io/docs/kyverno-cli/#apply), [test](https://kyverno.io/docs/kyverno-cli/#test) and [validate](https://kyverno.io/docs/kyverno-cli/#validate) policies.
 
@@ -568,9 +423,13 @@ Policy zk-kafka-address is valid.
 
 ### Troubleshooting
 
+TODO: xx
+
 If you have any problem with Kyverno, for example you deployed a policy and don't know why it's not working, you can go to the [Kyverno troubleshooting page](https://kyverno.io/docs/troubleshooting/).
 
 ### What's next?
+
+TODO: xxx
 
 You now have a policy management on your Kubernetes cluster, and you deployed a few policies to test the behavior of Kyverno.  
 In order to see more examples of policies, you can go to [Kyverno policies repository](https://github.com/kyverno/policies/). This repository contains Kyverno policies for a wide array of usage on various Kubernetes and ecosystem resources and subjects.
