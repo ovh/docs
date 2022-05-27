@@ -79,7 +79,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 ### Installing Cilium CLI
 
-You can install the CLI in a Linux distribution, a macOS or for [other](https://github.com/cilium/cilium-cli/releases/latest).
+You can install the CLI in a [Linux distribution](https://docs.cilium.io/en/v1.11/gettingstarted/k8s-install-default/#install-the-cilium-cli), a macOS or for [other](https://github.com/cilium/cilium-cli/releases/latest).
 
 For this tutorial you will install the CLI for macOS:
 
@@ -218,11 +218,13 @@ cilium-d68d8   1/1     Running   0          49m
 cilium-nv2nf   1/1     Running   0          49m 
 </code></pre>
 
+A `cilium` Pod runs on each node in your cluster and enforces network policy on the traffic to/from Pods on that node using Linux BPF.
+
 Validate that your cluster has proper network connectivity with the following command:
 
 ```bash
 cilium connectivity test
-````
+```
 
 TODO: xxx
 
@@ -250,10 +252,176 @@ In order to create our first network policy, we need, first of all, to create mi
 
 TODO: xxx
 
+Create an nginx deployment and expose it via a service
+
+To see how Kubernetes network policy works, start off by creating an nginx Deployment.
+
+create file `nginx-example.yml`
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-example
+  labels:
+    app: nginx
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+  namespace: nginx-example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        ---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+  namespace: nginx-example
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: nginx
+```
+
+in this yaml manifest file we create de Nginx deployment, and we expose the Deployment through a Service called nginx in the namespace nginx-example.
+
+
+$ kubectl apply -f nginx.yaml
+namespace/nginx-example created
+deployment.apps/nginx created
+service/nginx created
+
+
+
+The above commands create a Deployment with an nginx Pod and expose the Deployment through a Service named nginx. The nginx Pod and Deployment are found in the default namespace.
+
+kubectl get svc,pod
+
+$ kubectl get svc,pod -l app=nginx -n nginx-example
+NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)        AGE
+service/nginx           ClusterIP      10.3.120.16    <none>            80/TCP         71s
+service/nginx-service   LoadBalancer   10.3.128.254   152.228.168.120   80:31622/TCP   64d
+
+NAME                                    READY   STATUS    RESTARTS   AGE
+pod/nginx-6799fc88d8-jfslx              1/1     Running   0          71s
+pod/nginx-deployment-766444c4d9-bqnz7   1/1     Running   0          64d
+
+
+TODO: xxx a tester ici en local sur le cluster ....
+Test the service by accessing it from another Pod
+
+You should be able to access the new nginx service from other Pods. To access the nginx Service from another Pod in the default namespace, start a busybox container:
+
+$ kubectl run busybox -n nginx-example --rm -ti --image=busybox:1.28 -- /bin/sh
+
+In your shell, run the following command:
+
+```
+If you don't see a command prompt, try pressing enter.
+/ # wget --spider --timeout=1 nginx
+
+Connecting to nginx (10.3.120.16:80)
+```
+
+
+
+
+--> adapter avec les cilium network policies
+
+
 
 ### Create and deploy policies
 
 TODO: xxx
+
+
+
+TODO: plusieurs kind of netork policies possible a créer
+Layer 3
+Layer 4
+Layer 7
+
+https://docs.cilium.io/en/stable/policy/
+
+
+
+
+Now, limit access to the nginx service
+
+To limit the access to the nginx service so that only Pods with the label access: true can query it, create a NetworkPolicy object as follows:
+service/networking/nginx-policy.yaml [Copy service/networking/nginx-policy.yaml to clipboard]
+
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: access-nginx
+spec:
+  podSelector:
+    matchLabels:
+      app: nginx
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          access: "true"
+
+The name of a NetworkPolicy object must be a valid DNS subdomain name.
+Note: NetworkPolicy includes a podSelector which selects the grouping of Pods to which the policy applies. You can see this policy selects Pods with the label app=nginx. The label was automatically added to the Pod in the nginx Deployment. An empty podSelector selects all pods in the namespace.
+Assign the policy to the service
+
+Use kubectl to create a NetworkPolicy from the above nginx-policy.yaml file:
+
+kubectl apply -f https://k8s.io/examples/service/networking/nginx-policy.yaml
+
+networkpolicy.networking.k8s.io/access-nginx created
+
+Test access to the service when access label is not defined
+
+When you attempt to access the nginx Service from a Pod without the correct labels, the request times out:
+
+kubectl run busybox --rm -ti --image=busybox:1.28 -- /bin/sh
+
+In your shell, run the command:
+
+wget --spider --timeout=1 nginx
+
+Connecting to nginx (10.100.0.16:80)
+wget: download timed out
+
+Define access label and test again
+
+You can create a Pod with the correct labels to see that the request is allowed:
+
+kubectl run busybox --rm -ti --labels="access=true" --image=busybox:1.28 -- /bin/sh
+
+In your shell, run the command:
+
+wget --spider --timeout=1 nginx
+
+Connecting to nginx (10.100.0.16:80)
+remote file exists
+
+
 
 
 network pollicy editor !
@@ -291,42 +459,6 @@ spec:
     match:
       resources:
         kinds:
-        - Pod
-    validate:
-      message: "Using \"default\" namespace is not allowed."
-      pattern:
-        metadata:
-          namespace: "!default"
-  - name: require-namespace
-    match:
-      resources:
-        kinds:
-        - Pod
-    validate:
-      message: "A namespace is required."
-      pattern:
-        metadata:
-          namespace: "?*"
-  - name: validate-podcontroller-namespace
-    match:
-      resources:
-        kinds:
-        - DaemonSet
-        - Deployment
-        - Job
-        - StatefulSet
-    validate:
-      message: "Using \"default\" namespace is not allowed for pod controllers."
-      pattern:
-        metadata:
-          namespace: "!default"
-  - name: require-podcontroller-namespace
-    match:
-      resources:
-        kinds:
-        - DaemonSet
-        - Deployment
-        - Job
         - StatefulSet
     validate:
       message: "A namespace is required for pod controllers."
@@ -424,6 +556,11 @@ Policy zk-kafka-address is valid.
 ### Troubleshooting
 
 TODO: xx
+
+
+https://docs.cilium.io/en/stable/policy/troubleshooting/
+
+
 
 If you have any problem with Kyverno, for example you deployed a policy and don't know why it's not working, you can go to the [Kyverno troubleshooting page](https://kyverno.io/docs/troubleshooting/).
 
