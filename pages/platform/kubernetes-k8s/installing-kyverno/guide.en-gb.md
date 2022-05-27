@@ -6,7 +6,7 @@ section: Security
 order: 0
 ---
 
-**Last updated 7th February 2022.**
+**Last updated 27th May 2022.**
 
 <style>
  pre {
@@ -78,7 +78,7 @@ As at OVHcloud, we like to provide you with the best products and services and f
 
 In this guide you will:
 
-- Install Knative
+- Install Kyverno
 - Write and deploy several policies
 - Test the behavior
 
