@@ -591,10 +591,10 @@ We can also create an OVHcloud project directly as code, through Terraform.
 
 Nevertheless, you have two conditions to know:
 
-- You should have at least 3 public cloud projects currently (note that there is a 3 project limit by default, which can be raised by a support ticket)
-- You should have created a public cloud project during the last 3 months.
+- You should have at least 3 public cloud projects currently (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
+- You must have created a public cloud project during the last 3 months.
 
-If one of this business rule is not met, you will receive the current error : `"Found eligibility issues: challengePaymentMethod"`. In that case, the only solution is to use the web control panel (aka Manager) to create a project. You will then be presented a challenge to validate that you are indeed the owner of the payment mean used on your account (the challenge depends on the payment mean and other parameters).
+If one of this business rule is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`. In that case, the only solution is to use the web control panel (aka Manager) to create a project. You will then be presented a challenge to validate that you are indeed the owner of the payment means used on your account (the challenge depends on the payment means and other parameters).
 
 Can you confirm that works on your side ?
 
