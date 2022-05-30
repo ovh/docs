@@ -1,5 +1,5 @@
 ---
-title: 'Configuring pfSense network bridge'
+title: 'Tutorial - Configuring pfSense network bridge'
 slug: pfSense-bridging
 excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual machine'
 section: 'Tutorial'
@@ -93,7 +93,7 @@ Now we’re going to start creating the pfSense virtual machine,
 
 - Under the OS tab, choose: Other OS type
 - Under the Hard Disk tab, Bus/Device should be: VirtIO
-- First item under the Network tab, 
+- First item under the Network tab, make sure the bridge is vmbr0 
 - Second item under the Network tab, Model should be: VirtIO (paravirtualized)
 - If your CPU has the AES instruction set, this should be enabled
 

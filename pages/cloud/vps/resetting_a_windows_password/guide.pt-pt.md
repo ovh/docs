@@ -21,7 +21,7 @@ section: Diagnóstico e Modo Rescue
 
 ## Instruções
 
-Ligue-se ao VPS através do VNC [da Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com os dados de acesso que recebeu por e-mail.
+Ligue-se ao VPS através do VNC da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com os dados de acesso que recebeu por e-mail.
 
 Introduza os seguintes comandos para montar o sistema de ficheiros distante:
 

@@ -25,7 +25,7 @@ Jeśli Twój serwer VPS nie odpowiada, powinieneś mieć dostęp do niego za po�
 > [!warning]
 > OVHcloud świadczy usługi, za które jesteś odpowiedzialny w związku z ich konfiguracją i zarządzaniem. Jesteś więc odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
->Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub skontaktuj się z naszą społecznością użytkowników na <https://community.ovh.com/>. OVHcloud nie będzie w stanie udzielić Ci wsparcia technicznego w tym zakresie.
+>Jeśli napotkasz trudności z przeprowadzeniem tych operacji, skontaktuj się z wyspecjalizowanym dostawcą usług i/lub skontaktuj się z naszą społecznością użytkowników na <https://community.ovh.com/en/>. OVHcloud nie będzie w stanie udzielić Ci wsparcia technicznego w tym zakresie.
 >
 
 ## Wymagania początkowe

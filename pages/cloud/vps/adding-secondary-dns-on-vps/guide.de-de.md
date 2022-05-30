@@ -84,4 +84,4 @@ Sie können einen Domainnamen löschen, indem Sie auf den Button `...`{.action} 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

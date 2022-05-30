@@ -503,7 +503,7 @@ Bien que cette opération puisse se faire dès la création du panier, elle devi
 >
 > @api {POST} /order/cart/{cartId}/assign
 
-## Gestion des configurations
+## Gestion des configurations <a name="configurations-management"></a>
 
 A ce stade, le panier contient un domaine. Il faut maintenant gérer les configurations requises afin de pouvoir, par la suite, valider le bon de commande.
 
@@ -714,7 +714,7 @@ Dans un premier temps, récupérons les moyens de paiement disponibles pour le b
 >> */
 >> ```
 
-### Paiement 
+### Paiement
 
 Le paiement du bon de commande se fait via l'API ci-dessous. Celle-ci ne retourne aucun résultat mais le statut 200 indique une réussite.
 
@@ -726,7 +726,7 @@ Le paiement du bon de commande se fait via l'API ci-dessous. Celle-ci ne retourn
 | --------------- | ----------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `orderId`       | oui                     | ""     | Identifiant du BC obtenu lors de la [création du bon de commande](#order-creation)                                         |
 | `paymentMean`   | oui                     | ""     | Moyen de paiement récupéré lors de la [récupération des moyens de paiement disponible](#available-payment-method) |
-| `paymentMeanId` | selon moyen de paiement | ""     | L'identifiant du moyen de paiment est obligatoire poour les valeurs `bankAccount`, `creditCard` ou `paypal`                             |
+| `paymentMeanId` | selon moyen de paiement | ""     | L'identifiant du moyen de paiement est obligatoire pour les valeurs `bankAccount`, `creditCard` ou `paypal`                             |
 
 ## Suivi du bon de commande
 

@@ -10,7 +10,7 @@ order: 1
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
 - **Introduction**
 - [Order a Domain Name](../api-order)

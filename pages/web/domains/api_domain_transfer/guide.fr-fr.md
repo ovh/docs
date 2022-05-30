@@ -48,6 +48,7 @@ Si vous êtes le propriétaire du domaine, vous pouvez déléguer sa gestion à 
 3. **Surveiller** l'avancement de la tâche `DomainIncomingTransfer` à l'aide de l'[API de gestion des tâches](../api-tasks/#view-pending-tasks).
 
 4. Si le code d'autorisation n'a pas été ajouté à la commande, ou s'il est invalide, la tâche `DomainIncomingTransfer` va produire une erreur.
+
     Dans ce cas, utilisez l'[API de gestion des tâches](../api-tasks/#fix-and-relaunch-a-task-in-error) pour envoyer le bon code avec la clé `authInfo`, puis relancez la tâche.
 
 Le transfert sera normalement validé par le registre au bout de quelques jours.

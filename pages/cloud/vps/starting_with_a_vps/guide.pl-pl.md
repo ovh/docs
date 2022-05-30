@@ -92,7 +92,7 @@ Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania prob
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij `...`{.action} naprzeciwko "Boot" w strefie **Twój VPS**, następnie `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij `...`{.action} naprzeciwko "Boot" w strefie **Twój VPS**, następnie `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/reboot-vps-current.png){.thumbnail}
 

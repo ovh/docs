@@ -44,7 +44,7 @@ En el siguiente paso, preste atención a la información sobre los precios y, a 
 
 ### Paso 2: Tomar una instantánea
 
-Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en `«Tomar una instantánea» (en el menú contextual). La instantánea puede tardar unos minutos en crearse. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
+Una vez activada la opción, haga clic en `...`{.action} junto a la opción «Instantáneas» y, seguidamente, en «Tomar una instantánea» (en el menú contextual). La instantánea puede tardar unos minutos en crearse. Después, aparecerá la fecha y hora de su creación en el cuadro «Resumen de opciones».
 
 ### Paso 3: Eliminar o restaurar una instantánea
 

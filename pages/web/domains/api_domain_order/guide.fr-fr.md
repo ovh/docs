@@ -605,7 +605,7 @@ Maintenant qu'on a récupéré la liste des configurations requises, il suffit d
 >> }
 >> ```
 
-#### Récupération des configurations sur un produit 
+#### Récupération des configurations sur un produit <a name="product-config"></a>
 
 > [!api]
 >
@@ -721,7 +721,7 @@ Le paiement du bon de commande se fait via l'API ci-dessous. Celle-ci ne retourn
 | --------------- | ----------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `orderId`       | oui                     | ""     | Identifiant du BC obtenu lors de la [création du bon de commande](#order-creation)                                         |
 | `paymentMean`   | oui                     | ""     | Moyen de paiement récupéré lors de la [récupération des moyens de paiement disponible](#available-payment-method) |
-| `paymentMeanId` | selon moyen de paiement | ""     | L'identifiant du moyen de paiment est obligatoire poour les valeurs `bankAccount`, `creditCard` ou `paypal`                             |
+| `paymentMeanId` | selon moyen de paiement | ""     | L'identifiant du moyen de paiement est obligatoire pour les valeurs `bankAccount`, `creditCard` ou `paypal`                             |
 
 ## Suivi du bon de commande
 

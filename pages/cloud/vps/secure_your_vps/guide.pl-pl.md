@@ -241,7 +241,7 @@ W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fai
 
 Rozwiązania OVHcloud obejmują możliwość aktywacji firewalla w punkcie wejścia infrastruktury, zwanym Firewall Network. Prawidłowa konfiguracja zapory sieciowej pozwala zablokować połączenia jeszcze przed ich wejściem na Twój serwer.
 
-Sprawdź przewodnik "[Konfiguracja Firewall Network](../../dedicated/network-firewall/)", jeśli chcesz włączyć tą opcję.
+Sprawdź przewodnik “[Konfiguracja Firewall Network](../../dedicated/network-firewall/)”, jeśli chcesz włączyć tą opcję.
 
 ### Tworzenie kopii zapasowej systemu i danych
 
