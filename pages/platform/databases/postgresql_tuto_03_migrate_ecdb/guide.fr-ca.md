@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Tutorial - Comment migrer de Enterprise Cloud Databases vers Public Cloud Databases (EN)
+title: PostgreSQL - Tutoriel - Comment migrer de Enterprise Cloud Databases vers Public Cloud Databases (EN)
 excerpt: Learn how to migrate a PostgreSQL Enterprise Cloud Databases instance to Public Cloud Databases for PostgreSQL
 slug: postgresql/howto-migrate-ecdb-to-pcd
 section: PostgreSQL - Tutoriels
