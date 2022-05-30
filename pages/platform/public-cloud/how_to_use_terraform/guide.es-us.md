@@ -600,7 +600,7 @@ If one of these business rules is not met, you will receive the following error:
 In that case, the only solution is to use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) to create a project.<br>
 You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
-Please understand these rules and extra human steps have been put in place as an extra safety for customers that migh have leaked their OVHcloud credentials.<br>
+Please understand these rules and extra human steps have been put in place as an extra safety for customers that mighthave leaked their OVHcloud credentials.<br>
 We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
 
 Create a file named `project.tf` and enter the following lines:
