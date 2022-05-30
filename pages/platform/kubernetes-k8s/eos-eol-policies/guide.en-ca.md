@@ -5,7 +5,7 @@ slug: eos-eol-policies
 section: Technical resources
 ---
 
-**Last updated October 13<sup>th</sup>, 2019.**
+**Last updated May 30<sup>th</sup>, 2022.**
 
 OVHcloud Managed Kubernetes Service exposes software-conformant Kubernetes, as certified by the CNCF. New stable versions are provided by the CNCF on a regular basis. Earlier versions proposed by OVHcloud can reach their End-Of-Sale/End-Of-Support (EOS) or  End-Of-Life (EOL), mainly because of the life cycle of the underlying support from the Kubernetes community.
 This policy is provided to help customers to understand the life cycle of the OVHcloud Managed Kubernetes Service, to anticipate and prepare the transition to newest versions.
@@ -29,7 +29,7 @@ As a general rule, OVHcloud will keep offering minor-version upgrade to all unsu
 
 As soon as a minor version reaches End-of-Support by OVHcloud, it will simultaneously reach End-Of-Sales, meaning that OVHcloud will stop proposing the minor version upon installation or reset of a Managed Kubernetes Service.
 
-At any time, customer can find the currently supported versions on the [dedicated page](../exposed-apis-software-versions-reserved-resources/)
+At any time, customer can find the currently supported versions on the [dedicated page](../kubernetes-plugins-software-versions-reserved-resources/)
 
 Any change to these general rules and/or to the release cycle of the Kubernetes project would be advised to affected customers by email (if requiring action on their side) and update to this page.
 
