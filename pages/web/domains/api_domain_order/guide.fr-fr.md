@@ -605,7 +605,7 @@ Maintenant qu'on a récupéré la liste des configurations requises, il suffit d
 >> }
 >> ```
 
-#### Récupération des configurations sur un produit 
+#### Récupération des configurations sur un produit <a name="product-config"></a>
 
 > [!api]
 >

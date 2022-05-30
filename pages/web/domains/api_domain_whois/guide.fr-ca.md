@@ -18,14 +18,14 @@ order: 7
 
 ## Sommaire
 
--   [Introduction](../api)
--   [Commander un nom de domaine](../api-order)
--   [Gestion des tâches](../api-tasks)
--   [Gestion des contacts d'un nom de domaine](../api-contact)
--   [Gestion des règles d'éligibilité](../api-rules)
--   **Configurer l'affichage de ses données dans le Whois**
--   [Configurer les DNS de son nom de domaine](../api-dns)
--   [Transférer un nom de domaine](../api-transfer)
+- [Introduction](../api)
+- [Commander un nom de domaine](../api-order)
+- [Gestion des tâches](../api-tasks)
+- [Gestion des contacts d'un nom de domaine](../api-contact)
+- [Gestion des règles d'éligibilité](../api-rules)
+- **Configurer l'affichage de ses données dans le Whois**
+- [Configurer les DNS de son nom de domaine](../api-dns)
+- [Transférer un nom de domaine](../api-transfer)
 <!-- End TOC -->
 
 <!-- Rappel à mettre au début de chaque page CA/US/AU/ASIA/SG (API CA) -->
