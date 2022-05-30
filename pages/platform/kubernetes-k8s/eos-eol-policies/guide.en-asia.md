@@ -23,7 +23,7 @@ As a general rule, OVHcloud will support those minor versions and patch versions
 
 As a general rule, a new minor version will be offered by OVHcloud in the 3 months following it declared “stable” by the Kubernetes project.
 
-As a general rule, OVHcloud will not support minor versions no longer supported by the Kubernetes project and will not assure support to managed services running on those versions until the customer has upgraded to a supported minor version of Kubernetes..
+As a general rule, OVHcloud will not support minor versions no longer supported by the Kubernetes project and will not assure support to managed services running on those versions until the customer has upgraded to a supported minor version of Kubernetes.
 
 As a general rule, OVHcloud will keep offering minor-version upgrade to all unsupported versions to the other to ensure that the customer can, on its own pace move to a OVHcloud supported minor version. The customer is solely responsible for making sure his configuration and related software are compliant with the new version he is upgrading to.
 
