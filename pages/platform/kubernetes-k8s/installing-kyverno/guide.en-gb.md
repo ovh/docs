@@ -36,7 +36,7 @@ order: 0
 
 ![Kyverno](images/kyverno-logo.png)
 
-With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which use Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
+With Kyverno, policies are managed as Kubernetes resources and no new language is required to write policies (compared to [OPA Gatekeeper](https://github.com/open-policy-agent/gatekeeper) which uses Rego programming language). This allows using familiar tools such as `kubectl`, `git`, and `kustomize` to manage policies. 
 
 Kyverno policies can **validate**, **mutate** and **generate** Kubernetes resources.
 
