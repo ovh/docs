@@ -585,21 +585,21 @@ Apply your changes with the following command:
 terraform apply
 ```
 
-#### Creating a Cloud project
+#### Creating a Public Cloud project
 
-We can also create an OVHcloud project directly as code, through Terraform.
+You can also create an OVHcloud project directly as code, through Terraform.
 
 Nevertheless, two conditions apply:
 
-- You must have at least 3 public cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
-- You must have created a public cloud project during the last 3 months.
+- You must have at least 3 Public Cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
+- You must have created a Public Cloud project during the last 3 months.
 
-If one of this business rule is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`. In that case, the only solution is to use the web control panel (aka Manager) to create a project. You will then be presented a challenge to validate that you are indeed the owner of the payment means used on your account (the challenge depends on the payment means and other parameters).
+If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to create a project.<br>
+You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
 
-Can you confirm that works on your side ?
-
-I hope you understand that this rule and extra human step has been put in place to avoid bad surprises for customers that leaked their ovhcloud credentials. We will try to continue improving those rules in the future to facilitate Inra-as-code scenarios, such as this "public cloud project as code" scenari.
-
+Please understand these rules and extra human steps have been put in place as an extra safety for customers that migh have leaked their OVHcloud credentials.<br>
+We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
 
 Create a file named `project.tf` and enter the following lines:
 
