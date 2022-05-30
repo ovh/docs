@@ -30,7 +30,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 #### Step 1: Verify your user roles and password
 
-Select the `General information`{.action} tab and `Reset the password`{.action} of **avnadmin** user, which come with the **Admin** role, in the `Login information` section.
+Select the `General information`{.action} tab and `Reset the password`{.action} of **avnadmin** user, which comes with the **Admin** role, in the `Login information` section.
 
 > [!primary]
 >
@@ -44,7 +44,7 @@ Select the `General information`{.action} tab and `Reset the password`{.action} 
 
 In this step, select the `Authorised IPs`{.action} tab. IP addresses must be authorised here before they can connect to your database.
 
-Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the databse.
+Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the database.
 
 ![Add an IP](images/ip_authorize.png){.thumbnail}
 

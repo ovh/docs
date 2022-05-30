@@ -48,22 +48,22 @@ Public cloud database engines are managed services, which means that they are no
 
 > [!primary]
 >
-> Once the advanced configuration has been submited, it is not possible to reset to initial values, it is only possible to update the value, so we recommend you to note the value before changing it.
+> Once the advanced configuration has been submitted, it is not possible to reset it to initial values. It is only possible to update the values, so we recommend that you take note of the initial values before changing them.
 >
 > See the [Checking](#checking) section below
 >
 
-### Using OVH Control Panel
+### Using the OVHcloud Control Panel
 
 To change the advanced configuration, you first need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) and open your `Public Cloud`{.action} project. Click on `Databases`{.action} in the left-hand navigation bar, select your engine instance then the `Advanced configuration`{.action} tab.
 
-Select the key of the advanced setting you want to define, then set it's value.
+Select the key of the advanced setting you want to define, then set its value.
 
 When ready, click on `Update advanced configuration`{.action}.
 
 > [!primary]
 >
-> On the top-right of the advanced configuration tabpanel, you can see the settings which are already defined.
+> On the top-right of the advanced configuration tab, you can see the settings which are already defined.
 >
 
 ### Using API
@@ -77,7 +77,7 @@ When ready, click on `Update advanced configuration`{.action}.
 
 You first need to identify the service and the cluster you want to apply the changes to.
 
-#####  Get the desired service ID
+##### **Get the desired service ID**
 
 Execute the following API call:
 
@@ -90,7 +90,7 @@ Execute the following API call:
 
 From the resulting list, select and copy the service identifier corresponding to the desired service, also known as serviceName.
 
-##### Get the desired cluster ID
+##### **Get the desired cluster ID**
 
 Open the following API call, paste your service ID into the `serviceName` input field and click `Execute`{.action}:
 
@@ -262,7 +262,7 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 >> > @api {PUT} /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
 >> >
 
-Now, according the settings you chose, set the different values into the string arrays, such as in the example below:
+Now, according to the settings you chose, set the different values into the string arrays, such as in the example below:
 
 
 ![Put PostgreSQL Advanced Parameters](images/04_advanced_configuration-20220405152807105.png){.thumbnail}

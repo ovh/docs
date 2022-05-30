@@ -81,7 +81,7 @@ Switch to the tab `Authorised IPs`{.action}. IP addresses must be authorised her
 
 ![Authorised IP](images/configure_mongo07.png){.thumbnail}
 
-Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the databse.
+Clicking on `Add an IP address or IP address block (CIDR)`{.action} opens a new window in which you can add single IP addresses or blocks to allow access to the database.
 
 ![Add IP](images/configure_mongo08.png){.thumbnail}
 
