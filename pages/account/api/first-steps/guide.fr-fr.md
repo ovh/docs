@@ -1,6 +1,6 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
-slug: api-premiers-pas
+slug: first-steps-with-ovh-api
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
 section: 'Premiers pas'
 ---
