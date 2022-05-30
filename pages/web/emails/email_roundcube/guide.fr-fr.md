@@ -10,14 +10,14 @@ order: 05
 
 ## Objectif
 
-Avec l'offre MX Plan OVHcloud, il est possible d'envoyer et recevoir les e-mails à partir d’un appareil et d’un logiciel client. OVHcloud fournit un service de messagerie en ligne appelé RoundCube qui permet, via un navigateur web, d’accéder à un compte e-mail. 
+Avec l'offre MX Plan OVHcloud, vous pouvez envoyer et recevoir des e-mails depuis un logiciel tiers ou via un webmail. OVHcloud fournit un service de messagerie en ligne appelé RoundCube qui permet, via un navigateur web, d’accéder à un compte e-mail.
 
 **Découvrez comment utiliser le webmail RoundCube pour vos adresses e-mail OVHcloud**
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandée séparément comme solution autonome.
-- Disposer des informations de connexion à l’adresse e-mail MX Plan que vous souhaitez consulter.
+- Disposer d'une solution e-mail OVHcloud **MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), incluse dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/), ou commandée séparément comme solution autonome.
+- Disposer des informations de connexion à l’adresse e-mail MX Plan que vous souhaitez consulter. Pour plus d'informations, consultez notre guide [Premiers pas avec l'offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/).
 
 ## En pratique
 
@@ -167,7 +167,8 @@ Personnalisez ici l'agencement des informations dans votre carnet d'adresses.
 
 #### Dossiers spéciaux
 
-Par défaut, les dossiers spéciaux sont présents. Il est possible d'attribuer ces derniers à un dossier qui a été créé après, grâce aux menus déroulants.
+Par défaut, les dossiers spéciaux sont présents. Vous pouvez attribuer le comportement correspondant à un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
+**Par exemple**, vous pouvez attribuer un comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
 
 #### Paramètres du serveur
 
