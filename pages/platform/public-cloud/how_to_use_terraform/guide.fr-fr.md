@@ -8,7 +8,29 @@ section: Tutoriels
 order: 02
 ---
 
-**Dernières mise à jour le 12/04/2022**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24;
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Dernières mise à jour le 27/05/2022**
 
 ## Objectif
 
@@ -561,6 +583,50 @@ Appliquez vos modifications à l'aide de la commande suivante :
 
 ```console
 terraform apply
+```
+
+#### Création d'un projet Public Cloud
+
+La création d'un projet OVHcloud est également possible directement par code, via Terraform.
+
+Néanmoins, deux conditions s’appliquent :
+
+- Vous devez avoir au moins 3 projets Public Cloud (notez qu'il y a une limite par défaut de 3 projets maximum). Afin de débloquer cette limite, merci d’effectuer une demande auprès de notre support.
+- Avoir créé un projet Public Cloud au cours des 3 derniers mois.
+
+Si l'une de ces conditions n'est pas remplie, vous obtiendrez l'erreur suivante :  `Found eligibility issues: challengePaymentMethod`.<br>
+Dans ce cas, la seule solution est de vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour créer un projet.<br>
+Vous serez alors invité à valider que vous êtes bien le propriétaire des moyens de paiement utilisés sur ce compte (cette validation dépend des moyens de paiement et d'autres paramètres).
+
+Ces règles et ces actions supplémentaires ont été mises en place pour offrir une sécurité supplémentaire aux clients ayant pu divulguer leurs identifiants OVHcloud. Nous vous remercions donc de votre compréhension.<br>
+Nous allons essayer de continuer à améliorer ces règles à l’avenir afin de faciliter les scénarii d’Infra-as-code, comme celui de « public cloud project as code ».
+
+Créez un fichier nommé `project.tf` et saisissez les lignes suivantes :
+
+```python
+data "ovh_order_cart" "cart" {
+  ovh_subsidiary = "fr"
+  description    = "Use the French OVH cart by default"
+}
+
+data "ovh_order_cart_product_plan" "cloud" {
+  cart_id        = data.ovh_order_cart.cart.id
+  price_capacity = "renew"
+  product        = "cloud"
+  plan_code      = "project.2018"
+}
+
+resource "ovh_cloud_project" "cloud" {
+  ovh_subsidiary = data.ovh_order_cart.cart.ovh_subsidiary
+  description    = var.project_description
+  payment_mean   = "fidelity"
+
+  plan {
+    duration     = data.ovh_order_cart_product_plan.cloud.selected_price.0.duration
+    plan_code    = data.ovh_order_cart_product_plan.cloud.plan_code
+    pricing_mode = data.ovh_order_cart_product_plan.cloud.selected_price.0.pricing_mode
+  }
+}
 ```
 
 ### Supprimer une infrastructure
