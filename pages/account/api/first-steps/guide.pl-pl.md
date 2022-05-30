@@ -9,7 +9,7 @@ section: 'Pierwsze kroki'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 04-06-2020**
+**Ostatnia aktualizacja z dnia 30-05-2022**
 
 ## Wprowadzenie
 
@@ -28,7 +28,7 @@ API dostępne na stronie [https://api.ovh.com/](https://api.ovh.com/){.external}
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „[Sprawdź również](#gofurther)”.
 > 
 
 ### Proste użytkowanie
@@ -147,19 +147,19 @@ Po kliknięciu `Create keys`{.action} otrzymasz trzy klucze:
 
 - Klucz aplikacji zwany **AK**. Przykład:
 
-```sh
+```console
 7kbG7Bk7S9Nt7ZSV
 ```
 
 - klucza aplikacji, który nie zostanie ujawniony, o nazwie **AS**. Przykład:
 
-```sh
+```console
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
 - tajnej "**consumer key**", której nie ujawnia się, zwanej **CK**. Przykład:
 
-```sh
+```console
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 ```
 
@@ -171,7 +171,7 @@ Token **CK** może być wykorzystywany do przekazywania uprawnień. Więcej info
 
 Po uzyskaniu trzech kluczy (**AK**, **AS**, **CK**) możesz podpisać zlecenia API. Podpis oblicza się w następujący sposób:
 
-```sh
+```console
 "$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
 ```
 
@@ -203,7 +203,7 @@ client = ovh.Client(
 print("Welcome", client.get('/me')['firstname'])
 ```
 
-## Sprawdź również
+## Sprawdź również <a name="gofurther"></a>
 
 [Zarządzanie domeną poprzez API OVHcloud](https://docs.ovh.com/it/domains/api/) (przewodnik po angielsku)
 

@@ -9,7 +9,7 @@ section: Introdução
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 04/06/2020**
+**Última atualização: 30/05/2022**
 
 ## Objetivo
 
@@ -28,7 +28,7 @@ As API disponíveis em [https://api.ovh.com/](https://api.ovh.com/){.external} p
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «[Quer saber mais?](#gofurther)» deste guia.
 > 
 
 
@@ -148,19 +148,19 @@ Depois de clicar em `Create keys`{.action}, irá obter três chaves:
 
 - a chave de aplicação, chamada **AK**. Por exemplo:
 
-```sh
+```console
 7kbG7Bk7S9Nt7ZSV
 ```
 
 - a sua chave de aplicação secreta, para não divulgar, chamada **AS**. Por exemplo:
 
-```sh
+```console
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
 - um "**consumer key**" secreto, a não divulgar, chamado **CK**. Por exemplo:
 
-```sh
+```console
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 ```
 
@@ -173,7 +173,7 @@ O token **CK** pode ser utilizado para a delegação de direitos. Para saber mai
 
 Depois de obter as três chaves (**AK**, **AS**, **CK**), pode assinar os pedidos de API. A assinatura é calculada do seguinte modo:
 
-```sh
+```console
 "$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
 ```
 
@@ -205,7 +205,7 @@ client = ovh.Client(
 print("Welcome", client.get('/me')['firstname'])
 ```
 
-## Saiba mais
+## Saiba mais <a name="gofurther"></a>
 
 [Gerir um domínio através das API OVHcloud](https://docs.ovh.com/pt/domains/api/) (guia em inglês)
 

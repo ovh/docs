@@ -5,7 +5,7 @@ excerpt: 'Learn how to use OVHcloud APIs'
 section: 'Getting started'
 ---
 
-**Last updated 5th June 2020**
+**Last updated 30th May 2022**
 
 ## Objective
 
@@ -25,7 +25,7 @@ The APIs available on [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.extern
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [“Go further”](#gofurther) section of this guide.
 >
 
 
@@ -146,19 +146,19 @@ After you click `Create keys`{.action}, you will be issued three keys:
 
 - the application key, called **AK**. For example:
 
-```sh
+```console
 7kbG7Bk7S9Nt7ZSV
 ```
 
 - your secret application key, not to be disclosed, called **AS**. For example:
 
-```sh
+```console
 EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
 ```
 
 - a secret "**consumer key**", not to be disclosed, called **CK**. For example:
 
-```sh
+```console
 MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
 ```
 
@@ -170,7 +170,7 @@ The **CK** token can be used for rights delegation. See the following guide for 
 
 Once you have obtained your three keys (**AK**, **AS**, **CK**), you can sign API requests. The signature is calculated as follows:
 
-```sh
+```console
 "$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
 ```
 
@@ -204,7 +204,9 @@ client = ovh.Client(
 print("Welcome", client.get('/me')['firstname'])
 ```
 
-## Go further
+## Go further <a name="gofurther"></a>
+
+[Managing a Domain Name with the OVHcloud API](https://docs.ovh.com/ca/en/domains/api/)
 
 [How to manage a customer’s account via OVHcloud API](../api-rights-delegation/)
 
