@@ -7,12 +7,12 @@ section: Technical resources
 
 **Last updated May 30<sup>th</sup>, 2022.**
 
-We list here some details on the APIs: the one we expose on OVHcloud and the configuration of Kubernetes APIs on OVHcloud Managed Kubernetes clusters.
+ou can find here some details on the APIs: the one we expose on OVHcloud and the configuration of Kubernetes APIs on OVHcloud Managed Kubernetes clusters.
 
 ## OVHcloud API
 
 We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://ca.api.ovh.com/console/).  
-Using it allows you to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
+Using it allows you to add and remove nodes, update and reset your clusters or get `kubectl` configuration.
 
 > [!primary]
 > If you have never used the OVHcloud API, you can learn the basics in [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/).
@@ -23,7 +23,7 @@ Using it allows you to add and remove nodes, update and reset your clusters or g
 
 Admission plugins (defaults are not listed here):
 
-* `AlwaysPullImages`: Force every new pod to pull the required images every time. In a multi-tenant cluster users can be assured that their private images can only be used by those who have the credentials to pull them.
+* `AlwaysPullImages`: Forces every new pod to pull the required images each time. In a multi-tenant cluster users can be assured that their private images can only be used by those who have the credentials to pull them.
 * `NodeRestriction`: Ensure that the kubelet is restricted to the Node and Pod objects that it could modify as defined. Such kubelets will only be allowed to modify their own NodeAPI object and PodAPI objects that are bound to their node.
 
 Authorization modes:
