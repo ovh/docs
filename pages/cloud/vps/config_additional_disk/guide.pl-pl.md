@@ -153,7 +153,7 @@ tmpfs           385M     0  385M   0% /run/user/1000
 Poprzedni etap nie jest trwały, ponieważ dysk zostanie odłączony, jeśli serwer VPS zostanie zrestartowany. Aby zautomatyzować proces montowania, plik `fstab` musi zostać zmodyfikowany.
 >
 
-Po pierwsze, pobierz UID (ID bloku) urządzenia:
+Po pierwsze, pobierz UUID (ID bloku) urządzenia:
 
 ```
 $ sudo blkid
@@ -175,7 +175,7 @@ Otwórz `/etc/fstab` z edytorem tekstu:
 $ sudo nano /etc/fstab
 ```
 
-Dodaj poniższą linię do pliku i zastąp UID Twoją:
+Dodaj poniższą linię do pliku i zastąp UUID Twoją:
 
 ```
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0

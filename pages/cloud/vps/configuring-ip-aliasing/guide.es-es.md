@@ -62,7 +62,7 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 Introduzca la siguiente línea y, a continuación, guarde y cierre el editor.
 
 ```bash
-network: [config: disabled}
+network: {config: disabled}
 ```
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.

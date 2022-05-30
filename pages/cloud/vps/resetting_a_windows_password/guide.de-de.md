@@ -21,7 +21,7 @@ Möglicherweise müssen Sie das Windows-Passwort auf Ihrem VPS zurücksetzen. Di
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich über die VNC Konsole Ihres [OVHcloud Kundencenters(https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den Login-Daten ein, die Sie per E-Mail erhalten haben.
+Loggen Sie sich über die VNC Konsole Ihres [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den Login-Daten ein, die Sie per E-Mail erhalten haben.
 
 Geben Sie folgende Befehle ein, um das Dateisystem zu mounten:
 

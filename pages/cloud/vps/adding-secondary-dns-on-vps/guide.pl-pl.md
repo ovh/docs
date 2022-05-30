@@ -55,7 +55,7 @@ Operacja jest inna w zależności od tego, gdzie są zarządzane DNS Twojej dome
 
 - Jeśli domena jest zarządzana przez zewnętrznego operatora domeny **lub** na tym etapie używa zewnętrznych serwerów DNS, zaloguj się do panelu klienta Twojego dostawcy DNS i dodaj w strefie DNS wpis TXT z subdomeną "ownercheck" oraz wartość dodaną wykonując [etap 1](#retrievecode).
 
-- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/)", jeśli nie znasz tego procesu.
+- Jeśli domena jest zarządzana przez OVHcloud jako operator **i** używa serwerów DNS OVHcloud, dodaj rekord TXT do sekcji `Web Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Postępuj zgodnie z instrukcjami zawartymi w przewodniku "[Edytuj strefę DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/)”, jeśli nie znasz tego procesu.
 
 ![Secondary DNS](images/sec-04.png){.thumbnail}
 
@@ -83,4 +83,4 @@ Można usunąć domenę klikając przycisk `...`{.action} w tabeli.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

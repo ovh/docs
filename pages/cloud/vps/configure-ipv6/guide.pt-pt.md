@@ -14,7 +14,7 @@ order: 1
 
 ## Objetivo
 
-O IPv6 é a versão mais recente do *Internet Protocol (IP). Cada servidor VPS da OVHcloud é entregue com um endereço IPv4 e um endereço IPv6. Por predefinição, apenas o IPv4 é configurado. Se tiver de configurar o IPv6, deverá fazê-lo manualmente no seu sistema.
+O IPv6 é a versão mais recente do *Internet Protocol* (IP). Cada servidor VPS da OVHcloud é entregue com um endereço IPv4 e um endereço IPv6. Por predefinição, apenas o IPv4 é configurado. Se tiver de configurar o IPv6, deverá fazê-lo manualmente no seu sistema.
 
 **Saiba como configurar o IPv6 no servidor VPS da OVHcloud através de vários métodos.**
 

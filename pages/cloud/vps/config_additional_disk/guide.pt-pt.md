@@ -10,7 +10,7 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 24 de fevereiro de 2021**
+**Última atualização: 24/02/2021**
 
 ## Objetivo
 
@@ -153,7 +153,7 @@ tmpfs           385M     0  385M   0% /run/user/1000
 This previous step is not persistent because the disk will be detached if the VPS is restarted. In order to automate the mounting process, the `fstab` file needs to be edited.
 >
 
-Em primeiro lugar, obtenha a UID (ID do bloco) do periférico:
+Em primeiro lugar, obtenha a UUID (ID do bloco) do periférico:
 
 ```
 $ sudo blkid

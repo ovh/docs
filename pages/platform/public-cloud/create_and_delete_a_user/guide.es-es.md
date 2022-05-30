@@ -54,7 +54,7 @@ Haga clic en `Confirmar`{.action} para crear el usuario OpenStack. El usuario y 
 
 ![User_pw](images/user_pw.png){.thumbnail}
 
-En este momento, guarde la contraseña en un gestor de contraseñas. La contraseña no podrá recuperarse más adelante. Sin embargo, es posible crear una nueva contraseña haciendo clic en `..`{.action} y seleccionando `Regenerar una contraseña`{.action}.
+En este momento, guarde la contraseña en un gestor de contraseñas. La contraseña no podrá recuperarse más adelante. Sin embargo, es posible crear una nueva contraseña haciendo clic en `...`{.action} y seleccionando `Regenerar una contraseña`{.action}.
 
 ![Generate](images/generatepw.png){.thumbnail}
 
@@ -66,7 +66,7 @@ La eliminación del usuario de OpenStack se realiza desde el [Panel de configura
 
 ![public-cloud](images/delete.png){.thumbnail}
 
-Haga clic en `..`{.action} y seleccione `Eliminar`{.action}.
+Haga clic en `...`{.action} y seleccione `Eliminar`{.action}.
 
 > [!warning]
 >
@@ -77,4 +77,4 @@ Haga clic en `..`{.action} y seleccione `Eliminar`{.action}.
 
 [Presentación de Horizon](https://docs.ovh.com/es/public-cloud/horizon/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
