@@ -2,8 +2,10 @@
 title: "Transfer a Domain Name"
 slug: api-transfer
 excerpt: "Use the OVHcloud public API to transfer your domain names"
-section: "Domains API"
+section: "API domini"
 order: 9
+routes:
+  canonical: "https://docs.ovh.com/gb/en/domains/api-transfer/"
 ---
 
 **Last updated 5th May 2022**

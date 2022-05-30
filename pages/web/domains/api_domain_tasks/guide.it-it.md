@@ -2,7 +2,7 @@
 title: "Tasks Management"
 slug: api-tasks
 excerpt: "How asynchronous tasks on domain names work"
-section: "Domains API"
+section: "API domini"
 order: 4
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-tasks/"

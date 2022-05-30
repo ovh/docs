@@ -16,16 +16,16 @@ order: 7
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
--   [Introduction](../api)
--   [Order a Domain Name](../api-order)
--   [Tasks Management](../api-tasks)
--   [Manage Contacts of a Domain Name](../api-contact)
--   [Managing Eligibility Rules](../api-rules)
--   **Configure the Display of Contact Data in the Whois**
--   [Configure the DNS of your Domain Name](../api-dns)
--   [Transfer a Domain Name](../api-transfer)
+- [Introduction](../api)
+- [Order a Domain Name](../api-order)
+- [Tasks Management](../api-tasks)
+- [Manage Contacts of a Domain Name](../api-contact)
+- [Managing Eligibility Rules](../api-rules)
+- **Configure the Display of Contact Data in the Whois**
+- [Configure the DNS of your Domain Name](../api-dns)
+- [Transfer a Domain Name](../api-transfer)
 <!-- End TOC -->
 
 <!-- Reminder to put at the beginning of each CA/US/AU/ASIA/SG page (API CA) -->

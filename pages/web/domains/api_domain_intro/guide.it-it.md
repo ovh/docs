@@ -2,7 +2,7 @@
 title: "Introduction"
 slug: api
 excerpt: "General presentation of the OVHcloud public API for domain names"
-section: "API dominios"
+section: "API domini"
 order: 1
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api/"

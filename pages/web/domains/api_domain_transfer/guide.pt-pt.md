@@ -18,7 +18,7 @@ routes:
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
 - [Introduction](../api)
 - [Order a Domain Name](../api-order)

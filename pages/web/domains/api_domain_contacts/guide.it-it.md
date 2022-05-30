@@ -2,7 +2,7 @@
 title: "Manage Contacts of a Domain Name"
 slug: api-contact
 excerpt: "Use the OVHcloud public API to manage contacts for your domain names"
-section: "Domains API"
+section: "API domini"
 order: 5
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-contact/"
@@ -114,7 +114,7 @@ Nichandle information may be retrieved and changed with these API routes.
 ### Nichandle Change on a Domain Service
 
 In this section, we will see how a Nic (admin, tech or billing) can be updated on a given domain name.
-It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/).
+It works in the same way as any other OVHcloud service. More details explaining the workflow, as well as how to do this, can be found on [this page](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/).
 
 Using the following API route, we are going to initiate a "task" which will allow the former and the new Nic to accept or refuse the change.
 

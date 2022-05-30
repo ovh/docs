@@ -2,7 +2,7 @@
 title: "Configure the Display of Contact Data in the Whois"
 slug: api-whois
 excerpt: "Use the OVHcloud public API to configure the display of your contact data in the Whois"
-section: "Domeny API"
+section: "API domini"
 order: 7
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-whois/"

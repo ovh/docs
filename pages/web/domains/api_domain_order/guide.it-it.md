@@ -2,10 +2,10 @@
 title: "Order a Domain Name"
 slug: api-order
 excerpt: "Use the OVHcloud public API to order your domain names"
-section: "API dominios"
+section: "API domini"
 order: 2
 routes:
-  canonical: "https://docs.ovh.com/us/en/domains/api-order/"
+  canonical: "https://docs.ovh.com/gb/en/domains/api-order/"
 ---
 
 **Last updated 5th May 2022**
@@ -29,11 +29,6 @@ routes:
 - [Configure the DNS of your Domain Name](../api-dns)
 - [Transfer a Domain Name](../api-transfer)
 <!-- End TOC -->
-
-<!-- Reminder to put at the beginning of each CA/US/AU/ASIA/SG page (API CA) -->
-
-We remind you that the given API routes links lead to European API.
-Do not forget to replace [https://eu.api.ovh.com](https://eu.api.ovh.com) with [https://ca.api.ovh.com](https://ca.api.ovh.com) in API URLs to use it with your identifier.
 
 ## Order API
 

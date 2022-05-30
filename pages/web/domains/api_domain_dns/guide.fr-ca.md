@@ -48,7 +48,7 @@ Le type `hosted` signifie que la zone DNS est gérée de manière automatique pa
 Cela vous permet de ne pas avoir à créer vous même votre propre serveur de noms.
 Vous avez bien sûr la main sur le contenu de cette zone, mais le choix des serveurs sur lesquels est hébergée la zone n'est pas modifiable. En contrepartie, OVHcloud s'occupera de la déclaration de ces serveurs auprès du registre ainsi que de la gestion du DNSSEC.
 
-### Récupération du type de configuration DNS d'un nom de domaine
+### Récupération du type de configuration DNS d'un nom de domaine <a name="dns-setup-type"></a>
 
 En utilisant l'API suivante, il est possible de récupérer le type de serveur de noms défini sur un nom de domaine.
 
@@ -125,7 +125,7 @@ La gestion de vos zones OVHcloud se fait via la route :
 >
 > @api {GET} /domain/zone/{zoneName}
 
-### Récupération des serveurs de noms déclarés sur un nom de domaine
+### Récupération des serveurs de noms déclarés sur un nom de domaine <a name="name-servers-declared"></a>
 
 En utilisant l'API suivante, il est possible de récupérer les IDs des serveurs de noms définis sur un nom de domaine.
 
@@ -173,7 +173,7 @@ Pour avoir le détail d'un serveur de noms, il faut appeler l'API suivante :
 >> }
 >> ```
 
-Cet appel permet d'avoir les détails techniques du serveur de noms comme le `host` ou l'`ip` associée s'il s'agit d'un **glue record** (cf. [déclaration des glue records](#declaration-des-glue-records_1)).
+Cet appel permet d'avoir les détails techniques du serveur de noms comme le `host` ou l'`ip` associée s'il s'agit d'un **glue record** (cf. [déclaration des glue records](#glue-records).
 D'autres informations sont également accessibles via l'API suivante :
 
 > [!api]
@@ -196,7 +196,7 @@ D'autres informations sont également accessibles via l'API suivante :
 >> }
 >> ```
 
-### Modification des serveurs de noms déclarés sur un nom de domaine
+### Modification des serveurs de noms déclarés sur un nom de domaine <a name="modify-name-servers-declared"></a>
 
 Pour rappel, vous ne pouvez modifier la declaration de vos serveurs de noms que si le `nameServerType` du nom de domaine est `external`.
 Si c'est bien le cas, plusieurs APIs sont à votre disposition et sont décrites dans cette partie.
@@ -318,7 +318,7 @@ Il est aussi possible de supprimer un serveur de noms déclaré sur un nom de do
 
 Cette route va supprimer le serveur de noms déclaré sur votre nom de domaine et lancer une tâche de mise à jour `DomainDnsUpdate` auprès du registre que vous pourrez suivre via les [APIs dédiées](../api-tasks/#view-pending-tasks).
 
-## Déclaration des glue records
+## Déclaration des glue records <a name="glue-records"></a>
 
 Un **glue record** permet de définir l'**adresse IP** d'un **serveur de noms** de façon à ce que le nom de domaine puisse être résolu dans le cas où ce dernier utilise des **serveurs de noms** hébergés sous ce même nom de domaine.
 
@@ -342,11 +342,11 @@ En fonction du registre, les glues records sont :
     >
     > @api {GET} /domain/{serviceName}/nameServer
 
-Pour savoir quelles APIs utiliser, il faut récupérer l'information via [la configuration DNS](#recuperation-du-type-de-configuration-dns-dun-nom-de-domaine) du nom de domaine, dans le champ `hostSupported`.
+Pour savoir quelles APIs utiliser, il faut récupérer l'information via [la configuration DNS](#dns-setup-type) du nom de domaine, dans le champ `hostSupported`.
 
 ### Récupération des glue records déclarés sur un nom de domaine
 
-Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `false`, la récupération se fait via les [APIs de serveurs de noms](#recuperation-des-serveurs-de-noms-declares-sur-un-nom-de-domaine) décrites plus haut.
+Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `false`, la récupération se fait via les [APIs de serveurs de noms](#name-servers-declared) décrites plus haut.
 
 Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `true`, vous pourrez modifier les **hosts** déclarés sur un nom de domaine via les APIs suivantes :
 
@@ -393,7 +393,7 @@ Pour avoir les détails d'un **glue record**, il faut récupérer le host et uti
 
 ### Modification des glue records déclarés sur un nom de domaine
 
-Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `false`, la récupération se fait via les [APIs de serveurs de noms](#modification-des-serveurs-de-noms-declares-sur-un-nom-de-domaine) décrites plus haut.
+Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `false`, la récupération se fait via les [APIs de serveurs de noms](#modify-name-servers-declared) décrites plus haut.
 
 Si le champ `hostSupported` de la configuration DNS du nom de domaine est à `true`, il est possible de manipuler les **hosts** déclarés sur un nom de domaine via les APIs dédiées aux **glue records**.
 
@@ -442,7 +442,7 @@ Cette route va lancer une tâche `DomainHostCreate` pour créer le **host** aupr
 
 > [!warning]
 >
-> Une fois le **host** créé auprès du registre, il faut le déclarer sur votre nom de domaine via les [APIs des serveurs de nom](#modification-des-serveurs-de-noms-declares-sur-un-nom-de-domaine).
+> Une fois le **host** créé auprès du registre, il faut le déclarer sur votre nom de domaine via les [APIs des serveurs de nom](#modify-name-servers-declared).
 
 #### Modifier un glue record existant
 
@@ -489,7 +489,7 @@ Cette route va lancer une tâche `DomainHostUpdate` pour modifier le **host** au
 Vous pourrez suivre cette tâche via les [APIs dédiées](../api-tasks/#view-pending-tasks).
 Vous n'aurez pas besoin de redéclarer le serveur de nom sur le nom de domaine.
 
-Il aussi possible de supprimer un **glue record** mais, pour cela, il faudra commencer par enlever le **host** de la déclaration faite sur le nom de domaine en utilisant les [APIs des serveurs de nom](#modification-des-serveurs-de-noms-declares-sur-un-nom-de-domaine).
+Il aussi possible de supprimer un **glue record** mais, pour cela, il faudra commencer par enlever le **host** de la déclaration faite sur le nom de domaine en utilisant les [APIs des serveurs de nom](#modify-name-servers-declared).
 
 #### Supprimer un glue record existant
 

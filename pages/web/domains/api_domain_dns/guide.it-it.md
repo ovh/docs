@@ -2,8 +2,10 @@
 title: "Configure the DNS of your Domain Name"
 slug: api-dns
 excerpt: "Use the OVHcloud public API to configure the DNS of your domain name"
-section: "Domains API"
+section: "API domini"
 order: 8
+routes:
+  canonical: "https://docs.ovh.com/gb/en/domains/api-dns/"
 ---
 
 **Last updated 5th May 2022**
@@ -27,11 +29,6 @@ order: 8
 - **Configure the DNS of your Domain Name**
 - [Transfer a Domain Name](../api-transfer)
 <!-- End TOC -->
-
-<!-- Reminder to put at the beginning of each CA/US/AU/ASIA/SG page (API CA) -->
-
-We remind you that the given API routes links lead to European API.
-Do not forget to replace [https://eu.api.ovh.com](https://eu.api.ovh.com) with [https://ca.api.ovh.com](https://ca.api.ovh.com) in API URLs to use it with your identifier.
 
 ## Introduction
 

@@ -18,7 +18,7 @@ routes:
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
 - [Introduction](../api)
 - **Order a Domain Name**
@@ -502,7 +502,7 @@ As we will see later indeed, domain configurations and their validation depends 
 At this point, the cart contains a domain name.
 It is necessary to add required configurations to be able to validate it and generate a purchase order.
 
-### Fetch Required Configurations  <a name="required-configurations"></a> <a name="required-configurations"></a>
+### Fetch Required Configurations  <a name="required-configurations"></a>
 
 To know which configurations are required, you should call this API endpoint.
 
@@ -659,7 +659,7 @@ The returned object contains the contracts associated with the different product
 
 This call also validates the configurations, like owner eligibility for a domain name.
 
-## Create Purchase Order <a name="order-creation"></a> <a name="order-creation"></a>
+## Create Purchase Order <a name="order-creation"></a>
 
 > [!api]
 >
@@ -675,7 +675,7 @@ This call also validates the configurations, like owner eligibility for a domain
 If the purchase order was not paid automatically with default payment method in the previous step, you will have to use purchase order management APIs.
 We assume that at least 1 payment method is registered in your account (if not, there are API routes to manage them).
 
-### Fetch Available Payment Methods <a name="available-payment-method"></a> <a name="available-payment-method"></a>
+### Fetch Available Payment Methods <a name="available-payment-method"></a>
 
 First, let us fetch available payment methods for the purchase order above with the following route.
 

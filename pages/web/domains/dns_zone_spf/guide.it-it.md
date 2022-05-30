@@ -2,7 +2,7 @@
 title: 'Aggiungere un record SPF alla configurazione di un dominio'
 excerpt: 'Come aggiungere un record SPF alla configurazione di un dominio presso OVHcloud'
 slug: hosting_condiviso_il_record_spf
-section: 'Uso avanzato'
+section: 'DNS e zona DNS'
 order: 5
 ---
 

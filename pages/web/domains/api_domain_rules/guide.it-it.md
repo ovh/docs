@@ -2,7 +2,7 @@
 title: "Managing Eligibility Rules"
 slug: api-rules
 excerpt: "Description of the technical format of the domain name eligibility rules"
-section: "Domains API"
+section: "API domini"
 order: 6
 routes:
   canonical: "https://docs.ovh.com/gb/en/domains/api-rules/"
