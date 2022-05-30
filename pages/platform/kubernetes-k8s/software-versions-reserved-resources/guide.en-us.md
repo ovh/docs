@@ -7,7 +7,7 @@ section: Technical resources
 
 **Last updated May 30<sup>th</sup>, 2022.**
 
-We list here some details on the Control Plane, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
+We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
 ## Kubernetes versions
 
@@ -36,9 +36,9 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 
 ## CRI (Container Runtime Interface)
 
-As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
+As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, you can find more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
 
-* If you create a new cluster or a node pool after 19 February 2021 (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
+* If you create a new cluster or a node pool after February 19th 2021 (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
 * For node pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
 
 ## CNI (Cluster Network Interface)
