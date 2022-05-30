@@ -60,6 +60,10 @@ Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Ender
 
 ![Ativação de e-mail](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Para validar a eliminação da oferta de e-mail associada ao seu alojamento web, é-lhe enviado um e-mail. É indispensável validá-lo para que a operação de eliminação seja lançada.
+
 ## Quer saber mais?
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

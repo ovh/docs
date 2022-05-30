@@ -60,6 +60,10 @@ W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki
 
 ![email-activation](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Aby zatwierdzić usunięcie usługi e-mail powiązanej z Twoim hostingiem, otrzymasz wiadomość e-mail. Aby operacja usunięcia została uruchomiona, niezbędne jest jej zatwierdzenie.
+
 ## Sprawdź również
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>

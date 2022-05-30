@@ -60,6 +60,10 @@ Klicken Sie im Feld `Konfiguration` auf den Button`...`{.action} rechts neben `E
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Um die Löschung des zu Ihrem Webhosting gehörenden E-Mail-Angebots zu bestätigen, erhalten Sie eine E-Mail. Um die Löschung zu starten, müssen Sie diese bestätigen.
+
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

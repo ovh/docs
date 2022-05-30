@@ -60,6 +60,10 @@ In the `Configuration` box, click the `...`{.action} button to the right of the 
 
 ![email-activation](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> To confirm that you wish to delete the email solution linked to your Web Hosting plan, you will receive an email. You will need to confirm this in order for the delete operation to be launched.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>
