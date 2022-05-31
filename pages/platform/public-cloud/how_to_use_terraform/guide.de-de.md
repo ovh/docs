@@ -51,7 +51,7 @@ As an example, this video shows how to easily scale the number of instances whil
 - [Configuring user access to Horizon](https://docs.ovh.com/de/public-cloud/horizon/)
 - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)
 - [Setting OpenStack environment variables](https://docs.ovh.com/de/public-cloud/die-variablen-der-umgebung-openstack-laden/)
-- [Your OVHcloud API identifiers and authorisation key](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
+- [Your OVHcloud API identifiers and authorisation key](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)
 - [An SSH key](../public-cloud-first-steps/)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}

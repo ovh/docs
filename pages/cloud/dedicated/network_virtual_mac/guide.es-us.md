@@ -30,7 +30,7 @@ OVHcloud permite asociar una dirección MAC virtual a una dirección IP para pod
 > Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
 
 > [!primary]
-> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/us/en/api/first-steps-with-ovh-api/) (EN).
+> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
 
 ## Procedimiento
 

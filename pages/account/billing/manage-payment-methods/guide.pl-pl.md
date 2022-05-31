@@ -114,7 +114,7 @@ Następnie usuń sposób płatności, używając identyfikatora uzyskanego na po
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem Pierwsze kroki z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 >
 > W przypadku trudności w identyfikacji sposobów płatności przy użyciu interfejsu API OVHcloud, skorzystaj z funkcji `Zmień opis`{.action} (przycisk `...`{.action} po prawej stronie ekranu) w części [Sposoby płatności](#payment_methods) w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >

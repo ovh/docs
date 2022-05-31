@@ -61,7 +61,7 @@ Cette méthode s'adresse aux utilisateurs expert uniquement. Nous ne serons pas 
 
 > [!primary]
 >
-> Pour en savoir plus sur l'utilisation des API, consultez le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
+> Pour en savoir plus sur l'utilisation des API, consultez le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/).
 >
 
 Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. 

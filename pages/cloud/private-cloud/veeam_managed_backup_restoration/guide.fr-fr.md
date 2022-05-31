@@ -19,7 +19,7 @@ order: 06
 
 ## En pratique
 
-Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
+Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/).
 
 ### Étape 1 : générer un rapport de sauvegardes
 

@@ -176,7 +176,7 @@ Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restar
 
 ### Depuis les API
 
-Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide « [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) ».
+Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide « [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) ».
 
 Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
 
@@ -244,7 +244,7 @@ Après chaque modification structurante de votre application, il est conseillé 
 
 [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](../../hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs)
 
-[Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/)
+[Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/)
 
 [Créer une base de données sur son hébergement web](../../hosting/creer-base-de-donnees/).
 

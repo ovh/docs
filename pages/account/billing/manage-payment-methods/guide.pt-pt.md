@@ -114,7 +114,7 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 
 > [!primary]
 >
-> Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Para mais informações, consulte o guia [Primeiros passos com as API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/).
 >
 > Em caso de dificuldades para identificar os seus métodos de pagamento através das API OVHcloud, utilize a função `Alterar a descrição`{.action} (botão `...`{.action} à direita do ecrã) na parte relativa aos [Métodos de pagamento](#payment_methods) da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 >

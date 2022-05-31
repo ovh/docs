@@ -25,7 +25,7 @@ order: 06
 
 ## Procedimiento
 
-Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 
 ### 1. generar un informe de backup
 
