@@ -10,13 +10,13 @@ order: 2
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovh.com/fr/hebergement-web/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
+Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud sans interruption.**
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
@@ -102,7 +102,7 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 #### CloudDB
 
-Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/?url=fr/hosting/guides/g2023.tout_sur_le_sql_prive#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [CloudDB](https://docs.ovh.com/fr/hosting/debuter-avec-clouddb/#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
 ![clouddb](images/clouddb.png){.thumbnail}
