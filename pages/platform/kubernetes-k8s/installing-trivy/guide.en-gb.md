@@ -6,7 +6,7 @@ section: Security
 order: 3
 ---
 
-**Last updated 31th May 2022**
+**Last updated 1st June 2022**
 
 <style>
  pre {
@@ -397,9 +397,9 @@ $ ll trivy-report.txt
 
 ### Installing Trivy Kubernetes Operator
 
-Trivy can also be run as a native Kubernetes Operator, which is designed to be used in CI.
+Trivy can also be run as a native Kubernetes Operator, which is designed to be used in CI/CD pipelines.
 
-This Kubernetes Operator continuously scans your Kubernetes cluster for security issues, and generates security reports as Kubernetes Custom Resources. Tt by watches Kubernetes for state changes and automatically trigger scans in response to changes, for example initiating a vulnerability scan when a new Pod is created.
+This Kubernetes Operator continuously scans your Kubernetes cluster for security issues, and generates security reports as Kubernetes Custom Resources. It watches Kubernetes for state changes and automatically trigger scans in response to changes, for example initiating a vulnerability scan when a new Pod is created.
 
 For this tutorial we are using the [Trivy Helm chart](https://github.com/aquasecurity/trivy/tree/main/helm/trivy).
 
@@ -500,8 +500,8 @@ NAMESPACE   NAME                                                       REPOSITOR
 default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     13m   5          9      18       2     0
 </code></pre>
 
-TODO: xxx et on peut voir concretement la liste des problemes ??
-
+Thanks to the Kubernetes operator, it's possible to integrate trivy into your CI/CD pipeline to check cluster vulnerabilities and misconfiguration issues. 
+It allows you to automate the way to access reports, export the metrics from the vulnerability reports into a Prometheus, add dashboards into Grafana, set up alerting...
 
 ## Go further
 
