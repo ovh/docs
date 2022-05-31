@@ -1,7 +1,7 @@
 ---
-title: Scan for vulnerabilities your OVHcloud Managed Kubernetes with Trivy
+title: Scan for vulnerabilities and miconfigurations your OVHcloud Managed Kubernetes with Trivy
 slug: installing-trivy
-excerpt: Find out how to scan for vulnerabilities your OVHcloud Managed Kubernetes with Trivy
+excerpt: Find out how to scan for vulnerabilities and miconfigurations your OVHcloud Managed Kubernetes with Trivy
 section: Security
 order: 3
 ---
@@ -55,14 +55,12 @@ For your information, trivy is a read-only tool, it only retrieves informations 
 
 Read more about [Trivy](https://aquasecurity.github.io/trivy/v0.28.1/docs/).
 
-
 At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you discover Trivy which will help you secure your OVHcloud Managed Kubernetes with helpful reports.
 
 In this guide you will:
 
 - Install Trivy CLI
 - Generate and export reports
-- TODO: Store report on OVHcloud Object Storage?
 - Install the Trivy Kubernetes Operator
 
 You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
