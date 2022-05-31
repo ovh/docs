@@ -39,7 +39,7 @@ You can configure email addresses on email clients and online interfaces, if the
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
 
-Once you have logged in to the interface, click on the cogwheel icon, then `Settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}.
+Once you have logged in to the interface, click on the cogwheel icon, then `See all settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}.
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 
