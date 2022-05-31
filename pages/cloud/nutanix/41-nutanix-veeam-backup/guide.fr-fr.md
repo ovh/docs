@@ -136,7 +136,7 @@ Cliquez sur `Add`{.action} pour ajouter le compte utilisateur de **Prism Element
 Saisissez les informations correspondant au compte créé précédemment dans **Prism Element** :
 
 - **Username** : `svc_veeam`
-- **Password** ! `Mot de passe`
+- **Password** : `Mot de passe`
 
 Cliquez sur `OK`{.action}.
 
@@ -228,7 +228,7 @@ Cliquez sur `Next`{.action}.
 
 Via **Prism Central**, connectez-vous à la machine virtuelle NUTANIX-PROXY. 
 
-Ouvrez leenu principal en haut à gauche et choisissez `VMs`{.action}.
+Ouvrez le menu principal en haut à gauche et choisissez `VMs`{.action}.
 
 ![Configure Nutanix PROXY HOST 01](images/03-modify-etchostproxy01.png){.thumbnail}
 
@@ -251,7 +251,7 @@ proxy_user@NUTANIX-PROXY~$sudo nano /etc/hosts
 [sudo] password for proxy_user:
 ```
 
-Ajoutez cette information qui correspond à l'adresse IP et le nom de la machine virtuelle ou est installé Veeam Backup :
+Ajoutez cette information qui correspond à l'adresse IP et le nom de la machine virtuelle où est installé Veeam Backup :
 
 ```bash
 192.168.0.245 VEEAM-BACKUP 
