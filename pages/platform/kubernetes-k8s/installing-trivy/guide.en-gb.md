@@ -32,31 +32,38 @@ order: 3
 
 ## Objective
 
-[Trivy](https://github.com/aquasecurity/trivy) is a tool that scans for vulnerabilities, secrets and misconfgiurations in container images, file systems, Git repositories, Kubernetes clusters and Infrastructure as Code (IaC).
+[Trivy](https://github.com/aquasecurity/trivy) is a tool that scans for vulnerabilities, secrets and misconfigurations for containers and other artifacts.
 
-TODO: xxx
-![Trivy](images/trivy.png)
+![Trivy](images/trivy-logo.png)
 
-More than a simple Docker container images, trivy can now scan a wide range of different data like Kubernetes clusters.
+Trivy detects vulnerabilities in:
+
+- container images
+- filesystems
+- Git repositories (a GitHub action exists)
+- Kubernetes clusters
+- Terraform and CloudFormation Infrastructure as Code (IaC) files
+- ...
+
+Trivy also scans hardcoded secrets like passwords, API keys and tokens.
+
+![Trivy](images/trivy-overview.png)
+
+More than a simple Docker container images, Trivy can now scan a wide range of different data like Kubernetes clusters.
 
 For your information, trivy is a read-only tool, it only retrieves informations in order to help you to securize and sanitize your cluster, it does not modify or delete resources on a Kubernetes cluster.
 
-TODO: xxx
-Read more about [Trivy](https://github.com/derailed/popeye).
+Read more about [Trivy](https://aquasecurity.github.io/trivy/v0.28.1/docs/).
 
 
-TODO: xxx
-
-At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you discover Popeye which will help you secure your OVHcloud Managed Kubernetes with helpful reports.
+At OVHcloud, we like to provide you with the best products and services. For us, security is important, that's why we want to help you discover Trivy which will help you secure your OVHcloud Managed Kubernetes with helpful reports.
 
 In this guide you will:
 
 - Install Trivy CLI
 - Generate and export reports
-- TODO: xxx
-- TODO: install le trivy operator ...
-- Fix common issues
 - TODO: Store report on OVHcloud Object Storage?
+- Install the Trivy Kubernetes Operator
 
 You can use the *Reset cluster* function in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} to reinitialize your cluster before following this tutorial.
 
@@ -80,7 +87,7 @@ deployment.apps/hello-world-deployment   1/1     1            1           35m
 
 ### Installing Trivy CLI
 
-You can [install Trivy](https://aquasecurity.github.io/trivy/v0.28.1/getting-started/installation/) on your computer from the binaries, the source, HomeBrew, Arch Linux, Ubuntu... and even use it directly from a Docker image.
+You can [install Trivy](https://aquasecurity.github.io/trivy/latest/getting-started/installation/) on your computer from the binaries, the source, HomeBrew, Arch Linux, Ubuntu... and even use it directly from a Docker image.
 
 For this tutorial you will install it via HomeBrew:
 
@@ -350,6 +357,19 @@ See https://avd.aquasec.com/misconfig/ksv012
 ...
 </code></pre>
 
+And, finally, for this part, you can also scan only a specific resource, only a specific deployment for example:
+
+```
+trivy k8s deployment/hello-world-deployment -n default
+```
+
+You should obtain a result like this:
+
+TODO: xxx (quand ça sera fixé ...)
+<pre class="console"><code>
+
+</code></pre>
+
 ### Export reports locally
 
 You can generate and save a report, for all your namespaces, with the `-o` command
@@ -368,9 +388,113 @@ $ ll trivy-report.txt
 -rw-r--r--  1 aurelievache  staff   1,8K 30 mai 17:00 trivy-report.txt
 </code></pre>
 
-### TODO: xxx
+### Installing Trivy Kubernetes Operator
 
-helm install trivy-operator
+Trivy can also be run as a native Kubernetes Operator, which is designed to be used in CI.
+
+This Kubernetes Operator continuously scans your Kubernetes cluster for security issues, and generates security reports as Kubernetes Custom Resources. Tt by watches Kubernetes for state changes and automatically trigger scans in response to changes, for example initiating a vulnerability scan when a new Pod is created.
+
+For this tutorial we are using the [Trivy Helm chart](https://github.com/aquasecurity/trivy/tree/main/helm/trivy).
+
+Add the Trivy Helm repository:
+
+```bash
+helm repo add aqua https://aquasecurity.github.io/helm-charts/
+helm repo update
+```
+
+These commands will add the Trivy Helm repository to your local Helm chart repository and update the installed chart repositories:
+
+<pre class="console"><code>$ helm repo add aqua https://aquasecurity.github.io/helm-charts/
+helm repo update
+"aqua" has been added to your repositories
+Hang tight while we grab the latest from your chart repositories...
+...Successfully got an update from the "aqua" chart repository
+Update Complete. ⎈Happy Helming!⎈
+</code></pre>
+
+Install the latest version of Trivy with `helm install` command:
+
+```bash
+helm install trivy-operator aqua/trivy-operator \
+   --namespace trivy-system \
+   --create-namespace \
+   --set="trivy.ignoreUnfixed=true" \
+   --version v0.0.3
+```
+
+This command will install the latest version of Trivy Kubernetes operator, create a new `trivy-system` namespace and configure it to scan all namespaces, except kube-system and trivy-system:
+
+<pre class="console"><code>$ helm install trivy-operator aqua/trivy-operator \
+   --namespace trivy-system \
+   --create-namespace \
+   --set="trivy.ignoreUnfixed=true" \
+   --version v0.0.3
+NAME: trivy-operator
+LAST DEPLOYED: Tue May 31 09:07:04 2022
+NAMESPACE: trivy-system
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+You have installed Trivy Operator in the trivy-system namespace.
+It is configured to discover Kubernetes workloads and resources in
+all namespace(s).
+
+Inspect created VulnerabilityReports by:
+
+    kubectl get vulnerabilityreports --all-namespaces -o wide
+
+Inspect created ConfigAuditReports by:
+
+    kubectl get configauditreports --all-namespaces -o wide
+
+Inspect created CISKubeBenchReports by:
+
+    kubectl get ciskubebenchreports -o wide
+
+Inspect the work log of trivy-operator by:
+
+    kubectl logs -n trivy-system deployment/trivy-operator
+</code></pre>
+
+You can check if the Trivy pod is correctly running:
+
+<pre class="console"><code>$ kubectl get po -n trivy-system
+NAME                              READY   STATUS    RESTARTS   AGE
+trivy-operator-7bdc55f8d6-h6kvp   1/1     Running   0          49s
+</code></pre>
+
+Now you can inspect created `VulnerabilityReports`, in all your namespaces, with the following command:
+
+```
+kubectl get vulnerabilityreports --all-namespaces -o wide
+```
+
+You should obtain a result like this:
+
+<pre class="console"><code>$ kubectl get vulnerabilityreports --all-namespaces -o wide
+NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
+default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     58s   5          9      18       2     0
+</code></pre>
+
+So you can check that your deployment have several critical, high, medium and low vulnerabilities.
+
+The Kubernetes Operator geenrates also a `ConfigAuditReports`:
+
+```
+kubectl get configauditreports --all-namespaces -o wide
+```
+
+You should obtain a result like this:
+
+<pre class="console"><code>$ kubectl get vuln --all-namespaces -o wide
+NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
+default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     13m   5          9      18       2     0
+</code></pre>
+
+TODO: xxx et on peut voir concretement la liste des problemes ??
+
 
 ## Go further
 
