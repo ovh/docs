@@ -358,14 +358,23 @@ See https://avd.aquasec.com/misconfig/ksv012
 And, finally, for this part, you can also scan only a specific resource, only a specific deployment for example:
 
 ```
-trivy k8s deployment/hello-world-deployment -n default
+trivy k8s -n default --report summary deployment/hello-world-deployment
 ```
 
 You should obtain a result like this:
 
-TODO: xxx (quand ça sera fixé ...)
-<pre class="console"><code>
+<pre class="console"><code>$ trivy k8s -n default --report summary deployment/hello-world-deployment
+1 / 1 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 1 p/s
 
+Summary Report for kubernetes-admin@my-cilium-cluster
+┌───────────┬───────────────────────────────────┬────────────────────┬───────────────────┬───────────────────┐
+│ Namespace │             Resource              │  Vulnerabilities   │ Misconfigurations │      Secrets      │
+│           │                                   ├───┬───┬────┬───┬───┼───┬───┬───┬───┬───┼───┬───┬───┬───┬───┤
+│           │                                   │ C │ H │ M  │ L │ U │ C │ H │ M │ L │ U │ C │ H │ M │ L │ U │
+├───────────┼───────────────────────────────────┼───┼───┼────┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┼───┤
+│ default   │ Deployment/hello-world-deployment │ 5 │ 9 │ 18 │ 2 │   │   │   │ 3 │ 8 │   │   │   │   │   │   │
+└───────────┴───────────────────────────────────┴───┴───┴────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
+Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
 </code></pre>
 
 ### Export reports locally
