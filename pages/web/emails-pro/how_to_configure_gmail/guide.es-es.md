@@ -46,7 +46,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 En primer lugar, acceda a la interfaz web de Gmail desde su navegador de internet. Introduzca la información de su cuenta Gmail y conéctese.
 
 
-Haga clic en el icono con forma de rueda dentada y seleccione `Configuración`{.action}. A continuación, haga clic en `Cuentas e importación`{.action}. 
+Haga clic en el icono con forma de rueda dentada y seleccione `Ver todos los ajustes`{.action}. A continuación, haga clic en `Cuentas e importación`{.action}. 
 
 ![Email Pro](images/configuration-gmail-web-step1.png){.thumbnail}
 

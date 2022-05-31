@@ -187,6 +187,6 @@ Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu do usunięc
 
 ## Sprawdź również
 
-[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN)
+[Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
 
 Dołącz do społeczności naszych użytkowników na <https://community.ovh.com/en/>.

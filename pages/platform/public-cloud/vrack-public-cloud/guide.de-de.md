@@ -66,7 +66,7 @@ Sie können einfach von unserer Webseite aus auf die [API](https://api.ovh.com/)
 
 So können Sie Ihre Tasks frei automatisieren, Skripte verwenden, Ihre eigenen Funktionen optimieren etc.
 
-Lesen Sie die [Anleitung zur OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
+Lesen Sie die [Anleitung zur OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/), um sich mit der Verwendung der OVHcloud APIv6 vertraut zu machen.
 
 ### OpenStack API <a name="openstack-api"></a>
 

@@ -64,7 +64,7 @@ Możesz po prostu uzyskać do niej dostęp z [naszej strony internetowej](https:
 
 Przed użyciem niektórych wywołań API może być konieczne pobranie różnych informacji, ponieważ wymagane jest wprowadzenie określonych danych.
 
-Zobacz przewodnik [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN), aby rozpocząć korzystanie z interfejsu APIv6 OVHcloud.
+Zobacz przewodnik [Pierwsze kroki z API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/), aby rozpocząć korzystanie z interfejsu APIv6 OVHcloud.
 
 ### API OpenStack
 

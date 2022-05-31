@@ -79,7 +79,8 @@ If you need to delete data from your object container, you can mount your volume
 
 *When to attach a volume in read-write-delete `RWD`?*
 
-The purpose of the **read-write-delete** permission is to be able to modify and **delete** the contents of the object container.
+The purpose of the **read-write-delete** permission is to be able to modify or delete the object container contents. You can not only make changes to the different files in your container (Python code, requirements file, ...) but also, and especially, delete data from it. The RWD will allow you to permanently delete data you no longer need from your object container. 
+This permission can be used in particular if you want to delete old codes or connection weights which can be heavy files.
 
 > [!warning]
 >

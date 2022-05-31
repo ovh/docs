@@ -25,7 +25,7 @@ Die Unterstützung der vMAC-Funktionalität ist eine Voraussetzung für alle Akt
 - Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/console/) einloggen.
 
 > [!primary]
-> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Anleitung zu den [ersten Schritten mit der OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Wenn Sie mit der Verwendung der OVHcloud API nicht vertraut sind, lesen Sie unsere Anleitung zu den [ersten Schritten mit der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
 
 ## In der praktischen Anwendung
 
@@ -54,6 +54,6 @@ Das Ergebnis zeigt einen Eintrag mit "vmac / supported" an, der "true" oder "fal
 
 ## Weiterführende Informationen
 
-[First Steps with the OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
+[First Steps with the OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.

@@ -49,7 +49,7 @@ L'outil Open Source Terraform a été développé pour faciliter la création d'
 * [Configurer un accès utilisateur à Horizon](../creer-un-acces-a-horizon/)
 * [Préparer l’environnement pour utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
 * [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
-* [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)
+* [Disposer de vos identifiants API et de votre clé d'autorisation OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/)
 * [Une clé SSH](../premiers-pas-instance-public-cloud/)
 * [Le provider Terraform OpenStack](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 * [Le provider Terraform OVHcloud](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}

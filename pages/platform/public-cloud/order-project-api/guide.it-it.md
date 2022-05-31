@@ -23,7 +23,7 @@ La creazione di un progetto è il primo step per l'implementazione di [istanze P
 
 - Disporre delle credenziali OVHcloud valide
 - Disporre di una [modalità di pagamento](https://docs.ovh.com/it/billing/manage-payment-methods/) valida e registrata sul tuo account OVHcloud
-- familiarizzare con il [funzionamento dell'APIv6 OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- familiarizzare con il [funzionamento dell'APIv6 OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/).
 
 ## Procedura
 

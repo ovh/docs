@@ -598,8 +598,9 @@ After the CRD you have to update the reconciler to:
 - create the `service`,
 - watch the created service to re-create it if it's deleted.
 
- Update the `./controllers/ovhnginx_controller.go` file:
- ```go
+Update the `./controllers/ovhnginx_controller.go` file:
+
+```go
 package controllers
 
 import (
@@ -824,7 +825,8 @@ func (r *OvhNginxReconciler) SetupWithManager(mgr ctrl.Manager) error {
 		})).
 		Complete(r)
 }
- ```
+```
+
 > [!primary]
 >
 > If this kind of errors occurs:

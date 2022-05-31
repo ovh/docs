@@ -22,7 +22,7 @@ Oprócz wymagań i ograniczeń wymienionych poniżej, należy upewnić się, że
 - Posiadanie [serwera dedykowanego OVHcloud](https://www.ovhcloud.com/pl/bare-metal/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części ["Wdrażanie w Panelu klienta"](#viacontrolpanel) niniejszego przewodnika.
 - Dostęp do [API OVHcloud](https://api.ovh.com/){.external} w części ["Wdrażanie przez API"](#viaapi) niniejszego przewodnika.
-- Wygenerowanie [credentials do korzystania z APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) w części ["Wdrażanie przez API"](#viaapi) tego przewodnika.
+- Wygenerowanie [credentials do korzystania z APIv6](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/) w części ["Wdrażanie przez API"](#viaapi) tego przewodnika.
 - Rozmiar obrazu musi być mniejszy niż dyski zainstalowane na serwerze.
 
 > [!warning]
