@@ -62,7 +62,7 @@ Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Ender
 
 > [!warning]
 >
-> Para validar a eliminação da oferta de e-mail associada ao seu alojamento web, é-lhe enviado um e-mail. É indispensável validá-lo para que a operação de eliminação seja lançada.
+> Para confirmar a eliminação da oferta de e-mail associada ao seu alojamento web, receberá por e-mail um link de validação. É essencial clicar nesta ligação para que a operação de eliminação seja lançada.
 
 ## Quer saber mais?
 

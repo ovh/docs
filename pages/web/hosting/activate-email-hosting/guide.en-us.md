@@ -62,7 +62,7 @@ In the `Configuration` box, click the `...`{.action} button to the right of the 
 
 > [!warning]
 >
-> To confirm that you wish to delete the email solution linked to your Web Hosting plan, you will receive an email. You will need to confirm this in order for the delete operation to be launched.
+> To confirm the deletion of the email solution linked to your Web Hosting plan, you will receive a confirmation link via email. You must click this link to start the delete operation.
 
 ## Go further
 

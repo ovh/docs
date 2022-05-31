@@ -62,7 +62,7 @@ En la columna `Configuración`, vaya a `Direcciones de correo`{.action}, haga cl
 
 > [!warning]
 >
-> Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un mensaje de correo electrónico. Para que se inicie la operación de eliminación, es necesario validarla.
+> Para confirmar la eliminación del servicio de correo asociado a su alojamiento web, recibirá un enlace de validación por correo electrónico. Para que se inicie la operación de eliminación, haga clic en este enlace.
 
 ## Más información
 

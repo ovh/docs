@@ -62,7 +62,7 @@ W polu `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie wzmianki
 
 > [!warning]
 >
-> Aby zatwierdzić usunięcie usługi e-mail powiązanej z Twoim hostingiem, otrzymasz wiadomość e-mail. Aby operacja usunięcia została uruchomiona, niezbędne jest jej zatwierdzenie.
+> W celu potwierdzenia usunięcia usługi e-mail powiązanej z Twoim hostingiem, otrzymasz e-mail z linkiem do potwierdzenia. Aby operacja usunięcia została zainicjowana, kliknij link.
 
 ## Sprawdź również
 

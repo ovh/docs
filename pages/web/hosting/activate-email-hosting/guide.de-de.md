@@ -62,7 +62,7 @@ Klicken Sie im Feld `Konfiguration` auf den Button`...`{.action} rechts neben `E
 
 > [!warning]
 >
-> Um die Löschung des zu Ihrem Webhosting gehörenden E-Mail-Angebots zu bestätigen, erhalten Sie eine E-Mail. Um die Löschung zu starten, müssen Sie diese bestätigen.
+> Um die Löschung des zu Ihrem Webhosting gehörenden E-Mail-Angebots zu bestätigen, erhalten Sie einen Bestätigungslink per E-Mail. Klicken Sie auf diesen Link, damit die Löschung gestartet wird.
 
 ## Weiterführende Informationen
 
