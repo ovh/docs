@@ -51,7 +51,7 @@ Trivy also scans hardcoded secrets like passwords, API keys and tokens.
 
 More than a simple Docker container images, Trivy can now scan a wide range of different data like Kubernetes clusters.
 
-For your information, trivy is a read-only tool, it only retrieves informations in order to help you to securize and sanitize your cluster, it does not modify or delete resources on a Kubernetes cluster.
+For your information, Trivy is a read-only tool, it only retrieves informations in order to help you to securize and sanitize your cluster, it does not modify or delete resources on a Kubernetes cluster.
 
 Read more about [Trivy](https://aquasecurity.github.io/trivy/v0.28.1/docs/).
 
@@ -487,7 +487,7 @@ default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatfo
 
 So you can check that your deployment have several critical, high, medium and low vulnerabilities.
 
-The Kubernetes Operator geenrates also a `ConfigAuditReports`:
+The Kubernetes Operator generates also a `ConfigAuditReports`:
 
 ```
 kubectl get configauditreports --all-namespaces -o wide
@@ -500,7 +500,7 @@ NAMESPACE   NAME                                                       REPOSITOR
 default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     13m   5          9      18       2     0
 </code></pre>
 
-Thanks to the Kubernetes operator, it's possible to integrate trivy into your CI/CD pipeline to check cluster vulnerabilities and misconfiguration issues. 
+Thanks to the Kubernetes operator, it's possible to integrate Trivy into your CI/CD pipeline to check cluster vulnerabilities and misconfiguration issues. 
 It allows you to automate the way to access reports, export the metrics from the vulnerability reports into a Prometheus, add dashboards into Grafana, set up alerting...
 
 ## Go further
