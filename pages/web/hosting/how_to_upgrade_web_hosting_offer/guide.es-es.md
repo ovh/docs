@@ -88,11 +88,11 @@ No podrá pasar **directamente* de un [alojamiento gratuito Start10M](https://do
 
 ### Comprobar que el alojamiento es compatible con un producto inferior <a name="checks"></a>
 
-##### Número de sitios
+#### Número de sitios
 
-El producto [Kimsufi Web](https://www.kimsufi.com/es/) no permite tener más de un dominio en el [multisitio](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
+El producto [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/) no permite tener más de un dominio en el [multisitio](https://docs.ovh.com/es/hosting/configurar-un-multisitio-en-un-alojamiento-web/) de su alojamiento.
 
-Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.kimsufi.com/es/), compruebe que el alojamiento solo tenga un sitio web.
+Antes de cambiar del plan [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) al plan [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/), compruebe que el alojamiento solo tenga un sitio web.
 
 #### Bases de datos Start SQL
 
@@ -136,7 +136,7 @@ Si quiere conservar el mismo número de cuentas de correo antes de pasar el aloj
 
 #### Mailing lists
 
-La funcionalidad [Mailing lists](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.kimsufi.com/es/).
+La funcionalidad [Mailing lists](https://docs.ovh.com/es/emails/guia_de_utilizacion_de_listas_de_difusion/) está opcional en los alojamientos [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/) y [Kimsufi Web](https://www.ovhcloud.com/es-es/web-hosting/old-web-hosting-offers/).
 
 Para migrar a un plan de hosting [Personal](https://www.ovhcloud.com/es-es/web-hosting/personal-offer/), primero deberá eliminar las listas de correo o contratar un servicio de correo que incluya esta funcionalidad (**MX Plan 100** o **MX Plan Full**) desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 

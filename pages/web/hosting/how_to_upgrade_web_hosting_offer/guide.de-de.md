@@ -90,9 +90,9 @@ Sie können nicht **direkt** von einem kostenlosen [Start 10M Hosting](https://d
 
 #### Anzahl der Websites
 
-Mit dem Angebot Kimsufi Web können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) verwenden.
+Mit dem Angebot [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](https://docs.ovh.com/de/hosting/multisites-mehrere-websites-konfigurieren/) verwenden.
 
-Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot zu Kimsufi Web wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
+Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) Angebot zu [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
 
 #### Start SQL Datenbanken
 
@@ -136,7 +136,7 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vo
 
 #### Mailinglisten
 
-Die [Mailinglisten-Funktion](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und Kimsufi Web.
+Die [Mailinglisten-Funktion](https://docs.ovh.com/de/emails/webhosting_e-mail_verwendung_von_mailinglisten/) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/).
 
 Um Ihr Hosting auf ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 

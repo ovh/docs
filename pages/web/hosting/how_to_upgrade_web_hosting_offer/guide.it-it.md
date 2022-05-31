@@ -90,9 +90,9 @@ Non è possibile passare **direttamente** da un [hosting gratuito Start10M](http
 
 #### Numero di siti
 
-L'offerta [Kimsufi Web](https://www.kimsufi.com/it/) non permette di avere più di un dominio sul [multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) del tuo hosting.
+L'offerta [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/) non permette di avere più di un dominio sul [multisito](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/) del tuo hosting.
 
-Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) all'offerta [Kimsufi Web](https://www.kimsufi.com/it/), verifica che il tuo hosting comporti un solo sito.
+Prima di passare dall'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) all'offerta [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/), verifica che il tuo hosting comporti un solo sito.
 
 #### Database Start SQL
 
@@ -136,7 +136,7 @@ Per mantenere lo stesso numero di caselle di posta elettronica prima di passare 
 
 #### Mailing list
 
-La funzionalità [Mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/it/).
+La funzionalità [Mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) è disponibile in opzione sugli hosting [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e [Kimsufi Web](https://www.ovhcloud.com/it/web-hosting/old-web-hosting-offers/).
 
 Per attivare un servizio di hosting su un'offerta [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/), è necessario eliminare le mailing list o ordinare un servizio di posta che includa questa funzionalità (**MX Plan 100** o **MX Plan Full**) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 

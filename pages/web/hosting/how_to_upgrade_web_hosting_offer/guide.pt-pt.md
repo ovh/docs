@@ -90,11 +90,11 @@ Não poderá passar **diretamente** de um [alojamento gratuito Start10M](https:/
 
 #### Número de sites
 
-A oferta [Kimsufi Web](https://www.kimsufi.com/pt/) não permite ter mais do que um nome de domínio no [multisite](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) do seu alojamento.
+A oferta [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/) não permite ter mais do que um nome de domínio no [multisite](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/) do seu alojamento.
 
-Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) à oferta [Kimsufi Web](https://www.kimsufi.com/pt/), verifique que o seu alojamento inclui apenas um site.
+Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) à oferta [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/), verifique que o seu alojamento inclui apenas um site.
 
-#### bases de dados Start SQL
+#### Bases de dados Start SQL
 
 Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também que têm tamanhos suficientes.
 
@@ -126,7 +126,7 @@ A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`
 
 ![ftp](images/ftp.png){.thumbnail}
 
-##### Endereços de e-mail
+#### Endereços de e-mail
 
 Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/), se necessário.
 
@@ -134,9 +134,9 @@ Se pretender manter o mesmo número de caixas de correio antes de passar o seu a
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-##### Mailing lists
+#### Mailing lists
 
-A funcionalidade [Mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e [Kimsufi Web](https://www.kimsufi.com/pt/).
+A funcionalidade [Mailing lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/).
 
 Para passar o seu alojamento numa oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá eliminar as mailing lists ou encomendar uma oferta de e-mail que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 

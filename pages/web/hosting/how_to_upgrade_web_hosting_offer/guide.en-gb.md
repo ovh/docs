@@ -86,9 +86,9 @@ You will not be able to switch **directly** from a [free Start10M hosting](https
 
 #### Number of sites
 
-With the [Kimsufi Web](https://www.ovh.co.uk/order/webcloud/?hosting#/webCloud/hosting/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
+With the [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/).
 
-Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovh.co.uk/order/webcloud/?hosting#/webCloud/hosting/) solution, please check that your web hosting plan only has one website.
+Before you switch from the [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
 
 #### Start SQL databases
 
@@ -132,7 +132,7 @@ If you would like to keep the same number of email accounts, before moving your 
 
 #### Mailing lists
 
-The [Mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) and Kimsufi Web hosting plans.
+The [Mailing lists](https://docs.ovh.com/gb/en/emails/guide-dutilisation-mailing-list/) feature is optional on [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-gb/web-hosting/old-web-hosting-offers/) hosting plans.
 
 To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-gb/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 

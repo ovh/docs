@@ -90,9 +90,9 @@ Nie będziesz mógł zmienić **bezpośrednio** z [bezpłatnego hostingu Start10
 
 #### Liczba stron
 
-Oferta [Kimsufi Web](https://www.kimsufi.com/pl/) nie pozwala na posiadanie więcej niż jednej domeny na [MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na Twoim hostingu.
+Oferta [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) nie pozwala na posiadanie więcej niż jednej domeny na [MultiSite](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu/) na Twoim hostingu.
 
-Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) na ofertę [Kimsufi Web](https://www.kimsufi.com/pl/) sprawdź, czy hosting zawiera tylko jedną stronę.
+Przed przejściem z oferty [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) na ofertę [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/) sprawdź, czy hosting zawiera tylko jedną stronę.
 
 #### Bazy danych Start SQL
 
@@ -134,9 +134,9 @@ Jeśli chcesz zachować tę samą liczbę kont e-mail, zanim przejdziesz na niż
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-##### Listów mailingowych
+#### Listów mailingowych
 
-Funkcja [Listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i [Kimsufi Web](https://www.kimsufi.com/pl/).
+Funkcja [Listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) jest opcjonalna dla hostingu [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) i [Kimsufi Web](https://www.ovhcloud.com/pl/web-hosting/old-web-hosting-offers/).
 
 Aby zmienić dotychczasowy hosting na ofertę [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/), należy najpierw usunąć listy mailingowe lub zamówić ofertę pocztową zawierającą tę funkcję (**MX Plan 100** lub **MX Plan Full**) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
