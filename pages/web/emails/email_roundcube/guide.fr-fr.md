@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 05
 ---
 
-**Dernière mise à jour le 30/05/2021**
+**Dernière mise à jour le 31/05/2021**
 
 ## Objectif
 
@@ -167,8 +167,10 @@ Personnalisez ici l'agencement des informations dans votre carnet d'adresses.
 
 #### Dossiers spéciaux
 
-Par défaut, les dossiers spéciaux sont présents. Vous pouvez attribuer le comportement correspondant à un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
-**Par exemple**, vous pouvez attribuer un comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
+Roundcube dispose de 4 dossiers spéciaux : `Brouillons`, `Envoyés`, `Pourriels`, `Corbeille`.
+
+Nous ne conseillons pas de les modifier mais il est possible d'attribuer le comportement d'un dossier spécial à un autre dossier créé ultérieurement, grâce aux menus déroulants.<br>
+**Par exemple**, vous pouvez attribuer le comportement « Brouillons » à un autre dossier que vous avez créé. Les e-mails qui y seront enregistrés seront considérés comme des brouillons jusqu'à leur envoi effectif.
 
 #### Paramètres du serveur
 
@@ -189,7 +191,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 - **Nom d'affichage** : ce nom apparaîtra dans la partie « expéditeur » du destinataire
 - **Courriel** : correspond à l'adresse depuis laquelle est envoyé l'e-mail.
 - **Organisation** : champ destiné au nom de société, association, ou une autre entité.
-- **Répondre à** : attribuer au destinataire, lorsqu'il répond, une autre adresse e-mail que celle de l'expéditeur.
+- **Répondre à** : attribuer une autre adresse e-mail de réponse que celle de l'expéditeur.
 - **Cci** : mettre en copie cachée une adresse e-mail lors d'un envoi.
 - **Définir par défaut** : lorsqu'il y a plusieurs identités (signatures), attribue celle-ci par défaut.
 - **Signature** : personnaliser le pied de page d'un e-mail lors de sa rédaction (nom, prénom, poste occupé, phrases, images...).
@@ -238,7 +240,7 @@ Pour créer un groupe, cliquez sur le bouton `+`{.action} en bas de la colonne `
 
 ![hosting](images/roundcube10.png){.thumbnail}
 
-Pour attribuer un groupe à l'un des contacts, sélectionnez un contact dans la colonne `Contacts` puis, dans la fenêtre qui apparait, cliquez sur l'onglet `Groupes`{.action}. Cochez le groupe que vous souhaitez attribuer au contact.
+Pour affecter un contact à l'un des groupes, sélectionnez un contact dans la colonne `Contacts` puis, dans la fenêtre qui apparait, cliquez sur l'onglet `Groupes`{.action}. Cochez le groupe que vous souhaitez attribuer au contact.
 
 #### Contacts <a name="contacts"></a>
 
