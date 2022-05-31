@@ -26,7 +26,7 @@ Además de los requisitos y limitaciones indicados más abajo, debe asegurarse d
 - Tener un [servidor dedicado de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para la sección ["Despliegue desde el área de cliente"](#viacontrolpanel) de esta guía.
 - Estar conectado a la [API de OVHcloud](https://ca.api.ovh.com/){.external} para la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
-- Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
+- Haber generado los [credenciales para utilizar la APIv6](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/) en la sección ["Despliegue a través de la API"](#viaapi) de esta guía.
 - El tamaño de la imagen debe ser inferior al disco o discos instalados en el servidor
 
 > [!warning]

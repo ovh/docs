@@ -103,7 +103,7 @@ You can name your database in this step.
 
 #### Step 6: Summary and confirmation
 
-The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/fr/api/api-premiers-pas/).
+The last section will show a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/connect-kubernetes-to-managed-mysql06.png){.thumbnail}
 

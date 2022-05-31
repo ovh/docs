@@ -26,7 +26,7 @@ Oltre ai requisiti e ai limiti indicati in appresso, è necessario assicurarsi c
 - Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per la sezione ["Implementazione dallo Spazio Cliente"](#viacontrolpanel) di questa guida.
 - Essere connesso alle [API OVHcloud](https://api.ovh.com/){.external} per la sezione ["Implementazione via API"](#viaapi) di questa guida.
-- Aver generato i [credenziali per utilizzare l'APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
+- Aver generato i [credenziali per utilizzare l'APIv6](https://docs.ovh.com/it/api/first-steps-with-ovh-api/) per la sezione ["Implementazione via API"](#viaapi) di questa guida.
 - La dimensione della tua immagine deve essere inferiore al disco o ai dischi installati sul server
 
 > [!warning]

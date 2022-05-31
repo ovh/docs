@@ -29,7 +29,7 @@ routes:
 Before reading this documentation, make sure you have read the following page.
 It describes the test environment setup and the OVHcloud API connection process, and also helps understanding requests signature.
 
-- [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
+- [First Steps with the OVHcloud APIs](https://docs.ovh.com/it/api/first-steps-with-ovh-api/)
 
 ## Available SDKs
 
