@@ -16,7 +16,7 @@ order: 2
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
 - [Introduction](../api)
 - **Order a Domain Name**

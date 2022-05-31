@@ -135,7 +135,7 @@ Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhal
 
 > [!primary]
 >
-> Mehr Informationen finden Sie in der Einführung zur [Verwendung der OVHcloud API](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Mehr Informationen finden Sie in der Einführung zur [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
 >
 > Falls Sie Schwierigkeiten haben, Ihre Zahlungsarten über die OVHcloud API zu identifizieren, verwenden Sie die Funktion `Beschreibung ändern`{.action} im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie auf dazu `...`{.action} rechts neben der Zahlungsart im Bereich [Meine Zahlungsarten](#payment_methods).
 >

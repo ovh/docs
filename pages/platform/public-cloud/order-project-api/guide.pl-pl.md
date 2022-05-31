@@ -22,7 +22,7 @@ Utworzenie projektu jest pierwszym etapem wdrażania [instancji Public Cloud](ht
 
 - Posiadanie ważnych identyfikatorów OVHcloud
 - Posiadanie ważnego [sposobu płatności](https://docs.ovh.com/pl/billing/zarzadzanie-sposobami-platnosci/) zarejestrowanego na Twoim koncie OVHcloud
-- Poznaj [działanie APIv6 OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Poznaj [działanie APIv6 OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/).
 
 ## W praktyce
 

@@ -47,7 +47,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 #### Etap 1: Zmiana APR dla domeny
 
-Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVHcloud-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
 
 > [!primary]
 >

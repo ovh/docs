@@ -25,7 +25,7 @@ El soporte de esta funcionalidad es un requisito previo para todas las acciones 
 - Estar conectado a la [API de OVHcloud](https://ca.api.ovh.com/console/){.external}.
 
 > [!primary]
-> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> Si no está familiarizado con el uso de la API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/).
 
 ## Procedimiento
 
@@ -54,6 +54,6 @@ Obtendrá una lista con una entrada "vmac / supported" que estará en "true" o "
 
 ## Más información
 
-[Primeros pasos con las API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/)
+[Primeros pasos con las API de OVHcloud](https://docs.ovh.com/us/es/api/first-steps-with-ovh-api/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

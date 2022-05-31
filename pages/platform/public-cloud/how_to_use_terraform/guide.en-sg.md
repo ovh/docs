@@ -8,7 +8,29 @@ section: Tutorials
 order: 02
 ---
 
-**Last updated 12th April 2022**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24;
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Last updated 27th May 2022**
 
 ## Objective
 
@@ -96,13 +118,13 @@ provider "ovh" {
 
 > [!primary]
 > If you don't want to define your secrets in the Terraform configuration file, you can also define them in environment variables:
-> 
-> ```console
-> $ export OVH_ENDPOINT=ovh-eu
-> $ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
-> $ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
-> $ export OVH_CONSUMER_KEY=Your_token(or_CK)
-> ```
+
+```console
+$ export OVH_ENDPOINT=ovh-eu
+$ export OVH_APPLICATION_KEY=Your_key_application_OVH(or_AK)
+$ export OVH_APPLICATION_SECRET=Your_secret_application_key_OVH(or_AS)
+$ export OVH_CONSUMER_KEY=Your_token(or_CK)
+```
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
@@ -561,6 +583,50 @@ Apply your changes with the following command:
 
 ```console
 terraform apply
+```
+
+#### Creating a Public Cloud project
+
+You can also create an OVHcloud project directly as code, through Terraform.
+
+Nevertheless, two conditions apply:
+
+- You must have at least 3 Public Cloud projects (note that there is a 3 project limit by default. To raise this limit, please submit a request to our support teams)
+- You must have created a Public Cloud project during the last 3 months.
+
+If one of these business rules is not met, you will receive the following error: `"Found eligibility issues: challengePaymentMethod"`.<br>
+In that case, the only solution is to use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) to create a project.<br>
+You will then be challenged to validate that you are indeed the owner of the payment means used on your account (this challenge depends on the payment means and other parameters).
+
+Please understand these rules and extra human steps have been put in place as an extra safety for customers that might have leaked their OVHcloud credentials.<br>
+We will try to continue improving those rules in the future to facilitate Infra-as-code scenarios, such as this "public cloud project as code" scenario.
+
+Create a file named `project.tf` and enter the following lines:
+
+```python
+data "ovh_order_cart" "cart" {
+  ovh_subsidiary = "fr"
+  description    = "Use the French OVH cart by default"
+}
+
+data "ovh_order_cart_product_plan" "cloud" {
+  cart_id        = data.ovh_order_cart.cart.id
+  price_capacity = "renew"
+  product        = "cloud"
+  plan_code      = "project.2018"
+}
+
+resource "ovh_cloud_project" "cloud" {
+  ovh_subsidiary = data.ovh_order_cart.cart.ovh_subsidiary
+  description    = var.project_description
+  payment_mean   = "fidelity"
+
+  plan {
+    duration     = data.ovh_order_cart_product_plan.cloud.selected_price.0.duration
+    plan_code    = data.ovh_order_cart_product_plan.cloud.plan_code
+    pricing_mode = data.ovh_order_cart_product_plan.cloud.selected_price.0.pricing_mode
+  }
+}
 ```
 
 ### Deleting an infrastructure

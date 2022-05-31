@@ -70,7 +70,7 @@ When ready, click on `Update advanced configuration`{.action}.
 
 > [!primary]
 >
-> If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+> If you are not familiar with using the OVHcloud API, please refer to our guide on [First Steps with the OVHcloud APIs](https://docs.ovh.com/es/api/first-steps-with-ovh-api/).
 >
 
 #### Get your service and cluster IDs

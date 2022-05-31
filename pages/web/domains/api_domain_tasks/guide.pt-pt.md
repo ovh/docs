@@ -18,7 +18,7 @@ routes:
 
 <!-- Begin TOC -->
 
-## Table of contents
+## Table of Contents
 
 - [Introduction](../api)
 - [Order a Domain Name](../api-order)
@@ -89,7 +89,7 @@ The most interesting fields in the answer are the following:
 - `canRelaunch`: indicates whether it is possible for you to relaunch a task. This will be useful if the task is in `error` status.
 - `todoDate`: the approximate date and time when the task should be executed next. This only applies if the task is in `todo` status. It is possible to make this date closer using the [`POST /me/task/{id}/accelerate`](https://eu.api.ovh.com/console/#/me/task/domain/%7Bid%7D/accelerate~POST) API, but this is rarely necessary.
 
-## Fetch Available Offers <a name="fetch-available-offers"></a>
+## Fix and relaunch a task in error <a name="fix-and-relaunch-a-task-in-error"></a>
 
 If your task is in `error` status and the `canRelaunch` field indicates that it can be restarted, you will probably have to correct some data. General correction information will be given in the `comment` field.
 

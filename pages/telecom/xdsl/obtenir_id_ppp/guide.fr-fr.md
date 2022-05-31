@@ -22,7 +22,7 @@ Les identifiants *Point to Point Protocol over Ethernet* (PPPoE) sont composés 
 - Disposer d'un équipement (routeur, firewall) compatible PPPoE.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr).
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external}.
-- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/first-steps-with-ovh-api/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 ## En pratique
 

@@ -83,7 +83,7 @@ Please follow [this guide](https://docs.ovh.com/ca/fr/public-cloud/public-cloud-
 
 #### Step 6: Summary and confirmation
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/fr/api/api-premiers-pas/).
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/).
 
 ![Confirm order](images/creation_mongo07.png){.thumbnail}
 
