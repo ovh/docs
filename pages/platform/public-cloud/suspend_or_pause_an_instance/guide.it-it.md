@@ -25,7 +25,7 @@ order: 3
 ## Prerequisiti
 
 - un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/) con la fatturazione **oraria**
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/crea_un_utente_per_accedere_a_horizon/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[interfaccia Horizon](https://docs.ovh.com/it/public-cloud/horizon/)
 - Conoscenza dell'[API OpenStack](https://docs.ovh.com/it/public-cloud/prepara_il_tuo_ambiente_di_sviluppo_per_utilizzare_lapi_openstack/) e delle [variabili d’ambiente OpenStack](https://docs.ovh.com/it/public-cloud/impostare-le-variabili-dambiente-openstack/)
 
 ## Procedura

@@ -100,6 +100,6 @@ Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-yo
 
 [Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/au/en/customer/scams-fraud-phishing/)
 
-[Managing OVHcloud bills](https://docs.ovh.com/gb/au/billing/manage-ovh-bills/)
+[Managing OVHcloud bills](https://docs.ovh.com/au/en/billing/manage-ovh-bills/)
 
 Join our community of users on <https://community.ovh.com/en/>.

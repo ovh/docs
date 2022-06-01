@@ -44,7 +44,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-Comme indiqué dans le guide [Accéder à l’interface Horizon](https://docs.ovh.com/fr/creation-et-suppression-dun-utilisateur-openstack/), le mot de passe n'est visible qu'une seule fois, à sa création.
+Comme indiqué dans [ce guide](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/), le mot de passe n'est visible qu'une seule fois, à sa création.
 
 Si vous avez oublié celui-ci, il faudra le recréer.
 
