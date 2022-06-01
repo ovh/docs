@@ -171,11 +171,12 @@ Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der 
 
 #### Die DNS Zone zurücksetzen
 
-Sie können Ihre DNS Zone zurücksetzen:
-- oder mit den standardmäßigen OVHcloud-Einträgen zu einer minimalen Konfiguration zurückkehren.
-- entweder zu einer leeren DNS Zone (mit Ausnahme der NS Einträge) zurückkehren, um eine spätere manuelle Konfiguration festzulegen.
+Sie können Ihre DNS-Zone auf zwei Zustände zurücksetzen:
 
-Klicken Sie im Tab `DNS-Zone `{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
+- Auf die Standardeinträge für OVHcloud DNS-Zonen mit einer minimalen Konfiguration.
+- Auf eine leere DNS-Zone (mit Ausnahme der NS-Einträge), um später eine manuelle Konfiguration einzurichten.
+
+Klicken Sie im Tab `DNS-Zone`{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
 
 ![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
 
