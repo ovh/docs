@@ -51,11 +51,21 @@ ResNet has many variants that work on the same concept but have different number
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- A user for AI Notebooks
+- A [user](https://docs.ovh.com/us/en/publiccloud/ai/users/) for AI Notebooks
 
 ## Instructions
 
-You can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
+First, you have to create 2 object containers in your OVHcloud **Object Storage**.
+
+- The first one contains the non-pre-processed data (base images).
+- The second object container is empty. It is intended to receive the data once processed and split for training.
+
+> [!primary]
+>
+> To know more about how to **push your data to Object Storage**, please refer to the dedicated [documentation](https://docs.ovh.com/us/en/publiccloud/ai/cli/data-cli/).
+>
+
+Then, you can launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or via the ovhai [CLI](https://docs.ovh.com/us/en/publiccloud/ai/cli/getting-started-cli/).
 
 ### Launching a Jupyter notebook with "Miniconda" via UI
 
@@ -88,11 +98,23 @@ You can choose the number of CPUs or GPUs you want.
 - Permission: `read only` (RO)
 
 <ol start="2">
-   <li>Attach an empty object container to store your <strong>model</strong> after training.
+   <li>Attach an empty object container to store your **data**, once it has been **processed** and **split** for training, validation and test.
+</ol>
+
+- Mount directory: `/workspace/data-split`
+- Permission: `read write` (RW)
+
+<ol start="3">
+   <li>Attach an empty object container to store your **model** after training.
 </ol>
 
 - Mount directory: `/workspace/saved_model`
 - Permission: `read write` (RW)
+
+> [!primary]
+>
+> To learn more about how to use and **manage your data in a notebook with UI**, check this [documentation](https://docs.ovh.com/us/en/publiccloud/ai/notebooks/manage-data-ui/).
+>
 
 ### Launching a Jupyter notebook with TensorFlow via CLI
 
@@ -100,15 +122,20 @@ If you want to launch it with the CLI, choose the `jupyterlab` editor and the `t
 
 For this tutorial, you can use the following TensorFlow framework version: `tf2.4-py38-cuda11.0-v22-4`.
 
+> [!primary]
+>
+> To know more about how to use and **manage your data in a notebook with the CLI**, refer to this [documentation](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/).
+>
+
 Choose the number of GPUs (`<nb-gpus>`) to use in your notebook and use the following command.
 
 ```console
 ovhai notebook run tensorflow jupyterlab \
-	--name <notebook-name> \
-	--framework-version tf2.4-py38-cuda11.0-v22-4 \
-	--gpu <nb-gpus> \
-	--volume <my-data>@<region>/:/workspace/data:RO:cache \
-	--volume <my-model>@<region>/:/workspace/saved_model:RW
+        --name <notebook-name> \
+        --framework-version tf2.4-py38-cuda11.0-v22-4 \
+        --volume <my-data>@<region>/:/workspace/data:RO:cache \
+        --volume <my-model>@<region>/:/workspace/saved_model:RW \
+        --gpu <nb-gpus> 
 ```
 
 You can then reach your notebook’s URL once the notebook is running.
