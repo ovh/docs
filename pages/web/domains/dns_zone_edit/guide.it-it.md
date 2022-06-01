@@ -170,6 +170,7 @@ Per eliminare più record in una sola volta, seleziona la casella sinistra della
 #### Reinizializza la zona DNS
 
 Reinizializza la tua zona DNS ti permette di:
+
 - tornare di default a una configurazione minima
 - tornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva
 

@@ -169,6 +169,7 @@ Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de
 #### Restaurar la zona DNS
 
 Restaurar la zona DNS le permite:
+
 - volver a una configuración mínima con los registros de OVHcloud por defecto.
 - volver a una zona DNS vacía (a excepción de los campos NS) para establecer una configuración manual posterior.
 

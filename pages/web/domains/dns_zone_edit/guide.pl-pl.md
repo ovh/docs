@@ -170,6 +170,7 @@ Możesz usunąć kilka rekordów za jednym razem, zaznaczając je w lewej częś
 #### Zresetuj strefę DNS
 
 Zresetuj strefę DNS:
+
 - powrócić do konfiguracji minimalnej z domyślnymi wpisami OVHcloud.
 - powrócić do pustej strefy DNS (z wyjątkiem pól NS), aby zdefiniować kolejną konfigurację ręczną.
 

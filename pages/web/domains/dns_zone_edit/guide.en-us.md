@@ -166,6 +166,7 @@ You can delete several entries at once by ticking them on the left-hand side of 
 #### Reset the DNS zone
 
 Resetting your DNS zone allows you to:
+
 - or go back to a minimum configuration with OVHcloud entries by default.
 - or return to an empty DNS zone (with the exception of the NS fields), to define a subsequent manual configuration.
 
