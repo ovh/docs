@@ -98,14 +98,14 @@ You can choose the number of CPUs or GPUs you want.
 - Permission: `read only` (RO)
 
 <ol start="2">
-   <li>Attach an empty object container to store your **data**, once it has been **processed** and **split** for training, validation and test.
+   <li>Attach an empty object container to store your <strong>data</strong>, once it has been <strong>processed</strong> and <strong>split</strong> for training, validation and test.
 </ol>
 
 - Mount directory: `/workspace/data-split`
 - Permission: `read write` (RW)
 
 <ol start="3">
-   <li>Attach an empty object container to store your **model** after training.
+   <li>Attach an empty object container to store your <strong>model</strong> after training.
 </ol>
 
 - Mount directory: `/workspace/saved_model`
