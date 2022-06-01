@@ -180,17 +180,17 @@ Klicken Sie im Tab `DNS-Zone`{.action} auf `Meine DNS-Zone zurücksetzen`{.actio
 
 ![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
 
-Sie haben die Wahl zwischen:
+Sie haben die Wahl zwischen folgenden Optionen:
 
-- `Ja, ich möchte meine DNS-Zone mit den Mindesteinträgen zurücksetzen`. Mit dieser Option können Sie Ihre Domain und Ihren E-Mail-Dienst auf:
-    - einer Ihrer Web-Cloud-Dienste in Ihrem OVHcloud Kundencenter verfügbar.
-    - den OVHcloud Weiterleitungsdienst, verfügbar über den Tab `Weiterleitung`{.action} Ihrer Domain in den Bereichen `Domainnamen`{.action} und `E-Mails`{.action}.
-    - die personalisierte `Funktion`. Geben Sie den `A` und/oder `MX` Eintrag Ihrer Wahl an.
-- `Nein, aber ich möchte meine DNS-Zone zurücksetzen`. Ihre DNS-Zone wird dann leer sein, mit Ausnahme der NS-Einträge, die automatisch an die OVHcloud DNS-Server Ihrer DNS-Zone angehängt werden.
+- `Ja, ich möchte meine DNS-Zone mit den Mindesteinträgen zurücksetzen`. Damit können Sie Ihren Domainnamen und Ihren E-Mail-Dienst folgendermaßen  umleiten:
+    - Auf einen Ihrer Dienste unter "Web Cloud" im OVHcloud Kundencenter.
+    - Auf den OVHcloud Weiterleitungsdienst, verfügbar über den Tab `Weiterleitung`{.action} Ihres Domainnamens in den Bereichen `Domainnamen`{.action} und `E-Mails`{.action}.
+    - Auf eigene DNS-Einträge, wenn Sie `Personalisiert` auswählen. Geben Sie dann Einträge Ihrer Wahl vom Typ `A` und/oder `MX` ein.
+- `Nein, aber ich möchte meine DNS-Zone zurücksetzen`. Ihre DNS-Zone wird dann leer sein, mit Ausnahme der NS-Einträge, die automatisch entsprechend der  OVHcloud DNS-Server für Ihre DNS-Zone eingestellt werden.
 
 > [!primary]
 >
-> Bevor Sie Ihre DNS Zone zurücksetzen, überprüfen Sie bitte, dass Ihre Domain nicht mit Dienstleistungen verbunden ist, die bereits in Gebrauch sind, wie zum Beispiel Websites oder E-Mail-Adressen.
+> Bevor Sie Ihre DNS-Zone zurücksetzen, überprüfen Sie, dass Ihr Domainname nicht mit derzeit aktiv verwendeten Dienstleistungen verbunden ist, wie zum Beispiel Websites oder E-Mail-Adressen.
 
 ### Propagationszeit
 
