@@ -174,13 +174,13 @@ In the `DNS zone`{.action} tab, click on `Reset my DNS zone`{.action}, then foll
 
 ![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
 
-You can choose between:
+You can choose between these options:
 
-- `Yes, I want to reset my DNS zone with the minimum records`. This option allows you to direct your domain name and email service to:
-    - one of your Cloud Web services available in your OVHcloud Control Panel
-    - the OVHcloud redirection service, accessible via your domain name’s `Redirection`{.action} tab in the `Domain`{.action} names and `Emails`{.action} sections.
-    - the `Custom` function. Enter the `A` and/or `MX` field of your choice.
-- `No, but I want to reset my DNS zone`. Your DNS zone will then be empty, with the exception of the NS records, which will be automatically attached to the OVHcloud DNS servers in your DNS zone.
+- `Yes, I want to reset my DNS zone with the minimum records`. This allows you to direct your domain name and email service to:
+    - One of your Cloud Web services available in your OVHcloud Control Panel.
+    - The OVHcloud redirection service, accessible via your domain name’s `Redirection`{.action} tab in the `Domain names`{.action} and `Emails`{.action} sections.
+    - The `Custom` function. Enter the `A` and/or `MX` records of your choice.
+- `No, but I want to reset my DNS zone`. Your DNS zone will then be empty except for the NS records, which will be automatically attached to the OVHcloud DNS servers in your DNS zone.
 
 > [!primary]
 >
