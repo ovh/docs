@@ -137,6 +137,7 @@ This mode cannot be deactivated once it is enabled.
 >
 > If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
 > 
+> Please note that once the anti-DDoS mitigation is triggered, it cannot be disabled.
 
 ### Configuring Armor
 
