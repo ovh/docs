@@ -163,6 +163,29 @@ You can delete several entries at once by ticking them on the left-hand side of 
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Reset the DNS zone
+
+Resetting your DNS zone allows you to:
+- or go back to a minimum configuration with OVHcloud entries by default.
+- or return to an empty DNS zone (with the exception of the NS fields), to define a subsequent manual configuration.
+
+In the `DNS zone`{.action}  tab, click `Reset my DNS zone`{.action} zone, then follow the steps that open.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+You can choose between:
+
+- `Yes, I want to reset my DNS zone with the minimum records`. This option allows you to direct your domain name and email service to:
+    - one of your Cloud Web services available in your OVHcloud Control Panel
+    - the OVHcloud redirection service, accessible via your domain name’s `Redirection`{.action} tab in the `Domain`{.action} names and `Emails`{.action} sections.
+    - the `Custom` function. Enter the `A` and/or `MX` field of your choice.
+- `No, but I want to reset my DNS zone`. Your DNS zone will then be empty, with the exception of the NS records, which will be automatically attached to the OVHcloud DNS servers in your DNS zone.
+
+> [!primary]
+>
+> Before resetting your DNS zone, please ensure that your domain name is not attached to services that are currently in use, such as a website or email addresses.
+>
+
 ### Propagation time
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.

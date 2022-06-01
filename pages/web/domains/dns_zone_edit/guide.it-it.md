@@ -167,6 +167,29 @@ Per eliminare più record in una sola volta, seleziona la casella sinistra della
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Reinizializza la zona DNS
+
+Reinizializza la tua zona DNS ti permette di:
+- tornare di default a una configurazione minima
+- tornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva
+
+Nella scheda `Zona DNS`{.action}, clicca su `Reinizializza la zona DNS`{.action} e segui gli step.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puoi scegliere tra:
+
+- `Sì, voglio reinizializzare la zona DNS con il numero minimo di record`. Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
+    - uno dei tuoi servizi Web Cloud disponibili nello Spazio Cliente OVHcloud.
+    - il servizio di reindirizzamento OVHcloud, accessibile dalla scheda `Reindirizzamento`{.action} del tuo dominio nelle sezioni `Domini`{.action} ed `Email`{.action}.
+    - la funzione `Personalizzata`. Inserisci il record `A` e/o `MX` che preferisci.
+- `No, ma voglio reinizializzare la mia zona DNS`. La tua zona DNS sarà vuota, ad eccezione dei record NS che saranno automaticamente associati ai server DNS OVHcloud della tua zona DNS.
+
+> [!primary]
+>
+> Prima di reinizializzare la tua zona DNS, assicurati che il tuo dominio non sia associato a servizi in fase di utilizzo, come siti Web o indirizzi email.
+>
+
 ### Tempo di propagazione
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.

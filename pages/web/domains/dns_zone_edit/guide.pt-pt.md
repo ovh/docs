@@ -161,6 +161,29 @@ Pode eliminar várias entradas de uma só vez, selecionando-as a partir da parte
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Reiniciar a zona DNS
+
+Reinicializar a zona DNS permite-lhe:
+\- ou voltar a uma configuração mínima com as entradas OVHcloud predefinidas.
+\- voltar a uma zona DNS vazia (com exceção dos campos NS), para definir uma configuração manual posterior.
+
+No separador `Zona DNS`{.action}, clique em `Reiniciar zona DNS`{.action} e siga os passos que aparecem.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Pode escolher entre:
+
+- `Sim, quero reiniciar a minha zona DNS com o número mínimo de entradas`. Esta opção permite-lhe dirigir o seu nome de domínio e o seu serviço de e-mail para:
+    - um dos serviços Web Cloud disponíveis na Área de Cliente OVHcloud.
+    - o serviço de reencaminhamento OVHcloud, acessível através do separador `Reencaminhamento`{.action} do seu nome de domínio nas secções `Nomes de domínio`{.action} e `E-mails`{.action}.
+    - a função `Personalizada`. Introduza o campo `A` e/ou `MX` à sua escolha.
+- `Não, mas quero reiniciar a minha zona DNS`. A sua zona DNS estará vazia, com exceção das entradas NS que serão automaticamente associadas aos servidores DNS da OVHcloud da sua zona DNS.
+
+> [!primary]
+>
+> Antes de reiniciar a zona DNS, certifique-se de que o domínio não está associado a serviços em utilização, tais como um website ou endereços de e-mail.
+>
+
 ### Tempo de propagação
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.

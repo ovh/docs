@@ -169,6 +169,28 @@ Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der 
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Die DNS Zone zurücksetzen
+
+Sie können Ihre DNS Zone zurücksetzen:
+- oder mit den standardmäßigen OVHcloud-Einträgen zu einer minimalen Konfiguration zurückkehren.
+- entweder zu einer leeren DNS Zone (mit Ausnahme der NS Einträge) zurückkehren, um eine spätere manuelle Konfiguration festzulegen.
+
+Klicken Sie im Tab `DNS-Zone `{.action} auf `Meine DNS-Zone zurücksetzen`{.action} und folgen Sie den angezeigten Schritten.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Sie haben die Wahl zwischen:
+
+- `Ja, ich möchte meine DNS-Zone mit den Mindesteinträgen zurücksetzen`. Mit dieser Option können Sie Ihre Domain und Ihren E-Mail-Dienst auf:
+    - einer Ihrer Web-Cloud-Dienste in Ihrem OVHcloud Kundencenter verfügbar.
+    - den OVHcloud Weiterleitungsdienst, verfügbar über den Tab `Weiterleitung`{.action} Ihrer Domain in den Bereichen `Domainnamen`{.action} und `E-Mails`{.action}.
+    - die personalisierte `Funktion`. Geben Sie den `A` und/oder `MX` Eintrag Ihrer Wahl an.
+- `Nein, aber ich möchte meine DNS-Zone zurücksetzen`. Ihre DNS-Zone wird dann leer sein, mit Ausnahme der NS-Einträge, die automatisch an die OVHcloud DNS-Server Ihrer DNS-Zone angehängt werden.
+
+> [!primary]
+>
+> Bevor Sie Ihre DNS Zone zurücksetzen, überprüfen Sie bitte, dass Ihre Domain nicht mit Dienstleistungen verbunden ist, die bereits in Gebrauch sind, wie zum Beispiel Websites oder E-Mail-Adressen.
+
 ### Propagationszeit
 
 Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.

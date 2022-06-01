@@ -166,6 +166,29 @@ Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de
 
 ![Zona DNS](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Restaurar la zona DNS
+
+Restaurar la zona DNS le permite:
+- volver a una configuración mínima con los registros de OVHcloud por defecto.
+- volver a una zona DNS vacía (a excepción de los campos NS) para establecer una configuración manual posterior.
+
+En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los pasos que se indican.
+
+![Zona DNS](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puede elegir entre:
+
+- `Sí, quiero restaurar la zona DNS con los registros mínimos`. Esta opción le permite dirigir su dominio y su servicio de correo hacia:
+    - cualquiera de sus servicios Web Cloud disponibles en el área de cliente de OVHcloud.
+    - el servicio de redirección de OVHcloud, disponible en la pestaña `Redirección`{.action} del dominio en las secciones `Dominios`{.action} y `Correo electrónico`{.action}.
+    - la función `Personalizada`. Introduzca el registro `A` y/o `MX` que desee.
+- `No, pero quiero restaurar la zona DNS`. Su zona DNS estará vacía, a excepción de los registros NS que se asociarán automáticamente a los servidores DNS de OVHcloud de su zona DNS.
+
+> [!primary]
+>
+> Antes de restaurar la zona DNS, asegúrese de que el dominio no está asociado a servicios en uso, como un sitio web o direcciones de correo.
+>
+
 ### El tiempo de propagación
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.

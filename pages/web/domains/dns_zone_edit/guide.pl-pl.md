@@ -167,6 +167,29 @@ Możesz usunąć kilka rekordów za jednym razem, zaznaczając je w lewej częś
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Zresetuj strefę DNS
+
+Zresetuj strefę DNS:
+- powrócić do konfiguracji minimalnej z domyślnymi wpisami OVHcloud.
+- powrócić do pustej strefy DNS (z wyjątkiem pól NS), aby zdefiniować kolejną konfigurację ręczną.
+
+W zakładce `Strefa DNS`{.action} kliknij `Zresetuj strefę DNS`{.action}, a następnie postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlają.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Możesz wybrać:
+
+- `Tak, chcę zresetować strefę DNS i aktywować minimalne wpisy` . Ta opcja pozwala na przekierowanie domeny i usługi e-mail na:
+    - jedną z usług WWW Cloud dostępnych w Panelu klienta OVHcloud.
+    - usługę przekierowania OVHcloud, dostępną w zakładce `Przekierowanie`{.action} Twojej domeny w sekcjach `Domeny`{.action} i `E-maile`{.action}.
+    - funkcja `Spersonalizowana`. Wpisz pole `A` i/lub `MX`.
+- `Nie, ale chcę zresetować strefę DNS`. Strefa DNS zostanie wówczas pusta, z wyjątkiem wpisów NS, które zostaną automatycznie przypisane do serwerów DNS OVHcloud w strefie DNS.
+
+> [!primary]
+>
+> Przed zresetowaniem strefy DNS upewnij się, że Twoja domena nie jest przypisana do usług w trakcie korzystania, takich jak strona WWW lub konta e-mail.
+>
+
 ### Czas propagacji
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
