@@ -121,9 +121,9 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 ## Weiterführende Informationen
 
-[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html)
+[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/accountschutz_node.html)
 
-[Passwort-Check des Bayerischen Staatsministeriums für Digitales](https://www.stmd.bayern.de/service/passwort-check/)
+[HPI Identity Leak Checker](https://sec.hpi.de/ilc/?lang=de)
 
 [Der Passwort-Manager Keepass](https://keepass.info/)
 
