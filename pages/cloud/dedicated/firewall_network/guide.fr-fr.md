@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Firewall Network'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 23/12/2021**
+**Dernière mise à jour le 31/05/2022**
 
 ## Objectif
 
@@ -107,6 +107,25 @@ Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (1
 Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet reçu.
 
 Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port 25/TCP ne sera attrapé qu'à la dernière règle (19) qui le bloquera, car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
+
+> [!warning]
+> Comme indiqué, la configuration ci-dessus n’est qu’un exemple et doit être utilisée comme référence si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est absolument nécessaire de configurer les règles de votre firewall en fonction des services hébergés sur votre serveur. Une mauvaise configuration de vos règles de firewall peut entrainer le blocage du trafic légitime et l'inaccessibilité des services du serveur.
+>
+
+### Mitigation
+
+Il existe trois modes de mitigation : automatique (détection permanente), permanente ou forcée.
+
+**Mitigation automatique (détection permanente)** : Avec ce mode, le trafic ne passe par le système de mitigation que s'il est détecté comme "inhabituel" par rapport au trafic normal habituellement reçu par le serveur.
+
+**Mitigation permanente** : En activant la mitigation permanente, vous appliquez un premier niveau de filtrage constant à travers notre Shield hardware.<br>
+Tout le trafic à tout moment passe par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
+Veuillez noter que le Firewall Network ne doit pas être créé/activé pour activer la mitigation permanente sur votre IP.
+
+Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation: permanent mode`{.action}.
+
+**Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.<br>
+Ce mode ne peut être désactivé une fois activé.
 
 > [!warning]
 >

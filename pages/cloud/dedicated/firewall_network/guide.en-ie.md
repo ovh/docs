@@ -4,7 +4,7 @@ slug: firewall-network
 section: Network Management
 ---
 
-**Last updated 23rd December 2021**
+**Last updated 31st May 2022**
 
 ## Objective
 
@@ -113,6 +113,25 @@ To make sure that only the SSH (22), HTTP (80), HTTPS (443), and UDP (on port 10
 The rules are sorted chronologically from 0 (the first rule read) to 19 (the last). The chain stops being scanned as soon as a rule is applied to the packet.
 
 For example, a packet for TCP port 80 will be captured by rule 2 and the rules that come after will not be tested. A packet for TCP port 25 will only be captured at the last rule (19) which will block it, because OVHcloud does not authorise communication on port 25 in the previous rules.
+
+> [!warning]
+> As stated, the configuration above is just an example and should only be used as reference if the rules do not apply to services hosted on your server. It is absolutely necessary to configure the rules in your firewall according to the services hosted on your server. Improper configuration of your firewall rules can cause legitimate traffic to be blocked and server services to be inaccessible. 
+> 
+
+### Mitigation
+
+There are three mitigation modes: automatic, permanent or forced.
+
+**Automatic mitigation**: With this mode, the traffic goes through the mitigation system only if it is detected as "unusual" compared to the normal traffic usually received by the server. 
+
+**Permanent mitigation**: By activating permanent mitigation, you apply a constant first level of filtering through our Shield hardware.<br>
+All traffic at all times gets through the mitigation system before reaching the server. We recommend this mode for services under frequent attacks.<br>
+Please note that the Network firewall must not be created/enabled to activate permanent mitigation on your IP.
+
+To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+
+**Forced mitigation**: This mode is automatically activated once an attack is detected on the server. In order to protect our infrastructure, it will be activated throughout the attack until it is completely mitigated.<br> 
+This mode cannot be deactivated once it is enabled.
 
 > [!warning]
 >
