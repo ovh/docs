@@ -165,7 +165,7 @@ Pode eliminar várias entradas de uma só vez, selecionando-as a partir da parte
 
 Reinicializar a zona DNS permite-lhe:
 
-- ou voltar a uma configuração mínima com as entradas OVHcloud predefinidas.
+- voltar a uma configuração mínima com as entradas OVHcloud predefinidas.
 - voltar a uma zona DNS vazia (com exceção dos campos NS), para definir uma configuração manual posterior.
 
 No separador `Zona DNS`{.action}, clique em `Reiniciar zona DNS`{.action} e siga os passos que aparecem.
