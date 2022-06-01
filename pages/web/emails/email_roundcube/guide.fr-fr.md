@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 05
 ---
 
-**Dernière mise à jour le 31/05/2021**
+**Dernière mise à jour le 31/05/2022**
 
 ## Objectif
 
@@ -31,8 +31,8 @@ Vous serez alors redirigé vers l'interface RoundCube.
 
 ![hosting](images/roundcube01.png){.thumbnail}
 
-> [!Warning]
->
+> [!warning]
+> 
 > Si vous êtes redirigé sur une interface **O**utlook **W**eb **A**ccess (OWA), cela signifie que vous êtes sur la dernière version de l'offre MX Plan. Pour plus d'information sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/).
 >
 > Pour vous familiariser avec l'interface **OWA**, consultez notre guide  [Consulter son compte e-mail depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
