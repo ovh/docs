@@ -163,6 +163,27 @@ Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Réinitialiser sa zone DNS
+
+Réinitialiser votre zone DNS permet de supprimer l'intégralité des champs DNS ou de les remplacer par les entrées minimales OVHcloud.
+
+Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Réinitialiser ma zone DNS`{.action} puis suivez les étapes qui s'affichent.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Vous avez le choix entre :
+
+- `Oui, je veux réinitialiser ma zone DNS avec les entrées minimales.`, cette option vous permettra de diriger votre nom de domaine et votre service e-mail vers:
+    - l'un de vos services WebCloud disponibles dans votre espace client.
+    - le service de redirection OVHcloud. Accessible via l'onglet `Redirection`{.action} de votre nom de domaine dans les sections `Noms de domaine`{.action} et `Emails`{.action}.
+    - la fonction `Personnalisé`. Saisissez le champ `A` et/ou `MX` de votre choix.
+- `Non, mais je veux réinitialiser ma zone DNS.`, votre zone DNS sera alors vide à l'exception des entrées NS qui seront automatiquement attachées aux serveurs DNS OVHcloud de votre zone DNS.
+
+> [!primary]
+>
+> Avant de réinitialiser votre zone DNS, assurez-vous que votre nom de domaine n'est pas attaché à des services en cour d'utilisation, tels qu'un site web ou des adresses e-mail.
+>
+
 ### Le temps de propagation
 
 Une fois la zone DNS de votre nom de domaine modifiée, un temps de propagation de 24 heures maximum est nécessaire afin que les modifications soient effectives.
