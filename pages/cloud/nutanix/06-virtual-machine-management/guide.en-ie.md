@@ -280,7 +280,7 @@ The name of the new node will appear in front of **Host** if the migration is co
 
 [Presentation of a Nutanix cluster](https://docs.ovh.com/ie/en/nutanix/nutanix-hci/)
 
-[Importing images into Nutanix](https://docs.ovh.com/gb/ie/nutanix/image-import/)
+[Importing images into Nutanix](https://docs.ovh.com/ie/en/nutanix/image-import/)
 
 [Nutanix documentation on AHV](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v5_20:AHV-Admin-Guide-v5_20)
 

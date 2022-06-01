@@ -52,7 +52,7 @@ As an example, this video shows how to easily scale the number of instances whil
 - [Preparing an environment for using the OpenStack API](https://docs.ovh.com/pl/public-cloud/przygotowanie_srodowiska_dla_api_openstack/)
 - [Setting OpenStack environment variables](https://docs.ovh.com/pl/public-cloud/zmienne-srodowiskowe-openstack/)
 - [Your OVHcloud API identifiers and authorisation key](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/)
-- [An SSH key](../public-cloud-first-steps/)
+- [An SSH key](https://docs.ovh.com/pl/public-cloud/public-cloud-pierwsze-kroki/)
 - [Terraform OpenStack provider](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs){.external}
 - [The OVHcloud Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest/docs){.external}
 

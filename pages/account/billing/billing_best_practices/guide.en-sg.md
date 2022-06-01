@@ -98,7 +98,7 @@ Then, use [this form](https://www.ovh.co.uk/personal-data-protection/exercise-yo
 
 ## Go further <a name="gofurther"></a>
 
-[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/gb/sg/customer/scams-fraud-phishing/)
+[Beware of scams – recognising fraudulent email and phishing](https://docs.ovh.com/sg/en/customer/scams-fraud-phishing/)
 
 [Managing OVHcloud bills](https://docs.ovh.com/sg/en/billing/manage-ovh-bills/)
 
