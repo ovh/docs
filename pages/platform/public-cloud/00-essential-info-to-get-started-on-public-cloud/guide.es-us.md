@@ -137,7 +137,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |[Uso de una llave SSH](https://docs.ovh.com/us/es/public-cloud/usar-una-clave-ssh-en-la-interfaz-de-public-cloud/)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
 |[Configuración de la red privada](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
 |[Asociar un disco adicional a una instancia](https://docs.ovh.com/us/es/public-cloud/crear_y_configurar_un_disco_adicional_en_una_instancia/)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
-|[Conectarse a Horizon](https://docs.ovh.com/us/es/public-cloud/crear_un_acceso_a_horizon/)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
+|[Conectarse a Horizon](https://docs.ovh.com/us/es/public-cloud/horizon/)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|
 |[Crear un cluster Kubernetes](https://docs.ovh.com/gb/en/kubernetes/creating-a-cluster/) (EN)|Esta guía le ayudará paso a paso a la creación de su primer cluster Kubernetes.|
 |[Configurar una IP failover](https://docs.ovh.com/us/es/public-cloud/configurer-une-ip-failover/)|Las IP failover permiten cambiar el tráfico de una instancia a otra. Esta guía explica cómo configurar esta opción.|
 |[Instalación de la CLI OpenStack](https://docs.ovh.com/us/es/public-cloud/preparar_el_entorno_para_utilizar_la_api_de_openstack/)|OpenStack también puede utilizarse en línea de comandos. Así es como instalar las herramientas.|

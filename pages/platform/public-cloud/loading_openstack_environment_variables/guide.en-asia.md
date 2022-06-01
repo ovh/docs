@@ -45,7 +45,7 @@ admin@vpsxxxxxx:~$ source openrc.sh
 Please enter your OpenStack Password:
 ```
 
-As outlined in our guide on [Accessing the Horizon interface](../creation-and-deletion-of-openstack-user/), the password is only visible once — when it is created.
+As outlined in [this guide](../creation-and-deletion-of-openstack-user/), the password is only visible once — when it is created.
 
 If you forget your password, you will need to reset it.
 
