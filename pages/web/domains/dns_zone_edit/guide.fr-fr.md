@@ -165,7 +165,9 @@ Vous pouvez supprimer plusieurs entrées en une seule fois en les cochant depuis
 
 #### Réinitialiser la zone DNS
 
-Réinitialiser votre zone DNS permet de revenir à une configuration minimale avec les entrées OVHcloud par défaut, ou une zone DNS vide (à l'exception des champs NS), vous permettant une configuration manuelle ultérieure.
+Réinitialiser votre zone DNS vous permet de :
+- soit revenir à une configuration minimale avec les entrées OVHcloud par défaut.
+- soit revenir à une zone DNS vide (à l'exception des champs NS), pour définir une configuration manuelle ultérieure.
 
 Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Réinitialiser ma zone DNS`{.action} puis suivez les étapes qui s'affichent.
 
