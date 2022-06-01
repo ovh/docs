@@ -135,7 +135,7 @@ From this point onwards, this guide will only cover configuration using our conf
 > In order to modify your OVHcloud DNS zone successfully, make sure to gather all the required information first. If you are making this change at the request of a service provider, the service provider must provide you with a list of the items to change.
 >
 
-#### Add a new DNS record.
+#### Add a new DNS record
 
 To add a new DNS record, in your domain name’s `DNS zone`{.action} tab, click the `Add an entry`{.action} button to the right of the table. Select the DNS record type, then follow the steps.
 
@@ -149,13 +149,13 @@ Please check in advance whether this record already exists and might point to a 
 >
 >You must then target *mydomain.ovh.* and not *mydomain.ovh* without **.** at the end.
 
-#### Modify an existing DNS record. 
+#### Modify an existing DNS record
 
 To modify a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Modify record`{.action}, and follow the steps that open.
 
 ![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-#### Delete a DNS record.
+#### Delete a DNS record
 
 To delete a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Delete record`{.action}, and follow the steps that open.
 
@@ -166,10 +166,11 @@ You can delete several entries at once by ticking them on the left-hand side of 
 #### Reset the DNS zone
 
 Resetting your DNS zone allows you to:
-- or go back to a minimum configuration with OVHcloud entries by default.
-- or return to an empty DNS zone (with the exception of the NS fields), to define a subsequent manual configuration.
 
-In the `DNS zone`{.action}  tab, click `Reset my DNS zone`{.action} zone, then follow the steps that open.
+- Go back to a minimum configuration with the default OVHcloud records.
+- Return to an empty DNS zone (with the exception of the NS entries), to define a subsequent manual configuration.
+
+In the `DNS zone`{.action} tab, click on `Reset my DNS zone`{.action}, then follow the steps in the window that appears.
 
 ![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
 
