@@ -92,7 +92,9 @@ You can choose the number of CPUs or GPUs you want.
 
 #### Attach a Git container or repository
 
-1. Attach the object container (from the Object Storage) that contains your **dataset** for image classification.
+<ol start="1">
+   <li>Attach the object container (from the Object Storage) that contains your <strong>dataset</strong> for image classification.</li>
+</ol>
 
 - Mount directory: `/workspace/data`
 - Permission: `read only` (RO)
