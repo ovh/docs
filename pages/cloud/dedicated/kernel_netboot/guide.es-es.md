@@ -1,6 +1,6 @@
 ---
-title: Iniciar su servidor en un kernel OVH
-excerpt: Esta guía explica cómo iniciar el servidor en red en un kernel OVH.
+title: Iniciar su servidor en un kernel OVHcloud
+excerpt: Esta guía explica cómo iniciar el servidor en red en un kernel OVHcloud
 slug: kernel-netboot
 section: Uso avanzado
 ---
@@ -19,8 +19,8 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}
-- Acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}
+- Acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 
 ## Procedimiento
 
@@ -31,7 +31,7 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 > Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
 >
 
-Para iniciar el servidor en el kernel de red, primero debe de conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Para iniciar el servidor en el kernel de red, primero debe de conectarse al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}.
 
@@ -47,7 +47,7 @@ Seleccione el kernel disponible e escriba el Root device (partición donde está
 
 Para determinar el dispositivo root en su servidor, vaya al fichero /etc/fstab en su servidor.
 
-En SSH
+En SSH:
 
 ```sh
 cat /etc/fstab

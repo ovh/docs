@@ -37,7 +37,7 @@ Go to the `Bare Metal Cloud`{.action} section and select your server from `Dedic
 
 Look for “Boot” in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
-![Netboot](images/netboot_2022.png)
+![Netboot](images/netboot_2022.png){.thumbnail}
 
 Select `Boot in network mode`{.action}.
 
