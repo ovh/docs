@@ -9,7 +9,7 @@ section: 'Redes & IP'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 23/12/2021**
+**Última atualização: 31/05/2022**
 
 ## Sumário
 
@@ -115,9 +115,29 @@ As regras são ordenadas sequencialmente de 0 (primeira regra lida) a 19 (últim
 Por exemplo, um pacote destinado à porta 80/TCP é identificado pela regra 2 e esta é executada. As regras seguintes já não serão acionadas. Um pacote destinado à porta 25/TCP só poderá ser identificado pela última regra (19), e será bloqueado. Nas regras precedentes, a OVHcloud não autoriza qualquer comunicação na porta 25.
 
 > [!warning]
+> Como indicado, a configuração acima é apenas um exemplo e deve ser utilizada como referência se as regras não se aplicam aos serviços alojados no seu servidor. É absolutamente necessário configurar as regras da sua firewall em função dos serviços alojados no seu servidor. Uma má configuração das suas regras de firewall pode levar ao bloqueio do tráfego legítimo e à inacessibilidade dos serviços do servidor.
+>
+
+### Mitigação
+
+Existem três modos de mitigação: automático, permanente ou forçado.
+
+**Mitigação automático**: Com este modo, o tráfego só passa pelo sistema de mitigação se for detetado como "pouco habitual" em relação ao tráfego normal geralmente recebido pelo servidor.
+
+**Mitigação permanente**: Ao ativar a mitigação permanente, aplica um primeiro nível de filtragem constante através do nosso Shield hardware.<br>
+Todo o tráfego passa de forma permanente pelo sistema de mitigação antes de atingir o servidor. Recomendamos este modo para os serviços que são alvo de ataques frequentes.<br>
+Tenha em conta que a Firewall Network não deve ser criada/ativada para ativar a mitigação permanente no seu IP.
+
+Para o ativar, clique no menu `Bare Metal Cloud`{.action} e abra o `IP`{.action}. De seguida, clique nas `...`{.action} à direita do IPv4 em causa e selecione `Mitigação: modo permanente`{.action}.
+
+**Mitigação forçada**: Este modo é ativado automaticamente assim que um ataque é detetado no servidor. De forma a proteger a nossa infraestrutura, a proteção será ativada durante todo o período do ataque, até que seja totalmente mitigada.<br>
+Uma vez ativado, este modo não pode ser desativado.
+
+> [!warning]
 >
 > Em caso de ativação da mitigação Anti-DDoS, as regras da Firewall Network serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
 > 
+> Tenha em conta que a atenuação anti-DDoS não pode ser desativada.
 
 ### Configurar a firewall Armor (Firewall Game)
 

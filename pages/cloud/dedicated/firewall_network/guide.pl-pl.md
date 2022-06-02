@@ -9,7 +9,7 @@ section: 'Sieć & IP'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 23-12-2021**
+**Ostatnia aktualizacja z dnia 31-05-2022**
 
 ## Wprowadzenie
 
@@ -115,9 +115,29 @@ Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do
 Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVHcloud nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
 
 > [!warning]
+> Jak już wspomniano, powyższa konfiguracja jest tylko przykładem i powinna zostać użyta jako punkt odniesienia, jeśli reguły nie mają zastosowania do usług hostowanych na Twoim serwerze. Konieczne jest skonfigurowanie reguł firewalla w zależności od usług hostowanych na Twoim serwerze. Nieprawidłowa konfiguracja reguł firewall może spowodować zablokowanie prawidłowego ruchu i niedostępność usług serwera.
+>
+
+### Mitygacja ataków - Filtrowanie ataku DDoS - OVH Anty-DDoS
+
+Istnieją trzy tryby filtrowania: automatyczne, stałe lub wymuszone.
+
+**Automatyczne filtrowanie**: Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
+
+**Stałe filtrowanie**: Aktywując stałe filtrowanie, stosujesz pierwszy poziom stałego filtrowania przez sprzęt Shield.<br>
+Cały ruch przechodzi przez system mitygacji zanim dotrze do serwera. Zalecamy ten tryb w przypadku usług będących przedmiotem częstych ataków.<br>
+Pamiętaj, że Firewall Network nie powinien zostać utworzony/aktywowany, aby włączyć stałe filtrowanie dla Twojego IP.
+
+Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
+
+**Wymuszone filtrowanie**: Tryb ten jest włączany automatycznie po wykryciu ataku na serwer. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż zostanie całkowicie mitygowana.<br>
+Po włączeniu tego trybu nie można wyłączyć.
+
+> [!warning]
 >
 > W chwili gdy włącza się ochrona Anty-DDoS, Twoje reguły zdefiniowane w usłudze Network Firewall zostaną uaktywnione, nawet jeśli je wyłączyłeś. W przypadku dezaktywacji firewalla, pamiętaj o usunięciu reguł.
 > 
+> Pamiętaj, że tłumienie anty-DDoS nie może zostać wyłączone.
 
 ### Konfiguracja zapory Armor (Firewall Game)
 

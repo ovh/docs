@@ -9,7 +9,7 @@ section: 'Netzwerk & IP'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 23.12.2021**
+**Letzte Aktualisierung am 31.05.2022**
 
 ## Ziel
 
@@ -121,9 +121,29 @@ Die Regeln sind chronologisch geordnet von 0 (erste angewandte Regel) bis 19 (zu
 Im Beispiel wird ein Paket für den TCP-Port 80 von der Regel 2 angenommen, die nachfolgenden Regeln werden also nicht getestet. Ein Paket, das für TCP-Port 25 bestimmt ist, wird nur von der letzten Regel (Nummer 19) abgefangen. Die Regel 19 blockiert daraufhin das Paket, da OVHcloud in den vorherigen Regeln keine Kommunikation auf Port 25 zulässt.
 
 > [!warning]
+> Wie bereits erwähnt, ist die vorstehende Konfiguration nur ein Beispiel und sollte als Referenz verwendet werden, wenn die Regeln nicht für die auf Ihrem Server gehosteten Dienste gelten. Es ist absolut notwendig, die Regeln Ihrer Firewall entsprechend den auf Ihrem Server gehosteten Diensten zu konfigurieren. Eine fehlerhafte Konfiguration Ihrer Firewall-Regeln kann dazu führen, dass der rechtmäßige Traffic blockiert wird und die Server-Dienste nicht erreichbar sind.
+>
+
+### Schutz
+
+Es gibt drei Schutzmodi: automatisch, dauerhaft oder erzwungen
+
+**Automatisch Schutz**: Bei diesem Modus läuft der Traffic nur über das Abwehrsystem, wenn er im Vergleich zum normalen Traffic, den der Server normalerweise empfängt, als "ungewöhnlicherkannt" wird.
+
+**Permanenter Schutz**: Wenn Sie den permanenter Schutz aktivieren, wenden Sie über unser Hardware-Shield ein erstes konstantes Filterniveau an.<br>
+Der gesamte Traffic läuft permanent über das Schutzsystem, bevor er den Server erreicht. Wir empfehlen diesen Modus für Dienste mit häufigen Angriffen.<br>
+Bitte beachten Sie, dass Firewall Network nicht erstellt/aktiviert werden darf, um den permanenter Schutz für Ihre IP zu aktivieren.
+
+Klicken Sie auf das Menü `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}. Klicken Sie dann auf die `...`{.action}. rechts neben der betreffenden IPv4 und wählen Sie `Schutz: permanenter Modus`{.action}.
+
+**Erzwungene Schutz**: Dieser Modus wird automatisch aktiviert, sobald ein Angriff auf den Server erkannt wurde. Zum Schutz unserer Infrastruktur wird der Schutz während des gesamten Angriffs aktiviert, bis er vollständig abgeschwächt ist.<br>
+Nach der Aktivierung kann dieser Modus nicht deaktiviert werden.
+
+> [!warning]
 >
 > Wenn Sie die DDoS-Schutz-Funktion aktivieren, werden automatisch auch Ihre Firewall Network Regeln aktiviert, auch wenn Sie die Firewall deaktiviert haben. Um Firewall Network vollständig zu deaktivieren, denken Sie also bitte daran, Ihre Regeln zu löschen.
 > 
+> Bitte beachten Sie, dass die DDoS-Abschwächung nicht deaktiviert werden kann.
 
 ### Armor Firewall konfigurieren (Game Firewall)
 

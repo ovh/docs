@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 23/12/2021**
+**Última actualización: 31/05/2022**
 
 ## Objetivo
 
@@ -116,9 +116,29 @@ Las reglas se ordenan cronológicamente de 0 (la primera regla leída) a 19 (la 
 Por ejemplo, para un paquete destinado al puerto 80/TCP, se aplicará la regla 2 y ya no se leerán las siguientes. Para un paquete destinado al puerto 25/TCP, no se aplicará ninguna regla hasta la última (la 19), que lo bloqueará, ya que las anteriores no autorizan ninguna comunicación en el puerto 25.
 
 > [!warning]
+> Como ya se ha indicado, la configuración anterior es solo un ejemplo y debe utilizarse como referencia si las reglas no se aplican a los servicios alojados en el servidor. Es absolutamente necesario configurar las reglas de su firewall en función de los servicios alojados en su servidor. Una mala configuración de sus reglas de firewall puede provocar el bloqueo del tráfico legítimo y la inaccesibilidad de los servicios del servidor.
 >
-> Si se activa la mitigación anti-DDoS, las reglas del firewall de red se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
+
+### Mitigación
+
+Existen tres modos de mitigación: automática, permanente o forzada.
+
+**Mitigación automática**: Con este modo, el tráfico pasa por el sistema de mitigación únicamente si se detecta que es "inusual" en relación con el tráfico normal recibido por el servidor.
+
+**Mitigación permanente**: Activando la mitigación permanente, se aplica un primer nivel de filtrado constante a través de nuestro Shield hardware.<br>
+Todo el tráfico pasa permanentemente por el sistema de mitigación antes de llegar al servidor. Recomendamos este modo para los servicios que sean objeto de ataques frecuentes.<br>
+Tenga en cuenta que no debe crear ni activar el firewall de red para activar la mitigación permanente en su IP.
+
+Para activarlo, haga clic en el menú `Bare Metal Cloud`{.action} y abra `IP`{.action}. A continuación, haga clic en los `...`{.action} a la derecha de la IPv4 correspondiente y seleccione `Mitigación: modo permanente`{.action}.
+
+**Mitigación forzada**: Este modo se activa automáticamente cuando se detecta un ataque en el servidor. Para proteger nuestra infraestructura, la protección se activará durante todo el ataque, hasta que sea totalmente mitigado.<br>
+Este modo no se puede desactivar una vez activado.
+
+> [!warning]
+>
+> Si se activa la mitigación anti-DDoS, las reglas del Firewall Network se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
 > 
+> Tenga en cuenta que la mitigación anti-DDoS no puede desactivarse.
 
 ### Configurar el firewall de red Armor (Firewall Game)
 
