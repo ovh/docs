@@ -58,7 +58,7 @@ Vous obtiendrez une réponse du type :
 ovhtelecom.fr has address 198.27.92.21
 ```
 
-Dans les deux cas, nous voyons que le nom de domaine redirige bien vers notre adresse IP 198.27.92.21.<br>
+Dans les deux cas, nous voyons que le nom de domaine pointe bien vers notre adresse IP 198.27.92.21.<br>
 
 Si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine. Si OVHcloud est votre bureau d'enregistrement, consultez le guide « [Editer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) ».
 
