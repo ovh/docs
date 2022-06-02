@@ -10,7 +10,7 @@ order: 1
 > This service is currently available in restricted access mode. Please contact your OVHcloud sales representative for more information.
 >
 
-**Last updated 1st June 2022**
+**Last updated 2nd June 2022**
 
 ## Objective
 
@@ -89,17 +89,21 @@ Below is a list of current campuses:
     - vin1
 - HIL (Hillsboro)
     - hil1
+- SYD (Sydney 1)
+    - syd1
+- SY2 (Sydney 2)
+    - syd2
 
 The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
 
-|**Services are registered in the following zones**:|**EU/CA**||
+|**Services are registered in the following zones**:|**EU/CA**|**EU/CA**|
 |---------------------------------------|---------|-|
 |**Customer IPs' RIR is:**|ARIN|RIPE|
-|**Available campuses** |BHS<br>SGP<br>SYD1<br>SYD2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2||RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
-To prove that you are the owner of the range, you will be requested to enter a special token which we will provide, into the public whois object corresponding to your range. This will be done via the web portal of the RIR managing your IPs. This token will be provided at order (it may also be found directly in the OVHcloud Control Panel, in the IP section).
+To prove that you are the owner of the range, you will be requested to enter a special token which we will provide, into the public whois object corresponding to your range. This will be done via the web portal of the RIR managing your IPs. This token will be provided at order.
 
 - For RIPE, edit the « **descr** » field of the « **inetnum** » object of the IP.
 - For ARIN, edit the « **Public Comments** » field of the « **Network** » object.
