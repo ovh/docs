@@ -7,7 +7,7 @@ space_name: XDSL
 section: Configuration de mon offre
 ---
 
-**Dernière mise à jour le 28/07/2021**
+**Dernière mise à jour le 02/06/2022**
 
 ## Objectif
 
@@ -21,8 +21,8 @@ Par exemple, dans le cadre d'utilisation d'un serveur mail, si l'e-mail est envo
 - Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP de votre accès xDSL ou fibre.
 - Un accès xDSL ou fibre OVHcloud.
 
-Il est également possible de configurer les Reverse DNS des blocs IP fournis en option sur nos accès.
-<br>Retrouvez plus d'informations sur notre guide « [Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/) ».
+Il est également possible de configurer les Reverse DNS des blocs IP fournis en option sur nos accès.<br>
+Retrouvez plus d'informations sur notre guide « [Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/) ».
 
 ## En pratique
 
@@ -34,23 +34,33 @@ Nous allons faire le test avec ovhtelecom.fr.
 
 Ouvrez l'invite de commande et saisissez :
 
-    nslookup ovhtelecom.fr
+```console
+nslookup ovhtelecom.fr
+```
 
 Vous obtiendrez une réponse du type :
 
-    Name : www.ovhtelecom.fr Address : 198.27.92.21
+```console
+Name : www.ovhtelecom.fr Address : 198.27.92.21
+```
 
 #### Sous MAC et Linux
 
 Ouvrez le terminal et saisissez :
 
-    host ovhtelecom.fr
+```console
+host ovhtelecom.fr
+```
 
 Vous obtiendrez une réponse du type :
 
-    ovhtelecom.fr has address 198.27.92.21
+```console
+ovhtelecom.fr has address 198.27.92.21
+```
 
-Dans les deux cas, nous voyons que le nom de domaine redirige bien vers notre adresse IP 198.27.92.21 (si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine).
+Dans les deux cas, nous voyons que le nom de domaine pointe bien vers notre adresse IP 198.27.92.21.<br>
+
+Si ce n'est pas le cas, nous vous invitons à vous rapprocher de votre bureau d'enregistrement afin de configurer votre nom de domaine. Si OVHcloud est votre bureau d'enregistrement, consultez le guide « [Editer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) ».
 
 Nous pouvons maintenant passer à l'étape suivante qui est la configuration de notre Reverse DNS de l'adresse 198.27.92.21.
 
@@ -68,7 +78,7 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IP publi
 - Cliquez sur l'icône engrenage à côté de votre IP.
 - Cliquez sur le `+`{.action} afin d'ajouter le reverse DNS.
 
-![](images/XDSL-ReverseDNS.png){.thumbnail}
+![reverse DNS](images/XDSL-ReverseDNS.png){.thumbnail}
 
 - Saisissez votre IP publique et le sous domaine souhaité puis validez.
 - Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
@@ -83,21 +93,29 @@ Nous allons utiliser les mêmes commandes que pour la vérification de la config
 
 Ouvrez l'invite de commande et saisissez :
 
-    nslookup 198.27.92.21
+```console
+nslookup 198.27.92.21
+```
 
 Vous obtiendrez une réponse du type :
 
-    Name : www.ovhtelecom.fr Address : 198.27.92.21
+```console
+Name : www.ovhtelecom.fr Address : 198.27.92.21
+```
 
 #### Sous MAC et Linux
 
 Ouvrez le terminal et saisissez :
 
-    host 198.27.92.21
+```console
+host 198.27.92.21
+```
 
 Vous obtiendrez une réponse du type :
 
-    21.92.27.198.in-addr.arpa domain name pointer www.ovhtelecom.fr.
+```console
+21.92.27.198.in-addr.arpa domain name pointer www.ovhtelecom.fr.
+```
 
 Dans les deux cas, nous voyons que l'adresse IP redirige bien vers le nom de domaine [ovhtelecom.fr](http://ovhtelecom.fr){.external-link}.
 
