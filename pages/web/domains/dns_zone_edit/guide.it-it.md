@@ -10,7 +10,7 @@ legacy_guide_number: g1604
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/02/2021**
+**Ultimo aggiornamento: 01/06/2022**
 
 ## Obiettivo
 
@@ -166,6 +166,30 @@ Per eliminare un record DNS, sempre dalla scheda `Zona DNS`{.action} del tuo Spa
 Per eliminare più record in una sola volta, seleziona la casella sinistra della tabella e clicca sul pulsante `Elimina`{.action}.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Reinizializza la zona DNS
+
+Reinizializza la tua zona DNS ti permette di:
+
+- tornare di default a una configurazione minima
+- tornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva
+
+Nella scheda `Zona DNS`{.action}, clicca su `Reinizializza la zona DNS`{.action} e segui gli step.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puoi scegliere tra:
+
+- `Sì, voglio reinizializzare la zona DNS con il numero minimo di record`. Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
+    - uno dei tuoi servizi Web Cloud disponibili nello Spazio Cliente OVHcloud.
+    - il servizio di reindirizzamento OVHcloud, accessibile dalla scheda `Reindirizzamento`{.action} del tuo dominio nelle sezioni `Domini`{.action} ed `Email`{.action}.
+    - la funzione `Personalizzata`. Inserisci il record `A` e/o `MX` che preferisci.
+- `No, ma voglio reinizializzare la mia zona DNS`. La tua zona DNS sarà vuota, ad eccezione dei record NS che saranno automaticamente associati ai server DNS OVHcloud della tua zona DNS.
+
+> [!primary]
+>
+> Prima di reinizializzare la tua zona DNS, assicurati che il tuo dominio non sia associato a servizi in fase di utilizzo, come siti Web o indirizzi email.
+>
 
 ### Tempo di propagazione
 

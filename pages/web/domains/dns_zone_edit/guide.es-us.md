@@ -9,7 +9,7 @@ section: 'DNS (servidor y zona)'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 16/02/2021**
+**Última actualización: 01/06/2022**
 
 ## Objetivo
 
@@ -165,6 +165,30 @@ Para eliminar un registro DNS, abra la pestaña `Zona DNS`{.action} del área de
 Puede borrar varias entradas de una vez marcándolas desde la parte izquierda de la tabla y haciendo clic en el botón `Eliminar`{.action}.
 
 ![Zona DNS](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Restaurar la zona DNS
+
+Restaurar la zona DNS le permite:
+
+- volver a una configuración mínima con los registros de OVHcloud por defecto.
+- volver a una zona DNS vacía (a excepción de los campos NS) para establecer una configuración manual posterior.
+
+En la pestaña `Zona DNS`{.action}, haga clic en `Restaurar mi zona DNS`{.action} y siga los pasos que se indican.
+
+![Zona DNS](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puede elegir entre:
+
+- `Sí, quiero restaurar la zona DNS con los registros mínimos`. Esta opción le permite dirigir su dominio y su servicio de correo hacia:
+    - cualquiera de sus servicios Web Cloud disponibles en el área de cliente de OVHcloud.
+    - el servicio de redirección de OVHcloud, disponible en la pestaña `Redirección`{.action} del dominio en las secciones `Dominios`{.action} y `Correo electrónico`{.action}.
+    - la función `Personalizada`. Introduzca el registro `A` y/o `MX` que desee.
+- `No, pero quiero restaurar la zona DNS`. Su zona DNS estará vacía, a excepción de los registros NS que se asociarán automáticamente a los servidores DNS de OVHcloud de su zona DNS.
+
+> [!primary]
+>
+> Antes de restaurar la zona DNS, asegúrese de que el dominio no está asociado a servicios en uso, como un sitio web o direcciones de correo.
+>
 
 ### El tiempo de propagación
 

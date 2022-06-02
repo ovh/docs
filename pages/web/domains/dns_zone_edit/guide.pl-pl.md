@@ -10,7 +10,7 @@ order: 3
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-02-2021**
+**Ostatnia aktualizacja z dnia 01-06-2022**
 
 ## Wprowadzenie
 
@@ -166,6 +166,30 @@ Aby usunąć rekord DNS, kliknij ikonkę `Strefa DNS`{.action} w Panelu klienta 
 Możesz usunąć kilka rekordów za jednym razem, zaznaczając je w lewej części tabeli i klikając przycisk `Usuń`{.action}.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Zresetuj strefę DNS
+
+Zresetuj strefę DNS:
+
+- powrócić do konfiguracji minimalnej z domyślnymi wpisami OVHcloud.
+- powrócić do pustej strefy DNS (z wyjątkiem pól NS), aby zdefiniować kolejną konfigurację ręczną.
+
+W zakładce `Strefa DNS`{.action} kliknij `Zresetuj strefę DNS`{.action}, a następnie postępuj zgodnie z kolejnymi instrukcjami, które się wyświetlają.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Możesz wybrać:
+
+- `Tak, chcę zresetować strefę DNS i aktywować minimalne wpisy` . Ta opcja pozwala na przekierowanie domeny i usługi e-mail na:
+    - jedną z usług WWW Cloud dostępnych w Panelu klienta OVHcloud.
+    - usługę przekierowania OVHcloud, dostępną w zakładce `Przekierowanie`{.action} Twojej domeny w sekcjach `Domeny`{.action} i `E-maile`{.action}.
+    - funkcja `Spersonalizowana`. Wpisz pole `A` i/lub `MX`.
+- `Nie, ale chcę zresetować strefę DNS`. Strefa DNS zostanie wówczas pusta, z wyjątkiem wpisów NS, które zostaną automatycznie przypisane do serwerów DNS OVHcloud w strefie DNS.
+
+> [!primary]
+>
+> Przed zresetowaniem strefy DNS upewnij się, że Twoja domena nie jest przypisana do usług w trakcie korzystania, takich jak strona WWW lub konta e-mail.
+>
 
 ### Czas propagacji
 
