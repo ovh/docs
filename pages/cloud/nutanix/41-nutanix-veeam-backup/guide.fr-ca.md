@@ -26,16 +26,16 @@ Veeam Backup est un logiciel de sauvegarde disponible pour Nutanix.
 ## Prérequis
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté sur le cluster via **Prism Central**. 
-- **Veeam Backup & Replication** installé sur une machine virtuelle de votre cluster Nutanix via cette procédure : [Installer Veeam Backup & Replication](https://docs.ovh.com/fr/storage/veeam-backup-replication/).
+- **Veeam Backup & Replication** installé sur une machine virtuelle de votre cluster Nutanix via cette procédure : [Installer Veeam Backup & Replication](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/).
 - Connaître l'adresse IP publique utilisée par **Veeam Backup** pour accéder à Internet.
 - Disposer de 4 Go de mémoire vive, 60 Go de stockage et 4 vCPU pour l'ajout d'une machine virtuelle supplémentaire lors de la configuration des extensions pour **Veeam Backup & Replication**.
-- Posséder un stockage distant hors du cluster, de type [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
+- Posséder un stockage distant hors du cluster, de type [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/).
 
 ## En pratique
 
-Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix, avec un dépôt distant de ce cluster chez OVHcloud grâce à la solution [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr/storage-solutions/enterprise-file-storage/).
+Nous allons personnaliser **Veeam Backup & Replication** pour l'utilisation sur un cluster Nutanix, avec un dépôt distant de ce cluster chez OVHcloud grâce à la solution [Enterprise File Storage OVHcloud](https://www.ovhcloud.com/fr-ca/storage-solutions/enterprise-file-storage/).
 
 ### Ajouter un utilisateur dans Prism Element pour Veeam Backup
 
@@ -269,7 +269,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 
 ### Création du volume Enterprise File Storage via l'espace client d'OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Depuis l'onglet `Bare Metal Cloud`{.action} rendez-vous dans `Storage et Backup`{.action}. Sélectionnez `Enterprise File Storage`{.action} puis le service qui servira pour la sauvegarde **Veeam Backup**.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Depuis l'onglet `Bare Metal Cloud`{.action} rendez-vous dans `Storage et Backup`{.action}. Sélectionnez `Enterprise File Storage`{.action} puis le service qui servira pour la sauvegarde **Veeam Backup**.
 
 ![Create Enterprise Storage Volume 01](images/04-create-enterprise-storage-volume01.png){.thumbnail}
 
@@ -469,6 +469,6 @@ Un aperçu de l'état de la restauration se lance, il faut patienter quelques te
 
 [Documentation VEEAM sur l'installation de VEEAM Backup pour Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
 
-[Les solutions de stockage OVHcloud](https://docs.ovh.com/fr/storage/)
+[Les solutions de stockage OVHcloud](https://docs.ovh.com/ca/fr/storage/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

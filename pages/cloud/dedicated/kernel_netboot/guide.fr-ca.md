@@ -1,44 +1,37 @@
 ---
-title: Demarrer son serveur sur un noyau OVH
+title: Démarrer son serveur sur un noyau OVHcloud
 slug: kernel-netboot
-excerpt: Retrouvez ici les Étapes a suivre pour demarrer votre serveur sur un noyau OVH depuis le reseau.
+excerpt: Retrouvez ici les étapes a suivre pour démarrer votre serveur sur un noyau OVHcloud depuis le réseau.
 section: Divers
 ---
 
 **Dernière mise à jour le 25/02/2022**
 
+## Objectif
+
+Le Netboot est un service proposé gratuitement par OVHcloud et qui permet de démarrer le serveur dédié OVHcloud sur un kernel déjà compilé. Une fois configuré de cette façon, votre serveur charge automatiquement le noyau depuis le réseau. Vous n'avez rien d'autre à configurer. Cette méthode vous permet également de mettre à jour très simplement votre noyau car OVHcloud compile la dernière version du noyau dès sa disponibilité et la met à disposition sur le Netboot.
+
 ## Prérequis
-
-Le Netboot est un service proposé gratuitement par OVHcloud et qui permet de démarrer le serveur dédié que vous louez chez OVHcloud sur un kernel déjà compilé. Une fois configuré de cette façon, votre serveur charge automatiquement le noyau depuis le réseau, vous n'avez rien d'autre à configurer. Cette méthode vous permet également de mettre à jour très simplement votre noyau car OVHcloud compile la dernière version du noyau dès sa disponibilité et la met à disposition sur le Netboot.
-
-Pour pouvoir modifier le netboot, il faut :
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/).
 - Avoir accès à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
+## En pratique
 
-## Procedure
-
-Pour démarrer votre serveur sur le Netboot, il vous faut configurer cette fonctionnalité depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-
-
-### Booter en mode Network
-
+### Démarrer votre serveur à partir du mode Network
 
 > [!primary]
 >
-> Cette partie est déstinée aux serveurs sous Linux. Pour Windows, FreeBSD, et les distributions de Virtualisation, seule la sélection en mode Disque Dur ou les modes Rescue sont possibles.
-> 
+> Cette partie est destinée aux serveurs fonctionnant sous Linux. Pour Windows, FreeBSD et les distributions de virtualisation, seuls les modes de boot sur le disque dur ou en mode rescue sont possibles.
+>
 
-Pour démarrer votre serveur sur un noyau réseau, connecter à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
-
-Rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans `Serveurs dédiés`{.action}.
+Connectez-vous à votre votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) et rendez-vous dans la section `Bare Metal Cloud`{.action} puis sélectionnez votre serveur dans `Serveurs dédiés`{.action}.
 
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}. 
 
 ![Netboot](images/netboot_2022.png){.thumbnail}
 
-Sélectionnez `Booter en mode Network`{.action}.
+Sélectionnez `Booter en mode network`{.action}.
 
 ![Netboot](images/netboot_005.png){.thumbnail}
 
@@ -48,7 +41,16 @@ Pour déterminer le Root Device de votre serveur, consultez le fichier /etc/fsta
 
 En SSH :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">cat /etc/fstab</span> <span class="output"># <file system> <mount point> <type> <options> <dump> <pass></span> <span class="output">/dev/sda1 / ext3 errors=remount-ro 0 1</span> <span class="output">/dev/sda2 /home ext3 defaults,grpquota,usrquota 1 2</span> <span class="output">/dev/sda3 swap swap defaults 0 0</span> <span class="blank">&nbsp;</span> <span class="output">proc /proc proc defaults 0 0</span> <span class="output">sysfs /sys sysfs defaults 0 0</span> <span class="output">shm /dev/shm tmpfs nodev,nosuid,noexec 0 0</span> </pre></div>
+```sh
+cat /etc/fstab
+
+/dev/sda1 / ext3 errors=remount-ro 0 1
+/dev/sda2 /home ext3 defaults,grpquota,usrquota 1 2
+/dev/sda3 swap swap defaults 0 0
+  proc /proc proc defaults 0 0
+sysfs /sys sysfs defaults 0 0
+shm /dev/shm tmpfs nodev,nosuid,noexec 0 0
+```
 
 Dans notre exemple, le Root Device sera /dev/sda1.
 
@@ -58,6 +60,6 @@ Une fois la modification terminée, cliquez sur `...`{.action} à droite de « S
 
 ![Netboot](images/netboot_004.png){.thumbnail}
 
-## Allez plus loin
+## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/.>
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>

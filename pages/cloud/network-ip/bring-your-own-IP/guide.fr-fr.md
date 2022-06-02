@@ -10,7 +10,7 @@ order: 1
 > Ce service est disponible en accès restreint pour le moment. Veuillez contacter votre commercial OVHcloud pour plus d'informations.
 >
 
-**Dernière mise à jour le 01/06/2022**
+**Dernière mise à jour le 02/06/2022**
 
 ## Objectif
 
@@ -89,13 +89,17 @@ Vous trouverez ci-dessous une liste des campus actuels :
     - vin1
 - HIL (Hillsboro)
     - hil1
+- SYD (Sydney 1)
+    - syd1
+- SY2 (Sydney 2)
+    - syd2
 
 La liste des campus disponibles dépendra de votre situation géographique et du RIR de l'IP. Vous trouverez ci-dessous la liste de tous les campus IP sur lesquels nous prévoyons de l'offre BYOIP. Cependant, il est possible que tous les campus ne soient pas pris en charge dès le lancement :
 
-|**Les services sont enregistrés dans les zones suivantes** :|**EU/CA**||
+|**Les services sont enregistrés dans les zones suivantes** :|**EU/CA**|**EU/CA**|
 |---|---|---|
 |**Le RIR des adresses IP du client est :**|ARIN|RIPE|
-|**Campus disponibles :** |BHS<br>SGP<br>SYD1<br>SYD2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Campus disponibles :** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 
@@ -110,7 +114,7 @@ Il est nécessaire que le token apparaisse dans le champ de description (voir ci
 ### Prouver que vous êtes propriétaire du numéro AS (requis uniquement si vous fournissez un numéro AS) <a name="proveownershipoftheasnumber"></a>
 
 Afin de prouver que vous êtes le propriétaire du numéro AS, il vous sera demandé de réutiliser le même *token* précédemment utilisé pour prouver la propriété de la plage d'adresses IP, et de l'insérer dans l'objet WHOIS public correspondant au numéro AS.<br>
-Cela se fera via le portail web du RIR gérant votre numéro AS. Ce token sera fourni lors de la commande (vous pouvez aussi le récupérer directement dans l'espace client OVHcloud, dans la section IP).
+Cela se fera via le portail web du RIR gérant votre numéro AS. Ce token sera fourni lors de la commande.
 
 - Pour RIPE, éditez le champ « **descr** » de l'objet « **aut-num** » du numéro AS.
 - Pour ARIN, éditez le champ « **Public Comments** » de l'objet « **ASN** ».
