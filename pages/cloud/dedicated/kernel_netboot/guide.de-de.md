@@ -1,7 +1,7 @@
 ---
-title: Seinen Server auf einem OVHcloud Kernel starten
+title: Dedicated Server auf einem OVHcloud Kernel starten
 slug: kernel-netboot
-excerpt: Hier finden Sie die nächsten Schritte, um Ihren Server über das Netzwerk auf einem OVHcloud Kernel zu starten
+excerpt: Erfahren Sie hier, wie Sie Ihren Server über das Netzwerk auf einem OVHcloud Kernel starten
 section: Fortgeschrittene Nutzung
 ---
 
@@ -9,29 +9,31 @@ section: Fortgeschrittene Nutzung
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Stand 25.02.2022**
+**Letzte Aktualisierung am 25.02.2022**
 
 ## Ziel
 
-Netboot ist ein von OVHcloud kostenlos angebotener Dienst, mit dem der dedizierte Server von OVHcloud auf einem bereits kompilierten Kernel gestartet werden kann. Sobald Ihr Server so konfiguriert ist, lädt er den Kernel automatisch über das Netzwerk. Sie müssen nichts anderes konfigurieren. Diese Methode erlaubt es Ihnen auch, Ihren Kernel ganz einfach zu aktualisieren, da OVHcloud die neueste Kernversion nach dessen Verfügbarkeit kompiliert und auf dem Netboot zur Verfügung stellt.
+Netboot ist ein von OVHcloud kostenlos angebotener Dienst, mit dem dedizierte Server von OVHcloud auf einem bereits kompilierten Kernel gestartet werden kann. Sobald Ihr Server derart konfiguriert ist, lädt er den Kernel automatisch über das Netzwerk. Sie müssen nichts weiter konfigurieren.
+
+Diese Methode erlaubt es auch, Ihren Kernel ganz einfach zu aktualisieren, da OVHcloud die neueste Kernelversion bei Verfügbarkeit kompiliert und auf dem Netboot zur Verfügung stellt.
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/).
-- Sie haben [Zugriff auf das OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-### Ihren Server vom Network Modus aus starten
+### Einen Server im Network Modus starten
 
 > [!primary]
 >
-> Dieser Teil ist für Linux-Server bestimmt. Für Windows, FreeBSD und Virtualisierungsdistributionen sind nur Boot-Modus auf der Festplatte oder im Rescue-Modus möglich.
+> Dieses Feature ist für Linux-Server bestimmt. Für Windows, FreeBSD und Virtualisierungsdistributionen sind nur Disk-Boot oder Rescue-Modus möglich.
 >
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). und gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server unter `Dedicated Server`{.action} aus.
 
-Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action} und dann auf `Bearbeiten`{.action}. 
+Suchen Sie "Boot" im Bereich **Allgemeine Informationen**, klicken Sie auf `...`{.action} und dann auf `Bearbeiten`{.action}. 
 
 ![Netboot](images/netboot_2022.png){.thumbnail}
 
@@ -39,11 +41,11 @@ Wählen Sie `Im Netzwerk-Modus booten`{.action}.
 
 ![Netboot](images/netboot_005.png){.thumbnail}
 
-Wählen Sie den verfügbaren Kernel (Kernel) und geben Sie dann die Root Device (Partition, in der sich die Wurzelpartition Ihres Servers befindet) ein.
+Wählen Sie einen der verfügbaren Kernel und geben Sie dann Ihre "Root Device" (Partition, in der sich die Root-Partition Ihres Servers befindet) ein.
 
-Um den Root Device Ihres Servers zu bestimmen, lesen Sie die Datei /etc/fstab Ihres Servers.
+Um die "Root Device" Ihres Servers zu bestimmen, lesen Sie die Datei /etc/fstab aus.
 
-SSH:
+Verbinden Sie sich über SSH und geben Sie den folgenden Befehl ein:
 
 ```sh
 cat /etc/fstab
@@ -56,11 +58,11 @@ sysfs /sys sysfs defaults 0 0
 shm /dev/shm tmpfs nodev,nosuid,noexec 0 0
 ```
 
-In unserem Beispiel wird Root Device /dev/sda1 sein.
+In diesem Beispiel ist /dev/sda1 "Root Device".
 
 Klicken Sie auf `Weiter`{.action} und `Bestätigen`{.action}.
 
-Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts neben "Status" im Bereich mit dem Namen **Dienststatus**. Klicken Sie auf `Neu starten`{.action}, damit der Netboot-Modus aktiviert wird.
+Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action} rechts neben "Status" im Bereich **Dienststatus**. Klicken Sie auf `Neu starten`{.action}, damit der Netboot-Modus aktiviert wird.
 
 ![Netboot](images/netboot_004.png){.thumbnail}
 
