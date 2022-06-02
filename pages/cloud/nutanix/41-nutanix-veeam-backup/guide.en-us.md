@@ -26,16 +26,16 @@ Veeam Backup is a backup software available for Nutanix.
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account.
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 - You must be connected to the cluster via **Prism Central**. 
-- **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](https://docs.ovh.com/gb/en/storage/veeam-backup-replication/).
+- **Veeam Backup & Replication** installed on a virtual machine in your Nutanix cluster via this procedure: [Setting up Veeam Backup & Replication](https://docs.ovh.com/us/en/storage/veeam-backup-replication/).
 - Knowing the public IP address used by **Veeam Backup** to access the internet.
 - You must have 4 GB of RAM, 60 GB of storage and 4 vCPUs to add an additional virtual machine when configuring extensions for **Veeam Backup & Replication**.
-- You must have remote storage outside of the cluster, such as [OVHcloud Enterprise File Storage](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/).
+- You must have remote storage outside of the cluster, such as [OVHcloud Enterprise File Storage](https://www.ovhcloud.com/en/storage-solutions/enterprise-file-storage/).
 
 ## Instructions
 
-We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Enterprise File Storage solution](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/).
+We will customise **Veeam Backup & Replication** for use on a Nutanix cluster, with a remote repository for this cluster at OVHcloud, using the [OVHcloud Enterprise File Storage solution](https://www.ovhcloud.com/en/storage-solutions/enterprise-file-storage/).
 
 ### Add a user in Prism Element for Veeam Backup
 
@@ -269,7 +269,7 @@ proxy_user@NUTANIX-PROXY~$sudo /etc/init.d/networking restart
 
 ### Creating the Enterprise File Storage volume via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Bare Metal Cloud`{.action} tab, go to `Storage and Backup`{.action}. Select `Enterprise File Storage`{.action}, then the service that will be used for the **Veeam Backup**.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). In the `Bare Metal Cloud`{.action} tab, go to `Storage and Backup`{.action}. Select `Enterprise File Storage`{.action}, then the service that will be used for the **Veeam Backup**.
 
 ![Create Enterprise Storage Volume 01](images/04-create-enterprise-storage-volume01.png){.thumbnail}
 
@@ -469,6 +469,6 @@ A preview of the status of the restoration is launched, it takes some time depen
 
 [VEEAM documentation on installing VEEAM Backup for Nutanix AHV](https://helpcenter.veeam.com/docs/van/userguide/installing.html?ver=30)
 
-[OVHcloud storage solutions](https://docs.ovh.com/gb/en/storage/)
+[OVHcloud storage solutions](https://docs.ovh.com/us/en/storage/)
 
 Join our community of users on <https://community.ovh.com/en/>.
