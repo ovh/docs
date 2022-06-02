@@ -130,8 +130,7 @@ Pamiętaj, że Firewall Network nie powinien zostać utworzony/aktywowany, aby w
 
 Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
 
-**Wymuszone filtrowanie**: Tryb ten jest włączany automatycznie po wykryciu ataku na serwer. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż zostanie całkowicie mitygowana.<br>
-Po włączeniu tego trybu nie można wyłączyć.
+**Wymuszone filtrowanie**: Tryb ten jest włączany automatycznie po wykryciu ataku na serwer. Po włączeniu tego trybu nie można wyłączyć. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż do całkowitego zniszczenia infrastruktury.
 
 > [!warning]
 >

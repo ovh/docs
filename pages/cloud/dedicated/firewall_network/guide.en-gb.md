@@ -124,8 +124,7 @@ Please note that the Network firewall must not be created/enabled to activate pe
 
 To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
 
-**Forced mitigation**: This mode is automatically activated once an attack is detected on the server. In order to protect our infrastructure, it will be activated throughout the attack until it is completely mitigated.<br> 
-This mode cannot be deactivated once it is enabled.
+**Forced mitigation**: This mode is automatically activated once an attack is detected on the server. Once enabled, this mode cannot be disabled. In order to protect our infrastructure, it will be activated throughout the attack until it is completely mitigated.
 
 > [!warning]
 >

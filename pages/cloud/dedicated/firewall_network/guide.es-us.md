@@ -131,8 +131,7 @@ Tenga en cuenta que no debe crear ni activar el firewall de red para activar la 
 
 Para activarlo, haga clic en el menú `Bare Metal Cloud`{.action} y abra `IP`{.action}. A continuación, haga clic en los `...`{.action} a la derecha de la IPv4 correspondiente y seleccione `Mitigación: modo permanente`{.action}.
 
-**Mitigación forzada**: Este modo se activa automáticamente cuando se detecta un ataque en el servidor. Para proteger nuestra infraestructura, la protección se activará durante todo el ataque, hasta que sea totalmente mitigado.<br>
-Este modo no se puede desactivar una vez activado.
+**Mitigación forzada**: Este modo se activa automáticamente cuando se detecta un ataque en el servidor. Este modo no se puede desactivar una vez activado. Para proteger nuestra infraestructura, la protección se activará durante todo el ataque, hasta que sea totalmente mitigada.
 
 > [!warning]
 >

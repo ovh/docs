@@ -136,8 +136,7 @@ Bitte beachten Sie, dass Firewall Network nicht erstellt/aktiviert werden darf, 
 
 Klicken Sie auf das Menü `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}. Klicken Sie dann auf die `...`{.action}. rechts neben der betreffenden IPv4 und wählen Sie `Schutz: permanenter Modus`{.action}.
 
-**Erzwungene Schutz**: Dieser Modus wird automatisch aktiviert, sobald ein Angriff auf den Server erkannt wurde. Zum Schutz unserer Infrastruktur wird der Schutz während des gesamten Angriffs aktiviert, bis er vollständig abgeschwächt ist.<br>
-Nach der Aktivierung kann dieser Modus nicht deaktiviert werden.
+**Erzwungene Schutz**: Dieser Modus wird automatisch aktiviert, sobald ein Angriff auf den Server erkannt wurde. Nach der Aktivierung kann dieser Modus nicht deaktiviert werden. Zum Schutz unserer Infrastruktur wird der Schutz während des gesamten Angriffs aktiviert, bis er vollständig abgeschwächt ist.
 
 > [!warning]
 >
