@@ -5,7 +5,7 @@ excerpt: 'Ative a opção SGX no seu servidor Infraestrutura ou Advance e instal
 section: 'Uso avançado'
 ---
 
-**Última atualização: 18/10/2021**
+**Última atualização: 18/10/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -22,6 +22,15 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 - Acesso administrativo (raiz) ao servidor via SSH
 - Acesso à [API OVHcloud](https://api.ovh.com/console/){.external}
 - Ubuntu 18.04 ou semelhante instalado no servidor
+
+> [!warning]
+>
+> Entre a gama Advance, apenas os servidores abaixo, equipados com um CPU Intel, são compatíveis com a tecnologia Intel SGX:
+>
+> - Advance-1
+> - Advance-2
+> - Advance-6
+> - Advance-APAC
 
 ## Instruções
 

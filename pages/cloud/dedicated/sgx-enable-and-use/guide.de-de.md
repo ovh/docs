@@ -5,7 +5,7 @@ excerpt: 'SGX auf Ihrem Dedicated Server aktivieren und den Linux-SGX-Software-S
 section: 'Fortgeschrittene Nutzung'
 ---
 
-**Letzte Aktualisierung am 18.10.2021**
+**Letzte Aktualisierung am 03.06.2022**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -20,6 +20,15 @@ Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlau
 - Sie haben einen Dedicated Server aus der [Infrastruktur-Reihe](https://www.ovhcloud.com/de/bare-metal/infra/) oder der [Advance Reihe](https://www.ovhcloud.com/de/bare-metal/advance/) mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) / die [OVHcloud API](https://api.ovh.com/console/)
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH
+
+> [!warning]
+>
+> Von der Advance Reihe sind nur die folgenden Server mit Intel CPU mit der Intel SGX Technologie kompatibel:
+>
+> - Advance-1
+> - Advance-2
+> - Advance-6
+> - Advance-APAC
 
 ## In der praktischen Anwendung
 

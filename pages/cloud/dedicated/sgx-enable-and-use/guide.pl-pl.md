@@ -5,7 +5,7 @@ excerpt: 'Włącz opcję SGX na serwerze Infrastructure lub Advance i zainstaluj
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja: 18-10-2021**
+**Ostatnia aktualizacja: 03-06-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -22,6 +22,15 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 - Dostęp administracyjny (uprawnienia użytkownika root) do serwera za pośrednictwem protokołu SSH
 - Dostęp do [interfejsów API OVHcloud](https://api.ovh.com/console/){.external}
 - Zainstalowana na serwerze dystrybucja Ubuntu 18.04 lub podobna
+
+> [!warning]
+>
+> Spośród gamy Advance tylko poniższe serwery wyposażone w procesor Intel są kompatybilne z technologią Intel SGX:
+>
+> - Advance-1
+> - Advance-2
+> - Advance-6
+> - Advance-APAC
 
 ## W praktyce
 
