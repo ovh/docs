@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 12
 ---
 
-**Last updated 6th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
