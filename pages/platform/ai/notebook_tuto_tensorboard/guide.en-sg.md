@@ -52,11 +52,11 @@ The example notebook is based on the Fashion MNIST dataset.
 
 Then access the example notebook via the following path:
 
-`ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_tutorial_tensorboard.ipynb`
+`ai-training-examples` > `notebooks` > `computer-vision` > `image-classification` > `tensorflow` > `tensorboard` > `notebook_tutorial_tensorboard.ipynb`
 
 The aim of this tutorial is to show how it is possible, thanks to TensorBoard, to see the dynamic display of different metrics.
 
-A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook_tutorial_tensorboard.ipynb).
+A preview of this notebook can be found on [GitHub](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/tensorboard/notebook_tutorial_tensorboard.ipynb).
 
 ### How to use TensorBoard with AI training ?
 
