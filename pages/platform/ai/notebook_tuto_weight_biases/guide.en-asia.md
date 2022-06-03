@@ -84,7 +84,6 @@ The notebook using PyTorch and Weights & Biases is based on YOLOv5 and the COCO 
 
 `ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `weights-and-biases` > `notebook_Weights_and_Biases_yolov5.ipynb`
 
-
 The aim of this tutorial is to show how Weights & Biases can be used with the YOLOv5 real-time object detection framework. In order to achieve this, the YOLOv5 s, m, l and x models performance will be compared on the COCO dataset for the same number of epochs.
 
 ![image](images/loss_train_valid_yolov5_wandb.png){.thumbnail}
