@@ -74,7 +74,7 @@ If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 
 ![image](images/notebook-attach-data.png){.thumbnail}
 
-Once the repository has been cloned, find the YOLOv5 notebook by following this path: `examples` > `notebooks` > `object-detection` > `miniconda` > `notebook_object_detection_yolov5.ipynb`.
+Once the repository has been cloned, find the YOLOv5 notebook by following this path: `ai-training-examples` > `notebooks` > `object-detection` > `miniconda` > `notebook_object_detection_yolov5.ipynb`.
 
 <ol start="8">
   <li><code>Attach public ssh keys only if you want to</code></li>
