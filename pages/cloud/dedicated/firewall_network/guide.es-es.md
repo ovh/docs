@@ -15,12 +15,12 @@ section: 'Red e IP'
 
 Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Firewall Network. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
-**Esta guía explica cómo configurar el Firewall Network.**
+**Esta guía explica cómo configurar el Network Firewall.**
 
 
 > [!primary]
 >
-> Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovh.es/anti-ddos/>.
+> Para más información sobre la solución anti-DDoS de OVHcloud, consulte la página <https://www.ovhcloud.com/es-es/security/anti-ddos/>.
 > 
 
 ![El VAC en detalle](images/vac-inside.png){.thumbnail}
@@ -28,7 +28,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Tener contratado un servicio de OVHcloud que utilice el Firewall Network ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
+- Tener contratado un servicio de OVHcloud que utilice el Network Firewall ([servidores dedicados](https://www.ovhcloud.com/es-es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es-es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}, etc.).
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -38,11 +38,11 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Procedimiento
 
-### Activar el Firewall Network
+### Activar el Network Firewall 
 
 > [!primary]
 >
-> El Firewall Network protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
+> El Network Firewall protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
 Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
@@ -75,10 +75,10 @@ Es posible añadir hasta **20 reglas por IP**.
 >
 
 
-### Configurar el Firewall Network
+### Configurar el Network Firewall
 
 > [!warning]
-> Tenga en cuenta que el Firewall Network de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
+> Tenga en cuenta que el Network Firewall de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
 > Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](https://docs.ovh.com/es/dedicated/firewall-windows/) y [Configurar el firewall de Linux con iptables](https://docs.ovh.com/es/dedicated/firewall-iptables/).
 >
 
@@ -135,7 +135,7 @@ Para activarlo, haga clic en el menú `Bare Metal Cloud`{.action} y abra `IP`{.a
 
 > [!warning]
 >
-> Si se activa la mitigación anti-DDoS, las reglas del Firewall Network se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
+> Si se activa la mitigación anti-DDoS, las reglas del Network Firewall se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
 > 
 > Tenga en cuenta que la mitigación anti-DDoS no puede desactivarse.
 

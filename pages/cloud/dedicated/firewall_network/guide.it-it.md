@@ -20,7 +20,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 > [!primary]
 >
-> Per maggiori informazioni sul VAC, la nostra tecnologia di protezione dagli attacchi DDoS, consulta questa pagina: <https://www.ovh.it/anti-ddos/>.
+> Per maggiori informazioni sul VAC, la nostra tecnologia di protezione dagli attacchi DDoS, consulta questa pagina: <https://www.ovhcloud.com/it/security/anti-ddos/>.
 > 
 
 ![Il VAC nel dettaglio](images/vac-inside.png){.thumbnail}
@@ -28,7 +28,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 ## Prerequisiti
 
-- Disporre di un servizio OVHcloud compatibile con il Firewall Network ([server dedicati](https://www.ovh.it/server_dedicati/){.external}, [VPS](https://www.ovh.it/vps/){.external}, [istanze Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, [Private Cloud](https://www.ovh.it/private-cloud/){.external}, [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}, ecc...).
+- Disporre di un servizio OVHcloud compatibile con il Firewall Network ([server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]

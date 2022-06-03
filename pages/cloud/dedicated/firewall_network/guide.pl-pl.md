@@ -20,7 +20,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 > [!primary]
 >
-> Więcej informacji o rozwiązaniu DDoS, znajdziesz na stronie: <https://www.ovh.pl/anti-ddos/>.
+> Więcej informacji o rozwiązaniu DDoS, znajdziesz na stronie: <https://www.ovhcloud.com/pl/security/anti-ddos/>.
 > 
 
 ![Szczegóły dotyczące systemu VAC](images/vac-inside.png){.thumbnail}
@@ -28,7 +28,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 
 ## Wymagania początkowe
 
-- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
+- Korzystanie z usługi OVHcloud ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/){.external}, [serwer VPS](https://www.ovhcloud.com/pl/vps/){.external}, [instancje Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}, etc.)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
@@ -110,7 +110,7 @@ Aby pozostawić otwarte tylko porty SSH (22), HTTP (80), HTTPS (443), UDP (na po
 
 ![Przykład konfiguracji.](images/exemple.png){.thumbnail}
 
-Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów.  Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
+Reguły są uporządkowane chronologicznie, od 0 (pierwsza odczytana reguła) do 19 (ostatnia odczytana reguła) i w tym porządku są uruchamiane dla pakietów. Reguły przestają być sprawdzane, w chwili gdy jedna z nich dotyczy odebranego pakietu.
 
 Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez regułę 2, wtedy kolejne reguły nie są już aplikowane.  Pakiet przeznaczony dla portu 25/TCP zostanie przechwycony tylko przy ostatniej regule (19), która zablokuje go, ponieważ OVHcloud nie zezwala na żadną komunikację na porcie 25 w poprzednich regułach.
 

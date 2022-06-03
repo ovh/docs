@@ -15,12 +15,12 @@ section: 'Redes & IP'
 
 Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVHcloud propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Firewall Network. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
 
-**Este manual explica como configurar a Firewall Network.**
+**Este manual explica como configurar a Network Firewall.**
 
 
 > [!primary]
 >
-> Para obter mais informações sobre a nossa solução Anti-DDoS, consulte a página: <https://www.ovh.pt/anti-ddos/>.
+> Para obter mais informações sobre a nossa solução Anti-DDoS, consulte a página: <https://www.ovhcloud.com/pt/security/anti-ddos/>.
 > 
 
 ![ Tudo sobre o sistema VAC](images/vac-inside.png){.thumbnail}
@@ -28,7 +28,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 
 ## Requisitos
 
-- Dispor de um serviço OVHcloud com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
+- Dispor de um serviço OVHcloud com Network Firewall incluída: [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/pt/vps/){.external}, [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}, etc.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]
@@ -38,7 +38,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 
 ## Instruções
 
-### Ativar a Firewall Network
+### Ativar a Network Firewall
 
 > [!primary]
 >
@@ -74,10 +74,10 @@ Pode definir até **20 regras para cada IP**.
 >
 
 
-### Configurar a Firewall Network
+### Configurar a Network Firewall
 
 > [!warning]
-> Tenha em conta que a Firewall Network da OVHcloud não pode ser utilizada para abrir portas num servidor. Para abrir portas num servidor, deve passar pela firewall do sistema operativo instalado no servidor.<br>
+> Tenha em conta que a Network Firewall da OVHcloud não pode ser utilizada para abrir portas num servidor. Para abrir portas num servidor, deve passar pela firewall do sistema operativo instalado no servidor.<br>
 > Para mais informações, consulte os seguintes guias: [Configurar a firewall em Windows](https://docs.ovh.com/pt/dedicated/firewall-windows/) e [Configurar a firewall em Linux com Iptables](https://docs.ovh.com/pt/dedicated/firewall-iptables/).
 >
 
