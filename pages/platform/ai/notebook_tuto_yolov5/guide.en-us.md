@@ -81,7 +81,7 @@ Once the repository has been cloned, find the YOLOv5 notebook by following this 
   <li><code>Check that everything is ok and launch your notebook</code></li>
 </ol>
 
-If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com/asia/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
+If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com/us/en/publiccloud/ai/cli/access-object-storage-data/) you want to attach and the number of GPUs (`<nb-gpus>`) to use on your notebook and use the following command:
 
 ```bash
 ovhai notebook run pytorch jupyterlab \
