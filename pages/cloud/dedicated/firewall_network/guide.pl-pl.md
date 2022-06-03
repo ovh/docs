@@ -76,7 +76,7 @@ Do dyspozycji masz **20 reguł dla każdego adresu IP**.
 ### Konfiguracja zapory Network Firewall 
 
 > [!warning]
-> Firewall Network OVHcloud nie może być używany do otwierania portów na serwerze. Aby otworzyć porty na serwerze, musisz przejść przez firewall systemu operacyjnego zainstalowanego na serwerze<br>
+> Network Firewall OVHcloud nie może być używany do otwierania portów na serwerze. Aby otworzyć porty na serwerze, musisz przejść przez firewall systemu operacyjnego zainstalowanego na serwerze<br>
 > Więcej informacji znajdziesz w przewodnikach: [Konfiguracja firewalla w systemie Windows](https://docs.ovh.com/pl/dedicated/firewall-windows/) i [Konfiguracja firewalla w systemie Linux z systemem Iptables](https://docs.ovh.com/pl/dedicated/firewall-iptables/).
 >
 

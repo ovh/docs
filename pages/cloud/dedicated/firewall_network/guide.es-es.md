@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el firewall de red'
 slug: firewall-de-red
-excerpt: 'Cómo configurar el Firewall Network'
+excerpt: 'Cómo configurar el Network Firewall'
 section: 'Red e IP'
 ---
 
@@ -13,7 +13,7 @@ section: 'Red e IP'
 
 ## Objetivo
 
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Firewall Network. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
+Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
 **Esta guía explica cómo configurar el Network Firewall.**
 

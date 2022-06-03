@@ -1,7 +1,7 @@
 ---
-title: 'Configurare il Firewall Network'
+title: 'Configurare il Network Firewall'
 slug: firewall-network
-excerpt: 'Scopri come configurare un Firewall Network'
+excerpt: 'Scopri come configurare un Network Firewall'
 section: 'Rete e IP'
 ---
 
@@ -13,7 +13,7 @@ section: 'Rete e IP'
 
 ## Obiettivo
 
-Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud propone il Firewall Network, un’opzione configurabile e integrata al sistema **anti-DDoS** (VAC) che permette di limitare l’esposizione di un servizio agli attacchi provenienti dalla rete pubblica.
+Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud propone il Network Firewall, un’opzione configurabile e integrata al sistema **anti-DDoS** (VAC) che permette di limitare l’esposizione di un servizio agli attacchi provenienti dalla rete pubblica.
 
 **Questa guida ti mostra la procedura da seguire per configurare il servizio.**
 
@@ -28,7 +28,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 ## Prerequisiti
 
-- Disporre di un servizio OVHcloud compatibile con il Firewall Network ([server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.).
+- Disporre di un servizio OVHcloud compatibile con il Network Firewall ([server dedicati](https://www.ovhcloud.com/it/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/it/vps/){.external}, [istanze Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}, ecc.).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
@@ -38,16 +38,16 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 
 ## Procedura
 
-### Attiva il Firewall Network
+### Attiva il Network Firewall
 
 > [!primary]
 >
-> Il Firewall Network protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
+> Il Network Firewall protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
 Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Dopo, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
 
-![Attivazione del Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Attivazione del Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 Si apre una nuova finestra per confermare l’operazione:
 
@@ -69,15 +69,15 @@ A questo punto è possibile attivare e configurare il firewall cliccando di nuov
 
 > [!primary]
 >
-> - Di default, la frammentazione UDP è bloccata. Se utilizzi una VPN, ricorda di configurare correttamente il valore della tua Maximum Transmission Unit (MTU) in fase di attivazione del Firewall Network. Su OpenVPN, ad esempio, puoi selezionare `MTU test`{.action}.
-> - Le regole del Firewall Network non vengono applicate all’interno della rete OVHcloud e non hanno quindi alcun impatto sulle connessioni di questa rete.
+> - Di default, la frammentazione UDP è bloccata. Se utilizzi una VPN, ricorda di configurare correttamente il valore della tua Maximum Transmission Unit (MTU) in fase di attivazione del Network Firewall. Su OpenVPN, ad esempio, puoi selezionare `MTU test`{.action}.
+> - Le regole del Network Firewall non vengono applicate all’interno della rete OVHcloud e non hanno quindi alcun impatto sulle connessioni di questa rete.
 >
 
 
-### Configura il Firewall Network
+### Configura il Network Firewall
 
 > [!warning]
-> Ti ricordiamo che il Firewall Network di OVHcloud non può essere utilizzato per aprire porte a un server. Per aprire le porte a un server, devi passare attraverso il firewall del sistema operativo installato sul server.<br>
+> Ti ricordiamo che il Network Firewall di OVHcloud non può essere utilizzato per aprire porte a un server. Per aprire le porte a un server, devi passare attraverso il firewall del sistema operativo installato sul server.<br>
 > Per maggiori informazioni, consulta queste guide: [Configurare il firewall su Windows](https://docs.ovh.com/it/dedicated/firewall-windows/) e [Configurare il firewall su Linux con Iptable](https://docs.ovh.com/it/dedicated/firewall-iptables/).
 >
 
@@ -125,7 +125,7 @@ Esistono tre modalità di mitigazione: automatico, permanente o forzata.
 
 **Mitigazione permanente**: Attiva la mitigazione permanente per applicare un primo livello di filtraggio costante attraverso il nostro Shield hardware.<br>
 Tutto il traffico passa sempre attraverso il sistema di mitigazione prima di raggiungere il server. Consigliamo questa modalità per i servizi oggetto di attacchi frequenti.<br>
-Ti ricordiamo che il Firewall Network non deve essere creato/attivato per attivare la mitigazione permanente sul tuo IP.
+Ti ricordiamo che il Network Firewall non deve essere creato/attivato per attivare la mitigazione permanente sul tuo IP.
 
 Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Poi clicca sui `...`{.action} a destra dell'IPv4 in questione e seleziona `Mitigation: modalità permanente`{.action}.
 
@@ -133,7 +133,7 @@ Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `IP`{.action}.
 
 > [!warning]
 >
-> Se è in corso una mitigazione anti-DDoS, le regole vengono applicate anche se il Firewall Network è stato disabilitato. In caso di disattivazione, quindi, ricordati di eliminare le regole configurate.
+> Se è in corso una mitigazione anti-DDoS, le regole vengono applicate anche se il Network Firewall è stato disabilitato. In caso di disattivazione, quindi, ricordati di eliminare le regole configurate.
 > 
 > Si noti che la mitigazione anti-DDoS non può essere disattivata.
 

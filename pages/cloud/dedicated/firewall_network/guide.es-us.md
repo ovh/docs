@@ -1,7 +1,7 @@
 ---
 title: 'Configurar el firewall de red'
 slug: firewall-de-red
-excerpt: 'Cómo configurar el Firewall Network'
+excerpt: 'Cómo configurar el Network Firewall'
 section: 'Red e IP'
 ---
 
@@ -13,9 +13,9 @@ section: 'Red e IP'
 
 ## Objetivo
 
-Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Firewall Network. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
+Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcloud ofrece un cortafuegos configurable integrado en su solución **anti-DDoS**: el Network Firewall. Se trata de una opción que permite limitar la exposición de los servicios a los ataques procedentes de la red pública.
 
-**Esta guía explica cómo configurar el Firewall Network.**
+**Esta guía explica cómo configurar el Network Firewall.**
 
 
 > [!primary]
@@ -28,7 +28,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Requisitos
 
-- Tener contratado un servicio de OVHcloud que utilice el Firewall Network ([servidores dedicados](https://www.ovhcloud.com/es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/en/bare-metal/ip/){.external}, etc.
+- Tener contratado un servicio de OVHcloud que utilice el Network Firewall ([servidores dedicados](https://www.ovhcloud.com/es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es/vps/){.external}, [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}, [IP Failover](https://www.ovhcloud.com/en/bare-metal/ip/){.external}, etc.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Dedicado`{.action}.
 
 > [!warning]
@@ -38,11 +38,11 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVHcl
 
 ## Procedimiento
 
-### Activar el Firewall Network
+### Activar el Network Firewall
 
 > [!primary]
 >
-> El Firewall Network protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
+> El Network Firewall protege las direcciones IP asociadas a una máquina. Es necesario configurar cada IP de forma independiente; no es posible configurar directamente el servidor.
 > 
 
 Conéctese al área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `IP`{.action}.<br>
@@ -70,15 +70,15 @@ Es posible añadir hasta **20 reglas por IP**.
 
 > [!primary]
 >
-> - La fragmentación UDP está bloqueada (DROP) por defecto. Si utiliza una VPN, al activar el Firewall Network no olvide configurar correctamente su MTU (unidad de transmisión máxima). Por ejemplo, en OpenVPN, puede marcar `MTU test`{.action}.
+> - La fragmentación UDP está bloqueada (DROP) por defecto. Si utiliza una VPN, al activar el Network Firewall no olvide configurar correctamente su MTU (unidad de transmisión máxima). Por ejemplo, en OpenVPN, puede marcar `MTU test`{.action}.
 > - El firewall de red no actúa dentro de la red de OVHcloud, por lo que las reglas creadas no afectan a las conexiones internas.
 >
 
 
-### Configurar el Firewall Network
+### Configurar el Network Firewall
 
 > [!warning]
-> Tenga en cuenta que el Firewall Network de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
+> Tenga en cuenta que el Network Firewall de OVHcloud no puede utilizarse para abrir puertos en un servidor. Para abrir puertos en un servidor, debe utilizar el cortafuegos del sistema operativo instalado en el servidor.<br>
 > Para más información, consulte las siguientes guías: [Configurar el firewall de Windows](https://docs.ovh.com/us/es/dedicated/firewall-windows/) y [Configurar el firewall de Linux con iptables](https://docs.ovh.com/us/es/dedicated/firewall-iptables/).
 >
 
@@ -135,7 +135,7 @@ Para activarlo, haga clic en el menú `Bare Metal Cloud`{.action} y abra `IP`{.a
 
 > [!warning]
 >
-> Si se activa la mitigación anti-DDoS, las reglas del Firewall Network se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
+> Si se activa la mitigación anti-DDoS, las reglas del Network Firewall se activarán aunque lo haya desactivado. Por lo tanto, recuerde eliminar las reglas si desactiva el firewall.
 > 
 > Tenga en cuenta que la mitigación anti-DDoS no puede desactivarse.
 

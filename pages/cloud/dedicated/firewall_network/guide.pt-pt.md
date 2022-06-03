@@ -1,6 +1,6 @@
 ---
-title: 'Configurar a Firewall Network'
-excerpt: 'Saiba como configurar a Firewall Network'
+title: 'Configurar a Network Firewall'
+excerpt: 'Saiba como configurar a Network Firewall'
 slug: firewall-network
 section: 'Redes & IP'
 ---
@@ -13,7 +13,7 @@ section: 'Redes & IP'
 
 ## Sumário
 
-Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVHcloud propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Firewall Network. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
+Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OVHcloud propõe uma firewall com várias opções de configuração integrada na solução **Anti-DDoS**: a Network Firewall. Esta opção permite limitar a exposição dos serviços aos ataques provenientes da rede pública.
 
 **Este manual explica como configurar a Network Firewall.**
 
@@ -42,12 +42,12 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 
 > [!primary]
 >
-> A Firewall Network foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
+> A Network Firewall foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
 Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao menu `Bare Metal Cloud`{.action} e abra na secção `IP`{.action}. Clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
 
-![Ativação da Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Ativação da Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 É-lhe solicitada uma confirmação.
 
@@ -69,8 +69,8 @@ Pode definir até **20 regras para cada IP**.
 
 > [!primary]
 >
-> - A fragmentação UDP está bloqueada por predefinição (DROP). Após a ativação da Firewall Network, e se usar uma VPN, deverá configurar corretamente a maximum transmission unit (MTU). Por exemplo, em OpenVPN, pode selecionar `MTU test`{.action}.
-> - A Firewall Network não produz efeitos dentro da rede OVHcloud. Ou seja, as regras implementadas não irão afetar as ligações dentro da rede OVHcloud.
+> - A fragmentação UDP está bloqueada por predefinição (DROP). Após a ativação da Network Firewall, e se usar uma VPN, deverá configurar corretamente a maximum transmission unit (MTU). Por exemplo, em OpenVPN, pode selecionar `MTU test`{.action}.
+> - A Network Firewall não produz efeitos dentro da rede OVHcloud. Ou seja, as regras implementadas não irão afetar as ligações dentro da rede OVHcloud.
 >
 
 
@@ -126,7 +126,7 @@ Existem três modos de mitigação: automático, permanente ou forçado.
 
 **Mitigação permanente**: Ao ativar a mitigação permanente, aplica um primeiro nível de filtragem constante através do nosso Shield hardware.<br>
 Todo o tráfego passa de forma permanente pelo sistema de mitigação antes de atingir o servidor. Recomendamos este modo para os serviços que são alvo de ataques frequentes.<br>
-Tenha em conta que a Firewall Network não deve ser criada/ativada para ativar a mitigação permanente no seu IP.
+Tenha em conta que a Network Firewall não deve ser criada/ativada para ativar a mitigação permanente no seu IP.
 
 Para o ativar, clique no menu `Bare Metal Cloud`{.action} e abra o `IP`{.action}. De seguida, clique nas `...`{.action} à direita do IPv4 em causa e selecione `Mitigação: modo permanente`{.action}.
 
@@ -134,7 +134,7 @@ Para o ativar, clique no menu `Bare Metal Cloud`{.action} e abra o `IP`{.action}
 
 > [!warning]
 >
-> Em caso de ativação da mitigação Anti-DDoS, as regras da Firewall Network serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
+> Em caso de ativação da mitigação Anti-DDoS, as regras da Network Firewall serão ativadas, mesmo tendo sido desativadas anteriormente. Se optar  pela desativação, não se esqueça de eliminar as regras.
 > 
 > Tenha em conta que a atenuação anti-DDoS não pode ser desativada.
 

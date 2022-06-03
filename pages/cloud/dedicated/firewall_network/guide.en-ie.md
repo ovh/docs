@@ -1,5 +1,5 @@
 ---
-title: Configuring the Firewall Network
+title: Configuring the Network Firewall
 slug: firewall-network
 section: Network Management
 ---
@@ -8,7 +8,7 @@ section: Network Management
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Firewall Network. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Network Firewall. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
 
 **This guide will show you how to configure your Network Firewall.**
 
@@ -23,7 +23,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Requirements
 
-- You must have an OVHcloud service with a Firewall Network ([Dedicated Server](https://www.ovh.ie/dedicated_servers/){.external}, [VPS](https://www.ovh.ie/vps/){.external}, [Public Cloud instance](https://www.ovh.ie/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.ie/private-cloud/){.external},  [Failover IP](https://www.ovh.ie/dedicated_servers/ip_failover.xml){.external}, etc.)
+- You must have an OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovh.ie/dedicated_servers/){.external}, [VPS](https://www.ovh.ie/vps/){.external}, [Public Cloud instance](https://www.ovh.ie/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.ie/private-cloud/){.external},  [Failover IP](https://www.ovh.ie/dedicated_servers/ip_failover.xml){.external}, etc.)
 - You must have access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You must have basic network skills
 
@@ -34,16 +34,16 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ## Instructions
 
-### Enable the Firewall Network
+### Enable the Network Firewall
 
 > [!primary]
 >
-> The Firewall Network protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
+> The Network Firewall protects the IPs that are associated with a machine. You must therefore configure each IP separately; it is not possible to configure the server as a whole.
 > 
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
-![Enabling the Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 - You will then be asked to confirm:
 
@@ -66,12 +66,12 @@ You can set up to **20 rules per IP**.
 
 > [!primary]
 >
-> - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Firewall Network, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
-> - The Firewall Network is not taken into account within the OVHcloud network, so the rules set up do not affect the connections in this internal network.
+> - The UDP fragmentation is blocked (DROP) as a default setting. When you enable the Network Firewall, if you use a VPN, remember to correctly configure your maximum transmission unit (MTU). For example, on OpenVPN, you can tick `MTU test`{.action}.
+> - The Network Firewall is not taken into account within the OVHcloud network, so the rules set up do not affect the connections in this internal network.
 >
 
 
-### Configuring the Firewall Network
+### Configuring the Network Firewall
 
 > [!warning]
 > Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
@@ -134,7 +134,7 @@ To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.actio
 
 > [!warning]
 >
-> If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
+> If anti-DDoS mitigation is enabled, your Network Firewall rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
 > 
 > Please note that the anti-DDoS mitigation cannot be disabled.
 

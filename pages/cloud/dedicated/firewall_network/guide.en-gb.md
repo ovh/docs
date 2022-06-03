@@ -42,7 +42,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Create Firewall`{.action}.
 
-![Enabling the Firewall Network](images/firewall_creation2022.png){.thumbnail}
+![Enabling the Network Firewall](images/firewall_creation2022.png){.thumbnail}
 
 You will then be asked to confirm.
 
@@ -128,7 +128,7 @@ To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.actio
 
 > [!warning]
 >
-> If anti-DDoS mitigation is enabled, your Firewall Network rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
+> If anti-DDoS mitigation is enabled, your Network Firewall rules will be applied, even if you have disabled them. If you wish to disable it, remember to delete your rules.
 > 
 > Please note that the anti-DDoS mitigation cannot be disabled.
 
