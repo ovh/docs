@@ -74,28 +74,13 @@ ovhai notebook run one-for-all jupyterlab \
 
 You can then reach your notebook’s URL once the notebook is running.
 
-### Cloning the GitHub repository
-
-The GitHub repository containing all examples for OVHcloud AI NOTEBOOKS is available [here](https://github.com/ovh/ai-training-examples).
-
-If you have not already added a git repository when you created your notebook with the OVHcloud Control Panel, you have to clone it.
-Inside your notebook, open a new Terminal tab by clicking `File`{.action} > `New`{.action} > `Terminal`{.action}.
-
-![image](images/new-terminal.png){.thumbnail}
-
-Run the following command in the notebook’s terminal to clone the repository:
-
-```bash
-git clone https://github.com/ovh/ai-training-examples.git
-```
-
-Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `tensorflow` > `tuto` > `notebook_marine_sound_classification`.
+Find the notebook by following this path: `ai-training-examples` > `notebooks` > `audio` > `audio-classification` > `notebook-marine-sound-classification.ipynb`.
 
 ### Experimenting classification sound notebook
 
 Once your dataset is ready and uploaded, you are able to train the model!
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/notebook-marine-sound-classification.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb).
 
 ## Feedback
 
