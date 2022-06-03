@@ -11,9 +11,9 @@ section: Tutorial
 
 Ihre elektronischen Daten sind äußerst wichtig: Verlust oder Beschädigung dieser Daten führen schnell zu echten Problemen für Ihr Business. Es besteht immer ein gewisses Risiko. Daher empfehlen wir, mindestens täglich Backups durchzuführen und diese idealerweise auf einer Storage-Lösung zu speichern, die von Ihren Produktionsinfrastrukturen getrennt ist.
 
-OVH bietet Ihnen hierfür eine spezielle [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, die für Ihre Speichervorgänge optimiert und mit mindestens vier Festplatten je Server ausgestattet ist. Sie können diese Server für Backups von bei OVH gehosteten Infrastrukturen verwenden, sowie über das öffentliche Internetnetzwerk Infrastrukturen von Drittanbietern sichern.
+OVHcloud bietet Ihnen hierfür eine spezielle [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, die für Ihre Speichervorgänge optimiert und mit mindestens vier Festplatten je Server ausgestattet ist. Sie können diese Server für Backups von bei OVHcloud gehosteten Infrastrukturen verwenden, sowie über das öffentliche Internetnetzwerk Infrastrukturen von Drittanbietern sichern.
 
-In diesem Tutorial lernen Sie, wie Sie einen OVH Storage Server nach Ihren Anforderungen konfigurieren, eine Ordnerstruktur zum Speichern der Backups erstellen und das Daten-Backup zweier Remote-Server via SCP automatisieren.
+In diesem Tutorial lernen Sie, wie Sie einen OVHcloud Storage Server nach Ihren Anforderungen konfigurieren, eine Ordnerstruktur zum Speichern der Backups erstellen und das Daten-Backup zweier Remote-Server via SCP automatisieren.
 
 
 ## Voraussetzungen
@@ -28,10 +28,10 @@ In diesem Tutorial lernen Sie, wie Sie einen OVH Storage Server nach Ihren Anfor
 
 ### Sie benötigen:
 
-- einen [OVH Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external}
+- einen [OVHcloud Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external}
 - eine Produktionsinfrastruktur ([VPS](https://www.ovhcloud.com/de/vps/){.external}, [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/de/public-cloud/){.external}, ...)
 - eine SSH-Verbindung zwischen dem Storage Server und der Produktionsinfrastruktur
-- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVH vRack](https://www.ovh.de/loesungen/vrack/){.external})
+- empfohlen: ein privates Netzwerk zwischen Ihren Servern ([OVHcloud vRack](https://www.ovh.de/loesungen/vrack/){.external})
 
 
 
@@ -39,9 +39,9 @@ In diesem Tutorial lernen Sie, wie Sie einen OVH Storage Server nach Ihren Anfor
 
 ### Schritt 1: Passenden RAID-Modus auswählen
 
-OVH bietet eine [Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, deren Hardwarekonfigurationen mehrere Festplatten enthalten. In unserem Beispiel verwenden wir ein Software-RAID (oder _SoftRAID_) mit vier Festplatten mit einer Speicherkapazität von jeweils 6 TB.
+OVHcloud bietet eine [Storage Server](https://www.ovhcloud.com/de/bare-metal/storage/){.external} Reihe, deren Hardwarekonfigurationen mehrere Festplatten enthalten. In unserem Beispiel verwenden wir ein Software-RAID (oder _SoftRAID_) mit vier Festplatten mit einer Speicherkapazität von jeweils 6 TB.
 
-Bei OVH können Sie nun die Speicherkonfiguration selbst festlegen und aus RAID 0, 1, 5, 6 und 10 wählen. Jeder dieser Modi hat seine Vor- und Nachteile in Bezug auf Leistung und Fehlertoleranz. So können wir mit vier Festplatten effizient Daten in RAID 5, 6 oder 10 speichern (RAID 0 und 1 sind hier nicht relevant).
+Bei OVHcloud können Sie nun die Speicherkonfiguration selbst festlegen und aus RAID 0, 1, 5, 6 und 10 wählen. Jeder dieser Modi hat seine Vor- und Nachteile in Bezug auf Leistung und Fehlertoleranz. So können wir mit vier Festplatten effizient Daten in RAID 5, 6 oder 10 speichern (RAID 0 und 1 sind hier nicht relevant).
 
 Im Folgenden finden Sie eine kurze Erklärung dieser RAID-Typen.
 
@@ -59,7 +59,7 @@ In unserem Beispiel bleiben so 12 TB nutzbare Speicherkapazität.
 
 #### RAID 10
 
-Dieser Modus ist eine Kombination aus zwei Prozessen. Der erste Prozess besteht darin, die Daten aufzuteilen und auf zwei Festplatten zu speichern („Striping“). Hierdurch wird die Performance erhöht, da Anfragen gleichzeitig an beide Festplatten gesendet werden können. Beim zweiten Prozess werden die Daten im „Mirror“-Modus auf zwei Festplatten dupliziert. So erhalten Sie die Fehlertoleranz bei Ausfall zweier Festplatten in einem Cluster.
+Dieser Modus ist eine Kombination aus zwei Prozessen. Der erste Prozess besteht darin, die Daten aufzuteilen und auf zwei Festplatten zu speichern (“Striping”). Hierdurch wird die Performance erhöht, da Anfragen gleichzeitig an beide Festplatten gesendet werden können. Beim zweiten Prozess werden die Daten im “Mirror”-Modus auf zwei Festplatten dupliziert. So erhalten Sie die Fehlertoleranz bei Ausfall zweier Festplatten in einem Cluster.
 
 In unserem Beispiel bleiben so 12 TB nutzbare Speicherkapazität.
 
@@ -68,7 +68,7 @@ Kein RAID-Typ ist grundsätzlich besser als die anderen. Alle erfüllen bestimmt
 
 ### Schritt 2: Server installieren und konfigurieren
 
-Gehen Sie in Ihr [OVH Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/#ihren-dedizierten-server-installieren-oder-reinstallieren_1){.external}.
+Gehen Sie in Ihr [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und installieren Sie Ihren Server. Wie bereits erwähnt, verwenden wir Debian 9.4. Weitere Informationen finden Sie in unserer Anleitung [Erste Schritte mit einem Dedicated Server](https://docs.ovh.com/de/dedicated/erste-schritte-dedicated-server/#ihren-dedizierten-server-installieren-oder-reinstallieren_1){.external}.
 
 Wenn Sie das Betriebssystem für die Installation ausgewählt haben, setzen Sie einen Haken in dem Feld `Konfiguration der Partitionen anpassen`{.action}.
 
@@ -126,7 +126,7 @@ Der Storage Server kann jetzt Ihre verschiedenen Backups empfangen.
 
 > [!primary]
 > 
-> Wenn Ihre Produktionsinfrastrukturen bei OVH gehostet sind und über unser privates vRack Netzwerk verfügen, passen Sie diese entsprechend an, damit Ihre Backups nicht über das öffentliche Netzwerk (Internet) versendet werden.
+> Wenn Ihre Produktionsinfrastrukturen bei OVHcloud gehostet sind und über unser privates vRack Netzwerk verfügen, passen Sie diese entsprechend an, damit Ihre Backups nicht über das öffentliche Netzwerk (Internet) versendet werden.
 >
 
 Verbinden Sie sich für diesen Schritt via SSH mit Ihren Produktionsservern, die sich wiederum via SCP mit Ihrem Storage Server verbinden. Hierzu müssen alle Ressourcen via SSH miteinander kommunizieren können.
@@ -189,6 +189,6 @@ Die *crontab* verwendet eine bestimmte Syntax, auf die wir hier nicht näher ein
 
 ## Zusammenfassung
 
-Sie haben nun einen OVH Storage Server gemäß Ihren Anforderungen eingerichtet und einen einfachen Plan für Backups der Daten dieses Servers automatisiert. Dies ist ein wichtiger Schritt, um Datenverlust zu vermeiden und Ihr Business zu schützen.
+Sie haben nun einen OVHcloud Storage Server gemäß Ihren Anforderungen eingerichtet und einen einfachen Plan für Backups der Daten dieses Servers automatisiert. Dies ist ein wichtiger Schritt, um Datenverlust zu vermeiden und Ihr Business zu schützen.
 
-Wie bereits in diesem Tutorial erwähnt, gibt es auch andere kostenlose sowie kostenpflichtige Tools, um Ihre Backups weiter zu optimieren. Je nachdem, wie sensibel Ihre Daten sind, empfehlen wir Ihnen außerdem, diese zu verschlüsseln und ausschließlich über private Netzwerke wie das OVH vRack zu übertragen.
+Wie bereits in diesem Tutorial erwähnt, gibt es auch andere kostenlose sowie kostenpflichtige Tools, um Ihre Backups weiter zu optimieren. Je nachdem, wie sensibel Ihre Daten sind, empfehlen wir Ihnen außerdem, diese zu verschlüsseln und ausschließlich über private Netzwerke wie das OVHcloud vRack zu übertragen.

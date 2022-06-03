@@ -6,7 +6,7 @@ section: Horizon
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 24.08.2021**
@@ -20,13 +20,13 @@ Zur Erhöhung der Sicherheit können Filterregeln konfiguriert und verwendet wer
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/).
+- Sie haben Zugriff auf das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/).
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Eine Sicherheitsgruppe erstellen
 
-Greifen Sie auf das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon/) zu. Wählen Sie dann die Region aus, in der Sie eine Sicherheitsgruppe erstellen möchten, indem Sie oben links klicken.
+Greifen Sie auf das [Horizon-Interface](https://docs.ovh.com/de/public-cloud/openstack-user-erstellen-loeschen/) zu. Wählen Sie dann die Region aus, in der Sie eine Sicherheitsgruppe erstellen möchten, indem Sie oben links klicken.
 
 ![Region](images/security-group0.png){.thumbnail}
 

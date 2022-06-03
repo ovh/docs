@@ -39,7 +39,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!warning]
 >
-> The exact procedure for domain transfer may vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovh.com/asia/domains/prices/>.
+> The exact procedure for domain transfer may vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). Depending on your domain name extension, you may have additional requirements. We recommend to first check against the information displayed in the section of the extension concerned, on our website: <https://www.ovhcloud.com/asia/domains/tld/>.
 >
 
 ### Step 1: Check the information associated with the domain
@@ -70,7 +70,7 @@ Please note that OVHcloud is not your current domain name registrar. We are ther
 
 ### Step 3: Request a domain name transfer to OVHcloud
 
-Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovh.com.au/domains/domain_transfer.xml){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovhcloud.com/en-au/domains/domain-transfer/){.external}. Enter your domain name, and follow the order process.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
@@ -78,7 +78,7 @@ When you are asked to provide your transfer code, enter it into the field. If yo
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
-Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovh.com.au/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} provides useful information for an optimised approach.
+Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/). Our guide on [Migrating your website and emails to OVHcloud](../../hosting/migrating-website-to-ovh/){.external} provides useful information for an optimised approach.
 
 > [!warning]
 >
@@ -99,7 +99,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovh.
 
 ![domain](images/Order_summary.png){.thumbnail}
 
-Once finished, you will receive a purchase order. The transfer process will only start after your payment was received. Afterward, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section on the left-hand side. Then select `Ongoing operations`{.action}.
+Once finished, you will receive a purchase order. The transfer process will only start after your payment was received. Afterward, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section . Then select `Ongoing operations`{.action}.
 
 ### Step 4: Complete the first transfer validation step
 
@@ -125,7 +125,7 @@ There are several possible outcomes at this stage, depending on the actions take
 
 If a transfer is cancelled, please ensure that all the parties involved are in agreement about it before trying again. If emails were not received, verify that all email addresses are up-to-date.
 
-The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section on the left-hand side. Then select `Ongoing operations`{.action}.
+The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
 
 ### Step 5: The second transfer validation step
 
@@ -139,13 +139,13 @@ Once the second step has been initiated, the current domain name registrar (whic
 
 If a refusal response is sent by the current registrar, please contact them to find out why the transfer is being prevented.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section on the left-hand side. Then select `Ongoing operations`{.action}.
+The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
 
 ### Step 6: Manage your domain at OVHcloud
 
 Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
 
-To do this, go to `Web Cloud`{.action} click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned.
+To do this, go to `Web Cloud`{.action} click `Domains`{.action}, then click on the domain name concerned.
 
 ## Go further
 

@@ -2,11 +2,11 @@
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
 slug: datenbank-importieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-section: SQL Private
+section: CloudDB
 order: 5
 ---
 
-**Letzte Aktualisierung am 16.09.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -16,19 +16,19 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [SQL Private Webhosting](https://www.ovh.de/hosting/sql-optionen.xml) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) und [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste  [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Datenbank über das Kundencenter wiederherstellen und importieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfügbaren Sicherungen.
 
@@ -38,7 +38,7 @@ Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Die Sich
 
 Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.action} rechts neben dem ausgewählten Backup und dann auf `Sicherung  wiederherstellen`{.action}.
 
-![private-sql](images/private-sql-restore01.png){.thumbnail}
+![clouddb](images/private-sql-restore01.png){.thumbnail}
 
 > [!warning]
 >
@@ -50,7 +50,7 @@ Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.
 
 Klicken Sie auf den Button `...`{.action}. rechts neben der Datenbank und dann auf `Datei importieren`{.action}.
 
-![private-sql](images/private-sql-import01.png){.thumbnail}
+![clouddb](images/private-sql-import01.png){.thumbnail}
 
 Hierzu haben Sie zwei Möglichkeiten:
 
@@ -65,7 +65,7 @@ Geben Sie einen Namen für Ihre importierte Datei ein, klicken Sie auf `Durchsuc
 > Die Datei muss im ".gz"-Format sein.
 > 
 
-![private-sql](images/private-sql-import02.png){.thumbnail}
+![clouddb](images/private-sql-import02.png){.thumbnail}
 
 Haken Sie, wenn Sie möchten, **Aktuelle Datenbank leeren** und **E-Mail am Ende des Imports senden** vor dem Import an, um über den Abschluss der Operation auf der E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf `Bestätigen`{.action}.
 
@@ -75,7 +75,7 @@ Wenn Sie bereits zuvor eine Datei importiert haben, können Sie die Option **Bes
 
 Wählen Sie dann die Datei im Drop-down-Menü aus und klicken Sie auf `Weiter`{.action}.
 
-![private-sql](images/private-sql-import03.png){.thumbnail}
+![clouddb](images/private-sql-import03.png){.thumbnail}
 
 Haken Sie, wenn Sie möchten, **Aktuelle Datenbank leeren** und **E-Mail am Ende des Imports senden** vor dem Import an, um über den Abschluss der Operation auf der E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf `Bestätigen`{.action}.
 
@@ -100,11 +100,11 @@ Wählen Sie Ihre Backup-Datei aus, indem Sie `Durchsuchen`{.action} klicken. (Di
 
 Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.action}, um den Import zu starten.
 
-![private-sql](images/private-sql-import04.png){.thumbnail}
+![clouddb](images/private-sql-import04.png){.thumbnail}
 
 #### MySQL oder MariaDB Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 
 ```bash
 cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --password=passwort datenbankname
@@ -123,7 +123,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
 ### Import von PostgreSQL Datenbanken außerhalb des Kundencenters
@@ -132,7 +132,7 @@ In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare 
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 
-Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich (ab Version "stable").
+Diese Aktion ist nur über [SSH]( ../webhosting_ssh_auf_ihren_webhostings/) von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich (ab Version "stable").
 
 ```bash
 psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql
@@ -151,9 +151,9 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 > [!warning]
 >
 > - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
-> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
+> - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) aus möglich.
 >
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -10,13 +10,13 @@ section: 'Webhosting-Konfiguration'
 
 ## Einleitung
 
-Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVH Webhosting](https://www.ovh.de/hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
+Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einrichten oder einen Onlineshop eröffnen, mit anderen Ihr Hobby teilen oder Ihr Unternehmen darstellen und am Markt platzieren möchten: Sie können die gewünschte Website auf Ihrem [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} hosten, solange diese mit der [Konfiguration unserer Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
 
 **In dieser Anleitung erfahren Sie, wie Sie die Konfiguration Ihres OVH Webhostings über Ihr Kundencenter bearbeiten.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein kompatibles [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
+- Sie verfügen über ein kompatibles [OVH Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
 - Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 
 ## Beschreibung
@@ -34,7 +34,7 @@ Wenn Sie die Konfiguration Ihres Hostings ändern, ändern Sie auch die Konfigur
 
 #### Schritt 1: Auf die Webhosting-Konfiguration zugreifen
 
-Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden und klicken Sie dann im Bereich `Konfiguration`{.action} auf die drei Punkte und anschließend auf den Button `Konfiguration ändern`{.action}.
+Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden und klicken Sie dann im Bereich `Konfiguration`{.action} auf die drei Punkte und anschließend auf den Button `Konfiguration ändern`{.action}.
 
 ![hosting konfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Wenn Sie Ihre Wahl getroffen haben, haben Sie zwei Optionen, um die Änderung au
 
 #### PHP-Version
 
-Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVH stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <https://www.ovh.de/hosting/php>. 
+Es existieren zurzeit verschiedene Versionen der Programmiersprache PHP. Wie gewöhnlich bringen weiterentwickelte Versionen verschiedene Korrekturen sowie neu hinzugefügte oder entfernte Features. OVH stellt Ihnen die neuesten PHP-Hauptversionen zur Verfügung; die zugehörige Liste finden Sie hier: <https://www.ovhcloud.com/de/web-hosting/uc-programming-language/>. 
 
 Da manche Features von neueren Versionen nicht mehr unterstützt werden, **stellen Sie unbedingt vor jeder Änderung sicher, dass die neue PHP-Version mit Ihrer Website kompatibel ist.**
 

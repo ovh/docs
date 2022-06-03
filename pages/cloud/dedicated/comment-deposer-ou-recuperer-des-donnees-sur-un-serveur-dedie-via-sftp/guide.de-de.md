@@ -36,7 +36,7 @@ Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbi
 
 Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, über Port 22 SSH-Zugriff. Möglicherweise haben Sie diesen Port jedoch bereits geändert (zum Beispiel anhand unserer [Anleitung zur Sicherung eines Dedicated Servers](../dedizierten-server-sichern/)).
 
-#### Wenn Sie Zugriff auf Ihren Server haben
+#### **Wenn Sie Zugriff auf Ihren Server haben**
 
 Tragen Sie im FileZilla-Interface die IP-Adresse Ihres Servers ins `Host`-Feld sowie Ihren Benutzernamen und Ihr Passwort in die jeweiligen Feldern ein. Geben Sie als den `Port` "22" bzw. die Portnummer ein, die Ihr SSH-Dienst verwendet.
 
@@ -52,7 +52,7 @@ Der Fortschritt der Datenübertragung wird dann unten im FileZilla-Interface ang
 
 ![Fortschritt des SFTP Transfers](images/sftp_sd_02.png){.thumbnail}
 
-#### Wenn Ihr Server im Rescue-Modus ist
+#### **Wenn Ihr Server im Rescue-Modus ist**
 
 Im Rescue-Modus müssen Sie zuerst Ihre Partition mounten. Folgen Sie hierzu den Anweisungen in dieser [Anleitung](../ovh-rescue/).
 
@@ -69,7 +69,7 @@ Wenn Sie den Mount korrekt erstellt haben, befinden sich die Daten im Verzeichni
 
 ## Weiterführende Informationen
 
-[Rescue-Modus](../ovh-rescue/)
+[Rescue-Modus aktivieren und verwenden](../ovh-rescue/)
 
 [Einen dedizierten Server sichern](../dedizierten-server-sichern/)
 

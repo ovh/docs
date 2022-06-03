@@ -2,7 +2,7 @@
 title: Adding an SPF record to the configuration of your domain name
 excerpt: Find out how to configure an SPF record for your OVHcloud domain name
 slug: web_hosting_the_spf_record
-section: DNS and DNS zone
+section: DNS and DNS Zone
 order: 5
 ---
 
@@ -54,7 +54,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 
 ### Checking your current SPF configuration
 
-If your domain uses OVHcloud DNS servers, you can check if an SPF record is already configured for it. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section on the left-hand side, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+If your domain uses OVHcloud DNS servers, you can check if an SPF record is already configured for it. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 The table on this page displays your domain name's DNS zone at OVHcloud. Each DNS record is represented by one line in the table.
 
@@ -80,7 +80,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 
 ### Configuring a new SPF record <a name="spfrecord"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section on the left-hand side, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
@@ -161,7 +161,7 @@ Click on `Next`{.action} and verify that the SPF you have entered is correct by 
 
 ### Modifying an SPF record <a name="modifyspf"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section on the left-hand side, select the domain name concerned. Click on the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
 The table on this page displays your domain name's DNS zone at OVHcloud. Each DNS record is represented by a line in the table. Locate your TXT or SPF record in this table and click on the `...`{.action} button to edit the entry.
 

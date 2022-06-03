@@ -9,13 +9,13 @@ legacy_guide_number: g2149
 
 ## Objective
 
-You can use a range of different configurations on an OVHcloud Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/), provided that it is compatible with [our infrastructure’s configurations](https://webhosting-infos.hosting.ovh.net).
+You can use a range of different configurations on an OVHcloud Web Hosting plan. Whether you are creating a blog or an online store, sharing your hobby or promoting your work, you can host whatever website you want on your [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/), provided that it is compatible with [our infrastructure’s configurations](https://webhosting-infos.hosting.ovh.net).
 
 **Find out how to modify the configuration of an OVHcloud Web Hosting plan from the OVHcloud Control Panel.**
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/) (excluding Cloud Web)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) (excluding Cloud Web)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -33,7 +33,7 @@ When you modify your Web Hosting plan’s configuration, you will also change th
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `Web Hosting`{.action}, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Once you have chosen your runtime environment, you can change it in two differen
 
 #### PHP version
 
-There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovh.com/ca/en/web-hosting/php.xml>. 
+There are now several versions of PHP programming language. As usual, version developments include different patches, and also add or remove features. OVHcloud offers the very latest PHP versions, and you can view a list of them here: <https://www.ovhcloud.com/en-ca/web-hosting/php.xml>. 
 
 Because some features cannot be maintained in newer versions, **please ensure that the new PHP version you want to use is compatible with your website before you start making any changes.**
 

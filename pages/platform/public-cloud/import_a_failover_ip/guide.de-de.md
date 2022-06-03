@@ -6,7 +6,7 @@ legacy_guide_number: g1883
 section: 'Netzwerk und IP'
 ---
 
-**Letzte Aktualisierung am 07.04.2020**
+**Letzte Aktualisierung am 10.03.2022**
 
 ## Ziel
 
@@ -28,15 +28,15 @@ Im OVHcloud Kundencenter können Sie eine Failover-IP-Adresse, die mit einem and
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend Ihr Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus.
 
-Klicken Sie auf `Failover IP`{.action} im Abschnitt „Network“.
+Klicken Sie auf `Failover IP`{.action} im Abschnitt "Network".
 
-![IP-Bereich](images/import.png){.thumbnail}
-
-Klicken Sie nun auf `Failover IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die importiert werden können.
+Klicken Sie auf `Aktionen`{.action} und wählen Sie `Eine IP importieren`{.action}, um alle IP-Adressen anzuzeigen, die in Ihr Public Cloud Projekt importiert werden können.
 
 ![IP-Bereich](images/import1.png){.thumbnail}
+
+Wenn Sie in Ihrem Public Cloud Projekt noch keine Failover-IP haben, wird die Option zum Import einer IP auf der Startseite angezeigt.
 
 Klicken Sie `...`{.action} rechts neben der IP, die Sie importieren möchten, und klicken Sie dann auf `Diese Failover-IP importieren`{.action}.
 
@@ -44,7 +44,7 @@ Klicken Sie `...`{.action} rechts neben der IP, die Sie importieren möchten, un
 
 Bestätigen Sie Ihre Auswahl mit `Importieren`{.action}.
 
-![Failover-IP importieren](images/importconfirm.png){.thumbnail}
+![Import confirm](images/importconfirm.png){.thumbnail}
 
 Die Seite aktualisiert sich, und die Information, dass die IP-Adresse erfolgreich migriert wurde, wird angezeigt.
 
@@ -58,11 +58,15 @@ Wählen Sie im neuen Fenster die Instanz aus, mit der Sie Ihre IP-Adresse verkn�
 
 Bestätigen Sie mit Klick auf `Verbinden`{.action}. Im Interface wird nun eine Änderungsmeldung angezeigt.
 
+> [!primary]
+> Eine Failover-IP kann nicht von einer Zone zur anderen umgezogen werden. So kann beispielsweise eine IP im Rechenzentrum SBG nach GRA oder RBX umgezogen werden, aber nicht nach BHS.
+>
+
 ![Failover-IP importieren](images/modifycompleted.png){.thumbnail}
 
 Die Failover-IP ist jetzt an Ihre Instanz angehängt.
 
-Im nächsten Schritt muss die IP-Konfiguration in Ihrem Betriebssystem durchgeführt werden. Wir empfehlen hierzu unsere [Anleitung](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip/).
+Im nächsten Schritt muss die IP-Konfiguration in Ihrem Betriebssystem durchgeführt werden. Wir empfehlen hierzu unsere [Anleitung](https://docs.ovh.com/de/public-cloud/failover-ip-konfigurieren-pci/).
 
 ## Weiterführende Informationen
 

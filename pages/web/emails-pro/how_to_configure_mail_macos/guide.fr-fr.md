@@ -1,18 +1,18 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Mail de macOS'
 slug: configurer-email-pro-mail-macos
-excerpt: 'Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Capitan, Sierra et High Sierra'
+excerpt: 'Apprenez à configurer votre compte E-mail Pro sur Mail de macOS'
 section: 'Configuration sur ordinateur'
 order: 3
 ---
 
-**Dernière mise à jour le 19/03/2020**
+**Dernière mise à jour le 28/12/2021**
 
 ## Objectif
 
-Les comptes E-mail Pro peuvent être configurés sur un logiciel de messagerie compatible. Cela vous permet d'utiliser votre adresse e-mail depuis l'application de votre choix.
+Les comptes E-mail Pro peuvent être configurés sur différents logiciels de messagerie compatibles. Cela vous permet d’utiliser votre adresse e-mail depuis l’appareil de votre choix. L'application Mail sur macOS est disponible gratuitement sur tous les Mac.
 
-**Apprenez à configurer votre compte E-mail Pro sur Mail de macOS El Capitan, Sierra et High Sierra.**
+**Découvrez comment configurer votre adresse E-mail Pro sur Mail de macOS.**
 
 > [!warning]
 >
@@ -23,84 +23,50 @@ Les comptes E-mail Pro peuvent être configurés sur un logiciel de messagerie c
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
-- Disposer de l'application Mail installée sur votre appareil.
-- Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
-
-> [!primary]
->
-> Cette documentation est applicable aux versions suivantes de macOS : El Capitan, Sierra, High Sierra.
->
-
+- Disposer d’une adresse [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
+- Disposer du logiciel Mail installé sur votre Mac.
+- Posséder les identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
+ 
 ## En pratique
-
-Cet ajout peut s'effectuer de deux manières différentes :
-
-- **en quelques clics depuis notre outil Apple Devices** : rendez-vous sur le lien [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} et suivez les différentes étapes de configuration ;
-
-- **en suivant l'assistant de configuration de l'application Mail** : lancez l'application Mail sur votre appareil.
-
-À partir de ce point, cette documentation abordera uniquement la configuration depuis l'application Mail.
-
-### Étape 1 : ajouter le compte
 
 > [!primary]
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
->  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
-Une fois l'application Mail lancée sur votre appareil, l'ajout d'un compte peut s'initier de deux manières différentes.
+### Ajouter le compte
 
-- **Lors du premier démarrage de l'application** : une fenêtre vous invite à choisir un fournisseur de compte Mail. Sélectionnez `Autre compte Mail`{.action}, puis continuez.
+- **Lors du premier démarrage de l'application** : un assistant de configuration s'affiche directement et vous invite à choisir votre type de compte.
 
-- **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} en haut de votre écran, puis sur `Ajouter un compte`{.action}. Sélectionnez `Autre compte Mail`{.action}, puis continuez.
+- **Si un compte a déjà été paramétré** : cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Comptes`{.action}.
 
-![emailpro](images/configuration-mail-sierra-step1.png){.thumbnail}
+| | |
+|---|---|
+|![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Sélectionnez `Autre compte Mail`{.action} puis cliquez sur `Compte Mail`{.action}.|
+|Saisissez, dans la fenêtre « **Ajouter un compte Mail** », les informations suivantes : <br>- le **Nom** de votre compte e-mail <br>- Votre **Adresse e-mail** <br>- Le **Mot de passe** de votre adresse e-mail |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Dans la fenêtre suivante, complétez les informations : <br>- Laissez votre **Adresse e-mail** déjà saisie <br>- Saisissez votre adresse e-mail complète dans **Nom d'utilisateur** <br>- Laissez votre **Mot de passe** déjà saisi <br>- Sélectionnez `POP` ou `IMAP`(recommandé) dans **Type de compte**<br>- Saisissez `pro**?**.mail.ovh.net` dans **Serveur de réception** (remplacez bien «**?**» par le numéro de votre serveur)<br>-Saisissez également `pro**?**.mail.ovh.net` dans **Serveur d'envoi** (remplacez bien «**?**» par le numéro de votre serveur)<br><br>Pour finaliser la configuration, cliquez sur `Se connecter`{.action}|
 
-Renseignez à présent les informations de votre compte :
-
-|Information|Description|  
-|---|---|  
-|Nom|Renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.| 
-|Adresse e-mail|Renseignez l'adresse e-mail complète.| 
-|Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|  
-
-Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invitera à poursuivre, puis à renseigner plus d'informations :
-
-|Information|Description|  
-|---|---|  
-|Type de compte|Laissez IMAP déjà sélectionné dans le menu déroulant.| 
-|Serveur de réception|Renseignez le serveur « pro**?**.mail.ovh.net ».| 
-|Serveur d'envoi|Renseignez le serveur « pro**?**.mail.ovh.net ».|  
-
-Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
-
-![emailpro](images/configuration-mail-sierra-step2.png){.thumbnail}
-
-Lors du choix des applications, assurez-vous de bien laisser `Mail`{.action} coché afin que l'application puisse utiliser ce compte, puis cliquez sur `Terminé`{.action}.
-
-Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctement paramétré.
-
-Si vous êtes amené à renseigner manuellement des paramètres dans les préférences du compte, vous trouverez ci-dessous les paramètres techniques à utiliser avec notre offre E-mail Pro :
-
-|Type de serveur|Nom du serveur|SSL|Port|
-|---|---|---|---|
-|Entrant|pro**?**.mail.ovh.net|Oui|993|
-|Sortant|pro**?**.mail.ovh.net|Oui|587|
-
-### Étape 2 : utiliser l'adresse e-mail
+### Utiliser l'adresse e-mail
 
 Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vous pouvez dès à présent envoyer et recevoir des messages.
 
-OVH propose une application web disposant de [fonctions collaboratives](https://www.ovh.com/fr/emails/){.external} accessible sur l’adresse [https://www.ovh.com/fr/mail/](https://www.ovh.com/fr/mail/){.external}. Vous pouvez y accéder grâce aux identifiants relatifs à votre adresse e-mail. 
+OVHcloud propose aussi une application web permettant d'accéder à votre adresse e-mail depuis un navigateur internet. Celle-ci est accessible à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail. Pour toute question relative à son utilisation, aidez-vous de notre guide [Consulter son compte Exchange depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) ou [Utiliser son adresse e-mail depuis le webmail RoundCube](https://docs.ovh.com/fr/emails/utilisation-roundcube/#ou-et-comment-se-connecter-au-webmail-roundcube).
+
+### Récupérer une sauvegarde de votre adresse e-mail
+
+Si vous devez effectuer une manipulation qui risquerait d'entrainer la perte des données de votre compte e-mail, nous vous conseillons d'effectuer une sauvegarde préalable du compte e-mail concerné. Pour ce faire, consultez le paragraphe « **Exporter** » dans la partie « **Mail sur Mac OS** » de notre guide [Migrer manuellement votre adresse e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#exporter_1).
+
+### Modifier les paramètres existants
+
+Si votre compte e-mail est déjà paramétré et que vous devez accéder aux paramètres du compte pour les modifier :
+
+- Cliquez sur `Mail`{.action} dans la barre de menu en haut de votre écran, puis sur `Préférences`{.action}.
+- Sélectionez le compte concerné dans la colonne de gauche, puis cliquez sur `Réglages du serveur`{.action}.
+
+![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
 ## Aller plus loin
 
-[Configurer son adresse e-mail comprise dans l’offre MX Plan ou dans une offre d’hébergement web sur Mail de macOS](https://docs.ovh.com/fr/emails/guide-configuration-mail-de-mac-el-capitan/){.external}.
-
-[Configurer son compte Exchange sur Mail de macOS](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-automatique-sous-mail-mac/){.external}.
-
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

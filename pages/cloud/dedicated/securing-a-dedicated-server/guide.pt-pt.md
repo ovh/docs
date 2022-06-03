@@ -10,13 +10,13 @@ order: 2
 
 ## Sumário
 
-Quando encomenda o seu servidor dedicado, não existe nenhum protocolo de segurança implementado de forma nativa. O utilizador é responsável pela proteção do servidor e a OVH não poderá ser responsabilizada por falhas de segurança da sua máquina.
+Quando encomenda o seu servidor dedicado, não existe nenhum protocolo de segurança implementado de forma nativa. O utilizador é responsável pela proteção do servidor e a OVHcloud não poderá ser responsabilizada por falhas de segurança da sua máquina.
 
 **Saiba como proteger o seu servidor dedicado graças a estas dicas.**
 
 > [!warning]
 >
-> A utilização e a gestão dos serviços OVH são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
+> A utilização e a gestão dos serviços OVHcloud são da responsabilidade do cliente. Como não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
 > Este manual fornece as instruções necessárias para usar as funcionalidades básicas de um servidor. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”
 >
@@ -196,16 +196,16 @@ iptables -L
 Como tal, recomendamos a criação e o ajustamento das regras da firewall à sua utilização. Para obter mais informações sobre a configuração dos iptables, consulte a documentação oficial da distribuição Linux.
 
 
-### Configurar a Firewall Network da OVH
+### Configurar a Firewall Network da OVHcloud
 
-Os servidores da OVH incluem uma firewall para proteger o acesso à infraestrutura designada Firewall Network. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
+Os servidores da OVHcloud incluem uma firewall para proteger o acesso à infraestrutura designada Firewall Network. A configuração deste serviço permite o bloqueio de protocolos antes mesmo de chegarem ao servidor.
 
 Poderá também consultar o nosso [manual](https://docs.ovh.com/pt/dedicated/firewall-network/){.external} sobre como configurar a Firewall Network.
 
 
 ### Proteger o sistema e os dados
 
-A segurança de um sistema também inclui a proteção dos dados. A proteção dos seus dados é essencial e, por isso, a OVH oferece-lhe 500 GB de armazenamento gratuito com o seu servidor. É possível ativar este armazenamento na Área de Cliente e aceder ao mesmo através dos protocolos abaixo:
+A segurança de um sistema também inclui a proteção dos dados. A proteção dos seus dados é essencial e, por isso, a OVHcloud oferece-lhe 500 GB de armazenamento gratuito com o seu servidor. É possível ativar este armazenamento na Área de Cliente e aceder ao mesmo através dos protocolos abaixo:
 
 * FTP;
 * FTPS;
@@ -219,4 +219,4 @@ Para saber mais sobre as nossas soluções de armazenamento, consulte o nosso [m
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -6,7 +6,7 @@ section: Concepts
 order: 1
 ---
 
-**Last updated 14<sup>th</sup> July, 2021**
+**Last updated 23<sup>rd</sup> February, 2022**
 
 
 ## Objective 
@@ -19,8 +19,11 @@ In this document, we list all the features currently supported by the Data Proce
 
 At this moment, OVHcloud Data Processing supports the following engines:
 
-  - Spark 3.0.1
-  - Spark 2.4.3 
+- Spark 3.2.1 (Scala 2.13.7 and Hadoop 3.3.1)
+- Spark 3.1.3 (Scala 2.12.4 and Hadoop 3.2.0)
+- Spark 3.0.3 (Scala 2.12.4 and Hadoop 3.2.0)
+- Spark 3.0.1 (Scala 2.12.4 and Hadoop 3.2.0)
+- Spark 2.4.3 (Scala 2.12.4 and Hadoop 2.8.5)
 
 It is not possible to interact with Apache Spark cluster via command line.  
 
@@ -63,6 +66,14 @@ It is not possible to interact with Apache Spark cluster via command line.
 
 - GRA (Gravelines in France) 
 
+### IP range to allow
+
+If you need to allow a list of IPs in your application network configuration (for example to allow connections to one of your databases), know that the ODP jobs will run on hosts
+with IP within a range depending on the region:
+
+- 164.132.38.64/26 for GRA (164.132.38.64 - 164.132.38.127)
+
+
 ### Storage
 
 - Before submitting a job, you will need to upload your job into your OVHcloud Object Storage account. 
@@ -93,4 +104,4 @@ If you would like to increase the quotas for Data Processing you will need to in
 Please send us your questions, feedback and suggestions to improve the service: 
 
 - On OVHcloud community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/)
-- On our public [Gitter](https://gitter.im/ovh/data-processing)
+- On our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**

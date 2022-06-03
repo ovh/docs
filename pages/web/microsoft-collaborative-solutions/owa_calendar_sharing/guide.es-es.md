@@ -17,7 +17,7 @@ Esta herramienta de Exchange le permite conceder acceso a sus calendarios a otra
 
 ## Requisitos
 
-- Tener una [solución Exchange de OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya configurada.
+- Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) ya configurada.
 - Tener acceso a la cuenta Exchange (dirección de correo electrónico y contraseña).
 
 

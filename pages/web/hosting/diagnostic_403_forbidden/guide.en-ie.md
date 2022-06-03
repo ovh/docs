@@ -26,7 +26,7 @@ It may also be the case that our security robots have temporarily blocked access
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
 - having the [login details](../log-in-to-storage-ftp-web-hosting/#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 

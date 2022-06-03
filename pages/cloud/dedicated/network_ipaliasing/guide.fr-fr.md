@@ -28,6 +28,10 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 - Avoir une ou plusieurs [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}.
 - Être connecté en SSH au serveur (accès root) ou via remote desktop pour Windows
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
 ## En pratique
 
@@ -38,7 +42,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 Voici les configurations pour les distributions et les systèmes d’exploitation principaux.
 
-### Debian 10
+### Debian 10/11
 
 #### Étape 1 : créer une sauvegarde
 
@@ -219,7 +223,7 @@ cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.netwo
 Vous pouvez désormais ajouter dans le fichier source votre IP fail-over comme suit :
 
 ```sh
-éditeur /etc/systemd/network/50-default.network
+editor /etc/systemd/network/50-default.network
 ```
 ```sh
 [Address]
@@ -266,7 +270,7 @@ network:
         INTERFACE_NAME :
             dhcp4: true
             match:
-                macadresse : MAC_ADDRESS
+                macaddress : MAC_ADDRESS
             set-name : INTERFACE_NAME
             addresses:
             - FAILOVER_IP/32
@@ -365,7 +369,7 @@ Le fichier `/etc/conf.d/net` doit contenir ce qui suit :
 # please review /etc/conf.d/net.example and save your configuration
 # in /etc/conf.d/net (this file :]!).
 config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"FAILOVER_IP masque réseau 255.255.255.255.255.255.255 brd FAILOVER_IP" )
+"FAILOVER_IP netmask 255.255.255.255 brd FAILOVER_IP" )
 routes_eth0=( "default gw SERVER_IP.254" )
 ```
 

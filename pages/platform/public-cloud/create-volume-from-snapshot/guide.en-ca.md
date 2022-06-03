@@ -3,7 +3,7 @@ title: Creating a volume from a backup
 slug: create-volume-from-backup
 excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
 section: Storage
-order: 2
+order: 3
 ---
 
 **Last updated 6th April 2021**
@@ -22,16 +22,16 @@ This may be useful in the following cases:
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
-- a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external} in your OVHcloud account
-- a volume snapshot in the same OpenStack region
-- administrative access (root) to your instance via SSH or RDP
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/){.external} in your OVHcloud account
+- A volume snapshot in the same OpenStack region
+- Administrative access (root) to your instance via SSH or RDP
 
 ## Instructions
 
 ### Creating the disk from a backup
 
-Log in to [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned. Then click `Volume Snapshot`{.action} in the left-hand navigation bar under `Storage`.
+Log in to [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and open your `Public Cloud`{.action} project. Then click `Volume Snapshot`{.action} in the left-hand navigation bar under `Storage`.
 
 To the right of the backup you want to create a volume from, click the `...`{.action} button, then `Create a volume`{.action}.
 

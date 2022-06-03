@@ -39,7 +39,7 @@ The commands in this guide are based on the OpenStack CLI, as opposed to the `NO
 First, establish an SSH connection to your datacentre and then run the following command to list your existing volumes:
 
 ```
-root@serveur:~$ openstack volume list
+root@server:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+
 | ID                                   | Display Name | Status | Size | Attached to                        |
 +--------------------------------------+--------------+--------+------+------------------------------------+
@@ -50,13 +50,13 @@ root@serveur:~$ openstack volume list
 Next, run the following command to detatch the volume from its instance:
 
 ```
-root@serveur:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
+root@server:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
 ```
 
 Next, create a backup in the form of an image, using the following command:
 
 ```
-root@serveur:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
+root@server:~$ openstack image create --disk-format qcow2 --container-format bare --volume 673b0ad9-1fca-485c-ae2b-8ee271b71dc7 snap_volume
 +---------------------+------------------------------------------------------+
 |       Property      |                         Value                        |
 +---------------------+------------------------------------------------------+
@@ -78,7 +78,7 @@ root@serveur:~$ openstack image create --disk-format qcow2 --container-format ba
 Now, run this command to list the available images:
 
 ```
-root@serveur:~$ openstack image list
+root@server:~$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 | ID                                   | Name                                          | Status |
 +--------------------------------------+-----------------------------------------------+--------+
@@ -103,7 +103,7 @@ Next, identify the volume backup from the list:
 Finally, run this command to download the backup:
 
 ```
-root@serveur:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
+root@server:~$ openstack image save --file snap_volume.qcow 8625f87e-8248-4e62-a0ce-a89c7bd1a9be
 ```
 
 ### Transfer the backup to another datacentre
@@ -116,19 +116,19 @@ If you are transfering to a datacentre within the same project, just change the 
 >
 
 ```
-root@serveur:~$ export OS_REGION_NAME=SBG1
+root@server:~$ export OS_REGION_NAME=SBG1
 ```
 
 If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command:
 
 ```
-root@serveur:~$ source openrc.sh
+root@server:~$ source openrc.sh
 ```
 
 To transfer the backup to the new datacentre, use this command:
 
 ```
-#root@serveur:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
+#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_volume.qcow snap-volume
 +------------------+------------------------------------------------------+
 | Field            | Value                                                |
 +------------------+------------------------------------------------------+
@@ -159,7 +159,7 @@ To transfer the backup to the new datacentre, use this command:
 To create a volume from your backup, use the backup ID as the image with this command:
 
 ```
-root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
+root@server:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
 +---------------------+--------------------------------------+
 | Field               | Value                                |
 +---------------------+--------------------------------------+
@@ -187,5 +187,6 @@ root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12
 
 ## Go further
 
-* Join our community of users on <https://community.ovh.com/en/>.
-* [Transfer an instance backup from one datacentre to another](https://docs.ovh.com/ie/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/){.external}
+[Transfer an instance backup from one datacentre to another](https://docs.ovh.com/ie/en/public-cloud/transfer_instance_backup_from_one_datacentre_to_another/){.external}
+
+Join our community of users on <https://community.ovh.com/en/>.

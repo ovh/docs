@@ -5,6 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/fr/storage/pcs/capabilities-and-limitations/'
 excerpt: Retrouvez ici les principales capacités et limitations pour la gestion de vos conteneurs
 section: Public Cloud Archive
+order: 050
 ---
 
 **Dernière mise à jour le 23/09/2021**
@@ -79,7 +80,7 @@ Vous pouvez utiliser les paramètres `marker`, `limit` et `end_marker` pour cont
 |:----------|:-----|:------------|
 | marker | string | Pour obtenir les noms suivants, vous devez faire une autre demande avec le paramètre marker. Définissez le paramètre marker sur le nom du dernier élément renvoyé dans la liste précédente. |
 | limit | integer | Pour renvoyer moins de 10 000 noms, utilisez le paramètre limit. |
-| end_marker | integer | Limite le jeu de résultats aux noms dont le nombre est inférieur à la valeur du paramètre end_marker. |
+| end_marker | string | Limite le jeu de résultats aux noms dont le nombre est inférieur à la valeur du paramètre end_marker. |
 
 Afficher la suite via `marker` :
 
@@ -130,7 +131,7 @@ Failed Transaction ID: txd3664103d22a445687c5a-00610a32e3
 
 ### max_file_size = 5368709122 (5Gb)
 
-Le plus grand objet normal qui peut être enregistré dans le cluster. Il s'agit également de la limite de la taille de chaque segment d'un grand objet lors de l'utilisation du support du manifeste de grand objet. Cette valeur est définie en octets. Si elle est inférieure à 1MiB, certains tests échoueront. Il est FORTEMENT recommandé de laisser cette valeur par défaut (5 * 2**30 + 2).
+Le plus grand objet normal qui peut être enregistré dans le cluster. Il s'agit également de la limite de la taille de chaque segment d'un grand objet lors de l'utilisation du support du manifeste de grand objet. Cette valeur est définie en octets. Si elle est inférieure à 1MiB, certains tests échoueront. Il est FORTEMENT recommandé de laisser cette valeur par défaut (`5 * 2**30 + 2`).
 
 ```bash
 swift upload <conteneur> <largeobject>
@@ -265,7 +266,7 @@ Il n'est plus possible de créer de conteneur PCA sur SBG. Aucune date de retour
 
 ### Keystone API version
 
-La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <http://travaux.ovh.net/?do=details&id=42179>
+La version actuelle de keystone est la 3, la v2 étant obsolète depuis plusieures années : <https://public-cloud.status-ovhcloud.com/incidents/gwqhdkprm136>
 
 ## Aller plus loin
 

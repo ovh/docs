@@ -6,7 +6,7 @@ section: 'Uso avanzado'
 order: 2
 ---
 
-**Última actualización: 25/03/2021**
+**Última actualización: 07/01/2022**
 
 ## Objetivo
 
@@ -31,11 +31,11 @@ La tecnología OVHcloud Link Aggregation (OLA) está diseñada para aumentar la 
 ## Procedimiento
 
 Nuestros NIC en OLA tienen una configuración privada-privada, por lo que no es posible acceder al servidor por SSH. Así pues, es necesario utilizar la herramienta IPMI para acceder al servidor.
-<br>Para ello, en primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Bare Metal Cloud`{.action}, haga clic en `Servidores dedicados`{.action} en el menú de la izquierda y seleccione el servidor. A continuación, abra la pestaña `IPMI`{.action} (1).
+<br>Para ello, en primer lugar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Bare Metal Cloud`{.action}, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. A continuación, abra la pestaña `IPMI`{.action} (1).
 
 Haga clic en el botón `Desde un applet Java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+![remote_kvm](images/remote_kvm2022.png){.thumbnail}
 
 Se descargará un programa JNLP. Abra el programa para acceder a IPMI e introduzca las claves asociadas al servidor.
 
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

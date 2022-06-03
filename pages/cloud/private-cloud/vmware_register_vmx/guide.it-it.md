@@ -2,7 +2,7 @@
 title: Registra le VM in un nuovo PCC
 slug: vsphere-register-vm-vmx
 excerpt: Come eseguire le prime operazioni sulla registrazione delle VM in un nuovo servizio dai datastore precedenti
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 06
 ---
 
@@ -20,8 +20,8 @@ A seguito di un incidente, alcune macchine virtuali non compaiono più nel tuo i
 
 ## Prerequisiti
 
-- Avere accesso all’ [interfaccia vSphere](../connessione-interfaccia-vsphere/).
-- Disporre di datastore contenenti i file di macchine virtuali
+- Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
+- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
 
 ## Procedura
 

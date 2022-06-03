@@ -17,7 +17,7 @@ Der Zugriff auf Memcached ist standardmäßig nicht durch eine Authentifizierung
 
 > [!warning]
 >
-> OVH stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
+> OVHcloud stellt Ihnen Maschinen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir keinerlei Administrator-Aufgaben für diese Server übernehmen. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
 >
 > Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung.
 >
@@ -38,7 +38,7 @@ Die Sicherung eines Memcached-Servers erfolgt in zwei Schritten:
 - Listening-Adresse des Dienstes einschränken.
 - Nur TCP-Verbindungen erlauben.
 
-Memcached-Versionen vor /1.5.6/ erlauben standardmäßig TCP- und UDP-Verbindungen. Letztere können jedoch verwendet werden, um sogenannte „Amplification-Angriffe“ zu starten.
+Memcached-Versionen vor /1.5.6/ erlauben standardmäßig TCP- und UDP-Verbindungen. Letztere können jedoch verwendet werden, um sogenannte “Amplification-Angriffe” zu starten.
 Als die Software entwickelt wurde, waren UDP-Verbindungen laut den Entwicklern notwendig, da insgesamt weniger Ressourcen vorhanden waren.
 In dieser Anleitung gehen wir davon aus, dass Sie zu den 99 % der Nutzer gehören, die keine UDP-Verbindungen benötigen.
 

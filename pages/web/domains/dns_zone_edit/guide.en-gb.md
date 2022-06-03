@@ -2,11 +2,11 @@
 title: 'Editing an OVHcloud DNS zone'
 slug: web_hosting_how_to_edit_my_dns_zone
 excerpt: 'Find out how to edit an OVHcloud DNS zone via the OVHcloud Control Panel'
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 3
 ---
 
-**Last updated 16th February 2021**
+**Last updated 1st June 2022**
 
 ## Objective
 
@@ -53,7 +53,7 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 
 ### Access the area for managing an OVHcloud DNS zone
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
 
 The table that appears will display a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 
@@ -135,7 +135,7 @@ From this point onwards, this guide will only cover configuration using our conf
 > In order to modify your OVHcloud DNS zone successfully, make sure to gather all the required information first. If you are making this change at the request of a service provider, the service provider must provide you with a list of the items to change.
 >
 
-#### Add a new DNS record.
+#### Add a new DNS record
 
 To add a new DNS record, in your domain name’s `DNS zone`{.action} tab, click the `Add an entry`{.action} button to the right of the table. Select the DNS record type, then follow the steps.
 
@@ -149,19 +149,43 @@ Please check in advance whether this record already exists and might point to a 
 >
 >You must then target *mydomain.ovh.* and not *mydomain.ovh* without **.** at the end.
 
-#### Modify an existing DNS record. 
+#### Modify an existing DNS record
 
 To modify a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Modify record`{.action}, and follow the steps that open.
 
 ![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-#### Delete a DNS record.
+#### Delete a DNS record
 
 To delete a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Delete record`{.action}, and follow the steps that open.
 
 You can delete several entries at once by ticking them on the left-hand side of the table, then clicking the `Delete`{.action} button.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
+
+#### Reset the DNS zone
+
+Resetting your DNS zone allows you to:
+
+- Go back to a minimum configuration with the default OVHcloud records.
+- Return to an empty DNS zone (with the exception of the NS entries), to define a subsequent manual configuration.
+
+In the `DNS zone`{.action} tab, click on `Reset my DNS zone`{.action}, then follow the steps in the window that appears.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+You can choose between these options:
+
+- `Yes, I want to reset my DNS zone with the minimum records`. This allows you to direct your domain name and email service to:
+    - One of your Web Cloud services available in your OVHcloud Control Panel.
+    - The OVHcloud redirection service, accessible via your domain name’s `Redirection`{.action} tab in the `Domain names`{.action} and `Emails`{.action} sections.
+    - The `Custom` function. Enter the `A` and/or `MX` records of your choice.
+- `No, but I want to reset my DNS zone`. Your DNS zone will then be empty except for the NS records, which will be automatically attached to the OVHcloud DNS servers in your DNS zone.
+
+> [!primary]
+>
+> Before resetting your DNS zone, please ensure that your domain name is not attached to services that are currently in use, such as a website or email addresses.
+>
 
 ### Propagation time
 

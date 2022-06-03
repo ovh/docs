@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer les domaines de panne vSAN'
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 18/01/2021**
+**Dernière mise à jour le 23/12/2021**
 
 ## Objectif
 
@@ -13,9 +13,9 @@ Ce guide a pour objectif d’expliquer le fonctionnement et la mise en oeuvre de
 
 ## Prérequis
 
-- Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
-- Être connecté à votre [client vSphere HTML](../connexion-interface-vsphere/)
-- Disposer d'un cluster vSAN avec au moins 3 hosts
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
+- Avoir déployé un [datastore vSan](https://docs.ovh.com/fr/private-cloud/vmware-vsan/)
 
 ## En pratique
 

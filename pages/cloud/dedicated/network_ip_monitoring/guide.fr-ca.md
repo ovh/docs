@@ -67,11 +67,11 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 ### Activer ou désactiver le monitoring
 
-Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Dans le menu de gauche, sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action} .
+Tout d’abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Sélectionnez le serveur concerné dans le menu déroulant `Serveurs dédiés`{.action}.
 
 Dans l'onglet `Informations générales`{.action} puis le cadre **État des services**, cliquez sur le bouton `...`{.action} à côté de « Monitoring ». Cliquez alors sur `Activer`{.action} ou `Désactiver`{.action} . Cliquez sur `Valider`{.action} dans la fenêtre qui apparaît pour confirmer les modifications.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Activer le monitoring de services spécifiques
 
@@ -79,7 +79,7 @@ En plus du monitoring standard, vous pouvez autoriser à OVHcloud de surveiller 
 
  Pour ce faire, dans l'onglet `Informations générales`{.action} puis le cadre **État des services**, cliquez sur le bouton `...`{.action} à côté de « Services Monitorés ». Cliquez sur `Monitorer mes services`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
  Vous serez redirigé vers l'écran ci-dessous. Cliquez sur `Monitorer un service`{.action} puis renseignez l'adresse IP, le protocole, le numéro de port, la réponse du serveur et l'intervalle de temps entre les vérifications de votre service. Cliquez sur le symbole de validation (**V**) pour confirmer les modifications.
 

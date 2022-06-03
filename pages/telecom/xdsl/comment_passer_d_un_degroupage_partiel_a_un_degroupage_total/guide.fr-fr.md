@@ -5,7 +5,7 @@ excerpt: Découvrez comment demander le passage de votre accès xDSL en dégroup
 section: 'Gestion de mon offre'
 ---
 
-**Dernière mise à jour le 22/04/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -16,8 +16,8 @@ Le passage d'un dégroupage partiel à total permet de confier à OVHcloud la ge
 
 ## Prérequis
 
--   Disposer d'un accès OVHcloud en dégroupage partiel.
--   Disposer d'une offre éligible.
+- Disposer d'un accès OVHcloud en dégroupage partiel.
+- Disposer d'une offre éligible.
 
 > [!primary]
 > A savoir :
@@ -31,11 +31,11 @@ Le passage d'un dégroupage partiel à total permet de confier à OVHcloud la ge
 
 ### Demander le dégroupage total sur votre accès
 
-Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
+Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action}, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
 
 Dans l'onglet `Mon accès`{.action}, vous retrouverez, dans les `Informations générales`, la possibilité de migrer votre accès en dégroupage total.
 
-![Infos_Générales](images/part_to_total_1.PNG){.thumbnail}
+![Infos_Générales](images/part_to_total_1-2022.png){.thumbnail}
 
 Pour effectuer la portabilité du numéro support de connexion, vous devrez renseigner son RIO avant de valider l'opération. Contactez les services de Orange/France Télécom pour obtenir le RIO.
 

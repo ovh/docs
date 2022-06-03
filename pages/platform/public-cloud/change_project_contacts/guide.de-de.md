@@ -1,72 +1,60 @@
 ---
-title: 'Die Kontakte eines Projekts ändern'
-excerpt: 'Erfahren Sie hier, wie Sie die Kontakte eines Projekts ändern können'
+title: "Kontakte eines Projekts ändern"
+excerpt: Erfahren Sie hier, wie Sie die Kontakte eines Public Cloud Projekts verwalten
 slug: die_kontakte_eines_projekts_andern
-legacy_guide_number: g2106
 section: 'Projektverwaltung'
+order: 6
 ---
 
-**Letzte Aktualisierung am 03.12.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 04.04.2022**
 
 ## Ziel
 
-Mit der OVHcloud Public Cloud können Sie die Kontakte für die Abrechnung und Projektverwaltung ändern.
-Dies bedeutet, dass Sie den OVHcloud Kunden-Account, der Ihre Rechnungen verwaltet, vom OVHcloud Kunden-Account, der Ihre verschiedenen Instanzen verwaltet, trennen können.
+Sie können die Administrator- und Rechnungskontakte von Public Cloud Projekten in Ihrem Kundencenter ändern.<br>
+Die Änderung dieser Kontakte erlaubt es, die technische Verwaltung der Dienste innerhalb eines Projekts von der Abrechnung des Projekts zu trennen.
 
-**In dieser Anleitung wird erläutert, wie Sie Ihre Public Cloud-Kontakte bearbeiten.**
-
+**In dieser Anleitung wird erläutert, wie Sie die Kontakte eines Public Cloud Projekts in Ihrem Kundencenter ändern.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für beide Kennungen.
-- Sie haben sichergestellt, dass sowohl Administrator- als auch Rechnungskontakte derselben OVHcloud Filiale angehören.
+- Sie haben ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud) Projekt in Ihrem OVHcloud Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Administrator- und Rechnungskontakt gehören zu derselben OVHcloud Filiale.
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Kontaktänderung
+### Die Kontakte ändern
 
-Um Ihre Projektkontakte zu ändern, wechseln Sie zunächst mit Klick auf `Contacts and Rights`{.action} in der Projektverwaltung zur Sektion "Kontakte und Berechtigungen".
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie Ihr `Public Cloud`{.action} Projekt. Klicken Sie auf `Contacts and Rights`{.action} im Bereich **Project Management**.
 
-![](images/contact.png){.thumbnail}
+Auf dieser Seite können Sie die Administrator- und Rechnungskontakte Ihres Projekts einsehen.
 
-Sie sehen nun Ihre aktuellen Admin- und Rechnungskontakte.
+![change-kontakte](images/contact1.png){.thumbnail}
 
-![](images/contact1.png){.thumbnail}
+Klicken Sie auf einen der `Ändern`{.action} Buttons, um die aktuellen Kontakte zu bearbeiten. Dies öffnet den Bereich **Verwaltung der Kontakte** Ihres Kundencenters.
 
-Wenn Sie auf `Ändern`{.action} klicken, werden Sie zu einer neuen Seite weitergeleitet, auf der Sie Ihre Kontakte ändern können:
+Die Kontakte Ihres Public Cloud Projekts werden in der Tabelle angezeigt. Klicken Sie auf den Button `...`{.action} und dann auf `Kontakte ändern`{.action}.
 
-![](images/contactchange.png){.thumbnail}
+![change-kontakte](images/contactchange.png){.thumbnail}
 
-Klicken Sie dann auf `...`{.action} rechts neben dem Public Cloud Projekt und dann auf `Kontakte ändern`{.action}. Ein neues Fenster wird angezeigt, in dem Sie die Kontakte eintragen können.
+Geben Sie im neuen Fenster die gewünschte Kundenkennung für jeden Kontakt ein, den Sie ändern möchten. Beachten Sie, dass die OVHcloud Kunden-Accounts für `Administrator-Kontakt` und `Rechnungskontakt` in derselben OVHcloud Filiale registriert sein müssen.
 
-![](images/contactchange1.png){.thumbnail}
+![change-kontakte](images/contactchange1.png){.thumbnail}
 
-Sobald Sie die neuen Kontakte bestätigt haben, erhalten beide OVHcloud Kunden-Accounts eine E-Mail mit einem Code, mit dem sie diese Änderung bestätigen können:
+Nachdem Sie auf `Bestätigen`{.action} geklickt haben, erhalten die beiden von der Änderung betroffenen OVHcloud Kunden-Accounts eine Bestätigungsmail. Diese E-Mail enthält einen Code (Token), mit dem die Kontaktänderung im Tab `Meine Anfragen`{.action} des Bereichs **Verwaltung der Kontakte** bestätigt werden kann.
 
-![](images/contactchange2.png){.thumbnail}
-
-Der Vorgang muss in beiden Konten bestätigt werden.
-
-### Schritt 2: Bestätigung der Änderung
-
-Zu diesem Zweck wechseln Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/manager/dedicated/#/contacts/services) zum Bereich "Verwaltung der Kontakte".
-
-![](images/controlpanel.png){.thumbnail}
-
- Klicken Sie dort auf `Meine Anfragen`{.action} (in beiden Kundenkennungen).
-
-![](images/controlpanel1.png){.thumbnail}
-
-Klicken Sie rechts auf `...`{.action} und bestätigen Sie die Anfrage. Ein neues Fenster wird angezeigt. 
-
-![](images/contactchange3.png){.thumbnail}
-
-Sie müssen nun noch den Code, den Sie per E-Mail erhalten haben, in das angezeigte Fenster einfügen, nachdem Sie den Vorgang von beiden Accounts aus bestätigt haben.
-
-Danach werden die Kontakte wie gewünscht geändert.
+Genauere Informationen zur Vorgehensweise finden Sie in unserer Anleitung "[Die Kontakte Ihrer Dienste verwalten](../../customer/verwaltung-der-kontakte/)".
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).
+[Informationen zu den Abrechnungsoptionen der Public Cloud](../informationen-zu-cloud-abrechnungsoptionen/)
 
+[Die Kontakte Ihrer Dienste verwalten](../../customer/verwaltung-der-kontakte/)
+
+[Projekte delegieren](../seine-Projekte-delegieren/)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

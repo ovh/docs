@@ -59,7 +59,7 @@ Nach dieser Verlängerung ist Ihre Website innerhalb von maximal 48 Stunden verf
 
 ### Schritt 2: DNS Server überprüfen
 
-Um die Gültigkeit Ihrer [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/) zu überprüfen, klicken Sie links in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
+Um die Gültigkeit Ihrer [DNS Server](../../domains/webhosting_allgemeine_informationen_zu_den_dns_servern/) zu überprüfen, klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Domainnamen`{.action} und dann auf die Domain Ihrer Website.
 
 #### Szenario 1: keine Anomalien bei den DNS Servern
 
@@ -118,7 +118,7 @@ In diesem Schritt ermitteln Sie die IP-Adresse Ihres Hostings und fügen sie zu 
 
 Wenn Ihre Website nicht auf der OVHcloud Infrastruktur gehostet ist oder von einem anderen Anbieter verwaltet wird, kontaktieren Sie bitte den zuständigen Support.
 
-Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovh.de/hosting/) gehostet wird, klicken Sie links auf den Tab `Hosting-Pakete`{.action} und anschließend auf das entsprechende Angebot.
+Wenn Ihre Website auf einem unserer [Hosting-Angebote](https://www.ovhcloud.com/de/web-hosting/) gehostet wird, wählen Sie aus `Hosting-Pakete`{.action} den entsprechenden Dienst aus.
 
 Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-Adresse Ihrer Domain.
 

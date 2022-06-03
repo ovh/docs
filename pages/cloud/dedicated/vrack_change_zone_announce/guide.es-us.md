@@ -19,6 +19,11 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} es una red
 - Haber [configurado un bloque de IP en el vRack](../configurar-un-bloque-ip-en-el-vrack/).
 - Tener conocimientos avanzados de redes.
 
+> [!warning]
+> Esta funcionalidad puede no estar disponible o estar limitada en los [servidores dedicados **Eco**](https://eco.ovhcloud.com/es/about/).
+>
+> Para más información, consulte nuestra [comparativa](https://eco.ovhcloud.com/es/compare/).
+
 ## Procedimiento
 
 ### 1. Comprobar la zona de anuncio actual
@@ -48,7 +53,7 @@ Conéctese a la [API de OVHcloud](https://ca.api.ovh.com/console/){.external} co
 > @api {GET} /vrack
 > 
 
-Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
+Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Bare Metal Cloud`{.action}. Haga clic en `Network`{.action} y seleccione `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
 
 > [!api]
 >

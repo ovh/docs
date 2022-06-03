@@ -37,11 +37,11 @@ Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli T
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 
-- W przypadku **domeny** przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} w kolumnie z lewej strony i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
-- W przypadku **hostingu WWW** przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action} w kolumnie z lewej strony, a następnie wybierz Twój hosting. Data wygaśnięcia lub automatycznego odnowienia hostingu zostanie pokazana na górze strony.
-- W przypadku oferty **MXplan** przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action} w kolumnie z lewej strony, a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
-- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
-- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku **domeny** przejdź do sekcji `Web Cloud`{.action}, kliknij `Domeny`{.action} i wybierz Twoją domenę. Jeśli Twoja domena wygasła, zostanie to wyświetlone na górze strony.
+- W przypadku **hostingu WWW** przejdź do sekcji `Web Cloud`{.action}, kliknij `Hosting`{.action}, a następnie wybierz Twój hosting. Data wygaśnięcia lub automatycznego odnowienia hostingu zostanie pokazana na górze strony.
+- W przypadku oferty **MXplan** przejdź do sekcji `Web Cloud`{.action}, kliknij `E-maile`{.action}, a następnie wybierz odpowiednią nazwę domeny. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 
 ### Nie mogę wysyłać e-maili z programu pocztowego
 
@@ -63,19 +63,19 @@ Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://ww
 
 ### Nie mogę się zalogować do interfejsu Webmail
 
-Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovh.pl/emaile/hosted-exchange/)).
+Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)).
 
 W jaki sposób zmienić hasło do konta e-mail:
 
 - W przypadku oferty **MXplan** zapoznaj się z naszym przewodnikiem [Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
 
-- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action} w kolumnie z lewej strony, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
+- W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło.
 
-- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action} w kolumnie z lewej strony, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
+- W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-2fa-exchange/).
 
 ### Masz problem z utrzymaniem usługi?
 
-Możesz sprawdzić różne zadania obecnie wykonywane prace na <http://travaux.ovh.net/>.
+Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-cloud.status-ovhcloud.com/>.
 
 - Aby **MXplan**, sprawdź w sekcji `E-maile`
 - W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`
@@ -122,6 +122,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |502|Zamówienie nie zostało zrealizowane|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
 |503|Serwer napotkał złą sekwencję poleceń|Powodem tego problemu jest problem z uwierzytelnianiem. Upewnij się, że jesteś uwierzytelniony na serwerze SMTP podczas konfiguracji programu pocztowego.|
 |504|Parametr zamówienia nie został zrealizowany|Parametry lub opcje używane podczas wysyłki e-maila do serwera SMTP są rozpoznawane, ale są wyłączone w konfiguracji. Skontaktuj się z dostawcą usług|
+|535|błąd podczas logowania|Informacje użytkownika/hasło są niewidoczne lub wysyłka jest potencjalnie zablokowana na Twoim koncie e-mail. Sprawdź stan Twojego konta e-mail w Panelu klienta OVHcloud. Zmiana hasła może odblokować wysyłkę, jeśli konto zostało zablokowane ze względu na spam, zapoznaj się z naszym przewodnikiem [Co zrobić, jeśli moje konto zostało zablokowane z powodu rozsyłania spamu?](https://docs.ovh.com/pl/microsoft-collaborative-solutions/blokada-za-spam/), aby uzyskać więcej informacji|
 |550|Operacja nie została wykonana: skrzynka pocztowa niedostępna|Docelowy serwer poczty elektronicznej nie mógł sprawdzić używanego adresu e-mail. Jest to najczęściej spowodowane nieprawidłowym adresem e-mail docelowym, ale może również oznaczać, że docelowy serwer poczty elektronicznej ma problemy z zaporą lub połączeniem. Sprawdź adres e-mail odbiorcy i/lub spróbuj ponownie|
 |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|

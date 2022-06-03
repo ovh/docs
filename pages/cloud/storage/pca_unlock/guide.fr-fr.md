@@ -3,6 +3,7 @@ title: Dégeler vos données stockées sur Public Cloud Archive
 slug: pca/unlock
 excerpt: Retrouvez ici comment dégeler vos archives
 section: Public Cloud Archive
+order: 030
 ---
 
 **Dernière mise à jour le 23/09/2021**
@@ -37,7 +38,7 @@ Une fois le processus entamé, la date et l'heure de disponibilité de votre arc
 
 ![délai avant dégel](images/unfreeze_result.png){.thumbnail}
 
-Votre fichier sera disponible au téléchargement à l'issue de ce délai. Vous pourrez alors entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](https://docs.ovh.com/fr/storage/pca/sftp/).
+Votre fichier sera disponible au téléchargement à l'issue de ce délai. Vous pourrez alors entammer le téléchargement directement par le navigateur ou via un [client Swift/SFTP/SCP](https://docs.ovh.com/fr/storage/pca/sftp/).
 
 ### Dégeler vos objets via python-swiftclient
 

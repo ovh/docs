@@ -2,7 +2,8 @@
 title: Configuring multi-attach persistent volumes with OVHcloud NAS-HA
 slug: Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha
 excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcloud NAS-HA'
-section: Tutorials
+section: Storage
+order: 4
 ---
 
 <style>

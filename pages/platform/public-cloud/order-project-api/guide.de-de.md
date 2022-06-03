@@ -6,7 +6,7 @@ section: Erste Schritte
 order: 9
 ---
 
-**Letzte Aktualisierung am 22 Dezember 2020**
+**Letzte Aktualisierung am 22.12.2020**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -23,7 +23,7 @@ Die Erstellung eines Projekts ist der erste Schritt zum Deployment von [Public C
 
 - Sie verfügen über gültige OVHcloud-Kennungen
 - Sie haben einen [gültigen](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/) und in Ihrem OVHcloud Account gespeicherten Zahlungsmodus
-- Sie müssen mit der [Funktionsweise der OVHcloud APIv6 vertraut sein](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Sie müssen mit der [Funktionsweise der OVHcloud APIv6 vertraut sein](https://docs.ovh.com/de/api/first-steps-with-ovh-api/).
 
 ## In der praktischen Anwendung
 

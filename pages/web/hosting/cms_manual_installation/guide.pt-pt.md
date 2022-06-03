@@ -43,7 +43,7 @@ Os nossos serviços de Alojamento Web são compatíveis com alguns dos mais popu
 O WordPress é um software que pode ser utilizado para criar um website ou um blog. É baseado na tecnologia PHP e dispõe de uma variedade de ferramentas que incluem um corretor ortográfico e plugins SEO.
 
 
-- [Módulo WordPress](https://www.ovh.pt/alojamento-partilhado/website/wordpress.xml)
+- [Módulo WordPress](https://www.ovhcloud.com/pt/web-hosting/uc-wordpress-website/)
 
 A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do WordPress.
 
@@ -55,7 +55,7 @@ Para isso, poderá consultar os fóruns dedicados ao [WordPress](https://wordpre
 
 
 
-![](images/img_3379.jpg){.thumbnail}
+![CMS](images/3379.png){.thumbnail}
 
 
 ### Joomla!
@@ -64,7 +64,7 @@ Vencedor de alguns prémios, o Joomla! é um software extremamente fácil de usa
 A sua comunidade é bastante extensa e pode fornecer ajuda e outras contribuições em todas as áreas do CMS (ajuda, documentação, assistência técnica, temas, etc.).
 
 
-- [Módulo Joomla!](https://www.ovh.pt/alojamento-partilhado/website/joomla.xml)
+- [Módulo Joomla!](https://www.ovhcloud.com/pt/web-hosting/uc-joomla-website/)
 
 A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do Joomla!.
 
@@ -75,7 +75,7 @@ Para isso, poderá consultar os fóruns dedicados ao [Joomla!.](http://forum.joo
 
 
 
-![](images/img_3380.jpg){.thumbnail}
+![CMS](images/3380.png){.thumbnail}
 
 
 ### PrestaShop
@@ -87,7 +87,7 @@ Desde 2005, o software não tem parado de evoluir. Vai já na sua versão 1.7.6.
 
 
 
-- [Módulo PrestaShop](https://www.ovh.pt/alojamento-partilhado/website/prestashop.xml)
+- [Módulo PrestaShop](https://www.ovhcloud.com/pt/web-hosting/uc-prestashop-website/)
 
 A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do PrestaShop.
 
@@ -102,13 +102,13 @@ Para isso, poderá consultar o fórum dedicado ao
 
 
 
-![](images/img_3381.jpg){.thumbnail}
+![CMS](images/3381.png){.thumbnail}
 
 
 ### Drupal
 O Drupal é uma plataforma grátis e open-source baseada em PHP lançada no ano 2000. É um criador rápido de websites. Esta ferramenta é personalizável, sendo atualmente utilizada por 1% dos websites a nível mundial. 
 
--  [Módulo Drupal](https://www.ovh.pt/alojamento-partilhado/website/drupal.xml)
+-  [Módulo Drupal](https://www.ovhcloud.com/pt/web-hosting/uc-drupal-website/)
 
 A equipa de assistência da OVHcloud não está autorizada a responder a questões sobre configuração do Drupal.
 
@@ -119,7 +119,7 @@ Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal
 
 
 
-![](images/img_3382.jpg){.thumbnail}
+![CMS](images/3382.png){.thumbnail}
 
 
 
@@ -132,6 +132,6 @@ Para isso, poderá consultar os fóruns dedicados ao [Drupal](https://www.drupal
 
 [Partilhar o alojamento entre vários sites](../multisites-configurar-um-multisite-no-meu-alojamento-web/){.external}
 
-Consulte ainda as nossas [Soluções de alojamento de websites](https://www.ovh.pt/alojamento-partilhado//){.external}
+Consulte ainda as nossas [Soluções de alojamento de websites](https://www.ovhcloud.com/pt/web-hosting//){.external}
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

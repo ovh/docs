@@ -7,7 +7,7 @@ section: Envoi/Réception de fax
 order: 2
 ---
 
-**Dernière mise à jour le 14/04/2021**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -28,7 +28,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsucc
 
 Cliquez sur l'onglet `Fax`{.action} puis sur `Campagnes de fax`{.action}.
 
-![campagne fax](images/01campagne-fax.png){.thumbnail}
+![campagne fax](images/01campagne-fax2022.png){.thumbnail}
 
 Cliquez sur le bouton `+ Nouvelle campagne`{.action} pour configurer votre campagne de fax.
 

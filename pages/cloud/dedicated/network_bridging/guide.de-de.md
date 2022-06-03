@@ -25,6 +25,11 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 - Sie verfügen über mindestens eine mit dem Server verbundene [Failover IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## In der praktischen Anwendung
 
 Die Grundschritte sind unabhängig von dem darunterliegenden System immer gleich:
@@ -41,9 +46,11 @@ Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu 
 
 ### Schritt 1: Eine virtuelle MAC-Adresse zuweisen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wechseln Sie zum Bereich `Bare Metal Cloud`{.action}. Klicken Sie dann links im Menü auf `IP`{.action} und identifizieren Sie Ihre Failover IP in der Tabelle.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
 
-![IP Failover](images/virtual_mac_01_2020_1.png){.thumbnail}
+Das Drop-down-Menü “Dienst” erlaubt es Ihnen, nach Failover-IP-Adressen zu filtern.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Klicken Sie auf `...`{.action} in der betreffenden Zeile um das Kontextmenü zu öffnen und klicken Sie dann auf `Virtuelle MAC-Adresse hinzufügen`{.action}.
 
@@ -51,7 +58,7 @@ Klicken Sie auf `...`{.action} in der betreffenden Zeile um das Kontextmenü zu 
 
 Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMware ESXi verwenden - andernfalls wählen Sie `vmware`{.action}. Geben Sie einen Namen in das Feld "Name der virtuellen Maschine" ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-![Virtuelle MAC-Adresse hinzufügen (2)](images/virtual_mac_03.png){.thumbnail}
+![Virtuelle MAC-Adresse hinzufügen (2)](images/addvmac2.png){.thumbnail}
 
 ### Schritt 2: Die Adresse des Gateways bestimmen
 
@@ -108,7 +115,7 @@ Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (De
 
 - Ältere Distributionen:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -123,7 +130,7 @@ iface eth0 inet static
 
 - Aktuelle Distributionen:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -138,7 +145,7 @@ iface eth0 inet static
 
 Ersetzen Sie auch `eth0`, wenn Ihr System *Predictible Network Interface Names* verwendet. Sie können die Netzwerkinterface-Namen mit folgendem Befehl finden:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -148,7 +155,7 @@ Speichern und schließen Sie die Datei und starten Sie den Netzwerkdienst oder d
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/network/interfaces` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -166,7 +173,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, in `/etc/sysconfig/network-scripts/route-eth0`. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -182,7 +189,7 @@ Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/sysconfig/network-scripts/ifcfg-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -200,7 +207,7 @@ HWADDR=MY:VI:RT:UA:LM:AC
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, die sich in `/etc/sysconfig/network-scripts/route-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
@@ -209,7 +216,7 @@ default GATEWAY_IP
 Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die DNS-Konfigurationsdatei der VM, die sich unter `/etc/sysconfig/network/resolv.conf` befindet und fügen Sie die folgende Zeile ein:
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -219,7 +226,7 @@ Speichern und schließen Sie die Datei und starten Sie den Netzwerkdienst oder d
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/rc.conf` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.) In diesem Beispiel lautet der Name des Interface "em0". Ersetzen Sie diesen Wert nötigenfalls.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -229,7 +236,7 @@ route_net2="default GATEWAY_IP"
 Speichern und schließen Sie die Datei.<br>
 Öffnen/erstellen Sie anschließend die Datei `/etc/resolv.conf` und fügen Sie die folgende Zeile ein:
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -239,13 +246,13 @@ Speichern und schließen Sie die Datei und starten Sie die VM neu.
 
 Öffnen Sie ein Terminal auf Ihrer VM. Öffnen Sie die Netzwerkkonfigurationsdatei, die sich in `/etc/netplan/` befindet mit folgendem Befehl. Zu Demonstrationszwecken heißt unsere Datei "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Wenn die Datei zum Bearbeiten geöffnet ist, passen Sie die folgenden Zeilen an:
 
-```sh
+```yaml
 network:
     ethernets:
         (interface-name):
@@ -265,7 +272,7 @@ network:
 
 Speichern und schließen Sie die Datei und führen Sie folgenden Befehl aus:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

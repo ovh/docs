@@ -7,9 +7,9 @@ section: vRack
 
 **Última atualização: 24/04/2019**
 
-## Sumário
+## Objectivo
 
-O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external} da OVH.
+O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external} da OVHcloud.
 
 **Saiba como definir uma zona de anúncio de um bloco IP no vRack.**
 
@@ -18,6 +18,11 @@ O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que
 - Ter um [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
 - Ter [configurado um bloco de endereços IP no vRack](https://docs.ovh.com/pt/dedicated/adicionar-ou-remover-um-bloco-ip-do-vrack/).
 - Ter conhecimentos avançados de rede.
+
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
 
 ## Instruções
 
@@ -41,14 +46,14 @@ O exemplo acima mostra que o endereço IP testado está atualmente anunciado em 
 
 ### 2 - Alterar o anúncio do bloco IP
 
-Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de cliente OVH. A seguir, utilize as API abaixo para alterar o anúncio do bloco IP.
+Aceda à ligação <https://api.ovh.com/console/> e conecte-se com o seu ID de cliente OVHcloud. A seguir, utilize as API abaixo para alterar o anúncio do bloco IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para o consultar. Para isso, aceda à secção “Cloud” e selecione “vRack”.
+Esta API permite recuperar a lista dos serviços vRack. Caso não consigo identificar o serviço afetado através destas referências, consulte a [Área de Cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para o consultar. Para isso, aceda à secção `Bare Metal Cloud`{.action}, depois `Network`{.action} e selecione “vRack”. 
 
 > [!api]
 >

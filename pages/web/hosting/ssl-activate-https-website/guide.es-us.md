@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud incluyen un certificado SSL gratuito. Dicho ce
 
 ## Requisitos
 
-- Tener un [certificado SSL](https://www.ovh.com/world/es/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener un [certificado SSL](https://www.ovh.com/world/es/ssl/){.external} instalado en su [alojamiento web de OVH](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Tener al menos un sitio web instalado y accesible en su alojamiento web de OVHcloud.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
@@ -50,7 +50,7 @@ Para activar el certificado SSL en un alojamiento web, conéctese al [área de c
 
 Para más información sobre estas dos acciones, consulte nuestra guía [Gestionar un certificado SSL en un alojamiento web](../gestionar-un-certificado-ssl-en-un-alojamiento-web/){.external}. Si ha contratado recientemente su alojamiento web con OVH, es posible que este último ya tenga un certificado SSL instalado y que la conexión SSL para el multisitio ya esté activa.
 
-Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
+Para comprobarlo, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. Por defecto, se abrirá la pestaña **Información general**. En el panel **Configuración**, consulte la información que aparece bajo el epígrafe **Certificado SSL**. Si se indica «Sí», significa que hay un certificado SSL instalado en el alojamiento web. 
 
 ![Sitio web en HTTPS](images/activate-https-website-ssl-step2.png){.thumbnail}
 

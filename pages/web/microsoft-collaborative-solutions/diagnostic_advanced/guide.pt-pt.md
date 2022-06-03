@@ -21,7 +21,7 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 
 ## Requisitos
 
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/) já instalada
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
 - Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
@@ -29,7 +29,7 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 
 ### Realizar um diagnóstico
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Selecione `Microsoft`{.action} no menu à esquerda e clique em `Exchange`{.action} e selecione o seu serviço.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Selecione `Microsoft`{.action} e clique em `Exchange`{.action} e selecione o seu serviço.
 
 ![Diagnóstico Exchange](images/img_4450.png){.thumbnail}
 
@@ -93,7 +93,7 @@ Em função da utilização do seu serviço Exchange, os seguintes servidores MX
 
 > [!warning]
 > Nos nossos guias, utilizamos como nome de servidor: ex<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número correspondente ao servidor do seu serviço Exchange.<br>
-> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}.  Abra `Microsoft`{.action} no menu à esquerda, depois `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
+> Encontrará estas informações na Área de Cliente OVHcloud, na secção `Web Cloud`{.action}. Abra `Microsoft`{.action}, depois `Exchange`{.action} e selecione o seu serviço. O nome do servidor aparece na zona **Ligação** do separador `Informações gerais`{.action}.
 >
 
 > [!primary]
@@ -123,7 +123,7 @@ Este erro indica um erro geral de envio de e-mails que pode ter várias causas:
 - [A sua conta foi suspensa](#expired)
 - [A password introduzida está incorreta](#password)
 - [A sua conta foi bloqueada devido ao envio de correio indesejável](#blocked)
-- [Ocorreu um incidente na infraestrutura](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Ocorreu um incidente na infraestrutura](https://web-cloud.status-ovhcloud.com/)
 
 ## Saiba mais
 

@@ -22,7 +22,7 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 
 ## Prérequis
 
-- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
+- Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovhcloud.com/fr/web-hosting/){.external} .
 - Avoir l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -33,7 +33,7 @@ Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 
 Dans le tableau listant vos différentes adresses e-mails, cliquez sur l'icône `Filtre`{.action} de l'adresse concernée.
 
-![emails](images/img_3239.jpg){.thumbnail}
+![emails](images/img_3239.png){.thumbnail}
 
 Vous accéderez à la liste de vos filtres actuellement configurés pour cette adresse e-mail. Pour en ajouter un, cliquez donc sur le bouton à droite `Ajouter un Filtre`{.action}.
 

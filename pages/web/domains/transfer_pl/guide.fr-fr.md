@@ -68,11 +68,11 @@ Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom 
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVHcloud
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovh.com/fr/domaines/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovhcloud.com/fr/domains/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas encore du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer. N'oubliez pas que le transfert ne démarrera pas tant qu'un code valide n'aura pas été fourni.
 
-Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/) » vous fournira des instructions sur la façon de procéder.
+Vous pouvez également terminer votre commande avec un [hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} et d'autres solutions OVHcloud. Cela peut vous intéresser si vous souhaitez également migrer vos services vers OVHcloud. Notre guide intitulé « [Migrer mon site chez OVHcloud](../../hosting/migrer-mon-site-chez-ovh/) » vous fournira des instructions sur la façon de procéder.
 
 > [!warning]
 >
@@ -93,7 +93,7 @@ Vous pouvez également terminer votre commande avec un [hébergement web](https:
 
 ![domaine](images/Order_summary.png){.thumbnail}
 
-Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action} dans la barre de services située à gauche, puis `Opérations en cours`{.action}.
+Une fois la commande validée, vous recevrez un bon de commande gratuit. Le processus de transfert ne démarrera qu'après validation de ce bon de commande gratuit. Une fois cette opération effectuée, vous pouvez suivre la progression du transfert via [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour suivre la progression, cliquez sur `Noms de domaine`{.action}, puis `Opérations en cours`{.action}.
 
 ### Étape 4 : Validation du transfert
 
@@ -111,7 +111,7 @@ La procédure de transfert de nom de domaine implique une validation par e-mail.
 
 ### Étape 5 : gérer son nom de domaine avec OVHcloud
 
-Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné.
+Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de domaine à partir de l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour ce faire, sélectionnez `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis cliquez sur le nom de domaine concerné.
 
 ## Aller plus loin
 

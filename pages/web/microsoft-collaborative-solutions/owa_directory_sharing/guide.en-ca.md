@@ -17,7 +17,7 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.com/ca/en/emails/hosted-exchange/) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 

@@ -16,7 +16,7 @@ U hebt onlangs de oplossing E-mail Pro aangeschaft. Hiermee kunt u profiteren va
 
 ## Vereisten
 
-- U moet beschikken over [E-mail Pro](https://www.ovh.nl/emails/email-pro/){.external}.
+- U moet beschikken over [E-mail Pro](https://www.ovhcloud.com/nl/emails/email-pro/){.external}.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw E-mail Pro is geïnstalleerd.
 - U moet beschikken over een domeinnaam. 
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.

@@ -17,7 +17,7 @@ De Hosted Exchange-dienst kan bedrijfsspecifieke e-mailadressen gebruiken die he
 
 ## Vereisten
 
-- U moet een abonnement op een [Hosted Exchange](https://www.ovh.nl/emails/hosted-exchange/){.external}-oplossing hebben.
+- U moet een abonnement op een [Hosted Exchange](https://www.ovhcloud.com/nl/emails/hosted-exchange/){.external}-oplossing hebben.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw Hosted Exchange is geïnstalleerd.
 - U moet beschikken over een domeinnaam. 
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
@@ -91,7 +91,7 @@ Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken
 
 Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst.
 
-OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
+OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
 > [!primary]
 >

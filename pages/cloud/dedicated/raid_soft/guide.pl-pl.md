@@ -11,7 +11,7 @@ section: 'RAID & dyski'
 
 RAID (Redundant Array of Independent Disks) to narzędzie pozwalające zminimalizować ryzyko utraty danych zapisanych na serwerze poprzez ich replikację na wielu dyskach.
 
-Domyślny poziom RAID dla serwerów OVH to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę. 
+Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę. 
 
 **W tym przewodniku wyjaśniamy, jak skonfigurować macierz RAID Twojego serwera w przypadku, gdy musi ona zostać odtworzona z powodu awarii lub uszkodzenia dysku.**
 
@@ -37,7 +37,7 @@ md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
 unused devices: <none>
 ```
 
-Polecenie wskazuje dwie aktualnie skonfigurowane macierze RAID, przy czym „md2” jest największą partycją. Partycja składa się z trzech dysków o nazwach: „sda2”, „sdb2” i „sdc2”. \[UUU] oznacza, że wszystkie dyski działają prawidłowo. „F” wskazuje wadliwy dysk.
+Polecenie wskazuje dwie aktualnie skonfigurowane macierze RAID, przy czym “md2” jest największą partycją. Partycja składa się z trzech dysków o nazwach: “sda2”, “sdb2” i “sdc2”. [UUU] oznacza, że wszystkie dyski działają prawidłowo. “F” wskazuje wadliwy dysk.
 
 W poleceniu ukazane są wielkości macierzy RAID, nie podane są jednak rozmiary samych partycji. Informację tę można uzyskać za pomocą polecenia:
 
@@ -99,7 +99,7 @@ Disk identifier: 0x00000000
 Disk /dev/md2 doesn't contain a valid partition table
 ```
 
-Polecenie pokazuje, że `/dev/md1` ma wielkość 21 GB, a `/dev/md2` 98,5 GB. Zastosuj polecenie „mount”, aby zobaczyć stan dysku.
+Polecenie pokazuje, że `/dev/md1` ma wielkość 21 GB, a `/dev/md2` 98,5 GB. Zastosuj polecenie “mount”, aby zobaczyć stan dysku.
 
 ```sh
 /dev/root on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
@@ -209,12 +209,12 @@ Working Devices : 2
        2       8       34        2      active sync   /dev/sdc2
 ```
 
-Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk „sdb”) do nowego dysku „sda” za pomocą następującego polecenia: 
+Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia: 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
-Teraz możesz odtworzyć macierz RAID. Poniższy fragment kodu pokazuje, jak odtworzyć układ partycji `/dev/md2` za pomocą skopiowanej tablicy partycji „sda”: 
+Teraz możesz odtworzyć macierz RAID. Poniższy fragment kodu pokazuje, jak odtworzyć układ partycji `/dev/md2` za pomocą skopiowanej tablicy partycji “sda”: 
 
 ```sh
 mdadm --add /dev/md2 /dev/sda2

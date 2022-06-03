@@ -5,18 +5,20 @@ excerpt: 'Saiba como montar um NAS através de NFS'
 section: NAS
 ---
 
+**Última atualização: 21/02/2022**
+
 ## Requisitos
 
 Este manual explica-lhe como realizar uma montagem NFS nas distribuições mais comuns. Para isso, precisará de:
 
-- Um NAS da OVH.
-- Uma máquina na rede da OVH (servidor dedicado, VPS, instância, etc.).
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) **ou** um [VPS]https://www.ovhcloud.com/pt/vps/) **ou** uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/).
+- Uma oferta [NAS-HA](https://www.ovh.pt/nas/).
 - Uma distribuição compatível NFS.
 
 
 ### Linux
 
-Compatibilidade: Debian 6/7/8 & Ubuntu 12/13/14
+Compatibilidade: Debian & Ubuntu
 
 Para montar um NFS em Linux, é necessário:
 
@@ -65,9 +67,7 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Compatibilidade: CentOS 6
-
-Para montar um NFS em CentOS 6, é necessário:
+Para montar um NFS em CentOS, é necessário:
 
 - Aceder ao servidor em SSH.
 - Instalar os pacotes "nfs-utils" e "rpcbind" através do comando:
@@ -227,3 +227,7 @@ Terá de preencher o formulário:
 >
 > O utilizador NFS é `root` e as alterações de direitos deste utilizador podem gerar conflitos com os direitos CIFS/SMB existentes.
 > 
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

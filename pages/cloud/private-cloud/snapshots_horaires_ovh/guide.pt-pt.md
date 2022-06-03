@@ -11,7 +11,7 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/10/2020**
+**Última atualização: 15/03/2022**
 
 ## Sumário
 
@@ -46,6 +46,11 @@ Por conseguinte, pode dizer-se que a dimensão de uma snapshot é aproximadament
 Na prática, uma snapshot criada no instante T só terá alguns quilos de byte. O tamanho da snapshot irá aumentar de acordo com as alterações efetuadas até à próxima snapshot. Se eliminar os seus dados, o espaço só será libertado após a eliminação da snapshot.
 
 ## Snapshot a H-1
+
+> [!warning]
+>
+>A pasta .zfs deixou de ser visível nas novas gerações de datastores. No entanto, pode passar pelo suporte técnico para pedir o restauro de uma VM com uma snapshot horária a H-1.
+>
 
 Tem a possibilidade de recuperar o snapshot ZFS da última hora (H-1) a partir do vSphere Web Client HTML, pois este é diretamente armazenado nos seus datastores. 
 

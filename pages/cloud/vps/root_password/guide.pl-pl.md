@@ -5,10 +5,10 @@ excerpt: Sprawdź, jak zmienić hasło root
 section: Diagnostyka i tryb Rescue
 ---
 
-**Ostatnia aktualizacja z dnia 27/04/2021 r**
+**Ostatnia aktualizacja z dnia 27/04/2021**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -28,7 +28,7 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 
 > [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
 ## W praktyce
@@ -69,7 +69,7 @@ Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z 
 
 #### Etap 1: Zrestartuj serwer VPS do trybu Rescue.
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](../rescue/).
 
 #### Etap 2: Sprawdzenie punktu montowania
 
@@ -199,7 +199,7 @@ Powinno to wystarczyć do wdrożenia zmian. Możesz również zrestartować serw
 Jeśli po zmianie hasła i uruchomieniu pojawią się problemy z jego rozpoczęciem:
 
 - Sprawdź KVM, dlaczego VPS nie może uruchomić. Zapoznaj się z [przewodnikiem KVM](../kvm_na_serwerach_vps/), aby uzyskać pomoc w korzystaniu z tej funkcji w Panelu klienta OVHcloud.
-- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](../wyswietlanie-bootlog-w-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
+- Jeśli KVM wyświetla uruchomienie serwera VPS lub nie jest w stanie odnaleźć dysku, upewnij się, że [bootlog jest włączony](../wyswietlanie-bootlog-w-kvm/). Prześlij stosowne logi do naszych zespołów wsparcia, tworząc zgłoszenie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby uzyskać więcej informacji.
 
 ## Sprawdź również
 

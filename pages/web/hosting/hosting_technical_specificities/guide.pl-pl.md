@@ -6,7 +6,11 @@ section: 'Konfiguracja hostingu'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 14-05-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 22-02-2022**
 
 ## Wprowadzenie
 
@@ -14,7 +18,7 @@ order: 6
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu WWW](https://www.ovh.pl/hosting/){.external}
+- Posiadanie kompatybilnego [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -36,15 +40,15 @@ order: 6
 
 ### Jednoczesne połączenia z bazą danych
 
-- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 w przypadku prywatnej bazy danych). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovh.pl/hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
+- Oferty hostingu WWW (współdzielone bazy danych) są objęte ograniczeniem do 30 jednoczesnych połączeń z każdą bazą danych (200 z bazą danych CloudDB). Sprawdź [szczegóły naszych ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/), aby poznać dostępne opcje w każdym planie hostingu WWW.
 
-- Możesz również zamówić dodatkowe bazy danych **Private SQL**, które mają opcje personalizacji:
+- Możesz również zamówić dodatkowe bazy danych **CloudDB**, które mają opcje personalizacji:
 
     - *max_connections*: domyślnie 100, z możliwością zwiększenia do 200
 
     - *max_user_connections*: domyślnie 50, z możliwością zwiększenia do 200
 
-Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovh.pl/hosting/) i [przewodnikiem](../pierwsze-kroki-private-sql/).
+Aby uzyskać więcej informacji, zapoznaj się ze szczegółami naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/) i [przewodnikiem](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 
 #### Połączenia z serwera zewnętrznego
 
@@ -65,7 +69,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 ### PHP
 
-- Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovh.pl/hosting/php.xml), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
+- Zapoznaj się z przewodnikiem po [ofertach hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/), aby upewnić się, że plan hostingu, który chcesz zamówić, odpowiada Twoim potrzebom.
 
 - Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 
@@ -117,9 +121,35 @@ Zapoznaj się z odpowiednimi stronami informacyjnymi, aby sprawdzić, które bib
 
 Różne informacje na temat Twojego klastra znajdziesz pod tym linkiem: <https://webhosting-infos.hosting.ovh.net>
 
-Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i na górnym pasku nawigacji wybierz pozycję `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
+Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz pozycję `Web Cloud`{.action}. Kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
 
 Aby poznać informacje techniczne dotyczące oferty Cloud Web, przejdź bezpośrednio na stronę <https://cloudweb-infos.hosting.ovh.net/>.
+
+### Informacje o automatycznych kopiach zapasowych <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud zobowiązuje się do świadczenia usługi automatycznego tworzenia kopii zapasowych danych oraz udostępniania tych kopii zapasowych. Twoja odpowiedzialność spoczywa jednak na wdrożeniu własnej polityki przywracania i na określeniu punktów przywracania, kiedy uważasz to za stosowne.
+
+#### przestrzeni dyskowej
+
+Wszystkie nasze pakiety hostingowe są zainstalowane:
+
+- w Gravelines (GRA) we Francji dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Roubaix (RBX) we Francji.
+
+- w Beauharnois (BHS) w Kanadzie, dysponują automatycznymi kopiami zapasowymi w dniu 1 / D-2 / D-3 / D-7 / D-14. Kopie te są również przechowywane w centrum danych w Beauharnois (BHS) w Kanadzie.
+
+Dowiedz się, jak [zalogować się do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dyskowa-ftp-hosting-web/) lub [przywrócić przestrzeń dyskową hostingu](https://docs.ovh.com/pl/hosting/hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/) w dokumentacji OVHcloud.
+
+#### Baza danych / SQL
+
+W przypadku baz danych na hostingu (zawartych w ofercie hostingu www) lub serwerów baz danych (Private SQL / Cloud Databases) dostępnych w Gravelines (GRA), we Francji i Beauharnois (BHS) w Kanadzie kopia zapasowa baz danych jest wykonywana codziennie. Kopie te są dostępne (poprzez [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub poprzez [API OVHcloud](https://api.ovh.com/). Kopie zapasowe są również przechowywane na innej infrastrukturze. Dane te są kopiowane w 3 różnych miejscach we Francji: Roubaix (RBX), Strasburg (SBG) i Gravelines (GRA). Polityka przechowywania kopii zapasowych wynosi 30 dni.
+
+Dowiedz się, jak [Pobierz kopię zapasową bazy danych hostingu WWW](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/) w naszej dokumentacji.
+
+#### E-mail
+
+Dla kont e-mail na hostingu (zawartych w ofercie hostingu WWW) wykonywana jest codzienna kopia automatyczna do innego centrum danych.
 
 ## Polityka wykorzystywania plików cookie
 

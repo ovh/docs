@@ -2,7 +2,7 @@
 title: 'Configuring an Email Pro address on Thunderbird for Windows'
 slug: configure-emailpro-for-thunderbird-windows
 routes:
-    canonical: 'https://https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
+    canonical: 'https://docs.ovh.com/gb/en/emails/configure-email-for-thunderbird-windows/'
 excerpt: 'Find out how to configure your Email Pro address in Thunderbird for Windows'
 section: 'Email client configuration'
 order: 5
@@ -24,7 +24,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.co.uk/emails/email-pro/)account
+- an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/)account
 - Thunderbird software installed on your Windows system
 - login credentials for the email account to be configured
  
@@ -32,9 +32,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 ### Adding the account
@@ -73,10 +73,11 @@ If you need to make a change that could lead to the loss of your email account d
 
 > [!primary]
 >
-> In this guide, we use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
+
 
 If your email account has already been set up and you need to access the account settings to change them:
 

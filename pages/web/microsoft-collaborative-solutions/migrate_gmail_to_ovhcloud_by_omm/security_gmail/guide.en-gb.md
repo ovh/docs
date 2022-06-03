@@ -4,7 +4,7 @@ slug: gmail-security
 hidden: true
 ---
 
-**Last updated 09th March 2020**
+**Last updated 06th April 2022**
 
 ## Objective
 
@@ -42,6 +42,13 @@ The purpose of this email is to check if it was you that turned on less secure a
 Once you have confirmed, the message below will show that your choice has been processed. You can now log in to your Gmail account outside of Google applications.
 
 ![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> You need to have a password of at least 16 characters on your Gmail account, also called “application password”. When you “authorise less secure apps”, a strong password must be applied to your Gmail account.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
 
 ## Go further
 

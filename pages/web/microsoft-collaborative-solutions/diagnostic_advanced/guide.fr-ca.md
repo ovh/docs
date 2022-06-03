@@ -17,7 +17,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 ## Prérequis
 
-- Disposer d'une [solution Exchange OVHcloud](https://www.ovh.com/ca/fr/emails/hosted-exchange/) déjà installée
+- Disposer d'une [solution Exchange OVHcloud](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) déjà installée
 - Disposer des informations d'identification pour le compte Exchange à vérifier
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
@@ -25,7 +25,7 @@ Les erreurs sur les comptes e-mail Exchange peuvent avoir une multitude de cause
 
 ### Réaliser un diagnostic
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action} dans le menu à gauche puis cliquez sur `Exchange`{.action} et sélectionnez votre service.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action} puis cliquez sur `Exchange`{.action} et sélectionnez votre service.
 
 ![Diagnostic Exchange](images/img_4450.png){.thumbnail}
 
@@ -89,7 +89,7 @@ En fonction de l'utilisation de votre service Exchange, les serveurs MX suivants
 
 > [!warning] 
 > Dans nos guides, nous utilisons comme nom de serveur: ex<b>?</b>.mail.ovh.net. Vous devrez remplacer le « ? » par le numéro correspondant au serveur de votre service Exchange.<br>
-> Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}.  Ouvrez `Microsoft`{.action} dans le menu à gauche, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
+> Vous trouverez ces informations dans l'espace client OVHcloud, dans la section `Web Cloud`{.action}. Ouvrez `Microsoft`{.action}, puis `Exchange`{.action} et sélectionnez votre service. Le nom du serveur s'affiche dans la zone **Connexion** de l'onglet `Informations générales`{.action}.
 >
 
 > [!primary]
@@ -119,7 +119,7 @@ Cette erreur indique un échec général d'envoi d'e-mails pouvant avoir plusieu
 - [Votre compte a été suspendu](#expired)
 - [Le mot de passe entré est incorrect](#password)
 - [Votre compte a été bloqué pour l'envoi de courrier indésirable](#blocked)
-- [Un incident s'est produit sur l'infrastructure](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Un incident s'est produit sur l'infrastructure](https://web-cloud.status-ovhcloud.com/)
 
 ## Aller plus loin
 

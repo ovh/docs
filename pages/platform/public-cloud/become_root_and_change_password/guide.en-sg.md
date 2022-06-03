@@ -2,30 +2,24 @@
 title: 'Become the root user and select a password'
 slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'
-legacy_guide_number: g1786
 section: 'Getting started'
-order: 5
+order: 08
 ---
 
-**Last updated 6th October 2021**
+**Last updated 24th March 2022**
 
 ## Objective
 
 To perform certain administrative functions on your server (e.g. installing packages), you'll need to have a high level of user access. On Linux servers, this access is called "root".
 
-**This guide will show you how to become the root user and create a password for the root account.**
+**This guide explains how to become the root user and create a password for the root account.**
 
 ## Requirements
 
-* a [Public Cloud instance](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) in your OVHcloud account
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- A [Public Cloud instance](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/#step-3-creating-an-instance) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 
 ## Instructions
-
-> [!primary]
->
-This guide assumes that the default user is called "admin".
->
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
@@ -41,12 +35,12 @@ passwd: password updated
 successfully
 ```
 
-### Update repositories (Debian/Ubuntu)
+### Update the system (Debian/Ubuntu)
 
 To update the installed software packages on your server, type the following command at the command line:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Update the system (CentOS/Fedora)
@@ -55,12 +49,6 @@ To update your server's operating system, type the following command at the comm
 
 ```bash
 ~$ sudo yum update
-```
-
-### Edit a configuration file
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Become root
@@ -79,7 +67,7 @@ Next, enter the root password.
 
 #### For connections via the built-in VNC console in the OVHcloud Control Panel
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, access the VNC console on the manager:
 
@@ -93,7 +81,7 @@ Switch to the tab `VNC console`{.action}. At the command prompt, enter your logi
 
 #### For connections using Linux terminals
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, enable root login and password authentication in your **sshd_config** file:
 
@@ -113,7 +101,7 @@ Once done, you should be able to access your server with the root user and passw
 
 #### For connections using Putty
 
-First, [set the root password](#settingtherootpassword)
+First, [set the root password](#settingtherootpassword).
 
 Next, enable root login and password authentication in your **sshd_config** file:
 

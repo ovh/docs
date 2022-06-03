@@ -2,7 +2,7 @@
 title: 'Add an MX record to your domain name’s configuration'
 slug: web_hosting_configuring_mx_with_the_ovh_dns_zone
 excerpt: 'Find out how to add a MX record to your OVHcloud domain name’s configuration'
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 4
 ---
 
@@ -39,7 +39,7 @@ Generally speaking, **changing MX records is a tricky task**. If you make any mi
 
 ### Step 2: Familiarise yourself with the OVHcloud MX configuration
 
-In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovh.com/asia/web-hosting/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} and [Exchange](https://www.ovh.co.uk/emails/hosted-exchange){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
+In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovhcloud.com/asia/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} and [Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
@@ -53,7 +53,7 @@ You will now need to add these MX records to your domain name’s DNS zone confi
 
 ### Step 3: Modify an OVHcloud MX record’s configuration
 
-To modify the MX records in your domain’s OVHcloud configuration, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action} tab.
+To modify the MX records in your domain’s OVHcloud configuration, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Select `Domains`{.action}, click on the domain, then go to the `DNS Zone`{.action} tab.
 
 This table displays your domain’s OVHcloud configuration. Each row corresponds to a DNS record. To start with, please check if the MX records already exist in your domain name’s OVHcloud DNS zone configuration. You can do this using the search filter.
 

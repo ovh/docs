@@ -21,28 +21,28 @@ W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovh.pl/hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
+- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 > [!primary]
 >
-> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovh.pl/emaile/hosted-exchange/), [**Email Pro**](https://www.ovh.pl/emaile/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](../../microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
+> Jeśli Twoje konto e-mail znajduje się w ofercie [**Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/pl/emails/email-pro/) lub nie ma sekcji `Zarządzanie autoresponderami`{.action} w Twoim MXplan, utwórz autoresponder w interfejsie Webmail korzystając z dokumentacji ["Instalacja autorespondera z poziomu interfejsu OWA"](../../microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
 
 ### Utworzenie autorespondera
 
 Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
-Wybierz odpowiednią domenę w sekcji `E-maile`{.action}, w kolumnie po lewej stronie.
+Wybierz odpowiednią domenę w sekcji `E-maile`{.action}.
 
-Kliknij kartę `E-maile`{.action} u góry, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
+Kliknij kartę `E-maile`{.action}, a następnie `Zarządzanie automatycznymi odpowiedziami`{.action}.
 
 Zostaniesz przekierowany do okna `Zarządzanie autoresponderami`, które wyświetlają wszystkie autorespondery e-mail na Twojej usłudze e-mail.
 
 Kliknij `Dodaj autoresponder`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 Pojawi się okno dodawania. Możesz ją uzupełnić zgodnie z poniższymi informacjami.
 

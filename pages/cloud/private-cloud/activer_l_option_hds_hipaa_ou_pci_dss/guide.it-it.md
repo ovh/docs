@@ -2,7 +2,7 @@
 title: 'Attivare la certificazione PCI DSS nel Private Cloud OVH'
 slug: attivare-certificazione-pci-dss-private-cloud-ovh
 excerpt: 'Come implementare un’infrastruttura Private Cloud conforme agli standard PCI DSS'
-section: 'Servizi e opzioni OVH'
+section: 'Servizi e opzioni OVHcloud'
 ---
 
 **Ultimo aggiornamento: 23/08/2019**
@@ -72,4 +72,4 @@ Accedi all’interfaccia protetta utilizzando il link contenuto nell’email ric
 
 [Utilizzare l’interfaccia sicura](../interfaccia-sicura/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -26,12 +26,12 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/) attiva
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/) attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action} nella colonna di sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action}.
 
 Seleziona l'hosting, clicca sulla scheda `Plus+`{.action} e poi su `Task pianificati - Cron`{.action}
 

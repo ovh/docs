@@ -22,6 +22,11 @@ Attenzione: incontrerai spesso anche il termine KVM (Keyboard Video and Mouse), 
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+
 ## Procedura
 
 La connessione all'IPMI può essere effettuata principalmente tramite diversi metodi: l'applet Java (consigliato) o il browser (Serial Over LAN).
@@ -32,7 +37,7 @@ La connessione all'IPMI può essere effettuata principalmente tramite diversi me
 
 - Un terzo metodo, disponibile solo per i server più recenti, permette di utilizzare un tool KVM da un browser Web.
 
-Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} nel menu a sinistra, seleziona il tuo server e clicca sulla scheda `IPMI`{.action}.
+Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} e seleziona il tuo server, poi clicca sulla scheda `IPMI`{.action}.
 
 ### Da applet Java <a name="applet-java"></a>
 
@@ -40,7 +45,7 @@ Per il corretto funzionamento dell'applet, è necessario che Java sia installato
 
 Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Da una applet Java (KVM)`{.action}:
 
-![IPMI Java iniziato](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java iniziato](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Scarica il file `kvm.jnlp` quando sei invitato e lancialo:
 
@@ -70,7 +75,7 @@ Clicca su `Accedi alla console (KVM)`{.action} per aprire la console nel tuo bro
 
 Anche se ti consigliamo di connetterti tramite l'applet Java, puoi utilizzare l'IPMI anche come Serial Over LAN (SoL). Clicca su `Dal tuo browser (SoL)`{.action} nella sezione `IPMI`{.action} del tuo Spazio Cliente.
 
-![Attiva la dichiarazione di integrità IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
+![Attiva la dichiarazione di integrità IPMI](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -81,11 +86,11 @@ Anche se ti consigliamo di connetterti tramite l'applet Java, puoi utilizzare l'
 
 È possibile che l'IPMI non risponda più. Se non riesci ad accedervi, per prima cosa esegui un test cliccando su `Testa IPMI`{.action} e visualizzando il risultato della diagnostica:
 
-![Test IPMI](images/ipmi_test_2020.png){.thumbnail}
+![Test IPMI](images/ipmi_test_2022.png){.thumbnail}
 
 Se tutto è normale, come nel nostro esempio, probabilmente ti trovi di fronte a un problema locale (connessione a Internet, postazione locale). Se l'IPMI riscontra effettivamente un problema, hai la possibilità di riavviarlo cliccando su `Riavvia IPMI`{.action}.
 
-![Test IPMI](images/ipmi_reboot_2020.png){.thumbnail}
+![Test IPMI](images/ipmi_reboot_2022.png){.thumbnail}
 
 Il riavvio dell'IPMI richiede alcuni minuti.
 

@@ -3,8 +3,10 @@ title: 'Creating, launching and deleting images in Horizon'
 slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
 section: Horizon
-order: 6
+order: 09
 ---
+
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -15,11 +17,11 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 ## Requirements
 
-- access to the Horizon interface
-- access to the Images menu in the OpenStack Horizon interface 
+- [Access to the Horizon interface](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/)
+- Access to the Images menu in the OpenStack Horizon interface 
 
 
-![public-cloud](images/2661.png){.thumbnail}
+![public-cloud](images/horizon_menu.png){.thumbnail}
 
 
 ## Instructions
@@ -29,19 +31,20 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 - By default, if no images have been created, the list of default public images appears:
 
 
-![public-cloud](images/2662.png){.thumbnail}
+![public-cloud](images/horizon_images.png){.thumbnail}
 
-- You can then launch an image from a URL, or create a custom image by clicking the Create Image button, which opens the following menu:
+- You can then launch an image from a URL, or create a custom image by clicking the `Create Image`{.action} button, which opens the following menu:
 
 
-![public-cloud](images/2720.png){.thumbnail}
+![public-cloud](images/horizon_create_image.png){.thumbnail}
 
 - Image name (\*)
 - Image description
 - Image file (Send from your local desktop)
 - Image format (\*):
 
-|—|—|
+|||
+|---|---|
 |AKI|Amazon Kernel Image|
 |AMI|Amazon Machine Image|
 |ARI|Amazon Ramdisk Image|
@@ -59,25 +62,25 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 You can also define whether the image will be public, and whether its deletion will be protected. Once you have confirmed, the image is placed in a queue for creation:
 
 
-![public-cloud](images/2664.png){.thumbnail}
+![public-cloud](images/horizon_image_saving.png){.thumbnail}
 
 You can click on the image name for details:
 
 
-![public-cloud](images/2665.png){.thumbnail}
+![public-cloud](images/horizon_image_details.png){.thumbnail}
 
 In the **Actions** column, you can:
 
 - launch the image selected in order to create an instance - when you do this, the menu appears
 
 
-![public-cloud](images/2666.png){.thumbnail}
+![public-cloud](images/horizon_launch_image.png){.thumbnail}
 
 - edit the image details (only for images you have created)
 - delete the image (only for the images you have created), and you are asked to confirm
 
 
-![public-cloud](images/2667.png){.thumbnail}
+![public-cloud](images/horizon_delete_image.png){.thumbnail}
 
 ## Go further
 

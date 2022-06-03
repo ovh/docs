@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 01
 ---
 
-**Last updated 17th August 2020**
+**Last updated 6th April 2022**
 
 ## Objective
 
@@ -17,8 +17,8 @@ IP blocks can be used to make your services accessible online.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-* a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} on your OVHcloud account
+- Being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) to receive login credentials
+- A user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 ## Instructions
 
@@ -57,7 +57,7 @@ You will need to fill in several fields in order to create your IP block.
 
 > [!success]
 >
-> The setup fee for an IP block is £1.70 ex. VAT/IP.  This means that for a `/28` block that includes 16 IPs, you will pay £27.20 before delivery.
+> There is a one time setup fee for an IP block that will be due before delivery.
 >  
 > IP address renewal is free of charge.
 >
@@ -90,7 +90,7 @@ The result should look like this:
 
 ![nexthop field](images/api-result.png){.thumbnail}
 
-Next, use this API call to move the IP into the IP parking space:
+If you need to detach the IP block, you can use the following API call to move the IP into the "IP parking" section:
 
 > [!api]
 >
@@ -107,6 +107,10 @@ You can track the movement of your IP block via the [OVHcloud Control Panel](htt
 The operation reference is “removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
+
+The IP will then appear in the `IP parking`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Go further
 

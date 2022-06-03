@@ -7,7 +7,11 @@ section: Configurazione dell’hosting
 order: 6
 ---
 
-**Ultimo aggiornamento: 27/07/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 22/02/2022**
 
 ## Obiettivo
 
@@ -15,7 +19,7 @@ order: 6
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -37,19 +41,19 @@ order: 6
 
 ### Connessioni simultanee al database
 
-- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database privato incluso). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovh.it/hosting-web/).
+- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database CloudDB). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
 
-- Inoltre è possibile ordinare database **Private SQL** aggiuntivi, che dispongono di opzioni di personalizzazione.
+- Inoltre è possibile ordinare database **CloudDB** aggiuntivi, che dispongono di opzioni di personalizzazione.
 
     - *max_connections*: 100 di default, con possibilità di passare a 200
 
     - *max_user_connections*: 50 di default, con possibilità di passare a 200
 
-Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovh.it/hosting-web/) e [la nostra guida](../iniziare-a-utilizzare-sql-privato/).
+Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/).
 
 #### Connessioni dal server esterno
 
-- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure privati. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
+- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure CloudDB. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
@@ -66,7 +70,7 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 
 ### PHP
 
-- Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovh.it/hosting-web/php.xml) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
+- Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
 
 - È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](.#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 
@@ -118,9 +122,35 @@ Consulta le rispettive pagine informative per verificare le librerie disponibili
 
 Ulteriori informazioni relative al tuo cluster sono disponibili a questo link: <https://webhosting-infos.hosting.ovh.net>
 
-Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca nella sezione `Hosting`{.action} del menu a sinistra e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
+Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Clicca nella sezione `Hosting`{.action} e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
 
 Le specifiche tecniche della soluzione di hosting Cloud Web sono disponibili a questo link: <https://cloudweb-infos.hosting.ovh.net/>
+
+### Informazioni sui backup automatici <a name="backup"></a>
+
+> [!warning]
+>
+> OVHcloud si impegna a fornire un servizio di backup automatico dei dati e la loro messa a disposizione. E' tuttavia sua responsabilità attuare la sua politica di ripristino e individuare i punti di ripristino nei momenti che ritiene opportuni.
+
+##### spazio disco
+
+Tutte le nostre offerte di hosting web condiviso situate:
+
+- a Gravelines (GRA), in Francia, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Roubaix (RBX), in Francia.
+
+- a Beauharnois (BHS), Canada, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Beauharnois (BHS), in Canada.
+
+Questa guida ti mostra come [accedere allo spazio di storage](https://docs.ovh.com/it/hosting/accedere-spazio-storage-ftp-hosting-web/) o [ripristinare lo spazio di storage di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/) nelle nostre guide.
+
+#### Database / SQL
+
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (SQL privato/Cloud Database), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
+
+Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](https://docs.ovh.com/it/hosting/web_hosting_come_esportare_un_database/) nella nostra guida.
+
+#### Email
+
+Per gli account email condivisi (inclusi nella tua offerta di hosting Web), viene effettuato un backup automatico giornaliero e copiato in un altro datacenter.
 
 ## Politica di utilizzo dei cookies
 

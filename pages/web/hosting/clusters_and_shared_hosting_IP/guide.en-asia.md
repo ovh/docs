@@ -16,17 +16,17 @@ It might become necessary to manually adjust the access settings of a service. T
 
 > [!primary]
 >
-> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovh.com/asia/web-hosting/cdn.xml)).
+> Please note that the IP addresses of the CDN options are "Anycast", meaning they do not need geolocalisation (see also the [product page](https://www.ovhcloud.com/asia/web-hosting/options/cdn/)).
 > 
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 ### Cluster 002
@@ -723,43 +723,6 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 91.134.248.230
 ```
 
-## Cluster 025
-
-#### Cluster IP addresses per country
-
-|Country|Country Code|IPv4|IPv6|
-|---|---|----|---|
-|France|FR|188.165.59.25|2001:41d0:301::25|
-|Ireland|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portugal|PT|213.251.139.148|2001:41d0:301:2::25|
-|United Kingdom|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italy|IT|178.32.138.102|2001:41d0:301:11::25|
-|Spain|ES|188.165.130.4|2001:41d0:301:4::25|
-|Poland|PL|188.165.16.78|2001:41d0:301:5::25|
-|Czech Republic|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Netherlands|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finland|FI|178.32.129.72|2001:41d0:301:8::25|
-|Lithuania|LT|188.165.26.160|2001:41d0:301:9::25|
-|Germany|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgium|BE|87.98.252.243|2001:41d0:301:10::25|
-
-If you have activated the **CDN** option on your Web Hosting, use this IP address:
-
-```bash
-145.239.37.172
-```
-
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
-
-```bash
-46.105.204.25
-```
-
-If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
-
-```bash
-91.134.248.215
-```
 
 ## Cluster 026
 

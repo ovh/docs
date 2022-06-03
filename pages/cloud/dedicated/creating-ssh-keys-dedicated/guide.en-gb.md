@@ -6,7 +6,7 @@ section: 'Security'
 order: 1
 ---
 
-**Last updated 20th July 2020**
+**Last updated 31st March 2022**
 
 ## Objective
 
@@ -163,13 +163,13 @@ Delete the key which corresponds to the user having their access revoked from yo
 
 The OVHcloud Control Panel allows you to store public keys created using one of the supported encryption types (currently RSA, ECDSA, ED25519). 
 
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Select "Dedicated" from the drop-down menu.
 
@@ -184,6 +184,29 @@ If you have copied the full output, the identifier after the key should already 
 > Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
 >
 
+### Setting a default SSH key (only for the “Dedicated” section)
+
+If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
+
+> [!warning]
+> Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
+> 
+
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
+
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+In the list of keys, click on the `Key` icon next to the SSH key of your choice to set it as the default key.
+
+![SSH key control panel](images/defaultsshkey.png){.thumbnail}
+
+Once done, a popup message will appear confirming the key has been set as default and the `Key` icon will be highlighted.
+
+![SSH key control panel](images/defaultsshkey1.png){.thumbnail}
+
+### Disabling the SSH key <a name="disablesshkey"></a>
+
+To disable the SSH key, perform the same steps as above and click on the `Key` icon next to the corresponding SSH key and disable the default option.
 
 ## Go further
 

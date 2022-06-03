@@ -30,7 +30,7 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny .uk](https://www.ovh.pl/domeny/) zarejestrowanej w OVHcloud
+- Posiadanie [domeny .uk](https://www.ovhcloud.com/pl/domains/) zarejestrowanej w OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i posiadanie uprawnień niezbędnych do zarządzania domeną (administrator domeny)
 - Nazwa domeny musi być zawsze aktywna, co oznacza, że nie wygasła lub nie może zostać zablokowana przez OVHcloud
 - Nazwa domeny nie może być przedmiotem sporu toczącego się w rejestrze [Nominet](https://www.nominet.uk/)
@@ -50,13 +50,11 @@ Jeśli nie znasz jeszcze wymaganego wpisu TAG, możesz złożyć wniosek u noweg
 
 ### Etap 1: sprawdzenie niezbędnych informacji
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na pasku nawigacyjnym w lewym górnym rogu wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action} w kolumnie po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action}, po czym wybierz odpowiednią nazwę domeny.
 
 Pamiętaj, że musisz być zalogowany jako kontakt administracyjny.
 
 W zakładce `Informacje ogólne`{.action} możesz sprawdzić, czy spełnione są warunki niezbędne do przeprowadzenia procesu transferu.
-
-![transfer wychodzący](images/img_4266.jpg){.thumbnail}
 
 ### Etap 2: zmień APR dla Twojej domeny
 

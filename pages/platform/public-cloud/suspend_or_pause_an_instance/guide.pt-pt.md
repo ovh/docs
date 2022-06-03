@@ -24,7 +24,7 @@ order: 3
 
 ## Requisitos
 
-- uma [instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) sobre faturação à hora
+- uma [instância Public Cloud](https://docs.ovh.com/pt/public-cloud/public-cloud-primeiros-passos/#3o-passo-criacao-de-uma-instancia) sobre faturação à **hora**
 - acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} o à [interface Horizon](https://docs.ovh.com/pt/public-cloud/criar_um_acesso_a_interface_horizon/)
 - Conhecimento da [API OpenStack](https://docs.ovh.com/pt/public-cloud/preparar_o_ambiente_para_utilizar_a_api_openstack/) e das [variáveis OpenStack](https://docs.ovh.com/pt/public-cloud/carregar-as-variaveis-de-ambiente-openstack/)
 
@@ -69,7 +69,7 @@ Para apresentar a snapshot, aceda ao menu à esquerda e clique em `Instance Back
 
 #### Da interface Horizon
 
-Para continuar, deve [criar um acesso à interface Horizon](../criar_um_acesso_a_interface_horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Para continuar, deve [criar um acesso à interface Horizon](../horizon/) e se [ligar à interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
 Se criou instâncias em regiões diferentes, certifique-se de que se encontra na região apropriada. Pode verificá-lo no canto superior esquerdo da interface Horizon.
 

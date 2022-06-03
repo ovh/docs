@@ -6,83 +6,80 @@ legacy_guide_number: g1784
 section: 'Zarządzanie w interfejsie Horizon'
 ---
 
-## 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 30/12/2021**
+
+## Wprowadzenie
+
 Dodawanie spersonalizowanych obrazów jest możliwe w interfejsie OpenStack Horizon. Dzięki temu będziesz mógł zaimportować obrazy starych wirtualnych maszyn na Public Cloud, pod warunkiem, że ich format będzie kompatybilny. 
 
-Przewodnik ten wyjaśnia poszczególne etapy tworzenia, uruchamiania i usuwania obrazów w interfejsie Horizon.
+**Niniejszy przewodnik wyjaśnia poszczególne etapy tworzenia, uruchamiania i usuwania obrazów w interfejsie Horizon, w którym zarządzasz usługami OVHcloud.**
 
 
-## Wstępne wymagania
+## Wymagania początkowe
 
-- [Dostep do interfejsu Horizon]({legacy}1773)
+- [Dostep do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
 - Przejście do menu Obrazy w interfejsie OpenStack Horizon
 
+![public-cloud](images/horizon_menu.png){.thumbnail}
 
 
-![Dostep do interfejsu Horizon](images/img_2661.jpg){.thumbnail}
-
-
-## 
+## W praktyce
 
 - Jeśli nie utworzono żadnego obrazu, pojawi się lista domyślnych obrazów publicznych:
 
+![public-cloud](images/horizon_images.png){.thumbnail}
 
+- Można uruchomić obraz z adresu URL lub utworzyć obraz klikając na przycisk `Create Image`{.action}. Otworzy się następujące menu:
 
-![Dostep do interfejsu Horizon](images/img_2662.jpg){.thumbnail}
+![public-cloud](images/horizon_create_image.png){.thumbnail}
 
-- Można uruchomić obraz z adresu URL lub utworzyć obraz klikając na przycisk Utwórz obraz. Otworzy się następujące menu:
+Należy wypełnić pola. Niektóre są obowiązkowe (*), inne opcjonalne:
 
+- Image name (Nazwa obrazu) (*)
+- Image description (Opis obrazu)
+- Image file (Plik obrazu) (*) (wysyłka z lokalnego komputer)
+- Image format (Format obrazu) (*) :
 
-
-![Dostep do interfejsu Horizon](images/img_2720.jpg){.thumbnail}
-
-## Należy wypełnić pola. Niektóre są obowiązkowe (*), inne opcjonalne:
-
-- Nazwa (*)
-- Opis
-- Plik obrazu (*) (wysyłka z lokalnego komputer)
-- Format (*) :
-
+|||
+|---|---|
 |AKI|Amazon Kernel Image|
 |AMI|Amazon Machine Image|
 |ARI|Amazon Ramdisk Image|
 |ISO|ISO 9660|
-|QCOW2|Emulator QEMU|
-|RAW|
-|VDI|
-|VHD|
-|VMDK|
+|QCOW2|QEMU Emulator|
+|RAW|Raw Disk Image|
+|VDI|VirtualBox format|
+|VHD|Microsoft format|
+|VMDK|VMware format|
 
-
-
-- Architektura: x86_64
+- Architektura (Architecture): x86_64
 - Minimalny dysk (w GB): domyślna wartość to 0.
 - Minimalna ilość RAM (w MB): domyślna wartość to 0.
-
 
 Można również zdefiniować, czy obraz będzie publiczny i czy jego usunięcie jest chronione.
 Po zatwierdzeniu obraz jest umieszczany w kolejce oczekującej na utworzenie:
 
-![Dostep do interfejsu Horizon](images/img_2664.jpg){.thumbnail}
+![public-cloud](images/horizon_image_saving.png){.thumbnail}
+
 Klikając na nazwę obrazu, otrzymujemy szczegółowe informacje:
 
-![Dostep do interfejsu Horizon](images/img_2665.jpg){.thumbnail}
-W kolumnie Czynności można:
+![public-cloud](images/horizon_image_details.png){.thumbnail}
+
+W kolumnie **Actions** można:
 
 - Uruchomić wybrany obraz, aby utworzyć instancję. Pojawia się menu:
 
-
-
-![Dostep do interfejsu Horizon](images/img_2666.jpg){.thumbnail}
+![public-cloud](images/horizon_launch_image.png){.thumbnail}
 
 - Edytować szczegóły dotyczące obrazu (tylko w przypadku obrazów, które utworzyłeś).
 - Usuwać obrazy (tylko w przypadku obrazów, które utworzyłeś). Należy potwierdzić taką operację:
 
+![public-cloud](images/horizon_delete_image.png){.thumbnail}
 
-
-![Dostep do interfejsu Horizon](images/img_2667.jpg){.thumbnail}
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+## Sprawdź również
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

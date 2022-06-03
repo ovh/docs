@@ -1,12 +1,11 @@
 ---
-title: FAQ
-excerpt: 'FAQ for OVHcloud Public Cloud instances'
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
-section: 'Getting started'
-order: 3
+section: 'General information'
+order: 01
 ---
 
-**Last updated 6th September 2021**
+**Last updated 3rd November 2021**
 
 ## Public Cloud FAQ
 
@@ -14,7 +13,7 @@ order: 3
 
 You can log in using an SSH key set that you need to configure when you create your Public Cloud instance.
 
-Please read our guide on [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/) .
+Please read our guide on [Creating and connecting to your first Public Cloud instance](../public-cloud-first-steps/).
 
 ### I lost or I want to change my SSH key, how to proceed ?
 
@@ -63,7 +62,7 @@ No. You must detach a volume before resizing it.
 
 ### How many additional volumes can I attach to each instance?
 
-You can attach up to 26 additional volumes per instance.
+You can attach up to 25 additional volumes per instance.
 
 ### How are my servers secured?
 
@@ -79,6 +78,12 @@ The OVHcloud Public Cloud includes a software-defined network (SDN) solution. Yo
 These private networks are powered by OVHcloud's vRack technology, which is common to the company's other services, such as Private Cloud or dedicated servers. This way, you can connect all of your infrastructure elements to OVHcloud, in an isolated, secure way.
 
 Please read our guide on [Configuring vRack for Public Cloud](../public-cloud-vrack/).
+
+### Can I change the public IP of my instance?
+
+Public IP addresses are automatically assigned to instances, and therefore cannot be modified. To control an instance's public IP address, we recommend using a failover IP. This way, regardless of the public address assigned to the instance automatically, you can add one or more failover IPs to your instance.
+
+For more information, please refer to this guide: [Buying a failover IP](../buy-a-failover-ip/).
 
 ## Go further
 

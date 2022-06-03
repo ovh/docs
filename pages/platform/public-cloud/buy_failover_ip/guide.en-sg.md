@@ -7,50 +7,56 @@ section: Networking
 order: 1
 ---
 
-**Last updated 02nd January 2020**
+**Last updated 20th December 2021**
 
 ## Objective
 
 You may need to configure a failover IP address on your instances for different reasons. For example, you may be:
 
-- hosting several websites on your instance
-- hosting international projects
+- Hosting several websites on your instance.
+- Hosting international projects.
 
 To meet these needs, you can order a failover IP address for your Public Cloud instances.
 
 These failover IP addresses can only be migrated to instances in the same project.
 
-This guide explains how to buy a failover IP for an OVHcloud Public Cloud project.
-
+**This guide explains how to buy a failover IP for an OVHcloud Public Cloud project.**
 
 ## Requirements
-- at least one instance (please refer to our guide on [Creating an instance in the OVHcloud Control Panel](../create_an_instance_in_your_ovh_customer_account/))
+
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
+- A [Public Cloud instance](https://docs.ovh.com/sg/en/public-cloud/public-cloud-first-steps/) in your OVHcloud account.
 
 ## Instructions
 
-First of all, click on the `Failover IP`{.action} menu in the OVHcloud Public Cloud Control Panel, then click `Buy failover IPs`{.action} in the actions list:
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open your `Public Cloud`{.action} project.
+In the left-hand menu, click on `Failover IP`{.action} in the 'Network' section.
 
-![failoverIP](images/buyfailoverip1.png){.thumbnail}
+Then click on the `Actions`{.action} button and choose `Buy Cloud failover IPs`{.action}.
 
-The following page will then open:
+![failoverIP](images/buyfailoverip1-2021.png){.thumbnail}
 
-![failoverIP](images/buyfailoverip2.png){.thumbnail}
+A new menu will then appear:
+
+![failoverIP](images/buyfailoverip2-2021.png){.thumbnail}
 
 Enter the following information:
 
-* The number of failover IPs you want to order (IP blocks are not currently available).
-* The instance on which the IPs will be routed.
-* The location of the IPs.
+- The number of failover IPs you want to order (IP blocks are not currently available)
+- The instance on which the IPs will be routed
+- The location of the IPs
 
 You will also need to accept the General Terms and Conditions of Service.
 
+Each failover IP will cost you €2 ex. VAT. They will then be renewed automatically and free of charge every month.
+
 They are available in the following locations in Europe:
 
-|          |          |          |           |                    |
-|:--------:|:--------:|:--------:|:---------:|:------------------:|
-| Belgium | Finland |  France  | Germany | Czech Republic |
-|  Ireland |  Italy  | Lithuania |  Netherlands |     United Kingdom    |
-| Portugal |  Spain |  Poland |  Lithuania |                    |
+|          |          |          |           |                |
+|:--------:|:--------:|:--------:|:---------:|:--------------:|
+| Belgium  | Finland  | France   | Germany   | Czech Republic |
+| Ireland  |  Italy   | Lithuania | Netherlands | United Kingdom    |
+| Portugal |  Spain   |  Poland |  Lithuania |                    |
 
 
 > [!primary] **Availability**
@@ -67,14 +73,14 @@ They are available in the following locations in Europe:
 >
 > If you need to check this for other organisations, please contact them directly. OVHcloud cannot be involved in this regard.
 
-A purchase order is then generated. Please allow pop-ups in order to be redirected automatically to the purchase order.
+Click on `Generate purchase order`{.action} to be automatically redirected to it (pop-ups must be authorised on your browser).
 
-![failoverIP](images/buyfailoverip3.png){.thumbnail}
+You can also find the purchase order in your customer area, by going to the `Dashboard`{.action} section and clicking on `View my orders`{.action}.
 
-You will also find the purchase order in the OVHcloud Control Panel by going to `Dashbaard`{.action}, then `View my orders`{.action}.
-
-![failoverIP](images/buyfailoverip4_2020.png){.thumbnail}
+See our guide on [managing OVHcloud orders](https://docs.ovh.com/sg/en/billing/managing-ovh-orders/) for more details.
 
 ## Go further
+
+[Configuring a failover IP](https://docs.ovh.com/sg/en/public-cloud/configure_a_failover_ip/)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -5,11 +5,11 @@ excerpt: Poznaj ofertę Veeam Cloud Connect
 section: Veeam
 ---
 
-**Ostatnia aktualizacja z dnia 22-07-2020**
+**Ostatnia aktualizacja z dnia 07-12-2021**
 
 ## Wprowadzenie
 
-Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia ono posiadanie kopii bezpieczeństwa poza miejscem działalności („off-site”), i to bez konieczności zarządzania infrastrukturą w drugiej lokalizacji. Ideą rozwiązania Veeam Cloud Connect jest zapewnienie łatwego i bezpiecznego sposobu na wykonywanie kopii zapasowych i przywracania danych z chmury.
+Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia ono posiadanie kopii bezpieczeństwa poza miejscem działalności (“off-site”), i to bez konieczności zarządzania infrastrukturą w drugiej lokalizacji. Ideą rozwiązania Veeam Cloud Connect jest zapewnienie łatwego i bezpiecznego sposobu na wykonywanie kopii zapasowych i przywracania danych z chmury.
 
 **Dowiedz się, jak skonfigurować ofertę Veeam Cloud Connect**
 
@@ -19,7 +19,7 @@ Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia o
 
 > [!primary]
 >
-> Nasze pakiety Veeam nie są obecnie kompatybilne z najnowszą wersją (10) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 9.5, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
+> Nasze pakiety Veeam nie są obecnie kompatybilne z najnowszą wersją (11) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 10, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
 >
 
 ## W praktyce
@@ -84,7 +84,7 @@ Wdrożenie Veeam Cloud Connect przeprowadza się w tym samym interfejsie, konsol
 > Informacje na temat instalacji konsoli znajdują się na tej stronie.
 > 
 
-Najpierw dodaj usługę do konsoli, klikając polecenie „ADD SERVICE PROVIDER”
+Najpierw dodaj usługę do konsoli, klikając polecenie “ADD SERVICE PROVIDER”
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider.png){.thumbnail}
@@ -94,7 +94,7 @@ Wprowadź adres IP/nazwę oferty, którą znajdziesz w otrzymanej wiadomości e-
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-ip.png){.thumbnail}
 
-Wpisz nazwę użytkownika i hasło, a następnie kliknij „Zastosuj”, aby potwierdzić.
+Wpisz nazwę użytkownika i hasło, a następnie kliknij “Zastosuj”, aby potwierdzić.
 
 
 ![veeam cloud connect](images/veeam-cloud-connect-add-provider-login.png){.thumbnail}

@@ -19,7 +19,7 @@ Questa guida ti spiega come utilizzare OMM per importare i vari elementi del tuo
 
 ## Prerequisiti
 
-- Disporre di una soluzione email OVHcloud, come [Exchange](https://www.ovh.it/emails/){.external}, [Email Pro](https://www.ovh.it/emails/email-pro/){.external} o MX Plan (inclusa nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}).
+- Disporre di una soluzione email OVHcloud, come [Exchange](https://www.ovhcloud.com/it/emails/){.external}, [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external} o MX Plan (inclusa nel servizio MX Plan o in una [soluzione di hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}).
 - Disporre delle credenziali relative agli account email da migrare
 - Disporre delle credenziali relative agli account e-mail OVHcloud che ricevono i dati migrati (gli account di destinazione).
 

@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -42,7 +42,7 @@ Utiliser la commande suivante pour créer une clé RSA de 4096 bits :
 ```sh
 # ssh-keygen -b 4096
 ```
-L'utilisation de l'option « -t » avec la commande ci-dessus vous permet de spécifier une méthode de cryptage différente, par exemple :
+L'utilisation de l'option « -t » avec la commande ci-dessus vous permet de spécifier une méthode de chiffrement différente, par exemple :
 
 ```sh
 # ssh-keygen -t ed25519 -a 256
@@ -150,15 +150,15 @@ Supprimez de votre fichier « authorized_keys » la clé qui correspond à l'u
 
 ### Importer votre clé SSH dans l’espace client OVHcloud
 
-L’espace client OVHcloud vous permet de stocker des clés publiques créées en utilisant l'un des types de cryptage pris en charge (actuellement RSA, ECDSA, ED25519). 
+L’espace client OVHcloud vous permet de stocker des clés publiques créées en utilisant l'un des types de chiffrement pris en charge (actuellement RSA, ECDSA, ED25519). 
 
-Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
+Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
 
-![Espace de gestion des clés SSH](images/SSH_keys_panel_1.png){.thumbnail}
+![Espace de gestion des clés SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 Dans « Mes services », accédez à l’onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 
-![Espace de gestion des clés SSH](images/SSH_keys_panel_2.png){.thumbnail}
+![Espace de gestion des clés SSH](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Sélectionnez « Dédié » dans le menu déroulant.
 
@@ -173,7 +173,30 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 > Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../../public-cloud/premiers-pas-instance-public-cloud).
 >
 
+### Définir une clé SSH par défaut (uniquement pour la section « Dédiés »)
+
+Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possible de définir une clé à utiliser comme clé par défaut sur le compte.
+
+> [!warning]
+> Veuillez noter qu'une fois la clé SSH par défaut définie, elle sera également utilisée comme moyen de connexion lors du redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être désactivée avant de redémarrer le serveur en mode rescue.
+>
+
+Ouvrez la barre de navigation latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
+
+![Espace de gestion des clés SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de votre choix pour la définir comme clé par défaut.
+
+![Espace client de la clé SSH](images/defaultsshkey.png){.thumbnail}
+
+Une fois l'opération terminée, un message s'affiche pour confirmer que la clé a été définie par défaut. L'icône `Clé` sera alors mise en évidence.
+
+![Espace client de la clé SSH](images/defaultsshkey1.png){.thumbnail}
+
+### Désactiver de la clé SSH par défaut <a name="disablesshkey"></a>
+
+Pour désactiver la clé SSH par défaut, effectuez les mêmes opérations que ci-dessus et cliquez sur l'icône `Clé` à côté de la clé SSH correspondante, afin de désactiver l'option.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

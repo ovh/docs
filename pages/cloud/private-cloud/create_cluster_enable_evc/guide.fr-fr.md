@@ -1,151 +1,103 @@
 ---
 title: Création de cluster et activation EVC
 slug: create-cluster-enable-evc
-excerpt: Création d'un cluster et activation du mode EVC
+excerpt: "Création d'un cluster et activation du mode EVC"
 section: Fonctionnalités VMware vSphere
 order: 01
 ---
 
-**Dernière mise à jour le 10 janvier 2019**
+**Dernière mise à jour le 08/02/2022**
 
-## Objectifs
+## Objectif
 
-Il est possible de créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.
+Vous pouvez créer plusieurs clusters dans votre infrastructure afin de segmenter vos activités.<br>
+Découvrez comment créer et configurer les fonctionnalités des clusters (DRS, HA & EVC).
 
-**Ce guide explique les différentes options.**
+**Ce guide est un cas d'étude comprenant les étapes d'installation et de configuration.**
 
-## Création du cluster
+## Prérequis
 
-Afin de créer un cluster, faites un clic-droit sur votre datacentre vituel.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
-Cliquez ensuite sur "New Cluster...".
+## En pratique
 
+### Création du cluster
 
-![New Cluster](images/CreateCluster.png){.thumbnail}
+Dans l'interface vSphere, rezndez-vous dans le tableau de bord `Hôtes et clusters`{.action}.
 
-Une nouvelle fenêtre apparaîtra.
+![MENU](images/en01dash.png){.thumbnail}
 
-Vous pourrez donner un nom à votre cluster et configurer les options de base.
+Faites un clic-droit sur votre Datacenter.<br>
+Sélectionnez `Nouveau cluster`{.action}.
 
+![New Cluster](images/en02newcluster.png){.thumbnail}
 
-> [!success]
+Dans la fenêtre qui apparait, nommez le cluster et sélectionnez les options nécessaires.<br>
+Cliquez sur `OK`{.action}.
+
+![Cluster](images/en03cluster.png){.thumbnail}
+
+> [!warning]
 >
-> Ces options peuvent être modifier par la suite, lorsque le cluster est crée, mais il est préférable de le faire lors de création.
+> L'option vSAN nécessite des hôtes compatibles. Consultez [ce guide](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/) pour apprendre comment en commander si cela s'avère nécessaire.
 > 
 
 ### DRS
 
-L'option DRS permet de répartir automatiquement les VMs en fonction de la charge présente sur les hôtes.
+DRS répartit la charge de calcul sur vos différents hôtes.<br>
+Si vous avez activé l'option, elle est en mode « Entièrement automatisé » par défaut.
 
+Sélectionnez le cluster. Dans l'onglet `Configurer`{.action}, sélectionnez `vSphere DRS`{.action} et cliquez sur `Modifier`{.action}.
 
-> [!success]
->
-> Vous pouvez retrouver plus d'informations sur la KB VMware suivante : 
-> [https://kb.vmware.com/s/article/2149938](https://kb.vmware.com/s/article/2149938)
-> 
+![DRS](images/en04drsedit.png){.thumbnail}
 
+Trois options sont disponibles:
 
-Cochez la case pour activer l'option et choisissez le mode de migration.
+- Manuelle. DRS génère des recommandations de placement pour la mise sous tension et des recommandations de migration pour les machines virtuelles. Les recommandations doivent être appliquées manuellement ou seront ignorées.
+- Partiellement automatisé. DRS place automatiquement les machines virtuelles sur les hôtes lors de la mise sous tension de ces dernières. Les recommandations de migration doivent être appliquées manuellement ou seront ignorées.
+- Entièrement automatisé. DRS place automatiquement les machines virtuelles sur les hôtes lors de la mise sous tension de ces dernières. Elles sont automatiquement migrées d'un hôte à l'autre pour optimiser l'utilisation des ressources.
 
+Les modes automatisés vous permettent de régler la sensibilité du service, de modéré à élevé.<br>
+Cliquez sur `OK`{.action}.
 
-![DRS](images/CreateClusterDRS.png){.thumbnail}
-
-
-- En mode "manuelle", DRS ne déplacera pas les VMs, vous devrez gérer le déplacement et la répartition de vos VMs de manière autonome.
-
-- En mode "partiellement automatisé", DRS vous conseillera sur des migrations de vos VMs, mais ne les fera que si vous validez le déplacement.
-
-- En mode "Entièrement automatisé", DRS déplacera les VMs automatiquement sans validation de votre part, et en fonction de la charge présente sur les hôtes.
-
-
-Dans les deux modes "automatisé", il est possible de régler le seuil de migration sur cinq niveaux, de modéré à élevé (1 étant le plus modéré, et 5 le plus élevé).
-
-Plus le seuil est élevé, plus le service DRS sera sensible à l'équilibre du cluster.
-
+![DRS](images/en05drs.png){.thumbnail}
 
 ### HA
 
-L'option HA permet de redémarrer des machines virtuelles en cas de dysfonctionnement survenant sur un hôte.
+La disponibilité offre de la redondance pour qu'une panne d'un hôte n'impacte pas les services qui tournent sur vos VMs.<br>
 
-> [!success]
->
-> Vous pouvez retrouver plus d'informations sur la KB VMware suivante : 
-> [https://kb.vmware.com/s/article/2148003](https://kb.vmware.com/s/article/2148003)
-> 
+Pour modifier les paramètres par défaut, sélectionnez le cluster. Dans l'onglet `Configurer`{.action}, sélectionnez `Disponibilité vSphere`{.action} et cliquez sur `Modifier`{.action}.
 
-> [!warning]
->
-> Si le service HA n'est pas activé, les SLA ne seront pas applicables.
-> 
+![HA](images/en06haedit.png){.thumbnail}
 
-![HA](images/CreateClusterHA.png){.thumbnail}
+Vous pouvez alors personnaliser les différentes réponses aux possibles pannes d'hôte.<br>
+Cliquez sur `OK`{.action}.
 
-- Après avoir créé un cluster, la "surveillance d'hôte" permet à l'hôte maître du cluster HA de répondre aux défaillances des hôtes ou des machines virtuelles et à l'isolation du réseau de gestion. La priorité de redémarrage et la réponse d'isolement des hôtes et des VMs déterminent comment vSphere HA répond aux défaillances des hôtes et aux isolations.
-
-- Le "contrôle d'admission" permet de spécifier si les machines virtuelles peuvent être démarrées si elles violent les contraintes de disponibilité. Le cluster réserve des ressources pour permettre le basculement de toutes les machines virtuelles en cours d'exécution sur le nombre d'hôtes spécifié.
-
-- La fonction "surveillance des machines virtuelles" utilise les informations de signal de pulsation capturées par VMware Tools comme proxy pour la disponibilité des systèmes d'exploitation clients. Cette fonction permet à vSphere HA de réinitialiser ou de redémarrer automatiquement les machines virtuelles qui ont perdu leur capacité de produire un signal de pulsation.
-
+![HA](images/en07ha.png){.thumbnail}
 
 ### EVC
 
-L'option EVC (Enhanced vMotion Compatibility) permet de déplacer des machines virtuelles à chaud entre des hôtes disposant de processeurs avec des générations différentes.
+EVC (Enhanced vMotion Compatibility) permet la migration à chaud de vos VMs entre différents hôtes.
 
-> [!primary]
->
-> OVH pouvant mettre à disposition des hôtes disposant de processeur de génération différente, il est important d'activer cette option sur votre cluster afin de ne pas être bloquer dans la migration de machines virtuelles.
-> 
+Avant d'activer la fonctionnalité, vérifiez la page de résumé de vos hôtes pour déterminer leurs types de CPU.
 
-> [!success]
->
-> Vous pouvez retrouver plus d'informations sur les KB VMware suivantes : 
->
-> [https://kb.vmware.com/s/article/1005764](https://kb.vmware.com/s/article/1005764)
-> 
-> [https://kb.vmware.com/s/article/1003212](https://kb.vmware.com/s/article/1003212)
->
+![EVC](images/en10host.png){.thumbnail}
 
+Sélectionnez le cluster. Dans l'onglet `Configurer`{.action}, sélectionnez `VMware EVC`{.action} et cliquez sur `Modifier`{.action}.
 
-#### Dedicated Cloud
+![EVC](images/en08EVCedit.png){.thumbnail}
 
-Si vous disposez d'un Private Cloud de la gamme Dedicated Cloud, vous devrez choisir le mode "AMD Opteron Gen. 3 (no 3DNow!)" visable dans la partie pour les hôtes AMD.
+Activez EVC pour le type de CPU de vos hôtes.<br>
+La compatibilité descendante est assurée. Pour vous aider à vérifier que les paramètres sont corrects, vous verrez une validation de la compatibilité en bas de la fenêtre.<br>
+Cliquez sur `OK`{.action}.
 
-#### SDDC
-
-Si vous disposez d'un Private Cloud de la gamme SDDC, vous devrez choisir le mode "Intel  "Ivy Bridge" Generaton" visible dans la partie pour les hôtes Intel.
-
-#### Avant création
-
-Il vous suffit de choisir la génération correspondante selon la gamme de l'offre Private Cloud que vous avez.
-
-![Informations User](images/CreateClusterEVC.png){.thumbnail}
-
-
-#### Après création
-
-L'activation de l'EVC après a création du cluster se fait dans les paramètres du cluster.
-
-![Informations User](images/ModifyClusterEVC.png){.thumbnail}
-
-
+![EVC](images/en09EVC.png){.thumbnail}
 
 > [!warning]
 >
-> Attention, l'activation du mode EVC ne peut se faire que sur un cluster n'ayant pas de VM démarré. Sur un cluster en production, deux solutions sont possibles : 
-> 
-> - Extinction de toutes les VMs, et activation du mode EVC sur le cluster.
+> L'activation de l'EVC ne peut se faire que si le cluster n'a pas de VM active. Assurez-vous donc au préalable que toutes vos VMs sont éteintes ou évacuées. 
 >
-> - Migration vers un autre cluster en déplaçant les VMs au fur et à mesure :
->
-> A - Création d'un autre cluster avec le mode EVC activé (sur la bonne génération)
-> 
-> B - Mise en maintenance d'un hôte et déplacement de l'hôte sur ce cluster
->
-> C - Extinction d'une VM et déplacement vers le nouveau cluster
->
-> D - Répétez l'opération B et C jusqu’à ce que l'ancien cluster soit vide.
->
-
 
 ## Aller plus loin
 

@@ -6,7 +6,7 @@ section: Office
 order: 2
 ---
 
-**Last updated 9th September 2021**
+**Last updated 24th February 2022**
 
 ## Objective
 
@@ -29,7 +29,7 @@ Here is the list of software included in the suite:
 
 ### Order a licence
 
-Go to our [OVHcloud.com website](https://www.ovh.ie/office-365/){.external} and select “Collaborative tools” in our “Web Cloud” section. 
+Go to our [OVHcloud.com website](https://www.ovhcloud.com/en-ie/collaborative-tools/microsoft-365/){.external} and select “Collaborative tools” in our “Web Cloud” section. 
 
 You can also order a licence from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Once you have logged in, select `Web Cloud`{.action} in the top menu, then click the `Order`{.action} button and choose `O365`{.action}.
 
@@ -41,7 +41,7 @@ You will be redirected to the order page to confirm and pay for your order.
 
 ### Activate your licence
 
-Once you have ordered your licence, you will need to activate it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud` section, click `Microsoft`{.action} in the services bar on the left-hand side, then click `Office`{.action} and select the licence group concerned.
+Once you have ordered your licence, you will need to activate it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud` section, click `Microsoft`{.action}, then click `Office`{.action} and select the licence group concerned.
 
 Click the `...`{.action} button of the licence, then click `Edit the account`{.action}.
 
@@ -58,7 +58,7 @@ Once the licence has been activated, you will receive an email on the contact em
 This email contains the information required to download and install your Microsoft 365 suite, including the **activation email address** and the **password**.
 
 >
-> If you would like to set the password yourself, you will need to do so via the OVHcloud Control Panel. In the `Web Cloud` section, click `Microsoft`{.action} in the services bar on the left-hand side, then click `Office`{.action} and select the licence group concerned.
+> If you would like to set the password yourself, you will need to do so via the OVHcloud Control Panel. In the `Web Cloud` section, click `Microsoft`{.action}, then click `Office`{.action} and select the licence group concerned.
 >
 > Click on the `...`{.action} button next to the relevant licence, then `Change password`{.action}.
 >
@@ -76,11 +76,30 @@ Go to <https://portal.office.com/> and log in with the **activation email addres
 
 ### Add a licence to an existing group
 
-If you would like to add one or more licences to your existing licence group, you can do so from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud` section, click `Microsoft`{.action} in the services bar on the left-hand side, then click `Office`{.action} and select the licence group concerned.
+If you would like to add one or more licences to your existing licence group, you can do so from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Web Cloud` section, click `Microsoft`{.action}, then click `Office`{.action} and select the licence group concerned.
 
 Click the `Order more licences`{.action} button on the right. Enter the number and type of licences you would like to order.
 
 ![office licence](images/Outlook-cps1-05.png){.thumbnail}
+
+### Manage your subscriptions <a name="managesubscriptions"></a>
+
+### Remove a licence in a licence group
+
+From the `Licences`{.action} tab of your licence group, click the `...`{.action} to the right of the licence you want to cancel, then click `Disable account`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
+
+### Cancel licence group
+
+To cancel your Microsoft Office 365 CSP1 licence group, click on your name in the top right-hand corner of the OVHcloud Control Panel, then on the `Manage services`{.action} button. Then click the `...`{.action} button. to the right of the licence group to be cancelled, then `Cancel`{.action}.<br>
+Enter the reasons for your cancellation request, then click `Confirm`{.action}.
+
+> [!primary]
+> Consumption for the current month will be charged at the end of the month.
 
 ## Go further
 

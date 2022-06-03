@@ -2,7 +2,7 @@
 title: "Hyper-V mit Failover-IPs in einem vRack verwenden"
 excerpt: "Erfahren Sie hier, wie Sie Hyper-V mit Failover-IPs in einem vRack konfigurieren"
 slug: ipfo-vrack-hyperv
-Abschnitt: vRack 
+section: vRack 
 ---
 
 > [!primary]
@@ -22,6 +22,11 @@ Abschnitt: vRack
 - Sie haben ein ISO-Image für das zu installierende Betriebssystem der VM (CentOS 7 wird in dieser Anleitung beispielhaft verwendet).
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie verfügen über einen IP-Block von 4 oder mehr IP-Adressen.
+
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## In der praktischen Anwendung
 

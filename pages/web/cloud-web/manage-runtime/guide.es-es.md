@@ -5,7 +5,11 @@ excerpt: 'Cómo realizar las operaciones relativas a los motores de ejecución e
 section: 'Configuración del alojamiento'
 ---
 
-**Última actualización: 23/1/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 04/05/2022**
 
 ## Objetivo
 
@@ -15,14 +19,14 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 
 ## Requisitos
 
-- Tener contratado un plan de alojamiento [Cloud Web](https://www.ovh.es/hosting/cloud-web.xml).
+- Tener contratado un plan de alojamiento [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
 
 Para adaptarse a todos los proyectos de forma óptima, los planes de alojamiento Cloud Web le permiten disponer de uno o varios motores de ejecución. Por lo tanto, la elección de uno u otro dependerá de lo que desee instrumentar. 
 
-Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovh.es/hosting/cloud-web.xml>. 
+Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/>. 
 
 Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
 
@@ -38,7 +42,7 @@ Se mostrará una tabla con los motores de ejecución que haya añadido a su aloj
 
 Existen diversas formas de gestionar los motores de ejecución de su alojamiento Cloud Web:
 
-- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovh.es/hosting/cloud-web.xml){.external}).
+- [Añadir o modificar un motor de ejecución](./#21-anadir-o-modificar-un-motor-de-ejecucion){.external} (el número máximo de motores de ejecución depende del [plan Cloud Web que tenga contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}).
 - Establecer un motor de ejecución como opción por defecto.
 - Eliminar un motor de ejecución.
 
@@ -54,7 +58,7 @@ Para añadir o modificar un motor de ejecución, abra la pestaña `«Motores de 
 - **Si quiere añadir un motor de ejecución**, haga clic en `«Acciones»`{.action} (encima de la tabla) y, seguidamente, en `«Añadir un motor de ejecución`{.action}.
 - **Si quiere modificar un motor de ejecución**, haga clic en el botón `«···»`{.action} a la derecha del motor correspondiente y, seguidamente, haga clic en `«Editar»`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Introduzca la información solicitada en la ventana que aparece. Prosiga en función del motor de ejecución seleccionado:
 
@@ -72,7 +76,7 @@ Introduzca la información solicitada en la ventana que aparece. Prosiga en func
 
 Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}. Entonces asegúrese de que el multisitio o los multisitios que desee puedan utilizar debidamente ese motor de ejecución. Para ello, prosiga con la Etapa 3 [«asociar el motor de ejecución a un multisitio»](./#etapa-3-asociar-el-motor-de-ejecucion-a-un-multisitio_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 
@@ -123,7 +127,7 @@ Una vez cumplimentada toda la información, haga clic en `«Validar»`{.action}.
 > En nuestro ejemplo, solo se crearon los motores PHP y Node.js. En su proyecto, bien podría utilizar Ruby o Python. En dicho caso, las operaciones descritas a continuación son
 > aplicables.
 > 
-> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](https://www.ovh.es/hosting/cloud-web.xml){.external}.
+> La utilización de dos motores de ejecución al mismo tiempo en su alojamiento Cloud Web depende del [plan que haya contratado](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/){.external}.
 > 
 
 Una vez que disponga del motor o los motores de ejecución necesarios para su proyecto, asegúrese de que estos estén correctamente asociados a sus multisitios. Para ello, abra la pestaña `«Multisitio»`{.action} del alojamiento Cloud Web de su interés. 

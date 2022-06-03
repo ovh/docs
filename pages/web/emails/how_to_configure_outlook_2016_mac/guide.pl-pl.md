@@ -16,7 +16,7 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 ## Wymagania początkowe
 
-- Konto e-mail MX Plan (zawarte w pakiecie MX Plan lub w ramach [hostingu OVH](https://www.ovh.pl/hosting/){.external})
+- Konto e-mail MX Plan (zawarte w pakiecie MX Plan lub w ramach [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Zainstalowany Microsoft Outlook na Twoim urządzeniu Mac
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 
@@ -78,7 +78,7 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz zacząć wysyłać i odbierać wiadomości.
 
-OVH oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki. Jest ona dostępna pod adresem <https://www.ovh.pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ## Sprawdź również
 

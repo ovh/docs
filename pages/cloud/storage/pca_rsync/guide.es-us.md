@@ -3,11 +3,12 @@ title: Gestión de sus archivos con Rsync
 slug: pca/rsync
 excerpt: Cómo acceder a los archivos de Public Cloud con Rsync
 section: Public Cloud Archive
+order: 090
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 **Última actualización: 08/12/2020**
 
@@ -26,7 +27,7 @@ Los archivos binarios precompilados están disponibles en la mayoría de las dis
 
 ### ID OpenStack
 
-Puede generar su identificador y contraseña OpenStack a través de esta [guía](../../../public-cloud/crear_un_acceso_a_horizon/).
+Puede generar su identificador y contraseña OpenStack a través de esta [guía](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/).
 
 ### TenantName
 
@@ -73,7 +74,6 @@ Dado que el servidor Rsync está conectado para funcionar con la API Swift, esta
 
 > —inplace : En lugar del método predeterminado de crear una nueva copia del archivo y moverla una vez finalizado el proceso, Rsync escribe los datos actualizados directamente en el archivo de destino.
 >
-> -W, —whole-file: Desactiva el algoritmo de transferencia delta de Rsync y envía el archivo completo tal y como está.
 
 Además, solo está permitido un subconjunto de opciones en el lado del cliente:
 

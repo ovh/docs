@@ -1,5 +1,5 @@
 ---
-title: 'Configuring pfSense network bridge'
+title: 'Tutorial - Configuring pfSense network bridge'
 slug: pfSense-bridging
 excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual machine'
 section: 'Tutorial'
@@ -42,17 +42,19 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click on the `Bare Metal Cloud`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. 
 
-![Failover IP](images/virtual_mac_01_2020.png){.thumbnail}
+The “Service” drop-down menu allows you to filter for Failover IPs. 
 
-Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
+![Add a virtual MAC (1)](images/manageIPs.png){.thumbnail} 
 
-![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
+Next, locate your failover IP address in the table and click on the three dots to open the `Context`{.action} menu. Select `Add a virtual MAC`{.action}.
+
+![Add a virtual MAC (1)](images/addvmac.png){.thumbnail}
 
 Select `ovh`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
-![Add a virtual MAC (2)](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC (2)](images/addvmac2.png){.thumbnail}
 
 #### Determining the gateway address
 
@@ -91,7 +93,7 @@ Now we’re going to start creating the pfSense virtual machine,
 
 - Under the OS tab, choose: Other OS type
 - Under the Hard Disk tab, Bus/Device should be: VirtIO
-- First item under the Network tab, 
+- First item under the Network tab, make sure the bridge is vmbr0 
 - Second item under the Network tab, Model should be: VirtIO (paravirtualized)
 - If your CPU has the AES instruction set, this should be enabled
 

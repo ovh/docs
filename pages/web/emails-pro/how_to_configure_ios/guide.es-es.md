@@ -29,7 +29,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 ## Requisitos
 
-- Disponer de una [cuenta Email Pro](https://www.ovh.es/emails/email-pro/){.external}.
+- Disponer de una [cuenta Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external}.
 - Tener la aplicación Mail instalada en su dispositivo iOS.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -39,9 +39,9 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el nombre del servidor: pro**?**.mail.ovh.net. ¿Debe reemplazar el "? " por el número que designa el servidor del servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y, seguidamente, en la columna izquierda, `Email Pro`{.action}. El nombre del servidor puede verse en el recuadro **«Conexión»** de la pestaña `Información General`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 En la pantalla de bienvenida de su dispositivo, acceda a `Ajustes`{.action} (icono de rueda dentada). Según la versión de iOS, puede añadir una cuenta de diferentes formas:
@@ -73,7 +73,7 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 Una vez que haya configurado la dirección de correo electrónico, ya puede empezar a utilizarla enviando y recibiendo mensajes.
 
-OVHcloud también ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovh.es/emails/){.external} y está disponible en la dirección <https://www.ovh.es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
+OVHcloud también ofrece una aplicación web que tiene [funciones colaborativas](https://www.ovhcloud.com/es-es/emails/){.external} y está disponible en la dirección <https://www.ovh.es/mail/>. Puede acceder con el nombre de usuario y la contraseña de su dirección de correo electrónico.
 
 > [!primary]
 >

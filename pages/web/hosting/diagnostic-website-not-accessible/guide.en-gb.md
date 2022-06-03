@@ -56,7 +56,7 @@ After the renewal of your offer is completed, your website will be available wit
 
 ### Step 2: Check the DNS servers
 
-To check that your [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/) are valid, click on `Domain names`{.action} in the top left-hand corner of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on your domain name.
+To check that your [DNS servers](../../domains/web_hosting_general_information_about_dns_servers/) are valid, click on `Domain names`{.action} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then on your domain name.
 
 #### Scenario 1: No anomalies appear on the DNS servers
 
@@ -115,7 +115,7 @@ In this step, you will find your hosting plan’s IP address, then add it to you
 
 If your site is not hosted on the OVHcloud infrastructure or is managed by another provider, please contact the concerned support service.
 
-If your site is hosted on one of our [Web Hosting offers](https://www.ovh.co.uk/web-hosting/), click on the `Hosting plans`{.action} tab on the left-hand side of your screen and choose the Web Hosting offer which contains your website.
+If your site is hosted on one of our [Web Hosting offers](https://www.ovhcloud.com/en-gb/web-hosting/), click on the `Hosting plans`{.action} tab and choose the Web Hosting offer which contains your website.
 
 In the `General information`{.action} tab, copy the IPv4 and/or IPv6 address of your domain name.
 

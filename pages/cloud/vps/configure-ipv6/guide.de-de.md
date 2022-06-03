@@ -57,7 +57,7 @@ Der erste Schritt besteht darin, die Ihrem Server zugewiesene IPv6-Adresse sowie
 
 #### Über Ihr Kundencenter <a name="viacontrolpanel"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Virtual Private Server`{.action} aus.
 
 Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway werden im Tab `Start`{.action} unter `IP` angezeigt. Kopieren Sie diese und fahren Sie fort mit Schritt 2, [IPv6-Konfiguration anwenden](#applyipv6).
 
@@ -121,7 +121,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Es gibt zwei Methoden, um Ihr Netzwerk entsprechend dem auf Ihrem Server installierten Betriebssystem zu konfigurieren:
 
-- **für Debian 8 und älter, Ubuntu 16.04 und darunter**: Verwenden Sie [die auf der *interfaces*-Datei basierende Methode](#interfaces).
+- **für Debian 11 und älter, Ubuntu 16.04 und darunter**: Verwenden Sie [die auf der *interfaces*-Datei basierende Methode](#interfaces).
 
 - **für Ubuntu 17.04 und spätere Versionen**: Verwenden Sie [die *Netplan*-Methode](#netplan).
 
@@ -134,7 +134,7 @@ Beachten Sie auch, dass die exakten Dateinamen variieren können.
 Als *Best Practice* wird empfohlen, eine Konfigurationsdatei im Verzeichnis `/etc/network/interfaces.d/` zu erstellen:
 
 ```bash
-nano /etc/network/interfaces.d/51-Cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-Cloud-init-ipv6
 ```
 
 Auf diese Weise können Sie die IPv6-Konfiguration absondern und die Änderungen im Fehlerfall problemlos rückgängig machen.
@@ -406,4 +406,4 @@ Um die automatische Netzwerkverwaltung mit Cloud-init wieder zu aktivieren, lös
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

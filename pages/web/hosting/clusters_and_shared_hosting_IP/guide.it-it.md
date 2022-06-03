@@ -19,17 +19,17 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 > [!primary]
 >
 > Gli indirizzi IP dell’opzione CDN sono “Anycast”,
-> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](https://www.ovh.it/hosting-web/cdn.xml)).
+> ovvero non hanno bisogno di geolocalizzazione ([Maggiori informazioni qui](https://www.ovhcloud.com/it/web-hosting/options/cdn/)).
 > 
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
+- Disporre di un piano di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. e seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra. In seguito accedi alla scheda `FTP - SSH`{.action}.
+Per conoscere il cluster di hosting Web su cui si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Seleziona il tuo servizio nella sezione `Hosting`{.action}. In seguito accedi alla scheda `FTP - SSH`{.action}.
 Per verificare il numero di cluster dell'hosting Web, accedi alla pagina con il **Server FTP**.
 
 ### Cluster 002
@@ -710,44 +710,6 @@ Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è
 91.134.248.230
 ```
 
-### Cluster 025
-
-Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la geolocalizzazione):
-
-|Paese|Codice Paese|IPv4|IPv6|
-|---|---|----|---|
-|Francia|FR|188.165.59.25|2001:41d0:301::25|
-|Irlanda|IE|188.165.6.82|2001:41d0:301:3::25|
-|Portogallo|PT|213.251.139.148|2001:41d0:301:2::25|
-|Regno Unito|UK|178.32.52.5|2001:41d0:301:12::2|
-|Italia|IT|178.32.138.102|2001:41d0:301:11::25|
-|Spagna|ES|188.165.130.4|2001:41d0:301:4::25|
-|Polonia|PL|188.165.16.78|2001:41d0:301:5::25|
-|Repubblica Ceca|CZ|51.254.146.179|2001:41d0:301:6::25|
-|Paesi Bassi|NL|51.254.154.69|2001:41d0:301:7::25|
-|Finlandia|FI|178.32.129.72|2001:41d0:301:8::25|
-|Lituania|LT|188.165.26.160|2001:41d0:301:9::25|
-|Germania|DE|178.33.34.108|2001:41d0:301:1::25|
-|Belgio|BE|87.98.252.243|2001:41d0:301:10::25|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-145.239.37.172
-```
-
-Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
-
-```bash
-46.105.204.25
-```
-
-Se hai bisogno dell’indirizzo IP del **gateway di uscita** del tuo hosting, è necessario utilizzare questo indirizzo IP:
-
-
-```bash
-91.134.248.215
-```
 
 ### Cluster 026
 

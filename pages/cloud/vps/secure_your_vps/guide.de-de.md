@@ -1,26 +1,26 @@
 ---
-title: 'VPS absichern'
+title: VPS absichern
 slug: vps-sicherheit
 section: 'Erste Schritte'
-excerpt: 'Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS'
+excerpt: Erfahren Sie hier die Grundlagen zur Sicherheit Ihres VPS
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15. Januar 2021**
+**Letzte Aktualisierung am 05.05.2022**
 
 ## Ziel
 
 Wenn Sie Ihren VPS bestellen, können Sie eine Distribution oder ein Betriebssystem auswählen, das Sie vorinstallieren möchten. Der Server kann also nach der Lieferung direkt verwendet werden. Es ist jedoch Ihre Aufgabe als Administrator, Maßnahmen umzusetzen, die die Sicherheit und Stabilität Ihres Systems gewährleisten.
 
 **In dieser Anleitung erhalten Sie einige allgemeine Tipps zur Sicherung Ihres GNU/Linux-basierten Servers.**
- 
+
 > [!warning]
->Diese Anleitung soll Sie bei allgemeinen Aufgaben so weit wie möglich unterstützen. Bitte denken Sie daran, diese Aktionen nötigenfalls an Ihre Situation anzupassen.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Datenzugriff auf Ihre Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
@@ -37,74 +37,73 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister u
 > Wenn Sie Ihren ersten OVHcloud VPS konfigurieren, empfehlen wir Ihnen zunächst unsere Anleitung zur [Ersteinrichtung eines VPS](../erste-schritte-mit-einem-vps/).
 >
 
+Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen verbunden sind.
+
 ### Systemupdate
 
-Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen. Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren VPS zu sichern. 
+Entwickler von Distributionen und Betriebssystemen veröffentlichen häufig Softwarepaket-Updates, sehr oft aus Sicherheitsgründen.<br>
+Regelmäßige Aktualisierung Ihrer Distribution oder Ihres Betriebssystems mittels Herunterladen und Installation von Updates ist somit ein wichtiger Punkt, um Ihren VPS zu sichern. 
 
 Dieses Update wird in zwei Schritten durchgeführt.
 
-- Aktualisierung der Paketliste
+- Aktualisierung der Paketliste:
 
-```sh
-apt-get update
+```bash
+sudo apt update
 ```
 
-- Aktualisierung der Pakete selbst
+- Aktualisierung der Pakete:
 
-```sh
-apt-get upgrade
+```bash
+sudo apt upgrade
 ```
 
 Dieser Vorgang muss regelmäßig durchgeführt werden, um ein System auf dem neuesten Stand zu halten.
 
 ### Standard-SSH-Listening-Port ändern
 
-Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening-Ports des SSH-Dienstes sein. Er ist standardmäßig auf **Port 22** eingestellt, deshalb zielen Server-Hacking-Versuche von Robotern auf diesen Port. Daher werden Versuche, Server von Robotern zu hacken, auf diesen Port abzielen. Die Änderung dieser Einstellung mithilfe eines anderen Ports ist eine einfache Maßnahme, um den Schutz Ihres Servers vor automatisierten Angriffen zu verbessern.
+Eine der ersten Aktionen auf Ihrem Server sollte die Konfiguration des Listening-Ports des SSH-Dienstes sein. Er ist standardmäßig auf **Port 22** eingestellt, deshalb zielen Server-Hacking-Versuche von Robotern auf diesen Port. Die Änderung dieser Einstellung mithilfe eines anderen Ports ist eine einfache Maßnahme, um den Schutz Ihres Servers vor automatisierten Angriffen zu verbessern.
 
-Um die SSH-Konfigurationsdatei zu ändern, geben Sie folgenden Befehl ein:
+Ändern Sie hierzu die Konfigurationsdatei des Dienstes mit einem Texteditor Ihrer Wahl (`nano` wird in diesem Beispiel verwendet):
 
-```sh
-nano /etc/ssh/sshd_config
+```bash
+~$ sudo nano /etc/ssh/sshd_config
 ```
-
-> [!primary]
->
-> Der Befehl `nano` wird beispielhaft verwendet. Sie können auch `vim` oder jegliche Befehle verwenden, die es erlauben, Konfigurationsdateien zu bearbeiten.
->
 
 Sie sollten diese oder ähnliche Zeilen vorfinden:
 
-```sh
+```console
 # What Ports, IPs and Protocols we listen for
 Port 22
 ```
 
-Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl. **Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Verwenden Sie aus Sicherheitsgründen eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
+Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
+**Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Verwenden Sie aus Sicherheitsgründen eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
 
 Starten Sie den Dienst neu:
 
-```sh
+```bash
 systemctl restart sshd
 ```
 
-Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`~$ reboot`).
+Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können alternativ den VPS neu starten (`~$ sudo reboot`).
 
 Denken Sie daran, dass Sie nun den neuen Port immer angeben müssen, wenn Sie eine SSH-Verbindung mit Ihrem Server aufbauen, zum Beispiel:
 
-```sh
+```bash
 username@IPv4_des_VPS -p PortNummer
 ```
 
 ### Passwort des Root-Benutzers ändern
 
-Es wird dringend empfohlen, das Passwort des Root-Benutzers so abzuändern, dass es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in dieser [Anleitung](../root-password/).
+Es wird dringend empfohlen, das Passwort des Root-Benutzers so abzuändern, dass es auf einem neuen System nicht im Defaultzustand verbleibt. Weitere Informationen finden Sie in [dieser Anleitung](../root-password/).
 
 ### Anlegen eines Benutzers mit eingeschränkten Rechten
 
 Im Allgemeinen sollten Aufgaben, die keine Root-Rechte erfordern, über einen Standardbenutzer ausgeführt werden. Sie können einen Benutzer mit folgendem Befehl erstellen:
 
-```sh
-adduser Benutzername
+```bash
+sudo adduser Benutzername
 ```
 
 Geben Sie dann die vom System angeforderten Informationen (Passwort, Name etc.) ein.
@@ -113,11 +112,11 @@ Der neue Benutzer kann sich via SSH einloggen. Verwenden Sie beim Login die eing
 
 Wenn Sie mit diesen Login-Daten in Ihrem System eingeloggt sind, geben Sie folgenden Befehl ein, wenn Sie Operationen ausführen möchten, die Administrator-Rechte erfordern:
 
-```sh
+```bash
 su root
 ```
 
-Geben Sie das Passwort ein, wenn Sie dazu aufgefordert werden, und die aktive Verbindung wird auf den Root-Benutzer umgestellt.
+Geben Sie das Passwort ein, wenn Sie dazu eingeladen sind, und die aktive Verbindung wird auf den Root-Benutzer umgestellt.
 
 ### Deaktivierung des Serverzugangs als Root
 
@@ -127,13 +126,13 @@ Wir empfehlen Ihnen, den direkten Benutzerzugang als Root über das SSH-Protokol
 
 Öffnen Sie die SSH-Konfigurationsdatei zum Bearbeiten wie oben beschrieben:
 
-```sh
-nano /etc/ssh/sshd_config
+```bash
+sudo nano /etc/ssh/sshd_config
 ```
 
 Lokalisieren Sie folgenden Abschnitt:
 
-```sh
+```console
 # Authentication: 
 LoginGraceTime 120
 PermitRootLogin yes 
@@ -144,51 +143,95 @@ Ersetzen Sie **yes** mit **no** in der Zeile `PermitRootLogin`.
 
 Damit diese Änderung berücksichtigt wird, müssen Sie den SSH-Dienst neu starten:
 
-```sh
+```bash
 systemctl restart sshd
 ```
 
 Danach werden Verbindungsversuche zu Ihrem Server über den Root-Benutzer (`ssh root@IPv4_des_VPS`) abgelehnt.
 
-### Fail2ban installieren
-
-Fail2ban ist ein Sicherheitsframework zur Prävention unbefugter Zugriffe. Es blockiert unbekannte IP-Adressen, die versuchen, in Ihr System einzudringen. Diese Software wird dringend empfohlen, um Brute-Force-Angriffe auf Ihre Dienste zu verhindern.
-
-Um das Softwarepaket zu installieren verwenden Sie folgenden Befehl:
-
-```sh
-apt-get install fail2ban
-```
-
-Wenn das Paket installiert ist, passen Sie die Konfigurationsdatei an Ihren Verwendungszweck an. Vor jeder Änderung wird empfohlen, die Konfigurationsdatei mit folgendem Befehl zu sichern:
-
-```sh
-cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.conf.backup
-```
-
-Bearbeiten Sie anschließend die Datei:
-
-```sh
-nano /etc/fail2ban/jail.conf
-```
-
-Wenn Sie mit den Änderungen fertig sind, starten Sie den Dienst mit folgendem Befehl neu:
-
-```sh
-/etc/init.d/fail2ban restart
-```
-
-Sie finden die Anwendungsmöglichkeiten in der Dokumentation zu diesem Tool auf der [offiziellen Webseite](https://www.fail2ban.org/wiki/index.php/Main_Page){.external}.
-
 ### Konfiguration der internen Firewall (iptables)
 
 GNU/Linux Distributionen werden mit einem Firewall-Dienst bereitgestellt, der als iptables bezeichnet wird. Er hat standardmäßig keine aktiven Regeln. Sie können dies überprüfen, indem Sie den folgenden Befehl eingeben:
 
-```shr
+```bash
 iptables -L
 ```
 
+Weitere Informationen zu Iptables finden Sie in unserer [Anleitung](../../dedicated/firewall-iptables/).
+
 Wir empfehlen Ihnen, Regeln für diese Firewall zu erstellen und an Ihre Nutzung anzupassen. Weitere Informationen zu den möglichen Einstellungen finden Sie in der offiziellen Dokumentation der verwendeten Distribution.
+
+### Fail2ban installieren
+
+Fail2ban ist ein Sicherheitsframework zur Prävention unbefugter Zugriffe. Es dient dazu, IP-Adressen zu blockieren, von denen aus Bots oder Angreifer versuchen, in Ihr System einzudringen.<br>
+Dieses Paket wird empfohlen und ist in einigen Fällen sogar unerlässlich, um Ihren Server vor Angriffen der Typen *Brute Force* oder *Denial of Service* zu schützen.
+
+Um das Softwarepaket zu installieren verwenden Sie folgenden Befehl:
+
+```bash
+sudo apt install fail2ban
+```
+
+Sie können die Fail2ban-Konfigurationsdateien personalisieren, um Dienste, die dem öffentlichen Internet ausgesetzt sind, vor wiederholten Verbindungsversuchen zu schützen.
+
+Wie von Fail2ban empofohlen, erstellen Sie eine lokale Konfigurationsdatei für Ihre Dienste, indem Sie die Datei "jail.conf" kopieren:
+
+```bash
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+```
+
+Öffnen Sie anschließend die Datei mit einem Texteditor:
+
+```bash
+sudo nano /etc/fail2ban/jail.local
+```
+
+Beachten Sie auf jeden Fall die Informationen am Dateianfang, insbesondere die Kommentare unter `[DEFAULT]`.
+
+Die Parameter von `[DEFAULT]` sind global und gelten daher für alle Dienste, die in dieser Datei aktiviert sind (`enabled = true`). 
+
+Es ist wichtig zu wissen, dass die globalen Parameter nur dann berücksichtigt werden, wenn in den Abschnitten weiter unten in der Datei (`JAILS`) keine davon abweichenden Werte definiert sind.
+
+Betrachten Sie etwa diese Zeilen unter `[DEFAULT]`:
+
+```console
+bantime  = 10m
+maxretry = 5
+enabled = false
+```
+
+Dies bedeutet, dass eine IP-Adresse, von der aus sich ein Host zu verbinden versucht, nach dem fünften gescheiterten Verbindungsversuch für 10 Minuten gesperrt wird.<br>
+Allerdings bleiben alle durch `[DEFAULT]` und in den darauf folgenden Abschnitten spezifizierten Parameter deaktiviert, es sei denn, die Zeile `enabled = true` wird für einen Dienst hinzugefügt (aufgelistet unter `# JAILS`).
+
+Anwendungsbeispiel: Die folgenden Zeilen im Abschnitt `[sshd]` aktivieren Einschränkungen ausschließlich für den Dienst OpenSSH:
+
+```console
+[sshd]
+enabled = true
+port = ssh
+filter = sshd
+maxretry = 3
+findtime = 5m
+bantime  = 30m
+```
+
+In diesem Fall wird jeglicher Verbindungsversuch über SSH, der innerhalb von fünf Minuten dreimal fehlschlägt, zu einer Sperrzeit von 30 Minuten für die betroffene IP-Adresse führen.
+
+Sie können "ssh" mit Ihrer SSH-Portnummer ersetzen, falls Sie diese geändert haben.
+
+Der beste Ansatz besteht darin, Fail2ban nur für die Dienste zu aktivieren, die tatsächlich auf dem Server ausgeführt werden. Jeder unter `# JAILS` hinzugefügte individuelle Parameter hat dann Vorrang vor den Standardwerten `[DEFAULT]`.
+
+Sobald Ihre Bearbeitungen abgeschlossen sind, speichern Sie die Datei und schließen Sie den Editor.
+
+Starten Sie den Dienst neu, um sicherzustellen, dass er mit den individualisierten Änderungen ausgeführt wird:
+
+```bash
+sudo service fail2ban restart
+```
+
+Fail2ban verfügt über zahlreiche Einstellungen und Filter für die Indvidualisierung sowie vordefinierte Optionen, zum Beispiel wenn Sie einem Nginx Webserver eine zusätzliche Sicherheitsebene hinzufügen möchten.
+
+Weitere Informationen und Empfehlungen zu Fail2ban finden Sie in der [offiziellen Dokumentation](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dieses Tools.
 
 ### Konfiguration der OVHcloud Network Firewall
 
@@ -213,4 +256,4 @@ Alle Informationen zu den für Ihren Dienst verfügbaren Backup-Lösungen finden
 
 [Network Firewall](../../dedicated/firewall-network/)
 
-Kommen Sie zu unserer User Community auf <https://community.ovh.com/>dem
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>

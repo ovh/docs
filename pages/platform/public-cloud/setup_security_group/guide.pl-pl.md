@@ -7,7 +7,7 @@ section: Zarządzanie w interfejsie Horizon
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 24-08-2021**
@@ -21,13 +21,13 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
-- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
 ## W praktyce
 
 ### Etap 1: utworzyć grupę zabezpieczeń
 
-Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
+Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
 
 ![określenie regionu](images/security-group0.png){.thumbnail}
 

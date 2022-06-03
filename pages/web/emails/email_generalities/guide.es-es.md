@@ -20,14 +20,14 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Requisitos
 
-- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovh.es/hosting/), el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml) o la solución MX Plan.
+- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>
 
 Una vez que la solución MX Plan haya sido creada y esté disponible, podrá administrarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.es/mxplan-migration/), tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección "Web Cloud". En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|

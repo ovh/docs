@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 ## Requirements
 
-- an [Email Pro](https://www.ovh.ie/emails/email-pro/) solution
+- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) solution
 - credentials for the Email Pro account you would like to configure
 - credentials for the Gmail account you want to configure the OVHcloud Email Pro account on
 
@@ -39,12 +39,12 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 >
 > In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
 
-Once you have logged in to the interface, click on the cogwheel icon, then `Settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}. 
+Once you have logged in to the interface, click on the cogwheel icon, then `See all settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}. 
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 

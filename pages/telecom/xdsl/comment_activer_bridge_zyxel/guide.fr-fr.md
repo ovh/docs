@@ -28,7 +28,7 @@ Le mode bridge est utile si vous souhaitez que votre modem ne se comporte plus c
 
 ### Étape 1 : Accéder à l'outil de configuration à distance
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon modem`{.action}.
 
 Dans le cadre « Configuration à distance », vérifiez que la case à côté de `Configuration à distance activée` est bien décochée. Dès lors, deux possibilités :
 
@@ -36,7 +36,7 @@ Dans le cadre « Configuration à distance », vérifiez que la case à côté d
 
 - **la configuration à distance est activée**: Vous devez désactiver la configuration à distance si vous souhaitez paramétrer votre modem Zyxel en mode bridge. Pour ce faire, décochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de la désactivation.
 
-![activerBridge](images/activerBridge-step1.png){.thumbnail}
+![activerBridge](images/activerBridge-step1-2022.png){.thumbnail}
 
 ### Étape 2 : Connectez-vous à l'interface locale du modem
 
@@ -70,7 +70,7 @@ Sur cette page, éditez l'interface correspondant à votre type de connexion :
 
 En cas de doute, le type de votre connexion est disponible sur l'espace client OVHcloud.
 
-![activerBridge](images/activerBridge-step3-3.png){.thumbnail}
+![activerBridge](images/activerBridge-step3-3-2022.png){.thumbnail}
 
 ### Étape 4 : Modifier le mode de votre connexion
 

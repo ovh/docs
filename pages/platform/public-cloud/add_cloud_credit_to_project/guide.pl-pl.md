@@ -1,63 +1,71 @@
 ---
 title: 'Korzystanie z vouchera'
 slug: korzystanie-z-vouchera
-excerpt: 'Dowiedz się, jak dodać zasilić swoje konto do projektu Public Cloud'
+excerpt: 'Dowiedz się, jak dodać zasilenie lub vouchery do Twojego projektu Public Cloud'
 section: 'Informacje wprowadzające'
+order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 22-11-2019**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja z dnia 04-02-2022**
 
 ## Wprowadzenie
 
-Z tego przewodnika dowiesz się, jak zasilić konto Public Cloud za pomocą vouchera lub poprzez wygenerowanie zamówienia.
+Opcja zasilenia konta cloud pozwala na przyznanie określonej kwoty na Twój projekt Public Cloud, który będzie służył jako domyślna metoda płatności przy [rozliczaniu projektu](../analizowanie_platnosci_i_zarzadzanie_nimi/).<br>
+Oznacza to, że wszystkie zobowiązania z tytułu zasilenia konta cloud zostaną opłacone za pomocą innych dostępnych środków płatniczych. Więcej informacji na ten temat znajdziesz w [przewodnikach dotyczących płatności za usługę Public Cloud](https://docs.ovh.com/pl/billing/).
 
-Będzie on używany jako domyślny sposób płatności.
-
-Po wystawieniu faktury kwota do zapłaty jest pobierana z konta Cloud, następnie z konta Digital LaunchPad i z konta prepaid. Saldo ujemne jest regulowane za pomocą ustawionego sposobu płatności. 
-
-Aby uzyskać więcej szczegółowych informacji na temat trzech ostatnich sposobów płatności, w prawym górnym rogu panelu klienta kliknij swoje imię, a następnie przejdź do pozycji `Sposoby płatności`{.action}.
-
-Zasilenia nie można przekazać innemu użytkownikowi ani zwrócić. Nie ma ono żadnej wartości pieniężnej, a zasilenie niewykorzystane przez 13 miesięcy zostaje utracone.
+**Z tego przewodnika dowiesz się, jak zasilić konto Public Cloud za pomocą vouchera lub poprzez wygenerowanie zamówienia.**
 
 ## Wymagania początkowe
 
-* Posiadanie projektu Public Cloud
-
+- Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na Twoim koncie OVHcloud
+- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
-### Zamówienie zasilenia
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Otwórz `Credit and Vouchers`{.action} w menu po lewej stronie.
 
-Aby dodać zasilenie Public Cloud, w strefie Public Cloud w panelu klienta przejdź do menu `Credit and vouchers`{.action}, a następnie kliknij pozycję `Zamów zasilenie Public Cloud`{.action}.
+> [!warning]
+>
+Zapamiętaj, że zasilenia dodane do tej sekcji nie mogą zostać przekazane ani zwrócone. Nie mają żadnej wartości pieniężnej, a wszelkie niewykorzystane zasilenie w ciągu 13 miesięcy od zakupu traci swoją wartość.
+>
 
+### Dodaj zasilenie
 
-![addpubliccloudcredit](images/buycredit1.png){.thumbnail}
+Kliknij przycisk `Zamów zasilenie cloud`{.action}.
 
-W poniższym oknie możesz podać kwotę w EUR netto.
+![addpubliccloudcredit](images/cloudcredit1.png){.thumbnail}
 
-![addpubliccloudcredit](images/buycredit2.png){.thumbnail}
+Wpisz kwotę (netto), którą chcesz dodać w swojej walucie. Kliknij `Wygeneruj zamówienie`{.action}, aby zatwierdzić.
 
-Zostanie wygenerowany link. Kliknij ten link, aby wyświetlić odpowiednie zamówienie.
+![addpubliccloudcredit](images/cloudcredit2.png){.thumbnail}
 
-![addpubliccloudcredit](images/buycredit3.png){.thumbnail}
-![addpubliccloudcredit](images/buycredit4.png){.thumbnail}
+Zostaje wygenerowane zamówienie. Kliknij na link w zielonej ramce powiadomienia, aby sprawdzić i rozpocząć płatność.
 
-Po opłaceniu zamówienia zasilenie znajdziesz na liście zasileń i voucherów.
+![addpubliccloudcredit](images/cloudcredit3.png){.thumbnail}
+
+Po dokonaniu płatności zasilenie pojawi się na liście `Kredyty i vouchery`.
 
 ### Wykorzystanie vouchera
 
-Aby wykorzystać voucher, w strefie Public Cloud w panelu klienta przejdź do menu `Credit and vouchers`{.action}, a następnie kliknij pozycję `Dodaj voucher`{.action}.
+Kliknij przycisk `Włącz kod`{.action}.
 
-![addpubliccloudcredit](images/buycredit6.png){.thumbnail}
+![addpubliccloudcredit](images/voucher1.png){.thumbnail}
 
-Następnie wprowadź kod vouchera.
+W oknie, które się pojawi, wprowadź kod vouchera i kliknij `Zatwierdź`{.action}.
 
-![addpubliccloudcredit](images/buycredit7.png){.thumbnail}
+![addpubliccloudcredit](images/voucher2.png){.thumbnail}
 
-Będzie on widoczny na liście zasileń i voucherów.
+Pozostała część kodu pojawi się na liście `Kredyty i vouchery`.
 
-Ze względu na okres ważności voucher zawsze będzie używany przed zasileniem Public Cloud.
+> [!primary]
+>
+Ze względu na to, że kody promocyjne są ważne przez dłuższy czas, pozostała część kodu zostanie wykorzystana przed zasileniem Public Cloud.
+>
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

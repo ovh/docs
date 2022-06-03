@@ -25,6 +25,12 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 - Disporre di almeno un indirizzo [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+>
+
 ## Procedura
 
 Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzati:
@@ -40,17 +46,19 @@ Per questo esempio, nei nostri esempi di codice utilizzeremo i seguenti valori: 
 
 ### Assegna un indirizzo MAC virtuale
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu `Bare Metal Cloud`{.action}. Clicca sul menu `IP`{.action} nella barra dei menu a sinistra e seleziona il tuo indirizzo IP Failover nella tabella.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Bare Metal Cloud`{.action} e apri il menu `IP`{.action}.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+Il menu a tendina “Service” ti permette di selezionare solo gli IP Failover.
+
+![manage IPs](images/manageIPs.png){.thumbnail}
 
 Clicca sui tre puntini `..`{.action}. e poi su `Aggiungi un indirizzo MAC virtuale`{.action}.
 
 ![Aggiungi un MAC virtuale (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Seleziona "OVH" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
+Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
 
-![Aggiungi un MAC virtuale (2)](images/virtual_mac_03.png){.thumbnail}
+![Aggiungi un MAC virtuale (2)](images/addvmac2.png){.thumbnail}
 
 ### Determinare l'indirizzo del gateway
 
@@ -107,7 +115,7 @@ Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di
 
 - Distribuzioni vecchie:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -122,7 +130,7 @@ iface eth0 inet static
 
 - Distribuzioni recenti:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -137,7 +145,7 @@ iface eth0 inet static
 
 Sostituisci anche `eth0` se il tuo sistema utilizza nomi di interfaccia di rete prevedibili. Per trovare i nomi di interfaccia di rete, esegui questo comando:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -147,7 +155,7 @@ Salva e chiudi il file e riavvia la macchina virtuale.
 
 Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale. che si trova in `/etc/network/interfaces`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -166,7 +174,7 @@ Ora, registra e chiudi il file.
 
 In seguito apri il file di routing della macchina virtuale. che si trova in `/etc/sysconfig/network-scripts/route-eth0`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -182,7 +190,7 @@ Salva e chiudi il file e riavvia la macchina virtuale.
 
 Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/ifcfg-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
-```sh
+```console
 DEVICE=(interfaccia-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -201,7 +209,7 @@ Salva e chiudi il file
 
 Apri il file di routing della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/route-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (nome-interfaccia)
 NETWORK_GW_VM - 255.255.255.0 (inserisci il nome dell'interfaccia)
 default GATEWAY_IP
@@ -211,7 +219,7 @@ Salva e chiudi il file.
 
 In seguito apri il file di routing della macchina virtuale. Il sito è disponibile all’indirizzo `/etc/sysconfig/network/resolv.conf`.
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -221,7 +229,7 @@ Dopo aver salvato e chiuso il file, riavvia la tua rete o la tua macchina virtua
 
 Apri un terminale sulla tua macchina virtuale. Una volta connesso, apri il file di configurazione di rete della macchina virtuale, che si trova nella cartella `/etc/rc.conf`. Modifica il file in modo che rispecchi la configurazione qui sotto. In questo esempio, il nome dell'interfaccia è "em0". Se necessario, è possibile modificarlo.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_route="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -230,7 +238,7 @@ route_net2="default GATEWAY_IP"
 
 Salva e chiudi il file. In seguito, modifica il file `/etc/resolv.conf`. Crealo se necessario.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -240,13 +248,13 @@ Salva e chiudi il file e riavvia la macchina virtuale.
 
 Per prima cosa connetti SSH alla tua macchina virtuale e apri il file di configurazione di rete situato in `/etc/netplan/`utilizzando il comando seguente. Per dimostrarlo, il nostro file si chiama "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Una volta avviato il file, modifica con questo codice:
 
-```sh
+```yaml
 network:
     ethernets:
         (nome dell'interfaccia):
@@ -266,7 +274,7 @@ network:
 
 Dopo aver effettuato le modifiche, salva e chiudi il file ed esegui il comando:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

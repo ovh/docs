@@ -7,7 +7,7 @@ legacy_guide_number: g1962
 section: FTP y SSH
 ---
 
-**Última actualización: 04/08/2020**
+**Última actualización: 19/01/2022**
 
 ## Objetivo
 
@@ -17,42 +17,38 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 ## Requisitos
 
-- Tener contratado un plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/) con acceso SSH.
+- Tener contratado un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
 - Conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `WebCloud`{.action}.
 
 ## Procedimiento
 
-### 1\. Comprobar que el acceso SSH está activo
+### 1\. Comprobar que el acceso SSH está activo <a name="sshcheck"></a>
 
-En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
+En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Web Cloud`{.action} y haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento. 
 
 En la columna «SSH» podrá consultar si el usuario SSH (o «Login SSH») dispone de un acceso SSH activo. En caso de que no esté activado, aparecerá la mención «Desactivado».
 
 ![usessh](images/use-ssh-step1.png){.thumbnail}
 
-Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/) dispone de un acceso SSH.
+Para activarlo, haga clic en el botón `(...)`{.action} situado al final de la línea correspondiente al usuario y seleccione `Editar`{.action}. Aparecerá una ventana en la que podrá activar el acceso SSH. Si no tiene la opción de activarlo, asegúrese de que su [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/) dispone de un acceso SSH.
 
-### 2\. Obtener los datos de conexión
+### 2\. Obtener los datos de conexión <a name="sshlogin"></a>
 
-Para conectarse por SSH a su espacio de almacenamiento necesitará los elementos que se incluyen a continuación. Puede consultar esta información en la pestaña `FTP - SSH`{.action} de su alojamiento.
+Para conectarse por SSH a su espacio de almacenamiento, consulte la pestaña `FTP - SSH`{.action}:
 
-|Elemento|Dónde consultarlo|
-|---|---|
-|Usuario SSH activo|Puede consultarlo en la columna «Usuario SSH» de la tabla. Le recordamos que este usuario debe [disponer de un acceso SSH activo](./#1-comprobar-que-el-acceso-ssh-esta-activo).|
-|Contraseña del usuario SSH|Si ha olvidado su contraseña, podrá modificarla haciendo clic en el botón  `...`{.action} > `Cambiar la contraseña`{.action}.|
-|Dirección del servidor SSH|Consulte la sección «Acceso SSH al cluster». La dirección del servidor SSH es la que aparece tras «ssh://» y termina antes de los dos puntos («:»).|
-|Puerto de conexión al servidor SSH|Consulte la sección «Acceso SSH al cluster». El número de puerto aparece tras los dos puntos («:»).|
-
-Por ejemplo, en `ssh://ssh.cluster023.hosting.ovh.net:22/`, la dirección del servidor SSH sería «ssh.cluster023.hosting.ovh.net» y el puerto de conexión SSH sería «22».
-
-![usessh](images/use-ssh-step2.png){.thumbnail}
+- **Usuario SSH activo**: Puede consultarlo en la columna "**Usuario**" de la tabla. Le recordamos que este usuario debe [disponer de un acceso SSH activo](#sshcheck).
+- **Contraseña del usuario SSH**: Si ha olvidado su contraseña, podrá modificarla haciendo clic en el botón  `...`{.action} > `Cambiar la contraseña`{.action}.
+- **Dirección del servidor SSH**: Introduzca la indicación "**Servidor SSH**".
+- **Puerto de conexión al servidor SSH**: Introduzca la indicación "**Puerto SSH**".
 
 ### 3\. Conectarse por SSH al espacio de almacenamiento
 
 Para conectarse por SSH, utilice un terminal de línea de comandos. De este modo podrá interactuar directamente con el espacio de almacenamiento. 
 
-En MacOS, Linux y Windows 10, esta herramienta está instalada por defecto. Si tiene un entorno Windows más antiguo, deberá instalar un programa como PuTTY o añadir la funcionalidad OpenSSH. Tenga en cuenta que el procedimiento será diferente en función del sistema operativo que utilice.
+> [!primary]
+>
+> En MacOS, Linux y Windows 10, esta herramienta está instalada por defecto. Si tiene un entorno Windows más antiguo, deberá instalar un programa como PuTTY o añadir la funcionalidad OpenSSH.
 
 Existen dos formas de conectarse según el método que utilice:
 
@@ -61,10 +57,10 @@ Existen dos formas de conectarse según el método que utilice:
 > [!warning]
 > En nuestros planes de hosting, no hay acceso «root» o superusuario por SSH.
 
-Una vez abierto el terminal, utilice el siguiente comando sustituyendo los elementos «sshlogin», «sshserver» et «connectionport» por los correspondientes a sus claves SSH. 
+Una vez abierto el terminal, utilice el siguiente comando, sustituyendo los elementos "yurlogin", "ssh.cluster000.hosting.ovh.net" y "22" por los correspondientes a sus identificadores SSH. 
 
 ```ssh
-ssh sshlogin@sshserver -p connectionport
+ssh yourlogin@ssh.cluster000.hosting.ovh.net -p 22
 ```
 
 Después de ejecutar el comando, el sistema le pedirá que introduzca la contraseña del usuario SSH. Una vez conectado, vaya al siguiente paso: [Interactuar por SSH con su espacio de almacenamiento](./#4-interactuar-por-ssh-con-su-espacio-de-almacenamiento_1).
@@ -75,12 +71,10 @@ Después de ejecutar el comando, el sistema le pedirá que introduzca la contras
 
 Una vez abierto el programa (PuTTY, por ejemplo), introduzca las claves de conexión. Tenga en cuenta que el procedimiento será diferente en función del programa que utilice. A continuación le ofrecemos, a modo de recordatorio, la información que deberá introducir:
 
-|Información solicitada|Detalles|
-|---|---|
-|Servidor SSH|Indique la dirección del servidor SSH que anotó en el [paso 2](./#2-obtener-los-datos-de-conexion). Según el programa utilizado, puede denominarse «Dirección del servidor», «Nombre del host» o incluso «Host Name».|
-|Puerto de conexión|Introduzca el puerto de conexión que anotó en el [paso 2](./#2-obtener-los-datos-de-conexion).|
-|Usuario SSH|Introduzca el usuario SSH. Según el programa utilizado, puede denominarse «Nombre de usuario», «Identificador», «Login» o incluso «Username».|
-|Contraseña del usuario SSH|Es la contraseña asociada al usuario SSH.<br><br> Según el programa utilizado, puede denominarse «contraseña» o «password».|
+- **Servidor SSH**: Indique la dirección del servidor SSH que anotó en el [paso 2](#sshlogin). Según el programa utilizado, puede denominarse «Dirección del servidor», «Nombre del host» o incluso «Host Name».
+- **Puerto de conexión**: Introduzca el puerto de conexión que anotó en el [paso 2](#sshlogin).
+- **Login SSH**: Introduzca el usuario SSH. Según el programa utilizado, puede denominarse «Nombre de usuario», «Identificador», «Login» o incluso «Username».
+- **Contraseña del usuario SSH**: Es la contraseña asociada al usuario SSH. Según el programa utilizado, puede denominarse «contraseña» o «password».
 
 Una vez conectado, vaya al siguiente paso.
 
@@ -112,8 +106,8 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 
 ## Más información
 
-[Modificar la configuración de un alojamiento web](../cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
+[Modificar la configuración de un alojamiento web](https://docs.ovh.com/us/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/)
 
-[Configurar el archivo .ovhconfig de un alojamiento web](../configurar-archivo-ovhconfig/)
+[Configurar el archivo .ovhconfig de un alojamiento web](https://docs.ovh.com/us/es/hosting/configurar-archivo-ovhconfig/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

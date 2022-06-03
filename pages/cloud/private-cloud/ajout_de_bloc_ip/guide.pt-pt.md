@@ -6,7 +6,7 @@ section: Funcionalidades da OVHcloud
 order: 01
 ---
 
-**Última atualização: 29/07/2020**
+**Última atualização: 06/04/2022**
 
 ## Objetivo
 
@@ -16,8 +16,8 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), para receber dados de acesso.
+- Ter um identificador de utilizador ativo [criado na Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -56,7 +56,7 @@ Vários campos deverão ser preenchidos para criar o seu bloco IP
 
 > [!success]
 >
-> As taxas de ativação de um bloco são de 2€ /IP + IVA. Assim, para um bloco em `/28` com 16 IP, terá uma nota de encomenda de 32€ + IVA por pagar antes da respetiva entrega.
+> Antes da entrega, terá de pagar as taxas de ativação do bloco IP.
 >  
 > Os custos de renovação dos IP são gratuitos.
 >
@@ -89,7 +89,7 @@ O resultado terá este formato:
 
 ![campo nexthop](images/api-result.png){.thumbnail}
 
-De seguida, utilize esta chamada API para mover o IP no “IP parking”:
+Se tiver de desassociar o bloco IP mais tarde, pode utilizar esta chamada API para mover o IP no “IP parking”:
 
 > [!api]
 >
@@ -106,6 +106,10 @@ Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHclou
 A referência da operação é “removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
+
+O IP aparecerá depois no `Endereços IP em Parking`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Quer saber mais?
 

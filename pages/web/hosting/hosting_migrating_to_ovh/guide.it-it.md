@@ -68,7 +68,7 @@ Poiché la configurazione del dominio resta invariata, l’hosting utilizzato pe
 
 #### Step 3: crea i tuoi indirizzi email in OVH
 
-Una volta che il sito Web è stato trasferito, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome.  Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio). Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
+Una volta che il sito Web è stato trasferito, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome.  Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio). Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
 
 Non avendo ancora cambiato la configurazione del dominio, continuerai a ricevere i nuovi messaggi sugli indirizzi email creati presso il tuo attuale provider. Inoltre, è necessario continuare a utilizzare questi indirizzi anche per l’invio. 
 
@@ -137,7 +137,7 @@ Poiché la configurazione del dominio resta invariata, l’hosting utilizzato pe
 
 #### Step 3: crea i tuoi indirizzi email in OVH
 
-**Una volta che il dominio è stato trasferito**, riceverai una mail che ti comunicherà l’avvenuta installazione del servizio email associato al tuo hosting. A partire da questo momento, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome. Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio), Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
+**Una volta che il dominio è stato trasferito**, riceverai una mail che ti comunicherà l’avvenuta installazione del servizio email associato al tuo hosting. A partire da questo momento, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome. Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio), Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
 
 Non avendo ancora cambiato la configurazione del dominio, continuerai a ricevere i nuovi messaggi sugli indirizzi email creati presso il tuo attuale provider. Inoltre, è necessario continuare a utilizzare questi indirizzi anche per l’invio. 
 
@@ -180,4 +180,4 @@ Il tuo sito Web, i tuoi account email e il tuo dominio adesso sono in OVH!
 
 [Gestire un database da un hosting condiviso](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/).
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

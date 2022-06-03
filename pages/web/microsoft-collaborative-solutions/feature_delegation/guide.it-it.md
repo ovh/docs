@@ -15,7 +15,7 @@ Il servizio di posta Exchange permette di usufruire di indirizzi email professio
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Exchange](https://www.ovh.it/emails/){.external}
+- Disporre di una soluzione [Exchange](https://www.ovhcloud.com/it/emails/){.external}
 - Disporre di almeno due account attivi e configurati sulla stessa piattaforma Exchange OVH
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre delle credenziali dell’account Exchange a cui verranno delegati i diritti
@@ -39,7 +39,7 @@ Una volta individuato l’account per cui vuoi delegare i diritti, definito i pe
 
 ### Step 1: crea la delega
 
-Per effettuare questa operazione, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella colonna a sinistra clicca su `Microsoft`{.action} > `Exchange`{.action}, seleziona il nome del servizio in cui si trova l’account per cui vuoi creare la delega e clicca sulla scheda `Account email`{.action}.
+Per effettuare questa operazione, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Microsoft`{.action} > `Exchange`{.action}, seleziona il nome del servizio in cui si trova l’account per cui vuoi creare la delega e clicca sulla scheda `Account email`{.action}.
 
 Visualizzi una tabella con tutti gli account associati al tuo servizio Exchange. Clicca sui tre puntini in corrispondenza dell’account in questione e seleziona `Gestisci le tue deleghe`{.action}.
 
@@ -137,4 +137,4 @@ A questo punto scrivi il tuo messaggio e invialo.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

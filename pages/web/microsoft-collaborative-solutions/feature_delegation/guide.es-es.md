@@ -15,7 +15,7 @@ El servicio Exchange permite disfrutar de direcciones de correo profesionales, q
 
 ## Requisitos
 
-- Tener un servicio [Exchange](https://www.ovh.es/emails/){.external}.
+- Tener un servicio [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}.
 - Tener al menos dos cuentas Exchange activas configuradas en una misma plataforma Exchange de OVH.
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener las claves de la cuenta Exchange que disfrutará de los nuevos permisos delegados.
@@ -39,7 +39,7 @@ Una vez que haya identificado la cuenta cuyos permisos quiere delegar y que haya
 
 ### 1. Activar la delegación
 
-Para acceder a la gestión del servicio, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la columna izquierda, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en el nombre del servicio Exchange al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
+Para acceder a la gestión del servicio, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en el nombre del servicio Exchange al que pertenezca la cuenta cuyos permisos quiera delegar. A continuación, abra la pestaña `Cuentas de correo`{.action}.
 
 Se mostrará una tabla que contiene las cuentas creadas en el servicio Exchange. Haga clic en los tres puntos situados al final de la línea correspondiente a la cuenta y seleccione `Gestionar las delegaciones`{.action}.
 
@@ -134,4 +134,4 @@ Ya puede redactar su mensaje y enviarlo.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

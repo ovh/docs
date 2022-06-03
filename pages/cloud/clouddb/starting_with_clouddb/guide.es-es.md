@@ -5,20 +5,35 @@ excerpt: 'Cómo empezar a utilizar la solución Cloud Databases'
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 03/07/2018**
+**Última actualización: 28/01/2022**
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
-La solución Cloud Databases permite disfrutar de una instancia de bases de datos con recursos dedicados y garantizados. Debido al elevado rendimiento y flexibilidad que ofrece este servicio, está destinado principalmente a clientes con necesidades específicas.
+La solución Cloud Databases permite disfrutar de una instancia de bases de datos, con recursos dedicados y garantizados que ofrecen rendimiento y flexibilidad.
+Su solución Cloud Databases está asociada por defecto a la red de alojamientos web de OVHcloud. Es posible asociarla a cualquier otra red a través de una lista de direcciones IP autorizadas.
 
 **Esta guía explica cómo empezar a utilizar la solución Cloud Databases.**
 
 ## Requisitos
 
-- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
+- Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluido en un [plan de hosting performance](https://www.ovhcloud.com/es-es/web-hosting/)).
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
+
+### Activación de su servidor CloudDB incluido con su plan de hosting
+
+Si el plan de hosting incluye la opción CloudDB, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
+
+En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
+
+![Información general](images/db-activation.png){.thumbnail}
+
+Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor CloudDB. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Base de Datos`{.action}.
 
 ### Ver la información general del servicio
 
@@ -142,19 +157,27 @@ Por último, seleccione las opciones adicionales que quiera que se apliquen y ha
 
 ![Cloud Databases](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autorizar una dirección IP
+### Autorizar una dirección IP <a name="trustip"></a>
 
 Para que sea posible acceder a la instancia Cloud Databases, deberá indicar las direcciones IP o rangos de IP autorizados a conectarse a la base de datos. Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Añadir una dirección IP/máscara`{.action}.
 
-![Cloud Databases](images/clouddb-add-ip.png){.thumbnail}
+![Cloud Databases](images/clouddb-add-ip-2022.png){.thumbnail}
 
 En la nueva ventana, indique en **IP/máscara** la dirección IP o la máscara de red que quiera autorizar y, si lo desea, añada una descripción. Indique si quiere autorizar el acceso únicamente a las bases de datos o también al SFTP. Para terminar, haga clic en `Aceptar`{.action}.
 
 ![Cloud Databases](images/clouddb-add-ip-step2.png){.thumbnail}
 
+### Autorizar la conexión a un alojamiento web de OVHcloud <a name="trustip"></a>
+
+Por defecto, la solución Cloud Databases está asociada automáticamente a los planes de hosting de OVHcloud. No obstante, si lo desea, puede desactivar el acceso a la base de datos Cloud Databases de OVHcloud.
+
+Para ello, abra la pestaña `IP autorizadas`{.action} y haga clic en el botón `Acceso a los alojamientos web de OVHcloud`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+
 ### Conectar el sitio web con la base de datos
 
-Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre la misma y que hay al menos una dirección IP autorizada a acceder a la instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla...), y dependiendo de la fase en la que se encuentre si está instalando un sitio web.
+Una vez que la base de datos está creada, que uno o más usuarios tienen permisos sobre ella y que al menos una dirección IP o que los alojamientos web de OVHcloud han sido autorizados en su instancia Cloud Databases, solo queda conectar el sitio web a la base de datos. Esto puede hacerse de varias formas, en función del sitio web o del CMS utilizado (WordPress, Joomla...), así como de la fase en la que se encuentre si está instalando un sitio web.
 
 Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
@@ -173,6 +196,30 @@ Para poder realizar esta operación, deberá disponer de los siguientes datos:
 
 ![Cloud Databases](images/clouddb-login-information.png){.thumbnail}
 
+### Obtener los logs de su servidor CloudDB
+
+Para comprobar los últimos logs de la base de datos, acceda a la pestaña `Logs`{.action} del servidor Cloud Databases. Esta pestaña muestra en tiempo real las alertas y errores.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Para conocer todos los logs de su servidor Cloud Databases, conéctese por SFTP a este último.
+
+> [!warning]
+>
+> Antes de conectarse, compruebe que la dirección IP del equipo que utilice esté autorizada en su servidor Cloud Databases, con la opción `SFTP` marcada. Para más información, consulte la sección [Autorizar la conexión a un alojamiento web de OVHcloud](#trustip) de esta guía.
+
+Puede consultar la información de conexión SFTP en la pestaña `Información general`{.action} de su servidor Cloud Databases. Si no conoce la `Contraseña del servidor`, haga clic en el botón `...`{.action} a la derecha para modificarlo.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Conéctese a través de un cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+En FileZilla, acceda al menú `Archivo`{.action} y acceda al menú `Gestor de sitios`{.action}". Haga clic en `Nuevo sitio`{.action} e introduzca los parámetros anteriores.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+El archivo de logs, llamado `stdout.log`, se encuentra en la raíz.
+
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

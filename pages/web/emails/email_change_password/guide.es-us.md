@@ -16,7 +16,7 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - En función del método que utilice, estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la sección `Web Cloud`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
 
 > [!primary]
@@ -28,14 +28,14 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 En función de cuándo haya activado su MX Plan o de si el servicio ha sido migrado recientemente, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#mx-legacy).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#mx-new).|
 
-### Nueva versión de la solución MX Plan
+### Nueva versión de la solución MX Plan <a name="mx-new"></a>
 
 Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
 
@@ -87,7 +87,7 @@ Una vez que haya cambiado la contraseña, puede acceder a la dirección de corre
 
 - **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
 
-### Versión histórica de la solución MX Plan
+### Versión histórica de la solución MX Plan <a name="mx-legacy"></a>
 
 Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
 

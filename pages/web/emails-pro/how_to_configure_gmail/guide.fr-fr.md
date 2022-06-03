@@ -23,7 +23,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 ## Prérequis
 
-- Disposer d'une offre [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external}.
+- Disposer d'une offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external}.
 - Disposer des identifiants relatifs au compte E-mail Pro que vous souhaitez paramétrer.
 - Disposer des identifiants du compte Gmail sur lequel vous souhaitez paramétrer le compte E-mail Pro OVHcloud.
 
@@ -40,13 +40,12 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
->  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
 Pour débuter la manipulation, rendez-vous sur l'interface en ligne de Gmail depuis votre navigateur internet. Une fois sur cette dernière, renseignez les informations de votre compte Gmail, puis connectez-vous.
 
-Une fois connecté à l'interface, cliquez sur l'icône en forme de roue dentée, puis sur `Paramètres`{.action}. Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}. 
+Une fois connecté à l'interface, cliquez sur l'icône en forme de roue dentée, puis sur `Voir tous les paramètres`{.action}. Sur la page qui s'affiche, cliquez sur l'onglet `Comptes et importation`{.action}. 
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 

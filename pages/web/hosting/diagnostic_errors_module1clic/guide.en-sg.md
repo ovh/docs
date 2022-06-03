@@ -6,7 +6,7 @@ section: Troubleshooting
 order: 2
 ---
 
-**Last updated 24th June 2021**
+**Last updated 8th October 2021**
 
 ## Objective
 
@@ -22,9 +22,9 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
+- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- Using the [1-click module](../web_hosting_web_hosting_modules/) feature to create a new website
 
 ## Instructions
 
@@ -33,7 +33,7 @@ Creating a [1-click module](../web_hosting_web_hosting_modules/) in automatic or
 > We point out the most common errors here. If you have further difficulties, please consult our [Web Hosting FAQ](../web-hosting-faq/).
 >
 
-### “An error has occurred loading the information. (You need at least one free database)“
+### "An error has occurred loading the information. (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
@@ -43,14 +43,14 @@ This message might appear when you try to auto-create a new module. Each 1-click
 
 > [!primary]
 >
-> View our comparison of different [hosting plans](https://www.ovh.com/sg/web-hosting/).
+> View our comparison of different [hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/).
 >
 
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), click on `Web Cloud`{.action}, then `Hosting plans`{.action}. Select the plan concerned, then click `Upgrade` in the `Plan` section.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovh.com/sg/web-hosting/web-hosting-pro.xml) and [Performance](https://www.ovh.com/sg/web-hosting/performance-web-hosting.xml) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [private SQL server](https://www.ovh.com/sg/web-hosting/sql-options.xml) for free.
+With the [Professional](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 
@@ -71,16 +71,16 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 > [!primary]
 >
-> Check our various [database offers](https://www.ovh.com/sg/web-hosting/sql-options.xml).
+> Check our various [database offers](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/).
 >
 
 #### Solution 4: install your module on a database you already use
 
 To install your module on an existing database, you will need to use the [advanced mode](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-To find your database login details, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
+To find your database login details, please check this [guide](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
-### “The installation directory is not empty“
+### "The installation directory is not empty"
 
 ![folder_not_empty](images/folder_not_empty.png){.thumbnail}
 
@@ -94,13 +94,27 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 
 You can also log in to your hosting plan via [FTP](../log-in-to-storage-ftp-web-hosting/), then delete or move the folder content after backing it up.
 
-### “Unable to connect to database“ <a name="deleteModule"></a>
+### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+This message indicates that the [storage space](../log-in-to-storage-ftp-web-hosting/) of your hosting has too much data. You must delete or move one before you can install a new [1-click module](../web_hosting_web_hosting_modules/).
+
+In this situation, [log in via FTP](../log-in-to-storage-ftp-web-hosting/) to your hosting plan, [back up locally](../web_hosting_filezilla_user_guide/#file-transfers) your data, then delete the files that are not necessary for your website to work properly.
+
+> [!primary]
+>
+> If you have any questions about which data to delete in order to reduce the amount of data on your hosting plan, please contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).<br>
+> We will not be able to assist you with this.
+>
+
+### "Unable to connect to database" <a name="deleteModule"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-After launching your module installation in advanced mode, you receive an e-mail stating that your module cannot connect to the specified database.
+After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your database credentials. To find them, please read our [FAQ](https://www.ovh.co.uk/web-hosting/faq/).
+First check your [database credentials](../web_hosting_web_hosting_modules/#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -119,7 +133,7 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 |The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
 |The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), follow this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
-### Your module appears under a web address such as “xxxxx.cluster0xx.hosting.ovh.net”
+### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net”
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 

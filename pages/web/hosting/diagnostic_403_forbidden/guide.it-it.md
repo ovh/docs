@@ -27,7 +27,7 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovh.it/hosting-web/) OVHcloud
+- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
 - Disporre delle [credenziali di accesso](../accedere-spazio-storage-ftp-hosting-web/#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) allo spazio di storage dell'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 

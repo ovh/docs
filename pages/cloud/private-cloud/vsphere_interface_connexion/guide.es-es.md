@@ -7,7 +7,7 @@ section: Primeros pasos
 order: 2
 ---
 
-**Última actualización: 25/06/2020**
+**Última actualización: 28/12/2021**
 
 ## Objetivo
 
@@ -15,9 +15,8 @@ order: 2
 
 ## Requisitos
 
-- Ser contacto administrador del servicio Hosted Private Cloud para recibir las claves de acceso.
-- Tener un usuario activo en el área de cliente.
-
+- Ser contacto administrador de la infraestructura [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), para recibir claves de conexión.
+- Tener un usuario activo (creado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -41,15 +40,7 @@ Accederá a la siguiente interfaz:
 
 ![Conexión a la interfaz vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-La página `Home`{.action} permite acceder a los principales menús de su vCenter. Desde ahí podrá realizar diversas acciones como:
-
-- desplegar una máquina virtual desde `Hosts and Clusters`{.action};
-- navegar en sus datastores.
-
-> [!warning]
->
-> Por ahora no es posible gestionar los servicios de *NSX Edge* desde este cliente web.
->
+La página `Home`{.action} permite acceder a los principales menús de su vCenter.
 
 ### Utilizar el cliente web flash
 
@@ -63,12 +54,7 @@ Accederá a la siguiente interfaz:
 
 ![Conexión a la interfaz vSphere](images/connection_interface_w.png){.thumbnail}
 
-La página `Home`{.action} permite acceder a los principales menús de su vCenter. Desde ahí podrá realizar diversas acciones como:
-
-- desplegar una máquina virtual desde `Hosts and Clusters`{.action};
-- si dispone de esta opción, utilizar NSX desde `Network & Security`{.action};
-- navegar en sus datastores.
-
+La página `Home`{.action} permite acceder a los principales menús de su vCenter.
 
 ## Más información
 

@@ -51,7 +51,7 @@ La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 
 
 #### Via votre espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
 L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
@@ -115,11 +115,11 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour Debian 11 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
 - **pour Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
-Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas.  Visitez le site <https://netplan.io/> pour plus d'informations, si nécessaire.
+Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas. Visitez le site <https://netplan.io/> pour plus d'informations, si nécessaire.
 
 > [!primary]
 >
@@ -131,7 +131,7 @@ Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spé
 La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Cela vous permet de séparer la configuration IPv6 et de rétablir facilement les modifications en cas d'erreur.

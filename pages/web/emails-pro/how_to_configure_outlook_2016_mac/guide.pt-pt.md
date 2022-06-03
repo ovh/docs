@@ -22,7 +22,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter o serviço [Email Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter o serviço [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter a aplicação Microsoft Outlook instalada no seu dispositivo Mac.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -37,10 +37,10 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!primary]
 >
-> Neste manual, utilizamos a menção do servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
+> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
-> 
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+>
 
 Abra a aplicação Outlook no seu dispositivo. Existem duas formas de adicionar uma conta:
 

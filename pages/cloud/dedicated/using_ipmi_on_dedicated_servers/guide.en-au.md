@@ -16,13 +16,18 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 
 You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
 
-To enable one of these methods, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab.
+To enable one of these methods, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click on the `IPMI`{.action} tab.
 
 ### Access via the Java applet <a name="applet-java"></a>
 
@@ -30,7 +35,7 @@ You will need to ensure that Java is installed on your desktop for the Java appl
 
 In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `From a Java applet (KVM)`{.action}:
 
-![IPMI Java initiated](images/java_ipmi_initiate_2020.png){.thumbnail}
+![IPMI Java initiated](images/java_ipmi_initiate_2022.png){.thumbnail}
 
 Download the file `kvm.jnlp` when you are prompted to do so, and run it:
 
@@ -60,7 +65,7 @@ Then click on `Access the console (KVM)`{.action} to open the console in your we
 
 Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVHcloud Control Panel:
 
-![IPMI SoL activation](images/sol_ipmi_activation_2020.png){.thumbnail}
+![IPMI SoL activation](images/sol_ipmi_activation_2022.png){.thumbnail}
 
 > [!warning]
 >
@@ -71,11 +76,11 @@ Although we would recommend that you log in via the Java applet, you can also ac
 
 Your IPMI may stop responding. If you cannot access it, you can test it first by clicking on `Test the IPMI`{.action}, and checking the result of the diagnostic:
 
-![IPMI test](images/ipmi_test_2020.png){.thumbnail}
+![IPMI test](images/ipmi_test_2022.png){.thumbnail}
 
 If everything appears to be normal, as per our example, you may be experiencing a local technical issue (internet connection, local desktop). If the IPMI encounters any issues, you can reboot it by clicking `Reboot the IPMI`{.action}.
 
-![IPMI test](images/ipmi_reboot_2020.png){.thumbnail}
+![IPMI test](images/ipmi_reboot_2022.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
 
@@ -101,7 +106,7 @@ Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the se
 
 Complete the steps required to install the operating system. Do not forget to remove the ISO from the "Redirect ISO" option.
 
-### Installing an OS Utilizing IPMI v2
+### Installing an OS using IPMI v2
 
 > [!warning]
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.

@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 8th June 2020**
+**Last updated 31st March 2022**
 
 ## Objective
 
@@ -95,11 +95,20 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
  user@hostname
 ```
 
+> [!primary]
+>
+>In a MacOS Terminal, you can also use the "pbcopy" and "pbpaste" commands to handle key strings. For example, use this command to copy the key from the file "id_rsa.pub" to the clipboard:
+>
+
+```ssh
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
+
 ### Creating an SSH key using PuTTY (for Windows)
 
 [PuTTY](https://putty.org/){.external} is an open source SSH client software with a graphical user interface, available for Windows and other operating systems. You can use it to remotely connect to a Linux server. Its companion software, PuTTY Key Generator (PuTTYgen), can be used to create SSH keys.
 
-First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your Windows "programs" menu or use Search.
+First, download PuTTY [from the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), if it is not already installed. The recommended standard installation package includes PuTTYgen but it is available as a standalone file there as well. To find out if you have it available already, check your "programs" menu or use the Windows Search.
 
 Next, run the software and select the key type. In our example, we choose a 4096 bit RSA key. Click the `Generate`{.action} button to start the creation process.
 
@@ -152,13 +161,13 @@ Delete the key which corresponds to the user having their access revoked from yo
 
 The OVHcloud Control Panel allows you to store public keys created using one of the supported encryption types (currently RSA, ECDSA, ED25519). 
 
-Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Select "Dedicated" from the drop-down menu.
 
@@ -173,6 +182,29 @@ If you have copied the full output, the identifier after the key should already 
 > Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
 >
 
+### Setting a default SSH key (only for the “Dedicated” section)
+
+If you have added multiple SSH keys in your control panel, it is possible to set one key to be used as the default key on the account. 
+
+> [!warning]
+> Please note that once a default key is set, it will also be used as the means connection once a server is rebooted in rescue mode. To receive a password instead, the default key must be disabled before rebooting the server in rescue mode. 
+> 
+
+Open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
+
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+In the list of keys, click on the `Key` icon next to the SSH key of your choice to set it as the default key.
+
+![SSH key control panel](images/defaultsshkey.png){.thumbnail}
+
+Once done, a popup message will appear confirming the key has been set as default and the `Key` icon will be highlighted.
+
+![SSH key control panel](images/defaultsshkey1.png){.thumbnail}
+
+### Disabling the SSH key <a name="disablesshkey"></a>
+
+To disable the SSH key, perform the same steps as above and click on the `Key` icon next to the corresponding SSH key and disable the default option.
 
 ## Go further
 

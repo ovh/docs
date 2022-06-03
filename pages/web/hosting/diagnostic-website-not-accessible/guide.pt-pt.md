@@ -61,7 +61,7 @@ Uma vez terminada a renovação da sua oferta, o seu website estará disponível
 
 ### Etapa 2: verificar os servidores DNS
 
-Para verificar a validade dos seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/), clique no canto superior esquerdo da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
+Para verificar a validade dos seus [servidores DNS](../../domains/partilhado_generalidades_sobre_os_servidores_dns/), na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) clique em `Nomes de domínio`{.action} e, a seguir, no domínio do seu site.
 
 #### Cenário 1: nenhuma anomalia nos servidores DNS
 
@@ -120,7 +120,7 @@ Nesta etapa, vai encontrar o endereço IP do seu alojamento e adicioná-lo à su
 
 Se o seu site não está alojado na infraestrutura da OVHcloud ou é gerido por outro fornecedor, contacte o serviço de suporte em causa.
 
-Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovh.pt/alojamento-partilhado/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
+Se o seu site está alojado numa das nossas [ofertas Web Cloud](https://www.ovhcloud.com/pt/web-hosting/), clique no separador `Alojamentos`{.action} à esquerda do seu ecrã e, a seguir, na oferta em causa.
 
 No separador `Informações gerais`{.action}, copie o endereço IPV4 e/ou IPV6 do seu domínio.
 

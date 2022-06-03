@@ -24,7 +24,7 @@ You may see a `Site not installed` error page appear on your web browser, partic
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - access to the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) your domain name is attached to.
 
@@ -58,7 +58,7 @@ Select the concerned hosting plan in the list, then click on the `Multisite`{.ac
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
-To find the IP address, click `Hosting plans`{.action} in the left-hand column of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select the concerned Hosting plan.
+To find the IP address, click `Hosting plans`{.action} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select the concerned Hosting plan.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

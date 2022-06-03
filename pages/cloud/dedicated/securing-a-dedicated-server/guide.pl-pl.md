@@ -10,15 +10,15 @@ order: 2
 
 ## Wprowadzenie
 
-Kiedy zamawiasz serwer dedykowany, nie jest na nim natywnie zaimplementowany żaden protokół bezpieczeństwa. Do Ciebie zatem należy zabezpieczenie serwera. OVH nie ponosi odpowiedzialności, jeśli Twoja maszyna nie jest zabezpieczona.
+Kiedy zamawiasz serwer dedykowany, nie jest na nim natywnie zaimplementowany żaden protokół bezpieczeństwa. Do Ciebie zatem należy zabezpieczenie serwera. OVHcloud nie ponosi odpowiedzialności, jeśli Twoja maszyna nie jest zabezpieczona.
 
 **Dowiedz się, jak zabezpieczyć serwer dedykowany.**
 
 > [!warning]
 >
-> OVH oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
+> OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVHcloud nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
 
@@ -139,7 +139,7 @@ W tym celu połącz się z serwerem za pomocą SSH i wpisz następujące polecen
 nano /etc/ssh/sshd_config
 ```
 
-Teraz znajdź następującą sekcję i w miejsce „yes” wstaw „no” w wierszu `PermitRootLogin`, jak pokazano w poniższym przykładzie:
+Teraz znajdź następującą sekcję i w miejsce “yes” wstaw “no” w wierszu `PermitRootLogin`, jak pokazano w poniższym przykładzie:
 
 ```sh
 # Authentication: 
@@ -156,7 +156,7 @@ Po zarejestrowaniu i zamknięciu pliku konfiguracyjnego uruchom ponownie usług�
 
 ### Instalacja i konfiguracja Fail2ban
 
-Fail2ban to oprogramowanie zapobiegające włamaniom, które blokuje nieznane adresy IP, gdy próbują spenetrować Twój system. Ten pakiet jest zalecany w celu ochrony Twojego serwera przed atakami typu „brute force”.
+Fail2ban to oprogramowanie zapobiegające włamaniom, które blokuje nieznane adresy IP, gdy próbują spenetrować Twój system. Ten pakiet jest zalecany w celu ochrony Twojego serwera przed atakami typu “brute force”.
 
 Do instalacji Fail2ban użyj następującej komendy:
 
@@ -196,16 +196,16 @@ iptables -L
 Zalecamy utworzenie dla tej zapory reguł i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji dotyczących konfiguracji zapory iptables znajdziesz w oficjalnej dokumentacji dołączonej do dystrybucji Linux.
 
 
-### Konfiguracja Firewall Network OVH
+### Konfiguracja Firewall Network OVHcloud
 
-Serwery OVH chronione są na wejściu do infrastruktury zaporą sieciową zwaną Firewall Network. Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
+Serwery OVHcloud chronione są na wejściu do infrastruktury zaporą sieciową zwaną Firewall Network. Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
 
 Aby skonfigurować Firewall Network, możesz również skorzystać z [przewodnika](https://docs.ovh.com/pl/dedicated/network-firewall/){.external}.
 
 
 ### Tworzenie kopii zapasowej systemu i danych
 
-Pojęcie bezpieczeństwa nie ogranicza się wyłącznie do ochrony systemu przed atakami. Niezwykle istotne jest również zabezpieczenie Twoich danych. Dlatego OVH oferuje bezpłatnie 500 GB przestrzeni dyskowej na kopie zapasowe. Możesz aktywować tę przestrzeń w Panelu klienta i połączyć się z nią, używając następujących protokołów:
+Pojęcie bezpieczeństwa nie ogranicza się wyłącznie do ochrony systemu przed atakami. Niezwykle istotne jest również zabezpieczenie Twoich danych. Dlatego OVHcloud oferuje bezpłatnie 500 GB przestrzeni dyskowej na kopie zapasowe. Możesz aktywować tę przestrzeń w Panelu klienta i połączyć się z nią, używając następujących protokołów:
 
 * FTP;
 * FTPS;

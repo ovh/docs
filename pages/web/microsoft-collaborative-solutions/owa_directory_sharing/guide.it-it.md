@@ -18,13 +18,13 @@ Non è sempre opportuno delegare l’utilizzo di un intero account di posta elet
 
 > [!primary]
 >
-> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account [Email Pro](https://www.ovh.it/emails/email-pro).
+> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/).
 >
 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange) attiva
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) attiva
 - Accedere all’account Exchange (indirizzo email e password)
 
 

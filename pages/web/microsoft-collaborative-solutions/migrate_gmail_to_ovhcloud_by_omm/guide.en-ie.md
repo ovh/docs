@@ -19,7 +19,7 @@ This guide describes how to use OMM to import various elements of your Gmail acc
 
 ## Requirements
 
-- an email service with OVHcloud, e.g. [Exchange](https://www.ovh.ie/emails/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} or MX Plan (via the MX Plan standalone tool or included in an [OVHcloud web hosting](https://www.ovh.ie/web-hosting/){.external} plan)
+- an email service with OVHcloud, e.g. [Exchange](https://www.ovhcloud.com/en-ie/emails/){.external}, [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} or MX Plan (via the MX Plan standalone tool or included in an [OVHcloud web hosting](https://www.ovhcloud.com/en-ie/web-hosting/){.external} plan)
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 

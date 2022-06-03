@@ -5,7 +5,7 @@ excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a tr
 section: OpenStack
 ---
 
-**Última actualización: 25/02/2019**
+**Última actualización: 30/03/2022**
 
 ## Objetivo
 
@@ -28,13 +28,15 @@ Abra el terminal o conéctese por SSH al entorno que quiera preparar.
 Actualice la caché de los paquetes con el siguiente comando:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilice el siguiente comando para instalar los clientes Nova, Glance y Swift:
+Utilice el siguiente comando para instalar los clientes OpenStack, así como Nova y Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.
@@ -60,22 +62,13 @@ Actualice la caché de los paquetes mediante el siguiente comando:
 ```sh
 yum update -y
 ```
-Instale el RPM rdo-release con el siguiente comando:
+
+Utilice el siguiente comando para instalar los clientes OpenStack, así como Nova y Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-A continuación instale el cliente OpenStack.
-
-```sh
-yum install -y python-openstackclient
-```
-
-Por último, instale el cliente Nova.
-
-```sh
-yum install -y python-novaclient
+yum install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Una vez hecho esto, le recomendamos que cree un usuario específico para no utilizar el usuario *root*.
@@ -144,6 +137,39 @@ En el símbolo del sistema puede comprobar la versión instalada introduciendo `
 
 ![Verificación](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
+### En MacOS
+
+Puede utilizar [HomeBrew](https://brew.sh), un gestor de paquetes para MacOS.
+
+Abra el terminal e ejecute el siguiente comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilice los siguientes comandos para instalar los clientes Nova (aplicación de cálculo) y Swift:
+
+Para Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Para Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Para acceder a las herramientas de ayuda, ejecute el siguiente comando:
+
+```sh
+openstack —-help
+nova help
+```
+
 ## Más información
 
-Únase a nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

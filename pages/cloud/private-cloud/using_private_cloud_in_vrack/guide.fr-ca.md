@@ -6,7 +6,7 @@ section: Services et options OVHcloud
 order: 02
 ---
 
-**Dernière mise à jour le 02/07/2020**
+**Dernière mise à jour le 28/03/2022**
 
 ## Objectif
 
@@ -14,11 +14,17 @@ Le vRack, c’est la possibilité de connecter différents services cloud de OVH
 
 **Ce guide explique comment le mettre en place**
 
+## Prérequis
+
+- Avoir un service [vRack](https://www.ovh.com/ca/fr/solutions/vrack/) dans votre compte ou en commander un si besoin
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
+
 ## En pratique
 
 ### Espace client
 
-Lors de la livraison de votre service [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), la partie *datacenter* est déjà à l'intérieur d'un vRack.
+Lors de la livraison de votre service [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), la partie *datacenter* est déjà à l'intérieur d'un vRack. Pour accéder à la section vRack, allez dans la section `Bare Metal Cloud`{.action}, cliquez sur `Network`{.action}, puis sur `vRack`{.action}. Sélectionnez votre vRack dans la liste pour visualiser le contenu.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 

@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 28/05/2021**
+**Última actualización: 11/03/2022**
 
 ## Objetivo
 
@@ -26,6 +26,10 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 - Estar conectado al servidor por SSH (acceso root) en Linux o a través de un escritorio remoto en Windows.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
+> [!primary]
+>
+> Si su servidor pertenece a la línea de productos **Eco**, acceda a [esta guía](../getting-started-dedicated-server-eco/).
+
 ## Procedimiento
 
 Cuando su servidor dedicado esté configurado por primera vez durante el proceso de pedido, puede seleccionar el sistema operativo que desea instalar.
@@ -36,7 +40,7 @@ Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operat
 
 ![Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
-A continuación, seleccione `Instalar desde una plantilla de OVH`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
+A continuación, seleccione `Instalar desde una plantilla de OVHcloud`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
 
 Para instalar una imagen personalizada en el servidor, seleccione la tercera opción `Instalar desde una imagen personalizada`{.action}. Para más información sobre los parámetros de esta funcionalidad, consulte la guía "[Utilizar la funcionalidad Bring Your Own Image](../bringyourownimage/)".
 
@@ -77,9 +81,9 @@ Si instala un sistema operativo GNU/Linux, puede añadir su llave SSH en la últ
 
 Si una llave SSH ya está registrada, aparecerá en el menú desplegable bajo "Llaves SSH" en la parte inferior. En caso contrario, deberá añadir primero una en la sección "Mis servicios".
 
-Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Productos y servicios`{.action}.
+Para ello, abra la columna izquierda haciendo clic en su nombre en la esquina superior derecha y utilice el acceso rápido `Gestión de servicios`{.action}.
 
-![Personalizar la configuración de la partición](images/SSH_13.png){.thumbnail}
+![Personalizar la configuración de la partición](images/SSH_13.1.png){.thumbnail}
 
 En "Mis servicios", abra la pestaña `Llaves SSH`{.action} y haga clic en `Añadir una llave SSH`{.action}.
 
@@ -109,13 +113,13 @@ Utilice los siguientes ejemplos para conectarse a su servidor y sustituya la inf
 
 **Ejemplo de root:**
 
-```sh
+```bash
 ssh root@IPv4_del_servidor
 ```
 
 **Ejemplo de usuario preconfigurado:**
 
-```sh
+```bash
 ssh root@nombre_de_referencia_del_servidor
 ```
 
@@ -125,11 +129,13 @@ Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](
 
 Una vez finalizada la instalación, recibirá un mensaje de correo electrónico con la contraseña del acceso de administrador (root). Utilice estas claves de acceso para conectarse al servidor a través de RDP (**R**emote **D**esktop **P**rotocol). Una vez conectado, Windows le guiará durante la instalación inicial.
 
+Consulte también nuestra guía [Configurar una nueva instalación de Windows Server](https://docs.ovh.com/us/es/dedicated/windows-first-config/).
+
 ### Reinicio del servidor dedicado <a name="reboot"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
-```sh
+```bash
 reboot
 ```
 
@@ -145,16 +151,9 @@ Como se recuerda en el apartado Objetivo de esta guía, usted es el administrado
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
-
-- Si activa la opción **Intervenciones in situ**, autoriza a los técnicos del datacenter a controlar el hardware en caso de que su servidor no responda a ping.
-
-> [!warning]
->
-> Si las intervenciones in situ están activadas (el cursor estará en `On`{.action}, asegúrese de **desactivar** la opción antes de realizar las acciones apropiadas en su servidor (pruebas de hardware, reinicio, etc.). Siempre recibirá mensajes de correo automáticos mientras esté activa la función "Monitorización".
->
+Si la **monitorización** está `activada`, recibirá un mensaje de correo electrónico cada vez que el servidor se comporte de forma inesperada. Puede desactivar estos mensajes con el botón `...`{.action}.
 
 Para más información sobre la monitorización de OVHcloud, consulte [esta guía](../monitoring-ip-ovh/).
 

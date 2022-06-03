@@ -16,7 +16,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Poder crear más bases de datos con el plan de hosting contratado.
 - Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVHcloud(https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
@@ -24,7 +24,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ### 1. Acceder a la gestión de las bases de datos del alojamiento
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting.
 
@@ -42,7 +42,7 @@ Se abrirá una ventana en la que deberá introducir la siguiente información:
 
 |Campo|Descripción|  
 |---|---|  
-|Motor de la base de datos|Seleccione el motor de la base de datos. Las bases de datos incluidas con un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} solo ofrecen el motor MySQL.|  
+|Motor de la base de datos|Seleccione el motor de la base de datos. Las bases de datos incluidas con un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} solo ofrecen el motor MySQL.|  
 |Versión de la base de datos|Seleccione la versión del motor de la base de datos. Asegúrese de que su sitio web es compatible con la versión elegida. |  
 |Tipo de base de datos|Seleccione la capacidad de la base de datos, es decir, el espacio del que dispondrá la base de datos para almacenar datos.|   
 

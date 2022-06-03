@@ -17,13 +17,13 @@ Déléguer l'utilisation de tout un compte e-mail n’est pas toujours la bonne 
 
 > [!primary]
 >
-> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre ces instructions pour les comptes [Email Pro](https://www.ovh.com/fr/emails/email-pro).
+> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre ces instructions pour les comptes [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
 >
 
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange OVHcloud ](https://www.ovh.com/fr/emails/hosted-exchange)
+- Disposer d'une offre [Exchange OVHcloud ](https://www.ovhcloud.com/fr/emails/hosted-exchange/)
 - Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
 
 

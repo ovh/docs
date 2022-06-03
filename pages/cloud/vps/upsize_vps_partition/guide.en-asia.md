@@ -20,8 +20,8 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 ## Requirements
 
-- administrative access to your VPS (Windows)
-- rebooting the server in [rescue mode](../rescue/) (Linux)
+- Administrative access to your VPS (Windows)
+- Rebooting the server in [rescue mode](../rescue/) (Linux)
 
 ## Instructions
 

@@ -6,26 +6,35 @@ section: 'Advanced use'
 order: 1
 ---
 
-**Last updated 24th March 2021**
+**Last updated 18th May 2022**
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.<br>
+Aggregation is based on IEEE 802.3ad, Link Aggregation Control Protocol (LACP) technology.
 
 **This guide explains how to configure OLA in the OVHcloud Control Panel.**
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An Operating System / Hypervisor that supports the 802.3ad aggregation protocol (LACP)
 
 ## Instructions
 
+> [!warning]
+>
+> OLA is configured on all network interfaces. They will form a “private aggregation”.
+>
+> Following the implementation of OLA, the public IP will no longer be accessible.
+>
+
 ### Configuring OLA in the OVHcloud Control Panel
 
-To start configuring OLA, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} in the left-hand sidebar, then select your server from the list.
+To start configuring OLA, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} and select your server from the list.
 
-![network interfaces](images/network_interfaces2021.png){.thumbnail}
+![network interfaces](images/network_interfaces2022.png){.thumbnail}
 
 In the tab `Network interfaces`{.action} (1), click on the `...`{.action} button (2) to the right of "Mode" in the **OLA: OVHcloud Link Aggregation** box. Next, click `Configure private aggregation`{.action}  (2).
 

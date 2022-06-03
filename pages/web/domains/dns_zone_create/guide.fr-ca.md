@@ -27,7 +27,7 @@ Pour diverses raisons, vous pouvez être amené à créer une zone DNS pour votr
 
 ### Étape 1 : créer la zone DNS via l'espace client
 
-Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Commander`{.action} dans la barre de services à gauche, puis sur `Zone DNS`{.action}.
+Pour démarrer cette manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Commander`{.action}, puis sur `Zone DNS`{.action}.
 
 Sur la page qui apparaît, renseignez le nom de domaine pour lequel vous souhaitez créer une zone DNS OVHcloud. Patientez quelques instants le temps que l'outil effectue des vérifications concernant le nom de domaine.
 
@@ -40,7 +40,7 @@ Dès que la vérification aboutit, vous devez choisir d'activer ou non les entr�
 |Activer les entrées minimales ?|Détails|
 |---|---|
 |Oui|Sélectionnez ce choix si vous souhaitez personnaliser vous-même la zone DNS par la suite.|
-|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, la zone étant préconfigurée à cet effet.|
+|Non|Sélectionnez ce choix si vous prévoyez d'utiliser des services OVHcloud comme un [hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}, la zone étant préconfigurée à cet effet.|
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de 
 
 La zone DNS pour votre nom de domaine étant maintenant créée, vous pouvez dès à présent l'éditer. Cette manipulation est facultative, mais elle peut se révéler indispensable si vous souhaitez assurer la continuité de la disponibilité des services liés à ce nom de domaine (comme un site internet et des e-mails).
 
-Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 > [!primary]
 >

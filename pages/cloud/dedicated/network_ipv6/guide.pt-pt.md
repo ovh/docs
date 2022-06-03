@@ -2,12 +2,16 @@
 title: 'Configurar IPv6 em servidores dedicados'
 slug: rede-ipv6
 excerpt: 'Saiba como configurar endereços IPv6 na nossa infraestrutura'
-section: 'Gestão de Rede'
+section: 'Redes & IP'
 ---
 
-**Última atualização: 16/06/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 04/05/2022**
+
+## Objetivo
 
 O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. Cada servidor dedicado da OVHcloud inclui um bloco IPv6 /64. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
 
@@ -21,24 +25,36 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 
 ## Requisitos
 
-- um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/) na sua conta OVHcloud;
-- todos os seus dados IPv6 (prefixo, gateway, etc.);
-- ter conhecimentos básicos de [SSH](https://pt.wikipedia.org/wiki/Secure_Shell) e redes.
+- Um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud.
+- Todos os seus dados IPv6 (prefixo, gateway, etc.).
+- Ter conhecimentos básicos de [SSH](../ssh-introducao/) e redes.
+
+> [!warning]
+> Tenha em conta que os servidores Kimsufi são fornecidos com um único bloco IPv6 (/128). O IPv6 será configurado automaticamente aquando da instalação do sistema operativo.
+>
 
 ## Instruções
 
 Se está a usar um template Linux fornecido pela OVHcloud para instalar o servidor, vai verificar que o primeiro IPv6 (principal) já se encontra configurado.
 
+Se deseja configurar vários endereços IPv6 no seu servidor (ou se deseja utilizá-lo numa VM) deve dispor de um IP fail-over configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs.
 
 > [!primary]
 >
-> O gateway pré-definido para o seu bloco IPv6 (IPV6_GATEWAY) é xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> O gateway pré-definido para o seu bloco IPv6 (IPV6_GATEWAY) é xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Tenha em conta que os "0" de cabeça podem ser eliminados num IPv6 para evitar erros aquando da determinação da gateway.
 >
 > por exemplo,
 > 
-> - O endereço IPv6 do servidor é 2607:5300:60:62ac::/64. Logo, o IPv6_GATEWAY vai ser 2607:5300:60:62FF:FF:FF:FF:FF.
-> - O endereço IPv6 do servidor é 2001:41D0:1:46e::/64. Logo, o IPv6_GATEWAY vai ser 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - O endereço IPv6 do servidor é 2607:5300:60:62ac::/64 ou 2607:5300:60:62ac:0000:0000:0000:0000/64. Logo, o IPv6_GATEWAY vai ser 2607:5300:60:62FF:FF:FF:FF:FF.
+> - O endereço IPv6 do servidor é 2001:41D0:1:46e::/64 ou 2001:41D0:0001:046e:0000:0000:0000:0000/64. Logo, o IPv6_GATEWAY vai ser 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> A forma mais segura de recuperar as informações de rede do seu servidor é [utilizar a API OVHcloud](https://docs.ovh.com/pt/api/first-steps-with-ovh-api/)(EN). Execute a seguinte chamada API, indicando o nome interno do servidor (exemplo: `ns3956771.ip-169-254-10.eu`):
+>
+
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
 
 ### Distribuições Debian e baseadas em Debian
 
@@ -65,7 +81,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em `/etc/networ
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é `eth0`. A interface do seu servidor pode ser diferente.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +101,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -122,7 +138,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em /etc/sysconf
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é eth0. A interface do seu servidor pode ser diferente. Além disso, omitimos a configuração do IPv4 Failover de modo a evitar confusão, mas o IPv6 é configurado no mesmo ficheiro.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +157,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -172,7 +188,7 @@ O ficheiro de configuração da rede do seu servidor encontra-se em`/etc/rc.conf
 
 Corrija o ficheiro de modo a ficar como o exemplo abaixo. Neste exemplo, o nome da interface de rede é em0. A interface do seu servidor pode ser diferente.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +204,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -212,13 +228,13 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
-Abra o ficheiro de configuração de rede situado em /etc/systemd/network. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
+Abra o ficheiro de configuração de rede situado em `/etc/systemd/network`. Para efeitos de exemplificação, o nosso ficheiro chama-se 50-default.network.
 
 #### Passo 3: Corrigir o ficheiro de configuração de rede
 
 Usando um editor de texto, corrija o ficheiro acrescentando as seguintes linhas nas secções relevantes, como mostramos no exemplo abaixo:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -229,8 +245,9 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-Para adicionar múltiplos endereços IPv6, adicione múltiplas secções  \[Address].
-```sh
+Para adicionar múltiplos endereços IPv6, adicione múltiplas secções [Address].
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +262,7 @@ Guarde as alterações feitas ao ficheiro e reinicie a rede ou o servidor de mod
 
 Pode testar a conetividade IPv6 introduzindo os comandos seguintes:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -267,6 +284,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 
 #### Passo 2: Abrir a configuração da rede do servidor
+
 Em primeiro lugar, faça clique com o botão direito no ícone de rede situado na área de notificações. Aceda ao `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
@@ -292,11 +310,11 @@ Introduza a sua configuração IPv6 (` IPv6 address` e `Default Gateway`) e cliq
 
 Se depois de testar a sua ligação continuar a experienciar problemas, crie um pedido de apoio a fim de rever as suas configurações. Será necessário fornecer:
 
-- o nome do sistema operativo e a versão em uso no servidor;
-- o nome e o diretório do ficheiro de configuração de rede; 
-- o conteúdo desse ficheiro. 
+- O nome do sistema operativo e a versão em uso no servidor.
+- O nome e o diretório do ficheiro de configuração de rede.
+- O conteúdo desse ficheiro. 
 
 
-## Saiba mais
+## Quer saber mais?
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

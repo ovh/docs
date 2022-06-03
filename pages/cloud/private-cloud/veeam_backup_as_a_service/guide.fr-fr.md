@@ -7,7 +7,7 @@ section: Services et options OVHcloud
 order: 06
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 07/12/2021**
 
 ## Objectif
 
@@ -25,12 +25,6 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Avoir activé la [haute disponibilité (HA)](https://docs.ovh.com/fr/private-cloud/vmware-ha-high-availability){.external}.
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
 * Mettre en place la [gestion des licences Windows](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#licences-windows){.external} sur le Private Cloud.
-
-> [!primary]
->
-> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (10) proposée par Veeam. OVHcloud continuera de proposer la version 9.5 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
->
-
 
 ## En pratique
 
@@ -63,7 +57,7 @@ Vous verrez apparaître sur votre infrastructure vSphere une machine virtuelle c
 
 Maintenant que le service est en place, il suffit de réaliser les demandes de sauvegarde pour chaque machine virtuelle identifiée comme critique depuis le vSphere Web Client.
 
-Sélectionnez le datacenter Vmware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHCloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHCloud du menu.
 
 ![Backup Management](images/backupvm_01.png){.thumbnail}
 
@@ -86,7 +80,7 @@ Chaque jour, un e-mail contenant les statuts de l'ensemble des travaux effectué
 
 ### Restaurer une sauvegarde
 
-Sélectionnez le datacenter Vmware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
 
 Dans la liste, sélectionnez la VM pour laquelle vous souhaitez restaurer une sauvegarde (celle-ci doit avoir un **backup state** à **Enabled**).
 
@@ -119,7 +113,7 @@ Pour effectuer ces actions, vous pouvez sélectionner le datacenter dans votre i
 
 ### Désactiver la sauvegarde d'une machine virtuelle
 
-Sélectionnez le datacenter Vmware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
+Sélectionnez le datacenter VMware, puis l'onglet `Configure`{.action} et choisissez `Backup Management`{.action} dans la section OVHcloud du menu.
 
 Dans la liste sélectionnez la VM pour laquelle vous souhaitez désactiver la sauvegarde.
 
@@ -136,7 +130,7 @@ Confirmez ensuite la désactivation en cliquant sur `OK`{.action}.
 > [!warning]
 >
 > Il est possible de réactiver la sauvegarde à tout moment à partir du moment où la machine virtuelle est présente dans l'infrastructure.
-> 
+>
 > A noter que les sauvegardes effectuées restent disponibles pour la restauration juqu'à l'expiration du délai de retention.
 >
 

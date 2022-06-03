@@ -1,5 +1,5 @@
 ---
-title: Dynamically resizing a cluster with the cluster autoscaler 
+title: Dynamically resizing a cluster with the cluster autoscaler
 slug: using-cluster-autoscaler
 excerpt: ''
 section: User guides
@@ -28,13 +28,13 @@ order: 6
  }
 </style>
 
-**Last updated July 27<sup>th</sup>, 2021.**
+**Last updated May 17<sup>th</sup>, 2022.**
 
 ## Objective
 
-OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
+OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
 
-During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
+During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads.
 
 This guide will cover how to enable and manage the cluster autoscaler on your OVHcloud Managed Kubernetes cluster.
 
@@ -52,11 +52,11 @@ This guide will cover how to enable and manage the cluster autoscaler on your OV
 
 One of the hallmarks of cloud native environments is that they must automatically adapt to fluctuating loads. These fluctuations can be for the most part regular, such as day-night or work-weekend cycles, or more ad hoc, such as a Black Friday situation. A well-designed cloud native system must scale up and down to adapt to fluctuations in load without human intervention.
 
-Kubernetes has a powerful set of features to accommodate to shifting workloads, the [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/). 
+Kubernetes has a powerful set of features to accommodate to shifting workloads, the [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 
 > [!primary]
 >
-> The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics). 
+> The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics).
 
 But the horizontal pod autoscaling has a hard limit, the number of available nodes in your Kubernetes cluster. It can only add pods to a Replica Set if there is enough available resources in your Kubernetes nodes, and it cannot reduce the size of your cluster if your nodes are underutilized.
 
@@ -68,7 +68,7 @@ The cluster and horizontal pod autoscalers can work together, and are often both
 
 #### Scaling up and down
 
-To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand. 
+To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand.
 
 The cluster autoscaler also works the other way around, monitoring underutilized nodes and decreasing the number of nodes, helping to reduce your costs.
 
@@ -77,7 +77,7 @@ The cluster autoscaler also works the other way around, monitoring underutilized
 > The scaling up is conceptually easier than the scaling down. When the autoscaler detects resource constraints, it *simply* needs to add yet another node (providing it's under the user defined limit of nodes). But in order to scale down, even if most nodes are underutilized, it needs to move all the pods outside of one of the nodes before deleting it.
 >
 > Some considerations like pods using node selectors, anti-affinity, or restrictive PodDisruptionBudget (PDB).
-> 
+>
 > For more information on this factors disrupting the scaling down of the cluster, please see the [What types of pods can prevent CA from removing a node?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) page.
 
 In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level should it add or remove a node?*) or time intervals (*how often should it scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
@@ -90,11 +90,19 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
+![Node pool](images/node-pool.png){.thumbnail}
+
 Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
 You can activate the autoscaler on several node pools, each of which can have a different type of instance as well as different min and max nodes number limits.
 
-When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) or directly [using the Kubernetes API](../managing-nodes/). 
+> [!primary]
+>
+> In order to avoid unexpected expenses, you should be careful to not enable autoscaling on monthly-billed node pools. However, you are still allowed to do so if you know what you are doing.
+>
+> A common configuration is to use non-autoscaled, monthly-billed node pools as base for your static workload, and autoscaled, hourly-billed node pools with smaller flavors for your dynamic workload.
+
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](../managing-nodes/).
 
 To list node pools, you can use:
 
@@ -131,14 +139,15 @@ metadata:
 spec:
   antiAffinity: false
   autoscale: false
+  autoscaling:
+    scaleDownUnneededTimeSeconds: 600
+    scaleDownUnreadyTimeSeconds: 1200
+    scaleDownUtilizationThreshold: "0.5"
   desiredNodes: 3
   flavor: b2-7
   maxNodes: 100
   minNodes: 0
   monthlyBilled: false
-  scaleDownUnneededTimeSeconds: 600
-  scaleDownUnreadyTimeSeconds: 1200
-  scaleDownUtilizationThreshold: "0.5"
 status:
   availableNodes: 3
   conditions:
@@ -164,11 +173,68 @@ NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED 
 nodepool-b2-7   b2-7     true          false            false           3         3         3            3           [...]   
 </code></pre>
 
-> [!primary]
->
-> During this beta phase, the configuration options for the cluster autoscaler are immutable, set to sensible by-default values. We plan to progressively allow our users to modify some of these parameters to better tailor them to their specific use cases.
-
 When the autoscaler is enabled on a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+
+### Configuring the autoscaler
+
+#### Using Kubernetes API
+
+When the autoscaler is enabled on a node pool, it uses a [default configuration](https://docs.ovh.com/asia/en/kubernetes/configuring-cluster-autoscaler/#cluster-autoscaler-configuration).
+
+You can change several parameters values through kubectl command:
+
+```bash
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": <a_value>, "scaleDownUnreadyTimeSeconds": <another_value>, "scaleDownUtilizationThreshold": "<and_another_one>"}}}'
+```
+
+In my example cluster:
+<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "autoscaling": {
+    "scaleDownUnneededTimeSeconds": 600,
+    "scaleDownUnreadyTimeSeconds": 1200,
+    "scaleDownUtilizationThreshold": "0.5"
+  },
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": false
+}
+</code></pre>
+
+<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
+nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
+</code></pre>
+
+<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+{
+  "antiAffinity": false,
+  "autoscale": true,
+  "autoscaling": {
+    "scaleDownUnneededTimeSeconds": 900,
+    "scaleDownUnreadyTimeSeconds": 1500,
+    "scaleDownUtilizationThreshold": "0.7"
+  },
+  "desiredNodes": 3,
+  "flavor": "b2-7",
+  "maxNodes": 100,
+  "minNodes": 0,
+  "monthlyBilled": false
+}
+</code></pre>
+
+For the moment, only these following parameters are editable:
+
+- autoscale
+- autoscaling
+- desiredNodes
+- minNodes
+- maxNodes
+
+If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
 
 ## Go further
 

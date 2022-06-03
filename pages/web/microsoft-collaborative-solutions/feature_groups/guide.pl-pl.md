@@ -19,14 +19,14 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 ## Wymagania początkowe
 
 - dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/)
+- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 
 
 ## W praktyce
 
 ### Krok 1: utworzenie nowej grupy
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Web” i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action} (po lewej stronie). Kliknij kartę `Grupy`{.action} w menu poziomym.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Webcloud`{.action} i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action}. Kliknij kartę `Grupy`{.action} w menu poziomym.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 

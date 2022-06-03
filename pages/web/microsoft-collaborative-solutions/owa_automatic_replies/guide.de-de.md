@@ -18,7 +18,7 @@ Mit dieser Exchange-Funktion können Sie für verschiedene Anwendungsfälle auto
 
 ## Voraussetzungen
 
-- Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
+- Sie haben bereits einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 

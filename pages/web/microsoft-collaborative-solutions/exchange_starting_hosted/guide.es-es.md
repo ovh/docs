@@ -16,7 +16,7 @@ El servicio Hosted Exchange le permite disfrutar de direcciones de correo electr
 
 ## Requisitos
 
-- Tener contratado un plan [Hosted Exchange](https://www.ovh.es/emails/hosted-exchange/){.external}.
+- Tener contratado un plan [Hosted Exchange](https://www.ovhcloud.com/es-es/emails/hosted-exchange/){.external}.
 - Haber recibido el email de confirmación de la instalación de la solución Hosted Exchange.
 - Tener un dominio.
 - Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
@@ -27,7 +27,7 @@ El servicio Hosted Exchange le permite disfrutar de direcciones de correo electr
 
 Una vez que el servicio Hosted Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
 
-Para ello, en la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action}  y seleccione el servicio Hosted Exchange correspondiente.
+Para ello, Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione el servicio Hosted Exchange correspondiente.
 
 > [!primary]
 >
@@ -91,7 +91,7 @@ Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH
 
 Si desea configurar su cuenta de correo electrónico en un cliente de correo o un dispositivo externo (smartphone o tablet), consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}. Para un uso óptimo de su cuenta Exchange, asegúrese de que su software sea compatible con el servicio.
 
-OVH ofrece licencias de Outlook, que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+OVH ofrece licencias de Outlook, que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
 
 > [!primary]
 >
@@ -112,4 +112,4 @@ Para más información sobre estas funciones, consulte las guías de OVH sobre l
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

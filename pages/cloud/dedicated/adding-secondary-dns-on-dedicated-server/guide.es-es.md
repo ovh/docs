@@ -21,7 +21,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
-- Tener un [dominio](https://www.ovh.es/dominios/){.external} gestionado administrativa o técnicamente.
+- Tener un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} gestionado administrativa o técnicamente.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -36,7 +36,7 @@ Si configura su servidor dedicado como servidor DNS, puede utilizar el DNS de OV
 
 ### Añadir un dominio <a name="ajoutdomaine"></a>
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la columna izquierda, en los `servidores dedicados`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor bajo `Servidores dedicados`{.action}.
 
 A continuación, abra la pestaña `DNS secundaria`{.action} y haga clic en el botón `Añadir un dominio`{.action}.
 

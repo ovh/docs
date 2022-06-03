@@ -23,7 +23,7 @@ Um guia para obtenção dos dados de acesso FTP está à disposição:[]({legacy
 Um guia para obtenção dos dados de acesso à base de dados está à disposição:[]({legacy}1374)
 
 
-![](images/img_3141.jpg){.thumbnail}
+![joomla](images/3141.png){.thumbnail}
 
 
 ## Parte 2: recuperação dos ficheiros "fonte" da instalação
@@ -35,7 +35,7 @@ Um guia para obtenção dos dados de acesso à base de dados está à disposiç�
 
 O ficheiro que vai obter estará, geralmente, comprimido (em formato zip, certamente). Será necessário poder descomprimir esse ficheiro no seu computador. Encontrará na Internet vários tutoriais para ajuda com essa operação.
 
-![](images/img_3142.jpg){.thumbnail}
+![joomla](images/3142.png){.thumbnail}
 
 
 ## Parte 3: colocação dos ficheiros no seu espaço de armazenamento através de FTP
@@ -51,14 +51,14 @@ Vários tutoriais e softwares de descompressão estão disponíveis na Internet 
 
 A pasta terá o nome "Joomla"
 
-![](images/img_3143.jpg){.thumbnail}
+![joomla](images/3143.png){.thumbnail}
 
 ## Ligação ao espaço de alojamento através de FTP
 Para colocar os ficheiros de Joomla! no seu alojamento, deverá ligar-se ao mesmo.
 
 Está à disposição um guia de ajuda à ligação FTP num alojamento partilhado OVH:[]({legacy}1374)
 
-![](images/img_3144.jpg){.thumbnail}
+![joomla](images/3144.png){.thumbnail}
 
 ## Transferência dos ficheiros através de FTP
 Siga estas etapas para colocar os seus ficheiros no espaço FTP.
@@ -76,7 +76,7 @@ Se a pasta não existir, terá  a possibilidade de a criar.
 
 Os seus ficheiros devem estar obrigatoriamente na pasta "www". Se não o fizer, o procedimento de instalação não estará diretamente acessível através do seu nome de domínio.
 
-![](images/img_3145.jpg){.thumbnail}
+![joomla](images/3145.png){.thumbnail}
 
 ## Etapa 2
 Uma vez abertas as pastas:
@@ -89,7 +89,7 @@ Arraste e largue, de seguida, os ficheiros na secção "Site Distante/Remoto" de
 
 É muito provável que a sua pasta "www" não esteja vazia. Vamos abordar esse assunto mais adiante neste guia.
 
-![](images/img_3146.jpg){.thumbnail}
+![joomla](images/3146.png){.thumbnail}
 
 ## Etapa 3
 A transferência de ficheiros está em curso.
@@ -100,7 +100,7 @@ Uma vez que a transferência esteja concluída, assegure-se que todos os ficheir
 
 Esta operação é a última da parte consagrada à transferência de ficheiros para o espaço FTP.
 
-![](images/img_3147.jpg){.thumbnail}
+![joomla](images/3147.png){.thumbnail}
 
 
 ## Parte 4: ligação com a base de dados
@@ -133,7 +133,7 @@ Confirmar a password: valide a password introduza anteriormente.
 
 Clique em "Seguinte" para para a etapa seguinte.
 
-![](images/img_3148.jpg){.thumbnail}
+![joomla](images/3148.png){.thumbnail}
 
 ## Etapa 2
 Muna-se dos identificadores da sua base de dados (ajuda no inicio deste guia).
@@ -156,7 +156,7 @@ Instalação anterior: se já existem tabelas na base de dados e são do mesmo p
 
 Clique em "Seguinte" para validar as informações solicitadas
 
-![](images/img_3149.jpg){.thumbnail}
+![joomla](images/3149.png){.thumbnail}
 
 
 ## Finalização
@@ -183,31 +183,31 @@ Indique se deseja receber por e-mail informações úteis, tal como a password d
 
 Clique em "Instalar" para prosseguir.
 
-![](images/img_3150.jpg){.thumbnail}
+![joomla](images/3150.png){.thumbnail}
 
 ## Etapa 2
 Aguarde alguns instanates durante a instalação.
 
-![](images/img_3151.jpg){.thumbnail}
+![joomla](images/3151.png){.thumbnail}
 
 ## Etapa 3
 Por medidas de segurança, o Joomla!convida-o a eliminar a pasta de instalação.
 
 Clique apenas em "Eliminar a pasta de instalação".
 
-![](images/img_3152.jpg){.thumbnail}
+![joomla](images/3152.png){.thumbnail}
 
 ## Etapa 4
 Aparecerá uma mensagem a confirmar a eliminação da pasta.
 
 Poderá de seguida liga-se à parte de administração do Joomla!. Identifique-se na janela que é apresentada, onde poderá consultar a página padrão implementada pelo Joomla!.
 
-![](images/img_3153.jpg){.thumbnail}
+![joomla](images/3153.png){.thumbnail}
 
 ## Visualização da parte de administração do Joomla!
 Encontrará aqui uma pré-visualização do painel de administração Joomla!.
 
-![](images/img_3154.jpg){.thumbnail}
+![joomla](images/3154.png){.thumbnail}
 
 
 ## Informações úteis
@@ -236,7 +236,7 @@ Poderá ser interessante apenas mudar o nome para que, caso necessário, possa m
 
 Outra informação útil: Os ficheiros do seu website deverão ser colocados na pasta "www" para que sejam tomados em conta.
 
-![](images/img_3155.jpg){.thumbnail}
+![joomla](images/3155.png){.thumbnail}
 
 ## Erro Clássico: versão de PHP
 Trata-se de um erro relativo à versão de PHP do seu servidor.
@@ -245,7 +245,7 @@ A causa é simples: a última versão de PHP não foi ativada.
 
 Tem à sua disposição um guia para o ajudar a alterar a versão de PHP em uso no seu alojamento:[aqui]({legacy}1207)
 
-![](images/img_3156.jpg){.thumbnail}
+![joomla](images/3156.png){.thumbnail}
 
 ## Erro clássico: Magic Quotes
 Trata-se de uma variável mal definida que impede a instalação do Joomla!.
@@ -258,5 +258,5 @@ Um guia está disponível para o ajudar na modificação da variável PHP na ofe
 
 Um guia está disponível para o ajudar na modificação da variável PHP nas antigas ofertas:[Modificação da variável PHP nas antigas ofertas OVH]({legacy}1175)
 
-![](images/img_3157.jpg){.thumbnail}
+![joomla](images/3157.png){.thumbnail}
 

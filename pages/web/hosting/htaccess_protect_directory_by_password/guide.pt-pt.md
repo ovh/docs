@@ -1,7 +1,6 @@
 ---
 title: "Proteger a interface de administração do seu site com um ficheiro .htaccess"
 slug: partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao
-legacy_guide_number: g1968
 excerpt: "Encontre aqui como proteger o acesso à administração do seu site com um ficheiro .htaccess"
 ---
 
@@ -26,7 +25,7 @@ Por vezes, poderá ser necessário proteger o acesso a uma parte do seu site com
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/).
+- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor das credenciais necessárias para aceder ao espaço [de armazenamento do alojamento](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
@@ -36,7 +35,7 @@ Por vezes, poderá ser necessário proteger o acesso a uma parte do seu site com
 >
 > A solução proposta aqui é apenas uma possibilidade técnica entre outras para implementar um espaço de administrador no seu site. Também pode utilizar a funcionalidade [Módulo 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/) proposta pela [OVHcloud](https://www.ovhcloud.com/pt/).
 >
-> Para qualquer pedido sobre a criação ou a programação do seu site, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/). Não poderemos proporcionar-lhe assistência técnica.
+> Para qualquer pedido sobre a criação ou a programação do seu site, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 ### Etapa 1: criar a arborescência
@@ -70,7 +69,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Se dispõe de um alojamento [Pro](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml) ou [Performance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml), aceda ao seu alojamento em [SSH](../partilhado_o_ssh_nos_alojamentos_partilhados/). Execute o seguinte comando:
+Se dispõe de um alojamento [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), aceda ao seu alojamento em [SSH](../partilhado_o_ssh_nos_alojamentos_partilhados/). Execute o seguinte comando:
 
 ```bash
 php crypter.php
@@ -78,9 +77,9 @@ php crypter.php
 
 > [!warning]
 >
-> Por razões de segurança, recomenda-se a utilização de SSH. No entanto, se dispõe de uma oferta [Kimsufi Web](https://www.kimsufi.com/pt/) ou [Perso](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pessoal.xml) e não deseja passar para uma oferta [Pro](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml) ou [Performance](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-performance.xml), pode também executar o ficheiro "crypter.php" através do seu browser Web (Ao aceder a um URL do tipo https://o_seu_domíni.ovh/crypter.php).
+> Por razões de segurança, recomenda-se a utilização de SSH. No entanto, se dispõe de uma oferta [Kimsufi Web](https://www.kimsufi.com/pt/) ou [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e não deseja passar para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), pode também executar o ficheiro "crypter.php" através do seu browser Web (Ao aceder a um URL do tipo https://o_seu_domíni.ovh/crypter.php).
 >
-> Para mais informações sobre o método de encriptação das palavras-passe, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/). Não poderemos prestar-lhe assistência técnica.
+> Para mais informações sobre o método de encriptação das palavras-passe, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/). Não poderemos prestar-lhe assistência técnica.
 >
 
 Obtenha as palavras-passe encriptadas (Não copie o "&#60;br />" se executar o comando "php crypter.php" em SSH):
@@ -149,6 +148,6 @@ Require valid-user
 
 [Partilhado: Tudo sobre o ficheiro .htaccess](../partilhado_tudo_sobre_o_ficheiro_htaccess/)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

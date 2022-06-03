@@ -1,12 +1,13 @@
 ---
-title: Zarzadzaj swoimi archiwami za pomoca interfejsu Swift
+title: Zarzadzaj swoimi archiwami za pomoca interfejsu Swift (Cyberduck)
 slug: pca/cyberduck
 excerpt: Przewodnik ten pokazuje, jak zarzadzac usuga Public Cloud Archive.
 section: Public Cloud Archive
+order: 080
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 18-06-2021**
@@ -20,6 +21,13 @@ Jeśli nie chcesz zarządzać przestrzenią dyskową za pomocą linii poleceń, 
 W Internecie można odnaleźć inne interfejsy. Konfiguracja jest podobna do tej przedstawionej w tym przewodniku.
 
 **Przewodnik ten wyjaśnia, jak skonfigurować program Cyberduck, aby zarządzać usługą Object Storage za pomocą graficznego interfejsu opartego na API Openstack.**
+
+> [!warning]
+>
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+>
+> Niniejszy przewodnik ułatwi Ci realizację bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji “Sprawdź również”.
+>
 
 ## Wymagania początkowe
 

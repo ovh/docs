@@ -20,7 +20,7 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 ## Wymagania początkowe
 
-- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovh.pl/emaile/hosted-exchange/)
+- Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
 - Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
@@ -28,7 +28,7 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 
 ### Wykonaj diagnostykę
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} z menu po lewej stronie, następnie kliknij `Exchange`{.action} i wybierz Twoją usługę.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Wybierz `Microsoft`{.action} , następnie kliknij `Exchange`{.action} i wybierz Twoją usługę.
 
 ![Diagnostyka Exchange](images/img_4450.png){.thumbnail}
 
@@ -92,7 +92,7 @@ Następujące serwery MX są ważne w zależności od korzystania z usługi Exch
 
 > [!warning]
 > W przewodnikach wykorzystujemy jako nazwę serwera: na przykład ex<b>?</b>.mail.ovh.net. Chcesz zastąpić "?" przez numer odpowiadający serwerowi usługi Exchange.<br>
-> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Microsoft`{.action} w menu po lewej stronie, następnie `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
+> Informacje te znajdziesz w Panelu klienta OVHcloud, w sekcji `Web Cloud`{.action}.  Otwórz `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz Twoją usługę. Nazwa serwera wyświetla się w strefie **Logowanie** w zakładce `Informacje ogólne`{.action}.
 >
 
 > [!primary]
@@ -122,7 +122,7 @@ Ten błąd wskazuje na ogólną niepowodzenie wysyłki e-maili, które może mie
 - [Twoje konto zostało zawieszone](#expired)
 - [Podane hasło jest nieprawidłowe.](#password)
 - [Twoje konto zostało zablokowane z powodu wysyłania niechcianej poczty](#blocked)
-- [Wystąpił problem z infrastrukturą](http://travaux.ovh.net/?project=31&status=all&perpage=50)
+- [Wystąpił problem z infrastrukturą](https://web-cloud.status-ovhcloud.com/)
 
 ## Sprawdź również
 

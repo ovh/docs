@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 6
 ---
 
-**Last updated 7th October 2021**
+**Last updated 9th May 2022**
 
 ## Objective
 
@@ -21,20 +21,32 @@ On the High Grade & SCALE ranges, it is not possible to manage failover IPs in *
 
 ## Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses
-- your chosen private IP address range
-- a [vRack compatible dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external}
-- a [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+- Your chosen private IP address range.
+- A [vRack compatible dedicated server](https://www.ovhcloud.com/en/bare-metal/){.external}.
+- A [vRack](https://www.ovh.com/world/solutions/vrack/){.external} service activated in your account.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 ## Instructions
 
-> [!primary]
+> [!warning]
 >
-> On these server ranges, there are 4 network cards. The first two for the public, the last two for the private network. To get all the bandwidth, aggregates must be created.
+> On these server ranges, there are 4 network cards. To get all the bandwidth, aggregates must be created. Our documentation is based on these card aggregates.
+>
+> **However, ESXi does not support LACP natively.**
+> Therefore, no redundancy will be available. You will also be unable to use all of your server’s network cards’ bandwidth.
+>
+
+> [!warning]
+>
+> There's currently a known issue with the ESXi graphical user interface and performing these steps in the interface will result in a non-working configuration. It is absolutely necessary to apply this configuration using the command line interface in SSH.
 >
 
 ### Failover IP via vRack
+
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and open the `vRack`{.action} menu.
+
+Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
 #### Original configuration
 
@@ -50,7 +62,7 @@ A first vSwitch exists but only has a `vmnic2` interface.
 > [!primary]
 >
 > Check that your configuration is similar. You can access information on MACs and public or private interfaces in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-) or via the OVHcloud API.
+ or via the OVHcloud API.
 >
 
 #### Explanations
@@ -138,7 +150,7 @@ To configure the first usable IP address, you must edit the network configuratio
 
 #### Configuration example of a client VM on Debian
 
-File contents `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18

@@ -25,7 +25,7 @@ Ihre E-Mail-Adresse lautet beispielsweise **john.smith@mydomain.ovh** und Ihr Al
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet: [**Exchange**](https://www.ovh.de/emails/hosted-exchange/), [**E-Mail Pro**](https://www.ovh.de/emails/email-pro) oder **MX Plan** (nur neue Version, als Teil eines [OVHcloud Webhostings](https://www.ovh.de/hosting) oder separat bestellt).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet: [**Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (nur neue Version, als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) oder separat bestellt).
 
 ## In der praktischen Anwendung
 
@@ -33,11 +33,11 @@ Ihre E-Mail-Adresse lautet beispielsweise **john.smith@mydomain.ovh** und Ihr Al
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`. Wählen Sie je nach Ihrem E-Mail-Angebot das passende Untermenü aus:
 
-- **Exchange**: Öffnen Sie `Microsoft`{.action} im linken Menü, dann `Exchange`{.action} und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
+- **Exchange**: Öffnen Sie `Microsoft`{.action} , dann `Exchange`{.action} und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
-- **E-Mail Pro**: Öffnen Sie `E-Mail Pro`{.action} im linken Menü und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
+- **E-Mail Pro**: Öffnen Sie `E-Mail Pro`{.action} und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
-- **E-Mails** (MX Plan): Öffnen Sie `E-Mails`{.action} im linken Menü und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
+- **E-Mails** (MX Plan): Öffnen Sie `E-Mails`{.action} und wählen Sie den Dienst aus. Klicken Sie auf den Tab `E-Mail-Accounts`{.action}.
 
 In der Tabelle dieses Tabs finden Sie eine Spalte namens `Alias`.
 

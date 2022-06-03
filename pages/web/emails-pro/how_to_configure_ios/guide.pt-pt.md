@@ -29,7 +29,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 ## Requisitos
 
-- Ter uma [conta E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
+- Ter uma [conta E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/){.external}.
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 
@@ -41,7 +41,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 >
 > No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}, na coluna à esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
+> Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
 
 No ecrã principal do seu dispositivo, aceda a `Regulações`{.action} (ícone de roda dentada). A adição de uma conta efetua-se de diferentes formas consoante a sua versão do iOS:
@@ -73,7 +73,7 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 Após a configuração, a conta de e-mail está pronta a usar e pode começar a enviar e receber mensagens no seu dispositivo.
 
-A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](https://www.ovh.pt/emails/){.external} acessível em <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
+A OVHcloud também disponibiliza uma aplicação web com [funcionalidades de colaboração](https://www.ovhcloud.com/pt/emails/){.external} acessível em <https://www.ovh.pt/mail/>. Para aceder, só precisa dos dados de acesso relativos ao seu endereço de e-mail.
 
 > [!primary]
 >

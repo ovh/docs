@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 4
 ---
 
-**Last updated 2018/10/05**
+**Last updated 10th February 2022**
 
 ## Objective
 
@@ -19,11 +19,18 @@ To regain access, we have provided you with a [rescue mode](../put_an_instance_i
 
 ## Requirements
 
-* root access to your server via SSH
+- A [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- Access to your instance via SSH in [rescue mode](https://docs.ovh.com/us/en/public-cloud/put_an_instance_in_rescue_mode/)
+- Create an SSH Key
 
 ## Instructions
 
-After mounting your instance's disk in [rescue mode](../put_an_instance_in_rescue_mode/){.external}, you will be able to access all your files. The file containing your SSH keys is shown below:
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+>
+
+After mounting your instance's disk in rescue mode, you will be able to access all your files. The file containing your SSH keys is shown below:
 
 ```
 /home/USER_NAME/.ssh/authorized_keys
@@ -75,8 +82,7 @@ root@instance:/home/admin# chroot /mnt/
 Then change the admin password.
 
 ```
-root@instance:/# passwd 
-admin
+root@instance:/# passwd admin
 ```
 
 Once this change has taken place and been backed up, you need to reboot your instance on its disk, so that you can log in with your new SSH key.

@@ -129,4 +129,4 @@ Equilibre y redunde sus bases de datos.
 
 [Más información sobre Nginx](https://es.wikipedia.org/wiki/Nginx){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

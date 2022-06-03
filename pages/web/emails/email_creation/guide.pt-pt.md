@@ -17,20 +17,20 @@ Os endereços de e-mail da oferta MX Plan permitem enviar e receber e-mails no d
 
 ## Requisitos
 
-- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
+- Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, num [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} ou disponível em separado).
 - Ainda ter a possibilidade de criar endereços de e-mail no âmbito do seu plano.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 > [!primary]
 >
-> Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode realizar esta operação a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecionando o domínio correspondente.
+> Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode realizar esta operação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecionando o domínio correspondente.
 >
 
 ## Instruções
 
 A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de [se o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção Web. Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Clique em `E-mails`{.action}e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
@@ -77,7 +77,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 ##### 3.1. Utilizar o webmail Outlook Web Access (OWA)
 
-Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 Ao aceder pela primeira vez ao webmail, deverá definir o idioma da interface e o fuso horário no qual se encontra. A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual [Utilizar o endereço de e-mail a partir do webmail Outlook Web Access (OWA)](https://docs.ovh.com/pt/emails/utilizacao-owa/){.external}.
 
@@ -136,7 +136,7 @@ Na nova janela que aparecerá, preencha as informações necessárias:
 |Informação|Descrição|  
 |---|---|  
 |Nome da conta|Introduza um nome para o seu endereço de e-mail (por exemplo, nome.apelido). O domínio em questão já está preenchido por predefinição.|  
-|Descrição da conta|Insira uma breve descrição que lhe permita reconhecer esta conta do resto das contas na sua Área de Cliente OVH.|  
+|Descrição da conta|Insira uma breve descrição que lhe permita reconhecer esta conta do resto das contas na sua Área de Cliente OVHcloud.|  
 |Tamanho da conta|Selecione o tamanho da conta que pretende. Trata-se do espaço que o seu endereço terá para armazenar mensagens.|  
 |Palavra-passe|Indique uma palavra-passe, e introduza-a novamente para confirmar. Por razões de segurança, recomendamos que não utilize duas vezes a mesma palavra-passe. Escolha uma palavra-passe que não possa ser relacionada com as suas informações pessoais (evite qualquer referência ao seu sobrenome, nome ou data de nascimento, por exemplo) e renove-a regularmente.|
 
@@ -154,7 +154,7 @@ Depois de configurar os endereços de e-mail, já os pode utilizar. Para isso, e
 
 ##### 3.1. Utilizar o webmail RoundCube
 
-Aceda à página “[Ligação ao webmail]({ovh_www}/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
+Aceda à página “[Ligação ao webmail](https://www.ovh.pt/mail/){.external}” e introduza o seu endereço de e-mail e respetiva palavra-passe. De seguida, clique no botão `Ligação`{.action}.
 
 A seguir, poderá consultar a sua caixa de entrada. Para obter mais informações, consulte o nosso manual “[Guia de utilização do Roundcube](https://docs.ovh.com/pt/emails/webmail_guia_de_utilizacao_do_roundcube/){.external}”.
 

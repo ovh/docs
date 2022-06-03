@@ -116,7 +116,7 @@ Per ordinare un certificato SSL, seleziona la scheda `Certificati SSL`{.action},
 |Elemento|Descrizione|
 |---|---|
 |Nome|È possibile assegnare un nome al tuo certificato per identificarlo più facilmente|
-|Tipo di certificato|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (per maggiori dettagli, consulta la pagina <https://www.ovh.it/ssl>)|
+|Tipo di certificato|Gratuito (Let's Encrypt), Comodo DV o Comodo EV (per maggiori dettagli, consulta la pagina <https://www.ovhcloud.com/it/web-hosting/options/ssl/>)|
 |Fully Qualified Domain Name (FQDN)|I domini interessati|
 
 #### Aggiungi un certificato SSL
@@ -136,4 +136,4 @@ Se hai già attivato il tuo certificato SSL, è possibile aggiungerlo direttamen
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

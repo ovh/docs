@@ -10,13 +10,13 @@ order: 2
 
 ## Objetivo
 
-Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguridad. Por lo tanto, usted deberá implementar las medidas necesarias para proteger su servidor dedicado. OVH no podrá ser considerado responsable de los fallos de seguridad de la máquina.
+Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguridad. Por lo tanto, usted deberá implementar las medidas necesarias para proteger su servidor dedicado. OVHcloud no podrá ser considerado responsable de los fallos de seguridad de la máquina.
 
 **En esta guía ofrecemos algunos consejos para proteger un servidor dedicado.**
 
 > [!warning]
 >
-> La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
+> La responsabilidad sobre los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 >
@@ -24,7 +24,7 @@ Los servidores dedicados no incluyen de forma nativa ningún protocolo de seguri
 
 ## Requisitos
 
-- Tener un [servidor dedicado de OVH](https://www.ovh.es/servidores_dedicados/){.external}.
+- Tener un [servidor dedicado de OVHcloud](https://www.ovh.es/servidores_dedicados/){.external}.
 - Estar conectado por SSH (acceso *root*) en Linux o como administrador en Windows.
 
 
@@ -197,21 +197,21 @@ iptables -L
 Le recomendamos que cree y adapte las reglas del firewall en función de su uso. Para más información sobre la configuración de iptables, consulte la documentación oficial de su distribución Linux.
 
 
-### Configurar el firewall de red de OVH
+### Configurar el firewall de red de OVHcloud
 
-Los servidores dedicados de OVH incluyen un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
+Los servidores dedicados de OVHcloud incluyen un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
 
 Para más información, consulte la guía [Configurar el firewall de red](../firewall-de-red/){.external}.
 
 
 ### Guardar copia de seguridad del sistema y los datos
 
-La noción de seguridad va más allá de proteger un sistema frente a posibles ataques. La protección de los datos es un aspecto fundamental. Por eso, OVH ofrece un espacio de backup de 500 GB gratis con su servidor dedicado. Puede activar este espacio de backup en su área de cliente y acceder a él a través de los siguientes protocolos:
+La noción de seguridad va más allá de proteger un sistema frente a posibles ataques. La protección de los datos es un aspecto fundamental. Por eso, OVHcloud ofrece un espacio de backup de 500 GB gratis con su servidor dedicado. Puede activar este espacio de backup en su área de cliente y acceder a él a través de los siguientes protocolos:
 
-* FTP
-* FTPS
-* NFS
-* CIFS
+- FTP
+- FTPS
+- NFS
+- CIFS
 
 Para replicar sus datos y transferirlos a su espacio de backup, necesitará una solución de backup externa.
 
@@ -220,4 +220,4 @@ Para más información sobre este espacio de backup, consulte nuestra guía [Bac
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

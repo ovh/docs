@@ -6,7 +6,11 @@ section: 'Diagnostic et mode Rescue'
 ---
 
 
-**Dernière mise à jour le 24/03/2020**
+**Dernière mise à jour le 07/04/2022**
+
+> [!warning]
+> Depuis le 7 avril 2022, la fonctionnalité d’affichage des données relatives à l’activité de votre serveur est obsolète. L'option de Real Time Monitoring continuera de fonctionner pour les serveurs l’ayant déjà installée jusqu’au 30 juin 2022. Après cette date, nous procéderons à l’arrêt de cette fonctionnalité, et ce sans impact sur le fonctionnement du serveur associé. L’installation de cette option vous est donc déconseillée. Cette notification a pour but de vous laisser suffisamment de temps pour anticiper le remplacement de la fonctionnalité supprimée.
+>
 
 ## Objectif
 
@@ -287,11 +291,11 @@ Une fois l’installation du RTM réussie, vous pouvez à partir de votre espace
 
 ## Aller plus loin
 
-[ Quelles sont les adresses IP du monitoring OVH ?
-](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
+[ Quelles sont les adresses IP du monitoring OVHcloud ?
+](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/)
 
 [Visualiser vos données](https://docs.ovh.com/fr/metrics/usecase-visualize/)
 
 [Activer et utiliser le mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

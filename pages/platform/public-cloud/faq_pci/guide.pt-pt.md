@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: FAQ para as instâncias Public Cloud da OVHcloud
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: Introdução
 order: 3
@@ -67,7 +66,7 @@ Não, um volume tem de ser desassociado antes de o poder aumentar.
 
 ### Existe um número máximo de volumes adicionais que podemos associar a cada instância?
 
-Sim, o limite é de 26 volumes adicionais por instância.
+Sim, o limite é de 25 volumes adicionais por instância.
 
 ### De que forma é que os meus servidores são protegidos?
 
@@ -84,6 +83,12 @@ Estas redes privadas baseiam-se na tecnologia vRack da OVHcloud comum aos outros
 
 Sugerimos que consulte o guia [Configuração do vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
 
-## Saiba mais
+### Posso alterar o IP público da minha instância?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Os IP públicos são atribuídos automaticamente às instâncias e não podem ser alterados. Para obter o controlo sobre o IP público de uma instância, aconselhamos que utilize um endereço IP Failover. Desta forma, qualquer que seja o endereço público atribuído automaticamente à instância, tem a possibilidade de adicionar um ou vários IP Failover à sua instância.
+
+Para mais informações, consulte o guia [Adicionar um IP failover](../adicionar-um-ip-failover/).
+
+## Quer saber mais?
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

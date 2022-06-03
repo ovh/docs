@@ -27,15 +27,15 @@ The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your website
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external}
-- at least one [domain name](https://www.ovh.com/world/domains/){.external} attached to the hosting
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/){.external}
+- at least one [domain name](https://www.ovhcloud.com/en/domains/){.external} attached to the hosting
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and switch to `Web Cloud`{.action}. 
-Click on `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned.
+Click on `Hosting Plans`{.action} and select the plan concerned.
 
 
 ### Activating the application firewall in PHP configuration

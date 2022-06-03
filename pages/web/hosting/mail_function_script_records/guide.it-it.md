@@ -16,19 +16,19 @@ Le email automatiche sono messaggi di posta inviati tramite script  e sono utili
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external}
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!primary]
 >
 > Questa guida si applica esclusivamente ai messaggi di posta inviati tramite script da un hosting Web OVH.
 >
-> Per gestire gli indirizzi email inclusi in una soluzione MX Plan o in un [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}, accedi alla sezione `Email`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+> Per gestire gli indirizzi email inclusi in una soluzione MX Plan o in un [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external}, accedi alla sezione `Email`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
 
 ## Procedura
 
-Le operazioni di monitoring e gestione delle email automatiche di un hosting Web OVH sono disponibili nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: clicca su `Hosting`{.action} nel menu a sinistra, seleziona il tuo servizio dalla lista e clicca su `Altre opzioni`{.action} > `Script email`{.action}.
+Le operazioni di monitoring e gestione delle email automatiche di un hosting Web OVH sono disponibili nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: clicca su `Hosting`{.action}, seleziona il tuo servizio dalla lista e clicca su `Altre opzioni`{.action} > `Script email`{.action}.
 
 Dalla nuova pagina è possibile seguire e gestire le email automatiche inviate dall’hosting.
 
@@ -78,4 +78,4 @@ Per effettuare una di queste azioni, clicca sul pulsante corrispondente e `Confe
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

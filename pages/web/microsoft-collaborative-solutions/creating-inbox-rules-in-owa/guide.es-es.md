@@ -18,7 +18,7 @@ Con la opción «Reglas de la bandeja de entrada», puede crear un elaborado con
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovh.es/hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovh.es/dominios/oferta_hosting_start10m.xml) o contratada por separado como una solución independiente; [**Hosted Exchange**](https://www.ovh.es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovh.es/emails/email-pro/))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovhcloud.com/es-es/web-hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como una solución independiente; [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/))
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 

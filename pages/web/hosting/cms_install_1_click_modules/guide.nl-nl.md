@@ -16,8 +16,8 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 
 ## Vereisten
 
-- U moet beschikken over een [webhosting](https://www.ovh.nl/shared-hosting/){.external}.
-- U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet beschikken over een [webhosting](https://www.ovhcloud.com/nl/web-hosting/){.external}.
+- U moet erbonden zijn met de [OVHcloud klantenruimte](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - Bestanden hoeven niet te worden gedownload in de directory waar uw module wordt geïnstalleerd.
 - Het domein (indien gewenst met subdomein) dat gebruikt zal worden voor uw website moet aangemeld zijn als multisite.
 
@@ -27,15 +27,15 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 
 Een CMS (Content Management System) stelt u in staat een website te maken via een gebruiksvriendelijke interface. Er bestaan verschillende soorten, afhankelijk van uw project. U kunt zo beschikken over een sitestructuur die gebruiksklaar is om naar wens te personaliseren (thema, tekst, enz.)
 
-OVH biedt 4 CMS met 1-klik modules. Wanneer u deze oplossing gebruikt, moet u dus in deze lijst uw keuze maken. Als u hier al een van hebt gekozen, kunt u doorgaan met de verschillende stappen van deze handleiding. Zo niet, dan kan deze [CMS vergelijking](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external} u helpen in uw keuze.
+OVHcloud biedt 4 CMS met 1-klik modules. Wanneer u deze oplossing gebruikt, moet u dus in deze lijst uw keuze maken. Als u hier al een van hebt gekozen, kunt u doorgaan met de verschillende stappen van deze handleiding. Zo niet, dan kan deze [CMS vergelijking](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external} u helpen in uw keuze.
 
-Als u een CMS wilt installeren dat niet door de OVH 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier](https://www.ovh.nl/shared-hosting/){.external}).
+Als u een CMS wilt installeren dat niet door de OVHcloud 1-klik modules wordt aangeboden, dan kunt u het altijd handmatig op uw hosting installeren, onder voorbehoud van de compatibiliteit van dit CMS met uw product (vind ons product [hier](https://www.ovhcloud.com/nl/web-hosting/){.external}).
 
 ![CMS logo](images/CMS_logo.png){.thumbnail}
 
 ### Toegang tot het beheer van de 1-klik modules
 
-In het linkermenu in uw OVH Control Panel, gaat u naar het onderdeel `Hosting`{.action} en dan naar de betreffende hosting. Klik nu op de tab `1-klik modules`{.action}.
+In het linkermenu in uw OVHcloud Control Panel, gaat u naar het onderdeel `Hosting`{.action} en dan naar de betreffende hosting. Klik nu op de tab `1-klik modules`{.action}.
 
 U kunt er de verschillende reeds eerder geïnstalleerde 1-klik modules bekijken, ze beheren en er nieuwe installeren.
 
@@ -84,7 +84,7 @@ Nu moet u de informatie voor de verbinding aan uw database opgeven. Er zijn meer
 - De database is al op uw hosting aangemaakt: kies deze in de lijst en vul de gevraagde informatie in;
 - De database is nog niet op uw hosting aangemaakt: volg de aanwijzingen om deze aan te maken, en voer opnieuw de handeling uit;
 - De database wordt op mijn Private SQL instance of CloudDB aangemaakt: selecteer in de lijst `Database buiten uw webhosting om`{.action} en vul de gevraagde informatie in. De instance en de webhosting moeten in hetzelfde datacenter worden gehost;
-- De database is op een andere OVH webhosting aangemaakt: selecteer in de lijst `Database buiten uw webhosting om`{.action} en vul de gevraagde informatie aan. De database en de webhosting moeten in hetzelfde datacenter worden gehost;
+- De database is op een andere OVHcloud webhosting aangemaakt: selecteer in de lijst `Database buiten uw webhosting om`{.action} en vul de gevraagde informatie aan. De database en de webhosting moeten in hetzelfde datacenter worden gehost;
 
 Wanneer de informatie volledig is ingevuld klikt u op de knop `Volgende`{.action}.
 
@@ -136,11 +136,11 @@ Wanneer u hulp bij de functies van uw site wilt, kunt u naar de site-editor van 
 
 ## Verder
 
-[Een CMS kiezen om een website te maken](https://www.ovh.nl/shared-hosting/website/vergelijking-cms/){.external}
+[Een CMS kiezen om een website te maken](https://www.ovhcloud.com/nl/web-hosting/uc-cms-comparison/){.external}
 
 [Webhosting delen tussen verschillende sites](https://docs.ovh.com/nl/hosting/multisite-configuratie-meerdere-websites/){.external}.
 
-Ontdek ons [Private SQL product](https://www.ovh.nl/shared-hosting/sql-opties.xml){.external}
+Ontdek ons [Private SQL product](https://www.ovhcloud.com/nl/web-hosting/options/start-sql/){.external}
 
 Ontdek ons [CloudDB product](https://www.ovh.nl/cloud/cloud-databases/){.external}
 

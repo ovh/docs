@@ -16,7 +16,7 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 
 ## Prérequis
 
-- Disposer d'une offre [Exchange OVHcloud](https://www.ovh.com/fr/emails/){.external}.
+- Disposer d'une offre [Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir installé une application OTP sur un smartphone ou une tablette Android ou iOS.
 
@@ -37,7 +37,7 @@ Si vous souhaitez augmenter la sécurité de votre compte Exchange, vous pouvez 
 
 Lors d'une première configuration, il est nécessaire d'activer la double authentification sur la plateforme avant de l'activer sur un compte.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action}. Enfin, choisissez le service Exchange concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action}. Enfin, choisissez le service Exchange concerné.
 
 Sélectionnez l'onglet `Sécurité`{.action} de votre plateforme. En dessous de la mention « Double authentification », cliquez sur `Activer`{.action}. Pour terminer, descendez en bas de la page et cliquez sur `Enregistrer les modifications`{.action}.
 
@@ -63,7 +63,7 @@ Lors de vos connexions suivantes, seul le code généré par votre application v
 
 La double authentification de votre compte peut être désactivée de trois manières.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action}. Enfin, choisissez le service Exchange concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action}. Enfin, choisissez le service Exchange concerné.
 
 Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez sur `...`{.action} à droite du compte sur lequel la double authentification est déjà active.
 
@@ -71,8 +71,8 @@ Depuis l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez 
 
 Sélectionnez l'option correspondante à votre besoin selon le tableau ci-dessous :
 
-| N°                 	| Fonction    | Description                                                                                                        	
-|----------------------------------	|------------------|------------------|
+| N° | Fonction | Description
+|----------------------------------|------------------|------------------|
 | 1. | « Désactiver la double authentification » | Permet la suspension de la double authentification pendant une période définie en heures. Une fois le délai dépassé, la double authentification sera réactivée. <br> *Exemple : un utlisateur a oublié son smartphone et ne peut pas s'authentifier avec l'application OTP.*   |
 | 2. | « Réinitialiser la double authentification » | Permet de réinitialiser le QR code demandé lors de votre première connexion au webmail.<br> *Exemple : un utilisateur a changé de smartphone et doit reconfigurer son application OTP.* |
 | 3. | « Supprimer la double authentification » | Supprime totalement la double authentification sur le compte. | 

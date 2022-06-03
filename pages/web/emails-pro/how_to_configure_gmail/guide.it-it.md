@@ -23,7 +23,7 @@ Gli account Email Pro possono essere configurati su client o applicazioni di pos
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
+- Disporre di una soluzione [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/){.external}
 - Disporre delle credenziali associate all’account Email Pro da configurare
 - Disporre delle credenziali associate all’account Gmail su cui configurare l’account Email Pro OVH
 
@@ -40,12 +40,12 @@ Gli account Email Pro possono essere configurati su client o applicazioni di pos
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
 
 Accedi tramite browser all’interfaccia Web di Gmail, inserisci le credenziali del tuo account ed effettua il login.
 
-Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
+Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Visualizza tutti le impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
 
 ![Email Pro](images/configuration-gmail-web-step1.png){.thumbnail}
 

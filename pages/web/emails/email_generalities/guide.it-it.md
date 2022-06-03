@@ -15,20 +15,20 @@ legacy_guide_number: g1474
 
 ## Obiettivo
 
-La soluzione MX Plan di OVH con cui potrai inviare e ricevere messaggi dal dispositivo che preferisci.
+La soluzione MX Plan di OVHcloud con cui potrai inviare e ricevere messaggi dal dispositivo che preferisci.
 
 **Questa guida ti mostra le operazioni di base da effettuare sul tuo servizio di posta elettronica MX Plan.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovh.it/hosting-web/), l'[hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml) o la soluzione MX Plan da sola.
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/) o la soluzione MX Plan da sola.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}.
 
 ## Procedura <a name="instructions"></a>
 
 Una volta creata e disponibile la soluzione MX Plan, è possibile gestirla dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/), la versione disponibile sarà differente. Per verificare quella attiva
 
-Accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione Web Cloud. E seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+Accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Email`{.action}. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|

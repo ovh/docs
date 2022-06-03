@@ -29,8 +29,8 @@ Desde 2011, nuestros alojamientos web son compatibles con IPv6. Sin embargo, la 
 
 ## Requisitos
 
-- Disponer de un [dominio](https://www.ovh.es/dominios/){.external} en su área de cliente de OVHcloud.
-- Tener contratado un [plan de hosting](https://www.ovh.es/hosting/){.external}.
+- Disponer de un [dominio](https://www.ovhcloud.com/es-es/domains/){.external} en su área de cliente de OVHcloud.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
@@ -62,7 +62,7 @@ En la sección `Información general`, en el recuadro **IPv6**, copie el registr
 
 Para que su navegador encuentre la dirección IPv6 con su nombre de dominio, debe modificar la zona DNS asociada. Para crear un registro de tipo **AAAA**, consulte nuestra guía [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/).
 
-En la columna izquierda, haga clic en `Dominios`{.action} y seleccione la `zona DNS`{.action} de su dominio. Haga clic en el botón `Añadir entrada`{.action} a la derecha de la tabla. Debe insertar la dirección IPv6 utilizando el tipo de registro **AAAA** y la IPv6 que se han obtenido anteriormente en el área de cliente.
+Haga clic en `Dominios`{.action} y seleccione la `zona DNS`{.action} de su dominio. Haga clic en el botón `Añadir entrada`{.action} a la derecha de la tabla. Debe insertar la dirección IPv6 utilizando el tipo de registro **AAAA** y la IPv6 que se han obtenido anteriormente en el área de cliente.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

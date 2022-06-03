@@ -25,7 +25,7 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer de una solución de correo electrónico de OVHcloud que debe haber sido previamente configurada (**MX Plan** (nueva versión), ofrecida entre nuestros [planes de hosting](https://www.ovh.es/hosting/) o contratada por separado como solución autónoma, [**Hosted Exchange**](https://www.ovh.es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovh.es/emails/email-pro/)).
+- Disponer de una solución de correo electrónico de OVHcloud que debe haber sido previamente configurada (**MX Plan** (nueva versión), ofrecida entre nuestros [planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) o contratada por separado como solución autónoma, [**Hosted Exchange**](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovhcloud.com/es-es/emails/email-pro/)).
 
 ## Procedimiento
 
@@ -33,11 +33,11 @@ Por ejemplo, su dirección de correo electrónico es **john.smith@mydomain.ovh**
 
 Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`. A continuación, seleccione el menú en función de su servicio de correo:
 
-- **Exchange**: en la barra de servicios a la izquierda de `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
+- **Exchange**: `Microsoft`{.action}, luego en `Exchange`{.action} y seleccione la plataforma correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}.
 
 - **Email Pro**: en `Email Pro`{.action}, seleccione la plataforma correspondiente y haga clic en la pestaña `Cuentas de correo`{.action}.
 
-- **Emails** (MXplan): en `Emails`{.action} en la columna izquierda, seleccione la plataforma correspondiente y haga clic en `Cuentas de correo`{.action}.
+- **Emails** (MXplan): en `Emails`{.action}, seleccione la plataforma correspondiente y haga clic en `Cuentas de correo`{.action}.
 
 Se abrirá una columna llamada `Alias`.
 

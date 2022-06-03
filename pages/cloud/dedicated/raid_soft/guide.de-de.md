@@ -11,7 +11,7 @@ section: 'RAID & Festplatten'
 
 Das RAID (Redundant Array of Independent Disks) ist ein System, das Datenverlust auf Servern entgegenwirkt, indem es diese Daten auf mehreren Festplatten speichert.
 
-Das RAID-Level für OVH Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
+Das RAID-Level für OVHcloud Server-Installationen ist standardmäßig RAID-1, was den von Ihren Daten verbrauchten Speicherplatz verdoppelt und somit den nutzbaren Festplattenplatz halbiert.
 
 **In dieser Anleitung erfahren Sie, wie Sie das Matrix-RAID Ihres Servers konfigurieren, falls dieses aufgrund von Störungen oder Festplattenschaden neu eingerichtet werden muss.**
 
@@ -37,7 +37,7 @@ md1 : active raid1 sdc1[2] sdb1[1] sda1[0]
 unused devices: <none>
 ```
 
-Dieser Befehl zeigt, dass aktuell zwei Matrix-RAIDs eingerichtet sind, wobei „md2“ die größere Partition ist. Eine Partition besteht aus den drei Festplatten „sda2“, „sdb2“ und „sdc2“. \[UUU] zeigt an, dass alle Festplatten normal funktionieren. Ein „F“ würde bedeuten, dass eine Festplatte defekt ist.
+Dieser Befehl zeigt, dass aktuell zwei Matrix-RAIDs eingerichtet sind, wobei “md2” die größere Partition ist. Eine Partition besteht aus den drei Festplatten “sda2”, “sdb2” und “sdc2”. \[UUU] zeigt an, dass alle Festplatten normal funktionieren. Ein “F” würde bedeuten, dass eine Festplatte defekt ist.
 
 Dieser Befehl zeigt zwar die RAID-Festplatten an, jedoch nicht die Größe der Partitionen selbst. Diese Information erhalten Sie mit folgendem Befehl:
 
@@ -99,7 +99,7 @@ Disk identifier: 0x00000000
 Disk /dev/md2 doesn't contain a valid partition table
 ```
 
-Der Befehl zeigt, das `/dev/md1` 21 GB und `/dev/md2` 98,5 GB enthält. Durch den Befehl „mount“ erhalten Sie das Layout der Festplatte.
+Der Befehl zeigt, das `/dev/md1` 21 GB und `/dev/md2` 98,5 GB enthält. Durch den Befehl “mount” erhalten Sie das Layout der Festplatte.
 
 ```sh
 /dev/root on / type ext4 (rw,relatime,discard,errors=remount-ro,data=ordered)
@@ -209,12 +209,12 @@ Working Devices : 2
        2       8       34        2      active sync   /dev/sdc2
 ```
 
-Wenn die Festplatte ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Festplatte (in unserem Beispiel „sdb“) mit folgendem Befehl in die neue („sda“): 
+Wenn die Festplatte ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Festplatte (in unserem Beispiel “sdb”) mit folgendem Befehl in die neue (“sda”): 
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
 ```
-Jetzt können Sie das Matrix-RAID erneut einrichten. Der nachstehende Ausschnitt des Codes zeigt, wie das Layout der Partition `/dev/md2` mit der zuvor kopierten Partitionstabelle von „sda“ wiederhergestellt werden kann: 
+Jetzt können Sie das Matrix-RAID erneut einrichten. Der nachstehende Ausschnitt des Codes zeigt, wie das Layout der Partition `/dev/md2` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann: 
 
 ```sh
 mdadm --add /dev/md2 /dev/sda2

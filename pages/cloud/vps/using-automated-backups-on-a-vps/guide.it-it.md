@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/06/2021**
+**Ultimo aggiornamento: 01/02/2022**
 
 ## Obiettivo
 
@@ -31,7 +31,7 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 
 ## Procedura
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `VPS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
 ### Step 1: Attivare l’opzione Backup automatizzati
 
@@ -39,7 +39,7 @@ Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.ac
 
 Nello step successivo, esamina le informazioni sul prezzo, quindi clicca su `Ordina`{.action}. Sarai guidato attraverso la procedura d’ordine e riceverai una email di conferma. A questo punto i backup verranno effettuati giornalmente finché l’opzione non verrà nuovamente disattivata.
 
-### Step 2: Ripristinare un backup dallo Spazio Cliente OVH
+### Step 2: Ripristinare un backup dallo Spazio Cliente OVHcloud
 
 Dopo aver selezionato il tuo VPS, clicca sulla scheda `Backup automatizzato`{.action} nel menu orizzontale. Hai a disposizione un massimo di 7 backup giornalieri (15 backup giornalieri per i VPS di gamme precedenti). Clicca su `...`{.action} accanto al backup che desideri ripristinare e seleziona `Ripristino`{.action}.
 
@@ -70,7 +70,7 @@ Clicca su `...`{.action} accanto al backup a cui desideri accedere e seleziona `
 
 A completamento del processo riceverai una email. A questo punto puoi connetterti al tuo VPS e aggiungere la partizione in cui è localizzato il tuo backup.
 
-#### Step 2: Secure Shell
+#### Con Secure Shell
 
 Innanzitutto, connettiti al tuo VPS via SSH.
 
@@ -103,6 +103,30 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Ora puoi passare a questa cartella e accedere ai tuoi dati di backup.
+
+#### Con Windows
+
+Installa una connessione RDP (Remote Desktop) con il tuo VPS.
+
+Clicca con il tasto destro su `Start`{.action} e apri `Gestione disco`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+Il tuo backup in salita apparirà come un disco di base con lo stesso spazio di storage del tuo disco principale.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+Il disco apparirà come `Offline`, clicca con il tasto destro sul disco e seleziona `Online`(action).
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+In seguito, il backup sarà disponibile su `Explora file`.
+
+![file explorer](images/windowsbackup4.png){.thumbnail}
+
+> [!warning]
+> Ti ricordiamo che il server si riavvierà durante lo smontaggio del backup.
+>
 
 ### Best practice per l'utilizzo del backup automatico
 
@@ -188,4 +212,4 @@ Running  QEMU-GA            QEMU Guest Agent
 
 [Usare snapshot su un VPS](../usare-snapshot-su-un-vps)
 
-Partecipa alla nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

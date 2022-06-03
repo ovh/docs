@@ -50,7 +50,7 @@ Aus diesem Grund stellen wir Ihnen zwei verschiedene Migrationsprozesse zur Verf
 
 #### Schritt 1: OVH Webhosting bestellen
 
-Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://www.ovh.de/hosting/){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
+Bestellen Sie Ihr Webhosting auf der Website von [OVH](https://www.ovhcloud.com/de/web-hosting/){.external}. Achten Sie darauf, den Transfer Ihrer Domain noch nicht zu veranlassen. Dieser wird in einem anderen Schritt durchgeführt. Sobald Ihre Zahlung eingegangen ist, wird Ihr Webhosting installiert. Im Anschluss erhalten Sie eine Bestätigungs-E-Mail zur abgeschlossenen Installation.
 
 #### Schritt 2: Ihre Website transferieren
 
@@ -68,7 +68,7 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
@@ -137,7 +137,7 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem OVH Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie in Ihrem OVH Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen, solange die DNS Auflösung aktiv ist. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 

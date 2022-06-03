@@ -16,9 +16,9 @@ On the High Grade & SCALE ranges, it is not possible to operate failover IPs in 
 
 ## Requirements
 
-- an [OVHcloud dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- a [failover IP](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
+- An [OVHcloud dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A [failover IP](https://www.ovhcloud.com/en-sg/bare-metal/ip/)
 
 > [!warning]
 >
@@ -118,11 +118,11 @@ iface ens18 inet static
 
 #### Requirements
 
-- a public block of IP addresses in your account, with a minimum of four addresses
-- your chosen private IP address range
-- a [vRack compatible server](https://www.ovhcloud.com/en-sg/bare-metal/){.external}
-- a [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service activated in your account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
+- A public block of IP addresses in your account, with a minimum of four addresses. The block must be pointed to the vRack.
+- Your chosen private IP address range
+- A [vRack compatible server](https://www.ovhcloud.com/en-sg/bare-metal/){.external}
+- A [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service activated in your account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 
 #### Target configuration schema
@@ -135,6 +135,10 @@ You need to:
 
 - create an aggregate
 - create a bridge connected to the aggregate
+
+First, add your public block of IP addresses to the vRack. To do so, go to the `Bare Metal Cloud`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and open the `vRack`{.action} menu.
+
+Select your vRack from the list to display the list of eligible services. Click on the IP block you want to add to the vRack and then click the `Add`{.action} button.
 
 #### Configure a usable IP address
 
@@ -229,7 +233,7 @@ At this point, restart the network services or restart the server.
 
 #### Configuration example of a client VM on Debian
 
-File contents `/etc/network/interfaces`:
+Content of the file `/etc/network/interfaces`:
 
 ```bash
 auto lo ens18
@@ -242,4 +246,4 @@ iface ens18 inet static
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.

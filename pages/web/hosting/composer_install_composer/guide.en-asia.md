@@ -22,7 +22,7 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/) with SSH access
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/asia/web-hosting/) with SSH access
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions

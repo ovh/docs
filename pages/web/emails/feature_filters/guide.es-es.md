@@ -26,7 +26,7 @@ Por ejemplo: desea que se elimine todo email que contenga "[SPAM]" en el asunto.
 
 ## Requisitos
 
-- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} incluido con un dominio o la solución MX Plan contratada por separado.
+- Disponer de una solución de correo MX Plan (disponible a través de: un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio o la solución MX Plan contratada por separado.
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
@@ -43,11 +43,11 @@ Versión histórica de la solución MX Plan|Nueva versión de la solución MX Pl
 
 Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`.
 
-En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
+Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente.
 
 En la pestaña `Correo electrónico`{.action} de su servicio MXplan, encontrará la lista de sus direcciones de correo. En el cuadro de cuentas de correo puede verse una columna `Filtros`. Haga clic en el icono de embudo.
 
-![correo electrónico](images/img_3239.jpg){.thumbnail}
+![correo electrónico](images/img_3239.png){.thumbnail}
 
 A continuación, acceda a la lista de filtros actualmente configurados para esta dirección de correo.
 

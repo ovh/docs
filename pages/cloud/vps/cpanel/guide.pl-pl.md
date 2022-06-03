@@ -6,10 +6,10 @@ section: 'Poziom zaawansowany'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 16-09-2021**
+**Ostatnia aktualizacja z dnia 14-10-2021**
 
 ## Wprowadzenie
 
@@ -20,7 +20,7 @@ cPanel to panel konfiguracyjny zaprojektowany dla dostawców hostingu WWW. Skła
 ## Wymagania początkowe
 
 - [aktualne rozwiązanie VPS](https://www.ovhcloud.com/pl/vps/) (Value, Essential, Comfort lub Elite).
-- Zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Zalogowanie do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -48,7 +48,7 @@ Po otrzymaniu wiadomości e-mail z unikalnym linkiem kliknij ten link, aby przep
 
 > [!primary]
 >
-> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie "whmlogin", aby wygenerować nowy link.
+> Jeśli link już wygasł, proszę połączyć się z VPS przez SSH używając użytkownika CentOS i wykonać polecenie « sudo whmlogin », aby wygenerować nowy link.
 >
 
 Podany wyżej URL umożliwia zalogowanie się do interfejsu WHM bez danych identyfikacyjnych (użytkownika i hasła).

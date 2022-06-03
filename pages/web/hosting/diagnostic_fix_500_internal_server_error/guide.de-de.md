@@ -32,7 +32,7 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 
@@ -83,7 +83,7 @@ Die Anleitung "[Verwendung von FileZilla](../webhosting_hilfe_zur_verwendung_von
 
 Aus Sicherheitsgründen verschleiert Ihre Website alle technischen Details über einen Fehler 500.
 
-Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Business- oder Entwickler-Angebot](https://www.ovh.de/hosting/)).
+Wenn Sie oder Ihr Entwickler Zugang zu diesen Informationen haben möchten, können Sie sich [über SSH mit Ihrer Website verbinden](../webhosting_ssh_auf_ihren_webhostings/) (nur verfügbar mit einem [Business- oder Entwickler-Angebot](https://www.ovhcloud.com/de/web-hosting/)).
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 

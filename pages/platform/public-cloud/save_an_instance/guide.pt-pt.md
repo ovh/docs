@@ -1,85 +1,95 @@
 ---
-title: 'Criar uma cópia de segurança de uma instância'
-excerpt: 'Saiba como criar uma cópia de segurança de uma instância Public Cloud em apenas alguns cliques'
+title: 'Guardar uma instância'
+excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
 slug: efetuar_backup_de_uma_instancia
-legacy_guide_number: g1881
+order: 1
 section: Gestão a partir da Área de Cliente OVHcloud
 ---
 
-**Última atualização: 22/11/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 28/02/2022**
 
-Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, poderá criar um backup de uma instância a qualquer momento e utilizá-la para restaurar a sua instância numa configuração anterior ou criar uma nova instância.
+## Objetivo
 
-**Efetue um backup de uma instância Public Cloud em apenas alguns cliques.**
+Pode criar um backup único de uma instância ou configurar um planeamento para automatizar os backups das suas instâncias. Os backups podem ser utilizados para restaurar a sua instância num estado anterior ou para criar uma nova instância idêntica.
+
+**Este guia explica como criar backups manuais e automáticos de uma instância Public Cloud.**
 
 ## Requisitos
 
-- [Ter criado uma instância Public Cloud a partir da sua conta](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
-- Estar ligado à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter uma instância [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
 ### Criar um backup de uma instância
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o separador Public Cloud e a secção `Instâncias`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. A seguir, clique em `Instances`{.action} no menu à esquerda.
 
-Clique então nas `...`{.action} do lado direito da instância escolhida e, por fim, em `Criar um backup`{.action}.
+Clique no botão `...`{.action} à direita da instância e selecione `Criar um backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Introduza um nome para este backup na página seguinte.
+Introduza um nome para o backup na página seguinte. Consulte as informações tarifárias e clique em `Confirmar`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Depois de concluído o backup, este estará disponível na secção `Instance Backup`{.action}.
+Uma vez terminado o backup, este estará disponível na secção `Instance Backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
 ### Criar um backup automatizado de uma instância
 
-Na secção `Instâncias`{.action}, selecione `Criar um backup automatizado`{.action} nas ações disponíveis da instância a salvaguardar.
+Clique no botão `...`{.action} à direita da instância e selecione `Criar um backup automatizado`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Deverá introduzir várias informações na página seguinte:
+Poderá configurar os seguintes parâmetros de backup:
 
-#### **O <i>workflow</i>** 
+#### **O workflow** 
 
-Existe atualmente um único <i>workflow </i>que fará uma backup da instância e do volume principal da mesma.
+Atualmente, existe apenas um workflow. Irá criar um backup para a instância e o seu volume principal.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
-#### **O recurso**. 
+#### **O recurso** 
 
-Basta selecionar a instância a que o backup diz respeito.
+Pode selecionar a instância a salvaguardar.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **A ordenação** 
+#### **O planeamento** 
 
-Trata-se de definir a frequência dos backups. Existem duas opções por defeito:
+Pode definir um planeamento de backup personalizado ou escolher uma das frequências predefinidas:
 
-* Um backup diário, com um histórico de 7 dias no máximo.
-* Um backup diário, com um histórico de 14 dias no máximo.
+- Backup diário com retenção dos últimos 7 backups
+- Backup diário com retenção dos últimos 14 backups
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
-    
-#### **A atribuição dos nomes** 
+#### **Nome** 
 
-Trata-se simplesmente de dar um nome à tarefa de backup.
+Introduza um nome para o planeamento do backup automático. Leia as informações de preços e crie o calendário ao clicar no botão `Criar`{.action}.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-Depois de criada, estará disponível na secção `Workflow Management`{.action}:
+### Gestão dos backups e dos planos
+
+Os planos podem ser criados e eliminados na secção `Workflow Management`{.action} da Área de Cliente Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Os backups estarão disponíveis na secção `Instance Backup`{.action} e serão faturados como tal.
+Os backups das suas instâncias são geridos na secção `Instance Backup`{.action} da sua Área de Cliente Public Cloud.
 
+![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+Saiba como utilizar os backups para clonar ou restaurar instâncias neste [guia](https://docs.ovh.com/pt/public-cloud/criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/).
 
 ## Quer saber mais?
+
+[Criar/restaurar um servidor virtual a partir de um backup](https://docs.ovh.com/pt/public-cloud/criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -16,8 +16,8 @@ Databases are used in virtually all modern content management systems (CMS), suc
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external}
-- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external}
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
+- a database created as part of an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external}
 - Depending on which backup method you use, you must be able to administer the Web Hosting plan from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, or have the information you need in order to connect to the database.
 
 ## Instructions
@@ -30,7 +30,7 @@ Before you begin, you must choose which method you are going to use to retrieve 
 
 - **Use a script to carry out the backup.** This method involves creating a script that is saved on your OVHcloud Web Hosting plan, which will carry out the backup. Writing this script requires a specific level of technical knowledge.
 
-- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external} are required to use this method.
+- **Carry out the backup from an SSH command line.** This method involves using the SSH protocol to log in to your storage space, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} are required to use this method.
 
 Some of the methods listed above are not included in the OVHcloud interface. You will therefore need to rely on your own knowledge to carry out these methods. We have set out some general information below, but this is not a substitute for the assistance of a webmaster. 
 
@@ -45,7 +45,7 @@ We recommend reading this guide, and focusing on the backup method you wish to u
 
 ### Retrieve a backup using the OVHcloud tool.
 
-To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, click `Web Hosting`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. You can now choose to create a new backup and/or retrieve an existing backup, in two separate steps.
 
@@ -75,7 +75,7 @@ To download a backup, click the three dots to the right of the backup you want t
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
+To use this method, you will need to log in to phpMyAdmin. To get the access link for this interface, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, click `Web Hosting`{.action}, then select the name of the plan concerned. Next, go to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan. In this table, click the three dots to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 

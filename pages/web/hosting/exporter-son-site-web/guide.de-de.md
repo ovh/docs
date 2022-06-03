@@ -5,7 +5,7 @@ excerpt: 'Eine OVHcloud Webseite exportieren'
 section: 'Erste Schritte'
 ---
 
-**Letzte Aktualisierung am 14.01.2020**
+**Letzte Aktualisierung am 03.02.2022**
 
 ## Ziel
 
@@ -15,7 +15,7 @@ In dieser Anleitung werden die Schritte zum Exportieren aller Elemente einer Web
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting).
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -31,7 +31,7 @@ Um sich in Ihren Speicherplatz einzuloggen, benötigen Sie:
 - die Server-Adresse
 - den Verbindungsport des Servers
 
-Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
+Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und öffnen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -41,8 +41,7 @@ Wenn Sie alle nötigen Informationen bereit haben, können Sie Ihre Dateien auf 
 
 - **FTP- oder SFTP-kompatibles Programm verwenden**: Installieren Sie einen FTP-Client auf Ihrem Computer, wie [FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla). Kontaktieren Sie den Herausgeber der eingesetzten Anwendung, falls Sie für deren Verwendung Hilfe brauchen, da OVHcloud keine Unterstützung zu externer Software anbieten kann.
 
-
-- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
+- **SSH-Zugang verwenden**: Um auf Ihren Speicherplatz zuzugreifen, müssen die entsprechenden Befehle in einem Terminal ausgeführt werden. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) erforderlich. Weitere Informationen hierzu finden Sie in unserer [Anleitung](https://docs.ovh.com/de/hosting/webhosting_ssh_auf_ihren_webhostings). 
 
 #### 1.2 Dateien von Ihrem Speicherplatz herunterladen
 
@@ -62,17 +61,16 @@ Gehen Sie in Ihrem OVHcloud-Kundencenter auf den Tab `Multisite`{.action}, um he
 Informationen zum Abrufen eines Backups Ihrer Datenbank finden Sie in unserer Anleitung:
 [Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken).
 
+Wenn Sie eine Datenbank **CloudDB** für Ihre Website verwenden, lesen Sie den Abschnitt "Backup" in unserer Anleitung:
+[Eine Datenbank Ihres Datenbankservers sichern und exportieren](https://docs.ovh.com/de/hosting/backup-eine-datenbank-exportieren/){.external}.
+
 ### Schritt 3: Logs Ihres OVHcloud Webhostings abrufen
 
 Wenn Sie den Protokollverlauf Ihrer Webseite aufbewahren möchten, haben Sie die Möglichkeit, die Logs im OVHcloud Kundencenter herunterzuladen.
 
-Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den gewünschten Dienst aus. Klicken Sie auf den Tab `Mehr +`{.action}, danach auf `Statistiken und Logs`{.action}.
+Wählen Sie unter `Hosting-Pakete`{.action} den gewünschten Dienst aus. Klicken Sie auf den Tab `Statistiken und Logs`{.action}. Klicken Sie auf den Link unter dem Eintrag `Logs anzeigen`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Klicken Sie dann auf den Link unter **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 Ein Fenster mit den verschiedenen verfügbaren Logtypen wird angezeigt. Sie sind nach Monaten unterteilt:
 

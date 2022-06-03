@@ -3,7 +3,7 @@ title: 'Automatische Signaturen erstellen'
 excerpt: 'Erfahren Sie hier, wie Sie automatische Signaturen zu Ihren E-Mail-Accounts hinzufügen'
 slug: exchange_20132016_automatische_signatur_-_disclaimer
 legacy_guide_number: g1330
-section: 'Exchange Account-Funktionen'
+section: Exchange Account-Funktionen
 order: 3
 ---
 
@@ -24,14 +24,14 @@ order: 3
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange) oder [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
 
 
 ## In der praktischen Anwendung
 
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich „Web“ und wählen Sie in der linken Menüleiste unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 
 ![Exchange Signaturen](images/exchange-footer-step1.png){.thumbnail}
 

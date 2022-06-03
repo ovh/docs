@@ -33,7 +33,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.es/hosting/).
+- Tener un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 
@@ -85,7 +85,7 @@ La guía "[Uso de FileZilla con el alojamiento](../web_hosting_guia_de_uso_de_fi
 
 Por motivos de seguridad, su sitio web oculta los detalles sobre el origen del error 500 a cualquier persona que se conecte a él a través de un navegador web.
 
-Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](../web_hosting_ssh_en_alojamiento_compartido/) a través de la fórmula de alojamiento [Pro2014](https://www.ovh.es/hosting/hosting-profesional.xml).
+Si usted o su desarrollador desea tener acceso a estos detalles, puede conectarse a su sitio web a través de una [conexión SSH](../web_hosting_ssh_en_alojamiento_compartido/) a través de la fórmula de alojamiento [Pro2014](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/).
 
 ### Restaurar el sitio web a su estado anterior <a name="restore"></a>
 

@@ -9,7 +9,7 @@ section: vRack
 
 ## Objectif
 
-Le [vRack](https://www.ovh.com/fr/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/){.external} OVH.
+Le [vRack](https://www.ovh.com/fr/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés](https://www.ovhcloud.com/fr/bare-metal/){.external} OVHcloud.
 
 **Apprenez à définir une zone d'annonce d'un bloc IP dans le vRack.**
 
@@ -18,6 +18,11 @@ Le [vRack](https://www.ovh.com/fr/solutions/vrack/){.external} est un réseau pr
 - Posséder un [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
 - Avoir [configuré un bloc d’adresses IP dans le vRack](../ajouter-ou-enlever-un-bloc-ip-du-vrack/).
 - Disposer de connaissances avancées en réseau.
+
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
 ## En pratique
 
@@ -41,14 +46,14 @@ L'exemple ci-dessus montre que l'adresse IP testée est actuellement annoncée �
 
 ### Étape 2 : modifier l'annonce du bloc IP
 
-Rendez-vous sur le lien <https://api.ovh.com/console/>, puis connectez-vous avec votre identifiant client OVH. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
+Rendez-vous sur le lien <https://api.ovh.com/console/>, puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les API ci-dessous afin de modifier l'annonce du bloc IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie « Cloud », puis « vRack ».
+Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie `Bare Metal Cloud`{.action}, puis `Network`{.action} et ensuite « vRack ».
 
 > [!api]
 >

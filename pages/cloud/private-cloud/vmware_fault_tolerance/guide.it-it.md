@@ -3,7 +3,7 @@ title: VMware Fault Tolerance
 slug: vmware-fault-tolerance
 excerpt: Come garantire la disponibilità continua delle VM con il servizio Fault Tolerance
 legacy_guide_number: '2163251'
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 06
 ---
 
@@ -53,8 +53,6 @@ A questo punto la VM è protetta da **Fault Tolerance**\: l’icona visualizzata
 In base alle necessità, sono disponibili diverse operazioni:
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
-
-La [modalità resilienza](https://docs.ovh.com/it/private-cloud/modalita-resilienza/){.external-link} di OVHcloud è una funzionalità utile per testare la massima disponibilità delle macchine virtuali in **Fault Tolerance**.
 
 ## Azioni non supportate e incompatibilità
 

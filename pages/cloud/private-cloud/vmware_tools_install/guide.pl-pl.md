@@ -6,7 +6,7 @@ section: 'Zarządzanie wirtualnymi maszynami'
 legacy_guide_number: g621
 ---
 
-**Ostatnia aktualizacja z dnia 12-07-2019**
+**Ostatnia aktualizacja z dnia 01/02/2022**
 
 ## Wprowadzenie
 
@@ -16,8 +16,7 @@ Rozwiązanie VMware Tools zwiększa wydajność wirtualnej maszyny i pozwala kor
 
 ## Wymagania początkowe
 
-- Posiadanie rozwiązania Hosted Private Cloud
-- Dostęp do interfejsu zarządzania vSphere
+- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
 ## W praktyce
 
@@ -33,7 +32,6 @@ Dzięki temu rozwiązanie VMware Tools jest na bieżąco aktualizowane w taki sa
 
 Jeśli używana przez Ciebie dystrybucja zawiera rozwiązanie *Open VM Tools*, znajdziesz je pod nazwą: *open-vm-tools*
 
-
 Ta metoda instalacji dotyczy przynajmniej następujących wersji GNU/Linux:
 
 - Fedora 19 i wyższe
@@ -45,12 +43,11 @@ Ta metoda instalacji dotyczy przynajmniej następujących wersji GNU/Linux:
 - Oracle Linux 7.0 i wyższe
 - SUSE Linux Enterprise 11 SP4 i wyższe
 
-
 #### Starsze wersje
 
 Zamontuj dysk VMware Tools za pośrednictwem klienta vSphere, kliknij prawym przyciskiem myszy maszynę wirtualną, po czym wybierz „Guest OS” i zatwierdź opcję „Install VMware Tools”:
 
-![](images/tools.png){.thumbnail}
+![Linux](images/tools.png){.thumbnail}
 
 Następnie zamontuj wolumen za pomocą następującego polecenia:
 
@@ -67,7 +64,7 @@ Teraz rozpakuj archiwum VMwareTools do /tmp.
 > ./vmware-install.pl default
 ```
 
-> [!success]
+> [!primary]
 >
 > Jeśli chcesz domyślnie odpowiedzieć "tak" na proponowane odpowiedzi, dodaj „default” jako argument w poleceniu instalacji.
 > 
@@ -78,7 +75,7 @@ Po zakończeniu instalacji dysk VMware Tools zostanie automatycznie odłączony 
 
 Po zamontowaniu wolumenu przy użyciu opcji „Install/Upgrade VMware Tools” odszukaj dysk na pulpicie Twojej wirtualnej maszyny. Kliknij na dysk dwukrotnie, aby rozpocząć instalację VMware Tools:
 
-![](images/windows.jpg){.thumbnail}
+![Windows](images/windows.jpg){.thumbnail}
 
 Uruchomi się wówczas asystent instalacji. Zostaniesz poproszony o zaakceptowanie licencji oraz wybranie typu instalacji (zalecamy pełną instalację).
 

@@ -36,10 +36,10 @@ Para que sus mensajes de correo funcionen, debe tener un servicio de correo acti
 
 Compruebe que los servicios están correctamente operativos:
 
-- Para su **dominio**, acceda a la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione su dominio. Si su dominio ha caducado, se le indicará en la parte superior de la página.
-- Para su **alojamiento web**, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento. La fecha de expiración o de renovación automática del alojamiento se indica en la parte superior de la página.
-- Para un servicio **MXplan**, acceda a la sección `Web Cloud`{.action}, haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
-- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
+- Para su **dominio**, acceda a la sección `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione su dominio. Si su dominio ha caducado, se le indicará en la parte superior de la página.
+- Para su **alojamiento web**, acceda a la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento. La fecha de expiración o de renovación automática del alojamiento se indica en la parte superior de la página.
+- Para un servicio **MXplan**, acceda a la sección `Web Cloud`{.action}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
+- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
 
 ### No consigo enviar correos desde mi cliente de correo
 
@@ -59,17 +59,17 @@ Desde el navegador de su ordenador o desde un smartphone, vaya a la dirección <
 
 ### No consigo conectarme al webmail
 
-Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/)).
+Asegúrese de tener la contraseña correcta. Si lo necesita, puede modificarlo. Compruebe también si la doble autenticación está activada (solo [Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/)).
 
 Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
 - Para un servicio **MXplan**, consulte nuestra guía [Cambiar la contraseña de una dirección de correo MX Plan.](https://docs.ovh.com/us/es/emails/cambiar-contrasena-direccion-correo/)
 
-- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
+- Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña.
 
 ### ¿Hay algún incidente o mantenimiento en curso en mi servicio?
 
-Puede consultar las distintas tareas en curso en <http://travaux.ovh.net/> en este momento.
+Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcloud.com/> en este momento.
 
 - Para **MXplan**, consulte la sección `Correo electrónico.`
 - Para **Exchange**, acceda a la sección `Microsoft.`
@@ -115,6 +115,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |502|Pedido no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
 |503|El servidor ha encontrado una mala secuencia de comandos.|Esto suele deberse a un problema de autenticación. Asegúrese de estar bien autenticado en el servidor SMTP en lo que respecta a la configuración de su cliente de correo.|
 |504|Parámetro de órdenes no implementado|Los parámetros o opciones utilizados al enviar el email con su servidor SMTP son reconocidos pero desactivados en su configuración. Por favor, contacte con su proveedor de servicio.|
+|535| falló durante la autenticación| Se ha generado la información de usuario/contraseña o el envío puede estar bloqueado en su dirección de correo. Compruebe el estado de su dirección de correo electrónico desde el área de cliente de OVHcloud. Un cambio de la contraseña puede desbloquear el envío si la cuenta ha sido bloqueada por spam, consulte nuestra guía [¿Qué hacer con una cuenta bloqueada debido a correo no deseado?](https://docs.ovh.com/us/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/) para más información|
 |550|Acción solicitada no realizada: buzón de correo no disponible|El servidor de correo de destino no ha podido verificar la dirección de correo electrónico utilizada. Esto suele deberse a una dirección de correo electrónico de destino no válida, pero también puede significar que el servidor de correo de destino tenga problemas de cortafuegos o conectividad. Compruebe la dirección de correo electrónico del destinatario e inténtelo de nuevo|
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|

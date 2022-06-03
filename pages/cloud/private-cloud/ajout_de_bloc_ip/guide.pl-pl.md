@@ -3,11 +3,11 @@ title: Dodawanie bloku IP
 slug: dodawanie-bloku-ip
 excerpt: Jak zamówić blok IP dla swojej usługi Private Cloud
 legacy_guide_number: '7766457'
-section: Funkcje OVH
+section: Funkcjonalności OVHcloud
 order: 01
 ---
 
-**Ostatnia aktualizacja z dnia 25-06-2020**
+**Ostatnia aktualizacja z dnia 06-04-2022**
 
 ## Wprowadzenie
 
@@ -17,8 +17,8 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-* Posiadanie [infrastruktury Hosted Private Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
+- Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -53,11 +53,11 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 - Nazwa sieci (informacja widoczna w bazie WHOIS bloku IP).
 - Szacowana liczba klientów (ile klientów będzie docelowo hostowanych pod tymi adresami IP).
 - Opis sieci (informacja widoczna w bazie WHOIS bloku IP).
-- Wykorzystanie \[informacje dotyczące wykorzystania (WWW, SSL, Cloud itp.)].
+- Wykorzystanie (informacje dotyczące wykorzystania (WWW, SSL, Cloud itp.)).
 
 > [!success]
 >
-> Koszt aktywacji bloku wynosi 2 EUR netto za adres IP. Tym samym za blok `/28` zawierający 16 adresów IP otrzymasz formularz zamówienia w wysokości 32 EUR netto do opłacenia przed dostawą.
+> Opłać koszty aktywacji bloku IP przed dostawą.
 >  
 > Adresy IP są odnawiane za darmo.
 >
@@ -90,7 +90,7 @@ Wynik będzie następujący:
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów IP”:
+Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do przeniesienia IP na „parking adresów IP”:
 
 > [!api]
 >
@@ -107,6 +107,10 @@ Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHclo
 Odnośnik do operacji to „removeIpRipeBlock”.
 
 ![operations manager](images/operations.png){.thumbnail}
+
+Następnie IP pojawi się w `Parking adresów IP`{.action}.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Sprawdź również
 

@@ -2,7 +2,7 @@
 title: Crea i tuoi database e i tuoi utenti sul tuo database server
 slug: creare-database-e-utente
 excerpt: Come creare un database sul tuo database server
-section: SQL Privato
+section: CloudDB
 order: 2
 ---
 
@@ -10,7 +10,7 @@ order: 2
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24/08/2020**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
@@ -20,14 +20,14 @@ Un database («DB») permette di conservare elementi cosiddetti dinamici quali, 
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Crea un database
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Database` e infine su `Aggiungi un database`{.action}
 
@@ -48,7 +48,7 @@ Clicca su `Conferma`{.action}.
 
 Per utilizzare un database server OVHcloud è necessario creare utenti con diritti specifici per connettersi a un database. 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Clicca sulla scheda `Utenti e diritti` e poi su `Aggiungi un utente`{.action}
 
@@ -60,7 +60,7 @@ Inserisci un "nome utente" e una "password" e clicca su `Conferma`{.action}.
 
 Per autorizzare un utente ad effettuare azioni su un database, è necessario assegnargli dei diritti.
 
-Per gestire i diritti di ogni utente accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`.
+Per gestire i diritti di ogni utente accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`.
 
 Clicca sui tre puntini `...`{.action} in corrispondenza dell'utente interessato e seleziona `Gestisci i permessi`{.action}.
 
@@ -91,7 +91,7 @@ Ecco la descrizione dei 3 tipi di diritti proposti:
 > un backup personale prima dell'eliminazione.
 > 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action}. Seleziona il nome del tuo database server.
 
 Per eliminare un database sul tuo database server, vai nella scheda `Database`, poi clicca sul pulsante `...`{.action} a destra del database in questione e infine clicca su `Elimina il database`{.action}.
 

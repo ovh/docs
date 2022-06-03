@@ -29,13 +29,13 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
-- Posiadanie co najmniej jednej [domeny](https://www.ovh.pl/domeny/){.external} przypisanej do hostingu
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- Posiadanie co najmniej jednej [domeny](https://www.ovhcloud.com/pl/domains/){.external} przypisanej do hostingu
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
-Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
+Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij sekcję `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu.
 
 ### Włącz firewall aplikacyjny w konfiguracji PHP
 

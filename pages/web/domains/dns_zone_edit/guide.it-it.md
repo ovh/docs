@@ -10,7 +10,7 @@ legacy_guide_number: g1604
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16/02/2021**
+**Ultimo aggiornamento: 01/06/2022**
 
 ## Obiettivo
 
@@ -50,14 +50,14 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, è necessario effettuare la modifica attraverso l'interfaccia del provider che gestisce la configurazione del dominio.
 > 
-> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVH, clicca sulla scheda `Server DNS`{.action} del dominio interessato.
+> - Se il tuo dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione. accedendo allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVHcloud, clicca sulla scheda `Server DNS`{.action} del dominio interessato.
 >
 
 ## Procedura
 
 ### Accedere alla gestione di una zona DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} nel menu a sinistra e seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e seleziona il dominio interessato. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.
 
@@ -167,6 +167,30 @@ Per eliminare più record in una sola volta, seleziona la casella sinistra della
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
+#### Reinizializza la zona DNS
+
+Reinizializza la tua zona DNS ti permette di:
+
+- tornare di default a una configurazione minima
+- tornare a una zona DNS vuota (ad eccezione dei record NS) per definire una configurazione manuale successiva
+
+Nella scheda `Zona DNS`{.action}, clicca su `Reinizializza la zona DNS`{.action} e segui gli step.
+
+![dnszone](images/edit-dns-zone-ovh-reset.png){.thumbnail}
+
+Puoi scegliere tra:
+
+- `Sì, voglio reinizializzare la zona DNS con il numero minimo di record`. Questa opzione ti permette di reindirizzare il tuo dominio e il tuo servizio di posta verso:
+    - uno dei tuoi servizi Web Cloud disponibili nello Spazio Cliente OVHcloud.
+    - il servizio di reindirizzamento OVHcloud, accessibile dalla scheda `Reindirizzamento`{.action} del tuo dominio nelle sezioni `Domini`{.action} ed `Email`{.action}.
+    - la funzione `Personalizzata`. Inserisci il record `A` e/o `MX` che preferisci.
+- `No, ma voglio reinizializzare la mia zona DNS`. La tua zona DNS sarà vuota, ad eccezione dei record NS che saranno automaticamente associati ai server DNS OVHcloud della tua zona DNS.
+
+> [!primary]
+>
+> Prima di reinizializzare la tua zona DNS, assicurati che il tuo dominio non sia associato a servizi in fase di utilizzo, come siti Web o indirizzi email.
+>
+
 ### Tempo di propagazione
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
@@ -178,7 +202,7 @@ Clicca sulla scheda `Zona DNS`{.action} dello Spazio Cliente, clicca sul pulsant
 
 ## Per saperne di più
 
-[Modificare i server DNS di un dominio OVH](../web_hosting_gestisci_il_tuo_server_dns/){.external}
+[Modificare i server DNS di un dominio OVHcloud](../web_hosting_gestisci_il_tuo_server_dns/){.external}
 
 [Aggiungere un record SPF alla configurazione di un dominio](../hosting_condiviso_il_record_spf/){.external}
 

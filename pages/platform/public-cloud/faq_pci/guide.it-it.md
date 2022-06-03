@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: FAQ per le istanze Public Cloud OVHcloud
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
 section: 'Per iniziare'
 order: 3
@@ -67,7 +66,7 @@ No, per poter aumentare la dimensione di un volume è necessario scollegarlo.
 
 ### C'è un numero massimo di volumi aggiuntivi associabili alle istanze?
 
-Sì, a ogni istanza si può associare un massimo di 26 volumi aggiuntivi.
+Sì, a ogni istanza si può associare un massimo di 25 volumi aggiuntivi.
 
 ### In che modo vengono protetti i server?
 
@@ -83,6 +82,12 @@ Il Public Cloud integra una soluzione SDN (Software-defined Network) che permett
 Queste reti private sono basate sulla tecnologia vRack di OVHcloud comune agli altri servizi della società, come Private Cloud o i server dedicati. In questo modo è possibile far comunicare in modo isolato e sicuro tutti gli elementi dell'infrastruttura OVHcloud.
 
 Per maggiori informazioni, consulta la guida [Configurazione della vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
+
+### È possibile modificare l'IP pubblico della tua istanza?
+
+Gli IP pubblici sono assegnati automaticamente alle istanze e non sono quindi modificabili. Per utilizzare il controllo dell'IP pubblico di un'istanza, ti consigliamo di utilizzare un IP Failover. In questo modo, indipendentemente dall'indirizzo pubblico assegnato automaticamente all'istanza, hai la possibilità di aggiungere uno o più IP Failover alla tua istanza.
+
+Per maggiori informazioni, consulta la guida [Acquista un IP Failover](../acquista_un_ip_failover/).
 
 ## Per saperne di più
 

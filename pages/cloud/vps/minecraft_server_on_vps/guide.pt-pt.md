@@ -1,5 +1,5 @@
 ---
-title: 'Como criar um servidor Minecraft num VPS ou num servidor dedicado'
+title: 'Tutorial - Como criar um servidor Minecraft num VPS ou num servidor dedicado'
 slug: criar-servidor-minecraft-em-vps
 excerpt: 'Saiba como instalar o seu próprio servidor Minecraft'
 section: Tutorial
@@ -27,7 +27,7 @@ Pode alugar um servidor Minecraft pré-construído ou configurá-lo você mesmo 
 
 ## Requisitos
 
-- Dispor de um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud, com 2 GB de RAM no mínimo
+- Dispor de um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud,
 - Ter instalado uma distribuição GNU/Linux no servidor
 - Dispor de um acesso administrador (root) via SSH ao seu servidor
 - Ter uma compreensão básica da administração GNU/Linux
@@ -181,4 +181,4 @@ Tenha em conta que este guia de instalação é igualmente válido para um [serv
 
 Para adicionar add-ons, mods e configurar mais detalhadamente o seu servidor Minecraft, queira consultar a seguinte documentação oficial: <https://help.mojang.com/>.
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

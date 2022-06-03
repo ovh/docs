@@ -39,13 +39,13 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
 ### Récupérer les informations réseaux
 
-Connectez-vous à votre espace client, sélectionnez le menu `Instances`{.action} puis cliquez sur `Détails de l'instance`{.action}.
+Connectez-vous à votre espace client, cliquez sur l’onglet `Public Cloud`{.action}, sélectionnez votre projet Public Cloud et cliquez sur la rubrique `Instances`{.action} dans le menu de gauche. Ensuite, cliquez sur le bouton `...`{.action} à droite de l'instance correspondante et cliquez sur `Détails de l'instance`{.action}.
 
-![public-cloud ipv6](images/pcipv61.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
 Toutes les informations nécessaires seront visibles dans la partie **Réseaux**.
 
-![public-cloud ipv6](images/pcipv62.png){.thumbnail}
+![public-cloud ipv6](images/pci2022.1.png){.thumbnail}
 
 ### Exemples de configurations persistantes
 

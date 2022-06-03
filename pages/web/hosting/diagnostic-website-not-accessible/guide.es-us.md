@@ -61,7 +61,7 @@ Una vez completada la renovación del plan, su sitio web estará disponible en u
 
 ### Etapa 2: comprobar los servidores DNS
 
-Para comprobar la validez de sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/), haga clic en [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el dominio en la parte superior izquierda del `Dominios`{.action}.
+Para comprobar la validez de sus [servidores DNS](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/), haga clic en [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el dominio en la parte del `Dominios`{.action}.
 
 #### Situación 1: no hay anomalías en los servidores DNS
 
@@ -120,7 +120,7 @@ En esta etapa, accederá a la dirección IP de su alojamiento y la añadirá a s
 
 Si su sitio web no está alojado en la infraestructura de OVHcloud o si está gestionado por otro proveedor, contacte con el servicio de soporte correspondiente.
 
-Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovh.com/world/es/hosting/), abra la pestaña `Alojamientos`{.action} a la izquierda de su pantalla y seleccione el alojamiento correspondiente.
+Si su sitio web está alojado en uno de nuestros [planes de hosting Cloud](https://www.ovhcloud.com/es/web-hosting/), abra la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`{.action}, copie la dirección IPV4 y/o IPV6 de su dominio.
 

@@ -1,84 +1,95 @@
 ---
-title: 'Guardar una copia de seguridad de una instancia'
+title: 'Guardar una instancia'
 slug: guardar_copia_de_seguridad_de_una_instancia
-excerpt: 'Cómo realizar el backup de una instancia de Public Cloud'
+excerpt: 'Cómo realizar el backup de una instancia de Public Cloud desde el área de cliente de OVHcloud'
 section: 'Gestión de las instancias desde el área de cliente'
+order: 01
 ---
 
-**Última actualización: 22/11/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 28/02/2022**
 
 ## Objetivo
 
-En cualquier momento, podrá crear una copia de seguridad de una instancia desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Con ella, podrá restaurar su instancia con una configuración anterior o crear una nueva.
+Puede crear una copia de seguridad única de una instancia o configurar una planificación para automatizar las copias de seguridad de sus instancias. Las copias de seguridad pueden utilizarse para restaurar su instancia a un estado anterior o para crear una nueva instancia idéntica.
 
-**Solo con unos clics, obtendrá una copia de seguridad de una instancia de Public Cloud.**
+**Esta guía explica cómo crear copias de seguridad manuales y automáticas de una instancia de Public Cloud.**
 
 ## Requisitos
 
-- [Haber creado una instancia de Public Cloud desde su cuenta de cliente](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- Tener una instancia de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud.
+- Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
 ### Crear una copia de seguridad de una instancia
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}seleccione la pestaña Public Cloud y luego, a la sección`Instancias`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y abra su proyecto de `Public Cloud`{.action}. En el menú de la izquierda, haga clic en `Instances`{.action}.
 
-Haga clic en los `...`{.action} a la derecha de la instancia seleccionada y por último, en `Crear un backup`{.action}.
+Haga clic en el botón `..`{.action} a la derecha de la instancia y seleccione `Crear un backup`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup1.png){.thumbnail}
 
-Ingrese un nombre para la copia de seguridad en la siguiente página.
+Introduzca un nombre para la copia de seguridad en la página siguiente. Lea la información sobre los precios y haga clic en `Confirmar`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup2.png){.thumbnail}
 
-Una vez terminada, la copia se encontrará disponible en la sección `Instancia de backup`{.action}.
+Una vez completada la copia de seguridad, esta estará disponible en la sección `Instance Backup`{.action} .
 
 ![public-cloud-instance-backup](images/createbackup3.png){.thumbnail}
 
 ### Crear una copia de seguridad automatizada de una instancia
 
-En la sección `Instancias`{.action}, seleccione `Crear un backup automatizado`{.action} en las acciones disponibles de la instancia por guardar.
+Haga clic en el botón `...`{.action} a la derecha de la instancia y seleccione `Crear una copia de seguridad automatizada`{.action}.
 
 ![public-cloud-instance-backup](images/createbackup4.png){.thumbnail}
 
-Deberá ingresar varios datos en la siguiente página:
+Podrá configurar los siguientes parámetros de backup:
 
 #### **El workflow (flujo de trabajo)** 
 
-Hoy, solo existe un workflow, el que hará una copia de seguridad de la instancia y del volumen principal de esta.
+Actualmente solo existe un flujo de trabajo. Creará una copia de seguridad para la instancia y su volumen principal.
 
 ![public-cloud-instance-backup](images/createbackup5.png){.thumbnail}
 
 #### **El recurso** 
 
-Basta con seleccionar la instancia correspondiente a la copia de seguridad.
+Puede seleccionar la instancia a la que quiere realizar el backup.
 
 ![public-cloud-instance-backup](images/createbackup6.png){.thumbnail}
 
-#### **La planificación** 
+#### **Planificación** 
 
-El objetivo es definir la frecuencia de las copias de seguridad. Se proponen dos opciones por defecto:
+Puede definir una planificación de backup personalizada o elegir una de las frecuencias predeterminadas:
 
-* Una copia de seguridad todos los días con un historial de siete días como máximo.
-* Una copia de seguridad todos los días con un historial de catorce días como máximo.
+- Backup diario con retención de las 7 últimas copias de seguridad
+- Backup diario con retención de las 14 últimas copias de seguridad
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 
-    
-#### **La denominación** 
+#### **El nombre** 
 
-Solo se trata de asignar un nombre a la copia de seguridad.
+Escriba un nombre para la planificación de la copia de seguridad automática. Lea la información sobre los precios y cree la planificación haciendo clic en el botón `Crear`{.action}.
  
 ![public-cloud-instance-backup](images/createbackup8.png){.thumbnail}
 
-Una vez creada, la copia de seguridad estará disponible en la sección `Workflow Management`{.action} :
+### Gestión de las copias de seguridad y los planes
+
+Las planificaciones pueden crearse y eliminarse en la sección `Workflow Management`{.action} de su área de cliente de Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup9.png){.thumbnail}
 
-Las copias de seguridad estarán disponibles en la sección `Instancia de Backup`{.action} y se facturarán como tal.
+Las copias de seguridad de sus instancias se gestionan en la sección `Instance Backup`{.action} del área de cliente de Public Cloud.
 
+![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+Esta guía explica cómo utilizar las copias de seguridad para clonar o restaurar instancias en [esta guía](https://docs.ovh.com/us/es/public-cloud/crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot/).
 
 ## Más información
+
+[Crear o restaurar un servidor virtual a partir de un snapshot](https://docs.ovh.com/us/es/public-cloud/crear_o_restaurar_un_servidor_virtual_a_partir_de_un_snapshot/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

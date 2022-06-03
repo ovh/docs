@@ -23,7 +23,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](https://www.ovh.co.uk/web-hosting/){.external})
+- an MX Plan email address (included in the MX Plan solution and [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external})
 - credentials for the OVHcloud email address you want to configure
 - credentials for the Gmail account you want to configure the OVHcloud email address on
 
@@ -39,7 +39,7 @@ You can configure MX Plan email addresses on email clients and online interfaces
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
 
-Once you have logged in to the interface, click on the cogwheel icon, then `Settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}.
+Once you have logged in to the interface, click on the cogwheel icon, then `See all settings`{.action}. On the page that pops up, click on `Accounts and Import`{.action}.
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 

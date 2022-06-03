@@ -51,7 +51,7 @@ Teniendo en cuenta esta posibilidad, OVHcloud pone a su disposición dos procedi
 
 #### 1. Contratar un alojamiento web con OVHcloud
 
-Puede contratar su alojamiento en el [sitio web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
+Puede contratar su alojamiento en el [sitio web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}. No solicite todavía la transferencia del dominio; espere a más adelante. Una vez recibido el pago, se iniciará la instalación del alojamiento. Recibirá un mensaje de correo electrónico cuando la instalación haya finalizado.
 
 #### 2. Transferir el sitio web
 
@@ -69,7 +69,7 @@ Al no haber cambiado todavía la configuración del dominio, el alojamiento util
 
 #### 3. Crear las direcciones de correo en OVH
 
-Una vez transferido el sitio web, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento que acaba de contratar (el nombre será el mismo que el de su dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. A continuación, siga los pasos que se indican.
+Una vez transferido el sitio web, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento que acaba de contratar (el nombre será el mismo que el de su dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. A continuación, siga los pasos que se indican.
 
 Al no haber cambiado todavía la configuración del dominio, los nuevos mensajes se seguirán recibiendo en las direcciones de correo que tiene con su actual proveedor. Asimismo, deberá seguir utilizando dichas direcciones para enviar mensajes de correo.
 
@@ -138,7 +138,7 @@ Al no haber cambiado todavía la configuración del dominio, el alojamiento util
 
 #### 3. Crear las direcciones de correo en OVHcloud
 
-**Una vez finalizada la transferencia del dominio**, recibirá un mensaje de correo electrónico informándole de que el servicio de correo asociado a su alojamiento web acaba de ser instalado. A continuación, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento web que acaba de contratar (el nombre será el mismo que el del dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. Siga las indicaciones para finalizar la creación.
+**Una vez finalizada la transferencia del dominio**, recibirá un mensaje de correo electrónico informándole de que el servicio de correo asociado a su alojamiento web acaba de ser instalado. A continuación, deberá [crear en OVHcloud las mismas direcciones](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external} que utiliza con su actual proveedor (es decir, que deberán tener el mismo nombre). Desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Correo electrónico`{.action} y seleccione el alojamiento web que acaba de contratar (el nombre será el mismo que el del dominio). Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}. Siga las indicaciones para finalizar la creación.
 
 Al no haber cambiado todavía la configuración del dominio, los nuevos mensajes se seguirán recibiendo en las direcciones de correo que tiene con su actual proveedor, en caso de que la resolución DNS siga activa. Asimismo, deberá seguir utilizando dichas direcciones para enviar mensajes de correo.
 

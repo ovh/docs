@@ -23,7 +23,7 @@ At the end of the tutorial, you will succeed to read CSV file from OVHcloud Obje
 ## Requirements 
 - Access to the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](https://docs.ovh.com/ie/en/public-cloud/create_a_public_cloud_project/) for details.)
 - Data Processing activated (see [How to activate the Data Processing](../activation){.external} for details.)
 
 
@@ -284,4 +284,5 @@ You can read data from multiple sources, like Object Storage via AWS S3 API prot
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/) and [pyspark's documentation](https://spark.apache.org/docs/latest/api/python/index.html).
 
-You can send your questions, suggestions or feedbacks in our community of users in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+

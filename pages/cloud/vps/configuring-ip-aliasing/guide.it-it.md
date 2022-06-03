@@ -9,7 +9,7 @@ section: 'Rete e IP'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 27/04/2021**
+**Ultimo aggiornamento: 30/11/2021**
 
 ## Obiettivo
 
@@ -49,7 +49,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 |NETWORK_INTERFACE|Nome dell'interfaccia di rete|*eth0*, *ens3*|
 |ID|ID dell'alias IP, che inizia con *0* (in base al numero di indirizzi IP aggiuntivi da configurare)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: disattiva la configurazione automatica della rete
 
@@ -132,12 +132,17 @@ Apri il file di configurazione di rete per modificarlo con questo comando:
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Non modificare le righe esistenti nel file. Aggiungi il tuo indirizzo IP Failover seguendo l'esempio seguente:
+Non modificare le linee esistenti nel file di configurazione. Aggiungi il tuo indirizzo IP Failover aggiungendo un secondo blocco di configurazione per l'interfaccia pubblica, come nell'esempio seguente:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:

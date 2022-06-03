@@ -16,7 +16,7 @@ With an OVH Web Hosting plan, you get a storage space to host your websites on. 
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} (please note that this does not work with Cloud Web)
+- a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} (please note that this does not work with Cloud Web)
 - Depending on which method you use, you must be able to manage the Web Hosting plan from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, or have the FTP user password required to access your storage space. 
 
 ## Instructions
@@ -46,7 +46,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 
 ### Restore the storage space via the OVH Control Panel.
 
-First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Web Hosting`{.action}, then select the plan concerned. Go to the `FTP - SSH`{.action} tab, and click `Retrieve backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 

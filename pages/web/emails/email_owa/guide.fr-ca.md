@@ -10,9 +10,9 @@ order: 04
 
 ## Un seul guide OWA pour toutes nos solutions e-mail
 
-Les comptes e-mail inclus dans votre [Hébergement Web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/) vous permettent d’envoyer et de recevoir vos e-mails depuis l’appareil et le client de votre choix.
+Les comptes e-mail inclus dans votre [Hébergement Web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) vous permettent d’envoyer et de recevoir vos e-mails depuis l’appareil et le client de votre choix.
 
 Pour accéder à un compte de n'importe où via un navigateur web, OVHcloud fournit un client de messagerie en ligne appelé Outlook Web Application (OWA).
-<br>Notre [page de connexion au webmail](https://www.ovh.com/ca/fr/mail/) est le point d'accès unique à l'interface OWA respective pour tous les comptes de messagerie actifs sur MX Planet [Hosted Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/).
+<br>Notre [page de connexion au webmail](https://www.ovh.com/ca/fr/mail/) est le point d'accès unique à l'interface OWA respective pour tous les comptes de messagerie actifs sur MX Planet [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/).
 
 Consultez [ce guide](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/) pour en savoir plus sur les fonctionnalités générales d'OWA.

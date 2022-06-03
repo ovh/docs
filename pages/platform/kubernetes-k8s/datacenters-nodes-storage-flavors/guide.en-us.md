@@ -5,7 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated June 29<sup>th</sup>, 2021.**
+**Last updated February 16th, 2022.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
@@ -14,37 +14,42 @@ section: Technical resources
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.  
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 
-Currently the service is available in GRA (Western Europe), SBG (Central Europe), WAW (Eastern Europe), BHS (North America), SGP (Southeast Asia) and SYD (Oceania) regions. OVHcloud US customers can also deploy the service in both our East and West American datacenters. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
+Currently the service is available in all OVHcloud Public Cloud geographies.
+Note that projects with older regions (such as SBG1 or GRA1 for example) will be invited to transparently activate the latest regions in this zone to benefit from Managed Kubernetes Service.
+
+OVHcloud US customers can also deploy the service in both our East and West American datacenters. 
 
 ### Available worker nodes flavors
 
-When adding a worker node, Managed Kubernetes Service will deploy a managed Public Cloud instance in the same region/datacenter. The worker nodes types correspond to the standard OVH Public Cloud catalog offered in this region and are billed at standard price.
+When adding a worker node, Managed Kubernetes Service will deploy a managed Public Cloud instance in the same region/datacenter. The worker nodes types correspond to the standard OVHcloud Public Cloud catalog offered in this region and are billed at standard price.
 
-We currently support 3 types of instances with guaranteed and constant resources:
+We currently support several types of instances with guaranteed and constant resources:
 
-* DISCOVERY (`D2-4` and `D2-8` only)
 * GENERAL PURPOSE (`B2-*`)
 * CPU ORIENTED (`C2-*`)
 * RAM ORIENTED (`R2-*`)
-* IOPS ORIENTED (`i1-*`)
+* GPU ORIENTED (`T1-*`)
+* DISCOVERY (`D2-4` and `D2-8` only)
+* IOPS ORIENTED (`Id1-*`)
 
 Each family offers contains different flavors, consisting of a five amount of vCores, RAM and local storage.  
 For more information, please refer to the following page: [OVHcloud Public Cloud instances](https://www.ovhcloud.com/en/public-cloud/prices/)
 
 Note that we are both compatible with the standard and flex variations (Flex offering the same disk size for each flavor).
 Note however that Managed Kubernetes Service does not currently offer worker nodes resize.  
+
 Using our API, you shall use the flavor name such as `b2-7` as parameter of the POST `/cloud/project/{serviceName}/kube/{kubeId}/node` endpoint.  
 This is detailed in the [quickstart with OVH API](../deploying-hello-world-ovh-api/) guide.
 
-GPU (`T1-*`) instances are note yet supported, because they require specific software components for Docker to leverage the GPU. We will support those in the future.
+GPU (`T1-*`) instances are now supported! If you want to know [how to deploy GPU applications on Kubernetes Managed Service](../deploying-gpu-application), please read our tutorial.
 
 ### Available persistent Storage Classes
 
 When adding a persistent volume though Kubernetes API (or `kubectl`), it will actually be deployed using Public Cloud additional disks (Cinder Volumes). We support the following Storage Classes:
 
-* `csi-cinder-high-speed` compliant with Managed Kubernetes Service after to the `1.15.7` release
-* `csi-cinder-classic` compliant with Managed Kubernetes Service after to the `1.15.7` release
+* `csi-cinder-high-speed` compliant with Managed Kubernetes Service after `1.18.*` release
+* `csi-cinder-classic` compliant with Managed Kubernetes Service after `1.18.*` release
 
-All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, `cinder-high-speed` and `csi-cinder-high-speed` uses SSD, while `cinder-classic` and `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+All these `Storage Classes` are based on Cinder, the OpenStack block storage service. The difference between them is the associated physical storage device, and the fact that `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. This is detailed in the [Persistent Volumes ](../ovh-kubernetes-persistent-volumes/) guide.
 
-We will support future classes as soon they are made available in OVH Public Cloud.
+We will support future classes as soon they are made available in OVHcloud Public Cloud.

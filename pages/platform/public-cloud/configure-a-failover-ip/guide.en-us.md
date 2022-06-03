@@ -21,14 +21,14 @@ You may need to configure failover IP addresses on your instances, for example i
 
 ## Requirements
 
-- a [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en/bare-metal/ip/) or a failover IP block
-- administrative access (root) via SSH or GUI to your instance
-- basic networking and administration knowledge
+- A [Public Cloud instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- A [failover IP address](https://www.ovhcloud.com/en/bare-metal/ip/) or a failover IP block
+- Administrative access (root) via SSH or GUI to your instance
+- Basic networking and administration knowledge
 
 ## Instructions
 
-The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (RDP for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
@@ -161,7 +161,11 @@ sudo netplan apply
 Repeat this procedure for each failover IP address.
 
 
-### Windows Server 2016
+### Windows Server (2016)
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section, and select the Public Cloud project concerned.
+
+Open `Instances`{.action} in the left-hand menu and click on the name of your instance. Switch to the tab `VNC console`{.action}.
 
 #### Step 1: Verify the network configuration
 
@@ -273,7 +277,6 @@ Enter your failover IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP addre
 Back in the section "IP Addresses", verify that the failover IP address was added correctly.
 
 ![current IP configuration](images/pleskip4-4.png){.thumbnail}
-
 
 
 ### Troubleshooting

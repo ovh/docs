@@ -3,11 +3,12 @@ title: Zarządzanie Twoimi archiwami za pomocą Rsync
 slug: pca/rsync
 excerpt: Dowiedz się, jak uzyskać dostęp do Twoich archiwów Public Cloud za pomocą Rsync
 section: Public Cloud Archive
+order: 090
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
-> 
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+>
 
 **Ostatnia aktualizacja z dnia 08-12-2020**
 
@@ -73,7 +74,6 @@ Ponieważ serwer Rsync został skopiowany do działania z API Swift, opcje te zo
 
 > —inplace: Zamiast metody domyślnej polegającej na utworzeniu nowej kopii pliku, a następnie na jej przeniesienie po zakończeniu procesu, Rsync zapisuje zaktualizowane dane bezpośrednio do pliku docelowego.
 >
-> -W, --whole-file: Wyłącza algorytm transferu delta Rsync i wysyła cały plik.
 
 Ponadto tylko jedna podgrupa opcji jest dostępna dla klienta:
 

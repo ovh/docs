@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie die Runtime Engines Ihres Hostings verwalte
 section: Webhosting-Konfiguration
 ---
 
-**Letzte Aktualisierung am 23.01.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 
@@ -15,14 +19,14 @@ Bei Cloud Web stehen für Ihr Projekt verschiedene Entwicklungssprachen zur Verf
 
 ## Voraussetzungen
 
-- Sie haben ein [Cloud Web Hosting](https://www.ovh.de/hosting/cloud-web.xml) in Ihrem Kunden-Account.
+- Sie haben ein [Cloud Web Hosting](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 Bei Cloud Web können Sie je nach Projekt eine oder mehrere Runtime Engines auswählen. Die Entscheidung, welche Runtime Engine Sie verwenden sollten, hängt davon ab, was Sie einrichten möchten. 
 
-Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite] (https://www.ovh.de/hosting/cloud-web.xml) aufgeführt. 
+Falls Sie dies noch nicht getan haben, **vergewissern Sie sich jetzt, dass Ihr Projekt mit Ihrem Cloud Web Hosting kompatibel ist**. Die verfügbaren Programmiersprachen sind auf [unserer Webseite] (https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) aufgeführt. 
 
 Wenn Sie ermittelt haben, welche Runtime Engine(s) Sie verwenden möchten, können Sie mit den nachstehenden Schritten beginnen.
 
@@ -38,7 +42,7 @@ Es wird eine Tabelle angezeigt, die alle aktuell zu Ihrem Cloud Web Hosting hinz
 
 Es gibt verschiedene Möglichkeiten, um die Runtime Engines Ihres Cloud Web Hostings zu verwalten. Sie können:
 
-- eine Runtime Engine hinzufügen oder ändern (die maximale Anzahl der Runtime Engines ist abhängig vom gewählten [Hosting Angebot](https://www.ovh.de/hosting/cloud-web.xml)).
+- eine Runtime Engine hinzufügen oder ändern (die maximale Anzahl der Runtime Engines ist abhängig vom gewählten [Hosting Angebot](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/)).
 - eine Engine als Standardauswahl festlegen.
 - eine Runtime Engine löschen.
 
@@ -54,7 +58,7 @@ Um eine Runtime Engine hinzuzufügen oder zu ändern, gehen Sie in den Tab `Runt
 - **Wenn Sie eine Engine hinzufügen möchten**\: Klicken Sie über der Tabelle auf `Aktionen`{.action} und dann auf `Runtime Engine hinzufügen`{.action}.
 - **Wenn Sie die vorhandene Engine ändern möchten**\: Klicken Sie rechtes neben der betreffenden Engine auf `...`{.action} und dann auf `Ändern`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie entsprechend der ausgewählten Engine fort:
 
@@ -72,7 +76,7 @@ Geben Sie im angezeigten Fenster die notwendigen Informationen ein. Fahren Sie e
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{.action}. Stellen Sie sicher, dass die Runtime Engine von den gewünschten Multisites verwendet wird. Gehen Sie hierzu zu Schritt 3: [Runtime Engine mit einer Multisite verbinden](./#schritt-3-runtime-engine-mit-einer-multisite-verbinden_2).
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 
@@ -122,7 +126,7 @@ Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Bestätigen`{
 > [!primary]
 > In unserem Beispiel wurden nur die PHP- und Node.js-Engines erstellt. Möglicherweise verwenden Sie in Ihrem Projekt Ruby oder Python. In diesem Fall sind die unten beschriebenen Operationen ebenfalls anwendbar.
 > 
-> Die Verwendung von zwei parallelen Ausführungsmodulen auf Ihrem Cloud Web Hosting hängt von [Ihrem Angebot](https://www.ovh.de/hosting/cloud-web.xml) ab.
+> Die Verwendung von zwei parallelen Ausführungsmodulen auf Ihrem Cloud Web Hosting hängt von [Ihrem Angebot](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) ab.
 > 
 
 Wenn Sie über die für Ihr Projekt notwendigen Runtime Engines verfügen, vergewissern Sie sich, dass diese korrekt mit Ihren Multisites verbunden sind. Gehen Sie hierzu in den Tab `Multisite`{.action} des betreffenden Cloud Web Hostings. 

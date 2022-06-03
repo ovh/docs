@@ -2,8 +2,8 @@
 title: MongoDB - Connect with PHP
 excerpt: Connect to your Public Cloud Databases for MongoDB using the PHP programming language
 slug: mongodb/connect-php
-section: MongoDB
-order: 101
+section: MongoDB - Guides
+order: 301
 ---
 
 **Last updated 13th September 2021**
@@ -88,7 +88,7 @@ This way we can help prevent intrusive connection attempts.
 
 Click to authorize a new IP, and enter the previously found IP of your PHP environment or Web Hosting plan. In our case we will enter 109.190.200.59.
 
-![Add an IP](images/ip_whitelist.png){.thumbnail}
+![Add an IP](images/ip_authorize.png){.thumbnail}
 
 > [!primary]
 >
@@ -176,7 +176,7 @@ Object(MongoDB\Driver\Manager)#1 (2) {
 
 If the **var_dump($m) is empty, you will have to analyze your PHP Environment and MongoDB compatibility matrix linked previously, and throwables :
 
-- *Connection timeout* : usually due to incorrect IP whitelisting.
+- *Connection timeout* : usually due to incorrect IP authorization.
 - *Invalid namespace* : the Service URI you entered may have a typo inside.
 
 Once connected, you can perform multiple operations, for example a bulk insert and a **find()** inside a collection :

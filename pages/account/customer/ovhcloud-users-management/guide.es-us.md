@@ -70,7 +70,7 @@ Se abrirá una ventana, donde deberá completar los campos obligatorios. Haga cl
 
 A continuación, el usuario obtendrá su identificador conformado por el id. numérico de su cuenta (que se indica en el menú «Gestión de usuarios») y su nombre de usuario, con los dos valores separados por una barra (/).
 
-Por ejemplo: **1234-567-89/john.smith**.
+Por ejemplo: **1234-567-89/johnsmith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 

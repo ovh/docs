@@ -7,7 +7,7 @@ order: 3
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 24/02/2021**
@@ -26,7 +26,7 @@ Wraz z ofertą VPS OVHcloud możesz dodać bezpieczną przestrzeń dyskową jako
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer z listy menu po lewej stronie pod `Prywatnymi serwerami wirtualnymi`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 ### Zamów dodatkowy dysk
 
@@ -153,7 +153,7 @@ tmpfs           385M     0  385M   0% /run/user/1000
 Poprzedni etap nie jest trwały, ponieważ dysk zostanie odłączony, jeśli serwer VPS zostanie zrestartowany. Aby zautomatyzować proces montowania, plik `fstab` musi zostać zmodyfikowany.
 >
 
-Po pierwsze, pobierz UID (ID bloku) urządzenia:
+Po pierwsze, pobierz UUID (ID bloku) urządzenia:
 
 ```
 $ sudo blkid
@@ -175,7 +175,7 @@ Otwórz `/etc/fstab` z edytorem tekstu:
 $ sudo nano /etc/fstab
 ```
 
-Dodaj poniższą linię do pliku i zastąp UID Twoją:
+Dodaj poniższą linię do pliku i zastąp UUID Twoją:
 
 ```
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0

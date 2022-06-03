@@ -23,19 +23,19 @@ For example: you can automatically delete emails tagged as spam by our spam prot
 
 ## Requirements
 
-- an MX Plan email solution or a [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} 
+- an MX Plan email solution or a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action}.
 
-Select the domain name from the `Emails`{.action} section in the services bar on the left-hand side. Switch to the tab `Emails`{.action}.
+Select the domain name from the `Emails`{.action} section. Switch to the tab `Emails`{.action}.
 
 In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
-![emails](images/img_3239.jpg){.thumbnail}
+![emails](images/img_3239.png){.thumbnail}
 
 A new window will open which contains the list of filters currently configured for this email address. To add one, click on the button `Add a Filter`{.action}.
 

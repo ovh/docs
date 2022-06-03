@@ -6,55 +6,62 @@ legacy_guide_number: g1956
 section: Tutoriale
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+>
 
-## 
+**Ostatnia aktualizacja z dnia 04/01/2022**
+
+## Wprowadzenie
+
 Możliwe, że będziesz chciał sprawdzić prędkość dysków w ramach testów, na przykład w celu porównania poszczególnych dysków lub, żeby sprawdzić, czy prędkość jest prawidłowa.
 
-Przewodnik ten wyjaśnia, jak przetestować liczbę wejść / wyjść na sekundę (IOPS), które są możliwe do zrealizowania przez dysk (dyski instancji oraz dodatkowe dyski).
+**Przewodnik ten wyjaśnia, jak przetestować liczbę wejść / wyjść na sekundę (IOPS), które są możliwe do zrealizowania przez dysk (dyski instancji oraz dodatkowe dyski).**
 
 
-## Wstępne wymagania
+## Wymagania początkowe
 
-- Instancja
-- Dodatkowy dysk
+- Posiadanie [instancji Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}.
+- Dostęp administracyjny (root) do tej instancji przez SSH (tylko dla Linux)
 
+## W praktyce
 
+### Zainstaluj polecenie testowe
 
+Komenda, której potrzebujesz do weryfikacji prędkości dysku nazywa się `fio`. Domyślnie nie jest wyświetlany na Twoim serwerze.
 
-## Instalacja
-Polecenie, które należy uruchomić nie jest domyślnie dostępne. Należy więc najpierw je zainstalować:
-
+Aby zainstalować `fio`, połącz się przez SSH z Twoją instancją i wprowadź następujące polecenie:
 
 ```
-root@serveur:~$ apt-get install fio
+root@server:~$ apt-get install fio
 ```
 
+### Sprawdź prędkość dysku
 
-
-
-## Test
 Aby przetestować dyski, wykonaj to polecenie:
 
 
 ```
-root@serveur:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
+root@server:~$ fio --name=rand-write --ioengine=libaio --iodepth=32 --rw=randwrite --invalidate=1 --bsrange=4k:4k,4k:4k --size=512m --runtime=120 --time_based --do_verify=1 --direct=1 --group_reporting --numjobs=1
 ```
 
 
-Uwaga
-Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
-Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO).
+> [!primary]
+>
+> Należy dostosować argument --numjobs do liczby CPU, którą dysponuje Twoja instancja. 
+>
+> Listę argumentów i funkcji można odnaleźć w [podręczniku fio](https://github.com/axboe/fio/blob/master/HOWTO).
+>
+
 Aby sprawdzić wydajność dodatkowego dysku, należy przejść do jednego z katalogów punktu montażu.
 
 
 ```
-root@serveur:~$ cd /mnt/disk
+root@server:~$ cd /mnt/disk
 ```
 
+### Analizuj dane
 
-
-
-## Analiza
 Po wykonaniu tego polecenia, otrzymasz wynik podobny do tego:
 
 
@@ -92,7 +99,6 @@ Disk stats (read/write):
 vda: ios=0/300294, merge=0/1455, ticks=0/7431952, in_queue=7433124, util=99.05%
 ```
 
-
 Informacja, która nas interesuje, odnosi się do IOPS. Można ja znaleźć w 6 linii wyniku:
 
 
@@ -100,10 +106,11 @@ Informacja, która nas interesuje, odnosi się do IOPS. Można ja znaleźć w 6 
 write: io=428032KB, bw=3566.2KB/s, iops=891, runt=120031msec
 ```
 
-
 W tym przypadku możemy zobaczyć, że wydajność dysku to 891 iops.
 
 
-## 
-[Przewodniki Cloud]({legacy}1785)
+## Sprawdź również
 
+[Zarządzanie wolumenem instancji Public Cloud](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/)
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

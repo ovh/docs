@@ -30,13 +30,13 @@ L'insieme preconfigurato di regole di base, il "Core Rule Set" (CRS) della nostr
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external} attivo
-- Disporre di almeno un [dominio](https://www.ovh.it/domini/){.external} associato all'hosting
+- Disporre di un piano di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} attivo
+- Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/){.external} associato all'hosting
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Nel menu a sinistra, clicca su `Hosting`{.action} e poi su quello corrispondente.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Clicca su `Hosting`{.action} e poi su quello corrispondente.
 
 ### Attiva il firewall applicativo nella configurazione PHP
 

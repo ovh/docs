@@ -16,8 +16,8 @@ Considering best practices, OVHcloud Public Cloud instances require a different 
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
 ## Instructions
@@ -41,30 +41,30 @@ Login authentication on Windows instances requires only username and password.
 
 From a Mac computer or a device with a Linux OS installed, first open the command line application (Terminal). Verify that you have a ".ssh" folder in your $HOME directory. If the folder does not exist, create it:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Use the following command to create a 4096 bit RSA key:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 Using the "-t" option with this command allows you to specify a different encryption method, for example:
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 The command will prompt you to save the newly created key in the standard file:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-You can accept the default file by pressing "Enter" (↩). Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
+You can accept the default file by pressing "Enter". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 In order to view and export your public key, use the "cat" command on your ".pub" key file and copy the output:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >In a MacOS Terminal, you can also use the "pbcopy" and "pbpaste" commands to handle key strings. For example, use this command to copy the key from the file "id_rsa.pub" to the clipboard:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -152,6 +152,8 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 
 ### Step 3: Creating an instance
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
@@ -237,21 +239,21 @@ You can now access your instance through a command line interface (Terminal) via
 
 Type the passphrase for your private key when prompted. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Since you are logged in with root privileges ("sudo user"), you can immediately enter commands to perform administrative tasks. It is advisable to first change your password:
 
-```sh
-$ sudo passwd
+```bash
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
 You can now use these credentials to log in via the `VNC console`{.action} in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Next, switch to the "root" user and set a secure password, then switch back to the previous user:
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:
@@ -321,7 +323,7 @@ For example, Remmina Remote Desktop Client is a compatible application which sho
 
 ![linux remote](images/linux-connect-01.png){.thumbnail}
 
-Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "Enter" (↩).
+Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "Enter".
 
 ![linux remote](images/linux-connect-02.png){.thumbnail}
 

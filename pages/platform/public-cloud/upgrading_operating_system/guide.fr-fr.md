@@ -6,7 +6,7 @@ section: 'Tutoriels'
 order: 14
 ---
 
-**Dernière mise à jour le 09/07/2021**
+**Dernière mise à jour le 07/02/2022**
 
 ## Objectif
 
@@ -28,6 +28,60 @@ Ce tutoriel décrit les étapes à suivre pour mettre à jour un système d'expl
 - Avoir effectué [une sauvegarde de votre instance](../sauvegarder-une-instance/)
 
 ## En pratique
+
+### Debian
+
+Avant de procéder à la mise à jour de la version majeure de votre OS, assurez-vous de mettre à jour les versions les plus récentes de tous les paquets installés sur sa version actuelle :
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> L'étape suivante est facultative.
+> Vous devez cependant examiner attentivement les paquets qui ne sont plus nécessaires sur le système. Sinon, la commande suivante peut endommager le système. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Certaines mises à jour pouvant nécessiter un redémarrage, vous devez d'abord redémarrer avant de commencer la mise à jour :
+
+```bash
+$ sudo systemctl reboot
+```
+
+Après le redémarrage, mettez à jour le répertoire /etc/apt/sources.list pour cibler la prochaine version (dans cet exemple, nous passons de Buster à Bullseye) :
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Maintenant que la prochaine version est ciblée, vous pouvez procéder à la mise à jour ainsi qu'au redémarrage final :
+
+> [!primary]
+> Des fenêtres contextuelles vous inviteront peut-être à redémarrer vos services. Répondez par l'affirmative.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Vérifiez que la mise à jour a fonctionné :
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
 
 ### Ubuntu
 

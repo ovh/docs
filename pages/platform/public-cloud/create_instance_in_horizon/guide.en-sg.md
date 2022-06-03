@@ -3,10 +3,10 @@ title: 'Creating an Instance via the Horizon interface'
 slug: create-an-instance-in-horizon
 excerpt: 'Find out how to create an Instance via the Horizon interface'
 section: Horizon
-order: 4
+order: 03
 ---
 
-**Last updated 27th March 2018**
+**Last updated 30th December 2021**
 
 ## Objective
 
@@ -16,12 +16,12 @@ You can create multiple Instances directly in the Horizon interface, and also co
 
 ## Requirements
 
-- a [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/){.external} project, created via your OVHcloud account
-- [access to the Horizon interface](../configure_user_access_to_horizon/){.external} 
+- A [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account
+- [Access to the Horizon interface](../horizon/)
 
 ## Instructions
 
-To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our guide to [Accessing the Horizon interface](../configure_user_access_to_horizon/){.external}.
+To start creating an Instance, log in to the Horizon interface. If you are unsure about how to do this, please refer to our [guide](../configure_user_access_to_horizon/).
 
 Next, click `Compute`{.action} in the left-hand menu, then `Instances`{.action}.
 
@@ -37,7 +37,7 @@ You will then need to fill in the information requested. If you need to do so, y
 |---|---|
 |Availability zone|Leave "nova" (default choice).|
 |Instance name|Specify the name you want for the Instance that will be launched.|
-|Template|Select the type of Instance to launch.|
+|Template (Flavor) |Select the type of Instance to launch.|
 |Count|Specify the number of Instances to launch.|
 |Instance launch source|Select the source for launching an instance (e.g. "Launch from an image" or "Launch from a snapshot").|
 |Image name|Select the Instance image (only when launching from an image).|
@@ -50,6 +50,11 @@ You will then need to fill in the information requested. If you need to do so, y
 |Script file|Click ‘browse’ to select the post-installation script.|
 |Disk partitioning|Choose between "automatic" or "manual".|
 |Configuration disk|Configure OpenStack to write metadata on to a specific configuration disk that will be attached to the Instance when it is launched.|
+
+> [!warning] 
+>
+> Although the "Key Pair" field is not mandatory in the Horizon interface when creating an instance, registering an SSH key is absolutely necessary to be able to connect to an instance. Without an SSH key, you will be required to reboot the instance in rescue mode to either create a password or add an SSH key to the appropriate file.
+>
 
 Once you are ready to launch the Instances, click the `Launch Instance`{.action} button.
 

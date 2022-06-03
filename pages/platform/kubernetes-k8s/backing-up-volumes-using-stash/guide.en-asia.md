@@ -2,7 +2,8 @@
 title: Backing-up Persistent Volumes using Stash
 excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
-section: Tutorials
+section: Storage
+order: 3
 ---
 
 <style>
@@ -27,9 +28,9 @@ section: Tutorials
  }
 </style>
 
-**Last updated July 7<sup>th</sup>, 2020.**
+**Last updated December 21 2021.**
 
-In this tutorial, we are using [Stash](https://stash.run/){.external} to backup and restore persistent volumes on a OVHcloud Managed Kubernetes cluster.
+In this tutorial, we are using [Stash](https://stash.run/){.external} to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
 Stash is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes persistent volumes.
 
@@ -171,6 +172,12 @@ secret/s3-secret created
 
 The easiest way to install Stash is via Helm, using the chart from [AppsCode Charts Repository](https://github.com/appscode/charts).
 
+First of all, you need to [get a license](https://stash.run/docs/v2021.11.24/setup/install/community/#get-a-license).
+
+Note: if you want to use an enterprise edition please [follow this link](https://stash.run/docs/v2021.11.24/setup/install/enterprise/#get-an-enterprise-license) instead.
+
+You should receive your license by email. Save it, you'll need it in the `helm install` command.
+
 Begin by adding the repository:
 
 ```bash
@@ -181,81 +188,99 @@ helm repo update
 Then search the latest version of stash:
 
 ```bash
-helm search repo appscode/stash --version v0.9.0-rc.6
+helm search repo appscode/stash --version v2021.11.24
 ```
 
 And install it with the the release name `stash-operator`:
 
 ```bash
-helm install stash-operator appscode/stash \
-  --version v0.9.0-rc.6 \
-  --namespace kube-system
+helm install stash appscode/stash          \
+  --version v2021.11.24                \
+  --namespace kube-system                     \
+  --set features.community=true               \
+  --set-file global.license=<PATH_TO_YOUR_STASH_LICENSE>
 ```
 
 In my case:
 
 <pre class="console"><code>$ helm repo add appscode https://charts.appscode.com/stable/
+
 "appscode" has been added to your repositories
+
 $ helm repo update
+
 Hang tight while we grab the latest from your chart repositories...
+[...]
 ...Successfully got an update from the "appscode" chart repository
-...Successfully got an update from the "bitnami" chart repository
-Update Complete. ⎈ Happy Helming!⎈
+[...]
+Update Complete. ⎈Happy Helming!⎈
 
-$ helm search repo appscode/stash --version v0.9.0-rc.6
-NAME            CHART VERSION   APP VERSION     DESCRIPTION
-appscode/stash  v0.9.0-rc.6     v0.9.0-rc.6     Stash by AppsCode - Backup your Kubernetes Volumes
+$ helm search repo appscode/stash --version v2021.11.24
 
-$ helm install stash-operator appscode/stash \
--version>   --version v0.9.0-rc.6 \
->   --namespace kube-system
-NAME: stash-operator
-LAST DEPLOYED: Tue Apr 14 15:32:14 2020
+NAME                  	CHART VERSION	APP VERSION	DESCRIPTION
+appscode/stash        	v2021.11.24  	v2021.11.24	Stash by AppsCode - Backup your Kubernetes nati...
+appscode/stash-catalog	v2021.11.24  	v2021.11.24	Stash Catalog by AppsCode - Catalog of Stash Ad...
+appscode/stash-crds   	v2021.11.24  	v2021.11.24	Stash Custom Resource Definitions
+appscode/stash-metrics	v2021.11.24  	v2021.11.24	Stash State Metrics
+
+$ helm install stash appscode/stash          \
+  --version v2021.11.24                \
+  --namespace kube-system                     \
+  --set features.community=true               \
+  --set-file global.license=stash-community-license-c187ab99-64a1-4f65-9871-7e5168f48e8f.txt
+W1221 14:36:32.478119   35817 warnings.go:70] policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+
+W1221 14:36:35.308665   35817 warnings.go:70] policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+
+W1221 14:36:35.484798   35817 warnings.go:70] policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+
+W1221 14:36:35.526044   35817 warnings.go:70] policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+
+W1221 14:36:35.838301   35817 warnings.go:70] spec.template.spec.nodeSelector[beta.kubernetes.io/arch]: deprecated since v1.14; use "kubernetes.io/arch" instead
+W1221 14:36:35.838468   35817 warnings.go:70] spec.template.spec.nodeSelector[beta.kubernetes.io/os]: deprecated since v1.14; use "kubernetes.io/os" instead
+NAME: stash
+LAST DEPLOYED: Tue Dec 21 14:36:31 2021
 NAMESPACE: kube-system
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
-To verify that Stash has started, run:
+Get the Stash operator pods by running the following command:
 
-  kubectl --namespace=kube-system get deployments -l "release=stash-operator, app=stash"
+  kubectl --namespace kube-system get pods
 </code></pre>
 
 ### Verify installation
 
-As suggested during the chart install, to check if Stash operator pods have started, run the following command:
+As suggested during the chart install, to check if Stash operator pods have started, we can run the suggested command and customize it in order to see only our stash Pod:
 
 ```bash
-kubectl --namespace=kube-system get deployments -l "release=stash-operator, app=stash"
+kubectl get pods -A -l app.kubernetes.io/name=stash-community
 ```
 
-If everything is OK, you should get the `stash-operator` deployment with a status `AVAILABLE`.
+If everything is OK, you should get a `stash-stash-community` pod with a status `Running`.
 
-<pre class="console"><code>$ kubectl --namespace=kube-system get deployments -l "release=stash-operator, app=stash"
-NAME             READY   UP-TO-DATE   AVAILABLE   AGE
-stash-operator   1/1     1            1           2m27s
+<pre class="console"><code>kubectl get pods -A -l app.kubernetes.io/name=stash-community
+NAMESPACE     NAME                                     READY   STATUS    RESTARTS   AGE
+kube-system   stash-stash-community-84b7f84b7f-ctzv7   2/2     Running   0          35s
 </code></pre>
 
 Now, to confirm CRD groups have been registered by the operator, run the following command:
 
 ```bash
-kubectl get crd -l app=stash
+kubectl get crd | grep stash
 ```
 
 You should see a list of the CRD groups:
 
-<pre class="console"><code>$ kubectl get crd -l app=stash
-NAME                                      CREATED AT
-backupbatches.stash.appscode.com          2020-04-14T13:32:05Z
-backupblueprints.stash.appscode.com       2020-04-14T13:32:06Z
-backupconfigurations.stash.appscode.com   2020-04-14T13:32:05Z
-backupsessions.stash.appscode.com         2020-04-14T13:32:05Z
-functions.stash.appscode.com              2020-04-14T13:32:08Z
-recoveries.stash.appscode.com             2020-04-14T13:32:05Z
-repositories.stash.appscode.com           2020-04-14T13:32:05Z
-restics.stash.appscode.com                2020-04-14T13:32:05Z
-restoresessions.stash.appscode.com        2020-04-14T13:32:06Z
-tasks.stash.appscode.com                  2020-04-14T13:32:07Z
+<pre class="console"><code>$ kubectl get crd | grep stash
+
+backupblueprints.stash.appscode.com                   2021-12-21T13:36:47Z
+backupconfigurations.stash.appscode.com               2021-12-21T13:36:46Z
+backupsessions.stash.appscode.com                     2021-12-21T13:36:46Z
+functions.stash.appscode.com                          2021-12-21T13:24:18Z
+recoveries.stash.appscode.com                         2021-12-21T13:36:46Z
+repositories.stash.appscode.com                       2021-12-21T13:36:46Z
+restics.stash.appscode.com                            2021-12-21T13:36:46Z
+restorebatches.stash.appscode.com                     2021-12-21T13:36:48Z
+restoresessions.stash.appscode.com                    2021-12-21T13:36:47Z
+tasks.stash.appscode.com                              2021-12-21T13:24:18Z
 </code></pre>
 
 ### Install Stash `kubectl` plugin
@@ -267,7 +292,7 @@ Download pre-build binaries from [`stashed/cli`](https://github.com/stashed/cli/
 
 ## Volume Snapshot with Stash
 
-A detailed explanation of Volume Snapshot with Stash is available in the [official documentation](https://stash.run/docs/v0.9.0-rc.6/guides/latest/volumesnapshot/overview/).
+A detailed explanation of Volume Snapshot with Stash is available in the [official documentation](https://stash.run/docs/v2021.11.24/guides/latest/volumesnapshot/overview/).
 
 In Kubernetes, a [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) represents a snapshot of a volume on a storage system. It was introduced as an Alpha feature in Kubernetes v1.12 and has been promoted to an Beta feature in Kubernetes 1.17.
 
@@ -357,7 +382,7 @@ spec:
 And apply it to your cluster:
 
 ```bash
-kubectl apply -f nginx-example.yaml
+kubectl apply -f nginx-example.yml
 ```
 
 > [!primary]
@@ -366,7 +391,13 @@ kubectl apply -f nginx-example.yaml
 >
 > We do so as the Storage Class we are using, `csi-cinder-high-speed`, only supports a `ReadWriteOnce`, so we can only have one pod writing on the Persistent Volume at any given time.
 
-Wait for the external URL to we ready:
+We can check if the Pod is running:
+
+```bash
+kubectl get pod -n nginx-example
+```
+
+Wait until you get an external IP:
 
 ```bash
 kubectl -n nginx-example get svc nginx-service -w
@@ -380,21 +411,27 @@ curl -I <EXTERNAL_IP>
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example.yaml
+<pre class="console"><code>$ kubectl apply -f nginx-example.yml
+
 namespace/nginx-example created
 persistentvolumeclaim/nginx-logs created
 deployment.apps/nginx-deployment created
 service/nginx-service created
 
-$ kubectl -n nginx-example get svc nginx-service -w
-NAME          TYPE           CLUSTER-IP     EXTERNAL-IP                   PORT(S)        AGE
-nginx-service LoadBalancer   10.3.115.226   &lt;pending>                     80:32764/TCP   60s
-nginx-service LoadBalancer   10.3.115.226   xxxxxx.lb.c4.gra.k8s.ovh.net  80:32764/TCP   3m5s
+$ kubectl get pod -n nginx-example
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx-deployment-766444c4d9-cxd2p   1/1     Running   0          32s
 
-$ curl -I xxxxxx.lb.c4.gra.k8s.ovh.net
+$ kubectl -n nginx-example get svc nginx-service -w
+
+NAME            TYPE           CLUSTER-IP    EXTERNAL-IP   PORT(S)        AGE
+nginx-service   LoadBalancer   10.3.39.164   <pending>     80:31734/TCP   49s
+nginx-service   LoadBalancer   10.3.39.164   51.210.210.247   80:31734/TCP   3m
+
+$ curl -I 51.210.210.247
 HTTP/1.1 200 OK
 Server: nginx/1.7.9
-Date: Tue, 14 Apr 2020 15:04:17 GMT
+Date: Tue, 21 Dec 2021 14:16:20 GMT
 Content-Type: text/html
 Content-Length: 612
 Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
@@ -402,10 +439,10 @@ Connection: keep-alive
 ETag: "54999765-264"
 Accept-Ranges: bytes
 
-$ curl -I xxxxxx.lb.c4.gra.k8s.ovh.net
+$ curl -I 51.210.210.247
 HTTP/1.1 200 OK
 Server: nginx/1.7.9
-Date: Tue, 14 Apr 2020 15:04:17 GMT
+Date: Tue, 21 Dec 2021 14:16:31 GMT
 Content-Type: text/html
 Content-Length: 612
 Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
@@ -433,21 +470,22 @@ And then connect to it and see your access logs:
 In my case:
 
 <pre class="console"><code>$ kubectl -n nginx-example get pods
-NAME                               READY   STATUS    RESTARTS   AGE
-nginx-deployment-f7747d88d-pq8cx   1/1     Running   0          9m22s
 
-$ kubectl -n nginx-example exec nginx-deployment-f7747d88d-pq8cx -c nginx -- cat /var/log/nginx/access.log
-10.2.3.0 - - [07/Jul/2020:19:00:00 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.68.0" "-"
-10.2.3.0 - - [07/Jul/2020:19:00:28 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.68.0" "-"
+NAME                                READY   STATUS    RESTARTS   AGE
+nginx-deployment-766444c4d9-cxd2p   1/1     Running   0          28m
+
+$ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- cat /var/log/nginx/access.log
+10.2.2.0 - - [21/Dec/2021:14:16:20 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+10.2.0.0 - - [21/Dec/2021:14:16:31 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 </code></pre>
 
 ### Create a `Repository`
 
-A `Repository` is a Kubernetes `CustomResourceDefinition` (CRD) which represents backend information in a Kubernetes native way. You have to create a `Repository` object for each backup target. A backup target can be a workload, database or a PV/PVC.
+A [Repository](https://stash.run/docs/v2021.11.24/concepts/crds/repository/) is a Kubernetes `CustomResourceDefinition` (CRD) which represents backend information in a Kubernetes native way. You have to create a `Repository` object for each backup target. A backup target can be a workload, database or a PV/PVC.
 
 To create a `Repository` CRD, you have to provide the storage secret that we have created earlier in `spec.backend.storageSecretName` field. You will also need to define `spec.backend.s3.prefix`, to choose the folder inside the backend where the backed up snapshots will be stored
 
-Create a `repository.yaml` file, replacing `<public cloud region without digit>` with the region, without digits and in lowercase (e.g. `gra`):
+Create a `repository.yaml` file, replacing `<public cloud region>` with the region, without digits and in lowercase (e.g. `gra`):
 
 ```yaml
 apiVersion: stash.appscode.com/v1alpha1
@@ -479,7 +517,7 @@ repository.stash.appscode.com/s3-repo created
 
 ### Create a `BackupConfiguration`
 
-A `BackupConfiguration` is a Kubernetes `CustomResourceDefinition` (CRD) which specifies the backup target, parameters(schedule, retention policy etc.) and a `Repository` object that holds snapshot storage information in a Kubernetes native way.
+A [BackupConfiguration](https://stash.run/docs/v2021.11.24/concepts/crds/backupconfiguration/) is a Kubernetes `CustomResourceDefinition` (CRD) which specifies the backup target, parameters(schedule, retention policy etc.) and a `Repository` object that holds snapshot storage information in a Kubernetes native way.
 
 You have to create a `BackupConfiguration` object for each backup target. A backup target can be a workload, database or a PV/PVC.
 
@@ -593,38 +631,40 @@ backupconfiguration.stash.appscode.com/nginx-backup patched
 
 $ kubectl -n nginx-example get backupconfiguration nginx-backup
 NAME           TASK   SCHEDULE      PAUSED   AGE
-nginx-backup          */1 * * * *   true     8m38s
+nginx-backup          */1 * * * *   true     7m18s
 </code></pre>
 
 ### Simulate Disaster
 
-Let’s simulate a disaster scenario, deleting all the files from the PVC:
+Let’s simulate a disaster scenario, deleting all the files from the `PVC`:
 
 ```bash
-kubectl -n nginx-example exec &lt;POD_NAME> -c nginx -- cat /var/log/nginx/access.log
+kubectl -n nginx-example exec <POD_NAME> -c nginx -- rm /var/log/nginx/access.log
 ```
 
 And verify that the file is deleted:
 
 ```bash
-kubectl -n nginx-example exec &lt;POD_NAME> -c nginx -- ls -al /var/log/nginx/
+kubectl -n nginx-example exec <POD_NAME> -c nginx -- ls -al /var/log/nginx/
 ```
 
 In my case:
 
-<pre class="console"><code>$ kubectl -n nginx-example -c nginx exec nginx-deployment-79b8ffd99-bdlkm  -- rm /var/log/nginx/access.log
+<pre class="console"><code>$ kubectl -n nginx-example -c nginx exec nginx-deployment-766444c4d9-cxd2p  -- rm /var/log/nginx/access.log
 
-$ kubectl -n nginx-example exec nginx-deployment-79b8ffd99-bdlkm -c nginx -- ls -al /var/log/nginx/
-total 28
-drwxr-xr-x 3 root root  4096 Jul  7 19:41 .
+$ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- ls -al /var/log/nginx/
+total 32
+drwxr-xr-x 3 root root  4096 Dec 21 13:42 .
 drwxr-xr-x 1 root root  4096 Jan 27  2015 ..
--rw-r--r-- 1 root root   406 Jul  7 19:25 error.log
-drwx------ 2 root root 16384 Jul  7 18:41 lost+found
+-rw-r--r-- 1 root root  1369 Dec 21 14:15 error.log
+drwx------ 2 root root 16384 Dec 21 13:42 lost+found
 </code></pre>
 
 ### Create a `RestoreSession`
 
 Now you need to create a `RestoreSession` CRD to restore the PVCs from the last snapshot.
+
+A `RestoreSession` is a Kubernetes `CustomResourceDefinition` (CRD) which specifies a target to restore and the source of data that will be restored in a Kubernetes native way.
 
 Create a `restore-session.yaml` file:
 
@@ -680,28 +720,29 @@ Let's begin by getting the pod name:
 And then verify that the `access.log` file has been restored:
 
 ```bash
-kubectl -n nginx-example exec &lt;POD_NAME> -c nginx -- ls -al /var/log/nginx/
-kubectl -n nginx-example exec &lt;POD_NAME> -c nginx -- cat /var/log/nginx/access.log
+kubectl -n nginx-example exec <POD_NAME> -c nginx -- ls -al /var/log/nginx/
+kubectl -n nginx-example exec <POD_NAME> -c nginx -- cat /var/log/nginx/access.log
 ```
 
 In my case:
 
 <pre class="console"><code>$ kubectl -n nginx-example get pods
 NAME                                READY   STATUS    RESTARTS   AGE
-nginx-deployment-654d8f8dcb-xskww   2/2     Running   0          31s
+nginx-deployment-766444c4d9-cxd2p   2/2     Running   0          31s
 
-$ kubectl -n nginx-example exec nginx-deployment-654d8f8dcb-xskww -c
-nginx -- cat /var/log/nginx/access.log
-10.2.3.0 - - [07/Jul/2020:19:00:00 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.68.0" "-"
-10.2.3.0 - - [07/Jul/2020:19:00:28 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.68.0" "-"
+$ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- cat /var/log/nginx/access.log
 
-$ kubectl -n nginx-example exec nginx-deployment-654d8f8dcb-xskww -c nginx -- ls -al /var/log/nginx/
-total 28
-drwxr-xr-x 3 root root  4096 Jul  7 20:23 .
+10.2.2.0 - - [21/Dec/2021:14:16:20 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+10.2.0.0 - - [21/Dec/2021:14:16:31 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
+
+$ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- ls -al /var/log/nginx/
+
+total 32
+drwxr-xr-x 3 root root  4096 Dec 21 13:42 .
 drwxr-xr-x 1 root root  4096 Jan 27  2015 ..
--rw-r--r-- 1 root root   448 Jul  7 20:37 access.log
--rw-r--r-- 1 root root     0 Jul  7 20:23 error.log
-drwx------ 2 root root 16384 Jul  7 20:23 lost+found
+-rw-r--r-- 1 root root  1686 Dec 21 15:03 access.log
+-rw-r--r-- 1 root root  1369 Dec 21 14:55 error.log
+drwx------ 2 root root 16384 Dec 21 14:55 lost+found
 </code></pre>
 
 ---
@@ -714,10 +755,10 @@ To clean up your cluster, begin by deleting the `nginx-example` namespace:
 kubectl delete namespace nginx-example
 ```
 
-Then simply use Helm to delete your Jenkins release.
+Then simply use Helm to delete your Stash release.
 
 ```bash
-helm delete stash-operator --namespace kube-system
+helm uninstall stash -n kube-system
 ```
 
 In my case:
@@ -725,6 +766,6 @@ In my case:
 <pre class="console"><code>$ kubectl delete namespace nginx-example
 namespace "nginx-example" deleted
 
-$helm delete stash-operator --namespace kube-system
-release "stash-operator" uninstalled
+$ helm uninstall stash -n kube-system
+release "stash" uninstalled
 </code></pre>

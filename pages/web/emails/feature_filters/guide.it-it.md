@@ -26,7 +26,7 @@ Ad esempio: vuoi che tutte le email contenenti "[SPAM]" nell'oggetto siano elimi
 
 ## Prerequisiti
 
-- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](https://www.ovh.it/hosting-web/){.external}, l'[hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} incluso con un dominio o l'offerta MX Plan ordinata separatamente).
+- Disporre di una soluzione email MX Plan (disponibile tramite: un'offerta di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external}, l'[hosting gratuito Start 10M](https://www.ovhcloud.com/it/domains/free-web-hosting/){.external} incluso con un dominio o l'offerta MX Plan ordinata separatamente).
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
@@ -43,11 +43,11 @@ Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`.
 
-E seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+E seleziona il tuo servizio nella sezione `Email`{.action}.
 
 Nella scheda `Email`{.action} del tuo servizio MXplan, visualizzi la lista dei tuoi indirizzi email. Una colonna `Filtri` è visibile nella tabella degli account email. Clicca sull'icona dell'imbuto.
 
-![email](images/img_3239.jpg){.thumbnail}
+![email](images/img_3239.png){.thumbnail}
 
 A questo punto, accedi alla lista dei filtri configurati per questo indirizzo email.
 

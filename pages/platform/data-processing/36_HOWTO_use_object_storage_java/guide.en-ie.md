@@ -18,7 +18,7 @@ Samples are based on the well-known WordCount. We will first read data from a te
 ## Requirements
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - An OVHcloud account.
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
+- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
 - The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external}.
 You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
@@ -192,5 +192,6 @@ Concerning the 'WordCount' use case, here is a link to a more advanced tutorial 
 
 If you are not familiar with Apache Spark, we recommend you to visit [Apache Spark's official website](https://spark.apache.org/){.external}
 
-You can send your questions, suggestions or feedbacks in our community of users in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+
 

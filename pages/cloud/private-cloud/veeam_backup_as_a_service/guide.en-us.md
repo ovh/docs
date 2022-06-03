@@ -5,7 +5,7 @@ excerpt: Find out how to enable and use the Veeam Managed Backup option to secur
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 18th November 2020**
+**Last updated 7th December 2021**
 
 ## Objective
 
@@ -23,11 +23,6 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 - [vSphere High Availability (HA)](../vmware-ha-high-availability) enabled
 - [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
 - Windows SPLA Licensing enabled
-
-> [!primary]
->
-> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
->
 
 ## Instructions
 

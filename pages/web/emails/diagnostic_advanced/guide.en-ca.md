@@ -32,10 +32,10 @@ For your emails to work, you need to have an active email service. If your email
 
 Follow these steps to ensure that your relevant services are up and running:
 
-- For your **domain name**, go to the `Web Cloud`{.action} section, click `Domain names`{.action} in the left-hand column, then select your domain name. If your domain name has expired, this will be listed at the top of the page.
-- For your **Web Hosting plan**, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action} in the left-hand column, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.
-- For an **MXplan** solution, go to the `Web Cloud`{.action} section, click `Emails`{.action} in the left-hand column, then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
-- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action} in the left-hand column, then click `Exchange`{.action} and select your service. Click the `Email accounts`{.action} tab. Check the status of the email account in the `Status` column.
+- For your **domain name**, go to the `Web Cloud`{.action} section, click `Domain names`{.action}, then select your domain name. If your domain name has expired, this will be listed at the top of the page.
+- For your **Web Hosting plan**, go to the `Web Cloud`{.action} section, click `Hosting plans`{.action}, then select your Web Hosting plan. The date of expiry or automatic renewal of your hosting will be indicated at the top of the page.
+- For an **MXplan** solution, go to the `Web Cloud`{.action} section, click `Emails`{.action}, then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
+- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action}, then click `Exchange`{.action} and select your service. Click the `Email accounts`{.action} tab. Check the status of the email account in the `Status` column.
 
 ### I am unable send emails from my email software
 
@@ -55,17 +55,17 @@ From your computer browser or smartphone, go to the address <https://www.ovh.com
 
 ### I cannot log in to webmail
 
-Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](https://www.ovh.com/ca/en/emails/hosted-exchange/) only).
+Make sure you have the right password. If necessary, you can modify it. Also check if two-factor authentication is enabled ([Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) only).
 
 Here is how to change the password for an email address:
 
 - For an **MX Plan** solution, please refer to our guide on [Changing a password for an MX Plan email address](../changing-email-address-password/)
 
-- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action} in the left-hand column, then click `Exchange`{.action} and select your platform. In the `Email`{.action} accounts tab, click the `...`{.action} button, then click `Modify`{.action} to change the password.
+- For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action}, then click `Exchange`{.action} and select your platform. In the `Email`{.action} accounts tab, click the `...`{.action} button, then click `Modify`{.action} to change the password.
 
 ### Is there an incident or maintenance in progress for my service?
 
-You can check the various tasks that are currently in progress on <http://status.ovh.com/>.
+You can check the various tasks that are currently in progress on <https://web-cloud.status-ovhcloud.com/>.
 
 - For **MXplan**, check in the `Emails` section
 - For **Exchange**, go to the `Microsoft` section
@@ -111,6 +111,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |502|Command not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
 |503|Server encountered bad sequence of commands|This is usually due to an authentication problem, make sure you are authenticated on the SMTP server in terms of your email software configuration.|
 |504|Command parameter not implemented|The settings or options used when sending the email with your SMTP server are recognised but disabled in its configuration. Please contact your service provider.|
+|535|Authentication failed|User information/password is incorrect or sending is potentially blocked on your email address. Check the status of your email address in your OVHcloud Control Panel. A password change can unblock the sending if the account has been blocked for spam, see our guide [What to do if your account is blocked for spam](https://docs.ovh.com/ca/en/microsoft-collaborative-solutions/blocked-for-spam/) for more information.|
 |550|Requested action not performed: mailbox unavailable|The destination mail server could not verify the email address used. This is most often caused by an invalid destination email address, but can also mean that the destination email server has firewall or connectivity issues. Check the recipient's email address, and/or try again.|
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|

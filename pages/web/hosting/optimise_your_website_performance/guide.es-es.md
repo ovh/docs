@@ -6,7 +6,7 @@ legacy_guide_number: g1396
 section: 'Optimización del sitio web'
 ---
 
-**Última actualización: 5/2/2020**
+**Última actualización: 03/02/2022**
 
 ## Objetivo
 Esta guía ha sido creada para aquellos clientes que deseen mejorar el rendimiento de su sitio web.
@@ -18,9 +18,9 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 > Este caso práctico le mostrará cómo usar una o más soluciones de OVHCloud con herramientas externas. También recoge las acciones que se han de realizar en un contexto específico. Recuerde adaptar dichas acciones para que se adecúen a su situación. Si tiene dificultades a la hora de realizar dichas acciones, póngase en contacto con un proveedor de servicios especializados y/o comente su problema con nuestra comunidad en <https://community.ovh.com/en/>. OVHCloud no puede proporcionarle asistencia técnica a este respecto.
 
 ## Requisitos
-- Un [plan de hospedaje web de OVHcloud](https://www.ovh.es/hosting/){.external}
+- Un [plan de hospedaje web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
-- Un [nombre de dominio](https://www.ovh.es/dominios/){.external} que pueda utilizarse para acceder a su sitio web
+- Un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/){.external} que pueda utilizarse para acceder a su sitio web
 - Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 
 ## Procedimiento
@@ -43,9 +43,9 @@ Responder a estas preguntas puede ayudarle a centrarse en puntos concretos y ár
 
 El uso de un sistema de gestión de contenidos (CMS) como WordPress, PrestaShop, Drupal o Joomla! necesita muchas librerías, por lo que una única página web puede involucrar una gran cantidad de elementos.
 Los navegadores de internet deben cargar y leer todos esos elementos.
-Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](https://www.ovh.es/hosting/){.external}.
+Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para los sistemas de gestión de contenidos antes mencionados en [la página del producto](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 
-Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovh.es/hosting/que_hosting_elegir.xml){.external}.
+Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Paso 2: comprobar la versión del lenguaje PHP
@@ -147,7 +147,7 @@ Descubra nuestra [solución de red de distribución de contenidos (CDN) aquí](h
 
 _Este paso es opcional si no está utilizando un sistema de gestión de contenidos._
 
-Para garantizar que nuestra oferta de hospedaje se adapte a las necesidades de su sistema de gestión de contenidos, puede encontrar una comparativa de nuestros servicios en [la página del producto](https://www.ovh.es/hosting/){.external}.
+Para garantizar que nuestra oferta de hospedaje se adapte a las necesidades de su sistema de gestión de contenidos, puede encontrar una comparativa de nuestros servicios en [la página del producto](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 
 - **Usar un complemento de caché:** Un sistema de gestión de contenidos recurre a varias librerías, por lo que una única página web puede procesar una enorme cantidad de elementos. Con el fin de optimizar su sistema de gestión de contenidos, debe usar varios complementos de caché para evitar que se regenere todo el contenido de su sitio web cada vez que se cargue una página. Recomendamos que busque complementos de caché en los sitios web de la comunidad del sistema de gestión de contenidos que utiliza (Joomla!, PrestaShop, WordPress) para evitar que se regenere todo el contenido de su sitio web cada vez que carga una página.
 
@@ -218,9 +218,10 @@ Ejemplo:
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
 
-#### SQL Privado
-Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de SQL Privado para disponer de más recursos.
-Puede encontrar una comparativa de nuestras ofertas [en la página del producto](https://www.ovh.es/hosting/opciones-sql.xml){.external}.
+#### CloudDB
+Si a pesar de todos los cambios y optimizaciones realizados la base de datos va lenta, o en el caso de que se realicen un gran número de consultas en dicha base de datos, podría querer cambiar a nuestra oferta de CloudDB para disponer de más recursos.
+
+[Consultar la solución CloudDB en nuestro sitio web](https://www.ovh.es/cloud/cloud-databases/){.external}.
 
 ## Más información
 
@@ -228,6 +229,6 @@ Puede encontrar una comparativa de nuestras ofertas [en la página del producto]
 
 [Gestionar una base de datos en un paquete de hospedaje web](https://docs.ovh.com/es/hosting/gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-[Primeros pasos con el servicio SQL Privado](https://docs.ovh.com/es/hosting/primeros-pasos-con-sql-privado/){.external}
+[Primeros pasos con el servicio Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

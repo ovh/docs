@@ -6,7 +6,7 @@ section: 'Advanced use'
 order: 2
 ---
 
-**Last updated March 25th, 2021**
+**Last updated January 7th, 2022**
 
 ## Objective
 
@@ -17,7 +17,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 ## Requirements
 
 - [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 > [!warning]
 >
@@ -31,11 +31,11 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 ## Instructions
 
 Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
-<br>To do so, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab (1).
+<br>To do so, first log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). In the `Bare Metal Cloud`{.action} section, select your server from `Dedicated Servers`{.action} and click the `IPMI`{.action} tab (1).
 
 Next, click the `From a Java applet (KVM)`{.action} button (2).
 
-![remote kvm](images/remote_kvm2021.png){.thumbnail}
+![remote kvm](images/remote_kvm2022.png){.thumbnail}
 
  A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

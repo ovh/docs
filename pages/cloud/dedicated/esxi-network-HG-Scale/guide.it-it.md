@@ -10,7 +10,7 @@ order: 6
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 07/10/2021**
+**Ultimo aggiornamento: 09/05/2022**
 
 ## Obiettivo
 
@@ -25,7 +25,7 @@ Sulle gamme High Grade & SCALE, il funzionamento degli IP Failover in modalità 
 
 ## Prerequisiti
 
-* Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi
+* Disporre di un blocco pubblico di indirizzi IP nel proprio account, con almeno quattro indirizzi. Il blocco deve essere puntato verso la vRack.
 * Aver selezionato un intervallo di indirizzi IP privati
 * Disporre di un [server dedicato compatibile con la vRack](https://www.ovhcloud.com/it/bare-metal/){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
@@ -33,12 +33,24 @@ Sulle gamme High Grade & SCALE, il funzionamento degli IP Failover in modalità 
 
 ## Procedura
 
-> [!primary]
+> [!warning]
 >
-> Su queste gamme di server, ci sono 4 schede di rete. Due per il pubblico, due per il privato. Per usufruire di tutta la banda passante, è necessario creare degli aggregati.
+> Su queste gamme di server, ci sono 4 schede di rete. Per sfruttare tutta la banda passante, è necessario creare degli aggregati. La nostra documentazione si basa su questi aggregati di schede di rete.
+>
+> **Per contro, ESXi non supporta nativamente il LACP.**
+> Nessuna ridondanza sarà quindi disponibile. Non sarà inoltre possibile gestire tutta la banda passante delle schede di rete del tuo server.
+>
+
+> [!warning]
+>
+> Nell'interfaccia grafica ESXi è presente un difetto noto. L'esecuzione di questi passaggi in questa interfaccia comporterebbe quindi una configurazione non funzionale. Per applicare questa configurazione è necessario utilizzare l'interfaccia della linea di comando in SSH.
 >
 
 ### IP Failover via vRack
+
+Per prima cosa, aggiungi il tuo blocco pubblico di indirizzi IP alla vRack. Accedi alla sezione `Bare Metal Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e apri il menu `vRack`{.action}.
+
+Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissibili. Clicca sul blocco pubblico di indirizzi IP che vuoi aggiungere alla vRack e poi clicca su `Aggiungi`{.action}.
 
 #### Configurazione iniziale
 

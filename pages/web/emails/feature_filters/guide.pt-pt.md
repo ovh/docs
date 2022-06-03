@@ -26,7 +26,7 @@ Por exemplo: deseja que todo o e-mail que contenha "\[SPAM]" no assumpto seja el
 
 ## Requisitos
 
-- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, o [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
+- Ter um serviço de e-mail MX Plan (disponível através de: um plano de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external}, o [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external} incluído com um domínio ou a oferta MX Plan (encomendada separadamente).
 - Ter acesso à sua [Área de Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]
@@ -43,11 +43,11 @@ Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 
 Aceda à Área de [Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
 
-Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente.
+Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
 No separador `E-mails`{.action} do serviço MXplan, encontrará a lista dos endereços de e-mail. Pode ver uma coluna de `filtros` na tabela de contas de e-mail. Clique no ícone de funil.
 
-![emails](images/img_3239.jpg){.thumbnail}
+![emails](images/img_3239.png){.thumbnail}
 
 Poderá aceder à lista dos filtros atualmente configurados para este endereço de e-mail.
 

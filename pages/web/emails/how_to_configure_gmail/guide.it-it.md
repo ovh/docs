@@ -23,7 +23,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 ## Prerequisiti
 
-- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovh.it/hosting-web/){.external}
+- Disporre di un account email MX Plan incluso nel servizio MX Plan o in una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Disporre delle credenziali associate all’account email OVHcloud da configurare
 - Disporre delle credenziali associate all’account Gmail su cui configurare l’indirizzo OVHcloud
 
@@ -39,7 +39,7 @@ Gli account email del servizio MX Plan possono essere configurati su client o ap
 
 Accedi tramite browser all’interfaccia Web di Gmail, inserisci le credenziali del tuo account ed effettua il login.
 
-Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
+Clicca sull’icona a forma di ingranaggio in alto a destra e poi su `Visualizza tutti le impostazioni`{.action}. Seleziona la scheda `Account e importazione`{.action}. 
 
 ![MX Plan](images/configuration-gmail-web-step1.png){.thumbnail}
 
@@ -105,4 +105,4 @@ Ti ricordiamo che per accedere all’account OVHcloud è sempre possibile utiliz
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

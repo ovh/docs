@@ -16,15 +16,15 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 ### Activation de votre offre e-mail
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, vous trouverez la mention `Adresses e-mails`. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer la solution e-mail`{.action}.
 
@@ -35,13 +35,13 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 ![email-activation](images/mail-hosting02.png){.thumbnail}
 
 > [!primary]
-> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} supérieure depuis notre page commerciale.
+> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} supérieure depuis notre page commerciale.
 
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Délier mon option e-mail`{.action}
 
@@ -58,14 +58,16 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 >
 > Attention, cette action est irréversible. les comptes e-mail et leur contenu seront supprimés.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Résilier l'option e-mail`{.action}.
 
 ![email-activation](images/mail-hosting04.png){.thumbnail}
 
+> [!warning]
+>
+> Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Il est indispensable de cliquer sur ce lien pour que l'opération de suppression soit lancée.
+
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
-
-
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

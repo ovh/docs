@@ -16,14 +16,14 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 
 ## Prérequis
 
-- Posséder une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/fr/hebergement-web/), l'[hébergement gratuit Start 10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou l'offre MX Plan seule.
+- Posséder une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l'[hébergement gratuit Start 10M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan seule.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 
 ## En pratique
 
 Une fois l'offre MX Plan créée et disponible, vous avez la possibilité de la gérer depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Selon sa date d'activation ou si [celle-ci a été récemment migrée](https://www.ovh.com/fr/mxplan-migration/), il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre. Avant de poursuivre, vous devez identifier celle-ci.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie « Web Cloud ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|

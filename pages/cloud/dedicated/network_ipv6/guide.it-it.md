@@ -2,10 +2,14 @@
 title: 'Configurare IPv6 su server dedicati'
 slug: network-ipv6
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-section: 'Gestione della rete'
+section: 'Rete e IP'
 ---
 
-**Ultimo aggiornamento: 22/07/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 
@@ -21,24 +25,37 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 
 ## Prerequisiti
 
-- Un [server dedicato](https://www.ovh.it/server_dedicati/) nel tuo account OVHcloud
-- Tutti i dati del tuo IPv6 (prefisso, gateway, etc.)
-- Una conoscenza basilare di reti e [SSH](https://it.wikipedia.org/wiki/Secure_Shell)
+- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud.
+- Tutti i dati del tuo IPv6 (prefisso, gateway, etc.).
+- Una conoscenza basilare di reti e [SSH](../introduzione-ssh/).
+
+> [!warning]
+> Ti ricordiamo che i server Kimsufi sono forniti con un solo blocco IPv6 (/128). L'IPv6 sarà configurato automaticamente al momento dell'installazione del sistema operativo.
+>
 
 ## Procedura
 
-Se per installare il tuo server utilizzi un template per il SO Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
+Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, ti accorgerai che il primo IPv6 (principale) è già configurato.
 
+Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un IP Failover configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch.
 
 > [!primary]
 >
-> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Il gateway predefinito per il tuo blocco IPv6 (IPv6_GATEWAY) è sempre xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Ti ricordiamo che gli "0" di testa possono essere eliminati in un IPv6 per evitare errori nella determinazione del gateway.
 >
 > Ad esempio:
 > 
-> - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
-> - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - L’indirizzo IPv6 del server è 2607:5300:60:62ac::/64 o 2607:5300:60:62ac:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2607:5300:60:62FF:FF:FF:FF:FF.
+> - L’indirizzo IPv6 del server è 2001:41D0:1:46e::/64 o 2001:41D0:0001:046e:0000:000:000:0000/64. L’IPv6_GATEWAY sarà perciò 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> Il modo più sicuro per recuperare le informazioni di rete del tuo server è [utilizzare l'API OVHcloud](https://docs.ovh.com/it/api/first-steps-with-ovh-api/). Eseguite la chiamata API che segue, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+>
+
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+
 
 ### Sistemi operativi Debian e basati su Debian
 
@@ -55,7 +72,7 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -65,7 +82,7 @@ Il file di configurazione di rete del tuo server si trova in `/etc/network/inter
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è `eth0`. L’interfaccia del tuo server può essere diversa.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +102,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -111,18 +128,18 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Il file di configurazione di rete del tuo server si trova in /etc/sysconfig/network-scripts/ifcfg-eth0. Usa la riga di comando per localizzare questo file e aprilo per modificarlo.
+Il file di configurazione di rete del tuo server si trova in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Usa la riga di comando per localizzare questo file e aprilo per modificarlo.
 
 #### Step 3: Modifica il file di configurazione di rete.
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è eth0. L’interfaccia del tuo server può essere diversa. Inoltre, abbiamo omesso la configurazione di failover dell’IPv4 per evitare confusione, ma la configurazione dell’IPv6 viene effettuata nello stesso file di configurazione.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +158,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -161,7 +178,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
@@ -172,7 +189,7 @@ Il file di configurazione di rete del tuo server si trova in `/etc/rc.conf`. Usa
 
 Modifica il file come illustrato nell’esempio seguente. In questo esempio, il nome dell’interfaccia di rete è em0. L’interfaccia del tuo server può essere diversa.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +205,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -208,17 +225,17 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
-Apri il file di configurazione di rete che si trova in /etc/systemd/network. A scopo dimostrativo, il nome del nostro file è 50-default.network.
+Apri il file di configurazione di rete che si trova in `/etc/systemd/network`. A scopo dimostrativo, il nome del nostro file è 50-default.network.
 
 #### Step 3: Modifica il file di configurazione di rete.
 
 Servendoti di un editor di testo, modifica il file aggiungendo le righe che seguono alle relative sezioni, come viene indicato nell’esempio qui sotto:
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -229,8 +246,9 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-per aggiungere più indirizzi IPv6, aggiungi altre sezioni \[Address]
-```sh
+per aggiungere più indirizzi IPv6, aggiungi altre sezioni \[Address].
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +263,7 @@ Salva le tue modifiche sul file, quindi riavvia la rete o il server per applicar
 
 Puoi testare la connettività IPv6 eseguendo i comandi indicati di seguito:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -263,7 +281,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Utilizza l’RDP per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server)
+Per ulteriori informazioni fai riferimento a [questa guida](../iniziare-a-utilizzare-server-dedicato/#accedi-al-tuo-server).
 
 
 #### Step 2: Apri la configurazione di rete del tuo server
@@ -294,9 +312,9 @@ Digita la configurazione del tuo IPv6 (`indirizzo IPv6` e `gateway predefinito`)
 
 Se dopo aver testato la tua connessione riscontri ancora dei problemi, crea una richiesta di assistenza per l’esame delle tue configurazioni. È necessario fornire quando segue:
 
-- il nome e la versione del sistema operativo che utilizzi sul tuo server
-- il nome e la directory del file di configurazione di rete 
-- il contenuto di quel file 
+- Il nome e la versione del sistema operativo che utilizzi sul tuo server.
+- Il nome e la directory del file di configurazione di rete. 
+- Il contenuto di quel file. 
 
 
 ## Per saperne di più

@@ -16,8 +16,8 @@ Aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de conten
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+- Disposer d'une base de données créée dans le cadre d'une offre d'[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 - Selon la méthode de sauvegarde utilisée, disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou des informations permettant de se connecter à la base de données.
 
 ## En pratique
@@ -30,7 +30,7 @@ Avant de commencer cette manipulation, vous devez définir la méthode que vous 
 
 - **Utiliser un script réalisant la sauvegarde** : cette solution nécessite de créer un script enregistré sur votre hébergement web OVH, afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVH](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVH. Vous devrez donc, pour ces dernières, réaliser la manipulation selon vos propres connaissances. Quelques informations sont présentes ci-dessous, mais elles ne peuvent se substituer à l’aide d’un webmaster. 
 
@@ -45,7 +45,7 @@ Poursuivez la lecture de cette documentation selon la méthode de sauvegarde sou
 
 ### Récupérer une sauvegarde via l'outil d'OVH
 
-Pour accéder à l'outil de sauvegarde d'OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour accéder à l'outil de sauvegarde d'OVH, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir de réaliser une nouvelle sauvegarde ainsi que d'en récupérer une via deux manipulations distinctes.
 
@@ -75,7 +75,7 @@ Pour télécharger une sauvegarde, cliquez sur les trois points à droite de cel
 
 ### Récupérer une sauvegarde depuis l'interface web phpMyAdmin
 
-Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour réaliser la manipulation, vous devez vous connecter à phpMyAdmin. Pour connaître le lien d'accès à ce dernier, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Cliquez dans ce dernier sur les trois points à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}.
 

@@ -23,7 +23,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/ca/fr/hebergement-web/)
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Disposer également de la gestion de la [Zone DNS](../../domains/editer-ma-zone-dns/) à laquelle est rattachée votre nom de domaine.
 
@@ -58,7 +58,7 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement OVHcloud
 
-Pour retrouver l'adresse IP, cliquez sur `Hébergements` dans la colonne de gauche de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez l'hébergement concerné.
+Pour retrouver l'adresse IP, cliquez sur `Hébergements` dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez l'hébergement concerné.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

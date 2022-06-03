@@ -1,75 +1,105 @@
 ---
 title: Cloner une VM
 slug: cloner-une-vm
-excerpt: Découvrez comment cloner une VM existante via vSphere
+excerpt: Découvrez deux manières de cloner une VM existante dans vSphere
 section: Gestion des machines virtuelles
 order: 07
 ---
 
-**Dernière mise à jour le 29/06/2020**
+**Dernière mise à jour le 12/01/2022**
 
 ## Objectif
 
-Le clonage d'une VM permet de créer une copie de la VM source.
+VMware offre la possibilité de cloner une VM pour créer une nouvelle VM ou un modèle.
 
-**Ce guide explique comment réaliser cette opération**
+**Ce guide explique comment exécuter ces tâches.**
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
-- Disposer d'au moins une VM dans votre cluster.
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc))
 
 ## En pratique
 
-### Cloner la VM
+### Cloner une VM
 
-Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Hôtes et clusters`.
+Cloner permet un déploiement rapide et facile de VMs similaires.<br>
+Vous pouvez cloner une VM vers une autre VM ou vers un modèle.<br>
+Cloner vers une VM est un moyen rapide de dupliquer une VM et ses paramètres.<br>
+Cloner vers un modèle est un meilleur moyen pour créer une copie originale qui servira à déployer de multiples VMs.
 
-Faites un clic-droit sur la VM à cloner puis cliquez sur `Cloner`{.action} et sur `Cloner vers une machine virtuelle...`{.action}. 
+#### Cloner vers une VM
 
-![Cloner vers une VM](images/clonevm01.png){.thumbnail}
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers une machine virtuelle`{.action}.
 
-Donnez un nom à cette nouvelle VM et définissez son emplacement dans votre arborescence.
+![CLONE](images/en08clonevm.png){.thumbnail}
 
-![Nommer la vm](images/clonevm02.png){.thumbnail}
+Nommez le clone et sélectionnez son datacenter.<br>
+Cliquez sur `Suivant`{.action}.
 
-### Sélection de la ressource
+![CLONE](images/en09clonename.png){.thumbnail}
 
-Spécifiez le cluster, l'hôte, la vApp ou le resource pool de cette VM.
+Sélectionnez une ressource de calcul.<br>
+Cliquez sur `Suivant`{.action}.
 
-![Ressources de la vm](images/clonevm03.png){.thumbnail}
+![CLONE](images/en10clonecomp.png){.thumbnail}
 
-### Choix du stockage
+Sélectionnez le lieu de stockage.<br>
+Cliquez sur `Suivant`{.action}.
 
-Définissez alors l'emplacement de stockage (espace-disque) cette VM. 
+![CLONE](images/en11clonestor.png){.thumbnail}
 
-Le format de disque virtuel est de type « Thin Provision » (Provisionnement dynamique), ce qui veut dire qu'un disque virtuel sera créé mais il n'utilisera que l'espace-disque réellement employé sur le stockage, peu importe l'espace-disque précédemment utilisé sur la VM source.
+Sélectionnez les options nécessaire pour le clone.
 
-Vous retrouverez plus d'explications sur les formats de disque dans [ce guide](../quel-format-de-disque-choisir/){.external-link}.
+- Personnaliser le système d'exploitation lancera sysprep lors de la première utilisation de la VM.
+- Personnaliser le matériel de cette machine virtuelle permet de modifier les caractéristiques techniques de la VM (taille de disque, RAM, éléments réseau...).
+- Mettre sous tension la machine virtuelle après la création n'est pas recommandé. Certains changements à froid peuvent être necessaires avant de lancer la VM pour éviter des conflits.
 
-Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](https://docs.ovh.com/fr/private-cloud/vmware-vsan/), ou encore l'option [VM encryption](../vm-encrypt/).
+Cliquez sur `Suivant`{.action}.
 
-![stockage vm](images/clonevm04.png){.thumbnail}
+![CLONE](images/en12clonecustom.png){.thumbnail}
 
-### Configuration système
+Vérifiez puis cliquez sur `Terminer`{.action}.
 
-Cette étape vous permet de définir configuration réseau à appliquer à cette VM. Vous avez deux choix :
+![CLONE](images/en13clonefinish.png){.thumbnail}
 
-- Si vous ne cochez rien, cela ne fera aucun changement sur la configuration réseau de la nouvelle VM par rapport à la source ;
+Le processus de clonage s'enclenche et, à l'issue de celui-ci, la nouvelle VM sera disponible.
 
-- `Personnaliser le matériel de cette machine virtuelle (Expérimental)`{.action} : cette option vous permettra de spécifier les nouvelles configurations que vous souhaitez mettre en place sur cette nouvelle VM.
-
-![réseau vm](images/clonevm05.png){.thumbnail}
-
-> [!warning]
+> [!primary]
 >
-> Si vous n'avez pas fait de personalisation de la machine virtuelle, il est nécessaire de modifier la configuration du clone avant de la démarrer, afin d'éviter un conflit d'IP / MAC. 
->
->Dans ce cas, il vous suffit simplement de décocher la carte réseau dans les paramètres de la machine virtuelle une fois celle ci clonée, juste avant de la démarrer.
->
->![déconnecter vm](images/clonevm06.png){.thumbnail}
->
+> Si le clone a été effectué sans personalisation, assurez-vous que vous pouvez démarrer la VM sans danger. Par exemple, si la VM d'origine a une IP fixe, désactivez la carte réseau du clone pour éviter un conflit d'adresses IP.
+
+#### Cloner vers un modèle
+
+Dans l'interface vSphere, rendez-vous dans le tableau de bord `Hôtes et clusters`{.action}.<br>
+Naviguez jusqu'à votre VM, faites un clic-droit sur celle-ci et, dans le menu `Cloner`{.action}, sélectionnez `Cloner vers un modèle`{.action}.
+
+![TEMPLATE](images/en14clonetemp.png){.thumbnail}
+
+Nommez le modèle et selectionnez son datacenter.<br>
+Cliquez sur `Suivant`{.action}.
+
+![TEMPLATE](images/en15clonename.png){.thumbnail}
+
+Sélectionnez une ressource de calcul.<br>
+Cliquez sur `Suivant`{.action}.
+
+![TEMPLATE](images/en16clonecomp.png){.thumbnail}
+
+Sélectionnez le lieu de stockage.<br>
+Cliquez sur `Suivant`{.action}.
+
+![TEMPLATE](images/en17clonestor.png){.thumbnail}
+
+Vérifiez puis cliquez sur `Terminer`{.action}.
+
+![TEMPLATE](images/en18clonefinish.png){.thumbnail}
+
+Le processus de clonage va s'exécuter.<br>
+Aucune VM n'est directement visible mais le nouveau modèle est utilisable dans l'option "Déployer depuis un modèle".
+
+![TEMPLATE](images/en19deploy.png){.thumbnail}
 
 ## Aller plus loin
 

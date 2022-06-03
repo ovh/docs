@@ -22,7 +22,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- You must have an [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} solution.
+- You must have an [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -37,9 +37,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 Once you have launched Outlook on your device, you can add an account in two different ways:
@@ -80,7 +80,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes various [collaborative features](https://www.ovh.co.uk/emails), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-gb/emails/), accessible at <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
 
 ## Go further
 

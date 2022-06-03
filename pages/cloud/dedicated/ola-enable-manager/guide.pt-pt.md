@@ -2,7 +2,7 @@
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud'
 slug: ola-manager
 excerpt: 'Ative o OVHcloud Link Aggregation na sua Área de Cliente'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 order: 1
 ---
 
@@ -10,26 +10,35 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 26/03/2021**
+**Última atualização: 18/05/2022**
 
 ## Objetivo
 
-A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.
+A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.<br>
+A agregação baseia-se na tecnologia IEEE 802.3ad, ou Link Aggregation Control Protocol (LACP).
 
 **Neste manual, discutiremos como criar o OLA na Área de Cliente OVHcloud.**
 
 ## Requisitos
 
-- Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/)
+- Dispor de um [servidor dedicado OVHcloud](https://www.ovhcloud.com/pt/bare-metal/).
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Um sistema operativo / Hypervisor que suporta o protocolo de agregação 802.3ad (LACP).
 
 ## Instruções
 
+> [!warning]
+>
+> A configuração OLA faz-se em todas as interfaces de rede. Constituirão um agregado do tipo "agregação privada".
+>
+> Após a implementação do OLA, o IP público deixará de estar acessível.
+>
+
 ### Configurar o OLA na Área de Cliente OVHcloud
 
-Para começar a configurar o OLA, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione o separador `Bare Metal Cloud`{.action}. Clique em `Servidores dedicados`{.action} no menu à esquerda e selecione o seu servidor na lista.
+Para começar a configurar o OLA, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione o separador `Bare Metal Cloud`{.action}. Clique em `Servidores dedicados`{.action} e selecione o seu servidor na lista.
 
-![network interfaces](images/network_interfaces2021.png){.thumbnail}
+![network interfaces](images/network_interfaces2022.png){.thumbnail}
 
 No separador `Interfaces de rede`{.action} (1), clique no botão `...`{.action} (2) À direita de "Modo" no quadro **OLA: OVHcloud Link Aggregation**. A seguir, clique em `Configurar a agregação privada`{.action} (2).
 

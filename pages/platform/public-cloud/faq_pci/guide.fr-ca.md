@@ -1,9 +1,8 @@
 ---
-title: FAQ
-excerpt: 'FAQ pour les instances Public Cloud OVHcloud'
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
-section: 'Premiers pas'
-order: 3
+section: 'Informations générales'
+order: 01
 ---
 
 **Dernière mise à jour le 06/09/2021**
@@ -63,7 +62,7 @@ Non, un volume doit être détaché avant de pouvoir l'agrandir.
 
 ### Combien de volumes additionnels puis-je attacher à chaque instance ?
 
-Vous pouvez attacher jusqu'à 26 volumes additionnels par instance.
+Vous pouvez attacher jusqu'à 25 volumes additionnels par instance.
 
 ### Comment mes serveurs sont-ils sécurisés ?
 
@@ -79,6 +78,12 @@ Public Cloud intègre une solution SDN (software-defined network). Celle-ci perm
 Ces réseaux privés sont portés par la technologie vRack d'OVHcloud commune aux autres services de l'entreprise, tels que Private Cloud ou les serveurs dédiés. Elle offre ainsi la possibilité de faire communiquer l'ensemble de vos éléments d'infrastructure chez OVHcloud, de manière isolée et sécurisée.
 
 Nous vous invitons à consulter le guide [Configuration du vRack Public Cloud](../public-cloud-vrack/).
+
+### Puis-je changer l'IP publique de mon instance ?
+
+Les IP publiques sont attribuées automatiquement aux instances et ne sont donc pas modifiables. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une IP Failover. De cette manière, quelque soit l'adresse publique attribuée automatiquement à l'instance, vous avez la possibilité d'ajouter une ou plusieurs IP failover à votre instance.
+
+Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une IP Failover](../acheter-une-ip-failover/).
 
 ## Aller plus loin
 

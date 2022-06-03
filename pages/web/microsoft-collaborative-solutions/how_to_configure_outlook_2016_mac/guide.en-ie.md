@@ -15,7 +15,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- You must have an [Exchange](https://www.ovh.ie/emails/){.external} solution.
+- You must have an [Exchange](https://www.ovhcloud.com/en-ie/emails/){.external} solution.
 - You must have Microsoft Outlook installed on your Mac.
 - You need to have the required credentials for the email address you would like to configure.
 
@@ -56,7 +56,7 @@ To check that the account has been properly configured, you can send a test emai
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVH offers a web application that includes various [collaborative features](https://www.ovh.ie/emails/){.external}, which can be accessed at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
+OVH offers a web application that includes various [collaborative features](https://www.ovhcloud.com/en-ie/emails/){.external}, which can be accessed at <https://www.ovh.ie/mail/>. You can log in using your email credentials.
 
 ## Go further
 

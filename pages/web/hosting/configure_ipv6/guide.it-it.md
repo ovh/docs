@@ -29,8 +29,8 @@ I nostri hosting Web sono compatibili con IPv6 dal 2011. ma l'attivazione di que
 
 ## Prerequisiti
 
-- Aver registrato un [dominio](https://www.ovh.it/domini/){.external} nello Spazio Cliente OVHcloud
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external} attiva
+- Aver registrato un [dominio](https://www.ovhcloud.com/it/domains/){.external} nello Spazio Cliente OVHcloud
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -49,7 +49,7 @@ Per verificare la compatibilità del tuo sito con IPv6, utilizza il sito [ipv6-t
 
 ### Step 1: Recuperare l'indirizzo IPv6 del tuo hosting Web
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} nel menu a sinistra e seleziona il tuo servizio.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo servizio.
 
 Nel riquadro `Informazioni generali`, nella sezione **IPv6**, copia il record e passa allo step successivo.
 
@@ -62,7 +62,7 @@ Nel riquadro `Informazioni generali`, nella sezione **IPv6**, copia il record e 
 
 Per trovare l'indirizzo IPv6 nel browser è necessario modificare la zona DNS associata. Per creare un record di tipo **AAAA**, consulta la guida [Modificare una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/).
 
-Nel menu a sinistra, clicca sulla scheda `Zona DNS`{.action} e seleziona `Zona DNS`{.action} del dominio. Clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella. Inserisci l'indirizzo IPv6 utilizzando il tipo di record **AAAA** e l'IPv6 recuperato precedentemente nel tuo Spazio Cliente.
+Clicca sulla scheda `Zona DNS`{.action} e seleziona `Zona DNS`{.action} del dominio. Clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella. Inserisci l'indirizzo IPv6 utilizzando il tipo di record **AAAA** e l'IPv6 recuperato precedentemente nel tuo Spazio Cliente.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

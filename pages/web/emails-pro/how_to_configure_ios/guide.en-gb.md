@@ -26,7 +26,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [OVHcloud Email Pro account](https://www.ovh.co.uk/emails/email-pro/){.external}
+- an [OVHcloud Email Pro account](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external}
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -36,9 +36,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In our example, we use as the hostname: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} and then your service in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There are several ways you can add an account, depending on your iOS version:
@@ -70,7 +70,7 @@ If you need to enter any settings manually in your account preferences, the tech
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also offers a web application that includes [collaborative features](https://www.ovh.co.uk/emails/){.external}, accessible via <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
+OVHcloud also offers a web application that includes [collaborative features](https://www.ovhcloud.com/en-gb/emails/){.external}, accessible via <https://www.ovh.co.uk/mail/>. You can log in using your email credentials.
 
 > [!primary]
 >

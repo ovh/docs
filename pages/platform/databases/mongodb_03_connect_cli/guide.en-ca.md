@@ -2,8 +2,8 @@
 title: MongoDB - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Command Line Interface (CLI)
 slug: mongodb/connect-cli
-section: MongoDB
-order: 100
+section: MongoDB - Guides
+order: 300
 ---
 
 **Last updated 09th September 2021**
@@ -78,7 +78,7 @@ Like this we can help prevent intrusive connection attempts.
 
 Click to authorize a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
 
-![Add an IP](images/ip_whitelist.png){.thumbnail}
+![Add an IP](images/ip_authorize.png){.thumbnail}
 
 > [!primary]
 >
@@ -157,6 +157,7 @@ Once connected, you can manage your MongoDB instance with built-in MongoDB Shell
 Please follow the official MongoDB documentation.
 
 To verify:
+
 - *db* : will indicate on which database you are
 - *use myNewDatabase* will switch to another database (will create one if not existing)
 - *db.myCollection.insertOne( ... )* will insert data in your collection

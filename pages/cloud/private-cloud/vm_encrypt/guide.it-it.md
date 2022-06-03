@@ -2,7 +2,7 @@
 title: Attivare Virtual Machine Encryption (VM Encryption)
 slug: vm-encrypt
 excerpt: Come utilizzare la funzionalità di crittografia delle macchine virtuali
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 07
 ---
 

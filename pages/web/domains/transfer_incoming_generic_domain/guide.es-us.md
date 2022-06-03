@@ -14,7 +14,7 @@ order: 1
 
 ## Objetivo
 
-Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVH.
+Si tiene un dominio registrado con otro proveedor y quiere transferirlo a OVHcloud, puede transferirlo a OVHcloud.
 
 La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Puede transferir su dominio a OVHcloud creando un pedido. Esta operación suele tardar entre uno y diez días.
 
@@ -46,7 +46,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 > [!warning]
 >
-> El procedimiento exacto de transferencia de dominio puede variar, especialmente en el caso de determinados TLD de código de país (ccTLD, como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) y de algunos TLD especiales (.am, .fm, etc.). Según la extensión del dominio, es posible que sea necesario cumplir requisitos adicionales. Le recomendamos que compruebe en primer lugar la información mostrada para la extensión en cuestión, en nuestro sitio web: <https://www.ovh.com/world/es/dominios/precios/>.
+> El procedimiento exacto de transferencia de dominio puede variar, especialmente en el caso de determinados TLD de código de país (ccTLD, como .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) y de algunos TLD especiales (.am, .fm, etc.). Según la extensión del dominio, es posible que sea necesario cumplir requisitos adicionales. Le recomendamos que compruebe en primer lugar la información mostrada para la extensión en cuestión, en nuestro sitio web: <https://www.ovhcloud.com/es/domains/tld/>.
 >
 
 ### 1. Comprobar la información relativa al dominio
@@ -77,11 +77,11 @@ Tenga en cuenta que OVHcloud no es el agente registrador del dominio al iniciar 
 
 ### 3. solicitar la transferencia del dominio a OVHcloud
 
-Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovh.com/world/es/dominios/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
+Una vez desbloqueado el dominio, y con el código obtenido, puede solicitar la transferencia a OVHcloud desde [nuestro sitio web](https://www.ovhcloud.com/es/domains/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Introducir código de transferencia más adelante`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código. Tenga en cuenta que la transferencia no se iniciará hasta que se haya proporcionado un código válido.
 
-También puede completar el pedido con un [alojamiento web](https://www.ovh.com/world/es/hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica cómo hacerlo.
+También puede completar el pedido con un [alojamiento web](https://www.ovhcloud.com/es/web-hosting/){.external} y otras soluciones de OVHcloud. Esto le puede interesar si quiere migrar sus servicios a OVHcloud. Nuestra guía [Migrar un sitio web y el correo a OVHcloud ](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external} explica cómo hacerlo.
 
 > [!warning]
 >
@@ -102,7 +102,7 @@ También puede completar el pedido con un [alojamiento web](https://www.ovh.com/
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} en la columna izquierda y seleccione `Operaciones en curso`{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 
 ### 4. realizar la primera fase de verificación
 
@@ -146,7 +146,7 @@ El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcl
 
 ### 6. gestionar su dominio con OVHcloud
 
-Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
+Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 ## Más información
 

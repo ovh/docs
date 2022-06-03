@@ -17,20 +17,20 @@ This OVHcloud feature allows you to set up an automatic email responder that wil
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.com/sg/web-hosting/){.external} 
+- a [Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
 ### Creating autoresponders
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Web Cloud`{.action} in the top navigation bar. Select `Emails`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, click on the button `Manage auto-replies`{.action} in the tab `Emails`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and switch to `Web Cloud`{.action}. Select `Emails`{.action}, then choose the domain name concerned. Next, click on the button `Manage auto-replies`{.action} in the tab `Emails`{.action}.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain are listed.
 
 To create a new one, click on `Add an auto-reply`{.action}.
 
-![responder](images/email_responder01.gif){.thumbnail}
+![responder](images/email_responder01.png){.thumbnail}
 
 In the popup window, fill out the form according to the information below:
 

@@ -11,7 +11,7 @@ order: 11
 
 ## Objectif
 
-Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
+Vous pouvez avoir besoin de déplacer des volumes additionnels d'un datacenter à un autre, soit parce qu'un nouveau centre de données est disponible, soit parce que vous souhaitez migrer d'[OVHcloud Labs](https://labs.ovh.com/){.external} vers le [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external}.
 
 **Découvrez comment transférer une sauvegarde de volume d'un datacenter à un autre.**
 
@@ -42,7 +42,7 @@ root@serveur:~$ openstack volume list
 +--------------------------------------+--------------+--------+------+------------------------------------+ 
 ```
 
-Lancez ensuite la commande ci-dessous pour déchiffrer le volume à partir de son instance :
+Lancez ensuite la commande ci-dessous pour démonter le volume à partir de son instance :
 
 ```sh 
 root@serveur:~$ openstack server remove volume a8b6b51-4413-4d1a-8113-9597d804b07e 673b0ad9-1fca-485c-ae2b-8ee271b71dc7
@@ -107,7 +107,7 @@ Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelle
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS\_REGION\_NAME.
+Si vous transférez votre sauvegarde vers un datacenter dans le même projet, il vous suffit de modifier la variable OS_REGION_NAME.
 >
 
 ```sh 
@@ -154,30 +154,30 @@ root@serveur:~$ openstack image create --disk-format qcow2 --container-format ba
 Utilisez l'ID de sauvegarde comme image avec la commande suivante :
 
 ```sh
-root@serveur:~$ volume créer —type classique —image aa2a39c6-433c-4e94-995a-a12c4398d457 —size 10 volume_from_snap 
-+—+—+
-| Champ| Valeur| 
-+—+—+
-| pièces jointes| []|
-| zone_disponibilité| nova|
-| amorçable| faux|
-| cohérence_id_groupe| Aucun|
-| création_at| 2019-03-22T15:39:39.880479|
-| description| Aucun|
-| crypté| Faux|
-| id| 938b13c9-414e-45b5-b0fc-cfea743f54e1|
-| multiattachement| Faux|
-| nom| volume_de_capture|
-| propriétés| |
-| Replication_status| désactivé|
-| taille| 10|
-| id_instantané| Aucun|
-| source_volid| Aucun|
-| statut| création|
-| type| classique|
-| update_at| Aucun|
-| id_utilisateur| f63a1d2f27df455bb306bb79b0f2e2aa| 
-+—+—+ 
+root@serveur:~$ volume create --type classic --image aa2a39c6-433c-4e94-995a-a12c4398d457 --size 10 volume_from_snap
++---------------------+--------------------------------------+
+| Field               | Value                                |
++---------------------+--------------------------------------+
+| attachments         | []                                   |
+| availability_zone   | nova                                 |
+| bootable            | false                                |
+| consistencygroup_id | None                                 |
+| created_at          | 2019-03-22T15:39:39.880479           |
+| description         | None                                 |
+| encrypted           | False                                |
+| id                  | 938b13c9-414e-45b5-b0fc-cfea743f54e1 |
+| multiattach         | False                                |
+| name                | volume_from_snap                     |
+| properties          |                                      |
+| replication_status  | disabled                             |
+| size                | 10                                   |
+| snapshot_id         | None                                 |
+| source_volid        | None                                 |
+| status              | creating                             |
+| type                | classic                              |
+| updated_at          | None                                 |
+| user_id             | f63a1d2f27df455bb306bb79b0f2e2aa     |
++---------------------+--------------------------------------+
 ```
 
 ## Aller plus loin

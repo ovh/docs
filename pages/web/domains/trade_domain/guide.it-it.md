@@ -40,15 +40,13 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 > In caso di dubbi, consulta queste risorse:
 >
 > - il sito web del registro TLD corrispondente;
-> - la [lista dei TLD disponibili su OVHcloud](https://www.ovh.it/domini/tariffe/);
+> - la [lista dei TLD disponibili su OVHcloud](https://www.ovhcloud.com/it/domains/tld/);
 > - sezione `Operazioni in corso`{.action} dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per verificare gli aggiornamenti dello stato del dominio.
 >
 
 ### Step 1: seleziona il dominio
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} nella colonna di sinistra, seleziona il dominio generico (gTLD) di cui vuoi modificare il proprietario.
-
-![modifica del proprietario](images/SS_2.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}. Clicca su `Domini`{.action}, seleziona il dominio generico (gTLD) di cui vuoi modificare il proprietario.
 
 ### Step 2: avvia la procedura di modifica del proprietario
 

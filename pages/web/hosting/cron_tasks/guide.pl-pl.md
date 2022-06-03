@@ -25,12 +25,12 @@ Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/).
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action} w kolumnie po lewej stronie.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
 Wybierz odpowiedni hosting, kliknij zakładkę `Plus+`{.action}, a następnie `zaplanowane zadania - Cron`{.action}
 

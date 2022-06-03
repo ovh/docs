@@ -6,7 +6,7 @@ legacy_guide_number: 1851
 section: 'Gestion via OpenStack'
 ---
 
-**Dernière mise à jour le 21/01/2019**
+**Dernière mise à jour le 30/03/2022**
 
 ## Objectif
 
@@ -26,16 +26,18 @@ Grâce à l'API OpenStack, vous pouvez automatiser cette gestion en générant d
 
 Ouvrez le terminal ou connectez-vous en SSH à l'environnement que vous souhaitez préparer.
 
-Mettez à jour le cache des paquets, grâce à la commande `apt-get update`:
+Mettez à jour le cache des paquets, grâce à la commande `apt update`:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilisez la commande ci-dessous pour installer les clients Nova (application de calcul), Glance (image service) et Swift :
+Utilisez la commande ci-dessous pour installer les clients OpenStack ainsi que Nova (application de calcul) et Swift :
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.
@@ -56,27 +58,18 @@ nova help
 
 Ouvrez le terminal ou connectez-vous en SSH à l'environnement que vous souhaitez préparer.
 
-Mettez à jour le cache des paquets grâce à la commande suivante  :
+Mettez à jour le cache des paquets grâce à la commande suivante :
 
 ```sh
 yum update -y
 ```
-Installez le rpm rdo-release avec la commande suivante :
+
+Utilisez la commande ci-dessous pour installer les clients OpenStack ainsi que Nova (application de calcul) et Swift :
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-Puis le client OpenStack :
-
-```sh
-yum install -y python-openstackclient
-```
-
-Et enfin le client Nova :
-
-```sh
-yum install -y python-novaclient
+yum install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 À l'issue de cette étape, nous vous recommandons de créer un utilisateur spécial pour ne pas vous servir de l’utilisateur root.
@@ -144,6 +137,39 @@ Si l'opération s'est correctement déroulée, un résumé s'affiche :
 Vous pouvez vérifier la version d'installation dans la fenêtre CMD (ligne de commande) nouvellement ouverte, en saisissant « python-V » depuis n'importe quel emplacement du système.
 
 ![Vérification](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### Sous MacOS
+
+Vous pouvez utiliser [HomeBrew](https://brew.sh), un gestionnaire de paquets pour MacOS.
+
+Ouvrez le terminal et entrez la commande suivante :
+
+```bash
+brew install openstackclient
+```
+
+Utilisez les commandes ci-dessous pour installer les clients Nova (application de calcul) et Swift :
+
+Pour Python2 :
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Pour Python3 :
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Pour accéder aux outils d'aide, exécutez la commande suivante :
+
+```sh
+openstack --help
+nova help
+```
 
 ## Aller plus loin
 

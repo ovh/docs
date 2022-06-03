@@ -3,14 +3,14 @@ title: 'Configurar a rede em ESXi nas gamas High Grade & SCALE'
 slug: esxi-network-hg-scale
 excerpt: 'Saiba como configurar a rede ESXi nas gamas High Grade & SCALE.'
 section: 'Utilização avançada'
-order: 6
+order: 7
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 07/10/2021**
+**Última atualização: 09/05/2022**
 
 ## Objetivo
 
@@ -25,7 +25,7 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged*
 
 ## Requisitos
 
-* Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
+* Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços. O bloco deve ser apontado para o vRack.
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
 * Dispor de um [servidor dedicado compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
@@ -33,12 +33,24 @@ Nas gamas High Grade & SCALE, o funcionamento dos IP fail-over em modo *bridged*
 
 ## Instruções
 
-> [!primary]
+> [!warning]
 >
-> Nessas gamas de servidores, há 4 placas de rede. Dois para o público, dois para o privado. Para beneficiar do conjunto da largura de banda, devem ser criados agregados.
+> Nessas gamas de servidores, há 4 placas de rede. Para beneficiar de toda a largura de banda, devem ser criados agregados. A nossa documentação baseia-se nestes agregados de placas de rede.
+>
+> **Em contrapartida, o ESXi não suporta nativamente o LACP.**
+> Não haverá redundância. A totalidade da largura de banda das placas de rede do seu servidor também não poderá ser explorada.
+>
+
+> [!warning]
+>
+> Um defeito conhecido está presente na interface gráfica ESXi do utilizador. Assim, a execução destas etapas nesta interface resultaria numa configuração não funcional. É absolutamente necessário aplicar esta configuração utilizando a interface de linha de comando em SSH.
 >
 
 ### IP Failover através do vRack
+
+Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e abra o menu `vRack`{.action}.
+
+Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco público de endereços IP que deseja adicionar ao vRack e, a seguir, clique no botão `Adicionar`{.action}.
 
 #### Configuração de origem
 

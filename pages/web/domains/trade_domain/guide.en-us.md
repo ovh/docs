@@ -36,14 +36,12 @@ Besides the domain contacts, you need to provide information on the owner when r
 > We recommend to consult the following resources in case of any doubt:
 >
 > - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovh.com/world/domains/prices/)
+> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en/domains/tld/)
 > - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
-
-![changing owner](images/SS_2.png){.thumbnail}
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action}. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 ### Step 2: Inititate the owner change procedure
 

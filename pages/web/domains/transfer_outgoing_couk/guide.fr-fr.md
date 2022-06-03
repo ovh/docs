@@ -27,7 +27,7 @@ Le processus de changement de bureau d'enregistrement (*registrar*) pour les dom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine .uk](https://www.ovh.com/fr/domaines/) enregistré chez OVHcloud
+- Disposer d'un [nom de domaine .uk](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et disposer des droits nécessaires pour gérer le nom de domaine (être administrateur du domaine)
 - Le nom de domaine doit être toujours actif, c'est-à-dire qu'il ne doit pas avoir expiré ou être bloqué par OVHcloud
 - Le nom de domaine ne doit pas faire l’objet d’un litige en cours auprès du [Registre Nominet](https://www.nominet.uk/)
@@ -40,13 +40,12 @@ Si vous ne connaissez pas encore le TAG requis, vous pouvez en faire la demande 
 
 ### Étape 1 : vérifier les informations nécessaires
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut à gauche. Cliquez sur `Noms de domaine`{.action} dans la colonne à gauche, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} . Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné.
 
 N'oubliez pas que vous devez être connecté en tant que contact administrateur.
 
 Dans l'onglet `Informations générales`{.action}, vous pouvez vérifier que les conditions requises pour le processus de transfert sont remplies.
 
-![transfert sortant](images/img_4266.jpg){.thumbnail}
 
 ### Étape 2 : modifier le TAG de votre nom de domaine
 

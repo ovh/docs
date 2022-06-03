@@ -1,5 +1,5 @@
 ---
-title: 'Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
+title: 'Tutorial - Einen Minecraft-Server auf einem VPS oder Dedicated Server einrichten'
 slug: minecraft-server-auf-vps
 excerpt: 'Erfahren Sie hier, wie Sie Ihren eigenen Minecraft-Server installieren'
 section: Tutorial
@@ -27,10 +27,10 @@ Sie können einen vorkonfigurierten Minecraft-Server mieten oder einen solchen s
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) mit mindestens 2 GB RAM in Ihrem OVHcloud Kunden-Account
-- Sie haben eine GNU/Linux Distribution auf dem Server installiert
-- Administrator-Zugang (root) über SSH auf Ihren Server
-- Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration
+- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Kunden-Account.
+- Sie haben eine GNU/Linux Distribution auf dem Server installiert.
+- Administrator-Zugang (root) über SSH auf Ihren Server.
+- Sie verfügen über ein grundlegendes Verständnis der GNU/Linux-Administration.
 
 ## In der praktischen Anwendung
 
@@ -180,4 +180,4 @@ Bitte beachten Sie, dass diese Installationsanleitung auch für einen [OVHcloud 
 
 Zu Add-ons, Mods und um die Konfiguration Ihres Minecraft-Servers zu individualisieren, finden Sie hier die offizielle Dokumentation: <https://help.mojang.com/>.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

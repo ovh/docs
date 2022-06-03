@@ -2,8 +2,8 @@
 title: 'Public Cloud & VPS - Image life cycle'
 slug: public-cloud-vps-image-life-cycle
 excerpt: Find out about the life cycle of images provided for Public Cloud & VPS
-section: 'Getting started'
-order: 8
+section: 'General information'
+order: 04
 ---
 
 **Last updated 22nd September 2021**
@@ -38,6 +38,7 @@ This documentation will share the end of life (EOL) roadmap for OVHcloud images.
 - Ubuntu 20.10 - July 2021
 - Fedora 33 - ~ November 2021 (maintained for 4 weeks after Fedora 35 release)
 - Centos 8 - December 2021
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.

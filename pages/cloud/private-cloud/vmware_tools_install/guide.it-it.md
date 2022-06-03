@@ -10,7 +10,7 @@ order: 6
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 03/08/2020**
+**Ultimo aggiornamento: 01/02/2022**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ VMware Tools è un software che migliora le performance di una macchina virtuale
 
 ## Prerequisiti
 
-- Avere accesso al client Web (HTML5)
+- Avere un utente attivo (creato nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it))
 
 ## Procedura
 
@@ -35,7 +35,6 @@ La maggior parte delle distribuzioni Linux recenti permettono di installare VMwa
 In questo modo viene garantito il regolare aggiornamento sia di MVware Tools che degli altri componenti del sistema operativo della macchina virtuale. 
 
 Se nella distribuzione utilizzata è disponibile *Open VM Tools*, è possibile trovare il pacchetto con il nome *open-vm-tools*
-
 
 Questo metodo di installazione è valido almeno per le seguenti versioni di GNU/Linux:
 
@@ -90,4 +89,4 @@ Una volta terminata l'installazione, ti proporrà di riavviare la macchina per t
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

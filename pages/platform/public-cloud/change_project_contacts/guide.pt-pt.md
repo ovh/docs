@@ -1,68 +1,60 @@
 ---
-title: 'Alterar os contactos de um projeto'
-excerpt: 'Alterar os contactos de um projeto'
+title: "Gestão de contactos de um projeto"
+excerpt: "Saiba como gerir os contactos de um projeto Public Cloud"
 slug: alterar_os_contactos_de_um_projeto
-legacy_guide_number: g2106
 section: 'Gestão do projeto'
+order: 6
 ---
 
-**Última atualização a 6 de dezembro de 2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 04/04/2022**
 
 ## Objetivo
-O Public Cloud da OVHcloud oferece-lhe agora a possibilidade de alterar os contactos de faturação e de gestão de projetos.
-Isto significa que pode separar a conta OVHcloud, que gere as suas faturas, da conta OVH que trata da gestão das várias instâncias. 
 
-**Este guia explica-lhe como editar os seus contactos.**
+Pode alterar os contactos de administrador e faturação de um projeto Public Cloud na sua Área de Cliente.<br>
+A modificação destes contactos permite dissociar a gestão técnica da gestão de faturação, para os serviços de um projeto.
 
+**Este manual explica-lhe como alterar os contactos de um projeto Public Cloud na sua Área de Cliente.**
 
 ## Requisitos
 
-- Duas contas OVHcloud
-- [Um projeto Public Cloud](https://www.ovhcloud.com/pt/public-cloud/)
-- Certifique-se de que os contactos de gestão e de faturação pertencem à mesma subsidiária
+- Ter um projeto [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Contactos de administrador e faturação na mesma filial OVHcloud
 
 ## Instruções
 
-Para alterar os contactos dos seus projetos, comece por aceder a “Contactos e Permissões” no separador “Gestão de projetos”.
+### Modificar os contactos
 
-![contactos](images/contact.png){.thumbnail}
+Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e abra o seu projeto `Public Cloud`{.action}. Clique em `Contacts and Rights`{.action} na secção **Project Management**.
 
-Desta forma, irá ver os contactos de gestão e de faturação.
+Esta página permite-lhe ver os contactos de administrador e faturação associados ao seu projeto.
 
-![contactos](images/contact1.png){.thumbnail}
+![alteracao-contactos](images/contact1.png){.thumbnail}
 
-Ao clicar em “Editar” será encaminhado para uma nova página que lhe permite alterar os seus contactos:
+Clique num dos botões `Alterar`{.action} para modificar os contactos atuais. Esta secção irá abrir a secção **Gestão dos contactos** na Área de Cliente.
 
-![contactos](images/contactchange.png){.thumbnail}
+Aparecerão os contactos do seu projeto Public Cloud na tabela. Clique no botão `...`{.action} e em `Alterar contactos`{.action}.
 
-De seguida, clique nos 3 pontos à direita do projeto Public Cloud e clique em “Editar Contactos”. Surgirá uma nova janela que lhe permite alterar os contactos.
+![alteracao-contactos](images/contactchange.png){.thumbnail}
 
-![contactos](images/contactchange1.png){.thumbnail}
+Na nova janela, indique o identificador de cliente desejado para cada contacto que pretende alterar. Tenha em conta que as contas OVHcloud para os `Contact administrador` e `Contact Faturation` devem ser obrigatoriamente indicadas na mesma filial OVHcloud.
 
-Depois de confirmar os novos contactos, ambas as contas OVH receberão um e-mail com um código que lhes permite confirmar esta alteração:
+![alteracao-contactos](images/contactchange1.png){.thumbnail}
 
-![contactos](images/contactchange2.png){.thumbnail}
+Depois de clicar no botão `Validar`{.action}, as duas contas OVHcloud afetadas pela alteração receberão um e-mail de confirmação. Este e-mail contém um código(token) que permite validar a alteração de contacto no separador `Os meus pedidos`{.action} na secção **Gestão dos contactos**.
 
-Tem de confirmar este procedimento em ambas as contas.
-
-## Confirmação
-
-Para confirmar, aceda às propriedades da sua conta e selecione “Os meus contactos” no lado direito:
-
-![contactos](images/controlpanel.png){.thumbnail}
-
-No Painel de Controlo de ambos os contactos, tem de aceder à secção “Os meus pedidos”:
-
-![contactos](images/controlpanel1.png){.thumbnail}
-
-Clique nos 3 pontos à direita e selecione “Aceitar pedido”. Surgirá uma nova janela: 
-
-![contactos](images/contactchange3.png){.thumbnail}
-
-Só é necessário inserir o código recebido por e-mail na janela que surge após a confirmação do procedimento em ambas as contas.
-
-No final, os contactos são alterados conforme solicitado.
+Para uma explicação mais detalhada deste procedimento, consulte o nosso guia "[Como gerir os contactos dos serviços OVHcloud](../../customer/gestao_dos_contactos/)".
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+[Informações sobre o método de faturação cloud](../informacoes-sobre-o-metodo-de-faturacao-cloud/)
+
+[Como gerir os contactos dos serviços OVHcloud](../../customer/gestao_dos_contactos/)
+
+[Delegar projetos](../delegar_os_seus_projetos/)
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

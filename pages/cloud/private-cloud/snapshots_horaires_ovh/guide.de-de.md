@@ -11,7 +11,7 @@ order: 06
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 26.11.2020**
+**Letzte Aktualisierung am 15.03.2022**
 
 ## Ziel
 
@@ -48,6 +48,11 @@ Die Größe eines Snapshots ist also ungefähr gleich der Größe der Blöcke, d
 In der Praxis wird ein zum Zeitpunkt *T* erstellter Snapshot nur wenige Kilobyte ausmachen. Die Größe des Snapshots wird abhängig von den bis zum nächsten Snapshot vorgenommenen Änderungen angepasst. Wenn Sie Ihre Daten löschen, wird der Speicherplatz erst freigegeben, wenn der Snapshot gelöscht wurde.
 
 ### Snapshot zum Zeitpunkt H-1
+
+> [!warning]
+>
+>.zfs ordner ist für neue Datastore-Generationen nicht mehr sichtbar. Sie können jedoch den technischen Support nutzen, um die Wiederherstellung einer VM mit stündlicher Sicherung bei H-1 zu beantragen.
+>
 
 Sie können den ZFS-Snapshot der letzten Stunde (H-1) über den vSphere Web Client abrufen, da dieser direkt in Ihren Datastores gespeichert ist. 
 

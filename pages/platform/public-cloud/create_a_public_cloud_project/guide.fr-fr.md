@@ -3,7 +3,7 @@ title : 'Créer votre premier projet Public Cloud'
 slug: creer-un-projet-public-cloud
 excerpt: 'Découvrez comment créer votre premier projet Public Cloud depuis l’espace client OVHcloud'
 section : Premiers pas
-order: 1
+order: 02
 ---
 
 **Dernière mise à jour le 06/10/2021**
@@ -23,8 +23,6 @@ La création d’un projet est la première étape indispensable pour déployer 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), et cliquez sur le menu `Public Cloud`{.action}.
 
 Cliquez ensuite sur `Créez votre premier projet OVH Public Cloud`{.action}.
-
-![première connexion](images/firstconnection.png){.thumbnail}
 
 Si vous disposez d'un bon d'achat, vous pouvez alors le renseigner. Seuls les bons d'achats fournis pour votre filiale OVHcloud peuvent être utilisés.
 

@@ -10,7 +10,7 @@ order: 2
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 09/09/2021**
+**Última actualización: 24/02/2022**
 
 ## Objetivo
 
@@ -33,7 +33,7 @@ Esta es la lista de programas incluidos en la siguiente:
 
 ### Contratar una licencia
 
-Acceda a nuestra web de [OVHcloud.com](https://www.ovh.es/office-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
+Acceda a nuestra web de [OVHcloud.com](https://www.ovhcloud.com/es-es/collaborative-tools/microsoft-365/){.external} y seleccione el apartado "Herramientas colaborativas" de nuestra sección "Web Cloud".
 
 También puede contratar una licencia desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Una vez conectado, seleccione `Web Cloud`{.action} en la barra superior y haga clic en el botón `Contratar`{.action} y en `o365`{.action}.
 
@@ -45,7 +45,7 @@ Será redirigido a la página de contratación para validarla y abonarla.
 
 ### Activar la licencia
 
-Una vez que haya contratado la licencia, deberá activarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Office`{.action} y el grupo de licencias correspondiente.
+Una vez que haya contratado la licencia, deberá activarla desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} y seleccione `Office`{.action} y el grupo de licencias correspondiente.
 
 Haga clic en el botón `...`{.action} delante de la licencia y, seguidamente, en `Editar la cuenta`{.action}.
 
@@ -62,7 +62,7 @@ Una vez activada la licencia, recibirá un mensaje de correo electrónico en la 
 Este mensaje de correo electrónico incluye la información necesaria para descargar e instalar su suite Microsoft 365, es decir, la dirección de **correo electrónico de activación** y la **contraseña**.
 
 >
-> Si desea establecer usted mismo la contraseña, deberá hacerlo desde el área de cliente. En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione el grupo de licencias correspondiente.
+> Si desea establecer usted mismo la contraseña, deberá hacerlo desde el área de cliente. En la sección `Web Cloud`, haga clic en `Microsoft`{.action} y seleccione el grupo de licencias correspondiente.
 >
 > Haga clic en el botón `...`{.action} a la derecha de la licencia correspondiente y, seguidamente, en `Cambiar la contraseña`{.action}.
 >
@@ -80,11 +80,30 @@ Acceda a <https://portal.office.com/> y conéctese con la dirección de **correo
 
 ### Añadir una licencia a un grupo existente
 
-Si quiere añadir una o más licencias al grupo de licencias existente, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} en la columna izquierda y seleccione `Office`{.action} y el grupo de licencias correspondiente.
+Si quiere añadir una o más licencias al grupo de licencias existente, puede hacerlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la sección `Web Cloud`, haga clic en `Microsoft`{.action} y seleccione `Office`{.action} y el grupo de licencias correspondiente.
 
 Haga clic en el botón `Contratar más licencias`{.action} a la derecha. Indique el número y el tipo de licencias que quiere contratar.
 
 ![correo electrónico](images/Outlook-cps1-05.png){.thumbnail}
+
+### Gestionar las suscripciones <a name="managesubscriptions">>
+
+#### Eliminar una licencia en un grupo de licencias
+
+En la pestaña `Licencias`{.action} de su grupo de licencias, haga clic en el botón `...`{.action} a la derecha de la licencia que desea dar de baja y haga clic en `Eliminar la cuenta`{.action}.
+
+![emails](images/Outlook-cps1-06.png){.thumbnail}
+
+> [!primary]
+> El consumo del mes en curso se facturará al final del mismo.
+
+#### Dar de baja el grupo de licencias
+
+Para dar de baja su grupo de licencias Microsoft Office 365 CSP1, haga clic en su nombre en la esquina superior derecha del área de cliente de OVHcloud y seleccione el botón `Gestión de servicios`{.action}. Haga clic en el botón `...`{.action} a la derecha del grupo de licencias que desea dar de baja y, seguidamente, `Dar de baja`{.action}.< br>
+Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
+
+> [!primary]
+> El consumo del mes en curso se facturará al final del mismo.
 
 ## Más información
 

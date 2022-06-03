@@ -6,7 +6,7 @@ legacy_guide_number: g1851
 section: Gestão via OpenStack
 ---
 
-**Última atualização: 23/04/2019**
+**Última atualização: 30/03/2022**
 
 ## Sumário
 
@@ -26,16 +26,18 @@ Graças à API OpenStack, pode automatizar esta gestão gerando scripts. O clien
 
 Abra o terminal ou estabeleça uma ligação em SSH ao ambiente que pretende preparar.
 
-Atualize a cache dos pacotes através do comando `apt-get update`:
+Atualize a cache dos pacotes através do comando `apt update`:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Utilize o comando abaixo para instalar os clientes Nova (aplicação de cálculo), Glance (imagem do serviço) e Swift:
+Utilize o comando abaixo para instalar os clientes OpenStack, Nova (aplicação de cálculo) e Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
@@ -61,22 +63,13 @@ Atualize a cache dos pacotes através do seguinte comando:
 ```sh
 yum update -y
 ```
-Instale o rpm rdo-release com o seguinte comando:
+
+Utilize o comando abaixo para instalar os clientes OpenStack, Nova (aplicação de cálculo) e Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-E o cliente OpenStack:
-
-```sh
-yum install -y python-openstackclient
-```
-
-E, finalmente, o cliente Nova:
-
-```sh
-yum install -y python-novaclient
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Nesta etapa, recomendamos que crie um utilizador especial para não usar o utilizador root.
@@ -144,6 +137,39 @@ Se a operação se realizar corretamente, aparecerá um resumo:
 No símbolo do sistema, pode verificar a versão instalada introduzindo “python-V” (não é relevante em que diretório se encontra).
 
 ![Verificação](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### Em MacOS
+
+Pode utilizar [HomeBrew](https://brew.sh), um gestor de pacotes para MacOS.
+
+Abra o terminal e execute o seguinte comando:
+
+```bash
+brew install openstackclient
+```
+
+Utilize os comandos abaixo para instalar os clientes Nova (aplicação de cálculo) e Swift:
+
+Para Python2:
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Para Python3:
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Para aceder às ferramentas de ajuda, execute o seguinte comando:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Quer saber mais?
 

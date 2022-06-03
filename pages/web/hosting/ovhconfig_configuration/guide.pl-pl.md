@@ -10,13 +10,13 @@ order: 4
 
 ## Wprowadzenie
 
-Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovh.pl/hosting/){.external}. Aby Ci to umożliwić, firma OVH udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
+Możesz chcieć z różnych powodów zmienić konfigurację [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}. Aby Ci to umożliwić, firma OVH udostępniła plik **.ovhconfig** pozwalający zmienić niektóre ustawienia.
 
 **Poznaj plik .ovhconfig i dowiedz się, jak go modyfikować.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} (z wyjątkiem Cloud Web)
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
 - Posiadanie hasła użytkownika FTP umożliwiające dostęp do przestrzeni dyskowej 
 
 ## W praktyce
@@ -37,7 +37,7 @@ Kontynuuj lekturę przewodnika, jeśli chcesz zmodyfikować ręcznie plik .ovhco
 
 Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP. Następnie, przy użyciu tych informacji, zaloguj się do Twojej przestrzeni dyskowej. Jeśli potrzebujesz pomocy, skorzystaj z dokumentacji zatytułowanej [Logowanie do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#2-logowanie-do-przestrzeni-dyskowej){.external}.
 
-**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action}. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -71,8 +71,8 @@ Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosowa�
 |Zmienna|Szczegóły|
 |---|---|
 |app.engine|Pozwala zmodyfikować silnik PHP używany przez hosting. Wpisz „php”, aby włączyć akcelerator PHP-FPM i „phpcgi”, aby go wyłączyć.|
-|app.engine.version|Pozwala wybrać wersję PHP używaną przez hosting spośród [wersji oferowanych przez OVH](https://www.ovh.pl/hosting/php.xml){.external}. Wpisz wybraną przez Ciebie wersję.|
-|http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVH](https://www.ovh.pl/hosting/mod_security.xml){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
+|app.engine.version|Pozwala wybrać wersję PHP używaną przez hosting spośród [wersji oferowanych przez OVH](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/){.external}. Wpisz wybraną przez Ciebie wersję.|
+|http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVH](https://www.ovhcloud.com/pl/web-hosting/options/){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
 |environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Wpisz „production”, aby zmaksymalizować buforowanie i ukryć błędy PHP lub „development”, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
 |container.image|Pozwala modyfikować środowisko wykonawcze wykorzystywane przez hosting. Wpisz nazwę wybranego silnika. Wykaz silników możesz znaleźć w naszej dokumentacji: [Dostępne opcje konfiguracji środowiska uruchomieniowego](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
 

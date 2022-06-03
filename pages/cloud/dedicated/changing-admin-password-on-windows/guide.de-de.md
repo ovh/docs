@@ -26,14 +26,14 @@ Die folgenden Schritte beschreiben den Vorgang zur Änderung des lokalen Admin-P
 
 ### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
 
 Der Netboot-Modus muss auf "rescue64-pro (Customer rescue system (Linux))" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
 <br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "rescue64-pro" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen.
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-![Rescuemode](images/adminpw_win_01.png){.thumbnail}
+![Rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts von "Status" unter **Dienstleistungsstatus**.
 <br>Klicken Sie auf `Neu starten`{.action} starten und der Server wird in den Rescue-Modus versetzt.<br>
@@ -253,7 +253,7 @@ Das Login-Interface sollte eine Nachricht anzeigen, die den Ablauf des Passworts
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-Das neue Passwort des Admin-Benutzers muss nun zweimal eingegeben werden. Das Bestätigungsfeld ist jedoch noch nicht sichtbar, was bedeutet, dass Sie das erste Feld leer lassen, Ihr neues Passwort in das zweite Feld eingeben und dann die Tabulatortaste ("↹") der (virtuellen) Tastatur verwenden müssen, um zum dritten Feld ("Passwort bestätigen") zu wechseln.
+Das neue Passwort des Admin-Benutzers muss nun zweimal eingegeben werden. Das Bestätigungsfeld ist jedoch noch nicht sichtbar, was bedeutet, dass Sie das erste Feld leer lassen, Ihr neues Passwort in das zweite Feld eingeben und dann die Tabulatortaste ("↹") der (virtuellen) Tastatur verwenden müssen, um zum dritten Feld (“Passwort bestätigen”) zu wechseln.
 <br>Geben Sie das Passwort erneut ein und klicken Sie auf den Pfeil, um es zu speichern.
 
 ![Enterpw](images/adminpw_win_05.png){.thumbnail}
@@ -284,14 +284,14 @@ Es wird empfohlen, bei der Eingabe von Passwörtern in dieses Interface die virt
 
 #### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinwinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
 
 Der Netboot-Modus muss auf "WinRescue (Rescue System for Windows)" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
 <br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "WinRescue" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen. 
 
 Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-![Winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![Winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts von "Status" unter **Dienstleistungsstatus**.
 <br>Klicken Sie auf `Neu starten`{.action} starten und der Server wird in den Rescue-Modus versetzt.<br>

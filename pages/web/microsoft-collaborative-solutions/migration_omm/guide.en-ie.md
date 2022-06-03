@@ -15,7 +15,7 @@ section: 'Account migration'
 
 ## Requirements
 
-- You must have an email service with OVH, such as [Exchange](https://www.ovh.ie/emails/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVH Web Hosting](https://www.ovh.ie/web-hosting/){.external} plan).
+- You must have an email service with OVH, such as [Exchange](https://www.ovhcloud.com/en-ie/emails/){.external}, [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVH Web Hosting](https://www.ovhcloud.com/en-ie/web-hosting/){.external} plan).
 - You must have the login details for the email accounts you want to migrate (the source accounts).
 - You must have the login details for the OVH email accounts that will be receiving the migrated data (the destination accounts).
 

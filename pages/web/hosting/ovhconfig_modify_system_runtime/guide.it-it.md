@@ -11,13 +11,13 @@ order: 3
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale… gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
+I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, spazi dove condividere una passione o promuovere un’attività professionale… gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito Web, purché compatibile con la [configurazione delle nostre infrastrutture](http://pro.ovh.net/infos/){.external}.
 
 **Questa guida ti mostra come modificare la configurazione del tuo servizio di hosting dallo Spazio Cliente OVH.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
@@ -35,7 +35,7 @@ Quando modifichi la configurazione del tuo hosting, cambi anche i parametri di b
 
 #### Step 1: accedi alla gestione della configurazione dell’hosting
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action} nel menu a sinistra, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio dalla sezione `Hosting`{.action}, assicurati di essere posizionato nella scheda `Informazioni generali`{.action} e, nel riquadro “Configurazione”, clicca sui tre puntini in corrispondenza della versione PHP e seleziona `Modifica la configurazione`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Una volta scelto il nuovo ambiente, è possibile eseguire le modifiche in due mo
 
 #### Versione di PHP
 
-PHP è un linguaggio di programmazione in continua evoluzione disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni rilasciate, disponibili alla pagina: <https://www.ovh.it/hosting-web/php.xml> 
+PHP è un linguaggio di programmazione in continua evoluzione disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni rilasciate, disponibili alla pagina: <https://www.ovhcloud.com/it/web-hosting/uc-programming-language/> 
 
 Dal momento che le ultime versioni potrebbero non includere alcune funzionalità, **prima di apportare qualsiasi modifica assicurati che la nuova versione di PHP sia compatibile con il tuo sito Internet**. 
 
@@ -133,4 +133,4 @@ La modalità permette di gestire sia il comportamento della cache dei file stati
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

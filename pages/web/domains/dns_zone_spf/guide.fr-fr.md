@@ -48,9 +48,9 @@ Vous devrez donc vous assurer de mettre dans le SPF les sources d'envoi que vous
 
 La configuration OVHcloud s'applique aux solutions ci-dessous :
 
-- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} ;
-- [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ;
-- [Hosted Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}.
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} ;
+- [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/){.external} ;
+- [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
 
 Lorsque vous commandez l'une de ces solutions, nous vous recommandons d'utiliser un enregistrement SPF comportant les informations d'OVHcloud dans la zone DNS de votre nom de domaine. Ce dernier ressemble à ceci :
 
@@ -58,7 +58,7 @@ Lorsque vous commandez l'une de ces solutions, nous vous recommandons d'utiliser
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Cette configuration ne s'applique pas aux offres Provider Exchange ou [Private Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}.
+Cette configuration ne s'applique pas aux offres Provider Exchange ou [Private Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
 
 Pour l'offre Exchange Provider, la configuration est la suivante :
 
@@ -71,7 +71,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.b
 
 ### Vérifier votre configuration SPF actuelle
 
-Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un enregistrement SPF est déjà configuré pour ce dernier. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la section `Noms de domaine`{.action} à gauche, sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Zone DNS`{.action}.
+Si votre domaine utilise la configuration OVHcloud, vous pouvez vérifier si un enregistrement SPF est déjà configuré pour ce dernier. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Zone DNS`{.action}.
 
 Un tableau devrait apparaître. Ce dernier affiche la zone DNS de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements, tous symbolisés par une ligne du tableau.
 
@@ -97,7 +97,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 ### Configurer l'enregistrement SPF
 
-Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour ajouter un enregistrement SPF dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
@@ -107,7 +107,7 @@ Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont propos
 
 - [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 - [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
-- [Ajouter un enregistrement SPF ](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider).
+- [Ajouter un enregistrement SPF ](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external} et Exchange Provider).
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
@@ -185,7 +185,7 @@ Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les in
 
 ### Modifier un enregistrement SPF
 
-Pour modifier le SPF dans la configuration OVHCloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
+Pour modifier le SPF dans la configuration OVHCloud de votre domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous ensuite dans l’onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHCloud de votre domaine. Chaque ligne correspond à un enregistrement DNS. Repérez votre enregistrement TXT ou SPF dans ce tableau et cliquez sur le bouton `...`{.action} afin d'éditer l'entrée.
 

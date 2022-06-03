@@ -30,7 +30,7 @@ El proceso de cambio de agente registrador (*registrador*) para los dominios de 
 
 ## Requisitos
 
-- Tener un [dominio .uk](https://www.ovh.com/world/es/dominios/) registrado con OVHcloud.
+- Tener un [dominio .uk](https://www.ovhcloud.com/es/domains/) registrado con OVHcloud.
 - Tienes acceso a tu [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y tener los permisos necesarios para gestionar el dominio (ser administrador del dominio).
 - El dominio debe estar siempre activo, es decir, no debe haber expirado o haber sido bloqueado por OVHcloud.
 - El nombre de dominio no debe ser objeto de un litigio en curso ante el [Registro Nominet](https://www.nominet.uk/)
@@ -48,13 +48,12 @@ Si todavía no conoce el TAG necesario, puede solicitarlo a su nuevo proveedor o
 
 ### Paso 1: comprobar la información necesaria
 
-Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action} en la columna izquierda. Haga clic en `Dominios`{.action} en la columna de la izquierda y seleccione el dominio correspondiente.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action}. Haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 Recuerde que debe estar conectado como administrador.
 
 En la pestaña `Información general`{.action}, puede comprobar que se cumplen los requisitos para el proceso de transferencia.
 
-![transferencia saliente](images/img_4266.jpg){.thumbnail}
 
 ### Paso 2: modificar el TAG del dominio
 

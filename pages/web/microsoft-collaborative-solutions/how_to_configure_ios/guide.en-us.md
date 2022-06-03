@@ -24,7 +24,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 
 ## Requirements
 
-- an [OVHcloud Exchange account](https://www.ovh.com/world/emails/hosted-exchange/){.external}
+- an [OVHcloud Exchange account](https://www.ovhcloud.com/en/emails/hosted-exchange/){.external}
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 
@@ -36,7 +36,7 @@ You can configure Exchange accounts on email clients, if they are compatible. By
 >
 > In our example, we use as the hostname: ex**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action} in the left-hand column. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), in the `Web Cloud`{.action} section, if you select `Microsoft`{.action}. Click on `Exchange`{.action} and then on your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device’s home screen, go to `Settings`{.action} (cogwheel icon). There are several ways you can add an account, depending on your iOS version:

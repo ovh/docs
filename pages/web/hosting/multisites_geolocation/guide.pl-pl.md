@@ -12,12 +12,12 @@ Opcja geolokalizacji jest dostępna w [panelu klienta](https://www.ovh.com/auth/
 
 Po zalogowaniu należy kliknąć na nazwę strony głównej znajdującą się z lewej strony w sekcji Hosting.
 
-![](images/img_2792.jpg){.thumbnail}
+![geolocation](images/2792.png){.thumbnail}
 Następnie należy wybrać Strony www i kliknąć na ikonkę długopisu z prawej strony strony internetowej, dla której chcesz ustawić geolokalizację.
 
-![](images/img_2793.jpg){.thumbnail}
+![geolocation](images/2793.png){.thumbnail}
 Będziesz mógł wybrać IP danego kraju. OVH proponuje 12 różnych krajów.
 
-![](images/img_2794.jpg){.thumbnail}
+![geolocation](images/2794.png){.thumbnail}
 Wprowadzanie zmiany może trwać około 24 godziny.
 

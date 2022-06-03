@@ -7,7 +7,7 @@ order: 1
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 18-01-2021**
@@ -20,7 +20,7 @@ IPv6 to najnowsza wersja *Internet Protocol* (IP). Każdy serwer VPS OVHcloud je
 
 > [!warning]
 >
-> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> OVHcloud oddaje do Twojej dyspozycji serwery, za które w pełni odpowiadasz - nie mając dostępu do tych maszyn, nie możemy być ich administratorem. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta. Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 > 
 
 ## Wymagania początkowe
@@ -56,9 +56,9 @@ Pierwszy etap polega na pobraniu adresu IPv6 oraz bramy IPv6 przypisanych do Two
 
 #### W panelu klienta <a name="viacontrolpanel"></a>
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Bare Metal Cloud`{.action}. Kliknij `VPS`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni serwer VPS. Następnie przejdź do sekcji `Strona główna`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
-Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 „[Konfiguracja adresu IPv6](#applyipv6)”.
+Adres IPv6 i brama IPv6 przypisane do Twojego serwera wyświetlają się w sekcji `IP`. Zapisz adres i bramę, po czym przejdź do etapu 2 “[Konfiguracja adresu IPv6](#applyipv6)”.
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Po pobraniu adresów przejdź do etapu 2 "[Zastosuj konfigurację IPv6](#applyip
 
 ### Etap 2: zastosuj konfigurację IPv6 <a name="applyipv6"></a>
 
-Kiedy posiadasz już informacje niezbędne do konfiguracji IPv6, zaloguj się przez SSH do VPS. Więcej informacji na temat SSH znajdziesz w naszym przewodniku „[Wprowadzenie do SSH](../../dedicated/ssh-wprowadzenie/){.external}”.
+Kiedy posiadasz już informacje niezbędne do konfiguracji IPv6, zaloguj się przez SSH do VPS. Więcej informacji na temat SSH znajdziesz w naszym przewodniku “[Wprowadzenie do SSH](../../dedicated/ssh-wprowadzenie/){.external}”.
 
 Istnieje kilka metod konfiguracji IPv6. W zależności od Twojego przypadku przejdź do metody, której chcesz użyć.
 
@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Istnieją dwie metody konfiguracji Twojej sieci zgodnie z systemem operacyjnym zainstalowanym na Twoim serwerze:
 
-- **Debian 8 i niższe, Ubuntu 16.04 i niższe**\: użyj [metody bazującej na pliku *interfaces*](#interfaces);
+- **Debian 11 i niższe, Ubuntu 16.04 i niższe**: użyj [metody bazującej na pliku *interfaces*](#interfaces);
 
-- **dla Ubuntu 17.04 i późniejszych** wersji: skorzystaj z [metody bazującej na funkcji *Netplan*](#netplan).
+- **Ubuntu 17.04 i późniejszych wersji**: skorzystaj z [metody bazującej na funkcji *Netplan*](#netplan).
 
 W niektórych przypadkach może to nie być metoda określona powyżej. Aby się upewnić co do metody, którą należy zastosować, przeprowadź nawigację w systemie.  W razie potrzeby odwiedź stronę <https://netplan.io/> internetową.
 
@@ -136,7 +136,7 @@ W niektórych przypadkach może to nie być metoda określona powyżej. Aby się
 Najczęściej zalecaną metodą jest utworzenie pliku konfiguracyjnego w katalogu `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 Dzięki temu możesz w prosty sposób oddzielić konfigurację IPv6 i przywrócić zmiany w przypadku wystąpienia błędu.

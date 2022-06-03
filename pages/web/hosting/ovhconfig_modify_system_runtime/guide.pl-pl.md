@@ -19,7 +19,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} (z wyjątkiem Cloud Web)
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external} (z wyjątkiem Cloud Web)
 - Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
@@ -37,7 +37,7 @@ Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej
 
 #### Etap 1: zarządzanie konfiguracją hostingu
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
 
 ![hosting zmiana wersji php](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Po dokonaniu wyboru masz dwie możliwości przeprowadzenia zmiany:
 
 #### Wersja PHP
 
-Aktualnie istnieje kilka wersji języka programowania PHP. Kolejne wersje zawierają różne poprawki, ponadto dodawane są nowe lub znikają stare funkcjonalności. OVH udostępnia najnowsze główne wersje PHP, których listę znajdziesz pod linkiem:<https://www.ovh.pl/hosting/php.xml>. 
+Aktualnie istnieje kilka wersji języka programowania PHP. Kolejne wersje zawierają różne poprawki, ponadto dodawane są nowe lub znikają stare funkcjonalności. OVH udostępnia najnowsze główne wersje PHP, których listę znajdziesz pod linkiem:<https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/>. 
 
 W związku z faktem, że niektóre funkcjonalności mogą zniknąć w kolejnych wersjach, **przed wprowadzeniem jakichkolwiek zmian upewnij się, że nowa, wybrana wersja PHP jest kompatybilna ze stroną WWW.**
 

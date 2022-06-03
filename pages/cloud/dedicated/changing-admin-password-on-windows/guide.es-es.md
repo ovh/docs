@@ -6,7 +6,7 @@ section: Diagnóstico y modo de rescate
 order: 2
 ---
 
-**Última actualización: 16 de diciembre de 2020**
+**Última actualización: 16/12/2020**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -29,14 +29,14 @@ Las siguientes etapas describen el proceso de modificación de la contraseña lo
 
 ### 1. reiniciar el servidor en modo de rescate
 
-El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
+El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en el menú de `Servidores Dedicados`{.action}.
 
 El netboot debe pasarse a "rescue64-pro (Customer rescue system (Linux)". Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 <br>En la nueva ventana, marque **Arrancar en modo rescue** y seleccione "rescue64-pro" en el menú. Indique una dirección de correo electrónico en el último campo si las claves de acceso deben enviarse a una dirección distinta de la dirección principal de su cuenta de OVHcloud. 
 
 Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
-![rescuemode](images/adminpw_win_01.png){.thumbnail}
+![rescuemode](images/adminpw_win_001.png){.thumbnail}
 
 Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha de "Estado" en la zona titulada **Estado de los servicios**.
 <br>Haga clic en `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos.
@@ -69,7 +69,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina "/dev/sdb**X**". ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
+En este ejemplo, "sda4" es la partición del sistema, determinada por su tamaño. Por lo general, también existe una segunda partición espejo, que en este caso se denomina “/dev/sdb**X**”. ya que, en la mayoría de los casos, el servidor tendrá varios discos con patrones de partición idénticos. Para el proceso de restauración de la contraseña, solo es importante el primero. 
 
 monte esta partición:
 
@@ -257,7 +257,7 @@ La interfaz de conexión debería mostrar un mensaje indicando la expiración de
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (" ↹ ") del teclado (virtual) para pasar al tercer campo ("Confirmar la contraseña").
+La nueva contraseña del usuario admin debe introducirse dos veces. Sin embargo, el campo de confirmación todavía no está visible, lo que significa que debe dejar el primer campo vacío, introducir su nueva contraseña en el segundo campo y utilizar la tecla de tabulación (“ ↹ ”) del teclado (virtual) para pasar al tercer campo (“Confirmar la contraseña”).
 <br>Vuelva a introducir la contraseña y haga clic en la flecha para guardarla.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}
@@ -288,14 +288,14 @@ Se recomienda utilizar el teclado virtual al introducir las contraseñas en esta
 
 #### 1. reiniciar el servidor en modo de rescate
 
-El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
+El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor en el menú de `Servidores Dedicados`{.action}.
 
 El netboot debe migrarse a "WinRescue (Rescue System for Windows)". Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 <br>En la nueva ventana, marque **Arrancar en modo rescue** y seleccione "WinRescue" en el menú. Indique una dirección de correo electrónico en el último campo si las claves de acceso deben enviarse a una dirección distinta de la dirección principal de su cuenta de OVHcloud. 
 
 Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
-![winrescuemode](images/adminpw_win_08.png){.thumbnail}
+![winrescuemode](images/adminpw_win_008.png){.thumbnail}
 
 Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha de "Estado" en la zona titulada **Estado de los servicios**.
 <br>Haga clic en `Reiniciar`{.action} y el servidor se reiniciará en modo de rescate. Esta operación puede tardar unos minutos.

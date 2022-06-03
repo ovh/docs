@@ -115,4 +115,4 @@ En la siguiente guía se explica cómo [crear un modelo de pool](https://docs.ov
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

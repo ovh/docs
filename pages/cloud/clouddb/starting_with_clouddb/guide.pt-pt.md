@@ -6,22 +6,37 @@ legacy_guide_number: 2216
 section: 'Primeiros passos'
 ---
 
-**Última atualização: 28/06/2018**
+**Última atualização: 28/01/2022**
+
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
 ## Sumário
 
-O serviço CloudDB permite que beneficie de uma instância de bases de dados cujos recursos são dedicados e garantidos. Este serviço oferece mais flexibilidade e melhor desempenho; adequa-se geralmente a clientes com necessidades específicas.
+A solução CloudDB permite beneficiar de uma instância de bases de dados, cujos recursos são dedicados e garantidos que lhe oferecem performance e flexibilidade.
+A sua solução CloudDB está associada de forma padrão à rede de alojamentos web da OVHcloud. É possível associá-la a qualquer outra rede, através de uma lista de endereços IP autorizados.
 
 **Saiba como começar a usar e a gerir o serviço CloudDB.**
 
 ## Requisitos
 
-- Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/) (associada a um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/)).
 - Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-### Consultar informações gerais da instância SQL Privado
+### Ativação do seu servidor CloudDB incluído com o seu plano de alojamento web
+
+Se a sua oferta de alojamento inclui a opção CloudDB, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
+
+No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
+
+![Informações gerais](images/db-activation.png){.thumbnail}
+
+Para concluir, siga as instruções seguintes para determinar o tipo e a versão do seu servidor CloudDB. De seguida, poderá aceder através da coluna da esquerda na `Base de dados`{.action}.
+
+### Consultar informações gerais da instância CloudDB
 
 Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
@@ -144,19 +159,27 @@ Escolha aplicar ou não as opções adicionais descritas abaixo e clique em `Con
 
 ![clouddb](images/clouddb-add-import-step3.png){.thumbnail} 
 
-### Autorizar um endereço IP
+### Autorizar um endereço IP <a name="trustip"></a>
 
 De modo que o acesso à sua instância CloudDB funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados. Para isso, clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
-![clouddb](images/clouddb-add-ip.png){.thumbnail}
+![clouddb](images/clouddb-add-ip-2022.png){.thumbnail}
 
 Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a máscara que pretende autorizar e adicione uma descrição se desejar. Decida se quer dar acesso apenas às bases de dados ou ao SFTP. Por fim, clique em `Validar`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
+#### Autorizar a ligação a um alojamento web OVHcloud <a name="trustip"></a>
+
+Por predefinição, a sua solução CloudDB está automaticamente associada aos alojamentos web da OVHcloud. No entanto, se desejar, pode desativar o acesso dos alojamentos web da OVHcloud à sua base de dados CloudDB.
+
+Para isso, clique no separador `IP autorizados`{.action} e no botão `Acesso aos alojamentos web OVHcloud`{.action}.
+
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
+
 ### Ligar o site à base de dados
 
-Por esta altura, a base de dados está criada e as permissões dos utilizadores estão definidas. Agora só falta estabelecer a ligação entre o site e a base de dados. A concretização desta etapa depende do tipo de site, do CMS (WordPress, Joomla, etc.) ou da etapa de instalação do CMS / site.
+Agora que a sua base de dados está criada, que um ou vários utilizadores têm permissões para aceder à sua instância CloudDB, e que pelo menos um endereço IP ou que os alojamentos web da OVHcloud foram autorizados para aceder à sua base de dados. Esta etapa pode ser realizada de várias formas, em função do site ou do CMS (WordPress, Joomla!, etc.) utilizado, bem como da etapa em que se encontra se instala um website.
 
 Durante este procedimento, serão solicitadas cinco informações essenciais:
 
@@ -174,6 +197,30 @@ Durante este procedimento, serão solicitadas cinco informações essenciais:
 >
 
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
+
+#### Obter os logs do seu servidor CloudDB
+
+Para verificar os últimos logs da sua base de dados, aceda ao separador `Logs`{.action} do seu servidor CloudDB. Este separador apresenta em tempo real os alertas e os erros.
+
+![clouddb](images/clouddb-log01.png){.thumbnail}
+
+Para obter o conjunto dos logs do seu servidor CloudDB, ligue-se através de SFTP neste último.
+
+> [!warning]
+>
+> Antes de se conectar, verifique que o endereço de IP do computador que utiliza é autorizado no seu servidor CloudDB, com a opção "SFTP`" selecionada. Para mais informações, consulte a secção [Autorizar a ligação a um alojamento web da OVHcloud](#trustip) neste guia.
+
+Encontre as informações de ligação SFTP a partir do separador `Informações gerais`{.action} do seu servidor CloudDB. Se não sabe a palavra-passe do servidor, clique no botão `...`{.action} à direita para o modificar.
+
+![clouddb](images/clouddb-log02.png){.thumbnail}
+
+Ligue-se através de um cliente FTP (FileZilla, Cyberduck, WinSCP, etc.).
+
+Para o FileZilla, no menu `Ficheiro`{.action}, dirija-se ao `Gestor dos websites`{.action}. Clique em `Novo site`{.action} e introduza os parâmetros anteriormente identificados.
+
+![clouddb](images/clouddb-log03.png){.thumbnail}
+
+O ficheiro de logs, chamado `stdout.log`, encontra-se na raiz.
 
 ## Quer saber mais?
 

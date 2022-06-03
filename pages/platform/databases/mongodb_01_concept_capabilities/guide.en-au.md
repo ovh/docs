@@ -2,11 +2,11 @@
 title: MongoDB - Capabilities and Limitations
 slug: mongodb/capabilities
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-section: MongoDB
+section: MongoDB - Guides
 order: 1
 ---
 
-**Last updated September 27<sup>th</sup>, 2021**
+**Last updated December 6<sup>th</sup>, 2021**
 
 ## Objective
 
@@ -22,6 +22,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
 - `UK` (London, United Kingdom)
+- `SBG` (Strasbourg, France)
 - `WAW` (Warsaw, Poland)
 
 ### MongoDB versions
@@ -30,6 +31,7 @@ The Public Cloud Databases offer supports the following MongoDB versions:
 
 - MongoDB 4.2
 - MongoDB 4.4
+- MongoDB 5.0
 
 MongoDB recommends always installing and using the latest stable version of MongoDB. See [MongoDB Versioning](https://docs.mongodb.com/manual/reference/versioning/){.external} for more information.
 
@@ -45,7 +47,7 @@ Three plans are available:
 - *Business*
 - *Enterprise* (coming soon - stay tuned!)
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes | MongoDB License | Network                    | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | -------------------------- | ------------  | --------- |

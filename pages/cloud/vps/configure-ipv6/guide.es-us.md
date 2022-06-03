@@ -56,9 +56,9 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente <a name="viacontrolpanel"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Cloud`{.action} de la pestaña "Bare Metal Cloud". En la columna izquierda, haga clic en `VPS`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}.
 
-En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2\. Aplicar la configuración IPv6](#applyipv6).
+En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado 2 « [Aplicar la configuración IPv6](#applyipv6). »
 
 ![Configuración IPv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -120,7 +120,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Dos métodos para configurar su red:
 
-- **para Debian 8 e inferior, Ubuntu 16.04 e inferior**: utilice el [método basado en el archivo *interfaces*](#interfaces).
+- **para Debian 11 e inferior, Ubuntu 16.04 e inferior**: utilice el [método basado en el archivo *interfaces*](#interfaces).
 
 - **para Ubuntu 17.04 y versiones posteriores**: utilice el [método basado en la función *Netplan*](#netplan).
 
@@ -136,7 +136,7 @@ En algunos casos, el método a utilizar puede no ser el indicado anteriormente. 
 El método más utilizado es crear un archivo de configuración en el directorio `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 De este modo, podrá separar la configuración IPv6 y, en caso de error, restablecer fácilmente los cambios.

@@ -1,46 +1,47 @@
 ---
-title: 'Compreender a mensagem de erro «Controller VM deleted»'
+title: 'Compreender a mensagem de erro «Controller VM deleted» (EN)'
 slug: erro-controlador-nsx
-excerpt: 'Saiba o que significa a mensagem de erro «Controller VM deleted»'
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/error-controller-nsx/'
+excerpt: 'Find out what the “Controller VM deleted” error message means'
 section: NSX
 ---
 
-**Última atualização: 03/07/2017**
+**Last updated 26th November 2021**
 
-## Sumário
+## Objective
 
-Na interface do NSX, pode surgir a mensagem 'Controller VM deleted'
+In your NSX interface, you may encounter the *Controller VM deleted* message.
 
-**Este guia explica o que isso significa**.
+**This guide will explain what this message means.**
 
+## Requirements
 
-## Requisitos
+- being an administrative contact of your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/) to receive login credentials
+- a user account with access to vSphere as well as the specific rights for NSX (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- a deployed [NSX Edge Services Gateway](https://docs.ovh.com/pt/private-cloud/how-to-deploy-an-nsx-edge-gateway/)
 
-- Dispor da opção NSX.
-- Ter criado um utilizador com as [permissões de acesso ao NSX (FR)](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external}.
+## Instructions
 
+In your [NSX interface](https://docs.ovh.com/pt/private-cloud/aceder-a-interface-de-gestao-nsx/), under the `Installation and Upgrade`{.action} menu, in the `Management`{.action} tab and `NSX Controller Nodes`{.action} section, the *Controller VM deleted* error message may appear under the "Controller Node" summary.
 
-## Instruções
+![Controller VM deleted error](images/en01control.png)
 
-Na [interface do NSX (EN)](https://docs.ovh.com/gb/en/private-cloud/accessing-NSX-interface/), secção Instalação, pode surgir sob o nome do controlador a mensagem de erro: *Controller VM deleted*:
+This is because OVHcloud does not host controllers on your infrastructure. They are hosted on a separate internal management infrastructure, so that they do not consume any of your infrastructure's resources.
 
-![Erro VM do controlador suprimida](images/controllervmdeleted.JPG)
+Under the standard configuration for NSX, the controllers are expected to be in the same datacentre as your virtual machines, causing this error message. This message will have no effect on your machine's regular functionality.
 
-Isto deve-se ao facto de a OVH não armazenar controladores na sua infraestrutura, mas numa infraestrutura de gestão interna distinta, de modo a não consumir recursos na sua.
-
-No funcionamento padrão do NSX, está previsto que os controladores se encontrem no mesmo datacenter que as suas máquinas virtuais, o que explica este erro. O funcionamento da sua máquina não será afetado por esta mensagem.
-
-Na interface NSX, certifique-se simplesmente de que o estado dos controladores é `Conectado`. Se for o caso, a sua máquina encontra-se funcional.
+You just need to make sure that the status of the controllers in your NSX interface is set to `Connected`. If it is, your machine is working.
 
 > [!warning]
 >
-> A resolução deste erro através do botão `Resolver`{.action} provoca a supressão dos controladores da sua infraestrutura, o que vai perturbar a utilização do NSX e da rede da infraestrutura. Portanto, aconselhamos que não efetue esta ação. A gestão dos controladores NSX fica a cargo da OVH.
+> Resolving this error by clicking on `Resolve`{.action} will delete the controllers from your infrastructure, which will mean you can no longer use NSX or the infrastructure’s network properly. We would therefore advise against doing this. OVHcloud is still responsible for the administration of the NSX controllers.
 > 
 
-Isto também explica o alerta no painel de controlo do NSX:
+This also explains the following alert on the NSX dashboard:
 
-![Alerta na interface NSX](images/controllervmdeleted2.JPG)
+![Alert on NSX interface](images/en02control.png)
 
-## Quer saber mais?
+## Go further
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>.

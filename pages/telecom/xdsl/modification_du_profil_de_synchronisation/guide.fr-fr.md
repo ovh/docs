@@ -5,7 +5,7 @@ excerpt: Découvrez comment modifier le profil de synchronisation de votre accè
 section: Configuration de mon offre
 ---
 
-**Dernière mise à jour le 25/11/2020**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -13,8 +13,8 @@ Votre espace client OVHcloud Telecom regroupe un certain nombre de fonctionnalit
 
 ## Prérequis
 
--   Disposer d'un accès xDSL actif.
--   Être raccordé sur un NRA dégroupé par OVHcloud.
+- Disposer d'un accès xDSL actif.
+- Être raccordé sur un NRA dégroupé par OVHcloud.
 
 ## En pratique
 
@@ -22,13 +22,13 @@ Votre espace client OVHcloud Telecom regroupe un certain nombre de fonctionnalit
 
 ### Comment accéder au changement de profil
 
-Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de votre accès. 
+Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action}, sélectionnez votre offre puis cliquez sur la référence de votre accès. 
 
 Par défaut, l'onglet affiché est `Mon accès`.
 
 Vous retrouverez, dans les `Caractéristiques`, la possibilité de modifier le profil de synchronisation de votre accès.
 
-![Mon_acces](images/XdslMonAcces.png){.thumbnail}
+![Mon_acces](images/XdslMonAcces-2022.png){.thumbnail}
 
 **Pour un accès ADSL :**
 
@@ -37,7 +37,6 @@ Vous retrouverez, dans les `Caractéristiques`, la possibilité de modifier le p
 **Pour un accès VDSL :**
 
 ![profil vdsl](images/ProfilsVDSL.gif){.thumbnail}
-
 
 ### Explication des différents profils
 
@@ -65,11 +64,9 @@ Voici la correspondance des profils avec la marge au bruit :
 | PERF1  | SNR 3  |
 | PERF2  | SNR 1  |
 
-
 24M est le débit maximum atteignable avec un SNR à 6 dB.
 Si votre accès est très proche du NRA, vous obtiendrez peut-être 24M.
 Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable. Vous obtiendrez peut-être 15M, cela dépendra de la qualité de la ligne et de la marge au bruit.
-
 
 #### Profils VDSL
 
@@ -78,11 +75,9 @@ En VDSL, d’autres modulations de fréquence s’offrent à vous :
 - **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés se trouvant à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://www.ovhtelecom.fr/offre-internet/eligibilite/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
 - **8b**, pour les lignes plus longues : de manière générale, le profil 8b sera plus avantageux pour les abonnés situés à plus d’un kilomètre du nœud de raccordement téléphonique.
 
-
 ### Ligne non dégroupée OVHcloud
 
 Malheureusement, la modification du profil de synchronisation n'est pas disponible pour les lignes raccordées sur les équipements d'opérateurs de collecte.
-
 
 ## Aller plus loin
 

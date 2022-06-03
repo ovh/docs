@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment configurer votre Firewall Network'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 05/08/2020**
+**Dernière mise à jour le 23/12/2021**
 
 ## Objectif
 
@@ -26,6 +26,10 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 - Posséder un service OVHcloud bénéficiant d’un Firewall Network ([serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
 
 ## En pratique
 
@@ -36,9 +40,9 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
+Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et accédez à la section `Bare Metal Cloud`{.action}. Ensuite, ouvrez la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
 
-![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
+![Activation du Firewall Network](images/firewall_creation2022.png){.thumbnail}
 
 Confirmez votre action.
 
@@ -67,7 +71,12 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 
 ### Configurer le Firewall Network
 
-Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
+> [!warning]
+> Veuillez noter que le Firewall Network d'OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.<br>
+> Pour plus d'informations, consultez les guides suivants : [Configurer le pare-feu sous Windows](https://docs.ovh.com/fr/dedicated/firewall-windows/) et [Configurer le pare-feu sous Linux avec Iptables](https://docs.ovh.com/fr/dedicated/firewall-iptables/).
+>
+
+Pour ajouter une règle, cliquez sur `Ajouter une règle`{.action}.
 
 ![Ajouter une règle](images/ajoutregle1.png){.thumbnail}
 
@@ -103,6 +112,23 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 >
 > Si notre solution anti-DDoS limite une attaque, votre Firewall Network s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
+
+### Configurer le pare-feu Armor (Firewall Game)
+
+> [!primary]
+> Par défaut, le pare-feu Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
+>
+
+Afin de configurer les règles de vos ports sur Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
+Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la section `IP`{.action} dans la barre latérale de gauche. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
+
+![Game_wall](images/GAMEwall2021.png){.thumbnail}
+
+Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
+
+![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
+
+Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. Le pare-feu Armor a maintenant été configuré avec succès.
 
 ## Aller plus loin
 

@@ -22,7 +22,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients und We
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [E-Mail Pro](https://www.ovh.de/emails/email-pro/) Lösung.
+- Sie verfügen über eine [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
 - Sie haben die Login-Daten des E-Mail Pro Accounts, den Sie einrichten möchten.
 - Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie den E-Mail Pro Account einrichten möchten.
 
@@ -39,13 +39,12 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients und We
 >
 > In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `E-Mail Pro`{.action}
-> den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
 Gehen Sie zunächst über Ihren Webbrowser in das Gmail-Webinterface. Geben Sie dort die Login-Daten Ihres Gmail-Accounts ein, um sich mit diesem zu verbinden.
 
-Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Einstellungen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
+Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Alle Einstellungen aufrufen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
 
 ![emailpro](images/configuration-gmail-web-step1.png){.thumbnail}
 

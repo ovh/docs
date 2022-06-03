@@ -7,10 +7,10 @@ order: 2
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zaproponuj zmianę" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 24/06/2021**
+**Ostatnia aktualizacja z dnia 08/10/2021**
 
 ## Wprowadzenie
 
@@ -27,7 +27,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 
 ## Wymagania początkowe
 
-- Posiadanie kompatybilnego [hostingu](https://www.ovh.pl/hosting/).
+- Posiadanie kompatybilnego [hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Korzystanie z funkcji [Module za 1 kliknięciem](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/), aby utworzyć nową stronę.
 
@@ -35,7 +35,7 @@ Utworzenie [modułu za pomocą 1 kliknięcia](../hosting_www_przewodniki_dotycza
 
 > [!primary]
 >
-> Wyszczególniamy tutaj najczęstsze błędy. Jeśli zauważysz inną anomalię, zapoznaj się z naszym [FAQ dotyczący hostingu www](../web-hosting-faq/).
+> Wyszczególniamy tutaj najczęstsze błędy. Jeśli zauważysz inną anomalię, zapoznaj się z naszym [FAQ dotyczący hostingu www](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
 ### "Wystąpił błąd podczas pobierania informacji. (You need at least one free database)"
@@ -48,14 +48,14 @@ Jeśli pojawi się ta wiadomość po uruchomieniu instalacji modułu, nie można
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych [ofert hostingu](https://www.ovh.pl/hosting/).
+> Zapoznaj się z porównaniem naszych [ofert hostingu](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij `Web Cloud`{.action}, a następnie `Hosting`{.action}. Wybierz odpowiedni hosting i kliknij `Zmień ofertę` w sekcji `Abonament` - `Oferta`:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Dzięki ofercie [Hosting Pro](https://www.ovh.pl/hosting/hosting-pro.xml) i [Hosting Performance](https://www.ovh.pl/hosting/hosting-performance.xml) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo prywatny [serwer SQL](https://www.ovh.pl/hosting/opcje-sql.xml).
+Dzięki ofercie [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) możesz utworzyć do trzech modułów za pomocą 1 kliknięcia. Wraz z pakietem **Hosting Performance** będziesz mógł włączyć za darmo [CloudDB](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 #### Rozdział 2: usuń niewykorzystaną bazę danych <a name="delete-database"></a>
 
@@ -76,14 +76,14 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovh.pl/hosting/opcje-sql.xml)
+> Zapoznaj się z porównaniem naszych [ofert baz danych](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/)
 >
 
 #### Rozdział 4: zainstalować moduł na bazie danych
 
 Aby zainstalować moduł na bazie danych, której już używasz, [użyj zaawansowanego](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym)trybu instalacji nowego **modułu za pomocą 1 kliknięcia**.
 
-Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
+Aby odnaleźć dane do logowania do bazy danych, sprawdź nasz [przewodnik](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#konfiguracja-modulu).
 
 ### "Katalog instalacji nie jest pusty"
 
@@ -99,19 +99,70 @@ Aby powiązać domenę z innym katalogiem, kliknij `Zmień domenę`{.action} w z
 
 Możesz również połączyć się z hostingiem przez [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
 
+### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB))"
+
+![not_enough_space](images/not_enough_space.png){.thumbnail}
+
+Wiadomość ta wskazuje, że [przestrzeń dyskowa](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) Twojego hostingu zawiera zbyt dużą ilość danych. Musisz więc usunąć lub przenieść domenę zanim będziesz mógł zainstalować nowy [moduł za 1 kliknięciem](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
+
+W tej sytuacji [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) na Twoim hostingu [zapisz lokalnie](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#transfer-plikow), a następnie usuń pliki, które nie są konieczne do działania Twojej strony WWW.
+
+> [!primary]
+>
+> W przypadku pytań dotyczących danych do usunięcia, w celu zmniejszenia ilości danych na hostingu, skontaktuj się z naszą [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+
 ### "Nie można połączyć się z bazą danych" <a name="delete-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 Po uruchomieniu instalacji modułu w trybie zaawansowanym otrzymałeś wiadomość e-mail z informacją, że moduł nie może się łączyć z wskazaną bazą danych. 
 
-Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [FAQ](https://www.ovh.pl/hosting/faq/).
+Należy więc sprawdzić dane dostępowe do bazy danych. Aby je znaleźć, sprawdź nasz [przewodnik](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#konfiguracja-modulu).
 
 Następnie usuń moduł w zakładce `Moduły za 1 kliknięciem`{.action}:
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
 Następnie uruchom ponownie instalację nowego modułu.
+
+### "You have insufficient rights on this database."
+
+![insufficient_rights](images/insufficient_rights.png){.thumbnail}
+
+Baza danych nie może zostać zmieniona, ponieważ ilość danych w niej zawartych przekracza dozwolony limit. Wiadomość ta pojawia się podczas instalacji modułu w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#instalacja-w-trybie-zaawansowanym).
+
+W tej sytuacji zainstaluj moduł przechodząc przez [tryb "prosty"](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) lub wybierz inną bazę danych podczas instalacji w trybie zaawansowanym. Jeśli potrzebujesz dodatkowej [oferty baz danych](https://www.ovh.pl/hosting/opcje-sql.xml).
+
+Jeśli nie posiadasz innych baz danych i nie chcesz zamawiać dodatkowej oferty, [zaimportuj kopię bazy](../eksport-bazy-danych/#en-praktyka) a następnie usuń niepotrzebne dane.
+
+> [!warning]
+>
+> **Usunięcie elementów z bazy danych może spowodować zablokowanie Twojej strony WWW.**
+>
+> W przypadku dodatkowych pytań skontaktuj się z naszym [społecznością użytkowników](https://community.ovh.com/en/) lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).<br>
+> Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+>
+
+### "Can't connect to database 'test' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
+
+![cant_connect](images/cant_connect.png){.thumbnail}
+
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że zarejestrowany użytkownik podczas instalacji nie posiada wystarczających uprawnień do bazy danych lub że wskazane identyfikatory są nieprawidłowe.
+
+W tej sytuacji najpierw zmodyfikuj [prawa użytkownika](../tworzenie-baz-danych-i-uzytkownikow/#zarzadzanie-prawami-uzytkownikow), aby posiadał on uprawnienia **Administrator** lub **Odczyt/zapis** na bazie danych.
+
+Sprawdź również jego dane do logowania [bezpośrednio](../polaczenie-bazy-danych-serwer-bdd/#w-praktyce) do serwera baz danych i uruchom ponownie instalację modułu.
+
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
+
+![cant_connect_server](images/cant_connect_server.png){.thumbnail}
+
+Instalacja modułu za pomocą 1 kliknięcia w [tryb zaawansowany](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/#prosta-instalacja-modulu) na bazie danych znajdującej się na [serwerze CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/). Ten komunikat błędu został wysłany na e-mail. Oznacza to, że podana przez Ciebie nazwa serwera baz danych jest nieprawidłowa.
+
+Kliknij na `Web cloud`{.action} [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie na zakładkę `Bazy danych`{.action}.
+
+Następnie kliknij wybraną ofertę: nazwa serwera, który ma być użyty, podana jest pod nagłówkiem `Nazwa hosta` w podczęści `SQL` danych do logowania.
 
 ### Twoja domena nie jest dostępna podczas tworzenia modułu
 

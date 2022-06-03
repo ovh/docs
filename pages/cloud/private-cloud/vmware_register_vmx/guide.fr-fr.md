@@ -16,8 +16,8 @@ Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inv
 
 ## Prérequis
 
-- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
-- Disposer des datastores contenant les fichiers de machines virtuelles.
+- Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), afin de recevoir les identifiants de connexion.
+- Avoir un identifiant utilisateur actif (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique
 
@@ -39,7 +39,7 @@ Complétez les informations requises puis cliquez sur `Terminer`{.action}.
 
 Ces mêmes opérations sont à répéter sur chaque datastore et pour chaque VM à re-enregister.
 
-Vérifiez les paramètres de vos VM (nom, [portgroup](../creation-vlan-vxlan), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`{.action}.
+Vérifiez les paramètres de vos VM (nom, [portgroup](../creation-vlan/), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`{.action}.
 
 ![modifier paramètres](images/register-vmx-06.png){.thumbnail}
 

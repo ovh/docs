@@ -17,7 +17,7 @@ Mit OVHcloud Hosted Exchange können Sie Ihre E-Mails mit einem Gerät und einem
 
 ## Voraussetzungen
 
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovh.de/emails/), [**E-Mail Pro**](https://www.ovh.de/emails/email-pro) oder **MX Plan**, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovh.de/hosting)).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovhcloud.com/de/emails/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan**, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/)).
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 ## In der praktischen Anwendung
@@ -106,6 +106,8 @@ Um einen neuen Ordner zu erstellen, klicken Sie mit der rechten Maustaste auf de
 
 #### Posteingangsregeln erstellen
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Zum Verwalten der Regeln klicken Sie oben auf das Zahnradsymbol und danach auf `Optionen`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -121,6 +123,16 @@ Geben Sie die erforderlichen Informationen in Abhängigkeit von der Aktion ein, 
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Ausführlichere Anweisungen zum Erstellen von Posteingangsregeln finden Sie in unserer Anleitung: [Posteingangsregeln in OWA erstellen](../posteingangsregeln-in-owa-erstellen/).
+
+##### Einen Absender blockieren
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Klicken Sie oben rechts auf das Zahnrad und dann auf "Optionen". Folgen Sie in der linken Spalte der Ordnerstruktur "E-Mail" unter "Accounts" und "Blockieren oder erlauben".
+
+Geben Sie im Bereich "**Absender gesperrt**"eine E-Mail-Adresse oder eine zu blockierende Domain ein und klicken Sie auf die Schaltfläche `+`{.action}, um diese in die Liste aufzunehmen.
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Eine Kontaktliste verwalten
 
@@ -139,6 +151,8 @@ Auf dieser Seite können Sie einen neuen Kontakt hinzufügen, eine Kontaktliste 
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Passwort ändern
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Sie können Ihr Kontopasswort ändern, wenn Sie bei OWA angemeldet sind. Hierzu klicken Sie oben auf das Zahnradsymbol und danach auf `Optionen`{.action}.
 

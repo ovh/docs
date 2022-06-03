@@ -3,7 +3,7 @@ title: 'Crear y conectarse a una instancia de Public Cloud'
 slug: public-cloud-primeros-pasos
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
 section: 'Primeros pasos'
-order: 1
+order: 04
 ---
 
 **Última actualización: 30/03/2021**
@@ -41,25 +41,25 @@ Para autenticarse en instancias Windows solo necesitará el nombre de usuario y 
 
 En primer lugar, abra la aplicación de línea de comandos (Terminal). Compruebe que dispone de una carpeta «.ssh» en el directorio «$HOME». Si la carpeta no existe, créela:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Utilice el siguiente comando para crear una clave RSA de 4096 bits:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 El uso del parámetro «-t» con este comando permite especificar un método de cifrado diferente, por ejemplo:
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 El comando le pedirá que guarde la clave que acaba de crear en un archivo estándar:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Para visualizar y exportar su clave pública, utilice el comando «cat» en el archivo de la clave «.pub» y copie el resultado:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >En Terminal de MacOS también es posible añadir los comandos «pbcopy» and «pbpaste» para administrar las cadenas. Por ejemplo, para copiar la clave desde el archivo «id_rsa.pub» al portapapeles, puede utilizar el siguiente comando:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -152,6 +152,8 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 
 ### 3. Crear una instancia
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
@@ -237,21 +239,21 @@ Puede acceder a su instancia en línea de comandos (Terminal) por SSH. Para ello
 
 Introduzca la frase de contraseña de su clave privada. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Al estar conectado con permisos root («sudo user»), podrá ejecutar comandos para realizar tareas administrativas. Le recomendamos que, en primer lugar, modifique su contraseña:
 
-```sh
-$ sudo passwd
+```bash
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
 Ya puede utilizar estas claves para conectarse a través de la `consola VNC`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). A continuación, todavía como usuario «root», establezca una contraseña. Una vez hecho esto, vuelva al usuario anterior.
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:

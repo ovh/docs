@@ -7,7 +7,7 @@ order: 5
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 **Ostatnia aktualizacja z dnia 04-10-2021**
@@ -122,7 +122,7 @@ iface ens18 inet static
 
 #### Wymagania początkowe
 
-* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów
+* Rezerwacja bloku publicznych adresów IP na Twoim koncie z minimalną liczbą czterech adresów. Blok musi być skierowany do sieci vRack.
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera kompatybilnego z vRack](https://www.ovhcloud.com/pl/bare-metal/){.external}
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
@@ -138,6 +138,10 @@ Musisz:
 
 * tworzenie agregatu;
 * stworzyć brydż podłączony do agregatu;
+
+Po pierwsze, dodaj blok publicznych adresów IP do sieci vRack. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action} w Panelu klienta OVHcloud i otwórz menu `vRack`{.action}.
+
+Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij publiczny blok adresów IP, który chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
 #### Konfiguracja adresu IP
 

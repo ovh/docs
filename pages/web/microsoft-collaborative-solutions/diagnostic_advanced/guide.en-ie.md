@@ -15,7 +15,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 ## Requirements
 
-- an [OVHcloud Exchange solution](https://www.ovh.ie/emails/hosted-exchange/) already set up
+- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
@@ -23,7 +23,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 
 ### Running the diagnostic
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top menu bar. Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action}. Open `Microsoft`{.action} , then `Exchange`{.action} and select your service.
 
 ![Exchange Diagnostic](images/img_4450.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Depending on your Exchange service usage, the following MX servers are valid:
 > [!warning]
 > In our guides, we use as the server name: ex<b>?</b>.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server  for your Exchange service.
 >
-> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the OVHcloud Control Panel, in the `Web Cloud`{.action} section: Open `Microsoft`{.action} , then `Exchange`{.action} and select your service. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 
@@ -113,7 +113,7 @@ This error indicates a general email sending failure wich may have several cause
 - [Your account has been suspended](#expired)
 - [The password that was entered is incorrect](#password)
 - [Your account has been blocked for sending spam](#blocked)
-- [An incident has occurred on the infrastructure](http://status.ovh.ie/?project=30&status=all&perpage=50)
+- [An incident has occurred on the infrastructure](https://web-cloud.status-ovhcloud.com/)
 
 ## Go further
 

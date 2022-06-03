@@ -16,8 +16,8 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 
 ## Requisitos
 
-- Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
+- Ter um serviço de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
+- Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external}.
 - Ter acesso ao backup que pretende importar na base de dados.
 - Consoante o método de importação utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou às informações que lhe permitem aceder à base de dados.
 
@@ -33,7 +33,7 @@ Antes de começar, deve escolher o método que quer utilizar para importar o bac
 
 - **Realizar a importação utilizando um script**: para isso, deverá criar um script alojado no seu alojamento web da OVH. São necessários conhecimentos específicos para criar este script.
 
-- **Realizar a importação utilizando um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançado e ter adquirido um plano de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} concreto.
+- **Realizar a importação utilizando um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançado e ter adquirido um plano de [alojamento web da OVH](https://www.ovhcloud.com/pt/web-hosting/){.external} concreto.
 
 Tenha em conta que algumas destas operações se realizam fora da interface da OVH e, por isso, deverá executá-las você mesmo. A seguir, disponibilizamos informações sobre os diferentes métodos de importação. No entanto, se precisar de ajuda, pode entrar em contacto com um webmaster.
 
@@ -48,7 +48,7 @@ Consulte a documentação correspondente ao método de importação pretendido.
 
 ### Restaurar um backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados que pretende restaurar numa data anterior e selecione `Restaurar um backup`{.action}. Tenha em atenção que esta ação substituirá o conteúdo atual da base de dados pelo backup.
 
@@ -62,7 +62,7 @@ Clique nos três pontos à direita da linha correspondente à base de dados que 
 
 ### Importar o seu próprio backup a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados na qual pretende importar dados e selecione `Importar ficheiro`{.action}.
 
@@ -95,7 +95,7 @@ Uma vez selecionada a opção, clique em `Confirmar`{.action} e aguarde até que
 
 ### Realizar a importação a partir da interface phpMyAdmin
 
-Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Em primeiro lugar, deverá aceder a phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 

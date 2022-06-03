@@ -10,7 +10,7 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/06/2021**
+**Última atualização: 01/02/2022**
 
 ## Sumário
 
@@ -31,7 +31,8 @@ Antes de aplicar as opções de backup, recomendamos que consulte as [páginas e
 
 ## Instruções
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), navegue até à seção "Bare Metal Cloud" e selecione o seu servidor na barra situada à esquerda dentro do separador `VPS`{.action}.
+
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na secção `Servidor privado virtual`{.action}.
 
 ### Passo 1: Subscrever a opção Backups automáticos
 
@@ -70,7 +71,7 @@ Clique em `...`{.action} junto ao backup pretendido e selecione `Montar`{.action
 
 Após concluir o processo, irá receber um e-mail de confirmação. Poderá então ligar-se ao seu alojamento VPS e adicionar a partição onde o seu backup está localizado.
 
-#### Passo 2: Secure Shell
+#### Em Secure Shell
 
 Primeiro, conecte-se ao seu alojamento VPS via SSH.
 
@@ -103,6 +104,30 @@ $ mount /dev/sdb1 /mnt/restore
 ```
 
 Pode agora passar para esta pasta e aceder aos dados do seu backup.
+
+#### Em Windows
+
+Crie uma ligação RDP (Remote Desktop) com o seu VPS.
+
+Depois de estabelecer a ligação, clique com o botão `Iniciar`{.action} e abra a `Gestão de Discos`{.action}.
+
+![disk management](images/windowsbackup1.png){.thumbnail}
+
+O seu backup montado aparecerá como um disco básico com o mesmo espaço de armazenamento que o seu disco principal.
+
+![mounted backup](images/windowsbackup2.png){.thumbnail}
+
+O disco aparecerá como `Offline`, faça um clique direito no disco e selecione `Online`(action).
+
+![online backup](images/windowsbackup3.png){.thumbnail}
+
+A seguir, o seu backup será acessível ao `Explorador de ficheiros`.
+
+![fila exploradora](images/windowsbackup4.png){.thumbnail}
+
+> [!warning]
+> Tenha em conta que o servidor será reiniciado durante a desmontagem do backup.
+>
 
 ### Boas práticas para a utilização do backup automático
 

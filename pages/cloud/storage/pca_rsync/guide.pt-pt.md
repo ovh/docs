@@ -3,6 +3,7 @@ title: Gestão dos seus arquivos com Rsync
 slug: pca/rsync
 excerpt: Saiba como aceder aos seus arquivos Public Cloud com Rsync
 section: Public Cloud Archive
+order: 090
 ---
 
 > [!primary]
@@ -73,7 +74,6 @@ Uma vez que o servidor Rsync foi adaptado para funcionar com a API Swift, estas 
 
 > —inplace: Em vez do método predefinido que consiste em criar uma nova cópia do ficheiro e movê-la uma vez o processo terminado, Rsync escreve os dados atualizados diretamente no ficheiro de destino.
 >
-> -W, --whole-file: Desativar o algoritmo de transferência delta do Rsync e enviar o ficheiro inteiro tal como está.
 
 Além disso, apenas é permitido um subconjunto de opções no lado do cliente:
 

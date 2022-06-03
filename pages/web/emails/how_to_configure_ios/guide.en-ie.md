@@ -23,7 +23,7 @@ You can configure MX Plan email addresses on email clients and applications, if 
 
 ## Requirements
 
-- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovh.ie/web-hosting/){.external})
+- an MX Plan email address (included in the MX Plan solution and in [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external})
 - the Mail app installed on your iOS device
 - login credentials for the email account to be configured
 

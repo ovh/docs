@@ -5,18 +5,20 @@ excerpt: 'Find out how to mount a NAS over an NFS share here.'
 section: NAS
 ---
 
+**Last updated 21st February 2022**
+
 ## Requirements
 
 This guide allows you to mount NFS on the most common distributions. To mount an NFS share, you must have:
 
-- An OVH NAS.
-- A machine on the OVH network (Dedicated Server, VPS, Instance...).
-- An NFS-compatible distribution.
+- a [Dedicated Server](https://www.ovhcloud.com/en-ie/bare-metal/) **or** a [VPS](https://www.ovhcloud.com/en-ie/vps/) **or** a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/).
+- a [HA-NAS solution](https://www.ovh.ie/nas/).
+- an NFS-compatible distribution.
 
 
 ### Linux
 
-Compatibility: Debian 6/7/8 & Ubuntu 12/13/14
+Compatibility: Debian  & Ubuntu
 
 To mount an NFS share on Linux, you must:
 
@@ -63,11 +65,11 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 |/NFS_PATH|zpool-999888/PartitionName|
 |MOUNTING_FOLDER|/media/NasHA -v|
 
-### CentOS 6
+### CentOS 
 
-Compatibility: centos
+Compatibility: CentOS
 
-To mount an NFS share under CentOS 6, you must:
+To mount an NFS share under CentOS, you must:
 
 - Connect to the server in SSH.
 - Install the "nfs-utils" and "rpcbind" packages via the command:
@@ -188,12 +190,12 @@ Configuration
 > ```
 >
 
-### ESXI 5.5:
+### ESXI 
 
 To mount an NFS share under ESXI, you must have:
 
 - Server access via vSphere.
-- Access to the OVH Control Panel, to click `Inventory`{.action}: 
+- In the control panel, click on `Inventory`{.action}:
 
 
 Configuration
@@ -228,3 +230,7 @@ Configuration
 >
 > The NFS user is `root`, rights changes with this user can generate conflicts with existing CIFS/SMB rights.
 > 
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -32,11 +32,11 @@ Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail 
 
 Voici comment vérifier que vos services sont bien opérationnels :
 
-- Pour votre **nom de domaine**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action} dans la colonne de gauche, puis sélectionnez votre nom de domaine. Si votre nom de domaine est expiré, cela vous sera indiqué en haut de la page.
-- Pour votre **Hébergement Web**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez votre hébergement. La date d'expiration ou de renouvellement automatique de votre hébergement sera indiquée en haut de la page.
-- Pour une offre **MXplan**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mails`{.action} dans la colonne de gauche, puis sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
-- Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
-- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+- Pour votre **nom de domaine**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Noms de domaine`{.action}, puis sélectionnez votre nom de domaine. Si votre nom de domaine est expiré, cela vous sera indiqué en haut de la page.
+- Pour votre **Hébergement Web**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}, puis sélectionnez votre hébergement. La date d'expiration ou de renouvellement automatique de votre hébergement sera indiquée en haut de la page.
+- Pour une offre **MXplan**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mails`{.action}, puis sélectionnez le nom de domaine concerné. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+- Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
+- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 
 ### Je ne parviens pas à envoyer d'e-mails depuis mon logiciel de messagerie
 
@@ -58,19 +58,19 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ### Je ne ne parviens pas à me connecter au webmail
 
-Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) uniquement).
+Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) uniquement).
 
 Voici comment modifier le mot de passe d'une adresse e-mail :
 
 - Pour une offre **MXplan**, consultez notre guide [Modifier le mot de passe d’une adresse e-mail MX Plan](https://docs.ovh.com/fr/emails/modifier-mot-de-passe-adresse-email/)
 
-- Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action} dans la colonne de gauche, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
+- Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe.
 
-- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/).
+- Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/configurer-2fa-exchange/).
 
 ### Y a-t-il un incident ou une maintenance en cours sur mon service ?
 
-Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <http://travaux.ovh.net/>.
+Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <https://web-cloud.status-ovhcloud.com/>.
 
 - Pour **MXplan**, vérifiez dans la section `E-mails`
 - Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`
@@ -117,6 +117,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |502|Commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
 |503|Le serveur a rencontré une mauvaise séquence de commandes|Cela est généralement dû un problème d'authentification, assurez-vous d'être bien authentifié sur le serveur SMTP au niveau de la configuration de votre logiciel de messagerie|
 |504|Paramètre de commande non implémentée|Les paramètres ou les options utilisées lors de l'envoi de l'e-mail avec votre serveur SMTP sont reconnus mais désactivés dans sa configuration. Veuillez contacter votre fournisseur de service|
+|535|Echec lors de l'authentification|Les informations utilisateur/mot de passe sont erronées ou l'envoi est potentiellement bloqué sur votre adresse e-mail. Vérifiez l'état de votre adresse e-mail depuis votre espace client OVHcloud. Un changement de mot de passe peut débloquer l'envoi si le compte à été bloqué pour spam. Consultez notre guide [Que faire en cas de compte bloqué pour spam ?](https://docs.ovh.com/fr/microsoft-collaborative-solutions/bloque-pour-spam/) pour plus d'informations.|
 |550|Action demandée non effectuée : boîte aux lettres indisponible|Le serveur de messagerie de destination n'a pas pu vérifier l'adresse e-mail utilisée. Ceci est le plus souvent causé par une adresse e-mail de destination invalide, mais peut également signifier que le serveur de messagerie de destination a des problèmes de pare-feu ou de connectivité. Vérifier l'adresse e-mail du destinataire, et/ou réessayez à nouveau|
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|

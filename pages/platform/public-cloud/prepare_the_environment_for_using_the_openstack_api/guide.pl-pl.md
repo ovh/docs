@@ -2,10 +2,10 @@
 title: 'Przygotowanie środowiska do korzystania z API OpenStack'
 excerpt: 'Zainstaluj środowisko OpenStack, aby monitorować Twoje instancje za pośrednictwem API'
 slug: przygotowanie_srodowiska_dla_api_openstack
-section: "Zarządzanie w OpenStack\_CLI"
+section: Zarządzanie w OpenStack CLI
 ---
 
-**Ostatnia aktualizacja z dnia 08-02-2019**
+**Ostatnia aktualizacja z dnia 30/03/2022**
 
 ## Wprowadzenie
 
@@ -25,16 +25,18 @@ Dzięki API OpenStack możesz zautomatyzować zarządzanie usługami, tworząc s
 
 Otwórz terminal lub połącz się przez SSH ze środowiskiem, które chcesz przygotować.
 
-Zaktualizuj cache pakietów, używając polecenia `apt-get update`: 
+Zaktualizuj cache pakietów, używając polecenia `apt update`: 
 
 ```sh
-apt-get update
+apt update
 ```
 
-Użyj poniższego polecenia do instalacji klientów Nova (aplikacja obliczeniowa), Glance (usługa obrazów) i Swift:
+Użyj poniższego polecenia, aby zainstalować klientów OpenStack, Nova (aplikacja obliczeniowa) i Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Po zakończeniu tego etapu zalecamy utworzenie oddzielnego użytkownika zamiast korzystania z użytkownika root.
@@ -60,22 +62,13 @@ Zaktualizuj cache pakietów, używając polecenia apt-get update:
 ```sh
 yum update
 ```
-Zainstaluj rpm rdo-release za pomocą następującego polecenia:
+
+Użyj poniższego polecenia, aby zainstalować klientów OpenStack, Nova (aplikacja obliczeniowa) i Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-Następnie zainstaluj klienta OpenStack:
-
-```sh
-yum install -y python-openstackclient
-```
-
-Na koniec zainstaluj klienta Nova:
-
-```sh
-yum install -y python-novaclient
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 Po zakończeniu tego etapu zalecamy utworzenie oddzielnego użytkownika zamiast korzystania z użytkownika root.
@@ -102,7 +95,7 @@ Możesz również przeprowadzić instalację samodzielnie. W tym celu postępuj 
 
 #### Etap 1: edytuj zmienne środowiskowe systemu
 
-Wyszukaj parametry zmiennych środowiskowych systemu i przejdź do „Edycja zmiennych środowiskowych systemu”:
+Wyszukaj parametry zmiennych środowiskowych systemu i przejdź do “Edycja zmiennych środowiskowych systemu”:
 
 ![Parametry zmiennych środowiskowych](images/2_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -114,13 +107,13 @@ Przejdź do zakładki `Zaawansowane`{.action} i kliknij `Zmienne środowiskowe`{
 
 #### Etap 3: skonfiguruj zmienne środowiskowe 
 
-W sekcji „Zmienne systemowe” wybierz „Nowy”, nadaj nazwę „PYTHON_HOME” i dodaj ścieżkę do Python’a. Domyślnie będzie wyglądała ona następująco: « C:\\Python27 ».
+W sekcji “Zmienne systemowe” wybierz “Nowy”, nadaj nazwę “PYTHON_HOME” i dodaj ścieżkę do Python’a. Domyślnie będzie wyglądała ona następująco: « C:\\Python27 ».
 
 ![Dodanie ścieżki dostępu](images/4_edit_system_variables.png){.thumbnail}
 
 #### Etap 4: dodanie ścieżki dla zmiennych
 
-Po dodaniu „Python”, edytuj ścieżkę (Path) w zmiennych systemowych i dodaj na końcu ścieżki:
+Po dodaniu “Python”, edytuj ścieżkę (Path) w zmiennych systemowych i dodaj na końcu ścieżki:
 
 `...;%PYTHON_HOME%\;%PYTHON_HOME%\Script`
 
@@ -140,9 +133,42 @@ Jeśli operacja została przeprowadzona poprawnie, wyświetli się podsumowanie
 
 ![Automatyczna instalacja](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-Możesz sprawdzić wersję instalacyjną w nowo otwartym oknie CMD (wiersz poleceń), wprowadzając „python-V” z dowolnego miejsca w systemie.
+Możesz sprawdzić wersję instalacyjną w nowo otwartym oknie CMD (wiersz poleceń), wprowadzając “python-V” z dowolnego miejsca w systemie.
 
 ![Weryfikacja](images/6_preparation_openstack_environment_windows.png){.thumbnail}
+
+### MacOS
+
+Możesz użyć [HomeBrew](https://brew.sh), menedżera pakietów dla MacOS.
+
+Otwórz terminal i wpisz następujące polecenie:
+
+```bash
+brew install openstackclient
+```
+
+Użyj poniższych poleceń, aby zainstalować klienta Nova (aplikacja obliczeniowa) i Swift:
+
+Python2 :
+
+```sh
+pip install python-novaclient
+pip install python-swiftclient
+```
+
+Python3 :
+
+```sh
+pip3 install python-novaclient
+pip3 install python-swiftclient
+```
+
+Aby uzyskać dostęp do narzędzi pomocowych, wprowadź następującą komendę:
+
+```sh
+openstack --help
+nova help
+```
 
 ## Sprawdź również
 

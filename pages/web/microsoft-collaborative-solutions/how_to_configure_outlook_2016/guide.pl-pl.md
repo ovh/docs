@@ -26,7 +26,7 @@ Konta Exchange mogą być skonfigurowane w jednym z kompatybilnych programów po
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [Exchange](https://www.ovh.pl/emaile/){.external}.
+- Wykupienie usługi [Exchange](https://www.ovhcloud.com/pl/emails/){.external}.
 - Instalacja programu Microsoft Outlook 2016 lub nowszego oprogramowania na Twoim komputerze
 - Dane do logowania do konta e-mail, które chcesz skonfigurować
 - Pole SRV OVHcloud musi być poprawnie skonfigurowane w strefie DNS domeny. Sprawdź nasz przewodnik [Dodaj domenę do usługi Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/).

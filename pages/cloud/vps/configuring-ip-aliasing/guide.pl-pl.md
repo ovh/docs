@@ -6,10 +6,10 @@ section: 'Sieć & IP'
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 27-04-2021**
+**Ostatnia aktualizacja z dnia 30/11/2021**
 
 ## Wprowadzenie
 
@@ -21,7 +21,7 @@ Alias IP (*IP aliasing* w języku angielskim) to specjalna konfiguracja sieci dl
 >
 > OVHcloud oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
 >
-> Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce przewodnik, którego celem jest pomoc w jak najbardziej optymalnym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
 ## Wymagania początkowe
@@ -48,7 +48,7 @@ Jeśli chodzi o różne wersje dystrybucji, należy pamiętać, że można zmody
 |NETWORK_INTERFACE|Nazwa interfejsu sieciowego|*eth0*, *ens3*|
 |ID|ID aliasu IP, zaczynające się od *0* (w zależności od liczby dodatkowych adresów IP do skonfigurowania)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etap 1: wyłącz automatyczną konfigurację sieci
 
@@ -131,12 +131,17 @@ Otwórz plik konfiguracyjny sieci, aby go zmienić za pomocą następującego po
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Nie zmieniaj istniejących linii w pliku. Dodaj adres IP Failover, postępując zgodnie z poniższym przykładem:
+Nie zmieniaj istniejących linii w pliku konfiguracyjnym. Dodaj adres IP Failover, dodając drugi blok konfiguracji do interfejsu publicznego, jak w poniższym przykładzie:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:
@@ -282,7 +287,7 @@ W sekcji "IP Addresses" sprawdź, czy adres IP Failover został poprawnie dodany
 
 ### Diagnostyka
 
-Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue]((../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
+Po pierwsze, zrestartuj serwer za pomocą wiersza poleceń lub interfejsu użytkownika. Jeśli nadal nie udaje Ci się nawiązać połączenia między siecią publiczną a adresem IP aliasu i podejrzewasz problem z siecią, zrestartuj serwer w [trybie rescue](../rescue/). Następnie możesz skonfigurować adres IP Failover bezpośrednio na serwerze.
 
 Po zalogowaniu się do serwera przez SSH wprowadź następującą komendę:
 

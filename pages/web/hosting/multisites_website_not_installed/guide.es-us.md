@@ -27,7 +27,7 @@ Es posible ver aparecer en su navegador Internet la página de error **Sitio no 
 
 ## Requisitos
 
-- Tener un [plan de hosting](https://www.ovh.com/world/es/hosting/).
+- Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Disponer también de la gestión de la [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) a la que está asociado el dominio.
 
@@ -62,7 +62,7 @@ Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multis
 
 #### 2\.1 Identificar la dirección IP de un alojamiento de OVHcloud
 
-Para acceder a la dirección IP, haga clic en `Alojamientos` en la columna izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el alojamiento correspondiente.
+Para acceder a la dirección IP, haga clic en `Alojamientos` en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el alojamiento correspondiente.
 
 ![hosting-general-informacion](images/hosting-general-informations.png){.thumbnail}
 

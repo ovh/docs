@@ -17,7 +17,7 @@ Dzięki usłudze OVHcloud Hosted Exchange można wysyłać oraz odbierać e-mail
 
 ## Wymagania początkowe
 
-- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovh.pl/hosting/), zawarta w [bezpłatnym hostingu Start10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovh.pl/emaile/hosted-exchange/) lub [**E-mail Pro**](https://www.ovh.pl/emaile/email-pro/))
+- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/), zawarta w [bezpłatnym hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/) lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/))
 - dane do logowania dla adresu e-mail, który chcesz skonfigurować
 
 ## W praktyce
@@ -106,6 +106,8 @@ Aby utworzyć nowy folder, kliknij prawym przyciskiem myszy nazwę adresu e-mail
 
 #### Tworzenie reguł skrzynki odbiorczej
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Aby zarządzać regułami, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
@@ -121,6 +123,16 @@ Podaj wymagane informacje w zależności od działania, które ma wykonywać reg
 ![useowa](images/owa_exchange_step14.png){.thumbnail}
 
 Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](../tworzenie-regul-skrzynki-odbiorczej-w-owa/).
+
+#### Zablokuj nadawcę
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UeNdpFwdXm0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Kliknij koło zębate w prawym górnym rogu, a następnie "Opcje". W lewej kolumnie wpisz drzewo "Poczta", "Konta", a następnie "Zablokuj lub autoryzuj".
+
+W sekcji "**Nadawcy zablokowani**" wpisz adres e-mail lub nazwę domeny, którą chcesz zablokować, następnie kliknij przycisk `+`{.action}, aby dodać ją do listy.
+
+![useowa](images/owa_exchange_block.png){.thumbnail}
 
 ### Zarządzanie listą kontaktów
 
@@ -139,6 +151,8 @@ Zostanie wyświetlona nowa strona, na której można dodać nowy kontakt, utworz
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
 ### Zmiana hasła
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/msmUN7cLSNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Po zalogowaniu do interfejsu OWA możesz zmienić hasło do konta. W tym celu kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 

@@ -16,8 +16,8 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
@@ -30,7 +30,7 @@ Antes de empezar, deberá elegir el método que quiera utilizar para exportar la
 
 - **Realizar la copia de seguridad utilizando un script**: Para ello, deberá crear un script y colocarlo en su alojamiento web de OVH. La creación de un script requiere conocimientos técnicos.
 
-- **Realizar la copia de seguridad mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovh.com/world/es/hosting){.external} son compatibles.
+- **Realizar la copia de seguridad mediante comandos SSH**: Para ello, deberá conectarse por SSH al espacio de almacenamiento y utilizar comandos para interactuar con él. Este tipo de acceso requiere conocimientos técnicos avanzados. Por otro lado, no todos los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external} son compatibles.
 
 Algunas de las operaciones anteriores se realizan en interfaces que no pertenecen a OVHcloud, por lo que no podemos orientarle sobre cómo ejecutarlas. A continuación explicamos con más detalle los distintos métodos de importación (sin que estas explicaciones sustituyan a la ayuda de un webmaster). 
 
@@ -45,7 +45,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 ### Exportar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Desde esa página podrá realizar una nueva copia de seguridad o restaurar una copia de seguridad ya realizada.
 
@@ -75,7 +75,7 @@ Para descargar una copia de seguridad, haga clic en los tres puntos situados al 
 
 ### Exportar una copia de seguridad desde la herramienta web phpMyAdmin
 
-En primer lugar, deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+En primer lugar, deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 

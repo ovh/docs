@@ -23,7 +23,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](https://www.ovh.de/hosting/){.external} enthalten).
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
 - Sie haben die Login-Daten der OVHcloud E-Mail-Adresse, die Sie einrichten möchten.
 - Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie die OVHcloud Adresse einrichten möchten.
 
@@ -39,7 +39,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 Gehen Sie zunächst über Ihren Webbrowser in das Gmail-Webinterface. Geben Sie dort die Login-Daten Ihres Gmail-Accounts ein, um sich mit diesem zu verbinden.
 
-Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Einstellungen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
+Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und anschließend auf `Alle Einstellungen anzeigen`{.action}. Klicken Sie im angezeigten Fenster auf den Tab `Konten und Import`{.action}. 
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 

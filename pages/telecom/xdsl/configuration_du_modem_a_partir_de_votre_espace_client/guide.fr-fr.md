@@ -1,46 +1,46 @@
 ---
-title: "Configurer sa box à partir de l'espace client OVH"
+title: "Configurer sa box à partir de l'espace client OVHcloud"
 slug: configuration_du_modem_a_partir_de_votre_espace_client
-excerpt: "Découvrez comment paramétrer à distance votre box OVH depuis l'espace client"
+excerpt: "Découvrez comment paramétrer à distance votre box OVHcloud depuis l'espace client"
 section: 'Configuration de mon offre'
 ---
 
-**Dernière mise à jour le 18/03/2019**
+**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
-Afin de faciliter la gestion de votre accès à Internet, vous avez la possibilité de paramétrer votre box OVH directement depuis votre espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
+Afin de faciliter la gestion de votre accès à Internet, vous avez la possibilité de paramétrer votre box OVHcloud directement depuis votre espace client. Vous pouvez ainsi changer cette configuration à distance, sans devoir vous connecter à l'interface de votre box. Autre avantage, vous disposez toujours d'une sauvegarde de vos paramètres.
 
-**Découvrez comment configurer à distance votre box OVH depuis l'espace client.**
+**Découvrez comment configurer à distance votre box OVHcloud depuis l'espace client.**
 
 ## Prérequis
 
-- Disposer d'un [accès à Internet OVH](https://www.ovhtelecom.fr/offre-internet/){.external}. 
+- Disposer d'un [accès à Internet OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
 - Avoir activé la gestion de votre box à distance.
-- Être connecté à l’[espace client OVH](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie `Télécom`{.action}.
+- Être connecté à l’[espace client OVHcloud](https://www.ovhtelecom.fr/manager/index.html#/){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre box
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez l'accès concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action}, puis sélectionnez l'accès concerné.
 
 Positionnez-vous alors sur l'onglet `Mon modem`{.action}. Dans la page qui s'affiche, vérifiez que la case à côté de `Configuration à distance activée` est bien cochée. Dès lors, deux possibilités :
 
 - **la configuration à distance est activée** : poursuivez la lecture de cette documentation à l'étape 2 « [Personnaliser la configuration de votre box](./#etape-2-personnaliser-la-configuration-de-votre-box) » ;
 
-- **la configuration à distance n'est pas activée** : vous devez l'activer si vous souhaitez paramétrer votre box OVH à distance. Pour ce faire, cochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de l'activation.
+- **la configuration à distance n'est pas activée** : vous devez l'activer si vous souhaitez paramétrer votre box OVHcloud à distance. Pour ce faire, cochez la case à côté de `Configuration à distance activée`, confirmez la manipulation, puis patientez quelques minutes le temps de l'activation.
 
 > [!warning]
 >
 > L'activation de la configuration à distance écrasera le paramétrage actuel de votre box. Si une configuration spécifique est actuellement en place, celle-ci sera alors effacée.
 >
 
-![configureremotelybox](images/configure-remotely-box-step1.png){.thumbnail}
+![configureremotelybox](images/configure-remotely-box-step1-2022.png){.thumbnail}
 
 ### Étape 2 : personnaliser la configuration de votre box
 
-Pour paramétrer votre box depuis l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}, assurez-vous d'être positionné sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
+Pour paramétrer votre box depuis l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, assurez-vous d'être positionné sur l'onglet `Mon modem`{.action} de l'accès à Internet concerné. **Pour rappel, il est impératif que la configuration à distance soit activée pour que cette gestion soit possible.**
 
 Depuis l'onglet `Mon modem`{.action}, vous retrouvez alors plusieurs sections. Chacune d'elles permet d'interagir avec la configuration de votre box. Poursuivez alors selon la manipulation que vous souhaitez effectuer :
 
@@ -74,7 +74,7 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Redémarrer à distance votre box** : pour cela, cliquez sur le bouton `Redémarrer le modem`{.action} puis confirmez l'action. Patientez alors le temps que votre box redémarre.
 
-- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVH, celle-ci conservera cependant les paramètres en place au moment de la désactivation.
+- **Activer ou désactiver la configuration à distance de votre box** : pour cela, cochez ou décochez la case à côté de `Configuration à distance activée`. L'activation écrasera le paramétrage actuel de votre box. La désactivation rendra impossible la configuration de votre box depuis l'espace client OVHcloud, celle-ci conservera cependant les paramètres en place au moment de la désactivation.
 
 - **Pare-feu** : lorsque vous gérez votre box à distance, le pare-feu n’est pas paramétrable. Celui-ci s’adapte automatiquement aux configurations en place dans l’espace client.
 
@@ -120,7 +120,7 @@ Pour cela, cliquez sur l'icône en forme de crayon à droite du tableau. Vous po
 
 |Configuration|Description|
 |---|---|
-|Passerelle|Elle correspond à l'adresse IP locale de votre box OVH. Celle-ci peut être différente dans des cas très spécifiques, comme avec des pare-feu ou OverTheBox.|
+|Passerelle|Elle correspond à l'adresse IP locale de votre box OVHcloud. Celle-ci peut être différente dans des cas très spécifiques, comme avec des pare-feu ou OverTheBox.|
 |DNS|Les DNS primaires et secondaires sont les options DNS attribuées à un équipement lors d'une demande DHCP. Ils ne modifient pas les DNS internes de la box.|
 |Nom de domaine DHCP|Permet l'ajout d'un suffixe DNS à votre réseau local.|
 |Plages DHCP|Correspond au début et à la fin de la plage.|
@@ -167,17 +167,17 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 - **Réinitialiser votre box** : permet de réinitialiser les paramètres de votre box, tout en conservant les configurations définies dans votre espace client. Pour cela, cliquez sur le bouton `Réinitialiser le modem`{.action} puis confirmez l'action. Patientez alors le temps que la manipulation s'effectue.
 
-- **Réinitialiser la configuration OVH** : permet de réinitialiser les paramètres de votre box sans conserver les configurations définies dans votre espace client. Pour cela, cliquez sur le bouton `Réinitialiser la configuration OVH`{.action} puis confirmez l'action. Patientez alors le temps que la manipulation s'effectue.
+- **Réinitialiser la configuration OVHcloud** : permet de réinitialiser les paramètres de votre box sans conserver les configurations définies dans votre espace client. Pour cela, cliquez sur le bouton `Réinitialiser la configuration OVH`{.action} puis confirmez l'action. Patientez alors le temps que la manipulation s'effectue.
 
-- **Activer le mode bridge** : permet d'activer ou de désactiver le mode bridge de votre box. En l'activant, votre box OVH n'agira plus en tant que routeur. Pour gérer ce mode, vous devez cocher ou décocher la case à côté `Mode bridge activé`.
+- **Activer le mode bridge** : permet d'activer ou de désactiver le mode bridge de votre box. En l'activant, votre box OVHcloud n'agira plus en tant que routeur. Pour gérer ce mode, vous devez cocher ou décocher la case à côté `Mode bridge activé`.
 
 > [!primary]
 >
-> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVH ne pouvant pas intervenir sur celui-ci.
+> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVHcloud ne pouvant pas intervenir sur celui-ci.
 Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](../comment-activer-bridge-zyxel/).
 >
 
-- **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVH en PPPoe est de 1 492.
+- **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVHcloud en PPPoe est de 1 492.
 
 Pour le modifier, sélectionnez la nouvelle valeur dans la liste déroulante puis cliquez sur `Valider`{.action}.
 

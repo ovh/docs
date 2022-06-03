@@ -3,7 +3,7 @@ title: 'Configurar a rede em Proxmox VE nas gamas High Grade & SCALE'
 slug: proxmox-network-hg-scale
 excerpt: 'Saiba como configurar a rede em Proxmox VE nas gamas High Grade & SCALE.'
 section: 'Utilização avançada'
-order: 5
+order: 6
 ---
 
 > [!primary]
@@ -122,7 +122,7 @@ iface ens18 inet static
 
 #### Requisitos
 
-* Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços.
+* Ter reservado um bloco público de endereços IP na sua conta, com um mínimo de quatro endereços. O bloco deve ser apontado para o vRack.
 * Ter acesso ao intervalo de endereços de IP privados escolhidos.
 * Dispor de um [servidor compatível com o vRack](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 * Ter ativado um serviço [vRack](https://www.ovh.pt/solucoes/vrack/){.external}.
@@ -138,6 +138,10 @@ Tem de:
 
 * criar um agregado;
 * criar um bridge ligado ao agregado;
+
+Primeiro, adicione o seu bloco público de endereços IP ao vRack. Para isso, aceda à secção `Bare Metal Cloud`{.action} da Área de Cliente OVHcloud e abra o menu `vRack`{.action}.
+
+Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis. Clique no bloco público de endereços IP que deseja adicionar ao vRack e, a seguir, clique no botão `Adicionar`{.action}.
 
 #### Configurar um endereço IP utilizável
 

@@ -19,14 +19,14 @@ Os grupos Exchange permitem que vários participantes comuniquem ao enviarem ema
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/).
 
 
 ## Instruções
 
 ### Passo 1: Criar um novo grupo
 
-Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na secção «Web» e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action} à esquerda. De seguida clique em `Grupos`{.action}, no menu horizontal.
+Antes de mais, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na secção `Webcloud`{.action} e selecione o serviço Exchange na coluna sob `Microsoft`{.action} `Exchange`{.action} à esquerda. De seguida clique em `Grupos`{.action}, no menu horizontal.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 

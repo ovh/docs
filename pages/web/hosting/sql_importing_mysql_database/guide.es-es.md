@@ -16,8 +16,8 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Tener la copia de seguridad que quiera importar en la base de datos.
 - Según el método de importación utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
@@ -48,7 +48,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de import
 
 ### Restaurar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos que quiera restaurar a una fecha anterior y seleccione `Restaurar una copia de seguridad`{.action}. Tenga en cuenta que esta acción sustituirá el contenido actual de la base de datos por el de la copia de seguridad.
 
@@ -62,7 +62,7 @@ Haga clic en los tres puntos situados al final de la línea correspondiente al b
 
 ### Importar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos en la que quiera importar datos y seleccione `Importar un archivo`{.action}.
 
@@ -95,7 +95,7 @@ A continuación haga clic en `Aceptar`{.action} y espere a que finalice la impor
 
 ### Realizar la importación desde la herramienta web phpMyAdmin
 
-En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+En primer lugar deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 
@@ -170,4 +170,4 @@ Sustituya la información genérica del comando por la información de la base d
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

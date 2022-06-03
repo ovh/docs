@@ -9,7 +9,7 @@ section: 'Red e IP'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 27/4/2021**
+**Última actualización: 30/11/2021**
 
 
 ## Objetivo
@@ -49,7 +49,7 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 |NETWORK_INTERFACE|Nombre de la interfaz de red|*eth0*, *ens3*|
 |ID|ID del alias IP, comenzando por *0* (en función del número de direcciones IP adicionales a configurar)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### 1\. desactivar la configuración automática de red
 
@@ -62,7 +62,7 @@ sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 Introduzca la siguiente línea y, a continuación, guarde y cierre el editor.
 
 ```bash
-network: [config: disabled}
+network: {config: disabled}
 ```
 
 La creación de este archivo de configuración impide la ejecución automática de los cambios realizados en la configuración de su red.
@@ -132,12 +132,17 @@ Abra el archivo de configuración de red para modificarlo con el siguiente coman
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-No modifique las líneas existentes en el archivo. Añada su dirección IP failover con el siguiente ejemplo:
+No modifique las líneas existentes en el archivo de configuración. Añada su dirección IP failover añadiendo un segundo bloque de configuración para la interfaz pública, como se muestra a continuación:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:

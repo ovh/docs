@@ -2,10 +2,15 @@
 title: 'Crear una instancia en Horizon'
 slug: crear_una_instancia_en_horizon
 excerpt: 'Cómo crear una instancia desde el panel Horizon'
-section: Horizon
+section: Gestión desde Horizon
+order: 5
 ---
 
-**Última actualización: 27/03/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 31/12/2021**
 
 ## Objetivo
 
@@ -15,12 +20,12 @@ Es posible crear instancias directamente en Horizon. Desde esta interfaz podrá,
 
 ## Requisitos
 
-- Tener un proyecto de [Public Cloud]({ovh_www}/public-cloud/){.external} en su cuenta de OVH.
-- [Estar conectado a Horizon](../crear_un_acceso_a_horizon/){.external}. 
+- Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud.
+- [Estar conectado a Horizon](../horizon/). 
 
 ## Procedimiento
 
-En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra guía [Conectarse a Horizon](../crear_un_acceso_a_horizon/){.external}.
+En primer lugar, conéctese a Horizon. Si necesita ayuda, consulte nuestra [guía](../horizon/).
 
 A continuación, haga clic en `Compute`{.action} en la columna izquierda y seleccione `Instances`{.action}.
 
@@ -50,10 +55,15 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 |Disk Partition|Elija entre automático o manual.|
 |Configuration Drive|Configure OpenStack para escribir los metadatos en un disco de configuración específico que se asociará a la instancia al crearla.|
 
+> [!warning]
+> 
+> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente.
+>
+
 Una vez que haya terminado de configurar la instancia o instancias, haga clic en el botón `Launch Instance`{.action} para lanzarlas.
 
 ![Crear una instancia](images/create-instance-step3.png){.thumbnail}
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

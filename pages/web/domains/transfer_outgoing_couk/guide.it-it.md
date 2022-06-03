@@ -30,7 +30,7 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 
 ## Prerequisiti
 
-- Disporre di un [dominio.uk](https://www.ovh.it/domini/) registrato in OVHcloud
+- Disporre di un [dominio.uk](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e disporre dei diritti necessari per gestire il dominio (essere amministratore del dominio)
 - Il dominio deve essere sempre attivo, significa che non deve essere scaduto o essere bloccato da OVHcloud
 - Il dominio non deve essere oggetto di controversia presso il [Registry Nominet](https://www.nominet.uk/)
@@ -50,13 +50,11 @@ Se non conosci ancora il TAG richiesto, puoi farne richiesta presso il tuo nuovo
 
 ### Step 1: verificare le informazioni necessarie
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca sui `Domini`{.action} nella colonna a sinistra e seleziona il dominio interessato.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. Clicca sui `Domini`{.action} e seleziona il dominio interessato.
 
 Ricordati di essere connesso come contatto amministratore.
 
 Nella scheda `Informazioni generali`{.action} è possibile verificare il rispetto delle condizioni richieste per la procedura di trasferimento.
-
-![trasferimento in uscita](images/img_4266.jpg){.thumbnail}
 
 ### Step 2: modifica il TAG del tuo dominio
 

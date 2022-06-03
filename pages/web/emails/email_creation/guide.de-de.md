@@ -16,7 +16,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 ## Voraussetzungen
 
-- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} oder separat bestellbar.
+- Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} oder separat bestellbar.
 - Sie können noch weitere E-Mail-Adressen im Rahmen Ihres Angebots erstellen.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
@@ -29,7 +29,7 @@ Mit E-Mail-Adressen von MX Plan können Sie E-Mails über Ihr bevorzugtes Gerät
 
 Je nach Aktivierungsdatum Ihres Dienstes, oder falls [Ihr Angebot vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie den Namen Ihres MX Plan Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|
@@ -131,7 +131,7 @@ Geben Sie im angezeigten Fenster die angeforderten Informationen ein.
 |Information|Beschreibung|  
 |---|---|  
 |Account-Name|Geben Sie den Namen ein, den Ihre E-Mail-Adresse erhalten soll (zum Beispiel: vorname.name). Die entsprechende Domain ist bereits standardmäßig angegeben.|  
-|Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie den Account später von anderen Accounts in Ihrem OVH Kundencenter unterscheiden können.|  
+|Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie den Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.|  
 |Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihrer E-Mail-Adresse zum Speichern von Nachrichten.|  
 |Passwort|Wählen Sie ein Passwort und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, nicht zweimal das gleiche Passwort zu verwenden, sondern ein neues auszuwählen, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 

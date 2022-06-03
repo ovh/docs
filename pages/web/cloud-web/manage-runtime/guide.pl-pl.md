@@ -5,7 +5,11 @@ excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostin
 section: 'Konfiguracja hostingu'
 ---
 
-**Ostatnia aktualizacja z dnia 23-01-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 04-05-2022**
 
 ## Wprowadzenie
 
@@ -15,14 +19,14 @@ W ramach Cloud Web udostępniamy różne języki programowania do tworzenia Twoj
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml)
+- Posiadanie hostingu [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/)
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
 W ramach Cloud Web możesz użyć jednego lub kilku frameworków. Wybór odpowiedniego frameworku będzie zatem zależał od efektu, jaki chcesz uzyskać. 
 
-Dlatego, jeśli jeszcze tego nie zrobiłeś **upewnij się, czy Twój projekt jest kompatybilny pod względem technicznym z Twoim hostingiem Cloud Web**. Lista języków programowania znajduje się tutaj: <https://www.ovh.pl/hosting/cloud-web.xml>. 
+Dlatego, jeśli jeszcze tego nie zrobiłeś **upewnij się, czy Twój projekt jest kompatybilny pod względem technicznym z Twoim hostingiem Cloud Web**. Lista języków programowania znajduje się tutaj: <https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/>. 
 
 Po dokładnym wskazaniu frameworku lub frameworków, których będziesz używał, możesz rozpocząć operacje opisane poniżej.
 
@@ -38,7 +42,7 @@ Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hosting
 
 Istnieje kilka sposobów zarządzania frameworkami hostingu Cloud Web:
 
-- dodanie lub zmiana frameworku (maksymalna liczba frameworków zależy od [wybranej oferty](https://www.ovh.pl/hosting/cloud-web.xml){.external});
+- dodanie lub zmiana frameworku (maksymalna liczba frameworków zależy od [wybranej oferty](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external});
 - oznaczenie frameworku jako wyboru domyślnego;
 - usunięcie wybranego frameworku.
 
@@ -54,7 +58,6 @@ Aby dodać lub zmienić framework, przejdź do karty`Frameworki`{.action} odpowi
 - **jeśli chcesz dodać framework**: kliknij `Operacje`{.action} nad tabelą, po czym `Dodaj framework`{.action};
 - **jeśli chcesz zmienić framework**: kliknij przycisk `...`{.action} po prawej stronie odpowiedniego frameworku, po czym kliknij `Zmień`{.action}.
 
-![cloud web hosting ssd](images/cloud-web-runtime-step2.png){.thumbnail}
 
 W oknie, które się wyświetla, wprowadź wymagane informacje: Następnie wykonaj kroki właściwe dla wybranego frameworka:
 
@@ -71,8 +74,6 @@ W oknie, które się wyświetla, wprowadź wymagane informacje: Następnie wykon
 |Framework|Wybierz nowy framework.|  
 
 Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij się teraz, czy framework jest używany przez odpowiednie strony podpięte w opcji MultiSite. W tym celu przejdź do etapu 3: [Powiązanie frameworka ze stroną podpiętą w opcji MultiSite](./#etap-3-powiazanie-frameworka-ze-strona-podpieta-w-opcji-multisite_2){.external}.
-
-![cloud web hosting ssd](images/cloud-web-runtime-step3.png){.thumbnail}
 
 ##### **Node.js**
 
@@ -123,7 +124,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zatwierdź`{.action}. Upewnij si�
 > W naszym przykładzie utworzono jedynie frameworki PHP i Node.js. Możliwe, że w Twoim projekcie korzystasz z Ruby lub Pythona. W takim przypadku mają zastosowanie
 > opisane poniżej działania.
 > 
-> Równoległe wykorzystanie dwóch frameworków w Twoim hostingu Cloud Web zależy od [wybranej oferty](https://www.ovh.pl/hosting/cloud-web.xml){.external}.
+> Równoległe wykorzystanie dwóch frameworków w Twoim hostingu Cloud Web zależy od [wybranej oferty](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/){.external}.
 > 
 
 Po wybraniu jednego lub kilku frameworków niezbędnych do Twojego projektu, upewnij się, czy są one powiązane z Twoimi stronami podpiętymi w opcji MultiSite. W tym celu przejdź do karty `MultiSite`{.action} odpowiedniego hostingu Cloud Web. 

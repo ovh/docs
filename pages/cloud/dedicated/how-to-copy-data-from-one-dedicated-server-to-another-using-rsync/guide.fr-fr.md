@@ -11,11 +11,11 @@ Dans le cadre d’une migration ou d’une sauvegarde, vous pouvez être amené 
 
 Distribué sous licence GNU GPL, rsync (pour  «remote synchronization» ), est un logiciel libre de synchronisation de fichiers capable d’effectuer une synchronisation unidirectionnelle, c'est-à-dire de copier les fichiers du serveur source vers le serveur de destination. 
 
-**Ce tutoriel va donc illustrer comment copier des données d’un serveur dédié OVH vers un autre en utilisant rsync.**
+**Ce tutoriel va donc illustrer comment copier des données d’un serveur dédié OVHcloud vers un autre en utilisant rsync.**
 
 > [!warning]
 >
-Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation ! Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation ! Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
 >
 
 ## Prérequis
@@ -30,7 +30,7 @@ Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH
 
 ### Ce que vous devez avoir
 
-*     Posséder au moins deux serveurs dédiés OVH fonctionnant sous une distribution GNU/Linux.
+*     Posséder au moins deux serveurs dédiés OVHcloud fonctionnant sous une distribution GNU/Linux.
 *     Disposer d'un accès *root* sur la machine source
 *     Disposer d'un accès *SSH* sur la machine de destination
 

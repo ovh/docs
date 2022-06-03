@@ -2,11 +2,11 @@
 title: 'Przesyłanie i pobieranie danych z serwera dedykowanego za pośrednictwem SFTP'
 slug: przesylanie-i-pobieranie-danych-sftp
 excerpt: 'Dowiedz się, jak przesłać dane z serwera dedykowanego na komputer lokalny i na odwrót'
-section: Tutoriale
+section: Tutorial
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
 **Ostatnia aktualizacja z dnia 18-05-2021**
@@ -35,7 +35,7 @@ Protokół SFTP może być używany do przesyłania plików za pomocą bezpieczn
 
 Domyślnie serwer z systemem operacyjnym GNU/Linux będzie miał dostęp SSH przez port 22. Być może zmodyfikowałeś już ten port (na przykład postępując zgodnie z [naszym przewodnikiem dotyczącym bezpieczeństwa serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)).
 
-#### Jeśli masz dostęp do serwera
+#### **Jeśli masz dostęp do serwera**
 
 W graficznym interfejsie FileZilla wprowadź adres IP Twojego serwera w polu `Host`, a także nazwę użytkownika i hasło w odpowiednich polach. Jeśli chodzi o pole `Port`, wprowadź "22" lub port, który słucha Twoja usługa SSH, jeśli ją zmodyfikowałeś.
 
@@ -51,7 +51,7 @@ Postępy transferu danych wyświetlają się wówczas na dole interfejsu FileZil
 
 ![postęp transferu sftp](images/sftp_sd_02.png){.thumbnail}
 
-#### Jeśli Twój serwer znajduje się w trybie Rescue
+#### **Jeśli Twój serwer znajduje się w trybie Rescue**
 
 W trybie rescue najpierw zamontuj partycję. W tym celu postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](../ovh-rescue/).
 
@@ -68,7 +68,7 @@ Jeśli poprawnie utworzyłeś punkt montowania, dane znajdują się w katalogu "
 
 ## Sprawdź również
 
-[Tryb Rescue](../ovh-rescue/)
+[Uruchamianie i korzystanie z trybu Rescue](../ovh-rescue/)
 
 [Zabezpieczanie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)
 

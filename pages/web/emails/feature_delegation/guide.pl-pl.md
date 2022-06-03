@@ -25,7 +25,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 ## Wymagania początkowe
 
-- Posiadanie pakietu MX Plan Jest ona dostępna przez: ofertę [hostingu WWW Cloud](https://www.ovh.pl/hosting/), bezpłatnego [hostingu Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml) lub ofertę MX Plan zamówioną oddzielnie.
+- Posiadanie pakietu MX Plan Jest ona dostępna przez: ofertę [hostingu WWW Cloud](https://www.ovhcloud.com/pl/web-hosting/), bezpłatnego [hostingu Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub ofertę MX Plan zamówioną oddzielnie.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}.
 
 > [!warning]
@@ -47,7 +47,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
 
-Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan.
+Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 
 Aby wyświetlić listę kont e-mail w Twojej usłudze MXplan, kliknij zakładkę `E-maile`{.action}.
 

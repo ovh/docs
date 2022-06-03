@@ -16,8 +16,8 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 ## Requisitos
 
-- Tener una solución MX Plan (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
-- En función del método que utilice, estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
+- Tener una solución MX Plan (incluida en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}, en un [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} o contratada por separado).
+- En función del método que utilice, estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Web Cloud`{.action}, o estar conectado a la dirección de correo desde el [webmail](https://www.ovh.es/mail/){.external} Outlook en la Web.
 
 > [!primary]
 >
@@ -26,16 +26,16 @@ Las direcciones de correo de la solución MX Plan permiten enviar y recibir mens
 
 ## Procedimiento
 
-En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovhcloud.com/es-es/web-hosting/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el servicio MX Plan correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-password-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro **Suscripción**, en el epígrafe **Producto**.|![Correo electrónico](images/mxplan-password-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro **Resumen**, en el epígrafe **Referencia del servidor**.|
-|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](./#version-historica-de-la-solucion-mx-plan_2).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](./#nueva-version-de-la-solucion-mx-plan).|
+|Siga leyendo esta guía en el apartado [Versión histórica de la solución MX Plan](#mx-legacy).|Siga leyendo esta guía en el apartado [Nueva versión de la solución MX Plan](#mx-new).|
 
-### Nueva versión de la solución MX Plan
+### Nueva versión de la solución MX Plan <a name="mx-new"></a>
 
 Si dispone de la nueva versión de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución.  
 
@@ -44,7 +44,7 @@ Si dispone de la nueva versión de la solución MX Plan, la pestaña `Informaci�
 Existen dos formas de cambiar la contraseña de una dirección de correo: desde el webmail Outlook en la Web o desde el área de cliente. Continúe leyendo esta guía en el apartado correspondiente al método que desee utilizar.
 
 - [Cambiar la contraseña desde el webmail Outlook en la Web](./#cambiar-la-contrasena-desde-el-webmail-outlook-en-la-web): Para seguir este procedimiento necesitará la contraseña actual. 
-- [Cambiar la contraseña desde el área de cliente de OVH](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovh): En este caso, no necesitará la contraseña actual.
+- [Cambiar la contraseña desde el área de cliente de OVHcloud](./#cambiar-la-contrasena-desde-el-area-de-cliente-de-ovh): En este caso, no necesitará la contraseña actual.
 
 #### Cambiar la contraseña desde el webmail Outlook en la Web
 
@@ -69,7 +69,7 @@ En la nueva ventana, introduzca la contraseña actual, escriba una nueva contras
 
 ![Correo electrónico](images/mxplan-password-new-step5.png){.thumbnail}
 
-#### Cambiar la contraseña desde el área de cliente de OVH
+#### Cambiar la contraseña desde el área de cliente de OVHcloud
 
 Seleccione el MX Plan en la columna izquierda y abra la pestaña `Cuentas de correo`{.action}. Se mostrará una tabla con todas las direcciones de correo electrónico creadas en el MX Plan. Haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}.
 
@@ -87,7 +87,7 @@ Una vez que haya cambiado la contraseña, puede acceder a la dirección de corre
 
 - **Utilizar un cliente de correo compatible**: Introduzca la nueva contraseña en todos los dispositivos en los que haya configurado la dirección de correo electrónico. Es posible que aparezca una ventana de forma automática en el dispositivo solicitándole que introduzca la nueva contraseña. Si no es el caso, puede consultar nuestras [guías de configuración](../) o contactar con el editor del programa o la aplicación que utilice, ya que el procedimiento es distinto en todos ellos.
 
-### Versión histórica de la solución MX Plan
+### Versión histórica de la solución MX Plan <a name="mx-legacy"></a>
 
 Si dispone de la versión histórica de la solución MX Plan, la pestaña `Información general`{.action} del servicio debería tener la distribución que se muestra en la imagen de abajo. De lo contrario, [vuelva al apartado anterior](./#procedimiento) y asegúrese de que esta es su versión de la solución. 
 
@@ -113,4 +113,4 @@ Una vez que haya cambiado la contraseña, puede acceder a la dirección de corre
 
 [*Privacidad y seguridad en internet*, «Ficha 3: ¿Son suficientes las contraseñas?)», AEPD](https://www.aepd.es/media/guias/guia-privacidad-y-seguridad-en-internet.pdf){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

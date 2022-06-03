@@ -6,7 +6,7 @@ section: Gestión de las máquinas virtuales
 order: 04
 ---
 
-**Última actualización: 25/06/2020**
+**Última actualización: 01/02/2022**
 
 ## Objetivo
 
@@ -55,7 +55,6 @@ El espacio asignado se reserva al disco de la MV, pero los ceros se escriben en 
 
 Ejemplo para MV de 100 GB con un *Guest OS* de 40 GB:
 
-
 |Tipo de disco|Espacio asignado|Zeroed blocks|Espacio ocupado|
 |---|---|---|---|
 |Eager Zero|Creación de MV|Creación de MV|100 GB|
@@ -64,9 +63,9 @@ Ejemplo para MV de 100 GB con un *Guest OS* de 40 GB:
 
 ### Formato de disco en OVHcloud
 
-En el almacenamiento de tipo datastore de una infraestructura Hosted Private Cloud, solo está disponible el *Thin provisioning*.
+En una infraestructura Hosted Private Cloud, solo es posible *Thin provisioning** en estándar.
 
-En el almacenamiento vSan están disponibles los tres formatos.
+No obstante, los 3 tipos de formatos están disponibles en los datastores vSAN.
 
 ## Más información
 

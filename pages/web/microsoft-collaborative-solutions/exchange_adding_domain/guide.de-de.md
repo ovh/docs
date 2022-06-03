@@ -15,7 +15,7 @@ Um die in Ihrem Exchange Angebot enthaltenen Accounts nutzen zu können, benöti
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Exchange Lösung](https://www.ovh.de/emails/hosted-exchange/){.external}.
+- Sie verfügen über eine [Exchange Lösung](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external}.
 - Sie besitzen eine oder mehrere Domains.
 - Sie können die Konfiguration Ihrer Domain (ihre DNS-Zone) bearbeiten.
 - Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
@@ -26,7 +26,7 @@ Um die in Ihrem Exchange Angebot enthaltenen Accounts nutzen zu können, benöti
 
 Wenn Ihr Hosted Exchange Angebot eingerichtet und verfügbar ist, können Sie es über Ihr [OVH Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} verwalten.
 
-Gehen Sie hierzu in Ihrem Kundencenter im linken Menü auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend den Namen des entsprechenden Exchange Dienstes aus.
+Gehen Sie hierzu in Ihrem Kundencenter auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend den Namen des entsprechenden Exchange Dienstes aus.
 
 > [!primary]
 >
@@ -39,7 +39,7 @@ Um eine Domain hinzuzufügen, klicken Sie auf den Tab `Assoziierte Domains`{.act
 
 > [!warning]
 >
-> Alle für Ihren Exchange Dienst erstellten Adressen können sich die übrigen Adressen im Adressbuch anzeigen lassen, darunter auch die Adressen mit einer anderen Domain. Wenn Sie nicht möchten, dass bestimmte Domains im Adressbuch angezeigt werden, benötigen Sie ein neues [Exchange Angebot](https://www.ovh.de/emails/hosted-exchange/){.external} für die betreffenden Domains.
+> Alle für Ihren Exchange Dienst erstellten Adressen können sich die übrigen Adressen im Adressbuch anzeigen lassen, darunter auch die Adressen mit einer anderen Domain. Wenn Sie nicht möchten, dass bestimmte Domains im Adressbuch angezeigt werden, benötigen Sie ein neues [Exchange Angebot](https://www.ovhcloud.com/de/emails/hosted-exchange/){.external} für die betreffenden Domains.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}

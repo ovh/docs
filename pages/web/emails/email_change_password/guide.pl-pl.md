@@ -16,8 +16,8 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
+- Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail](https://www.ovh.pl/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >
@@ -28,14 +28,14 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe jest, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal jaką wersję posiadasz. 
 
-W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja „Web”. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}. Kliknij E-maile, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![E-mail](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”.|![E-mail](images/mxplan-password-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu „Informacje ogólne”|
-|Przejdź do [Poprzedniej wersja usługi MX Plan](./#poprzednia-wersja-uslugi-mx-plan_2)|Przejdź do [Nowej wersji usługi MX Plan](./#nowa-wersja-uslugi-mx-plan).|
+|Przejdź do [Poprzedniej wersja usługi MX Plan](#mx-legacy)|Przejdź do [Nowej wersji usługi MX Plan](#mx-new).|
 
-### Nowa wersja usługi MX Plan
+### Nowa wersja usługi MX Plan <a name="mx-new"></a>
 
 Posiadasz nową wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce).  
 
@@ -48,7 +48,7 @@ Istnieją dwie metody zmiany hasła do konta e-mail. Przejdź do metody, z któr
 
 #### Zmiana hasła w interfejsie Webmail OWA
 
-Zaloguj się na stronie [interfejsu Webmail]({ovh_www}/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
+Zaloguj się na stronie [interfejsu Webmail](https://www.ovh.pl/mail/){.external}. Wprowadź pełny adres e-mail oraz aktualne hasło. Następnie kliknij przycisk `Logowanie`{.action}. 
 
 ![E-mail](images/mxplan-password-new-step2.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na
 
 - **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
 
-### Poprzednia wersja usługi MX Plan
+### Poprzednia wersja usługi MX Plan <a name="mx-legacy"></a>
 
 Posiadasz starszą wersję usługi MX Plan. Powinno Ci się wyświetlić takie okno. Jeśli tak nie jest, upewnij się, czy wybrałeś właściwą ścieżkę, [sprawdzając powyższe informacje](./#w-praktyce). 
 

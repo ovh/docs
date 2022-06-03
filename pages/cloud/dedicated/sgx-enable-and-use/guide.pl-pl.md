@@ -11,6 +11,7 @@ section: 'Poziom zaawansowany'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
+
 ## Wprowadzenie
 
 Włączenie rozwiązania Intel Software Guard Extensions na serwerze pozwala na uruchamianie aplikacji obsługujących rozszerzenia SGX.  
@@ -101,7 +102,7 @@ Sprawdź postęp zadania konfiguracji, wywołując następujący punkt końcowy 
 
 ![Get SGX configuration task](images/get-task.png){.thumbnail}
 
-Teraz można sprawdzić, że status to „włączono” (enabled):
+Teraz można sprawdzić, że status to “włączono” (enabled):
 
 > [!api]
 >

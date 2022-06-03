@@ -7,10 +7,10 @@ order: 1
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja: 10-09-2021**
+**Ostatnia aktualizacja z dnia: 10-09-2021**
 
 
 ## Wprowadzenie
@@ -32,11 +32,11 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `VPS`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Prywatny serwer wirtualny`{.action}.
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 
-Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem „Podsumowanie opcji”. Kliknij ikonę `...`{.action} obok opcji „Migawka” i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
+Na karcie `Strona główna`{.action} przewiń do obszaru z nagłówkiem “Podsumowanie opcji”. Kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Zamówienie`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -44,7 +44,7 @@ W następnym kroku przeczytaj informację o cenie i kliknij pozycję `Zamów`{.a
 
 ### Krok 2: tworzenie migawki
 
-Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji „Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Utworzenie migawki może zająć kilka minut. Po utworzeniu migawki w obszarze „Podsumowanie opcji” pojawi się jej znacznik czasu.
+Po włączeniu opcji kliknij ikonę `...`{.action} obok opcji “Migawka” i wybierz z menu kontekstowego pozycję `Utwórz migawkę`{.action}. Utworzenie migawki może zająć kilka minut. Po utworzeniu migawki w obszarze “Podsumowanie opcji” pojawi się jej znacznik czasu.
 
 ### Krok 3: usuwanie / przywracanie migawki
 
@@ -63,7 +63,7 @@ Jeśli na pewno chcesz zresetować status prywatnego serwera wirtualnego do stan
 
 #### Konfiguracja agenta QEMU na serwerze VPS
 
-Migawki to kopie systemu tworzone w ściśle określonym momencie („live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
+Migawki to kopie systemu tworzone w ściśle określonym momencie (“live snapshots”). Aby zapewnić dostępność systemu podczas tworzenia migawki, wykorzystywany jest agent QEMU, który pozwala przygotować system plików do tego procesu.
 
 W większości dystrybucji wymagany *qemu-guest-agent* nie jest zainstalowany domyślnie. Ponadto, wymogi licencyjne mogą uniemożliwić OVHcloud włączenie go do dostępnych obrazów systemu operacyjnego. Dlatego zalecamy zainstalowanie agenta, jeśli nie jest on aktywowany na Twoim prywatnym serwerze wirtualnym. W tym celu połącz się z VPS przez SSH i postępuj zgodnie z poleceniami dotyczącymi Twojego systemu operacyjnego.
 
@@ -76,7 +76,7 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny („No such file or directory”), zainstaluj najnowszy pakiet:
+Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
 ```
 $ sudo apt-get update
@@ -98,7 +98,7 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Jeśli wynik jest inny („No such file or directory”), zainstaluj i aktywuj agenta:
+Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
 ```
 $ sudo yum install qemu-guest-agent

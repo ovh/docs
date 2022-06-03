@@ -28,7 +28,7 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados num software 
 
 ## Requisitos
 
-- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}).
+- Ter um endereço de e-mail MX Plan (incluído no serviço MX Plan ou num serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}).
 - Ter a aplicação Mail instalada no seu dispositivo iOS.
 - Ter acesso às credenciais do endereço de e-mail que pretende configurar.
 

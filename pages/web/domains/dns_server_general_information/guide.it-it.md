@@ -1,7 +1,7 @@
 ---
-title: 'Modificare i server DNS di un dominio OVH'
+title: 'Modificare i server DNS di un dominio OVHcloud'
 slug: web_hosting_gestisci_il_tuo_server_dns
-excerpt: 'Come modificare i server DNS di un dominio OVH'
+excerpt: 'Come modificare i server DNS di un dominio OVHcloud'
 legacy_guide_number: g2015
 section: 'DNS e zona DNS'
 order: 1
@@ -35,7 +35,7 @@ I server DNS sono generalmente utilizzati per gruppi di due (primario e secondar
 
 ## Prerequisiti
 
-- Disporre di un [dominio](https://www.ovh.it/domini/) registrato in OVHcloud
+- Disporre di un [dominio](https://www.ovhcloud.com/it/domains/) registrato in OVHcloud
 - Disporre delle autorizzazioni [per gestire](../../customer/gestisci_i_tuoi_contatti/){.external} il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
@@ -66,13 +66,13 @@ Assicurati che le modifiche non rendano il tuo dominio inaccessibile. Se non ne 
 
 ### Accedere alla gestione dei server DNS OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} nel menu a sinistra e seleziona il tuo dominio. e clicca sulla scheda `Server DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. e clicca sulla scheda `Server DNS`{.action}.
 
 Visualizzi una tabella con tutti i server DNS OVHcloud configurati per il tuo dominio. A ogni riga corrisponde un server DNS. 
 
 > [!primary]
 >
-> Quando utilizzi i server DNS OVHcloud, i numeri dei server non hanno alcun legame con i servizi che utilizzi. Solo l'opzione [DNS anycast](https://www.ovh.it/domini/dns-anycast/) utilizza server DNS specifici che ti vengono automaticamente attribuiti.
+> Quando utilizzi i server DNS OVHcloud, i numeri dei server non hanno alcun legame con i servizi che utilizzi. Solo l'opzione [DNS anycast](https://www.ovhcloud.com/it/domains/options/dns-anycast/) utilizza server DNS specifici che ti vengono automaticamente attribuiti.
 
 ![dns server](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -101,7 +101,7 @@ Cliccando sul pulsante `Reimposta i server DNS`{.action}, puoi reinizializzare i
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione, tenendo in considerazione che: 
 
-- la modifica apportata in OVHcloud deve essere presa in carico dal Registro che gestisce l'estensione del dominio. Lo stato di avanzamento dell'operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} nel menu a sinistra e poi `Operazioni in corso`{.action}.
+- la modifica apportata in OVHcloud deve essere presa in carico dal Registro che gestisce l'estensione del dominio. Lo stato di avanzamento dell'operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} e poi `Operazioni in corso`{.action}.
 - una volta applicata dall’organismo responsabile, la propagazione delle modifiche potrebbe richiedere fino a 48 ore.
 
 ## Per saperne di più

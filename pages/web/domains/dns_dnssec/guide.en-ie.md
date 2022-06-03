@@ -14,34 +14,32 @@ order: 1
 DNS servers store DNS configurations for domain names. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses. In a conventional use, this configuration allows you to link your domain name to the server(s) that host your website and email addresses. In recent years, hackers have developed methods to poison DNS servers, allowing them to divert traffic to other servers. There is a way to protect your domain name from these actions: DNSSEC.
 
 **Learn how to enable DNSSEC on your domain name to protect it against Poisoning Cache.**  
-To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovh.co.uk/domains/dnssec_service.xml){.external}.
+To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovhcloud.com/en-gb/domains/dnssec/){.external}.
 
 ## Requirements
 
-- a domain name registered with OVH
+- a domain name registered with OVHcloud
 - The domain name concerned must have an extension compatible with DNSSEC.
-- access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
 DNSSEC can be activated in two ways:
 
-- **if your domain name uses OVH DNS servers**, activation is done in one click from the OVH Control Panel
+- **if your domain name uses OVHcloud DNS servers**, activation is done in one click from the OVHcloud Control Panel
 
-- **if your domain name does not use OVH DNS servers**, you will need to contact the service provider managing its DNS configuration If you manage this yourself, you will need to manually install the DNSSEC service. If this is the case, please use the documentation available online.
+- **if your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration If you manage this yourself, you will need to manually install the DNSSEC service. If this is the case, please use the documentation available online.
 
 > [!primary]
 >
-> To check if your domain name is using the OVH DNS configuration: in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, select the domain, and go to the `DNS servers`{.action} tab.
+> To check if your domain name is using the OVHcloud DNS configuration: in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, select the domain, and go to the `DNS servers`{.action} tab.
 >
 
 ### Step 1: Access the domain name management section.
 
-To start with, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and go to the "Web" section. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the domain name concerned from the list.
+To start with, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and go to the "Web" section. Click `Web hosting`{.action}, then choose the domain name concerned from the list.
 
 The page that appears displays the general information. 
-
-![dnssec](images/activate-dnssec-step1.png){.thumbnail}
 
 ### Step 2: Manage your domain name’s DNSSEC service.
 

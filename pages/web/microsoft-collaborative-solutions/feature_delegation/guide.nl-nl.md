@@ -16,7 +16,7 @@ Met Exchange kunt u zakelijke e-mailadressen gebruiken die het voor een team gem
 
 ## Vereisten
 
-- U moet beschikken over [Exchange](https://www.ovh.nl/emails/){.external}.
+- U moet beschikken over [Exchange](https://www.ovhcloud.com/nl/emails/){.external}.
 - U moet beschikken over minstens twee actieve Exchange accounts op hetzelfde OVH Exchange platform. 
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 - U moet toegang hebben tot het Exchange account waarvan rechten worden toegewezen.

@@ -17,7 +17,7 @@ Deze handleiding legt uit hoe u een database in uw webhostingplan kunt creëren.
 
 ## Vereisten
 
-- U moet beschikken over een [OVH-webhosting plan](https://www.ovh.nl/shared-hosting/){.external}.
+- U moet beschikken over een [OVH-webhosting plan](https://www.ovhcloud.com/nl/web-hosting/){.external}.
 - U moet over de mogelijkheid om databases te maken als onderdeel van uw aanbod.
 - U moet toegang hebben om het betreffende webhostingplan vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} te beheren.
 
@@ -43,7 +43,7 @@ Selecteer de gewenste informatie in het venster dat verschijnt en klik vervolgen
 
 |Informatie|Omschrijving|  
 |---|---|  
-|Database engine|Selecteer de database-engine die door de database wordt gebruikt. Databases die deel uitmaken van een [OVH-webhostingplan](https://www.ovh.nl/shared-hosting/){.external} zijn alleen beschikbaar met de MySQL-engine.|  
+|Database engine|Selecteer de database-engine die door de database wordt gebruikt. Databases die deel uitmaken van een [OVH-webhostingplan](https://www.ovhcloud.com/nl/web-hosting/){.external} zijn alleen beschikbaar met de MySQL-engine.|  
 |Database versie|Selecteer de versie die wordt gebruikt door de database-engine. Controleer of uw website compatibel is met de door u gekozen versie. |  
 |Soorten databases|Selecteer de grootte van de database. Deze grootte verwijst naar de beschikbare ruimte voor uw database voor het opslaan van gegevens.|   
 

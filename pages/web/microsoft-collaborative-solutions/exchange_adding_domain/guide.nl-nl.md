@@ -16,7 +16,7 @@ Als u de accounts wilt gebruiken die bij een Exchange-dienst zijn geleverd, moet
 
 ## Vereisten
 
-- U moet beschikken over een [Exchange-oplossing](https://www.ovh.nl/emails/){.external}.
+- U moet beschikken over een [Exchange-oplossing](https://www.ovhcloud.com/nl/emails/){.external}.
 - U moet beschikken over meerdere domeinnamen. 
 - U moet het recht hebben om de configuratie van uw domeinnaam te wijzigen (via de DNS-zone).
 - U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
@@ -40,7 +40,7 @@ Om een domeinnaam toe te voegen, klikt u op het tabblad `Verwante domeinen`{.act
 
 > [!warning]
 >
-> In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, alle andere verwante adressen bekijken, inclusief adressen die verschillende domeinnamen hebben. Om te voorkomen dat verschillende domeinnamen op deze manier worden weergegeven, moet u een nieuwe [Exchange-oplossing](https://www.ovh.nl/emails/){.external} bestellen voor de verwante domeinnaam/namen.
+> In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, alle andere verwante adressen bekijken, inclusief adressen die verschillende domeinnamen hebben. Om te voorkomen dat verschillende domeinnamen op deze manier worden weergegeven, moet u een nieuwe [Exchange-oplossing](https://www.ovhcloud.com/nl/emails/){.external} bestellen voor de verwante domeinnaam/namen.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}
@@ -108,7 +108,7 @@ In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, al
 
 Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Hiervoor biedt OVH de *webmail* **Outlook Web Application** (OWA), die u kunt openen via de link: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst. Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
 
-OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
+OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/](https://www.ovhcloud.com/nl/collaborative-tools/microsoft-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
 ## Verder
 

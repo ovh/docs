@@ -5,17 +5,17 @@ slug: hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi
 section: CMS
 ---
 
-**Ultimo aggiornamento: 21/02/2018**
+**Ultimo aggiornamento: 03/02/2022**
 
 ## Obiettivo
 
 I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, anche senza possedere competenze tecniche specifiche, grazie all’utilizzo dei CMS più diffusi: WordPress, PrestaShop, Drupal e Joomla!.
 
-**Questa guida ti mostra come utilizzare i moduli in 1 click di OVH per mettere online il tuo sito Web.**
+**Questa guida ti mostra come utilizzare i moduli in 1 click di OVHcloud per mettere online il tuo sito Web.**
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external} attiva
+- Disporre di una soluzione di [hosting Web](https://www.ovhcloud.com/it/web-hosting/){.external} attiva
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Non aver salvato file nella directory in cui verrà installato il modulo
 - Aver impostato come multisito il dominio (ed eventualmente il sottodominio) che verrà utilizzato per il sito Web
@@ -26,15 +26,15 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 
 Un CMS (Content Management System) consente di progettare un sito Web tramite un'interfaccia intuitiva e di semplice utilizzo. In base al tipo di progetto da realizzare è possibile scegliere tra diverse opzioni, per usufruire di una struttura pronta all’uso e personalizzabile (tema, contenuti, ecc...).
 
-Con i moduli in 1 click di OVH sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovh.it/hosting-web/website/confronto-cms/){.external} potrebbe esserti di aiuto.
+Con i moduli in 1 click di OVHcloud sono disponibili 4 CMS.  Se hai già scelto il CMS da installare, prosegui nella lettura di questa guida. In caso contrario, la nostra [pagina comparativa dei CMS](https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external} potrebbe esserti di aiuto.
 
-Se il CMS che hai scelto non è presente fra le opzioni proposte da OVH, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovh.it/hosting-web/){.external}).
+Se il CMS che hai scelto non è presente fra le opzioni proposte da OVHcloud, potrai installarlo manualmente nel tuo spazio di hosting, se compatibile con il piano attivato (per visualizzare le nostre offerte, [clicca qui]( https://www.ovhcloud.com/it/web-hosting/){.external}).
 
 ![Logo dei CMS](images/CMS_logo.png){.thumbnail}
 
 ### Accedi alla pagina di gestione dei moduli in 1 click
 
-Accedi allo Spazio Cliente OVH e, nel menu a sinistra, seleziona `Hosting`{.action} e poi il tuo servizio. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
 
 ![Accesso alla sezione Moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
@@ -80,8 +80,8 @@ A questo punto, inserisci i dati di accesso al tuo database. Esistono diverse po
 
 - se il database è già creato sul tuo hosting, selezionalo dalla lista e inserisci le informazioni richieste
 - se il database non è ancora stato creato sul tuo hosting, segui le indicazioni per crearlo, poi selezionalo dalla lista e inserisci le informazioni richieste
-- se il database è stato creato sulla tua istanza SQL Privato o CloudDB, seleziona `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
-- se il database è stato creato su un altro hosting Web OVH, seleziona `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato sulla tua istanza CloudDB, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. L'istanza e lo spazio di hosting devono essere ospitati nello stesso datacenter
+- se il database è stato creato su un altro hosting Web OVHcloud, selezionalo `Database esterno al tuo hosting Web`{.action} nella lista e inserisci le informazioni richieste. Il database e lo spazio di hosting devono essere ospitati nello stesso datacenter
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
 
@@ -132,14 +132,12 @@ Per maggiori informazioni sulle funzionalità disponibili ti consigliamo di cons
 
 ## Per saperne di più
 
-[Scegli il CMS per il tuo sito Web]( https://www.ovh.it/hosting-web/website/confronto-cms/){.external}
+[Scegli il CMS per il tuo sito Web]( https://www.ovhcloud.com/it/web-hosting/uc-cms-comparison/){.external}
 
 [Ospitare più siti su uno stesso hosting](https://docs.ovh.com/it/hosting/configurare-un-multisito-su-un-hosting-web/){.external}
 
 [Gestire un database da un hosting condiviso]( https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external}
 
-Scopri la nostra soluzione [SQL Privato]( https://www.ovh.it/hosting-web/opzioni-sql.xml){.external}
-
 Scopri la nostra soluzione [Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

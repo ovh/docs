@@ -15,8 +15,8 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
-- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
+- Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
@@ -29,7 +29,7 @@ Przed rozpoczęciem operacji określ metodę, której użyjesz do pobrania kopii
 
 - **Użycie skryptu do tworzenia kopii zapasowych**: rozwiązanie to, do wykonania kopii zapasowej, wymaga utworzenia skryptu zarejestrowanego na Twoim hostingu OVH. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
 
-- **Wykonanie kopii zapasowej przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
+- **Wykonanie kopii zapasowej przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVH](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
 Niektóre z powyższych metod nie są powiązane z interfejsem OVH. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera. 
 
@@ -44,7 +44,7 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 
 ### Pobieranie kopii zapasowej za pomocą narzędzia OVH
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz utworzyć nową kopię zapasową lub pobrać istniejącą, korzystając z jednej z dwóch dostępnych metod.
 
@@ -74,7 +74,7 @@ Aby pobrać kopię zapasową, kliknij trzy kropki po jej prawej stronie, a nast�
 
 ### Pobieranie kopii zapasowej za pomocą interfejsu phpMyAdmin
 
-W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 

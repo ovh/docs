@@ -23,7 +23,7 @@ Zapoznaj się z przewodnikiem na temat odzyskania danych do FTP:[]({legacy}1374)
 Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1374)
 
 
-![](images/img_3141.jpg){.thumbnail}
+![joomla](images/3141.png){.thumbnail}
 
 
 ## Część 2: pobranie plików źródłowych
@@ -35,7 +35,7 @@ Na stronie tej znajduje się link pozwalający na pobranie najnowszej stabilnej 
 
 Pobrane pliki są spakowane. Należy je rozpakować na swoim komputerze. W Internecie odnajdziesz pomoc na ten temat.
 
-![](images/img_3142.jpg){.thumbnail}
+![joomla](images/3142.png){.thumbnail}
 
 
 ## Część 3: umieszczenie plików na FTP
@@ -51,7 +51,7 @@ W Internecie dostępne są liczne przewodniki związane z tą operacją. Skorzys
 
 Katalog docelowy będzie nosił nazwę "Joomla".
 
-![](images/img_3143.jpg){.thumbnail}
+![joomla](images/3143.png){.thumbnail}
 
 ## Logowanie na hosting www przez FTP
 Aby umieścić pliki modułu Joomla! na hostingu, należy najpierw zalogować się na ten hosting. 
@@ -59,7 +59,7 @@ Aby umieścić pliki modułu Joomla! na hostingu, należy najpierw zalogować si
 Udostępniamy przewodnik na temat połączenia FTP w ofercie hostingu www:
 []({legacy}1374)
 
-![](images/img_3144.jpg){.thumbnail}
+![joomla](images/3144.png){.thumbnail}
 
 ## Transfer plików przez FTP
 Postępuj zgodnie z opisanymi poniżej etapami, aby umieścić pliki na serwerze FTP.
@@ -75,7 +75,7 @@ Jeśli taki katalog nie istnieje, możesz go utworzyć.
 
 Pliki muszą zostać obowiązkowo umieszczone w katalogu "www". W przeciwnym razie procedura instalacji nie będzie dostępna z poziomu nazwy domeny.
 
-![](images/img_3145.jpg){.thumbnail}
+![joomla](images/3145.png){.thumbnail}
 
 ## Etap 2
 Po otwarciu tych katalogów:
@@ -88,7 +88,7 @@ Następnie skorzystaj z funkcji przeciągnij i upuść do części "Serwer zdaln
 
 Możliwe, że katalog "www" nie jest pusty. Nie trzeba usuwać plików z tego katalogu. Powrócimy do tego tematu w dalszej części tego przewodnika.
 
-![](images/img_3146.jpg){.thumbnail}
+![joomla](images/3146.png){.thumbnail}
 
 ## Etap 3
 Trwa przenoszenie plików.
@@ -99,7 +99,7 @@ Po przeniesieniu plików, upewnij się, że wszystkie pliki i katalogi zostały 
 
 Ta operacja kończy część poświęconą umieszczaniu plików na FTP.
 
-![](images/img_3147.jpg){.thumbnail}
+![joomla](images/3147.png){.thumbnail}
 
 
 ## Część 4: połączenie z bazą danych
@@ -132,7 +132,7 @@ Powtórz hasło administratora: Wpisz ponownie hasło.
 
 Kliknij na "Dalej", aby przejść do kolejnego etapu.
 
-![](images/img_3148.jpg){.thumbnail}
+![joomla](images/3148.png){.thumbnail}
 
 ## Etap 2
 Wpisz dane dotyczące bazy danych:
@@ -153,7 +153,7 @@ Przetwarzanie starej bazy danych: Jeśli w bazie danych znajdują się tabele, t
 
 Kliknij na "Dalej", aby kontynuować.
 
-![](images/img_3149.jpg){.thumbnail}
+![joomla](images/3149.png){.thumbnail}
 
 
 ## Zakończenie
@@ -176,31 +176,31 @@ Wskaż, czy chcesz otrzymać na e-mail dane instalacyjne, takie jak hasło do cz
 
 Kliknij na "Instaluj", aby kontynuować.
 
-![](images/img_3150.jpg){.thumbnail}
+![joomla](images/3150.png){.thumbnail}
 
 ## Etap 2
 Instalacja może potrwać kilka minut.
 
-![](images/img_3151.jpg){.thumbnail}
+![joomla](images/3151.png){.thumbnail}
 
 ## Etap 3
 Ze względów bezpieczeństwa Joomla! zaleca usunięcie katalogu instalacyjnego. 
 
 Kliknij na "Usuń folder instalacyjny".
 
-![](images/img_3152.jpg){.thumbnail}
+![joomla](images/3152.png){.thumbnail}
 
 ## Etap  4
 Pojawi się komunikat z potwierdzeniem usunięcia katalogu. 
 
 Możesz teraz się zalogować do części administracyjnej modułu b]Joomla!. Wprowadź dane do logowania w oknie, które się pojawi.
 
-![](images/img_3153.jpg){.thumbnail}
+![joomla](images/3153.png){.thumbnail}
 
 ## Część administracyjna modułu Joomla!
 Tak wygląda panel administracyjny modułu Joomla!.
 
-![](images/img_3154.jpg){.thumbnail}
+![joomla](images/3154.png){.thumbnail}
 
 
 ## Użyteczne informacje
@@ -227,7 +227,7 @@ Zmień nazwę tego pliku. Będziesz mógł później aktywować ten plik jako ty
 
 Inna użyteczna informacja: pliki strony muszą zostać umieszczone w katalogu "www", aby były brane pod uwagę.
 
-![](images/img_3155.jpg){.thumbnail}
+![joomla](images/3155.png){.thumbnail}
 
 ## Klasyczny błąd: wersja PHP
 Chodzi o błąd dotyczący wersji PHP serwera. 
@@ -236,7 +236,7 @@ Przyczyna jest prosta: najnowsza wersja PHP nie została włączona.
 
 Udostępniamy przewodnik na temat zmiany wersji PHP na hostingu www:[Zmiana wersji PHP na hostingu]({legacy}1207)
 
-![](images/img_3156.jpg){.thumbnail}
+![joomla](images/3156.png){.thumbnail}
 
 ## Klasyczny błąd: Magic Quotes
 Chodzi o nieprawidłowo zdefiniowaną zmienną, która przeszkadza w zainstalowaniu modułu Joomla!.
@@ -250,5 +250,5 @@ Udostępniamy przewodnik dotyczący zmiany zmiennych PHP na hostingu www 2014:
 
 Udostępniamy również przewodnik dotyczący zmiany zmiennych PHP na starszym hostingu www:[Zmiana zmiennych PHP na starych hostingach OVH](http://pomoc.ovh.pl/KonfiguracjaPhp)
 
-![](images/img_3157.jpg){.thumbnail}
+![joomla](images/3157.png){.thumbnail}
 

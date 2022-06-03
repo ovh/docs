@@ -22,12 +22,12 @@ Hosted Exchange 2013:[https://ex.mail.ovh.net](https://ex.mail.ovh.net)
 
 Private Exchange 2013: de URL toegang is afhankelijk van de hostnaam van uw server, vastgelegd bij het instellen van de dienst.
 
-![](images/img_2068.jpg){.thumbnail}
+![OWA](images/2068.png){.thumbnail}
 
 ## Extra gegevens
 Wanneer u voor het eerst inlogt op de OWA, zal het nodig zijn om uw tijdzone in te stellen.
 
-![](images/img_2069.jpg){.thumbnail}
+![OWA](images/2069.png){.thumbnail}
 
 
 ## E-mail
@@ -37,7 +37,7 @@ U vindt in de linkerkolom de knop om nieuwe berichten, systeemmappen of andere a
 
 Met het teken «  onder de knop "Nieuw bericht" kunt u deze kolom verbergen (behalve "Nieuw bericht").
 
-![](images/img_2070.jpg){.thumbnail}
+![OWA](images/2070.png){.thumbnail}
 
 
 ## Nieuw bericht
@@ -48,7 +48,7 @@ U vindt er ook de traditionele inhoud bewerkingsopties (lettertype, grootte, kle
 Extra informatie
 De grootte van een bijlage via OWA is beperkt tot 35 MB. De synchronisatie applicatie ActiveSync legt een beperking van 10 MB op bijlagen (vooral op compatibele smartphones met ActiveSync). Met behulp van een compatibele e-mail (Outlook bijvoorbeeld), is de grootte van een bijlage maximaal 100 MB.
 
-![](images/img_2071.jpg){.thumbnail}
+![OWA](images/2071.png){.thumbnail}
 
 
 ## Systeemmappen en aangepaste mappen
@@ -86,7 +86,7 @@ Add a shared folder: voegt toegang toe tot een bestand dat een andere gebruiker 
 
 Permissions: kan rechten geven aan een andere gebruiker in uw Exchange platform op de geselecteerde systeemmap of aangepaste map. Als er rechten worden gegeven, moet de gebruiker waarmee de verdeling werd gestart om de hierboven beschreven functionaliteit te gebruiken, (Een gedeelde map toevoegen) via OWA op uw Exchange account.
 
-![](images/img_2072.jpg){.thumbnail}
+![OWA](images/2072.png){.thumbnail}
 
 
 ## De inhoud van een map
@@ -104,7 +104,7 @@ To me: toont alleen de e-mails die rechtstreeks naar u werden verzonden.
 
 With flag: geeft alleen de e-mails met een vlag/indicator aan (⚐ symbool na de titel van de e-mail).
 
-![](images/img_2075.jpg){.thumbnail}
+![OWA](images/2075.png){.thumbnail}
 
 ## E-mail opties
 Wanneer u rechtsklikt op een e-mail, vindt u de verschillende beschikbare opties:
@@ -126,7 +126,7 @@ Een regel aanmaken: maakt een inbox regel aan en bepaalt het gedrag dat uw Excha
 
 Mark as Spam: markeert de geselecteerde e-mail en de afzender als spam. De e-mail wordt dan automatisch geplaatst in de systeemmap "Ongewenste e-mail". U vindt de lijst van goedgekeurde of geblokkeerde e-mails in "Instellingen" (gesymboliseerd door het tandwieltje), "Opties" en dan "blokkeren of toestaan​​."
 
-![](images/img_2076.jpg){.thumbnail}
+![OWA](images/2076.png){.thumbnail}
 
 
 ## De inhoud van een e-mail
@@ -140,7 +140,7 @@ Forward: stuurt de e-mail in zijn geheel door, de bijlagen zijn bijgesloten.
 
 More options (weergegeven door « ... ») : om extra opties weer te geven.
 
-![](images/img_2077.jpg){.thumbnail}
+![OWA](images/2077.png){.thumbnail}
 
 ## Extra opties:
 Instant Message Reply: deze optie is momenteel niet beschikbaar. Dit is een functie die binnenkort zal worden ingesteld met de komst van de Lync applicatie. 
@@ -161,7 +161,7 @@ Create a rule: creëert een regel voor de inbox en bepaalt het gedrag voor uw Ex
 
 Weergeven van de details van het bericht: /blue] toont de header van de geselecteerde e-mail. Met deze optie kunt u de route van een e-mail (gebruikte server, datum, tijd, etc.) zien, totdat het onze servers bereikt. Ons technisch support team zal hierom vragen ​​in sommige gevallen, zodat het specifieke diagnoses kan stellen.
 
-![](images/img_2081.jpg){.thumbnail}
+![OWA](images/2081.png){.thumbnail}
 
 
 ## In het algemeen
@@ -170,7 +170,7 @@ De "Kalender" zal u toelaten om uw kalenders te bekijken, te beheren of aan te m
 Wij hebben een handleiding voor deze laatste functie:
 []({legacy}1248)
 
-![](images/img_2082.jpg){.thumbnail}
+![OWA](images/2082.png){.thumbnail}
 
 
 ## Nieuw event
@@ -178,7 +178,7 @@ Deze knop stelt u in staat om een ​​event toe te voegen aan uw kalender of e
 
 Net als bij het schrijven van een nieuwe e-mail, zult u verschillende opties vinden, om de inhoud van het evenement dat werd toegevoegd aan de geselecteerde kalender, te bewerken.
 
-![](images/img_2083.jpg){.thumbnail}
+![OWA](images/2083.png){.thumbnail}
 
 
 ## In het algemeen
@@ -186,25 +186,25 @@ Met 'Contactpersonen' kunt u contacten bekijken en contacten aanmaken of contact
 
 In de linkerkolom vindt u de contacten met betrekking tot uw Exchange account, maar ook de contacten met betrekking tot het Exchange platform (of globale adresboek) en de adressen van de resource accounts:
 
-![](images/img_2084.jpg){.thumbnail}
+![OWA](images/2084.png){.thumbnail}
 
 
 ## Nieuw
 Met deze knop kunt u een nieuw contactpersoon aanmaken of een nieuwe contactpersonengroep aanmaken.
 
-![](images/img_2085.jpg){.thumbnail}
+![OWA](images/2085.png){.thumbnail}
 
 ## Contactgegevens
 Het aanmaken van een nieuwe contactpersoon, u stelt voor om de volgende aanvullende gegevens toe te voegen, zoals voornaam, achternaam, telefoonnummer, etc.
 
-![](images/img_2086.jpg){.thumbnail}
+![OWA](images/2086.png){.thumbnail}
 
 ## Contactgroep
 Het aanmaken van een contactgroep, ​​u vraagt om leden toe te voegen. Het zullen e-mailadressen zijn, gekoppeld aan uw adresboek of het externe adres dat u handmatig kunt invoeren.
 
 U kunt dan besluiten om een e-mail te verzenden aan uw contactgroep. Deze e-mail wordt verspreid over alle al eerder toegevoegde leden.
 
-![](images/img_2087.jpg){.thumbnail}
+![OWA](images/2087.png){.thumbnail}
 
 ## Extra informatie
 OWA zal niet toestaan ​​dat u het delen van contacten initiëert. Een compatibele e-mail (Outlook bijvoorbeeld) zal nodig zijn voor deze actie. Wij verwijzen u naar de volgende handleiding:
@@ -216,18 +216,18 @@ Met Taken kunt u taken die gerelateerd zijn aan uw Exchange account aanmaken, be
 
 De middelste kolom toont de inhoud van de geselecteerde taak en de rechterkant toont de details van de gekozen taak.
 
-![](images/img_2088.jpg){.thumbnail}
+![OWA](images/2088.png){.thumbnail}
 
 
 ## Nieuwe taak
 Met deze knop kunt u een nieuwe taak in de Takenmap selecteren, het onderwerp kiezen, de deadlines en extra details toevoegen, zoals het onderwerp, de vervaldatum, het voortgangspercentage, etc.
 
-![](images/img_2089.jpg){.thumbnail}
+![OWA](images/2089.png){.thumbnail}
 
 ## Takenmap
 U zult in de linkerkolom alle takenmappen zien. U kunt ook klikken op de rechtermuisknop in het menu  "Mijn taken" om een aangepaste taak​​map aan te maken.
 
-![](images/img_2090.jpg){.thumbnail}
+![OWA](images/2090.png){.thumbnail}
 
 ## Aanvullende informatie
 OWA zal niet toestaan ​​dat u het delen van taken initiëert. Een compatibele e-mail software (Outlook bijvoorbeeld) zal nodig zijn voor deze actie.
@@ -246,12 +246,12 @@ Met deze knop heeft u toegang tot de volgende opties:
 
 
 
-![](images/img_2091.jpg){.thumbnail}
+![OWA](images/2091.png){.thumbnail}
 
 ## Profielfoto
 Klik op "Browsen" en selecteer dan op uw computer uw profielfoto.
 
-![](images/img_2092.jpg){.thumbnail}
+![OWA](images/2092.png){.thumbnail}
 
 
 ## Opties
@@ -277,7 +277,7 @@ Opties: geeft extra opties voor uw Exchange account. Wij geven de details hierva
 
 «Hulp» (vertegenwoordigd door het icon in de vorm van een vraagteken): Microsoft Hulp.
 
-![](images/img_2093.jpg){.thumbnail}
+![OWA](images/2093.png){.thumbnail}
 
 ## Extra opties voor uw Exchange account
 In dit gedeelte vindt u de volgende opties: 
@@ -302,5 +302,5 @@ Applicatie: voeg hier de extra applicaties (of plugins) toe aan uw OWA. Sommige 
 Extra informatie: [met de Office Store](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) kunt u extra applicaties vinden. Niet alle applicaties worden standaard toegevoegd. Sommigen van hen vereisen beheerdersrechten. Als u een applicatie wilt installeren die beheerdersrechten vereist, neem dan contact op met ons Exchange support team, zodat wij uw verzoek kunnen analyseren.
 
 
-![](images/img_2094.jpg){.thumbnail}
+![OWA](images/2094.png){.thumbnail}
 

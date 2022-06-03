@@ -8,7 +8,7 @@ section: 'Sieć & IP'
 **Ostatnia aktualizacja z dnia 21-12-2020**
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
 > 
 
 ## Wprowadzenie
@@ -25,6 +25,12 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 - Posiadanie co najmniej jednego adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/) podłączonego do serwera
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+>
+
 ## W praktyce
 
 Podstawowe etapy są zawsze takie same, niezależnie od stosowanych systemów:
@@ -40,17 +46,19 @@ Dla tego przykładu użyjemy następujących wartości w naszych przykładach ko
 
 ### Przypisz wirtualny adres MAC
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Bare Metal Cloud`{.action}. Następnie kliknij menu `IP`{.action} na pasku usług po lewej stronie, po czym w tabeli kliknij Twój adres IP Failover.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action}, a następnie wybierz sekcję `IP`{.action}.
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
+W rozwijanym menu “Service” możesz wybrać tylko adresy IP Failover.
 
-Kliknij `...`{.action}, a następnie Dodaj wirtualny `adres MAC`{.action}.
+![manage IPs](images/manageIPs.png){.thumbnail}
+
+Kliknij `...`{.action}, a następnie `Dodaj wirtualny adres MAC`{.action}.
 
 ![Dodaj wirtualny adres MAC (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
-Wybierz "OVH" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej maszyny", a następnie kliknij `Zatwierdź`{.action}.
+Wybierz "ovh" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej maszyny", a następnie kliknij `Zatwierdź`{.action}.
 
-![Dodaj wirtualny adres MAC (2)](images/virtual_mac_03.png){.thumbnail}
+![Dodaj wirtualny adres MAC (2)](images/addvmac2.png){.thumbnail}
 
 ### Określ adres bramy
 
@@ -108,7 +116,7 @@ Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby za
 
 - Poprzednie dystrybucje:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -123,7 +131,7 @@ iface eth0 inet static
 
 - Najnowsze dystrybucje:
 
-```
+```console
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -138,7 +146,7 @@ iface eth0 inet static
 
 Zastąp również `eth0`, jeśli system używa przewidywanych nazw interfejsów sieciowych. Nazwy interfejsów sieciowych znajdziesz za pomocą polecenia:
 
-```sh
+```bash
 ls /sys/class/net
 ```
 
@@ -148,7 +156,7 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny. Znajduje się on w `/etc/network/interfaces`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```sh
+```console
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -167,7 +175,7 @@ Teraz zapisz i zamknij plik.
 
 Następnie otwórz plik routingu maszyny wirtualnej. Znajduje się on w `/etc/sysconfig/network-scripts/route-eth`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```bash
+```console
 GATEWAY_IP dev eth0
 default via GATEWAY_IP dev eth0
 ```
@@ -183,7 +191,7 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/ifcfg-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```sh
+```console
 DEVICE=(interface-name)
 BOOTPROTO=none
 ONBOOT=yes
@@ -202,7 +210,7 @@ Zapisz i zamknij plik.
 
 Następnie otwórz plik routingu wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/route-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
-```bash
+```console
 GATEWAY_IP - 169.254.10.254 (nazwa interfejsu)
 NETWORK_GW_VM - 255.255.255.0 (wpisz nazwę interfejsu)
 default GATEWAY_IP
@@ -212,7 +220,7 @@ Zapisz i zamknij plik.
 
 Następnie otwórz plik routingu maszyny wirtualnej. Znajduje się on w `/etc/sysconfig/network/resolv.conf`.
 
-```bash
+```console
 nameserver 213.186.33.99
 ```
 
@@ -222,7 +230,7 @@ Po zarejestrowaniu i zamknięciu pliku uruchom ponownie sieć lub wirtualną mas
 
 Otwórz terminal na swojej wirtualnej maszynie. Po zalogowaniu otwórz plik konfiguracyjny sieci wirtualnej maszyny znajdujący się w katalogu `/etc/rc.conf`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. W tym przykładzie nazwa interfejsu to "em0". W razie potrzeby możesz go zmienić.
 
-```bash
+```console
 ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
 static_routes="net1 net2"
 route_net1="-net GATEWAY_IP/32 -interface em0"
@@ -231,7 +239,7 @@ route_net2="default GATEWAY_IP"
 
 Zapisz i zamknij plik. Następnie edytuj plik `/etc/resolv.conf`. Utwórz je, jeśli potrzebujesz.
 
-```sh
+```console
 nameserver 213.186.33.99
 ```
 
@@ -241,13 +249,13 @@ Zapisz i zamknij plik, a następnie uruchom ponownie wirtualną maszynę.
 
 Po pierwsze, połącz się przez SSH ze swoją wirtualną maszyną i otwórz plik konfiguracyjny sieci znajdujący się w `/etc/netplan/` za pomocą polecenia. Nasz plik nazywa się "50-cloud-init.yaml".
 
-```sh
+```bash
 # nano /etc/netplan/50-cloud-init.yaml
 ```
 
 Po otworzeniu pliku zmień go o następujący kod:
 
-```sh
+```yaml
 network:
     ethernets:
         (nom-interface) :
@@ -267,7 +275,7 @@ network:
 
 Po przeprowadzeniu modyfikacji, zapisz i zamknij plik, a następnie wprowadź następującą komendę:
 
-```sh
+```bash
 # netplan try
 Warning: Stopping systemd-networkd.service, but it can still be activated by:
   systemd-networkd.socket

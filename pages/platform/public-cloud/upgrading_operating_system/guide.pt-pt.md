@@ -33,6 +33,60 @@ Este tutorial descreve os passos a seguir para atualizar um sistema operativo em
 
 ## Instruções
 
+### Debian
+
+Antes de atualizar a versão principal do seu SO, certifique-se de que atualiza as versões mais recentes de todos os pacotes instalados na sua versão atual:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> A etapa seguinte é facultativa.
+> No entanto, é preciso que analise cuidadosamente os pacotes que já não são necessários no sistema. Caso contrário, o comando seguinte pode danificar o sistema. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Uma vez que algumas atualizações podem necessitar de um reboot, primeiro deve reiniciar antes de começar a atualização:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Após a reinicialização, atualize o diretório /etc/apt/sources.list para orientar a próxima versão (neste exemplo, passamos de Buster para Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Agora que a próxima versão está orientada, pode proceder à atualização assim como ao reboot final:
+
+> [!primary]
+> As janelas de contexto podem convidá-lo a reiniciar os seus serviços. Responda afirmativamente.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Verifique que a atualização funcionou:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
+
 ### Ubuntu
 
 Antes de atualizar a versão principal do seu SO, certifique-se de que atualiza as versões mais recentes de todos os pacotes instalados na sua versão atual:
@@ -115,7 +169,7 @@ Uma vez a versão descarregada e o processo de atualização lançado, o servido
 Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](../criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/) efetuado antes da atualização.
 
 > [!primary]
-> Se encontrar dificuldades, encontrará respostas às suas questões no website [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/) {.external}.
+> Se encontrar dificuldades, encontrará respostas às suas questões no website [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
 >
 
 ## Quer saber mais?

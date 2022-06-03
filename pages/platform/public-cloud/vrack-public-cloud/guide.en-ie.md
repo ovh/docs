@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 4th October 2021**
+**Last updated 21st December 2021**
 
 ## Objective
 
@@ -16,10 +16,10 @@ OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) is a private network solut
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- an OpenStack user (optional)
-- basic networking knowledge
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- An [OpenStack user](../creation-and-deletion-of-openstack-user/#create-an-openstack-user) (optional)
+- Basic networking knowledge
 
 ## Interfaces
 
@@ -101,15 +101,13 @@ Once the service is active, you will find it in your Control Panel in the `Bare 
 
 #### In the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and open your `Public Cloud`{.action} project.
 
-![select project](images/vrack1.png){.thumbnail}
-
-Click on `Private network`{.action} (1) in left-hand navigation bar.
+Click on `Private Network`{.action} in left-hand navigation bar.
 
 ![Private Network](images/vrack2021-02.png){.thumbnail}
 
-Click on the button `To get started, create a vRack`{.action} (2). You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
+Click on the button `To get started, create a vRack`{.action}. You will then have to choose to create a new vRack or to use an existing vRack. In our example, we will create a new vRack. Once you have made your choice, click `Create`{.action}.
 
 ![vRack creation](images/vrack3.png){.thumbnail}
 
@@ -188,7 +186,7 @@ If you need assistance, follow this guide first: [Creating an instance in the OV
 ![attach new instance](images/vrack6.png){.thumbnail}
 
 > [!warning]
-> You will be able to connect your instance to *only one* vRack from the OVHcloud Control Panel.
+> You will be able to connect your instance to **only one** vRack from the OVHcloud Control Panel.
 > To add multiple interfaces, you will need to go through the OpenStack or Horizon APIs.
 >
 

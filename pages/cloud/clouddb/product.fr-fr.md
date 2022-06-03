@@ -3,7 +3,7 @@ title: CloudDB
 slug: clouddb
 excerpt: Démarrez des bases de données en quelques clics. OVHcloud s'occupe du reste.
 sections: Premiers pas, Tutoriels
-order: 11
+order: 12
 ---
 
 > [!product-section]

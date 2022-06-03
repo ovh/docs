@@ -2,7 +2,7 @@
 title: Rekord VM na nowym PCC
 slug: vsphere-register-vm-vmx
 excerpt: Dowiedz się, jak ponownie zarejestrować wirtualne maszyny w nowej usłudze w starych datastore
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 06
 ---
 
@@ -21,8 +21,8 @@ W wyniku incydentu wirtualne maszyny nie wyświetlają się już w katalogu vSph
 
 ## Wymagania początkowe
 
-- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
-- Posiadanie datastore zawierających pliki wirtualnych maszyn
+- Posiadanie kontaktu administracyjnego infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymać dane do logowania.
+- Posiadanie aktywnego identyfikatora użytkownika (utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl))
 
 ## W praktyce
 
@@ -44,7 +44,7 @@ Uzupełnij wymagane informacje i kliknij `Finish`{.action}.
 
 Te same operacje są powtarzane na każdym datastore i dla każdej VM do ponownego zapisywania.
 
-Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](../tworzenie-vlan-vxlan/), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
+Sprawdź parametry swoich wirtualnych maszyn (nazwa, [portgroup](../creation-vlan/), itp..) klikając prawym przyciskiem myszy na każdym z nich, a następnie wybierając `Edit Settings`{.action}.
 
 ![zmień ustawienia](images/register-vmx-06.png){.thumbnail}
 

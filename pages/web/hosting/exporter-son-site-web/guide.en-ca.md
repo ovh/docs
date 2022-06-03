@@ -10,13 +10,13 @@ order: 2
 
 ## Objective
 
-This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/).
+This guideline will outline the steps to follow in order to export all elements of your website in a standard format, from an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
 
 **Find out how to export an OVHcloud website.**
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
@@ -32,7 +32,7 @@ To log in to your storage space, you will need the following:
 - the server address
 - the server connection port
 
-This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
+This information was included in the email informing you that your web hosting plan has been set up. If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action}. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. 
 
 ![export-website](images/export-website-step1-1.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Once you have everything you need, there are two different ways of retrieving yo
 
 - **Using FTP- or SFTP-compatible software.** You will need to install a compatible program on your computer (e.g. FileZilla). Since OVHcloud did not create the software package you have installed, please contact the software’s publisher if you are experiencing difficulties using it.
 
-- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovh.com/ca/en/web-hosting/) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/). 
+- **Using SSH access.** You will need to use commands from a terminal to interact with your storage space. More advanced knowledge and a specific [OVHcloud hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) are required to use this type of access. For further information on this, please refer to our guide on [Accessing your web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/). 
 
 #### 2.1 Upload the files from your storage space.
 
@@ -62,20 +62,13 @@ To identify the folder that the website is stored on, go to the `Multi-site`{.ac
 To retrieve a backup of your database, please read our guide on
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/).
 
-If you are using a **Private SQL** database for your website, you can go to the ‘Databases’ tab, click on the cogwheel next to the database, and click ‘Back up now’ in the drop-down menu.
-You can also download, import and restore backups in this section.
-
 ### Step 3: Retrieve the logs for your OVHcloud web hosting plan.
 
 If you would like to download your website’s logs, you can do so via your web hosting plan.
 
-Click `Hosting`{.action} in the services bar on the left-hand side, then click on the solution concerned. Click on the `More`{.action} tab, then `Statistics and logs`{.action}.
+Click `Hosting plans`{.action}, then click on the solution concerned. Click the `Statistics and logs`{.action} tab. Then click on the link under `View logs`{.action}:
 
 ![export-website](images/export-website-step3-1.png){.thumbnail}
-
-Then click on the link under **Logs**:
-
-![export-website](images/export-website-step3-2.png){.thumbnail}
 
 A window will appear with the different types of logs you can access. They are classed by month:
 
@@ -106,7 +99,5 @@ When you have selected the log types and month you want to view, the logs are ar
 [Accessing a web hosting plan via SSH](../web_hosting_ssh_on_web_hosting_packages/)
 
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
-
-[Private SQL](../getting-started-with-private-sql/)
 
 Join our community of users on <https://community.ovh.com/en/>.

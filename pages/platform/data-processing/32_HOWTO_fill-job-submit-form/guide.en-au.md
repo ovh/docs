@@ -20,7 +20,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 - Access to the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
 - Your application must be uploaded into a container in your Object Storage.
 - For the Spark engine, your application can either be :
   - a JAR file, if you're using Java or Scala
@@ -93,4 +93,5 @@ For Apache Spark, for example, you will also have to :
 
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
-You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+

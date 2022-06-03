@@ -10,7 +10,7 @@ order: 4
 
 ## Objetivo
 
-Es posible añadir un [certificado SSL](https://www.ovh.es/ssl/){.external} a su red de distribución de contenidos (CDN, del inglés *content delivery network*) para que los usuarios puedan establecer conexiones seguras incluso pasando por la CDN.
+Es posible añadir un [certificado SSL](https://www.ovhcloud.com/es-es/web-hosting/options/ssl/){.external} a su red de distribución de contenidos (CDN, del inglés *content delivery network*) para que los usuarios puedan establecer conexiones seguras incluso pasando por la CDN.
 
 **Esta guía explica cómo funcionan los certificados SSL Let's Encrypt que ofrece OVH.**
 
@@ -72,4 +72,4 @@ Una vez activado el certificado, podrá ver lo siguiente en el área de cliente:
 
 [Primera configuración de un dominio](https://docs.ovh.com/es/cdn-infrastructure/primera-configuracion-dominio-en-cdn/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

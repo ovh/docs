@@ -17,24 +17,24 @@ This OVHcloud feature allows you to set up an automatic email responder that wil
 
 ## Requirements
 
-- a [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/){.external} 
+- a [Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/){.external} 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
 > [!primary]
 >
-> If your email account is hosted on [**Exchange**](https://www.ovh.com/ca/en/emails/hosted-exchange/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
+> If your email account is hosted on [**Exchange**](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) or if the functionality is not available in your Control Panel, you can instead create responders from your OWA webmail using the guide "[Creating automatic replies in OWA](../../microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa/)".
 
 ### Creating autoresponders
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to `Web Cloud`{.action} in the top navigation bar. Select `Emails`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, click on the button `Manage auto-replies`{.action} in the tab `Emails`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and switch to `Web Cloud`{.action}. Select `Emails`{.action}, then choose the domain name concerned. Next, click on the button `Manage auto-replies`{.action} in the tab `Emails`{.action}.
 
 You will be redirected to the `Manage auto-replies` section where all of the email responders for this domain are listed.
 
 To create a new one, click on `Add an auto-reply`{.action}.
 
-![responder](images/email_responder01.gif){.thumbnail}
+![responder](images/email_responder01.png){.thumbnail}
 
 In the popup window, fill out the form according to the information below:
 

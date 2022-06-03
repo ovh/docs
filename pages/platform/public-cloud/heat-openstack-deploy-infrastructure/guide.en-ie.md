@@ -5,7 +5,29 @@ excerpt: Find out how to get started with Heat and stacks by deploying your firs
 section: Tutorials
 ---
 
-**Last updated June 20th 2018**
+**Last updated 30th March 2022**
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+   font-size: 0.75em;
+   color: #ccc;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
 
 ## Objective
 
@@ -22,7 +44,7 @@ We will help you get started using Heat, and the *stacks* that represent orchest
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files
@@ -59,21 +81,21 @@ It is best to install the client using the OpenStack command line.
 > 
 
 ```sh
-# apt install python-openstackclient python-heatclient
+apt install python-openstackclient python-heatclient
 ```
 
 You can also install the client using pip.
 
 ```sh
-# apt install python-pip
-# pip install --upgrade python-openstackclient python-heatclient
+apt install python-pip
+pip install --upgrade python-openstackclient python-heatclient
 ```
 
 You will also need a SSH key to connect to your instances.
 
-```
-$ openstack keypair create heat_key > heat_key.priv
-$ chmod 600 heat_key.priv
+```sh
+openstack keypair create heat_key > heat_key.priv
+chmod 600 heat_key.priv
 ```
 
 ### Launch a basic infrastructure
@@ -113,7 +135,12 @@ resources:
 Then create your first *stack* with the following command:
 
 ```sh
-$ openstack stack create -t basic-template.yaml first-stack
+openstack stack create -t basic-template.yaml first-stack
+```
+
+You should obtain a result like this:
+
+<pre class="console"><code>$ openstack stack create -t basic-template.yaml first-stack
 +---------------------+-----------------------------------------------------------------------------+
 | Field               | Value                                                                       |
 +---------------------+-----------------------------------------------------------------------------+
@@ -125,12 +152,11 @@ $ openstack stack create -t basic-template.yaml first-stack
 | stack_status        | CREATE_IN_PROGRESS                                                          |
 | stack_status_reason | Stack CREATE started                                                        |
 +---------------------+-----------------------------------------------------------------------------+
-```
+</code></pre>
 
 The *stack* is being created. After a few seconds, you can check its status:
 
-```sh
-$ openstack stack show first-stack
+<pre class="console"><code>$ openstack stack show first-stack
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                                                                |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -160,23 +186,21 @@ $ openstack stack show first-stack
 | tags                  | None                                                                                                                                                 |
 | disable_rollback      | True                                                                                                                                                 |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-```
+</code></pre>
 
 As with other OpenStack resources, you can list your *stacks*:
 
-```sh
-$ openstack stack list
+<pre class="console"><code>$ openstack stack list
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 | ID                                   | Stack Name  | Stack Status    | Creation Time        | Updated Time |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 | f81ec642-96b6-4540-b323-d5184327ae34 | first-stack | CREATE_COMPLETE | 2018-03-27T16:12:36Z | None         |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
-```
+</code></pre>
 
 As you can see, a *stack* has a status, just like an instance. To see the event list for a *stack*, use:
 
-```sh
-$ openstack stack event list first-stack
+<pre class="console"><code>$ openstack stack event list first-stack
 2018-03-27 16:12:38Z [first-stack]: CREATE_IN_PROGRESS Stack CREATE started
 2018-03-27 16:12:38Z [first-stack.my_instance]: CREATE_IN_PROGRESS state changed
 2018-03-27 16:12:39Z [first-stack.my_volume]: CREATE_IN_PROGRESS state changed
@@ -185,12 +209,11 @@ $ openstack stack event list first-stack
 2018-03-27 16:13:00Z [first-stack.my_attachment]: CREATE_IN_PROGRESS state changed
 2018-03-27 16:13:04Z [first-stack.my_attachment]: CREATE_COMPLETE state changed
 2018-03-27 16:13:04Z [first-stack]: CREATE_COMPLETE Stack CREATE completed successfully
-```
+</code></pre>
 
 You can also see the various resources present in the *stack*. In this case, there is only one server:
 
-```sh
-$ openstack stack resource list first-stack
+<pre class="console"><code>$ openstack stack resource list first-stack
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
 | resource_name | physical_resource_id                 | resource_type                | resource_status | updated_time         |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
@@ -198,16 +221,15 @@ $ openstack stack resource list first-stack
 | my_attachment | 2fc5d81c-db47-4d21-9179-11895b332944 | OS::Cinder::VolumeAttachment | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 | my_instance   | 8263d0e0-5ad2-46f5-89a2-5b8ecea43b66 | OS::Nova::Server             | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
-```
+</code></pre>
 
 As you can see, a *stack* groups together a set of resources, and its lifecycle shows statuses, for which you can view the event list.
 
 We will now delete this *stack*:
 
-```sh
-$ openstack stack delete first-stack
+<pre class="console"><code>$ openstack stack delete first-stack
 Are you sure you want to delete this stack(s) [y/N]? y
-```
+</code></pre>
 
 ## Go further
 

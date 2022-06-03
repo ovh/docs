@@ -5,7 +5,11 @@ excerpt: 'Cómo mejorar la seguridad de su cuenta de OVHcloud activando la doble
 section: Seguridad
 ---
 
-**Última actualización: 16/04/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 03/01/2022**
 
 ## Objetivo
 
@@ -54,9 +58,7 @@ Podrá eliminarlos o regenerarlos en su área de cliente:
 > [!warning]
 >
 > Le recordamos que es indispensable guardar estos códigos de seguridad y asegurarse de que sean válidos. En caso de indisponibilidad de su/s método/s de seguridad seleccionado/s (debido al robo o pérdida de su teléfono o de su llave de seguridad), el acceso a su área de cliente podría quedar bloqueado.
-> 
-
-
+>
 
 ### Etapa 3: iniciar sesión en el área de cliente con la doble autenticación
 
@@ -75,7 +77,7 @@ Si perdió su dispositivo (teléfono inteligente, tableta o llave de seguridad) 
 También puede utilizar uno de los códigos de seguridad que tiene a su disposición. 
 
 
-### Eliminar un dispositivo asociado a la doble autenticación
+### Eliminar un dispositivo asociado a la doble autenticación <a name="delete-device"></a>
 
 > [!warning]
 >
@@ -98,6 +100,36 @@ Haga clic en `«Seguridad»`{.action} (primer paso en la siguiente imagen) y, se
 
 ![2FA](images/hub2FAc.png){.thumbnail}
 
+### Desactivar la doble autenticación por completo <a name="disable-2fa"></a>
+
+#### Si tiene acceso al área de cliente de OVHcloud
+
+Para desactivar por completo la doble autenticación en su cuenta de OVHcloud, es necesario eliminar **todos** los periféricos indicados **y también desactivar los códigos de seguridad**.
+
+Para eliminar cada dispositivo, consulte la [sección dedicada de esta guía](#delete-device).
+
+Una vez que haya eliminado todos los dispositivos, desactive los códigos de seguridad haciendo clic en el botón `Desactivar los códigos 2FA`{.action}.
+
+![2FA codes](images/disabling-codes.png){.thumbnail}
+
+#### Si no tiene acceso al área de cliente de OVHcloud
+
+Si ya no dispone de dispositivos válidos y no dispone de códigos de seguridad válidos, puede solicitar la desactivación de la doble autenticación contactando con nuestro equipo de soporte.
+
+Antes de contactarnos, debe reunir los siguientes justificantes:
+
+|Tipo de cuenta OVHcloud|Justificantes a adjuntar|
+|---|---|
+|Particular|- Documento de identidad (DNI, permiso de conducir o pasaporte), que menciona el nombre completo, la fecha de nacimiento y la fecha de expiración, a nombre del titular de la cuenta de OVHcloud. <br><br>- Justificante de domicilio correspondiente al registrado en la cuenta OVHcloud, de menos de dos meses.|
+|Empresa|- Documento de identidad (DNI, permiso de conducir o pasaporte) que mencione el nombre completo, la fecha de nacimiento y la fecha de expiración al nombre de una persona autorizada para representar a la empresa.<br><br>- Documento de registro de la empresa que indica la persona autorizada para representar la empresa.|
+
+Una vez que haya reunido los documentos justificativos, póngase en contacto con nuestro equipo de soporte, llamando al 91 758 34 77.
+
+> [!warning]
+>
+> Los justificantes deberán enviarnos desde una dirección de correo electrónico registrada en su cuenta de OVHcloud.
+
+Tras comprobar sus documentos, un asesor podrá desactivar manualmente la doble autenticación en su cuenta de OVHcloud.
 
 ## Más información
 

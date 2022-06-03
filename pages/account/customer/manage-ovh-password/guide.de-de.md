@@ -64,7 +64,7 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 - **Ein individuelles Passwort für jeden Dienst.** Ihr Zugangspasswort für Ihren OVHcloud Kunden-Account darf nicht für weitere Seiten oder Anwendungen verwendet werden. Wir empfehlen, diese Regel bei allen von Ihnen genutzten Webdiensten zu beherzigen. Ein individuelles Passwort für jede Webseite vermeidet weitreichende Sicherheitslücken im Falle des Diebstahls eines einzelnen Passworts.
 
-- **Speichern Sie Ihr Passwort nicht in Ihrem Browser.** So praktisch es auch sein mag, es ist nicht empfehlenswert, dem Speichern des Passworts in Ihrem Browser durch klicken des Kästchens „Passwort speichern“ zuzustimmen. Diese Aktion birgt mehrere Sicherheitsprobleme, insbesondere dann, wenn potenzielle Angreifer Ihren Computer unter ihre Kontrolle bringen. Dann genügt es, die Datei mit der Liste der gespeicherten Passwörter aufzurufen, um sich bei Ihren verschiedenen Konten anzumelden. 
+- **Speichern Sie Ihr Passwort nicht in Ihrem Browser.** So praktisch es auch sein mag, es ist nicht empfehlenswert, dem Speichern des Passworts in Ihrem Browser durch klicken des Kästchens “Passwort speichern” zuzustimmen. Diese Aktion birgt mehrere Sicherheitsprobleme, insbesondere dann, wenn potenzielle Angreifer Ihren Computer unter ihre Kontrolle bringen. Dann genügt es, die Datei mit der Liste der gespeicherten Passwörter aufzurufen, um sich bei Ihren verschiedenen Konten anzumelden. 
 
 - **Ändern Sie regelmäßig Ihr Passwort.** Eine regelmäßige Erneuerung Ihres Passworts steigert die Sicherheit Ihres Accounts. Ändern Sie Ihr Passwort sofort beim geringsten Verdacht. Die Berücksichtigung des neuen Passworts bewirkt automatisch die Schließung aller aktiven Sitzungen Ihres OVHcloud Kunden-Accounts. Vor allem muss es sich von zuvor verwendeten Passwörtern unterscheiden.
 
@@ -79,7 +79,7 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 
-- Klicken Sie danach auf `Sicherheit`{.action}, dann auf `Ändern`{.action} rechts von „Passwort“.
+- Klicken Sie danach auf `Sicherheit`{.action}, dann auf `Ändern`{.action} rechts von “Passwort”.
 
 ![manage-ovh-password](images/manage-password02.png){.thumbnail}
 
@@ -121,12 +121,12 @@ Wenn Ihr Passwort gestohlen wurde, empfehlen wir Ihnen nachdrücklich, [es schne
 
 ## Weiterführende Informationen
 
-[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi-fuer-buerger.de/BSIFB/DE/Empfehlungen/Passwoerter/passwoerter_node.html)
+[Grundlegende Sicherheitsmaßnahmen zu Passwörtern vom BSI](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/accountschutz_node.html)
 
-[Passwort-Check des Bayerischen Staatsministeriums für Digitales](https://www.stmd.bayern.de/service/passwort-check/)
+[HPI Identity Leak Checker](https://sec.hpi.de/ilc/?lang=de)
 
 [Der Passwort-Manager Keepass](https://keepass.info/)
 
 [Dazu eine Anleitung der Universität Mannheim](https://www.uni-mannheim.de/informationssicherheit/infomaterial/anleitung-keepass/#c132623)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

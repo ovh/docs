@@ -6,10 +6,10 @@ section: Netzwerk & IP
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
-**Stand 17.08.2021**
+**Letzte Aktualisierung am 17.08.2021**
 
 ## Ziel
 
@@ -23,7 +23,7 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 ## Voraussetzungen
 
-- ein OVHcloud Produkt, auf dem Sie eine Firewall installiert haben.
+- Ein OVHcloud Produkt, auf dem Sie eine Firewall installiert haben.
 - Sie haben Zugriff auf die Firewall-Regeln.
 
 ## In der praktischen Anwendung
@@ -71,11 +71,11 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 ### Monitoring aktivieren oder deaktivieren
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und wählen Sie den Tab `Bare Metal Cloud`{.action}. Wählen Sie im linken Menü den betreffenden Server im Drop-down-Menü **Dedicated Server** aus.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und wählen Sie den Tab `Bare Metal Cloud`{.action}. Wählen Sie den betreffenden Server im Drop-down-Menü `Dedicated Server`{.action} aus.
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Monitoring". Klicken Sie dann auf `Aktivieren`{.action} oder `Deaktivieren`{.action}. Klicken Sie im angezeigten Fenster auf `Bestätigen`{.action}, um die Änderungen zu bestätigen.
 
-![monitoring](images/monitoring1.png){.thumbnail}
+![monitoring](images/monitoring01.png){.thumbnail}
 
 ### Das Monitoring bestimmter Dienstleistungen aktivieren
 
@@ -83,14 +83,14 @@ Zusätzlich zum Standard-Monitoring können Sie OVHcloud erlauben, bestimmte Die
 
 Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Dienste im Monitoring". Klicken Sie auf `Monitoring meine Dienstleistungen`{.action}.
 
-![monitoring](images/monitoring2.png){.thumbnail}
+![monitoring](images/monitoring02.png){.thumbnail}
 
- Sie werden auf den unten stehenden Bildschirm weitergeleitet. Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Validierungssymbol (**V**), um die Änderungen zu bestätigen.
+Sie werden auf den unten stehenden Bildschirm weitergeleitet. Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Validierungssymbol (**V**), um die Änderungen zu bestätigen.
 
 ![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-[Konfiguration des Firewall Network](../firewall-network/)
+[Konfiguration der Network Firewall](../firewall-network/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

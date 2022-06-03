@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 28/05/2021**
+**Dernière mise à jour le 11/03/2022**
 
 ## Objectif
 
@@ -22,6 +22,10 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
+> [!primary]
+>
+> Si votre serveur appartient à la ligne de produits **Eco** , rendez-vous plutôt dans [ce guide](../getting-started-dedicated-server-eco/).
+
 ## En pratique
 
 Lorsque votre serveur dédié est configuré pour la première fois au cours du processus de commande, vous pouvez sélectionner le système d'exploitation à installer.
@@ -32,7 +36,7 @@ Vous pouvez facilement réinstaller votre serveur et choisir une autre image d'O
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 
-Sur l'écran suivant, sélectionnez `Installer à partir d'un template OVH`{.action}  ou `Installer un de vos gabarits`{.action} pour utiliser un template d'installation.
+Sur l'écran suivant, sélectionnez `Installer à partir d'un template OVHcloud`{.action}  ou `Installer un de vos gabarits`{.action} pour utiliser un template d'installation.
 
 Pour pouvoir installer une image personnalisée sur le serveur, choisissez la troisième option `Installer à partir d'une image personnalisée`{.action}. Reportez-vous au guide « [Utiliser la fonctionnalité Bring Your Own Image](../bringyourownimage/) » pour en savoir plus sur les paramètres de cette fonctionnalité.
 
@@ -73,9 +77,9 @@ Si vous installez un système d'exploitation GNU/Linux, vous pouvez ajouter votr
 
 Si une clé SSH est déjà enregistrée, elle apparaît dans le menu déroulant sous « Clés SSH » en bas. Sinon, vous devrez d'abord en ajouter une dans la section « Mes services ».
 
-Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
+Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Gestion des services`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_13.png){.thumbnail}
+![Personnaliser la configuration de la partition](images/SSH_13.1.png){.thumbnail}
 
 Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 
@@ -105,13 +109,13 @@ Utilisez les exemples suivants pour vous connecter à votre serveur et remplacez
 
 **Exemple avec root :**
 
-```sh
+```bash
 ssh root@IPv4_de_votre_serveur
 ```
 
 **Exemple avec un utilisateur préconfiguré :**
 
-```sh
+```bash
 ssh ubuntu@nom_de_reference_de_votre_serveur
 ```
 
@@ -121,11 +125,13 @@ Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](../s
 
 Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**Remote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
 
+Consultez également notre guide « [Configurer une nouvelle installation de Windows Server](https://docs.ovh.com/fr/dedicated/windows-first-config/) ».
+
 ### Redémarrage de votre serveur dédié <a name="reboot"></a>
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
-```sh
+```bash
 reboot
 ```
 
@@ -141,16 +147,9 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
 
-![monitoring](images/monitoring-your-server.png){.thumbnail}
+![monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- Si le **Monitoring** est `Activé`, vous serez averti par e-mail chaque fois que le serveur se comporte de manière inattendue. Vous pouvez désactiver ces messages via le bouton `...`{.action}.
-
-- Si vous activez l'option **Interventions sur site**, vous autorisez les techniciens du data center à contrôler le matériel au cas où votre serveur ne répondrait plus aux pings.
-
-> [!warning]
->
-> Si les interventions sur site sont activées (le curseur est alors sur `On`{.action}), veillez à **désactiver** l'option avant d'effectuer les actions appropriées sur votre serveur (tests matériels, redémarrages, etc.). Vous recevrez toujours des e-mails automatiques tant que la fonction « Monitoring » est active.
->
+Si le **Monitoring** est `Activé`, vous serez averti par e-mail chaque fois que le serveur se comporte de manière inattendue. Vous pouvez désactiver ces messages via le bouton `...`{.action}.
 
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](../monitoring-ip-ovh/).
 

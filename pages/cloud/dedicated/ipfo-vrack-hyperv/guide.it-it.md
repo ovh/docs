@@ -2,7 +2,7 @@
 title: "Utilizza Hyper-V con indirizzi IP Failover su una vRack"
 excerpt: "Scopri come configurare una macchina virtuale con IP Failover e Hyper-V su una vRack"
 slug: ipfo-vrack-hyperv
-sezione: vRack 
+section: vRack 
 ---
 
 > [!primary]
@@ -24,6 +24,11 @@ Segui il processo di installazione di Hyper-V, l'associazione di uno switch virt
 - Una vRack consegnata sul tuo account OVHcloud.
 - Blocco IP di 4 o più indirizzi IP
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 ## Procedura
 

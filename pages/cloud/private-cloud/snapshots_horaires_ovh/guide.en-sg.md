@@ -7,7 +7,7 @@ section: OVHcloud Features
 order: 06
 ---
 
-**Last updated 26th November 2020**
+**Last updated 15th March 2022**
 
 ## Objective
 
@@ -44,6 +44,11 @@ It can therefore be said that the size of a snapshot is approximately equal to t
 In practice, a snapshot created at a point in time *T* will only take up kilobytes. The snapshot size will increase as changes are made to the next snapshot. If you delete your data, the space will only be freed when the snapshot is deleted.
 
 ### Snapshots at H-1
+
+> [!warning]
+>
+>The .zfs folder is not visible in the latest generation of datastores. You may still contact our support team to request a H-1 VM snapshot restore.
+>
 
 You can retrieve the latest ZFS snapshot (H-1) from the vSphere Web Client, as it is placed directly on your datastores. 
 

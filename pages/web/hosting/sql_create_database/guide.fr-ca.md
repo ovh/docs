@@ -16,7 +16,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Avoir la possibilité de créer des bases de données dans le cadre de votre offre.
 - Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
@@ -24,7 +24,7 @@ Une base de données (*database*, « DB » ou « BDD ») permet de stocker des �
 
 ### Étape 1 : accéder à la gestion des bases de données de l'hébergement
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
 Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web.
 
@@ -42,7 +42,7 @@ Dans la fenêtre qui s'affiche, sélectionnez les informations souhaitées, puis
 
 |Information|Description|  
 |---|---|  
-|Moteur de base de données|Sélectionnez le moteur de base de données qui sera utilisé par cette dernière. Les bases de données comprises dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external} ne proposent que le moteur MySQL.|  
+|Moteur de base de données|Sélectionnez le moteur de base de données qui sera utilisé par cette dernière. Les bases de données comprises dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} ne proposent que le moteur MySQL.|  
 |Version de la base de données|Sélectionnez la version utilisée par le moteur de la base de données. Veillez à la compatibilité de votre site avec la version choisie. |  
 |Type de base de données|Sélectionnez la capacité de la base de données. Il s'agit de l'espace dont bénéficiera votre base pour stocker des données.|   
 

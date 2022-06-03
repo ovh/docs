@@ -2,7 +2,7 @@
 title: 'Editing the DNS servers for an OVHcloud domain name'
 slug: web_hosting_general_information_about_dns_servers
 excerpt: 'Find out how to modify DNS servers via the OVHcloud Control Panel'
-section: 'DNS and DNS zone'
+section: 'DNS and DNS Zone'
 order: 1
 ---
 
@@ -30,7 +30,7 @@ DNS servers are generally used in groups of two (primary and secondary), in orde
 
 ## Requirements
 
-- a [domain name](https://www.ovh.com.au/domains/) registered with OVHcloud
+- a [domain name](https://www.ovhcloud.com/en-au/domains/) registered with OVHcloud
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 > [!primary]
@@ -59,13 +59,13 @@ Please ensure that the modifications will not render your domain name inaccessib
 
 ### Accessing the OVHcloud DNS server management
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS servers`{.action} tab.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click `Domains`{.action}, then choose the domain name concerned. Go to the `DNS servers`{.action} tab.
 
 The table that appears will list the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 
 > [!primary]
 >
-> When you use OVHcloud DNS servers, the server numbers are not linked to the service(s) you are using. Only the [DNS Anycast](https://www.ovh.com.au/domains/dns-anycast/) option uses specific DNS servers that are automatically assigned to you.
+> When you use OVHcloud DNS servers, the server numbers are not linked to the service(s) you are using. Only the [DNS Anycast](https://www.ovhcloud.com/en-au/domains/options/dns-anycast/) option uses specific DNS servers that are automatically assigned to you.
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -94,7 +94,7 @@ By clicking the `Reset the DNS servers`{.action} button, you can reset the curre
 
 Once you have made the required changes, there is a waiting period for them to become fully effective. Two successive periods must be taken into account:
 
-- The change made on the OVHcloud side must be taken into account by the registry that manages your domain name extension. You can track the progress for this operation in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by going to the `Domains`{.action} section in the services bar on the left-hand side, then `Ongoing operations`{.action}.
+- The change made on the OVHcloud side must be taken into account by the registry that manages your domain name extension. You can track the progress for this operation in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by going to the `Domains`{.action} section, then `Ongoing operations`{.action}.
 - Once the change has been taken into account by the organisation managing your domain name extension, it will take a maximum of 48 hours for the changes you have made to be fully propagated.
 
 ## Go further

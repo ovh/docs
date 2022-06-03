@@ -29,8 +29,8 @@ Nasze pakiety hostingowe są kompatybilne z IPv6 od 2011 roku. Aktywacja tego pr
 
 ## Wymagania początkowe
 
-- Posiadanie [domeny](https://www.ovh.pl/domeny/){.external} i możliwość zarządzania nią w Panelu klienta
-- Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external} i możliwość zarządzania nią w Panelu klienta
+- Posiadanie [hostingu WWW](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -49,7 +49,7 @@ Aby sprawdzić, czy Twoja strona WWW jest kompatybilna z IPv6, możesz użyć st
 
 ### Etap 1: Pobierz adres IPv6 Twojego hostingu
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz hosting.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action}, następnie wybierz hosting.
 
 W sekcji `Informacje ogólne`, w polu **IPv6**, skopiuj wpis i przejdź do kolejnego etapu.
 
@@ -62,7 +62,7 @@ W sekcji `Informacje ogólne`, w polu **IPv6**, skopiuj wpis i przejdź do kolej
 
 Aby Twoja przeglądarka znalazła adres IPv6 z Twoją domeną, zmodyfikuj przypisaną do niego strefę DNS. Możesz skorzystać z naszego przewodnika [Edycja strefy DNS OVHcloud](../../domains/hosting_www_jak_edytowac_strefe_dns/), aby utworzyć wpis typu **AAAA**.
 
-W `Domeny`{.action} na pasku usług po lewej stronie przejdź do zakładki `Strefa DNS`{.action} Twojej domeny. Kliknij przycisk `Dodaj wpis`{.action} po prawej stronie tabeli. Wstaw adres IPv6, używając typu rekordu **AAAA** i IPv6 pobranych wcześniej w Panelu klienta.
+W `Domeny`{.action} przejdź do zakładki `Strefa DNS`{.action} Twojej domeny. Kliknij przycisk `Dodaj wpis`{.action} po prawej stronie tabeli. Wstaw adres IPv6, używając typu rekordu **AAAA** i IPv6 pobranych wcześniej w Panelu klienta.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

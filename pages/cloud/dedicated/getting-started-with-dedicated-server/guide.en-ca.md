@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 27th May 2021**
+**Last updated 11th March 2022**
 
 ## Objective
 
@@ -18,10 +18,13 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
-- administrative access (root) via SSH or remote desktop (Windows) to your server
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
+- Administrative access (root) via SSH or remote desktop (Windows) to your server
 
+> [!primary]
+>
+> If your server is of the **Eco** product line, go to [this guide](../getting-started-dedicated-server-eco/) instead.
 
 ## Instructions
 
@@ -74,9 +77,9 @@ If you are installing a GNU/Linux-based based operating system, you can add your
 
 If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
-To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
+To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Service management`{.action}.
 
-![Customise the partition configuration](images/SSH_13.png){.thumbnail}
+![Customise the partition configuration](images/SSH_13.1.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
@@ -106,13 +109,13 @@ Use the following examples to log on to your server, replacing the credentials w
 
 **Example with root:**
 
-```sh
+```bash
 ssh root@IPv4_of_your_server
 ```
 
 **Example with a pre-configured user:**
 
-```sh
+```bash
 ssh ubuntu@reference_name_of_your_server
 ```
 
@@ -122,11 +125,13 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
+Please also refer to our guide on [Configuring a new Windows Server installation](https://docs.ovh.com/ca/en/dedicated/windows-first-config-dedicated/).
+
 ### Restarting your dedicated server <a name="reboot"></a>
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
-```sh
+```bash
 reboot
 ```
 
@@ -144,15 +149,9 @@ As explained in the “Objective” section of this guide, you are the administr
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (section **Service status**).
 
-![Monitoring](images/monitoring-your-server.png){.thumbnail}
+![Monitoring](images/monitoring-your-server-alt.png){.thumbnail}
 
-- If **Monitoring** is set to `Enabled`, you will notified via email every time the server is behaving in an unexpected way. You can disable these messages via the `...`{.action} button.
-
-- If you activate the option **On-site interventions**, you consent to supervision by data centre technicians who will check the hardware in case your server stops responding to pings.
-
-> [!warning]
-> If on-site interventions are `On`{.action}, make sure to **disable** the option before you perform relevant actions on your server (hardware tests, reboots, etc.). You will still receive automatic emails as long as "Monitoring" is active.
->
+If **Monitoring** is set to `Enabled`, you will notified via email every time the server is behaving in an unexpected way. You can disable these messages via the `...`{.action} button.
 
 You can find more information about OVHcloud Monitoring in [this guide](../monitoring-ip-ovh/).
 
@@ -176,7 +175,7 @@ All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the a
 
 ### Rescue mode
 
-For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](../rescue-mode/).
 

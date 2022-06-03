@@ -15,9 +15,14 @@ The [vRack](https://www.ovh.com.au/solutions/vrack/){.external} is a private net
 
 ## Requirements:
 
-- a [vRack](https://www.ovh.com.au/solutions/vrack/){.external}
-- a [configured block of IP addresses in the vRack](../ip-block-vrack/)
-- basic network knowledge
+- A [vRack](https://www.ovh.com.au/solutions/vrack/){.external}
+- A [configured block of IP addresses in the vRack](../ip-block-vrack/)
+- Basic network knowledge
+
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 
@@ -48,7 +53,7 @@ Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud custome
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. To do this, go to the “Cloud” section, then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >

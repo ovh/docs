@@ -3,8 +3,10 @@ title: Gestisci i tuoi archivi con un client SFTP/SCP
 slug: pca/sftp
 excerpt: Come gestire il tuo servizio Public Cloud Archive
 section: Public Cloud Archive
+order: 100
 ---
 
+**Ultimo aggiornamento: 13/05/2022**
 
 ## Introduzione
 Public Cloud Archive (PCA) è una soluzione di archiviazione gestibile tramite l'API di OpenStack. Se non hai familiarità nell'amministrazione dello spazio di storage da riga di comando, abbiamo sviluppato un gateway che ti permette di accedere a PCA tramite un client SFTP.
@@ -21,7 +23,7 @@ Nel nostro esempio, il client SFTP utilizzato è WinSCP. Ne esistono molti altri
 
 
 ## Identificativo OpenStack
-Per generare il tuo login e password OpenStack, consulta questa [guida](https://www.ovh.it/g1773.crea_un_utente_per_accedere_a_horizon).
+Per generare il tuo login e password OpenStack, consulta questa [guida](https://docs.ovh.com/it/public-cloud/creation-and-deletion-of-openstack-user/).
 
 
 ## TenantName
@@ -41,9 +43,9 @@ Il TenantName corrisponde al nome del tuo progetto su Horizon. Per recuperarlo, 
 
 
 ## Esempio
-Hai creato un container PCA nel datacenter SBG1:
+Hai creato un container PCA nel datacenter SBG:
 
-- Host name: gateways.storage.sbg1.cloud.ovh.net
+- Host name: gateways.storage.sbg.cloud.ovh.net
 - User name: pca
 - Password: 971891XXXX1214.f6nBXXXXXAmcv.SfPeASYfuWeqBZgXXXXX2XhF3DY12RkD
 
@@ -75,4 +77,9 @@ In questa sezione disattiveremo due opzioni di WinSCP:
 
 
 ## Recupero dei dati
-Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](../../).
+Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](https://docs.ovh.com/it/storage/pca/unlock/).
+
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

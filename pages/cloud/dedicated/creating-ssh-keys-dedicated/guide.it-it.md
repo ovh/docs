@@ -6,7 +6,7 @@ section: 'Per iniziare'
 order: 4
 ---
 
-**Ultimo aggiornamento: 22/07/2020**
+**Ultimo aggiornamento: 01/04/2022**
 
 ## Obiettivo
 
@@ -33,24 +33,24 @@ Su una macchina Mac o Linux, apri il tool Terminal (prompt dei comandi).
 
 Assicurati di avere una cartella “.ssh” nella tua directory $HOME. Se la cartella non esiste, creala:
 
-```sh
+```bash
 # mkdir ~/.ssh
 ```
 
 Esagui il seguente comando per creare una chiave RSA da 4096 bit:
 
-```sh
+```bash
 # ssh-keygen -b 4096
 ```
 L’utilizzo dell’opzione “-t” con il comando sopra citato consente di specificare un metodo crittografico, ad esempio:
 
-```sh
+```bash
 # ssh-keygen -t ed25519 -a 256
 ```
 
 Il comando ti chiederà di salvare la chiave appena creata:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -59,7 +59,7 @@ Una volta confermata l’operazione, potrai inserire una passphrase, una sorta d
 
 È necessario salvare la chiave SSH nella directory “.ssh”.
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -85,7 +85,7 @@ The key's randomart image is:
 
 Per leggere ed esportare la tua chiave pubblica, utilizza il comando “cat” sul file della chiave e copia il seguente risultato: 
 
-```ssh
+```bash
 # cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -118,25 +118,25 @@ Continua a muovere il mouse finché la barra di avanzamento è completa. La chia
 
 Naviga nella tua $HOME directory e crea la cartella “.ssh” (se non esiste):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
 Per conservare la chiave dell’utente attuale, apri un file chiamato “authorized_keys” con l’editor di testo che preferisci:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Copia e incolla la tua **chiave pubblica** in questo nuovo file. Salva il file ed esci dall’editor. Riavvia il tuo server o soltanto il server OpenSSH (il comando corretto potrebbe variare in base al tuo sistema operativo):
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
 Per verificare se la tua chiave è stata configurata correttamente, prova ad accedere al server in SSH usando il comando seguente: Sostituisci “IP_ADDRESSorHOSTNAME" con l’indirizzo IP o l’hostname del server a cui stai tentando di accedere:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 
@@ -152,13 +152,13 @@ Dal tuo file “authorized_keys” elimina la chiave corrispondente all’utente
 
 Lo Spazio Cliente OVHcloud consente di salvare le chiavi pubbliche usando uno dei tipi di crittografia supportati (attualmente RSA, ECDSA, ED25519). 
 
-Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida`Prodotti e servizi`{.action}.
+Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Gestione dei servizi`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_1.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
 Nel menu “I tuoi servizi”, seleziona la scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 
-![SSH key control panel](images/SSH_keys_panel_2.png){.thumbnail}
+![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
 Seleziona “Dedicato” dal menu a tendina.
 
@@ -173,6 +173,29 @@ Se hai copiato per intero il risultato, l’identificativo che segue la chiave d
 > Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](../../public-cloud/primi-passi-public-cloud).
 >
 
+### Imposta una chiave SSH predefinita (solo per la l'universo "Dedicated")
+
+Se hai aggiunto più chiavi SSH nel tuo Spazio Cliente, è possibile definire una chiave da utilizzare come chiave predefinita sull'account.
+
+> [!warning]
+> Si prega di notare che una volta che la chiave SSH predefinita è impostata, sarà usata anche come metodo di connessione durante il riavvio di un server in modalità Rescue. Per ricevere una password invece, la chiave predefinita deve essere disattivata prima di riavviare il server in modalità Rescue.
+>
+
+Apri la barra di navigazione, clicca sul tuo nome in alto a destra e utilizza il menu di scelta rapida `Gestione dei servizi`{.action}.
+
+![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Nella lista delle chiavi, clicca su `Chiave` accanto alla chiave SSH scelta per definirla come chiave predefinita.
+
+![Spazio Cliente della chiave SSH](images/defaultsshkey.png){.thumbnail}
+
+Una volta terminata l'operazione, compare un messaggio che conferma che la chiave è stata impostata come predefinita. L'icona `Chiave` sarà quindi evidenziata.
+
+![Spazio Cliente della chiave SSH](images/defaultsshkey1.png){.thumbnail}
+
+### Disattiva la chiave SSH di default <a name="disablesshkey"></a>
+
+Per disattivare la chiave SSH predefinita, effettua le stesse operazioni di cui sopra e clicca su `Chiave` accanto alla chiave SSH corrispondente per disattivare l'opzione.
 
 ## Per saperne di più 
 

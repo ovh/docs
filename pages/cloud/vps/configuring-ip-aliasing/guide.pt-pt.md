@@ -9,7 +9,7 @@ section: 'Rede e IP'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 27/04/2021**
+**Última atualização: 30/11/2021**
 
 ## Objetivo
 
@@ -27,7 +27,7 @@ O alias de IP (*IP aliasing* em inglês) é uma configuração especial da rede 
 ## Requisitos
 
 - um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- um [endereço IP IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ou um bloco IP IP Failover
+- um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ou um bloco IP Failover
 - um acesso administrador (root) via SSH ou GUI no seu servidor
 - conhecimentos básicos sobre as redes e a sua administração
 
@@ -49,7 +49,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 |NETWORK_INTERFACE|Nome da interface de rede|*eth0*, *ens3*|
 |ID|ID do alias IP, começando por *0* (em função do número de endereços IP suplementares a configurar)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etapa 1: desativar a configuração automática da rede
 
@@ -100,7 +100,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-O ficheiro de configuração dos seus endereços IP Failover encontra-se em `/etc/netplan/`. Neste exemplo, chama-se "50-cloud-init.yaml". Antes de efetuar alterações, verifique o nome do ficheiro real nesta pasta. Cada endereço IP IP Failover necessita da sua própria linha no ficheiro.
+O ficheiro de configuração dos seus endereços IP Failover encontra-se em `/etc/netplan/`. Neste exemplo, chama-se "50-cloud-init.yaml". Antes de efetuar alterações, verifique o nome do ficheiro real nesta pasta. Cada endereço IP Failover necessita da sua própria linha no ficheiro.
 
 #### Etapa 1: desativar a configuração automática da rede
 
@@ -132,12 +132,17 @@ Abra o ficheiro de configuração de rede para o modificar através do seguinte 
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Não altere as linhas existentes no ficheiro. Adicione o seu endereço IP Failover seguindo o exemplo abaixo:
+Não altere as linhas existentes no ficheiro de configuração. Adicione o seu endereço IP fail-over adicionando um segundo bloco de configuração para a interface pública, como no exemplo seguinte:
 
 ```yaml
 network:
     version: 2
     ethernets:
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
         NETWORK_INTERFACE:
             dhcp4: true
             match:
@@ -196,7 +201,7 @@ Na janela Propriedades IPv4, selecione `Utilizar o seguinte`{.action} endereço 
 
 #### Etapa 3: adicionar o endereço IP Failover nos Parâmetros TCP/IP avançados
 
-Na nova janela, clique em `Adicionar...`{.action} em "Endereços IP". Introduza o seu endereço IP IP Failover e a máscara de sub-rede (255.255.255.255).
+Na nova janela, clique em `Adicionar...`{.action} em "Endereços IP". Introduza o seu endereço IP Failover e a máscara de sub-rede (255.255.255.255).
 
 ![secção de configuração avançada](images/image4-4.png){.thumbnail}
 

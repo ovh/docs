@@ -1,6 +1,5 @@
 ---
-title: FAQ
-excerpt: 'Data Processing FAQ'
+title: FAQ OVHcloud Data Processing
 slug:  data-processing-faq 
 section: Getting started
 order: 3
@@ -142,4 +141,5 @@ OVHcloud builds a cluster, deploys it and monitors it. A great breakthrough, rig
 
 To learn more about using Data Processing and how to create a cluster and process your data, we invite you to look at [Data Processing documentation page](../).
 
-You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+

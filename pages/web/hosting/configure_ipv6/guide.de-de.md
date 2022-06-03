@@ -29,8 +29,8 @@ Unsere Webhostings sind seit 2011 mit IPv6 kompatibel, doch die Aktivierung dies
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/) in Ihrem OVHcloud Kundencenter und verwenden OVHcloud DNS Server.
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.de/hosting) Angebot.
+- Sie verfügen über einen [Domainnamen](https://www.ovhcloud.com/de/domains/) in Ihrem OVHcloud Kundencenter und verwenden OVHcloud DNS Server.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot.
 - Sie haben Zugriff zum [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## In der praktischen Anwendung

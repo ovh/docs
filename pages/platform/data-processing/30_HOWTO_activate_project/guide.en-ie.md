@@ -19,7 +19,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 ## Requirements 
 - Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - An OVHcloud account 
-- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
+- A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/create_a_public_cloud_project/){.external} for details.)
 
 ## How to activate the Data Processing service
 
@@ -58,4 +58,5 @@ To learn more about cloud projects, please visit these pages:
 
 To learn more about using Data Processing and how to submit a job and process your data, we invite you to look at [Data Processing documentations page](../).
 
-You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or in our public [Gitter](https://gitter.im/ovh/data-processing){.external}
+You can send your questions, suggestions or feedbacks in our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external} or on our [Discord](https://discord.gg/VVvZg8NCQM){.external} in the channel **#dataprocessing-spark**
+

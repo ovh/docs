@@ -10,13 +10,13 @@ order: 4
 
 ## Objective
 
-For numerous reasons, you may need to modify the configuration of your [Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/). For this reason, OVHcloud has implemented a file that allows you to change certain settings: the **.ovhconfig** file.
+For numerous reasons, you may need to modify the configuration of your [Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/). For this reason, OVHcloud has implemented a file that allows you to change certain settings: the **.ovhconfig** file.
 
 **This guide explains the.ovhconfig file and how to edit it.**
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/) (excluding Cloud Web)
+- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/) (excluding Cloud Web)
 - your FTP user password, which provides you with access to your storage space 
 
 ## Instructions
@@ -37,7 +37,7 @@ Continue reading if you wish to edit the .ovhconfig file manually.
 
 Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: [Log in to your storage space](../web_hosting_how_to_get_my_website_online/#2-log-in-to-your-storage-space).
 
-**If you no longer have that information**, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](../modify-ftp-user-password), if necessary.
+**If you no longer have that information**, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](../modify-ftp-user-password), if necessary.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
@@ -71,8 +71,8 @@ Customise the values of the variables according to the configuration you wish to
 |Variables|Details|
 |---|---|
 |app.engine|Allows you to modify the PHP engine used by the hosting plan. Enter “php” to enable the PHP-FPM accelerator and  “phpcgi” to disable it. |
-|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovh.com/ca/en/web-hosting/php.xml). Enter the version of your choice.|
-|http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/mod_security.xml){.external}. Enter “security” to enable it or “none” to disable it.|
+|app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovhcloud.com/en-ca/web-hosting/php.xml). Enter the version of your choice.|
+|http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/options/){.external}. Enter “security” to enable it or “none” to disable it.|
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
 |container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1).|
 

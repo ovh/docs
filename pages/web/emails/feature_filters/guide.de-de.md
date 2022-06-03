@@ -26,7 +26,7 @@ Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam marki
 
 ## Voraussetzungen
 
-- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovh.de/hosting/){.external}.
+- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
@@ -41,13 +41,13 @@ MX Plan Legacy|MX Plan neuere Version|
 
 ## In der praktischen Anwendung <a name="oldmxplan"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Bereich `Web Cloud`{.action}.
 
-Wählen Sie die Domain links aus dem Bereich `E-Mails`{.action} aus und wechseln Sie dann zum Tab `E-Mails`{.action}.
+Wählen Sie die Domain im Bereich `E-Mails`{.action} aus und gehen Sie auf den Tab `E-Mails`{.action}, um die Liste der E-Mail-Accounts Ihres MX Plan Angebots anzuzeigen.
 
 Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
 
-![E-Mails](images/img_3239.jpg){.thumbnail}
+![E-Mails](images/img_3239.png){.thumbnail}
 
 Ein neues Fenster öffnet sich, das Ihre derzeit für diese E-Mail-Adresse konfigurierten Filter anzeigt. Um einen hinzuzufügen, klicken Sie rechts auf den Button `Filter hinzufügen`{.action}.
 

@@ -16,15 +16,15 @@ Si vous avez commandé un hébergement web sans l'attacher directement à un nom
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Activation de votre offre e-mail
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
 Dans le cadre `Configuration`, vous trouverez la mention `Adresses e-mails`. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer la solution e-mail`{.action}.
 
@@ -59,6 +59,10 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de la mention `Adresses e-mails`, puis cliquez sur le bouton `Résilier l'option e-mail`{.action}.
 
 ![email-activation](images/mail-hosting04.png){.thumbnail}
+
+> [!warning]
+>
+> Pour confirmer la suppression de l'offre e-mail associée à votre hébergement web, un lien de validation vous est envoyé par e-mail. Il est indispensable de cliquer sur ce lien pour que l'opération de suppression soit lancée.
 
 ## Aller plus loin
 

@@ -11,11 +11,11 @@ Bei einer Migration oder einem Sichern kann es erforderlich werden, Daten von ei
 
 Rsync (für Fernsynchronisierung) wird unter der GNU GPL vertrieben und ist ein freies Programm zur Dateiensynchronisierung. Es ist in der Lage, eine Synchronisierung in eine Richtung vorzunehmen, d.h. Dateien vom Quellserver auf den Zielserver zu kopieren. 
 
-**Diese Anleitung wird Ihnen demonstrieren, wie Dateien mit rsync von einem dedizierten OVH Server auf einen anderen kopiert werden.**
+**Diese Anleitung wird Ihnen demonstrieren, wie Dateien mit rsync von einem dedizierten OVHcloud Server auf einen anderen kopiert werden.**
 
 > [!warning]
 >
-In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVH Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVH Community unter <https://community.ovh.com/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der OVHcloud Community unter <https://community.ovh.com/en/> (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 ## Voraussetzungen
@@ -30,7 +30,7 @@ In diesem Tutorial zeigen wir Ihnen die Verwendung einer oder mehrerer OVH Lösu
 
 ### Sie benötigen:
 
-*     Sie haben mindestens zwei dedizierte OVH Server, die mit GNU/Linux laufen.
+*     Sie haben mindestens zwei dedizierte OVHcloud Server, die mit GNU/Linux laufen.
 *     Sie haben Zugang zu*root* auf dem Quellapparat.
 *     Sie haben *SSH* Zugang auf dem Zielapparat.
 
@@ -58,7 +58,7 @@ Dazu ist der allgemeine Aufbau des in dieser Anleitung verwendeten Befehls von d
 
 Rsync verwendet das Protokoll SSH für die Verbindung zum Zielgerät, jedoch müssen die notwendigen Kennungen hinzugefügt werden. Der Aufbau des Befehls wird demnach wie folgt vervollständigt: `rsync -av *YourLocalFolder*/ login@server:/*DestinationFolder*/`
 
-Falls Sie den SSH-Port auf einen anderen Port als Port 22 gelegt haben, muss die Nummer des zu verwendenden Ports angegeben werden, um die SSH-Verbindung herzustellen, indem Sie` -e 'ssh -p X' ` Ihrem Befehl hinzufügen, wobei „X“ der zu verwendende SSH-Port ist.
+Falls Sie den SSH-Port auf einen anderen Port als Port 22 gelegt haben, muss die Nummer des zu verwendenden Ports angegeben werden, um die SSH-Verbindung herzustellen, indem Sie` -e 'ssh -p X' ` Ihrem Befehl hinzufügen, wobei “X” der zu verwendende SSH-Port ist.
 
 Der Befehl, um Ihre Daten mit rsync von einem Server auf einen anderen zu kopieren ist also:
 

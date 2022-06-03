@@ -1,9 +1,8 @@
 ---
-title: Preguntas frecuentes
-excerpt: FAQ para las instancias Public Cloud de OVHcloud
+title: FAQ Public Cloud OVHcloud
 slug: public-cloud-faq
-section: Primeros pasos
-order: 11
+section: Información general
+order: 01
 ---
 
 **Última actualización: 06/09/2021**
@@ -48,7 +47,7 @@ Para pasar de un modo de facturación a otro, consulte nuestra guía [Cambiar de
 
 ## ¿Cómo puedo escalar mis instancias si necesito más o menos recursos?
 
-Cualquier instancia puede redimensionarse hacia una instancia más potente de la misma gama desde el área de cliente, haciendo clic en el botón `Editar` {.action} en la página de la instancia. También es posible redimensionar la migración hacia un modelo inferior, si se ha iniciado con la opción "flex". Esta opción impone un tamaño de disco de 50 GB para todos los modelos, permitiendo así redimensionamientos en ambos sentidos.
+Cualquier instancia puede redimensionarse hacia una instancia más potente de la misma gama desde el área de cliente, haciendo clic en el botón `Editar`{.action} en la página de la instancia. También es posible redimensionar la migración hacia un modelo inferior, si se ha iniciado con la opción "flex". Esta opción impone un tamaño de disco de 50 GB para todos los modelos, permitiendo así redimensionamientos en ambos sentidos.
 En cualquier caso, el redimensionamiento de una instancia requiere un reinicio.
 
 ### ¿Las instancias de Public Cloud son compatibles con cloud-init?
@@ -67,7 +66,7 @@ No, es necesario desvincular un volumen antes de poder aumentarlo.
 
 ## ¿Cuántos volúmenes adicionales puedo asociar a cada instancia?
 
-Puede asociar hasta 26 volúmenes adicionales por instancia.
+Puede asociar hasta 25 volúmenes adicionales por instancia.
 
 ## ¿Cómo están protegidos mis servidores?
 
@@ -83,6 +82,12 @@ Public Cloud integra una solución SDN (software-defined network). que permite c
 Estas redes privadas se basan en la tecnología vRack de OVHcloud, compartida con otros servicios de la empresa, como Private Cloud o servidores dedicados. de esta forma, la solución ofrece la posibilidad de comunicar todos sus elementos de infraestructura con OVHcloud de forma aislada y segura.
 
 Para más información, consulte la guía [Configuración del vRack Public Cloud](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/) (EN).
+
+### ¿Puedo cambiar la IP pública de mi instancia?
+
+Las IP públicas se asignan automáticamente a las instancias, por lo que no pueden modificarse. Para controlar la IP pública de una instancia, le recomendamos que utilice una IP Failover. De este modo, cualquiera que sea la dirección pública que se haya asignado automáticamente a la instancia, puede añadir una o varias IP failover a su instancia.
+
+Para más información, consulte la guía [Comprar una IP failover](../comprar-una-ip-failover/).
 
 ## Más información
 

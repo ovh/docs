@@ -7,7 +7,7 @@ section: 'Website optimisation'
 order: 1
 ---
 
-**Last updated 5th February 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 This guide is designed for customers who wish to improve the performance of their website.
@@ -19,9 +19,9 @@ This guide will help you get a basic understanding on what points can affect per
 > This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
-- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - an email confirming that your Web Hosting plan has been set up
-- a [domain name](https://www.ovh.co.uk/domains/) that can be used to access your website
+- a [domain name](https://www.ovhcloud.com/en-gb/domains/) that can be used to access your website
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -44,9 +44,9 @@ Answering those questions can help to focus on specific points and diagnose area
 
 The use of CMS such as WordPress, PrestaShop, Drupal or Joomla! requires many libraries, so that a single web page can handle a lot of elements.
 Internet browsers must load and read all of these elements.
-We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovh.co.uk/web-hosting/){.external}.
+We provide recommendations on what web hosting offer to use for the above listed CMS on [the product page](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
 
-You can find more informations regarding which plan to choose from on [this page](https://www.ovh.co.uk/web-hosting/what_web_hosting_choice.xml){.external}.
+You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-gb/web-hosting/uc-best-web-hosting/){.external}.
 
 
 ### Step 2: Checking the PHP version
@@ -139,14 +139,14 @@ In order to improve website access website downloads and get naturally optimised
 
 As a result you will improve response times for visitors all over the world because the static parts of your website will be downloaded directly by your visitor in the point of presence which is closest to them.
 
-Discover our [CDN solution here](https://www.ovh.co.uk/cdn/){.external}.
+Discover our [CDN solution here](https://www.ovhcloud.com/en-gb/web-hosting/options/cdn/){.external}.
 
 
 ### Step 6: Checking the Content Management System (CMS) and plugins used
 
 _This step is optional if you are not using a CMS._
 
-To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovh.co.uk/web-hosting/){.external}.
+To ensure that your hosting offer is adapted to the needs of your CMS, you can find a comparison of our services on [the product page](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
 
 - **Using a cache plugin:** Using a CMS calls upon several libraries, so that one single web page can deal with an enormous amount of elements. In order to optimise your CMS, you should use several cache plugins to avoid regenerating all of your website content each time a page loads. We recommend that you search for cache plugins on the community websites relating to the CMS that you use (Joomla! - PrestaShop - WordPress) in order to avoid regenerating the entire content of your website each time you load the web page.
 
@@ -217,9 +217,10 @@ Example:
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
 
-#### Private SQL
-If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our Private SQL offer to have more resources available.
-A comparison of our offers can be found [on the product page](https://www.ovh.co.uk/web-hosting/sql-options.xml).
+#### CloudDB
+If despite all the changes and optimisations you did undertake the database is slow, or if a large number of queries are made to the database, you may want to switch to our CloudDB offer to have more resources available.
+
+[See the CloudDB offer on our website](https://www.ovh.co.uk/cloud/cloud-databases/).
 
 ## Go further
 
@@ -227,6 +228,6 @@ A comparison of our offers can be found [on the product page](https://www.ovh.co
 
 [Creating and managing a database in your Web Hosting plan](https://docs.ovh.com/gb/en/hosting/creating-database)
 
-[Getting started with the Private SQL service](https://docs.ovh.com/gb/en/hosting/getting-started-with-private-sql)
+[Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 
 Join our community of users on <https://community.ovh.com/en/>.

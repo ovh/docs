@@ -18,28 +18,28 @@ En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-ma
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web]((https://www.ovh.com/ca/fr/hebergement-web/){.external} ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web]((https://www.ovhcloud.com/fr-ca/web-hosting/){.external} ou l'offre MX Plan commandée séparément.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc{.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, vous devrez alors créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
+> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, vous devrez alors créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
 
 ### Création du répondeur
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc{.external}. 
 
-Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, depuis la colonne à gauche.
+Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 
-Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
+Cliquez sur l'onglet `Emails`{.action}, puis sur `Gestion des répondeurs`{.action}.
 
 Vous serez redirigé vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des répondeurs e-mail en place sur votre offre e-mail.
 
 Cliquez sur `Ajouter un répondeur`{.action}
 
-![hosting](images/email_responder01.gif){.thumbnail}
+![hosting](images/email_responder01.png){.thumbnail}
 
 La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations ci-dessous.
 

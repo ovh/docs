@@ -18,7 +18,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ## Requirements
 
-- a [domain name](https://www.ovh.com/world/domains/) registered with OVHcloud
+- a [domain name](https://www.ovhcloud.com/en/domains/) registered with OVHcloud
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the necessary permissions to manage the domain name (domain administrator)
 - the registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
@@ -34,14 +34,14 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 > We recommend to consult the following resources in case of any doubt:
 >
 > - the website of the respective TLD registry
-> - the [list of TLDs available at OVHcloud](https://www.ovh.com/world/domains/prices/)
+> - the [list of TLDs available at OVHcloud](https://www.ovhcloud.com/en/domains/tld/)
 > - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
 > - your new registrar's website and management interface, especially for questions about a pending transfer process
 >
 
 ### Step 1: Remove the transfer protection for the domain name
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Domain names`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action}. Click `Domain names`{.action} , then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Enabled`{.action} by default.
 

@@ -17,13 +17,13 @@ Oferty SharePoint pozwalają wykorzystać współdzieloną przestrzeń dyskową 
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi [Hosted Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} w celu zamówienia przypisanej usługi SharePoint.
+- Wykupienie usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/){.external} w celu zamówienia przypisanej usługi SharePoint.
 
 ## W praktyce
 
 ### Etap 1: zamówienie usługi SharePoint
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Zamów`{.action} na pasku usług po lewej stronie, a następnie wybierz `SharePoint`{.action}.
+Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Webcloud`{.action}, aby rozpocząć zamawianie usługi SharePoint.
 
 Istnieją dwa rodzaje usług do wyboru:
 
@@ -42,7 +42,7 @@ Aby przeczytać ten e-mail, zaloguj się do Twojego [Panelu klienta OVHcloud](ht
 
 > **\[xx-11111-ovh] Skonfiguruj usługę Microsoft SharePoint!**
 
-Aby rozpocząć tę konfigurację, przejdź do sekcji `Web` w Twoim Panelu klienta. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Sharepoint`{.action}, po czym wybierz odpowiednią usługę SharePoint.
+Aby rozpocząć tę konfigurację, przejdź do sekcji `Web` w Twoim Panelu klienta. Kliknij `Microsoft`{.action}, następnie `Sharepoint`{.action}, po czym wybierz odpowiednią usługę SharePoint.
 
 Nazwij usługę w polu „Adres URL SharePoint” i kliknij przycisk `Zatwierdź URL`{.action}
 
@@ -54,7 +54,7 @@ Nazwij usługę w polu „Adres URL SharePoint” i kliknij przycisk `Zatwierdź
 
 ### Etap 3: konfiguracja usługi SharePoint
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web`. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Sharepoint`{.action}, po czym wybierz odpowiednią usługę SharePoint.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web`. Kliknij `Microsoft`{.action}, następnie `Sharepoint`{.action}, po czym wybierz odpowiednią usługę SharePoint.
 
 #### **Samodzielna usługa SharePoint**
 

@@ -17,7 +17,7 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), inclus dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovhcloud.com/fr/web-hosting/), inclus dans un [hébergement Start10M gratuit](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/))
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## Instructions

@@ -1,7 +1,6 @@
 ---
 title: "Proteggi l'interfaccia di gestione del tuo sito con un file.htaccess"
 slug: condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione
-legacy_guide_number: g1968
 excerpt: "Come proteggere l'accesso alla gestione del tuo sito con un file .htaccess"
 section: Scrittura e autenticazione
 ---
@@ -27,7 +26,7 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 
 ## Prerequisiti
 
-- Disporre di una [soluzione di hosting Web](https://www.ovh.it/hosting-web/) OVHcloud
+- Disporre di una [soluzione di hosting Web](https://www.ovhcloud.com/it/web-hosting/) OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Avere a disposizione le credenziali di accesso allo [spazio di storage dell'hosting](../accedere-spazio-storage-ftp-hosting-web/)
 
@@ -37,7 +36,7 @@ A volte potrebbe essere necessario proteggere l'accesso a una parte del tuo sito
 >
 > La soluzione proposta è solo una delle possibilità tecniche per creare uno spazio amministratore sul tuo sito. Inoltre, è possibile utilizzare la funzionalità [CMS in 1 click](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/) proposta da [OVHcloud](https://www.ovhcloud.com/it/).
 >
-> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/). OVH non sarà infatti in grado di fornirti assistenza su questi argomenti.
+> Per qualsiasi richiesta relativa alla creazione o alla programmazione del tuo sito, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). OVH non sarà infatti in grado di fornirti assistenza su questi argomenti.
 >
 
 ### Step 1: creare l'arborescenza
@@ -71,7 +70,7 @@ echo nl2br("$string_1 \n $string_2 \n $string_3");
  ?>
 ```
 
-Se disponi di un hosting [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), accedi in [SSH](../hosting_condiviso_il_protocollo_ssh/) al tuo hosting. Esegui questo comando:
+Se disponi di un hosting [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), accedi in [SSH](../hosting_condiviso_il_protocollo_ssh/) al tuo hosting. Esegui questo comando:
 
 ```bash
 php crypter.php
@@ -79,9 +78,9 @@ php crypter.php
 
 > [!warning]
 >
-> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/) o [Personale](https://www.ovh.it/hosting-web/hosting-web-personale.xml) e non desideri passare a un'offerta [Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml) o [Performance](https://www.ovh.it/hosting-web/hosting-web-performance.xml), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://il-tuo-dominio.ovh/crypter.php).
+> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/) o [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) e non desideri passare a un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/) o [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/), puoi anche eseguire il file "crypter.php" tramite il tuo browser Web (accedendo a un URL di tipo https://il-tuo-dominio.ovh/crypter.php).
 >
-> Per maggiori informazioni sul metodo da utilizzare per cifrare la password, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/). Non saremo in grado di fornirti assistenza al riguardo.
+> Per maggiori informazioni sul metodo da utilizzare per cifrare la password, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
 >
 
 Recupera le password cifrate (Non copiare "&#60;br />" se esegui il comando "php crypter.php" in SSH):
@@ -150,6 +149,6 @@ Require valid-user
 
 [Hosting condiviso: tutto sul file .htaccess](../hosting_condiviso_tutto_sul_file_htaccess/)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

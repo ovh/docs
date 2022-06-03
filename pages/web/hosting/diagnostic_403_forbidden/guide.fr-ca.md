@@ -27,7 +27,7 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) OVHcloud.
+- Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) OVHcloud.
 - Disposer des [identifiants de connexion](../connexion-espace-stockage-ftp-hebergement-web/#etape-1-recuperer-les-informations-necessaires-pour-se-connecter) à l'espace de stockage de votre hébergement.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 

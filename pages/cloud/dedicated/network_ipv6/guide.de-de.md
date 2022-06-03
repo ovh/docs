@@ -5,7 +5,11 @@ excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur kon
 section: 'Netzwerk & IP'
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 04.05.2022**
 
 ## Ziel
 
@@ -14,31 +18,45 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 **Diese Anleitung erklärt anhand verschiedener Beispiele, wie Sie IPv6-Adressen auf Ihrem Server konfigurieren.**
 
 > [!warning]
->OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovh.de/dedicated_server/) in Ihrem Kunden-Account.
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben Ihre IPv6-Informationen bereit (Präfix, Gateway etc.)
-- Sie verfügen über Grundkenntnisse im Umgang mit [SSH](http://de.wikipedia.org/wiki/Secure_Shell) und in der Netzwerkverwaltung.
+- Sie verfügen über Grundkenntnisse im Umgang mit [SSH](../ssh-einfuehrung/) und in der Netzwerkverwaltung.
+
+> [!warning]
+> Beachten Sie, dass die Server der Reihe Kimsufi mit einem einzigen IPv6 Block (/128) bereitgestellt werden. IPv6 bei der Installation des Betriebssystems automatisch eingerichtet.
+>
 
 ## In der praktischen Anwendung
 
 Falls Sie für die Installation Ihres Servers ein Linux-OS-Template von OVHcloud verwenden, werden Sie feststellen, dass die erste (Haupt-) IPv6 bereits konfiguriert ist.
 
+Wenn Sie mehrere IPv6-Adressen auf Ihrem Server konfigurieren möchten (oder wenn Sie diese auf einer VM verwenden möchten), müssen Sie jeweils eine Failover-IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden.
 
 > [!primary]
 >
-> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist immer xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Das Standard-Gateway für Ihr IPv6-Block (IPv6_GATEWAY) ist in der Regel xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Beachten Sie, dass führende Nullen in einer IPv6-Adresse gelöscht werden können, um Fehler bei der Bestimmung des Gateways zu vermeiden.
 >
-> Zum Beispiel:
+> Beispiel:
 > 
-> - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Die IPv6-Adresse des Servers ist 2607:5300:60:62ac::/64 oder 2607:5300:60:62ac:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2607:5300:60:62FF:FF:FF:FF:FF.
+> - Die IPv6-Adresse des Servers ist 2001:41D0:1:46e::/64 order 2001:41D0:0001:046e:0000:0000:0000:0000/64. Das IPv6_GATEWAY ist daher 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> Der sichere Weg um die Netzwerkinformationen für Ihren Server abzurufen ist die [Verwendung der OVHcloud API](https://docs.ovh.com/de/api/first-steps-with-ovh-api/). Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+>
+
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
+>
+
 
 ### Debian und Debian-basierte Betriebssysteme
 
@@ -65,7 +83,7 @@ Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/network/inte
 
 Bearbeiten Sie die Datei so, dass Sie wie das folgende Beispiel aussieht. In diesem Beispiel heißt das Netzwerkinterface `eth0`. Das Interface Ihres Servers hat eventuell einen anderen Namen.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +103,7 @@ Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Net
 
 Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -116,13 +134,13 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/sysconfig/network-scripts/ifcfg-eth0. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
 Bearbeiten Sie die Datei so, dass Sie wie das folgende Beispiel aussieht. In diesem Beispiel heißt das Netzwerkinterface eth0. Das Interface Ihres Servers hat eventuell einen anderen Namen. Um Verwirrungen zu vermeiden, ist die IPv4-Failover-Konfiguration hier nicht aufgeführt. Die IPv6-Konfiguration wird jedoch in derselben Konfigurationsdatei vorgenommen.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +159,7 @@ Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Net
 
 Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -166,13 +184,13 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in /etc/rc.conf. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
+Die Netzwerkkonfigurationsdatei Ihres Servers befindet sich in `/etc/rc.conf`. Verwenden Sie die Kommandozeile, um die Datei zu finden und zur Bearbeitung zu öffnen.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
 Bearbeiten Sie die Datei so, dass Sie wie das folgende Beispiel aussieht. In diesem Beispiel heißt das Netzwerkinterface em0. Das Interface Ihres Servers hat eventuell einen anderen Namen.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +206,7 @@ Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Net
 
 Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -212,13 +230,13 @@ Weitere Informationen finden Sie in [dieser Anleitung](../erste-schritte-dedicat
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
-Öffnen Sie die Netzwerkkonfigurationsdatei in /etc/systemd/network. In unserem Beispiel heißt die Datei 50-default.network.
+Öffnen Sie die Netzwerkkonfigurationsdatei in `/etc/systemd/network`. In unserem Beispiel heißt die Datei 50-default.network.
 
 #### Schritt 3: Netzwerkkonfigurationsdatei bearbeiten
 
 Verwenden Sie einen Text-Editor, um die Datei zu bearbeiten, und fügen Sie die folgenden Zeilen in den betreffenden Abschnitten hinzu (siehe nachstehendes Beispiel):
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -231,7 +249,7 @@ Scope=link
 ```
 Um mehrere IPv6-Adressen hinzuzufügen, fügen Sie mehrere \[Address]-Abschnitte hinzu:
 
-```sh
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -246,7 +264,7 @@ Speichern Sie die Änderungen in der Datei und starten Sie anschließend das Net
 
 Sie können die IPv6-Konnektivität testen, indem Sie folgende Befehle ausführen:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes

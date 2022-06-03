@@ -5,7 +5,11 @@ excerpt: 'Saiba como implementar uma solução para evitar o bloqueio através d
 section: 'Gestão das máquinas virtuais'
 ---
 
-**Última atualização: 11/01/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 22/02/2022**
 
 ## Sumário
 
@@ -16,13 +20,11 @@ Isto deve-se ao facto de o snapshot da VM estar instalado no backup proxy, que f
 
 ## Requisitos
 
-- Dispor do serviço [Private Cloud](https://www.ovh.com/pt/private-cloud/){.external}.
-- Ter ativado a opção [Veeam Backup Managed](https://www.ovh.com/pt/private-cloud/opcoes/veeam.xml){.external}.
-- Aceder à interface de gestão vSphere.
+- Ter contacto com o administrador da infraestrutura [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), a fim de receber dados de acesso.
+- Ter um identificador de utilizador ativo (criado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt))
+- Ativar a opção [Veeam Backup Managed](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/veeam-backup-managed/){.external}.
 
 ## Instruções
-
-### Procedimento
 
 > [!primary]
 >
@@ -33,8 +35,9 @@ Isto deve-se ao facto de o snapshot da VM estar instalado no backup proxy, que f
 > - qualquer máquina virtual que deva ser objeto de backup, mas que não faça parte das regras DRS pode sempre sofrer bloqueios.
 >
 
+Para implementar esta solução, clique no cluster apropriado, aceda ao separador `Configure`{.action} e depois à secção `VM/Host Rules`{.action}.
 
-Para implementar esta solução, clique com o botão direito do rato sobre o cluster adequado e modifique as respetivas configurações.
+![vSphere](images/en01add.png){.thumbnail}
 
 Crie uma regra DRS para **manter as máquinas virtuais juntas** e adicione-as com um backup proxy. Se tiver um grande número de máquinas virtuais para realizar o backup, pode criar várias regras DRS e associá-las a vários backups proxy. O algoritmo da OVH garante-lhe que o processo de backup da máquina virtual é efetuado pelo backup proxy presente no mesmo host ESXi que a máquina virtual.
 
@@ -43,20 +46,14 @@ Crie uma regra DRS para **manter as máquinas virtuais juntas** e adicione-as co
 > A adição de um novo backup proxy terá um custo adicional.
 >
 
-Na secção DRS, pode adicionar uma regra como a seguinte:
-
-![](images/image0_7.png){.thumbnail}
+![proxy](images/en02proxy.png){.thumbnail}
 
 Crie outra regra DRS para **separar as máquinas virtuais**, de modo a conservar os backups proxy em diferentes hosts:
 
-![](images/image0_28.png){.thumbnail}
-
-Crie um grupo de máquinas virtuais, introduza o nome do grupo e adicione o host a esta regra:
-
-![](images/image1_9.png){.thumbnail}
+![proxy](images/en03proxy2.png){.thumbnail}
 
 Tenha em atenção que deve ter implementado uma regra anti afinidade para que os backups proxy nunca se encontrem no mesmo host, e tantas regras de afinidade como backups proxy.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

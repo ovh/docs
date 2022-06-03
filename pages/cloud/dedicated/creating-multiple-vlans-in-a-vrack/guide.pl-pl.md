@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
 section: vRack
 ---
 
-**Ostatnia aktualizacja z dnia 29-09-2021**
+**Ostatnia aktualizacja z dnia 24-02-2022**
 
 ## Wprowadzenie
 
@@ -23,6 +23,10 @@ section: vRack
 - Połączenie z kontem administratora (Windows)
 - Ukończona [konfiguracja vRack](https://docs.ovh.com/pl/dedicated/konfiguracja-kilku-serwerow-dedykowanych-vrack/){.external}
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 
@@ -30,12 +34,91 @@ section: vRack
 
 > [!primary]
 >
-> W poniższym przykładzie użyliśmy `eth1` jako interfejsu sieciowego, **10** jako tag sieci VLAN i **192.168.0.0/16** jako zakresu adresów IP. 
+> W poniższym przykładzie użyliśmy **eno2** dla Ubuntu i **eth1** dla Debian jako interfejsu sieciowego, **10** jako tag sieci VLAN i **192.168.0.0/16** jako zakresu adresów IP. 
 >
 > Wszystkie polecenia należy dostosować do używanej dystrybucji. W przypadku wątpliwości skorzystaj z oficjalnej dokumentacji dotyczącą Twojej dystrybucji.
 >
 
-W pierwszym kroku należy zainstalować pakiet „VLAN” na Twoim serwerze. W tym celu zastosuj polecenie:
+#### Ubuntu 20 i 21
+
+Ten przykład jest oparty na Ubuntu 21.10 (Impish Indri).
+
+W pierwszym kroku należy zainstalować pakiet "VLAN" na Twoim serwerze. W tym celu zastosuj polecenie:
+
+```sh
+sudo apt-get install vlan
+```
+
+Załaduj moduł jądra(kernel) 8021q:
+
+```sh
+sudo su -c 'echo "8021q" >> /etc/modules'
+```
+
+Utwórz lub edytuj ten plik konfiguracyjny, aby zapobiec automatycznemu wprowadzaniu zmian w konfiguracji sieci:
+
+```sh
+sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+```
+
+I dodaj ten wiersz:
+
+```sh
+network: {config: disabled}
+```
+
+Pobierz nazwę interfejsu sieciowego i jego adres MAC:
+
+```sh
+ip a
+```
+
+Tutaj interfejs, który chcemy skonfigurować jest `eno2` z adresem MAC: ` d0:50:99:d6:6b:14.
+
+![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+
+Dodaj konfigurację sieci dla tego interfejsu sieciowego i deklarację sieci VLAN w następującym pliku:
+
+```sh
+sudo nano /etc/netplan/50-cloud-init.yaml
+```
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        eno2:
+            match:
+                macaddress: d0:50:99:d6:6b:14
+        eno1:
+            ...
+            ...
+    vlans:
+        vlan10:
+            id: 10                      # VLAN ID    
+            link: eno2                  # Interface name
+            addresses:
+            - 192.168.0.14/16
+```
+
+Zapisz i zamknij plik, a następnie uruchom następujące polecenia:
+
+```sh
+sudo netplan try
+sudo netplan apply
+```
+
+Aby potwierdzić konfigurację, należy użyć następującego polecenia:
+
+```sh
+ip a
+```
+
+![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+
+#### Debian
+
+W pierwszym kroku należy zainstalować pakiet “VLAN” na Twoim serwerze. W tym celu zastosuj polecenie:
 
 ```sh
 sudo apt-get install vlan
@@ -69,7 +152,7 @@ broadcast 192.168.255.255
 
 ### Windows
 
-Połącz się z serwerem przez zdalny pulpit i otwórz aplikację „Server Manager”. Wybierz następnie `Local Server`{.action}, po czym kliknij link `Disabled`{.action} obok **NIC Teaming**:
+Połącz się z serwerem przez zdalny pulpit i otwórz aplikację “Server Manager”. Wybierz następnie `Local Server`{.action}, po czym kliknij link `Disabled`{.action} obok **NIC Teaming**:
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
@@ -105,7 +188,7 @@ Kliknij dwa razy `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-W kolejnym kroku kliknij `Use the following IP address`{.action}. IP address: wprowadź adres IP z Twojego zakresu adresów prywatnych. **Subnet mask**, wprowadź „255.255.0.0”.
+W kolejnym kroku kliknij `Use the following IP address`{.action}. IP address: wprowadź adres IP z Twojego zakresu adresów prywatnych. **Subnet mask**, wprowadź “255.255.0.0”.
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 

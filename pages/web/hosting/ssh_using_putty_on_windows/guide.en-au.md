@@ -33,7 +33,7 @@ You can find this information in your control panel. Go to the FTP section or fo
 
 
 
-![putty](images/img_3094.jpg){.thumbnail}
+![putty](images/3094.png){.thumbnail}
 
 
 ## Log on

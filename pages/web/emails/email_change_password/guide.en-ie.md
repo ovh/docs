@@ -16,7 +16,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [web hosting plans](https://www.ovh.ie/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, or ordered separately as a standalone solution
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Web Cloud`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.ie/mail/){.external}
 
 > [!primary]
@@ -28,14 +28,14 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 Depending on the date your service was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the MX Plan solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action}, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box.|
-|Continue to [MX Plan legacy version](./#mx-plan-legacy-version).|Continue to [MX Plan new version](./#mx-plan-new-version).|
+|Continue to [MX Plan legacy version](#mx-legacy).|Continue to [MX Plan new version](#mx-new).|
 
-### MX Plan new version
+### MX Plan new version <a name="mx-new"></a>
 
 If you are using the new version of the MX Plan solution, this is what you should see. If not, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions).  
 
@@ -87,7 +87,7 @@ Once you have changed your password, you can access your email address. There ar
 
 - **Using compatible email software:** you will need to enter the new password on all of the devices your email address is linked to. To do this, a window may appear automatically, prompting you to enter your password. Otherwise, you can [refer to our configuration guides](../) or contact the publisher of the software or application you are using, as the process may be specific to the tool.
 
-### MX Plan legacy version
+### MX Plan legacy version <a name="mx-legacy"></a>
 
 If you are using the legacy version of the MX Plan solution, this is what you should see. If not, please double-check that you are following the right set of instructions [by referring to the information above](./#instructions). 
 

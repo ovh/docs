@@ -2,7 +2,7 @@
 title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9'
 slug: ola-debian9
 excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Debian 9'
-section: 'Uso avançado'
+section: 'Utilização avançada'
 order: 2
 ---
 
@@ -31,11 +31,11 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas par
 ## Instruções
 
 A configuração private-private disponível no OLA para as nossas NIC não permite aceder ao servidor em SSH. Para aceder ao servidor, é necessário utilizar a ferramenta IPMI.
-<br>Para o fazer, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action} (1).
+<br>Para o fazer, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, selecione o seu servidor em `Servidores dedicados`{.action} e clique no separador `IPMI`{.action} (1).
 
 Em seguida, clique no botão `A partir de applet java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+![remote_kvm](images/remote_kvm2022.png){.thumbnail}
 
 Um programa JNLP será descarregado. Abra o programa para entrar no IPMI. Inicie a sua sessão usando credenciais válidas para o servidor.
 
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

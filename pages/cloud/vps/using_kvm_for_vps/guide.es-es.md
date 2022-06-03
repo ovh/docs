@@ -5,7 +5,11 @@ slug: utilizar_el_kvm_para_los_vps
 section: Primeros pasos
 ---
 
-**Última actualización: 7 de septiembre de 2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 7/09/2020**
 
 ## Objetivo
 
@@ -24,13 +28,13 @@ La consola KVM permite establecer una conexión directa con un VPS sin necesidad
 
 #### Gama VPS actual
 
-Conéctese al área [de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el menú izquierdo del `VPS`{.action}. En esta sección, haga clic en `...`{.action} a la derecha del nombre de su VPS en la zona "Su VPS".
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}. En esta sección, haga clic en `...`{.action} a la derecha del nombre de su VPS en la zona "Su VPS".
 
 ![Abrir KVM](images/kvm-new1.png){.thumbnail}
 
 #### Antigua gama de VPS
 
-Conéctese al área [de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en el menú izquierdo del `VPS`{.action}. En esta sección, haga clic en el acceso rápido titulado `KVM`{.action}.
+Conéctese al [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores Privados Virtuales`{.action}. En esta sección, haga clic en el acceso rápido titulado `KVM`{.action}.
 
 ![Haga clic en el botón KVM](images/kvm-new2.png){.thumbnail}
 
@@ -101,5 +105,5 @@ Si tiene problemas con el KVM, le recomendamos la siguiente llamada a la API:
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 

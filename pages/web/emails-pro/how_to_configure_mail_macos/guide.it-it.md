@@ -1,105 +1,75 @@
 ---
 title: 'Configurare un account Email Pro su Mail di macOS'
 slug: configurare-email-pro-mail-macos
-excerpt: 'Come configurare il tuo account Email Pro su Mail di macOS El Capitan, Sierra e High Sierra'
 section: 'Configurazione di un client di posta'
 order: 4
 ---
 
-**Ultimo aggiornamento: 09/04/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 28/12/2021**
 
 ## Obiettivo
 
-Gli account Email Pro possono essere configurati su client di posta compatibili, per permetterti di utilizzare il tuo account email dall’applicazione che preferisci. 
+Gli account Email Pro possono essere configurati su client di posta compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. L'applicazione Mail su macOS è disponibile gratuitamente su tutti i Mac.
 
-Questa guida ti mostra come configurare il tuo servizio Email Pro su Mail di macOS El Capitan, Sierra e High Sierra.
+**Questa guida ti mostra come configurare il tuo indirizzo Email Pro su Mail di macOS.**
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione; garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio.  Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVH non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione "Per saperne di più" di questa guida.
 > 
 
 ## Prerequisiti
 
-- Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
-- Aver installato l’applicazione Mail sul proprio dispositivo 
-- Disporre delle credenziali associate all’account email da configurare
-
-> [!primary]
->
-> Questa guida è valida per le versioni di macOS El Capitan, Sierra e High Sierra.
->
-
+- Disporre di un indirizzo [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/)
+- Disporre del software Mail installato sul tuo Mac
+- Disporre delle credenziali associate all’indirizzo email da configurare
+ 
 ## Procedura
-
-La configurazione dell’account può essere effettuata in due modi diversi:
-
-- **in pochi click con il nostro tool Apple Devices**: accedi alla pagina [https://autodiscover.mail.ovh.net/AppleDevices/](https://autodiscover.mail.ovh.net/AppleDevices/){.external} e segui gli step di configurazione
-
-- **tramite la configurazione guidata dell’applicazione Mail** disponibile sul tuo dispositivo
-
-Questa guida descrive esclusivamente gli step di configurazione dell’applicazione Mail.
-
-### Step 1: aggiungi il tuo account
 
 > [!primary]
 >
 > Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
 
-Una volta avviata l’applicazione Mail sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi. 
+### Aggiungi l'account
 
-- **Al primo avvio dell’applicazione** si apre una finestra da cui è possibile scegliere l’account da utilizzare con Mail. Seleziona `Altro account Mail...`{.action} e continua
+- **Al primo avvio dell'applicazione**: un assistente di configurazione apparirà direttamente e ti inviterà a scegliere il tipo di account.
 
-- **Se hai già configurato un account**, clicca su `Mail`{.action} in alto nello schermo e poi su `Aggiungi account`{.action}. Seleziona `Altro account Mail...`{.action} e continua
+- **Se è già stato impostato** un account: clicca su `Mail`{.action} in alto nello schermo e poi su `Account`{.action}.
 
-![emailpro](images/configuration-mail-sierra-step1.png){.thumbnail}
+| | |
+|---|---|
+|![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Seleziona `Altro account Mail`{.action} e clicca su `Account Mail`{.action}.|
+|Nella finestra "**Aggiungi account Mail**" inserisci le seguenti informazioni: <br>- il **Nome** del tuo account email <br>- Il tuo **indirizzo email** <br>- La **password** del tuo indirizzo email |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Nella nuova finestra, inserisci le informazioni: <br>- Lascia il tuo **indirizzo email** già inserito <br>- Inserisci il tuo indirizzo email completo nel **nome utente** <br>- Lascia la tua **password** già inserita <br>- Seleziona `POP` o `IMAP`(consigliato) in **Tipo di account**<br>- Inserisci `pro?.mail.ovh.net` nel **server di ricezione** (sostituisci "**?**" con il numero del tuo server)<br>- Inserisci anche `pro?.mail.ovh.net` nel **Server di invio** (sostituisci "**?**" con il numero del tuo server)<br><br>Per completare la configurazione, clicca su `Accedi`{.action}|
 
-Inserisci le informazioni del tuo account: 
+### Utilizza l'indirizzo email
 
-|Informazione|Descrizione|  
-|---|---|  
-|Nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo| 
-|Indirizzo e-mail|Inserisci l’indirizzo email completo| 
-|Password|Digita la password associata all’account|  
+Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! A partire da questo momento puoi inviare e ricevere messaggi.
 
-Clicca sul pulsante `Accedi`{.action}, un messaggio ti inviterà a continuare e poi a inserire maggiori informazioni:
+OVHcloud propone anche un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Internet. disponibile alla pagina <https://www.ovh.it/mail/> accessibile utilizzando le credenziali del tuo account. Se hai bisogno di aiuto per effettuare questa operazione, consulta [il tuo account dall'interfaccia OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_guida_allutilizzo_di_outlook_web_app/).
 
-|Informazione|Descrizione|  
-|---|---|  
-|Tipo account|Seleziona l’opzione IMAP nel menu a tendina| 
-|Server di posta in entrata|Inserisci il server pro**?**.mail.ovh.net| 
-|Server di posta in uscita|Inserisci il server pro**?**.mail.ovh.net|  
+### Recuperare un backup del tuo indirizzo email
 
-Clicca di nuovo sul pulsante `Accedi`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
+Se è necessario effettuare un'operazione che potrebbe comportare la perdita dei dati del tuo account email, ti consigliamo di effettuare un backup preliminare dell'account email in questione. Per effettuare questa operazione consulta il paragrafo "**Esporta**" nella sezione "**Mail su Mac OS**" della nostra guida [Migrare manualmente il tuo indirizzo email](https://docs.ovh.com/it/emails/migrare-i-indirizzi-email-manualmente/#esportare).
 
-![emailpro](images/configuration-mail-sierra-step2.png){.thumbnail}
+### Modifica i parametri esistenti
 
-Per il corretto funzionamento del tuo account assicurati che durante la scelta delle applicazioni la voce `Mail`{.action} sia selezionata, poi clicca su `Fine`{.action}. 
+Se il tuo account email è già configurato e devi accedere alle impostazioni dell'account per modificarle:
 
-Per verificare la corretta configurazione dell’account esegui un test di invio.
+- Clicca su `Mail`{.action} nella barra dei menu in alto nello schermo e poi su `Preferenze`{.action}.
+- Seleziona l'account interessato nella colonna di sinistra e clicca su `Regolamenti del server`{.action}.
 
-Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco i parametri da utilizzare con il nostro servizio Email Pro: 
-
-|Tipo di server|Nome del server|SSL|Porta|
-|---|---|---|---|
-|In entrata|pro**?**.mail.ovh.net|Sì|993|
-|In uscita|pro**?**.mail.ovh.net|Sì|587|
-
-### Step 2: utilizza il tuo account
-
-Una volta configurato l’indirizzo email, non ti resta che utilizzarlo: da questo momento puoi infatti inviare e ricevere messaggi.
-
-OVHcloud propone un’applicazione Web con [funzionalità collaborative](https://www.ovh.it/emails/){.external}, disponibile alla pagina [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external} e accessibile con le credenziali del tuo account. 
+![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
 ## Per saperne di più
-
-[Configurare un account email su Mail di macOS](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_su_mail_di_mac_-_el_capitan/){.external}
-
-[Configurare un account Exchange su Mail di macOS](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-mail-macos/){.external}
-
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+  
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

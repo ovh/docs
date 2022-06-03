@@ -41,15 +41,14 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
 > - strona internetowa odpowiedniego rejestru TLD;
-> - Lista [TLD dostępnych na OVHcloud](https://www.ovh.pl/domeny/cennik/);
+> - Lista [TLD dostępnych na OVHcloud](https://www.ovhcloud.com/pl/domains/tld/);
 > - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
 >
 
 ### Etap 1: wybierz domenę
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action} w kolumnie z lewej strony, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action}, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
 
-![zmiana właściciela](images/SS_2.png){.thumbnail}
 
 ### Etap 2: uruchomienie procedury zmiany właściciela
 

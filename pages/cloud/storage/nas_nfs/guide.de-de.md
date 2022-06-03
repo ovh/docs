@@ -5,25 +5,25 @@ excerpt: 'Hier erfahren Sie, wie Sie einen NAS via NFS-Freigabe mounten.'
 section: NAS
 ---
 
-**Stand 16.07.2019**
+**Letzte Aktualisierung am 21.02.2022**
 
 ## Voraussetzungen
 
 In dieser Anleitung erfahren Sie, wie Sie auf den gängigsten Distributionen einen NFS-Mount durchführen. Um eine NFS-Freigabe zu mounten, benötigen Sie:
 
-- einen OVH NAS
-- eine Maschine im OVH Netzwerk (Dedicated Server, VPS, Instanz, ...)
-- eine NFS-kompatible Distribution
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) **oder** einen [VPS](https://www.ovhcloud.com/de/vps/) **oder** eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) mit einer Windows-Distribution in Ihrem Kunden-Account.
+- Sie verfügen über eine [HA-NAS Lösung](https://www.ovh.de/nas/).
+- eine NFS-kompatible Distribution.
 
 
 ### Linux
 
-Kompatibilität: Debian 6/7/8 & Ubuntu 12/13/14
+Kompatibilität: Debian & Ubuntu 
 
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Linux:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben das Paket „nfs-client“ über folgenden Befehl installiert:
+- Sie haben das Paket “nfs-client” über folgenden Befehl installiert:
 
 
 ```sh
@@ -40,7 +40,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -67,12 +67,10 @@ mount -t nfs -o _netdev,mountproto=tcp 10.16.XXX.YYY:zpool-999888/PartitionName 
 
 ### CentOS
 
-Kompatibilität: CentOS 6
-
-Voraussetzungen zum Mounten einer NFS-Freigabe unter CentOS 6:
+Voraussetzungen zum Mounten einer NFS-Freigabe unter CentOS:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben die Pakete „nfs-utils“ und „rpcbind“ mit folgendem Befehl installiert:
+- Sie haben die Pakete “nfs-utils” und “rpcbind” mit folgendem Befehl installiert:
 
 
 ```sh
@@ -95,7 +93,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -113,7 +111,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 Voraussetzungen zum Mounten einer NFS-Freigabe unter Gentoo:
 
 - Sie sind via SSH auf Ihrem Server eingeloggt.
-- Sie haben das Paket „nfs-utils“ mit folgendem Befehl installiert:
+- Sie haben das Paket “nfs-utils” mit folgendem Befehl installiert:
 
 
 ```sh
@@ -136,7 +134,7 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 |Argument|Beschreibung|
 |---|---|
 |IP_NAS|Name oder IP des NAS|
-|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. „nas-000YY/meinepartition“)|
+|NFS_PATH|Pfad auf dem NFS-Server für die Freigabe (z. B. “nas-000YY/meinepartition”)|
 |MOUNTING_FOLDER|Der Ordner, in dem Sie Ihre NFS-Freigabe auf dem Server mounten werden|
 
 
@@ -148,7 +146,7 @@ mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 > IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 > 
-> Fügen Sie anschließend mit folgendem Befehl den Dienst „nfsmount" zum Start Ihres Servers hinzu:
+> Fügen Sie anschließend mit folgendem Befehl den Dienst “nfsmount" zum Start Ihres Servers hinzu:
 > 
 > ```
 > rc-update add nfsmount default
@@ -218,7 +216,7 @@ Füllen Sie das nun angezeigte Formular aus:
 |Argument|Beschreibung|
 |---|---|
 |Server|Name oder IP des NAS|
-|Folder|Pfad auf dem NFS-Server für die Freigabe (z. B. „/nas-000YY/meinepartition“)|
+|Folder|Pfad auf dem NFS-Server für die Freigabe (z. B. “/nas-000YY/meinepartition”)|
 |Datastore Name|Der von Ihnen gewählte Name für den Datastore|
 
 
@@ -229,3 +227,7 @@ Füllen Sie das nun angezeigte Formular aus:
 >
 > Der NFS-Benutzer ist `root`-Benutzer. Rechteänderungen mit diesem Benutzer können daher Konflikte mit vorhandenen CIFS/SMB-Rechten verursachen.
 > 
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

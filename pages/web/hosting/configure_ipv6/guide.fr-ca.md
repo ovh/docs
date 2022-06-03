@@ -26,8 +26,8 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 ## Prérequis
 
-- Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} dans votre espace client OVHcloud.
-- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -47,7 +47,7 @@ Pour tester si votre site web est compatible avec IPv6, vous pouvez utiliser le 
 
 ### Étape 1 : Récupérer l'adresse IPv6 de votre hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez l'hébergement.
 
 Dans la rubrique `Informations générales`, dans le cadre **IPv6**, copiez l'entrée et passez à l'étape suivante.
 
@@ -60,7 +60,7 @@ Dans la rubrique `Informations générales`, dans le cadre **IPv6**, copiez l'en
 
 Afin que votre navigateur trouve l'adresse IPv6 avec votre nom de domaine, vous devez modifier la zone DNS qui y est associée. Vous pouvez vous appuyer de notre guide [Éditer une zone DNS OVHcloud](../../domains/editer-ma-zone-dns/#etape-2-editer-la-zone-dns-ovh-de-votre-domaine) pour créer une entrée de type **AAAA**.
 
-Depuis `Noms de domaine`{.action} dans la barre de services à gauche, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre nom de domaine. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. Vous devez y insérer l'adresse IPv6 en utilisant le type d'enregistrement **AAAA** et l'IPv6 récupérée précédemment au sein de votre espace client.
+Depuis `Noms de domaine`{.action}, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre nom de domaine. Cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau. Vous devez y insérer l'adresse IPv6 en utilisant le type d'enregistrement **AAAA** et l'IPv6 récupérée précédemment au sein de votre espace client.
 
 ![IPv6](images/ipv6_02.png){.thumbnail}
 

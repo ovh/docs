@@ -28,7 +28,7 @@ Many software applications enable you to connect to your server via SSH. To help
 
 To connect to your server from a Windows PC, you can use any of the following applications:
 
-- [PuTTy](http://www.putty.org/){.external} (Free)
+- [PuTTY](http://www.putty.org/){.external} (Free)
 - [MobaXterm](https://mobaxterm.mobatek.net/) (free version and paid version)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Paid)
 

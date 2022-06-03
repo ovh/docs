@@ -1,71 +1,77 @@
 ---
-title: 'Die Größe einer zusätzlichen Festplatte erweitern'
-excerpt: 'Erfahren Sie, wie Sie die Kapazität einer zusätzlichen Festplatte erhöhen und deren Hauptpartition vergrößern können'
+title: 'Die Größe einer zusätzlichen Disk erweitern'
+excerpt: 'Erfahren Sie hier, wie Sie die Kapazität eines zusätzlichen Volumes vergrößern und die Hauptpartition anpassen'
 slug: ihre_zusatzliche_festplatte_vergroern
-section: 'Storage'
-legacy_guide_number: g1865
+section: Storage
+order: 2
 ---
 
-**Letzte Aktualisierung am 14.11.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 29.03.2022**
 
 ## Ziel
 
-Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Festplatte erreicht haben, können Sie diese trotzdem noch vergrößern.
+Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, können Sie Speicherplatz hinzufügen, indem Sie deren Größe erweitern. 
 
-**In dieser Anleitung erfahren Sie, wie Sie die Größe einer zusätzlichen Festplatte erweitern und deren Hauptpartition vergrößern können.**
+**Diese Anleitung erklärt, wie Sie die Größe einer zusätzlichen Disk erweitern und die Hauptpartition entsprechend erweitern.**
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben eine [zusätzliche Festplatte](https://www.ovhcloud.com/de/public-cloud/block-storage) mit Ihrer Instanz verbunden.
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud)in Ihrem Public Cloud Projekt.
+- Sie haben eine [zusätzliche Disk](../erstellen_zustzliche_festplatte_public_cloud/) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben administrativen Zugang (Root) zu Ihrer Instanz über SSH (nur Linux).
-- Sie haben Administratorzugriff auf Ihre Instanz über RDP (nur Windows).
+- Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 ## In der praktischen Anwendung
 
-### Vorgehensweise im OVHcloud Kundencenter
+In den folgenden Schritten wird vorausgesetzt, dass Sie bereits eine zusätzliche Disk erstellt haben, wie [in unserer Anleitung beschrieben](../erstellen_zustzliche_festplatte_public_cloud/).
 
-Um eine Public Cloud Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, in dem Sie die Größe der zusätzlichen Festplatte bearbeiten möchten.
+### Größe der Disk ändern
 
-![control panel](images/select_project.png){.thumbnail}
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie Ihr `Public Cloud`{.action} Projekt aus. Klicken Sie dann im linken Menü auf `Block Storage`{.action}.
 
-Suchen Sie Ihre _Block Storage_-Festplatte im Abschnitt "Storage" auf der linken Seitenleiste.
+Wenn das Volume mit einer **Windows-Instanz** verbunden ist, klicken Sie auf `...`{.action} rechts neben dem betreffenden Volume und wählen Sie `Instanz trennen`{.action} aus.
 
-![control panel](images/increase-disk-02.png){.thumbnail}
+Klicken Sie auf den Button `...`{.action}. rechts neben dem betreffenden Volume und wählen Sie `Bearbeiten`{.action}.
 
-Klicken Sie anschließend auf `...`{.action} rechts von der Festplatte und danach auf `Bearbeiten`{.action}. Sie werden auf diese Seite weitergeleitet, auf der Sie die Volume-Kapazität ändern können:
+![Dashboard](images/increase-disk-02.png){.thumbnail}
 
-![control panel](images/increase-disk-03.png){.thumbnail}
+Geben Sie im neuen Fenster die gewünschte Größe des Volumes ein und klicken Sie auf `Volume bearbeiten`{.action}.
 
-Sobald der Vorgang abgeschlossen ist, klicken Sie auf die Schaltfläche `Volume bearbeiten`{.action}.
+![Dashboard](images/increase-disk-03.png){.thumbnail}
 
+Vergewissern Sie sich, dass das Volume an Ihre Instanz angehängt ist, bevor Sie fortfahren. Ist das nicht der Fall, klicken Sie auf `...`{.action} in der Zeile des Volumes und wählen Sie `Mit Instanz verbinden`{.action}.
 
-### Vorgehensweise über Linux
+### Partition erweitern (Linux-Instanz)
 
-Entfernen Sie zuerst die Festplatte mithilfe dieses Befehls:
+Stellen Sie eine SSH-Verbindung zu Ihrer Instanz her, um die Partition an die skalierte Disk anzupassen.
 
+Hängen Sie zuerst die Disk mit folgendem Befehl aus:
+
+```bash
+admin@server~$ sudo umount /mnt/disk
 ```
-admin@server-1:~$ sudo umount /mnt/disk
-```
 
-Erstellen Sie dann die Partition neu:
+Die Partition neu erstellen:
 
+```bash
+admin@server:~$ sudo fdisk /dev/vdb
 ```
-admin@server-1:~$ sudo fdisk /dev/vdb
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command
 ```
-
-```
+```console
 Command (m for help): d
 
 Selected partition 1
 Partition 1 has been deleted.
 ```
-
-```
+```console
 Command (m for help): n
 
 Partition type
@@ -79,8 +85,7 @@ Last sector, +sectors or +size{K,M,G,T,P} (2048-146800639, default 146800639):
 
 Created a new partition 1 of type 'Linux' and of size 70 GiB.
 ```
-
-```
+```console
 Command (m for help): w
 
 The partition table has been altered.
@@ -88,10 +93,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Fehlerprüfung und Anpassen der Partitionierung:
+Die Partition überprüfen:
 
-```
-#admin@server-1:~$ sudo e2fsck -f /dev/vdb1
+```bash
+admin@server:~$ sudo e2fsck -f /dev/vdb1
 
 e2fsck 1.42.12 (29-Aug-2014)
 Pass 1: Checking inodes, blocks, and sizes
@@ -102,71 +107,64 @@ Pass 5: Checking group summary information
 /dev/vdb: 12/3276800 files (0.0% non-contiguous), 251700/13107200 blocks
 ```
 
-```
-#admin@server-1:~$ sudo resize2fs /dev/vdb1
+```bash
+admin@server:~$ sudo resize2fs /dev/vdb1
 
 resize2fs 1.42.12 (29-Aug-2014)
 Resizing the filesystem on /dev/vdb to 18350080 (4k) blocks.
 The filesystem on /dev/vdb is now 18350080 (4k) blocks long.
 ```
 
-Zum Schluss mounten und überprüfen Sie die Festplatte:
+Abschließend mounten Sie die Disk und überprüfen Sie sie:
 
-```
-#admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+```bash
+admin@server:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
-```
-#admin@server-1:~$ df -h
+```bash
+admin@server~$ df -h
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
-tmpfs 393M 5.2M 388M 2% /run
+393M 5,2M 388M 2% /run
 tmpfs 982M 0 982M 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 982M 0 982M 0% /sys/fs/cgroup
+982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 69G 52M 66G 1% /mnt/disk
 ```
 
+### Partition erweitern (Windows-Instanz)
 
-### Vorgehensweise über Windows
+Stellen Sie eine RDP-Verbindung (Remote Desktop) zu Ihrer Windows-Instanz her.
 
-Stellen Sie eine RDP-Verbindung zu Ihrer Instanz her. Wenn Sie sich angemeldet haben, öffnen Sie mit einem Rechtsklick auf das Windows-Symbol das Kontextmenü und wählen Sie dann `Datenträgerverwaltung`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen Sie `Disk Management`{.action}.
 
-![windows](images/increase-disk-04.png){.thumbnail}
+![windows](images/resize-win-01.png){.thumbnail}
 
-Im Datenträgerverwaltungstool wird Ihre neue Festplatte wie im Bild zu sehen als unbekanntes Volume mit nicht zugewiesenem Speicherplatz angezeigt.
+Die erweiterte Disk zeigt nun die zusätzliche Kapazität als nicht zugewiesenen Speicherplatz an.
 
-![windows](images/increase-disk-05.png){.thumbnail}
+![windows](images/resize-win-02.png){.thumbnail}
 
-Wenn die Festplatte als "Offline" angezeigt wird, liegt das wahrscheinlich an einer die Instanz betreffenden Richtlinie. In diesem Fall klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie "Online".
+Klicken Sie mit der rechten Maustaste auf das Volume und wählen Sie `Extend Volume`{.action} im Kontextmenü aus.
 
-![windows](images/increase-disk-06.png){.thumbnail}
+![windows](images/resize-win-03.png){.thumbnail}
 
-> [!primary]
->
-In Abhängigkeit von Ihrer Windows-Version müssen Sie möglicherweise Ihre zusätzliche Festplatte initialisieren, bevor Sie sie verwenden können. Um Ihre Festplatte zu initialisieren, klicken Sie sie erneut mit der rechten Maustaste an und wählen Sie diesmal `Datenträgerinitialisierung`{.action}.
->
+Klicken Sie im "Extend Volume Wizard" auf `Next`{.action}, um fortzufahren.
 
-Wenn das Hauptvolume auf Ihrer Festplatte kleiner als die gesamte Festplattenkapazität ist, öffnen Sie mit der rechten Maustaste dessen Kontextmenü und klicken dann auf `Volume erweitern`{.action}.
+Sie können in diesem Schritt den Speicherplatz ändern, wenn Sie weniger als die Gesamtkapazität zur Partition hinzufügen möchten.
 
-![windows](images/increase-disk-07.png){.thumbnail}
+Klicken Sie auf `Next`{.action}.
 
-Der Assistent zum Erweitern des Volumes wird nun angezeigt. Klicken Sie auf`Weiter`{.action}, um den Assistenten zu starten.
+![windows](images/resize-win-04.png){.thumbnail}
 
-![windows](images/increase-disk-08.png){.thumbnail}
+Klicken Sie auf `Finish`{.action}, um den Vorgang abzuschließen.
 
-Erweitern Sie nun das Volume auf die gewünschte Größe und klicken Sie auf `Weiter`{.action}.
+Das skalierte Volume beinhaltet nun den zusätzlichen Speicherplatz.
 
-![windows](images/increase-disk-09.png){.thumbnail}
-
-Klicken Sie auf `Fertig stellen`{.action}, um den Vorgang abzuschließen.
-
-![windows](images/increase-disk-10.png){.thumbnail}
-
+![windows](images/resize-win-05.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-[Eine zusätzliche Festplatte auf einer Instanz erstellen und konfigurieren](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
+[Zusätzliches Volume auf einer Instanz erstellen und konfigurieren](../erstellen_zustzliche_festplatte_public_cloud/)
 
-Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

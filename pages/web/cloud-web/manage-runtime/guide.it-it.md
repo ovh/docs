@@ -5,7 +5,11 @@ excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare a
 section: 'Configurazione dell’hosting'
 ---
 
-**Ultimo aggiornamento: 23/01/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 04/05/2022**
 
 ## Obiettivo
 
@@ -15,14 +19,14 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 
 ## Prerequisiti
 
-- Disporre di un piano di hosting [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml) attivo
+- Disporre di un piano di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/) attivo
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Web Cloud`{.action}
 
 ## Procedura
 
 Per adattarsi al maggior numero di utilizzi possibile, la soluzione di hosting Cloud Web permette di disporre di uno o più motori di esecuzione, ognuno dei quali risponde a esigenze specifiche di ciascun progetto. 
 
-Per prima cosa, **assicurati che il tuo progetto sia tecnicamente compatibile con il tuo hosting Cloud Web**. La lista dei linguaggi compatibili è disponibile all’indirizzo <https://www.ovh.it/hosting-web/cloud-web.xml> 
+Per prima cosa, **assicurati che il tuo progetto sia tecnicamente compatibile con il tuo hosting Cloud Web**. La lista dei linguaggi compatibili è disponibile all’indirizzo <https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/> 
 
 Una volta indicati i motori di esecuzione da utilizzare, segui la procedura descritta in questa guida. 
 
@@ -38,7 +42,7 @@ Visualizzi una tabella con tutti i motori di esecuzione aggiunti alla tua soluzi
 
 La gestione dei motori di esecuzione di un hosting Cloud Web comprende diverse operazioni: 
 
-- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione){.external} (il numero massimo dei motori dipende dal[ servizio attivato](https://www.ovh.it/hosting-web/cloud-web.xml){.external})
+- [aggiungere o modificare un motore di esecuzione](./#21-aggiungere-o-modificare-un-motore-di-esecuzione){.external} (il numero massimo dei motori dipende dal[ servizio attivato](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external})
 - impostare un motore come predefinito
 - eliminare un motore di esecuzione
 
@@ -54,7 +58,7 @@ Per aggiungere o modificare un motore di esecuzione, seleziona l’hosting Cloud
 - **per aggiungere un motore**, clicca su `Azioni`{.action} in alto a sinistra della tabella e seleziona l’opzione `Aggiungi un motore di esecuzione`{.action}.
 - **per modificare un motore**, clicca sul pulsante `...`{.action} in corrispondenza del motore in questione e seleziona `Modifica`{.action}.
 
-![cloudweb](images/cloud-web-runtime-step2.png){.thumbnail}
+
 
 Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettura di questa guida in base al motore scelto:
 
@@ -72,7 +76,7 @@ Nella nuova finestra, inserisci le informazioni richieste e prosegui nella lettu
 
 Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta lo [Step 3: associa il motore di esecuzione a un multisito](./#etape-3-associer-le-moteur-dexecution-a-un-multisite_2){.external}.
 
-![cloudweb](images/cloud-web-runtime-step3.png){.thumbnail}
+
 
 ##### **Node.js**
 
@@ -123,7 +127,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 > Nel nostro esempio, sono stati creati solo i motori PHP e Node.js. È possibile che, nel tuo progetto, tu stia utilizzando Ruby o Python. In questo caso, le operazioni descritte qui di seguito sono
 > applicabili.
 > 
-> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]https://www.ovh.it/hosting-web/cloud-web.xml){.external}
+> L’utilizzo di due motori di esecuzione allo stesso tempo sul tuo hosting Cloud Web dipende dal[piano scelto.]https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/){.external}
 > 
 
 Una volta impostati i motori di esecuzione per il tuo progetto, assicurati che siano correttamente associati ai multisiti: clicca sulla scheda `Multisito`{.action} dell’hosting Cloud Web in questione 

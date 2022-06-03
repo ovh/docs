@@ -6,7 +6,7 @@ section: 'Poziom zaawansowany'
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 25-03-2021**
+**Ostatnia aktualizacja z dnia 07/01/2022**
 
 ## Wprowadzenie
 
@@ -31,11 +31,11 @@ Technologia OVHcloud Link Aggregation (OLA) została przez nas zaprojektowana w 
 ## W praktyce
 
 Ponieważ konfiguracja kart sieciowych w OLA jest prywatna, nie będziesz mógł połączyć się z serwerem za pomocą SSH. W związku z tym do uzyskania dostępu do serwera użyj narzędzia IPMI.
-<br>Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} w menu po lewej stronie, wybierz serwer i kliknij zakładkę `IPMI`{.action} (1).
+<br>Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} wybierz serwer z `Serwery dedykowane`{.action} i kliknij zakładkę `IPMI`{.action} (1).
 
 Teraz kliknij przycisk `Z apletu Java (KVM)`{.action} (2).
 
-![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+![remote_kvm](images/remote_kvm2022.png){.thumbnail}
 
 Zostanie pobrany program JNLP. Otwórz program, aby skorzystać z połączenia IPMI. Zaloguj się, używając aktualnych danych do logowania do serwera.
 
@@ -47,7 +47,7 @@ ip a
 
 > [!primary]
 >
-> Wprowadzenie tego polecenie spowoduje wywołanie wielu „interfejsów”. Jeśli masz problem z ustaleniem, które z nich są Twoimi fizycznymi interfejsami sieciowymi, do pierwszego interfejsu nadal będzie domyślnie przypisany publiczny adres IP serwera.
+> Wprowadzenie tego polecenie spowoduje wywołanie wielu “interfejsów”. Jeśli masz problem z ustaleniem, które z nich są Twoimi fizycznymi interfejsami sieciowymi, do pierwszego interfejsu nadal będzie domyślnie przypisany publiczny adres IP serwera.
 >
 
 Kiedy ustalisz nazwy dwóch interfejsów, powiąż je w systemie operacyjnym. Utwórz plik interfejsu w dowolnym edytorze tekstowym za pomocą następującego polecenia:
@@ -67,7 +67,7 @@ auto bond0
   bond-miimon 100
   bond-downdelay 200
   bond-lacp-rate 1
-  bond-xmit_hash_policy layer3+4
+  bond-xmit_hash_policy layer2+3
 
   up ip -6 addr add fc10:0000:0000:0001::/64 dev bond0
 ```

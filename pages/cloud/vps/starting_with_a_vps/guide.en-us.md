@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 16th March 2021**
+**Last updated 25th March 2022**
 
 ## Objective
 
@@ -17,18 +17,18 @@ A Virtual Private Server (VPS) is a virtualised dedicated server. Unlike Web Hos
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 >
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en/vps) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- login credentials received via email after the installation
+- A [Virtual Private Server](https://www.ovhcloud.com/en/vps) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Login credentials received via email after the installation
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution.
 
 - If you have recently ordered a VPS, its reference name will look like this: *vps-XXXXXXX.vps.ovh.net* (where *X* can be a number or a letter).
 
@@ -50,14 +50,14 @@ Using PuTTy for example, simply open the application and enter the servername or
 
 Once you have opened the terminal, type the following command to log in to your VPS with the information provided in the email (username and IPv4 address):
 
-```sh
+```bash
 ssh username@IPv4_of_your_VPS
 ```
 
 Since you are now logged in with elevated privileges (a *sudo* user), you can enter commands to perform administrative tasks. It is recommendable to first change your password:
 
-```sh
-~$ sudo passwd
+```bash
+~$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -65,7 +65,7 @@ passwd: password updated successfully
 
 Note that passwords are not displayed. Next, switch to the "root" user and set your admin password:
 
-```sh
+```bash
 ~$ sudo su -
 ~# passwd
 New password:
@@ -81,7 +81,7 @@ Connecting with the "root" user is disabled by default as a security measure. If
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
-```sh
+```bash
 reboot
 ```
 
@@ -97,8 +97,8 @@ You can carry out any reinstallations directly in your Control Panel. From the `
 
 In the popup window, you will be asked to choose:
 
-- an operating system from the drop-down list
-- [an SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- An operating system from the drop-down list
+- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
 
 
 ![VPSnewreinstallation](images/2020panel_01.png){.thumbnail}
@@ -124,13 +124,13 @@ Using PuTTy for example, simply open the application and enter the servername or
 
 Once you have opened the terminal, type the following command to log in to your VPS, replacing the text after the @ symbol with the information required (IPv4 address or VPS reference name):
 
-```sh
+```bash
 ssh root@IPv4_of_your_VPS
 ```
 
 Or:
 
-```sh
+```bash
 ssh root@your_VPS_reference_name
 ```
 
@@ -138,7 +138,7 @@ ssh root@your_VPS_reference_name
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
-```sh
+```bash
 reboot
 ```
 
@@ -154,15 +154,15 @@ You can carry out any reinstallations directly in your Control Panel. Simply cli
 
 A window will open, and you will be asked to choose:
 
-- your operating system from the drop-down list
-- the language
-- [an SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
+- Your operating system from the drop-down list
+- The language
+- [An SSH Key](../../dedicated/creating-ssh-keys-dedicated/) (optional)
 
 ![Reinstallation menu](images/reinstall_menu.png){.thumbnail}
 
 > [!primary]
 >
-> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Bare Metal Cloud`{.action} section, then click on `Licences`{.action} in the left-hand navigation.
+> Some proprietary operating systems or platforms such as Plesk or cPanel require licences which generate additional fees. Licences can be managed from the OVHcloud Control Panel: go to the `Bare Metal Cloud`{.action} section, then open `Licences`{.action}.
 >
 In order to have a **Windows** operating system running on a VPS, it has to be **selected in the order process**. A VPS with another OS installed cannot be reinstalled with Windows in the described way.
 >
@@ -192,5 +192,7 @@ For a more automated process, OVHcloud also offers the SSL Gateway solution. Ple
 [Introduction to SSH](../../dedicated/ssh-introduction/)
 
 [Securing a VPS](../tips-for-securing-a-vps/)
+
+[Configuring a new Windows Server installation](../windows-first-config/)
 
 Join our community of users on <https://community.ovh.com/en/>.

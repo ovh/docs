@@ -51,14 +51,14 @@ Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contien
 
 Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
 
-- [dallo Spazio Cliente OVH](#viacontrolpanel)
+- [dallo Spazio Cliente OVHcloud](#viacontrolpanel)
 - [via API](#viaapi)
 
-#### Dallo Spazio Cliente OVH <a name="viacontrolpanel"></a>
+#### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action}. Seleziona il tuo servizio cliccando sul `VPS`{.action} nel menu a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}:
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server Privati Virtuali`{.action}.
 
-nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
+Nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Dopo aver recuperato gli indirizzi, continua allo Step 2: [Applica la configuraz
 
 ### Step 2: applicare la configurazione IPv6 <a name="applyipv6"></a>
 
-Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](../../dedicated/introduzione-ssh/){.external}
+Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](../../dedicated/introduzione-ssh/){.external}.
 
 La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella lettura di questa guida in base alle tue esigenze:
 
@@ -120,9 +120,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- **per Debian 8 e inferiore, Ubuntu 16.04 e inferiore**\: utilizza il [metodo basato sul file *interfaces*](#interfaces)
+- **per Debian 11 e inferiore, Ubuntu 16.04 e inferiore**: utilizza il [metodo basato sul file *interfaces*](#interfaces)
 
-- **per Ubuntu 17.04 e versioni successive**\: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
+- **per Ubuntu 17.04 e versioni successive**: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
 In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopra. Verifica il metodo attivo nel tuo caso e, per verificarlo, accedi al tuo sistema.  Se necessario, consulta il sito <https://netplan.io/> per maggiori informazioni.
 
@@ -136,7 +136,7 @@ In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopr
 Il metodo più frequente consigliato è creare un file di configurazione nella directory `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
+nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 In questo modo è possibile separare la configurazione IPv6 e ripristinare facilmente le modifiche in caso di errore.

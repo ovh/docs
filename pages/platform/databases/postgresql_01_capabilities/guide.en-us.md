@@ -2,26 +2,17 @@
 title: PostgreSQL - Capabilities and Limitations
 slug: postgresql/capabilities
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
-section: PostgreSQL
-order: 1
+section: PostgreSQL - Guides
+order: 010
 ---
 
-**Last updated October 05<sup>th</sup>, 2021**
+**Last updated January 26<sup>th</sup>, 2022**
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for PostgreSQL offer.
-We improve our offers continuously. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
-## BETA phase
-
-Please note that the Public Cloud Databases for PostgreSQL offer is currently in BETA Phase, meaning:
-
-- the service is free during BETA phase;
-- the service is not ready for production;
-- there is no official support;
-- there are no contractual agreements (SLA);
-- some features are under development. You can check out our BETA vs General Availability here : <https://github.com/ovh/public-cloud-roadmap/issues/120>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
 
 ## Capabilities and limitations
 
@@ -32,6 +23,7 @@ The Public Cloud Databases offer is available in the following regions:
 - `BHS` (Beauharnois, Canada)
 - `DE` (Frankfurt, Germany)
 - `GRA` (Gravelines, France)
+- `SBG` (Strasbourg, France)
 - `UK` (London, United Kingdom)
 - `WAW` (Warsaw, Poland)
 
@@ -41,9 +33,13 @@ Database nodes have to be in the same region. Multi-AZ is currently not supporte
 
 The Public Cloud Databases offer supports the following PostgreSQL versions:
 
+- PostgreSQL 10
+- PostgreSQL 11
+- PostgreSQL 12
 - PostgreSQL 13
+- PostgreSQL 14
 
-You can folllow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
+You can follow EOL lifecycle for PostgreSQL version on their official page : <https://www.postgresql.org/support/versioning/>
 
 ### PostgreSQL connectors
 
@@ -57,13 +53,13 @@ Three plans are available:
 - *Business*
 - *Enterprise*
 
-Here is an overview of the various plans capabilities:
+Here is an overview of the various plans' capabilities:
 
-| Plan         | Number of nodes by default | Read replicas | Network                        |
-| ------------ | -------------------------- | ------------- | ------------------------------ |
-| *Essential*  | 1                          | No            | Public only                    |
-| *Business*   | 2                          | Planned       | Public (Private vRack planned) |
-| *Enterprise* | 3                          | Planned       | Public (Private vRack planned) |
+| Plan         | Number of nodes by default | Read replicas | Network                |
+| ------------ | -------------------------- | ------------- | ---------------------- |
+| *Essential*  | 1                          | No            | Public only            |
+| *Business*   | 2                          | Planned       | Public & Private vRack |
+| *Enterprise* | 3                          | Planned       | Public & Private vRack |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as private network, read replicas and backup retention.
 
@@ -71,7 +67,7 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default. Adding read replicas is planned.
-- **Enterprise**: the cluster is delivered with 3 nodes by default. Adding read replicas is planned.
+- **Enterprise**: The cluster is delivered with 3 nodes by default. Adding read replicas is planned.
 
 #### License type
 
@@ -84,11 +80,11 @@ Here are the node types you can choose from:
 
 | Name    | Disk (GB) | Cores | Memory (GB) |
 | ------- | --------- | ----- | ----------- |
-| db1-7   | 50        | 2     | 7           |
-| db1-15  | 100       | 4     | 15          |
-| db1-30  | 200       | 8     | 30          |
-| db1-60  | 400       | 16    | 60          |
-| db1-120 | 400       | 32    | 120         |
+| db1-7   | 160       | 2     | 7           |
+| db1-15  | 320       | 4     | 15          |
+| db1-30  | 640       | 8     | 30          |
+| db1-60  | 1280      | 16    | 60          |
+| db1-120 | 2560      | 32    | 120         |
 
 Right now, all nodes of a given cluster should be of the same type and distributed in the same region.
 
@@ -139,8 +135,8 @@ We do not currently support PostgreSQL advanced parameters.
 Logs and metrics are available via the OVHcloud Public Cloud Control Panel.
 As of today, you can't export logs and metrics, nor plug them into a remote tool.
 
-- **Logs retention :** 1000 lines of logs;
-- **Metrics retention :** 1 calendar month.
+- **Logs retention**: 1000 lines of logs
+- **Metrics retention**: 1 calendar month
 
 Please note that if the database instance is deleted, logs and metrics are also automatically deleted.
 

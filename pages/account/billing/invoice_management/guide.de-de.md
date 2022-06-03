@@ -1,125 +1,149 @@
 ---
-title: 'OVHcloud Rechnungen verwalten'
+title: OVHcloud Rechnungen verwalten
 slug: ovh-rechnungen-verwalten
-excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalten.'
+excerpt: Erfahren Sie hier, wie Sie Ihre Rechnungen und deren Bezahlung verwalten
 section: Abrechnung
 ---
 
-**Stand 08.04.2021**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 12.05.2022**
 
-OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rechnungen einsehen, verwalten und begleichen können, ohne dass Ihre Dienste dabei unterbrochen werden.
+## Ziel
 
-**In dieser Anleitung erfahren Sie, wie Sie die verschiedenen Aktionen für Ihre Rechnungen vornehmen können.**
+OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie Ihre Rechnungen einsehen, verwalten und begleichen können.
+
+**Diese Anleitung erklärt, wie Sie Ihre Rechnungen über Ihr OVHcloud Kundencenter verwalten.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einsehen können (Klicken Sie oben rechts neben Ihrem Bildschirm auf Ihren Namen, dann im Kontextmenü auf `Dienstverwaltung`{.action} und dann auf den Tab `Verträge`{.action}).
 >
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
-- Sie sind der Rechnungskontakt für Ihren Dienst (mehr Informationen zu den verschiedenen Kontakten finden Sie in der Anleitung „[Verwaltung der Kontakte Ihrer Dienstleistungen](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}“).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) als [Rechnungskontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/) Ihres Dienstes.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!primary]
-> Update - Januar 2021
 >
-Ihre Rechnung, wenn sie von OVHcloud erstellt wird, wird Ihnen per E-Mail in Form eines klickbaren Links zugesandt, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem OVHcloud Kundencenter authentifizieren. Alle Rechnungen bleiben auch über das Dashboard Ihres OVHcloud Kundencenters verfügbar.
+> Jede Rechnung wird Ihnen per E-Mail in Form eines klickbaren Links gesendet, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) authentifizieren. Alle Rechnungen bleiben auch über das `Dashboard`{.action} Ihres Kundencenters verfügbar.
 >
 
 ### Aufbau Ihrer Rechnung
 
-Sie erhalten von uns eine Rechnung, wenn Sie eine Bestellung bezahlen müssen oder wenn einer Ihrer Dienste automatisch verlängert wurde. Auf der Rechnung werden die bereits bezahlten oder zu bezahlenden Produkte aufgeführt - eventuell zusammen mit den entsprechenden Verlängerungszeiträumen und den Gesamtkosten für die Dienste. Die Rechnungsnummer beginnt immer mit dem Ländercode des jeweiligen OVHcloud Sitzes (zum Beispiel „DE“ für Deutschland, „FR“ für Frankreich usw.).
+Die Rechnung zu Ihrer OVHcloud Dienstleistung wird Ihnen nach einer Bezahlung oder Verlängerung gesendet. Sie listet die Beträge für den Kauf oder die Verlängerung Ihrer Produkte sowie deren Gültigkeitsdauer auf.
 
 ![Details auf einer Rechnung](images/invoice_ovh.png){.thumbnail}
 
 |Nummer|Beschreibung|
 |---|---|
-|1|Die Rechnungsinformationen, wie Rechnungsnummer, Ausstellungsdatum, zugehöriger Bestellschein, Zahlungsmittel und Kundenkennung.|
-|2|Informationen zum Rechnungskontakt.|
-
-Im Folgenden werden Ihnen Details zu den abgerechneten Diensten aufgeführt:
-
-- Abonnement: Beschreibung des Dienstes und des Abrechnungszeitraums;
-- Domain: Referenz des abgerechneten Dienstes;
-- Menge: Anzahl der Einheiten des abgerechneten Dienstes;
-- Stückpreis und Preis ohne MwSt.: Tarif des Dienstes.
-
-Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. MwSt.“ hinzugefügt.
-
-> [!primary]
->
-> Wenn unter verwendetes Zahlungsmittel „Bankeinzug“ angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} hinterlegt wurde.
->
+|1|Rechnungsinformationen: Referenz, Ausstellungsdatum, Bestellschein, Zahlungsart und Kundenkennung|
+|2|Informationen des Rechnungskontakts.|
+|3|Produkt: eine Beschreibung der Dienstleistung und des Abrechnungszeitraums|
+|4|Referenz: die Referenz des abgerechneten Dienstes|
+|5|Menge: die Anzahl der Einheiten des in Rechnung gestellten Dienstes|
+|6|Stückpreis (ohne MwSt) eines Dienstes|
+|7|Gesamtbetrag (einschließlich aller Steuern) der Rechnung|
 
 ### Der Abrechnungsbereich in Ihrem Kundencenter
 
 #### Rechnungen einsehen und verwalten
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet sind, klicken Sie oben rechts auf Ihren Namen, um über `Rechnungen`{.action} den Abrechnungsbereich aufzurufen.
+Um Ihre Rechnungen einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie auf Ihren Namen oben rechts neben Ihrem Bildschirm und dann im neu geöffneten Menü auf `Rechnungen`{.action}.
 
-![Kundencenter](images/hubinvoices.png){.thumbnail}
+![Rechnungsstellung](images/hubinvoices.png){.thumbnail}
 
 Sie gelangen dann auf eine Übersichtsseite, auf der alle Ihre Rechnungen aufgelistet werden:
 
 ![Rechnungsübersicht](images/billing_section.png){.thumbnail}
 
-Hier finden Sie zu jeder Tabellenzeile folgende Informationen:
-
-- die Rechnungsnummer (zum Beispiel: DE12345678);
-- das Ausstellungsdatum;
-- den gesamten Rechnungsbetrag;
-- den noch ausstehenden Betrag;
-- die Rechnungsfrist;
-- `...`{.action}: verschiedene Aktionen.
-
 > [!primary]
 >
-> Wenn der noch ausstehende Rechnungsbetrag rot markiert ist, dann muss diese Rechnung bezahlt werden. Die Rechnungsfrist gibt Ihnen an, ob eine Zahlung sofort fällig ist.
+> Wurde eine Rechnung noch nicht beglichen (`Status` Unbezahlt), wird der geschuldete Betrag in rot in der Spalte `Stand` ausgewiesen.
 >
 
-Wenn „Keine Informationen verfügbar“ angegeben ist, dann bezieht sich die Rechnung nicht auf eine automatische Verlängerung. Klicken Sie auf die drei Punkte`...`{.action}, um weitere Aktionen auszuführen. Die folgenden drei Aktionen werden Ihnen angezeigt:
+In jeder Tabellenzeile finden Sie folgende Informationen:
+
+- Die `Referenz`{.action} der Rechnung
+- Die `Bestellnummer`{.action}
+- Das `Ausstellungsdatum`{.action} der Rechnung
+- Der `Betrag ohne MwSt`{.action}
+- Der `Betrag inkl. MwSt`{.action}
+- Den `Stand`{.action} des Ausgleichs
+- Den `Status`{.action} der Rechnung (`Bezahlt` oder `Unbezahlt`)
+
+Wenn Sie auf einen der Buttons `...`{.action} rechts neben der Tabelle klicken, können Sie auch:
+
+- `Die HTML Version anzeigen`{.action}: Die Rechnung wird in Ihrem Browser in einem neuen Tab angezeigt.
+- `Die PDF-Version anzeigen`{.action}: Es wird automatisch eine PDF-Version Ihrer Rechnung erstellt, die Sie herunterladen können.
 
 ![Aktionen bei Rechnungen](images/actions_choices.png){.thumbnail}
 
-- `HTML anzeigen`{.action}: die Rechnung wird in einem neuen Tab als HTML in Ihrem Browser angezeigt;
-- `PDF anzeigen`{.action}: die Rechnung wird als PDF-Dokument anzeigt, das Sie herunterladen können;
-- `Details zu dieser Rechnung anzeigen`{.action}: Sie können den Verlauf der zu dieser Rechnung bereits getätigten Aktionen überprüfen.
+> [!primary]
+>
+> Wenn eine Ihrer Rechnungen noch aussteht, erscheint ein Button `Mein Konto sofort ausgleichen`{.action}, wenn Sie auf `...`{.action} klicken.
+>
 
+##### **Filter**
 
-Nutzen Sie die vorgegebenen Such- und Filterfunktionen, um leicht den Überblick zu behalten:
+Es stehen Ihnen mehrere Filter zur Verfügung:
 
 ![Filterfunktionen](images/sort_filters.png){.thumbnail}
 
-Um eine bestimmte Rechnung zu finden, können Sie die Rechnungsnummer eingeben oder über die Filter auf eine bzw. mehrere Rechnungen innerhalb eines bestimmten Zeitraums (drei Monate, sechs Monate, ein Jahr oder einen benutzerdefinierten Zeitraum) eingrenzen.
+Um zu einer bestimmten Rechnung zu gelangen, können Sie die Referenz, die Nummer der zugehörigen Bestellung oder das Ausstellungsdatum angeben.
 
-Um eine Übersicht der von Ihnen ausgewählten Rechnungen als Excel-Datei im .csv-Format herunterzuladen, klicken Sie auf den Button `CSV exportieren`{.action}. In dieser Datei werden Ihnen Rechnungsbetrag, Rechnungsnummer und das Ausstellungsdatum dieser Rechnungen aufgelistet.
+##### **Massenaktionen**
 
-#### Rechnung begleichen <a name="rechnung-begleichen"></a>
+Im Menü `Massenaktionen`{.action} können Sie dann die Zusammenfassung Ihrer Rechnungen im Format *.csv* oder *.pdf* * exportieren. In den so erstellten Dateien sind der Betrag, die Bezugsnummer und das Ausstellungsdatum anzugeben.
 
-Um ausstehende Rechnungen zu begleichen, müssen Sie lediglich auf den Button `Rechnung sofort begleichen`{.action} klicken.
+Wenn Sie alle Ihre Rechnungen exportieren möchten, verwenden Sie die Buttons `Alles im CSV-Format exportieren`{.action} oder `Alles im PDF-Format exportieren`{.action}.
+
+![export_all](images/export_all.png){.thumbnail}
+
+Wenn Sie nur einen Teil davon exportieren möchten, setzen Sie in der ersten Spalte der Tabelle ein Häkchen, um die Rechnungen auszuwählen, die Sie interessieren. Zwei neue Aktionen, `Die Auswahl im CSV-Format exportieren`{.action} und `Die Auswahl im PDF-Format exportieren`{.action}, sind dann im Menü `Massenaktionen`{.action} verfügbar.
+
+![export_selection](images/export_selection.png){.thumbnail}
+
+#### Rechnungen bezahlen
+
+Um Ihre ausstehenden Rechnungen zu begleichen, klicken Sie einfach auf das Menü `Massenaktionen`{.action} und dann auf den Button `Mein Konto sofort ausgleichen`{.action}.
 
 ![Bezahlung ausstehender Beträge](images/pay_debt.png){.thumbnail}
 
-Wir erstellen Ihnen für den Zahlungsvorgang dann einen [Bestellschein](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/){.external}. Nach Bezahlung ist Ihr Account beglichen.
+Es wird dann ein [Bestellschein](https://docs.ovh.com/de/billing/bestellungen-verwalten-ovh/#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
 
-### Zahlungsverfolgung
-
-Sie können alle Ihre Zahlungen im Bereich `Abrechnungen` unter `Zahlungsverfolgung`{.action} nachverfolgen. Auf dieser Seite werden Ihnen alle Rechnungen mit den zugehörigen Beträgen und Zahlungsmitteln angezeigt. Die Referenz eines Zahlungsbelegs beginnt immer mit den Buchstaben „PA_DE“.
-
-![Zahlungsverfolgung](images/payment_tracking.png){.thumbnail}
-
-In diesem Bereich können Sie ebenfalls Ihre Zahlungsbelege im .csv-Format exportieren. Nutzen Sie auch hier die Filterfunktionen, um sich bestimmte Zeiträume anzeigen zu lassen.
+#### Die Stornierung einer Rechnung beantragen
 
 > [!primary]
 >
-> Sollten Sie einen Unterschied zwischen gezahltem Betrag und Rechnungsbetrag feststellen, dann hatten Sie auf Ihrem Account ein Guthaben, von dem der Rechnungsbetrag automatisch abgezogen wurde.
+> Um die Kündigung Ihrer Dienstleistung zu beantragen, folgen Sie den Anweisungen in [dieser Anleitung](https://docs.ovh.com/de/billing/how-to-cancel-your-services/).
+>
+
+Wenn Sie eine Rechnung erhalten haben, die Sie nicht für rechtmäßig halten, und Sie eine Erstattung beantragen oder Ihre Rechnung geltend machen möchten, klicken Sie oben rechts auf Ihrem Bildschirm auf Ihren Namen und dann auf `Ein Ticket erstellen`{.action}.
+
+### Zahlungsverfolgung
+
+Die Zahlungshistorie finden Sie in `Meine Rechnungen`{.action} und dann `Zahlungsverfolgung`{.action}. So können Sie jede Rechnung mit der zugehörigen Zahlung verbinden.
+
+![Zahlungsverfolgung](images/payment_tracking.png){.thumbnail}
+
+In diesem Bereich können Sie Ihre Zahlungsbelege auch im *.csv* Format exportieren, indem Sie den Button `Export als CSV-Datei`{.action} (1) klicken. Über den Button `Filtern`{.action} (2) stehen Ihnen auch mehrere Filter zur Verfügung.
+
+> [!primary]
+>
+> Sollten Sie einen Unterschied zwischen gezahltem Betrag und Rechnungsbetrag feststellen, dann hatten Sie auf Ihrem OVHcloud Konto ein Guthaben, von dem der Rechnungsbetrag automatisch abgezogen wurde.
 >
 
 ## Weiterführende Informationen
+
+[Verlängerung Ihrer OVHcloud Dienste verwalten](https://docs.ovh.com/de/billing/anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/)
+
+[Zahlungsarten verwalten](https://docs.ovh.com/de/billing/zahlungsarten-verwalten/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

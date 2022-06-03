@@ -21,7 +21,7 @@ By creating a delegation, you can enable an email account user to manage their o
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.co.uk/web-hosting/), the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml), or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), the [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately as a standalone solution
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
@@ -43,9 +43,9 @@ By creating a delegation, you can enable an email account user to manage their o
 >When you set up a delegation on an email account, it will appear in the relevant [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). However, only the modifications listed in the [Objective](#objective) section of this guide will be possible in this situation.
 >
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action}.
 
-Select the domain name from the `Emails`{.action} section in the services menu on the left-hand side. Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
+Select the domain name from the `Emails`{.action}. Switch to the tab `Emails`{.action} to view the list of email accounts in your MX Plan solution.
 
 ![delegation](images/mxplan-delegation-01.png){.thumbnail}
 

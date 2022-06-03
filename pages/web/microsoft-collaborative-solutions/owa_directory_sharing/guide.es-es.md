@@ -18,13 +18,13 @@ Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La 
 
 > [!primary]
 >
-> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de [Email Pro](https://www.ovh.es/emails/email-pro/).
+> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/).
 >
 
 
 ## Requisitos
 
-- Tener una [solución de Exchange en OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya configurada.
+- Tener una [solución de Exchange en OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) ya configurada.
 - Tener acceso a la cuenta de Exchange (dirección de correo electrónico y contraseña).
 
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment ajouter des adresses IP fail-over à votre configur
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 14 avril 2021**
+**Dernière mise à jour le 30/11/2021**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 >
 > OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://marketplace.ovhcloud.com/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 ## Prérequis
@@ -44,7 +44,7 @@ En ce qui concerne les différentes versions de distributions, veuillez noter qu
 |NETWORK_INTERFACE|Nom de l'interface réseau|*eth0*, *ens3*|
 |ID|ID de l'alias IP, commençant par *0* (en fonction du nombre d'adresses IP supplémentaires à configurer)|*0*, *1*|
 
-### Debian 10
+### Debian 10/11
 
 #### Etape 1 : désactiver la configuration automatique du réseau
 
@@ -127,7 +127,7 @@ Ouvrez le fichier de configuration réseau pour le modifier à l'aide de la comm
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Ne modifiez pas les lignes existantes dans le fichier. Ajoutez votre adresse IP fail-over en suivant l'exemple ci-dessous :
+Ne modifiez pas les lignes existantes dans le fichier de configuration. Ajoutez votre adresse IP fail-over en ajoutant un deuxième bloc de configuration pour l'interface publique, comme dans l'exemple ci-dessous :
 
 ```yaml
 network:
@@ -137,9 +137,15 @@ network:
             dhcp4: true
             match:
                 macaddress: fa:xx:xx:xx:xx:63
+            set-name: NETWORK_INTERFACE            
+        NETWORK_INTERFACE:
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:63
             set-name: NETWORK_INTERFACE
             addresses:
             - IP_FAILOVER/32
+           
 ```
 
 > [!warning]
@@ -291,5 +297,7 @@ Pour tester la connexion, il vous suffit d'envoyer un ping à votre adresse IP f
 ## Aller plus loin
 
 [Activer le mode rescue sur un VPS](../mode-rescue-vps/)
+
+[OVHcloud Marketplace](https://marketplace.ovhcloud.com/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

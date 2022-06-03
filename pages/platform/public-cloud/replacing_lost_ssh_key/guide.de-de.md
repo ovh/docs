@@ -7,7 +7,7 @@ section: Sicherheit
 order: 4
 ---
 
-**Letzte Aktualisierung am 01.04.2020**
+**Letzte Aktualisierung am 10.02.2022**
 
 ## Ziel
 
@@ -26,13 +26,18 @@ Um wieder Zugriff zu erhalten, stellen wir Ihnen den Rescue Modus zur Verfügung
 
 ## In der praktischen Anwendung
 
+> [!primary]
+>
+Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfehlen wir Ihnen die Verwendung der RSA- oder ECDSA-Verschlüsselung. ED25519 wird derzeit nicht unterstützt.
+>
+
 Nachdem Sie die Festplatte Ihrer Instanz im Rescue Modus gemountet haben, können Sie auf sämtliche darauf befindlichen Daten zugreifen.
 
 Ihre SSH-Schlüssel befinden sich in der Datei:
 
 
 ```
-/home/NOM_UTILISATEUR/.ssh/authorized_keys
+/home/USER_NAME/.ssh/authorized_keys
 ```
 
 
@@ -40,7 +45,7 @@ Editieren Sie diese Datei und fügen Sie Ihren neuen SSH-Schlüssel ein:
 
 
 ```
-admin@instance:~$ sudo vim /mnt/home/NOM_UTILISATEUR/.ssh/authorized_keys
+admin@instance:~$ sudo vim /mnt/home/USER_NAME/.ssh/authorized_keys
 
 ssh-rsa 1111111111122222222222333333333333444444444555555555556666666666
 777777777778888888888999999900000000000000000000000000== old@sshkey
@@ -52,7 +57,7 @@ EEFFFFFFFFFFFFFGGGGGGGGGGGGGhhhhhhhhhhhhhhhhhhhhhhhhhh== new@sshkey
 
 Um den SSH-Schlüssel Ihres Standard-Benutzers zu ändern, begeben Sie sich einfach in dessen Home-Verzeichnis.
 
-Für den Benutzer „admin“ befindet sich die Datei zum Beispiel im Verzeichnis:
+Für den Benutzer “admin” befindet sich die Datei zum Beispiel im Verzeichnis:
 
 
 ```
@@ -60,7 +65,7 @@ Für den Benutzer „admin“ befindet sich die Datei zum Beispiel im Verzeichni
 ```
 
 
-Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer „ubuntu“, Sie finden die Datei also im Verzeichnis:
+Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer “ubuntu”, Sie finden die Datei also im Verzeichnis:
 
 
 ```
@@ -68,7 +73,7 @@ Bei einer Ubuntu 15.10 Instanz ist der Standard-Benutzer „ubuntu“, Sie finde
 ```
 
 
-Sie können im Rescue Modus auch das Passwort Ihres Standard-Benutzers mit folgenden Befehlen ändern (in diesem Beispiel für den Benutzer „admin“):
+Sie können im Rescue Modus auch das Passwort Ihres Standard-Benutzers mit folgenden Befehlen ändern (in diesem Beispiel für den Benutzer “admin”):
 
 
 - Mounten Sie das Dateisystem:
@@ -78,7 +83,7 @@ root@instance:/home/admin# mount /dev/vdb1 /mnt/
 root@instance:/home/admin# chroot /mnt/
 ```
 
-- Ändern Sie das Passwort von „admin“:
+- Ändern Sie das Passwort von “admin”:
 
 
 ```
@@ -89,8 +94,6 @@ Nachdem Sie die Änderung durchgeführt und gespeichert haben, können Sie Ihre 
 
 
 ## Weiterführende Informationen
-
-[Umstellung einer Instanz auf den Rescue-Modus](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus)
 
 [Root-Rechte erlangen und Passwort festlegen](https://docs.ovh.com/de/public-cloud/root-rechte_erlangen_und_passwort_festlegen)
 

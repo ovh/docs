@@ -2,10 +2,14 @@
 title: 'Konfigurowanie adresu IPv6 na serwerach dedykowanych'
 slug: siec-ipv6
 excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHcloud'
-section: 'Zarządzanie siecią'
+section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja: 03-08-2020**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja: 04-05-2022**
 
 ## Wprowadzenie
 
@@ -16,29 +20,41 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 > [!warning]
 >OVHcloud oferuje usługi, ale to użytkownik ponosi odpowiedzialność za zarządzanie nimi oraz ich konfigurację. Tym samym odpowiada za zapewnienie ich prawidłowego działania.
 >
->Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
+>Niniejszy przewodnik zawiera informacje pomocne przy wykonywaniu typowych zadań. Jednak w przypadku wystąpienia problemów zalecamy kontakt z dostawcą danych usług lub wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja “Sprawdź również” tego przewodnika.
 >
 
 ## Wymagania początkowe
 
-- [serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/) w ramach konta OVHcloud
-- wszystkie informacje o protokole IPv6 (prefiks, brama itd.)
-- podstawowa wiedza z zakresu [protokołu SSH](http://en.wikipedia.org/wiki/Secure_Shell) i sieci
+- [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud.
+- Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
+- Podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci.
+
+> [!warning]
+> Serwery Kimsufi są dostarczane z jednym blokiem IPv6 (/128). IPv6 zostanie automatycznie skonfigurowane podczas instalacji systemu operacyjnego.
+>
 
 ## W praktyce
 
 Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu systemu operacyjnego Linux, zauważysz gotowy, już skonfigurowany pierwszy (główny) adres IPv6.
 
+Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli chcesz z niego korzystać na wirtualnej maszynie), musisz mieć skonfigurowany adres IP Failover z vMAC. W przeciwnym razie nie będziemy mogli przekierować adresu IPv6 przez routery/switche.
 
 > [!primary]
 >
-> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. 
+> Domyślną bramą Twojego bloku adresów IPv6 (IPv6_GATEWAY) jest zawsze xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Pamiętaj, że w IPv6 możesz usunąć "0" głowy, aby uniknąć błędów podczas określania mostka.
 >
 > Na przykład:
 > 
-> - Adres IPv6 serwera to 2607:5300:60:62ac::/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
-> - Adres IPv6 serwera to 2001:41D0:1:46e::/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
+> - Adres IPv6 serwera to 2607:5300:60:62ac::/64 lub 2607:5300:60:62ac:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2607:5300:60:62FF:FF:FF:FF:FF.
+> - Adres IPv6 serwera to 2001:41D0:1:46e::/64 lub 2001:41D0:0001:046e:0000:0000:0000:0000/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
+> Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/pl/api/first-steps-with-ovh-api/). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+>
+
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/specifications/network
 
 ### Systemy operacyjne Debian i oparte na dystrybucji Debian
 
@@ -55,7 +71,7 @@ Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu s
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-[Więcej informacji zawiera ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+[Więcej informacji zawiera ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
@@ -65,7 +81,7 @@ Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/network/i
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę `eth0`. Interfejs na Twoim serwerze może być inny.
 
-```sh
+```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
     netmask 128
@@ -85,7 +101,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -111,18 +127,18 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Plik konfiguracji sieci Twojego serwera znajduje się w katalogu /etc/sysconfig/network-scripts/ifcfg-eth0. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia.
+Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/sysconfig/network-scripts/ifcfg-eth0`. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę eth0. Interfejs na Twoim serwerze może być inny. Pominęliśmy też konfigurację adresu IPv4 Failover, aby uniknąć pomyłek, ale konfigurację adresu IPv6 przygotowuje się w tym samym pliku.
 
-```sh
+```console
 IPV6INIT=yes
 IPV6_AUTOCONF=no
 IPV6_DEFROUTE=yes
@@ -141,7 +157,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -161,7 +177,7 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
@@ -172,7 +188,7 @@ Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/rc.conf`.
 
 Wprowadź zmiany w pliku, aby wyglądał podobnie do poniższego przykładu. W tym przykładzie interfejs sieciowy ma nazwę em0. Interfejs na Twoim serwerze może być inny.
 
-```sh
+```console
 IPv6_activate_all_interfaces="YES" 
 IPv6_defaultrouter="IPv6_GATEWAY" 
 ifconfig_em0_IPv6="inet6 IPv6_Address prefixlen 64"
@@ -188,7 +204,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 >>> PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -208,17 +224,17 @@ Jeśli nie możesz wysłać polecenia ping na ten adres IPv6, sprawdź konfigura
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu SSH
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Otwórz plik konfiguracji sieci znajdujący się w katalogu /etc/systemd/network. Nasz przykładowy plik ma nazwę 50-default.network.
+Otwórz plik konfiguracji sieci znajdujący się w katalogu `/etc/systemd/network`. Nasz przykładowy plik ma nazwę 50-default.network.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
 Przy użyciu edytora tekstu wprowadź zmiany w pliku, dodając następujące wiersze w odpowiednich sekcjach (zgodnie z poniższym przykładem).
 
-```sh
+```console
 [Network]
 Destination=Gateway_Address
 
@@ -230,7 +246,8 @@ Destination=Gateway_Address
 Scope=link
 ```
 Aby dodać wiele adresów IPv6, dodaj wiele sekcji \[Address].
-```sh
+
+```console
 [Address]
 Address=IPv6_Address_2/64
 
@@ -245,7 +262,7 @@ Zapisz zmiany w pliku, a następnie uruchom ponownie sieć lub restartuj serwer 
 
 Łączność IPv6 można przetestować, wykonując poniższe polecenia:
 
-```
+```bash
 ping6 -c 4 2001:4860:4860::8888
 
 PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
@@ -263,7 +280,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Krok 1: połączenie z serwerem przy użyciu protokołu RDP
 
-Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/)
+Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykowanym/).
 
 
 #### Krok 2: otwarcie konfiguracji sieci dla serwera
@@ -294,9 +311,9 @@ Wprowadź konfigurację protokołu IPv6 (w polach `Adres IPv6` i `Brama domyśln
 
 Jeśli po testach wciąż występują problemy z połączeniem, utwórz zgłoszenie do zespołu pomocy technicznej i poproś o przejrzenie Twoich konfiguracji. Podaj następujące informacje:
 
-- nazwa i wersja systemu operacyjnego używanego na serwerze
-- nazwa pliku konfiguracji sieci i katalog, w którym się on znajduje 
-- treść tego pliku 
+- Nazwa i wersja systemu operacyjnego używanego na serwerze.
+- Nazwa pliku konfiguracji sieci i katalog, w którym się on znajduje. 
+- Treść tego pliku.
 
 
 ## Sprawdź również

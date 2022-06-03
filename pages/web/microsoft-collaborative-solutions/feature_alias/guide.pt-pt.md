@@ -25,7 +25,7 @@ Por exemplo, o seu endereço de e-mail é **john.smith@mydomain.ovh** e o seu al
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Dispor de uma solução de e-mail OVHcloud que deve ter sido previamente configurada (**MX Plan** (Nova versão), proposta entre as nossas [ofertas de alojamento web](https://www.ovh.pt/alojamento-partilhado/) ou encomendada separadamente como solução autónoma, [**Hosted Exchange**](https://www.ovh.pt/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.pt/emails/email-pro/)).
+- Dispor de uma solução de e-mail OVHcloud que deve ter sido previamente configurada (**MX Plan** (Nova versão), proposta entre as nossas [ofertas de alojamento web](https://www.ovhcloud.com/pt/web-hosting/) ou encomendada separadamente como solução autónoma, [**Hosted Exchange**](https://www.ovhcloud.com/pt/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovhcloud.com/pt/emails/email-pro/)).
 
 ## Instruções
 
@@ -33,11 +33,11 @@ Por exemplo, o seu endereço de e-mail é **john.smith@mydomain.ovh** e o seu al
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`. De seguida, selecione o menu em função da sua oferta de e-mail:
 
-- **Exchange**: na `Microsoft`{.action}, na barra à esquerda, depois em `Exchange`{.action} e selecione a plataforma em questão. Clique no separador `Contas de e-mail`{.action}.
+- **Exchange**: na `Microsoft`{.action}, depois em `Exchange`{.action} e selecione a plataforma em questão. Clique no separador `Contas de e-mail`{.action}.
 
-- **E-mail Pro**: no `E-mail Pro`{.action}, na barra à esquerda, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **E-mail Pro**: no `E-mail Pro`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
-- **E-mails** (MXplan): em `E-mails`{.action} na barra à esquerda, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
+- **E-mails** (MXplan): em `E-mails`{.action}, selecione a plataforma em causa e clique no separador `Contas de e-mail`{.action}.
 
 Na tabela que aparece, encontrará uma coluna `Alias`.
 

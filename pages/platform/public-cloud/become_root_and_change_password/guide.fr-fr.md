@@ -3,10 +3,10 @@ title: 'Passer root et définir un mot de passe'
 slug: passer-root-et-definir-un-mot-de-passe
 excerpt: "Apprenez à vous servir de l'utilisateur root et à créer un mot de passe pour celui-ci"
 section: 'Premiers pas'
-order: 5
+order: 08
 ---
 
-**Dernière mise à jour le 06/10/2021**
+**Dernière mise à jour le 24/03/2022**
 
 ## Objectif
 
@@ -20,11 +20,6 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 ## En pratique
-
-> [!primary]
->
-> Ce guide suppose que l'utilisateur par défaut s'appelle « admin ».
->
 
 ### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
@@ -40,12 +35,12 @@ passwd: password updated successfully
 successfully
 ```
 
-### Mettre à jour des dépôts (Debian et Ubuntu)
+### Mettre à jour le système (Debian et Ubuntu)
 
 Pour mettre à jour les *packages* logiciels installés sur votre serveur, entrez la commande suivante :
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Mettre à jour le système (CentOS et Fedora)
@@ -54,12 +49,6 @@ Pour mettre à jour le système d'exploitation de votre serveur, entrez la comma
 
 ```bash
 ~$ sudo yum update
-```
-
-### Modifier le fichier de configuration
-
-```bash
-~$ sudo vi /etc/hosts.allow
 ```
 
 ### Passer à root

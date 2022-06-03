@@ -18,15 +18,15 @@ Les services Hosted Exchange et Private Exchange disposent d'une gestion flexibl
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Avoir souscrit une offre [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}.
+- Avoir souscrit une offre [Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/){.external}.
 
 ## En pratique
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `Microsoft`{.action} puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 ### Hosted Exchange 
 
 #### Commander des comptes supplémentaires
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton `Actions`{.action} en haut à gauche et enfin cliquez sur `Commander des comptes`{.action}
 
@@ -34,8 +34,6 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action} puis cliquez sur le bouton 
 
 
 #### Modifier la périodicité de vos comptes
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 Depuis la fenêtre de gestion de votre plateforme Exchange, cliquez sur le bouton `Actions`{.action} en haut à droite puis sur `Configuration du renouvellement`{.action}. 
 
@@ -52,10 +50,10 @@ Sur cette nouvelle fenêtre, vous pouvez visualiser et modifier la facturation d
 Dans l'exemple ci-dessous, voici les actions à mener pour passer un compte en renouvellement mensuel:
 
 > Sur la première étape, cliquez sur la mention « **Mensuelle** » à droite du compte de votre choix puis cliquez sur `Suivant`{.action} plus bas à gauche.
-
+>
 > Sur la seconde étape, un récapitulatif indique le changement appliqué. Cliquez sur `Envoyer`{.action} plus bas à gauche.
-
-> ![billing_exchange](images/billing-exchange-03.gif){.thumbnail}
+>
+> ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Supprimer des comptes
 
@@ -63,7 +61,6 @@ Pour supprimer un compte de votre plateforme Hosted, il faut d'abord le résilie
 
 Après résiliation, le compte sera suspendu à sa date d'expiration. Si vous souhaitez supprimer l'adresse e-mail hébergée par le compte avant sa date d'expiration, réinitialisez celui-ci.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 Dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre plateforme puis cliquez sur le bouton `...`{.action} devant le compte concerné et enfin cliquez sur `Réinitialiser`{.action}. Après réinitialisation, le compte restera vierge jusqu'à son expiration.
 
@@ -75,16 +72,12 @@ Dirigez-vous dans l'onglet `Comptes e-mail`{.action} de votre plateforme puis cl
 
 #### Commander des comptes supplémentaires
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
-
 Dirigez-vous dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `Actions`{.action} en haut à gauche puis cliquez sur `Ajouter un compte`{.action}. Le compte sera facturé pour le mois en cours.
 
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 
 #### Supprimer des comptes
-
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur `...`{.action} à droite du compte concerné puis cliquez sur `Supprimer`{.action}. Le compte sera immédiatement retiré de la plateforme, il n'y a pas de résiliation à effectuer.
 

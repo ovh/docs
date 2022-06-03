@@ -16,7 +16,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 ## Requirements
 
-- You must have an [Exchange solution](https://www.ovh.com/ca/en/emails/hosted-exchange/){.external}.
+- You must have an [Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external}.
 - You must have one or several domain names.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
 - You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
@@ -27,7 +27,7 @@ To use the accounts included with an Exchange service, you will need to add a do
 
 Once your Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
-To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action} in the left-hand services bar. Then select the name of the Exchange service concerned.
+To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action}. Then select the name of the Exchange service concerned.
 
 > [!primary]
 >
@@ -40,7 +40,7 @@ To add a domain name, click on the `Associated domains`{.action} tab. The table 
 
 > [!warning]
 >
-> In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange solution](https://www.ovh.com/ca/en/emails/hosted-exchange/){.external} for the domain name(s) concerned.
+> In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new [Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} for the domain name(s) concerned.
 >
 
 ![Exchange](images/add_domain_exchange_step1.png){.thumbnail}

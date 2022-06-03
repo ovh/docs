@@ -6,7 +6,7 @@ section: Funzionalità OVHcloud
 order: 01
 ---
 
-**Ultimo aggiornamento: 25/06/2020**
+**Ultimo aggiornamento: 06/04/2022**
 
 ## Obiettivo
 
@@ -16,8 +16,8 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} sul proprio account OVHcloud
+- Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
+- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -56,7 +56,7 @@ Per la creazione del tuo blocco IP è necessario compilare diversi campi.
 
 > [!success]
 >
-> I costi di attivazione di un blocco sono pari a 2€ IVA escl./IP.  Quindi, per un blocco in `/28` che comprende 16 indirizzi IP, avrai un buono d’ordine di 32€ + IVA da pagare prima della consegna.
+> Prima della consegna, pagherai le spese di attivazione del tuo blocco IP.
 >  
 > Le spese per il rinnovo degli indirizzi IP sono gratuite.
 >
@@ -87,7 +87,7 @@ Il risultato sarà di questo tipo:
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
-Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP. 
+Se, in seguito, devi scollegare il blocco IP, puoi utilizzare questa chiamata API per spostare l’IP nel Parking degli IP. 
 
 > [!api]
 >
@@ -104,6 +104,10 @@ Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP
 Il riferimento dell’operazione è « removeIpRipeBlock ».
 
 ![operations manager](images/operations.png){.thumbnail}
+
+Nella `Parking degli IP`{.action} viene mostrato l'IP.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Per saperne di più
 

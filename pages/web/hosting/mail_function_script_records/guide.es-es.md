@@ -15,17 +15,17 @@ Los mensajes de correo automatizados son emails enviados mediante scripts. Se ut
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}.
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!primary]
 >
-> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVH. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+> Esta guía solo es aplicable a los mensajes de correo electrónico enviados desde los scripts de un alojamiento web de OVH. Si quiere gestionar las direcciones de correo electrónico incluidas en su solución MX Plan o en su [plan de hosting de OVH](https://www.ovhcloud.com/es-es/web-hosting/){.external}, vaya a la sección `Correo electrónico`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 >
 
 ## Procedimiento
 
-El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, en la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
+El seguimiento y la gestión de los emails automatizados de un alojamiento web de OVH se realizan desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, haga clic en `Más +`{.action} y seleccione `Scripts de correo electrónico`{.action}.
 
 En la nueva página podrá gestionar los emails automatizados enviados desde el alojamiento web de OVH y realizar un seguimiento de los envíos.
 
@@ -75,4 +75,4 @@ Para realizar cualquiera de las acciones anteriores, haga clic en el botón corr
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

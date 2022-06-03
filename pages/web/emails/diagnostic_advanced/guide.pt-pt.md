@@ -36,11 +36,11 @@ Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ati
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 
-- Para o seu **domínio**, aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} na coluna da esquerda e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
-- Para o seu **Alojamento Web**, dirija-se à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda e selecione o seu alojamento. A data de expiração ou de renovação automática do seu alojamento será indicada no topo da página.
-- Para uma oferta **MXplan**, aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} na coluna da esquerda e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
-- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
-- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para o seu **domínio**, aceda à secção `Web Cloud`{.action}, clique em `Nomes de domínio`{.action} e selecione o seu domínio. Se o domínio expirar, isto ser-lhe-á indicado no topo da página.
+- Para o seu **Alojamento Web**, dirija-se à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e selecione o seu alojamento. A data de expiração ou de renovação automática do seu alojamento será indicada no topo da página.
+- Para uma oferta **MXplan**, aceda à secção `Web Cloud`{.action}, clique em `E-mails`{.action} e selecione o domínio em causa. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 
 ### Não consigo enviar e-mails a partir do meu software de e-mail
 
@@ -62,19 +62,19 @@ A partir do browser do seu computador ou a partir de um smartphone, vá ao ender
 
 ### Não consigo aceder ao webmail
 
-Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-lo. Verifique igualmente se a dupla autenticação está ativada ([apenas Exchange](https://www.ovh.pt/emails/hosted-exchange/)).
+Certifique-se de que tem a palavra-passe correta. Se necessário, pode alterá-lo. Verifique igualmente se a dupla autenticação está ativada ([apenas Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/)).
 
 Como alterar a palavra-passe de um endereço de e-mail:
 
 - Para uma oferta **MXplan**, consulte o nosso guia [Alterar a palavra-passe de um endereço de e-mail MX Plan](https://docs.ovh.com/pt/emails/alterar-palavra-passe-endereco-email/)
 
-- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} na coluna à esquerda e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
+- Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe.
 
-- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action} na coluna à esquerda, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
+- Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](https://docs.ovh.com/pt/microsoft-collaborative-solutions/configurar-2fa-exchange/).
 
 ### Há algum incidente ou manutenção em curso no meu serviço?
 
-Pode verificar as diferentes tarefas em curso no <http://travaux.ovh.net/>.
+Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcloud.com/>.
 
 - Para **MXplan**, verifique na secção `E-mails`
 - Para o **E-mail Pro**, dirija-se à secção `Microsoft`
@@ -121,6 +121,7 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 |502|Encomenda não implementada|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
 |503|O servidor encontrou uma má sequência de encomendas|Isto deve-se geralmente a um problema de autenticação. Certifique-se de que está autenticado no servidor SMTP ao nível da configuração do seu software de mensagens.|
 |504|Parâmetro de comando não implementado|Os parâmetros ou as opções utilizadas aquando do envio do e-mail com o seu servidor SMTP são reconhecidos mas desativados na sua configuração. Contacte o seu fornecedor de serviço|
+|535|Falha durante a autenticação|As informações de utilizador/password foram descarregadas ou o envio está potencialmente bloqueado no seu endereço de e-mail. Verifique o estado do seu endereço de e-mail a partir da Área de Cliente OVHcloud. Uma alteração da password pode desbloquear o envio se a conta tiver sido bloqueada por spam, consulte o nosso guia [O que fazer no caso de uma conta bloqueada por spam?](https://docs.ovh.com/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) para mais informações|
 |550|Ação solicitada não efetuada: caixa de correio indisponível|O servidor de e-mail de destino não pôde verificar o endereço de e-mail utilizado. Isto é causado, na maioria dos casos, por um endereço de e-mail de destino inválido, mas pode também significar que o servidor de e-mail de destino tem problemas com firewall ou com a conectividade. Verificar o endereço de e-mail do destinatário e/ou tente novamente|
 |551|Utilizador não local|Esta é geralmente utilizada como uma estratégia de prevenção contra o spam. Indica-se que o envio de correio não é autorizado, por qualquer razão, a transmitir a sua mensagem para outro servidor que não o seu. Contacte o seu fornecedor de serviço|
 |552|Serviço de mensagens pedido interrompido: espaço de armazenamento ultrapassado|O utilizador que tentou contactar já não tem espaço disponível para receber mensagens. Infelizmente, a única solução é contactar o destinatário através de outro método|

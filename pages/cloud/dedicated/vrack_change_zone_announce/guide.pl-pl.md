@@ -9,7 +9,7 @@ section: vRack
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVH.
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVHcloud.
 
 **Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack.**
 
@@ -19,11 +19,16 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 - [Konfiguracja bloku adresów IP w sieci vRack](../dodawanie-lub-usuwanie-bloku-ip-vrack/)
 - Posiadanie zaawansowanej wiedzy w zakresie sieci
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
+
 ## W praktyce
 
 ### Krok 1: weryfikacja aktualnej strefy rozgłaszania
 
-Rozpocznij operację, sprawdzając aktualną strefę rozgłaszania odpowiedniego bloku IP. W tym celu wykonaj „traceroute” w adresie IP bloku. Przetestuj dowolnie wybrany przez Ciebie adres.
+Rozpocznij operację, sprawdzając aktualną strefę rozgłaszania odpowiedniego bloku IP. W tym celu wykonaj “traceroute” w adresie IP bloku. Przetestuj dowolnie wybrany przez Ciebie adres.
 
 ```sh
 traceroute to 1.2.3.4, 30 hops max, 60 byte packets
@@ -37,18 +42,18 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Roubaix.** Jest to widoczne w ostatnim zrealizowanym skoku: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”.
+Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Roubaix.** Jest to widoczne w ostatnim zrealizowanym skoku: “vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”.
 
 ### Etap 2: zmiana strefy rozgłaszania bloku IP
 
-Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfikatora klienta OVH. Teraz użyj poniższych API, aby zmienić strefę rozgłaszania bloku IP.
+Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfikatora klienta OVHcloud. Teraz użyj poniższych API, aby zmienić strefę rozgłaszania bloku IP.
 
 > [!api]
 >
 > @api {GET} /vrack#GET
 > 
 
-To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji „Cloud”, a następnie „vRack”.
+To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action}, następnie `Network`{.action} i następnie "vRack". 
 
 > [!api]
 >
@@ -81,7 +86,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Gravelines** Jest to widoczne w ostatnim zrealizowanym skoku: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
+Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Gravelines** Jest to widoczne w ostatnim zrealizowanym skoku: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Sprawdź również
 

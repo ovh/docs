@@ -5,7 +5,11 @@ slug: kernel-netboot
 section: Uso avanzado
 ---
 
-**Última actualización: 25/07/2018**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
+**Última actualización: 25/02/2022**
 
 ## Objectivo
 
@@ -13,63 +17,33 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 **Esta guía realizará un arranque de red de su servidor usando un kernel OVHcloud.**
 
-**This guide provides some basic information ...**
-
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovhcloud.com/en/bare-metal/){.external}
-- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
+- Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}
+- Acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
-La instalación de Netboot debe configurarse en el [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
-
-### Arranca tu servidor desde el disco
-
-Para iniciar su servidor en el disco, primero debe conectarse al [panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
-
-Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
-
-![Netboot](images/netboot-01_2020.png){.thumbnail}
-
-En la pestaña `estado del servicio`{.action}, sección `Información general`{.action}, haga clic en editar la opción Boot.
-
-![Netboot](images/netboot-02.png){.thumbnail}
-
-Entonces seleccione `Arrancar en el disco duro`{.action}, clic en `siguiente`{.action}, y finalmente `Acepte`{.action}
-
-![Netboot](images/netboot-03.png){.thumbnail}
-
-Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
-
-![Netboot](images/netboot-04.png){.thumbnail}
-
-### Inicie el servidor desde el modo de Red
+### Inicie el servidor desde el modo network
 
 > [!primary]
 >
->Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
+> Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
 >
 
-Para iniciar el servidor en el kernel de red, primero debe de conectarse al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Para iniciar el servidor en el kernel de red, primero debe de conectarse al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
-Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
+Acceda a la sección `Bare Metal Cloud`{.action} y seleccione su servidor de `Servidores dedicados`{.action}.
 
-En la pestaña `estado del servicio`{.action}, sección `Información general`{.action}, haga clic en editar la opción Boot.
+Busque “Boot” en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
+![Netboot](images/netboot_2022.png){.thumbnail}
 
 Seleccione `Arrancar en modo network`{.action}.
 
-![Netboot](images/netboot-05.png){.thumbnail}
+![Netboot](images/netboot_005.png){.thumbnail}
 
-Deberá de elegir entre el kernel deseado de la siguiente lista:
-
-- **Stable Kernel, vanilla - 64bit.** (Support for CPUFAMILY, SMP, & IPv6)
-- **Stable Kernel, hz1000 - 64bit.** (Support for CPUFAMILY, SMP, & IPv6)
-- **Stable Kernel, with GRSec - 64bit.** (Support for GRSec, CPUFAMILY, SMP, & IPv6)
-- **Latest Kernel, vanilla - 64bit.** (Support for CPUFAMILY, SMP, & IPv6)
-
-A continuación acceda al dispositivo root (partición donde se encuentra la partición root en su servidor)
+Seleccione el kernel disponible e escriba el Root device (partición donde está ubicada la partición raíz de su servidor).
 
 Para determinar el dispositivo root en su servidor, vaya al fichero /etc/fstab en su servidor.
 
@@ -88,28 +62,13 @@ shm /dev/shm tmpfs nodev,nosuid,noexec 0 0
 
 En nuestro ejemplo el dispositivo root sera  /dev/sda1.
 
-Clic en `siguiente`{.action}, y finalmente `Acepte`{.action}
+Clic en `Siguiente`{.action}, y finalmente `Confirmar`{.action}
 
-Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
+Una vez que haya realizado los cambios, haga clic en `...`{.action} a la derecha de “Estado” en la zona titulada **Estado de los servicios**. 
 
-### Iniciar desde el modo de rescate
+Haga clic en `Reiniciar`{.action} para aplicar los cambios.
 
-Para iniciar el servidor en modo rescate, primero debe de conectarse al panel de control de OVHcloud{.external}.
-
-Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
-
-En la pestaña `estado del servicio`{.action}, sección `Información general`{.action}, haga clic en editar la opción Boot.
-
-Seleccione `Arrancar en modo rescue`{.action}, seleccione el modo rescate deseado para su servidor ( por defecto es **rescue64-pro**)
-
-Introduzca su correo electrónico y recibirá la contraseña del modo rescate.
-
-![Netboot](images/netboot-06.png){.thumbnail}
-
-Clic en `Siguiente`{.action}, y finalmente `Acepte`{.action}
-
-Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
-
+![Netboot](images/netboot_004.png){.thumbnail}
 
 ## Más información
 

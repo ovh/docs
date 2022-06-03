@@ -6,7 +6,7 @@ section: 'Tutorials'
 ---
 
 > [!primary]
-> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen” auf dieser Seite.
 >
 
 **Letzte Aktualisierung am 09.07.2021**
@@ -33,6 +33,60 @@ In diesem Tutorial werden die notwendigen Schritte beschrieben, um eine nicht me
 - Sie haben [ein Backup Ihrer Instanz durchgeführt](../ein_backup_einer_instanz_erstellen/)
 
 ## In der praktischen Anwendung
+
+### Debian
+
+Bevor Sie auf die höhere Version Ihres Betriebssystems aktualisieren, überprüfen Sie, dass Sie die neuesten Versionen aller auf der aktuellen Version installierten Pakete aktuell sind:
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+```
+
+> [!alert]
+> Der nächste Schritt ist optional.
+> Sie sollten jedoch sorgfältig prüfen, welche Pakete für das System nicht mehr notwendig sind. Andernfalls kann der folgende Befehl das System beschädigen. 
+>
+
+```bash
+$ sudo apt-get --purge autoremove
+```
+
+Einige Updates können einen Neustart erfordern. Bevor Sie mit dem Update beginnen, führen Sie einen Reboot aus:
+
+```bash
+$ sudo systemctl reboot
+```
+
+Aktualisieren Sie nach dem Neustart das Verzeichnis `/etc/apt/sources.list`, um die höhere Version anzusteuern (in diesem Beispiel wechseln wir von Buster nach Bullseye):
+
+```bash
+$ sudo cp -v /etc/apt/sources.list /root/
+$ sudo cp -rv /etc/apt/sources.list.d/ /root/
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+```
+
+Nachdem Sie die neueste Version als Ziel festgelegt haben, führen Sie das Upgrade durch und initiieren Sie abschließend einen Neustart:
+
+> [!primary]
+> Sie können während des Prozesses Aufforderungen erhalten, Dienste neu zu starten. Antworten Sie dann mit Ja.
+>
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get full-upgrade
+$ sudo systemctl reboot
+```
+
+Überprüfen Sie, ob das Update erfolgreich war:
+
+```bash
+$ uname -r
+$ lsb_release -a
+```
 
 ### Ubuntu
 

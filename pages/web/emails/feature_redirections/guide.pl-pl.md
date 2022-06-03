@@ -36,13 +36,13 @@ Istnieją dwa rodzaje przekierowań:
 ## Wymagania początkowe
 
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
-- Wykupienie usługi MX Plan. Usługa jest dostępna w ramach oferty [Hosting]({ovh_www}/hosting/){.external}, [bezpłatny Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
+- Wykupienie usługi MX Plan. Usługa jest dostępna w ramach oferty [Hosting](https://www.ovhcloud.com/pl/web-hosting/){.external}, [bezpłatny Hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} lub oferty MX Plan zamówionej oddzielnie.
 
 ## W praktyce
 
-W zależności od daty aktywacji oferty MX Plan lub jeśli [oferta została niedawno przeniesiona]({ovh_www}/mxplan-migration/){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
+W zależności od daty aktywacji oferty MX Plan lub jeśli [oferta została niedawno przeniesiona](https://www.ovhcloud.com/pl/web-hosting/mxplan-migration/){.external}, możliwe, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
 
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji „Web”. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. Kliknij `E-maile`{.action}, po czym wybierz odpowiednią usługę. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
@@ -69,14 +69,14 @@ Uzupełnij zgodnie z trzema poniższymi parametrami:
 |---|---|  
 |Z adresu |Tutaj wpisz adres e-mail, z którego chcesz przekierowywać wiadomości.|  
 |Na adres|Tutaj wpisz docelowy adres e-mail przekierowania. Może to być jeden z Twoich adresów e-mail OVHcloud lub adres zewnętrzny.|
-|Wybierz tryb kopii|Wybierz jedną z opcji: <br> - **Zachowaj kopię e-maila w OVH** (otrzymasz e-mail na swój adres główny oraz na adres przekierowania) <br> - **Nie zachowuj kopii e-maila** (e-mail zostanie przesłany bezpośrednio na adres przekierowania, z pominięciem adresu głównego) <br> *por. [schemat](./#informacje-ogolne){.external} na początku tego przewodnika.*|
+|Wybierz tryb kopii|Wybierz jedną z opcji: <br> - **Zachowaj kopię e-maila w OVHcloud** (otrzymasz e-mail na swój adres główny oraz na adres przekierowania) <br> - **Nie zachowuj kopii e-maila** (e-mail zostanie przesłany bezpośrednio na adres przekierowania, z pominięciem adresu głównego) <br> *por. [schemat](./#informacje-ogolne){.external} na początku tego przewodnika.*|
 
 Następnie kliknij przycisk `Zatwierdź`{.action}, aby potwierdzić dodanie tego adresu przekierowania.
 
 ![emails](images/mxplan-legacy-3.png){.thumbnail}
 
 > [!primary]
-> Jeśli wybrano opcję **Zachowaj kopię e-maila w OVH**, na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail na ten sam adres
+> Jeśli wybrano opcję **Zachowaj kopię e-maila w OVHcloud**, na liście przekierowań automatycznie tworzone jest przekierowanie z adresu e-mail na ten sam adres
 > — w ten sposób tworzona jest kopia lokalna.
 > 
 

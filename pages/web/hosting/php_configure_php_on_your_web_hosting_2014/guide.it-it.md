@@ -12,18 +12,18 @@ legacy_guide_number: g1207
 
 ## Obiettivo
 
-I siti Internet presenti in rete sono di tanti tipi diversi: gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} permettono di ospitare qualsiasi tipologia di sito, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}. Per questo motivo, potrebbe essere necessario modificare la versione di PHP utilizzata dall’hosting Web.
+I siti Internet presenti in rete sono di tanti tipi diversi: gli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare qualsiasi tipologia di sito, purché compatibile con la [configurazione delle nostre infrastrutture](https://webhosting-infos.hosting.ovh.net){.external}. Per questo motivo, potrebbe essere necessario modificare la versione di PHP utilizzata dall’hosting Web.
 
 **Questa guida ti mostra come configurare una nuova versione di PHP sul tuo hosting Web OVH.**
 
 ## Prerequisiti
 
-- Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} (escluso il servizio Cloud Web)
+- Disporre di un piano di [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} (escluso il servizio Cloud Web)
 - In base al metodo utilizzato, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) o disporre delle informazioni di accesso allo spazio di storage 
 
 ## Procedura
 
-PHP è un linguaggio di programmazione in continua evoluzione, disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni appena vengono rilasciate in beta, disponibili alla pagina: <https://www.ovh.it/hosting-web/php.xml> 
+PHP è un linguaggio di programmazione in continua evoluzione, disponibile attualmente in numerose versioni. Le più recenti contengono le patch per i bug esistenti e aggiungono o rimuovono determinate funzionalità. OVH propone le nuove versioni appena vengono rilasciate in beta, disponibili alla pagina: <https://www.ovhcloud.com/it/web-hosting/uc-programming-language/> 
 
 Dal momento che le ultime versioni potrebbero non includere alcune funzionalità, **prima di apportare qualsiasi modifica assicurati che la nuova versione di PHP sia compatibile con il tuo sito Internet**.
 
@@ -46,7 +46,7 @@ Per conoscere la versione PHP in uso sul tuo hosting Web, è possibile utilizzar
 
 |Metodo|Descrizione|
 |---|---|
-|Spazio Cliente OVH|Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo servizio dalla sezione `Hosting`{.action} nel menu a sinistra e assicurati di essere posizionato nella scheda `Informazioni generali`. La versione installata è visibile nel riquadro “Configurazione”, in corrispondenza della voce “Versione PHP”. Se visualizzi un cerchio azzurro, attendi qualche minuto fino al completamento dell’aggiornamento della versione.|
+|Spazio Cliente OVH|Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo servizio dalla sezione `Hosting`{.action} e assicurati di essere posizionato nella scheda `Informazioni generali`. La versione installata è visibile nel riquadro “Configurazione”, in corrispondenza della voce “Versione PHP”. Se visualizzi un cerchio azzurro, attendi qualche minuto fino al completamento dell’aggiornamento della versione.|
 |Script|Crea uno script **.php** che contenga esclusivamente il codice `<?php phpinfo(); ?>`, caricalo sul tuo spazio di storage ed eseguilo accedendo al suo indirizzo URL completo.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
@@ -63,7 +63,7 @@ Una volta verificata la compatibilità del sito Web, è possibile cambiare la ve
 
 - **agire manualmente su un file presente nello spazio di storage**: questa soluzione è tecnica e richiede l’accesso allo spazio di storage in cui modificare il file .ovhconfig. Per utilizzare questa modalità, segui la procedura descritta nella guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
 
-Per gli utenti avanzati, ricordiamo che sugli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} più recenti la modifica della versione PHP non può essere effettuata tramite file .htaccess, in quanto la direttiva che permette di eseguire questa operazione non consente di utilizzare le versioni recenti di PHP sulle nostre infrastrutture. In caso di necessità, per eseguire questa operazione consulta la guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
+Per gli utenti avanzati, ricordiamo che sugli [hosting Web OVH](https://www.ovhcloud.com/it/web-hosting/){.external} più recenti la modifica della versione PHP non può essere effettuata tramite file .htaccess, in quanto la direttiva che permette di eseguire questa operazione non consente di utilizzare le versioni recenti di PHP sulle nostre infrastrutture. In caso di necessità, per eseguire questa operazione consulta la guida [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}.
 
 ## Per saperne di più
 
@@ -71,4 +71,4 @@ Per gli utenti avanzati, ricordiamo che sugli [hosting Web OVH](https://www.ovh.
 
 [Configurare il file .ovhconfig di un hosting Web](https://docs.ovh.com/it/hosting/configurare-file-ovhconfig/){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -23,12 +23,16 @@ L'alias IP (o IP aliasing) è un tipo di configurazione del tuo server dedicato 
 - Disporre di uno o più [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}
 - Essere connesso al server in SSH (accesso root)
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
 
 ## Procedura
 
 Di seguito le procedure di configurazione per le principali distribuzioni.
 
-### Debian 10
+### Debian 10/11
 
 #### Step 1: crea il file sorgente
 
@@ -573,6 +577,6 @@ svcadm restart svc:/network/physical:default
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/]( https://www.ovh.it/community/).
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
 
 

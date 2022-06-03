@@ -33,7 +33,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 
 > [!primary]
 >
-> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour générer un nouveau lien. 
+> Si le lien a déjà expiré, connectez-vous en SSH au serveur à l'aide de l'utilisateur CentOS et exécutez la commande « sudo whmlogin » pour générer un nouveau lien. 
 >
 
 <ol start="3">
@@ -49,7 +49,7 @@ Aucune autre étape n'est nécessaire pour terminer la première configuration d
 > [!faq]
 >
 > Puis-je utiliser mes propres serveurs DNS ?
->> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide.](../../domains/glue-registry/#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
+>> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez « ns1.mydomain.com » et « ns2.mydomain.com », vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide](../../domains/glue-registry/#etape-1-ajouter-les-enregistrements-glue). Notez que la création peut prendre 24 heures.
 > Pourquoi définir le mot de passe root?
 >> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
 > Où est ma licence pour cPanel?
@@ -67,8 +67,6 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
     b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.  
     c) Des informations sur la licence.*  
     d) De lire et accepter les contrats de licence utilisateur.  
-
-No further steps are necessary to complete the first configuration of this application.
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -113,15 +111,14 @@ Cette section s'applique uniquement aux installations de WordPress, Drupal, Joom
 
 1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
 
-     personaldomain.ovh <br>
-     www.personaldomain.ovh <br>  
+   - personaldomain.ovh <br>
+   - www.personaldomain.ovh <br>  
 
-Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide.](../../domains/editer-ma-zone-dns/).
+Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide](../../domains/editer-ma-zone-dns/).
 <br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
 
 <ol start="2">
-  <li>Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.</li>
-
+  <li>Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec <a href="https://mxtoolbox.com/DnsLookup.aspx">mxtoolbox</a>. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.</li>
   <li>Connectez-vous en SSH sur votre serveur avec l'utilisateur CentOS et exécutez les commandes suivantes pour installer Certbot :</li>
 </ol>
 

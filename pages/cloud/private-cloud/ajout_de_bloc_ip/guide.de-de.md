@@ -6,7 +6,7 @@ legacy_guide_number: '7766457'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 21.09.2020**
+**Letzte Aktualisierung am 06.04.2022**
 
 ## Ziel
 
@@ -16,8 +16,8 @@ IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugängl
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
-- Sie verfügen über eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) in Ihrem OVHcloud Account.
+- Sie sind Administrator-Kontakt für die Infrastruktur [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/), um Login-Daten zu erhalten.
+- Sie haben eine aktive Benutzerkennung (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## In der praktischen Anwendung
 
@@ -56,7 +56,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 
 > [!success]
 >
-> Die Aktivierungsgebühren eines Blocks betragen 2,34 € inkl. MwSt./IP. Für einen Block der Größe `/28` mit 16 IPs bedeutet das, dass vor der Lieferung ein Bestellschein über 37,44 € inkl. MwSt. zu begleichen ist.
+> Sie müssen die Aktivierungsgebühr für Ihren IP-Block vor der Lieferung bezahlen.
 >  
 > Die Verlängerung der IPs ist kostenlos.
 >
@@ -89,7 +89,7 @@ Das Ergebnis wird wie folgt angezeigt:
 
 ![Feld nexthop](images/api-result.png){.thumbnail}
 
-Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu verschieben:
+Wenn Sie anschließend den IP-Block abtrennen müssen, können Sie diesen API-Aufruf verwenden, um die IP in den IP-Parkplatz zu verschieben:
 
 > [!api]
 >
@@ -106,6 +106,10 @@ Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](http
 Die Referenz der Operation lautet „removeIpRipeBlock“.
 
 ![Operationen Kundencenter](images/operations.png){.thumbnail}
+
+Die IP wird dann im `Ip-Parkplatz`{.action} angezeigt.
+
+![IP parking](images/ip-parking.png){.thumbnail}
 
 ## Weiterführende Informationen
 

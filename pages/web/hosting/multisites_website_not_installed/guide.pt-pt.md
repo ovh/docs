@@ -27,7 +27,7 @@ order: 4
 
 ## Requisitos
 
-- Dispor de uma [oferta de alojamento partilhado](https://www.ovh.pt/alojamento-partilhado/).
+- Dispor de uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter também à disposição a gestão da [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) à qual está associado o seu domínio.
 
@@ -62,7 +62,7 @@ Selecione o alojamento correspondente na lista e clique no separador `Multisite`
 
 #### 2.1 Identificar o endereço IP do seu alojamento OVHcloud
 
-Para encontrar o endereço IP, clique em `Alojamentos` na coluna da esquerda da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o alojamento em causa.
+Para encontrar o endereço IP, clique em `Alojamentos` na  [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o alojamento em causa.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 

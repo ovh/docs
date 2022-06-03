@@ -35,7 +35,7 @@ DNS Server werden in der Regel in Doppelkonfigurationen (primärer und sekundär
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovh.de/domains/).
+- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovhcloud.com/de/domains/).
 - Sie verfügen über die [entsprechenden Berechtigungen](../../customer/verwaltung-der-kontakte/){.external} für die Verwaltung der Domain über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de
 ) mit den [erforderlichen Berechtigungen](../../customer/verwaltung-der-kontakte/) zum Verwalten der Domain
@@ -67,13 +67,13 @@ Stellen Sie sicher, dass Ihre Domain aufgrund der Änderungen nicht unerreichbar
 
 ### Zugang zur Verwaltung der OVHcloud DNS-Server
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Domainnamen`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
 
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit von OVHcloud für Ihre Domain definiert sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 
 > [!primary]
 >
-> Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovh.de/domains/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
+> Wenn Sie die OVHcloud DNS Server verwenden, haben die Server-Nummern keine Verbindung zu den von Ihnen genutzten Diensten. Nur die Option [DNS Anycast](https://www.ovhcloud.com/de/domains/options/dns-anycast/) verwendet bestimmte DNS Server, die Ihnen automatisch zugewiesen werden.
 
 ![DNS-Server](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Mit dem Button `DNS Server zurücksetzen`{.action} können Sie die derzeitigen D
 
 Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
 
-- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die Ihre Domainendung verwaltet, übernommen werden. Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen, indem Sie links im Menü im Bereich `Domains`{.action} auf `Laufende Operationen`{.action} klicken.
+- Die bei OVHcloud vorgenommene Änderung muss von der Registry, die Ihre Domainendung verwaltet, übernommen werden. Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen, indem Sie im Bereich `Domainnnamen`{.action} auf `Laufende Operationen`{.action} klicken.
 - Nachdem die Registry Ihrer Domainendung die Änderung angenommen hat, ist eine Propagationszeit von maximal 48 Stunden erforderlich, bis sie voll wirksam ist.
 
 ## Weiterführende Informationen

@@ -17,8 +17,8 @@ Votre hébergement peut être attaché à un nom de domaine, appelé «domaine p
 
 ## Prérequis
 
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
-- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external}, détaché de tout hébergement web, dans votre espace client OVHcloud.
+- Posséder une [offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} compatible.
+- Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr/domains/){.external}, détaché de tout hébergement web, dans votre espace client OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique

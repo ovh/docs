@@ -6,7 +6,7 @@ section: CMS
 order: 1
 ---
 
-**Last updated 5th May 2020**
+**Last updated 3rd February 2022**
 
 ## Objective
 
@@ -18,7 +18,7 @@ order: 1
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
@@ -29,15 +29,15 @@ order: 1
 
 You can use a CMS (Content Management System) to build your website via an easy-to-use interface. There are several types, each designed to suit certain projects. By using a CMS, you will get a ready-to-use website template that you can customise with a variety of themes, texts, and much more.
 
-OVHcloud offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovh.com/world/web-hosting/website/cms-comparison/) can help you decide which one would best suit your project.
+OVHcloud offers a selection of 4 CMSs as 1-click modules. By using this solution, you will need to choose from this list. If you have already chosen a CMS from the list, you can start following the steps in this tutorial. If have not yet chosen which CMS to use, this [CMS comparison page](https://www.ovhcloud.com/en/web-hosting/uc-cms-comparison/) can help you decide which one would best suit your project.
 
-If you would like to install a CMS that isn’t offered as an OVHcloud 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovh.com/world/web-hosting/).
+If you would like to install a CMS that isn’t offered as an OVHcloud 1-click module, you can install it manually on your web hosting plan, provided that the CMS is compatible with your plan (see our web hosting plans [here](https://www.ovhcloud.com/en/web-hosting/).
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
 ### Step 2: access the 1-click module manager
 
-In the services bar on the left-hand side of your OVHcloud Control Panel, go to the `Web hosting`{.action} section, then click on the web hosting plan that you have just ordered. Then click the `1-click modules`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant Web Hosting plan. Then click the `1-click modules`{.action} tab.
 
 Here, you can look at the 1-click modules you have already installed, manage them and install new ones.
 
@@ -85,7 +85,6 @@ You must now enter the information required to connect to your database. There a
 
 - **If you have already created a database on your web hosting plan:** select it from the list, and enter the information requested.
 - **If you have not yet created a database on your web hosting plan:** follow the instructions for creating one, then try again.
-- **If you have created a database on your Private SQL or CloudDB instance:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The instance and web hosting plan must be hosted in the same datacentre.
 - **If you have created a database on another OVHcloud web hosting plan:** select it from the `Databases outside of your web hosting plan`{.action} list, and enter the information requested. The database and web hosting plan must be hosted in the same datacentre.
 
 Once you have entered this information, click `Next`{.action}.
@@ -140,10 +139,8 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 ## Go further
 
-[Choosing a CMS for building your website](https://www.ovh.com/world/web-hosting/website/cms-comparison/){.external}
+[Choosing a CMS for building your website](https://www.ovhcloud.com/en/web-hosting/uc-cms-comparison/){.external}
 
 [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
-
-See our [Private SQL services](https://www.ovh.com/world/web-hosting/sql-options.xml){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

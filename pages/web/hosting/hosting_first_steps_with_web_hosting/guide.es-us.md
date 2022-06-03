@@ -16,9 +16,9 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
-- Disponer de un [dominio](https://www.ovh.com/world/es/dominios/){.external} con el que poder acceder a su sitio web.
+- Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
@@ -33,7 +33,7 @@ Con los planes de hosting de OVHcloud puede crear un sitio web desde cero o migr
 
 Usted mismo puede crear su sitio web si tiene conocimientos de desarrollo, o puede optar por utilizar un sitio web de tipo llave en mano como un CMS (del inglés *content management system*). La primera solución es más técnica, pero ofrece la posibilidad de crear un proyecto personalizado. La segunda le permite beneficiarse de la estructura de un sitio web lista para usar sin necesidad de conocimientos técnicos.
 
-Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovh.com/world/es/hosting/website/comparativa-cms/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
+Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herramienta para instalar un CMS en un clic, permitiéndole elegir entre WordPress, PrestaShop, Drupal y Joomla. Si no sabe qué CMS elegir, puede consultar nuestra [comparativa de CMS](https://www.ovhcloud.com/es/web-hosting/uc-cms-comparison/){.external}. Si quiere utilizar un CMS que no esté incluido en los módulos en un clic de OVHcloud, puede instalarlo manualmente en su alojamiento.
 
 **Migrar un sitio web existente a OVHcloud**
 
@@ -66,7 +66,7 @@ Para poder instalar el módulo de OVHcloud, debe asegurarse de lo siguiente:
 - El directorio de instalación del módulo debe estar vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío).
 - Ya debe haber creado una base de datos en su alojamiento (abra la pestaña `Bases de datos`{.action} y haga clic en `Crear una base de datos`{.action} para realizar la operación).
 
-Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
+Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
 
 ![Acceso a los módulos en un clic](images/create_a_database.png){.thumbnail} 
 
@@ -86,9 +86,9 @@ No existe un procedimiento universal, ya que cada sitio web es diferente, pero p
 
 ### 3. Crear las direcciones de correo electrónico
 
-Puede omitir este paso si no desea utilizar las direcciones de correo electrónico que se incluyen en el [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}.
+Puede omitir este paso si no desea utilizar las direcciones de correo electrónico que se incluyen en el [plan de hosting](https://www.ovhcloud.com/es/web-hosting/){.external}.
 
-Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
+Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
 
 ![Crear una dirección de correo](images/create_an_email_address.png){.thumbnail} 
 
@@ -110,13 +110,13 @@ Existen varios registros DNS asociados a su alojamiento web de OVHcloud. A conti
 
 **El registro A, para el sitio web**
 
-Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
+Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
 
 ![Modificar el registro A](images/know_the_OVH_A_records.png){.thumbnail} 
 
 **Los registros MX, para el correo electrónico**
 
-Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
+Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
 
 ![Modificar los registros MX](images/know_the_OVH_MX_records.png){.thumbnail} 
 
@@ -128,7 +128,7 @@ Una vez conozca los registros DNS asociados a su alojamiento web de OVHcloud, de
 
 La configuración de su dominio es correcta y puede pasar a la siguiente etapa. No obstante, si ha realizado alguna modificación en la zona DNS de su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, es posible que deba revisarla.
     
-Para acceder a la zona de DNS de su dominio de OVHcloud, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione el nombre de dominio. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario.
+Para acceder a la zona de DNS de su dominio de OVHcloud, haga clic en `Dominios`{.action} y seleccione el nombre de dominio. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario.
 
 **Si el nombre de dominio no utiliza la zona DNS de OVHcloud**
     

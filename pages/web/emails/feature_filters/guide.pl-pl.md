@@ -26,7 +26,7 @@ Na przykład: chcesz, aby wszystkie e-maile zawierające "[SPAM]" w temacie zost
 
 ## Wymagania początkowe
 
-- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](https://www.ovh.pl/hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.external} zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
+- Posiadanie usługi e-mail MX Plan (dostępnej poprzez: [oferta hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny lub oferta MX Plan zamówiona oddzielnie).
 - Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
@@ -43,11 +43,11 @@ Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Web Cloud`.
 
-Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan.
+Kliknij E-maile na pasku usług, po czym wybierz odpowiednią usługę MX Plan.
 
 W zakładce `E-maile`{.action} w Twojej usłudze MXplan znajdziesz listę Twoich kont e-mail. Kolumna `Filtry` jest widoczna w tabeli kont e-mail. Kliknij ikonę lejka.
 
-![emails](images/img_3239.jpg){.thumbnail}
+![emails](images/img_3239.png){.thumbnail}
 
 Teraz przejdź do listy filtrów aktualnie skonfigurowanych dla tego konta e-mail.
 

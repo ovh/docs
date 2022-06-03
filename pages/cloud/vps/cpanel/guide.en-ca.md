@@ -1,11 +1,11 @@
 ---
-title: 'Deploying cPanel on CentOS 7'
+title: 'Deploying cPanel on a VPS'
 slug: cpanel
 excerpt: 'Find out how to instantiate a VPS with the pre-installed cPanel application'
 section: 'Advanced usage'
 ---
 
-**Last updated 2021/09/16**
+**Last updated 14th October 2021**
 
 ## Objective
 
@@ -15,8 +15,8 @@ cPanel is a control panel designed for web hosting. Web hosting tasks are simpli
 
 ## Requirements
 
-- a current [VPS solution](https://www.ovhcloud.com/en-ca/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- A current [VPS solution](https://www.ovhcloud.com/en-ca/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
@@ -44,7 +44,7 @@ Once you received the email with the unique link, please proceed to the link to 
 
 > [!primary]
 >
-> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “whmlogin” command to generate a new link.
+> If the link has expired already, please connect to your VPS via SSH using the CentOS user and execute the “sudo whmlogin” command to generate a new link.
 >
 
 The URL above allows you to log in without credentials (user and password) to your WHM manager.
@@ -67,7 +67,7 @@ Now you should be able to login to WHM and SSH using the root user with the pass
 
 We recommend that you take further additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [setup a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
+Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [set up a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
 
 ## Go further
 

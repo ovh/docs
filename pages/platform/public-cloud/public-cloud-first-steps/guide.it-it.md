@@ -41,25 +41,25 @@ La fase di autenticazione sulle istanze Windows richiede soltanto nome utente e 
 
 Da un computer Mac o da un dispositivo dotato di un sistema operativo Linux, apri innanzitutto l’applicazione da riga di comando (Terminal). Assicurati di avere una cartella “.ssh” nella tua directory $HOME. Se la cartella non esiste, creala:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Esagui il seguente comando per creare una chiave RSA da 4096 bit:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 L’utilizzo dell’opzione “-t” con il comando sopra citato consente di specificare un metodo crittografico, ad esempio:
 
-```sh
-# ssh-keygen -t ed25519 -a 256
+```bash
+$ ssh-keygen -t ed25519 -a 256
 ```
 
 Il comando ti chiederà di salvare la chiave appena creata nel file standard:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Per leggere ed esportare la tua chiave pubblica, utilizza il comando “cat” sul file della chiave e copia il seguente risultato:
 
-```ssh
-# cat .ssh/id_rsa.pub
+```bash
+$ cat .ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >In un Terminal MacOS, è possibile anche usare i comandi “pbcopy” e “pbpaste” per gestire le stringhe di chiavi. Ad esempio, usa il comando per copiare la chiave dal file "id_rsa.pub" negli appunti:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -152,6 +152,8 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 
 ### Step 3: crea un’istanza
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
@@ -237,21 +239,21 @@ In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, 
 
 Digita la passphrase per la tua chiave privata, quando richiesto. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Dato che hai effettuato l’accesso con i privilegi di root (“sudo user”), puoi inserire subito i comandi per eseguire le attività amministrative. Ti consigliamo di cambiare prima la password:
 
-```sh
-$ sudo passwd
+```bash
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
 A questo punto, puoi utilizzare queste credenziali per effettuare il login tramite la `console VNC`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi passa all’utente “root” e imposta una password sicura, dopodiché torna all’utente precedente.
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:

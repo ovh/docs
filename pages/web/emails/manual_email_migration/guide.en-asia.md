@@ -21,7 +21,7 @@ You can [migrate an email address automatically](https://docs.ovh.com/gb/en/micr
 
 ## Requirements
 
-- an [email service](https://www.ovh.com/asia/web-hosting/) with OVHcloud
+- an [email service](https://www.ovhcloud.com/asia/web-hosting/) with OVHcloud
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 

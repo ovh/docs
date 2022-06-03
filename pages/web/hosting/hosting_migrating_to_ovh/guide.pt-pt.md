@@ -66,7 +66,7 @@ A configuração do domínio continua inalterada. O seu site ainda está a usar 
 
 #### 3 - Criar endereços de e-mail na OVH
 
-Após a transferência do site, [registe os endereços de e-mail na OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o outro operador. Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
+Após a transferência do site, [registe os endereços de e-mail na OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o outro operador. Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
 
 A configuração do domínio continua inalterada. O e-mail continua a funcionar no alojamento do outro operador. Como tal, deverá continuar a usar este serviço para enviar e receber e-mail.
 
@@ -129,7 +129,7 @@ A configuração do domínio continua inalterada. Se a resolução DNS ainda est
 
 #### 3 - Criar endereços de e-mail na OVH
 
-**Após a transferência do domínio**, irá receber um e-mail para informar que o serviço de e-mail associado ao seu alojamento acabou de ser instalado. Agora tem de [registar os endereços de e-mail no sistema da OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o serviço do operador anterior. Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
+**Após a transferência do domínio**, irá receber um e-mail para informar que o serviço de e-mail associado ao seu alojamento acabou de ser instalado. Agora tem de [registar os endereços de e-mail no sistema da OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o serviço do operador anterior. Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
 
 A configuração do domínio continua inalterada. Se a resolução DNS continuar ativa, o e-mail continua a funcionar no alojamento do outro operador. Como tal, deverá continuar a usar este serviço para enviar e receber e-mail.
 
