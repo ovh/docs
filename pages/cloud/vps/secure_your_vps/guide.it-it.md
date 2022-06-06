@@ -236,11 +236,11 @@ Fail2ban dispone di numerosi parametri e filtri di personalizzazione e di opzion
 
 Per maggiori informazioni e raccomandazioni su Fail2ban, consulta [la documentazione ufficiale](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} di questo tool.
 
-### Configurazione del Firewall Network OVHcloud 
+### Configurazione del Network Firewall OVHcloud 
 
-Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Firewall Network. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
+Le soluzioni OVHcloud includono la possibilità di attivare un firewall al punto di ingresso dell'infrastruttura, il Network Firewall. La corretta configurazione di questo firewall permette di bloccare le connessioni prima che arrivino sul tuo server.
 
-Per attivare il Firewall Network, consulta la guida [Configurare il Firewall Network](../../dedicated/firewall-network/).
+Per attivare il Network Firewall, consulta la guida [Configurare il Network Firewall](../../dedicated/firewall-network/).
 
 ### Proteggi il tuo sistema e i tuoi dati
 
@@ -257,6 +257,6 @@ Tutte le informazioni sulle soluzioni di backup disponibili per il tuo servizio 
 
 [Iniziare a utilizzare un VPS](../iniziare-a-utilizzare-vps/) 
 
-[Configurare il Firewall Network](../../dedicated/firewall-network/)
+[Configurare il Network Firewall](../../dedicated/firewall-network/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

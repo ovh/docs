@@ -91,6 +91,6 @@ Oltre al monitoring standard, OVHcloud può anche monitorare servizi specifici c
 
 ## Per saperne di più
 
-[Configurare il Firewall Network](../firewall-network/)
+[Configurare il Network Firewall](../firewall-network/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

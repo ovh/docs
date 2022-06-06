@@ -26,7 +26,7 @@ order: 08
 >
 > ### Nos guides réseau & IP pour les serveurs dédiés
 >
-> - [Configurer le Firewall Network](https://docs.ovh.com/fr/dedicated/firewall-network/)
+> - [Configurer le Network Firewall](https://docs.ovh.com/fr/dedicated/firewall-network/)
 > - [Mode Bridge IP](https://docs.ovh.com/fr/dedicated/network-bridging/)
 > - [Configurer IPv6 sur un serveur dédié](https://docs.ovh.com/fr/dedicated/network-ipv6/)
 > - [Déplacer une IP fail-over](https://docs.ovh.com/fr/dedicated/ip-fo-move/)
