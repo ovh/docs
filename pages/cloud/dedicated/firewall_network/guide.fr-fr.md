@@ -23,7 +23,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## Prérequis
 
-- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
+- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]
@@ -122,7 +122,7 @@ Il existe trois modes de mitigation : automatique (détection permanente), perma
 Tout le trafic passe en permanence par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
 Veuillez noter que le Network Firewall ne doit pas être créé/activé pour activer la mitigation permanente sur votre IP.
 
-Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Ensuite, cliquez sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
+Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
 
 **Mitigation forcée** : Ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
 
