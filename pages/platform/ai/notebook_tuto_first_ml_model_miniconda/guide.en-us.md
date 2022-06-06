@@ -5,7 +5,7 @@ excerpt: How to build your first Machine Learning model thanks to Miniconda
 section: AI Notebooks tutorials
 order: 7
 ---
-
+ 
 **Last updated 6th June, 2022.**
 
 ## Objective
