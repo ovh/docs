@@ -56,4 +56,4 @@ Haga clic en el botón `...`{.action} para eliminar un snapshot o `Crear un volu
 
 [Aumentar el tamaño de un disco adicional](../aumentar_el_tamano_de_un_disco_adicional/)
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
