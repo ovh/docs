@@ -65,6 +65,28 @@ If your email account has already been set up and you need to access the account
 
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
 
+### Additional information
+
+For an **IMAP** configuration, the values are:
+
+|Server type|Server name|Encryption method|Port|
+|---|---|---|---|
+|Incoming(IMAP)|ssl0.ovh.net|SSL/TLS|993|
+|Outgoing(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+For **POP** configuration, the values are:
+
+|Server type|Server name|Encryption method|Port|
+|---|---|---|---|
+|Incoming(POP)|ssl0.ovh.net|SSL/TLS|995|
+|Outgoing(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+> [!primary]
+>
+> **Change configuration**
+>
+> When you configure your email address in **IMAP** and you want to change the configuration to **POP**, it is necessary to delete the account from Mac Mail and then recreate it in **POP** to change the configuration.
+
 ## Go further
   
 Join our community of users on <https://community.ovh.com/en/>.

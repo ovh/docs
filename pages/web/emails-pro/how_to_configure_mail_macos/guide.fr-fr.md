@@ -67,6 +67,28 @@ Si votre compte e-mail est déjà paramétré et que vous devez accéder aux par
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
+### Informations complémentaire
+
+Dans le cadre d'une configuration en **IMAP**, les valeurs sont les suivantes:
+
+|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
+|---|---|---|---|
+|Entrant(IMAP)|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|993|
+|Sortant(SMTP)|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|465|
+
+Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
+
+|Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
+|---|---|---|---|
+|Entrant(POP)|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|995|
+|Sortant(SMTP)|pro**?**.mail.ovh.net (la mention **«?»** est à remplacer par le numéro de votre serveur)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Changer sa configuration**
+>
+> Lorsque vous configurez votre adresse e-mail en **IMAP** et que vous souhaitez changer la configuration en **POP**, il est nécessaire de supprimer le compte de Mail de Mac puis de le recréer en **POP** pour changer la confiuguration.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

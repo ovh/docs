@@ -63,6 +63,28 @@ Si su cuenta de correo ya está configurada y debe acceder a los parámetros de 
 
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
 
+### Información adicional
+
+En una configuración de **IMAP**, los valores son los siguientes:
+
+|Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
+|---|---|---|---|
+|Entrada (IMAP)|ssl0.ovh.net|SSL/TLS|993|
+|Saliente(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+En una configuración en **POP**, los valores son los siguientes:
+
+|Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
+|---|---|---|---|
+|Entrant(POP)|ssl0.ovh.net|SSL/TLS|995|
+|Saliente(SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+> [!primary]
+>
+> **Cambiar la configuración**
+>
+> Cuando configure su dirección de correo electrónico en **IMAP** y quiera cambiar la configuración a **POP**, deberá eliminar la cuenta de Mail de Mac y crearla en **POP** para cambiar la configuración.
+
 ## Más información
   
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

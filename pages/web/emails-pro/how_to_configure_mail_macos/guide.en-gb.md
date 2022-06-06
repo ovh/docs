@@ -66,6 +66,28 @@ If your email account has already been set up and you need to access the account
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
+### Additional information
+
+For an **IMAP** configuration, the values are:
+
+|Server type|Server name|Encryption method|Port|
+|---|---|---|---|
+|Incoming(IMAP)|pro**?**.mail.ovh.net (the word **"?"** should be replaced by your server number)|SSL/TLS|993|
+|Outgoing(SMTP)|pro**?**.mail.ovh.net (the word **"?"** should be replaced by your server number)|SSL/TLS|465|
+
+For **POP** configuration, the values are:
+
+|Server type|Server name|Encryption method|Port|
+|---|---|---|---|
+|Incoming(POP)|pro**?**.mail.ovh.net (the word **"?"** should be replaced by your server number)|SSL/TLS|995|
+|Outgoing(SMTP)|pro**?**.mail.ovh.net (the word **"?"** should be replaced by your server number)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Changer sa configuration**
+>
+> When you configure your email address in **IMAP** and you want to change the configuration to **POP**, it is necessary to delete the account from Mac Mail and then recreate it in **POP** to change the configuration.
+
 ## Go further
   
 Join our community of users on <https://community.ovh.com/en/>.

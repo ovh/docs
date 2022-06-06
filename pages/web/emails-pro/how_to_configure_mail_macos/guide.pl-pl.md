@@ -70,6 +70,28 @@ Jeśli Twoje konto e-mail zostało już skonfigurowane i musisz mieć dostęp do
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
+### Dodatkowe informacje
+
+W przypadku konfiguracji **IMAP** wartości są następujące:
+
+|Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
+|---|---|---|---|
+|Wchodzący(IMAP)|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|993|
+|Wychodzący(SMTP)|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|465|
+
+W przypadku konfiguracji **POP** wartości są następujące:
+
+|Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
+|---|---|---|---|
+|Wchodzący(POP)|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|995|
+|Wychodzący(SMTP)|pro**?**.mail.ovh.net (nazwa **"?"** należy zastąpić numerem serwera)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Zmień konfigurację**
+>
+> Jeśli skonfigurujesz Twoje konto e-mail przy użyciu **IMAP** i chcesz zmienić konfigurację na **POP**, usuń konto e-mail Maca i odtworzyć je w **POP**, aby zmienić konfigurację.
+
 ## Sprawdź również
  
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
