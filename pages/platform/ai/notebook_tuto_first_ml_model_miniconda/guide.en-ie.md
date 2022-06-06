@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 7
 ---
 
-**Last updated 27th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
