@@ -6,7 +6,7 @@ section: AI Training tutorials
 order: 03
 ---
 
-**Last updated 16th January, 2021.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -56,13 +56,13 @@ We currently provide the following tutorials for [Tensorflow](https://www.tensor
 
 The aim of this tutorial is to do a **very simple tensor computation** with the `Tensorflow` library and to compare performances of running it over CPU versus GPU.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/basic_gpu_cpu_benchmark.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/basic_gpu_cpu_benchmark.ipynb).
 
 ### Basic computation using multiple GPUs
 
 The aim of this tutorial is to do a **very simple tensor computation** with the `Tensorflow` library and to compare performances of running it over CPU versus GPU.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/tensorflow/tuto/multiple_gpus_computation.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/tensorflow/multiple_gpus_computation.ipynb).
 
 ## Feedback
 

@@ -6,7 +6,7 @@ section: AI Notebooks tutorials
 order: 04
 ---
 
-**Last updated 6th of April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -59,23 +59,21 @@ If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/a
 >
 > For this tutorial, we advise you to use at least **2 GPUs**.
 >
-
 <ol start="7">
-  <li><code>Attach Object Storage containers (the one that contains your dataset) and the GitHub repository that contains all examples for OVHcloud AI Notebooks</code></li>
+  <li><code>Attach Object Storage containers</code></li>
 </ol>
 
 > [!warning]
 >
-> In this tutorial, you need 2 object containers and 1 GitHub repository.
+> In this tutorial, you need 2 object containers.
 >
 
 - the **first object container** contains your dataset (labelled and separated) and your `data.yaml` file.
 - the **second object container** is empty. It is intended to save your model weights (for a future inference for example).
-- the **GitHub repository** you are going to plug in contains all examples for OVHcloud AI Notebooks.
 
 ![image](images/notebook-attach-data.png){.thumbnail}
 
-Once the repository has been cloned, find the YOLOv5 notebook by following this path: `examples` > `notebooks` > `pytorch` > `tuto` > `notebook_object_detection_yolov5.ipynb`.
+Once the repository has been cloned, find the YOLOv5 notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `notebook_object_detection_yolov5.ipynb`.
 
 <ol start="8">
   <li><code>Attach public ssh keys only if you want to</code></li>
@@ -88,7 +86,6 @@ If you want to launch it with the CLI, choose the [volumes](https://docs.ovh.com
 ovhai notebook run pytorch jupyterlab \
 	--name <name> \
 	--gpu <nb-gpus> \
-	--volume https://github.com/ovh/ai-training-examples.git:/workspace/examples:<permission> \
 	--volume <dataset-container>@<region>/:/workspace/data:<permission> \
 	--volume <weights-container>@<region>/:/workspace/models_train:<permission>
 ```
@@ -103,7 +100,7 @@ You should have this overview:
 
 Once your dataset is ready and uploaded, you are able to train the YOLOv5 model of your choice!
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/pytorch/tuto/notebook_object_detection_yolov5.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/notebook_object_detection_yolov5.ipynb).
 
 ### Go further
 
