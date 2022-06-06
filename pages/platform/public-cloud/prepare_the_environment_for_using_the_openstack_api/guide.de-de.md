@@ -6,7 +6,7 @@ legacy_guide_number: 1851
 section: 'OpenStack'
 ---
 
-**Stand 22.12.2021**
+**Letzte Aktualisierung am 22.12.2021**
 
 ## Einleitung
 

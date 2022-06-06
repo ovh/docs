@@ -32,7 +32,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A destra del volume interessato, clicca sui tre puntini `...`{.action}. e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza).
+A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza).
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

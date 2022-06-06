@@ -6,7 +6,7 @@ section: Security
 order: 2
 ---
 
-**Last updated 17th February 2022.**
+**Last updated 6th June 2022.**
 
 <style>
  pre {
@@ -101,7 +101,7 @@ brew install kubeseal
 Then test if the CLI is correctly installed on your computer:
 
 ```console
-kubeseal version
+kubeseal --version
 ```
 
 Output should be like this:

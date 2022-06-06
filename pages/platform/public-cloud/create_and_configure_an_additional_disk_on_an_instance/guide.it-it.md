@@ -178,7 +178,7 @@ Apri `etc/fstab` con un editor di testo:
 ~$ sudo nano /etc/fstab
 ```
 
-Aggiungi la riga qui sotto al file e sostituisci l'UUUID con la tua:
+Aggiungi la riga qui sotto al file e sostituisci l'UUID con la tua:
 
 ```console
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
@@ -310,4 +310,4 @@ Il disco sarà successivamente disponibile come lettore nell'esploratore di file
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

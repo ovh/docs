@@ -1,12 +1,12 @@
 ---
-title: AI Notebooks - Tutorial - Create your first Machine Learning model with AI notebooks
+title: AI Notebooks - Tutorial - Create your first Machine Learning model
 slug: notebooks/tuto-first-ml-model-miniconda
 excerpt: How to build your first Machine Learning model thanks to Miniconda
 section: AI Notebooks tutorials
 order: 7
 ---
 
-**Last updated 27th April, 2022.**
+**Last updated 6th June, 2022.**
 
 ## Objective
 
@@ -90,9 +90,9 @@ You can then reach your notebook’s URL once the notebook is running.
 
 ### Accessing the notebook
 
-Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `miniconda` > `tuto` > ` ai-notebooks-introduction` > `notebook-introduction-linear-regression.ipynb`.
+Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `getting-started` > `miniconda` > ` ai-notebooks-introduction` > `notebook-introduction-linear-regression.ipynb`.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/miniconda/tuto/ai-notebooks-introduction/notebook-introduction-linear-regression.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/miniconda/ai-notebooks-introduction/notebook-introduction-linear-regression.ipynb).
 
 ## Feedback
 

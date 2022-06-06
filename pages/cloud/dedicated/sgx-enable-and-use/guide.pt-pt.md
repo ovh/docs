@@ -1,11 +1,11 @@
 ---
-title: 'Intel SGX num servidor Infraestrutura'
+title: 'Ativar Intel SGX no seu servidor dedicado'
 slug: ativar-e-usar-intel-sgx
-excerpt: 'Ative o SGX no seu servidor Infraestrutura e instale a pilha de software Linux SGX'
+excerpt: 'Ative a opção SGX no seu servidor Infraestrutura ou Advance e instale a pilha de software SGX para Linux'
 section: 'Utilização avançada'
 ---
 
-**Última atualização a 16 de dezembro de 2020**
+**Última atualização: 18/10/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -18,10 +18,19 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 ## Requisitos
 
-- Um [servidor dedicado Infraestrutura](https://www.ovhcloud.com/pt/bare-metal/infra/){.external}, com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/){.external}
+- Um servidor dedicado [Infraestrutura](https://www.ovhcloud.com/pt/bare-metal/infra/){.external} ou [Advance](https://www.ovhcloud.com/pt/bare-metal/advance/), com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/){.external}
 - Acesso administrativo (raiz) ao servidor via SSH
-- Acesso à [API OVH](https://api.ovh.com/console/){.external}
+- Acesso à [API OVHcloud](https://api.ovh.com/console/){.external}
 - Ubuntu 18.04 ou semelhante instalado no servidor
+
+> [!warning]
+>
+> Entre a gama Advance, apenas os servidores abaixo, equipados com um CPU Intel, são compatíveis com a tecnologia Intel SGX:
+>
+> - Advance-1
+> - Advance-2
+> - Advance-6
+> - Advance-APAC
 
 ## Instruções
 
@@ -58,7 +67,7 @@ Consulte este manual [no passo 4](./#passo-4-instalar-a-pilha-de-software-sgx) a
 #### Passo 1 - Aceder à consola da API
 
 Aceda a <https://api.ovh.com/console/> e clique em `Iniciar sessão`{.action} no canto superior direito da página.  
-Na página seguinte, inicie a sessão com as credenciais da sua conta OVH.
+Na página seguinte, inicie a sessão com as credenciais da sua conta OVHcloud.
 
 #### Passo 2 - Ativar o SGX
 
@@ -68,7 +77,7 @@ Obtenha o nome do seu servidor na lista devolvida pela seguinte chamada:
 >
 > @api {GET} /dedicated/server
 
-Verifique se o seu serviço tem a opção SGX, chamando: 
+Verifique se o seu serviço tem a opção SGX, chamando:
 
 > [!api]
 >
@@ -104,14 +113,16 @@ Pode verificar se o estado está agora ativado:
 
 #### Passo 4 - Instalar a pilha de software SGX
 
-Agora iremos instalar o driver Intel e o SDK para poder desenvolver e executar aplicações SGX.  
+Agora iremos instalar o driver Intel e o SDK para poder desenvolver e executar aplicações SGX.
 
 Primeiro, vamos instalar algumas dependências:
+
 ```bash
 sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
 ```
 
 Em seguida, descarregue, construa e instale a pilha de software SGX:
+
 ```bash
 BASE_DIR=/opt/intel
 [[ -d $BASE_DIR ]] || sudo mkdir -p $BASE_DIR && sudo chown `whoami` $BASE_DIR
@@ -131,6 +142,7 @@ sudo dpkg -i $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-urts_2.6.100.51363-b
 ```
 
 Descarregue e instale o driver:
+
 ```bash
 wget https://download.01.org/intel-sgx/linux-2.6/ubuntu18.04-server/sgx_linux_x64_driver_2.5.0_2605efa.bin
 chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
@@ -142,6 +154,7 @@ sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 #### Passo 6 - Utilizar uma aplicação exemplo para validar a instalação
 
 Construa uma das aplicações exemplo fornecidas:
+
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
@@ -150,6 +163,7 @@ make SGX_DEBUG=0 SGX_MODE=HW SGX_PRERELEASE=1
 ```
 
 Execute-a:
+
 ```bash
 ovh@nsXXXX:/opt/intel/sgxsdk/SampleCode/LocalAttestation$ ./app 
 
@@ -193,7 +207,7 @@ Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
 Hit a key....
 ```
 
-## Vá mais longe
+## Quer saber mais?
 
 Seguem-se alguns recursos úteis que lhe permitem ir mais longe (desenvolver a sua própria aplicação, registar-se para atestado remoto...):
 

@@ -20,7 +20,7 @@ Wenn Sie die maximale Kapazität Ihrer zusätzlichen Disk erreicht haben, könne
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud)in Ihrem Public Cloud Projekt.
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) in Ihrem Public Cloud Projekt.
 - Sie haben eine [zusätzliche Disk](../erstellen_zustzliche_festplatte_public_cloud/) in Ihrem Projekt erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
@@ -35,7 +35,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Wenn das Volume mit einer **Windows-Instanz** verbunden ist, klicken Sie auf `...`{.action} rechts neben dem betreffenden Volume und wählen Sie `Instanz trennen`{.action} aus.
 
-Klicken Sie auf den Button `...`{.action}. rechts neben dem betreffenden Volume und wählen Sie `Bearbeiten`{.action}.
+Klicken Sie auf den Button `...`{.action} rechts neben dem betreffenden Volume und wählen Sie `Bearbeiten`{.action}.
 
 ![Dashboard](images/increase-disk-02.png){.thumbnail}
 

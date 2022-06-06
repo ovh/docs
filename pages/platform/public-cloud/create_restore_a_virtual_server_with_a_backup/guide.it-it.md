@@ -24,7 +24,7 @@ Ripristinare un’istanza utilizzando un backup è necessario, ad esempio, se ha
 
 ## Prerequisiti
 
-- Disporre del backup di un’istanza Public Cloud A questo proposito, consulta[la guida dedicata alla creazione di un backup](../effettuare-snapshot-di-un-istanza/)
+- Disporre del backup di un’istanza Public Cloud A questo proposito, consulta [la guida dedicata alla creazione di un backup](../effettuare-snapshot-di-un-istanza/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
