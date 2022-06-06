@@ -84,7 +84,7 @@ La instancia tendrá estado de `Reinstalación` hasta que el proceso haya finali
 
 > [!warning]
 >
->Tal como se indica en el recuadro amarillo, no podrá recuperarse ningún dato que se haya añadido después de la creación de este snapshot.
+> Tal como se indica en el recuadro amarillo, no podrá recuperarse ningún dato que se haya añadido después de la creación de este snapshot.
 >
 
 [Creación y conexión a una primera instancia de Public Cloud](../empezar-con-una-instancia-public-cloud/)
