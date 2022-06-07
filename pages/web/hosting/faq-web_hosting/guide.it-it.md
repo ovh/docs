@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQ Web Hosting
 excerpt: Domande più frequenti sugli hosting web OVHcloud
 slug: faq-hosting-web
 section: Per iniziare

@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: FAQ Web Hosting
 excerpt: Encontre aqui as questões mais comuns sobre os alojamentos web da OVHcloud
 slug: faq-alojamento
 section: Introdução
