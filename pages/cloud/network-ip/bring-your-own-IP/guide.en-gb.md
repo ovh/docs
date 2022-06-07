@@ -10,7 +10,7 @@ order: 1
 > This service is currently available in restricted access mode. Please contact your OVHcloud sales representative for more information.
 >
 
-**Last updated 2nd June 2022**
+**Last updated 7th June 2022**
 
 ## Objective
 
@@ -96,10 +96,9 @@ Below is a list of current campuses:
 
 The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
 
-|**Services are registered in the following zones**:|**EU/CA**|**EU/CA**|
-|---------------------------------------|---------|-|
-|**Customer IPs' RIR is:**|ARIN|RIPE|
-|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2||RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Customer IPs' RIR is:**|**ARIN**|**RIPE**|
+|---|---|---|
+|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
