@@ -10,7 +10,7 @@ order: 1
 > Ce service est disponible en accès restreint pour le moment. Veuillez contacter votre commercial OVHcloud pour plus d'informations.
 >
 
-**Dernière mise à jour le 02/06/2022**
+**Dernière mise à jour le 07/06/2022**
 
 ## Objectif
 
@@ -96,9 +96,8 @@ Vous trouverez ci-dessous une liste des campus actuels :
 
 La liste des campus disponibles dépendra de votre situation géographique et du RIR de l'IP. Vous trouverez ci-dessous la liste de tous les campus IP sur lesquels nous prévoyons de l'offre BYOIP. Cependant, il est possible que tous les campus ne soient pas pris en charge dès le lancement :
 
-|**Les services sont enregistrés dans les zones suivantes** :|**EU/CA**|**EU/CA**|
+|**Le RIR des adresses IP du client est :**|**ARIN**|**RIPE**|
 |---|---|---|
-|**Le RIR des adresses IP du client est :**|ARIN|RIPE|
 |**Campus disponibles :** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
