@@ -237,11 +237,11 @@ Fail2ban ma wiele ustawień i filtrów personalizacji oraz wstępnie zdefiniowan
 
 W celu uzyskania dodatkowych informacji oraz uzyskania zaleceń dotyczących Fail2ban zapoznaj się [z oficjalną](https://www.fail2ban.org/wiki/index.php/Main_Page){.external} dokumentacją tego narzędzia.
 
-### Konfiguracja Firewall Network OVHcloud 
+### Konfiguracja Network Firewall OVHcloud 
 
-Rozwiązania OVHcloud obejmują możliwość aktywacji firewalla w punkcie wejścia infrastruktury, zwanym Firewall Network. Prawidłowa konfiguracja zapory sieciowej pozwala zablokować połączenia jeszcze przed ich wejściem na Twój serwer.
+Rozwiązania OVHcloud obejmują możliwość aktywacji firewalla w punkcie wejścia infrastruktury, zwanym Network Firewall. Prawidłowa konfiguracja zapory sieciowej pozwala zablokować połączenia jeszcze przed ich wejściem na Twój serwer.
 
-Sprawdź przewodnik “[Konfiguracja Firewall Network](../../dedicated/network-firewall/)”, jeśli chcesz włączyć tą opcję.
+Sprawdź przewodnik “[Konfiguracja Network Firewall](../../dedicated/network-firewall/)”, jeśli chcesz włączyć tą opcję.
 
 ### Tworzenie kopii zapasowej systemu i danych
 
