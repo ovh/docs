@@ -86,6 +86,7 @@ Per aggiungere una regola, clicca sul pulsante `Aggiungi una regola`{.action}:
 ![Aggiungi una regola](images/ajoutregle1.png){.thumbnail}
 
 Per ogni regola è necessario scegliere:
+
 - una priorità (da 0 a 19, dove 0 è la prima regola applicata)
 - un’azione (`Autorizza`{.action} o `Rifiuta`{.action})
 - il protocollo
