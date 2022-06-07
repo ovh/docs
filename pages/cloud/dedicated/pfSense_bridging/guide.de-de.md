@@ -3,6 +3,8 @@ title: Tutorial - Configuring pfSense network bridge (EN)
 slug: pfSense-bridging
 excerpt: This guide will show you how to do IP bridging on a pfSense virtual machine
 section: Tutorial
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/dedicated/pfSense-bridging/'
 ---
 
 **Last updated 12th October 2020**
