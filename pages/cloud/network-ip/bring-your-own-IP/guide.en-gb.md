@@ -99,7 +99,7 @@ The list of available campuses will depend on your geographical location, and on
 |**Services are registered in the following zones**:|**EU/CA**|**EU/CA**|
 |---------------------------------------|---------|-|
 |**Customer IPs' RIR is:**|ARIN|RIPE|
-|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2||RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+|**Available campuses** |BHS<br>SGP<br>SYD<br>SY2|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
