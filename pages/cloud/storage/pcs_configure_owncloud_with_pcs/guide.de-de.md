@@ -20,7 +20,7 @@ In dieser Hilfe erfahren Sie alles über die Konfiguration von ownCloud mit Obje
 
 ## Voraussetzungen
 
-- Download der OpenRC-Datei über Ihr OVH Kundencenter oder Horizon
+- Download der OpenRC-Datei über Ihr OVHcloud Kundencenter oder Horizon
 - [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/) zu Owncloud
 
 
@@ -77,6 +77,7 @@ mysql> GRANT ALL PRIVILEGES ON `owncloud` . * TO 'owncloud'@'localhost';
 Danach können Sie sich mithilfe eines Browsers mit dem ownCloud Interface verbinden: http://I.P.des.servers/owncloud:
 
 ![](images/img_3325.jpg){.thumbnail}
+
 Über dieses Interface müssen Sie dann:
 
 - einen Administrator-Account erstellen,
@@ -91,15 +92,19 @@ Hierüber kann man dann den "External Storage Support" aktivieren.
 Klicken Sie dafür auf den Button "Dateien" links oben und wählen Sie "Applikationen" aus:
 
 ![](images/img_3327.jpg){.thumbnail}
+
 Aktivieren Sie anschließend die Applikation "External storage support" über das Menü der "Deaktivierten" Applikationen:
 
 ![](images/img_3328.jpg){.thumbnail}
+
 Nun können Sie diese Applikation konfigurieren. Klicken Sie hierfür rechts oben auf Ihren Benutzernamen und anschließend auf "Administration":
 
 ![](images/img_3326.jpg){.thumbnail}
+
 Wählen Sie den Bereich "Externer Storage" aus und fügen Sie "OpenStack Object Storage" hinzu:
 
 ![](images/img_3329.jpg){.thumbnail}
+
 Hier müssen Sie verschiedene Informationen aus der "OpenRC"-Datei angeben:
 
 - den Namen des Horizon Nutzers (Feld "OS_USERNAME" in der "OpenRC"-Datei);

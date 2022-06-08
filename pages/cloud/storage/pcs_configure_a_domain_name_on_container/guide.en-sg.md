@@ -32,7 +32,7 @@ The feature works correctly with HTTP. However you will get a certificate error 
 
 
 ### CNAME or TXT record?
-You can only use one of these DNS records at a time. :
+You can only use one of these DNS records at a time:
 
 - CNAME: The default record. Use this if you are able to manage your DNS zone, it will automatically follow our endpoint regardless of the IP address.
 - TXT: Only use this if you need to configure your domain on another support, such as a CDN. Remember to check if the IP address of the endpoint has changed. You can also use a "virtual CNAME" if your CDN provider allows it.
@@ -96,7 +96,7 @@ For example, for a container named **staticct**, in project **123xxxx456** used 
 staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-Your DNS record will be :
+Your DNS record will be:
 
 
 ```bash
@@ -110,7 +110,7 @@ If you do not want to use a subdomain, you can use the following command:
 _swift-remap IN TXT staticct.auth-123xxxx456.storage.sbg.cloud.ovh.net.
 ```
 
-Finally, the last step for configuring a TXT record is to add an A record for your (sub)domain which points to the Public Cloud Object Storage IP address. To do this, use the following commad:
+Finally, the last step for configuring a TXT record is to add an A record for your (sub)domain which points to the Public Cloud Object Storage IP address. To do this, use the following command:
 
 
 ```bash
@@ -123,8 +123,8 @@ dig storage.bhs.cloud.ovh.net
 
 > [!alert]
 >
-> You cannot use the following characters in your container name :
-> :
+> You cannot use the following characters in your container name:
+> 
 > - [ . ]
 > - [ _ ] depending on your DNS provider
 > - Upper case

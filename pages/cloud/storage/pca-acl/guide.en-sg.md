@@ -604,7 +604,7 @@ In order to allow all requests from the domain `example.com` to have access to t
 swift post <container> -r ".r:.example.com"
 ```
 
-> {!primary}
+> [!primary]
 >
 > Although most modern browsers include the `Referrer` header in their queries, this is a security risk because it is quite possible to change the value of this header.
 >
