@@ -23,11 +23,11 @@ The first step is to create a container that will hold your files.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 If you use Horizon :
 
-- an [OpenStack user](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}
+- An [OpenStack user](https://docs.ovh.com/au/en/public-cloud/creation-and-deletion-of-openstack-user/){.external}
 
 ## Instructions
 

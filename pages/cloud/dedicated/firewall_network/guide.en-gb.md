@@ -81,6 +81,7 @@ To add a rule, click on `Add a rule`{.action}:
 ![Add a rule](images/ajoutregle1.png){.thumbnail}
 
 For each rule you must choose:
+
 - a priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
 - an action (`Authorise`{.action} or `Refuse`{.action})
 - the protocol

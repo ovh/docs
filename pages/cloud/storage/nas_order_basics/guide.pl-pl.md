@@ -120,4 +120,4 @@ Aby usunąć partycję, kliknij przycisk `(...)`{.action} znajdujący się po pr
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

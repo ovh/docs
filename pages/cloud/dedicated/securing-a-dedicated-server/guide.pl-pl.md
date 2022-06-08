@@ -196,11 +196,11 @@ iptables -L
 Zalecamy utworzenie dla tej zapory reguł i dostosowanie ich do Twojego trybu użytkowania. Więcej informacji dotyczących konfiguracji zapory iptables znajdziesz w oficjalnej dokumentacji dołączonej do dystrybucji Linux.
 
 
-### Konfiguracja Firewall Network OVHcloud
+### Konfiguracja Network Firewall OVHcloud
 
-Serwery OVHcloud chronione są na wejściu do infrastruktury zaporą sieciową zwaną Firewall Network. Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
+Serwery OVHcloud chronione są na wejściu do infrastruktury zaporą sieciową zwaną Network Firewall. Jej uruchomienie i skonfigurowanie umożliwia blokowanie protokołów zanim jeszcze dotrą do Twojego serwera.
 
-Aby skonfigurować Firewall Network, możesz również skorzystać z [przewodnika](https://docs.ovh.com/pl/dedicated/network-firewall/){.external}.
+Aby skonfigurować Network Firewall, możesz również skorzystać z [przewodnika](https://docs.ovh.com/pl/dedicated/network-firewall/){.external}.
 
 
 ### Tworzenie kopii zapasowej systemu i danych

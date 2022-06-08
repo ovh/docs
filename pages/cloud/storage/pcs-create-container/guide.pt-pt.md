@@ -37,7 +37,7 @@ Se utilizar o Horizon:
 
 ### Criação de um container Object Storage a partir da Área de Cliente OVHcloud
 
-Ligue-se à sua Área de [Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Object Storage`{.action} na barra de navegação à esquerda, na secção `Storage`.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Public Cloud`{.action} e selecione o projeto Public Cloud em causa. A seguir, clique em `Object Storage`{.action} na barra de navegação à esquerda, na secção `Storage`.
 
 A seguir, clique em `Criar um container de objetos`{.action}.
 
