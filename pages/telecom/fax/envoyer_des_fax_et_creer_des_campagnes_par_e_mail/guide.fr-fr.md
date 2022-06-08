@@ -18,7 +18,7 @@ Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous pr
 ## Prérequis
 
 - Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
-- Être connecté à son adresse mail.
+- Être connecté à son adresse e-mail via un client e-mail (webmail ou logiciel).
 - Connaître ou réinitialiser le mot de passe de la ligne Fax. Pour plus d'informations, consultez notre guide « [Configuration de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax) ».
 
 ## En pratique
@@ -60,9 +60,10 @@ Vous pouvez utiliser la méthode d'envoi de fax par e-mail pour envoyer une camp
 >
 > L'envoi d'une campagne de fax est limité à **2000 destinataires maximum**.
 >
-> Dans le cadre de l'envoi d'une campagne de fax par e-mail, les numéros des destinataires doivent être listés dans un fichier au format .txt et impérativement intitulé `numbers.txt`.
+> Dans le cadre de l'envoi d'une campagne de fax par e-mail, les numéros des destinataires doivent être listés dans un fichier au format Plain Text (\*.txt) et impérativement intitulé `numbers.txt`.
 >
-> Vous trouverez sur <a href="https://github.com/ovh/docs/tree/develop/envoyer_des_fax_et_creer_des_campagnes_par_e_mail/images/numbers.txt" download>ce lien</a> un modèle de fichier .txt à compléter par vos soins. Une fois votre liste complétée, veillez à retirer les premiers numéros uniquement écrits à des fins d'exemple.
+> Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail/images/numbers.txt" download>ce lien</a> un modèle de fichier `numbers.txt` à compléter par vos soins (faites un clic-droit sur le lien et cliquez sur `Enregistrer le lien sous`{.action}).
+> Une fois votre liste complétée, veillez à retirer les 3 premiers numéros uniquement écrits à des fins d'exemple.
 >
 > Pour éditer le fichier `numbers.txt`, nous vous recommandons d'utiliser un éditeur de fichiers texte basique, dont voici quelques exemples :
 >
