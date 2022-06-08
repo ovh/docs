@@ -121,6 +121,7 @@ dig storage.bhs.cloud.ovh.net
 > [!alert]
 >
 > Vous ne pouvez pas utiliser les caractères suivants dans votre nom de conteneur :
+>
 > - [ . ]
 > - [ _ ] selon votre fournisseur DNS
 > - Ne pas utiliser de majuscules

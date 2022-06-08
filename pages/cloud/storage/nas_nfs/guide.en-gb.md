@@ -34,7 +34,7 @@ Then use the following mount command:
 
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Description|
@@ -49,7 +49,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
 > 
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
 > ```
 >
 
@@ -89,7 +89,7 @@ Then restart the `rpcbind` service with the following command:
 Then use the following mount command:
 
 ```sh
-mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
+mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Description|
@@ -104,7 +104,7 @@ mount -t nfs -o _netdev,mountproto=tcp IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
 > 
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw,_netdev,mountproto=tcp 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw,_netdev,mountproto=tcp 0 0
 > ```
 >
 
@@ -130,7 +130,7 @@ Finally, use the following mount command:
 
 
 ```sh
-mount -t nfs IP_NAS:/CHEMIN_NFS /FOLDER_MOUNTING
+mount -t nfs IP_NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 |Argument|Description|
@@ -145,7 +145,7 @@ mount -t nfs IP_NAS:/CHEMIN_NFS /FOLDER_MOUNTING
 > In order to automate the NAS mount when your distribution starts up, add the following line to the /etc/fstab file:
 > 
 > ```
-> IP_NAS:/CHEMIN_NFS /DOSSIER_MONTAGE nfs rw 0 0
+> IP_NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0
 > ```
 > 
 > Then put the "nfsmount" service to the server starting up, with the following command. 
