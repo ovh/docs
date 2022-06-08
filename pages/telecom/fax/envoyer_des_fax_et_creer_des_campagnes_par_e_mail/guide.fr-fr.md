@@ -63,7 +63,7 @@ Vous pouvez utiliser la méthode d'envoi de fax par e-mail pour envoyer une camp
 > Dans le cadre de l'envoi d'une campagne de fax par e-mail, les numéros des destinataires doivent être listés dans un fichier au format Plain Text (\*.txt) et impérativement intitulé `numbers.txt`.
 >
 > Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/fax/envoyer_des_fax_et_creer_des_campagnes_par_e_mail/images/numbers.txt" download>ce lien</a> un modèle de fichier `numbers.txt` à compléter par vos soins (faites un clic-droit sur le lien et cliquez sur `Enregistrer le lien sous`{.action}).
-> Une fois votre liste complétée, veillez à retirer les 3 premiers numéros uniquement écrits à des fins d'exemple.
+> Une fois votre liste complétée, veillez à supprimer les 3 premiers numéros uniquement écrits à des fins d'exemple.
 >
 > Pour éditer le fichier `numbers.txt`, nous vous recommandons d'utiliser un éditeur de fichiers texte basique, dont voici quelques exemples :
 >
@@ -124,34 +124,35 @@ Voici les erreurs les plus courantes :
 
 ### Les formats de fichiers supportés <a name="formats"></a>
 
-Nous vous recommandons d'utiliser le format PDF. Néanmoins, les formats suivants sont supportés par notre infrastructure :
+Nous vous recommandons d'utiliser le format PDF pour vos fichiers à envoyer par fax.<br>
+Néanmoins, les formats suivants sont supportés par notre infrastructure :
 
--   Microsoft Word (\*.doc)
--   OpenDocument Text (\*.odt)
--   OpenOffice.org 1.0 Text (\*.sxw)
--   Rich Text Format (\*.rtf)
--   WordPerfect (\*.wpd)
--   Plain Text (\*.txt)
--   OpenDocument Text (\*.odt)
--   MediaWiki wikitext (\*.wiki)
--   Microsoft Excel (\*.xls)
--   OpenDocument Spreadsheet (\*.ods)
--   OpenOffice.org 1.0 Spreadsheet (\*.sxc)
--   Microsoft Excel (\*.xls)
--   Comma-Separated Values (\*.csv)
--   Tab-Separated Values (\*.tsv)
--   OpenDocument Spreadsheet (\*.ods)
--   OpenOffice.org 1.0 Spreadsheet (\*.sxc)
--   Tab-Separated Values (\*.tsv)
--   OpenDocument Presentation (\*.odp)
--   OpenOffice.org 1.0 Presentation (\*.sxi)
--   Microsoft PowerPoint (\*.ppt)
--   OpenDocument Drawing (\*.odg)
--   Scalable Vector Graphics (\*.svg)
--   Macromedia Flash (\*.swf)
--   Bitmap (\*.bmp)
--   JPEG (\*.jpg)
--   PNG (\*.png)
+- Microsoft Word (\*.doc)
+- OpenDocument Text (\*.odt)
+- OpenOffice.org 1.0 Text (\*.sxw)
+- Rich Text Format (\*.rtf)
+- WordPerfect (\*.wpd)
+- Plain Text (\*.txt)
+- OpenDocument Text (\*.odt)
+- MediaWiki wikitext (\*.wiki)
+- Microsoft Excel (\*.xls)
+- OpenDocument Spreadsheet (\*.ods)
+- OpenOffice.org 1.0 Spreadsheet (\*.sxc)
+- Microsoft Excel (\*.xls)
+- Comma-Separated Values (\*.csv)
+- Tab-Separated Values (\*.tsv)
+- OpenDocument Spreadsheet (\*.ods)
+- OpenOffice.org 1.0 Spreadsheet (\*.sxc)
+- Tab-Separated Values (\*.tsv)
+- OpenDocument Presentation (\*.odp)
+- OpenOffice.org 1.0 Presentation (\*.sxi)
+- Microsoft PowerPoint (\*.ppt)
+- OpenDocument Drawing (\*.odg)
+- Scalable Vector Graphics (\*.svg)
+- Macromedia Flash (\*.swf)
+- Bitmap (\*.bmp)
+- JPEG (\*.jpg)
+- PNG (\*.png)
 
 ## Aller plus loin
 
