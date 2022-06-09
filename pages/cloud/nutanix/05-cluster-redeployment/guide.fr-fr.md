@@ -26,7 +26,7 @@ Reconditionner un cluster avec des paramètres réseaux personnalisées au trave
 
 ## Présentation des besoins techniques pour la reconfiguration d'un cluster.
 
-Avant de reconfigurer un cluster il est necessaire de connaitre les besoins techniques pour la reconfiguration d'un cluster.
+Avant de reconfigurer un cluster il est nécessaire de connaitre les besoins techniques pour la reconfiguration d'un cluster.
 
 La liste des adresses IP necessaire varie en fonction du nombre de serveurs achetés et du choix de configuration de Prism Central (Mode alone ou mode Scale) voici le détail des besoins
 
@@ -71,11 +71,11 @@ Se connecter à l'API d'OVHcloud au travers de l'interface WEB [API OVHcloud](ht
 
 Cliquer sur  `Explore the OVH API`{.action} au milieu de l'écran.
 
-![API connection 01](images/00-connectionapi01.png)
+![API connection 01](images/00-apiconnection01.png)
 
 Cliquer sur `Login`{.action} en haut à droite.
 
-![API connection 02](images/00-connectionapi02.png)
+![API connection 02](images/00-apiconnection02.png)
 
 Saisissez ces informations.
 
@@ -84,11 +84,11 @@ Saisissez ces informations.
 
 et cliquez sur `Login`{.action}.
 
-![API connection 03](images/00-connectionapi03.png)
+![API connection 03](images/00-apiconnection03.png)
 
 Cliquez sur `Authorize`{.action}.
 
-![API connection 04](images/00-connectionapi04.png)
+![API connection 04](images/00-apiconnection04.png)
 
 Au travers de l'interface cliquez sur `Nutanix`{.action}.
 
