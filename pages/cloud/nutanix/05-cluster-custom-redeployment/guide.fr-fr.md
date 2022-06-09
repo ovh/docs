@@ -33,7 +33,7 @@ La liste des adresses IP nécessaires varie en fonction du nombre de serveurs co
 - Entre 6 et 36 adresses IP pour les serveurs physiques (Il faut deux adresses par serveur, une pour l'hyperviseur **AHV** et une autre pour la machine virtuelle **CVM**).
 - Une adresse IP pour **Prism Element**.
 - Une adresse IP pour l'adresse IP de **Prism Central**.
-- 3 adresses IP optionnelles pour un déploiement de Prism Central en mode scale avec 3 machines virtuelles.
+- 3 adresses IP optionnelles pour un déploiement de **Prism Central** en mode scale avec 3 machines virtuelles.
 - Une adresse IP pour la passerelle Internet.
 
 Certaines adresses du plan IP sont réservées pour le **Load balancer** elles sont toujours sur le réseau `XX.XX.XX.128/27` soit les adresses comprises en `XX.XX.XX.129 & XX.XX.XX.158` du réseau, il ne faut pas les utiliser lors du redéploiement.
@@ -50,7 +50,7 @@ Voici deux exemples possible de configuration d'un cluster Nutanix chez OVHcloud
 - Etendue réservée pour le load balancer : `192.168.10.128 à 192.168.10.159`.
 - Passerelle : `192.168.10.254`.
 
-**Exemple2 :** Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour Prism Central sur un plan IP en `172.16.0.0/16`.
+**Exemple2 :** Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour **Prism Central** sur un plan IP en `172.16.0.0/16`.
 
 - Serveur1 : adresse VM **CVM** `172.16.0.1`, adresse IP hyperviseur **AHV** `172.16.0.21`.
 - Serveur2 : adresse VM **CVM** `172.16.0.2`, adresse IP hyperviseur **AHV** `172.16.0.22`.
@@ -84,8 +84,8 @@ Cliquer sur `Login`{.action} en haut à droite.
 
 Saisissez ces informations.
 
-* **Email** : `nom ou email du compte client`
-* **Password** : `Mot de passe du compte client`
+* **Email :**  `nom ou email du compte client`
+* **Password :** `Mot de passe du compte client`
 
 et cliquez sur `Login`{.action}.
 
@@ -105,14 +105,14 @@ Choisissez `Update nutanix cluster info`{.action}.
 
 Remplissez ces données :
 
-* **ServiceName** : `Nom FQDN de votre cluster Nutanix`.
-* **redeploycluster** : `Cochez la case`.
-* **gatewayCidr** : `l'adresse IP de la passerelle suivi du masque de sous réseau`.
+* **ServiceName :** `Nom FQDN de votre cluster Nutanix`.
+* **redeploycluster :**  `Cochez la case`.
+* **gatewayCidr :** `l'adresse IP de la passerelle suivi du masque de sous réseau`.
 
-Saisissez ces informations en dessous de **nodes** :  
+Saisissez ces informations en dessous de **nodes :**   
 
-* **ahvip** : `Adresse IP de l'hyperviseur du premier nœud`.
-* **cvmip** : `Adresse IP de la CVM du second nœud`.
+* **ahvip :** `Adresse IP de l'hyperviseur du premier nœud`.
+* **cvmip :** `Adresse IP de la CVM du second nœud`.
 
 Et cliquez sur le bouton `Plus`{.action}.
 
@@ -120,8 +120,8 @@ Et cliquez sur le bouton `Plus`{.action}.
 
 Rajoutez les informations du deuxième nœud :
  
-* **ahvip** : `Adresse IP de l'hyperviseur du deuxième nœud`{.action}.
-* **cvmip** : `Adresse IP de la CVM du deuxième nœud`{.action}.
+* **ahvip :** `Adresse IP de l'hyperviseur du deuxième nœud`{.action}.
+* **cvmip :** `Adresse IP de la CVM du deuxième nœud`{.action}.
 
 Cliquez sur le bouton `Plus`{.action}.
 
@@ -129,8 +129,8 @@ Cliquez sur le bouton `Plus`{.action}.
 
 Insérer les informations du dernier nœud :
 
-* **ahvip** : `Adresse IP de l'hyperviseur du dernier nœud`{.action}.
-* **cvmip** : `Adresse IP de la CVM du dernier nœud`{.action}.
+* **ahvip :** `Adresse IP de l'hyperviseur du dernier nœud`{.action}.
+* **cvmip :** `Adresse IP de la CVM du dernier nœud`{.action}.
 
 Ensuite faites défilez la fenêtre du navigateur avec la `barre de défilement`{.action}.
 
@@ -138,7 +138,7 @@ Ensuite faites défilez la fenêtre du navigateur avec la `barre de défilement`
 
 Dans la rubrique **Prism Central Configuration** cochez `define property`{.action} et `Empty array`{.action}, choisissez dans **type** `alone`{.action} et saisissez dans **vip** `L'adresse IP de Prim Central`{.action}.
 
-Ensuite saisissez dans **prismElementVip** `L'adresse IP de Prim Element`{.action} suivi dans **redondancyFactor** du `Numero du facteur de redondance`{.action} et dans **version** du  `numéro de version du cluster`{.action}
+Ensuite saisissez dans **prismElementVip** `L'adresse IP de Prim Element`{.action} suivi dans **redondancyFactor** du `Numero du facteur de redondance`{.action} et dans **version** du `numéro de version du cluster`{.action}
 
 Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 
