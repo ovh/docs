@@ -1,111 +1,171 @@
 ---
-title: Introduction to SSH
+title: Getting started with SSH
 slug: ssh-introduction
-excerpt: Learn how to use the SSH service to access your server 
-section: SSH and SSH key
-order: 1
+excerpt: Find out how to use SSH connections to access your server
+section: 'Getting started'
 ---
 
-**Last updated on 2018/01/18**
+**Last updated 8th June 2022**
 
 ## Objective
 
-SSH (Secure Shell) communication protocol is natively installed on all OVHcloud servers (VPS, dedicated servers, Public Cloud instances).
+The SSH (Secure Shell) communication protocol is the main practice to establish encrypted host connections through untrusted networks. The OpenSSH tool is natively installed on all OVHcloud servers (VPS, dedicated servers, Public Cloud instances) to allow secure remote server logins and other operations.
 
-**Learn how to use the SSH service to access your server.**
+**This guide explains how to securely access your server with SSH.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
 
 ## Requirements
 
-- SSH is installed on all machines. You can use it to connect securely to your server, and have full control over it.
+- A [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) or a [VPS](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
+- An SSH client application (command line or GUI)
 
+> [!primary]
+> This guide is not applicable for standard Windows server installations since they rely on the Remote Desktop Protocol for connections. SSH connections are used for the OVHcloud rescue mode however. You can find more information in the [Go further](#gofurther) section of this guide.
+>
 
 ## Instructions
 
-### Compatible software
+There are multiple ways to authenticate a connection to a remote device via SSH. The following instructions will involve the authentication method with username and password. You can also configure SSH keys to enable secure logins without passwords. Find the details in our [SSH key guide](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/).
 
-Many software applications enable you to connect via SSH. To help you, here are some examples.
+The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). The username corresponds to the operating system, for example `ubuntu` or `debian`. To connect, you also need to specify the IPv4 address or the hostname of the server. These details are available in the installation email and in the Control Panel.
 
-#### On Windows
+Be sure to consult our Getting started guides as well:
 
-- [PuTTY](http://www.putty.org/){.external} (Free)
-- [MobaXterm](https://mobaxterm.mobatek.net/) (free version and paid version)
-- [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Paid)
+- For a [dedicated server](https://docs.ovh.com/ca/en/dedicated/getting-started-dedicated-server/)
+- For a [dedicated server of the **Eco** product line](https://docs.ovh.com/ca/en/dedicated/getting-started-dedicated-server-eco/)
+- For a [VPS](https://docs.ovh.com/ca/en/vps/getting-started-vps/)
 
-For the latest Windows 10 and Windows Server versions, developer mode gives you access to a bash console. Here is a link to the Microsoft documentation: <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>.
+### Connecting from a GNU/Linux distribution or macOS
 
-#### On Mac
+A command line client for SSH (OpenSSH) is usually available by default. Open the Terminal application and connect to the server with the following command:
 
-- The `Terminal`{.action} tool is delivered with Mac OS X, and is systematically installed on the machine.
-
-
-#### On Linux
-
-- The `Console`{.action} or `Terminal`{.action} tool is natively installed, and can be used to connect.
-- For managing multiple tabs, the `Terminator`terminal emulator can be installed. You can read an Ubuntu manual page for Terminator here: <http://manpages.ubuntu.com/manpages/zesty/man1/terminator.1.html>.
-- [OpenSSH](http://www.openssh.com){.external} (Free).
-
-
-### Steps for connecting via SSH
-
-#### Step 1: Connecting for the first time
-
-To connect to your machine via SSH, you will need two details:
-
-- the server’s IPv4 address or name;
-- the server’s root password (received by email when it was set up).
-
-
-You can connect using the following command:
-
-```sh
-ssh root@server_IP
+```bash
+ssh username@server_IP
 ```
 
-Or this:
+If the SSH port of the server is not the standard one, use this command instead:
 
-```sh
-ssh root@server_name
+```bash
+ssh username@server_IP -p port_number
 ```
 
-The following message will appear:
+### Connecting from a Windows 10/11 device
 
-```sh
-The authenticity of host servername (server_IP) can’t be established.
-RSA key fingerprint is a9:bb:55:35:86:xx:xx:00:xx:00:2b:2c:79:10:96:3c.
-Are you sure you want to continue connecting (yes/no)? YES
-[!warning] Permanently added servername, server_IP (RSA) to the list of known hosts.
-Password:
-root@vps12345:~#
+The latest versions of Windows natively include OpenSSH for connections from the PowerShell or the Command Prompt application.
+
+Right-click on the Windows start button and select `Windows PowerShell`{.action}. Alternatively, use the search field to start one of these programs.
+
+![PowerShell](images/windowsps.png){.thumbnail}
+
+Connect to the server with the following command:
+
+
+```bash
+ssh username@server_IP
 ```
 
-When you first connect, your SSH client will receive an RSA key fingerprint, which is a fingerprint of the server you are connecting to. This is verified for each new connection. If the fingerprint changes, you will be informed, and this will mean something has changed:
+If the SSH port of the server is not the standard one, use this command:
 
-- the machine has been reinstalled;
-- the SSH server has been reinstalled;
-- you are connecting to another machine.
-
-When you first connect, you must accept the fingerprint that will be saved onto your desktop by your SSH client.
-
-
-#### Step 2: the manual
-
-On Linux distributions, you will have access to a manual with all of the commands available, and their arguments.
-
-```sh
-man bash
+```bash
+ssh username@server_IP -p port_number
 ```
 
-#### Step 3: updates
+### Login and fingerprint
 
-Both your SSH client and your distribution must be kept up-to-date. You can check this with the following command:
+When prompted for a password, type the password of the connecting user and press `Enter`.
 
-```sh
-ssh -V
+If this is a new connection, your SSH client will receive a key fingerprint from the server. Enter "yes" to confirm and then the password of the connecting user to log in.
+
+
+```bash
+ssh ubuntu@169.254.10.254
+```
+```console
+The authenticity of host '169.254.10.254 (169.254.10.254)' can't be established.
+ECDSA key fingerprint is SHA256:rRwrdsmJfzvJF5k0a4JmMSdaWbTlCgRKBukbmQ3gmso.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Warning: Permanently added '169.254.10.254' (ECDSA) to the list of known hosts.
+ubuntu@169.254.10.254's password:
 ```
 
-If you have any doubts, please refer to the documentation for the SSH client you are using.
+The fingerprint is then saved on your device and will be verified for each new connection. If the key has changed on the remote host, you will receive a warning message when trying to connect, for example:
+
+```console
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Host key verification failed.
+Offending ECDSA key in /home/user/.ssh/known_hosts:3
+```
+
+It means that one the following has occured:
+
+- The server has been reinstalled.
+- The SSH service on the server has been reinstalled.
+- You are connecting to a different host with the same IP address.
+
+> [!primary]
+> The warning message does not necessarily indicate a security issue. If you have not initiated one of these incidents however, the remote server might be compromised.
+>
+
+To resolve this, use the following command with the IP address of your server:
+
+```bash
+ssh-keygen -f ~/.ssh/known_hosts -R 169.254.10.254
+```
+
+Alternatively, open the `known_hosts` file located in your home folder with a text editor and delete the "offending" line that was specified in the warning message:
+
+```bash
+nano ~/.ssh/known_hosts
+```
+
+Save the changes and exit the editor. The new fingerprint has to be accepted at the next server login.
+
+On Windows, the location of the `known_hosts` file and the line you have to delete are specified as well, for example:
+
+```powershell
+Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
+```
+
+Navigate to this folder, right-click on the file and open it with the Notepad application.
+
+![known_hosts](images/windowskh.png){.thumbnail}
+
+Delete the pertinent line, in this case the third one. Save the changes and exit the editor. The new fingerprint has to be accepted at the next server login.
+
+### Using GUI clients or SSH-compatible software
+
+There are many software applications for every type of OS that enable you to connect to your server via the SSH protocol. 
+
+For example, [PuTTY](https://putty.org/){.external} for Windows is an open source SSH client software with a graphical user interface. It has been ported to other platforms as well and is available from [the official website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), software package managers and [Homebrew](https://brew.sh/).
+
+Start PuTTY and enter the IP address of the server. Specify the port number if the standard port is not used. Then click on `Open`{.action} to connect. You will be prompted for username and password.
+
+![PuTTY](images/putty_01.png){.thumbnail}
+
+One advantage of PuTTY is the ability to save multiple sessions. Enter the connection details into the `Saved Sessions` field and click on `Save`{.action}.
+
+![PuTTY](images/putty_02.png){.thumbnail}
+
+As usual, the fingerprint warning appears at the first connection. Click `Accept`{.action} to save the fingerprint or select `Connect Once`{.action}.
+
+![PuTTY](images/putty_03.png){.thumbnail}
+
+Please consult the official FAQ and documentation of PuTTY for more information.
 
 
-## Go further
+## Go further <a name="gofurther"></a>
+
+[Creating SSH keys](https://docs.ovh.com/ca/en/dedicated/creating-ssh-keys-dedicated/)
+
+[Dedicated server rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/)
+
+[VPS rescue mode](https://docs.ovh.com/ca/en/vps/rescue/)
 
 Join our user community on <https://community.ovh.com/en/>.
