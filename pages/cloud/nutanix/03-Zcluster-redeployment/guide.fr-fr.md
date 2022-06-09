@@ -143,24 +143,9 @@ Cliquez sur `Execute`{.action} pour lancer le redeploiement du cluster.
 > Le redeploiment du cluster durera au minimum deux heures il faudra attendre de recevoir un message
 > dans la boite à lettre du compte client.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Aller plus loin
 
 
+[Utilisation de l'API d'OVHCLOUD](https://docs.ovh.com/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
