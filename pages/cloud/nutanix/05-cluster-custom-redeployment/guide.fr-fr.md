@@ -40,7 +40,7 @@ Certaines adresses du plan IP sont réservées pour le **Load balancer** elles s
 
 Voici deux exemples possible de configuration d'un cluster Nutanix chez OVHcloud:
 
-**Exemple1 : ** Reconfiguration d'un cluster avec 3 nœuds sur un plan IP en `192.168.10.0/24`.
+**Exemple1 :** Reconfiguration d'un cluster avec 3 nœuds sur un plan IP en `192.168.10.0/24`.
 
 - Serveur1 : adresse VM **CVM** `192.168.10.1`, adresse IP hyperviseur **AHV** `192.168.10.21`.
 - Serveur2 : adresse VM **CVM** `192.168.10.2`, adresse IP hyperviseur **AHV** `192.168.10.22`.
@@ -50,7 +50,7 @@ Voici deux exemples possible de configuration d'un cluster Nutanix chez OVHcloud
 - Etendue réservée pour le load balancer : `192.168.10.128 à 192.168.10.159`.
 - Passerelle : `192.168.10.254`.
 
-**Exemple2 : ** Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour Prism Central sur un plan IP en `172.16.0.0/16`.
+**Exemple2 :** Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour Prism Central sur un plan IP en `172.16.0.0/16`.
 
 - Serveur1 : adresse VM **CVM** `172.16.0.1`, adresse IP hyperviseur **AHV** `172.16.0.21`.
 - Serveur2 : adresse VM **CVM** `172.16.0.2`, adresse IP hyperviseur **AHV** `172.16.0.22`.
@@ -136,7 +136,7 @@ Ensuite faites défilez la fenêtre du navigateur avec la `barre de défilement`
 
 ![Cluster Redeployment 04](images/01-cluster-redeployment05.png)
 
-Cochez `define property`{.action} et `Empty array`{.action}, choisissez dans **type** `alone`{.action} et saisissez dans **vip** `L'adresse IP de Prim Central`{.action}.
+Dans la rubrique **Prism Central Configuration** cochez `define property`{.action} et `Empty array`{.action}, choisissez dans **type** `alone`{.action} et saisissez dans **vip** `L'adresse IP de Prim Central`{.action}.
 
 Ensuite saisissez dans **prismElementVip** `L'adresse IP de Prim Element`{.action} suivi dans **redondancyFactor** du `Numero du facteur de redondance`{.action} et dans **version** du  `numéro de version du cluster`{.action}
 
@@ -146,10 +146,10 @@ Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 
 > [!warning]
 > Le redéploiement du cluster dure deux heures au minimum il faut attendre de recevoir un message
-> dans la boite à lettre du compte client pour pouvoir l'utiliser. Le **Load Balancer** est reconfiguré lors du redéploiement et fait pointer l'adresse FQDN du cluster sur l'adresse privé de **Prism Central**.
+> dans la boite à lettre du compte client pour pouvoir l'utiliser. Le **Load Balancer** est reconfiguré lors du redéploiement et fait pointer l'adresse FQDN du cluster sur l'adresse privée de **Prism Central**.
 
 ## Aller plus loin
 
-[Utilisation de l'API d'OVHCLOUD](https://docs.ovh.com/fr/api/)
+[Utilisation de l'API d'OVHcloud](https://docs.ovh.com/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
