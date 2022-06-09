@@ -26,9 +26,9 @@ Reconditionner un cluster avec des paramètres réseaux personnalisées au trave
 
 ## Présentation des besoins techniques pour la reconfiguration d'un cluster.
 
-Avant de reconfigurer un cluster il faut connaitre les besoins techniques pour la reconfiguration d'un cluster.
+Avant de reconfigurer un cluster il faut connaitre certains éléments techniques pour la reconfiguration d'un cluster.
 
-Il faudra définir un réseau privé avec son masque de sous réseau et ensuite définir des adresses IP à l'intérieur de cette étendue comme `XX.XX.XX.XX/XX`.
+Il faut définir un réseau privé avec son masque de sous réseau comme ceci `XX.XX.XX.XX/XX` et ensuite choisir des adresses IP à l'intérieur de cette étendue.
 
 La liste des adresses IP nécessaires varie en fonction du nombre de serveurs commandés (La solution Proposée par OVHcloud va de 3 à 18 nœuds) et du choix de configuration de Prism Central (Mode **Alone** ou **Scale**) voici le détail des besoins :
 
@@ -75,9 +75,11 @@ Se connecter à l'API d'OVHcloud au travers de l'interface WEB [API OVHcloud](ht
 
 Cliquer sur `Explore the OVH API`{.action} au milieu de l'écran.
 
+
 ![API connection 01](images/00-apiconnection01.png)
 
 Cliquer sur `Login`{.action} en haut à droite.
+
 
 ![API connection 02](images/00-apiconnection02.png)
 
@@ -113,7 +115,7 @@ En dessous de **nodes* complétez ces données :
 * **ahvip** : `Adresse IP de l'hyperviseur du premier nœud`.
 * **cvmip** : `Adresse IP de la CVM du second nœud`.
 
-Cliquez sur le bouton en signe de `Plus`{.action}.
+Cliquez sur le bouton `Plus`{.action}.
 
 ![Cluster Redeployment 03](images/01-cluster-redeployment03.png)
 
@@ -122,7 +124,7 @@ Rajoutez les informations du deuxième nœud :
 * **ahvip** : `Adresse IP de l'hyperviseur du deuxième nœud`{.action}.
 * **cvmip** : `Adresse IP de la CVM du deuxième nœud`{.action}.
 
-Cliquez sur le bouton en signe de `Plus`{.action}.
+Cliquez sur le bouton `Plus`{.action}.
 
 ![Cluster Redeployment 04](images/01-cluster-redeployment04.png)
 
@@ -133,7 +135,7 @@ Insérer les informations du dernier nœud :
 
 Faites défilez la fenêtre du navigateur avec la `barre de défilement`{.action}.
 
-![Cluster Redeployment 04](images/01-cluster-redeployment04.png)
+![Cluster Redeployment 04](images/01-cluster-redeployment05.png)
 
 Cochez `define property`{.action} et `Empty array`{.action}, choisissez dans **type** `alone`{.action} et saisissez dans **vip** `L'adresse IP de Prim Central`{.action}.
 
@@ -141,7 +143,7 @@ Ensuite saisissez dans **prismElementVip** `L'adresse IP de Prim Element`{.actio
 
 Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 
-![Cluster Redeployment 05](images/01-cluster-redeployment04.png)
+![Cluster Redeployment 05](images/01-cluster-redeployment06.png)
 
 > [!info]
 > Le redéploiment du cluster durera au minimum deux heures il faudra attendre de recevoir un message
