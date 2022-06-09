@@ -6,11 +6,11 @@ section: Premiers pas
 order: 03
 ---
 
-**Dernière mise à jour le 31/05/2022**
+**Dernière mise à jour le 09/06/2022**
 
 ## Objectif
 
-Reconditionner un cluster avec des paramètres réseaux personnalisées au travers de l'API OVHcloud
+Reconditionner un cluster avec des paramètres réseaux personnalisées au travers de l'API d'OVHcloud
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -37,7 +37,7 @@ La liste des adresses IP necessaire varie en fonction du nombre de serveurs ache
 - Une adresse IP pour la passerelle
 - Certaines adresses du plan IP choisie sont réservées pour le LOAD-BALANCER elle seront toujours avec le réseau XX.XX.XX.128 et un masque à 255.255.255.228. soit les adresses comprise en XX.XX.XX.129 & XX.XX.XX.158 du réseau choisi
 
-**Exemple1 :**  Reconfiguration d'un cluster avec 3 noeuds sur un plan IP en 192.168.10.0/24
+**Exemple1 :**  Reconfiguration d'un cluster avec 3 nœuds sur un plan IP en 192.168.10.0/24
 
 - Serveur1: adresse VM CVM1 : 192.168.10.1, adresse IP hyperviseur 192.168.10.21.
 - Serveur2: adresse VM CVM2 : 192.168.10.2, adresse IP hyperviseur 192.168.10.22.
@@ -47,7 +47,7 @@ La liste des adresses IP necessaire varie en fonction du nombre de serveurs ache
 - réservé pour le load balancer 192.168.10.128 à 192.168.10.159.
 - Passerelle 192.168.10.254
 
-**Exemple2 :**  Reconfiguration d'un cluster avec 4 noeuds en mode Scale pour Prism Central sur un plan IP en 172.16.0.0/16
+**Exemple2 :**  Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour Prism Central sur un plan IP en 172.16.0.0/16
 
 - Serveur1: adresse VM CVM1 : 172.16.10.1, adresse IP hyperviseur 172.16.10.21.
 - Serveur2: adresse VM CVM2 : 172.16.10.2, adresse IP hyperviseur 172.16.10.22.
@@ -59,14 +59,103 @@ La liste des adresses IP necessaire varie en fonction du nombre de serveurs ache
 - Le load balancer 172.16.10.128 à 172.16.10.159.
 - Passerelle 172.16.0.254
 
-## Reconfiguration d'un cluster à l'aide de l'API d'OVHcloud
+## En pratique
+
+Nous allons redeployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précedent.
+
+> [!warning]
+> L'opération de reploiement du cluster est irreversible toutes les données du cluster sont supprimée
+> et un nouveau mot de passe du compte admin sera généré et envoyé sur la boite à lettre du compte client.
 
 Se connecter à l'API d'OVHcloud au travers de l'interface WEB [API OVHcloud](https://api.ovh.com) avec votre compte client
 
+Cliquer sur  `Explore the OVH API`{.action} au milieu de l'écran.
+
+![API connection 01](images/00-connectionapi01.png)
+
+Cliquer sur `Login`{.action} en haut à droite.
+
+![API connection 02](images/00-connectionapi02.png)
+
+Saisissez ces informations.
+
+- **Email** : `nom ou email du compte client`
+- **Password** : `Mot de passe du compte client`
+
+et cliquez sur `Login`{.action}.
+
+![API connection 03](images/00-connectionapi03.png)
+
+Cliquez sur `Authorize`{.action}.
+
+![API connection 04](images/00-connectionapi04.png)
+
+Au travers de l'interface cliquez sur `Nutanix`{.action}.
+
+![Cluster Redeployment 01](images/01-cluster-redeployment01.png)
+
+Choisissez `Update nutanix cluster info`{.action}.
+
+![Cluster Redeployment 02](images/01-cluster-redeployment02.png)
+
+Remplissez ces données :
+
+**ServiceName** : `Nom FQDN de votre cluster Nutanix`{.action}.
+**redeploycluster** : `Cochez la case`{.action}.
+**gatewayCidr** : `l'adresse IP de la paserelle suivi du masque de sous réseau`{.action}.
+
+En dessous de **nodes* completez ces données :  
+
+**ahvip** : `Adresse IP de l'hyperviseur du premier nœud`{.action}y.
+**cvmip** : `Adresse IP de la CVM du second nœud`{.action}.
+
+Cliquez sur le bouton en signe de `Plus`{.action}.
+
+![Cluster Redeployment 03](images/01-cluster-redeployment03.png)
+
+Rajouter les informations du deuxième nœud :
+
+**ahvip** : `Adresse IP de l'hyperviseur du deuxième nœud`{.action}.
+**cvmip** : `Adresse IP de la CVM du deuxième nœud`{.action}.
+
+Cliquez sur le bouton en signe de `Plus`{.action}.
+
+![Cluster Redeployment 04](images/01-cluster-redeployment04.png)
+
+Inserer les information du dernier nœud :
+
+**ahvip** : `Adresse IP de l'hyperviseur du dernier nœud`{.action}.
+**cvmip** : `Adresse IP de la CVM du dernier nœud`{.action}.
+
+Faites défilez la fenêtre du navigateur avec la `barre de défilement`{.action}.
+
+![Cluster Redeployment 04](images/01-cluster-redeployment04.png)
+
+Cochez `define property`{.action} cochez `Empty array`{.action}, choisissez dans **type** alone et saisir dans **vip** `L'adresse IP de Prim Central`{.action}.
+
+Ensuite saisissez dans **prismElementVip** `L'adresse IP de Prim Element`{.action} suivi dans **redondancyFactor** `Numero du facteur de redondance`{.action} et dans **version** du  `numéro de version du cluster`{.action}
+
+Cliquez sur `Execute`{.action} pour lancer le redeploiement du cluster.
+
+![Cluster Redeployment 05](images/01-cluster-redeployment04.png)
+
+> [!info]
+> Le redeploiment du cluster durera au minimum deux heures il faudra attendre de recevoir un message
+> dans la boite à lettre du compte client.
 
 
 
-https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~PUT
+
+
+
+
+
+
+
+
+
+
+
 
 
 
