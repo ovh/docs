@@ -7,7 +7,7 @@ section: Envoi/Réception de fax
 order: 1
 ---
 
-**Dernière mise à jour le 08/06/2022**
+**Dernière mise à jour le 09/06/2022**
 
 ## Objectif
 
@@ -108,7 +108,7 @@ Cette option peut être activée en écrivant, dans le corps de l'e-mail, une va
 
 - **L'envoi différé** : permet de programmer à l'avance l'envoi d'un fax.
 
-Cette option peut être activée en écrivant, dans le corps de l'e-mail, une variable sous cette forme : `date:21-06-2022 15:15:00`.
+Cette option peut être activée en écrivant, dans le corps de l'e-mail, une variable sous cette forme : `date:2022-06-21 15:45:00`.
 
 ### Les erreurs d'envoi <a name="errors"></a>
 
