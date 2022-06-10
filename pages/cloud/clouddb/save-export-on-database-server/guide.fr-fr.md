@@ -2,7 +2,7 @@
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 slug: sauvegarder-exporter-une-base-de-donnees
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-section: 'CloudDB'
+section: 'Configuration'
 order: 4
 ---
 
