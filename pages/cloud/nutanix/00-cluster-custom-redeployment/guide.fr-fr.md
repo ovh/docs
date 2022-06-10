@@ -120,7 +120,8 @@ Ensuite faites défilez la fenêtre du navigateur avec la barre de défilement.
 Dans la rubrique **Prism Central Configuration** cochez `Define property`{.action} et `Empty array`{.action}.<br>
 Choisissez `alone` dans le menu déroulant **type**  et saisissez `L'adresse IP de Prism Central` dans le menu déroulant **vip** .
 
-Saisissez ensuite 
+Saisissez ensuite :
+
 - `L'adresse IP de Prism Element` dans le menu déroulant **prismElementVip**.
 - Le `Numero du facteur de redondance` dans le menu déroulant **redondancyFactor**.
 - Le `numéro de version du cluster` dans le menu déroulant **version**.
