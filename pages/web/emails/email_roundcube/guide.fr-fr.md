@@ -262,17 +262,20 @@ Complétez ensuite les informations du contact.
 
 Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. Cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
 
-- `Importer d’un fichier` : sélectionnez un fichier CSV séparé par des virgules ou un fichier vCard sur votre ordinateur. Le fichier ne doit pas dépasser les 20 Mo
-- `Importer les affectations de groupe` : Si des groupes sont attribués dans votre fichier, il peut être intérressant d'activer cette option pour les retrouver les dossiers ou encore de laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
-- `Remplacer le carnet d’adresses entier`: il est judicieux d'exporter le carnet actuel avant de cocher cette option ou d'être certain de vouloir définitivement le remplacer.
+- `Importer d’un fichier` : sélectionnez un fichier CSV ou un fichier vCard sur votre ordinateur. Les contacts au sein d'un fichier CSV doivent être séparés par des virgules. Le fichier ne doit pas faire plus de 20 Mo.
+- `Importer les affectations de groupe` : Si les contacts de votre fichier sont répartis par groupes, vous pouvez activer cette option pour retrouver cette organisaton ou bien laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
+- `Remplacer le carnet d’adresses entier`: Si un carnet est déjà configuré, nous vous conseillons de l'exporter avant de cocher cette option ou d'être certain de vouloir définitivement le remplacer.
 
 ![hosting](images/roundcube-import-contact.png){.thumbnail}
 
 #### Exporter les Contacts Roundcube
 
-Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. Cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
 
-Vous avez le choix entre `Tout exporter`{.action}, l'ensemble des contacts seront réunis dans un fichier **.vcf**, ou cliquez sur `Exporter la sélection`{.action} pour exporter uniquement les éléments que vous aurez choisis dans la colonne `Contacts`{.action}.
+Vous avez le choix entre :
+
+- `Tout exporter`{.action} et l'ensemble des contacts sera alors exporté dans un fichier **.vcf**.
+- `Exporter la sélection`{.action} pour exporter uniquement les éléments que vous aurez choisis dans la colonne `Contacts`{.action}.
 
 ![hosting](images/roundcube-export-contact.png){.thumbnail}
 
