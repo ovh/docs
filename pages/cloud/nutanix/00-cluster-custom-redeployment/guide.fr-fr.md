@@ -79,7 +79,7 @@ Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails s
 
 Utilisez l'appel API suivant :
 
-[!api]
+> [!api]
 >
 > @api {put} /nutanix/{serviceName}
 >
