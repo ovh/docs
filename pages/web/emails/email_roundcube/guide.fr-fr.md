@@ -1,7 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
 slug: utilisation-roundcube
-excerpt: 'Découvrez comment utiliser le webmail RoundCube pour vos adresses e-mail OVHcloud'
 section: 'Premiers pas'
 order: 05
 ---
@@ -35,7 +34,7 @@ Vous serez alors redirigé vers l'interface RoundCube.
 > 
 > Si vous êtes redirigé sur une interface **O**utlook **W**eb **A**ccess (OWA), cela signifie que vous êtes sur la dernière version de l'offre MX Plan. Pour plus d'information sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/).
 >
-> Pour vous familiariser avec l'interface **OWA**, consultez notre guide  [Consulter son compte e-mail depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
+> Pour vous familiariser avec l'interface **OWA**, consultez notre guide [Consulter son compte e-mail depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
 
 ### Interface générale du webmail RoundCube <a name="general-interface"></a>
 
@@ -51,7 +50,7 @@ Une fois connecté à votre compte e-mail, vous avez accès à la fenêtre princ
 
 Dans cette zone apparaissent les dossiers présents dans votre compte e-mail.
 
-Pour gérer plus précisément les dossiers, cliquez sur la roue crantée en bas de la colonne puis sur `Gérer les dossiers`{.action}
+Pour gérer plus précisément les dossiers, cliquez sur la roue crantée en bas de la colonne puis sur `Gérer les dossiers`{.action}.
 
 ![hosting](images/roundcube02.png){.thumbnail}
 
@@ -144,7 +143,7 @@ Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire
 L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des termes relatifs tels qu’« Aujourd’hui », « Hier », etc.<br>
 **Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'email correspond au mardi qui précède.
 
-La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri. 
+La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
 
 #### Vue de la boîte de courriels
 
