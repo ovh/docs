@@ -6,11 +6,11 @@ section: Premiers pas
 order: 05
 ---
 
-**Dernière mise à jour le 09/06/2022**
+**Dernière mise à jour le 10/06/2022**
 
 ## Objectif
 
-Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés via l'API d'OVHcloud.
+Découvrez comment reconditionner un Cluster avec des paramètres réseau personnalisés via l'API OVHcloud.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -39,15 +39,17 @@ Voici le détail des besoins :
 - 3 adresses IP optionnelles pour un déploiement de **Prism Central** en mode Scale avec 3 machines virtuelles.
 - Une adresse IP pour la passerelle Internet.
 
-Certaines adresses du plan IP sont réservées pour le **Load balancer**. Elles sont toujours sur le réseau `XX.XX.XX.128/27`, soit les adresses comprises en `XX.XX.XX.129 & XX.XX.XX.158` du réseau. Il ne faut pas les utiliser lors du redéploiement.
+> [!warning]
+> Certaines adresses du plan IP sont réservées pour le **Load balancer**. Elles sont toujours sur le réseau `XX.XX.XX.128/27`, soit les adresses comprises entre `XX.XX.XX.129` et `XX.XX.XX.158` du réseau. Il ne faut pas les utiliser lors du redéploiement.
+>
 
 Voici deux exemples possibles de configuration d'un cluster Nutanix chez OVHcloud :
 
 **Exemple 1 :** Reconfiguration d'un cluster avec 3 nœuds sur un plan IP en `192.168.10.0/24`.
 
-- Serveur1 : adresse VM **CVM** `192.168.10.1`, adresse IP hyperviseur **AHV** `192.168.10.21`.
-- Serveur2 : adresse VM **CVM** `192.168.10.2`, adresse IP hyperviseur **AHV** `192.168.10.22`.
-- Serveur3 : adresse VM **CVM** `192.168.10.3`, adresse IP hyperviseur **AHV** `192.168.10.23`.
+- Serveur 1 : adresse VM **CVM** `192.168.10.1`, adresse IP hyperviseur **AHV** `192.168.10.21`.
+- Serveur 2 : adresse VM **CVM** `192.168.10.2`, adresse IP hyperviseur **AHV** `192.168.10.22`.
+- Serveur 3 : adresse VM **CVM** `192.168.10.3`, adresse IP hyperviseur **AHV** `192.168.10.23`.
 - Adresse virtuelle de **Prism Element** : `192.168.10.111`.
 - Adresse IP  **Prism Central** :`192.168.10.222`.
 - Etendue réservée pour le load balancer : `192.168.10.128 à 192.168.10.159`.
@@ -55,10 +57,10 @@ Voici deux exemples possibles de configuration d'un cluster Nutanix chez OVHclou
 
 **Exemple 2 :** Reconfiguration d'un cluster avec 4 nœuds en mode Scale pour **Prism Central** sur un plan IP en `172.16.0.0/16`.
 
-- Serveur1 : adresse VM **CVM** `172.16.0.1`, adresse IP hyperviseur **AHV** `172.16.0.21`.
-- Serveur2 : adresse VM **CVM** `172.16.0.2`, adresse IP hyperviseur **AHV** `172.16.0.22`.
-- Serveur3 : adresse VM **CVM** `172.16.0.3`, adresse IP hyperviseur **AHV** `172.16.0.23`.
-- Serveur4 : adresse VM **CVM** `172.16.0.4`, adresse IP hyperviseur **AHV** `172.16.0.24`.
+- Serveur 1 : adresse VM **CVM** `172.16.0.1`, adresse IP hyperviseur **AHV** `172.16.0.21`.
+- Serveur 2 : adresse VM **CVM** `172.16.0.2`, adresse IP hyperviseur **AHV** `172.16.0.22`.
+- Serveur 3 : adresse VM **CVM** `172.16.0.3`, adresse IP hyperviseur **AHV** `172.16.0.23`.
+- Serveur 4 : adresse VM **CVM** `172.16.0.4`, adresse IP hyperviseur **AHV** `172.16.0.24`.
 - Adresse virtuelle de **Prism Element** : `172.16.0.111`.
 - Adresse virtuelle de **Prism Central** : `172.16.0.222`.
 - VM Prism Central : `172.16.0.223 à 172.16.0.225`.
@@ -70,7 +72,7 @@ Voici deux exemples possibles de configuration d'un cluster Nutanix chez OVHclou
 Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitre précèdent.
 
 > [!warning]
-> L'opération de redéploiement du cluster est irréversible. Toutes les données du cluster sont supprimées et un nouveau mot de passe du compte admin est généré et envoyé par e-mail au titulaire du compte client.
+> L'opération de redéploiement du Cluster est irréversible. Toutes les données du Cluster seront supprimées et un nouveau mot de passe du compte admin sera généré et envoyé par e-mail au titulaire du compte client OVHcloud.
 >
 
 Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
@@ -128,13 +130,13 @@ Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 ![Cluster Redeployment 05](images/01-cluster-redeployment06.png)
 
 > [!warning]
-> Le redéploiement du Cluster dure deux heures au minimum. Patientez jusqu'à la réception d'un e-mail adressé au titulaire du compte **avant** d'utiliser à nouveau le Cluster.
+> Le redéploiement du Cluster dure deux heures au minimum. Patientez jusqu'à la réception d'un e-mail adressé au titulaire du compte OVHcloud **avant** d'utiliser à nouveau le Cluster.
 >
 > Le **Load Balancer** est reconfiguré lors du redéploiement et fait pointer l'adresse FQDN du Cluster sur l'adresse privée de **Prism Central**.
 >
 
 ## Aller plus loin
 
-[Utilisation de l'API d'OVHcloud](https://docs.ovh.com/fr/api/)
+[Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
