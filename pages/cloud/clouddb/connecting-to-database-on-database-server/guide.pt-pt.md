@@ -2,7 +2,7 @@
 title: 'Conexão à base de dados do servidor de bases de dados'
 slug: conexao-base-de-dados-servidor-bdd
 excerpt: 'Saiba como se conectar a uma base de dados'
-section: CloudDB
+section: Configuração
 order: 3
 ---
 

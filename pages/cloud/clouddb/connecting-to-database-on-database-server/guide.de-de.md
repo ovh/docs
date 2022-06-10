@@ -2,7 +2,7 @@
 title: 'Mit der Datenbank Ihres Datenbankservers verbinden'
 slug: datenbank-verbindung-auf-bdd
 excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
-section: CloudDB
+section: Konfiguration
 order: 3
 ---
 

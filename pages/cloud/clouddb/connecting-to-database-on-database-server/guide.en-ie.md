@@ -2,7 +2,7 @@
 title: 'Connecting to a database on your database server'
 slug: connecting-to-database-on-database-server
 excerpt: 'Find out how to log in to your database'
-section: CloudDB
+section: Configuration
 order: 3
 ---
 
@@ -16,15 +16,15 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a [Cloud Database](https://www.ovh.ie/cloud-databases/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
 > [!primary]
 >
 > Please note that there is no root access.
-> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> <br> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Logging in to a MySQL or MariaDB database 
@@ -34,9 +34,9 @@ You can access your database’s content via an interface. There are several way
 > Since MariaDB is a derivative of MySQL, the commands are exactly the same for these 2 types of databases.
 > 
 
-####  With OVHcloud phpMyAdmin
+####  With OVHcloud phpMyAdmin 
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the SQL instance concerned.
 
 In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
 
@@ -131,11 +131,13 @@ To connect to your database, please ensure that you have the following informati
 
 #### Connecting via the command line
 
+
 ```bash
 psql --host=server --port=port --user=username --password=password database_name
 ```
 
 #### Connecting via PHP script
+
 
 ```php
 1. <?php

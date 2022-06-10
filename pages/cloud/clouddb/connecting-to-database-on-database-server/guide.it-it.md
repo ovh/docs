@@ -2,7 +2,7 @@
 title: Accedere al database del tuo database server
 slug: connessione-database-server-bdd
 excerpt: Come connettersi al database
-section: CloudDB
+section: Configurazione
 order: 3
 ---
 
