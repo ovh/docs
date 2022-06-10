@@ -2,7 +2,7 @@
 title: 'Konfiguracja serwera baz danych'
 slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-section: 'CloudDB'
+section: 'Konfiguracja'
 order: 6
 ---
 

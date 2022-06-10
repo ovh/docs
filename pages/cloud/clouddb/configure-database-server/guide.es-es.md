@@ -2,7 +2,7 @@
 title: 'Configurar el servidor de bases de datos'
 slug: configurar-optimizar-su-servidor-de-base-de-datos
 excerpt: 'Cómo configurar y optimizar el servidor de bases de datos'
-section: CloudDB
+section: Configuración
 order: 6
 ---
 
