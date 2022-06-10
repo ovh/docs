@@ -47,7 +47,7 @@ Sobald Sie auf Ihren E-Mail-Account eingeloggt sind, haben Sie Zugriff auf das R
 
 - [**Unteres Fenster**](#lowerwindow): den Inhalt der im oberen Fenster ausgewählten E-Mail.
 
-#### Ordnerverwaltung (linke Spalte) <a name="leftclumn"></a>
+#### Ordnerverwaltung (linke Spalte) <a name="leftcloumn"></a>
 
 In dieser Zone werden die Ordner in Ihrem E-Mail-Account angezeigt.
 

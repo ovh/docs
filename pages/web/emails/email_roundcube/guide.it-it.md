@@ -50,7 +50,7 @@ Una volta connesso al tuo account email, hai accesso alla finestra principale di
 
 - [**Finestra inferiore**](#lowerwindow): il contenuto dell'email selezionata nella finestra superiore.
 
-#### Gestione delle cartelle (colonna di sinistra) <a name="leftclumn"></a>
+#### Gestione delle cartelle (colonna di sinistra) <a name="leftcloumn"></a>
 
 In questa sezione vengono mostrate le cartelle presenti nel tuo account email.
 

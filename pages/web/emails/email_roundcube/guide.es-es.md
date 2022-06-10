@@ -50,7 +50,7 @@ Una vez que se haya conectado a su cuenta de correo, acceda a la ventana princip
 
 - [**Ventana inferior**](#lowerwindow): el contenido del correo electrónico seleccionado en la ventana superior.
 
-#### Gestión de carpetas (columna izquierda) <a name="leftclumn"></a>
+#### Gestión de carpetas (columna izquierda) <a name="leftcolumn"></a>
 
 En esta área aparecen las carpetas de su cuenta de correo.
 
@@ -216,7 +216,7 @@ Por defecto, la casilla de `firma` es "texto en claro". Este formato no permite 
 >
 
 Para insertar una imagen en una firma, la imagen debe alojarse en un servidor (un alojamiento de OVHcloud u otro).<br>
-**Revertir una imagen desde un ordenador no permitirá su visualización**.
+**Importar una imagen desde un ordenador no permitirá su visualización**.
 
 Haga clic en el botón `< >`{.action} de la barra de herramientas HTML e inserte el siguiente código, sustituyendo `your-image-url` por la dirección (URL) de la imagen y `text-if-image-is-not-displayed` por un texto que sustituya a la imagen si no puede mostrarse.
 

@@ -46,7 +46,7 @@ Une fois connecté à votre compte e-mail, vous avez accès à la fenêtre princ
 
 - [**Fenêtre inférieure**](#lowerwindow) : le contenu de l'e-mail sélectionné dans la fenêtre supérieure.
 
-#### Gestion des dossiers (colonne de gauche) <a name="leftclumn"></a>
+#### Gestion des dossiers (colonne de gauche) <a name="leftcolumn"></a>
 
 Dans cette zone apparaissent les dossiers présents dans votre compte e-mail.
 
@@ -257,6 +257,24 @@ Complétez ensuite les informations du contact.
 
 > [!primary]
 > Vous pouvez ajouter des champs supplémentaires via le menu déroulant `Ajouter un champ...`{.action}, situé sous les champs `Prénom` et `Adresse`.
+
+#### Importer des Contacts
+
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. Cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
+
+- `Importer d’un fichier` : sélectionnez un fichier CSV séparé par des virgules ou un fichier vCard sur votre ordinateur. Le fichier ne doit pas dépasser les 20 Mo
+- `Importer les affectations de groupe` : Si des groupes sont attribués dans votre fichier, il peut être intérressant d'activer cette option pour les retrouver les dossiers ou encore de laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
+- `Remplacer le carnet d’adresses entier`: il est judicieux d'exporter le carnet actuel avant de cocher cette option ou d'être certain de vouloir définitivement le remplacer.
+
+![hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Exporter les Contacts Roundcube
+
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
+
+Vous avez le choix entre `Tout exporter`{.action}, l'ensemble des contacts seront réunis dans un fichier **.vcf**, ou cliquez sur `Exporter la sélection`{.action} pour exporter uniquement les éléments que vous aurez choisis dans la colonne `Contacts`{.action}.
+
+![hosting](images/roundcube-export-contact.png){.thumbnail}
 
 ### Réponses (gabarits) <a name="responses"></a>
 
