@@ -5,7 +5,7 @@ excerpt: Erfahren Sie hier, wie Sie das sichere Interface verwenden, um kritisch
 section: OVHcloud Dienste und Optionen
 ---
 
-**Letzte Aktualisierung am 10.09.2020**
+**Letzte Aktualisierung am 10.06.2022**
 
 ## Ziel
 

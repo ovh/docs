@@ -6,7 +6,7 @@ section: Servicios y opciones de OVHcloud
 order: 04
 ---
 
-**Última actualización: 30/06/2020**
+**Última actualización: 10/06/2022**
 
 ## Objetivo
 

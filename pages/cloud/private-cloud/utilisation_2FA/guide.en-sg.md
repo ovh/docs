@@ -6,7 +6,7 @@ section: 'OVHcloud Features'
 order: 5
 ---
 
-**Last updated 9th July 2020**
+**Last updated 10th June 2022**
 
 ## Objective
 

@@ -5,7 +5,7 @@ excerpt: Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung einrichten
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 10.09.2020**
+**Letzte Aktualisierung am 10.06.2022**
 
 ## Ziel
 
