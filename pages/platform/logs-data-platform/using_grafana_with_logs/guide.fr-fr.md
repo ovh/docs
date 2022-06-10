@@ -19,7 +19,7 @@ This is what you need to know to get you started:
 - you are already sending logs on a stream you own [see the quick start tutorial](../quick-start){.ref}
 - Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
 
-After some training you will be able to create this kind of dashboard: 
+After some training you will be able to create this kind of dashboard:
 
 ![Grafana Dashboard](images/grafana.png)
 
@@ -57,14 +57,14 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > [!warning]
 >
 > To make the magic happens, please ensure to:
-> 
+>
 > - Set `https://<your_cluster>.logs.ovh.com:9200` as Url value
 > - Set your Logs Data Platform credentials for Basic auth values
 > - Set your Logs Data Platform alias name as Grafana Index name value
 > - Change default Time field name to timestamp
 > - Set **6.0+** as OpenSearch version
 > - Register your data source and test it.
-> 
+>
 
 ### Test it!
 

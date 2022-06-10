@@ -18,7 +18,7 @@ This is what you need to know to get you started:
 - You are already sending logs on a stream you own: [see the quick start tutorial](../quick-start){.ref}
 - There is nothing else
 
-After some training you will be able to do this kind of Dashboard: 
+After some training you will be able to do this kind of Dashboard:
 
 ![OpenSearch Dashboards](images/osd.png)
 
@@ -42,7 +42,7 @@ So now Logs Data Platform knows which stream you want to browse. Now let's confi
 
 ### Access your OpenSearch Dashboards instance
 
-To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes. 
+To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes.
 
 ![osd creation](images/osd_created.png){.thumbnail}
 
@@ -51,7 +51,7 @@ Use the **...** menu at the right and select `Access to your OpenSearch Dashboar
 
 ![osd access](images/url.png){.thumbnail}
 
-Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also fly there by using the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button. 
+Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also fly there by using the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button.
 
 In this configuration page, you can configure as the Index name, the full name of your alias **logs-XXXXX-a-XXXXX**, but you can also use wildcards. Choose **timestamp** for the time field name then click on Discover tab to read your log entries.
 

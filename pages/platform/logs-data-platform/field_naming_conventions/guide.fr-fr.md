@@ -69,7 +69,7 @@ As you can see, it is fairly straightforward. Suffix your field with the right v
 
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_num":87.6,
@@ -94,7 +94,7 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 Our platform limits the usage of IP adresses as field keys. IP addresses have a high cardinality and thus are not allowed to be used as keys (of course they are supported and enriched as values, as you can see above). If you use an IP address as key, it will be changed. For example:
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_user_id_float":123,
@@ -106,7 +106,7 @@ Our platform limits the usage of IP adresses as field keys. IP addresses have a 
 will become:
 
 ```json
-{  
+{
    "version":"1.1",
    "host":"my_host",
    "_some_user_id_float":123,

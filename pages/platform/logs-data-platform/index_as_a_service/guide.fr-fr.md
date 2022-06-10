@@ -369,7 +369,7 @@ The **maximum size** of your index is fixed and is dependent on the number of sh
 > **Once your index is full, It will be blocked on write requests** and you will have no choice but to use
 > [_Delete By query_](https://opensearch.org/docs/latest/opensearch/rest-api/document-apis/delete-by-query/)
 > requests to free space on your index.
-> 
+>
 
 Note that you can monitor yourself the size of the index by using the following curl query:
 

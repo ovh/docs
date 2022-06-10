@@ -199,7 +199,7 @@ email:
 
 We won't detail all the parameters since most of them are self-explanatory. However, please pay attention to the **index** parameter. This index or alias is the one containing the logs or documents you want to be alerted from.
 
-It's also important to customize the timestamp parameters according to the timestamp of your logs or documents. Here we customize a **custom** timestamp on the **timestamp_field** `timestamp` with the format used in the logs pipeline `%Y-%m-%d %H:%M:%S.%f`. Because this format can have more than 3 extra numbers, we need to truncate them using the **timestamp_format_expr** option. Note that Elastalert does not support nanoseconds, so you will have to limit the precision of your timestamp to microseconds. 
+It's also important to customize the timestamp parameters according to the timestamp of your logs or documents. Here we customize a **custom** timestamp on the **timestamp_field** `timestamp` with the format used in the logs pipeline `%Y-%m-%d %H:%M:%S.%f`. Because this format can have more than 3 extra numbers, we need to truncate them using the **timestamp_format_expr** option. Note that Elastalert does not support nanoseconds, so you will have to limit the precision of your timestamp to microseconds.
 
 ## Launch ElastAlert
 
