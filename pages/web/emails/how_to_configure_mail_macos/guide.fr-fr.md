@@ -79,7 +79,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 >
 > **Changer sa configuration**
 >
-> Lorsque vous configurez votre adresse e-mail en **IMAP** et que vous souhaitez changer la configuration en **POP**, il est nécessaire de supprimer le compte de Mail de Mac puis de le recréer en **POP** pour changer la configuration.
+> Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte sur Mail de MacOS puis le recréer en **POP**.
 
 ## Aller plus loin
 
