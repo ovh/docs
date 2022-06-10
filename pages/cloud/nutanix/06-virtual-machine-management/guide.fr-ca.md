@@ -3,7 +3,7 @@ title: Gestion des machines virtuelles
 slug: virtual-machine-management
 excerpt: "Découvrez la gestion des machines virtuelles dans Prism Central"
 section: Premiers pas
-order: 06
+order: 09
 ---
 
 **Dernière mise à jour le 10/05/2022**
