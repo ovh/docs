@@ -10,7 +10,7 @@ section: Use cases
 
 ## Objective
 
-[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/Opensearch ecosystem. Their mojo is : "If you can see in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Opensearch through [aliases](../using-kibana-with-logs){.ref} and [indexes](../index-as-a-service){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert 2](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp. It is able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch/OpenSearch ecosystem. Their mojo is : "If you can see it in your dashboards, ElastAlert 2 can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with OpenSearch through [aliases](../using-kibana-with-logs){.ref} and [indexes](../index-as-a-service){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
 
 ## Requirements
 
@@ -22,7 +22,7 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Preparation
 
-In order to deploy ElastAlert, it is important that you have data on which you want to alert things on. If you only have Graylog stream, you can use aliases to enable the Opensearch API on your stream data. Here is how:
+In order to deploy ElastAlert, it is important that you have data on which you want to alert things on. If you only have Graylog stream, you can use aliases to enable the OpenSearch API on your stream data. Here is how:
 
 
 1. Go to the Logs Data Platform manager.
@@ -79,7 +79,7 @@ ElastAlert needs **5** indices to operate:
 - The **silence** index indicating if a reoccuring alert should be triggered or silenced.
 - The **past** index with all the alerts triggered and closed.
 
-The following command will create the indices on Logs Data Platform directly from Opensearch API.
+The following command will create the indices on Logs Data Platform directly from OpenSearch API.
 
 ```shell-session
 $ elastalert-create-index --host <ldp-cluster>.logs.ovh.com --port 9200 --username <username> --password <password> --ssl --index <username>-i-<suffix>
@@ -135,14 +135,14 @@ alert_time_limit:
 You can find all the available options [here](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring){.external}.
 
 - **rules_folder** is where ElastAlert will load rule configuration files from. It will attempt to load every .yaml file in the folder. Without any valid rules, ElastAlert will not start. In this folder.
-- **run_every** is how often ElastAlert will query Opensearch.
+- **run_every** is how often ElastAlert will query OpenSearch.
 - **buffer_time** is the size of the query window, stretching backwards from the time each query is run.
-- **es_host** is the address of an Opensearch cluster where ElastAlert will store data about its state, queries run, alerts, and errors. Each rule may also use a different Opensearch host to query against.
+- **es_host** is the address of an OpenSearch cluster where ElastAlert will store data about its state, queries run, alerts, and errors. Each rule may also use a different OpenSearch host to query against.
 - **es_port** is the port corresponding to es\_host.
 - **use_ssl**: whether or not to connect to es\_host using TLS. TLS is mandatory in our platform.
 - **verify_certs** whether or not to verify TLS certificates. Our platform uses certificates validated by most operating systems and browsers.
-- **es_username** is the username used to connect to Opensearch APIs.
-- **es_password** is the password used to connect to Opensearch APIs. Remember that you can use tokens in place of these credentials.
+- **es_username** is the username used to connect to OpenSearch APIs.
+- **es_password** is the password used to connect to OpenSearch APIs. Remember that you can use tokens in place of these credentials.
 - **writeback_index** is the name of the index in which ElastAlert will store data. Use the same name you used to configure indices with `elastalert-create-index`.
 - **alert_time_limit** is the retry window for failed alerts.
 
@@ -179,7 +179,7 @@ timestamp_format: '%Y-%m-%d %H:%M:%S.%f'
 timestamp_format_expr:  'ts[:23]'
 
 # (Required)
-# A list of Opensearch filters used for find events
+# A list of OpenSearch filters used for find events
 # These filters are joined with AND and nested in a filtered query
 # For more info: https://opensearch.org/docs/latest/opensearch/query-dsl/index/
 filter:
@@ -209,10 +209,10 @@ To launch ElastAlert, use the following command :
 $ elastalert --config config.yml
 ```
 
-To test your alert you can use the following curl command sending logs to our [Opensearch endpoint](../ldp-index){.ref}:
+To test your alert you can use the following curl command sending logs to our [OpenSearch endpoint](../ldp-index){.ref}:
 
 ```shell-session
-$ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "stream-token>" , "test_field" : "OVHcloud" , "user": "Oles", "short_message" : "Hello Opensearch input", "host" : "OVHcloud_elastalert" }'
+$ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "stream-token>" , "test_field" : "OVHcloud" , "user": "Oles", "short_message" : "Hello OpenSearch input", "host" : "OVHcloud_elastalert" }'
 ```
 
 If you send this event more than 3 times, the elastalert process will try to send an alert to the configured email address.

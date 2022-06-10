@@ -1,5 +1,5 @@
 ---
-title: Using Opensearch Dashboards with Logs Data Platform
+title: Using OpenSearch Dashboards with Logs Data Platform
 slug: opensearch-dashboards
 order: 2
 section: Visualize your logs
@@ -9,7 +9,7 @@ section: Visualize your logs
 
 ## Objective
 
-This guide will help you unleash the full power of [Opensearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/){.external} and craft some beautiful Dashboards from your logs.
+This guide will help you unleash the full power of [OpenSearch Dashboards](https://opensearch.org/docs/latest/dashboards/index/){.external} and craft some beautiful Dashboards from your logs.
 
 ## Requirements
 
@@ -20,13 +20,13 @@ This is what you need to know to get you started:
 
 After some training you will be able to do this kind of Dashboard: 
 
-![Opensearch Dashboards](images/osd.png)
+![OpenSearch Dashboards](images/osd.png)
 
 ## Instructions
 
 ### Create your Stream Alias
 
-To access your logs from Opensearch Dashboards, you will need to setup an Opensearch Alias and link them to your Graylog streams, so here we go:
+To access your logs from OpenSearch Dashboards, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go:
 
 1. Go back to your manager.
 2. In the Alias panel, click on the `Add an alias`{.action} button
@@ -38,16 +38,16 @@ To access your logs from Opensearch Dashboards, you will need to setup an Opense
 
 ![Alias creation](images/alias.png){.thumbnail}
 
-So now Logs Data Platform knows which stream you want to browse. Now let's configure Opensearch Dashboards and see if it works!
+So now Logs Data Platform knows which stream you want to browse. Now let's configure OpenSearch Dashboards and see if it works!
 
-### Access your Opensearch Dashboards instance
+### Access your OpenSearch Dashboards instance
 
-To create your Opensearch Dashboards instance, click on Opensearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes. 
+To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards tab, Click on `Add a instance`{.action}, put a description and click on **Order** to launch the creation of your instance. Your instance will be created and delivered in approximatively 20 minutes. 
 
 ![osd creation](images/osd_created.png){.thumbnail}
 
 
-Use the **...** menu at the right and select `Access to your Opensearch Dashboards instance`{.action} option to be redirected.
+Use the **...** menu at the right and select `Access to your OpenSearch Dashboards instance`{.action} option to be redirected.
 
 ![osd access](images/url.png){.thumbnail}
 
@@ -57,9 +57,9 @@ In this configuration page, you can configure as the Index name, the full name o
 
 ![osd setup](images/osd_setup.png){.thumbnail}
 
-You can also explore any [Opensearch index](../index-as-a-service){.ref} you created on the platform. One Opensearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
+You can also explore any [OpenSearch index](../index-as-a-service){.ref} you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
 
-To know what you can do with Opensearch Dashboards, you can fly to the [Opensearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
+To know what you can do with OpenSearch Dashboards, you can fly to the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
 
 ## Go further
 

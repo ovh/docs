@@ -41,9 +41,9 @@ At the top of the page, you can see the configuration menu of the two main items
 Below them, you have access to different sections :
 
 3. The **Data-gathering tools** tab, allows requesting OVHcloud to host your own dedicated collector like Logstash or Flowgger.
-4. The **Index** tab, allows creating your dedicated Opensearch Index or retrieve the ones used to store your Opensearch Dashboards settings.
-5. The **Aliases** tab, provides access to your data directly from your Opensearch Dashboards or using an Opensearch query.
-6. The **Kibana** tab, creates your personal Opensearch Dashboards instance, in order to exploit the aliases and index from the powerful Opensearch Dashboards interface.
+4. The **Index** tab, allows creating your dedicated OpenSearch Index or retrieve the ones used to store your OpenSearch Dashboards settings.
+5. The **Aliases** tab, provides access to your data directly from your OpenSearch Dashboards or using an OpenSearch query.
+6. The **Kibana** tab, creates your personal OpenSearch Dashboards instance, in order to exploit the aliases and index from the powerful OpenSearch Dashboards interface.
 7. The **Users Roles**, allows access rights modification of your content.
 
 ### Let's send some logs!
@@ -196,7 +196,7 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - [Send correctly formatted logs](../field-naming-conventions){.ref} to use custom types as number, boolean and other stuffs
 - [Configure your syslog-ng](../how-to-log-your-linux){.ref} to send your Linux logs to Logs Data Platform.
 - [Using roles](../roles){.ref} to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
-- [Using Opensearch Dashboards and aliases to unleash the power of Opensearch](../opensearch-dashboards){.ref}
+- [Using OpenSearch Dashboards and aliases to unleash the power of OpenSearch](../opensearch-dashboards){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](https://docs.graylog.org/docs/queries){.external}
 - Documentation: [Guides](../){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

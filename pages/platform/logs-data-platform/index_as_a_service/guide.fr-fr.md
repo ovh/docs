@@ -1,8 +1,8 @@
 ---
-title: Opensearch made easy with Index As A Service
+title: OpenSearch made easy with Index As A Service
 slug: index-as-a-service
 order: 2
-excerpt: Use the power of Opensearch without managing a cluster.
+excerpt: Use the power of OpenSearch without managing a cluster.
 section: Features
 ---
 
@@ -10,7 +10,7 @@ section: Features
 
 ## Objective
 
-Opensearch is one of the main components of the Logs Data Platform, regarded as one of the most powerful search and analytics engines. From the outset we offered the possibility to host a Opensearch Dashboards index for your Opensearch Dashboards metadata, Index As A Service being the next step to this functionality. You can now use a fully unlocked index for almost any purpose; be it complex documents, reports or even logs. Thanks to the Opensearch API, you will be able to use most of the tools of the Opensearch Ecosystem.
+OpenSearch is one of the main components of the Logs Data Platform, regarded as one of the most powerful search and analytics engines. From the outset we offered the possibility to host a OpenSearch Dashboards index for your OpenSearch Dashboards metadata, Index As A Service being the next step to this functionality. You can now use a fully unlocked index for almost any purpose; be it complex documents, reports or even logs. Thanks to the OpenSearch API, you will be able to use most of the tools of the OpenSearch Ecosystem.
 
 ## Requirements
 
@@ -21,16 +21,16 @@ This is what you need to know to get you started:
 
 ## Instructions
 
-### First steps with an Opensearch index
+### First steps with an OpenSearch index
 
 #### Create an index
 
-There are two ways to create an Opensearch Index:
+There are two ways to create an OpenSearch Index:
 
 - Use the Logs Data Platform manager.
-- Use the Opensearch API.
+- Use the OpenSearch API.
 
-To create an Opensearch index with the Logs Data Platform manager, you need to go the index page and click on the `Add a new index`{.action} on the Opensearch index section
+To create an OpenSearch index with the Logs Data Platform manager, you need to go the index page and click on the `Add a new index`{.action} on the OpenSearch index section
 
 ![add index option](images/add_index.png){.thumbnail}
 
@@ -40,7 +40,7 @@ You must just choose a suffix for your index. The final name will follow this co
 
 For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
 
-When you create a index through the [Opensearch API](https://opensearch.org/docs/latest/opensearch/index-data/){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. Opensearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
+When you create a index through the [OpenSearch API](https://opensearch.org/docs/latest/opensearch/index-data/){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. OpenSearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster.
 
 ```shell-session
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'
@@ -53,7 +53,7 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform Opensearch indices are compatible with the [Opensearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
+Logs Data Platform OpenSearch indices are compatible with the [OpenSearch REST API](https://opensearch.org/docs/latest/opensearch/rest-api/index/){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 ```shell-session
 $ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
@@ -89,7 +89,7 @@ This command will return with a simple payload indicating if the document has be
 
 #### Search your data
 
-There are multiple ways to search your data, this is one area where the Opensearch REST API excels. You can either get your data directly by using a GET request, or search it with the Search APIs. To get your document indexed previously, use the following curl request:
+There are multiple ways to search your data, this is one area where the OpenSearch REST API excels. You can either get your data directly by using a GET request, or search it with the Search APIs. To get your document indexed previously, use the following curl request:
 
 ```shell-session
 $ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
@@ -105,7 +105,7 @@ $ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:920
 
 ### Use case&#58; Enrich Logs Data on the fly
 
-The following shows how your e-commerce application logs can be sent to the Logs Data Platform whenever a product is ordered. It logs the customer order by using Id for the customers name. For performance reasons or maybe by-design, the application doesn't fetch the full name of the client or other information from the customer database just to produce a log. You can add this information on the fly by using an Opensearch Index and a Logstash collector on the Logs Data Platform.
+The following shows how your e-commerce application logs can be sent to the Logs Data Platform whenever a product is ordered. It logs the customer order by using Id for the customers name. For performance reasons or maybe by-design, the application doesn't fetch the full name of the client or other information from the customer database just to produce a log. You can add this information on the fly by using an OpenSearch Index and a Logstash collector on the Logs Data Platform.
 
 #### Fill an index with clients information
 
@@ -165,7 +165,7 @@ A bulk request is a succession of JSON objects with this structure:
  optional_source\n
 ```
 
-You can in one request ask Opensearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
+You can in one request ask OpenSearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
 $ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
@@ -280,7 +280,7 @@ This will give you back the documents of your index:
 }
 ```
 
-Now that you have some data, you can enrich your logs with it. For this we will use a Logstash collector and an elasticsearch plugin (some elasticsearch tools are compatible with Opensearch).
+Now that you have some data, you can enrich your logs with it. For this we will use a Logstash collector and an elasticsearch plugin (some elasticsearch tools are compatible with OpenSearch).
 
 #### Configure a Logstash collector
 
@@ -328,7 +328,7 @@ if "_elasticsearch_lookup_failure" not in [tags] {
 
 The filter part is composed by two plugins, the **elasticsearch** plugin and the **mutate** plugin. The elasticsearch plugin has the following configuration:
 
-- **hosts**: This is the address of the Opensearch API of your LDP cluster. Note that we use https here.
+- **hosts**: This is the address of the OpenSearch API of your LDP cluster. Note that we use https here.
 - **index**: This is the name of the index containing your static data.
 - **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens-logs-data-platform){.ref} for that.
 - **password**: The password of the user.
@@ -360,7 +360,7 @@ In this Dashboard, you can see that the first widget is a "quick values" widget 
 
 ### Monitor the Index Size
 
-The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parallelism in Opensearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
+The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parallelism in OpenSearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
 
 > [!warning]
 >
@@ -421,10 +421,10 @@ The size in bytes used to compute your billing is the one under the following pa
 "indices" -> "logs-<username>-i-<suffix>" -> "primaries" -> "store" -> "size\_in\_bytes".
 
 
-### Management through Opensearch API
+### Management through OpenSearch API
 
 
-On Logs Data Platform, we allow users to use Opensearch API to handle the lifecycle of their indices. You can create and delete indices directly with the Opensearch API. You can also create aliases and them. We even support templates to allow users to create their mapping a the creation of the index automatically !
+On Logs Data Platform, we allow users to use OpenSearch API to handle the lifecycle of their indices. You can create and delete indices directly with the OpenSearch API. You can also create aliases and them. We even support templates to allow users to create their mapping a the creation of the index automatically !
 
 
 #### Index creation and deletion
@@ -504,7 +504,7 @@ This template will be applied for every new index matching the index pattern.
 
 #### Manager
 
-All the items you create through Opensearch API will be displayed in your manager and can be deleted or monitored through it.
+All the items you create through OpenSearch API will be displayed in your manager and can be deleted or monitored through it.
 
 ![manager](images/manager.png){.thumbnail}
 
