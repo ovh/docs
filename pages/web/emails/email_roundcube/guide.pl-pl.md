@@ -52,7 +52,7 @@ Po zalogowaniu się do konta e-mail masz dostęp do głównego okna Roundcube, k
 
 - [**Okno dolne**](#lowerwindow): treść wybranego e-maila w górnej części okna.
 
-#### Zarządzanie folderami (kolumna po lewej stronie) <a name="leftcloumn"></a>
+#### Zarządzanie folderami (kolumna po lewej stronie) <a name="leftcolumn"></a>
 
 W tej strefie znajdują się katalogi znajdujące się na Twoim koncie e-mail.
 

@@ -46,7 +46,7 @@ Once you have logged in to your email account, you can access the main Roundcube
 
 - [**Lower**](#lowerwindow) Window: the content of the email selected in the top window.
 
-#### Folder management (left column) <a name="leftcloumn"></a>
+#### Folder management (left column) <a name="leftcolumn"></a>
 
 In this zone, you will see the folders in your email account.
 

@@ -50,7 +50,7 @@ Depois de aceder à sua conta de e-mail, terá acesso à janela principal de Rou
 
 - [**Janela inferior**](#lowerwindow): o conteúdo do e-mail selecionado na janela superior.
 
-#### Gestão das pastas (coluna da esquerda) <a name="leftcloumn"></a>
+#### Gestão das pastas (coluna da esquerda) <a name="leftcolumn"></a>
 
 Nesta zona, aparecem as pastas presentes na sua conta de e-mail.
 
