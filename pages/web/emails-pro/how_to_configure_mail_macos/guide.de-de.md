@@ -70,27 +70,27 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
 
-### Weitere Informationen
+### Zusätzliche Informationen
 
-Bei einer **IMAP**-Konfigurationsind die Werte:
-
-|Server-Typ|Servername|Verschlüsselungsmethode|Port|
-|---|---|---|---|
-|Eingehend (IMAP)|pro**?**.mail.ovh.net **"?"** soll durch die Nummer Ihres Servers ersetzt werden.|SSL/TLS|993|
-|Ausgehend (SMTP)|pro**?**.mail.ovh.net **"?"** soll durch die Nummer Ihres Servers ersetzt werden.|SSL/TLS|465|
-
-Bei einer **POP**-Konfiguration ergeben sich folgende Werte:
+Bei einer **IMAP** Konfiguration sind die Werte:
 
 |Server-Typ|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingehend (POP)|pro**?**.mail.ovh.net **"?"** soll durch die Nummer Ihres Servers ersetzt werden.|SSL/TLS|995|
-|Ausgehend (SMTP)|pro**?**.mail.ovh.net **"?"** soll durch die Nummer Ihres Servers ersetzt werden.|SSL/TLS|465|
+|Eingehend (IMAP)|pro**?**.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|993|
+|Ausgehend (SMTP)|pro**?**.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|465|
+
+Bei einer **POP** Konfiguration sind die Werte:
+
+|Server-Typ|Servername|Verschlüsselungsmethode|Port|
+|---|---|---|---|
+|Eingehend (POP)|pro**?**.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|995|
+|Ausgehend (SMTP)|pro**?**.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|465|
 
 > [!primary]
 >
 > **Konfiguration ändern**
 >
-> Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration in **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend in **POP** neu erstellen, um die Konfiguration zu ändern.
+> Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration zu **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend als **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
  
