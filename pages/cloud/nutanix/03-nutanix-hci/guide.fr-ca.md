@@ -3,7 +3,7 @@ title: Hyperconvergence Nutanix
 slug: nutanix-hci
 excerpt: "Présentation de la solution d'hyperconvergence Nutanix"
 section: Premiers pas
-order: 03
+order: 04
 ---
 
 **Dernière mise à jour le 22/02/2022**
