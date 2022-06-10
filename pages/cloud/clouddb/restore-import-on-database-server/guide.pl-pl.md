@@ -2,7 +2,7 @@
 title: Przywracanie i importowanie bazy danych na serwer baz danych
 slug: przywracanie-importowanie-bazy-danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-section: 'CloudDB'
+section: 'Konfiguracja'
 order: 5
 ---
 

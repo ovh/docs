@@ -2,7 +2,7 @@
 title: 'Restoring and importing a database to your database server'
 slug: restore-import-database
 excerpt: 'Find out how to restore and import your database'
-section: CloudDB
+section: Configuration
 order: 5
 ---
 
@@ -16,20 +16,19 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.ie/cloud-databases/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that there is no root access.
-> <br> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> Please note that the [Cloud Databases](https://www.ovh.co.uk/cloud-databases/) solutions do not give access to the host, but to the databases hosted on it; there is no root user access. Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Restoring and importing a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the database name concerned. Next, switch to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action}, then choose the database name concerned. Next, switch to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the available backups for your database.
 

@@ -2,7 +2,7 @@
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
 slug: restaurar-importar-base-de-datos
 excerpt: 'Cómo restaurar e importar la base de datos'
-section: 'CloudDB'
+section: 'Configuración'
 order: 5
 ---
 

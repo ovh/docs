@@ -2,7 +2,7 @@
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
 slug: datenbank-importieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-section: CloudDB
+section: Konfiguration
 order: 5
 ---
 
