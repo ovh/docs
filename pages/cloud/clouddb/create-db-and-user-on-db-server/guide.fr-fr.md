@@ -2,7 +2,7 @@
 title: 'Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données'
 slug: creer-bases-de-donnees-et-utilisateurs
 excerpt: 'Découvrez comment créer une base de données sur votre serveur de bases de données.'
-section: CloudDB
+section: Configuration
 order: 2
 ---
 

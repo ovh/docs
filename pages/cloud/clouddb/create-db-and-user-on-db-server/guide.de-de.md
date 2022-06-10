@@ -2,7 +2,7 @@
 title: 'Datenbanken und Benutzer auf Ihrem Datenbankserver erstellen'
 slug: datenbank-und-benutzer-erstellen
 excerpt: 'Erfahren Sie hier, wie Sie eine Datenbank auf Ihrem Datenbankserver erstellen'
-section: CloudDB
+section: Konfiguration
 order: 2
 ---
 
