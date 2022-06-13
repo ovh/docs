@@ -3,6 +3,7 @@ title: Getting started with MySQL and MariaDB
 slug: get-started-with-mysql-and-mariadb
 excerpt: Using Your Databases
 section: Getting started
+order: 02
 ---
 
 Do you want to use MySQL or MariaDB ? Learn how to create and manage your databases with ease!

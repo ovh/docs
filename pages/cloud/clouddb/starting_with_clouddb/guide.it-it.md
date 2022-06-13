@@ -3,6 +3,8 @@ title: 'Inziare a utilizzare CloudDB'
 slug: iniziare-a-utilizzare-clouddb
 legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione CloudDB'
+section: Per iniziare
+order: 01
 ---
 
 **Ultimo aggiornamento: 28/01/2022**

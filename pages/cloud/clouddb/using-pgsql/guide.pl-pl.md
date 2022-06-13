@@ -2,6 +2,8 @@
 title: Pierwsze kroki z PostgreSQL
 slug: pierwsze-kroki-z-postgresql
 excerpt: Korzystanie z baz danych
+section: 'Pierwsze kroki'
+order: 03
 ---
 
 Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy danych i nimi zarządzać!

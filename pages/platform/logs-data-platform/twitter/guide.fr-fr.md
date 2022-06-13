@@ -11,7 +11,7 @@ section: Use cases
 ## Objective
 
 Twitter can be an amazing source to have a direct feedback on your products or events, track a particular subject to find new business opportunities or just to follow the most important people of your network. You can use Logs Data Platform to fully exploit this data flow with the Logstash collector feature and its powerful plugins. This guide will show you how to analyze your tweets using the Logs Data Platform.
- 
+
 ## Requirements
 
 Prior to completing this guide, you should read the following:
@@ -122,7 +122,7 @@ if [type] == "tweet" {
 				"retweeted_status_tweet_url" => "https://twitter.com/%{[retweeted_status][user][screen_name]}/status/%{[retweeted_status][id_str]}"
 			}
 		}
-	}       
+	}
 
 	if [entities][user_mentions] and [type] == "tweet" {
 		clone {

@@ -2,6 +2,8 @@
 title: Erste Schritte mit MySQL und MariaDB
 slug: erste-schritte-mit-mysql-und-mariadb
 excerpt: Verwendung Ihrer Datenbanken
+section: Erste Schritte
+order: 02
 ---
 
 Sie möchten mit MySQL oder MariaDB arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.

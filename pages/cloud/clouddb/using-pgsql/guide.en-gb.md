@@ -3,6 +3,7 @@ title: Getting started with PostgreSQL
 slug: getting-started-with-postgresql
 excerpt: Using Your Databases
 section: Getting started
+order: 03
 ---
 
 Do you want to use PostgreSQL? Learn how to easily manage your databases!

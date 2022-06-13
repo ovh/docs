@@ -8,35 +8,35 @@ section: Use cases
 
 **Last updated 27th July, 2020**
 
-## Objective 
+## Objective
 
 [Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/en-gb/public-cloud/kubernetes/){.external}.
 
-## Requirements 
+## Requirements
 
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [Created at least one Stream and get its token.](../quick-start){.ref}
-- A working kubernetes cluster with some pods already logging to stdout. 
-- 15 minutes. 
+- A working kubernetes cluster with some pods already logging to stdout.
+- 15 minutes.
 
 
 ## Preparation
- 
-Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar as the one you can find in the [official documentation](http://fluentbit.io/). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster. Fluent Bit will read, parse and ship every log of every pods of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of these information. 
+
+Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar as the one you can find in the [official documentation](http://fluentbit.io/). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster. Fluent Bit will read, parse and ship every log of every pods of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of these information.
 
 
-## Instructions 
+## Instructions
 
 We will configure Fluent Bit with these steps:
 
-- Create the namespace, service account and the access rights of the Fluent Bit deployment. 
+- Create the namespace, service account and the access rights of the Fluent Bit deployment.
 - Define the Fluent Bit configuration.
-- Launch the DaemonSet of Fluent Bit. 
+- Launch the DaemonSet of Fluent Bit.
 
 
-### Installation 
+### Installation
 
 The Fluent Bit installation part is strictly identical to the documentation. Run the following commands to create the namespace, the service account and the role of this account
 
@@ -47,19 +47,19 @@ kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes
 kubectl create -f https://raw.githubusercontent.com/fluent/fluent-bit-kubernetes-logging/master/fluent-bit-role-binding.yaml
 ```
 
-### Configuration 
+### Configuration
 
-Once the account created, we can proceed to the next steps: define a secret for the *X-OVH-TOKEN* value of your stream token and upload the *ConfigMap* of Fluent Bit. 
+Once the account created, we can proceed to the next steps: define a secret for the *X-OVH-TOKEN* value of your stream token and upload the *ConfigMap* of Fluent Bit.
 
-#### Token Secret creation 
+#### Token Secret creation
 
-there is several methods to create a secret in Kubernetes, for brevity sake, we will use the one-liner version of secret creation. 
+there is several methods to create a secret in Kubernetes, for brevity sake, we will use the one-liner version of secret creation.
 
 ```shell-session
 kubectl --namespace logging create secret generic ldp-token --from-literal=ldp-token=<your-token-value>
 ```
 
-We create a *ldp-token* secret with only one key named *ldp-token* as the value of our token. Replace the *ldp-token* value with the value of your token. 
+We create a *ldp-token* secret with only one key named *ldp-token* as the value of our token. Replace the *ldp-token* value with the value of your token.
 
 #### ConfigMap File
 
@@ -197,18 +197,18 @@ data:
 
 The differences with the proposed file in the documentation are in the filter configuration file and the output configuration file:
 
-- We use a **record_modifier** filter to add the *X-OVH-TOKEN* at each log, the value of the token will be taken from an environment variable. 
-- We use a **record_modifier** extract the container name handling this log as new key *fluent-bit-host*. 
+- We use a **record_modifier** filter to add the *X-OVH-TOKEN* at each log, the value of the token will be taken from an environment variable.
+- We use a **record_modifier** extract the container name handling this log as new key *fluent-bit-host*.
 - We use the **nest** modifier to flatten the Fluent Bit log message at the filter stage
 - We use a **modify** filter to copy the pod name which generated the log to the name of the source
 - We finally use a **modify** filter to rename the log field to the standard  *short_message* value
 
-If you need more information on what you can do with the filters, don't hesitate to navigate to the [Fluent Bit filter documentation](http://fluentbit.io/){.external}. With the Fluent Bit filters, you can specify which pods should be logged and what data must be included or discarded. 
+If you need more information on what you can do with the filters, don't hesitate to navigate to the [Fluent Bit filter documentation](http://fluentbit.io/){.external}. With the Fluent Bit filters, you can specify which pods should be logged and what data must be included or discarded.
 
-The second modified file is the *output-ldp.conf* file. Here we configure the *Gelf output* with environment variables and activate the TLS. 
-The final part of the file is some parsers that you can use to create structured logs from well known log formats. 
+The second modified file is the *output-ldp.conf* file. Here we configure the *Gelf output* with environment variables and activate the TLS.
+The final part of the file is some parsers that you can use to create structured logs from well known log formats.
 
-To upload the configuration file use the following command 
+To upload the configuration file use the following command
 
 ```shell-session
 kubectl create -f fluent-bit-configmap.yaml
@@ -216,7 +216,7 @@ kubectl create -f fluent-bit-configmap.yaml
 
 ### Launch Fluent Bit
 
-Now that Fluent Bit accounts and configuration file are setup, we can now launch our DaemonSet. Create a *fluent-bit-ds.yaml* file with the following content to configure the DaemonSet. 
+Now that Fluent Bit accounts and configuration file are setup, we can now launch our DaemonSet. Create a *fluent-bit-ds.yaml* file with the following content to configure the DaemonSet.
 
 ```yaml hl_lines="103 113"
 apiVersion: apps/v1
@@ -289,16 +289,16 @@ spec:
         effect: "NoSchedule"
 ```
 
-In this file you must specify the address of your cluster (here **gra2.logs.ovh.com** for example) and the port of the GELF TLS input (here **12202**). You will find these information at the **Home** page of your Logs Data Platform manager. 
+In this file you must specify the address of your cluster (here **gra2.logs.ovh.com** for example) and the port of the GELF TLS input (here **12202**). You will find these information at the **Home** page of your Logs Data Platform manager.
 
 Upload this file with the following command:
 ```shell-session
 kubectl create -f fluent-bit-ds.yaml
 ```
 
-Verify that the pods are running correctly with the command: 
+Verify that the pods are running correctly with the command:
 ```shell-session
-kubectl get pods --namespace logging 
+kubectl get pods --namespace logging
 ```
 
 You can now fly to the stream interface to witness your beautifully structured logs

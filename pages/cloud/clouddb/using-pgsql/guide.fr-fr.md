@@ -3,6 +3,7 @@ title: 'Demarrez avec PostgreSQL'
 slug: demarrez-avec-postgresql
 excerpt: 'Utilisez vos bases de donnees'
 section: 'Premiers pas'
+order: 03
 ---
 
 Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos bases de données en toute simplicité !

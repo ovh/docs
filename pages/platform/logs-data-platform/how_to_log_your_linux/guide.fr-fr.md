@@ -8,7 +8,7 @@ section: Use cases
 **Last updated 27th July, 2020**
 
 ## Objective
- 
+
 You have a server, a raspberry pi, a cloud instance or something else running on **Linux** and you want to follow your Logs, the easy way? You have never installed a log collector and you're new to Graylog?
 
 Then this guide is for you!
@@ -113,9 +113,9 @@ log {
 ```
 
 > [!warning]
-> 
+>
 > If you push your syslog-ng logs to one of your **dedicated data gathering tool**, you will need to perform an extra step.
-> 
+>
 > - Copy the **data-gathering tools certificate** from the manager Home page in SSL Configuration section, and paste it in file "/usr/local/share/ca-certificates/ldp.pem"
 > - Ensure the permission on this file is 644
 > ```shell-session

@@ -2,6 +2,8 @@
 title: Come utilizzare MySQL e MariaDB
 slug: come-utilizzare-mysql-e-mariadb
 excerpt: Guida all'utilizzo dei tuoi database
+section: Per iniziare
+order: 02
 ---
 
 Vuoi utilizzare MySQL o MariaDB? Scopri come creare e gestire i tuoi database con la massima semplicità!

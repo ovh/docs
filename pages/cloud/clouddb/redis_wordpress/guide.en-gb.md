@@ -3,7 +3,7 @@ title: 'Speed up WordPress with Redis'
 slug: speed-up-wordpress-with-redis
 keywords: 'wordpress, redis, dbaas, cms'
 excerpt: 'Advanced use of a NoSQL cache'
-section: 'Knowledge base'
+section: Tutorials
 ---
 
 Do you have a website or blog powered by WordPress? Discover how to speed up page loading time using Redis! In this tutorial, we will set up a NoSQL Redis database and use it to cache WordPress objects. Not only will visitors have a better user experience, but WordPress administrators will also benefit from reduced page loading time.

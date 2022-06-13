@@ -3,6 +3,7 @@ title: 'Getting started with the CloudDB service'
 slug: getting-started-with-clouddb
 excerpt: 'Find out how to get started with the CloudDB service'
 section: 'Getting started'
+order: 01
 ---
 
 **Last updated 28th January 2022**
