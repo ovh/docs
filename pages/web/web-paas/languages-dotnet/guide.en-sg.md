@@ -22,9 +22,11 @@ Web PaaS supports deploying .NET applications by allowing developers to define a
 |  3.1 |  
 |  5.0 |  
 
-{{< image-versions-legacy "dotnet" >}}
 
-{{% language-specification type="dotnet" display_name=".Net Core" %}}
+To specify a .NET Core container, use the `type` property in your `.platform.app.yaml`.
+```yaml   
+type: 'dotnet:3.1'
+``
 
 ## Building the application
 
