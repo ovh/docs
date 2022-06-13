@@ -9,7 +9,7 @@ order: 03
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/12/2021**
+**Última atualização: 13/06/2022**
 
 ## Objetivo
 
@@ -62,6 +62,28 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 - Selecione a conta em causa na coluna da esquerda e clique em `Regulações do servidor`{.action}.
 
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
+
+### Informações complementares
+
+No caso de uma configuração em **IMAP**, os valores são os seguintes:
+
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrando (IMAP)|pro**?**.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|SSL/TLS|993|
+|Saída (SMTP)|pro**?**.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|SSL/TLS|465|
+
+No âmbito de uma configuração em **POP**, os valores são os seguintes:
+
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrando(POP)|pro**?**.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|SSL/TLS|995|
+|Saída (SMTP)|pro**?**.mail.ovh.net (a menção **"?"** é substituída pelo número do seu servidor)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Alterar configuração**
+>
+> Quando configura o seu endereço de e-mail em **IMAP** e deseja alterar a configuração em **POP**, é necessário eliminar a conta de Mail do Mac e recriá-la em **POP** para alterar a configuração.
 
 ## Quer saber mais?
  

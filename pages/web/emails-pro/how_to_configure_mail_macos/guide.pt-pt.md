@@ -9,7 +9,7 @@ order: 4
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 28/12/2021**
+**Última atualização: 13/06/2022**
 
 ## Objetivo
 
@@ -34,7 +34,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!primary]
 >
-> No nosso exemplo, utilizamos a menção servidor: pro**?**.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
+> No nosso exemplo, utilizamos a menção servidor: pro<b>?</b>.mail.ovh.net. Deverá substituir o "? " pelo número que designa o servidor do seu serviço E-mail Pro.
 >
 > Encontre este número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action} e, a seguir, `E-mail Pro`{.action}. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 >
@@ -70,6 +70,28 @@ Se a sua conta de e-mail já está configurada e tem de aceder aos parâmetros d
 - Selecione a conta em causa na coluna da esquerda e, em seguida, clique em `Regulações do servidor`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
+
+### Informações complementares
+
+No caso de uma configuração em **IMAP**, os valores são os seguintes:
+
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrando (IMAP)|ssl0.ovh.net|SSL/TLS|993|
+|Saída (SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+No âmbito de uma configuração em **POP**, os valores são os seguintes:
+
+|Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
+|---|---|---|---|
+|Entrando(POP)|ssl0.ovh.net|SSL/TLS|995|
+|Saída (SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+> [!primary]
+>
+> **Alterar configuração**
+>
+> Quando configura o seu endereço de e-mail em **IMAP** e deseja alterar a configuração em **POP**, é necessário eliminar a conta de Mail do Mac e recriá-la em **POP** para alterar a configuração.
 
 ## Quer saber mais?
  
