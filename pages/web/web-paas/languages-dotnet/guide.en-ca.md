@@ -24,9 +24,10 @@ Web PaaS supports deploying .NET applications by allowing developers to define a
 
 
 To specify a .NET Core container, use the `type` property in your `.platform.app.yaml`.
+
 ```yaml   
 type: 'dotnet:3.1'
-``
+```
 
 ## Building the application
 
@@ -61,8 +62,7 @@ Note that the start command _must_ run in the foreground.
 
 Incoming requests are passed to the application using either a TCP (default) or UNIX socket.
 The application must use the appropriate environment variable to determine the URI to listen on.
-For a TCP socket ([recommended](https://go.microsoft.com/fwlink/?linkid=874850)), the application must listen on `http://127.0.0.1`,
-using the `PORT` environment variable.
+For a TCP socket ([recommended](https://go.microsoft.com/fwlink/?linkid=874850)), the application must listen on `http://127.0.0.1`, using the `PORT` environment variable.
 
 There is an Nginx server sitting in front of your application.
 Serving static content via Nginx is recommended, as this allows you to control headers (including cache headers)
