@@ -5,7 +5,7 @@ section: 'Configuration sur ordinateur'
 order: 03
 ---
 
-**Dernière mise à jour le 28/12/2021**
+**Dernière mise à jour le 13/06/2022**
 
 ## Objectif
 
@@ -80,6 +80,7 @@ Dans le cadre d'une configuration en **POP**, les valeurs sont les suivantes:
 > **Changer sa configuration**
 >
 > Si votre adresse e-mail est configurée en **IMAP** et que vous souhaitez changer cette configuration en **POP**, vous devez supprimer le compte sur Mail de MacOS puis le recréer en **POP**.
+>
 
 ## Aller plus loin
 

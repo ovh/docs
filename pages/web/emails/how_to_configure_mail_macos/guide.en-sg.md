@@ -5,7 +5,7 @@ section: 'Configure on computer'
 order: 03
 ---
 
-**Last updated 28/12/2021**
+**Last updated 13th June 2022**
 
 ## Objective
 
