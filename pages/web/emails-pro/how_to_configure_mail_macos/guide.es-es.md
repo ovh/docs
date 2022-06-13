@@ -9,7 +9,7 @@ order: 4
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 28/12/2021**
+**Última actualización: 13/06/2022**
 
 ## Objetivo
 
@@ -34,7 +34,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro<b>?</b>.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
 > Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action}. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
@@ -77,15 +77,15 @@ En una configuración de **IMAP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrada (IMAP)|pro**?**.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|993|
-|Saliente(SMTP)|pro**?**.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|465|
+|Entrada (IMAP)|pro<b>?</b>.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|993|
+|Saliente(SMTP)|pro<b>?</b>.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|465|
 
 En una configuración en **POP**, los valores son los siguientes:
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrant(POP)|pro**?**.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
-|Saliente(SMTP)|pro**?**.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|465|
+|Entrant(POP)|pro<b>?</b>.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|995|
+|Saliente(SMTP)|pro<b>?</b>.mail.ovh.net (la mención **"?"** debe sustituirse por el número de su servidor)|SSL/TLS|465|
 
 > [!primary]
 >

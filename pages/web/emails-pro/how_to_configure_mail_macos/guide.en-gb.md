@@ -5,7 +5,7 @@ section: 'Email client configuration'
 order: 5
 ---
 
-**Last updated 28th December 2021**
+**Last updated 13th June 2022**
 
 ## Objective
 
@@ -30,7 +30,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: "pro<b>?</b>.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
@@ -72,15 +72,15 @@ For an **IMAP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming (IMAP)|pro**?**.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|993|
-|Outgoing (SMTP)|pro**?**.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
+|Incoming (IMAP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|993|
+|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
 
 For **POP** configuration, the values are:
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming (POP)|pro**?**.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|995|
-|Outgoing (SMTP)|pro**?**.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
+|Incoming (POP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|995|
+|Outgoing (SMTP)|pro<b>?</b>.mail.ovh.net (Replace "**?**" with your server number.)|SSL/TLS|465|
 
 > [!primary]
 >
