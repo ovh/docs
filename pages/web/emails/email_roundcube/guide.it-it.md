@@ -262,6 +262,27 @@ Inserisci le informazioni del contatto.
 > [!primary]
 > Aggiungi campi supplementari tramite il menu a tendina `Aggiungi campo...`{.action}, sotto i campi `Nome` e `Indirizzo`.
 
+#### Importa contatti
+
+Dalla finestra `Contatti`{.action}, nella barra superiore, clicca su `importare`{.action} per aprire la finestra di importazione.
+
+- `Importa da file`: seleziona un file CSV o vCard sul tuo computer. I contatti all'interno di un file CSV devono essere separati da virgola. Il file non deve superare i 20 MB.
+- `Importa le assegnazioni di gruppo`: Se i contatti del tuo file sono ripartiti per gruppi, puoi attivare questa opzione per trovare questa organizzazione o lasciare questa opzione su `zero` affinché nessun gruppo sia assegnato ai contatti.
+- `Sostituisci l'intera rubrica`: Se hai già configurato una rubrica, ti consigliamo di esportarla prima di selezionare questa opzione o di essere sicuro di voler definitivamente sostituirla.
+
+![hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Esporta i contatti Roundcube
+
+Dalla finestra `Contatti`{.action}, nella barra superiore, clicca sulla freccia verso il basso a destra del pulsante `Esporta`{.action}.
+
+Puoi scegliere tra:
+
+- `Esporta tutto`{.action} i contatti saranno poi esportati in un file.**vcf**.
+- `Esporta selezionati`{.action} per esportare solo gli elementi selezionati nella colonna `Contatti`{.action}.
+
+![hosting](images/roundcube-export-contact.png){.thumbnail}
+
 ### Risposte (template) <a name="responses"></a>
 
 Questa funzione permette di creare template di risposta durante la redazione di un'email.

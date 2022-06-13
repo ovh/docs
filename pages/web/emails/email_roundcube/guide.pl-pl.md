@@ -264,6 +264,27 @@ Następnie uzupełnij dane kontaktu.
 > [!primary]
 > Możesz dodawać pola poprzez rozwijane menu `Dodaj pole...`{.action}, znajduje się pod polami `Imię` i `adres`.
 
+#### Importuj kontakty
+
+W oknie `Kontakty`{.action} na górnym pasku kliknij `importuj`{.action}, aby otworzyć okno importu.
+
+- `Import z pliku`: wybierz plik CSV lub plik vCard na Twoim komputerze. Kontakty w pliku CSV muszą być oddzielone przecinkami. Plik nie może mieć więcej niż 20 MB.
+- `Importuj powiązania z grupami`: Jeśli kontakty w Twoim pliku są podzielone na grupy, możesz włączyć tę opcję, aby odnaleźć tę organizację lub pozostawić tę opcję na `żadnej` grupie, aby nie przydzielać do kontaktów.
+- `Zastąp całą książkę adresową`: Jeśli książka jest już skonfigurowana, zalecamy wyeksportowanie jej przed zaznaczeniem tej opcji lub upewnić się, że chcesz ją wymienić.
+
+![hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Eksportuj Kontakty Roundcube
+
+W oknie `Kontakty`{.action} na górnym pasku kliknij ikonkę skierowaną w dół po prawej stronie przycisku `Eksportuj`{.action}.
+
+Możesz wybrać:
+
+- `Eksportuj wszystkie`{.action} całości i wszystkich kontaktów będzie wywożone do pliku **.vcf**.
+- `Eksportuj zaznaczone`{.action}, aby wyeksportować tylko te elementy, które wybiorą Cię w kolumnie `Kontakty`{.action}.
+
+![hosting](images/roundcube-export-contact.png){.thumbnail}
+
 ### Odpowiedzi (szablony) <a name="responses"></a>
 
 Funkcja ta pozwala na tworzenie szablonów odpowiedzi podczas tworzenia wiadomości e-mail.

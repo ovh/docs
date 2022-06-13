@@ -262,6 +262,27 @@ De seguida, introduza as informações do contacto.
 > [!primary]
 > Pode adicionar campos adicionais através do menu pendente `Adicionar campo...`{.action}, situado sob os campos `Primeiro nome` e `Endereço`.
 
+#### Importar Contatos
+
+Na janela `Contatos`{.action}, na barra superior, clique em `importar`{.action} para abrir a janela de importação.
+
+- `Importar do arquivo`: selecione um ficheiro CSV ou um ficheiro vCard no seu computador. Os contactos no seio de um ficheiro CSV devem ser separados por vírgulas. O ficheiro não deve ter mais de 20MB.
+- `Importar atribuições do grupo`: Se os contactos do seu ficheiro estão repartidos por grupos, pode ativar esta opção para encontrar esta organização ou deixar esta opção em `nenhuma` para que nenhum grupo seja afetado aos contactos.
+- `Substituir o catálogo de endereços atual`: Se o diretório já estiver configurado, recomendamos que o exporte antes de selecionar esta opção ou de ter a certeza de que quer substituí-lo definitivamente.
+
+![alojamento](images/roundcube-import-contact.png){.thumbnail}
+
+#### Exportar os Contactos Roundcube
+
+Na janela `Contatos`{.action}, no canto superior direito, clique no botão `Exportar`{.action}, no botão virado para baixo.
+
+Pode escolher entre:
+
+- `Exportar todos`{.action} e o conjunto dos contactos será então exportado num ficheiro **.vcf**.
+- `Exportar a selecionados`{.action} para exportar unicamente os elementos que escolheu na coluna `Contatos`{.action}.
+
+![alojamento](images/roundcube-export-contact.png){.thumbnail}
+
 ### Respostas (templates) <a name="responses"></a>
 
 Esta função permite criar templates de resposta aquando da redação de um e-mail.

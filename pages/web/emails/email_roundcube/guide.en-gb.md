@@ -258,6 +258,27 @@ Then fill in the contact information.
 > [!primary]
 > You can add additional fields via the `Add Field drop-down menu...`{.action}, located under the `First name` and `Address` fields.
 
+#### Import Contacts
+
+In the `Contacts`{.action} window, in the top bar, click `import`{.action} to open the import window.
+
+- `Import from file`: Select a CSV or vCard file on your computer. Contacts within a CSV file must be separated by commas. The file should not be larger than 20 MB.
+- `Import group assignments`: If the contacts in your file are sorted by groups, you can enable this option to find this organisation, or leave this option on `none` so that no groups are assigned to the contacts.
+- `Replace the entire address book`: If you have already configured a notebook, we recommend exporting it before ticking this option, or ensuring that you want to replace it permanently.
+
+![hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Export Roundcube Contacts
+
+In the `Contacts`{.action} window, in the top bar, click the down arrow to the right of the `Export`{.action} button.
+
+You can choose between:
+
+- `Export all`{.action} and all contacts will then be exported to a **.vcf** file.
+- `Export selected`{.action} to export only the items you have selected in the `Contacts`{.action} column.
+
+![hosting](images/roundcube-export-contact.png){.thumbnail}
+
 ### Responses (templates) <a name="responses"></a>
 
 This feature allows you to create response templates when writing an email.

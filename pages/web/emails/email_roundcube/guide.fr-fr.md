@@ -260,7 +260,7 @@ Complétez ensuite les informations du contact.
 
 #### Importer des Contacts
 
-Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. Cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
 
 - `Importer d’un fichier` : sélectionnez un fichier CSV ou un fichier vCard sur votre ordinateur. Les contacts au sein d'un fichier CSV doivent être séparés par des virgules. Le fichier ne doit pas faire plus de 20 Mo.
 - `Importer les affectations de groupe` : Si les contacts de votre fichier sont répartis par groupes, vous pouvez activer cette option pour retrouver cette organisaton ou bien laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
@@ -270,7 +270,7 @@ Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `
 
 #### Exporter les Contacts Roundcube
 
-Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `Contacts`{.action}. Cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
 
 Vous avez le choix entre :
 

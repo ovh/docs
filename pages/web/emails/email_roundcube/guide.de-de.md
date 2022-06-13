@@ -259,6 +259,27 @@ Geben Sie anschließend die Kontaktinformationen ein.
 >
 > Sie können über das Drop-down-Menü Ein `Feld hinzufügen...` unter den Feldern `Telefon` und `Adresse` weitere Felder hinzufügen.
 
+#### Kontakte importieren
+
+Klicken Sie im Fenster `Kontakte`{.action} in der oberen Leiste auf  `Importieren`{.action}, um das Importfenster zu öffnen.
+
+- `Aus Datei importieren`: Wählen Sie eine CSV-Datei oder eine vCard-Datei auf Ihrem Computer aus. Kontakte in einer CSV-Datei müssen durch Kommas getrennt werden. Die Datei darf maximal 20 MB betragen.
+- `Gruppenzuordnungen importieren`: Wenn die Kontakte in Ihrer Datei auf Gruppen verteilt sind, können Sie diese Option aktivieren, um diese Organisation wiederzufinden, oder diese Option auf `keiner` Gruppe belassen, damit keine Gruppe den Kontakten zugewiesen wird.
+- `Bestehendes Adressbuch komplett ersetzen`: Wenn ein Carnet bereits konfiguriert ist, empfehlen wir Ihnen, es zu exportieren, bevor Sie diese Option ankreuzen oder sich sicher sein können, dass Sie es dauerhaft ersetzen möchten.
+
+![Hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Roundcube Kontakte exportieren
+
+Klicken Sie im Fenster `Kontakte`{.action} im oberen Menü rechts auf den nach unten weisenden Pfeil der Schaltfläche `Exportieren`{.action}.
+
+Sie haben die Wahl zwischen:
+
+- `Alles exportieren`{.action} und alle Kontakte werden dann in eine .vcf Datei **exportiert**.
+- `Auswahl exportieren`{.action}, um nur die Elemente zu exportieren, die Sie in der Spalte `Kontakte`{.action} ausgewählt haben.
+
+![Hosting](images/roundcube-export-contact.png){.thumbnail}
+
 ### Schnellantworten (Templates) <a name="responses"></a>
 
 Mit dieser Funktion können Sie beim Verfassen einer E-Mail Templates erstellen.
