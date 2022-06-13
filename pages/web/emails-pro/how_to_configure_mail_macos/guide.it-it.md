@@ -9,7 +9,7 @@ order: 4
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/12/2021**
+**Ultimo aggiornamento: 13/06/2022**
 
 ## Obiettivo
 
@@ -34,7 +34,7 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro<b>?</b>.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
 > Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}. Il nome del server è visibile nel riquadro **Connessione** della scheda `Informazioni generali`{.action}.
 > 
@@ -69,6 +69,28 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 - Seleziona l'account interessato nella colonna di sinistra e clicca su `Regolamenti del server`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
+
+### Informazioni aggiuntive
+
+Nell'ambito di una configurazione **IMAP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (IMAP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|993|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|465|
+
+Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (POP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|995|
+|Uscita (SMTP)|pro<b>?</b>.mail.ovh.net (la menzione **"?"** è da sostituire con il numero del vostro server)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Modifica la configurazione**
+>
+> Quando configuri il tuo indirizzo email in **IMAP** e vuoi modificare la configurazione in **POP**, è necessario eliminare l'account di Mail da Mac e crearlo in **POP** per modificare la configurazione.
 
 ## Per saperne di più
   

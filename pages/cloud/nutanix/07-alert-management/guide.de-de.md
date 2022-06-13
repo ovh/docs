@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/alerts-events/'
 excerpt: 'Analysing and modifying alerts and events in a Nutanix cluster'
 section: Erste Schritte
-order: 07
+order: 10
 ---
 
 **Last updated 17th March 2022**

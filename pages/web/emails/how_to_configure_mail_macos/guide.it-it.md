@@ -9,7 +9,7 @@ order: 03
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 28/12/2021**
+**Ultimo aggiornamento: 13/06/2022**
 
 ## Obiettivo
 
@@ -62,6 +62,28 @@ Se il tuo account email è già configurato e devi accedere alle impostazioni de
 - Seleziona l'account nella colonna di sinistra e clicca su `Regolamenti del server`{.action}.
 
 ![mailmac](images/mail-mac-mxplan04.png){.thumbnail}
+
+### Informazioni aggiuntive
+
+Nell'ambito di una configurazione **IMAP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (IMAP)|ssl0.ovh.net|SSL/TLS|993|
+|Uscita (SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+Nell'ambito di una configurazione in **POP**, i valori sono i seguenti:
+
+|Tipo di server|Nome del server|Metodo di cifratura|Porta|
+|---|---|---|---|
+|In entrata (POP)|ssl0.ovh.net|SSL/TLS|995|
+|Uscita (SMTP)|ssl0.ovh.net|SSL/TLS|465|
+
+> [!primary]
+>
+> **Modifica la configurazione**
+>
+> Quando configuri il tuo indirizzo email in **IMAP** e vuoi modificare la configurazione in **POP**, è necessario eliminare l'account di Mail da Mac e crearlo in **POP** per modificare la configurazione.
 
 ## Per saperne di più
 

@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 order: 05
 ---
 
-**Dernière mise à jour le 30 juin 2020**
+**Dernière mise à jour le 10/06/2022**
 
 ## Objectif
 
@@ -35,7 +35,7 @@ Pour cela, vous avez deux possibilités :
 
 Une fois connecté à l'interface de gestion, cliquez sur `Change Password`{.action}
 
-![Change Password](images/selectChangePassword.jpg){.thumbnail}
+![Change Password](images/selectChangePassword.png){.thumbnail}
 
 Au sein de l'interface, vous devez alors :
 	
@@ -44,7 +44,7 @@ Au sein de l'interface, vous devez alors :
 * Scanner le QRcode avec l'application smartphone d'authentification de votre choix ,
 * Confirmer le code obtenu.
 
-![Scan QRcode](images/scanQRcode.jpg){.thumbnail}
+![Scan QRcode](images/scanQRcode.png){.thumbnail}
 
 Une tâche se créera alors, et un token vous sera envoyé.
 
@@ -59,7 +59,7 @@ Rendez-vous dans la partie `Operation validation`{.action} , chargez l'opératio
 
 Connectez-vous à votre client *web* via le lien habituel, vous arriverez alors sur la page suivante:
 
-![Connexion 2FA](images/2FAtoken.jpg){.thumbnail}
+![Connexion 2FA](images/2FAtoken.png){.thumbnail}
 
 Renseignez alors le token généré par l'application d'authentification installée sur votre smartphone avant de saisir votre mot de passe.
 

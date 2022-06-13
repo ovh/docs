@@ -9,7 +9,7 @@ order: 4
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.12.2021**
+**Letzte Aktualisierung am 13.06.2022**
 
 ## Ziel
 
@@ -34,7 +34,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro<b>?</b>.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
 > Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), wenn Sie den betreffenden `E-Mail Pro`{.action} Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
@@ -49,7 +49,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 |---|---|
 |![mailmac](images/mail-mac-emailpro01.png){.thumbnail}|Wählen `Sie Anderen Mail`{.action}-Account aus und klicken Sie auf `Mail-Account`{.action}.|
 |Geben Sie im Fenster "**Mail Account hinzufügen**"folgende Informationen ein: <br>- **Name** Ihres E-Mail Accounts <br>- Ihre **E-Mail Adresse** <br>- **Passwort** Ihrer E-Mail-Adresse |![mailmac](images/mail-mac-emailpro02.png){.thumbnail}|
-|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>- Lassen Sie Ihre **E-Mail-Adresse** bereits eingeben <br>- Geben Sie Ihre vollständige E-Mail-Adresse unter **Benutzername** ein <br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br>- Wählen Sie `POP` oder `IMAP`(empfohlen) aus in **Account-Typ**<br>- Geben Sie `pro?.mail.ovh.net` in **Empfangsserver* (ersetzen Sie bitte "**?**"durch die Nummer Ihres Servers)<br>- Geben Sie auch `pro?.mail.ovh.net` in **Versendungsserver** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
+|![mailmac](images/mail-mac-emailpro03.png){.thumbnail}|Geben Sie im folgenden Fenster die Informationen ein: <br>- Lassen Sie Ihre **E-Mail-Adresse** bereits eingeben <br>- Geben Sie Ihre vollständige E-Mail-Adresse unter **Benutzername** ein <br>- Lassen Sie Ihr **Passwort** bereits eingegeben <br>- Wählen Sie `POP` oder `IMAP`(empfohlen) aus in **Account-Typ**<br>- Geben Sie `pro?.mail.ovh.net` in **Empfangsserver** (ersetzen Sie bitte "**?**"durch die Nummer Ihres Servers)<br>- Geben Sie auch `pro?.mail.ovh.net` in **Versendungsserver** (ersetzen Sie gut "**?**"durch die Nummer Ihres Servers)<br><br>Um die Konfiguration abzuschließen, klicken Sie auf `Anmelden`{.action}|
 
 ### E-Mail-Adresse verwenden
 
@@ -69,6 +69,28 @@ Wenn Ihr E-Mail-Account bereits eingerichtet ist und Sie auf die Account-Einstel
 - Wählen Sie in der linken Spalte den betreffenden Account aus und klicken Sie auf `Server-Einstellungen`{.action}.
 
 ![mailmac](images/mail-mac-emailpro04.png){.thumbnail}
+
+### Zusätzliche Informationen
+
+Bei einer **IMAP** Konfiguration sind die Werte:
+
+|Server-Typ|Servername|Verschlüsselungsmethode|Port|
+|---|---|---|---|
+|Eingehend (IMAP)|pro<b>?</b>.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|993|
+|Ausgehend (SMTP)|pro<b>?</b>.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|465|
+
+Bei einer **POP** Konfiguration sind die Werte:
+
+|Server-Typ|Servername|Verschlüsselungsmethode|Port|
+|---|---|---|---|
+|Eingehend (POP)|pro<b>?</b>.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|995|
+|Ausgehend (SMTP)|pro<b>?</b>.mail.ovh.net (Ersetzen Sie "**?**" mit der Nummer Ihres Servers.)|SSL/TLS|465|
+
+> [!primary]
+>
+> **Konfiguration ändern**
+>
+> Wenn Sie Ihre E-Mail-Adresse als **IMAP** konfigurieren und die Konfiguration zu **POP** ändern möchten, müssen Sie den Mac Mail-Account löschen und anschließend als **POP** neu erstellen, um die Konfiguration zu ändern.
 
 ## Weiterführende Informationen
  

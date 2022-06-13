@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/image-import/'
 excerpt: Managing ISO images from Prism Central
 section: Primeros pasos
-order: 05
+order: 07
 ---
 
 **Last updated 10th March 2022**
