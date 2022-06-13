@@ -1,7 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
-slug: wykorzystanie-roundcube
-excerpt: 'Dowiedz się, jak korzystać z interfejsu Webmail RoundCube dla kont e-mail OVHcloud'
+slug: webmail_przewodnik_dotyczacy_interfejsu_roundcube
 section: 'Pierwsze kroki'
 order: 05
 ---

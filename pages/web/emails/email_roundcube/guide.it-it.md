@@ -278,7 +278,7 @@ Dalla finestra `Contatti`{.action}, nella barra superiore, clicca sulla freccia 
 
 Puoi scegliere tra:
 
-- `Esporta tutto`{.action} i contatti saranno poi esportati in un file.**vcf**.
+- `Esporta tutto`{.action} i contatti saranno poi esportati in un file **vcf**.
 - `Esporta selezionati`{.action} per esportare solo gli elementi selezionati nella colonna `Contatti`{.action}.
 
 ![hosting](images/roundcube-export-contact.png){.thumbnail}
