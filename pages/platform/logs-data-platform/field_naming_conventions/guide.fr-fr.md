@@ -5,7 +5,7 @@ order: 2
 section: Get Started
 ---
 
-**Last updated 25th October 2021**
+**Last updated 13th June, 2022**
 
 ## Objective
 

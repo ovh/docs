@@ -5,7 +5,7 @@ order: 2
 section: Visualize your logs
 ---
 
-**Last updated 27th July, 2020**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -15,10 +15,9 @@ This guide will help you unleash the full power of [OpenSearch Dashboards](https
 
 This is what you need to know to get you started:
 
-- You are already sending logs on a stream you own: [see the quick start tutorial](../quick-start){.ref}
-- There is nothing else
+- You are already sending logs on a stream you own: [see the quick start tutorial](../quick-start)
 
-After some training you will be able to do this kind of Dashboard:
+After some training you will be able to do this kind of Dashboards:
 
 ![OpenSearch Dashboards](images/osd.png)
 
@@ -28,11 +27,11 @@ After some training you will be able to do this kind of Dashboard:
 
 To access your logs from OpenSearch Dashboards, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go:
 
-1. Go back to your manager.
+1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 2. In the Alias panel, click on the `Add an alias`{.action} button
 3. Choose a name and define a description for your alias
 4. Save the entry by clicking the `Save`{.action} button
-5. Once the alias has been created. Use the **...** menu at the right and select `Attach content to the alias`{.action} option.
+5. Once the alias has been created, use the **...** menu to the right and select `Attach content to the alias`{.action} option.
 6. Define there the graylog streams you want to associate to your alias
 7. That's it.
 
@@ -47,24 +46,24 @@ To create your OpenSearch Dashboards instance, click on OpenSearch Dashboards ta
 ![osd creation](images/osd_created.png){.thumbnail}
 
 
-Use the **...** menu at the right and select `Access to your OpenSearch Dashboards instance`{.action} option to be redirected.
+Use the **...** menu to the right and select `Access to your OpenSearch Dashboards instance`{.action} option to be redirected.
 
 ![osd access](images/url.png){.thumbnail}
 
-Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button. You can also fly there by using the "Stack Management" option in the left side menu, displayable by using the top left the sandwich button.
+Once there, use your LDP credentials to sign in and set on the first page. Click on the `Add data`{.action} button to add sample data you can play with. However if you want to use your own data, you must configure **Index Patterns** in the stack management page. This page is accessible by clicking on the `Manage`{.action} button next to the "Add data" button.  option in the left side menu, displayable by using the top left the sandwich button.
 
 In this configuration page, you can configure as the Index name, the full name of your alias **logs-XXXXX-a-XXXXX**, but you can also use wildcards. Choose **timestamp** for the time field name then click on Discover tab to read your log entries.
 
 ![osd setup](images/osd_setup.png){.thumbnail}
 
-You can also explore any [OpenSearch index](../index-as-a-service){.ref} you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
+You can also explore any [OpenSearch index](../index-as-a-service) you created on the platform. One OpenSearch Dashboards instance allows you to explore all the data you delivered on Logs Data Platform.
 
-To know what you can do with OpenSearch Dashboards, you can fly to the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
+To know what you can do with OpenSearch Dashboards, read the [OpenSearch Dashboards documentation](https://opensearch.org/docs/latest/dashboards/index/){.external}
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick-start){.ref}
-- Documentation: [Guides](../){.ref}
+- Getting Started: [Quick Start](../quick-start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 

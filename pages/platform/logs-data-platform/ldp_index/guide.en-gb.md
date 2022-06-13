@@ -6,7 +6,7 @@ excerpt: Send your logs to the platform with the OpenSearch API.
 section: Features
 ---
 
-**Last updated 14th April, 2022**
+**Last updated 13th June, 2022**
 
 
 ## Overview

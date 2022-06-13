@@ -6,7 +6,7 @@ excerpt: Deploy in a few minutes one of the most complete alert system.
 section: Use cases
 ---
 
-**Last updated 13rd April, 2022**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -64,7 +64,7 @@ $ pip install "setuptools>=11.3"
 $ python setup.py install
 ```
 
-If there is any error about any missing packages, install them manually. Ex :
+If there is any error about any missing packages, install them manually. For example:
 
 ```shell-session
 $ pip install setuptools_rust
@@ -203,7 +203,7 @@ It's also important to customize the timestamp parameters according to the times
 
 ## Launch ElastAlert
 
-To launch ElastAlert, use the following command :
+To launch ElastAlert, use the following command:
 
 ```shell-session
 $ elastalert --config config.yml

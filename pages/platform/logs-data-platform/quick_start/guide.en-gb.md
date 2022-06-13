@@ -5,7 +5,7 @@ order: 1
 section: Get Started
 ---
 
-**Last updated 13rd April 2022**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -17,7 +17,7 @@ Welcome to the quick start tutorial of the Logs Data Platform. This Quick start 
 
 First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs){.external}. Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only what you use.
 
-- Log into the [ovh.com Manager](https://www.ovh.com/manager){.external}, and navigate to the Cloud section located at the top left in the header.
+- Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and navigate to the Bare Metal Cloud section located at the top left in the header.
 - Once you have created your credentials, the main interface will appear :
 
 ![Main interface](images/manager_start.png){.thumbnail}
@@ -165,9 +165,9 @@ At first, your dashboard is sad and empty but we will fill it really soon with s
 - in the search bar, enter the following: `some_metric_num:>30`
 - select above the search bar, the relative range of time you want to use in your widgets. If you want your widget to display the value for the last hour, select  **Search in the last Hour**
 - On the left panel, click on the button looking like a "X" to display the fields menu.
-- unroll the `user_id` menu by clicking on the value and select  **Show top values**. It will then display a nice widget with the distribution of the most frequent `user_ids`.
+- Unroll the `user_id` menu by clicking on the value and select  **Show top values**. It will then display a nice widget with the distribution of the most frequent `user_ids`.
 
-You can `edit`{.action} the widget by using its top right menu arrow. you can, for example change the visualization type by choosing **Pie Chart** in the top left _Visualization Type_ option.
+You can `edit`{.action} the widget by using its top right menu arrow. For example you can change the visualization type by choosing **Pie Chart** in the top left _Visualization Type_ option.
 
 ![Quick Values](images/quick-values.png)
 
@@ -177,7 +177,7 @@ This widget gives you the most frequent `user_id` in the logs of the last hour t
 
 ![critical Dashboard](images/critical-dashboard.png)
 
-Mixing various widgets on the same dashboard give to this feature all its sense. To add a widget in this Dashboard you can also directly use the "+" button on the left panel. This button will ask you the type of widget you want to create (Aggregation or Message Count or Message Table). The Aggregation option allows you to create various visualization type for your data.
+Mixing various widgets on the same dashboard gives this feature all its sense. To add a widget in this Dashboard you can also directly use the "+" button on the left panel. This button will ask you the type of widget you want to create (Aggregation or Message Count or Message Table). The Aggregation option allows you to create various visualization types for your data.
 
 ![widget creation](images/widget-create.png)
 

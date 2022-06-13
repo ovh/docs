@@ -5,7 +5,7 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 14th April, 2022**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -39,15 +39,15 @@ The package will install the config file in the following directory: `/etc/fileb
 
 > [!warning]
 > Do not use a version superior than the 7.12 version. They are currently not compatible with OpenSearch.
-> More information in the [matrix compatibility documentation.](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrix-for-beats){.external}.
+> More information in the [matrix compatibility documentation](https://opensearch.org/docs/latest/clients/agents-and-ingestion-tools/index/#compatibility-matrix-for-beats){.external}.
 
 ### Configure Filebeat OSS 7.X on your system
 
 In the following example we will enable Apache and Syslog support, but you can easily prospect [anything else](https://www.elastic.co/guide/en/beats/filebeat/7.12/filebeat-modules.html){.external}.
 
-Filebeat expect a configuration file named **filebeat.yml** .
+Filebeat expects a configuration file named **filebeat.yml** .
 
-1. For the configuration to work, the important part is to replace hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
+1. For the configuration to work, it is mandatory to replace hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
 2. You should also ensure to specify the `X-OVH-TOKEN` of the related stream.
 
 #### Filebeat configuration

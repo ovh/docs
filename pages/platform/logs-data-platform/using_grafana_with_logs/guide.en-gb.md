@@ -5,7 +5,7 @@ order: 1
 section: Visualize your logs
 ---
 
-**Last updated 21th April, 2022**
+**Last updated 13th June, 2022**
 
 ## Objective
 
@@ -30,7 +30,7 @@ After some training you will be able to create this kind of dashboard:
 
 To access your logs from Grafana, you will need to setup an OpenSearch Alias and link them to your Graylog streams, so here we go again :
 
-1. Go back to your manager.
+1. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 2. In the Alias panel, click on the `Add an alias`{.action} button
 3. Choose a name and define a description for your alias
 4. Save the entry by clicking the `Save`{.action} button
@@ -82,7 +82,7 @@ Now let's add a simple counter of your logs to a new dashboard.
 1. On the bottom right, select your datasource.
 1. That's it :)
 
-If you want to know what you can do with Grafana and OpenSearch, you can fly to the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/){.external}.
+If you want to know what you can do with Grafana and OpenSearch, read the [official documentation](https://grafana.com/grafana/plugins/grafana-opensearch-datasource/){.external}.
 
 
 ## Go further

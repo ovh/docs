@@ -6,7 +6,7 @@ excerpt: Use the power of OpenSearch without managing a cluster.
 section: Features
 ---
 
-**Last updated 13rd April 2022**
+**Last updated 13th June, 2022**
 
 ## Objective
 
