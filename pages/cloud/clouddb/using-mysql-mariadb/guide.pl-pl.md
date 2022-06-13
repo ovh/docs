@@ -2,6 +2,8 @@
 title: MySQL i MariaDB
 slug: mysql-i-mariadb
 excerpt: Korzystanie z baz danych
+section: 'Pierwsze kroki'
+order: 02
 ---
 
 Chcesz korzystać z MySQL lub MariaDB? Sprawdź, jak w prosty sposób tworzyć bazy danych i nimi zarządzać!

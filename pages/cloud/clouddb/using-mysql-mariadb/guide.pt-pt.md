@@ -2,6 +2,8 @@
 title: Comecar com MySQL e MariaDB
 slug: comecar-com-mysql-e-mariadb
 excerpt: Utilize as suas bases de dados
+section: 'Primeiros passos'
+order: 02
 ---
 
 Deseja utilizar MySQL ou MariaDB? Descubra como criar e gerir facilmente as suas bases de dados!

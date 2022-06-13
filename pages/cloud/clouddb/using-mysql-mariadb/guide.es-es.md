@@ -3,6 +3,7 @@ title: Empezar con MySQL y MariaDB
 slug: empezar-con-mysql-y-mariadb
 excerpt: Como utilizar las bases de datos
 section: Primeros pasos
+order: 02
 ---
 
 ¿Quiere utilizar MySQL o MariaDB en CloudDB? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.

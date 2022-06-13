@@ -3,6 +3,7 @@ title: 'Pierwsze kroki z usługą Cloud Databases'
 slug: pierwsze-kroki-z-clouddb
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z rozwiązania CloudDB'
 section: 'Pierwsze kroki'
+order: 01
 ---
 
 **Ostatnia aktualizacja dnia 2022-01-28**
