@@ -3,6 +3,7 @@ title: Empezar con PostgreSQL
 slug: empezar-con-postgresql
 excerpt: Como utilizar las bases de datos
 section: Primeros pasos
+order: 03
 ---
 
 ¿Quiere utilizar PostgreSQL en CloudDB? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.

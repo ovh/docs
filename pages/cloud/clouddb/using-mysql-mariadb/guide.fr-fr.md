@@ -3,6 +3,7 @@ title: 'Démarrez avec MySQL et MariaDB'
 slug: demarrez-avec-mysql-et-mariadb
 excerpt: 'Utilisez vos bases de données'
 section: 'Premiers pas'
+order: 02
 ---
 
 Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vos bases de données en toute simplicité !

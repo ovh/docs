@@ -2,6 +2,8 @@
 title: Comecar com PostgreSQL
 slug: comecar-com-postgresql
 excerpt: Utilize as suas bases de dados
+section: 'Primeiros passos'
+order: 03
 ---
 
 Deseja utilizar PostgreSQL? Descubra como criar e gerir facilmente as suas bases de dados!

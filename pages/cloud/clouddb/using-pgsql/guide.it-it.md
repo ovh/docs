@@ -2,6 +2,8 @@
 title: Come utilizzare PostgreSQL
 slug: come-utilizzare-postgresql
 excerpt: Guida all'utilizzo dei tuoi database
+section: Per iniziare
+order: 03
 ---
 
 Vuoi utilizzare PostgreSQL? Scopri come creare e gestire i tuoi database con la massima semplicità!
