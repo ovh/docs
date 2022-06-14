@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 10/05/2022**
+**Dernière mise à jour le 13/06/2022**
 
 ## Objectif
 
@@ -32,13 +32,13 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 ### Solutions d'interconnexions 
 
-Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entièrement visibles entre eux sur chacun de leurs réseaux privés pour cela il est possible d'utiliser diverses technologies que voici :
+Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entièrement visibles entre eux sur chacun de leurs réseaux privés. Pour cela il est possible d'utiliser diverses technologies que voici :
 
-* Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'information concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
+* Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'informations concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
-* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix en utilisant une machine virtuelle ou un routeur sur chaque site.
+* Mise en place d'un VPN IPSEC entre les deux clusters Nutanix. 
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
@@ -57,7 +57,6 @@ Il est possible d'améliorer la gestion des plan de reprises d'activités au tra
 
 
 ## Aller plus loin
-
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
