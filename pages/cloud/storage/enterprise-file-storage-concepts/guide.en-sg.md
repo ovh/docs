@@ -6,16 +6,11 @@ section: Enterprise File Storage
 order: 1
 ---
 
-> [!warning]
-> Enterprise File Storage is a beta product. During this phase, the service is not available to customers outside Europe.
->
-
-**Last updated 27th October 2021**
+**Last updated 7th April 2022**
 
 ## Objective
 
-With the OVHcloud Enterprise File Storage solution, you can order a capacity pool and manage file volumes accessible through network.
-In this quick start guide, you can learn about the concepts behind Enterprise File Storage, as well as the limitations of the solution.
+With Enterprise File Storage, you get NFS storage volumes that are fully managed by OVHcloud. In this quick start guide, you can learn about the concepts behind your Enterprise File Storage service, and its limitations.
 
 **Learn how Enterprise File Storage works**
 
@@ -23,53 +18,35 @@ In this quick start guide, you can learn about the concepts behind Enterprise Fi
 
 ### What is Enterprise File Storage?
 
-Enterprise File Storage is a file system solution managed by OVHcloud, based on the NetApp&#174; ONTAP Software-Defined Storage solution.
+Enterprise File Storage is a file system solution managed by OVHcloud, based on the NetApp&#174; ONTAP solution.
 
-You can order one or more storage spaces between 1 TiB and 29 TiB with your OVHcloud customer account.
+You can order one or more storage spaces between 1 TiB and 58 TiB with your OVHcloud customer account, with a granularity of 1 TiB.
 
-> [!primary]
->
-> What is the difference between Terabyte (TB) and Tebibyte (TiB)?
->
-> - T, the “tera-” prefix, is a metric and SI standard where you are using base-10. So 1 TB = 10^12=1000000000000 bytes = 1000 GB.
->
-> - Ti, the “Tebi-” prefix, was created later as one of the Binary prefixes that are now an IEC/ISO standard where you are using base-2. It means 1024^4=2^40. So 1 TiB = 1099511627776 bytes= 1024 GiB.
->
-> - Computers are using base-2 so the amount of storage that you can see in your OS is in TiB. Storage vendors tend to use TB because it makes for a larger number than TiB.
->
-> - The problem is that they are similar (2,4%) at the KB level, but at the TB level they have a 10% difference which increases exponentialy.
->
-> - For Enterprise File Storage, because we want to be transparent with you, we will deliver the volume in TiB even if you see TB as unit because the general public is using TB.
->
-> - So if you order a 1 TB Enterprise File Storage, in reality, you will have 1TiB = 1,09951 TB ;-).
->
+### How the services work
 
-### The principle of capacity pools
+When you order an Enterprise File Storage service between 1 and 58 TiB via your OVHcloud account, you will receive an NFS storage space.
 
-When you order an Enterprise File Storage service between 1 and 29 TiB via your OVHcloud account, you will receive a NetApp&#174; capacity pool.
-
-By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](https://docs.ovh.com/gb/en/customer/managing-contacts/).
+By default, the OVHcloud account is the administrative, technical and billing contact for the service. You can find more information in our guide [“Managing contacts for your services”](https://docs.ovh.com/sg/en/customer/managing-contacts/).
 
 ![Enterprise File Storage 1](images/Netapp_Concept_1.PNG)
 
 > [!primary]
 >
-> Each capacity pool can only belong to one OVHcloud account (NIC-handle). However, the technical and billing contacts can be associated with other accounts.
+> Each service can only belong to one OVHcloud account (NIC-handle). However, the technical and billing contacts can be associated with other accounts.
 >
 
 ### How volumes work
 
-Once your Enterprise File Storage solution is up and running, you can create one or more volumes in your capacity pool.
-<br>These volumes allow you to store files, and are accessible via a network IP address provided by OVHcloud.
-<br>Creating a volume automatically triggers the creation of a primary path and three secondary paths.
+Once you have ordered your Enterprise File Storage service, you will have a service corresponding to your storage capacity. In this service, you can create one or more volumes, each volume corresponds to a partition.
+<br>These volumes allow you to store files, and are networked through an IP address provided by OVHcloud.
 
 ![Enterprise File Storage 2](images/Netapp_Concept_2.PNG)
 
 > [!primary]
 >
-> - Each volume belongs to a single capacity pool, but a capacity pool can contain multiple volumes.
+> - Each volume belongs to a service, but a service can contain multiple volumes.
 >
-> - The size of a volume cannot exceed the total size of the capacity pool minus the space allocated to the snapshots it contains.
+> - The size of a volume cannot exceed the total size of the service minus the space allocated to the snapshots it contains.
 >
 > - The size of a volume can be scaled up or down.
 >
@@ -107,20 +84,59 @@ The daily observed consumption of snapshots is between 1% and 5% of the volume's
 
 You can find more information in the [“Managing volume snapshots”](../netapp-volume-snapshots) guide.
 
-### Limits of Enterprise File Storage for the external testing phase (Beta)
+### Enterprise File Storage service limits
 
-The capacity pools of the Enterprise File Storage solution are limited as follows:
+#### Limits of the Enterprise File Storage offer:
 
-- A capacity pool has an allocated and dedicated size between 1 TiB and 29 TiB.
-- A capacity pool is limited to 20 volumes by TiB.
+- A service has an allocated and dedicated size between 1 TiB and 58 TiB.
+- The granularity of a service is 1 TiB
+- The number of volumes per service is limited to 10 volumes per TiB (e.g. 50 volumes for a 5TiB service)
 
-Volumes have the following limits:
+#### Volume limits:
 
-- A volume cannot exceed the size of 29 TiB minus the 5% reserved for snapshots (1.45 TB), i.e. 27.55 TiB.
-- The minimum volume size is 1 GiB.
-- A volume cannot have more than 255 snapshots.
-- A volume has only an IP address on the OVHcloud internal network in 10.x.x.x.
+- A volume can't exceed the size of 29 TiB minus the 5% reserved for snapshots (1.45TiB), i.e. 27.55 TiB.
+- The minimum volume size is 100 GiB
+    - Size granularity for a volume: 1 GiB
+    - Maximum file size: 16 TiB
+
+#### Limits of snapshots:
+
+- A volume can't have more than 200 snapshots.
+- Maximum number of snapshot policies per volume: 1
+- Maximum number of rules per snapshot policy: 4
+
+#### ACL limits:
+
+- A volume has an IP address on the internal network in 10.x.x.x from OVHcloud.
+- Maximum number of vRacks (private network service) attached to the service: 0 (support for vRack technology is not yet available)
+- Maximum number of access lists: 1 per volume
+- Maximum number of IPs per access list: 16 IPs per access list
+
+#### Performance limits:
+
+- Minimum bandwidth per TiB: no minimum
+- Maximum bandwidth per TiB: 64 MiB/s and 4000 IOPS
+
+
+### Calculation of a volume
+
+> [!primary]
+>
+> What is the difference between Terabyte (TB) and Tebibyte (TiB)?
+>
+> - T, the “tera-” prefix, is a metric and SI standard where you are using base-10. So 1 TB = 10^12=1000000000000 bytes = 1000 GB.
+>
+> - Ti, the “Tebi-” prefix, was created later as one of the Binary prefixes that are now an IEC/ISO standard where you are using base-2. It means 1024^4=2^40. So 1 TiB = 1099511627776 bytes = 1024 GiB.
+>
+> - Computers are using base-2 so the amount of storage that you can see in your OS is in TiB. Storage vendors tend to use TB because it makes for a larger number than TiB.
+>
+> - The problem is that they are similar (2,4%) at the KB level, but at the TB level they have a 10% difference which increases exponentialy.
+>
+> - For Enterprise File Storage, because we want to be transparent with you, we will deliver the volume in TiB even if you see TB as unit because the general public is using TB.
+>
+> - So if you order a 1 TB Enterprise File Storage, in reality, you will have 1TiB = 1,09951 TB.
+>
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on Discord: <https://discord.gg/jW2FgBJ72h>.

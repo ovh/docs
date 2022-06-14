@@ -40,7 +40,7 @@ Wählen Sie zunächst den Account aus, für den Sie Berechtigungen vergeben möc
 
 ### Schritt 1: Delegation einrichten
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie links im Menü auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des Exchange Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Gehen Sie nun auf den Tab `E-Mail-Accounts`{.action}.
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des Exchange Dienstes, in dem sich der Account befindet, für den Sie Rechte vergeben möchten. Gehen Sie nun auf den Tab `E-Mail-Accounts`{.action}.
 
 Die Tabelle zeigt alle Accounts an, die mit Ihrem Exchange Dienst verbunden sind. Klicken Sie auf die drei Punkte rechts neben dem Account, für den Sie Berechtigungen vergeben möchten, und gehen Sie dann auf `Berechtigungen verwalten`{.action}.
 

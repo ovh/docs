@@ -3,10 +3,10 @@ title: 'Devenire utente root e selezionare una password'
 slug: imposta_una_password_amministratore
 excerpt: "Imparare a usare l'utente root e creare una password per esso"
 section: Tutorial
-order: 5
+order: 08
 ---
 
-**Ultimo aggiornamento: 19/10/2021**
+**Ultimo aggiornamento: 24/03/2022**
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
@@ -20,8 +20,8 @@ Per eseguire alcune funzioni amministrative sul tuo server (ad esempio l'install
 
 ## Prerequisiti
 
-* un'[istanza Public cloud ](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Un'[istanza Public Cloud](https://docs.ovh.com/it/public-cloud/primi-passi-public-cloud/#step-3-crea-unistanza) nel tuo account OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -38,12 +38,12 @@ Retype new UNIX password:
 passwd: password updated successfully 
 ```
 
-### Aggiorna le applicazioni (Debian/Ubuntu)
+### Aggiorna il sistema (Debian/Ubuntu)
 
 Per l’update dei pacchetti software installati sul server, utilizza questo comando:
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Aggiorna il sistema (CentOS e Fedora)

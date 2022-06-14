@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated 31<sup>st</sup> August, 2021.**
+**Last updated 23<sup>rd</sup> March, 2022.**
 
 
 ## Objective
@@ -51,18 +51,13 @@ Type the following command into your terminal:
 export KUBECONFIG=./kube-config
 ```
 
-#### For Windows : 
+#### For Windows 7, 10 and 11 : 
 
-1. From the Desktop, right-click the bottom-left corner of the screen to get the Power User Tasks Menu.
-2. In this menu, click *System*.
+1. From the Windows menu or Cortana search bar, search for "Modify system environment variables".
+2. In the System Properties window, click on the *Advanced* tab, then click the *Environment Variables* button near the bottom.
+3. In the window that opens (pictured below), add a new variable, `KUBECONFIG`, with the path to the `kube-config` file as its value.
 
-In Windows 10, you may need to scroll down to the *Related settings* section and click the *System info* link. In the System window that opens, click the *Advanced system settings* link in the left-hand column.
-
-1. In the System Properties window, click on the *Advanced* tab, then click the *Environment Variables* button near the bottom.
-2. In the window that opens (pictured below), add a new variable, `KUBECONFIG`, with the path to the `kube-config` file as its value.
-
-
- ![Add environment variables](images/configuring_default_settings_for_kubectl-02.png){.thumbnail}
+![Add environment variables](images/configuring_default_settings_for_kubectl-02.png){.thumbnail}
 
 
 You can also add the variable for the current shell process with this command :

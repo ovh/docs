@@ -25,6 +25,11 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 - Beneficiar de, pelo menos, um endereço [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ligado ao servidor.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
+> [!warning]
+> Esta funcionalidade pode estar indisponível ou limitada nos [servidores dedicados **Eco**](https://eco.ovhcloud.com/pt/about/).
+>
+> Para mais informações, consulte o nosso [comparativo](https://eco.ovhcloud.com/pt/compare/).
+
 ## Instruções
 
 As etapas de base são sempre as mesmas, independentemente dos sistemas utilizados:
@@ -52,7 +57,7 @@ Clique nas `...`{.action} e, a seguir, em `Adicionar um endereço MAC virtual`{.
 
 Selecione "ovh" na lista pendente "Tipo", introduza um nome no campo "Nome da máquina virtual" e clique em `Validar`{.action}.
 
-![Adicionar um MAC virtual (2)](images/virtual_mac_03.png){.thumbnail}
+![Adicionar um MAC virtual (2)](images/addvmac2.png){.thumbnail}
 
 ### Determinar o endereço da gateway
 

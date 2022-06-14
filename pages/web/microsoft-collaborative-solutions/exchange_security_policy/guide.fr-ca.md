@@ -30,7 +30,7 @@ La gestion de la politique de sécurité de votre service e-mail peut interagir 
 
 Pour accéder à la politique de sécurité de votre service e-mail, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et assurez-vous de vous situer dans la section `Web Cloud`{.action}.
 
-Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`, puis sur `Gérer la politique de sécurité`{.action}|
+Cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} et sélectionnez l'offre concernée. Cliquez sur l'onglet `Plus +`, puis sur `Gérer la politique de sécurité`{.action}|
 
 ![exchangesecurity](images/manage-security02.png){.thumbnail}|
 

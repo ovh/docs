@@ -107,7 +107,7 @@ Jeśli chcesz go usunąć, przejdź do karty `Konta e-mail`{.action} Twojej pier
 
 Na tym etapie Twoje konta e-mail muszą być migrowane i działać. Ze względów bezpieczeństwa sprawdź, czy konfiguracja Twojej domeny jest poprawna, sprawdzając w Panelu klienta.
 
-W tym celu wybierz odpowiednią usługę E-mail Pro lub Exchange na pasku usług po lewej stronie, następnie przejdź do zakładki `Powiązane domeny`{.action}. W tabeli, która się wyświetla, w kolumnie "Diagnostyka" możesz sprawdzić, czy konfiguracja DNS jest prawidłowa: czerwony przycisk pojawia się, jeśli konfiguracja wymaga zmiany.
+W tym celu wybierz odpowiednią usługę E-mail Pro lub Exchange, następnie przejdź do zakładki `Powiązane domeny`{.action}. W tabeli, która się wyświetla, w kolumnie "Diagnostyka" możesz sprawdzić, czy konfiguracja DNS jest prawidłowa: czerwony przycisk pojawia się, jeśli konfiguracja wymaga zmiany.
 
 > [!primary]
 >

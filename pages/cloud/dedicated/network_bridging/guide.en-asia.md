@@ -21,6 +21,11 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 - At least one [failover IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) attached to the server
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/asia/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/asia/compare/) for more information.
+
 ## Instructions
 
 The basic steps are always the same, independent of the underlying system:
@@ -49,7 +54,7 @@ Click on `...`{.action} in the relevant row to open the context menu, and select
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 

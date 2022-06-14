@@ -63,8 +63,8 @@ Após a reinicialização, atualize o diretório /etc/apt/sources.list para orie
 ```bash
 $ sudo cp -v /etc/apt/sources.list /root/
 $ sudo cp -rv /etc/apt/sources.list.d/ /root/
-$ sed -i 's/buster/bullseye/g' /etc/apt/sources.list
-$ sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
+$ sudo sed -i 's/buster/bullseye/g' /etc/apt/sources.list
+$ sudo sed -i 's/bullseye\/updates/bullseye-security/g' /etc/apt/sources.list
 ```
 
 Agora que a próxima versão está orientada, pode proceder à atualização assim como ao reboot final:
@@ -169,7 +169,7 @@ Uma vez a versão descarregada e o processo de atualização lançado, o servido
 Verifique que as suas aplicações funcionam como previsto. Em caso de problema, recomendamos que [restaure o backup](../criar_restaurar_um_servidor_virtual_a_partir_de_um_backup/) efetuado antes da atualização.
 
 > [!primary]
-> Se encontrar dificuldades, encontrará respostas às suas questões no website [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/) {.external}.
+> Se encontrar dificuldades, encontrará respostas às suas questões no website [Fedora Docs](https://docs.fedoraproject.org/en-US/quick-docs/dnf-system-upgrade/){.external}.
 >
 
 ## Quer saber mais?

@@ -50,7 +50,7 @@ Aby usunąć tę anomalię, należy:
 
 [Poprzednie](#objective) komunikaty błędów niekoniecznie oznaczają, że Twoja strona WWW jest zainstalowana na jednym z naszych [pakietów Web Cloud](https://www.ovhcloud.com/pl/web-hosting/). Należy zatem sprawdzić adres IP serwera, do którego jest podłączony Twoja [nazwa domeny](https://www.ovhcloud.com/pl/domains/).
 
-Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij na górze [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) na `Web Cloud`{.action}, następnie w menu po lewej stronie na `Hosting`{.action} i wybierz odpowiedni hosting.
+Aby odnaleźć adres IP Twojego hostingu [hosting OVHcloud](https://www.ovhcloud.com/pl/web-hosting/), kliknij na górze [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) na `Web Cloud`{.action}, następnie na `Hosting`{.action} i wybierz odpowiedni hosting.
 
 W zakładce `Informacje ogólne`{.action} podaj adres IPV4 i/lub IPV6 Twojego hostingu.
 

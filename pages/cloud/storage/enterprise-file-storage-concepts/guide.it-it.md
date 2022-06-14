@@ -33,7 +33,7 @@ Puoi ordinare uno o più spazi di storage tra 1TiB e 29TiB sul tuo account.
 >
 > - T, il prefisso "tera-" è una metrica e uno standard IT che utilizza la base-10. 1 TB = 10 TB 12 bytes = 100000000000 bytes = 1000 GB.
 >
-> - Ti, il prefisso "Tebi-", è stato creato in seguito come uno dei prefissi binari che sono ora standard IEC/ISO e che utilizza il database-2. Significa 1024 volte 4=240. Donc 1 TiB = 1099511627776 bytes= 1024 GiB.
+> - Ti, il prefisso "Tebi-", è stato creato in seguito come uno dei prefissi binari che sono ora standard IEC/ISO e che utilizza il database-2. Significa 1024 volte 4=240. Donc 1 TiB = 1099511627776 bytes = 1024 GiB.
 >
 > - I computer utilizzano la base 2, in modo che la quantità di storage che potete vedere nel vostro sistema operativo sia espressa in TiB. I fornitori di stoccaggio tendono ad utilizzare il TB in quanto si tratta di un numero superiore a quello del TiB.
 >
@@ -41,7 +41,7 @@ Puoi ordinare uno o più spazi di storage tra 1TiB e 29TiB sul tuo account.
 >
 > - Per Enterprise File Storage, perché vogliamo essere trasparenti con voi, consegneremo il volume in TiB anche se vedete il TB come unità, perché il grande pubblico utilizza il TB.
 >
-> - Ad esempio, se ordini un servizio Enterprise File Storage da 1 TB, avrai in realtà 1 TiB = 1,09951 TB ;-).
+> - Ad esempio, se ordini un servizio Enterprise File Storage da 1 TB, avrai in realtà 1 TiB = 1,09951 TB.
 >
 
 ### Principio di funzionamento della capacity pools

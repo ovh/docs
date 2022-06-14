@@ -1,6 +1,6 @@
 ---
 title: Creating a CNAME record to add an associated domain
-excerpt: Find out about the purpose of a CNAME record, and how to add one at OVH
+excerpt: Find out about the purpose of a CNAME record, and how to add one at OVHcloud
 slug: exchange-add-cname-record-dns
 section: Getting started with Exchange
 order: 5
@@ -12,18 +12,18 @@ order: 5
 
 When you add a domain name to your Exchange service, you may be required to configure the CNAME entry in your DNS zone. This configuration ensures that you have admin rights for the domain name in question.
 
-**Find out about the purpose of a CNAME record, and how to add one at OVH.**
+**Find out about the purpose of a CNAME record, and how to add one at OVHcloud.**
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
-- You need to have admin rights for the Exchange service on your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- You need to have admin rights for the Exchange service on your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 - You need to have added a domain name to your Exchange service before requesting the addition of a CNAME record.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
 
 ## Instructions
 
-### Step 1: Understand the CNAME diagnostic at OVH
+### Step 1: Understand the CNAME diagnostic at OVHcloud
 
 The **CNAME** (Canonical Name) diagnostic box appears in certain cases when you declare a domain name on your Exchange service.
 
@@ -31,7 +31,7 @@ Its purpose is to prove that you are the admin of the domain name you would like
 
 ![Exchange](images/cname_exchange_diagnostic.png){.thumbnail}
 
-### Step 2: Retrieve the OVH CNAME information
+### Step 2: Retrieve the OVHcloud CNAME information
 
 Go to the `Associated domains`{.action} tab, and click on the red `CNAME`{.action} box to retrieve the information required.
 

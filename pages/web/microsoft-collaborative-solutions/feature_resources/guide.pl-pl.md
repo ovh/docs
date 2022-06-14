@@ -26,7 +26,7 @@ Funkcja Exchange pozwala na tworzenie kont e-mail dedykowanych do zasobów Twoje
 
 ## W praktyce
 
-Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, a następnie `Exchange`{.action}. Następnie wybierz odpowiednią usługę Exchange. Kliknij kartę `Plus +`{.action}, a następnie `Zasoby`{.action}.
+Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie wybierz odpowiednią usługę Exchange. Kliknij kartę `Plus +`{.action}, a następnie `Zasoby`{.action}.
 
 ### Etap 1: tworzenie zasobów
 

@@ -55,7 +55,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 
 ### Etap 1: zidentyfikować plik konfiguracyjny Twojej strony <a name="step1"></a>
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij pozycję `Web Cloud`{.action}, a następnie, w menu po lewej stronie ekranu, wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij pozycję `Web Cloud`{.action}, a następnie wybierz `Hosting`{.action}, a następnie nazwę odpowiedniego hostingu. Następnie przejdź do zakładki `MultiSite`{.action}. Zidentyfikuj nazwę `Katalog główny` Twojej strony (katalogu, w którym znajdują się pliki i katalogi).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Należy więc powrócić do pliku konfiguracyjnego Twojej strony, aby zapisać *
 - Dla DRUPAL: *nazwa serwera* pojawia się pod **"host"** i *nazwa użytkownika* pod nagłówkiem **"username"**;
 - Dla PRESTASHOP: *nazwa serwera* pojawia się pod **"database_host"** i *nazwa użytkownika* pod nagłówkiem **"database_user"**.
 
-Następnie, w **lewej** części ekranu, kliknij `Bazy danych`{.action}. 
+Następnie w części `Bazy danych`{.action} w sekcji `Web Cloud`{.action}. 
 
 W zakładce `Informacje ogólne`{.action} podaj w ofercie [CloudDB](https://www.ovh.pl/cloud/cloud-databases/) nazwę serwera Twojej bazy danych, która zawiera `Nazwa hosta`{.action}.
 
@@ -215,7 +215,7 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 #### Przypadek nr 2: baza danych strony jest częścią oferty CloudDB <a name="case2"></a>
 
-Przejdź do części `Bazy danych`{.action} w Panelu klienta (menu po lewej stronie) i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
+Przejdź do części `Bazy danych`{.action} w Panelu klienta i na odpowiedni serwer, kliknij zakładkę `Użytkownicy i uprawnienia`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

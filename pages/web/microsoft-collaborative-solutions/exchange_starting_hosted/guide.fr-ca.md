@@ -27,7 +27,7 @@ Le service Exchange Hébergé permet de bénéficier d’adresses e-mail profess
 
 Une fois votre service Exchange Hébergé créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
-Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} dans la barre de services à gauche. Cliquez enfin sur le nom du service Exchange Hébergé concerné.
+Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange Hébergé concerné.
 
 > [!primary]
 >

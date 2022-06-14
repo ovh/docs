@@ -41,25 +41,25 @@ Do uwierzytelnienia logowania w instancjach z systemem Windows są wymagane tylk
 
 Na komputerze Mac lub urządzeniu z zainstalowanym systemem operacyjnym Linux najpierw otwórz aplikację wiersza polecenia (terminal). Sprawdź, czy w katalogu domowym $HOME masz folder „.ssh”. Jeśli taki folder nie istnieje, utwórz go:
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Utwórz 4096-bitowy klucz RSA przy użyciu następującego polecenia:
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją „-t”, na przykład:
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 Zostanie wyświetlony monit o zapisanie nowo utworzonego klucza w standardowym pliku:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Aby wyświetlić i wyeksportować klucz publiczny, użyj polecenia „cat” względem pliku klucza z „pub” w nazwie i skopiuj dane wyjściowe:
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -109,7 +109,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 >W terminalu systemu MacOS do obsługi ciągów kluczy można też użyć poleceń „pbcopy” i „pbpaste”. Aby na przykład skopiować klucz z pliku „id_rsa.pub” do schowka, użyj tego polecenia:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -152,6 +152,8 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 
 ### Krok 3: tworzenie instancji
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie „Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”).
 
@@ -237,21 +239,21 @@ Instancja jest dostępna z poziomu interfejsu wiersza polecenia (terminala) prze
 
 Po wyświetleniu monitu wpisz hasło do klucza prywatnego. 
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Ponieważ logujesz się z uprawnieniami użytkownika root, czyli administratora („sudo user”), możesz od razu wpisywać polecenia, aby wykonać zadania administracyjne. Zalecane jest, aby najpierw zmienić hasło:
 
-```sh
-$ sudo passwd
+```bash
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
 Teraz możesz użyć tych poświadczeń do zalogowania się za pośrednictwem `Konsoli VNC`{.action} do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie przełącz się na użytkownika „root” i ustaw hasło bezpieczeństwa, a potem przełącz się z powrotem na poprzedniego użytkownika.
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:

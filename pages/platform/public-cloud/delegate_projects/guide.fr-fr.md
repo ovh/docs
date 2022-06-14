@@ -1,65 +1,60 @@
 ---
-title: 'Déléguer ses projets'
+title: "Déléguer des projets"
 slug: deleguer-ses-projets
-excerpt: 'Apprenez comment déléguer des droits techniques à d’autres comptes OVHcloud pour un projet Public Cloud'
-legacy_guide_number: 1914
-section: 'Gestion de projets'
-order: 8
+excerpt: "Découvrez comment déléguer des droits d'accès à un projet Public Cloud à d'autres comptes OVHcloud"
+section: Gestion de projets
+order: 7
 ---
 
-**Dernière mise à jour le 25/11/2019**
- 
+**Dernière mise à jour le 04/04/2022**
+
 ## Objectif
 
-Vous pouvez rencontrer la nécessité de donner l'accès à certains de vos projets à d'autres utilisateurs, sans pour autant donner la possibilité d'interagir sur l'ensemble de vos services et cela pour des raisons de sécurité. 
+En fonction de votre cas d'utilisation, vous pouvez être amené à devoir donner accès à votre projet à d'autres utilisateurs, sans pour autant leur donner un accès total à vos services.<br>
+Dans cet objectif, vous pouvez déléguer à d'autres comptes client OVHcloud des droits en lecture seule ou en lecture / écriture sur vos projets.
 
-Dans cette situation, il est tout à fait possible de déléguer un ou plusieurs projets à d'autres comptes OVHcloud, que cela soit en mode lecture, ou bien en mode lecture / écriture.
+**Ce guide vous détaille comment déléguer des droits d'accès à un projet Public Cloud depuis votre espace client.**
 
-Ce guide vous explique comment procéder.
+## Prérequis
 
-
-### Prérequis
-
-- 2 comptes OVHcloud
-- Un projet Public Cloud
-
+- Avoir une instance [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique 
 
-### Déléguer son projet
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et ouvrez votre projet `Public Cloud`{.action}. Cliquez sur `Contacts and Rights`{.action} dans la section **Project Management**.
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Public Cloud`{.action}. Cliquez sur `Contacts and Rights`{.action} dans la rubrique **Project Management**.
+Cette page vous permet de voir les contacts associés à votre projet.
 
+![public-cloud-delegate-projects](images/delegatingproject01.png){.thumbnail}
 
-![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
+Vous pouvez cliquer sur les boutons `Modifier`{.action} pour changer les contacts actuels. Suivez les instructions décrites dans notre guide « [Changer les contacts d’un projet](../changer-les-contacts-dun-projet/) » afin de finaliser cette manipulation.
 
-Depuis ce menu, vous pouvez :
+### Ajouter des contacts et des droits
 
-* configurer vos contacts administrateur et facturation.
+Cliquez sur le bouton `Ajouter`{.action} pour ajouter un utilisateur et lui attribuer des droits. Dans la fenêtre qui apparaît, renseignez l'identifiant de l'utilisateur (sous la forme xx00000-ovh) puis sélectionnez `Lecture seule` ou `Lecture/Écriture` dans le menu déroulant.
 
-* déléguer vos projets à d'autres comptes OVHcloud.
+![public-cloud-delegate-projects](images/delegatingproject02.png){.thumbnail}
 
+> [!primary]
+>
+> Notez que les droits de `lecture/écriture` autorisent des modifications sur le projet qui pourraient avoir une incidence sur la facturation future.
+>
+ 
+Cliquez sur `Ajouter`{.action} pour valider la délégation d'accès. Un e-mail de confirmation vous sera alors envoyé ainsi qu'au nouvel utilisateur qui pourra maintenant ouvrir le projet dans la section Public Cloud de son espace client.
 
-![public-cloud-delegate-projects](images/pcidelegateprojects2.png){.thumbnail}
+Une fois la page rechargée, les comptes clients OVHcloud ajoutés ainsi que leurs droits respectifs sont listés dans le tableau.
 
-### Configuration de la délégation
+![public-cloud-delegate-projects](images/delegatingproject03.png){.thumbnail}
 
-Cliquez sur le bouton `Ajouter`{.action} puis renseignez l'identifiant (sous la forme xx000000-ovh) du compte OVHcloud à ajouter et le type de droit à associer.
-
-![public-cloud-delegate-projects](images/pcidelegateprojects3.png){.thumbnail}
-
-Dès l'ajout validé et la page rechargée, vous pouvez vérifier les différents comptes ajoutés avec leurs droits respectifs.
-
-![public-cloud-delegate-projects](images/pcidelegateprojects4.png){.thumbnail}
-
-Les comptes OVHcloud ajoutés de cette manière pourront retrouver le projet dans leur propre espace client en se rendant dans l'espace Public Cloud.
+Pour révoquer un accès, cliquez sur le bouton `...`{.action} puis sélectionnez `Supprimer`{.action}.
 
 ## Aller plus loin
 
-[Accès et sécurité dans Horizon](https://docs.ovh.com/fr/public-cloud/acces-et-securite-dans-horizon/)
+[Démarrer avec une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/)
 
-[Créer un accès à Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-acces-a-horizon/)
+[Informations concernant le mode de facturation Public Cloud](https://docs.ovh.com/fr/public-cloud/information-concernant-le-mode-de-facturation-cloud/)
 
-[Débuter avec une instance Public Cloud](https://docs.ovh.com/fr/public-cloud/debuter-avec-une-instance-public-cloud/)
+[Paramètres d’accès et de sécurité dans Horizon](https://docs.ovh.com/fr/public-cloud/acces-et-securite-dans-horizon/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

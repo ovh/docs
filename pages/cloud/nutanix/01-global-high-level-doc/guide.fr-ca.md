@@ -4,14 +4,13 @@ slug: high-level-documentation
 excerpt: "Les détails techniques de l'infrastructure Nutanix chez OVHcloud"
 section: Premiers pas
 order: 01
-hidden: true
 ---
 
 **Dernière mise à jour le 11/01/2022**
 
 ## Objectif
 
-Cette page fournit une explication sur les éléments qui constituent un Cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
+Cette page fournit une explication sur les éléments qui constituent un cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
 
 ## En pratique
 

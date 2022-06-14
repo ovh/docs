@@ -25,6 +25,11 @@ Bridged Networking kann verwendet werden, um Ihre virtuellen Maschinen zu konfig
 - Sie verfügen über mindestens eine mit dem Server verbundene [Failover IP](https://www.ovhcloud.com/de/bare-metal/ip/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
+
 ## In der praktischen Anwendung
 
 Die Grundschritte sind unabhängig von dem darunterliegenden System immer gleich:
@@ -53,7 +58,7 @@ Klicken Sie auf `...`{.action} in der betreffenden Zeile um das Kontextmenü zu 
 
 Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMware ESXi verwenden - andernfalls wählen Sie `vmware`{.action}. Geben Sie einen Namen in das Feld "Name der virtuellen Maschine" ein und klicken Sie anschließend auf `Bestätigen`{.action}.
 
-![Virtuelle MAC-Adresse hinzufügen (2)](images/virtual_mac_03.png){.thumbnail}
+![Virtuelle MAC-Adresse hinzufügen (2)](images/addvmac2.png){.thumbnail}
 
 ### Schritt 2: Die Adresse des Gateways bestimmen
 

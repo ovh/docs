@@ -28,12 +28,12 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
  
 ## Instructions
 
-> [!warning]
+ [!primary]
 >
-> In our example, we use a server "pro**?**.mail.ovh.net" (Please replace the "?" by the number designating the server for your Email Pro service).
+> In this guide, we will use as the server name: "pro**?**.mail.ovh.net". You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this number in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, then `Email Pro`{.action} in the left-hand column. The server name is visible in the **Connection** box on the `General`{.action} Information tab.
-> 
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action}. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+>
 
 ### Add account
 

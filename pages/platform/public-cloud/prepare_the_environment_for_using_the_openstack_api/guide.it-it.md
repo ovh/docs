@@ -6,7 +6,7 @@ section: Gestione via OpenStack
 legacy_guide_number: g1851
 ---
 
-**Ultimo aggiornamento: 22/12/2021**
+**Ultimo aggiornamento: 30/03/2022**
 
 ## Obiettivo
 
@@ -24,22 +24,18 @@ Per gestire i servizi Public Cloud attraverso un terminale, è possibile scarica
 
 Apri il terminale o una connessione SSH verso l’ambiente da configurare.
 
-Aggiorna la cache dei pacchetti utilizzando il comando `apt-get update`:
+Aggiorna la cache dei pacchetti utilizzando il comando `apt update`:
 
 ```sh
-apt-get update
+apt update
 ```
 
-Installa i client per Nova (compute) e Swift:
+Utilizzare il comando seguente per installare i client OpenStack, Nova (applicazione di calcolo) e Swift:
 
 ```sh
-apt-get install python-openstackclient python-novaclient python-swiftclient -y
-```
-
-Python3 Versione
-
-```sh
-apt-get install python3-openstackclient python3-novaclient python3-swiftclient -y
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 A questo punto ti consigliamo di creare un altro user, in modo da non utilizzare l’utente amministratore.
@@ -65,22 +61,13 @@ Aggiorna la cache dei pacchetti utilizzando questo comando:
 ```sh
 yum update -y
 ```
-Installa il rpm rdo-realease:
+
+Utilizzare il comando seguente per installare i client OpenStack, Nova (applicazione di calcolo) e Swift:
 
 ```sh
-yum install -y https://rdoproject.org/repos/rdo-release.rpm
-```
-
-Installa il client OpenStack: 
-
-```sh
-yum install -y python-openstackclient
-```
-
-Installa Nova:
-
-```sh
-yum install -y python-novaclient
+apt install python3-pip -y
+pip3 install --upgrade pip
+pip3 install python-openstackclient python-novaclient python-swiftclient
 ```
 
 A questo punto ti consigliamo di creare un altro user, in modo da non utilizzare l’utente amministratore.

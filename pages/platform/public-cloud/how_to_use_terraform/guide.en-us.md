@@ -5,6 +5,7 @@ description: Procedure of use of Terraform
 keywords: infrastructure, instance, cloud, creation
 excerpt: Step-by-step documentation on how to use Terraform configurations for your infrastructure
 section: Tutorials
+order: 02
 ---
 
 **Last updated 1st July 2021**
@@ -14,6 +15,10 @@ section: Tutorials
 OpenStack is an open source cloud operating system for building and managing public and private cloud computing platforms. The OpenStack software components are the foundation of the OVHcloud Public Cloud infrastructure.
 
 The open source tool Terraform was developed to make the creation of complex cloud infrastructures easier. It enables your infrastructure's properties to be abstracted in text files which can be used as a basis to deploy your infrastructure.
+
+As an example, this video shows how to easily scale the number of instances while keeping your existing infrastructure by changing only one line of code:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TFfKd24rzvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 **This guide explains how to use Terraform with the Public Cloud by way of practical examples.**
 

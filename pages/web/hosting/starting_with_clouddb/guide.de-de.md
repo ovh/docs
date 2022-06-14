@@ -30,17 +30,18 @@ Ihre CloudDB Lösung ist standardmäßig an das Webhosting-Netzwerk von OVHcloud
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen CloudDB Servers
 
-Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
+Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} auf `Hosting-Pakete`{.action}.
 
 Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
 ![Allgemeine Informationen](images/db-activation.png){.thumbnail}
 
-Folgen Sie den Anweisungen, um Typ und Version Ihres CloudDB Servers zu bestimmen. Nach Abschluss des Vorgangs kann der CloudDB Dienst über die linke Menüspalte unter `Datenbanken`{.action} eingesehen werden.
+Folgen Sie den Anweisungen zur Bestimmung von Typ und Version Ihres CloudDB Servers. Sie können dann in `Datenbank`{.action} eingesehen werden.
 
 ### Allgemeine Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+
 
 > [!primary]
 >
@@ -177,7 +178,7 @@ Ihre CloudDB Lösung wird automatisch an die Webhostings von OVHcloud angebunden
 
 Klicken Sie hierzu auf den Tab `Autorisierte IP`{.action} und dann auf den Button `Zugang zu OVHcloud Webhostings`{.action}.
 
-![clouddb](images/clouddb-add-ip-step3-2022.png) {.thumbnail}
+![clouddb](images/clouddb-add-ip-step3-2022.png){.thumbnail}
 
 ### Ihre Website mit der Datenbank verbinden
 
@@ -204,7 +205,7 @@ Damit Sie Ihre Website in jedem Fall erfolgreich mit Ihrer Datenbank verbinden k
 
 Um die neuesten Logs Ihrer Datenbank zu überprüfen, gehen Sie auf den Tab `Logs`{.action} Ihres CloudDB Servers. Dieser Tab zeigt in Echtzeit Alarme und Fehler an.
 
-![clouddb](images/clouddb-log01.png) {.thumbnail}
+![clouddb](images/clouddb-log01.png){.thumbnail}
 
 Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diesem ein.
 
@@ -214,13 +215,13 @@ Um alle Logs Ihres CloudDB Servers abzurufen, loggen Sie sich via SFTP mit diese
 
 Die SFTP-Verbindungsinformationen finden Sie im Tab `Allgemeine Informationen`{.action} Ihres CloudDB Servers. Wenn Sie das `Passwort des Servers` nicht kennen, klicken Sie auf die Schaltfläche Kfz `...`{.action} rechts, um ihn zu bearbeiten.
 
-![clouddb](images/clouddb-log02.png) {.thumbnail}
+![clouddb](images/clouddb-log02.png){.thumbnail}
 
 Verbinden Sie sich über einen FTP-Client (FileZilla, Cyberduck, WinSCP...).
 
 Für FileZilla gehen Sie im Menü `File`{.action} zum Bereich `Site Manager`{.action}. Klicken Sie auf `New Site`{.action} und geben Sie die oben aufgeführten Einstellungen ein.
 
-![clouddb](images/clouddb-log03.png) {.thumbnail}
+![clouddb](images/clouddb-log03.png){.thumbnail}
 
 Die Log-Datei mit dem Namen `stdout.log` befindet sich im Wurzelverzeichnis.
 

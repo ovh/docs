@@ -5,7 +5,11 @@ excerpt: 'Aprenda a configurar direcciones IPv6 en nuestra infraestructura'
 section: 'Red e IP'
 ---
 
-**Última actualización: 01/12/2021**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
+**Última actualización: 30/03/2022**
 
 ## Objetivo
 
@@ -41,6 +45,10 @@ Si desea configurar varias direcciones IPv6 en su servidor (o si quiere utilizar
 > - La dirección IPv6 del servidor es 2001:41D0:1:46e::/64. Por lo tanto, la IPv6_GATEWAY será 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > La forma más segura de obtener la información de red del servidor es [mediante la API de OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!warning]
+> Tenga en cuenta que los servidores Kimsufi se entregan con un único bloque IPV6 (/128). En ese caso, consulte la [guía](https://docs.ovh.com/es/vps/configurar-ipv6/) para configurar la ipv6 en un servidor Kimsufi.
 >
 
 > [!api]
@@ -125,7 +133,7 @@ Más información en [esta guía](../primeros-pasos-servidor-dedicado/).
 
 #### 2: Abrir el archivo de configuración de red de su servidor
 
-Su archivo de configuración de red de su servidor se encuentra en /etc/sysconfig/network-scripts/ifcfg-eth0. Utilice la línea de comando para localizar el archivo y ábralo para editarlo.
+Su archivo de configuración de red de su servidor se encuentra en `/etc/sysconfig/network-scripts/ifcfg-eth0`. Utilice la línea de comando para localizar el archivo y ábralo para editarlo.
 
 #### 3: Modificar el archivo de configuración de red
 
@@ -238,7 +246,7 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-Para añadir varias direcciones IPv6, añada varias secciones \[Address].
+Para añadir varias direcciones IPv6, añada varias secciones [Address].
 
 ```console
 [Address]
@@ -302,9 +310,9 @@ Introduzca su configuración IPv6 (`Dirección IPv6`y `Puerta de enlace por defe
 
 Si después de comprobar su conexión las incidencias persisten, genere una solicitud de asistencia para revisar su configuración. Será necesario que indique:
 
-- El nombre y la versión del sistema operativo que está utilizando en su servidor
-- El nombre y la carpeta del archivo de configuración de red 
-- El contenido de ese archivo 
+- El nombre y la versión del sistema operativo que está utilizando en su servidor.
+- El nombre y la carpeta del archivo de configuración de red. 
+- El contenido de ese archivo. 
 
 
 ## Más información

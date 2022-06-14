@@ -18,18 +18,18 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 - an MX Plan solution, available via a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, [a free Start 10M hosting solution](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external} including a domain name (activated in advance), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 > [!primary]
 >
-> Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the domain name concerned.
+> Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email address. You can do this via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to the domain name concerned.
 >
 
 ## Instructions
 
 Depending on when your service was activated or if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will have either the legacy version or the new version of the MX Plan solution. Before you proceed any further, you will need to establish which version you are using. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to the `Web Cloud`{.action} section. Click `Emails`{.action}, and then choose the name of the MX Plan service concerned. Then you can proceed in accordance with the version you are using.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -130,7 +130,7 @@ In the pop-up window, enter the following information:
 |Information|Description|  
 |---|---|  
 |User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
-|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVH Control Panel.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in the OVHcloud Control Panel.|  
 |Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
 |Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, choosing one that does not contain any personal information (e.g. your surname, first name, and date of birth) and we also recommend renewing it regularly.|
 

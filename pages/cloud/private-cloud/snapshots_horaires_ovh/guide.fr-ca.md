@@ -7,7 +7,7 @@ section: Fonctionnalités OVHcloud
 order: 06
 ---
 
-**Dernière mise à jour le 21/10/2020**
+**Dernière mise à jour le 15/03/2022**
 
 ## Objectifs
 
@@ -42,6 +42,11 @@ On peut donc dire que la taille d’un snapshot est approximativement égale à 
 Dans la pratique, un snapshot créé à l'instant T ne fera que quelques kilo octets. La taille du snapshot grossira en fonction des modifications faites jusqu'au prochain snapshot. Si vous supprimez vos données, l'espace sera libéré uniquement lors de la suppression du snapshot.
 
 ## Snapshot à H-1
+
+> [!warning]
+>
+>Le dossier .zfs n'est plus visible sur les nouvelles générations de datastores. Vous pouvez cependant passer par le support technique pour demander la restauration d'une VM avec un snapshot horaire à H-1.
+>
 
 Vous avez la possibilité de récupérer le snapshot ZFS de la dernière heure (H-1) depuis le vSphere Web Client HTML, puisque celui-ci est directement stocké dans vos datastores. 
 

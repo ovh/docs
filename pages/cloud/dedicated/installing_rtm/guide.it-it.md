@@ -5,7 +5,11 @@ excerpt: 'Come utilizzare Real Time Monitoring su Linux'
 section: 'Diagnostica e modalità Rescue'
 ---
 
-**Ultimo aggiornamento 24/03/2020**
+**Ultimo aggiornamento 07/04/2022**
+
+> [!warning]
+> Dal 7 aprile 2022, la funzionalità di visualizzazione dei dati relativi all'attività del tuo server è obsoleta. L'opzione Real Time Monitoring continuerà a funzionare per i server che l'hanno già installata fino al 30 giugno 2022. Dopo questa data, procederemo all'arresto di questa funzionalità senza impatto sul funzionamento del server associato. Non è consigliato installare questa opzione. Questa notifica ha lo scopo di lasciarti abbastanza tempo per anticipare la sostituzione della funzionalità eliminata.
+>
 
 ## Obiettivo
 

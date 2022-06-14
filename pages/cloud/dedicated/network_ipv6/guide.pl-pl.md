@@ -5,7 +5,11 @@ excerpt: 'Dowiedz się, jak skonfigurować adresy IPv6 w infrastrukturze OVHclou
 section: 'Sieć & IP'
 ---
 
-**Ostatnia aktualizacja: 01/12/2021**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja: 30/03/2022**
 
 ## Wprowadzenie
 
@@ -21,9 +25,9 @@ IPv6 (Internet Protocol version 6) jest najnowszą wersją protokołu internetow
 
 ## Wymagania początkowe
 
-- [serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud
-- wszystkie informacje o protokole IPv6 (prefiks, brama itd.)
-- podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci
+- [Serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud.
+- Wszystkie informacje o protokole IPv6 (prefiks, brama itd.).
+- Podstawowa wiedza z zakresu [protokołu SSH](../ssh-wprowadzenie/) i sieci.
 
 ## W praktyce
 
@@ -41,6 +45,10 @@ Jeśli chcesz skonfigurować kilka adresów IPv6 na Twoim serwerze (lub jeśli c
 > - Adres IPv6 serwera to 2001:41D0:1:46e::/64. Dlatego bramą IPv6_GATEWAY jest 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jest korzystanie z [API OVHcloud](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) (EN). Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+>
+
+> [!warning]
+> Należy zauważyć, że serwery Kimsufi są dostarczane z jednym blokiem IPV6 (/128). W takim przypadku skorzystaj z tego [przewodnika](https://docs.ovh.com/pl/vps/konfiguracja-ipv6/) dotyczącego konfiguracji ipv6 na serwerze Kimsufi.
 >
 
 > [!api]
@@ -123,7 +131,7 @@ Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykow
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Plik konfiguracji sieci Twojego serwera znajduje się w katalogu /etc/sysconfig/network-scripts/ifcfg-eth0. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia.
+Plik konfiguracji sieci Twojego serwera znajduje się w katalogu `/etc/sysconfig/network-scripts/ifcfg-eth0`. Znajdź plik i otwórz go do edycji przy użyciu wiersza polecenia.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
@@ -219,7 +227,7 @@ Więcej informacji zawiera [ten przewodnik](../pierwsze-kroki-z-serwerem-dedykow
 
 #### Krok 2: otwarcie pliku konfiguracji sieci dla serwera
 
-Otwórz plik konfiguracji sieci znajdujący się w katalogu /etc/systemd/network. Nasz przykładowy plik ma nazwę 50-default.network.
+Otwórz plik konfiguracji sieci znajdujący się w katalogu `/etc/systemd/network`. Nasz przykładowy plik ma nazwę 50-default.network.
 
 #### Krok 3: wprowadzenie zmian w pliku konfiguracji sieci
 
@@ -302,9 +310,9 @@ Wprowadź konfigurację protokołu IPv6 (w polach `Adres IPv6` i `Brama domyśln
 
 Jeśli po testach wciąż występują problemy z połączeniem, utwórz zgłoszenie do zespołu pomocy technicznej i poproś o przejrzenie Twoich konfiguracji. Podaj następujące informacje:
 
-- nazwa i wersja systemu operacyjnego używanego na serwerze
-- nazwa pliku konfiguracji sieci i katalog, w którym się on znajduje 
-- treść tego pliku 
+- Nazwa i wersja systemu operacyjnego używanego na serwerze.
+- Nazwa pliku konfiguracji sieci i katalog, w którym się on znajduje. 
+- Treść tego pliku.
 
 
 ## Sprawdź również

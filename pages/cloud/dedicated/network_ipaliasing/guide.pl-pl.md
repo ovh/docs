@@ -23,6 +23,10 @@ Alias IP (po angielsku IP aliasing) to specjalna konfiguracja sieci serwera dedy
 - Dysponowanie jednym lub kilkoma adresami IP Failover.
 - Zalogowanie się poprzez SSH do serwera (dostęp root).
 
+> [!warning]
+> Funkcja ta może być niedostępna lub ograniczona na [serwerach dedykowanych **Eco**](https://eco.ovhcloud.com/pl/about/).
+>
+> Aby uzyskać więcej informacji, zapoznaj się z naszym [porównaniem](https://eco.ovhcloud.com/pl/compare/).
 
 ## W praktyce
 Poniżej przedstawiamy konfigurację dla dystrybucji bazowych.

@@ -6,7 +6,7 @@ section: Object Storage S3 High Performance
 order: 180
 ---
 
-**Dernière mise à jour le 03/01/2022**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -15,6 +15,20 @@ Retrouvez ici les limites techniques relatives à l'offre Object Storage S3 High
 ### Nombre maximum de conteneurs dans un stockage
 
 100
+
+### Nombre maximum d'objets dans un conteneurs
+
+Illimité
+
+### Bande passante maximale par connexion
+
+1 Gbps / connexion
+
+### Taille maximum par object / mpu / part
+
+- 5Go maximum par object
+- 10000 parts maximum dans un mpu
+- 5Mo est la taille minimum pour un part
 
 ### Nombre maximum de comptes utilisateurs par projet
 

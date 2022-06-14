@@ -47,7 +47,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`.
 
-Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente.
+Clique em `E-mails`{.action} e selecione o serviço MX Plan correspondente.
 
 Para apresentar a lista das contas de e-mail da sua oferta MXplan, clique no separador `Emails`{.action}.
 

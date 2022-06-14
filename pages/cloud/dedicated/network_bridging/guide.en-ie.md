@@ -21,6 +21,11 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 - At least one [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) attached to the server
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
+> [!warning]
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-ie/about/).
+>
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-ie/compare/) for more information.
+
 ## Instructions
 
 The basic steps are always the same, independent of the underlying system:
@@ -43,15 +48,13 @@ The “Service” drop-down menu allows you to filter for Failover IPs.
 
 ![manage IPs](images/manageIPs.png){.thumbnail}
 
-![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
-
 Click on `...`{.action} in the relevant row to open the context menu, and select `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC](images/virtual_mac_02_2020.png){.thumbnail}
 
 Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware ESXi - in that case choose `vmware`{.action}. Type a name in the “Name of virtual machine” field, and click on `Confirm`{.action}.
 
-![Add a virtual MAC](images/virtual_mac_03.png){.thumbnail}
+![Add a virtual MAC](images/addvmac2.png){.thumbnail}
 
 ### Step 2: Determine the gateway address
 

@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 3
 ---
 
-**Ostatnia aktualizacja: 15-04-2020**
+**Ostatnia aktualizacja: 01-04-2022**
 
 ## Wprowadzenie
 
@@ -31,35 +31,35 @@ Klucze SSH nie służą do uwierzytelniania na serwerach z systemem operacyjnym 
 
 Na komputerze z systemem Mac lub Linux otwórz aplikację terminala (wiersz polecenia).
 
-Sprawdź, czy w katalogu domowym $HOME masz folder „.ssh”. Jeśli taki folder nie istnieje, utwórz go:
+Sprawdź, czy w katalogu domowym $HOME masz folder “.ssh”. Jeśli taki folder nie istnieje, utwórz go:
 
-```sh
+```bash
 # mkdir ~/.ssh
 ```
 
 Utwórz 4096-bitowy klucz RSA przy użyciu następującego polecenia:
 
-```sh
+```bash
 # ssh-keygen -b 4096
 ```
-Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją „-t”, na przykład:
+Aby określić inną metodę szyfrowania, użyj tego polecenia z opcją “-t”, na przykład:
 
-```sh
+```bash
 # ssh-keygen -t ed25519 -a 256
 ```
 
 Zostanie wyświetlony monit o zapisanie nowo utworzonego klucza:
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
 Po potwierdzeniu możesz podać hasło, które będzie stanowić zabezpieczenie klucza SSH. Jest to zalecane w celu zwiększenia bezpieczeństwa.
 
-Klucze powinny zostać zapisane w katalogu „.ssh”.
+Klucze powinny zostać zapisane w katalogu “.ssh”.
 
-```ssh
+```bash
 Your identification has been saved in /home/user/.ssh/id_rsa.
 Your public key has been saved in /home/user/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -83,9 +83,9 @@ The key's randomart image is:
 > Klucz prywatny zawsze należy przechowywać w bezpiecznym miejscu, a dostęp do niego powinny mieć tylko uprawnione osoby.
 > 
 
-Aby odczytać i wyeksportować klucz publiczny, użyj polecenia „cat” względem pliku klucza i skopiuj dane wyjściowe:
+Aby odczytać i wyeksportować klucz publiczny, użyj polecenia “cat” względem pliku klucza i skopiuj dane wyjściowe:
 
-```ssh
+```bash
 # cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
@@ -116,27 +116,27 @@ Poruszaj myszą aż do wypełnienia paska postępu. Po wypełnieniu paska postę
 
 ### Dodawanie kluczy SSH do serwera
 
-Przejdź do katalogu domowego $HOME i utwórz folder „.ssh” (jeśli jeszcze nie istnieje):
+Przejdź do katalogu domowego $HOME i utwórz folder “.ssh” (jeśli jeszcze nie istnieje):
 
-```ssh
+```bash
 $ mkdir ~/.ssh
 ```
 
-Aby zapisać klucz dla bieżącego użytkownika, otwórz plik o nazwie „authorized_keys” w preferowanym edytorze tekstu:
+Aby zapisać klucz dla bieżącego użytkownika, otwórz plik o nazwie “authorized_keys” w preferowanym edytorze tekstu:
 
-```ssh
+```bash
 $ nano ~/.ssh/authorized_keys
 ```
 
 Skopiuj **klucz publiczny** i wklej go do tego nowego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer lub tylko zrestartuj demon OpenSSH (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego).
 
-```ssh
+```bash
 $ systemctl restart sshd
 ```
 
-Aby sprawdzić, czy klucz jest prawidłowo skonfigurowany, spróbuj połączyć się z serwerem za pośrednictwem protokołu SSH przy użyciu następującego polecenia. Zastąp „IP_ADDRESSorHOSTNAME” adresem IP lub nazwą hosta serwera, do którego próbujesz uzyskać dostęp:
+Aby sprawdzić, czy klucz jest prawidłowo skonfigurowany, spróbuj połączyć się z serwerem za pośrednictwem protokołu SSH przy użyciu następującego polecenia. Zastąp “IP_ADDRESSorHOSTNAME” adresem IP lub nazwą hosta serwera, do którego próbujesz uzyskać dostęp:
 
-```ssh
+```bash
 $ ssh user@IP_ADDRESSorHOSTNAME
 ```
 
@@ -146,7 +146,7 @@ W celu dodania kluczy SSH dla dodatkowych użytkowników po prostu powtórz popr
 
 #### Usuwanie autoryzowanych kluczy z serwera
 
-Usuń z pliku „authorized_keys” klucz odpowiadający użytkownikowi, którego dostęp chcesz odwołać. Po usunięciu klucza zapisz plik i zamknij edytor tekstu.
+Usuń z pliku “authorized_keys” klucz odpowiadający użytkownikowi, którego dostęp chcesz odwołać. Po usunięciu klucza zapisz plik i zamknij edytor tekstu.
 
 ### Importowanie klucza SSH do Panelu klienta OVHcloud
 
@@ -156,13 +156,13 @@ Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym ro
 
 ![SSH key control panel](images/SSH_keys_panel_1.1.png){.thumbnail}
 
-W obszarze „Moje usługi” przełącz się na kartę `Klucze SSH`{.action} i kliknij pozycję `Dodaj klucz SSH`{.action}.
+W obszarze “Moje usługi” przełącz się na kartę `Klucze SSH`{.action} i kliknij pozycję `Dodaj klucz SSH`{.action}.
 
 ![SSH key control panel](images/SSH_keys_panel_2.1.png){.thumbnail}
 
-Z menu rozwijanego wybierz pozycję „Dedykowane”.
+Z menu rozwijanego wybierz pozycję “Dedykowane”.
 
-W wyświetlonym nowym oknie wpisz ID (wybraną nazwę) klucza. Wklej ciąg klucza (skopiowany z Twojego pliku „.pub”) w polu „Klucz”.
+W wyświetlonym nowym oknie wpisz ID (wybraną nazwę) klucza. Wklej ciąg klucza (skopiowany z Twojego pliku “.pub”) w polu “Klucz”.
 
 ![SSH key control panel](images/SSH_keys_panel_3.png){.thumbnail}
 
@@ -170,9 +170,32 @@ Jeśli zostały skopiowane całe dane wyjściowe, identyfikator powinien już zn
 
 > [!primary]
 >
-> Kluczy zapisanych w sekcji „Dedykowane” można używać również do usług prywatnego serwera wirtualnego (VPS). Informacje o kluczach SSH na potrzeby usług Public Cloud zawiera [ten przewodnik](../../public-cloud/public-cloud-pierwsze-kroki).
+> Kluczy zapisanych w sekcji “Dedykowane” można używać również do usług prywatnego serwera wirtualnego (VPS). Informacje o kluczach SSH na potrzeby usług Public Cloud zawiera [ten przewodnik](../../public-cloud/public-cloud-pierwsze-kroki).
 >
 
+### Ustaw domyślny klucz SSH (tylko dla sekcji "Dedykowane")
+
+Jeśli dodałeś kilka kluczy SSH do Panelu klienta, można zdefiniować klucz, którego będziesz używał jako klucza domyślnego na koncie.
+
+> [!warning]
+> Pamiętaj, że po ustawieniu domyślnego klucza SSH będzie on również używany jako sposób połączenia podczas restartu serwera w trybie Rescue. Aby otrzymywać hasło, domyślny klucz musi zostać wyłączony przed ponownym uruchomieniem serwera w trybie Rescue.
+>
+
+Otwórz nawigację na pasku bocznym, klikając Twoją nazwę w prawym górnym rogu, i użyj skrótu `Zarządzanie usługami`{.action}.
+
+![Przestrzeń do zarządzania kluczami SSH](images/SSH_keys_panel_1.1.png){.thumbnail}
+
+Na liście kluczy kliknij ikonę `Klucz` obok wybranego klucza SSH, aby zdefiniować ją jako klucz domyślny.
+
+![Panel klienta klucza SSH](images/defaultsshkey.png){.thumbnail}
+
+Po zakończeniu operacji wyświetli się komunikat, w którym potwierdzi się, że klucz został ustawiony domyślnie. Wyświetli się wówczas ikona `Klucz`.
+
+![Panel klienta klucza SSH](images/defaultsshkey1.png){.thumbnail}
+
+### Wyłącz domyślny klucz SSH <a name="disablesshkey"></a>
+
+Aby wyłączyć domyślny klucz SSH, przeprowadź te same operacje, co powyżej, i kliknij ikonę `Klucz` obok odpowiedniego klucza SSH, aby wyłączyć opcję.
 
 ## Sprawdź również
 

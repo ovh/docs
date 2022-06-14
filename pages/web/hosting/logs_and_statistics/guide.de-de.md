@@ -24,7 +24,7 @@ Die Webserver-Protokolle und Website-Statistiken sind in Ihrem Webhosting inklus
 
 ## In der praktischen Anwendung
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie im Bereich `Web Cloud`{.action} im Menü links auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Webhosting aus.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie im Bereich `Web Cloud`{.action} auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Webhosting aus.
 
 Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 

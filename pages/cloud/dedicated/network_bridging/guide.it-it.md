@@ -25,6 +25,12 @@ La connessione di rete in modalità bridge può essere utilizzata per configurar
 - Disporre di almeno un indirizzo [IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/) connesso al server
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
+> [!warning]
+> Questa funzionalità può non essere disponibile o limitata sui [server dedicati **Eco**](https://eco.ovhcloud.com/it/about/).
+>
+> Per maggiori informazioni, consulta la nostra [a confronto](https://eco.ovhcloud.com/it/compare/).
+>
+
 ## Procedura
 
 Gli step di base sono sempre gli stessi, indipendentemente dai sistemi utilizzati:
@@ -52,7 +58,7 @@ Clicca sui tre puntini `..`{.action}. e poi su `Aggiungi un indirizzo MAC virtua
 
 Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome della macchina virtuale" e clicca su `Conferma`{.action}.
 
-![Aggiungi un MAC virtuale (2)](images/virtual_mac_03.png){.thumbnail}
+![Aggiungi un MAC virtuale (2)](images/addvmac2.png){.thumbnail}
 
 ### Determinare l'indirizzo del gateway
 

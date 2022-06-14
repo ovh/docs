@@ -2,7 +2,7 @@
 title: MongoDB - Backups and Restores with the CLI
 slug: mongodb/backups-and-restores-cli
 excerpt: Find out how to back up and restore your Public Cloud Databases for MongoDB database using the CLI
-section: MongoDB
+section: MongoDB - Guides
 order: 4
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/backups-and-restores-cli/'

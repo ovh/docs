@@ -40,26 +40,26 @@ L'authentification de connexion sur les instances Windows nécessite uniquement 
 
 À partir d'un ordinateur Mac ou d'un poste de travail sur lequel un système d'exploitation Linux est installé, ouvrez d'abord l'application de ligne de commande (Terminal). Vérifiez que votre répertoire $HOME contient un dossier « .ssh ». Si le dossier n'existe pas, créez-le :
 
-```sh
-# mkdir ~/.ssh
-# chmod 700 ~/.ssh
+```bash
+$ mkdir ~/.ssh
+$ chmod 700 ~/.ssh
 ```
 
 Utilisez la commande suivante pour créer une clé RSA 4096 bits :
 
-```sh
-# ssh-keygen -b 4096
+```bash
+$ ssh-keygen -b 4096
 ```
 
 L'utilisation de l'option « -t » avec cette commande vous permet de spécifier une autre méthode de chiffrement, par exemple :
 
-```sh
-# ssh-keygen -t ecdsa -a 256
+```bash
+$ ssh-keygen -t ecdsa -a 256
 ```
 
 La commande vous invite à enregistrer la nouvelle clé dans le fichier standard :
 
-```sh
+```bash
 Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
@@ -94,8 +94,8 @@ The key's randomart image is:
 
 Pour afficher et exporter votre clé publique, utilisez la commande « cat » sur votre fichier de clé « .pub » et copiez le résultat :
 
-```ssh
-# cat ~/.ssh/id_rsa.pub
+```bash
+$ cat ~/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8teh2NJ42qYZV98gTNhumO1b6rMYIkAfRVazl
 k6dSS3xf2MXJ4YHsDacdjtJ+evXCFBy/IWgdkFtcvsGAMZ2N1RdvhDyQYcy6NDaJCBYw1K6Gv5fJ
 SHCiFXvMF0MRRUSMneYlidxUJg9eDvdygny4xOdC6c1JrPrSgOc2nQuKeMpOoOWLINIswg1IIFVk
@@ -108,7 +108,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 Dans un terminal Mac OS, vous pouvez également utiliser les commandes « pbcopy » et « pbcoller » pour gérer les chaînes de touches. Par exemple, utilisez cette commande pour copier la clé du fichier « id_rsa.pub » dans le presse-papiers:
 >
 
-```ssh
+```bash
 $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
@@ -150,6 +150,8 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 ![ajouter une clé](images/puttygen-04.png){.thumbnail}
 
 ### Étape 3 : Créer une instance
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YP92y1rAVdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
@@ -234,14 +236,14 @@ Vous pouvez maintenant accéder à votre instance en ligne de commande (Terminal
 
 Tapez la passphrase de votre clé privée lorsque vous y êtes invité.
 
-```sh
+```bash
 ssh username@IPv4_of_your_instance
 Enter passphrase for key '/Users/username/.ssh/id_rsa':
 ```
 Vous êtes maintenant connecté avec les privilèges root (« sudo user »). Il est conseillé de changer d'abord votre mot de passe :
 
-```sh
-$ sudo passwd
+```bash
+$ sudo passwd username
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -249,7 +251,7 @@ passwd: password updated successfully
 
 Vous pouvez maintenant utiliser ces informations d'identification pour vous connecter via l'onglet `Console VNC`{.action} de votre instance sur votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Passez ensuite à l'utilisateur « root » et définissez un mot de passe sécurisé, puis revenez à l'utilisateur précédent:
 
-```sh
+```bash
 $ sudo su -
 # passwd
 New password:

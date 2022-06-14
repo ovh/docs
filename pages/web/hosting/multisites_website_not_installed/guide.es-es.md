@@ -62,7 +62,7 @@ Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multis
 
 #### 2\.1 Identificar la dirección IP de un alojamiento de OVHcloud
 
-Para acceder a la dirección IP, haga clic en `Alojamientos` en la columna izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
+Para acceder a la dirección IP, haga clic en `Alojamientos` en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
 
 ![hosting-general-informacion](images/hosting-general-informations.png){.thumbnail}
 

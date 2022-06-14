@@ -33,7 +33,7 @@ Pode encomendar um ou vários espaços de armazenamento entre 1TiB e 29TiB na su
 >
 > - T, o prefixo "tera-" é uma métrica e um standard IT que utiliza a base-10. Portanto, 1 TB = 1012 bytes = 100000000000 bytes = 1000 GB.
 >
-> - Ti, o prefixo "Tebi-", foi criado mais tarde como um dos prefixos binários que são atualmente padrões IEC/ISO e que utiliza a base-2. Isto significa 10244=240. Portanto 1 TiB = 109951162776 bytes= 1024 GiB.
+> - Ti, o prefixo "Tebi-", foi criado mais tarde como um dos prefixos binários que são atualmente padrões IEC/ISO e que utiliza a base-2. Isto significa 10244=240. Portanto 1 TiB = 109951162776 bytes = 1024 GiB.
 >
 > - Os computadores utilizam a base 2, pelo que a quantidade de armazenamento que pode ver no seu sistema operativo é expressa em TiB. Os fornecedores de armazenamento tendem a utilizar o TB, uma vez que este é um número superior ao TiB.
 >
@@ -41,7 +41,7 @@ Pode encomendar um ou vários espaços de armazenamento entre 1TiB e 29TiB na su
 >
 > - Para o Enterprise File Storage, porque queremos ser transparentes consigo, entregaremos o volume em TiB mesmo que veja o TB como unidade, porque o grande público utiliza o TB.
 >
-> - Assim, se encomendar um serviço Enterprise File Storage de 1 TB, disporá de facto de 1 TiB = 1,09951 TB ;-)
+> - Assim, se encomendar um serviço Enterprise File Storage de 1 TB, disporá de facto de 1 TiB = 1,09951 TB.
 >
 
 ### Princípio de funcionamento das capacidades pools

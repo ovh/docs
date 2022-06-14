@@ -19,7 +19,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.co.uk/solutions/vr
 * Your chosen private IP address range
 * A [vRack compatible server](https://www.ovh.co.uk/dedicated_servers/){.external}
 * A [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-* Access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
@@ -27,6 +27,14 @@ As well as private IP addressing, the [vRack](https://www.ovh.co.uk/solutions/vr
 >
 For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
 >
+
+### Add the IP block to the vRack
+
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `vRack`{.action} menu.
+
+Select your vRack from the list to display the list of eligible services. Click the IP block you wish to add to the vRack and click on the `Add`{.action} button.
+
+![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configure a usable IP address
 

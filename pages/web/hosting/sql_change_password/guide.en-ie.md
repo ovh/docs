@@ -50,7 +50,7 @@ There are four steps to changing your website’s database password:
 
 ### Step 1: Identify your website’s configuration file <a name="step1"></a>
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on `Web Cloud`{.action}, then on the menu on the left-hand side of your screen, `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on `Web Cloud`{.action}, then on `Hosting plans`{.action} and finally the hosting plan concerned. Then go to the `Multisite`{.action} tab. Identify the name of your site's `Root folder` (the directory in which its files and folders are located).
 
 ![root_folder](images/root_folder.png){.thumbnail}
 
@@ -103,7 +103,7 @@ You will need to go back to your website’s configuration file to note the *ser
 - For DRUPAL: The *server name* appears under "**host**" and the *username* appears under "**username**".
 - For PRESTASHOP: The *server name* appears under "**database_host**" and the *username* appears under "**database_user**".
 
-Next, on the **left-hand side** of your screen, click on `Databases`{.action}.
+Then click in the `Databases`{.action} section of the `Web Cloud`{.action} section.
 
 For [CloudDB](https://www.ovh.ie/cloud/cloud-databases/) solutions, open the tab `General information`{.action}. Check for the database server name identified previously under `Host name`{.action}.
 
@@ -210,7 +210,7 @@ In the window that pops up, enter your database’s new password (defined at [st
 
 #### Case 2: Your website’s database is part of a CloudDB solution <a name="case2"></a>
 
-Go to the `Databases`{.action} section in your Control Panel (left-hand menu) and click on the server concerned, then click on `Users and rights`{.action}:
+Go to the `Databases`{.action} section in your Control Panel and click on the server concerned, then click on `Users and rights`{.action}:
 
 ![userDBpassword-step1](images/userDBpassword-step1.png){.thumbnail}
 

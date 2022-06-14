@@ -34,7 +34,7 @@ Se il CMS che hai scelto non è presente fra le opzioni proposte da OVHcloud, po
 
 ### Accedi alla pagina di gestione dei moduli in 1 click
 
-Accedi allo Spazio Cliente OVHcloud e, nel menu a sinistra, seleziona `Hosting`{.action} e poi il tuo servizio. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sulla scheda `CMS in 1 click`{.action} per visualizzare i moduli in uso, gestirli e installarne di nuovi.
 
 ![Accesso alla sezione Moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
 

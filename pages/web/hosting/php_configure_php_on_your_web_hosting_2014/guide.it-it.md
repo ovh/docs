@@ -46,7 +46,7 @@ Per conoscere la versione PHP in uso sul tuo hosting Web, è possibile utilizzar
 
 |Metodo|Descrizione|
 |---|---|
-|Spazio Cliente OVH|Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo servizio dalla sezione `Hosting`{.action} nel menu a sinistra e assicurati di essere posizionato nella scheda `Informazioni generali`. La versione installata è visibile nel riquadro “Configurazione”, in corrispondenza della voce “Versione PHP”. Se visualizzi un cerchio azzurro, attendi qualche minuto fino al completamento dell’aggiornamento della versione.|
+|Spazio Cliente OVH|Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo servizio dalla sezione `Hosting`{.action} e assicurati di essere posizionato nella scheda `Informazioni generali`. La versione installata è visibile nel riquadro “Configurazione”, in corrispondenza della voce “Versione PHP”. Se visualizzi un cerchio azzurro, attendi qualche minuto fino al completamento dell’aggiornamento della versione.|
 |Script|Crea uno script **.php** che contenga esclusivamente il codice `<?php phpinfo(); ?>`, caricalo sul tuo spazio di storage ed eseguilo accedendo al suo indirizzo URL completo.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

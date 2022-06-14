@@ -46,7 +46,7 @@ What is Keycloak?
 
 ![Keycloak](images/keycloak.png)
 
-__[Keycloak](https://www.keycloak.org/about)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
+__[Keycloak](https://www.keycloak.org/)__ is an open source Identity and Access Management solution aimed at modern applications and services.  
 It makes it easy to secure applications and services with little to no code.  
 More information can be found here: [Official Keycloak documentation](https://www.keycloak.org/documentation.html)
 

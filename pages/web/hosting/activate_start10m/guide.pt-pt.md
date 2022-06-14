@@ -17,7 +17,7 @@ order: 2
 Com o [Start10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 10MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovhcloud.com/pt/domains/){.external}.
 
 > [!warning]
-> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, **não inclui uma base de dados**. Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (por exemplo: Worpdress, Joomla, Prestashop, Drupal, etc.), convidamo-lo a encomendar diretamente uma das [nossas ofertas de alojamento Web a partir do nosso site](https://www.ovhcloud.com/pt/web-hosting/) ou da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external}.
+> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, **não inclui uma base de dados**. Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (por exemplo: Worpdress, Joomla, Prestashop, Drupal, etc.), convidamo-lo a encomendar diretamente uma das [nossas ofertas de alojamento Web a partir do nosso site](https://www.ovhcloud.com/pt/web-hosting/) ou da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 **Saiba como ativar o alojamento gratuito Start 10M**
 
@@ -28,9 +28,9 @@ Com o [Start10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.externa
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action}(**1**) na barra à esquerda e escolha o domínio em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Nomes de domínio`{.action} na barra à esquerda e escolha o domínio em questão.
 
-No menu **Informações gerais**(**2**), encontrará *Alojamento web e e-mail gratuito*. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}(**3**).
+No menu **Informações gerais**, encontrará *Alojamento web e e-mail gratuito*. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}.
 
 ![start10m](images/start10m-step1-01.png){.thumbnail}
 

@@ -6,7 +6,7 @@ section: CloudDB
 order: 6
 ---
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 29.03.2022**
 
 ## Ziel
 
@@ -16,14 +16,14 @@ Die Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres 
 
 ## Voraussetzungen
 
-- Sie haben ein [Cloud Databases](https://www.ovh.de/cloud-databases/) in Ihrem Kunden-Account.
+- Sie haben einen [Cloud Databases](https://www.ovh.de/cloud-databases/) Dienst in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Abrufen der allgemeinen Informationen eines Datenbank-Servers
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
 
 Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
 
@@ -43,7 +43,7 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. 
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. 
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -57,7 +57,7 @@ Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse od
 
 Für OVHcloud Webhostings müssen Sie die ausgehende IP-Adresse („gateway“) des Hostings hinzufügen. 
 
-Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
+Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action}. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
 
 Unter **FTP Server** wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt.
 
@@ -70,10 +70,9 @@ Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie 
 > Die IP-Adresse des Clusters wird nicht funktionieren, um die Verbindung mit dem Cloud-DB-Server zu ermöglichen. Es muss die ausgehende IP-Adresse („gateway“)  hinzugefügt werden.
 >
 
-
 ### Wechseln des Datenbank-Angebots
 
-Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
@@ -97,7 +96,7 @@ Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um 
 
 ### Die Konfiguration meines Datenbankservers ändern
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres CloudDB Servers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. und wählen Sie den Namen Ihres CloudDB Servers aus. 
 
 #### MySQL und MariaDB Instanzen
 
@@ -116,6 +115,7 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 - **MaxLines:** Anzahl der erlaubten Simultanverbindungen auf CloudDB.
 - **Wait_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
 - **Event_scheduler**: Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
+- **sql_mode**: Die Option **sql_mode** betrifft die jeweilige SQL-Syntax und die Überprüfungen der Datenvalidierung durch MySQL/MariaDB.
 
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
@@ -124,10 +124,30 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 >
-> <b>Tmpdir</b>:    
+> <b>Tmpdir</b>:
+>
 > \- /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
 >
 > \- /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
+>
+
+> [!primary]
+>
+> <b>sql_mode</b>:
+>   
+> &emsp;&emsp;Standardmodus von MariaDB 10.1:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
+> 
+> &emsp;&emsp;Standardmodus von MariaDB 10.2 und spätere Versionen:
+> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> &emsp;&emsp;Standardmodus von MySQL 5.6:
+> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> 
+> &emsp;&emsp;Standardmodus von MySQL 5.7 und spätere Versionen:
+> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
+>
+> Wir empfehlen Ihnen, immer den Standardmodus zu nutzen, sofern Ihre Datenbank nicht auf Basis einer Version aktualisiert wurde, die einen anderen Standardmodus hat, als die aktuelle Version.
 >
 
 Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Bestätigen`{.action}.
@@ -160,15 +180,15 @@ Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 
 Geben Sie diesen Befehl in phpPgAdmin ein, nachdem Sie auf **Ihre Datenbank** im Bereich **SQL** geklickt haben und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 select version();
 ```
 
-####  **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
+#### **Woher weiß ich, welche Version von MySQL oder MariaDB ich benutze?**
 
 Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
 
-```
+```sql
 show variables like "version";
 ```
 
@@ -189,7 +209,7 @@ show variables like "version";
 
 So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
@@ -203,7 +223,7 @@ Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die
 
 Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden. 
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
@@ -216,7 +236,7 @@ Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
 #### Überprüfung der RAM Nutzung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
@@ -226,7 +246,7 @@ Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik
 
 Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action}. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 
@@ -242,10 +262,10 @@ Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index a
 
 Beispiel: Sie suchen regelmäßig nach „Person“ in Verbindung mit „Stadt“. Indexieren Sie das Feld "Stadt" folgendermaßen:
 
-```bash
+```sql
 ALTER TABLE 'test' ADD INDEX ('Stadt');
-
 ```
+
 #### Datenbank bereinigen
 
 Daten, auf die nicht mehr zugegriffen wird, sollten archiviert werden. Archivieren von Daten hilft, Ihre Tabellen kleiner und damit schneller durchsuchbar zu halten.
@@ -277,7 +297,7 @@ Prüfen Sie in Ihren SQL-Anfragen, ob Sie nur die tatsächlich benötigten Daten
 
 Beispiel:
 
-```bash
+```sql
 (where table1.champs = table2.champs2)
 ```
 

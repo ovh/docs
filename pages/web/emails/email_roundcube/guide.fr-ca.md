@@ -187,7 +187,7 @@ Pour les autres options disponibles, consultez la capture ci-contre.
 Il vous est possible de la modifier vers "toujours" afin d'envoyer vos e-mails en format HTML.
 
 
-![hosting](images/img_1288.jpg){.thumbnail}
+![options_RC](images/options_RC.PNG){.thumbnail}
 
 
 ### Carnet d'adresses
@@ -377,7 +377,7 @@ Pour insérer la signature associée à cette identité, référez-vous à la se
 Afin d'écrire un nouveau message, cliquez sur Composer.... Si vous ne voyez pas ce bouton (vous êtes dans les paramètres ou le carnet d'adresses), cliquez sur l'enveloppe blanche (Courriel) en haut à droite. Vous trouverez alors ce bouton.
 
 
-![hosting](images/img_1404.jpg){.thumbnail}
+![bouton_rediger](images/bouton_rediger.png){.thumbnail}
 
 
 ### Differentes options

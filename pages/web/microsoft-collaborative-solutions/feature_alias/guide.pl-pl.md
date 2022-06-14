@@ -33,11 +33,11 @@ Na przykład adres e-mail to **john.smith@mydomain.ovh** oraz alias **anonymous@
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`. Następnie wybierz menu w zależności od oferty e-mail:
 
-- **Exchange**: w `Microsoft`{.action} na pasku usług po lewej stronie, następnie w `Exchange`{.action} i wybierz odpowiednią platformę. Kliknij kartę `Konta e-mail`{.action}.
+- **Exchange**: w `Microsoft`{.action}, następnie w `Exchange`{.action} i wybierz odpowiednią platformę. Kliknij kartę `Konta e-mail`{.action}.
 
-- **E-mail Pro**: w `E-mail Pro`{.action} na pasku usług po lewej stronie wybierz odpowiednią platformę i kliknij zakładkę `Konta e-mail`{.action}.
+- **E-mail Pro**: w `E-mail Pro`{.action}  wybierz odpowiednią platformę i kliknij zakładkę `Konta e-mail`{.action}.
 
-- **E-maile** (MXplan): w `e-maili`{.action} na pasku usług po lewej stronie wybierz odpowiednią platformę i kliknij zakładkę `Konta e-mail`{.action}.
+- **E-maile** (MXplan): w `e-maili`{.action}  wybierz odpowiednią platformę i kliknij zakładkę `Konta e-mail`{.action}.
 
 W tabeli, która się wyświetli znajdziesz kolumnę `Alias`.
 

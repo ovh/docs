@@ -38,7 +38,7 @@ Si vous souhaitez installer un CMS non proposé par les modules en 1 clic OVHclo
 
 ### Étape 2 : accéder à la gestion des modules 1 clic
 
-Dans la barre de services à gauche de votre espace client OVHcloud, rendez-vous dans la section `Hébergements`{.action} puis sur l'hébergement concerné. Cliquez maintenant sur l'onglet `Modules en 1 clic`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée.
 
 Vous pourrez y consulter les différents modules en 1 clic déjà installés, les gérer et en installer de nouveaux.
 

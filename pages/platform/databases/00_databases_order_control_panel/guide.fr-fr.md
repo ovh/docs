@@ -3,7 +3,7 @@ title: Premiers pas avec les bases de données Public Cloud (EN)
 excerpt: Find out how to set up your managed database service in the OVHcloud Control Panel
 slug: getting-started
 section: Informations générales
-order: 1
+order: 010
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/getting-started/'
 ---
@@ -22,6 +22,8 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 
 ## Instructions
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/y8Px-NhCRAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Subscribing to the service
 

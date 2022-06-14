@@ -21,6 +21,12 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 - Bénéficier d'au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) connectée au serveur.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
+> [!warning]
+> Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
+>
+> Consultez notre [comparatif](https://eco.ovhcloud.com/fr/compare/) pour plus d’informations.
+>
+
 ## En pratique
 
 Les étapes de base sont toujours les mêmes, indépendamment des systèmes utilisés :
@@ -48,7 +54,7 @@ Cliquez sur les `...`{.action} à côté de l'IP Failover de votre choix, puis c
 
 Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
-![Ajouter une MAC virtuelle (2)](images/virtual_mac_03.png){.thumbnail}
+![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
 ### Déterminer l'adresse de la passerelle
 

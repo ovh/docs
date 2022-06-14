@@ -26,7 +26,7 @@ Los servicios Hosted Exchange y Private Exchange permiten una gestión flexible 
 
 #### Contratar cuentas adicionales
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado `Webcloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Contratar cuentas`{.action}
 
@@ -34,8 +34,6 @@ Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Accio
 
 
 #### Cambiar la periodicidad de sus cuentas
-
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 En la ventana de gestión de su plataforma Exchange, haga clic en el botón `Acciones`{.action} en la parte superior derecha y, luego, en `Configuración de la renovación`{.action}. 
 
@@ -55,15 +53,13 @@ En el ejemplo a continuación, se indican las acciones que se deben realizar par
 
 > En el segundo paso, un resumen muestra el cambio aplicado. Haga clic en `Enviar`{.action} en la parte inferior izquierda.
 
-> ![billing_exchange](images/billing-exchange-03.gif){.thumbnail}
+> ![billing_exchange](images/billing-exchange-03.png){.thumbnail}
 
 #### Eliminar cuentas
 
 Para eliminar una cuenta de su plataforma Hosted, primero la debe dar de baja estableciendo su configuración de renovación en «**Expira al término**». Para ello, consulte el paso [«cambiar la periodicidad de sus cuentas»](./#cambiar-la-periodicidad-de-sus-cuentas){.external}.
 
 Una vez dada de baja la cuenta, se suspenderá en su fecha de expiración. Si quiere eliminar la dirección de correo electrónico alojada por la cuenta antes de su fecha de expiración, reiníciela.
-
-Para ello, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma, haga clic en el botón `...`{.action} delante de la cuenta correspondiente y luego en `Reiniciar`{.action}. Una vez reiniciada, la cuenta permanecerá en blanco hasta su expiración.
 
@@ -75,16 +71,12 @@ Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma,
 
 #### Contratar cuentas adicionales
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
-
 Acceda a la pestaña `Cuentas de correo`{.action}, haga clic en el botón `Acciones`{.action} en la parte superior derecha y luego en `Añadir una cuenta`{.action} La cuenta se facturará para el mes en curso.
 
 ![billing_exchange](images/billing-exchange-06.png){.thumbnail}
 
 
 #### Eliminar cuentas
-
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda al apartado «Web». En la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 En la pestaña `Cuentas de correo electrónico`{.action}, haga clic en `...`{.action} a la derecha de la cuenta correspondiente y luego en `Eliminar`{.action}. La cuenta se eliminará de la plataforma de inmediato, por lo que no será necesario darla de baja.
 

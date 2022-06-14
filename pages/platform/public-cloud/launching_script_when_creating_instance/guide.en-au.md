@@ -6,7 +6,10 @@ section: OpenStack
 order: 9
 ---
 
+**Last updated 18th March 2022**
+  
 ## Objective
+
 In some situations, you will need to launch a script when you create an instance. For example, you may want to do this if you need to configure multiple SSH keys for your instance, or configure your SSH service automatically.
 
 **This guide explains how to launch a script when an instance is created, via Cloud-init and OpenStack APIs.**
@@ -14,14 +17,13 @@ In some situations, you will need to launch a script when you create an instance
 
 ## Requirements
 
-- An environment that is ready to use the OpenStack API
-- OpenStack environment variables set
+- [An environment that is ready to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
+- [OpenStack environment variables set](../set-openstack-environment-variables/)
 
 ## Instructions
 
-### Create an instance with a script.
+### Create a script
 
-#### Create a script.
 There are several different scripts that are useful for you to launch when you create an instance. For example, you can use **shell scripts**:
 
 - Add a new user:
@@ -62,9 +64,6 @@ apt-get upgrade -y
 apt-get install -y apache2 php5
 ```
 
-
-
-
 > [!alert]
 >
 > This script can increase the time it takes to create the instance.
@@ -88,7 +87,7 @@ users:
 ```
 
 
-With this script, you create an “** ovh**” user with sudo permissions, and they can connect via 2 different SSH keys.
+With this script, you create an "**ovh**" user with sudo permissions, and they can connect via 2 different SSH keys.
 
 
 
@@ -99,7 +98,8 @@ With this script, you create an “** ovh**” user with sudo permissions, and t
 > 
 
 
-#### Create the instance.
+### Create the instance
+
 After you have retrieved the list of images and instance templates, you can launch the script with Cloud-init via the **--user- data** argument:
 
 

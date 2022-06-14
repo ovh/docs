@@ -3,12 +3,12 @@ title: MySQL - Connect with CLI
 excerpt: Connect to your Public Cloud Databases for MySQL using the Command Line Interface (CLI)
 slug: mysql/connect-cli
 section: MySQL - Guides
-order: 100
+order: 300
 routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mysql/connect-cli/'
 ---
 
-**Last updated 03rd November 2021**
+**Last updated 8th March 2022**
 
 ## Objective
 
@@ -18,9 +18,10 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws);
-- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account;
-- An up and running Public Cloud Database for MySQL.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
+- A [Public Cloud project](https://www.ovhcloud.com/es/public-cloud/) in your OVHcloud account
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/us/es/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your MySQL instance](https://docs.ovh.com/us/es/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
 
 ## Concept
 
@@ -44,80 +45,9 @@ MySQL Shell is not mandatory but much more convenient to use compared to standar
 
 Follow the steps here after selecting Windows, MacOS or Linux as operating system: <https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-install.html>
 
-Once installed, you need to catch your IP address in order to authorise connections from this specific client.
-
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external}.
-Copy the IP address numbers shown on this website and keep them for later.
-In our example, we will use the (fake) IP 109.190.200.59.
-
 We are now ready to learn how to connect to our MySQL instance.
 
-### Configure your MySQL instance to accept incoming connections
-
-Before making a connection, we need to verify that our MySQL instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.
-
-#### Step 1: Verify your user grants and password
-
-Select the `Users`{.action} tab. By default a first user called **avnadmin** is created, with permissions to perform most of the usual DB management tasks. 
-
-If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update each access configuration in which you already use this user/password pair.
-
-This first user **avnadmin** comes with the following grants:
-
-```sql
-GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
-
-GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
-```
-
-We rely on official MySQL grants and privileges. You can manage them yourself via CLI or code.
-So far, **user grants and privileges management is not supported via OVHcloud Control Panel neither OVHcloud API**.
-
-Please read the [official MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html){.external} to select the right grants and privileges for your use-case.
-
-
-In our example, we will simply reset the **avnadmin** password.
-
-Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorise incoming connections from the MySQL client
-
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This can help to prevent intrusive connection attempts.
-
-Click to authorise a new IP, and enter the previously found IP of your remote client. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow any connection from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully.
->
-
-### Get your connection information (Service URI)
-
-Now all the setup should be done, from the remote client and the MySQL instance.
-
-Select the `General Information`{.action} tab. In the **Login information** section, copy the Service URI.
-
-It should be similar to this:
-
-```
-mysql://<username>:<password@<hostname>t<port>/defaultdb?ssl-mode=REQUIRED
-```
-
-A bit of information to know:
-
-- It will pass the username and password arguments;
-- Will connect to the hostname;
-- to the "defaultdb" database directly;
-- on the specified MySQL port (dynamic allocation);
-- All of that securely, with TLS activated (SSL mode).
+### Configuration
 
 We will now follow official MySQL documentation to perform our first connection.
 
@@ -135,7 +65,7 @@ It means that mysqlsh is correctly installed and working properly. If you do not
 
 We will follow official MySQL documentation: <https://dev.mysql.com/doc/refman/8.0/en/connecting-using-uri-or-key-value-pairs.html>.
 
-To perform a connection, simply type **mysqlsh --sql** followed by the Service URI copied before:
+To perform a connection, simply type **mysqlsh --sql** followed by the Service URI:
 
 ```console
 laptop$mysqlsh --sql "mysql://<username>:<password@<hostname>t<port>/defaultdb?ssl-mode=REQUIRED"

@@ -6,7 +6,7 @@ section: MySQL - Guides
 order: 302
 ---
 
-**Last updated January 25th 2022**
+**Last updated 8th March 2022**
 
 ## Objective
 
@@ -16,9 +16,10 @@ Public Cloud Databases allow you to focus on building and deploying cloud applic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
-- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account.
-- An up and running Public Cloud Database for MySQL.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+- A MySQL database running on your OVHcloud Public Cloud Databases ([this guide](https://docs.ovh.com/asia/en/publiccloud/databases/getting-started/) can help you to meet this requirement)
+- [Configure your MySQL instance](https://docs.ovh.com/asia/en/publiccloud/databases/mysql/configure-mysql-instance/) to accept incoming connections
 - A Python environment with a stable version and public network connectivity (Internet). This guide was made using Python 3.9.7.
 
 ## Concept
@@ -29,7 +30,7 @@ One of the easiest, yet powerful, is to use a Command Line Interface (CLI), as s
 Another way is to interact directly using a programming language, such as Python.
 Python is one of the major programming languages in the world, especially in the Data ecosystem.
 
-In order to do so, we will need to set up our Python environment with MySQL drivers, then configure our Public Cloud Databases for MySQL instances to accept incoming connections, and finally code in Python to perform a few example actions.
+In order to do so, we will need to set up our Python environment with MySQL drivers and finally code in Python to perform a few example actions.
 
 ## Instructions
 
@@ -63,63 +64,9 @@ wheel                  0.34.2
 (...)
 ```
 
-Finally, copy the IP address of your Python environment and save it for later.
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
-In our example, we will use the (fake) IP 109.190.200.59.
-
 We are now ready to learn how to connect to our MySQL instance !
 
-### Configure your MySQL instance to accept incoming connections
-
-Before making a connection, we need to verify that our MySQL instance is correctly configured.
-
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and switch to `Public Cloud`{.action} in the top navigation bar. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar, and select your MySQL instance.
-
-#### Step 1: Verify your user roles and password
-
-Select the `Users`{.action} tab. Verify that you have a user with sufficient rights and a configured password. If you don't remember the user's password, you can either create a new user or regenerate the password of an existing user. Be careful! By doing so you will need to update all the places where you already use this user + password pair.
-
-This first user **avnadmin** comes with the following grants:
-
-```sql
-GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, PROCESS, REFERENCES, INDEX, ALTER, SHOW DATABASES, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
-
-GRANT REPLICATION_APPLIER,ROLE_ADMIN ON *.* TO "avnadmin"@"%" WITH GRANT OPTION
-```
-
-We rely on official MySQL grants and privileges. You can manage them yourself via CLI or code.
-So far, **user grants and privileges management are not supported via the OVHcloud Control Panel or the OVHcloud API**.
-
-Please read the [official MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html){.external} to select the right grants and privileges for your use-case.
-
-In our example, we will simply reset the **avnadmin** password.
-
-Once created or updated, the user has to be ready and have the status "Enabled" in the Control Panel.
-
-![User ready](images/user_enabled.png){.thumbnail}
-
-#### Step 2: Authorize incoming connections from the MySQL client
-
-In this step, select the `Authorised IP's`{.action} tab (Access Control List).
-By default, a Public Cloud Database does not accept any form of connection from the outside world.
-This way we can help prevent intrusive connection attempts.
-
-Click to authorize a new IP, and enter the previously found IP of your Python environment. In our case we will enter 109.190.200.59.
-
-![Add an IP](images/ip_authorize.png){.thumbnail}
-
-> [!primary]
->
-> If you want to allow any connections from the outside, you can enter the IP 0.0.0.0/0. Please use it carefully. Every IP will be authorized.
->
-
 ### Connect with Python
-
-#### Collect required informations
-
-Select the `General information`{.action} tab to find the required login information.
-
-![Login information tab](images/mysql_04_connect_php-20220124153927876.png){.thumbnail}
 
 #### Using MySQL Connector
 

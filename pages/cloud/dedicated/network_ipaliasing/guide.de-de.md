@@ -23,6 +23,10 @@ IP-Aliasing ist eine spezielle Konfiguration im Netzwerk Ihres Servers, mit der 
 - Sie verfügen über eine oder mehrere [Failover-IPs](https://www.ovh.de/dedicated_server/ip_failover.xml){.external}.
 - Sie sind via SSH auf Ihrem Server eingeloggt (Root-Zugriff).
 
+> [!warning]
+> Diese Funktion kann nur eingeschränkt oder nicht verfügbar sein, falls ein Dedicated Server der [**Eco** Produktlinie](https://eco.ovhcloud.com/de/about/) eingesetzt wird.
+>
+> Weitere Informationen finden Sie auf der [Vergleichsseite](https://eco.ovhcloud.com/de/compare/).
 
 ## In der praktischen Anwendung
 

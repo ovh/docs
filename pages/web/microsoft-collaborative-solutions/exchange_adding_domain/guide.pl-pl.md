@@ -26,7 +26,7 @@ Dodanie domeny do usługi Exchange jest niezbędne, abyś mógł korzystać z ko
 
 Po utworzeniu usługi Office 365 i uzyskaniu do niej dostępu, możesz nią zarządzać poprzez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-W tym celu zaloguj się do Panelu klienta, kliknij w `Microsoft`{.action}, a następnie w `Exchange`{.action} na pasku usług po lewej stronie. Zaznacz wybraną usługę Exchange.
+W tym celu zaloguj się do Panelu klienta, kliknij w `Microsoft`{.action}, a następnie w `Exchange`{.action}. Zaznacz wybraną usługę Exchange.
 
 > [!primary]
 >

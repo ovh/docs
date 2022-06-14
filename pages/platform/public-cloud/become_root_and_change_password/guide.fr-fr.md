@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 08
 ---
 
-**Dernière mise à jour le 19/10/2021**
+**Dernière mise à jour le 24/03/2022**
 
 ## Objectif
 
@@ -35,12 +35,12 @@ passwd: password updated successfully
 successfully
 ```
 
-### Mettre à jour des dépôts (Debian et Ubuntu)
+### Mettre à jour le système (Debian et Ubuntu)
 
 Pour mettre à jour les *packages* logiciels installés sur votre serveur, entrez la commande suivante :
 
 ```bash
-~$ sudo apt-get update
+~$ sudo apt update && sudo apt upgrade -y
 ```
 
 ### Mettre à jour le système (CentOS et Fedora)

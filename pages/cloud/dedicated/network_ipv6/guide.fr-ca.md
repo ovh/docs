@@ -5,7 +5,7 @@ excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure
 section: Réseau & IP
 ---
 
-**Dernière mise à jour le 01/12/2021**
+**Dernière mise à jour le 15/03/2022**
 
 ## Objectif
 
@@ -41,6 +41,11 @@ Si vous souhaitez configurer configurer plusieurs adresses IPv6 sur votre serveu
 > - L’adresse IPv6 du serveur est 2001:41D0:1:46e::/64. L’IPv6_GATEWAY sera alors 2001:41D0:1:4FF:FF:FF:FF:FF.
 >
 > Le moyen le plus sûr de récupérer les informations réseau de votre serveur est d'[utiliser l'API OVHcloud](https://docs.ovh.com/ca/fr/api/api-premiers-pas/). Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
+>
+
+> [!warning]
+> À noter que les serveurs Kimsufi sont fournis avec un seul bloc IPV6 (/128). Dans ce cas, référez-vous à ce [guide](https://docs.ovh.com/ca/fr/vps/configurer-ipv6/) pour la configuration de l’ipv6 sur un serveur Kimsufi.
+>
 >
 
 > [!api]

@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 06/07/2021**
+**Dernière mise à jour le 31/03/2022**
 
 ## Objectif
 
@@ -24,14 +24,16 @@ Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas e
 
 **Découvrez comment activer et utiliser le mode rescue de votre serveur.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nvlAbXNM8Bk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
+
+> [!warning]
+> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](../creer-cle-ssh-serveur-dediees/#disablesshkey) du guide correspondant.
+>
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
@@ -67,7 +69,7 @@ Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un out
 
 Par exemple :
 
-```sh
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -85,7 +87,7 @@ La plupart des modifications apportées à votre serveur via SSH en mode rescue 
 
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 
-```sh
+```bash
 rescue:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -107,7 +109,7 @@ Device Boot Start End Blocks Id System
 
 Lorsque vous avez identifié le nom de la partition que vous voulez monter, utilisez la commande ci-dessous :
 
-```sh
+```bash
 rescue:~# mount /dev/hda1 /mnt/
 ```
 
@@ -124,19 +126,19 @@ Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur
 
 Vous pouvez monter un datastore VMware de la même manière que décrite précédemment. Tout d'abord, installez le paquet nécessaire :
 
-```
+```bash
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
 Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
 
-```
+```bash
 rescue:~# fdisk -l
 ```
 
 À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
 
-```
+```bash
 rescue:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
@@ -146,7 +148,7 @@ Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur
 
 Une fois le serveur redémarré, vous pouvez accéder à l'interface Web en entrant `your_server_IP:81` dans la barre d'adresses de votre navigateur. Avec https, utilisez le port *444* à la place. Par exemple :
 
-```sh
+```bash
 https://169.254.10.20:444
 ```
 

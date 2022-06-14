@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 19th March 2021**
+**Last updated 31st March 2022**
 
 ## Objective
 
@@ -25,8 +25,6 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
@@ -34,7 +32,11 @@ Backing up your data should be the first step in rescue mode if you do not alrea
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers**. 
+> [!warning]
+> Please note that if you have set a default SSH key in your control panel for dedicated products, you will not receive a root password when rebooting a server rescue mode. In this case, you must first disable the key before proceeding. To do so, please consult this [section](../creating-ssh-keys-dedicated/#disablesshkey) of the relevant guide.
+> 
+
+You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). Go to the `Bare Metal Cloud`{.action} section and then select the server on which to enable rescue mode from **Dedicated Servers**. 
 
 Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.
 
@@ -46,7 +48,7 @@ Click on `Next`{.action} to proceed to the next step and on `Confirm`{.action} t
 
 ![Mode rescue-pro](images/rescue-mode-003.png){.thumbnail}
 
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Reboot`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
+Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
 
 ![Reboot the server](images/rescue-mode-02.png){.thumbnail}
 

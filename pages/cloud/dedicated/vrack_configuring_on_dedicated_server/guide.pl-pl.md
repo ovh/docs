@@ -25,14 +25,14 @@ vRack (wirtualna szafa) OVHcloud pozwala na wirtualne zebranie kilku serwerów (
 - Usługa [vRack](https://www.ovh.pl/rozwiazania/vrack/) włączona na Twoim koncie
 - Kilka [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/) (kompatybilnych z vRack)
 - Dostęp administratora (root) do serwera przez SSH lub RDP
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Zakresu prywatnych adresów IP
 
 ## W praktyce
 
 ### Etap 1: dodaj serwery do usługi vRack
 
-Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i otwórz menu `vRack`{.action}.
+Po aktywacji usługi vRack na Twoim koncie przejdź do sekcji `Bare Metal Cloud`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij przycisk `Network`{.action} i otwórz menu `vRack`{.action}.
 
 Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz zamówić. Kliknij każdy z serwerów, które chcesz dodać do sieci vRack, następnie kliknij przycisk `Dodaj`{.action}.
 
@@ -55,7 +55,7 @@ Możesz korzystać z dowolnego zakresu prywatnych adresów IP i dowolnych adres�
 
 Nazwy interfejsów sieciowych serwerów nie zawsze są takie same. W poniższych przykładach zastąp NETWORK_INTERFACE odpowiednią nazwą interfejsu.
 
-Najlepszym sposobem, aby sprawdzić poprawny interfejs dla usługi vRack jest sprawdzenie karty `Interfejsy sieciowe`{.action} Twojego serwera w Twoim [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W dolnej tabeli kliknij adres MAC, który jest również **Nazwa** interfejsu **Prywatnego**.
+Najlepszym sposobem, aby sprawdzić poprawny interfejs dla usługi vRack jest sprawdzenie karty `Interfejsy sieciowe`{.action} Twojego serwera w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W dolnej tabeli kliknij adres MAC, który jest również **Nazwa** interfejsu **Prywatnego**.
 
 ![Interface vRack](images/private_interface.png){.thumbnail}
 
@@ -133,7 +133,7 @@ Powtórz tę procedurę dla innych serwerów i przypisz każdemu z nich nieużyw
 
 ##### **CentOS**
 
-Otwórz plik/`etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`, korzystając z wybranego edytora tekstu.
+Za pomocą wybranego edytora tekstu otwórz plik `/etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE`.
 
 ```bash
 editor /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE
@@ -158,7 +158,7 @@ Zrestartuj usługę sieciową, aby wprowadzić zmiany:
 systemctl restart networking
 ```
 
-W **systemie CentOS** 85 skorzystaj z polecenia:
+W systemie **CentOS 8** należy użyć tego polecenia:
 
 ```bash
 systemctl restart NetworkManager.service

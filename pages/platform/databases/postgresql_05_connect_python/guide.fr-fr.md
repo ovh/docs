@@ -1,5 +1,5 @@
 ---
-title: PostgreSQL - Se connecter avec Python (EN)
+title: PostgreSQL - Connectez-vous avec Python (EN)
 excerpt: Connect to your Public Cloud Databases for PostgreSQL using the Python programming language
 slug: postgresql/connect-python
 section: PostgreSQL - Guides
@@ -137,7 +137,7 @@ In your Python environment, let's try a connection.
 ```python
 import psycopg2
 
-connection = psycopg2.connect(postgres://avnadmin:K93xxxxxxxxxxaBp@postgresql-57xxxxfc-o2xxxxb53.database.cloud.ovh.net:20184/defaultdb?sslmode=require)
+connection = psycopg2.connect("postgres://avnadmin:K93xxxxxxxxxxaBp@postgresql-57xxxxfc-o2xxxxb53.database.cloud.ovh.net:20184/defaultdb?sslmode=require")
 
 cursor = connection.cursor()
 cursor.execute("select * from pg_stat_ssl")

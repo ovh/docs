@@ -21,13 +21,13 @@ Ze względów bezpieczeństwa możesz konfigurować i używać reguł filtrowani
 ## Wymagania początkowe
 
 - Projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/).
-- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/)
+- [Dostęp do interfejsu Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/)
 
 ## W praktyce
 
 ### Etap 1: utworzyć grupę zabezpieczeń
 
-Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
+Dostęp do interfejsu [Horizon](https://docs.ovh.com/pl/public-cloud/tworzenie-i-usuwanie-uzytkownika-openstack/). Wybierz region, w którym chcesz utworzyć grupę zabezpieczeń, klikając przycisk w lewym górnym rogu.
 
 ![określenie regionu](images/security-group0.png){.thumbnail}
 

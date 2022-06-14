@@ -122,7 +122,7 @@ Se o seu domínio estiver registado na OVHcloud, pode seguir [este guia.](../../
 <br>Se o seu domínio estiver registado numa outra empresa, deverá contactá-la para obter ajuda na configuração dos seus registos `A`.
 
 <ol start="2">
-  <li>Talvez tenha de esperar 24 horas até que os dois registos se propaguem completamente. Pode sempre verificá-lo com [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx) {.external}. Se o endereço IP do seu domínio for apresentado no mxtoolbox da mesma forma que o do seu servidor, pode passar ao passo seguinte.</li>
+  <li>Talvez tenha de esperar 24 horas até que os dois registos se propaguem completamente. Pode sempre verificá-lo com [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Se o endereço IP do seu domínio for apresentado no mxtoolbox da mesma forma que o do seu servidor, pode passar ao passo seguinte.</li>
 
   <li>Ligue-se ao seu servidor com o utilizador CentOS em SSH e execute os seguintes comandos para instalar Certbot:</li>
 </ol>

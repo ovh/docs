@@ -9,7 +9,7 @@ section: 'Diagnóstico y modo de rescate'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 19/03/2021**
+**Última actualización: 01/04/2022**
 
 ## Objetivo
 
@@ -28,14 +28,16 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 **Esta guía explica cómo activar y utilizar el modo de rescate en un servidor dedicado.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
+
+> [!warning]
+> Tenga en cuenta que, si ha establecido una llave SSH por defecto en su espacio para los productos dedicados, no recibirá una contraseña root al reiniciar un servidor en modo de rescate. En este caso, primero debe desactivar la llave SSH por defecto antes de reiniciar el servidor en modo de rescate. Para ello, consulte esta [sección](../crear-claves-ssh-dedicadas/#disablesshkey) de la guía correspondiente.
+>
 
 Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
@@ -71,7 +73,7 @@ A continuación, acceda al servidor en línea de comandos o a través de una her
 
 por ejemplo,
 
-```sh
+```bash
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -89,7 +91,7 @@ Para realizar la mayoría de los cambios en el servidor por SSH en modo de resca
 
 Para montar las particiones, utilice el comando `mount` por SSH. Previamente deberá mostrar la lista de las particiones para conocer el nombre de la partición que quiera montar. A continuación ofrecemos algunos ejemplos de código:
 
-```sh
+```bash
 rescue:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -111,7 +113,7 @@ Device Boot Start End Blocks Id System
 
 Una vez que haya identificado el nombre de la partición que quiere montar, utilice el siguiente comando:
 
-```sh
+```bash
 rescue:~# mount /dev/hda1 /mnt/
 ```
 
@@ -128,19 +130,19 @@ Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el 
 
 Puede montar un datastore VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
 
-```
+```bash
 rescue:~# apt-get update && apt-get install vmfs-tools
 ```
 
 A continuación, seleccione las particiones para consultar el nombre de la partición del datastore:
 
-```
+```bash
 rescue:~# fdisk -l
 ```
 
 Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor indicado en el paso anterior:
 
-```
+```bash
 rescue:~# vmfs-fuse /dev/sdbX /mnt
 ```
 
@@ -162,7 +164,7 @@ Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuper
 - **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
 - **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
 
-![Interfaz web para el modo de rescate](images/rescue-mode-04.png) {.thumbnail}
+![Interfaz web para el modo de rescate](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
