@@ -13,6 +13,7 @@ order: 03
 Cette page montre comment mettre en place une réplication entre cluster au travers de Prism Element
 
 
+
 ## Présentation de la réplication synchrone et asynchrone
 
 Si le deux clusters communiquent entièrements soit au travers d'un VPN IPSEC ou d'un vRACK d'OVHcloud il est de mettre en place une réplication asynchrone toutes les heures ou une réplication synchrone allant entre 1 minute et 15 minutes.
