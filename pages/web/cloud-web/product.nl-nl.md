@@ -3,6 +3,7 @@ deprecated: true
 title: Cloud Web
 slug: cloud-web
 sections: Eerste stappen
+order: 10
 ---
 
 > [!product-section]
