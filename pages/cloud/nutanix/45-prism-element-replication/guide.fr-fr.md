@@ -48,47 +48,47 @@ Connectez vous sur **Prism Element** du cluster de la France à partir de **Pris
 
 Au travers du menu Home cliquez sur `Data Protection`{.action}.
 
-![01 Create Remote Site From FRANCE01](images/create-remote-site-from-france01.png){.thumbnail}
+![01 Create Remote Site From FRANCE01](images/01-create-remote-site-from-france01.png){.thumbnail} 
 
 Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
-![01 Create Remote Site From FRANCE02](images/create-remote-site-from-france02.png){.thumbnail}
+![01 Create Remote Site From FRANCE02](images/01-create-remote-site-from-france02.png){.thumbnail}
 
 Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant
 
-![01 Create Remote Site From FRANCE03](images/create-remote-site-from-france03.png){.thumbnail}
+![01 Create Remote Site From FRANCE03](images/01-create-remote-site-from-france03.png){.thumbnail}
 
 Choisissez `Physical Cluster`{.action} dans le sous menu
 
-![01 Create Remote Site From FRANCE04](images/create-remote-site-from-france04.png){.thumbnail}
+![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
 
 Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP du **Prism Element** du site distant au canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}
 
-![01 Create Remote Site From FRANCE05](images/create-remote-site-from-france05.png){.thumbnail}
+![01 Create Remote Site From FRANCE05](images/01-create-remote-site-from-france05.png){.thumbnail}
 
 Cliquez La `barre de défilement`{.action}
 
-![01 Create Remote Site From FRANCE06](images/create-remote-site-from-france06.png){.thumbnail}
+![01 Create Remote Site From FRANCE06](images/01-create-remote-site-from-france06.png){.thumbnail}
 
 Dans **Network Mapping** Selectionnez v pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
-![01 Create Remote Site From FRANCE07](images/create-remote-site-from-france07.png){.thumbnail}
+![01 Create Remote Site From FRANCE07](images/01-create-remote-site-from-france07.png){.thumbnail}
 
 Faites la même opération avec `AHV: VLAN50` en cliquant sur le bouton `+`{.action} pour valider la correspondance des réseaux sources et destinations
 
-![01 Create Remote Site From FRANCE08](images/create-remote-site-from-france08.png){.thumbnail}
+![01 Create Remote Site From FRANCE08](images/01-create-remote-site-from-france08.png){.thumbnail}
 
 Choisissez le `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages sources et destination 
 
-![01 Create Remote Site From FRANCE09](images/create-remote-site-from-france09.png){.thumbnail}
+![01 Create Remote Site From FRANCE09](images/01-create-remote-site-from-france09.png){.thumbnail}
 
 Cliquez sur `Save`{.action}
 
-![01 Create Remote Site From FRANCE10](images/create-remote-site-from-france10.png){.thumbnail}
+![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
 
 Le site distant apparait dans la liste **Remote Site**
 
-![01 Create Remote Site From FRANCE11](images/create-remote-site-from-france11.png){.thumbnail}
+![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
 
 ### Mise en place réplication entre site
 
