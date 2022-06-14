@@ -117,7 +117,6 @@ Uma ferramenta de pesquisa está disponível na parte superior direita da interf
 
 Clique na seta situada à direita da lupa para apresentar os filtros de pesquisa.
 
-![alojamento](images/roundcube03.png){.thumbnail}
 
 #### Conteúdo de um e-mail (janela inferior) <a name="lowerwindow"></a>
 
@@ -157,7 +156,7 @@ Defina aqui a ergonomia para visualizar e agir sobre os e-mails. A opção `Mode
 
 Defina a forma como os e-mails são apresentados.<br>
 Para assegurar que os e-mails formatados pelo remetente se apresentam corretamente, é aconselhável ter a opção `Mostrar mensagens em HTML` selecionado.<br>
-Também é aconselhável manter a opção `Permitir recursos remotos (imagens, estilos)` para `sempre`. Isto evita carregar os elementos de um e-mail que parece malicioso.
+Também é aconselhável manter a opção `Permitir recursos remotos (imagens, estilos)` para `nunca`. Isto evita carregar os elementos de um e-mail que parece malicioso.
 
 #### Composição de mensagens
 
