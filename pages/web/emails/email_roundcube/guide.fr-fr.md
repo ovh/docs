@@ -1,7 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
 slug: utilisation-roundcube
-excerpt: 'Découvrez comment utiliser le webmail RoundCube pour vos adresses e-mail OVHcloud'
 section: 'Premiers pas'
 order: 05
 ---
@@ -35,7 +34,7 @@ Vous serez alors redirigé vers l'interface RoundCube.
 > 
 > Si vous êtes redirigé sur une interface **O**utlook **W**eb **A**ccess (OWA), cela signifie que vous êtes sur la dernière version de l'offre MX Plan. Pour plus d'information sur votre offre MX Plan, consultez notre page [Premiers pas avec l’offre MX Plan](https://docs.ovh.com/fr/emails/generalites-sur-les-emails-mutualises/).
 >
-> Pour vous familiariser avec l'interface **OWA**, consultez notre guide  [Consulter son compte e-mail depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
+> Pour vous familiariser avec l'interface **OWA**, consultez notre guide [Consulter son compte e-mail depuis l’interface OWA](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-2016-guide-utilisation-outlook-web-app/).
 
 ### Interface générale du webmail RoundCube <a name="general-interface"></a>
 
@@ -47,11 +46,11 @@ Une fois connecté à votre compte e-mail, vous avez accès à la fenêtre princ
 
 - [**Fenêtre inférieure**](#lowerwindow) : le contenu de l'e-mail sélectionné dans la fenêtre supérieure.
 
-#### Gestion des dossiers (colonne de gauche) <a name="leftclumn"></a>
+#### Gestion des dossiers (colonne de gauche) <a name="leftcolumn"></a>
 
 Dans cette zone apparaissent les dossiers présents dans votre compte e-mail.
 
-Pour gérer plus précisément les dossiers, cliquez sur la roue crantée en bas de la colonne puis sur `Gérer les dossiers`{.action}
+Pour gérer plus précisément les dossiers, cliquez sur la roue crantée en bas de la colonne puis sur `Gérer les dossiers`{.action}.
 
 ![hosting](images/roundcube02.png){.thumbnail}
 
@@ -114,8 +113,6 @@ Un outil de recherche est disponible dans la partie supérieure droite de l'inte
 
 Cliquez sur la flèche située à droite de la loupe pour afficher les filtres de recherche.
 
-![hosting](images/roundcube03.png){.thumbnail}
-
 #### Contenu d'un e-mail (fenêtre inférieure) <a name="lowerwindow"></a>
 
 Lorsqu'un e-mail est sélectionné dans la liste, celui-ci s'affiche dans la fenêtre inférieure.
@@ -144,7 +141,7 @@ Définissez ici la `langue` d'usage de l'interface Roundcube, le `fuseau horaire
 L'option `Jolies dates` permet d'afficher la date de réception/d'envoi avec des termes relatifs tels qu’« Aujourd’hui », « Hier », etc.<br>
 **Par exemple** : nous sommes le **19/05/2022**, un e-mail envoyé/reçu le **17/05/2022** à **17:38** sera affiché **Mar 17:38**, car l'email correspond au mardi qui précède.
 
-La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri. 
+La case `Afficher la prochaine entrée de la liste après suppression ou déplacement` signifie qu'après une action de suppression ou déplacement sur un e-mail, l'élément de la ligne inférieure sera alors systématiquement sélectionné, quelque soit l'ordre de tri.
 
 #### Vue de la boîte de courriels
 
@@ -258,6 +255,27 @@ Complétez ensuite les informations du contact.
 
 > [!primary]
 > Vous pouvez ajouter des champs supplémentaires via le menu déroulant `Ajouter un champ...`{.action}, situé sous les champs `Prénom` et `Adresse`.
+
+#### Importer des Contacts
+
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur `importer`{.action} pour ouvrir la fenêtre d'importation.
+
+- `Importer d’un fichier` : sélectionnez un fichier CSV ou un fichier vCard sur votre ordinateur. Les contacts au sein d'un fichier CSV doivent être séparés par des virgules. Le fichier ne doit pas faire plus de 20 Mo.
+- `Importer les affectations de groupe` : Si les contacts de votre fichier sont répartis par groupes, vous pouvez activer cette option pour retrouver cette organisaton ou bien laisser cette option sur `aucune` pour qu'aucun groupe ne soit affecté aux contacts.
+- `Remplacer le carnet d’adresses entier`: Si un carnet est déjà configuré, nous vous conseillons de l'exporter avant de cocher cette option ou d'être certain de vouloir définitivement le remplacer.
+
+![hosting](images/roundcube-import-contact.png){.thumbnail}
+
+#### Exporter les Contacts Roundcube
+
+Depuis la fenêtre `Contacts`{.action}, dans la barre supérieure, cliquez sur la flêche pointant vers le bas à droite du bouton `Exporter`{.action}.
+
+Vous avez le choix entre :
+
+- `Tout exporter`{.action} et l'ensemble des contacts sera alors exporté dans un fichier **.vcf**.
+- `Exporter la sélection`{.action} pour exporter uniquement les éléments que vous aurez choisis dans la colonne `Contacts`{.action}.
+
+![hosting](images/roundcube-export-contact.png){.thumbnail}
 
 ### Réponses (gabarits) <a name="responses"></a>
 
