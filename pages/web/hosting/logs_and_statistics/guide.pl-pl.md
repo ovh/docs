@@ -82,7 +82,7 @@ Dostępne są różne typy logów:
 - Logi SSH: te logi przedstawiają różne połączenia zrealizowane za pomocą protokołu SSH.
 - Logi CRON: wynik wykonywania zaplanowanych zadań ([Zadania zautomatyzowane (CRON) na Twoim hostingu](../hosting_www_automatyczne_zadania_cron/)).
 
-### Działalność związana z zakwaterowaniem
+### Obciążenie hostingu
 
 W tej sekcji znajdziesz opis działalności związanej z infrastrukturą Twojego hostingu, aby sprawdzić zużycie dostępnych zasobów.
 
