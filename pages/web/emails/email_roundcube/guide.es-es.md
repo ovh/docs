@@ -118,7 +118,6 @@ Una herramienta de búsqueda está disponible en la parte superior derecha de la
 
 Haga clic en la flecha situada a la derecha de la lupa para ver los filtros de búsqueda.
 
-![hosting](images/roundcube03.png){.thumbnail}
 
 #### Contenido de un mensaje de correo (ventana inferior) <a name="lowerwindow"></a>
 

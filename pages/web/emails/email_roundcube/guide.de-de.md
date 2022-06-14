@@ -117,7 +117,6 @@ Im oberen rechten Bereich des Interface ist ein Suchwerkzeug verfügbar.
 
 Klicken Sie auf den Pfeil rechts neben der Lupe, um die Suchfilter anzuzeigen.
 
-![Hosting](images/roundcube03.png){.thumbnail}
 
 #### Inhalt einer E-Mail (unteres Fenster) <a name="lowerwindow"></a>
 
@@ -157,7 +156,7 @@ Definieren Sie hier die bevorzugte Art, um E-Mails anzuzeigen und zu bearbeiten.
 
 Legen Sie fest, wie E-Mails angezeigt werden.<br>
 Es wird empfohlen, das Feld `HTML anzeigen` anzuhaken, um sicherzustellen, dass vom Absender formatierte E-Mails korrekt angezeigt werden.<br>
-Darüber hinaus ist es ratsam, die Option `Externe Ressourcen erlauben (Bilder, Formate)` auf `Nie` zu belassen. Dies verhindert, dass externe Elemente einer E-Mail geladen werden, die Schadcode enthält.
+Darüber hinaus ist es ratsam, die Option `Externe Ressourcen erlauben (Bilder, Formate)` auf `nie` zu belassen. Dies verhindert, dass externe Elemente einer E-Mail geladen werden, die Schadcode enthält.
 
 #### Nachrichtenerstellung
 

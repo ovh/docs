@@ -117,7 +117,6 @@ Quando viene selezionata un'email, è possibile agire su di essa. Ecco le azioni
 
 Clicca sulla freccia a destra della lente di ingrandimento per visualizzare i filtri di ricerca.
 
-![hosting](images/roundcube03.png){.thumbnail}
 
 #### Contenuto di un'email (finestra inferiore) <a name="lowerwindow"></a>
 
@@ -157,7 +156,7 @@ Definisci qui l'ergonomia per visualizzare e agire sulle email. L'opzione `Layou
 
 Definisci come visualizzare le email.<br>
 Ti consigliamo di avere la casella `Mostra HTML` selezionata, per assicurarti che le email formattate dal mittente siano correttamente visualizzate.<br>
-Ti consigliamo inoltre di mantenere l'opzione `Permetti risorse remote (immagini, stili)` per `sempre`. in quanto evita di caricare gli elementi di un'email che sembra malevolo.
+Ti consigliamo inoltre di mantenere l'opzione `Permetti risorse remote (immagini, stili)` per `mai`. in quanto evita di caricare gli elementi di un'email che sembra malevolo.
 
 #### Composizione messaggi
 

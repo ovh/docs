@@ -118,8 +118,6 @@ Narzędzie wyszukiwania jest dostępne w górnej prawej części interfejsu.
 
 Kliknij strzałkę po prawej stronie lupy, aby wyświetlić filtry wyszukiwania.
 
-![hosting](images/roundcube03.png){.thumbnail}
-
 #### Treść wiadomości e-mail (okno dolne) <a name="lowerwindow"></a>
 
 Jeśli na liście zostanie wybrany e-mail, zostanie on wyświetlony w dolnym oknie.
@@ -158,7 +156,7 @@ Zdefiniuj tutaj ergonomię, aby wyświetlać i działać na e-mailach. Opcja `Uk
 
 Określ sposób wyświetlania e-maili.<br>
 Zalecamy posiadanie kratki `Domyślny HTML`, aby upewnić się, że e-maile sformatowane przez nadawcę wyświetlają się poprawnie.<br>
-Zalecamy również zachowanie opcji `Zezwól na zdalne zasoby (obrazki, style)` na `zawsze`. Dzięki temu nie można ładować elementów e-maila, który wygląda złośliwie.
+Zalecamy również zachowanie opcji `Zezwól na zdalne zasoby (obrazki, style)` na `nigdy`. Dzięki temu nie można ładować elementów e-maila, który wygląda złośliwie.
 
 #### Tworzenie wiadomości
 

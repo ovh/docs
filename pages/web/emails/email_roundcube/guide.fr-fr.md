@@ -113,8 +113,6 @@ Un outil de recherche est disponible dans la partie supérieure droite de l'inte
 
 Cliquez sur la flèche située à droite de la loupe pour afficher les filtres de recherche.
 
-![hosting](images/roundcube03.png){.thumbnail}
-
 #### Contenu d'un e-mail (fenêtre inférieure) <a name="lowerwindow"></a>
 
 Lorsqu'un e-mail est sélectionné dans la liste, celui-ci s'affiche dans la fenêtre inférieure.

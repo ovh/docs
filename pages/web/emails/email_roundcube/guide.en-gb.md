@@ -113,8 +113,6 @@ A search tool is available in the upper right corner of the interface.
 
 Click the arrow to the right of the magnifying glass to display the search filters.
 
-![hosting](images/roundcube03.png){.thumbnail}
-
 #### Email content (bottom window) <a name="lowerwindow"></a>
 
 When an email is selected in the list, it is displayed in the lower window.
@@ -153,7 +151,7 @@ Set here the usability to view and act on emails. The `Layout` option allows you
 
 Define how emails are displayed.<br>
 We recommend that you tick the `Display HTML` box, to ensure that emails formatted by the sender are displayed correctly.<br>
-It is also advisable to keep the `Allow remote resources (images, styles)` option on `always`. This avoids loading elements of an email that seems malicious.
+It is also advisable to keep the `Allow remote resources (images, styles)` option on `never`. This avoids loading elements of an email that seems malicious.
 
 #### Composing Messages
 
