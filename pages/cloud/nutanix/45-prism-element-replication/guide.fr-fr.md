@@ -34,11 +34,11 @@ Il est possible au travers de Prism Element de faire des réplications entre clu
 
 Avec le pack **Nutanix Standard** d'OVHcloud il est possible faire une réplication asynchrone toutes les heures entre deux clusters.
 
-Il est possible de faire une réplication synchrone avec un délai de réplication compris entre 1 et 15 minutes pour cela il faut choisir le pack **Nutanix Advanced** d'OVHcloud. 
+Une réplication synchrone avec un délai de réplication compris entre 1 et 15 minutes est possible mais pour cela il faut choisir le pack **Nutanix Advanced** d'OVHcloud. 
 
 ## En pratique
 
-Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud ,l'un au CANADA et l'autre en FRANCE connecté au travers d'un VPN IPSEC sur deux plans d'adressages IP differents qui sont :
+Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud ,l'un au CANADA et l'autre en FRANCE connectés au travers d'un VPN IPSEC sur deux plans d'adressages IP differents qui sont :
 
 * ** `192.168.0.0/24` pour le cluster se trouvant dans un Datacenter en FRANCE
 * ** `192.168.10.0/24` pour le cluster se trouvant dans un Datacenter au CANADA
