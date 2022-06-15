@@ -26,7 +26,7 @@ Web PaaS supports deploying .NET applications by allowing developers to define a
 To specify a .NET Core container, use the `type` property in your `.platform.app.yaml`.
 ```yaml   
 type: 'dotnet:3.1'
-``
+```
 
 ## Building the application
 
