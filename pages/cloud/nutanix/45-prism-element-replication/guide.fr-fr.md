@@ -45,7 +45,7 @@ Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVH
 
 ### Configuration des sites distants
 
-Connectez vous au travers de  **Prism Element** sur le cluster en France à partir de **Prism Central**. comme indiqué sur cette documentation [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+Connectez-vous au travers de  **Prism Element** sur le cluster en France à partir de **Prism Central**. comme indiqué sur cette documentation [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
 Cliquez sur `Data Protection`{.action} depuis le menu `Home`.
 
@@ -125,7 +125,7 @@ Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: 
 
 ![02 Create Remote Site From CANADA08](images/02-create-remote-site-from-canada08.png){.thumbnail}
 
-Choisissez le `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages source et destination. 
+Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages source et destination. 
 
 ![02 Create Remote Site From CANADA09](images/02-create-remote-site-from-canada09.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Le site distant apparait dans la liste **Remote Site**.
 
 Maintenant que les deux sites se connaissent nous allons mettre en place un réplication asynchrone de 3 ordinateurs virtuels se trouvant en France vers le site distant du Canada.
 
-Revenez sur **Prism Element** du serveur se trouvant en France.
+Revenez sur l'interface **Prism Element** du cluster se trouvant en France.
 
 Choisissez dans le menu principal `Data Protection`{.action}
 
@@ -194,7 +194,7 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. lors de la migration un réplication sera faite après l'arrêt des machines virtuelles.
+Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. lors de la migration une réplication sera faite après l'arrêt des machines virtuelles.
 
 Allez sur **Prism Element** où se trouve les machine virtuelles répliquées.
 
@@ -202,38 +202,36 @@ Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action}
 
 ![04 Migrate VM to CANADA 01](images/04-migrate-to-canada01.png){.thumbnail}
 
-Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
+Sélectionnez le site distant,  saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-Les machines virtuelles qui sont membre du domaine de protection vont être éteinte, basculer sur l'autre cluster et disparaitre du cluster d'origine.
+Les machines virtuelles qui sont membres du domaine de protection vont être éteintes, basculer sur l'autre cluster et disparaitre du cluster d'origine.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
+### Bascule des machine virtuelle avec le cluster d'origine indisponible.
 
+Il est possible d'activer les machines virtuelles sur un site distant en cas d'indisponibilité du site d'origine mais les machines virtuelles seront dans l'état de la dernière réplication. Si la réplication est asynchrone il est possible de perdre jusqu'a 1 heure de données.
 
+Connectez-vous sur se site distant avec **Prism Element** 
 
+Allez sur le tableau de bord **Data Protection** 
 
+Sélectionnez le site à activer et cliquez sur `Activate`{.action}. 
 
+![05 Active VM on remote site 01](images/05-activate-protection-domain01.png){.thumbnail}
 
+Cliquez sur `Yes`{.action}. 
 
+![05 Active VM on remote site 02](images/05-activate-protection-domain02.png){.thumbnail}
 
-
-
-
-
-### Bascule des VM en mode PRA
-
-
-
-
-
-
-
-
-
+les machines virtuelles vont apparaitrent dans la console de **Prism Element** elles seront dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
 
 
 ## Aller plus loin
+
+[Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
