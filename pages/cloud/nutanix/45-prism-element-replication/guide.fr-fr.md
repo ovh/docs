@@ -120,11 +120,11 @@ Dans **Network Mapping** Selectionnez `AHV: base`pour **Source Cluster** et **De
 
 ![02 Create Remote Site From CANADA07](images/02-create-remote-site-from-canada07.png){.thumbnail}
 
-Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50` en cliquant sur le bouton `+`{.action} pour valider l'association des réseaux sources et destinations.
+Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50` en cliquant sur le bouton `+`{.action} pour valider l'association des réseaux source et destination.
 
 ![02 Create Remote Site From CANADA08](images/02-create-remote-site-from-canada08.png){.thumbnail}
 
-Choisissez le `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages sources et destination. 
+Choisissez le `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages source et destination. 
 
 ![02 Create Remote Site From CANADA09](images/02-create-remote-site-from-canada09.png){.thumbnail}
 
@@ -183,12 +183,17 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 ![03 Create dataprotection 10](images/03-create-dataprotection10.png){.thumbnail}
 
 
+### Bascule des VM en mode migration
+
+Il est possible de basculer les machines virtuelles à la volée sans perte de données si l'on a nos cluster actifs et qui communiquent entre eux.
+
+Pour cela il faut aller sur le cluster ou se trouve actuellement les VM dans **Prism Element**
 
 
 
 
 
-### Bascule des VM en mode programmé
+
 
 ### Bascule des VM en mode PRA
 
