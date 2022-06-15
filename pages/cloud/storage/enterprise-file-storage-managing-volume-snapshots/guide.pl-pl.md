@@ -53,7 +53,7 @@ Wszystkie istniejące snapshoty wolumenu można pobrać za pomocą następujące
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >>
 >>
 >
@@ -63,12 +63,12 @@ Wszystkie istniejące snapshoty wolumenu można pobrać za pomocą następujące
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 Domyślnie nie musisz zwracać kopii zapasowej snapshot do nowego wolumenu.
 
@@ -82,7 +82,7 @@ Aby utworzyć snapshot, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -92,7 +92,7 @@ Aby utworzyć snapshot, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >> >
@@ -107,7 +107,7 @@ Aby utworzyć snapshot, użyj następującej drogi API:
 >> >> > Nazwa kopii zapasowej snapshot
 >
 
-Zamień `serviceName` na ID Twojej usługi i `netAppShareId` na ID wolumenu.
+Zamień `serviceName` na ID Twojej usługi i `shareId` na ID wolumenu.
 
 Parametry `name` i `opis` snapshota są opcjonalne.
 
@@ -121,7 +121,7 @@ Aby uzyskać informacje dotyczące snapshota, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot/{netappShareSnapshotId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -131,16 +131,16 @@ Aby uzyskać informacje dotyczące snapshota, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >> >
->> > **netappShareSnapshotId** *
+>> > **snapshotId** *
 >> >
 >> >> ID snapshota
 >
 
-Zamień `serviceName` na ID Twojej usługi, `netAppShareId` na ID wolumenu i `netappShareSnapshotId` na ID snapshota.
+Zamień `serviceName` na ID Twojej usługi, `shareId` na ID wolumenu i `snapshotId` na ID snapshota.
 
 ### Usuwanie migawki
 
@@ -152,7 +152,7 @@ Aby usunąć snapshot, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot/{netappShareSnapshotId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -162,16 +162,16 @@ Aby usunąć snapshot, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >> >
->> > **netppShareSnapshotId**
+>> > **snapshotId**
 >> >
 >> >> ID snapshota
 >
 
-Zastąp `serviceName` ID Twojej usługi, `netAppShareId` ID wolumenu i `netppShareSnapshotId` ID migawki, którą chcesz usunąć.
+Zastąp `serviceName` ID Twojej usługi, `shareId` ID wolumenu i `snapshotId` ID migawki, którą chcesz usunąć.
 
 ## Sprawdź również
 

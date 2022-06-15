@@ -77,7 +77,7 @@ Aby pobrać informacje dotyczące wolumenu, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -87,12 +87,12 @@ Aby pobrać informacje dotyczące wolumenu, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 ### Utwórz wolumen
 
@@ -131,7 +131,7 @@ Aby poznać ścieżkę montowania wolumenu, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -141,12 +141,12 @@ Aby poznać ścieżkę montowania wolumenu, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 Odwrócone ścieżki montowania mogą być używane do zamontowania wolumenu.
 
@@ -168,7 +168,7 @@ Aby usunąć wolumen, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -178,12 +178,12 @@ Aby usunąć wolumen, użyj następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu do usunięcia.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu do usunięcia.
 
 ## Sprawdź również
 

@@ -77,7 +77,7 @@ Um die Informationen eines Volumes abzurufen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -87,12 +87,12 @@ Um die Informationen eines Volumes abzurufen, verwenden Sie die folgende Route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `netappShareId` mit der Volume-ID.
+Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
 ### Volume erstellen
 
@@ -130,7 +130,7 @@ Um den Mountpfad eines Volumes einzusehen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -140,12 +140,12 @@ Um den Mountpfad eines Volumes einzusehen, verwenden Sie die folgende Route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `netappShareId` mit der Volume-ID.
+Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der Volume-ID.
 
 Zurückgegebene Mountpfade können zum Mounten des Volume verwendet werden.
 
@@ -168,7 +168,7 @@ Um ein Volume zu löschen, verwenden Sie folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -178,12 +178,12 @@ Um ein Volume zu löschen, verwenden Sie folgende Route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `netappShareId` mit der ID des zu löschenden Volumes.
+Ersetzen Sie `serviceName` mit der ID Ihres Dienstes und `shareId` mit der ID des zu löschenden Volumes.
 
 ## Weiterführende Informationen
 

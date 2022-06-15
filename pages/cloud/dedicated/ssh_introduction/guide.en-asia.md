@@ -32,9 +32,11 @@ The SSH (Secure Shell) communication protocol is the main practice to establish 
 
 There are multiple ways to authenticate a connection to a remote device via SSH. The following instructions will involve the authentication method with username and password. You can also configure SSH keys to enable secure logins without passwords. Find the details in our [SSH key guide](https://docs.ovh.com/asia/en/dedicated/creating-ssh-keys-dedicated/).
 
-The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). The username corresponds to the operating system, for example `ubuntu` or `debian`. To connect, you also need to specify the IPv4 address or the hostname of the server. These details are available in the installation email and in the Control Panel.
+The login credentials (username and password) are sent to you by email after a server installation or reinstallation from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-Be sure to consult our Getting started guides as well:
+The username corresponds to the operating system, for example `ubuntu` or `debian`. To connect, you also need to specify the IPv4 address or the hostname of the server. These details are available in the installation email and in the Control Panel.
+
+Be sure to consult our "Getting started" guides as well:
 
 - For a [dedicated server](https://docs.ovh.com/asia/en/dedicated/getting-started-dedicated-server/)
 - For a [dedicated server of the **Eco** product line](https://docs.ovh.com/asia/en/dedicated/getting-started-dedicated-server-eco/)

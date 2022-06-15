@@ -110,7 +110,7 @@ Para crear una nueva ACL que le permita conectarse a su volumen, utilice la sigu
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -120,7 +120,7 @@ Para crear una nueva ACL que le permita conectarse a su volumen, utilice la sigu
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >> >
@@ -151,7 +151,7 @@ Compruebe el estado de creación del ACL mediante la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -161,16 +161,16 @@ Compruebe el estado de creación del ACL mediante la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >> >
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >> >
 >> >> ID del ACL
 >
 
-Sustituya `netappShareAclRuleId` por el ID del ACL creado para su volumen.
+Sustituya `aclRuleId` por el ID del ACL creado para su volumen.
 
 > [!primary]
 >
@@ -185,7 +185,7 @@ Una vez que el ACL esté activo, recupere las rutas de acceso al volumen utiliza
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -195,7 +195,7 @@ Una vez que el ACL esté activo, recupere las rutas de acceso al volumen utiliza
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >
@@ -225,7 +225,7 @@ Puede eliminar el volumen utilizando la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -235,7 +235,7 @@ Puede eliminar el volumen utilizando la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >

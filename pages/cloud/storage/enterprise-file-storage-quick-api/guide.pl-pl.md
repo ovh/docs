@@ -110,7 +110,7 @@ Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj nast
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -120,7 +120,7 @@ Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj nast
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >> >
@@ -151,7 +151,7 @@ Sprawdź status utworzenia ACL przy użyciu następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -161,16 +161,16 @@ Sprawdź status utworzenia ACL przy użyciu następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >> >
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >> >
 >> >> ID ACL
 >
 
-Zastąp `netappShareAclRuleId` identyfikatorem ACL utworzonym dla wolumenu.
+Zastąp `aclRuleId` identyfikatorem ACL utworzonym dla wolumenu.
 
 > [!primary]
 >
@@ -185,7 +185,7 @@ Po aktywacji ACL pobierz ścieżki dostępu wolumenu za pomocą następującego 
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -195,7 +195,7 @@ Po aktywacji ACL pobierz ścieżki dostępu wolumenu za pomocą następującego 
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
@@ -225,7 +225,7 @@ Możesz usunąć wolumen za pomocą następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -235,7 +235,7 @@ Możesz usunąć wolumen za pomocą następującej drogi API:
 >> >
 >> >> ID usługi
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID woluminu
 >
