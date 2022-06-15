@@ -73,7 +73,7 @@ To retrieve the information about a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -83,12 +83,12 @@ To retrieve the information about a volume, use the following route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Replace `serviceName` with the ID of your service and `netappShareId` with your volume ID.
+Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
 ### Creating a volume
 
@@ -127,7 +127,7 @@ To determine the mount path of a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -137,12 +137,12 @@ To determine the mount path of a volume, use the following route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Replace `serviceName` with the ID of your service and `netappShareId` with your volume ID.
+Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
 Returned mount paths can be used to mount your volume.
 
@@ -165,7 +165,7 @@ To remove a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -175,12 +175,12 @@ To remove a volume, use the following route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
 
-Replace `serviceName` with the ID of your service and `netappShareId` with your volume ID.
+Replace `serviceName` with the ID of your service and `shareId` with your volume ID.
 
 ## Go further
 

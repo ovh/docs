@@ -53,7 +53,7 @@ Todas las ACL existentes de un volumen pueden recuperarse mediante la siguiente 
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -63,12 +63,12 @@ Todas las ACL existentes de un volumen pueden recuperarse mediante la siguiente 
 >>
 >> >> ID del servicio
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID del volumen
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
 Cuando utilice esta llamada a la API para un nuevo volumen, no se le devolverá ninguna ACL por defecto.
 
@@ -82,7 +82,7 @@ Para crear una nueva ACL, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -92,7 +92,7 @@ Para crear una nueva ACL, utilice la siguiente ruta de la API:
 >>
 >> >> ID del servicio
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID del volumen
 >>
@@ -107,7 +107,7 @@ Para crear una nueva ACL, utilice la siguiente ruta de la API:
 >> >> > Dirección IP o rango de direcciones IP en notación CIDR.
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
 Seleccione el nivel de acceso que quiere autorizar: o `ro` (sólo lectura) o `rw` (lectura y escritura).
 
@@ -125,7 +125,7 @@ Para eliminar un ACL, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -135,18 +135,18 @@ Para eliminar un ACL, utilice la siguiente ruta de la API:
 >>
 >> >> ID del servicio
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID del volumen
 >>
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >>
 >> >> ID del ACL
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
-Puede obtener el `netappShareAclRuleId` a partir de la respuesta obtenida al crear el ACL o listando las ACL existentes de su volumen.
+Puede obtener el `aclRuleId` a partir de la respuesta obtenida al crear el ACL o listando las ACL existentes de su volumen.
 
 ## Más información
 

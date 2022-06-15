@@ -77,7 +77,7 @@ Per recuperare le informazioni relative a un volume, utilizza la via API seguent
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -87,12 +87,12 @@ Per recuperare le informazioni relative a un volume, utilizza la via API seguent
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >
 
-Sostituisci `serviceName` con l'ID del tuo servizio e `netappShareId` con l'ID del volume.
+Sostituisci `serviceName` con l'ID del tuo servizio e `shareId` con l'ID del volume.
 
 ### Creare un volume
 
@@ -131,7 +131,7 @@ Per conoscere il percorso di montaggio di un volume, utilizza la seguente via AP
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -141,12 +141,12 @@ Per conoscere il percorso di montaggio di un volume, utilizza la seguente via AP
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >
 
-Sostituisci `serviceName` con l'ID del tuo servizio e `netappShareId` con l'ID del volume.
+Sostituisci `serviceName` con l'ID del tuo servizio e `shareId` con l'ID del volume.
 
 Le strade di montaggio restituite possono essere utilizzate per montare il volume.
 
@@ -168,7 +168,7 @@ Per eliminare un volume, utilizza la rotta API seguente:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -178,12 +178,12 @@ Per eliminare un volume, utilizza la rotta API seguente:
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >
 
-Sostituisci `serviceName` con l'ID del tuo servizio e `netappShareId` con l'ID del volume da eliminare.
+Sostituisci `serviceName` con l'ID del tuo servizio e `shareId` con l'ID del volume da eliminare.
 
 ## Per saperne di più
 

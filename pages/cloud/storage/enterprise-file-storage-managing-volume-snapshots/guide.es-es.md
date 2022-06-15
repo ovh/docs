@@ -53,7 +53,7 @@ Todos los snapshots existentes de un volumen pueden recuperarse utilizando la si
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >>
 >>
 >
@@ -63,12 +63,12 @@ Todos los snapshots existentes de un volumen pueden recuperarse utilizando la si
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
 Por defecto, no es necesario devolver ningún snapshot para un nuevo volumen.
 
@@ -82,7 +82,7 @@ Para crear un snapshot, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -92,7 +92,7 @@ Para crear un snapshot, utilice la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >> >
@@ -107,7 +107,7 @@ Para crear un snapshot, utilice la siguiente ruta de la API:
 >> >> > Nombre del snapshot
 >
 
-Sustituya el `serviceName` por el ID del servicio y `netAppShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID del servicio y `shareId` por el ID del volumen.
 
 Los parámetros `name` y la `descripción` del snapshot son opcionales.
 
@@ -121,7 +121,7 @@ Para obtener la información de un snapshot, utilice la siguiente ruta de la API
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot/{netappShareSnapshotId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -131,16 +131,16 @@ Para obtener la información de un snapshot, utilice la siguiente ruta de la API
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >> >
->> > **netappShareSnapshotId** *
+>> > **snapshotId** *
 >> >
 >> >> ID del snapshot
 >
 
-Sustituya el `serviceName` por el ID del servicio, `netAppShareId` por el ID del volumen y `netappShareSnapshotId` por el ID del snapshot.
+Sustituya el `serviceName` por el ID del servicio, `shareId` por el ID del volumen y `snapshotId` por el ID del snapshot.
 
 ### Eliminar un snapshot
 
@@ -152,7 +152,7 @@ Para eliminar un snapshot, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}/snapshot/{netappShareSnapshotId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -162,16 +162,16 @@ Para eliminar un snapshot, utilice la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >> >
->> > **netppShareSnapshotId**
+>> > **snapshotId**
 >> >
 >> >> ID del snapshot
 >
 
-Sustituya el `serviceName` por el ID del servicio, `netAppShareId` por el ID del volumen y `netppShareSnapshotId` por el ID del snapshot que desea eliminar.
+Sustituya el `serviceName` por el ID del servicio, `shareId` por el ID del volumen y `snapshotId` por el ID del snapshot que desea eliminar.
 
 ## Más información
 

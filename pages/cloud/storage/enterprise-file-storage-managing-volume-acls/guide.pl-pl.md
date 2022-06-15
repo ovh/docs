@@ -53,7 +53,7 @@ Wszystkie istniejące ACL o pojemności można odzyskać za pomocą następując
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -63,12 +63,12 @@ Wszystkie istniejące ACL o pojemności można odzyskać za pomocą następując
 >>
 >> >> ID usługi
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID woluminu
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 Podczas korzystania z tego wywołania API dla nowego wolumenu nie należy przekierowywać ACL domyślnie.
 
@@ -82,7 +82,7 @@ Aby utworzyć nowy ACL, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -92,7 +92,7 @@ Aby utworzyć nowy ACL, użyj następującej drogi API:
 >>
 >> >> ID usługi
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID woluminu
 >>
@@ -107,7 +107,7 @@ Aby utworzyć nowy ACL, użyj następującej drogi API:
 >> >> > Adres IP lub zakres adresów IP z ratingiem CIDR.
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
 Wybierz poziom dostępu, który chcesz autoryzować: albo `ro` (tylko odczyt) lub `rw` (odczyt i zapis).
 
@@ -125,7 +125,7 @@ Aby usunąć ACL, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -135,18 +135,18 @@ Aby usunąć ACL, użyj następującej drogi API:
 >>
 >> >> ID usługi
 >>
->> > **netappShareId** *
+>> > **shareId** *
 >>
 >> >> ID woluminu
 >>
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >>
 >> >> ID ACL
 >
 
-Zamień `serviceName` na ID usługi i `netappShareId` na ID wolumenu.
+Zamień `serviceName` na ID usługi i `shareId` na ID wolumenu.
 
-Możesz uzyskać `netappShareAclRuleId` na podstawie odpowiedzi uzyskanej podczas tworzenia ACL lub poprzez odczyt istniejących ACL wolumenu.
+Możesz uzyskać `aclRuleId` na podstawie odpowiedzi uzyskanej podczas tworzenia ACL lub poprzez odczyt istniejących ACL wolumenu.
 
 ## Sprawdź również
 

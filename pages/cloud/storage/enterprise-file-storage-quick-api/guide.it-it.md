@@ -110,7 +110,7 @@ Per creare una nuova ACL che ti permetterà di connetterti al tuo volume, utiliz
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -120,7 +120,7 @@ Per creare una nuova ACL che ti permetterà di connetterti al tuo volume, utiliz
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >> >
@@ -151,7 +151,7 @@ Verifica lo stato di creazione dell'ACL utilizzando la seguente via API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -161,16 +161,16 @@ Verifica lo stato di creazione dell'ACL utilizzando la seguente via API:
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >> >
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >> >
 >> >> ID ACL
 >
 
-Sostituisci `netappShareAclRuleId` con l'ID dell'ACL creata per il tuo volume.
+Sostituisci `aclRuleId` con l'ID dell'ACL creata per il tuo volume.
 
 > [!primary]
 >
@@ -185,7 +185,7 @@ Una volta attivata l'ACL, recupera i percorsi di accesso del volume utilizzando 
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -195,7 +195,7 @@ Una volta attivata l'ACL, recupera i percorsi di accesso del volume utilizzando 
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >
@@ -225,7 +225,7 @@ Puoi eliminare il tuo volume utilizzando la strada API seguente:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -235,7 +235,7 @@ Puoi eliminare il tuo volume utilizzando la strada API seguente:
 >> >
 >> >> ID del servizio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volume
 >
