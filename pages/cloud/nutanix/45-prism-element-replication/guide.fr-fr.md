@@ -24,13 +24,13 @@ order: 03
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud ou d'un cluster Nutanix chez OVHcloud et un autre dans votre infrastructure.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur vos clusters via Prism Central.
+- Être connecté sur vos clusters via **Prism Central**.
 - d'avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.
 
 
 ## Présentation de la réplication synchrone et asynchrone
 
-Il est possible au travers de Prism Element de faire des réplications entre clusters si ils sont reliés ensemble.
+Il est possible au travers de **Prism Element** de faire des réplications entre clusters s'ils sont reliés ensemble.
 
 Avec le pack **Nutanix Standard** d'OVHcloud il est possible faire une réplication asynchrone toutes les heures entre deux clusters.
 
@@ -38,14 +38,14 @@ Une réplication synchrone avec un délai de réplication compris entre 1 et 15 
 
 ## En pratique
 
-Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud ,l'un au CANADA et l'autre en FRANCE connectés au travers d'un VPN IPSEC sur deux plans d'adressages IP differents qui sont :
+Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud, l'un au CANADA et l'autre en FRANCE connectés au travers d'un VPN IPSEC sur deux plans d'adressages IP différents qui sont :
 
 * ** `192.168.0.0/24` pour le cluster se trouvant dans un Datacenter en FRANCE
 * ** `192.168.10.0/24` pour le cluster se trouvant dans un Datacenter au CANADA
 
 ### Configuration des sites distants
 
-Connectez-vous au travers de  **Prism Element** sur le cluster en France à partir de **Prism Central**. comme indiqué sur cette documentation [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+Connectez-vous au travers de **Prism Element** sur le cluster en France à partir de **Prism Central**, comme indiqué sur cette documentation [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
 Cliquez sur `Data Protection`{.action} depuis le menu `Home`.
 
@@ -71,7 +71,7 @@ Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
 ![01 Create Remote Site From FRANCE06](images/01-create-remote-site-from-france06.png){.thumbnail}
 
-Dans la rubrique **Network Mapping** Sélectionnez `AHV: base`pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
+Dans la rubrique **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
 ![01 Create Remote Site From FRANCE07](images/01-create-remote-site-from-france07.png){.thumbnail}
 
@@ -87,11 +87,11 @@ Cliquez sur `Save`{.action}
 
 ![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
 
-Le site distant apparait dans la liste **Remote Site**.
+Le site distant apparait dans la liste des sites distants.
 
 ![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
 
-Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et faire la même operation.
+Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et faire la même opération.
 
 Au travers du menu Home cliquez sur `Data Protection`{.action}.
 
@@ -117,7 +117,7 @@ Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
 ![02 Create Remote Site From CANADA06](images/02-create-remote-site-from-canada06.png){.thumbnail}
 
-Dans **Network Mapping** Selectionnez `AHV: base`pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
+Dans **Network Mapping** Sélectionnez `AHV: base`pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
 ![02 Create Remote Site From CANADA07](images/02-create-remote-site-from-canada07.png){.thumbnail}
 
@@ -133,13 +133,14 @@ Cliquez sur `Save`{.action}.
 
 ![02 Create Remote Site From CANADA10](images/02-create-remote-site-from-canada10.png){.thumbnail}
 
-Le site distant apparait dans la liste **Remote Site**.
+Le site distant apparait dans la liste des sites distants. 
+
 
 ![02 Create Remote Site From CANADA11](images/02-create-remote-site-from-canada11.png){.thumbnail}
 
 ### Mise en place de la réplication entre site
 
-Maintenant que les deux sites se connaissent nous allons mettre en place un réplication asynchrone de 3 ordinateurs virtuels se trouvant en France vers le site distant du Canada.
+Maintenant que les deux sites se connaissent nous allons mettre en place une réplication asynchrone de trois machines virtuelles se trouvant en France vers le site distant au Canada.
 
 Revenez sur l'interface **Prism Element** du cluster se trouvant en France.
 
@@ -155,7 +156,7 @@ Cliquez sur `Async DR`{.action}.
 
 ![03 Create dataprotection 03](images/03-create-dataprotection03.png){.thumbnail}
 
-Saisissez un  `Nom` et cliquez sur `Create`{.action}.
+Saisissez un `Nom` et cliquez sur `Create`{.action}.
 
 ![03 Create dataprotection 04](images/03-create-dataprotection04.png){.thumbnail}
 
@@ -165,25 +166,23 @@ Sélectionnez `trois machines` virtuelles et cliquez sur `Protect Selected Entit
 
 Cliquez sur `Next`{.action}
 
-![03 Create dataprotection 05](images/03-create-dataprotection05.png){.thumbnail}
+![03 Create dataprotection 06](images/03-create-dataprotection06.png){.thumbnail}
 
 Cliquez sur `New Schedule`{.action} pour programmer la planification.
 
 ![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
 
-Choisissez dans ***Repeat every** `1 hour` , et prenez comme politique de rétention `2 snapshots` en local et sur le site distant, ensuite cliquez sur `Create Schedule`{.action}
-
-
+Choisissez dans ***Repeat every** `1 hour`, et prenez comme politique de rétention `2 snapshots` à la fois en local et sur le site distant, ensuite cliquez sur `Create Schedule`{.action}
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
+La tâche de réplication est créée pour fonctionner toutes les heures, ce sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. 
 
-La tâche de réplication est crée pour fonctionner toutes les heures ce sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. cliquez sur `Close`{.action} pour fermer la fenêtre.
+Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 > [!primary]
 > 
-> Il est possible de modifier la planification pour être plus rapprochée , la réplication va basculer du mode asynchrone au mode synchrone il faudra alors changer la licences avec le pack **Nutanix Advanced**.
-
+> Il est possible de modifier la planification pour avoir une perte de données moins importante en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il faudra alors changer la licence avec le pack **Nutanix Advanced**.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
@@ -194,15 +193,15 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. lors de la migration une réplication sera faite après l'arrêt des machines virtuelles.
+Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. Lors de la migration une réplication sera faite après l'arrêt des machines virtuelles.
 
-Allez sur **Prism Element** où se trouve les machine virtuelles répliquées.
+Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
 Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action}. 
 
 ![04 Migrate VM to CANADA 01](images/04-migrate-to-canada01.png){.thumbnail}
 
-Sélectionnez le site distant,  saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
+Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
@@ -210,14 +209,14 @@ Les machines virtuelles qui sont membres du domaine de protection vont être ét
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
-### Basculement des machine virtuelles en cas de desastre.
+### Basculement des machine virtuelles en cas de désastre
 
-Si le site d'origine est indisponible suite à un problème il est possible d'activer les machines virtuelles sur le  site de destination.
+Si le site d'origine est indisponible suite à un problème il est possible d'activer les machines virtuelles sur le site de destination.
 
 > [!warning]
-> L'activation des machines virtuelles sur le site distants se fera avec les dernières données répliquées, dans le cas d'un réplication asynchrone il est possible d'avoir une perte de données d'un maximum d'une heure.
+> L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'un réplication asynchrone il est possible d'avoir une perte de données au maximum d'une heure. C'est ce que l'on nomme le RPO (Recovery Point Objective).
 
-Connectez-vous sur se site distant avec **Prism Element** 
+Connectez-vous sur ce site distant avec **Prism Element** 
 
 Allez sur le tableau de bord **Data Protection** 
 
@@ -229,7 +228,7 @@ Cliquez sur `Yes`{.action}.
 
 ![05 Active VM on remote site 02](images/05-activate-protection-domain02.png){.thumbnail}
 
-les machines virtuelles vont apparaitrent dans la console de **Prism Element**, elles seront dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
+Les machines virtuelles apparaîtrons dans la console de **Prism Element**, elles seront éteintes et dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
 
 Les machines virtuelles sont éteintes il faudra alors les démarrer manuellement.
 
