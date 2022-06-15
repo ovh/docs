@@ -62,7 +62,7 @@ Choisissez `Physical Cluster`{.action} dans le sous menu.
 
 ![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
 
-Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP du **Prism Element** du site distant au canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
+Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP du **Prism Element** du site distant en FRANCE dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
 
 ![01 Create Remote Site From FRANCE05](images/01-create-remote-site-from-france05.png){.thumbnail}
 
@@ -136,7 +136,57 @@ Le site distant apparait dans la liste **Remote Site**
 
 ![02 Create Remote Site From CANADA11](images/02-create-remote-site-from-canada11.png){.thumbnail}
 
-### Mise en place réplication entre site
+### Mise en place de la réplication entre site
+
+Maintenant que les deux sites se connaissent nous allons mettre en place un réplication asynchrone de 3 ordinateurs virtuels se trouvant en France vers le site distant du CANADA.
+
+Revenez sur **Prism Element** du serveur se trouvant en FRANCE.
+
+Choisissez dans le menu principal `Data Protection`{.action}
+
+![03 Create dataprotection 01](images/03-create-dataprotection01.png){.thumbnail}
+
+Au travers du tableau de bord **Data Protection** cliquez en haut à droite sur `+ Protection Domain`{.action}.
+
+![03 Create dataprotection 02](images/03-create-dataprotection02.png){.thumbnail}
+
+Cliquez sur `Async DR`{.action}.
+
+![03 Create dataprotection 03](images/03-create-dataprotection03.png){.thumbnail}
+
+Saisissez un  `Nom` et cliquez sur `Create`{.action}.
+
+![03 Create dataprotection 04](images/03-create-dataprotection04.png){.thumbnail}
+
+Sélectionnez `trois machines` virtuelles et cliquez sur `Protect Selected Entities`{.action}.
+
+![03 Create dataprotection 05](images/03-create-dataprotection05.png){.thumbnail}
+
+Cliquez sur `Next`{.action}
+
+![03 Create dataprotection 05](images/03-create-dataprotection05.png){.thumbnail}
+
+Cliquez sur `New Schedule`{.action} pour programmer la planification.
+
+![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
+
+Choisissez dans *Repeat every* `1 hour` , et prenez comme politique de rétention `2 snapshots` en local et sur le site distant `2 snapshots` Ensuite cliquez sur `Create Schedule`{.action}
+
+![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
+
+La tâche de réplication est crée pour fonctionner toutes les heures se sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. cliquez sur `Close`{.action} pour fermer la fenêtre.
+
+![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
+
+Le domaine de protection est créé et apparait dans la liste des réplications.
+
+![03 Create dataprotection 10](images/03-create-dataprotection10.png){.thumbnail}
+
+
+
+
+
+
 
 ### Bascule des VM en mode programmé
 
