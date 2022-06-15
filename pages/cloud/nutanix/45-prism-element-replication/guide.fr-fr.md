@@ -185,9 +185,27 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Bascule des VM en mode migration
 
-Il est possible de basculer les machines virtuelles à la volée sans perte de données si l'on a nos cluster actifs et qui communiquent entre eux.
+Il est possible de basculer les machines virtuelles d'un cluster à l'autresans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux.
 
-Pour cela il faut aller sur le cluster ou se trouve actuellement les VM dans **Prism Element**
+Allez sur **Prism Element** ou se trouve les machine virtuelles répliquées
+
+Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action} 
+
+![04 Migrate VM to CANADA 01](images/04-migrate-to-canada01.png){.thumbnail}
+
+Selectionnez le site saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
+
+![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
+
+Les machines virtuelles qui font partie du domaine de protection vont être éteinte, basculer sur l'autre cluster et disparaitre du cluster d'origine.
+
+![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
+
+
+
+
+
+
 
 
 
