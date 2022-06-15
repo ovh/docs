@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 14/06/2022**
+**Dernière mise à jour le 15/06/2022**
 
 ## Objectif
 
@@ -22,15 +22,15 @@ order: 03
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix dans votre compte OVHcloud
+- Disposer de deux clusters Nutanix dans votre compte OVHcloud ou d'un cluster Nutanix chez OVHcloud et un autre dans votre infrastructure.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur vos clusters via Prism Central
-- d'avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC
+- Être connecté sur vos clusters via Prism Central.
+- d'avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.
 
 
 ## Présentation de la réplication synchrone et asynchrone
 
-Il est possible au travers de Prism Element de faire des réplications entre clusters si ils sont connectés ensemble.
+Il est possible au travers de Prism Element de faire des réplications entre clusters si ils sont reliés ensemble.
 
 Avec le pack **Nutanix Standard** d'OVHcloud il est possible faire une réplication asynchrone toutes les heures entre deux clusters.
 
@@ -210,9 +210,12 @@ Les machines virtuelles qui sont membres du domaine de protection vont être ét
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
-### Bascule des machine virtuelle avec le cluster d'origine indisponible.
+### Basculement des machine virtuelles en cas de desastre.
 
-Il est possible d'activer les machines virtuelles sur un site distant en cas d'indisponibilité du site d'origine mais les machines virtuelles seront dans l'état de la dernière réplication. Si la réplication est asynchrone il est possible de perdre jusqu'a 1 heure de données.
+Si le site d'origine est indisponible suite à un problème il est possible d'activer les machines virtuelles sur le  site de destination.
+
+> [!warning]
+> L'activation des machines virtuelles sur le site distants se fera avec les dernières données répliquées, dans le cas d'un réplication asynchrone il est possible d'avoir une perte de données d'un maximum d'une heure.
 
 Connectez-vous sur se site distant avec **Prism Element** 
 
@@ -226,8 +229,9 @@ Cliquez sur `Yes`{.action}.
 
 ![05 Active VM on remote site 02](images/05-activate-protection-domain02.png){.thumbnail}
 
-les machines virtuelles vont apparaitrent dans la console de **Prism Element** elles seront dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
+les machines virtuelles vont apparaitrent dans la console de **Prism Element**, elles seront dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
 
+Les machines virtuelles sont éteintes il faudra alors les démarrer manuellement.
 
 ## Aller plus loin
 
