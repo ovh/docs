@@ -29,24 +29,24 @@ order: 03
 
 ## Présentation de la réplication synchrone et asynchrone
 
-Il est possible au travers de Prism Element de faire des réplications entre clusters si ils sont reliés ensemble.
+Il est possible au travers de Prism Element de faire des réplications entre clusters si ils sont connectés ensemble.
 
-Avec le pack **Nutanix Standard** d'OVHcloud il est possible faire une réplication asynchrone toutes les heures.
+Avec le pack **Nutanix Standard** d'OVHcloud il est possible faire une réplication asynchrone toutes les heures entre deux clusters.
 
-Il est possible de faire une réplication synchrone avec un délai de réplication compris entre 1 et 15 minutes pour cela il faut choisir le pack **Nutanix Advanced** d'OVHcloud.
+Il est possible de faire une réplication synchrone avec un délai de réplication compris entre 1 et 15 minutes pour cela il faut choisir le pack **Nutanix Advanced** d'OVHcloud. 
 
 ## En pratique
 
-Nous allons interconnecter deux cluster Nutanix se trouvant dans les datacenter d'OVHcloud ,l'un au CANADA et l'autre en FRANCE au travers d'un VPN IPSEC sur deux plans d'adressages IP differents qui sont :
+Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud ,l'un au CANADA et l'autre en FRANCE connecté au travers d'un VPN IPSEC sur deux plans d'adressages IP differents qui sont :
 
 * ** `192.168.0.0/24` pour le cluster se trouvant dans un Datacenter en FRANCE
 * ** `192.168.10.0/24` pour le cluster se trouvant dans un Datacenter au CANADA
 
 ### Configuration des sites distants
 
-Connectez vous sur **Prism Element** du cluster de la France à partir de **Prism Central** vous pouvez vous aider de la documentation [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
+Connectez vous au travers de  **Prism Element** sur le cluster en France à partir de **Prism Central**. comme indiqué sur cette documentation [Hyperconvergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
-Au travers du menu Home cliquez sur `Data Protection`{.action}.
+Cliquez sur `Data Protection`{.action} depuis le menu `Home`.
 
 ![01 Create Remote Site From FRANCE01](images/01-create-remote-site-from-france01.png){.thumbnail} 
 
@@ -54,7 +54,7 @@ Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
 ![01 Create Remote Site From FRANCE02](images/01-create-remote-site-from-france02.png){.thumbnail}
 
-Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant
+Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant.
 
 ![01 Create Remote Site From FRANCE03](images/01-create-remote-site-from-france03.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Choisissez `Physical Cluster`{.action} dans le sous menu.
 
 ![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
 
-Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP du **Prism Element** du site distant en FRANCE dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
+Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP de **Prism Element** du site distant en FRANCE dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
 
 ![01 Create Remote Site From FRANCE05](images/01-create-remote-site-from-france05.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
 ![01 Create Remote Site From FRANCE06](images/01-create-remote-site-from-france06.png){.thumbnail}
 
-Dans **Network Mapping** Selectionnez `AHV: base`pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
+Dans la rubrique **Network Mapping** Sélectionnez `AHV: base`pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
 ![01 Create Remote Site From FRANCE07](images/01-create-remote-site-from-france07.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: 
 
 ![01 Create Remote Site From FRANCE08](images/01-create-remote-site-from-france08.png){.thumbnail}
 
-Choisissez le `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages sources et destination. 
+Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages sources et destination. 
 
 ![01 Create Remote Site From FRANCE09](images/01-create-remote-site-from-france09.png){.thumbnail}
 
@@ -86,11 +86,11 @@ Cliquez sur `Save`{.action}
 
 ![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
 
-Le site distant apparait dans la liste **Remote Site**
+Le site distant apparait dans la liste **Remote Site**.
 
 ![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
 
-Nous allons maintenant nous connecter à **Prism Element** du site distant au CANADA et faire la même operation.
+Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et faire la même operation.
 
 Au travers du menu Home cliquez sur `Data Protection`{.action}.
 
@@ -108,7 +108,7 @@ Choisissez `Physical Cluster`{.action} dans le sous menu.
 
 ![02 Create Remote Site From CANADA04](images/02-create-remote-site-from-canada04.png){.thumbnail}
 
-Nommez le site distant dans `REMOTE SITE NAME` , saisissez l'adresse IP du **Prism Element** du site distant au canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
+Nommez le site distant dans `REMOTE SITE NAME`, saisissez l'adresse IP de **Prism Element** du site distant au canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
 
 ![02 Create Remote Site From CANADA05](images/02-create-remote-site-from-canada05.png){.thumbnail}
 
@@ -128,19 +128,19 @@ Choisissez le `default-container...` dans Source **VStore** et **Destination VSt
 
 ![02 Create Remote Site From CANADA09](images/02-create-remote-site-from-canada09.png){.thumbnail}
 
-Cliquez sur `Save`{.action}
+Cliquez sur `Save`{.action}.
 
 ![02 Create Remote Site From CANADA10](images/02-create-remote-site-from-canada10.png){.thumbnail}
 
-Le site distant apparait dans la liste **Remote Site**
+Le site distant apparait dans la liste **Remote Site**.
 
 ![02 Create Remote Site From CANADA11](images/02-create-remote-site-from-canada11.png){.thumbnail}
 
 ### Mise en place de la réplication entre site
 
-Maintenant que les deux sites se connaissent nous allons mettre en place un réplication asynchrone de 3 ordinateurs virtuels se trouvant en France vers le site distant du CANADA.
+Maintenant que les deux sites se connaissent nous allons mettre en place un réplication asynchrone de 3 ordinateurs virtuels se trouvant en France vers le site distant du Canada.
 
-Revenez sur **Prism Element** du serveur se trouvant en FRANCE.
+Revenez sur **Prism Element** du serveur se trouvant en France.
 
 Choisissez dans le menu principal `Data Protection`{.action}
 
@@ -170,11 +170,19 @@ Cliquez sur `New Schedule`{.action} pour programmer la planification.
 
 ![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
 
-Choisissez dans *Repeat every* `1 hour` , et prenez comme politique de rétention `2 snapshots` en local et sur le site distant `2 snapshots` Ensuite cliquez sur `Create Schedule`{.action}
+Choisissez dans ***Repeat every** `1 hour` , et prenez comme politique de rétention `2 snapshots` en local et sur le site distant, ensuite cliquez sur `Create Schedule`{.action}
+
+
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-La tâche de réplication est crée pour fonctionner toutes les heures se sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. cliquez sur `Close`{.action} pour fermer la fenêtre.
+
+La tâche de réplication est crée pour fonctionner toutes les heures ce sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. cliquez sur `Close`{.action} pour fermer la fenêtre.
+
+> [!primary]
+> 
+> Il est possible de modifier la planification pour être plus rapprochée , la réplication va basculer du mode asynchrone au mode synchrone il faudra alors changer la licences avec le pack **Nutanix Advanced**.
+
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
@@ -183,21 +191,21 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 ![03 Create dataprotection 10](images/03-create-dataprotection10.png){.thumbnail}
 
 
-### Bascule des VM en mode migration
+### Migration des machines virtuelles
 
-Il est possible de basculer les machines virtuelles d'un cluster à l'autresans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux.
+Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. lors de la migration un réplication sera faite après l'arrêt des machines virtuelles.
 
-Allez sur **Prism Element** ou se trouve les machine virtuelles répliquées
+Allez sur **Prism Element** où se trouve les machine virtuelles répliquées.
 
-Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action} 
+Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action}. 
 
 ![04 Migrate VM to CANADA 01](images/04-migrate-to-canada01.png){.thumbnail}
 
-Selectionnez le site saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
+Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-Les machines virtuelles qui font partie du domaine de protection vont être éteinte, basculer sur l'autre cluster et disparaitre du cluster d'origine.
+Les machines virtuelles qui sont membre du domaine de protection vont être éteinte, basculer sur l'autre cluster et disparaitre du cluster d'origine.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
