@@ -25,7 +25,7 @@ order: 03
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud ou d'un cluster Nutanix chez OVHcloud et un autre dans votre infrastructure.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos clusters via **Prism Central**.
-- d'avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.
+- d'avoir mis en place une inter-connexion entre deux clusters au travers d'un VPN IPSEC par exemple.
 
 
 ## Présentation de la réplication synchrone et asynchrone
@@ -38,7 +38,7 @@ Une réplication synchrone avec un délai de réplication compris entre 1 et 15 
 
 ## En pratique
 
-Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud, l'un au CANADA et l'autre en FRANCE connectés au travers d'un VPN IPSEC sur deux plans d'adressages IP différents qui sont :
+Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenter d'OVHcloud, l'un au CANADA et l'autre en FRANCE connectés via d'un VPN IPSEC sur deux plans d'adressages IP différents qui sont :
 
 * ** `192.168.0.0/24` pour le cluster se trouvant dans un Datacenter en FRANCE
 * ** `192.168.10.0/24` pour le cluster se trouvant dans un Datacenter au CANADA
@@ -55,7 +55,7 @@ Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
 ![01 Create Remote Site From FRANCE02](images/01-create-remote-site-from-france02.png){.thumbnail}
 
-Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant et hhoisissez `Physical Cluster`{.action} dans le sous menu.
+Cliquez `+ Remote Site`{.action} à droite de l'écran et choisissez `Physical Cluster`{.action} pour rajouter un site distant.
 
 ![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
 ![02 Create Remote Site From CANADA02](images/02-create-remote-site-from-canada02.png){.thumbnail}
 
-Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant et choisissez `Physical Cluster`{.action} dans le sous menu.
+Cliquez `+ Remote Site`{.action} à droite de l'écran et choisissez `Physical Cluster`{.action} pour rajouter un site distant.
 
 ![02 Create Remote Site From CANADA04](images/02-create-remote-site-from-canada04.png){.thumbnail}
 
@@ -160,7 +160,7 @@ Cliquez sur `Next`{.action}
 
 ![03 Create dataprotection 06](images/03-create-dataprotection06.png){.thumbnail}
 
-Cliquez sur `New Schedule`{.action} pour programmer la planification.
+Cliquez sur `New Schedule`{.action} pour configurer la planification.
 
 ![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
 
