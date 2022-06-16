@@ -6,7 +6,7 @@ section: Diagnostica
 order: 7
 ---
 
-**Ultimo aggiornamento: 16/09/2021**
+**Ultimo aggiornamento: 16/06/2022**
 
 ## Obiettivo
 
@@ -22,7 +22,7 @@ In caso di malfunzionamenti, i nostri sistemi di sicurezza hanno dovuto bloccare
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/) o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
 ## Prerequisiti
@@ -71,16 +71,22 @@ Se il tuo hosting è stato chiuso meno di due settimane fa e contiene un solo si
 
 Se il tuo hosting è stato chiuso meno di due settimane fa e contiene diversi siti, ripristina solo le cartelle contenenti i file illegittimi seguendo le istruzioni di questa [guida](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/#ripristina-un-file-da-un-software-o-uninterfaccia-web).
 
+> [!warning]
+>
+> Il solo ripristino del tuo spazio di storage non basterà a correggere eventuali falle di sicurezza presenti sul tuo sito.
+> Per identificare queste falle di sicurezza, puoi analizzare i ["logs web"](https://docs.ovh.com/it/hosting/hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/#logs) del tuo hosting o rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni.
+>
+
 #### Caso 2: il tuo hosting è stato disattivato più di due settimane fa
 
 Se il tuo hosting è stato chiuso più di due settimane fa, contatta un [provider specializzato](https://partner.ovhcloud.com/it/) per effettuare un audit di sicurezza delle tue soluzioni. 
+
+### Step 4: riattivare il tuo hosting Web
 
 > [!warning]
 >
 > Ti consigliamo di effettuare un audit di sicurezza **prima** della riapertura del tuo hosting. L'invio del codice malevolo dal tuo hosting può impegnare la tua responsabilità legale.
 >
-
-### Step 4: riattivare il tuo hosting Web
 
 #### Riattiva il tuo hosting con FileZilla
 
