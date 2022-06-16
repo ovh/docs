@@ -10,7 +10,7 @@ order: 7
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 16/09/2021**
+**Última atualização: 16/06/2022**
 
 ## Objetivo
 
@@ -26,7 +26,7 @@ Também pode acontecer que, após uma deteção de anomalias, os nossos robôs d
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador especializado](https://partner.ovhcloud.com/pt/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#gofurther).
 >
 
 ## Requisitos
@@ -75,16 +75,22 @@ Se o seu alojamento foi encerrado há menos de duas semanas e contém apenas um 
 
 Se o seu alojamento foi encerrado há menos de duas semanas e contém vários sites, deverá restaurar apenas a(s) pasta(s) que contém os ficheiros ilegítimos de acordo com as instruções deste [guia](../restauracao-ftp-filezilla-area-de-cliente/#restaurar-um-ficheiro-a-partir-de-um-programa-ou-uma-interface).
 
+> [!warning]
+>
+> O restauro do seu espaço de armazenamento por si só não será suficiente para corrigir potenciais falhas de segurança previamente presentes no seu site.
+> Para identificar estas falhas de segurança, pode analisar os ["logs web"](https://docs.ovh.com/pt/hosting/partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/#logs) do seu alojamento ou recorrer a um [prestador especializado](https://partner.ovhcloud.com/pt/) a fim de realizar uma auditoria de segurança das suas soluções.
+>
+
 #### Caso n°2: o seu alojamento foi desativado há mais de duas semanas
 
 Se o seu alojamento foi encerrado há mais de duas semanas, contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/) para efetuar uma auditoria de segurança das suas soluções. 
+
+### Etapa 4: reativar o alojamento web
 
 > [!warning]
 >
 > Recomendamos que realize uma auditoria de segurança **antes** da reabertura do alojamento. Qualquer envio de código malicioso a partir do seu alojamento pode implicar a sua responsabilidade jurídica.
 >
-
-### Etapa 4: reativar o alojamento web
 
 #### Reativar o alojamento com o FileZilla
 

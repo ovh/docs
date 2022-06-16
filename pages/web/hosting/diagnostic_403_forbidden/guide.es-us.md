@@ -10,7 +10,7 @@ order: 7
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 16/09/2021**
+**Última actualización: 16/06/2022**
 
 ## Objetivo
 
@@ -26,7 +26,7 @@ También puede ocurrir que, debido a una detección de anomalías, nuestros robo
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos
@@ -75,16 +75,22 @@ Si su alojamiento ha sido cerrado hace menos de dos semanas y solo contiene un s
 
 Si su alojamiento ha sido cerrado hace menos de dos semanas y contiene varios sitios web, restablezca únicamente el directorio o carpetas que contengan los archivos ilegítimos siguiendo las instrucciones de esta [guía](../restaurar-espacio-almacenamiento-alojamiento-web/#restaurar-un-archivo-desde-un-programa-o-una-interfaz-web).
 
+> [!warning]
+>
+> Solo la restauración de su espacio de almacenamiento no bastará para corregir posibles fallos de seguridad presentes previamente en su sitio web.
+> Para identificar estos fallos de seguridad, puede analizar los ["logs web"](https://docs.ovh.com/us/es/hosting/web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/#logs) de su alojamiento o recurrir a un [proveedor especializado](https://partner.ovhcloud.com/es/) para realizar una auditoría de seguridad de sus soluciones.
+>
+
 #### Caso n° 2: su alojamiento ha sido desactivado más de dos semanas antes.
 
 Si su alojamiento ha sido cerrado más de dos semanas antes, póngase en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es/) para realizar una auditoría de seguridad de sus soluciones. 
+
+### Etapa 4: reactivar su alojamiento web
 
 > [!warning]
 >
 > Le recomendamos que realice una auditoría de seguridad **antes** de reabrir el alojamiento. Cualquier envío de código malicioso desde su alojamiento puede conllevar su responsabilidad jurídica.
 >
-
-### Etapa 4: reactivar su alojamiento web
 
 #### Reactivar el alojamiento con FileZilla
 
