@@ -5,7 +5,7 @@ excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
 section: Gestion via OpenStack
 ---
 
-**Dernière mise à jour le 30/11/2021**
+**Dernière mise à jour le 16/06/2022**
 
 ## Objectif
 
@@ -165,7 +165,7 @@ La mgration suivra le processus ci-dessous :
 - Les regions OpenStack en version Stein passeront sur une nouvelle version d'OpenVSwitch.
 
 > [!primary]
-> À partir de cette étape, pour les utilisateurs de Terraform, il est nécessaire de forcer le paramétrage de [port security à "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} pour que les playbook puissent foncitonner.
+> À partir de cette étape, pour les utilisateurs de Terraform, il est nécessaire de forcer le paramétrage du [port security à "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} pour que les playbooks puissent fonctionner.
 > 
 
 - Vous pourrez activer « port security » sur les régions Stein.
