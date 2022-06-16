@@ -47,10 +47,10 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 Certaines solutions sont disponibles avec **Prism Element** :
 
 * **Async DR** : La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure , si un problème survient il est  possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
-* **NearSync DR** : La réplication se fait plusieurs fois par heure il est possible d'avoir un syncronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
-* **Metro/Sync Rep DR** : Le stockage du cluster Nutanix est étendu sur un autre cluster ce qui permet de n'avoir aucune perte de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantanément.
+* **NearSync DR** : La réplication se fait plusieurs fois par heure il est possible d'avoir un synchronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
+* **Metro/Sync Rep DR** : Le stockage du cluster Nutanix est étendu sur un autre cluster ce empeche toutes pertes de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantanément.
 
-Il est possible d'améliorer la gestion des plan de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
+Il est possible d'améliorer la gestion des plans de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
 > [!warning]
 > La réplication asynchrone entre deux sites est intégrée avec l'offre **Nutanix Standard** d'OVHcloud par contre il est sera nécessaire de passer sur l'offre **Nutanix Advanced** d'OVHcloud pour pouvoir utiliser les autres options.
