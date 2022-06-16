@@ -174,7 +174,7 @@ Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 > [!primary]
 > 
-> Il est possible de modifier la planification pour avoir une perte de données moins importante en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il faudra alors changer la licence avec le pack **Nutanix Advanced**.
+> Il est possible de modifier la planification pour avoir un risque de perte de données réduite en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il faudra alors changer la licence avec le pack **Nutanix Advanced**.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
@@ -185,7 +185,13 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-Il est possible de basculer les machines virtuelles d'un cluster à l'autre sans perte de données si nos deux clusters sont actifs et qu'ils communiquent entre eux. Lors de la migration une réplication sera faite après l'arrêt des machines virtuelles.
+La migration des machines virtuelles consiste à basculer les machines virtuelles d'un cluster à l'autre dans cet ordre :
+
+* Arrêt des machines virtuelles sur le cluster source (Si elles sont allumées).
+* Replication des données manquantes vers le cluster de destination.
+* Suppression des machines virtuelles sur le cluster source et 
+* Désactivation de la réplication planifiée
+* Démarrage des machines virtuelles sur le cluster de destination.
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
@@ -197,13 +203,13 @@ Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.act
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-Les machines virtuelles qui sont membres du domaine de protection vont être éteintes, basculer sur l'autre cluster et disparaitre du cluster d'origine.
+La migration est lancée elle sera terminée quand les machines virtuelles apparaitrons sur le site distant et ne seront plus sur le site d'origines.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
 ### Basculement des machine virtuelles en cas de désastre
 
-Si le site d'origine est indisponible suite à un problème il est possible d'activer les machines virtuelles sur le site de destination.
+Il est possible d'activer les machines virtuelles sur le site de destination même si le site source n'est pas ou plus disponible.
 
 > [!warning]
 > L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'un réplication asynchrone il est possible d'avoir une perte de données au maximum d'une heure. C'est ce que l'on nomme le RPO (Recovery Point Objective).
@@ -220,9 +226,9 @@ Cliquez sur `Yes`{.action}.
 
 ![05 Active VM on remote site 02](images/05-activate-protection-domain02.png){.thumbnail}
 
-Les machines virtuelles apparaîtrons dans la console de **Prism Element**, elles seront éteintes et dans l'état de la dernière réplication, les données modifiées entre temps seront perdues. 
+Les machines virtuelles apparaîtrons dans la console de **Prism Element** dans l'état de la dernière réplication, les données modifiées entre temps sur le cluster d'origine seront perdues. 
 
-Les machines virtuelles sont éteintes il faudra alors les démarrer manuellement.
+Les machines virtuelles activées sont éteintes il faudra alors les démarrer manuellement.
 
 ## Aller plus loin
 
