@@ -6,7 +6,7 @@ section: Diagnostic
 order: 7
 ---
 
-**Dernière mise à jour le 16/09/2021**
+**Dernière mise à jour le 16/06/2022**
 
 ## Objectif
 
