@@ -138,11 +138,7 @@ Choisissez dans le menu principal `Data Protection`{.action}
 
 ![03 Create dataprotection 01](images/03-create-dataprotection01.png){.thumbnail}
 
-Au travers du tableau de bord **Data Protection** cliquez en haut à droite sur `+ Protection Domain`{.action}.
-
-![03 Create dataprotection 02](images/03-create-dataprotection02.png){.thumbnail}
-
-Cliquez sur `Async DR`{.action}.
+Au travers du tableau de bord **Data Protection** cliquez en haut à droite sur `+ Protection Domain`{.action} et cliquez sur `Async DR`{.action}.
 
 ![03 Create dataprotection 03](images/03-create-dataprotection03.png){.thumbnail}
 
