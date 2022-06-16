@@ -24,9 +24,9 @@ Web PaaS supports building and deploying applications written in Elixir. There i
 
 To specify an Elixir container, use the `type` property in your `.platform.app.yaml`.
 
- ```yaml   
- type: 'elixir:1.9'
- ```  
+```yaml 
+type: 'elixir:1.9'
+```
 
 ## Web PaaS variables
 

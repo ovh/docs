@@ -26,7 +26,7 @@ Découvrez comment reconditionner un Cluster avec des paramètres réseau person
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
 
-Avant de redéployer un Cluster Nutanix, vous devez définir un réseau privé avec son masque de sous réseau comme ceci :`XX.XX.XX.XX/XX`.<br>
+Avant de redéployer un Cluster Nutanix, vous devez définir un réseau privé avec son masque de sous réseau comme ceci : `XX.XX.XX.XX/XX`.<br>
 Vous devez ensuite choisir des adresses IP à l'intérieur de cette étendue.
 
 La liste des adresses IP nécessaires varie en fonction du nombre de serveurs commandés (La solution proposée par OVHcloud va de 3 à 18 nœuds) et du mode de configuration de **Prism Central** (**Alone** ou **Scale**). 

@@ -106,7 +106,7 @@ To create a new ACL that will allow you to connect to your newly created volume,
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -116,7 +116,7 @@ To create a new ACL that will allow you to connect to your newly created volume,
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >> >
@@ -147,7 +147,7 @@ Inspect the ACL creation status using the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -157,16 +157,16 @@ Inspect the ACL creation status using the following route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >> >
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >> >
 >> >> ACL ID
 >
 
-Replace `netappShareAclRuleId` with the ID of the ACL created for your volume.
+Replace `aclRuleId` with the ID of the ACL created for your volume.
 
 > [!primary]
 >
@@ -181,7 +181,7 @@ Once the ACL is active, retrieve access paths for the volume using the following
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -191,7 +191,7 @@ Once the ACL is active, retrieve access paths for the volume using the following
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
@@ -221,7 +221,7 @@ You can remove your volume using the following route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -231,7 +231,7 @@ You can remove your volume using the following route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >

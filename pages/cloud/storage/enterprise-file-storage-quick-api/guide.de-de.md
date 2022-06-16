@@ -110,7 +110,7 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{netappShareId}/acl
+>> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -120,7 +120,7 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >> >
@@ -151,7 +151,7 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/acl/{netappShareAclRuleId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -161,16 +161,16 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >> >
->> > **netappShareAclRuleId** *
+>> > **aclRuleId** *
 >> >
 >> >> ACL ID
 >
 
-Ersetzen Sie `netappShareAclRuleId` mit der ID der ACL des Volumes.
+Ersetzen Sie `aclRuleId` mit der ID der ACL des Volumes.
 
 > [!primary]
 >
@@ -185,7 +185,7 @@ Sobald die ACL aktiviert ist, rufen Sie die Zugriffspfade des Volumes über folg
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -195,7 +195,7 @@ Sobald die ACL aktiviert ist, rufen Sie die Zugriffspfade des Volumes über folg
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >
@@ -225,7 +225,7 @@ Sie können Ihr Volume mit folgender Route löschen:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -235,7 +235,7 @@ Sie können Ihr Volume mit folgender Route löschen:
 >> >
 >> >> Service ID
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> Volume ID
 >

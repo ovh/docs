@@ -6,7 +6,7 @@ section: Diagnostic
 order: 7
 ---
 
-**Dernière mise à jour le 16/09/2021**
+**Dernière mise à jour le 16/06/2022**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Il peut aussi arriver que, suite à une détection d'anomalies, nos robots de s�
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
@@ -71,16 +71,22 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne c
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
 
+> [!warning]
+>
+> La restauration seule de votre espace de stockage ne suffira pas à corriger de potentielles failles de sécurité préalablement présentes sur votre site.
+> Pour identifier ces failles de sécurité, vous pouvez analyser les [« logs web »](https://docs.ovh.com/ca/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs) de votre hébergement ou faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin de réaliser un audit de sécurité de vos solutions.
+>
+
 #### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
 
 Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) afin d'effectuer un audit de sécurité de vos solutions. 
+
+### Étape 4 : réactiver votre hébergement web
 
 > [!warning]
 >
 > Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement. Tout envoi de code malveillant depuis votre hébergement peut engager votre responsabilité juridique.
 >
-
-### Étape 4 : réactiver votre hébergement web
 
 #### Réactiver votre hébergement avec FileZilla
 
