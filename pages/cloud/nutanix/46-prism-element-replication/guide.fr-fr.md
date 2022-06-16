@@ -30,11 +30,9 @@ order: 04
 
 ## Présentation de la réplication synchrone et asynchrone
 
-Il est possible au travers de **Prism Element** de faire des réplications entre clusters s'ils sont reliés ensemble.
+Deux clusters Nutanix ayant le pack de licence **Nutanix Standard** d'OVHcloud ont la capacité d'être relié pour créer un domaine de protection qui permet une réplication asynchrone toutes les heures. 
 
-Avec le pack **Nutanix Standard** d'OVHcloud il est seulement possible de faire une réplication asynchrone toutes les heures. 
-
-Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minutes ) et multisite sur plusieurs clusters il faudra choisir le pack **Nutanix Advanced**.
+Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minutes) et multisite sur plusieurs clusters il faudra choisir le pack **Nutanix Advanced** sur chacun des clusters.
 
 ## En pratique
 
