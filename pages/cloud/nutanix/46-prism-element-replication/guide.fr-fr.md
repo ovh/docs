@@ -128,7 +128,7 @@ Le site distant apparait dans la liste des sites distants.
 
 ### Mise en place de la réplication entre site
 
-Maintenant que les deux sites se connaissent nous allons mettre en place une réplication asynchrone de trois machines virtuelles se trouvant en France vers le site distant au Canada.
+Maintenant que les deux sites se connaissent nous allons créer un domaine de protection avec une réplication asynchrone contenant trois machines virtuelles se trouvant en France vers le site distant au Canada.
 
 Revenez sur l'interface **Prism Element** du cluster se trouvant en France.
 
@@ -156,7 +156,17 @@ Cliquez sur `New Schedule`{.action} pour configurer la planification.
 
 ![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
 
-Choisissez dans ***Repeat every** `1 hour`, et prenez comme politique de rétention `2 snapshots` à la fois en local et sur le site distant, ensuite cliquez sur `Create Schedule`{.action}
+
+Modifier ces options pour **Configure your local schedule** :
+
+* Saisissez **Repeat every** `1 hour` dans **Configure your local schedule**.
+
+Ensuite saisissez les règles de rétentions dans **Retention policy** :
+
+* Choisissez `2 snapshots` à **keep the last** en local pour garder deux snapshots en local.
+* Cochez la case à côté du site distant et garder aussi `2 snapshots` à **keep the last** pour garder deux snapshots sur le site distant.
+
+Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
