@@ -71,6 +71,11 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il ne c
 
 Si votre hébergement a été fermé il y a moins de deux semaines et qu'il contient plusieurs sites, restaurez uniquement le ou les dossiers contenant les fichiers illégitimes en suivant les instructions de ce [guide](../restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface).
 
+> [!warning]
+>
+> Toutefois, la restauration seule ne suffira pas à corriger les failles de sécurité qui ont été exploitées pour pirater votre site. Il vous sera nécessaire d’analyser les [logs "web"](../hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre hébergement pour identifier ces failles de sécurité ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin de réaliser un audit de sécurité de vos solutions.
+>
+
 #### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
 
 Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin d'effectuer un audit de sécurité de vos solutions. 
