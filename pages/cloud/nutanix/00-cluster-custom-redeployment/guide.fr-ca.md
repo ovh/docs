@@ -21,8 +21,8 @@ Découvrez comment reconditionner un Cluster avec des paramètres réseau person
 ## Prérequis
 
 - Disposer d'un Cluster Nutanix dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- Être connecté sur la page des [API OVHcloud](https://ca.api.ovh.com/)
 
 ## Présentation de l'utilisation du réseau privé pour un Cluster Nutanix chez OVHcloud
 
@@ -75,7 +75,7 @@ Nous allons redéployer un cluster de 3 nœuds comme dans l'exemple 1 du chapitr
 > L'opération de redéploiement du Cluster est irréversible. Toutes les données du Cluster seront supprimées et un nouveau mot de passe du compte admin sera généré et envoyé par e-mail au titulaire du compte client OVHcloud.
 >
 
-Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/first-steps-with-ovh-api/.)
+Connectez-vous à l'[API OVHcloud](https://api.ovh.com). Pour plus de détails sur le fonctionnement de l'API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/ca/fr/api/first-steps-with-ovh-api/.)
 
 Utilisez l'appel API suivant :
 
@@ -138,6 +138,6 @@ Cliquez sur `Execute`{.action} pour lancer le redéploiement du cluster.
 
 ## Aller plus loin
 
-[Utilisation de l'API OVHcloud](https://docs.ovh.com/fr/api/)
+[Utilisation de l'API OVHcloud](https://docs.ovh.com/ca/fr/api/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
