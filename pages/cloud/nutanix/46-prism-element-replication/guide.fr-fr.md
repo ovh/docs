@@ -3,7 +3,7 @@ title: Réplication asynchrone ou synchrone au travers de Prism Element
 slug: prism-element-nutanix-replication
 excerpt: "Comment mettre en place la réplication asynchrone ou synchrone au travers de Prism Element"
 section: Plan de reprise d'activité
-order: 03
+order: 04
 ---
 
 **Dernière mise à jour le 16/06/2022**
@@ -189,8 +189,8 @@ La migration des machines virtuelles consiste à basculer les machines virtuelle
 
 * Arrêt des machines virtuelles sur le cluster source (Si elles sont allumées).
 * Replication des données manquantes vers le cluster de destination.
-* Suppression des machines virtuelles sur le cluster source et 
-* Désactivation de la réplication planifiée
+* Suppression des machines virtuelles sur le cluster source.
+* Désactivation de la réplication planifiée.
 * Démarrage des machines virtuelles sur le cluster de destination.
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
@@ -228,7 +228,7 @@ Cliquez sur `Yes`{.action}.
 
 Les machines virtuelles apparaîtrons dans la console de **Prism Element** dans l'état de la dernière réplication, les données modifiées entre temps sur le cluster d'origine seront perdues. 
 
-Les machines virtuelles activées sont éteintes il faudra alors les démarrer manuellement.
+Les machines virtuelles activées sont éteintes, il est necessaire de faire un démarrage manuel.
 
 ## Aller plus loin
 
