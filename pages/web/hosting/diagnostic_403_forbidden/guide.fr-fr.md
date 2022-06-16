@@ -73,19 +73,20 @@ Si votre hébergement a été fermé il y a moins de deux semaines et qu'il cont
 
 > [!warning]
 >
-> Toutefois, la restauration seule ne suffira pas à corriger les failles de sécurité qui ont été exploitées pour pirater votre site. Il vous sera nécessaire d’analyser les [logs "web"](../hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) de votre hébergement pour identifier ces failles de sécurité ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin de réaliser un audit de sécurité de vos solutions.
+> La restauration seule de votre espace de stockage ne suffira pas à corriger de potentielles failles de sécurité préalablement présentes sur votre site.
+> Pour identifier ces failles de sécurité, vous pouvez analyser les [« logs web »](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs) de votre hébergement ou faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin de réaliser un audit de sécurité de vos solutions.
 >
 
 #### Cas n°2 : votre hébergement a été désactivé il y a plus de deux semaines
 
 Si votre hébergement a été fermé il y a plus de deux semaines, contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) afin d'effectuer un audit de sécurité de vos solutions. 
 
+### Étape 4 : réactiver votre hébergement web
+
 > [!warning]
 >
 > Nous vous recommandons de réaliser un audit de sécurité **avant** la réouverture de votre hébergement. Tout envoi de code malveillant depuis votre hébergement peut engager votre responsabilité juridique.
 >
-
-### Étape 4 : réactiver votre hébergement web
 
 #### Réactiver votre hébergement avec FileZilla
 
