@@ -18,7 +18,7 @@ order: 04
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-> Certaines options comme l'utilisation de la compression ou de la déduplication nécessitent des licences particulières fournies par Nutanix au travers d'OVHcloud, nous vous invitons à vous renseigner auprès du service commercial OVHcloud pour plus d'informations.
+
 
 ## Prérequis
 
@@ -201,16 +201,16 @@ Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.act
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visible sur le site d'origines.
+La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
-### Basculement des machine virtuelles en cas de désastre
+### Basculement des machine virtuelles en cas de sinistre
 
 Il est possible d'activer les machines virtuelles sur le site de destination si un problème survient sur le site d'origine c'est ce que l'on nomme la récupération après sinistre.
 
 > [!warning]
-> L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone il est possible d'avoir une perte de données au maximum d'une heure. C'est ce que l'on nomme le RPO (Recovery Point Objective).
+> L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone il est possible d'avoir une perte de données d'au maximum d'une heure. C'est ce que l'on nomme le RPO (Recovery Point Objective).
 
 Connectez-vous sur le site distant avec **Prism Element**.
 
