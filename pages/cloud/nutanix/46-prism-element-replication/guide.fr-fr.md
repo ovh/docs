@@ -159,7 +159,7 @@ Cliquez sur `New Schedule`{.action} pour configurer la planification.
 
 Modifier ces options pour **Configure your local schedule** :
 
-* Saisissez **Repeat every** `1 hour` dans **Configure your local schedule**.
+* Saisissez **Repeat every** `1 hour`. 
 
 Ensuite saisissez les règles de rétentions dans **Retention policy** :
 
