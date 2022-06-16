@@ -18,8 +18,7 @@ Disposer d'une ou plusieurs des offres suivantes:
 
 - Un [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) comprenant des bases de données.
 - Un pack de base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
-- Un serveur [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/).
-- Un serveur [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Un serveur [CloudDB](https://www.ovh.com/fr/cloud-databases/).
 
 ## En pratique
 

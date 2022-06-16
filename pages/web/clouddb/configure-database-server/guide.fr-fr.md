@@ -10,13 +10,13 @@ order: 6
 
 ## Objectif
 
-Les serveurs de bases de données Cloud Databases vous donnent la possibilité d'agir sur les paramètres globaux de votre serveur. Vous pouvez également visualiser l'activité de votre serveur. 
+Les serveurs de bases de données CloudDB vous donnent la possibilité d'agir sur les paramètres globaux de votre serveur. Vous pouvez également visualiser l'activité de votre serveur. 
 
 **Découvrez comment configurer et optimiser votre serveur de bases de données.**
 
 ## Prérequis
 
-- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [offre CloudDB](https://www.ovh.com/fr/cloud-databases){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -39,7 +39,7 @@ Vous pouvez y consulter les informations importantes concernant votre instance S
 
 ![Informations générales](images/privatesql01-General-information.png){.thumbnail}
 
-### Autoriser une adresse IP ( Seulement sur l'offre Cloud Databases )
+### Autoriser une adresse IP
 
 Afin que l’accès à votre instance CloudDB fonctionne, il est obligatoire d'indiquer les adresses IP ou plages d'IP pouvant se connecter à vos bases de données.
 
