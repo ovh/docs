@@ -1,7 +1,7 @@
 ---
-title: Démarrage en mode reprise d'activité
-slug: cluster-failover
-excerpt: "Plan d'action pour redémarrer sur un autre site en cas de problème sur le site d'origine"
+title: Interconnexion de clusters au travers de vRACK
+slug: nutanix-vrack-interconnection
+excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRACK d'OVHCLOUD"
 section: Plan de reprise d'activité
 order: 03
 ---

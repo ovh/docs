@@ -3,7 +3,7 @@ title: Interconnexion IPSEC entre deux sites
 slug: ipsec-interconnection
 excerpt: "Mise en place d'un VPN IPSEC entre deux clusters Nutanix"
 section: Plan de reprise d'activité
-order: 03
+order: 02
 ---
 
 **Dernière mise à jour le 20/05/2022**

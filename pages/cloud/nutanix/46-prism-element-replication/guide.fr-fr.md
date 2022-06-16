@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 03
 ---
 
-**Dernière mise à jour le 15/06/2022**
+**Dernière mise à jour le 16/06/2022**
 
 ## Objectif
 
@@ -55,11 +55,7 @@ Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
 ![01 Create Remote Site From FRANCE02](images/01-create-remote-site-from-france02.png){.thumbnail}
 
-Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant.
-
-![01 Create Remote Site From FRANCE03](images/01-create-remote-site-from-france03.png){.thumbnail}
-
-Choisissez `Physical Cluster`{.action} dans le sous menu.
+Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant et hhoisissez `Physical Cluster`{.action} dans le sous menu.
 
 ![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
 
@@ -101,11 +97,7 @@ Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
 ![02 Create Remote Site From CANADA02](images/02-create-remote-site-from-canada02.png){.thumbnail}
 
-Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant
-
-![02 Create Remote Site From CANADA03](images/02-create-remote-site-from-canada03.png){.thumbnail}
-
-Choisissez `Physical Cluster`{.action} dans le sous menu.
+Cliquez `+ Remote Site`{.action} à droite de l'écran pour rajouter un site distant et choisissez `Physical Cluster`{.action} dans le sous menu.
 
 ![02 Create Remote Site From CANADA04](images/02-create-remote-site-from-canada04.png){.thumbnail}
 
