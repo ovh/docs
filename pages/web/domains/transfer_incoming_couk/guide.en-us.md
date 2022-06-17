@@ -6,7 +6,7 @@ section: Transfer
 order: 4
 ---
 
-**Last updated 22th June 2020**
+**Last updated 17th June 2022**
 
 ## Objective
 
