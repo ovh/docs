@@ -163,7 +163,6 @@ False
 
 Die Migration erfolgt nach diesem Prozess:
 
-- GRA9 und SBG7 werden sich den anderen Regionen anschließen, indem "port security" auf **disabled** gesetzt wird.
 - Die Firewall-Regeln für neue Ports werden nicht angewendet, bis Sie "port security" für den neuen Port aktiviert haben. Bei bestehenden Ports ändert sich nichts.
 - Die OpenStack-Regionen werden zur Stein-Version übergehen.
 - Die OpenStack Regionen in Stein Version werden auf eine neue Version von OpenVSwitch umgestellt.
