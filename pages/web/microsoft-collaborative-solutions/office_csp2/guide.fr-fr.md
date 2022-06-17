@@ -25,9 +25,9 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de d
 > Dès le 01/07/2022, tous les services Office 365 revendeurs (CSP2) qui ne disposeront pas d’un MPN ID inscrit au programme « CSP revendeur indirect » seront désactivés par Microsoft. Ce dernier est désormais obligatoire pour toutes nouvelles souscriptions.
 >
 
-Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si vous êtes éligible aux conditions de Microsoft) à l’aide de cette [documentation](https://docs.microsoft.com/fr-fr/partner-center/mpn-create-a-partner-center-account) Microsoft (non gérée par OVHcloud).
+Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si vous êtes éligible aux conditions de Microsoft) à l’aide de cette [documentation](https://docs.microsoft.com/fr-fr/partner-center/mpn-create-a-partner-center-account){.external} Microsoft (non gérée par OVHcloud).
 
-Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller) Microsoft (non gérée également par OVHcloud).
+Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external} Microsoft (non gérée également par OVHcloud).
 
 
 
