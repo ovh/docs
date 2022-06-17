@@ -29,7 +29,10 @@ Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si 
 
 Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external} Microsoft (non gérée également par OVHcloud).
 
-
+> [!primary]
+>
+> Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via notre espace client. Ce cashback est soumis à des règles définies par Microsoft en fonction des volumes d'abonnements que vous générerez.
+>
 
 ## En pratique
 
@@ -37,13 +40,11 @@ Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à
 
 Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Une fois connecté, sélectionnez `Sunrise`{.action} dans le bandeau supérieur puis cliquez sur `Office 365 Revendeurs`{.action}.
 
+- Saisissez votre MPN ID préalablement créé auprès de Microsoft.
 - Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
-
 > [!primary]
->
-> - Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft`{.action}.
->
-> - Si vous disposez d'un Microsoft Partner ID, vous pouvez le renseigner depuis cette même interface. Ceci vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via notre espace client. Ce cashback est soumis à des règles définies par Microsoft en fonction des volumes d'abonnements que vous générerez.
+> 
+> Vous pouvez également définir un **Sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la petite case prévue à cet effet (sous réserve des noms disponibles).
 >
 
 - Dans la liste en dessous, indiquez les licences que vous souhaitez ajouter à votre groupe.
@@ -56,6 +57,27 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
+
+> [!primary]
+> 
+> ### Cas particulier des délégations :
+>
+> - Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft`{.action} et préciser avec exactitude le **Tenant Office 365 existant** que vous pouvez retrouver sur votre portail Microsoft ainsi que votre MPN ID.
+> 
+> - Si vous passez déjà par un autre fournisseur qu'OVHcloud pour votre office 365 revendeurs, vous pourrez également en déléguer l'administration à OVHcloud mais vous devrez rompre au préalable le lien avec votre ancien fournisseur.
+> 
+> - Une double validation sera nécessaire pour finaliser l'apparition du tenant dans votre espace client OVHcloud.
+> 
+> - Une fois les licences souscrites sur le tenant délégué, ces dernières seront disponibles sur votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Vous devrez alors remplacer vos anciennes licences dans votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external} par celles d'OVHcloud puis résilier vos anciennes licences afin de ne pas continuer à les payer en double.
+> 
+> - Rassurez-vous, si vous disposez de licences indisponibles à l'achat chez OVHcloud, vous pouvez tout à fait conserver ces licences actives chez Microsoft.
+>
+
+> [!warning]
+>
+> La bascule d'un tenant Office 365 revendeurs d'un identifiant client OVHcloud à un autre est indisponible. Ceci du fait qu'il s'agit de produits sous licences.
+> 
+
 
 ### Gérer votre service Office 365 Revendeur
 
