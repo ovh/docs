@@ -18,20 +18,22 @@ Office 365 Revendeurs (CSP2) est un service vous permettant de bénéficier de d
 
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d’un MPN ID (Microsoft Partner Network IDentifiant) 
-- Être inscrit au programme CSP (Cloud Solution Provider) de Microsoft en tant que revendeur indirect dans la région où vous exercez (exemple « UE » pour l’Europe)
+- Être inscrit au programme CSP (Cloud Solution Provider) de Microsoft en tant que revendeur indirect dans la région où vous exercez (par exemple : « UE » pour l’Europe)
 
 > [!warning]
 >
-> Dès le 01/07/2022, tous les services Office 365 revendeurs (CSP2) qui ne disposeront pas d’un MPN ID inscrit au programme « CSP revendeur indirect » seront désactivés par Microsoft. Ce dernier est désormais obligatoire pour toutes nouvelles souscriptions.
+> A partir du 01/07/2022, tous les services Office 365 revendeurs (CSP2) qui ne disposeront pas d’un MPN ID inscrit au programme « CSP revendeur indirect » seront désactivés par Microsoft.
+>
+> Disposer d'un MPN ID est désormais obligatoire pour toute nouvelle souscription.
 >
 
-Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si vous êtes éligible aux conditions de Microsoft) à l’aide de cette [documentation](https://docs.microsoft.com/fr-fr/partner-center/mpn-create-a-partner-center-account){.external} Microsoft (non gérée par OVHcloud).
+Si vous ne disposez pas encore d’un MPN ID, vous pouvez vous en créer un (si vous êtes éligible aux conditions de Microsoft) en suivant la [documentation officielle de Microsoft](https://docs.microsoft.com/fr-fr/partner-center/mpn-create-a-partner-center-account){.external}.
 
-Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external} Microsoft (non gérée également par OVHcloud).
+Pour vous inscrire ensuite en tant que revendeur indirect, nous vous invitons à consulter cette autre [documentation officielle de Microsoft](https://docs.microsoft.com/fr-fr/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
-> [!primary]
+> [!success]
 >
-> Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via notre espace client. Ce cashback est soumis à des règles définies par Microsoft en fonction des volumes d'abonnements que vous générerez.
+> Le MPN ID vous permettra d'obtenir un cashback sur les abonnements que vous commanderez via l'espace client OVHcloud. Ce cashback est soumis à des règles définies par Microsoft, en fonction des volumes d'abonnements que vous générerez.
 >
 
 ## En pratique
@@ -42,13 +44,13 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 
 - Saisissez votre MPN ID préalablement créé auprès de Microsoft.
 - Complétez les informations de contact du client final, celles-ci sont demandées pour définir le gestionnaire du groupe de licences (Tenant) que vous allez créer.
+
 > [!primary]
 > 
-> Vous pouvez également définir un **Sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la petite case prévue à cet effet (sous réserve des noms disponibles).
+> Vous pouvez également définir un **sous-domaine personnalisé** lors de la création d'une nouvelle plateforme en cochant la petite case prévue à cet effet (sous réserve des noms disponibles).
 >
 
 - Dans la liste en dessous, indiquez les licences que vous souhaitez ajouter à votre groupe.
-
 - Cliquez sur `Commander`{.action} pour finaliser votre commande.
 
 > [!warning]
@@ -58,24 +60,20 @@ Pour commander un service Office 365 Revendeurs, rendez-vous dans votre [espace 
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-> [!primary]
-> 
-> ### Cas particulier des délégations :
->
-> - Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft`{.action} et préciser avec exactitude le **Tenant Office 365 existant** que vous pouvez retrouver sur votre portail Microsoft ainsi que votre MPN ID.
-> 
-> - Si vous passez déjà par un autre fournisseur qu'OVHcloud pour votre office 365 revendeurs, vous pourrez également en déléguer l'administration à OVHcloud mais vous devrez rompre au préalable le lien avec votre ancien fournisseur.
-> 
-> - Une double validation sera nécessaire pour finaliser l'apparition du tenant dans votre espace client OVHcloud.
-> 
-> - Une fois les licences souscrites sur le tenant délégué, ces dernières seront disponibles sur votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Vous devrez alors remplacer vos anciennes licences dans votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external} par celles d'OVHcloud puis résilier vos anciennes licences afin de ne pas continuer à les payer en double.
-> 
-> - Rassurez-vous, si vous disposez de licences indisponibles à l'achat chez OVHcloud, vous pouvez tout à fait conserver ces licences actives chez Microsoft.
->
+#### Cas particulier des délégations
+
+- Si vous disposez déjà d'un service Office 365 CSP2 chez Microsoft, vous avez la possibilité d'en déléguer l'administration à OVHcloud. Vous pourrez ainsi ajouter des abonnements supplémentaires directement depuis votre espace client OVHcloud. Lors de la commande d'un nouveau groupe de licences, vous devrez alors choisir `Délégation d'une plateforme créée au préalable chez Microsoft` et préciser avec exactitude le **Tenant Office 365 existant** que vous pouvez retrouver sur votre portail Microsoft, ainsi que votre MPN ID.
+
+- Si vous passez déjà par un autre fournisseur qu'OVHcloud pour votre Office 365 revendeurs, vous pourrez également en déléguer l'administration à OVHcloud mais vous devrez rompre au préalable le lien avec votre ancien fournisseur.
+
+- Une double validation sera nécessaire pour finaliser l'apparition du tenant dans votre espace client OVHcloud.
+
+- Une fois les licences souscrites sur le tenant délégué, ces dernières seront disponibles sur votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Vous devrez alors remplacer vos anciennes licences dans votre [portail d'administration Microsoft](https://portal.office.com/Admin/Default.aspx){.external} par les licences OVHcloud puis résilier vos anciennes licences afin de ne pas continuer à les payer en double.
+
+- Rassurez-vous, si vous disposez de licences indisponibles à l'achat chez OVHcloud, vous pouvez tout à fait conserver ces licences actives chez Microsoft.
 
 > [!warning]
->
-> La bascule d'un tenant Office 365 revendeurs d'un identifiant client OVHcloud à un autre est indisponible. Ceci du fait qu'il s'agit de produits sous licences.
+> Etant donné qu'il s'agit de produits sous licences, il n'est pas possible de basculer un tenant Office 365 revendeurs d'un idenfiant client OVHcloud à un autre.
 > 
 
 
@@ -87,7 +85,7 @@ Pour cela, rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauch
 
 Les informations suivantes apparaissent:
 
-- **Nom interne du service** : indique le nom de votre service. Cela n'est visible que depuis votre espace client. Cela correspond aussi au "Tenant" (ce qui tiens votre groupe de licences) chez Microsoft.
+- **Nom interne du service** : indique le nom de votre service. Il n'est visible que depuis votre espace client. Il correspond aussi au *Tenant* (ce qui contient votre groupe de licences) chez Microsoft.
 - **Nom d'affichage du service** : permet de personnaliser le nom d'affichage du service dans votre espace client.
 - **Créé le** : indique la date de création du service.
 - **Portail d'administration Microsoft** : lien du portail Office qui permet d'administrer vos abonnements.
