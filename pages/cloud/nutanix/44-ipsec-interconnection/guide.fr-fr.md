@@ -26,15 +26,18 @@ Remplacer la paserelle fournie par défaut lors de la création du cluster Nutan
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos cluster via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
+- Posseder un plan IP différent par cluster.
 
 ## Présentation technique
 
-Lors de la configuration du cluster une machine virtuelle est créé et se nomme OVHgateway elle ne permet l'accès à INTERNET qu'en sortie pour le réseau d'administration du cluster Nutanix. Cette machine virtuelle utilise deux cartes réseaux une sur le réseau privé du cluster par défaut 192.168.0.254 avec un masque à 255.255.255.0 et un autre avec une adresse publique fournie par OVHcloud que l'on retrouve dans l'espace client D'OVHcloud en tant qu'**IP failover** le masque de cette adresse est /30.
+Nous allons remplacer la gateway par défaut qui ne permet que l'accès INTERNET sur le réseaux d'aministrateur du cluster par
 
-Nous allons arrêter la machine virtuelle et la remplacer par une machine virtuelle sous PFSENSE qui servira à la fois de passerelle mais aussi pour la configuration d'un VPN IPSEC
+
+
 
 ## En pratique
 
+Connectez vous à Prism Central
 
 
 
