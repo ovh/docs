@@ -28,7 +28,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 ## Wymagania początkowe
 
-- Twoja domena nie może być usunięta ani usunięta.
+- Twoja domena nie może być **odkupienia** ani usunięta.
 - Domena nie może zostać zablokowana u Twojego operatora. 
 - Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/){.external} domeny.
 - Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela.
