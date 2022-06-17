@@ -87,7 +87,7 @@ Votre site sera de nouveau accessible sous 48 heures maximum.
 
 > [!warning]
 >
-> Dans cette situation, contactez votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/) avant toute manipulation.
+> Dans cette situation, contactez l'hébergeur de votre Zone DNS, votre webmaster ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/) avant toute manipulation.
 >
 > Il est en effet possible que les serveurs DNS utilisés par votre nom de domaine soient fonctionnels et que le problème d'accès à votre site soit lié à une entrée manquante ou erronée dans la [zone DNS](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns). Toute modification des serveurs DNS dans cette situation peut rendre vos adresses e-mails ou d'autres applications en ligne indisponibles.
 >

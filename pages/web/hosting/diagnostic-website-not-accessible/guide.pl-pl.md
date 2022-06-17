@@ -91,7 +91,7 @@ Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
 > [!warning]
 >
-> W takiej sytuacji przed podjęciem jakichkolwiek działań skontaktuj się z webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+> W takiej sytuacji przed przystąpieniem do jakichkolwiek czynności, należy skontaktować się z dostawcą usług hostowanych w strefie DNS, webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 >
 > Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >

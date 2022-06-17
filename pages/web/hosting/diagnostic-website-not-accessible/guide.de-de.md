@@ -89,7 +89,7 @@ Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 
 > [!warning]
 >
-> Kontaktieren Sie in diesem Fall Ihren Webmaster oder einen qualifizierten [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/), bevor Sie Änderungen vornehmen.
+> Kontaktieren Sie in diesem Fall den Hoster Ihrer DNS Zone, Ihren Webmaster oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/), bevor Sie die Änderung vornehmen.
 >
 > Es ist möglich, dass die von Ihrer Domain verwendeten DNS Server funktionieren und dass das Problem beim Zugriff auf Ihre Website auf einen fehlenden oder fehlerhaften Eintrag in der [DNS Zone](../../domains/webhosting_bearbeiten_der_dns_zone/#dns-konzept-verstehen) zurückzuführen ist. Jede Änderung der DNS Server kann dazu führen, dass Ihre E-Mail Adressen oder andere Online-Anwendungen nicht mehr verfügbar sind.
 >

@@ -34,7 +34,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 
 ## Requisitos
 
-- Ter a gestão dos servidores e da [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) do seu domínio.
+- Ter a gestão dos servidores e da [Zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns) do seu domínio.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
@@ -91,7 +91,7 @@ O seu website estará disponível num prazo máximo de 48 horas.
 
 > [!warning]
 >
-> Nesta situação, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/) antes de qualquer manipulação.
+> Nesta situação, contacte o alojador da sua Zona DNS, o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/) antes de qualquer manipulação.
 >
 > É possível que os servidores DNS utilizados pelo seu domínio estejam funcionais e que o problema de acesso ao seu site esteja associado a uma entrada inexistente ou errada na [zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/#compreender-a-nocao-de-dns). Se alterar os servidores DNS nesta situação, os seus endereços de e-mail ou outras aplicações online poderão ficar indisponíveis.
 >

@@ -83,7 +83,7 @@ Nous vous conseillons de demander l'assistance d'un [webmaster](https://partners
 ## Cas 1: le piratage a lieu dans le delai de restauration possible (sauvegarde OVHcloud)
 
 ### Restauration du site
-Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVHcloud propose un historique de 3 semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
+Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVHcloud propose un historique de deux semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
 
 
 
