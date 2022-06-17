@@ -65,7 +65,7 @@ Pour cela, rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauch
 
 Les informations suivantes apparaissent:
 
-- **Nom interne du service** : indique le nom de votre service. Cela n'est visible que depuis votre espace client.
+- **Nom interne du service** : indique le nom de votre service. Cela n'est visible que depuis votre espace client. Cela correspond aussi au "Tenant" (ce qui tiens votre groupe de licences) chez Microsoft.
 - **Nom d'affichage du service** : permet de personnaliser le nom d'affichage du service dans votre espace client.
 - **Créé le** : indique la date de création du service.
 - **Portail d'administration Microsoft** : lien du portail Office qui permet d'administrer vos abonnements.
