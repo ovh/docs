@@ -22,10 +22,14 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 
 ## Requirements
 
-- Your domain must not be in the Redemption period or in Pending Delete status.
+- Your domain must not be in the **Redemption** period or in Pending Delete status.
 - The domain must not be blocked by your registrar.
 - Owner contact information must be up to date in the [Whois](https://www.nominet.uk/whois){.external} data of the domain.
 - You are able to obtain the authorisation code that will be sent to the domain owner's email address.
+
+> [!primary]
+>
+> The **redemption** period is a maximum of 90 days from the day the domain name expires. In the case of a transfer, this period allows you to restore the domain and thus unblock the ability to transfer it.
 
 ## Extensions in question
 

@@ -24,10 +24,14 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 ## Prérequis
 
-- Votre domaine ne doit pas être en période de rédemption ou de suppression.
+- Votre domaine ne doit pas être en période de **rédemption** ou de suppression.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
 - Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/){.external} du domaine.
-- Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
+- Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire.
+
+> [!primary]
+>
+> La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le domaine et ainsi débloquer la possibilité de le transférer.
 
 ## Extensions concernées
 - .co.uk

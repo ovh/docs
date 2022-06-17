@@ -31,7 +31,11 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 - Twoja domena nie może być usunięta ani usunięta.
 - Domena nie może zostać zablokowana u Twojego operatora. 
 - Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/){.external} domeny.
-- Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela. 
+- Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela.
+
+> [!primary]
+>
+> Okres **odkupienia** wynosi maksymalnie 90 dni od dnia wygaśnięcia domeny. W przypadku transferu ten czas pozwala na przywrócenie domeny i odblokowanie możliwości jej transferu.
 
 ## Rozszerzenia
 - .co.uk

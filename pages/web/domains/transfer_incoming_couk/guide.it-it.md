@@ -28,10 +28,14 @@ Il trasferimento di un dominio.uk (o assimilato) richiede una procedura specific
 
 ## Prerequisiti
 
-- Il tuo dominio non deve essere in fase di redemption o di eliminazione.
+- Il tuo dominio non deve essere in fase di **redemption** o di eliminazione.
 - Il dominio non deve essere bloccato presso il tuo registrar. 
 - Le coordinate del proprietario devono essere ben aggiornate nel [Whois](https://www.nominet.uk/whois/){.external} del dominio.
-- Riceverai il codice di autorizzazione che verrà inviato all'indirizzo email del proprietario. 
+- Riceverai il codice di autorizzazione che verrà inviato all'indirizzo email del proprietario.
+
+> [!primary]
+>
+> Il periodo di **redemption** è di massimo 90 giorni a partire dalla data di scadenza del dominio. In caso di trasferimento, questo periodo permette di ripristinare il dominio e sbloccare la possibilità di trasferirlo.
 
 ## Estensioni interessate
 

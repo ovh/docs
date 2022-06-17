@@ -28,10 +28,14 @@ La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento 
 
 ## Requisitos
 
-- El dominio no debe estar en período de redención o de eliminación.
+- El dominio no debe estar en período de **redención** o de eliminación.
 - El dominio no debe ser bloqueado en su registrador.
 - Los datos del propietario deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/){.external} del dominio.
 - Deberá obtener el código de autorización que se enviará a la dirección de correo electrónico del propietario.
+
+> [!primary]
+>
+> El período de **redención** será de un máximo de 90 días a partir del día de expiración del dominio. En el caso de una transferencia, este período permite restaurar el dominio y así desbloquear la posibilidad de transferirlo.
 
 ## Extensiones afectadas
 - .co.uk

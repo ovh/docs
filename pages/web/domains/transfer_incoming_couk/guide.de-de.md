@@ -27,10 +27,14 @@ Für den Transfer einer .uk-Domain (oder einer ähnlichen Domain) ist ein spezif
 
 ## Voraussetzungen
 
-- Ihre Domain darf sich nicht in der Redemption- oder Löschphase befinden.
+- Ihre Domain darf sich nicht in der **Redemption**- oder Löschphase befinden.
 - Die Domain darf nicht bei Ihrem Registrar blockiert werden. 
 - Die Angaben des Inhabers müssen im Whois der [Domain](https://www.nominet.uk/whois/){.external} aktuell sein.
 - Sie erhalten den Autorisierungscode, der an die E-Mail-Adresse des Inhabers versandt wird. 
+
+> [!primary]
+>
+> Der Zeitraum von **Redemption** beträgt maximal 90 Tage ab dem Ablaufdatum der Domain. Im Falle eines Transfers erlaubt dieser Zeitraum die Wiederherstellung der Domain und entsperrt so die Möglichkeit, diese zu transferieren.
 
 ## Betroffene Endungen
 
