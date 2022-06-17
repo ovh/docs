@@ -164,4 +164,4 @@ Na nota de encomenda que aparece, selecione o método de pagamento à sua escolh
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en>
+Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

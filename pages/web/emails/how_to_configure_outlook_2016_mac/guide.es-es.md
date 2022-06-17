@@ -29,8 +29,6 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 > [!primary]
 >
-> Si utiliza una versión anterior de Outlook para Mac, consulte nuestra guía [Configurar una cuenta de correo en Outlook 2011 para Mac](https://docs.ovh.com/es/emails/web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}.
->
 > Si utiliza Outlook 2016 para Windows, consulte nuestra guía [Configurar una cuenta de correo electrónico en Outlook 2016 para Windows](https://docs.ovh.com/es/emails/configuracion-outlook-2016/){.external}.
 >
 

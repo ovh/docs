@@ -29,8 +29,6 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 
 > [!primary]
 >
-> Vous utilisez une version antérieure d'Outlook pour Mac ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2011 pour Mac](../mail-mutualise-guide-configuration-outlook-2011-sur-mac/){.external}.
->
 > Vous utilisez Outlook 2016 pour Windows ? Consultez notre documentation : [Configurer son adresse e-mail sur Outlook 2016 pour Windows](../configuration-outlook-2016/){.external}.
 >
 

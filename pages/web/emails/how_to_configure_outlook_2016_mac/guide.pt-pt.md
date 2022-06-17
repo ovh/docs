@@ -28,8 +28,6 @@ Os endereços de e-mail do serviço MX Plan podem ser configurados num software 
 
 > [!primary]
 >
-> Se utiliza uma versão anterior do Outlook para Mac, consulte o nosso manual [Configuração do Outlook 2011 no Mac](https://docs.ovh.com/pt/emails/mail_partilhado_guia_de_configuracao_do_outlook_2011_no_mac/){.external}.
->
 > Se utilizar o Outlook 2016 para Windows, consulte o nosso manual [Configurar um endereço de e-mail no Outlook 2016 para Windows](../configuracao-outlook-2016/){.external}.
 >
 
