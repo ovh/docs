@@ -15,7 +15,7 @@ Distributed under the GNU GPL licence, rysnc (short for “remote synchronisatio
 
 > [!warning]
 >
-This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation. If you experience any difficulties carrying out these operations, please get in touch with a specialised service provider and/or discuss your issues with our community on <https://community.ovh.com/en/>. OVHcloud cannot assist you in this regard.
+This guide will show you how to use one or more OVHcloud solutions with external tools, and the changes you need to make in specific contexts. You may need to adapt the instructions according to your situation. If you experience any difficulties carrying out these operations, please get in touch with a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss your issues with our community on <https://community.ovh.com/en/>. OVHcloud cannot assist you in this regard.
 >
 
 ## Requirements
