@@ -13,9 +13,9 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 > [!primary]
 > 
-> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
+> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non-contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons d'effectuer régulièrement vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données.
 > 
-> Lorsque vous effectuerez vos sauvegardes de sécurité, n'oubliez pas non plus de [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
+> Lorsque vous effectuerez une sauvegardes de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de celle-ci. N'hésitez pas à consultez notre guide [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
 > 
 
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
@@ -54,17 +54,17 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 
 > [!warning]
 >
-> Cette méthode de restauration est indisponible dans le cas où votre hébergement a été placé en "maintenance" par nos administrateurs ou que ce dernier ne dispose pas des droits d'accès FTP (droits "chmod") suffisants suite à une action de votre part.
+> Cette méthode de restauration est indisponible dans le cas où votre hébergement a été placé en mode "maintenance" par nos administrateurs ou que ce dernier ne dispose pas des droits d'accès FTP (droits "chmod") faisants suite à une action de votre part.
 > 
 > Effectivement, les droits "chmod" à la racine de votre hébergement doivent être obligatoirement en "705" pour que cela fonctionne.
 > 
 
 > [!primary]
 > 
-> Afin de déterminer si votre site a été placé en mode "maintenance" par nos équipes, je vous invite à vous référer à notre [guide](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external} sur le sujet. 
+> Pour déterminer si votre site a été placé en mode "maintenance", référez-vous à notre guide [Que faire en cas de page « 403 forbidden » ?](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external}. 
 > 
-> En effet, dans ce cas de figure :
-> - Un mail est envoyé au contact "administrateur" de l'hébergement par nos équipes. 
+> Dans ce cas de figure :
+> - Un mail est envoyé au [contact](https://docs.ovh.com/fr/customer/gestion-des-contacts/#acceder-a-la-gestion-des-contacts) "administrateur" de l'hébergement par nos équipes. 
 > - Le statut "maintenance" apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie `Web Cloud`{.action}, en cliquant sur votre service dans la section `Hébergement`{.action} puis sur la page `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page "403 Forbidden".
 >
