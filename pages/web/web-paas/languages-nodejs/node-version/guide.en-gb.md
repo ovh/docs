@@ -36,7 +36,9 @@ including Windows Subsystem for Linux.
 v16.13.2
 ```
 
-2. Add it as a dependency:
+<ol start="2">
+  <li>Add it as a dependency:</li>
+</ol>
 
 
 ```yaml {location=".platform.app.yaml"}
@@ -46,7 +48,9 @@ dependencies:
 ```
 Adding it as a dependency ensures it's cached for future builds.
 
-3. Set the location for the Node.js version using the `N_PREFIX` environment variable:
+<ol start="3">
+  <li>Set the location for the Node.js version using the <code>N_PREFIX</code> environment variable:</li>
+</ol>
 
 
 ```yaml {location=".platform.app.yaml"}
@@ -55,7 +59,9 @@ variables:
         N_PREFIX: /app/.global
 ```
 
-4. Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook):
+<ol start="4">
+  <li>Install the specified version of Node.js in a <a href="../../configuration-app/build/#build-hook"><code>build</code> hook</a>:</li>
+</ol>
 
 
 ```yaml {location=".platform.app.yaml"}
@@ -108,9 +114,7 @@ You can:
 
 - Add it to the build hook to make that version available in the build.
 
-- Control the specific versions to be installed with [environment variables](../../development-variables),
-
-  meaning you can also have different versions in different environments.
+- Control the specific versions to be installed with [environment variables](../../development-variables), meaning you can also have different versions in different environments.
 - Cache `nvm` so you don't need to download it each time.
 
 
