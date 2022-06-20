@@ -68,7 +68,7 @@ Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und 
 
 > [!warning]
 >
-> Für die nachstehenden Aktionen sind Kenntnisse über die von Ihnen verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber der Software oder des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
+> Für die nachstehenden Aktionen sind Kenntnisse über die von Ihnen verwendete Software bzw. das Interface erforderlich. Im Folgenden haben wir einige Informationen zur Vorgehensweise zusammengetragen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber der Software oder des Interface zu kontaktieren. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
 >
 
 #### 2.1 Zugangsrechte nutzen

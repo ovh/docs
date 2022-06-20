@@ -22,7 +22,7 @@ Puede contratar un servidor Minecraft preconstruido o configurarlo usted mismo e
 > [!warning]
 >Esta guía explica cómo utilizar una o más soluciones de OVHcloud con herramientas externas y describe las acciones que deben realizarse en un contexto específico. Es posible que necesite adaptar las instrucciones en función de su caso particular.
 >
->Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un proveedor especializado. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
+>Si necesita ayuda para aplicar las indicaciones, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Para más información, consulte la sección [Más información](#gofurther) de esta guía.
 >
 
 ## Requisitos

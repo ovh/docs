@@ -27,7 +27,7 @@ section: 'Tutorials'
  }
 </style>
 
-**Last updated May 13<sup>th</sup>, 2022.**
+**Last updated June 22<sup>nd</sup>, 2022.**
 
 ## Introduction <a name="introduction"></a>
 
@@ -245,12 +245,12 @@ The output looks similar to the following:
 
 ```text
 NAME                                            CHART VERSION   APP VERSION     DESCRIPTION
-triliovault-operator/k8s-triliovault-operator   2.9.2           2.9.2           K8s-TrilioVault-Operator is an operator designe...
+triliovault-operator/k8s-triliovault-operator   2.9.3           2.9.3           K8s-TrilioVault-Operator is an operator designe...
 ```
 
 The chart of interest is `triliovault-operator/k8s-triliovault-operator`, which will install TrilioVault for Kubernetes Operator on the cluster. You can run `helm install` command to install the Operator which will also install the Triliovault Manager CRD. Install TrilioVault for Kubernetes Operator using `Helm`:
 
-TVK allows user to alter the values to be used by TVK Operator installation using `--set` option. Check the detailed instructions in the [One-click Installation](https://docs.trilio.io/kubernetes/use-triliovault/installing-triliovault#upstream-kubernetes) page.
+TVK allows user to alter the values to be used by TVK Operator installation using `--set` option. Check the detailed instructions in the [One-click Installation](https://docs.trilio.io/kubernetes/getting-started-3/getting-started/install-and-configure/upstream-kubernetes) page.
 
 ```shell
 helm install triliovault-operator triliovault-operator/k8s-triliovault-operator --namespace tvk --create-namespace
@@ -266,8 +266,8 @@ The output looks similar to the following (`STATUS` column should display "deplo
 
 ```text
 NAME                    NAMESPACE       REVISION        UPDATED                                 STATUS          CHART                           APP VERSION
-triliovault-manager-tvk tvk             1               2022-01-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.9.2           2.9.2
-triliovault-operator    tvk             1               2022-01-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.9.2  2.9.2
+triliovault-manager-tvk tvk             1               2022-06-21 07:15:03.681891176 +0000 UTC deployed        k8s-triliovault-2.9.3           2.9.3
+triliovault-operator    tvk             1               2022-06-21 07:13:18.731129339 +0000 UTC deployed        k8s-triliovault-operator-2.9.3  2.9.3
 ```
 
 Next, verify that TrilioVault-Operator and Triliovault-Manager application is up and running:
@@ -298,17 +298,17 @@ kubectl get crd | grep trilio
 The output looks similar to the following:
 
 ```text
-backupplans.triliovault.trilio.io                     2021-09-29T07:39:38Z
-backups.triliovault.trilio.io                         2021-09-29T07:39:38Z
-clusterbackupplans.triliovault.trilio.io              2021-09-29T07:39:39Z
-clusterbackups.triliovault.trilio.io                  2021-09-29T07:39:39Z
-clusterrestores.triliovault.trilio.io                 2021-09-29T07:39:39Z
-hooks.triliovault.trilio.io                           2021-09-29T07:39:39Z
-licenses.triliovault.trilio.io                        2021-09-29T07:39:39Z
-policies.triliovault.trilio.io                        2021-09-29T07:39:40Z
-restores.triliovault.trilio.io                        2021-09-29T07:39:40Z
-targets.triliovault.trilio.io                         2021-09-29T07:39:40Z
-triliovaultmanagers.triliovault.trilio.io             2021-09-29T07:38:30Z
+backupplans.triliovault.trilio.io                     2022-06-21T07:39:38Z
+backups.triliovault.trilio.io                         2022-06-21T07:39:38Z
+clusterbackupplans.triliovault.trilio.io              2022-06-21T07:39:39Z
+clusterbackups.triliovault.trilio.io                  2022-06-21T07:39:39Z
+clusterrestores.triliovault.trilio.io                 2022-06-21T07:39:39Z
+hooks.triliovault.trilio.io                           2022-06-21T07:39:39Z
+licenses.triliovault.trilio.io                        2022-06-21T07:39:39Z
+policies.triliovault.trilio.io                        2022-06-21T07:39:40Z
+restores.triliovault.trilio.io                        2022-06-21T07:39:40Z
+targets.triliovault.trilio.io                         2022-06-21T07:39:40Z
+triliovaultmanagers.triliovault.trilio.io             2022-06-21T07:38:30Z
 ```
 
 You can also check if the TVM Custom Resource is created.
@@ -321,7 +321,7 @@ The output looks similar to the following:
 
 ```text
 NAME                  TRILIOVAULT-VERSION   SCOPE     STATUS     RESTORE-NAMESPACES
-triliovault-manager   2.9.2                 Cluster   Deployed
+triliovault-manager   2.9.3                 Cluster   Deployed
 ```
 
 If the output looks like above, you installed TVK successfully. Next, you will learn how to check license type and validity, as well as how to renew.
@@ -350,7 +350,7 @@ The output looks similar to (notice the `STATUS` which should be "Active", as we
 
 ```text
 NAMESPACE   NAME             STATUS   MESSAGE                                   CURRENT NODE COUNT   GRACE PERIOD END TIME   EDITION   CAPACITY   EXPIRATION TIME        MAX NODES
-tvk         trilio-license   Active   Cluster License Activated successfully.   3                                            Basic     500         2022-12-22T00:00:00Z   3
+tvk         trilio-license   Active   Cluster License Activated successfully.   3                                            Basic     500        2027-06-21T00:00:00Z   3
 ```
 The license is managed via a special `CRD`, namely the `License` object. You can inspect it by running below command:
 
@@ -367,11 +367,11 @@ Annotations:  generation: 1
               triliovault.trilio.io/creator: kubernetes-admin
               triliovault.trilio.io/instance-id: 46188ee1-8ce1-4c45-96fa-c262f2214ced
               triliovault.trilio.io/updater:
-                [{"username":"system:serviceaccount:tvk:k8s-triliovault","lastUpdatedTimestamp":"2021-12-21T10:06:59.796280418Z"}]
+                [{"username":"system:serviceaccount:tvk:k8s-triliovault","lastUpdatedTimestamp":"2022-06-21T10:06:59.796280418Z"}]
 API Version:  triliovault.trilio.io/v1
 Kind:         License
 Metadata:
-  Creation Timestamp:  2022-05-13T10:56:14Z
+  Creation Timestamp:  2022-06-21T10:56:14Z
 ...
   Current Node Count:  3
   Max Nodes:           3
@@ -380,19 +380,19 @@ Metadata:
     Active:                        true
     Capacity:                      500
     Company:                       OVHCloud License For Users
-    Creation Timestamp:            2027-05-17T00:00:00Z
+    Creation Timestamp:            2022-06-21T00:00:00Z
     Edition:                       Basic
-    Expiration Timestamp:          2022-12-22T00:00:00Z
+    Expiration Timestamp:          2027-06-21T00:00:00Z
     Kube UID:                      46188ee1-8ce1-4c45-96fa-c262f2214ced
     License ID:                    TVAULT-4ddf3f72-d2ab-11ec-9a22-4b4849af53ee
-    Maintenance Expiry Timestamp:  2027-05-17T00:00:00Z
+    Maintenance Expiry Timestamp:  2027-06-21T00:00:00Z
     Number Of Users:               -1
-    Purchase Timestamp:            2022-05-13T00:00:00Z
+    Purchase Timestamp:            2022-06-21T00:00:00Z
     Scope:                         Cluster
 ...
 ```
 
-The above output will also tell you when the license is going to expire in the `Expiration Timestamp` field, and the `Scope` (`Cluster` based in this case). You can opt for a cluster wide license type, or for a namespace based license. More details can be found on the [Trilio Licensing](https://docs.trilio.io/kubernetes/overview/licensing) documentation page.
+The above output will also tell you when the license is going to expire in the `Expiration Timestamp` field, and the `Scope` (`Cluster` based in this case). You can opt for a cluster wide license type, or for a namespace based license. More details can be found on the [Trilio Licensing](https://docs.trilio.io/kubernetes/getting-started-3/licensing) documentation page.
 
 #### Renewing TVK Application License <a name="renewing-tvk-application-license"></a>
 
@@ -556,9 +556,9 @@ The output looks similar to (notice the exception as an example):
 
 ```text
 ...
-INFO:root:2021-11-24 09:06:50.595166: waiting for mount operation to complete.
-INFO:root:2021-11-24 09:06:52.595772: waiting for mount operation to complete.
-ERROR:root:2021-11-24 09:06:54.598541: timeout exceeded, not able to mount within time.
+INFO:root:2022-06-21 09:06:50.595166: waiting for mount operation to complete.
+INFO:root:2022-06-21 09:06:52.595772: waiting for mount operation to complete.
+ERROR:root:2022-06-21 09:06:54.598541: timeout exceeded, not able to mount within time.
 ERROR:root:/triliodata is not a mountpoint. We can't proceed further.
 Traceback (most recent call last):
   File "/opt/tvk/datastore-attacher/mount_utility/mount_by_target_crd/mount_datastores.py", line 56, in main
@@ -576,7 +576,7 @@ Next, you will discover the TVK web console which is a really nice and useful ad
 
 ### Step 3 - Getting to Know the TVK Web Management Console <a name="step-3---getting-to-know-the-tvk-web-management-console"></a>
 
-While you can manage backup and restore operations from the CLI entirely via `kubectl` and `CRDs`, `TVK` provides a [Web Management Console](https://docs.trilio.io/kubernetes/management-console/user-interface) to accomplish the same operations via the GUI. The management console simplifies common tasks via point and click operations, provides better visualization and inspection of TVK cluster objects, as well as to create disaster recovery plans (or `DRPs`).
+While you can manage backup and restore operations from the CLI entirely via `kubectl` and `CRDs`, `TVK` provides a [Web Management Console](https://docs.trilio.io/kubernetes/management-console-ui/about-the-ui) to accomplish the same operations via the GUI. The management console simplifies common tasks via point and click operations, provides better visualization and inspection of TVK cluster objects, as well as to create disaster recovery plans (or `DRPs`).
 
 The Helm based installation covered in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes) already took care of installing the required components for the web management console.
 
@@ -677,7 +677,7 @@ Going further, you can browse the target and list the available backups by click
 
 ![TVK Target Browser](images/tvk_target_browser.png){.thumbnail}
 
-For more information and available features, please consult the [TVK Web Management Console User Interface](https://docs.trilio.io/kubernetes/management-console/user-interface/overview) official documentation.
+For more information and available features, please consult the [TVK Web Management Console User Interface](https://docs.trilio.io/kubernetes/management-console-ui/about-the-ui) official documentation.
 
 Next, you will learn how to perform backup and restore operations for specific use cases, like:
 
@@ -714,7 +714,7 @@ The output looks similar to below:
 
 ```text
 NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
-mysql-qa        demo-backup-ns  1               2021-12-23 08:23:01.849247691 +0000 UTC deployed        mysql-1.6.9     5.7.30
+mysql-qa        demo-backup-ns  1               2022-06-21 08:23:01.849247691 +0000 UTC deployed        mysql-1.6.9     5.7.30
 ```
 
 Next, verify that `mysql-qa` deployment is up and running:
@@ -947,7 +947,7 @@ The output looks similar to (notice the STATUS column set to `Completed`, as wel
 
 ```text
 NAME                            STATUS      DATA SIZE   START TIME             END TIME               PERCENTAGE COMPLETED   DURATION
-mysql-qa-helm-release-restore   Completed   0           2021-11-25T15:06:52Z   2021-11-25T15:07:35Z   100                    43.524191306s
+mysql-qa-helm-release-restore   Completed   0           2022-06-21T15:06:52Z   2022-06-21T15:07:35Z   100                    43.524191306s
 ```
 
 If the output looks like above, then the `mysql-qa` Helm release restoration process completed successfully.
@@ -1384,7 +1384,7 @@ All the basic tasks and operations explained in this tutorial, are meant to give
 - [Immutable Backups](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#immutability), which restrict backups on the target storage to be overwritten.
 - [Helm Releases Backup](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#type-helm-example-1-single-helm-release), which shows examples for Helm releases backup strategies.
 - [Backups Encryption](https://docs.trilio.io/kubernetes/architecture/apis-and-command-line-reference/custom-resource-definitions-application-1/triliovault-crds#type-encryption), which explains how to encrypt and protect sensitive data on the target (storage).
-- [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/disaster-recovery-plan).
-- [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/multicloud-management).
+- [Disaster Recovery Plan](https://docs.trilio.io/kubernetes/management-console-ui/index/disaster-recovery-plan).
+- [Multi-Cluster Management](https://docs.trilio.io/kubernetes/management-console-ui/index/multicloud-management).
 - [Restore Transforms](https://docs.trilio.io/kubernetes/overview/features-and-use-cases#restore-transforms).
-- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console/user-interface/use-cases-with-trilio/monitoring-velero-with-triliovault-for-kubernetes).
+- [Velero Integration to Monitor Velero Backups](https://docs.trilio.io/kubernetes/management-console-ui/index/monitoring-velero-with-triliovault-for-kubernetes).

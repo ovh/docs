@@ -81,7 +81,7 @@ Vérifiez que toutes les informations affichées dans le résumé sont correctes
 ### Étape 3 : Gérer votre base de données
 
 > [!warning]
->Ce guide ne remplace pas l’assistance d'un professionnel, par exemple, un webmaster. Nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Vous trouverez plus d’informations dans la section « Aller plus loin » de ce guide.
+>Ce guide ne remplace pas l’assistance d'un professionnel, par exemple, un webmaster. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. Nous ne serons personnellement pas en mesure de vous fournir une assistance à ce propos. Vous trouverez plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
 À présent, vous pouvez utiliser votre base de données. Pour ce faire, vous aurez besoin de vos informations de connexion : le nom d'utilisateur et le mot de passe que vous venez de définir, le nom de la base de données que vous avez indiqué et l'adresse du serveur. Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.

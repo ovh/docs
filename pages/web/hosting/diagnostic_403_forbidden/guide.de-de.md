@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.09.2021**
+**Letzte Aktualisierung am 16.06.2022**
 
 ## Ziel
 
@@ -25,7 +25,7 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
@@ -40,11 +40,11 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 
 Wenn die Seite "**403 forbidden**" aufgrund einer fehlerhaften Änderung Ihrer Website auftaucht, setzen Sie den [Speicherplatz Ihres Hostings zu einem früheren Zeitpunkt zurück](../webhosting-speicherplatz-wiederherstellen/).
 
-Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
 Wenn "**403 forbidden**" ohne Änderung Ihrer Website angezeigt wird, überprüfen Sie Ihren E-Mail-Posteingang. Wenn Sie eine E-Mail von unsere System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step2).
 
-Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich **keine** Benachrichtigung seitens unserer Hosting-Dienste erhalten haben, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich **keine** Benachrichtigung seitens unserer Hosting-Dienste erhalten haben, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
 ### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step2"></a>
 
@@ -74,16 +74,23 @@ Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und nur eine Webs
 
 Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websites enthält, stellen Sie nur die Dateien mit den verdächtigen Dateien gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen) wieder her.
 
+> [!warning]
+>
+> Die Wiederherstellung Ihres Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
+>
+> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
+>
+
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
+Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
+
+### Schritt 4: Webhosting wieder aktivieren
 
 > [!warning]
 >
 > Wir empfehlen, unbedingt eine Sicherheitsüberprüfung durchzuführen, **bevor** Ihr Hosting reaktiviert wird. Sie können auch ohne Vorsatz rechtlich verantwortlich gemacht werden, wenn schädlicher Code von Ihrem Webhosting aus verbreitet wird.
 >
-
-### Schritt 4: Webhosting wieder aktivieren
 
 #### Ihr Webhosting mit FileZilla reaktivieren
 

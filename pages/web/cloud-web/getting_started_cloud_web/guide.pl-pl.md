@@ -135,7 +135,7 @@ Jeśli chcesz uzyskać więcej informacji o modułach CMS OVHcloud, zapoznaj si�
 
 #### 2. Ręczna instalacja projektu
 
-W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego usługodawcy lub kontakt z producentem oprogramowania. 
+W przypadku nowej strony WWW lub migracji strony istniejącej, ręczna instalacja może wymagać odpowiednich kompetencji technicznych. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) lub kontakt z producentem oprogramowania. 
 
 Jeśli decydujesz się na ręczną instalację, powinieneś posiadać wszystkie pliki strony WWW lub aplikacji, które zamierzasz zainstalować, jak również (o ile jest to niezbędne dla jej poprawnego funkcjonowania), dane dostępowe bazy danych utworzonej uprzednio na hostingu Cloud Web. W przypadku migracji strony WWW zadbaj o wykonanie jej pełnej kopii.
 

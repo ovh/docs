@@ -26,7 +26,7 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -78,7 +78,7 @@ Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera k
 > [!warning]
 >
 > Sam powrót do przestrzeni dyskowej nie wystarczy, aby usunąć ewentualne luki bezpieczeństwa, które pojawiły się na Twojej stronie WWW.
-> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
+> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
 >
 
 #### Przypadek nr 2: Twój hosting został wyłączony dwa tygodnie temu

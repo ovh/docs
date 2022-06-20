@@ -52,7 +52,7 @@ Se a página **"403 forbidden"** aparecer sem ação da sua parte e não tiver r
 Em primeiro lugar, verifique a segurança do(s) seu(s) computador(s):
 
 - Atualizações de segurança;
-- Verifique também que está instalado um antivírus, atualize-o e lance uma análise completa. Se não possuir nenhum, consulte um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/) antes de qualquer instalação;
+- Verifique também que está instalado um antivírus, atualize-o e lance uma análise completa. Se não possuir nenhum, consulte um [[prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/)](https://partner.ovhcloud.com/pt/) antes de qualquer instalação;
 - Altere todas as suas palavras-passe locais, incluindo as dos seus endereços de e-mail, de acordo com estas [boas práticas](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/#gerar-uma-boa-palavra-passe);
 - Altere as palavras-passe do conjunto dos seus serviços OVHcloud, nomeadamente da sua [base de dados](../alterar-palavra-passe-base-de-dados/) e do acesso ao seu [espaço de armazenamento FTP](../alterar-palavra-passe-utilizador-ftp/).
 
