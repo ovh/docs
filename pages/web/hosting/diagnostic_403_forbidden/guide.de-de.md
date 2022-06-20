@@ -77,7 +77,8 @@ Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websi
 > [!warning]
 >
 > Die Wiederherstellung Ihres Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
-> Um diese Sicherheitslücken zu identifizieren, können Sie die ["Web" Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
+>
+> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
 >
 
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
