@@ -100,11 +100,11 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 #### Track transfer after order
 
-Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via [the OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. To track the progress, click `Domain`{.action} names, then `Ongoing`{.action} operations.
+Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. To track the progress, click `Domain`{.action} names, then `Ongoing operations`{.action}.
 
 > [!primary]
 >
-> If the transfer code was not entered during the order, you can enter it in the `Ongoing`{.action} operations window and validate the transfer.
+> If the transfer code was not entered during the order, you can enter it in the `Ongoing operations`{.action} window and validate the transfer.
 
 ### Step 4: transfer validation by the current registrar
 
@@ -118,7 +118,7 @@ Once the order and transfer code have been confirmed, the domain name registrar 
 
 If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. Select `Web Cloud`{.action} and go to the `Domain`{.action} Names section, then click `Ongoing`{.action} operations.
+The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. Select `Web Cloud`{.action} and go to the `Domain`{.action} Names section, then click `Ongoing operations`{.action}.
 
 
 ### Step 5: Manage your domain at OVHcloud
