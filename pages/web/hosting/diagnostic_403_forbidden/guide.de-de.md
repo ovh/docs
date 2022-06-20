@@ -25,7 +25,7 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
 >
 
 ## Voraussetzungen
@@ -40,11 +40,11 @@ Es kann auch vorkommen, dass unsere Sicherheitsbots nach der Erkennung von siche
 
 Wenn die Seite "**403 forbidden**" aufgrund einer fehlerhaften Änderung Ihrer Website auftaucht, setzen Sie den [Speicherplatz Ihres Hostings zu einem früheren Zeitpunkt zurück](../webhosting-speicherplatz-wiederherstellen/).
 
-Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn Sie mit den verfügbaren Backups den Zugang zu Ihrer Website nicht wiederherstellen können, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
 Wenn "**403 forbidden**" ohne Änderung Ihrer Website angezeigt wird, überprüfen Sie Ihren E-Mail-Posteingang. Wenn Sie eine E-Mail von unsere System erhalten haben, die eine Schließung Ihres Hostings aus Sicherheitsgründen meldet, gehen Sie zu [Schritt 2](#step2).
 
-Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich **keine** Benachrichtigung seitens unserer Hosting-Dienste erhalten haben, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
+Wenn "**403 forbidden**" ohne Aktion Ihrerseits erschienen ist und Sie diesbezüglich **keine** Benachrichtigung seitens unserer Hosting-Dienste erhalten haben, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 
 ### Schritt 2: Sicherheitsmaßnahmen auf Ihrer Seite durchführen <a name="step2"></a>
 
@@ -76,7 +76,7 @@ Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websi
 
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
 
-Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
+Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
 
 > [!warning]
 >

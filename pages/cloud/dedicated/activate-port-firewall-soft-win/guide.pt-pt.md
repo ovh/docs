@@ -22,7 +22,7 @@ Para proteger ao máximo o seu sistema, o seu servidor Windows Server dispõe da
 >
 > A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
 >
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um prestador de serviços especializado. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades ou tiver dúvidas quanto à administração, utilização ou segurança de um servidor, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Para mais informações, aceda à secção “Quer saber mais?” deste manual.
 >
 
 ## Requisitos

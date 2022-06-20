@@ -19,7 +19,7 @@ Vous pouvez ajouter un serveur secondaire ou remplacer cette configuration par l
 > [!warning]
 > OVHcloud vous fournit des services dont la configuration et la gestion relèvent de votre responsabilité. Il vous incombe par conséquent de veiller à ce que ces services fonctionnent correctement.
 >
-> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur. Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Nous mettons ce guide à votre disposition afin de vous accompagner au mieux sur les tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur. Plus d’informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis

@@ -124,7 +124,7 @@ Please note that Let's Encrypt, the authority that delivers the SSL certificate 
 
 You can also delete an SSL certificate that has been set up on your Web Hosting plan. Before you start making any changes, **we strongly advise ensuring that the certificate deletion will not render your websites inaccessible**. Please keep in mind that your web users will see a security error when they try to access a website that works in HTTPS, but does not have a secure SSL connection. 
 
-Since this verification involves checking your website settings, we recommend contacting a specialist service provider if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
+Since this verification involves checking your website settings, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-ie/directory/) if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
 
 Once you are ready to delete the SSL certificate, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action}. Click `Hosting Plans`{.action} and select the plan concerned. Click on the `General information`{.action} tab. Then click on `...`{.action} next to "SSL certificate", then `Delete SSL`{.action}.
 

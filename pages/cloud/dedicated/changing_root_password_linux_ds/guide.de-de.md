@@ -33,7 +33,7 @@ Es kann notwendig werden, das Root-Passwort (oder das Passwort Ihres Admin/Sudo-
 > [!warning]
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
 >
->Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
+>Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
 >
 
 ## In der praktischen Anwendung

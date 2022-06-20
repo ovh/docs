@@ -72,7 +72,7 @@ Agora que o utilizador e o registo DynHost foram criados, a última etapa consis
 
 > [!warning]
 >
-> A instalação e a configuração do cliente devem ser realizadas de acordo com os seus conhecimentos. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica. 
+> A instalação e a configuração do cliente devem ser realizadas de acordo com os seus conhecimentos. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica. 
 >
 
 Uma vez que existem grandes possibilidades, saiba que este cliente pode ser instalado no seu servidor ou no seu computador, ou pode já estar disponível na interface do seu router se este for compatível. Depois de escolher e instalar o cliente, deverá configurá-lo através das informações do utilizador DynHost criado anteriormente.
