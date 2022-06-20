@@ -21,8 +21,8 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über eine MPN-ID (Microsoft Partner Network IDs)
-- Sie sind im CSP (Cloud Solutions Provider) Programm von Microsoft als indirekter Reseller in der Region, in der Sie arbeiten, angemeldet (z. B.: "EU" für Europa)
+- Sie verfügen über eine MPN ID (Microsoft Partner Network Identifikationsnummer).
+- Sie sind im CSP-Programm (Cloud Solutions Provider) von Microsoft als indirekter Reseller in der Region, in der Sie operieren, angemeldet (z.B.: "EU" für Europa).
 
 > [!warning]
 >
@@ -31,9 +31,9 @@ Office 365 Reseller (CSP2) ist ein Dienst, mit dem Sie verschiedene Arten von Mi
 > Es muss nun eine MPN ID für jede Neubestellung vorhanden sein.
 >
 
-Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine MPN ID erstellen (wenn Sie die Bedingungen von Microsoft erfüllen), indem Sie die [offizielle Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account){.external} befolgen.
+Wenn Sie noch nicht über eine MPN ID verfügen, können Sie eine erstellen (falls Sie die Bedingungen von Microsoft erfüllen), indem Sie die [offizielle Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/mpn-create-a-partner-center-account){.external} befolgen.
 
-Um sich als indirekter Reseller anzumelden, lesen Sie bitte die andere [offizielle Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+Um sich als indirekter Reseller anzumelden, folgen Sie [dieser offiziellen Microsoft Dokumentation](https://docs.microsoft.com/de-de/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
 
 > [!success]
 >
@@ -51,7 +51,7 @@ Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHclo
 
 > [!primary]
 >
-> Sie können bei der Erstellung einer neuen Plattform auch eine **personalisierte Subdomain** definieren, indem Sie das dafür vorgesehene Kästchen ankreuzen (sofern die Namen verfügbar sind).
+> Sie können bei der Erstellung einer neuen Plattform auch eine **personalisierte Subdomain** definieren, indem Sie das entsprechende Feld anhaken (sofern die Namen verfügbar sind).
 
 
 - Geben Sie in der Liste die Lizenzen ein, die Sie zu Ihrer Gruppe hinzufügen möchten.
@@ -59,25 +59,25 @@ Um einen Office 365 Reseller Dienst zu bestellen, loggen Sie sich in Ihr [OVHclo
 
 > [!warning]
 >
-> Bitte überprüfen Sie die Gültigkeit der bei der Erstellung Ihrer Lizenzgruppe angegebenen E-Mail-Adresse, da diese die Login-Daten auf der Microsoft Plattform erhält.
+> Bitte überprüfen Sie die Gültigkeit der bei der Erstellung Ihrer Lizenzgruppe angegebenen E-Mail-Adresse, da diese die Login-Daten der Microsoft Plattform erhält.
 >
 
 ![office365](images/csp2-01.png){.thumbnail}
 
-#### Sonderfall der Delegationen
+#### Sonderfall Delegationen
 
-- Wenn Sie bereits über einen Office 365 CSP2 Dienst bei Microsoft verfügen, können Sie dessen Administration an OVHcloud delegieren. So können Sie direkt über Ihr OVHcloud Kundencenter zusätzliche Abonnements hinzufügen. Wenn Sie eine neue Lizenzgruppe bestellen, wählen Sie die Delegation einer zuvor bei Microsoft` erstellten Plattform aus und geben Sie genau den **Tenant Office 365*** ein, den Sie auf Ihrem Microsoft Portal sowie Ihrer MPN ID einsehen können.
+- Wenn Sie bereits über einen Office 365 CSP2 Dienst bei Microsoft verfügen, können Sie dessen Administration an OVHcloud delegieren. So können Sie direkt über Ihr OVHcloud Kundencenter zusätzliche Abonnements hinzufügen. Wenn Sie eine neue Lizenzgruppe bestellen, wählen Sie `Eine bei Microsoft erstellte Plattform delegieren` aus und geben Sie den **Office 365 Tenant*** ein, den Sie in Ihrem Microsoft Portal zusammen mit Ihrer MPN ID einsehen können. 
 
-- Wenn Sie bereits einen anderen Anbieter als OVHcloud für Ihr Office 365 Reseller nutzen, können Sie die Verwaltung auch an OVHcloud delegieren, müssen aber vorher die Verbindung zu Ihrem bisherigen Anbieter abbrechen.
+- Wenn Sie bereits einen anderen Anbieter als OVHcloud für Ihr Office 365 Reseller nutzen, können Sie die Verwaltung auch an OVHcloud delegieren, müssen aber vorher die Anbindung zu Ihrem bisherigen Anbieter beenden.
 
 - Es ist eine doppelte Validierung erforderlich, um das Start des Tenant in Ihrem OVHcloud Kundencenter abzuschließen.
 
-- Sobald die Lizenzen auf dem delegierten Inhaber bestellt sind, sind diese auf Ihrem [Verwaltungsportal Microsoft](https://portal.office.com/Admin/Default.aspx){.external} verfügbar. Ersetzen Sie anschließend Ihre alten Lizenzen in Ihrem [Microsoft Verwaltungsportal](https://portal.office.com/Admin/Default.aspx){.external} durch die OVHcloud Lizenzen und kündigen Sie Ihre alten Lizenzen, damit Sie diese nicht mehr doppelt bezahlen müssen.
+- Sobald der delegierte Tenant abonniert ist, werden die Lizenzen in Ihrem [Microsoft Verwaltungsportal](https://portal.office.com/Admin/Default.aspx){.external} verfügbar. Ersetzen Sie anschließend Ihre alten Lizenzen in Ihrem [Microsoft Verwaltungsportal](https://portal.office.com/Admin/Default.aspx){.external} durch die OVHcloud Lizenzen und kündigen Sie Ihre alten Lizenzen, damit Sie nicht doppelt bezahlen müssen.
 
-- Seien Sie versichert, dass Sie bei OVHcloud über nicht verfügbare Lizenzen verfügen und diese bei Microsoft weiterhin verwenden können.
+- Lizenzen, die bei OVHcloud nicht verfügbar sind, bleiben weiterhin bei Microsoft aktiv.
 
 > [!warning]
-> Da es sich um lizenzierte Produkte handelt, ist es nicht möglich, einen Office 365 Reseller Tenant von einem OVHcloud Kunden auf einen anderen zu wechseln.
+> Da es sich um lizenzierte Produkte handelt, ist es nicht möglich, einen Office 365 Reseller Tenant von einem OVHcloud Kunden-Account auf einen anderen zu wechseln.
 >
 
 ### Office 365 Reseller Dienste verwalten
@@ -88,11 +88,11 @@ Gehen Sie hierzu in den Bereich `Sunrise`{.action}. Im Menü auf der linken Seit
 
 Folgende Angaben werden angezeigt:
 
-- **Interner Servicename**: zeigt den Namen Ihrer Dienstleistung an. Dieser ist nur in Ihrem Kundencenter sichtbar. Es entspricht auch *Tenant* (was Ihre Lizenzgruppe enthält) bei Microsoft.
-- **Anzeigename des Dienstes**: erlaubt es, den Anzeigenamen des Dienstes in Ihrem Kundencenter zu personalisieren.
-- **Erstellt am**: gibt das Erstellungsdatum des Dienstes an.
+- **Interner Servicename**: Zeigt den Namen Ihrer Dienstleistung an. Dieser ist nur in Ihrem Kundencenter sichtbar. Er entspricht auch dem Tenant (der Ihre Lizenzgruppe enthält) bei Microsoft.
+- **Anzeigename des Dienstes**: Erlaubt es, den Anzeigenamen des Dienstes in Ihrem Kundencenter zu personalisieren.
+- **Erstellt am**: Gibt das Erstellungsdatum des Dienstes an.
 - **Microsoft Verwaltungsportal**: URL zur Office Verwaltungsoberfläche, über die Sie Ihre Abonnements verwalten können.
-- **Das Administrator-Passwort zurücksetzen**: ermöglicht die Änderung des Login-Passworts zum Microsoft Administrationsportal.
+- **Das Administrator-Passwort zurücksetzen**: Ermöglicht die Änderung des Login-Passworts zum Microsoft Administrationsportal.
 
 ![office365](images/sunrise_office365_CSP2_services_details.png){.thumbnail}
 
@@ -117,11 +117,11 @@ Wählen Sie hierzu die entsprechende Domain in der Drop-down-Liste und anschlie�
 Mit der Verwaltung Ihrer Abos können Sie die zu Ihrer Abonnementgruppe gehörenden Lizenzen erhöhen oder stornieren. Die Details können Sie in der Tabelle sehen:
 
 - **ID**: Jeder Typ einer bestellten Lizenz verfügt über eine eindeutige Kennung (ID).
-- **Status**: zeigt den Status Ihrer Lizenz.
-- **Name der Lizenz**: gibt die Art der bestellten Lizenz an.
-- **Anzahl der Lizenzen**: gibt die Anzahl der verfügbaren Lizenzen an.
-- **Erstellungsdatum**: gibt das Erstellungsdatum des Abonnements für den ausgewählten Lizenztyp an.
-- **Letztes Update**: gibt das Datum an, an dem das Abonnement zuletzt aktualisiert wurde (z.B. durch Hinzufügen einer Lizenz).
+- **Status**: Zeigt den Status Ihrer Lizenz.
+- **Name der Lizenz**: Gibt die Art der bestellten Lizenz an.
+- **Anzahl der Lizenzen**: Gibt die Anzahl der verfügbaren Lizenzen an.
+- **Erstellungsdatum**: Gibt das Erstellungsdatum des Abonnements für den ausgewählten Lizenztyp an.
+- **Letztes Update**: Gibt das Datum an, an dem das Abonnement zuletzt aktualisiert wurde (z.B. durch Hinzufügen einer Lizenz).
 
 Mit dem Stift-Button können Sie die Gesamtzahl der Lizenzen des Abonnements ändern. Mit dem Papierkorb-Button können Sie das Abonnement und alle Lizenzen kündigen.
 
