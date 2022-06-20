@@ -27,7 +27,7 @@ section: 'Tutorials'
  }
 </style>
 
-**Last updated June 22<sup>th</sup>, 2022.**
+**Last updated June 22<sup>nd</sup>, 2022.**
 
 ## Introduction <a name="introduction"></a>
 
