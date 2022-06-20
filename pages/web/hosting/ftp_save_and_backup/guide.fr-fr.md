@@ -15,6 +15,8 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 > 
 > Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
 > 
+> Lorsque vous effectuerez vos sauvegardes de sécurité, n'oubliez pas non plus de [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
+> 
 
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
 
@@ -153,5 +155,7 @@ Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers sou
 [Utiliser le logiciel FileZilla avec son hébergement web](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}.
 
 [Utiliser le logiciel Cyberduck avec son hébergement web](https://docs.ovh.com/fr/hosting/utilisation-cyberduck-mac/){.external}.
+
+[Récupérer la sauvegarde de la base de données d’un hébergement web](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
