@@ -11,6 +11,11 @@ section: 'FTP et SSH'
 
 Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stockage sur lequel vous pouvez héberger vos sites internet. Pour diverses raisons, comme la suppression ou la modification d'un fichier rendant inaccessible un site, vous pouvez être amené à devoir restaurer l'ensemble des données de votre espace de stockage, ou simplement un fichier stocké dans celui-ci.
 
+> [!primary]
+> 
+> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
+> 
+
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
 
 ## Prérequis
@@ -19,11 +24,6 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 - Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique
-
-> [!primary]
-> 
-> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
-> 
 
 Avant de débuter, assurez-vous que les dates de restauration proposées peuvent vous permettre de restaurer l'espace de stockage de votre hébergement web à la date souhaitée :
 
