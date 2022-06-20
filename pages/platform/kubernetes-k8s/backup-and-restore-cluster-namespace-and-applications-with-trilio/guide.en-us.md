@@ -576,7 +576,7 @@ Next, you will discover the TVK web console which is a really nice and useful ad
 
 ### Step 3 - Getting to Know the TVK Web Management Console <a name="step-3---getting-to-know-the-tvk-web-management-console"></a>
 
-While you can manage backup and restore operations from the CLI entirely via `kubectl` and `CRDs`, `TVK` provides a [Web Management Console](https://docs.trilio.io/kubernetes/management-console/user-interface) to accomplish the same operations via the GUI. The management console simplifies common tasks via point and click operations, provides better visualization and inspection of TVK cluster objects, as well as to create disaster recovery plans (or `DRPs`).
+While you can manage backup and restore operations from the CLI entirely via `kubectl` and `CRDs`, `TVK` provides a [Web Management Console](https://docs.trilio.io/kubernetes/management-console-ui/about-the-ui) to accomplish the same operations via the GUI. The management console simplifies common tasks via point and click operations, provides better visualization and inspection of TVK cluster objects, as well as to create disaster recovery plans (or `DRPs`).
 
 The Helm based installation covered in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes) already took care of installing the required components for the web management console.
 
