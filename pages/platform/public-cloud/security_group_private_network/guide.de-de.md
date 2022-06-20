@@ -164,11 +164,11 @@ False
 Die Migration erfolgt nach diesem Prozess:
 
 - Die Firewall-Regeln für neue Ports werden nicht angewendet, bis Sie "port security" für den neuen Port aktiviert haben. Bei bestehenden Ports ändert sich nichts.
-- Die OpenStack-Regionen werden zur Stein-Version übergehen.
-- Die OpenStack Regionen in Stein Version werden auf eine neue Version von OpenVSwitch umgestellt.
+- Die OpenStack-Regionen werden zur Stein-Version übertragen.
+- Die OpenStack-Regionen mit Stein werden auf eine neue Version von OpenVSwitch umgestellt.
 
 > [!primary]
-> Ab diesem Schritt müssen die Terraform-Benutzer die Einstellungen des [Port Security bei "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} erzwingen, damit die Playbooks funktionieren können.
+> Ab diesem Schritt müssen Terraform-Benutzer die [Einstellung von "port security" auf "false" erzwingen](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external}, damit die Playbooks funktionieren können.
 >
 
 - Sie können "port security" für die Stein Regionen aktivieren.
