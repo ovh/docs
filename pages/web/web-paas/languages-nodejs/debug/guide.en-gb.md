@@ -4,123 +4,180 @@ slug: debug
 section: Nodejs
 ---
 
-**Last updated 31st March 2021**
+**Last updated 2nd June 2022**
 
 
 
 ## Objective  
 
-Effectively debugging web applications isn’t trivial, especially when an HTTP request goes through multiple layers until it reaches the web app, which is usually the case in cloud platforms.
+Effectively debugging web apps takes effort,
+especially when an HTTP request goes through multiple layers before reaching your web app.
+Follow the steps below to debug a specific app.
 
-> [!primary]  
-> Whether you need to debug locally or remotely, always do so in a non-production environment.
-> 
+You can choose to debug in an environment deployed to Web PaaS
+or with your app running locally but connected to deployed services.
+In either case, make sure to debug in a non-production environment.
 
-## Remote debugging
 
-### Create a new environment
 
-```sh
-$ webpaas branch debug-branch
+## 1. Create a new environment
+
+Start by creating a new environment completely isolated from production but with the same data for debugging:
+
+```bash
+webpaas branch debug-branch
 ```
 
-### SSH into your app container
+## 2. Get access
 
-```sh
-$ webpaas ssh
-```
+> [!tabs]      
+> Remote     
+>> ``` false     
+>> 
+>> 
+>> Access your app container via [SSH](../../development-ssh/):
+>> 
+>> ```bash
+>> webpaas ssh
+>> ```
+>> 
+>> 
+>> ```     
+> Local     
+>> ``` false     
+>> 
+>> 
+>> To access deployed apps and services, open tunnels to everything your app has relationships with:
+>> 
+>> ```bash
+>> webpaas tunnel:open
+>> ```
+>> 
+>> In the same terminal, set the relevant environment variables:
+>> 
+>> ```bash
+>> export PLATFORM_RELATIONSHIPS="$(webpaas tunnel:info --encode)"
+>> export PORT=8888
+>> ```
+>> 
+>> ```     
 
-In a multi-application project, you will be prompted to chose which application to ssh into. You can also specifiy the application you want by using the `--app` option:
 
-```sh
-$ webpaas ssh --app=my-app-name
-```
+## 3. Run your app in inspect mode
 
-### Restart node in inspect mode 
+> [!tabs]      
+> Remote     
+>> ``` false     
+>> 
+>> 
+>> Stop the current process and restart it in inspect mode:
+>> 
+>> ```bash
+>> sv stop app
+>> node --inspect <START_FILE>
+>> ```
+>> 
+>> 
+>> ```     
+> Local     
+>> ``` false     
+>> 
+>> 
+>> In the same terminal as the previous step, run the following command:
+>> 
+>> ```bash
+>> node --inspect <START_FILE>
+>> ```
+>> 
+>> ```     
 
-Once connected to your app container, run:
 
-```sh
-$ sv stop <app_name>
-$ node --inspect <js_file>
-```
+Replace `<START_FILE>` with the file defined for your app's `start` command.
 
-`app_name` being the name of your application as defined in your `.platform.app.yaml` and `js_file` being your application entrypoint.
+You should get an output similar to this:
 
-You should see something like:
-```sh
-web@app.0:~$ node --inspect index.js 
+```bash
 Debugger listening on ws://127.0.0.1:9229/10701e5d-d627-4180-a967-d47a924c93c0
 For help, see: https://nodejs.org/en/docs/inspector
 Listening on port 8888
 ```
 
-### Forward the debugger port locally
+## 4. (If debugging remotely) Forward the debugger port locally
 
-In another terminal, create an SSH tunnel that forwards the 9229 port:
-```sh
-$ ssh -N -L9229:127.0.0.1:9229  $(webpaas  ssh --pipe)
+In another terminal, create an SSH tunnel that forwards to the 9229 port:
+
+```bash
+ssh -N -L 9229:localhost:9229 $(webpaas ssh --pipe)
 ```
 
-### Connect the debugger
+## 5. Connect the debugger
 
 You can now connect the debugger as if you were debugging a local application.
+See examples with some common tools:
 
-#### Using the chrome devtools
+> [!tabs]      
+> Using Chrome developer tools     
+>> ``` false     
+>> 
+>> 
+>> Go to `chrome://inspect`.
+>> Find your running app under the `Remote Target` list.
+>> Click **inspect** to start the debugger.
+>> 
+>> 
+>> ```     
+> Using Visual Studio Code     
+>> ``` false     
+>> 
+>> 
+>> Use the `Node.js: Attach` debugger option.
+>> 
+>> If you haven't created the option:
+>> 
+>> 1. On the **Run and Debug** tab, click `create a launch.json file`.
+>> 2. Select `Node.js` as the environment.
+>> 3. In the `configurations` array, start IntelliSense (usually <kbd>ctrl</kbd>+<kbd>space</kbd>).
+>> 4. Select `Node.js: Attach`.
+>> 5. Make sure the port is the same as in [step 4 above](#4-if-debugging-remotely-forward-the-debugger-port-locally).
+>> 
+>> Once you have the option:
+>> 
+>> In the **Run and Debug** tab, select `Attach` from the menu and click **Start Debugging** (the green arrow).
+>> 
+>> See more on [Node.js debugging in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
+>> 
+>> ```     
 
-Go to `chrome://inspect`. You should see the running application under the `Remote Target` list and be able to click the `inspect` link to open the debugger.
+Now when you load the site at your deployed URL (if debugging remote) or localhost (if debugging locally),
+the local debugger you've attached is called.
 
-#### Using VSCode
+Set breakpoints:
 
-Use the `Node.js: Attach` debugger option. If not configured already, go to the debugger tab and select `create a launch.json file` and select `Node.js`. Then use intellisense (usually `control`+`space`) in the `configurations` array. Select `Node.js: Attach`. You can now select `Attach` in the `RUN AND DEBUG` drop-down and click the green arrow. You will find the JS files in which to set the breakpoints in the `LOADED SCRIPTS` view, under `Attach: Remote Process [0]` -> `/app`.
+> [!tabs]      
+> Remote     
+>> ``` false     
+>> 
+>> 
+>> In the JavaScript files from your remote site:
+>> On the **Run and Debug** tab under **Loaded Scripts** find `Attach: Remote Process` > `/app`.
+>> 
+>> 
+>> ```     
+> Local     
+>> ``` false     
+>> 
+>> 
+>> Directly in your source files.
+>> 
+>> ```     
 
-## Locally
 
-### Create a new environment
+## Other issues
 
-```sh
-$ webpaas branch debug-branch
-```
+### pm2 process manager blocks other processes
 
-### Open a tunnel
+If you're using the [`pm2` process manager](https://github.com/unitech/pm2) to start your app from a script,
+you might find it daemonizes itself and blocks other processes (such as backups) by constantly respawning.
+This may happen even if you use the `--no-daemon` flag.
 
-To get access to your application's relationships locally, open a tunnel to your application container:
-
-```sh
-$ webpaas tunnel:open
-```
-
-In a multi-application project, you will be prompted to chose which application to open a tunnel to. You can also specifiy the application you want by using the `--app` option:
-
-```sh
-$ webpaas tunnel:open --app=my-app-name
-```
-
-### Set the environment variables
-
-In the terminal in which the tunnel has been opened, run:
-
-```sh
-$ export PLATFORM_RELATIONSHIPS="$(webpaas tunnel:info --encode)"
-$ export PORT=8888
-```
-
-### Run your application in inspect mode
-
-```sh
-$ node --inspect node --inspect <js_file>
-```
-
-`js_file` being your application entrypoint.
-
-### Connect the debugger
-
-You can now connect your debugger just like you would with any locally running node process.
-
-#### Using the chrome devtools
-
-Go to `chrome://inspect`. You should see the running application under the `Remote Target` list and be able to click the `inspect` link to open the debugger.
-
-#### Using VSCode
-
-Use the `Node.js: Attach to process` debugger option. If not configured already, go to the debugger tab and select `create a launch.json file` and select `Node.js`. Then use intellisense (usually `control`+`space`) in the `configurations` array. Select `Node.js: Attach to process`. You can now select `Attach by process ID` in the `RUN AND DEBUG` drop-down and click the green arrow. You can now set breakpoints in your source files directly.
+Instead of using a script, call `pm2 start` directly in your `start` command.
