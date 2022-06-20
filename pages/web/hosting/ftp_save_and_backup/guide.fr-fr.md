@@ -13,7 +13,7 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 > [!primary]
 > 
-> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
+> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
 > 
 > Lorsque vous effectuerez vos sauvegardes de sécurité, n'oubliez pas non plus de [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
 > 
