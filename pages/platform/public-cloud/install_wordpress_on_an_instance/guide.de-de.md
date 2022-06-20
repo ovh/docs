@@ -19,7 +19,7 @@ Dieses Tutorial enthält die Grundschritte für die manuelle Installation von Wo
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Bei Schwierigkeiten kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). 
+> Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der [OVHcloud Community](https://community.ovh.com/en/). 
 Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. 
 >
 
