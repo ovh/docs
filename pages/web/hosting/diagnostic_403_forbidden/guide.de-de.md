@@ -10,7 +10,7 @@ order: 7
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.09.2021**
+**Letzte Aktualisierung am 16.06.2022**
 
 ## Ziel
 
@@ -74,16 +74,23 @@ Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und nur eine Webs
 
 Wenn Ihr Hosting vor weniger als zwei Wochen geschlossen wurde und mehrere Websites enthält, stellen Sie nur die Dateien mit den verdächtigen Dateien gemäß den Anweisungen in dieser [Anleitung](../webhosting-speicherplatz-wiederherstellen/#datei-mithilfe-einer-software-oder-uber-ein-interface-wiederherstellen) wieder her.
 
+> [!warning]
+>
+> Die Wiederherstellung Ihres Speicherplatzes allein reicht nicht aus, um potenzielle Sicherheitslücken zu beheben, die bereits auf Ihrer Website vorhanden sind.
+>
+> Um diese Sicherheitslücken zu identifizieren, können Sie die [Web-Logs](https://docs.ovh.com/de/hosting/webhosting_die_statistiken_und_logs_meiner_website_einsehen/#logs) Ihres Hostings analysieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) kontaktieren, um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen.
+>
+
 #### Fall 2: Ihr Hosting wurde vor mehr als zwei Wochen deaktiviert
 
 Wenn Ihr Hosting vor mehr als zwei Wochen geschlossen wurde, kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/), um eine Sicherheitsüberprüfung Ihrer Lösungen durchzuführen. 
+
+### Schritt 4: Webhosting wieder aktivieren
 
 > [!warning]
 >
 > Wir empfehlen, unbedingt eine Sicherheitsüberprüfung durchzuführen, **bevor** Ihr Hosting reaktiviert wird. Sie können auch ohne Vorsatz rechtlich verantwortlich gemacht werden, wenn schädlicher Code von Ihrem Webhosting aus verbreitet wird.
 >
-
-### Schritt 4: Webhosting wieder aktivieren
 
 #### Ihr Webhosting mit FileZilla reaktivieren
 
