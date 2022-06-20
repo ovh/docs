@@ -54,7 +54,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 
 > [!warning]
 >
-> Cette méthode de restauration est indisponible dans le cas où votre hébergement a été placé en "maintenance" par nos administrateurs ou que ce dernier ne dispose pas des droits d'accès FTP suffisants suite à une action de votre part.
+> Cette méthode de restauration est indisponible dans le cas où votre hébergement a été placé en "maintenance" par nos administrateurs ou que ce dernier ne dispose pas des droits d'accès FTP (droits "chmod") suffisants suite à une action de votre part.
 > 
 > Effectivement, les droits "chmod" à la racine de votre hébergement doivent être obligatoirement en "705" pour que cela fonctionne.
 > 
