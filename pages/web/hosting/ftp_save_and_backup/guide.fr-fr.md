@@ -13,16 +13,16 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 > [!primary]
 > 
-> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non-contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons d'effectuer régulièrement vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données.
+> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non-contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommandons d'effectuer régulièrement vos propres sauvegardes de sécurité pour pallier aux éventuelles pertes de données.
 > 
-> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de votre base de données. N'hésitez pas à consultez notre guide [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/){.external}.
+> Lorsque vous effectuez une sauvegarde de sécurité pour votre site et que vous utilisez une base de données, faites également une sauvegarde de votre base de données. N'hésitez pas à consultez notre guide pour [récupérer une sauvegarde de votre (vos) base(s) de données](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/).
 > 
 
 **Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web.**
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} (ne fonctionne pas avec un hébergement Cloud Web).
+- Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external} (ne fonctionne pas avec un [hébergement Cloud Web](https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/)).
 - Selon la méthode utilisée, disposer d’un accès à la gestion de l’offre d’hébergement web depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
 ## En pratique
@@ -46,27 +46,28 @@ Définissez également la méthode de restauration que vous allez utiliser :
 
 Une fois prêt, poursuivez la lecture de cette documentation en fonction de la méthode de restauration choisie.
 
-- « [Restaurer l'espace de stockage depuis l'espace client OVHcloud](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-lespace-de-stockage-depuis-lespace-client){.external} ».
+- « [Restaurer l'espace de stockage depuis l'espace client OVHcloud](#viacontrolpanel) ».
+- « [Restaurer un fichier depuis un logiciel ou une interface](#viainterface) ».
 
-- « [Restaurer un fichier depuis un logiciel ou une interface](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/#restaurer-un-fichier-depuis-un-logiciel-ou-une-interface){.external} ».
-
-### Restaurer l'espace de stockage depuis l'espace client OVHcloud
+### Restaurer l'espace de stockage depuis l'espace client OVHcloud <a name="viacontrolpanel"></a>
 
 > [!warning]
 >
-> Cette méthode de restauration est indisponible dans le cas où votre hébergement a été placé en mode "maintenance" par nos administrateurs ou que ce dernier ne dispose pas des droits d'accès FTP (droits "chmod") faisants suite à une action de votre part.
-> 
-> Effectivement, les droits "chmod" à la racine de votre hébergement doivent être obligatoirement en "705" pour que cela fonctionne.
-> 
+> Cette méthode de restauration est indisponible si votre hébergement a été placé en mode « maintenance » par nos administrateurs ou s'il ne dispose pas des droits d'accès FTP (droits `chmod`) suite à une action de votre part.
+>
+> En effet, les droits `chmod` à la racine de votre hébergement doivent être obligatoirement en `705` pour que cette méthode fonctionne.
+>
 
 > [!primary]
+> **Site en mode « maintenance »**
 > 
-> Pour déterminer si votre site a été placé en mode "maintenance", référez-vous à notre guide [Que faire en cas de page « 403 forbidden » ?](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external}. 
+> Pour déterminer si votre site a été placé en mode « maintenance », référez-vous à notre guide [Que faire en cas de page « 403 forbidden » ?](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/). 
 > 
 > Dans ce cas de figure :
-> - Un mail est envoyé au [contact](https://docs.ovh.com/fr/customer/gestion-des-contacts/#acceder-a-la-gestion-des-contacts) "administrateur" de l'hébergement par nos équipes. 
-> - Le statut "maintenance" apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie `Web Cloud`{.action}, en cliquant sur votre service dans la section `Hébergement`{.action} puis sur la page `Informations générales`{.action}.
-> - Le(s) site(s) hébergé(s) affiche(nt) une page "403 Forbidden".
+>
+> - Un e-mail est envoyé au [contact administrateur](https://docs.ovh.com/fr/customer/gestion-des-contacts/#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
+> - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergement`{.action} puis sur l'onglet `Informations générales`{.action}.
+> - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 >
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
@@ -91,7 +92,7 @@ Prenez quelques instants afin de vous assurer qu'aucun fichier ne sera perdu sui
 
 Dès que vous êtes prêt à initier la sauvegarde, cliquez sur le bouton `Valider`{.action}.
 
-### Restaurer un fichier depuis un logiciel ou une interface
+### Restaurer un fichier depuis un logiciel ou une interface <a name="viainterface"></a>
 
 La manipulation s’effectue en plusieurs étapes. Assurez-vous d'être en possession du mot de passe de l'utilisateur FTP vous permettant d'accéder à votre espace de stockage. 
 
