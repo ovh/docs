@@ -20,6 +20,11 @@ Votre offre d'hébergement web OVHcloud vous donne accès à un espace de stocka
 
 ## En pratique
 
+> [!primary]
+> 
+> Les sauvegardes proposées par OVHcloud pour les hébergements mutualisés sont non contractuelles. Nous vous les proposons en complément de vos services afin de vous aider dans les situations urgentes. Nous vous recommanderons toujours d'effectuer le plus régulièrement possible vos propres sauvegardes pour pallier aux éventuelles pertes de données que vous pourriez rencontrer.
+> 
+
 Avant de débuter, assurez-vous que les dates de restauration proposées peuvent vous permettre de restaurer l'espace de stockage de votre hébergement web à la date souhaitée :
 
 - le jour même, à 00 h 01 du matin ;
