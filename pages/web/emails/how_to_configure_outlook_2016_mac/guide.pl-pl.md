@@ -22,8 +22,6 @@ Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych progra
 
 > [!primary]
 >
-> Czy używasz wcześniejszej wersji programu Outlook zainstalowanej na urządzeniu Mac? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2011 na urządzeniu Mac](https://docs.ovh.com/pl/emails/przewodnik_dotyczacy_konfiguracji_programu_outlook_2011_w_systemie_mac/){.external}.
->
 > Używasz programu Outlook 2016 na urządzeniu z systemem Windows? Zapoznaj się z naszą dokumentacją: [Konfiguracja konta e-mail w programie Outlook 2016 na urządzeniu z systemem Windows](https://docs.ovh.com/pl/emails/konfiguracja-outlook-2016/){.external}.
 >
 

@@ -58,7 +58,7 @@ Nuestro soporte no está facultado para prestar asistencia directa en este tipo 
 
 
 ## Restauración del sitio
-WordPress está compuesto por archivos y una base de datos. Puede restaurar sus archivos a una fecha anterior. OVHcloud le ofrece un historial de 3 semanas de los archivos alojados en su alojamiento. En cuanto a la base de datos, es posible realizar una copia de hace 7 días.
+WordPress está compuesto por archivos y una base de datos. Puede restaurar sus archivos a una fecha anterior. OVHcloud le ofrece un historial de 2 semanas de los archivos alojados en su alojamiento. En cuanto a la base de datos, es posible realizar una copia de hace 7 días.
 La restauración no permite corregir los fallos de seguridad, sino que es necesario buscar el fallo y corregirlo. 
 La restauración sustituye los datos presentes por el contenido de la copia de seguridad.
 

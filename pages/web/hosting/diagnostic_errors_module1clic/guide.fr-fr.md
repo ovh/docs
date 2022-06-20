@@ -159,7 +159,7 @@ Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](../cre
 
 Vérifiez également ses identifiants en vous [connectant directement](../connexion-base-de-donnees-serveur-bdd/#en-pratique) à votre serveur de bases de données puis relancez l'installation de votre module.
 
-### Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'
+### « Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db' »
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 

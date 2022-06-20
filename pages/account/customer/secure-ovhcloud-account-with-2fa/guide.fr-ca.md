@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud e
 section: Sécurité
 ---
 
-**Dernière mise à jour le 30/12/2021**
+**Dernière mise à jour le 17/06/2022**
 
 ## Objectif
 
@@ -116,7 +116,7 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 |Particulier|- Justificatif d’identité (carte d’identité, permis de conduire, passeport) mentionnant le nom complet, la date de naissance et la date d’expiration, au nom du titulaire du compte OVHcloud.<br><br>- Justificatif de domicile correspondant à celui enregistré sur le compte OVHcloud, datant de moins de deux mois.|
 |Société|- Justificatif d’identité (carte d’identité, permis de conduire, passeport) mentionnant le nom complet, la date de naissance et la date d’expiration, au nom du titulaire du compte OVHcloud, ou au nom d'une personne autorisée à représenter l'entreprise.<br><br>- Justificatif de domicile de l'entreprise datant de moins de deux mois, correspondant à l'adresse enregistrée sur le compte OVHcloud.|
 
-Une fois vos justificatifs réunis, contactez le support OVHcloud par e-mail à l'adresse `validation@ovh.ca`.
+Une fois vos justificatifs réunis, contactez le support OVHcloud par par téléphone au 1-855-684-5463.
 
 > [!warning]
 >

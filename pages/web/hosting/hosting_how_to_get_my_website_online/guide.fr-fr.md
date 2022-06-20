@@ -84,7 +84,7 @@ Une fois tous les éléments en votre possession, la connexion à l'espace de st
 
 #### 3. Télécharger les fichiers sur l'espace de stockage
 
-Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers.** Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour plusieurs sites internet, vous avez sûrement déclarer plusieurs **Multisite**.
+Une fois connecté à votre espace de stockage, il ne vous reste plus qu'à mettre en ligne les fichiers de votre site. **Nous vous invitons à être particulièrement attentif quant au répertoire sur lequel vous allez télécharger les fichiers.** Dans un cas d'utilisation classique, le site doit être téléchargé dans le dossier « www ». Cependant, si vous utilisez votre hébergement pour plusieurs sites internet, vous avez très probablement déclaré plusieurs **Multisite**.
 
 Pour vérifier le dossier dans lequel doit être publié le site internet, positionnez-vous sur l'onglet `Multisite`{.action} depuis votre espace client OVHcloud. Dans le tableau qui s'affiche, pour le domaine souhaité, regardez le `Dossier racine`{.action} qui s'affiche. Publiez alors les fichiers du site dans ce dernier.
 

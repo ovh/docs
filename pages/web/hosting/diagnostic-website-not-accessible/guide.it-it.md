@@ -17,7 +17,7 @@ Order: 1
 In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](../../domains/web_hosting_gestisci_il_tuo_server_dns/#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#gofurther)):
 
 |Browser|Messaggio di errore|
-|-|---|
+|--|--|
 |Chrome:<br>"Impossibile raggiungere il sito"|![cantbereached_chrome](images/cantbereached_chrome.png){.thumbnail}|
 |Firefox :<br>"Uhm… non riusciamo a trovare questo sito."|![cantbereached_firefox](images/cantbereached_firefox.png){.thumbnail}|
 |Edge:<br>"Impossibile raggiungere questa pagina"|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
@@ -91,7 +91,7 @@ Il tuo sito Web sarà disponibile entro 48 ore.
 
 > [!warning]
 >
-> Prima di effettuare qualsiasi operazione, contatta il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+> In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) prima di effettuare qualsiasi operazione.
 >
 > È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](../../domains/web_hosting_modifica_la_tua_zona_dns/#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
