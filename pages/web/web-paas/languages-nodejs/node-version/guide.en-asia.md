@@ -17,9 +17,7 @@ In such cases, use a version manager to install the specific version you want to
 You could use one of these:
 
 - [Use `n`](#use-n)
-
 - [Use `nvm`](#use-nvm)
-
 
 Both of the recommendations use a `.nvmrc` file to specify the desired Node.js version.
 You could also specify a different file or use [environment variables](../../development-variables).
@@ -29,28 +27,24 @@ You could also specify a different file or use [environment variables](../../dev
 The [`n` package](https://github.com/tj/n) works for various Unix-like systems,
 including Windows Subsystem for Linux.
 
-1. Add the desired Node.js version to a `.nvmrc` file in your app root:
+**Step 1 :** Add the desired Node.js version to a `.nvmrc` file in your app root:
 
 
 ```yaml location=".nvmrc"
 v16.13.2
 ```
 
-<ol start="2">
-  <li>Add it as a dependency:</li>
-</ol>
-
+**Step 2 :** Add it as a dependency:
 
 ```yaml {location=".platform.app.yaml"}
 dependencies:
     nodejs:
         n: "*"
 ```
+
 Adding it as a dependency ensures it's cached for future builds.
 
-<ol start="3">
-  <li>Set the location for the Node.js version using the <code>N_PREFIX</code> environment variable:</li>
-</ol>
+**Step 3 :** Set the location for the Node.js version using the `N_PREFIX` environment variable:
 
 
 ```yaml {location=".platform.app.yaml"}
@@ -59,9 +53,7 @@ variables:
         N_PREFIX: /app/.global
 ```
 
-<ol start="4">
-  <li>Install the specified version of Node.js in a <a href="../../configuration-app/build/#build-hook"><code>build</code> hook</a>:</li>
-</ol>
+**Step 4 :** Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook):
 
 
 ```yaml {location=".platform.app.yaml"}
