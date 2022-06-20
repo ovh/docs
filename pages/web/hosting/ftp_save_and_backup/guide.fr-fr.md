@@ -56,7 +56,10 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > 
 > Afin de déterminer si votre site a été placé en mode maintenance par nos équipes, je vous invite à vous référer à notre [guide](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external} sur le sujet. 
 > 
-> En effet, dans ce cas de figure, un mail est envoyé au contact "administrateur" de l'hébergement par nos équipes, le statut "maintenance" apparaît sur la page `Informations générales`{.action} de votre `Hébergement`{.action} dans votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR){.external} et le(s) site(s) hébergé(s) affiche(nt) une page "403 Forbidden".
+> En effet, dans ce cas de figure :
+> - Un mail est envoyé au contact "administrateur" de l'hébergement par nos équipes. 
+> - Le statut "maintenance" apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR){.external} partie `Web Cloud`{.action}, en cliquant sur votre service dans la section `Hébergement`{.action} puis sur la page `Informations générales`{.action}.
+> - Le(s) site(s) hébergé(s) affiche(nt) une page "403 Forbidden".
 >
 
 Pour effectuer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?onsuccess=https%3A//www.ovh.com/manager&ovhSubsidiary=FR){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `FTP - SSH`{.action} et cliquez sur le bouton `Restaurer une sauvegarde`{.action}.
