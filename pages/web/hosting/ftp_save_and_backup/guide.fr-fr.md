@@ -61,7 +61,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 
 > [!primary]
 > 
-> Afin de déterminer si votre site a été placé en mode maintenance par nos équipes, je vous invite à vous référer à notre [guide](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external} sur le sujet. 
+> Afin de déterminer si votre site a été placé en mode "maintenance" par nos équipes, je vous invite à vous référer à notre [guide](https://docs.ovh.com/fr/hosting/diagnostic-403-forbidden/){.external} sur le sujet. 
 > 
 > En effet, dans ce cas de figure :
 > - Un mail est envoyé au contact "administrateur" de l'hébergement par nos équipes. 
