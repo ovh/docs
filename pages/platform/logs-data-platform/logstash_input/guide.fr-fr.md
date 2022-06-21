@@ -47,7 +47,7 @@ Following is a small configuration file for familiarizing yourself with the idea
          type => syslog
      }
  }
- 
+
  #Filter
  #The filter part applies a grok filter that will parse the message
  #It will also create new fields with information contained in the message.
@@ -61,7 +61,7 @@ Following is a small configuration file for familiarizing yourself with the idea
          timezone => "Europe/Paris"
      }
  }
- 
+
  #Output
  #The output part will then encode everything in a gelf format and send it to Logs Data Platform on the TCP GELF endpoint
  #Note that you need to change the token to use the one of your stream.
@@ -121,8 +121,8 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 - The Manager will then ask you to put a elegant name and a wonderful description.
 - Select your Software : Select **Logstash 7.x**.
 - Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
-- If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it. 
-- Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream. 
+- If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it.
+- Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream.
 - Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](../twitter){.ref}).
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
@@ -142,11 +142,11 @@ There is 3 sections in this page :
 - The Filter section where you put the filter part.
 - The grok patterns sections where you can create your own grok patterns.
 
-Note that unlike a classic config file, here you don't have to enclose the input grammar configuration. 
+Note that unlike a classic config file, here you don't have to enclose the input grammar configuration.
 
 ```ruby
 input {
- 
+
 }
 ```
 We will do it automatically for you.

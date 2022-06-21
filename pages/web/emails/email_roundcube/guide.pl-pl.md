@@ -1,593 +1,345 @@
 ---
-title: 'Webmail - Przewodnik dotyczący interfejsu RoundCube'
-excerpt: 'Zarządzanie e-mailami, kontaktami i folderami'
+title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
 slug: webmail_przewodnik_dotyczacy_interfejsu_roundcube
 section: 'Pierwsze kroki'
 order: 05
 ---
 
-## Wprowadzenie
-Wprowadziliśmy usługę Webmail Roundcube, abyś miał  dostęp do swoich maili z dowolnego miejsca. Za pomocą interfejsu WWW możesz odbierać, wysyłać i zarządzać wiadomościami email, wystarczy dostęp do Internetu.
-Usługa OVHcloud Webmail działa w oparciu o protokół HTTPS z szyfrowaniem SSL. Taka forma połączenia zapewnia pełne bezpieczeństwo w przypadku logowania z publicznej sieci WIFI. 
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 31-05-2022**
+
+## Wprowadzenie
+
+Dzięki usłudze MX Plan OVHcloud możesz wysyłać i odbierać e-maile za pośrednictwem programu pocztowego lub webmaila. OVHcloud dostarcza usługę poczty elektronicznej o nazwie RoundCube, która pozwala za pośrednictwem przeglądarki internetowej na dostęp do konta e-mail.
+
+**Dowiedz się, jak korzystać z interfejsu Webmail RoundCube dla kont e-mail OVHcloud**
+
+## Wymagania początkowe
+
+- Posiadanie rozwiązania poczty elektronicznej OVHcloud **MX Plan**, zaproponowanego w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/), zawartego w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub zamówionego oddzielnie jako rozwiązanie autonomiczne.
+- Dane do logowania do konta e-mail MX Plan, które chcesz sprawdzić Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
 
 ## W praktyce
 
-### Dostęp do interfejsu
+### Logowanie do interfejsu Webmail RoundCube
 
-- Poprzez stronę OVHcloud.pl
+Do zobaczenia na stronie <https://www.ovh.com/pl/mail/>. Wprowadź adres e-mail i hasło, a następnie kliknij `Łącze`{.action}. 
 
-Wejdź na stronę [OVHcloud.pl](http://www.ovh.pl) i kliknij na "Webmail" w górnej części strony.
+![hosting](images/webmail_login.png){.thumbnail}
 
-![](images/img_2413.jpg){.thumbnail}
+Zostaniesz wówczas przekierowany do interfejsu RoundCube.
 
+![hosting](images/roundcube01.png){.thumbnail}
 
-- Interfejs logowania
+> [!warning]
+> 
+> Jeśli zostaniesz przekierowany do interfejsu **O**utlook **W**eb **A**ccess (OWA), oznacza to, że jesteś na najnowszej wersji usługi MX Plan. Aby uzyskać więcej informacji na temat oferty MX Plan, sprawdź naszą stronę [Pierwsze kroki z ofertą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
+>
+> Aby zapoznać się z interfejsem **OWA**, zapoznaj się z naszym przewodnikiem [Sprawdź jego konto e-mail w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/).
 
-Dotarłeś  do interfejsu wpisywania adresu e-mail. Interfejs ten pozwala na bezpośrednie przekierowanie do interfejsu Webmail związanego z usługą OVHcloud, a której korzystasz.
+### Ogólny interfejs webmail RoundCube <a name="general-interface"></a>
 
-Jeśli znasz typ swojej usługi w OVHcloud, możesz zalogować się bezpośrednio do wybranego Webmaila klikając na .
+Po zalogowaniu się do konta e-mail masz dostęp do głównego okna Roundcube, które składa się z 3 stref:
 
-Klikając na , otrzymasz dostęp do przewodników związanych z wybranym interfejsem Webmail.
+- [**Lewa**](#leftcolumn) kolumna: drzewo konta e-mail, składające się z folderów i podfolderów. Głównym folderem jest `Odebrane`.
 
-![](images/img_2414.jpg){.thumbnail}
-Zaznaczając opcję "Zapamiętaj ten adres e-mail" poszczególne wpisywane adresy zostaną zapisane w menu kontekstowym w górnym prawym rogu strony. Możesz w prosty sposób zalogować się bezpośrednio do wybranego adresu.
+- [**Okno wyższe**](#topwindow): listę e-maili zawartych w wybranym katalogu w kolumnie z lewej strony.
 
+- [**Okno dolne**](#lowerwindow): treść wybranego e-maila w górnej części okna.
 
-- Interfejs logowania Roundcube
-Po dokonaniu wyboru pojawi się strona interfejsu Webmail. Jeśli adres nie jest wpisany, wpisz go od nowa.
+#### Zarządzanie folderami (kolumna po lewej stronie) <a name="leftcolumn"></a>
 
-Wpisz adres e-mail i hasło i kliknij na "Zaloguj".
+W tej strefie znajdują się katalogi znajdujące się na Twoim koncie e-mail.
 
-![](images/img_2415.jpg){.thumbnail}
+Aby lepiej zarządzać folderami, kliknij koło zębate na dole kolumny, a następnie kliknij `Zarządzaj folderami`{.action}
 
+![hosting](images/roundcube02.png){.thumbnail}
 
-### Skrzynka odbiorcza
-Po zalogowaniu będziesz miał dostęp do skrzynki odbiorczej oraz do wysyłanie e-maili. 
+Aby utworzyć katalog, kliknij przycisk `+`{.action} na dole kolumny `Foldery`.
 
-W kolumnie po lewej stronie znajdują się główne katalogi konta e-mail: wiadomości otrzymane i wysłane.
+Aby usunąć katalog, wybierz odpowiedni folder, kliknij koło zębate w dolnej kolumnie `Foldery`, a następnie `Usuń`{.action}. Aby usunąć zawartość, ale zachować folder, kliknij `Opróżnij`{.action}.
 
-W tej samej kolumnie w stopce strony znajduje się dostęp do [ustawień katalogów](#DOSSIERS) i do informacji na temat miejsca zajętego przez konto e-mail.
+Pola, które należy zaznaczyć na poziomie katalogów odpowiadają "subskrypcjom". Subskrypcja określa, czy folder ma się wyświetlać na poziomie interfejsu webmail lub programu pocztowego, zachowując jednocześnie zawartość folderu. Celem jest tylko ukrycie lub wyświetlenie folderu na koncie e-mail.
 
-Z prawej strony można sprawdzić wszystkie otrzymane e-maile oraz następujące informacje:
+> [!primary]
+>
+> Katalogi z szarym kratką do zaznaczenia są specjalnymi katalogami. Nie można ich usunąć lub usunąć z abonamentu.
 
+#### Lista e-maili otrzymanych / wysłanych (okno wyższe) <a name="topwindow"></a>
 
-- nadawca
-- temat
-- status wiadomości (przeczytana lub nie przeczytana)
-- ewentualne znaki przypisane do wiadomości
-- rozmiar każdej wiadomości
-- obecność załącznika
+W oknie tym wyświetla się zawartość wybranego katalogu w kolumnie z lewej strony. 
 
+##### **Typ wyświetlacza**
 
-Domyślnie niektóre kolumny się nie pojawiają. Jest tak w przypadku priorytetów nadanych wiadomościom. Można jednak zmienić sposób wyświetlania za pomocą opcji opisanej poniżej.
+Okno jest przedstawione w formie, która może być spersonalizowana. W tym celu kliknij ikonkę koła zębatego w lewym górnym rogu tego okna.
 
-![](images/img_1271.jpg){.thumbnail}
+![hosting](images/roundcube03.png){.thumbnail}
 
+Można dokonać konfiguracji:
 
-#### Opcje wyświetlania i sortowania
-Aby uzyskać dostęp do tej opcji, kliknij na ikonkę koła zębatego z lewej strony głównej listy e-maili, obok Tematu.
+- **Układ**: pozwala określić sposób instalacji okna do zarządzania kontem e-mail.
+- **Kolumny**: pozwala na dodawanie kolumn do wyświetlania (priorytety dla e-maili, itp.).
+- **Porządek sortowania**: pozwala wybrać kolumnę, w której zostanie przeprowadzona domyślna sortowanie.
+- **Kierunek sortowania**: pozwala wybrać kolejność sortowania w górę lub w dół, w zależności od kolumny sortowania.
 
-Opcja ta pozwala na:
+##### **Operacja na wybranym e e-mailu**
 
-- Dodawanie kolumn do wyświetlania (priorytety e-maili, itp.);
-- Wybieranie kolumny, dla której będzie wykonywane domyślne sortowanie;
-- Wybieranie kolejności sortowania (rosnąco lub malejąco).
+Jeśli wybrano wiadomość e-mail, możesz podjąć działania w tym celu. Poniżej możesz wykonać następujące czynności:
 
+- `Odpowiedz`{.action}: odpowiadać bezpośrednio do nadawcy.
+- `Odpowiedz wszystkim`{.action}: odpowiadać bezpośrednio wszystkim odbiorcom w polach "A" i "Copie".
+- `Przekaż`{.action}: przenieść wybrany e-mail do jednego lub kilku odbiorców.
+- `Usuń`{.action}: umieścić wybrany e-mail w sekcji "Kosz".
+- `Spam`{.action}: umieść wybrany e-mail bezpośrednio w skrzynce pocztowej ("Junk"), zakwalifikować go jako **spam**.
+- `Oznacz`{.action}: określić ręcznie status e-maila.
+- `Więcej`{.action} 
+    - `Drukuj wiadomość`{.action}.
+    - `Pobierz (.eml)`{.action}: pobrać nagłówek wiadomości e-mail i jej treść.
+    - `Edytuj jako nową`{.action}: utworzyć nowy e-mail na podstawie wybranego e-maila.
+    - `Pokaź źródło`{.action}: wyświetlić email w jego wersji pierwotnej w nagłówku.
+    - `Przenieś do`{.action}: przenieść e-mail do folderu.
+    - `Kopiuj do`{.action}: skopiować e-mail do folderu.
+    - `Otwórz w nowym oknie`{.action}.
 
-Po dokonaniu wyboru kliknij na "Zapisz".
+![hosting](images/roundcube04.png){.thumbnail}
 
-![](images/img_1281.jpg){.thumbnail}
+> [!primary]
+>
+> Jeśli osoba z Twojej korespondencji poprosi o przesłanie jej wiadomości e-mail z potwierdzeniem odbioru, otrzymasz następujący komunikat: `nadawca tej wiadomości poprosił o powiadomienie, kiedy przeczytasz tę wiadomość. Czy chcesz poinformować nadawcę?`.
+> 
 
+##### **Wyszukaj e-mail**
 
-#### E-maile i ich statusy
-Webmail RoundCube bardzo dobrze zarządza głównymi opcjami związanymi z e-mailami (potwierdzenie przeczytania, załączniki, ochrona życia prywatnego). 
-Zrzut ekranu przedstawia globalny widok wszystkich funkcji.
+Narzędzie wyszukiwania jest dostępne w górnej prawej części interfejsu.
 
-Liczba nie przeczytanych e-maili pojawia się w kolumnie z lewej strony obok tekstu Odebrane.
-Nie przeczytana wiadomość jest oznaczona grubszą czcionką w części z prawej strony.
+Kliknij strzałkę po prawej stronie lupy, aby wyświetlić filtry wyszukiwania.
 
-W przypadku każdej wiadomości można skorzystać z następujących funkcji:
+#### Treść wiadomości e-mail (okno dolne) <a name="lowerwindow"></a>
 
-- Odpowiedz: można odpowiedzieć bezpośrednio nadawcy;
-- Odpowiedz wszystkim: można odpowiedzieć wszystkim adresatom widocznym w polu "Do" i "Kopia";
-- Przekaż: pozwalana na przekazanie wybranej wiadomości wybranym adresatom;
-- Usuń:  pozwala na przeniesienie wybranej wiadomości do "Kosza" ;
-- Spam: pozwala na umieszczenie wybranej wiadomości w folderze Spam;
-- Oznacz: zobacz kolejny paragraf.
-- ...Więcej: zobacz kolejny paragraf.
+Jeśli na liście zostanie wybrany e-mail, zostanie on wyświetlony w dolnym oknie.
 
+Skróty po prawej stronie znajdują się następujące funkcje:
 
-Jeśli dana wiadomość jest oznaczona jako przetwarzana, pojawi się czerwona flaga w kolumnie przetwarzania.
+- Wyświetl w formacie HTML (domyślnie)
+- Wyświetl w formacie tekstowym
+- Odpowiedz
+- Odpowiedz wszystkim
+- Przekaż
+- Otwórz w nowym oknie 
 
-Jeśli dana wiadomość ma przypisany priorytet, wyświetla się strzałka ustawiona w górę  lub w dół.
+![hosting](images/roundcube05.png){.thumbnail}
 
-![](images/img_1282.jpg){.thumbnail}
-Jeśli osoba pisząca do Ciebie skonfiguruje potwierdzenie przeczytania wiadomości, otrzymasz następujący komunikat:
-i]Nadawca tej wiadomości chce zostać powiadomiony o przeczytaniu tej wiadomości. Czy chcesz powiadomić nadawcę?
+### Konfiguracja ustawień interfejsu Roundcube
 
+Kolejne rozdziały niniejszego przewodnika odpowiadają zakładkom, które tworzą część `Preferencje`{.action} w `Ustawienia`{.action} Roundcube. Opis jest niewyczerpujący.
 
-#### Oznaczenie wiadomości
-Gdy klikniesz na opcję "Oznacz", otrzymasz to menu. 
-
-Możesz więc oznaczyć wiadomość, usunąć oznaczenie i oznaczyć jako nie przeczytaną wiadomość, która została przeczytana.
-
-![](images/img_1277.jpg){.thumbnail}
-
-
-#### ...Więcej
-Po kliknięciu na opcję blue]"...Więcej", otrzymasz takie menu.
-
-Możesz więc wybrać opcję:
-
-- Drukuj wiadomość: otwiera wiadomość w nowym oknie i proponuje wydrukowanie jej; 
-- Pobierz: pozwala na pobranie wiadomości w formacie .eml ;
-- Edytuj jako nową: pozwala na edycję wiadomości e-mail z zachowaniem oryginalnego formatu;
-- Pokaż źródło: pozwala na wyświetlenie pełnego źródła wiadomości.
-- Otwórz w nowym oknie: pozwala na wyświetlenie wiadomości w nowym oknie (użyteczne w przypadku sprawdzania kilku wiadomości jednocześnie).
-
-
-
-![](images/img_1278.jpg){.thumbnail}
-
-
-### Ustawienia
-Zaloguj się do interfejsu Webmail RoundCube, aby uzyskać dostęp do tej funkcji. 
-Kliknij na ikonkę koła zębatego w górnym prawym rogu.
-
-![](images/img_1272.jpg){.thumbnail}
-
+![hosting](images/roundcube06.png){.thumbnail}
 
 #### Interfejs użytkownika
-Po kliknięciu na ikonkę koła zębatego pojawi się przycisk Interfejs użytkownika. W tej części można zmieniać elementy takie jak język, format daty i godziny, wygląd interfejsu.
 
-![](images/img_1436.jpg){.thumbnail}
+Tutaj zdefiniuj `język`, w którym interfejs Roundcube jest używany, `strefę czasową`, `format godzinowy` i `format daty`.
 
+Opcja `ładne daty` pozwala na wyświetlenie daty odbioru/wysłania z terminami względnymi, takimi jak "Dzisiaj", "Wczoraj", itp.<br>
+**Na przykład**: jesteśmy **19/05/2022**, e-mail wysłany/otrzymany w dniu **17/05/2002** o **17:38** zostanie wyświetlony w dniu **Śro 17:38**, ponieważ e-mail odpowiada poprzedniemu wtorkowi.
+
+W polu `Po usunięciu elementu listy wyświetl następny` oznacza, że po usunięciu lub przesunięciu w e-mailu element dolnej linii zostanie systematycznie wybrany, niezależnie od kolejności sortowania.
 
 #### Widok skrzynki pocztowej
-W części Widok skrzynki pocztowej można zmieniać liczbę e-maili wyświetlanych w interfejsie. Można również zadecydować o nie wyświetlaniu bezpośrednio wybranych e-maili.
 
-![](images/img_1292.jpg){.thumbnail}
-
+Zdefiniuj tutaj ergonomię, aby wyświetlać i działać na e-mailach. Opcja `Układ` pozwala na wyświetlenie 3 okna opisanych w ogólnej części [Interfejs interfejsu Webmail RoundCube](#topwindow).
 
 #### Wyświetlanie wiadomości
-W części Wyświetlanie wiadomości można wybrać sposób wyświetlania w interfejsie (HTML, wyświetlanie obrazków, kodowanie znaków).
 
-![](images/img_1287.jpg){.thumbnail}
-
+Określ sposób wyświetlania e-maili.<br>
+Zalecamy posiadanie kratki `Domyślny HTML`, aby upewnić się, że e-maile sformatowane przez nadawcę wyświetlają się poprawnie.<br>
+Zalecamy również zachowanie opcji `Zezwól na zdalne zasoby (obrazki, style)` na `nigdy`. Dzięki temu nie można ładować elementów e-maila, który wygląda złośliwie.
 
 #### Tworzenie wiadomości
-W części Tworzenie wiadomości można wybrać różne elementy związane z redagowaniem wiadomości takie jak format, potwierdzenie otrzymania, itp. 
 
-Pozostałe opcje są widoczne na zrzucie ekranu. 
+Określ domyślną formę podczas tworzenia wiadomości e-mail lub odpowiedzi.<br>
+Zalecamy, aby włączyć opcję `Twórz wiadomości HTML` na `zawsze`, aby korzystać domyślnie z narzędzi edycji HTML i nie zmieniać podpisu HTML.
 
+#### Kontakty
 
-- W nowym interfejsie Roundcube  ("Larry") opcja "Tworzenie wiadomości w formacie HTML" jest ustawiona domyślnie tylko w przypadku "odpowiedzi na wiadomości HTML".
-
-
-Można zmienić tą wartość na "zawsze", żeby wysyłać wiadomości w formacie HTML.
-
-![options_rc_en](images/options_RC_en.PNG){.thumbnail}
-
-
-#### Książka adresowa
-W części Książka adresowa można wybrać domyślną książkę adresową (jeśli utworzono kilka [książek adresowych](#CARNET)) oraz opcje sortowania i wyświetlania kontaktów.
-
-Informacje na temat innych dostępnych opcji znajdują się na zrzucie ekranu.
-
-![](images/img_1289.jpg){.thumbnail}
-
+Spersonalizuj układ informacji w książce adresowej.
 
 #### Foldery specjalne
-W części Foldery specjalne można zdefiniować, gdzie mają być umieszczane e-maile uważane za Kopie robocze, Wysłane/b], Spam oraz e-maile wrzucane do Kosza.
 
-![](images/img_1290.jpg){.thumbnail}
+Roundcube dysponuje 4 specjalnymi katalogami: `Kopie robocze`, `Wysłane`, `Spam`, `Kosz`.
 
+Nie zalecamy ich modyfikacji, ale możliwe jest przypisanie zachowania jednego folderu innemu folderowi utworzonemu w późniejszym czasie dzięki rozwijanym menu.<br>
+**Na przykład** możesz przypisać zachowanie "Motyle" do innego utworzonego przez Ciebie folderu. E-maile, które zostaną tam zapisane, będą traktowane jako szkice do czasu ich faktycznego wysłania.
 
 #### Ustawienia serwera
-W części Ustawienia serwera można skonfigurować opcje związane z usuwaniem e-maili z serwera (z poziomu Webmaila).
 
-![](images/img_1291.jpg){.thumbnail}
-Przykład usuwania: 
-Nie otrzymujesz e-maili. Twoja skrzynka jest przepełniona. Chcesz usunąć wiadomości, aby zrobić porządek i ponownie otrzymywać e-maile. Otrzymujesz jednak komunikat z błędem.
-Co się dzieje?
-Podczas usuwania wiadomości e-mail została ona skopiowana do kosza zanim usunięto ją z folderu wiadomości odebranych (w sposób niewidoczny dla użytkownika). Skrzynka była już pełna, wykonanie kopii nie było możliwe. Stąd komunikat z błędem!
-Jak temu zapobiec?
-W części Ustawienia serwera zaznacz opcję "Usuń wiadomości, gdy przenoszenie do Kosza zawiedzie". Od tej pory będziesz mógł usuwać e-maile bez żadnych problemów.
+W tej zakładce możesz zoptymalizować obszar zajęty na koncie e-mail. Opcja `Przy wylogowaniu opróżnij Kosz` pozwala bowiem uniknąć kumulacji elementów, które zostały usunięte. Opcja `Kasuj wiadomości bezpośrednio w folderze Spam` automatycznie usunie wszystkie e-maile uznawane za SPAM.
 
+> [!warning]
+> 
+> Odradzamy włączenie opcji `Kasuj wiadomości bezpośrednio w folderze Spam` IP w przypadku, gdy fałszywie dodatni (błędnie zadeklarowany jako "SPAM") zostanie uznany za SPAM dla serwera poczty przychodzącej. W przypadku gdy e-mail jest umieszczony w folderze "Porady", istnieje możliwość sprawdzenia, czy e-mail jest zgodny z prawem.
 
-### Foldery
+### Zarządzanie tożsamością i jej podpisem <a name="identity"></a>
 
-#### Tworzenie foleru
+W Roundcube kliknij `Ustawienia`{.action} na górnym pasku, a następnie `Tożsamości`{.action} w kolumnie po lewej stronie. "Tożsamości" umożliwia personalizację informacji wysyłanych do odbiorców, np. nazwy wyświetlacza lub podpisu.
 
-- Krok 1:
+![hosting](images/roundcube07.png){.thumbnail}
 
-Aby utworzyć własny folder, kliknij na "+".
+#### Skonfiguruj atrybuty tożsamości 
 
-![](images/img_1293.jpg){.thumbnail}
+- **Nazwa wyświetlacza**: nazwa ta pojawi się w części "nadawca" odbiorcy
+- **E-mail**: odpowiada adresowi, z którego wysłany jest e-mail.
+- **Organizacja**: pole przeznaczone dla nazwy spółki, stowarzyszenia lub innego podmiotu.
+- **Odpowiedz**: przypisać inny adres e-mail odpowiedzi niż adres nadawcy.
+- **Odpowiedź do**: umieścić w ukrytej kopii adres e-mail podczas wysyłki.
+- **Ukryta kopia**: w przypadku gdy istnieje więcej niż jedna tożsamość (podpisy), domyślnie przydziela się tę tożsamość.
+- **Podpis**: personalizuj stopkę e-maila podczas jego pisania (nazwisko, imię, stanowisko zajęte, zdania, zdjęcia...).
+- **Podpis w HTML**: aktywuje format HTML na podpisze. 
 
+> [!alert]
+> 
+> Uzupełnienie pola **E-mail** innym adresem e-mail niż adres, na którym jesteś zalogowany, jest uważane za kradzież tożsamości elektronicznej (*spoofing*). Adres IP używany do wysyłki może być "zablokowany" i/lub oznaczony jako "SPAM" u odbiorców. 
 
-- Krok 2:
+#### Dodanie podpisu
 
-Utworzymy folder "Test OVH". Zostanie on umieszczony w INBOX. E-maile będą się wyświetlały w formie listy.
+Domyślnie pole `Podpis` znajduje się w "tekście niekodowanym". Format ten nie pozwala na zaawansowane edycje lub wstawić obrazek do podpisu. Aby móc korzystać z zaawansowanych opcji edycji podpisu, zaleca się aktywację trybu HTML, klikając **Podpis HTML** pod ramką wprowadzania.
 
-INBOX to folder "Odebrane". Katalog "Test OVH" zostanie utworzony w skrzynce odbiorczej.
+> [!warning]
+> 
+> W związku z tym, jeśli podpis jest w formacie HTML, konieczne będzie przejście do trybu HTML do napisania e-maila. Możesz aktywować tę opcję domyślnie dla każdej edycji wiadomości e-mail, w sekcji `Ustawienia`{.action} interfejsu Roundcube.
+> Kliknij `Preferencje`{.action} w kolumnie po lewej stronie, a następnie `Tworzenie wiadomości`{.action}. W celu uzupełnienia **Zapisz e-maile HTML** wybierz `Zawsze`.
+>
 
-Kliknij na Zapisz.
+Aby dodać obraz do podpisu, obraz musi być przechowywany na serwerze (hosting OVHcloud lub inny).<br>
+**Telewizja obrazu z komputera nie pozwoli na jego wyświetlanie**.
 
-![](images/img_1294.jpg){.thumbnail}
+Kliknij przycisk `< >`{.action} na pasku narzędzi HTML, następnie wprowadź następujący kod, zastępując `your-image-url` adresem (URL) obrazu i `text-if-image-is-not-displayed` tekstem, który zastępuje obraz, jeśli nie może się wyświetlić.
 
-
-- Krok 3:
-
-Otrzymujemy informację, że Folder został utworzony.
-
-Będzie on widoczny wraz z następującymi folderami:
-. Drafts: Kopie robocze;
-. Junk: Spam;
-. Sent: Wysłane;
-. Trash: Kosz;
-
-Są to elementy INBOX.
-
-![](images/img_1295.jpg){.thumbnail}
-
-
-#### Edycja - Usuwanie folderu
-Usuwanie i edycja folderu też jest bardzo prosta. 
-
-Aby przystąpić do usunięcia, wybierz folder i kliknij na ikonkę koła zębatego w dolnej części strony. Masz do wyboru następujące opcje:
-usuń folder lub opróżnij. Możesz również sprawdzić  poziom zajętości skrzynki (w procentach).
-
-Aby zmodyfikować folder, kliknij na wybrany folder. Możesz zmienić nazwę folderu, folder nadrzędny, sposób wyświetlania. Możesz sprawdzaćliczbę wiadomości oraz zajętą przestrzeń. Link "Kliknij, aby otrzymać rozmiar folderu" pozwala na obliczenie rozmiaru e-maili z tego folderu (jeśli jest to liczba większa niż 0).
-
-![](images/img_1296.jpg){.thumbnail}
-/!\ Uwaga: Foldery Odebrane, Wysłane i Kosz nie mogą zostać zmodyfikowane.
-
-
-#### Właściwości katalogów głównych
-Foldery Odebrane, Wysłane i Kosz nie mogą zostać zmodyfikowane.
-
-Można zmienić tylko sposób wyświetlania listy. Dostępne są 2 opcje: "Lista" i "Wątki".
-
-![](images/img_1297.jpg){.thumbnail}
-
-
-### Tworzenie podpisu
-Aby utworzyć podpis, który będzie się pojawiał w każdej wysłanej wiadomości, kliknij na Ustawienia i Tożsamości.
-
-Kliknij na adres e-mail i wpisz elementy związane z podpisem.
-Domyślnie Nazwa i E-mail są już wpisane.
-Pozostałe opcje:
-. Organizacja: możesz wpisać nazwę firmy, stowarzyszenia lub innego podmiotu;
-. Odpowiedź do: chcesz, aby Twój rozmówca odpowiedział na inny adres e-mail niż ten, z którego piszesz;
-. Ukryta kopia: chcesz umieścić adres e-mail w ukrytej kopii dla całej wysyłki;
-. Domyślna: utworzyłeś jedną lub kilka tożsamości (podpisów) i chcesz, żeby ta była domyślną;
-. Podpis: chcesz spersonalizować stopkę swoich e-maili (nazwisko, imię, zajmowane stanowisko, zdania, obrazki,...);
-. Podpis w HTML: to co zostało zapisane w części Podpis zawiera kod HTML i/lub chcesz, aby podpis był kompatybilny z programami pocztowymi osób, które odbierają e-maile w HTML.
-
-Kliknij na Zapisz.
-
-Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
-[Wprowadzenie podpisu w formacie HTML](#SIGNATURE).
-
-![](images/img_1298.jpg){.thumbnail}
-
-
-#### Utworzenie podpisu z obrazkiem
-
-- Krok 1:
-
-Obrazek powinien być zainstalowany na serwerze (hosting OVHcloud lub inny).
-
-Zaznaczając Podpis w HTML pojawia się edytor WYSWYG*.
-Kliknij na kwadrat HTML, żeby otworzyć okno, które pozwoli na wprowadzenie kodu HTML. 
-Aby dodać obrazek, można dodać następujący kod:
-
-
-```
-<img src="url-do-obrazka" border="0" alt="tekst-jeśli-obrazek-się-nie-wyświetla" />
+```bash
+<img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
 ```
 
+![hosting](images/roundcube08.png){.thumbnail}
 
-Kliknij na Aktualizuj, aby potwierdzić zmiany.
+### Książka kontaktów
 
-* What You See is What You Get: To, co widzisz będzie tym, co otrzymasz.
+Kliknij `Kontakty`{.action} na górnym pasku, aby uzyskać dostęp do książki kontaktów. Jest on podzielony na **3 kolumny**:
 
-![](images/img_1299.jpg){.thumbnail}
+- **Grupy**: w książce adresowej możesz tworzyć grupy, aby sortować kontakty.
+- **Kontakt**: wyświetl kontakty w wybranej grupie lub książce adresowej.
+- **Właściwości kontaktu** lub **Dodaj kontakt**: okno to wyświetla się, gdy wybrany zostanie kontakt lub gdy zostanie utworzony. Możesz przeczytać lub zmienić dane kontaktu.
 
+![hosting](images/roundcube09.png){.thumbnail}
 
-- Krok 2:
+#### Grupy <a name="group"></a>
 
-Po potwierdzeniu aktualizacji obrazek wyświetla się w strefie edycji podpisu. 
+Grupy to podkategorie książki adresowej. Umożliwiają klasyfikowanie kontaktów jako podzbiorów. Na przykład, możesz łatwiej znaleźć kontakt w grupie, którą stworzyłeś, niż w całej książce adresowej. Dzięki temu możesz również wysyłać e-maile dodając grupę na odbiorcę, zamiast dodawać jeden do jednego z kontaktów grupy.
 
-Możesz również edytować tekst, dzięki różnym opcjom takim jak pogrubienie, kursywa, podkreślenie, wyrównanie akapitów, czcionka, rozmiar i kolor czcionki, itp.
+Aby utworzyć grupę, kliknij przycisk `+`{.action} w dolnej części kolumny `Grupy`. Zdefiniuj nazwę grupy i kliknij przycisk `Zapisz`{.action}, aby zatwierdzić.
 
-Kliknij na Zapisz. Pojawi się komunikat "Zapisano pomyślnie".
+![hosting](images/roundcube10.png){.thumbnail}
 
-Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
-[Wprowadzenie podpisu w formacie HTML](#SIGNATURE).
+Aby przypisać kontakt do jednej z grup, wybierz kontakt w kolumnie `Kontakty`, a następnie w oknie, które się pojawi, kliknij zakładkę `Grupy`{.action}. Zaznacz grupę, którą chcesz przydzielić do kontaktu.
 
-![](images/img_1300.jpg){.thumbnail}
+#### Kontakty <a name="contacts"></a>
 
+W kolumnie `Grupy` wybierz książkę adresową lub jedną z grup.
 
-#### Nowa tożsamość / nowy podpis
+> [!primary]
+> 
+> Po utworzeniu kontaktu z wybranej grupy kontakt zostanie automatycznie dodany do grupy.
 
-- Krok 1:
+Kliknij przycisk `+`{.action} w dolnej części kolumny `Kontakty`, aby utworzyć kontakt.
 
-Masz tylko jeden adres e-mail (na przykład w ofercie Start 10 M) lub chcesz zarządzać tylko jednym adresem e-mail przez interfejs Webmail. Możesz tworzyć tożsamości i/lub podpisy. 
-Dzięki temu możesz wysyłać wiadomości z innego konta e-mail nie wylogowując się ze swojej skrzynki e-mail.
+![hosting](images/roundcube11.png){.thumbnail}
 
-Podajemy następujący przykład:
-Mam konto e-mail support@ovh.net i chcę wysłać wiadomości jako no-reply@ovh.netale nie chcę się logować na konto e-mail no-reply@ovh.net poprzez interfejs Webmail.
+Następnie uzupełnij dane kontaktu.
 
-W części Tożsamości kliknij na "+", aby dodać nową tożsamość.
+> [!primary]
+> Możesz dodawać pola poprzez rozwijane menu `Dodaj pole...`{.action}, znajduje się pod polami `Imię` i `adres`.
 
-![](images/img_1301.jpg){.thumbnail}
+#### Importuj kontakty
 
+W oknie `Kontakty`{.action} na górnym pasku kliknij `importuj`{.action}, aby otworzyć okno importu.
 
-- Krok 2:
+- `Import z pliku`: wybierz plik CSV lub plik vCard na Twoim komputerze. Kontakty w pliku CSV muszą być oddzielone przecinkami. Plik nie może mieć więcej niż 20 MB.
+- `Importuj powiązania z grupami`: Jeśli kontakty w Twoim pliku są podzielone na grupy, możesz włączyć tę opcję, aby odnaleźć tę organizację lub pozostawić tę opcję na `żadnej` grupie, aby nie przydzielać do kontaktów.
+- `Zastąp całą książkę adresową`: Jeśli książka jest już skonfigurowana, zalecamy wyeksportowanie jej przed zaznaczeniem tej opcji lub upewnić się, że chcesz ją wymienić.
 
-W tym przykładzie utworzyliśmy tożsamość o nazwie Guides OVHcloud. Jest ona przypisana do adresu no-reply@ovh.net, który będzie widoczny o odbiorców wiadomości. Odpowiedź zostanie wysłana na adres support@ovh.net. Klikamy na Zapisz.
+![hosting](images/roundcube-import-contact.png){.thumbnail}
 
-Po zapisaniu nowa tożsamość pojawi się w kolumnie z tożsamościami.
+#### Eksportuj Kontakty Roundcube
 
-Aby wprowadzić podpis przypisany do tej tożsamości, przejdź do sekcji
-[Wprowadzenie podpisu w formacie HTML](#SIGNATURE).
+W oknie `Kontakty`{.action} na górnym pasku kliknij ikonkę skierowaną w dół po prawej stronie przycisku `Eksportuj`{.action}.
 
-![](images/img_1302.jpg){.thumbnail}
+Możesz wybrać:
 
+- `Eksportuj wszystkie`{.action} całości i wszystkich kontaktów będzie wywożone do pliku **.vcf**.
+- `Eksportuj zaznaczone`{.action}, aby wyeksportować tylko te elementy, które wybiorą Cię w kolumnie `Kontakty`{.action}.
 
-### Wiadomość e-mail
+![hosting](images/roundcube-export-contact.png){.thumbnail}
 
-#### Tworzenie nowej wiadomości
-Aby napisać nową wiadomość, kliknij na `Utwórz`{.action}.
+### Odpowiedzi (szablony) <a name="responses"></a>
 
-![compose](images/Compose.PNG){.thumbnail}
+Funkcja ta pozwala na tworzenie szablonów odpowiedzi podczas tworzenia wiadomości e-mail.
 
+W Roundcube kliknij `Ustawienia`{.action} na górnym pasku, a następnie `Odpowiedzi`{.action} w kolumnie po lewej stronie.
 
-#### Opcje
-Po kliknięciu na `Utwórz`{.action} pojawią się opcje niezbędne do napisania wiadomości e-mail takie jak dodanie kontaktu z [książki adresowej](#CARNET), [załączniki](#ATTACHED) i [ustawienia](#SIGNATURE) wiadomości.
-Możesz wyszukiwać zarejestrowanych adresatów klikając na typ kopii:
+Aby dodać odpowiedź, kliknij przycisk `+`{.action} w dolnej części kolumny `Odpowiedzi`.
 
-- To+: dodaj kontakt jako bezpośredniego adresata;
-- Cc+: dodaj komtakt w kopii;
-- Bcc+: dodaj kontakt w ukrytej kopii. Inni odbiorcy wiadomości nie będą widzieć adresatów z Bcc.
+![hosting](images/roundcube12.png){.thumbnail}
 
+> [!primary]
+> 
+> "Odpowiedzi" mają formę "tekstu niekodowanego".
 
+### Redakcja e-maila
 
-![](images/img_1405.jpg){.thumbnail}
+W zakładce `Poczta`{.action} na górnym pasku kliknij `Zapisz`{.action}.
 
+W oknie wiadomości e-mail znajdują się następujące pola: 
 
-#### Wprowadzenie podpisu w formacie HTML
-Aby wprowadzić podpis w formacie HTML, wystarczy wybrać Typ edytora: HTML.
-Kliknij na Podpis (przycisk ołówka w górnej części). Pojawi się obrazek zawarty w podpisie. 
+- **Od**: wybrać [tożsamość](#identity) do określenia nadawcy.
+- **Do+**: dodać odbiorców i/lub [grupę odbiorców](#group).
 
-1. W menu możesz wybrać tożsamość, jeśli ją utworzyłeś (patrz sekcja Tożsamość);
-2. Możesz zdefiniować głównych adresatów;
-3. Możesz tutaj kliknąć, aby dodać adresata w kopii, w kopii ukrytej lub w opcji "Odpowiedz do";
-4. Wpisz temat wiadomości;
-5. Skorzystaj z edytora WYSWYG*.
+> [!primary]
+> 
+> Pole **"Do"** nie może przekraczać 100 odbiorców, obejmuje to kontakty zawarte w [grupie](#group).
 
-* What You See is What You Get: To, co widzisz będzie tym, co otrzymasz.
+- **Dodaj Cc+**: dodawanie odbiorców w prostej kopii.
+- **Dodaj Bcc +**: dodawanie odbiorców w ukrytej kopii. Pozostali odbiorcy wiadomości e-mail nie zobaczą adresów w tym e-mailu.
+- **Dodaj Followup-To**: wysyłać wiadomości do odbiorców.
+- **Typ edytora**:  
+    - `Tekst niekodowany`: tylko tekst bez formatu.
+    - `HTML`: tekst w formie. Pasek narzędzi HTML pojawia się nad oknem wprowadzania danych.
+- **Priorytet** dla e-maila.
+- **Potwierdzenie odbioru**: adresat jest proszony o potwierdzenie odbioru.
+- **Status dostarczenia (DSN)**, jeżeli e-mail został wysłany do odbiorcy.
+- **Zapisz wiadomość w**: wybrać katalog, w którym będzie przechowywana kopia e-maila.
 
-![](images/img_1406.jpg){.thumbnail}
+Na górnym pasku dostępne są następujące operacje:
 
-
-#### Wysyłanie wiadomości
-Aby wysłać wiadomość, kliknij na przycisk Wyślij.
-
-![](images/img_1305.jpg){.thumbnail}
-
-
-#### Odbieranie wiadomości
-Jeśli nowy e-mail nie pojawił się automatycznie, kliknij na przycisk "Odśwież" w lewym górnym roku.
-
-![](images/img_1408.jpg){.thumbnail}
-
-
-#### Dodawanie załącznika
-
-- Krok 1:
-
-Aby dodać dokument do wiadomości, wystarczy kliknąć na "Załącz" w górnym menu.
-Przycisk "Dołącz plik" jest dostępny z prawej strony. Otworzy się to samo okno dodawania dokumentu.
-
-Ostatnia możliwość to wykonanie operacji przeciągnij-upuść z pliku do zarządzania plikami na komputerze.
-
-![](images/img_1410.jpg){.thumbnail}
-
-
-- Krok 2:
-
-Jeśli wybrałeś opcję przeciągnij-upuść i kliknąłeś na przycisk "Załącz plik", otworzy się okno do załadowania wybranego pliku.
-
-Postanowiliśmy dodać plik  MaConfig_win.
-Kliknij na Otwórz.
-
-![](images/img_1407.jpg){.thumbnail}
-
-
-- Krok 3:
-
-Po kliknięciu na Otwórz pojawi się interfejs z nazwą wybranego pliku. Możesz zatwierdzić dodanie tego pliku lub dodać kolejne pliki klikając na "+".
-Kliknij na Prześlij.
-
-![](images/img_1409.jpg){.thumbnail}
-/!\ Maksymalny rozmiar pliku dodawanego przez Webmaila to 20 MB.
-
-
-### Konfiguracja książki adresowej
-Możesz utworzyć własna książkę adresową z katalogami (grupami kontaktów).
-W naszym przykładzie utworzymy 2 grupy .
-
-Kliknij na ikonkę Książka adresowa (w górnym prawym rogu).
-
-Aby dodać grupę kontaktów należy kliknąć na "+" w dolnej części strony.
-
-Kursor zostanie automatycznie umieszczony w pasku, w którym należy wpisać nazwę.
-
-Można utworzyć kontakty bezpośrednio w "grupie" utworzonej domyślnie (Kontakty osobiste) bez przechodzenia przez tworzenie nowej grupy kontaktów.
-W tym celu kliknij na "+" w dolnej części drugiej kolumny (Dodaj nowy kontakt).
-
-![](images/img_1411.jpg){.thumbnail}
-
-
-### Operacje na grupach kontaktów
-Po utworzeniu grupy uzyskasz dostęp do funkcji związanych z grupą:
-
-- Zmień nazwę grupy;
-- Usuń grupę ;
-- Zapisz wyszukiwanie (aktywne, jeśli wykonujesz wyszukiwanie w grupie);
-- Usuń wyszukiwanie (aktywne, jeśli wykonujesz wyszukiwanie w grupie).
-
-
-
-![](images/img_1412.jpg){.thumbnail}
-
-
-#### Dodawanie kontaktu
-
-- Krok 1: Właściwości
-
-Aby dodać kontakt do grupy, należy najpierw kliknąć na "+" w drugiej kolumnie (w kolumnie kontaktów). 
-
-Kliknij na Dodaj nowy kontakt, aby wpisać informacje dotyczące kontaktu w 4 różnych strefach:
-
-- Część ogólna: tutaj można podać nazwisko, imię, firmę, itp.
-- Właściwości: tutaj można podać różne adresy e-mail, telefony, itp. 
-- Informacje osobiste: tutaj można podać datę urodzenia, płeć, nazwisko panieńskie, itp.
-- Notatki: tutaj można dodać różne informacje dotyczące kontaktu. 
-
-
-W części z informacjami ogólnymi są dostępne następujące opcje:
-
-- Prefiks
-- Drugie imię
-- Sufiks
-- Nazwa
-- Pseudonim
-- Organizacja
-- Oddział
-- Zawód
-
-
-Po podaniu informacji kliknij na "Zapisz".
-
-![](images/img_1413.jpg){.thumbnail}
-
-**Uwaga**
-Inna szybsza możliwość: podczas pobierania wiadomości możesz kliknąć bezpośrednio na ikonkę w postaci "+".
-
-![](images/img_2485.jpg){.thumbnail}
-
-
-- Krok 2 : Informacje osobiste
-
-W części z informacjami ogólnymi oraz w części "Informacje osobiste" dostępne są menu "Dodaj pole", które dają możliwość dodania dodatkowych pól. 
-
-Po podaniu informacji kliknij na "Zapisz".
-
-![](images/img_1414.jpg){.thumbnail}
-
-
-- Krok 3: Notatki
-
-W sekcji "Notatki" można dodawać informacje dotyczące kontaktu. 
-
-Kliknij na "Zapisz".
-
-![](images/img_1415.jpg){.thumbnail}
-
-
-- Krok 4: Avatar
-
-Jeśli chcesz dodać do kontaktu obrazek/zdjęcie (avatar), kliknij na "Dodaj". Otworzy się okno. Kliknij na "Wybierz plik". Pobierz plik ze swojego komputera i zatwierdź wybór. Następnie kliknij na "Prześlij.
-
-![](images/img_1416.jpg){.thumbnail}
-
-
-- Krok 5: Zapisywanie
-
-Obrazek został dodany. Adres e-mail i inne informacje na temat kontaktu został podane. Można zatwierdzić dodawanie kontaktu klikając na "Zapisz".
-
-Możesz zmienić obrazek klikając na "Zmień".
-
-![](images/img_1417.jpg){.thumbnail}
-
-
-- Krok 6: Weryfikacja
-
-Kontakt został zapisany. Pojawi się informacja "Zapisano pomyślnie".
-Możesz sprawdzać informacje o kontakcie klikając na jego nazwę na liście kontaktów (po wybraniu dobrej grupy lub po wykonaniu wyszukiwania). 
-Domyślnie zakładka właściwości jest aktywna i wyświetla informacje podane w tej sekcji. 
-
-Po dodaniu kontaktu do grupy możesz usunąć ten kontakt klikając na ikonkę w dolnej części kolumny kontaktów (postać ze znakiem "-").
-
-![](images/img_1418.jpg){.thumbnail}
-
-
-#### Modyfikacja kontaktu
-Możesz również modyfikować kontakt.
-
-W tym celu wybierz kontakt i kliknij na "Edytuj kontakt" (przycisk w prawym górnym rogu).
-Uzyskasz dostęp do wszystkich informacji.
-
-W naszym przykładzie kliknęliśmy na zakładkę "Grupy", aby wyświetlić grupy, do których należy kontakt. 
-
-W tej zakładce można dodać kontakt do grupy zaznaczając odpowiednie pole. 
-
-Możesz również użyć techniki przeciągnij i upuść, aby przenieść wybrany kontakt do danej grupy. 
-Zakładka "Grupy" zostanie więc zaktualizowana.
-
-![](images/img_1419.jpg){.thumbnail}
-
-
-#### Wyszukiwanie
-Chcesz wyszukać dany kontakt. Kliknij na "Zaawansowane" w górnej części strony. 
-Wyświetlą się wszystkie możliwe pola, z których można skorzystać do wyszukiwania. 
-
-Wpisz kryteria wyszukiwania i kliknij na "Szukaj".
-
-![](images/img_1420.jpg){.thumbnail}
-
-
-#### Eksportowanie książki adresowej
-Chcesz pobrać wszystkie kontakty z Webmaila RoundCube OVHcloud poprzez eksport pliku z książki adresowej. 
-
-Kliknij na opcję "Eksportuj" w górnej części strony.
-
-Wygeneruje się plik rcube_contacts.vcf, który można pobrać.
-
-![](images/img_1421.jpg){.thumbnail}
-
-
-#### Importowanie książki adresowej
-Korzystałeś z innego programu do obsługi poczty i udało Ci się wyeksportować kontakty. Możesz je zaimportować klikając na "Importuj".
-
-Dozwolony format pliku to blue].vcf.
-W przypadku importowania adresów obsługiwany jest również format vCard i CSV (rozdzielone przecinkiem).
-
-
-Pojawi się taki interfejs. 
-Kliknij na "Przeglądaj", aby pobrać plik vCard lub CSV z książką adresową do zaimportowania.
-
-Możesz zastąpić całą książkę adresową lub nie. 
-
-Kliknij na "Importuj". Rozpocznie się importowanie książki adresowej.
-
-![](images/img_1422.jpg){.thumbnail}
-
-
-#### Odpowiadanie wszystkim
-W przypadku, gdy Twoja lista adresatów zawiera listę mailingową oraz klasycznych adresatów, kliknij na odpowiedz wszystkim w menu widocznym powyżej narzędzia. 
-
-Opcja ta pozwala na przesłanie odpowiedzi do wszystkich adresatów (z listy mailingowej i do adresatów klasycznych). 
-
-Możesz również odpowiedzieć tylko abonentom listy mailingowej klikając na ikonkę z lewej strony i wykluczając klasycznych adresatów.
-
-![](images/img_2164.jpg){.thumbnail}
+- `Anuluj`{.action} pisanie wiadomości e-mail, korzystając z prośby o potwierdzenie.
+- `Wyślij`{.action} e-mail.
+- `Zapisz`{.action} e-mail w specjalnym folderze "szkic"
+- `Pisownia`{.action}, aby sprawdzić tekst, z menu umożliwiającego wybór języka.
+- `Załącz`{.action} plik do wiadomości e-mail.
+- `Podpis`{.action}: dodaje podpis przypisany [do wybranej tożsamości](#identity).
+- `Odpowiedzi`{.action}: dodaje wstępnie zarejestrowany szablon w części [Odpowiedzi](#responses).
+
+![hosting](images/roundcube13.png){.thumbnail}
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+[Pierwsze kroki z usługą MX Plan](https://docs.ovh.com/pl/emails/hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/)
+
+[Zmiana hasła do konta e-mail MX Plan](https://docs.ovh.com/pl/emails/zmiana-hasla-do-konta-email/)
+
+[Tworzenie filtrów dla Twoich kont e-mail](https://docs.ovh.com/pl/emails/hosting_www_konfiguracja_filtrow_e-mail_w_panelu_klienta/)
+
+[Korzystanie z przekierowań e-mail](https://docs.ovh.com/pl/emails/hosting_www_przekierowania_e-mail/)
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

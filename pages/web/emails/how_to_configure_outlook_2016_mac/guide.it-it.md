@@ -22,8 +22,6 @@ Scopri come configurare il tuo indirizzo email MX Plan su Outlook 2016 per Mac.
 
 > [!primary]
 >
-> Se utilizzi una versione precedente di Outlook per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook 2011 per Mac](https://docs.ovh.com/it/emails/servizio_email_guida_alla_configurazione_di_outlook_2011_su_mac/){.external}.
->
 > Se utilizzi Outlook 2016 per Windows, consulta la nostra guida per [Configurare un indirizzo email su Outlook 2016 per Windows](https://docs.ovh.com/it/emails/configurazione-outlook-2016/){.external}.
 >
 

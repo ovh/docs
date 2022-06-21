@@ -10,7 +10,7 @@ section: "Cas d'usage"
 >
 > Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation !
 >
-> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+> Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
 >
 
 ## Je me suis fait pirater &#58; que faire ?
@@ -80,7 +80,7 @@ Nous vous conseillons de demander l'assistance d'un [webmaster](https://partners
 ## Cas 1 &#58; le piratage a lieu dans le delai de restauration possible (sauvegarde OVH)
 
 ### Restauration du site
-Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVH propose un historique de 3 semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
+Wordpress est composé de fichiers et d¹une base de données. Il est possible de restaurer vos fichiers à une date antérieure. OVH propose un historique de deux semaines concernant les fichiers présents sur votre hébergement. Concernant la base de données, il est possible de remonter à 7 jours.
 
 
 

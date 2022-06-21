@@ -23,7 +23,7 @@ excerpt: Come rendere sicure le connessioni al tuo sito Web
 
 
 ## Effettua lordine
-- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](https://www.ovhcloud.com/it/web-hosting/options/ssl/-gateway/){.external}.
+- Per ordinare la soluzione SSL Gateway, accedi a [questa pagina](https://www.ovh.it/ssl-gateway/){.external}.
 - Scegli l’offerta e clicca su `Attivalo subito`{.action} o `Ordina`{.action}.
 
 ![pagina commerciale](images/1-en.png){.thumbnail}

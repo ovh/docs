@@ -231,7 +231,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps, and Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - PostgreSQL 12<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
@@ -249,7 +250,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Probot is a framework for building GitHub Apps in Node.js.</p>
   
 #### Features
-- Node.js 12<br />  
+
+-  Node.js 12<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
  
@@ -263,7 +265,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
-- Node.js 12<br />  
+
+-  Node.js 12<br />  
 - PostgreSQL 12<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -281,7 +284,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - PHP 7.4<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
@@ -300,7 +304,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -314,6 +319,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Koa is a lightweight web microframework for Node.js.</p>
   
 #### Features
+
 - Node.js 10<br />  
 - MariaDB 10.2<br />  
 - Automatic TLS certificates<br />  
@@ -329,7 +335,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Node.js is an open-source JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -344,7 +351,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Next.js is an open-source web framework written for Javascript.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -358,7 +366,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Express is a minimalist web framework written in Node.js.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -373,7 +382,8 @@ To configure a given service, see the page dedicated to that service.
 <p>NuxtJS is an open-source web framework based on Vue.js.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -388,7 +398,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
-- Node.js 12<br />  
+
+-  Node.js 12<br />  
 - PHP 7.4<br/>  
 - MariaDB 10.4<br/>  
 - Redis 5.0<br/>  
@@ -408,7 +419,8 @@ To configure a given service, see the page dedicated to that service.
 <p>Directus is an open-source platform that allows you to create and manage an API from data stored in a database.</p>
   
 #### Features
-- Node.js 14<br />  
+
+-  Node.js 14<br />  
 - PostgreSQL 12<br />  
 - Redis 6.0<br />  
 - Automatic TLS certificates<br />  

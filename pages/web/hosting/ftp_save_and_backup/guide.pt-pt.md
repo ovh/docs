@@ -73,7 +73,7 @@ Esta operação realiza-se em vários passos. Certifique-se de que tem a palavra
 
 > [!warning]
 >
-> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
+> Para realizar as seguintes ações, deve ter conhecimentos sobre o programa ou a interface que vai utilizar. A seguir, propomos-lhe algumas indicações sobre como realizá-las. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do programa ou da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 1 - Escolher o programa ou a interface que vai utilizar

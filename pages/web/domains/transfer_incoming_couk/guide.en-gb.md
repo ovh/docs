@@ -6,7 +6,7 @@ section: Transfer
 order: 4
 ---
 
-**Last updated 22th June 2020**
+**Last updated 17th June 2022**
 
 ## Objective
 
@@ -17,30 +17,37 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you face difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements
 
-- Your domain must not be in the Redemption period or in Pending Delete status.
+- Your domain must not be in the **Redemption** period or in Pending Delete status.
 - The domain must not be blocked by your registrar.
 - Owner contact information must be up to date in the [Whois](https://www.nominet.uk/whois){.external} data of the domain.
-- You are able to obtain the authorisation code that will be sent to the domain owner's email address. 
+- You are able to obtain the authorisation code that will be sent to the domain owner's email address.
+
+> [!primary]
+>
+> The **Redemption** period is a maximum of 90 days from the day the domain name expires. In the case of a transfer, this period allows you to restore the domain and thus unblock the ability to transfer it.
 
 ## Extensions in question
 
-- .co.uk
-- .me.uk
-- .org.uk
-- .ltd.uk
-- .plc.uk
 - .uk
+- .co.uk
+- .ac.uk
+- .gov.uk
+- .me.uk
+- .net.uk
+- .org.uk
+- .plc.uk
+- .sch.uk
 
 ## Instructions
 
 ### Step 1: Changing your domain TAG
 
-In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](http://www.nominet.uk/registrar-list){.external} registry website.
+In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external} registry website.
 
 > [!primary]
 >

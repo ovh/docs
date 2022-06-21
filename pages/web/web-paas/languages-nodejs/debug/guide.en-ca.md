@@ -94,7 +94,7 @@ webpaas branch debug-branch
 
 Replace `<START_FILE>` with the file defined for your app's `start` command.
 
-You get output something like this:
+You should get an output similar to this:
 
 ```bash
 Debugger listening on ws://127.0.0.1:9229/10701e5d-d627-4180-a967-d47a924c93c0

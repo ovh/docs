@@ -5,7 +5,7 @@ excerpt: Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung einrichten
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 10.09.2020**
+**Letzte Aktualisierung am 10.06.2022**
 
 ## Ziel
 
@@ -34,7 +34,7 @@ Hierzu haben Sie zwei Möglichkeiten:
 
 Wenn Sie im Verwaltungsinterface eingeloggt sind, klicken Sie auf `Change password`{.action}.
 
-![Change password](images/selectChangePassword.jpg){.thumbnail}
+![Change password](images/selectChangePassword.png){.thumbnail}
 
 Führen Sie im Interface folgende Schritte aus:
 	
@@ -43,7 +43,7 @@ Führen Sie im Interface folgende Schritte aus:
 - Scannen Sie den QR-Code mit der Smartphone-Authentifizierungsapp Ihrer Wahl.
 - Bestätigen Sie den erhaltenen Code.
 
-![QR-Code scannen](images/scanQRcode.jpg){.thumbnail}
+![QR-Code scannen](images/scanQRcode.png){.thumbnail}
 
 Ein neuer Task wird erstellt und Ihnen wird ein Token zugesandt.
 
@@ -58,7 +58,7 @@ Gehen Sie nun in den Bereich `Operation validation`{.action}, laden Sie die per 
 
 Verbinden Sie sich über den üblichen Link mit Ihrem *Web*-Client. Sie gelangen zur folgenden Seite:
 
-![2FA Login](images/2FAtoken.jpg){.thumbnail}
+![2FA Login](images/2FAtoken.png){.thumbnail}
 
 Geben Sie nun den über die Smartphone-Anwendung generierten Token ein, bevor Sie Ihr Passwort eingeben.
 

@@ -77,7 +77,7 @@ Para obtener la información de un volumen, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -87,12 +87,12 @@ Para obtener la información de un volumen, utilice la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
 ### Crear un volumen
 
@@ -131,7 +131,7 @@ Para conocer la ruta de montaje de un volumen, utilice la siguiente ruta de la A
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -141,12 +141,12 @@ Para conocer la ruta de montaje de un volumen, utilice la siguiente ruta de la A
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen.
 
 Las rutas de montaje devueltas se pueden utilizar para montar el volumen.
 
@@ -168,7 +168,7 @@ Para eliminar un volumen, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -178,12 +178,12 @@ Para eliminar un volumen, utilice la siguiente ruta de la API:
 >> >
 >> >> ID del servicio
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID del volumen
 >
 
-Sustituya el `serviceName` por el ID de su servicio y `netappShareId` por el ID del volumen que desea eliminar.
+Sustituya el `serviceName` por el ID de su servicio y `shareId` por el ID del volumen que desea eliminar.
 
 ## Más información
 

@@ -24,19 +24,19 @@ You could use one of these:
 Both of the recommendations use a `.nvmrc` file to specify the desired Node.js version.
 You could also specify a different file or use [environment variables](../../development-variables).
 
-## Use `n`
+### Use `n`
 
 The [`n` package](https://github.com/tj/n) works for various Unix-like systems,
 including Windows Subsystem for Linux.
 
-Step 1. Add the desired Node.js version to a `.nvmrc` file in your app root:
+**Step 1: Add the desired Node.js version to a `.nvmrc` file in your app root.**
 
 ```yaml 
 location= ".nvmrc"
 v16.13.2
 ```
 
-Step 2. Add it as a dependency:
+**Step 2: Add it as a dependency.**
 
 ```yaml 
 {location=".platform.app.yaml"}
@@ -46,7 +46,7 @@ dependencies:
 ```
 Adding it as a dependency ensures it's cached for future builds.
 
-Step 3. Set the location for the Node.js version using the `N_PREFIX` environment variable:
+**Step 3: Set the location for the Node.js version using the `N_PREFIX` environment variable.**
 
 
 ```yaml 
@@ -56,7 +56,7 @@ variables:
         N_PREFIX: /app/.global
 ```
 
-Step 4. Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook):
+**Step 4: Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook).**
 
 
 ```yaml 
@@ -105,7 +105,7 @@ hooks:
         hash -r0
 ```
 
-## Use `nvm`
+### Use `nvm`
 
 [Node Version Manager (`nvm`)](https://github.com/nvm-sh/nvm)
 

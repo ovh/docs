@@ -19,7 +19,7 @@ Si necesita migrar sus datos, es posible que tenga que descargarlos desde su ser
 
 > [!warning]
 >
-En este tutorial explicamos cómo utilizar una o más soluciones de OVHcloud con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un proveedor especializado o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
+En este tutorial explicamos cómo utilizar una o más soluciones de OVHcloud con herramientas externas en un contexto concreto. Deberá adaptar las indicaciones a su caso particular. Si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o que comparta sus dudas con nuestra comunidad en <https://community.ovh.com/en/>. Nosotros no podremos asistirle.
 >
 
 ## Requisitos

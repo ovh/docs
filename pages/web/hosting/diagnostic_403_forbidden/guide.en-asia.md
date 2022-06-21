@@ -21,7 +21,7 @@ It may also be the case that our security robots have temporarily blocked access
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialised service provider](https://partner.ovhcloud.com/asia/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 
 
 ## Requirements
@@ -69,6 +69,12 @@ First, take note of the date on which the OVHcloud email regarding the deactivat
 If your Web Hosting plan was closed less than two weeks ago and only contains one website, restore your storage space following the instructions in this [guide](../restoring-ftp-filezilla-control-panel/#restore-the-storage-space-via-the-ovh-control-panel).
 
 If your Web Hosting plan was closed less than two weeks ago and contains multiple websites, only restore the folder(s) containing the suspicious files as described in this [guide](../restoring-ftp-filezilla-control-panel/#restore-a-file-using-a-software-program-or-interface).
+
+> [!warning]
+>
+> Restoring your storage space alone will not be enough to correct potential security vulnerabilities already present on your site.
+> To identify these security vulnerabilities, you can analyse your hosting system’s ["web logs"](https://docs.ovh.com/asia/en/hosting/shared_view_my_websites_logs_and_statistics/#logs), or contact a [specialised service provider](https://partner.ovhcloud.com/asia/) to perform a security audit on your solutions.
+>
 
 #### Case no. 2: Your Web Hosting plan has been disabled for more than two weeks
 

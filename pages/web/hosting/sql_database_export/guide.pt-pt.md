@@ -89,7 +89,7 @@ Uma vez na página do phpMyAdmin, introduza as informações da base de dados, s
 
 > [!warning]
 >
-> A interface phpMyAdmin não pertence à OVH, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um prestador de serviços especializado e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
+> A interface phpMyAdmin não pertence à OVH, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
 ### Recuperar um backup através de um script
@@ -98,7 +98,7 @@ Esta operação realiza-se em vários passos. Certifique-se de que possui a info
 
 > [!warning]
 >
-> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 #### 1 - Criar um script de backup
@@ -157,7 +157,7 @@ Para interagir com o seu espaço de armazenamento, deverá executar comandos a p
 
 > [!warning]
 >
-> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre a operação. Contudo, se precisar de ajuda, recomendamos que recorra a um prestador de serviços especializado. Não poderemos proporcionar-lhe assistência técnica.
+> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre a operação. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
 >
 
 Depois de aceder ao espaço de armazenamento por SSH, tem de utilizar um comando que lhe permita realizar o backup da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em conta que o backup será realizado no diretório que estiver ativo no momento em que introduzir o comando no terminal.

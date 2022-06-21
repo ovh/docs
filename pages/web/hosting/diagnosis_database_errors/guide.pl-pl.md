@@ -56,7 +56,7 @@ Zaloguj się przez [FTP](https://docs.ovh.com/pl/hosting/logowanie-przestrzen-dy
 >
 > Wybór i konfiguracja pliku zawierającego dane do logowania do bazy danych jest ściśle związana z wybranym edytorem treści, a nie z OVHcloud.
 >
-> Zalecamy zatem skontaktowanie się z wydawcą [CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) używanym do założenia strony lub do skorzystania z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Zalecamy zatem skontaktowanie się z wydawcą [CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) używanym do założenia strony lub do skorzystania z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/directory/) w razie potrzeby. Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 Następnie sprawdź zgodność **dokładna** między identyfikatorami logowania do [phpMyAdmin](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/#dostep-do-interfejsu-phpmyadmin) a danymi w pliku konfiguracyjnym Twojej strony.
@@ -142,7 +142,7 @@ Następnie upamiętaj obliczenie rozmiaru używanego w zakładce `Bazy danych`{.
 
 > [!warning]
 >
-> Operacja ta wymaga wysokich umiejętności technicznych. W razie potrzeby zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
+> Operacja ta wymaga wysokich umiejętności technicznych. W razie potrzeby zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/directory/). Nie będziemy w stanie udzielić wsparcia w tym zakresie.
 >
 
 #### Metoda 4: zoptymalizuj bazę danych

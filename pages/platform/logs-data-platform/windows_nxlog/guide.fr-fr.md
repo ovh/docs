@@ -29,7 +29,7 @@ To configure NXLog, you will need to copy and store the LDP cluster certificate.
 
 ![LDP certificate](images/ssl.png){.thumbnail}
 
-Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder. 
+Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder.
 
 The configuration is pretty much straightforward. Here is the configuration file that allows you to configure your NXLog.
 
@@ -37,36 +37,36 @@ The configuration is pretty much straightforward. Here is the configuration file
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
  ## online at http://nxlog.org/nxlog-docs/en/nxlog-reference-manual.html
- 
+
  ## Please set the ROOT to the folder your nxlog was installed into,
  ## otherwise it will not start.
- 
+
  #define ROOT C:\Program Files\nxlog
  define ROOT C:\Program Files (x86)\nxlog
  define CERTDIR %ROOT%\cert
- 
+
  Moduledir %ROOT%\modules
  CacheDir %ROOT%\data
  Pidfile %ROOT%\data\nxlog.pid
  SpoolDir %ROOT%\data
  LogFile %ROOT%\data\nxlog.log
- 
+
  <Input in>
      Module      im_msvistalog
  # For windows 2003 and earlier use the following:
  #   Module      im_mseventlog
  </Input>
- 
+
  <Processor OVH_TOKEN>
      Module      pm_null
      Exec        $TOKEN='XXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX';
      Exec        rename_field("TOKEN","X-OVH-TOKEN");
  </Processor>
- 
+
  <Extension gelf>
      Module xm_gelf
  </Extension>
- 
+
  <Output out>
      Module      om_ssl
      Host        <your_cluster>.logs.ovh.com
@@ -75,7 +75,7 @@ The configuration is pretty much straightforward. Here is the configuration file
      AllowUntrusted FALSE
      OutputType      GELF_TCP
  </Output>
- 
+
  <Route 1>
      Path        in => OVH_TOKEN => out
  </Route>

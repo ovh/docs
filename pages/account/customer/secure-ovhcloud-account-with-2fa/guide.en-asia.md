@@ -5,7 +5,7 @@ excerpt: 'Find out how to improve security for your OVHcloud account by enabling
 section: Security
 ---
 
-**Last updated 30th December 2021**
+**Last updated 17th June 2022**
 
 ## Objective
 
@@ -114,7 +114,7 @@ Before contacting us, you must gather the following documents:
 |Private individual|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder<br><br>- One proof of address corresponding to the one registered in the OVHcloud account, less than two months old.|
 |Company|- Proof of identity (identity card, driving licence, passport) mentioning full name, date of birth and expiry date, in the name of the OVHcloud account holder, or in the name of a person authorized to represent the company.<br><br>- One proof of address for the company, corresponding to the one registered in the OVHcloud account, less than two months old. |
 
-Once you have gathered your supporting documents, contact our OVHcloud support teams by sending an email to `validation@ovh.ca`. 
+Once you have gathered your supporting documents, contact our OVHcloud support teams by calling +65 (3) 1638340. 
 
 > [!warning]
 >

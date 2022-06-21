@@ -10,7 +10,7 @@ order: 7
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 16/09/2021**
+**Ostatnia aktualizacja z dnia 16/06/2022**
 
 ## Wprowadzenie
 
@@ -26,7 +26,7 @@ Może się również zdarzyć, że po wykryciu anomalii nasze roboty związane z
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) i/lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź również](#gofurther) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -75,16 +75,22 @@ Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera t
 
 Jeśli Twój hosting został zamknięty mniej niż dwa tygodnie temu i zawiera kilka stron WWW, przywracaj tylko folder lub katalogi zawierające nieprawidłowe pliki zgodnie z instrukcjami zawartymi w tym [przewodniku](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/#przywracanie-pliku-za-pomoca-programu-lub-interfejsu).
 
+> [!warning]
+>
+> Sam powrót do przestrzeni dyskowej nie wystarczy, aby usunąć ewentualne luki bezpieczeństwa, które pojawiły się na Twojej stronie WWW.
+> W celu identyfikacji luk w zabezpieczeniach, możesz przeanalizować ["logi WWW"](https://docs.ovh.com/pl/hosting/hosting_statystyki_i_logi_strony/#logi) Twojego hostingu lub skorzystać z pomocy [[wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/)](https://partner.ovhcloud.com/pl/) aby przeprowadzić audyt bezpieczeństwa Twoich rozwiązań.
+>
+
 #### Przypadek nr 2: Twój hosting został wyłączony dwa tygodnie temu
 
 Jeśli Twój hosting został zamknięty dwa tygodnie temu, skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/) usług hostingowych w celu przeprowadzenia audytu bezpieczeństwa swoich rozwiązań. 
+
+### Etap 4: reaktywacja hostingu
 
 > [!warning]
 >
 > Zalecamy przeprowadzenie audytu bezpieczeństwa **przed** ponownym otwarciem hostingu. Wysyłanie złośliwego kodu z Twojego hostingu może wiązać się z Twoją odpowiedzialnością prawną.
 >
-
-### Etap 4: reaktywacja hostingu
 
 #### Reaktywuj Twój hosting za pomocą FileZilla
 

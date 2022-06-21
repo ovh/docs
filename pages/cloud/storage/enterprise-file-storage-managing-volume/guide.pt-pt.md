@@ -77,7 +77,7 @@ Para recuperar as informações de um volume, utilize a seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -87,12 +87,12 @@ Para recuperar as informações de um volume, utilize a seguinte rota API:
 >> >
 >> >> ID do serviço
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID do volume
 >
 
-Substitua o `serviceName` pelo ID do seu serviço e `netappShareId` pelo ID do volume.
+Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume.
 
 ### Criar um volume
 
@@ -131,7 +131,7 @@ Para conhecer o caminho de montagem de um volume, utilize a seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -141,12 +141,12 @@ Para conhecer o caminho de montagem de um volume, utilize a seguinte rota API:
 >> >
 >> >> ID do serviço
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID do volume
 >
 
-Substitua o `serviceName` pelo ID do seu serviço e `netappShareId` pelo ID do volume.
+Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume.
 
 Os caminhos de montagem devolvidos podem ser utilizados para aumentar o volume.
 
@@ -168,7 +168,7 @@ Para eliminar um volume, utilize a seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -178,12 +178,12 @@ Para eliminar um volume, utilize a seguinte rota API:
 >> >
 >> >> ID do serviço
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID do volume
 >
 
-Substitua o `serviceName` pelo ID do seu serviço e `netappShareId` pelo ID do volume a eliminar.
+Substitua o `serviceName` pelo ID do seu serviço e `shareId` pelo ID do volume a eliminar.
 
 ## Saiba mais
 

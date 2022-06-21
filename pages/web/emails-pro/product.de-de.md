@@ -2,7 +2,7 @@
 title: 'E-Mail Pro'
 slug: emails-pro
 sections: 'Allgemein, Konfiguration des E-Mail-Clients, Troubleshooting'
-order: 04
+order: 06
 ---
 
 > [!product-section]

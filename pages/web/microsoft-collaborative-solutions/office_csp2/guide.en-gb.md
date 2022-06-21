@@ -6,7 +6,7 @@ section: Office
 order: 3
 ---
 
-**Last updated 13th September 2021**
+**Last updated 17th June 2022**
 
 ## Objective
 
@@ -16,7 +16,24 @@ Office 365 for Resellers (CSP2) is a service that allows you to get different ty
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An MPN ID (Microsoft Partner Network Identifier)
+- You must be registered in the Microsoft Cloud Solution Provider (CSP) programme as an indirect reseller in the region where you operate (e.g.: “EU” for Europe)
+
+> [!warning]
+>
+> From July 1st 2022, all Office 365 reseller (CSP2) services that do not have an MPN ID registered in the `CSP indirect reseller` programme will be disabled by Microsoft.
+>
+> An MPN ID is now mandatory for all new subscriptions.
+>
+If you do not already have an MPN ID, you can create one (if you are eligible for the Microsoft terms) by following the [Microsoft official documentation](https://docs.microsoft.com/en-gb/partner-center/mpn-create-a-partner-center-account){.external}.
+
+To register as an indirect reseller, please refer to this other [Microsoft official documentation](https://docs.microsoft.com/en-gb/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller){.external}.
+
+> [!success]
+>
+> The MPN ID will allow you to get cashback on the subscriptions you order via the OVHcloud Control Panel. This cashback is subject to rules defined by Microsoft, depending on the volume of subscriptions you generate.
+>
 
 ## Instructions
 
@@ -24,17 +41,14 @@ Office 365 for Resellers (CSP2) is a service that allows you to get different ty
 
 To order an Office 365 Resellers service, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Once you have logged in, select `Sunrise`{.action} in the top menu, then click on `Office 365 Revendeurs`{.action}.
 
+- Enter your MPN ID previously created with Microsoft.
 - Enter the contact information for your end customer. This information is requested to define the manager for the licence group ("Tenant") you are going to create.
 
 > [!primary]
 >
-> - If you already have an Office 365 CSP2 service with Microsoft, you can delegate the administration to OVHcloud. You will be able to add additional subscriptions directly via the OVHcloud Control Panel. When you order a new group of licences, select `Delegation of a platform previously created with Microsoft `{.action} as the type of order.
->
-> - If you have a Microsoft Partner ID, you can enter it in this interface. This will enable you to obtain cashback on the subscriptions you order via our Control Panel. This cashback is subject to the rules defined by Microsoft for the number of subscriptions you generate.
->
+> You can also define a **custom sub-domain** when creating a new platform by ticking the box provided for this purpose (subject to the available names).
 
 - In the list below, specify the licences you want to add to your group.
-
 - Click `Order`{.action} to complete your order.
 
 > [!warning]
@@ -44,6 +58,22 @@ To order an Office 365 Resellers service, go to your [OVHcloud Control Panel](ht
 
 ![office365](images/csp2-01.png){.thumbnail}
 
+#### Special case of delegations
+
+- If you already have an Office 365 CSP2 service with Microsoft, you can delegate the administration to OVHcloud. You can then add additional subscriptions directly via the OVHcloud Control Panel. When ordering a new group of licences, you will then need to choose `Delegate a platform you previously created with Microsoft` and specify exactly the **existing Tenant Office 365** that you can find on your Microsoft portal, along with your MPN ID.
+
+- If you are already using a provider other than OVHcloud for your Office 365 resellers, you can also delegate the administration to OVHcloud, but you will need to break the link with your old provider beforehand.
+
+- You will need to double-validate the tenant when it appears in your OVHcloud Control Panel.
+
+- Once you have subscribed to the delegated tenant, the licences will be available on your [Microsoft administration portal](https://portal.office.com/Admin/Default.aspx){.external}. You will then need to replace your old licences in your [Microsoft administration portal](https://portal.office.com/Admin/Default.aspx){.external} with the OVHcloud licences, then cancel your old licences so that you do not continue to pay for them in duplicate.
+
+- Don’t worry, if you have licences that are unavailable for purchase from OVHcloud, you can keep them active with Microsoft.
+
+> [!warning]
+> Since these are licenced products, it is not possible to switch an Office 365 reseller tenant from one OVHcloud NIC handle to another.
+>
+
 ### Manage your Office 365 Reseller service
 
 Once the Office 365 service has been created, it will be available to manage in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
@@ -52,7 +82,7 @@ To do this, go to the `Sunrise`{.action} section. In the left-hand menu, choose 
 
 The following information appears:
 
-- **Internal service name**: indicates the name of your service. You can only see this in your Control Panel.
+- **Internal service name**: indicates the name of your service. You can only view it in your Control Panel. It also corresponds to the Tenant (which contains your licence group) at Microsoft.
 - **Service display name**: allows you to customise the display name of the service in your Control Panel.
 - **Created**: indicates when the service was created.
 - **Microsoft administrative Portal**: provides access to the Office portal that allows you to manage your subscriptions.

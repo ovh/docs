@@ -82,13 +82,13 @@ This option tells HAProxy to route logs to the **/dev/log** socket with differen
 ```
 
 
-We can send logs to Logs Data Platform by using several softwares. One of them is Rsyslog, the other one is Filebeat. You're free to use whichever method looks more familiar to you. 
+We can send logs to Logs Data Platform by using several softwares. One of them is Rsyslog, the other one is Filebeat. You're free to use whichever method looks more familiar to you.
 
 ### Rsyslog&#58;
 
 [Rsyslog](http://www.rsyslog.com){.external} is a fast log processor fully compatible with the syslog protocol. It has evolved into a generic collector able to accept entries from a lot of different inputs, transform them and finally send them to various destinations. Installation and configuration documentation can be found at the official website. Head to [http://www.rsyslog.com/doc/v8-stable/](http://www.rsyslog.com/doc/v8-stable/){.external} for detailed information.
 
-To send HAProxy logs with RSyslog, we will use several methods: a [dedicated Logstash collector](../logstash-input){.ref} and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions). The second method should be preferred when you have a high traffic website (at least 1000 requests by second.). 
+To send HAProxy logs with RSyslog, we will use several methods: a [dedicated Logstash collector](../logstash-input){.ref} and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions). The second method should be preferred when you have a high traffic website (at least 1000 requests by second.).
 
 For both methods you will need our SSL certificate to enable TLS communication. Some Debian Linux distributions need you to install the package **rsyslog-gnutls** to enable SSL.
 
@@ -167,20 +167,20 @@ The filter is divided in 3+1 parts. The first 3 parts are grok filters that try 
  ### HA PROXY ###
  ## Documentation of the haproxy log formats can be found at the following link:
  ## www.haproxy.org/download/1.6/doc/configuration.txt
- 
+
  OVHHAPROXYTIME (?!<[0-9])%{HOUR:haproxy_hour_int:int}:%{MINUTE:haproxy_minute_int:int}(?::%{SECOND:haproxy_second_int:int})(?![0-9])
  OVHHAPROXYDATE %{MONTHDAY:haproxy_monthday_int:int}/%{MONTH:haproxy_month}/%{YEAR:haproxy_year_int:int}:%{OVHHAPROXYTIME:haproxy_time}.%{INT:haproxy_milliseconds:int}
  OVHSYSLOGHEAD <%{NONNEGINT:facility:int}.%{NONNEGINT:severity:int}>
- 
+
  OVHHAPROXYHEAD (?:%{SYSLOGTIMESTAMP:syslog_timestamp}|%{TIMESTAMP_ISO8601:timestamp8601_date}) %{IPORHOST:syslog_server} %{SYSLOGPROG}:
- 
+
  # parse a haproxy 'httplog' line
  OVHHAPROXYHTTPBASE %{IP:client_ip}:%{INT:client_port_int:int} \[%{OVHHAPROXYDATE:accept_date}\] %{NOTSPACE:frontend_name} %{NOTSPACE:backend_name}/%{NOTSPACE:server_name} %{INT:time_request_int:int}/%{INT:time_queue_int:int}/%{INT:time_backend_connect_int:int}/%{INT:time_backend_response_int:int}/%{NOTSPACE:time_duration_int:int} %{INT:http_status_code_int:int} %{NOTSPACE:bytes_read_int:int} %{DATA:captured_request_cookie} %{DATA:captured_response_cookie} %{NOTSPACE:termination_state} %{INT:actconn_int:int}/%{INT:feconn_int:int}/%{INT:beconn_int:int}/%{INT:srvconn_int:int}/%{NOTSPACE:retries_int:int} %{INT:srv_queue_int:int}/%{INT:backend_queue_int:int} (\{%{HAPROXYCAPTUREDREQUESTHEADERS}\})?( )?(\{%{HAPROXYCAPTUREDRESPONSEHEADERS}\})?( )?"(<BADREQ>|(%{WORD:http_verb} (%{URIPROTO:http_proto}://)?(?:%{USER:http_user}(?::[^@]*)?@)?(?:%{URIHOST:http_host})?(?:%{URIPATHPARAM:http_request})?( HTTP/%{NUMBER:http_version})?))?"
  OVHHAPROXYHTTP %{OVHHAPROXYHEAD} %{OVHHAPROXYHTTPBASE}
- 
+
  # parse a haproxy 'tcplog' line
  OVHHAPROXYTCP %{OVHHAPROXYHEAD} %{IP:client_ip}:%{INT:client_port_int:int} \[%{OVHHAPROXYDATE:accept_date}\] %{NOTSPACE:frontend_name} %{NOTSPACE:backend_name}/%{NOTSPACE:server_name} %{INT:time_queue_int:int}/%{INT:time_backend_connect_int:int}/%{NOTSPACE:time_duration_int:int} %{NOTSPACE:bytes_read_int:int} %{NOTSPACE:termination_state} %{INT:actconn_int:int}/%{INT:feconn_int:int}/%{INT:beconn_int:int}/%{INT:srvconn_int:int}/%{NOTSPACE:retries_int:int} %{INT:srv_queue_int:int}/%{INT:backend_queue_int:int}
- 
+
  # parse a haproxy 'error' line
  OVHHAPROXYERROR %{OVHHAPROXYHEAD} %{IP:client_ip}:%{INT:client_port_int:int} \[%{OVHHAPROXYDATE:accept_date}\] %{NOTSPACE:frontend_name}/%{NOTSPACE:bind_name}: %{GREEDYDATA:error_message}
 ```
@@ -215,15 +215,15 @@ Copy the certificate in a file **logstash.pem** and copy the hostname and your p
 ```text hl_lines="4 10"
  $AddUnixListenSocket /var/lib/haproxy/dev/log
  $template haproxy,"%timestamp:::date-rfc3339% %HOSTNAME% %syslogtag%%msg%\n"
- 
+
  $DefaultNetstreamDriverCAFile /etc/ssl/certs/logstash.pem
  $DefaultNetstreamDriver gtls # use gtls netstream driver
  $ActionSendStreamDriverMode 1 # require TLS for the connection
  $ActionSendStreamDriverAuthMode anon # server is NOT authenticated
- 
+
  # Send HAProxy messages to your container
  if $programname startswith 'haproxy' then @@gra1-XXXXXXXXXXXXXXXXXXXXXXXXX.gra1.logs.ovh.com:1514;haproxy
- 
+
  # Send HAProxy messages to a dedicated logfile
  if $programname startswith 'haproxy' then /var/log/haproxy.log;haproxy
  &~
@@ -261,22 +261,22 @@ action(type="mmutf8fix")
 $MaxMessageSize 32k
 $EscapeControlCharactersOnReceive off
 $AddUnixListenSocket /var/lib/haproxy/dev/log
- 
+
 $DefaultNetstreamDriverCAFile /etc/ssl/certs/global.pem
 $DefaultNetstreamDriver gtls # use gtls netstream driver
 $ActionSendStreamDriverMode 1 # require TLS for the connection
 $ActionSendStreamDriverAuthMode anon # server is NOT authenticated
- 
+
 $ModLoad imuxsock # local message reception
 $WorkDirectory /var/spool/rsyslog # default location for work (spool) files
 $ActionQueueType LinkedList # use asynchronous processing
 $ActionQueueFileName srvrfwd # set file name, also enables disk mode
 $ActionResumeRetryCount -1 # infinite retries on insert failure
 $ActionQueueSaveOnShutdown on # save in-memory data if rsyslog shuts down
- 
+
 $template ltsv,"X-OVH-TOKEN:<YOUR STREAM TOKEN><TAB>time:%timestamp:::date-rfc3339%<TAB>host:%HOSTNAME%<TAB>level:%syslogseverity%<TAB>facility:%syslogfacility%<TAB>program:%app-name%<TAB>pid:%procid%<TAB>%msg:2:32768%\n"
 $template ltsv_fix,"X-OVH-TOKEN:<YOUR STREAM TOKEN><TAB>time:%timestamp:::date-rfc3339%<TAB>host:%HOSTNAME%<TAB>level:%syslogseverity%<TAB>facility:%syslogfacility%<TAB>program:%app-name%<TAB>pid:%procid%<TAB>message:%msg:2:32768%\n"
- 
+
 # Send HAProxy messages to LDP and a dedicated logfile
 if $programname startswith 'haproxy' then {
 if $msg contains '<TAB>' then {
@@ -292,7 +292,7 @@ if $programname startswith 'haproxy' then /var/log/haproxy.log
 > [!alert]
 >
 > `<TAB>` are placeholders! You should replace every <TAB> by proper tabulation characters.
-> 
+>
 
 In this configuration, we added some $Action directives to have a more robust configuration and never lose messages when there is a network issue for example. As we mentioned before, you should replace the $DefaultNetstreamDriverCAFile path to your endpoint certificate path. This setup uses two templates that are used in two different cases. The first one is when the incoming message is a LTSV one. We detect it by looking for tabulations characters in the message. If there is no tabulation, we use the second template: it means it is an unexpected message and to not lose it, we enclose it in a dedicated message: field. These templates add some information like the token. You should put your own stream token in both template and you can also add any custom field.
 
@@ -308,7 +308,7 @@ sudo filebeat modules enable haproxy
 ```
 
 
-Edit your filebeat.yml configuration file to include the following snippet to enable log file reading in the module and to configure filebeat with our special Elasticsearch input.
+Edit your filebeat.yml configuration file to include the following snippet to enable log file reading in the module and to configure filebeat with our special OpenSearch input.
 
 ```yaml
 filebeat.modules:
@@ -338,7 +338,7 @@ output.elasticsearch:
 
 ```
 
-In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](../tokens-logs-data-platform){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs. 
+In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](../tokens-logs-data-platform){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs.
 
 ```shell-session
 $ sudo systemctl enable filebeat
