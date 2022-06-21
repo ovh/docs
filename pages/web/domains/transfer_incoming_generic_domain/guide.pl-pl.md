@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 20-04-2021**
+**Ostatnia aktualizacja z dnia 17-06-2022**
 
 ## Wprowadzenie
 
@@ -41,8 +41,7 @@ Procedura transferu składa się z kilku etapów, w które włączone są różn
 |1|Weryfikacja informacji związanych z domeną|Administrator domeny|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
 |2|Odblokowanie domeny i pobranie kodu transferu|Administrator domeny, za zgodą właściciela|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
 |3|Wniosek o transfer domeny|Każda osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
-|4|Realizacja pierwszego etapu potwierdzania transferu|Właściciel domeny i administrator informują nowego operatora|W otrzymanym e-mailu|Maksymalnie 5 dni|
-|5|Realizacja drugiego etapu potwierdzania transferu|U obecnego operatora domeny|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
+|4|Zatwierdzenie transferu|U obecnego operatora domeny|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
 
 > [!warning]
 >
@@ -102,49 +101,29 @@ Możesz również zakończyć zamówienie [hostingiem www](https://www.ovhcloud.
 
 ![domena](images/Order_summary.png){.thumbnail}
 
-Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, następnie ` Operacje w toku`{.action}.
+#### Informacje o transferze po zamówieniu
 
-### Etap 4: wykonać pierwszy etap potwierdzania transferu
+Po zatwierdzeniu zamówienia otrzymasz zamówienie. Transfer rozpocznie się po otrzymaniu płatności. Po przeprowadzeniu tej operacji możesz śledzić postęp transferu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Aby śledzić postęp procesu, kliknij `Domeny`{.action}, a następnie `Operacje w toku`{.action}.
 
-Po uruchomieniu operacji transferu konieczne są dwa etapy potwierdzenia. Pierwszy etap może zostać wykonany od początku transferu, ale może trwać do pięciu dni.
+> [!primary]
+>
+> Jeśli kod transferu nie został wpisany podczas składania zamówienia, możesz go wpisać w oknie `Operacje w toku`{.action}, aby potwierdzić operację.
 
-|Kto otrzymuje prośbę o zatwierdzenie transferu?|Gdzie jest wysyłane zlecenie zatwierdzenia?|
-|---|---|
-|Właściciel domeny|Na adres e-mail właściciela występującego w bazie Whois (jeśli nie jest ukryta). W przeciwnym razie zostanie ona wysłana na adres e-mail właściciela domeny, którą wprowadziłeś podczas składania zamówienia.|
-|Administrator wskazany w procesie zamówienia na OVHcloud.|Na adres e-mail wskazany w profilu administratora w OVHcloud|
+### Etap 4: potwierdzenie transferu przez aktualnego operatora
 
-Obie strony potwierdzają transfer za pośrednictwem interfejsu OVHcloud. Link prowadzący do drugiej części znajdziesz w otrzymanych e-mailach.
-
-Domeny:
-
-Na tym etapie możliwe są różne wyniki, w zależności od działań podjętych przez właściciela domeny i administratora.
+Po zatwierdzeniu zamówienia i kodu transferu aktualny operator (którym nie jest jeszcze OVHcloud) otrzyma prośbę o zatwierdzenie. Możliwych jest kilka scenariuszy w zależności od podjętych działań.
 
 |Działanie|Rezultat|
 |---|---|
-|Właściciel domeny i administrator potwierdzają zlecenie transferu.|Transfer przechodzi do drugiego etapu zatwierdzenia w ciągu 24 godzin|
-|Odpowiedź dotycząca zatwierdzenia uzyskana tylko od jednego z kontaktów. Drugi kontakt nie wysyła odpowiedzi.|Transfer przechodzi do drugiego etapu zatwierdzenia po pięciu dniach|
-|Brak odpowiedzi na obydwie prośby o zatwierdzenie transferu|Transfer przechodzi do drugiego etapu zatwierdzenia po pięciu dniach|
-|Odmowa (właściciela lub administratora)|Transfer zostaje anulowany, gdy tylko jeden z kontaktów odmówi transferu.|
-
-W przypadku anulowania transferu upewnij się, że wszystkie zainteresowane strony wyrażą zgodę przed ponowną próbą. Jeśli e-mail nie został odebrany, sprawdź, czy wszystkie konta e-mail są aktualne.
-
-Proces ten można ponownie rozpocząć w późniejszym czasie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
-
-### Etap 5: realizacja drugiego etapu zatwierdzania transferu
-
-Po uruchomieniu drugiego etapu aktualny operator (którym nie jest jeszcze OVHcloud) otrzymuje prośbę o zatwierdzenie. Możliwych jest kilka scenariuszy w zależności od podjętych działań.
-
-|Działanie|Rezultat|
-|---|---|
-|Zatwierdzenie obecnego operatora domeny|Transfer zostaje zrealizowany w ciągu 24 godzin|
-|Brak odpowiedzi od aktualnego operatora|Transfer zostaje zrealizowany po pięciu dniach|
-|Odmowa ze strony aktualnego operatora.|Transfer zostaje anulowany po wydaniu odmowy.|
+|Zatwierdzenie obecnego operatora domeny|Transfer zostaje zrealizowany w ciągu **24 godzin**.|
+|Brak odpowiedzi od aktualnego operatora|Transfer zostaje zakończony po upływie **5 dni**.|
+|Odmowa ze strony aktualnego operatora.|Transfer zostaje **anulowany** po wydaniu odmowy.|
 
 Jeśli odmowa została wydana przez aktualny operator rejestracji, skontaktuj się z nim, aby dowiedzieć się, dlaczego odmówił rejestracji.
 
 Proces transferu może zostać ponownie uruchomiony w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz `Web Cloud`{.action} i przejdź do sekcji `Domeny`{.action}, następnie kliknij `Operacje w toku`{.action}.
 
-### Etap 6: zarządzaj domeną za pomocą OVHcloud
+### Etap 5: zarządzaj domeną za pomocą OVHcloud
 
 Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu wybierz `Web Cloud`{.action}, kliknij `Domeny`{.action}, po czym kliknij wybraną nazwę domeny.
 

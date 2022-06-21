@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 20/04/2021**
+**Ultimo aggiornamento: 17/06/2022**
 
 ## Obiettivo
 
@@ -41,8 +41,7 @@ La procedura di trasferimento prevede diversi step, tra cui l'avvio di contatti 
 |1|Verifica delle informazioni associate al dominio|L'amministratore del dominio|Il Registrar attuale|In base alle azioni effettuate|
 |2|Sblocco del dominio e recupero del codice di trasferimento|L'amministratore del dominio, con l'autorizzazione del proprietario|Il Registrar attuale|In base alle azioni effettuate|
 |3|Trasferimento di un dominio|Chiunque sia in possesso del codice di trasferimento, anche con il permesso del proprietario|Con il nuovo Registrar (ad esempio, OVHcloud)|In base alle azioni effettuate|
-|4|Prima fase di conferma del trasferimento|Il proprietario del dominio e l'amministratore informano il nuovo Registrar del dominio|Per email|Massimo cinque giorni|
-|5|Seconda fase di conferma del trasferimento|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
+|4|Conferma del trasferimento|Il Registrar attuale|Tramite una richiesta da parte del Registro che gestisce l’estensione del dominio|Massimo cinque giorni|
 
 > [!warning]
 >
@@ -102,49 +101,29 @@ Quando ti viene chiesto di fornire il codice di trasferimento, digitalo nella ca
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
-Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e seleziona `Operazioni in corso`{.action}.
+#### Stato del trasferimento dopo l'ordine
 
-### Step 4: effettua il primo step di conferma del trasferimento
+Una volta confermato l'ordine, riceverai un buono d'ordine. La procedura di trasferimento inizierà solo dopo aver ricevuto il pagamento. Una volta completata l'operazione, è possibile seguire lo stato di avanzamento del processo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per monitorare lo stato di avanzamento dell'operazione, clicca su `Domini`{.action} e poi `Operazioni in corso`{.action}.
 
-Adesso che l’operazione è in corso, sono necessarie due fasi affinché vada a buon fine. Il primo step può essere effettuato dall'inizio del trasferimento, ma può richiedere fino a cinque giorni.
+> [!primary]
+>
+> Se il codice di trasferimento non è stato inserito durante l'ordine, inseriscilo nella finestra `Operazioni in corso`{.action} e infine confermare il trasferimento.
 
-|Chi riceve queste richieste di conferma?|Dove viene inviata la richiesta di conferma|
-|---|---|
-|Il proprietario del dominio|All'indirizzo email del proprietario, presente nel Whois (se non è mascherata). In caso contrario, viene inviata all'indirizzo email del proprietario del dominio inserito durante la procedura di ordine.|
-|L'amministratore indicato durante la procedura d'ordine su OVHcloud.|All'indirizzo email inserito nel profilo dell'amministratore su OVHcloud|
+### Step 4: conferma del trasferimento da parte dell'attuale Registrar
 
-Le due parti convalidano il trasferimento tramite un'interfaccia OVHcloud. raggiungibile tramite un link presente nelle email inviate alle due parti.
-
-Domini:
-
-In base alle azioni intraprese dal proprietario del dominio e dall'amministratore, è possibile ottenere diversi risultati.
+Una volta convalidato l'ordine e il codice di trasferimento, il Registrar attuale (non ancora OVHcloud) riceverà una richiesta di conferma. Sono possibili diversi scenari di risposta:
 
 |Scenario possibile|I Risultati|
 |---|---|
-|Il proprietario del dominio e l'amministratore convalidano la richiesta di trasferimento.|Passaggio al secondo step di conferma entro massimo 24 ore|
-|Conferma da parte di un solo contatto  e una richiesta senza risposta|Passaggio al secondo step di conferma al termine di un periodo di 5 giorni|
-|Nessuna risposta alle due richieste di conferma|Passaggio al secondo step di conferma al termine di un periodo di 5 giorni|
-|Rifiuto da parte di uno dei contatti|La procedura di trasferimento viene annullata non appena uno dei contatti rifiuta il trasferimento.|
-
-In caso di annullamento di un trasferimento, assicurati che tutte le parti interessate siano d'accordo prima di compiere un nuovo tentativo. Se non sono presenti email, verifica che tutti gli indirizzi email siano aggiornati.
-
-Questa procedura può essere ripetuta in seguito dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
-
-### Seconda fase di conferma del trasferimento
-
-Una volta avviato il secondo step, il Registrar attuale (non ancora OVHcloud) riceverà una richiesta di conferma. Sono possibili diversi scenari di risposta:
-
-|Scenario possibile|I Risultati|
-|---|---|
-|Conferma del provider attuale|Il trasferimento viene effettuato entro 24 ore|
-|Nessuna risposta da parte del provider attuale|Il trasferimento viene effettuato al termine di un periodo di 5 giorni|
-|Rifiuto da parte del provider attuale.|La procedura di trasferimento viene annullata non appena viene emesso il rifiuto.|
+|Conferma del provider attuale|Il trasferimento viene effettuato entro **24 ore**.|
+|Nessuna risposta da parte del provider attuale|Il trasferimento è completato dopo un periodo di **5 giorni**.|
+|Rifiuto da parte del provider attuale.|La procedura di trasferimento viene **annullata** non appena viene emesso il rifiuto.|
 
 Se il provider attuale emette un rifiuto, contatta il provider per sapere perché l'ha rifiutata.
 
 Il trasferimento può essere riavviato dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action} e accedi alla sezione `Domini`{.action}, poi clicca su `Operazioni in corso`{.action}.
 
-### Step 6: gestire il dominio con OVHcloud
+### Step 5: gestire il dominio con OVHcloud
 
 Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Web Cloud`{.action}, clicca su `Domini`{.action} nel menu a sinistra e poi clicca sul dominio interessato.
 

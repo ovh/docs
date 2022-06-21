@@ -11,7 +11,7 @@ order: 4
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22/06/2020**
+**Ostatnia aktualizacja z dnia 17/06/2022**
 
 ## Wprowadzenie
 
@@ -28,18 +28,26 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 ## Wymagania początkowe
 
-- Twoja domena nie może być usunięta ani usunięta.
+- Twoja domena nie może być **odkupienia** ani usunięta.
 - Domena nie może zostać zablokowana u Twojego operatora. 
 - Dane kontaktowe właściciela muszą być aktualne w [bazie whois](https://www.nominet.uk/whois/){.external} domeny.
-- Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela. 
+- Otrzymasz kod autoryzacyjny, który zostanie wysłany na adres e-mail właściciela.
+
+> [!primary]
+>
+> Okres **odkupienia** wynosi maksymalnie 90 dni od dnia wygaśnięcia domeny. W przypadku transferu ten czas pozwala na przywrócenie domeny i odblokowanie możliwości jej transferu.
 
 ## Rozszerzenia
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## W praktyce
 
@@ -47,7 +55,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 #### Etap 1: Zmiana APR dla domeny
 
-Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >
