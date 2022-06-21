@@ -4,6 +4,7 @@ slug: nutanix-vrack-interconnection
 excerpt: "Mise en place d'une interconnexion de deux clusters au travers d'un vRACK d'OVHCLOUD"
 section: Plan de reprise d'activité
 order: 03
+hidden: true
 ---
 
 **Dernière mise à jour le 18/02/2022**

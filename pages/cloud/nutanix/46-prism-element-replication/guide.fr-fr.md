@@ -4,6 +4,7 @@ slug: prism-element-nutanix-replication
 excerpt: "Comment mettre en place la réplication asynchrone ou synchrone au travers de Prism Element"
 section: Plan de reprise d'activité
 order: 04
+hidden: true
 ---
 
 **Dernière mise à jour le 16/06/2022**
