@@ -81,7 +81,7 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
-#### Récupération de l'adresse publique sur l'espace client d'OVHcloud
+#### Récupération de l'adresse publique sur l'espace client d'OVHcloud <a name="getipcustomerportal"></a>
 
 Avant de lancer l'installation de **PFSENSE** il faut récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
@@ -153,7 +153,7 @@ Choisissez  `NO` avec la touche `tabulation`{.action} et appuyez sur la touche `
 
 ![PFSENSE Installation 09](images/03-install-pfsense09.png ){.thumbnail}
 
-Laissez  `Reboot` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
+Laissez  `Reboot` et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 10](images/03-install-pfsense10.png ){.thumbnail}
 
@@ -229,9 +229,11 @@ Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} à la demande 
 
 ![Configure PFSENSE 08](images/04-configureip-pfsense08.png ){.thumbnail}
 
-Saisissez la `première adresse`{.action} disponible de l'**IP FAILOVER** et appuyez sur `Entree`{.action} pour l'adresse publique.
+Saisissez l'adresse publique qui correspont à la première adresse disponible et appuyez sur `Entree`{.action}
 
-Ensuite saisisez la `deuxième adresse`{.action} disponible de l'**IP FAILOVER** et appuyez sur `Entree`{.action} pour l'adresse de passerelle.
+Ensuite saisissez la passerelle qui correspond à la deuxième address disponible et appuyer sur `Entree`{.action}
+
+Comme indiqué dans cette partie de la documentation  [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) » de ce guide.
 
 ![Configure PFSENSE 09](images/04-configureip-pfsense09.png ){.thumbnail}
 
