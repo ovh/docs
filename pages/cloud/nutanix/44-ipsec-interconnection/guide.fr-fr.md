@@ -92,7 +92,7 @@ Avant de lancer l'installation de **PFSENSE** il est important de connaitre les 
 
 Connectez-vous sur l'espace client d'OVHcloud positionnez vous dans la barre de menu sur `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse se trouvant dans `IPFO`
 
-![Get IP Fail OVER ](images/02-get-ipfailover.png){.thumbnail}
+![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
 l'adresse affichée est un pack de 4 adresses avec un masque à /30 ce qui donne la possibilité de n'avoir qu'un adresse réellement disponible qui est l'adresse du reseau +1 comme indiqué en dessous :  
 
