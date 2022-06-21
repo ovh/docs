@@ -29,22 +29,25 @@ Transferring a .uk (or similar) domain name requires a specific approach.
 
 > [!primary]
 >
-> The **redemption** period is a maximum of 90 days from the day the domain name expires. In the case of a transfer, this period allows you to restore the domain and thus unblock the ability to transfer it.
+> The **Redemption** period is a maximum of 90 days from the day the domain name expires. In the case of a transfer, this period allows you to restore the domain and thus unblock the ability to transfer it.
 
 ## Extensions in question
 
-- .co.uk
-- .me.uk
-- .org.uk
-- .ltd.uk
-- .plc.uk
 - .uk
+- .co.uk
+- .ac.uk
+- .gov.uk
+- .me.uk
+- .net.uk
+- .org.uk
+- .plc.uk
+- .sch.uk
 
 ## Instructions
 
 ### Step 1: Changing your domain TAG
 
-In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](http://www.nominet.uk/registrar-list){.external} registry website.
+In order to transfer your domain to OVHcloud, you must first specify the OVHcloud TAG at your current registrar: "OVH-FR". The list of TAGs for the different registrars is available on the official [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external} registry website.
 
 > [!primary]
 >

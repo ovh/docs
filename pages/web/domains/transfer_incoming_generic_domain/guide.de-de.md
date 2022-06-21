@@ -1,7 +1,7 @@
 ---
-title: 'Domainnamen zu OVHcloud transferieren'
+title: Domainnamen zu OVHcloud transferieren
 slug: transfer-einer-generischen-domain
-excerpt: 'Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren'
+excerpt: Erfahren Sie hier, wie Sie Ihren Domainnamen zu OVHcloud transferieren
 section: Transfer
 order: 1
 ---
@@ -31,7 +31,7 @@ Mit einem Domaintransfer wechseln Sie Ihren Domainnamen-Registrar. Sie können I
 
 ## In der praktischen Anwendung
 
-Der Transfer umfasst mehrere Schritte, die die Kontaktaufnahme mit Ihrem aktuellen Registry und OVHcloud erfordern. Die folgende Tabelle enthält die zu kontaktierenden Personen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
+Der Transferprozess umfasst mehrere Schritte. Diese erfordern die Kontaktaufnahme mit Ihrem aktuellen Registrar und OVHcloud. Die folgende Tabelle enthält die zu kontaktierenden Personen sowie die Dauer der verschiedenen Schritte des Transfervorgangs.
 
 |Schritt|Beschreibung|Wer ist betroffen?|Wo?|Dauer|
 |---|---|---|---|---|
@@ -100,25 +100,25 @@ Sie können Ihre Bestellung auch mit einem [Webhosting](https://www.ovhcloud.com
 
 #### Weiterverfolgung des Transfers nach der Bestellung
 
-Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Wenn dieser Vorgang abgeschlossen ist, können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} nachverfolgen. Um den Fortschritt nachzuverfolgen, klicken Sie auf `Domainnamen`{.action} und dann auf `Laufende Operationen`{.action}.
+Sobald die Bestellung bestätigt wurde, erhalten Sie einen Bestellschein. Der Transferprozess wird erst nach Erhalt der Zahlung gestartet. Ab dann können Sie den Fortschritt des Transfers über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen: Öffnen Sie `Domainnamen`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
 
 > [!primary]
 >
-> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie diesen im Fenster Laufende Operationen eingeben `und so den`{.action} Transfer bestätigen.
+> Wenn der Transfer-Code bei der Bestellung nicht eingegeben wurde, können Sie ihn im Bereich `Laufende Operationen`{.action} eingeben und damit den Transfer bestätigen.
 
 ### Schritt 4: Validierung des Transfers durch den aktuellen Registrar
 
-Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der Registrar der aktuellen Domain (die noch nicht bei OVHcloud ist) eine Bestätigungsanfrage erhalten. Auch hier sind wieder je nach vorgenommener Aktion mehrere Ergebnisse möglich.
+Sobald die Bestellung und der Transfer-Code bestätigt sind, wird der aktuelle Registrar (der noch nicht OVHcloud ist) eine Bestätigungsanfrage erhalten. Auch hier sind wieder je nach ausgeführter Aktion mehrere Ergebnisse möglich.
 
 |Aktion|Ergebnis|
 |---|---|
-|Bestätigung des bisherigen Registrars.|Der Transfer erfolgt innerhalb von **24 Stunden**.|
-|Keine Antwort des aktuellen Registrars|Der Transfer wird nach **5 Tagen abgeschlossen**.|
-|Ablehnung durch den bisherigen Registrar.|Der Transfer wird **nach** Ablehnung abgebrochen.|
+|Bestätigung des aktuellen Registrars.|Der Transfer erfolgt innerhalb von **24 Stunden**.|
+|Keine Antwort des aktuellen Registrars|Der Transfer wird nach **5 Tagen** abgeschlossen.|
+|Ablehnung durch den aktuellen Registrar.|Der Transfer wird **abgebrochen**, sobald dessen Ablehnung erfolgt.|
 
-Wird eine Ablehnung vom bisherigen Registrar ausgesprochen, kontaktieren Sie bitte den Registrar, um zu erfahren, warum er sie abgelehnt hat.
+Wird eine Ablehnung vom aktuellen Registrar ausgesprochen, kontaktieren Sie den Registrar, um die Gründe dafür zu erfahren.
 
-Der Transferprozess kann über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} neu gestartet werden. Wählen Sie die `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action} und klicken Sie dann auf `Laufende Operationen`{.action}.
+Der Transferprozess kann über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu gestartet werden. Wählen Sie `Web Cloud`{.action} aus und gehen Sie in den Bereich `Domainnamen`{.action}. Klicken Sie dann auf `Laufende Operationen`{.action}.
 
 ### Schritt 5: Domainnamen bei OVHcloud verwalten
 
@@ -126,6 +126,6 @@ Sobald der Transfer abgeschlossen ist, können Sie Ihren Domainnamen über das [
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](../../hosting/migration-ihrer-website-zu-ovh/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

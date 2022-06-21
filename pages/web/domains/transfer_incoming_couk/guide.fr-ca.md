@@ -34,12 +34,16 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 > La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le domaine et ainsi débloquer la possibilité de le transférer.
 
 ## Extensions concernées
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## En pratique
 
@@ -47,7 +51,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 #### Étape 1 : Modification du TAG de votre domaine
 
-Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >

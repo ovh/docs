@@ -38,12 +38,16 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 > Okres **odkupienia** wynosi maksymalnie 90 dni od dnia wygaśnięcia domeny. W przypadku transferu ten czas pozwala na przywrócenie domeny i odblokowanie możliwości jej transferu.
 
 ## Rozszerzenia
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## W praktyce
 
@@ -51,7 +55,7 @@ Transfer domeny .uk (lub podobnej) wymaga zastosowania specjalnego podejścia.
 
 #### Etap 1: Zmiana APR dla domeny
 
-Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Aby móc przenieść domenę do OVHcloud, należy najpierw podać TAG OVHcloud u obecnego operatora. OVHcloud otrzymuje oznaczenie "OVH-FR". Lista TAGS poszczególnych operatorów jest dostępna na oficjalnej stronie internetowej [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >

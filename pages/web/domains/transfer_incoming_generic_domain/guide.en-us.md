@@ -16,14 +16,14 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 ## Requirements
 
-- a domain name registered with another registrar
-- the domain name is more than 60 days old
-- the domain name has not been transferred or changed owners within the last 60 days
-- the domain name status is "OK" or "Transferable"
-- the domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days
-- the domain name is unlocked, with a transfer code received or the ability to receive one
-- the authority to request a transfer for the domain name
-- the domain name owner and/or its administrators must be informed of the transfer request.
+- A domain name registered, with another registrar.
+- The domain name is more than 60 days old.
+- The domain name has not been transferred or changed owners within the last 60 days.
+- The domain name status is "OK" or "Transferable".
+- The domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days.
+- The domain name is unlocked, with a transfer code received or the ability to receive one.
+- You have the authority to request a transfer for the domain name.
+- The domain name owner and/or its administrators must be informed of the transfer request.
 
 ## Instructions
 
@@ -100,34 +100,34 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovhc
 
 Once finished, you will receive a purchase order. The transfer process will only start after your payment was received. Afterward, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}: Switch to `Web Cloud`{.action} and go to the `Domain names`{.action} section. Then select `Ongoing operations`{.action}.
 
-#### Track transfer after order
+#### Tracking a transfer after the order
 
-Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. To track the progress, click `Domain`{.action} names, then `Ongoing operations`{.action}.
+Once the order has been confirmed, you will receive a purchase order. The transfer process will not start until payment has been received. Once this is done, you can track the transfer progress via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. To track the progress, open `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
 > [!primary]
 >
-> If the transfer code was not entered during the order, you can enter it in the `Ongoing operations`{.action} window and validate the transfer.
+> If the transfer code was not entered during the order, you can enter it in the section `Ongoing operations`{.action} to validate the transfer.
 
-### Step 4: transfer validation by the current registrar
+### Step 4: Transfer validation by the current registrar
 
 Once the order and transfer code have been confirmed, the domain name registrar (which is still not OVHcloud) will receive a validation request. There are several possible outcomes at this stage, depending on the actions taken.
 
 |Action|Result|
 |---|---|
 |Validation response received from the current registrar.|The transfer is completed within **24 hours**.|
-|No response received from the current registrar.|The transfer is completed after a **5-day** period.|
+|No response received from the current registrar.|The transfer is completed after a **5-day period**.|
 |A refusal request from the current registrar.|The transfer process is **cancelled** as soon as a refusal is issued.|
 
 If a refusal is issued by the current registrar, contact them to find out why they refused it.
 
-The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Select `Web Cloud`{.action} and go to the `Domain`{.action} Names section, then click `Ongoing operations`{.action}.
+The transfer process can be restarted from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Select `Web Cloud`{.action} and go to the `Domain names`{.action}, then click on `Ongoing operations`{.action}.
 
 
 ### Step 5: Manage your domain at OVHcloud
 
 Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
-To do this, go to `Web Cloud`{.action} click `Domains`{.action} in the services bar, then click on the domain name concerned.
+To do this, go to `Web Cloud`{.action} and open `Domain names`{.action} in the services bar, then click on the domain name concerned.
 
 ## Go further
 

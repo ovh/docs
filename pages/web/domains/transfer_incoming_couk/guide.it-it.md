@@ -39,12 +39,15 @@ Il trasferimento di un dominio.uk (o assimilato) richiede una procedura specific
 
 ## Estensioni interessate
 
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## Procedura
 
@@ -52,7 +55,7 @@ Il trasferimento di un dominio.uk (o assimilato) richiede una procedura specific
 
 #### Step 1: Modifica del TAG del tuo dominio
 
-Per trasferire il tuo dominio in OVHcloud, è necessario indicare preventivamente il TAG OVHcloud presso il tuo attuale registrar. Il TAG OVHcloud è "OVH-FR". La lista dei TAGS dei vari registrar è disponibile sul sito ufficiale del registro [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Per trasferire il tuo dominio in OVHcloud, è necessario indicare preventivamente il TAG OVHcloud presso il tuo attuale registrar. Il TAG OVHcloud è "OVH-FR". La lista dei TAGS dei vari registrar è disponibile sul sito ufficiale del registro [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >

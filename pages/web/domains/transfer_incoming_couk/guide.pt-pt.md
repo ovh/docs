@@ -38,12 +38,16 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 > O período de **redenção** é de 90 dias, no máximo, a contar da data de expiração do nome de domínio. No caso de uma transferência, este período permite restaurar o domínio e assim desbloquear a possibilidade de o transferir.
 
 ## Extensões em causa
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## Instruções
 
@@ -51,7 +55,7 @@ A transferência de um nome de domínio .uk (ou equiparado) requer uma abordagem
 
 #### Etapa 1: Modificação do TAG do seu domínio
 
-Para poder transferir o seu domínio para a OVHcloud, deve indicar previamente o TAG OVHcloud no seu registar atual. A TAG OVHcloud é "OVH-FR". A lista dos TAGS dos diferentes registrars está disponível no site oficial do registo [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Para poder transferir o seu domínio para a OVHcloud, deve indicar previamente o TAG OVHcloud no seu registar atual. A TAG OVHcloud é "OVH-FR". A lista dos TAGS dos diferentes registrars está disponível no site oficial do registo [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >
