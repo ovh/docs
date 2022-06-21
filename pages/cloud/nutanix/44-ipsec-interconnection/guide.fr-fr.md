@@ -1,7 +1,7 @@
 ---
 title: Interconnexion IPSEC entre deux sites
 slug: ipsec-interconnection
-excerpt: "Mise en place d'un VPN IPSEC entre deux clusters Nutanix"
+excerpt: "Mise en place d'un VPN IPSEC entre deux clusters Nutanix distants"
 section: Plan de reprise d'activité
 order: 02
 ---
@@ -592,5 +592,8 @@ Le paramétrage du VPN est terminée coté FRANCE et coté CANADA, il est possib
 
 
 ## Aller plus loin
+
+
+
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

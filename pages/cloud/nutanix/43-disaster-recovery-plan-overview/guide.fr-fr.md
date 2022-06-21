@@ -6,7 +6,7 @@ section: Plan de reprise d'activité
 order: 01
 ---
 
-**Dernière mise à jour le 16/06/2022**
+**Dernière mise à jour le 21/06/2022**
 
 ## Objectif
 
@@ -42,6 +42,8 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
+Un exemple d'interconnexion IPSEC est disponible sur ce lien [Interconnexion IPSEC entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+
 ### Solutions Nutanix pour la mise en place d'un plan de reprise d'activité
 
 Certaines solutions sont disponibles avec **Prism Element** :
@@ -57,6 +59,8 @@ Il est possible d'améliorer la gestion des plans de reprises d'activités au tr
 
 
 ## Aller plus loin
+
+[Réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
