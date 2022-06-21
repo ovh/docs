@@ -60,7 +60,8 @@ type: 'nodejs:16'
 
 Add the following to your app configuration:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 dependencies:
     nodejs:
         yarn: "*"
@@ -72,7 +73,8 @@ These are now available as commands, the same as installing with `npm install -g
 
 Include any commands needed to build and setup your app in the `hooks`, as in the following example:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 hooks:
     build: |
         npm run setup-assets
@@ -83,7 +85,8 @@ hooks:
 
 Specify a command to start serving your app (it must be a process running in the foreground):
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 web:
     commands:
         start: node index.js
@@ -114,7 +117,8 @@ server.listen(config.port);
 
 A complete basic app configuration looks like the following:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 name: node-app
 
 type: nodejs:16
@@ -150,27 +154,28 @@ This means you can specify configuration in a `.npmrc` file in your app root.
 
 To switch to yarn to manage dependencies, follow these steps:
 
-1\. Switch to a build flavor of `none` (so packages aren't installed with npm):
+Step 1. Switch to a build flavor of `none` (so packages aren't installed with npm):
 
-
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 build:
     flavor: none
 ```
 
-2\. Add yarn as a global dependency:
+Step 2. Add yarn as a global dependency:
 
-
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 dependencies:
     nodejs:
         yarn: "1.22.17"
 ```
 
-3\. Install dependencies in the `build` hook:
+Step 3. Install dependencies in the `build` hook:
 
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 hooks:
     build: |
         yarn --frozen-lockfile
