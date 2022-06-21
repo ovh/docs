@@ -17,46 +17,51 @@ In such cases, use a version manager to install the specific version you want to
 You could use one of these:
 
 - [Use `n`](#use-n)
+
 - [Use `nvm`](#use-nvm)
+
 
 Both of the recommendations use a `.nvmrc` file to specify the desired Node.js version.
 You could also specify a different file or use [environment variables](../../development-variables).
 
-## Use `n`
+### Use `n`
 
 The [`n` package](https://github.com/tj/n) works for various Unix-like systems,
 including Windows Subsystem for Linux.
 
-**Step 1 :** Add the desired Node.js version to a `.nvmrc` file in your app root:
+**Step 1: Add the desired Node.js version to a `.nvmrc` file in your app root.**
 
-
-```yaml location=".nvmrc"
+```yaml 
+location= ".nvmrc"
 v16.13.2
 ```
 
-**Step 2 :** Add it as a dependency:
+**Step 2: Add it as a dependency.**
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+{location=".platform.app.yaml"}
 dependencies:
     nodejs:
         n: "*"
 ```
-
 Adding it as a dependency ensures it's cached for future builds.
 
-**Step 3 :** Set the location for the Node.js version using the `N_PREFIX` environment variable:
+**Step 3: Set the location for the Node.js version using the `N_PREFIX` environment variable.**
 
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+{location=".platform.app.yaml"}
 variables:
     env:
         N_PREFIX: /app/.global
 ```
 
-**Step 4 :** Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook):
+**Step 4: Install the specified version of Node.js in a [`build` hook](../../configuration-app/build/#build-hook).**
 
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+{location=".platform.app.yaml"}
+
 hooks:
     build: |
         # Exit the hook on any failure
@@ -74,7 +79,9 @@ You can verify this by running `node -v`.
 
 Your final app configuration should look something like this:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+{location=".platform.app.yaml"}
+
 name: app
 type: 'python:3.9'
 
@@ -95,10 +102,10 @@ hooks:
         n auto
 
         # Reset the location hash to recognize the newly installed version
-        hash -r
+        hash -r0
 ```
 
-## Use `nvm`
+### Use `nvm`
 
 [Node Version Manager (`nvm`)](https://github.com/nvm-sh/nvm)
 
@@ -106,7 +113,9 @@ You can:
 
 - Add it to the build hook to make that version available in the build.
 
-- Control the specific versions to be installed with [environment variables](../../development-variables), meaning you can also have different versions in different environments.
+- Control the specific versions to be installed with [environment variables](../../development-variables),
+
+  meaning you can also have different versions in different environments.
 - Cache `nvm` so you don't need to download it each time.
 
 

@@ -60,7 +60,8 @@ type: 'nodejs:16'
 
 Add the following to your app configuration:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 dependencies:
     nodejs:
         yarn: "*"
@@ -72,7 +73,8 @@ These are now available as commands, the same as installing with `npm install -g
 
 Include any commands needed to build and setup your app in the `hooks`, as in the following example:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 hooks:
     build: |
         npm run setup-assets
@@ -83,7 +85,8 @@ hooks:
 
 Specify a command to start serving your app (it must be a process running in the foreground):
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 web:
     commands:
         start: node index.js
@@ -114,7 +117,8 @@ server.listen(config.port);
 
 A complete basic app configuration looks like the following:
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 name: node-app
 
 type: nodejs:16
@@ -150,27 +154,28 @@ This means you can specify configuration in a `.npmrc` file in your app root.
 
 To switch to yarn to manage dependencies, follow these steps:
 
-1\. Switch to a build flavor of `none` (so packages aren't installed with npm):
+#### Step 1: Switch to a build flavor of `none` (so packages aren't installed with npm)
 
-
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 build:
     flavor: none
 ```
 
-2\. Add yarn as a global dependency:
+#### Step 2: Add yarn as a global dependency
 
-
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 dependencies:
     nodejs:
         yarn: "1.22.17"
 ```
 
-3\. Install dependencies in the `build` hook:
+#### Step 3: Install dependencies in the `build` hook
 
 
-```yaml {location=".platform.app.yaml"}
+```yaml 
+location=".platform.app.yaml"
 hooks:
     build: |
         yarn --frozen-lockfile
@@ -226,8 +231,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps, and Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - PostgreSQL 12<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
@@ -245,8 +249,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Probot is a framework for building GitHub Apps in Node.js.</p>
   
 #### Features
-
--  Node.js 12<br />  
+- Node.js 12<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
  
@@ -260,8 +263,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
-
--  Node.js 12<br />  
+- Node.js 12<br />  
 - PostgreSQL 12<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -270,22 +272,21 @@ To configure a given service, see the page dedicated to that service.
  
 [View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
-### Gatsby with Wordpress 
+### Gatsby with WordPress 
 
 ![image](images/gatsby.png)
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-WordPress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - PHP 7.4<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build for Gatsby<br />  
-- Composer-based build for Wordpress<br />  
+- Composer-based build for WordPress<br />  
 - Multi-app configuration<br />  
 - Delayed SSG build (post deploy hook)<br />  
  
@@ -299,8 +300,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -314,7 +314,6 @@ To configure a given service, see the page dedicated to that service.
 <p>Koa is a lightweight web microframework for Node.js.</p>
   
 #### Features
-
 - Node.js 10<br />  
 - MariaDB 10.2<br />  
 - Automatic TLS certificates<br />  
@@ -330,8 +329,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Node.js is an open-source JavaScript runtime built on Chrome's V8 JavaScript engine.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -346,8 +344,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Next.js is an open-source web framework written for Javascript.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -357,12 +354,11 @@ To configure a given service, see the page dedicated to that service.
 
 ![image](images/express.png)
 
-<p>This template demonstrates building the Express framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Express framework for Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Express is a minimalist web framework written in Node.js.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
@@ -377,8 +373,7 @@ To configure a given service, see the page dedicated to that service.
 <p>NuxtJS is an open-source web framework based on Vue.js.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - Automatic TLS certificates<br />  
 - yarn-based build<br />  
  
@@ -393,8 +388,7 @@ To configure a given service, see the page dedicated to that service.
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
-
--  Node.js 12<br />  
+- Node.js 12<br />  
 - PHP 7.4<br/>  
 - MariaDB 10.4<br/>  
 - Redis 5.0<br/>  
@@ -414,12 +408,10 @@ To configure a given service, see the page dedicated to that service.
 <p>Directus is an open-source platform that allows you to create and manage an API from data stored in a database.</p>
   
 #### Features
-
--  Node.js 14<br />  
+- Node.js 14<br />  
 - PostgreSQL 12<br />  
 - Redis 6.0<br />  
 - Automatic TLS certificates<br />  
 - npm-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/directus) on GitHub.
-
