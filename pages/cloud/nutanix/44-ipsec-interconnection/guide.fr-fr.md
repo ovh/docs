@@ -94,6 +94,8 @@ Connectez-vous sur l'espace client d'OVHcloud positionnez vous dans la barre de 
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
+![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
+
 
 l'adresse affichée est un pack de 4 adresses avec un masque à /30 ce qui donne la possibilité de n'avoir qu'un adresse réellement disponible qui est l'adresse du reseau +1 comme indiqué en dessous :  
 
