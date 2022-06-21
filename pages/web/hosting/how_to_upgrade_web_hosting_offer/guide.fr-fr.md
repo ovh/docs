@@ -65,17 +65,15 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 
 ### Faire évoluer votre hébergement Start 10M vers une offre Perso <a name="start10m"></a>
 
-Pour changer votre hébergement [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) vers [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
+Pour faire évoluer votre hébergement [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) vers [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
 
 Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
 
 #### Cas particulier 
 
-**Si votre Start10M a été activé ou renouvellé entre le 09/06/2021 et le 09/06/2022, l'option d'evolution vers l'offre perso ne pourra se faire qu'à la date anniversaire de votre Start10M.**
+**Si votre hébergement Start10M a été activé ou renouvellé entre le 09/06/2021 et le 09/06/2022, l'évolution vers l'offre Perso ne pourra être effectuée qu'à la date anniversaire de votre Start10M.**
 
-Si vous êtes concerné, nous vous invitons à éffectuer les opérations suivantes :
-
-Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
+Si vous êtes dans ce cas, nous vous invitons à effectuer les opérations suivantes :
 
 1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
 2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action}.<br>
