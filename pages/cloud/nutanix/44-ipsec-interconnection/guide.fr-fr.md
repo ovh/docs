@@ -577,7 +577,7 @@ Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut. pour rajoute
 
 Modifiez ces options : 
 
-* **Source** : `Network` et `192.168.10.0/24` 
+* **Source** : `Network` avec ce réseau `192.168.10.0/24` qui correspond au réseau privé du CANADA
 * **Destination** : `LAN net`
 
 Et cliquez sur `Save`{.action} 
@@ -588,52 +588,7 @@ Cliquez sur `Apply Changes`{.action}
 
 ![Create IPSEC firewall rule FRANCE06](images/11-addipsecrule-from-france06.png){.thumbnail}
 
-Le paramétrage coté canada est terminé.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Le paramétrage du VPN est terminée coté FRANCE et coté CANADA, il est possible de communiquer entre les deux sites et de mettre en place des réplications
 
 
 ## Aller plus loin
