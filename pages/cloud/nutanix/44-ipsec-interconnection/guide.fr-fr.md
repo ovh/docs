@@ -29,7 +29,7 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## En pratique
 
-Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA  et l'autre en FRANCE
+Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l'autre en FRANCE
 
 Le cluster du CANADA est sur  le réseau privé en 192.168.10.0/24 et celui de la FRANCE sur le réseau privé en 192.168.0.0/24
 
@@ -99,7 +99,7 @@ XX.XX.XX.N+2    Reserved: Network gateway
 XX.XX.XX.N+3    Reserved: Network broadcast
 ```
 
-Par exemple si l'adresse affichée est 123.123.123.10 il faudra utiliser l'adresse 123.123.123.11 sur la machine virtuelle et 123.123.123.12 pour la passerelle.
+Par exemple si l'adresse affichée est 123.123.123.10 il faudra utiliser l'adresse 123.123.123.11 sur la machine virtuelle et 123.123.123.12 pour la passerelle sur l'interface WAN
 
 #### Démarrage de la machine virtuelle **GW-pfsense**
 
@@ -225,7 +225,7 @@ Sélectionnez l'interface **WAN** en saississant `1` et en appuyant sur la touch
 
 ![Configure PFSENSE 07](images/04-configureip-pfsense07.png ){.thumbnail}
 
-Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} à la demande de la configuration par DHCP
+Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} à la demande de la configuration de l'adresse par DHCP
 
 ![Configure PFSENSE 08](images/04-configureip-pfsense08.png ){.thumbnail}
 
@@ -235,31 +235,31 @@ Ensuite saisisez la `deuxième adresse`{.action} disponible de l'**IP FAILOVER**
 
 ![Configure PFSENSE 09](images/04-configureip-pfsense09.png ){.thumbnail}
 
-Repondez `n`{.action} et appuyez sur la touche `Entree`{.action} lors de la configuration de l'IPV6 address WAN.
+Repondez `n`{.action} et appuyez sur la touche `Entree`{.action} lors de la configuration de l'IPv6 address WAN.
 
 ![Configure PFSENSE 10](images/04-configureip-pfsense10.png ){.thumbnail}
 
-A la demande **revert to HTTP as the webConfigurator protocol** Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action}
+A la demande **revert to HTTP as the webConfigurator protocol** Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![Configure PFSENSE 11](images/04-configureip-pfsense11.png ){.thumbnail}
 
-Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP du WAN
+Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP du WAN.
 
 ![Configure PFSENSE 12](images/04-configureip-pfsense12.png ){.thumbnail}
 
-Saisissez `2` et appuyez sur la touche `Entree`{.action} pour configurer les adresses IP
+Saisissez `2` et appuyez sur la touche `Entree`{.action} pour configurer les adresses IP.
 
 ![Configure PFSENSE 13](images/04-configureip-pfsense13.png ){.thumbnail}
 
-Prenez l'option `2` et appuyez sur la touche `Entree`{.action} pour modifier l'adresse IP du LAN
+Prenez l'option `2` et appuyez sur la touche `Entree`{.action} pour modifier l'adresse IP du LAN.
 
 ![Configure PFSENSE 14](images/04-configureip-pfsense14.png ){.thumbnail}
 
-Saisissez l'adresse IP privée suivi du masque du CANADA `192.168.10.254/24` et appuyez sur la touche `Entree`{.action}
+Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez sur la touche `Entree`{.action}.
 
 ![Configure PFSENSE 15](images/04-configureip-pfsense15.png ){.thumbnail}
 
-Ne mettez pas de passerelle et appuyez sur la touche `Entree`{.action}
+Appuyez sur la touche `Entree`{.action} sans avoir saisi de passerelle.
 
 ![Configure PFSENSE 16](images/04-configureip-pfsense16.png ){.thumbnail}
 
@@ -267,11 +267,11 @@ saisissez `n` et appuyez sur la touche `Entree`{.action} pour ne pas activer le 
 
 ![Configure PFSENSE 17](images/04-configureip-pfsense17.png ){.thumbnail}
 
-Repondez  `n` et appuyez sur la touche `Entree`{.action} à la demande **revert to HTTP as the webConfigurator protocol**
+Repondez  `n` et appuyez sur la touche `Entree`{.action} à la demande **revert to HTTP as the webConfigurator protocol**.
 
 ![Configure PFSENSE 18](images/04-configureip-pfsense17.png ){.thumbnail}
 
-Il est possible maintenant d'administrer la passerelle en HTTPS sur le réseau privé
+Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
 
 Appuyez sur la touche `Entree`{.action} pour terminer la configuration en ligne de commande.
 
@@ -308,7 +308,7 @@ Cliquez sur l'icone en forme de `Stylo`{.action}
 
 ![Change Password 02](images/06-change-password02.png){.thumbnail}
 
-Remplacez le mot de passe par défaut dans `Password` et confirmez le. Faite défiler la barre de défilement jusqu'en bas de la fenêtre.
+Saisissez le mot de passe deux fois dans `Password` pour le confirmez. Faite défiler la barre de défilement jusqu'en bas de la fenêtre.
 
 ![Change Password 03](images/06-change-password03.png){.thumbnail}
 
@@ -321,10 +321,6 @@ Cliquez sur `Save`{.action} pour valider les changements.
 Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
-
-Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
-
-![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
 Vérifiez que vous êtes sur l'onglet `Wan` et cliquez sur le bouton `Add`{.action} à gauche avec la flêche vers le haut pour créer une règle de parefeu.
 
@@ -359,7 +355,10 @@ Cliquez sur `Apply Change`{.action} pour activer la règle.
 
 ### Configuration de la passerelle en France
 
-L'installation de la passerelle en France est identique à l'installation faites au CANADA sauf pour les adresses privées et publiques qui doivent correspondre au réseau se trouvant en France.
+L'installation de la passerelle en France est identique à l'installation faites au CANADA sauf pour les adresses privées et publiques qui doivent correspondre au réseau se trouvant en France. vous pouvez utiliser le chapitre précedent avec les bonnes informations pour configurer la passerelle **gw-pfsense** en FRANCE qui sont
+
+* **Réseau privé France** : 192.168.0.0/24
+* **Adresse publique** : L'adresse publique IP FAILOVER que l'on voit sur le site client D'OVHcloud.
 
 ### Mise en place du VPN IPSEC
 
@@ -369,7 +368,7 @@ Maintenant que les deux passerelles ont été remplacées nous allons interconne
 
 ##### Mise en place du VPN IPSEC vers la France
 
-Connectez-vous sur l'adresse publique du CANADA en HTTPS comme ceci https://adressepublique-pfsense-canada.
+Connectez-vous sur l'adresse publique du CANADA en HTTPS avec cette URL https://adressepublique-pfsense-canada.
 
 Allez dans le menu `VPN`{.action} et choisissez `IPSec`{.action}.
 
@@ -395,9 +394,9 @@ Cliquez sur `Generate new Pre-Shared Key`{.action} pour générer une clé prép
 
 > [!primary]
 > 
-> Notez ou copiez la clé dans le presse papier elle servira pour la configuration du VPN coté FRANCE
+> Notez ou copiez la clé elle servira pour la configuration du VPN sur la passerelle en FRANCE
 
-Notez et garder les paramètres dans `Encryption Algorithm`
+Notez les informations contenues dans `Encryption Algorithm`
 
 Ensuite faites défiler la fenêtre à l'aide de la `Barre de défilement`{.action}
 
@@ -415,13 +414,13 @@ Cliquez sur `Show Phase 2 Entries`{.action}
 
 ![Create VPN from CANADA 07](images/08-configure-vpn-from-canada07.png){.thumbnail}
 
-Cliquez sur A`dd P2`{.action} pour ajouter la phase 2 du VPN IPSEC
+Cliquez sur `Add P2`{.action} pour ajouter la phase 2 du VPN IPSEC
 
 ![Create VPN from CANADA 08](images/08-configure-vpn-from-canada08.png){.thumbnail}
 
-Effectuez la saisie de ces informations
+Effectuez la saisie de ces informations :
 
-* **Description** : `TO LAN 192.168.0.0 FRANCE`
+* **Description** : `TO LAN 192.168.0.0/24 FRANCE`
 * **Local Network** : `LAN subnet`
 * **Remote Network** : Type `Network`, Address `192.168.0.0/24`
 
@@ -429,7 +428,7 @@ Faites défilez la fenêtre avec la `Barre de défilement`{.action}
 
 ![Create VPN from CANADA 09](images/08-configure-vpn-from-canada09.png){.thumbnail}
 
-Notez les paramètres de chiffrements et continuez à defilez la fenêtre à l'aide de la `Barre de défilement`{.action}
+Notez les paramètres de chiffrements et faites defilez la fenêtre à l'aide de la `Barre de défilement`{.action}
 
 ![Create VPN from CANADA 10](images/08-configure-vpn-from-canada10.png){.thumbnail}
 
@@ -540,21 +539,21 @@ Faites défilez la fenêtre avec la `Barre de défilement`{.action}
 
 ![Create VPN from FRANCE 09](images/10-configure-vpn-from-france09.png){.thumbnail}
 
-Vérifiez les paramètres de chiffrements avec la passerelle du CANADA et faites defilez la fenêtre à l'aide de la `Barre de défilement`{.action}
+Vérifiez les paramètres de chiffrements avec la passerelle du CANADA et faites defilez la fenêtre à l'aide de la `Barre de défilement`{.action}.
 
 ![Create VPN from FRANCE 10](images/10-configure-vpn-from-france10.png){.thumbnail}
 
-Cliquez sur `Save`{.action}
+Cliquez sur `Save`{.action}.
 
 ![Create VPN from FRANCE 11](images/10-configure-vpn-from-france11.png){.thumbnail}
 
-Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPSEC coté CANADA
+Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPSEC.
 
 ![Create VPN from FRANCE 12](images/10-configure-vpn-from-france12.png){.thumbnail}
 
 ##### Ajout d'un règle de parefeu pour autoriser le flux réseau au travers du VPN IPSEC entre le CANADA et la FRANCE
 
-Choisisez Cliquez sur `Rules`{.action} dans le menu `Firewall`
+Cliquez sur `Rules`{.action} dans le menu `Firewall`.
 
 ![Create IPSEC firewall rule FRANCE01](images/11-addipsecrule-from-france01.png){.thumbnail}
 
@@ -567,11 +566,11 @@ Modifiez ces options :
 * **Source** : `LAN net`
 * **Destination** : `Network` et `192.168.10.0/24` 
 
-Ensuite cliquez sur `Save`{.action} 
+Ensuite cliquez sur `Save`{.action}.
 
 ![Create IPSEC firewall rule FRANCE03](images/11-addipsecrule-from-france03.png){.thumbnail}
 
-Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut. pour rajouter une deuxième règle
+Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut. pour rajouter une deuxième règle.
 
 ![Create IPSEC firewall rule FRANCE04](images/11-addipsecrule-from-france04.png){.thumbnail}
 
@@ -580,15 +579,15 @@ Modifiez ces options :
 * **Source** : `Network` avec ce réseau `192.168.10.0/24` qui correspond au réseau privé du CANADA
 * **Destination** : `LAN net`
 
-Et cliquez sur `Save`{.action} 
+Et cliquez sur `Save`{.action}.
 
 ![Create IPSEC firewall rule FRANCE05](images/11-addipsecrule-from-france05.png){.thumbnail}
 
-Cliquez sur `Apply Changes`{.action} 
+Cliquez sur `Apply Changes`{.action}. 
 
 ![Create IPSEC firewall rule FRANCE06](images/11-addipsecrule-from-france06.png){.thumbnail}
 
-Le paramétrage du VPN est terminée coté FRANCE et coté CANADA, il est possible de communiquer entre les deux sites et de mettre en place des réplications
+Le paramétrage du VPN est terminée sur les deux clusters, il est maintenant possible de communiquer entre les deux sites pour mettre en place des réplications.
 
 
 ## Aller plus loin
