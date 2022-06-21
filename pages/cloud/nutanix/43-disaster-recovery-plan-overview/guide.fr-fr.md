@@ -25,7 +25,7 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
     + Plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud
     + Un cluster qui ne se trouve pas chez OVHcloud et un cluster chez OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Être connecté sur vos cluster via Prism Central.
+- Être connecté sur vos clusters via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
 - Avoir une interconnexion de type vRack ou VPN IPSEC entre les deux clusters en fonction des besoins.
 
@@ -33,9 +33,9 @@ Présenter les possibilités offertes avec des clusters Nutanix installés dans 
 
 ### Solutions d'interconnexions 
 
-Il est important de bien choisir l'interconnexion des sites distants dans le cas d'un plan de reprise d'activité. Il est essentiel  que les deux clusters soit entièrement visibles entre eux sur chacun de leurs réseaux privés. Pour cela il est possible d'utiliser diverses technologies que voici :
+Il est important choisir la bonne interconnexion entre des sites distants dans le cas d'un plan de reprise d'activité. Il faut que les deux clusters soient entièrement visibles entre eux au travers d'une connexion sécurisée. Pour cela il est possible d'utiliser diverses technologies que voici :
 
-* Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'informations concernant la solution vRack d'OVHCloud allez sur ce site site [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
+* Connexion des sites entre eux au travers du même vRACK sur tous les sites. Pour plus d'informations concernant la solution vRack d'OVHCloud cliquez sur ce lien [Solution vRack d'OVHcloud](https://www.ovh.com/fr/solutions/vrack/) 
 
 ![Interconnection with vRACK diagram](images/vrackinterconnection.png){.thumbnail}
 
@@ -43,20 +43,20 @@ Il est important de bien choisir l'interconnexion des sites distants dans le cas
 
 ![Interconnection with IPSEC diagram](images/ipsecinterconnection.png){.thumbnail}
 
-Un exemple d'interconnexion IPSEC est disponible sur ce lien [Interconnexion IPSEC entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+Un exemple d'interconnexion IPSEC est disponible à cette adresse [Interconnexion IPSEC entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
 ### Solutions Nutanix pour la mise en place d'un plan de reprise d'activité
 
 Certaines solutions sont disponibles avec **Prism Element** :
 
-* **Async DR** : La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure , si un problème survient il est  possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
-* **NearSync DR** : La réplication se fait plusieurs fois par heure il est possible d'avoir un synchronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possedez (RPO entre 1 minutes et 15 minutes)
-* **Metro/Sync Rep DR** : Le stockage du cluster Nutanix est étendu sur un autre cluster ce empeche toutes pertes de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantanément.
+* **Async DR** : La réplication entre deux **storage containers** distants ne se fait qu'une fois par heure, si un problème survient il est possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
+* **NearSync DR** : La réplication se fait plusieurs fois par heure il est possible d'avoir une synchronisation entre 1 minutes et 15 minutes en fonction de la licence que vous possédez (RPO entre 1 minutes et 15 minutes)
+* **Metro/Sync Rep DR** : Le stockage du cluster Nutanix est étendu sur un autre cluster ce empêche toutes pertes de données (RPO à 0) et une possibilité d'avoir un retour à la normale presque instantanément.
 
 Il est possible d'améliorer la gestion des plans de reprises d'activités au travers d'outils tiers ou avec une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
 > [!warning]
-> La réplication asynchrone entre deux sites est intégrée avec l'offre **Nutanix Standard** d'OVHcloud par contre il est sera nécessaire de passer sur l'offre **Nutanix Advanced** d'OVHcloud pour pouvoir utiliser les autres options.
+> La réplication asynchrone entre deux sites est intégrée avec l'offre **Nutanix Standard** d'OVHcloud cependant il sera nécessaire de passer sur l'offre **Nutanix Advanced** d'OVHcloud pour pouvoir utiliser les autres options.
 
 
 ## Aller plus loin
