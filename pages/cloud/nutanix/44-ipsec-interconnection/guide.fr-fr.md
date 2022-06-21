@@ -326,7 +326,7 @@ Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
-Cliquez sur le bouton `Add`{.action}. à gauche avec la flêche vers le haut pour créer une règle de parefeu.
+Vérifiez que vous êtes sur l'onglet `Wan` et cliquez sur le bouton `Add`{.action} à gauche avec la flêche vers le haut pour créer une règle de parefeu.
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
@@ -359,13 +359,143 @@ Cliquez sur `Apply Change`{.action} pour activer la règle.
 
 ### Configuration de la passerelle en France
 
-L'installation de la passerelle en France est identique à l'installation au CANADA sauf pour les adresses privées et  publiques qui doivent correspondre au réseau se trouvant en France.
+L'installation de la passerelle en France est identique à l'installation faites au CANADA sauf pour les adresses privées et publiques qui doivent correspondre au réseau se trouvant en France.
 
 ### Mise en place du VPN IPSEC
 
-Maintenant que les deux passerelles ont été remplacé nous allons interconnecter les deux sites au travers d'un VPN IPSEC
+Maintenant que les deux passerelles ont été remplacées nous allons interconnecter les deux sites au travers d'un VPN IPSEC
 
-#### 
+#### Configuration du site au CANADA
+
+##### Mise en place du VPN IPSEC vers la France
+
+Connectez-vous sur l'adresse publique du CANADA en HTTPS comme ceci https://adressepublique-pfsense-canada.
+
+Allez dans le menu `VPN`{.action} et choisissez `IPSec`{.action}.
+
+![Create VPN from CANADA 01](images/08-configure-vpn-from-canada01.png){.thumbnail}
+
+Cliquez sur `Add P1`{.action} pour créer la phase 1 du VPN IPSEC
+
+![Create VPN from CANADA 02](images/08-configure-vpn-from-canada02.png){.thumbnail}
+
+Choisissez ces informations
+
+* **Description** : `VPN TO FRANCE`
+* **Key Exchange version** : `IKEv2`
+* **Internet Protocol** : `IPv4`
+* **Interface**  : `WAN`
+* **Remote Gateway** : `Adresse publique du PFSENSE distant en FRANCE`
+
+Ensuite faites défilez la fênetre à l'aide de la `Barre de défilement`{.action}
+
+![Create VPN from CANADA 03](images/08-configure-vpn-from-canada03.png){.thumbnail}
+
+Cliquez sur `Generate new Pre-Shared Key`{.action} pour générer une clé prépartagée dans `Pre-Share Key`
+
+> [!primary]
+> 
+> Notez ou copiez la clé dans le presse papier elle servira pour la configuration du VPN coté FRANCE
+
+Notez et garder les paramètres dans `Encryption Algorithm`
+
+Ensuite faites défiler la fenêtre à l'aide de la `Barre de défilement`{.action}
+
+![Create VPN from CANADA 04](images/08-configure-vpn-from-canada04.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Create VPN from CANADA 05](images/08-configure-vpn-from-canada05.png){.thumbnail}
+
+Cliquez sur `Apply Changes`{.action}
+
+![Create VPN from CANADA 06](images/08-configure-vpn-from-canada06.png){.thumbnail}
+
+Cliquez sur `Show Phase 2 Entries`{.action}
+
+![Create VPN from CANADA 07](images/08-configure-vpn-from-canada07.png){.thumbnail}
+
+Cliquez sur A`dd P2`{.action} pour ajouter la phase 2 du VPN IPSEC
+
+![Create VPN from CANADA 08](images/08-configure-vpn-from-canada08.png){.thumbnail}
+
+Effectuez la saisie de ces informations
+
+* **Description** : `TO LAN 192.168.0.0 FRANCE`
+* **Local Network** : `LAN subnet`
+* **Remote Network** : Type `Network`, Address `192.168.0.0/24`
+
+Faites défilez la fenêtre avec la `Barre de défilement`{.action}
+
+![Create VPN from CANADA 09](images/08-configure-vpn-from-canada09.png){.thumbnail}
+
+Notez les paramètres de chiffrements et continuez à defilez la fenêtre à l'aide de la `Barre de défilement`{.action}
+
+![Create VPN from CANADA 10](images/08-configure-vpn-from-canada10.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+![Create VPN from CANADA 11](images/08-configure-vpn-from-canada11.png){.thumbnail}
+
+Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPSEC coté CANADA
+
+![Create VPN from CANADA 12](images/08-configure-vpn-from-canada12.png){.thumbnail}
+
+##### Ajout d'un règle de parefeu pour autoriser le flux réseau au travers du VPN IPSEC entre le CANADA et la FRANCE
+
+Choisisez Cliquez sur `Rules`{.action} dans le menu `Firewall`
+
+![Create IPSEC firewall rule CANADA 01](images/09-addipsecrule-from-canada01.png){.thumbnail}
+
+Positionnez vous sur l'onglet `IPsec`{.action} et cliquez en bas sur `Add`{.action} avec la flêche vers le haut.
+
+![Create IPSEC firewall rule CANADA 02](images/09-addipsecrule-from-canada02.png){.thumbnail}
+
+Modifiez ces options :
+
+* **Source** : `LAN net`
+* **Destination** : `Network` et `192.168.0.0/24` 
+
+Ensuite cliquez sur `Save`{.action} 
+
+![Create IPSEC firewall rule CANADA 03](images/09-addipsecrule-from-canada03.png){.thumbnail}
+
+Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut. pour rajouter une deuxième règle
+
+![Create IPSEC firewall rule CANADA 04](images/09-addipsecrule-from-canada04.png){.thumbnail}
+
+Modifiez ces options : 
+
+* **Source** : `Network` et `192.168.0.0/24` 
+* **Destination** : `LAN net`
+
+Et cliquez sur `Save`{.action} 
+
+![Create IPSEC firewall rule CANADA 05](images/09-addipsecrule-from-canada05.png){.thumbnail}
+
+Cliquez sur `Apply Changes`{.action} 
+
+![Create IPSEC firewall rule CANADA 06](images/09-addipsecrule-from-canada06.png){.thumbnail}
+
+Le paramétrage coté canada est terminé.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
