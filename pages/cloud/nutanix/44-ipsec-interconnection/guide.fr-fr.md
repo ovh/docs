@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles servant à l'accès INTERNET par une passerelle sous **PFSense**.
+Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVGgateway** servant à d'accès INTERNET par une passerelle sous **PFSense**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -21,9 +21,7 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## Prérequis
 
-- Disposer de plusieurs clusters Nutanix avec ces deux options :
-    + Plusieurs clusters Nutanix sur des sites physiquement différents chez OVHcloud
-    + Un cluster qui ne se trouve pas chez OVHcloud et un cluster chez OVHcloud
+- Disposer de plusieurs clusters Nutanix chez OVHcloud :
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos clusters via Prism Central.
 - Avoir les deux clusters sur deux sites distants physiquement.
@@ -31,42 +29,41 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## En pratique
 
-Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA l'autre en FRANCE
+Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA  et l'autre en FRANCE
 
-Le cluster du CANADA utilise le réseau privé en 192.168.10.0/24 et celui de la FRANCE le réseau privé en 192.168.0.0/24
+Le cluster du CANADA est sur  le réseau privé en 192.168.10.0/24 et celui de la FRANCE sur le réseau privé en 192.168.0.0/24
 
-Nous allons remplacer la machine virtuelle **OVHgateway** par une machine virtuelle **GW-PFSENSE** sur chacun des cluster pour à la fois fournir l'accès INTERNET à chacun des clusters Nutanix et permettre l'établissement d'un tunnel IPSEC sécurisé entre les deux clusters qui permettra par la suite de faire des réplication inter-clusters.
+Nous allons remplacer la machine virtuelle **OVHgateway** par une machine virtuelle **GW-PFSENSE** sur chacun des clusters pour fournir l'accès INTERNET à chacun des clusters Nutanix et permettre l'établissement d'un tunnel IPSEC sécurisé entre ces deux clusters, ce qui permettra par la suite de faire des réplications inter-clusters.
 
 
 ### Configuration de la passerelle au CANADA
 
-Nous allons voir en détail le remplacement de la passerelle **OVHgateway** par une une machine virtuelle **PFsense** sur le site du CANADA.
+Voici les informations détaillées pour remplacer la passerelle par défaut **OVHgateway** par une passerelle sous **PFSense**. Nous allons le faire un site se trouvant au CANADA.
 
-#### Téléchargment des sources PFSENSE
+#### Téléchargement des sources PFSENSE
 
-Téléchargez les sources de **Pfsense** sur ce lien [Téléchargement Pfsense](https://www.pfsense.org/download/)
+Téléchargez l'image iso de l'installation de **Pfsense** sur ce lien [Téléchargement Pfsense](https://www.pfsense.org/download/).
 
-Ensuite à l'aide de la documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **Pfsense** dans vos deux clusters NUTANIX.
+Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **Pfsense** dans votre cluster NUTANIX.
 
-#### Création de la machine virtuelle **GW-Pfsense**
+#### Création de la machine virtuelle **gw-pfsense**
 
 Créez une machine virtuelle avec ces paramètres :
 
-- **Nom** : gw-pfsense
-- **Stockage1** : 60 Go HDD 
-- **Stockage2** : Un lecteur de DVD connecté à l'image ISO de PFSENSE
-- **RAM** : 4 Go 
-- **CPU** : 2 vCPU
-- **Réseau** : deux cartes réseaux sur le réseau de AHV: **Base**
+- **Nom** : `gw-pfsense`
+- **Stockage1** : `60 Go HDD` 
+- **Stockage2** : `Un lecteur de DVD connecté à l'image ISO de PFSENSE`
+- **RAM** : `4 Go` 
+- **CPU** : `2 vCPU`
+- **Réseau** : `deux cartes réseaux sur le réseau de AHV: **Base**`
 
-Vous pouvez vous aider de cette documentation [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer une machine virtuelle.
-
+Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer une machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
 #### Arrêt de la machine virtuelle **OVH-GATEWAY**
 
-IL est necessaire d'arrêter la machine virtuelle **OVHgateway** pour éviter d'avoir des adresses IP en doublon.
+IL faut tout d'abord arrêter la machine virtuelle **OVHgateway** car nous allons réutiliser les adresses IP de cette machines et il ne faut pas avoir de doublons sur le réseau.
 
 Au travers de **Prism Central** cliquez en haut à gauche sur le `menu principal`{.action}.
 
@@ -80,15 +77,15 @@ Cliquez sur la machine virtuelle `OVHgateway`{.action}.
 
 ![Arrêt OVHGateway 03](images/01-stop-ovhgateway03.png){.thumbnail}
 
-Au travers du menu `More`, cliquez sur `Soft Shutdown`{.action}.
+A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
 #### Récupération de l'adresse publique sur l'espace client d'OVHcloud
 
-Avant de lancer l'installation de **PFSENSE** il faut connaitre les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
+Avant de lancer l'installation de **PFSENSE** il faut récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
-Connectez-vous sur l'espace client d'OVHcloud positionnez vous dans la barre de menu sur `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse se trouvant dans `IPFO`
+Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse se trouvant dans `IPFO`
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
@@ -102,9 +99,11 @@ XX.XX.XX.N+2    Reserved: Network gateway
 XX.XX.XX.N+3    Reserved: Network broadcast
 ```
 
+Par exemple si l'adresse affichée est 123.123.123.10 il faudra utiliser l'adresse 123.123.123.11 sur la machine virtuelle et 123.123.123.12 pour la passerelle.
+
 #### Démarrage de la machine virtuelle **GW-pfsense**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** , cliquez sur `GW-Pfsense`{.action}.
+Revenez dans la gestion des machines virtuelles sur **Prism Central** , cliquez sur `GW-Pfsense`{.action}.
 
 ![Start GATEWAY PFSENSE ](images/02-start-gatewaypfsense01.png){.thumbnail}
 
@@ -118,49 +117,49 @@ Cliquez sur `Launch console`{.action}.
 
 #### Installation de **PFSENSE**
 
-Positionnez vous `Accept` et appuyez sur la touche `Entree`{.action}.
+Positionnez-vous sur `Accept` avec la touche `Tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 01](images/03-install-pfsense01.png){.thumbnail}
 
-Choisissez `Install` positionnez vous sur `OK` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Choisissez `Install` positionnez vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 02](images/03-install-pfsense02.png){.thumbnail}
 
-Laissez `Continue with default keymap` positionnez vous sur `select` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Laissez `Continue with default keymap` positionnez vous sur `select` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.,
 
 ![PFSENSE Installation 03](images/03-install-pfsense03.png){.thumbnail}
 
-Laissez `Auto (ZFS)` positionnez vous sur `OK` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Laissez `Auto (ZFS)` allez sur `OK` avec la touche `tabulation`{.action} et tapez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 04](images/03-install-pfsense04.png){.thumbnail}
 
-Positionnez vous sur `Select` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Positionnez vous sur `Select` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 05](images/03-install-pfsense05.png){.thumbnail}
 
-Gardez `stripe` positionnez vous sur `OK` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Gardez `stripe` positionnez vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 06](images/03-install-pfsense06.png){.thumbnail}
 
-Sélectionnez avec la barre `Espace` NUTANIX VDISK ensuite allez sur `OK` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Sélectionnez avec la barre `Espace` NUTANIX VDISK ensuite allez sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 07](images/03-install-pfsense07.png){.thumbnail}
 
-Positionnez vous sur `YES` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Positionnez vous sur `YES` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 08](images/03-install-pfsense08.png){.thumbnail}
 
-Choisissez  `NO` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Choisissez  `NO` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 09](images/03-install-pfsense09.png ){.thumbnail}
 
-Laissez  `Reboot` avec la touche tabulation et appuyez sur la touche `Entree`{.action}.
+Laissez  `Reboot` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
 ![PFSENSE Installation 10](images/03-install-pfsense10.png ){.thumbnail}
 
 #### Ejection du CDROM PFSENSE de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**
+Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png ){.thumbnail}
 
@@ -194,7 +193,7 @@ Cliquez sur `Power On`{.action} dans le menu `More`
 
 Cliquez sur `Launch Console`{.action} pour continuer l'installation après le démarrage. 
 
-![Remove CDROM 09](images/03-remove-cdrom08.png ){.thumbnail}
+![Remove CDROM 09](images/03-remove-cdrom09.png ){.thumbnail}
 
 #### Configuration des adresses IP de PFSENSE au travers de la console
 
@@ -222,7 +221,7 @@ Choisissez `Set interface(s) IP address` en saisissant `2` et en appuyant sur la
 
 ![Configure PFSENSE 06](images/04-configureip-pfsense06.png ){.thumbnail}
 
-Séléctionnez l'interface **WAN** en saississant `1` et en appuyant sur la touche `Entree`{.action}
+Sélectionnez l'interface **WAN** en saississant `1` et en appuyant sur la touche `Entree`{.action}
 
 ![Configure PFSENSE 07](images/04-configureip-pfsense07.png ){.thumbnail}
 
@@ -244,7 +243,7 @@ A la demande **revert to HTTP as the webConfigurator protocol** Saisissez `n`{.a
 
 ![Configure PFSENSE 11](images/04-configureip-pfsense11.png ){.thumbnail}
 
-Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP WAN
+Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP du WAN
 
 ![Configure PFSENSE 12](images/04-configureip-pfsense12.png ){.thumbnail}
 
@@ -295,7 +294,7 @@ Cliquez sur `Accept`{.action} pour accepter la licence.
 
 ![WEB Configure PFSENSE 02](images/05-configure-pfsense02.png ){.thumbnail}
 
-Cliquez sur `Close`{.action} aux remeriements.
+Cliquez sur `Close`{.action} aux remerciements.
 
 ![WEB Configure PFSENSE 03](images/05-configure-pfsense03.png ){.thumbnail}
 
@@ -303,19 +302,19 @@ Cliquez sur `Close`{.action} aux remeriements.
 
 Au travers du menu `System`{.action} choisissez `User Manager`{.action}
 
-![Change Password 01](images/06-changepassword01.png ){.thumbnail}
+![Change Password 01](images/06-change-password01.png ){.thumbnail}
 
 Cliquez sur l'icone en forme de `Stylo`{.action}
 
-![Change Password 02](images/06-changepassword02.png){.thumbnail}
+![Change Password 02](images/06-change-password02.png){.thumbnail}
 
 Remplacez le mot de passe par défaut dans `Password` et confirmez le. Faite défiler la barre de défilement jusqu'en bas de la fenêtre.
 
-![Change Password 03](images/06-changepassword03.png){.thumbnail}
+![Change Password 03](images/06-change-password03.png){.thumbnail}
 
 Cliquez sur `Save`{.action} pour valider les changements.
 
-![Change Password 03](images/06-changepassword04.png){.thumbnail}.
+![Change Password 03](images/06-change-password04.png){.thumbnail}.
 
 ##### Ajout d'une règle pour autoriser l'administration à distance sur le réseau public
 
