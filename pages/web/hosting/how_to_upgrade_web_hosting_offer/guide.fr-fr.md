@@ -63,14 +63,17 @@ Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `O
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Valider`{.action}.
 
-### Faire évoluer votre hébergement Start 10M vers une offre supérieure <a name="start10m"></a>
+### Faire évoluer votre hébergement Start 10M vers une offre Perso <a name="start10m"></a>
 
-> [!primary]
->
-> La procédure suivante ne s'applique **que si vous avez activé l'offre de messagerie associée au Start 10M**.
->
-> Si vous n'avez pas activé l'offre de messagerie, les instructions du [paragraphe précédent](#modify) seront suffisantes.
->
+Pour changer votre hébergement [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) vers [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
+
+Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
+
+#### Cas particulier 
+
+**Si votre Start10M a été activé ou renouvellé entre le 09/06/2021 et le 09/06/2022, l'option d'evolution vers l'offre perso ne pourra se faire qu'à la date anniversaire de votre Start10M.**
+
+Si vous êtes concerné, nous vous invitons à éffectuer les opérations suivantes :
 
 Vous ne pourrez pas passer **directement** d'un [hébergement gratuit Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) à une offre payante. Vous devrez effectuer les opérations suivantes :
 
