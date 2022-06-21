@@ -219,7 +219,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 and later versions
 
 #### Step 1: Use SSH to connect to your server
 
@@ -227,35 +227,53 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 #### Step 2: Open your server's network configuration file
 
-Open the network configuration file located in /etc/systemd/network. For demonstration purposes, our file is called 50-default.network.
+Open the network configuration file located in /etc/netplan. For demonstration purposes, our file is called 50-cloud-init.yaml.
 
 #### Step 3: Amend the network configuration file
 
-Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below:
+Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below.
+
+Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using enp1s0) with your specific values. 
 
 ```console
-[Network]
-Destination=Gateway_Address
-
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            dhcp6: false
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-To add multiple IPv6 addresses, add multiple [Address] sections
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+> [!warning]
+> It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed.
+>
 
-[Address]
-Address=IPv6_Address_3/64
+Next, save your changes to the file.
+
+#### Step 4: Test and apply the configuration
+
+You can test your configuration using this command:
+
+```bash
+netplan try
 ```
-#### Step 4: Save the file and reboot the server
 
-Save your changes to the file and then restart the network or reboot your server to apply the changes.
+If it is correct, apply it using the following command:
+
+```bash
+netplan apply
+```
+
+Restart the network or reboot your server to apply the changes.
 
 #### Step 5: Test the IPv6 connectivity
 
