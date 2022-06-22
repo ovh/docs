@@ -13,10 +13,10 @@ Il existe différentes façons d'utiliser votre grappe Ceph. Nous allons décrir
 
 Vous devez d'abord vous assurer que vous avez bien effectué ces démarches :
 
-- [Créer un pool](https://docs.ovh.com/fr/storage/ceph/creer-un-pool/)
-- [Créer-un-utilisateur](https://docs.ovh.com/fr/storage/ceph/creer-un-utilisateur/)
-- [Ajouter des droits à un utilisateur sur un pool](https://docs.ovh.com/fr/storage/ceph/changer-droits-utilisateurs/)
-- [Ajouter un IP ACL](https://docs.ovh.com/fr/storage/ceph/creer-ip-acl/) pour permettre à votre serveur de contacter le cluster
+- [Créer un pool](../creer-un-pool)
+- [Créer-un-utilisateur](../creer-un-utilisateur)
+- [Ajouter des droits à un utilisateur sur un pool](../changer-droits-utilisateurs)
+- [Ajouter un IP ACL](../creer-ip-acl) pour permettre à votre serveur de contacter le cluster
 
 ## En pratique
 
@@ -42,23 +42,23 @@ ceph-common.x86_64 1:0.80.7-3.el7
 
 ### Configuration Ceph
 
-Créer un fichier: /etc/ceph/ceph.conf
+Créer un fichier: `/etc/ceph/ceph.conf`
 
 ```ini
-1. [global]
-2. mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
+[global]
+mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
 ```
 
-Créer le fichier /etc/ceph/ceph.client.<ceph_user_name>.keyring
+Créer le fichier `/etc/ceph/ceph.client.<ceph_user_name>.keyring`
 
 ```ini
-1. [client.<ceph_user_name>]
-2. key = <my_user_key>
+[client.<ceph_user_name>]
+key = <my_user_key>
 ```
 
-<mon_X_IP> doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sous "Plateformes et services", sélectionnez votre groupe Ceph.
+`<mon_X_IP>` doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Sous "Plateformes et services", sélectionnez votre groupe Ceph.
 
-<my_user_key> doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
+`<my_user_key>` doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
 
 
 ### Contrôle de la configuration
