@@ -10,11 +10,11 @@ order: 2
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 19/05/2022**
+**Última atualização: 22/06/2022**
 
 ## Objetivo
 
-A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite-lhe aumentar as capacidades das suas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), de forma a dispor de um alojamento mais potente, de mais espaço de armazenamento, de bases de dados, de endereços de e-mail ou de funcionalidades suplementares como as [mailing-lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) (a partir da [oferta Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/)) ou o [serviço SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/) (incluído com as ofertas da gama [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/)).
+A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite-lhe aumentar as capacidades das suas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), de forma a dispor de um alojamento mais potente, de mais espaço de armazenamento, de bases de dados, de endereços de e-mail ou de funcionalidades suplementares como as [mailing-lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) (a partir da [oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/)) ou o [serviço SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/) (incluído com as ofertas da gama [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/)).
 
 **Descubra como fazer evoluir a sua oferta de alojamento OVHcloud sem interrupção.**
 
@@ -34,7 +34,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 ### Importante - A faturação em caso de alteração da oferta
 
-Ao alterar a sua fórmula durante a subscrição, a nova oferta será sujeita a um * adiamento*. Este adiamento corresponde ao período restante de subscrição da sua oferta atual.
+Ao alterar a sua fórmula durante a subscrição, a nova oferta será sujeita a um *adiamento*. Este adiamento corresponde ao período restante de subscrição da sua oferta atual.
 
 **Exemplo:**<br>
 Passou de uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), mas a subscrição em curso não está terminada.<br>
@@ -67,24 +67,11 @@ No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`
 
 De seguida, selecione a sua nova subscrição e a sua duração. Valide os contratos correspondentes e clique em `Enviar`{.action}.
 
-### Fazer evoluir o seu alojamento Start 10M para uma oferta superior <a name="start10m"></a>
-
 > [!primary]
 >
-> O procedimento seguinte só é aplicável **se tiver ativado o serviço de mensagens associado ao Start 10M**.
+> **Caso particular **
 >
-> Se não ativou o serviço de mensagens, as instruções do [parágrafo anterior](#modify) serão suficientes.
->
-
-Não poderá passar **diretamente** de um [alojamento gratuito Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/) para uma oferta paga. Deverá efetuar as seguintes operações:
-
-1. Faça o backup, se necessário, dos [ficheiros do alojamento](https://docs.ovh.com/pt/hosting/exportar-o-seu-website/#etapa-1-recuperacao-dos-ficheiros-do-seu-espaco-de-armazenamento-ftp) e dos [e-mails](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).<br>
-2. Inicie a eliminação do seu Start10M. Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços` {.action. A seguir, clique no botão ^..{.action} à direita do serviço em causa e depois ``Eliminar imediatamente o alojamento` {.action}.<br>
-3. Crie um [ticket de assistência](https://help.ovhcloud.com/pt/faq/support/cant-reach-support-phone/) para pedir, se o desejar, a eliminação acelerada da sua oferta (um endereço de e-mail Start10M é conservado 14 dias por defeito, a fim de evitar qualquer perda de dados devido a um erro de manipulação).<br>
-4. [Encomendar uma nova oferta de alojamento](https://www.ovhcloud.com/pt/web-hosting/).<br>
-5. Importe o seu site para o seu [novo espaço de alojamento](https://docs.ovh.com/pt/hosting/partilhado_colocar_o_meu_website_online/#2-colocar-os-ficheiros-do-site-no-espaco-de-armazenamento).<br>
-6. [Adicione o domínio do seu site ao multisite da sua nova oferta](https://docs.ovh.com/pt/hosting/multisites-configurar-um-multisite-no-meu-alojamento-web/#2-adicionar-um-dominio-ou-subdominio).<br>
-7. [Recriar o seu endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/) e [importar mensagens](https://docs.ovh.com/pt/emails/migrar-os-enderecos-email-manualmente/).
+> No âmbito de uma alteração da oferta [Start10M](https://docs.ovh.com/pt/hosting/activer-start10m/), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas ofertas de alojamento Web (https://www.ovhcloud.com/pt/web-hosting/).
 
 ### Verificar que o seu alojamento é compatível com uma oferta inferior <a name="checks"></a>
 
