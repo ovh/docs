@@ -36,7 +36,7 @@ Cluster en FRANCE : 192.168.0.0/24
 
 Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle sous **Pfsense* qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
 
-### Configuration de la passerelle au CANADA
+### Configuration de la passerelle au CANADA <a name="configurecanada"></a>
 
 Voici les informations détaillées pour remplacer la passerelle par défaut **OVHgateway** par une passerelle sous **PFSense** sur le cluster se trouvant au **CANADA**
 
@@ -204,7 +204,7 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **PFSense** comme ceci:
 
-- Interface WAN avec les informations de cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) »
+- Interface WAN avec les informations de cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
 
 - Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
 
@@ -369,7 +369,9 @@ Cliquez sur `Apply Change`{.action} pour activer la règle.
 L'installation de la passerelle en **FRANCE** est identique à la passerelle du CANADA sauf pour ces paramètres :
 
 * **Adresse privée en FRANCE** : 192.168.0.254 avec un masque en /24
-* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) »
+* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
+
+Après avoir eu toutes ces informations vous pouvez relire le chapitre concernant l'installation de la passerelle au CANADA [Installation de la passerelle au CANADA](#configurecanada)
 
 
 ### Mise en place du VPN IPSEC
@@ -608,8 +610,6 @@ Le paramétrage du VPN est terminée sur les deux clusters, il est possible de m
 
 
 ## Aller plus loin
-
-
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
