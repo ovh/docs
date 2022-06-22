@@ -4,7 +4,6 @@ slug: erste-schritte-mit-clouddb
 links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die CloudDB Lösung verwenden'
 section: 'Erste Schritte'
 order: 01
@@ -56,7 +55,7 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 |Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
 |Typ|Zeigt das vom Server verwendete Datenbanksystem an.|
 |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
-|CPU Sättigung|Zeigt die übernommene CPU Zeit an. Ihre CloudDB Instanz ist hinsichtlich der CPU nicht eingeschränkt, Sie müssen jedoch sicherstellen, dass Sie die CPU Ihrer CloudDB nicht überlasten.|
+|CPU-Auslastung|Zeigt die beanspruchte CPU-Kapazität an. Ihre CloudDB Instanz ist hinsichtlich der CPU nicht eingeschränkt, Sie müssen jedoch darauf achten, die CPU Ihrer CloudDB nicht zu überlasten.|
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Der Arbeitsspeicher Ihrer CloudDB Instanz ist eine dedizierte und garantierte Ressource. Falls nötig können Sie diesen skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
 |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|
