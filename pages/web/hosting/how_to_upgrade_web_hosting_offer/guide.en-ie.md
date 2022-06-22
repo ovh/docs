@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email addresses. Additional features such as [mailing lists](https://docs.ovh.com/ie/en/emails/guide-dutilisation-mailing-list/) (from the [Personal plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email addresses. Additional features such as [mailing lists](https://docs.ovh.com/ie/en/emails/guide-dutilisation-mailing-list/) (from the [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 

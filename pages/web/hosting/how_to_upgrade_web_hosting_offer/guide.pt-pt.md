@@ -14,7 +14,7 @@ order: 2
 
 ## Objetivo
 
-A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite-lhe aumentar as capacidades das suas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), de forma a dispor de um alojamento mais potente, de mais espaço de armazenamento, de bases de dados, de endereços de e-mail ou de funcionalidades suplementares como as [mailing-lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) (a partir da [oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/)) ou o [serviço SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/) (incluído com as ofertas da gama [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/)).
+A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite-lhe aumentar as capacidades das suas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), de forma a dispor de um alojamento mais potente, de mais espaço de armazenamento, de bases de dados, de endereços de e-mail ou de funcionalidades suplementares como as [mailing-lists](https://docs.ovh.com/pt/emails/email_partilhado_guia_de_utilizacao_de_mailing-lists/) (a partir da [oferta Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/)) ou o [serviço SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/) (incluído com as ofertas da gama [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/)).
 
 **Descubra como fazer evoluir a sua oferta de alojamento OVHcloud sem interrupção.**
 
@@ -69,7 +69,7 @@ De seguida, selecione a sua nova subscrição e a sua duração. Valide os contr
 
 > [!primary]
 >
-> **Caso particular **
+> **Caso particular**
 >
 > No âmbito de uma alteração da oferta [Start10M](https://docs.ovh.com/pt/hosting/activer-start10m/), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas ofertas de alojamento Web (https://www.ovhcloud.com/pt/web-hosting/).
 

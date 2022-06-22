@@ -14,7 +14,7 @@ order: 2
 
 ## Wprowadzenie
 
-W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) pozwala na zwiększenie pojemności [ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/), aby uzyskać wydajniejszy hosting, więcej przestrzeni dyskowej, baz danych, adresów e-mail lub dodatkowych funkcji, takich jak [listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) (począwszy od [oferta Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/)) lub usługa [Prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/private-sql/) (zawarty w ofertach [gama Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/)).
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) pozwala na zwiększenie pojemności [ofert hostingu www](https://www.ovhcloud.com/pl/web-hosting/), aby uzyskać wydajniejszy hosting, więcej przestrzeni dyskowej, baz danych, adresów e-mail lub dodatkowych funkcji, takich jak [listy mailingowe](https://docs.ovh.com/pl/emails/hosting_www_listy_mailingowe/) (począwszy od [oferta Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/)) lub usługa [Prywatny SQL](https://www.ovhcloud.com/pl/web-hosting/options/private-sql/) (zawarty w ofertach [gama Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/)).
 
 **Dowiedz się, jak zmienić ofertę hostingu OVHcloud bez przerwy w działaniu.**
 

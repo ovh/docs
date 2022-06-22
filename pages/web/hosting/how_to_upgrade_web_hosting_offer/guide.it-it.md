@@ -14,7 +14,7 @@ order: 2
 
 ## Obiettivo
 
-Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) ti permette di aumentare le capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per disporre di un hosting più potente, di più spazio di archiviazione, di database, di indirizzi email o di funzionalità supplementari come le [mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) (a partire dall'[offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) o il servizio SQL privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/) (incluse le offerte della [gamma Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
+Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) ti permette di aumentare le capacità delle tue [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per disporre di un hosting più potente, di più spazio di archiviazione, di database, di indirizzi email o di funzionalità supplementari come le [mailing list](https://docs.ovh.com/it/emails/gestire_e_utilizzare_una_mailing_list/) (a partire dall'[offerta Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/)) o il servizio SQL privato](https://www.ovhcloud.com/it/web-hosting/options/private-sql/) (incluse le offerte della [gamma Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/).
 
 **Questa guida ti mostra come aggiornare la tua offerta di hosting OVHcloud senza interruzioni.**
 
