@@ -69,9 +69,9 @@ Wählen Sie dann Ihr neues Abonnement und dessen Dauer aus. Bestätigen Sie die 
 
 > [!primary]
 >
-> ** Sonderfall*
+> **Sonderfall**
 >
-> Bei einer Änderung des Angebots [Start 10M](https://docs.ovh.com/de/hosting/activer-start10m/) wird Ihnen nur [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) angeboten. Nach einem Wechsel zum Basic Angebot können Sie dieses jedoch auf alle unsere [Webhosting Angebote](https://www.ovhcloud.com/de/web-hosting/) upgraden.
+> Ein Upgrade des [Start 10M Webhostings](https://docs.ovh.com/de/hosting/activer-start10m/) ist nur auf das [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) möglich. Nach einem Wechsel zum Basic Webhosting können Sie dieses jedoch zu allen unseren [Webhosting Angeboten](https://www.ovhcloud.com/de/web-hosting/) migrieren.
 
 ### Überprüfen, ob Ihr Hosting mit einem niedrigeren Angebot kompatibel ist <a name="checks"></a>
 
