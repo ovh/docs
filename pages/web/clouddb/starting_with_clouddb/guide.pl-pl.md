@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 01
 ---
 
-**Ostatnia aktualizacja dnia 2022-01-28**
+**Ostatnia aktualizacja dnia 22-06-2022**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -22,7 +22,7 @@ Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHclou
 ## Wymagania początkowe
 
 - Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartego w ofercie [pakiecie hostingowym performance](https://www.ovhcloud.com/pl/web-hosting/))
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
@@ -30,7 +30,7 @@ Twoje rozwiązanie CloudDB jest domyślnie powiązane z siecią hostingu OVHclou
 
 Jeśli Twój hosting zawiera opcję prywatnego CloudDB, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
-W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
+W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie **CloudDB**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
 ![Informacje ogólne](images/db-activation.png){.thumbnail}
 
@@ -52,10 +52,11 @@ W zakładce tej znajdziesz ważne informacje dotyczące Twojej instancji. Sprawd
 |Status usługi|Pokazuje, czy instancja jest uruchomiona, w trakcie restartu czy zawieszona. Twoja instancja musi być uruchomiona, abyś mógł przeprowadzać na niej działania.|
 |Typ|Pokazuje system baz danych używany przez serwer.|
 |Wersja|Pokazuje wersję systemu baz danych używanego przez serwer. Upewnij się, czy Twoja strona WWW jest kompatybilna z wybraną wersją.|
+|Saturacja CPU|Pokazuje czas procesora podczas wysycenia. Twoja instancja CloudDB nie jest limitowana pod względem procesora, ale pamiętaj, aby nie przeciążać procesora CloudDB.|
 |RAM|Pokazuje pamięć operacyjną dostępną dla Twojej instancji oraz ewentualne przekroczenia pamięci. Twoja instancja CloudDB dysponuje dedykowaną i gwarantowaną pamięcią RAM. Jeśli zajdzie taka potrzeba, możesz zwiększyć pamięć RAM. Możesz również ustawić alert o jej całkowitym zużyciu.|
-|Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVH.|
+|Infrastruktura|Pokazuje infrastrukturę używaną przez Twoją instancję. Jest to wewnętrzne oznaczenie infrastruktury OVHcloud.|
 |Centrum danych|Pokazuje centrum danych, w którym została uruchomiona instancja.|
-|Host|Pokazuje serwer OVH, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVH, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVH](http://travaux.ovh.net/){.external}.|
+|Host|Pokazuje serwer OVHcloud, na którym utworzona została instancja. Jest to wewnętrzne oznaczenie OVHcloud, które może pojawić się w komunikatach dotyczących [prac modernizacyjnych i potencjalnych incydentów OVHcloud](http://travaux.ovh.net/){.external}.|
 
 ![cloud databases - bazy danych na instancji](images/clouddb-general-information.png){.thumbnail}
 
@@ -124,7 +125,7 @@ Po utworzeniu użytkownika przypisz mu uprawnienia do wykonywania czynności w b
 
 ![cloud databases - bazy danych na instancji](images/clouddb-add-rights.png){.thumbnail}
 
-### Import bazy danych OVH
+### Import bazy danych OVHcloud
 
 > [!primary]
 >
