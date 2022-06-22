@@ -371,8 +371,7 @@ L'installation de la passerelle en **FRANCE** est identique à la passerelle du 
 * **Adresse privée en FRANCE** : 192.168.0.254 avec un masque en /24
 * **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
 
-Après avoir eu toutes ces informations vous pouvez relire le chapitre concernant l'installation de la passerelle au CANADA [Installation de la passerelle au CANADA](#configurecanada)
-
+Après avoir eu toutes ces informations vous pouvez relire le chapitre [Installation de la passerelle au CANADA](#configurecanada) pour vous aider dans l'installation de la passerelle sur le site en FRANCE.
 
 ### Mise en place du VPN IPSEC
 
