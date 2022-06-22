@@ -10,13 +10,13 @@ order: 4
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 17.06.22**
+**Letzte Aktualisierung am 17.06.2022**
 
 ## Ziel
 
 Für den Transfer einer .uk-Domain (oder einer ähnlichen Domain) ist ein spezifischer Vorgang erforderlich.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine .uk-Domain (oder dieser gleichgestellte Domain) zu OVHcloud transferieren.**
+**In dieser Anleitung erfahren Sie, wie Sie .uk-Domains zu OVHcloud transferieren.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
