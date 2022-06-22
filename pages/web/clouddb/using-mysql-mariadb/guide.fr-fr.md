@@ -13,13 +13,14 @@ Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vo
 
 ### Prérequis
 
-- Une instance CloudDB
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Avoir consulté le [guide de démarrage de CloudDB](../debuter-avec-clouddb/)
 
 ### Qu'est-ce qu'une base de donnees MySQL ?
 MySQL est un système de gestion de bases de données relationnelles développé pour des performances élevées en lecture, contrairement à d'autres systèmes.
 
-Ce moteur est Open Source, et sa maison mère n'est autre qu'Oracle.
+Ce moteur est open source et sa maison mère n'est autre qu'Oracle.
 
 
 ### Qu'est-ce qu'une base de donnees MariaDB ?
@@ -42,12 +43,12 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 > MariaDB étant un dérivé de MySQL, les différentes commandes sont exactement les mêmes pour ces 2 types de bases de données.
 > 
 
-Afin de vous connecter à votre base, assurez vous de ceci :
+Afin de vous connecter à votre base, assurez-vous de :
 
-- Disposer de l'adresse de votre instance de base de données
-- Disposer du port de votre base de données
-- Disposer du nom d'utilisateur de votre base de données
-- Disposer du mot de passe de votre base de données
+- Disposer de l'adresse de votre instance CloudDB
+- Disposer du port de votre instance CloudDB
+- Disposer du nom d'utilisateur de votre instance CloudDB
+- Disposer du mot de passe de votre instance CloudDB
 - Disposer du nom de votre base de données
 
 Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/manager/web/){.external}.
