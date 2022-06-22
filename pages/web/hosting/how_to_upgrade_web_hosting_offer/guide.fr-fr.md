@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
+Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) vous permet d'augmenter les capacités de vos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/), afin de disposer d'un hébergement plus puissant, de plus d'espace de stockage, de bases de données, d'adresses e-mails ou de fonctionnalités supplémentaires comme les [mailing-lists](https://docs.ovh.com/fr/emails/guide-dutilisation-mailing-list/) (à partir de l'[l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/private-sql/) (compris avec les offres de la [gamme Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud sans interruption.**
 
@@ -63,25 +63,11 @@ Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `O
 
 Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les contrats correspondants puis cliquez sur `Valider`{.action}.
 
-### Faire évoluer votre hébergement Start 10M vers une offre Perso <a name="start10m"></a>
-
-Pour faire évoluer votre hébergement [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/) vers [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
-
-Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
-
-#### Cas particulier 
-
-**Si votre hébergement Start10M a été activé ou renouvellé entre le 09/06/2021 et le 09/06/2022, l'évolution vers l'offre Perso ne pourra être effectuée qu'à la date anniversaire de votre Start10M.**
-
-Si vous êtes dans ce cas, nous vous invitons à effectuer les opérations suivantes :
-
-1. Sauvegardez, si nécessaire, les [fichiers de votre hébergement](https://docs.ovh.com/fr/hosting/exporter-son-site-web/#etape-1-recuperation-des-fichiers-de-votre-espace-de-stockage-ftp) et les [messages de votre offre e-mail](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).<br>
-2. Lancez la suppression de votre Start10M. Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite du service concerné puis sur `Supprimer immédiatement l'hébergement`{.action}.<br>
-3. Créez un [ticket d'assistance](https://help.ovhcloud.com/fr/faq/support/cant-reach-support-phone/), afin de demander, si vous le souhaitez, la suppression accélérée de votre offre (une adresse e-mail Start10M est conservée 14 jours par défaut, afin d'éviter toute perte de données suite à une erreur de manipulation).<br>
-4. [Commandez une nouvelle offre d'hébergement](https://www.ovhcloud.com/fr/web-hosting/).<br>
-5. Importez, si besoin, votre site dans votre [nouvel espace d'hébergement](https://docs.ovh.com/fr/hosting/mettre-mon-site-en-ligne/#etape-2-mise-en-ligne-des-fichiers-du-site-sur-lespace-de-stockage).<br>
-6. [Ajoutez le nom de domaine de votre site au multisite de votre nouvelle offre](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).<br>
-7. [Recréez si nécessaire votre adresse e-mail](https://docs.ovh.com/fr/emails/creation-dune-adresse-e-mail/) et [importez vos messages](https://docs.ovh.com/fr/emails/migrer-ses-adresses-email-manuellement/#en-pratique).
+> [!primary]
+>
+> **Cas particulier**
+> 
+> Dans le cadre d'un changement de l'offre [Start10M](https://docs.ovh.com/fr/hosting/activer-start10m/), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) vous sera proposée. Néanmoins après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
 ### Vérifier que votre hébergement est compatible avec une offre inférieure <a name="checks"></a>
 
