@@ -229,9 +229,18 @@ Find more information in [this guide](../getting-started-dedicated-server/#loggi
 
 Open the network configuration file located in /etc/netplan. For demonstration purposes, our file is called 50-cloud-init.yaml.
 
+Create a copy of the IPv6 configuration file:
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
+
 #### Step 3: Amend the network configuration file
 
-Using a text editor, amend the file by adding the following lines to the relevant sections as shown in the example below.
+Using a text editor, amend the 51-cloud-init-ipv6.yaml file by adding the following lines to the relevant sections as shown in the example below.
 
 Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using enp1s0) with your specific values. 
 
@@ -240,7 +249,6 @@ network:
     version: 2
     ethernets:
         enp1s0:
-            dhcp4: true
             dhcp6: false
             match:
                 macaddress: 00:04:0p:8b:c6:30
