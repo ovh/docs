@@ -45,10 +45,7 @@ type: 'ruby:3.0'
 
 2\. Setup environment variables.
 
-
-   Rails runs by default on a development environment.
-   You can change the Rails/Bundler via those environment variables,
-   some of which are defaults on Web PaaS.
+Rails runs by default on a development environment. You can change the Rails/Bundler via those environment variables, some of which are defaults on Web PaaS.
 
 ```yaml
 variables:
@@ -71,9 +68,7 @@ variables:
 
 3\. Build your application with the build hook.
 
-
-    Assuming you have your dependencies stored in the `Gemfile` at [your app root](../configuration-app),
-    create a hook like the following:
+Assuming you have your dependencies stored in the `Gemfile` at [your app root](../configuration-app), create a hook like the following:
 
 ```yaml
 hooks:
@@ -118,11 +113,11 @@ hooks:
     deploy: bundle exec rake db:migrate
 ```
 
-    These are installed as your project dependencies in your environment.
-    You can also use the `dependencies` key to install global dependencies.
-    These can be Ruby, Python, NodeJS, or PHP libraries.
+These are installed as your project dependencies in your environment.
+You can also use the `dependencies` key to install global dependencies.
+These can be Ruby, Python, NodeJS, or PHP libraries.
 
-    If you have assets, it's likely that you need NodeJS/yarn.
+If you have assets, it's likely that you need NodeJS/yarn.
 
 ```yaml
 dependencies:
@@ -161,9 +156,7 @@ web:
             allow: true
 ```
 
-    This configuration sets the web server to handle HTTP requests at `/static`
-    to serve static files stored in `/app/static/` folder.
-    Everything else is forwarded to your application server.
+This configuration sets the web server to handle HTTP requests at `/static` to serve static files stored in `/app/static/` folder. Everything else is forwarded to your application server.
 
 6\. Create any Read/Write mounts.
 
@@ -183,13 +176,12 @@ mounts:
         source_path: tmp
 ```
 
-    This setting allows your application writing temporary files to `/app/tmp`,
-    logs stored in `/app/log`, and active storage in `/app/storage`.
+This setting allows your application writing temporary files to `/app/tmp`, logs stored in `/app/log`, and active storage in `/app/storage`.
 
-    You can define other read/write mounts (your application code itself being deployed to a read-only file system).
-    Note that the file system is persistent and when you backup your cluster these mounts are also backed up.
+You can define other read/write mounts (your application code itself being deployed to a read-only file system).
+Note that the file system is persistent and when you backup your cluster these mounts are also backed up.
 
-7\. Then, setup the routes to your application in `.platform/routes.yaml`.
+7\. Set up the routes to your application in `.platform/routes.yaml`.
 
 
 ```yaml
@@ -353,28 +345,24 @@ This should give you something like the following:
 
 For Rails, you have two choices:
 
-* Use the standard Rails `config/database.yml` with the values found with the snippet provided before
-* Use the [platformsh-rails-helper gem](https://github.com/platformsh/platformsh-rails-helper)
-  by adding it to your `Gemfile` and commenting the production block in `config/database.yml`
+- Use the standard Rails `config/database.yml` with the values found with the snippet provided before
+- Use the [platformsh-rails-helper gem](https://github.com/platformsh/platformsh-rails-helper) by adding it to your `Gemfile` and commenting the production block in `config/database.yml`
 
-## Configuration reader 
-* While you can read the environment directly from your app, you might want to use the
- [helper library for Ruby apps](https://github.com/platformsh/platformsh-ruby-helper)
- or [one for Rails apps](https://github.com/platformsh/platformsh-rails-helper)
- It decodes service credentials, the correct port, and other information for you.
+## Configuration reader
+
+- While you can read the environment directly from your app, you might want to use the [helper library for Ruby apps](https://github.com/platformsh/platformsh-ruby-helper) or [one for Rails apps](https://github.com/platformsh/platformsh-rails-helper). It decodes service credentials, the correct port, and other information for you.
 
 
 ## Other tips
 
-* To speed up boot you can use the [Bootsnap gem](https://github.com/Shopify/bootsnap)
-  and configure it with the local `/tmp`:
+- To speed up boot you can use the [Bootsnap gem](https://github.com/Shopify/bootsnap) and configure it with the local `/tmp`:
 
-```ruby {location="config/boot.rb"}
+```ruby
+{location="config/boot.rb"}
 Bootsnap.setup(cache_dir: "/tmp/cache")
 ```
 
-* For garbage collection tuning, you can read [this article](https://shopify.engineering/17489064-tuning-rubys-global-method-cache)
-  and look for [discourse configurations](https://github.com/discourse/discourse_docker/blob/b259c8d38e0f42288fd279c9f9efd3cefbc2c1cb/templates/web.template.yml#L8)
+- For garbage collection tuning, you can read [this article](https://shopify.engineering/17489064-tuning-rubys-global-method-cache) and look for [discourse configurations](https://github.com/discourse/discourse_docker/blob/b259c8d38e0f42288fd279c9f9efd3cefbc2c1cb/templates/web.template.yml#L8)
 
 ## Project templates
 
@@ -393,6 +381,3 @@ Bootsnap.setup(cache_dir: "/tmp/cache")
 - Bundler-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/rails) on GitHub.
-
-
-
