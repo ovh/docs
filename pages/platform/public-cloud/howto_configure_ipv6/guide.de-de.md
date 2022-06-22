@@ -21,8 +21,8 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen bereits über eine Public Cloud Instanz, wobei das Modell keine Rolle spielt.
-- Sie haben SSH-Kenntnisse.
+- Sie verfügen über eine Public Cloud Instanz, wobei das Modell keine Rolle spielt.
+- Sie haben Kenntnisse zu SSH.
 - Sie haben Grundkenntnisse zu Netzwerken.
 
 
@@ -63,13 +63,13 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 > Erstellen Sie immer ein Backup des Originals, bevor Sie eine Konfigurationsdatei bearbeiten.
 >
 
-<br>Verbinden Sie sich zunächst über SSH mit Ihrer  Instanz.
+<br>Verbinden Sie sich zunächst über SSH mit Ihrer Instanz.
 
 #### **Mit Debian**
 
-Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die hinzuzufügende Konfiguration wie folgt aussehen:
+Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
 
-Anzupassende Datei (mit Superuser-Rechten): `/etc/network/interfaces`
+Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/network/interfaces`
 
 ```
 iface eth0 inet6 static
@@ -102,11 +102,11 @@ cd /etc/netplan
 cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
 ```
 
-So können Sie die IPv6-Konfiguration trennen und die Änderungen im Fehlerfall einfach abbrechen.
+So können Sie die IPv6-Konfiguration trennen und die Änderungen im Fehlerfall rückgängig machen.
 
-Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die hinzuzufügende Konfiguration wie folgt aussehen:
+Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
 
-Anzupassende Datei (mit Superuser-Rechten): `/etc/netplan/51-cloud-init-ipv6.yaml`
+Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
 ```
 network:
@@ -144,9 +144,9 @@ netplan apply
 
 #### **Mit RedHat / CentOS**
 
-Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die Konfiguration wie folgt aussehen:
+Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende Konfiguration wie folgt aussehen.
 
-Anzupassende Datei (mit "sudo"-Rechten): `/etc/sysconfig/network-scripts/ifcfg-eth0`
+Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
 ```
 IPV6INIT=yes
