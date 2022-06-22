@@ -6,7 +6,7 @@ section: Website optimisation
 order: 2
 ---
 
-**Last updated 22ndJune 2022**
+**Last updated 22nd June 2022**
 
 ## Objective
 
