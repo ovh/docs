@@ -93,13 +93,16 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 l'adresse affichée est un pack de 4 adresses avec un masque à /30 ce qui donne la possibilité de n'avoir qu'un adresse réellement disponible qui est l'adresse du reseau +1 comme indiqué en dessous :  
 
 ```console
-XX.XX.XX.N      Reserved: Network address
-XX.XX.XX.N+1    First usable IP
-XX.XX.XX.N+2    Reserved: Network gateway
-XX.XX.XX.N+3    Reserved: Network broadcast
+XX.XX.XX.N      Addresse de réseau réservé
+XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface **WAN**
+XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface **WAN** 
+XX.XX.XX.N+3    Réseau de diffusion réservé
 ```
 
-Par exemple si l'adresse affichée est 123.123.123.10 il faudra utiliser l'adresse 123.123.123.11 sur la machine virtuelle et 123.123.123.12 pour la passerelle sur l'interface WAN.
+Par exemple si l'adresse affichée sur le site client est 123.123.123.4 il faut utiliser :
+
+- **123.123.123.5**  pour l'adresse de l'interface **WAN** 
+- **123.123.123.6**  pour la passerelle sur l'interface **WAN**.
 
 #### Démarrage de la machine virtuelle **GW-pfsense**
 
@@ -151,133 +154,137 @@ Positionnez vous sur `YES` avec la touche `tabulation`{.action} et appuyez sur l
 
 Choisissez  `NO` avec la touche `tabulation`{.action} et appuyez sur la touche `Entree`{.action}.
 
-![PFSENSE Installation 09](images/03-install-pfsense09.png ){.thumbnail}
+![PFSENSE Installation 09](images/03-install-pfsense09.png){.thumbnail}
 
 Laissez  `Reboot` et appuyez sur la touche `Entree`{.action}.
 
-![PFSENSE Installation 10](images/03-install-pfsense10.png ){.thumbnail}
+![PFSENSE Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
 #### Ejection du CDROM PFSENSE de la machine virtuelle **GW-PFSENSE**
 
 Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
 
-![Remove CDROM 01](images/03-remove-cdrom01.png ){.thumbnail}
+![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
 Cliquez sur `Update`{.action}.
 
-![Remove CDROM 02](images/03-remove-cdrom02.png ){.thumbnail}
+![Remove CDROM 02](images/03-remove-cdrom02.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Remove CDROM 03](images/03-remove-cdrom03.png ){.thumbnail}
+![Remove CDROM 03](images/03-remove-cdrom03.png){.thumbnail}
 
 Cliquez sur l'icone `Eject`{.action}. au niveau du CDROM.
 
-![Remove CDROM 04](images/03-remove-cdrom04.png ){.thumbnail}
+![Remove CDROM 04](images/03-remove-cdrom04.png){.thumbnail}
 
 Cliquez sur `Next`{.action}.
 
-![Remove CDROM 05](images/03-remove-cdrom05.png ){.thumbnail}
+![Remove CDROM 05](images/03-remove-cdrom05.png){.thumbnail}
 
 CLiquez sur `Next`{.action}.
 
-![Remove CDROM 06](images/03-remove-cdrom06.png ){.thumbnail}
+![Remove CDROM 06](images/03-remove-cdrom06.png){.thumbnail}
 
 CLiquez sur `Save`{.action}.
 
-![Remove CDROM 07](images/03-remove-cdrom07.png ){.thumbnail}
+![Remove CDROM 07](images/03-remove-cdrom07.png){.thumbnail}
 
 Cliquez sur `Power On`{.action} dans le menu `More`.
 
-![Remove CDROM 08](images/03-remove-cdrom08.png ){.thumbnail}
+![Remove CDROM 08](images/03-remove-cdrom08.png){.thumbnail}
 
 Cliquez sur `Launch Console`{.action} pour continuer l'installation après le démarrage. 
 
-![Remove CDROM 09](images/03-remove-cdrom09.png ){.thumbnail}
+![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
 #### Configuration des adresses IP de PFSENSE au travers de la console
 
+Nous allons configurer les adresses IP de passerelle **PFSense** comme ceci:
+
+- Interface WAN avec les informations de cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) »
+
+- Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
+
 Acceptez la licence en appuyant sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 01](images/04-configureip-pfsense01.png ){.thumbnail}
+![Configure PFSENSE 01](images/04-configureip-pfsense01.png){.thumbnail}
 
-Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} lorsque l'on demande si il faut des VLAN.
+Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} lorsque l'on demande si il faut des **VLAN**.
 
-![Configure PFSENSE 02](images/04-configureip-pfsense02.png ){.thumbnail}
+![Configure PFSENSE 02](images/04-configureip-pfsense02.png){.thumbnail}
 
-Saisissez le nom de l'interface pour le wan `vtnet0`{.action} et appuyez sur la touche `Entree`{.action}.
+Saisissez le nom de l'interface pour le **WAN** `vtnet0`{.action} et appuyez sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 03](images/04-configureip-pfsense03.png ){.thumbnail}
+![Configure PFSENSE 03](images/04-configureip-pfsense03.png){.thumbnail}
 
-Choisissez le nom de l'interface pour le wan `vtnet1`{.action} et appuyez sur la touche `Entree`{.action}.
+Choisissez le nom de l'interface pour le **LAN** `vtnet1`{.action} et appuyez sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 04](images/04-configureip-pfsense04.png ){.thumbnail}
+![Configure PFSENSE 04](images/04-configureip-pfsense04.png){.thumbnail}
 
-Répondez `y`{.action} à la question si l'on veut valider les changement et appuyez sur la touche `Entree`{.action}.
+Répondez `y`{.action} à la question si l'on veut valider les changements et appuyez sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 05](images/04-configureip-pfsense05.png ){.thumbnail}
+![Configure PFSENSE 05](images/04-configureip-pfsense05.png){.thumbnail}
 
 Choisissez `Set interface(s) IP address` en saisissant `2` et en appuyant sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 06](images/04-configureip-pfsense06.png ){.thumbnail}
+![Configure PFSENSE 06](images/04-configureip-pfsense06.png){.thumbnail}
 
 Sélectionnez l'interface **WAN** en saississant `1` et en appuyant sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 07](images/04-configureip-pfsense07.png ){.thumbnail}
+![Configure PFSENSE 07](images/04-configureip-pfsense07.png){.thumbnail}
 
 Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action} à la demande de la configuration de l'adresse par DHCP.
 
-![Configure PFSENSE 08](images/04-configureip-pfsense08.png ){.thumbnail}
+![Configure PFSENSE 08](images/04-configureip-pfsense08.png){.thumbnail}
 
-Saisissez l'adresse publique qui correspont à la première adresse disponible et appuyez sur `Entree`{.action}
+Saisissez l' `Adresse publique avec le masque`{.action} et appuyez sur la touche `Entree`{.action} comme par exemple **123.123.123.11/30*.
 
-Ensuite saisissez la passerelle qui correspond à la deuxième address disponible et appuyer sur `Entree`{.action}
+Ensuite saisissez l'`adresse de la passerelle publique`{.action} et appuyer sur la touche `Entree`{.action} comme par exemple **123.123.123.12**.
 
-Comme indiqué dans cette partie de la documentation  [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) » de ce guide.
+![Configure PFSENSE 09](images/04-configureip-pfsense09.png){.thumbnail}
 
-![Configure PFSENSE 09](images/04-configureip-pfsense09.png ){.thumbnail}
+Repondez `n`{.action} et appuyez sur la touche `Entree`{.action} lors de la configuration de l'**IPv6 address WAN**.
 
-Repondez `n`{.action} et appuyez sur la touche `Entree`{.action} lors de la configuration de l'IPv6 address WAN.
-
-![Configure PFSENSE 10](images/04-configureip-pfsense10.png ){.thumbnail}
+![Configure PFSENSE 10](images/04-configureip-pfsense10.png){.thumbnail}
 
 A la demande **revert to HTTP as the webConfigurator protocol** Saisissez `n`{.action} et appuyez sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 11](images/04-configureip-pfsense11.png ){.thumbnail}
+![Configure PFSENSE 11](images/04-configureip-pfsense11.png){.thumbnail}
 
-Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP du WAN.
+Appuyez sur `Entree`{.action} pour valider l'enregistrement de l'adresse IP du **WAN**.
 
-![Configure PFSENSE 12](images/04-configureip-pfsense12.png ){.thumbnail}
+![Configure PFSENSE 12](images/04-configureip-pfsense12.png){.thumbnail}
 
 Saisissez `2` et appuyez sur la touche `Entree`{.action} pour configurer les adresses IP.
 
-![Configure PFSENSE 13](images/04-configureip-pfsense13.png ){.thumbnail}
+![Configure PFSENSE 13](images/04-configureip-pfsense13.png){.thumbnail}
 
 Prenez l'option `2` et appuyez sur la touche `Entree`{.action} pour modifier l'adresse IP du LAN.
 
-![Configure PFSENSE 14](images/04-configureip-pfsense14.png ){.thumbnail}
+![Configure PFSENSE 14](images/04-configureip-pfsense14.png){.thumbnail}
 
 Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez sur la touche `Entree`{.action}.
 
-![Configure PFSENSE 15](images/04-configureip-pfsense15.png ){.thumbnail}
+![Configure PFSENSE 15](images/04-configureip-pfsense15.png){.thumbnail}
 
-Appuyez sur la touche `Entree`{.action} sans avoir saisi de passerelle.
+Appuyez sur la touche `Entree`{.action} pour ne pas mettre de passerelle sur l'interface **LAN**
 
-![Configure PFSENSE 16](images/04-configureip-pfsense16.png ){.thumbnail}
+![Configure PFSENSE 16](images/04-configureip-pfsense16.png){.thumbnail}
 
 saisissez `n` et appuyez sur la touche `Entree`{.action} pour ne pas activer le serveur DHCP.
 
-![Configure PFSENSE 17](images/04-configureip-pfsense17.png ){.thumbnail}
+![Configure PFSENSE 17](images/04-configureip-pfsense17.png){.thumbnail}
 
 Repondez  `n` et appuyez sur la touche `Entree`{.action} à la demande **revert to HTTP as the webConfigurator protocol**.
 
-![Configure PFSENSE 18](images/04-configureip-pfsense17.png ){.thumbnail}
+![Configure PFSENSE 18](images/04-configureip-pfsense17.png){.thumbnail}
 
 Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
 
 Appuyez sur la touche `Entree`{.action} pour terminer la configuration en ligne de commande.
 
-![Configure PFSENSE 19](images/04-configureip-pfsense19.png ){.thumbnail}
+![Configure PFSENSE 19](images/04-configureip-pfsense19.png){.thumbnail}
 
 #### Configuration de certaines options au travers de l'interface WEB
 
@@ -290,27 +297,27 @@ Saisissez ces informations:
 
 Et cliquez sur `SIGN IN`{.action}.
 
-![WEB Configure PFSENSE 01](images/05-configure-pfsense01.png ){.thumbnail}
+![WEB Configure PFSENSE 01](images/05-configure-pfsense01.png){.thumbnail}
 
 Cliquez sur `Accept`{.action} pour accepter la licence.
 
-![WEB Configure PFSENSE 02](images/05-configure-pfsense02.png ){.thumbnail}
+![WEB Configure PFSENSE 02](images/05-configure-pfsense02.png){.thumbnail}
 
 Cliquez sur `Close`{.action} aux remerciements.
 
-![WEB Configure PFSENSE 03](images/05-configure-pfsense03.png ){.thumbnail}
+![WEB Configure PFSENSE 03](images/05-configure-pfsense03.png){.thumbnail}
 
 ##### Changement du mot de passe par défaut de **PFSENSE**
 
 Au travers du menu `System`{.action} choisissez `User Manager`{.action}
 
-![Change Password 01](images/06-change-password01.png ){.thumbnail}
+![Change Password 01](images/06-change-password01.png){.thumbnail}
 
 Cliquez sur l'icone en forme de `Stylo`{.action}.
 
 ![Change Password 02](images/06-change-password02.png){.thumbnail}
 
-Saisissez le mot de passe deux fois à coté de `Password` pour le confirmez ensuite faites défiler la barre de défilement jusqu'en bas de la fenêtre.
+Saisissez le mot de passe deux fois à coté de `Password` pour le confirmez ensuite faites défiler la `barre de défilement`{.action} jusqu'en bas de la fenêtre.
 
 ![Change Password 03](images/06-change-password03.png){.thumbnail}
 
@@ -318,13 +325,13 @@ Cliquez sur `Save`{.action} pour valider les changements.
 
 ![Change Password 03](images/06-change-password04.png){.thumbnail}.
 
-##### Ajout d'une règle pour autoriser l'administration à distance sur le réseau public
+##### Ajout d'une règle pour autoriser l'administration à distance en utilisant l'adresse publique
 
 Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
 
-Vérifiez que vous êtes sur l'onglet `Wan` et cliquez sur le bouton `Add`{.action} à gauche avec la flêche vers le haut pour créer une règle de parefeu.
+Vérifiez que vous êtes sur l'onglet `WAN` et cliquez sur le bouton `Add`{.action} en bas avec la flêche vers le haut pour créer une règle de parefeu.
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
@@ -360,7 +367,8 @@ Cliquez sur `Apply Change`{.action} pour activer la règle.
 L'installation de la passerelle en France est identique à l'installation faites au CANADA sauf pour les adresses privées et publiques qui doivent correspondre au réseau se trouvant en France. vous pouvez utiliser le chapitre précedent avec les bonnes informations pour configurer la passerelle **gw-pfsense** en FRANCE qui sont :
 
 * **Réseau privé France** : 192.168.0.0/24 avec la passerelle en 192.168.0.254
-* **Adresse publique** : L'adresse publique IP FAILOVER que l'on voit sur le site client D'OVHcloud.
+* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal) »
+
 
 ### Mise en place du VPN IPSEC
 
@@ -370,7 +378,7 @@ Maintenant que les deux passerelles ont été remplacées nous allons interconne
 
 ##### Mise en place du VPN IPSEC vers la France
 
-Connectez-vous sur l'adresse publique du CANADA en HTTPS avec cette URL https://adressepublique-pfsense-canada.
+Connectez-vous sur l'adresse publique du CANADA en HTTPS avec cette URL https://adressepublique-pfsense-canada qui correspond à l'adresse fournies en tant que **WAN** lors de l'installation depuis un réseau ayant l'autorisation de se connecter à l'interface d'administration.
 
 Allez dans le menu `VPN`{.action} et choisissez `IPSec`{.action}.
 
