@@ -251,7 +251,7 @@ Pour que les opération de validation et de renouvellement fonctionnent, il est 
 > Si votre site dispose déjà d'une connexion HTTPS et que vous souhaitez migrer vers des certificats gérés par votre service OVHcloud Load Balancer, vous pouvez importer vos certificats existants, configurer et tester votre Frontend HTTPS et enfin commander un nouveau certificat pour le même domaine. Il sera automatiquement pris en compte avant l'expiration de votre ancien certificat.
 > 
 
-Les certificats configurés sur votre service OVHcloud Load Balancer sont automatiquement disponibles pour l'ensemble des frontendd de votre service OVHcloud Load Balancer sur lesquels l'options *SSL* est activée.
+Les certificats configurés sur votre service OVHcloud Load Balancer sont automatiquement disponibles pour l'ensemble des frontend de votre service OVHcloud Load Balancer sur lesquels l'options *SSL* est activée.
 
 #### Depuis l'espace client OVHcloud
 

@@ -134,7 +134,7 @@ Enregistrez les modifications et quittez l'éditeur. La nouvelle empreinte de cl
 
 Sous Windows, l'emplacement du fichier `known_hosts` et la ligne à supprimer sont également spécifiés, par exemple :
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 

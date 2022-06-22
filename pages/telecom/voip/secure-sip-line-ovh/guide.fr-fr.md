@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment restreindre l’accès à vos lignes SIP grâce à 
 section: Sécurité
 ---
 
-**Dernière mise à jour le 20/07/2018**
+**Dernière mise à jour le 22/06/2022**
 
 ## Objectif
 
@@ -17,7 +17,9 @@ La téléphonie sur IP utilise le web pour transmettre des communications. Elle 
 
 - Disposer d'une [ligne SIP OVHcloud](https://www.ovhtelecom.fr/telephonie/voip/){.external} (Découverte ou Entreprise).
 - Connaître ses adresses IP publiques ou être en mesure de les récupérer.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
@@ -25,11 +27,9 @@ Une solution fiable pour sécuriser votre téléphonie sur IP est de restreindre
 
 ### Étape 1 : configurer la restriction par IP
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP concernée.
 
-![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
-
-Si vous souhaitez appliquer la configuration à plusieurs lignes SIP vous serez prévenu du choix dans la suite de ce guide. Pour le moment, sélectionnez-en une pour laquelle vous voulez appliquer la modification.
+Si vous souhaitez appliquer la configuration à plusieurs lignes SIP, vous serez prévenu du choix dans la suite de ce guide. Pour le moment, sélectionnez-en une pour laquelle vous voulez appliquer la modification.
 
 Une fois la ligne SIP sélectionnée, depuis l'onglet `Gestion`{.action}, cliquez sur le bouton `Restrictions SIP par IP`{.action}.
 
@@ -75,9 +75,9 @@ Lorsqu'un téléphone utilisant une ligne SIP souhaite s'identifier par exemple,
 
 Pour diverses raisons, l'authentification peut être refusée par le serveur et l'enregistrement de la ligne sera donc refusé (comme en cas d'utilisation d'IP non autorisée ou mot de passe erroné). Il est possible de visionner pour vos lignes SIP OVHcloud les enregistrements refusés par notre serveur.
 
-Pour y accéder, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche puis sélectionnez la ligne SIP pour laquelle vous souhaitez récupérer les logs.
+Pour y accéder, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} puis sélectionnez la ligne SIP pour laquelle vous souhaitez récupérer les logs.
 
-Positionnez-vous ensuite sur l'onglet `Assistance`{.action}, puis cliquez sur le bouton `Consultation des notifications`{.action}.
+Positionnez-vous ensuite sur l'onglet `Assistance`{.action} puis cliquez sur le bouton `Consultation des notifications`{.action}.
 
 ![securiser-sip](images/restriction04.png){.thumbnail}
 
@@ -93,11 +93,11 @@ Pour cela, toujours sur la page `Consultation et gestion des notifications`, dan
 
 |Information|Description|
 |---|---|  
-|Réception des notifications par e-mail|Sélectionnez la fréquence où les notifications vous seront envoyées.|
+|Réception des notifications par e-mail|Sélectionnez la fréquence à laquelle les notifications vous seront envoyées.|
 |Envoyer même s'il n'y a aucune notification|Sélectionnez « Oui » ou « Non » selon votre choix.|
 |Adresse e-mail|Renseignez l'adresse e-mail sur laquelle vous recevrez les notifications.|
 
-Une fois les informations complétées, cliquez sur `Valider`{.action}. Vous avez la possibilité d'activer ces paramètres de notifications pour d'autres lignes SIP en cliquant sur le bouton `Appliquer à plusieurs lignes`{.action}. Vous devrez choisir les lignes dans la fenêtre qui apparaît puis appuyez sur le bouton `Valider`{.action}.
+Une fois les informations complétées, cliquez sur `Valider`{.action}. Vous avez la possibilité d'activer ces paramètres de notifications pour d'autres lignes SIP en cliquant sur le bouton `Appliquer à plusieurs lignes`{.action}. Vous devrez choisir les lignes dans la fenêtre qui apparaît puis appuyer sur le bouton `Valider`{.action}.
 
 ![securiser-sip](images/secure-sip-part6.png){.thumbnail}
 

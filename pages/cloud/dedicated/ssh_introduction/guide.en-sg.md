@@ -131,7 +131,7 @@ Save the changes and exit the editor. The new fingerprint has to be accepted at 
 
 On Windows, the location of the `known_hosts` file and the line you have to delete are specified as well, for example:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 

@@ -7,7 +7,7 @@ section: 'Primeiros passos'
 order: 01
 ---
 
-**Última atualização: 28/01/2022**
+**Última atualização: 22/06/2022**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -23,7 +23,7 @@ A sua solução CloudDB está associada de forma padrão à rede de alojamentos 
 ## Requisitos
 
 - Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/) (associada a um [alojamento web](https://www.ovhcloud.com/pt/web-hosting/)).
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -31,7 +31,7 @@ A sua solução CloudDB está associada de forma padrão à rede de alojamentos 
 
 Se a sua oferta de alojamento inclui a opção CloudDB, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
 
-No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
+No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **CloudDB**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
 ![Informações gerais](images/db-activation.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Para concluir, siga as instruções seguintes para determinar o tipo e a versão
 
 ### Consultar informações gerais da instância CloudDB
 
-Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
+Na[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >
@@ -53,10 +53,11 @@ Aí pode consultar as informações mais relevantes relativamente à sua instân
 |Estado do serviço|Indica se a instância está ativada, a ser reiniciada ou suspensa. Para configurar a instância SQL, esta tem que estar ativada.|
 |Tipo|Indica o sistema de base de dados usado pelo servidor.|
 |Versão|Indica a versão do sistema da base de dados usado pelo servidor. Por favor, verifique a compatibilidade do seu site com a versão selecionada.|
+|Saturação CPU|Mostra o tempo CPU que passou a saturação. A sua instância CloudDB não está limitada em termos de CPU, mas deve ter o cuidado de não sobrecarregar o CPU do seu CloudDB.|
 |RAM|Indica a RAM disponível para a instância, e avisa quando os limites da RAM são ultrapassados. A sua instância CloudDB dispõe de recursos dedicados e garantidos: a sua memória RAM. Se precisar de mais recursos, pode fazer um upgrade e receber notificações quando o limite de memória for atingido.|
-|Infraestrutura|Indica a infraestrutura / plataforma usada pela sua instância (i.e. informação relativa à infraestrutura da OVH). Trata-se de uma informação inerente à infraestrutura da OVH.|
+|Infraestrutura|Indica a infraestrutura / plataforma usada pela sua instância (i.e. informação relativa à infraestrutura da OVHcloud). Trata-se de uma informação inerente à infraestrutura da OVHcloud.|
 |Datacenter|Indica o datacenter onde instância está alojada.|
-|Host|Indica o servidor OVH onde a instância foi criada. Esta informação, inerente à infraestrutura da OVH, poderá ser incluída na página sobre o [Estado dos Serviços](http://travaux.ovh.net/){.external}.|
+|Host|Indica o servidor OVHcloud onde a instância foi criada. Esta informação, inerente à infraestrutura da OVHcloud, poderá ser incluída na página sobre o [Estado dos Serviços](http://travaux.ovh.net/){.external}.|
 
 ![clouddb](images/clouddb-general-information.png){.thumbnail}
 
@@ -133,9 +134,9 @@ Depois de criar o utilizador, é necessário atribuir-lhe permissões para agir 
 > Esta etapa só se aplica se desejar importar um backup de uma base de dados já existente. Se não for o caso, passe à fase seguinte.
 >
 
-As bases de dados podem ser importadas de várias formas. Mas tem à sua disposição uma ferramenta na Área de Cliente OVH, e é desse método que vamos agora tratar. No entanto, pode recorrer a outro, de acordo com as suas preferências e conhecimentos.
+As bases de dados podem ser importadas de várias formas. Mas tem à sua disposição uma ferramenta na Área de Cliente OVHcloud, e é desse método que vamos agora tratar. No entanto, pode recorrer a outro, de acordo com as suas preferências e conhecimentos.
 
-As etapas a seguir descrevem como importar uma base de dados por meio da ferramenta disponível na Área de Cliente OVH.
+As etapas a seguir descrevem como importar uma base de dados por meio da ferramenta disponível na Área de Cliente OVHcloud.
 
 - **Etapa 1: aceder à interface de importação**
 

@@ -138,7 +138,7 @@ Guarde los cambios y salga del editor. La nueva huella de clave debe ser aceptad
 
 En Windows, también se especifica la ruta del archivo `known_hosts` y la línea a eliminar, por ejemplo:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 

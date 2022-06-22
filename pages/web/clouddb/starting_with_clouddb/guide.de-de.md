@@ -4,7 +4,6 @@ slug: erste-schritte-mit-clouddb
 links:
     - docs/cloud/clouddb/utilisation-mysql-mariadb/
     - docs/cloud/clouddb/utilisation-pgsql/
-legacy_guide_number: 2216
 excerpt: 'Erfahren Sie hier, wie Sie, wie Sie die CloudDB Lösung verwenden'
 section: 'Erste Schritte'
 order: 01
@@ -14,7 +13,7 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button “Mitmachen“ auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 28.01.2022**
+**Letzte Aktualisierung am 22.06.2022**
 
 ## Ziel
 
@@ -34,7 +33,7 @@ Ihre CloudDB Lösung ist standardmäßig an das Webhosting-Netzwerk von OVHcloud
 
 Wenn Ihr Hosting-Angebot die Option "CloudDB" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete`{.action}.
 
-Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
+Klicken Sie im Tab `Allgemeine Informationen` im Rahmen `Konfiguration` auf `...`{.action} rechts von **CloudDB**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
 ![Allgemeine Informationen](images/db-activation.png){.thumbnail}
 
@@ -56,6 +55,7 @@ Hier können Sie wichtige Informationen zu Ihrer Instanz einsehen. Wir bitten Si
 |Status der Dienstleistung|Zeigt an, ob die Instanz gestartet wurde, gerade neu gestartet wird oder gesperrt wurde. Ihre Instanz muss gestartet worden sein, damit Sie Aktionen durchführen können.|
 |Typ|Zeigt das vom Server verwendete Datenbanksystem an.|
 |Version|Zeigt die Version des vom Server verwendeten Datenbanksystems an. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version.|
+|CPU-Auslastung|Zeigt die beanspruchte CPU-Kapazität an. Ihre CloudDB Instanz ist hinsichtlich der CPU nicht eingeschränkt, Sie müssen jedoch darauf achten, die CPU Ihrer CloudDB nicht zu überlasten.|
 |RAM|Zeigt den für Ihre Instanz verfügbaren Arbeitsspeicher sowie eventuelle Überschreitungen der RAM-Kapazität. Der Arbeitsspeicher Ihrer CloudDB Instanz ist eine dedizierte und garantierte Ressource. Falls nötig können Sie diesen skalieren und eine Warnmeldung erhalten, wenn Sie sämtliche RAM-Ressourcen Ihrer Instanz verwenden.|
 |Infrastruktur|Zeigt die von Ihrer Instanz verwendete Infrastruktur an. Hierbei handelt es sich um inhärente Informationen zur OVHcloud Infrastruktur.|
 |Datacenter|Zeigt das Rechenzentrum an, in dem Ihre Instanz angelegt wurde. Vergewissern Sie sich, dass das Rechenzentrum Ihrer Instanz mit dem Rechenzentrum des OVHcloud Webhostings übereinstimmt, auf dem Ihre Website aktuell (oder in Zukunft) gehostet wird.|

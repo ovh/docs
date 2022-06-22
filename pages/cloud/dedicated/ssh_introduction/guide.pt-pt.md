@@ -138,7 +138,7 @@ Registe as modificações e saia do editor. A nova impressão de chave deve ser 
 
 Em Windows, a localização do ficheiro `known_hosts` e a linha a eliminar são também especificadas, por exemplo:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
