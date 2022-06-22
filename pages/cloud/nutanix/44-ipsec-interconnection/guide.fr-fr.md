@@ -229,7 +229,7 @@ Choisissez `Set interface(s) IP address` en saisissant `2` et en appuyant sur la
 
 ![Configure PFSENSE 06](images/04-configureip-pfsense06.png){.thumbnail}
 
-Sélectionnez l'interface **WAN** en saississant `1` et en appuyant sur la touche `entrée`{.action}.
+Sélectionnez l'interface **WAN** en saisissant `1` et en appuyant sur la touche `entrée`{.action}.
 
 ![Configure PFSENSE 07](images/04-configureip-pfsense07.png){.thumbnail}
 
@@ -579,7 +579,7 @@ Ensuite cliquez sur `Save`{.action}.
 
 ![Create IPSEC firewall rule FRANCE03](images/11-addipsecrule-from-france03.png){.thumbnail}
 
-Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut. pour rajouter une deuxième règle.
+Cliquez à nouveau sur `Add`{.action} avec la flèche vers le haut pour rajouter une deuxième règle.
 
 ![Create IPSEC firewall rule FRANCE04](images/11-addipsecrule-from-france04.png){.thumbnail}
 
