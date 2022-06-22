@@ -138,7 +138,7 @@ Zapisz zmiany i wyjdź z edytora. Nowy odcisk klucza musi zostać zaakceptowany 
 
 W systemie Windows określono również umiejscowienie pliku `known_hosts` i linii do usunięcia, np.:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\YourWindowsUser/.ssh/known_hosts:3
 ```
 
