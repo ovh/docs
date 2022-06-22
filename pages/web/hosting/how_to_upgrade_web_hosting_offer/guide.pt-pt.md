@@ -38,7 +38,7 @@ Ao alterar a sua fórmula durante a subscrição, a nova oferta será sujeita a 
 
 **Exemplo:**<br>
 Passou de uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), mas a subscrição em curso não está terminada.<br>
-Por conseguinte, o período restante será automaticamente ***adicionado** numa base pro rata temporis à sua nova subscrição **Pro**<br>
+Por conseguinte, o período restante será automaticamente **adicionado** numa base pro rata temporis à sua nova subscrição **Pro**<br>
 Por conseguinte, a renovação da autorização de introdução no mercado terá uma duração de **um pouco mais de um ano**, até à sua próxima renovação.
 
 ### Alterar a sua oferta de alojamento <a name="modify"></a>
@@ -47,7 +47,7 @@ Por conseguinte, a renovação da autorização de introdução no mercado terá
 >
 > A modificação da sua assinatura para uma oferta que emite menos recursos só é possível se se trata da oferta **imediatamente inferior**. 
 > Por exemplo, não poderá passar de uma fórmula *Performance 2* para uma fórmula *Pro* numa única operação.
-> Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1** e **depois** para a oferta *Pro*.
+> Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1* e **depois** para a oferta *Pro*.
 >
 > Os elementos seguintes dizem respeito às ofertas pagas. Para fazer evoluir o seu [alojamento gratuito Start10M](https://docs.ovh.com/pt/hosting/ativar-start10m/), siga estas [instruções](#start10m).
 >

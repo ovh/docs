@@ -47,7 +47,7 @@ Die Laufzeit des Dienstes ist somit **entsprechend länger als die regulären 12
 >
 > Die Änderung Ihres Abos zu einem Dienst mit weniger Ressourcen ist nur möglich, wenn es sich um das nächstniedrigere **Angebot handelt**.
 > So können Sie zum Beispiel nicht von *Performance 2* auf *Pro* wechseln.
-> Sie müssen Ihr Hosting **zuerst**** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
+> Sie müssen Ihr Hosting **zuerst** von *Performance 2* zum *Performance 1* **und dann** zum *Pro*-Angebot umstellen.
 >
 > Die folgenden Punkte betreffen kostenpflichtige Angebote. Um Ihr kostenloses [Start 10M Hosting](https://docs.ovh.com/de/hosting/start10m-aktivieren/) anzupassen, folgen Sie [diesen Anweisungen](#start10m).
 >
