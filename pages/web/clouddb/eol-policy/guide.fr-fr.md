@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Ressources techniques'
 ---
 
-**Dernière mise à jour le 07/01/2022**
+**Dernière mise à jour le 22/06/2022**
 
 ## Objectif
 
@@ -14,12 +14,9 @@ Les bases de données managées OVHcloud proposent plusieurs Systèmes de Gestio
 
 ## Prérequis
 
-Disposer d'une ou plusieurs des offres suivantes:
-
-- Un [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/) comprenant des bases de données.
+Disposer d'une ou plusieurs des offres suivantes :
+- Une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Un pack de base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
-- Un serveur [SQL privé](https://www.ovhcloud.com/fr/web-hosting/options/).
-- Un serveur [Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
 
 ## En pratique
 
@@ -29,7 +26,7 @@ Les produits couverts par cette politique de fin de vie sont :
 
 - Les services CloudDB, instances SGBD dédiées joignables via le réseau publique ou via le réseau Web Hosting  ([voir les annonces](../clouddb-eos-eol/)).
 
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/){.external})..
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](https://docs.ovh.com/fr/hosting/sql_eos_eol/){.external}).
 
 ### Définitions et lignes directrices de la politique de fin de vie
 
