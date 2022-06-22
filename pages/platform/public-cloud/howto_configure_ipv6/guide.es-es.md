@@ -30,11 +30,11 @@ Esta guía explica cómo configurar una dirección IPv6 en una instancia de Publ
 
 Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en la que se recogen los valores que utilizaremos en esta guía junto con su descripción:
 
-|Valor|Descripción|Ejemplo|
-|---|---|---|
-|YOUR_IPV6|Dirección IPv6 asignada al servicio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Es el prefijo (o *máscara* de red) del bloque IPv6, generalmente de 128.|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Puerta de enlace (gateway) del bloque IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Valor|Descripción|
+|---|---|
+|YOUR_IPV6|Dirección IPv6 asignada al servicio.|
+|IPv6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
+|IPv6_GATEWAY|Puerta de enlace del bloque IPv6.|
 
 
 ### Obtener la la información relativa a la red

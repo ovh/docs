@@ -31,11 +31,11 @@ By default, only the IPv4 address is configured.
 
 Here is a short glossary of the terms used in this tutorial:
 
-|Glossary|Description|Example|
-|---|---|---|
-|YOUR_IPV6|The IPv6 address assigned to your service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 128|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|The gateway of your IPv6 block|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Glossary|Description|
+|---|---|
+|YOUR_IPV6|The IPv6 address assigned to your service.|
+|IPv6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPv6_GATEWAY|The gateway of your IPv6 block.|
 
 
 ### Retrieve your network information.

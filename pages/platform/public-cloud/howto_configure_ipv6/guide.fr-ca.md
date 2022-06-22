@@ -31,11 +31,11 @@ Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur 
 
 Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
-|Lexique|Description|Exemple|
-|---|---|---|
-|YOUR_IPV6|Il s'agit de l’adresse IPv6 assignée à votre service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 128|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Il s'agit de la passerelle de votre bloc IPv6|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Lexique|Description|
+|---|---|
+|YOUR_IPV6|L’adresse IPv6 assignée à votre service|
+|IPv6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPv6_GATEWAY|La passerelle de votre bloc IPv6|
 
 
 ### Récupérer les informations réseaux

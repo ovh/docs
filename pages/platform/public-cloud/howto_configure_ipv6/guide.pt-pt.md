@@ -5,7 +5,7 @@ excerpt: 'Tutorial de configuração do protocolo IPv6 numa instância Public Cl
 section: Rede
 ---
 
-**Última atualização: 05/02/2020**
+**Última atualização: 21/06/2022**
 
 ## Objetivo
 
@@ -30,11 +30,11 @@ Neste tutorial, iremos explicar como configurar um endereço IPv6 numa instânci
 
 Aqui tem um breve léxico dos termos utilizados neste tutorial:
 
-|Léxico|Descrição|Exemplo|
-|---|---|---|
-|YOUR_IPV6|Trata-se do endereço IPv6 associado ao seu serviço|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Trata-se do prefixo (ou *netmask*) do seu bloco IPv6, geralmente de 128|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Trata-se da gateway do bloco IPv6|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Léxico|Descrição|
+|---|---|
+|YOUR_IPV6|O endereço IPv6 associado ao seu serviço|
+|IPv6_PREFIX|O prefixo do bloco IPv6 (por ex.: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPv6_GATEWAY|A gateway do bloco IPv6|
 
 
 ### Obter as informações de rede

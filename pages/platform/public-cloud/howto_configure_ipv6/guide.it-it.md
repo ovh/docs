@@ -28,11 +28,11 @@ Di default è configurato soltanto l’IPv4 perciò, questa guida ti mostra come
 
 Ecco una lista di termini impiegati in questa guida:
 
-|Lessico|Descrizione|Esempio|
-|---|---|---|
-|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Prefisso (o *netmask*) del blocco IPv6, generalmente 128|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Gateway del blocco IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Lessico|Descrizione|
+|---|---|
+|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio|
+|IPv6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPv6_GATEWAY|Gateway del blocco IPv6|
 
 
 ### Recupera le informazioni di rete

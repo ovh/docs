@@ -30,11 +30,11 @@ W tym tutorialu dowiesz się, jak skonfigurować adres IPv6 dla instancji Public
 
 Oto krótki słowniczek terminów stosowanych w tym tutorialu:
 
-|Słowniczek|Opis |Przykład|
-|---|---|---|
-|YOUR_IPV6|Jest to adres IPv6 przypisany do Twojej usługi|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Jest to prefiks (lub *netmask*) Twojego bloku IPv6, zwykle 128|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Jest to brama Twojego bloku IPv6|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|Słowniczek|Opis|
+|---|---|
+|YOUR_IPV6|Adres IPv6 przypisany do Twojej usługi|
+|IPv6_PREFIX|Prefiks Twojego bloku IPv6 (np. 2607:5300:60:62ac::/128 -> netmask = 128)|
+|IPv6_GATEWAY|Brama sieciowa Twojego bloku IPv6|
 
 
 ### Pobranie danych sieciowych
