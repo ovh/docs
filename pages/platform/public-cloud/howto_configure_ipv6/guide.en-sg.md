@@ -6,7 +6,7 @@ section: Networking
 order: 11
 ---
 
-**Last updated 31st January 2020**
+**Last updated 21st June 2022**
 
 ## Objective
 
@@ -21,8 +21,9 @@ By default, only the IPv4 address is configured.
 ## Requirements
 
 - A Public Cloud instance (any model)
-- Knowledge of SSH
-- Basic network knowledge
+- Administrative access (root) via SSH or remote desktop (Windows) to your server
+- A basic understanding of networking
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
@@ -30,17 +31,18 @@ By default, only the IPv4 address is configured.
 
 Here is a short glossary of the terms used in this tutorial:
 
-|Glossary|Description|
-|---|---|
-|IPV6_BLOCK|The IPv6 block assigned to your service.|
-|YOUR_IPV6|The IPv6 address assigned to your service.|
-|IPv6_PREFIX|The prefix of your IPv6 block (e.g. 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|The gateway of your IPv6 block.|
+|Glossary|Description|Example|
+|---|---|---|
+|YOUR_IPV6|The IPv6 address assigned to your service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
+|IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 128|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_GATEWAY|The gateway of your IPv6 block|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 
 ### Retrieve your network information.
 
-Log in to the OVHcloud Control Panel and open your `Public Cloud`{.action} project. Click on `Instances`{.action} in the left side menu. Then, click on `...`{.action} next to the correspending instance and click on `Instance details`{.action}.
+Log in to the OVHcloud Control Panel and open your `Public Cloud`{.action} project. Then click on `Instances`{.action} in the left-hand menu. 
+
+Click on `...`{.action} next to the corresponding instance and click on `Instance details`{.action}.
 
 ![public-cloud ipv6](images/pci2022.png){.thumbnail}
 
@@ -57,13 +59,18 @@ All the information you need is in the **Networks** section.
 >Since you are the admin of your services, you will need to adapt the information to match your distribution or operating system.
 >
 
-First of all, connect to your instance via SSH.
+> [!warning]
+>
+> Before modifying a configuration file always create a backup of the original.
+> 
 
-#### **On Debian / Ubuntu**
+<br>First of all, connect to your instance via SSH.
 
-If we assume that your interface is eth0 and you are using a Debian OS, the configuration to add should look like this:
+#### **On Debian**
 
-File to edit (with su privileges): /etc/network/interfaces
+If we assume that your interface is eth0, the configuration should look like this:
+
+File to edit (with su privileges): `/etc/network/interfaces`
 
 ```
 iface eth0 inet6 static
@@ -86,11 +93,60 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
+
+#### **On Ubuntu**
+
+The network configuration files are located in the `/etc/netplan/` directory. First, create a copy of the IPv6 configuration file:
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
+
+If we assume that your interface is eth0, the configuration should look like this:
+
+File to edit (with su privileges): `/etc/netplan/51-cloud-init-ipv6.yaml`
+
+```
+network:
+    ethernets:
+        eth0:
+            dhcp6: false
+            match:
+                macaddress: fb:17:3r:39:56:75
+            set-name: eth0
+            addresses:
+              - "YOUR_IPV6/IPv6_PREFIX"
+            gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
+    version: 2
+```
+> [!warning]
+>
+> It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 
+>
+
+You can test your configuration using this command:
+
+```
+netplan try
+```
+
+If it is correct, apply it using the following command:
+
+```
+netplan apply
+```
+
 #### **On RedHat / CentOS**
 
 If we assume that your interface is eth0, the configuration should look like this:
 
-File to edit (with sudo privileges): /etc/sysconfig/network-scripts/ifcfg-eth0
+File to edit (with sudo privileges): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
 ```
 IPV6INIT=yes

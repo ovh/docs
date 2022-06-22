@@ -5,7 +5,7 @@ excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
 section: 'Netzwerk und IP'
 ---
 
-**Letzte Aktualisierung am 25.11.2019**
+**Letzte Aktualisierung am 21.06.2022**
 
 ## Ziel
 
@@ -34,7 +34,6 @@ Hier ein kurzes Glossar der in dieser Anleitung verwendeten Begriffe:
 
 |Glossar|Beschreibung|
 |---|---|
-|IPV6_BLOCK|Der Ihrem Dienst zugewiesene IPv6-Block|
 |YOUR_IPV6|Die IPv6-Adresse, die Ihrem Dienst zugewiesen ist|
 |IPv6_PREFIX|Das Präfix Ihres IPv6-Blockes (Bsp. für "2607:5300:60:62ac::/128": netmask = 128)|
 |IPv6_GATEWAY|Das Gateway Ihres IPv6-Blocks|
@@ -59,13 +58,18 @@ Alle erforderlichen Informationen werden im Abschnitt **Netzwerke** angezeigt.
 >Als Administrator Ihrer Dienste obliegt es Ihnen, diese an Ihre Distribution anzupassen.
 >
 
-Verbinden Sie sich zunächst über SSH mit Ihrer  Instanz.
+> [!warning]
+>
+> Erstellen Sie immer ein Backup des Originals, bevor Sie eine Konfigurationsdatei bearbeiten.
+>
 
-#### **Mit Debian/Ubuntu**
+<br>Verbinden Sie sich zunächst über SSH mit Ihrer  Instanz.
 
-Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, und Sie ein Debian-Betriebssystem verwenden, sollte die hinzuzufügende Konfiguration wie folgt aussehen:
+#### **Mit Debian**
 
-Anzupassende Datei (mit Superuser-Rechten): /etc/network/interfaces
+Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die hinzuzufügende Konfiguration wie folgt aussehen:
+
+Anzupassende Datei (mit Superuser-Rechten): `/etc/network/interfaces`
 
 ```
 iface eth0 inet6 static
@@ -88,11 +92,61 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
+
+#### **Mit Ubuntu**
+
+Die Netzwerkkonfigurationsdateien befinden sich im Verzeichnis `/etc/netplan/`. Erstellen Sie zuerst eine Kopie der IPv6-Konfigurationsdatei:
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+So können Sie die IPv6-Konfiguration trennen und die Änderungen im Fehlerfall einfach abbrechen.
+
+Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die hinzuzufügende Konfiguration wie folgt aussehen:
+
+Anzupassende Datei (mit Superuser-Rechten): `/etc/netplan/51-cloud-init-ipv6.yaml`
+
+```
+network:
+    ethernets:
+        eth0:
+            dhcp6: false
+            match:
+                macaddress: fb:17:3r:39:56:75
+            set-name: eth0
+            addresses:
+              - "YOUR_IPV6/IPv6_PREFIX"
+            gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
+    version: 2
+```
+
+> [!warning]
+>
+> Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.
+>
+
+Sie können Ihre Konfiguration mit folgendem Befehl testen:
+
+```bash
+netplan try
+```
+
+Ist die Änderung korrekt, verwenden Sie folgenden Befehl:
+
+```bash
+netplan apply
+```
+
 #### **Mit RedHat / CentOS**
 
 Wenn wir davon ausgehen, dass Ihr Interface eth0 ist, sollte die Konfiguration wie folgt aussehen:
 
-Anzupassende Datei (mit "sudo"-Rechten): /etc/sysconfig/network-scripts/ifcfg-eth0
+Anzupassende Datei (mit "sudo"-Rechten): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
 ```
 IPV6INIT=yes

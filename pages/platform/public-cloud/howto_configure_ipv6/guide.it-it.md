@@ -5,9 +5,10 @@ excerpt: 'Configurare un indirizzo IPv6 su un’istanza Public Cloud'
 section: Rete
 ---
 
-**Ultimo aggiornamento: 11/07/2019**
+**Ultimo aggiornamento: 21/06/2022**
 
 ## Obiettivo
+
 Internet Protocol version 6 (IPv6) è la versione più recente dell’Internet Protocol (IP), sviluppato per risolvere il problema (a lungo anticipato) dell'esaurimento degli indirizzi IPv4. Infatti, mentre IPv4 utilizza indirizzi IP a 32 bit, IPv6 utilizza indirizzi a 128-bit.
 
 Tutte le istanze Public Cloud vengono consegnate  con un indirizzo IPv4 e un indirizzo IPv6.
@@ -17,8 +18,9 @@ Di default è configurato soltanto l’IPv4 perciò, questa guida ti mostra come
 ## Prerequisiti
 
 * Disporre di un qualsiasi modello di istanza Public Cloud
-* Possedere conoscenze di SSH
+* *Avere accesso amministrativo (root) via SSH o desktop remoto (Windows) al server
 * Possedere conoscenze base di rete
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -26,12 +28,11 @@ Di default è configurato soltanto l’IPv4 perciò, questa guida ti mostra come
 
 Ecco una lista di termini impiegati in questa guida:
 
-|Lessico|Descrizione|
-|---|---|
-|IPV6_BLOCK|Blocco IPv6 assegnato al servizio|
-|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio|
-|IPv6_PREFIX|Il prefisso del tuo blocco IPv6 (esempio: 2607:5300:60:62ac::/128 -> netmask = 128)|
-|IPv6_GATEWAY|Gateway del blocco IPv6|
+|Lessico|Descrizione|Esempio|
+|---|---|---|
+|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
+|IPv6_PREFIX|Prefisso (o *netmask*) del blocco IPv6, generalmente 128|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_GATEWAY|Gateway del blocco IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 
 ### Recupera le informazioni di rete
@@ -53,13 +54,18 @@ Tutte le informazioni necessarie saranno visibili nella sezione **Reti**.
 >In qualità di amministratore dei tuoi servizi, spetta a te adeguarli alla tua distribuzione.
 >
 
-Per prima cosa, accedi alla tua istanza in SSH.
+> [!warning]
+>
+> Prima di modificare un file di configurazione, crea sempre un backup dell'originale in caso di problemi.
+>
 
-#### **Su Debian / Ubuntu**
+<br>Per prima cosa, accedi alla tua istanza in SSH.
 
-Considerando che la tua interfaccia è eth0 e che ti trovi su un OS Debian, la configurazione da aggiungere dovrebbe essere questa:
+#### **Su Debian**
 
-File da modificare (con privilegi su): /etc/network/interfaces
+Considerando che la tua interfaccia è eth0, la configurazione da aggiungere dovrebbe essere questa:
+
+File da modificare (con privilegi su): `/etc/network/interfaces`
 
 ```
 iface eth0 inet6 static
@@ -82,11 +88,61 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
+
+#### **Su Ubuntu**
+
+I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Per prima cosa, crea una copia del file di configurazione IPv6:
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+In questo modo è possibile separare la configurazione IPv6 e annullare facilmente le modifiche in caso di errore.
+
+Considerando che la tua interfaccia è eth0, la configurazione da aggiungere dovrebbe essere questa:
+
+File da modificare (con privilegi su): `/etc/netplan/51-cloud-init-ipv6.yaml`
+
+```
+network:
+    ethernets:
+        eth0:
+            dhcp6: false
+            match:
+                macaddress: fb:17:3r:39:56:75
+            set-name: eth0
+            addresses:
+              - "YOUR_IPV6/IPv6_PREFIX"
+            gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
+    version: 2
+```
+
+> [!warning]
+>
+> È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. E' necessario solo il tasto spazio.
+>
+
+Per testare la tua configurazione utilizza questo comando:
+
+```bash
+netplan try
+```
+
+Se è corretta, applicala utilizzando il seguente comando:
+
+```bash
+netplan apply
+```
+
 #### **Su RedHat / CentOS**
 
 Se la tua interfaccia è eth0, la configurazione dovrebbe essere questa:
 
-File da modificare (con provilegi sudo): /etc/sysconfig/network-scripts/ifcfg-eth0
+File da modificare (con provilegi sudo): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
 ```
 IPV6INIT=yes

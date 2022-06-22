@@ -5,9 +5,10 @@ excerpt: 'Cómo configurar el protocolo IPv6 en una instancia de Public Cloud'
 section: 'Red e IP'
 ---
 
-**Última actualización: 25/11/2019**
+**Última actualización: 21/06/2022**
 
 ## Objetivo
+
 El protocolo de internet versión 6 (IPv6), la última versión del protocolo de internet (IP), está diseñado para resolver el agotamiento de las direcciones IPv4 utilizando direcciones compuestas por 128 bits en vez de los 32 bits de las direcciones IPv4.
 
 Todas las instancias de Public Cloud se entregan con una dirección IPv4 y una dirección IPv6.
@@ -19,8 +20,9 @@ Esta guía explica cómo configurar una dirección IPv6 en una instancia de Publ
 ## Requisitos
 
 * Tener una instancia de Public Cloud.
-* Tener conocimientos de SSH.
+* Tener acceso administrativo (root) por SSH o escritorio remoto (Windows) al servidor.
 * Tener conocimientos básicos de redes.
+* Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -28,12 +30,11 @@ Esta guía explica cómo configurar una dirección IPv6 en una instancia de Publ
 
 Antes de empezar, la recomendamos que eche un vistazo a la siguiente tabla, en la que se recogen los valores que utilizaremos en esta guía junto con su descripción:
 
-|Valor|Descripción|
-|---|---|
-|IPV6_BLOCK|Bloque IPv6 asignado al servicio.|
-|YOUR_IPV6|Dirección IPv6 asignada al servicio.|
-|IPv6_PREFIX|Prefijo del bloque IPv6 (p. ej.: 2607:5300:60:62ac::/128 -> netmask = 128).|
-|IPv6_GATEWAY|Puerta de enlace del bloque IPv6.|
+|Valor|Descripción|Ejemplo|
+|---|---|---|
+|YOUR_IPV6|Dirección IPv6 asignada al servicio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
+|IPv6_PREFIX|Es el prefijo (o *máscara* de red) del bloque IPv6, generalmente de 128.|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_GATEWAY|Puerta de enlace (gateway) del bloque IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 
 ### Obtener la la información relativa a la red
@@ -55,13 +56,19 @@ Puede consultar la información en la columna `Redes`{.action}.
 >Como administrador del servicio, deberá adaptarlo a su distribución.
 >
 
-En primer lugar, conéctese a su instancia por SSH.
 
-#### **En Debian - Ubuntu**
+> [!warning]
+>
+> Antes de editar un archivo de configuración, cree siempre una copia de seguridad del original si surge algún problema.
+>
 
-Si su interfaz es «eth0» y tiene un SO Debian, la configuración tendrá que ser parecida a la siguiente:
+<br>En primer lugar, conéctese a su instancia por SSH.
 
-Archivo a modificar (con privilegios root): /etc/network/interfaces
+#### **En Debian**
+
+Si su interfaz es «eth0», la configuración tendrá que ser parecida a la siguiente:
+
+Archivo a modificar (con privilegios su): `/etc/network/interfaces`
 
 ```
 iface eth0 inet static
@@ -84,11 +91,61 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
+
+#### **En Ubuntu**
+
+Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. En primer lugar, cree una copia del archivo de configuración IPv6:
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+De este modo, podrá separar la configuración IPv6 y, en caso de error, cancelar fácilmente los cambios.
+
+Si su interfaz es «eth0», la configuración tendrá que ser parecida a la siguiente:
+
+Archivo a modificar (con privilegios su): `/etc/netplan/51-cloud-init-ipv6.yaml`
+
+```
+network:
+    ethernets:
+        eth0:
+            dhcp6: false
+            match:
+                macaddress: fb:17:3r:39:56:75
+            set-name: eth0
+            addresses:
+              - "YOUR_IPV6/IPv6_PREFIX"
+            gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
+    version: 2
+```
+
+> [!warning]
+>
+> Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio.
+>
+
+Para probar su configuración, utilice el siguiente comando:
+
+```
+netplan try
+```
+
+Si es correcta, puede aplicarla con el siguiente comando:
+
+```
+netplan apply
+```
+
 #### **En RedHat/CentOS**
 
 Si su interfaz es «eth0», la configuración tendrá que ser parecida a la siguiente:
 
-Archivo a modificar (con privilegios root): /etc/sysconfig/network-scripts/ifcfg-eth0
+Archivo a modificar (con privilegios root): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
 ```
 IPV6INIT=yes
