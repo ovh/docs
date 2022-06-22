@@ -3,7 +3,7 @@ title: Importing ISO images
 slug: image-import
 excerpt: Managing ISO images from Prism Central
 section: Getting started
-order: 05
+order: 07
 ---
 
 **Last updated 10th March 2022**

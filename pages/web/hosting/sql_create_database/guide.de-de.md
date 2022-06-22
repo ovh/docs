@@ -79,7 +79,7 @@ Geben Sie anschließend die angeforderten Informationen ein und klicken Sie auf 
 ### Schritt 3: Datenbank verwalten
 
 > [!warning]
->Diese Anleitung ersetzt nicht die Unterstützung eines professionellen Webmasters. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>Diese Anleitung ersetzt nicht die Unterstützung eines professionellen Webmasters. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
 >
 
 Sie können Ihre Datenbank jetzt verwenden. Hierzu benötigen Sie Ihre Login-Daten: den von Ihnen festgelegten Benutzernamen und das zugehörige Passwort, den Namen der Datenbank sowie die Serveradresse. Diese Informationen sind erforderlich, damit sich Ihre Website mit der Datenbank verbinden kann.

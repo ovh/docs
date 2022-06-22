@@ -19,7 +19,7 @@ Las políticas antispam cada vez son más estrictas. Para asegurarse que sus cor
 
 > [!warning]
 >
->OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un proveedor especializado si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
+>OVHcloud ofrece servicios de los cuales usted es responsable. De hecho, como no tenemos acceso administrativo a estas máquinas, no somos administradores y no podemos ofrecerle soporte. Esto significa que depende de usted administrar el software y la seguridad diariamente. Le proporcionamos esta guía para ayudarlo con tareas comunes. Sin embargo, le recomendamos ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene dificultades o dudas sobre la administración, el uso o la seguridad del servidor.
 >
 
 ## Requisitos

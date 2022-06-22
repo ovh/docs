@@ -61,7 +61,7 @@ The OVHcloud support team cannot provide direct assistance for this type of requ
 
 
 ## Restoring your backup
-WordPress is made up of files and a database. You can restore your files to an earlier date. OVHcloud gives you a 3-week history of the files in your webspace. As for the database you can go back seven days.
+WordPress is made up of files and a database. You can restore your files to an earlier date. OVHcloud gives you a 2-week history of the files in your webspace. As for the database you can go back seven days.
 Restore does not fix the security flaws, you just replace all the infected files with files from an uninfected backup.
 
 

@@ -154,7 +154,7 @@ This means you can specify configuration in a `.npmrc` file in your app root.
 
 To switch to yarn to manage dependencies, follow these steps:
 
-Step 1. Switch to a build flavor of `none` (so packages aren't installed with npm):
+#### Step 1: Switch to a build flavor of `none` (so packages aren't installed with npm)
 
 ```yaml 
 location=".platform.app.yaml"
@@ -162,7 +162,7 @@ build:
     flavor: none
 ```
 
-Step 2. Add yarn as a global dependency:
+#### Step 2: Add yarn as a global dependency
 
 ```yaml 
 location=".platform.app.yaml"
@@ -171,7 +171,7 @@ dependencies:
         yarn: "1.22.17"
 ```
 
-Step 3. Install dependencies in the `build` hook:
+#### Step 3: Install dependencies in the `build` hook
 
 
 ```yaml 
@@ -272,12 +272,12 @@ To configure a given service, see the page dedicated to that service.
  
 [View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
-### Gatsby with Wordpress 
+### Gatsby with WordPress 
 
 ![image](images/gatsby.png)
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-WordPress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
@@ -286,7 +286,7 @@ To configure a given service, see the page dedicated to that service.
 - MariaDB 10.4<br />  
 - Automatic TLS certificates<br />  
 - npm-based build for Gatsby<br />  
-- Composer-based build for Wordpress<br />  
+- Composer-based build for WordPress<br />  
 - Multi-app configuration<br />  
 - Delayed SSG build (post deploy hook)<br />  
  
@@ -354,7 +354,7 @@ To configure a given service, see the page dedicated to that service.
 
 ![image](images/express.png)
 
-<p>This template demonstrates building the Express framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Express framework for Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Express is a minimalist web framework written in Node.js.</p>
   
 #### Features
@@ -415,4 +415,3 @@ To configure a given service, see the page dedicated to that service.
 - npm-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/directus) on GitHub.
-

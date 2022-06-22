@@ -8,11 +8,11 @@ section: Use cases
 **Last updated 27th July, 2020**
 
 ## Objective
- 
+
 [Bonfire](https://github.com/blue-yonder/bonfire){.external} is an open source command line interface to query Graylog searches via the REST API. It  emulates the experience of using tail on a local file and adds other valuable options.
 
 This guide will help you to query your logs from the Bonfire command line tool.
- 
+
 
 For all of these examples, you will have to replace `<your_cluster>.logs.ovh.com` with your assigned endpoint address. This information is on the email you received when you created your Logs Data Platform account or in the **Home** Page of the manager. Similarly, you will have to replace logs-username with the user you used to connect to Graylog.
 

@@ -7,7 +7,7 @@ section: Transfert
 order: 4
 ---
 
-**Dernière mise à jour le 22/06/2020**
+**Dernière mise à jour le 17/06/2022**
 
 ## Objectif
 
@@ -19,23 +19,31 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
 >
 
 ## Prérequis
 
-- Votre domaine ne doit pas être en période de rédemption ou de suppression.
+- Votre domaine ne doit pas être en période de **rédemption** ou de suppression.
 - Le domaine ne doit pas être bloqué chez votre registrar. 
 - Les coordonnées du propriétaire doivent être bien à jour sur le [whois](https://www.nominet.uk/whois/){.external} du domaine.
-- Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire. 
+- Vous devrez obtenir le code d'autorisation qui sera envoyé à l'adresse email du propriétaire.
+
+> [!primary]
+>
+> La période de **rédemption** est de 90 jours maximum à compter du jour d'expiration du nom de domaine. Dans le cas d'un transfert, cette période permet de restaurer le domaine et ainsi débloquer la possibilité de le transférer.
 
 ## Extensions concernées
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## En pratique
 
@@ -43,7 +51,7 @@ Le transfert d'un nom de domaine .uk (ou assimilé) nécessite de respecter une 
 
 #### Étape 1 : Modification du TAG de votre domaine
 
-Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Pour pouvoir transférer votre domaine chez OVHcloud, vous devez préalablement indiquer le TAG OVHcloud chez votre registrar actuel. Le TAG OVHcloud est « OVH-FR ». La liste des TAGS des différents registrars est disponible sur le site officiel du registre [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >

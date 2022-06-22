@@ -43,9 +43,9 @@ In order to follow this guide you will need:
 > The following procedure has the advantage to be set up very quickly but
 > is NOT recommended at all in production as it can block the Apache
 > process in the case of heavy traffic.
-> In production, please use a non-blocking solution like the second solution in this guide, or this one: 
+> In production, please use a non-blocking solution like the second solution in this guide, or this one:
 > [Shipping logs to Logs Data platform with Filebeat](../filebeat-logs){.ref}
-> 
+>
 
 
 #### Global Apache configuration
@@ -71,7 +71,7 @@ If you want to only send logs from a specific VirtualHost, or send specific info
    ServerName www.example.com
    ServerAlias example.com
    DocumentRoot /var/www/www.example.com
- 
+
    LogLevel warn
    ErrorLog /var/log/httpd/www.example.com_error.log
    CustomLog /var/log/httpd/www.example.com_access.log combined
@@ -104,12 +104,12 @@ The configuration is pretty similar to the one used in the first part of this do
  source s_apache {
      file("/var/log/httpd/access.log" flags(no-parse));
  };
- 
+
  template t_apache_access_log {
      template("type:apache-access.log\tX-OVH-TOKEN:XXXXXXXXXXXXXXXX\ttime:${APACHE.TIMESTAMP}\thost:${HOST}\tremote_ip:${APACHE.CLIENT_IP}\trequest:${APACHE.REQUEST_URL}\tstatus_code:${APACHE.REQUEST_STATUS}\treponse_size:${APACHE.CONTENT_LENGTH}\treferer:${APACHE.REFERER}\tuser_agent:${APACHE.USER_AGENT}\tmessage:${MSG}\n");
      template_escape(no);
  };
- 
+
  destination dt_apache_access_ldp {
      tcp("XXX.logs.ovh.com"
          port(12201)
@@ -120,7 +120,7 @@ The configuration is pretty similar to the one used in the first part of this do
          log-fifo-size(30000)
      );
  };
- 
+
  parser p_apache {
      csv-parser(columns("APACHE.CLIENT_IP", "APACHE.IDENT_NAME", "APACHE.USER_NAME",
  "APACHE.TIMESTAMP", "APACHE.REQUEST_URL", "APACHE.REQUEST_STATUS",
@@ -130,7 +130,7 @@ The configuration is pretty similar to the one used in the first part of this do
      quote-pairs('""[]')
      );
  };
- 
+
  log {
      source(s_apache);
      parser(p_apache);

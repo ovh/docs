@@ -27,7 +27,7 @@ These technologies form a stack, which you can use to host dynamic websites and 
 >
 > OVHcloud is providing you with services that you are responsible for. We cannot access these servers, as we are not administrators. For this reason, we cannot provide you with administrative assistance. You are responsible for your service’s software and security.
 > 
-> We have published this guide to assist you as much as we can with common tasks. However, we recommend contacting a specialist service provider if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide.
+> We have published this guide to assist you as much as we can with common tasks. However, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) if you experience any difficulties or have any doubts about managing, using and securing a server. You can find more information in the “Go further” section of this guide.
 >
 
 ## Instructions

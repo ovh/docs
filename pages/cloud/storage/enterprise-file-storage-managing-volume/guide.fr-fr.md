@@ -73,7 +73,7 @@ Pour récupérer les informations d'un volume, utilisez la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -83,12 +83,12 @@ Pour récupérer les informations d'un volume, utilisez la route API suivante :
 >> >
 >> >> ID du service
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID du volume
 >
 
-Remplacez `serviceName` par l'ID de votre service et `netappShareId` par l'ID du volume.
+Remplacez `serviceName` par l'ID de votre service et `shareId` par l'ID du volume.
 
 ### Créer un volume
 
@@ -127,7 +127,7 @@ Pour connaître le chemin de montage d'un volume, utilisez la route API suivante
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{netappShareId}/accessPath
+>> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -137,12 +137,12 @@ Pour connaître le chemin de montage d'un volume, utilisez la route API suivante
 >> >
 >> >> ID du service
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID du volume
 >
 
-Remplacez `serviceName` par l'ID de votre service et `netappShareId` par l'ID du volume.
+Remplacez `serviceName` par l'ID de votre service et `shareId` par l'ID du volume.
 
 Les chemins de montage retournés peuvent être utilisés pour monter le volume.
 
@@ -164,7 +164,7 @@ Pour supprimer un volume, utilisez la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{netappShareId}
+>> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -174,12 +174,12 @@ Pour supprimer un volume, utilisez la route API suivante :
 >> >
 >> >> ID du service
 >> >
->> > **netappShareId** *
+>> > **shareId** *
 >> >
 >> >> ID du volume
 >
 
-Remplacez `serviceName` par l'ID de votre service et `netappShareId` par l'ID du volume à supprimer.
+Remplacez `serviceName` par l'ID de votre service et `shareId` par l'ID du volume à supprimer.
 
 ## Aller plus loin
 

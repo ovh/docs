@@ -10,7 +10,7 @@ order: 3
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 13/09/2021**
+**Última atualização: 17/06/2022**
 
 ## Objetivo
 
@@ -21,6 +21,24 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 ## Requisitos
 
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Dispor de um MPN ID (Microsoft Partner Network Identifier)
+- Estar inscrito no programa CSP (Cloud Solution Provider) da Microsoft enquanto revendedor indireto na região em que exerce a sua atividade (por exemplo: "UE" para a Europa)
+
+> [!warning]
+>
+> A partir de 01/07/2022, todos os serviços Office 365 revendedores (CSP2) que não disponham de um MPN ID inscrito no programa "CSP revendedor indireto" serão desativados pela Microsoft.
+>
+> Dispor de um MPN ID é agora obrigatório para qualquer nova subscrição.
+>
+
+Se ainda não dispõe de um MPN ID, pode criar um (se é elegível para as condições da Microsoft) seguindo a [documentação oficial da Microsoft](https://docs.microsoft.com/pt-pt/partner-center/mpn-create-a-partner-center-account) {.external}.
+
+Para se inscrever como revendedor indireto, convidamo-lo a consultar esta outra [documentação oficial da Microsoft](https://docs.microsoft.com/pt-pt/partner-center/enrolling-in-the-csp-program#enroll-as-an-indirect-reseller) {.external}.
+
+> [!success]
+>
+> O "MPN ID" permite-lhe obter um backup das subscrições que encomendará através da Área de Cliente OVHcloud. Este cashback está sujeito a regras definidas pela Microsoft, em função dos volumes de subscrições que gerará.
+>
 
 ## Instruções
 
@@ -28,17 +46,15 @@ O Office 365 Revendedores (CSP2) é um serviço que lhe permite beneficiar de di
 
 Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Depois de conectar, selecione `Sunrise`{.action} no painel superior e clique em `Office 365 Revendedores`{.action}.
 
+- Introduza o seu MPN ID previamente criado junto da Microsoft.
 - Complete as informações de contacto do cliente final, estas são solicitadas para definir o gestor do grupo de licenças (Tenant) que vai criar.
 
 > [!primary]
 >
-> - Se já dispõe de um serviço Office 365 CSP2 na Microsoft, tem a possibilidade de delegar a sua administração na OVHcloud. Assim, poderá adicionar subscrições suplementares diretamente a partir da sua Área de Cliente OVHcloud. Ao encomendar um novo grupo de licenças, deverá escolher `Delegação de uma plataforma criada previamente na Microsoft`{.action}.
->
-> - Se dispõe de um Microsoft Partner ID, pode introduzi-lo a partir desta mesma interface. Isto permitir-lhe-á obter um backup das subscrições que encomendará através do nosso Espaço Cliente. Este cashback está sujeito a regras definidas pela Microsoft em função dos volumes de subscrições que gerará.
+>  Também pode definir um **subdomínio personalizado** aquando da criação de uma nova plataforma, selecionando a pequena casa prevista para este efeito (sob reserva dos nomes disponíveis).
 >
 
 - Na lista abaixo, indique as licenças que deseja adicionar ao seu grupo.
-
 - Clique em `Encomendar`{.action} para finalizar a sua encomenda.
 
 > [!warning]
@@ -48,6 +64,22 @@ Para encomendar um serviço Office 365 Revendedores, aceda à [Área de Cliente 
 
 ![office365](images/csp2-01.png){.thumbnail}
 
+#### Caso específico das delegações
+
+- Se já dispõe de um serviço Office 365 CSP2 na Microsoft, tem a possibilidade de delegar a sua administração na OVHcloud. Assim, poderá adicionar subscrições suplementares diretamente a partir da sua Área de Cliente OVHcloud. Aquando da encomenda de um novo grupo de licenças, deverá escolher "Delegação de uma plataforma criada previamente na Microsoft`" e especificar com exatidão o **Tenant Office 365 existente** que poderá encontrar no seu portal Microsoft, bem como o seu MPN ID.
+
+- Se já passou por um outro fornecedor que não a OVHcloud para o seu Office 365 revendedores, poderá igualmente delegar a administração à OVHcloud, mas deverá quebrar previamente a ligação com o seu antigo fornecedor.
+
+- Será necessária uma dupla validação para finalizar o aparecimento da associação na sua Área de Cliente OVHcloud.
+
+- Uma vez subscritas as licenças no endereço delegado, estas estarão disponíveis no seu [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external}. Deverá então substituir as suas antigas licenças no seu [portal de administração Microsoft](https://portal.office.com/Admin/Default.aspx){.external} pelas licenças OVHcloud, e rescindir as suas antigas licenças para não continuar a pagá-las em duplicado.
+
+- Tranquilize-se, se dispõe de licenças indisponíveis para compra na OVHcloud, poderá perfeitamente conservar estas licenças ativas na Microsoft.
+
+> [!warning]
+> Como se trata de produtos licenciados, não é possível migrar um "Tenant" Office 365 revendedores de um identificador de cliente OVHcloud para outro.
+>
+
 ### Gerir o serviço Office 365 Revendedor
 
 Depois de criado e disponível o serviço Office 365, poderá geri-lo a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
@@ -56,7 +88,7 @@ Para isso, aceda à secção `Sunrise`{.action}. No menu à esquerda, escolha o 
 
 Surgem as seguintes informações:
 
-- **Nome interno do serviço**: indica o nome do seu serviço. Isto só é visível a partir da Área de Cliente.
+- **Nome interno do serviço**: indica o nome do seu serviço. Isto só é visível a partir da Área de Cliente. Corresponde também ao *Tenant* (que contém o seu grupo de licenças) na Microsoft.
 - **Nome de apresentação do serviço**: permite personalizar o nome de visualização do serviço na sua Área de Cliente.
 - **Criado a**: indica a data de criação do serviço.
 - **Portal de administração Microsoft**: ligação do portal Office que permite administrar as suas subscrições.

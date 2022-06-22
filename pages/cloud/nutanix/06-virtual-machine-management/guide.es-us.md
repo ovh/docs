@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/nutanix/virtual-machine-management/'
 excerpt: Discover virtual machine management in Prism Central
 section: Primeros pasos
-order: 06
+order: 09
 ---
 
 **Last updated 10th May 2022**

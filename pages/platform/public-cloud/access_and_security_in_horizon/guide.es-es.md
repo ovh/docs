@@ -22,7 +22,7 @@ Por ejemplo, puede configurar grupos de seguridad para filtrar las conexiones en
 
 ## Requisitos
 
-- [Conectarse a Horizon](../crear_un_acceso_a_horizon/)
+- [Conectarse a Horizon](../horizon/)
 
 ## Procedimiento
 

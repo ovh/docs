@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 20/04/2021**
+**Última actualización: 17/06/2022**
 
 ## Objetivo
 
@@ -41,8 +41,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 |1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
 |2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con la autorización del propietario|En el actual agente registrador|-|
 |3|Solicitar la transferencia del dominio|Cualquiera que posea el código de transferencia, también con el permiso del propietario|Con el nuevo agente registrador (por ejemplo, OVHcloud)|-|
-|4|Realizar la primera fase de verificación|El propietario del dominio y el administrador informarán al nuevo agente registrador del dominio|Por correo electrónico|Máximo 5 días|
-|5|Realizar la segunda fase de verificación|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
+|4|Validación de la transferencia|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 
 > [!warning]
 >
@@ -102,49 +101,29 @@ También puede completar el pedido con un [alojamiento web](https://www.ovhcloud
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
+#### Seguimiento de la transferencia tras el pedido
+
 Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} y seleccione `Operaciones en curso`{.action}.
 
-### 4. realizar la primera fase de verificación
+> [!primary]
+>
+> Si el código de transferencia no se ha introducido durante el pedido, podrá introducirlo en la ventana `Operaciones en curso`{.action} para validar la transferencia.
 
-Una vez iniciada la transferencia, se realizarán dos fases de verificación. La primera etapa puede realizarse desde el inicio de la transferencia, pero puede tardar hasta cinco días.
+### 4. validación de la transferencia por el actual agente registrador
 
-|¿Quién recibe las solicitudes de verificación?|¿A dónde se envía la solicitud de verificación?|
-|---|---|
-|El propietario del dominio|A la dirección de correo electrónico del propietario, indicada en el Whois (si no está oculta). En caso contrario, se envía a la dirección de correo electrónico del propietario del dominio, indicada durante el proceso de pedido.|
-|El administrador indicado al realizar el pedido en OVHcloud.|A la dirección de correo electrónico que figura en el perfil del administrador en OVHcloud|
-
-Ambas partes validan la transferencia a través de una interfaz de OVHcloud. Los mensajes enviados por correo electrónico contienen un enlace a dicha interfaz.
-
-Nombres de dominio:
-
-En esta etapa, es posible obtener varios resultados, en función de las acciones realizadas por el propietario del dominio y el administrador.
+Una vez validados el pedido y el código de transferencia, el actual agente registrador (que todavía no es OVHcloud) recibirá una solicitud de validación. Aquí también pueden darse varias situaciones.
 
 |Escenarios posibles|Resultado|
 |---|---|
-|El propietario del dominio y el administrador confirman la solicitud de transferencia.|La transferencia pasa a la segunda fase de verificación en un plazo de 24 horas.|
-|Uno de los dos contactos confirma la solicitud y el otro la deja sin responder|La transferencia pasa a la segunda fase de verificación al cabo de cinco días.|
-|Ninguno de los dos contactos responde a la solicitud|La transferencia pasa a la segunda fase de verificación al cabo de cinco días.|
-|Uno de los dos contactos rechaza la solicitud|La transferencia se anula tan pronto como uno de los contactos rechaza la transferencia.|
-
-En caso de que se anule una transferencia, asegúrese de que todas las partes implicadas estén de acuerdo antes de realizar un nuevo intento. Si no ha recibido ningún mensaje de correo electrónico, compruebe que todas las direcciones de correo estén actualizadas.
-
-Este proceso puede reanudarse más adelante desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
-
-### 5. Realizar la segunda fase de verificación
-
-Una vez iniciada la segunda fase, el actual agente registrador (que todavía no es OVHcloud) recibirá una solicitud de validación. Aquí también pueden darse varias situaciones.
-
-|Escenarios posibles|Resultado|
-|---|---|
-|Validación del actual agente registrador.|La transferencia se realiza en un plazo de 24 horas.|
-|El actual agente registrador no responde a la solicitud.|La transferencia se realiza al cabo de cinco días.|
-|El actual agente registrador rechaza la solicitud.|La transferencia se anula una vez notificado el rechazo.|
+|Validación del actual agente registrador.|La transferencia se realiza en un plazo de **24 horas**.|
+|El actual agente registrador no responde a la solicitud.|La transferencia se realiza al cabo de **5 días**.|
+|El actual agente registrador rechaza la solicitud.|La transferencia se **anula** en cuanto se rechaza.|
 
 Si el actual agente registrador rechaza la solicitud, contacte con él para conocer el motivo por el que la rechazó.
 
 El proceso de transferencia puede reanudarse desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Seleccione `Web Cloud`{.action} y acceda a la sección `Dominios`{.action} y haga clic en `Operaciones en curso`{.action}.
 
-### 6. gestionar su dominio con OVHcloud
+### 5. gestionar su dominio con OVHcloud
 
 Una vez finalizado el procedimiento de transferencia, podrá administrar su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, seleccione `Web Cloud`{.action}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 

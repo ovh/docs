@@ -11,7 +11,7 @@ order: 4
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-**Última actualización: 22/06/2020**
+**Última actualización: 17/06/2022**
 
 ## Objetivo
 
@@ -28,18 +28,26 @@ La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento 
 
 ## Requisitos
 
-- El dominio no debe estar en período de redención o de eliminación.
+- El dominio no debe estar en período de **redención** o de eliminación.
 - El dominio no debe ser bloqueado en su registrador.
 - Los datos del propietario deben estar bien actualizados en el [Whois](https://www.nominet.uk/whois/){.external} del dominio.
 - Deberá obtener el código de autorización que se enviará a la dirección de correo electrónico del propietario.
 
+> [!primary]
+>
+> El período de **redención** será de un máximo de 90 días a partir del día de expiración del dominio. En el caso de una transferencia, este período permite restaurar el dominio y así desbloquear la posibilidad de transferirlo.
+
 ## Extensiones afectadas
+
+- .uk
 - .co.uk
+- .ac.uk
+- .gov.uk
 - .me.uk
+- .net.uk
 - .org.uk
-- .ltd.uk
 - .plc.uk
-- .uk.
+- .sch.uk
 
 ## Procedimiento
 
@@ -47,7 +55,7 @@ La transferencia de un dominio .uk (o asimilado) debe respetar un procedimiento 
 
 #### Etapa 1: Modificación del TAG del dominio
 
-Para poder transferir su dominio a OVHcloud, es necesario indicar previamente el TAG de OVHcloud a su registrador actual. El TAG de OVHcloud es "OVH-FR". La lista de TAGS de los diferentes registradores está disponible en el sitio oficial del Registro [Nominet](http://www.nominet.uk/registrar-list){.external}.
+Para poder transferir su dominio a OVHcloud, es necesario indicar previamente el TAG de OVHcloud a su registrador actual. El TAG de OVHcloud es "OVH-FR". La lista de TAGS de los diferentes registradores está disponible en el sitio oficial del Registro [Nominet](https://registrars.nominet.uk/uk-namespace/registrar-agreement/list-of-registrars/){.external}.
 
 > [!primary]
 >

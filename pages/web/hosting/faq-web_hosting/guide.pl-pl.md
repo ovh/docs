@@ -158,7 +158,7 @@ Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z
 
 - Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/#zresetuj-serwery-dns).
 
-- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego usługodawcy na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+- Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](https://docs.ovh.com/pl/hosting/lista-adresow-ip-klastrow-i-hostingow-www/), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 ### Co zrobić, jeśli moja strona wyświetla błąd "Strona nie przekierowuje się poprawnie"?
 

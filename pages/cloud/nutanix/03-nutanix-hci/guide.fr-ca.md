@@ -3,7 +3,7 @@ title: Hyperconvergence Nutanix
 slug: nutanix-hci
 excerpt: "Présentation de la solution d'hyperconvergence Nutanix"
 section: Premiers pas
-order: 03
+order: 04
 ---
 
 **Dernière mise à jour le 22/02/2022**
@@ -15,7 +15,7 @@ Ce document rappelle le fonctionnement d'une solution d'hyperconvergence Nutanix
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
 >
-> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
+> Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
 
 ## Prérequis

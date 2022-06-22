@@ -5,7 +5,7 @@ excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
 section: Gestion via OpenStack
 ---
 
-**Dernière mise à jour le 30/11/2021**
+**Dernière mise à jour le 16/06/2022**
 
 ## Objectif
 
@@ -125,26 +125,24 @@ openstack port set --security-group private 5be009d9-fc2e-4bf5-a152-dab52614b02d
 La configuration par défaut du réseau privé peut être différente selon la région utilisée.
 
 > [!primary]
-> Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme *enabled* mais les règles sont correctement appliquées sur le réseau privé.
+> Dans certaines régions, la propriété « port security » est considérée comme *enabled* même si elle n'applique aucune règle sur le réseau privé. Sur certaines autres régions (en fonction de la version d'OpenStack déployée), la propriété « port security » est vue comme *enabled* et les règles sont correctement appliquées sur le réseau privé.
 > 
 
 En résumé, les régions suivantes exécutent Newton OpenStack release et **aucune règle de pare-feu ne fonctionnera** pour vos réseaux privés, même si la sécurité des ports est activée :
 
-- Beauharnois : BHS1, BHS3, BHS5
-- Francfort : DE1
-- Gravelines : GRA1, GRA3, GRA5, GRA7, GRA11
-- Strasbourg : SBG5
 - Singapour : SGP1
 - Sydney : SYD1
-- Londres : UK1
-- Varsovie : WAW1
 - Hillsboro : US-WEST-OR-1
 - Vint Hill : US-EAST-VA-1
 
 Dans les régions suivantes (exécutant la version Stein OpenStack), les règles de pare-feu pour les réseaux privés **fonctionneront** comme prévu :
 
-- Gravelines : GRA9
-- Strasbourg : SBG7
+- Beauharnois : BHS1, BHS3, BHS5
+- Francfort : DE1
+- Gravelines : GRA1, GRA3, GRA5, GRA7, GRA9, GRA11
+- Strasbourg : SBG5, SBG7
+- Londres : UK1
+- Varsovie : WAW1
 
 OVHcloud va progressivement mettre à niveau toutes les régions de Newton vers Stein, afin que la fonctionnalité « port security » soit disponible.
 
@@ -161,9 +159,15 @@ False
 
 La mgration suivra le processus ci-dessous :
 
-- GRA9 et SBG7 rejoindront les autres régions avec le « port security » par défaut en **disabled**.
 - Les règles de firewall pour les nouveaux ports ne seront pas appliquées tant que vous n'aurez pas activé la propriété « port security » sur le nouveau port. Rien ne change pour les ports existants.
 - Les régions OpenStack passeront à la version Stein.
+- Les regions OpenStack en version Stein passeront sur une nouvelle version d'OpenVSwitch.
+
+> [!primary]
+> À partir de cette étape, pour les utilisateurs de Terraform, il est nécessaire de forcer le paramétrage du [port security à "false"](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#port_security_enabled){.external} pour que les playbooks puissent fonctionner.
+>
+
+- Vous pourrez activer « port security » sur les régions Stein.
 - Le « port security » par défaut sera modifié en **activé** (une communication globale sera envoyée en temps voulu).
 - Les règles de firewall fonctionneront pour les nouveaux ports. Rien ne change pour les ports existants.
 - L'option permettant d'activer la propriété « port security » sur les ports existants sera activée.
