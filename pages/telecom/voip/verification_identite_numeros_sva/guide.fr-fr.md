@@ -6,7 +6,7 @@ section: Administratif
 order: 4
 ---
 
-**Dernière mise à jour le 22/02/2022**
+**Dernière mise à jour le 22/06/2022**
 
 ## Objectif
 
@@ -20,7 +20,9 @@ OVHcloud, en partenariat avec Lemonway&#174;, vous accompagne dans la mise en oe
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} :
+
+![espace client Telecom VoIP](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-02-fr-voip.png){.thumbnail}
 
 ## En pratique
 
@@ -28,7 +30,7 @@ OVHcloud, en partenariat avec Lemonway&#174;, vous accompagne dans la mise en oe
 > Afin d'exploiter un numéro spécial SVA, il est obligatoire de fournir l'ensemble des justificatifs requis. Faute de validation de ces documents, vous ne pourrez pas exploiter votre numéro.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez votre groupe de téléphonie.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} puis sélectionnez votre groupe de téléphonie.
 
 Que vous commandiez un nouveau numéro ou souhaitiez valider votre identité pour un numéro déjà en exploitation, cliquez  sur l'onglet `Commande de numéros`{.action} ou sur `Commander un numéro`{.action} dans le menu « Je veux... ».
 
