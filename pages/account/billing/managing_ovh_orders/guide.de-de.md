@@ -83,7 +83,7 @@ Nach Erstellung Ihres Bestellscheins können Sie Ihre Bestellung über Ihr [OVHc
 
 ![Bestellverfolgung](images/order05b.png){.thumbnail}
 
-Das folgende Fenster wird angezeigt, um den Status in vier Schritten anzuzeigen.
+Das folgende Fenster wird angezeigt, um den Status anhand von vier Schritten anzuzeigen.
 
 ![Bestellverfolgung](images/order06.png){.thumbnail}
 
@@ -95,30 +95,30 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 
 > [!warning]
 >
-> Das Widerrufsrecht gilt nur für Privatpersonen und gilt nur für Neubestellungen. Sie können es also nicht geltend machen:
+> Das Widerrufsrecht gilt nur für Privatpersonen und gilt nur für Neubestellungen. Sie können es also nicht in den folgenden Fällen geltend machen:
 >
-> - für Verlängerungen;
-> - wenn Ihre OVHcloud Kundenkennung von einem anderen [Typ als Privatperson](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/#account-typ-andern) ist.
+> - Verlängerungsbestellungen
+> - Ihre OVHcloud Kundenkennung ist nicht vom Typ [Privatperson](https://docs.ovh.com/de/customer/alles_uber_ihre_ovh_kundenkennung/#account-typ-andern)
 >
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, sobald der Bestellschein ausläuft.
 >
-> Schließlich gilt sie nicht für bestimmte Dienstleistungen (insbesondere [Domainnamen](https://www.ovhcloud.com/de/domains/) und [SSL-Sectigo-Zertifikate](https://www.ovhcloud.com/de/web-hosting/options/ssl/)).
+> Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](https://www.ovhcloud.com/de/domains/) und [Sectigo SSL-Zertifikate](https://www.ovhcloud.com/de/web-hosting/options/ssl/)).
 >
 
-Wenn die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, kann es direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in Kraft gesetzt werden:
+Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausgeübt werden:
 
 - Klicken Sie auf `Dashboard`{.action}, dann auf `Meine Bestellungen anzeigen`{.action} und dann `...`{.action} vor Ihrer Bestellung.
 - Wählen Sie `Die Bestellung stornieren`{.action}.
 
 ![Stornierung einer Bestellung](images/cancelorder1.png){.thumbnail}
 
-Bestätigen Sie nun die Stornierung der Bestellung, indem Sie ein Häkchen bei `Ja, ich möchte diese Bestellung stornieren`{.action} setzen und dann auf den Bestätigungsbutton klicken.
+Bestätigen Sie nun die Stornierung der Bestellung, indem Sie einen Haken bei `Ja, ich möchte diese Bestellung stornieren`{.action} setzen und dann auf den Bestätigungsbutton klicken.
 
 ![Stornierung bestätigen](images/cancelorder2.png){.thumbnail}
 
 > [!primary]
 >
-> Die ursprünglich gezahlten Beträge werden innerhalb von 30 Tagen nach dem Widerrufsantrag nach Abzug der Tage der verbrauchten Dienste pro rata temporis erstattet.
+> Die ursprünglich gezahlten Beträge werden innerhalb von 30 Tagen nach dem Widerrufsantrag nach Abzug der genutzten Tage der Dienste anteilig erstattet.
 >
 
 ## Weiterführende Informationen

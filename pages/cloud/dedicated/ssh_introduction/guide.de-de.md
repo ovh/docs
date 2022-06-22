@@ -140,7 +140,7 @@ Speichern Sie die Änderungen und verlassen Sie den Editor. Der neue Schlüssel-
 
 Unter Windows werden ebenfalls der Pfad der Datei `known_hosts` und die zu löschende Zeile angezeigt, zum Beispiel:
 
-```powershell
+```console
 Offending ECDSA key in C:\\Users\\Name_Windows_User/.ssh/known_hosts:3
 ```
 
