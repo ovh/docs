@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVGgateway** servant à d'accès INTERNET par une passerelle sous **PFSense**.
+Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVHgateway** servant à d'accès INTERNET par une passerelle sous le systême d'exploitation **PFSense**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -29,12 +29,12 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## En pratique
 
-Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l'autre en FRANCE.
+Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l'autre en FRANCE, tous les deux dans des datacenters d'OVHcloud, ils utilisent un plan IP différent que voici :
 
-Le cluster du CANADA est sur le réseau privé en 192.168.10.0/24 et celui de la FRANCE sur le réseau privé en 192.168.0.0/24.
+Cluster au CANADA : 192.168.10.0/24
+Cluster en FRANCE : 192.168.0.0/24
 
-Nous allons remplacer la machine virtuelle **OVHgateway** par une machine virtuelle **GW-PFSENSE** sur chacun des clusters pour fournir l'accès INTERNET à chacun des clusters Nutanix et permettre l'établissement d'un tunnel IPSEC sécurisé entre ces deux clusters, ce qui permettra par la suite de faire des réplications inter-clusters.
-
+Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle sous **Pfsense* qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
 
 ### Configuration de la passerelle au CANADA
 
@@ -57,13 +57,14 @@ Créez une machine virtuelle avec ces paramètres :
 - **CPU** : `2 vCPU`
 - **Réseau** : `deux cartes réseaux sur le réseau de AHV: **Base**`
 
-Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer une machine virtuelle.
+Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
 #### Arrêt de la machine virtuelle **OVH-GATEWAY**
 
-Pour éviter des adresses IP en double sur le réseau il faut tout d'abord arrêter la machine virtuelle **OVHgateway** 
+Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway**
+
 Au travers de **Prism Central** cliquez en haut à gauche sur le `menu principal`{.action}.
 
 ![Arrêt OVHGateway 01](images/01-stop-ovhgateway01.png){.thumbnail}
@@ -82,14 +83,16 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 #### Récupération de l'adresse publique sur l'espace client d'OVHcloud <a name="getipcustomerportal"></a>
 
-Avant de lancer l'installation de **PFSENSE** il faut récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
+Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
-Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse se trouvant dans `IPFO`.
+Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
 
-L'adresse affichée est un pack de 4 adresses avec un masque à /30 ce qui ne permet que l'utilisation d'une adresse comme indiqué ci-dessous :
+l'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et l'autre sert de passerelle pour aller sur Internet sur la machine virtuelle **OVHgateway**.
+
+Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé
@@ -103,9 +106,9 @@ Par exemple si l'adresse affichée sur le site client est 123.123.123.4 il faut 
 - **123.123.123.5** pour l'adresse de l'interface **WAN** 
 - **123.123.123.6** pour la passerelle sur l'interface **WAN**.
 
-#### Démarrage de la machine virtuelle **GW-pfsense**
+#### Démarrage de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-Pfsense`{.action}.
+Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-PFSENSE`{.action}.
 
 ![Start GATEWAY PFSENSE ](images/02-start-gatewaypfsense01.png){.thumbnail}
 
@@ -123,7 +126,7 @@ Positionnez-vous sur `Accept` avec la touche `tabulation`{.action} et appuyez su
 
 ![PFSENSE Installation 01](images/03-install-pfsense01.png){.thumbnail}
 
-Choisissez `Install` positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
+Choisissez `Install`, positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
 ![PFSENSE Installation 02](images/03-install-pfsense02.png){.thumbnail}
 
@@ -139,15 +142,15 @@ Positionnez-vous sur `Select` avec la touche `tabulation`{.action} et appuyez su
 
 ![PFSENSE Installation 05](images/03-install-pfsense05.png){.thumbnail}
 
-Gardez `stripe` positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
+Gardez `stripe`, positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
 ![PFSENSE Installation 06](images/03-install-pfsense06.png){.thumbnail}
 
-Sélectionnez avec la barre `Espace` NUTANIX VDISK ensuite allez sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
+Sélectionnez avec la barre `espace` NUTANIX VDISK ensuite allez sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
 ![PFSENSE Installation 07](images/03-install-pfsense07.png){.thumbnail}
 
-ALlez sur `YES` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
+Allez sur `YES` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
 ![PFSENSE Installation 08](images/03-install-pfsense08.png){.thumbnail}
 
@@ -237,9 +240,9 @@ Saisissez `n`{.action} et appuyez sur la touche `entrée`{.action} à la demande
 
 ![Configure PFSENSE 08](images/04-configureip-pfsense08.png){.thumbnail}
 
-Saisissez l'`Adresse publique avec le masque`{.action} et appuyez sur la touche `entrée`{.action} comme par exemple **123.123.123.4/30**.
+Saisissez l'`Adresse publique avec le masque`{.action} et appuyez sur la touche `entrée`{.action} comme par exemple **123.123.123.5/30**.
 
-Ensuite saisissez l'`adresse de la passerelle publique`{.action} et appuyer sur la touche `entrée`{.action} comme par exemple **123.123.123.5**.
+Ensuite saisissez l'`adresse de la passerelle publique`{.action} et appuyer sur la touche `entrée`{.action} comme par exemple **123.123.123.6**.
 
 ![Configure PFSENSE 09](images/04-configureip-pfsense09.png){.thumbnail}
 
@@ -334,14 +337,14 @@ Vérifiez que vous êtes sur l'onglet `WAN` et cliquez sur le bouton `Add`{.acti
 
 ![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
-Choisissez ces options dans **Edit Firewall Rule**  :
+Choisissez ces options dans **Edit Firewall Rule** :
 
 * **Action** : `Pass`
 * **Interface** : `WAN`
 * **Address Family** : `IPv4`
 * **Protocol** : `TCP`
 
-Prenez comme **Source** `Single host or alias` et saisissez `l'adresse publique` autorisée à se connecter au pare-feu **Pfsense**.
+Prenez dans **Source** `Single host or alias` et saisissez `l'adresse publique` autorisée à se connecter au pare-feu **Pfsense**.
 
 Cliquez sur la `barre de défilement`{.action} pour aller en bas de la fenêtre.
 
@@ -404,8 +407,9 @@ Cliquez sur `Generate new Pre-Shared Key`{.action} pour générer une clé pré-
 > [!primary]
 > 
 > Notez ou copiez la clé, elle servira pour la configuration du VPN sur la passerelle en FRANCE.
-
-Notez les informations contenues dans `Encryption Algorithm`
+> 
+> conserver les informations contenues dans `Encryption Algorithm`
+>
 
 Ensuite faites défiler la fenêtre à l'aide de la `barre de défilement`{.action}.
 
@@ -437,7 +441,10 @@ Faites défilez la fenêtre avec la `barre de défilement`{.action}.
 
 ![Create VPN from CANADA 09](images/08-configure-vpn-from-canada09.png){.thumbnail}
 
-Notez les paramètres de chiffrements et faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
+> [!primary]
+> 
+> Notez les paramètres de chiffrements et faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
+>
 
 ![Create VPN from CANADA 10](images/08-configure-vpn-from-canada10.png){.thumbnail}
 
@@ -485,8 +492,7 @@ Cliquez sur `Apply Changes`{.action}.
 
 ![Create IPSEC firewall rule CANADA 06](images/09-addipsecrule-from-canada06.png){.thumbnail}
 
-Le paramétrage coté CANADA est terminé.
-
+Le paramétrage sur la passerelle au CANADA est terminé.
 
 #### Configuration du site en FRANCE
 
