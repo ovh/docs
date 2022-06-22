@@ -6,7 +6,7 @@ section: Website optimisation
 order: 2
 ---
 
-**Last updated 22th June 2022**
+**Last updated 22nd June 2022**
 
 ## Objective
 
@@ -67,7 +67,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 >
 > **Special case**
 >
-> If you wish to change your plan [Start10M](https://docs.ovh.com@hosting/activer-start10m/), only [Personal plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) will be available. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
+> If you wish to upgrade your [Start10M plan](https://docs.ovh.com/en-ie/hosting/activer-start10m/), only the [Personal plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) will be available. However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 ### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
 
