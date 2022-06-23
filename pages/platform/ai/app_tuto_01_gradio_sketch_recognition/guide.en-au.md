@@ -14,7 +14,7 @@ The purpose of this tutorial is to deploy an application for sketch recognition 
 
 The use case is **handwritten digits recognition**, based on the [MNIST dataset](http://yann.lecun.com/exdb/mnist/).
 
-In order to do this, you will use [Gradio](https://gradio.app/), an open-source Python library which is a quick way to expose and use a Machine Learning models. You will also learn how to build and use a custom Docker image for a Gradio application.
+In order to do this, you will use [Gradio](https://gradio.app/), an open-source Python library which is a quick way to expose and use Machine Learning models. You will also learn how to build and use a custom Docker image for a Gradio application.
 
 Overview of the app:
 
@@ -22,11 +22,11 @@ Overview of the app:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au);
-- An AI Apps project created inside a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account;
-- A [user for AI Apps](https://docs.ovh.com/au/en/publiccloud/ai/users/);
-- [Docker](https://www.docker.com/get-started) installed on your local computer;
-- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+- An AI Apps project created inside a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account.
+- A [user for AI Apps](https://docs.ovh.com/au/en/publiccloud/ai/users/).
+- [Docker](https://www.docker.com/get-started) installed on your local computer.
+- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 - You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model.
 
 ## Instructions
@@ -65,7 +65,7 @@ head = (
 ref = "Find the whole code [here](ADD github link)."
 ```
 
-Specify the input images size and the classes name.
+Specify the input images size and the classes names.
 
 ```python
 img_size = 28
@@ -82,7 +82,7 @@ Load the previously trained model for handwritten digits classification.
 
 > [!primary]
 >
-> Here you will use your trained model, then save it in an Object Container. Click [here](https://docs.ovh.com/au/en/ai-training/data-cli/) to learn more about Object Storage.
+> Here you will use your trained model, then save it in an Object Storage container. Click [here](https://docs.ovh.com/au/en/ai-training/data-cli/) to learn more about Object Storage.
 >
 
 ```python
@@ -123,7 +123,7 @@ opencv-python-headless==4.6.0.66
 
 ### Write the Dockerfile for the application
 
-Your Dockerfile should start with the the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.7` image:
+Your Dockerfile should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `python:3.7` image:
 
 ```console
 FROM python:3.7
@@ -148,7 +148,7 @@ Add your Python file and the image to the `workspace`:
 ADD app.py mnist-classes.png /workspace/
 ```
 
-Give correct access rights to **ovhcloud user** (`42420:42420`):
+Give correct access rights to the **ovhcloud user** (`42420:42420`):
 
 ```console
 RUN chown -R 42420:42420 /workspace
@@ -199,7 +199,7 @@ Once started, your application should be available on `http://localhost:8080`.
 
 > [!warning]
 >
-> The shared registry of AI Apps should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Apps should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](https://docs.ovh.com/au/en/publiccloud/ai/training/add-private-registry/).
 >
 
 Find the address of your shared registry by launching this command:
@@ -243,7 +243,7 @@ To launch your Gradio app, you need to attach **1 volume** to this app. It conta
 
 > [!primary]
 >
-> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the third volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Container.
+> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the third volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Storage container.
 >
 
 If you want your app to be accessible without the need to authenticate, specify it as follows.
