@@ -112,10 +112,7 @@ hooks:
 You can:
 
 - Add it to the build hook to make that version available in the build.
-
-- Control the specific versions to be installed with [environment variables](../../development-variables),
-
-  meaning you can also have different versions in different environments.
+- Control the specific versions to be installed with [environment variables](../../development-variables), meaning you can also have different versions in different environments.
 - Cache `nvm` so you don't need to download it each time.
 
 
