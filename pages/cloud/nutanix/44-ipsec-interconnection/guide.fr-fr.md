@@ -7,7 +7,7 @@ order: 02
 hidden: true
 ---
 
-**Dernière mise à jour le 22/06/2022**
+**Dernière mise à jour le 23/06/2022**
 
 ## Objectif
 
@@ -44,11 +44,11 @@ Téléchargez l'image iso de l'installation de **pfsense** à partir de ce lien 
 
 Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **pfsense** dans votre cluster NUTANIX.
 
-#### Création de la machine virtuelle **gw-pfsense**
+#### Création de la machine virtuelle **GW-PFSENSE**
 
 Créez une machine virtuelle avec ces paramètres :
 
-- **Nom** : `gw-pfsense`
+- **Nom** : `GW-PFSENSE`
 - **Stockage1** : `60 Go HDD` 
 - **Stockage2** : `Un lecteur de DVD connecté à l'image ISO de pfsense`
 - **RAM** : `4 Go` 
@@ -90,7 +90,7 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 
 l'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
 
-Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-pfsense**
+Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé
@@ -104,9 +104,9 @@ Par exemple si l'adresse **IPFO** affichée sur le site client est 123.123.123.4
 - **123.123.123.5** pour l'adresse de l'interface **WAN** 
 - **123.123.123.6** pour la passerelle sur l'interface **WAN**.
 
-#### Démarrage de la machine virtuelle **GW-pfsense**
+#### Démarrage de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-pfsense`{.action}.
+Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-PFSENSE`{.action}.
 
 ![Start GATEWAY pfsense ](images/02-start-gatewaypfsense01.png){.thumbnail}
 
@@ -160,9 +160,9 @@ Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 
 ![pfsense Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
-#### Ejection du CDROM pfsense de la machine virtuelle **GW-pfsense**
+#### Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-pfsense**.
+Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -202,7 +202,7 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN avec les informations de cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
+- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
 
 - Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
 
@@ -362,6 +362,9 @@ Cliquez sur `Apply Change`{.action} pour activer la règle.
 
 ![Autorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
+L'interface d'administration de **pfsense** et accessible depuis internet sur le réseau autorisé avec cette url https://adressewan comme par exemple https://123.123.123.5.
+
+
 ### Configuration de la passerelle en FRANCE
 
 L'installation de la passerelle en **FRANCE** est identique à la passerelle du CANADA sauf pour ces paramètres :
@@ -369,7 +372,7 @@ L'installation de la passerelle en **FRANCE** est identique à la passerelle du 
 * **Adresse privée en FRANCE** : 192.168.0.254 avec un masque en /24
 * **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
 
-Après avoir eu toutes ces informations vous pouvez relire le chapitre [Installation de la passerelle au CANADA](#configurecanada) pour vous aider dans l'installation de la passerelle sur le site en FRANCE.
+Vous pouvez vous aider de ce chapitre [Installation de la passerelle au CANADA](#configurecanada) pour faire l'installation sur le site en FRANCE.
 
 ### Mise en place du VPN IPSEC
 
