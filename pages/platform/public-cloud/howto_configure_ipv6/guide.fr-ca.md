@@ -71,7 +71,7 @@ Considérant que votre interface est eth0, la configuration à rajouter devrait 
 
 Fichier à modifier (avec privilèges su) : `/etc/network/interfaces`
 
-```
+```console
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -83,7 +83,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Voici un exemple concret :
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -108,7 +108,7 @@ Considérant que votre interface est eth0, la configuration à rajouter devrait 
 
 Fichier à modifier (avec privilèges su) : `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -132,13 +132,13 @@ network:
 
 Vous pouvez tester votre configuration à l’aide de la commande suivante :
 
-```
+```bash
 netplan try
 ```
 
 Si elle est correcte, appliquez-la à l’aide de la commande suivante :
 
-```
+```bash
 netplan apply
 ```
 
@@ -148,7 +148,7 @@ Considérant que votre interface est eth0, la configuration devrait ressembler �
 
 Fichier à modifier (avec privilèges sudo) : `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -156,7 +156,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Voici un exemple concret :
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -190,7 +190,7 @@ Dans un premier temps, [passez votre instance dans le mode de secours rescue-pro
 
 Inspirez-vous ensuite des commandes suivantes pour configurer votre IP de manière non-persistante :
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -198,7 +198,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Testez de nouveau votre réseau via un ping6 par exemple :
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Si votre instance répond, il est probable qu'une des étapes de votre configuration initiale n'ait pas été rigoureusement suivie.

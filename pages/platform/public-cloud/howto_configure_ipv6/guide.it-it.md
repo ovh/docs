@@ -68,7 +68,7 @@ Considerando che la tua interfaccia è eth0, la configurazione da aggiungere dov
 
 File da modificare (con privilegi su): `/etc/network/interfaces`
 
-```
+```console
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -80,7 +80,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Per esempio:
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -105,7 +105,7 @@ Considerando che la tua interfaccia è eth0, la configurazione da aggiungere dov
 
 File da modificare (con privilegi su): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -145,7 +145,7 @@ Se la tua interfaccia è eth0, la configurazione dovrebbe essere questa:
 
 File da modificare (con provilegi sudo): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -153,7 +153,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Per esempio:
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -187,7 +187,7 @@ In un primo momento [riavvia la tua istanza in modalità di ripristino Rescue-pr
 
 Prendi spunto dai comandi mostrati qui di seguito per configurare il tuo IP in maniera non-persistente:
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -195,7 +195,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Fai un test della tua connessione tramite un ping6, ad esempio:
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Se la tua istanza risponde, significa che uno degli step della configurazione iniziale non è stato seguito accuratamente.

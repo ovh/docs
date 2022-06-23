@@ -72,7 +72,7 @@ Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende
 
 Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/network/interfaces`
 
-```
+```console
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -84,7 +84,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Hier ein konkretes Beispiel:
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -109,7 +109,7 @@ Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende
 
 Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -149,7 +149,7 @@ Ausgehend von eth0 als der Bezeichnung des Interface, sollte die hinzuzufügende
 
 Anzupassende Datei (mit erhöhten Berechtigungen / root): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -157,7 +157,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Hier ein praktisches Beispiel:
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -191,7 +191,7 @@ Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](../umst
 
 Nutzen Sie nun die nachfolgenden Befehle, um Ihre IP-Adresse nicht-persistent zu konfigurieren, wobei Sie die Platzhalter mit Ihren Spezifikationen ersetzen:
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -199,7 +199,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Prüfen Sie Ihr Netzwerk erneut mit "ping6", zum Beispiel:
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Wenn Ihre Instanz antwortet, wurde wahrscheinlich ein Schritt in Ihrer ursprünglichen Konfigurierung nicht korrekt ausgeführt.

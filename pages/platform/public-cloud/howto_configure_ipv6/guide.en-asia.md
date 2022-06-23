@@ -110,7 +110,7 @@ If we assume that your interface is eth0, the configuration should look like thi
 
 File to edit (with su privileges): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -133,13 +133,13 @@ network:
 
 You can test your configuration using this command:
 
-```
+```bash
 netplan try
 ```
 
 If it is correct, apply it using the following command:
 
-```
+```bash
 netplan apply
 ```
 
@@ -149,7 +149,7 @@ If we assume that your interface is eth0, the configuration should look like thi
 
 File to edit (with sudo privileges): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -157,7 +157,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Here is a concrete example:
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -191,7 +191,7 @@ Firstly, [put your instance into rescue-pro mode](../put_an_instance_in_rescue_m
 
 Next, use the template commands below to configure your IP non-persistently, replacing ‘YOUR_IPV6’, ‘IPV6_PREFIX’, etc. with your own details:
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -199,7 +199,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Test your network again via a ping6, for example:
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 If your instance responds, it is likely that there is an error in one of the steps taken for your initial configuration.

@@ -70,7 +70,7 @@ Zakładając, że Twój interfejs sieciowy to eth0, należy dodać konfigurację
 
 Plik do edycji (z uprawnieniami su): `/etc/network/interfaces`
 
-```
+```console
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -82,7 +82,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Oto konkretny przykład:
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -107,7 +107,7 @@ Zakładając, że Twój interfejs sieciowy to eth0, należy dodać konfigurację
 
 Plik do edycji (z uprawnieniami su): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -147,7 +147,7 @@ Zakładając, że Twój interfejs to eth0, konfiguracja powinna wyglądać mniej
 
 Plik do edycji (z uprawnieniami sudo): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -155,7 +155,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Oto konkretny przykład:
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -189,7 +189,7 @@ Najpierw należy [przełączyć instancję na tryb awaryjny rescue-pro](https://
 
 Następnie skonfiguruj tymczasowy adres IP w oparciu o poniższe przykładowe polecenia:
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -197,7 +197,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Przetestuj ponownie sieć, np. za pomocą polecenia ping6:
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Jeśli Twoja instancja odpowiada, istnieje duże prawdopodobieństwo, że jeden z etapów konfiguracji początkowej nie został prawidłowo przeprowadzony.

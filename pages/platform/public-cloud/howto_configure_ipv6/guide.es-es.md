@@ -71,7 +71,7 @@ Si su interfaz es «eth0», la configuración tendrá que ser parecida a la sigu
 
 Archivo a modificar (con privilegios su): `/etc/network/interfaces`
 
-```
+```console
 iface eth0 inet static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -83,7 +83,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Veamos a continuación un ejemplo concreto:
 
-```
+```console
 iface eth0 inet static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -108,7 +108,7 @@ Si su interfaz es «eth0», la configuración tendrá que ser parecida a la sigu
 
 Archivo a modificar (con privilegios su): `/etc/netplan/51-cloud-init-ipv6.yaml`
 
-```
+```yaml
 network:
     ethernets:
         eth0:
@@ -132,13 +132,13 @@ network:
 
 Para probar su configuración, utilice el siguiente comando:
 
-```
+```bash
 netplan try
 ```
 
 Si es correcta, puede aplicarla con el siguiente comando:
 
-```
+```bash
 netplan apply
 ```
 
@@ -148,7 +148,7 @@ Si su interfaz es «eth0», la configuración tendrá que ser parecida a la sigu
 
 Archivo a modificar (con privilegios root): `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -156,7 +156,7 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Veamos a continuación un ejemplo concreto:
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
@@ -190,7 +190,7 @@ En primer lugar, [ponga su instancia en modo de rescate](https://docs.ovh.com/es
 
 Utilice los siguientes comandos para configurar su IP de forma no persistente:
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -198,7 +198,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Vuelva a probar su red mediante un ping6, por ejemplo:
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Si la instancia responde, es posible que no haya seguido correctamente alguno de los pasos de la configuración inicial.
