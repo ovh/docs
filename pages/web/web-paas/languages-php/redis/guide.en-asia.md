@@ -4,13 +4,13 @@ slug: redis
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 2nd June 2022**
 
 
 
 ## Objective  
 
-[Redis](../../configuration-services/redis) is a popular structured key-value service, supported by Web PaaS.  It's frequently used for caching.
+Redis is a popular structured key-value service, supported by Web PaaS.  It's frequently used for caching.
 
 The [PhpRedis](https://github.com/phpredis/phpredis) extension is available on Web PaaS's PHP container images.  However, the extension has been known to break its API between versions when removing deprecated functionality.  The version available on each application image is the latest available at the time that PHP version was built, which if your application is very sensitive to PhpRedis versions may not be ideal.
 
@@ -20,7 +20,7 @@ Do *not* use this approach unless you really need to.  Using the provided PhpRed
 
 ## Using the Redis builder script
 
-1\. Copy the following script into a file named `install-redis.sh` in your application root (as a sibling of your `.platform.app.yaml` file).
+1\. Copy the following script into a file named `install-redis.sh` in your app root
 
 
 ```bash
@@ -117,9 +117,9 @@ There is no need to declare the extension in the `runtime` block.  That is only 
 
 3\. Compiles the extension.
 
-4\. Copies the resulting `redis.so` file to your application root.
+4\. Copies the resulting `redis.so` file to your app root.
 
-5\. Adds a line to the `php.ini` file in your application root to enable the extension, creating the file if necessary.
+5\. Adds a line to the `php.ini` file in your app root to enable the extension, creating the file if necessary.
 
 
 If the script does not find a `$PLATFORM_CACHE_DIR` directory defined, it exits silently.  That means if you run the build hook locally it will have no effect.
