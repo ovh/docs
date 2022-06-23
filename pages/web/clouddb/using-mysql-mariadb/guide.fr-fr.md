@@ -8,14 +8,13 @@ order: 02
 
 Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vos bases de données en toute simplicité !
 
-
 ## Généralités
 
 ### Prérequis
 
 - Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-- Avoir consulté le [guide de démarrage de CloudDB](../debuter-avec-clouddb/)
+- Avoir consulté le [guide de démarrage de CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 ### Qu'est-ce qu'une base de donnees MySQL ?
 MySQL est un système de gestion de bases de données relationnelles développé pour des performances élevées en lecture, contrairement à d'autres systèmes.
@@ -51,17 +50,15 @@ Afin de vous connecter à votre base, assurez-vous de :
 - Disposer du mot de passe de votre instance CloudDB
 - Disposer du nom de votre base de données
 
-Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/manager/web/){.external}.
+Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Un guide est également disponible : [Premiers pas avec le service CloudDB](../starting_with_clouddb/guide.fr-fr.md){.ref}
-
+Un guide est également disponible : [Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 ### Connexion en ligne de commande
 
 ```bash
 mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
 ```
-
 
 ### Connexion en script PHP
 
@@ -71,10 +68,8 @@ mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_l
 3. ?>
 ```
 
-
 ### Connexion par logiciel (SQuirreL SQL)
 - Lancez SQuirreL SQL et cliquez sur `Aliases`{.action}, puis sur `+`{.action}
-
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
 
@@ -85,19 +80,15 @@ mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_l
     - **User Name** : Indiquez le nom d'utilisateur
     - **Password** : Indiquez le mot de passe
 
-
 ![config connection](images/2.PNG){.thumbnail}
 
 - Validez à nouveau avec le bouton `Connect`{.action}
-
 
 ![valid connection](images/3.PNG){.thumbnail}
 
 Vous êtes maintenant bien connecté à votre base de données :
 
-
 ![config connection](images/4.PNG){.thumbnail}
-
 
 ### Connexion par phpMyAdmin
 Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur CloudDB et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
