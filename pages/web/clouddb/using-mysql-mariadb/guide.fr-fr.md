@@ -69,6 +69,7 @@ mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_l
 ```
 
 ### Connexion par logiciel (SQuirreL SQL)
+
 - Lancez SQuirreL SQL et cliquez sur `Aliases`{.action}, puis sur `+`{.action}
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
