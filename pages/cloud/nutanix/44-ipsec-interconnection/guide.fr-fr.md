@@ -21,10 +21,9 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## Prérequis
 
-- Disposer de plusieurs clusters Nutanix chez OVHcloud :
+- Disposer de deux clusters Nutanix chez OVHcloud dans des sites différents
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos clusters via Prism Central.
-- Avoir les deux clusters sur deux sites distants physiquement.
 - Utiliser un plan IP différent par cluster.
 
 ## En pratique
@@ -88,7 +87,7 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
 
-l'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
+L'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
@@ -398,7 +397,7 @@ Choisissez ces informations :
 * **Key Exchange version** : `IKEv2`
 * **Internet Protocol** : `IPv4`
 * **Interface**  : `WAN`
-* **Remote Gateway** : `Adresse publique du pfsense distant en FRANCE`
+* **Remote Gateway** : `Adresse publique de la machine virtuelle **pfsense** se trouvant en FRANCE`
 
 Ensuite faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
 
@@ -516,7 +515,7 @@ Choisissez ces informations :
 * **Key Exchange version** : `IKEv2`
 * **Internet Protocol** : `IPv4`
 * **Interface**  : `WAN`
-* **Remote Gateway** : `Adresse publique du pfsense distant au CANADA`
+* **Remote Gateway** : `Adresse publique de la machine virtuelle **pfsense** se trouvant au CANADA`
 
 Ensuite faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
 
