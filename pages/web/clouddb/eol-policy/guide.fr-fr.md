@@ -14,7 +14,7 @@ Les bases de données managées OVHcloud proposent plusieurs Systèmes de Gestio
 
 ## Prérequis
 
-Disposer d'une ou plusieurs des offres suivantes :
+- Utiliser une des bases de données incluses avec un [Hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 - Une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Un pack de base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/).
 

@@ -8,7 +8,7 @@ section: 'Zasoby techniczne'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 07/01/2022**
+**Ostatnia aktualizacja z dnia 22/06/2022**
 
 ## Wprowadzenie
 
@@ -20,10 +20,9 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 
 Posiadanie jednej lub kilku z następujących ofert:
 
-- [Hosting www](https://www.ovhcloud.com/pl/web-hosting/) z bazami danych.
-- Pakiet baz danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
-- Prywatny serwer [SQL](https://www.ovhcloud.com/pl/web-hosting/options/).
-- Serwer [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/).
+- Korzystanie z jednej z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna [instancja CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawarta w usłudze[hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 ## W praktyce
 

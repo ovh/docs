@@ -4,7 +4,7 @@ slug: managed-db-life-cycle-policy
 section: 'Technical resources'
 ---
 
-**Last updated 7th January 2022**
+**Last updated 22nd July 2022**
 
 ## Objective
 
@@ -14,12 +14,9 @@ OVHcloud managed databases offer several Database Management Systems (DBMS), suc
 
 ## Requirements
 
-You must have one or more of the following options:
-
-- A [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes databases
-- A [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) database pack
-- A [Private SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/) server
-- A [Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server
+- Use one of the included databases with a [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+- A [CloudDB instance](https://www.ovh.com/en-gb/cloud/cloud-databases/){.external} (included in a [Performance Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/) offer)
+- A database pack [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/).
 
 ## Instructions
 
