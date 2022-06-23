@@ -6,17 +6,17 @@ section: Configuration
 order: 2
 ---
 
-**Dernière mise à jour le 03/02/2022**
+**Dernière mise à jour le 23/06/2022**
 
 ## Objectif
 
-Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress, Joomla!.
+Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress ou Joomla!.
 
 **Découvrez comment créer une base de données sur votre serveur de bases de données.**
 
 ## Prérequis
 
-- Disposer d'une [offre Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -73,7 +73,7 @@ Voici la description des 3 types de droits proposés :
 
 > [!primary]
 > 
-> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits **«_Administrateur_»** pourra faire du **DLL** (Data_Definition_Language) et du **DML** (Data_Manipulation_Language) alors qu'un utilisateur ayant les droits **«_Lecture_/_Ecriture_»** ne fera uniquement que du **DML** (Data_Manipulation_Language)
+> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits **«_Administrateur_»** pourra faire du **DLL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits **«_Lecture_/_Ecriture_»** ne fera uniquement que du **DML** (Data Manipulation Language)
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 
