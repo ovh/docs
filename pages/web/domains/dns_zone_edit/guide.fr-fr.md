@@ -71,7 +71,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
-**CNAME** : Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
+**CNAME (Canonical NAME)** : Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 
 > [!alert]
 >
