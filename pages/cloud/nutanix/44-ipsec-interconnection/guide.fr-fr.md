@@ -61,7 +61,7 @@ Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines vir
 
 #### Arrêt de la machine virtuelle **OVH-GATEWAY**
 
-Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfsense**
+Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfsense**.
 
 Au travers de **Prism Central** cliquez en haut à gauche sur le `menu principal`{.action}.
 
@@ -120,7 +120,7 @@ Cliquez sur `Launch console`{.action}.
 
 #### Installation de **pfsense**
 
-Positionnez-vous sur `Accept` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
+Appuyez sur la touche `entrée`{.action} pour accepter la licence.
 
 ![pfsense Installation 01](images/03-install-pfsense01.png){.thumbnail}
 
@@ -226,11 +226,11 @@ Répondez `y`{.action} à la question si l'on veut valider les changements et ap
 
 ![Configure pfsense 05](images/04-configureip-pfsense05.png){.thumbnail}
 
-Choisissez `Set interface(s) IP address` en saisissant `2` et en appuyant sur la touche `entrée`{.action}.
+Saisissez `2` pour Choisir `Set interface(s) IP address` , ensuite appuyez sur la touche `entrée`{.action}.
 
 ![Configure pfsense 06](images/04-configureip-pfsense06.png){.thumbnail}
 
-Sélectionnez l'interface **WAN** en saisissant `1` et en appuyant sur la touche `entrée`{.action}.
+Sélectionnez l'interface **WAN** en saisissant `1` et appuyez sur la touche `entrée`{.action}.
 
 ![Configure pfsense 07](images/04-configureip-pfsense07.png){.thumbnail}
 
