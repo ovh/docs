@@ -23,7 +23,7 @@ hidden: true
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix dans votre compte OVHcloud ou d'un cluster Nutanix chez OVHcloud et un autre dans votre infrastructure.
+- Disposer de deux clusters Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.

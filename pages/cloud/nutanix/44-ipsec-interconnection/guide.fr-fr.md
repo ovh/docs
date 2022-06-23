@@ -1,7 +1,7 @@
 ---
-title: Interconnexion IPSEC entre deux sites
-slug: ipsec-interconnection
-excerpt: "Mise en place d'un VPN IPSEC entre deux clusters Nutanix distants"
+title: Interconnexion IPsec entre deux sites
+slug: IPsec-interconnection
+excerpt: "Mise en place d'un VPN IPsec entre deux clusters Nutanix distants"
 section: Plan de reprise d'activité
 order: 02
 hidden: true
@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVHgateway** servant à d'accès INTERNET par une passerelle sous le systême d'exploitation **pfsense**.
+Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPsec en remplaçant les machines virtuelles **OVHgateway** servant à d'accès INTERNET par une passerelle sous le systême d'exploitation **pfsense**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -33,7 +33,7 @@ Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l
 * **Le Cluster au CANADA** : 192.168.10.0/24
 * **Le Cluster en FRANCE** : 192.168.0.0/24
 
-Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
+Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPsec.
 
 ### Remplacement de la passerelle au CANADA <a name="configurecanada"></a>
 
@@ -373,21 +373,21 @@ L'installation de la passerelle en **FRANCE** est identique à la passerelle du 
 
 Vous pouvez vous aider de ce chapitre [Installation de la passerelle au CANADA](#configurecanada) pour faire l'installation sur le site en FRANCE.
 
-### Mise en place du VPN IPSEC
+### Mise en place du VPN IPsec
 
-Maintenant que les deux passerelles ont été remplacées nous allons interconnecter les deux sites au travers d'un VPN IPSEC.
+Maintenant que les deux passerelles ont été remplacées nous allons interconnecter les deux sites au travers d'un VPN IPsec.
 
 #### Configuration du site au CANADA
 
-##### Mise en place du VPN IPSEC vers la France
+##### Mise en place du VPN IPsec vers la France
 
-Connectez-vous sur depuis un réseau autorisé sur l'adresse publique du CANADA en HTTPS avec cette URL https://adressepublique-pfsense-canada qui correspond à l'adresse fournies pour configurer l'interface **WAN** lors de l'installation de la passerelle.
+Connectez-vous sur depuis un réseau autorisé sur l'adresse publique du CANADA en HTTPS avec cette URL https://adressepublique-pfsense-canada. 
 
-Allez dans le menu `VPN`{.action} et choisissez `IPSec`{.action}.
+Allez dans le menu `VPN`{.action} et choisissez `IPsec`{.action}.
 
 ![Create VPN from CANADA 01](images/08-configure-vpn-from-canada01.png){.thumbnail}
 
-Cliquez sur `Add P1`{.action} pour créer la phase 1 du VPN IPSEC.
+Cliquez sur `Add P1`{.action} pour créer la phase 1 du VPN IPsec.
 
 ![Create VPN from CANADA 02](images/08-configure-vpn-from-canada02.png){.thumbnail}
 
@@ -428,7 +428,7 @@ Cliquez sur `Show Phase 2 Entries`{.action}.
 
 ![Create VPN from CANADA 07](images/08-configure-vpn-from-canada07.png){.thumbnail}
 
-Cliquez sur `Add P2`{.action} pour ajouter la phase 2 du VPN IPSEC.
+Cliquez sur `Add P2`{.action} pour ajouter la phase 2 du VPN IPsec.
 
 ![Create VPN from CANADA 08](images/08-configure-vpn-from-canada08.png){.thumbnail}
 
@@ -453,19 +453,19 @@ Cliquez sur `Save`{.action}
 
 ![Create VPN from CANADA 11](images/08-configure-vpn-from-canada11.png){.thumbnail}
 
-Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPSEC coté CANADA
+Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPsec coté CANADA
 
 ![Create VPN from CANADA 12](images/08-configure-vpn-from-canada12.png){.thumbnail}
 
-##### Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPSEC entre le CANADA et la FRANCE
+##### Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE
 
 Cliquez sur `Rules`{.action} dans le menu `Firewall`
 
-![Create IPSEC firewall rule CANADA 01](images/09-addipsecrule-from-canada01.png){.thumbnail}
+![Create IPsec firewall rule CANADA 01](images/09-addipsecrule-from-canada01.png){.thumbnail}
 
 Positionnez-vous sur l'onglet `IPsec`{.action} et cliquez en bas sur `Add`{.action} avec la flèche vers le haut.
 
-![Create IPSEC firewall rule CANADA 02](images/09-addipsecrule-from-canada02.png){.thumbnail}
+![Create IPsec firewall rule CANADA 02](images/09-addipsecrule-from-canada02.png){.thumbnail}
 
 Modifiez ces options :
 
@@ -474,11 +474,11 @@ Modifiez ces options :
 
 Ensuite cliquez sur `Save`{.action}.
 
-![Create IPSEC firewall rule CANADA 03](images/09-addipsecrule-from-canada03.png){.thumbnail}
+![Create IPsec firewall rule CANADA 03](images/09-addipsecrule-from-canada03.png){.thumbnail}
 
 Cliquez à nouveau sur `Add`{.action} avec la flêche vers le haut pour rajouter une deuxième règle.
 
-![Create IPSEC firewall rule CANADA 04](images/09-addipsecrule-from-canada04.png){.thumbnail}
+![Create IPsec firewall rule CANADA 04](images/09-addipsecrule-from-canada04.png){.thumbnail}
 
 Modifiez ces options : 
 
@@ -487,25 +487,25 @@ Modifiez ces options :
 
 Et cliquez sur `Save`{.action} 
 
-![Create IPSEC firewall rule CANADA 05](images/09-addipsecrule-from-canada05.png){.thumbnail}
+![Create IPsec firewall rule CANADA 05](images/09-addipsecrule-from-canada05.png){.thumbnail}
 
 Cliquez sur `Apply Changes`{.action}.
 
-![Create IPSEC firewall rule CANADA 06](images/09-addipsecrule-from-canada06.png){.thumbnail}
+![Create IPsec firewall rule CANADA 06](images/09-addipsecrule-from-canada06.png){.thumbnail}
 
 Le paramétrage sur la passerelle au CANADA est terminé.
 
 #### Configuration du site en FRANCE
 
-##### Mise en place du VPN IPSEC vers le CANADA
+##### Mise en place du VPN IPsec vers le CANADA
 
 Connectez-vous sur l'adresse publique de la passerelle de la FRANCE en HTTPS comme ceci https://adressepublique-pfsense-france.
 
-Allez dans le menu `VPN`{.action} et choisissez `IPSec`{.action}.
+Allez dans le menu `VPN`{.action} et choisissez `IPsec`{.action}.
 
 ![Create VPN from FRANCE 01](images/10-configure-vpn-from-france01.png){.thumbnail}
 
-Cliquez sur `Add P1`{.action} pour créer la phase 1 du VPN IPSEC.
+Cliquez sur `Add P1`{.action} pour créer la phase 1 du VPN IPsec.
 
 ![Create VPN from FRANCE 02](images/10-configure-vpn-from-france02.png){.thumbnail}
 
@@ -541,7 +541,7 @@ Cliquez sur `Show Phase 2 Entries`{.action}.
 
 ![Create VPN from FRANCE 07](images/10-configure-vpn-from-france07.png){.thumbnail}
 
-Cliquez sur `Add P2`{.action} pour ajouter la phase 2 du VPN IPSEC.
+Cliquez sur `Add P2`{.action} pour ajouter la phase 2 du VPN IPsec.
 
 ![Create VPN from FRANCE 08](images/10-configure-vpn-from-france08.png){.thumbnail}
 
@@ -563,19 +563,19 @@ Cliquez sur `Save`{.action}.
 
 ![Create VPN from FRANCE 11](images/10-configure-vpn-from-france11.png){.thumbnail}
 
-Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPSEC.
+Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPsec.
 
 ![Create VPN from FRANCE 12](images/10-configure-vpn-from-france12.png){.thumbnail}
 
-##### Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPSEC entre le CANADA et la FRANCE
+##### Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE
 
 Cliquez sur `Rules`{.action} dans le menu `Firewall`.
 
-![Create IPSEC firewall rule FRANCE01](images/11-addipsecrule-from-france01.png){.thumbnail}
+![Create IPsec firewall rule FRANCE01](images/11-addipsecrule-from-france01.png){.thumbnail}
 
 Positionnez-vous sur l'onglet `IPsec`{.action} et cliquez en bas sur `Add`{.action} avec la flêche vers le haut.
 
-![Create IPSEC firewall rule FRANCE02](images/11-addipsecrule-from-france02.png){.thumbnail}
+![Create IPsec firewall rule FRANCE02](images/11-addipsecrule-from-france02.png){.thumbnail}
 
 Modifiez ces options :
 
@@ -584,11 +584,11 @@ Modifiez ces options :
 
 Ensuite cliquez sur `Save`{.action}.
 
-![Create IPSEC firewall rule FRANCE03](images/11-addipsecrule-from-france03.png){.thumbnail}
+![Create IPsec firewall rule FRANCE03](images/11-addipsecrule-from-france03.png){.thumbnail}
 
 Cliquez à nouveau sur `Add`{.action} avec la flèche vers le haut pour rajouter une deuxième règle.
 
-![Create IPSEC firewall rule FRANCE04](images/11-addipsecrule-from-france04.png){.thumbnail}
+![Create IPsec firewall rule FRANCE04](images/11-addipsecrule-from-france04.png){.thumbnail}
 
 Modifiez ces options : 
 
@@ -597,11 +597,11 @@ Modifiez ces options :
 
 Et cliquez sur `Save`{.action}.
 
-![Create IPSEC firewall rule FRANCE05](images/11-addipsecrule-from-france05.png){.thumbnail}
+![Create IPsec firewall rule FRANCE05](images/11-addipsecrule-from-france05.png){.thumbnail}
 
 Cliquez sur `Apply Changes`{.action}. 
 
-![Create IPSEC firewall rule FRANCE06](images/11-addipsecrule-from-france06.png){.thumbnail}
+![Create IPsec firewall rule FRANCE06](images/11-addipsecrule-from-france06.png){.thumbnail}
 
 Le paramétrage du VPN est terminée sur les deux clusters, il est possible de mettre en place des réplications au travers du tunnel VPN sécurisé.
 
