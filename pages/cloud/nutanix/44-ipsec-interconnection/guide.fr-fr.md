@@ -24,14 +24,14 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 - Disposer de deux clusters Nutanix chez OVHcloud dans des sites différents
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos clusters via Prism Central.
-- Utiliser un plan IP différent par cluster.
+- Utiliser un plan d'adressage IP privé différent par cluster.
 
 ## En pratique
 
 Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l'autre en FRANCE, tous les deux dans des datacenters d'OVHcloud, ils utilisent un plan IP différent que voici :
 
-Cluster au CANADA : 192.168.10.0/24
-Cluster en FRANCE : 192.168.0.0/24
+* **Le Cluster au CANADA** : 192.168.10.0/24
+* **Le Cluster en FRANCE** : 192.168.0.0/24
 
 Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
 
@@ -92,10 +92,10 @@ L'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
-XX.XX.XX.N      Adresse de réseau réservé
-XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN
-XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN 
-XX.XX.XX.N+3    Réseau de diffusion réservé
+XX.XX.XX.N      Adresse de réseau réservé qui apparait sur le site client d'OVHcloud.
+XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN.
+XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN. 
+XX.XX.XX.N+3    Réseau de diffusion réservé.
 ```
 
 Par exemple si l'adresse **IPFO** affichée sur le site client est 123.123.123.4/30 il faut utiliser :
@@ -201,7 +201,7 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
+- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getipcustomerportal)
 
 - Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
 
@@ -369,7 +369,7 @@ L'interface d'administration de **pfsense** et accessible depuis internet sur le
 L'installation de la passerelle en **FRANCE** est identique à la passerelle du CANADA sauf pour ces paramètres :
 
 * **Adresse privée en FRANCE** : 192.168.0.254 avec un masque en /24
-* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
+* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getipcustomerportal)
 
 Vous pouvez vous aider de ce chapitre [Installation de la passerelle au CANADA](#configurecanada) pour faire l'installation sur le site en FRANCE.
 
