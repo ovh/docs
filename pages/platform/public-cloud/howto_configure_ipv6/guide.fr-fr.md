@@ -97,8 +97,6 @@ pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 
 Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Tout d'abord, créez une copie du fichier de configuration IPv6 :
 
-Considérant que votre interface est eth0, la configuration à rajouter devrait ressembler à ceci :
-
 ```bash
 cd /etc/netplan
 cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
