@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVHgateway** servant à d'accès INTERNET par une passerelle sous le systême d'exploitation **PFSense**.
+Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPSEC en remplaçant les machines virtuelles **OVHgateway** servant à d'accès INTERNET par une passerelle sous le systême d'exploitation **pfsense**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -34,17 +34,15 @@ Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l
 Cluster au CANADA : 192.168.10.0/24
 Cluster en FRANCE : 192.168.0.0/24
 
-Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle sous **Pfsense* qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
+Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPSEC.
 
-### Configuration de la passerelle au CANADA <a name="configurecanada"></a>
+### Remplacement de la passerelle au CANADA <a name="configurecanada"></a>
 
-Voici les informations détaillées pour remplacer la passerelle par défaut **OVHgateway** par une passerelle sous **PFSense** sur le cluster se trouvant au **CANADA**
+#### Téléchargement des sources pour l'installation de pfsense
 
-#### Téléchargement des sources pour l'installation de PFSENSE
+Téléchargez l'image iso de l'installation de **pfsense** à partir de ce lien [Téléchargement pfsense](https://www.pfsense.org/download/).
 
-Téléchargez l'image iso de l'installation de **Pfsense** à partir de ce lien [Téléchargement Pfsense](https://www.pfsense.org/download/).
-
-Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **Pfsense** dans votre cluster NUTANIX.
+Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **pfsense** dans votre cluster NUTANIX.
 
 #### Création de la machine virtuelle **gw-pfsense**
 
@@ -52,7 +50,7 @@ Créez une machine virtuelle avec ces paramètres :
 
 - **Nom** : `gw-pfsense`
 - **Stockage1** : `60 Go HDD` 
-- **Stockage2** : `Un lecteur de DVD connecté à l'image ISO de PFSENSE`
+- **Stockage2** : `Un lecteur de DVD connecté à l'image ISO de pfsense`
 - **RAM** : `4 Go` 
 - **CPU** : `2 vCPU`
 - **Réseau** : `deux cartes réseaux sur le réseau de AHV: **Base**`
@@ -63,7 +61,7 @@ Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines vir
 
 #### Arrêt de la machine virtuelle **OVH-GATEWAY**
 
-Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway**
+Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfsense**
 
 Au travers de **Prism Central** cliquez en haut à gauche sur le `menu principal`{.action}.
 
@@ -90,9 +88,9 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
 
-l'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et l'autre sert de passerelle pour aller sur Internet sur la machine virtuelle **OVHgateway**.
+l'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
 
-Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
+Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-pfsense**
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé
@@ -101,70 +99,70 @@ XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utilis
 XX.XX.XX.N+3    Réseau de diffusion réservé
 ```
 
-Par exemple si l'adresse affichée sur le site client est 123.123.123.4 il faut utiliser :
+Par exemple si l'adresse **IPFO** affichée sur le site client est 123.123.123.4/30 il faut utiliser :
 
 - **123.123.123.5** pour l'adresse de l'interface **WAN** 
 - **123.123.123.6** pour la passerelle sur l'interface **WAN**.
 
-#### Démarrage de la machine virtuelle **GW-PFSENSE**
+#### Démarrage de la machine virtuelle **GW-pfsense**
 
-Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-PFSENSE`{.action}.
+Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-pfsense`{.action}.
 
-![Start GATEWAY PFSENSE ](images/02-start-gatewaypfsense01.png){.thumbnail}
+![Start GATEWAY pfsense ](images/02-start-gatewaypfsense01.png){.thumbnail}
 
 Au travers du menu `More` cliquez sur `Power On`{.action}.
 
-![Start GATEWAY PFSENSE ](images/02-start-gatewaypfsense02.png){.thumbnail}
+![Start GATEWAY pfsense ](images/02-start-gatewaypfsense02.png){.thumbnail}
 
 Cliquez sur `Launch console`{.action}.
 
-![Start GATEWAY PFSENSE ](images/02-start-gatewaypfsense03.png){.thumbnail}
+![Start GATEWAY pfsense ](images/02-start-gatewaypfsense03.png){.thumbnail}
 
-#### Installation de **PFSENSE**
+#### Installation de **pfsense**
 
 Positionnez-vous sur `Accept` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 01](images/03-install-pfsense01.png){.thumbnail}
+![pfsense Installation 01](images/03-install-pfsense01.png){.thumbnail}
 
 Choisissez `Install`, positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 02](images/03-install-pfsense02.png){.thumbnail}
+![pfsense Installation 02](images/03-install-pfsense02.png){.thumbnail}
 
 Laissez `Continue with default keymap`, allez sur `select` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.,
 
-![PFSENSE Installation 03](images/03-install-pfsense03.png){.thumbnail}
+![pfsense Installation 03](images/03-install-pfsense03.png){.thumbnail}
 
 Laissez `Auto (ZFS)` allez sur `OK` avec la touche `tabulation`{.action} et tapez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 04](images/03-install-pfsense04.png){.thumbnail}
+![pfsense Installation 04](images/03-install-pfsense04.png){.thumbnail}
 
 Positionnez-vous sur `Select` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 05](images/03-install-pfsense05.png){.thumbnail}
+![pfsense Installation 05](images/03-install-pfsense05.png){.thumbnail}
 
 Gardez `stripe`, positionnez-vous sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 06](images/03-install-pfsense06.png){.thumbnail}
+![pfsense Installation 06](images/03-install-pfsense06.png){.thumbnail}
 
 Sélectionnez avec la barre `espace` NUTANIX VDISK ensuite allez sur `OK` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 07](images/03-install-pfsense07.png){.thumbnail}
+![pfsense Installation 07](images/03-install-pfsense07.png){.thumbnail}
 
 Allez sur `YES` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 08](images/03-install-pfsense08.png){.thumbnail}
+![pfsense Installation 08](images/03-install-pfsense08.png){.thumbnail}
 
 Choisissez `NO` avec la touche `tabulation`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 09](images/03-install-pfsense09.png){.thumbnail}
+![pfsense Installation 09](images/03-install-pfsense09.png){.thumbnail}
 
 Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 
-![PFSENSE Installation 10](images/03-install-pfsense10.png){.thumbnail}
+![pfsense Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
-#### Ejection du CDROM PFSENSE de la machine virtuelle **GW-PFSENSE**
+#### Ejection du CDROM pfsense de la machine virtuelle **GW-pfsense**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
+Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-pfsense**.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -200,9 +198,9 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 ![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
-#### Configuration des adresses IP de PFSENSE au travers de la console
+#### Configuration des adresses IP de pfsense au travers de la console
 
-Nous allons configurer les adresses IP de passerelle **PFSense** comme ceci:
+Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
 - Interface WAN avec les informations de cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHCLOUD](#getipcustomerportal)
 
@@ -210,83 +208,83 @@ Nous allons configurer les adresses IP de passerelle **PFSense** comme ceci:
 
 Acceptez la licence en appuyant sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 01](images/04-configureip-pfsense01.png){.thumbnail}
+![Configure pfsense 01](images/04-configureip-pfsense01.png){.thumbnail}
 
 Saisissez `n`{.action} et appuyez sur la touche `entrée`{.action} lorsque l'on demande si il faut des **VLAN**.
 
-![Configure PFSENSE 02](images/04-configureip-pfsense02.png){.thumbnail}
+![Configure pfsense 02](images/04-configureip-pfsense02.png){.thumbnail}
 
 Saisissez le nom de l'interface pour le **WAN** `vtnet0`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 03](images/04-configureip-pfsense03.png){.thumbnail}
+![Configure pfsense 03](images/04-configureip-pfsense03.png){.thumbnail}
 
 Choisissez le nom de l'interface pour le **LAN** `vtnet1`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 04](images/04-configureip-pfsense04.png){.thumbnail}
+![Configure pfsense 04](images/04-configureip-pfsense04.png){.thumbnail}
 
 Répondez `y`{.action} à la question si l'on veut valider les changements et appuyez sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 05](images/04-configureip-pfsense05.png){.thumbnail}
+![Configure pfsense 05](images/04-configureip-pfsense05.png){.thumbnail}
 
 Choisissez `Set interface(s) IP address` en saisissant `2` et en appuyant sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 06](images/04-configureip-pfsense06.png){.thumbnail}
+![Configure pfsense 06](images/04-configureip-pfsense06.png){.thumbnail}
 
 Sélectionnez l'interface **WAN** en saisissant `1` et en appuyant sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 07](images/04-configureip-pfsense07.png){.thumbnail}
+![Configure pfsense 07](images/04-configureip-pfsense07.png){.thumbnail}
 
 Saisissez `n`{.action} et appuyez sur la touche `entrée`{.action} à la demande de la configuration de l'adresse par DHCP.
 
-![Configure PFSENSE 08](images/04-configureip-pfsense08.png){.thumbnail}
+![Configure pfsense 08](images/04-configureip-pfsense08.png){.thumbnail}
 
 Saisissez l'`Adresse publique avec le masque`{.action} et appuyez sur la touche `entrée`{.action} comme par exemple **123.123.123.5/30**.
 
 Ensuite saisissez l'`adresse de la passerelle publique`{.action} et appuyer sur la touche `entrée`{.action} comme par exemple **123.123.123.6**.
 
-![Configure PFSENSE 09](images/04-configureip-pfsense09.png){.thumbnail}
+![Configure pfsense 09](images/04-configureip-pfsense09.png){.thumbnail}
 
 Répondez `n`{.action} et appuyez sur la touche `entrée`{.action} lors de la configuration de l'**IPv6 address WAN**.
 
-![Configure PFSENSE 10](images/04-configureip-pfsense10.png){.thumbnail}
+![Configure pfsense 10](images/04-configureip-pfsense10.png){.thumbnail}
 
 A la demande **revert to HTTP as the webConfigurator protocol** Saisissez `n`{.action} et appuyez sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 11](images/04-configureip-pfsense11.png){.thumbnail}
+![Configure pfsense 11](images/04-configureip-pfsense11.png){.thumbnail}
 
 Appuyez sur `entrée`{.action} pour valider l'enregistrement de l'adresse IP du **WAN**.
 
-![Configure PFSENSE 12](images/04-configureip-pfsense12.png){.thumbnail}
+![Configure pfsense 12](images/04-configureip-pfsense12.png){.thumbnail}
 
 Saisissez `2` et appuyez sur la touche `entrée`{.action} pour configurer les adresses IP.
 
-![Configure PFSENSE 13](images/04-configureip-pfsense13.png){.thumbnail}
+![Configure pfsense 13](images/04-configureip-pfsense13.png){.thumbnail}
 
 Prenez l'option `2` et appuyez sur la touche `entrée`{.action} pour modifier l'adresse IP du LAN.
 
-![Configure PFSENSE 14](images/04-configureip-pfsense14.png){.thumbnail}
+![Configure pfsense 14](images/04-configureip-pfsense14.png){.thumbnail}
 
 Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez sur la touche `entrée`{.action}.
 
-![Configure PFSENSE 15](images/04-configureip-pfsense15.png){.thumbnail}
+![Configure pfsense 15](images/04-configureip-pfsense15.png){.thumbnail}
 
 Appuyez sur la touche `entrée`{.action} pour ne pas mettre de passerelle sur l'interface **LAN**
 
-![Configure PFSENSE 16](images/04-configureip-pfsense16.png){.thumbnail}
+![Configure pfsense 16](images/04-configureip-pfsense16.png){.thumbnail}
 
 Saisissez `n` et appuyez sur la touche `entrée`{.action} pour ne pas activer le serveur DHCP.
 
-![Configure PFSENSE 17](images/04-configureip-pfsense17.png){.thumbnail}
+![Configure pfsense 17](images/04-configureip-pfsense17.png){.thumbnail}
 
 Répondez `n` et appuyez sur la touche `entrée`{.action} à la demande **revert to HTTP as the webConfigurator protocol**.
 
-![Configure PFSENSE 18](images/04-configureip-pfsense17.png){.thumbnail}
+![Configure pfsense 18](images/04-configureip-pfsense17.png){.thumbnail}
 
 Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
 
 Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne de commande.
 
-![Configure PFSENSE 19](images/04-configureip-pfsense19.png){.thumbnail}
+![Configure pfsense 19](images/04-configureip-pfsense19.png){.thumbnail}
 
 #### Configuration de certaines options au travers de l'interface WEB
 
@@ -299,17 +297,17 @@ Saisissez ces informations :
 
 Et cliquez sur `SIGN IN`{.action}.
 
-![WEB Configure PFSENSE 01](images/05-configure-pfsense01.png){.thumbnail}
+![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
 
 Cliquez sur `Accept`{.action} pour accepter la licence.
 
-![WEB Configure PFSENSE 02](images/05-configure-pfsense02.png){.thumbnail}
+![WEB Configure pfsense 02](images/05-configure-pfsense02.png){.thumbnail}
 
 Cliquez sur `Close`{.action} aux remerciements.
 
-![WEB Configure PFSENSE 03](images/05-configure-pfsense03.png){.thumbnail}
+![WEB Configure pfsense 03](images/05-configure-pfsense03.png){.thumbnail}
 
-##### Changement du mot de passe par défaut de **PFSENSE**
+##### Changement du mot de passe par défaut de **pfsense**
 
 Au travers du menu `System`{.action} choisissez `User Manager`{.action}
 
@@ -344,7 +342,7 @@ Choisissez ces options dans **Edit Firewall Rule** :
 * **Address Family** : `IPv4`
 * **Protocol** : `TCP`
 
-Prenez dans **Source** `Single host or alias` et saisissez `l'adresse publique` autorisée à se connecter au pare-feu **Pfsense**.
+Prenez dans **Source** `Single host or alias` et saisissez `l'adresse publique` autorisée à se connecter au pare-feu **pfsense**.
 
 Cliquez sur la `barre de défilement`{.action} pour aller en bas de la fenêtre.
 
@@ -397,7 +395,7 @@ Choisissez ces informations :
 * **Key Exchange version** : `IKEv2`
 * **Internet Protocol** : `IPv4`
 * **Interface**  : `WAN`
-* **Remote Gateway** : `Adresse publique du PFSENSE distant en FRANCE`
+* **Remote Gateway** : `Adresse publique du pfsense distant en FRANCE`
 
 Ensuite faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
 
@@ -515,7 +513,7 @@ Choisissez ces informations :
 * **Key Exchange version** : `IKEv2`
 * **Internet Protocol** : `IPv4`
 * **Interface**  : `WAN`
-* **Remote Gateway** : `Adresse publique du PFSENSE distant au CANADA`
+* **Remote Gateway** : `Adresse publique du pfsense distant au CANADA`
 
 Ensuite faites défilez la fenêtre à l'aide de la `barre de défilement`{.action}.
 
