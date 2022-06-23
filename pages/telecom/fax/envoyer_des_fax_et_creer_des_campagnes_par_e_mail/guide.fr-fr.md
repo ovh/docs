@@ -7,7 +7,7 @@ section: Envoi/Réception de fax
 order: 1
 ---
 
-**Dernière mise à jour le 09/06/2022**
+**Dernière mise à jour le 23/06/2022**
 
 ## Objectif
 
@@ -23,7 +23,7 @@ Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous pr
 
 ## En pratique
 
-Ce guide détaille comment compléter les champs d'un e-mail afin afin d'envoyer un fax ou une campagne de fax.<br>
+Ce guide détaille comment compléter les champs d'un e-mail afin d'envoyer un fax ou une campagne de fax.<br>
 Ouvrez votre client e-mail ou votre webmail puis ouvrez une fenêtre d'envoi d'e-mail.
 
 ### Envoyer un fax par mail
@@ -35,7 +35,7 @@ Pour envoyer un fax par e-mail, vous devez renseigner les informations suivantes
 |**1.** Le **numéro de fax de votre destinataire** |Renseignez le numéro sous la forme `numero@ecofax.fr` dans le champ `À`{.action} où vous renseignez habituellement l'adresse e-mail d'un destinataire.<br><br>**Par exemple** : `0123456789@ecofax.fr`|
 |**2.** Le **numéro de votre ligne Ecofax émettrice** | Renseignez votre numéro, sans espaces, dans le champ `Objet`{.action}.<br><br>**Par exemple** : `0987654321` pour le numéro 09 87 65 43 21|
 |**3.** Le **fichier** à faxer|Ajoutez le fichier à faxer en tant que `pièce jointe`{.action} attachée à l'e-mail.<br><br>Retrouvez la liste des formats acceptés [en bas de ce guide](#formats)|
-|**4.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax)|
+|**4.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
 
 Vous devriez obtenir des champs complétés de façon similaire à l'exemple ci-dessous (les numéros indiqués en orange correspondent à ceux du tableau ci-dessus) :
 
@@ -79,7 +79,7 @@ Pour envoyer une campagne de fax par e-mail, vous devez renseigner les informati
 |**2.** Le **numéro de votre ligne Ecofax émettrice** | Renseignez votre numéro, sans espaces, dans le champ `Objet`{.action}.<br><br>**Par exemple** : `0987654321` pour le numéro 09 87 65 43 21|
 |**3.** Le **fichier** à faxer|Ajoutez le fichier à faxer en tant que `pièce jointe`{.action} attachée à l'e-mail.<br><br>Retrouvez la liste des formats acceptés [en bas de ce guide](#formats)|
 |**4.** Le **fichier de destinaires**|Ajoutez, en tant que `pièce jointe`{.action} attachée à l'e-mail, le fichier `numbers.txt` contenant votre liste de destinataires.|
-|**5.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax)|
+|**5.** Le **mot de passe** de la ligne Ecofax |Renseignez ce mot de passe dans le `corps`{.action} de l'e-mail, précédé de `p:`<br><br>**Par exemple** : `p:motdepassefax`.<br><br>Ce mot de passe est bien entendu donné ici à titre d'exemple, veillez à bien utiliser le véritable [mot de passe de votre ligne Fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax).<br><br>Veillez à désactiver toute signature automatique d'e-mail et à ne pas ajouter de caractères supplémentaires dans le corps de votre e-mail. En effet, ces éléments pourraient empêcher la bonne prise en compte de votre mot de passe.|
 
 Vous devriez obtenir des champs complétés de façon similaire à l'exemple ci-dessous (les numéros indiqués en orange correspondent à ceux du tableau ci-dessus) :
 
