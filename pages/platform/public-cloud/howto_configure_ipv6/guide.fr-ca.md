@@ -6,9 +6,10 @@ section: 'Réseau'
 order: 21
 ---
 
-**Dernière mise à jour le 25/11/2019**
+**Dernière mise à jour le 21/06/2022**
 
 ## Objectif
+
 Internet Protocol version 6 (IPv6) est la dernière version du Internet Protocol (IP). Il est conçu pour résoudre l’épuisement longuement anticipé des adresses IPv4 en utilisant des adresses composées de 128-bits au lieu du traditionnel 32-bits de l’IPv4.
 
 Chaque instance Public Cloud est livrée avec une adresse IPv4 et une adresse IPv6.
@@ -20,8 +21,9 @@ Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur 
 ## Prérequis
 
 * Une instance Public Cloud, le modèle importe peu.
-* Connaissance de SSH.
-* Connaissances basiques en réseaux.
+* Disposer d’un accès administrateur (root) via SSH ou bureau à distance (Windows) à votre serveur.
+* Disposer de connaissances basiques en réseau.
+* Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
 
@@ -31,7 +33,6 @@ Voici un lexique rapide des termes utilisés dans ce tutoriel :
 
 |Lexique|Description|
 |---|---|
-|IPV6_BLOCK|Bloc IPv6 assigné à votre service|
 |YOUR_IPV6|L’adresse IPv6 assignée à votre service|
 |IPv6_PREFIX|Le préfixe de votre bloc IPv6 (Ex: 2607:5300:60:62ac::/128 -> netmask = 128)|
 |IPv6_GATEWAY|La passerelle de votre bloc IPv6|
@@ -49,22 +50,28 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 
 ### Exemples de configurations persistantes
 
-> [!primary] **Exemples**
+> [!primary] 
+> **Exemples**
 > 
->Les informations fournies ci-dessous le sont à titre d'exemples.
+> Les informations fournies ci-dessous le sont à titre d'exemples.
 >
->Étant l'administrateur de vos services, il vous incombe d'adapter ceux-ci à votre distribution.
+> Étant l'administrateur de vos services, il vous incombe d'adapter ceux-ci à votre distribution.
 >
 
-En premier lieu, connectez-vous à votre instance en SSH.
+> [!warning]
+>
+> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original pour y revenir en cas de problème.
+> 
 
-#### **Sur Debian / Ubuntu**
+<br>En premier lieu, connectez-vous à votre instance en SSH.
 
-Considérant que votre interface est eth0 et que vous vous trouvez sur un OS Debian, la configuration à rajouter devrait ressembler à ceci :
+#### Sur Debian
 
-Fichier à modifier (avec privilèges su) : /etc/network/interfaces
+Considérant que votre interface est eth0, la configuration à rajouter devrait ressembler à ceci :
 
-```
+Fichier à modifier (avec privilèges su) : `/etc/network/interfaces`
+
+```console
 iface eth0 inet6 static
 address YOUR_IPV6
 netmask IPV6_PREFIX
@@ -76,7 +83,7 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 
 Voici un exemple concret :
 
-```
+```console
 iface eth0 inet6 static
 address 2001:41d0:xxx:xxxx::999
 netmask 128
@@ -85,13 +92,63 @@ post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
-#### **Sur RedHat / CentOS**
+
+#### Sur Ubuntu
+
+Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Tout d'abord, créez une copie du fichier de configuration IPv6 :
+
+```bash
+cd /etc/netplan
+cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+```
+
+Cela vous permet de séparer la configuration IPv6 et d'annuler facilement les modifications en cas d'erreur.
+
+Considérant que votre interface est eth0, la configuration à rajouter devrait ressembler à ceci :
+
+Fichier à modifier (avec privilèges su) : `/etc/netplan/51-cloud-init-ipv6.yaml`
+
+```yaml
+network:
+    ethernets:
+        eth0:
+            dhcp6: false
+            match:
+                macaddress: fb:17:3r:39:56:75
+            set-name: eth0
+            addresses:
+              - "YOUR_IPV6/IPv6_PREFIX"
+            gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
+    version: 2
+```
+
+> [!warning]
+>
+> Il est important de respecter l’alignement de chaque élément de ce fichier tel que représenté dans l’exemple ci-dessus. N’utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire.
+> 
+
+Vous pouvez tester votre configuration à l’aide de la commande suivante :
+
+```bash
+netplan try
+```
+
+Si elle est correcte, appliquez-la à l’aide de la commande suivante :
+
+```bash
+netplan apply
+```
+
+#### Sur RedHat / CentOS
 
 Considérant que votre interface est eth0, la configuration devrait ressembler à ceci :
 
-Fichier à modifier (avec privilèges sudo) : /etc/sysconfig/network-scripts/ifcfg-eth0
+Fichier à modifier (avec privilèges sudo) : `/etc/sysconfig/network-scripts/ifcfg-eth0`
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
@@ -99,13 +156,13 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 Voici un exemple concret :
 
-```
+```console
 IPV6INIT=yes
 IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-#### **Sur Windows**
+#### Sur Windows
 
 Rendez-vous dans la rubrique `Connexion Réseaux`{.action} de votre Windows.
 
@@ -133,7 +190,7 @@ Dans un premier temps, [passez votre instance dans le mode de secours rescue-pro
 
 Inspirez-vous ensuite des commandes suivantes pour configurer votre IP de manière non-persistante :
 
-```
+```bash
 ip addr add YOUR_IPV6/IPV6_PREFIX dev eth0
 ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
@@ -141,7 +198,7 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 Testez de nouveau votre réseau via un ping6 par exemple :
 
-```
+```bash
 ping6 ipv6.google.com
 ```
 Si votre instance répond, il est probable qu'une des étapes de votre configuration initiale n'ait pas été rigoureusement suivie.

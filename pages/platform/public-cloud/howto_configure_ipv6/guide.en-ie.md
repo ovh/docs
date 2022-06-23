@@ -23,7 +23,7 @@ By default, only the IPv4 address is configured.
 - A Public Cloud instance (any model)
 - Administrative access (root) via SSH or remote desktop (Windows) to your server
 - A basic understanding of networking
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -126,6 +126,7 @@ network:
                 scope: link
     version: 2
 ```
+
 > [!warning]
 >
 > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 
