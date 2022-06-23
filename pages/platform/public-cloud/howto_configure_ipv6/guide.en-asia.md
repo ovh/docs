@@ -52,7 +52,8 @@ All the information you need is in the **Networks** section.
 
 ### Examples of persistent configuration.
 
-> [!primary] **Examples**
+> [!primary]
+> **Examples**
 > 
 >The information below is provided as an example.
 >
@@ -66,7 +67,7 @@ All the information you need is in the **Networks** section.
 
 <br>First of all, connect to your instance via SSH.
 
-#### **On Debian**
+#### On Debian
 
 If we assume that your interface is eth0, the configuration should look like this:
 
@@ -94,7 +95,7 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### **On Ubuntu**
+#### On Ubuntu
 
 The network configuration files are located in the `/etc/netplan/` directory. First, create a copy of the IPv6 configuration file:
 
@@ -142,7 +143,7 @@ If it is correct, apply it using the following command:
 netplan apply
 ```
 
-#### **On RedHat / CentOS**
+#### On RedHat / CentOS
 
 If we assume that your interface is eth0, the configuration should look like this:
 
@@ -162,7 +163,7 @@ IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-#### **On Windows**
+#### On Windows
 
 Go to `Network Connections`{.action} in Windows.
 

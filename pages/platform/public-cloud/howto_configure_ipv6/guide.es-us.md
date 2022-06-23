@@ -48,8 +48,9 @@ Puede consultar la información en la columna `Redes`{.action}.
 
 ### Ejemplos de configuraciones persistentes
 
-> [!primary] **Ejemplos**
-> 
+> [!primary]
+> **Ejemplos**
+>
 >La siguiente información se incluye solo a modo de ejemplo.
 >
 >Como administrador del servicio, deberá adaptarlo a su distribución.
@@ -62,7 +63,7 @@ Puede consultar la información en la columna `Redes`{.action}.
 
 <br>En primer lugar, conéctese a su instancia por SSH.
 
-#### **En Debian**
+#### En Debian
 
 Si su interfaz es «eth0», la configuración tendrá que ser parecida a la siguiente:
 
@@ -90,7 +91,7 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### **En Ubuntu**
+#### En Ubuntu
 
 Los archivos de configuración de red se encuentran en el directorio `/etc/netplan/`. En primer lugar, cree una copia del archivo de configuración IPv6:
 
@@ -139,7 +140,7 @@ Si es correcta, puede aplicarla con el siguiente comando:
 netplan apply
 ```
 
-#### **En RedHat/CentOS**
+#### En RedHat/CentOS
 
 Si su interfaz es «eth0», la configuración tendrá que ser parecida a la siguiente:
 
@@ -159,7 +160,7 @@ IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-#### **En Windows**
+#### En Windows
 
 Acceda a la sección `Conexiones de red`{.action} de su Windows.
 

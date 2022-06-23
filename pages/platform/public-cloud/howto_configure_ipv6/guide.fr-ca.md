@@ -21,7 +21,7 @@ Dans ce tutoriel, nous allons vous apprendre à configurer une adresse IPv6 sur 
 ## Prérequis
 
 * Une instance Public Cloud, le modèle importe peu.
-* Disposer d’un accès administratif (root) via SSH ou bureau à distance (Windows) à votre serveur.
+* Disposer d’un accès administrateur (root) via SSH ou bureau à distance (Windows) à votre serveur.
 * Disposer de connaissances basiques en réseau.
 * Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
@@ -50,21 +50,22 @@ Toutes les informations nécessaires seront visibles dans la partie **Réseaux**
 
 ### Exemples de configurations persistantes
 
-> [!primary] **Exemples**
+> [!primary] 
+> **Exemples**
 > 
->Les informations fournies ci-dessous le sont à titre d'exemples.
+> Les informations fournies ci-dessous le sont à titre d'exemples.
 >
->Étant l'administrateur de vos services, il vous incombe d'adapter ceux-ci à votre distribution.
+> Étant l'administrateur de vos services, il vous incombe d'adapter ceux-ci à votre distribution.
 >
 
 > [!warning]
 >
-> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original en cas de problème.
+> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original pour y revenir en cas de problème.
 > 
 
 <br>En premier lieu, connectez-vous à votre instance en SSH.
 
-#### **Sur Debian**
+#### Sur Debian
 
 Considérant que votre interface est eth0, la configuration à rajouter devrait ressembler à ceci :
 
@@ -92,7 +93,7 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### **Sur Ubuntu**
+#### Sur Ubuntu
 
 Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Tout d'abord, créez une copie du fichier de configuration IPv6 :
 
@@ -141,7 +142,7 @@ Si elle est correcte, appliquez-la à l’aide de la commande suivante :
 netplan apply
 ```
 
-#### **Sur RedHat / CentOS**
+#### Sur RedHat / CentOS
 
 Considérant que votre interface est eth0, la configuration devrait ressembler à ceci :
 
@@ -161,7 +162,7 @@ IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-#### **Sur Windows**
+#### Sur Windows
 
 Rendez-vous dans la rubrique `Connexion Réseaux`{.action} de votre Windows.
 

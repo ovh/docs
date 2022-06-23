@@ -49,7 +49,8 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 
 ### Przykłady konfiguracji stałych
 
-> [!primary] **Przykłady**
+> [!primary] 
+> **Przykłady**
 > 
 >Poniższe przykłady mają jedynie charakter poglądowy.
 >
@@ -63,7 +64,7 @@ Wszystkie niezbędne informacje będą widoczne w sekcji **Sieci**.
 
 <br>Najpierw połącz się ze swoją instancją przez SSH.
 
-#### **W systemie Debian**
+#### W systemie Debian
 
 Zakładając, że Twój interfejs sieciowy to eth0, należy dodać konfigurację wyglądającą mniej więcej w ten sposób:
 
@@ -91,7 +92,7 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### **W systemie Ubuntu**
+#### W systemie Ubuntu
 
 Pliki konfiguracyjne sieci znajdują się w katalogu `/etc/netplan/`. Po pierwsze, utwórz kopię pliku konfiguracyjnego IPv6:
 
@@ -140,7 +141,7 @@ Jeśli jest poprawna, zastosuj ją za pomocą następującego polecenia:
 netplan apply
 ```
 
-#### **W systemie RedHat / CentOS**
+#### W systemie RedHat / CentOS
 
 Zakładając, że Twój interfejs to eth0, konfiguracja powinna wyglądać mniej więcej tak:
 
@@ -160,7 +161,7 @@ IPV6ADDR=2001:41d0:xxx:xxxx::999
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
-#### **W systemie Windows**
+#### W systemie Windows
 
 Przejdź do sekcji `Połączenia sieciowe`{.action} w systemie Windows.
 
