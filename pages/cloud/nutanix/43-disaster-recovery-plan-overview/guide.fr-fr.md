@@ -45,7 +45,7 @@ Pour cela, vous pouvez utiliser des technologies diverses telles que :
 
 ![Interconnection with IPsec diagram](images/ipsecinterconnection.png){.thumbnail}
 
-Un exemple d'interconnexion IPsec est disponible à cette adresse : [Interconnexion IPSEC entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+Un exemple d'interconnexion IPsec est disponible à cette adresse : [Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
 ### Solutions Nutanix pour la mise en place d'un plan de reprise d'activité
 
@@ -53,15 +53,17 @@ Certaines solutions sont disponibles avec **Prism Element** :
 
 - **Async DR** : la réplication entre deux **storage containers** distants ne se fait qu'une fois par heure. Si un problème survient, il est possible de perdre une heure de données (RPO 1 heure) mais le redémarrage peut se faire manuellement dans la minute.
 - **NearSync DR** : la réplication se fait plusieurs fois par heure. Il est possible d'avoir une synchronisation entre 1 minute et 15 minutes, en fonction de la licence que vous possédez (RPO entre 1 minute et 15 minutes).
-- **Metro/Sync Rep DR** : le stockage du cluster Nutanix est étendu sur un autre cluster, ce qui empêche toute perte de données (RPO à 0) et offre la possibilité d'un retour à la normale presque instantanément.
+
+Retrouvez le détail de ces solutions dans notre documentation sur la [réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
 Il est possible d'améliorer la gestion des plans de reprise d'activité via des outils tiers ou via une solution Nutanix nommé **Leap** au travers de **Prism Central**.
 
 > [!warning]
 > La réplication asynchrone entre deux sites est intégrée avec l'offre OVHcloud **Nutanix Standard**. Il sera cependant nécessaire de passer sur l'offre OVHcloud **Nutanix Advanced** pour pouvoir utiliser les autres options.
 
-
 ## Aller plus loin
+
+[Interconnexion IPsec entre deux sites](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
 [Réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
 
