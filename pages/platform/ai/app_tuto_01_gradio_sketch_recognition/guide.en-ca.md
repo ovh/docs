@@ -27,7 +27,8 @@ Overview of the app:
 - A [user for AI Apps](https://docs.ovh.com/ca/en/publiccloud/ai/users/).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
-- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model.
+- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](https://docs.ovh.com/ca/en/publiccloud/ai/notebooks/tuto-weights-and-biases/).
+
 
 ## Instructions
 
@@ -62,7 +63,7 @@ head = (
   "</center>"
 )
 
-ref = "Find the whole code [here](ADD github link)."
+ref = "Find the whole code [here](https://github.com/ovh/ai-training-examples/tree/main/apps/gradio/sketch-recognition)."
 ```
 
 Specify the input images size and the classes names.
@@ -113,7 +114,7 @@ interface.launch(server_name="0.0.0.0", server_port=8080)
 
 ### Write the requirements.txt file for the application
 
-The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
+The `requirements.txt` file will allow us to get all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
 gradio==3.0.10
@@ -136,7 +137,7 @@ WORKDIR /workspace
 ADD requirements.txt /workspace/requirements.txt
 ```
 
-Install the `requirements.txt` file which contains your needed Python modules using a `pip install ...` command:
+Install your needed Python modules using a `pip install ...` command with the `requirements.txt` file which contains all modules:
 
 ```console
 RUN pip install -r requirements.txt
@@ -214,7 +215,7 @@ Log in on the shared registry with your usual OpenStack credentials:
 docker login -u <user> -p <password> <shared-registry-address>
 ```
 
-Push the compiled image into the shared registry:
+Push the created image into the shared registry:
 
 ```console
 docker tag gradio_app:latest <shared-registry-address>/gradio_app:latest
@@ -223,7 +224,7 @@ docker push <shared-registry-address>/gradio_app:latest
 
 ### Launch the app
 
-The following command starts a new job running your Gradio application:
+The following command starts a new app running your Gradio application:
 
 ```console
 ovhai app run \
@@ -243,7 +244,7 @@ To launch your Gradio app, you need to attach **1 volume** to this app. It conta
 
 > [!primary]
 >
-> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the third volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Storage container.
+> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Storage container.
 >
 
 If you want your app to be accessible without the need to authenticate, specify it as follows.
