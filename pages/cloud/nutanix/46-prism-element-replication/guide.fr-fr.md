@@ -7,11 +7,11 @@ order: 04
 hidden: true
 ---
 
-**Dernière mise à jour le 16/06/2022**
+**Dernière mise à jour le 24/06/2022**
 
 ## Objectif
 
-**Cette page montre comment mettre en place une réplication entre cluster au travers de Prism Element**
+**Comment mettre en place une réplication entre clusters au travers de Prism Element**
 
 
 > [!warning]
@@ -31,7 +31,7 @@ hidden: true
 
 ## Présentation de la réplication synchrone et asynchrone
 
-Deux clusters Nutanix ayant le pack de licence **Nutanix Standard** d'OVHcloud ont la capacité d'être relié pour créer un domaine de protection qui permet une réplication asynchrone toutes les heures. 
+Deux clusters Nutanix qui utilisent le pack de licence **Nutanix Standard** d'OVHcloud ont la capacité d'être relié pour créer un domaine de protection avec une réplication asynchrone toutes les heures. 
 
 Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minutes) et multisite sur plusieurs clusters il faudra choisir le pack **Nutanix Advanced** sur chacun des clusters.
 
@@ -39,8 +39,10 @@ Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minute
 
 Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters d'OVHcloud, l'un au CANADA et l'autre en FRANCE connectés via un VPN IPSEC sur deux plans d'adressages IP différents qui sont :
 
-* ** `192.168.0.0/24` pour le cluster se trouvant dans un Datacenter en FRANCE.
-* ** `192.168.10.0/24` pour le cluster se trouvant dans un Datacenter au CANADA.
+* **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en FRANCE.
+* **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au CANADA.
+
+Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de cette documentation [Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
 
 Connectez-vous au travers de **Prism Element** sur le cluster en France à partir de **Prism Central**, comme indiqué sur cette documentation [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
@@ -64,19 +66,19 @@ Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
 ![01 Create Remote Site From FRANCE06](images/01-create-remote-site-from-france06.png){.thumbnail}
 
-Dans la rubrique **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
+Dans la rubrique **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** ainsi que **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
 ![01 Create Remote Site From FRANCE07](images/01-create-remote-site-from-france07.png){.thumbnail}
 
-Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50` en cliquant sur le bouton `+`{.action} pour valider l'association des réseaux sources et destinations.
+Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50`. Cliquez sur le bouton `+`{.action} pour valider l'association des réseaux sources et destinations.
 
 ![01 Create Remote Site From FRANCE08](images/01-create-remote-site-from-france08.png){.thumbnail}
 
-Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages sources et destination. 
+Choisissez `default-container...` dans Source **VStore** et **Destination VStore** ensuite cliquez sur le bouton `+`{.action} pour relier le stockage source et destination.
 
 ![01 Create Remote Site From FRANCE09](images/01-create-remote-site-from-france09.png){.thumbnail}
 
-Cliquez sur `Save`{.action}
+Cliquez sur `Save`{.action}.
 
 ![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
 
@@ -84,7 +86,7 @@ Le site distant apparait dans la liste des sites distants.
 
 ![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
 
-Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et faire la même opération.
+Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et effectuer la même opération.
 
 Au travers du menu Home cliquez sur `Data Protection`{.action}.
 
@@ -110,11 +112,11 @@ Dans **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** et **
 
 ![02 Create Remote Site From CANADA07](images/02-create-remote-site-from-canada07.png){.thumbnail}
 
-Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50` en cliquant sur le bouton `+`{.action} pour valider l'association du réseau sources et destination.
+Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50`. Cliquez sur le bouton `+`{.action} pour valider l'association du réseau sources et destination.
 
 ![02 Create Remote Site From CANADA08](images/02-create-remote-site-from-canada08.png){.thumbnail}
 
-Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour la correspondance des stockages source et destination. 
+Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour valider la connexion  du stockage source et destination. 
 
 ![02 Create Remote Site From CANADA09](images/02-create-remote-site-from-canada09.png){.thumbnail}
 
@@ -234,6 +236,8 @@ Les machines virtuelles apparaîtront dans la console de **Prism Element** dans 
 Les machines virtuelles activées sont éteintes, il est nécessaire de faire un démarrage manuel.
 
 ## Aller plus loin
+
+[Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 
