@@ -12,9 +12,9 @@ Do you want to use MySQL or MariaDB ? Learn how to create and manage your databa
 
 ### Prerequisites
 
-- You must have a [CloudDB instance](https://www.ovh.com/en-gb/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
+- You must have a [CloudDB instance](https://www.ovh.com/en-ie/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
 
 ### What is a MySQL database?
 
@@ -48,9 +48,9 @@ To log in to your database, make sure that you have:
 - The password associated with the user
 - The database name
 
-All this information is available in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+All this information is available in the [Web Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-There is also a guide here: [Getting started with the CloudDB service](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/).
+There is also a guide here: [Getting started with the CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
 ### Connect via the command line
 

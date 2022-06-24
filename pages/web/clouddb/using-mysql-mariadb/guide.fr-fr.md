@@ -12,21 +12,21 @@ Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vo
 
 ### Prérequis
 
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/)).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir consulté le [guide de démarrage de CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
 ### Qu'est-ce qu'une base de donnees MySQL ?
+
 MySQL est un système de gestion de bases de données relationnelles développé pour des performances élevées en lecture, contrairement à d'autres systèmes.
 
 Ce moteur est open source et sa maison mère n'est autre qu'Oracle.
 
-
 ### Qu'est-ce qu'une base de donnees MariaDB ?
+
 MariaDB est un dérivé (fork) du système de gestion de bases de données MySQL.
 
 Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL. Tous les bugs et roadmaps sont librement accessibles, contrairement à la version d'Oracle. En plus de cela, le moteur de stockage InnoDB est remplacé par XtraDB et d'autres optimisations promettent des gains en performances.
-
 
 ## Connexion a la base de donnees
 
@@ -34,7 +34,6 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 >
 > Il est à noter que cette offre ne donne pas accès au Host mais aux bases de données hébergées sur celui-ci. Les commandes SQL génériques fonctionnent sans aucun problème, et les logiciels type HeidiSQL ou SQuirreL SQL sont pleinement compatibles.
 > 
-
 
 
 > [!primary]
@@ -47,7 +46,7 @@ Afin de vous connecter à votre base, assurez-vous de :
 - Disposer de l'adresse de votre instance CloudDB
 - Disposer du port de votre instance CloudDB
 - Disposer du nom d'utilisateur de votre instance CloudDB
-- Disposer du mot de passe de votre instance CloudDB
+- Disposer du mot de passe associé à l'utilisateur
 - Disposer du nom de votre base de données
 
 Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.

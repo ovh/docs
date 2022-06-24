@@ -13,23 +13,23 @@ Vuoi utilizzare MySQL o MariaDB? Scopri come creare e gestire i tuoi database co
 
 ### Prerequisiti
 
-- Un'istanza CloudDB attiva
-- Aver consultato [la guida all’utilizzo di CloudDB](../iniziare-a-utilizzare-clouddb/)
+- Disporre di una [istanza CloudDB](https://www.ovh.com/it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Consulta la guida all'avvio di CloudDB (https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 ### Cose un database MySQL?
+
 MySQL è un modello di database relazionale sviluppato per ottimizzare le prestazioni in lettura.
 
 Questo motore è open source e la sua casa madre è Oracle.
 
-
 ### Cose un database MariaDB?
+
 MariaDB è un derivato (fork) del modello di database MySQL.
 
 Questo motore è compatibile al 100% ed è stato progettato per essere più "libero" del suo fratello maggiore MySQL. Contrariamente alla versione di Oracle, tutti i bug e la roadmap sono pubblicamente accessibili. Inoltre, utilizza XtraDB in sostituzione del motore di storage InnoDB e ha introdotto ulteriori ottimizzazioni per garantire un aumento delle performance.
 
-
 ## Connettiti al database
-
 
 > [!primary]
 >
@@ -45,23 +45,21 @@ Questo motore è compatibile al 100% ed è stato progettato per essere più "lib
 
 Per accedere al tuo database, sono necessarie queste informazioni:
 
-- indirizzo della tua istanza
-- porta
-- nome utente
-- password
-- nome del database
+- Disporre dell'indirizzo della tua istanza CloudDB
+- Aver attivato la porta della tua istanza CloudDB
+- Disporre del nome utente della tua istanza CloudDB
+- Disporre della password associata all'utente
+- Disporre del nome del tuo database
 
-Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/){.external}.
+Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Se necessario, consulta la guida: [Inziare a utilizzare CloudDB](../starting_with_clouddb/guide.it-it.md){.ref}
-
+Se necessario, consulta la guida: [Inziare a utilizzare CloudDB](https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
 ### Connessione da riga di comando
 
 ```bash
 mysql --host=server --user=utente --port=porta --password=password nome_database
 ```
-
 
 ### Connessione con script PHP
 
@@ -71,10 +69,9 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
 3. ?>
 ```
 
-
 ### Connessione da software (SQuirreL SQL)
-- Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}
 
+- Avvia SQuirreL SQL, clicca su `Aliases`{.action} e poi su `+`{.action}
 
 ![launch SQuirreL SQL](images/1.PNG){.thumbnail}
 
@@ -85,23 +82,19 @@ mysql --host=server --user=utente --port=porta --password=password nome_database
     - **User Name**: inserisci il nome utente
     - **Password**: inserisci la password
 
-
 ![config connection](images/2.PNG){.thumbnail}
 
 - Clicca su `Connect`{.action} per confermare
-
 
 ![valid connection](images/3.PNG){.thumbnail}
 
 A questo punto, sei connesso al tuo database:
 
-
 ![config connection](images/4.PNG){.thumbnail}
 
-
 ### Connessione con phpMyAdmin
-*Presto disponibile in un’altra guida.*
 
+*Presto disponibile in un’altra guida.*
 
 ## Esporta un database MySQL o MariaDB
 
@@ -110,7 +103,6 @@ A questo punto, sei connesso al tuo database:
 ```bash
 mysqldump --host=server --user=utente --port=porta --password=password nome_database > nome_database.sql
 ```
-
 
 ## Importa un database MySQL o MariaDB
 
