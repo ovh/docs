@@ -133,14 +133,14 @@ Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, mo
 
 #### Modifier manuellement la zone en mode textuel 
 
-> [!primary]
+> [!warning]
 > 
 > Pour les utilisateurs avertis uniquement. 
 > 
 
 Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Modifier en mode textuel`{.action} puis suivez les étapes qui s'affichent.
 
-> [!primary]
+> [!warning]
 > 
 > N'oubliez pas non plus avant de valider vos modifications de mettre à jour la valeur de votre SOA.
 > 
