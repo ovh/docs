@@ -6,7 +6,7 @@ section: MongoDB - Guides
 order: 2
 ---
 
-**Last updated 1st Febuary 2022**
+**Last updated 1st February 2022**
 
 ## Objective
 

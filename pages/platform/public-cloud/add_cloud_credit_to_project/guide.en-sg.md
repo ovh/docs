@@ -6,7 +6,7 @@ section: Project management
 order: 3
 ---
 
-**Last updated 4th Febuary 2022**
+**Last updated 4th February 2022**
 
 ## Objective
 

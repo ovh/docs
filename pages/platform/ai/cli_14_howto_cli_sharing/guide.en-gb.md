@@ -6,7 +6,7 @@ section: Command Line Interface
 order: 204
 ---
 
-**Last updated 27th of May, 2021.**
+**Last updated 27th May, 2021.**
 
 ## Objective
 

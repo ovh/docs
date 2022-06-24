@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/managing-service/'
 ---
 
-**Last updated 1st Febuary 2022**
+**Last updated 1st February 2022**
 
 ## Objective
 
