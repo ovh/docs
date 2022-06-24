@@ -150,16 +150,16 @@ Depuis l'onglet `Zone DNS`{.action}, cliquez sur `Modifier en mode textuel`{.act
 > - Les huit premiers correspondent à une date (ici le 24/06/2022). Vous devrez mettre à jour cette date à la date actuelle si ce n'est pas déjà le cas.
 > - Les deux derniers correspondent au nombre de mises à jour validées et effectuées sur votre zone DNS à la date qui précède ces deux derniers chiffres.
 > 
-> Si vous faites toutes vos modifications en une seule fois (et en une seule validation) vous pourrez ajouter/incrémenter de "1" les deux derniers chiffres : 2022062401.
+> Si vous faites toutes vos modifications en une seule fois (et en une seule validation) vous pourrez ajouter/incrémenter de "1" les deux derniers chiffres : **2022062401**.
 > Si vous faites vos modifications en plusieurs fois dans votre journée (en plusieurs validations), vous devrez incrémenter de "1" la valeur avant chaque nouvelle validation. 
 > 
 
 
 Exemple concret d'une mise à jour de SOA : 
 
-- Le SOA de ma zone DNS à l'ouverture est le suivant **@	IN SOA dns200.anycast.me. tech.ovh.net. (2022062400 86400 3600 3600000 300)**. J'effectue deux modifications le 24/06/2022 dans ma zone DNS et je n'ai pas d'autres modifications à faire pour le moment. La date du SOA est celle du jour : je ne la met pas à jour. J'incrémente uniquement de "1" les deux derniers chiffres pour obtenir : **2022062401** puis je valide mes modifications.
+- Le SOA de ma zone DNS à l'ouverture est le suivant **@	IN SOA dns200.anycast.me. tech.ovh.net. (2022062400 86400 3600 3600000 300)**. J'effectue deux modifications le 24/06/2022 dans ma zone DNS et je n'ai pas d'autres modifications à faire pour le moment. La date du SOA est celle du jour : je la laisse comme cela. J'incrémente uniquement de "1" les deux derniers chiffres pour obtenir : **2022062401** puis je valide mes modifications.
 
-- Je me rends compte dans la journée que je dois refaire une modification dans ma zone DNS, j'effectue donc ma modification. La date du SOA est toujours celle du jour : je ne la met pas à jour. J'incrémente uniquement de "1" les deux derniers chiffres pour obtenir : **2022062402** puis je valide mes modifications.
+- Je me rends compte dans la journée que je dois refaire une modification dans ma zone DNS, j'effectue donc ma modification. La date du SOA est toujours celle du jour : je la laisse comme cela. J'incrémente uniquement de "1" les deux derniers chiffres pour obtenir : **2022062402** puis je valide mes modifications.
 
 - Le 30/06/2022, je dois de nouveau mettre à jour ma zone DNS. Après avoir réalisé mes modifications, je constate que mon SOA est le suivant : **2022062402**. Je mets à jour la date du SOA à celle du 30/06/2022 : les huit premiers chiffres doivent donc être **20220630**. Attention, il s'agit de ma première modification à la date du 30/06/2022, j'incrémente donc les deux derniers chiffres de "1" mais à partir de la valeur "00" (car c'est la première modification que je fais dans la journée). Les huit chiffres doivent donc être : **2022062401**.
 
