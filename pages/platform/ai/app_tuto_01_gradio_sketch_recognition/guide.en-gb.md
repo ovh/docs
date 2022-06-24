@@ -27,7 +27,7 @@ Overview of the app:
 - A [user for AI Apps](https://docs.ovh.com/gb/en/publiccloud/ai/users/).
 - [Docker](https://www.docker.com/get-started) installed on your local computer.
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
-- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model.
+- You also should have followed the steps of the *Image Classification with MNIST dataset* notebook from the [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/weights-and-biases/notebook_Weights_and_Biases_MNIST.ipynb). You will be able to train and save your model. To launch this notebook and run it, please refer to this [documentation](https://docs.ovh.com/gb/en/publiccloud/ai/notebooks/tuto-weights-and-biases/).
 
 ## Instructions
 
