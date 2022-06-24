@@ -62,7 +62,7 @@ head = (
   "</center>"
 )
 
-ref = "Find the whole code [here](ADD github link)."
+ref = "Find the whole code [here](https://github.com/ovh/ai-training-examples/tree/main/apps/gradio/sketch-recognition)."
 ```
 
 Specify the input images size and the classes names.
