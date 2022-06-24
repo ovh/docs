@@ -4,7 +4,7 @@ slug: s3/managing-object-lock
 excerpt:
 section: Object Storage S3 High Performance
 order: 110
-hidden: true
+
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/'
 ---

@@ -4,7 +4,7 @@ slug: s3/managing-object-lock
 excerpt:
 section: Object Storage S3 High Performance
 order: 110
-hidden: true
+
 ---
 
 **Dernière mise à jour le 2 juin 2022**
