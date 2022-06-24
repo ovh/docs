@@ -136,7 +136,7 @@ WORKDIR /workspace
 ADD requirements.txt /workspace/requirements.txt
 ```
 
-Install the `requirements.txt` file which contains your needed Python modules using a `pip install ...` command:
+Install your needed Python modules using a `pip install ...` command with the `requirements.txt` file which contains all modules:
 
 ```console
 RUN pip install -r requirements.txt
