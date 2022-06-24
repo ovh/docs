@@ -6,7 +6,7 @@ section: 'DNS et zone DNS'
 order: 3
 ---
 
-**Dernière mise à jour le 01/06/2022**
+**Dernière mise à jour le 24/06/2022**
 
 ## Objectif
 
@@ -71,11 +71,22 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
 
-**CNAME (Canonical NAME)** : Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
+**CNAME** (**C**anonical **NAME**): Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 
 > [!alert]
 >
 > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME ne fonctionnera alors que partiellement ou pas du tout.
+> 
+
+
+> [!warning]
+>
+> Par convention, les champs CNAME ne peuvent pas être directement utilisés par le domaine dans sa propre zone DNS. En effet, le domaine seul doit obligatoirement pointer directement vers une adresse IP avec un champ de type A (ou AAAA s’il s’agit d’une IPv6).
+> 
+> Pour reprendre l’exemple ci-dessus, vous ne pourrez pas créer un champ CNAME pour le domaine *mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci.
+Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemples : *sous-domaine.mydomain.ovh* ou *www.mydomain.ovh*) du domaine *mydomain.ovh* dans la zone DNS créée pour *mydomain.ovh*.
+>
+> Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS crées pour des sous-domaines en cliquant [ici](#bonusTech).
 >
 
 **Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
@@ -195,6 +206,16 @@ Si vous souhaitez réduire ce délai pour les prochaines éditions de votre zone
 Pour ce faire, positionnez-vous sur l'onglet `Zone DNS`{.action} de votre espace client, cliquez sur le bouton `TTL par défaut`{.action} puis suivez les étapes qui s'affichent. 
 
 Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette manipulation ne peut être effectuée que sur un enregistrement à la fois, en le modifiant ou lors d'un ajout.
+
+### BONUS technique : Cas particuliers concernant l'utilisation des enregistrements DNS <a name="bonusTech"></a>
+
+- Cas concernant les champs CNAME :
+
+Certains utilisateurs créent des zones DNS directement pour le sous-domaine d’un domaine (par exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*). La règle précisée juste au-dessus s’applique alors également dans ce cas de figure. 
+
+La zone DNS étant créée pour le sous-domaine (dans notre exemple *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*), ce dernier est alors considéré comme un domaine à part entière dans sa zone DNS.
+
+De ce fait et dans ce cas bien spécifique, vous ne pourrez pas créer un champ CNAME pour *sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci. Vous pourrez cependant créer des champs CNAME tels que *sous-domain.sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh* ou *xxx.sous-domaine-ayant-sa-propre-zone-DNS.mydomain.ovh*.
 
 ## Aller plus loin
 
