@@ -243,7 +243,7 @@ To launch your Gradio app, you need to attach **1 volume** to this app. It conta
 
 > [!primary]
 >
-> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the third volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Storage container.
+> `--volume <my_saved_model>@<region>/:/workspace/saved_model:RO` is the volume attached for using your **pretrained model**. This volume is read-only (`RO`) because you just need to use the model and not make any changes to this Object Storage container.
 >
 
 If you want your app to be accessible without the need to authenticate, specify it as follows.
