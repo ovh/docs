@@ -1,41 +1,55 @@
 ---
-title: Envoyer des Fax via l’imprimante virtuelle EcoFax - Mac OS X
-excerpt: Comment envoyer des Fax depuis Ecofax en utilisant l'imprimante virtuelle - Version Mac OS X
+title: Envoyer des Fax via l’imprimante virtuelle EcoFax - macOS X
+excerpt: Comment envoyer des Fax depuis EcoFax en utilisant l'imprimante virtuelle - Version macOS X
 slug: envoyer_des_fax_via_limprimante_virtuelle_ecofax_-_mac_os_x
 legacy_guide_number: g1684
 section: Envoi/Réception de fax
 order: 3
 ---
 
-Il vous faut avant tout posséder une ligne de Fax virtuelle. Vous trouverez le détail de cette offre via ces liens : 
+**Dernière mise à jour le 24/06/2022**
 
+> [!alert]
+> Le logiciel EcoFax n'est pas compatible avec les versions 64 bits de macOS. 
+> Nous vous conseillons de priviléger la méthode d'envoi de fax par e-mail. Consultez [ce guide](https://docs.ovh.com/fr/fax/envoyer-des-fax-et-creer-des-campagnes-par-e-mail/) pour plus d'informations.
 
-- Sur la partie dédiée aux Fax : [https://www.ovhtelecom.fr/fax/](https://www.ovhtelecom.fr/fax/)
-- Dans le cadre d'une offre ADSL : [https://www.ovhtelecom.fr/adsl/](https://www.ovhtelecom.fr/adsl/)
+## Objectif
 
+Vous pouvez envoyer des fax OVHcloud de différentes manières. Ce guide vous présente la méthode pour envoyer vos fax via l'imprimante virtuelle EcoFax sur macOS.
 
-Il faut également avoir installé Ecofax sur votre Mac. Ecofax est disponible via ce lien : [https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml](https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml)
+**Découvrez comment envoyer un fax via le logiciel EcoFax sur macOS.**
 
-Votre logiciel Ecofax doit être configuré.
+## Prérequis
 
+- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Avoir téléchargé et configuré le [logiciel EcoFax](https://www.ovhtelecom.fr/fax/logiciel-ecofax.xml)
 
-## 
+## En pratique
+
 Ouvrez le fichier à faxer :
 
-![](images/img_2486.jpg){.thumbnail}
-Faites Fichier puis Imprimer ou bien le raccourci clavier Touche CMD + Touche P afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
+![EcoFax macOS](images/img_2486.jpg){.thumbnail}
 
-![](images/img_2487.jpg){.thumbnail}
-Cliquez sur le bouton PDF :
+Faites `Fichier`{.action} puis `Imprimer`{.action} ou bien le raccourci clavier `Touche CMD` + `Touche P` afin d'ouvrir le gestionnaire d'impression dans votre logiciel.
 
-![](images/img_2488.jpg){.thumbnail}
-Dans le menu déroulant choisissez Ecofax :
+![EcoFax macOS](images/img_2487.jpg){.thumbnail}
 
-![](images/img_2489.jpg){.thumbnail}
-Ecofax s'ouvre et vous demande d'entrer le numéro du destinataire :
+Cliquez sur le bouton `PDF`{.action} :
 
-![](images/img_2490.jpg){.thumbnail}
-Le Fax est en cours d'envoi, il ne vous reste plus qu'à attendre le passage dans "Fax transmis" !
+![EcoFax macOS](images/img_2488.jpg){.thumbnail}
 
-![](images/img_2491.jpg){.thumbnail}
+Dans le menu déroulant choisissez `EcoFax`{.action} :
 
+![EcoFax macOS](images/img_2489.jpg){.thumbnail}
+
+EcoFax s'ouvre et vous demande d'entrer le numéro du destinataire :
+
+![EcoFax macOS](images/img_2490.jpg){.thumbnail}
+
+Le Fax est en cours d'envoi, il ne vous reste plus qu'à attendre le passage dans `Fax transmis`{.action}.
+
+![EcoFax macOS](images/img_2491.jpg){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
