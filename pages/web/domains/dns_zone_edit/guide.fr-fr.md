@@ -86,7 +86,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 > Pour reprendre l’exemple ci-dessus, vous ne pourrez pas créer un champ CNAME pour le domaine *mydomain.ovh* dans la zone DNS que vous avez créé pour celui-ci.
 Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exemples : *sous-domaine.mydomain.ovh* ou *www.mydomain.ovh*) du domaine *mydomain.ovh* dans la zone DNS créée pour *mydomain.ovh*.
 >
-> Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS crées pour des sous-domaines en cliquant [ici](#bonusTech).
+> Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines en cliquant [ici](#bonusTech).
 >
 
 **Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
