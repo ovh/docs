@@ -10,7 +10,7 @@ order: 3
 **Dernière mise à jour le 24/06/2022**
 
 > [!alert]
-> Le logiciel EcoFax n'est pas compatible avec les versions 64 bits de macOS. 
+> Le logiciel EcoFax n'est pas compatible avec les versions 64 bits de macOS.<br>
 > Nous vous conseillons de priviléger la méthode d'envoi de fax par e-mail. Consultez [ce guide](https://docs.ovh.com/fr/fax/envoyer-des-fax-et-creer-des-campagnes-par-e-mail/) pour plus d'informations.
 
 ## Objectif
