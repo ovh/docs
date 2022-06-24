@@ -29,12 +29,12 @@ Dirigez-vous dans l'onglet `Bases de données` et enfin sur `Ajouter une base de
 
 ![private-sql](images/private-sql-createdb01.png){.thumbnail}
 
-Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«_Créer un utilisateur_»** :
+Renseignez les champs en respectant les critères indiqués. Il est possible de créer directement un utilisateur en cochant la case **«Créer un utilisateur»** :
 
 - **Nom de la base** (obligatoire) : il s'agit du nom de votre future base de données.
 - **Nom d'utilisateur** (seulement si la case `Créer un utilisateur` est cochée) : il s'agit de l'utilisateur qui pourra se connecter à votre base de données et y effectuer des requêtes.
 - **Droits** (seulement si la case `Créer un utilisateur` est cochée) : il s'agit des droits qui seront associés à l'utilisateur sur la base de données. Pour une utilisation classique, sélectionnez `Administrateur`{.action}. Les droits peuvent être modifiés par la suite.
-- **Mot de passe**/**Confirmer le mot de passe**** (seulement si la case `Créer un utilisateur` est cochée) : sélectionnez un mot de passe, puis confirmez ce dernier.
+- **Mot de passe**/**Confirmer le mot de passe** (seulement si la case `Créer un utilisateur` est cochée) : sélectionnez un mot de passe, puis confirmez ce dernier.
 
 Cliquez sur `Valider`{.action}.
 
@@ -66,14 +66,14 @@ Vous retrouverez dans la colonne de gauche **« base de données »**, la liste 
 
 Voici la description des 3 types de droits proposés :
 
-- **Administrateur :** autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**
-- **Lecture / Ecriture :** autorisation des requêtes de type **Select / Insert / Update / Delete**
-- **Lecture :** autorisation des requêtes de type **Select**
-- **Aucun :** aucun droit sur la base
+- `Administrateur`: autorisation des requêtes de type **Select / Insert / Update / Delete / Create / Alter / Drop**
+- `Lecture / Ecriture`: autorisation des requêtes de type **Select / Insert / Update / Delete**
+- `Lecture`: autorisation des requêtes de type **Select**
+- `Aucun`: aucun droit sur la base
 
 > [!primary]
 > 
-> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits **«_Administrateur_»** pourra faire du **DLL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits **«_Lecture_/_Ecriture_»** ne fera uniquement que du **DML** (Data Manipulation Language)
+> La segmentation des droits mentionnés ci-dessus est propre à OVHcloud. Ainsi un utilisateur ayant les droits `Administrateur` pourra faire du **DLL** (Data Definition Language) et du **DML** (Data Manipulation Language) alors qu'un utilisateur ayant les droits `Lecture/Ecriture` ne fera uniquement que du **DML** (Data Manipulation Language)
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 

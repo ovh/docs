@@ -6,7 +6,7 @@ section: Configuración
 order: 2
 ---
 
-**Última actualización: 03/02/2022**
+**Última actualización: 23/06/2022**
 
 ## Objetivo
 
@@ -16,8 +16,8 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ## Requisitos
 
-- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener una [instancia CloudDB](https://www.ovh.com/es-es/cloud/cloud-databases/) (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/)
+- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
 
@@ -66,14 +66,14 @@ En la columna izquierda, **"Bases de datos"**, encontrará una lista de las base
 
 La descripción de los tres tipos de derechos propuestos es la siguiente:
 
-- **Administrador:** autorización de consultas de tipo **Select, Insert, Update, Delete, Create, Alter y Drop.**
-- **Lectura/Escritura:** autorización de consultas de tipo **Select, Insert, Update y Delete.**
-- **Lectura:** autorización de consultas de tipo **Select**
-- **Ninguno:** sin derechos sobre la base de datos
+- `Administrador:` autorización de consultas de tipo **Select, Insert, Update, Delete, Create, Alter y Drop.**
+- `Lectura/Escritura:` autorización de consultas de tipo **Select, Insert, Update y Delete.**
+- `Lectura:` autorización de consultas de tipo **Select**
+- `Ninguno:` sin derechos sobre la base de datos
 
 > [!primary]
 > 
-> La segmentación de los permisos mencionados es exclusiva de OVHcloud. De este modo, un usuario con permisos **"_Administrador_"** podrá realizar **DLL** (Data_Definición_Language) y **DML** (Data_Manipulation_Language), mientras que un usuario con permisos **"Lectura/Escritura"** solo realizará la Manipulación del DML (Data_Manipulation_Language).
+> La segmentación de los permisos mencionados es exclusiva de OVHcloud. De este modo, un usuario con permisos `Administrador` podrá realizar **DLL** (Data Definición Language) y **DML** (Data Manipulation Language), mientras que un usuario con permisos `Lectura/Escritura` solo realizará la Manipulación del DML (Data Manipulation Language).
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 

@@ -6,7 +6,7 @@ section: Konfiguracja
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 03-02-2022**
+**Ostatnia aktualizacja z dnia 23-06-2022**
 
 ## Wprowadzenie
 
@@ -16,8 +16,8 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -66,14 +66,14 @@ W kolumnie po lewej stronie **"baza danych"** znajdziesz listę baz danych znajd
 
 Opis 3 rodzajów proponowanych uprawnień:
 
-- **Administrator** Zezwolenie na zapytania typu: Select / Insert / Update / Delete / Create / Alter / Drop
-- **Odczyt/Zapis** Zezwolenie na zapytania typu: Select / Insert / Update / Delete
-- **Odczyt** Zezwolenie na zapytania typu: Select
-- **Żaden** Brak uprawnień dla bazy
+- `Administrator` Zezwolenie na zapytania typu: **Select / Insert / Update / Delete / Create / Alter / Drop**
+- `Odczyt/Zapis` Zezwolenie na zapytania typu: **Select / Insert / Update / Delete**
+- `Odczyt` Zezwolenie na zapytania typu: **Select**
+- `Żaden` Brak uprawnień dla bazy
 
 > [!primary]
 > 
-> Podział wyżej wymienionych uprawnień jest właściwy dla OVHcloud. W ten sposób użytkownik posiadający uprawnienia **"Administrator"** będzie mógł utworzyć **DLL** (Data_Definition_Language) i **DML** (Data_Manipulation_Language), podczas gdy użytkownik posiadający uprawnienia **"Odczyt/Zapis"** będzie mógł utworzyć tylko **DML**.
+> Podział wyżej wymienionych uprawnień jest właściwy dla OVHcloud. W ten sposób użytkownik posiadający uprawnienia `Administrator` będzie mógł utworzyć **DLL** (Data Definition Language) i **DML** (Data Manipulation Language), podczas gdy użytkownik posiadający uprawnienia `Odczyt/Zapis` będzie mógł utworzyć tylko **DML**.
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
 

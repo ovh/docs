@@ -6,7 +6,7 @@ section: Konfiguration
 order: 2
 ---
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 23.06.2022**
 
 ## Ziel
 
@@ -16,8 +16,8 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.com/de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
 
 ## In der praktischen Anwendung
 
@@ -62,14 +62,14 @@ In der linken Spalte **Datenbank** finden Sie die Liste der Datenbanken Ihres Da
 
 Benutzern können die folgenden Berechtigungen erteilt werden:
 
-- **Administrator**: Freigabe von Anfragen des Typs: Select / Insert / Update / Delete / Create / Alter / Drop
-- **Lesen/Schreiben**: Freigabe von Anfragen des Typs: Select / Insert / Update / Delete
-- **Lesen**: Freigabe von Anfragen des Typs: Select
-- **Keine**: Keine Rechte auf der Datenbank
+- `Administrator`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete / Create / Alter / Drop**
+- `Lesen/Schreiben`: Freigabe von Anfragen des Typs: **Select / Insert / Update / Delete**
+- `Lesen`: Freigabe von Anfragen des Typs: **Select**
+- `Keine`: Keine Rechte auf der Datenbank
 
 > [!primary]
 > 
-> Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der **Administrator**-Berechtigung **DLL** (Data_Definition_Language) und **DML** (Data_Manipulation_Language) verwenden, während ein Benutzer mit der Berechtigung **Lesen/Schreiben** nur **DLL** nutzen kann.
+> Die Segmentierung der oben genannten Rechte ist OVHcloud vorbehalten. So kann ein Benutzer mit der `Administrator`-Berechtigung **DLL** (Data Definition Language) und **DML** (Data Manipulation Language) verwenden, während ein Benutzer mit der Berechtigung `Lesen/Schreiben` nur **DLL** nutzen kann.
 >
 
 ![private-sql](images/private-sql-rights02.png){.thumbnail}
