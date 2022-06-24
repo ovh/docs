@@ -4,7 +4,6 @@ slug: s3/managing-object-lock
 excerpt:
 section: Object Storage S3 High Performance
 order: 110
-hidden: true
 routes:
     canonical: 'https://docs.ovh.com/gb/en/storage/s3/managing-object-lock/'
 ---
@@ -13,13 +12,13 @@ routes:
 
 ## Objective
 
-Object Lock is a feature that allows you to store objects using a **W**rite **O**nce, **R**ead **M**any (WORM) model and can be use for scenarios where it is imperative that data is not changed or deleted after it has been written.
+Object Lock is a feature that allows you to store objects using a **W**rite **O**nce, **R**ead **M**any (WORM) model and can be used for scenarios where it is imperative that data is not changed or deleted after it has been written.
 
 **This guide explains how to manage Object Lock**
 
 ## Concept
 
-Object Lock provides two ways to manage object retention. The first is *retention periods* and the second is *legal hold*.
+Object Lock provides two ways to manage object retention. The first is *retention periods* and the second is *Legal hold*.
 
 ### Retention periods
 
@@ -45,14 +44,14 @@ When this mode is set, an object version cannot be overwritten or deleted by any
 
 Designed for any situation where you are not sure for how long you want your objects to stay immutable, Legal hold is an ON/OFF switch that can be applied to every object in a locked bucket, independently from the lock configuration, the object retention or the object age. It can be applied to objects which are locked.
 
-Legal hold provides the same protection as a retention period, but it has no expiration date. Instead, a legal hold remains in place until you explicitly remove it.
+Legal hold provides the same protection as a retention period, but it has no expiration date. Instead, a Legal hold remains in place until you explicitly remove it.
 
 ## Requirements
 
 - Your S3 credentials (access_key and secret_access_key)
 - Aws cli installed and configured
 
-See our [Getting started with S3 Object Storage](https://docs.ovh.com/it/storage/s3/getting-started-with-s3) guide.
+See our [Getting started with S3 Object Storage](https://docs.ovh.com/it/storage/s3/getting-started-with-s3) guide for more information.
 
 ## Instructions
 
@@ -60,22 +59,22 @@ See our [Getting started with S3 Object Storage](https://docs.ovh.com/it/storage
 >
 > All the following examples will use aws cli.
 >
-> To learn more about aws cli, follow this [guide](https://docs.ovh.com/it/storage/s3/getting-started-with-s3/).
+> To learn more about aws cli, please read this [guide](https://docs.ovh.com/it/storage/s3/getting-started-with-s3/).
 >
 
 ### Permissions
 
 | Name | Description |
 |:--|:--|
-| `s3:GetObjectRetention` | Allows users to view an Object Retention mode and retention period |
-| `s3:PutObjectRetention` | Allows users to place an Object Retention configuration on an object |
+| `s3:GetObjectRetention` | Allows users to view an object retention mode and retention period |
+| `s3:PutObjectRetention` | Allows users to place an object retention configuration on an object |
 | `s3:GetObjectLegalHold` | Allows users to view an object Legal hold status |
 | `s3:PutObjectLegalHold` | Allows users to place a Legal hold on an object |
 | `s3:GetBucketObjectLockConfiguration` | Allows users to view a bucket's default retention configuration |
 | `s3:PutBucketObjectLockConfiguration` | Allows users to place an Object Lock configuration on the specified bucket  |
 | `s3:BypassGovernanceRetention` | Allows users to bypass the Governance mode |
 
-*Read this [guide](https://docs.ovh.com/it/storage/s3/identity-and-access-management/) to learn more about IAM*
+*Read this [guide](https://docs.ovh.com/it/storage/s3/identity-and-access-management/) to learn more about IAM.*
 
 ### Object Lock configuration
 
@@ -83,7 +82,7 @@ To use Object Lock, you have to create a bucket that supports the feature with t
 
 > [!primary]
 >
-> The following command does not apply object lock to the bucket’s objects, it only activates the feature.
+> The following command does not apply Object Lock to the bucket’s objects, it only activates the feature.
 >
 
 ```bash
@@ -97,9 +96,9 @@ aws s3api create-bucket \
 > This action also enables versioning of the bucket.
 >
 
-### How to configure Object lock on bucket
+### How to configure Object Lock on bucket
 
-The lock configuration enables you to set a lock configuration on a specified bucket. Once set, the rule specified in the object lock configuration is applied by default to every new object placed in the specified bucket.
+The lock configuration enables you to set a lock configuration on a specified bucket. Once set, the rule specified in the Object Lock configuration is applied by default to every new object placed in the specified bucket.
 
 ```bash
 aws s3api put-object-lock-configuration \
@@ -107,7 +106,7 @@ aws s3api put-object-lock-configuration \
     --object-lock-configuration '{ "ObjectLockEnabled": "Enabled", "Rule": { "DefaultRetention": { "Mode": "GOVERNANCE", "Days": 60 }}}'
 ```
 
-To view the Object lock configuration of a bucket, run:
+To view the Object Lock configuration of a bucket, run:
 
 ```bash
 aws s3api get-object-lock-configuration \
@@ -130,7 +129,7 @@ The result should look like this:
 }
 ```
 
-### How to configure an Object lock retention period on an object
+### How to configure an Object Lock retention period on an object
 
 To set an object retention configuration on an object:
 
@@ -147,7 +146,7 @@ aws s3api put-object-retention \
 > The date format is standard iso8601: `Y-m-dTH:M:S.%3fZ`
 >
 
-To view the Object lock retention configuration of an object, run:
+To view the Object Lock retention configuration of an object, run:
 
 ```bash
 aws s3api get-object-retention \
@@ -182,7 +181,7 @@ aws s3api delete-object \
   --bypass-governance-retention
 ```
 
-### How to configure an Object lock Legal hold on an object
+### How to configure an Object Lock Legal hold on an object
 
 To set a Legal hold configuration to the specified object:
 

@@ -4,16 +4,15 @@ slug: s3/managing-object-lock
 excerpt:
 section: Object Storage S3 High Performance
 order: 110
-hidden: true
 ---
 
-**Dernière mise à jour le 2 juin 2022**
+**Dernière mise à jour le 02/06/2022**
 
 ## Objectif
 
 Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (**W**rite **O**nce, **R**ead **M**any) et peut être utilisé dans des scénarios où il est impératif que les données ne soient pas modifiées ou supprimées après avoir été écrites.
 
-Ce guide explique comment gérer l'Object Lock
+**Ce guide explique comment gérer l'Object Lock.**
 
 ## Concept
 
@@ -25,18 +24,18 @@ Une période de rétention spécifie une période de temps fixe pendant laquelle
 
 Lorsque vous définissez une période de rétention pour vos objets ou vos buckets, vous pouvez choisir le mode de rétention que vous souhaitez appliquer à vos objets. Vous pouvez choisir soit le mode *Governance*, soit le mode *Compliance* pour vos objets.
 
-#### Mode *Governance*
+#### Mode Governance
 
-Vous devriez utiliser le mode Governance si vous souhaitez empêcher la suppression des objets par la plupart des utilisateurs au cours d'une période de rétention prédéfinie, tout en permettant à certains utilisateurs disposant d'autorisations spéciales de modifier les paramètres de rétention ou de supprimer les objets. Les utilisateurs disposant de l'autorisation `s3:BypassGovernanceRetention` peuvent remplacer ou supprimer les paramètres de rétention en mode Governance.
+Vous devriez utiliser le mode *Governance* si vous souhaitez empêcher la suppression des objets par la plupart des utilisateurs au cours d'une période de rétention prédéfinie, tout en permettant à certains utilisateurs disposant d'autorisations spéciales de modifier les paramètres de rétention ou de supprimer les objets. Les utilisateurs disposant de l'autorisation `s3:BypassGovernanceRetention` peuvent remplacer ou supprimer les paramètres de rétention en mode *Governance*.
 
-#### Mode *Compliance*
+#### Mode Compliance
 
-Vous devriez utiliser le mode Compliance si vous avez l'obligation de stocker des données conformes.
+Vous devriez utiliser le mode *Compliance* si vous avez l'obligation de stocker des données conformes.
 Lorsque ce mode est activé, la version d'un objet ne peut être écrasée ou supprimée par aucun utilisateur. Si ce mode est configuré pour un objet, son mode de rétention ne peut pas être modifié et sa période de rétention ne peut pas être raccourcie.
 
 > [!primary]
 >
-> Vous ne devez utiliser le mode Compliance que si vous ne voulez jamais qu'un utilisateur, y compris l'utilisateur administrateur, puisse supprimer les objets pendant une période de rétention prédéfinie.
+> Vous ne devez utiliser le mode *Compliance* que si vous ne voulez jamais qu'un utilisateur, y compris l'utilisateur administrateur, puisse supprimer les objets pendant une période de rétention prédéfinie.
 >
 
 ### Legal hold
@@ -48,7 +47,7 @@ La fonction Legal hold offre la même protection qu'une période de rétention, 
 ## Prérequis
 
 - Connaître vos informations d'identification S3 (access_key et secret_access_key)
-- Aws cli installé et configuré
+- Avoir installé et configuré aws cli
 
 Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/fr/storage/s3/debuter-avec-s3/) » pour plus de détails.
 
@@ -71,9 +70,9 @@ Consultez notre guide « [Débuter avec S3 Object Storage](https://docs.ovh.com/
 | `s3:PutObjectLegalHold` | Permet à un utilisateur de placer une configuration Legal hold sur un objet.
 | `s3:GetBucketObjectLockConfiguration` | Permet à l'utilisateur de visualiser la configuration de rétention par défaut d'un bucket.
 | `s3:PutBucketObjectLockConfiguration` | Permet à l'utilisateur de placer une configuration de rétention sur un bucket spécifique |
-| `s3:BypassGovernanceRetention` | Permet à l'utilisateur de contourner le mode Governance. |
+| `s3:BypassGovernanceRetention` | Permet à l'utilisateur de contourner le mode *Governance*. |
 
-*Lisez ce [guide](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/) pour en savoir plus sur la gestion des identités et des accès*.
+*Lisez ce [guide](https://docs.ovh.com/fr/storage/s3/gestion-des-identites-et-des-acces/) pour en savoir plus sur la gestion des identités et des accès.*
 
 ### Configuration d'Object Lock
 
@@ -81,7 +80,7 @@ Pour utiliser Object Lock, vous devez créer un bucket qui supporte la fonctionn
 
 > [!primary]
 >
-> La commande suivante n'applique pas l'Object Lock' aux objets du bucket, elle active seulement la fonctionnalité.
+> La commande suivante n'applique pas l'Object Lock aux objets du bucket, elle active seulement la fonctionnalité.
 >
 
 ```bash
@@ -105,7 +104,7 @@ aws s3api put-object-lock-configuration \\
     --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
 ```
 
-Pour afficher la configuration Object lock d'un bucket, exécutez :
+Pour afficher la configuration Object Lock d'un bucket, exécutez :
 
 ```bash
 aws s3api get-object-lock-configuration \
@@ -168,10 +167,10 @@ Le résultat devrait ressembler à ceci :
 
 > [!primary]
 >
-> Si vous avez la permission `s3:BypassGovernanceRetention`, vous pouvez effectuer des opérations sur des versions d'objet verrouillées en mode Governance comme si elles n'étaient pas protégées.
+> Si vous avez la permission `s3:BypassGovernanceRetention`, vous pouvez effectuer des opérations sur des versions d'objet verrouillées en mode *Governance* comme si elles n'étaient pas protégées.
 >
 
-Pour contourner le mode Governance, vous devez indiquer explicitement dans votre requête que vous souhaitez contourner ce mode. Pour ce faire, incluez l'en-tête `--bypass-governance-retention` avec votre requête:
+Pour contourner le mode *Governance*, vous devez indiquer explicitement dans votre requête que vous souhaitez contourner ce mode. Pour ce faire, incluez l'en-tête `--bypass-governance-retention` avec votre requête:
 
 ```bash
 aws s3api delete-object \
@@ -180,7 +179,7 @@ aws s3api delete-object \
   --bypass-governance-retention
 ```
 
-### Comment configurer Object lock Legal hold sur un objet
+### Comment configurer Object Lock Legal hold sur un objet
 
 Pour appliquer une configuration Legal hold à l'objet spécifié :
 
@@ -211,4 +210,4 @@ Le résultat devrait ressembler à ceci :
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
