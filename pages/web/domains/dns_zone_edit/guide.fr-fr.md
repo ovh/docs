@@ -161,7 +161,7 @@ Exemple concret d'une mise à jour de SOA :
 
 - Je me rends compte dans la journée que je dois refaire une modification dans ma zone DNS, j'effectue donc ma modification. La date du SOA est toujours celle du jour : je la laisse comme cela. J'incrémente uniquement de "1" les deux derniers chiffres pour obtenir : **2022062402** puis je valide mes modifications.
 
-- Le 30/06/2022, je dois de nouveau mettre à jour ma zone DNS. Après avoir réalisé mes modifications, je constate que mon SOA est le suivant : **2022062402**. Je mets à jour la date du SOA à celle du 30/06/2022 : les huit premiers chiffres doivent donc être **20220630**. Attention, il s'agit de ma première modification à la date du 30/06/2022, j'incrémente donc les deux derniers chiffres de "1" mais à partir de la valeur "00" (car c'est la première modification que je fais dans la journée). Les huit chiffres doivent donc être : **2022062401**.
+- Le 30/06/2022, je dois de nouveau mettre à jour ma zone DNS. Après avoir réalisé mes modifications, je constate que mon SOA est le suivant : **2022062402**. Je mets à jour la date du SOA à celle du 30/06/2022 : les huit premiers chiffres doivent donc être **20220630**. Attention, il s'agit de ma première modification à la date du 30/06/2022, j'incrémente donc les deux derniers chiffres de "1" mais à partir de la valeur "00" (car c'est la première modification que je fais dans la journée). Les huit chiffres doivent donc être : **2022063001**.
 
 #### Utiliser nos assistants de configuration
 
