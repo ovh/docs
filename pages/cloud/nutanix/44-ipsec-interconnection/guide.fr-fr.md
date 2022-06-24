@@ -41,8 +41,8 @@ Dans ce guide nous devons réaliser des tâches sur deux clusters vous trouverez
 &ensp;&ensp;[Etape 2.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**](#pfsenseremovecdrom)<br />
 &ensp;&ensp;[Etape 2.8 Configuration des adresses IP de pfsense au travers de la console](#configureippfsense)<br />
 &ensp;&ensp;[Etape 2.9 Configuration de certaines options au travers de l'interface WEB](#configurepfsenseoptions)<br />
-&ensp;&ensp;[Etape 2.9.1 Changement du mot de passe par défaut de **pfsense**](#changepassword)<br />
-&ensp;&ensp;[Etape 2.9.2 Ajout d'une règle pour autoriser l'administration à distance sur l'adresse publique au travers d'une autre adresse.](#addadminrule)<br />
+&emsp;&emsp;[Etape 2.9.1 Changement du mot de passe par défaut de **pfsense**](#changepassword)<br />
+&emsp;&emsp;[Etape 2.9.2 Ajout d'une règle pour autoriser l'administration à distance sur l'adresse publique au travers d'une autre adresse.](#addadminrule)<br />
 [Etape 3 Configuration de la passerelle en FRANCE](#configuregatewayfrance)<br />
 &ensp;&ensp;[Etape 3.1 Téléchargement des sources pour l'installation de pfsense](#downloadsources-fr)<br />
 &ensp;&ensp;[Etape 3.2 Création de la machine virtuelle **GW-PFSENSE**](#createvmpfsense-fr)<br />
@@ -53,18 +53,15 @@ Dans ce guide nous devons réaliser des tâches sur deux clusters vous trouverez
 &ensp;&ensp;[Etape 3.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**](#pfsenseremovecdrom-fr)<br />
 &ensp;&ensp;[Etape 3.8 Configuration des adresses IP de pfsense au travers de la console](#configureippfsense-fr)<br />
 &ensp;&ensp;[Etape 3.9 Configuration de certaines options au travers de l'interface WEB](#configurepfsenseoptions-fr)<br />
-&ensp;&ensp;[Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**](#changepassword-fr)<br />
-&ensp;&ensp;[Etape 3.9.2 Ajout d'une règle pour autoriser l'administration à distance sur l'adresse publique au travers d'une autre adresse.](#addadminrule-fr)<br />
+&emsp;&emsp;[Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**](#changepassword-fr)<br />
+&emsp;&emsp;[Etape 3.9.2 Ajout d'une règle pour autoriser l'administration à distance sur l'adresse publique au travers d'une autre adresse.](#addadminrule-fr)<br />
 [Etape 4 Mise en place du VPN IPsec](#configurevpnipsec)<br />
 &ensp;&ensp;[Etape 4.1 Configuration du site au CANADA](#ipseccanada)<br />
-&ensp;&ensp;[Etape 4.1.1 Mise en place du VPN IPsec vers la France](#paramipsectofrance)<br />
-&ensp;&ensp;[Etape 4.1.2 Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE](#addfwruletofrance)<br />
+&emsp;&emsp;[Etape 4.1.1 Mise en place du VPN IPsec vers la France](#paramipsectofrance)<br />
+&emsp;&emsp;[Etape 4.1.2 Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE](#addfwruletofrance)<br />
 &ensp;&ensp;[Etape 4.2 Configuration du site en FRANCE](#ipsecfrance)<br />
-&ensp;&ensp;[Etape 4.2.1 Mise en place du VPN IPsec vers le CANADA](#paramipsectocanada)<br />
-&ensp;&ensp;[Etape 4.2.2 Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE](#addruletocanada)<br />
-
-
-
+&emsp;&emsp;[Etape 4.2.1 Mise en place du VPN IPsec vers le CANADA](#paramipsectocanada)<br />
+&emsp;&emsp;[Etape 4.2.2 Ajout d'une règle de pare-feu pour autoriser le flux réseau au travers du VPN IPsec entre le CANADA et la FRANCE](#addruletocanada)<br />
 
 
 
