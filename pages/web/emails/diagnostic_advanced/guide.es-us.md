@@ -78,7 +78,6 @@ Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcl
 
 Compruebe que el dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del dominio](https://docs.ovh.com/us/es/domains/anadir-registro-mx-configuracion-dominio/).
 
-![DNSzone](images/DNS.png){.thumbnail}
 
 ### Tras el envío de un email, recibo un mensaje indicando que no ha podido enviarse mi email, que incluye un código de 3 cifras
 
