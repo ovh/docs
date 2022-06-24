@@ -223,7 +223,7 @@ docker push <shared-registry-address>/gradio_app:latest
 
 ### Launch the app
 
-The following command starts a new job running your Gradio application:
+The following command starts a new app running your Gradio application:
 
 ```console
 ovhai app run \
