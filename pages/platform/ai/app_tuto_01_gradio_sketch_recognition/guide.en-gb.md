@@ -113,7 +113,7 @@ interface.launch(server_name="0.0.0.0", server_port=8080)
 
 ### Write the requirements.txt file for the application
 
-The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
+The `requirements.txt` file will allow us to get all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
 gradio==3.0.10
