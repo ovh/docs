@@ -14,7 +14,7 @@ order: 02
 
 Para seguir los pasos de esta guía, es necesario:
 
-- Tener una [instancia CloudDB](https://www.ovh.com/es-es/cloud/cloud-databases/) (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener una [instancia CloudDB](https://www.ovh.com/es-es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - Haber consultado la [guía de inicio de CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
 
