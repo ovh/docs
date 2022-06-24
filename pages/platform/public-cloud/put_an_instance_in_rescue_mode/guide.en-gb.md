@@ -7,7 +7,7 @@ section: Management via Control Panel
 order: 3
 ---
 
-**Last updated 11th Febuary 2022**
+**Last updated 11th February 2022**
 
 ## Objective
 

@@ -6,7 +6,7 @@ section: AI Notebooks guides
 order: 03
 ---
 
-**Last updated 13th of April, 2022.**
+**Last updated 13th April, 2022.**
 
 ## Objective
 

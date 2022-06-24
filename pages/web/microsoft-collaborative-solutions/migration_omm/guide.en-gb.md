@@ -5,7 +5,7 @@ excerpt: Find out how to migrate your email accounts to OVHcloud using our OVH M
 section: Account migration
 ---
 
-**Last updated 14th Febuary 2022**
+**Last updated 14th February 2022**
 
 ## Objective
 
