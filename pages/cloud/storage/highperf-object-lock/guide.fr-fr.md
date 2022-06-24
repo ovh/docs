@@ -139,7 +139,7 @@ aws s3api put-object-retention \
 "2023-01-01T12:00:00.00Z" }'
 ```
 
-> [!primaire]
+> [!primary]
 >
 > Le format de la date est standard iso8601 : `Y-m-dTH:M:S.%3fZ`
 >
