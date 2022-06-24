@@ -99,7 +99,7 @@ aws s3api create-bucket \
 Object Lock vous permet de définir une période de rétention sur un bucket spécifique. Une fois définie, la règle spécifiée est appliquée par défaut à chaque nouvel objet placé dans le bucket spécifié.
 
 ```bash
-aws s3api put-object-lock-configuration \\
+aws s3api put-object-lock-configuration \
     --bucket object-lock-bucket \
     --object-lock-configuration '{ "ObjectLockEnabled" : "Enabled", "Rule" : { "DefaultRetention" : { "Mode" : "GOVERNANCE", "Days" : 60 }}}'
 ```
