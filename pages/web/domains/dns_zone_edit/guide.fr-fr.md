@@ -127,7 +127,7 @@ Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exem
 
 **TLSA** : Utilisé pour renseigner l'empreinte d'un certificat SSL/TLS.
 
-### Éditer la zone DNS OVHcloud de votre nom domaine
+### Éditer la zone DNS OVHcloud de votre nom de domaine
 
 Vous pouvez éditer la zone DNS OVHcloud de votre nom de domaine en ajoutant, modifiant ou en supprimant un enregistrement DNS. Pour cela, deux possibilités s'offrent à vous :
 
