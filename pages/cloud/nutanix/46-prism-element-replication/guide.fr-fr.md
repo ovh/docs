@@ -217,9 +217,9 @@ La migration est lancée elle sera terminée quand les machines virtuelles appar
 Il est possible d'activer les machines virtuelles sur le site de destination si un problème survient sur le site d'origine c'est ce que l'on nomme la récupération après sinistre.
 
 > [!warning]
-> L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone il est possible d'avoir une perte de données d'au maximum d'une heure. C'est ce que l'on nomme le RPO (Recovery Point Objective).
+> L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone le risque de perte de données maximale est d'une heure. 
 
-Connectez-vous sur le site distant avec **Prism Element**.
+Connectez-vous sur le site fonctionnel avec **Prism Element**.
 
 Allez sur le tableau de bord **Data Protection**.
 
