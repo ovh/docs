@@ -6,22 +6,26 @@ section: Pierwsze kroki
 order: 2
 ---
 
-**Ostatnia aktualizacja z dnia 28-12-2021**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 24-06-2022**
 
 ## Wprowadzenie
 
-**Ten przewodnik prezentuje różne sposoby logowania do vSphere.**
+**Z tego przewodnika dowiesz się, jak się zalogować do vSphere.**
 
 ## Wymagania początkowe
 
 - Posiadanie statusu kontaktu administratora infrastruktury [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), aby otrzymywać dane do logowania.
-- Posiadanie aktywnego identyfikatora użytkownika [utworzonego w Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dodanie adresów IP do sekcji `Bezpieczeństwo`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem [Autoryzacja IP, które mogą łączyć się z vCenter](https://docs.ovh.com/pl/private-cloud/autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
 
 ## W praktyce
 
 ### Uzyskanie danych identyfikacyjnych
 
-Dane identyfikacyjne są wysyłane pocztą elektroniczną podczas tworzenia projektu Private Cloud, przy okazji zmiany hasła lub tworzenia użytkownika:
+Dane identyfikacyjne są wysyłane pocztą elektroniczną podczas tworzenia projektu Hosted Private Cloud, przy okazji zmiany hasła lub tworzenia użytkownika:
 
 ```
 IP/Name : pcc-xxx-xxx-xxx-xxx.ovh.com username : admin password : xxxxxx
@@ -31,27 +35,13 @@ Ten dokument VMware zawiera listę różnych portów, które należy otworzyć n
 
 ### Wykorzystanie klienta HTML5
 
-Klient HTML5 jest dostępny w webowym interfejsie Twojej usługi Private Cloud pod adresem: (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej usługi Private Cloud).
+Klient HTML5 jest dostępny w webowym interfejsie Twojej usługi Hosted Private Cloud pod adresem: (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej usługi Hosted Private Cloud).
 
 ![Logowanie do interfejsu vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
 Przejdź do interfejsu:
 
 ![Logowanie do interfejsu vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
-
-Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter.
-
-### Wykorzystanie web client flash
-
-Web client flash jest dostępny w webowym interfejsie Twojej usługi Private Cloud pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej usługi Private Cloud).
-
-Zaloguj się, podając dane identyfikacyjne, które zostały do Ciebie przesłane:
-
-![Klient vSphere](images/vsphere-client.png){.thumbnail}
-
-Przejdź do interfejsu:
-
-![Logowanie do interfejsu vSphere](images/connection_interface_w.png){.thumbnail}
 
 Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter.
 

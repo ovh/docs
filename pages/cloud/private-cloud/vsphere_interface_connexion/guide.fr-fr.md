@@ -6,16 +6,16 @@ section: Premiers pas
 order: 2
 ---
 
-**Dernière mise à jour le 14/06/2022**
+**Dernière mise à jour le 24/06/2022**
 
 ## Objectif
 
-**Ce guide vous présente les différentes façons de se connecter à vSphere.**
+**Ce guide vous présente comment se connecter à vSphere.**
 
 ## Prérequis
 
 - Être contact administrateur de l'infrastructure [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), pour recevoir des identifiants de connexion.
-- Avoir ajouté des adresses IP dans la partie « Sécurité » de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) ».
+- Avoir ajouté des adresses IP dans la partie `Sécurité`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)). Pour plus d'informations, consultez notre guide « [Autoriser des IP à se connecter au vCenter](https://docs.ovh.com/fr/private-cloud/autoriser-des-ip-a-se-connecter-au-vcenter/) ».
 
 ## En pratique
 
@@ -40,20 +40,6 @@ Vous accéderez ensuite à cette interface :
 ![Connexion à l'interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
 La page `Home`{.action} permet de retrouver les grands menus de votre vCenter.
-
-### Utilisation du web client flash
-
-Le web client flash est disponible sur l’interface web de votre Hosted Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Hosted Private Cloud).
-
-Connectez-vous avec les identifiants qui vous ont été transmis :
-
-![Client vSphere](images/vsphere-client.png){.thumbnail}
-
-Vous accéderez ensuite à cette interface :
-
-![Connexion à l'interface vSphere](images/connection_interface_w.png){.thumbnail}
-
-La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. 
 
 ## Aller plus loin
 
