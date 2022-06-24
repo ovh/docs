@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-compass/'
 ---
 
-**Last updated February 20th 2022**
+**Last updated July 18, 2022**
 
 ## Objective
 
@@ -82,13 +82,13 @@ Select the `General Information`{.action} tab. In the **Login Information** sect
 It should be similar to this when you have a single node (Essential service plan):
 
 ```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true
 ```
 
 And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans):
 
 ```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true
 ```
 
 ### Connect with MongoDB Compass

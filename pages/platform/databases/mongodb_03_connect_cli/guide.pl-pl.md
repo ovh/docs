@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/connect-cli/'
 ---
 
-**Last updated 09th September 2021**
+**Last updated July 18, 2022**
 
 ## Objective
 
@@ -96,13 +96,13 @@ Select the `General Information`{.action} tab. In the **Login Informations** sec
 It should be similar to this when you have a single node (Essential service plan) :
 
 ```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true
 ```
 
 And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
 
 ```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true
 ```
 
 A bit of information to know :
@@ -127,14 +127,14 @@ It means that mongosh is correctly installed and working properly. If you do not
 To perform a connection, simply type *mongosh* followed by the Service URI copied before :
 
 ```
-laptop$mongosh "mongodb://<username>:<password>@<hostname>/admin?tls=true"
+laptop$mongosh "mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true"
 ```
 
 Don't forget you need to modify the username, password and hostname.
 In our example, it will look like this :
 
 ```
-laptop$mongosh "mongodb://bastien:Mysup3rs3cur3p4ssw0rd@node1-acf37bdbe3fcfb34.database.cloud.ovh.net/admin?tls=true"
+laptop$mongosh "mongodb+srv://bastien:Mysup3rs3cur3p4ssw0rd@mongodb-acf37bdb-oe3fcfb34.database.cloud.ovh.net/admin?tls=true"
 ```
 
 Once connected correctly, you should see something similar to :

@@ -6,7 +6,7 @@ section: MongoDB - Guides
 order: 4
 ---
 
-**Last updated December 13<sup>th</sup>, 2021**
+**Last updated July 18, 2022**
 
 ## Objective
 
@@ -40,14 +40,14 @@ Back up your database to a file using:
 
 ```bash
 $ mongodump --gzip --archive=path/to/backup.gz --readPreference=secondaryPreferred \
-  --uri="mongodb://<username>:<password>@<hostname>/admin?tls=true"
+  --uri="mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true"
 ```
 
 If your cluster is e.g. a 3-node replica set, the command might look more like: 
 
 ```bash
 $ mongodump --gzip --archive=path/to/backup.gz --readPreference=secondaryPreferred \
-  --uri="mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true"
+  --uri="mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true"
 ```
 
 The MongoDB user needs to have sufficient privileges to perform the backup operation. This can be ensured by giving this user the `backup` role. 
@@ -72,14 +72,14 @@ Restore your database from a backup using:
 
 ```bash
 $ mongorestore --gzip --archive=path/to/backup.gz \
-  --uri="mongodb://<username>:<password>@<hostname>/admin?tls=true"
+  --uri="mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true"
 ```
 
 Again, if your cluster is e.g. a 3-node replica set, the command might look more like:
 
 ```bash
 $ mongorestore --gzip --archive=path/to/backup.gz \
-  --uri="mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true"
+  --uri="mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true"
 ```
 
 The MongoDB user needs to have sufficient privileges to perform the restore operation. This can be ensured by giving this user the `restore` role.

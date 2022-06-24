@@ -8,7 +8,7 @@ routes:
     canonical: 'https://docs.ovh.com/gb/en/publiccloud/databases/mongodb/tutorial-build-nodejs-app-connected-to-managed-mongodb/'
 ---
 
-**Last updated 11th January 2022**
+**Last updated July 18, 2022**
 
 ## Objective
 
@@ -222,13 +222,13 @@ From the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&f
 It should be similar to this when you have a single node (Essential service plan):
 
 ```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true
 ```
 
 And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
 
 ```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true
 ```
 
 Here we will use a MongoDB cluster.
@@ -236,7 +236,7 @@ Here we will use a MongoDB cluster.
 And we will assign a variable, the `Service URI` of our MongoDB instance database.
 
 ```javascript
-var dbUrl = 'mongodb://<username>:<password>@<host>/admin?replicaSet=replicaset&tls=true'
+var dbUrl = 'mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true'
 ```
 
 Mongoose will connect to the MongoDB database with the connect method:
@@ -510,7 +510,7 @@ var Message = mongoose.model('Message',{
   message : String
 })
 
-var dbUrl = 'mongodb://<username>:<password>@node1-702de32b87554329.database.cloud.ovh.net/admin?replicaSet=replicaset&tls=true'
+var dbUrl = 'mongodb+srv://<username>:<password>@mongodb-702de32b-o87554329.database.cloud.ovh.net/admin?replicaSet=replicaset&tls=true'
 
 app.get('/messages', (req, res) => {
   Message.find({},(err, messages)=> {

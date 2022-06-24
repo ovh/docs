@@ -6,7 +6,7 @@ section: MongoDB - Guides
 order: 301
 ---
 
-**Last updated 13th September 2021**
+**Last updated July 18, 2022**
 
 ## Objective
 
@@ -104,13 +104,13 @@ Select the `General Information`{.action} tab. In the **Login Informations** sec
 It should be similar to this when you have a single node (Essential service plan) :
 
 ```
-mongodb://<username>:<password>@<hostname>/admin?tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?tls=true
 ```
 
 And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans) :
 
 ```
-mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
+mongodb+srv://<username>:<password>@<service hostname>/admin?replicaSet=replicaset&tls=true
 ```
 
 A bit of information to know. It will connect:
@@ -134,7 +134,7 @@ As shown in the code, we use the **MongoDB\Driver\Manager**. Use the official PH
    // PHP version 7.4 used here
     try {
         // connect to OVHcloud Public Cloud Databases for MongoDB (cluster in version 4.4, MongoDB PHP Extension in 1.8.1)
-        $m = new MongoDB\Driver\Manager('mongodb://bastien:Mysup3rs3cur3p4ssw0rd@node1-acf37bdbe3fcfb34.database.cloud.ovh.net/admin?tls=true');
+        $m = new MongoDB\Driver\Manager('mongodb+srv://bastien:Mysup3rs3cur3p4ssw0rd@mongodb-acf37bdb-oe3fcfb34.database.cloud.ovh.net/admin?tls=true');
         echo "Connection to database successfully";
         // display the content of the driver, for diagnosis purpose
         var_dump($m);
@@ -151,7 +151,7 @@ If you are connected, result of the **var_dump($m)** should be like this :
 ```
 Object(MongoDB\Driver\Manager)#1 (2) {
   ["uri"]=>
-  string(100) "mongodb://bastien:Mysup3rs3cur3p4ssw0rd@node1-acf37bdbe3fcfb34.database.cloud.ovh.net/admin?tls=true"
+  string(100) "mongodb+srv://bastien:Mysup3rs3cur3p4ssw0rd@mongodb-acf37bdb-oe3fcfb34.database.cloud.ovh.net/admin?tls=true"
   ["cluster"]=>
   array(1) {
     [0]=>
