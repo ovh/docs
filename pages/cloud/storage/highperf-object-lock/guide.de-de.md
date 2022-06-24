@@ -194,7 +194,7 @@ aws s3api put-object-legal-hold \
 
 To view the Object Lock Legal hold configuration of an object, run:
 
-```bash 
+```bash
 aws s3api get-object-legal-hold \
   --bucket object-lock-bucket \
   --key test.txt
