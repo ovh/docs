@@ -214,7 +214,7 @@ Log in on the shared registry with your usual OpenStack credentials:
 docker login -u <user> -p <password> <shared-registry-address>
 ```
 
-Push the compiled image into the shared registry:
+Push the created image into the shared registry:
 
 ```console
 docker tag gradio_app:latest <shared-registry-address>/gradio_app:latest
