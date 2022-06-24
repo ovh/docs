@@ -39,15 +39,15 @@ Dado que es posible configurar varios registros MX para un mismo dominio, es nec
 
 ### 2. Conocer la configuración MX de OVHcloud
 
-A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}), [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/){.external} o [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
+A continuación se indica la configuración MX de OVHcloud que deberá utilizar para su Email (solo o incluido en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}) o [Exchange](https://www.ovhcloud.com/es-es/emails/){.external}. Le recordamos que nuestros servidores de correo disponen de antispam y antivirus.
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|
-|Dejar el campo vacío|3600|MX|1|mx0.mail.ovh.net.|
-|Dejar el campo vacío|3600|MX|5|mx1.mail.ovh.net.|
-|Dejar el campo vacío|3600|MX|50|mx2.mail.ovh.net.|
-|Dejar el campo vacío|3600|MX|100|mx3.mail.ovh.net.|
-|Dejar el campo vacío|3600|MX|200|mx4.mail.ovh.net.|
+|Dejar el campo vacío|3600|MX|1|mx0.mail.ovh.ca.|
+|Dejar el campo vacío|3600|MX|5|mx1.mail.ovh.ca.|
+|Dejar el campo vacío|3600|MX|50|mx2.mail.ovh.ca.|
+|Dejar el campo vacío|3600|MX|100|mx3.mail.ovh.ca.|
+|Dejar el campo vacío|3600|MX|200|mx4.mail.ovh.ca.|
 
 Deberá utilizar los registros MX anteriores en la configuración DNS del dominio. A continuación explicamos cómo realizar esta operación.
 
