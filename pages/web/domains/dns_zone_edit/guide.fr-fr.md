@@ -67,9 +67,17 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 #### Enregistrements de pointage
 
-**A** : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 du serveur où est hébergé votre site internet.
+**A** : Relie un nom de domaine à une adresse IPv4. Par exemple, l'adresse IPv4 (X.X.X.X où X est un chiffre compris entre 0 et 255) du serveur où est hébergé votre site internet.
 
 **AAAA** : Relie un nom de domaine à une adresse IPv6. Par exemple, l'adresse IPv6 du serveur où est hébergé votre site internet.
+
+> [!warning]
+> 
+> Si votre serveur dispose déjà d'une IPv4, il vous sera recommandé de privilégier l'utilisation de celle-ci à votre IPv6.
+> 
+> En effet, les IPv6 ne sont pas encore correctement interprétées sur l'ensemble du réseau internet : ce qui peut engendrer des perturbations d'affichage ou d'accès.
+> 
+
 
 **CNAME** (**C**anonical **NAME**): Utilise l'adresse IP d'un autre nom de domaine en créant un lien appelé alias. Par exemple, si *www.mydomain.ovh* est un alias de *mydomain.ovh*, cela indique que *www.mydomain.ovh* utilisera l'adresse IP de *mydomain.ovh*.
 
