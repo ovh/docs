@@ -7,11 +7,6 @@ section: Php
 **Last updated 2nd June 2022**
 
 
-
-## Objective  
-
-
-
 ## Server reached max_children
 
 You may see a line in your `/var/log/app.log` file like the following:
@@ -27,8 +22,8 @@ and the estimated average memory size of each process.
 
 There are two ways to increase the number of workers:
 
-* Adjust the [worker sizing hints](./fpm.md) for your project.
-* Upgrade your Web PaaS plan to get more computing resources.
+- Adjust the [worker sizing hints](../fpm/) for your project.
+- Upgrade your Web PaaS plan to get more computing resources.
 
 ## Execution timeout
 
@@ -60,9 +55,8 @@ to monitor your application and help you improve the performance issue.
 
 Otherwise, you may check if the following options are applicable:
 
-* Find the most visited pages and see if they can be cached and/or put behind a CDN.
-  Refer to how caching works.
-* Upgrade your Web PaaS plan to get more computing resources.
+- Find the most visited pages and see if they can be cached and/or put behind a CDN. Refer to how caching works.
+- Upgrade your Web PaaS plan to get more computing resources.
 
 ## PHP process crashed
 
@@ -74,7 +68,7 @@ WARNING: [pool web] child 112 exited on signal 11 (SIGSEGV) after 7.405936 secon
 ```
 
 Either a PHP extension is hitting a segmentation fault or your PHP application code is crashing.
-You should review recent changes in your application and try to find the cause of it, probably with the help of [Xdebug](./xdebug.md).
+You should review recent changes in your application and try to find the cause of it, probably with the help of [Xdebug](../xdebug/).
 
 ## PHP process is killed
 
@@ -87,9 +81,9 @@ WARNING: [pool web] child 429 exited on signal 9 (SIGKILL) after 50.938617 secon
 
 That means the memory usage of your container exceeds the limit allowed on your plan so the kernel kills the offending process. You should try the following:
 
-* Check if the memory usage of your application is expected and try to optimize it.
-* Use [sizing hints](./fpm.md) to reduce the amount of PHP workers, which reduces the memory footprint.
-* Upgrade your Web PaaS plan to get more computing resources.
+- Check if the memory usage of your application is expected and try to optimize it.
+- Use [sizing hints](../fpm/) to reduce the amount of PHP workers, which reduces the memory footprint.
+- Upgrade your Web PaaS plan to get more computing resources.
 
 ## Resource temporarily unavailable
 
@@ -100,17 +94,9 @@ or the requests are taking too long to be processed (such as with calls to exter
 
 To address the issue, you can: 
 
-- Lower the memory consumption of each request so that the amount of PHP workers gets automatically raised.
-
-  This can be customized with the `runtime.sizing_hints.request_memory` key in your `.platform.app.yaml` file.
-  For more details, consult [PHP-FPM sizing](./fpm.md).
+- Lower the memory consumption of each request so that the amount of PHP workers gets automatically raised. nThis can be customized with the `runtime.sizing_hints.request_memory` key in your `.platform.app.yaml` file. For more details, consult [PHP-FPM sizing](../fpm/).
 - Add a CDN.
-
-- Set up [HTTP caching](../../bestpractices/http-caching.md).
-
-- Follow the global [performance tuning recommendations](./tuning.md).
-
+- Set up [HTTP caching](../../bestpractices/http-caching).
+- Follow the global [performance tuning recommendations](../tuning/).
 - Remove stale plugins and extensions when using a CMS.
-
 - Upgrade the container size to get more resources.
-

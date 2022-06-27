@@ -402,8 +402,6 @@ To configure a given service, see the page dedicated to that service.
 
 ### Directus 
 
-![image]()
-
 <p>This template demonstrates building Directus for Web PaaS. It includes a quickstart application configured to run with PostgreSQL. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Directus is an open-source platform that allows you to create and manage an API from data stored in a database.</p>
   
