@@ -5,7 +5,7 @@ excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
 section: Tutorials
 ---
 
-**Last updated 25th March 2022.**
+**Last updated 27th June 2022.**
 
 <style>
  pre {
@@ -186,7 +186,7 @@ Now, any ingress resources will be able to be annotated with:
 "cert-manager.io/cluster-issuer": "letsencrypt-staging"
 </code></pre>
 
-Please refer to [How to install Ingress Nginx Controller](../installing-nginx-ingress/) tutorial for ingresses configuration.
+Please refer to [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](../securing-nginx-ingress-cert-manager/) tutorial for ingresses configuration.
 
 ## Go further
 
