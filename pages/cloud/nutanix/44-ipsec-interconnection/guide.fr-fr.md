@@ -29,7 +29,7 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## En pratique
 
-Dans ce guide nous devons réaliser un partie de l'installation sur le cluster se trouvant au CANADA et une autre en FRANCE, vous trouverez-ci dessous la liste des tâches à effectuer par étape sur chacun des CLUSTERS:
+Dans ce guide nous devons réaliser un partie de l'installation sur le cluster se trouvant au CANADA et une autre en FRANCE, vous trouverez-ci dessous la liste des tâches à effectuer par étape sur chacun des CLUSTERS :
 
 [Etape 1 Présentation de la solution](#presentation)<br /> 
 [Etape 2 Remplacement de la passerelle au CANADA](#configurecanada)<br />
@@ -132,14 +132,14 @@ Connectez-vous sur l'espace client d'OVHcloud ensuite allez sur votre cluster Nu
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-Ce que l'on nomme **IPFO** est un plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement d'OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
+Ce que l'on nomme **IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement d'OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé qui apparait sur le site client d'OVHcloud.
-XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN de la passerelle GW-PFSENSE.
-XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN de la passerelle GW-PFSENSE. 
+XX.XX.XX.N+1    Adresse IP qui doit être affectée à l'interface WAN de la machine virtuelle **GW-PFSENSE**.
+XX.XX.XX.N+2    à utiliser en tant que passerelle sur l'interface WAN de la machine virtuelle **GW-PFSENSE**. 
 XX.XX.XX.N+3    Réseau de diffusion réservé.
 ```
 
@@ -149,7 +149,7 @@ Par exemple si l'adresse **IPFO** affichée sur le site client est 123.123.123.4
 - **123.123.123.6** pour la passerelle sur l'interface **WAN**.
 
 <a name="poweronvmpfsense"></a>
-#### Etape 2.5  Démarrage de la machine virtuelle **GW-PFSENSE**
+#### Etape 2.5 Démarrage de la machine virtuelle **GW-PFSENSE**
 
 Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-PFSENSE`{.action}.
 
@@ -211,7 +211,7 @@ Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 
 Revenez dans la console **Prism central** sur la gestion de la machine virtuelle **GW-PFSENSE** et effectuez ces opérations pour éjecter le **CDROM**
 
-Cliquez sur `Soft Shutdown`{.action} au travers du menu `More` de la machine virtuelle **GW-PFSENSE** pour effectuer un arrêt de cette machine virtuelle.
+Cliquez sur `Soft Shutdown`{.action} au travers du menu `More` de la machine virtuelle **GW-PFSENSE** pour arrêter cette machine virtuelle.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -248,13 +248,13 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 ![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
 <a name="configureippfsense"></a>
-#### Etape 2.8 Configuration des adresses IP de pfsense au travers de la console
+#### Etape 2.8 Configuration des adresses IP de **pfsense** au travers de la console
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress)
+- Interface WAN : Utilisez cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress) pour affecter l'adresse IP et la passerelle sur cette interface.
 
-- Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
+- Interface LAN: 192.168.10.254/24 qui correspond à l'adresse de passerelle du réseau privé du Nutanix suivi du masque de sous réseau. 
 
 Acceptez la licence en appuyant sur la touche `entrée`{.action}.
 
@@ -318,15 +318,15 @@ Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez su
 
 ![Configure pfsense 15](images/04-configureip-pfsense15.png){.thumbnail}
 
-Appuyez sur la touche `entrée`{.action} pour ne pas mettre de passerelle sur l'interface **LAN**
+Ne mettez pas de passerelle sur l'interface **LAN** et appuyez sur la touche `entrée`{.action}.
 
 ![Configure pfsense 16](images/04-configureip-pfsense16.png){.thumbnail}
 
-Appuyez sur la touche `entrée`{.action} pour ne pas activer IPv6 sur l'interface **LAN**
+Appuyez sur la touche `entrée`{.action} afin de désactiver l'usage d'IPv6.
 
 ![Configure pfsense 17](images/04-configureip-pfsense17.png){.thumbnail}
 
-Saisissez `n` et appuyez sur la touche `entrée`{.action} pour ne pas activer le serveur DHCP.
+Saisissez `n` et appuyez sur la touche `entrée`{.action} à la demande d'activation du serveur DHCP.
 
 ![Configure pfsense 18](images/04-configureip-pfsense18.png){.thumbnail}
 
@@ -334,7 +334,7 @@ Répondez `n` et appuyez sur la touche `entrée`{.action} à la demande **revert
 
 ![Configure pfsense 19](images/04-configureip-pfsense19.png){.thumbnail}
 
-Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
+Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé du cluster **Nutanix**.
 
 Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne de commande.
 
@@ -343,7 +343,7 @@ Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne
 <a name="configurepfsenseoptions"></a>
 #### Etape 2.9 Configuration de certaines options au travers de l'interface WEB
 
-Connectez-vous sur la console WEB de pfsense avec cette URL https://192.168.10.254 à partir d'une machine virtuelle se trouvant sur le réseau local **AHV : Base**.
+Connectez-vous sur la console WEB de pfsense avec cette URL https://192.168.10.254 à partir d'une machine virtuelle du cluster se trouvant sur le réseau local **AHV : Base**.
 
 Saisissez ces informations :
 
@@ -378,11 +378,11 @@ Cliquez sur `Save`{.action} pour valider les changements.
 
 Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
 
-![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
+![Authorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
 
-Vérifiez que vous êtes sur l'onglet `WAN` et cliquez sur le bouton `Add`{.action} en bas avec la flèche vers le haut pour créer une règle de pare-feu.
+Vérifiez que vous êtes sur l'onglet `WAN` ensuite cliquez sur le bouton `Add`{.action} en bas avec la flèche vers le haut pour créer une règle de pare-feu.
 
-![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
+![Authorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
 Choisissez ces options dans **Edit Firewall Rule** :
 
@@ -395,7 +395,7 @@ Prenez dans **Source** `Single host or alias` et saisissez `l'adresse publique` 
 
 Cliquez sur la `barre de défilement`{.action} pour aller en bas de la fenêtre.
 
-![Autorisation admin from public ADDRESS 03](images/07-authorize-admin-from-publicaddress03.png){.thumbnail}
+![Authorisation admin from public ADDRESS 03](images/07-authorize-admin-from-publicaddress03.png){.thumbnail}
 
 Ajoutez ces options dans **Destination** :
 
@@ -405,14 +405,13 @@ Ajoutez ces options dans **Destination** :
 
 Cliquez sur `Save`{.action}.
 
-![Autorisation admin from public ADDRESS 04](images/07-authorize-admin-from-publicaddress04.png){.thumbnail}
+![Authorisation admin from public ADDRESS 04](images/07-authorize-admin-from-publicaddress04.png){.thumbnail}
 
 Cliquez sur `Apply Change`{.action} pour activer la règle.
 
-![Autorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
+![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfsense** et accessible depuis internet sur le réseau autorisé avec cette url https://adressewan comme par exemple https://123.123.123.5.
-
+L'interface d'administration de **pfsense** est accessible depuis internet uniquement à partir du réseau autorisé en HTTPS comme https://123.123.123.5.
 
 <a name="configuregatewayfrance"></a>
 ### Etape 3 Configuration de la passerelle en FRANCE
@@ -472,15 +471,14 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-
-L'adresse **IPFO** sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
+Ce que l'on nomme **IPFO** est une plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement d'OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé qui apparait sur le site client d'OVHcloud.
-XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN.
-XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN. 
+XX.XX.XX.N+1    Adresse IP qui doit être affectée à l'interface WAN de la machine virtuelle **GW-PFSENSE**.
+XX.XX.XX.N+2    à utiliser en tant que passerelle sur l'interface WAN de la machine virtuelle **GW-PFSENSE**. 
 XX.XX.XX.N+3    Réseau de diffusion réservé.
 ```
 
@@ -550,7 +548,9 @@ Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 <a name="pfsenseremovecdromfr"></a>
 #### Etape 3.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
+Revenez dans la console **Prism central** sur la gestion de la machine virtuelle **GW-PFSENSE** et effectuez ces opérations pour éjecter le **CDROM**
+
+Cliquez sur `Soft Shutdown`{.action} au travers du menu `More` de la machine virtuelle **GW-PFSENSE** pour arrêter cette machine virtuelle.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -591,9 +591,9 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress-fr)
+- Interface WAN : Utilisez cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddressfr) pour affecter l'adresse IP et la passerelle sur cette interface.
 
-- Interface LAN: 192.168.0.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
+- Interface LAN: 192.168.0.254/24 qui correspond à l'adresse de passerelle du réseau privé du Nutanix suivi du masque de sous réseau. 
 
 Acceptez la licence en appuyant sur la touche `entrée`{.action}.
 
@@ -717,11 +717,11 @@ Cliquez sur `Save`{.action} pour valider les changements.
 
 Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
 
-![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
+![Authorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress01.png){.thumbnail}
 
 Vérifiez que vous êtes sur l'onglet `WAN` et cliquez sur le bouton `Add`{.action} en bas avec la flèche vers le haut pour créer une règle de pare-feu.
 
-![Autorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
+![Authorisation admin from public ADDRESS](images/07-authorize-admin-from-publicaddress02.png){.thumbnail}
 
 Choisissez ces options dans **Edit Firewall Rule** :
 
@@ -734,7 +734,7 @@ Prenez dans **Source** `Single host or alias` et saisissez `l'adresse publique` 
 
 Cliquez sur la `barre de défilement`{.action} pour aller en bas de la fenêtre.
 
-![Autorisation admin from public ADDRESS 03](images/07-authorize-admin-from-publicaddress03.png){.thumbnail}
+![Authorisation admin from public ADDRESS 03](images/07-authorize-admin-from-publicaddress03.png){.thumbnail}
 
 Ajoutez ces options dans **Destination** :
 
@@ -744,19 +744,19 @@ Ajoutez ces options dans **Destination** :
 
 Cliquez sur `Save`{.action}.
 
-![Autorisation admin from public ADDRESS 04](images/07-authorize-admin-from-publicaddress04.png){.thumbnail}
+![Authorisation admin from public ADDRESS 04](images/07-authorize-admin-from-publicaddress04.png){.thumbnail}
 
 Cliquez sur `Apply Change`{.action} pour activer la règle.
 
-![Autorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
+![Authorisation admin from public ADDRESS 05](images/07-authorize-admin-from-publicaddress05.png){.thumbnail}
 
-L'interface d'administration de **pfsense** et accessible depuis internet sur le réseau autorisé avec cette url https://adressewan comme par exemple https://123.123.123.5.
+L'interface d'administration de **pfsense** et accessible depuis internet sur le réseau autorisé avec cette url https://adressewan comme https://123.123.123.5.
 
 
 <a name="configurevpnipsec"></a>
 ### Etape 4 Mise en place du VPN IPsec
 
-Maintenant que les deux passerelles ont été remplacées nous allons interconnecter les deux sites au travers d'un VPN IPsec.
+Maintenant que les deux passerelles ont été remplacées nous allons configurer le VPN IPsec pour permettre la communication entre les deux clusters.
 
 <a name="ipseccanada"></a>
 #### Etape 4.1 Configuration du site au CANADA
@@ -836,7 +836,7 @@ Cliquez sur `Save`{.action}
 
 ![Create VPN from CANADA 11](images/08-configure-vpn-from-canada11.png){.thumbnail}
 
-Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPsec coté CANADA
+Cliquez sur `Apply Changes`{.action} pour finaliser la création du VPN IPsec sur la machine virtuelle **pfsense** du CANADA.
 
 ![Create VPN from CANADA 12](images/08-configure-vpn-from-canada12.png){.thumbnail}
 
@@ -960,7 +960,7 @@ Cliquez sur `Rules`{.action} dans le menu `Firewall`.
 
 ![Create IPsec firewall rule FRANCE01](images/11-addipsecrule-from-france01.png){.thumbnail}
 
-Positionnez-vous sur l'onglet `IPsec`{.action} et cliquez en bas sur `Add`{.action} avec la flêche vers le haut.
+Positionnez-vous sur l'onglet `IPsec`{.action} et cliquez en bas sur `Add`{.action} avec la flèche vers le haut.
 
 ![Create IPsec firewall rule FRANCE02](images/11-addipsecrule-from-france02.png){.thumbnail}
 
@@ -998,6 +998,9 @@ Le paramétrage du VPN est terminée sur les deux clusters, il est possible de m
 ## Aller plus loin
 
 [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-overviewn/)
+
+[Réplication asynchrone ou synchrone au travers de Prism Element](https://docs.ovh.com/fr/nutanix/prism-element-nutanix-replication/)
+
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
