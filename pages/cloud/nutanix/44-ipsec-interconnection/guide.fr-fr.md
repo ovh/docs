@@ -273,7 +273,7 @@ Répondez `y`{.action} à la question si l'on veut valider les changements et ap
 
 ![Configure pfsense 05](images/04-configureip-pfsense05.png){.thumbnail}
 
-Saisissez `2` pour Choisir `Set interface(s) IP address` , ensuite appuyez sur la touche `entrée`{.action}.
+Saisissez `2` pour choisir `Set interface(s) IP address` , ensuite appuyez sur la touche `entrée`{.action}.
 
 ![Configure pfsense 06](images/04-configureip-pfsense06.png){.thumbnail}
 
@@ -414,7 +414,7 @@ L'interface d'administration de **pfsense** et accessible depuis internet sur le
 <a name="configuregatewayfrance"></a>
 ### Etape 3 Configuration de la passerelle en FRANCE
 
-Nous allons effectuer l'installation de la passerelle **GW-PSENSE** en France sur la plan IP **192.168.0.0/24**.
+Nous allons effectuer l'installation de la passerelle **GW-PSENSE** en France sur le plan IP **192.168.0.0/24**.
 
 <a name="downloadsources-fr"></a>
 #### Etape 3.1 Téléchargement des sources pour l'installation de pfsense
@@ -470,7 +470,7 @@ Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Privat
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
 
-L'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
+L'adresse **IPFO** sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
