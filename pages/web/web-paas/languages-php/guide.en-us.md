@@ -18,7 +18,6 @@ order: 4
 |  8.1 |  
 
 
-
 ## Deprecated versions
 
 | **Grid** | 
@@ -47,21 +46,20 @@ web:
             protocol: http
 ```
 
-The above configuration executes the `run.php` script in the application root when the container starts using the PHP-CLI SAPI,
-just before the deploy hook runs,
-but does *not* launch PHP-FPM.
+The above configuration executes the `run.php` script in the application root when the container starts using the PHP-CLI SAPI, ust before the deploy hook runs but does *not* launch PHP-FPM.
+
 It also tells the front-controller (Nginx) to connect to your application via a TCP socket,
 which is specified in the `PORT` environment variable.
 Note that the start command _must_ run in the foreground.
 
 If not specified, the effective default start command varies by PHP version:
 
-* On PHP 5.x, it's `/usr/sbin/php5-fpm`.
-* On PHP 7.0, it's `/usr/sbin/php-fpm7.0`.
-* On PHP 7.1, it's `/usr/sbin/php-fpm7.1-zts`.
-* On PHP 7.2, it's `/usr/sbin/php-fpm7.2-zts`.
-* On PHP 7.3, it's `/usr/sbin/php-fpm7.3-zts`.
-* On PHP 7.4, it's `/usr/sbin/php-fpm7.4-zts`.
+- On PHP 5.x, it's `/usr/sbin/php5-fpm`.
+- On PHP 7.0, it's `/usr/sbin/php-fpm7.0`.
+- On PHP 7.1, it's `/usr/sbin/php-fpm7.1-zts`.
+- On PHP 7.2, it's `/usr/sbin/php-fpm7.2-zts`.
+- On PHP 7.3, it's `/usr/sbin/php-fpm7.3-zts`.
+- On PHP 7.4, it's `/usr/sbin/php-fpm7.4-zts`.
 
 While you can call it manually that's generally not necessary.
 Note that PHP-FPM cannot run simultaneously along with another persistent process (such as ReactPHP or Amp).
@@ -131,10 +129,11 @@ From PHP 7.4, you can use OPcache preloading,
 which allows you to load selected files into shared memory when PHP-FPM starts.
 That means functions and classes in those files are always available and don't need to be autoloaded,
 at the cost of any changes to those files requiring a PHP-FPM restart.
+
 Since PHP-FPM restarts on each new deploy, this feature is a major win on Web PaaS and we recommend using it aggressively.
 
 To enable preloading, add a `php.ini` value that specifies a preload script.
-Any [`php.ini` mechanism](ini) works,
+Any `php.ini` mechanism ini works,
 but using a variable in `.platform.app.yaml` is the recommended approach:
 
 ```yaml
@@ -178,10 +177,8 @@ because the dependencies aren't yet present.
 
 To resolve this, you have two options:
 
-* Have your script `include` dependencies instead of `require`
-  and fail gracefully if the dependencies aren't there.
-* Enable preloading with a variable that [isn't available during the build](../development-variables/#setting-variables).
-  Then preloading happens only on deploy.
+- Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
+- Enable preloading with a variable that [isn't available during the build](../../development-variables/#setting-variables). Then preloading happens only on deploy.
 
 ## FFI
 
@@ -205,18 +202,18 @@ runtime:
 
 2\. Specify a [preload file](#opcache-preloading) in which you can call `FFI::load()`.
 
-   Using `FFI::load()` in preload is considerably faster than loading the linked library on each request or script run.
+Using `FFI::load()` in preload is considerably faster than loading the linked library on each request or script run.
 
 3\. Ensure the library is available locally, but not in a web-accessible directory.
 
-   `.so` files may included in your repository, downloaded in your build hook, or compiled in your build hook.
-   If compiling C code, `gcc` is available by default.
-   If compiling Rust code, you can download the [Rust compiler in the build hook](https://doc.rust-lang.org/stable/book/ch01-01-installation.html).
+`.so` files may included in your repository, downloaded in your build hook, or compiled in your build hook.
+If compiling C code, `gcc` is available by default.
+If compiling Rust code, you can download the [Rust compiler in the build hook](https://doc.rust-lang.org/stable/book/ch01-01-installation.html).
 
-4\. For running FFI from the command line,
+4\. Running FFI from the command line. 
 
-   you need to enable the OPcache for command line scripts in addition to the preloader.
-   The standard pattern for the command would be `php -d opcache.preload="your-preload-script.php" -d opcache.enable_cli=true your-cli-script.php`.
+You need to enable the OPcache for command line scripts in addition to the preloader.
+The standard pattern for the command would be `php -d opcache.preload="your-preload-script.php" -d opcache.enable_cli=true your-cli-script.php`.
 
 A working [FFI example](https://github.com/platformsh-examples/php-ffi) is available online for both C and Rust.
 
@@ -278,9 +275,7 @@ The individual service pages have more information on configuring each service.
 
 
 
-{{% config-reader %}}
-[`platformsh/config-reader` Composer library](https://github.com/platformsh/config-reader-php)
-{{% /config-reader%}}
+[Composer library](https://github.com/platformsh/config-reader-php)
 
 ## Runtime configuration
 
@@ -294,9 +289,11 @@ See that reference for details on what can be changed.
 
 ![image](images/gatsby.png)
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
-<p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
+This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.
+
+Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.
+
+Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.
   
 #### Features
 - Node.js 14<br />  
@@ -314,7 +311,7 @@ See that reference for details on what can be changed.
 
 ![image](images/drupal8.png)
 
-<p>This template builds Drupal 8 in a multisite configuration using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>This template builds Drupal 8 in a multisite configuration using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>It also includes instructions and a script to help with setting up additional multisite instances, although depending on your particular needs it may require some customization.</p>
 <p>Drupal is a flexible and extensible PHP-based CMS framework capable of hosting multiple sites on a single code base.</p>
   
@@ -348,7 +345,7 @@ See that reference for details on what can be changed.
 
 ![image](images/nextcloud.png)
 
-<p>This template builds Nextcloud on Web PaaS.  Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build.  (Self-update through the web interface is not supported.)</p>
+<p>This template builds Nextcloud on Web PaaS. Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build. (Self-update through the web interface is not supported.)</p>
 <p>The admin user is created automatically during the first deploy, and its name and password will be available in the deploy log.  Be sure to check for it there so you can log in.</p>
 <p>Nextcloud is a PHP-based groupware server with installable apps, file synchronization, and federated storage.</p>
   
@@ -382,7 +379,7 @@ See that reference for details on what can be changed.
 
 ![image](images/typo3.png)
 
-<p>This template builds the TYPO3 CMS for Web PaaS.  It comes pre-configured with MariaDB for storage and Redis for caching.  A command line installer will automatically initialize the site on first deploy.</p>
+<p>This template builds the TYPO3 CMS for Web PaaS. It comes pre-configured with MariaDB for storage and Redis for caching. A command line installer will automatically initialize the site on first deploy.</p>
 <p>TYPO3 is a PHP-based Content Management System</p>
   
 #### Features
@@ -398,7 +395,7 @@ See that reference for details on what can be changed.
 
 ![image](images/basicphp.png)
 
-<p>This template provides the most basic configuration for running a custom PHP project built with Composer.  It includes but doesn't make use of the Web PaaS `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
+<p>This template provides the most basic configuration for running a custom PHP project built with Composer. It includes but doesn't make use of the Web PaaS `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
 <p>PHP is a high-performance scripting language especially well suited to web development.</p>
   
 #### Features
@@ -408,9 +405,9 @@ See that reference for details on what can be changed.
  
 [View the repository](https://github.com/platformsh-templates/php) on GitHub.
 
-### Wordpress (Bedrock) 
+### WordPress (Bedrock) 
 
-![image]()
+![image](images/wordpress.png)
 
 <p>This template builds WordPress on Web PaaS using the Bedrock boilerplate by Roots with Composer. Plugins and themes should be managed with Composer exclusively. The only modifications made to the standard Bedrock boilerplate have been providing database credentials and main site url parameters via environment variables. With this configuration, the database is automatically configured such that the installer will not ask you for database credentials. While Bedrock provides support to replicate this configuration in a `.env` file for local development, an example Lando configuration file is included as the recommendated method to do so.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP, and Bedrock is a Composer-based WordPress boilerplate project with a slightly modified project structure and configuration protocol. </p>
@@ -427,7 +424,7 @@ See that reference for details on what can be changed.
 
 ![image](images/laravel.png)
 
-<p>This template provides a basic Laravel skeleton.  It comes pre-configured to use a MariaDB database and Redis for caching and sessions using a Laravel-specific bridge library that runs during Composer autoload.  The public files symlink is also replaced with a custom web path definition so it is unnecessary.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template provides a basic Laravel skeleton.  It comes pre-configured to use a MariaDB database and Redis for caching and sessions using a Laravel-specific bridge library that runs during Composer autoload.  The public files symlink is also replaced with a custom web path definition so it is unnecessary. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Laravel is an opinionated, integrated rapid-application-development framework for PHP.</p>
   
 #### Features
@@ -455,8 +452,6 @@ See that reference for details on what can be changed.
 
 ### WooCommerce (Bedrock) for Web PaaS 
 
-![image]()
-
 <p>This template builds WordPress on Web PaaS using the Bedrock boilerplate by Roots with Composer. It includes WooCommerce and JetPack as dependencies, which when enabled will quickly allow you to create a store on WordPress.</p>
 <p>Plugins and themes should be managed with Composer exclusively. The only modifications made to the standard Bedrock boilerplate have been providing database credentials and main site url parameters via environment variables. With this configuration, the database is automatically configured such that the installer will not ask you for database credentials. While Bedrock provides support to replicate this configuration in a <code>.env</code> file for local development, an example Lando configuration file is included as the recommendated method to do so.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP, and Bedrock is a Composer-based WordPress boilerplate project with a slightly modified project structure and configuration protocol. WooCommerce is an open-source eCommerce platform and plugin for WordPress.</p>
@@ -473,7 +468,7 @@ See that reference for details on what can be changed.
 
 ![image](images/drupal8.png)
 
-<p>This template builds Drupal 9 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>This template builds Drupal 9 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
@@ -490,7 +485,7 @@ See that reference for details on what can be changed.
 
 ![image](images/drupal8.png)
 
-<p>This template builds Drupal 8 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>This template builds Drupal 8 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
@@ -506,7 +501,7 @@ See that reference for details on what can be changed.
 
 ![image](images/drupal8.png)
 
-<p>This template builds the Australian government's GovCMS Drupal 8 distribution using the Drupal Composer project for better flexibility.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>This template builds the Australian government's GovCMS Drupal 8 distribution using the Drupal Composer project for better flexibility. It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
 <p>GovCMS is a Drupal distribution built for the Australian government, and includes configuration optimized for managing government websites.</p>
   
 #### Features
@@ -523,7 +518,7 @@ See that reference for details on what can be changed.
 
 ![image](images/pimcore.png)
 
-<p>This template builds Pimcore 5 on Web PaaS.  It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file.  It will self-install on the first deploy.</p>
+<p>This template builds Pimcore 5 on Web PaaS. It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file. It will self-install on the first deploy.</p>
 <p>Pimcore is a Symfony-based Digital Experience Platform.</p>
   
 #### Features
@@ -539,8 +534,9 @@ See that reference for details on what can be changed.
 
 ![image](images/wordpress.png)
 
-<p>This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbloch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
-<p>WordPress is a blogging and lightweight CMS written in PHP.</p>
+This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbloch/wordpress</code></a> "Composer Fork" of WordPress. Plugins and themes should be managed with Composer exclusively. A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials. For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.
+
+WordPress is a blogging and lightweight CMS written in PHP.
   
 #### Features
 - PHP 7.4<br />  
@@ -554,8 +550,9 @@ See that reference for details on what can be changed.
 
 ![image](images/opigno.png)
 
-<p>This template builds the Opigno Drupal 8 distribution using the [Drupal Composer project](https://github.com/drupal-composer/drupal-project) for better flexibility.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.</p>
-<p>Opigno is a Learning Management system built as a Drupal distribution.</p>
+This template builds the Opigno Drupal 8 distribution using the [Drupal Composer project](https://github.com/drupal-composer/drupal-project) for better flexibility.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
+
+Opigno is a Learning Management system built as a Drupal distribution.
   
 #### Features
 - PHP 7.3<br />  
@@ -590,7 +587,7 @@ See that reference for details on what can be changed.
 
 ### WordPress (Vanilla) for Web PaaS 
 
-![image]()
+![image](images/wordpress.png)
 
 <p>This template builds WordPress on Web PaaS, installing WordPress to a subdirectory instead of to the project root. It does not use a package management tool like Composer, and updating core, themes, and plugins should be done with care. A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP.</p>
@@ -601,4 +598,3 @@ See that reference for details on what can be changed.
 - Automatic TLS certificates<br />  
  
 [View the repository](https://github.com/platformsh-templates/wordpress-vanilla) on GitHub.
-

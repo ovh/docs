@@ -53,7 +53,7 @@ If more simultaneous requests are received than the number of workers,
 then some requests wait.
 The default worker count is deliberately set rather conservative
 but can be improved in many cases.
-See the [PHP-FPM sizing](./fpm.md) page
+See the [PHP-FPM sizing](../fpm/) page
 for how to determine and set a more optimal value.
 
 ## Enable preloading
@@ -94,14 +94,8 @@ The OPcache can be configured using `php.ini` values, which in this case are bes
 
 The most important values to set are:
 
-* `opcache.max_accelerated_files`:
-  The max number of files that the OPcache may cache at once.
-  If this is lower than the number of files in the application,
-  it starts thrashing and becomes less effective.
-* `opcache.memory_consumption`:
-  The total memory that the OPcache may use.
-  If the application is larger than this,
-  the cache starts thrashing and becomes less effective.
+- `opcache.max_accelerated_files`: The max number of files that the OPcache may cache at once. If this is lower than the number of files in the application, it starts thrashing and becomes less effective.
+- `opcache.memory_consumption`: The total memory that the OPcache may use. If the application is larger than this, the cache starts thrashing and becomes less effective.
 
 To determine how many files you have, run this command from your app root:
 
