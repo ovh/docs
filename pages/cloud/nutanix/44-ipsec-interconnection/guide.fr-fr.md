@@ -319,19 +319,23 @@ Appuyez sur la touche `entrée`{.action} pour ne pas mettre de passerelle sur l'
 
 ![Configure pfsense 16](images/04-configureip-pfsense16.png){.thumbnail}
 
-Saisissez `n` et appuyez sur la touche `entrée`{.action} pour ne pas activer le serveur DHCP.
+Appuyez sur la touche `entrée`{.action} pour ne pas activer IPv6 sur l'interface **LAN**
 
 ![Configure pfsense 17](images/04-configureip-pfsense17.png){.thumbnail}
 
+Saisissez `n` et appuyez sur la touche `entrée`{.action} pour ne pas activer le serveur DHCP.
+
+![Configure pfsense 18](images/04-configureip-pfsense18.png){.thumbnail}
+
 Répondez `n` et appuyez sur la touche `entrée`{.action} à la demande **revert to HTTP as the webConfigurator protocol**.
 
-![Configure pfsense 18](images/04-configureip-pfsense17.png){.thumbnail}
+![Configure pfsense 19](images/04-configureip-pfsense19.png){.thumbnail}
 
 Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
 
 Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne de commande.
 
-![Configure pfsense 19](images/04-configureip-pfsense19.png){.thumbnail}
+![Configure pfsense 20](images/04-configureip-pfsense20.png){.thumbnail}
 
 <a name="configurepfsenseoptions"></a>
 #### Etape 2.9 Configuration de certaines options au travers de l'interface WEB
@@ -648,25 +652,29 @@ Prenez l'option `2` et appuyez sur la touche `entrée`{.action} pour modifier l'
 
 Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez sur la touche `entrée`{.action}.
 
-![Configure pfsense 15](images/04-configureip-pfsense15.png){.thumbnail}
+![Configure pfsense 15](images/04-yconfigureip-pfsense15-fr.png){.thumbnail}
 
 Appuyez sur la touche `entrée`{.action} pour ne pas mettre de passerelle sur l'interface **LAN**
 
-![Configure pfsense 16](images/04-configureip-pfsense16.png){.thumbnail}
+![Configure pfsense 16](images/04-yconfigureip-pfsense16-fr.png){.thumbnail}
+
+Appuyez sur la touche `entrée`{.action} pour desactiver IPv6 sur l'interface **LAN**
+
+![Configure pfsense 17](images/04-yconfigureip-pfsense17-fr.png){.thumbnail}
 
 Saisissez `n` et appuyez sur la touche `entrée`{.action} pour ne pas activer le serveur DHCP.
 
-![Configure pfsense 17](images/04-configureip-pfsense17.png){.thumbnail}
+![Configure pfsense 18](images/04-yconfigureip-pfsense18-fr.png){.thumbnail}
 
 Répondez `n` et appuyez sur la touche `entrée`{.action} à la demande **revert to HTTP as the webConfigurator protocol**.
 
-![Configure pfsense 18](images/04-configureip-pfsense17.png){.thumbnail}
+![Configure pfsense 19](images/04-yconfigureip-pfsense19-fr.png){.thumbnail}
 
 Il est maintenant possible d'administrer la passerelle en HTTPS sur le réseau privé.
 
 Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne de commande.
 
-![Configure pfsense 19](images/04-configureip-pfsense19.png){.thumbnail}
+![Configure pfsense 20](images/04-yconfigureip-pfsense20-fr.png){.thumbnail}
 
 <a name="configurepfsenseoptions-fr"></a>
 #### Etape 3.9 Configuration de certaines options au travers de l'interface WEB
@@ -680,7 +688,7 @@ Saisissez ces informations :
 
 Et cliquez sur `SIGN IN`{.action}.
 
-![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
+![WEB Configure pfsense 01](images/05-configure-pfsense01-fr.png){.thumbnail}
 
 <a name="changepassword-fr"></a>
 ##### Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**
