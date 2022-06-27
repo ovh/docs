@@ -5,7 +5,7 @@ slug: using-lb
 section: Getting started
 ---
 
-**Last updated 5th April 2022**
+**Last updated 24th June 2022**
 
 <style>
  pre {
@@ -31,7 +31,7 @@ section: Getting started
 
 # Using the OVHcloud Managed Kubernetes LoadBalancer
 
-In this tutorial we are explaining how to deploy services on OVHcloud Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantage. Then  we will see a complete example of `LoadBalancer` service deployment.
+In this tutorial we are explaining how to deploy services on OVHcloud Managed Kubernetes service using our `LoadBalancer` to get external traffic into your cluster. We will begin by listing the main methods to expose Kubernetes services outside the cluster, with its advantages and disadvantages. Then we will see a complete example of `LoadBalancer` service deployment.
 
 ## Before you begin
 
@@ -39,7 +39,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 > [!warning]
 > When a __LoadBalancer__ Service resource is created inside a Managed Kubernetes cluster, an associated Public Cloud Load Balancer is automatically created, allowing public access to your Kubernetes application.
-> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-ie/public-cloud/prices/#network)
+> The Public Cloud Load Balancer service is hourly charged and will appear in your Public Cloud project. For more information, please refer to the following documentation: [Network Load Balancer price](https://www.ovhcloud.com/en-au/public-cloud/prices/#network)
 
 ## Some concepts: ClusterIP, NodePort, Ingress and LoadBalancer
 
@@ -91,7 +91,16 @@ There are several annotations available to customize your load balancer:
 
 - `service.beta.kubernetes.io/ovh-loadbalancer-proxy-protocol`: Used on the service to enable the proxy protocol on all backends. Supported values: `v1`, `v2`, `v2_ssl`, `v2_ssl_cn`.
 
-- `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources`: Used on the service to specify allowed client IP source ranges. Value: comma separated list of CIDRs. For example: `10.0.0.0/24,172.10.0.1`. **Deprecated** please use `loadBalancerSourceRanges` spec instead, see [Restrict Access For LoadBalancer Service](https://kubernetes.io/docs/home/){.external}.
+OVHcloud Load Balancer services handle 4 ProxyProtocol modes:
+
+|Mode|Description|
+|---|---|
+|v1|Version 1 in text format. This is the most widely supported version.|
+|v2|Version 2 in binary format without any options. This is an optimized version of version 1.|
+|v2-ssl|Version 2, with a field describing the SSL connection, if applicable.|
+|v2-ssl-cn|Version 2 with SSL (v2-ssl), with the "Common Name" field of the certificate used, if applicable.|
+
+- `service.beta.kubernetes.io/ovh-loadbalancer-allowed-sources`: Used on the service to specify allowed client IP source ranges. Value: comma separated list of CIDRs. For example: `10.0.0.0/24,172.10.0.1`. **Deprecated**, please use `loadBalancerSourceRanges` spec instead, see [Restrict Access For LoadBalancer Service](https://kubernetes.io/docs/home/){.external}.
 
 - `service.beta.kubernetes.io/ovh-loadbalancer-balance`: Used on the service to set the algorithm to use for load balancing. Supported values: `first`, `leastconn`, `roundrobin`, `source`. Default: `roundrobin`.
 
