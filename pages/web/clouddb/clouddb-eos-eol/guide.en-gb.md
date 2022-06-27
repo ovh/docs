@@ -4,6 +4,10 @@ slug: clouddb-eos-eol
 section: 'Technical resources'
 ---
 
+**Last updated 27th June 2022**
+
+## Objective
+
 The products covered by those End Of Sale (EOS) and End Of Life (EOL) announcements are the Cloud Databases Public services, dedicated DBMS instances reachable on the public network. See also the [OVH Managed databases EOL policy](../eol-policy/guide.en-gb.md) for more information.
 
 |Version|EOL announcement|End-of-Sale|End-of-Support|

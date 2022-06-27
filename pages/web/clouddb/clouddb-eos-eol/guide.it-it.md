@@ -8,6 +8,10 @@ section: 'Risorse tecniche'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
+**Ultimo aggiornamento: 27/06/2022**
+
+## Obiettivo
+
 I prodotti inclusi in questi annunci di fine vendita e di fine vita sono i servizi CloudDB, istanze SGBD raggiungibili tramite la rete pubblica o tramite la rete Web Hosting.
 Per maggiori informazioni, consulta la [politica di fine vita dei database gestiti](../managed-db-life-cycle-policy/).
 

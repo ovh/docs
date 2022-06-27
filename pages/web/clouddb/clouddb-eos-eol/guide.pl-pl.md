@@ -8,6 +8,10 @@ section: 'Zasoby techniczne'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
+**Ostatnia aktualizacja z dnia 27/06/2022**
+
+## Wprowadzenie
+
 Produktami objętymi ogłoszeniami o zakończeniu sprzedaży są usługi CloudDB, instancje SGBD dostępne za pośrednictwem sieci publicznej lub sieci Web Hosting.
 Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](../managed-db-life-cycle-policy/) baz danych.
 
