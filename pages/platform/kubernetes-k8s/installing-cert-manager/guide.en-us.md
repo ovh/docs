@@ -186,7 +186,7 @@ Now, any ingress resources will be able to be annotated with:
 "cert-manager.io/cluster-issuer": "letsencrypt-staging"
 </code></pre>
 
-Please refer to [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](../securing-nginx-ingress-cert-manager/) tutorial for ingresses configuration.
+Please refer to our tutorial on [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](../securing-nginx-ingress-cert-manager/) for ingresses configuration.
 
 ## Go further
 

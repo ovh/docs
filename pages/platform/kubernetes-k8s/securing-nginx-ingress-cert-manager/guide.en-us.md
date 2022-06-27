@@ -6,7 +6,7 @@ section: Traffic management
 order: 02
 ---
 
-**Last updated 27 June 2022.**
+**Last updated 27th June 2022.**
 
 <style>
  pre {
@@ -40,17 +40,17 @@ In this tutorial you are going to:
 
 ## Before you begin
 
-This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart](../deploying-hello-world/).
+This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [OVHcloud Managed Kubernetes Service Quickstart guide](../deploying-hello-world/).
 
-You need to have [Helm](https://docs.helm.sh/){.external} installer on your workstation and your cluster. Please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
+You need to have [Helm](https://docs.helm.sh/){.external} installed on your workstation and your cluster. Please refer to our tutorial on [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/).
 
-You also need to installed [cert-manager] (../installing-cert-manager/) on OVHcloud Managed Kubernetes.
+You also need to install [cert-manager](../installing-cert-manager/) on your OVHcloud Managed Kubernetes.
 
 ## Instructions
 
 ### Deploying the application
 
-In this guide you will deploy an application, that runs a HTTP server and displays a web page.
+In this guide you will deploy an application that runs a HTTP server and displays a web page.
 
 First, create a `deployment.yml` file with the following content:
 
@@ -78,7 +78,7 @@ spec:
         - containerPort: 80
 ```
 
-This YAML deployment manifest file defines that our application, based on `ovhplatform/hello:latest` image will be deployed with 1 replicas (1 pod).
+This YAML deployment manifest file defines that our application, based on the `ovhplatform/hello:latest` image will be deployed with 1 replica (1 pod).
 
 Then, create a `svc.yml` file with the following content to define our service (a service exposes a deployment):
 
@@ -324,7 +324,7 @@ spec:
 
 > [!primary]
 >
-> Don't forget to replace `[YOUR_DN]` to your domain name.
+> Don't forget to replace `[YOUR_DN]` with your domain name.
 
 In this manifest file you can see that we define a Nginx Ingress resource with several annotations.
 For more information about the annotations, please refer to the [Securing Ingress Resources in cert-manager documentation](https://cert-manager.io/docs/usage/ingress/#supported-annotations).
@@ -341,14 +341,14 @@ Output should be like this:
 ingress.networking.k8s.io/ingress configured
 </code></pre>
 
-At this step, a `Certificate` resource have been created:
+At this step, a `Certificate` resource has been created:
 
 <pre class="console"><code>$ kubectl get certificate
 NAME              READY   SECRET            AGE
 hello-world-tls   False   hello-world-tls   111s
 </code></pre>
 
-You can display the events of the certificate to check if the certificate have been correctly created and if it create the necessary `CertificateRequest`:
+You can display the events of the certificate to check if the certificate has been correctly created and if it creates the necessary `CertificateRequest`:
 
 <pre class="console"><code>$ kubectl describe certificate
 Name:         hello-world-tls
@@ -430,7 +430,7 @@ Events:
   Normal  Presented  16m   cert-manager-challenges  Presented challenge using HTTP-01 challenge mechanism
 </code></pre>
 
-You now need to map the Domain Name (DN) and the Load Balancer so in order to do this, create an `A-record` for `[YOUR_DN]` (your domain name ;-) mapped to the value of `$INGRESS_URL`.
+You now need to map the Domain Name (DN) and the Load Balancer. In order to do this, create an `A-record` for `[YOUR_DN]` (your domain name ;-) mapped to the value of `$INGRESS_URL`.
 
 Wait until the challenge is resolved:
 
@@ -438,7 +438,7 @@ Wait until the challenge is resolved:
 dig +short [YOUR_DN]
 ```
 
-Describe the certificate again and wait until you see Certificate issued successfully when you describe the certificate.
+Describe the certificate again and wait until you see "Certificate issued successfully" when you describe the certificate.
 
 ## Go further
 
