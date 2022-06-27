@@ -7,7 +7,7 @@ order: 02
 hidden: true
 ---
 
-**Dernière mise à jour le 23/06/2022**
+**Dernière mise à jour le 27/06/2022**
 
 ## Objectif
 
@@ -127,10 +127,9 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
-Connectez-vous sur l'espace client d'OVHcloud allez dans l'onglet `Hosted Private Cloud`{.action} cliquez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
+Connectez-vous sur l'espace client d'OVHcloud allez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
-
 
 L'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
 
@@ -347,14 +346,6 @@ Saisissez ces informations :
 Et cliquez sur `SIGN IN`{.action}.
 
 ![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
-
-Cliquez sur `Accept`{.action} pour accepter la licence.
-
-![WEB Configure pfsense 02](images/05-configure-pfsense02.png){.thumbnail}
-
-Cliquez sur `Close`{.action} aux remerciements.
-
-![WEB Configure pfsense 03](images/05-configure-pfsense03.png){.thumbnail}
 
 <a name="changepassword"></a>
 ##### Etape 2.9.1 Changement du mot de passe par défaut de **pfsense**
@@ -693,14 +684,6 @@ Saisissez ces informations :
 Et cliquez sur `SIGN IN`{.action}.
 
 ![WEB Configure pfsense 01](images/05-configure-pfsense01.png){.thumbnail}
-
-Cliquez sur `Accept`{.action} pour accepter la licence.
-
-![WEB Configure pfsense 02](images/05-configure-pfsense02.png){.thumbnail}
-
-Cliquez sur `Close`{.action} aux remerciements.
-
-![WEB Configure pfsense 03](images/05-configure-pfsense03.png){.thumbnail}
 
 <a name="changepassword-fr"></a>
 ##### Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**
