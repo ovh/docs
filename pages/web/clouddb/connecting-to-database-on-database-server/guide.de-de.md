@@ -23,7 +23,9 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> <br> - Es gibt keinen "root"-Zugang. 
+> <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Mit einer MySQL oder MariaDB Datenbank verbinden 
