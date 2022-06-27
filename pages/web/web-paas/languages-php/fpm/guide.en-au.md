@@ -18,9 +18,9 @@ Note that this value is independent of the `memory_limit` set in `php.ini`, whic
 
 The heuristic is based on three input parameters:
 
- * The memory available for the container, which depends on the size of the container (`S`, `M`, `L`),
- * The memory that an average request is expected to require,
- * The memory that should be reserved for things that are not specific to a request (memory for `nginx`, the op-code cache, some OS page cache, etc.)
+- The memory available for the container, which depends on the size of the container (`S`, `M`, `L`).
+- The memory that an average request is expected to require.
+- The memory that should be reserved for things that are not specific to a request (memory for `nginx`, the op-code cache, some OS page cache, etc.)
 
 The number of workers is calculated as:
 
@@ -31,8 +31,8 @@ The number of workers is calculated as:
 
 The default assumptions are:
 
- * `45 MB` for the average per-request memory
- * `70 MB` for the reserved memory
+- `45 MB` for the average per-request memory
+- `70 MB` for the reserved memory
 
 These are deliberately conservative values that should allow most programs to run without modification.
 

@@ -6,16 +6,20 @@ section: Per iniziare
 order: 2
 ---
 
-**Ultimo aggiornamento: 28/12/2021**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 24/06/2022**
 
 ## Obiettivo
 
-**Questa guida ti mostra i diversi modi con cui accedere a vSphere.**
+**Questa guida ti mostra come connettersi a vSphere.**
 
 ## Prerequisiti
 
 - Essere contatto amministratore dell'infrastruttura [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) per ricevere le credenziali di accesso.
-- Avere un utente attivo [creato nello Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Aver aggiunto indirizzi IP nella sezione `Sicurezza`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per maggiori informazioni, consulta la nostra guida [Autorizzare IP ad accedere al vCenter](https://docs.ovh.com/it/private-cloud/autorizzare-ip-ad-accedere-al-vcenter/).
 
 ## Procedura
 
@@ -31,27 +35,13 @@ Per assicurarsi di poter effettuare l’accesso, consulta la documentazione VMwa
 
 ### Utilizza il client Web HTML5
 
-Il client Web HTML5 è disponibile nell’interfaccia Web del servizio Private Cloud, all’indirizzo <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Private Cloud).
+Il client Web HTML5 è disponibile nell’interfaccia Web del servizio Hosted Private Cloud, all’indirizzo <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Hosted Private Cloud).
 
 ![Connessione all'interfaccia vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
 Si apre questa interfaccia:
 
 ![Connessione all'interfaccia vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
-
-La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter.
-
-### Utilizza il client Web Flash
-
-Il client Web Flash è disponibile nell’interfaccia Web del servizio Private Cloud, all’indirizzo <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Private Cloud).
-
-Per effettuare l’accesso, utilizza le credenziali ricevute:
-
-![Client vSphere](images/vsphere-client.png){.thumbnail}
-
-Si apre questa interfaccia:
-
-![Connessione all'interfaccia vSphere](images/connection_interface_w.png){.thumbnail}
 
 La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter.
 

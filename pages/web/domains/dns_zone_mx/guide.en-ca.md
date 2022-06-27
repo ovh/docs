@@ -39,15 +39,15 @@ Generally speaking, **changing MX records is a tricky task**. If you make any mi
 
 ### Step 2: Familiarise yourself with the OVHcloud MX configuration
 
-In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} and [Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
+In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/){.external}, and [Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
-|*leave blank*|3600|MX|1|mx0.mail.ovh.net.|
-|*leave blank*|3600|MX|5|mx1.mail.ovh.net.|
-|*leave blank*|3600|MX|50|mx2.mail.ovh.net.|
-|*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
-|*leave blank*|3600|MX|200|mx4.mail.ovh.net.|
+|*leave blank*|3600|MX|1|mx0.mail.ovh.ca.|
+|*leave blank*|3600|MX|5|mx1.mail.ovh.ca.|
+|*leave blank*|3600|MX|50|mx2.mail.ovh.ca.|
+|*leave blank*|3600|MX|100|mx3.mail.ovh.ca.|
+|*leave blank*|3600|MX|200|mx4.mail.ovh.ca.|
 
 You will now need to add these MX records to your domain name’s DNS zone configuration. The next step will help you do so, in your domain name’s OVHcloud DNS zone.
 

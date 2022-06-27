@@ -28,7 +28,7 @@ runtime:
         - sqlite3
 ```
 
-You can also [include configuration options for specific extensions.
+You can also include configuration options for specific extensions.
 
 The following table shows all extensions that are available (Avail) and on by default (Def).
 You can turn on the available ones with the `extensions` key
@@ -183,16 +183,9 @@ webpaas ssh -p <PROJECT_ID> -e <ENVIRONMENT_ID> 'php -m'
 It's possible to use an extension not listed here but it takes slightly more
 work:
 
-1\. Download the .so file for the extension as part of your build hook using `curl` or similar.
+- Download the .so file for the extension as part of your build hook using `curl` or similar. bIt can also be added to your Git repository if the file isn't publicly downloadable, although committing large binary blobs to Git is generally not recommended.
+- Provide a custom `php.ini` file in your app root that loads the extension using an absolute path. For example, if the extension is named `spiffy.so` and is in your app root, your `php.ini` file includes:
 
-   It can also be added to your Git repository if the file isn't publicly downloadable,
-   although committing large binary blobs to Git is generally not recommended.
-
-2\. Provide a custom `php.ini` file in your app root
-
-   that loads the extension using an absolute path.
-   For example, if the extension is named `spiffy.so` and is in your app root,
-   your `php.ini` file includes:
 
 ```ini
 extension=/app/spiffy.so
