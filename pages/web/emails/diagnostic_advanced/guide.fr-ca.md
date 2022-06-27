@@ -75,7 +75,7 @@ Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur
 
 Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide [Ajouter un champ MX à la configuration de son nom de domaine](https://docs.ovh.com/ca/fr/domains/mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/).
 
-![DNSzone](images/DNS.png){.thumbnail}
+![DNSzone](images/DNS-CA.png){.thumbnail}
 
 ### Après l'envoi d'un e-mail, je reçois un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres
 
