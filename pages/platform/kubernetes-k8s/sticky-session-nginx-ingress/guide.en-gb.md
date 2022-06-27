@@ -6,7 +6,7 @@ section: Traffic management
 order: 01
 ---
 
-**Last updated 27 June 2022.**
+**Last updated 27th June 2022.**
 
 <style>
  pre {
