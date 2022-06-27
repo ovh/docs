@@ -177,25 +177,6 @@ docker build . -t gradio_app:latest
 > The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **gradio_app:latest**.
 >
 
-### Test it locally (optional)
-
-Launch the following **Docker command** to launch your application locally on your computer:
-
-```console
-docker run --rm -it -p 8080:8080 --user=42420:42420 gradio_app:latest
-```
-
-> [!primary]
->
-> The `-p 8080:8080` argument indicates that you want to execute a port redirection from the port **8080** of your local machine into the port **8080** of the Docker container.
-
-> [!warning]
->
-> Don't forget the `--user=42420:42420` argument if you want to simulate the exact same behaviour that will occur on **AI Apps**. It executes the Docker container as the specific OVHcloud user (user **42420:42420**).
->
-
-Once started, your application should be available on `http://localhost:8080`.
-
 ### Push the image into the shared registry
 
 > [!warning]
