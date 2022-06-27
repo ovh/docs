@@ -127,11 +127,11 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
-Connectez-vous sur l'espace client d'OVHcloud ensuite allez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
+Connectez-vous sur l'espace client d'OVHcloud ensuite allez sur votre cluster Nutanix et relevez l'information se trouvant dans la case `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
-L'adresse IPFO sur le site client d'OVHcloud est en fait un pack de 4 adresses, La deuxième adresse est affectée à la machine virtuelle **OVHgateway** et la troisième sert de passerelle pour aller sur Internet à partir de la machine virtuelle **OVHgateway**.
+Ce que l'on nomme **IPFO** est un plage de 4 adresses. La première et la dernière sont réservées, la troisième se trouve sur un équipement d'OVHcloud et sert de passerelle **Internet**. La seule adresse IP utilisable est la seconde adresse de la plage. 
 
 Lors de l'installation nous allons réutiliser ces informations pour les affecter à la nouvelle machine virtuelle **GW-PFSENSE**
 
