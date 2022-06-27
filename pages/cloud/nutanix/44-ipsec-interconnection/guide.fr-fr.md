@@ -123,7 +123,7 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
 <a name="getpublicaddress"></a>
-#### Etape 2.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud <a name="getipcustomerportal"></a>
+#### Etape 2.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud 
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
@@ -249,7 +249,7 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getipcustomerportal)
+- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress)
 
 - Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
 
@@ -461,7 +461,7 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
 <a name="getpublicaddress-fr"></a>
-#### Etape 3.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud <a name="getipcustomerportal"></a>
+#### Etape 3.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
@@ -588,9 +588,9 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
 
-- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getipcustomerportal)
+- Interface WAN : Voir cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress-fr)
 
-- Interface LAN: 192.168.10.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
+- Interface LAN: 192.168.0.254/24 qui correspond à la passerelle du réseau privé pour le cluster Nutanix et le masque de sous réseau 
 
 Acceptez la licence en appuyant sur la touche `entrée`{.action}.
 
@@ -650,7 +650,7 @@ Prenez l'option `2` et appuyez sur la touche `entrée`{.action} pour modifier l'
 
 ![Configure pfsense 14](images/04-configureip-pfsense14.png){.thumbnail}
 
-Saisissez l'adresse IP privée suivi du masque `192.168.10.254/24` et appuyez sur la touche `entrée`{.action}.
+Saisissez l'adresse IP privée suivi du masque `192.168.0.254/24` et appuyez sur la touche `entrée`{.action}.
 
 ![Configure pfsense 15](images/04-yconfigureip-pfsense15-fr.png){.thumbnail}
 
@@ -679,7 +679,7 @@ Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne
 <a name="configurepfsenseoptions-fr"></a>
 #### Etape 3.9 Configuration de certaines options au travers de l'interface WEB
 
-Connectez-vous sur la console WEB de pfsense avec cette URL https://192.168.10.254 à partir d'une machine virtuelle se trouvant sur le réseau local **AHV : Base**.
+Connectez-vous sur la console WEB de pfsense avec cette URL https://192.168.0.254 à partir d'une machine virtuelle se trouvant sur le réseau local **AHV : Base**.
 
 Saisissez ces informations :
 
