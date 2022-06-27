@@ -97,6 +97,10 @@ Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exem
 > Si vous souhaitez aller plus loin techniquement sur ce sujet, vous pourrez retrouver un cas particulier d’usage concernant les CNAME et les zones DNS créées pour des sous-domaines en cliquant [ici](#bonusTech).
 >
 
+**Champ DNAME** (**D**elegation **NAME**): Permet de générer un "alias" de domaine ou de sous-domaine. Ce champ permet ainsi de rediriger une multitude de sous-domaines vers une même cible (contrairement au champ CNAME qui ne redirigige qu'un seul sous-domaine vers une seule cible).
+
+Par exemple : Si je crée un champ DNAME de *mydomain.ovh* vers *ovh.com*, tous les sous-domaines de *mydomain.ovh* (exemple *dname.mydomain.ovh*) seront redirigés vers *ovh.com*.
+
 **Champ NS** : Définit les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consultez notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » pour plus d'informations.
 
 > [!warning]
@@ -125,11 +129,11 @@ Vous pourrez cependant créer des champs CNAME avec tous les sous-domaines (exem
 
 **SRV** : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
 
-**CAA** : Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
+**CAA** (**C**ertification **A**uthority **A**uthorization): Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 
-**NAPTR** : Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. 
+**NAPTR** (**N**ame **A**uthority **P**oin**T**e**R**): Utilisé en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. Un enregistrement SRV peut y être associé pour générer de façon dynamique des URIs (Uniform Resource Identifier) cibles.
 
-**LOC** : Utilisé pour renseigner les informations de position géographique.
+**LOC** : Utilisé pour renseigner les informations de position géographique (latitude et longitude).
 
 **SSHFP** : Utilisé pour renseigner l'empreinte d'une clé publique SSH.
 
