@@ -231,7 +231,7 @@ You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via
 
 ### Configuring the Nginx Ingress Controller to use SSL/TLS
 
-After installing [cert-manager](https://docs.ovh.com/gb/en/kubernetes/installing-cert-manager/) on your OVHcloud Manager Kubernetes cluster, if you followed the guide, you should have two running ClusterIssuer, one for production and one for staging/dev usages:
+After installing [cert-manager](https://docs.ovh.com/au/en/kubernetes/installing-cert-manager/) on your OVHcloud Manager Kubernetes cluster, if you followed the guide, you should have two running ClusterIssuer, one for production and one for staging/dev usages:
 
 <pre class="console"><code>$ kubectl get clusterissuer
 NAME                  READY   AGE
