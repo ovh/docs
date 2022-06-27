@@ -53,6 +53,10 @@ Si vous souhaitez configurer plusieurs adresses IPv6 sur votre serveur (ou si vo
 > @api {GET} /dedicated/server/{serviceName}/specifications/network
 >
 
+>  [!warning]
+> 
+> Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l’original en cas de problème. 
+> 
 
 ### Debian et systèmes d’exploitation basés sur Debian
 
@@ -73,7 +77,7 @@ Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
-Le fichier de configuration réseau de votre serveur est situé dans `/etc/network/interfaces`. Utilisez la ligne de commande pour localiser le fichier et ouvrez-le pour l'éditer. Avant de le faire, envisagez de créer une copie de sauvegarde.
+Le fichier de configuration réseau de votre serveur est situé soit dans `/etc/network/interfaces` ou `/etc/network/interfaces.d`. Utilisez la ligne de commande pour localiser le fichier et ouvrez-le pour l'éditer. Avant de le faire, envisagez de créer une copie de sauvegarde.
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
@@ -217,7 +221,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, vérifiez votre configuration et réessayez. Assurez-vous également que la machine à partir de laquelle vous effectuez le test est connectée à IPv6. Si cela ne fonctionne toujours pas, veuillez tester votre configuration en [mode Rescue](../ovh-rescue/).
 
-### Ubuntu 18.04
+### Ubuntu 18.04 et 20.04
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
@@ -225,35 +229,71 @@ Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
-Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/systemd/network`. À des fins de démonstration, notre fichier est appelé 50-default.network.
+Ouvrez le fichier de configuration du réseau, fichier se trouvant dans `/etc/netplan`. À des fins de démonstration, notre fichier est appelé 50-cloud-init.yaml.
 
 #### Étape 3 : Modifier le fichier de configuration réseau
 
-Comme indiqué dans l'exemple ci-dessous, utilisez un éditeur de texte pour modifier le fichier en ajoutant aux sections concernées les lignes suivantes :
+À l'aide d'un éditeur de texte, modifiez le fichier 50-cloud-init.yaml en ajoutant les lignes suivantes aux sections concernées, comme indiqué dans l'exemple ci-dessous.
 
-```console
-[Network]
-Destination=Gateway_Address
+Remplacez les éléments génériques (YOUR_IPV6, IPV6_PREFIX et IPV6_GATEWAY) ainsi que l'interface réseau (si votre serveur n'utilise pas enp1s0) par vos valeurs spécifiques.
 
-[Address]
-Address=IPv6_Address/64
-
-[Route]
-Destination=Gateway_Address
-Scope=link
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            gateway6: IPv6_GATEWAY
+            routes:
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-pour ajouter plusieurs adresses IPv6, ajoutez plusieurs sections \[Address].
 
-```console
-[Address]
-Address=IPv6_Address_2/64
+### Ubuntu 21.10 et 22.04
 
-[Address]
-Address=IPv6_Address_3/64
+Le fichier de configuration doit ressembler à l'exemple ci-dessous :
+
+```yaml
+network:
+    version: 2
+    ethernets:
+        enp1s0:
+            dhcp4: true
+            match:
+                macaddress: 00:04:0p:8b:c6:30
+            set-name: enp1s0
+            addresses:
+              - YOUR_IPV6/IPv6_PREFIX
+            routes:
+                - to: ::/0
+                  via: IPv6_GATEWAY
+                - to: IPv6_GATEWAY
+                  scope: link
 ```
-#### Étape 4 : Enregistrez le fichier et redémarrez le serveur
 
-Enregistrez les modifications apportées au fichier, puis relancez le réseau ou redémarrez votre serveur afin d’appliquer ces modifications.
+> [!warning]
+>
+> Il est important de respecter l’alignement de chaque élément de ce fichier tel que représenté dans l’exemple ci-dessus. N’utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire. 
+>
+
+#### Étape 4 : Tester et appliquer la configuration
+
+Vous pouvez tester votre configuration à l’aide de la commande suivante :
+
+```bash
+netplan try
+```
+
+Si elle est correcte, appliquez-la à l’aide de la commande suivante :
+
+```bash
+netplan apply
+```
 
 #### Étape 5 : Tester la connectivité IPv6
 
