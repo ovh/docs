@@ -6,7 +6,7 @@ section: Konfiguration
 order: 4
 ---
 
-**Letzte Aktualisierung am 03.02.2022**
+**Letzte Aktualisierung am 27.06.2022**
 
 ## Ziel
 
@@ -16,14 +16,16 @@ Ihre Datenbank enthält in der Regel wichtige Datensätze für den Betrieb Ihrer
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> <br> - Es gibt keinen "root"-Zugang. 
+> <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Datenbank über das Kundencenter sichern und exportieren

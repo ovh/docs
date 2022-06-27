@@ -6,7 +6,7 @@ section: Configuration
 order: 4
 ---
 
-**Last updated 3rd February 2022**
+**Last updated 27th June 2022**
 
 ## Objective
 
@@ -16,16 +16,14 @@ Your database can contain a lot of essential information for your website. It is
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-> [!primary]
->
-> Please note that there is no root access.
-> <br> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
-> 
+> Please note that the [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> <br> - Please note that there is no "root" access.
+> <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 
 ### Backing up and exporting a database from the Control Panel
 
@@ -89,7 +87,7 @@ mysqldump --host=server --user=username --port=port --password=password database
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -115,7 +113,7 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 

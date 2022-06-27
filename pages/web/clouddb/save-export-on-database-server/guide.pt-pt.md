@@ -6,7 +6,7 @@ section: 'Configuração'
 order: 4
 ---
 
-**Última atualização: 03/02/2022**
+**Última atualização: 27/06/2022**
 
 ## Objetivo
 
@@ -16,16 +16,17 @@ A sua base de dados pode conter um grande volume de informações essenciais ao 
 
 ## Requisitos
 
-- Dispor de um [serviço Cloud Databases](https://www.ovh.pt/cloud-databases){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 > [!primary]
 >
-> Os serviços Cloud Databases não dão acesso ao Host, mas às bases de dados nele alojadas. Não há um acesso superutilizador «root».
-> <br> Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL e Adminer são plenamente compatíveis.
-> 
+> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> <br> - Pamiętaj, że nie ma dostępu "root".
+> <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
+>
 
 ### Salvaguardar e exportar uma base de dados a partir da Área de Cliente
 
@@ -87,7 +88,7 @@ mysqldump --host=servidor --user=utilizador --port=port --password=password nome
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website]( https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/){.external}.
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 
@@ -112,7 +113,7 @@ pg_dump --host=servidor --port=port --user=utilizador --password=password nome_d
 
 > [!warning]
 >
-> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website]( https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/){.external}.
+> - De modo a evitar acessos indesejados a este ficheiro com dados sensíveis, proteja-o recorrendo ao guia [Using .htaccess to password protect a directory on your website](https://docs.ovh.com/pt/hosting/partilhado-htaccess-como-protecao-acesso-a-um-diretorio-por-autenticacao/){.external}.
 > - Esta operação só é possível a partir de um alojamento partilhado OVHcloud.
 >
 
