@@ -21,7 +21,7 @@ As bases de dados geridas pela OVHcloud propõem vários sistemas de gestão de 
 Dispor de uma ou mais das seguintes propostas:
 
 - Utilizar uma das bases de dados incluídas com um [Alojamento web](https://www.ovhcloud.com/pt/web-hosting/).
-- Uma [instance CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Uma [instance CloudDB](https://www.ovh.pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Um pack de bases de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/).
 
 ## Instruções

@@ -19,7 +19,7 @@ I database gestiti OVHcloud propongono diversi Sistemi di Gestione Database (SGB
 ## Prerequisiti
 
 - Utilizzare uno dei database inclusi con un [Hosting Web](https://www.ovhcloud.com/it/web-hosting/).
-- Una [istanza CloudDB](https://www.ovh.com/it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [hosting web performance](https://www.ovhcloud.com/it/web-hosting/).
+- Una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di [hosting web performance](https://www.ovhcloud.com/it/web-hosting/).
 - Pack di database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/)
 
 ## Procedura

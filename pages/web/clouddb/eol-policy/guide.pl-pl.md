@@ -21,7 +21,7 @@ Zarządzane bazy danych OVHcloud oferują kilka systemów zarządzania bazami da
 Posiadanie jednej lub kilku z następujących ofert:
 
 - Korzystanie z jednej z baz danych zawartych w ofercie [Hosting WWW](https://www.ovhcloud.com/pl/web-hosting/).
-- Jedna [instancja CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawarta w usłudze[hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Jedna [instancja CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawarta w usłudze[hosting www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Pakiet bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/).
 
 ## W praktyce
