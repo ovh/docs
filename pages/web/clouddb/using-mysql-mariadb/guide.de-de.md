@@ -12,7 +12,7 @@ Sie möchten mit MySQL oder MariaDB arbeiten? Dann lesen Sie hier, wie Sie Ihre 
 
 ### Voraussetzungen
 
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.com/de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
 - Sie haben die [Anleitung für den Start von CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
 

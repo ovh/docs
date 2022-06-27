@@ -12,7 +12,7 @@ Chcesz korzystać z MySQL lub MariaDB? Sprawdź, jak w prosty sposób tworzyć b
 
 ### Wymagania
 
-- Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Przeglądanie [przewodnik dotyczący uruchomienia usługi CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
 

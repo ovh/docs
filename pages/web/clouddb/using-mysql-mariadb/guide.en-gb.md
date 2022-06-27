@@ -12,7 +12,7 @@ Do you want to use MySQL or MariaDB ? Learn how to create and manage your databa
 
 ### Prerequisites
 
-- You must have a [CloudDB instance](https://www.ovh.com/en-gb/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 - You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/gb/en/clouddb/getting-started-with-clouddb/)
 

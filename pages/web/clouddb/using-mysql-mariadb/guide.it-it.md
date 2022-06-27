@@ -13,7 +13,7 @@ Vuoi utilizzare MySQL o MariaDB? Scopri come creare e gestire i tuoi database co
 
 ### Prerequisiti
 
-- Disporre di una [istanza CloudDB](https://www.ovh.com/it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Consulta la guida all'avvio di CloudDB (https://docs.ovh.com/it/clouddb/iniziare-a-utilizzare-clouddb/)
 
