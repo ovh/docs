@@ -16,7 +16,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 
 ## Requisitos
 
-- Tener una [instancia CloudDB](https://www.ovh.com/es-es/cloud/cloud-databases/) (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/)
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de hosting Performance)(https://www.ovhcloud.com/es-es/web-hosting/)
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
