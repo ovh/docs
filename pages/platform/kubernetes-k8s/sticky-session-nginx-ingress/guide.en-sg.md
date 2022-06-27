@@ -6,7 +6,7 @@ section: Traffic management
 order: 01
 ---
 
-**Last updated 2nd March 2022.**
+**Last updated 27th June 2022.**
 
 <style>
  pre {
@@ -178,7 +178,7 @@ The install process will begin and a new `ingress-nginx` namespace will be creat
 
 <pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 NAME: ingress-nginx
-LAST DEPLOYED: Mon Feb 28 16:04:05 2022
+LAST DEPLOYED: Mon Jun 27 09:53:25 2022
 NAMESPACE: ingress-nginx
 STATUS: deployed
 REVISION: 1
@@ -200,7 +200,8 @@ An example Ingress that makes use of the controller:
       - host: www.example.com
         http:
           paths:
-            - backend:
+            - pathType: Prefix
+              backend:
                 service:
                   name: exampleService
                   port:
@@ -298,8 +299,10 @@ kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.
 
 You should have a Load-Balancer IP like this:
 
-<pre class="console"><code>$ kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}'
-152.228.168.143
+<pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+
+echo http://$INGRESS_URL
+http://152.228.168.143
 </code></pre>
 
 Now you can access this IP through your favorite browser and reload the page several times:
@@ -311,14 +314,14 @@ Everytime you reload the page, you should get the same cookie value, so the Ingr
 You can also test the behavior with `curl` command like this:
 
 ```bash
-curl --cookie cookie.txt --cookie-jar cookie.txt http://152.228.168.143
+curl --cookie cookie.txt --cookie-jar cookie.txt http://$INGRESS_URL
 ```
 
 You can execute the same command several times in a loop to validate that the session is correctly maintained:
 
 <pre class="console"><code>$ for i in {0..5}
 do
-  curl --cookie cookie.txt --cookie-jar cookie.txt http://152.228.168.143
+  curl --cookie cookie.txt --cookie-jar cookie.txt http://$INGRESS_URL
   echo ""
 done
 
