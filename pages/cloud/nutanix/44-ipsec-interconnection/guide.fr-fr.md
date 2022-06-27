@@ -21,7 +21,8 @@ Interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IP
 
 ## Prérequis
 
-- Disposer de deux clusters Nutanix chez OVHcloud sur des sites différents
+- Avoir pris connaissance des cas d'usages d'un VPN IPsec à l'aide de ce guide [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-overview/)
+- Disposer de deux clusters Nutanix au sein d'OVHcloud sur des sites différents
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté sur vos clusters via Prism Central.
 - Utiliser un plan d'adressage IP privé différent par cluster.
@@ -73,7 +74,7 @@ Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l
 * **Le Cluster au CANADA** : 192.168.10.0/24
 * **Le Cluster en FRANCE** : 192.168.0.0/24
 
-Pour permettre cette interconnexion nous allons remplacer sur chacun des sites la machine virtuelle **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et gérera le tunnel VPN à l'aide du protocole IPsec.
+Pour permettre cette mise en place nous allons remplacer sur chacun des sites la machine virtuelle **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et gérera le tunnel VPN à l'aide du protocole IPsec.
 
 <a name="configurecanada"></a>
 ### Etape 2 Remplacement de la passerelle au CANADA 
@@ -137,8 +138,8 @@ Lors de l'installation nous allons réutiliser ces informations pour les affecte
 
 ```console
 XX.XX.XX.N      Adresse de réseau réservé qui apparait sur le site client d'OVHcloud.
-XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN.
-XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN. 
+XX.XX.XX.N+1    Adresse IP utilisable qui doit être affectée à l'interface WAN de la passerelle GW-PFSENSE.
+XX.XX.XX.N+2    Passerelle qui se trouve sur un équipement d'OVHcloud à utiliser en tant que passerelle sur l'interface WAN de la passerelle GW-PFSENSE. 
 XX.XX.XX.N+3    Réseau de diffusion réservé.
 ```
 
@@ -208,7 +209,9 @@ Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 <a name="pfsenseremovecdrom"></a>
 #### Etape 2.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**
 
-Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
+Revenez dans la console **Prism central** sur la gestion de la machine virtuelle **GW-PFSENSE** et effectuez ces opérations pour éjecter le **CDROM**
+
+Cliquez sur `Soft Shutdown`{.action} au travers du menu `More` de la machine virtuelle **GW-PFSENSE** pour effectuer un arrêt de cette machine virtuelle.
 
 ![Remove CDROM 01](images/03-remove-cdrom01.png){.thumbnail}
 
@@ -993,6 +996,8 @@ Le paramétrage du VPN est terminée sur les deux clusters, il est possible de m
 
 <a name="gofurther"></a>
 ## Aller plus loin
+
+[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-overviewn/)
 
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
