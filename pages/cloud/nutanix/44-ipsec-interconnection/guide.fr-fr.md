@@ -73,7 +73,7 @@ Nous allons interconnecter deux clusters Nutanix l'un se trouvant au CANADA et l
 * **Le Cluster au CANADA** : 192.168.10.0/24
 * **Le Cluster en FRANCE** : 192.168.0.0/24
 
-Pour permettre cette interconnexion nous allons remplacer sur chacun des sites les machines virtuelles **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et permettra la création d'un tunnel VPN avec le protocole IPsec.
+Pour permettre cette interconnexion nous allons remplacer sur chacun des sites la machine virtuelle **OVHgateway** par une machine virtuelle avec le système d'exploitation **pfsense** qui continuera à fournir l'accès Internet en sortie et gérera le tunnel VPN à l'aide du protocole IPsec.
 
 <a name="configurecanada"></a>
 ### Etape 2 Remplacement de la passerelle au CANADA 
@@ -83,7 +83,7 @@ Pour permettre cette interconnexion nous allons remplacer sur chacun des sites l
 
 Téléchargez l'image iso de l'installation de **pfsense** à partir de ce lien [Téléchargement pfsense](https://www.pfsense.org/download/).
 
-Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **pfsense** dans votre cluster NUTANIX.
+Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) ajoutez l'image **ISO** **pfsense** dans votre cluster NUTANIX.
 
 <a name="createvmpfsense"></a>
 #### Etape 2.2 Création de la machine virtuelle **GW-PFSENSE**
@@ -127,7 +127,7 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
 
-Connectez-vous sur l'espace client d'OVHcloud allez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
+Connectez-vous sur l'espace client d'OVHcloud ensuite allez sur votre cluster Nutanix et relevez l'adresse IP se trouvant dans `IPFO`.
 
 ![Get IP Fail OVER](images/02-get-ipfailover.png){.thumbnail}
 
