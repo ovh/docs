@@ -1,21 +1,106 @@
 ---
-title: Environment configuration
+title: Configure environments
 slug: configure-environment
 section: Web
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 24th June 2022**
+
 
 
 ## Objective  
 
-You can access an environment's settings by selecting that environment from the **Select Environments** pull-down menu at the top of the page or by clicking that environment within the Environments graphic on the right side. Click the `Settings` tab at the top of the screen.
+From your project's main page, each environment is available from the **Environment** menu.
 
-## General
+![Environment menu in context](images/env-pulldown.png "0.4")
 
-The `General` screen allows you to extend the behavior of a specific environment.
+There is also a graphic view of your environments where you can view your environments as a list or a project tree.
+The names of inactive environments are lighter.
 
-![env gen settings](images/env-settings.png "0.75")
+![List of all environments as a tree](images/environments.png "0.5")
+
+Once you select an environment, you can see details about it.
+
+## Activity Feed
+
+You can see all the activity happening on your environments.
+You can filter activities by type.
+
+![Environment activity list](images/activity.png "0.5")
+
+## Actions
+
+Each environment offers ways to keep environments up to date with one another:
+
+*  **Branch** to create a new child environment.
+*  **Merge** to copy the current environment into its parent.
+* **Sync**
+  to copy changes from its parent environment into the current environment.
+
+There are also additional options:
+
+* **Settings** to [configure the environment](#environment-settings).
+* **More** to get more options.
+* **URLs** to access the deployed environment from the web.
+* **SSH** to access your project using SSH.
+* **Code**
+  * **CLI** for the command to get your project set up locally with the [Web PaaS CLI](../../development-cli).
+  * **Git** for the command to clone the codebase via Git.
+  
+    If you're using Web PaaS as your primary remote repository, the command clones from the project.
+    If you have set up an external integration,
+    the command clones directly from the integrated remote repository.
+
+    If the project uses an external integration to a repository that you haven't been given access to,
+    you can't clone until your access has been updated.
+    See how to troubleshoot source integrations.
+
+## Service information
+
+You can also view information about how your routes, services, and apps are currently configured for the environment.
+
+To do so, click **Services**.
+By default, you see configured routes.
+
+### Routes
+
+![Services: routes](images/routes.png "0.5")
+
+The **Router** section shows a list of all configured routes.
+For each, you can see its type and whether caching and server side includes have been enabled for it.
+
+To see your `.platform/routes.yaml` file that led to these routes, click **Configuration**.
+
+### Applications
+
+To see more detailed information about an app container, click it in the tree or list.
+
+The **Overview** gives you information about your app.
+You can see the language version, the container size, the amount of persistent disk,
+the number of active workers and cron jobs, and the command to SSH into the container.
+
+You can also see all cron jobs with their name, frequency, and command.
+
+![Services: app overview](images/app-overview.png "0.5")
+
+To see the YAML file that led to this configuration, click **Configuration**.
+
+### Services
+
+To see more detailed information about a running service, click it in the tree or list.
+
+The **Overview** gives you information about the given service.
+You can see the service version, the container size, and the disk size, if you've configured a persistent disk.
+
+![Services: service overview](images/service-overview.png "0.5")
+
+To see your `.platform/services.yaml` file that led to these routes, click **Configuration**.
+
+## Environment settings
+
+To see settings for a given environment, click **Settings** within that environment.
+
+![Settings for an environment](images/env-settings.png "0.75")
 
 ### Environment name
 
@@ -23,112 +108,31 @@ The first setting allows you to modify the name of the environment and view its 
 
 ### Status
 
-From the `Status` tab, you can activate or deactivate an environment.
+The **Status** setting shows whether or not your environment is active.
+For non-Production environment, you can change their status.
 
-![env status](images/env-status.png "0.5")
-
-The `Deactivate & Delete Data` action will
-
-* Deactivate the environment. Unless is is re-activated, it will no longer deploy and it will not be accessible from the web or via SSH.
-* Destroy all services running on this environment.
-* Delete all data specific to the environment. If the environment is reactivated, it will sync data from its parent environment.
-
-Once the environment is deactivated, the Git branch will remain on Web PaaS in the inactive environment. To delete the branch as well, you need to execute the following:
-
-```bash
-git push origin :BRANCH-NAME
-```
-
-> [!primary]  
-> The Master environment is protected. It cannot be deleted through the management console or the CLI, and should not be deleted through the API unless you are planning on configuring another branch to become the `default_branch` to replace it.
-> 
+![Environment status](images/env-status.png "0.5")
 
 ### Outgoing emails
 
-From this tab, you can allow your application to send emails via a SendGrid SMTP proxy.
+You can allow your environment to [send outgoing emails](../../development-email).
 
-![env email](images/env-email.png "0.75")
-
-Changing this setting will temporarily list the environment's status as "Building", as the project re-builds with the new setting. Once it has re-deployed, it will appear once again as "Active" in your settings.
-
+![Environment email](images/env-email.png "0.75")
 
 ### Search engine visibility
 
-From this tab, you can tell search engines to ignore the site entirely, even if it is publicly visible.
+This setting enables you to tell search engines to ignore the site.
 
-![env search](images/env-search.png "0.75")
-
-
-### X-Robots-Tag
-
-By default, Web PaaS includes an additional `X-Robots-Tag` header on all non-production environments:
-
-```bash
-X-Robots-Tag: noindex, nofollow
-```
-
-That tells search engines to not index sites on non-production environments entirely nor traverse links from those sites, even if they are publicly visible.  That keeps non-production sites out of search engine indexes that would dilute the SEO of the production site, and it cannot be disabled on non-production environments.
-
-On a production instance (the master branch, after a domain has been assigned) the search-blocker is disabled automatically and your application can serve a `robots.txt` file as normal.  However, you must ensure that the file is in your project's web root (the directory where the `/` location maps to) and your application is configured to serve it.  See [the location section in `.platform.app.yaml`](../../configuration-app/web#locations).
-
-
-To enable the search-blocker `X-Robots-Tag` header on a production environment, use the [Web PaaS CLI](../../development-cli) command below:
-
-```bash
-webpaas environment:info restrict_robots true
-```
+![Environment search](images/env-search.png "0.5")
 
 ### HTTP access control
 
-You should not expose your development environments to the whole wide world. Web PaaS allows you to simply implement access control, either by login/password (the equivalent to .htaccess) or by filtering IP addresses or a network using the [CIDR format](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing).  That is, `4.5.6.7` and `4.5.6.0/8` are both legal formats.
+This setting enables you to control access using HTTP methods.
 
-> [!primary]  
-> Changing access control will trigger a new deploy of the current environment. However, the changes will not propagate to child environments until they are manually redeployed.
-> 
+![Settings control access with password and by IP](images/settings-basics-access-control.png "0.5")
 
-These settings get inherited by branches below the one you are on. That means if you create a `staging` environment, and you create branches from this one, they will all inherit the same authentication information and you only have to set-it up once.
+### Variables
 
-You can also setup authentication with the CLI using the following command `webpaas environment:http-access` which also allows you to read the current setup. This eases the integration of CI jobs with Web PaaS as you will not need to hardcode the values in the CI.
-
-You can allow or deny access to specific IPs or IP ranges. First switch the access control section to ON. Then add one or more IPs or CIDR IP masks, followed by allow or deny. See the example below. Note that allow entries should come before deny entries in case both of them would match.
-
-![Allowing or denying specific ips to project settings](images/settings-basics-access-control.png "0.6")
-
-For example, the following configuration will only allow the 1.2.3.4 IP to access your website.
-
-```bash
-1.2.3.4/32 allow
-0.0.0.0/0 deny
-```
-
-
-## Access
-
-The `Access` screen allows you to manage the users' access on your project.
-
-You can invite new users to a specific environment by clicking the `Add` button and entering their email address, or modify permissions of existing users by clicking the `Edit` link when hovering the user.
-
-![Manage users of your Web PaaS environments](images/settings-environment-access.png "0.7")
-
-> [!primary]  
-> Currently, permission changes that grant or revoke SSH access to an environment take effect only after the next time that environment is deployed.
-> 
-
-Selecting a user will allow you to either edit or remove access to that environment.
-
-You can also manage access to users on multiple environments using the project configuration screen.
-
-
-## Variables
-
-The `Variables` screen allows you to define the variables that will be available on a specific environment.
+Under **Variables**, you can define the [environment variables](../../development-variables).
 
 ![Configure Web PaaS environment variables](images/settings-variables-environment.png "0.6")
-
-## Routes
-
-The `Routes` screen describes the configuration features that define the routes of your application. Routes cannot be edited here, but it provides a simple routes configuration example for your project's `.platform/routes.yaml` file.
-
-![Configure Web PaaS environment routes](images/routes.png "0.7")
-
-Consult the documentation for more information about properly configuring [Routes](../../configuration-routes) for your project.
