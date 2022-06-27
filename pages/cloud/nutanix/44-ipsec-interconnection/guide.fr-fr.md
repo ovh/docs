@@ -462,7 +462,7 @@ A partir du menu `More` en haut, cliquez sur `Soft Shutdown`{.action}.
 
 ![Arrêt OVHGateway 04](images/01-stop-ovhgateway04.png){.thumbnail}
 
-<a name="getpublicaddress-fr"></a>
+<a name="getpublicaddressfr"></a>
 #### Etape 3.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud
 
 Récupérez les informations concernant les paramètres réseaux de la passerelle d'OVHcloud.
