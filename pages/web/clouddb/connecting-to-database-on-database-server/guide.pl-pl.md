@@ -16,16 +16,17 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ## Wymagania początkowe
 
-- Posiadanie [oferty Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- - Posiadanie [instancji CloudDB](https://www.ovh.com/pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
 > [!primary]
 >
-> Należy pamiętać, że nie ma dostępu do opcji "root".
-> <br> Ogólne komendy SQL działają normalnie, a oprogramowanie typu HeidiSQL, SQuirreL SQL lub Adminer są w pełni kompatybilne.
-> 
+> Pamiętaj, że rozwiązania [CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} nie dają dostępu do systemu zarządzania bazami danych, ale do baz danych na nim hostowanych.
+> <br> - Pamiętaj, że nie ma dostępu "root".
+> <br> - Ogólne polecenia SQL działają normalnie, a oprogramowanie takie jak HeidiSQL, SQuirreL lub Adminer jest w pełni kompatybilne.
+>
 
 ### Logowanie do bazy danych MySQL lub MariaDB 
 
@@ -55,13 +56,12 @@ Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona 
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **W przypadku błędu #1045**
-> 
-> W przypadku błędu #1045 oznacza to, że identyfikacja jest nieprawidłowa. Sprawdź nazwę użytkownika i/lub hasło.
-> 
-> **W przypadku błędu #2005**
-> 
-> W przypadku błędu #2005 zalecamy sprawdzenie nazwy serwera i jego funkcjonalności.
+
+> [!warning]
+>
+> **W przypadku błędu :**
+> <br> - błędu #1045 oznacza to, że identyfikacja jest nieprawidłowa. Sprawdź nazwę użytkownika i/lub hasło.
+> <br> - błędu #2005, zalecamy sprawdzenie nazwy serwera i jego funkcjonalności.
 
 #### Logowanie do bazy danych poza Panelem klienta
 

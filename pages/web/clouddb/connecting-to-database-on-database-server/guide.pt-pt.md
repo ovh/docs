@@ -16,7 +16,7 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de um [serviço de Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
@@ -55,13 +55,12 @@ Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
 ![sql-privado](images/private-sql-phpma03.png){.thumbnail}
 
+
+> [!warning]
+>
 > **Em caso de erro #1045**
-> 
-> Isso significa que a identificação não está correta. Verifique o nome de utilizador e/ou a palavra-passe.
-> 
-> **Em caso de erro #2005**
-> 
-> Verifique o nome do servidor e se ele está funcional.
+> <br> - Erro #1045, isso significa que a identificação não está correta. Verifique o nome de utilizador e/ou a palavra-passe.
+> <br> - Erro #2005, verifique o nome do servidor e se ele está funcional.
 
 #### Conexão à base de dados fora da Área de Cliente
 

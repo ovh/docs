@@ -56,7 +56,7 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> [!primary]
+> [!warning]
 >
 > **En cas d'erreur :**
 > <br> - Erreur #1045, cela signifie que l'identification est incorrecte. Il faut donc vérifier votre nom d'utilisateur et/ou votre mot de passe.

@@ -16,14 +16,14 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die Dienste [Cloud Databases](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Host gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
+> Beachten Sie, dass die Dienste [CloudDB](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankverwaltungssystem gewähren, sondern auf die darauf gehosteten Datenbanken. Es gibt keinen "root"-Zugang. Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
 
 ### Mit einer MySQL oder MariaDB Datenbank verbinden 
@@ -54,13 +54,11 @@ Wenn die Verbindung erfolgreich ist, erscheint die phpMyAdmin-Startseite.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **Bei einem Fehler #1045**
-> 
-> Ein Fehler #1045 bedeutet, dass die Identifikation fehlgeschlagen ist. Überprüfen Sie daher Ihren Benutzernamen und Ihr Passwort.
-> 
-> **Bei einem Fehler #2005**
-> 
-> Bei einem Fehler #2005 empfiehlt es sich, den Namen des Servers zu überprüfen und sicherzustellen, ob dieser korrekt funktioniert.
+> [!warning]
+>
+> **Bei einem Fehler :**
+> <br> - Fehler #1045, dass die Identifikation fehlgeschlagen ist. Überprüfen Sie daher Ihren Benutzernamen und Ihr Passwort.
+> <br> - Fehler #2005, den Namen des Servers zu überprüfen und sicherzustellen, ob dieser korrekt funktioniert.
 
 #### Verbindung zur Datenbank außerhalb des Kundencenters
 

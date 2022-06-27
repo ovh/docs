@@ -20,16 +20,17 @@ order: 3
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/){.external}
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!primary]
 >
-> Ti ricordiamo che non esiste un accesso super utente "root".
-> <br> I comandi SQL generici funzionano normalmente e i software HeidiSQL, SQuirreL SQL o Adminer sono pienamente compatibili.
-> 
+> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> <br> - Attenzione: non sono presenti accessi "root".
+> <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
+>
 
 ### Connettersi a un database MySQL o MariaDB 
 
@@ -59,13 +60,11 @@ Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **In caso di errore #1045**
-> 
-> In caso di errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
-> 
-> **In caso di errore #2005**
-> 
-> In caso di errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
+> [!warning]
+>
+> **In caso di errore :**
+> <br> - Errore #1045, significa che le credenziali non sono corrette. È quindi necessario verificare il nome utente e/o la password.
+> <br> - Errore #2005, ti consigliamo di verificare il nome del server e il suo corretto funzionamento.
 
 #### Accedi al database al di fuori dello Spazio Cliente OVH
 

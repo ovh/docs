@@ -16,15 +16,16 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
+- You must have a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that there is no root access.
-> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
+> Please note that the [CloudDB](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> <br> - Please note that there is no "root" access.
+> <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Logging in to a MySQL or MariaDB database 
@@ -55,13 +56,12 @@ If the connection succeeds, the next page of phpMyAdmin will appear.
 
 ![private-sql](images/private-sql-phpma03.png){.thumbnail}
 
-> **In case of error #1045**
-> 
-> If error #1045 occurs, it means that the identification is incorrect. You will need to check your username and/or password.
-> 
-> **In case of error #2005**
-> 
-> If you get error #2005, we recommend checking the server name, and whether it is working properly.
+> [!warning]
+>
+> **In case of error :**
+> <br> - Error #1045, it means that the identification is incorrect. You will need to check your username and/or password.
+> <br> - Error #2005, we recommend checking the server name, and whether it is working properly.
+>
 
 #### Connecting to the database outside the Control Panel
 
