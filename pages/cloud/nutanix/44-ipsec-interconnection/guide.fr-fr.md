@@ -45,16 +45,16 @@ Dans ce guide nous devons réaliser un partie de l'installation sur le cluster s
 &emsp;&emsp;[Etape 2.9.2 Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique](#addadminrule)<br />
 [Etape 3 Configuration de la passerelle en FRANCE](#configuregatewayfrance)<br />
 &ensp;&ensp;[Etape 3.1 Téléchargement des sources pour l'installation de pfsense](#downloadsources-fr)<br />
-&ensp;&ensp;[Etape 3.2 Création de la machine virtuelle **GW-PFSENSE**](#createvmpfsense-fr)<br />
-&ensp;&ensp;[Etape 3.3 Arrêt de la machine virtuelle **OVH-GATEWAY**](#shutdownovhgateway-fr)<br />
-&ensp;&ensp;[Etape 3.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddress-fr)<br />
-&ensp;&ensp;[Etape 3.5 Démarrage de la machine virtuelle **GW-PFSENSE**](#poweronvmpfsense-fr)<br />
-&ensp;&ensp;[Etape 3.6 Installation de **pfsense**](#pfsenseinstall-fr)<br />
-&ensp;&ensp;[Etape 3.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**](#pfsenseremovecdrom-fr)<br />
-&ensp;&ensp;[Etape 3.8 Configuration des adresses IP de pfsense au travers de la console](#configureippfsense-fr)<br />
-&ensp;&ensp;[Etape 3.9 Configuration de certaines options au travers de l'interface WEB](#configurepfsenseoptions-fr)<br />
-&emsp;&emsp;[Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**](#changepassword-fr)<br />
-&emsp;&emsp;[Etape 3.9.2 Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique](#addadminrule-fr)<br />
+&ensp;&ensp;[Etape 3.2 Création de la machine virtuelle **GW-PFSENSE**](#createvmpfsensefr)<br />
+&ensp;&ensp;[Etape 3.3 Arrêt de la machine virtuelle **OVH-GATEWAY**](#shutdownovhgatewayfr)<br />
+&ensp;&ensp;[Etape 3.4 Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getpublicaddressfr)<br />
+&ensp;&ensp;[Etape 3.5 Démarrage de la machine virtuelle **GW-PFSENSE**](#poweronvmpfsensefr)<br />
+&ensp;&ensp;[Etape 3.6 Installation de **pfsense**](#pfsenseinstallfr)<br />
+&ensp;&ensp;[Etape 3.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**](#pfsenseremovecdromfr)<br />
+&ensp;&ensp;[Etape 3.8 Configuration des adresses IP de pfsense au travers de la console](#configureippfsensefr)<br />
+&ensp;&ensp;[Etape 3.9 Configuration de certaines options au travers de l'interface WEB](#configurepfsenseoptionsfr)<br />
+&emsp;&emsp;[Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**](#changepasswordfr)<br />
+&emsp;&emsp;[Etape 3.9.2 Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique](#addadminrulefr)<br />
 [Etape 4 Mise en place du VPN IPsec](#configurevpnipsec)<br />
 &ensp;&ensp;[Etape 4.1 Configuration du site au CANADA](#ipseccanada)<br />
 &emsp;&emsp;[Etape 4.1.1 Mise en place du VPN IPsec vers la France](#paramipsectofrance)<br />
@@ -416,14 +416,14 @@ L'interface d'administration de **pfsense** et accessible depuis internet sur le
 
 Nous allons effectuer l'installation de la passerelle **GW-PSENSE** en France sur le plan IP **192.168.0.0/24**.
 
-<a name="downloadsources-fr"></a>
+<a name="downloadsourcesfr"></a>
 #### Etape 3.1 Téléchargement des sources pour l'installation de pfsense
 
 Téléchargez l'image iso de l'installation de **pfsense** à partir de ce lien [Téléchargement pfsense](https://www.pfsense.org/download/).
 
 Ensuite à l'aide de cette documentation [Importez des images ISO](https://docs.ovh.com/fr/nutanix/image-import/) importez l'image **ISO** **pfsense** dans votre cluster NUTANIX.
 
-<a name="createvmpfsense-fr"></a>
+<a name="createvmpfsensefr"></a>
 #### Etape 3.2 Création de la machine virtuelle **GW-PFSENSE**
 
 Créez une machine virtuelle avec ces paramètres :
@@ -439,7 +439,7 @@ Vous pouvez vous aider de ces informations sur ce lien [Gestion des machines vir
 
 ![Create VM 01](images/00-createvm01.png){.thumbnail}
 
-<a name="shutdownovhgateway-fr"></a>
+<a name="shutdownovhgatewayfr"></a>
 #### Etape 3.3 Arrêt de la machine virtuelle **OVH-GATEWAY**
 
 Pour éviter des adresses IP en double sur le réseau il faut arrêter la machine virtuelle **OVHgateway** avant de démarrer la nouvelle machine virtuelle sous **pfsense**.
@@ -486,7 +486,7 @@ Par exemple si l'adresse **IPFO** affichée sur le site client est 123.123.123.4
 - **123.123.123.5** pour l'adresse de l'interface **WAN** 
 - **123.123.123.6** pour la passerelle sur l'interface **WAN**.
 
-<a name="poweronvmpfsense-fr"></a>
+<a name="poweronvmpfsensefr"></a>
 #### Etape 3.5 Démarrage de la machine virtuelle **GW-PFSENSE**
 
 Revenez dans la gestion des machines virtuelles sur **Prism Central**, cliquez sur `GW-PFSENSE`{.action}.
@@ -501,7 +501,7 @@ Cliquez sur `Launch console`{.action}.
 
 ![Start GATEWAY pfsense](images/02-start-gatewaypfsense03.png){.thumbnail}
 
-<a name="pfsenseinstall-fr"></a>
+<a name="pfsenseinstallfr"></a>
 #### Etape 3.6 Installation de **pfsense**
 
 Appuyez sur la touche `entrée`{.action} pour accepter la licence.
@@ -544,7 +544,7 @@ Laissez `Reboot` et appuyez sur la touche `entrée`{.action}.
 
 ![pfsense Installation 10](images/03-install-pfsense10.png){.thumbnail}
 
-<a name="pfsenseremovecdrom-fr"></a>
+<a name="pfsenseremovecdromfr"></a>
 #### Etape 3.7 Ejection du CDROM pfsense de la machine virtuelle **GW-PFSENSE**
 
 Revenez dans la gestion des machines virtuelles dans **Prism Central** et arrêtez la machine virtuelle en cliquant sur `Soft Shutdown`{.action} dans le menu `More` de la machine virtuelle **GW-PFSENSE**.
@@ -583,7 +583,7 @@ Cliquez sur `Launch Console`{.action} pour continuer l'installation après le d�
 
 ![Remove CDROM 09](images/03-remove-cdrom09.png){.thumbnail}
 
-<a name="configureippfsense-fr"></a>
+<a name="configureippfsensefr"></a>
 #### Etape 3.8 Configuration des adresses IP de pfsense au travers de la console
 
 Nous allons configurer les adresses IP de passerelle **pfsense** comme ceci:
@@ -676,7 +676,7 @@ Appuyez sur la touche `entrée`{.action} pour terminer la configuration en ligne
 
 ![Configure pfsense 20](images/04-yconfigureip-pfsense20-fr.png){.thumbnail}
 
-<a name="configurepfsenseoptions-fr"></a>
+<a name="configurepfsenseoptionsfr"></a>
 #### Etape 3.9 Configuration de certaines options au travers de l'interface WEB
 
 Connectez-vous sur la console WEB de pfsense avec cette URL https://192.168.0.254 à partir d'une machine virtuelle se trouvant sur le réseau local **AHV : Base**.
@@ -690,7 +690,7 @@ Et cliquez sur `SIGN IN`{.action}.
 
 ![WEB Configure pfsense 01](images/05-configure-pfsense01-fr.png){.thumbnail}
 
-<a name="changepassword-fr"></a>
+<a name="changepasswordfr"></a>
 ##### Etape 3.9.1 Changement du mot de passe par défaut de **pfsense**
 
 Au travers du menu `System`{.action} choisissez `User Manager`{.action}
@@ -709,7 +709,7 @@ Cliquez sur `Save`{.action} pour valider les changements.
 
 ![Change Password 03](images/06-change-password04.png){.thumbnail}.
 
-<a name="addadminrule-fr"></a>
+<a name="addadminrulefr"></a>
 ##### Etape 3.9.2 Ajout d'une règle pour autoriser l'administration à distance à partir d'une adresse publique.
 
 Allez dans le menu `Firewall`{.action} choisissez `Rules`{.action}.
