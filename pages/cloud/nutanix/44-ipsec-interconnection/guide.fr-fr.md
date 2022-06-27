@@ -410,10 +410,7 @@ L'interface d'administration de **pfsense** et accessible depuis internet sur le
 <a name="configuregatewayfrance"></a>
 ### Etape 3 Configuration de la passerelle en FRANCE
 
-L'installation de la passerelle en **FRANCE** est identique à la passerelle du CANADA sauf pour ces paramètres :
-
-* **Adresse privée en FRANCE** : 192.168.0.254 avec un masque en /24
-* **Adresse publique** et **Adresse de passerelle publique** comme indiqué sur cette partie du guide [Récupération de l'adresse publique sur l'espace client d'OVHcloud](#getipcustomerportal)
+Nous allons effectuer l'installation de la passerelle **GW-PSENSE** en France sur la plan IP **192.168.0.0/24**.
 
 <a name="downloadsources-fr"></a>
 #### Etape 3.1 Téléchargement des sources pour l'installation de pfsense
