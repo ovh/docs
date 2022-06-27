@@ -42,17 +42,16 @@ You also need to have [Helm](https://docs.helm.sh/){.external} installer on your
 
 ## Ingress resources and Nginx Ingress Controller
 
-In Kubernetes, an Ingress resource allow you to access to your Services from outside the cluster. The goal is to avoid to creating a Load Balancer per Service but only one per Ingress.
+In Kubernetes, an Ingress resource allows you to access to your Services from outside the cluster. The goal is to avoid creating a Load Balancer per Service but only one per Ingress.
 
 ![Kubernetes Ingress](images/ingress.png)
 
-In this tutorial we will install a Nginx Ingress Controller, but what is it?
+An Ingress is implemented by a 3rd party: an Ingress Controller that extends specs to support additional features.
 
-An Ingress is implemented by a 3rd party: an Ingress Controller that extnds specs to support additional features.
+In this tutorial you will install a Nginx Ingress Controller.<br>
+It is an Ingress controller for Kubernetes using a Nginx web server as a reverse proxy and Load Balancer.
 
-In this guide you will install a Nginx Ingress Controller. Is it an Ingress controller for Kubernetes using Nginx web server as a reverse proxy and Load Balancer.
-
-Concretely, when you are deploying and running a Nginx Ingress Controller, you will have a Pod that will run Nginx and watches the Kubernetes Control Plane for new and updated Ingress Resource objects.
+Specifically, when you are deploying and running a Nginx Ingress Controller, you will have a Pod that runs Nginx and watches the Kubernetes Control Plane for new and updated Ingress Resource objects.
 
 Imagine an Ingress Resource as a list of traffic routing rules for backend Services.
 
@@ -180,7 +179,7 @@ spec:
 > [!primary]
 > Don't forget to replace `[YOUR_WORDPRESS_SERVICE_NAME]`.
 
-In my example the `ingress.yaml` have this result:
+In our example, the `ingress.yaml` produces this result:
 
 ```
 apiVersion: networking.k8s.io/v1
