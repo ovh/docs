@@ -20,14 +20,16 @@ Si se produce un error en la base de datos, es necesario que pueda restaurar una
 
 ## Requisitos
 
-- Tener contratado un plan de [Cloud Databases](https://www.ovh.es/cloud-databases/).
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/)).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que los productos [Cloud Databases](https://www.ovh.es/cloud-databases/) no dan acceso al host, sino a las bases de datos alojadas en este, por lo que no hay accesos super usuario "root". Los comandos SQL genéricos funcionan con normalidad y los programas de tipo HeidiSQL, SQuirreL SQL o Adminer son totalmente compatibles.
+> Tenga en cuenta que las soluciones [CloudDB](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> <br> - Tenga en cuenta que no hay acceso "root".
+> <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 > 
 
 ### Restaurar e importar una base de datos desde el área de clientes
@@ -46,8 +48,7 @@ Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el b
 
 > [!warning]
 >
-> La restauración implica la sustitución del contenido de la base de datos tras la restauración.
-> Si no está seguro de lo que está haciendo, le recomendamos que realice una copia de seguridad antes.
+> La restauración implica la sobrescritura del contenido de la base de datos y, por tanto, una posible pérdida de datos. Si no está seguro de lo que está haciendo, le recomendamos que realice una copia de seguridad antes.
 > 
 
 #### 2\. Importar una copia de seguridad local
@@ -66,7 +67,7 @@ Escriba un nombre para el archivo importado, haga clic en `Navegar`{.action} par
 
 > [!warning]
 >
-> El archivo debe tener el formato ".gz".
+> El archivo debe tener el formato ".sql", ".txt" o ".gz".
 > 
 
 ![clouddb](images/private-sql-import02.png){.thumbnail}
@@ -85,12 +86,12 @@ Marque **"Vaciar la base de datos actual"** antes de la importación y **"Enviar
 
 ### Importación de bases de datos MySQL o MariaDB fuera del área de cliente
 
-En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la importación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
+En algunos casos, la RAM disponible en su servidor de bases de datos no permite realizar la importación deseada fuera del área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
 
 
 #### Importar una base MySQL o MariaDB desde phpMyAdmin
 
-Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](../coneccion-base-de-datos-servidor-bdd).
+Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](https://docs.ovh.com/es/clouddb/coneccion-base-de-datos-servidor-bdd/#importar-una-base-de-datos-mysql-o-mariadb.
 
 Una vez conectado a phpMyAdmin, seleccione la base de datos haciendo clic en su nombre.
 
@@ -110,11 +111,12 @@ Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para inicia
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 
-Esta operación solo es posible por [SSH](../web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud.
+Esta operación solo es posible por [SSH](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud.
 
 ```bash
 cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puerto —contraseña=contraseña nombre_de_la_BD
 ```
+
 #### Importar una base de datos MySQL o MariaDB desde un archivo PHP
 
 ```php
@@ -133,11 +135,11 @@ cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puert
 
 ### importación de bases de datos PostgreSQL fuera del área de cliente
 
-En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la importación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-clientes) de esta guía.
+En algunos casos, la RAM disponible en su servidor de bases de datos no permite realizar la importación deseada fuera del área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-clientes) de esta guía.
 
 #### Importar una base de datos PostgreSQL en línea de comandos
 
-Esta operación solo es posible por [SSH](../web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud en versión estable o superior.
+Esta operación solo es posible por [SSH](https://docs.ovh.com/es/hosting/web_hosting_ssh_en_alojamiento_compartido/) desde un alojamiento compartido de OVHcloud en versión estable o superior.
 
 ```bash
 psql —host=servidor —port=puerto —user=usuario —password=contraseña nombre_de_la_BD < nombre_de_la_BD.sql

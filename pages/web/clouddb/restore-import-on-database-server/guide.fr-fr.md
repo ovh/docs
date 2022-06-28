@@ -44,8 +44,7 @@ La liste des sauvegardes disponibles apparaît, cliquez sur le bouton `...`{.act
 
 > [!warning]
 >
-> La restauration implique l'écrasement du contenu de la base de données et donc une potentielle perte de données.
-> Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
+> La restauration implique l'écrasement du contenu de la base de données et donc une potentielle perte de données. Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
 > 
 
 #### 2\. Importer une sauvegarde locale
@@ -87,7 +86,7 @@ Dans certains cas, la RAM disponible dans votre serveur de bases de données ne 
 
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
-Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](../connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-données-mysql-ou-mariadb){.external}
+Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](https://docs.ovh.com/fr/clouddb/connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb){.external}
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
@@ -107,7 +106,7 @@ Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer 
 
 #### Importer ma base MySQL ou MariaDB en ligne de commande
 
-Cette action est uniquement possible en [SSH](../../hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
+Cette action est uniquement possible en [SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud.
 
 ```bash
 cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
@@ -134,7 +133,7 @@ Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases 
 
 #### Importer ma base PostgreSQL en ligne de commande
 
-Cette action est uniquement possible en [SSH](../../hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud en version stable ou supérieure.
+Cette action est uniquement possible en [SSH](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} depuis un hébergement mutualisé OVHcloud en version stable ou supérieure.
 
 ```bash
 psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base < nom_de_la_base.sql
@@ -152,7 +151,7 @@ psql --host=serveur --port=port --user=utilisateur --password=password nom_de_la
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide [Comment protéger l’accès a un répertoire par une authentification ?](../../hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide [Comment protéger l’accès a un répertoire par une authentification ?](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 

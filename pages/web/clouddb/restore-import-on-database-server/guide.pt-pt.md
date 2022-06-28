@@ -16,14 +16,16 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 
 ## Requisitos
 
-- Dispor de um [serviço Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
+- Dispor de uma [instância CloudDB](https://www.ovh.com/pt/cloud/cloud-databases/) {.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 > [!primary]
 >
-> Tenha em atenção que os serviços [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external} não dão acesso ao host, mas sim às bases de dados alojadas neste último. Não há um acesso superutilizador «root». Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
+> Tenha em atenção que os serviços [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external} não dão acesso ao host, mas sim às bases de dados alojadas neste último. 
+> <br> - Não há um acesso superutilizador «root». 
+> <br> - Os comandos SQL genéricos funcionam normalmente, e os programas de tipo HeidiSQL, SQuirreL SQL e Adminer são plenamente compatíveis.
 > 
 
 ### Restaurar e importar uma base de dados a partir da Área de Cliente
@@ -42,8 +44,7 @@ Quando surgir a lista dos backups, clique no botão `...`{.action} à direita do
 
 > [!warning]
 >
-> O restauro implica a substituição do conteúdo da base de dados.
-> Se não está plenamente seguro da operação, sugerimos que efetue um backup prévio.
+> O restauro implica a supressão do conteúdo da base de dados e, por conseguinte, uma potencial perda de dados. Caso não tenha a certeza do que está a fazer, sugerimos que efetue um backup antes.
 > 
 
 #### 2. Importar um backup local
@@ -62,7 +63,7 @@ Introduza um nome para o ficheiro importado. Clique em `Percorrer`{.action} para
 
 > [!warning]
 >
-> O ficheiro deve estar no formato «.gz».
+> O ficheiro deve estar no formato ".sql", ".txt" ou ".gz".
 > 
 
 ![clouddb](images/private-sql-import02.png){.thumbnail}
@@ -81,11 +82,12 @@ Se desejar, selecione as opções **«Limpar a base de dados atual»** antes da 
 
 ### Importação de bases de dados MySQL ou MariaDB fora da Área de Cliente
 
-Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a importação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Consulte a secção [«Restaurar e importar uma base de dados a partir da Área de Cliente»](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
+Em certos casos, a RAM disponível no seu servidor de bases de dados não permite realizar a importação desejada fora da Área de Cliente. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Consulte a secção [«Restaurar e importar uma base de dados a partir da Área de Cliente»](./#restaurar-e-importar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
 
 
 #### Importar uma base MySQL ou MariaDB a partir do phpMyAdmin
-Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](../conexao-base-de-dados-servidor-bdd/#conexao-a-uma-base-de-dados-mysql-ou-mariadb){.external}.
+
+Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](https://docs.ovh.com/pt/clouddb/conexao-base-de-dados-servidor-bdd/#conexao-a-uma-base-de-dados-mysql-ou-mariadb){.external}.
 
 Depois de se ter conectado ao phpMyAdmin, clique no nome da base de dados.
 
@@ -104,7 +106,7 @@ Deixe as opções predefinidas e clique em `Executar`{.action} para lançar a im
 
 #### Importar uma base MySQL ou MariaDB a partir da linha de comandos
 
-Esta ação só é possível em [SSH]( ../partilhado_o_ssh_nos_alojamentos_partilhados/){.external} a partir de um alojamento partilhado OVHcloud.
+Esta ação só é possível em [SSH](https://docs.ovh.com/pt/hosting/partilhado_o_ssh_nos_alojamentos_partilhados/){.external} a partir de um alojamento partilhado OVHcloud.
 
 ```bash
 cat nome_da_base.sql | mysql --host=servidor --user=utilizador --port=port --password=password nome_da_base

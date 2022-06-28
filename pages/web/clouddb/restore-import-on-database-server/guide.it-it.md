@@ -20,16 +20,17 @@ In caso di errore sul database, è necessario essere in grado di ripristinare un
 
 ## Prerequisiti
 
-- Disporre di una [soluzione Cloud Database](https://www.ovh.it/cloud-databases/)
+- Disporre di una [istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 > [!primary]
 >
-> Non è disponibile alcun accesso super utente "root".
-> <br> I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
-> 
+> Attenzione: le soluzioni [CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> <br> - Attenzione: non sono presenti accessi "root".
+> <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
+>
 
 ### Ripristina e importa un database dallo Spazio Cliente
 
@@ -47,8 +48,7 @@ Visualizzi la lista dei backup disponibili, clicca sul pulsante `...`{.action} i
 
 > [!warning]
 >
-> Il ripristino comporta la sostituzione del contenuto del database dopo il ripristino.
-> Se non sei sicuro di cosa stai facendo, ti consigliamo di eseguire un backup prima.
+> Il ripristino comporta lo schiacciamento del contenuto del database e quindi una possibile perdita di dati. Se non sei sicuro di cosa stai facendo, ti consigliamo di eseguire un backup prima.
 > 
 
 #### Importa un backup locale
@@ -67,7 +67,7 @@ Inserisci un nome per il tuo file importato, clicca su `Seleziona`{.action} il n
 
 > [!warning]
 >
-> Il file deve essere in formato ".gz".
+> Il file deve essere in formato ".sql", ".txt" o ".gz".
 > 
 
 ![clouddb](images/private-sql-import02.png){.thumbnail}
@@ -91,7 +91,7 @@ In alcuni casi, la RAM disponibile nel tuo database potrebbe non consentire di e
 
 #### Importare il mio database MySQL o MariaDB da phpMyAdmin
 
-Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](../connessione-database-server-bdd).
+Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](https://docs.ovh.com/it/clouddb/connessione-database-server-bdd/#connettersi-a-un-database-mysql-o-mariadb).
 
 Una volta connesso a phpMyAdmin, seleziona il tuo database cliccando sul suo nome.
 
@@ -111,7 +111,7 @@ Lascia le opzioni predefinite e clicca su `Esegui`{.action} per avviare l'import
 
 #### Importare il tuo database MySQL o MariaDB da riga di comando
 
-Questa azione è possibile solo in [SSH](../hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud.
+Questa azione è possibile solo in [SSH](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud.
 
 ```bash
 cat nom_de_base.sql | mysql —host=server —user=utente —port=port —password=password nome_database
@@ -128,17 +128,17 @@ cat nom_de_base.sql | mysql —host=server —user=utente —port=port —passwo
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
 ### Importazione di database PostgreSQL al di fuori dello Spazio Cliente
 
-In alcuni casi, la RAM disponibile nel tuo database potrebbe non consentire di effettuare l'importazione desiderata. In questo caso, ti consigliamo di utilizzare il tool OVHcloud nello Spazio Cliente. Accedi alla sezione ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristina-e-importa-un-database-dallo-spazio-cliente) di questa guida.
+In alcuni casi, la RAM disponibile sul tuo server di database non permette di realizzare l'importazione desiderata al di fuori dello Spazio Cliente OVH. Accedi alla sezione ["Ripristinare e importare un database dallo Spazio Cliente"](./#ripristina-e-importa-un-database-dallo-spazio-cliente) di questa guida.
 
 #### Importa il tuo database PostgreSQL da riga di comando
 
-Questa azione è possibile esclusivamente in [SSH](../hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud in versione stabile o superiore.
+Questa azione è possibile esclusivamente in [SSH](https://docs.ovh.com/it/hosting/hosting_condiviso_il_protocollo_ssh/) da un hosting condiviso OVHcloud in versione stabile o superiore.
 
 ```bash
 psql —host=server —port=port —user=utente —password=password nome_database < nome_database.sql
@@ -156,7 +156,7 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/it/hosting/condividi-htaccess-come-proteggere-laccesso-a-una-cartella-tramite-autenticazione/)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
