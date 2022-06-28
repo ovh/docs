@@ -25,9 +25,9 @@ hidden: true
 
 Au travers de **Prism Element** il est possible :
 
-- de créer des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
-- d'ajouter des liaisons vers des clusters distants si ils sont reliés.
-- De modifier les domaines de protections pour rajouter des réplications vers des sites distants.
+
+- d'ajouter des liaisons vers des clusters distants.
+- De créer des domaines de protections pour rajouter des réplications vers des sites distants.
 
 > [!warning]
 > 
@@ -171,8 +171,7 @@ Modifier ces options pour **Configure your local schedule** :
 
 Ensuite saisissez les règles de rétentions dans **Retention policy** :
 
-* Choisissez `2 snapshots` à **keep the last** en local pour garder deux snapshots en local.
-* Cochez la case à côté du site distant et garder aussi `2 snapshots` à **keep the last** pour garder deux snapshots sur le site distant.
+* Choisissez en local et à distance **keep the last** `2` **snapshots** pour garder deux snapshots en local et à distance. 
 
 Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
