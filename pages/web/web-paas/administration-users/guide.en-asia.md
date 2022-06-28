@@ -5,7 +5,7 @@ section: Administration
 order: 11
 ---
 
-**Last updated 13th January 2022**
+**Last updated 24th June 2022**
 
 
 
@@ -23,8 +23,9 @@ Within a project, each user has a role that controls their access and permission
 * Project Viewer: Any user with access to environment types automatically gets this role.
 
 These control who has access to projects.
-Users can still see projects that they can't access if they're a member of an organization.
 
+Users can still see projects that they can't access if they're a member of an organization.
+See more on access control for organizations.
 
 To see all projects you have a role in, from the main console page
 click **All projects&nbsp;<span aria-label="and then">></span> All projects**.
@@ -55,24 +56,30 @@ The following table shows the available roles for environment types.
 | Contributor | Yes | Yes | Yes | Yes | No | No |
 | Admin| Yes | Yes | Yes | Yes | Yes | Yes |
 
-To customize who can use SSH, [set the access key](../configuration-app/access/) in your `platform.app.yaml` file.
+To customize who can use SSH, [set the access key](../configuration-app/access) in your `platform.app.yaml` file.
 
 ## Manage users
 
 ### Add a user to a project
 
-If you are an organization owner, or an organization user with manage plan or manage users permissions wanting to add a user to a project or an environment, follow these steps:
+To add a user, you need to be a [Project Admin](#user-roles).
+
+To add a user to a project or an environment, follow these steps:
 
 > [!tabs]      
 > In the console     
 >> ``` false     
 >> 
 >> 
->> 1. In the console, select the project where you want to add a new user.
->> 2. Under **Settings**, click **Access**.
->> 3. Click **+ Add**.
->> 4. Add the user's details and choose their permissions.
->> 5. Click **Save**.
+>> <!--This is in HTML to get the icon not to break the list. -->
+>> <ol>
+>>   <li>Select the project where you want to add a new user.</li>
+>>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Access</strong>.</li>
+>>   <li>Click <strong>+ Add</strong>.</li>
+>>   <li>Add the user's details and choose their permissions.</li>
+>>   <li>Click <strong>Save</strong>.</li>
+>> </ol>
 >> 
 >> 
 >> ```     
@@ -94,6 +101,8 @@ For SSH access changes to apply after you add a user to a project, you have to r
 
 ### Delete a user from a project
 
+To delete a user, you need to be a [Project Admin](#user-roles).
+
 To delete a user from a project, follow these steps:
 
 > [!tabs]      
@@ -101,10 +110,15 @@ To delete a user from a project, follow these steps:
 >> ``` false     
 >> 
 >> 
->> 1. In the console, select the project where you want to delete a user.
->> 2. Under **Settings**, click **Access**.
->> 3. Select the user you want to delete and click **Delete**.
->> 4. Click **Save**.
+>> <!--This is in HTML to get the icon not to break the list. -->
+>> <ol>
+>>   <li>Select the project where you want to add a new user.</li>
+>>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Access</strong>.</li>
+>>   <li>Expand the user you want to delete.</li>
+>>   <li>Click <strong>Delete</strong>.</li>
+>>   <li>Click <strong>Save</strong>.</li>
+>> </ol>
 >> 
 >> 
 >> ```     
@@ -119,10 +133,12 @@ To delete a user from a project, follow these steps:
 >> ```     
 
 Once you delete a user, they can no longer access the project.
-After you delete a user from a project or an environment type, you must trigger a redeploy to propagate SSH access changes to each environment.
-You can redeploy by clicking **Redeploy** in the console or  using the CLI command `webpaas redeploy`.
+After you delete a user from a project or an environment type,
+you must [trigger a redeploy](../development-redeploy/) to propagate SSH access changes to each environment.
 
 ### Change existing permissions for environment types
+
+To manage user permissions, you need to be a [Project Admin](#user-roles).
 
 To change user permissions, follow these steps:
 
@@ -131,10 +147,15 @@ To change user permissions, follow these steps:
 >> ``` false     
 >> 
 >> 
->> 1. In the console, select the project where you want to change the user permissions.
->> 2. Under **Settings**, click **Access**.
->> 3. Select a user and change the permissions.
->> 4. Click **Save**.
+>> <!--This is in HTML to get the icon not to break the list. -->
+>> <ol>
+>>   <li>Select the project where you want to add a new user.</li>
+>>   <li>Click {{< icon settings >}} <strong>Settings</strong>.</li>
+>>   <li>Click <strong>Access</strong>.</li>
+>>   <li>Expand the user you want to delete.</li>
+>>   <li>Click <strong>Delete</strong>.</li>
+>>   <li>Click <strong>Delete</strong> to confirm.</li>
+>> </ol>
 >> 
 >> 
 >> ```     
@@ -151,7 +172,5 @@ To change user permissions, follow these steps:
 >> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
 >> 
 >> ```     
-
-
 
 
