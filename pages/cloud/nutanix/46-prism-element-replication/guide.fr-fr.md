@@ -131,7 +131,7 @@ Cliquez sur `Save`{.action}.
 
 ![02 Create Remote Site From Canada10](images/02-create-remote-site-from-canada10.png){.thumbnail}
 
-Le site distant apparait dans la liste des sites distants. 
+Le site distant apparait dans la liste. 
 
 ![02 Create Remote Site From Canada11](images/02-create-remote-site-from-canada11.png){.thumbnail}
 
@@ -187,7 +187,7 @@ Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
-Le domaine de protection est créé et apparait dans la liste des réplications.
+Le domaine de protection est créé et apparait dans la liste.
 
 ![03 Create dataprotection 10](images/03-create-dataprotection10.png){.thumbnail}
 
