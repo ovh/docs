@@ -31,7 +31,7 @@ Au travers de **Prism Element** il est possible :
 
 > [!warning]
 > 
-> Avec le pack **Nutanix Standard** OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veut une réplication plus courte il faut faire des réplications synchrones avec la possibilité d'avoir une réplication comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** OVHcloud.
+> Avec le pack **Nutanix Standard** OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veut une réplication plus courte il faut faire des réplications synchrones qui permet d'avoir une réplication comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** OVHcloud.
 > 
 >
 
