@@ -21,21 +21,31 @@ hidden: true
 >
 
 
+## Présentation
+
+Au travers de **Prism Element** il est possible :
+
+- de créér des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
+- d'ajouter des liaisons vers des clusters distants si les deux clusters communiquent entre eux.
+- De modifier les domaines de protections pour rajouter des réplications vers des sites distants.
+
+> [!warning]
+> 
+> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veux un réplication plus courte il faut faire des réplications synchrones avec une possibilité de compris entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
+> 
+>
+
 ## Prérequis
 
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
-- Avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple. Vous pouvez vous aider de ce guide  
-
-
+- Avoir mis en place une interconnexion entre deux clusters comme par exemple avec un VPN IPsec.
 ## Présentation de la réplication synchrone et asynchrone
 
-Deux clusters Nutanix qui utilisent le pack de licence **Nutanix Standard** d'OVHcloud ont la capacité d'être relié pour créer un domaine de protection avec une réplication asynchrone toutes les heures. 
 
-Un groupe de protection peut contenir une ou plusieurs machines virtuelles du même cluster. Il est possible de créer des groupes de protections sur chaque cluster et de faire des réplications bi-directionnelles.
 
-Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minutes) et multisite sur plusieurs clusters il faudra choisir le pack **Nutanix Advanced** sur chacun des clusters.
+
 
 ## En pratique
 
