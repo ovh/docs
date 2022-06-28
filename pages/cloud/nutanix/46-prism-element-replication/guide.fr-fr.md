@@ -46,8 +46,8 @@ Au travers de **Prism Element** il est possible :
 
 Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters OVHcloud, l'un au Canada et l'autre en France connectés via un VPN IPsec, sur deux plans d'adressages IP différents qui sont :
 
-* **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en France.
-* **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au Canada.
+- **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en France.
+- **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au Canada.
 
 Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de ce guide [Interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/IPsec-interconnection/).
 
@@ -167,11 +167,11 @@ Cliquez sur `New Schedule`{.action} pour configurer la planification.
 
 Modifier ces options pour **Configure your local schedule** :
 
-* Saisissez **Repeat every** `1 hour`. 
+- Saisissez **Repeat every** `1 hour`. 
 
 Ensuite saisissez les règles de rétentions dans **Retention policy** :
 
-* Choisissez en local et à distance **keep the last** `2` **snapshots** pour garder deux snapshots en local et à distance. 
+- Choisissez en local et à distance **keep the last** `2` **snapshots** pour garder deux snapshots en local et à distance. 
 
 Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
@@ -198,12 +198,12 @@ La migration des machines virtuelles est une opération de bascule des machines 
 
 Les étapes de la migration sont décrites ci-dessous :
 
-* Arrêt des machines virtuelles sur le cluster source (si elles sont allumées).
-* Réplication des données manquantes vers le cluster de destination.
-* Suppression des machines virtuelles sur le cluster source.
-* Activation des machines virtuelles sur le cluster de destination.
-* La réplication est inversée, la destination devient la source sans planification programmée.
-
+- Arrêt des machines virtuelles sur le cluster source (si elles sont allumées).
+- Réplication des données manquantes vers le cluster de destination.
+- Suppression des machines virtuelles sur le cluster source.
+- Désactivation de la planification.
+- Activation des machines virtuelles sur le cluster de destination.
+- La réplication est inversée, la destination devient la source 
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
