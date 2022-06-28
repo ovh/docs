@@ -31,7 +31,7 @@ Au travers de **Prism Element** il est possible :
 
 > [!warning]
 > 
-> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veux un réplication plus courte il faut faire des réplications synchrones avec une possibilité comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
+> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veut une réplication plus courte il faut faire des réplications synchrones avec une possibilité comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
 > 
 >
 
@@ -40,7 +40,7 @@ Au travers de **Prism Element** il est possible :
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
-- Avoir mis en place une interconnexion entre deux clusters comme par exemple avec un VPN IPsec.
+- Avoir mis en place une interconnexion entre deux clusters comme avec un VPN IPsec.
 
 ## En pratique
 
@@ -202,8 +202,8 @@ La migration des machines virtuelles consiste à basculer les machines virtuelle
 * Réplication des données manquantes vers le cluster de destination.
 * Suppression des machines virtuelles sur le cluster source.
 * Activation des machines virtuelles sur le cluster de destination.
-* La réplication est inversée, la destination devient la source.
-* Désactivation de la réplication planifiée.
+* La réplication est inversée, la destination devient la source sans planification programmée.
+
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
@@ -215,7 +215,7 @@ Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.act
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. Les machines virtuelles sont étéintes sur le nouveau site il faut alors les démarrer manuellement.
+La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. Sur le nouveau site il faut alors démarrer manuellement les machines virtuelles migrées.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
@@ -239,9 +239,10 @@ Cliquez sur `Yes`{.action}.
 
 ![05 Active VM on remote site 02](images/05-activate-protection-domain02.png){.thumbnail}
 
-Les machines virtuelles apparaîtront dans la console de **Prism Element** dans l'état de la dernière réplication, les données modifiées entre temps sur le cluster d'origine seront perdues. 
+Les machines virtuelles apparaîtront dans la console de **Prism Element** dans l'état de la dernière réplication, les données modifiées après la dernière réplication valide seront perdues.
 
-Les machines virtuelles activées sont éteintes, il est nécessaire de faire un démarrage manuel.
+IL sera alors possible de les démarrer.
+
 
 ## Aller plus loin
 
