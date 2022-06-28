@@ -6,17 +6,11 @@ section: Primeros pasos
 order: 02
 ---
 
-¿Quiere utilizar MySQL o MariaDB en CloudDB? Descubra cómo crear y administrar fácilmente sus bases de datos alojadas en esta solución.
+**Última actualización: 16/04/2020**
+  
+## Objetivo
 
-## Introduccion
-
-### Requisitos
-
-Para seguir los pasos de esta guía, es necesario:
-
-- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
-- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
-- Haber consultado la [guía de inicio de CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
+¿Quiere utilizar MySQL o MariaDB para sus bases de datos?
 
 ### Que es una base de datos MySQL
 
@@ -32,7 +26,19 @@ Este motor es 100% compatible y más «libre» que su hermano mayor MySQL. Al co
 
 Además, la sustitución del motor de almacenamiento InnoDB por XtraDB sumada a otras optimizaciones prometen un mejor rendimiento.
 
-## Conexion a la base de datos
+**Descubra cómo crear y gestionar sus bases de datos MySQL o MariaDB**
+
+## Requisitos
+
+Para seguir los pasos de esta guía, es necesario:
+
+- Tener una [instancia CloudDB](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es-es/web-hosting/))
+- Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- Haber consultado la [guía de inicio de CloudDB](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
+
+## Procedimiento
+
+### Conexion a la base de datos
 
 > [!primary]
 >
@@ -56,13 +62,13 @@ Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.c
 
 Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/).
 
-### Conexion en linea de comandos
+#### Conexion en linea de comandos
 
 ```bash
 mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nombre_de_la_BD
 ```
 
-### Conexion mediante un script PHP
+#### Conexion mediante un script PHP
 
 ```php
 1. <?php
@@ -70,7 +76,7 @@ mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nom
 3. ?>
 ```
 
-### Conexion a traves de la aplicacion SQuirreL SQL
+#### Conexion a traves de la aplicacion SQuirreL SQL
 
 Ejecute SQuirreL SQL, abra el menú `Aliases`{.action} y haga clic en `+`{.action}.
 
@@ -96,20 +102,27 @@ Se establecerá la conexión a la base de datos:
 
 ### Conexion mediante phpMyAdmin
 
-*Próximamente disponible en otra guía.*
+Puede utilizar phpMyAdmin para explorar el contenido de su base de datos. Para ello, instale phpMyAdmin en su propio servidor o alojamiento web. Durante la instalación, asegúrese de configurar la información de su servidor Cloud Databases y la base de datos deseada para que phpMyAdmin pueda conectarse a ella.
 
-## Exportar una base de datos MySQL o MariaDB
+### Exportar e importar una base de datos MySQL o MariaDB
 
-### Exportar la base de datos en linea de comandos
+- **Exportar la base de datos en linea de comandos**
 
 ```bash
 mysqldump --host=servidor --user=usuario --port=puerto --contraseña=contraseña nombre_de_la_BD > nombre_de_la_BD.sql
 ```
 
-## Importar una base de datos MySQL o MariaDB
-
-### Importar la base de datos en linea de comandos
+- **Importar la base de datos en linea de comandos**
 
 ```bash
 cat nombre_de_la_BD.sql | mysql --host=servidor --user=usuario --port=puerto --contraseña=contraseña nombre_de_la_BD
 ```
+
+> [!primary]
+>
+> En algunos casos, la RAM disponible en la instancia Cloud Databases puede no permitir la exportación o importación deseadas. En ese caso, le recomendamos que utilice la herramienta OVH en el área de cliente. Si lo necesita, consulte la guía ["Primeros pasos con el servicio Cloud Databases"](https://docs.ovh.com/es/clouddb/empezar-con-clouddb/) {.external}.
+>
+
+## Más información
+  
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -6,15 +6,11 @@ section: 'Premiers pas'
 order: 02
 ---
 
-Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vos bases de données en toute simplicité !
+**Dernière mise à jour le 28/06/2022**
 
-## Généralités
+## Objectif
 
-### Prérequis
-
-- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Avoir consulté le [guide de démarrage de CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+Vous désirez utiliser MySQL ou MariaDB pour vos bases de données ?
 
 ### Qu'est-ce qu'une base de donnees MySQL ?
 
@@ -28,7 +24,17 @@ MariaDB est un dérivé (fork) du système de gestion de bases de données MySQL
 
 Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL. Tous les bugs et roadmaps sont librement accessibles, contrairement à la version d'Oracle. En plus de cela, le moteur de stockage InnoDB est remplacé par XtraDB et d'autres optimisations promettent des gains en performances.
 
-## Connexion a la base de donnees
+**Découvrez comment créer et gérer vos bases de données MySQL ou MariaDB**
+
+## Prérequis
+
+- Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Avoir consulté le [guide de démarrage de CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
+
+## En pratique
+
+### Connexion a la base de donnees
 
 > [!primary]
 >
@@ -53,13 +59,13 @@ Toutes ces informations sont disponibles dans votre [Espace Client Web](https://
 
 Un guide est également disponible : [Premiers pas avec le service CloudDB](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/)
 
-### Connexion en ligne de commande
+#### Connexion en ligne de commande
 
 ```bash
 mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base
 ```
 
-### Connexion en script PHP
+#### Connexion en script PHP
 
 ```php
 1. <?php
@@ -67,7 +73,7 @@ mysql --host=serveur --user=utilisateur --port=port --password=password nom_de_l
 3. ?>
 ```
 
-### Connexion par logiciel (SQuirreL SQL)
+#### Connexion par logiciel (SQuirreL SQL)
 
 - Lancez SQuirreL SQL et cliquez sur `Aliases`{.action}, puis sur `+`{.action}
 
@@ -90,10 +96,11 @@ Vous êtes maintenant bien connecté à votre base de données :
 
 ![config connection](images/4.PNG){.thumbnail}
 
-### Connexion par phpMyAdmin
+#### Connexion par phpMyAdmin
+
 Vous pouvez utiliser phpMyAdmin pour explorer le contenu de votre base de données. Pour cela, installez phpMyAdmin sur votre propre serveur ou hébergement web. Durant cette installation, veillez à bien paramétrer les informations de votre serveur CloudDB et de la base de données souhaitée afin que phpMyAdmin puisse s'y connecter.
 
-## Exporter et importer une base de donnees MySQL ou MariaDB
+### Exporter et importer une base de donnees MySQL ou MariaDB
 
 - **Exporter ma base en ligne de commande**
 
@@ -111,3 +118,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 >
 > Dans certains cas, il se peut que la RAM disponible dans votre instance CloudDB ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVH dans l'espace client. Reportez-vous à la documentation [« Premiers pas avec le service CloudDB »](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees){.external} si nécessaire.
 >
+
+## Aller plus loin
+  
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -6,15 +6,11 @@ section: 'Pierwsze kroki'
 order: 02
 ---
 
-Chcesz korzystać z MySQL lub MariaDB? Sprawdź, jak w prosty sposób tworzyć bazy danych i nimi zarządzać!
-
-## Informacje ogolne
-
-### Wymagania
-
-- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Przeglądanie [przewodnik dotyczący uruchomienia usługi CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
+**Ostatnia aktualizacja z dnia 28/06/2022**
+  
+## Wprowadzenie
+  
+Chcesz korzystać z MySQL lub MariaDB dla swoich baz danych?
 
 ### Czym jest baza danych MySQL?
 
@@ -28,7 +24,17 @@ MariaDB to pochodna systemu zarządzania bazami danych MySQL.
 
 Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni dostępne, w przeciwieństwie do wersji Oracle. Ponadto silnik InnoDB został zastąpiony silnikiem XtraDB. Wprowadzono również inne optymalizacje, które pozwalają na zwiększenie wydajności.
 
-## Logowanie do bazy danych
+**Dowiedz się, jak tworzyć bazy danych MySQL lub MariaDB**
+  
+## Wymagania początkowe
+
+- Posiadanie [instancji CloudDB](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Przeglądanie [przewodnik dotyczący uruchomienia usługi CloudDB](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/)
+
+## W praktyce
+
+### Logowanie do bazy danych
 
 > [!primary]
 >
@@ -52,13 +58,13 @@ Wszystkie te informacje są dostępne w [Panelu klienta](https://www.ovh.com/aut
 
 Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/).
 
-### Logowanie z linii polecen
+#### Logowanie z linii polecen
 
 ```bash
 mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy
 ```
 
-### Logowanie przez skrypt PHP
+#### Logowanie przez skrypt PHP
 
 ```php
 1. <?php
@@ -66,7 +72,7 @@ mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_baz
 3. ?>
 ```
 
-### Logowanie z poziomu oprogramowania (SQuirreL SQL)
+#### Logowanie z poziomu oprogramowania (SQuirreL SQL)
 
 - Uruchom program SQuirreL SQL i kliknij na `Aliases`{.action}, i na `+`{.action}
 
@@ -89,22 +95,29 @@ Połączyłeś się z bazą danych:
 
 ![config connection](images/4.PNG){.thumbnail}
 
-### Logowanie przez interfejs phpMyAdmin
+#### Logowanie przez interfejs phpMyAdmin
 
-*Wkrótce dostępne w innym przewodniku.*
+Możesz korzystać z phpMyAdmin do przeglądania zawartości bazy danych. W tym celu zainstaluj phpMyAdmin na Twoim własnym serwerze lub hostingu. Podczas tej instalacji skonfiguruj informacje dotyczące Twojego serwera CloudDB i wybranej bazy danych, aby phpMyAdmin mógł się do niego zalogować.
 
-## Eksportowanie bazy danych MySQL lub MariaDB
+### Eksportuj i zaimportuj bazę danych MySQL lub MariaDB
 
-### Eksportowanie bazy danych z linii polecen
+- **Eksportowanie bazy danych z linii polecen**
 
 ```bash
 mysqldump --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy > nazwa_bazy.sql
 ```
 
-## Importowanie bazy danych MySQL lub MariaDB
-
-### Importowanie bazy danych z linii polecen
+- **Importowanie bazy danych z linii polecen**
 
 ```bash
 cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --password=password nazwa_bazy
 ```
+
+> [!primary]
+>
+> W niektórych przypadkach pamięć RAM dostępna w Twojej instancji CloudDB może nie powodować odpowiedniego eksportu lub importu. W takim przypadku zalecamy użycie narzędzia OVH w Panelu klienta. W razie potrzeby skorzystaj z dokumentacji ["Pierwsze kroki z usługą CloudDB"](https://docs.ovh.com/pl/clouddb/pierwsze-kroki-z-clouddb/){.external}.
+>
+
+## Sprawdź również
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

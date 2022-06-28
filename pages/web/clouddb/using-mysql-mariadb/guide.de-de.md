@@ -6,15 +6,12 @@ section: Erste Schritte
 order: 02
 ---
 
-Sie möchten mit MySQL oder MariaDB arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenbanken ganz einfach erstellen und verwalten.
 
-## Allgemeine Informationen
+**Letzte Aktualisierung am 28.06.2022**
+  
+## Ziel
 
-### Voraussetzungen
-
-- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
-- Sie haben die [Anleitung für den Start von CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
+Sie möchten MySQL oder MariaDB für Ihre Datenbanken verwenden?
 
 ### Was ist eine MySQL Datenbank?
 
@@ -28,7 +25,17 @@ MariaDB ist durch eine Abspaltung (Fork) von dem Datenbankverwaltungssystem MySQ
 
 Das System ist 100 % kompatibel und gilt insgesamt als „freier“ als seine große Schwester MySQL. Im Gegensatz zu dem Verwaltungssystem von Oracle sind alle Bug Fixes und Roadmaps frei erhältlich. Außerdem wurde das Storage-Engine InnoDB durch XtraDB ersetzt, was neben anderen Verbesserungen die Performance weiter erhöht.
 
-## Die Verbindung mit der Datenbank herstellen
+**Erfahren Sie, wie Sie Ihre MySQL oder MariaDB Datenbanken erstellen und verwalten**
+
+## Voraussetzungen
+
+- Sie verfügen über eine [CloudDB Instanz](https://www.ovh.de/cloud/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt
+- Sie haben die [Anleitung für den Start von CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/)
+
+## In der praktischen Anwendung
+
+### Die Verbindung mit der Datenbank herstellen
 
 > [!primary]
 >
@@ -52,13 +59,13 @@ Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/auth/?acti
 
 Eine Anleitung finden Sie unter: [Erste Schritte mit CloudDB](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/){.ref}
 
-### Per Kommandozeile verbinden
+#### Per Kommandozeile verbinden
 
 ```bash
 mysql --host=server --user=user --port=port --password=password database_name
 ```
 
-### Per PHP-Skript verbinden
+#### Per PHP-Skript verbinden
 
 ```php
 1. <?php
@@ -66,7 +73,7 @@ mysql --host=server --user=user --port=port --password=password database_name
 3. ?>
 ```
 
-### Per Software (SQuirreL SQL) verbinden
+#### Per Software (SQuirreL SQL) verbinden
 
 - Starten Sie SQuirreL SQL und klicken Sie auf `Aliases`{.action}, danach auf `+`{.action}
 
@@ -89,22 +96,30 @@ Sie sind jetzt mit Ihrer Datenbank verbunden:
 
 ![config connection](images/4.PNG){.thumbnail}
 
-### Per phpMyAdmin verbinden
+#### Per phpMyAdmin verbinden
 
-*In Kürze in einer anderen Anleitung verfügbar*
+Sie können phpMyAdmin verwenden, um den Inhalt Ihrer Datenbank zu analysieren. Installieren Sie hierfür phpMyAdmin auf Ihrem eigenen Server oder Webhosting. Achten Sie bei dieser Installation darauf, die Informationen Ihres CloudDB Servers und der gewünschten Datenbank so einzurichten, dass phpMyAdmin sich damit verbinden kann.
 
-## Eine MySQL oder MariaDB Datenbank exportieren
 
-### Meine Datenbank uber die Kommandozeile exportieren
+### Export und Import einer MySQL oder MariaDB Datenbank
+
+- Meine Datenbank uber die Kommandozeile exportieren
 
 ```bash
 mysqldump --host=server --user=user --port=port --password=password database_name > database_name.sql
 ```
 
-## Eine MySQL oder MariaDB Datenbank importieren
-
-### Meine Datenbank uber die Kommandozeile importieren
+- Meine Datenbank uber die Kommandozeile importieren
 
 ```bash
 cat database_name.sql | mysql --host=server --user=user --port=port --password=password databse_name
 ```
+
+> [!primary]
+>
+> In manchen Fällen kann es sein, dass das in Ihrer CloudDB Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVH Tools im Kundencenter. Lesen Sie die Anleitung ["Erste Schritte mit CloudDB "](https://docs.ovh.com/de/clouddb/erste-schritte-mit-clouddb/#datenbank-importieren){.external}, falls erforderlich.
+>
+
+## Weiterführende Informationen
+ 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

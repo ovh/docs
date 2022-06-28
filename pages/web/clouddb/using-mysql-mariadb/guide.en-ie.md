@@ -6,15 +6,11 @@ section: Getting started
 order: 02
 ---
 
-Do you want to use MySQL or MariaDB ? Learn how to create and manage your databases with ease!
+**Last updated 28th June 2022**
+  
+## Objective
 
-## Overview
-
-### Prerequisites
-
-- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
-- You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
+Do you want to use MySQL or MariaDB for your databases?
 
 ### What is a MySQL database?
 
@@ -27,8 +23,18 @@ This is an open-source engine, whose parent company is Oracle.
 MariaDB is a derivative (fork) of MySQL.
 
 This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version. In addition, the storage database InnoDB has been replaced by XtraDB and other optimisations, promising performance gains.
+  
+**Find out how to create and manage your MySQL or MariaDB databases**
 
-## Logging in to the database
+## Requirements
+
+- You must have a [CloudDB instance](https://www.ovh.ie/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You need to have consulted the [CloudDB startup guide](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/)
+
+## Instructions
+
+### Logging in to the database
 
 > [!primary]
 >
@@ -52,13 +58,13 @@ All this information is available in the [Web Control Panel](https://www.ovh.com
 
 There is also a guide here: [Getting started with the CloudDB service](https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/).
 
-### Connect via the command line
+#### Connect via the command line
 
 ```bash
 mysql --host=server --user=user --port=port --password=password database_name
 ```
 
-### Connect from a PHP script
+#### Connect from a PHP script
 
 ```php
 1. <?php
@@ -66,7 +72,7 @@ mysql --host=server --user=user --port=port --password=password database_name
 3. ?>
 ```
 
-### Connect from software (SQuirreL SQL)
+#### Connect from software (SQuirreL SQL)
 
 - Launch SQuirreL SQL and click on `Aliases`{.action}, then on `+`{.action}
 
@@ -89,22 +95,29 @@ You will now be connected to your database:
 
 ![config connection](images/4.PNG){.thumbnail}
 
-### Connecting via phpMyAdmin
+#### Connecting via phpMyAdmin
 
-*Soon available in another guide.*
+You can use phpMyAdmin to explore the contents of your database. To do this, install phpMyAdmin on your own server or web hosting plan. During this installation, make sure that the information on your CloudDB server and the database you want are correctly configured so that phpMyAdmin can connect to it.
 
-## Export a MySQL or MariaDB database
+### Export und Import einer MySQL oder MariaDB Datenbank
 
-### Export your database via the command line
+- **Export your database via the command line**
 
 ```bash
 mysqldump --host=server --user=user --port=port --password=password database_name > database_name.sql
 ```
 
-## Import a MySQL or MariaDB database
-
-### Import your database via the command line
+- **Import your database via the command line**
 
 ```bash
 cat database_name.sql | mysql --host=server --user=user --port=port --password=password database_name
 ```
+
+> [!primary]
+>
+> In some cases, the RAM available in your CloudDB instance may not be sufficient to perform the desired export or import. If this is the case, we recommend using the OVH tool in the OVH Control Panel. See the ["Getting started with CloudDB service"] documentation (https://docs.ovh.com/ie/en/clouddb/getting-started-with-clouddb/){.external} if necessary.
+>
+
+## Go further
+  
+Join our community of users on <https://community.ovh.com/en/>.
