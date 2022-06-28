@@ -5,7 +5,7 @@ excerpt: 'Find out details about the technical capabilities of your Web Hosting 
 section: 'Web Hosting configuration'
 ---
 
-**Last updated 22th February 2022**
+**Last updated 22nd February 2022**
 
 
 ## Objective
