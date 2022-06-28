@@ -7,7 +7,7 @@ order: 04
 hidden: true
 ---
 
-**Dernière mise à jour le 24/06/2022**
+**Dernière mise à jour le 28/06/2022**
 
 ## Objectif
 
@@ -27,7 +27,6 @@ hidden: true
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.
-
 
 ## Présentation de la réplication synchrone et asynchrone
 
