@@ -179,7 +179,7 @@ Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-La tâche de réplication est créée pour fonctionner toutes les heures, ce sera une réplication asynchrone fournie avec la licence **Nutanix Standard** d'OVHcloud. 
+La tâche de réplication est créée pour fonctionner toutes les heures, ce sera une réplication asynchrone utilisable avec le pack **Nutanix Standard** d'OVHcloud. 
 
 Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
