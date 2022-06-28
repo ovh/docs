@@ -26,12 +26,12 @@ hidden: true
 Au travers de **Prism Element** il est possible :
 
 - de créér des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
-- d'ajouter des liaisons vers des clusters distants si ils communiquent entre eux.
+- d'ajouter des liaisons vers des clusters distants si ils sont reliés.
 - De modifier les domaines de protections pour rajouter des réplications vers des sites distants.
 
 > [!warning]
 > 
-> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veut une réplication plus courte il faut faire des réplications synchrones avec une possibilité comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
+> Avec le pack **Nutanix Standard** OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veut une réplication plus courte il faut faire des réplications synchrones avec la possibilité d'avoir une réplication comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** OVHcloud.
 > 
 >
 
@@ -44,100 +44,100 @@ Au travers de **Prism Element** il est possible :
 
 ## En pratique
 
-Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters d'OVHcloud, l'un au CANADA et l'autre en FRANCE connectés via un VPN IPSEC sur deux plans d'adressages IP différents qui sont :
+Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters OVHcloud, l'un au Canada et l'autre en France connectés via un VPN IPsec, sur deux plans d'adressages IP différents qui sont :
 
-* **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en FRANCE.
-* **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au CANADA.
+* **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en France.
+* **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au Canada.
 
-Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de ce guide [Interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
+Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de ce guide [Interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/IPsec-interconnection/).
 
 Connectez-vous au travers de **Prism Element** sur le cluster en France à partir de **Prism Central**, comme indiqué sur cette documentation [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
 Cliquez sur `Data Protection`{.action} depuis le menu `Home`.
 
-![01 Create Remote Site From FRANCE01](images/01-create-remote-site-from-france01.png){.thumbnail} 
+![01 Create Remote Site From France01](images/01-create-remote-site-from-France01.png){.thumbnail} 
 
 Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
-![01 Create Remote Site From FRANCE02](images/01-create-remote-site-from-france02.png){.thumbnail}
+![01 Create Remote Site From France02](images/01-create-remote-site-from-France02.png){.thumbnail}
 
 Cliquez `+ Remote Site`{.action} à droite de l'écran et choisissez `Physical Cluster`{.action} pour rajouter un site distant.
 
-![01 Create Remote Site From FRANCE04](images/01-create-remote-site-from-france04.png){.thumbnail}
+![01 Create Remote Site From France04](images/01-create-remote-site-from-France04.png){.thumbnail}
 
-Nommez le site distant dans `REMOTE SITE NAME`, saisissez l'adresse IP de **Prism Element** du site distant en FRANCE dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
+Nommez le site distant dans `REMOTE SITE NAME`, saisissez l'adresse IP de **Prism Element** du site distant en France dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
 
-![01 Create Remote Site From FRANCE05](images/01-create-remote-site-from-france05.png){.thumbnail}
+![01 Create Remote Site From France05](images/01-create-remote-site-from-France05.png){.thumbnail}
 
 Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
-![01 Create Remote Site From FRANCE06](images/01-create-remote-site-from-france06.png){.thumbnail}
+![01 Create Remote Site From France06](images/01-create-remote-site-from-France06.png){.thumbnail}
 
 Dans la rubrique **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** ainsi que **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
-![01 Create Remote Site From FRANCE07](images/01-create-remote-site-from-france07.png){.thumbnail}
+![01 Create Remote Site From France07](images/01-create-remote-site-from-France07.png){.thumbnail}
 
 Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50`. Cliquez sur le bouton `+`{.action} pour valider l'association des réseaux sources et destinations.
 
-![01 Create Remote Site From FRANCE08](images/01-create-remote-site-from-france08.png){.thumbnail}
+![01 Create Remote Site From France08](images/01-create-remote-site-from-France08.png){.thumbnail}
 
-Choisissez `default-container...` dans Source **VStore** et **Destination VStore** ensuite cliquez sur le bouton `+`{.action} pour relier le stockage source et destination.
+Choisissez `default-container...` dans Source **VStore** et **Destination VStore** cliquez ensuite sur le bouton `+`{.action} pour relier le stockage source et destination.
 
-![01 Create Remote Site From FRANCE09](images/01-create-remote-site-from-france09.png){.thumbnail}
+![01 Create Remote Site From France09](images/01-create-remote-site-from-France09.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
+![01 Create Remote Site From France10](images/01-create-remote-site-from-France10.png){.thumbnail}
 
 Le site distant apparait dans la liste.
 
-![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
+![01 Create Remote Site From France11](images/01-create-remote-site-from-France11.png){.thumbnail}
 
-Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au CANADA et effectuer la même opération.
+Nous allons maintenant nous connecter sur l'interface **Prism Element** du site distant au Canada et effectuer la même opération.
 
-Au travers du menu Home cliquez sur `Data Protection`{.action}.
+Via le menu Home cliquez sur `Data Protection`{.action}.
 
-![02 Create Remote Site From CANADA01](images/02-create-remote-site-from-canada01.png){.thumbnail} 
+![02 Create Remote Site From Canada01](images/02-create-remote-site-from-Canada01.png){.thumbnail} 
 
 Cliquez sur `Remote Site`{.action} à gauche de l'écran.
 
-![02 Create Remote Site From CANADA02](images/02-create-remote-site-from-canada02.png){.thumbnail}
+![02 Create Remote Site From Canada02](images/02-create-remote-site-from-Canada02.png){.thumbnail}
 
 Cliquez `+ Remote Site`{.action} à droite de l'écran et choisissez `Physical Cluster`{.action} pour rajouter un site distant.
 
-![02 Create Remote Site From CANADA04](images/02-create-remote-site-from-canada04.png){.thumbnail}
+![02 Create Remote Site From Canada04](images/02-create-remote-site-from-Canada04.png){.thumbnail}
 
-Nommez le site distant dans `REMOTE SITE NAME`, saisissez l'adresse IP de **Prism Element** du site distant au canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
+Nommez le site distant dans `REMOTE SITE NAME`, saisissez l'adresse IP de **Prism Element** du site distant au Canada dans `CLUSTER VIRTUAL IP` et cliquez sur `Add Site`{.action}.
 
-![02 Create Remote Site From CANADA05](images/02-create-remote-site-from-canada05.png){.thumbnail}
+![02 Create Remote Site From Canada05](images/02-create-remote-site-from-Canada05.png){.thumbnail}
 
 Faites défiler la fenêtre à l'aide de La `barre de défilement`{.action}.
 
-![02 Create Remote Site From CANADA06](images/02-create-remote-site-from-canada06.png){.thumbnail}
+![02 Create Remote Site From Canada06](images/02-create-remote-site-from-Canada06.png){.thumbnail}
 
 Dans **Network Mapping** Sélectionnez `AHV: base` pour **Source Cluster** et **Destination Cluster** et cliquez sur le bouton `+`{.action}  
 
-![02 Create Remote Site From CANADA07](images/02-create-remote-site-from-canada07.png){.thumbnail}
+![02 Create Remote Site From Canada07](images/02-create-remote-site-from-Canada07.png){.thumbnail}
 
-Si vous avez un autre VLAN Faites la même opération avec le nom du VLAN `AHV: VLAN50`. Cliquez sur le bouton `+`{.action} pour valider l'association du réseau sources et destination.
+Si vous avez un autre VLAN effectuez la même opération avec le nom du VLAN `AHV: VLAN50`. Cliquez sur le bouton `+`{.action} pour valider l'association du réseau sources et destination.
 
-![02 Create Remote Site From CANADA08](images/02-create-remote-site-from-canada08.png){.thumbnail}
+![02 Create Remote Site From Canada08](images/02-create-remote-site-from-Canada08.png){.thumbnail}
 
 Choisissez `default-container...` dans Source **VStore** et **Destination VStore** et cliquez sur le bouton `+`{.action} pour valider la connexion  du stockage source et destination. 
 
-![02 Create Remote Site From CANADA09](images/02-create-remote-site-from-canada09.png){.thumbnail}
+![02 Create Remote Site From Canada09](images/02-create-remote-site-from-Canada09.png){.thumbnail}
 
 Cliquez sur `Save`{.action}.
 
-![02 Create Remote Site From CANADA10](images/02-create-remote-site-from-canada10.png){.thumbnail}
+![02 Create Remote Site From Canada10](images/02-create-remote-site-from-Canada10.png){.thumbnail}
 
 Le site distant apparait dans la liste des sites distants. 
 
-![02 Create Remote Site From CANADA11](images/02-create-remote-site-from-canada11.png){.thumbnail}
+![02 Create Remote Site From Canada11](images/02-create-remote-site-from-Canada11.png){.thumbnail}
 
 ### Mise en place de la réplication entre site
 
-Maintenant que les deux sites se connaissent nous allons créer un domaine de protection avec une réplication asynchrone contenant trois machines virtuelles se trouvant en France vers le site distant au Canada.
+Maintenant que les deux sites sont reliés, nous allons créer un domaine de protection avec une réplication asynchrone contenant trois machines virtuelles se trouvant sur le cluster en France vers le site distant au Canada.
 
 Revenez sur l'interface **Prism Element** du cluster se trouvant en France.
 
@@ -165,7 +165,6 @@ Cliquez sur `New Schedule`{.action} pour configurer la planification.
 
 ![03 Create dataprotection 07](images/03-create-dataprotection07.png){.thumbnail}
 
-
 Modifier ces options pour **Configure your local schedule** :
 
 * Saisissez **Repeat every** `1 hour`. 
@@ -179,13 +178,13 @@ Cliquez sur `Create Schedule`{.action} pour valider la planification.
 
 ![03 Create dataprotection 08](images/03-create-dataprotection08.png){.thumbnail}
 
-La tâche de réplication est créée pour fonctionner toutes les heures, ce sera une réplication asynchrone utilisable avec le pack **Nutanix Standard** d'OVHcloud. 
+La tâche de réplication est créée pour fonctionner toutes les heures, ce sera une réplication asynchrone utilisable avec le pack **Nutanix Standard** OVHcloud. 
 
 Cliquez sur `Close`{.action} pour fermer la fenêtre.
 
 > [!primary]
 > 
-> Il est possible de modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il faudra alors faire évoluer la licence vers le pack **Nutanix Advanced** d'OVHcloud.
+> Il est possible de modifier la planification pour réduire le risque de perte de données en cas de désastre mais la réplication va basculer du mode asynchrone au mode synchrone et il faudra alors faire évoluer la licence vers le pack **Nutanix Advanced** OVHcloud.
 
 ![03 Create dataprotection 09](images/03-create-dataprotection09.png){.thumbnail}
 
@@ -209,15 +208,15 @@ Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
 Au travers du tableau de bord **Data Protection** cliquez sur `Migrate`{.action}. 
 
-![04 Migrate VM to CANADA 01](images/04-migrate-to-canada01.png){.thumbnail}
+![04 Migrate VM to Canada 01](images/04-migrate-to-Canada01.png){.thumbnail}
 
 Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.action}
 
-![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
+![04 Migrate VM to Canada 02](images/04-migrate-to-Canada02.png){.thumbnail}
 
 La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. Sur le nouveau site il faut alors démarrer manuellement les machines virtuelles migrées.
 
-![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
+![04 Migrate VM to Canada 03](images/04-migrate-to-Canada03.png){.thumbnail}
 
 
 ### Basculement des machine virtuelles en cas de sinistre
@@ -241,14 +240,12 @@ Cliquez sur `Yes`{.action}.
 
 Les machines virtuelles apparaîtront dans la console de **Prism Element** dans l'état de la dernière réplication, les données modifiées après la dernière réplication valide seront perdues.
 
-IL sera alors possible de les démarrer.
-
 
 ## Aller plus loin
 
 [Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-overview/)
 
-[Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
+[Connexion IPsec](https://docs.ovh.com/fr/nutanix/IPsec-interconnection/)
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
 
