@@ -117,7 +117,7 @@ cat nome_da_base.sql | mysql --host=servidor --user=utilizador --port=port --pas
 
 > [!primary]
 >
-> Em certos casos, é possível que a RAM disponível na instância CloudDB não permita realizar a exportação ou a importação desejadas. Se for o caso, recomendamos que utilize a ferramenta OVH na Área de Cliente. Consulte a documentação ["Primeiros passos com o serviço CloudDB"](https://docs.ovh.com/fr/clouddb/debuter-avec-clouddb/#importation-dune-base-de-donnees) {.external} se necessário.
+> Em certos casos, é possível que a RAM disponível na instância CloudDB não permita realizar a exportação ou a importação desejadas. Se for o caso, recomendamos que utilize a ferramenta OVH na Área de Cliente. Consulte a documentação ["Primeiros passos com o serviço CloudDB"](https://docs.ovh.com/pt/clouddb/comecar-com-clouddb/) {.external} se necessário.
 >
 
 ## Quer saber mais?
