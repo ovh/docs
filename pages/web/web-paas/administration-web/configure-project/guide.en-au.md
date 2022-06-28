@@ -31,7 +31,7 @@ The *Access* section allows you to [manage user access to the project](../../adm
 ## Certificates
 
 The *Access* section shows a list of your project's TLS certificates.
-To see details about a certificate or delete one, click **Edit {{< icon chevron >}}**.
+To see details about a certificate or delete one, click **Edit**.
 See how to add custom certificates.
 
 ![A list of certificates in a project](images/settings-certificates.png "0.7")
