@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPse. Pour cela, nous allons remplacer les machines virtuelles **OVHgateway** qui fournissent l'accès à Internet par une passerelle sous le systême d'exploitation **pfSense**.
+Ce guide vous présente comment interconnecter deux clusters Nutanix Fournis par OVHcloud au travers d'un VPN IPsec. Pour cela, nous allons remplacer les machines virtuelles **OVHgateway** qui fournissent l'accès à Internet par une passerelle sous le systême d'exploitation **pfSense**.
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -95,7 +95,7 @@ Créez une machine virtuelle avec ces paramètres :
 - **Stockage2** : `Un lecteur DVD connecté à l'image ISO de pfSense`
 - **RAM** : `4 Go` 
 - **CPU** : `2 vCPU`
-- **Réseau** : `deux cartes-réseau sur le réseau de AHV: **Base**`
+- **Réseau** : `deux cartes réseau sur le réseau de AHV: **Base**`
 
 Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
 
@@ -431,7 +431,7 @@ Créez une machine virtuelle avec ces paramètres :
 - **Stockage2** : `Un lecteur DVD connecté à l'image ISO de pfSense`
 - **RAM** : `4 Go` 
 - **CPU** : `2 vCPU`
-- **Réseau** : `deux cartes-réseau sur le réseau de AHV: **Base**`
+- **Réseau** : `deux cartes réseau sur le réseau de AHV: **Base**`
 
 Vous pouvez vous aider de [notre guide sur la gestion des machines virtuelles](https://docs.ovh.com/fr/nutanix/virtual-machine-management/) pour créer cette machine virtuelle.
 
