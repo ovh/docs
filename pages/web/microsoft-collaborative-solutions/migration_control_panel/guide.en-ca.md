@@ -7,7 +7,7 @@ order: 1
 hidden: true
 ---
 
-**Last updated 22th April 2022**
+**Last updated 22nd April 2022**
 
 ## Objective
 
