@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-**Comment mettre en place une réplication entre clusters au travers de Prism Element**
+**Mettre en place une réplication entre clusters au travers de Prism Element**
 
 
 > [!warning]
@@ -26,11 +26,14 @@ hidden: true
 - Disposer de deux clusters Nutanix dans votre compte OVHcloud.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
-- Avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple.
+- Avoir mis en place une interconnexion entre deux clusters au travers d'un VPN IPSEC par exemple. Vous pouvez vous aider de ce guide  
+
 
 ## Présentation de la réplication synchrone et asynchrone
 
 Deux clusters Nutanix qui utilisent le pack de licence **Nutanix Standard** d'OVHcloud ont la capacité d'être relié pour créer un domaine de protection avec une réplication asynchrone toutes les heures. 
+
+Un groupe de protection peut contenir une ou plusieurs machines virtuelles du même cluster. Il est possible de créer des groupes de protections sur chaque cluster et de faire des réplications bi-directionnelles.
 
 Si l'on veut faire une réplication synchrone (Réplication entre 1 et 15 minutes) et multisite sur plusieurs clusters il faudra choisir le pack **Nutanix Advanced** sur chacun des clusters.
 
@@ -41,7 +44,7 @@ Nous allons utiliser deux clusters Nutanix se trouvant dans les datacenters d'OV
 * **192.168.0.0/24** pour le cluster se trouvant dans un Datacenter en FRANCE.
 * **192.168.10.0/24** pour le cluster se trouvant dans un Datacenter au CANADA.
 
-Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de cette documentation [Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
+Si vous souhaitez de l'aide concernant la mise en place d'un VPN IPsec vous pouvez vous aider de ce guide [Interconnexion de deux clusters Nutanix au travers d'un VPN IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/).
 
 Connectez-vous au travers de **Prism Element** sur le cluster en France à partir de **Prism Central**, comme indiqué sur cette documentation [Hyper-convergence Nutanix](https://docs.ovh.com/fr/nutanix/nutanix-hci/)
 
@@ -81,7 +84,7 @@ Cliquez sur `Save`{.action}.
 
 ![01 Create Remote Site From FRANCE10](images/01-create-remote-site-from-france10.png){.thumbnail}
 
-Le site distant apparait dans la liste des sites distants.
+Le site distant apparait dans la liste.
 
 ![01 Create Remote Site From FRANCE11](images/01-create-remote-site-from-france11.png){.thumbnail}
 
@@ -124,7 +127,6 @@ Cliquez sur `Save`{.action}.
 ![02 Create Remote Site From CANADA10](images/02-create-remote-site-from-canada10.png){.thumbnail}
 
 Le site distant apparait dans la liste des sites distants. 
-
 
 ![02 Create Remote Site From CANADA11](images/02-create-remote-site-from-canada11.png){.thumbnail}
 
@@ -189,13 +191,12 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-La migration des machines virtuelles consiste à basculer les machines virtuelles d'un cluster à l'autre dans cet ordre :
+La migration des machines virtuelles consiste à basculer les machines virtuelles du cluster source vers le cluster de destination dans cet ordre :
 
 * Arrêt des machines virtuelles sur le cluster source (Si elles sont allumées).
 * Réplication des données manquantes vers le cluster de destination.
 * Suppression des machines virtuelles sur le cluster source.
 * Désactivation de la réplication planifiée.
-* Démarrage des machines virtuelles sur le cluster de destination.
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
 
@@ -207,13 +208,14 @@ Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.act
 
 ![04 Migrate VM to CANADA 02](images/04-migrate-to-canada02.png){.thumbnail}
 
-La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines.
+La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. Les machines virtuelles sont étéintes sur le nouveau site il faut alors les démarrer manuellement.
 
 ![04 Migrate VM to CANADA 03](images/04-migrate-to-canada03.png){.thumbnail}
 
+
 ### Basculement des machine virtuelles en cas de sinistre
 
-Il est possible d'activer les machines virtuelles sur le site de destination si un problème survient sur le site d'origine c'est ce que l'on nomme la récupération après sinistre.
+Si le site d'origine est hors service il est possible d'activer les machines virtuelles sur le site de destination. 
 
 > [!warning]
 > L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone le risque de perte de données maximale est d'une heure. 
@@ -236,9 +238,10 @@ Les machines virtuelles activées sont éteintes, il est nécessaire de faire un
 
 ## Aller plus loin
 
+[Plan de reprise d'activité sur Nutanix](https://docs.ovh.com/fr/nutanix/disaster-recovery-overview/)
+
 [Connexion IPsec](https://docs.ovh.com/fr/nutanix/ipsec-interconnection/)
 
 [Documentation Nutanix sur Data Protection and Disaster Recovery](https://portal.nutanix.com/page/documents/solutions/details?targetId=BP-2005-Data-Protection:top-backup-and-disaster-recovery-on-remote-sites.html)
-
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
