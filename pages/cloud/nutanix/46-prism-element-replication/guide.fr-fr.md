@@ -25,7 +25,7 @@ hidden: true
 
 Au travers de **Prism Element** il est possible :
 
-- de créér des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
+- de créer des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
 - d'ajouter des liaisons vers des clusters distants si ils sont reliés.
 - De modifier les domaines de protections pour rajouter des réplications vers des sites distants.
 
@@ -195,7 +195,9 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-La migration des machines virtuelles consiste à basculer les machines virtuelles d'un domaine de protection du cluster source vers le cluster de destination dans cet ordre :
+La migration des machines virtuelles est une opération de bascule des machines virtuelles membres d'un domaine de protection vers le site distant sans perte de données, il faut que les deux clusters soient en ligne et communiquent correctement entre eux. 
+
+Les étapes de la migration sont décrites ci-dessous :
 
 * Arrêt des machines virtuelles sur le cluster source (si elles sont allumées).
 * Réplication des données manquantes vers le cluster de destination.
@@ -214,14 +216,16 @@ Sélectionnez le site distant, saisissez `MIGRATE` et cliquez sur `Migrate`{.act
 
 ![04 Migrate VM to Canada 02](images/04-migrate-to-Canada02.png){.thumbnail}
 
-La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. Sur le nouveau site il faut alors démarrer manuellement les machines virtuelles migrées.
+La migration est lancée elle sera terminée quand les machines virtuelles apparaitront sur le site distant et ne seront plus visibles sur le site d'origines. 
+
+Les machines virtuelles migrées sont éteintes il faut les démarrer manuellement.
 
 ![04 Migrate VM to Canada 03](images/04-migrate-to-Canada03.png){.thumbnail}
 
 
 ### Basculement des machine virtuelles en cas de sinistre
 
-Si le site d'origine est hors service il est possible d'activer les machines virtuelles d'un domaine de protection sur le site de destination. 
+Si le site d'origine est hors service il est possible d'activer les machines virtuelles membres d'un domaine de protection sur le site de destination. 
 
 > [!warning]
 > L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone le risque de perte de données maximale est d'une heure. 
