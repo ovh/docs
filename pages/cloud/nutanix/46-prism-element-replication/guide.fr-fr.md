@@ -26,12 +26,12 @@ hidden: true
 Au travers de **Prism Element** il est possible :
 
 - de créér des domaines de protections qui contiennent des machines virtuelles avec des snapshots locaux. 
-- d'ajouter des liaisons vers des clusters distants si les deux clusters communiquent entre eux.
+- d'ajouter des liaisons vers des clusters distants si ils communiquent entre eux.
 - De modifier les domaines de protections pour rajouter des réplications vers des sites distants.
 
 > [!warning]
 > 
-> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veux un réplication plus courte il faut faire des réplications synchrones avec une possibilité de compris entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
+> Avec le pack **Nutanix Standard** d'OVHcloud il est possible d'utiliser des réplications asynchrones toutes les heures. Si l'on veux un réplication plus courte il faut faire des réplications synchrones avec une possibilité comprise entre 1 et 15 minutes, cette option n'est possible qu'avec le pack **Nutanix Advanced** d'OVHcloud.
 > 
 >
 
@@ -41,11 +41,6 @@ Au travers de **Prism Element** il est possible :
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté sur vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters comme par exemple avec un VPN IPsec.
-## Présentation de la réplication synchrone et asynchrone
-
-
-
-
 
 ## En pratique
 
@@ -201,11 +196,13 @@ Le domaine de protection est créé et apparait dans la liste des réplications.
 
 ### Migration des machines virtuelles
 
-La migration des machines virtuelles consiste à basculer les machines virtuelles du cluster source vers le cluster de destination dans cet ordre :
+La migration des machines virtuelles consiste à basculer les machines virtuelles d'un domaine de protection du cluster source vers le cluster de destination dans cet ordre :
 
-* Arrêt des machines virtuelles sur le cluster source (Si elles sont allumées).
+* Arrêt des machines virtuelles sur le cluster source (si elles sont allumées).
 * Réplication des données manquantes vers le cluster de destination.
 * Suppression des machines virtuelles sur le cluster source.
+* Activation des machines virtuelles sur le cluster de destination.
+* La réplication est inversée, la destination devient la source.
 * Désactivation de la réplication planifiée.
 
 Allez sur **Prism Element** où se trouve les machines virtuelles répliquées.
@@ -225,7 +222,7 @@ La migration est lancée elle sera terminée quand les machines virtuelles appar
 
 ### Basculement des machine virtuelles en cas de sinistre
 
-Si le site d'origine est hors service il est possible d'activer les machines virtuelles sur le site de destination. 
+Si le site d'origine est hors service il est possible d'activer les machines virtuelles d'un domaine de protection sur le site de destination. 
 
 > [!warning]
 > L'activation des machines virtuelles sur le site distant se fera avec les dernières données répliquées, dans le cas d'une réplication asynchrone le risque de perte de données maximale est d'une heure. 
