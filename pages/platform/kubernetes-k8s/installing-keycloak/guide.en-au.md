@@ -570,8 +570,9 @@ By default, there is a single realm in Keycloak called `Master`. It is dedicated
 
 Let's create a dedicated realm for our tutorial:
 
-1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button
-3) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action}{.action} blue button.
+1) Display the dropdown menu in the top-left corner where it is indicated `Master`, then click on the `Add realm`{.action} blue button.
+
+2) Fill in the form with this name: `ovh-lab-k8s-oidc-authentication`, then click on the `Create`{.action} blue button.
 
 ![Keycloak create realm](images/keycloak-realm.png)
 
@@ -579,11 +580,13 @@ Let's create a dedicated realm for our tutorial:
 
 A __client__ in Keycloak is an entity that can request a Keycloak server to authenticate a user.
 
-1) From the previously created realm, click on the left-hand menu `Clients`{.action} under the `Configure` category
+1) From the previously created realm, click on the left-hand menu `Clients`{.action} under the `Configure` category:
+
 ![Keycloak Clients](images/keycloak-clients.png)
 
-2) Click on `Create`{.action} in the top-right corner of the table
-3) Fill in the form with the following parameters:
+<ol start="2)">
+  <li>Click on <code class="action">Create</code> in the top-right corner of the table.</li>
+</ol>
 
 ```text
 Client ID: k8s-oidc-auth
@@ -592,24 +595,33 @@ Root URL: https: https://keycloak.your-domain-name.tld/
 ```
 
 In our example, the new Client informations are:
+
 ![Keycloak create client](images/keycloak-create-client.png)
 
-4) Then click on the `Save`{.action} button
+<ol start="4)">
+  <li>Then click on the <code class="action">Save</code> button.</li>
+</ol>
 
 5) In the new created client, Find the `Access Type` field and set its value to `confidential` to require a secret to initiate the login protocol. Then click on the `Save`{.action} blue button to save the change.
 
 ![Keycloak client](images/keycloak-client.png)
 
-6) Then click on the `Credentials`{.action} tab. Find the `Valid Redirect URIs` field and set the following value: `*`
+<ol start="6)">
+  <li>Then click on the <code class="action">Credentials</code> tab. Find the `Valid Redirect URIs` field and set the following value: `*`</li>
+</ol>
+
 7) Find the `Admin URL` and the `Web Origins` fields and set their values to your defined domain name if it is not already done  
 In our example: `https://keycloak.example.com/`. __\/!\ Be careful to use the HTTPS schema only /!\\__
-8) Save your changes
+
+8) Save your changes.
 
 
 #### Create a USER
 
-1) From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category
-2) Click on `Add user`{.action} in the top-right corner of the table
+1) From the previously created realm, click on the left-hand menu `Users`{.action} under the `Manage` category.
+
+2) Click on `Add user`{.action} in the top-right corner of the table.
+
 3) Fill in the form. Only the `Username` field is required, it's enough for this tutorial.
 
 In our example, we created the following user:
@@ -624,8 +636,11 @@ PASSWORD: ovhcloud-keycloak-tutorial-awesome-password
 The first user connection required an initial password, so let's create it:
 
 1) Click on the `Credentials`{.action} tab
+
 2) Fill in the `Set Password` form
+
 3) Disable the `Temporary` flag to prevent having to update the password on first login
+
 4) Then click on the `Set Password`{.action} button and confirm your choice
 
 ### Configure Keycloak instance in your Kubernetes cluster as an OIDC provider
